@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-26T07:34:29.250Z",
+  "generatedAt": "2026-07-26T09:56:50.228Z",
   "windowDays": 14,
   "ports": {
     "coverage": "green",
     "amendRate": "green",
     "silentStops": "yellow",
-    "participantStatus": "green"
+    "participantStatus": "yellow"
   },
   "basis": {
     "coverageAudit": true,
@@ -36,18 +36,11 @@
     "nearTermChecked": 11,
     "nearTermAmended": 1,
     "verifyRunAt": "2026-07-24T07:45:00Z",
-    "windowRate": 0.14,
-    "windowChecks": 65,
+    "windowRate": 0.15,
+    "windowChecks": 62,
     "windowAmendments": 9,
     "windowCorrections": 3,
     "byDay": [
-      {
-        "date": "2026-07-12",
-        "checks": 3,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-07-13",
         "checks": 1,
@@ -136,26 +129,26 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-07-26T07:34:23.569Z",
+    "buildCheckedAt": "2026-07-26T09:56:43.295Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-07-26T05:53:37.291Z",
-    "manifestAgeHours": 1.68,
+    "manifestGeneratedAt": "2026-07-26T07:34:30.799Z",
+    "manifestAgeHours": 2.37,
     "staleFiles": [
       {
         "file": "football.json",
         "sourceLastUpdated": "2026-07-19T17:56:30.377Z",
-        "ageHours": 157.63
+        "ageHours": 160.01
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-07-24T14:20:00Z",
-        "ageHours": 41.24
+        "ageHours": 43.61
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-07-24T07:45:00Z",
-    "verifyAgeHours": 47.82,
+    "verifyAgeHours": 50.2,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
