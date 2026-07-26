@@ -1,6 +1,35 @@
 {
-  "lastUpdated": "2026-07-26T15:02:20.772Z",
+  "lastUpdated": "2026-07-26T16:55:53.969Z",
   "football": [
+    {
+      "homeTeam": "Sandefjord",
+      "awayTeam": "Bodo/Glimt",
+      "homeScore": 0,
+      "awayScore": 3,
+      "date": "2026-07-26T15:00Z",
+      "league": "Eliteserien",
+      "leagueCode": "nor.1",
+      "venue": "Jotun Arena",
+      "goalScorers": [
+        {
+          "player": "Ola Brynhildsen",
+          "team": "Bodo/Glimt",
+          "minute": "1'"
+        },
+        {
+          "player": "Jens Petter Hauge",
+          "team": "Bodo/Glimt",
+          "minute": "90'"
+        },
+        {
+          "player": "Mikkel Hansen",
+          "team": "Bodo/Glimt",
+          "minute": "90'+2'"
+        }
+      ],
+      "recapHeadline": null,
+      "isFavorite": true
+    },
     {
       "homeTeam": "SK Brann",
       "awayTeam": "Vålerenga",
@@ -37,7 +66,7 @@
           "minute": "77'"
         }
       ],
-      "recapHeadline": null,
+      "recapHeadline": "Pepet av banen til pause – så slo Brann kraftig tilbake",
       "isFavorite": true
     },
     {
@@ -68,6 +97,25 @@
       ],
       "recapHeadline": null,
       "isFavorite": true
+    },
+    {
+      "homeTeam": "Sarpsborg FK",
+      "awayTeam": "Hamarkameratene",
+      "homeScore": 1,
+      "awayScore": 0,
+      "date": "2026-07-26T15:00Z",
+      "league": "Eliteserien",
+      "leagueCode": "nor.1",
+      "venue": "Sarpsborg Stadion",
+      "goalScorers": [
+        {
+          "player": "Andreas Nibe Hansen",
+          "team": "Sarpsborg FK",
+          "minute": "29'"
+        }
+      ],
+      "recapHeadline": null,
+      "isFavorite": false
     },
     {
       "homeTeam": "Kristiansund BK",
@@ -191,10 +239,10 @@
       ],
       "norwegianPlayers": [
         {
-          "position": 44,
+          "position": 48,
           "player": "Kristoffer Ventura",
           "score": "-9",
-          "roundScore": "-",
+          "roundScore": "E",
           "thru": "-"
         }
       ]
@@ -454,8 +502,8 @@
     }
   ],
   "validationMetrics": {
-    "totalResults": 10,
-    "validResults": 10,
+    "totalResults": 12,
+    "validResults": 12,
     "issueCount": 0
   }
 }
