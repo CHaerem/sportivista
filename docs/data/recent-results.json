@@ -1,6 +1,45 @@
 {
-  "lastUpdated": "2026-07-26T13:13:51.757Z",
+  "lastUpdated": "2026-07-26T15:02:20.772Z",
   "football": [
+    {
+      "homeTeam": "SK Brann",
+      "awayTeam": "Vålerenga",
+      "homeScore": 2,
+      "awayScore": 3,
+      "date": "2026-07-26T12:30Z",
+      "league": "Eliteserien",
+      "leagueCode": "nor.1",
+      "venue": "Brann Stadium",
+      "goalScorers": [
+        {
+          "player": "Henrik Rorvik Bjordal",
+          "team": "Vålerenga",
+          "minute": "24'"
+        },
+        {
+          "player": "Carl Lange",
+          "team": "Vålerenga",
+          "minute": "41'"
+        },
+        {
+          "player": "Lucas Haren",
+          "team": "Vålerenga",
+          "minute": "45'+4'"
+        },
+        {
+          "player": "Niklas Castro",
+          "team": "SK Brann",
+          "minute": "65'"
+        },
+        {
+          "player": "Felix Horn Myhre",
+          "team": "SK Brann",
+          "minute": "77'"
+        }
+      ],
+      "recapHeadline": null,
+      "isFavorite": true
+    },
     {
       "homeTeam": "Bodo/Glimt",
       "awayTeam": "Hamarkameratene",
@@ -56,7 +95,7 @@
           "minute": "90'+1'"
         }
       ],
-      "recapHeadline": "Start avgjorde på overtid i Kristiansund",
+      "recapHeadline": null,
       "isFavorite": false
     },
     {
@@ -152,7 +191,7 @@
       ],
       "norwegianPlayers": [
         {
-          "position": 32,
+          "position": 44,
           "player": "Kristoffer Ventura",
           "score": "-9",
           "roundScore": "-",
@@ -206,6 +245,75 @@
   },
   "tennis": [],
   "f1": [
+    {
+      "raceName": "AWS Hungarian Grand Prix",
+      "type": "Race",
+      "date": "2026-07-24T11:30Z",
+      "circuit": "Hungaroring",
+      "topDrivers": [
+        {
+          "position": 1,
+          "driver": "Lando Norris",
+          "team": null,
+          "status": null
+        },
+        {
+          "position": 2,
+          "driver": "Max Verstappen",
+          "team": null,
+          "status": null
+        },
+        {
+          "position": 3,
+          "driver": "Kimi Antonelli",
+          "team": null,
+          "status": null
+        },
+        {
+          "position": 4,
+          "driver": "Charles Leclerc",
+          "team": null,
+          "status": null
+        },
+        {
+          "position": 5,
+          "driver": "Lewis Hamilton",
+          "team": null,
+          "status": null
+        },
+        {
+          "position": 6,
+          "driver": "Isack Hadjar",
+          "team": null,
+          "status": null
+        },
+        {
+          "position": 7,
+          "driver": "George Russell",
+          "team": null,
+          "status": null
+        },
+        {
+          "position": 8,
+          "driver": "Liam Lawson",
+          "team": null,
+          "status": null
+        },
+        {
+          "position": 9,
+          "driver": "Nico Hülkenberg",
+          "team": null,
+          "status": null
+        },
+        {
+          "position": 10,
+          "driver": "Arvid Lindblad",
+          "team": null,
+          "status": null
+        }
+      ],
+      "totalDrivers": 22
+    },
     {
       "raceName": "Moët & Chandon Belgian Grand Prix",
       "type": "Race",
@@ -346,8 +454,8 @@
     }
   ],
   "validationMetrics": {
-    "totalResults": 8,
-    "validResults": 8,
+    "totalResults": 10,
+    "validResults": 10,
     "issueCount": 0
   }
 }
