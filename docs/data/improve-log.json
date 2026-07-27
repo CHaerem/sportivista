@@ -1,7 +1,7 @@
 {
 	"runAt": "2026-07-27T10:50:00Z",
 	"action": "opened-pr",
-	"pr": null,
+	"pr": "https://github.com/CHaerem/sportivista/pull/417",
 	"proposal": "Fix a real correctness bug in the streaming field (the #1 user-facing field after start time): scripts/lib/norwegian-rights.js — the deterministic build-time rights map — lumped Champions, Europa AND Conference League all onto TV 2 Play (one regex: /champions|europa|conference/ → TV 2). Split it per the verified 2026 rights: Champions League → TV 2 Play, Europa League + Conference League → Viaplay. Added a code comment with the source + the early-qualifier nuance, and three pinning tests (CL→TV 2, EL→Viaplay-not-TV2, ECL→Viaplay). The .claude/skills/norwegian-rights/SKILL.md mirror (line 41) carries the same error but its edit was blocked by this session's .claude/ write permission — flagged for the CI agent / a reviewer to apply the identical one-line split.",
 	"evidence": [
 		"verify-log.json (2026-07-27T09:00Z) RETTIGHETSFUNN (durabel): 'UEFA-klubbrettighetene i Norge t.o.m. 2030/31 er nå bekreftet fra kilde: Champions League → TV 2, Europa League + Conference League → Viaplay (presse.viaplaygroup.no + tvkampen.com). norwegian-rights-skillen linje 41 grupperer fremdeles feilaktig «Champions League / Europa League → TV 2 Play» — kun CL er TV 2s.' The verify agent tried to fix the skill and was permission-denied ('SKILL-EDIT NEKTET') — the correction has been logged awaiting apply since then.",
