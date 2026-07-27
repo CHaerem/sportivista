@@ -87,12 +87,12 @@ function editDetailLine(next) {
 
 /** One coverage row: name + next-event subtitle, tap to reveal the detail (aliases,
  *  the fuller next-event line, and the two actions). No amber in the resting row. */
-function row(entry, kindKey, kindLabel, events = allEvents) {
+function row(entry, kindKey, kindLabel, events = allEvents, now = Date.now()) {
 	const name = typeof entry === 'string' ? entry : entry.name;
 	const on = notifies(entry, kindKey);
 	const sport = typeof entry === 'object' && entry.sport ? entry.sport : '';
 	const aliases = typeof entry === 'object' && Array.isArray(entry.aliases) ? entry.aliases.join(', ') : '';
-	const next = ssNextEventForEntity(events, entry);
+	const next = ssNextEventForEntity(events, entry, now);
 	const toggleUrl = issueUrl({ action: 'Endre varsel', kind: kindLabel, name, notify: on ? 'Nei' : 'Ja' });
 	const removeUrl = issueUrl({ action: 'Fjern', kind: kindLabel, name });
 	const detailWhen = next
