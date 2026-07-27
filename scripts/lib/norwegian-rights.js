@@ -80,7 +80,14 @@ export function norwegianRights(ev) {
 		if (/world cup|fifa|\bvm\b/.test(hay)) return [WC_SHARED]; // NRK/TV 2 shared — exact channel TBD
 		if (/premier league/.test(hay)) return [CH.tv2];
 		if (/la\s?liga/.test(hay)) return [CH.tv2];
-		if (/champions|europa|conference/.test(hay)) return [CH.tv2];
+		// UEFA club competitions split in Norway (verified 2026-07-27 vs
+		// presse.viaplaygroup.no + tvkampen.com, rights t.o.m. 2030/31): Champions
+		// League → TV 2, Europa + Conference League → Viaplay. "champions" is tested
+		// first so the Super Cup (CL winner vs EL winner) still maps to TV 2. NB:
+		// Norwegian clubs' EARLY qualifiers are often sub-licensed free to VG TV /
+		// Direktesport / Amedia — the verify agent resolves that per event on top.
+		if (/champions/.test(hay)) return [CH.tv2];
+		if (/europa|conference/.test(hay)) return [CH.viaplay];
 		if (/obos|eliteserie|norwegian|cup|nm\b/.test(hay)) return [CH.tv2];
 		if (isNationVsNation(ev)) return [WC_SHARED]; // landskamp / WC labelled only "International"
 		return [];

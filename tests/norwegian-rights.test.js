@@ -15,6 +15,17 @@ describe("norwegianRights", () => {
 	it("Premier League → TV 2 Play", () => {
 		expect(norwegianRights({ sport: "football", tournament: "Premier League" })[0].platform).toBe("TV 2 Play");
 	});
+	it("Champions League → TV 2 Play (TV 2 holds UEFA's flagship club comp)", () => {
+		expect(norwegianRights({ sport: "football", tournament: "UEFA Champions League" })[0].platform).toBe("TV 2 Play");
+	});
+	it("Europa League → Viaplay (NOT TV 2; verified 2026-07-27 vs presse.viaplaygroup.no + tvkampen)", () => {
+		const r = norwegianRights({ sport: "football", tournament: "UEFA Europa League 2026/27 (kvalifisering)" });
+		expect(r[0].platform).toBe("Viaplay");
+		expect(r.some((c) => /tv 2/i.test(c.platform))).toBe(false);
+	});
+	it("Conference League → Viaplay (NOT TV 2; Brann–U Cluj ground truth)", () => {
+		expect(norwegianRights({ sport: "football", tournament: "UEFA Conference League 2026/27 (kvalifisering)" })[0].platform).toBe("Viaplay");
+	});
 	it("unknown competition → no guess (empty)", () => {
 		expect(norwegianRights({ sport: "football", tournament: "Some Friendly" })).toEqual([]);
 	});
