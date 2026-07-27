@@ -1,13 +1,13 @@
 {
-	"runAt": "2026-07-22T10:22:29Z",
+	"runAt": "2026-07-27T00:00:00Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"visual-qa-log.json (2026-07-22) verdict 'issues' with three high findings (375/393/900px) — all three describe the SAME thing: the whole web sits behind a mandatory 'Logg på med Apple' gate, so no dashboard content renders for the unauthenticated screenshot harness. Unchanged repeat of the 2026-07-21 finding.",
-		"Not code-fixable by this agent: the gate is a DELIBERATE owner decision (commit f905fc70a 'web: hele siden bak Sign in with Apple (eier-beslutning 21.07)'), documented inline in index.html:22-26. body.gated hiding all content until Sign in with Apple succeeds is the designed behaviour, not a rendering bug.",
-		"The AUTHENTICATION_FAILED error is — per visual-qa's own note — an artifact of the offline screenshot environment (no network to Apple CloudKit web services), not a bug real signed-in users hit. gate-boot.js / index.html fail gracefully to a calm error card, never a blank page.",
-		"The gate screen itself (wordmark, lead copy, sign-in button, error text) is well laid out at all three widths — no overflow, clipping, or truncation. Nothing to fix there.",
-		"Fixing would mean REVERSING an explicit owner decision (removing/bypassing the auth gate) and auto-merging that reversal to the live site — outside this agent's mandate ('only genuinely code-fixable UI issues'; 'be conservative, abandon rather than ship anything you can't prove is clean'). Deferred to owner review — no PR opened."
+		"visual-qa-log.json (2026-07-27) verdict 'issues' with two high + one medium finding (375/393/900px) — all describe the SAME thing: the whole web sits behind a mandatory 'Logg på med Apple' gate, so no dashboard content renders for the unauthenticated screenshot harness. Unchanged ~6-day repeat of the 2026-07-21/22 findings.",
+		"Not code-fixable by this agent: the gate is a DELIBERATE owner decision (commit f905fc70a 'web: hele siden bak Sign in with Apple (eier-beslutning 21.07)'), documented inline in index.html:45-49. body.gated hiding all content until Sign in with Apple succeeds is the designed behaviour, not a rendering bug. Fixing it would mean REVERSING an explicit owner decision and auto-merging that reversal to the live site — outside mandate.",
+		"The AUTHENTICATION_FAILED error and the empty #apple-sign-in-button are — per visual-qa's own note — artifacts of the offline screenshot environment (no network to Apple CloudKit web services), where CloudKit JS never loads its own sign-in control. icloud-sync.js gate() fails gracefully to a calm error card telling the user to reload (index.html + gate-boot.js), never a blank page. Not a bug real signed-in users hit.",
+		"The medium 'no retry control on auth failure' finding: reload IS the documented retry, and visual-qa explicitly asks a HUMAN to confirm whether real users (e.g. Safari private browsing / blocked third-party cookies) hit this dead end. Any change to the auth flow cannot be screenshot-verified in this harness (the success path requires a live CloudKit sign-in the offline harness has no network for), so an auto-merging PR would ship an unverified change to the live sign-in — the prompt's exact 'abandon rather than ship anything you can't prove is clean' case.",
+		"The gate screen itself (wordmark, tagline, lead copy, error text) remains well laid out at all three widths — no overflow, clipping, or truncation, calm and centered. Nothing to fix there. Deferred to owner review — no PR opened, consistent with the 2026-07-21 and 2026-07-22 runs."
 	]
 }
