@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T15:25:00Z",
+  "lastUpdated": "2026-07-27T18:10:00Z",
   "lastUpdatedBy": "research-agent",
   "version": 2,
   "leagues": [
@@ -234,7 +234,7 @@
       "id": "havard-rain-nygaard",
       "name": "Håvard «rain» Nygaard",
       "sport": "esports",
-      "reason": "alwaysTrack.athletes. Spiller for 100 Thieves (alwaysTrack.teams). SESONGEN PÅ PAUSE: 100 Thieves er UTE av begge sommer-turneringene — tapte StarLadder StarSeries Fall EU-kvalik (22.–23. juli) OG BLAST Bounty S2 R16 mot Team Spirit 1–2 (26. juli: Anubis/Mirage/decider) → kvalifiserte seg IKKE til Malta-LAN (30. juli–2. aug). Liquipedia-lagsida viser «No Upcoming Tournaments». Den mekaniske «rain imminent 30. juli»-flagget (scout-eskalering 27. juli 08:30Z) er en FALSK POSITIV fra en foreldet tracked-claim, IKKE et hull — RE-BEKREFTET denne kjøringen mot Liquipedia + HLTV. 100T er heller IKKE i EWC CS2-feltet (Paris 12.–23. aug; de 32 lagene er VRS-inviterte + kvalik, 100T ikke blant dem). INGEN dated 100T-kamp å boarde → korrekt fravær; esports.js-fetcheren/neste kjøring tar neste kamp når Liquipedia lister den (trolig en framtidig online-kvalik). Ingen event lagt til (manglende event > oppdiktet).",
+      "reason": "alwaysTrack.athletes. Spiller for 100 Thieves (alwaysTrack.teams). SESONGEN PÅ PAUSE: 100 Thieves er UTE av begge sommer-turneringene — tapte StarLadder StarSeries Fall EU-kvalik (22.–23. juli) OG BLAST Bounty S2 R16 mot Team Spirit 1–2 (26. juli: Anubis/Mirage/decider) → kvalifiserte seg IKKE til Malta-LAN (30. juli–2. aug). Liquipedia-lagsida viser «No Upcoming Tournaments». Den mekaniske «rain imminent 30. juli»-flagget (scout-eskalering 27. juli 08:30Z) er en FALSK POSITIV fra en foreldet tracked-claim, IKKE et hull — RE-BEKREFTET denne kjøringen mot Liquipedia + HLTV. 100T er heller IKKE i EWC CS2-feltet (Paris 12.–23. aug; de 32 lagene er VRS-inviterte + kvalik, 100T ikke blant dem). INGEN dated 100T-kamp å boarde → korrekt fravær; esports.js-fetcheren/neste kjøring tar neste kamp når Liquipedia lister den (trolig en framtidig online-kvalik). Ingen event lagt til (manglende event > oppdiktet). RE-BEKREFTET 27. juli ~18Z (kveldsscout mot Liquipedia + HLTV + GosuGamers): fortsatt «No Upcoming Tournaments», ingen berammet 100T-kamp i vinduet. Den mekaniske BLAST-Bounty-tracked-claimen (imminent 30. juli) er nå PRUNET fra tracked.tournaments — den var kilden til scoutens gjentatte falsk-positive rain-eskalering (08:30Z i dag). Neste 100T-kamp (trolig en online-kvalik/invite, ofte annonsert sent på @100Thieves X <1 døgn før) tas av esports.js/neste kjøring når Liquipedia lister den.",
       "addedAt": "2026-07-20T04:20:00Z",
       "addedBy": "research-agent",
       "evidence": [
@@ -249,11 +249,12 @@
       "id": "jakob-ingebrigtsen",
       "name": "Jakob Ingebrigtsen",
       "sport": "athletics",
-      "reason": "Manuelt seedet (WP-133) for å tette et entitets-dekningshull: catalog.json dekker Jakob Ingebrigtsen (tier2.athletes) — Norges største friidrettsstjerne — men entities.json manglet ham helt (kun Warholm fantes blant friidrettsutøverne), så WP-132s «Friidrett»-startpakke måtte grunnfeste på Warholm + EM-turneringen «gjennom de norske» i stedet for Ingebrigtsen direkte, og et søk på «Ingebrigtsen» hadde ingen stabil id. Denne seed-entryen gir ham en stabil entitet (type athlete); research-agenten reconcilierer mot katalogen på neste kjøring. Ingen konkrete stevner legges til her (research dekker startlistene når de slippes — Ingebrigtsen står trolig over EM 2026 pga. sykdom/akilles-op, VG 8. juli) — dette er ren entitets-bokføring.",
+      "reason": "Manuelt seedet (WP-133) for å tette et entitets-dekningshull: catalog.json dekker Jakob Ingebrigtsen (tier2.athletes) — Norges største friidrettsstjerne — men entities.json manglet ham helt (kun Warholm fantes blant friidrettsutøverne), så WP-132s «Friidrett»-startpakke måtte grunnfeste på Warholm + EM-turneringen «gjennom de norske» i stedet for Ingebrigtsen direkte, og et søk på «Ingebrigtsen» hadde ingen stabil id. Denne seed-entryen gir ham en stabil entitet (type athlete); research-agenten reconcilierer mot katalogen på neste kjøring. Ingen konkrete stevner legges til her (research dekker startlistene når de slippes — Ingebrigtsen NÅ BEKREFTET klar for friidretts-EM Birmingham (VG/NRK 27. juli, snudd fra «trolig ute»); distanse ikke låst (trolig 5000 m per VG). Nå navngitt på EM-eventet (10.–16. aug) så next-fixture-raden hans resolver) — dette er ren entitets-bokføring.",
       "addedAt": "2026-07-20T12:00:00Z",
       "addedBy": "manual-seed WP-133",
       "evidence": [
-        "catalog.json#tier2.athletes"
+        "catalog.json#tier2.athletes",
+        "https://www.vg.no/sport/i/e7kq8R/bekreftet-jakob-ingebrigtsen-stiller-i-em"
       ],
       "priority": "high"
     }
@@ -357,22 +358,6 @@
       "priority": "high"
     },
     {
-      "id": "blast-bounty-2026-s2",
-      "name": "BLAST Bounty 2026 Season 2 (100 Thieves)",
-      "sport": "esports",
-      "reason": "100 Thieves (alwaysTrack.teams) gjør tier-1-debut som wildcard; online-stadiet 21.–26. juli, LAN-finaler i Malta 30. juli–2. august. Nordmannen Håvard «rain» Nygaard på laget. Streaming gratis på BLAST.tv/Twitch/YouTube. 32 lag, single-elim Bo3, vinn 2 for Malta-LAN (topp-8). LODDTREKNING GJORT 17. juli (HLTV /news/45155 live draft): 100T (seed 31) valgte Falcons (seed 3) i R32 — kampen konkretisert på tavla (ons. 22. juli 17.30 UTC / 19.30 CEST). TID NÅ BEKREFTET (re-verifisert 18. juli, oppgradert medium→high): HLTV-kampsidens nedtelling landet eksakt på 17.30 UTC + blast.tv-programmet enige (to uavhengige kilder), tentativ-flagg fjernet. Mappool/veto fortsatt match-day; online-stadiet er «vinn to Bo3-serier» → Malta-LAN kun ved avansement.",
-      "addedAt": "2026-07-03T19:45:00Z",
-      "addedBy": "research-agent",
-      "evidence": [
-        "interests.json#alwaysTrack.teams",
-        "https://www.hltv.org/matches/2396005/100-thieves-vs-falcons-blast-bounty-2026-season-2",
-        "https://www.hltv.org/news/45155/blast-bounty-2026-season-2-live-draft",
-        "https://blast.tv/cs/tournaments/bounty-2026-season-2"
-      ],
-      "expires": "2026-08-03T23:59:59Z",
-      "priority": "medium"
-    },
-    {
       "id": "esports-world-cup-2026-cs2",
       "name": "Esports World Cup 2026 – CS2 (Paris)",
       "sport": "esports",
@@ -391,14 +376,15 @@
       "id": "em-friidrett-2026",
       "name": "EM friidrett 2026 (Birmingham)",
       "sport": "athletics",
-      "reason": "Dekker «Norske utøvere i internasjonal toppidrett» — det 27. friidretts-EM (frittstående mesterskap), Alexander Stadium, Birmingham 10.–16. august. NRK holder EM-friidrettsrettighetene 2026/2028/2030. Karsten Warholm BEKREFTET for Norges mixed 4x400 m stafett på åpningskvelden (10. aug). Jakob Ingebrigtsen står TROLIG over EM (sykdom oppå akilles-op; VG 8. juli). Mangekjemperne Skotheim/Rooth ventes; øvrige startlister ikke publisert, fylles på når listene slippes.",
+      "reason": "Dekker «Norske utøvere i internasjonal toppidrett» — det 27. friidretts-EM (frittstående mesterskap), Alexander Stadium, Birmingham 10.–16. august. NRK holder EM-friidrettsrettighetene 2026/2028/2030. Karsten Warholm BEKREFTET for Norges mixed 4x400 m stafett på åpningskvelden (10. aug). Jakob Ingebrigtsen NÅ BEKREFTET klar for EM (VG/NRK 27. juli, snudd fra «trolig ute» etter akilles-operasjonen) — distansen er ikke offisielt låst, men VG melder trolig 5000 m (regjerende europamester på både 1500 m og 5000 m); nå navngitt på EM-eventet i norwegianPlayers så raden hans resolver. Mangekjemperne Skotheim/Rooth ventes; øvrige startlister ikke publisert, fylles på når listene slippes.",
       "addedAt": "2026-07-07T18:05:00Z",
       "addedBy": "research-agent",
       "evidence": [
         "interests.json#interests",
         "https://en.wikipedia.org/wiki/2026_European_Athletics_Championships",
         "https://www.birmingham26.com/news/karsten-warholm-ready-to-join-norway-push-for-gold-in-4x400m-mixed-relay-at-birmingham-2026",
-        "https://www.vg.no/sport/i/lnJM5M/jakob-ingebrigtsen-kommer-ikke-til-friidretts-nm-i-trondheim"
+        "https://www.vg.no/sport/i/lnJM5M/jakob-ingebrigtsen-kommer-ikke-til-friidretts-nm-i-trondheim",
+        "https://www.vg.no/sport/i/e7kq8R/bekreftet-jakob-ingebrigtsen-stiller-i-em"
       ],
       "expires": "2026-08-17T23:59:59Z",
       "priority": "high"
@@ -512,6 +498,7 @@
     }
   ],
   "notes": [
+    "Kjøring 2026-07-27T18:10Z (man. kveld ~20.10 CEST, standard-tier Opus). eventsAdded: 0, eventsRemoved: 0, eventsAmended: 3 (Bodø/Glimt CL-kvalik streaming RE-korrigert x2 + EM friidrett summary/spillere). trackedRemoved: blast-bounty-2026-s2 (100T ute av turneringen — stale imminent-claim som ga scoutens gjentatte falsk-positive rain-eskalering); trackedAmended: havard-rain-nygaard, em-friidrett-2026, jakob-ingebrigtsen. TRIGGER: ordinær 4-timers-slot ~2,7 t etter 15:25Z-kjøringen; scout eskalerte 08:30Z på rain/100T (imminent 30. juli, tracked-claim) — RE-VERIFISERT falsk positiv denne kjøringen. FAN-OUT: to parallelle web-scouts (CS2/100T + sykkel/friidrett). FUNN & HANDLINGER: (1) rain/100T FALSK POSITIV RE-BEKREFTET — Liquipedia/HLTV/GosuGamers viser «No Upcoming Tournaments», 100T ute av Malta-LAN + ikke i EWC; PRUNET den stale BLAST-Bounty-claimen som var rotårsaken til den mekaniske imminent-gapen. (2) JAKOB INGEBRIGTSEN NÅ KLAR FOR EM (VG/NRK 27. juli, snudd fra «trolig ute» etter akilles-op) — distanse ikke låst (trolig 5000 m per VG). Ingen separat dated finale-event lagt til (finaledatoer kun fra tredjeparts-mirror, uverifisert; distanse uavklart — manglende presist event > feil event); i stedet navngitt på EM-umbrellaen (10. aug) så next-fixture-raden hans resolver + summary/reason amendert. (3) DANMARK RUNDT (starter 29. juli) — norsk kringkaster fortsatt UBEKREFTET for 2026 (scout sjekket DR/digitalt.tv/cykelkalenderen/WBD; DR/DRTV = dansk holder, ingen norsk 2026-listing) → streaming holdt ærlig tom, re-verifiseres mot norsk TV-guide rett før start. (4) BODØ/GLIMT streaming-revert-war: 17:40Z-bygget re-klobbet begge kamper til «TV 2 Play» igjen — re-satt HJEMME (11. aug)→Direktesport/Avisa Nordland, BORTE (4. aug)→tom (ærlig «–»). RSS ellers ren overgangs-/opinion-/skadestøy. validate-events.js kjørt etter skriving.",
     "PRUNE (grader-funn 27. juli): fjernet nm-friidrett-2026 (expires 2026-07-26, NM Trondheim 23.–25. juli ferdig) — oversett i første pass, nå droppet. Ingen andre past-expires entries igjen.",
     "Kjøring 2026-07-27T15:25Z (søn. ettermiddag ~17.25 CEST, standard-tier Opus). eventsAdded: 3 (golf: Wyndham Championship, FedEx St. Jude Championship, Danish Golf Championship), eventsRemoved: 0, eventsAmended: 2 (Bodø/Glimt CL-kvalik streaming re-korrigert). trackedAdded: wyndham/fedex-st-jude/danish-golf-championship-2026; trackedRemoved: tour-de-france-2026 (ferdig, alle 21 etapper), rosenborg-2026 (utløpt, Man Utd-treningskamp 24. juli ferdig); trackedAmended: viktor-hovland (FedEx St. Jude på tavla), kristoffer-ventura (3M ferdig, mistet PGA-kort → KFT), havard-rain-nygaard (ute av begge turneringer). TRIGGER: scout eskalerte 08:30Z på rain/100T imminent 30. juli (tracked-claim) — VERIFISERT SOM FALSK POSITIV; + coverage-audit 07:32Z ÉN medium golf-gap. FAN-OUT: tre parallelle web-scouts (golf/CS2/sykkel+fotball) + én uavhengig write-time fact-check på golf-eventene. HANDLINGER: (1) GOLF-GAPET TETTET — coverage-critic flagget at tavla hadde NULL golf etter 3M Open. Lagt til FedExCup-sluttspillets åpning (FedEx St. Jude, Hovland ~20. FedExCup → i norwegianPlayers, løser Hovland-tracked-claim-gapen), grunnseriefinalen Wyndham, og en DP-turnering (Danish Golf Championship). Alle fact-checket mot 2+ kilder; PGA-eventer = HBO Max/Eurosport (WBD, IKKE Viaplay — bekreftet), DP = Viaplay. (2) rain/100T FALSK POSITIV — 100 Thieves tapte BLAST Bounty S2 R16 mot Team Spirit 1–2 (26. juli), ute av Malta-LAN, «No Upcoming Tournaments» på Liquipedia, IKKE i EWC-feltet → ingen kamp å boarde (Liquipedia+HLTV). (3) BODØ/GLIMT streaming-revert-war: begge kamper sto igjen «TV 2 Play» — re-satt HJEMME (11. aug)→Direktesport/Avisa Nordland, BORTE (4. aug)→tom (ærlig «–»); verify må beskytte. validate-events.js: 62 events, 0 errors (2 forventede streaming-missing = Glimt borte + Danmark Rundt tilsiktet tomme; 2 forventede chess-timezone-bleed).",
     "SKILL-FIX FORSØKT MEN PERMISSION-GATED (27. juli): forsøkte å RETTE norwegian-rights SKILL.md linje 41 («Champions League / Europa League → TV 2 Play») til korrekt tiered map (Champions League inkl. kvalik = TV 2 Play t.o.m. 2026/27; Europa League + Conference League inkl. kvalik = VIAPLAY t.o.m. 2031; norske klubbers europakvalik-HJEMMEkamper ofte på lokal holder — Bodø/Glimt→Direktesport/Avisa Nordland, Tromsø→VG TV/Nordlys) — men Edit mot .claude/skills er REELT permission-gated i denne interaktive økten (samsvarer med 22.–24.-juli-loggene; ikke WP-91-debunket her). Dokumentert for CI-kjøring/menneske uten sperren. SELF-REPAIR (durabel kodefiks, flagget mange kjøringer): scripts/lib/norwegian-rights.js linje ~83 mapper /europa|conference/ → TV 2 Play — split slik at kun \\bchampions league\\b → TV 2 Play, /europa|conference/ → Viaplay; + legg lokal-holder-tokens (direktesport, avisa nordland, vg tv, nordlys) i build-events PLATFORM_SOURCE_TOKENS. Uten den re-klobbes Glimt-hjemmekampens streaming til TV 2 Play hver build.",
