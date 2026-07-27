@@ -1,12 +1,16 @@
 {
-	"runAt": "2026-07-20T10:17:00Z",
+	"runAt": "2026-07-27T10:50:00Z",
 	"action": "opened-pr",
-	"pr": "https://github.com/CHaerem/sportivista/pull/350",
-	"proposal": "Teach the research agent to cover F1 qualifying (and sprint/sprint-qualifying on sprint weekends) as its own event per GP weekend — not just the Sunday race. Added a sport-specific 'F1 weekends' rule to scripts/agents/research.md (modeled on the existing 'Stage races' rule), citing the interests.json 'kvalifisering + race' brief and instructing the agent to confirm session times against formula1.com (not ESPN, per source-quirks) and use Viaplay.",
+	"pr": "https://github.com/CHaerem/sportivista/pull/417",
+	"proposal": "Fix a real correctness bug in the streaming field (the #1 user-facing field after start time): scripts/lib/norwegian-rights.js — the deterministic build-time rights map — lumped Champions, Europa AND Conference League all onto TV 2 Play (one regex: /champions|europa|conference/ → TV 2). Split it per the verified 2026 rights: Champions League → TV 2 Play, Europa League + Conference League → Viaplay. Added a code comment with the source + the early-qualifier nuance, and three pinning tests (CL→TV 2, EL→Viaplay-not-TV2, ECL→Viaplay). The .claude/skills/norwegian-rights/SKILL.md mirror (line 41) carries the same error but its edit was blocked by this session's .claude/ write permission — flagged for the CI agent / a reviewer to apply the identical one-line split.",
 	"evidence": [
-		"coverage-audit.json (2026-07-20T06:46Z): the F1-qualifying gap ('Ungarn GP-kvalifiseringen ... står ikke som eget event — tavla har kun selve løpet') has now recurred FOUR audits in a row (17–20 July), recurrences=3, and was bumped low→medium per the recall-exhaustion rule so an evergreen low-severity hole would not calcify. The audit explicitly defers the call to research/owner: 'research/owner avgjør om kvalik bør legges til per GP-helg.'",
-		"interests.json line 193 states the owner interest explicitly: 'F1 hele sesongen — kvalifisering + race'. Qualifying is a first-class wish, not an inference.",
-		"research.md had NO instruction to add F1 qualifying — grep for kvalif/qualif/sprint/session in the prompt returns only the generic 'schedule resumes' aside (line 61). The agent has consistently built one f1 event per weekend (the race), so this is a recurring coverage gap the prompt never told it to fill.",
-		"npm test: 753 passed (46 files), incl. the agent-prompts coherence test that scans research.md for valid skill references (source-quirks reference intact)."
+		"verify-log.json (2026-07-27T09:00Z) RETTIGHETSFUNN (durabel): 'UEFA-klubbrettighetene i Norge t.o.m. 2030/31 er nå bekreftet fra kilde: Champions League → TV 2, Europa League + Conference League → Viaplay (presse.viaplaygroup.no + tvkampen.com). norwegian-rights-skillen linje 41 grupperer fremdeles feilaktig «Champions League / Europa League → TV 2 Play» — kun CL er TV 2s.' The verify agent tried to fix the skill and was permission-denied ('SKILL-EDIT NEKTET') — the correction has been logged awaiting apply since then.",
+		"Ground truth already on the board (events.json): Brann–U Cluj (Conference League 2. kvalik) streaming Viaplay — verified vs tvkampen; the summary reads 'Viaplay (som har Europa- og Conference League-rettighetene i Norge t.o.m. 2031)'. Tromsø–Hradec Králové (Europa League) → VG TV (free sub-license) + Viaplay. Both directly contradict the map's EL/ECL → TV 2.",
+		"calibration-ledger corroboration: multiple 2026-07-27 checks confirm Norwegian-club UEFA qualifiers airing on Viaplay / VG TV, none on TV 2 for EL/ECL.",
+		"Bug was in load-bearing code, not just docs: scripts/lib/norwegian-rights.js:83 returned CH.tv2 for /champions|europa|conference/ — so any EL/ECL event WITHOUT a tvkampen listing (the fallback path) was stamped TV 2 Play, a wrong 'hvor kan jeg se det'. Champions ordered first preserves the Super Cup (CL winner vs EL winner) → TV 2.",
+		"npm test: 1206 passed (73 files), incl. 3 new pinning tests in tests/norwegian-rights.test.js (CL→TV 2 Play, EL→Viaplay & not TV 2, ECL→Viaplay). Was 1203 before."
+	],
+	"notes": [
+		".claude/skills/norwegian-rights/SKILL.md line 41 needs the identical split (Champions → TV 2 Play; Europa + Conference → Viaplay). Blocked by this session's .claude/ write permission (same block the verify agent recorded on 2026-07-27) — not shippable from here; the CI improve agent (which has skills:write) or a reviewer should apply it so the skill mirrors the now-corrected lib."
 	]
 }
