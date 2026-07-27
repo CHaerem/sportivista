@@ -110,7 +110,7 @@ describe("row — tap-to-expand, value subtitle, no amber-overload", () => {
 	const events = [{ sport: "football", title: "Strømsgodset – Lyn", homeTeam: "Strømsgodset", awayTeam: "Lyn", time: hoursFromNow(31, base), streaming: [{ platform: "TV 2" }] }];
 
 	it("renders name + next-event subtitle, with actions in the collapsed detail", () => {
-		const html = sb.row({ name: "Lyn", sport: "football" }, "teams", "Lag", events);
+		const html = sb.row({ name: "Lyn", sport: "football" }, "teams", "Lag", events, base);
 		expect(html).toContain("ed-item");
 		expect(html).toContain("ed-name");
 		expect(html).toContain("Lyn");
