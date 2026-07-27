@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T22:55:01.577Z",
+  "generatedAt": "2026-07-27T23:57:38.387Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -25,7 +25,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 0.64,
+    "oldestGapAgeDays": 0.68,
     "escalatable": 0,
     "catalogMatched": 1,
     "auditedAt": "2026-07-27T07:32:00Z",
@@ -33,7 +33,7 @@
       {
         "interest": "Golf (tier1 wholesale) — FedExCup-sluttspillet + PGA Tour-grunnseriefinale",
         "severity": "medium",
-        "ageDays": 0.64,
+        "ageDays": 0.68,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -137,26 +137,31 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-07-27T22:54:59.070Z",
+    "buildCheckedAt": "2026-07-27T23:57:32.985Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-07-27T21:07:34.210Z",
-    "manifestAgeHours": 1.79,
+    "manifestGeneratedAt": "2026-07-27T22:55:03.071Z",
+    "manifestAgeHours": 1.04,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-07-26T15:02:01.492Z",
-        "ageHours": 31.88
+        "ageHours": 32.93
       },
       {
         "file": "football.json",
         "sourceLastUpdated": "2026-07-19T17:56:30.377Z",
-        "ageHours": 196.98
+        "ageHours": 198.02
+      },
+      {
+        "file": "golf.json",
+        "sourceLastUpdated": "2026-07-26T21:56:48.366Z",
+        "ageHours": 26.01
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-07-27T09:00:00Z",
-    "verifyAgeHours": 13.92,
+    "verifyAgeHours": 14.96,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
