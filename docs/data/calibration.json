@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-27T08:28:26.923Z",
+  "generatedAt": "2026-07-27T12:19:31.086Z",
   "windowDays": 180,
   "records": {
-    "used": 108,
+    "used": 117,
     "skipped": 0
   },
   "sources": {
@@ -72,8 +72,8 @@
       "reliability": 0.5
     },
     "tvkampen.com": {
-      "checks": 2,
-      "agreed": 1,
+      "checks": 3,
+      "agreed": 2,
       "corrections": 0,
       "bySport": {
         "cycling": {
@@ -81,17 +81,17 @@
           "agreed": 0
         },
         "football": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 2,
+          "agreed": 2
         }
       },
       "byField": {
         "streaming": {
-          "checks": 2,
-          "agreed": 1
+          "checks": 3,
+          "agreed": 2
         }
       },
-      "lastChecked": "2026-07-10T09:30:00.000Z",
+      "lastChecked": "2026-07-27T09:00:00Z",
       "reliability": null
     },
     "m24.no (ntb)": {
@@ -937,22 +937,26 @@
       "reliability": null
     },
     "uefa.com": {
-      "checks": 2,
-      "agreed": 2,
+      "checks": 3,
+      "agreed": 3,
       "corrections": 0,
       "bySport": {
         "football": {
-          "checks": 2,
-          "agreed": 2
+          "checks": 3,
+          "agreed": 3
         }
       },
       "byField": {
         "existence": {
           "checks": 2,
           "agreed": 2
+        },
+        "time": {
+          "checks": 1,
+          "agreed": 1
         }
       },
-      "lastChecked": "2026-07-24T07:45:00Z",
+      "lastChecked": "2026-07-27T09:00:00Z",
       "reliability": null
     },
     "postnorddanmarkrundt.dk": {
@@ -972,6 +976,139 @@
         }
       },
       "lastChecked": "2026-07-24T07:45:00Z",
+      "reliability": null
+    },
+    "flobikes.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "cycling": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "existence": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-07-27T09:00:00Z",
+      "reliability": null
+    },
+    "skysports.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "football": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-07-27T09:00:00Z",
+      "reliability": null
+    },
+    "grandchesstour.org": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "chess": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-07-27T09:00:00Z",
+      "reliability": null
+    },
+    "bcfc.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "football": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-07-27T09:00:00Z",
+      "reliability": null
+    },
+    "letourfemmes.fr": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "cycling": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "existence": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-07-27T09:00:00Z",
+      "reliability": null
+    },
+    "tv2.no": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "cycling": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "streaming": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-07-27T09:00:00Z",
+      "reliability": null
+    },
+    "fotball.no": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "football": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-07-27T09:00:00Z",
       "reliability": null
     }
   }

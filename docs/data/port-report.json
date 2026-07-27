@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-27T08:28:25.558Z",
+  "generatedAt": "2026-07-27T12:19:29.859Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
     "amendRate": "green",
     "silentStops": "yellow",
-    "participantStatus": "yellow"
+    "participantStatus": "green"
   },
   "basis": {
     "coverageAudit": true,
@@ -25,7 +25,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 0.04,
+    "oldestGapAgeDays": 0.2,
     "escalatable": 0,
     "catalogMatched": 1,
     "auditedAt": "2026-07-27T07:32:00Z",
@@ -33,19 +33,19 @@
       {
         "interest": "Golf (tier1 wholesale) — FedExCup-sluttspillet + PGA Tour-grunnseriefinale",
         "severity": "medium",
-        "ageDays": 0.04,
+        "ageDays": 0.2,
         "recurrences": 0,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.09,
-    "nearTermChecked": 11,
-    "nearTermAmended": 1,
-    "verifyRunAt": "2026-07-24T07:45:00Z",
-    "windowRate": 0.15,
-    "windowChecks": 61,
+    "nearTermRate": 0,
+    "nearTermChecked": 8,
+    "nearTermAmended": 0,
+    "verifyRunAt": "2026-07-27T09:00:00Z",
+    "windowRate": 0.13,
+    "windowChecks": 70,
     "windowAmendments": 9,
     "windowCorrections": 3,
     "byDay": [
@@ -125,33 +125,42 @@
         "amendments": 0,
         "corrections": 1,
         "rate": 0
+      },
+      {
+        "date": "2026-07-27",
+        "checks": 9,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-07-27T08:28:19.248Z",
+    "buildCheckedAt": "2026-07-27T12:19:24.780Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-07-27T06:21:24.303Z",
-    "manifestAgeHours": 2.12,
+    "manifestGeneratedAt": "2026-07-27T08:28:27.054Z",
+    "manifestAgeHours": 3.85,
     "staleFiles": [
       {
         "file": "football.json",
         "sourceLastUpdated": "2026-07-19T17:56:30.377Z",
-        "ageHours": 182.53
+        "ageHours": 186.38
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-07-24T14:20:00Z",
-        "ageHours": 66.14
+        "ageHours": 69.99
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-07-24T07:45:00Z",
-    "verifyAgeHours": 72.72,
-    "corrections": 0,
+    "checkedAt": "2026-07-27T09:00:00Z",
+    "verifyAgeHours": 3.32,
+    "corrections": 1,
     "unresolved": 0,
-    "signals": []
+    "signals": [
+      "Verifiserte 8 AI-research-events i vinduet 27.07-02.08 (ingen pågående fleridagsturneringer med norske utøvere akkurat nå, så ingen deltakelse-/cut-sjekk den…"
+    ]
   }
 }
