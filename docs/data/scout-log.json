@@ -1,5 +1,11 @@
 [
   {
+    "runAt": "2026-07-27T16:02:06.490Z",
+    "verdict": "quiet",
+    "reason": "RSS: transfer gossip (Rodri Real Madrid interest, Barcola rumours—no schedule/streaming impact), opinion pieces (World Cup mailbag, football daily column), past pre-season coverage (Wigan training). Coverage gaps: all entity mentions in transfer/opinion content, not imminent concrete events. No schedule changes, broadcaster announcements, 100 Thieves CS2 match hints detected.",
+    "signals": []
+  },
+  {
     "runAt": "2026-07-20T10:56:00.000Z",
     "verdict": "quiet",
     "reason": "RSS: post-World Cup final wrap-up (Messi/Mbappé final—results done, no upcoming events), past-tense sports results (Pidcock Tour de France penalty—not schedule-impacting, Reitan British Open final result—already tracked), transfer gossip (HamKam signings), injury news (Casper Ruud ATP withdrawal—already covered, no upcoming event change), F1 engine politics (no schedule impact), Bodø/Glimt Champions League draw announcement (upcoming match but not tracked as high-priority team—coverage-critic will evaluate). Coverage gaps: all refer to past results or existing tracked events; no new concrete upcoming events requiring escalation. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints detected.",
@@ -231,7 +237,9 @@
     "runAt": "2026-07-27T08:30:00.000Z",
     "verdict": "escalate",
     "reason": "Coverage gap: Håvard «rain» Nygaard (esports/CS2 athlete) flagged as imminent (tracked-claim for 2026-07-30, only 3 days away) with no matching event on the board. Per scout rules, tracked athletes with missing imminent events warrant escalation—research should verify if a CS2 event exists for rain on or near July 30. This is a primary focus entity (100 Thieves / rain CS2 matches are explicitly call-outs in the prompt; these are announced late). All other RSS content: post-World Cup wrap-up (transfer gossip, injury/retirement news, leadership announcements), Tour de France stage results (no schedule changes), transfer season noise (no event impact). No schedule changes, broadcaster announcements, or other concrete upcoming events requiring escalation detected. Escalation cap: 0/2 today before this run.",
-    "signals": ["imminent-tracked-entity-gap: rain/100-thieves-cs2"]
+    "signals": [
+      "imminent-tracked-entity-gap: rain/100-thieves-cs2"
+    ]
   },
   {
     "runAt": "2026-07-27T12:44:35.971Z",
