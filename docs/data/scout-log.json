@@ -232,5 +232,11 @@
     "verdict": "escalate",
     "reason": "Coverage gap: Håvard «rain» Nygaard (esports/CS2 athlete) flagged as imminent (tracked-claim for 2026-07-30, only 3 days away) with no matching event on the board. Per scout rules, tracked athletes with missing imminent events warrant escalation—research should verify if a CS2 event exists for rain on or near July 30. This is a primary focus entity (100 Thieves / rain CS2 matches are explicitly call-outs in the prompt; these are announced late). All other RSS content: post-World Cup wrap-up (transfer gossip, injury/retirement news, leadership announcements), Tour de France stage results (no schedule changes), transfer season noise (no event impact). No schedule changes, broadcaster announcements, or other concrete upcoming events requiring escalation detected. Escalation cap: 0/2 today before this run.",
     "signals": ["imminent-tracked-entity-gap: rain/100-thieves-cs2"]
+  },
+  {
+    "runAt": "2026-07-27T12:44:35.971Z",
+    "verdict": "quiet",
+    "reason": "RSS: post-World Cup wrap-up (Infantino response—legacy commentary, no upcoming events), past results (AaFK vs Viking—past match), transfer gossip (Arsenal/Liverpool Bradley Barcola, Real Madrid Diomande, Barcelona/Manchester City signings—transfer season noise, no event impact), World Cup replay/mailbag (legacy, no events). Coverage gaps: entity mentions (Molde/Arsenal/Liverpool/Real Madrid/Eliteserien—all transfer-related, no imminent event signals); tracked-claim Viktor Hovland Aug 16 remains low-severity (20+ days, coverage-critic assigned); tracked-claim rain/100-Thieves escalated at 08:30 this morning—already handled. No new schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 1/2 today (already escalated on rain at 08:30).",
+    "signals": []
   }
 ]
