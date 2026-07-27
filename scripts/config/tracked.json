@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-24T14:20:00Z",
+  "lastUpdated": "2026-07-27T15:25:00Z",
   "lastUpdatedBy": "research-agent",
   "version": 2,
   "leagues": [
@@ -111,22 +111,6 @@
       "priority": "high"
     },
     {
-      "id": "rosenborg-2026",
-      "name": "Rosenborg BK",
-      "sport": "football",
-      "reason": "Rosenborg (catalog.tier2.teams) — norsk toppklubb dekket wholesale på det katalog-brede brettet (per-bruker-linsen filtrerer). LAGT TIL 21. juli etter imminent-sveipet fanget en reell next-fixture-event 3 dager ut: OPPKJØRINGSKAMP HJEMME mot Manchester United på Lerkendal fredag 24. juli kl. 18.00 CEST (16.00 UTC), del av Uniteds nordiske sommerturné. Dato/tid/bane uavhengig write-time fact-checket mot Rosenborgs egen billettside (billett.rbk.no) + Manchester Uniteds offisielle kampside + ESPN/Sofascore (alle 16.00 UTC / 18.00 CEST, Lerkendal). ai-research-event på tavla (high). NORSK VISNING = VG TV (gratis strømming, tv.vg.no) — RETTIGHETSFUNN: VG (ikke TV 2 eller Viaplay) har Uniteds norske sommerkamp-rettigheter 2026; bekreftet mot tvkampen.com (VG TV) + VGs egen «Se Manchester United på VGTV i sommer»-sak. Dette avviker fra norwegian-rights-skillens «treningskamp → TV 2 Play»-priori → dokumentert for skill-oppdatering. Rosenborg har ingen bekreftet europakamp sommeren 2026 (web-bekreftet tidligere), så Man United-treningskampen er lagets neste kjente fixture.",
-      "addedAt": "2026-07-21T18:05:00Z",
-      "addedBy": "research-agent",
-      "evidence": [
-        "catalog.json#tier2.teams",
-        "https://billett.rbk.no/event/rosenborg-united-oar5hr",
-        "https://www.manutd.com/en/matches/mens-team/rosenborg-bk-v-manchester-united-fc-friendly-20260724",
-        "https://www.vg.no/sport/i/XM9g9x/se-manchester-united-paa-vgtv-i-sommer"
-      ],
-      "expires": "2026-07-25T23:59:59Z",
-      "priority": "medium"
-    },
-    {
       "id": "tromso-europa-league-qualifying-2026-27",
       "name": "Tromsø IL – Europa League-kvalifisering 2026/27",
       "sport": "football",
@@ -148,13 +132,13 @@
       "id": "viktor-hovland",
       "name": "Viktor Hovland",
       "sport": "golf",
-      "reason": "alwaysTrack.athletes. UTE AV THE OPEN: Hovland MISSET CUTEN fredag 17. juli etter en kriserunde (4 over par etter ni hull i R2, dobbelbogey på hull 5 — NRK) — spiller ikke helgen på Royal Birkdale. Neste bekreftede start: FedExCup-sluttspillet (FedEx St. Jude Championship, TPC Southwind, 13.–16. aug) er svært sannsynlig (topp-70-felt) men IKKE individuelt bekreftet — feltet låses etter grunnseriefinalen (Wyndham, tidlig aug), så ikke lagt til ennå. FedEx Open de France (24.–27. sept, DP World Tour, Viaplay) senere. Ingen konkret Hovland-event på tavla nå (ærlig «ikke satt opp ennå» inntil sluttspillfeltet bekreftes).",
+      "reason": "alwaysTrack.athletes. FedEx St. Jude Championship (13.–16. aug, TPC Southwind, FedExCup-sluttspillets åpning) NÅ LAGT TIL PÅ TAVLA som ai-research-event med Hovland i norwegianPlayers — han ligger ~20. i FedExCup (bekreftet mot pgatour.com etter Travelers-seieren i juni), godt innenfor topp-70, så start er tilnærmet sikker; feltet låses formelt etter grunnseriefinalen Wyndham (~9. aug). Dette LØSER den mekaniske Hovland-tracked-claim-gapen (coverage-gaps, claimedDate 16. aug). Grunnseriefinalen Wyndham (6.–9. aug) er også på tavla (golf tier1), men Hovland kan stå over den siden han allerede er inne i sluttspillet. Norsk visning HBO Max (Sport)/Eurosport (WBD dekker vanlige PGA Tour-eventer 2026). Tidligere: misset cuten i The Open (17. juli).",
       "addedAt": "2026-07-02T00:00:00Z",
       "addedBy": "research-agent",
       "evidence": [
         "interests.json#alwaysTrack.athletes",
-        "https://www.theopen.com/royal-birkdale-154th-open",
-        "https://www.cbssports.com/golf/news/british-open-2026-tee-times-pairings-schedule-round-1-thursday/"
+        "https://www.pgatour.com/tournaments/2026/fedex-st-jude-championship/R2026027/overview",
+        "https://www.pgatour.com/player/46717/viktor-hovland"
       ],
       "priority": "high"
     },
@@ -193,16 +177,14 @@
       "id": "kristoffer-ventura",
       "name": "Kristoffer Ventura",
       "sport": "golf",
-      "reason": "alwaysTrack.athletes. Corales Puntacana Championship 16.–19. juli (Venturas forrige start) er ferdig (statisk/ai-research-event på tavla ut søndag). NESTE START NÅ BEKREFTET OG LAGT TIL 19. juli: 3M Open 23.–26. juli, TPC Twin Cities i Blaine, Minnesota — Ventura står i det OFFISIELLE feltet (pgatour.com «Inside the Field», 19. juli, eneste nordmann); datoer/venue re-bekreftet av uavhengig write-time fact-check mot pgatour.com turneringsoversikt + HBO Max (fire konkurranserunder tor.–søn., uken åpner 20. juli m/treningsrunder). ai-research-event med Ventura i norwegianPlayers (confidence high — dato/venue/felt bekreftet av 2+ autoritative kilder; eksakte tee-tider ikke publisert ennå). RETTIGHET: streaming[] = HBO Max (Sport) + Eurosport Norge — vanlige PGA Tour-eventer vises i Norge på HBO Max/Eurosport (WBD) i 2026, IKKE Viaplay (majors + DP World Tour fortsatt Viaplay); HBO Max' egen PGA-side lister 3M Open med dato-satte sendinger 23.–26. juli.",
+      "reason": "alwaysTrack.athletes. 3M Open (23.–26. juli, Venturas forrige start) FERDIG. Ventura MISTET PGA Tour-kortet for 2026 og spiller Korn Ferry Tour (web-scout 27. juli mot Wikipedia) → ingen bekreftet neste PGA Tour-start i vinduet. Ingen Ventura-event på tavla (ærlig «ikke satt opp ennå»). Danish Golf Championship (DP World Tour, 13.–16. aug) er en MULIG europeisk start, men feltet er ikke bekreftet → han er ikke navngitt på det eventet. Følg opp KFT-terminlista / DP-feltlistene når de slippes.",
       "addedAt": "2026-07-03T19:45:00Z",
       "addedBy": "research-agent",
       "evidence": [
         "interests.json#alwaysTrack.athletes",
-        "https://www.pgatour.com/article/news/inside-the-field/2026/07/19/how-the-field-qualified-for-3m-open-tpc-twin-cities",
-        "https://www.pgatour.com/tournaments/2026/3m-open/R2026525/overview",
-        "https://www.hbomax.com/no/no/sports/pga-tour"
+        "https://en.wikipedia.org/wiki/Kristoffer_Ventura",
+        "https://www.pgatour.com/tournaments/2026/3m-open/R2026525/overview"
       ],
-      "expires": "2026-07-27T23:59:59Z",
       "priority": "medium"
     },
     {
@@ -252,17 +234,15 @@
       "id": "havard-rain-nygaard",
       "name": "Håvard «rain» Nygaard",
       "sport": "esports",
-      "reason": "alwaysTrack.athletes. Spiller for 100 Thieves (alwaysTrack.teams) — på aktiv roster (Liquipedia): rain som rifler, dev1ce/poiii/sirah + Gizmy (IGL), gla1ve coach. DAGENS TO KAMPER (ons. 22. juli) FERDIG (CS2-scout + uavhengig write-time fact-check mot Liquipedia lag-/turneringsside + HLTV): (1) StarSeries Fall EU-kvalik Gruppe D vs Ninjas in Pyjamas — 100T TAPTE 1–2 (Inferno/Nuke/Anubis) og falt til elimineringssiden av gruppa. (2) BLAST Bounty S2 R32 vs Falcons — 100T VANT 2–1 (opprykk over #1-seeden) og gikk videre til R16 i online-stadiet, men R16-motstander/tid er IKKE berammet ennå → IKKE på tavla (fetcheren/verify tar den når BLAST publiserer; stream da BLAST.tv/twitch.tv/blast). NY EVENT PÅ TAVLA (23. juli): StarSeries do-or-die-elimineringskamp vs Nuclear TigeRES tor. 23. juli kl. 15.30 CEST (13.30 UTC), Bo3, gratis Kick (StarLadder) — motstander (NTR tapte 0–2 mot Echo, samme elimineringsside), eliminerings-seeding og tid write-time fact-checket mot Liquipedia + HLTV (to kilder enige) → high; taper 100T er de ute av kvalifiseringen. Streaming holdt Kick-only (write-time fact-check: StarLadders engelske sending er kick.com/starladder — det tidligere foreslåtte twitch.tv/starladder_cs_en finnes ikke; Twitch-kanalene er språk-cast). Malta-LAN 30. juli–2. aug kun ved videre BLAST-avansement (betinget). Statiske esports.js-fetcheren har ikke elimineringskampen ennå → reelt hull; build-events fuzzy-dedupe kollapser evt. senere fetcher-treff. OPPDATERT 23. juli ~17.20Z (CS2-scout m/web, StarSeries-kampen nå FERDIG): 100T TAPTE elimineringskampen mot Nuclear TigeRES 1–2 og er UTE av StarLadder StarSeries Fall 2026 EU-kvalik (bekreftet mot Liquipedia + GosuGamers + HLTV; enkeltkart-score ikke publisert) – rain fikk en kort turnering (tap i begge Gruppe D-kampene). Tavlas StarSeries-event amendert til tapet. VIDERE: 100T lever i BLAST Bounty S2 (slo Falcons 2–1 i R32 22. juli) – R16 spilles lør. 25. juli, men motstander/tid IKKE berammet ennå (BLAST bounty/pick-your-opponent-format) → IKKE på tavla; fetcher/verify/neste kjøring tar den når BLAST publiserer (stream BLAST.tv/Twitch). Malta-LAN 30. juli–2. aug kun ved videre avansement. OPPDATERT 24. juli ~06.45Z (research, dedikert CS2-scout m/web mot Liquipedia + HLTV): R16-motstander/tid FORTSATT UPUBLISERT ved kjøretid — online-stadiets R32 avsluttes først i dag 24. juli, og R16-seedingen settes av BLASTs pick-your-opponent «Draft Show» ETTER at R32 er ferdig, så oppgjøret kan ikke være berammet ennå. R16-vinduet er 25.–26. juli (bekreftet mot ghacks + esports.gg-format). Liquipedias 100T-lagside viser ingen kamp etter 23. juli; kvalifiseringssida lister kun R32-kamper t.o.m. 24. juli. INGEN event lagt til (en manglende event er bedre enn en oppdiktet — motstander/tid genuint ukjent) → statiske esports.js-fetcheren + verify tar den når Liquipedia lister den m/tid; stream da BLAST.tv/twitch.tv/BLASTPremier/kick.com/blastpremier. Malta-LAN fortsatt betinget av to Bo3-seiere til.",
+      "reason": "alwaysTrack.athletes. Spiller for 100 Thieves (alwaysTrack.teams). SESONGEN PÅ PAUSE: 100 Thieves er UTE av begge sommer-turneringene — tapte StarLadder StarSeries Fall EU-kvalik (22.–23. juli) OG BLAST Bounty S2 R16 mot Team Spirit 1–2 (26. juli: Anubis/Mirage/decider) → kvalifiserte seg IKKE til Malta-LAN (30. juli–2. aug). Liquipedia-lagsida viser «No Upcoming Tournaments». Den mekaniske «rain imminent 30. juli»-flagget (scout-eskalering 27. juli 08:30Z) er en FALSK POSITIV fra en foreldet tracked-claim, IKKE et hull — RE-BEKREFTET denne kjøringen mot Liquipedia + HLTV. 100T er heller IKKE i EWC CS2-feltet (Paris 12.–23. aug; de 32 lagene er VRS-inviterte + kvalik, 100T ikke blant dem). INGEN dated 100T-kamp å boarde → korrekt fravær; esports.js-fetcheren/neste kjøring tar neste kamp når Liquipedia lister den (trolig en framtidig online-kvalik). Ingen event lagt til (manglende event > oppdiktet).",
       "addedAt": "2026-07-20T04:20:00Z",
       "addedBy": "research-agent",
       "evidence": [
         "interests.json#alwaysTrack.athletes",
         "https://liquipedia.net/counterstrike/100_Thieves",
-        "https://liquipedia.net/counterstrike/StarLadder/StarSeries/2026/Fall/Europe",
-        "https://www.hltv.org/news/45156/starseries-fall-closed-qualifier-invites-announced",
-        "https://www.hltv.org/news/45171/100-thieves-eliminate-falcons-in-shock-upset-to-end-day-two-of-blast-bounty-s2"
+        "https://www.hltv.org/matches/2396014/100-thieves-vs-spirit-blast-bounty-2026-season-2"
       ],
-      "expires": "2026-08-03T23:59:59Z",
+      "expires": "2026-08-31T23:59:59Z",
       "priority": "medium"
     },
     {
@@ -279,27 +259,6 @@
     }
   ],
   "tournaments": [
-    {
-      "id": "tour-de-france-2026",
-      "name": "Tour de France 2026",
-      "sport": "cycling",
-      "reason": "alwaysTrack.tournaments + Uno-X Mobility (alwaysTrack.teams). Alle 21 etapper (4.–26. juli) ligger som ai-research-events. RE-VERIFISERT 17. juli tidlig morgen (sykkel-scout m/web): etappe 12 (Magny-Cours–Chalon-sur-Saône tors. 16., flat) VANT AV Tim Merlier (Soudal Quick-Step) — hans tredje etappeseier (hat-trick) foran Kooij (2.) og Philipsen (3.) i en kaotisk, styrtpreget massespurt; ingen nordmann i teten, men Wærenskjold + Abrahamsen (Uno-X) var i massestyrten på oppløpet (sjekket av lege, ingen alvorlig skade, fortsetter). Sammenlagt uendret på topp etter spurtetappen (to kilder: cyclinguptodate + cyclingnews): Pogačar i gult (Vingegaard +3.36, Evenepoel +4.06); Tobias Halland Johannessen beste nordmann OPP til 13. plass (+14.50); Mads Pedersen grønn (Merlier nå innen ~50 p); Pogačar prikket (KOM); Juan Ayuso hvit. Etappe-12-summary oppdatert med Merlier-seieren; etappe-13-summary (neste «Nå»-linje, fre. 17.) oppdatert med den ferske GC-linja. Etappe 13 (Dole–Belfort, lang kupert over Ballon d'Alsace) starttid bekreftet 13.00 CEST (11.00 UTC) mot franceletour.com — tavlas verdi korrekt, ingen endring. Seks nordmenn igjen (Uno-X-kvartetten + Tobias/Anders Halland Johannessen + Per Strand Hagenes/Visma); INGEN nye norske forfall (eneste forfall fortsatt Torstein Træen, DNF etter styrt på etappe 6). Norske rettigheter: TV 2 Play. OPPDATERT 17. juli ~10.15Z (sykkel-scout m/web): etappe 13 (Dole–Belfort) hadde ikke startet ved kjøretid (start 11.00 UTC bekreftet mot franceletour.com); ingen resultat ennå, GC-topp uendret. Etappe 14 (Mulhouse–Le Markstein, lør. 18., neste «Nå»-linje) STARTTID nå bekreftet 13.10 CEST (11.10 UTC) mot franceletour.com + cyclingstage (to kilder) — events.json flyttet 11.00→11.10 UTC. Ingen nye norske forfall (alle 6 nordmenn fortsatt med; Wærenskjold+Abrahamsen uskadd etter etappe-12-styrten). OPPDATERT 17. juli ~14.10Z (sykkel-scout m/web): etappe 13 (Dole–Belfort) FORTSATT PÅ VEIEN ved kjøretid (mål ~15.45 UTC) — ingen vinner å skrive; et stort brudd (~57 ryttere) med Jonas Abrahamsen (Uno-X) var på vei mot mål, ingen norske brudd/forfall på etappen. GC-SPRIKET OPPLØST: to ferske 17.-juli-kilder (idlprocycling + Wikipedia) enige om Tobias Halland Johannessen = 14. plass (+14.30) — tavlas etappe-13/-14-summary rettet fra 13. (+14.50) til 14. (+14.30); Ayuso 4. (+4.22) lagt til topp-GC. Etappe 14 (Mulhouse–Le Markstein lør. 18., neste «Nå») starttid 11.10 UTC re-bekreftet mot tre franske kilder (tourdefranceparcours.fr + info.fr + cyclingnews), uendret. OPPDATERT 17. juli ~17.40Z (sykkel-scout m/web, etappe 13 nå FERDIG): etappe 13 (Dole–Belfort) VANT AV Mauro Schmid (Jayco AlUla) fra et stort brudd – slo Harold Tejada (Astana) i tomannsspurt, Tom Pidcock 3. Jonas Abrahamsen (Uno-X) + Per Strand Hagenes var med i bruddet men ingen nordmann på pallen; ingen norske forfall på etappe 13 (Uno-X-styrten var på etappe 12, alle fortsatte). GC-favorittene nøytrale: topp uendret (Pogačar gult, Vingegaard +3.36, Evenepoel +4.06) men Tom Pidcock klatret til 4. (+4.15) og skjøv Ayuso til 5. (+4.22); Tobias Halland Johannessen beste nordmann ned til 15. (+14.50). Grønn Mads Pedersen (377 p); prikket Pogačar; hvit Ayuso. Etappe-13-summary rettet til Schmid-seieren + etappe-14-«Nå»-summary til den ferske GC-linja (to+ kilder: cyclinguptodate + procyclinguk + cyclingnews). Etappe 14 starttid 11.10 UTC uendret. UNO-X ETTER TOUREN: neste etappeløp er PostNord Danmark Rundt 29. juli–2. aug, deretter hjemmeløpet Arctic Race of Norway 13.–16. aug — begge nå på tavla (se egne entries). OPPDATERT 18. juli ~20.15Z (kveldskjøring, sykkel-scout m/web): etappe 14 (Mulhouse–Le Markstein) FERDIG — Tadej Pogačar vant soloritt (angrep på Col du Haag), hans 4. etappeseier, foran lagkamerat Isaac del Toro (+38 sek., UAE-dobbel) og Paul Seixas (Decathlon) 3. BEGGE Halland-tvillingene (Tobias + Anders, Uno-X) var med i dagens store brudd sammen med Carapaz, men bruddet ble hentet inn på de siste stigningene — INGEN nordmann på pallen, ingen norske forfall. (VIKTIG: RSS-headline «Halland-tvillingene på pallen» var FEIL/forvrengt — write-scout krysssjekket to kilder, tvillingene var i bruddet, ikke på etappepallen; «Charmig droppet» gjelder Anthon Charmig, DANSK Uno-X-domestik, ikke et norsk resultat.) GC etter etappe 14 (to kilder: cyclinguptodate + Wikipedia): Pogačar i gult, Vingegaard +4.30, Evenepoel +5.04, Paul Seixas +5.19 (overtok hvit fra Ayuso), Juan Ayuso +5.22; Tobias Halland Johannessen beste nordmann ~14. plass (+16.40, én kilde); grønn Mads Pedersen (397 p), prikket Pogačar (52 p), hvit Paul Seixas. Etappe-14- og etappe-15-summary oppdatert. ETAPPE 15 (Champagnole–Plateau de Solaison, søn. 19., neste «Nå»): board-tiden var 10.30 UTC (rent anslag) — KORRIGERT til 11.10 UTC (13.10 CEST) mot cyclingstage.com (én kilde, verify bekrefter mot ASO; et sekundært 13.20-treff avvist som mindre pålitelig). OPPDATERT 19. juli ~04.00Z (sykkel-scout m/web): etappe 15 (start 11.10 UTC re-bekreftet mot cyclingstage + olympics.com) hadde ikke startet ved kjøretid — ingen resultat å skrive. INGEN nye NORSKE forfall: alle seks nordmenn (Uno-X-kvartetten + Tobias/Anders Halland Johannessen + Per Strand Hagenes) fortsatt med etter etappe 14. NB (fanget): Uno-X mistet Anthon Charmig på etappe 14 (utenfor tidsgrensa), men Charmig er DANSK domestik — ikke en av de seks nordmennene, så det norske antallet står. GC-linja uendret siden etappe 14 (Pogačar gult, Vingegaard +4.30, Evenepoel +5.04, Seixas +5.19 hvit, Ayuso +5.22; Tobias HJ beste nordmann ~14. +16.40; grønn Pedersen 397 p). Etappe 16 (tempo, tir. 21.) start 11.00 UTC re-bekreftet mot cyclingstage, uendret. OPPDATERT 19. juli ~21.15Z (kveldskjøring, sykkel-scout m/web, etappe 15 nå FERDIG): STORT GC-JORDSKJELV — Jonas Vingegaard (2. sammenlagt) STYRTET UT ~21 km før mål på etappe 15 (Plateau de Solaison): kravebensbrudd, brøt løpet (hans første Grand Tour uten fullført; operasjon anbefalt). BEKREFTET av 4+ uavhengige kilder (cyclingnews + NBC Sports + cyclinguptodate + The National) — tidligere scout-headlines om «Vingegaard styrtet» var altså KORREKTE, men gjaldt etappe 15, ikke 14. Etappe 15 VUNNET AV Remco Evenepoel (slo Pogačar i topspurten), del Toro 3. (+6 s). GC etter etappe 15 (tre kilder enige): Pogačar gult, Evenepoel +5.00, Isaac del Toro +5.58 (overtok HVIT fra Seixas), Paul Seixas +6.23, Florian Lipowitz +6.48; beste nordmann Tobias Halland Johannessen ~13.–14. plass (~+14.50, eksakt plassering ikke sikkert bekreftet — PCS 403 ved kjøretid). Grønn Mads Pedersen (417 p), prikket Pogačar. INGEN nye NORSKE forfall — alle seks nordmenn fortsatt med (eneste norske brudd hele Touren er fortsatt Torstein Træen, DNS etappe 7; stage-15-DNF-ene var Vingegaard/Merlier/Van Asbroeck, ingen norske). Etappe-15-summary amendert til resultatet + etappe-16-«Nå»-summary til den ferske GC-linja. Mandag 20. juli = andre hviledag; etappe 16 (tempo) tir. 21. start 11.00 UTC re-bekreftet mot cyclingstage. OPPDATERT 21. juli ~18.00Z (kveldskjøring, sykkel-scout m/web, etappe 16 nå FERDIG): enkelttempoen (Évian→Thonon, 26 km) VUNNET AV Remco Evenepoel (tempo-VM) foran Pogačar (+28 sek.) og Mattias Skjelmose (+1.04) — Evenepoels 2. strake etappeseier. GC-DRAMA: Florian Lipowitz (5. sammenlagt før etappen) STYRTET UT i den tekniske nedkjøringen og brøt (ute av GC + ungdomskampen). Sammenlagt etter etappe 16 (tre kilder enige: cyclingstage + cyclinguptodate + sport.quotidiano): Pogačar gult, Evenepoel +4.32 (kuttet 28 sek.), del Toro +6.51 (hvit), Seixas +7.11, Ayuso +9.22. Grønn Mads Pedersen (417 p), prikket Pogačar. Beste nordmann Tobias Halland Johannessen rundt 16. plass (én kilde, provisorisk). INGEN norske forfall på etappe 16 (Foss meldt syk men ingen bekreftet DNF/DNS). Etappe-16-summary amendert til Evenepoel-seieren + etappe-17-«Nå»-summary til den ferske GC-linja. Etappe 17 (Chambéry→Voiron, ons. 22., flat/overgang) start 11.20 UTC re-bekreftet mot cyclingstage. OPPDATERT 22. juli ~17.45Z (sykkel-scout m/web, etappe 17 nå FERDIG): etappe 17 VUNNET AV Jasper Philipsen (Alpecin–Deceuninck) i massespurt fra et ~40-manns brudd — hans FØRSTE etappeseier i årets Tour, lansert av lagkamerat Mathieu van der Poel; Mauro Schmid 2., Olav Kooij 3. Ingen nordmann på pallen, ingen norske forfall. GC-favorittene nøytrale — sammenlagt UENDRET på topp (bekreftet mot cyclingnews + cyclinguptodate + idlprocycling): Pogačar gult+prikket, Evenepoel +4.32, del Toro +6.51 (hvit), Seixas +7.11, Ayuso +9.22; grønn Mads Pedersen (417 p, leder nå Philipsen med 31 etter etappeseieren); beste nordmann Tobias Halland Johannessen rundt 16. plass. Etappe-17-summary amendert til Philipsen-seieren + etappe-18-«Nå»-summary til den ferske GC-linja. Etappe 18 (Voiron→Orcières-Merlette, fjell, tor. 23., toppmålgang 7,1 km à 6,7 %) start 10.35 UTC re-bekreftet mot offisiell rutetid — første avgjørende Alpe-dag. OPPDATERT 23. juli ~17.20Z (sykkel-scout m/web, etappe 18 nå FERDIG): etappe 18 (Voiron→Orcières-Merlette) VUNNET AV Richard Carapaz (EF Education–EasyPost) i soloritt fra bruddet – angrep ~4 km før toppen; Mauro Schmid 2. (+0.45), Matteo Jorgenson 3. NORSK: Tobias Halland Johannessen (Uno-X) var med i bruddet og øynet etappeseier, men slapp på slutten og ble 5. (+1.57) – årets sterkeste norske Tour-resultat; ingen norske forfall. GC-favorittene nøytrale, topp uendret (bekreftet mot cyclingnews + cyclinguptodate + cyclingstage): Pogačar gult, Evenepoel +4.32, del Toro +6.51 (hvit), Seixas +7.11, Ayuso +9.22; grønn Mads Pedersen (477 p, +32 på Philipsen); prikket Pogačar (70 p, kun +1 på Paret-Peintre – KOM-truet). Tobias Halland Johannessen beste nordmann sammenlagt, 13. plass. Etappe-18-summary amendert til Carapaz-seieren + etappe-19-«Nå»-summary til den ferske GC-linja. Etappe 19 (Gap→Alpe d’Huez, fre. 24.) start 12.00 UTC re-bekreftet mot cyclingstage — uendret.",
-      "addedAt": "2026-07-02T00:00:00Z",
-      "addedBy": "research-agent",
-      "evidence": [
-        "interests.json#alwaysTrack.tournaments",
-        "https://en.wikipedia.org/wiki/2026_Tour_de_France",
-        "https://www.cyclingnews.com/pro-cycling/racing/tour-de-france-gc-standings-2026/",
-        "https://www.cyclingnews.com/pro-cycling/teams-riders/jonas-vingegaard-crashes-out-of-tour-de-france/",
-        "https://cyclinguptodate.com/cycling/tour-de-france-2026-classifications-update-stage-15-vingegaard-out-evenepoel-and-del-toro-take-over-podium-alongside-pogacar",
-        "https://hjelp.tv2.no/hovedkategori/sport/tour-de-france",
-        "https://www.cyclingstage.com/tour-de-france-2026-results/stage-16-results-tdf-2026/",
-        "https://cyclinguptodate.com/cycling/tour-de-france-2026-classifications-update-stage-16-remco-evenepoel-cuts-gap-to-tadej-pogacar-at-the-top-as-florian-lipowitz-crashes-out-of-gc-fight",
-        "https://www.cyclingnews.com/pro-cycling/racing/tour-de-france-richard-carapaz-flies-solo-across-the-final-kilometres-to-land-stunning-mountaintop-victory-on-stage-18/"
-      ],
-      "expires": "2026-07-27T23:59:59Z",
-      "priority": "high"
-    },
     {
       "id": "tour-of-denmark-2026",
       "name": "PostNord Tour of Denmark 2026 (Uno-X Mobility)",
@@ -429,23 +388,6 @@
       "priority": "medium"
     },
     {
-      "id": "nm-friidrett-2026",
-      "name": "NM friidrett 2026 (Trondheim)",
-      "sport": "athletics",
-      "reason": "Dekker «Norske utøvere i internasjonal toppidrett» — senior-NM i friidrett, Trondheim Stadion 23.–25. juli. Offisielt dagsprogram: konkurransen 13.00–23.00 lokal tid alle tre dager (event-tid = dag 1s åpning). STJERNEDELTAKELSE OPPDATERT 21. juli (NRK bekrefter): Karsten Warholm STILLER (ventet 400 m hekk, finale trolig lørdag kveld) — deltakelsen tidligere ubekreftet, nå låst; også bekreftet Amalie Iuel, Henriette Jæger, Narve Gilje Nordås. Mangekjemperne Sander Skotheim + Markus Rooth (tikamp) og Sondre Guttormsen (stav) tatt ut på landslaget. STJERNEFRAVÆR: Jakob Ingebrigtsen stiller IKKE (sykdom oppå akilles-op; VG/TV 2 8. juli). Event-summary + norwegianPlayers (Warholm/Iuel/Jæger/Nordås) oppdatert. NRK sender direkte alle dager (NFIF-medierettigheter).",
-      "addedAt": "2026-07-06T18:45:00Z",
-      "addedBy": "research-agent",
-      "evidence": [
-        "interests.json#interests",
-        "https://www.nmfriidrett2026.no/dagsprogram",
-        "https://www.nrk.no/sport/bekrefter-til-nrk_-warholm-stiller-til-start-i-nm-1.17964676",
-        "https://www.vg.no/sport/i/lnJM5M/jakob-ingebrigtsen-kommer-ikke-til-friidretts-nm-i-trondheim",
-        "https://www.nrk.no/sport/program-for-friidrett-i-2026_-full-oversikt-over-sendetider_-ovingar-og-utovarar-1.17804122"
-      ],
-      "expires": "2026-07-26T23:59:59Z",
-      "priority": "medium"
-    },
-    {
       "id": "em-friidrett-2026",
       "name": "EM friidrett 2026 (Birmingham)",
       "sport": "athletics",
@@ -522,9 +464,57 @@
       ],
       "expires": "2026-08-10T23:59:59Z",
       "priority": "low"
+    },
+    {
+      "id": "wyndham-championship-2026",
+      "name": "Wyndham Championship 2026",
+      "sport": "golf",
+      "reason": "Golf er tier1 (dekkes wholesale) — grunnseriefinalen på PGA Touren (siste turnering før FedExCup-sluttspillet; avgjør de siste topp-70-plassene). LAGT TIL 27. juli etter coverage-critics medium-gap-flagg (tavla hadde NULL golf etter 3M Open 26. juli). Sedgefield Country Club, Greensboro NC, 6.–9. august — datoer/bane uavhengig write-time fact-checket mot pgatour.com + offisiell turneringsside + HBO Max (2+ kilder enige) → ai-research-event (high). Norsk visning HBO Max (Sport)/Eurosport (WBD, IKKE Viaplay — golf-rettighetene er tiered i 2026). Feltet ikke publisert; Hovland (~20. FedExCup) er allerede inne i sluttspillet og kan stå over grunnseriefinalen.",
+      "addedAt": "2026-07-27T15:25:00Z",
+      "addedBy": "research-agent",
+      "evidence": [
+        "catalog.json#tier1",
+        "https://www.pgatour.com/tournaments/2026/wyndham-championship/R2026013/overview",
+        "https://www.wyndhamchampionship.com/"
+      ],
+      "expires": "2026-08-10T23:59:59Z",
+      "priority": "medium"
+    },
+    {
+      "id": "fedex-st-jude-championship-2026",
+      "name": "FedEx St. Jude Championship 2026",
+      "sport": "golf",
+      "reason": "FedExCup Playoffs (catalog.tier2.tournaments) — sluttspillets åpningsturnering, TPC Southwind Memphis, 13.–16. august (topp-70-felt; 50 videre til BMW, 30 til Tour Championship). LAGT TIL 27. juli (coverage-critic medium-gap; også Viktor Hovlands neste svært sannsynlige start). Datoer/bane/Hovland-standing uavhengig write-time fact-checket mot pgatour.com + tpc.com (Hovland ~20. i FedExCup etter Travelers-seieren) — 2+ kilder. Hovland i norwegianPlayers (start tilnærmet sikker; feltet låses etter Wyndham ~9. aug) → løser Hovland-tracked-claim-gapen. Norsk visning HBO Max (Sport)/Eurosport (WBD). ai-research-event (high).",
+      "addedAt": "2026-07-27T15:25:00Z",
+      "addedBy": "research-agent",
+      "evidence": [
+        "catalog.json#tier2.tournaments",
+        "https://www.pgatour.com/tournaments/2026/fedex-st-jude-championship/R2026027/overview",
+        "https://tpc.com/southwind/fedex-st-jude-championship/"
+      ],
+      "expires": "2026-08-17T23:59:59Z",
+      "priority": "high"
+    },
+    {
+      "id": "danish-golf-championship-2026",
+      "name": "Danish Golf Championship 2026 (DP World Tour)",
+      "sport": "golf",
+      "reason": "DP World Tour (catalog.tier2.tournaments) — skandinavisk turnering på Great Northern i Kerteminde på Fyn (ny bane 2026), 13.–16. august. Golf er tier1, og en DP-turnering i Skandinavia er reell dekning på det katalog-brede brettet (per-bruker-linsen filtrerer). Datoer/bane bekreftet mot dpworldtour.com + greatnorthern.dk (2+ kilder). Norsk vinkel: Kristoffer Reitan (dobbel PGA/DP-status) mulig starter, men feltet ikke bekreftet → ikke navngitt på eventet. Norsk visning Viaplay (DP World Tour) — ikke endelig re-bekreftet for 2026, verify følger opp. ai-research-event (medium).",
+      "addedAt": "2026-07-27T15:25:00Z",
+      "addedBy": "research-agent",
+      "evidence": [
+        "catalog.json#tier2.tournaments",
+        "https://www.europeantour.com/dpworld-tour/danish-golf-championship-2026/",
+        "https://greatnorthern.dk/en/event/danish-golf-championship-2026/"
+      ],
+      "expires": "2026-08-17T23:59:59Z",
+      "priority": "low"
     }
   ],
   "notes": [
+    "PRUNE (grader-funn 27. juli): fjernet nm-friidrett-2026 (expires 2026-07-26, NM Trondheim 23.–25. juli ferdig) — oversett i første pass, nå droppet. Ingen andre past-expires entries igjen.",
+    "Kjøring 2026-07-27T15:25Z (søn. ettermiddag ~17.25 CEST, standard-tier Opus). eventsAdded: 3 (golf: Wyndham Championship, FedEx St. Jude Championship, Danish Golf Championship), eventsRemoved: 0, eventsAmended: 2 (Bodø/Glimt CL-kvalik streaming re-korrigert). trackedAdded: wyndham/fedex-st-jude/danish-golf-championship-2026; trackedRemoved: tour-de-france-2026 (ferdig, alle 21 etapper), rosenborg-2026 (utløpt, Man Utd-treningskamp 24. juli ferdig); trackedAmended: viktor-hovland (FedEx St. Jude på tavla), kristoffer-ventura (3M ferdig, mistet PGA-kort → KFT), havard-rain-nygaard (ute av begge turneringer). TRIGGER: scout eskalerte 08:30Z på rain/100T imminent 30. juli (tracked-claim) — VERIFISERT SOM FALSK POSITIV; + coverage-audit 07:32Z ÉN medium golf-gap. FAN-OUT: tre parallelle web-scouts (golf/CS2/sykkel+fotball) + én uavhengig write-time fact-check på golf-eventene. HANDLINGER: (1) GOLF-GAPET TETTET — coverage-critic flagget at tavla hadde NULL golf etter 3M Open. Lagt til FedExCup-sluttspillets åpning (FedEx St. Jude, Hovland ~20. FedExCup → i norwegianPlayers, løser Hovland-tracked-claim-gapen), grunnseriefinalen Wyndham, og en DP-turnering (Danish Golf Championship). Alle fact-checket mot 2+ kilder; PGA-eventer = HBO Max/Eurosport (WBD, IKKE Viaplay — bekreftet), DP = Viaplay. (2) rain/100T FALSK POSITIV — 100 Thieves tapte BLAST Bounty S2 R16 mot Team Spirit 1–2 (26. juli), ute av Malta-LAN, «No Upcoming Tournaments» på Liquipedia, IKKE i EWC-feltet → ingen kamp å boarde (Liquipedia+HLTV). (3) BODØ/GLIMT streaming-revert-war: begge kamper sto igjen «TV 2 Play» — re-satt HJEMME (11. aug)→Direktesport/Avisa Nordland, BORTE (4. aug)→tom (ærlig «–»); verify må beskytte. validate-events.js: 62 events, 0 errors (2 forventede streaming-missing = Glimt borte + Danmark Rundt tilsiktet tomme; 2 forventede chess-timezone-bleed).",
+    "SKILL-FIX FORSØKT MEN PERMISSION-GATED (27. juli): forsøkte å RETTE norwegian-rights SKILL.md linje 41 («Champions League / Europa League → TV 2 Play») til korrekt tiered map (Champions League inkl. kvalik = TV 2 Play t.o.m. 2026/27; Europa League + Conference League inkl. kvalik = VIAPLAY t.o.m. 2031; norske klubbers europakvalik-HJEMMEkamper ofte på lokal holder — Bodø/Glimt→Direktesport/Avisa Nordland, Tromsø→VG TV/Nordlys) — men Edit mot .claude/skills er REELT permission-gated i denne interaktive økten (samsvarer med 22.–24.-juli-loggene; ikke WP-91-debunket her). Dokumentert for CI-kjøring/menneske uten sperren. SELF-REPAIR (durabel kodefiks, flagget mange kjøringer): scripts/lib/norwegian-rights.js linje ~83 mapper /europa|conference/ → TV 2 Play — split slik at kun \\bchampions league\\b → TV 2 Play, /europa|conference/ → Viaplay; + legg lokal-holder-tokens (direktesport, avisa nordland, vg tv, nordlys) i build-events PLATFORM_SOURCE_TOKENS. Uten den re-klobbes Glimt-hjemmekampens streaming til TV 2 Play hver build.",
     "Kjøring 2026-07-24T14:20Z (fre. ettermiddag ~16.20 CEST, standard-tier Opus). eventsAdded: 0, eventsRemoved: 0, eventsAmended: 3. trackedDelta: kun header lastUpdated + dette notatet. TRIGGER: ordinær 4-timers-slot ~3,5 t etter 10:40Z-kjøringen. coverage-audit 22. juli REN (0 hull); coverage-gaps 12:17Z = 7 gaps ALLE false positives (Filip Ingebrigtsen karriereintervju, Sagosen «ferdig i Bergen» = håndballovergang, Manchester City stjernesalg-headline, Giro/Giro d'Italia = feilmatchet TdF-Carapaz-sak, Jæger NM-gull 400 m = friidrettsnyhet, + kjent ranking-gated Viktor Hovland Aug-16 tracked-claim); scout-log 'quiet' t.o.m. 10:26Z, ikke eskalert; ingen demand[]-felt. FAN-OUT: TRE parallelle web-scouts (CS2 / sykkel / fotball+horisont) + to fresh-context write-time fact-checks. FUNN & HANDLINGER: (1) TdF ETAPPE 20 (lør. 25. juli, Alpe d'Huez) STARTTID KORRIGERT 11.00→09.20 UTC (11.20 CEST, mål ~16.30 CEST) + endTime 15.30→14.30 UTC — write-time fact-checket mot cyclingstage.com stage-20-side («starts at 11:20 … finish around 16:30, both CEST») + NBC Sports (neutralized 5:20 ET = 09.20 UTC), to uavhengige kilder enige. VIKTIG: dette OVERSTYRER verifys 07:45Z-«confirmed» på 11.00 UTC — verify siterte en generell rute-indeks + en STAGE-19-artikkel, og summaryen sa fortsatt «Starttidspunkt anslått»; min fact-check traff den spesifikke etappe-20-siden. verificationStatus satt confirmed→amended m/nye kilder. Etappe 21 (søn. 26., Paris) 14.15 UTC RE-BEKREFTET korrekt (uendret). Ingen nye NORSKE forfall siden etappe 18 (alle 6 nordmenn med; Træen eneste ute). Etappe 19 (i dag, Alpe d'Huez) FORTSATT PÅ VEIEN ved kjøretid (start 12.00 UTC, mål ~16.00 UTC) → ingen vinner/GC å skrive. (2) STREAMING-REVERT-WAR (Bodø/Glimt CL-kvalik) — begge kamper var RE-KLOBBET til «TV 2 Play» av den timelige pipelinen igjen. Re-satt for korrekthet: HJEMMEkampen (Aspmyra 11. aug) → «Direktesport / Avisa Nordland» (AN-rettighet 3. kvalikrunde), BORTEkampen (Brussel/Oostende 4. aug) → TOM/ærlig «–» (array motsa egen summary «holdt tom»). NB: Tromsø-RETURKAMPEN (30. juli) er nå verify-beskyttet (verificationStatus=amended, VG TV holder) — den revert-waren er vunnet; Glimt-kampene er FORTSATT uverifisert → trolig re-klobbet igjen ved neste build. (3) CS2 — 100 Thieves BLAST Bounty S2 R16-motstander/tid FORTSATT UPUBLISERT (R32-online-stadiet avsluttes først i dag 24. juli; BLASTs pick-your-opponent Draft Show kjører etterpå; R16-vindu 25.–26. juli) → INGEN event lagt til (manglende event > oppdiktet). 100T lever i turneringen; ingen annen dated 100T-kamp i vinduet. validate-events.js: 63 events, 0 errors (2 forventede chess-timezone-bleed + 1 forventet streaming-missing = Glimt borte, tilsiktet tom). Ingen expired entries å droppe (tidligste rosenborg 25. juli / TdF+ventura 27. juli fortsatt aktive).",
     "BODØ/GLIMT BORTEKAMP-VENUE (4. aug) — GENUIN KILDEKONFLIKT, IKKE ENDRET (verify følg opp): fotball-scouten fant fire belgiske kilder datert 19. juni 2026 (voetbalprimeur.be, goldenpalacenews.be, BRUZZ, Union SGs egen X) som sier Union spiller europakvalik 2026/27 på KVDO Arena / Batimont Solar Park i OOSTENDE — og glimt.no rendret også «KVDO Arena, Oostende». Men en uavhengig fresh-context fact-check fant Lotto Park (Anderlecht, Brussel) via rsca.be + nss-sports + Wikipedia (MEN Wikipedia-kilden var 2025–26-SESONGEN, altså i fjor) + AP/FOX («in Brussels»). Kildene spriker langs sesong (Lotto Park 2025/26 vs Oostende 2026/27), og de mest sesong-spesifikke/ferske (19. juni 2026) peker på Oostende. Board-venue HOLDT som «Lotto Park (RSC Anderlecht), Brussel» (ikke endret på motstridende info), men summaryen er nå hedget til å nevne begge + «verify bekrefter». Verify må avgjøre mot en definitiv UEFA/glimt.no-primærkilde før evt. endring.",
     "HORISONT-SCAN (WP-116, ~4 uker): (1) VIKING FK — i Champions League PLAYOFF-runden (IKKE Conference/Europa): trekning 3. aug, 1. kamp 18.–19. aug, 2. kamp 25.–26. aug; motstander ukjent til trekningen → ingen dated event å boarde ennå (1. kamp så vidt innenfor horisonten; CL-kvalik = TV 2 Play). (2) LILLESTRØM SK — Europa League PLAYOFF-runden (cupvinner 2025): 1. kamp 20. aug, 2. kamp 27. aug, trekning tidlig aug, motstander ukjent → ingen dated event (EL = Viaplay). Begge bokført her som horisont-funn; neste kjøring/verify legger inn kampene når trekningene er gjort og starttider satt. Ingen andre nye marquee in-window engangshendelser funnet (EM friidrett Birmingham 10.–16. aug allerede på tavla; Diamond League Lausanne 21. aug utenfor ~4-ukersvinduet).",
