@@ -258,5 +258,11 @@
     "verdict": "quiet",
     "reason": "RSS: post-World Cup wrap-up (Infantino critics response, Pirlo Italy job snub—legacy commentary, no upcoming events), past-tense sports results (Rosenborg 4–0 Fredrikstad—past match, not schedule-impacting, Jakob Ingebrigtsen EM participation confirmation—already tracked Athletics EM Birmingham), transfer gossip (Manchester City Rodri/Real Madrid, Chelsea Welbeck, Arsenal/Liverpool Barcola—transfer season noise, no event impact), F1 personnel (Mercedes Lagrue to Red Bull—staffing, no schedule impact), injury/medical news (Glenn Hysén Parkinson's diagnosis—legacy, no events), referee retirement (Vincic—administrative, no events). Coverage gaps: Rosenborg/Arsenal/Liverpool/Manchester City/Real Madrid—all transfer-related, no new imminent event signals; covered gaps (Jakob Ingebrigtsen EM already tracked, Friidretts-EM participation confirmed as expected). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 1/2 today.",
     "signals": []
+  },
+  {
+    "runAt": "2026-07-27T21:30:00.000Z",
+    "verdict": "escalate",
+    "reason": "Coverage gap: Kristoffer Ventura (golf, athlete) marked imminent in coverage-gaps.json—tracked.json claims board coverage but no matching event found on the board. This is a tracked-claim gap with imminent: true (claimedDate: 2026-07-27), suggesting an upcoming tournament/competition is expected. RSS: Jakob Ingebrigtsen confirmed for friidretts-EM (participation news, not schedule change, already tracked EM event); Rosenborg 4–0 Fredrikstad (past result, not upcoming event); transfer gossip and opinion (no event impact). Escalate to research for Kristoffer Ventura golf-event verification.",
+    "signals": ["Kristoffer Ventura imminent gap (tracked golf athlete with no upcoming event on board)"]
   }
 ]
