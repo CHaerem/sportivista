@@ -264,5 +264,11 @@
     "verdict": "escalate",
     "reason": "Coverage gap: Kristoffer Ventura (golf, athlete) marked imminent in coverage-gaps.json—tracked.json claims board coverage but no matching event found on the board. This is a tracked-claim gap with imminent: true (claimedDate: 2026-07-27), suggesting an upcoming tournament/competition is expected. RSS: Jakob Ingebrigtsen confirmed for friidretts-EM (participation news, not schedule change, already tracked EM event); Rosenborg 4–0 Fredrikstad (past result, not upcoming event); transfer gossip and opinion (no event impact). Escalate to research for Kristoffer Ventura golf-event verification.",
     "signals": ["Kristoffer Ventura imminent gap (tracked golf athlete with no upcoming event on board)"]
+  },
+  {
+    "runAt": "2026-07-28T08:00:00Z",
+    "verdict": "quiet",
+    "reason": "RSS (last 24h): transfer gossip (Manchester City/Chelsea interest, John Stones to Inter—no schedule/streaming impact), personnel changes (Freyr Alexandersson Rosenborg, Red Bull Lagrue—staffing, no schedule impact), past results (Rosenborg vs Fredrikstad, World Cup wrap-up—no upcoming event changes). Entity coverage gaps (Arsenal, Liverpool, Manchester City, Rosenborg) are transfer-related noise or already tracked in events.json (Rosenborg matches, Tromsø vs Hradec scheduled 2026-07-23). Casper Ruud US Open mixed doubles with Iga Swiatek: coverage gap detected but not imminent (US Open in August). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected.",
+    "signals": []
   }
 ]
