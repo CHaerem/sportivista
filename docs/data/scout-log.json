@@ -263,7 +263,9 @@
     "runAt": "2026-07-27T21:30:00.000Z",
     "verdict": "escalate",
     "reason": "Coverage gap: Kristoffer Ventura (golf, athlete) marked imminent in coverage-gaps.json—tracked.json claims board coverage but no matching event found on the board. This is a tracked-claim gap with imminent: true (claimedDate: 2026-07-27), suggesting an upcoming tournament/competition is expected. RSS: Jakob Ingebrigtsen confirmed for friidretts-EM (participation news, not schedule change, already tracked EM event); Rosenborg 4–0 Fredrikstad (past result, not upcoming event); transfer gossip and opinion (no event impact). Escalate to research for Kristoffer Ventura golf-event verification.",
-    "signals": ["Kristoffer Ventura imminent gap (tracked golf athlete with no upcoming event on board)"]
+    "signals": [
+      "Kristoffer Ventura imminent gap (tracked golf athlete with no upcoming event on board)"
+    ]
   },
   {
     "runAt": "2026-07-28T08:00:00Z",
@@ -275,6 +277,12 @@
     "runAt": "2026-07-28T10:31:06.046Z",
     "verdict": "quiet",
     "reason": "RSS (10:31 UTC): Zidane France coach appointment (legacy coaching news, no upcoming events), transfer gossip (Morten Bjørlo, Amin Chiakha, Adrian Pereira—transfer season noise, no event impact), injury/incident news (Stan Dewulf cyclist arm break, Vålerenga assistant coach retirement—not schedule-impacting). Coverage gaps: all refer to non-imminent entities (Casper Ruud US Open late August, Rosenborg/Manchester City/Arsenal/Liverpool/Real Madrid—transfer-related, no concrete imminent event signals). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
+    "signals": []
+  },
+  {
+    "runAt": "2026-07-28T12:55:00Z",
+    "verdict": "quiet",
+    "reason": "RSS: post-World Cup wrap-up (Zidane France coach—legacy, no events), transfer gossip (Rodri/Real Madrid, Welbeck/Chelsea—transfer season noise, no event impact), injury/incident news (Dewulf cyclist break, Evjen Glimt CL qualifier—not schedule-impacting). Coverage gaps: Casper Ruud (Laver Cup not imminent; US Open late August—not escalation-worthy), Manchester City/Arsenal/Real Madrid/Liverpool/Premier League/Mesterligaen/Friidretts-EM—all non-imminent or transfer-related noise. Tracked escalations from 07-27 already handled (rain/100-Thieves, Kristoffer Ventura). No schedule changes, broadcaster announcements, 100 Thieves CS2 match hints, or new concrete upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
     "signals": []
   }
 ]
