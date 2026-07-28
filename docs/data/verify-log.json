@@ -1,17 +1,15 @@
 {
-  "runAt": "2026-07-27T09:00:00Z",
-  "checked": 8,
-  "confirmed": 8,
+  "runAt": "2026-07-28T08:00:54Z",
+  "checked": 3,
+  "confirmed": 3,
   "amended": 0,
   "removed": 0,
   "notes": [
-    "Verifiserte 8 AI-research-events i vinduet 27.07-02.08 (ingen pågående fleridagsturneringer med norske utøvere akkurat nå, så ingen deltakelse-/cut-sjekk denne runden).",
-    "Alle 8 bekreftet uendret — tid, sted og streaming stemte med kildene. Ingen amendments/removals.",
-    "Football: Brann–U.Cluj (Conference League 2. kvalik retur, 30.07 19:00 CEST) streaming Viaplay bekreftet mot tvkampen; Hradec Králové–Tromsø (EL 2. kvalik retur, 30.07 19:00 CEST) VG TV bekreftet (gratis via Amedia/Direktesport for TIL-kvaliken); Lyn–Sogndal (02.08 17:00 Bislett) bekreftet mot fotball.no, TV 2 Play.",
-    "Birmingham City–Barcelona (treningskamp fre 31.07 19.45 UK = 18:45 UTC, St Andrew’s) tid/sted bekreftet mot BCFC/FCB. Norsk streaming IKKE funnet — feltet holdt ærlig tomt (validate advarer, men en gjettet kanal er verre enn tom). Bør sjekkes nærmere kampdato.",
-    "Cycling: Tour de France Femmes 2026 (01-09.08, Grand Départ Suisse) — etappe 1 Lausanne-Lausanne + etappe 2 Aigle-Genève bekreftet mot letourfemmes.fr; TV 2 Play bekreftet som norsk rettighetshaver (deler med Eurosport/Max, eier-preferanse TV 2 Play). Danmark Rundt (29.07-02.08) datoer bekreftet, norsk kringkaster fortsatt ikke bekreftet — streaming holdt tom.",
-    "Chess: Saint Louis Rapid & Blitz 31.07-07.08 bekreftet mot Grand Chess Tour + St. Louis Chess Club, offisielle YouTube/Twitch-strømmer.",
-    "RETTIGHETSFUNN (durabel): UEFA-klubbrettighetene i Norge t.o.m. 2030/31 er nå bekreftet fra kilde: Champions League → TV 2, Europa League + Conference League → Viaplay (presse.viaplaygroup.no + tvkampen.com). norwegian-rights-skillen linje 41 grupperer fremdeles feilaktig «Champions League / Europa League → TV 2 Play» — kun CL er TV 2s. Nyanse: norske klubbers TIDLIGE kvalik sub-lisensieres ofte gratis til VG TV / Direktesport / Amedia (Tromsøs EL-kvalik på VG TV).",
-    "SKILL-EDIT NEKTET I DENNE ØKTEN (literal tool-feil): «Claude requested permissions to write to .../norwegian-rights/SKILL.md, but you haven't granted it yet.» Dette er en reell permission-mode-nekt i DENNE lokale økten (ikke den avkreftede WP-91-skill-gate-legenden). Skillen ble derfor ikke rettet automatisk — men korreksjonen (CL→TV2, EL+ECL→Viaplay) er fanget i calibration-ledger + denne loggen for manuell/godkjent apply. Ingen event var feil pga. dette: Brann=Viaplay og Tromsø=VG TV var allerede korrekte på tavla."
+    "Vindu 28.07-04.08. De fleste AI-research-events i vinduet ble verifisert 27.07 (Brann–U.Cluj, Hradec–Tromsø, Lyn–Sogndal, Saint Louis R&B, Birmingham–Barça, TdF Femmes etappe 1-2, Danmark Rundt) — ikke re-sjekket uten ny info. Denne runden dekket de tre uverifiserte i vinduet.",
+    "Football: Union Saint-Gilloise–Bodø/Glimt (CL-kvalik 3. runde, 04.08 20:00 CEST / 18:00 UTC) BEKREFTET. Arena-usikkerheten (Lotto Park vs Oostende) løst mot Lotto Park (Constant Vanden Stock, Anderlechts stadion i Brussel): nss-sports bekrefter at Union spiller CL-hjemmekamper der fordi Stade Joseph Marien ikke holder UEFA-standard, og det var Unions europacup-arena også i 2025/26. Aggregatorer (fotmob/beIN) auto-fyller feilaktig Joseph Marien — ikke stolt på. Fant ingen uavhengig bekreftelse på et Oostende-bytte, så Lotto Park (det etablerte mønsteret) står. Streaming resolvet: TV 2 Play (TV 2 har CL-rettighetene i Norge t.o.m. 2026/27) — summary-linjen som tidligere sa «holdt tom» rettet, feltet hadde allerede TV 2 Play.",
+    "Cycling: TdF Femmes 2026 etappe 3 (Genève–Poligny, 03.08) + etappe 4 (tempo Dijon, 04.08) rute/dato bekreftet mot cyclingstage.com + Wikipedia — samme kilder som etappe 1-2 (verifisert 27.07). Offisielle starttider fremdeles ikke publisert (tid forblir anslått, notert i summary). TV 2 Play beholdt.",
+    "Ingen pågående fleridagsturnering med en navngitt norsk utøver i cut/withdrawal-fare akkurat nå (Danmark Rundt starter 29.07 med Uno-X som lag, ingen enkeltnavn å cut-sjekke). Ingen amendments/removals.",
+    "RETTIGHETSKORREKSJON (durabel, RE-BEKREFTET): CL → TV 2 Play (bekreftet via Union SG-kvaliken denne runden); EL + Conference League → Viaplay (IKKE TV 2). norwegian-rights-skillen linje 41 grupperer fremdeles feilaktig «Champions League / Europa League → TV 2 Play». Forsøkte å rette skillen i samme commit.",
+    "SKILL-EDIT NEKTET (literal tool-feil, quotet per prompt): «Claude requested permissions to write to /home/runner/work/sportivista/sportivista/.claude/skills/norwegian-rights/SKILL.md, but you haven't granted it yet.» Dette er en reell permission-mode-nekt i DENNE økten (ikke den avkreftede WP-91-legenden — i CI er skill-writes tillatt). Korreksjonen (CL→TV2, EL+ECL→Viaplay) er fanget i calibration-ledger + denne loggen for manuell/godkjent apply. Ingen event var feil pga. dette."
   ]
 }
