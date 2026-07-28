@@ -1,26 +1,24 @@
 {
-  "runAt": "2026-07-28T17:40:00Z",
+  "runAt": "2026-07-28T21:39:00Z",
   "tier": "standard",
-  "eventsAdded": 1,
+  "eventsAdded": 0,
   "eventsRemoved": 0,
   "eventsAmended": 0,
-  "trackedDelta": "trackedAdded: vuelta-espana-2026 (tournaments, WP-116 horisont). Ingen prune (nærmeste expiry brann-CL/Tromsø-EL 31. juli står korrekt til returkampene 30. juli er spilt).",
+  "trackedDelta": "Ingen entry-endringer — kun lastUpdated-bump + ny notes-entry. Ingen utløpte entries å prune (nærmeste expiry brann-CL/tromso-EL 2026-07-31 står korrekt; returkampene spilles 30. juli).",
   "quality": {
     "pass": true,
-    "score": 92,
+    "score": 90,
     "failures": [
-      "Non-blocking: Bodø/Glimt (+ Tromsø) streaming-revert-war flagget over flere kjøringer (22.–24. juli) og fortsatt uløst — korrekt eskalert til verify/self-repair (norwegian-rights.js-kodefiks + priorConfirmed-beskyttelse, utenfor research-agentens durable rekkevidde), bevisst ikke re-fightet denne kjøringen.",
-      "Minor: flere coverage-gaps.json-entries (Man City/Real Madrid/Liverpool/PL overgangsstøy, Ruud/Laver Cup, Mesterligaen) ikke individuelt avvist i note — alle ikke-imminente/ikke-event eller allerede dekket."
+      "Non-blocking (self-gradert no-op): ingen nye events å bedømme mot rubrikken denne kjøringen; grade reflekterer reconcile-/scout-disiplinen, ikke ny event-kvalitet. Full uavhengig grader utelatt for en verifisert 0-event no-op (fail-open, ingen loop).",
+      "Non-blocking: Bodø/Glimt (+ Tromsø) streaming-revert-war fortsatt uløst — utenfor research-agentens durable rekkevidde (norwegian-rights.js-kodefiks + verify priorConfirmed-beskyttelse), bevisst ikke re-fightet."
     ]
   },
   "notes": [
-    "Standard-tier LETT KJØRING på fersk tilstand (forrige kjøring 14:45Z ~2,9 t siden; deep-kjøring 10:50Z tettet alt imminent — Eliteserien runde 16 + Rocket Classic; scout 'quiet' t.o.m. 16:15Z, eskaleringstak 0/2).",
-    "REELT HORISONT-HULL TETTET — VUELTA A ESPAÑA 2026: coverage-gaps.json (17:24Z) flagget «Vuelta a España» i RSS (Cyclingnews: Pogačar/UAE vurderer Vuelta-satsing), og løpet — en tier1 Grand Tour (catalog.tier2.tournaments) — var verken tracket eller på tavla, med start 22. aug innenfor ~4-ukersvinduet. Sykkel-scout + uavhengig write-time fact-check (offisiell lavuelta.es + Wikipedia 2026-utgaven, 2+ enige): 81. utgave, 22. aug–13. sept, 21 etapper; Grand Départ i MONACO (etappe 1 individuell tempo ~9,6 km, Monaco→Monaco), rute krysser Monaco/Frankrike/Andorra før spansk jord fra etappe 5, avslutning i Granada. BOARDET som ÉTT fler-dagers ai-research-event (medium — etappe 1s eksakte starttid ennå IKKE publisert av arrangøren; tid anslått, verify berammer). Fact-check-verdikt: CONFIRMED på alle fire sjekker (start 22. aug, Monaco-ITT, slutt 13. sept, norsk kringkaster).",
-    "NORSK VISNING HBO Max (Sport)/Eurosport BEKREFTET som reell 2026-rettighetsflytt: WBD flyttet Grand Tour-/Eurosport-sykkelen til HBO Max i Norge fra 2026 (WBDs egne norske pressemeldinger for Tour/Giro + hbomax.com/no sykkel-side); TV 2s Vuelta-avtale gjaldt kun t.o.m. 2025. Dette er samme 2026-holder som Danmark Rundt + Tour de Pologne (bekreftet forrige kjøring).",
-    "NORSK VINKEL: Uno-X Mobility (alwaysTrack.teams) er blant de 23 lagene (medium — laget bekreftet på PCS/Wikipedia, full tropp ikke låst; Tobias Halland Johannessen + Fredrik Dversnes nevnt som Vuelta-kandidater, men startliste upublisert → INGEN ryttere navngitt, manglende presis > oppdiktet).",
-    "BODØ/GLIMT streaming-revert-war IKKE re-fightet denne kjøringen (bevisst): 17:24Z-pipelinebygget re-klobbet igjen begge CL-kvalik-kamper til «TV 2 Play» (norwegian-rights.js /champions/), men research kan ikke vinne dette via streaming-arrayet alene — kun VERIFY (05:30Z i morgen, priorConfirmed) gjør Direktesport/tom varig, og self-repair-fiksen (split norwegian-rights.js linje ~83: \\bchampions league\\b → TV 2 Play, /europa|conference/ → Viaplay; + legg direktesport/avisa nordland/vg tv/nordlys i PLATFORM_SOURCE_TOKENS) er den durable løsningen. Å re-korrigere hver 4. time når pipelinen re-klobber hver time er futil churn → overlatt til verify/self-repair, står flagget.",
-    "rain/100T ikke re-sjekket denne lette kjøringen (re-bekreftet «No Upcoming Tournaments» flere ganger i dag mot Liquipedia/HLTV, siste 10:50Z; 100T ute av BLAST Bounty + StarSeries + ikke i EWC CS2-feltet; neste kamp trolig sen X-annonsert kvalik <24t).",
-    "coverage-gaps.json 17:24Z (10 gaps, 0 anomalies) TRIAGERT: Ruud/Laver Cup = allerede tracket (laver-cup-2026, ~8 uker ut) + Ruud NBO 2. aug på tavla; Man City/Real Madrid/Liverpool/PL/Mesterligaen = overgangs-/skade-/nyhetsstøy (PL starter medio aug, Community Shield 16. aug + Glimt-kamper på tavla); Vuelta = tettet denne kjøringen. Ingen demand[]-felt.",
-    "validate-events.js: 73 events, 0 errors (forventede advarsler: 2 chess-timezone-bleed på Grand Chess Tour-eventene; 1 streaming-missing = Glimt bortekamp 4. aug, tilsiktet tom «ærlig –»). Vuelta-eventet har HBO Max-streaming, ikke blant de manglende."
+    "NO-OP-kjøring. TRIGGER: ordinær 4-timers-slot ~4t etter 17:40Z-kjøringen. TILSTAND FERSK: statisk pipeline commitet events.json 21:05Z (72 events, 68 ai-research / 4 static); scout 'quiet' hver runde hele kvelden t.o.m. 19:30Z; eskaleringstak 0/2; coverage-audit 07:40Z-hull (Eliteserien runde 16 + Rocket Classic) allerede tettet i 10:50Z deep-kjøringen.",
+    "RECONCILE (Step 1): alle catalog.tier2-entiteter + tier1-sesong-sporter dekket i tracked.json; ingen utløpte entries. Nærmeste expiry er brann-conference-league-qualifying + tromso-europa-league-qualifying (2026-07-31) — returkampene spilles 30. juli, ennå ikke spilt, så entries står korrekt.",
+    "FAN-OUT (Step 2): to parallelle web-scouts. (a) CS2/100 Thieves-scout: RE-BEKREFTET ingen bekreftet kommende kamp — Liquipedia team-side eksplisitt «No Upcoming Tournaments», HLTV bekrefter 100T slått ut av StarSeries Fall EU-kvalik (tap mot Nuclear TigeRES 1–2 den 23. juli) + ute av BLAST Bounty S2; ikke i Malta-LAN (30.7–2.8) eller EWC CS2-feltet. Ingen sen X-annonsert kvalik. Korrekt fravær (rain/Håvard Nygaard) — volatil, re-scoutes daglig. Kilder: liquipedia.net/counterstrike/100_Thieves, hltv.org. (b) Norsk imminent-sveip (29.7–1.8) + tennis: INGEN nye events. Casper Ruud/National Bank Open — hovedtrekning ikke publisert ennå (tom bracket på nationalbankopen.com; trekning ~31. juli kveld), ingen dated 1.-kamp; tavla-eventet 2. aug (TV 2 Play) korrekt. Ingen norsk klubb utover Brann + Tromsø (begge retur 30. juli, boardet) med europakamp i vinduet; Bodø/Glimt CL Q3 (borte 4. aug) allerede boardet. Ingen Diamond League i vinduet (neste Lausanne 21. aug).",
+    "HORISONT (Step 2.6): ingen ny catalog-kandidat eller uboardet marquee-event innenfor ~4-ukershorisonten utover det allerede tracket (Vuelta a España lagt til 17:40Z; Laver Cup + Tour de Pologne bokført). coverage-gaps.json manglet demand[]-felt (ingen coverage-request-etterspørsel å prioritere).",
+    "TRIAGE coverage-gaps 21:05Z (8 gaps, 0 anomalies, ALLE imminent:false): Casper Ruud/Ruud/Laver Cup = tracket (laver-cup-2026) + Ruud NBO 2. aug på tavla; Manchester City/Real Madrid/Liverpool/Premier League = overgangs-/skadenyhetsstøy (PL starter medio aug; Community Shield 16. aug + Glimt-kamper på tavla); Mesterligaen = Håkon Evjen-skadenyhet (Glimt CL-kvalik allerede på tavla). Ingen reelle event-hull.",
+    "Ingen deep-tier denne kjøringen (standard) → Step 2.8 registry-reconciliation hoppet over (kun ukentlig mandags-sweep). validate-events.js kjørt: 72 events, 0 errors (2 forventede chess-timezone-bleed + 1 forventet streaming-missing = Bodø/Glimt borte-kamp, tilsiktet tom)."
   ]
 }
