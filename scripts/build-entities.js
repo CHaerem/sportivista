@@ -502,12 +502,48 @@ function isKnownAlias(a, b, aliasGroups) {
 }
 
 /**
+ * A gender / age-category qualifier — the token that marks a SEPARATE competition
+ * whose name is otherwise its sibling's ("Tour de France" ⇄ "Tour de France
+ * Femmes", "Paris-Roubaix" ⇄ "Paris-Roubaix Femmes", a men's club ⇄ its
+ * "…Femenino"/"…U23" side). Word-boundary containment (containsName) treats the
+ * longer name as containing the shorter and would otherwise FALSE-MERGE the two
+ * into one entity — which silently deletes the shorter competition's entity when
+ * its own booking lapses (the men's Tour de France vanishing from the index once
+ * the finished race left tracked.json, leaving only "…Femmes"). Normalized,
+ * apostrophe/diacritic-folded.
+ */
+const DISTINCT_QUALIFIERS = new Set([
+	"femmes", "feminin", "feminine", "feminines", "feminino", "femenina", "femenino", "femminile",
+	"women", "womens", "dames", "damen", "frauen", "kvinner", "damer",
+	"u23", "u21", "u19", "u18", "u17", "junior", "juniors", "juvenil", "youth", "espoirs",
+]);
+
+/**
+ * Are `a` and `b` a competition and its gender/age-category sibling — i.e. one
+ * edition-stripped name is the other plus ONLY trailing DISTINCT_QUALIFIER
+ * tokens? True ⇒ they are NOT the same entity and must not be folded together,
+ * even though containsName would say they overlap. Deliberately narrow: the
+ * extra tokens must be qualifiers and nothing else, so it can only ever PREVENT
+ * a merge of a men's/women's (or senior/junior) pair — never merge two things.
+ */
+function isDistinctByQualifier(a, b) {
+	const sa = normalizeText(editionStrippedName(a)).trim();
+	const sb = normalizeText(editionStrippedName(b)).trim();
+	if (!sa || !sb || sa === sb) return false;
+	const [short, long] = sa.length <= sb.length ? [sa, sb] : [sb, sa];
+	if (!long.startsWith(`${short} `)) return false;
+	const extra = long.slice(short.length).trim().split(/\s+/).filter(Boolean);
+	return extra.length > 0 && extra.every((tok) => DISTINCT_QUALIFIERS.has(tok.replace(/[^\p{L}\p{N}]+/gu, "")));
+}
+
+/**
  * Do two term sets share a word-boundary, nickname/initial-form, or curated
  * known-alias (WP-133/160) match?
  */
 function termsOverlap(aTerms, bTerms, aliasGroups) {
 	for (const a of aTerms) {
 		for (const b of bTerms) {
+			if (isDistinctByQualifier(a, b)) continue; // men's/women's (or senior/junior) siblings — never one entity
 			if (normalizeText(a).trim() === normalizeText(b).trim()) return true;
 			if (containsName(a, b) || containsName(b, a)) return true;
 			if (isNicknameForm(a, b)) return true;
