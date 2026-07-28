@@ -153,6 +153,20 @@ describe("buildEntityIndex", () => {
 		expect(teams.map((e) => e.name).sort()).toEqual(["Real Madrid", "Real Mallorca"]);
 	});
 
+	it("keeps a competition and its gender/age-category sibling SEPARATE (Tour de France vs. Tour de France Femmes)", () => {
+		// Regression: word-boundary containment folded the shorter men's name into
+		// the longer women's name, so once the finished men's race left tracked.json
+		// the men's entity silently vanished — killing the durable `tour-de-france`
+		// starter-pack id. The gender/age-qualifier guard keeps the pair distinct.
+		const fakeSportsConfig = {
+			cycling: { sport: "cycling", norwegian: { teams: ["Tour de France", "Tour de France Femmes"] } },
+		};
+		const entities = buildEntityIndex(tmpDir("ss-entities-qualifier-"), fakeSportsConfig);
+		const cyc = entities.filter((e) => e.sport === "cycling" && e.type === "team");
+		expect(cyc).toHaveLength(2); // NOT folded into one
+		expect(cyc.map((e) => e.name).sort()).toEqual(["Tour de France", "Tour de France Femmes"]);
+	});
+
 	// WP-133: cross-language national-team consolidation (the Norway/Norge lens-miss class).
 	it("consolidates a cross-language national-team duplicate into ONE entity (Norway ⇒ alias of Norge)", () => {
 		// The real source: sports-config lists BOTH "Norge" and "Norway" so the
