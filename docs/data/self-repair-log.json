@@ -1,17 +1,17 @@
 {
-	"runAt": "2026-07-27T10:18:00Z",
+	"runAt": "2026-07-28T09:22:00Z",
 	"action": "opened-pr",
-	"pr": "https://github.com/CHaerem/sportivista/pull/416",
-	"diagnosed": "tests/edit.test.js failed (1/1203): a time-bomb test. The 'row — tap-to-expand' block hardcoded base=2026-07-24 with an event 31h later, but row() called ssNextEventForEntity without a now argument so it used the real Date.now(). Now that the fixed date has passed (today 2026-07-27), the event fell into the past, row() found no upcoming event, and rendered 'ikke satt opp ennå' instead of 'Neste:'.",
+	"pr": "https://github.com/CHaerem/sportivista/pull/418",
+	"diagnosed": "tests/starter-packs.test.js (WP-162) red on CI + local: the shipped starter-pack id `tour-de-france` was no longer a LIVE entity in docs/data/entities.json. Root cause in build-entities.js dedup — word-boundary containsName false-merged the men's 'Tour de France' (catalog tier2) into the women's 'Tour de France Femmes' (tracked), folding two distinct competitions into one entity. The men's entity survived only while tracked.json booked the race; once the finished 2026 race was removed (Jul 27, race ended Jul 26) the catalog fallback was absorbed as an alias and the durable id vanished (traced: present at commit 0ad792815 15:06Z, gone by 92e46ee4b 15:40Z).",
 	"fixed": [
-		"docs/js/edit.js: row(...) now accepts an optional now=Date.now() (backward-compatible; the single production caller uses the default) threaded into ssNextEventForEntity, mirroring that helper's already-injectable signature",
-		"tests/edit.test.js: the row() call passes its deterministic base, so the test is time-independent and won't rot again"
+		"scripts/build-entities.js: added isDistinctByQualifier guard in termsOverlap — a men's/women's or senior/junior sibling pair (name differs only by trailing gender/age qualifier tokens: femmes/women/dames/U23/junior/…) is never folded into one entity. Can only prevent a merge, never create one.",
+		"tests/build-entities.test.js: new regression test asserting Tour de France vs. Tour de France Femmes stay separate.",
+		"docs/data/entities.json: regenerated — tour-de-france restored as its own entity (and natus-vincere-junior correctly separated from NAVI); +2 entities, 0 removed."
 	],
 	"autoMergeEligible": true,
 	"notes": [
-		"Proof: npx vitest run tests/edit.test.js → 17/17 pass (was 1 failing); full npm test → 1203/1203 pass (73 files).",
-		"node scripts/validate-events.js: 0 errors (only pre-existing non-fatal warnings: 2 chess timezone-bleed notes + 2 near-term AI-research events missing streaming — coverage/verify territory, not breakage).",
-		"Out of scope: latest 'Research agent' run (30251982133) failed at the AI-action step 'Research — Opus 4.8 (deep fallback)'. usage-state.json is green (2% session, 0% week), so not quota; a single non-reproducible agent-domain failure with no script/test/fetcher/validation bug to author a fix for. Left to the tiered-model/quota governor.",
-		"No protected paths touched — auto-merge eligible once the gate re-runs tests."
+		"Proof: previously-failing starter-packs test now green; node scripts/validate-events.js clean (0 errors, only pre-existing non-fatal chess timezone + streaming warnings); full suite green (1207 passing, incl. the new regression test).",
+		"Blast radius verified: only two entities newly split (tour-de-france, natus-vincere-junior) — both correct de-merges; zero entities removed.",
+		"No protected paths touched — eligible for auto-merge once CI passes. Not merged (branch + PR only per contract)."
 	]
 }
