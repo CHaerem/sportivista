@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-28T07:36:38.316Z",
+  "generatedAt": "2026-07-28T10:31:24.240Z",
   "windowDays": 180,
   "records": {
-    "used": 117,
+    "used": 121,
     "skipped": 0
   },
   "sources": {
@@ -49,13 +49,13 @@
       "reliability": null
     },
     "cyclingstage.com": {
-      "checks": 16,
-      "agreed": 8,
+      "checks": 17,
+      "agreed": 9,
       "corrections": 1,
       "bySport": {
         "cycling": {
-          "checks": 16,
-          "agreed": 8
+          "checks": 17,
+          "agreed": 9
         }
       },
       "byField": {
@@ -64,12 +64,12 @@
           "agreed": 6
         },
         "existence": {
-          "checks": 2,
-          "agreed": 2
+          "checks": 3,
+          "agreed": 3
         }
       },
-      "lastChecked": "2026-07-24T07:45:00Z",
-      "reliability": 0.5
+      "lastChecked": "2026-07-28T08:00:54Z",
+      "reliability": 0.53
     },
     "tvkampen.com": {
       "checks": 3,
@@ -1109,6 +1109,63 @@
         }
       },
       "lastChecked": "2026-07-27T09:00:00Z",
+      "reliability": null
+    },
+    "nss-sports.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "football": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "existence": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-07-28T08:00:54Z",
+      "reliability": null
+    },
+    "beinsports.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "football": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-07-28T08:00:54Z",
+      "reliability": null
+    },
+    "domestiquecycling.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "cycling": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "streaming": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-07-28T08:00:54Z",
       "reliability": null
     }
   }
