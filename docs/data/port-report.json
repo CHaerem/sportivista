@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T02:13:34.033Z",
+  "generatedAt": "2026-07-28T05:40:45.194Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -25,7 +25,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 0.78,
+    "oldestGapAgeDays": 0.92,
     "escalatable": 0,
     "catalogMatched": 1,
     "auditedAt": "2026-07-27T07:32:00Z",
@@ -33,7 +33,7 @@
       {
         "interest": "Golf (tier1 wholesale) — FedExCup-sluttspillet + PGA Tour-grunnseriefinale",
         "severity": "medium",
-        "ageDays": 0.78,
+        "ageDays": 0.92,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -44,18 +44,11 @@
     "nearTermChecked": 8,
     "nearTermAmended": 0,
     "verifyRunAt": "2026-07-27T09:00:00Z",
-    "windowRate": 0.13,
-    "windowChecks": 70,
-    "windowAmendments": 9,
+    "windowRate": 0.11,
+    "windowChecks": 65,
+    "windowAmendments": 7,
     "windowCorrections": 3,
     "byDay": [
-      {
-        "date": "2026-07-14",
-        "checks": 5,
-        "amendments": 2,
-        "corrections": 0,
-        "rate": 0.4
-      },
       {
         "date": "2026-07-15",
         "checks": 3,
@@ -137,31 +130,31 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-07-28T02:13:30.565Z",
+    "buildCheckedAt": "2026-07-28T05:40:42.364Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-07-27T23:57:39.849Z",
-    "manifestAgeHours": 2.27,
+    "manifestGeneratedAt": "2026-07-28T02:13:35.516Z",
+    "manifestAgeHours": 3.45,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-07-26T15:02:01.492Z",
-        "ageHours": 35.19
+        "ageHours": 38.65
       },
       {
         "file": "football.json",
         "sourceLastUpdated": "2026-07-19T17:56:30.377Z",
-        "ageHours": 200.28
+        "ageHours": 203.74
       },
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-07-26T21:56:48.366Z",
-        "ageHours": 28.28
+        "ageHours": 31.73
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-07-27T09:00:00Z",
-    "verifyAgeHours": 17.23,
+    "verifyAgeHours": 20.68,
     "corrections": 1,
     "unresolved": 0,
     "signals": [

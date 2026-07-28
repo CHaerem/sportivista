@@ -1811,7 +1811,12 @@
     "homeTeam": "Union Saint-Gilloise",
     "awayTeam": "Bodø/Glimt",
     "norwegianPlayers": [],
-    "streaming": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport"
+      }
+    ],
     "source": "ai-research",
     "researchedAt": "2026-07-22T14:30:00Z",
     "confidence": "medium",
@@ -2223,8 +2228,8 @@
     "norwegianPlayers": [],
     "streaming": [
       {
-        "platform": "Direktesport / Avisa Nordland",
-        "url": "https://www.direktesport.no"
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport"
       }
     ],
     "source": "ai-research",
@@ -2477,6 +2482,87 @@
   },
   {
     "sport": "f1",
+    "tournament": "Formula 1 World Championship 2026",
+    "title": "Nederlands Grand Prix – sprintkvalifisering",
+    "time": "2026-08-21T14:30:00Z",
+    "endTime": "2026-08-21T15:15:00Z",
+    "venue": "Circuit Zandvoort",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-07-28T03:52:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.formula1.com/en/latest/article/formula-1-heineken-dutch-grand-prix-2026.VYghWPhEDqYBlWbd1iKe6",
+      "https://www.formula1.com/en/latest/article/formula-1-and-fia-announce-2026-sprint-calendar.3PyLPAazrBNe8kQIS3wOfY",
+      "https://worldofspeed.org/f1/dutch-grand-prix-2026-schedule-sprint-tv-guide/"
+    ],
+    "summary": "Sprintkvalifiseringen avgjør startoppstillingen til lørdagens sprint. Zandvoort kjører F1-sprint for aller første gang – én av seks sprinthelger i 2026-sesongen.\n\nSprinthelg-rekkefølge: fredag FP1 + sprintkvalifisering, lørdag sprint (formiddag) så vanlig kvalifisering (ettermiddag), race søndag. Norsk visning Viaplay/V Sport.",
+    "participants": [],
+    "norwegianPlayers": [],
+    "id": "44cbfaeb3410"
+  },
+  {
+    "sport": "f1",
+    "tournament": "Formula 1 World Championship 2026",
+    "title": "Nederlands Grand Prix – sprint",
+    "time": "2026-08-22T10:00:00Z",
+    "endTime": "2026-08-22T10:35:00Z",
+    "venue": "Circuit Zandvoort",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-07-28T03:52:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.formula1.com/en/latest/article/formula-1-heineken-dutch-grand-prix-2026.VYghWPhEDqYBlWbd1iKe6",
+      "https://www.formula1.com/en/latest/article/formula-1-and-fia-announce-2026-sprint-calendar.3PyLPAazrBNe8kQIS3wOfY",
+      "https://worldofspeed.org/f1/dutch-grand-prix-2026-schedule-sprint-tv-guide/"
+    ],
+    "summary": "Sprintløpet (~100 km) gir poeng til topp 8 og er første av lørdagens to F1-økter på Zandvoort. Startoppstillingen ble satt i fredagens sprintkvalifisering.\n\nZandvoorts aller første F1-sprint (og trolig banens siste F1-helg). Norsk visning Viaplay/V Sport.",
+    "participants": [],
+    "norwegianPlayers": [],
+    "id": "fa3e00c425be"
+  },
+  {
+    "sport": "f1",
+    "tournament": "Formula 1 World Championship 2026",
+    "title": "Nederlands Grand Prix – kvalifisering",
+    "time": "2026-08-22T14:00:00Z",
+    "endTime": "2026-08-22T15:00:00Z",
+    "venue": "Circuit Zandvoort",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-07-28T03:52:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.formula1.com/en/latest/article/formula-1-heineken-dutch-grand-prix-2026.VYghWPhEDqYBlWbd1iKe6",
+      "https://www.formula1.com/en/latest/article/formula-1-and-fia-announce-2026-sprint-calendar.3PyLPAazrBNe8kQIS3wOfY",
+      "https://worldofspeed.org/f1/dutch-grand-prix-2026-schedule-sprint-tv-guide/"
+    ],
+    "summary": "Kvalifiseringen (Q1–Q3) avgjør startoppstillingen for søndagens race (23. aug kl. 15.00 CEST / 13.00 UTC).\n\nPå en sprinthelg kjøres den vanlige kvalifiseringen lørdag ettermiddag, etter formiddagens sprint. Norsk visning Viaplay/V Sport.",
+    "participants": [],
+    "norwegianPlayers": [],
+    "id": "1a239d62ac79"
+  },
+  {
+    "sport": "f1",
     "tournament": "Formula 1 2026 - Race Weekend",
     "title": "Heineken Dutch Grand Prix",
     "time": "2026-08-23T13:00:00.000Z",
@@ -2594,83 +2680,5 @@
     ],
     "summary": "Lyns bortekamp mot Kongsvinger søndag 30. august kl. 17.00 på Gjemselund (OBOS-ligaen). Avsparkstid nå berammet – dato/tid/arena bekreftet 17. juli mot obos-ligaen.no + fotball.no + FotMob (tre kilder enige). TV-valg kan fortsatt flytte avspark 30–60 min; verify følger. Norsk visning TV 2 Play.",
     "id": "79642cacdcbf"
-  },
-  {
-    "sport": "f1",
-    "tournament": "Formula 1 World Championship 2026",
-    "title": "Nederlands Grand Prix – sprintkvalifisering",
-    "time": "2026-08-21T14:30:00Z",
-    "endTime": "2026-08-21T15:15:00Z",
-    "venue": "Circuit Zandvoort",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-07-28T03:52:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.formula1.com/en/latest/article/formula-1-heineken-dutch-grand-prix-2026.VYghWPhEDqYBlWbd1iKe6",
-      "https://www.formula1.com/en/latest/article/formula-1-and-fia-announce-2026-sprint-calendar.3PyLPAazrBNe8kQIS3wOfY",
-      "https://worldofspeed.org/f1/dutch-grand-prix-2026-schedule-sprint-tv-guide/"
-    ],
-    "summary": "Sprintkvalifiseringen avgjør startoppstillingen til lørdagens sprint. Zandvoort kjører F1-sprint for aller første gang – én av seks sprinthelger i 2026-sesongen.\n\nSprinthelg-rekkefølge: fredag FP1 + sprintkvalifisering, lørdag sprint (formiddag) så vanlig kvalifisering (ettermiddag), race søndag. Norsk visning Viaplay/V Sport.",
-    "participants": [],
-    "norwegianPlayers": []
-  },
-  {
-    "sport": "f1",
-    "tournament": "Formula 1 World Championship 2026",
-    "title": "Nederlands Grand Prix – sprint",
-    "time": "2026-08-22T10:00:00Z",
-    "endTime": "2026-08-22T10:35:00Z",
-    "venue": "Circuit Zandvoort",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-07-28T03:52:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.formula1.com/en/latest/article/formula-1-heineken-dutch-grand-prix-2026.VYghWPhEDqYBlWbd1iKe6",
-      "https://www.formula1.com/en/latest/article/formula-1-and-fia-announce-2026-sprint-calendar.3PyLPAazrBNe8kQIS3wOfY",
-      "https://worldofspeed.org/f1/dutch-grand-prix-2026-schedule-sprint-tv-guide/"
-    ],
-    "summary": "Sprintløpet (~100 km) gir poeng til topp 8 og er første av lørdagens to F1-økter på Zandvoort. Startoppstillingen ble satt i fredagens sprintkvalifisering.\n\nZandvoorts aller første F1-sprint (og trolig banens siste F1-helg). Norsk visning Viaplay/V Sport.",
-    "participants": [],
-    "norwegianPlayers": []
-  },
-  {
-    "sport": "f1",
-    "tournament": "Formula 1 World Championship 2026",
-    "title": "Nederlands Grand Prix – kvalifisering",
-    "time": "2026-08-22T14:00:00Z",
-    "endTime": "2026-08-22T15:00:00Z",
-    "venue": "Circuit Zandvoort",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-07-28T03:52:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.formula1.com/en/latest/article/formula-1-heineken-dutch-grand-prix-2026.VYghWPhEDqYBlWbd1iKe6",
-      "https://www.formula1.com/en/latest/article/formula-1-and-fia-announce-2026-sprint-calendar.3PyLPAazrBNe8kQIS3wOfY",
-      "https://worldofspeed.org/f1/dutch-grand-prix-2026-schedule-sprint-tv-guide/"
-    ],
-    "summary": "Kvalifiseringen (Q1–Q3) avgjør startoppstillingen for søndagens race (23. aug kl. 15.00 CEST / 13.00 UTC).\n\nPå en sprinthelg kjøres den vanlige kvalifiseringen lørdag ettermiddag, etter formiddagens sprint. Norsk visning Viaplay/V Sport.",
-    "participants": [],
-    "norwegianPlayers": []
   }
 ]
