@@ -181,6 +181,31 @@ pipeline always writes a field the schema doesn't strictly require,
 `source`, entity `type`, …) stay plain `String`, not closed Swift enums, so a new
 server value decodes gracefully on an older client rather than crashing the event.
 
+### «Lenkeløftet» (urlKind)
+
+`StreamingChannel.urlKind` (WP-246, mirrored on iOS by WP-247) says what the URL
+actually points at: `"deep"` = the broadcast itself, `"landing"` = the service's
+front page or a generic section. `StreamingChannel.linkURL` is the **single choke
+point** deciding whether a channel may look like a link — the Swift twin of
+`docs/js/dashboard.js`'s `streamLink`, read by the detail sheet; the agenda row and
+the widget render the channel through `AgendaFormat.channelLabel`, which is a NAME
+and never a link by construction.
+
+The channel name is always shown (it is true and useful); only a `deep`, http(s)
+URL is presented as a link. Two deliberate strictnesses:
+
+- **A missing `urlKind` is treated as `landing`** — stricter than web, which keeps
+  the old behaviour for unstamped entries. iOS is the surface with a persistent
+  on-device cache, so "no `urlKind`" means "cached before the pipeline stamped it",
+  not "this URL is fine"; the honest degradation is the name without the link.
+- **A `tentative` (shared-rights «NRK / TV 2») entry links only to a tvkampen match
+  guide** — linking one of the two broadcasters would mislead whenever it turns out
+  to be the other.
+
+The detail sheet explains a withheld link with a quiet «(ingen direkte lenke)» —
+no warning icon (DESIGN.md § Grunnlov 3, § Stemme). Pinned by
+`StreamingLinkContractTests`.
+
 ### Model fixtures
 
 `SportivistaTests/Fixtures/` holds **checked-in, deliberately-frozen snapshots** of the
@@ -325,7 +350,9 @@ emphasis — a 6pt amber dot, never a card; must-watch shows no inline glyph (th
 varsel state is in the detail sheet); a quiet mono `ⓘ` trails only on
 `ai-research` rows. Pull-to-refresh re-syncs + recompiles but does **not** run the
 notification reconcile (see [Notifications](#notifications)). Tapping a row opens
-`EventDetailSheet` (venue, summary, streaming as real `Link`s, the AI-provenance
+`EventDetailSheet` (venue, summary, streaming — every channel NAMED, but only a
+URL that points at the broadcast itself rendered as a real `Link`; see
+[«Lenkeløftet»](#lenkeløftet-urlkind) — the AI-provenance
 block only on `ai-research` rows, a quiet varsel read-out, the spoiler-masked
 `RESULTAT`, the **`TABELL`** section (WP-171 — `EventStandingsSection`: the league
 table / golf leaderboard / F1 championship from `standings.json`, built by the pure

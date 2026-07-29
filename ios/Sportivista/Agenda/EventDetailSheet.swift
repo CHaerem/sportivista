@@ -404,15 +404,22 @@ private struct NotifyStatusRow: View {
     }
 }
 
-/// One streaming option: a real tappable Link when it has a URL, plain text
-/// otherwise (mirrors dashboard.js's `streamLink` honesty — never fake a
-/// link). A tentative (shared-rights, not-yet-confirmed) entry is marked.
+/// One streaming option: a real tappable Link only when the URL points at the
+/// BROADCAST, plain text otherwise (`StreamingChannel.linkURL` — the Swift twin
+/// of dashboard.js's `streamLink`; never fake a link).
+///
+/// WP-247/WP-246: a `landing` URL drops you on TV 2 Play / Viaplay's front page,
+/// not on this match, so we name the channel — which is true and useful — and
+/// admit the missing link instead of dressing the rights map up as an answer.
+/// The sheet has room to say WHY, so it does, quietly, in the same muted voice
+/// as «(bekreftes)». No warning icon: DESIGN.md § Grunnlov 3 ("Ærlig innhold")
+/// and § Stemme ("Kanal ukjent", ikke "Ingen streaming!").
 private struct StreamingLinkRow: View {
     let channel: StreamingChannel
 
     var body: some View {
         Group {
-            if let urlString = channel.url, let url = URL(string: urlString) {
+            if let url = channel.linkURL {
                 Link(destination: url) {
                     row(linked: true)
                 }
@@ -423,13 +430,22 @@ private struct StreamingLinkRow: View {
         .listRowBackground(SportivistaTokens.cell)
     }
 
+    /// The quiet aside after the channel name. A tentative entry's «(bekreftes)»
+    /// wins — it is the more specific truth, and two asides on one row would be
+    /// noise (mirrors detail.js, which picks exactly one).
+    private var note: String? {
+        if channel.tentative == true { return "(bekreftes)" }
+        if channel.hasUnlinkableURL { return "(ingen direkte lenke)" }
+        return nil
+    }
+
     private func row(linked: Bool) -> some View {
         HStack {
             Text(channel.platform?.isEmpty == false ? channel.platform! : "Ukjent kanal")
                 .font(.sportivista(.subheadline))
                 .foregroundStyle(linked ? SportivistaTokens.accent : SportivistaTokens.label)
-            if channel.tentative == true {
-                Text("(bekreftes)")
+            if let note {
+                Text(note)
                     .font(.sportivista(.caption2))
                     .foregroundStyle(SportivistaTokens.secondaryLabel)
             }
