@@ -39,7 +39,7 @@ Two kinds of scheduled work:
 `.github/workflows/static-pipeline.yml` — hourly 05–21 UTC:
 - `scripts/fetch/index.js` — ESPN fetchers (football, golf, tennis, F1, chess, cycling) + fotball.no + **Liquipedia CS2 matches** (`esports.js`: hourly `Liquipedia:Matches`, keeps focus-team (100 Thieves) matches at any tier; the `APIClient` sends `Accept-Encoding: gzip` + decompresses, which Liquipedia requires)
 - `scripts/fetch-standings.js` → `standings.json` (PL table, golf leaderboards, F1)
-- `scripts/fetch-rss.js` → `rss-digest.json` (11 feeds)
+- `scripts/fetch-rss.js` → `rss-digest.json` (14 feeds)
 - `scripts/fetch-results.js` → `recent-results.json` (7-day history)
 - `scripts/fetch-tvkampen.js` → `tv-listings.json` — Norwegian TV/streaming **ground truth** for football (tvkampen.com, today+2 days; lib: `scripts/lib/tvkampen-scraper.js`)
 - `scripts/build-events.js` → `events.json` — **preserves `source: "ai-research"` events** from the previous build (dedupe key `sport|title|time`), publishes `tracked.json` to `docs/data/`
