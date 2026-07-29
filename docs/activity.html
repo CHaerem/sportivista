@@ -81,7 +81,9 @@
 		.back-link:hover { color: var(--accent); }
 	</style>
 </head>
-<body class="gated">
+<!-- WP-201: open, like the board. This page only READS the public ops files
+     (docs/data/*-log.json) — nothing personal happens here, so nothing to gate. -->
+<body>
 	<header class="masthead">
 		<div class="wrap masthead-inner">
 			<div class="mast-row mast-row-top">
@@ -117,7 +119,8 @@
 		<a href="personvern.html" class="footer-alt">Personvern</a>
 	</footer>
 
-	<!-- Whole-web-behind-login: CloudKit JS + the shared gate (gate-boot.js). -->
+	<!-- Funksjonsgate (WP-201): CloudKit JS + the shared gate (gate-boot.js). The
+	     page is open; the gate only keeps an existing iCloud session syncing. -->
 	<script src="js/icloud-config.js"></script>
 	<script src="https://cdn.apple-cloudkit.com/ck/2/cloudkit.js" async></script>
 	<script src="js/shared-constants.js"></script>

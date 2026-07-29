@@ -80,7 +80,10 @@
 		.edit-foot a { color: var(--accent); }
 	</style>
 </head>
-<body class="gated">
+<!-- WP-201: open, like the board. This page mutates NO profile — every action is
+     a follow-request that opens a GitHub Issue (owner-gated when it is applied),
+     so there is nothing personal here to put behind a login. -->
+<body>
 	<header class="masthead">
 		<div class="wrap masthead-inner">
 			<div class="mast-row mast-row-top">
@@ -110,10 +113,10 @@
 		</div>
 	</main>
 
-	<!-- Whole-web-behind-login: CloudKit JS + the gate. gate-boot.js hides the page
-	     until Sign in with Apple. (The QR-import + manual "Synk med iCloud" panels
-	     were removed — redundant now that the whole site requires iCloud and the
-	     profile syncs automatically.) -->
+	<!-- Funksjonsgate (WP-201): CloudKit JS + gate-boot.js. The page is open; the
+	     gate only keeps an existing iCloud session syncing in the background. (The
+	     QR-import + manual "Synk med iCloud" panels were removed earlier —
+	     redundant once the profile syncs automatically.) -->
 	<script src="js/icloud-config.js"></script>
 	<script src="https://cdn.apple-cloudkit.com/ck/2/cloudkit.js" async></script>
 	<script src="js/shared-constants.js"></script>
