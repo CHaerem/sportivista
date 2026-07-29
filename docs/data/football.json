@@ -1,36 +1,216 @@
 {
-  "lastUpdated": "2026-07-19T17:56:30.377Z",
+  "lastUpdated": "2026-07-29T15:41:26.051Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
-      "name": "FIFA World Cup",
+      "name": "Eliteserien",
       "events": [
         {
-          "id": "football-argentina-at-spain-1784487600000",
-          "title": "Argentina at Spain",
-          "time": "2026-07-19T19:00:00.000Z",
-          "venue": "MetLife Stadium",
+          "id": "football-vålerenga-–-hamkam-1785517200000",
+          "title": "Vålerenga – HamKam",
+          "time": "2026-07-31T17:00:00.000Z",
+          "venue": "Intility Arena",
           "sport": "football",
-          "meta": "FIFA World Cup",
-          "tournament": "FIFA World Cup",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
           "streaming": [
             {
-              "platform": "FOX",
-              "url": "",
-              "type": "tv"
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
             }
           ],
           "norwegian": false,
-          "homeTeam": "Spain",
-          "awayTeam": "Argentina",
+          "homeTeam": "Vålerenga",
+          "awayTeam": "HamKam",
           "participants": [],
           "norwegianPlayers": [],
           "totalPlayers": null,
           "isFavorite": false,
-          "round": "Finale",
           "additional": {
-            "status": "STATUS_SCHEDULED",
-            "round": "Finale"
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-bodø/glimt-–-lillestrøm-1785524400000",
+          "title": "Bodø/Glimt – Lillestrøm",
+          "time": "2026-07-31T19:00:00.000Z",
+          "venue": "Aspmyra Stadion",
+          "sport": "football",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
+          "streaming": [
+            {
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Bodø/Glimt",
+          "awayTeam": "Lillestrøm",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": true,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-fredrikstad-–-sandefjord-1785592800000",
+          "title": "Fredrikstad – Sandefjord",
+          "time": "2026-08-01T14:00:00.000Z",
+          "venue": "Fredrikstad Stadion",
+          "sport": "football",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
+          "streaming": [
+            {
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Fredrikstad",
+          "awayTeam": "Sandefjord",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-start-–-viking-1785600000000",
+          "title": "Start – Viking",
+          "time": "2026-08-01T16:00:00.000Z",
+          "venue": "Sparebanken Sor Arena",
+          "sport": "football",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
+          "streaming": [
+            {
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Start",
+          "awayTeam": "Viking",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-aalesund-–-tromsø-1785682800000",
+          "title": "Aalesund – Tromsø",
+          "time": "2026-08-02T15:00:00.000Z",
+          "venue": "Color Line Stadium",
+          "sport": "football",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
+          "streaming": [
+            {
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Aalesund",
+          "awayTeam": "Tromsø",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-kfum-oslo-–-kristiansund-1785682800000",
+          "title": "KFUM Oslo – Kristiansund",
+          "time": "2026-08-02T15:00:00.000Z",
+          "venue": "KFUM Arena",
+          "sport": "football",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
+          "streaming": [
+            {
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "KFUM Oslo",
+          "awayTeam": "Kristiansund",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-molde-–-sarpsborg-08-1785682800000",
+          "title": "Molde – Sarpsborg 08",
+          "time": "2026-08-02T15:00:00.000Z",
+          "venue": "Aker Stadion",
+          "sport": "football",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
+          "streaming": [
+            {
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Molde",
+          "awayTeam": "Sarpsborg 08",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": true,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-brann-–-rosenborg-1785690900000",
+          "title": "Brann – Rosenborg",
+          "time": "2026-08-02T17:15:00.000Z",
+          "venue": "Brann Stadium",
+          "sport": "football",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
+          "streaming": [
+            {
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Brann",
+          "awayTeam": "Rosenborg",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": true,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
           }
         }
       ]
@@ -43,10 +223,5 @@
       "failedLeagueNames": [],
       "coverageRatio": 1
     }
-  },
-  "_retained": {
-    "since": "2026-07-19T19:05:33.282Z",
-    "consecutiveRetains": 140,
-    "lastFreshFetch": "2026-07-19T17:56:30.377Z"
   }
 }
