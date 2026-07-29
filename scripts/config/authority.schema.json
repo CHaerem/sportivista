@@ -1,0 +1,103 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Sportivista – autoritetskart per konkurranse",
+	"description": "WP-241: HVEM skaper faktumet, per dekket konkurranse. Produktet står og faller på to felt per event — starttiden og den norske kanalen — og de har to ULIKE skapere: arrangøren/ligaen/forbundet setter tiden, kringkasteren setter kanalen. Dette kartet binder hver konkurranse til de to kildene, ved id inn i scripts/config/sources.json (WP-240-registeret er sannheten om hvilket domene som ER arrangøren — lookalike-vernet). Kartet finnes fordi research-laget beviselig siterer det PRAKTISKE framfor det AUTORITATIVE: letour.fr (A.S.O., som faktisk lager Tour de France-ruta) forekom null ganger i events.json, mens lookalike-domenet franceletour.com sto som evidens på en etappe. Agentene slår opp konkurransen her og går til autoriteten FØRST; scripts/lib/provenance.js bruker det samme kartet til å migrere flat evidence til per-faktum-proveniens (WP-242).",
+	"type": "object",
+	"required": ["updatedAt", "competitions"],
+	"additionalProperties": false,
+	"properties": {
+		"$schema": {
+			"type": "string",
+			"description": "Relativ sti til dette skjemaet — github.dev-autofullføring og CI-kontrakt (tests/authority-schema.test.js) fra samme fil."
+		},
+		"updatedAt": {
+			"type": "string",
+			"description": "Siste helhetlige gjennomgang (YYYY-MM-DD).",
+			"pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+		},
+		"notes": {
+			"type": "string",
+			"description": "Fritt notat til mennesker og agenter (metode, kjente hull)."
+		},
+		"competitions": {
+			"type": "array",
+			"description": "Konkurransene, SORTERT på id (determinisme — ren diff ved endringer). Minst konkurransene som faktisk er på tavla.",
+			"items": { "$ref": "#/definitions/competition" }
+		}
+	},
+	"definitions": {
+		"competition": {
+			"type": "object",
+			"required": ["id", "name", "sport", "match", "time", "channel"],
+			"additionalProperties": false,
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": "Stabil nøkkel på formen sport:konkurranse — samme navnerom som sources.json sitt authorityFor (\"cycling:tour-de-france\", \"football:eliteserien\").",
+					"pattern": "^[a-z0-9]+(-[a-z0-9]+)*:[a-z0-9]+(-[a-z0-9]+)*$"
+				},
+				"name": { "type": "string", "description": "Menneskelig navn på konkurransen." },
+				"sport": {
+					"type": "string",
+					"description": "Sport-nøkkelen slik events.json bruker den (\"cycling\", \"football\", \"f1\").",
+					"pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+				},
+				"match": {
+					"type": "array",
+					"description": "Små bokstaver-substrenger som identifiserer konkurransen i et events tournament/meta/title (f.eks. [\"tour de france\"]). Ved overlapp vinner det LENGSTE treffet (\"tour de france femmes\" foran \"tour de france\") — håndhevet i scripts/lib/provenance.js.",
+					"items": { "type": "string" }
+				},
+				"time": {
+					"type": "object",
+					"description": "Hvem SKAPER starttiden: arrangøren, ligaen eller forbundet. sourceIds peker inn i sources.json; flere id-er betyr flere legitime skapere (klubbenes egne sider for treningskamper).",
+					"required": ["sourceIds"],
+					"additionalProperties": false,
+					"properties": {
+						"sourceIds": {
+							"type": "array",
+							"description": "Id-er i sources.json med rolle primary eller federation (håndhevet av testen). TOM liste er et ærlig hull — da MÅ note forklare hvorfor.",
+							"items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+						},
+						"note": { "type": "string" }
+					}
+				},
+				"channel": {
+					"type": "object",
+					"description": "Hvem SKAPER kanalfaktumet for et norsk publikum: kringkasteren selv (eller arrangøren når den selv-strømmer, som BLAST/StarLadder på Twitch/Kick). options-listen kobler hver registrert kringkaster til plattformnavnet slik det står i events streaming[].platform.",
+					"required": ["options"],
+					"additionalProperties": false,
+					"properties": {
+						"options": {
+							"type": "array",
+							"description": "Én oppføring per legitim norsk visningskanal. TOM liste er et ærlig \"rettigheter ikke avklart\" — da MÅ note forklare.",
+							"items": {
+								"type": "object",
+								"required": ["sourceId", "platform"],
+								"additionalProperties": false,
+								"properties": {
+									"sourceId": {
+										"type": "string",
+										"description": "Id i sources.json med rolle official-broadcaster (eller primary ved selv-strømming — håndhevet av testen).",
+										"pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+									},
+									"platform": {
+										"type": "string",
+										"description": "Plattformnavnet slik det (typisk) står i streaming[].platform — matches som ord-prefiks («TV 2 Play» dekker også «TV 2 Play / TV 2 Sport Premium»)."
+									},
+									"note": { "type": "string" }
+								}
+							}
+						},
+						"note": { "type": "string" }
+					}
+				},
+				"lookalikes": {
+					"type": "array",
+					"description": "KJENTE lookalike-domener som utgir seg for å være arrangøren og ALDRI skal siteres (franceletour.com for Tour de France). Registeret (sources.json) er sannheten om hvilket domene som ER arrangøren; denne listen er varselskiltene vi allerede har snublet i.",
+					"items": { "type": "string" }
+				},
+				"notes": { "type": "string", "description": "Fritt notat: rettighetsvindu, kjente feller, hva som må avklares." }
+			}
+		}
+	}
+}

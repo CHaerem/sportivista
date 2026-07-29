@@ -136,8 +136,17 @@
 		},
 		"evidence": {
 			"type": "array",
-			"description": "Kilde-URLer for et ai-research-event.",
+			"description": "Kilde-URLer for et ai-research-event. LEGACY-FORM (WP-242): én flat liste for hele eventet, som ikke sier HVILKET faktum hver URL bærer. Beholdes for bakoverkompatibilitet og som bredde-dokumentasjon; per-faktum-proveniensen ligger i \"provenance\".",
 			"items": { "type": "string" }
+		},
+		"provenance": {
+			"type": "object",
+			"description": "WP-242 — proveniens PER FAKTUM. Produktets to kjernefelt har to ulike skapere (arrangøren setter tiden, kringkasteren setter kanalen — se scripts/config/authority.json), så hvert av dem får sin egen kildeoppføring i stedet for én flat evidence-liste for hele eventet. Skrives av research/verify når de finner/verifiserer faktumet; scripts/lib/provenance.js migrerer i tillegg mekanisk fra flat evidence der det er trygt (kun eksakt domenetreff mot registeret — lookalike-domener som franceletour.com migreres ALDRI). Valgfritt felt: eldre events med bare flat evidence forblir gyldige.",
+			"additionalProperties": false,
+			"properties": {
+				"time": { "$ref": "#/definitions/provenanceFact" },
+				"streaming": { "$ref": "#/definitions/provenanceFact" }
+			}
 		},
 		"researchedAt": {
 			"type": "string",
@@ -167,6 +176,19 @@
 		}
 	},
 	"definitions": {
+		"provenanceFact": {
+			"description": "Proveniens for ETT faktum (WP-242). sourceId peker inn i scripts/config/sources.json (WP-240-registeret — sannheten om hvilket domene som ER arrangøren); url er siden faktumet faktisk ble lest på; basis sier hvilken plass kilden har i kjeden: \"primary\" = skaperen av faktumet (arrangøren/ligaen/forbundet for tid; jf. authority.json), \"official\" = en offisiell parts egen publisering (kringkasterens egen side for kanal — kanalens skaper), \"secondary\" = alt annet (aggregator, media, wiki). retrievedAt er når kilden ble lest (ISO 8601); for mekanisk migrerte fakta brukes researchedAt/verifiedAt som ærlig tilnærming, med \"note\" som sier at oppføringen er migrert.",
+			"type": "object",
+			"required": ["sourceId", "url", "basis"],
+			"additionalProperties": false,
+			"properties": {
+				"sourceId": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+				"url": { "type": "string" },
+				"basis": { "enum": ["primary", "official", "secondary"] },
+				"retrievedAt": { "type": "string" },
+				"note": { "type": "string" }
+			}
+		},
 		"streamingChannel": {
 			"description": "Én visningsmulighet. platform/url er kjernefeltene; tentative markerer et uverifisert kanalgjett (f.eks. det delte \"NRK / TV 2\"-gjettet før verify løser det); urlKind sier hva slags URL det er (WP-246).",
 			"type": "object",

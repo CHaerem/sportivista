@@ -41,6 +41,43 @@
 			"notes": "En av 14 RSS-kilder i scripts/fetch-rss.js. Bærer nyhetspekere (docs/data/news.json), aldri artikkeltekst."
 		},
 		{
+			"id": "arctic-race-of-norway",
+			"name": "Arctic Race of Norway",
+			"publisher": "Arctic Race of Norway AS / A.S.O.",
+			"url": "https://www.arctic-race-of-norway.com",
+			"role": "primary",
+			"status": "candidate",
+			"authorityFor": [
+				"cycling:arctic-race-of-norway"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"route",
+				"results"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold (kun admin-/api-stier sperret). NB: kun robots sjekket i denne seedingen — vilkårstekst ikke gjennomgått.",
+				"evidence": [
+					"https://www.arctic-race-of-norway.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`*`-blokken sperrer /admin, /api, /graphql o.l. — ikke rittsidene.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "Seedet av WP-241 (autoritetskartet): arrangøren av Arctic Race of Norway (A.S.O.-partnerskap) — autoritativ på egne etappetider. robots.txt sjekket mekanisk 29.07.2026; vilkår ennå ikke lest (`unknown` betyr her «ikke avklart»)."
+		},
+		{
 			"id": "atp-tour",
 			"name": "ATP Tour",
 			"publisher": "ATP Tour, Inc.",
@@ -814,7 +851,8 @@
 			"role": "primary",
 			"status": "in-use",
 			"authorityFor": [
-				"esports:esports-world-cup"
+				"esports:esports-world-cup",
+				"chess:esports-world-cup"
 			],
 			"facts": [
 				"schedule",
@@ -841,6 +879,43 @@
 				"checkedAt": "2026-07-29"
 			},
 			"calibrationKey": "esportsworldcup.com"
+		},
+		{
+			"id": "european-athletics",
+			"name": "European Athletics",
+			"publisher": "European Athletic Association",
+			"url": "https://european-athletics.com",
+			"role": "primary",
+			"status": "candidate",
+			"authorityFor": [
+				"athletics:european-championships"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "robots.txt utilgjengelig fra dette miljøet (Cloudflare-utfordring svarer i stedet) — intet maskinlesbart signal å tolke",
+				"evidence": [
+					"https://european-athletics.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"note": "Cloudflare bot-utfordring foran hele nettstedet — samme operasjonelle klasse som letour.fr/hltv (mater WP-244).",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "Seedet av WP-241 (autoritetskartet): det europeiske friidrettsforbundet — arrangør av EM friidrett (på tavla i dag) og autoritativ på mesterskapets tidsskjema. Vilkår ennå ikke lest."
 		},
 		{
 			"id": "european-tour",
@@ -1610,6 +1685,43 @@
 				"checkedAt": "2026-07-29"
 			},
 			"notes": "Visningsplattform for CS2 i scripts/config/sports-config.js. Vi lenker dit; vi henter ikke data derfra."
+		},
+		{
+			"id": "laliga",
+			"name": "LALIGA",
+			"publisher": "Liga Nacional de Fútbol Profesional",
+			"url": "https://www.laliga.com",
+			"role": "primary",
+			"status": "candidate",
+			"authorityFor": [
+				"football:la-liga"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold (kun språkprefiks-styring for søkemotorer). NB: kun robots sjekket i denne seedingen — vilkårstekst ikke gjennomgått.",
+				"evidence": [
+					"https://www.laliga.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`Allow: /` for `*`; Disallow-linjene gjelder dype språkstier, ikke terminlistene.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "Seedet av WP-241 (autoritetskartet): ligaen selv setter La Liga-kampoppsettet (på tavla i dag via TV 2-rettighetene). Vilkår ennå ikke lest."
 		},
 		{
 			"id": "lavuelta",
@@ -2537,6 +2649,42 @@
 			"notes": "Kommersiell resultattjeneste (2 bruk) — sterkt databasevern, ingen egen autoritet. Bør ikke stå som grunnlag."
 		},
 		{
+			"id": "starladder",
+			"name": "StarLadder",
+			"publisher": "StarLadder",
+			"url": "https://starladder.com",
+			"role": "primary",
+			"status": "candidate",
+			"authorityFor": [
+				"esports:starladder"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"channel"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt er `User-agent: * / Allow: /` — ingen AI-agenter eller TDM-forbehold nevnt. NB: kun robots sjekket i denne seedingen — vilkårstekst ikke gjennomgått.",
+				"evidence": [
+					"https://starladder.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "Seedet av WP-241 (autoritetskartet): turneringsarrangør i CS2 (StarSeries, på tavla i dag) — autoritativ på egne kampoppsett og selv-strømmer gratis (Kick/Twitch). Se .claude/skills/cs2-sources. Vilkår ennå ikke lest."
+		},
+		{
 			"id": "swiss-open-gstaad",
 			"name": "Swiss Open Gstaad",
 			"url": "https://www.swissopengstaad.ch",
@@ -2571,6 +2719,43 @@
 			"rateLimit": "Crawl-delay: 10 (robots.txt)",
 			"calibrationKey": "swissopengstaad.ch",
 			"notes": "Turneringsarrangørens egen side — riktig kilde for banetider."
+		},
+		{
+			"id": "the-fa",
+			"name": "The Football Association",
+			"publisher": "The Football Association Limited",
+			"url": "https://www.thefa.com",
+			"role": "primary",
+			"status": "candidate",
+			"authorityFor": [
+				"football:community-shield",
+				"football:fa-cup"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt har KUN blokker for navngitte søkecrawlere (gsa-crawler, Googlebot, Bingbot …) og ingen `*`-blokk — ingen AI-agenter eller TDM-forbehold nevnt. NB: kun robots sjekket i denne seedingen — vilkårstekst ikke gjennomgått.",
+				"evidence": [
+					"https://www.thefa.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "Ingen `User-agent: *`-blokk ⇒ udefinerte agenter er uregulert (alt tillatt etter standarden).",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "Seedet av WP-241 (autoritetskartet): FA arrangerer Community Shield (på tavla i dag) og FA-cupen — autoritativ på avspark for egne kamper. Vilkår ennå ikke lest."
 		},
 		{
 			"id": "the-guardian",
@@ -2609,6 +2794,42 @@
 				"checkedAt": "2026-07-29"
 			},
 			"notes": "RSS-kilde for internasjonal fotball (entity-modus). Guardian oppgir en kontaktadresse for lisensiering — forbeholdet er altså «betal, ikke forsvinn»."
+		},
+		{
+			"id": "tour-de-pologne",
+			"name": "Tour de Pologne",
+			"publisher": "Lang Team",
+			"url": "https://www.tourdepologne.pl",
+			"role": "primary",
+			"status": "candidate",
+			"authorityFor": [
+				"cycling:tour-de-pologne"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"route",
+				"results"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt (Yoast-standard, `Disallow:` tom) nevner ingen AI-agenter eller TDM-forbehold. NB: kun robots sjekket i denne seedingen — vilkårstekst ikke gjennomgått.",
+				"evidence": [
+					"https://www.tourdepologne.pl/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "Seedet av WP-241 (autoritetskartet): Lang Team arrangerer Tour de Pologne (på tavla i dag) og setter etappetidene — dagens evidens siterer i stedet aggregatorer. Vilkår ennå ikke lest."
 		},
 		{
 			"id": "tromso-il",

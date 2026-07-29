@@ -4,6 +4,7 @@ import path from "path";
 import crypto from "crypto";
 import { readJsonIfExists, rootDataPath, configDirPath, MS_PER_DAY, makeCoverageGate, normalizeParticipants, normalizeNorwegianPlayers, normalizeText, containsName, entityTerms } from "./lib/helpers.js";
 import { resolveStreaming, stampUrlKinds } from "./lib/norwegian-rights.js";
+import { deriveProvenance } from "./lib/provenance.js";
 import { writeManifest } from "./build-manifest.js";
 import { writePortReport } from "./build-port-report.js";
 import { readIosCommit, buildAppVersion, readTestflight } from "./lib/app-version.js";
@@ -140,6 +141,8 @@ function pushEvent(ev, sport, tournament) {
 	if (ev.source) event.source = ev.source;
 	if (ev.confidence) event.confidence = ev.confidence;
 	if (ev.evidence) event.evidence = ev.evidence;
+	if (ev.provenance) event.provenance = ev.provenance; // WP-242: per-faktum-proveniens
+
 	if (ev.researchedAt) event.researchedAt = ev.researchedAt;
 	if (ev.verifiedAt) event.verifiedAt = ev.verifiedAt;
 	if (ev.verificationStatus) event.verificationStatus = ev.verificationStatus;
@@ -199,6 +202,10 @@ const CARRY_FORWARD_FIELDS = [
 	"norwegianPlayers",
 	"participants",
 	"summary",
+	// WP-242: en agent-stemplet per-faktum-proveniens på et statisk event må
+	// overleve at fetcheren regenererer eventet tomt hver time — samme
+	// begrunnelse som verifikasjonsstemplene over.
+	"provenance",
 ];
 // A verified streaming channel must beat a *non-empty* default — not just fill an
 // empty one. The carry-forward above only fills gaps, and the streaming-resolution
@@ -569,6 +576,17 @@ const catalog = readJsonIfExists(path.join(configDir, "catalog.json")) || {};
 // anomaly. See tests/build-events.test.js + tests/fixtures/feed-vectors/DIVERGENCES.md §6.
 const isCovered = makeCoverageGate(catalog);
 
+// WP-242: konfig for den mekaniske proveniens-migreringen i normaliserings-
+// passet under. Fail-soft: mangler registeret/kartet (f.eks. i testenes tomme
+// SPORTSYNC_CONFIG_DIR), skjer ingen migrering — feltet er valgfritt.
+const sourcesRegister = readJsonIfExists(path.join(configDir, "sources.json"));
+const authorityMap = readJsonIfExists(path.join(configDir, "authority.json"));
+const provenanceConfig =
+	Array.isArray(sourcesRegister?.sources) && Array.isArray(authorityMap?.competitions)
+		? { sources: sourcesRegister.sources, authority: authorityMap }
+		: null;
+let provenanceMigrated = 0;
+
 // Keep events from the last 14 days + upcoming, and only those the catalog covers
 const cutoff = Date.now() - 14 * MS_PER_DAY;
 let droppedIrrelevant = 0;
@@ -611,6 +629,21 @@ for (const e of kept) {
 	// without recomputing it). Idempotent for unchanged events: same inputs,
 	// same hash, same id across consecutive builds.
 	e.id = computeEventId(e.sport, e.title, e.time);
+	// WP-242: migrer flat evidence → per-faktum-proveniens der det er MEKANISK
+	// trygt (autoritetskartet + kilderegisteret, eksakt domenetreff — aldri
+	// lookalikes). Rører aldri et event som allerede bærer eksplisitt
+	// `provenance` (agent-skrevet vinner), og er deterministisk/idempotent:
+	// samme evidence + samme konfig ⇒ samme stempel på hvert bygg.
+	if (provenanceConfig && e.source === "ai-research" && !e.provenance) {
+		const derived = deriveProvenance(e, provenanceConfig);
+		if (derived) {
+			e.provenance = derived;
+			provenanceMigrated++;
+		}
+	}
+}
+if (provenanceMigrated > 0) {
+	console.log(`Migrated flat evidence to per-fact provenance on ${provenanceMigrated} AI-research event(s) (WP-242).`);
 }
 // WP-94: validate the array in-process BEFORE writing it, and degrade instead
 // of freezing the hourly pipeline on a violation. static-pipeline.yml runs

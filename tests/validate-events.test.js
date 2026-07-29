@@ -116,3 +116,97 @@ describe("landing-page-only channel URLs are a counted warning (WP-246)", () => 
 		expect(check([{ sport: "f1", title: "Ugyldig", time: soon, streaming: [{ platform: "Viaplay", urlKind: "kanskje" }] }]).errors).toBeGreaterThan(0);
 	});
 });
+
+// ── WP-242: høy tillit krever primær/offisiell basis — TELT, ikke usynlig ────
+
+describe("basis-kontrakten er et telt varsel for høytillits-events (WP-242)", () => {
+	const schema = loadEventSchema();
+	const soon = new Date(Date.now() + 2 * 86400000).toISOString();
+	const check = (events) => validateEvents(events, schema);
+	const high = (overrides = {}) => ({
+		sport: "cycling",
+		title: "Etappe 1",
+		time: soon,
+		source: "ai-research",
+		confidence: "high",
+		evidence: ["https://www.letour.fr/a", "https://www.tv2.no/b"],
+		streaming: [{ platform: "TV 2 Play", url: "https://play.tv2.no/sport" }],
+		...overrides,
+	});
+
+	it("teller et høytillits-event UTEN proveniens som svakt på både tid og kanal — men aldri som feil", () => {
+		const r = check([high()]);
+		expect(r.timeBasisWeak).toBe(1);
+		expect(r.channelBasisWeak).toBe(1);
+		expect(r.errors).toBe(0); // varsel, ikke pipeline-fellende — WP-246-mønsteret
+	});
+
+	it("primær tidsbasis + kringkasterens egen kanalbasis ⇒ null svake", () => {
+		const r = check([
+			high({
+				provenance: {
+					time: { sourceId: "letour", url: "https://www.letour.fr/a", basis: "primary" },
+					streaming: { sourceId: "tv2", url: "https://hjelp.tv2.no/b", basis: "official" },
+				},
+			}),
+		]);
+		expect(r.timeBasisWeak).toBe(0);
+		expect(r.channelBasisWeak).toBe(0);
+		expect(r.errors).toBe(0);
+	});
+
+	it("offisiell basis for tid godtas også (arrangør-nær offisiell publisering)", () => {
+		const r = check([
+			high({
+				streaming: [],
+				provenance: { time: { sourceId: "nrk", url: "https://nrk.no/a", basis: "official" } },
+			}),
+		]);
+		expect(r.timeBasisWeak).toBe(0);
+	});
+
+	it("secondary basis teller som svak — det er nettopp cyclingstage-klassen", () => {
+		const r = check([
+			high({
+				provenance: {
+					time: { sourceId: "cyclingstage", url: "https://www.cyclingstage.com/x", basis: "secondary" },
+					streaming: { sourceId: "wikipedia", url: "https://en.wikipedia.org/y", basis: "secondary" },
+				},
+			}),
+		]);
+		expect(r.timeBasisWeak).toBe(1);
+		expect(r.channelBasisWeak).toBe(1);
+	});
+
+	it("et event uten streaming teller ikke som svak kanal (ingenting å basere)", () => {
+		const r = check([high({ streaming: [] })]);
+		expect(r.timeBasisWeak).toBe(1);
+		expect(r.channelBasisWeak).toBe(0);
+	});
+
+	it("kontrakten gjelder kun høy tillit — medium teller ikke", () => {
+		const r = check([high({ confidence: "medium", evidence: ["https://a.no"] })]);
+		expect(r.timeBasisWeak).toBe(0);
+		expect(r.channelBasisWeak).toBe(0);
+	});
+
+	it("skjemaet godtar proveniens-formen og fanger brudd (basis-enum, ukjente felter, manglende sourceId)", () => {
+		const ok = high({
+			provenance: {
+				time: { sourceId: "letour", url: "https://www.letour.fr/a", basis: "primary", retrievedAt: soon, note: "migrert mekanisk fra evidence (WP-242)" },
+			},
+		});
+		expect(check([ok]).errors).toBe(0);
+		const badBasis = high({ provenance: { time: { sourceId: "letour", url: "https://x.no", basis: "vibes" } } });
+		expect(check([badBasis]).errors).toBeGreaterThan(0);
+		const unknownProp = high({ provenance: { time: { sourceId: "letour", url: "https://x.no", basis: "primary", surprise: 1 } } });
+		expect(check([unknownProp]).errors).toBeGreaterThan(0);
+		const missingSource = high({ provenance: { time: { url: "https://x.no", basis: "primary" } } });
+		expect(check([missingSource]).errors).toBeGreaterThan(0);
+	});
+
+	it("bakoverkompatibilitet: flat evidence uten provenance validerer fortsatt med null feil", () => {
+		const legacy = high(); // ingen provenance i det hele tatt
+		expect(check([legacy]).errors).toBe(0);
+	});
+});
