@@ -1,0 +1,173 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Sportivista – kilderegister med rettslig grunnlag",
+	"description": "WP-240: registeret over DATAKILDER — hvem publiserer et faktum, hva de er autoritative for, hva vilkårene sier om automatisert tilgang, og om de har tatt DSM art. 4-forbehold mot tekst- og datautvinning. Registeret finnes fordi research-laget i dag siterer det som er PRAKTISK, ikke det som er AUTORITATIVT (en Tour de France-etappe siteres via Wikipedia og aggregatorer, ikke via A.S.O. som faktisk lager ruta) — som samtidig er den svakeste datakvaliteten OG den svakeste rettslige posisjonen. Filen er artefaktet som gjør posisjonen ETTERPRØVBAR i stedet for påstått: det man legger frem for Apple under App Review guideline 5.2.2, og for advokaten. NB: registeret BESKRIVER virkeligheten, det endrer den ikke — WP-241 bygger autoritetskartet, WP-242 kobler proveniens per faktum, WP-245 lar kalibreringen styre kildevalget. Ærlighetskontrakten: et felt vi ikke har bekreftet står som \"unknown\" — vi gjetter ALDRI. Et gjettet \"permitted\" er verre enn ingen oppføring, fordi det ser ut som dokumentasjon.",
+	"type": "object",
+	"required": ["reviewedAt", "sources"],
+	"additionalProperties": false,
+	"properties": {
+		"$schema": {
+			"type": "string",
+			"description": "Relativ sti til dette skjemaet, slik at github.dev og andre editorer validerer og autofullfører mens man skriver. Samme fil er CI-kontrakten via tests/sources-schema.test.js — én sannhet, to bruksmåter."
+		},
+		"reviewedAt": {
+			"type": "string",
+			"description": "Dato for siste helhetlige gjennomgang av registeret (ISO-dato, YYYY-MM-DD). Per-kilde-datoene i terms/tdmReservation/robots er de bindende; denne sier når noen sist så på HELE listen.",
+			"pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+		},
+		"notes": {
+			"type": "string",
+			"description": "Fritt notat til mennesker og agenter (metode, terskler, kjente hull)."
+		},
+		"sources": {
+			"type": "array",
+			"description": "Kildene, SORTERT på id (determinisme — en re-seed gir ren diff).",
+			"items": { "$ref": "#/definitions/source" }
+		}
+	},
+	"definitions": {
+		"source": {
+			"type": "object",
+			"required": ["id", "name", "url", "role", "status", "authorityFor", "facts", "terms", "tdmReservation", "robots"],
+			"additionalProperties": false,
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": "Stabil kebab-slug — primærnøkkel. ALDRI endres; et navnebytte flytter `name`, ikke id-en (WP-242 vil peke per-faktum-proveniens hit).",
+					"pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+				},
+				"name": { "type": "string", "description": "Menneskelig navn på kilden." },
+				"publisher": {
+					"type": "string",
+					"description": "Den JURIDISKE enheten bak kilden (A.S.O., Norsk Toppfotball, NRK, Warner Bros. Discovery). Skilles fra `name` fordi det er utgiveren, ikke nettstedet, som eier vilkårene og et eventuelt databasevern."
+				},
+				"url": { "type": "string", "description": "Kildens kanoniske inngang." },
+				"endpoints": {
+					"type": "array",
+					"description": "De faktiske vertene/stiene vi berører — svaret på «hva henter dere egentlig» ved en henvendelse. Én oppføring per kilde samler alt som deler SAMME utgiver og vilkår (ESPNs tre API-verter; TV 2s hjelpe-, RSS- og play-domener).",
+					"items": { "type": "string" }
+				},
+				"role": {
+					"type": "string",
+					"description": "Kildens plass i kjeden fra faktum til skjerm. Doktrinen (bindende for WP-241/242): `primary` = organet som SKAPER faktumet for det den er autoritativ for — arrangøren, ligaen eller forbundet som setter starttiden (A.S.O. for Tour de France, Norsk Toppfotball for Eliteserien, NFF for norske terminlister). `federation` = styrende organ som sanksjonerer og publiserer sesongkalenderen, men der den lokale arrangøren setter det eksakte klokkeslettet (UCI, FIS, IBU, FIDE). `official-broadcaster` = rettighetshaveren — autoritativ for KANALEN, aldri sterkere enn arrangøren på tiden. `aggregator` = samler og videreformidler andres data (ESPN, tvkampen, HLTV); har det STERKESTE sui generis-databasevernet og den svakeste faktiske autoriteten — nøyaktig feil ende å bygge på. `encyclopedic` = wiki (Wikipedia, Liquipedia). `media` = redaksjonell omtale; kan bekrefte et faktum, men skaper det ikke.",
+					"enum": ["primary", "federation", "official-broadcaster", "aggregator", "encyclopedic", "media"]
+				},
+				"status": {
+					"type": "string",
+					"description": "`in-use` = kilden brukes FAKTISK i dag (en fetcher henter den, eller agentene siterer den gjentatte ganger). `candidate` = primærkilden vi BURDE bruke, registrert før den tas i bruk slik at kildevalget i WP-241 har noe å peke på. `retired` = brukt før, skal ikke brukes igjen (begrunnelsen står i `notes`).",
+					"enum": ["in-use", "candidate", "retired"]
+				},
+				"authorityFor": {
+					"type": "array",
+					"description": "Hva kilden er AUTORITATIV for — ikke hva den omtaler. Formen er `sport` eller `sport:konkurranse` (\"cycling\", \"cycling:tour-de-france\", \"football:eliteserien\"). En `primary` MÅ ha minst én oppføring (håndhevet av tests/sources-schema.test.js — en primærkilde uten et område den er autoritativ for er en selvmotsigelse). En aggregator/media kan stå med tom liste: den er autoritativ for ingenting, og det er hele poenget.",
+					"items": {
+						"type": "string",
+						"pattern": "^[a-z0-9]+(-[a-z0-9]+)*(:[a-z0-9]+(-[a-z0-9]+)*)?$"
+					}
+				},
+				"facts": {
+					"type": "array",
+					"description": "Faktatypene kilden faktisk BÆRER. Speiler produktets kjernefelt: `start-time` og `channel` er de to eventet står og faller på (WP-241 deler dem på to ulike kilder per event).",
+					"items": {
+						"type": "string",
+						"enum": ["schedule", "start-time", "route", "channel", "results", "standings", "entry-list", "news"]
+					}
+				},
+				"terms": {
+					"type": "object",
+					"description": "Hva kildens EGNE vilkår sier om automatisert tilgang. Uavhengig av opphavsrett — det er kontrakt, og det er dette ESPN i praksis er.",
+					"required": ["automatedAccess", "attributionRequired", "reviewedAt"],
+					"additionalProperties": false,
+					"properties": {
+						"automatedAccess": {
+							"type": "string",
+							"description": "`permitted` = uttrykkelig tillatt (åpent API, åpen lisens). `restricted` = tillatt på betingelser (avtale, API-nøkkel, ikke-kommersielt, attribusjon, takt). `forbidden` = vilkårene forbyr roboter/skraping uttrykkelig. `unknown` = vi har LETT og ikke funnet et svar. `unknown` er en ærlig konklusjon, ikke et tomt felt — å gjette \"permitted\" ville gjort registeret verdiløst nettopp der det trengs.",
+							"enum": ["permitted", "restricted", "forbidden", "unknown"]
+						},
+						"url": {
+							"type": "string",
+							"description": "Den eksakte siden konklusjonen hviler på. PÅKREVD når `automatedAccess` ikke er \"unknown\" (håndhevet av testen) — en påstand uten kilde er nettopp det registeret skal erstatte."
+						},
+						"quote": {
+							"type": "string",
+							"description": "Kort sitat eller parafrase av den bærende setningen, på originalspråket. Holdes kort med vilje (registeret dokumenterer, det reproduserer ikke)."
+						},
+						"basis": {
+							"type": "string",
+							"description": "HVA konklusjonen hviler på. `terms-page` = utgiverens vilkårstekst. `api-docs` = publisert API-dokumentasjon/ToS. `license` = en åpen lisens på innholdet. `robots-txt` = kun robots.txt sier noe (svakere: en teknisk instruks, ikke en avtale) — hold det adskilt fra vilkår. `not-found` = vi lette og fant ingen vilkår.",
+							"enum": ["terms-page", "api-docs", "license", "robots-txt", "not-found"]
+						},
+						"attributionRequired": {
+							"description": "Krever vilkårene/lisensen kildehenvisning? `null` = ikke avklart.",
+							"enum": [true, false, null]
+						},
+						"reviewedAt": {
+							"type": "string",
+							"description": "Når vilkårene sist ble lest (YYYY-MM-DD). Vilkår endres; en gammel dato er et signal om at oppføringen må sjekkes på nytt.",
+							"pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+						}
+					}
+				},
+				"tdmReservation": {
+					"type": "object",
+					"description": "DSM-direktivet art. 4: unntaket for tekst- og datautvinning gjelder BARE når rettighetshaveren ikke har tatt uttrykkelig forbehold på en maskinlesbar måte. Dette feltet registrerer om forbeholdet finnes — det er den ene tingen som avgjør om utvinning fra kilden hviler på lovunntaket eller ikke.",
+					"required": ["status", "checkedAt"],
+					"additionalProperties": false,
+					"properties": {
+						"status": {
+							"description": "`reserved` = uttrykkelig forbehold funnet. `none` = vi har sjekket de maskinlesbare kanalene og ikke funnet noe forbehold. `unknown` = ikke avklart (f.eks. robots.txt utilgjengelig).",
+							"enum": ["reserved", "none", "unknown"]
+						},
+						"mechanism": {
+							"type": "string",
+							"description": "HVORDAN forbeholdet er uttrykt: robots.txt-blokk mot AI-agenter, Cloudflares `Content-Signal` (som selv siterer art. 4), vilkårstekst, TDM Reservation Protocol, `noai`-metatagg."
+						},
+						"evidence": {
+							"type": "array",
+							"description": "URL-ene forbeholdet ble lest på (robots.txt, vilkårssiden).",
+							"items": { "type": "string" }
+						},
+						"checkedAt": {
+							"type": "string",
+							"description": "Når forbeholdet sist ble sjekket (YYYY-MM-DD).",
+							"pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+						}
+					}
+				},
+				"robots": {
+					"type": "object",
+					"description": "robots.txt for de stiene vi FAKTISK berører — ikke for nettstedet generelt. Holdes adskilt fra `terms` med vilje: robots er en teknisk høflighetsinstruks, vilkår er en avtale, og de spriker ofte (Liquipedia og Lichess forbyr begge `/api` i robots samtidig som de publiserer et API med egne vilkår).",
+					"required": ["allowsOurPaths", "checkedAt"],
+					"additionalProperties": false,
+					"properties": {
+						"allowsOurPaths": {
+							"description": "Tillater robots.txt de konkrete stiene i `endpoints`? `null` = ikke avgjort (robots.txt utilgjengelig eller stiene ikke fastlagt ennå).",
+							"enum": [true, false, null]
+						},
+						"note": {
+							"type": "string",
+							"description": "Nyansen tallet ikke bærer — hvilken direktiv som treffer oss, og om vilkårene sier noe annet."
+						},
+						"checkedAt": {
+							"type": "string",
+							"description": "Når robots.txt sist ble hentet (YYYY-MM-DD).",
+							"pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+						}
+					}
+				},
+				"rateLimit": {
+					"type": "string",
+					"description": "Takten kilden krever eller vi har pålagt oss selv (\"1 kall/2t\", \"maks 1 parallell forespørsel\"). Mater høflighetslaget i WP-244."
+				},
+				"calibrationKey": {
+					"type": "string",
+					"description": "Nøkkelen kilden føres under i `docs/data/calibration.json` (typisk domenet). Broen mellom registerets KVALITATIVE grunnlag og kalibreringens KVANTITATIVE tillit — WP-245 bruker den til å hindre at en kilde på 0,53 står som eneste grunnlag."
+				},
+				"notes": {
+					"type": "string",
+					"description": "Fritt notat: hvorfor kilden står her, kjente svakheter, hva som må avklares."
+				}
+			}
+		}
+	}
+}

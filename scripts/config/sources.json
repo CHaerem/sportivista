@@ -1,0 +1,3063 @@
+{
+	"$schema": "./sources.schema.json",
+	"reviewedAt": "2026-07-29",
+	"notes": "WP-240 · Kilderegister med rettslig grunnlag. Registeret svarer på tre spørsmål per kilde: hvem SKAPER faktumet, hva sier vilkårene om automatisert tilgang, og har rettighetshaveren tatt DSM art. 4-forbehold mot tekst- og datautvinning. Det finnes fordi research-laget i dag siterer det som er PRAKTISK framfor det som er AUTORITATIVT — som er både den svakeste datakvaliteten og den svakeste rettslige posisjonen samtidig.\n\nSEEDET slik (29.07.2026, mekanisk): (1) hver kilde en fetcher faktisk henter — scripts/fetch/*.js, scripts/config/sports-config.js, scripts/fetch-rss.js, scripts/fetch-standings.js, scripts/fetch-results.js, scripts/lib/tvkampen-scraper.js, scripts/lib/pgatour-scraper.js; (2) hvert domene med ≥2 forekomster i docs/data/events.json (evidence + verificationSources) eller docs/data/calibration-ledger.jsonl — 110 distinkte domener totalt, 62 med ≥2 bruk, 48 engangs; (3) primærkildene vi BURDE bruke, som `status: \"candidate\"`.\n\nENGANGSKILDENE (48) er BEVISST ikke oppført enkeltvis: de er nesten utelukkende arrangør- og klubbsider sitert én gang for ett event (rbk.no, wyndhamchampionship.com, tourdepologne.pl). De faller inn under rolledoktrinen — en klubbs eller arrangørs egen side er `primary` for sine egne kamper — og registreres når de gjentar seg. WP-242 (proveniens per faktum) vil tvinge dem fram som sourceId-er.\n\nÆRLIGHETSKONTRAKTEN: `unknown` er en konklusjon, ikke et tomt felt. Robots.txt er sjekket mekanisk for hver kilde her og er derfor godt dekket; VILKÅRSTEKST er lest der den finnes, og der vi ikke fant et svar står `unknown` med `basis: \"not-found\"`. Et gjettet \"permitted\" ville gjort registeret verdiløst nettopp der det trengs.\n\nFIRE FUNN VERDT Å MERKE SEG: (a) VILKÅR ER STRENGERE ENN ROBOTS, systematisk — UEFA publiserer et åpent kamp-sitemap i robots.txt og forbyr samtidig både skraping og KI-trening i vilkårenes § 6.2; ESPN/Disney, PGA TOUR, HLTV, ATP og A.S.O. forbyr alle roboter i vilkårstekst uten at robots.txt sier noe. Robots er ikke avtalen. (b) Å GÅ TIL PRIMÆRKILDEN GJØR IKKE TILGANGEN TILLATT: A.S.O. (Tour de France) forbyr robotuttrekk i sine juridiske merknader, akkurat som NFF og Norsk Toppfotball. Spor E blir derfor presisert, ikke omgjort — primærkilden er fortsatt riktig kilde til FAKTUMET og den med svakest databasevern over sitt eget program, men bruken må hvile på journalistisk volum, attribusjon og eventuelt samtykke, ikke på systematisk uttrekk. (c) Cloudflares `Content-Signal` (eliteserien.no, atptour.com) er det klareste MASKINLESBARE forbeholdet vi møter — det siterer art. 4 i sin egen tekst. Ingen kilde i registeret bruker TDM Reservation Protocol. (d) TO KILDER ER FAKTISK ÅPNE: Wikipedia (CC BY-SA 4.0 — attribusjon og del-på-samme-vilkår PÅKREVD) og Lichess' databaseeksporter (CC0). Liquipedia er CC-BY-SA 3.0 med et uttrykkelig tillatt API og harde, publiserte taktkrav — den ryddigste avtalen i hele registeret.\n\nOPERASJONELT (mater WP-244): hltv.org, atptour.com, uefa.com, procyclingstats.com og pgatour.com avviser klienter som ikke ser ut som nettlesere (403/503), og letour.fr var utilgjengelig fra dette miljøet. Flere kilder KREVER dessuten en identifiserende User-Agent med kontaktadresse (Wikimedia, Liquipedia, Chess.com) — dagens «SportSync/2.0» tilfredsstiller ingen av dem.",
+	"sources": [
+		{
+			"id": "aftenposten",
+			"name": "Aftenposten sport",
+			"publisher": "Schibsted Media",
+			"url": "https://www.aftenposten.no",
+			"endpoints": [
+				"https://www.aftenposten.no/rss/sport"
+			],
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "restricted",
+				"url": "https://www.aftenposten.no/robots.txt",
+				"quote": "Aftenposten does not permit unlicensed use of our content for training large language models.",
+				"basis": "robots-txt",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "robots.txt: uttrykkelig forbud mot tekst- og datautvinning + Disallow: / for ~35 AI-agenter (anthropic-ai, ClaudeBot, GPTBot, CCBot m.fl.)",
+				"evidence": [
+					"https://www.aftenposten.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "RSS-stien er ikke omfattet av `*`-blokkens Disallow-liste. AI-blokken treffer navngitte agent-UA-er, ikke fetcherens egen UA — men forbeholdet er uttrykt, og det er det som teller rettslig.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "En av 14 RSS-kilder i scripts/fetch-rss.js. Bærer nyhetspekere (docs/data/news.json), aldri artikkeltekst."
+		},
+		{
+			"id": "atp-tour",
+			"name": "ATP Tour",
+			"publisher": "ATP Tour, Inc.",
+			"url": "https://www.atptour.com",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"tennis:atp-tour"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "forbidden",
+				"url": "https://www.atptour.com/en/terms-and-conditions",
+				"quote": "Systematic retrieval of data … including scores, statistics, and/or rankings … is prohibited",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "To lag. (a) Vilkårenes § 7 forbyr systematisk uthenting av data for å bygge samling, kompilasjon, database eller katalog uten skriftlig forhåndssamtykke. (b) Cloudflare Content-Signal i robots.txt: `ai-train=no`, som robots-filen selv omtaler som et uttrykkelig art. 4-forbehold, pluss Disallow: / for ClaudeBot, GPTBot, CCBot, Google-Extended m.fl.",
+				"evidence": [
+					"https://www.atptour.com/en/terms-and-conditions",
+					"https://www.atptour.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`User-agent: *` er `Allow: /`. Signalet skiller mellom søk (ja) og AI-trening (nei) — å LESE en starttid som referanse er `use=reference`, som er tillatt.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "atptour.com",
+			"notes": "Autoritativ på ATP-kampprogram. Sitert 6 ganger i dagens evidens. VERIFISERT 29.07 (vilkårene 403-er for vanlige klienter og måtte leses i nettleser; Florida-rett). MERK FOR WP-246: § 4A sier at «Deep linking to internal pages of the Website is expressly prohibited» — dyplenkekontrakten som WP-246 skal innføre kolliderer altså direkte med ATPs vilkår, og tennis må håndteres særskilt der."
+		},
+		{
+			"id": "autosport",
+			"name": "Autosport",
+			"publisher": "Motorsport Network",
+			"url": "https://www.autosport.com",
+			"endpoints": [
+				"https://www.autosport.com/rss/feed/f1"
+			],
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.autosport.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`*`-blokken sperrer /search, /dashboard, /v/, /lt/ — ikke RSS-stien.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "RSS-kilde for F1-nyheter."
+		},
+		{
+			"id": "bbc-sport",
+			"name": "BBC Sport",
+			"publisher": "British Broadcasting Corporation",
+			"url": "https://www.bbc.co.uk/sport",
+			"endpoints": [
+				"https://feeds.bbci.co.uk/sport/football/rss.xml",
+				"https://feeds.bbci.co.uk/sport/tennis/rss.xml",
+				"https://feeds.bbci.co.uk/sport/formula1/rss.xml",
+				"https://feeds.bbci.co.uk/sport/winter-sports/rss.xml"
+			],
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "restricted",
+				"url": "https://www.bbc.co.uk/robots.txt",
+				"quote": "No business use without permission",
+				"basis": "robots-txt",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "robots.txt: «expressly opts out of any statutory exceptions ... for text and data mining» med uttrykkelig henvisning til art. 4 i DSM-direktivet, samt Disallow: / for ClaudeBot, anthropic-ai, GPTBot m.fl.",
+				"evidence": [
+					"https://www.bbc.co.uk/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "Fire RSS-feeder brukes. BBC har det mest eksplisitte art. 4-forbeholdet av alle kildene i registeret — det er formulert i klartekst, ikke bare som UA-blokker.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "Fire av 14 RSS-feeder. Kun nyhetspekere; BBCs forbehold gjør at innhold aldri skal reproduseres videre."
+		},
+		{
+			"id": "bein-sports",
+			"name": "beIN SPORTS",
+			"publisher": "beIN Media Group",
+			"url": "https://www.beinsports.com",
+			"role": "official-broadcaster",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"channel"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.beinsports.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"note": "`*` sperrer de fleste språkprefiksene (/en/, /france/, …). Hvilke stier agentene faktisk traff er ikke registrert i dag — WP-242 vil gjøre det synlig.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "beinsports.com",
+			"notes": "Utenlandsk kringkaster sitert 3 ganger. Irrelevant som KANAL-kilde for et norsk publikum — et symptom på at kildevalget følger søketreff framfor rettighetskart."
+		},
+		{
+			"id": "birmingham-city",
+			"name": "Birmingham City FC",
+			"publisher": "Birmingham City Football Club",
+			"url": "https://www.bcfc.com",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"football:birmingham-city"
+			],
+			"facts": [
+				"schedule",
+				"start-time"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "robots.txt svarer med en HTML-side (~1,5 MB), ikke en robots-fil — ingen direktiver å lese",
+				"evidence": [
+					"https://www.bcfc.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"note": "Ingen gyldig robots.txt å tolke.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "Klubbens egen side — primærkilde for egne kamper. Eksempel på den lange halen av klubbsider som blir riktig kilde når WP-242 tvinger fram per-faktum-proveniens."
+		},
+		{
+			"id": "blast",
+			"name": "BLAST",
+			"publisher": "BLAST ApS",
+			"url": "https://blast.tv",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"esports:blast"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"channel"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "robots.txt svarer 404",
+				"evidence": [
+					"https://blast.tv/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "blast.tv",
+			"notes": "Turneringsarrangør i CS2 — autoritativ på egne kampoppsett og starttider. Se .claude/skills/cs2-sources."
+		},
+		{
+			"id": "british-athletics",
+			"name": "UK Athletics",
+			"publisher": "UK Athletics Limited",
+			"url": "https://www.britishathletics.org.uk",
+			"role": "federation",
+			"status": "in-use",
+			"authorityFor": [
+				"athletics:great-britain"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.britishathletics.org.uk/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "WordPress-standard: kun /wp-admin/ sperret. Crawl-delay: 10.",
+				"checkedAt": "2026-07-29"
+			},
+			"rateLimit": "Crawl-delay: 10 (robots.txt)",
+			"calibrationKey": "britishathletics.org.uk"
+		},
+		{
+			"id": "brujulabike",
+			"name": "Brújulabike",
+			"url": "https://en.brujulabike.com",
+			"endpoints": [
+				"https://en.brujulabike.com",
+				"https://brujulabike.com"
+			],
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://en.brujulabike.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "brujulabike.com",
+			"notes": "Spansk sykkelmagasin, brukt som verifikasjonskilde 3 ganger. Bør erstattes av arrangørens egen side (letour, lavuelta) som grunnlag for tid."
+		},
+		{
+			"id": "chess-com",
+			"name": "Chess.com",
+			"publisher": "Chess.com, LLC",
+			"url": "https://www.chess.com",
+			"endpoints": [
+				"https://www.chess.com",
+				"https://api.chess.com"
+			],
+			"role": "aggregator",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"schedule",
+				"results",
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "restricted",
+				"url": "https://www.chess.com/legal/user-agreement",
+				"quote": "may not use automated or artificial intelligence (AI) tools to … scrape, data mine, copy",
+				"basis": "terms-page",
+				"attributionRequired": true,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "Brukeravtalens § 4.D forbyr uttrykkelig bruk av automatiserte eller KI-verktøy til å hente materialet «for the purpose of developing training, or improving an AI model, machine-learning system, dataset, or competitive product», med et smalt unntak for søke- og svarmotorer som indekserer offentlige sider (ikke for modelltrening). § 4.C forbyr i tillegg roboter/spidere. Robots.txt uttrykker derimot intet AI-forbehold.",
+				"evidence": [
+					"https://www.chess.com/legal/user-agreement",
+					"https://www.chess.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": false,
+				"note": "api.chess.com har `User-agent: * / Disallow: /`, og www-siden sperrer bl.a. /en/ og /game/. Et klassisk sprik mellom robots og et publisert API — vilkårene må avklares før API-et tas i bruk.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "chess.com",
+			"notes": "Sitert 4 ganger for sjakkoppsett. Autoritativ for egne arrangementer, aggregator for andres. VERIFISERT 29.07 — og her spriker det i BEGGE retninger: det finnes et uttrykkelig åpent, autentiseringsfritt Published-Data API (https://www.chess.com/announcements/view/published-data-api), samtidig som brukeravtalen forbyr roboter mot selve nettstedet og har et av registerets skarpeste KI-treningsforbud. Kreditering kreves betinget (bl.a. ved publisering av Daily Puzzle).",
+			"rateLimit": "Published-Data API: «Your serial access rate is unlimited» så lenge man venter på forrige svar før neste forespørsel; parallelle kall kan gi 429. Krever identifiserende User-Agent med kontaktinfo."
+		},
+		{
+			"id": "chess24",
+			"name": "Chess24",
+			"url": "https://chess24.com",
+			"role": "official-broadcaster",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"channel"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "robots.txt svarer 404 med tom kropp",
+				"evidence": [
+					"https://chess24.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "Oppført som sjakk-visningsplattform i scripts/config/sports-config.js og lenkes derfor fra events. Domenets status er IKKE verifisert i denne gjennomgangen (robots.txt svarer 404) — må sjekkes før lenken fortsatt vises til brukere."
+		},
+		{
+			"id": "chessbase",
+			"name": "ChessBase News",
+			"publisher": "ChessBase GmbH",
+			"url": "https://en.chessbase.com",
+			"endpoints": [
+				"https://en.chessbase.com/feed"
+			],
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news",
+				"results"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://en.chessbase.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`Allow: /` med Crawl-delay: 10; kun admin-/søkestier sperret.",
+				"checkedAt": "2026-07-29"
+			},
+			"rateLimit": "Crawl-delay: 10 (robots.txt)",
+			"notes": "RSS-kilde for sjakk."
+		},
+		{
+			"id": "cyclingnews",
+			"name": "Cyclingnews",
+			"publisher": "Future plc",
+			"url": "https://www.cyclingnews.com",
+			"endpoints": [
+				"https://www.cyclingnews.com/rss/"
+			],
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news",
+				"schedule",
+				"results"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "robots.txt: Disallow: / for en navngitt AI-/skrapergruppe (bytespider, cohere, ai2bot, diffbot, img2dataset, amazonbot, meta-externalagent m.fl.). Merk: GPTBot og ClaudeBot står IKKE i listen — forbeholdet er delvis, ikke generelt.",
+				"evidence": [
+					"https://www.cyclingnews.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "RSS-stien er ikke sperret i `*`-blokken.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "cyclingnews.com",
+			"notes": "Både RSS-kilde og verifikasjonskilde (10 bruk). Redaksjonell — kan bekrefte en etappetid, men skaper den ikke; A.S.O./UCI gjør det."
+		},
+		{
+			"id": "cyclingstage",
+			"name": "CyclingStage",
+			"url": "https://www.cyclingstage.com",
+			"role": "aggregator",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"schedule",
+				"start-time",
+				"route"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.cyclingstage.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "cyclingstage.com",
+			"notes": "REGISTERETS SKREKKEKSEMPEL: mest siterte kilde i hele evidensmengden (46 bruk) og samtidig den svakeste — reliability 0,53 over 17 sjekker i docs/data/calibration.json. En aggregator uten egen autoritet, brukt der A.S.O. og UCI skulle stått. WP-245 skal hindre at den står som eneste grunnlag. VERIFISERT 29.07: nettstedet har INGEN vilkår, ansvarsfraskrivelse, juridisk side eller opphavsrettsside i det hele tatt — kun personvernerklæring og cookies. Den eneste rettighetspåstanden er footerlinjen «© 2014 - 2026 Cyclingstage.com». Utgiveren er identifisert: en liten privat nederlandsk redaksjon (Harmen Lustig, eier og redaktør; startet av Hendrik Eppinga; hostet/utviklet av Sensi Media) — ikke et forbund og ikke en rettighetshaver. Registerets mest siterte kilde er altså en tremannsredaksjon uten vilkår, med reliability 0,53."
+		},
+		{
+			"id": "cyclinguptodate",
+			"name": "CyclingUpToDate",
+			"url": "https://www.cyclinguptodate.com",
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news",
+				"schedule"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.cyclinguptodate.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "cyclinguptodate.com",
+			"notes": "9 bruk. Samme problem som cyclingstage: praktisk, ikke autoritativ."
+		},
+		{
+			"id": "cyclismactu",
+			"name": "Cyclism'Actu",
+			"url": "https://www.cyclismactu.net",
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt inneholder kun `User-agent: *` uten direktiver",
+				"evidence": [
+					"https://www.cyclismactu.net/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "cyclismactu.net"
+		},
+		{
+			"id": "diamond-league",
+			"name": "Wanda Diamond League",
+			"publisher": "Diamond League AG",
+			"url": "https://www.diamondleague.com",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"athletics:diamond-league"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.diamondleague.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "WordPress-standard: kun /wp-admin/ sperret.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "diamondleague.com",
+			"notes": "Arrangøren av stevneserien — autoritativ på stevnetid og startlister. Har egne stevnedomener (f.eks. london.diamondleague.com)."
+		},
+		{
+			"id": "digi-sport",
+			"name": "Digi Sport",
+			"publisher": "RCS & RDS",
+			"url": "https://www.digisport.ro",
+			"role": "official-broadcaster",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"channel",
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.digisport.ro/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "digisport.ro",
+			"notes": "Rumensk kringkaster, sitert som verifikasjonskilde for en europacupkamp. Ikke en norsk kanalkilde."
+		},
+		{
+			"id": "discovery-plus-no",
+			"name": "Discovery+ Norge",
+			"publisher": "Warner Bros. Discovery",
+			"url": "https://www.discoveryplus.no",
+			"role": "official-broadcaster",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"channel"
+			],
+			"terms": {
+				"automatedAccess": "forbidden",
+				"url": "https://static-wbd-cdn.wbd.com/s3_assets/wp-content/themes/warner-bros-discovery-corporate/pdf/discovery-terms-of-use-Norwegian.pdf",
+				"quote": "bruke datautvinning, roboter … på Plattformen",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "Vilkårenes pkt. 15.3(c) forbyr uttrykkelig å «kopiere, datamine, skrape … med det formål å trene en kunstig intelligensalgoritme … stor språk- eller maskinlæringsmodell», og 15.3(d) forbyr å konstruere database. Robots.txt (444 kB) nevner derimot ingen AI-agenter — forbeholdet ligger i vilkårene, ikke i robots.",
+				"evidence": [
+					"https://static-wbd-cdn.wbd.com/s3_assets/wp-content/themes/warner-bros-discovery-corporate/pdf/discovery-terms-of-use-Norwegian.pdf",
+					"https://www.discoveryplus.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "Visningsplattform i scripts/config/sports-config.js (sykkel) og scripts/fetch/golf.js. Vi lenker dit; vi henter ikke data derfra. VERIFISERT mot den norskspråklige BRUKSVILKÅR-PDF-en (DPlay Entertainment Limited, sist oppdatert 21.08.2025). NB: WBDs generelle norske NETTSTED-vilkår har ingen slik klausul — det er TJENESTEvilkårene som binder."
+		},
+		{
+			"id": "domestique-cycling",
+			"name": "Domestique",
+			"url": "https://www.domestiquecycling.com",
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news",
+				"schedule"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://domestiquecycling.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "domestiquecycling.com"
+		},
+		{
+			"id": "eliteserien",
+			"name": "Eliteserien / OBOS-ligaen",
+			"publisher": "Norsk Toppfotball",
+			"url": "https://www.eliteserien.no",
+			"endpoints": [
+				"https://www.eliteserien.no",
+				"https://www.obos-ligaen.no",
+				"https://www.toppfotball.no"
+			],
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"football:eliteserien",
+				"football:obos-ligaen"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings"
+			],
+			"terms": {
+				"automatedAccess": "forbidden",
+				"url": "https://www.eliteserien.no/vilkar-og-betingelser",
+				"quote": "ikke … sette i gang en robot, spider eller annet automatisert system",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "Cloudflare Content-Signal (`ai-train=no`) — robots.txt sier selv at dette er et uttrykkelig art. 4-forbehold; i tillegg Disallow: / for ClaudeBot, GPTBot, CCBot, Google-Extended, Applebot-Extended m.fl.",
+				"evidence": [
+					"https://www.eliteserien.no/robots.txt",
+					"https://www.eliteserien.no/vilkar-og-betingelser"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`User-agent: *` er `Allow: /`. NB: obos-ligaen.no og toppfotball.no kjører samme Cloudflare-oppsett MEN uten at noe Content-Signal er satt — der er forbeholdet altså ikke uttrykt.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "eliteserien.no",
+			"notes": "Norsk Toppfotball setter kampoppsettet for Eliteserien og OBOS-ligaen — den norske primærkilden på kamptid. 15 + 5 bruk i dagens evidens, altså allerede en av de bedre vanene i systemet. VERIFISERT: vilkårene forbyr roboter uttrykkelig og krever bruk «utelukkende for ikke-kommersielle formål». Den norske primærkilden på kamptid er altså ikke fritt tilgjengelig for et betalt produkt — dette er, ved siden av NFF og TV 2, den tredje avtalen COMMERCIAL.md spor B må ta stilling til."
+		},
+		{
+			"id": "espn",
+			"name": "ESPN",
+			"publisher": "ESPN, Inc. / The Walt Disney Company",
+			"url": "https://www.espn.com",
+			"endpoints": [
+				"https://site.api.espn.com/apis/site/v2/sports",
+				"https://site.api.espn.com/apis/v2/sports",
+				"https://sports.core.api.espn.com/v2/sports",
+				"https://www.espn.com/espn/rss/golf/news",
+				"https://a.espncdn.com"
+			],
+			"role": "aggregator",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings"
+			],
+			"terms": {
+				"automatedAccess": "forbidden",
+				"url": "https://disneytermsofuse.com/english/",
+				"quote": "access, monitor, copy or extract … using a robot, spider, script, or other automated means",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "Disneys vilkårstekst tar forbeholdet TO ganger: § 2.B forbyr automatisert uttrekk «for the purposes of creating or developing any AI Tool, data mining or web scraping», og § 2.A nekter enhver rett til å bruke innholdet til «training, testing, benchmarking or validation of any artificial intelligence or machine learning tool». I tillegg robots.txt på www.espn.com: Disallow: / for anthropic-ai, GPTBot, ChatGPT-User, CCBot, Google-Extended m.fl.",
+				"evidence": [
+					"https://disneytermsofuse.com/english/",
+					"https://www.espn.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"note": "API-vertene (site.api / sports.core.api) svarer 403 på /robots.txt — det finnes altså ingen robots-regel å tolke for de stiene vi faktisk henter. Fraværet av en regel er ikke en tillatelse.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "espn.com",
+			"notes": "BÆREBJELKEN i den statiske pipelinen (fotball, tennis, golf, F1, tabeller, resultater) og samtidig registerets tyngste rettslige eksponering: en udokumentert intern API, en aggregator med sterkt sui generis-databasevern, og et uttrykkelig AI-forbehold i robots. COMMERCIAL.md spor B planlegger exit; spor E gjør exiten mulig ved å flytte til primærkildene. VERIFISERT 29.07, og verre enn antatt: ESPNs vilkår ER Disneys vilkår (espn.com-footerens «Terms of Use» går til disneytermsofuse.com), og de forbyr automatisert tilgang uttrykkelig, med eget AI-forbehold. `site.api.espn.com` har INGEN egne vilkår og ingen utviklerportal — developer.espn.com redirigerer til espn.com, API-roten svarer bart 403, og all «dokumentasjon» er reversert av tredjeparter på GitHub. Det er altså ikke et udokumentert API vi bruker på egen risiko; det er et udokumentert API dekket av vilkår som forbyr nettopp dette."
+		},
+		{
+			"id": "esports-world-cup",
+			"name": "Esports World Cup",
+			"publisher": "Esports World Cup Foundation",
+			"url": "https://esportsworldcup.com",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"esports:esports-world-cup"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://esportsworldcup.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`User-agent: * / Disallow:` — alt tillatt.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "esportsworldcup.com"
+		},
+		{
+			"id": "european-tour",
+			"name": "DP World Tour",
+			"publisher": "PGA European Tour",
+			"url": "https://www.europeantour.com",
+			"endpoints": [
+				"https://www.europeantour.com",
+				"https://www.dpworldtour.com"
+			],
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"golf:dp-world-tour"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "robots.txt kunne ikke hentes (nettverksfeil mot dpworldtour.com)",
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "europeantour.com",
+			"notes": "Arrangøren av DP World Tour — autoritativ på utslagstider. ESPNs `golf/eur/scoreboard` er dagens kilde til de samme turneringene; dette er primæralternativet."
+		},
+		{
+			"id": "eurosport-no",
+			"name": "Eurosport Norge",
+			"publisher": "Warner Bros. Discovery",
+			"url": "https://www.eurosport.no",
+			"role": "official-broadcaster",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"channel"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt gir ClaudeBot kun `Crawl-delay: 1` — ingen sperre, intet forbehold",
+				"evidence": [
+					"https://www.eurosport.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "Blant få kilder i registeret som eksplisitt NEVNER ClaudeBot og likevel slipper den inn (bare med takt).",
+				"checkedAt": "2026-07-29"
+			},
+			"rateLimit": "Crawl-delay: 1 for ClaudeBot (robots.txt)",
+			"notes": "Visningsplattform i scripts/config/sports-config.js (sykkel)."
+		},
+		{
+			"id": "fc-barcelona",
+			"name": "FC Barcelona",
+			"publisher": "Futbol Club Barcelona",
+			"url": "https://www.fcbarcelona.com",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"football:fc-barcelona"
+			],
+			"facts": [
+				"schedule",
+				"start-time"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.fcbarcelona.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`User-agent: *` uten direktiver — alt tillatt.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "fcbarcelona.com",
+			"notes": "6 bruk. Klubbens egen side er primærkilde for egne kamper — et av de riktige mønstrene i dagens evidens."
+		},
+		{
+			"id": "fide",
+			"name": "FIDE",
+			"publisher": "Fédération Internationale des Échecs",
+			"url": "https://www.fide.com",
+			"role": "federation",
+			"status": "candidate",
+			"authorityFor": [
+				"chess"
+			],
+			"facts": [
+				"schedule",
+				"results",
+				"standings"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "robots.txt svarer 404 (HTML-side)",
+				"evidence": [
+					"https://www.fide.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "KANDIDAT. Det internasjonale sjakkforbundet — sanksjonerer kalenderen; den lokale arrangøren setter klokkeslettet. I dag dekkes sjakk av Lichess-relayer og chess.com."
+		},
+		{
+			"id": "fifa",
+			"name": "FIFA",
+			"publisher": "Fédération Internationale de Football Association",
+			"url": "https://www.fifa.com",
+			"role": "federation",
+			"status": "candidate",
+			"authorityFor": [
+				"football:world-cup"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.fifa.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "fifa.com",
+			"notes": "KANDIDAT (én bruk i kalibreringsledgeren). Autoritativ på egne mesterskap."
+		},
+		{
+			"id": "fis",
+			"name": "FIS – International Ski and Snowboard Federation",
+			"publisher": "Fédération Internationale de Ski",
+			"url": "https://www.fis-ski.com",
+			"role": "federation",
+			"status": "candidate",
+			"authorityFor": [
+				"cross-country",
+				"alpine",
+				"ski-jumping",
+				"nordic"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.fis-ski.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`Allow: /` for `*`, men /api/ er sperret — kalenderen må leses fra sidene, ikke fra API-et.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "KANDIDAT og en av de VIKTIGSTE: vintersesongen er produktets nisjelansering (COMMERCIAL.md spor C, uke 48), og langrenn/alpint/hopp har ingen fetcher i dag — de dekkes utelukkende av research-agenten. FIS er terminlistas opphav."
+		},
+		{
+			"id": "flobikes",
+			"name": "FloBikes",
+			"publisher": "FloSports, Inc.",
+			"url": "https://www.flobikes.com",
+			"role": "official-broadcaster",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"channel"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "robots.txt: Disallow: / for Bytespider, ImagesiftBot, magpie-crawler, MyCentralAIScraperBot, omgili, Timpibot m.fl. Merk: GPTBot og ClaudeBot står IKKE i listen — forbeholdet er delvis.",
+				"evidence": [
+					"https://www.flobikes.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "flobikes.com",
+			"notes": "Nordamerikansk sykkelstrømmer — ikke en norsk kanalkilde."
+		},
+		{
+			"id": "formula1",
+			"name": "Formula 1",
+			"publisher": "Formula One World Championship Limited",
+			"url": "https://www.formula1.com",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"f1"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings"
+			],
+			"terms": {
+				"automatedAccess": "restricted",
+				"url": "https://www.formula1.com/en/information/legal-notices.7egvZU48hzrypubGBNcQKt",
+				"quote": "not … distribute copy extract or commercially exploit such material or content",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.formula1.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`Allow: /` for `*`; kun /en/latest/tags/* sperret.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "formula1.com",
+			"notes": "Arrangøren selv — 4 av 4 kalibreringssjekker stemte. Dette er MØNSTERET registeret vil ha overalt: ESPNs F1-endepunkt feildaterer notorisk løpshelger (se .claude/skills/source-quirks), formula1.com gjør det ikke. VERIFISERT 29.07, og overraskende MILDT: de juridiske merknadene har ingen robot-/spider-/skrape-klausul i det hele tatt, og ingen KI- eller TDM-ordlyd. Den eneste «automatisert»-formuleringen er app-scoped. Begrensningen som gjelder er den generelle mot kommersiell utnyttelse av innholdet, og RSS-feedene er merket ikke-kommersielle. Kombinert med åpen robots.txt er dette den mest fremkommelige primærkilden i registeret — og den vi allerede vet er nøyaktig (4 av 4 kalibreringssjekker)."
+		},
+		{
+			"id": "fotball-no",
+			"name": "fotball.no (NFF)",
+			"publisher": "Norges Fotballforbund",
+			"url": "https://www.fotball.no",
+			"endpoints": [
+				"https://www.fotball.no/footballapi/Calendar/GetCalendar"
+			],
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"football:norway"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings"
+			],
+			"terms": {
+				"automatedAccess": "forbidden",
+				"url": "https://www.fotball.no/tema/om-nff/nffs-personvernerklaring/fotball.no",
+				"quote": "Automatiserte tjenester som roboter, spidere etc er ikke tillatt brukt på våre sider.",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "Dobbelt forbehold. (a) Vilkårstekst: «Automatiserte tjenester som roboter, spidere etc er ikke tillatt brukt på våre sider» + «Gjenbruk av innhold kun etter avtale». (b) robots.txt: `User-agent: * / Disallow: /` — et generelt forbud mot automatisert tilgang omfatter nødvendigvis tekst- og datautvinning, selv om ingen AI-agent er navngitt.",
+				"evidence": [
+					"https://www.fotball.no/tema/om-nff/nffs-personvernerklaring/fotball.no",
+					"https://www.fotball.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": false,
+				"note": "`User-agent: *` er `Disallow: /`. Kun Googlebot, Slurp, msnbot, bingbot, DuckDuckBot, Twitterbot og facebookexternalhit slipper til. Vår fetcher er ikke blant dem.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "fotball.no",
+			"notes": "DEN ÆRLIGE UNNTAKET fra «primærkilde er trygg sone»: NFF ER organet som lager norske terminlister, men de forbyr roboter uten avtale. En NFF-avtale (COMMERCIAL.md WP-211) er derfor den eneste rene veien videre — spor E fjerner ikke det behovet. 19 bruk i evidensen i tillegg til fetcheren. VERIFISERT i vilkårsteksten, ikke bare i robots: NFF forbyr roboter uttrykkelig OG krever avtale for gjenbruk («Gjenbruk av innhold kun etter avtale»). FIKS-brukervilkårene er enda tydeligere: «NFF eier alle data lagret i FIKS … gjenbruk/videreformidling av Fotballdata er kun tillat etter avtale med NFF ved produktsjef FIKS» (https://www.fotball.no/tema/om-nff/nffs-personvernerklaring/fiks/brukervilkar/). Terminlistene er altså avtalebelagt på to nivåer."
+		},
+		{
+			"id": "fox-sports",
+			"name": "FOX Sports",
+			"publisher": "Fox Corporation",
+			"url": "https://www.foxsports.com",
+			"role": "official-broadcaster",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"channel",
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.foxsports.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "foxsports.com",
+			"notes": "Amerikansk kringkaster — ikke en norsk kanalkilde."
+		},
+		{
+			"id": "france24",
+			"name": "France 24",
+			"publisher": "France Médias Monde",
+			"url": "https://www.france24.com",
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.france24.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "france24.com"
+		},
+		{
+			"id": "friidrettsforbundet",
+			"name": "Norges Friidrettsforbund",
+			"publisher": "Norges Friidrettsforbund",
+			"url": "https://www.friidrett.no",
+			"role": "federation",
+			"status": "candidate",
+			"authorityFor": [
+				"athletics:norway"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "restricted",
+				"url": "https://www.friidrett.no/",
+				"quote": "Innholdet kan ikke benyttes kommersielt uten samtykke fra Norges Friidrettsforbund",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.friidrett.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "Kun /episerver/ og /util/ sperret.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "KANDIDAT. Forbundets terminliste er primærkilden for norsk friidrett; i dag hentes NM-info fra arrangørens engangsside (nmfriidrett2026.no). Presist: restriksjonen gjelder KOMMERSIELL bruk av innholdet, ikke automatisert tilgang — det finnes ingen robot-/skrape-klausul. For et betalt produkt er det likevel bindende, og samtykke må innhentes."
+		},
+		{
+			"id": "giro-ditalia",
+			"name": "Giro d'Italia",
+			"publisher": "RCS Sport / RCS MediaGroup",
+			"url": "https://www.giroditalia.it",
+			"role": "primary",
+			"status": "candidate",
+			"authorityFor": [
+				"cycling:giro-ditalia"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"route",
+				"results"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.giroditalia.it/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "WordPress-standard: kun /wp-admin/ sperret.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "KANDIDAT. RCS Sport lager ruta og etappetidene — samme argument som for letour."
+		},
+		{
+			"id": "golferen",
+			"name": "Golferen",
+			"url": "https://www.golferen.no",
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.golferen.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "golferen.no",
+			"notes": "Norsk golfmagasin, brukt som verifikasjonskilde for norske golfere."
+		},
+		{
+			"id": "grand-chess-tour",
+			"name": "Grand Chess Tour",
+			"publisher": "Grand Chess Tour",
+			"url": "https://grandchesstour.org",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"chess:grand-chess-tour"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://grandchesstour.org/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`User-agent: * / Disallow:` med Crawl-delay: 10.",
+				"checkedAt": "2026-07-29"
+			},
+			"rateLimit": "Crawl-delay: 10 (robots.txt)",
+			"calibrationKey": "grandchesstour.org",
+			"notes": "Arrangøren av turneringsserien Magnus Carlsen spiller — primærkilde på rundetid."
+		},
+		{
+			"id": "handballforbundet",
+			"name": "Norges Håndballforbund",
+			"publisher": "Norges Håndballforbund",
+			"url": "https://www.handball.no",
+			"role": "federation",
+			"status": "candidate",
+			"authorityFor": [
+				"handball:norway"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings"
+			],
+			"terms": {
+				"automatedAccess": "restricted",
+				"url": "https://www.handball.no/",
+				"quote": "Innholdet kan ikke benyttes kommersielt uten samtykke fra Norges Håndballforbund.",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.handball.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"note": "/api/ er sperret for `*`; sidene ellers er åpne. Om vi trenger API-et, trengs en avklaring.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "KANDIDAT. Håndball er i katalogen, men har ingen fetcher — terminlista hos NHF er primærkilden. Samme form som friidrett.no: kommersiell innholdsbruk krever samtykke, ingenting sies om roboter."
+		},
+		{
+			"id": "hbo-max",
+			"name": "HBO Max (Sport)",
+			"publisher": "Warner Bros. Discovery",
+			"url": "https://www.hbomax.com",
+			"endpoints": [
+				"https://www.hbomax.com/no/no/sports",
+				"https://www.max.com",
+				"https://media.wbdsports.com"
+			],
+			"role": "official-broadcaster",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"channel"
+			],
+			"terms": {
+				"automatedAccess": "forbidden",
+				"url": "https://www.hbomax.com/terms-of-use/en-fr",
+				"quote": "use any data mining, robots … or other data gathering and extraction tools",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "Vilkårenes pkt. 14.3 forbyr å «copy, data mine, scrape … for the purpose of training any artificial intelligence algorithm» og å «construct any kind of database». Robots.txt nevner ingen AI-agenter — forbeholdet ligger i vilkårene.",
+				"evidence": [
+					"https://www.hbomax.com/terms-of-use/en-fr",
+					"https://www.hbomax.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`Allow: /`, kun /search/ sperret.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "hbomax.com",
+			"notes": "Norsk rettighetshaver for bl.a. PGA Tour og Eurosport-innhold (scripts/fetch/golf.js). Autoritativ på KANAL for egne sendinger; WP-246 krever dyplenke til kampen, ikke forsiden. ÆRLIG FORBEHOLD OM VERIFISERINGEN: klausulen er lest i HBO Max' EMEA-vilkårsfamilie (en-fr-varianten), men den norske varianten (/terms-of-use/no-emea) renderte ikke brødtekst ved gjentatte forsøk. Ordlyden i den norske utgaven er altså ikke verifisert ord for ord."
+		},
+		{
+			"id": "hltv",
+			"name": "HLTV.org",
+			"publisher": "Better Collective",
+			"url": "https://www.hltv.org",
+			"endpoints": [
+				"https://www.hltv.org/rss/news"
+			],
+			"role": "aggregator",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "forbidden",
+				"url": "https://www.hltv.org/terms",
+				"quote": "You are not allowed to … conduct, facilitate or organize data mining or web scraping",
+				"basis": "terms-page",
+				"attributionRequired": false,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "Vilkårenes § 2.2 forbyr uttrykkelig data mining og web scraping av nettstedet og innholdet. Ingen KI-spesifikk ordlyd. (Robots.txt svarer 403 og kan ikke leses — forbeholdet står i vilkårsteksten.)",
+				"evidence": [
+					"https://www.hltv.org/terms"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"note": "Nettstedet står bak en Cloudflare-bot-utfordring; at robots.txt selv blokkeres er i seg selv et signal om at automatisert tilgang ikke er ønsket.",
+				"checkedAt": "2026-07-29"
+			},
+			"rateLimit": "SportSync/2.0-fetcheren henter maks 1 gang per 2 timer (scripts/fetch/esports.js)",
+			"calibrationKey": "hltv.org",
+			"notes": "16 bruk, reliability 1,0 over 7 sjekker — datakvaliteten er høy, den rettslige posisjonen usikker. Se .claude/skills/cs2-sources. VERIFISERT 29.07 (vilkårene 403-er for vanlige klienter og måtte leses i nettleser): HLTV.org A/S, dansk rett, vilkår i kraft 27.01.2025. § 2.2 forbyr data mining og skraping uttrykkelig, og § 3.2 krever lisens for enhver forretningsmessig bruk. Dette er den skarpeste konflikten i registeret mellom datakvalitet (reliability 1,0) og rettslig grunnlag — CS2-dekningen bør flyttes mot arrangørene (BLAST, ESL, Esports World Cup) og Liquipedias API."
+		},
+		{
+			"id": "ibu",
+			"name": "IBU – International Biathlon Union",
+			"publisher": "International Biathlon Union",
+			"url": "https://www.biathlonworld.com",
+			"role": "federation",
+			"status": "candidate",
+			"authorityFor": [
+				"biathlon"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.biathlonworld.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "Kun /profile, /live og /previews/* sperret.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "KANDIDAT og høyt prioritert: skiskyting er halvparten av vinternisjen COMMERCIAL.md spor C lanserer på (uke 48), og har ingen fetcher i dag."
+		},
+		{
+			"id": "idlprocycling",
+			"name": "IDLProCycling",
+			"url": "https://www.idlprocycling.com",
+			"role": "aggregator",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news",
+				"schedule"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://idlprocycling.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "idlprocycling.com",
+			"notes": "Nevnt eksplisitt i COMMERCIAL.md som en av aggregatorene som står der A.S.O. skulle stått."
+		},
+		{
+			"id": "kick",
+			"name": "Kick",
+			"publisher": "Kick Streaming Pty Ltd",
+			"url": "https://kick.com",
+			"role": "official-broadcaster",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"channel"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "robots.txt svarer 403",
+				"evidence": [
+					"https://kick.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "Visningsplattform for CS2 i scripts/config/sports-config.js. Vi lenker dit; vi henter ikke data derfra."
+		},
+		{
+			"id": "lavuelta",
+			"name": "La Vuelta a España",
+			"publisher": "Unipublic / Amaury Sport Organisation",
+			"url": "https://www.lavuelta.es",
+			"role": "primary",
+			"status": "candidate",
+			"authorityFor": [
+				"cycling:vuelta-a-espana"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"route",
+				"results",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.lavuelta.es/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "Samme A.S.O.-plattform som letour.fr: sidene er åpne, /api og /graphql sperret.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "KANDIDAT (én bruk i dag). Arrangøren lager ruta og etappetidene. Merk: A.S.O. er medeier, og de juridiske merknadene på A.S.O.s øvrige rittsider forbyr uttrykkelig robotuttrekk (se `letour`). lavuelta.es sin egen vilkårsside er IKKE lest i denne gjennomgangen — den står som `unknown` inntil den er verifisert, ikke som antatt lik."
+		},
+		{
+			"id": "letour",
+			"name": "Tour de France / Tour de France Femmes",
+			"publisher": "Amaury Sport Organisation (A.S.O.)",
+			"url": "https://www.letour.fr",
+			"endpoints": [
+				"https://www.letour.fr",
+				"https://www.letourfemmes.fr"
+			],
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"cycling:tour-de-france",
+				"cycling:tour-de-france-femmes"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"route",
+				"results",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "forbidden",
+				"url": "https://www.letourfemmes.fr/en/copyrights",
+				"quote": "Using a robot … in order to extract, index, explore Data … without A.S.O. prior consent",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "A.S.O.s juridiske merknader, § VI (User's Behavior), forbyr uttrykkelig bruk av robot eller uttrekksprogram for å hente, indeksere eller utforske «Data» uten A.S.O.s forhåndssamtykke, og A.S.O. hevder eksklusive rettigheter til alt innhold «inkludert data, statistikk». Robots.txt uttrykker derimot ingenting.",
+				"evidence": [
+					"https://www.letourfemmes.fr/en/copyrights",
+					"https://www.paris-nice.fr/en/copyrights"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`*` sperrer /admin, /api, /graphql, /login — etappesidene selv er åpne. Ingen AI-agent er blokkert.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "letourfemmes.fr",
+			"notes": "REGISTERETS ANDRE SKREKKEKSEMPEL, motsatt vei: A.S.O. lager ruta og starttidene, robots tillater oss å lese sidene, og det finnes intet TDM-forbehold — likevel var letour.fr IKKE sitert én eneste gang for herrenes ritt da COMMERCIAL.md ble skrevet (letourfemmes.fr var, 14 ganger). Den mest autoritative og mest tillatte kilden var den vi ikke brukte. VERIFISERT PÅ NYTT 29.07: letour.fr er fortsatt ikke sitert én gang. Verre — den ENE herre-etappen som har en Tour-lenke i evidensen, siterer «franceletour.com», et lookalike-domene som ikke er A.S.O. De øvrige herre-etappene hviler på et Brújulabike-innlegg om utgåtte ryttere. Damerittet er derimot dokumentert riktig, med letourfemmes.fr/en/overall-route som gjennomgående kilde. Samme sport, samme uke, to helt ulike kildevaner — det er nøyaktig hullet WP-241/242 skal lukke. VERIFISERT 29.07 — OG DETTE KORRIGERER EN ANTAKELSE: A.S.O. FORBYR roboter i sine juridiske merknader, selv om robots.txt slipper oss inn og intet TDM-signal finnes. Å gå til primærkilden gjør altså ikke automatisk tilgangen tillatt — samme lærdom som fotball.no, nå bekreftet for sykkelens viktigste arrangør. Konklusjonen for spor E blir presisert, ikke omgjort: A.S.O. er fortsatt riktig kilde til FAKTUMET (og den med svakest databasevern over sitt eget kampprogram), men bruken må hvile på journalistisk volum og attribusjon, eventuelt samtykke — ikke på systematisk uttrekk. ÆRLIG FORBEHOLD OM VERIFISERINGEN: letour.fr selv lot seg ikke laste fra dette miljøet. Ordlyden er lest verbatim på to søster-A.S.O.-sider (letourfemmes.fr og paris-nice.fr) som kjører identisk mal og oppgir A.S.O. som utgiver. Sterkt, men indirekte belegg for letour.fr — den eksakte siden bør verifiseres separat."
+		},
+		{
+			"id": "lichess",
+			"name": "Lichess broadcast-API",
+			"publisher": "Lichess (fransk ideell organisasjon)",
+			"url": "https://lichess.org",
+			"endpoints": [
+				"https://lichess.org/api/broadcast/top",
+				"https://lichess.org/api/broadcast"
+			],
+			"role": "aggregator",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results"
+			],
+			"terms": {
+				"automatedAccess": "restricted",
+				"url": "https://lichess.org/terms-of-service",
+				"quote": "All use of our services are subject to reasonable caps, limits, restrictions … at Lichess' discretion.",
+				"basis": "terms-page",
+				"attributionRequired": false,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://lichess.org/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": false,
+				"note": "SPRIKET I REN FORM: `Disallow: /api/` gjelder for `*`, og /api/broadcast er nøyaktig stien scripts/fetch/chess.js henter — samtidig som Lichess publiserer API-et som et åpent tilbud med egen dokumentasjon. Robots holder crawlere ute av API-et; API-vilkårene er det bindende laget. Må avklares.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "Relayer sjakkturneringer andre arrangerer — aggregator, ikke primærkilde, men en uvanlig ærlig en. VERIFISERT 29.07: API-et er uttrykkelig FORETRUKKET framfor skraping i Lichess' egne API-tips, og databaseeksportene er CC0 («for research, commercial purpose, publication, anything you like»). Vilkårene sier ingenting om lisens på LIVE API-svar, så attribusjonsplikten der er uavklart. Robots' `Disallow: /api/` er rettet mot crawlere — vilkårene og API-tipsene er det bindende laget, og de peker motsatt vei.",
+			"rateLimit": "«Only make one request at a time»; ved HTTP 429 skal man vente et helt minutt før man fortsetter (https://lichess.org/page/api-tips). Ingen tallfestede per-endepunkt-grenser er publisert."
+		},
+		{
+			"id": "liquipedia",
+			"name": "Liquipedia (Counter-Strike)",
+			"publisher": "Team Liquid / Liquipedia",
+			"url": "https://liquipedia.net/counterstrike",
+			"endpoints": [
+				"https://liquipedia.net/counterstrike/api.php"
+			],
+			"role": "encyclopedic",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"channel"
+			],
+			"terms": {
+				"automatedAccess": "restricted",
+				"url": "https://liquipedia.net/api-terms-of-use",
+				"quote": "Automated access to non-API endpoints (ie, generated HTML pages) is not permitted.",
+				"basis": "api-docs",
+				"attributionRequired": true,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "API-vilkårene har INGEN AI-/TDM-formulering; forbeholdet der er forbudet mot å hente HTML-sider automatisk. Det maskinlesbare forbeholdet ligger i robots.txt: Disallow: / for ClaudeBot, Claude-Web, GPTBot, ChatGPT-User, cohere-ai, Amazonbot, meta-externalagent, YouBot.",
+				"evidence": [
+					"https://liquipedia.net/robots.txt",
+					"https://liquipedia.net/api-terms-of-use"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": false,
+				"note": "`Disallow: /counterstrike/api.php` gjelder for `*` — nøyaktig endepunktet scripts/fetch/esports.js henter hver time. Liquipedia publiserer likevel API-et med egne vilkår og takt-krav; robots og API-vilkår spriker. Må avklares mot API-ToS-en før dette kan kalles rent.",
+				"checkedAt": "2026-07-29"
+			},
+			"rateLimit": "Fra API-vilkårene, ordrett: MediaWiki-API maks 1 forespørsel per 2 sekunder; `action=parse` maks 1 per 30 sekunder; LiquipediaDB-API maks 60 per time (krever godkjent søknad + API-nøkkel). Obligatorisk: egendefinert User-Agent med kontaktinfo, gzip-støtte, gjenbruk av HTTP-klient, caching. Brudd gir automatiske IP-utestengelser som «may result in them becoming permanent».",
+			"calibrationKey": "liquipedia.net",
+			"notes": "Eneste faktiske CS2-fetcher. Wiki-innhold er som regel CC-lisensiert med krav om kreditering — attribusjonskravet må bekreftes mot lisenssiden og legges inn her. VERIFISERT 29.07: innholdet er CC-BY-SA 3.0 og krever at Liquipedia krediteres som kilde — attribusjonsplikten er altså reell, ikke antatt. Viktigst for oss: API-BRUK ER UTTRYKKELIG TILLATT så lenge takten og UA-kravet følges, mens HTML-skraping er forbudt. Vi bruker API-et (riktig vei), men fetcherens UA («SportSync/2.0 (https://github.com; …)») mangler en ekte kontaktadresse og takten er ikke eksplisitt håndhevet — begge deler er WP-244-arbeid. Robots' `Disallow: /counterstrike/api.php` er dermed rettet mot crawlere, ikke mot API-klienter som følger vilkårene."
+		},
+		{
+			"id": "manchester-united",
+			"name": "Manchester United",
+			"publisher": "Manchester United Football Club Limited",
+			"url": "https://www.manutd.com",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"football:manchester-united"
+			],
+			"facts": [
+				"schedule",
+				"start-time"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.manutd.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`Allow: /` uten unntak.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "manutd.com",
+			"notes": "5 bruk. Klubbens egen side — riktig kilde for egne kamper."
+		},
+		{
+			"id": "metlife-stadium",
+			"name": "MetLife Stadium",
+			"publisher": "MetLife Stadium Company",
+			"url": "https://www.metlifestadium.com",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"football:metlife-stadium"
+			],
+			"facts": [
+				"schedule",
+				"start-time"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt inneholder kun `User-agent: *` uten direktiver",
+				"evidence": [
+					"https://www.metlifestadium.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "metlifestadium.com",
+			"notes": "Arenaen selv er primærkilde for avsparkstid på egne arrangementer — et gyldig, men smalt mønster."
+		},
+		{
+			"id": "nbc-sports",
+			"name": "NBC Sports",
+			"publisher": "NBCUniversal",
+			"url": "https://www.nbcsports.com",
+			"role": "official-broadcaster",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"channel",
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.nbcsports.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "/api/ og /graphql/ sperret; artikkelsider åpne. Crawl-delay: 10 for `*`.",
+				"checkedAt": "2026-07-29"
+			},
+			"rateLimit": "Crawl-delay: 10 (robots.txt)",
+			"calibrationKey": "nbcsports.com",
+			"notes": "Amerikansk kringkaster (5 bruk) — ikke en norsk kanalkilde."
+		},
+		{
+			"id": "nettavisen",
+			"name": "Nettavisen",
+			"publisher": "Amedia",
+			"url": "https://www.nettavisen.no",
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "forbidden",
+				"url": "https://www.nettavisen.no/",
+				"quote": "Dette gjelder også for all skraping, crawling, salg eller videredistribusjon.",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "Footer-notisen navngir skraping og crawling og krever samtykke; robots.txt går lenger og forbyr uttrykkelig ulisensiert bruk til språkmodelltrening, med Disallow: / for ~80 AI-agenter fordelt på gruppene «training», «AI Search» og «AI Assistant» (bl.a. ClaudeBot, Claude-User, GPTBot, ChatGPT-User).",
+				"evidence": [
+					"https://www.nettavisen.no/",
+					"https://www.nettavisen.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`*` er `Allow: /` med kun /sportspill/ sperret. Nettavisen har registerets mest FINMASKEDE forbehold — det skiller mellom trening, AI-søk og brukerinitiert AI-surfing.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "nettavisen.no",
+			"notes": "8 bruk som verifikasjonskilde. Redaksjonell — kan bekrefte, ikke skape."
+		},
+		{
+			"id": "nm-friidrett-2026",
+			"name": "NM friidrett 2026",
+			"url": "https://nmfriidrett2026.no",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"athletics:nm-friidrett-2026"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "Squarespace-standard robots.txt: AI-agentene er GRUPPERT SAMMEN MED `*` og får samme regler — de er altså IKKE sperret, tross en lang UA-liste som ved rask lesning ser ut som en blokk",
+				"evidence": [
+					"https://nmfriidrett2026.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "nmfriidrett2026.no",
+			"notes": "Arrangørens egen side — primærkilde for øvelsestider under NM. Kortlevd (én sesong); friidrettsforbundets terminliste er den varige kilden."
+		},
+		{
+			"id": "nordlys",
+			"name": "Nordlys",
+			"publisher": "Amedia",
+			"url": "https://www.nordlys.no",
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "robots.txt hentet, men ikke fullt gjennomgått for AI-direktiver i denne runden",
+				"evidence": [
+					"https://www.nordlys.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "Lokalavis brukt som verifikasjonskilde for nordnorsk fotball (Tromsø IL)."
+		},
+		{
+			"id": "nrk",
+			"name": "NRK",
+			"publisher": "Norsk rikskringkasting AS",
+			"url": "https://www.nrk.no",
+			"endpoints": [
+				"https://www.nrk.no/sport/toppsaker.rss",
+				"https://tv.nrk.no"
+			],
+			"role": "official-broadcaster",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"channel",
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "restricted",
+				"url": "https://www.nrk.no/informasjon/opphavsrett-pa-nrk.no-1.498502",
+				"quote": "Unntak gjelder for bruk til privat, ikke-kommersiell bruk.",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "robots.txt: Disallow: / for 22 navngitte AI-agenter, inkludert ClaudeBot, Claude-User, Claude-SearchBot, Claude-Web, anthropic-ai, GPTBot, CCBot, Google-Extended, Applebot-Extended",
+				"evidence": [
+					"https://www.nrk.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "RSS-stien /sport/toppsaker.rss er ikke omfattet av `*`-blokkens Disallow-liste (som treffer */feed/, ikke .rss-filen).",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "nrk.no",
+			"notes": "17 bruk, reliability 0,71 over 7 sjekker — den svakeste tallverdien blant de norske kringkasterne, og verdt å merke seg siden NRK er KANAL-kilden for vintersport. NRK er allmennkringkaster med bredt sportsrettighetsomfang; rettighetskartet ligger i .claude/skills/norwegian-rights og bygges formelt i WP-241. Vilkårene (opphavsrettssiden) forbyr kopiering/nedlasting uten skriftlig forhåndsgodkjenning, med unntak for privat, ikke-kommersiell bruk — de nevner ikke roboter, men et kommersielt produkt faller utenfor unntaket."
+		},
+		{
+			"id": "nrk-psapi",
+			"name": "NRK PSAPI (programtjeneste-API)",
+			"publisher": "Norsk rikskringkasting AS",
+			"url": "https://psapi.nrk.no",
+			"role": "official-broadcaster",
+			"status": "candidate",
+			"authorityFor": [],
+			"facts": [
+				"channel",
+				"schedule",
+				"start-time"
+			],
+			"terms": {
+				"automatedAccess": "restricted",
+				"url": "https://psapi.nrk.no/thirdpartycatalog/Documentation",
+				"quote": "It is not permitted to store and reuse NRK's text, images and metadata for other purposes.",
+				"basis": "api-docs",
+				"attributionRequired": true,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "robots.txt svarer 404 på API-verten",
+				"evidence": [
+					"https://psapi.nrk.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "KANDIDAT, og den enkeltkilden som ville løftet KANAL-feltet mest: NRKs eget sendeskjema-API ville gjort «hvor ser jeg rennet» til et primærkilde-svar for vintersport i stedet for et gjettet. COMMERCIAL.md kalenderen ber om API-nøkkel i august 2026. Ingen tilgang er avklart i dag — ingenting hentes herfra. VERIFISERT: API-et har egne tredjepartsvilkår — det krever API-nøkkel fra en navngitt NRK-kontakt, tillater EPG/strømmeguide-formål som promoterer NRKs innhold, og krever merking etter åndsverkloven § 5. Altså en åpen, men avtalebelagt dør — nøyaktig den COMMERCIAL.md-kalenderen ber om i august."
+		},
+		{
+			"id": "ntb",
+			"name": "NTB",
+			"publisher": "Norsk Telegrambyrå AS",
+			"url": "https://www.ntb.no",
+			"endpoints": [
+				"https://kommunikasjon.ntb.no"
+			],
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"url": "https://www.ntb.no/personvern-og-vilkar-for-ntb-kommunikasjon",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt på begge verter nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.ntb.no/robots.txt",
+					"https://kommunikasjon.ntb.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "kommunikasjon.ntb.no sperrer kun /data/attachments/ og ber om Crawl-delay: 1.",
+				"checkedAt": "2026-07-29"
+			},
+			"rateLimit": "Crawl-delay: 1 på kommunikasjon.ntb.no (robots.txt)",
+			"calibrationKey": "ntb.no",
+			"notes": "19 bruk (kommunikasjon.ntb.no 15, ntb.no 4) — altså nesten alle mot pressemeldingsdomenet, som er pressemeldingsdistribusjon. Det gjør den til en formidler av ARRANGØRENS egen melding: bedre enn en aggregator, men fortsatt et mellomledd. WP-242 bør kreve at meldingens avsender siteres direkte. Vilkårssiden finnes, men inneholder ingen bruks-/gjenbruksbestemmelser i den delen som lot seg hente; de vilkårene som nevnes gjelder AVSENDERE som publiserer pressemeldinger, ikke lesere. Pressemeldingene selv er fritt lesbare uten innlogging eller betalingsmur."
+		},
+		{
+			"id": "obosligaen-kamper",
+			"name": "OBOS-ligaen kamper",
+			"url": "https://obosligaenkamper.com",
+			"role": "aggregator",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"schedule",
+				"start-time",
+				"channel"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://obosligaenkamper.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`Allow: /` uten unntak.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "obosligaenkamper.com",
+			"notes": "4 bruk. Utgiveren er IKKE identifisert i denne gjennomgangen — domenet ligner Norsk Toppfotballs, men er ikke bekreftet som deres. Registrert som aggregator til det motsatte er vist; obos-ligaen.no er den kjente primærkilden for samme data."
+		},
+		{
+			"id": "oddspodden",
+			"name": "Oddspodden",
+			"url": "https://www.oddspodden.com",
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"channel",
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "permitted",
+				"url": "https://www.oddspodden.com/robots.txt",
+				"quote": "Explicitly allow LLM index files — Allow: /llms.txt, /llms-full.txt",
+				"basis": "robots-txt",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt inviterer tvert imot LLM-er inn via egne /llms.txt-filer",
+				"evidence": [
+					"https://www.oddspodden.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "oddspodden.com",
+			"notes": "SPRIKET MELLOM TILLATT OG AUTORITATIVT, i ren form: den mest LLM-vennlige kilden i hele registeret (den publiserer llms.txt for å BLI sitert) er samtidig en oddsrelatert medieside uten egen autoritet på kamptid eller kanal. Lett tilgang er ikke det samme som riktig kilde — 3 bruk i dag bør bli null."
+		},
+		{
+			"id": "olympics",
+			"name": "Olympics.com",
+			"publisher": "International Olympic Committee",
+			"url": "https://olympics.com",
+			"role": "federation",
+			"status": "candidate",
+			"authorityFor": [
+				"olympics"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "robots.txt kunne ikke hentes (tidsavbrudd)",
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "olympics.com",
+			"notes": "KANDIDAT (én bruk). Relevant først ved neste OL-syklus."
+		},
+		{
+			"id": "pgatour",
+			"name": "PGA TOUR",
+			"publisher": "PGA TOUR, Inc.",
+			"url": "https://www.pgatour.com",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"golf:pga-tour"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "forbidden",
+				"url": "https://www.pgatour.com/company/terms-of-use",
+				"quote": "shall not use … robots, spiders, scrapers, webcrawlers … that monitor, copy or download data",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "Vilkårenes § 7(C) forbyr automatiserte prosesser som kopierer eller laster ned innhold. Ingen KI-spesifikk ordlyd. Robots.txt uttrykker ingenting.",
+				"evidence": [
+					"https://www.pgatour.com/company/terms-of-use"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`*` sperrer stort sett spørringsparametre og mediestier; turnerings- og spillersider er åpne.",
+				"checkedAt": "2026-07-29"
+			},
+			"rateLimit": "scripts/lib/pgatour-scraper.js sender UA «Mozilla/5.0 (compatible; SportSync/1.0)» — bør erstattes av en ærlig UA med kontaktadresse i WP-244",
+			"calibrationKey": "pgatour.com",
+			"notes": "Arrangøren selv, og allerede en egen scraper (scripts/lib/pgatour-scraper.js). Riktig mønster: ESPNs golf-endepunkt er sekundært, ikke primært. VERIFISERT 29.07 — og dette RIVER GRUNNEN under dagens scraper: § 7(C) forbyr scrapers uttrykkelig, og § 7(D) forbyr i tillegg bruk av «real time scoring, statistics or other data (whether current or archival)» til «sale, license or other commercial purposes» uten lisens. Personlig, ikke-kommersiell og journalistisk bruk er tillatt — altså er dagens hobbybruk innenfor, mens et betalt produkt (COMMERCIAL.md) ikke er det. scripts/lib/pgatour-scraper.js må enten få lisens eller vike for DP World Tour/ESPN-veien."
+		},
+		{
+			"id": "postnord-danmark-rundt",
+			"name": "PostNord Danmark Rundt",
+			"publisher": "Danmarks Cykle Union",
+			"url": "https://www.postnorddanmarkrundt.dk",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"cycling:danmark-rundt"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"route",
+				"results"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "robots.txt svarte 503 ved gjennomgangen",
+				"evidence": [
+					"https://www.postnorddanmarkrundt.dk/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "postnorddanmarkrundt.dk",
+			"notes": "Rittarrangørens egen side — riktig kilde for etappetider."
+		},
+		{
+			"id": "premier-league",
+			"name": "Premier League",
+			"publisher": "The Football Association Premier League Limited",
+			"url": "https://www.premierleague.com",
+			"role": "primary",
+			"status": "candidate",
+			"authorityFor": [
+				"football:premier-league"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings"
+			],
+			"terms": {
+				"automatedAccess": "restricted",
+				"url": "https://www.premierleague.com/en/terms-and-conditions",
+				"quote": "you may not otherwise reproduce, re-utilise or redistribute it (including … creating a database)",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.premierleague.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`*` sperrer kun spørringsparametre (utm_*, fbclid, …) — kamp- og tabellsider er åpne.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "KANDIDAT, og den mest verdifulle av dem for fotball: ligaen setter selv avsparkstidene som i dag hentes fra ESPN. Merk COMMERCIAL.md: sui generis-databasevernet er svakest nettopp hos den som SKAPER kampprogrammet (Football Dataco, C-604/10). VERIFISERT 29.07: ingen robot-, skrape- eller KI-ordlyd noe sted. Bittet ligger i gjenbruks-/databaseklausulen, som er klassisk sui generis-databaserett-språk og krever skriftlig forhåndsgodkjenning for videreformidling. Merk at det er nettopp DENNE retten Football Dataco (C-604/10) svekker for den som SKAPER kampprogrammet — men klausulen er kontrakt, og kontrakt gjelder uavhengig av opphavsrett. (Bruk `/en/`-stien; varianten uten språkprefiks server et tynnere dokument.)"
+		},
+		{
+			"id": "procyclingstats",
+			"name": "ProCyclingStats",
+			"url": "https://www.procyclingstats.com",
+			"role": "aggregator",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"url": "https://www.procyclingstats.com/info/terms-and-conditions",
+				"quote": "License, sell, rent, lease, assign, distribute … or otherwise commercially exploit the website",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.procyclingstats.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "robots.txt inneholder bare en Googlebot-regel mot /nogooglebot/ — i praksis åpent.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "procyclingstats.com",
+			"notes": "Sykkelsportens grundigste database — og nettopp derfor den med sterkest sui generis-databasevern (investering i innsamling og verifisering). Teknisk åpen, rettslig den typen kilde spor E vil BORT fra som grunnlag. VERIFISERT 29.07 at vilkårene ER LEST og er TAUSE: siden er en Termify-mal («This Terms & Conditions was created with Termify») uten ett eneste treff på skraping, roboter, crawlere, automatisert tilgang, data mining eller KI. Den er heller ikke lenket fra footeren (funnet via /info/sitemap). Fravær av forbud er ikke tillatelse — PCS er et privat nederlandsk selskap med databaserett tilgjengelig uansett hva siden sier. Det finnes et privat, søknadsbasert kommersielt API (https://www.procyclingstats.com/info/api), som er den rene veien om vi trenger dem."
+		},
+		{
+			"id": "racingnews365",
+			"name": "RacingNews365",
+			"url": "https://www.racingnews365.com",
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news",
+				"schedule"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "ikke gjennomgått i denne runden",
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "racingnews365.com",
+			"notes": "F1-medium (3 bruk). formula1.com er primærkilden for samme fakta."
+		},
+		{
+			"id": "sjakkforbundet",
+			"name": "Norges Sjakkforbund",
+			"publisher": "Norges Sjakkforbund",
+			"url": "https://www.sjakk.no",
+			"role": "federation",
+			"status": "candidate",
+			"authorityFor": [
+				"chess:norway"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.sjakk.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "KANDIDAT. Norsk sjakk hentes i dag fra engangs-arrangørsider (sjakknm2026.no, bergensjakk.no) — forbundets terminliste er den varige kilden. Kunne ikke undersøkes: alle forsøk på å hente sjakk.no ga HTTP 403. Det er et teknisk tilgangssignal, ikke en vilkårsbestemmelse, og telles derfor ikke som forbud."
+		},
+		{
+			"id": "skiforbundet",
+			"name": "Norges Skiforbund",
+			"publisher": "Norges Skiforbund",
+			"url": "https://www.skiforbundet.no",
+			"role": "federation",
+			"status": "candidate",
+			"authorityFor": [
+				"cross-country:norway",
+				"alpine:norway",
+				"ski-jumping:norway",
+				"nordic:norway"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "nettstedet har ingen robots.txt (404) — ingen maskinlesbart forbehold er uttrykt",
+				"evidence": [
+					"https://www.skiforbundet.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "Ingen robots.txt finnes (404). Fravær av regler er ikke en tillatelse, men det er heller ingen restriksjon å bryte.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "KANDIDAT. Norske renn (terminlista) — supplerer FIS, som bare dekker internasjonale konkurranser. LETT ETTER VILKÅR OG IKKE FUNNET: verken forside eller undersider har opphavsrettsnotis eller lenke til bruksvilkår (kun en GDPR-personvernerklæring). Ingen robots.txt heller. Ingen uttrykt restriksjon — og ingen uttrykt tillatelse."
+		},
+		{
+			"id": "skiskytterforbundet",
+			"name": "Norges Skiskytterforbund",
+			"publisher": "Norges Skiskytterforbund",
+			"url": "https://www.skiskyting.no",
+			"role": "federation",
+			"status": "candidate",
+			"authorityFor": [
+				"biathlon:norway"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.skiskyting.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "WordPress-standard: kun /wp-admin/ og skjema-eksportstier sperret.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "KANDIDAT. Norske skiskytterrenn; IBU dekker verdenscupen. LETT ETTER VILKÅR OG IKKE FUNNET: kun personvernerklæring (https://skiskyting.no/personvern/), ingen bruksvilkår eller opphavsrettsnotis."
+		},
+		{
+			"id": "sofascore",
+			"name": "Sofascore",
+			"publisher": "Sofascore d.o.o.",
+			"url": "https://www.sofascore.com",
+			"role": "aggregator",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "robots.txt svarer 403 — ingen direktiver kan leses",
+				"evidence": [
+					"https://www.sofascore.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"note": "At robots.txt selv blokkeres er et signal om at automatisert tilgang ikke er ønsket.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "sofascore.com",
+			"notes": "Kommersiell resultattjeneste (2 bruk) — sterkt databasevern, ingen egen autoritet. Bør ikke stå som grunnlag."
+		},
+		{
+			"id": "swiss-open-gstaad",
+			"name": "Swiss Open Gstaad",
+			"url": "https://www.swissopengstaad.ch",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"tennis:swiss-open-gstaad"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt inneholder kun `User-agent: *` med Crawl-delay",
+				"evidence": [
+					"https://www.swissopengstaad.ch/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"rateLimit": "Crawl-delay: 10 (robots.txt)",
+			"calibrationKey": "swissopengstaad.ch",
+			"notes": "Turneringsarrangørens egen side — riktig kilde for banetider."
+		},
+		{
+			"id": "the-guardian",
+			"name": "The Guardian Football",
+			"publisher": "Guardian News & Media Limited",
+			"url": "https://www.theguardian.com",
+			"endpoints": [
+				"https://www.theguardian.com/football/rss"
+			],
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "restricted",
+				"url": "https://www.theguardian.com/robots.txt",
+				"quote": "Any other uses are not permitted, incl. ... large language models (LLMs)",
+				"basis": "robots-txt",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "robots.txt: uttrykkelig forbud mot LLM-, maskinlærings- og kommersiell bruk + Disallow: / for anthropic-ai, ClaudeBot, Claude-User, Claude-SearchBot, CCBot, PerplexityBot m.fl. Lisensvilkår publiseres på https://theguardian.com/license.xml",
+				"evidence": [
+					"https://www.theguardian.com/robots.txt",
+					"https://theguardian.com/license.xml"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "RSS-stien er ikke sperret i `*`-blokken.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "RSS-kilde for internasjonal fotball (entity-modus). Guardian oppgir en kontaktadresse for lisensiering — forbeholdet er altså «betal, ikke forsvinn»."
+		},
+		{
+			"id": "tromso-il",
+			"name": "Tromsø IL",
+			"publisher": "Tromsø Idrettslag",
+			"url": "https://www.til.no",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"football:tromso-il"
+			],
+			"facts": [
+				"schedule",
+				"start-time"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt har Cloudflares Content-Signal-forklaring, men SETTER ingen signaler — teksten sier selv at fravær «verken gir eller begrenser» tillatelse",
+				"evidence": [
+					"https://www.til.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "Ingen direktiver ut over den forklarende blokken.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "til.no",
+			"notes": "Klubbens egen side. NB kontrasten til eliteserien.no, som kjører SAMME Cloudflare-oppsett men faktisk setter `ai-train=no` — boilerplaten alene er ikke et forbehold."
+		},
+		{
+			"id": "tv2",
+			"name": "TV 2",
+			"publisher": "TV 2 AS",
+			"url": "https://www.tv2.no",
+			"endpoints": [
+				"https://www.tv2.no/rss/sport",
+				"https://www.tv2.no/rss/sport/fotball",
+				"https://hjelp.tv2.no",
+				"https://info.tv2.no",
+				"https://play.tv2.no"
+			],
+			"role": "official-broadcaster",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"channel",
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "forbidden",
+				"url": "https://info.tv2.no/info/s/tjenester/bruker/vilkaar",
+				"quote": "Det er ikke tillatt å bruke automatiserte systemer … som utvinner data",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "Vilkårenes pkt. 3.5 «Forbud mot automatisert bruk» navngir spiders, robots og crawlers og nevner trening/utvikling av KI og maskinlæringsindeksering eksplisitt. I tillegg gjentar robots.txt forbudet i egen paragraf og setter Disallow: / for ~28 AI-agenter (anthropic-ai, ClaudeBot, Claude-Web, Claude-Searchbot, GPTBot m.fl.); samme AI-blokk på play.tv2.no.",
+				"evidence": [
+					"https://info.tv2.no/info/s/tjenester/bruker/vilkaar",
+					"https://www.tv2.no/robots.txt",
+					"https://play.tv2.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`*`-blokkens Disallow-liste treffer ikke RSS- eller hjelpesidene. Men prohibisjonsteksten er generell og eksplisitt kommersielt rettet — TV 2 er registerets STRENGESTE norske kilde, og samtidig en vi er avhengig av for kanalfeltet i fotball.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "tv2.no",
+			"notes": "25 bruk (hjelp.tv2.no 11, info.tv2.no 10, tv2.no 4). TV 2 er autoritativ på HVA TV 2 sender — men vilkårene deres gjør automatisert uttrekk til noe som krever avtale. Konsekvensen: kanalfeltet for norsk fotball hviler i dag på tvkampen (aggregator) OG TV 2s hjelpesider. Dette er den mest åpenbare kandidaten for en avtale ved siden av NFF."
+		},
+		{
+			"id": "tvkampen",
+			"name": "TVkampen",
+			"url": "https://www.tvkampen.com",
+			"endpoints": [
+				"https://www.tvkampen.com/fotball/date/",
+				"https://www.tvkampen.com/kamp/"
+			],
+			"role": "aggregator",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"channel",
+				"start-time"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"url": "https://www.tvkampen.com/page/betingelser-og-vilkar",
+				"quote": "Tvkampen.com er eier og lisenshaver av åndsverkene på nettstedet vårt",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.tvkampen.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`*` sperrer /api, /go/ og WordPress-stier — de to stiene scripts/lib/tvkampen-scraper.js faktisk henter (/fotball/date/… og /kamp/…) er IKKE sperret.",
+				"checkedAt": "2026-07-29"
+			},
+			"rateLimit": "Scraperen henter i dag i dag+2 dager per kjøring (scripts/lib/tvkampen-scraper.js), UA «SportSync/2.0»",
+			"calibrationKey": "tvkampen.com",
+			"notes": "Norsk TV-guide som i dag er GROUND TRUTH for fotballkanal i pipelinen. Rettslig den klassiske aggregatorposisjonen: de har investert i å samle og verifisere, altså nettopp det sui generis-vernet fester seg til. Robots tillater oss teknisk; vilkår er ikke funnet. Sammen med ESPN er dette den kilden COMMERCIAL.md § 9 spør om vi kommer oss av. Vilkårene er LEST og er helt tause om automatisert tilgang — de hevder kun eierskap til åndsverkene. Verken forbud eller tillatelse; `unknown` er den ærlige konklusjonen."
+		},
+		{
+			"id": "twitch",
+			"name": "Twitch",
+			"publisher": "Twitch Interactive, Inc. (Amazon)",
+			"url": "https://twitch.tv",
+			"role": "official-broadcaster",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"channel"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.twitch.tv/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "Kanalsider er ikke sperret (i motsetning til /embed/, /chat/, /popout/).",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "Visningsplattform for CS2 i scripts/config/sports-config.js. Vi lenker dit; vi henter ikke data derfra."
+		},
+		{
+			"id": "uci",
+			"name": "UCI – Union Cycliste Internationale",
+			"publisher": "Union Cycliste Internationale",
+			"url": "https://www.uci.org",
+			"role": "federation",
+			"status": "candidate",
+			"authorityFor": [
+				"cycling"
+			],
+			"facts": [
+				"schedule",
+				"results",
+				"standings"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.uci.org/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "robots.txt er `User-agent: * / Allow: /` — helt åpen.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "KANDIDAT. UCI sanksjonerer WorldTour-kalenderen; arrangøren (A.S.O., RCS, Unipublic) setter etappetidene. Sykkel er den sporten med flest bruk av lavtillits-aggregatorer i dag, så autoritetskartet UCI + arrangør er den største enkeltgevinsten i WP-241."
+		},
+		{
+			"id": "uefa",
+			"name": "UEFA",
+			"publisher": "Union of European Football Associations",
+			"url": "https://www.uefa.com",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"football:champions-league",
+				"football:europa-league",
+				"football:conference-league",
+				"football:euro"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings"
+			],
+			"terms": {
+				"automatedAccess": "forbidden",
+				"url": "https://www.uefa.com/termsconditions/",
+				"quote": "prohibited from using automated tools, such as robots, spiders, or scripts, to scrape or collect Content",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "Vilkårenes § 6.2 er registerets mest eksplisitte: samme setning forbyr både automatisert innsamling og å bruke innholdet til «to develop or train any software, model, algorithm, or AI tool», samt systematisk innsamling «to create a collection, database, or directory». Robots.txt uttrykker derimot ingenting — og publiserer til og med et kamp-sitemap.",
+				"evidence": [
+					"https://www.uefa.com/termsconditions/"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "Kampsider er åpne; UEFA publiserer til og med et eget kamp-sitemap (/sitemap/matches/index.xml).",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "uefa.com",
+			"notes": "Arrangør av egne turneringer — autoritativ på avsparkstid i europacupene. 7 bruk. Merk: robots publiserer et kamp-sitemap, altså en invitasjon til å lese kampdataene. VERIFISERT 29.07 (vilkårene 503-er for vanlige klienter og måtte leses i nettleser; sveitsisk rett, sist oppdatert 18.03.2025). LÆREPENGEN FRA DENNE OPPFØRINGEN: robots.txt inviterer (åpent kamp-sitemap) mens vilkårene forbyr uttrykkelig, inkludert KI-trening. Robots er ikke avtalen. 7 bruk i dagens evidens."
+		},
+		{
+			"id": "uno-x-mobility",
+			"name": "Uno-X Mobility",
+			"publisher": "Uno-X Mobility Pro Cycling",
+			"url": "https://www.unoxteam.com",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"cycling:uno-x-mobility"
+			],
+			"facts": [
+				"entry-list",
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "Squarespace-standard robots.txt: AI-agentene er GRUPPERT SAMMEN MED `*` og får samme regler — de er altså ikke sperret, tross en lang UA-liste som ved rask lesning ser ut som en blokk",
+				"evidence": [
+					"https://www.unoxteam.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "unoxteam.com",
+			"notes": "Lagets egen side — autoritativ på egen lagoppstilling, ikke på rittets tider."
+		},
+		{
+			"id": "vg",
+			"name": "VG",
+			"publisher": "Schibsted Media",
+			"url": "https://www.vg.no",
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "forbidden",
+				"url": "https://www.vg.no/informasjon/brukervilkar",
+				"quote": "Du skal ikke bruke automatiserte metoder som spiders, roboter eller crawling",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "Brukervilkårenes pkt. 7.1 forbyr automatiserte metoder, og footeren sier uttrykkelig at «crawling, skraping, indeksering (for eksempel tekst og datamining) er ikke tillatt uten avtale». I tillegg robots.txt: «We explicitly disallow text and data mining» + Disallow: / for ~35 AI-agenter (anthropic-ai, ClaudeBot, Claude-Web, Claude-SearchBot, CCBot, Scrapy m.fl.).",
+				"evidence": [
+					"https://www.vg.no/informasjon/brukervilkar",
+					"https://www.vg.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`*` er `Allow: /` med enkelte stier sperret. VGs RSS ble droppet fra feed-listen av redaksjonelle grunner (se scripts/fetch-rss.js), men VG brukes fortsatt som verifikasjonskilde.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "vg.no",
+			"notes": "7 bruk som verifikasjonskilde."
+		},
+		{
+			"id": "viaplay",
+			"name": "Viaplay",
+			"publisher": "Viaplay Group",
+			"url": "https://viaplay.no",
+			"role": "official-broadcaster",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"channel"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"url": "https://viaplay.no/no-nb/terms",
+				"quote": "kun for personlig og privat bruk",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://viaplay.no/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "Kun /search og /latest-movies sperret.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "viaplay.no",
+			"notes": "Norsk rettighetshaver (bl.a. F1, golf — se scripts/fetch/golf.js og .claude/skills/norwegian-rights). Den ene kalibreringssjekken mot viaplay.no var UENIG med tavla — kanalfeltet er der produktet er svakest (WP-246). Vilkårene er LEST og er tause om roboter/skraping — de gir bare en ikke-eksklusiv lisens til personlig og privat bruk. Det er verken en tillatelse eller et forbud, og står som `unknown` med vilje."
+		},
+		{
+			"id": "wikipedia",
+			"name": "Wikipedia",
+			"publisher": "Wikimedia Foundation",
+			"url": "https://en.wikipedia.org",
+			"endpoints": [
+				"https://en.wikipedia.org/wiki/",
+				"https://no.wikipedia.org/wiki/"
+			],
+			"role": "encyclopedic",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"schedule",
+				"route",
+				"results"
+			],
+			"terms": {
+				"automatedAccess": "restricted",
+				"url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+				"quote": "automated uses of the Project Websites that are abusive or disruptive of the services",
+				"basis": "terms-page",
+				"attributionRequired": true,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter og uttrykker intet TDM-forbehold",
+				"evidence": [
+					"https://en.wikipedia.org/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "Artikkelstier (/wiki/) er åpne for `*`; /w/ og /api/ er sperret. Vi leser artikler, ikke API-et.",
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "en.wikipedia.org",
+			"notes": "NEST MEST SITERTE KILDE I HELE SYSTEMET (44 bruk) og reliability 1,0 over 6 sjekker — den er nøyaktig, men den er et REFERAT av arrangørens plan, ikke planen. COMMERCIAL.md peker på at Wikipedia var eneste verificationSource på en Tour de France-etappe. Innholdet er lisensiert med krav om kreditering; det nøyaktige lisensnavnet må bekreftes og føres inn her. VERIFISERT 29.07: teksten er lisensiert CC BY-SA 4.0 (dobbeltlisensiert med GFDL) — ATTRIBUSJON OG DEL-PÅ-SAMME-VILKÅR er påkrevd, og det er den ene forpliktelsen registeret faktisk pålegger oss i dag. Ingen TDM-forbehold: den åpne lisensen er hele historien. Vilkårene inkorporerer Wikimedias User-Agent-policy ved referanse, og fetcheren vår tilfredsstiller den ikke i dag (WP-244).",
+			"rateLimit": "Ingen tallfestet grense i vilkårene eller UA-policyen. Krav: identifiserende User-Agent med kontaktinfo på formen `<klient>/<versjon> (<kontakt>) <bibliotek>/<versjon>` — generiske agenter («curl», «Python-urllib») er ikke tillatt."
+		},
+		{
+			"id": "world-of-speed",
+			"name": "worldofspeed.org",
+			"url": "https://worldofspeed.org",
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"news"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt inneholder en AI-agentblokk (GPTBot, ClaudeBot, anthropic-ai, CCBot m.fl.) som er KOMMENTERT UT med `#` og derfor ikke har noen virkning",
+				"evidence": [
+					"https://worldofspeed.org/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"checkedAt": "2026-07-29"
+			},
+			"calibrationKey": "worldofspeed.org",
+			"notes": "SITERT 3 GANGER FOR F1 UTEN AT UTGIVEREN ER IDENTIFISERT. Oppført her nettopp fordi den er uidentifisert — det er selve funnet: en ukjent side står som evidens for et faktum formula1.com eier. Bør falle ut når WP-242 krever primær basis for tid."
+		},
+		{
+			"id": "wta",
+			"name": "WTA Tour",
+			"publisher": "Women's Tennis Association",
+			"url": "https://www.wtatennis.com",
+			"role": "primary",
+			"status": "candidate",
+			"authorityFor": [
+				"tennis:wta-tour"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-07-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"evidence": [
+					"https://www.wtatennis.com/robots.txt"
+				],
+				"checkedAt": "2026-07-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`User-agent: * / Disallow:` — alt tillatt. Merk kontrasten til atptour.com, som har satt `ai-train=no`.",
+				"checkedAt": "2026-07-29"
+			},
+			"notes": "KANDIDAT. Motstykket til atp-tour på damesiden; dagens tennisdekning går via ESPN."
+		}
+	]
+}
