@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T01:54:06.431Z",
+  "generatedAt": "2026-07-29T05:45:07.780Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -25,7 +25,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 0.76,
+    "oldestGapAgeDays": 0.92,
     "escalatable": 0,
     "catalogMatched": 2,
     "auditedAt": "2026-07-28T07:40:00Z",
@@ -33,14 +33,14 @@
       {
         "interest": "Eliteserien (tier1 wholesale-turnering + sporet liga) — runde 16 og resten av august-rundene",
         "severity": "high",
-        "ageDays": 0.76,
+        "ageDays": 0.92,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Golf (tier1 wholesale) — PGA Tour Rocket Classic",
         "severity": "medium",
-        "ageDays": 0.76,
+        "ageDays": 0.92,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -51,18 +51,11 @@
     "nearTermChecked": 3,
     "nearTermAmended": 0,
     "verifyRunAt": "2026-07-28T08:00:54Z",
-    "windowRate": 0.1,
-    "windowChecks": 69,
-    "windowAmendments": 7,
+    "windowRate": 0.08,
+    "windowChecks": 66,
+    "windowAmendments": 5,
     "windowCorrections": 3,
     "byDay": [
-      {
-        "date": "2026-07-15",
-        "checks": 3,
-        "amendments": 2,
-        "corrections": 0,
-        "rate": 0.67
-      },
       {
         "date": "2026-07-16",
         "checks": 5,
@@ -144,26 +137,26 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-07-29T01:54:03.623Z",
+    "buildCheckedAt": "2026-07-29T05:45:05.272Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-07-28T23:54:28.863Z",
-    "manifestAgeHours": 1.99,
+    "manifestGeneratedAt": "2026-07-29T01:54:07.947Z",
+    "manifestAgeHours": 3.85,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-07-26T15:02:01.492Z",
-        "ageHours": 58.87
+        "ageHours": 62.72
       },
       {
         "file": "football.json",
         "sourceLastUpdated": "2026-07-19T17:56:30.377Z",
-        "ageHours": 223.96
+        "ageHours": 227.81
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-07-28T08:00:54Z",
-    "verifyAgeHours": 17.89,
+    "verifyAgeHours": 21.74,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
