@@ -1,17 +1,16 @@
 {
-	"runAt": "2026-07-28T09:22:00Z",
-	"action": "opened-pr",
-	"pr": "https://github.com/CHaerem/sportivista/pull/418",
-	"diagnosed": "tests/starter-packs.test.js (WP-162) red on CI + local: the shipped starter-pack id `tour-de-france` was no longer a LIVE entity in docs/data/entities.json. Root cause in build-entities.js dedup — word-boundary containsName false-merged the men's 'Tour de France' (catalog tier2) into the women's 'Tour de France Femmes' (tracked), folding two distinct competitions into one entity. The men's entity survived only while tracked.json booked the race; once the finished 2026 race was removed (Jul 27, race ended Jul 26) the catalog fallback was absorbed as an alias and the durable id vanished (traced: present at commit 0ad792815 15:06Z, gone by 92e46ee4b 15:40Z).",
-	"fixed": [
-		"scripts/build-entities.js: added isDistinctByQualifier guard in termsOverlap — a men's/women's or senior/junior sibling pair (name differs only by trailing gender/age qualifier tokens: femmes/women/dames/U23/junior/…) is never folded into one entity. Can only prevent a merge, never create one.",
-		"tests/build-entities.test.js: new regression test asserting Tour de France vs. Tour de France Femmes stay separate.",
-		"docs/data/entities.json: regenerated — tour-de-france restored as its own entity (and natus-vincere-junior correctly separated from NAVI); +2 entities, 0 removed."
-	],
-	"autoMergeEligible": true,
+	"runAt": "2026-07-29T09:30:00Z",
+	"action": "abandoned",
+	"pr": null,
+	"diagnosed": "REAL, recurring breakage — every ESCALATION of the research agent fails. Pattern is clean-cut: all `schedule`-triggered research runs succeed; all `workflow_dispatch`-triggered runs fail (e.g. run 30335112817 2026-07-28T06:31, run 30308235522 2026-07-27T21:46). The failure is `##[error]Action failed with error: Workflow initiated by non-human actor: github-actions (type: Bot). Add bot to allowed_bots list or use '*' to allow all bots.` Root cause: scout / coverage-critic escalate research via `scripts/escalate-research.js` -> `gh workflow run research-agent.yml` using the job's GITHUB_TOKEN (they deliberately use the default token because it carries actions:write, unlike the agent's OIDC app token — see scout-agent.yml comment / WP-91). A GITHUB_TOKEN dispatch runs with actor `github-actions[bot]`, and `anthropics/claude-code-action@v1` blocks bot actors unless allow-listed. research-agent.yml sets no `allowed_bots` on any of its three claude-code-action steps, so 100% of escalations die on arrival — the scout/coverage-critic -> research escalation loop (a core coverage feature) is entirely non-functional.",
+	"fixed": [],
+	"autoMergeEligible": false,
 	"notes": [
-		"Proof: previously-failing starter-packs test now green; node scripts/validate-events.js clean (0 errors, only pre-existing non-fatal chess timezone + streaming warnings); full suite green (1207 passing, incl. the new regression test).",
-		"Blast radius verified: only two entities newly split (tour-de-france, natus-vincere-junior) — both correct de-merges; zero entities removed.",
-		"No protected paths touched — eligible for auto-merge once CI passes. Not merged (branch + PR only per contract)."
+		"FIX IS HUMAN-REQUIRED (protected path). The correct, minimal root-cause fix is to add `allowed_bots: github-actions` to the `with:` block of each `anthropics/claude-code-action@v1` step in .github/workflows/research-agent.yml (the standard-tier step ~line 79, the deep Fable-5 step ~line 102, and the deep Opus-fallback step ~line 130). Scope to `github-actions`, NOT '*': only this repo's own workflows can dispatch research (workflow_dispatch requires repo write), and the action's own docs warn '*' lets external Apps invoke it on a public repo.",
+		"Value verified against the action source: claude-code-action lowercases the actor and strips the `[bot]` suffix before comparing (actor.toLowerCase().replace to drop a trailing [bot]), so `allowed_bots: github-actions` correctly matches the `github-actions[bot]` dispatch actor. The action README example confirms `allowed_bots: github-actions`.",
+		"I could not author this fix: .github/workflows/** is a protected automation path and the CI-only protect-automation hook (scripts/hooks/protect-automation.js) BLOCKS any unattended agent from writing it — 'a protected-path change must be authored by a human, not any unattended agent.' The hook fired on the Edit attempt; the branch was left clean and no PR was opened. This supersedes self-repair.md's older 'still make it, it'll wait for review' prose.",
+		"No non-protected alternative fix exists: the escalation is inherently bot-triggered (any GITHUB_TOKEN dispatch -> github-actions[bot]); the only other route (a human-actor PAT with actions:write, as escalate-research.js's own failure-issue text suggests) needs a new secret AND still edits the protected scout/coverage-critic escalate steps. The workflow allowed_bots line is the smallest correct fix.",
+		"Not the governor's job: usage-state.json is green (session 40%, week 12%, skipAll/skipNiceToHave false) — these are not quota skips, they are hard rejections of every escalation.",
+		"Everything else is healthy: `npm test` 1207 passing, `node scripts/validate-events.js` clean (0 errors; only pre-existing non-fatal chess-timezone + one streaming-missing warning), entities.json fresh-rebuild byte-identical. The 2026-07-28 03:48 CI `starter-packs` failure was already fixed by self-repair PR #418 (commit f408fba80, durable tour-de-france qualifier guard) and CI on main has been green since."
 	]
 }
