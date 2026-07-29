@@ -149,48 +149,117 @@ window.ssICloud = (function () {
 		}
 	}
 
-	/** Whole-web-behind-login gate: the page shows NOTHING until the user signs in
-	 *  with Apple. Reveals the board (after a first iCloud sync) on auth; re-shows
-	 *  the gate on sign-out. Never leaves a blank page — a missing token / failed
-	 *  CloudKit JS load shows a calm error in the gate, not emptiness.
-	 *  Elements (in index.html): #auth-gate (overlay), #apple-sign-in-button (CloudKit
-	 *  populates it), #auth-error (message), and body.gated (CSS hides the content). */
+	// --- funksjonsgate (WP-201) ----------------------------------------------
+	//
+	// The board is OPEN. It is catalog-wide and user-neutral (WP-131), every byte
+	// of it is already public in docs/data/, and an EMPTY profile renders exactly
+	// that board — so a login wall in front of it protected nothing while costing
+	// the preview, the shared link and all SEO. Sign-in now guards only what is
+	// genuinely PERSONAL: syncing your profile with the iPhone app via your own
+	// iCloud. The overlay below is therefore a dialog you can open and close, not
+	// a wall: `hidden` in the markup, shown by requireAuth() or the quiet
+	// «Logg inn» footer entry.
+
+	const byId = (id) => (typeof document !== 'undefined' && document.getElementById ? document.getElementById(id) : null);
+	let signedIn = false;
+	// The last sign-in failure. Kept QUIET on the open board — an error nobody
+	// asked for is noise — and shown inside the overlay if the user tries to sign in.
+	let authError = '';
+	let dismissWired = false;
+	// Whatever had focus when the dialog opened, so closing it hands focus back
+	// (a keyboard user must not be dropped at the top of the board).
+	let lastFocus = null;
+
+	/** A calm retry control shown ONLY on an auth error, so a failed sign-in isn't
+	 *  a dead end. index.html ships it as static markup; pages that inject their
+	 *  own overlay (gate-boot.js) get it created on demand. */
+	function retryControl(create) {
+		let r = byId('auth-retry');
+		if (r || !create) return r;
+		const g = byId('auth-gate');
+		if (!g) return null;
+		r = document.createElement('button');
+		r.id = 'auth-retry';
+		r.type = 'button';
+		r.className = 'auth-retry';
+		r.textContent = 'Last inn på nytt';
+		(g.querySelector('.auth-gate-inner') || g).appendChild(r);
+		return r;
+	}
+
+	function wireDismiss() {
+		if (dismissWired) return;
+		dismissWired = true;
+		const d = byId('auth-dismiss');
+		if (d) d.addEventListener('click', overlayClose);
+		if (typeof document !== 'undefined' && document.addEventListener) {
+			document.addEventListener('keydown', (e) => { if (e && e.key === 'Escape') overlayClose(); });
+		}
+	}
+
+	/** Open the sign-in dialog. `reason` is one honest line about what the user
+	 *  just asked for (optional — the footer entry passes none). */
+	function overlayOpen(reason) {
+		const g = byId('auth-gate');
+		if (!g) return;
+		const r = byId('auth-reason');
+		if (r) { r.textContent = reason || ''; r.hidden = !reason; }
+		const e = byId('auth-error');
+		if (e) { e.textContent = authError; e.hidden = !authError; }
+		const retry = retryControl(!!authError);
+		if (retry) { retry.onclick = () => window.location.reload(); retry.hidden = !authError; }
+		lastFocus = (typeof document !== 'undefined' && document.activeElement) || null;
+		g.hidden = false;
+		if (typeof g.focus === 'function') { g.setAttribute('tabindex', '-1'); g.focus(); }
+		wireDismiss();
+	}
+
+	function overlayClose() {
+		const g = byId('auth-gate');
+		if (g) g.hidden = true;
+		if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+		lastFocus = null;
+	}
+
+	/** The hook for anything PERSONAL: returns true when the user is already
+	 *  signed in, otherwise opens the sign-in dialog and returns false. Callers
+	 *  should treat false as "not now" — never as an error. */
+	function requireAuth(reason) {
+		if (signedIn) return true;
+		overlayOpen(reason);
+		return false;
+	}
+
+	function isSignedIn() { return signedIn; }
+
+	/** Wire the funksjonsgate on a page: restore an existing session silently
+	 *  (sync → onAuthed), offer the quiet «Logg inn» entry when signed out, and
+	 *  swap it for «Logg ut» when signed in. NEVER hides content.
+	 *  Elements (index.html): #auth-gate (overlay, `hidden` in the markup),
+	 *  #apple-sign-in-button (CloudKit populates it), #auth-reason, #auth-error,
+	 *  #auth-dismiss, #signin-link, #signout-link. Every one is optional — a page
+	 *  without them still syncs, it just shows no account chrome. */
 	function gate(opts) {
+		// Called once a sign-in has produced a synced profile, so the caller can
+		// re-render the board as the user's own.
 		const onAuthed = (opts && opts.onAuthed) || (() => {});
 		// Called after a FOREGROUND re-sync with the sync result, so the caller can
 		// re-render the board when returning to the tab picks up a phone change.
 		const onResync = (opts && opts.onResync) || (() => {});
-		const gateEl = () => document.getElementById('auth-gate');
-		const errEl = () => document.getElementById('auth-error');
-		// A calm retry control revealed ONLY on an auth error so a failed sign-in
-		// isn't a dead end (the error copy tells the user to reload but the gate
-		// otherwise has no button once CloudKit's own control fails to render).
-		// index.html ships it as static markup; on pages that don't (gate-boot's
-		// injected overlay) it's created on demand.
-		const retryEl = () => document.getElementById('auth-retry');
-		const hideRetry = () => { const r = retryEl(); if (r) r.hidden = true; };
-		const showRetry = () => {
-			const g = gateEl(); if (!g) return;
-			let r = retryEl();
-			if (!r) {
-				r = document.createElement('button');
-				r.id = 'auth-retry';
-				r.type = 'button';
-				r.className = 'auth-retry';
-				r.textContent = 'Last inn på nytt';
-				(g.querySelector('.auth-gate-inner') || g).appendChild(r);
-			}
-			r.onclick = () => window.location.reload();
-			r.hidden = false;
+		const signInLink = () => byId('signin-link');
+		const signOutLink = () => byId('signout-link');
+		let signInWired = false;
+		const showSignIn = () => {
+			const link = signInLink();
+			if (!link) return;
+			link.hidden = false;
+			if (signInWired) return;
+			signInWired = true;
+			link.addEventListener('click', () => overlayOpen());
 		};
-		// Reveal AT MOST ONCE per auth (setUpAuth AND whenUserSignsIn can both fire on
-		// a fresh sign-in — without this they'd each run a sync and race a 409).
-		// Reset on sign-out so a re-sign-in reveals again.
-		let revealed = false;
-		const signOutLink = () => document.getElementById('signout-link');
+		const hideSignIn = () => { const l = signInLink(); if (l) l.hidden = true; };
 		// Drive our own calm «Logg ut» footer link by forwarding its click to
-		// CloudKit's hidden sign-out control. Shown only when signed in (reveal),
-		// hidden again when the gate re-shows. No-op on pages without the link.
+		// CloudKit's hidden sign-out control. Shown only when signed in.
 		let signOutWired = false;
 		const wireSignOut = () => {
 			const link = signOutLink();
@@ -203,30 +272,56 @@ window.ssICloud = (function () {
 				if (el && typeof el.click === 'function') el.click();
 			});
 		};
-		const showGate = () => { revealed = false; const g = gateEl(); if (g) g.hidden = false; if (document.body) document.body.classList.add('gated'); const l = signOutLink(); if (l) l.hidden = true; hideRetry(); };
-		const showError = (m) => { showGate(); const e = errEl(); if (e) { e.textContent = m; e.hidden = false; } showRetry(); };
-		const reveal = async () => {
-			if (revealed) return;
-			revealed = true;
-			const e = errEl(); if (e) e.hidden = true;
-			hideRetry();
-			try { await sync(); } catch { /* offline-first: reveal on the local profile anyway */ }
-			onAuthed();
-			if (document.body) document.body.classList.remove('gated');
-			const g = gateEl(); if (g) g.hidden = true;
+
+		// Handle auth AT MOST ONCE per session (setUpAuth AND whenUserSignsIn can
+		// both fire on a fresh sign-in — without this they'd each run a sync and
+		// race a 409). Reset on sign-out.
+		// CloudKit's whenUserSignsIn/Out promises resolve ONCE, so each handler
+		// re-registers the opposite listener — otherwise sign out → sign in again
+		// went unnoticed until a page reload.
+		// Each listener re-arms only once the previous one has actually resolved, so
+		// a sign-out never leaves two pending sign-in listeners behind.
+		let handled = false, signInListening = false, signOutListening = false;
+		const listenSignIn = () => {
+			if (signInListening) return;
+			signInListening = true;
+			container.whenUserSignsIn().then(() => { signInListening = false; becameAuthed(); }).catch(() => { signInListening = false; });
+		};
+		const listenSignOut = () => {
+			if (signOutListening) return;
+			signOutListening = true;
+			container.whenUserSignsOut().then(() => { signOutListening = false; becameSignedOut(); }).catch(() => { signOutListening = false; });
+		};
+		const becameAuthed = async () => {
+			if (handled) return;
+			handled = true;
+			signedIn = true;
+			authError = '';
+			overlayClose();
+			hideSignIn();
 			wireSignOut();
+			listenSignOut();
+			try { await sync(); } catch { /* offline-first: keep the local profile */ }
+			onAuthed();
 			wireForegroundResync();
+		};
+		const becameSignedOut = () => {
+			handled = false;
+			signedIn = false;
+			const l = signOutLink(); if (l) l.hidden = true;
+			showSignIn();
+			listenSignIn();
 		};
 
 		// Re-sync when the tab returns to the foreground, so a change made on the
 		// phone shows up without a manual refresh. Throttled (min 8s between rounds)
-		// and skipped while gated/offline; sync() is itself re-entrant-safe.
+		// and skipped while signed out/offline; sync() is itself re-entrant-safe.
 		let lastResync = 0, foregroundWired = false;
 		function wireForegroundResync() {
 			if (foregroundWired) return;
 			foregroundWired = true;
 			const maybe = async () => {
-				if (!revealed || document.hidden) return;
+				if (!signedIn || document.hidden) return;
 				const now = (typeof performance !== 'undefined' ? performance.now() : Date.now());
 				if (now - lastResync < 8000) return;
 				lastResync = now;
@@ -236,22 +331,29 @@ window.ssICloud = (function () {
 			document.addEventListener('visibilitychange', maybe);
 			if (typeof window !== 'undefined') window.addEventListener('focus', maybe);
 		}
-		if (typeof CloudKit === 'undefined') { showError('Kunne ikke laste iCloud-innlogging. Sjekk nettforbindelsen og last siden på nytt.'); return; }
-		if (!cfg.apiToken) { showError('iCloud-innlogging er ikke konfigurert.'); return; }
-		if (!configure()) { showError('iCloud-innlogging er utilgjengelig akkurat nå.'); return; }
-		showGate();
+
+		// No token → sync isn't configured at all (local dev / stripped build), so
+		// there is nothing personal to offer. Stay silent rather than show a control
+		// that can't work.
+		if (!cfg.apiToken) { hideSignIn(); return; }
+		// Token, but Apple's library never arrived: keep the entry — tapping it
+		// explains why and offers a reload — and say nothing on the open board.
+		showSignIn();
+		if (typeof CloudKit === 'undefined') { authError = 'Kunne ikke laste Apple-innlogging. Sjekk nettforbindelsen og last siden på nytt.'; return; }
+		if (!configure()) { authError = 'Apple-innlogging er utilgjengelig akkurat nå.'; return; }
 		// CloudKit renders Apple's own sign-in button into #apple-sign-in-button and
 		// we show it directly (see base.css) — the user taps Apple's real control, so
 		// there is no click-forwarding and no double-tap. configure() above has already
 		// kicked off CloudKit, which populates the button shortly.
-		container.setUpAuth().then((userIdentity) => { if (userIdentity) reveal(); }).catch((err) => {
+		container.setUpAuth().then((userIdentity) => { if (userIdentity) becameAuthed(); }).catch((err) => {
 			try { console.error('[Sportivista] CloudKit setUpAuth failed:', err && (err.ckErrorCode || err.reason || err.message) || err, err); } catch (e) {}
 			const code = (err && (err.ckErrorCode || err.reason)) || '';
-			showError('Kunne ikke starte Apple-innlogging' + (code ? ' (' + code + ')' : '') + '. Last siden på nytt, eller åpne DevTools → Console for detaljer.');
+			authError = 'Kunne ikke starte Apple-innlogging' + (code ? ' (' + code + ')' : '') + '. Last siden på nytt, eller åpne DevTools → Console for detaljer.';
 		});
-		container.whenUserSignsIn().then(reveal).catch(() => {});
-		container.whenUserSignsOut().then(showGate).catch(() => {});
+		// Only the sign-IN listener is registered up front — a signed-out user has
+		// nothing to sign out of; becameAuthed() registers the sign-out one.
+		listenSignIn();
 	}
 
-	return { enabled, init, gate, sync, mergeSnapshots, recordPayload, snapshotRecord, webRecordName };
+	return { enabled, init, gate, requireAuth, isSignedIn, overlayOpen, overlayClose, sync, mergeSnapshots, recordPayload, snapshotRecord, webRecordName };
 })();

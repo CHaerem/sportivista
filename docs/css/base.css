@@ -113,14 +113,13 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 ::selection { background: var(--accent); color: var(--accent-ink); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
-/* Whole-web-behind-login gate (eier-beslutning 21.07): body.gated hides all the
-   content and shows the Sign in with Apple overlay. Calm, one amber accent, no
-   spinner (DESIGN.md). The gate toggles via the #auth-gate `hidden` attribute. */
-body.gated .masthead,
-body.gated main,
-body.gated .site-footer { display: none !important; }
-.auth-gate { display: none; }
-body.gated .auth-gate {
+/* Funksjonsgate (WP-201): the board is open — sign-in is a DIALOG for the
+   personal half (syncing your profile with the iPhone app), not a wall. It ships
+   `hidden` in the markup and is opened by ssICloud.requireAuth() / «Logg inn»;
+   `[hidden]` above keeps it out of the page until then. Calm, one amber accent,
+   no spinner (DESIGN.md). (Until WP-201 this was `body.gated`, which hid the
+   masthead, main and footer — that rule is gone, along with the class.) */
+.auth-gate {
 	display: flex; position: fixed; inset: 0; z-index: 100;
 	align-items: center; justify-content: center; padding: 24px; background: var(--bg);
 }
@@ -138,6 +137,9 @@ body.gated .auth-gate {
    surfaces (wordmark, time column, share cards — DESIGN.md § Display-font). */
 .auth-gate-tagline { color: var(--fg); font-size: 17px; line-height: 1.35; margin: 0; }
 .auth-gate-lead { color: var(--fg-2); font-size: 15px; line-height: 1.55; margin: 0; }
+/* WP-201: the one line naming what the user just asked for («Logg inn for å …»),
+   set in --fg so the reason reads before the standing explanation below it. */
+.auth-gate-reason { color: var(--fg); font-size: 15px; line-height: 1.5; margin: 0; max-width: 32ch; }
 /* CloudKit renders Apple's own Sign in with Apple control into #apple-sign-in-button.
    We show it AS-IS (Apple-sanctioned styling) rather than skinning our own Apple-
    branded button over it: that keeps us clear of the click-forwarding race that
@@ -156,3 +158,11 @@ body.gated .auth-gate {
 	border-radius: 10px; padding: 10px 20px; min-height: 44px; cursor: pointer;
 }
 .auth-retry:hover { border-color: var(--accent); color: var(--accent); }
+/* WP-201: the way OUT of the dialog. Flat dempet text like the agenda's .ev-act —
+   never a pill, never a second amber surface (DESIGN § Forbudsliste); the Apple
+   control is the one thing in here that should draw the eye. */
+.auth-dismiss {
+	font: inherit; font-size: 13px; color: var(--fg-3);
+	background: none; border: none; padding: 8px 4px; min-height: 44px; cursor: pointer;
+}
+.auth-dismiss:hover { color: var(--accent); }

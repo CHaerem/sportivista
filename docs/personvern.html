@@ -60,11 +60,12 @@
 		.pv-note { color: var(--fg-3); font-size: 0.85rem; line-height: 1.55; }
 	</style>
 </head>
-<!-- NB: denne siden står BEVISST UTENFOR innloggings-gaten (ingen `body.gated`,
-     ingen gate-boot.js). En personvernerklæring må være offentlig lesbar — både
-     for App Store-gjennomgangen og for den som vurderer å ta appen i bruk. Den
-     laster derfor heller ingen CloudKit-JS: siden gjør null nettverkskall utover
-     å hente sine egne CSS-filer fra samme opphav. -->
+<!-- NB: denne siden laster BEVISST ingen CloudKit-JS (ingen gate-boot.js). En
+     personvernerklæring må være offentlig lesbar — både for App Store-
+     gjennomgangen og for den som vurderer å ta appen i bruk — og den gjør null
+     nettverkskall utover å hente sine egne CSS-filer fra samme opphav. Etter
+     WP-201 er resten av weben også åpen; denne siden er i tillegg helt uten
+     CloudKit. -->
 <body>
 	<header class="masthead">
 		<div class="wrap masthead-inner">
@@ -145,6 +146,10 @@
 
 		<section class="pv-section">
 			<h2>Innlogging med Apple</h2>
+			<p>
+				Innlogging er <strong>valgfritt</strong>. Oversikten er åpen uten — du logger
+				inn når du vil at det du følger skal synke med iPhone-appen.
+			</p>
 			<p>
 				Nettsiden bruker <strong>Logg inn med Apple</strong> via Apples CloudKit JS.
 				Innloggingen skjer hos Apple; vi ser hverken passordet ditt, Apple-ID-en din
