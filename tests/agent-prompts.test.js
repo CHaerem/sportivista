@@ -55,6 +55,26 @@ describe("agent prompts", () => {
 		}
 	});
 
+	it("WP-241/242: autoritet-først og proveniens per faktum er promptede kontrakter", () => {
+		const research = read("research.md");
+		const verify = read("verify.md");
+		// Research slår opp autoritetskartet og går til skaperen av faktumet først.
+		expect(research).toContain("authority.json");
+		expect(research).toContain("sources.json");
+		expect(research).toContain('"provenance"');
+		expect(research).toContain('"basis"');
+		// Verify sjekker kanalen mot kringkasterens EGEN kilde og stempler proveniens.
+		expect(verify).toContain("authority.json");
+		expect(verify).toContain("provenance.streaming");
+		expect(verify).toContain("provenance.time");
+		// Lookalike-advarselen står i BEGGE, med opphavseksempelet navngitt —
+		// registeret er sannheten om hvilket domene som ER arrangøren.
+		for (const [name, p] of [["research.md", research], ["verify.md", verify]]) {
+			expect(p.toLowerCase(), `${name} mangler lookalike-advarselen`).toContain("lookalike");
+			expect(p, `${name} bør navngi franceletour-eksempelet`).toContain("franceletour.com");
+		}
+	});
+
 	it("scout prompt exists with escalation cap and log contract", () => {
 		const p = read("scout.md");
 		expect(p).toContain("scout-log.json");

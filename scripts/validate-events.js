@@ -24,7 +24,8 @@ export function loadEventSchema() {
  * degraded instead of freezing the whole hourly pipeline (see build-events.js
  * for the retain-previous-good-data + build-alert.json behaviour).
  *
- * Returns { errors, streamingMissing, streamingLandingOnly, enrichedCount, messages } — `errors` is
+ * Returns { errors, streamingMissing, streamingLandingOnly, timeBasisWeak,
+ * channelBasisWeak, enrichedCount, messages } — `errors` is
  * the hard-error count (a caller treats > 0 as "do not publish this array");
  * `messages` are the human-readable warn/violation lines, in the same wording
  * this script has always printed.
@@ -34,6 +35,8 @@ export function validateEvents(events, eventSchema, { now = Date.now() } = {}) {
 	let errors = 0;
 	let streamingMissing = 0;
 	let streamingLandingOnly = 0;
+	let timeBasisWeak = 0;
+	let channelBasisWeak = 0;
 	const cutoff = now - GRACE_WINDOW_MS; // allow tiny grace window
 	const seenKeys = new Set();
 	for (const ev of events) {
@@ -100,6 +103,23 @@ export function validateEvents(events, eventSchema, { now = Date.now() } = {}) {
 					streamingMissing++;
 				}
 			}
+			// Basis contract (soft, WP-242): HIGH confidence requires per-fact
+			// provenance with a primary/official basis — the TIME from the party
+			// that CREATES it (organizer/league/federation, see
+			// scripts/config/authority.json), the CHANNEL from the broadcaster's
+			// own source (or the organizer when it self-streams). Same form as the
+			// hard "high needs 2+ evidence URLs" rule above, but counted as a
+			// WARNING first so the gap becomes measurable without felling the
+			// pipeline on day one (the WP-246 pattern). "secondary" or missing
+			// provenance on a high-confidence fact is the exact cyclingstage/
+			// franceletour failure this contract exists to close.
+			if (ev.confidence === "high") {
+				const strong = (fact) => fact && (fact.basis === "primary" || fact.basis === "official");
+				if (!strong(ev.provenance?.time)) timeBasisWeak++;
+				if (Array.isArray(ev.streaming) && ev.streaming.length > 0 && !strong(ev.provenance?.streaming)) {
+					channelBasisWeak++;
+				}
+			}
 		}
 		// Link-honesty signal (soft, WP-246): a near-term event whose ONLY viewing URL
 		// is a service landing page (front page / sport section) does not answer "hvor
@@ -131,7 +151,7 @@ export function validateEvents(events, eventSchema, { now = Date.now() } = {}) {
 		}
 	}
 	const enrichedCount = events.filter((e) => e.importance != null).length;
-	return { errors, streamingMissing, streamingLandingOnly, enrichedCount, messages };
+	return { errors, streamingMissing, streamingLandingOnly, timeBasisWeak, channelBasisWeak, enrichedCount, messages };
 }
 
 function main() {
@@ -155,13 +175,19 @@ function main() {
 		process.exit(1);
 	}
 
-	const { errors, streamingMissing, streamingLandingOnly, enrichedCount, messages } = validateEvents(events, eventSchema);
+	const { errors, streamingMissing, streamingLandingOnly, timeBasisWeak, channelBasisWeak, enrichedCount, messages } = validateEvents(events, eventSchema);
 	for (const m of messages) console.warn(m);
 	if (streamingMissing > 0) {
 		console.warn(`Streaming info missing on ${streamingMissing} near-term AI-research event(s) — "hvor kan jeg se det" unanswered.`);
 	}
 	if (streamingLandingOnly > 0) {
 		console.warn(`Landing-page-only channel URL on ${streamingLandingOnly} near-term event(s) — the channel name is right, but the link points at a service front page, not the broadcast (WP-246).`);
+	}
+	if (timeBasisWeak > 0) {
+		console.warn(`Weak time basis on ${timeBasisWeak} high-confidence AI-research event(s) — the start time is not backed by a primary/official source (see scripts/config/authority.json; WP-242).`);
+	}
+	if (channelBasisWeak > 0) {
+		console.warn(`Weak channel basis on ${channelBasisWeak} high-confidence AI-research event(s) — the channel is not backed by the broadcaster's own source (WP-242).`);
 	}
 	console.log(`Validated ${events.length} events with ${errors} error(s). ${enrichedCount} enriched.`);
 	if (errors) process.exit(1);

@@ -42,6 +42,15 @@ matter to a Norwegian sports fan that are NOT in the static data feeds**.
   go find and add those events. This is a smarter signal than coverage-gaps.json.
 - `docs/data/calibration.json` — per-source trust stats from past verifications.
   Prefer sources with high reliability for the sport at hand; distrust repeat offenders.
+- `scripts/config/authority.json` — **the authority map (WP-241): who CREATES each
+  fact.** For every covered competition it names the source that sets the START TIME
+  (the organizer/league/federation) and the source that carries the NORWEGIAN CHANNEL
+  (the broadcaster itself), by id into `scripts/config/sources.json` (the WP-240
+  register — the truth about which domain IS the organizer). **Look the competition
+  up here and go to the registered authority FIRST**, before any open web search.
+  You maintain the map like the catalog: when you start covering a new competition,
+  add its entry — and register the organizer in `sources.json` first (its real
+  domain, verified — never a search hit that merely looks official).
 - `.claude/skills/source-quirks/SKILL.md` — structural failure modes of specific
   sources and how to compensate (e.g. ESPN mis-dates F1 weekends, so confirm the
   current race against the official calendar, not the feed). Read it before trusting
@@ -154,7 +163,27 @@ bare string, never `null`. `norwegianPlayers` may also carry optional golf tee-t
 status fields (`teeTime`, `teeTimeUTC`, `status`); leave the field out entirely (or
 `[]`) rather than writing a string or null when there's no one to name.
 
-Use the **web-search** and **web-fetch** capabilities provided by your runtime. Source priority:
+Use the **web-search** and **web-fetch** capabilities provided by your runtime.
+
+**Authority first (WP-241) — look it up, don't search for it.** Before searching
+broadly for a competition's dates/times: open `scripts/config/authority.json`, find
+the competition, and fetch its registered TIME authority (the organizer's own site)
+directly; for the channel, the registered Norwegian broadcaster's own pages. Search
+engines rank the practical over the authoritative — which is exactly how this board
+once cited the lookalike domain franceletour.com as evidence on a Tour de France
+stage while letour.fr (A.S.O., who actually creates the route and the start times)
+was never cited once. Fall back to the priority list below only when the map has no
+entry, or the authority's site is unreachable/bot-blocked (then cite the best
+secondary source honestly with `basis: "secondary"` and note it in research-log).
+
+**Beware lookalike domains.** The register (`scripts/config/sources.json`) is the
+truth about which domain IS the organizer. A domain that merely *looks* official
+(franceletour.com next to the real letour.fr) must never be cited as evidence and
+never appear in `provenance` — check the competition's `lookalikes` list in
+authority.json, and when a search result claims to be the organizer, confirm the
+domain against the register before trusting it.
+
+Source priority:
 - Norwegian: nrk.no/sport, tv2.no/sport, vg.no/sport, dagbladet.no/sport
 - Official: fis-ski.com, biathlonworld.com, uci.org, atptour.com, pgatour.com, espn.com
 - Esports (CS2): see the `cs2-sources` skill (`.claude/skills/cs2-sources/SKILL.md`) —
@@ -248,9 +277,26 @@ Append discovered events to the existing array in `docs/data/events.json`
   "researchedAt": "2026-07-02T10:00:00Z",
   "confidence": "high",
   "evidence": ["https://nrk.no/...", "https://biathlonworld.com/..."],
+  "provenance": {
+    "time": { "sourceId": "ibu", "url": "https://www.biathlonworld.com/...", "basis": "primary", "retrievedAt": "2026-07-02T10:00:00Z" },
+    "streaming": { "sourceId": "nrk", "url": "https://tv.nrk.no/...", "basis": "official", "retrievedAt": "2026-07-02T10:00:00Z" }
+  },
   "summary": "Norge er regjerende mester."
 }
 ```
+
+**Provenance per fact (WP-242).** `evidence` stays as the flat breadth list, but the
+two facts the product stands on each get their own citation in `provenance`: `time`
+from the party that CREATES it (`basis: "primary"` — the organizer/league/federation
+named in authority.json), `streaming` from the broadcaster's OWN source
+(`basis: "official"`; `"primary"` when the organizer self-streams, e.g. BLAST on its
+own Twitch). Each fact carries `sourceId` (the `sources.json` id — register a new
+organizer there first), `url` (the page you actually read — never a URL you didn't
+reach), `basis`, and `retrievedAt`. `basis: "secondary"` is the honest label for a
+fact you could only source second-hand — but then the event's confidence must not be
+`high`: validate-events counts every high-confidence event whose time lacks a
+primary/official basis, or whose channel lacks the broadcaster's own source, as a
+warning today (the WP-246 pattern), and the contract will harden.
 
 **Streaming is a first-class field — "hvor kan jeg se det" is half the product.**
 For EVERY event you add (and every static event you touch): fill `streaming`
@@ -277,7 +323,9 @@ Confidence:
 - `medium` = 1 source + reasonable corroboration
 - `low` = mentioned but fuzzy details
 
-Never write `high` without 2+ URLs in evidence.
+Never write `high` without 2+ URLs in evidence — and `high` also expects
+`provenance.time` with a primary/official basis and (when `streaming` is set)
+`provenance.streaming` from the broadcaster's own source (WP-242).
 
 Dedupe key: `sport|title|time`. If a static-pipeline event already covers the
 same thing, do not add a duplicate — enrich your understanding and move on.

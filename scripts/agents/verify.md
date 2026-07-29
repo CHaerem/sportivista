@@ -57,6 +57,26 @@ matches), use the `cs2-sources` skill (`.claude/skills/cs2-sources/SKILL.md`) �
 maps the ground-truth schedule sources (Liquipedia/HLTV/official X) and the
 Twitch/Kick viewing options for the late-announced matches the fetcher misses.
 
+**Check the channel against the broadcaster's OWN source (WP-241/242).** The rights
+map and tv-listings are priors; the party that CREATES the channel fact is the
+broadcaster itself. `scripts/config/authority.json` names the registered Norwegian
+broadcaster(s) per competition — and the registered TIME authority (the organizer/
+league/federation) — by id into `scripts/config/sources.json`. When you confirm or
+amend a channel, prefer the broadcaster's own page (programme schedule, help/rights
+page, press release) and stamp the event's `provenance.streaming` with
+`{ "sourceId": …, "url": …, "basis": "official", "retrievedAt": … }` for the page
+you actually read (`basis: "primary"` when the organizer self-streams). Likewise,
+when you verify or amend a `time`, stamp `provenance.time` from the organizer's own
+source (`basis: "primary"`). Never leave a `provenance` entry standing that
+contradicts what you just verified — the ⓘ-modal shows these citations to the user.
+
+**Beware lookalike domains.** The register (`sources.json`) is the truth about which
+domain IS the organizer. A domain that merely *looks* official — franceletour.com
+posing next to the real letour.fr — is not a source: never verify against one, and
+if you find one cited in an event's `evidence`, replace it with the real authority's
+URL as part of your amendment (the competition's `lookalikes` list in authority.json
+records the known offenders; add new ones you catch).
+
 **Resolve tentative channels to the real one.** A `streaming` entry marked
 `"tentative": true` (e.g. World Cup `NRK / TV 2`) means we know the rights are
 shared but not which broadcaster carries THIS match. Find the confirmed channel
