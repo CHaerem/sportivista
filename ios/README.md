@@ -558,7 +558,16 @@ plus its sync/share/reset/effective-merge machinery. **Our server never sees thi
 - **`EffectiveInterests.swift`** — makes "Bekreft → agendaen re-kompileres med det
   samme" real: `merge` folds the local `InterestProfile` into the SYNCED,
   server-owned `Interests` the agenda compiles from, so a confirmed mutation is live
-  at once. **`ResetService.swift`** — "nullstill profil + re-onboard" (reset without
+  at once. **WP-200**: the merge also DERIVES `followBroadly` from the profile — a
+  `type: "sport"` rule (the starter packs' `sport-biathlon` &c.) follows that sport
+  wholesale, every other rule is a precise follow, and an EMPTY profile leaves
+  `followBroadly` absent (the unchanged-board guarantee). Together with
+  `FeedCompiler.sportScope` — which narrows the norwegian/favorite/importance
+  blanket to the sports the profile covers — that is what makes the onboarding
+  choice actually shape the agenda; before it, a "Formel 1"-only profile still got
+  golf, cycling and biathlon. Frozen cross-platform by feed-vectors 15 & 16 (see
+  `tests/fixtures/feed-vectors/DIVERGENCES.md` §8).
+  **`ResetService.swift`** — "nullstill profil + re-onboard" (reset without
   reinstalling): one pure function clears local state through the same stores.
   Screenshots: i WP-ens PR (bevis-galleriet fjernet 20.07, regel 8; regenerer ved behov: `design/screens/generate.sh`).png`.
 

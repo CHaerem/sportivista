@@ -20,9 +20,26 @@
 //  matches from the athlete bucket too, but with an explicit neutral
 //  notify:false so it never inherits the bucket's bell default. It
 //  NEVER removes what the server already tracks — a `remove` in the profile
-//  simply drops that rule, so it stops being merged in. The local layer sits on
-//  top of the server config; it doesn't fight it (a rule can't suppress a sport
-//  the server follows broadly — honest, and out of scope for WP-16.4).
+//  simply drops that rule, so it stops being merged in.
+//
+//  WP-200 — the merge no longer leaves `followBroadly` untouched. Until now it
+//  passed `base.followBroadly` straight through, so a non-empty profile could
+//  only ever ADD to the board: on device `base` is `Interests()` (interests.json
+//  stopped being published in WP-96), its `followBroadly` is nil, and the
+//  FeedCompiler therefore fell back to the nine-sport default no matter what the
+//  user chose in onboarding. Someone who picked only "Formel 1" got an agenda
+//  full of golf, cycling and biathlon — the onboarding promise unhonoured.
+//
+//  So a NON-EMPTY profile now speaks for `followBroadly`:
+//    • a rule on a SPORT-level entity (`type == "sport"`, e.g. `sport-biathlon`
+//      from Vintersport-pakken) means "follow that sport wholesale";
+//    • every other rule (team / athlete / tournament / league) is a precise
+//      follow: it admits its own events through the entity match and puts its
+//      sport in the blanket's scope (FeedCompiler.sportScope), nothing more;
+//    • whatever `base` already followed broadly is KEPT (the local layer still
+//      does not fight the server config — it only adds what the profile says).
+//  An EMPTY profile keeps returning `base` untouched (the guard below), which is
+//  the hard backward-compatibility guarantee: no profile ⇒ today's board.
 //
 
 import Foundation
@@ -38,6 +55,9 @@ enum EffectiveInterests {
         var athletes = base.alwaysTrack.athletes
         var teams = base.alwaysTrack.teams
         var tournaments = base.alwaysTrack.tournaments
+        // WP-200 — the sports this profile follows WHOLESALE, seeded with whatever
+        // `base` already followed broadly (nil on device since WP-96).
+        var broadly = Set((base.followBroadly ?? []).map { $0.lowercased() })
 
         func contains(_ list: [Interests.Entity], _ name: String) -> Bool {
             list.contains { TextMatch.normalize($0.name) == TextMatch.normalize(name) }
@@ -56,7 +76,13 @@ enum EffectiveInterests {
                 if !contains(teams, name) { teams.append(merged) }
             case "tournament":
                 if !contains(tournaments, name) { tournaments.append(merged) }
-            case "athlete", "sport", "category":
+            case "sport":
+                // WP-200 — a sport-level follow is WHOLESALE: every event in that
+                // sport belongs on the board. It also stays in the athlete bucket
+                // (unchanged) so the bell/accent behave exactly as before.
+                if !sport.isEmpty { broadly.insert(sport.lowercased()) }
+                if !contains(athletes, name) { athletes.append(merged) }
+            case "athlete", "category":
                 if !contains(athletes, name) { athletes.append(merged) }
             default:
                 // WP-164 — an UNKNOWN type (a soft-follow / an id the index can't
@@ -70,7 +96,14 @@ enum EffectiveInterests {
         }
 
         return Interests(
-            followBroadly: base.followBroadly,
+            // WP-200 — ALWAYS explicit for a non-empty profile, even when it is
+            // empty (`[]`, "I follow no sport wholesale"): `Interests.followBroadly`
+            // has distinguished absent from empty since WP-13, and the lens reads
+            // exactly that distinction — an EXPLICIT list is what tells
+            // FeedCompiler a profile owns this board and narrows the
+            // norwegian/favorite/importance blanket to the sports it covers.
+            // Sorted so the projection is deterministic and equal to the web twin's.
+            followBroadly: broadly.sorted(),
             alwaysTrack: Interests.AlwaysTrack(athletes: athletes, teams: teams, tournaments: tournaments),
             notify: base.notify
         )

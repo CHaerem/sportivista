@@ -89,6 +89,36 @@ enum FeedCompiler {
 
     // MARK: - §relevant — feed inclusion (SERVER, build-events.js:477 + cutoff)
 
+    /// WP-200 — the sports a profile-shaped board actually COVERS: the sports it
+    /// follows wholesale PLUS the sport of every tracked entity. This is the scope
+    /// of the norwegian/favorite/importance blanket (rule 3 below).
+    ///
+    /// `nil` means "no profile speaks here" — `interests.followBroadly` is ABSENT
+    /// (the WP-13 absent-vs-empty distinction), so the blanket stays un-scoped and
+    /// the board behaves exactly as it did before WP-200. That is the hard
+    /// empty-profile guarantee: `EffectiveInterests.merge` returns `base` untouched
+    /// for an empty profile, `base.followBroadly` is nil on device, so nothing moves.
+    ///
+    /// With a profile the blanket was a blank cheque: any Norwegian / favourite /
+    /// importance≥4 event reached the board whatever the user had chosen, so a
+    /// "Formel 1"-only profile still got golf, cycling and biathlon. Scoping it
+    /// keeps the blanket inside the sports you chose without demanding an entity
+    /// match for every big moment in them (following Hovland still surfaces a
+    /// Norwegian golf week — it just cannot surface an F1-only user's golf week).
+    /// An entity with no `sport` widens nothing; it still matches through the
+    /// UNSCOPED rule (4). Twin of `ssLensSportScope` in docs/js/lens.js.
+    static func sportScope(_ interests: Interests) -> Set<String>? {
+        guard let broad = interests.followBroadly else { return nil }
+        var scope = Set(broad.map { $0.lowercased() })
+        let tracked = interests.alwaysTrack.teams
+            + interests.alwaysTrack.athletes
+            + interests.alwaysTrack.tournaments
+        for entity in tracked {
+            if let sport = entity.sport, !sport.isEmpty { scope.insert(sport.lowercased()) }
+        }
+        return scope
+    }
+
     /// `isRelevant` on its own (no time gate) — mirrors build-events.js
     /// `isRelevant`. Order (WP-92):
     ///  1. followBroadly sport → in (wholesale; wins over the gate);
@@ -96,7 +126,8 @@ enum FeedCompiler {
     ///     match is the ONLY way in (no norwegian/favorite/importance/ai-research
     ///     blanket) — DIVERGENCES §5;
     ///  3. any other non-broad sport → norwegian / favorite / importance≥4 blanket
-    ///     (`source == "ai-research"` is NO LONGER a standalone pass — WP-92);
+    ///     (`source == "ai-research"` is NO LONGER a standalone pass — WP-92),
+    ///     SPORT-SCOPED to the profile's coverage since WP-200 (see `sportScope`);
     ///  4. UNSCOPED tracked-entity match (DIVERGENCES §1: the football club
     ///     "Barcelona" can still pull a tennis "Barcelona Open" onto the board).
     static func isRelevantIgnoringTime(_ e: FeedEvent, interests: Interests) -> Bool {
@@ -109,7 +140,9 @@ enum FeedCompiler {
         if entityGatedSports.contains(sport) {                          // (2)
             return matchInterest(serverHaystack(e), tracked, sport: e.sport) != nil
         }
-        if e.norwegian || e.isFavorite || (e.importance ?? 0) >= LensConfig.shared.mustSeeImportance { return true } // (3)
+        if sportScope(interests)?.contains(sport) ?? true {              // (3)
+            if e.norwegian || e.isFavorite || (e.importance ?? 0) >= LensConfig.shared.mustSeeImportance { return true }
+        }
         return matchInterest(serverHaystack(e), tracked) != nil         // (4) unscoped
     }
 

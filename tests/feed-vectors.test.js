@@ -62,7 +62,8 @@ const VECTORS = loadVectors();
 //     wholesale, (2) chess/esports entity-gate (SPORT-SCOPED match; no norwegian/
 //     favorite/importance/ai-research blanket), (3) the norwegian/favorite/
 //     importance blanket for every other non-broad sport — ai-research is not a
-//     blanket pass on its own — and (4) an UNSCOPED tracked-entity match
+//     blanket pass on its own, and WP-200 narrows it to the sports the profile
+//     COVERS — and (4) an UNSCOPED tracked-entity match
 //     (DIVERGENCES.md §1). WP-04: norwegianPlayers/participants are canonical
 //     {name} objects, so the hay-building maps both through `p.name || p`.
 //   • the 14-day retention cutoff, which keys off endTime when present, else start.
@@ -71,6 +72,23 @@ const DEFAULT_FOLLOW_BROADLY = [
 	"biathlon", "cross-country", "alpine", "nordic", "ski jumping",
 ];
 const ENTITY_GATED_SPORTS = new Set(["chess", "esports"]);
+
+/** WP-200 — the sports a profile-shaped board covers: its explicit followBroadly
+ *  plus every tracked entity's own sport. `null` when followBroadly is ABSENT (no
+ *  profile speaks) — the blanket then stays un-scoped, i.e. pre-WP-200 behaviour.
+ *  Twin of ssLensSportScope (lens.js) / FeedCompiler.sportScope (Swift). */
+function lensSportScope(interests) {
+	if (!Array.isArray(interests.followBroadly)) return null;
+	const scope = new Set(interests.followBroadly.map((s) => String(s).toLowerCase()));
+	for (const e of [
+		...(interests.alwaysTrack?.teams || []),
+		...(interests.alwaysTrack?.athletes || []),
+		...(interests.alwaysTrack?.tournaments || []),
+	]) {
+		if (e && typeof e === "object" && e.sport) scope.add(String(e.sport).toLowerCase());
+	}
+	return scope;
+}
 
 function lensRelevant(event, interests, nowMs) {
 	if (!event.time) return false;
@@ -97,8 +115,12 @@ function lensRelevant(event, interests, nowMs) {
 	if (ENTITY_GATED_SPORTS.has(sport)) {
 		return matchInterest(hay, trackedEntities, { sport: event.sport }) != null;
 	}
-	// (3) other non-broad sports: norwegian/favorite/importance blanket (NO ai-research).
-	if (event.norwegian || event.isFavorite || (event.importance || 0) >= 4) return true;
+	// (3) other non-broad sports: norwegian/favorite/importance blanket (NO
+	// ai-research), scoped since WP-200 to the sports this profile covers.
+	const scope = lensSportScope(interests);
+	if (scope === null || scope.has(sport)) {
+		if (event.norwegian || event.isFavorite || (event.importance || 0) >= 4) return true;
+	}
 	// (4) unscoped tracked-entity match (DIVERGENCES §1).
 	return matchInterest(hay, trackedEntities) != null;
 }
