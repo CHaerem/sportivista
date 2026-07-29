@@ -146,3 +146,13 @@ body.gated .auth-gate {
 #apple-sign-in-button { display: flex; justify-content: center; min-height: 44px; }
 #apple-sign-in-button > * { cursor: pointer; }
 .auth-error { color: #FF453A; font-size: 13.5px; line-height: 1.5; margin: 0; max-width: 32ch; }
+/* A calm retry control shown ONLY when sign-in errors (CloudKit failed to load /
+   setUpAuth rejected). Without it the error text tells the user to "last siden på
+   nytt" but offers no control — a dead end for anyone whose auth fails (blocked
+   third-party cookies, private browsing). Quiet secondary button, not an accent. */
+.auth-retry {
+	font: inherit; font-size: 15px; color: var(--fg);
+	background: var(--surface); border: 1px solid var(--line);
+	border-radius: 10px; padding: 10px 20px; min-height: 44px; cursor: pointer;
+}
+.auth-retry:hover { border-color: var(--accent); color: var(--accent); }
