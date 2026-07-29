@@ -284,6 +284,25 @@ class Dashboard {
 		return ssIsMustSee(e, this.interests, this.lensConfig);
 	}
 
+	/** WP-200: the board is YOURS. Runs the events through the shipped lens —
+	 *  the same `ssIsRelevant` the golden feed-vectors freeze and the iOS agenda
+	 *  compiles from — so a profile that follows only Formel 1 gets an agenda of
+	 *  only F1, not the catalog's nine sports.
+	 *
+	 *  `this.interests` is null when there is no profile, and lens.js treats an
+	 *  ABSENT `followBroadly` as "no profile speaks" — so an empty profile
+	 *  reproduces today's catalog-wide board id-for-id. That equivalence is the
+	 *  hard contract; vectors 15/16 pin the narrowing, 01–14 pin the default.
+	 *
+	 *  NB: only what the user SEES is lensed. `_eventById` deliberately keeps the
+	 *  full set so a deep link or a series row can still resolve an event that the
+	 *  lens filtered out of the agenda. */
+	lensed(events) {
+		if (typeof ssIsRelevant !== 'function') return events; // lens.js absent → unfiltered, never blank
+		const now = Date.now();
+		return events.filter((e) => ssIsRelevant(e, this.interests, now, this.lensConfig));
+	}
+
 	/** The time cell: a HH:MM for a single-day event, or a date window
 	 *  ("13.–20. juli") that REPLACES the clock for a multi-day event — never
 	 *  both, and never duplicated in the title. */
@@ -385,7 +404,7 @@ class Dashboard {
 		// Collapse multi-stage races (e.g. Tour de France) into ONE expandable row
 		// so 20+ near-identical "Etappe N" rows don't drown the rest of the week.
 		const items = this.collapseSeries(
-			this.allEvents.filter((e) => isEventInWindow(e, start, maxHorizon)),
+			this.lensed(this.allEvents).filter((e) => isEventInWindow(e, start, maxHorizon)),
 			now
 		).sort((a, b) => new Date(a.time) - new Date(b.time));
 
@@ -463,7 +482,7 @@ class Dashboard {
 		const fwStart = now + 14 * SS_CONSTANTS.MS_PER_DAY;
 		const fwEnd = now + 42 * SS_CONSTANTS.MS_PER_DAY;
 		return this.collapseSeries(
-			this.allEvents.filter((e) => isEventInWindow(e, fwStart, fwEnd)),
+			this.lensed(this.allEvents).filter((e) => isEventInWindow(e, fwStart, fwEnd)),
 			now
 		).sort((a, b) => new Date(a.time) - new Date(b.time));
 	}
