@@ -24,7 +24,7 @@ export function loadEventSchema() {
  * degraded instead of freezing the whole hourly pipeline (see build-events.js
  * for the retain-previous-good-data + build-alert.json behaviour).
  *
- * Returns { errors, streamingMissing, enrichedCount, messages } — `errors` is
+ * Returns { errors, streamingMissing, streamingLandingOnly, enrichedCount, messages } — `errors` is
  * the hard-error count (a caller treats > 0 as "do not publish this array");
  * `messages` are the human-readable warn/violation lines, in the same wording
  * this script has always printed.
@@ -33,6 +33,7 @@ export function validateEvents(events, eventSchema, { now = Date.now() } = {}) {
 	const messages = [];
 	let errors = 0;
 	let streamingMissing = 0;
+	let streamingLandingOnly = 0;
 	const cutoff = now - GRACE_WINDOW_MS; // allow tiny grace window
 	const seenKeys = new Set();
 	for (const ev of events) {
@@ -100,6 +101,17 @@ export function validateEvents(events, eventSchema, { now = Date.now() } = {}) {
 				}
 			}
 		}
+		// Link-honesty signal (soft, WP-246): a near-term event whose ONLY viewing URL
+		// is a service landing page (front page / sport section) does not answer "hvor
+		// ser jeg det" — the channel name is right, but the link is the rights map, not
+		// the broadcast. Counted for EVERY source (not just ai-research: the static
+		// pipeline's rights map is where most of these come from) so the gap the
+		// research/verify agents must close is measurable instead of invisible.
+		// Warning only — a landing URL is honest once it is labelled, just not useful.
+		if (!Number.isNaN(ts) && ts > now - 4 * 60 * 60 * 1000 && ts < now + 7 * 24 * 60 * 60 * 1000) {
+			const kinds = (Array.isArray(ev.streaming) ? ev.streaming : []).map((s) => s && s.urlKind);
+			if (kinds.includes("landing") && !kinds.includes("deep")) streamingLandingOnly++;
+		}
 		// Formal schema check (scripts/config/events.schema.json) — catches shape
 		// drift (wrong types, bad enums) that the ad-hoc checks above don't cover.
 		const schemaErrors = validateAgainstSchema(ev, eventSchema, eventSchema);
@@ -119,7 +131,7 @@ export function validateEvents(events, eventSchema, { now = Date.now() } = {}) {
 		}
 	}
 	const enrichedCount = events.filter((e) => e.importance != null).length;
-	return { errors, streamingMissing, enrichedCount, messages };
+	return { errors, streamingMissing, streamingLandingOnly, enrichedCount, messages };
 }
 
 function main() {
@@ -143,10 +155,13 @@ function main() {
 		process.exit(1);
 	}
 
-	const { errors, streamingMissing, enrichedCount, messages } = validateEvents(events, eventSchema);
+	const { errors, streamingMissing, streamingLandingOnly, enrichedCount, messages } = validateEvents(events, eventSchema);
 	for (const m of messages) console.warn(m);
 	if (streamingMissing > 0) {
 		console.warn(`Streaming info missing on ${streamingMissing} near-term AI-research event(s) — "hvor kan jeg se det" unanswered.`);
+	}
+	if (streamingLandingOnly > 0) {
+		console.warn(`Landing-page-only channel URL on ${streamingLandingOnly} near-term event(s) — the channel name is right, but the link points at a service front page, not the broadcast (WP-246).`);
 	}
 	console.log(`Validated ${events.length} events with ${errors} error(s). ${enrichedCount} enriched.`);
 	if (errors) process.exit(1);

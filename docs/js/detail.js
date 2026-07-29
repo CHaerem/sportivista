@@ -127,10 +127,18 @@ Object.assign(window.Dashboard.prototype, {
 
 		const streams = Array.isArray(e.streaming) ? e.streaming : [];
 		if (streams.length) {
+			// The sheet has room to say WHY a channel isn't a link, so it does — quietly,
+			// in the muted .tbd voice already used for «(bekreftes)». WP-246: a `landing`
+			// URL points at TV 2 Play / Viaplay's front page, not at this broadcast, so we
+			// name the channel and admit the missing link instead of dressing a rights map
+			// up as an answer. No warning icon — DESIGN § Grunnlov 3 ("Ærlig innhold"),
+			// § Stemme ("Kanal ukjent", ikke "Ingen streaming!").
 			const chans = streams.map((s) => {
 				const p = escapeHtml(String(s.platform || s));
-				const label = s.tentative ? `${p} <span class="tbd">(bekreftes)</span>` : p;
-				return this.streamLink(s) ? `<a href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${p}</a>` : label;
+				if (this.streamLink(s)) return `<a href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${p}</a>`;
+				if (s.tentative) return `${p} <span class="tbd">(bekreftes)</span>`;
+				if (s.urlKind === 'landing') return `${p} <span class="tbd">(ingen direkte lenke)</span>`;
+				return p;
 			}).join(' · ');
 			add('Se på', chans);
 		}

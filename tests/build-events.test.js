@@ -262,8 +262,9 @@ describe("build-events", () => {
 		const events = runBuild();
 		const match = events.find((e) => e.title === "Brazil vs Norway");
 		// Confirmed NRK is kept (not downgraded to the tentative NRK/TV 2 guess);
-		// the bare homepage is lifted to NRK's live section.
-		expect(match.streaming).toEqual([{ platform: "NRK", url: "https://tv.nrk.no/direkte" }]);
+		// the bare homepage is lifted to NRK's live section — which is still only a
+		// LANDING page, and WP-246 says so on the entry itself.
+		expect(match.streaming).toEqual([{ platform: "NRK", url: "https://tv.nrk.no/direkte", urlKind: "landing" }]);
 		expect(match.streaming.some((s) => s.tentative)).toBe(false);
 	});
 
@@ -337,14 +338,14 @@ describe("build-events", () => {
 		// WP-05: "Casper Ruud" is a real tracked athlete entity (sport tennis), so
 		// the enrichment pass stamps entityId — expected, not a regression.
 		expect(gstaad[0].norwegianPlayers).toEqual([{ name: "Casper Ruud", entityId: "casper-ruud" }]);
-		expect(gstaad[0].streaming).toEqual([{ platform: "TV 2 Play", url: "https://play.tv2.no/sport" }]);
+		expect(gstaad[0].streaming).toEqual([{ platform: "TV 2 Play", url: "https://play.tv2.no/sport", urlKind: "landing" }]);
 		// And it must PERSIST: the next rebuild re-fetches the bare stub, so the
 		// grafted enrichment has to carry forward or the event vanishes an hour later.
 		const rebuilt = runBuild().filter((e) => /gstaad/i.test(e.title));
 		expect(rebuilt).toHaveLength(1);
 		expect(rebuilt[0].norwegian).toBe(true);
 		expect(rebuilt[0].norwegianPlayers).toEqual([{ name: "Casper Ruud", entityId: "casper-ruud" }]);
-		expect(rebuilt[0].streaming).toEqual([{ platform: "TV 2 Play", url: "https://play.tv2.no/sport" }]);
+		expect(rebuilt[0].streaming).toEqual([{ platform: "TV 2 Play", url: "https://play.tv2.no/sport", urlKind: "landing" }]);
 	});
 
 	it("dedupes a World Cup knockout placeholder against the ai-research event, keeping the AI copy", () => {
@@ -378,7 +379,7 @@ describe("build-events", () => {
 		expect(wc).toHaveLength(1);                                   // not two rows for the final
 		expect(wc[0].title).toBe("VM-finalen 2026");                 // the human title won
 		expect(wc[0].source).toBe("ai-research");                    // the placeholder was dropped
-		expect(wc[0].streaming).toEqual([{ platform: "NRK", url: "https://tv.nrk.no/direkte" }]);
+		expect(wc[0].streaming).toEqual([{ platform: "NRK", url: "https://tv.nrk.no/direkte", urlKind: "landing" }]);
 		// The placeholder team names must not leak onto the surviving event.
 		expect(wc[0].awayTeam).not.toBe("Semifinal 2 Winner");
 	});

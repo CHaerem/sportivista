@@ -456,6 +456,51 @@ describe("whereToWatch — the core 'hvor kan jeg se det'", () => {
 	});
 });
 
+describe("WP-246 — a landing page is never presented as the match link", () => {
+	const landing = { platform: "TV 2 Play", url: "https://play.tv2.no/sport", urlKind: "landing" };
+	const deep = { platform: "TV 2 Play", url: "https://play.tv2.no/sport/sykkel/arctic-race-of-norway", urlKind: "deep" };
+
+	it("streamLink is false for a landing URL and true for a deep one", () => {
+		expect(dash.streamLink(landing)).toBe(false);
+		expect(dash.streamLink(deep)).toBe(true);
+	});
+	it("the row keeps the channel NAME but drops the link (the name is still true)", () => {
+		const html = dash.whereToWatch({ streaming: [landing] });
+		expect(html).toContain("TV 2 Play");        // where to watch — still answered
+		expect(html).not.toContain("<a ");           // …but nothing pretends to be the match
+		expect(html).not.toContain("play.tv2.no");   // the front page never ships as an href
+	});
+	it("a real deep link is still a link — this package removes the lie, not the links", () => {
+		const html = dash.whereToWatch({ streaming: [deep] });
+		expect(html).toContain("<a ");
+		expect(html).toContain("arctic-race-of-norway");
+	});
+	it("older payloads without urlKind keep the previous behaviour (backward compatible)", () => {
+		expect(dash.streamLink({ platform: "NRK", url: "https://tv.nrk.no" })).toBe(true);
+	});
+	it("the detail sheet says quietly why there is no link — no warning icon", () => {
+		const html = dash.eventDetail({ sport: "cycling", title: "Etappe 5", time: soon(), streaming: [landing] });
+		expect(html).toContain("Se på");
+		expect(html).toContain("TV 2 Play");
+		expect(html).toContain('<span class="tbd">(ingen direkte lenke)</span>');
+		expect(html).not.toContain('href="https://play.tv2.no/sport"');
+		expect(html).not.toMatch(/⚠|advarsel/i);
+	});
+	it("the detail sheet links a deep URL and says nothing extra", () => {
+		const html = dash.eventDetail({ sport: "cycling", title: "Etappe 5", time: soon(), streaming: [deep] });
+		expect(html).toContain('href="https://play.tv2.no/sport/sykkel/arctic-race-of-norway"');
+		expect(html).not.toContain("(ingen direkte lenke)");
+	});
+	it("a tentative channel still reads (bekreftes), not the landing note", () => {
+		const html = dash.eventDetail({
+			sport: "football", title: "Norge – Brasil", time: soon(),
+			streaming: [{ platform: "NRK / TV 2", url: "https://tv.nrk.no", tentative: true, urlKind: "landing" }],
+		});
+		expect(html).toContain("(bekreftes)");
+		expect(html).not.toContain("(ingen direkte lenke)");
+	});
+});
+
 describe("followed 'neste' index — answers 'when's X next?'", () => {
 	const inDays = (n) => new Date(Date.now() + n * 86400000).toISOString();
 

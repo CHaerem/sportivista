@@ -3,17 +3,99 @@
 // broadcaster like FOX/ESPN. The verify agent refines per-event on top of this;
 // this guarantees a correct default. Mirrors .claude/skills/norwegian-rights.
 
+// ── Link honesty (WP-246): deep vs. landing ─────────────────────────────────
+//
+// A channel NAME ("TV 2 Play") is real, useful information. A channel URL that
+// points at TV 2 Play's sport section is NOT an answer to "hvor ser jeg det" —
+// it is the rights map wearing a link's clothes. Every streaming entry therefore
+// declares what KIND of URL it carries, so the clients can show the name without
+// dressing a front page up as a link to the broadcast:
+//
+//   "deep"    – points at the actual broadcast/match/stream page
+//   "landing" – the service's front page or a generic section (sport/live/locale)
+//   (absent)  – no URL at all, or a URL we can't parse
+//
+// Nothing here invents deep links; finding them per event is the research/verify
+// agents' job. This only makes the difference visible and countable.
+
+// Path segments that never identify a single broadcast: locale codes, a service's
+// own section navigation, and plain sport names. A URL whose ENTIRE path is built
+// from these is a landing page no matter which service it belongs to.
+const GENERIC_SEGMENTS = new Set([
+	// locale / site chrome
+	"no", "nb", "en", "no-no", "nb-no", "en-no", "nn-no",
+	// section navigation
+	"sport", "sports", "sporten", "direkte", "live", "tv", "kanal", "kanaler",
+	"stream", "streaming", "watch", "se", "channel", "channels", "home", "start",
+	// sport sections
+	"fotball", "football", "soccer", "golf", "pga-tour", "pgatour", "tennis",
+	"sykkel", "cycling", "ski", "langrenn", "skiskyting", "biathlon", "friidrett",
+	"athletics", "handball", "håndball", "ishockey", "hockey", "motorsport",
+	"formel-1", "formula-1", "f1", "sjakk", "chess", "esport", "esports",
+]);
+
+/**
+ * Classify a viewing URL: "deep" (the broadcast itself), "landing" (a service
+ * front page / generic section), or "" when there is nothing to classify.
+ * @param {string} url
+ * @returns {"deep"|"landing"|""}
+ */
+export function classifyStreamingUrl(url) {
+	const raw = String(url || "").trim();
+	if (!raw) return "";
+	let parsed;
+	try {
+		parsed = new URL(raw);
+	} catch {
+		return ""; // unparseable — say nothing rather than guess
+	}
+	let segments;
+	try {
+		segments = parsed.pathname.split("/").filter(Boolean).map((s) => decodeURIComponent(s).toLowerCase());
+	} catch {
+		segments = parsed.pathname.split("/").filter(Boolean).map((s) => s.toLowerCase());
+	}
+	if (!segments.length) return "landing"; // bare origin — never a broadcast
+	if (segments.every((s) => GENERIC_SEGMENTS.has(s))) return "landing";
+	return "deep";
+}
+
+/** Stamp `urlKind` on one streaming entry (objects only; strings pass through). */
+function withUrlKind(c) {
+	if (!c || typeof c !== "object") return c;
+	const kind = classifyStreamingUrl(c.url);
+	if (!kind) {
+		if (!("urlKind" in c)) return c;
+		const { urlKind, ...rest } = c; // eslint-disable-line no-unused-vars
+		return rest; // a URL was removed — don't keep a stale claim
+	}
+	return c.urlKind === kind ? c : { ...c, urlKind: kind };
+}
+
+/**
+ * Stamp `urlKind` on every entry of a streaming array. Idempotent, and the single
+ * choke point callers use after rewriting URLs (see build-events.js) so the label
+ * can never drift from the URL it describes.
+ */
+export function stampUrlKinds(streaming) {
+	if (!Array.isArray(streaming)) return streaming;
+	return streaming.map(withUrlKind);
+}
+
 // Fallback landing URLs — the sport/live section, not the bare homepage, so a tap
 // lands closer to the broadcast and is likelier to be claimed by the app's
 // universal links (deep per-event URLs from the verify agent override these).
+// They are stamped `urlKind: "landing"` at construction: honest by default, and
+// the clients refuse to present them as a link to the match (WP-246).
+const ch = (platform, url, extra) => withUrlKind({ platform, url, ...(extra || {}) });
 const CH = {
-	viaplay: { platform: "Viaplay", url: "https://viaplay.no/no-no/sport" },
-	tv2: { platform: "TV 2 Play", url: "https://play.tv2.no/sport" },
-	nrk: { platform: "NRK", url: "https://tv.nrk.no/direkte" },
-	discovery: { platform: "Discovery+", url: "https://www.discoveryplus.no" },
-	eurosport: { platform: "Eurosport", url: "https://www.eurosport.no" },
-	hbomax: { platform: "HBO Max (Sport)", url: "https://www.hbomax.com/no/no/sports/pga-tour" },
-	max: { platform: "Max", url: "https://www.max.com" },
+	viaplay: ch("Viaplay", "https://viaplay.no/no-no/sport"),
+	tv2: ch("TV 2 Play", "https://play.tv2.no/sport"),
+	nrk: ch("NRK", "https://tv.nrk.no/direkte"),
+	discovery: ch("Discovery+", "https://www.discoveryplus.no"),
+	eurosport: ch("Eurosport", "https://www.eurosport.no"),
+	hbomax: ch("HBO Max (Sport)", "https://www.hbomax.com/no/no/sports/pga-tour"),
+	max: ch("Max", "https://www.max.com"),
 };
 
 // Anything matching this is a Norwegian service we can trust to keep as-is.
@@ -67,7 +149,7 @@ function isWorldCup(ev) {
 // Norwegian WC 2026 rights are shared by NRK + TV 2 ONLY. When we can't confirm
 // which of the two carries a specific match, this single tentative label is more
 // honest (and calmer) than two chips that read as "airs on both".
-const WC_SHARED = { platform: "NRK / TV 2", url: "https://tv.nrk.no", tentative: true };
+const WC_SHARED = ch("NRK / TV 2", "https://tv.nrk.no", { tentative: true });
 
 /** The confident Norwegian rights for an event, or [] when we shouldn't guess. */
 export function norwegianRights(ev) {
@@ -133,10 +215,10 @@ export function normalizeStreaming(ev) {
 	// esports and chess are watched on event-specific free streams (BLAST.tv /
 	// Twitch / YouTube; Lichess / Chess.com / Direktesport), not Norwegian TV —
 	// keep whatever the event/researcher supplied rather than forcing a channel.
-	if (sport === "esports" || sport === "chess") return ev.streaming || [];
+	if (sport === "esports" || sport === "chess") return stampUrlKinds(ev.streaming || []);
 	const mapped = norwegianRights(ev);
-	if (mapped.length) return mapped;
-	return (ev.streaming || []).filter((s) => NORWEGIAN_RE.test(s.platform || s));
+	if (mapped.length) return stampUrlKinds(mapped);
+	return stampUrlKinds((ev.streaming || []).filter((s) => NORWEGIAN_RE.test(s.platform || s)));
 }
 
 // ── Real Norwegian TV listings (tvkampen.com) — actual data over the static map ──
@@ -188,7 +270,7 @@ function listingStreaming(listing) {
 		const key = name.toLowerCase();
 		if (seen.has(key)) continue;
 		seen.add(key);
-		out.push({ platform: name, url: urlForChannel(name) });
+		out.push(withUrlKind({ platform: name, url: urlForChannel(name) }));
 	}
 	// tvkampen pads most listings with generic aggregators (Viaplay/Eurosport/MAX)
 	// after the real broadcaster(s), which are listed primary-first. Keep the calm
@@ -239,15 +321,15 @@ export function resolveStreaming(ev, tvListings) {
 				if (listing.url) {
 					s = s.map((c) => {
 						const isNrk = /nrk/i.test(c.platform || "") || /tv\.nrk\.no/.test(c.url || "");
-						return isNrk ? c : { ...c, url: listing.url };
+						return isNrk ? c : withUrlKind({ ...c, url: listing.url });
 					});
 				}
-				return s;
+				return stampUrlKinds(s);
 			}
 			// Listing exists but no confirmable Norwegian rights holder (e.g. only
 			// SVT): still offer the match's tvkampen page as a linkable guide so the
 			// user can at least see when & on which channel it airs.
-			if (isWorldCup(ev) && listing.url) return [{ ...WC_SHARED, url: listing.url }];
+			if (isWorldCup(ev) && listing.url) return [withUrlKind({ ...WC_SHARED, url: listing.url })];
 		}
 	}
 	return normalizeStreaming(ev);
