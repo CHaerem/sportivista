@@ -42,6 +42,25 @@ function startServer() {
 		const server = createServer((req, res) => {
 			// Strip query strings (dashboard uses ?t=... for cache busting)
 			const urlPath = (req.url || "/").split("?")[0];
+
+			// Serve a TOKENLESS iCloud config so the board renders for QA.
+			//
+			// The dashboard is whole-web-behind-login (eier-beslutning 21.07), and the
+			// gate's own documented escape is "no apiToken → open page (local dev /
+			// stripped build)" — see ssBootGate in index.html and gate-boot.js. This
+			// harness has to take it: the real web token is origin-locked to
+			// sportivista.com / chaerem.github.io, so a screenshot served from
+			// 127.0.0.1 can NEVER authenticate. Without this, visual-qa photographed
+			// nothing but an AUTHENTICATION_FAILED sign-in card, run after run, and
+			// could not check a single layout rule — the visual-qa → ui-fix loop was
+			// dead. The override lives HERE, in the test harness, precisely so no new
+			// bypass ships in the client: production still gates normally.
+			if (urlPath === "/js/icloud-config.js") {
+				res.writeHead(200, { "Content-Type": "text/javascript" });
+				res.end("window.SPORTIVISTA_ICLOUD = { containerIdentifier: 'iCloud.app.sportivista.ios', apiToken: '', environment: 'production', zoneName: 'SportivistaProfile' };\n");
+				return;
+			}
+
 			const safePath = path.join(docsDir, urlPath === "/" ? "index.html" : urlPath);
 			if (!safePath.startsWith(docsDir)) {
 				res.writeHead(403);

@@ -38,7 +38,8 @@ known URL per broadcaster and won't clobber it with the generic landing.
 ## Football
 - Premier League → **TV 2 Play / TV 2 Sport Premium** [solid]
 - La Liga → **TV 2 Play** [solid] (TV 2 renewed the Norwegian rights through summer 2030 — NTB press release kommunikasjon.ntb.no/pressemelding/18978442; the Disney+/ESPN shift is DK/SE/FI/IS only, not Norway; verified 2026-07-18)
-- Champions League / Europa League → **TV 2 Play** [solid]
+- Champions League → **TV 2 Play** [solid]
+- Europa League + Conference League → **Viaplay** [solid] (UEFA-klubbrettighetene i Norge t.o.m. 2030/31: kun CL er TV 2s — presse.viaplaygroup.no + tvkampen.com; verifisert 2026-07-27. Viaplay/TV 2-fellesavtalen gjør enkeltkamper også tilgjengelige på TV 2 Play, og norske klubbers tidlige kvalikkamper kan ha egne fri-sublisenser, f.eks. VG TV. Speiler `scripts/lib/norwegian-rights.js`, som ble rettet i #417)
 - OBOS-ligaen + Eliteserien → **TV 2 Play** [solid]
 - FIFA World Cup 2026 → **NRK + TV 2** (shared, per-match split) [verify per match]
 - Cross-check every football entry against `docs/data/tv-listings.json` when present.

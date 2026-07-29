@@ -38,6 +38,15 @@ export const UPCOMING_DAYS = 14;
 export const EXPECTED_SPORT_FILES = ["football", "golf", "tennis", "f1", "chess", "esports", "cycling"];
 
 /**
+ * How long a source file may be served from `retainLastGood` retention before we call
+ * the fetcher broken. A day or two of retention is ordinary (a between-rounds lull, a
+ * transient upstream blip); a week is a dead fetcher nobody noticed. Deliberately well
+ * under retainLastGood's own 14-day `maxAgeDays`, so the fetcher is flagged while the
+ * file still has content — not only once retention expires and the sport falls off.
+ */
+export const STALE_RETAIN_DAYS = 3;
+
+/**
  * Followed sports keyed by distinctive news terms → the sport key used in events.json.
  * Kept small and specific on purpose: this is a recall net, not a taxonomy. "winter"
  * has no fetcher/sport key, so it flags whenever winter sport is imminent in the news
@@ -182,6 +191,10 @@ export function detectGaps({ rss, events, interests, tracked, now = Date.now() }
  * name why (fetcher missing / empty / dropping events). `sources` maps sport key →
  * parsed data file (or null if absent).
  *
+ * ONE signal deliberately escapes the coverage-first gate: `stale-retained`. See the
+ * comment at its check — a fetcher frozen on retained data is broken even when the
+ * board looks complete, and coverage-first is precisely what hid it for 137 runs.
+ *
  * WP-110: the "dropped-in-build" (high) signal is CATALOG-GATED with the SAME
  * `isCovered` build-events.js uses. Entity-gated sports (chess/esports) are covered
  * only through the named catalog long-tail, so a minor open with a lone club player
@@ -197,9 +210,36 @@ export function detectSourceAnomalies({ sources, events, now = Date.now(), isCov
 	const anomalies = [];
 	for (const sport of EXPECTED_SPORT_FILES) {
 		const onBoard = countSportEventsWithin(events, sport, now, UPCOMING_DAYS);
+		const data = sources?.[sport];
+
+		// Chronic retention — DELIBERATELY checked BEFORE the coverage-first gate below.
+		// `retainLastGood` keeps the last non-empty file when a fetch comes back empty and
+		// stamps `_retained`, but nothing ever read that stamp. So a dead fetcher stayed
+		// invisible for as long as SOMETHING else covered the sport: football.json sat
+		// frozen on the 19 July World Cup final for 137 consecutive runs while the board
+		// looked healthy, because the research agent was hand-filling Eliteserien rounds
+		// as `source: "ai-research"`. Coverage-first is right for the signals below (an
+		// empty chess file is normal — chess has no API), but it is exactly wrong here:
+		// a fetcher that has stopped producing is broken whether or not the board hides it.
+		const retained = data?._retained;
+		if (retained) {
+			const since = Date.parse(retained.lastFreshFetch || retained.since || "");
+			const staleDays = Number.isFinite(since) ? Math.floor((now - since) / MS_PER_DAY) : null;
+			if (staleDays != null && staleDays >= STALE_RETAIN_DAYS) {
+				anomalies.push({
+					sport,
+					issue: "stale-retained",
+					detail: `docs/data/${sport}.json has been served from retention for ${retained.consecutiveRetains || "?"} consecutive run(s) — no fresh fetch in ${staleDays} day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy${onBoard > 0 ? ", and the board hides it because another source covers this sport" : ""}.`,
+					consecutiveRetains: retained.consecutiveRetains || null,
+					staleDays,
+					severity: "high",
+					detectedAt: iso(now),
+				});
+			}
+		}
+
 		if (onBoard > 0) continue; // covered by some source — not a coverage problem
 
-		const data = sources?.[sport];
 		if (data == null) {
 			anomalies.push({ sport, issue: "file-missing", detail: `docs/data/${sport}.json is absent and no ${sport} events on the board — fetcher may have failed`, severity: "medium", detectedAt: iso(now) });
 			continue;
@@ -421,7 +461,7 @@ function main() {
 		anomalyCount: anomalies.length,
 		gaps: allGaps,
 		anomalies,
-		note: "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog.",
+		note: "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog.",
 	};
 	if (demand != null) out.demand = demand;
 	writeJsonPretty(path.join(dataDir, "coverage-gaps.json"), out);

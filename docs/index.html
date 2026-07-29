@@ -236,7 +236,14 @@
 		window.ssBootGate = function (dashboard) {
 			const tokenSet = window.SPORTIVISTA_ICLOUD && window.SPORTIVISTA_ICLOUD.apiToken;
 			if (!window.ssICloud || typeof ssICloud.gate !== 'function' || !tokenSet) {
-				dashboard.init(); // no gate configured → open (local dev / stripped build)
+				// No gate configured → open (local dev / stripped build / the visual-QA
+				// harness, which serves a tokenless icloud-config.js because the real web
+				// token is origin-locked and 127.0.0.1 can never authenticate). `gated` is
+				// baked into <body> in the markup, so this path MUST take it off itself —
+				// only reveal() did, which meant the documented "open" path still rendered
+				// a blank page and visual-qa photographed the sign-in card for weeks.
+				document.body.classList.remove('gated');
+				dashboard.init();
 				return;
 			}
 			let tries = 0;

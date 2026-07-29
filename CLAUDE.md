@@ -44,7 +44,7 @@ Two kinds of scheduled work:
 - `scripts/fetch-tvkampen.js` → `tv-listings.json` — Norwegian TV/streaming **ground truth** for football (tvkampen.com, today+2 days; lib: `scripts/lib/tvkampen-scraper.js`)
 - `scripts/build-events.js` → `events.json` — **preserves `source: "ai-research"` events** from the previous build (dedupe key `sport|title|time`), publishes `tracked.json` to `docs/data/`
 - `scripts/validate-events.js` — schema + AI-research contract (high confidence ⇒ 2+ evidence URLs; warns on near-term events missing streaming)
-- `scripts/detect-coverage-gaps.js` → `coverage-gaps.json` — recall watch (mechanical, recall-biased; agents triage + cross-check the web). Three signals: **entity gaps** (tracked entity in RSS headlines with no upcoming event, or one only far out while the news says imminent — "i dag"/"denne helgen"), **sport gaps** (a followed sport is imminent in the news but absent from the board soon — the ESPN-blind-spot catcher, e.g. F1 weekends ESPN mis-dates to Friday), and **source anomalies** (a fetcher's own file is missing/empty/dropping events *and the board lacks that sport* — coverage-first, so AI-research-filled sports like chess/cycling don't false-flag)
+- `scripts/detect-coverage-gaps.js` → `coverage-gaps.json` — recall watch (mechanical, recall-biased; agents triage + cross-check the web). Three signals: **entity gaps** (tracked entity in RSS headlines with no upcoming event, or one only far out while the news says imminent — "i dag"/"denne helgen"), **sport gaps** (a followed sport is imminent in the news but absent from the board soon — the ESPN-blind-spot catcher, e.g. F1 weekends ESPN mis-dates to Friday), and **source anomalies** (a fetcher's own file is missing/empty/dropping events *and the board lacks that sport* — coverage-first, so AI-research-filled sports like chess/cycling don't false-flag). One anomaly deliberately ESCAPES the coverage-first gate: **`stale-retained`** (high) — `retainLastGood` re-serves the last good file when a fetch comes back empty and stamps `_retained.consecutiveRetains`, and nothing used to read that stamp, so a dead fetcher stayed invisible as long as something else covered the sport (football.json sat frozen on the 19 July World Cup final for 137 runs while research hand-filled Eliteserien). A fetcher that has stopped producing is broken whether or not the board hides it
 - `scripts/aggregate-calibration.js` → `calibration.json` — mechanical per-source trust stats from `calibration-ledger.jsonl` (180-day window, reliability withheld under 5 checks)
 - `scripts/build-ics.js` — calendar export
 - Commits `docs/data/` directly to main, then — only when data changed — **auto-publishes** by calling `preview-deploy.yml` via `workflow_call`. (A `GITHUB_TOKEN` push can't *trigger* a workflow, so the pipeline invokes the deploy directly instead of relying on `preview-deploy`'s `push` trigger; no PAT needed. `preview-deploy` keeps `concurrency: pages-deploy`, which `workflow_call` honors, so a called deploy still serialises with merge-triggered ones — never two Pages deploys at once.)
@@ -297,7 +297,7 @@ matrisen per flate). Les den relevante FØR du planlegger/bygger.
 - `npm run build` — fetch data + build events + calendar
 - `npm run build:events` / `npm run validate:data` / `npm run build:calendar`
 - `npm run fetch:results`
-- `npm test` — vitest, 44 focused files (648 tests), a few seconds
+- `npm test` — vitest, 74 focused files (1218 tests), a few seconds
 - `npm run screenshot` — Playwright dashboard screenshot (`node scripts/screenshot.js out.png --width=1280 --full-page`)
 
 ## Conventions
@@ -310,9 +310,9 @@ matrisen per flate). Les den relevante FØR du planlegger/bygger.
 
 ## Testing
 
-`tests/` — 44 files / 648 tests, all fast and network-free:
+`tests/` — 74 files / 1218 tests, all fast and network-free:
 - Pipeline: `build-events`, `build-events-schema`, `build-events-degrade` (WP-94 degrade-gracefully gate), `events-schema`, `validate-events`, `build-ics`, `build-entities`, `build-manifest`, `news` (news.json pointer build), `detect-coverage-gaps`, `aggregate-calibration`, `integration-pipeline` (spawn scripts against temp `SPORTSYNC_DATA_DIR`/`SPORTSYNC_CONFIG_DIR`)
-- Fetchers: `fetch-results`, `fetch-results-golden` (byte-identical output freeze), `fetch-rss`, `fetch-standings`, `f1-fetcher`, `esports`, `golf`
+- Fetchers: `fetch-results`, `fetch-results-golden` (byte-identical output freeze), `fetch-rss`, `fetch-standings`, `f1-fetcher`, `esports`, `golf`, `football-fetcher` (coverage is the CATALOG's call, not the owner's follow list — plus the ESPN→Norwegian club naming)
 - Libs: `helpers`, `event-normalizer`, `response-validator`, `llm-client` (mocked fetch), `tvkampen-scraper`, `pgatour-scraper`, `norwegian-rights`, `usage`, `usage-gate` (freshness-aware skip logic), `escalate-research` (scout/coverage-critic dispatch), `app-version` (iOS «har jeg siste?» half), `asc-api` (App Store Connect release-lane client), `readme-status`, `merge-gate`, `apply-follow-request`
 - Client: `dashboard-cards` — loaded via `tests/helpers/load-client.js` (vm sandbox, no jsdom); `feed-vectors` (golden personalisation vectors, see `tests/fixtures/feed-vectors/DIVERGENCES.md`)
 - Coherence: `agent-prompts` (prompt contracts match client renderers; scans every `scripts/agents/*.md` for skill references), `workflows` (YAML references existing files), `interests-schema`, `tracked-schema`, `catalog-schema` (the AI-managed coverage compass), `design-tokens` (`design/tokens.json` locks shipped CSS/Swift reality), `ios-dynamic-type-gate` (HIG gate: no isolated `.system(size:)` in `ios/Sportivista/`), `hooks` (the safety hooks)
