@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-07-28T10:31:47Z",
+  "checkedAt": "2026-07-29T10:34:33Z",
   "widths": [375, 393, 900],
   "verdict": "issues",
   "findings": [
@@ -23,9 +23,9 @@
     }
   ],
   "notes": [
-    "Unchanged repeat of the 2026-07-27 finding: the gate is a deliberate owner decision (documented inline in index.html around the auth-gate markup — 'eier-beslutning 21.07', body.gated hides all content until Sign in with Apple succeeds). `git log --since=2026-07-27` shows no commit touching index.html, icloud-sync.js, icloud-config.js, or the .auth-gate CSS rules in base.css other than an unrelated self-repair merge (tour-de-france entity restore), so nothing has changed in this area since the last check.",
+    "Unchanged repeat of the 2026-07-27/28 findings: the gate is a deliberate owner decision (documented inline in index.html around the auth-gate markup — 'eier-beslutning 21.07', body.gated hides all content until Sign in with Apple succeeds). `git log --since=2026-07-28 -- docs/index.html docs/js/icloud-sync.js docs/js/icloud-config.js docs/css/base.css` shows only the large self-repair commit (627a130) that restored a batch of previously untracked/missing repo files (workflows, skills, base.css itself as a 'new file' in git, etc.) — a repo-hygiene fix, not a change to the auth-gate markup, logic, or CSS rules. The gate text/behaviour is byte-identical to the prior run.",
     "Could not assess ANY of the correctness/layout checklist (match name truncation, streaming channel/foreign-broadcaster check, times, flags/crests, must-see accent, header/footer alignment) at any width — everything behind the auth gate is unreachable without a successful Apple sign-in, and this screenshot harness has no network path to Apple's CloudKit web services.",
-    "The gate screen itself (wordmark, tagline, lead copy, error text) remains well laid out at all three widths: text wraps cleanly, no horizontal overflow, no clipping, calm and centered, single amber accent on the colon — same visual quality as the prior run.",
-    "Flagging high again (not escalating further) purely because it means visual QA cannot verify the actual product at all, run after run, in this offline harness — this is the same standing gap noted last time, not a new regression. A human should confirm whether real signed-in users in production see the dashboard fine (this may be purely an artifact of the no-network screenshot environment) and whether the empty sign-in-button-on-failure state (medium finding above) also occurs for real users whose CloudKit auth fails (e.g. Safari private browsing / blocked third-party cookies), since that would be a genuine dead end with no retry control."
+    "The gate screen itself (wordmark, tagline, lead copy, error text) remains well laid out at all three widths: text wraps cleanly, no horizontal overflow, no clipping, calm and centered, single amber accent on the colon — same visual quality as the prior two runs.",
+    "Flagging high again (not escalating further) purely because it means visual QA cannot verify the actual product at all, run after run, in this offline harness — this is the same standing gap noted in the last two checks, not a new regression. A human should confirm whether real signed-in users in production see the dashboard fine (this may be purely an artifact of the no-network screenshot environment) and whether the empty sign-in-button-on-failure state (medium finding above) also occurs for real users whose CloudKit auth fails (e.g. Safari private browsing / blocked third-party cookies), since that would be a genuine dead end with no retry control."
   ]
 }
