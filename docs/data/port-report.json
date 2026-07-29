@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-29T05:45:07.780Z",
+  "generatedAt": "2026-07-29T07:41:04.025Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "red",
+    "coverage": "yellow",
     "amendRate": "green",
     "silentStops": "yellow",
     "participantStatus": "green"
@@ -19,28 +19,35 @@
     ]
   },
   "coverage": {
-    "openGaps": 2,
+    "openGaps": 3,
     "bySeverity": {
-      "high": 1,
-      "medium": 1,
+      "high": 0,
+      "medium": 3,
       "low": 0
     },
-    "oldestGapAgeDays": 0.92,
+    "oldestGapAgeDays": 0.05,
     "escalatable": 0,
-    "catalogMatched": 2,
-    "auditedAt": "2026-07-28T07:40:00Z",
+    "catalogMatched": 3,
+    "auditedAt": "2026-07-29T06:32:00Z",
     "gaps": [
       {
-        "interest": "Eliteserien (tier1 wholesale-turnering + sporet liga) — runde 16 og resten av august-rundene",
-        "severity": "high",
-        "ageDays": 0.92,
+        "interest": "Friidrett (tier1 wholesale) — Wanda Diamond League gjenopptas i august",
+        "severity": "medium",
+        "ageDays": 0.05,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
-        "interest": "Golf (tier1 wholesale) — PGA Tour Rocket Classic",
+        "interest": "Sykkel (tier1 wholesale) — Tour de Pologne 2026 (Uno-X)",
         "severity": "medium",
-        "ageDays": 0.92,
+        "ageDays": 0.05,
+        "recurrences": 0,
+        "catalogMatched": true
+      },
+      {
+        "interest": "Eliteserien (tier1-turnering + sporet liga) — runde 17 (~14.–17. aug)",
+        "severity": "medium",
+        "ageDays": 0.05,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -137,26 +144,26 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-07-29T05:45:05.272Z",
+    "buildCheckedAt": "2026-07-29T07:41:01.695Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-07-29T01:54:07.947Z",
-    "manifestAgeHours": 3.85,
+    "manifestGeneratedAt": "2026-07-29T05:45:10.624Z",
+    "manifestAgeHours": 1.93,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-07-26T15:02:01.492Z",
-        "ageHours": 62.72
+        "ageHours": 64.65
       },
       {
         "file": "football.json",
         "sourceLastUpdated": "2026-07-19T17:56:30.377Z",
-        "ageHours": 227.81
+        "ageHours": 229.74
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-07-28T08:00:54Z",
-    "verifyAgeHours": 21.74,
+    "verifyAgeHours": 23.67,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
