@@ -190,6 +190,41 @@ describe("detectSourceAnomalies", () => {
 		expect(detectSourceAnomalies({ sources: healthy(), events: boardWithAll(), now: NOW })).toEqual([]);
 	});
 
+	// The football.json regression: the fetcher stopped producing on 19 July 2026 and
+	// retainLastGood re-served the last good copy 137 runs in a row. Nothing noticed,
+	// because the research agent was hand-filling Eliteserien as `source: "ai-research"`
+	// — so the board was covered and the coverage-first gate skipped the sport entirely.
+	describe("stale-retained (escapes the coverage-first gate)", () => {
+		const retainedFor = (days, runs) => {
+			const s = healthy();
+			const stamp = new Date(NOW - days * 86400000).toISOString();
+			s.football._retained = { since: stamp, consecutiveRetains: runs, lastFreshFetch: stamp };
+			return s;
+		};
+
+		it("flags a chronically retained file EVEN WHEN the board is fully covered", () => {
+			const a = detectSourceAnomalies({ sources: retainedFor(9, 137), events: boardWithAll(), now: NOW });
+			const hit = a.find((x) => x.sport === "football");
+			expect(hit).toMatchObject({ issue: "stale-retained", severity: "high", consecutiveRetains: 137, staleDays: 9 });
+			expect(hit.detail).toMatch(/137 consecutive run/);
+		});
+
+		it("stays quiet for an ordinary short retention lull", () => {
+			const a = detectSourceAnomalies({ sources: retainedFor(1, 20), events: boardWithAll(), now: NOW });
+			expect(a.find((x) => x.sport === "football")).toBeUndefined();
+		});
+
+		it("stays quiet once the fetcher produces fresh data again", () => {
+			expect(detectSourceAnomalies({ sources: healthy(), events: boardWithAll(), now: NOW })).toEqual([]);
+		});
+
+		it("survives a retention stamp with no parseable date", () => {
+			const s = healthy();
+			s.football._retained = { consecutiveRetains: 500 };
+			expect(detectSourceAnomalies({ sources: s, events: boardWithAll(), now: NOW })).toEqual([]);
+		});
+	});
+
 	it("stays quiet when the fetcher file is empty but the board is covered (AI research)", () => {
 		// chess/cycling have no API and are filled by research — an empty file is expected.
 		const s = healthy();

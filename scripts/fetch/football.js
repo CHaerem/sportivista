@@ -14,6 +14,58 @@ const catalog = readJsonIfExists(path.join(__dirname, "..", "config", "catalog.j
 const interests = readJsonIfExists(path.join(__dirname, "..", "config", "interests.json")) || {};
 const FAVORITE_TEAMS = catalog.tier2?.teams || interests.alwaysTrack?.teams || ["Barcelona", "Liverpool", "Lyn"];
 
+// ESPN club names for the Norwegian leagues, mapped to what a Norwegian reader
+// actually calls the club. Only clubs where ESPN differs are listed — anything
+// unmapped passes through untouched, so a promoted club is never mangled, just
+// left as ESPN spells it. Derived from ESPN's own nor.1 `teams` endpoint (its 16
+// `displayName`s), not guessed. NB: ESPN's per-event `name` ("Hamarkameratene at
+// Valerenga") is ASCII-folded even where `team.displayName` has the diacritics
+// right ("Vålerenga") — which is why we rebuild the title from the team names
+// instead of trusting `event.name`.
+const ESPN_CLUB_NB = {
+	"Hamarkameratene": "HamKam",
+	"Bodo/Glimt": "Bodø/Glimt",
+	"Lillestrom": "Lillestrøm",
+	"Tromso": "Tromsø",
+	"SK Brann": "Brann",
+	"IK Start": "Start",
+	"Viking FK": "Viking",
+	"Kristiansund BK": "Kristiansund",
+	"Sarpsborg FK": "Sarpsborg 08",
+};
+
+/**
+ * Is this a domestic Norwegian league fixture? Matched on the tournament label rather
+ * than `leagueCode`, because EventNormalizer drops `leagueCode` and this runs after
+ * normalisation. Eliteserien and OBOS-ligaen are the two leagues sports-config fetches
+ * (nor.1 / nor.2); OBOS also arrives from fotball.no already labelled.
+ */
+export function isNorwegianLeagueEvent(e) {
+	const hay = `${e?.tournament || ""} ${e?.meta || ""} ${e?.leagueName || ""}`.toLowerCase();
+	return /eliteserien|obos/.test(hay) || String(e?.leagueCode || "").startsWith("nor");
+}
+
+export function norwegianClubName(name) {
+	const n = String(name || "").trim();
+	return ESPN_CLUB_NB[n] || n;
+}
+
+/**
+ * Rewrite an ESPN match from a Norwegian league into the board's own voice:
+ * canonical club names and the "Hjemme – Borte" title every other football row
+ * uses. Mutates in place. Without this the static fetcher emitted ESPN's English
+ * "Sandefjord at Fredrikstad" onto a Norwegian-language board — fine while the
+ * research agent was hand-filling every round, glaring once the fetcher is the
+ * one supplying rounds nobody has written by hand.
+ */
+export function norwegianiseMatch(event) {
+	if (!event?.homeTeam || !event?.awayTeam) return event;
+	event.homeTeam = norwegianClubName(event.homeTeam);
+	event.awayTeam = norwegianClubName(event.awayTeam);
+	event.title = `${event.homeTeam} – ${event.awayTeam}`;
+	return event;
+}
+
 export class FootballFetcher extends ESPNAdapter {
 	constructor() {
 		super(sportsConfig.football);
@@ -73,6 +125,7 @@ export class FootballFetcher extends ESPNAdapter {
 					// It's an ESPN event, transform it
 					const event = this.transformESPNEvent(item);
 					if (event) {
+						if (String(item.leagueCode || "").startsWith("nor")) norwegianiseMatch(event);
 						event.isFavorite = this.checkFavorite(event.homeTeam, event.awayTeam);
 						const normalized = EventNormalizer.normalize(event, this.config.sport);
 						if (normalized && EventNormalizer.validateEvent(normalized)) {
@@ -93,27 +146,35 @@ export class FootballFetcher extends ESPNAdapter {
 		return matchInterest(hay, FAVORITE_TEAMS, { sport: "football" }) != null;
 	}
 
+	/**
+	 * No coverage FILTER (see the note below) — but coverage does need an ORDER, because
+	 * `applyFilters` slices to `maxEvents` (30) right after this runs. From mid-August
+	 * the Premier League, La Liga and the Champions League are all in season at once, and
+	 * a 7-day window across seven leagues comfortably exceeds 30. Whatever falls past the
+	 * cut is decided here, so the domestic leagues must be ahead of it: a Norwegian sports
+	 * board that drops Eliteserien to make room for a midweek La Liga fixture has its
+	 * priorities inverted — and it would have failed the same silent way as the bug above,
+	 * with the file merely looking healthy. Norwegian leagues first, then the adapter's own
+	 * `focused` ordering (owner-relevant ahead of the rest) decides the remainder.
+	 */
 	applyCustomFilters(events) {
-		const filtered = [];
-		
-		for (const event of events) {
-			const isNorwegianLeague = event.leagueCode?.startsWith("nor") || 
-									  event.tournament?.includes("OBOS") ||
-									  event.tournament?.includes("Eliteserien");
-			
-			const isInternational = event.leagueCode === "fifa.world";
-			
-			if (isNorwegianLeague || isInternational) {
-				if (event.norwegian) {
-					filtered.push(event);
-				}
-			} else {
-				filtered.push(event);
-			}
-		}
-		
-		return super.applyCustomFilters(filtered);
+		const domestic = [], rest = [];
+		for (const e of events) (isNorwegianLeagueEvent(e) ? domestic : rest).push(e);
+		return [...domestic, ...super.applyCustomFilters(rest)];
 	}
+
+	// NB (WP-96): there is deliberately NO coverage filter here. This override used to
+	// keep a Norwegian-league or World Cup match ONLY when `event.norwegian` was true —
+	// and `event.norwegian` is the OWNER's precision list (sports-config `norwegian.teams`
+	// = Lyn / Norge). Lyn plays in OBOS-ligaen, so EVERY Eliteserien match failed the gate
+	// and football.json went empty; `retainLastGood` then froze the last non-empty file
+	// (the 19 July World Cup final) for 137 consecutive runs while the board looked fine
+	// because the research agent was hand-filling each round as `source: "ai-research"`.
+	//
+	// `football` is catalog tier1 — covered WHOLESALE. Coverage is the catalog's call
+	// (build-events' `isCovered`), never one person's follow list; owner precision belongs
+	// in the on-device lens (WP-131). So the fetcher keeps what it fetches and lets the
+	// adapter's `focused` mode order Norwegian-interest matches first under `maxEvents`.
 }
 
 export async function fetchFootballESPN() {
