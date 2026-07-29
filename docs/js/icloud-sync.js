@@ -162,6 +162,27 @@ window.ssICloud = (function () {
 		const onResync = (opts && opts.onResync) || (() => {});
 		const gateEl = () => document.getElementById('auth-gate');
 		const errEl = () => document.getElementById('auth-error');
+		// A calm retry control revealed ONLY on an auth error so a failed sign-in
+		// isn't a dead end (the error copy tells the user to reload but the gate
+		// otherwise has no button once CloudKit's own control fails to render).
+		// index.html ships it as static markup; on pages that don't (gate-boot's
+		// injected overlay) it's created on demand.
+		const retryEl = () => document.getElementById('auth-retry');
+		const hideRetry = () => { const r = retryEl(); if (r) r.hidden = true; };
+		const showRetry = () => {
+			const g = gateEl(); if (!g) return;
+			let r = retryEl();
+			if (!r) {
+				r = document.createElement('button');
+				r.id = 'auth-retry';
+				r.type = 'button';
+				r.className = 'auth-retry';
+				r.textContent = 'Last inn på nytt';
+				(g.querySelector('.auth-gate-inner') || g).appendChild(r);
+			}
+			r.onclick = () => window.location.reload();
+			r.hidden = false;
+		};
 		// Reveal AT MOST ONCE per auth (setUpAuth AND whenUserSignsIn can both fire on
 		// a fresh sign-in — without this they'd each run a sync and race a 409).
 		// Reset on sign-out so a re-sign-in reveals again.
@@ -182,12 +203,13 @@ window.ssICloud = (function () {
 				if (el && typeof el.click === 'function') el.click();
 			});
 		};
-		const showGate = () => { revealed = false; const g = gateEl(); if (g) g.hidden = false; if (document.body) document.body.classList.add('gated'); const l = signOutLink(); if (l) l.hidden = true; };
-		const showError = (m) => { showGate(); const e = errEl(); if (e) { e.textContent = m; e.hidden = false; } };
+		const showGate = () => { revealed = false; const g = gateEl(); if (g) g.hidden = false; if (document.body) document.body.classList.add('gated'); const l = signOutLink(); if (l) l.hidden = true; hideRetry(); };
+		const showError = (m) => { showGate(); const e = errEl(); if (e) { e.textContent = m; e.hidden = false; } showRetry(); };
 		const reveal = async () => {
 			if (revealed) return;
 			revealed = true;
 			const e = errEl(); if (e) e.hidden = true;
+			hideRetry();
 			try { await sync(); } catch { /* offline-first: reveal on the local profile anyway */ }
 			onAuthed();
 			if (document.body) document.body.classList.remove('gated');
