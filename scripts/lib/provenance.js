@@ -62,6 +62,44 @@ export function urlBelongsToSource(url, source) {
 }
 
 /**
+ * Alle domener autoritetskartet registrerer som LOOKALIKES — et domene som poserer
+ * som arrangøren uten å være den (franceletour.com ved siden av ekte letour.fr).
+ */
+export function lookalikeHosts(authority) {
+	const out = new Set();
+	for (const comp of authority?.competitions || []) {
+		for (const d of comp.lookalikes || []) {
+			const h = String(d || "").trim().toLowerCase().replace(/^www\./, "");
+			if (h) out.add(h);
+		}
+	}
+	return out;
+}
+
+/**
+ * Fjern evidens-URLer som serveres av et kjent lookalike-domene.
+ *
+ * `deriveProvenance` nekter allerede å SITERE en lookalike, men den flate
+ * `evidence`-lista er det ⓘ-modalen rendrer til brukeren (detail.js) — så en
+ * lookalike som blir stående der vises fortsatt som «kilde N». Det var nøyaktig
+ * tilstanden da denne ble skrevet: franceletour.com sto som evidens på en
+ * TdF-etappe, mens letour.fr ikke forekom én eneste gang i hele filen.
+ *
+ * Å fjerne den gjør eventet ÆRLIGERE, ikke fattigere: mister det sin eneste
+ * tidskilde, er det nettopp det «weak time basis»-varselet skal telle.
+ * Returnerer { urls, removed }.
+ */
+export function stripLookalikeEvidence(urls, hosts) {
+	if (!Array.isArray(urls) || !hosts || hosts.size === 0) return { urls: urls || [], removed: 0 };
+	const kept = urls.filter((u) => {
+		const h = hostOfUrl(u);
+		if (!h) return true; // uparsbar — la den stå, dette er ikke en URL-validator
+		return ![...hosts].some((bad) => h === bad || h.endsWith(`.${bad}`));
+	});
+	return { urls: kept, removed: urls.length - kept.length };
+}
+
+/**
  * Slå opp konkurransen et event hører til i autoritetskartet: samme sport +
  * substring-treff i tournament/meta/title. Ved overlappende mønstre vinner det
  * LENGSTE treffet ("tour de france femmes" foran "tour de france").
