@@ -1,7 +1,7 @@
 {
 	"$schema": "./sources.schema.json",
 	"reviewedAt": "2026-07-29",
-	"notes": "WP-240 · Kilderegister med rettslig grunnlag. Registeret svarer på tre spørsmål per kilde: hvem SKAPER faktumet, hva sier vilkårene om automatisert tilgang, og har rettighetshaveren tatt DSM art. 4-forbehold mot tekst- og datautvinning. Det finnes fordi research-laget i dag siterer det som er PRAKTISK framfor det som er AUTORITATIVT — som er både den svakeste datakvaliteten og den svakeste rettslige posisjonen samtidig.\n\nSEEDET slik (29.07.2026, mekanisk): (1) hver kilde en fetcher faktisk henter — scripts/fetch/*.js, scripts/config/sports-config.js, scripts/fetch-rss.js, scripts/fetch-standings.js, scripts/fetch-results.js, scripts/lib/tvkampen-scraper.js, scripts/lib/pgatour-scraper.js; (2) hvert domene med ≥2 forekomster i docs/data/events.json (evidence + verificationSources) eller docs/data/calibration-ledger.jsonl — 110 distinkte domener totalt, 62 med ≥2 bruk, 48 engangs; (3) primærkildene vi BURDE bruke, som `status: \"candidate\"`.\n\nENGANGSKILDENE (48) er BEVISST ikke oppført enkeltvis: de er nesten utelukkende arrangør- og klubbsider sitert én gang for ett event (rbk.no, wyndhamchampionship.com, tourdepologne.pl). De faller inn under rolledoktrinen — en klubbs eller arrangørs egen side er `primary` for sine egne kamper — og registreres når de gjentar seg. WP-242 (proveniens per faktum) vil tvinge dem fram som sourceId-er.\n\nÆRLIGHETSKONTRAKTEN: `unknown` er en konklusjon, ikke et tomt felt. Robots.txt er sjekket mekanisk for hver kilde her og er derfor godt dekket; VILKÅRSTEKST er lest der den finnes, og der vi ikke fant et svar står `unknown` med `basis: \"not-found\"`. Et gjettet \"permitted\" ville gjort registeret verdiløst nettopp der det trengs.\n\nTO FUNN VERDT Å MERKE SEG: (a) robots og vilkår spriker systematisk — Liquipedia og Lichess forbyr begge `/api` i robots.txt samtidig som de publiserer et API med egne vilkår, så feltene holdes adskilt; (b) Cloudflares `Content-Signal`-blokk (eliteserien.no, atptour.com) er et UTTRYKKELIG art. 4-forbehold som siterer direktivet i sin egen tekst — det er den klareste maskinlesbare reservasjonen vi møter.",
+	"notes": "WP-240 · Kilderegister med rettslig grunnlag. Registeret svarer på tre spørsmål per kilde: hvem SKAPER faktumet, hva sier vilkårene om automatisert tilgang, og har rettighetshaveren tatt DSM art. 4-forbehold mot tekst- og datautvinning. Det finnes fordi research-laget i dag siterer det som er PRAKTISK framfor det som er AUTORITATIVT — som er både den svakeste datakvaliteten og den svakeste rettslige posisjonen samtidig.\n\nSEEDET slik (29.07.2026, mekanisk): (1) hver kilde en fetcher faktisk henter — scripts/fetch/*.js, scripts/config/sports-config.js, scripts/fetch-rss.js, scripts/fetch-standings.js, scripts/fetch-results.js, scripts/lib/tvkampen-scraper.js, scripts/lib/pgatour-scraper.js; (2) hvert domene med ≥2 forekomster i docs/data/events.json (evidence + verificationSources) eller docs/data/calibration-ledger.jsonl — 110 distinkte domener totalt, 62 med ≥2 bruk, 48 engangs; (3) primærkildene vi BURDE bruke, som `status: \"candidate\"`.\n\nENGANGSKILDENE (48) er BEVISST ikke oppført enkeltvis: de er nesten utelukkende arrangør- og klubbsider sitert én gang for ett event (rbk.no, wyndhamchampionship.com, tourdepologne.pl). De faller inn under rolledoktrinen — en klubbs eller arrangørs egen side er `primary` for sine egne kamper — og registreres når de gjentar seg. WP-242 (proveniens per faktum) vil tvinge dem fram som sourceId-er.\n\nÆRLIGHETSKONTRAKTEN: `unknown` er en konklusjon, ikke et tomt felt. Robots.txt er sjekket mekanisk for hver kilde her og er derfor godt dekket; VILKÅRSTEKST er lest der den finnes, og der vi ikke fant et svar står `unknown` med `basis: \"not-found\"`. Et gjettet \"permitted\" ville gjort registeret verdiløst nettopp der det trengs.\n\nFIRE FUNN VERDT Å MERKE SEG: (a) VILKÅR ER STRENGERE ENN ROBOTS, systematisk — UEFA publiserer et åpent kamp-sitemap i robots.txt og forbyr samtidig både skraping og KI-trening i vilkårenes § 6.2; ESPN/Disney, PGA TOUR, HLTV, ATP og A.S.O. forbyr alle roboter i vilkårstekst uten at robots.txt sier noe. Robots er ikke avtalen. (b) Å GÅ TIL PRIMÆRKILDEN GJØR IKKE TILGANGEN TILLATT: A.S.O. (Tour de France) forbyr robotuttrekk i sine juridiske merknader, akkurat som NFF og Norsk Toppfotball. Spor E blir derfor presisert, ikke omgjort — primærkilden er fortsatt riktig kilde til FAKTUMET og den med svakest databasevern over sitt eget program, men bruken må hvile på journalistisk volum, attribusjon og eventuelt samtykke, ikke på systematisk uttrekk. (c) Cloudflares `Content-Signal` (eliteserien.no, atptour.com) er det klareste MASKINLESBARE forbeholdet vi møter — det siterer art. 4 i sin egen tekst. Ingen kilde i registeret bruker TDM Reservation Protocol. (d) TO KILDER ER FAKTISK ÅPNE: Wikipedia (CC BY-SA 4.0 — attribusjon og del-på-samme-vilkår PÅKREVD) og Lichess' databaseeksporter (CC0). Liquipedia er CC-BY-SA 3.0 med et uttrykkelig tillatt API og harde, publiserte taktkrav — den ryddigste avtalen i hele registeret.\n\nOPERASJONELT (mater WP-244): hltv.org, atptour.com, uefa.com, procyclingstats.com og pgatour.com avviser klienter som ikke ser ut som nettlesere (403/503), og letour.fr var utilgjengelig fra dette miljøet. Flere kilder KREVER dessuten en identifiserende User-Agent med kontaktadresse (Wikimedia, Liquipedia, Chess.com) — dagens «SportSync/2.0» tilfredsstiller ingen av dem.",
 	"sources": [
 		{
 			"id": "aftenposten",
@@ -58,17 +58,18 @@
 				"entry-list"
 			],
 			"terms": {
-				"automatedAccess": "restricted",
-				"url": "https://www.atptour.com/robots.txt",
-				"quote": "Content-Signal: search=yes,ai-train=no,use=reference",
-				"basis": "robots-txt",
+				"automatedAccess": "forbidden",
+				"url": "https://www.atptour.com/en/terms-and-conditions",
+				"quote": "Systematic retrieval of data … including scores, statistics, and/or rankings … is prohibited",
+				"basis": "terms-page",
 				"attributionRequired": null,
 				"reviewedAt": "2026-07-29"
 			},
 			"tdmReservation": {
 				"status": "reserved",
-				"mechanism": "Cloudflare Content-Signal (`ai-train=no`) — robots.txt sier selv at dette er et uttrykkelig art. 4-forbehold; i tillegg Disallow: / for ClaudeBot, GPTBot, CCBot, Google-Extended m.fl.",
+				"mechanism": "To lag. (a) Vilkårenes § 7 forbyr systematisk uthenting av data for å bygge samling, kompilasjon, database eller katalog uten skriftlig forhåndssamtykke. (b) Cloudflare Content-Signal i robots.txt: `ai-train=no`, som robots-filen selv omtaler som et uttrykkelig art. 4-forbehold, pluss Disallow: / for ClaudeBot, GPTBot, CCBot, Google-Extended m.fl.",
 				"evidence": [
+					"https://www.atptour.com/en/terms-and-conditions",
 					"https://www.atptour.com/robots.txt"
 				],
 				"checkedAt": "2026-07-29"
@@ -79,7 +80,7 @@
 				"checkedAt": "2026-07-29"
 			},
 			"calibrationKey": "atptour.com",
-			"notes": "Autoritativ på ATP-kampprogram. Sitert 6 ganger i dagens evidens."
+			"notes": "Autoritativ på ATP-kampprogram. Sitert 6 ganger i dagens evidens. VERIFISERT 29.07 (vilkårene 403-er for vanlige klienter og måtte leses i nettleser; Florida-rett). MERK FOR WP-246: § 4A sier at «Deep linking to internal pages of the Website is expressly prohibited» — dyplenkekontrakten som WP-246 skal innføre kolliderer altså direkte med ATPs vilkår, og tennis må håndteres særskilt der."
 		},
 		{
 			"id": "autosport",
@@ -351,17 +352,19 @@
 				"news"
 			],
 			"terms": {
-				"automatedAccess": "unknown",
-				"basis": "not-found",
-				"attributionRequired": null,
+				"automatedAccess": "restricted",
+				"url": "https://www.chess.com/legal/user-agreement",
+				"quote": "may not use automated or artificial intelligence (AI) tools to … scrape, data mine, copy",
+				"basis": "terms-page",
+				"attributionRequired": true,
 				"reviewedAt": "2026-07-29"
 			},
 			"tdmReservation": {
-				"status": "none",
-				"mechanism": "robots.txt nevner ingen AI-agenter og uttrykker intet TDM-forbehold på innholdssiden. NB: api.chess.com har `User-agent: * / Disallow: /` — et generelt robotforbud på API-verten, men ikke et TDM-spesifikt forbehold.",
+				"status": "reserved",
+				"mechanism": "Brukeravtalens § 4.D forbyr uttrykkelig bruk av automatiserte eller KI-verktøy til å hente materialet «for the purpose of developing training, or improving an AI model, machine-learning system, dataset, or competitive product», med et smalt unntak for søke- og svarmotorer som indekserer offentlige sider (ikke for modelltrening). § 4.C forbyr i tillegg roboter/spidere. Robots.txt uttrykker derimot intet AI-forbehold.",
 				"evidence": [
-					"https://www.chess.com/robots.txt",
-					"https://api.chess.com/robots.txt"
+					"https://www.chess.com/legal/user-agreement",
+					"https://www.chess.com/robots.txt"
 				],
 				"checkedAt": "2026-07-29"
 			},
@@ -371,7 +374,8 @@
 				"checkedAt": "2026-07-29"
 			},
 			"calibrationKey": "chess.com",
-			"notes": "Sitert 4 ganger for sjakkoppsett. Autoritativ for egne arrangementer, aggregator for andres."
+			"notes": "Sitert 4 ganger for sjakkoppsett. Autoritativ for egne arrangementer, aggregator for andres. VERIFISERT 29.07 — og her spriker det i BEGGE retninger: det finnes et uttrykkelig åpent, autentiseringsfritt Published-Data API (https://www.chess.com/announcements/view/published-data-api), samtidig som brukeravtalen forbyr roboter mot selve nettstedet og har et av registerets skarpeste KI-treningsforbud. Kreditering kreves betinget (bl.a. ved publisering av Daily Puzzle).",
+			"rateLimit": "Published-Data API: «Your serial access rate is unlimited» så lenge man venter på forrige svar før neste forespørsel; parallelle kall kan gi 429. Krever identifiserende User-Agent med kontaktinfo."
 		},
 		{
 			"id": "chess24",
@@ -509,7 +513,7 @@
 				"checkedAt": "2026-07-29"
 			},
 			"calibrationKey": "cyclingstage.com",
-			"notes": "REGISTERETS SKREKKEKSEMPEL: mest siterte kilde i hele evidensmengden (46 bruk) og samtidig den svakeste — reliability 0,53 over 17 sjekker i docs/data/calibration.json. En aggregator uten egen autoritet, brukt der A.S.O. og UCI skulle stått. WP-245 skal hindre at den står som eneste grunnlag."
+			"notes": "REGISTERETS SKREKKEKSEMPEL: mest siterte kilde i hele evidensmengden (46 bruk) og samtidig den svakeste — reliability 0,53 over 17 sjekker i docs/data/calibration.json. En aggregator uten egen autoritet, brukt der A.S.O. og UCI skulle stått. WP-245 skal hindre at den står som eneste grunnlag. VERIFISERT 29.07: nettstedet har INGEN vilkår, ansvarsfraskrivelse, juridisk side eller opphavsrettsside i det hele tatt — kun personvernerklæring og cookies. Den eneste rettighetspåstanden er footerlinjen «© 2014 - 2026 Cyclingstage.com». Utgiveren er identifisert: en liten privat nederlandsk redaksjon (Harmen Lustig, eier og redaktør; startet av Hendrik Eppinga; hostet/utviklet av Sensi Media) — ikke et forbund og ikke en rettighetshaver. Registerets mest siterte kilde er altså en tremannsredaksjon uten vilkår, med reliability 0,53."
 		},
 		{
 			"id": "cyclinguptodate",
@@ -778,15 +782,18 @@
 				"standings"
 			],
 			"terms": {
-				"automatedAccess": "unknown",
-				"basis": "not-found",
+				"automatedAccess": "forbidden",
+				"url": "https://disneytermsofuse.com/english/",
+				"quote": "access, monitor, copy or extract … using a robot, spider, script, or other automated means",
+				"basis": "terms-page",
 				"attributionRequired": null,
 				"reviewedAt": "2026-07-29"
 			},
 			"tdmReservation": {
 				"status": "reserved",
-				"mechanism": "robots.txt på www.espn.com: Disallow: / for anthropic-ai, GPTBot, ChatGPT-User, CCBot, Google-Extended, Bytespider, FacebookBot",
+				"mechanism": "Disneys vilkårstekst tar forbeholdet TO ganger: § 2.B forbyr automatisert uttrekk «for the purposes of creating or developing any AI Tool, data mining or web scraping», og § 2.A nekter enhver rett til å bruke innholdet til «training, testing, benchmarking or validation of any artificial intelligence or machine learning tool». I tillegg robots.txt på www.espn.com: Disallow: / for anthropic-ai, GPTBot, ChatGPT-User, CCBot, Google-Extended m.fl.",
 				"evidence": [
+					"https://disneytermsofuse.com/english/",
 					"https://www.espn.com/robots.txt"
 				],
 				"checkedAt": "2026-07-29"
@@ -797,7 +804,7 @@
 				"checkedAt": "2026-07-29"
 			},
 			"calibrationKey": "espn.com",
-			"notes": "BÆREBJELKEN i den statiske pipelinen (fotball, tennis, golf, F1, tabeller, resultater) og samtidig registerets tyngste rettslige eksponering: en udokumentert intern API, en aggregator med sterkt sui generis-databasevern, og et uttrykkelig AI-forbehold i robots. COMMERCIAL.md spor B planlegger exit; spor E gjør exiten mulig ved å flytte til primærkildene."
+			"notes": "BÆREBJELKEN i den statiske pipelinen (fotball, tennis, golf, F1, tabeller, resultater) og samtidig registerets tyngste rettslige eksponering: en udokumentert intern API, en aggregator med sterkt sui generis-databasevern, og et uttrykkelig AI-forbehold i robots. COMMERCIAL.md spor B planlegger exit; spor E gjør exiten mulig ved å flytte til primærkildene. VERIFISERT 29.07, og verre enn antatt: ESPNs vilkår ER Disneys vilkår (espn.com-footerens «Terms of Use» går til disneytermsofuse.com), og de forbyr automatisert tilgang uttrykkelig, med eget AI-forbehold. `site.api.espn.com` har INGEN egne vilkår og ingen utviklerportal — developer.espn.com redirigerer til espn.com, API-roten svarer bart 403, og all «dokumentasjon» er reversert av tredjeparter på GitHub. Det er altså ikke et udokumentert API vi bruker på egen risiko; det er et udokumentert API dekket av vilkår som forbyr nettopp dette."
 		},
 		{
 			"id": "esports-world-cup",
@@ -1104,8 +1111,10 @@
 				"standings"
 			],
 			"terms": {
-				"automatedAccess": "unknown",
-				"basis": "not-found",
+				"automatedAccess": "restricted",
+				"url": "https://www.formula1.com/en/information/legal-notices.7egvZU48hzrypubGBNcQKt",
+				"quote": "not … distribute copy extract or commercially exploit such material or content",
+				"basis": "terms-page",
 				"attributionRequired": null,
 				"reviewedAt": "2026-07-29"
 			},
@@ -1123,7 +1132,7 @@
 				"checkedAt": "2026-07-29"
 			},
 			"calibrationKey": "formula1.com",
-			"notes": "Arrangøren selv — 4 av 4 kalibreringssjekker stemte. Dette er MØNSTERET registeret vil ha overalt: ESPNs F1-endepunkt feildaterer notorisk løpshelger (se .claude/skills/source-quirks), formula1.com gjør det ikke."
+			"notes": "Arrangøren selv — 4 av 4 kalibreringssjekker stemte. Dette er MØNSTERET registeret vil ha overalt: ESPNs F1-endepunkt feildaterer notorisk løpshelger (se .claude/skills/source-quirks), formula1.com gjør det ikke. VERIFISERT 29.07, og overraskende MILDT: de juridiske merknadene har ingen robot-/spider-/skrape-klausul i det hele tatt, og ingen KI- eller TDM-ordlyd. Den eneste «automatisert»-formuleringen er app-scoped. Begrensningen som gjelder er den generelle mot kommersiell utnyttelse av innholdet, og RSS-feedene er merket ikke-kommersielle. Kombinert med åpen robots.txt er dette den mest fremkommelige primærkilden i registeret — og den vi allerede vet er nøyaktig (4 av 4 kalibreringssjekker)."
 		},
 		{
 			"id": "fotball-no",
@@ -1477,16 +1486,18 @@
 				"news"
 			],
 			"terms": {
-				"automatedAccess": "unknown",
-				"basis": "not-found",
-				"attributionRequired": null,
+				"automatedAccess": "forbidden",
+				"url": "https://www.hltv.org/terms",
+				"quote": "You are not allowed to … conduct, facilitate or organize data mining or web scraping",
+				"basis": "terms-page",
+				"attributionRequired": false,
 				"reviewedAt": "2026-07-29"
 			},
 			"tdmReservation": {
-				"status": "unknown",
-				"mechanism": "robots.txt svarer 403 (Cloudflare-utfordring) — ingen direktiver kan leses",
+				"status": "reserved",
+				"mechanism": "Vilkårenes § 2.2 forbyr uttrykkelig data mining og web scraping av nettstedet og innholdet. Ingen KI-spesifikk ordlyd. (Robots.txt svarer 403 og kan ikke leses — forbeholdet står i vilkårsteksten.)",
 				"evidence": [
-					"https://www.hltv.org/robots.txt"
+					"https://www.hltv.org/terms"
 				],
 				"checkedAt": "2026-07-29"
 			},
@@ -1497,7 +1508,7 @@
 			},
 			"rateLimit": "SportSync/2.0-fetcheren henter maks 1 gang per 2 timer (scripts/fetch/esports.js)",
 			"calibrationKey": "hltv.org",
-			"notes": "16 bruk, reliability 1,0 over 7 sjekker — datakvaliteten er høy, den rettslige posisjonen usikker. Se .claude/skills/cs2-sources."
+			"notes": "16 bruk, reliability 1,0 over 7 sjekker — datakvaliteten er høy, den rettslige posisjonen usikker. Se .claude/skills/cs2-sources. VERIFISERT 29.07 (vilkårene 403-er for vanlige klienter og måtte leses i nettleser): HLTV.org A/S, dansk rett, vilkår i kraft 27.01.2025. § 2.2 forbyr data mining og skraping uttrykkelig, og § 3.2 krever lisens for enhver forretningsmessig bruk. Dette er den skarpeste konflikten i registeret mellom datakvalitet (reliability 1,0) og rettslig grunnlag — CS2-dekningen bør flyttes mot arrangørene (BLAST, ESL, Esports World Cup) og Liquipedias API."
 		},
 		{
 			"id": "ibu",
@@ -1636,7 +1647,7 @@
 				"note": "Samme A.S.O.-plattform som letour.fr: sidene er åpne, /api og /graphql sperret.",
 				"checkedAt": "2026-07-29"
 			},
-			"notes": "KANDIDAT (én bruk i dag). Arrangøren lager ruta og etappetidene."
+			"notes": "KANDIDAT (én bruk i dag). Arrangøren lager ruta og etappetidene. Merk: A.S.O. er medeier, og de juridiske merknadene på A.S.O.s øvrige rittsider forbyr uttrykkelig robotuttrekk (se `letour`). lavuelta.es sin egen vilkårsside er IKKE lest i denne gjennomgangen — den står som `unknown` inntil den er verifisert, ikke som antatt lik."
 		},
 		{
 			"id": "letour",
@@ -1661,16 +1672,19 @@
 				"entry-list"
 			],
 			"terms": {
-				"automatedAccess": "unknown",
-				"basis": "not-found",
+				"automatedAccess": "forbidden",
+				"url": "https://www.letourfemmes.fr/en/copyrights",
+				"quote": "Using a robot … in order to extract, index, explore Data … without A.S.O. prior consent",
+				"basis": "terms-page",
 				"attributionRequired": null,
 				"reviewedAt": "2026-07-29"
 			},
 			"tdmReservation": {
-				"status": "none",
-				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"status": "reserved",
+				"mechanism": "A.S.O.s juridiske merknader, § VI (User's Behavior), forbyr uttrykkelig bruk av robot eller uttrekksprogram for å hente, indeksere eller utforske «Data» uten A.S.O.s forhåndssamtykke, og A.S.O. hevder eksklusive rettigheter til alt innhold «inkludert data, statistikk». Robots.txt uttrykker derimot ingenting.",
 				"evidence": [
-					"https://www.letour.fr/robots.txt"
+					"https://www.letourfemmes.fr/en/copyrights",
+					"https://www.paris-nice.fr/en/copyrights"
 				],
 				"checkedAt": "2026-07-29"
 			},
@@ -1680,7 +1694,7 @@
 				"checkedAt": "2026-07-29"
 			},
 			"calibrationKey": "letourfemmes.fr",
-			"notes": "REGISTERETS ANDRE SKREKKEKSEMPEL, motsatt vei: A.S.O. lager ruta og starttidene, robots tillater oss å lese sidene, og det finnes intet TDM-forbehold — likevel var letour.fr IKKE sitert én eneste gang for herrenes ritt da COMMERCIAL.md ble skrevet (letourfemmes.fr var, 14 ganger). Den mest autoritative og mest tillatte kilden var den vi ikke brukte. VERIFISERT PÅ NYTT 29.07: letour.fr er fortsatt ikke sitert én gang. Verre — den ENE herre-etappen som har en Tour-lenke i evidensen, siterer «franceletour.com», et lookalike-domene som ikke er A.S.O. De øvrige herre-etappene hviler på et Brújulabike-innlegg om utgåtte ryttere. Damerittet er derimot dokumentert riktig, med letourfemmes.fr/en/overall-route som gjennomgående kilde. Samme sport, samme uke, to helt ulike kildevaner — det er nøyaktig hullet WP-241/242 skal lukke."
+			"notes": "REGISTERETS ANDRE SKREKKEKSEMPEL, motsatt vei: A.S.O. lager ruta og starttidene, robots tillater oss å lese sidene, og det finnes intet TDM-forbehold — likevel var letour.fr IKKE sitert én eneste gang for herrenes ritt da COMMERCIAL.md ble skrevet (letourfemmes.fr var, 14 ganger). Den mest autoritative og mest tillatte kilden var den vi ikke brukte. VERIFISERT PÅ NYTT 29.07: letour.fr er fortsatt ikke sitert én gang. Verre — den ENE herre-etappen som har en Tour-lenke i evidensen, siterer «franceletour.com», et lookalike-domene som ikke er A.S.O. De øvrige herre-etappene hviler på et Brújulabike-innlegg om utgåtte ryttere. Damerittet er derimot dokumentert riktig, med letourfemmes.fr/en/overall-route som gjennomgående kilde. Samme sport, samme uke, to helt ulike kildevaner — det er nøyaktig hullet WP-241/242 skal lukke. VERIFISERT 29.07 — OG DETTE KORRIGERER EN ANTAKELSE: A.S.O. FORBYR roboter i sine juridiske merknader, selv om robots.txt slipper oss inn og intet TDM-signal finnes. Å gå til primærkilden gjør altså ikke automatisk tilgangen tillatt — samme lærdom som fotball.no, nå bekreftet for sykkelens viktigste arrangør. Konklusjonen for spor E blir presisert, ikke omgjort: A.S.O. er fortsatt riktig kilde til FAKTUMET (og den med svakest databasevern over sitt eget kampprogram), men bruken må hvile på journalistisk volum og attribusjon, eventuelt samtykke — ikke på systematisk uttrekk. ÆRLIG FORBEHOLD OM VERIFISERINGEN: letour.fr selv lot seg ikke laste fra dette miljøet. Ordlyden er lest verbatim på to søster-A.S.O.-sider (letourfemmes.fr og paris-nice.fr) som kjører identisk mal og oppgir A.S.O. som utgiver. Sterkt, men indirekte belegg for letour.fr — den eksakte siden bør verifiseres separat."
 		},
 		{
 			"id": "lichess",
@@ -1700,9 +1714,11 @@
 				"results"
 			],
 			"terms": {
-				"automatedAccess": "unknown",
-				"basis": "not-found",
-				"attributionRequired": null,
+				"automatedAccess": "restricted",
+				"url": "https://lichess.org/terms-of-service",
+				"quote": "All use of our services are subject to reasonable caps, limits, restrictions … at Lichess' discretion.",
+				"basis": "terms-page",
+				"attributionRequired": false,
 				"reviewedAt": "2026-07-29"
 			},
 			"tdmReservation": {
@@ -1718,7 +1734,8 @@
 				"note": "SPRIKET I REN FORM: `Disallow: /api/` gjelder for `*`, og /api/broadcast er nøyaktig stien scripts/fetch/chess.js henter — samtidig som Lichess publiserer API-et som et åpent tilbud med egen dokumentasjon. Robots holder crawlere ute av API-et; API-vilkårene er det bindende laget. Må avklares.",
 				"checkedAt": "2026-07-29"
 			},
-			"notes": "Relayer sjakkturneringer andre arrangerer — aggregator, ikke primærkilde, men en uvanlig ærlig en."
+			"notes": "Relayer sjakkturneringer andre arrangerer — aggregator, ikke primærkilde, men en uvanlig ærlig en. VERIFISERT 29.07: API-et er uttrykkelig FORETRUKKET framfor skraping i Lichess' egne API-tips, og databaseeksportene er CC0 («for research, commercial purpose, publication, anything you like»). Vilkårene sier ingenting om lisens på LIVE API-svar, så attribusjonsplikten der er uavklart. Robots' `Disallow: /api/` er rettet mot crawlere — vilkårene og API-tipsene er det bindende laget, og de peker motsatt vei.",
+			"rateLimit": "«Only make one request at a time»; ved HTTP 429 skal man vente et helt minutt før man fortsetter (https://lichess.org/page/api-tips). Ingen tallfestede per-endepunkt-grenser er publisert."
 		},
 		{
 			"id": "liquipedia",
@@ -1738,16 +1755,19 @@
 				"channel"
 			],
 			"terms": {
-				"automatedAccess": "unknown",
-				"basis": "not-found",
-				"attributionRequired": null,
+				"automatedAccess": "restricted",
+				"url": "https://liquipedia.net/api-terms-of-use",
+				"quote": "Automated access to non-API endpoints (ie, generated HTML pages) is not permitted.",
+				"basis": "api-docs",
+				"attributionRequired": true,
 				"reviewedAt": "2026-07-29"
 			},
 			"tdmReservation": {
 				"status": "reserved",
-				"mechanism": "robots.txt: Disallow: / for ClaudeBot, Claude-Web, GPTBot, ChatGPT-User, cohere-ai, Amazonbot, meta-externalagent, YouBot",
+				"mechanism": "API-vilkårene har INGEN AI-/TDM-formulering; forbeholdet der er forbudet mot å hente HTML-sider automatisk. Det maskinlesbare forbeholdet ligger i robots.txt: Disallow: / for ClaudeBot, Claude-Web, GPTBot, ChatGPT-User, cohere-ai, Amazonbot, meta-externalagent, YouBot.",
 				"evidence": [
-					"https://liquipedia.net/robots.txt"
+					"https://liquipedia.net/robots.txt",
+					"https://liquipedia.net/api-terms-of-use"
 				],
 				"checkedAt": "2026-07-29"
 			},
@@ -1756,9 +1776,9 @@
 				"note": "`Disallow: /counterstrike/api.php` gjelder for `*` — nøyaktig endepunktet scripts/fetch/esports.js henter hver time. Liquipedia publiserer likevel API-et med egne vilkår og takt-krav; robots og API-vilkår spriker. Må avklares mot API-ToS-en før dette kan kalles rent.",
 				"checkedAt": "2026-07-29"
 			},
-			"rateLimit": "Fetcheren sender `Accept-Encoding: gzip` og henter maks 1 gang per time (scripts/fetch/esports.js)",
+			"rateLimit": "Fra API-vilkårene, ordrett: MediaWiki-API maks 1 forespørsel per 2 sekunder; `action=parse` maks 1 per 30 sekunder; LiquipediaDB-API maks 60 per time (krever godkjent søknad + API-nøkkel). Obligatorisk: egendefinert User-Agent med kontaktinfo, gzip-støtte, gjenbruk av HTTP-klient, caching. Brudd gir automatiske IP-utestengelser som «may result in them becoming permanent».",
 			"calibrationKey": "liquipedia.net",
-			"notes": "Eneste faktiske CS2-fetcher. Wiki-innhold er som regel CC-lisensiert med krav om kreditering — attribusjonskravet må bekreftes mot lisenssiden og legges inn her."
+			"notes": "Eneste faktiske CS2-fetcher. Wiki-innhold er som regel CC-lisensiert med krav om kreditering — attribusjonskravet må bekreftes mot lisenssiden og legges inn her. VERIFISERT 29.07: innholdet er CC-BY-SA 3.0 og krever at Liquipedia krediteres som kilde — attribusjonsplikten er altså reell, ikke antatt. Viktigst for oss: API-BRUK ER UTTRYKKELIG TILLATT så lenge takten og UA-kravet følges, mens HTML-skraping er forbudt. Vi bruker API-et (riktig vei), men fetcherens UA («SportSync/2.0 (https://github.com; …)») mangler en ekte kontaktadresse og takten er ikke eksplisitt håndhevet — begge deler er WP-244-arbeid. Robots' `Disallow: /counterstrike/api.php` er dermed rettet mot crawlere, ikke mot API-klienter som følger vilkårene."
 		},
 		{
 			"id": "manchester-united",
@@ -2201,16 +2221,18 @@
 				"entry-list"
 			],
 			"terms": {
-				"automatedAccess": "unknown",
-				"basis": "not-found",
+				"automatedAccess": "forbidden",
+				"url": "https://www.pgatour.com/company/terms-of-use",
+				"quote": "shall not use … robots, spiders, scrapers, webcrawlers … that monitor, copy or download data",
+				"basis": "terms-page",
 				"attributionRequired": null,
 				"reviewedAt": "2026-07-29"
 			},
 			"tdmReservation": {
-				"status": "none",
-				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"status": "reserved",
+				"mechanism": "Vilkårenes § 7(C) forbyr automatiserte prosesser som kopierer eller laster ned innhold. Ingen KI-spesifikk ordlyd. Robots.txt uttrykker ingenting.",
 				"evidence": [
-					"https://www.pgatour.com/robots.txt"
+					"https://www.pgatour.com/company/terms-of-use"
 				],
 				"checkedAt": "2026-07-29"
 			},
@@ -2221,7 +2243,7 @@
 			},
 			"rateLimit": "scripts/lib/pgatour-scraper.js sender UA «Mozilla/5.0 (compatible; SportSync/1.0)» — bør erstattes av en ærlig UA med kontaktadresse i WP-244",
 			"calibrationKey": "pgatour.com",
-			"notes": "Arrangøren selv, og allerede en egen scraper (scripts/lib/pgatour-scraper.js). Riktig mønster: ESPNs golf-endepunkt er sekundært, ikke primært."
+			"notes": "Arrangøren selv, og allerede en egen scraper (scripts/lib/pgatour-scraper.js). Riktig mønster: ESPNs golf-endepunkt er sekundært, ikke primært. VERIFISERT 29.07 — og dette RIVER GRUNNEN under dagens scraper: § 7(C) forbyr scrapers uttrykkelig, og § 7(D) forbyr i tillegg bruk av «real time scoring, statistics or other data (whether current or archival)» til «sale, license or other commercial purposes» uten lisens. Personlig, ikke-kommersiell og journalistisk bruk er tillatt — altså er dagens hobbybruk innenfor, mens et betalt produkt (COMMERCIAL.md) ikke er det. scripts/lib/pgatour-scraper.js må enten få lisens eller vike for DP World Tour/ESPN-veien."
 		},
 		{
 			"id": "postnord-danmark-rundt",
@@ -2277,8 +2299,10 @@
 				"standings"
 			],
 			"terms": {
-				"automatedAccess": "unknown",
-				"basis": "not-found",
+				"automatedAccess": "restricted",
+				"url": "https://www.premierleague.com/en/terms-and-conditions",
+				"quote": "you may not otherwise reproduce, re-utilise or redistribute it (including … creating a database)",
+				"basis": "terms-page",
 				"attributionRequired": null,
 				"reviewedAt": "2026-07-29"
 			},
@@ -2295,7 +2319,7 @@
 				"note": "`*` sperrer kun spørringsparametre (utm_*, fbclid, …) — kamp- og tabellsider er åpne.",
 				"checkedAt": "2026-07-29"
 			},
-			"notes": "KANDIDAT, og den mest verdifulle av dem for fotball: ligaen setter selv avsparkstidene som i dag hentes fra ESPN. Merk COMMERCIAL.md: sui generis-databasevernet er svakest nettopp hos den som SKAPER kampprogrammet (Football Dataco, C-604/10)."
+			"notes": "KANDIDAT, og den mest verdifulle av dem for fotball: ligaen setter selv avsparkstidene som i dag hentes fra ESPN. Merk COMMERCIAL.md: sui generis-databasevernet er svakest nettopp hos den som SKAPER kampprogrammet (Football Dataco, C-604/10). VERIFISERT 29.07: ingen robot-, skrape- eller KI-ordlyd noe sted. Bittet ligger i gjenbruks-/databaseklausulen, som er klassisk sui generis-databaserett-språk og krever skriftlig forhåndsgodkjenning for videreformidling. Merk at det er nettopp DENNE retten Football Dataco (C-604/10) svekker for den som SKAPER kampprogrammet — men klausulen er kontrakt, og kontrakt gjelder uavhengig av opphavsrett. (Bruk `/en/`-stien; varianten uten språkprefiks server et tynnere dokument.)"
 		},
 		{
 			"id": "procyclingstats",
@@ -2313,7 +2337,9 @@
 			],
 			"terms": {
 				"automatedAccess": "unknown",
-				"basis": "not-found",
+				"url": "https://www.procyclingstats.com/info/terms-and-conditions",
+				"quote": "License, sell, rent, lease, assign, distribute … or otherwise commercially exploit the website",
+				"basis": "terms-page",
 				"attributionRequired": null,
 				"reviewedAt": "2026-07-29"
 			},
@@ -2331,7 +2357,7 @@
 				"checkedAt": "2026-07-29"
 			},
 			"calibrationKey": "procyclingstats.com",
-			"notes": "Sykkelsportens grundigste database — og nettopp derfor den med sterkest sui generis-databasevern (investering i innsamling og verifisering). Teknisk åpen, rettslig den typen kilde spor E vil BORT fra som grunnlag."
+			"notes": "Sykkelsportens grundigste database — og nettopp derfor den med sterkest sui generis-databasevern (investering i innsamling og verifisering). Teknisk åpen, rettslig den typen kilde spor E vil BORT fra som grunnlag. VERIFISERT 29.07 at vilkårene ER LEST og er TAUSE: siden er en Termify-mal («This Terms & Conditions was created with Termify») uten ett eneste treff på skraping, roboter, crawlere, automatisert tilgang, data mining eller KI. Den er heller ikke lenket fra footeren (funnet via /info/sitemap). Fravær av forbud er ikke tillatelse — PCS er et privat nederlandsk selskap med databaserett tilgjengelig uansett hva siden sier. Det finnes et privat, søknadsbasert kommersielt API (https://www.procyclingstats.com/info/api), som er den rene veien om vi trenger dem."
 		},
 		{
 			"id": "racingnews365",
@@ -2793,16 +2819,18 @@
 				"standings"
 			],
 			"terms": {
-				"automatedAccess": "unknown",
-				"basis": "not-found",
+				"automatedAccess": "forbidden",
+				"url": "https://www.uefa.com/termsconditions/",
+				"quote": "prohibited from using automated tools, such as robots, spiders, or scripts, to scrape or collect Content",
+				"basis": "terms-page",
 				"attributionRequired": null,
 				"reviewedAt": "2026-07-29"
 			},
 			"tdmReservation": {
-				"status": "none",
-				"mechanism": "robots.txt nevner ingen AI-agenter eller TDM-forbehold",
+				"status": "reserved",
+				"mechanism": "Vilkårenes § 6.2 er registerets mest eksplisitte: samme setning forbyr både automatisert innsamling og å bruke innholdet til «to develop or train any software, model, algorithm, or AI tool», samt systematisk innsamling «to create a collection, database, or directory». Robots.txt uttrykker derimot ingenting — og publiserer til og med et kamp-sitemap.",
 				"evidence": [
-					"https://www.uefa.com/robots.txt"
+					"https://www.uefa.com/termsconditions/"
 				],
 				"checkedAt": "2026-07-29"
 			},
@@ -2812,7 +2840,7 @@
 				"checkedAt": "2026-07-29"
 			},
 			"calibrationKey": "uefa.com",
-			"notes": "Arrangør av egne turneringer — autoritativ på avsparkstid i europacupene. 7 bruk. Merk: robots publiserer et kamp-sitemap, altså en invitasjon til å lese kampdataene."
+			"notes": "Arrangør av egne turneringer — autoritativ på avsparkstid i europacupene. 7 bruk. Merk: robots publiserer et kamp-sitemap, altså en invitasjon til å lese kampdataene. VERIFISERT 29.07 (vilkårene 503-er for vanlige klienter og måtte leses i nettleser; sveitsisk rett, sist oppdatert 18.03.2025). LÆREPENGEN FRA DENNE OPPFØRINGEN: robots.txt inviterer (åpent kamp-sitemap) mens vilkårene forbyr uttrykkelig, inkludert KI-trening. Robots er ikke avtalen. 7 bruk i dagens evidens."
 		},
 		{
 			"id": "uno-x-mobility",
@@ -2938,9 +2966,11 @@
 				"results"
 			],
 			"terms": {
-				"automatedAccess": "unknown",
-				"basis": "not-found",
-				"attributionRequired": null,
+				"automatedAccess": "restricted",
+				"url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+				"quote": "automated uses of the Project Websites that are abusive or disruptive of the services",
+				"basis": "terms-page",
+				"attributionRequired": true,
 				"reviewedAt": "2026-07-29"
 			},
 			"tdmReservation": {
@@ -2957,7 +2987,8 @@
 				"checkedAt": "2026-07-29"
 			},
 			"calibrationKey": "en.wikipedia.org",
-			"notes": "NEST MEST SITERTE KILDE I HELE SYSTEMET (44 bruk) og reliability 1,0 over 6 sjekker — den er nøyaktig, men den er et REFERAT av arrangørens plan, ikke planen. COMMERCIAL.md peker på at Wikipedia var eneste verificationSource på en Tour de France-etappe. Innholdet er lisensiert med krav om kreditering; det nøyaktige lisensnavnet må bekreftes og føres inn her."
+			"notes": "NEST MEST SITERTE KILDE I HELE SYSTEMET (44 bruk) og reliability 1,0 over 6 sjekker — den er nøyaktig, men den er et REFERAT av arrangørens plan, ikke planen. COMMERCIAL.md peker på at Wikipedia var eneste verificationSource på en Tour de France-etappe. Innholdet er lisensiert med krav om kreditering; det nøyaktige lisensnavnet må bekreftes og føres inn her. VERIFISERT 29.07: teksten er lisensiert CC BY-SA 4.0 (dobbeltlisensiert med GFDL) — ATTRIBUSJON OG DEL-PÅ-SAMME-VILKÅR er påkrevd, og det er den ene forpliktelsen registeret faktisk pålegger oss i dag. Ingen TDM-forbehold: den åpne lisensen er hele historien. Vilkårene inkorporerer Wikimedias User-Agent-policy ved referanse, og fetcheren vår tilfredsstiller den ikke i dag (WP-244).",
+			"rateLimit": "Ingen tallfestet grense i vilkårene eller UA-policyen. Krav: identifiserende User-Agent med kontaktinfo på formen `<klient>/<versjon> (<kontakt>) <bibliotek>/<versjon>` — generiske agenter («curl», «Python-urllib») er ikke tillatt."
 		},
 		{
 			"id": "world-of-speed",
