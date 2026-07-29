@@ -263,17 +263,54 @@ function ssUpdatingRules(state, desiredRules, nowIso, deviceID) {
 // ---------------------------------------------------------------------------
 
 /** Bucket live rules into {followBroadly, alwaysTrack:{teams,athletes,tournaments}}.
- *  Kind is inferred from an entityId prefix or an explicit rule.kind if present. */
+ *  Kind is inferred from an entityId prefix or an explicit rule.kind if present.
+ *
+ *  WP-200 — `followBroadly` is DERIVED from the profile instead of being handed
+ *  back as `null`. It used to be null unconditionally, so `ssIsRelevant` fell
+ *  through to `cfg.followBroadlyDefault` (nine sports) and the profile could only
+ *  ever ADD to the board, never shape it: someone who picked "Formel 1" in
+ *  onboarding still got golf, cycling and biathlon.
+ *
+ *  The derivation, twinned with EffectiveInterests.merge on iOS:
+ *    • a SPORT-level rule (entity type "sport", e.g. `sport-biathlon` from the
+ *      Vintersport-pakken) ⇒ that sport is followed WHOLESALE;
+ *    • a team / athlete / tournament / league rule ⇒ no wholesale follow; it
+ *      admits events through the entity match, and its sport joins the blanket's
+ *      scope (see ssLensSportScope);
+ *    • EMPTY profile ⇒ `null` — absent, exactly as before, so a board with no
+ *      profile behaves byte-for-byte like the pre-WP-200 catalog-wide board.
+ *  The list is deduped + sorted so the projection is deterministic (and equal to
+ *  the Swift side's, which sorts too). */
 function ssProfileToInterests(state) {
 	const teams = [], athletes = [], tournaments = [];
-	for (const rule of ssLiveRules(state)) {
+	const broad = new Set();
+	const live = ssLiveRules(state);
+	for (const rule of live) {
 		const entity = { name: rule.entityName, aliases: [], sport: rule.sport || null };
-		const kind = rule.kind || ssInferKind(rule.entityId);
+		const kind = ssRuleKind(rule);
+		if (kind === 'sport' && rule.sport) broad.add(String(rule.sport).toLowerCase());
 		if (kind === 'team' || kind === 'league') teams.push(entity);
 		else if (kind === 'tournament') tournaments.push(entity);
-		else athletes.push(entity); // athlete + unknown default
+		else athletes.push(entity); // athlete + sport/category + unknown default (mirrors iOS)
 	}
-	return { followBroadly: null, alwaysTrack: { teams, athletes, tournaments } };
+	return {
+		// Absent (null) only for an EMPTY profile — the backward-compatibility
+		// guarantee. A non-empty profile always speaks explicitly, even when it
+		// follows no sport wholesale (`[]`, honoured as-is by the lens).
+		followBroadly: live.length ? [...broad].sort() : null,
+		alwaysTrack: { teams, athletes, tournaments },
+	};
+}
+
+/** The bucket kind for one live rule. The stored `kind` wins EXCEPT when the id
+ *  itself says "sport-…": a rule imported from iOS carries no `kind` at all, and
+ *  a rule stored by an older web build recorded `athlete` for a sport id (the
+ *  pre-WP-200 ssInferKind had no sport case). The id is the stable fact, so it
+ *  wins for that one kind — otherwise a wholesale sport follow would silently
+ *  degrade into an athlete named "Skiskyting" that matches nothing. */
+function ssRuleKind(rule) {
+	const inferred = ssInferKind(rule.entityId);
+	return inferred === 'sport' ? 'sport' : (rule.kind || inferred);
 }
 
 function ssInferKind(entityId) {
@@ -282,6 +319,10 @@ function ssInferKind(entityId) {
 	if (id.startsWith('league-')) return 'league';
 	if (id.startsWith('tournament-')) return 'tournament';
 	if (id.startsWith('athlete-')) return 'athlete';
+	// WP-200: the sport-level entities (entities.json `type: "sport"`) the iOS
+	// starter packs follow — `sport-biathlon`, `sport-f1`, … They are what turns a
+	// follow into a WHOLESALE sport follow (see ssProfileToInterests).
+	if (id.startsWith('sport-')) return 'sport';
 	return 'athlete';
 }
 
@@ -530,7 +571,7 @@ if (typeof module !== 'undefined' && module.exports) {
 		ssEmptyState, ssNormalizeState, ssDeduplicateState, ssProfileMerge, ssPushIsEmpty,
 		ssPickNewerRule, ssPickNewerFact, ssReconcileNote, ssCounterMerge,
 		ssRulePayloadKey, ssFactPayloadKey, ssLensToken, ssStableStringify, ssDeepEqual,
-		ssUpdatingRules, ssLiveRules, ssProfileToInterests, ssInferKind,
+		ssUpdatingRules, ssLiveRules, ssProfileToInterests, ssInferKind, ssRuleKind,
 		ssProfileLoad, ssProfileSave, ssDeviceId, ssStateIsEmpty,
 		ssCanonicalIdMap, ssMigrateProfileIds, ssProfileMigrateStored,
 		ssProfileFollow, ssProfileUnfollow, ssProfileFollows,

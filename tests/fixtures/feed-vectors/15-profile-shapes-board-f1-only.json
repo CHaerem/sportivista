@@ -1,0 +1,86 @@
+{
+	"name": "Profile-shaped board (WP-200): an F1-only profile gets ONLY F1",
+	"description": "The WP-200 acceptance case, frozen. A user who picked just «Formel 1» in onboarding has a profile with ONE rule — the F1 tournament entity — which projects to interests with an EXPLICIT, empty followBroadly (no sport-level rule ⇒ nothing is followed wholesale) plus that one tracked tournament. Before WP-200 this board was catalog-wide: the projection returned followBroadly:null, so the lens fell back to the nine-sport default AND the norwegian/favorite/importance blanket (rule 3) was a blank cheque — golf-norsk, cycling-norsk, football-vm-final and biathlon-fav ALL reached the board of an F1-only user. They are now dropped, because rule (3) is scoped to the sports the profile covers (followBroadly ∪ every tracked entity's sport = {f1} here). Inside f1 the blanket still works: f1-imp5 has no tracked-entity match at all and is admitted on importance alone, which is the difference between a sport SCOPE and an entity GATE (contrast chess/esports in vector 14). The follow stays precise all the same — f2-sprint is an f1-sport event whose haystack names no tracked entity and carries no blanket signal, so it drops. mustWatch is empty on purpose: a tournament entity defaults to notify:false (helpers.js normalizeEntity), so following the championship shapes the board without arming the bell.",
+	"input": {
+		"now": "2026-07-13T12:00:00Z",
+		"interests": {
+			"followBroadly": [],
+			"alwaysTrack": {
+				"athletes": [],
+				"teams": [],
+				"tournaments": [
+					{ "name": "Formula 1 World Championship", "aliases": ["Formula 1", "Formel 1"], "sport": "f1" }
+				]
+			},
+			"notify": { "leadMinutes": 30 }
+		},
+		"events": [
+			{
+				"id": "f1-race",
+				"sport": "f1",
+				"title": "Ungarns Grand Prix – løp",
+				"tournament": "Formula 1 World Championship 2026",
+				"time": "2026-07-19T13:00:00Z"
+			},
+			{
+				"id": "f1-quali",
+				"sport": "f1",
+				"title": "Ungarns Grand Prix – kvalifisering",
+				"tournament": "Formula 1 World Championship 2026",
+				"time": "2026-07-18T14:00:00Z"
+			},
+			{
+				"id": "f1-imp5",
+				"sport": "f1",
+				"title": "Sesongfinalen i Abu Dhabi",
+				"tournament": "Grand Prix-helgen",
+				"time": "2026-07-20T13:00:00Z",
+				"importance": 5
+			},
+			{
+				"id": "f2-sprint",
+				"sport": "f1",
+				"title": "Formel 2 – sprintløp på Hungaroring",
+				"tournament": "FIA Formula 2 Championship 2026",
+				"time": "2026-07-18T09:00:00Z"
+			},
+			{
+				"id": "golf-norsk",
+				"sport": "golf",
+				"title": "Rocket Classic – runde 3",
+				"tournament": "PGA Tour",
+				"time": "2026-07-18T15:00:00Z",
+				"norwegian": true,
+				"norwegianPlayers": [{ "name": "Viktor Hovland" }]
+			},
+			{
+				"id": "cycling-norsk",
+				"sport": "cycling",
+				"title": "Clásica San Sebastián",
+				"tournament": "UCI WorldTour 2026",
+				"time": "2026-07-19T09:00:00Z",
+				"norwegian": true
+			},
+			{
+				"id": "football-vm-final",
+				"sport": "football",
+				"title": "VM-finalen 2026",
+				"tournament": "FIFA World Cup",
+				"time": "2026-07-19T19:00:00Z",
+				"importance": 5
+			},
+			{
+				"id": "biathlon-fav",
+				"sport": "biathlon",
+				"title": "Verdenscup sprint",
+				"tournament": "IBU World Cup",
+				"time": "2026-07-20T11:00:00Z",
+				"isFavorite": true
+			}
+		]
+	},
+	"expected": {
+		"relevant": ["f1-imp5", "f1-quali", "f1-race"],
+		"mustWatch": []
+	}
+}

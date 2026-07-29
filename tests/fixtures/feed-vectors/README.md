@@ -89,6 +89,11 @@ reused across every vector so results are comparable:
                     // WP-92: chess & esports are NOT here — they are entity-gated.
                     // Omitting followBroadly entirely falls back to the same default
                     // (vector 14 does this to exercise the gate against the default).
+                    // WP-200: PRESENT-vs-ABSENT now also decides whether the rule-(3)
+                    // blanket is sport-scoped. An explicit list — including `[]` —
+                    // means "a personal profile owns this board" (vectors 15 & 16,
+                    // whose interests are what ssProfileToInterests /
+                    // EffectiveInterests.merge derive from a real profile).
   "alwaysTrack": {
     "athletes":    [{ "name","aliases":[...],"sport" }, ...],
     "teams":       [{ "name","aliases":[...],"sport" }, ...],
@@ -140,7 +145,11 @@ but the algorithm below is unchanged. Kept iff **both**:
    3. Any other non-broad sport (e.g. tennis): keep if `norwegian == true` OR
       `isFavorite == true` OR `importance >= 4`. **`source == "ai-research"` is NOT a
       standalone pass** (WP-92 scoped it — an AI find must also be a followBroadly
-      sport or match a tracked entity).
+      sport or match a tracked entity). **WP-200 scopes this blanket to a SPORT:**
+      it fires only when the event's sport is in `followBroadly ∪ every tracked
+      entity's sport` — and only when `followBroadly` is *present*. With
+      `followBroadly` ABSENT (vector 14) the scope is undefined and the blanket
+      stays un-scoped, exactly as before WP-200. See DIVERGENCES.md §8.
    4. A tracked entity (teams ∪ athletes ∪ tournaments) matches the haystack
       `title + tournament + homeTeam + awayTeam + norwegianPlayers[].name + participants`.
       **This match is NOT sport-scoped** (see DIVERGENCES.md §1).

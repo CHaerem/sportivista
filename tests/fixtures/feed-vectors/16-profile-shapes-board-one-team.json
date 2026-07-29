@@ -1,0 +1,80 @@
+{
+	"name": "Profile-shaped board (WP-200): a one-team profile keeps its sport, drops every other",
+	"description": "The second WP-200 acceptance case: a profile whose only rule is ONE football club. followBroadly is explicit and empty (a team rule is a precise follow, never a wholesale sport follow), and the sports the profile covers is therefore just {football} — the club's own sport. Everything outside football drops, however loud it is: golf-norsk (a Norwegian in the field), f1-imp5 (importance 5) and cycling-norsk all used to reach this board through the un-scoped blanket and no longer do. Inside football the blanket is DELIBERATELY kept — valerenga-hamkam is a Norwegian league match with no tracked entity and stays, because the profile says «this person is in football» and the alternative (an entity gate, chess/esports-style, vector 14) would leave a one-club follower with two rows a month. The blanket is still a blanket and not «all football»: community-shield is football, in scope, and drops because nothing about it fires — not Norwegian, not a favourite, importance below the threshold, no tracked entity. mustWatch is unchanged and sport-scoped (only the club's own match rings). mustSee is unchanged too, and is asserted here precisely to show it was NOT touched: it is a CLIENT accent predicate keyed off event-intrinsic signals (DIVERGENCES §0/§3), so it still fires for golf-norsk and f1-imp5 even though the lens no longer puts them on this user's board.",
+	"input": {
+		"now": "2026-07-13T12:00:00Z",
+		"interests": {
+			"followBroadly": [],
+			"alwaysTrack": {
+				"athletes": [],
+				"teams": [
+					{ "name": "Rosenborg", "aliases": ["RBK"], "sport": "football" }
+				],
+				"tournaments": []
+			},
+			"notify": { "leadMinutes": 30 }
+		},
+		"events": [
+			{
+				"id": "rbk-molde",
+				"sport": "football",
+				"title": "Rosenborg – Molde",
+				"tournament": "Eliteserien",
+				"homeTeam": "Rosenborg",
+				"awayTeam": "Molde",
+				"time": "2026-07-19T16:00:00Z",
+				"norwegian": true
+			},
+			{
+				"id": "valerenga-hamkam",
+				"sport": "football",
+				"title": "Vålerenga – HamKam",
+				"tournament": "Eliteserien",
+				"homeTeam": "Vålerenga",
+				"awayTeam": "HamKam",
+				"time": "2026-07-18T18:00:00Z",
+				"norwegian": true
+			},
+			{
+				"id": "community-shield",
+				"sport": "football",
+				"title": "Arsenal – Manchester City",
+				"tournament": "FA Community Shield 2026",
+				"homeTeam": "Arsenal",
+				"awayTeam": "Manchester City",
+				"time": "2026-07-20T16:00:00Z",
+				"importance": 3
+			},
+			{
+				"id": "golf-norsk",
+				"sport": "golf",
+				"title": "Rocket Classic – runde 3",
+				"tournament": "PGA Tour",
+				"time": "2026-07-18T15:00:00Z",
+				"norwegian": true,
+				"norwegianPlayers": [{ "name": "Kristoffer Reitan" }]
+			},
+			{
+				"id": "f1-imp5",
+				"sport": "f1",
+				"title": "Ungarns Grand Prix – løp",
+				"tournament": "Formula 1 World Championship 2026",
+				"time": "2026-07-19T13:00:00Z",
+				"importance": 5
+			},
+			{
+				"id": "cycling-norsk",
+				"sport": "cycling",
+				"title": "Clásica San Sebastián",
+				"tournament": "UCI WorldTour 2026",
+				"time": "2026-07-19T09:00:00Z",
+				"norwegian": true
+			}
+		]
+	},
+	"expected": {
+		"relevant": ["rbk-molde", "valerenga-hamkam"],
+		"mustWatch": ["rbk-molde"],
+		"mustSee": ["f1-imp5", "golf-norsk", "rbk-molde"]
+	}
+}

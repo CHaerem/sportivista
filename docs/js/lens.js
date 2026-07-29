@@ -136,17 +136,53 @@ function ssNotifyEntities(interests) {
 	return out;
 }
 
+/** WP-200 — is `followBroadly` PRESENT on this interests object? Absent (nil /
+ *  undefined / not an array) means "no profile speaks here": the lens falls back
+ *  to the config default AND keeps the historic un-scoped blanket (rule 3). An
+ *  explicit array — including `[]` — means a profile OWNS this board, and the
+ *  blanket is narrowed to the sports that profile covers (`ssLensSportScope`).
+ *  The absent-vs-empty distinction is the same one Interests.followBroadly has
+ *  documented since WP-13 (`[]` is honoured as-is, nil falls back). */
+function ssLensExplicitBroad(interests) {
+	const fb = interests && interests.followBroadly;
+	return Array.isArray(fb) ? fb : null;
+}
+
+/** WP-200 — the sports a profile-shaped board actually COVERS: the sports it
+ *  follows wholesale PLUS the sport of every tracked entity. This is the scope
+ *  of the norwegian/favorite/importance blanket (rule 3).
+ *
+ *  Before WP-200 that blanket was a blank cheque: ANY Norwegian, favourite or
+ *  importance>=4 event reached the board whatever the profile said, so a user
+ *  who picked only "Formel 1" still got golf, cycling and biathlon. Scoping it
+ *  keeps the blanket where it belongs — inside the sports you chose — without
+ *  demanding an entity match for every big moment in those sports (following
+ *  Hovland still surfaces a Norwegian golf week; it just can't surface an F1-only
+ *  user's golf week). An entity with no `sport` widens nothing; it still matches
+ *  through the UNSCOPED rule (4). */
+function ssLensSportScope(interests) {
+	const scope = new Set((ssLensExplicitBroad(interests) || []).map((s) => String(s).toLowerCase()));
+	const at = (interests && interests.alwaysTrack) || {};
+	for (const raw of [...(at.teams || []), ...(at.athletes || []), ...(at.tournaments || [])]) {
+		const sport = raw && typeof raw === 'object' ? raw.sport : null;
+		if (sport) scope.add(String(sport).toLowerCase());
+	}
+	return scope;
+}
+
 /** §relevant — feed inclusion. Port of FeedCompiler.isRelevant (+ 14d cutoff).
  *  Order (WP-92): (1) followBroadly wholesale; (2) chess/esports SPORT-SCOPED
- *  entity-gate only; (3) norwegian/favorite/importance>=threshold blanket for
- *  other sports; (4) UNSCOPED tracked-entity match (DIVERGENCES §1). */
+ *  entity-gate only; (3) norwegian/favorite/importance>=threshold blanket —
+ *  SPORT-SCOPED to the profile's coverage since WP-200; (4) UNSCOPED
+ *  tracked-entity match (DIVERGENCES §1). */
 function ssIsRelevant(event, interests, nowMs, config) {
 	const cfg = ssLensConfig(config);
 	if (!event.time) return false;
 	const relevantTime = event.endTime ? Date.parse(event.endTime) : Date.parse(event.time);
 	if (relevantTime < nowMs - cfg.retentionDays * 86400000) return false;
 
-	const followBroadly = new Set(((interests && interests.followBroadly) || cfg.followBroadlyDefault).map((s) => s.toLowerCase()));
+	const explicitBroad = ssLensExplicitBroad(interests);
+	const followBroadly = new Set((explicitBroad || cfg.followBroadlyDefault).map((s) => s.toLowerCase()));
 	const sport = (event.sport || '').toLowerCase();
 	if (followBroadly.has(sport)) return true;                               // (1)
 
@@ -156,7 +192,12 @@ function ssIsRelevant(event, interests, nowMs, config) {
 	if (new Set(cfg.entityGatedSports).has(sport)) {                         // (2)
 		return ssMatchInterest(hay, tracked, { sport: event.sport }) != null;
 	}
-	if (event.norwegian || event.isFavorite || (event.importance || 0) >= cfg.mustSeeImportance) return true; // (3)
+	// (3) WP-200: the blanket only fires inside the sports this board covers. With
+	// no profile speaking (followBroadly absent) the scope is "every sport", i.e.
+	// exactly the pre-WP-200 behaviour — the empty-profile guarantee.
+	if (explicitBroad === null || ssLensSportScope(interests).has(sport)) {
+		if (event.norwegian || event.isFavorite || (event.importance || 0) >= cfg.mustSeeImportance) return true;
+	}
 	return ssMatchInterest(hay, tracked) != null;                           // (4) unscoped
 }
 
@@ -225,6 +266,6 @@ if (typeof module !== 'undefined' && module.exports) {
 	module.exports = {
 		SS_LENS_DEFAULTS, ssLensConfig, ssLensHaystack, ssMatchInterest,
 		ssNotifyEntities, ssIsRelevant, ssMustWatchEntity, ssMustWatch,
-		ssIsMustSee, ssWhyShown,
+		ssIsMustSee, ssWhyShown, ssLensExplicitBroad, ssLensSportScope,
 	};
 }

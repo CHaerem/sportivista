@@ -236,6 +236,110 @@ its OWN dedicated suite instead — `tests/season-proof-follows.test.js` and
 edition") — exactly because it is a *new* capability over *new* inputs, not a
 change to the frozen semantics.
 
+## 8. WP-200 — the profile SHAPES the board: `followBroadly` is derived, rule (3) is sport-scoped
+
+WP-200 is the first change to the frozen lens semantics since WP-92, and it is a
+deliberate re-freeze: **two new vectors, zero changed expectations in the
+fourteen that existed.** What changed is what a *profile* means, not how the
+lens reads a given `interests` object with an ABSENT `followBroadly`.
+
+### The bug, in two independent leaks
+
+Onboarding asked what you care about and the board answered with the owner's
+sports universe:
+
+1. **`followBroadly` was additive / null.** The web projection
+   (`ssProfileToInterests`, docs/js/profile-sync.js) returned
+   `followBroadly: null` unconditionally, so the lens fell through to
+   `lens-config.json`'s nine-sport default; iOS `EffectiveInterests.merge`
+   passed `base.followBroadly` through untouched, and on device `base` is
+   `Interests()` (WP-96 stopped publishing `interests.json`), so it was nil for
+   the same effect. A profile could only ever ADD.
+2. **Rule (3) was a blank cheque.** `norwegian || isFavorite || importance >= 4`
+   admitted anything in any non-gated sport, whatever the profile said.
+
+Net: a user who picked only «Formel 1» got golf, cycling, biathlon and the World
+Cup final. That is where a stranger falls off.
+
+### The fix
+
+**Derivation (profile → interests), identical on both platforms**
+(`ssProfileToInterests` ↔ `EffectiveInterests.merge`):
+
+| Profile rule | Consequence |
+|---|---|
+| entity `type: "sport"` (`sport-biathlon`, from a starter pack) | that sport is followed **wholesale** — it joins `followBroadly` |
+| team / league / athlete / tournament | a **precise** follow: no wholesale sport, but its sport joins the blanket's scope |
+| **no live rules at all** | `followBroadly` stays **ABSENT** (`null` / `nil`) |
+
+`followBroadly` is deduped and sorted on both sides, so the projection is
+deterministic and equal across platforms. A non-empty profile ALWAYS speaks
+explicitly — including with an empty list `[]` ("I follow no sport wholesale").
+
+**The lens (rule 3), identical on both platforms** (`ssLensSportScope` ↔
+`FeedCompiler.sportScope`): the blanket now fires only when the event's sport is
+in the board's **sport scope** = `followBroadly ∪ every tracked entity's sport`.
+When `followBroadly` is ABSENT the scope is `null` and the blanket stays exactly
+as un-scoped as it was before WP-200.
+
+### Why the absent-vs-empty distinction carries the mode
+
+`Interests.followBroadly` has distinguished absent from empty since WP-13 (JS
+`interests.followBroadly || DEFAULT` treats `[]` as present; Swift models it as
+`[String]?` for precisely that reason). WP-200 reuses that ONE existing bit
+rather than adding a field: **absent ⇒ no profile speaks ⇒ pre-WP-200 behaviour;
+explicit ⇒ a profile owns this board ⇒ scoped blanket.** That is what makes the
+empty-profile guarantee mechanical rather than a promise.
+
+### Why the existing fourteen vectors did not move
+
+Vectors 01–13 all carry an explicit `followBroadly` of seven sports AND tracked
+entities spanning football, esports, golf, tennis, chess, f1 and cycling, so
+their sport scope is a superset of every event sport they contain — the blanket
+fires exactly where it fired before. Vector 14 omits `followBroadly` entirely
+(scope `null`, blanket un-scoped) and its events are all entity-gated anyway.
+Verified: every `relevant` / `mustWatch` / `mustSee` expectation is bit-identical,
+on both the JS reference and the Swift `FeedCompiler`.
+
+### The two new vectors
+
+- **`15-profile-shapes-board-f1-only.json`** — the headline case. An F1-only
+  profile (`followBroadly: []` + one tracked F1 tournament) keeps `f1-race`,
+  `f1-quali` and `f1-imp5` and drops `golf-norsk`, `cycling-norsk`,
+  `football-vm-final` and `biathlon-fav` — all four of which reached this board
+  before WP-200. `f2-sprint` pins that the follow stays precise inside the sport
+  too, and `mustWatch: []` pins that a tournament follow shapes the board without
+  arming the bell (tournaments default `notify:false`).
+- **`16-profile-shapes-board-one-team.json`** — a one-club profile. Everything
+  outside football drops however loud (`f1-imp5` at importance 5, `golf-norsk`
+  with a Norwegian in the field). `mustSee` is asserted here specifically to
+  show it was NOT touched: the accent is a CLIENT predicate keyed off
+  event-intrinsic signals (§0/§3), so it still fires for events the lens no
+  longer admits.
+
+### The deliberate looseness, named
+
+Rule (3) is scoped to a **sport**, not narrowed into an entity gate. So a
+one-club follower still gets `valerenga-hamkam` — a Norwegian league match with
+no tracked entity — because the profile says "this person is in football". The
+strict alternative (blanket only inside WHOLESALE-followed sports) was
+considered and rejected: it would leave a one-club follower with two rows a
+month and would silently break the product's Norwegian-participation lens (the
+golf pack is explicitly "gjennom de norske"). The entity-gate behaviour still
+exists and is still reserved for chess/esports (§5) — vector 16's
+`community-shield` pins the boundary from the other side: football, in scope, and
+dropped because nothing about it fires.
+
+### Known, pre-existing asymmetry this makes visible
+
+The iOS projection enriches a followed entity with its real `aliases` from the
+entity index; the web projection has no index at hand and matches on the frozen
+`entityName` alone. So a tournament follow whose event titles use an alias
+("Formula 1 2026 - Race Weekend" vs the entity name "Formula 1 World
+Championship") can admit one extra row on iOS. This predates WP-200 (it is the
+alias-enrichment half of WP-16.4/WP-162) and is untouched here; the vectors carry
+their aliases explicitly, so both platforms replay them identically.
+
 ## Summary for the porter
 
 - Implement **three** predicates, not one. Keep the bell sport-scoped +
