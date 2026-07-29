@@ -245,6 +245,12 @@ Native `List`, inset-gruppert per dag. Bindende semantikk (uendret fra v2):
   oppdatering (kadens 60 s). Spoilervern vinner: en skjermet entitet/sport får
   ALDRI stillingen påtvunget (`spoilerSafe`), akkurat som RESULTAT i detaljarket.
 - **Kanal:** `secondaryLabel` i meta-linjen; ukjent = «–». Krymper aldri tittelen.
+  **Lenkeløftet (WP-246):** kanalNAVNET er alltid sant og vises alltid, men bare en
+  URL som peker på selve sendingen (`urlKind: "deep"`) får se ut som en lenke. En
+  forside/seksjon (`urlKind: "landing"`) vises som ren tekst — ingen understrek,
+  ingen tapp, ingen varselikon; detaljarket sier stille «(ingen direkte lenke)».
+  En forside som utgir seg for å være svaret på «hvor ser jeg det» er et brudd på
+  Grunnlov 3.
 - **Varsel:** `bell.fill` (amber) trailing KUN når raden armerer en påminnelse.
 - **AI-funn:** `info.circle` trailing; tapp på raden åpner detalj med kilder.
 - **Disclosure:** native chevron (`List` gir den) — trykkbarhet er tydelig,

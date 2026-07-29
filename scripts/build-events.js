@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import crypto from "crypto";
 import { readJsonIfExists, rootDataPath, configDirPath, MS_PER_DAY, makeCoverageGate, normalizeParticipants, normalizeNorwegianPlayers, normalizeText, containsName, entityTerms } from "./lib/helpers.js";
-import { resolveStreaming } from "./lib/norwegian-rights.js";
+import { resolveStreaming, stampUrlKinds } from "./lib/norwegian-rights.js";
 import { writeManifest } from "./build-manifest.js";
 import { writePortReport } from "./build-port-report.js";
 import { readIosCommit, buildAppVersion, readTestflight } from "./lib/app-version.js";
@@ -476,6 +476,9 @@ function withDeepUrls(streaming, prevStreaming) {
 // rewritten, so a deeper per-event URL is never downgraded. Catches agent-set
 // URLs that bypass the rights map (e.g. a verified WC channel written as
 // "https://tv.nrk.no").
+// WP-246: BOTH sides of this table are `urlKind: "landing"` — the rewrite makes a
+// front page slightly less useless, it does NOT make it an answer to "hvor ser jeg
+// det". The clients refuse to link either as the match; only a `deep` URL is a link.
 const LANDING_UPGRADE = {
 	"https://tv.nrk.no": "https://tv.nrk.no/direkte",
 	"https://play.tv2.no": "https://play.tv2.no/sport",
@@ -528,7 +531,11 @@ for (const e of all) {
 	}
 	// Upgrade generic landing URLs to a deeper per-event URL we already knew,
 	// then lift any bare homepage to the broadcaster's sport/live section.
-	e.streaming = upgradeLanding(withDeepUrls(e.streaming, prevStreamingByKey.get(key)));
+	// stampUrlKinds LAST and unconditionally (WP-246): every rewrite above can
+	// change a URL, and `urlKind` must describe the URL that actually ships —
+	// including on preserved ai-research events whose channel came from an agent
+	// and never went through the rights map.
+	e.streaming = stampUrlKinds(upgradeLanding(withDeepUrls(e.streaming, prevStreamingByKey.get(key))));
 	if (e.sport === "football" && e.streaming !== before && e.streaming.length && tvListings.length) {
 		// count football events whose channel came from a real listing match
 		fromTv++;

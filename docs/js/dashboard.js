@@ -343,11 +343,16 @@ class Dashboard {
 		return `<span class="ev-meta">${parts.join('<span class="ev-sep"> · </span>')}</span>`;
 	}
 
-	/** A channel is tappable when it has a URL — but a TENTATIVE (shared-rights)
-	 *  entry only links to a tvkampen match GUIDE, never to one broadcaster (which
-	 *  would mislead when it might be the other). */
+	/** A channel is tappable when its URL points at the BROADCAST — but a TENTATIVE
+	 *  (shared-rights) entry only links to a tvkampen match GUIDE, never to one
+	 *  broadcaster (which would mislead when it might be the other).
+	 *  WP-246: a `landing` URL (the service's front page / sport section) is not an
+	 *  answer to «hvor ser jeg det» — it is the rights map wearing a link's clothes.
+	 *  The channel NAME stays (it is true and useful); the link goes. Entries without
+	 *  `urlKind` (older payloads) keep the previous behaviour. */
 	streamLink(s) {
-		return !!(s && s.url && (!s.tentative || /tvkampen\.com/.test(s.url)));
+		if (!s || !s.url || s.urlKind === 'landing') return false;
+		return !s.tentative || /tvkampen\.com/.test(s.url);
 	}
 
 	/** Where to watch — quiet, honest. First 1–2 Norwegian channels; faint dash if unknown. */
@@ -357,8 +362,11 @@ class Dashboard {
 		const s = streams[0];
 		const p = escapeHtml(String(s.platform || s));
 		const extra = streams.length > 1 ? `<span class="ev-where-more">+${streams.length - 1}</span>` : '';
-		// Tentative (shared rights, exact channel not yet confirmed) → plain text,
-		// no link — linking to one broadcaster when it may be the other misleads.
+		// Plain text — no link — whenever the URL isn't the broadcast: a tentative
+		// (shared rights, exact channel not yet confirmed) entry, or a `landing` URL
+		// that would drop you on a service front page (WP-246). The name is still the
+		// answer to «hvor», so it stays; the absent dotted underline (.ev-where a) is
+		// the whole signal that there is nothing to tap. No icon, no badge.
 		const inner = this.streamLink(s) ? `<a href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${p}</a>` : p;
 		const cls = s.tentative ? 'ev-where tentative' : 'ev-where';
 		return `<span class="${cls}">${inner}${extra}</span>`;
