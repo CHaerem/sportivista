@@ -1,74 +1,81 @@
 {
-  "auditedAt": "2026-07-29T06:32:00Z",
+  "auditedAt": "2026-07-30T06:27:50Z",
   "horizonDays": 28,
   "gaps": [
     {
+      "interest": "CS2 / esports — BLAST Bounty Summer 2026 LAN Final (Malta, 30. juli–2. aug)",
+      "whatsMissing": "Hele BLAST Bounty Summer 2026 (Season 2) sluttspill-LAN i Attard, Malta (30. juli–2. aug, S-tier Valve tier-1, 8 lag, $740k) mangler HELT på tavla — enda SEKS av de åtte lagene er katalog-entiteter (Team Spirit, FaZe Clan, Team Liquid, Astralis, MOUZ, The MongolZ; de to øvrige er 3DMAX + paiN Gaming). Kvartfinalene spilles I DAG (30. juli kl. 15.00 + 18.00 CEST = 13.00 + 16.00 UTC) og i morgen (31. juli 14.30 + 17.30 CEST), semifinaler+finale 1.–2. aug (single-elim, Bo3, finale Bo5). Rotårsak: esports-fetcheren er stale-retained (44 kjøringer / 3 dager uten fersk henting, se sourceIssues) — esports.json ser «dekket» ut fordi retainLastGood re-serverer siste gode fil, så mekanismen fanger ikke at et helt tier-1-arrangement med katalog-lag mangler. Under WP-116-katalogen er esports entitets-gated OG disse seks orgene er katalog-entiteter → dette er REELL manglende dekning, ikke korrekt fravær. (100 Thieves/rain er ute av dette arrangementet, så eier-linsen filtrerer det trolig bort for eieren selv — men server-brettet skal ha det for de andre katalog-lagene.)",
+      "why": "Imminent (starter i dag), viktig (Valve tier-1 S-tier med seks katalog-org), og to-kilde-bekreftet på både eksistens og lagliste (Liquipedia + egamersworld + ghacks + blast.tv). Research bør legge inn arrangementet med katalog-lagenes kamper (minst kvartfinalene i dag/i morgen) + streaming (Twitch/YouTube/Kick BLASTPremier — CS2 har ingen norsk kringkaster, jf. cs2-sources-skillen). Eskalert (deep) siden det er høy-alvorlig og imminent.",
+      "corroboration": [
+        "https://liquipedia.net/counterstrike/BLAST/Bounty/2026/Summer",
+        "https://egamersworld.com/counterstrike/news/36377/blast-bounty-summer-2026-closed-qualifier-wraps-up-q7al_yje9",
+        "https://www.ghacks.net/2026/07/21/blast-bounty-season-2-2026-runs-july-21-to-august-2-with-32-teams-and-malta-lan-finals/"
+      ],
+      "suggestedSource": "https://liquipedia.net/counterstrike/BLAST/Bounty/2026/Summer",
+      "severity": "high",
+      "firstSeen": "2026-07-30T06:27:50Z",
+      "recurrences": 0
+    },
+    {
       "interest": "Friidrett (tier1 wholesale) — Wanda Diamond League gjenopptas i august",
-      "whatsMissing": "Diamond League-stevnene Lausanne (Athletissima, 21. aug) og Silesia/Chorzów (23. aug) mangler på tavla. Karsten Warholm er BEKREFTET til start i 400 m hekk i Silesia (mot Alison Dos Santos). Etter friidretts-EM i Birmingham (10.–16. aug, på tavla) er DL-serien tilbake – disse to stevnene er de siste før DL-finalen i Brussel 4.–5. sept.",
-      "why": "Friidrett er tier1 (dekkes wholesale) og NRK har DL-rettighetene t.o.m. 2029. Warholm-deltakelse i Silesia er to-kilde-bekreftet (diamondleague.com + silesia.diamondleague.com). Horisont-hull (~23–25 dager ut), ikke imminent → medium, ikke high. Research bør legge inn begge stevnene når startlister/sendetider nærmer seg; Silesia (Warholm) er den sterkeste enkeltraden.",
+      "whatsMissing": "Diamond League-stevnene Lausanne (Athletissima, 21. aug) og Silesia/Chorzów (23. aug) mangler fortsatt på tavla. Karsten Warholm er to-kilde-bekreftet til start i 400 m hekk i Silesia. Etter friidretts-EM i Birmingham (10.–16. aug, på tavla) er DL-serien tilbake — disse to stevnene er de siste før DL-finalen i Brussel 4.–5. sept.",
+      "why": "Friidrett er tier1 (dekkes wholesale) og NRK har DL-rettighetene t.o.m. 2029. Web-rekonfirmert denne kjøringen (diamondleague.com/etusuora + World Athletics): Lausanne 21. aug, Silesia 23. aug. Horisont-hull (~22–24 dager ut), ikke imminent → medium. Research bør legge inn begge stevnene når startlister/sendetider nærmer seg; Silesia (Warholm) er den sterkeste enkeltraden. Båret videre fra 29. juli-auditen (recurrences 1).",
       "corroboration": [
         "https://www.diamondleague.com/calendar/",
-        "https://www.diamondleague.com/warholm-and-mahuchikh-head-to-silesia/",
-        "https://silesia.diamondleague.com/"
+        "https://silesia.diamondleague.com/",
+        "https://worldathletics.org/competitions/diamond-league/calendar-results/7203944/result"
       ],
       "suggestedSource": "https://www.diamondleague.com/calendar/",
       "severity": "medium",
       "firstSeen": "2026-07-29T06:32:00Z",
-      "recurrences": 0
-    },
-    {
-      "interest": "Sykkel (tier1 wholesale) — Tour de Pologne 2026 (Uno-X)",
-      "whatsMissing": "Tour de Pologne 2026 (3.–9. aug, UCI WorldTour, 1110 km over flere etapper) mangler helt på tavla. Uno-X Mobility deltar (bekreftet i startlisten). Starter om ~5 dager (like utenfor imminent-vinduet).",
-      "why": "Sykkel er tier1 → alle WorldTour-løp er katalog-dekning, og Uno-X-deltakelse gir norsk vinkel. Datoer + Uno-X to-kilde-bekreftet (ProCyclingStats + FirstCycling). Ble notert som lav prioritet i 27.–28. juli-auditene med «Uno-X-deltakelse uklar»; nå er deltakelsen bekreftet → løftes til et konkret medium-hull. Ikke imminent (starter 3. aug) → medium. Research bør hente etapper + norsk visning (trolig TV 2 Play / Eurosport).",
-      "corroboration": [
-        "https://www.procyclingstats.com/race/tour-de-pologne/2026",
-        "https://firstcycling.com/race.php?r=19&y=2026"
-      ],
-      "suggestedSource": "https://www.procyclingstats.com/race/tour-de-pologne/2026",
-      "severity": "medium",
-      "firstSeen": "2026-07-29T06:32:00Z",
-      "recurrences": 0
+      "recurrences": 1
     },
     {
       "interest": "Eliteserien (tier1-turnering + sporet liga) — runde 17 (~14.–17. aug)",
-      "whatsMissing": "Eliteseriens neste runde etter runde 16 (~14.–17. aug: bl.a. Bodø/Glimt–Start, Rosenborg–Viking, Molde–Tromsø, Brann–HamKam) er ennå ikke på tavla. Runde 16 (31. juli–2. aug) ble fylt inn av research etter forrige eskalering, men KUN som source ai-research – den statiske fotball-fetcheren produserer ingen Eliteserie-kamper (se sourceIssues), så påfølgende runder dukker ikke opp av seg selv.",
-      "why": "Eliteserien er tier1 + sporet uten utløp. Runde 17 er ~16–19 dager ut (innenfor 4-ukers-horisonten), ikke imminent → medium. Knyttet direkte til den vedvarende fetcher-feilen: så lenge football.json er ødelagt må research fylle hver runde manuelt. Flagges så research fortsetter å legge inn kommende runder; eksakte datoer/avspark bekreftes mot fotball.no-terminlisten når de settes.",
+      "whatsMissing": "Eliteseriens runde 17 (~14.–17. aug: bl.a. Rosenborg–Viking fre. 14. aug kl. 19.00, flere kamper 15. aug) er ennå ikke på tavla. Runde 16 (31. juli–2. aug) ligger inne, men KUN som source ai-research — den statiske fotball-fetcheren produserer ingen Eliteserie-kamper (se sourceIssues), så påfølgende runder dukker ikke opp av seg selv.",
+      "why": "Eliteserien er tier1 + sporet uten utløp. Runde 17 er ~15–18 dager ut (innenfor 4-ukers-horisonten), ikke imminent → medium. Web-bekreftet denne kjøringen at runde 17 finnes (Rosenborg–Viking 14.08 19.00). Knyttet direkte til den vedvarende fetcher-feilen: så lenge football.json er ødelagt må research fylle hver runde manuelt. Båret videre fra 29. juli-auditen (recurrences 1). Eksakte avspark bekreftes mot fotball.no-terminlisten når TV-valg settes.",
       "corroboration": [
-        "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092"
+        "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
+        "https://en.wikipedia.org/wiki/2026_Eliteserien"
       ],
       "suggestedSource": "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
       "severity": "medium",
       "firstSeen": "2026-07-29T06:32:00Z",
-      "recurrences": 0
+      "recurrences": 1
     }
   ],
   "sourceIssues": [
     {
+      "source": "Statisk esports-fetcher (docs/data/esports.json, Liquipedia CS2)",
+      "issue": "NY denne kjøringen (coverage-gaps.json anomaly, high): esports.json er servert fra retention i 44 sammenhengende kjøringer / 3 dager uten fersk henting. retainLastGood re-skriver siste gode fil, så filen ser fersk ut mens fetcheren produserer null. Symptomet skjules på tavla fordi ai-research holder esports «til stede» (EWC-sjakk/CS2 12. aug), men et helt tier-1-arrangement denne helgen (BLAST Bounty Malta LAN, seks katalog-lag) mangler fordi fetcheren er død. En fetcher som har sluttet å produsere er ødelagt uansett om brettet skjuler det.",
+      "impact": "CS2-dekning avhenger nå fullt av at research fyller manuelt. Konkret miss denne kjøringen: BLAST Bounty Summer 2026 LAN (se gaps, high). TIL SELF-REPAIR: kjør esports-fetcheren, finn ut hvorfor Liquipedia-hentingen kommer tom tilbake (Accept-Encoding gzip-krav? Liquipedia:Matches-endring? rate-limit/User-Agent?), og gjenopprett den.",
+      "severity": "high"
+    },
+    {
       "source": "Statisk fotball-fetcher (docs/data/football.json, ESPN API + fotball.no)",
-      "issue": "VEDVARENDE fra 28. juli-auditen: football.json er fortsatt foreldet — internt lastUpdated = 2026-07-19T17:56:30Z (10 dager) og innholdet er kun VM-finalen (Argentina–Spania 19. juli). Git-mtime er «i dag» fordi pipeline re-committer filen hver kjøring, men INNHOLDET oppdateres ikke. Eliteserie-kampene på tavla er alle source ai-research (research fylte runde 16 den 28. juli som symptomlapp) – den statiske fetcheren henter fortsatt ingen norske seriekamper.",
-      "impact": "Innenlandsk Eliteserie- (og øvrig statisk fotball-) dekning avhenger nå fullt av at research fyller manuelt hver runde. Symptomet er skjult på tavla (runde 16 er der via ai-research), men rotårsaken er ufikset og vil gi tilbakevendende hull hver gang research ikke rekker en runde. detect-coverage-gaps.js fanger den ikke (0 anomalies) fordi ai-research-fotball holder sporten «til stede» – coverage-first-gaten ser ikke at riktig sub-turnering mangler i kildefila. TIL SELF-REPAIR: kjør fotball-fetcheren, finn ut hvorfor football.json ikke skrives med gjeldende fixtures (Eliteserien/OBOS), og gjenopprett den.",
+      "issue": "VEDVARENDE fra 28.–29. juli-auditene: football.json er fortsatt foreldet — internt lastUpdated = 2026-07-19T17:56:30Z og innholdet er kun VM-finalen (Argentina–Spania 19. juli). Git-mtime er «i dag» fordi pipeline re-committer filen hver kjøring, men INNHOLDET oppdateres ikke. Eliteserie- og OBOS-kampene på tavla er alle source ai-research (research fyller hver runde som symptomlapp) — den statiske fetcheren henter fortsatt ingen norske seriekamper.",
+      "impact": "Innenlandsk Eliteserie-/OBOS-dekning avhenger fullt av at research fyller manuelt hver runde; gir tilbakevendende hull (runde 17 medium, se gaps) hver gang research ikke rekker en runde. TIL SELF-REPAIR: kjør fotball-fetcheren, finn ut hvorfor football.json ikke skrives med gjeldende fixtures (Eliteserien/OBOS), og gjenopprett den.",
       "severity": "high"
     }
   ],
   "coveredWell": [
-    "Eliteserien runde 16 (31. juli–2. aug, 8 kamper: Vålerenga–HamKam, Bodø/Glimt–Lillestrøm, Fredrikstad–Sandefjord, Start–Viking, KFUM–Kristiansund, Molde–Sarpsborg 08, Aalesund–Tromsø, Brann–Rosenborg) NÅ PÅ TAVLA — forrige audits HIGH-hull er LØST av research (men via ai-research, ikke fetcheren — se sourceIssues).",
-    "Golf — PGA Tour Rocket Classic (30. juli–2. aug) NÅ PÅ TAVLA: forrige audits medium golf-hull er LØST. Wyndham (6.–9. aug) + FedEx St. Jude (13.–16. aug) + Danish Golf Championship DP World Tour (13. aug) også på tavla.",
-    "F1 — ESPN-BLINDSONE (source-quirks-mandat) sjekket og web-bekreftet: Ungarns GP (26. juli) var siste løp før sommerpausen; INGEN F1 før Nederlands GP 21.–23. aug (på tavla, med sprintkvalik/sprint 21.–22. + race 23. aug). Tom F1-tavla i vinduet = KORREKT fravær, ikke mis-datering.",
-    "Sykkel — PostNord Danmark Rundt 29. juli–2. aug (Uno-X) starter i dag, på tavla; Tour de France Femmes 2026 (Lausanne-start 1. aug) alle etapper på tavla; Arctic Race of Norway 13.–16. aug + Vuelta a España (fra 22. aug) på tavla.",
-    "Fotball (europeisk) — Brann–Universitatea Cluj retur hjemme 30. juli (Viaplay) + FC Hradec Králové–Tromsø retur 30. juli; Bodø/Glimt CL-kvalik (borte 4. aug + hjemme 11. aug); Barcelona (Birmingham 31. juli + La Liga-åpning 27. aug); Lyn (OBOS) flere kamper; UEFA Super Cup 12. aug; FA Community Shield 16. aug.",
-    "Tennis — Casper Ruuds neste (National Bank Open, Montreal, ATP Masters 1000) på tavla fra 2. aug.",
-    "Friidrett — EM Birmingham 10.–16. aug (NRK, Warholm) på tavla. (DL-gjenopptakelsen 21./23. aug mangler — se gaps.)",
+    "Tour de Pologne 3.–9. aug (Uno-X) NÅ PÅ TAVLA (fra 3. aug) — forrige audits MEDIUM sykkel-hull er LØST av research.",
+    "Eliteserien runde 16 (31. juli–2. aug, 8 kamper inkl. Bodø/Glimt–Lillestrøm, Molde–Sarpsborg 08, Brann–Rosenborg) på tavla via ai-research.",
+    "Fotball (europakvalik) — Brann–Universitatea Cluj retur 30. juli (Viaplay) + FC Hradec Králové–Tromsø retur 30. juli (VG TV) på tavla i dag; Bodø/Glimt CL-kvalik (Union SG borte 4. aug + hjemme 11. aug); Barcelona (Birmingham 31. juli + La Liga-åpning Athletic 27. aug); Lyn (OBOS, Sogndal 2. aug + flere); UEFA Super Cup 12. aug; Arsenal–Man City 16. aug (PL-åpning).",
+    "Golf — Rocket Classic (30. juli–2. aug, Ventura) + Wyndham (6.–9. aug) + FedEx St. Jude (13.–16. aug, Hovland) + Danish Golf Championship DP World Tour (13. aug) på tavla.",
+    "F1 — ESPN-BLINDSONE (source-quirks-mandat) web-rekonfirmert: sommerpause etter Ungarns GP (26. juli), neste = Nederlands GP 21.–23. aug (på tavla, med sprintkvalik/sprint 21.–22. + race søn. 23. aug). Tom F1-tavla i imminent-vinduet = KORREKT fravær, ikke ESPN-mis-datering.",
+    "Sykkel — PostNord Danmark Rundt 29. juli–2. aug (Uno-X) på tavla; Tour de France Femmes 2026 (Lausanne-start 1. aug) etapper på tavla; Arctic Race of Norway 13.–16. aug + Vuelta a España (fra 22. aug) på tavla.",
+    "Tennis — Casper Ruud National Bank Open (Montreal, ATP Masters 1000) på tavla fra 2. aug (TV 2 Play).",
     "Sjakk — Grand Chess Tour Saint Louis Rapid & Blitz (31. juli) + Sinquefield Cup (8. aug) + Esports World Cup-sjakk (Carlsen, 11. aug) på tavla.",
-    "CS2/esports — rain (100 Thieves) web-bekreftet UTE av BLAST Bounty S2 (slått av Spirit 13–0 på Dust2, 26. juli — på tavla) → IKKE kvalifisert til Malta-LAN 30. juli–2. aug (de 8 er Spirit, FaZe, Liquid, Astralis, MOUZ, paiN, 3DMAX, MongolZ), og ute av StarSeries Fall-kvalik. Ingen berammede 100T-kamper i imminent-vinduet → KORREKT fravær. Neste 100T-vinkel = Esports World Cup CS2 12. aug (på tavla)."
+    "Friidrett — EM Birmingham 10.–16. aug (NRK, Warholm) på tavla. (DL-gjenopptakelsen 21./23. aug mangler — se gaps.)"
   ],
-  "escalated": false,
+  "escalated": true,
   "notes": [
-    "Kjøring 2026-07-29 ~06:32Z (manuell recall-audit). Sunn tavle: begge forrige-audits hull (Eliteserien runde 16 HIGH + PGA Rocket Classic MEDIUM) er LØST av research → ikke båret videre. INGEN high-severity GAP denne kjøringen → INGEN eskalering (escalate-stien er for high GAPS; fotball-fetcher-feilen er en sourceIssue for self-repair, ikke et event-hull research kan fylle — kampene er alt på tavla).",
-    "IMMINENT-PASS (neste ~4 dager, 29. juli–2. aug) kjørt først og er dekket rad for rad: Danmark Rundt (i dag), Brann/Tromsø europakvalik-returer 30. juli, Rocket Classic-golf, Eliteserien runde 16, TdF Femmes-start 1. aug, Ruud Montreal 2. aug, Saint Louis-sjakk 31. juli, Barcelona/Birmingham 31. juli. Ingen imminent hull funnet.",
-    "F1 ESPN-BLINDSONE (source-quirks-mandat) web-bekreftet hver kjøring: sommerpause etter Ungarns GP (26. juli), neste = Nederlands GP 21.–23. aug (på tavla). Tom F1-tavla = korrekt fravær, ikke ESPN-mis-datering.",
-    "ROTÅRSAK VEDVARER (sourceIssues, HIGH): docs/data/football.json fortsatt foreldet (internt lastUpdated 2026-07-19, kun VM-finalen). Eliteserie-kampene er på tavla KUN fordi research la dem inn 28. juli som source ai-research — den statiske fetcheren er fremdeles ødelagt. Symptomet er skjult, rotårsaken ufikset → flagget for self-repair (kjør fetcheren, finn ut hvorfor football.json ikke får gjeldende fixtures). Dette driver også Eliteserien-runde-17-hullet (medium) siden ingen runder auto-fylles.",
-    "TRE MEDIUM HORISONT-HULL: (1) Diamond League Lausanne 21. aug + Silesia 23. aug (Warholm bekreftet Silesia, to-kilde) — friidrett tier1, NRK; (2) Tour de Pologne 3.–9. aug (Uno-X bekreftet) — sykkel tier1 WorldTour; (3) Eliteserien runde 17 ~14.–17. aug (knyttet til fetcher-feilen). Alle ~2–3,5 uker ut, ikke imminent → medium, ikke eskalert. Research bør fylle når startlister/sendetider settes.",
-    "MEKANISKE COVERAGE-GAPS (coverage-gaps.json 2026-07-29T05:45Z: 4 gaps, 0 anomalies) TRIAGERT: alle fire entity-gaps (Manchester City, Real Madrid, Liverpool, Premier League) er ren overgangs-/nyhetsstøy fra Guardian (Rodri-fremtid, Wrexham-oppkjøring, transferrykter) — PL starter medio aug (Community Shield 16. aug på tavla) → ikke event-hull. Ingen tracked-claim, 0 anomalies. 0 anomalies er igjen falsk trygghet mtp. den foreldede football.json (coverage-first-gate).",
-    "KORREKTE FRAVÆR (ikke hull): vinteridretter (av-sesong, juli); håndball (av-sesong; REMA 1000-ligaen starter ~sept.); Jakob Ingebrigtsen (ute pga. skade/sykdom); Aryan Tari (trakk seg fra eliteklassen tidligere); rain/100T (ute av begge sommer-CS2-turneringer, web-bekreftet). Kristoffer Reitan: ingen bekreftet start etter The Open → korrekt fravær (tracked.json-hevdingen bør ryddes av research)."
+    "Kjøring 2026-07-30 ~06:28Z (recall-audit). IMMINENT-PASS (30. juli–2. aug) kjørt først: én HIGH imminent gap funnet — BLAST Bounty Summer 2026 CS2 LAN i Malta (seks katalog-lag) mangler helt fordi esports-fetcheren er stale-retained (44 kjøringer). ESKALERT (deep) via escalate.request → research fyller.",
+    "F1 ESPN-BLINDSONE (source-quirks-mandat) web-rekonfirmert: sommerpause etter Ungarns GP (26. juli); neste = Nederlands GP 21.–23. aug (på tavla, sprint-helg). Tom F1-tavla = korrekt fravær, ikke mis-datering.",
+    "FORRIGE AUDITS TRE MEDIUM: (1) Tour de Pologne 3.–9. aug NÅ LØST (på tavla) → droppet, flyttet til coveredWell. (2) Diamond League Lausanne 21. aug + Silesia 23. aug FORTSATT hull (web-rekonfirmert), recurrences 1. (3) Eliteserien runde 17 ~14.–17. aug FORTSATT hull (Rosenborg–Viking 14.08 web-bekreftet), recurrences 1. Ingen av de to nådde ≥3-recurrence-bump; begge ~2,5 uker ut → forblir medium.",
+    "TO HIGH sourceIssues for self-repair: (a) NY — esports.json stale-retained 44 kjøringer (død Liquipedia-fetcher; driver BLAST Bounty-hullet direkte). (b) VEDVARENDE — football.json foreldet siden 19. juli (kun VM-finale; driver Eliteserien-runde-17-hullet). Begge skjules av at ai-research holder sporten «til stede», men fetcherne er ødelagt uansett.",
+    "MEKANISKE COVERAGE-GAPS (coverage-gaps.json 2026-07-29T22:54Z: 10 entity-gaps, 1 anomaly) TRIAGERT: alle 10 entity-gaps (Hovland/Reitan golfkonsept-nyhet, Man City/Man City/Arsenal/Liverpool/Premier League/La Liga/Bundesliga transferstøy) er ren nyhets-/overgangsstøy fra NRK/Guardian/BBC — ikke event-hull (PL-åpning Arsenal–Man City 16. aug alt på tavla; Hovland/Reitan neste konkrete golf-event = FedEx St. Jude/Wyndham på tavla). Den ENE anomalien (esports stale-retained, high) er REELL → gap + sourceIssue over.",
+    "KORREKTE FRAVÆR (ikke hull): vinteridretter (av-sesong, juli); håndball (av-sesong; REMA 1000-ligaen starter ~sept.); Jakob Ingebrigtsen (ute pga. skade/sykdom); Aryan Tari (trakk seg fra eliteklassen). 100 Thieves/rain: ute av BLAST Bounty Malta LAN (ikke kvalifisert) → korrekt fravær for eier-linsen; server-brettet mangler likevel de andre katalog-lagene i arrangementet (se HIGH gap)."
   ]
 }
