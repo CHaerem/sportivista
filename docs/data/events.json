@@ -1946,8 +1946,8 @@
     "sport": "cycling",
     "tournament": "Tour de France Femmes 2026",
     "title": "Etappe 1 (flat): Lausanne – Lausanne",
-    "time": "2026-08-01T11:00:00Z",
-    "endTime": "2026-08-01T15:00:00Z",
+    "time": "2026-08-01T12:15:00Z",
+    "endTime": "2026-08-01T15:44:00Z",
     "venue": "Lausanne – Lausanne, Sveits",
     "norwegian": true,
     "norwegianPlayers": [
@@ -1968,16 +1968,16 @@
       }
     ],
     "source": "ai-research",
-    "researchedAt": "2026-07-20T07:45:00Z",
-    "confidence": "medium",
+    "researchedAt": "2026-07-30T17:50:00Z",
+    "confidence": "high",
     "evidence": [
       "https://en.wikipedia.org/wiki/2026_Tour_de_France_Femmes",
-      "https://www.letourfemmes.fr/en/overall-route",
-      "https://www.cyclingstage.com/tour-de-france-femmes-2026/route-tdf-2026-women/",
+      "https://www.letourfemmes.fr/en/stage-1",
+      "https://granddepartsuisse.ch/etape-lausanne-lausanne/",
       "https://kommunikasjon.ntb.no/pressemelding/18297553/fem-nye-ar-med-tour-de-france-pa-tv-2"
     ],
-    "summary": "Åpningsetappe i Tour de France Femmes 2026 (5. utgave, ni etapper 1.–9. aug, Lausanne → Nice, uten hviledag). 137 km, flat.\n\nNorsk lag: Uno-X Mobility stiller i dameløpet – Katrine Aalerud (klatrer/sammenlagt-kort) og Susanne Andersen bekreftet via offisielle rytterprofiler; full tropp ikke publisert. Etappe-starttider er ennå ikke offisielt satt (anslått) – verifiseres nærmere løpet.",
-    "id": "fcbc4ab316f0",
+    "summary": "Åpningsetappe i Tour de France Femmes 2026 (5. utgave, ni etapper 1.–9. aug, Lausanne → Nice, uten hviledag). 138 km, flat, en runde rundt Lausanne med fire kategoriserte stigninger og avslutning på Côte Saint-François.\n\nStarttiden er nå offisielt satt: avspark (under konduktør, Place de la Navigation) kl. 14.15 CEST (12.15 UTC), målgang ventet ~17.44 CEST – bekreftet på A.S.O.s offisielle etappeside letourfemmes.fr + det sveitsiske Grand Départ-vertskapet.\n\nNorsk lag: Uno-X Mobility stiller i dameløpet – Katrine Aalerud (klatrer/sammenlagt-kort) og Susanne Andersen bekreftet via offisielle rytterprofiler; full tropp ikke publisert.",
+    "id": "2b649982dff4",
     "participants": [],
     "verificationStatus": "confirmed",
     "verificationSources": [
@@ -1988,10 +1988,16 @@
     "provenance": {
       "time": {
         "sourceId": "letour",
-        "url": "https://www.letourfemmes.fr/en/overall-route",
+        "url": "https://www.letourfemmes.fr/en/stage-1",
         "basis": "primary",
-        "retrievedAt": "2026-07-29T08:06:00Z",
-        "note": "migrert mekanisk fra evidence (WP-242)"
+        "retrievedAt": "2026-07-30T17:50:00Z",
+        "note": "Offisiell etappeside: départ 14.15 CEST, arrivée 17.44."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-07-30T17:50:00Z"
       }
     }
   },
@@ -3709,6 +3715,136 @@
         "basis": "primary",
         "retrievedAt": "2026-07-17T04:00:00Z",
         "note": "migrert mekanisk fra evidence (WP-242)"
+      }
+    }
+  },
+  {
+    "sport": "football",
+    "tournament": "Eliteserien",
+    "title": "Rosenborg – Viking",
+    "time": "2026-08-14T17:00:00Z",
+    "endTime": null,
+    "venue": "Lerkendal Stadion, Trondheim",
+    "norwegian": true,
+    "homeTeam": "Rosenborg",
+    "awayTeam": "Viking",
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-07-30T17:50:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
+      "https://www.fotball.no/turneringer/eliteserien/2026/eliteserien-slik-spilles-runde-13-til-22/"
+    ],
+    "summary": "Eliteserien-kamp på Lerkendal – Rosenborg (sporet klubb) mot Viking i den engelske ukas fredagskamp.\n\nAvspark fredag 14. august kl. 19.00 CEST (17.00 UTC) – TV 2s faste fredagsslot, bekreftet på fotball.no-terminlisten. Eksakt avspark kan justeres 30–60 min hvis TV-valget endres nærmere kampdag.\n\nNorsk visning: TV 2 Play / TV 2 Sport. Lagt til manuelt fordi den statiske fotball-fetcheren ikke produserer Eliteserie-kamper (football.json foreldet).",
+    "participants": [],
+    "id": "79ea78be0a9d",
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
+        "basis": "primary",
+        "retrievedAt": "2026-07-30T17:50:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-07-30T17:50:00Z"
+      }
+    }
+  },
+  {
+    "sport": "football",
+    "tournament": "Eliteserien",
+    "title": "Brann – HamKam",
+    "time": "2026-08-16T15:00:00Z",
+    "endTime": null,
+    "venue": "Brann Stadion, Bergen",
+    "norwegian": true,
+    "homeTeam": "Brann",
+    "awayTeam": "HamKam",
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-07-30T17:50:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
+      "https://www.fotball.no/turneringer/eliteserien/2026/eliteserien-slik-spilles-runde-13-til-22/"
+    ],
+    "summary": "Eliteserien-kamp på Brann Stadion – Brann (sporet klubb) tar imot HamKam.\n\nAvspark søndag 16. august kl. 17.00 CEST (15.00 UTC) – bekreftet på fotball.no (Branns lagside + rundeoppsettet). Eksakt avspark kan justeres 30–60 min hvis TV-valget endres nærmere kampdag.\n\nNorsk visning: TV 2 Play / TV 2 Sport. Lagt til manuelt fordi den statiske fotball-fetcheren ikke produserer Eliteserie-kamper (football.json foreldet).",
+    "participants": [],
+    "id": "40e80092cb77",
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
+        "basis": "primary",
+        "retrievedAt": "2026-07-30T17:50:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-07-30T17:50:00Z"
+      }
+    }
+  },
+  {
+    "sport": "athletics",
+    "tournament": "Wanda Diamond League",
+    "title": "Athletissima Lausanne",
+    "time": "2026-08-21T17:45:00Z",
+    "endTime": "2026-08-21T20:00:00Z",
+    "venue": "Stade de la Pontaise, Lausanne",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-07-30T17:50:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://athletissima.ch/en/your-evening",
+      "https://www.diamondleague.com/calendar/"
+    ],
+    "summary": "Athletissima Lausanne – Diamond League-stevne på Stade de la Pontaise, det nest siste før DL-finalen i Brussel (4.–5. sept).\n\nStevnestart kl. 19.45 CEST (17.45 UTC) – bekreftet på arrangørens egen side (athletissima.ch). Det detaljerte øvelsesprogrammet og startlistene publiseres nærmere stevnet.\n\nNorsk visning: NRK (Diamond League-rettighetene i Norge t.o.m. 2029).",
+    "participants": [],
+    "id": "19e3516672f6",
+    "provenance": {
+      "time": {
+        "sourceId": "diamond-league",
+        "url": "https://athletissima.ch/en/your-evening",
+        "basis": "primary",
+        "retrievedAt": "2026-07-30T17:50:00Z"
+      },
+      "streaming": {
+        "sourceId": "nrk",
+        "url": "https://tv.nrk.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-07-30T17:50:00Z"
       }
     }
   }
