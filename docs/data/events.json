@@ -3326,6 +3326,52 @@
   },
   {
     "sport": "football",
+    "tournament": "Eliteserien",
+    "title": "Rosenborg – Viking",
+    "time": "2026-08-14T17:00:00Z",
+    "endTime": null,
+    "venue": "Lerkendal Stadion, Trondheim",
+    "norwegian": true,
+    "homeTeam": "Rosenborg",
+    "awayTeam": "Viking",
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-07-30T17:50:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
+      "https://www.fotball.no/turneringer/eliteserien/2026/eliteserien-slik-spilles-runde-13-til-22/"
+    ],
+    "summary": "Eliteserien-kamp på Lerkendal – Rosenborg (sporet klubb) mot Viking i den engelske ukas fredagskamp.\n\nAvspark fredag 14. august kl. 19.00 CEST (17.00 UTC) – TV 2s faste fredagsslot, bekreftet på fotball.no-terminlisten. Eksakt avspark kan justeres 30–60 min hvis TV-valget endres nærmere kampdag.\n\nNorsk visning: TV 2 Play / TV 2 Sport. Lagt til manuelt fordi den statiske fotball-fetcheren ikke produserer Eliteserie-kamper (football.json foreldet).",
+    "participants": [],
+    "id": "79ea78be0a9d",
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
+        "basis": "primary",
+        "retrievedAt": "2026-07-30T17:50:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-07-30T17:50:00Z"
+      }
+    },
+    "homeTeamEntityId": "rosenborg",
+    "awayTeamEntityId": "viking-fk"
+  },
+  {
+    "sport": "football",
     "tournament": "OBOS-ligaen",
     "title": "Lyn – Odd",
     "time": "2026-08-15T14:00:00Z",
@@ -3409,6 +3455,51 @@
     }
   },
   {
+    "sport": "football",
+    "tournament": "Eliteserien",
+    "title": "Brann – HamKam",
+    "time": "2026-08-16T15:00:00Z",
+    "endTime": null,
+    "venue": "Brann Stadion, Bergen",
+    "norwegian": true,
+    "homeTeam": "Brann",
+    "awayTeam": "HamKam",
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-07-30T17:50:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
+      "https://www.fotball.no/turneringer/eliteserien/2026/eliteserien-slik-spilles-runde-13-til-22/"
+    ],
+    "summary": "Eliteserien-kamp på Brann Stadion – Brann (sporet klubb) tar imot HamKam.\n\nAvspark søndag 16. august kl. 17.00 CEST (15.00 UTC) – bekreftet på fotball.no (Branns lagside + rundeoppsettet). Eksakt avspark kan justeres 30–60 min hvis TV-valget endres nærmere kampdag.\n\nNorsk visning: TV 2 Play / TV 2 Sport. Lagt til manuelt fordi den statiske fotball-fetcheren ikke produserer Eliteserie-kamper (football.json foreldet).",
+    "participants": [],
+    "id": "40e80092cb77",
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
+        "basis": "primary",
+        "retrievedAt": "2026-07-30T17:50:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-07-30T17:50:00Z"
+      }
+    },
+    "homeTeamEntityId": "brann-conference-league-qualifying"
+  },
+  {
     "sport": "f1",
     "tournament": "Formula 1 World Championship 2026",
     "title": "Nederlands Grand Prix – sprintkvalifisering",
@@ -3442,6 +3533,48 @@
         "basis": "primary",
         "retrievedAt": "2026-07-28T03:52:00Z",
         "note": "migrert mekanisk fra evidence (WP-242)"
+      }
+    }
+  },
+  {
+    "sport": "athletics",
+    "tournament": "Wanda Diamond League",
+    "title": "Athletissima Lausanne",
+    "time": "2026-08-21T17:45:00Z",
+    "endTime": "2026-08-21T20:00:00Z",
+    "venue": "Stade de la Pontaise, Lausanne",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-07-30T17:50:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://athletissima.ch/en/your-evening",
+      "https://www.diamondleague.com/calendar/"
+    ],
+    "summary": "Athletissima Lausanne – Diamond League-stevne på Stade de la Pontaise, det nest siste før DL-finalen i Brussel (4.–5. sept).\n\nStevnestart kl. 19.45 CEST (17.45 UTC) – bekreftet på arrangørens egen side (athletissima.ch). Det detaljerte øvelsesprogrammet og startlistene publiseres nærmere stevnet.\n\nNorsk visning: NRK (Diamond League-rettighetene i Norge t.o.m. 2029).",
+    "participants": [],
+    "id": "19e3516672f6",
+    "provenance": {
+      "time": {
+        "sourceId": "diamond-league",
+        "url": "https://athletissima.ch/en/your-evening",
+        "basis": "primary",
+        "retrievedAt": "2026-07-30T17:50:00Z"
+      },
+      "streaming": {
+        "sourceId": "nrk",
+        "url": "https://tv.nrk.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-07-30T17:50:00Z"
       }
     }
   },
@@ -3715,136 +3848,6 @@
         "basis": "primary",
         "retrievedAt": "2026-07-17T04:00:00Z",
         "note": "migrert mekanisk fra evidence (WP-242)"
-      }
-    }
-  },
-  {
-    "sport": "football",
-    "tournament": "Eliteserien",
-    "title": "Rosenborg – Viking",
-    "time": "2026-08-14T17:00:00Z",
-    "endTime": null,
-    "venue": "Lerkendal Stadion, Trondheim",
-    "norwegian": true,
-    "homeTeam": "Rosenborg",
-    "awayTeam": "Viking",
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-07-30T17:50:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
-      "https://www.fotball.no/turneringer/eliteserien/2026/eliteserien-slik-spilles-runde-13-til-22/"
-    ],
-    "summary": "Eliteserien-kamp på Lerkendal – Rosenborg (sporet klubb) mot Viking i den engelske ukas fredagskamp.\n\nAvspark fredag 14. august kl. 19.00 CEST (17.00 UTC) – TV 2s faste fredagsslot, bekreftet på fotball.no-terminlisten. Eksakt avspark kan justeres 30–60 min hvis TV-valget endres nærmere kampdag.\n\nNorsk visning: TV 2 Play / TV 2 Sport. Lagt til manuelt fordi den statiske fotball-fetcheren ikke produserer Eliteserie-kamper (football.json foreldet).",
-    "participants": [],
-    "id": "79ea78be0a9d",
-    "provenance": {
-      "time": {
-        "sourceId": "fotball-no",
-        "url": "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
-        "basis": "primary",
-        "retrievedAt": "2026-07-30T17:50:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-07-30T17:50:00Z"
-      }
-    }
-  },
-  {
-    "sport": "football",
-    "tournament": "Eliteserien",
-    "title": "Brann – HamKam",
-    "time": "2026-08-16T15:00:00Z",
-    "endTime": null,
-    "venue": "Brann Stadion, Bergen",
-    "norwegian": true,
-    "homeTeam": "Brann",
-    "awayTeam": "HamKam",
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-07-30T17:50:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
-      "https://www.fotball.no/turneringer/eliteserien/2026/eliteserien-slik-spilles-runde-13-til-22/"
-    ],
-    "summary": "Eliteserien-kamp på Brann Stadion – Brann (sporet klubb) tar imot HamKam.\n\nAvspark søndag 16. august kl. 17.00 CEST (15.00 UTC) – bekreftet på fotball.no (Branns lagside + rundeoppsettet). Eksakt avspark kan justeres 30–60 min hvis TV-valget endres nærmere kampdag.\n\nNorsk visning: TV 2 Play / TV 2 Sport. Lagt til manuelt fordi den statiske fotball-fetcheren ikke produserer Eliteserie-kamper (football.json foreldet).",
-    "participants": [],
-    "id": "40e80092cb77",
-    "provenance": {
-      "time": {
-        "sourceId": "fotball-no",
-        "url": "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
-        "basis": "primary",
-        "retrievedAt": "2026-07-30T17:50:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-07-30T17:50:00Z"
-      }
-    }
-  },
-  {
-    "sport": "athletics",
-    "tournament": "Wanda Diamond League",
-    "title": "Athletissima Lausanne",
-    "time": "2026-08-21T17:45:00Z",
-    "endTime": "2026-08-21T20:00:00Z",
-    "venue": "Stade de la Pontaise, Lausanne",
-    "norwegian": false,
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-07-30T17:50:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://athletissima.ch/en/your-evening",
-      "https://www.diamondleague.com/calendar/"
-    ],
-    "summary": "Athletissima Lausanne – Diamond League-stevne på Stade de la Pontaise, det nest siste før DL-finalen i Brussel (4.–5. sept).\n\nStevnestart kl. 19.45 CEST (17.45 UTC) – bekreftet på arrangørens egen side (athletissima.ch). Det detaljerte øvelsesprogrammet og startlistene publiseres nærmere stevnet.\n\nNorsk visning: NRK (Diamond League-rettighetene i Norge t.o.m. 2029).",
-    "participants": [],
-    "id": "19e3516672f6",
-    "provenance": {
-      "time": {
-        "sourceId": "diamond-league",
-        "url": "https://athletissima.ch/en/your-evening",
-        "basis": "primary",
-        "retrievedAt": "2026-07-30T17:50:00Z"
-      },
-      "streaming": {
-        "sourceId": "nrk",
-        "url": "https://tv.nrk.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-07-30T17:50:00Z"
       }
     }
   }
