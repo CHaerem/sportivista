@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-07-30T10:23:04.995Z",
+  "generatedAt": "2026-07-30T12:27:55.288Z",
   "gapCount": 6,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Viktor Hovland",
+      "entity": "Kristoffer Reitan",
       "type": "missing",
       "imminent": false,
-      "headline": "Hovland-stikk: – Du har aldri lyst til å tape mot dansker",
-      "link": "https://www.tv2.no/a/19085986",
-      "feed": "tv2-sport",
+      "headline": "Reitan med Tiger-avsløring: – Det knuste hjertet mitt",
+      "link": "https://www.nrk.no/sport/golf_-reitan-med-tiger-avsloring_-_-det-knuste-hjertet-mitt-1.17972767",
+      "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-07-30T10:23:03.882Z"
+      "detectedAt": "2026-07-30T12:27:52.627Z"
     },
     {
       "kind": "entity",
-      "entity": "Hovland",
+      "entity": "Reitan",
       "type": "missing",
       "imminent": false,
-      "headline": "Hovland-stikk: – Du har aldri lyst til å tape mot dansker",
-      "link": "https://www.tv2.no/a/19085986",
-      "feed": "tv2-sport",
+      "headline": "Reitan med Tiger-avsløring: – Det knuste hjertet mitt",
+      "link": "https://www.nrk.no/sport/golf_-reitan-med-tiger-avsloring_-_-det-knuste-hjertet-mitt-1.17972767",
+      "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-07-30T10:23:03.882Z"
+      "detectedAt": "2026-07-30T12:27:52.627Z"
     },
     {
       "kind": "entity",
@@ -34,7 +34,7 @@
       "link": "https://www.theguardian.com/football/2026/jul/30/football-transfer-rumours-jack-grealish-al-hilal-rayan-liverpool",
       "feed": "guardian-football",
       "matchCount": 3,
-      "detectedAt": "2026-07-30T10:23:03.882Z"
+      "detectedAt": "2026-07-30T12:27:52.627Z"
     },
     {
       "kind": "entity",
@@ -45,18 +45,18 @@
       "link": "https://www.bbc.co.uk/sport/football/articles/cpq8ndn0g7go?at_medium=RSS&amp;at_campaign=rss",
       "feed": "bbc-football",
       "matchCount": 1,
-      "detectedAt": "2026-07-30T10:23:03.882Z"
+      "detectedAt": "2026-07-30T12:27:52.627Z"
     },
     {
       "kind": "entity",
       "entity": "Liverpool",
       "type": "missing",
       "imminent": false,
-      "headline": "Liverpool slo Wrexham – 17-åring avgjorde",
-      "link": "https://www.tv2.no/a/19087621",
-      "feed": "tv2-sport",
+      "headline": "Reservepreget Liverpool med sliteseier – Ngumoah avgjorde",
+      "link": "https://www.nrk.no/sport/reservepreget-liverpool-med-sliteseier-_-ngumoah-avgjorde-1.17973371",
+      "feed": "nrk-sport",
       "matchCount": 3,
-      "detectedAt": "2026-07-30T10:23:03.882Z"
+      "detectedAt": "2026-07-30T12:27:52.627Z"
     },
     {
       "kind": "entity",
@@ -67,18 +67,18 @@
       "link": "https://www.theguardian.com/football/2026/jul/29/liverpool-prepare-opening-offer-for-paris-saint-germains-bradley-barcola",
       "feed": "guardian-football",
       "matchCount": 2,
-      "detectedAt": "2026-07-30T10:23:03.882Z"
+      "detectedAt": "2026-07-30T12:27:52.627Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 47 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 47,
+      "detail": "docs/data/esports.json has been served from retention for 48 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 48,
       "staleDays": 3,
       "severity": "high",
-      "detectedAt": "2026-07-30T10:23:04.814Z"
+      "detectedAt": "2026-07-30T12:27:53.624Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
