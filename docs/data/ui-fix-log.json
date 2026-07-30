@@ -1,14 +1,15 @@
 {
-	"runAt": "2026-07-29T11:34:00Z",
+	"runAt": "2026-07-30T11:16:00Z",
 	"action": "opened-pr",
-	"pr": "https://github.com/CHaerem/sportivista/pull/419",
+	"pr": "https://github.com/CHaerem/sportivista/pull/431",
 	"fixed": [
-		"medium (900px): the auth gate had no interactive control to retry when Sign in with Apple setup fails — only red text telling the user to reload. Added a calm 'Last inn på nytt' reload button, shown only on an auth error, resolving the dead end."
+		"375px HIGH: assistant FAB pill overlapped/fragmented the '19:00 Hradec Králové – Tromsø' team name",
+		"393px HIGH: assistant FAB pill covered the same row's '· VG TV' channel subtext"
 	],
 	"notes": [
-		"The two HIGH findings (dashboard hidden behind the mandatory 'Logg på med Apple' wall; AUTHENTICATION_FAILED) were deliberately NOT actioned: the gate is an explicit owner decision (eier-beslutning 21.07, documented inline in index.html; body.gated hides all content until Sign in with Apple succeeds). Removing/bypassing it would reverse an owner decision. The failure to reach the board here is also an artifact of the offline screenshot harness having no network to Apple CloudKit — visual-qa itself flagged this and asked a human to confirm real signed-in users see the dashboard in production.",
-		"The MEDIUM finding IS genuinely code-fixable and independent of the gate decision: on any auth error (CloudKit failed to load, or setUpAuth rejected — e.g. blocked third-party cookies / private browsing, a real production scenario) the user was left with red text instructing a reload but no control. Added #auth-retry: static markup in index.html, revealed by icloud-sync.js gate() showError() (created on demand for gate-boot's injected overlay on secondary pages), hidden again on the normal gate and after successful auth. Its only action is location.reload() — exactly what the error copy already instructs. Quiet secondary button (--surface bg, --line border, amber only on hover) — respects calm design, not an accent.",
-		"Unlike the 2026-07-28 deferral (which treated 'any change to the auth flow' as unverifiable because the AUTHED board needs a live CloudKit sign-in the harness lacks), this change is confined to the ERROR STATE — which is exactly what the offline harness renders — plus a single guarded hideRetry() on the success path that only hides an already-hidden button. The authed-board render is untouched. So the fix is fully screenshot-verifiable here.",
-		"Screenshot-verified at 375/393/900px: the reload button appears centered and calm below the error, no overflow/truncation, wordmark + tagline + lead copy intact — no regression. npm test: 1207 passed (73 files)."
+		"Root cause: on phones the agenda column is edge-to-edge, so the labelled fixed FAB has nowhere to sit but over a fixture. It already collapses to a glyph on scroll (WP-146) but is expanded at rest — exactly when visual-qa shot it.",
+		"Fix: a @media (max-width: 460px) rule keeps the FAB in its existing collapsed glyph-only form regardless of scroll (reuses the .collapsed appearance, no new idiom). Wider screens keep the labelled pill in the empty right margin.",
+		"Only docs/css/cards.css changed. Verified by re-screenshotting 375/393/900 + a clipped crop of the FAB region: team name + '· VG TV' fully readable at 375/393; 900 unchanged (pill in the margin, no overlap). npm test green (1368).",
+		"Not merged — the workflow re-gates tests and auto-merges + deploys."
 	]
 }
