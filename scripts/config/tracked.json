@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-29T17:35:00Z",
+  "lastUpdated": "2026-07-30T06:50:00Z",
   "lastUpdatedBy": "research-agent",
   "version": 2,
   "leagues": [
@@ -375,6 +375,22 @@
       ],
       "expires": "2026-08-24T23:59:59Z",
       "priority": "medium"
+    },
+    {
+      "id": "blast-bounty-summer-2026",
+      "name": "BLAST Bounty Summer 2026 (Season 2) – LAN-finale (Malta)",
+      "sport": "esports",
+      "reason": "Valve tier-1 (S-tier) CS2-LAN i Attard, Malta 30. juli–2. aug ($740k, 8 lag, single-elim Bo3, finale Bo5) med SEKS katalog-entiteter i feltet (Team Spirit, FaZe Clan, Team Liquid, Astralis, MOUZ, The MongolZ; øvrige to = 3DMAX + paiN Gaming) → åpner esports-entity-gaten. LAGT TIL 30. juli etter coverage-critics HIGH imminent-eskalering (deep): hele arrangementet manglet på tavla fordi den statiske esports-fetcheren er stale-retained (esports.json servert fra retention 45 kjøringer / 3 dager — død Liquipedia-henting, FLAGGET for self-repair). ALLE FIRE KVARTFINALENE nå på tavla som ai-research-events (high), tidene bekreftet mot Liquipedia + HLTV + uavhengig write-time fact-check mot blast.tv (alle enige, Malta = CEST/UTC+2): (1) Team Liquid–Team Spirit tor. 30. juli 13.00 UTC (15.00 CEST), (2) 3DMAX–MOUZ tor. 30. juli 16.00 UTC (18.00 CEST), (3) FaZe Clan–The MongolZ fre. 31. juli 12.30 UTC (14.30 CEST), (4) paiN Gaming–Astralis fre. 31. juli 15.30 UTC (17.30 CEST). SEMIFINALER (lør. 1. aug) + GRAND FINAL Bo5 (søn. 2. aug): motstandere OG eksakte tider avklares FØRST etter kvartfinalene (BLAST re-seeder bracketen via pick-format) → HOLDT AV TAVLA til lagene er kjent (unngår feil-event; fetcher/verify/neste kjøring boarder dem når QF-ene er avgjort). 100 Thieves (rain) er IKKE i dette arrangementet (tapte tidligere runde) → korrekt fravær for eier-linsen; server-brettet skal likevel ha de øvrige katalog-lagene (per-bruker-linsen filtrerer). Gratis på BLAST.tv/Twitch (blastpremier)/Kick — ingen norsk kringkaster (jf. cs2-sources-skillen).",
+      "addedAt": "2026-07-30T06:46:00Z",
+      "addedBy": "research-agent",
+      "evidence": [
+        "catalog.json#tier2.teams",
+        "https://liquipedia.net/counterstrike/BLAST/Bounty/2026/Summer",
+        "https://www.hltv.org/news/45203/blast-bounty-season-2-finals-quarter-finals-set",
+        "https://blast.tv/cs/tournaments/bounty-2026-season-2"
+      ],
+      "expires": "2026-08-03T23:59:59Z",
+      "priority": "high"
     },
     {
       "id": "em-friidrett-2026",
