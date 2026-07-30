@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-30T06:30:48.753Z",
+  "generatedAt": "2026-07-30T07:32:53.853Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "yellow",
+    "coverage": "red",
     "amendRate": "green",
     "silentStops": "yellow",
     "participantStatus": "green"
@@ -21,34 +21,34 @@
   "coverage": {
     "openGaps": 3,
     "bySeverity": {
-      "high": 0,
-      "medium": 3,
+      "high": 1,
+      "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 1,
+    "oldestGapAgeDays": 1.04,
     "escalatable": 0,
     "catalogMatched": 3,
-    "auditedAt": "2026-07-29T06:32:00Z",
+    "auditedAt": "2026-07-30T06:27:50Z",
     "gaps": [
       {
-        "interest": "Friidrett (tier1 wholesale) — Wanda Diamond League gjenopptas i august",
-        "severity": "medium",
-        "ageDays": 1,
+        "interest": "CS2 / esports — BLAST Bounty Summer 2026 LAN Final (Malta, 30. juli–2. aug)",
+        "severity": "high",
+        "ageDays": 0.05,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
-        "interest": "Sykkel (tier1 wholesale) — Tour de Pologne 2026 (Uno-X)",
+        "interest": "Friidrett (tier1 wholesale) — Wanda Diamond League gjenopptas i august",
         "severity": "medium",
-        "ageDays": 1,
-        "recurrences": 0,
+        "ageDays": 1.04,
+        "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Eliteserien (tier1-turnering + sporet liga) — runde 17 (~14.–17. aug)",
         "severity": "medium",
-        "ageDays": 1,
-        "recurrences": 0,
+        "ageDays": 1.04,
+        "recurrences": 1,
         "catalogMatched": true
       }
     ]
@@ -144,21 +144,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-07-30T06:30:44.134Z",
+    "buildCheckedAt": "2026-07-30T07:32:49.329Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-07-29T22:54:54.915Z",
-    "manifestAgeHours": 7.6,
+    "manifestGeneratedAt": "2026-07-30T06:30:50.345Z",
+    "manifestAgeHours": 1.03,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-07-26T15:02:01.492Z",
-        "ageHours": 87.48
+        "ageHours": 88.51
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-07-29T08:06:00Z",
-    "verifyAgeHours": 22.41,
+    "verifyAgeHours": 23.45,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
