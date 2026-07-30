@@ -1,51 +1,40 @@
 {
-  "generatedAt": "2026-07-30T07:32:55.191Z",
-  "gapCount": 7,
+  "generatedAt": "2026-07-30T10:23:04.995Z",
+  "gapCount": 6,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Viktor Hovland",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Hovland-stikk: – Du har aldri lyst til å tape mot dansker",
+      "link": "https://www.tv2.no/a/19085986",
+      "feed": "tv2-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-07-30T10:23:03.882Z"
+    },
     {
       "kind": "entity",
       "entity": "Hovland",
       "type": "missing",
       "imminent": false,
-      "headline": "Nytt golfkonsept: Hovland og Reitan blir kapteiner i duell mot Danmark",
-      "link": "https://www.nrk.no/sport/nytt-golfkonsept_-hovland-og-reitan-blir-kapteiner-i-duell-mot-danmark-1.17972695",
-      "feed": "nrk-sport",
+      "headline": "Hovland-stikk: – Du har aldri lyst til å tape mot dansker",
+      "link": "https://www.tv2.no/a/19085986",
+      "feed": "tv2-sport",
       "matchCount": 1,
-      "detectedAt": "2026-07-30T07:32:54.087Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Kristoffer Reitan",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Reitan med Tiger-avsløring: – Det knuste hjertet mitt",
-      "link": "https://www.nrk.no/sport/golf_-reitan-med-tiger-avsloring_-_-det-knuste-hjertet-mitt-1.17972767",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-07-30T07:32:54.087Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Reitan",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Reitan med Tiger-avsløring: – Det knuste hjertet mitt",
-      "link": "https://www.nrk.no/sport/golf_-reitan-med-tiger-avsloring_-_-det-knuste-hjertet-mitt-1.17972767",
-      "feed": "nrk-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-07-30T07:32:54.087Z"
+      "detectedAt": "2026-07-30T10:23:03.882Z"
     },
     {
       "kind": "entity",
       "entity": "Manchester City",
       "type": "missing",
-      "imminent": false,
-      "headline": "Manchester City leading opposition to Premier League’s £1.5bn EFL proposal",
-      "link": "https://www.theguardian.com/football/2026/jul/29/manchester-city-leading-opposition-to-premier-leagues-15bn-efl-proposal",
+      "imminent": true,
+      "headline": "Football transfer rumours: Jack Grealish to make Saudi switch to Al-Hilal?",
+      "link": "https://www.theguardian.com/football/2026/jul/30/football-transfer-rumours-jack-grealish-al-hilal-rayan-liverpool",
       "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-07-30T07:32:54.087Z"
+      "matchCount": 3,
+      "detectedAt": "2026-07-30T10:23:03.882Z"
     },
     {
       "kind": "entity",
@@ -55,41 +44,41 @@
       "headline": "Timber leaves Arsenal camp for groin check",
       "link": "https://www.bbc.co.uk/sport/football/articles/cpq8ndn0g7go?at_medium=RSS&amp;at_campaign=rss",
       "feed": "bbc-football",
-      "matchCount": 2,
-      "detectedAt": "2026-07-30T07:32:54.087Z"
+      "matchCount": 1,
+      "detectedAt": "2026-07-30T10:23:03.882Z"
     },
     {
       "kind": "entity",
       "entity": "Liverpool",
       "type": "missing",
       "imminent": false,
-      "headline": "Reservepreget Liverpool med sliteseier – Ngumoah avgjorde",
-      "link": "https://www.nrk.no/sport/reservepreget-liverpool-med-sliteseier-_-ngumoah-avgjorde-1.17973371",
-      "feed": "nrk-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-07-30T07:32:54.087Z"
+      "headline": "Liverpool slo Wrexham – 17-åring avgjorde",
+      "link": "https://www.tv2.no/a/19087621",
+      "feed": "tv2-sport",
+      "matchCount": 3,
+      "detectedAt": "2026-07-30T10:23:03.882Z"
     },
     {
       "kind": "entity",
       "entity": "Premier League",
       "type": "missing",
       "imminent": false,
-      "headline": "Manchester City leading opposition to Premier League’s £1.5bn EFL proposal",
-      "link": "https://www.theguardian.com/football/2026/jul/29/manchester-city-leading-opposition-to-premier-leagues-15bn-efl-proposal",
+      "headline": "Liverpool prepare opening offer for Paris Saint-Germain’s Bradley Barcola",
+      "link": "https://www.theguardian.com/football/2026/jul/29/liverpool-prepare-opening-offer-for-paris-saint-germains-bradley-barcola",
       "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-07-30T07:32:54.087Z"
+      "matchCount": 2,
+      "detectedAt": "2026-07-30T10:23:03.882Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 46 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 46,
+      "detail": "docs/data/esports.json has been served from retention for 47 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 47,
       "staleDays": 3,
       "severity": "high",
-      "detectedAt": "2026-07-30T07:32:55.016Z"
+      "detectedAt": "2026-07-30T10:23:04.814Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
