@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-30T15:09:26.437Z",
-  "gapCount": 3,
+  "generatedAt": "2026-07-30T17:24:11.380Z",
+  "gapCount": 4,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -12,40 +12,51 @@
       "link": "https://www.theguardian.com/football/2026/jul/30/football-transfer-rumours-jack-grealish-al-hilal-rayan-liverpool",
       "feed": "guardian-football",
       "matchCount": 2,
-      "detectedAt": "2026-07-30T15:09:25.336Z"
+      "detectedAt": "2026-07-30T17:24:10.246Z"
     },
     {
       "kind": "entity",
       "entity": "Liverpool",
       "type": "missing",
       "imminent": false,
-      "headline": "Liverpool slo Wrexham – 17-åring avgjorde",
-      "link": "https://www.tv2.no/a/19087621",
-      "feed": "tv2-sport",
+      "headline": "Harvey Elliott revels in ‘second chance’ at Liverpool and has no regrets over Aston Villa loan",
+      "link": "https://www.theguardian.com/football/2026/jul/30/harvey-elliott-liverpool-second-chance-aston-villa-loan",
+      "feed": "guardian-football",
       "matchCount": 3,
-      "detectedAt": "2026-07-30T15:09:25.336Z"
+      "detectedAt": "2026-07-30T17:24:10.246Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Premier League",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Toon turnover: the stats behind Eddie Howe’s highs and lows at Newcastle",
+      "link": "https://www.theguardian.com/football/2026/jul/30/toon-turnover-the-stats-behind-eddie-howes-highs-and-lows-at-newcastle",
+      "feed": "guardian-football",
+      "matchCount": 2,
+      "detectedAt": "2026-07-30T17:24:10.246Z"
     },
     {
       "kind": "entity",
       "entity": "Fotball-VM",
       "type": "missing",
       "imminent": false,
-      "headline": "Medier: Europeiske land truer med boikott av fotball-VM",
-      "link": "https://www.nrk.no/sport/medier_-truer-med-boikott-av-fotball-vm-1.17974171",
+      "headline": "NFF bekrefter: Vil trekke seg fra fremtidige fotball-VM",
+      "link": "https://www.nrk.no/sport/nff-bekrefter_-vil-trekke-seg-fra-fremtidige-fotball-vm-1.17974171",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-07-30T15:09:25.336Z"
+      "detectedAt": "2026-07-30T17:24:10.246Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 49 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 49,
+      "detail": "docs/data/esports.json has been served from retention for 50 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 50,
       "staleDays": 4,
       "severity": "high",
-      "detectedAt": "2026-07-30T15:09:26.329Z"
+      "detectedAt": "2026-07-30T17:24:11.248Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
