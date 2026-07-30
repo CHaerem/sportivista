@@ -399,6 +399,15 @@
 	transition: max-width 0.2s ease, opacity 0.15s ease;
 }
 .assistant-fab .fab-label { max-width: 8em; opacity: 1; transition: max-width 0.2s ease, opacity 0.2s ease; }
+/* On phones the agenda fills the column edge-to-edge, so the expanded pill sits
+   ON a fixture's team name and fragments it (visual-qa 2026-07-30). Keep it
+   glyph-only here regardless of scroll — the bare amber control hugs the corner
+   and clears the row text. Wider screens keep the labelled pill in the empty
+   right margin beside the 640px column, where it overlaps nothing. */
+@media (max-width: 460px) {
+	.assistant-fab { padding: 12px; gap: 0; }
+	.assistant-fab .fab-label { max-width: 0; opacity: 0; overflow: hidden; }
+}
 
 /* The conversation sheet — a bottom sheet with a backdrop, mirroring the iOS
    .sheet(detents). Calm: rounded top, a grabber, no spinner. */
