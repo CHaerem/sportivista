@@ -1,31 +1,31 @@
 {
-  "checkedAt": "2026-07-29T10:34:33Z",
+  "checkedAt": "2026-07-30T10:23:02Z",
   "widths": [375, 393, 900],
   "verdict": "issues",
   "findings": [
     {
       "width": 375,
-      "area": "auth gate (#auth-gate, body.gated)",
-      "issue": "Whole dashboard is still hidden behind the mandatory 'Logg på med Apple' wall. Sign-in fails with 'Kunne ikke starte Apple-innlogging (AUTHENTICATION_FAILED)' and there is no fallback/skip — no masthead, agenda, events, or 'Dette dekker vi' section render at all. The product's core promise (a calm scannable agenda) is completely invisible.",
+      "area": "assistant-fab overlapping agenda row (I DAG · Hradec Králové – Tromsø)",
+      "issue": "The floating 'Assistent' button (fixed bottom-right, translucent + blurred pill) sits directly on top of the 19:00 'Hradec Králové – Tromsø' row. It visually occludes the middle of the team name itself — the row reads as 'H[icon] ★ Assistent Kralove – Tromsø' — hiding the fact that this is Norway's Europa League qualifier. This is the exact class of bug the checklist calls out: a fixture readable to code but not to an eye.",
       "severity": "high"
     },
     {
       "width": 393,
-      "area": "auth gate (#auth-gate, body.gated)",
-      "issue": "Same as 375px: only the Apple sign-in card and AUTHENTICATION_FAILED error are visible; no dashboard content renders.",
+      "area": "assistant-fab overlapping agenda row (I DAG · Hradec Králové – Tromsø)",
+      "issue": "Same fixed-position 'Assistent' pill lands on the same row one line lower here, covering the competition/channel subtext ('UEFA Europa League 2026/27 (kvalifisering) · VG TV') so the 'where to watch' channel is unreadable behind the button.",
       "severity": "high"
     },
     {
       "width": 900,
-      "area": "auth gate (#auth-gate, body.gated)",
-      "issue": "Same as smaller widths: only the Apple sign-in card and AUTHENTICATION_FAILED error are visible; no dashboard content renders. At all three widths the #apple-sign-in-button area itself renders empty (CloudKit's own Sign-in-with-Apple control never appears) — once auth setup fails there is no visible interactive control to retry, only text instructing to reload the page or open DevTools.",
-      "severity": "medium"
+      "area": "assistant-fab",
+      "issue": "At this width the button lands in the empty right-hand margin beside the agenda column (which is capped at 640px) and does not overlap any text — no issue here.",
+      "severity": "low"
     }
   ],
   "notes": [
-    "Unchanged repeat of the 2026-07-27/28 findings: the gate is a deliberate owner decision (documented inline in index.html around the auth-gate markup — 'eier-beslutning 21.07', body.gated hides all content until Sign in with Apple succeeds). `git log --since=2026-07-28 -- docs/index.html docs/js/icloud-sync.js docs/js/icloud-config.js docs/css/base.css` shows only the large self-repair commit (627a130) that restored a batch of previously untracked/missing repo files (workflows, skills, base.css itself as a 'new file' in git, etc.) — a repo-hygiene fix, not a change to the auth-gate markup, logic, or CSS rules. The gate text/behaviour is byte-identical to the prior run.",
-    "Could not assess ANY of the correctness/layout checklist (match name truncation, streaming channel/foreign-broadcaster check, times, flags/crests, must-see accent, header/footer alignment) at any width — everything behind the auth gate is unreachable without a successful Apple sign-in, and this screenshot harness has no network path to Apple's CloudKit web services.",
-    "The gate screen itself (wordmark, tagline, lead copy, error text) remains well laid out at all three widths: text wraps cleanly, no horizontal overflow, no clipping, calm and centered, single amber accent on the colon — same visual quality as the prior two runs.",
-    "Flagging high again (not escalating further) purely because it means visual QA cannot verify the actual product at all, run after run, in this offline harness — this is the same standing gap noted in the last two checks, not a new regression. A human should confirm whether real signed-in users in production see the dashboard fine (this may be purely an artifact of the no-network screenshot environment) and whether the empty sign-in-button-on-failure state (medium finding above) also occurs for real users whose CloudKit auth fails (e.g. Safari private browsing / blocked third-party cookies), since that would be a genuine dead end with no retry control."
+    "The Apple sign-in wall that blocked every check on the last two runs (2026-07-28/29) is gone this run: the dashboard content itself now renders and could be fully evaluated. (The screenshot harness serves a tokenless icloud-config.js per a comment in scripts/screenshot.js — noting this so a human knows why this run can suddenly see real content again.)",
+    "The assistant-fab overlap is not a full-page-screenshot stitching quirk: the button is `position: fixed` with no transformed/filtered ancestor breaking its containing block (checked docs/css/cards.css + docs/index.html), and the capture viewport is a real 900px-tall browser viewport (scripts/screenshot.js), so this is how the pill sits relative to on-screen content at rest, not an artifact of tiling a tall page.",
+    "Everything else checked out well at all three widths: no horizontal scroll/clipping, single quiet column, generous spacing, header/day-headings/footer intact and aligned, only Norwegian channels shown (TV 2, TV 2 Play, Viaplay, VG TV, HBO Max — no FOX/ESPN/Sky), times sensibly formatted, must-see accent dots used sparingly (4 of ~18 rows), national flags and club badges render as real icons (no broken-image boxes).",
+    "Could not fully assess whether the small circular club badges are accurate crests vs. generic placeholders at this screenshot resolution — worth a closer look with a targeted crop if that matters."
   ]
 }
