@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T07:49:28.268Z",
+  "generatedAt": "2026-07-31T10:36:15.235Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -25,7 +25,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 2.05,
+    "oldestGapAgeDays": 2.17,
     "escalatable": 0,
     "catalogMatched": 3,
     "auditedAt": "2026-07-31T06:35:00Z",
@@ -33,35 +33,35 @@
       {
         "interest": "CS2 / esports — BLAST Bounty Summer 2026 Malta LAN: semifinaler + Bo5-finale",
         "severity": "high",
-        "ageDays": 1.06,
+        "ageDays": 1.17,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Premier League 2026/27 — åpningsrunden (21.–23. aug)",
         "severity": "medium",
-        "ageDays": 0.05,
+        "ageDays": 0.17,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Friidrett (tier1 wholesale) — Wanda Diamond League Silesia/Chorzów (23. aug)",
         "severity": "medium",
-        "ageDays": 2.05,
+        "ageDays": 2.17,
         "recurrences": 2,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0,
+    "nearTermRate": 0.17,
     "nearTermChecked": 6,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-07-30T07:46:41Z",
+    "nearTermAmended": 1,
+    "verifyRunAt": "2026-07-31T08:25:00Z",
     "windowRate": 0.01,
-    "windowChecks": 70,
+    "windowChecks": 75,
     "windowAmendments": 1,
-    "windowCorrections": 3,
+    "windowCorrections": 4,
     "byDay": [
       {
         "date": "2026-07-18",
@@ -139,30 +139,37 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-07-31",
+        "checks": 5,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-07-31T07:49:25.696Z",
+    "buildCheckedAt": "2026-07-31T10:36:10.321Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-07-31T06:48:18.577Z",
-    "manifestAgeHours": 1.02,
+    "manifestGeneratedAt": "2026-07-31T07:49:30.803Z",
+    "manifestAgeHours": 2.78,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-07-26T15:02:01.492Z",
-        "ageHours": 112.79
+        "ageHours": 115.57
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-07-30T07:46:41Z",
-    "verifyAgeHours": 24.05,
+    "checkedAt": "2026-07-31T08:25:00Z",
+    "verifyAgeHours": 2.19,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
-      "Rocket Classic (golf, in-progress dag 1): Kristoffer Ventura tee-tid 17.49 UTC i dag; runde 1 ikke ferdig, ingen cut aa bekrefte enda - ingen endring (WP-95 …"
+      "INGEN ENDRING – Rocket Classic (golf, in-progress): Kristoffer Ventura spiller runde 2 fredag 31. juli; cut avgjøres først etter runde 2, så ingen cut-status…"
     ]
   }
 }
