@@ -1,15 +1,16 @@
 {
-  "runAt": "2026-07-30T07:46:41Z",
+  "runAt": "2026-07-31T08:25:00Z",
   "checked": 6,
-  "confirmed": 6,
-  "amended": 0,
+  "confirmed": 3,
+  "amended": 1,
   "removed": 0,
   "notes": [
-    "Mesteparten av 7-dagersvinduet ble alt verifisert 2026-07-29; denne runden traff de ai-research-eventene i vinduet som ikke var verifisert ennå.",
-    "BLAST Bounty S2 kvartfinaler (4 kamper, Malta 30.-31. juli, ferskt research 30.07 06:46): alle fire starttider bekreftet mot Liquipedia + HLTV (begge enige) - Liquid-Spirit 13.00 UTC, 3DMAX-MOUZ 16.00 UTC (30. juli), FaZe-MongolZ 12.30 UTC, paiN-Astralis 15.30 UTC (31. juli). Ingen norsk kringkaster; gratis BLAST.tv/Twitch/Kick - streaming korrekt. verificationStatus=confirmed.",
-    "Tour de Pologne etappe 1 (Gdynia-Koszalin, 234 km, 3. aug): rute/dato bekreftet mot arrangoeren tourdepologne.pl. Eksakt starttid ikke offisielt publisert (kun nedlastbart PDF-tidsskjema), saa board-tiden (08.05 UTC) forblir et anslag og confidence beholdes medium - aerlig anslag framfor gjettet presisjon.",
-    "Wyndham Championship (Sedgefield CC, Greensboro NC, 6.-9. aug): dato/venue bekreftet mot arrangoer + PGA Tour. Felt/tee-tider ennaa ikke publisert (summary sier alt dette). Norsk visning HBO Max/Eurosport (WBD PGA-rettigheter) - korrekt.",
-    "Rocket Classic (golf, in-progress dag 1): Kristoffer Ventura tee-tid 17.49 UTC i dag; runde 1 ikke ferdig, ingen cut aa bekrefte enda - ingen endring (WP-95 utsteder ingen status foer cut er avgjort).",
-    "Ingen tentative-kanaler paa boardet aa loese. Ingen fjernede eller avlyste hendelser. 4 kalibreringslinjer lagt til (alle agreed=true)."
+    "7-dagersvinduet (31. juli–7. aug) var i stor grad alt verifisert 29.–30. juli. Denne runden traff de ferske/uverifiserte ai-research-eventene i vinduet + in-progress-sjekker.",
+    "AMENDERT – Saint Louis Rapid & Blitz (sjakk, Grand Chess Tour): boardet daterte eventet til 31. juli 18.00 UTC (anslag), men GCTs offisielle turneringsside viser at 31. juli KUN er ankomstdag – hurtigrundene starter først søndag 2. august kl. 12.00 Central (17.00 UTC). time flyttet 31. juli 18.00Z → 2. aug 17.00Z, confidence medium→high, summary oppdatert (ankomst 31. juli; hurtig 2.–4. aug, lyn 5.–7. aug, runder kl. 12.00 CT). Nøyaktig samme wrong-time-feilen verify-loopen finnes for: eventet ville stått på boardet i kveld uten at noe faktisk skjer før 2. aug.",
+    "BEKREFTET – BLAST Bounty S2 semifinale 1 (1. aug 10.30Z), semifinale 2 (1. aug 13.30Z) og Grand Final (2. aug 10.30Z): tid/struktur/dato korroborert mot Gamereactor + Strafe. Torsdagens kvartfinaler bekreftet: Team Spirit slo Team Liquid 2–0, MOUZ slo 3DMAX 2–1 (begge klare til semi). Fredagens kvartfinaler (FaZe–The MongolZ, paiN–Astralis) + en mini-draft setter semifinaleoppsettet – derfor forblir SF/final-lagene ærlig TBD (WP-116: fyll ikke gjettet line-up før avgjørende kamper er spilt). Summariene oppdatert med QF-resultatene og at draften avgjør oppsettet.",
+    "INGEN ENDRING – Rocket Classic (golf, in-progress): Kristoffer Ventura spiller runde 2 fredag 31. juli; cut avgjøres først etter runde 2, så ingen cut-status å sette ennå (WP-95 utsteder ingen status før cut er avgjort). Uendret fra 30.07-runden.",
+    "INGEN ENDRING – Tour de France Femmes etappe 2–8 (medium): A.S.O. har fortsatt ikke publisert offisielle starttider (kun etappe 1 har fått bekreftet 14.15 CEST). Board-tidene forblir ærlige anslag – ingen gjettet presisjon.",
+    "Ingen tentative-kanaler å løse. Ingen fjernede eller avlyste hendelser. 5 kalibreringslinjer lagt til (chess grandchesstour.org time agreed=false/boardWasProvisional=true – kilden korrigerte anslaget; øvrige agreed=true).",
+    "DURABEL QUIRK IDENTIFISERT (source-quirks-kandidat): Grand Chess Tour annonserer turneringer med hele spennet, som starter på ankomstdagen – første spillbare runde er 1–2 dager senere (Saint Louis Rapid & Blitz: 31. juli = ankomst, hurtig starter 2. aug 17.00 UTC). Samme mønster ventes for Sinquefield Cup (8.–21. aug) og GCT Finals. Forsøkte å legge til entry i .claude/skills/source-quirks/SKILL.md via Edit, men skrivingen ble stoppet av en tillatelses-forespørsel i dette miljøet – literal feiltekst: 'Claude requested permissions to write to .../source-quirks/SKILL.md, but you haven't granted it yet.' Quirken er fanget her i loggen inntil skriving er tillatt."
   ]
 }
