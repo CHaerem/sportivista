@@ -1,15 +1,15 @@
 {
-	"runAt": "2026-07-30T11:16:00Z",
+	"runAt": "2026-07-31T11:42:00Z",
 	"action": "opened-pr",
-	"pr": "https://github.com/CHaerem/sportivista/pull/431",
+	"pr": null,
 	"fixed": [
-		"375px HIGH: assistant FAB pill overlapped/fragmented the '19:00 Hradec Králové – Tromsø' team name",
-		"393px HIGH: assistant FAB pill covered the same row's '· VG TV' channel subtext"
+		"375px HIGH: assistant FAB overlapping the '20:45 Birmingham City – Barcelona' row (ⓘ/chevron + '· VG' subtext)",
+		"393px HIGH: assistant FAB covering the '21:00 Bodø/Glimt – Lillestrøm' row's chevron + '· TV 2' channel subtext"
 	],
 	"notes": [
-		"Root cause: on phones the agenda column is edge-to-edge, so the labelled fixed FAB has nowhere to sit but over a fixture. It already collapses to a glyph on scroll (WP-146) but is expanded at rest — exactly when visual-qa shot it.",
-		"Fix: a @media (max-width: 460px) rule keeps the FAB in its existing collapsed glyph-only form regardless of scroll (reuses the .collapsed appearance, no new idiom). Wider screens keep the labelled pill in the empty right margin.",
-		"Only docs/css/cards.css changed. Verified by re-screenshotting 375/393/900 + a clipped crop of the FAB region: team name + '· VG TV' fully readable at 375/393; 900 unchanged (pill in the margin, no overlap). npm test green (1368).",
+		"Fix: shrank the phone-width (@media max-width:460px) floating button — min-height 48→44px, padding 12→11px, glyph 18→17px — and tucked it into the extreme corner (right/bottom 20→14px). Also removed the DESIGN-forbidden heavy drop shadow (0 6px 20px .28 → soft 0 2px 12px .18) so it reads as a compact glass capsule, not 'en fylt sirkel med skygge' (DESIGN.md §345–370). This implements visual-qa's own endorsed 'shrink the FAB below a width breakpoint' remedy.",
+		"Only docs/css/cards.css changed. Verified with viewport (non-full-page) screenshots at 375/393/900 before + after: at 375 the Birmingham row's ⓘ/chevron are now clear of the smaller corner button; at 393 the footprint is materially reduced; at 900 the labelled pill still sits cleanly in the empty right margin beside the 640px column (only a lighter shadow). No regressions — header/tabs/DIREKTE NÅ/day-groups/agenda all intact and calm, no new overflow/truncation. npm test green (1368).",
+		"Honest scope: the residual bottom-trailing corner overlap is INHERENT to the DESIGN.md-mandated floating button on an edge-to-edge single column ('Agendaen … scroller rolig UNDER knappen', WP-146 variant D). Fully eliminating it (dock / full-width bar / hide) is explicitly forbidden by DESIGN.md and would need an owner design decision; this PR minimises the footprint rather than claiming to remove the inherent overlap.",
 		"Not merged — the workflow re-gates tests and auto-merges + deploys."
 	]
 }

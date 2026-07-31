@@ -384,9 +384,12 @@
 	z-index: 60; display: inline-flex; align-items: center; gap: 8px;
 	padding: 12px 20px; min-height: 48px; border-radius: 999px; cursor: pointer;
 	font: inherit; font-size: 15px; font-weight: 600; color: var(--fg);
+	/* Solid, opaque glass CAPSULE — the row must NEVER bleed through it (DESIGN.md:
+	   «umiskjennelig som en KNAPP»). A hairline amber ring + a SOFT shadow, never
+	   the old heavy drop shadow («aldri en fylt sirkel med skygge»). */
 	background: color-mix(in srgb, var(--accent) 12%, var(--cell));
-	border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
-	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28); backdrop-filter: blur(12px);
+	border: 1px solid color-mix(in srgb, var(--accent) 32%, var(--line));
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18); backdrop-filter: blur(12px);
 	transition: padding 0.2s ease, gap 0.2s ease;
 }
 .assistant-fab:hover { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); }
@@ -403,10 +406,19 @@
    ON a fixture's team name and fragments it (visual-qa 2026-07-30). Keep it
    glyph-only here regardless of scroll — the bare amber control hugs the corner
    and clears the row text. Wider screens keep the labelled pill in the empty
-   right margin beside the 640px column, where it overlaps nothing. */
+   right margin beside the 640px column, where it overlaps nothing.
+   A floating control over an edge-to-edge column unavoidably sits over SOME row
+   (DESIGN.md: «Agendaen … scroller rolig UNDER knappen») — so keep the footprint
+   as small as HIG allows (≥44px touch target) and tuck it into the extreme
+   corner, minimising how much of a row's ⓘ/chevron it covers (visual-qa
+   2026-07-30 + 2026-07-31, «shrink the FAB»). */
 @media (max-width: 460px) {
-	.assistant-fab { padding: 12px; gap: 0; }
+	.assistant-fab {
+		right: 14px; bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+		padding: 11px; min-height: 44px; gap: 0;
+	}
 	.assistant-fab .fab-label { max-width: 0; opacity: 0; overflow: hidden; }
+	.assistant-fab .fab-glyph { width: 17px; height: 17px; }
 }
 
 /* The conversation sheet — a bottom sheet with a backdrop, mirroring the iOS
