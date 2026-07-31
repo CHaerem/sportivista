@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-31T10:36:16.606Z",
-  "gapCount": 8,
+  "generatedAt": "2026-07-31T12:54:36.239Z",
+  "gapCount": 9,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -12,7 +12,7 @@
       "link": "https://www.nrk.no/sport/norge-sender-rekordstor-tropp-til-friidretts-em-1.17974812",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-07-31T10:36:15.454Z"
+      "detectedAt": "2026-07-31T12:54:35.261Z"
     },
     {
       "kind": "entity",
@@ -23,7 +23,7 @@
       "link": "https://www.nrk.no/sport/norge-sender-rekordstor-tropp-til-friidretts-em-1.17974812",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-07-31T10:36:15.454Z"
+      "detectedAt": "2026-07-31T12:54:35.261Z"
     },
     {
       "kind": "entity",
@@ -34,7 +34,7 @@
       "link": "https://www.theguardian.com/football/2026/jul/31/football-transfer-rumours-bruno-guimaraes-arsenal-newcastle-victor-froholdt",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-07-31T10:36:15.454Z"
+      "detectedAt": "2026-07-31T12:54:35.261Z"
     },
     {
       "kind": "entity",
@@ -45,7 +45,7 @@
       "link": "https://www.theguardian.com/football/2026/jul/30/harvey-elliott-liverpool-second-chance-aston-villa-loan",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-07-31T10:36:15.454Z"
+      "detectedAt": "2026-07-31T12:54:35.261Z"
     },
     {
       "kind": "entity",
@@ -56,18 +56,18 @@
       "link": "https://www.theguardian.com/football/2026/jul/30/toon-turnover-the-stats-behind-eddie-howes-highs-and-lows-at-newcastle",
       "feed": "guardian-football",
       "matchCount": 2,
-      "detectedAt": "2026-07-31T10:36:15.454Z"
+      "detectedAt": "2026-07-31T12:54:35.261Z"
     },
     {
       "kind": "entity",
       "entity": "Serie A",
       "type": "missing",
       "imminent": false,
-      "headline": "Franco Baresi, iconic Milan and Italy legend, dies aged 66",
-      "link": "https://www.theguardian.com/football/2026/jul/31/franco-baresi-iconic-former-milan-and-italy-defender-dies-aged-66",
+      "headline": "Maxence Lacroix joins ‘beautiful club’ Chelsea as John Stones seals Inter deal",
+      "link": "https://www.theguardian.com/football/2026/jul/30/chelsea-crystal-palace-maxence-lacroix-transfer-roundup",
       "feed": "guardian-football",
-      "matchCount": 2,
-      "detectedAt": "2026-07-31T10:36:15.454Z"
+      "matchCount": 1,
+      "detectedAt": "2026-07-31T12:54:35.261Z"
     },
     {
       "kind": "entity",
@@ -78,7 +78,18 @@
       "link": "https://www.nrk.no/sport/tromso-raknet-i-tsjekkia-_-ute-av-europaligakvalifiseringen-1.17974177",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-07-31T10:36:15.454Z"
+      "detectedAt": "2026-07-31T12:54:35.261Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Fotball-VM",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Nyhetsbyrå: Fifa la fram forslag om utvidet VM – vil ha rask avgjørelse",
+      "link": "https://www.nrk.no/sport/nyhetsbyra_-fifa-la-fram-forslag-om-utvidet-vm-_-vil-ha-rask-avgjorelse-1.17975005",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-07-31T12:54:35.261Z"
     },
     {
       "kind": "entity",
@@ -89,18 +100,18 @@
       "link": "https://www.nrk.no/sport/norge-sender-rekordstor-tropp-til-friidretts-em-1.17974812",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-07-31T10:36:15.454Z"
+      "detectedAt": "2026-07-31T12:54:35.261Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 57 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 57,
+      "detail": "docs/data/esports.json has been served from retention for 58 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 58,
       "staleDays": 4,
       "severity": "high",
-      "detectedAt": "2026-07-31T10:36:16.462Z"
+      "detectedAt": "2026-07-31T12:54:36.101Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."

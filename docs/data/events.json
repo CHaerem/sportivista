@@ -3254,8 +3254,8 @@
     "norwegianPlayers": [],
     "streaming": [
       {
-        "platform": "Direktesport / Avisa Nordland",
-        "url": "https://www.direktesport.no",
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -4024,6 +4024,55 @@
     "awayTeamEntityId": "afc-bournemouth"
   },
   {
+    "sport": "athletics",
+    "tournament": "Wanda Diamond League",
+    "title": "Memoriał Kamili Skolimowskiej (Silesia)",
+    "time": "2026-08-23T14:00:00Z",
+    "endTime": "2026-08-23T16:30:00Z",
+    "venue": "Stadion Śląski, Chorzów, Polen",
+    "norwegian": true,
+    "norwegianPlayers": [
+      {
+        "name": "Karsten Warholm",
+        "entityId": "karsten-warholm"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-07-31T11:00:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.diamondleague.com/calendar/",
+      "https://www.diamondleague.com/dos-santos-to-challenge-warholm-in-silesia/",
+      "https://silesia.diamondleague.com/programme-results/"
+    ],
+    "summary": "Memoriał Kamili Skolimowskiej i Chorzów – 13. og nest siste ordinære Diamond League-stevne før finalen i Brussel (4.–5. sept). Silesia-etappen holdes på Stadion Śląski.\n\nKarsten Warholm løper 400 m hekk mot Alison dos Santos (fjerde oppgjør i 2026; begge alt klare for finalen) – bekreftet av Diamond League. Stevnestart er oppgitt til ca. kl. 16.00 CEST (14.00 UTC); det eksakte øvelsesprogrammet med starttidene er ennå ikke publisert på arrangørens side, så klokkeslettet er foreløpig og bekreftes nærmere stevnet.\n\nNorsk visning: NRK (Diamond League-rettighetene i Norge t.o.m. 2029).",
+    "participants": [],
+    "id": "27a866a899ad",
+    "provenance": {
+      "time": {
+        "sourceId": "diamond-league",
+        "url": "https://www.diamondleague.com/calendar/",
+        "basis": "secondary",
+        "retrievedAt": "2026-07-31T11:00:00Z",
+        "note": "Dato bekreftet på DL-kalenderen; eksakt stevnestart (16.00 CEST) foreløpig fra aggregat, offisiell timeplan ikke publisert."
+      },
+      "streaming": {
+        "sourceId": "nrk",
+        "url": "https://tv.nrk.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-07-31T11:00:00Z"
+      }
+    }
+  },
+  {
     "sport": "football",
     "tournament": "Premier League 2026/27",
     "title": "Newcastle United – Liverpool",
@@ -4190,55 +4239,6 @@
         "basis": "primary",
         "retrievedAt": "2026-07-17T04:00:00Z",
         "note": "migrert mekanisk fra evidence (WP-242)"
-      }
-    }
-  },
-  {
-    "sport": "athletics",
-    "tournament": "Wanda Diamond League",
-    "title": "Memoriał Kamili Skolimowskiej (Silesia)",
-    "time": "2026-08-23T14:00:00Z",
-    "endTime": "2026-08-23T16:30:00Z",
-    "venue": "Stadion Śląski, Chorzów, Polen",
-    "norwegian": true,
-    "norwegianPlayers": [
-      {
-        "name": "Karsten Warholm",
-        "entityId": "karsten-warholm"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-07-31T11:00:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.diamondleague.com/calendar/",
-      "https://www.diamondleague.com/dos-santos-to-challenge-warholm-in-silesia/",
-      "https://silesia.diamondleague.com/programme-results/"
-    ],
-    "summary": "Memoriał Kamili Skolimowskiej i Chorzów – 13. og nest siste ordinære Diamond League-stevne før finalen i Brussel (4.–5. sept). Silesia-etappen holdes på Stadion Śląski.\n\nKarsten Warholm løper 400 m hekk mot Alison dos Santos (fjerde oppgjør i 2026; begge alt klare for finalen) – bekreftet av Diamond League. Stevnestart er oppgitt til ca. kl. 16.00 CEST (14.00 UTC); det eksakte øvelsesprogrammet med starttidene er ennå ikke publisert på arrangørens side, så klokkeslettet er foreløpig og bekreftes nærmere stevnet.\n\nNorsk visning: NRK (Diamond League-rettighetene i Norge t.o.m. 2029).",
-    "participants": [],
-    "id": "d1a5e0c73b92",
-    "provenance": {
-      "time": {
-        "sourceId": "diamond-league",
-        "url": "https://www.diamondleague.com/calendar/",
-        "basis": "secondary",
-        "retrievedAt": "2026-07-31T11:00:00Z",
-        "note": "Dato bekreftet på DL-kalenderen; eksakt stevnestart (16.00 CEST) foreløpig fra aggregat, offisiell timeplan ikke publisert."
-      },
-      "streaming": {
-        "sourceId": "nrk",
-        "url": "https://tv.nrk.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-07-31T11:00:00Z"
       }
     }
   }
