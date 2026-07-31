@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-07-31T12:54:36.239Z",
-  "gapCount": 9,
+  "generatedAt": "2026-07-31T15:17:19.523Z",
+  "gapCount": 5,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Henriette Jæger",
+      "entity": "Sagosen",
       "type": "missing",
       "imminent": false,
-      "headline": "Norge sender rekordstor tropp til friidretts-EM",
-      "link": "https://www.nrk.no/sport/norge-sender-rekordstor-tropp-til-friidretts-em-1.17974812",
-      "feed": "nrk-sport",
+      "headline": "Ciljan Sagosen klar for ny klubb: – Jeg ble smigret",
+      "link": "https://www.tv2.no/a/19091768",
+      "feed": "tv2-sport",
       "matchCount": 1,
-      "detectedAt": "2026-07-31T12:54:35.261Z"
+      "detectedAt": "2026-07-31T15:17:18.467Z"
     },
     {
       "kind": "entity",
-      "entity": "Jæger",
+      "entity": "RBK",
       "type": "missing",
       "imminent": false,
-      "headline": "Norge sender rekordstor tropp til friidretts-EM",
-      "link": "https://www.nrk.no/sport/norge-sender-rekordstor-tropp-til-friidretts-em-1.17974812",
-      "feed": "nrk-sport",
+      "headline": "TV 2 avslører: Så nær var Horneland Rosenborg",
+      "link": "https://www.tv2.no/a/19090844",
+      "feed": "tv2-sport",
       "matchCount": 1,
-      "detectedAt": "2026-07-31T12:54:35.261Z"
+      "detectedAt": "2026-07-31T15:17:18.467Z"
     },
     {
       "kind": "entity",
@@ -33,19 +33,8 @@
       "headline": "Football transfer rumours: Guimarães set for Arsenal? Newcastle to bring in Froholdt?",
       "link": "https://www.theguardian.com/football/2026/jul/31/football-transfer-rumours-bruno-guimaraes-arsenal-newcastle-victor-froholdt",
       "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-07-31T12:54:35.261Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Liverpool",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Harvey Elliott revels in ‘second chance’ at Liverpool and has no regrets over Aston Villa loan",
-      "link": "https://www.theguardian.com/football/2026/jul/30/harvey-elliott-liverpool-second-chance-aston-villa-loan",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-07-31T12:54:35.261Z"
+      "matchCount": 2,
+      "detectedAt": "2026-07-31T15:17:18.467Z"
     },
     {
       "kind": "entity",
@@ -56,7 +45,7 @@
       "link": "https://www.theguardian.com/football/2026/jul/30/toon-turnover-the-stats-behind-eddie-howes-highs-and-lows-at-newcastle",
       "feed": "guardian-football",
       "matchCount": 2,
-      "detectedAt": "2026-07-31T12:54:35.261Z"
+      "detectedAt": "2026-07-31T15:17:18.467Z"
     },
     {
       "kind": "entity",
@@ -67,51 +56,18 @@
       "link": "https://www.theguardian.com/football/2026/jul/30/chelsea-crystal-palace-maxence-lacroix-transfer-roundup",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-07-31T12:54:35.261Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Europaligaen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Tromsø raknet i Tsjekkia – ute av europaligakvalifiseringen",
-      "link": "https://www.nrk.no/sport/tromso-raknet-i-tsjekkia-_-ute-av-europaligakvalifiseringen-1.17974177",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-07-31T12:54:35.261Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Fotball-VM",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Nyhetsbyrå: Fifa la fram forslag om utvidet VM – vil ha rask avgjørelse",
-      "link": "https://www.nrk.no/sport/nyhetsbyra_-fifa-la-fram-forslag-om-utvidet-vm-_-vil-ha-rask-avgjorelse-1.17975005",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-07-31T12:54:35.261Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Friidretts-EM",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Norge sender rekordstor tropp til friidretts-EM",
-      "link": "https://www.nrk.no/sport/norge-sender-rekordstor-tropp-til-friidretts-em-1.17974812",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-07-31T12:54:35.261Z"
+      "detectedAt": "2026-07-31T15:17:18.467Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 58 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 58,
-      "staleDays": 4,
+      "detail": "docs/data/esports.json has been served from retention for 59 consecutive run(s) — no fresh fetch in 5 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 59,
+      "staleDays": 5,
       "severity": "high",
-      "detectedAt": "2026-07-31T12:54:36.101Z"
+      "detectedAt": "2026-07-31T15:17:19.411Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
