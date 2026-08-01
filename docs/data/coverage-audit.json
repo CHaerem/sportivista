@@ -1,75 +1,63 @@
 {
-  "auditedAt": "2026-07-31T06:35:00Z",
+  "auditedAt": "2026-08-01T06:35:00Z",
   "horizonDays": 28,
   "gaps": [
     {
-      "interest": "CS2 / esports — BLAST Bounty Summer 2026 Malta LAN: semifinaler + Bo5-finale",
-      "whatsMissing": "Sluttspill-KLIMAKSET til BLAST Bounty Summer 2026 (Season 2, S-tier Valve tier-1) mangler på tavla: semifinalene lør. 1. aug (kl. 12.30 + 15.30 CEST = 10.30 + 13.30 UTC, Bo3) og GRAND FINAL søn. 2. aug (kl. 12.30 CEST = 10.30 UTC, Bo5). Kvartfinalene (30.–31. juli) er nå på tavla via ai-research, men de to siste dagene – der arrangementet faktisk avgjøres – er ikke lagt inn. Seks av de åtte LAN-lagene er katalog-entiteter (FaZe Clan, Team Liquid, MOUZ, Astralis, The MongolZ, Team Spirit; de to øvrige er paiN Gaming + 3DMAX). Rotårsak: esports-fetcheren er fortsatt stale-retained (54 kjøringer / 5 dager uten fersk henting, se sourceIssues), så påfølgende runder dukker ikke opp av seg selv – research må håndfylle semifinaler + finale. Motstandere avgjøres av kvartfinaleresultatene, men selve slottene (2 semifinaler lør. + Bo5-finale søn.) er sikre og skal på server-brettet for de andre katalog-lagene. (100 Thieves/rain er ikke blant LAN-lagene → eier-linsen filtrerer det trolig bort for eieren selv.)",
-      "why": "Imminent (semifinaler om ~28 t, finale om ~52 t), viktig (Valve tier-1 S-tier med seks katalog-org) og to-kilde-bekreftet på både format og tidsplan (strafe.com + egamersworld + ghacks + Liquipedia + blast.tv). Research bør legge inn de to semifinalene (lør. 1. aug 10.30 + 13.30 UTC) og Bo5-finalen (søn. 2. aug 10.30 UTC) med streaming (Twitch/YouTube/Kick blastpremier / BLAST.tv – CS2 har ingen norsk kringkaster, jf. cs2-sources-skillen), og oppdatere motstanderne når kvartfinalene er ferdigspilt. Direkte videreføring av 30. juli-auditens HIGH gap (hele LAN-en) som nå er DELVIS fylt (kvartfinaler inne, klimaks mangler). Eskalert (deep).",
+      "interest": "Fotball — Brann i Conference League-kvalifiseringen (3. runde, mot Apollon Limassol)",
+      "whatsMissing": "Branns tredje kvalifiseringsrunde i UEFA Conference League 2026/27 mot kypriotiske Apollon Limassol mangler HELT på tavla — begge kampene. Førstekamp hjemme i Bergen ~5.–6. aug, returkamp borte i Limassol ~11.–13. aug (UEFAs 3.-runde-vindu er 6. + 13. aug; ett norsk oppsett antyder 5. + 11. aug). Brann er en katalog-klubb (tier2 football), slo Universitatea Cluj i 2. runde (23./28. juli) og er nå klare for 3. runde. Tavla har KUN Branns Eliteserie-kamper (Brann–Rosenborg 2. aug, Brann–HamKam 16. aug) — ingen europacup-kamp. Bodø/Glimts CL-kvalik mot Union SG (4. + 11. aug) ligger derimot inne, så bare Brann-grenen mangler. Research bør legge inn begge Brann-kampene med sendetid (norsk visning = TV 2 Play / TV 2 Sport — TV 2 har UEFAs klubbturneringsrettigheter i Norge) og pinne eksakt avspark + hvilken dag når UEFA setter det.",
+      "why": "Imminent (førstekamp ~4–5 dager ut) OG viktig (norsk katalog-storklubb i europacup, hjemmekamp i Bergen) OG to-kilde-bekreftet: VG + Nettavisen bekrefter at Brann slo Cluj og møter Apollon i 3. runde, UEFAs kalender fastslår runden til 6.–13. aug. En norsk klubbs europacup-kamp som er helt fraværende fra tavla er nøyaktig recall-svikten denne auditen finnes for å fange. NY denne kjøringen (recurrences 0). Eskalert (deep).",
       "corroboration": [
-        "https://www.strafe.com/news/read/blast-bounty-summer-2026-finals-teams-schedule-where-to-watch-and-more/",
-        "https://egamersworld.com/blog/blast-bounty-summer-2026-lan-final-format-teams-an-uEFHcv3DKq",
-        "https://liquipedia.net/counterstrike/BLAST/Bounty/2026/Summer"
+        "https://www.vg.no/sport/i/Gx68VQ/brann-slo-universitatea-cluj-og-er-klare-for-tredje-kvalifiseringsrunde-i-conference-league",
+        "https://www.nettavisen.no/sport/castro-magi-da-brann-tok-seg-videre-i-conference-league-kvalifiseringen/s/5-95-3173766",
+        "https://www.uefa.com/uefaconferenceleague/clubs/52741--apollon/matches/"
       ],
-      "suggestedSource": "https://liquipedia.net/counterstrike/BLAST/Bounty/2026/Summer",
+      "suggestedSource": "https://www.uefa.com/uefaconferenceleague/clubs/52741--apollon/matches/",
       "severity": "high",
-      "firstSeen": "2026-07-30T06:27:50Z",
-      "recurrences": 1
-    },
-    {
-      "interest": "Premier League 2026/27 — åpningsrunden (21.–23. aug)",
-      "whatsMissing": "Hele PL-sesongåpningen 2026/27 mangler på tavla. Første kamp: Arsenal–Coventry City fre. 21. aug kl. 20.00 BST; Liverpool borte mot Newcastle i åpningsrunden; Manchester City spiller også. Alle tre klubbene (Arsenal, Liverpool, Manchester City) er katalog-entiteter, og Premier League er en katalog-turnering (tier2). Tavla har NULL PL-kamper – første fotball etter FA Community Shield (Arsenal–Man City 16. aug) er Barcelonas La Liga-åpning 27. aug. Åpningsrunden går 21.–24. aug.",
-      "why": "Horisont-hull (~21–24 dager ut), ikke imminent → medium. Web-bekreftet (premierleague.com + Sky Sports): sesongen starter fre. 21. aug 2026, åpningsrunden 21.–23. aug. Viktig – tre katalog-storklubber + katalog-turnering. Research bør legge inn åpningsrundens kamper (særlig Liverpool og Arsenal/Man City) med sendetider når disse settes; norsk visning er TV 2 / TV 2 Play (TV 2 har PL-rettighetene i Norge). NY denne kjøringen (recurrences 0).",
-      "corroboration": [
-        "https://www.premierleague.com/en/news/4468487/dates-for-202627-premier-league-season-confirmed",
-        "https://www.skysports.com/football/news/11661/13555675/premier-league-2026-27-fixtures-dates-schedule-arsenal-face-coventry-and-liverpool-at-newcastle-in-opening-round"
-      ],
-      "suggestedSource": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-      "severity": "medium",
-      "firstSeen": "2026-07-31T06:35:00Z",
+      "firstSeen": "2026-08-01T06:35:00Z",
       "recurrences": 0
     },
     {
-      "interest": "Friidrett (tier1 wholesale) — Wanda Diamond League Silesia/Chorzów (23. aug)",
-      "whatsMissing": "Diamond League-stevnet Silesia (Kamila Skolimowska Memorial, Chorzów) 23. aug mangler fortsatt på tavla. Karsten Warholm er to-kilde-bekreftet til start i 400 m hekk (mot Alison dos Santos). Det tidligere DL-hullet (Lausanne 21. aug + Silesia 23. aug) er DELVIS løst: Athletissima Lausanne 21. aug er nå på tavla (ai-research), men Silesia gjenstår. Silesia er siste DL-stevne før finalen i Brussel (4.–5. sept).",
-      "why": "Friidrett er tier1 (dekkes wholesale) og NRK har DL-rettighetene t.o.m. 2029. Web-rekonfirmert denne kjøringen (diamondleague.com + World Athletics): Silesia 23. aug, Warholm i 400 m hekk. Horisont-hull (~23 dager ut), ikke imminent → medium. Warholm-raden er den sterkeste enkeltgrunnen. Båret videre fra 29.–30. juli-auditene (DL-hullet), recurrences 2 – ikke nådd ≥3-bump ennå.",
+      "interest": "Golf — BMW Championship (FedExCup Playoffs #2, 20.–23. aug)",
+      "whatsMissing": "BMW Championship (20.–23. aug, Bellerive CC, St. Louis) — det ANDRE av tre FedExCup-sluttspill — mangler på tavla. Tavla har FedEx St. Jude Championship (13.–16. aug, sluttspill #1, Hovland) men ikke det påfølgende playoff-arrangementet en uke senere. Topp-50 etter St. Jude spiller BMW; Viktor Hovland (katalog-golfer) kvalifiserer normalt til FedExCup-sluttspillet. Golf er tier1 (dekkes wholesale) og FedExCup Playoffs er en katalog-turnering — så arrangementet skal på tavla uavhengig av om Hovland når topp-50. Research bør legge inn BMW Championship 20.–23. aug med sendetid/streaming når rundetidene settes (og bekrefte Hovlands deltakelse etter St. Jude).",
+      "why": "Horisont-hull (~19 dager ut), ikke imminent → medium. To-kilde-bekreftet (golf365 + Sky Sports PGA Tour-kalender): BMW Championship 20.–23. aug, Bellerive, topp-50 FedExCup. Neste playoff-steg etter et arrangement som ALLEREDE er på tavla, så asymmetrien (St. Jude inne, BMW ute) er et konkret dekningshull. NY denne kjøringen (recurrences 0). Tour Championship (27.–30. aug, East Lake) er også innenfor horisonten men betinget av topp-30 — nevnt i notes, ikke eget gap ennå.",
       "corroboration": [
-        "https://www.diamondleague.com/dos-santos-to-challenge-warholm-in-silesia/",
-        "https://silesia.diamondleague.com/",
-        "https://worldathletics.org/competitions/diamond-league/calendar-results/"
+        "https://www.golf365.com/news/pga-tour-2026-schedule-majors-signature-events-fedex-cup-playoffs-plus-all-tournament-dates-and-courses",
+        "https://www.skysports.com/golf/news/12232/13415204/pga-tour-2026-schedule-dates-venues-events-for-the-new-fedexcup-season-signature-events-and-golf-majors"
       ],
-      "suggestedSource": "https://silesia.diamondleague.com/",
+      "suggestedSource": "https://www.golf365.com/news/pga-tour-2026-schedule-majors-signature-events-fedex-cup-playoffs-plus-all-tournament-dates-and-courses",
       "severity": "medium",
-      "firstSeen": "2026-07-29T06:32:00Z",
-      "recurrences": 2
+      "firstSeen": "2026-08-01T06:35:00Z",
+      "recurrences": 0
     }
   ],
   "sourceIssues": [
     {
       "source": "Statisk esports-fetcher (docs/data/esports.json, Liquipedia CS2)",
-      "issue": "VEDVARENDE fra 30. juli-auditen (coverage-gaps.json anomaly, high): esports.json er nå servert fra retention i 54 sammenhengende kjøringer / 4–5 dager (lastFreshFetch 2026-07-26T15:02Z, consecutiveRetains 54). retainLastGood re-skriver siste gode fil (kun 'BLAST Bounty Summer Qual'), så filen ser fersk ut mens fetcheren produserer null. Symptomet skjules på tavla fordi ai-research holder CS2 «til stede», men KLIMAKSET av et helt tier-1-arrangement denne helgen (BLAST Bounty Malta LAN semifinaler + finale, seks katalog-lag) mangler fordi fetcheren er død. En fetcher som har sluttet å produsere er ødelagt uansett om brettet skjuler det.",
-      "impact": "CS2-dekning avhenger nå fullt av at research fyller manuelt. Konkret miss denne kjøringen: BLAST Bounty semifinaler + Bo5-finale 1.–2. aug (se gaps, high). TIL SELF-REPAIR: kjør esports-fetcheren, finn ut hvorfor Liquipedia-hentingen kommer tom tilbake (Accept-Encoding gzip-krav? Liquipedia:Matches-endring? rate-limit/User-Agent?), og gjenopprett den.",
+      "issue": "VEDVARENDE: esports.json er nå servert fra retention i 63 sammenhengende kjøringer / 5 dager (lastFreshFetch 2026-07-26T15:02Z, consecutiveRetains 63, filen inneholder kun 'BLAST Bounty Summer Qual'). retainLastGood re-skriver siste gode fil, så filen ser fersk ut mens Liquipedia-hentingen produserer null. Symptomet skjules på tavla fordi ai-research holder CS2 til stede (BLAST Bounty Malta LAN semifinaler + finale er nå hånd­fylt inn). En fetcher som har sluttet å produsere er ødelagt uansett om brettet skjuler det. TIL SELF-REPAIR: kjør esports-fetcheren, finn ut hvorfor Liquipedia-hentingen kommer tom tilbake (Accept-Encoding gzip-krav? Liquipedia:Matches-endring? rate-limit/User-Agent?), og gjenopprett den.",
+      "impact": "CS2-dekning avhenger nå fullt av at research fyller manuelt. Denne helgens BLAST Bounty-klimaks er reddet av ai-research, men neste CS2-arrangement kan falle ut hvis research ikke rekker det. Uendret siden 30.–31. juli (var 54 retains, nå 63).",
       "severity": "high"
     }
   ],
   "coveredWell": [
-    "FOTBALL-FETCHEREN GJENOPPRETTET: football.json er fersk igjen (lastUpdated 2026-07-31T04:03Z, 8 Eliteserie-kamper runde 16 som STATISK kilde) — 30. juli-auditens VEDVARENDE HIGH sourceIssue (football.json frosset på VM-finalen 19. juli) er LØST. Eliteserien hentes nå statisk igjen; runde 17 Rosenborg–Viking 14. aug ligger allerede inne (ai-research), resten populeres av den gjenopprettede fetcheren når datoen nærmer seg.",
-    "CS2 BLAST Bounty Malta LAN — KVARTFINALENE nå på tavla (30. juli: Liquid–Spirit, 3DMAX–MOUZ; 31. juli: FaZe–MongolZ, paiN–Astralis) via ai-research. 30. juli-auditens HIGH gap er DELVIS løst — kun semifinaler + finale gjenstår (se gaps).",
-    "Friidrett — Diamond League Athletissima Lausanne 21. aug nå på tavla (ai-research); EM Birmingham 10.–16. aug (NRK, Warholm) på tavla. (Silesia 23. aug mangler — se gaps.)",
-    "Fotball — Eliteserien runde 16 (31. juli–2. aug, 8 kamper inkl. Bodø/Glimt–Lillestrøm, Molde–Sarpsborg 08, Brann–Rosenborg) statisk på tavla; OBOS Lyn (Sogndal 2. aug, Stabæk 8. aug, Odd 15. aug, +); Barcelona (Birmingham City 31. juli + La Liga-åpning Athletic 27. aug); Bodø/Glimt CL-kvalik (Union SG borte 4. aug + hjemme 11. aug); UEFA Super Cup 12. aug; FA Community Shield Arsenal–Man City 16. aug.",
-    "Golf — Rocket Classic (t.o.m. 2. aug, Ventura) + Wyndham (6.–9. aug) + FedEx St. Jude (13.–16. aug, Hovland) + Danish Golf Championship DP World Tour (13. aug) på tavla.",
-    "F1 — ESPN-BLINDSONE (source-quirks-mandat) web-rekonfirmert: sommerpause etter Ungarns GP (26. juli), neste = Nederlands GP 21.–23. aug (på tavla, med sprintkvalik/sprint 21.–22. + race søn. 23. aug). Tom F1-tavla i imminent-vinduet = KORREKT fravær, ikke ESPN-mis-datering.",
-    "Sykkel — Tour de France Femmes 2026 (Lausanne-start 1. aug) etapper på tavla; Tour de Pologne 3.–9. aug (Uno-X); Arctic Race of Norway 13.–16. aug; Vuelta a España (fra 22. aug) på tavla.",
-    "Tennis — Casper Ruud National Bank Open (Montreal, ATP Masters 1000) på tavla fra 2. aug (TV 2 Play).",
-    "Sjakk — Grand Chess Tour Saint Louis Rapid & Blitz (31. juli) + Sinquefield Cup (8. aug) + Esports World Cup-sjakk (Carlsen, 11. aug) på tavla."
+    "CS2 BLAST Bounty Summer 2026 Malta LAN — KLIMAKSET NÅ PÅ TAVLA: semifinale 1 + 2 (lør. 1. aug 10.30 + 13.30 UTC, Bo3) og Grand Final (søn. 2. aug 10.30 UTC, Bo5) via ai-research. Forrige auditens HIGH gap (eskalert deep) er LØST — web-bekreftet at semifinalene er lør. 1. aug og finalen søn. 2. aug (FaZe/Astralis/Team Spirit/MOUZ i semi). Escalation-loopen fungerte.",
+    "Premier League 2026/27-åpningen NÅ PÅ TAVLA (forrige auditens medium gap LØST): Arsenal–Coventry City 21. aug, Newcastle–Liverpool 23. aug, Manchester City–Bournemouth 23. aug — alle tre katalog-storklubbene inne.",
+    "Friidrett Diamond League Silesia (Memoriał Kamili Skolimowskiej, Chorzów) 23. aug NÅ PÅ TAVLA (forrige auditens medium gap m/recurrences 2 LØST) — DL-hullet er nå helt tettet (Lausanne 21. aug + Silesia 23. aug begge inne). EM friidrett Birmingham 10.–16. aug inne.",
+    "Fotball europacup — Bodø/Glimt CL-kvalik mot Union Saint-Gilloise korrekt inne (borte 4. aug + hjemme 11. aug), web-bekreftet. UEFA Super Cup 12. aug + FA Community Shield (Arsenal–Man City) 16. aug inne.",
+    "Fotball Eliteserien runde 16 (1.–2. aug) statisk på tavla (Fredrikstad–Sandefjord, Start–Viking, Molde–Sarpsborg 08, Brann–Rosenborg, m.fl.); OBOS Lyn (Sogndal 2. aug, Stabæk 8. aug, Odd 15. aug, Åsane 26. aug).",
+    "Sykkel — Tour de France Femmes 2026 web-bekreftet 1.–9. aug (Lausanne Grand Départ); etappene på tavla stemmer (E1 Lausanne–Lausanne 1. aug, E2 Aigle–Genève, E3 Genève–Poligny …). Tour de Pologne 3.–9. aug (Uno-X); Arctic Race of Norway 13.–16. aug; Vuelta a España fra 22. aug — alle inne.",
+    "Golf — Rocket Classic (t.o.m. 2. aug, Ventura) statisk inne; Wyndham 6.–9. aug; FedEx St. Jude Championship (sluttspill #1) 13.–16. aug, Hovland; Danish Golf Championship 13. aug. (BMW Championship 20. aug mangler — se gaps.)",
+    "Tennis — Casper Ruud i National Bank Open (Montreal, ATP Masters 1000) inne fra 1. aug.",
+    "Sjakk — Saint Louis Rapid & Blitz 2. aug + Sinquefield Cup 8. aug + Esports World Cup-sjakk (Carlsen, 11. aug) inne.",
+    "F1 — ESPN-BLINDSONE (source-quirks-mandat) web-rekonfirmert: sommerpause etter Ungarns GP (26. juli), neste = Nederlands GP 21.–23. aug (på tavla, sprint-helg). Tom F1-tavla i imminent-vinduet = KORREKT fravær, ikke ESPN-mis-datering."
   ],
   "escalated": true,
   "notes": [
-    "Kjøring 2026-07-31 ~06:35Z (recall-audit). IMMINENT-PASS (31. juli–3. aug) kjørt først: én HIGH imminent gap funnet — BLAST Bounty Malta LAN semifinaler (lør. 1. aug 10.30 + 13.30 UTC) + Bo5-finale (søn. 2. aug 10.30 UTC) mangler; kvartfinalene er inne, klimakset ikke. ESKALERT (deep) via escalate.request → research fyller.",
-    "STOR ENDRING SIDEN 30. JULI: football-fetcheren er gjenopprettet (football.json fersk, 8 Eliteserie-kamper statisk) — den VEDVARENDE HIGH football-sourceIssue er LØST og fjernet fra sourceIssues. Kun ÉN sourceIssue igjen: esports.json stale-retained (54 kjøringer, død Liquipedia-fetcher; driver BLAST Bounty-hullet direkte).",
-    "F1 ESPN-BLINDSONE (source-quirks-mandat) web-rekonfirmert: sommerpause etter Ungarns GP (26. juli); neste = Nederlands GP 21.–23. aug (på tavla, sprint-helg). Tom F1-tavla = korrekt fravær.",
-    "FORRIGE AUDITS MEDIUM: (1) Diamond League — Lausanne 21. aug NÅ på tavla → DL-hullet innsnevret til kun Silesia 23. aug (Warholm), recurrences 2, forblir medium. (2) Eliteserien runde 17 — Rosenborg–Viking 14. aug inne + fetcheren gjenopprettet → droppet som gap (populeres nå statisk), flyttet til coveredWell. NY medium: Premier League 2026/27-åpning 21.–23. aug (Arsenal/Liverpool/Man City, tre katalog-klubber) — null PL-kamper på tavla.",
-    "MEKANISKE COVERAGE-GAPS (coverage-gaps.json 2026-07-31T04:04Z: 4 entity-gaps, 1 anomaly) TRIAGERT: alle 4 entity-gaps (Man City/Liverpool/Premier League/Serie A) er ren overgangs-/nyhetsstøy fra Guardian (Grealish, Elliott, Newcastle-stats, Lacroix/Stones) — men PL-entiteten peker riktignok på et reelt event-hull (PL-åpningen, se gaps medium). Den ENE anomalien (esports stale-retained, high) er REELL → sourceIssue over.",
-    "KORREKTE FRAVÆR (ikke hull): vinteridretter (av-sesong, juli/aug); håndball (av-sesong; REMA 1000-ligaen starter ~sept.); Jakob Ingebrigtsen (ute pga. skade/sykdom); Aryan Tari (trakk seg fra eliteklassen); 100 Thieves/rain (ikke kvalifisert til BLAST Bounty Malta LAN → korrekt fravær for eier-linsen; server-brettet mangler likevel de andre katalog-lagenes semifinaler/finale, se HIGH gap)."
+    "Kjøring 2026-08-01 ~06:35Z (recall-audit). IMMINENT-PASS (1.–5. aug) kjørt først: én HIGH imminent gap funnet — Brann–Apollon Limassol i Conference League 3. kvalifiseringsrunde (førstekamp hjemme ~5.–6. aug) mangler helt. ESKALERT (deep) via escalate.request → research fyller.",
+    "STOR POSITIV ENDRING: alle TRE gap fra 31. juli-auditen er nå LØST på tavla via ai-research — BLAST Bounty semifinaler+finale (var HIGH, eskalert), Premier League-åpningen (var medium) og Diamond League Silesia (var medium, recurrences 2). Escalation- + research-loopen leverte. Ingen carry-forward-gap denne kjøringen.",
+    "NY IMMINENT HIGH: Brann i Conference League 3. runde mot Apollon Limassol. Brann slo Universitatea Cluj i 2. runde (23./28. juli, VG/Nettavisen) → 3. runde 6.+13. aug (UEFA-kalender; ett norsk oppsett antyder 5.+11. aug). Kun Branns Eliteserie-kamper er på tavla, ingen europacup. Bodø/Glimts CL-kvalik er derimot korrekt inne — så bare Brann-grenen mangler. Norsk visning = TV 2 Play/TV 2 Sport (TV 2 har UEFAs klubbturneringsrettigheter).",
+    "NY HORISONT MEDIUM: Golf BMW Championship (FedExCup-sluttspill #2, 20.–23. aug, Bellerive) mangler mens FedEx St. Jude (#1, 13.–16. aug) er inne. Tour Championship (#3, 27.–30. aug, East Lake) også innenfor horisonten men betinget av topp-30 — foreløpig kun nevnt, ikke eget gap.",
+    "SJEKKET, KORREKT FRAVÆR (ikke hull): ingen andre norske klubber i europacupen i august (Viking/Molde/Rosenborg fant ingen 2026/27-kvalikkamper — kun Brann + Bodø/Glimt er i Europa). Vinteridretter (av-sesong juli/aug); håndball (av-sesong, REMA 1000-ligaen ~sept.); Jakob Ingebrigtsen (skade/sykdom); Aryan Tari (ute av eliteklassen); 100 Thieves/rain (ikke kvalifisert til BLAST Bounty Malta LAN → korrekt fravær).",
+    "MEKANISKE COVERAGE-GAPS (coverage-gaps.json 2026-07-31T22:54Z: 2 entity-gaps, 1 anomaly) TRIAGERT: begge entity-gaps (Arsenal/Liverpool) er ren overgangsstøy fra Guardian (Guimarães-rykter, Curtis Jones/Inter) — ikke reelle event-hull. Den ENE anomalien (esports stale-retained, 63 retains, high) er REELL → sourceIssue over.",
+    "ÉN VEDVARENDE SOURCEISSUE: esports.json stale-retained (63 kjøringer, død Liquipedia-fetcher). Skjules på tavla av ai-research, men fetcheren er ødelagt og hører til self-repair."
   ]
 }
