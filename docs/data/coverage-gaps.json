@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T06:33:36.232Z",
+  "generatedAt": "2026-08-01T07:26:10.115Z",
   "gapCount": 2,
   "anomalyCount": 1,
   "gaps": [
@@ -12,7 +12,7 @@
       "link": "https://www.theguardian.com/football/2026/jul/31/football-transfer-rumours-bruno-guimaraes-arsenal-newcastle-victor-froholdt",
       "feed": "guardian-football",
       "matchCount": 3,
-      "detectedAt": "2026-08-01T06:33:35.468Z"
+      "detectedAt": "2026-08-01T07:26:09.198Z"
     },
     {
       "kind": "entity",
@@ -23,18 +23,18 @@
       "link": "https://www.theguardian.com/football/2026/jul/31/inter-liverpool-curtis-jones-football-transfer-window",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-01T06:33:35.468Z"
+      "detectedAt": "2026-08-01T07:26:09.198Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 64 consecutive run(s) — no fresh fetch in 5 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 64,
+      "detail": "docs/data/esports.json has been served from retention for 65 consecutive run(s) — no fresh fetch in 5 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 65,
       "staleDays": 5,
       "severity": "high",
-      "detectedAt": "2026-08-01T06:33:36.174Z"
+      "detectedAt": "2026-08-01T07:26:09.954Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
