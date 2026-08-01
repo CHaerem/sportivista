@@ -1,15 +1,13 @@
 {
-	"runAt": "2026-07-31T11:42:00Z",
-	"action": "opened-pr",
-	"pr": "https://github.com/CHaerem/sportivista/pull/432",
-	"fixed": [
-		"375px HIGH: assistant FAB overlapping the '20:45 Birmingham City – Barcelona' row (ⓘ/chevron + '· VG' subtext)",
-		"393px HIGH: assistant FAB covering the '21:00 Bodø/Glimt – Lillestrøm' row's chevron + '· TV 2' channel subtext"
-	],
+	"runAt": "2026-08-01T09:00:00Z",
+	"action": "none",
+	"pr": null,
+	"fixed": [],
 	"notes": [
-		"Fix: shrank the phone-width (@media max-width:460px) floating button — min-height 48→44px, padding 12→11px, glyph 18→17px — and tucked it into the extreme corner (right/bottom 20→14px). Also removed the DESIGN-forbidden heavy drop shadow (0 6px 20px .28 → soft 0 2px 12px .18) so it reads as a compact glass capsule, not 'en fylt sirkel med skygge' (DESIGN.md §345–370). This implements visual-qa's own endorsed 'shrink the FAB below a width breakpoint' remedy.",
-		"Only docs/css/cards.css changed. Verified with viewport (non-full-page) screenshots at 375/393/900 before + after: at 375 the Birmingham row's ⓘ/chevron are now clear of the smaller corner button; at 393 the footprint is materially reduced; at 900 the labelled pill still sits cleanly in the empty right margin beside the 640px column (only a lighter shadow). No regressions — header/tabs/DIREKTE NÅ/day-groups/agenda all intact and calm, no new overflow/truncation. npm test green (1368).",
-		"Honest scope: the residual bottom-trailing corner overlap is INHERENT to the DESIGN.md-mandated floating button on an edge-to-edge single column ('Agendaen … scroller rolig UNDER knappen', WP-146 variant D). Fully eliminating it (dock / full-width bar / hide) is explicitly forbidden by DESIGN.md and would need an owner design decision; this PR minimises the footprint rather than claiming to remove the inherent overlap.",
-		"Not merged — the workflow re-gates tests and auto-merges + deploys."
+		"visual-qa 2026-08-01 flags one HIGH issue (twice, at 375 + 393px): the floating 'Assistent' button overlapping a mid-agenda row's bottom-right corner (today the 14:15 'Tour de France Femmes 2026' row's 'neste: … · TV 2 Play' subtext tail). At 900px the labelled pill sits cleanly in the empty right margin (QA: low/no issue).",
+		"No PR opened. Verified current state with viewport (non-full-page) screenshots at 375/393/900: the phone-width mitigation is already in place — the button is glyph-only, 44px (HIG min), tucked into the extreme corner with a soft (not heavy) shadow; at 900 the pill lives in the empty margin beside the 640px-capped column; the LAST agenda row and footer are never occluded (main.wrap padding-bottom:88px). Header/tabs/DIREKTE NÅ/day-groups all intact and calm.",
+		"This is the same inherent, DESIGN-sanctioned overlap the prior ui-fix run already minimised (PR #432, 2026-07-31, which shrank the phone FAB). A fixed bottom-trailing button over an edge-to-edge single column unavoidably sits over SOME row on load — DESIGN.md §345–370 (WP-146 variant D, owner decision) explicitly sanctions this: the button floats over content and 'Agendaen … scroller rolig UNDER knappen'; only the LAST row is guaranteed clear, and that guarantee holds.",
+		"Both of visual-qa's proposed remedies are exhausted: bottom-padding is already applied (88px) and cannot fix a position:fixed element's overlap with a MID-list row; shrink-below-a-breakpoint is already done (glyph-only 44px). The only remaining ways to remove the overlap — dock the control into the flow, use a full-width bottom bar, reserve a permanent right gutter on phones, or hide the FAB — are all explicitly forbidden by DESIGN.md and/or drop the assistant entry on phones (a functional + web-parity regression). Each is an owner-level design decision, outside the ui-fix loop's remit (CLAUDE.md: DESIGN.md is normative, never deviate without explicit owner instruction).",
+		"Conservative no-op by design: shipping another cosmetic tweak would be churn that cannot resolve the inherent overlap and risks a live-site regression on an auto-merging PR. A missing fix beats a regression. Escalation for the owner: if this HIGH finding should stop recurring, it needs a DESIGN.md decision on the phone-width assistant entry pattern (e.g. reserve a right gutter on phones, or accept the sanctioned float-over and downgrade the QA severity to reflect DESIGN.md §370)."
 	]
 }
