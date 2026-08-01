@@ -1,28 +1,28 @@
 {
-	"runAt": "2026-07-31T21:30:00Z",
-	"tier": "standard",
-	"eventsAdded": 0,
-	"eventsRemoved": 0,
-	"eventsAmended": 3,
-	"trackedDelta": "Ingen entries lagt til/fjernet. blast-bounty-summer-2026 reason oppdatert: alle fire kvartfinaler nå avgjort (QF4 Astralis slo paiN 2–1) → de fire semifinalistene er Team Spirit, MOUZ, FaZe Clan, Astralis; SF1/SF2-paringene fortsatt TBD (draften ikke publisert). lastUpdated 17:55Z → 21:30Z.",
-	"quality": {
-		"pass": true,
-		"score": 90,
-		"revised": false,
-		"failures": [
-			"Non-blocking (formatering): SF1/SF2/Grand Final-summaryene er 4 korte avsnitt hver, litt over 2–3-målet (fortsatt scannbart, ingen tekstvegg). Ikke revidert — bestått.",
-			"Non-blocking: BLAST-event-familien lener seg på samme tre evidence-domener (liquipedia/strafe/blast); delvis dempet av uavhengige verificationSources (gamereactor + strafe).",
-			"SOFT (utenfor research-scope, videreført): esports.json stale-retained ~61 kjøringer / 5 dager (død Liquipedia-fetcher) — korrekt kun eskalert til self-repair, ikke løst her."
-		]
-	},
-	"notes": [
-		"LETT KJØRING / RECONCILE + AMEND (standard tier, 21:30Z), ~3,5 t etter 17:55Z. Ordinær slot, ingen ny scout-eskalering (scout quiet 19:20Z). coverage-audit 06:35Z' ene HIGH imminent-hull (BLAST Bounty semifinaler + Bo5-finale) var alt LØST på event-siden (boardet 07:20Z, verifisert 08:25Z). Ingen nye events å legge til; denne kjøringens verdi = ferske QF-resultater inn i klimaks-eventene.",
-		"AMENDERT (3 events): BLAST Bounty Summer 2026 semifinale 1 + semifinale 2 + Grand Final. ALLE FIRE KVARTFINALER NÅ AVGJORT (Liquipedia/HLTV/strafe-news 403 → sekundærkilder): QF1 Team Spirit 2–0 Team Liquid, QF2 MOUZ 2–1 3DMAX, QF3 FaZe Clan 2–1 The MongolZ, QF4 Astralis 2–1 paiN Gaming (to kilder enige: strafe-kampsidens sluttspill-tabell «Astralis (2-1)» + esports.gg-guiden). De fire semifinalistene = Team Spirit, MOUZ, FaZe Clan, Astralis. Summaryene amendert til å navngi alle fire med QF-resultat + fjerne den utdaterte «paiN–Astralis avgjør siste plass fredag kveld»-teksten.",
-		"SF-PARINGENE HOLDT TBD (korrekt, ikke diktet): semifinale-mini-draften settes fredag kveld etter QF4, og draftresultatet var IKKE publisert/indeksert ved kjøretid (~21.30 UTC — HLTV/Liquipedia/strafe-news 403 Cloudflare, gamereactor ikke oppdatert). Generiske titler («semifinale 1/2») beholdt; verify/neste kjøring navngir SF1/SF2-parene når draften er kjent. Manglende oppsett > oppdiktet paring.",
-		"COVERAGE-AUDIT (06:35Z) RESTHULL: (1) Premier League 2026/27-åpning 21.–23. aug (medium) — de tre katalog-klubbenes MW1-kamper med TV-valgt avspark er alt boardet (Arsenal–Coventry 21. aug, Man City–Bournemouth + Newcastle–Liverpool 23. aug); (2) DL Silesia 23. aug (medium, Warholm) — alt boardet 11:00Z. Begge dekket, ingen ny handling.",
-		"HORISONT-SKANN (Step 2.6): ingen nye katalog-kandidater. De neste ~4 ukene er dekket (Eliteserien runde 16 denne helgen + 17/18 delvis, OBOS Lyn, Barcelona La Liga-åpning 27. aug, Glimt/Brann europakvalik, golf FedEx-sluttspill + Wyndham + Rocket Classic, TdF Femmes fra 1. aug + Tour of Denmark/Pologne + Arctic Race + Vuelta fra 22. aug, Ruud National Bank Open + Laver Cup bokført, friidrett EM Birmingham + DL Lausanne/Silesia, F1 Nederlands GP 21.–23. aug sprinthelg, sjakk GCT Saint Louis + Sinquefield + EWC-sjakk, CS2 BLAST Bounty + EWC 12.–23. aug). coverage-gaps demand[] fraværende → ingen ekstern etterspørsel å promotere.",
-		"KORREKTE FRAVÆR (ikke hull): vinteridretter (av-sesong, juli/aug); håndball (av-sesong, REMA 1000 ~sept.); Jakob Ingebrigtsen (skade/sykdom, men navngitt på EM Birmingham); Aryan Tari (trakk seg fra eliteklassen); 100 Thieves/rain (ikke i BLAST Bounty Malta LAN → korrekt fravær; volatil, X-annonsert <24t → re-scoutes daglig).",
-		"SELF-REPAIR-FLAGG STÅR: esports.json stale-retained ~61 kjøringer / 5 dager (død Liquipedia-henting) — CS2-klimakset måtte håndfylles fordi fetcheren er død. Utenfor research-scope; eskalert videre.",
-		"Ikke mandags-sweep → ingen registry-reconsiliering (Step 2.8). validate-events.js: 83 events, 0 errors (forventede warnings: 2 chess-timezone-bleed, 18 landing-page-url WP-246, weak time/channel-basis WP-242)."
-	]
+  "runAt": "2026-08-01T10:20:00Z",
+  "tier": "standard",
+  "eventsAdded": 3,
+  "eventsRemoved": 0,
+  "eventsAmended": 0,
+  "trackedDelta": "Oppdaterte to tracked-entries (ingen nye/fjernede): brann-conference-league-qualifying-2026-27 (begge kvalik-kamper mot Apollon Limassol nå boardet, datokonflikt 5./11. aug løst, VG+ Sport-rettigheter) + viktor-hovland (BMW Championship boardet). Bumpet lastUpdated.",
+  "quality": {
+    "pass": true,
+    "score": 90,
+    "failures": [
+      "Minor: Conference League-streaming (Brann-kampene) er en dokumentert gjentakende revert-war der pipelinen re-deriver VG+ Sport til Viaplay via norwegian-rights; research re-satte VG+ Sport med rettighetshaver-bevis (VG) og eskalerte til verify+self-repair, men rotårsaken i pipelinen står uløst og vil trolig gjenoppstå ved neste bygg.",
+      "Minor: Brann-toleggs-familien lener seg på samme kilde-domener (vg.no + fotmob); 2. legg siterer kun VG + Fotmob for avspark (eksplisitt flagget som aggregator/foreløpig i summary)."
+    ]
+  },
+  "notes": [
+    "STANDARD-tier 4-timers kjøring. To konkrete dekningshull fra coverage-audit.json (auditedAt 2026-08-01T06:35Z) LØST: (1) HIGH imminent — Brann i Conference League 3. kvalifiseringsrunde mot Apollon Limassol (begge kamper manglet helt); (2) MEDIUM horisont — golf BMW Championship (FedExCup-sluttspill #2) manglet mens St. Jude #1 var inne.",
+    "BRANN–APOLLON LIMASSOL: begge kamper lagt til (ai-research, medium). Datokonflikten (VG 5./11. aug vs Apollon FC/UEFA-vindu 6./13. aug) avklart til 5. aug hjemme + 11. aug borte — VG (rettighetshaver) + Flashscore + Sofascore + Fotmob enige; kun betting-aggregatorer viste 6./13. HJEMME onsdag 5. aug ~19.00 CEST (17.00 UTC) — dato HIGH, klokkeslett kun aggregator-bekreftet (Sofascore+Fotmob), uefa.com ga 403/503 → provenance.time basis secondary, confidence medium. BORTE tirsdag 11. aug — avspark ENNÅ IKKE offisielt publisert (Fotmob antyder 17.00 UTC), eksplisitt flagget foreløpig. Verify bør firme opp begge avsparkstidene mot UEFA/brann.no nærmere kampdag.",
+    "NORSK VISNING VG+ SPORT (begge Brann-kamper): VG selv, som rettighetshaver, sier eksplisitt «Du kan se begge kampene med VG+ Sport» — IKKE Viaplay/TV 2. Bekrefter mønsteret at norske klubbers europakvalik havner hos VG/lokale holdere (jf. Glimt hjemme=Avisa Nordland, Tromsø=VG TV), ikke basispakkene.",
+    "REVERT-WAR (til verify + self-repair): build-events re-derivde Conference League-streaming til «Viaplay» via norwegian-rights (/conference/-linja) på begge Brann-kamper etter at jeg skrev VG+ Sport — en on-board selvmotsigelse (streaming[]=Viaplay mens summary+provenance sier VG+ Sport). Re-satt streaming[] til VG+ Sport denne kjøringen, men research kan ikke vinne dette varig via arrayet alene (VG+ Sport er ikke rettighetskart-derivbar). VARIG FIKS: verify må CONFIRME hjemmekampen (priorConfirmed-beskyttelse), og self-repair bør legge en Brann-kvalik-unntakslinje i norwegian-rights.js + evt. VG+ Sport-token i PLATFORM_SOURCE_TOKENS. Samme mønster som Glimt-hjemmekampens Avisa Nordland-revert-war.",
+    "BMW CHAMPIONSHIP (golf, high): 20.–23. aug, Bellerive CC St. Louis, Hovland i norwegianPlayers. Dato/venue/felt (topp-50 etter St. Jude) bekreftet mot bmwchampionship.com (offisiell) + Columbia Missourian + Fox2now + uavhengig write-time fact-check. Hovland ~20. i FedExCup → start ventet men feltet låses formelt etter St. Jude (13.–16. aug) — ventet-men-ubekreftet. Norsk visning HBO Max (Sport)/Eurosport (WBD har PGA Tour-rettighetene 2026). Tee-tider ikke publisert (round-1 ~11.00 UTC er plassholder). Tour Championship #3 (27.–30. aug, East Lake, betinget topp-30) foreløpig ikke boardet — nevnt av coverage-audit, ikke eget gap ennå.",
+    "WRITE-TIME FACT-CHECK (fresh-context subagent): alle 3 kandidat-eventer verifisert uavhengig — Brann-kampene CONFIRMED (dato høy, avspark aggregator-bekreftet men ikke UEFA-offisiell), BMW CONFIRMED (venue/datoer/streaming). Ingen amendments, ingen droppet.",
+    "STEP 2.6 HORISONT-SCAN: ingen nye katalog-kandidater denne kjøringen — coverage-audit + scout-log gjennomgått. Andre in-season sporter web-rekonfirmert dekket (F1 sommerpause t.o.m. Nederlands GP 21.–23. aug korrekt tom; TdF Femmes etapper inne; Vuelta fra 22. aug; sjakk Saint Louis/Sinquefield/EWC inne; tennis Ruud Montreal inne; håndball/vinteridrett av-sesong). coverage-gaps.json demand[]-felt fraværende (ingen coverage-request-issues).",
+    "SCOUT-LOG: siste verdicter «quiet» (transfer-støy). MEKANISK coverage-gaps.json (2 entity-gaps Arsenal/Liverpool = overgangsstøy; 1 anomaly esports stale-retained 66 kjøringer = REELL, self-repair-sak, IKKE research). Bekreftet: coverage-audits triage stemmer.",
+    "IKKE research-oppgave (til self-repair): esports.json stale-retained i 66 sammenhengende kjøringer / 5 dager — Liquipedia CS2-fetcheren produserer null, skjules på tavla av ai-research. Fetcheren er ødelagt uansett. Uendret siden tidligere audits (var 63).",
+    "validate-events.js: 0 errors på 86 events. build-events preserverte alle ai-research-eventer (72→75)."
+  ]
 }

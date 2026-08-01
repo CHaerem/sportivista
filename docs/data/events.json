@@ -2668,6 +2668,54 @@
     }
   },
   {
+    "sport": "football",
+    "tournament": "UEFA Conference League 2026/27 (kvalifisering)",
+    "title": "Brann – Apollon Limassol",
+    "time": "2026-08-05T17:00:00Z",
+    "endTime": null,
+    "venue": "Brann Stadion, Bergen",
+    "norwegian": true,
+    "homeTeam": "Brann",
+    "awayTeam": "Apollon Limassol",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://www.vg.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-01T10:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.vg.no/sport/i/Gx68VQ/brann-slo-universitatea-cluj-og-er-klare-for-tredje-kvalifiseringsrunde-i-conference-league",
+      "https://www.sofascore.com/football/team/apollon-limassol/3402",
+      "https://www.fotmob.com/nb/teams/8003/overview/apollon-limassol"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.sofascore.com/football/team/apollon-limassol/3402",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-01T10:20:00Z",
+        "note": "Dato 5. aug bekreftet HIGH (VG rettighetshaver + Flashscore/Sofascore/Fotmob). Avspark 19.00 CEST (17.00 UTC) korroborert av Sofascore+Fotmob (aggregatorer), IKKE offisiell UEFA-side (uefa.com 403/503) -> forelopig; verify firmer det opp."
+      },
+      "streaming": {
+        "sourceId": "vg",
+        "url": "https://www.vg.no/sport/i/Gx68VQ/brann-slo-universitatea-cluj-og-er-klare-for-tredje-kvalifiseringsrunde-i-conference-league",
+        "basis": "official",
+        "retrievedAt": "2026-08-01T10:20:00Z",
+        "note": "VG (selv rettighetshaver) sier eksplisitt at begge kampene vises pa VG+ Sport - ikke Viaplay/TV 2. Monster: norske klubbers europakvalik hos VG/lokale holdere."
+      }
+    },
+    "summary": "Brann tar imot kypriotiske Apollon Limassol til forstekamp i 3. kvalifiseringsrunde av Conference League, hjemme pa Brann Stadion.\n\nAvspark onsdag 5. august kl. 19.00 CEST (17.00 UTC) - datoen er bekreftet, men eksakt klokkeslett er forelopig aggregator-bekreftet (Sofascore/Fotmob) og ikke offisielt publisert av UEFA enna. Brann slo Universitatea Cluj sammenlagt 5-3 i 2. runde; Apollon slo Dila Gori 7-0.\n\nNorsk visning: VG+ Sport (VG har rettighetene til begge kampene). Returkampen spilles borte i Limassol 11. august.",
+    "homeTeamEntityId": "brann-conference-league-qualifying",
+    "id": "fe13888e090b"
+  },
+  {
     "sport": "cycling",
     "tournament": "Tour de France Femmes 2026",
     "title": "Etappe 6 (kupert): Montbrison – Tournon-sur-Rhône",
@@ -3200,6 +3248,53 @@
     }
   },
   {
+    "sport": "football",
+    "tournament": "UEFA Conference League 2026/27 (kvalifisering)",
+    "title": "Apollon Limassol – Brann",
+    "time": "2026-08-11T17:00:00Z",
+    "endTime": null,
+    "venue": "Alphamega Stadium, Limassol",
+    "norwegian": true,
+    "homeTeam": "Apollon Limassol",
+    "awayTeam": "Brann",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://www.vg.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-01T10:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.vg.no/sport/i/Gx68VQ/brann-slo-universitatea-cluj-og-er-klare-for-tredje-kvalifiseringsrunde-i-conference-league",
+      "https://www.fotmob.com/nb/teams/8003/overview/apollon-limassol"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.fotmob.com/nb/teams/8003/overview/apollon-limassol",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-01T10:20:00Z",
+        "note": "Dato 11. aug bekreftet HIGH (VG + Flashscore + Fotmob). Avspark IKKE offisielt publisert; Fotmob antyder 17.00 UTC (20.00 lokal Kypros EEST / 19.00 CEST) - forelopig, kun en aggregator; verify firmer det opp."
+      },
+      "streaming": {
+        "sourceId": "vg",
+        "url": "https://www.vg.no/sport/i/Gx68VQ/brann-slo-universitatea-cluj-og-er-klare-for-tredje-kvalifiseringsrunde-i-conference-league",
+        "basis": "official",
+        "retrievedAt": "2026-08-01T10:20:00Z",
+        "note": "VG: begge kampene vises pa VG+ Sport."
+      }
+    },
+    "summary": "Returkamp i 3. kvalifiseringsrunde av Conference League: Apollon Limassol tar imot Brann i Limassol pa Kypros.\n\nSpilles tirsdag 11. august. Eksakt avspark er enna ikke offisielt publisert - Fotmob antyder ca. 20.00 lokal tid (19.00 CEST / 17.00 UTC); tiden firmes opp av verify naermere kampdag. Forstekampen spilles hjemme i Bergen 5. august.\n\nNorsk visning: VG+ Sport.",
+    "awayTeamEntityId": "brann-conference-league-qualifying",
+    "id": "45c277dae71d"
+  },
+  {
     "sport": "esports",
     "tournament": "Esports World Cup 2026",
     "title": "Esports World Cup 2026 – CS2 (gruppespill)",
@@ -3615,6 +3710,62 @@
       }
     },
     "homeTeamEntityId": "brann-conference-league-qualifying"
+  },
+  {
+    "sport": "golf",
+    "tournament": "FedExCup Playoffs",
+    "title": "BMW Championship",
+    "time": "2026-08-20T11:00:00Z",
+    "endTime": "2026-08-23T22:00:00Z",
+    "venue": "Bellerive Country Club, St. Louis, MO",
+    "meta": "PGA Tour",
+    "norwegian": true,
+    "streaming": [
+      {
+        "platform": "HBO Max (Sport)",
+        "url": "https://www.hbomax.com/no/no/sports/pga-tour",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "Eurosport",
+        "url": "https://www.eurosport.no",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [
+      {
+        "name": "Viktor Hovland",
+        "entityId": "viktor-hovland"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-01T10:20:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://bmwchampionship.com/news/bmw-championship-venues-for-2025-2026-announced",
+      "https://www.columbiamissourian.com/sports/pro_sports/dates-set-for-2026-bmw-championship-at-bellerive/",
+      "https://www.hbomax.com/no/no/sports/pga-tour"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "pgatour",
+        "url": "https://bmwchampionship.com/news/bmw-championship-venues-for-2025-2026-announced",
+        "basis": "official",
+        "retrievedAt": "2026-08-01T10:20:00Z",
+        "note": "Bellerive-vertskap + topp-50-felt bekreftet pa turneringens egen side; eksakte konkurransedager (to. 20.-son. 23. aug) korroborert av Columbia Missourian + Fox2now. Tee-tider ikke publisert enna (~11.00 UTC round-1 er plassholder, matcher St. Jude)."
+      },
+      "streaming": {
+        "sourceId": "hbo-max",
+        "url": "https://www.hbomax.com/no/no/sports/pga-tour",
+        "basis": "official",
+        "retrievedAt": "2026-08-01T10:20:00Z",
+        "note": "WBD har PGA Tour-rettighetene i Norge 2026 -> HBO Max (Sport) / Eurosport Norge."
+      }
+    },
+    "summary": "BMW Championship 20.-23. august, Bellerive Country Club i St. Louis - det andre av tre FedExCup-sluttspill (topp-50 etter FedEx St. Jude gar videre hit; topp-30 videre til Tour Championship).\n\nViktor Hovland ligger rundt 20. plass i FedExCup etter Travelers-seieren i juni og er dermed sa godt som sikret start - feltet lases formelt etter St. Jude (13.-16. aug).\n\nNorsk visning: HBO Max (Sport) / Eurosport Norge. Tee-tider ikke publisert enna.",
+    "id": "81cff48e2170"
   },
   {
     "sport": "f1",
