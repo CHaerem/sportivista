@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-08-01T17:58:22.460Z",
+  "generatedAt": "2026-08-01T19:13:33.106Z",
   "gapCount": 4,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Arsenal",
+      "entity": "Manchester City",
       "type": "missing",
       "imminent": false,
-      "headline": "Arsenal’s title defence: keeping tired players fit and the Vinícius question",
-      "link": "https://www.theguardian.com/football/2026/jul/31/arsenal-mikel-arteta-injuries-fatigue-title-defence",
-      "feed": "guardian-football",
+      "headline": "Tapte i City-debuten",
+      "link": "https://www.nrk.no/sport/tapte-i-city-debuten-1.17976131",
+      "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-01T17:58:21.479Z"
+      "detectedAt": "2026-08-01T19:13:32.050Z"
     },
     {
       "kind": "entity",
@@ -22,8 +22,8 @@
       "headline": "Faster, faster: Iraola in a rush to plug Liverpool gaps before Premier League starts",
       "link": "https://www.theguardian.com/football/2026/aug/01/liverpool-premier-league-andoni-iraola-leeds",
       "feed": "guardian-football",
-      "matchCount": 2,
-      "detectedAt": "2026-08-01T17:58:21.479Z"
+      "matchCount": 1,
+      "detectedAt": "2026-08-01T19:13:32.050Z"
     },
     {
       "kind": "entity",
@@ -34,7 +34,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/01/liverpool-premier-league-andoni-iraola-leeds",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-01T17:58:21.479Z"
+      "detectedAt": "2026-08-01T19:13:32.050Z"
     },
     {
       "kind": "entity",
@@ -45,18 +45,18 @@
       "link": "https://www.theguardian.com/football/2026/aug/01/liverpool-premier-league-andoni-iraola-leeds",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-01T17:58:21.479Z"
+      "detectedAt": "2026-08-01T19:13:32.050Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 71 consecutive run(s) — no fresh fetch in 6 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 71,
+      "detail": "docs/data/esports.json has been served from retention for 72 consecutive run(s) — no fresh fetch in 6 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 72,
       "staleDays": 6,
       "severity": "high",
-      "detectedAt": "2026-08-01T17:58:22.297Z"
+      "detectedAt": "2026-08-01T19:13:32.975Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
