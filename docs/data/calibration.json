@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-01T07:26:10.187Z",
+  "generatedAt": "2026-08-01T09:55:54.861Z",
   "windowDays": 180,
   "records": {
-    "used": 138,
+    "used": 144,
     "skipped": 0
   },
   "sources": {
@@ -541,26 +541,26 @@
       "reliability": null
     },
     "hltv.org": {
-      "checks": 8,
-      "agreed": 8,
-      "corrections": 0,
+      "checks": 10,
+      "agreed": 10,
+      "corrections": 1,
       "bySport": {
         "esports": {
-          "checks": 8,
-          "agreed": 8
+          "checks": 10,
+          "agreed": 10
         }
       },
       "byField": {
         "existence": {
-          "checks": 3,
-          "agreed": 3
+          "checks": 4,
+          "agreed": 4
         },
         "time": {
-          "checks": 5,
-          "agreed": 5
+          "checks": 6,
+          "agreed": 6
         }
       },
-      "lastChecked": "2026-07-30T07:46:41Z",
+      "lastChecked": "2026-08-01T07:42:18Z",
       "reliability": 1
     },
     "atptour.com": {
@@ -1055,13 +1055,13 @@
       "reliability": null
     },
     "letourfemmes.fr": {
-      "checks": 3,
-      "agreed": 3,
+      "checks": 4,
+      "agreed": 4,
       "corrections": 0,
       "bySport": {
         "cycling": {
-          "checks": 3,
-          "agreed": 3
+          "checks": 4,
+          "agreed": 4
         }
       },
       "byField": {
@@ -1070,11 +1070,11 @@
           "agreed": 2
         },
         "time": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 2,
+          "agreed": 2
         }
       },
-      "lastChecked": "2026-07-31T08:25:00Z",
+      "lastChecked": "2026-08-01T07:42:18Z",
       "reliability": null
     },
     "tv2.no": {
@@ -1307,6 +1307,48 @@
         }
       },
       "lastChecked": "2026-07-31T08:25:00Z",
+      "reliability": null
+    },
+    "sports.yahoo.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "cycling": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "streaming": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-01T07:42:18Z",
+      "reliability": null
+    },
+    "glimt.no": {
+      "checks": 2,
+      "agreed": 2,
+      "corrections": 0,
+      "bySport": {
+        "football": {
+          "checks": 2,
+          "agreed": 2
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        },
+        "existence": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-01T07:42:18Z",
       "reliability": null
     }
   }
