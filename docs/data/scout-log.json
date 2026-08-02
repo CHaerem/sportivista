@@ -207,6 +207,14 @@
     "runAt": "2026-08-02T19:50:28.957Z",
     "verdict": "escalate",
     "reason": "RSS (55 items, 19:50 UTC): transfer-season noise (Lewandowski Chicago Fire, Hjertø-Dahl Hull, Horn Myhre abroad, Pedersen Orlando Pirates, Welbeck/Sangaré/Barcola/Grealish signings—no schedule/streaming impact), FIFA/UEFA governance crisis (Infantino, UEFA rebellion—political/administrative, no event schedule changes), past-tense results (Brann/Rosenborg Eliteserien, FCK/Silkeborg Danish Superliga, PGA Ventura tournament ongoing—no upcoming event changes), Molde/Premier League/La Liga/Formula 1 entity mentions all in transfer/analysis/non-imminent context. Coverage gaps: 5 entity gaps (Molde, Premier League, 1. divisjon, La Liga, Formula 1), all imminent=false. Anomaly: esports.json stale-retained 84 runs (7+ days)—the fetcher has produced nothing for a week; retainLastGood masks the silence. This is a mechanical failure that warrants immediate deep investigation: either the fetcher code is broken, the Liquipedia API changed, or a credential issue — the Watchtower needs research to verify the CS2/esports feed health and the 100 Thieves match coverage via alternative sources while the primary fetcher is dead.",
-    "signals": ["stale-retained: esports.json 84 consecutive runs"]
+    "signals": [
+      "stale-retained: esports.json 84 consecutive runs"
+    ]
+  },
+  {
+    "runAt": "2026-08-02T22:35:09.108Z",
+    "verdict": "quiet",
+    "reason": "RSS (21:33 UTC, 51 items): transfer-season noise (Sørloth/Atlético, Elyounoussi contract, Lewandowski/Chicago Fire, Hjertø-Dahl/Hull, Horn Myhre abroad, Welbeck Chelsea, Sangaré Brentford, Barcola Liverpool, Grealish Al-Hilal—no schedule/streaming impact), FIFA/UEFA governance crisis (Infantino privatization, UEFA council rebellion—political/administrative, no concrete event schedule changes), past-tense results (Brann/Rosenborg, FCK/Silkeborg, KFUM/Kristiansund, Molde-drama, Norseman endurance race—all played or completed, no upcoming changes). Coverage gaps (5 entity gaps, all imminent=false): Molde/Premier League/1. divisjon/La Liga (all in transfer/analysis context or past-result references, no concrete upcoming events). Anomaly: esports.json stale-retained 85 runs (7+ days)—already escalated at 19:50 UTC today (cap=2/day, 1/2 used). No new schedule changes, broadcaster announcements, 100 Thieves CS2 match hints, tracked athlete imminent event changes, or concrete new upcoming events requiring escalation detected.",
+    "signals": []
   }
 ]
