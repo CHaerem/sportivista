@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-02T06:38:46.770Z",
-  "gapCount": 4,
+  "generatedAt": "2026-08-02T07:31:06.449Z",
+  "gapCount": 5,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -12,7 +12,18 @@
       "link": "https://www.nrk.no/sport/tapte-i-city-debuten-1.17976131",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-02T06:38:45.829Z"
+      "detectedAt": "2026-08-02T07:31:03.692Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Arsenal",
+      "type": "missing",
+      "imminent": false,
+      "headline": "The five big beasts are gone: who will be the Premier League’s next alpha manager? | Jonathan Wilson",
+      "link": "https://www.theguardian.com/football/2026/aug/02/premier-league-managers-arteta-alonso-de-zerbi-carrick-klopp-guardiola",
+      "feed": "guardian-football",
+      "matchCount": 2,
+      "detectedAt": "2026-08-02T07:31:03.692Z"
     },
     {
       "kind": "entity",
@@ -22,19 +33,19 @@
       "headline": "Faster, faster: Iraola in a rush to plug Liverpool gaps before Premier League starts",
       "link": "https://www.theguardian.com/football/2026/aug/01/liverpool-premier-league-andoni-iraola-leeds",
       "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-08-02T06:38:45.829Z"
+      "matchCount": 2,
+      "detectedAt": "2026-08-02T07:31:03.692Z"
     },
     {
       "kind": "entity",
       "entity": "Premier League",
       "type": "missing",
       "imminent": false,
-      "headline": "Faster, faster: Iraola in a rush to plug Liverpool gaps before Premier League starts",
-      "link": "https://www.theguardian.com/football/2026/aug/01/liverpool-premier-league-andoni-iraola-leeds",
+      "headline": "The five big beasts are gone: who will be the Premier League’s next alpha manager? | Jonathan Wilson",
+      "link": "https://www.theguardian.com/football/2026/aug/02/premier-league-managers-arteta-alonso-de-zerbi-carrick-klopp-guardiola",
       "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-08-02T06:38:45.829Z"
+      "matchCount": 2,
+      "detectedAt": "2026-08-02T07:31:03.692Z"
     },
     {
       "kind": "entity",
@@ -45,18 +56,18 @@
       "link": "https://www.theguardian.com/football/2026/aug/01/liverpool-premier-league-andoni-iraola-leeds",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-02T06:38:45.829Z"
+      "detectedAt": "2026-08-02T07:31:03.692Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 76 consecutive run(s) — no fresh fetch in 6 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 76,
+      "detail": "docs/data/esports.json has been served from retention for 77 consecutive run(s) — no fresh fetch in 6 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 77,
       "staleDays": 6,
       "severity": "high",
-      "detectedAt": "2026-08-02T06:38:46.605Z"
+      "detectedAt": "2026-08-02T07:31:04.481Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."

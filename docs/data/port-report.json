@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T06:38:45.593Z",
+  "generatedAt": "2026-08-02T07:31:03.417Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -19,28 +19,35 @@
     ]
   },
   "coverage": {
-    "openGaps": 2,
+    "openGaps": 3,
     "bySeverity": {
       "high": 1,
-      "medium": 1,
+      "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 1,
+    "oldestGapAgeDays": 1.04,
     "escalatable": 0,
-    "catalogMatched": 2,
-    "auditedAt": "2026-08-01T06:35:00Z",
+    "catalogMatched": 3,
+    "auditedAt": "2026-08-02T06:40:00Z",
     "gaps": [
       {
         "interest": "Fotball — Brann i Conference League-kvalifiseringen (3. runde, mot Apollon Limassol)",
         "severity": "high",
-        "ageDays": 1,
+        "ageDays": 1.04,
+        "recurrences": 1,
+        "catalogMatched": true
+      },
+      {
+        "interest": "Friidrett — Weltklasse Zürich (Diamond League, 27. aug)",
+        "severity": "medium",
+        "ageDays": 0.04,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
-        "interest": "Golf — BMW Championship (FedExCup Playoffs #2, 20.–23. aug)",
+        "interest": "Tennis — Cincinnati Open (ATP/WTA Masters 1000, 13.–23. aug, Casper Ruud)",
         "severity": "medium",
-        "ageDays": 1,
+        "ageDays": 0.04,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -144,21 +151,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-02T06:38:41.423Z",
+    "buildCheckedAt": "2026-08-02T07:30:58.533Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-01T22:46:58.903Z",
-    "manifestAgeHours": 7.86,
+    "manifestGeneratedAt": "2026-08-02T06:38:46.991Z",
+    "manifestAgeHours": 0.87,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-07-26T15:02:01.492Z",
-        "ageHours": 159.61
+        "ageHours": 160.48
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-01T07:42:18Z",
-    "verifyAgeHours": 22.94,
+    "verifyAgeHours": 23.81,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
