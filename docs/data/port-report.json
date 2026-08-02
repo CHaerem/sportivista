@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T07:31:03.417Z",
+  "generatedAt": "2026-08-02T09:54:25.840Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -25,7 +25,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 1.04,
+    "oldestGapAgeDays": 1.14,
     "escalatable": 0,
     "catalogMatched": 3,
     "auditedAt": "2026-08-02T06:40:00Z",
@@ -33,43 +33,36 @@
       {
         "interest": "Fotball — Brann i Conference League-kvalifiseringen (3. runde, mot Apollon Limassol)",
         "severity": "high",
-        "ageDays": 1.04,
+        "ageDays": 1.14,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Friidrett — Weltklasse Zürich (Diamond League, 27. aug)",
         "severity": "medium",
-        "ageDays": 0.04,
+        "ageDays": 0.14,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Cincinnati Open (ATP/WTA Masters 1000, 13.–23. aug, Casper Ruud)",
         "severity": "medium",
-        "ageDays": 0.04,
+        "ageDays": 0.14,
         "recurrences": 0,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.13,
-    "nearTermChecked": 16,
-    "nearTermAmended": 2,
-    "verifyRunAt": "2026-08-01T07:42:18Z",
-    "windowRate": 0.01,
-    "windowChecks": 73,
-    "windowAmendments": 1,
-    "windowCorrections": 5,
+    "nearTermRate": 0.17,
+    "nearTermChecked": 6,
+    "nearTermAmended": 1,
+    "verifyRunAt": "2026-08-02T07:55:00Z",
+    "windowRate": 0,
+    "windowChecks": 69,
+    "windowAmendments": 0,
+    "windowCorrections": 6,
     "byDay": [
-      {
-        "date": "2026-07-19",
-        "checks": 8,
-        "amendments": 1,
-        "corrections": 0,
-        "rate": 0.13
-      },
       {
         "date": "2026-07-20",
         "checks": 4,
@@ -146,26 +139,33 @@
         "amendments": 0,
         "corrections": 1,
         "rate": 0
+      },
+      {
+        "date": "2026-08-02",
+        "checks": 4,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-02T07:30:58.533Z",
+    "buildCheckedAt": "2026-08-02T09:54:23.009Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-02T06:38:46.991Z",
-    "manifestAgeHours": 0.87,
+    "manifestGeneratedAt": "2026-08-02T07:31:06.669Z",
+    "manifestAgeHours": 2.39,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-07-26T15:02:01.492Z",
-        "ageHours": 160.48
+        "ageHours": 162.87
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-08-01T07:42:18Z",
-    "verifyAgeHours": 23.81,
+    "checkedAt": "2026-08-02T07:55:00Z",
+    "verifyAgeHours": 1.99,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
