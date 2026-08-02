@@ -1,18 +1,18 @@
 {
-  "checkedAt": "2026-08-01T08:00:00Z",
+  "checkedAt": "2026-08-02T08:00:00Z",
   "widths": [375, 393, 900],
   "verdict": "issues",
   "findings": [
     {
       "width": 375,
       "area": "assistant-fab overlapping agenda row (I DAG · Tour de France Femmes 2026)",
-      "issue": "The fixed circular 'Assistent' button (bottom-right) sits directly on top of the 14:15 'Tour de France Femmes 2026' row on initial load, covering the tail of its 'neste: Etappe 1 ...' subtext in the bottom-right corner of the card. Confirmed with a plain (non-full-page) 375px viewport screenshot, not the full-page stitched capture — full-page mode does not reproduce this bug because Chromium omits fixed-position elements from the stitched output, so a full-page-only QA pass would have missed it. This is the third consecutive day this exact bug has been observed (2026-07-30, 2026-07-31, 2026-08-01), landing on a different row each time because the agenda content shifts day to day — the fixed button still has no reserved safe-area and will keep occluding whatever row happens to sit in its bottom-right corner.",
+      "issue": "The fixed circular 'Assistent' button (bottom-right, sparkle icon) sits directly on top of the 13:00 'Tour de France Femmes 2026' row, covering its info (i) icon and expand chevron. Confirmed with a cropped clip screenshot at the button's actual bounding box (x:320,y:839, 41x46px on a 375-wide viewport) — the button overlaps live card content, not just empty margin. This is at least the fourth consecutive day this exact bug has been observed (2026-07-30, 2026-07-31, 2026-08-01, 2026-08-02), landing on a different row each time because the agenda content shifts day to day — the fixed button still has no reserved safe-area and keeps occluding whatever row happens to sit in its bottom-right corner.",
       "severity": "high"
     },
     {
       "width": 393,
-      "area": "assistant-fab overlapping agenda row (I DAG · Fredrikstad – Sandefjord)",
-      "issue": "Same fixed 'Assistent' button lands one row lower here, covering the crest icon and left edge of the 16:00 'Fredrikstad – Sandefjord' row on initial viewport load. As before, tapping in that bottom-right corner risks opening the assistant instead of the event row.",
+      "area": "assistant-fab overlapping agenda row (I DAG · Aalesund – Tromsø)",
+      "issue": "Same fixed 'Assistent' button lands one row lower here (viewport is slightly taller), covering the tail of 'Aalesund – Tromsø' (the last letters of 'Tromsø' are hidden behind the button) plus its info/chevron icons. Tapping in that bottom-right corner risks opening the assistant instead of the event row.",
       "severity": "high"
     },
     {
@@ -23,11 +23,12 @@
     }
   ],
   "notes": [
-    "Correctness otherwise looked solid across all three widths: no truncated Norwegian team/athlete names (Aalesund–Tromsø, KFUM Oslo–Kristiansund, Molde–Sarpsborg 08, Brann–Rosenborg, Sandefjord–KFUM Oslo all read in full), every row shows a channel (TV 2 Play, TV 2 Direkte, HBO Max (Sport)) or an honest faint '-' (National Bank Open), all Norwegian - no FOX/ESPN/Sky spotted. Union Saint-Gilloise – Bodø/Glimt correctly shows Bodø/Glimt's own crest and TV 2 Play, not a foreign channel.",
-    "Zoomed in on several club crests/flags to check for broken-image icons: Start, Aalesund, KFUM Oslo, Molde, Brann/Rosenborg and Bodø/Glimt crests all render as proper logos; Lyn–Sogndal falls back to a generic ball glyph (no dedicated crest known) - a consistent, honest fallback, not a broken image. Norwegian flag emoji renders correctly on Tour de France Femmes / Tour de Pologne (flagging a followed Norwegian entity in the race, not the host country).",
-    "Multi-day events (PostNord Tour of Denmark, Tour de France Femmes, Tour de Pologne, Wyndham Championship) render with date ranges + 'neste: Etappe ...' framing instead of a single misleading time.",
-    "Layout is a clean single column at 375/393, no horizontal scroll, headings/dividers aligned, must-see accent dots used sparingly (4 of ~13 visible rows). At 900px the agenda column is genuinely centered (roughly equal margins each side), not left-stuck.",
+    "Correctness otherwise looked solid across all three widths: no truncated Norwegian team/athlete names (Aalesund–Tromsø, KFUM Oslo–Kristiansund, Molde–Sarpsborg 08, Lyn–Sogndal, Brann–Rosenborg, Sandefjord–KFUM Oslo, Vålerenga–Bodø/Glimt, Viking–Sarpsborg 08, Stabæk–Lyn, Start–Fredrikstad all read in full, wrapping to multiple lines rather than clipping), every row shows a channel (TV 2 Play, VG+ Sport, HBO Max (Sport)) or an honest faint '-' (National Bank Open presented by Rogers, still undated), all Norwegian-relevant — no FOX/ESPN/Sky spotted. Union Saint-Gilloise – Bodø/Glimt correctly shows Bodø/Glimt's own crest and TV 2 Play, not a foreign channel.",
+    "Club crests and national flags render correctly at all widths (Aalesund, Tromsø, KFUM Oslo, Molde, Sarpsborg 08, Lyn, Sogndal, Brann, Rosenborg, Vålerenga, Bodø/Glimt, Viking, Stabæk, Start, Fredrikstad, Sandefjord, Union Saint-Gilloise) — no broken-image icons observed.",
+    "Multi-day events (PostNord Tour of Denmark, Rocket Classic, Tour de France Femmes, Tour de Pologne, Wyndham Championship, National Bank Open) render with date ranges + 'neste: Etappe ...' framing instead of a single misleading time.",
+    "Layout is a clean single column at 375/393, no horizontal scroll or edge clipping, day-group headings (I DAG / I MORGEN / weekday names) and dividers aligned, must-see accent dots used sparingly. At 900px the agenda column is genuinely centered with roughly equal margins each side, not left-stuck.",
     "Header, Morgenbriefen headline, day groupings, 'Dette dekker vi'/'Merker og kilder' disclosures and footer (usage budget line, calendar subscribe, Aktivitet/Personvern links) all intact and readable at every width checked.",
-    "The assistant-fab overlap is now confirmed on three consecutive runs on different rows each time - a structural bug (position: fixed with no bottom-content safe-area reservation and no narrow-viewport visibility change), not a one-off. Still worth prioritizing for the ui-fix loop: e.g. add bottom padding to the agenda equal to the FAB's height + margin, or hide/shrink the FAB below a width breakpoint where it has no side margin to live in."
+    "The assistant-fab overlap is now confirmed on (at least) four consecutive runs, each on a different row - a structural bug (position: fixed with no bottom-content safe-area reservation and no narrow-viewport behavior change), not a one-off. Worth prioritizing for the ui-fix loop: e.g. add bottom padding to the agenda equal to the FAB's height + margin, or hide/shrink the FAB below a width breakpoint where it has no side margin to live in.",
+    "Could not assess: whether the overlap also steals the tap target in a live browser (only static screenshots were reviewed here, including a clip screenshot at the button's exact bounding box to confirm true content overlap vs. adjacent whitespace)."
   ]
 }
