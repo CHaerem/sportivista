@@ -1,24 +1,28 @@
 {
-	"runAt": "2026-08-01T21:20:00Z",
-	"tier": "standard",
-	"eventsAdded": 0,
-	"eventsRemoved": 2,
-	"eventsAmended": 3,
-	"trackedDelta": "0 lagt til / 0 fjernet. Reason-felt oppdatert på 2 entries (brann-conference-league-qualifying-2026-27 + bodo-glimt-cl-qualifying-2026-27: streaming re-synk mot provenance). lastUpdated → 2026-08-01T21:20Z.",
-	"quality": {
-		"pass": true,
-		"score": 90,
-		"failures": [
-			"Soft (rubric: gjentatt uadressert anbefaling, -10): streaming revert-waren på de tre europakvalik-fotballkampene er en strukturell pipeline-bug som gjentar seg over mange kjøringer — den statiske pipelinen re-derivde igjen feil norsk kanal (Viaplay for Brann via /conference/, TV 2 Play for Glimt hjemme via /champions/) mens provenance+summary var korrekte. Research re-synket streaming[] til provenance (korrekt) og re-flagget den varige fiksen (verify priorConfirmed + self-repair: VG+ Sport / direktesport-avisa-nordland-tokens i PLATFORM_SOURCE_TOKENS + unntakslinjer i norwegian-rights.js), men rotårsaken ligger utenfor research-agentens mandat og gjenoppstår ved neste pipelinebygg til fiksen lander (band-aid)."
-		]
-	},
-	"notes": [
-		"LETT KJØRING / STREAMING-RESYNK + STALE-PRUNE. eventsAmended: 3, eventsRemoved: 2. Scout quiet hele dagen (siste 19:13Z, 0 eskaleringer, cap 0/2); coverage-audit 06:35Z' to gap (Brann CL 3. kvalik HIGH + BMW Championship MEDIUM) begge alt boardet i dagens 10:20Z-kjøring; coverage-gaps 20:48Z = 4 entity-gaps (ren PL-overgangsstøy: Man City/Liverpool/Premier League/The Open) + 1 anomaly (esports.json stale-retained 73 kjøringer); 0 demand[].",
-		"STREAMING REVERT-WAR RE-SYNK (grader-rubric #6, on-board selvmotsigelse): 20:48Z-pipelinebygget hadde re-derivert feil norsk kanal på tre europakvalik-kamper mens provenance+summary var korrekte (samme mønster som 17:20Z-kjøringen). Re-satt streaming[]: Brann–Apollon hjemme (5. aug) + Apollon–Brann borte (11. aug) Viaplay→VG+ Sport (VG er rettighetshaver, sier eksplisitt begge kampene på VG+ Sport); Bodø/Glimt hjemme (11. aug) TV 2 Play→Direktesport/Avisa Nordland (an.no). Bodø/Glimt borte (4. aug, TV 2 Play verify-confirmed, intern-konsistent) IKKE rørt. VARIG FIKS (self-repair): norwegian-rights.js /champions/+/conference/-unntakslinjer for norske klubbers europakvalik + PLATFORM_SOURCE_TOKENS (vg+ sport, direktesport/avisa nordland); verify må sette priorConfirmed for å beskytte mot re-deriv.",
-		"STALE-PRUNE (eventsRemoved: 2): to utdaterte ai-research-VM-events fjernet — «VM-bronsefinale» (18. juli) + «VM-finalen 2026» (19. juli). Fotball-VM er over (19. juli). Bronsefinalen krysset validate-events.js' 14-dagers grace-vindu i dag (cutoff ~21:15Z) og feilet valideringen (1 error→0 errors etter fjerning); finalen ville feilet i morgen. Ingen tracked.json-entry for VM (ryddet tidligere), så ingen tracked-endring der. FOTBALL-FETCHER FRISKMELDT: docs/data/football.json er IKKE lenger frosset på VM-finalen — den skriver nå Eliteserien (5 events, coverageRatio 1). Den tidligere flaggede statiske fotball-fetcher-svikten (self-repair) ser ut til å være løst.",
-		"WEB-VERIFISERT (2 imminent events, ingen endring nødvendig): (a) CS2 BLAST Bounty S2 Grand Final Spirit–MOUZ (søn. 2. aug ~10.30 UTC, Bo5) bekreftet mot HLTV + Dust2 + Field Level Media — matcher tavla. (b) Brann–Apollon-datoen (hjemme 5. aug) re-bekreftet mot VG (rettighetshaver); «6. aug»-treffene er kun betting-aggregatorer (ratingbet/football-lineups) — den kjente datokonflikten, VG veier tyngst.",
-		"IMMINENT-SVEIP (Aug 1–5) uendret: BLAST Bounty semifinaler spilt i dag (Spirit slo FaZe 2–1, MOUZ slo Astralis) → Grand Final Spirit–MOUZ 2. aug; Lyn–Sogndal + chess Saint Louis Rapid & Blitz 2. aug på tavla; Bodø/Glimt CL-kvalik borte Oostende 4. aug + Brann–Apollon hjemme 5. aug på tavla; TdF Femmes pågår (E1 Lausanne ferdig, E2 2. aug); National Bank Open (Ruud) pågår. 100 Thieves/rain: ingen kommende dated kamp (korrekt fravær, ikke kvalifisert til BLAST Bounty Malta LAN).",
-		"VEDVARENDE (self-repair, uendret): (a) esports.json stale-retained 73 kjøringer / 6 dager (død Liquipedia-fetcher — CS2-manuellfyllingen holdt tavla dekket denne helgen), (b) europakvalik streaming-revert-war. Ikke deep-tier → ingen registry-reconsiliering (Step 2.8, kun mandags-sweep).",
-		"validate-events.js: 80 events, 0 errors (forventede WP-246-warnings: 2 chess-timezone-bleed, 18 landing-page-url, 11 weak-time-basis + 24 weak-channel-basis). tests/tracked-schema.test.js grønn."
-	]
+  "runAt": "2026-08-02T10:20:00Z",
+  "tier": "standard",
+  "eventsAdded": 2,
+  "eventsRemoved": 0,
+  "eventsAmended": 2,
+  "trackedDelta": "+1 tournament (cincinnati-open-2026); oppdatert brann-conference-league-qualifying-2026-27 (dato-korreksjon + streaming), diamond-league-2026-august-meets (Zürich lagt til), casper-ruud (Cincinnati); lastUpdated 2026-08-02T10:20Z. 37 entries totalt.",
+  "quality": {
+    "pass": true,
+    "score": 90,
+    "failures": [
+      "Kronisk streaming-revert-war på Brann (og Glimt) hjemmekamp: pipelinen re-deriverer Viaplay/TV 2 Play via norwegian-rights, research re-setter til VG+ Sport/Direktesport hver kjøring; flagget for verify priorConfirmed + self-repair over >=3 kjøringer, men aldri varig fikset (utenfor research' direkte fikseomfang). -10",
+      "Ikke research-feil, men notert: esports.json stale-retained (77 sammenhengende retains) — død Liquipedia-fetcher — står som vedvarende high sourceIssue, korrekt rutet til self-repair."
+    ]
+  },
+  "notes": [
+    "Standard-tier Opus, ordinær 4-timers-slot. Trigger: coverage-audit 2026-08-02T06:40Z eskalerte ÉN HIGH (deep) + rapporterte to NYE MEDIUM horisont-hull. Scout-log quiet hele natten/morgenen (siste 07:35Z 'quiet', 0 eskaleringer). Fan-out: to web-search-scouts (fotball-dato/streaming; Zürich+Cincinnati) + én uavhengig write-time fact-checker (Step 3.5).",
+    "HIGH-KORREKSJON (Brann–Apollon, Conference League 3. kvalikrunde): tavla hadde FEIL DATO (hjemme 5. aug + borte 11. aug). Rettet til de faktiske UEFA-datoene TORSDAG 6. aug (hjemme, Brann Stadion Bergen) + TORSDAG 13. aug (borte, Alphamega Stadium Limassol) — 3. kvalikrunde spilles torsdag/torsdag. Bekreftet av Apollon FCs egen kampside + UEFA + Wikipedia (UECL 2026/27) via to uavhengige subagenter; 5.+11.-datoene kom fra VGs provisoriske kampreferat FØR draget. Begge events flyttet + summary/provenance oppdatert. Avspark-klokkeslett fortsatt kun aggregat-anslag (17.00 UTC / 19.00 CEST) — ikke offisielt UEFA-publisert (uefa.com 503); verify firmer opp.",
+    "STREAMING (Brann–Apollon) = VG+ Sport for BEGGE kamper, RE-BEKREFTET. Den uavhengige fact-checkeren foreslo først generisk 'Viaplay', men SNUDDE etter en match-spesifikk oppfølging: VGs førstepartskilde sier eksplisitt 'Du kan se begge kampene med VG+ Sport', og norwegian-rights-skillen dokumenterer at norske klubbers tidlige europakvalik har egne fri-sublisenser (f.eks. VG TV; jf. Glimt hjemme = Avisa Nordland/Direktesport) selv om Viaplay holder UECL samlet. Den generiske Viaplay-slutningen er nettopp fella coverage-critic gikk i. Bortekampens streaming[] var feilaktig 'Viaplay' på tavla (intern selvmotsigelse mot provenance/summary) → rettet til VG+ Sport.",
+    "MEDIUM #1 (NY, coverage-audit): Weltklasse Zürich (Wanda Diamond League, torsdag 27. aug, Letzigrund) lagt til (medium). Datoen bekreftet HIGH mot zurich.diamondleague.com + DL-kalenderen (26. aug er byfest/stavsprang på hovedstasjonen, 27. aug selve stadionstevnet). Øktstart ikke publisert ennå → foreløpig ~20.00 CEST (18.00 UTC, basis secondary, tydelig flagget); verify setter ekte tid + deep NRK-url. Streaming NRK (DL-rettighet t.o.m. 2029). Serien: Lausanne 21. → Silesia 23. → Zürich 27. → DL-finale Brussel 4.–5. sept.",
+    "MEDIUM #2 (NY, coverage-audit): Cincinnati Open (ATP/WTA Masters 1000, Mason OH) lagt til (high på turnerings-nivå). Hovedtrekning 13.–23. aug (kval fra 11. aug, singlefinale søn. 23. aug) bekreftet mot cincinnatiopen.com + Wikipedia. Casper Ruud påmeldt single (14.-seed) + double (m/André Göransson) → i norwegianPlayers; konkrete kamptider settes med trekningen. Streaming TV 2 Play (ATP-rettighet t.o.m. 2026). Ruuds neste turnering etter Montreal (National Bank Open 1.–13. aug, allerede på tavla).",
+    "RECONCILE (Step 1): alle catalog.tier2 + tier1-sesong dekket. Ingen utløpte tracked-entries å prune (nærmeste expiry blast-bounty/rocket-classic/tour-of-denmark 3. aug — arrangementene pågår t.o.m. i dag 2. aug; BLAST Bounty Grand Final Team Spirit–MOUZ i dag). Horisont-scan (Step 2.6): ingen nye katalog-kandidater utover de to boardede DL/tennis-hullene; coverage-gaps.json hadde 0 demand[]-felt.",
+    "IKKE deep-tier → ingen registry-reconsiliering (Step 2.8 kjøres kun på mandagens deep-sweep).",
+    "CORRECT FRAVÆR (sjekket, ikke hull): ingen F1 i imminent-vinduet (sommerpause etter Ungarns GP 26. juli; neste = Nederlands GP 21.–23. aug, sprint-helg, alt på tavla). Ingen DL-stevne før Lausanne 21. aug. 100 Thieves/rain ute av BLAST Bounty Malta-LAN + ikke i EWC-feltet → korrekt fravær. Vinteridretter av-sesong; håndball av-sesong (REMA 1000 ~sept.).",
+    "TIL SELF-REPAIR (uendret, utenfor research): (a) esports.json stale-retained 77 kjøringer / 6+ dager — død Liquipedia CS2-fetcher (drev CS2-manuellfyllingen direkte, symptomet skjules på tavla av ai-research). (b) europakvalik streaming-revert-war (durabel fiks = verify priorConfirmed + self-repair: norwegian-rights.js /conference/+/champions/-unntakslinjer + PLATFORM_SOURCE_TOKENS: vg+ sport, direktesport/avisa nordland).",
+    "validate-events.js: 85 events, 0 errors (forventede WP-246-warnings: 2 chess-timezone-bleed, landing-page-url + weak-basis-mønstre på pre-eksisterende events). Grader (uavhengig subagent) pass=true, score 90 — ingen revisjonsrunde nødvendig."
+  ]
 }

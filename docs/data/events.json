@@ -2401,7 +2401,7 @@
     "sport": "football",
     "tournament": "UEFA Conference League 2026/27 (kvalifisering)",
     "title": "Brann – Apollon Limassol",
-    "time": "2026-08-05T17:00:00Z",
+    "time": "2026-08-06T17:00:00Z",
     "endTime": null,
     "venue": "Brann Stadion, Bergen",
     "norwegian": true,
@@ -2417,31 +2417,32 @@
       }
     ],
     "source": "ai-research",
-    "researchedAt": "2026-08-01T10:20:00Z",
+    "researchedAt": "2026-08-02T10:20:00Z",
     "confidence": "medium",
     "evidence": [
       "catalog.json#tier2.teams",
+      "https://www.apollon.com.cy/en/brann-await-apollon-in-the-third-qualifying-round/",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Conference_League",
       "https://www.vg.no/sport/i/Gx68VQ/brann-slo-universitatea-cluj-og-er-klare-for-tredje-kvalifiseringsrunde-i-conference-league",
-      "https://www.sofascore.com/football/team/apollon-limassol/3402",
       "https://www.fotmob.com/nb/teams/8003/overview/apollon-limassol"
     ],
     "provenance": {
       "time": {
         "sourceId": "uefa",
-        "url": "https://www.sofascore.com/football/team/apollon-limassol/3402",
+        "url": "https://www.apollon.com.cy/en/brann-await-apollon-in-the-third-qualifying-round/",
         "basis": "secondary",
-        "retrievedAt": "2026-08-02T07:55:00Z",
-        "note": "Dato 5. aug (hjemmekamp) bekreftet av VG (rettighetshaver) + Apollons egen kampkalender. Avspark 19.00 CEST (17.00 UTC) fortsatt aggregator-korroborert (Sofascore/Fotmob)."
+        "retrievedAt": "2026-08-02T10:20:00Z",
+        "note": "DATO-KORRIGERT 2026-08-02: hjemmekampen er TORSDAG 6. aug, ikke onsdag 5. aug. Apollon FCs egen kampside + UEFAs standard-oppsett (3. kvalikrunde spilles torsdag/torsdag) + Wikipedia (UEFA Conference League 2026/27) er enige om 6. + 13. aug; den tidligere 5.+11.-datoen kom fra VGs provisoriske kampreferat FOR draget. Avspark 19.00 CEST (17.00 UTC) er fortsatt kun aggregator-anslag (ikke offisielt UEFA-publisert, uefa.com 503) - verify firmer opp klokkeslettet."
       },
       "streaming": {
         "sourceId": "vg",
         "url": "https://www.vg.no/sport/i/Gx68VQ/brann-slo-universitatea-cluj-og-er-klare-for-tredje-kvalifiseringsrunde-i-conference-league",
         "basis": "official",
-        "retrievedAt": "2026-08-02T07:55:00Z",
-        "note": "VG (rettighetshaver) skriver eksplisitt 'Du kan se begge kampene med VG+ Sport'. Streaming-feltet stod feilaktig paa Viaplay (generisk rettighetskart) - rettet til VG+ Sport."
+        "retrievedAt": "2026-08-02T10:20:00Z",
+        "note": "VG skriver eksplisitt 'Du kan se begge kampene med VG+ Sport'. Norske klubbers tidlige europakvalik-kamper har ofte egne fri-sublisenser (norwegian-rights-skillen: 'egne fri-sublisenser, f.eks. VG TV'; jf. Glimt hjemme = Avisa Nordland/Direktesport), selv om Viaplay holder UECL-rettigheten samlet. VG+ Sport beholdes per VGs match-spesifikke førstepartskilde; verify re-bekrefter mot en kampspesifikk TV-guide."
       }
     },
-    "summary": "Brann tar imot kypriotiske Apollon Limassol til forstekamp i 3. kvalifiseringsrunde av Conference League, hjemme pa Brann Stadion.\n\nAvspark onsdag 5. august kl. 19.00 CEST (17.00 UTC) - datoen er bekreftet, men eksakt klokkeslett er forelopig aggregator-bekreftet (Sofascore/Fotmob) og ikke offisielt publisert av UEFA enna. Brann slo Universitatea Cluj sammenlagt 5-3 i 2. runde; Apollon slo Dila Gori 7-0.\n\nNorsk visning: VG+ Sport (VG har rettighetene til begge kampene). Returkampen spilles borte i Limassol 11. august.",
+    "summary": "Brann tar imot kypriotiske Apollon Limassol til forstekamp i 3. kvalifiseringsrunde av Conference League, hjemme pa Brann Stadion i Bergen.\n\nAvspark torsdag 6. august (klokkeslett foreløpig ~19.00 CEST / 17.00 UTC - ikke offisielt UEFA-publisert ennå, firmes opp av verify). Datoen er korrigert fra 5. til 6. aug: Apollon FCs egen kampside og UEFA fastslår torsdag/torsdag. Brann slo Universitatea Cluj sammenlagt 5-3 i 2. runde; Apollon slo Dila Gori 7-0.\n\nNorsk visning: VG+ Sport (VG: 'Du kan se begge kampene med VG+ Sport'). Returkampen spilles borte i Limassol torsdag 13. august.",
     "homeTeamEntityId": "brann-conference-league-qualifying",
     "id": "fe13888e090b",
     "verificationStatus": "amended",
@@ -3094,7 +3095,7 @@
     "sport": "football",
     "tournament": "UEFA Conference League 2026/27 (kvalifisering)",
     "title": "Apollon Limassol – Brann",
-    "time": "2026-08-11T17:00:00Z",
+    "time": "2026-08-13T17:00:00Z",
     "endTime": null,
     "venue": "Alphamega Stadium, Limassol",
     "norwegian": true,
@@ -3104,36 +3105,38 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
+        "platform": "VG+ Sport",
+        "url": "https://www.vg.no/sport",
         "urlKind": "landing"
       }
     ],
     "source": "ai-research",
-    "researchedAt": "2026-08-01T10:20:00Z",
+    "researchedAt": "2026-08-02T10:20:00Z",
     "confidence": "medium",
     "evidence": [
       "catalog.json#tier2.teams",
+      "https://www.apollon.com.cy/en/brann-await-apollon-in-the-third-qualifying-round/",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Conference_League",
       "https://www.vg.no/sport/i/Gx68VQ/brann-slo-universitatea-cluj-og-er-klare-for-tredje-kvalifiseringsrunde-i-conference-league",
       "https://www.fotmob.com/nb/teams/8003/overview/apollon-limassol"
     ],
     "provenance": {
       "time": {
         "sourceId": "uefa",
-        "url": "https://www.fotmob.com/nb/teams/8003/overview/apollon-limassol",
+        "url": "https://www.apollon.com.cy/en/brann-await-apollon-in-the-third-qualifying-round/",
         "basis": "secondary",
-        "retrievedAt": "2026-08-01T10:20:00Z",
-        "note": "Dato 11. aug bekreftet HIGH (VG + Flashscore + Fotmob). Avspark IKKE offisielt publisert; Fotmob antyder 17.00 UTC (20.00 lokal Kypros EEST / 19.00 CEST) - forelopig, kun en aggregator; verify firmer det opp."
+        "retrievedAt": "2026-08-02T10:20:00Z",
+        "note": "DATO-KORRIGERT 2026-08-02: returkampen er TORSDAG 13. aug, ikke tirsdag 11. aug. Apollon FCs egen kampside + UEFAs standard (3. kvalikrunde torsdag/torsdag) + Wikipedia (UECL 2026/27) er enige om 6. + 13. aug; 11.-datoen kom fra VGs provisoriske referat FOR draget. Avspark ikke offisielt publisert; Fotmob antyder 17.00 UTC (20.00 lokal Kypros EEST / 19.00 CEST) - foreløpig, kun aggregator; verify firmer det opp."
       },
       "streaming": {
         "sourceId": "vg",
         "url": "https://www.vg.no/sport/i/Gx68VQ/brann-slo-universitatea-cluj-og-er-klare-for-tredje-kvalifiseringsrunde-i-conference-league",
         "basis": "official",
-        "retrievedAt": "2026-08-01T10:20:00Z",
-        "note": "VG: begge kampene vises pa VG+ Sport."
+        "retrievedAt": "2026-08-02T10:20:00Z",
+        "note": "VG: 'Du kan se begge kampene med VG+ Sport'. Streaming-feltet stod feilaktig paa Viaplay (generisk UECL-rettighetskart) - rettet til VG+ Sport per VGs match-spesifikke førstepartskilde (norske klubbers tidlige kvalik har egne fri-sublisenser, jf. norwegian-rights-skillen + Glimt=Avisa Nordland). Verify re-bekrefter."
       }
     },
-    "summary": "Returkamp i 3. kvalifiseringsrunde av Conference League: Apollon Limassol tar imot Brann i Limassol pa Kypros.\n\nSpilles tirsdag 11. august. Eksakt avspark er enna ikke offisielt publisert - Fotmob antyder ca. 20.00 lokal tid (19.00 CEST / 17.00 UTC); tiden firmes opp av verify naermere kampdag. Forstekampen spilles hjemme i Bergen 5. august.\n\nNorsk visning: VG+ Sport.",
+    "summary": "Returkamp i 3. kvalifiseringsrunde av Conference League: Apollon Limassol tar imot Brann i Limassol pa Kypros.\n\nSpilles torsdag 13. august (dato korrigert fra 11. aug: Apollon FC + UEFA fastslår torsdag/torsdag). Eksakt avspark ennå ikke offisielt publisert - Fotmob antyder ca. 20.00 lokal tid (19.00 CEST / 17.00 UTC); tiden firmes opp av verify naermere kampdag. Forstekampen spilles hjemme i Bergen torsdag 6. august.\n\nNorsk visning: VG+ Sport.",
     "awayTeamEntityId": "brann-conference-league-qualifying",
     "id": "45c277dae71d"
   },
@@ -4151,5 +4154,97 @@
         "note": "migrert mekanisk fra evidence (WP-242)"
       }
     }
+  },
+  {
+    "sport": "athletics",
+    "tournament": "Wanda Diamond League",
+    "title": "Weltklasse Zürich",
+    "time": "2026-08-27T18:00:00Z",
+    "endTime": "2026-08-27T20:30:00Z",
+    "venue": "Letzigrund, Zürich",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-02T10:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://zurich.diamondleague.com/en/about/",
+      "https://www.diamondleague.com/calendar/",
+      "https://kommunikasjon.ntb.no/pressemelding/18535635/nrk-sikrer-seg-diamond-league-til-2029"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "diamond-league",
+        "url": "https://zurich.diamondleague.com/en/about/",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-02T10:20:00Z",
+        "note": "Dato torsdag 27. aug (Letzigrund) bekreftet HIGH mot arrangørens egen side + DL-kalenderen (26. aug er byfest/stavsprang på Zürich hovedstasjon, 27. aug er selve stadionstevnet). Øktstart IKKE offisielt publisert ennå (timeplan slippes typisk ~1-2 uker før) - 20.00 CEST (18.00 UTC) er et foreløpig anslag basert på DL-kveldsstevner; verify setter ekte tid + deep NRK-url når timeplanen kommer."
+      },
+      "streaming": {
+        "sourceId": "nrk",
+        "url": "https://tv.nrk.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-02T10:20:00Z",
+        "note": "NRK har Diamond League-rettighetene i Norge t.o.m. 2029."
+      }
+    },
+    "summary": "Weltklasse Zürich – Diamond League-stevnet på Letzigrund, det nest siste før DL-finalen i Brussel (4.–5. sept).\n\nStevnet går torsdag 27. august (kvinnenes stavsprang holdes byfest-stil på Zürich hovedstasjon dagen før, 26. aug). Eksakt øktstart er ikke publisert ennå – tiden på tavla (~20.00 CEST / 18.00 UTC) er foreløpig og firmes opp når arrangøren slipper timeplanen. Startlistene kommer nærmere stevnet.\n\nNorsk visning: NRK (Diamond League-rettighetene i Norge t.o.m. 2029).",
+    "id": "d1c5be8a4b4f"
+  },
+  {
+    "sport": "tennis",
+    "tournament": "Cincinnati Open",
+    "title": "Cincinnati Open",
+    "time": "2026-08-13T15:00:00Z",
+    "endTime": "2026-08-23T22:00:00Z",
+    "venue": "Lindner Family Tennis Center, Mason, Ohio",
+    "norwegian": true,
+    "norwegianPlayers": [
+      { "name": "Casper Ruud", "entityId": "casper-ruud" }
+    ],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/tennis",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-02T10:20:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://cincinnatiopen.com/news/cincinnati-open-releases-2026-schedule/",
+      "https://en.wikipedia.org/wiki/2026_Cincinnati_Open",
+      "https://cincinnatiopen.com/news/cincinnati-open-releases-2026-doubles-field/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "atp-tour",
+        "url": "https://cincinnatiopen.com/news/cincinnati-open-releases-2026-schedule/",
+        "basis": "primary",
+        "retrievedAt": "2026-08-02T10:20:00Z",
+        "note": "Hovedtrekning 13.-23. aug (kval fra 11. aug, singlefinale søn. 23. aug) bekreftet mot arrangørens egen tidsplan + Wikipedia. Turnerings-nivå event - Ruuds konkrete kamptider settes med trekningen (ikke publisert ennå)."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/tennis",
+        "basis": "official",
+        "retrievedAt": "2026-08-02T10:20:00Z",
+        "note": "TV 2 har alle ni ATP Masters 1000 i Norge t.o.m. 2026 (Cincinnati inkludert), vises på TV 2 Play."
+      }
+    },
+    "summary": "Cincinnati Open – ATP/WTA Masters 1000 på Lindner Family Tennis Center i Mason, Ohio, siste store oppkjøring før US Open.\n\nHovedtrekning 13.–23. august (kvalifisering fra 11. aug, singlefinale søndag 23. aug). Casper Ruud er påmeldt både i single (14.-seedet) og double (med André Göransson) – han spiller først National Bank Open i Montreal (1.–13. aug). Ruuds konkrete kamptider settes med trekningen.\n\nNorsk visning: TV 2 Play (TV 2 har ATP-rettighetene i Norge t.o.m. 2026).",
+    "id": "48327cf4920a"
   }
 ]
