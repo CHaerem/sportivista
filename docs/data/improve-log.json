@@ -1,7 +1,7 @@
 {
 	"runAt": "2026-08-03T10:49:00Z",
 	"action": "opened-pr",
-	"pr": null,
+	"pr": "https://github.com/CHaerem/sportivista/pull/433",
 	"proposal": "Stop a 4-day visual-qa ↔ ui-fix stalemate loop by teaching the visual-qa prompt (scripts/agents/visual-qa.md) that the floating «Assistent» button resting over a MID-agenda/news row is a DESIGN.md-sanctioned owner decision (§ Hjelperen, WP-146 variant D), NOT an overflow/occlusion bug — so it stops emitting a daily false-HIGH. Added a 'Design-sanctioned patterns — do NOT flag these' section: the float-over mid-list rows is the intended iOS 26 idiom ('Agendaen/Nyheter scroller rolig UNDER knappen'); the ONLY assistant-button issue worth a finding is the guarantee that must hold — the button never occludes the LAST row or the footer ('okkluderer ALDRI siste agenda-/Nyheter-rad') — which stays a real HIGH; and at ≈900px the button sits in the empty margin and overlaps nothing. Sharpens an existing prompt; adds no machinery; touches no protected path.",
 	"evidence": [
 		"visual-qa-log.json (2026-08-02, verdict 'issues') flags the assistant-fab overlapping an agenda row as HIGH at 375 + 393px, and its own notes say this is 'at least the fourth consecutive day this exact bug has been observed (2026-07-30, 2026-07-31, 2026-08-01, 2026-08-02), landing on a different row each time because the agenda content shifts day to day' — the tell of a fixed float-over, not a real overflow.",
