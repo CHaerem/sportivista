@@ -1,33 +1,36 @@
 {
-  "runAt": "2026-08-03T03:55:00Z",
+  "runAt": "2026-08-03T07:50:00Z",
   "tier": "standard",
-  "eventsAdded": 0,
-  "eventsRemoved": 1,
-  "eventsAmended": 2,
-  "trackedDelta": "Ingen nye/fjernede tracked-entries (37 totalt). Oppdatert lastUpdated → 2026-08-03T03:55Z + ny notes[0]-entry (CS2-eskaleringssvar + streaming-resynk). havard-rain-nygaard + esports-world-cup-2026-cs2 uavhengig web-re-bekreftet korrekte (ingen tekstendring nødvendig).",
-  "trigger": "Scout-eskalering 2026-08-02T19:50Z: esports.json stale-retained 84 kjøringer / 7 dager (død Liquipedia-fetcher) — bestilling: verifiser CS2/esports-feed-helse + 100 Thieves-dekning via alternative kilder.",
-  "eventsRemovedDetail": [
-    "PRUNET: EFG Swiss Open Gstaad (tennis, 17. juli) — foreldet ai-research-event som krysset validatorens 14-dagers historikk-cutoff (GRACE_WINDOW_MS) og feilet validate-events.js (Past event found → 1 error). Fjernet → 79 events, 0 errors."
+  "eventsAdded": 5,
+  "eventsRemoved": 0,
+  "eventsAmended": 0,
+  "trackedDelta": "trackedAdded: real-madrid (team), us-open-tennis-2026 (tournament), tour-championship-2026 (tournament). trackedAmended: la-liga-2026-27, casper-ruud, viktor-hovland (noterte de nye boardede eventene). 40 tracked-entries totalt. lastUpdated → 2026-08-03T07:50Z + ny notes[0].",
+  "trigger": "Ordinær 4-timers-slot. Coverage-audit 06:40Z fant INGEN high-hull (imminent-pass 3.–7. aug rent) men flagget TRE NYE MEDIUM horisont-hull: US Open (tennis), Tour Championship (golf), Barça–Elche + Real Madrid MD1/MD2 (La Liga-åpningen).",
+  "eventsAddedDetail": [
+    "US Open 2026 (tennis, 30. aug–13. sept, USTA Billie Jean King NTC Flushing Meadows, Ruud i norwegianPlayers) — MEDIUM. usopen.org bot-blokkert → datoer bekreftet mot Flashscore + LTA + HBO Max Norge (søndagsstart siden 2025); primærkilden ikke nådd → confidence:medium + provenance.time.basis:secondary (ærlig). Norsk visning HBO Max (Sport)/Eurosport (WBD har tre av fire Grand Slam — IKKE TV 2). Tetter coverage-critics medium horisont-hull #1 (Ruuds oppkjøring Montreal+Cincinnati var inne, selve majoren manglet).",
+    "Tour Championship (golf, 27.–30. aug, East Lake Atlanta, FedExCup-finalen topp-30, Hovland i norwegianPlayers) — HIGH. Dato/venue bekreftet mot tourchampionship.com (billettside) + Sky Sports + sportsbrackets (26. aug = pro-am, konkurranse 27.–30.). Hovland ~22. i FedExCup → ventet, feltet låses etter BMW 23. aug. HBO Max (Sport)/Eurosport. Tetter medium horisont-hull #2 (St. Jude + BMW var inne, finalen manglet).",
+    "Elche – Barcelona (La Liga, borte 23. aug 19.30 UTC, Estadio Martínez Valero) — HIGH, basis primary (fcbarcelona.com Jornada 2 + ESPN). Barças FØRSTE spilte kamp (runde-1-kampen mot Athletic utsatt til 27. aug pga. VM-semifinalister). Tetter medium horisont-hull #3.",
+    "Espanyol – Real Madrid (La Liga, borte 22. aug 19.30 UTC, RCDE Stadium) — HIGH, basis primary (realmadrid.com). Real Madrids FØRSTE spilte kamp (runde 2). Bonus-dekning: audit flagget eksplisitt at Real Madrids MD1/MD2 trolig også manglet, og Real Madrid (katalog-tier2) hadde ingen kamp på tavla.",
+    "Real Madrid – Real Sociedad (La Liga, hjemme 26. aug 19.00 UTC, Santiago Bernabéu) — HIGH, basis primary (realmadrid.com). Den utsatte hjemmeåpningen (runde 1). Alle tre La Liga-kamper TV 2 Play (TV 2 har La Liga t.o.m. 2030 — scouten snudde en tredjeparts «Viaplay»-slutning etter primærsjekk)."
   ],
-  "eventsAmendedDetail": [
-    "Apollon Limassol – Brann (UECL-kvalik BORTE 13. aug): streaming[] «Viaplay»→«VG+ Sport». Pipelinen hadde re-derivert Viaplay via norwegian-rights /conference/ mens provenance+summary sa VG+ Sport (VG som rettighetshaver: «Du kan se begge kampene med VG+ Sport»). On-board selvmotsigelse (grader-rubric #6) → re-synket mot provenance.",
-    "Bodø/Glimt – Union Saint-Gilloise (CL-kvalik HJEMME 11. aug): streaming[] «TV 2 Play»→«Direktesport / Avisa Nordland». Samme revert-war (pipeline re-derivde TV 2 Play via /champions/) mens provenance (sourceId avisa-nordland)+summary sa Direktesport/Avisa Nordland. Grader fanget denne i revisjonspasset (Step 5) etter at første pass feilaktig antok den var urørt/korrekt → re-synket mot provenance."
-  ],
-  "csTwoEscalationFindings": "Dedikert CS2-web-scout (cs2-sources-skill; Liquipedia 403 → HLTV/egamersworld/blast.tv/Wikipedia). KONKLUSJON: vår ai-research CS2-dekning er korrekt og komplett i vinduet 3.–24. aug. 100 Thieves er INAKTIV i CS2 (slått ut av StarSeries Fall EU-kvalik ~23. juli OG BLAST Bounty S2 vs Team Spirit 26. juli; IKKE i EWC 2026 CS2-feltet — de 28 VRS-inviterte inkluderer dem ikke). Eneste usikkerhet: EWC CS2 Open Qualifier (Paris 7.–9. aug), 100T-påmelding hverken bekreftet/avkreftet → LOW, verify re-sjekker ~6. aug. Ingen dated 100T-kamp å boarde = korrekt fravær (manglende event > oppdiktet). EWC 2026 CS2-eventet (Paris Expo Porte de Versailles 12.–23. aug, 32 lag, $2 mill, katalog-lag Vitality/NAVI/MOUZ/G2/Spirit/Falcons/Astralis/FaZe/FURIA/MongolZ) UAVHENGIG RE-BEKREFTET korrekt (Paris-relokering fra Riyadh, dato/format/felt) — ingen endring. Eskaleringen løser til: fetcheren er DØD (self-repair-sak, ikke research), men CS2-dekningen holdes korrekt manuelt.",
+  "fanOut": "Tre parallelle web-scouts (tennis US Open, golf Tour Championship, fotball La Liga-åpning), hver med uavhengig write-time-verifisering mot primær/offisielle kilder (Step 3.5 innebygd i scout-passet — hver kandidat cross-sjekket mot 2+ kilder med primær/offisielle sitater).",
   "quality": {
     "pass": true,
-    "score": 88,
+    "score": 93,
     "failures": [
-      "Første grader-pass FEILET (score 52, rubric #6): Bodø/Glimt HJEMME (11. aug) hadde streaming[]=TV 2 Play mens provenance/summary=Direktesport/Avisa Nordland — pipeline-revert-war jeg feilaktig antok var urørt. RETTET i bounded revisjonspass (streaming[] re-synket). Etter fiksen: begge europakvalik-selvmotsigelsene (Brann borte + Glimt hjemme) løst, 79 events / 0 errors.",
-      "Systemisk (utenfor durabel research-rekkevidde, per-kjøring håndpatchet): streaming-revert-war på norske klubbers europakvalik — pipelinen re-deriverer generisk rettighetskart-kanal (TV 2 Play /champions/, Viaplay /conference/) og klobber lokal-holder-kanalene (Direktesport/Avisa Nordland, VG+ Sport). Durabel fiks krever verify priorConfirmed + self-repair (norwegian-rights.js unntakslinjer + PLATFORM_SOURCE_TOKENS: direktesport/avisa nordland, vg+ sport). FLAGGET.",
-      "VEDVARENDE (self-repair): esports.json stale-retained 86 kjøringer — død Liquipedia-fetcher. CS2-dekning holdes korrekt oppe manuelt av research/ai, men fetcheren er ødelagt og hører til self-repair."
+      "Ingen hard fail. Alle 4 high-confidence events har ≥2 evidence-URLer; US Open korrekt satt til medium (usopen.org bot-blokkert). Streaming fylt på alle 5; summary↔streaming↔provenance konsistent på alle.",
+      "Minor (−5, corroboration): de to Real Madrid-eventene hviler tid-faktumet på ett domene (realmadrid.com) uten uavhengig kryssjekk, ulikt Elche–Barcelona (fcbarcelona.com + ESPN). Primær og autoritativ, men en andre kilde ville herdet det. FLAGGET for verify.",
+      "Minor: Ruud (US Open) + Hovland (Tour Championship) deltakelse er «ventet-men-ubekreftet» inntil trekning/feltlåsing — korrekt hedget i summary, verify-oppfølging."
     ],
-    "revisionPasses": 1
+    "revisionPasses": 0
   },
   "notes": [
-    "TILSTAND: sunn tavle. Coverage-audit 06:40Z sine tre gap (Brann-dato HIGH + Weltklasse Zürich MEDIUM + Cincinnati Open MEDIUM) ALLE alt LØST i tidligere kjøringer. Coverage-gaps 22:36Z = 5 entity-gaps (Molde/Premier League/1. divisjon/La Liga/Formula 1 — ren resultat-/overgangs-/governance-nyhetsstøy, alle imminent=false) + 1 anomaly (esports stale-retained, self-repair) + 0 demand[]. Siste scout 22:35Z quiet.",
-    "RECONCILE (Step 1): alle catalog.tier2-entiteter + tier1-sesong dekket (coverage-audit «coveredWell» bekrefter F1 sommerpause t.o.m. Nederlands GP 21.–23. aug, sykkel/golf/tennis/sjakk/friidrett alle inne). Ingen utløpte tracked-entries å prune.",
-    "Ikke deep-tier mandags-DAGtid-sweep (natt-kjøring) → ingen registry-reconsiliering (Step 2.8). Horisont-scan (Step 2.6): ingen nye katalog-kandidater; 0 demand[].",
-    "validate-events.js: 79 events, 0 errors (forventede WP-246 weak-basis-warnings + chess timezone-bleed)."
+    "TILSTAND: sunn tavle. Coverage-audit 06:40Z: 0 high-hull (imminent-pass 3.–7. aug rent — europacup/Eliteserien r17/Tour de Pologne+Femmes/Wyndham/Saint Louis-sjakk inne; F1-sommerpause web-rekonfirmert korrekt tomrom t.o.m. Nederlands GP 21.–23. aug). Alle TRE nye medium horisont-hull tettet denne kjøringen + en fjerde bonus-dekning (Real Madrid).",
+    "RECONCILE (Step 1): alle catalog.tier2 + tier1-sesong dekket. Real Madrid var det ENE tier2-teamet uten tracked-entry (next-fixture-hull) — nå tettet med begge åpningskampene. Ingen utløpte tracked-entries å prune (nærmeste: blast-bounty/rocket-classic/tour-of-denmark expiry 3. aug — arrangementene ferdigspilt, prunes neste kjøring).",
+    "Horisont-scan (Step 2.6): de tre audit-hullene var kandidatene; ingen andre nye katalog-kandidater; coverage-gaps 07:03Z demand[] fraværende/0.",
+    "Ikke deep-tier registry-sweep (Step 2.8) på denne event-jobben (mandag DAGtid-sweep kjøres av deep-tier-eskalering, ikke denne standard-slotten).",
+    "STREAMING-FLAGG for verify: US Open-kanalen (HBO Max/Eurosport) kan re-derives feil av pipeline (tennis→TV 2 Play-prior for ATP) — verify bør priorConfirme HBO Max for Grand Slam (US Open ≠ ATP-touren).",
+    "VEDVARENDE (self-repair, uendret): esports.json stale-retained 88 kjøringer (død Liquipedia-fetcher — CS2 holdes manuelt) + europakvalik streaming-revert-war (durabel fiks = verify priorConfirmed + self-repair norwegian-rights.js).",
+    "validate-events.js: 87 events, 0 errors (forventede WP-246 weak-basis + landing-page + chess timezone-bleed warnings)."
   ]
 }
