@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-03T19:27:00.814Z",
-  "gapCount": 10,
+  "generatedAt": "2026-08-03T21:00:15.056Z",
+  "gapCount": 11,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -12,7 +12,7 @@
       "link": "https://www.nrk.no/sport/reitan-dropper-pga-turnering-_-nordmann-inn-som-erstatter-1.17977710",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-03T19:26:59.642Z"
+      "detectedAt": "2026-08-03T21:00:13.896Z"
     },
     {
       "kind": "entity",
@@ -23,7 +23,18 @@
       "link": "https://www.nrk.no/sport/reitan-dropper-pga-turnering-_-nordmann-inn-som-erstatter-1.17977710",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-03T19:26:59.642Z"
+      "detectedAt": "2026-08-03T21:00:13.896Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "RBK",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Viste fingeren da Brann slo RBK – kan bli straffet",
+      "link": "https://www.aftenposten.no/sport/fotball/i/oE123R/ba-castro-kan-bli-straffet-for-aa-ha-vist-fingeren",
+      "feed": "aftenposten-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-03T21:00:13.896Z"
     },
     {
       "kind": "entity",
@@ -34,7 +45,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/03/football-transfer-rumours-atletico-grealish-tottenham-osimhen-gakpo",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-03T19:26:59.642Z"
+      "detectedAt": "2026-08-03T21:00:13.896Z"
     },
     {
       "kind": "entity",
@@ -45,7 +56,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/03/liverpool-pre-season-usa-tour-exposed-squad-gaps",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-03T19:26:59.642Z"
+      "detectedAt": "2026-08-03T21:00:13.896Z"
     },
     {
       "kind": "entity",
@@ -56,7 +67,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/03/premier-league-transfer-newcastle-reject-first-bid-arsenal-bruno-guimaraes",
       "feed": "guardian-football",
       "matchCount": 4,
-      "detectedAt": "2026-08-03T19:26:59.642Z"
+      "detectedAt": "2026-08-03T21:00:13.896Z"
     },
     {
       "kind": "entity",
@@ -67,7 +78,7 @@
       "link": "https://www.nrk.no/sport/haugesund-med-sterk-borteseier-_-tok-tilbake-tabelltoppen-1.17977948",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-03T19:26:59.642Z"
+      "detectedAt": "2026-08-03T21:00:13.896Z"
     },
     {
       "kind": "entity",
@@ -78,7 +89,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/03/they-are-terrified-como-spark-row-with-fans-over-controversial-new-stadium-policy",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-03T19:26:59.642Z"
+      "detectedAt": "2026-08-03T21:00:13.896Z"
     },
     {
       "kind": "entity",
@@ -89,40 +100,42 @@
       "link": "https://www.nrk.no/sport/lillestrom-slapp-store-navn-i-europacup-trekningen-1.17977430",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-03T19:26:59.642Z"
+      "detectedAt": "2026-08-03T21:00:13.896Z"
     },
     {
-      "kind": "entity",
-      "entity": "Vuelta a España",
+      "kind": "tracked-claim",
+      "entity": "Kristoffer Reitan",
+      "group": "athletes",
+      "sport": "golf",
       "type": "missing",
       "imminent": false,
-      "headline": "Unstoppable? The five biggest challenges that Tadej Pogačar will face at this year's Vuelta a España",
-      "link": "https://www.cyclingnews.com/pro-cycling/racing/unstoppable-the-five-biggest-challenges-that-tadej-pogacar-will-face-at-this-years-vuelta-a-espana/",
-      "feed": "cyclingnews",
-      "matchCount": 3,
-      "detectedAt": "2026-08-03T19:26:59.642Z"
+      "claimedDate": null,
+      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
+      "trackedId": "kristoffer-reitan",
+      "detectedAt": "2026-08-03T21:00:14.858Z"
     },
     {
-      "kind": "entity",
-      "entity": "Vuelta",
+      "kind": "tracked-claim",
+      "entity": "Kristoffer Ventura",
+      "group": "athletes",
+      "sport": "golf",
       "type": "missing",
       "imminent": false,
-      "headline": "Unstoppable? The five biggest challenges that Tadej Pogačar will face at this year's Vuelta a España",
-      "link": "https://www.cyclingnews.com/pro-cycling/racing/unstoppable-the-five-biggest-challenges-that-tadej-pogacar-will-face-at-this-years-vuelta-a-espana/",
-      "feed": "cyclingnews",
-      "matchCount": 3,
-      "detectedAt": "2026-08-03T19:26:59.642Z"
+      "claimedDate": null,
+      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
+      "trackedId": "kristoffer-ventura",
+      "detectedAt": "2026-08-03T21:00:14.858Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 93 consecutive run(s) — no fresh fetch in 8 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 93,
+      "detail": "docs/data/esports.json has been served from retention for 94 consecutive run(s) — no fresh fetch in 8 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 94,
       "staleDays": 8,
       "severity": "high",
-      "detectedAt": "2026-08-03T19:27:00.626Z"
+      "detectedAt": "2026-08-03T21:00:14.910Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
