@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-03T07:50:00Z",
+  "lastUpdated": "2026-08-03T11:50:00Z",
   "lastUpdatedBy": "research-agent",
   "version": 2,
   "leagues": [
@@ -266,23 +266,6 @@
   ],
   "tournaments": [
     {
-      "id": "tour-of-denmark-2026",
-      "name": "PostNord Tour of Denmark 2026 (Uno-X Mobility)",
-      "sport": "cycling",
-      "reason": "Uno-X Mobility (alwaysTrack.teams) sitt NESTE etappeløp etter Tour de France — dekker «Uno-X og norske ryttere» og next-fixture-prinsippet (en fulgt entitet skal ha sin neste kjente kamp på tavla). PostNord Danmark Rundt (UCI 2.Pro, 5 etapper, 29. juli–2. august, etappe 1 Aalborg). Uno-X bekreftet på lagets offisielle 2026-kalender; datoer bekreftet mot offisiell terminliste + UCI (uavhengig fact-checket 17. juli). OPPDATERT 23. juli: etappe 1s STARTTID NÅ OFFISIELT PUBLISERT — nøytralisert start 13.25 CEST, offisiell start 13.40 CEST (11.40 UTC); tavla-event flyttet 12.00→11.40 UTC og oppgradert medium→high (dato/rute/tid nå bekreftet av 2+ autoritative kilder: løpets egen etappeside postnorddanmarkrundt.dk/etape-1 + digitalt.tv, oppå verify-bekreftelsen 23. juli mot cykelkalenderen.dk + dr.dk). NORSK KRINGKASTER NÅ BEKREFTET 28. juli (sykkel-scout, første konkrete 2026-listing etter ukevis med ærlig tom): HBO Max Norges egen sykkel-side (hbomax.com/no/no/sports/cycling) lister «Danmark rundt: 1.–5. etappe» datert 29. juli–2. aug 2026 — Eurosport-feeden via HBO Max' Sport-tillegg. streaming NÅ FYLT på tavla (HBO Max (Sport), deep url sykkel-siden) → løser det gjentatte tomme-streaming-hullet; verify re-bekrefter rett før start. Stage race, ikke en klassiker → ikke i neverTrack.",
-      "addedAt": "2026-07-17T10:15:00Z",
-      "addedBy": "research-agent",
-      "evidence": [
-        "interests.json#alwaysTrack.teams",
-        "https://postnorddanmarkrundt.dk",
-        "https://postnorddanmarkrundt.dk/etape-1/",
-        "https://www.unoxteam.com/news/our-race-calendar-for-2026",
-        "https://www.hbomax.com/no/no/sports/cycling"
-      ],
-      "expires": "2026-08-03T23:59:59Z",
-      "priority": "medium"
-    },
-    {
       "id": "arctic-race-of-norway-2026",
       "name": "Arctic Race of Norway 2026 (Uno-X Mobility)",
       "sport": "cycling",
@@ -380,23 +363,6 @@
       "priority": "medium"
     },
     {
-      "id": "blast-bounty-summer-2026",
-      "name": "BLAST Bounty Summer 2026 (Season 2) – LAN-finale (Malta)",
-      "sport": "esports",
-      "reason": "Valve tier-1 (S-tier) CS2-LAN i Attard, Malta 30. juli–2. aug ($740k, 8 lag, single-elim Bo3, finale Bo5) med SEKS katalog-entiteter i feltet (Team Spirit, FaZe Clan, Team Liquid, Astralis, MOUZ, The MongolZ; øvrige to = 3DMAX + paiN Gaming) → åpner esports-entity-gaten. LAGT TIL 30. juli etter coverage-critics HIGH imminent-eskalering (deep): hele arrangementet manglet på tavla fordi den statiske esports-fetcheren er stale-retained (esports.json servert fra retention 45 kjøringer / 3 dager — død Liquipedia-henting, FLAGGET for self-repair). ALLE FIRE KVARTFINALENE nå på tavla som ai-research-events (high), tidene bekreftet mot Liquipedia + HLTV + uavhengig write-time fact-check mot blast.tv (alle enige, Malta = CEST/UTC+2): (1) Team Liquid–Team Spirit tor. 30. juli 13.00 UTC (15.00 CEST), (2) 3DMAX–MOUZ tor. 30. juli 16.00 UTC (18.00 CEST), (3) FaZe Clan–The MongolZ fre. 31. juli 12.30 UTC (14.30 CEST), (4) paiN Gaming–Astralis fre. 31. juli 15.30 UTC (17.30 CEST). OPPDATERT 2026-07-31T07:20Z: SEMIFINALER + GRAND FINAL NÅ BOARDET (klimakset som coverage-critic ESKALERTE deep, high imminent, audit 06:35Z). To semifinaler lør. 1. aug — SF1 kl. 10.30 UTC (12.30 CEST, Bo3) + SF2 kl. 13.30 UTC (15.30 CEST, Bo3) — og GRAND FINAL Bo5 søn. 2. aug kl. 10.30 UTC (12.30 CEST) er lagt til som ai-research-events (medium: tid/format two-source bekreftet — Strafe + Gamereactor + uavhengig write-time fact-check enige — men LAGENE er fortsatt TBD, avgjøres av dagens QF-er + BLAST-draften; Team Spirit + MOUZ alt klare til semi). VIKTIG KORREKSJON av tidligere kjøringers hold-begrunnelse: påstanden om at et TBD-lag-event ville droppes av build-events isCovered (esports entity-gated) var FEIL — turneringsnavnet «BLAST Bounty Summer 2026» inneholder «BLAST» = alias for katalog-turneringen «BLAST Premier», så eventet passerer coverage-gaten på turneringen alene (empirisk verifisert mot makeCoverageGate denne kjøringen). Klimakset skal derfor på det katalog-brede server-brettet nå, med generisk semifinale-/finale-tittel; verify/neste kjøring navngir lagene når draften er satt. 100 Thieves (rain) er IKKE i dette arrangementet (tapte tidligere runde) → korrekt fravær for eier-linsen; server-brettet har de øvrige katalog-lagene (per-bruker-linsen filtrerer). Gratis på BLAST.tv/Twitch (blastpremier)/Kick — ingen norsk kringkaster (jf. cs2-sources-skillen). VEDVARENDE (self-repair): den statiske esports-fetcheren er stale-retained 60 kjøringer / 5 dager (død Liquipedia-henting) — CS2-klimakset måtte håndfylles nettopp fordi fetcheren er død. OPPDATERT 2026-07-31T17:55Z (CS2-scout, sekundærkilder — Liquipedia/HLTV 403 Cloudflare): KVARTFINALENE avgjort — QF1 Team Spirit slo Team Liquid 2–0, QF2 MOUZ slo 3DMAX 2–1, QF3 FaZe Clan slo The MongolZ 2–1 (gamereactor/hotspawn/escorenews, 2+ enige); QF4 paiN Gaming–Astralis fortsatt LIVE/uavgjort ved kjøretid (~18:00 UTC). De tre semifinale-/finale-eventenes summary AMENDERT (eventsAmended: 3): FaZe nå navngitt som tredje klare semifinalist (Spirit + MOUZ + FaZe), siste plass = paiN/Astralis-vinneren + BLAST-draften. LAGENE i semifinale 1/2 fortsatt TBD (draften settes FØRST etter alle fire QF-ene) → generiske titler beholdt, verify navngir etter draften. OPPDATERT 2026-07-31T21:30Z (research, sekundærkilder — HLTV/Liquipedia/strafe-news 403): ALLE FIRE KVARTFINALER NÅ AVGJORT — QF4 Astralis slo paiN Gaming 2–1 (to kilder enige: strafe-kampsidens sluttspill-tabell «Astralis (2-1)» + esports.gg-guiden). De fire semifinalistene er dermed Team Spirit, MOUZ, FaZe Clan og Astralis. De tre klimaks-eventenes summary AMENDERT (eventsAmended: 3) til å navngi alle fire semifinalistene med QF-resultat. LAGENE i SF1/SF2 fortsatt TBD: semifinale-mini-draften settes fredag kveld, og draftresultatet var IKKE publisert/indeksert ved kjøretid (~21.30 UTC) → generiske titler beholdt (manglende oppsett > oppdiktet), verify/neste kjøring navngir SF-parene når draften er kjent. OPPDATERT 2026-08-01T17:20Z (research, kveldskjøring): SEMIFINALENE FERDIG (spilt i dag lør. 1. aug). SF1 (10.30 UTC): TEAM SPIRIT slo FaZe Clan 2–1 (Dust2 6–13, Cache 13–9, Anubis 11–13). SF2 (13.30 UTC): MOUZ slo Astralis (MOUZ videre — to-kilde-bekreftet mot HLTV live-updates + søk; eksakt kartscore ikke pålitelig indeksert ved skriving, utelatt). GRAND FINAL er dermed TEAM SPIRIT – MOUZ, søn. 2. aug 10.30 UTC (12.30 CEST, Bo5). De tre klimaks-eventene AMENDERT (eventsAmended: 3): SF1 + SF2 med resultat, Grand Final navngir nå finalistene (tittel + homeTeam/awayTeam satt Team Spirit/MOUZ, TBD-hullet lukket) + HLTV live-updates/hotspawn lagt til evidence. Liquipedia/HLTV direkte-fetch fortsatt 403 Cloudflare → sekundærkilder brukt (hotspawn, fpshub, HLTV live-updates via søk). OPPDATERT 2026-08-02T17:20Z: GRAND FINAL FERDIG — MOUZ slo Team Spirit 3–1 og VANT BLAST Bounty S2 (Malta LAN). Bekreftet mot to uavhengige kilder (HLTV «MOUZ subdue Spirit to win BLAST Bounty S2» + talkEsport). MOUZ sin første tittel siden PGL Cluj-Napoca ~17 mnd tidligere (PR tilbake i laget). Grand-final-eventets summary AMENDERT med resultatet (eventsAmended). Arrangementet er nå komplett; entry utløper 3. aug og prunes neste kjøring.",
-      "addedAt": "2026-07-30T06:46:00Z",
-      "addedBy": "research-agent",
-      "evidence": [
-        "catalog.json#tier2.teams",
-        "https://liquipedia.net/counterstrike/BLAST/Bounty/2026/Summer",
-        "https://www.hltv.org/news/45203/blast-bounty-season-2-finals-quarter-finals-set",
-        "https://blast.tv/cs/tournaments/bounty-2026-season-2",
-        "https://www.hltv.org/news/45226/mouz-subdue-spirit-to-win-blast-bounty-s2"
-      ],
-      "expires": "2026-08-03T23:59:59Z",
-      "priority": "high"
-    },
-    {
       "id": "em-friidrett-2026",
       "name": "EM friidrett 2026 (Birmingham)",
       "sport": "athletics",
@@ -475,22 +441,6 @@
         "https://www.hbomax.com/no/no/sports/cycling"
       ],
       "expires": "2026-08-10T23:59:59Z",
-      "priority": "medium"
-    },
-    {
-      "id": "rocket-classic-2026",
-      "name": "Rocket Classic 2026 (PGA Tour)",
-      "sport": "golf",
-      "reason": "Golf er tier1 (dekkes wholesale) — en pågående PGA Tour-uke er kjernedekning på det katalog-brede brettet (per-bruker-linsen filtrerer). LAGT TIL 28. juli etter coverage-critics medium-gap-flagg: golf-tavla var tom mellom 3M Open (t.o.m. 26. juli) og Wyndham Championship (6.–9. aug), mens Rocket Classic pågår i imminent-vinduet (30. juli–2. aug, Detroit Golf Club, Michigan, $10M — årets siste utgave, Rocket Companies fornyer ikke). Datoer + felt uavhengig write-time fact-checket mot golfnewsnet + golfchannel/pgatour + HBO Max (2+ kilder enige) → ai-research-event (medium; eksakt tee-tid settes onsdag). NORSK VINKEL: Kristoffer Ventura BEKREFTET i startfeltet (to uavhengige feltlister + pgatour) → navngitt i norwegianPlayers, løser Ventura-«ikke satt opp ennå» (se kristoffer-ventura). Hovland og Reitan er IKKE i feltet. Norsk visning HBO Max (Sport)/Eurosport (WBD dekker vanlige PGA-eventer 2026, IKKE Viaplay).",
-      "addedAt": "2026-07-28T10:50:00Z",
-      "addedBy": "research-agent",
-      "evidence": [
-        "catalog.json#tier1",
-        "https://thegolfnewsnet.com/golfnewsnetteam/2026/07/26/2026-rocket-classic-field-pga-tour-players-rankings-144124/",
-        "https://www.golfchannel.com/pga-tour/news/rocket-classic-2026-full-field-for-detroit-golf-club",
-        "https://www.hbomax.com/no/no/sports/pga-tour"
-      ],
-      "expires": "2026-08-03T23:59:59Z",
       "priority": "medium"
     },
     {

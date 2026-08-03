@@ -2137,6 +2137,63 @@
     ]
   },
   {
+    "sport": "football",
+    "tournament": "UEFA Conference League 2026/27 (kvalifisering)",
+    "title": "Brann – Apollon Limassol",
+    "time": "2026-08-05T17:00:00Z",
+    "endTime": null,
+    "venue": "Brann Stadion, Bergen",
+    "norwegian": true,
+    "homeTeam": "Brann",
+    "awayTeam": "Apollon Limassol",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no/video/399959/brann-apollon-limassol",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-02T10:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.apollon.com.cy/en/brann-await-apollon-in-the-third-qualifying-round/",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Conference_League",
+      "https://www.vg.no/sport/i/Gx68VQ/brann-slo-universitatea-cluj-og-er-klare-for-tredje-kvalifiseringsrunde-i-conference-league",
+      "https://www.fotmob.com/nb/teams/8003/overview/apollon-limassol"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.apollon.com.cy/en/brann-await-apollon-in-the-third-qualifying-round/",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-03T08:51:34Z",
+        "note": "DATO RE-KORRIGERT 2026-08-03: forstekampen i Bergen er ONSDAG 5. august (ikke torsdag 6.), returkampen tirsdag 11. august. Apollon FCs egen kampside viser 5. + 11. aug, og transfermarkt/forebet/FoxSports/Sofascore er samstemt paa 05.08.2026. Wikipedias 6. august er RUNDENS generelle vindu (3. kvalikrunde 6.+13.), men UEFA fordeler enkeltoppgjor paa onsdag/torsdag og dette oppgjoret ligger paa onsdag. Den forrige verify-runden flippet feilaktig 5 til 6 paa rundevinduet; retter tilbake mot den kampspesifikke primaerkilden (klubben selv). Avspark 19.00 CEST (17.00 UTC) er aggregator-anslag - uefa.com utilgjengelig (403), sa klokkeslettet holdes provisorisk."
+      },
+      "streaming": {
+        "sourceId": "vg",
+        "url": "https://tv.vg.no/video/399959/brann-apollon-limassol",
+        "basis": "official",
+        "retrievedAt": "2026-08-03T08:51:34Z",
+        "note": "VGTV har egen programside for kampen (Conference League-kval: Brann - Apollon Limassol, tv.vg.no/video/399959) - dyplenket. Norske klubbers tidlige europakvalik-kamper har ofte egne fri-sublisenser (norwegian-rights: f.eks. VG TV), selv om Viaplay holder UECL samlet. VG+ Sport bekreftet."
+      }
+    },
+    "summary": "Brann tar imot kypriotiske Apollon Limassol til forstekamp i 3. kvalifiseringsrunde av Conference League, hjemme paa Brann Stadion i Bergen.\n\nAvspark onsdag 5. august, ca. 19.00 CEST (17.00 UTC - aggregat-anslag, ikke offisielt UEFA-publisert enna). Datoen er rettet tilbake til 5. aug: Apollon FCs egen kampside samt transfermarkt, forebet og FoxSports er samstemt om onsdag 5. + retur tirsdag 11. august.\n\nBrann slo Universitatea Cluj sammenlagt 5-3 i 2. runde. Norsk visning: VG+ Sport (VGTV har egen kampside).",
+    "homeTeamEntityId": "brann-conference-league-qualifying",
+    "id": "fe13888e090b",
+    "verificationStatus": "amended",
+    "verifiedAt": "2026-08-03T08:51:34Z",
+    "verificationSources": [
+      "https://www.apollon.com.cy/en/brann-await-apollon-in-the-third-qualifying-round/",
+      "https://tv.vg.no/video/399959/brann-apollon-limassol",
+      "https://www.foxsports.com/soccer/europa-conference-league-sk-brann-vs-apollon-aug-05-2026-game-boxscore-938929",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Conference_League_qualifying_phase_and_play-off_round"
+    ]
+  },
+  {
     "sport": "cycling",
     "tournament": "Tour de France Femmes 2026",
     "title": "Etappe 6 (kupert): Montbrison – Tournon-sur-Rhône",
@@ -2245,63 +2302,6 @@
         "note": "migrert mekanisk fra evidence (WP-242)"
       }
     }
-  },
-  {
-    "sport": "football",
-    "tournament": "UEFA Conference League 2026/27 (kvalifisering)",
-    "title": "Brann – Apollon Limassol",
-    "time": "2026-08-05T17:00:00Z",
-    "endTime": null,
-    "venue": "Brann Stadion, Bergen",
-    "norwegian": true,
-    "homeTeam": "Brann",
-    "awayTeam": "Apollon Limassol",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://tv.vg.no/video/399959/brann-apollon-limassol",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-02T10:20:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://www.apollon.com.cy/en/brann-await-apollon-in-the-third-qualifying-round/",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Conference_League",
-      "https://www.vg.no/sport/i/Gx68VQ/brann-slo-universitatea-cluj-og-er-klare-for-tredje-kvalifiseringsrunde-i-conference-league",
-      "https://www.fotmob.com/nb/teams/8003/overview/apollon-limassol"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.apollon.com.cy/en/brann-await-apollon-in-the-third-qualifying-round/",
-        "basis": "secondary",
-        "retrievedAt": "2026-08-03T08:51:34Z",
-        "note": "DATO RE-KORRIGERT 2026-08-03: forstekampen i Bergen er ONSDAG 5. august (ikke torsdag 6.), returkampen tirsdag 11. august. Apollon FCs egen kampside viser 5. + 11. aug, og transfermarkt/forebet/FoxSports/Sofascore er samstemt paa 05.08.2026. Wikipedias 6. august er RUNDENS generelle vindu (3. kvalikrunde 6.+13.), men UEFA fordeler enkeltoppgjor paa onsdag/torsdag og dette oppgjoret ligger paa onsdag. Den forrige verify-runden flippet feilaktig 5 til 6 paa rundevinduet; retter tilbake mot den kampspesifikke primaerkilden (klubben selv). Avspark 19.00 CEST (17.00 UTC) er aggregator-anslag - uefa.com utilgjengelig (403), sa klokkeslettet holdes provisorisk."
-      },
-      "streaming": {
-        "sourceId": "vg",
-        "url": "https://tv.vg.no/video/399959/brann-apollon-limassol",
-        "basis": "official",
-        "retrievedAt": "2026-08-03T08:51:34Z",
-        "note": "VGTV har egen programside for kampen (Conference League-kval: Brann - Apollon Limassol, tv.vg.no/video/399959) - dyplenket. Norske klubbers tidlige europakvalik-kamper har ofte egne fri-sublisenser (norwegian-rights: f.eks. VG TV), selv om Viaplay holder UECL samlet. VG+ Sport bekreftet."
-      }
-    },
-    "summary": "Brann tar imot kypriotiske Apollon Limassol til forstekamp i 3. kvalifiseringsrunde av Conference League, hjemme paa Brann Stadion i Bergen.\n\nAvspark onsdag 5. august, ca. 19.00 CEST (17.00 UTC - aggregat-anslag, ikke offisielt UEFA-publisert enna). Datoen er rettet tilbake til 5. aug: Apollon FCs egen kampside samt transfermarkt, forebet og FoxSports er samstemt om onsdag 5. + retur tirsdag 11. august.\n\nBrann slo Universitatea Cluj sammenlagt 5-3 i 2. runde. Norsk visning: VG+ Sport (VGTV har egen kampside).",
-    "homeTeamEntityId": "brann-conference-league-qualifying",
-    "id": "22c06ad5fddd",
-    "verificationStatus": "amended",
-    "verifiedAt": "2026-08-03T08:51:34Z",
-    "verificationSources": [
-      "https://www.apollon.com.cy/en/brann-await-apollon-in-the-third-qualifying-round/",
-      "https://tv.vg.no/video/399959/brann-apollon-limassol",
-      "https://www.foxsports.com/soccer/europa-conference-league-sk-brann-vs-apollon-aug-05-2026-game-boxscore-938929",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Conference_League_qualifying_phase_and_play-off_round"
-    ]
   },
   {
     "sport": "cycling",

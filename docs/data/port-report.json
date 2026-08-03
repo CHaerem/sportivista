@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T08:26:26.757Z",
+  "generatedAt": "2026-08-03T12:20:24.670Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -25,7 +25,7 @@
       "medium": 3,
       "low": 0
     },
-    "oldestGapAgeDays": 0.07,
+    "oldestGapAgeDays": 0.24,
     "escalatable": 0,
     "catalogMatched": 3,
     "auditedAt": "2026-08-03T06:40:00Z",
@@ -33,35 +33,35 @@
       {
         "interest": "Tennis — US Open 2026 (Grand Slam, Flushing Meadows, Casper Ruud)",
         "severity": "medium",
-        "ageDays": 0.07,
+        "ageDays": 0.24,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Golf — Tour Championship 2026 (FedExCup-finalen, East Lake, Viktor Hovland)",
         "severity": "medium",
-        "ageDays": 0.07,
+        "ageDays": 0.24,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Fotball — Barcelona i La Liga-åpningen (Elche borte 23. aug)",
         "severity": "medium",
-        "ageDays": 0.07,
+        "ageDays": 0.24,
         "recurrences": 0,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.17,
-    "nearTermChecked": 6,
+    "nearTermRate": 0.07,
+    "nearTermChecked": 14,
     "nearTermAmended": 1,
-    "verifyRunAt": "2026-08-02T07:55:00Z",
+    "verifyRunAt": "2026-08-03T08:54:23Z",
     "windowRate": 0,
-    "windowChecks": 65,
+    "windowChecks": 76,
     "windowAmendments": 0,
-    "windowCorrections": 6,
+    "windowCorrections": 8,
     "byDay": [
       {
         "date": "2026-07-21",
@@ -139,28 +139,43 @@
         "amendments": 0,
         "corrections": 1,
         "rate": 0
+      },
+      {
+        "date": "2026-08-03",
+        "checks": 11,
+        "amendments": 0,
+        "corrections": 2,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-03T08:26:22.681Z",
+    "buildCheckedAt": "2026-08-03T12:20:19.977Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-03T07:03:20.684Z",
-    "manifestAgeHours": 1.39,
+    "manifestGeneratedAt": "2026-08-03T08:26:28.136Z",
+    "manifestAgeHours": 3.9,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-07-26T15:02:01.492Z",
-        "ageHours": 185.41
+        "ageHours": 189.31
+      },
+      {
+        "file": "tennis.json",
+        "sourceLastUpdated": "2026-08-02T07:30:21.538Z",
+        "ageHours": 28.83
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-08-02T07:55:00Z",
-    "verifyAgeHours": 24.52,
-    "corrections": 0,
+    "checkedAt": "2026-08-03T08:54:23Z",
+    "verifyAgeHours": 3.43,
+    "corrections": 2,
     "unresolved": 0,
-    "signals": []
+    "signals": [
+      "WP-95: Katrine Aalerud (startnr 131, GC-kaptein) og Susanne Andersen (132) bekreftet aktive paa offisiell TDF Femmes-startliste (Uno-X Mobility) - ingen brud…",
+      "Wyndham Championship (6.-9. aug, Sedgefield CC): bekreftet mot turneringens egen side + PGA Tour. HBO Max/Eurosport (WBD, ordinaer PGA Tour) stemmer med rett…"
+    ]
   }
 }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-03T08:26:27.928Z",
-  "gapCount": 4,
+  "generatedAt": "2026-08-03T12:20:27.936Z",
+  "gapCount": 7,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -12,29 +12,29 @@
       "link": "https://www.theguardian.com/football/2026/aug/03/football-transfer-rumours-atletico-grealish-tottenham-osimhen-gakpo",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-03T08:26:26.996Z"
+      "detectedAt": "2026-08-03T12:20:24.913Z"
     },
     {
       "kind": "entity",
       "entity": "Liverpool",
       "type": "missing",
       "imminent": false,
-      "headline": "Isak erklærer seg 100 prosent frisk – Liverpool ga bort 2-0-ledelse",
-      "link": "https://www.nrk.no/sport/isak-erklaerer-seg-100-prosent-frisk-_-liverpool-ga-bort-2-0-ledelse-1.17977027",
-      "feed": "nrk-sport",
+      "headline": "Worn in the USA: Liverpool’s pre-season tour had highs but exposed glaring gaps in the squad | Andy Hunter",
+      "link": "https://www.theguardian.com/football/2026/aug/03/liverpool-pre-season-usa-tour-exposed-squad-gaps",
+      "feed": "guardian-football",
       "matchCount": 2,
-      "detectedAt": "2026-08-03T08:26:26.996Z"
+      "detectedAt": "2026-08-03T12:20:24.913Z"
     },
     {
       "kind": "entity",
       "entity": "Premier League",
       "type": "missing",
       "imminent": false,
-      "headline": "Isak erklærer seg 100 prosent frisk – Liverpool ga bort 2-0-ledelse",
-      "link": "https://www.nrk.no/sport/isak-erklaerer-seg-100-prosent-frisk-_-liverpool-ga-bort-2-0-ledelse-1.17977027",
-      "feed": "nrk-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-08-03T08:26:26.996Z"
+      "headline": "‘It’s my time’: Christos Tzolis fighting fit for Arsenal on return to England",
+      "link": "https://www.theguardian.com/football/2026/aug/03/christos-tzolis-arsenal-premier-league-club-brugge",
+      "feed": "guardian-football",
+      "matchCount": 3,
+      "detectedAt": "2026-08-03T12:20:24.913Z"
     },
     {
       "kind": "entity",
@@ -45,18 +45,51 @@
       "link": "https://www.nrk.no/sport/kongsvinger-tapte-_-stabaek-pa-tabelltopp-1.17976826",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-03T08:26:26.996Z"
+      "detectedAt": "2026-08-03T12:20:24.913Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Europaligaen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Lillestrøm slapp store navn i Europacup-trekningen",
+      "link": "https://www.nrk.no/sport/lillestrom-slapp-store-navn-i-europacup-trekningen-1.17977430",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-03T12:20:24.913Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Vuelta a España",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Pogacar vil inn på eksklusiv liste – gjør Vuelta-comeback",
+      "link": "https://www.nrk.no/sport/pogacar-vil-inn-pa-eksklusiv-liste-_-gjor-vuelta-comeback-1.17977231",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-03T12:20:24.913Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Vuelta",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Pogacar vil inn på eksklusiv liste – gjør Vuelta-comeback",
+      "link": "https://www.nrk.no/sport/pogacar-vil-inn-pa-eksklusiv-liste-_-gjor-vuelta-comeback-1.17977231",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-03T12:20:24.913Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 89 consecutive run(s) — no fresh fetch in 7 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 89,
+      "detail": "docs/data/esports.json has been served from retention for 90 consecutive run(s) — no fresh fetch in 7 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 90,
       "staleDays": 7,
       "severity": "high",
-      "detectedAt": "2026-08-03T08:26:27.734Z"
+      "detectedAt": "2026-08-03T12:20:25.863Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
