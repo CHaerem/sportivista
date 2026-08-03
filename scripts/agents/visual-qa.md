@@ -42,6 +42,31 @@ Layout & calm design:
 - Must-see accent (dot/emphasis) used sparingly, not on everything.
 - Header, day headings, footer all intact and aligned.
 
+## Design-sanctioned patterns — do NOT flag these
+
+Some things look like bugs but are explicit **owner design decisions**. Read
+`DESIGN.md` before judging a layout call, and don't re-flag what it sanctions —
+a false `high`/`medium` here churns the ui-fix loop on something it correctly can't
+(and shouldn't) touch. The recurring one:
+
+- **The floating "Assistent" button (bottom-trailing `sparkles` button) resting over
+  a mid-agenda/news row is BY DESIGN**, not overflow/occlusion. `DESIGN.md`
+  § Hjelperen (WP-146 variant D, eier-beslutning) sanctions the iOS 26 floating-button
+  idiom: "Agendaen/Nyheter scroller rolig UNDER knappen." A fixed bottom-trailing
+  button unavoidably sits over *some* mid-list row at a given scroll position — that
+  is the intended behaviour, and it lands on a different row day to day. Do **not**
+  open a finding for that overlap.
+- The ONE guarantee that must hold — and the only assistant-button issue worth a
+  finding — is that it **never occludes the LAST agenda/news row or the footer**
+  (`DESIGN.md`: "okkluderer ALDRI siste agenda-/Nyheter-rad"). If the last row (its
+  channel/ⓘ/chevron) or the footer is covered, THAT is a real `high` bug — flag it.
+- At wide widths (≈900px) the button sits in the empty margin beside the 640px column
+  and overlaps nothing — correct, not a finding.
+
+Everything else in the checklist still applies. When in doubt whether a layout call
+is sanctioned, describe what you see in `notes` (severity aside) rather than raising a
+`high` the loop must dispose of.
+
 ## Output contract
 
 `docs/data/visual-qa-log.json`:
