@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-03T07:03:19.460Z",
+  "generatedAt": "2026-08-03T08:26:26.757Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "red",
+    "coverage": "yellow",
     "amendRate": "green",
     "silentStops": "yellow",
     "participantStatus": "green"
@@ -21,33 +21,33 @@
   "coverage": {
     "openGaps": 3,
     "bySeverity": {
-      "high": 1,
-      "medium": 2,
+      "high": 0,
+      "medium": 3,
       "low": 0
     },
-    "oldestGapAgeDays": 2.02,
+    "oldestGapAgeDays": 0.07,
     "escalatable": 0,
     "catalogMatched": 3,
-    "auditedAt": "2026-08-02T06:40:00Z",
+    "auditedAt": "2026-08-03T06:40:00Z",
     "gaps": [
       {
-        "interest": "Fotball — Brann i Conference League-kvalifiseringen (3. runde, mot Apollon Limassol)",
-        "severity": "high",
-        "ageDays": 2.02,
-        "recurrences": 1,
-        "catalogMatched": true
-      },
-      {
-        "interest": "Friidrett — Weltklasse Zürich (Diamond League, 27. aug)",
+        "interest": "Tennis — US Open 2026 (Grand Slam, Flushing Meadows, Casper Ruud)",
         "severity": "medium",
-        "ageDays": 1.02,
+        "ageDays": 0.07,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
-        "interest": "Tennis — Cincinnati Open (ATP/WTA Masters 1000, 13.–23. aug, Casper Ruud)",
+        "interest": "Golf — Tour Championship 2026 (FedExCup-finalen, East Lake, Viktor Hovland)",
         "severity": "medium",
-        "ageDays": 1.02,
+        "ageDays": 0.07,
+        "recurrences": 0,
+        "catalogMatched": true
+      },
+      {
+        "interest": "Fotball — Barcelona i La Liga-åpningen (Elche borte 23. aug)",
+        "severity": "medium",
+        "ageDays": 0.07,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -59,17 +59,10 @@
     "nearTermAmended": 1,
     "verifyRunAt": "2026-08-02T07:55:00Z",
     "windowRate": 0,
-    "windowChecks": 69,
+    "windowChecks": 65,
     "windowAmendments": 0,
     "windowCorrections": 6,
     "byDay": [
-      {
-        "date": "2026-07-20",
-        "checks": 4,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-07-21",
         "checks": 5,
@@ -151,21 +144,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-03T07:03:12.977Z",
+    "buildCheckedAt": "2026-08-03T08:26:22.681Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-03T04:09:33.982Z",
-    "manifestAgeHours": 2.9,
+    "manifestGeneratedAt": "2026-08-03T07:03:20.684Z",
+    "manifestAgeHours": 1.39,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-07-26T15:02:01.492Z",
-        "ageHours": 184.02
+        "ageHours": 185.41
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-02T07:55:00Z",
-    "verifyAgeHours": 23.14,
+    "verifyAgeHours": 24.52,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
