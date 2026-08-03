@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T15:42:29.195Z",
+  "generatedAt": "2026-08-03T17:48:57.601Z",
   "gapCount": 4,
   "anomalyCount": 1,
   "gaps": [
@@ -12,7 +12,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/03/football-transfer-rumours-atletico-grealish-tottenham-osimhen-gakpo",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-03T15:42:28.385Z"
+      "detectedAt": "2026-08-03T17:48:56.670Z"
     },
     {
       "kind": "entity",
@@ -23,18 +23,18 @@
       "link": "https://www.theguardian.com/football/2026/aug/03/liverpool-pre-season-usa-tour-exposed-squad-gaps",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-03T15:42:28.385Z"
+      "detectedAt": "2026-08-03T17:48:56.670Z"
     },
     {
       "kind": "entity",
       "entity": "Premier League",
       "type": "missing",
       "imminent": false,
-      "headline": "‘It’s my time’: Christos Tzolis fighting fit for Arsenal on return to England",
-      "link": "https://www.theguardian.com/football/2026/aug/03/christos-tzolis-arsenal-premier-league-club-brugge",
+      "headline": "Newcastle reject first bid from Arsenal for captain Bruno Guimarães",
+      "link": "https://www.theguardian.com/football/2026/aug/03/premier-league-transfer-newcastle-reject-first-bid-arsenal-bruno-guimaraes",
       "feed": "guardian-football",
-      "matchCount": 2,
-      "detectedAt": "2026-08-03T15:42:28.385Z"
+      "matchCount": 3,
+      "detectedAt": "2026-08-03T17:48:56.670Z"
     },
     {
       "kind": "entity",
@@ -45,18 +45,18 @@
       "link": "https://www.theguardian.com/football/2026/aug/03/they-are-terrified-como-spark-row-with-fans-over-controversial-new-stadium-policy",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-03T15:42:28.385Z"
+      "detectedAt": "2026-08-03T17:48:56.670Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 91 consecutive run(s) — no fresh fetch in 8 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 91,
+      "detail": "docs/data/esports.json has been served from retention for 92 consecutive run(s) — no fresh fetch in 8 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 92,
       "staleDays": 8,
       "severity": "high",
-      "detectedAt": "2026-08-03T15:42:29.134Z"
+      "detectedAt": "2026-08-03T17:48:57.495Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
