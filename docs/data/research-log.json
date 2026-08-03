@@ -1,36 +1,30 @@
 {
-  "runAt": "2026-08-03T07:50:00Z",
+  "runAt": "2026-08-03T11:50:00Z",
   "tier": "standard",
-  "eventsAdded": 5,
+  "eventsAdded": 0,
   "eventsRemoved": 0,
   "eventsAmended": 0,
-  "trackedDelta": "trackedAdded: real-madrid (team), us-open-tennis-2026 (tournament), tour-championship-2026 (tournament). trackedAmended: la-liga-2026-27, casper-ruud, viktor-hovland (noterte de nye boardede eventene). 40 tracked-entries totalt. lastUpdated → 2026-08-03T07:50Z + ny notes[0].",
-  "trigger": "Ordinær 4-timers-slot. Coverage-audit 06:40Z fant INGEN high-hull (imminent-pass 3.–7. aug rent) men flagget TRE NYE MEDIUM horisont-hull: US Open (tennis), Tour Championship (golf), Barça–Elche + Real Madrid MD1/MD2 (La Liga-åpningen).",
-  "eventsAddedDetail": [
-    "US Open 2026 (tennis, 30. aug–13. sept, USTA Billie Jean King NTC Flushing Meadows, Ruud i norwegianPlayers) — MEDIUM. usopen.org bot-blokkert → datoer bekreftet mot Flashscore + LTA + HBO Max Norge (søndagsstart siden 2025); primærkilden ikke nådd → confidence:medium + provenance.time.basis:secondary (ærlig). Norsk visning HBO Max (Sport)/Eurosport (WBD har tre av fire Grand Slam — IKKE TV 2). Tetter coverage-critics medium horisont-hull #1 (Ruuds oppkjøring Montreal+Cincinnati var inne, selve majoren manglet).",
-    "Tour Championship (golf, 27.–30. aug, East Lake Atlanta, FedExCup-finalen topp-30, Hovland i norwegianPlayers) — HIGH. Dato/venue bekreftet mot tourchampionship.com (billettside) + Sky Sports + sportsbrackets (26. aug = pro-am, konkurranse 27.–30.). Hovland ~22. i FedExCup → ventet, feltet låses etter BMW 23. aug. HBO Max (Sport)/Eurosport. Tetter medium horisont-hull #2 (St. Jude + BMW var inne, finalen manglet).",
-    "Elche – Barcelona (La Liga, borte 23. aug 19.30 UTC, Estadio Martínez Valero) — HIGH, basis primary (fcbarcelona.com Jornada 2 + ESPN). Barças FØRSTE spilte kamp (runde-1-kampen mot Athletic utsatt til 27. aug pga. VM-semifinalister). Tetter medium horisont-hull #3.",
-    "Espanyol – Real Madrid (La Liga, borte 22. aug 19.30 UTC, RCDE Stadium) — HIGH, basis primary (realmadrid.com). Real Madrids FØRSTE spilte kamp (runde 2). Bonus-dekning: audit flagget eksplisitt at Real Madrids MD1/MD2 trolig også manglet, og Real Madrid (katalog-tier2) hadde ingen kamp på tavla.",
-    "Real Madrid – Real Sociedad (La Liga, hjemme 26. aug 19.00 UTC, Santiago Bernabéu) — HIGH, basis primary (realmadrid.com). Den utsatte hjemmeåpningen (runde 1). Alle tre La Liga-kamper TV 2 Play (TV 2 har La Liga t.o.m. 2030 — scouten snudde en tredjeparts «Viaplay»-slutning etter primærsjekk)."
-  ],
-  "fanOut": "Tre parallelle web-scouts (tennis US Open, golf Tour Championship, fotball La Liga-åpning), hver med uavhengig write-time-verifisering mot primær/offisielle kilder (Step 3.5 innebygd i scout-passet — hver kandidat cross-sjekket mot 2+ kilder med primær/offisielle sitater).",
+  "trackedDelta": "trackedRemoved: tour-of-denmark-2026, blast-bounty-summer-2026, rocket-classic-2026 (alle expiry 2026-08-03, arrangementene ferdigspilt, 0 fremtidige tavla-events — pruningen den forrige kjøringen (07:50Z) tee-et opp for «neste kjøring»). tracked-tournaments 23 → 20. Ingen nye entries; ingen eksisterende amendert. lastUpdated → 2026-08-03T11:50Z.",
+  "trigger": "Ordinær 4-timers-slot (~4t etter forrige kjøring 07:50Z, som tettet alle tre medium horisont-hull fra coverage-audit 06:40Z: US Open tennis, Tour Championship golf, Barça–Elche + Real Madrid). Denne kjøringen: verifikasjons-/reconciliation-pass — bekrefte at tavla står seg og prune ferdigspilte tracked-entries.",
+  "eventsAddedDetail": [],
+  "fanOut": "Fokusert manuell web-research på det mest volatile domenet (CS2 — den statiske esports-fetcheren er død/stale-retained i 89 kjøringer, så all 100 Thieves-dekning avhenger av research). Ingen scout-fanout for øvrig: forrige kjøring (07:50Z) dekket tennis/golf/La Liga uttømmende, og coverage-audit 06:40Z bekreftet 0 high-hull i imminent-vinduet.",
   "quality": {
     "pass": true,
-    "score": 93,
+    "score": 90,
     "failures": [
-      "Ingen hard fail. Alle 4 high-confidence events har ≥2 evidence-URLer; US Open korrekt satt til medium (usopen.org bot-blokkert). Streaming fylt på alle 5; summary↔streaming↔provenance konsistent på alle.",
-      "Minor (−5, corroboration): de to Real Madrid-eventene hviler tid-faktumet på ett domene (realmadrid.com) uten uavhengig kryssjekk, ulikt Elche–Barcelona (fcbarcelona.com + ESPN). Primær og autoritativ, men en andre kilde ville herdet det. FLAGGET for verify.",
-      "Minor: Ruud (US Open) + Hovland (Tour Championship) deltakelse er «ventet-men-ubekreftet» inntil trekning/feltlåsing — korrekt hedget i summary, verify-oppfølging."
+      "Ingen hard fail. No-op-event-kjøring: ingen nye events å legge til (alle audit-hull tettet 07:50Z; min uavhengige CS2-/imminent-/RSS-/sykkel-sjekk fant ingen nye reelle event-hull). En manglende event er bedre enn en oppdiktet — ingen 100 Thieves-kamp finnes berammet, så ingen ble skrevet.",
+      "Ingen separat grader-subagent kjørt: uten nye events er det ingen tid/streaming-fakta å uavhengig verifisere. Kvaliteten her er reconciliation-disiplin (korrekt prune, ingen churn) + honnørt no-op, egenvurdert. Fail-open, ingen revisjonsløkke."
     ],
     "revisionPasses": 0
   },
   "notes": [
-    "TILSTAND: sunn tavle. Coverage-audit 06:40Z: 0 high-hull (imminent-pass 3.–7. aug rent — europacup/Eliteserien r17/Tour de Pologne+Femmes/Wyndham/Saint Louis-sjakk inne; F1-sommerpause web-rekonfirmert korrekt tomrom t.o.m. Nederlands GP 21.–23. aug). Alle TRE nye medium horisont-hull tettet denne kjøringen + en fjerde bonus-dekning (Real Madrid).",
-    "RECONCILE (Step 1): alle catalog.tier2 + tier1-sesong dekket. Real Madrid var det ENE tier2-teamet uten tracked-entry (next-fixture-hull) — nå tettet med begge åpningskampene. Ingen utløpte tracked-entries å prune (nærmeste: blast-bounty/rocket-classic/tour-of-denmark expiry 3. aug — arrangementene ferdigspilt, prunes neste kjøring).",
-    "Horisont-scan (Step 2.6): de tre audit-hullene var kandidatene; ingen andre nye katalog-kandidater; coverage-gaps 07:03Z demand[] fraværende/0.",
-    "Ikke deep-tier registry-sweep (Step 2.8) på denne event-jobben (mandag DAGtid-sweep kjøres av deep-tier-eskalering, ikke denne standard-slotten).",
-    "STREAMING-FLAGG for verify: US Open-kanalen (HBO Max/Eurosport) kan re-derives feil av pipeline (tennis→TV 2 Play-prior for ATP) — verify bør priorConfirme HBO Max for Grand Slam (US Open ≠ ATP-touren).",
-    "VEDVARENDE (self-repair, uendret): esports.json stale-retained 88 kjøringer (død Liquipedia-fetcher — CS2 holdes manuelt) + europakvalik streaming-revert-war (durabel fiks = verify priorConfirmed + self-repair norwegian-rights.js).",
-    "validate-events.js: 87 events, 0 errors (forventede WP-246 weak-basis + landing-page + chess timezone-bleed warnings)."
+    "TILSTAND: sunn tavle. Forrige kjøring 07:50Z tettet alle tre medium horisont-hull (US Open 30. aug, Tour Championship 27.–30. aug, Barça–Elche 23. aug + Real Madrid MD1/MD2). validate-events: 87 events, 0 errors (kun forventede WP-246 landing-page + WP-242 weak-basis + chess timezone-bleed warnings).",
+    "STEP 1 RECONCILE: alle catalog.tier2 + tier1-sesong dekket. Pruned de tre expiry-2026-08-03-entries (Tour of Denmark, BLAST Bounty S2, Rocket Classic) — arrangementene ferdigspilt (BLAST Bounty-finalen 2. aug MOUZ 3–1 Spirit; Tour of Denmark + Rocket Classic avsluttet), 0 fremtidige tavla-events. Ingen andre utløpte. tracked-tournaments 23 → 20.",
+    "CS2 (uavhengig web-research, høyest verdi pga. død fetcher): (a) 100 Thieves har INGEN berammet kamp etter 26. juli (9.-plass BLAST Bounty S2) — bekreftet mot HLTV/Liquipedia-treff + bo3/ggscore. Korrekt fravær (jf. audit); INGEN kamp oppdiktet. (b) Esports World Cup 2026 CS2 (12.–23. aug, flyttet Riyadh→Paris, Accor Arena, 28 bekreftede lag) er på tavla — 100 Thieves er IKKE blant de 28 (bekreftet mot egamersworld + esportsworldcup.com), så EWC-eventet bærer korrekt ingen rain/100T; per-bruker-linsen filtrerer for øvrige katalog-lag. (c) IEM Cologne Major 2026 (CS2 Major) allerede AVSLUTTET (2.–21. juni, Falcons vant) — ingen kommende Major å boarde.",
+    "IMMINENT-SJEKK (3.–7. aug): godt dekket — Bodø/Glimt CL-kvalik borte 4. aug (TV 2 Play, verify-confirmed), Brann–Apollon hjemme 6. aug (VG+ Sport), Tour de France Femmes etapper (umbrella + daglige), Tour de Pologne 3.–9. aug (multi-dags umbrella-event, korrekt på tavla — startet 3. aug 08:05, løper t.o.m. 9. aug), Wyndham Championship 6. aug, Eliteserien r17 + OBOS Lyn. F1 sommerpause (neste Nederlands GP 21.–23. aug) = korrekt tomt.",
+    "RSS (siste 24t) triagert: kun overgangs-/treningskamp-/tabellstøy (Man City-rykter, Liverpool 2–0-tap i Chicago-treningskamp, PL/1.divisjon-tabellnyheter, Ventura falt av mot slutten) — ingen reelle nye event-hull. coverage-gaps.json 08:26Z: 4 entity-gaps alle nyhetsstøy; 1 anomaly (esports stale-retained 89 kjøringer, high) = REELL men self-repair-territorium (død Liquipedia-fetcher), IKKE et research-hull.",
+    "STEP 2.6 horisont-scan: ingen nye katalog-kandidater utover det forrige kjøring alt promoterte; coverage-gaps demand[] fraværende. Ingen catalog.json-endring denne kjøringen.",
+    "Ikke deep-tier registry-sweep (Step 2.8) — standard tier.",
+    "VEDVARENDE (self-repair, uendret): esports.json stale-retained 89 kjøringer / 7 dager (død Liquipedia-henting — CS2 holdes manuelt av research) + europakvalik streaming-revert-war (Glimt hjemme = Direktesport/Avisa Nordland, Brann = VG+ Sport; durabel fiks = verify priorConfirmed + self-repair norwegian-rights.js/PLATFORM_SOURCE_TOKENS)."
   ]
 }
