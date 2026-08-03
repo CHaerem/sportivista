@@ -1,76 +1,77 @@
 {
-  "auditedAt": "2026-08-02T06:40:00Z",
+  "auditedAt": "2026-08-03T06:40:00Z",
   "horizonDays": 28,
   "gaps": [
     {
-      "interest": "Fotball — Brann i Conference League-kvalifiseringen (3. runde, mot Apollon Limassol)",
-      "whatsMissing": "Kampene er PÅ tavla, men med FEIL DATO. Tavla har «Brann – Apollon Limassol» 5. aug (hjemme) og «Apollon Limassol – Brann» 11. aug (borte). De faktiske UEFA-datoene for 3. kvalifiseringsrunde er 6. + 13. august: førstekamp hjemme på Brann Stadion i Bergen torsdag 6. aug kl. 19.00 CEST (17.00 UTC), returkamp i Limassol torsdag 13. aug. Klokkeslettet på tavla (17.00 UTC) er RIKTIG — det er DATOEN som er én dag for tidlig på hjemmekampen og to dager for tidlig på returen. Research bør flytte hjemmekampen fra 5. → 6. aug og returen fra 11. → 13. aug, og bekrefte norsk visning (Viaplay har UEFAs klubbturneringsrettigheter t.o.m. 2031 — TV 2 nevnt i forrige audit var feil; Viaplay er korrekt, jf. Brann–Cluj-kampene som allerede ligger inne med Viaplay).",
-      "why": "Imminent (hjemmekampen ~4 dager ut) OG viktig (norsk katalog-storklubb i europacup, hjemmekamp i Bergen) OG to-kilde-bekreftet feil: Apollon FCs egen kampside og UEFA fastslår begge kampene til 6. + 13. aug, ikke 5. + 11. Et event med feil dato er verre enn et manglende event: en bruker som sjekker tavla 6. aug tror kampen var i går. Forrige kjøring eskalerte dette som HELT MANGLENDE (recall-seier — research la det inn), men det landet på de ANSLÅTTE 5.+11.-datoene («ett norsk oppsett antyder 5.+11.»), ikke de faktiske UEFA-datoene. Samme interesse, fortsatt ikke riktig på tavla → recurrences 1. Eskalert (deep) for korrigering.",
+      "interest": "Tennis — US Open 2026 (Grand Slam, Flushing Meadows, Casper Ruud)",
+      "whatsMissing": "US Open (årets siste Grand Slam, USTA Billie Jean King National Tennis Center, Flushing Meadows, New York) mangler helt på tavla. Hovedtrekningen (single) starter søndag 30. aug og varer t.o.m. 13. sept; kvalifisering/Fan Week fra 23. aug. Tavla har Casper Ruuds oppkjøring inne (National Bank Open Montreal 1.–13. aug + Cincinnati Open 13.–23. aug), men IKKE selve majoren som følger rett etter — asymmetrien er et konkret hull. Research bør legge inn US Open 2026 (start 30. aug) med norsk visning Max / Eurosport (WBD har tre av fire Grand Slam i Norge — AO, Roland-Garros, US Open) og bekrefte Ruuds deltakelse etter Cincinnati.",
+      "why": "Horisont-hull (~27 dager til hovedtrekning, akkurat innenfor 28-dagers horisonten) → ikke imminent, men en Grand Slam er sjelden nok og viktig nok at et fravær er en tydelig recall-svikt. To-kilde-bekreftet: usopen.org/broadcast-partners + LTA/US Open-guider samstemmer om hovedtrekning 30. aug–13. sept. Ruud (katalog-tier2) og US Open Tennis (katalog-turnering) → skal på tavla. NY denne kjøringen (recurrences 0).",
       "corroboration": [
-        "https://www.apollon.com.cy/en/brann-await-apollon-in-the-third-qualifying-round/",
-        "https://www.uefa.com/uefaconferenceleague/news/02a7-211a532e4696-3c0037cb8ac0-1000--uefa-conference-league-third-qualifying-round-draw/",
-        "http://law5-theref.blogspot.com/2026/08/202627-uefa-europa-conference-league.html"
+        "https://www.usopen.org/en_US/about/tv_intl.html",
+        "https://www.lta.org.uk/fan-zone/grand-slam/us-open/",
+        "https://www.allente.no/tv-guide-old/tv-rettigheter-i-norge/"
       ],
-      "suggestedSource": "https://www.apollon.com.cy/en/brann-await-apollon-in-the-third-qualifying-round/",
-      "severity": "high",
-      "firstSeen": "2026-08-01T06:35:00Z",
-      "recurrences": 1
-    },
-    {
-      "interest": "Friidrett — Weltklasse Zürich (Diamond League, 27. aug)",
-      "whatsMissing": "Weltklasse Zürich (Diamond League, Letzigrund, 27. aug — offisielt 26. aug byfest på hovedstasjonen + 27. aug stevne på Letzigrund) mangler på tavla. Tavla har Diamond League Lausanne (21. aug) og Silesia (23. aug) inne, men IKKE Zürich 27. aug — nest siste DL-stevne før DL-finalen i Brussel 4.–5. sept. Friidrett er tier1 (dekkes wholesale) og Wanda Diamond League er en katalog-turnering, så stevnet skal på tavla. Research bør legge inn Weltklasse Zürich 27. aug med sendetid/streaming når startlistene settes (norsk visning friidrett = typisk NRK/TV 2 avhengig av rettigheter — verifiser).",
-      "why": "Horisont-hull (~25 dager ut), ikke imminent → medium. To-kilde-bekreftet (diamondleague.com/worldathletics-kalenderen + Weltklasse Zürichs egen side): DL-kalenderen 2026 har Lausanne 21. aug, Silesia 23. aug, Zürich 27. aug. Asymmetrien (Lausanne+Silesia inne, Zürich ute) er et konkret dekningshull i en katalog-turnering. NY denne kjøringen (recurrences 0).",
-      "corroboration": [
-        "https://www.diamondleague.com/calendar/",
-        "https://www.weltklassezuerich.ch/en/news/wanda-diamond-league-season-calendar-confirmed-for-2026/",
-        "https://worldathletics.org/competitions/diamond-league/news/diamond-league-calendar-2026"
-      ],
-      "suggestedSource": "https://zurich.diamondleague.com/en/",
+      "suggestedSource": "https://www.usopen.org/en_US/index.html",
       "severity": "medium",
-      "firstSeen": "2026-08-02T06:40:00Z",
+      "firstSeen": "2026-08-03T06:40:00Z",
       "recurrences": 0
     },
     {
-      "interest": "Tennis — Cincinnati Open (ATP/WTA Masters 1000, 13.–23. aug, Casper Ruud)",
-      "whatsMissing": "Cincinnati Open (Lindner Family Tennis Center, Mason, Ohio; ATP/WTA 1000; hovedtrekning 13.–23. aug, kval fra 11. aug) mangler på tavla. Casper Ruud (katalog-tier2) er påmeldt både i single og double (med Andre Göransson). Tavla har Ruuds pågående National Bank Open i Montreal (1.–13. aug) inne, men ikke det påfølgende Masters 1000-arrangementet i Cincinnati — Ruuds neste turnering og siste store oppkjøring før US Open. Cincinnati Open er en katalog-turnering (tier2 tournaments, tennis) og Ruud en katalog-spiller, så arrangementet skal på tavla. Research bør legge inn Cincinnati Open 13.–23. aug med norsk visning (TV 2 Play har ATP-rettighetene i Norge t.o.m. 2026) og bekrefte Ruuds deltakelse etter Montreal.",
-      "why": "Horisont-hull (~11 dager til hovedtrekning), ikke imminent → medium. To-kilde-bekreftet (Wikipedia 2026 Cincinnati Open + cincinnatiopen.com): 13.–23. aug, Masters 1000, Ruud påmeldt. Neste turnering for en katalog-spiller etter et arrangement som ALLEREDE er på tavla (Montreal), så asymmetrien er et konkret dekningshull. NY denne kjøringen (recurrences 0).",
+      "interest": "Golf — Tour Championship 2026 (FedExCup-finalen, East Lake, Viktor Hovland)",
+      "whatsMissing": "Tour Championship (FedExCup-sluttspill #3 / finalen, East Lake Golf Club, Atlanta, 27.–30. aug — topp 30 i FedExCup, 72 hulls slagspill, vinneren blir FedExCup-mester) mangler på tavla. Tavla har de to FØRSTE sluttspill-eventene inne (FedEx St. Jude Championship 13.–16. aug + BMW Championship 20. aug), men IKKE finalen — en klar asymmetri i en katalog-turnering (FedExCup Playoffs). Viktor Hovland (katalog-tier2) er en sannsynlig topp-30-kvalifisert. Research bør legge inn Tour Championship 27.–30. aug med norsk visning (HBO Max / Eurosport, WBD dekker PGA Tour i Norge) og bekrefte Hovlands kvalifisering etter St. Jude/BMW.",
+      "why": "Horisont-hull (~24–27 dager ut) → ikke imminent → medium. To-kilde-bekreftet: eastlakegolfclub.com + Sky Sports / sportsbrackets PGA-2026-kalender samstemmer om 27.–30. aug (topp 30). Den tredje og avgjørende sluttspill-uken mangler mens de to første er inne — konkret dekningshull, ikke støy. NY denne kjøringen (recurrences 0).",
       "corroboration": [
-        "https://en.wikipedia.org/wiki/2026_Cincinnati_Open",
-        "https://cincinnatiopen.com/news/cincinnati-open-releases-2026-schedule/"
+        "https://eastlakegolfclub.com/tour-championship/",
+        "https://www.skysports.com/golf/news/12232/13415204/pga-tour-2026-schedule-dates-venues-events-for-the-new-fedexcup-season-signature-events-and-golf-majors"
       ],
-      "suggestedSource": "https://cincinnatiopen.com/tournament/tournament-schedule/",
+      "suggestedSource": "https://www.pgatour.com/fedexcup/overview",
       "severity": "medium",
-      "firstSeen": "2026-08-02T06:40:00Z",
+      "firstSeen": "2026-08-03T06:40:00Z",
+      "recurrences": 0
+    },
+    {
+      "interest": "Fotball — Barcelona i La Liga-åpningen (Elche borte 23. aug)",
+      "whatsMissing": "Barcelonas FØRSTE La Liga-kamp 2026/27 — borte mot Elche på Martínez Valero søndag 23. aug (avspark 21.30 CEST) — mangler på tavla. Tavla har Barcelonas ANDRE kamp inne (Barcelona – Athletic Club, hjemme 27. aug), men ikke åpningskampen 23. aug. La Liga 2026/27 startet 15. aug; Barça spiller en uke forskjøvet (VM-deltakere). Bredere: hele La Liga-åpningen (runde 1–2, 15.–24. aug) og Real Madrids åpningskamper mangler trolig også — tavla har KUN Barça–Athletic fra La Liga. Research bør legge inn Barça–Elche 23. aug (+ Real Madrids MD1/MD2) med norsk visning (Viaplay har La Liga i Norge) og sjekke om La Liga-åpningsrundene generelt bør inn.",
+      "why": "Horisont-hull (~20 dager ut) → ikke imminent → medium. To-kilde-bekreftet: fcbarcelona.com (klubbens egen terminliste — «first game in the competition» borte mot Elche, hjemmedebut mot Athletic 27. aug) + OneFootball (La Liga-kalender 2026/27 bekreftet, start 15. aug). Barcelona (katalog-tier2) og La Liga (katalog-turnering) → åpningskampen skal på tavla. Asymmetrien (2. kamp inne, 1. kamp ute) er et konkret hull. NY denne kjøringen (recurrences 0).",
+      "corroboration": [
+        "https://www.fcbarcelona.com/en/football/first-team/news/4535372/kick-off-dates-and-times-for-first-three-liga-gameweeks-confirmed",
+        "https://onefootball.com/en/news/laliga-2026-27-calendar-confirmed-season-starts-15-august-clasico-25-october-43170707"
+      ],
+      "suggestedSource": "https://www.fcbarcelona.com/en/football/first-team/schedule",
+      "severity": "medium",
+      "firstSeen": "2026-08-03T06:40:00Z",
       "recurrences": 0
     }
   ],
   "sourceIssues": [
     {
       "source": "Statisk esports-fetcher (docs/data/esports.json, Liquipedia CS2)",
-      "issue": "VEDVARENDE (uendret siden 30. juli): esports.json serveres nå fra retention i 75 sammenhengende kjøringer / 6 dager (coverage-gaps.json 2026-08-01T22:46Z, consecutiveRetains 75, staleDays 6, filen inneholder kun 'BLAST Bounty Summer Qual'). retainLastGood re-skriver siste gode fil, så filen ser fersk ut mens Liquipedia-hentingen produserer null. Symptomet skjules på tavla fordi ai-research holder CS2 til stede (BLAST Bounty-finalen + Esports World Cup CS2). En fetcher som har sluttet å produsere er ødelagt uansett om brettet skjuler det. TIL SELF-REPAIR: kjør esports-fetcheren, finn ut hvorfor Liquipedia-hentingen kommer tom tilbake (Accept-Encoding gzip-krav? Liquipedia:Matches-endring? rate-limit/User-Agent?), og gjenopprett den.",
-      "impact": "CS2-dekning avhenger nå fullt av at research fyller manuelt. Trenden er økende (54 retains 30. juli → 63 retains 1. aug → 75 retains 2. aug) — fetcheren kommer ikke tilbake av seg selv.",
+      "issue": "VEDVARENDE og ØKENDE: esports.json serveres nå fra retention i 87 sammenhengende kjøringer / 7 dager (coverage-gaps.json 2026-08-03T04:09Z, consecutiveRetains 87, staleDays 7 — opp fra 75/6 dager 2. aug, 63 retains 1. aug, 54 retains 30. juli). retainLastGood re-skriver siste gode fil (kun 'BLAST Bounty Summer Qual'), så filen ser fersk ut mens Liquipedia-hentingen produserer null. Symptomet skjules på tavla fordi ai-research holder CS2 til stede (BLAST Bounty-finalen ferdigspilt, Esports World Cup CS2 12. aug inne). En fetcher som har sluttet å produsere er ødelagt uansett om brettet skjuler det. TIL SELF-REPAIR: kjør esports-fetcheren, finn ut hvorfor Liquipedia-hentingen kommer tom tilbake (Accept-Encoding gzip-krav? Liquipedia:Matches-endring? rate-limit/User-Agent?), og gjenopprett den.",
+      "impact": "CS2-dekning avhenger nå fullt av at research fyller manuelt. Trenden er entydig økende (54 → 63 → 75 → 87 retains over fire kjøringer) — fetcheren kommer ikke tilbake av seg selv.",
       "severity": "high"
     }
   ],
   "coveredWell": [
-    "F1 — ESPN-BLINDSONE (source-quirks-mandat) web-rekonfirmert: sommerpause etter Ungarns GP (26. juli), neste = Nederlands GP 21.–23. aug (på tavla som sprintkval 21. aug + sprint 22. aug + kval 22. aug + race 23. aug). Formula1.com bekrefter sprint-helg. Tom F1-tavla i imminent-vinduet (2.–6. aug) = KORREKT fravær, ikke ESPN-mis-datering.",
-    "CS2 BLAST Bounty Summer 2026 Malta LAN — Grand Final på tavla: Team Spirit – MOUZ (søn. 2. aug 10.30 UTC, Bo5) via ai-research. Forrige auditens semifinaler er ferdigspilt; finalen er korrekt oppdatert.",
-    "Fotball europacup — Bodø/Glimt CL-kvalik mot Union Saint-Gilloise korrekt inne (borte 4. aug + hjemme 11. aug). UEFA Super Cup 12. aug inne. Brann–Apollon er inne men med feil dato (se gaps — HIGH).",
-    "Fotball Eliteserien runde 16 (2. aug) statisk på tavla (Molde–Sarpsborg 08, Brann–Rosenborg, Aalesund–Tromsø, KFUM–Kristiansund); OBOS Lyn (Sogndal 2. aug, Stabæk 8. aug, Odd 15. aug, Åsane 26. aug, Kongsvinger 30. aug).",
-    "Sykkel — Tour de France Femmes 2026 (etappe 2–9, 2.–9. aug) på tavla; Tour de Pologne 3.–9. aug (Uno-X); Arctic Race of Norway 13.–16. aug; Vuelta a España fra 22. aug — alle inne. (Clásica San Sebastián 1. aug ferdigspilt, Evenepoel vant.)",
-    "Golf — Rocket Classic (t.o.m. 2. aug, Ventura i tetstrid) statisk inne; Wyndham Championship 6.–9. aug; FedEx St. Jude Championship (sluttspill #1) 13.–16. aug (Hovland); BMW Championship (sluttspill #2) 20. aug — forrige auditens medium gap er nå LØST og inne. Danish Golf Championship 13. aug.",
-    "Tennis — Casper Ruud i National Bank Open (Montreal, ATP Masters 1000, 1.–13. aug) inne. (Cincinnati Open 13.–23. aug mangler — se gaps, medium.)",
-    "Sjakk — Saint Louis Rapid & Blitz 2. aug + Sinquefield Cup 8. aug + Esports World Cup-sjakk (Carlsen, 11. aug) inne.",
-    "Friidrett — EM Birmingham 10.–16. aug + Diamond League Lausanne 21. aug + Silesia 23. aug inne. (Weltklasse Zürich 27. aug mangler — se gaps, medium.)"
+    "POSITIVT — Brann–Apollon Limassol (Conference League 3. kvalik) DATOENE KORRIGERT: forrige auditens HIGH-gap (tavla hadde feil 5.+11. aug) er nå rettet — tavla viser «Brann – Apollon Limassol» hjemme 6. aug 17.00 UTC + «Apollon Limassol – Brann» borte 13. aug 17.00 UTC, som er de faktiske UEFA-datoene. Escalation→research-loopen leverte presisjonen som gjensto.",
+    "POSITIVT — begge forrige medium-gap nå inne: Weltklasse Zürich (Diamond League, 27. aug) på tavla; Cincinnati Open (ATP/WTA 1000, 13.–23. aug, Ruud) på tavla.",
+    "F1 — ESPN-BLINDSONE (source-quirks-mandat) web-rekonfirmert: sommerpause etter Ungarns GP (26. juli); neste = Nederlands GP 21.–23. aug (sprinthelg), på tavla som sprintkval 21. aug + sprint 22. aug + kval 22. aug + race 23. aug. Tom F1-tavla i imminent-vinduet (3.–7. aug) = KORREKT fravær, ikke ESPN-mis-datering.",
+    "Fotball europacup — Bodø/Glimt CL-kvalik mot Union Saint-Gilloise (borte 4. aug + hjemme 11. aug) inne; UEFA Super Cup PSG–Aston Villa 12. aug inne; Premier League-åpning 16. aug (Arsenal–Man City) inne.",
+    "Fotball Eliteserien runde 17 (7.–9. aug: Sandefjord–KFUM, Vålerenga–Bodø/Glimt, Viking–Sarpsborg, Start–Fredrikstad, Lillestrøm–Rosenborg, HamKam–Aalesund, Kristiansund–Molde) inne; OBOS Lyn (Stabæk 8. aug, Odd 15. aug, Åsane 26. aug, Kongsvinger 30. aug) inne.",
+    "Sykkel — Tour de France Femmes 2026 (etapper t.o.m. 9. aug) på tavla; Tour de Pologne 3.–9. aug (Uno-X); Arctic Race of Norway 13.–16. aug; Vuelta a España fra 22. aug — alle inne.",
+    "Golf — Wyndham Championship 6.–9. aug + FedEx St. Jude Championship (sluttspill #1) 13.–16. aug (Hovland) + BMW Championship (sluttspill #2) 20. aug inne. (Tour Championship/finalen 27.–30. aug mangler — se gaps, medium.)",
+    "Sjakk — Saint Louis Rapid & Blitz (pågår) + Sinquefield Cup 8. aug + Esports World Cup-sjakk (Carlsen) 11. aug inne.",
+    "Friidrett — EM Birmingham 10.–16. aug + Diamond League Lausanne 21. aug + Silesia 23. aug + Weltklasse Zürich 27. aug inne.",
+    "Tennis — Casper Ruud i National Bank Open (Montreal) + Cincinnati Open (13.–23. aug) inne. (US Open fra 30. aug mangler — se gaps, medium.)"
   ],
-  "escalated": true,
+  "escalated": false,
   "notes": [
-    "Kjøring 2026-08-02 ~06:40Z (recall-audit). IMMINENT-PASS (2.–6. aug) kjørt først: én HIGH funnet — men denne gangen et FEIL-event, ikke et manglende: Brann–Apollon Limassol (Conference League 3. kvalik-runde) ligger på tavla med FEIL DATO (5.+11. aug), mens faktiske UEFA-datoer er 6.+13. aug (Apollon FC + UEFA). ESKALERT (deep) via escalate.request → research korrigerer datoene.",
-    "POSITIV ENDRING: begge gap fra 1. august-auditen er adressert på tavla — Brann–Apollon (var HELT MANGLENDE, eskalert deep → nå inne, men med feil dato, se over) og BMW Championship (var medium → nå inne). Escalation- + research-loopen leverte på eksistens; presisjonen på Brann-datoen gjenstår.",
-    "NY HORISONT MEDIUM #1: Friidrett Weltklasse Zürich (Diamond League, 27. aug, Letzigrund) mangler mens Lausanne (21. aug) + Silesia (23. aug) er inne. DL-kalenderen 2026: Lausanne 21 → Silesia 23 → Zürich 27 → DL-finale Brussel 4.–5. sept.",
-    "NY HORISONT MEDIUM #2: Tennis Cincinnati Open (Masters 1000, 13.–23. aug, Ruud påmeldt single+double) mangler mens Montreal (1.–13. aug) er inne. Ruuds neste turnering etter Montreal.",
-    "SJEKKET, KORREKT FRAVÆR (ikke hull): ingen Diamond League-stevne i imminent-vinduet (2.–9. aug) — neste DL er Lausanne 21. aug (korrekt tomrom etter Monaco/London i juli). Vinteridretter (av-sesong juli/aug); håndball (av-sesong, REMA 1000-ligaen ~sept.); Premier League starter først 16.–23. aug (katalog-storklubbene Arsenal/Liverpool/Man City er inne på åpningsrunden). 100 Thieves/rain ute av BLAST Bounty Malta LAN → korrekt fravær.",
-    "MEKANISKE COVERAGE-GAPS (coverage-gaps.json 2026-08-01T22:46Z: 4 entity-gaps, 1 anomaly) TRIAGERT: alle fire entity-gaps (Manchester City, Liverpool, Premier League, «The Open») er ren overgangs-/nyhetsstøy fra NRK/Guardian (City-debut-tap i treningskamp; Iraola/Liverpool-artikkel som også falskt matcher «Premier League» og «The Open») — ikke reelle event-hull; PL-åpningen er allerede inne. Den ENE anomalien (esports stale-retained, 75 retains, high) er REELL → sourceIssue over.",
-    "ÉN VEDVARENDE SOURCEISSUE: esports.json stale-retained (75 kjøringer, død Liquipedia-fetcher, økende trend). Skjules på tavla av ai-research, men fetcheren er ødelagt og hører til self-repair."
+    "Kjøring 2026-08-03 ~06:40Z (recall-audit). IMMINENT-PASS (3.–7. aug) kjørt først: INGEN HIGH funnet — tavla er godt dekket i det nære vinduet (europacup, Eliteserien r17, Tour de Pologne/Femmes, Wyndham, Saint Louis-sjakk). F1-blindsonen web-rekonfirmert som korrekt tomrom (sommerpause). Ingen eskalering denne kjøringen.",
+    "STOR POSITIV ENDRING: alle tre gap fra 2. august-auditen er nå adressert på tavla — Brann–Apollon-datoene KORRIGERT (var HIGH, 5.+11.→6.+13. aug), Weltklasse Zürich inne (var medium), Cincinnati Open inne (var medium). Escalation-/research-loopen leverte fullt ut.",
+    "NY HORISONT MEDIUM #1: Tennis US Open 2026 (Grand Slam, hovedtrekning 30. aug) mangler helt mens Ruuds oppkjøring (Montreal + Cincinnati) er inne. Årets siste major — usopen.org + LTA bekrefter 30. aug–13. sept; norsk visning Max/Eurosport (WBD, tre av fire slam).",
+    "NY HORISONT MEDIUM #2: Golf Tour Championship (FedExCup-finalen, 27.–30. aug, East Lake) mangler mens St. Jude (13. aug) + BMW (20. aug) er inne — den tredje/avgjørende sluttspill-uken. East Lake GC + Sky Sports PGA-2026-kalender bekrefter 27.–30. aug, topp 30, Hovland sannsynlig kvalifisert.",
+    "NY HORISONT MEDIUM #3: Fotball Barcelona–Elche (La Liga-åpning, borte 23. aug) mangler mens Barça–Athletic (hjemme 27. aug) er inne. La Liga startet 15. aug; fcbarcelona.com + OneFootball bekrefter Barças forskjøvne åpning (Elche 23. aug først, Athletic 27. aug hjemmedebut). Bredere flagg: Real Madrids MD1/MD2 + hele La Liga-åpningsrunden (15.–24. aug) mangler trolig også — tavla har kun Barça–Athletic fra La Liga; research bør vurdere om åpningsrundene generelt skal inn.",
+    "SJEKKET, KORREKT FRAVÆR (ikke hull): F1 sommerpause (neste Nederlands GP 21.–23. aug inne); vinteridretter (av-sesong juli/aug); håndball (av-sesong, REMA 1000-ligaen ~sept.); ingen Diamond League i imminent-vinduet (neste Lausanne 21. aug); 100 Thieves/rain uten berammet turnering etter BLAST Bounty Malta + StarSeries-utslag → korrekt fravær i CS2.",
+    "MEKANISKE COVERAGE-GAPS (coverage-gaps.json 2026-08-03T04:09Z: 4 entity-gaps, 1 anomaly) TRIAGERT: alle fire entity-gaps (Liverpool treningskamp-tap Chicago, «Premier League»/«1. divisjon»/«La Liga» overgangs- og tabellnyheter fra Guardian/NRK) er ren nyhets-/overgangsstøy — ikke reelle event-hull; PL-åpningen (16. aug) er allerede inne. Den ENE anomalien (esports stale-retained, 87 retains, high) er REELL → sourceIssue over. (La Liga-treffet i mekanikken er nyhetsstøy; det ekte La Liga-hullet — Barças åpningskamp — er funnet uavhengig i horisont-passet, se gaps.)",
+    "ÉN VEDVARENDE SOURCEISSUE: esports.json stale-retained (87 kjøringer, død Liquipedia-fetcher, entydig økende trend 54→63→75→87). Skjules på tavla av ai-research, men fetcheren er ødelagt og hører til self-repair — ikke et research-hull."
   ]
 }
