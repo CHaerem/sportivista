@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T07:36:39.074Z",
+  "generatedAt": "2026-08-04T10:35:33.114Z",
   "windowDays": 14,
   "ports": {
     "coverage": "green",
@@ -32,22 +32,15 @@
     "gaps": []
   },
   "amendRate": {
-    "nearTermRate": 0.07,
-    "nearTermChecked": 14,
-    "nearTermAmended": 1,
-    "verifyRunAt": "2026-08-03T08:54:23Z",
+    "nearTermRate": 0,
+    "nearTermChecked": 9,
+    "nearTermAmended": 0,
+    "verifyRunAt": "2026-08-04T08:00:15Z",
     "windowRate": 0,
-    "windowChecks": 76,
+    "windowChecks": 77,
     "windowAmendments": 0,
-    "windowCorrections": 8,
+    "windowCorrections": 6,
     "byDay": [
-      {
-        "date": "2026-07-21",
-        "checks": 5,
-        "amendments": 0,
-        "corrections": 2,
-        "rate": 0
-      },
       {
         "date": "2026-07-22",
         "checks": 5,
@@ -124,41 +117,47 @@
         "amendments": 0,
         "corrections": 2,
         "rate": 0
+      },
+      {
+        "date": "2026-08-04",
+        "checks": 6,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-04T07:36:33.548Z",
+    "buildCheckedAt": "2026-08-04T10:35:28.041Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-04T06:30:47.311Z",
-    "manifestAgeHours": 1.1,
+    "manifestGeneratedAt": "2026-08-04T07:36:40.604Z",
+    "manifestAgeHours": 2.98,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-07-26T15:02:01.492Z",
-        "ageHours": 208.58
+        "ageHours": 211.56
       },
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-08-02T21:33:16.590Z",
-        "ageHours": 34.06
+        "ageHours": 37.04
       },
       {
         "file": "tennis.json",
         "sourceLastUpdated": "2026-08-02T07:30:21.538Z",
-        "ageHours": 48.1
+        "ageHours": 51.09
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-08-03T08:54:23Z",
-    "verifyAgeHours": 22.7,
-    "corrections": 2,
+    "checkedAt": "2026-08-04T08:00:15Z",
+    "verifyAgeHours": 2.59,
+    "corrections": 1,
     "unresolved": 0,
     "signals": [
-      "WP-95: Katrine Aalerud (startnr 131, GC-kaptein) og Susanne Andersen (132) bekreftet aktive paa offisiell TDF Femmes-startliste (Uno-X Mobility) - ingen brud…",
-      "Wyndham Championship (6.-9. aug, Sedgefield CC): bekreftet mot turneringens egen side + PGA Tour. HBO Max/Eurosport (WBD, ordinaer PGA Tour) stemmer med rett…"
+      "WP-95 deltakelsessjekk paa paagaaende fleretappelop: TDF Femmes - Katrine Aalerud aktiv (29. sammenlagt, +2:47), Susanne Andersen ingen forfall funnet; Tour …"
     ]
   }
 }
