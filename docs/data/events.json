@@ -2046,8 +2046,13 @@
     "norwegianPlayers": [],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
+        "platform": "Direktesport / Avisa Nordland",
+        "url": "https://www.direktesport.no",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "VG+ Sport",
+        "url": "https://www.vg.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -2059,9 +2064,11 @@
       "https://www.nrk.no/sport/kamptidspunktene-klare-for-glimts-mesterliga-kvalifisering-1.17966026",
       "https://www.nrk.no/sport/bodo_glimt-moter-union-saint-gilloise-i-champions-league-kvalifiseringen-1.17963550",
       "https://www.foxsports.com/articles/soccer/champions-league-qualifying-pairs-bodoglimt-with-union-saintgilloise-in-clash-of-overachievers",
-      "https://www.glimt.no/nyheter/slik-spilles-kampene-mot-union-saint-gilloise"
+      "https://www.glimt.no/nyheter/slik-spilles-kampene-mot-union-saint-gilloise",
+      "https://www.an.no/an-sender-glimts-champions-league-kvalik-direkte/s/5-4-2415558",
+      "https://www.fotball-pa-tv.com/kamp/union-saint-gilloise-mot-bodo-glimt-2026-08-04"
     ],
-    "summary": "Bodø/Glimt åpner mesterliga-kvalifiseringen (3. runde) borte mot belgiske Union Saint-Gilloise.\n\nAvspark tirsdag 4. august kl. 20.00 CEST (18.00 UTC) – kamptidspunktene ble bekreftet 22. juli. Union spiller europacup-hjemmekampene borte fra egen bane (Stade Joseph Marien holder ikke UEFA-standard) – kampen er flyttet til KVDO Arena i Oostende, ikke Brussel (bekreftet på Glimts egen kampside glimt.no).\n\nReturkampen spilles hjemme på Aspmyra 11. august. Norsk visning: TV 2 Play (TV 2 har Champions League-rettighetene i Norge t.o.m. 2026/27).",
+    "summary": "Bodø/Glimt åpner mesterliga-kvalifiseringen (3. runde) borte mot belgiske Union Saint-Gilloise.\n\nAvspark tirsdag 4. august kl. 20.00 CEST (18.00 UTC) – kamptidspunktene ble bekreftet 22. juli. Union spiller europacup-hjemmekampene borte fra egen bane (Stade Joseph Marien holder ikke UEFA-standard) – kampen er flyttet til KVDO Arena i Oostende, ikke Brussel (bekreftet på Glimts egen kampside glimt.no).\n\nReturkampen spilles hjemme på Aspmyra 11. august. Norsk visning: Avisa Nordland / Direktesport (+ VG+ Sport) – AN bekrefter i egen sak at de sender BEGGE Glimts kvalikkamper mot Union (borte-sendingen starter 19.15); Amedia/AN i samarbeid med VG. Dette korrigerer den generiske TV 2 Play-antakelsen (TV 2 har CL-pakken, men Glimts konkrete kvalikkamper ligger hos AN/Direktesport).",
     "participants": [],
     "id": "ddccb5e09bfd",
     "awayTeamEntityId": "bodo-glimt-cl-qualifying",
@@ -2074,11 +2081,11 @@
     "verifiedAt": "2026-08-03T08:52:50Z",
     "provenance": {
       "streaming": {
-        "sourceId": "tv2",
-        "url": "https://www.tv2.no/direkte/0nr51/sportsdognet-live/6878aafe1cbaa1eef8b5e37d/viaplay-og-tv-2-inngar-felles-fotballsamarbeid",
+        "sourceId": "avisa-nordland",
+        "url": "https://www.an.no/an-sender-glimts-champions-league-kvalik-direkte/s/5-4-2415558",
         "basis": "official",
-        "retrievedAt": "2026-07-29T08:06:00Z",
-        "note": "migrert mekanisk fra evidence (WP-242)"
+        "retrievedAt": "2026-08-04T03:40:00Z",
+        "note": "AN sender BEGGE Glimts kvalikkamper mot Union (an.nos egen sak, borte 4. aug fra 19.15); Amedia/AN i samarbeid med VG → VG+ Sport. Korrigerer generisk /champions/→TV 2 Play-misderivasjon; korroborert av fotball-pa-tv (VG+). Pipeline kan re-derive TV 2 Play (revert-war) — flagget for verify priorConfirmed + self-repair."
       }
     }
   },
@@ -2918,8 +2925,13 @@
     "norwegianPlayers": [],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
+        "platform": "Direktesport / Avisa Nordland",
+        "url": "https://www.direktesport.no",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "VG+ Sport",
+        "url": "https://www.vg.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -2931,19 +2943,20 @@
       "https://www.nrk.no/sport/kamptidspunktene-klare-for-glimts-mesterliga-kvalifisering-1.17966026",
       "https://www.nrk.no/sport/bodo_glimt-moter-union-saint-gilloise-i-champions-league-kvalifiseringen-1.17963550",
       "https://www.foxsports.com/articles/soccer/champions-league-qualifying-pairs-bodoglimt-with-union-saintgilloise-in-clash-of-overachievers",
-      "https://www.an.no/an-har-sikret-seg-rettighetene-til-glimts-kvalikkamper-til-europa/s/5-4-1959255"
+      "https://www.an.no/an-har-sikret-seg-rettighetene-til-glimts-kvalikkamper-til-europa/s/5-4-1959255",
+      "https://www.an.no/an-sender-glimts-champions-league-kvalik-direkte/s/5-4-2415558"
     ],
-    "summary": "Bodø/Glimt tar imot Union Saint-Gilloise til returoppgjør i mesterliga-kvalifiseringen (3. runde) på Aspmyra.\n\nAvspark tirsdag 11. august kl. 18.00 CEST (16.00 UTC) – bekreftet 22. juli. 1. kampen spilles borte i Oostende (KVDO Arena) 4. august.\n\nNorsk visning: Avisa Nordland / Direktesport, som har rettighetene til Glimts hjemmekamper i europacup-kvalifiseringen (unntatt siste playoff-runde).",
+    "summary": "Bodø/Glimt tar imot Union Saint-Gilloise til returoppgjør i mesterliga-kvalifiseringen (3. runde) på Aspmyra.\n\nAvspark tirsdag 11. august kl. 18.00 CEST (16.00 UTC) – bekreftet 22. juli. 1. kampen spilles borte i Oostende (KVDO Arena) 4. august.\n\nNorsk visning: Avisa Nordland / Direktesport (+ VG+ Sport) – AN har rettighetene til Glimts europacup-kvalik-hjemmekamper og bekrefter i egen sak at de sender begge kampene mot Union; Amedia/AN i samarbeid med VG.",
     "participants": [],
     "id": "bc42b154bf41",
     "homeTeamEntityId": "bodo-glimt-cl-qualifying",
     "provenance": {
       "streaming": {
         "sourceId": "avisa-nordland",
-        "url": "https://www.an.no/an-har-sikret-seg-rettighetene-til-glimts-kvalikkamper-til-europa/s/5-4-1959255",
-        "basis": "secondary",
-        "retrievedAt": "2026-07-29T17:35:00Z",
-        "note": "AN/Direktesport har rettighetene til Glimts europacup-kvalik-HJEMMEkamper 2024–2026 (an.no); pipeline re-deriver feilaktig TV 2 Play via norwegian-rights /champions/ — revert-war, flagget for verify+self-repair"
+        "url": "https://www.an.no/an-sender-glimts-champions-league-kvalik-direkte/s/5-4-2415558",
+        "basis": "official",
+        "retrievedAt": "2026-08-04T03:40:00Z",
+        "note": "AN/Direktesport (+ VG+ Sport) — an.nos egen sak «sender begge Glimts kamper mot Union». Pipeline re-deriver feilaktig TV 2 Play via norwegian-rights /champions/ (revert-war) — flagget for verify priorConfirmed + self-repair."
       }
     }
   },
