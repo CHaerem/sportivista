@@ -1,12 +1,12 @@
 {
-	"runAt": "2026-08-03T12:30:00Z",
+	"runAt": "2026-08-04T09:00:00Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"visual-qa-log.json (checkedAt 2026-08-03T00:00:00Z) verdict is 'pass' with an empty findings[] at all three widths (375/393/900). Per the ui-fix 'When to act' rule 1 (verdict pass / no high|medium findings), this is a clean no-op — no PR opened, nothing to fix.",
-		"The previously recurring HIGH finding (glyph-only 'Assistent' FAB overlapping a mid-agenda row at 375/393px) is explicitly retired in this run's notes: the mid-agenda overlap is the DESIGN.md § Hjelperen (WP-146 variant D) owner decision, and the only real-bug case — the button occluding the LAST agenda/news row or the footer — does NOT occur at any checked width (last row 'EM friidrett 2026 (Birmingham)' + footer fully clear; at 900px the button sits in the empty margin beside the 640px column).",
-		"Other QA observations are all clean: full match names wrap rather than clip, every row shows a Norwegian-relevant channel or an honest '–', flags/crests render, multi-day events use date ranges, single-column layout with no horizontal scroll, header/disclosures/footer intact. The only cosmetic aside (a four-line wrap of 'Saint Louis Rapid & Blitz 2026' in the DIREKTE NÅ list at 375px) loses no text and QA deliberately did not raise it as a finding — not code-fixable without harming the calm layout.",
-		"No open ui-autofix PR exists; the only open PR is #429 (WP-242b, unrelated backend evidence work). Conservative no-op: no frontend touched, no branch, no screenshots needed."
+		"visual-qa-log.json (checkedAt 2026-08-04T00:00:00Z) verdict is 'pass' with an empty findings[] at all three widths (375/393/900). Per the ui-fix 'When to act' rule 1 (verdict pass / no high|medium findings), this is a clean no-op — no PR opened, nothing to fix.",
+		"The one recurring watch-item (the 'Assistent' FAB overlapping mid-agenda rows at 375/393px) is again NOT a bug: per DESIGN.md § Hjelperen (WP-146 variant D) the mid-agenda overlap is the sanctioned owner decision, and the only real-bug case — occluding the LAST agenda/news row or the footer — does not occur at any width (last row 'EM friidrett 2026 (Birmingham)' + footer fully clear; at 900px the button sits in the empty margin beside the 640px column).",
+		"All other QA observations clean: full match names wrap rather than clip, every row shows a Norwegian-relevant channel or an honest '–', flags/crests render, multi-day events use date ranges, single-column layout with no horizontal scroll, header/disclosures/footer intact.",
+		"No open ui-autofix PR exists (open PRs: only wp-242b-strip-lookalikes, unrelated backend evidence work). Conservative no-op: no frontend touched, no branch, no screenshots needed."
 	]
 }
