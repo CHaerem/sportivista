@@ -2925,8 +2925,13 @@
     "norwegianPlayers": [],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
+        "platform": "Direktesport / Avisa Nordland",
+        "url": "https://www.direktesport.no",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "VG+ Sport",
+        "url": "https://www.vg.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -2969,8 +2974,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
+        "platform": "VG+ Sport",
+        "url": "https://www.vg.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -4374,5 +4379,59 @@
     },
     "summary": "US Open 2026 - aarets siste Grand Slam, USTA Billie Jean King National Tennis Center i Flushing Meadows, New York (utendoers hardcourt).\n\nHovedtrekning soendag 30. august til soendag 13. september (kvalifisering/Fan Week fra 23. aug; herrefinale 13. sept). Casper Ruud ventes i hovedtrekningen etter oppkjoeringen i Montreal (1.-13. aug) og Cincinnati (13.-23. aug) - endelig paamelding/seeding ikke publisert ennaa.\n\nNorsk visning: HBO Max (Sport-tillegget) / Eurosport.",
     "id": "46c8a2ab56e5"
+  },
+  {
+    "sport": "esports",
+    "tournament": "Esports World Cup 2026 – CS2 Open Qualifier (Last Chance Qualifier)",
+    "title": "100 Thieves – EWC 2026 CS2-kvalifisering",
+    "time": "2026-08-07T08:00:00Z",
+    "endTime": "2026-08-09T21:00:00Z",
+    "venue": "Paris Expo Porte de Versailles, Paris",
+    "norwegian": false,
+    "participants": [
+      {
+        "name": "100 Thieves"
+      },
+      {
+        "name": "Eternal Fire"
+      }
+    ],
+    "norwegianPlayers": [
+      {
+        "name": "Håvard Nygaard"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "Twitch (offisiell EWC/CS2-strøm)",
+        "url": "https://www.twitch.tv/ewc",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-04T06:45:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "https://www.hltv.org/news/45231/ewc-qualifier-groups-announced-liquid-bcg-and-heroic-among-the-headliners",
+      "https://www.e4equip.com/post/road-to-ewc-2026-cs2-open-qualifier-lcq"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "hltv",
+        "url": "https://www.hltv.org/news/45231/ewc-qualifier-groups-announced-liquid-bcg-and-heroic-among-the-headliners",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-04T06:45:00Z",
+        "note": "LAN-kvalifisering (Last Chance Qualifier) til EWC 2026 CS2, 7.–9. aug, Paris Expo Porte de Versailles. 100 Thieves (rain/Håvard Nygaard) i gruppe K (Bo3, dobbel-elim; motstandere Eternal Fire, NADEGMNG, SadFamous). Deltakelse bekreftet av HLTV + e4equip. Eksakt 100T-kamptid IKKE publisert (dører 10.00 CEST/08.00 UTC = anslag åpningsdag) — verify/fetcher berammer enkeltkampen."
+      },
+      "streaming": {
+        "sourceId": "twitch",
+        "url": "https://www.twitch.tv/ewc",
+        "basis": "official",
+        "retrievedAt": "2026-08-04T06:45:00Z",
+        "note": "Gratis på offisiell EWC-Twitch-strøm i Norge — ingen norsk TV-rettighet (cs2-sources)."
+      }
+    },
+    "summary": "100 Thieves (rain/Håvard Nygaard) spiller EWCs LAN-kvalifisering (Last Chance Qualifier) i Paris 7.–9. august – de kjemper om én av de siste fire plassene til hovedturneringen (gruppespill fra 12. aug). Gruppe K, Bo3 dobbel-elim; motstandere bl.a. Eternal Fire.\n\nEksakt kamptid for 100 Thieves er ennå ikke publisert (tiden over er et anslag for åpningsdagen – verify/fetcher berammer enkeltkampen). Gratis på offisiell EWC-Twitch-strøm i Norge.",
+    "id": "90f814a29375"
   }
 ]

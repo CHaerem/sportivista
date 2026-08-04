@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-04T03:40:00Z",
+  "lastUpdated": "2026-08-04T06:50:00Z",
   "lastUpdatedBy": "research-agent",
   "version": 2,
   "leagues": [
@@ -239,13 +239,14 @@
       "id": "havard-rain-nygaard",
       "name": "Håvard «rain» Nygaard",
       "sport": "esports",
-      "reason": "alwaysTrack.athletes. Spiller for 100 Thieves (alwaysTrack.teams). SESONGEN PÅ PAUSE: 100 Thieves er UTE av begge sommer-turneringene — tapte StarLadder StarSeries Fall EU-kvalik (22.–23. juli) OG BLAST Bounty S2 R16 mot Team Spirit 1–2 (26. juli: Anubis/Mirage/decider) → kvalifiserte seg IKKE til Malta-LAN (30. juli–2. aug). Liquipedia-lagsida viser «No Upcoming Tournaments». Den mekaniske «rain imminent 30. juli»-flagget (scout-eskalering 27. juli 08:30Z) er en FALSK POSITIV fra en foreldet tracked-claim, IKKE et hull — RE-BEKREFTET denne kjøringen mot Liquipedia + HLTV. 100T er heller IKKE i EWC CS2-feltet (Paris 12.–23. aug; de 32 lagene er VRS-inviterte + kvalik, 100T ikke blant dem). INGEN dated 100T-kamp å boarde → korrekt fravær; esports.js-fetcheren/neste kjøring tar neste kamp når Liquipedia lister den (trolig en framtidig online-kvalik). Ingen event lagt til (manglende event > oppdiktet). RE-BEKREFTET 27. juli ~18Z (kveldsscout mot Liquipedia + HLTV + GosuGamers): fortsatt «No Upcoming Tournaments», ingen berammet 100T-kamp i vinduet. Den mekaniske BLAST-Bounty-tracked-claimen (imminent 30. juli) er nå PRUNET fra tracked.tournaments — den var kilden til scoutens gjentatte falsk-positive rain-eskalering (08:30Z i dag). Neste 100T-kamp (trolig en online-kvalik/invite, ofte annonsert sent på @100Thieves X <1 døgn før) tas av esports.js/neste kjøring når Liquipedia lister den.",
+      "reason": "alwaysTrack.athletes. Spiller for 100 Thieves (alwaysTrack.teams / catalog.tier2.teams). OPPDATERT 2026-08-04T06:50Z: 100 THIEVES ER TILBAKE I SPILL — de deltar i EWCs LAN-KVALIFISERING (Last Chance Qualifier / «Road to EWC», 7.–9. aug, Paris Expo Porte de Versailles), gruppe K (Bo3 dobbel-elim; motstandere Eternal Fire, NADEGMNG, SadFamous), og kjemper om én av de siste fire plassene til EWC-hovedturneringen (gruppespill fra 12. aug). Dette KORRIGERER forrige tilstand («No Upcoming Tournaments»/ingen berammet kamp) — deltakelsen er ny aktivitet siden BLAST Bounty-tapet 26. juli. Deltakelse bekreftet av HLTV (gruppetrekningen) + e4equip + uavhengig write-time fact-check. Kvalifiseringen er nå LAGT TIL på tavla som ai-research-event («100 Thieves – EWC 2026 CS2-kvalifisering», medium — eksakt 100T-kamptid ikke publisert, doerer 10.00 CEST/08.00 UTC anslag; verify/esports.js-fetcheren berammer enkeltkampen naar Liquipedia lister den). Haavard «rain» Nygaard i norwegianPlayers. Gratis paa offisiell EWC-Twitch-stroem i Norge (cs2-sources). NB: 100T er IKKE i EWC-HOVEDfeltet (de 32 er VRS-inviterte + kvalik) — de maa gaa veien om denne LCQ-en. HISTORIKK: 100T tapte StarLadder StarSeries Fall EU-kvalik (22.–23. juli) OG BLAST Bounty S2 R16 mot Team Spirit 1–2 (26. juli).",
       "addedAt": "2026-07-20T04:20:00Z",
       "addedBy": "research-agent",
       "evidence": [
         "interests.json#alwaysTrack.athletes",
-        "https://liquipedia.net/counterstrike/100_Thieves",
-        "https://www.hltv.org/matches/2396014/100-thieves-vs-spirit-blast-bounty-2026-season-2"
+        "catalog.json#tier2.athletes",
+        "https://www.hltv.org/news/45231/ewc-qualifier-groups-announced-liquid-bcg-and-heroic-among-the-headliners",
+        "https://liquipedia.net/counterstrike/100_Thieves"
       ],
       "expires": "2026-08-31T23:59:59Z",
       "priority": "medium"
