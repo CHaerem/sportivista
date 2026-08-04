@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T12:59:57.396Z",
+  "generatedAt": "2026-08-04T15:29:36.884Z",
   "gapCount": 6,
   "anomalyCount": 1,
   "gaps": [
@@ -12,7 +12,7 @@
       "link": "https://www.nrk.no/sport/real-madrid-spiss-blir-lagkamerat-med-berge-og-bobb-1.17978084",
       "feed": "nrk-sport",
       "matchCount": 2,
-      "detectedAt": "2026-08-04T12:59:56.417Z"
+      "detectedAt": "2026-08-04T15:29:35.845Z"
     },
     {
       "kind": "entity",
@@ -23,7 +23,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/04/i-cant-wait-dominik-szoboszlai-hungry-for-liverpool-reset-under-andoni-iraola",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-04T12:59:56.417Z"
+      "detectedAt": "2026-08-04T15:29:35.845Z"
     },
     {
       "kind": "entity",
@@ -34,7 +34,7 @@
       "link": "https://www.nrk.no/sport/real-madrid-spiss-blir-lagkamerat-med-berge-og-bobb-1.17978084",
       "feed": "nrk-sport",
       "matchCount": 2,
-      "detectedAt": "2026-08-04T12:59:56.417Z"
+      "detectedAt": "2026-08-04T15:29:35.845Z"
     },
     {
       "kind": "entity",
@@ -45,7 +45,7 @@
       "link": "https://www.nrk.no/sport/haugesund-med-sterk-borteseier-_-tok-tilbake-tabelltoppen-1.17977948",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-04T12:59:56.417Z"
+      "detectedAt": "2026-08-04T15:29:35.845Z"
     },
     {
       "kind": "entity",
@@ -56,7 +56,7 @@
       "link": "https://www.nrk.no/sport/orjan-haskjold-nyland-har-fatt-ny-klubb-1.17976208",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-04T12:59:56.417Z"
+      "detectedAt": "2026-08-04T15:29:35.845Z"
     },
     {
       "kind": "entity",
@@ -67,18 +67,18 @@
       "link": "https://www.nrk.no/sport/fifa-avviser-trump-samtaler_-_-ren-fiksjon-1.17978115",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-04T12:59:56.417Z"
+      "detectedAt": "2026-08-04T15:29:35.845Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 100 consecutive run(s) — no fresh fetch in 8 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 100,
-      "staleDays": 8,
+      "detail": "docs/data/esports.json has been served from retention for 101 consecutive run(s) — no fresh fetch in 9 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 101,
+      "staleDays": 9,
       "severity": "high",
-      "detectedAt": "2026-08-04T12:59:57.273Z"
+      "detectedAt": "2026-08-04T15:29:36.658Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
