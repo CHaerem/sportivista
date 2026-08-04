@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T22:14:04.274Z",
+  "generatedAt": "2026-08-04T03:45:07.043Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -25,7 +25,7 @@
       "medium": 3,
       "low": 0
     },
-    "oldestGapAgeDays": 0.65,
+    "oldestGapAgeDays": 0.88,
     "escalatable": 0,
     "catalogMatched": 3,
     "auditedAt": "2026-08-03T06:40:00Z",
@@ -33,21 +33,21 @@
       {
         "interest": "Tennis — US Open 2026 (Grand Slam, Flushing Meadows, Casper Ruud)",
         "severity": "medium",
-        "ageDays": 0.65,
+        "ageDays": 0.88,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Golf — Tour Championship 2026 (FedExCup-finalen, East Lake, Viktor Hovland)",
         "severity": "medium",
-        "ageDays": 0.65,
+        "ageDays": 0.88,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Fotball — Barcelona i La Liga-åpningen (Elche borte 23. aug)",
         "severity": "medium",
-        "ageDays": 0.65,
+        "ageDays": 0.88,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -151,26 +151,31 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-03T22:14:00.943Z",
+    "buildCheckedAt": "2026-08-04T03:45:01.435Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-03T21:00:15.263Z",
-    "manifestAgeHours": 1.23,
+    "manifestGeneratedAt": "2026-08-03T22:14:05.786Z",
+    "manifestAgeHours": 5.52,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-07-26T15:02:01.492Z",
-        "ageHours": 199.2
+        "ageHours": 204.72
+      },
+      {
+        "file": "golf.json",
+        "sourceLastUpdated": "2026-08-02T21:33:16.590Z",
+        "ageHours": 30.2
       },
       {
         "file": "tennis.json",
         "sourceLastUpdated": "2026-08-02T07:30:21.538Z",
-        "ageHours": 38.73
+        "ageHours": 44.25
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-03T08:54:23Z",
-    "verifyAgeHours": 13.33,
+    "verifyAgeHours": 18.85,
     "corrections": 2,
     "unresolved": 0,
     "signals": [
