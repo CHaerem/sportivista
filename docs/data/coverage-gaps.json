@@ -1,29 +1,40 @@
 {
-  "generatedAt": "2026-08-04T06:30:47.089Z",
-  "gapCount": 5,
+  "generatedAt": "2026-08-04T07:36:40.388Z",
+  "gapCount": 8,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Manchester City",
-      "type": "imminent",
-      "imminent": true,
-      "headline": "Football transfer rumours: Atlético to offer Grealish escape route? Spurs target Osimhen and Gakpo?",
-      "link": "https://www.theguardian.com/football/2026/aug/03/football-transfer-rumours-atletico-grealish-tottenham-osimhen-gakpo",
-      "feed": "guardian-football",
+      "entity": "Kristoffer Reitan",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Reitan dropper PGA-turnering – nordmann inn som erstatter",
+      "link": "https://www.nrk.no/sport/reitan-dropper-pga-turnering-_-nordmann-inn-som-erstatter-1.17977710",
+      "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-04T06:30:46.037Z"
+      "detectedAt": "2026-08-04T07:36:39.303Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Reitan",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Reitan dropper PGA-turnering – nordmann inn som erstatter",
+      "link": "https://www.nrk.no/sport/reitan-dropper-pga-turnering-_-nordmann-inn-som-erstatter-1.17977710",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-04T07:36:39.303Z"
     },
     {
       "kind": "entity",
       "entity": "Real Madrid",
       "type": "missing",
       "imminent": false,
-      "headline": "Transfer roundup: Chelsea sell Trevoh Chalobah and sign Jordan Henderson",
-      "link": "https://www.theguardian.com/football/2026/aug/03/transfer-roundup-chelsea-sell-trevoh-chalobah-sign-jordan-henderson",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-08-04T06:30:46.037Z"
+      "headline": "Real Madrid-spiss blir lagkamerat med Berge og Bobb",
+      "link": "https://www.nrk.no/sport/real-madrid-spiss-blir-lagkamerat-med-berge-og-bobb-1.17978084",
+      "feed": "nrk-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-08-04T07:36:39.303Z"
     },
     {
       "kind": "entity",
@@ -34,18 +45,29 @@
       "link": "https://www.theguardian.com/football/2026/aug/03/liverpool-pre-season-usa-tour-exposed-squad-gaps",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-04T06:30:46.037Z"
+      "detectedAt": "2026-08-04T07:36:39.303Z"
     },
     {
       "kind": "entity",
       "entity": "Premier League",
       "type": "missing",
       "imminent": false,
-      "headline": "Newcastle reject first bid from Arsenal for captain Bruno Guimarães",
-      "link": "https://www.theguardian.com/football/2026/aug/03/premier-league-transfer-newcastle-reject-first-bid-arsenal-bruno-guimaraes",
-      "feed": "guardian-football",
-      "matchCount": 2,
-      "detectedAt": "2026-08-04T06:30:46.037Z"
+      "headline": "Real Madrid-spiss blir lagkamerat med Berge og Bobb",
+      "link": "https://www.nrk.no/sport/real-madrid-spiss-blir-lagkamerat-med-berge-og-bobb-1.17978084",
+      "feed": "nrk-sport",
+      "matchCount": 4,
+      "detectedAt": "2026-08-04T07:36:39.303Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "1. divisjon",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Haugesund med sterk borteseier – tok tilbake tabelltoppen",
+      "link": "https://www.nrk.no/sport/haugesund-med-sterk-borteseier-_-tok-tilbake-tabelltoppen-1.17977948",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-04T07:36:39.303Z"
     },
     {
       "kind": "entity",
@@ -56,18 +78,29 @@
       "link": "https://www.theguardian.com/football/2026/aug/03/they-are-terrified-como-spark-row-with-fans-over-controversial-new-stadium-policy",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-04T06:30:46.037Z"
+      "detectedAt": "2026-08-04T07:36:39.303Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Europaligaen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Lillestrøm slapp store navn i Europacup-trekningen",
+      "link": "https://www.nrk.no/sport/lillestrom-slapp-store-navn-i-europacup-trekningen-1.17977430",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-04T07:36:39.303Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 97 consecutive run(s) — no fresh fetch in 8 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 97,
+      "detail": "docs/data/esports.json has been served from retention for 98 consecutive run(s) — no fresh fetch in 8 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 98,
       "staleDays": 8,
       "severity": "high",
-      "detectedAt": "2026-08-04T06:30:46.947Z"
+      "detectedAt": "2026-08-04T07:36:40.248Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
