@@ -2121,9 +2121,10 @@
       "https://en.wikipedia.org/wiki/2026_Tour_de_France_Femmes",
       "https://www.letourfemmes.fr/en/overall-route",
       "https://www.cyclingstage.com/tour-de-france-femmes-2026/route-tdf-2026-women/",
+      "https://www.cyclingnews.com/pro-cycling/womens-cycling/the-gc-standings-at-the-tour-de-france-femmes-2026-the-first-yellow-jersey-goes-to-the-fastest-sprinter/",
       "https://kommunikasjon.ntb.no/pressemelding/18297553/fem-nye-ar-med-tour-de-france-pa-tv-2"
     ],
-    "summary": "Etappe 5 (kupert): Mâcon – Belleville-en-Beaujolais, 140 km. Tour de France Femmes 2026. Uno-X Mobility med Katrine Aalerud/Susanne Andersen. Starttid anslått (ikke offisielt publisert ennå).",
+    "summary": "Sammendraget: Uno-X' Sigrid Haugset (NOR) kjørte inn i den gule ledertrøya med et 85 km langt soloangrep på etappe 3 – en norsk rytter i sammenlagtledelsen, drøyt 2 minutter foran Kim Le Court-Pienaar (etter etappe 3). Tempoetappen i Dijon (etappe 4, 4. aug) omkalfatrer trolig sammendraget – oppdaterte tidsgap kommer etter tempoen.\n\nEtappe 5 (kupert): Mâcon – Belleville-en-Beaujolais, 140 km. Uno-X Mobility med Katrine Aalerud/Susanne Andersen. Starttid anslått (ikke offisielt publisert ennå).",
     "id": "75a7633cbd66",
     "participants": [],
     "provenance": {
@@ -2997,8 +2998,13 @@
     "norwegianPlayers": [],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
+        "platform": "Direktesport / Avisa Nordland",
+        "url": "https://www.direktesport.no",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "VG+ Sport",
+        "url": "https://www.vg.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -3022,8 +3028,8 @@
         "sourceId": "avisa-nordland",
         "url": "https://www.an.no/an-sender-glimts-champions-league-kvalik-direkte/s/5-4-2415558",
         "basis": "official",
-        "retrievedAt": "2026-08-04T03:40:00Z",
-        "note": "AN/Direktesport (+ VG+ Sport) — an.nos egen sak «sender begge Glimts kamper mot Union». Pipeline re-deriver feilaktig TV 2 Play via norwegian-rights /champions/ (revert-war) — flagget for verify priorConfirmed + self-repair."
+        "retrievedAt": "2026-08-04T10:50:00Z",
+        "note": "AN/Direktesport (+ VG+ Sport) — an.nos egen sak «sender begge Glimts kamper mot Union». Pipeline re-deriver feilaktig TV 2 Play via norwegian-rights /champions/ (revert-war); streaming[] RE-SATT til Direktesport/Avisa Nordland (+ VG+ Sport) 2026-08-04T10:50Z etter ny re-klobb — flagget for verify priorConfirmed + self-repair."
       }
     }
   },
@@ -3041,8 +3047,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
+        "platform": "VG+ Sport",
+        "url": "https://www.vg.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -3069,8 +3075,8 @@
         "sourceId": "vg",
         "url": "https://www.vg.no/sport/i/Gx68VQ/brann-slo-universitatea-cluj-og-er-klare-for-tredje-kvalifiseringsrunde-i-conference-league",
         "basis": "official",
-        "retrievedAt": "2026-08-03T18:15:00Z",
-        "note": "VG (rettighetshaver): \"Du kan se begge kampene med VG+ Sport\". Streaming[] var RE-KLOBBET til Viaplay (pipeline re-derivde via /conference/-rettighetskart) i selvmotsigelse med provenance+summary - re-satt til VG+ Sport per VGs match-spesifikke foerstepartskilde (norske klubbers tidlige kvalik har egne fri-sublisenser, jf. norwegian-rights + Glimt=Avisa Nordland). Revert-war-risiko staar; varig fiks krever verify priorConfirmed + self-repair. Verify re-bekrefter+beskytter."
+        "retrievedAt": "2026-08-04T10:50:00Z",
+        "note": "VG (rettighetshaver): \"Du kan se begge kampene med VG+ Sport\". Streaming[] var RE-KLOBBET til Viaplay (pipeline re-derivde via /conference/-rettighetskart) i selvmotsigelse med provenance+summary - re-satt til VG+ Sport 2026-08-04T10:50Z per VGs match-spesifikke foerstepartskilde (norske klubbers tidlige kvalik har egne fri-sublisenser, jf. norwegian-rights + Glimt=Avisa Nordland). Revert-war-risiko staar; varig fiks krever verify priorConfirmed + self-repair. Verify re-bekrefter+beskytter."
       }
     },
     "summary": "Returkamp i 3. kvalifiseringsrunde av Conference League: Apollon Limassol tar imot Brann i Limassol paa Kypros.\n\nSpilles tirsdag 11. august (dato korrigert fra 13. aug: Branns egen billettside + ba.no + Apollon FC er samstemt om onsdag 5. aug hjemme + tirsdag 11. aug retur). Eksakt avspark ennaa ikke offisielt UEFA-publisert - aggregatorer antyder ca. 20.00 lokal tid (19.00 CEST / 17.00 UTC); verify firmer opp naermere kampdag. Forstekampen spilles hjemme i Bergen onsdag 5. august.\n\nNorsk visning: VG+ Sport.",
