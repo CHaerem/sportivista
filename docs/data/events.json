@@ -2922,8 +2922,13 @@
     "norwegianPlayers": [],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
+        "platform": "Direktesport / Avisa Nordland",
+        "url": "https://www.direktesport.no",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "VG+ Sport",
+        "url": "https://www.vg.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -2947,7 +2952,7 @@
         "sourceId": "avisa-nordland",
         "url": "https://www.an.no/an-sender-glimts-champions-league-kvalik-direkte/s/5-4-2415558",
         "basis": "official",
-        "retrievedAt": "2026-08-04T10:50:00Z",
+        "retrievedAt": "2026-08-04T18:10:00Z",
         "note": "AN/Direktesport (+ VG+ Sport) — an.nos egen sak «sender begge Glimts kamper mot Union». Pipeline re-deriver feilaktig TV 2 Play via norwegian-rights /champions/ (revert-war); streaming[] RE-SATT til Direktesport/Avisa Nordland (+ VG+ Sport) 2026-08-04T10:50Z etter ny re-klobb — flagget for verify priorConfirmed + self-repair."
       }
     }
@@ -2966,8 +2971,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
+        "platform": "VG+ Sport",
+        "url": "https://www.vg.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -2994,7 +2999,7 @@
         "sourceId": "vg",
         "url": "https://www.vg.no/sport/i/Gx68VQ/brann-slo-universitatea-cluj-og-er-klare-for-tredje-kvalifiseringsrunde-i-conference-league",
         "basis": "official",
-        "retrievedAt": "2026-08-04T10:50:00Z",
+        "retrievedAt": "2026-08-04T18:10:00Z",
         "note": "VG (rettighetshaver): \"Du kan se begge kampene med VG+ Sport\". Streaming[] var RE-KLOBBET til Viaplay (pipeline re-derivde via /conference/-rettighetskart) i selvmotsigelse med provenance+summary - re-satt til VG+ Sport 2026-08-04T10:50Z per VGs match-spesifikke foerstepartskilde (norske klubbers tidlige kvalik har egne fri-sublisenser, jf. norwegian-rights + Glimt=Avisa Nordland). Revert-war-risiko staar; varig fiks krever verify priorConfirmed + self-repair. Verify re-bekrefter+beskytter."
       }
     },
@@ -4333,8 +4338,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Discovery+",
-        "url": "https://www.discoveryplus.no",
+        "platform": "HBO Max (Sport)",
+        "url": "https://www.hbomax.com/no/no/sports/tennis",
         "urlKind": "landing"
       },
       {
@@ -4365,7 +4370,7 @@
         "sourceId": "hbo-max",
         "url": "https://www.hbomax.com/no/no/sports/tennis",
         "basis": "official",
-        "retrievedAt": "2026-08-03T07:50:00Z",
+        "retrievedAt": "2026-08-04T18:12:00Z",
         "note": "WBD/Max har tre av fire Grand Slam i Norge (Australian Open, Roland-Garros, US Open); HBO Max Norges tennis-side lister US Open 2026 med direktesendinger fra 30. aug (Sport-tillegget) + Eurosport."
       }
     },
