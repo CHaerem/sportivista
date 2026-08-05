@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T12:50:41.010Z",
+  "generatedAt": "2026-08-05T15:12:20.378Z",
   "gapCount": 6,
   "anomalyCount": 2,
   "gaps": [
@@ -12,7 +12,18 @@
       "link": "https://www.theguardian.com/football/2026/aug/04/barcelona-sign-brazil-forward-kerolin-manchester-city-womens-super-league",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-05T12:50:39.920Z"
+      "detectedAt": "2026-08-05T15:12:19.279Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "RBK",
+      "type": "missing",
+      "imminent": false,
+      "headline": "RBK-treneren roses av Brann-spillerne: – Fantastisk menneske",
+      "link": "https://www.aftenposten.no/sport/i/7pjaO8/rbk-treneren-roses-av-brann-spillerne-fantastisk-menneske",
+      "feed": "aftenposten-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-05T15:12:19.279Z"
     },
     {
       "kind": "entity",
@@ -23,7 +34,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/05/football-transfer-rumours-folarin-balogun-tottenham-hotspur-pedro-neto-manchester-city",
       "feed": "guardian-football",
       "matchCount": 2,
-      "detectedAt": "2026-08-05T12:50:39.920Z"
+      "detectedAt": "2026-08-05T15:12:19.279Z"
     },
     {
       "kind": "entity",
@@ -33,8 +44,8 @@
       "headline": "‘Trabzon, are you ⁠ready?’: Mohamed Salah lands in Turkey to sign for Trabzonspor",
       "link": "https://www.theguardian.com/football/2026/aug/04/trabzonspor-transfer-mohamed-salah-turkish-super-lig",
       "feed": "guardian-football",
-      "matchCount": 2,
-      "detectedAt": "2026-08-05T12:50:39.920Z"
+      "matchCount": 1,
+      "detectedAt": "2026-08-05T15:12:19.279Z"
     },
     {
       "kind": "entity",
@@ -45,49 +56,38 @@
       "link": "https://www.theguardian.com/football/2026/aug/05/continuity-chaos-and-rodman-how-washington-spirit-are-thriving-in-nwsl",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-05T12:50:39.920Z"
+      "detectedAt": "2026-08-05T15:12:19.279Z"
     },
     {
       "kind": "entity",
-      "entity": "Mesterligaen",
+      "entity": "Tata Steel",
       "type": "missing",
       "imminent": false,
-      "headline": "Brann ett skritt nærmere Mesterligaen etter målfest i Budapest",
-      "link": "https://www.nrk.no/sport/brann-ett-skritt-naermere-mesterligaen-etter-malfest-i-budapest-1.17979323",
-      "feed": "nrk-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-08-05T12:50:39.920Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Fotball-VM",
-      "type": "missing",
-      "imminent": false,
-      "headline": "The Athletic: VM-byer mener de mangler millionutbetalinger",
-      "link": "https://www.nrk.no/sport/the-athletic_-vm-byer-mener-de-mangler-millionutbetalinger-1.17979241",
-      "feed": "nrk-sport",
+      "headline": "‘Punch to the gut’: Indian football thrown into chaos with Jamshedpur withdrawal from ISL | John Duerden",
+      "link": "https://www.theguardian.com/football/2026/aug/05/indian-super-league-football-chaos-jamshedpur-withdrawal-isl-tata-steel",
+      "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-05T12:50:39.920Z"
+      "detectedAt": "2026-08-05T15:12:19.279Z"
     }
   ],
   "anomalies": [
     {
       "sport": "tennis",
       "issue": "stale-retained",
-      "detail": "docs/data/tennis.json has been served from retention for 32 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 32,
+      "detail": "docs/data/tennis.json has been served from retention for 33 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 33,
       "staleDays": 3,
       "severity": "high",
-      "detectedAt": "2026-08-05T12:50:40.874Z"
+      "detectedAt": "2026-08-05T15:12:20.270Z"
     },
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 109 consecutive run(s) — no fresh fetch in 9 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 109,
-      "staleDays": 9,
+      "detail": "docs/data/esports.json has been served from retention for 110 consecutive run(s) — no fresh fetch in 10 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 110,
+      "staleDays": 10,
       "severity": "high",
-      "detectedAt": "2026-08-05T12:50:40.874Z"
+      "detectedAt": "2026-08-05T15:12:20.270Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
