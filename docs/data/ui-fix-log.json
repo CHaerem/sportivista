@@ -1,12 +1,14 @@
 {
-	"runAt": "2026-08-04T09:00:00Z",
-	"action": "none",
+	"runAt": "2026-08-05T11:27:00Z",
+	"action": "opened-pr",
 	"pr": null,
-	"fixed": [],
+	"fixed": [
+		"medium/375+393: DIREKTE NÅ 'Saint Louis Rapid & Blitz 2026' live-now title wrapped one word per line because the nowrap channel label '.live-meta' claimed its full natural width and squeezed the title column"
+	],
 	"notes": [
-		"visual-qa-log.json (checkedAt 2026-08-04T00:00:00Z) verdict is 'pass' with an empty findings[] at all three widths (375/393/900). Per the ui-fix 'When to act' rule 1 (verdict pass / no high|medium findings), this is a clean no-op — no PR opened, nothing to fix.",
-		"The one recurring watch-item (the 'Assistent' FAB overlapping mid-agenda rows at 375/393px) is again NOT a bug: per DESIGN.md § Hjelperen (WP-146 variant D) the mid-agenda overlap is the sanctioned owner decision, and the only real-bug case — occluding the LAST agenda/news row or the footer — does not occur at any width (last row 'EM friidrett 2026 (Birmingham)' + footer fully clear; at 900px the button sits in the empty margin beside the 640px column).",
-		"All other QA observations clean: full match names wrap rather than clip, every row shows a Norwegian-relevant channel or an honest '–', flags/crests render, multi-day events use date ranges, single-column layout with no horizontal scroll, header/disclosures/footer intact.",
-		"No open ui-autofix PR exists (open PRs: only wp-242b-strip-lookalikes, unrelated backend evidence work). Conservative no-op: no frontend touched, no branch, no screenshots needed."
+		"Root cause (docs/css/cards.css .live-item): .live-meta was white-space:nowrap with margin-left:auto, giving it a min-content floor at the full channel-label width, while .live-body (min-width:0) shrank fully — so a long channel label ('YouTube (Saint Louis Chess Club) +1') starved the title into a narrow left column.",
+		"Fix: .live-body gets flex:1 1 auto so the title claims available row width; .live-meta gets flex:0 1 auto, min-width:0, max-width:42%, text-align:right, overflow-wrap:anywhere so a long channel label wraps within a bounded right column instead of monopolising the row.",
+		"Verified by screenshot at 375/393/900: title now fills its column (one line at 375, two full-width lines at 393), channel label wraps neatly on the right; 900px unchanged (ample room). No regressions to header/agenda/live/footer.",
+		"npm test: 1368 passed."
 	]
 }

@@ -19,11 +19,15 @@
 	font-size: 15px;
 }
 .live-item .live-score { font-weight: 600; font-variant-numeric: tabular-nums; }
-.live-item .live-meta { color: var(--fg-2); font-size: 13px; margin-left: auto; white-space: nowrap; }
+/* The right-hand meta (clock / channel / leader) hugs the right, but a long
+   channel label ("YouTube (Saint Louis Chess Club) +1") must not squeeze the
+   title into a one-word-per-line column: cap it and let it wrap within its own
+   column so the title keeps the majority of the row. */
+.live-item .live-meta { color: var(--fg-2); font-size: 13px; margin-left: auto; text-align: right; flex: 0 1 auto; min-width: 0; max-width: 42%; overflow-wrap: anywhere; }
 
 /* Live golf/F1: a quiet line — leader on the right, your athletes' live position
    under the name — that expands to the top of the leaderboard on tap. */
-.live-body { display: flex; flex-direction: column; min-width: 0; }
+.live-body { display: flex; flex-direction: column; min-width: 0; flex: 1 1 auto; }
 .live-you { font-size: 12.5px; color: var(--fg-2); margin-top: 2px; overflow-wrap: anywhere; }
 .live-you .live-pos { color: var(--fg-3); }
 .live-item.live-expand { cursor: pointer; }
