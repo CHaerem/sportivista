@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-05T07:36:42.847Z",
+  "generatedAt": "2026-08-05T10:32:04.314Z",
   "windowDays": 14,
   "ports": {
     "coverage": "green",
-    "amendRate": "green",
+    "amendRate": "red",
     "silentStops": "yellow",
     "participantStatus": "green"
   },
@@ -32,22 +32,15 @@
     "gaps": []
   },
   "amendRate": {
-    "nearTermRate": 0,
+    "nearTermRate": 0.56,
     "nearTermChecked": 9,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-08-04T08:00:15Z",
+    "nearTermAmended": 5,
+    "verifyRunAt": "2026-08-05T08:05:00Z",
     "windowRate": 0,
-    "windowChecks": 77,
+    "windowChecks": 78,
     "windowAmendments": 0,
-    "windowCorrections": 6,
+    "windowCorrections": 8,
     "byDay": [
-      {
-        "date": "2026-07-22",
-        "checks": 5,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-07-23",
         "checks": 4,
@@ -124,40 +117,47 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-08-05",
+        "checks": 6,
+        "amendments": 0,
+        "corrections": 2,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-05T07:36:37.774Z",
+    "buildCheckedAt": "2026-08-05T10:31:56.058Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-05T06:29:54.056Z",
-    "manifestAgeHours": 1.11,
+    "manifestGeneratedAt": "2026-08-05T07:36:44.201Z",
+    "manifestAgeHours": 2.92,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-07-26T15:02:01.492Z",
-        "ageHours": 232.58
+        "ageHours": 235.5
       },
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-08-02T21:33:16.590Z",
-        "ageHours": 58.06
+        "ageHours": 60.98
       },
       {
         "file": "tennis.json",
         "sourceLastUpdated": "2026-08-02T07:30:21.538Z",
-        "ageHours": 72.11
+        "ageHours": 75.03
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-08-04T08:00:15Z",
-    "verifyAgeHours": 23.61,
+    "checkedAt": "2026-08-05T08:05:00Z",
+    "verifyAgeHours": 2.45,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
-      "WP-95 deltakelsessjekk paa paagaaende fleretappelop: TDF Femmes - Katrine Aalerud aktiv (29. sammenlagt, +2:47), Susanne Andersen ingen forfall funnet; Tour …"
+      "TdF Femmes-etappene 5-9: Susanne Andersen fjernet fra norwegianPlayers - hun er IKKE i Uno-X bekreftede 7-rytters lag (Aalerud, Haugset, Berg Edseth, Koster,…"
     ]
   }
 }

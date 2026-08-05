@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-05T07:36:44.012Z",
-  "gapCount": 5,
+  "generatedAt": "2026-08-05T10:32:05.710Z",
+  "gapCount": 6,
   "anomalyCount": 2,
   "gaps": [
     {
@@ -12,7 +12,18 @@
       "link": "https://www.theguardian.com/football/2026/aug/04/barcelona-sign-brazil-forward-kerolin-manchester-city-womens-super-league",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-05T07:36:43.031Z"
+      "detectedAt": "2026-08-05T10:32:04.550Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Manchester City",
+      "type": "imminent",
+      "imminent": true,
+      "headline": "Football transfer rumours: Folarin Balogun to Spurs? Pedro Neto to Manchester City?",
+      "link": "https://www.theguardian.com/football/2026/aug/05/football-transfer-rumours-folarin-balogun-tottenham-hotspur-pedro-neto-manchester-city",
+      "feed": "guardian-football",
+      "matchCount": 2,
+      "detectedAt": "2026-08-05T10:32:04.550Z"
     },
     {
       "kind": "entity",
@@ -23,29 +34,29 @@
       "link": "https://www.theguardian.com/football/2026/aug/04/arsenal-target-vinicius-junior-jose-mourinho-real-madrid",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-05T07:36:43.031Z"
+      "detectedAt": "2026-08-05T10:32:04.550Z"
     },
     {
       "kind": "entity",
       "entity": "Liverpool",
       "type": "missing",
       "imminent": false,
-      "headline": "Salah i forhandlinger med tyrkiske Trabzonspor",
-      "link": "https://www.nrk.no/sport/salah-i-forhandlinger-med-tyrkiske-trabzonspor-1.17979235",
-      "feed": "nrk-sport",
-      "matchCount": 3,
-      "detectedAt": "2026-08-05T07:36:43.031Z"
+      "headline": "Overgangen bekreftet: Salah avbildet i ny drakt",
+      "link": "https://www.tv2.no/a/19102332",
+      "feed": "tv2-fotball",
+      "matchCount": 5,
+      "detectedAt": "2026-08-05T10:32:04.550Z"
     },
     {
       "kind": "entity",
       "entity": "Mesterligaen",
       "type": "missing",
       "imminent": false,
-      "headline": "Brennhet VM-helt tok ansvar for Glimt: – Kunne spilt i alle ligaer",
-      "link": "https://www.nrk.no/sport/brennhet-vm-helt-tok-ansvar-_-bodo_glimt-med-godt-utgangspunkt-i-mesterligaen-kvalifiseringen-1.17978982",
+      "headline": "Brann ett skritt nærmere Mesterligaen etter målfest i Budapest",
+      "link": "https://www.nrk.no/sport/brann-ett-skritt-naermere-mesterligaen-etter-malfest-i-budapest-1.17979323",
       "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-05T07:36:43.031Z"
+      "matchCount": 2,
+      "detectedAt": "2026-08-05T10:32:04.550Z"
     },
     {
       "kind": "entity",
@@ -56,27 +67,27 @@
       "link": "https://www.nrk.no/sport/the-athletic_-vm-byer-mener-de-mangler-millionutbetalinger-1.17979241",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-05T07:36:43.031Z"
+      "detectedAt": "2026-08-05T10:32:04.550Z"
     }
   ],
   "anomalies": [
     {
       "sport": "tennis",
       "issue": "stale-retained",
-      "detail": "docs/data/tennis.json has been served from retention for 30 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 30,
+      "detail": "docs/data/tennis.json has been served from retention for 31 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 31,
       "staleDays": 3,
       "severity": "high",
-      "detectedAt": "2026-08-05T07:36:43.952Z"
+      "detectedAt": "2026-08-05T10:32:05.599Z"
     },
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 107 consecutive run(s) — no fresh fetch in 9 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 107,
+      "detail": "docs/data/esports.json has been served from retention for 108 consecutive run(s) — no fresh fetch in 9 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 108,
       "staleDays": 9,
       "severity": "high",
-      "detectedAt": "2026-08-05T07:36:43.952Z"
+      "detectedAt": "2026-08-05T10:32:05.599Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
