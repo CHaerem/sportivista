@@ -1,16 +1,23 @@
 {
-  "checkedAt": "2026-08-04T00:00:00Z",
+  "checkedAt": "2026-08-05T10:32:06Z",
   "widths": [375, 393, 900],
-  "verdict": "pass",
-  "findings": [],
+  "verdict": "issues",
+  "findings": [
+    {
+      "width": 375,
+      "area": "direkte nå ticker (.live-item)",
+      "issue": "The 'Saint Louis Rapid & Blitz 2026' live-now row wraps its title one word per line ('Saint' / 'Louis' / 'Rapid &' / 'Blitz 2026', 4 lines) instead of filling the row width, because the long channel label 'YouTube (Saint Louis Chess Club) +1' is `white-space: nowrap` and claims its full natural width via `margin-left: auto` (docs/css/cards.css `.live-item .live-meta`), squeezing the title span (`.live-name`, no min-width/flex-basis) into a narrow leftover column. Same row wraps 3 lines at 393px ('Saint Louis' / 'Rapid & Blitz' / '2026'); at 900px the row fits on one line since there's enough width for both. The neighboring 'National Bank Open presented by Rogers' row (longer title, but channel is just '–') stays unwrapped, confirming the channel-label width is what's squeezing the title. Not a truncation/hidden-info bug — every word is still legible — but it makes the DIREKTE NÅ section look cramped and broken on the two mobile widths that matter most.",
+      "severity": "medium"
+    }
+  ],
   "notes": [
-    "Assistant-FAB (bottom-trailing 'Assistent' sparkles button) rests over the 12:30/20:00 'Tour de France Femmes 2026' / 'Union Saint-Gilloise – Bodø/Glimt' rows at 375px and over the 'Brann – Apollon Limassol' row at 393px — per DESIGN.md § Hjelperen (WP-146 variant D) this mid-agenda overlap is a sanctioned owner design decision, not a bug. The one thing that would still be a real bug — occluding the LAST agenda/news row or the footer — does not happen at any width: the last visible row ('EM friidrett 2026 (Birmingham)') and the footer (usage-budget line, calendar subscribe, Aktivitet/Personvern) are fully clear in all three screenshots. At 900px the button sits labelled in the empty margin beside the 640px column, overlapping nothing.",
-    "Match names read in full at every width, wrapping to multiple lines rather than clipping: Vålerenga–Bodø/Glimt, Viking–Sarpsborg 08, Stabæk–Lyn, Start–Fredrikstad, Lillestrøm–Rosenborg, HamKam–Aalesund, Kristiansund–Molde, Sandefjord–KFUM Oslo, Brann–Apollon Limassol, Union Saint-Gilloise–Bodø/Glimt, Tour de Pologne 2026, Tour de France Femmes 2026 — all fully legible, no side of a fixture hidden by truncation.",
-    "Every row shows a channel (TV 2 Play, VG+ Sport, HBO Max (Sport), OBOS-ligaen · TV 2 Play, NRK, Direktesport / Avisa Nordland, YouTube (Saint Louis Chess Club)) or an honest faint '–' for the still-undated National Bank Open — all Norwegian-relevant streaming/broadcast, no FOX/ESPN/Sky spotted.",
-    "National flags and club crests render correctly at all widths (flag markers on Tour de Pologne, Tour de France Femmes and EM friidrett; Bodø/Glimt, Viking, Stabæk, Start, Lillestrøm, HamKam, Kristiansund, Sandefjord, KFUM Oslo, Union Saint-Gilloise, Brann, Apollon Limassol crests) — no broken-image icons or empty boxes observed.",
-    "Multi-day events (National Bank Open, Tour de Pologne, Tour de France Femmes, Wyndham Championship, EM friidrett) render with date ranges plus 'neste: Etappe 4 · 6 etapper · TV 2 Play' framing rather than a single misleading time.",
-    "Layout is a clean single column at 375/393 with no horizontal scroll or edge clipping; day-group headings (I DAG / I MORGEN / weekday names) and dividers stay aligned; must-see accent dots appear on only a handful of rows (Vålerenga–Bodø/Glimt, Lillestrøm–Rosenborg, Kristiansund–Molde, EM friidrett), not everywhere. At 900px the agenda column is centered with even margins, not left-stuck.",
-    "Header (SPORTIVISTA wordmark, date, theme toggle), Morgenbriefen headline ('Bodø/Glimt åpner mesterligakvalifiseringen borte mot Union Saint-Gilloise i kveld'), 'Uka'/'Nyheter' tabs, 'DIREKTE NÅ' live section, 'Neste opp' chess list, 'Dette dekker vi'/'Merker og kilder' disclosures, and footer (usage-budget line, calendar subscribe, Aktivitet/Personvern links) all intact and readable at every width checked.",
-    "Could not assess: real browser tap-target/interaction behavior (only static full-page screenshots were reviewed); could not zoom into individual crest icons pixel-by-pixel to rule out subtle rendering artifacts."
+    "Every visible row shows a Norwegian-relevant channel — TV 2 Play (Eliteserien/OBOS-ligaen/Champions League/Conference League matches), HBO Max (Sport) (Tour de Pologne, Wyndham Championship), NRK (EM friidrett 2026), VG+ Sport / Viaplay (Brann–Apollon Limassol on different days), YouTube (Saint Louis Chess Club) — or an honest faint '–' for the still-undated National Bank Open. No foreign broadcaster (FOX/ESPN/Sky) spotted at any width.",
+    "Match names read in full at every width, wrapping across multiple lines rather than clipping: Vålerenga–Bodø/Glimt, Viking–Sarpsborg 08, Stabæk–Lyn, Start–Fredrikstad, Lillestrøm–Rosenborg, HamKam–Aalesund, Kristiansund–Molde, Sandefjord–KFUM Oslo, Brann–Apollon Limassol, Bodø/Glimt–Union Saint-Gilloise, Apollon Limassol–Brann — no side of a fixture hidden.",
+    "National flags and club crests render as solid graphics (no broken-image icons or empty boxes) on Tour de Pologne, Tour de France Femmes, EM friidrett, and every Eliteserien/cup fixture at all three widths.",
+    "Multi-day events (National Bank Open, Tour de Pologne, Tour de France Femmes, Wyndham Championship, EM friidrett) show date ranges plus 'neste: Etappe 5 · 5 etapper · TV 2 Play'-style framing rather than one misleading time.",
+    "No horizontal scroll or edge clipping at 375/393; single quiet column holds at both mobile widths and centers with even margins at 900px. Must-see accent dots appear on a handful of rows only (Vålerenga–Bodø/Glimt, Lillestrøm–Rosenborg, Kristiansund–Molde, EM friidrett, Bodø/Glimt–Union Saint-Gilloise), not everywhere.",
+    "Assistant FAB (bottom-trailing 'Assistent' sparkles button) rests over the 'Brann–Apollon Limassol' row at 375/393px — per DESIGN.md § Hjelperen (WP-146 variant D) this mid-agenda overlap is sanctioned, not a bug. It never occludes the last agenda row ('Apollon Limassol – Brann' at 375/393, or the last visible row at 900) or the footer at any width. At 900px it sits labelled in the empty margin beside the 640px column, overlapping nothing.",
+    "Header (wordmark, date, theme toggle), Morgenbriefen headline, 'Uka'/'Nyheter' tabs, 'DIREKTE NÅ' section, 'Neste opp' chess list, 'Dette dekker vi'/'Merker og kilder' disclosures, and footer (usage-budget line, calendar subscribe, Aktivitet/Personvern) all intact and aligned at every width checked.",
+    "Could not assess: real browser tap-target/interaction behavior (only static full-page screenshots were reviewed); could not pixel-zoom into individual crest icons to rule out subtle rendering artifacts."
   ]
 }
