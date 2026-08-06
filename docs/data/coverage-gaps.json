@@ -1,19 +1,8 @@
 {
-  "generatedAt": "2026-08-06T06:32:40.561Z",
-  "gapCount": 6,
+  "generatedAt": "2026-08-06T07:37:29.348Z",
+  "gapCount": 5,
   "anomalyCount": 2,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Manchester City",
-      "type": "imminent",
-      "imminent": true,
-      "headline": "Football transfer rumours: Folarin Balogun to Spurs? Pedro Neto to Manchester City?",
-      "link": "https://www.theguardian.com/football/2026/aug/05/football-transfer-rumours-folarin-balogun-tottenham-hotspur-pedro-neto-manchester-city",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-08-06T06:32:39.472Z"
-    },
     {
       "kind": "entity",
       "entity": "Real Madrid",
@@ -23,7 +12,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/05/real-madrid-agree-club-record-115m-deal-for-yan-diomande-and-want-to-keep-vinicius",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-06T06:32:39.472Z"
+      "detectedAt": "2026-08-06T07:37:28.224Z"
     },
     {
       "kind": "entity",
@@ -34,7 +23,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/05/continuity-chaos-and-rodman-how-washington-spirit-are-thriving-in-nwsl",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-06T06:32:39.472Z"
+      "detectedAt": "2026-08-06T07:37:28.224Z"
     },
     {
       "kind": "entity",
@@ -45,7 +34,7 @@
       "link": "https://www.nrk.no/sport/valerenga-mallose-i-tyskland-_-far-ikke-spille-mesterliga-1.17979761",
       "feed": "nrk-sport",
       "matchCount": 2,
-      "detectedAt": "2026-08-06T06:32:39.472Z"
+      "detectedAt": "2026-08-06T07:37:28.224Z"
     },
     {
       "kind": "entity",
@@ -56,7 +45,7 @@
       "link": "https://www.nrk.no/sport/messi-scoret-sine-forste-mal-etter-vm-_-satte-ny-rekord-1.17980474",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-06T06:32:39.472Z"
+      "detectedAt": "2026-08-06T07:37:28.224Z"
     },
     {
       "kind": "entity",
@@ -67,27 +56,27 @@
       "link": "https://www.theguardian.com/football/2026/aug/05/indian-super-league-football-chaos-jamshedpur-withdrawal-isl-tata-steel",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-06T06:32:39.472Z"
+      "detectedAt": "2026-08-06T07:37:28.224Z"
     }
   ],
   "anomalies": [
     {
       "sport": "golf",
       "issue": "stale-retained",
-      "detail": "docs/data/golf.json has been served from retention for 31 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 31,
+      "detail": "docs/data/golf.json has been served from retention for 32 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 32,
       "staleDays": 3,
       "severity": "high",
-      "detectedAt": "2026-08-06T06:32:40.456Z"
+      "detectedAt": "2026-08-06T07:37:29.205Z"
     },
     {
       "sport": "tennis",
       "issue": "stale-retained",
-      "detail": "docs/data/tennis.json has been served from retention for 39 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 39,
-      "staleDays": 3,
+      "detail": "docs/data/tennis.json has been served from retention for 40 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 40,
+      "staleDays": 4,
       "severity": "high",
-      "detectedAt": "2026-08-06T06:32:40.456Z"
+      "detectedAt": "2026-08-06T07:37:29.205Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
