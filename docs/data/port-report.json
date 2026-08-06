@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-06T07:37:27.989Z",
+  "generatedAt": "2026-08-06T10:36:06.864Z",
   "windowDays": 14,
   "ports": {
     "coverage": "green",
-    "amendRate": "red",
+    "amendRate": "green",
     "silentStops": "yellow",
     "participantStatus": "green"
   },
@@ -32,22 +32,15 @@
     "gaps": []
   },
   "amendRate": {
-    "nearTermRate": 0.56,
-    "nearTermChecked": 9,
-    "nearTermAmended": 5,
-    "verifyRunAt": "2026-08-05T08:05:00Z",
+    "nearTermRate": 0.06,
+    "nearTermChecked": 16,
+    "nearTermAmended": 1,
+    "verifyRunAt": "2026-08-06T08:05:00Z",
     "windowRate": 0,
-    "windowChecks": 78,
+    "windowChecks": 81,
     "windowAmendments": 0,
-    "windowCorrections": 8,
+    "windowCorrections": 10,
     "byDay": [
-      {
-        "date": "2026-07-23",
-        "checks": 4,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-07-24",
         "checks": 11,
@@ -124,35 +117,42 @@
         "amendments": 0,
         "corrections": 2,
         "rate": 0
+      },
+      {
+        "date": "2026-08-06",
+        "checks": 7,
+        "amendments": 0,
+        "corrections": 2,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-06T07:37:21.510Z",
+    "buildCheckedAt": "2026-08-06T10:36:03.975Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-06T06:32:40.796Z",
-    "manifestAgeHours": 1.08,
+    "manifestGeneratedAt": "2026-08-06T07:37:29.566Z",
+    "manifestAgeHours": 2.98,
     "staleFiles": [
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-08-02T21:33:16.590Z",
-        "ageHours": 82.07
+        "ageHours": 85.05
       },
       {
         "file": "tennis.json",
         "sourceLastUpdated": "2026-08-02T07:30:21.538Z",
-        "ageHours": 96.12
+        "ageHours": 99.1
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-08-05T08:05:00Z",
-    "verifyAgeHours": 23.54,
+    "checkedAt": "2026-08-06T08:05:00Z",
+    "verifyAgeHours": 2.52,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
-      "TdF Femmes-etappene 5-9: Susanne Andersen fjernet fra norwegianPlayers - hun er IKKE i Uno-X bekreftede 7-rytters lag (Aalerud, Haugset, Berg Edseth, Koster,…"
+      "Deltakelsessjekk (WP-95, pågående turer): Fredrik Dversnes (bib 164) bekreftet i Tour de Pologne-startlisten (Uno-X). Aalerud (171) og Berg Edseth (173) fort…"
     ]
   }
 }

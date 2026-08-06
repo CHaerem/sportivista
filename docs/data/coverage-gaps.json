@@ -1,8 +1,19 @@
 {
-  "generatedAt": "2026-08-06T07:37:29.348Z",
-  "gapCount": 5,
+  "generatedAt": "2026-08-06T10:36:08.257Z",
+  "gapCount": 4,
   "anomalyCount": 2,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Arsenal",
+      "type": "imminent",
+      "imminent": true,
+      "headline": "Football transfer rumours: Arsenal back for £60m Konsa? Asencio to Liverpool?",
+      "link": "https://www.theguardian.com/football/2026/aug/06/football-transfer-rumours-arsenal-ezri-konsa-raul-asencio-liverpool",
+      "feed": "guardian-football",
+      "matchCount": 3,
+      "detectedAt": "2026-08-06T10:36:07.102Z"
+    },
     {
       "kind": "entity",
       "entity": "Real Madrid",
@@ -12,40 +23,18 @@
       "link": "https://www.theguardian.com/football/2026/aug/05/real-madrid-agree-club-record-115m-deal-for-yan-diomande-and-want-to-keep-vinicius",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-06T07:37:28.224Z"
+      "detectedAt": "2026-08-06T10:36:07.102Z"
     },
     {
       "kind": "entity",
-      "entity": "Spirit",
+      "entity": "Liverpool",
       "type": "missing",
-      "imminent": false,
-      "headline": "Continuity, chaos and Rodman: how Washington Spirit are thriving in NWSL",
-      "link": "https://www.theguardian.com/football/2026/aug/05/continuity-chaos-and-rodman-how-washington-spirit-are-thriving-in-nwsl",
+      "imminent": true,
+      "headline": "Football transfer rumours: Arsenal back for £60m Konsa? Asencio to Liverpool?",
+      "link": "https://www.theguardian.com/football/2026/aug/06/football-transfer-rumours-arsenal-ezri-konsa-raul-asencio-liverpool",
       "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-08-06T07:37:28.224Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Mesterligaen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Vålerenga målløse i Tyskland – får ikke spille Mesterliga",
-      "link": "https://www.nrk.no/sport/valerenga-mallose-i-tyskland-_-far-ikke-spille-mesterliga-1.17979761",
-      "feed": "nrk-sport",
       "matchCount": 2,
-      "detectedAt": "2026-08-06T07:37:28.224Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Fotball-VM",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Messi scoret sine første mål etter VM – satte ny rekord",
-      "link": "https://www.nrk.no/sport/messi-scoret-sine-forste-mal-etter-vm-_-satte-ny-rekord-1.17980474",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-06T07:37:28.224Z"
+      "detectedAt": "2026-08-06T10:36:07.102Z"
     },
     {
       "kind": "entity",
@@ -56,27 +45,27 @@
       "link": "https://www.theguardian.com/football/2026/aug/05/indian-super-league-football-chaos-jamshedpur-withdrawal-isl-tata-steel",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-06T07:37:28.224Z"
+      "detectedAt": "2026-08-06T10:36:07.102Z"
     }
   ],
   "anomalies": [
     {
       "sport": "golf",
       "issue": "stale-retained",
-      "detail": "docs/data/golf.json has been served from retention for 32 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 32,
+      "detail": "docs/data/golf.json has been served from retention for 33 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 33,
       "staleDays": 3,
       "severity": "high",
-      "detectedAt": "2026-08-06T07:37:29.205Z"
+      "detectedAt": "2026-08-06T10:36:08.025Z"
     },
     {
       "sport": "tennis",
       "issue": "stale-retained",
-      "detail": "docs/data/tennis.json has been served from retention for 40 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 40,
+      "detail": "docs/data/tennis.json has been served from retention for 41 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 41,
       "staleDays": 4,
       "severity": "high",
-      "detectedAt": "2026-08-06T07:37:29.205Z"
+      "detectedAt": "2026-08-06T10:36:08.025Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
