@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-06T12:55:07.093Z",
-  "gapCount": 10,
+  "generatedAt": "2026-08-06T15:11:31.628Z",
+  "gapCount": 8,
   "anomalyCount": 2,
   "gaps": [
     {
@@ -8,11 +8,11 @@
       "entity": "Barcelona",
       "type": "missing",
       "imminent": false,
-      "headline": "Coming up: six promoted teams to look out for in Europe this season",
-      "link": "https://www.theguardian.com/football/2026/aug/06/coming-up-six-promoted-teams-to-look-out-for-in-europe-this-season",
+      "headline": "Barcelona keen on Rodri as Real Madrid talks with Manchester City star stall",
+      "link": "https://www.theguardian.com/football/2026/aug/06/barcelona-rodri-alvarez-manchester-city-real-madrid-transfers",
       "feed": "guardian-football",
       "matchCount": 3,
-      "detectedAt": "2026-08-06T12:55:05.932Z"
+      "detectedAt": "2026-08-06T15:11:30.692Z"
     },
     {
       "kind": "entity",
@@ -22,8 +22,8 @@
       "headline": "RBK-profil legger opp: – Foregangskvinne",
       "link": "https://www.nrk.no/sport/rbk-profil-legger-opp_-_-foregangskvinne-1.17981070",
       "feed": "nrk-sport",
-      "matchCount": 4,
-      "detectedAt": "2026-08-06T12:55:05.932Z"
+      "matchCount": 3,
+      "detectedAt": "2026-08-06T15:11:30.692Z"
     },
     {
       "kind": "entity",
@@ -33,19 +33,19 @@
       "headline": "Football transfer rumours: Arsenal back for £60m Konsa? Asencio to Liverpool?",
       "link": "https://www.theguardian.com/football/2026/aug/06/football-transfer-rumours-arsenal-ezri-konsa-raul-asencio-liverpool",
       "feed": "guardian-football",
-      "matchCount": 3,
-      "detectedAt": "2026-08-06T12:55:05.932Z"
+      "matchCount": 2,
+      "detectedAt": "2026-08-06T15:11:30.692Z"
     },
     {
       "kind": "entity",
       "entity": "Real Madrid",
       "type": "missing",
       "imminent": false,
-      "headline": "Rodri-bombe: Real Madrid utfordres",
-      "link": "https://www.tv2.no/a/19105765",
-      "feed": "tv2-sport",
-      "matchCount": 5,
-      "detectedAt": "2026-08-06T12:55:05.932Z"
+      "headline": "Bekreftet: Real Madrid henter Nusa-lagkamerat i milliardovergang",
+      "link": "https://www.nrk.no/sport/bekreftet_-real-madrid-henter-nusa-lagkamerat-i-milliardovergang-1.17981372",
+      "feed": "nrk-sport",
+      "matchCount": 4,
+      "detectedAt": "2026-08-06T15:11:30.692Z"
     },
     {
       "kind": "entity",
@@ -55,8 +55,8 @@
       "headline": "Football transfer rumours: Arsenal back for £60m Konsa? Asencio to Liverpool?",
       "link": "https://www.theguardian.com/football/2026/aug/06/football-transfer-rumours-arsenal-ezri-konsa-raul-asencio-liverpool",
       "feed": "guardian-football",
-      "matchCount": 3,
-      "detectedAt": "2026-08-06T12:55:05.932Z"
+      "matchCount": 2,
+      "detectedAt": "2026-08-06T15:11:30.692Z"
     },
     {
       "kind": "entity",
@@ -67,7 +67,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/06/breakout-star-premier-league-club-season",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-06T12:55:05.932Z"
+      "detectedAt": "2026-08-06T15:11:30.692Z"
     },
     {
       "kind": "entity",
@@ -78,7 +78,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/06/coming-up-six-promoted-teams-to-look-out-for-in-europe-this-season",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-06T12:55:05.932Z"
+      "detectedAt": "2026-08-06T15:11:30.692Z"
     },
     {
       "kind": "entity",
@@ -89,49 +89,27 @@
       "link": "https://www.nrk.no/sport/messi-scoret-sine-forste-mal-etter-vm-_-satte-ny-rekord-1.17980474",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-06T12:55:05.932Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Bislett",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Måtte ha donor etter uhell i skogen",
-      "link": "https://www.tv2.no/a/19102764",
-      "feed": "tv2-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-06T12:55:05.932Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Tata Steel",
-      "type": "missing",
-      "imminent": false,
-      "headline": "‘Punch to the gut’: Indian football thrown into chaos with Jamshedpur withdrawal from ISL",
-      "link": "https://www.theguardian.com/football/2026/aug/05/indian-super-league-football-chaos-jamshedpur-withdrawal-isl-tata-steel",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-08-06T12:55:05.932Z"
+      "detectedAt": "2026-08-06T15:11:30.692Z"
     }
   ],
   "anomalies": [
     {
       "sport": "golf",
       "issue": "stale-retained",
-      "detail": "docs/data/golf.json has been served from retention for 34 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 34,
+      "detail": "docs/data/golf.json has been served from retention for 35 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 35,
       "staleDays": 3,
       "severity": "high",
-      "detectedAt": "2026-08-06T12:55:06.912Z"
+      "detectedAt": "2026-08-06T15:11:31.464Z"
     },
     {
       "sport": "tennis",
       "issue": "stale-retained",
-      "detail": "docs/data/tennis.json has been served from retention for 42 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 42,
+      "detail": "docs/data/tennis.json has been served from retention for 43 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 43,
       "staleDays": 4,
       "severity": "high",
-      "detectedAt": "2026-08-06T12:55:06.912Z"
+      "detectedAt": "2026-08-06T15:11:31.464Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
