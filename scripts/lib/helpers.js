@@ -3,6 +3,7 @@ import path from "path";
 import http from "http";
 import https from "https";
 import zlib from "zlib";
+import { USER_AGENT } from "./api-client.js";
 
 export const MS_PER_MINUTE = 60_000;
 export const MS_PER_HOUR = 3_600_000;
@@ -307,7 +308,16 @@ export async function fetchJson(
 	url,
 	{ headers = {}, retries = 2, retryDelay = 500, timeout = 0 } = {}
 ) {
-	headers["User-Agent"] = headers["User-Agent"] || "SportSync/1.0";
+	// ESPN's Akamai edge now returns 403 "Access Denied" (an HTML body) to bare
+	// requests — a lone User-Agent with no Accept/Accept-Encoding reads as a bot.
+	// Send the same polite headers the APIClient already uses (honest descriptive
+	// User-Agent + Accept + gzip) so ESPN serves JSON again; this is what broke
+	// golf.js, fetch-standings.js and fetch-results.js. Callers can still override
+	// any header. (gzip only: the response handler below decompresses gzip, not
+	// br/deflate, so we must not advertise those.)
+	headers["User-Agent"] = headers["User-Agent"] || USER_AGENT;
+	headers["Accept"] = headers["Accept"] || "application/json";
+	headers["Accept-Encoding"] = headers["Accept-Encoding"] || "gzip";
 	return new Promise((resolve, reject) => {
 		let settled = false;
 		let timeoutId = null;
