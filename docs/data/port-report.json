@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T06:08:11.721Z",
+  "generatedAt": "2026-08-07T08:11:59.357Z",
   "windowDays": 14,
   "ports": {
     "coverage": "green",
@@ -32,22 +32,15 @@
     "gaps": []
   },
   "amendRate": {
-    "nearTermRate": 0.06,
-    "nearTermChecked": 16,
-    "nearTermAmended": 1,
-    "verifyRunAt": "2026-08-06T08:05:00Z",
+    "nearTermRate": 0,
+    "nearTermChecked": 10,
+    "nearTermAmended": 0,
+    "verifyRunAt": "2026-08-07T06:45:00Z",
     "windowRate": 0,
-    "windowChecks": 81,
+    "windowChecks": 79,
     "windowAmendments": 0,
-    "windowCorrections": 10,
+    "windowCorrections": 9,
     "byDay": [
-      {
-        "date": "2026-07-24",
-        "checks": 11,
-        "amendments": 0,
-        "corrections": 1,
-        "rate": 0
-      },
       {
         "date": "2026-07-27",
         "checks": 9,
@@ -124,30 +117,37 @@
         "amendments": 0,
         "corrections": 2,
         "rate": 0
+      },
+      {
+        "date": "2026-08-07",
+        "checks": 9,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-07T06:08:06.254Z",
+    "buildCheckedAt": "2026-08-07T08:11:56.006Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-07T05:42:54.217Z",
-    "manifestAgeHours": 0.42,
+    "manifestGeneratedAt": "2026-08-07T06:08:14.783Z",
+    "manifestAgeHours": 2.06,
     "staleFiles": [
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-08-02T21:33:16.590Z",
-        "ageHours": 104.58
+        "ageHours": 106.65
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-08-06T08:05:00Z",
-    "verifyAgeHours": 22.05,
+    "checkedAt": "2026-08-07T06:45:00Z",
+    "verifyAgeHours": 1.45,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
-      "Deltakelsessjekk (WP-95, pågående turer): Fredrik Dversnes (bib 164) bekreftet i Tour de Pologne-startlisten (Uno-X). Aalerud (171) og Berg Edseth (173) fort…"
+      "TdF Femmes etappe 7 (i dag, Mont Ventoux): starttid 12.50 CEST (10.50 UTC) re-bekreftet mot letourfemmes.fr + tour-magazin/idlprocycling — board allerede kor…"
     ]
   }
 }

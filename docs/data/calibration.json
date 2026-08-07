@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-07T06:08:14.656Z",
+  "generatedAt": "2026-08-07T08:12:00.835Z",
   "windowDays": 180,
   "records": {
-    "used": 178,
+    "used": 187,
     "skipped": 0
   },
   "sources": {
@@ -114,22 +114,30 @@
       "reliability": null
     },
     "europeantour.com": {
-      "checks": 1,
-      "agreed": 1,
+      "checks": 3,
+      "agreed": 3,
       "corrections": 0,
       "bySport": {
         "golf": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 3,
+          "agreed": 3
         }
       },
       "byField": {
         "existence": {
           "checks": 1,
           "agreed": 1
+        },
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        },
+        "streaming": {
+          "checks": 1,
+          "agreed": 1
         }
       },
-      "lastChecked": "2026-07-04T13:30:00.000Z",
+      "lastChecked": "2026-08-07T06:45:00Z",
       "reliability": null
     },
     "pgatour.com": {
@@ -1063,13 +1071,13 @@
       "reliability": null
     },
     "letourfemmes.fr": {
-      "checks": 7,
-      "agreed": 7,
+      "checks": 8,
+      "agreed": 8,
       "corrections": 1,
       "bySport": {
         "cycling": {
-          "checks": 7,
-          "agreed": 7
+          "checks": 8,
+          "agreed": 8
         }
       },
       "byField": {
@@ -1078,11 +1086,11 @@
           "agreed": 4
         },
         "time": {
-          "checks": 3,
-          "agreed": 3
+          "checks": 4,
+          "agreed": 4
         }
       },
-      "lastChecked": "2026-08-06T08:05:00Z",
+      "lastChecked": "2026-08-07T06:45:00Z",
       "reliability": 1
     },
     "tv2.no": {
@@ -1208,26 +1216,26 @@
       "reliability": null
     },
     "cyclingnews.com": {
-      "checks": 2,
-      "agreed": 2,
+      "checks": 3,
+      "agreed": 3,
       "corrections": 1,
       "bySport": {
         "cycling": {
-          "checks": 2,
-          "agreed": 2
+          "checks": 3,
+          "agreed": 3
         }
       },
       "byField": {
         "existence": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 2,
+          "agreed": 2
         },
         "time": {
           "checks": 1,
           "agreed": 1
         }
       },
-      "lastChecked": "2026-08-06T08:05:00Z",
+      "lastChecked": "2026-08-07T06:45:00Z",
       "reliability": null
     },
     "fcbarcelona.com": {
@@ -1410,26 +1418,26 @@
       "reliability": null
     },
     "foxsports.com": {
-      "checks": 3,
-      "agreed": 3,
+      "checks": 4,
+      "agreed": 4,
       "corrections": 1,
       "bySport": {
         "football": {
-          "checks": 3,
-          "agreed": 3
+          "checks": 4,
+          "agreed": 4
         }
       },
       "byField": {
         "time": {
-          "checks": 2,
-          "agreed": 2
+          "checks": 3,
+          "agreed": 3
         },
         "existence": {
           "checks": 1,
           "agreed": 1
         }
       },
-      "lastChecked": "2026-08-05T08:05:00Z",
+      "lastChecked": "2026-08-07T06:45:00Z",
       "reliability": null
     },
     "tickets.birmingham26.com": {
@@ -1533,6 +1541,82 @@
         }
       },
       "lastChecked": "2026-08-05T08:05:00Z",
+      "reliability": null
+    },
+    "tpc.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "golf": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-07T06:45:00Z",
+      "reliability": null
+    },
+    "arctic-race-of-norway.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "cycling": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-07T06:45:00Z",
+      "reliability": null
+    },
+    "european-athletics.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "athletics": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-07T06:45:00Z",
+      "reliability": null
+    },
+    "espn.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "football": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-07T06:45:00Z",
       "reliability": null
     }
   }
