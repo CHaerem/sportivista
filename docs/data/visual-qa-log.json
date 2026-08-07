@@ -1,23 +1,18 @@
 {
-  "checkedAt": "2026-08-05T10:32:06Z",
+  "checkedAt": "2026-08-07T00:00:00.000Z",
   "widths": [375, 393, 900],
-  "verdict": "issues",
-  "findings": [
-    {
-      "width": 375,
-      "area": "direkte nå ticker (.live-item)",
-      "issue": "The 'Saint Louis Rapid & Blitz 2026' live-now row wraps its title one word per line ('Saint' / 'Louis' / 'Rapid &' / 'Blitz 2026', 4 lines) instead of filling the row width, because the long channel label 'YouTube (Saint Louis Chess Club) +1' is `white-space: nowrap` and claims its full natural width via `margin-left: auto` (docs/css/cards.css `.live-item .live-meta`), squeezing the title span (`.live-name`, no min-width/flex-basis) into a narrow leftover column. Same row wraps 3 lines at 393px ('Saint Louis' / 'Rapid & Blitz' / '2026'); at 900px the row fits on one line since there's enough width for both. The neighboring 'National Bank Open presented by Rogers' row (longer title, but channel is just '–') stays unwrapped, confirming the channel-label width is what's squeezing the title. Not a truncation/hidden-info bug — every word is still legible — but it makes the DIREKTE NÅ section look cramped and broken on the two mobile widths that matter most.",
-      "severity": "medium"
-    }
-  ],
+  "verdict": "pass",
+  "findings": [],
   "notes": [
-    "Every visible row shows a Norwegian-relevant channel — TV 2 Play (Eliteserien/OBOS-ligaen/Champions League/Conference League matches), HBO Max (Sport) (Tour de Pologne, Wyndham Championship), NRK (EM friidrett 2026), VG+ Sport / Viaplay (Brann–Apollon Limassol on different days), YouTube (Saint Louis Chess Club) — or an honest faint '–' for the still-undated National Bank Open. No foreign broadcaster (FOX/ESPN/Sky) spotted at any width.",
-    "Match names read in full at every width, wrapping across multiple lines rather than clipping: Vålerenga–Bodø/Glimt, Viking–Sarpsborg 08, Stabæk–Lyn, Start–Fredrikstad, Lillestrøm–Rosenborg, HamKam–Aalesund, Kristiansund–Molde, Sandefjord–KFUM Oslo, Brann–Apollon Limassol, Bodø/Glimt–Union Saint-Gilloise, Apollon Limassol–Brann — no side of a fixture hidden.",
-    "National flags and club crests render as solid graphics (no broken-image icons or empty boxes) on Tour de Pologne, Tour de France Femmes, EM friidrett, and every Eliteserien/cup fixture at all three widths.",
-    "Multi-day events (National Bank Open, Tour de Pologne, Tour de France Femmes, Wyndham Championship, EM friidrett) show date ranges plus 'neste: Etappe 5 · 5 etapper · TV 2 Play'-style framing rather than one misleading time.",
-    "No horizontal scroll or edge clipping at 375/393; single quiet column holds at both mobile widths and centers with even margins at 900px. Must-see accent dots appear on a handful of rows only (Vålerenga–Bodø/Glimt, Lillestrøm–Rosenborg, Kristiansund–Molde, EM friidrett, Bodø/Glimt–Union Saint-Gilloise), not everywhere.",
-    "Assistant FAB (bottom-trailing 'Assistent' sparkles button) rests over the 'Brann–Apollon Limassol' row at 375/393px — per DESIGN.md § Hjelperen (WP-146 variant D) this mid-agenda overlap is sanctioned, not a bug. It never occludes the last agenda row ('Apollon Limassol – Brann' at 375/393, or the last visible row at 900) or the footer at any width. At 900px it sits labelled in the empty margin beside the 640px column, overlapping nothing.",
-    "Header (wordmark, date, theme toggle), Morgenbriefen headline, 'Uka'/'Nyheter' tabs, 'DIREKTE NÅ' section, 'Neste opp' chess list, 'Dette dekker vi'/'Merker og kilder' disclosures, and footer (usage-budget line, calendar subscribe, Aktivitet/Personvern) all intact and aligned at every width checked.",
+    "No horizontal scroll/overflow at any width; single quiet column, generous spacing, scannable at 375/393/900px.",
+    "Match/tournament names read in full, not truncated in a way that hides key info (e.g. 'National Bank Open presented by Rogers', 'Etappe 7 (fjell): La Voulte-sur-Rhône – Mont Ventoux' wrap cleanly across two lines; Vålerenga–Bodø/Glimt, Sandefjord–KFUM Oslo, Bodø/Glimt–Union Saint-Gilloise, Paris Saint-Germain–Aston Villa all fully legible with both sides shown).",
+    "Every event shows a where-to-watch line; all football/golf/cycling channels are Norwegian (TV 2 Play, HBO Max (Sport), Viaplay, NRK, VG+ Sport, Direktesport/Avisa Nordland) — no FOX/ESPN/Sky seen. The one non-Norwegian outlet is 'YouTube (Saint Louis Chess Club)' for an international chess event's official stream, not a Norwegian-rights sport.",
+    "The DIREKTE NÅ 'Saint Louis Rapid & Blitz 2026' row (flagged medium on 2026-08-05 for wrapping into 4 cramped lines at 375px because the nowrap channel label squeezed the title) now renders the title on one line at 375px and 393px — that issue looks resolved, not reproduced today.",
+    "Times present and sensibly formatted (HH:MM or date ranges for multi-day events); competition/round context shown under each fixture (e.g. 'UEFA Champions League 2026/27 (kvalifisering)').",
+    "National flags and club crests render as icons, not broken-image placeholders, across all three widths.",
+    "Must-see accent dots appear sparingly, not on every row.",
+    "Header (wordmark, date, theme toggle), day headings, and footer (updated-at, calendar link, usage budget) are all intact and aligned at every width.",
+    "The floating 'Assistent' (sparkles) button at 375/393px rests over a mid-agenda row (per DESIGN.md § Hjelperen, WP-146 variant D) and does not occlude the last agenda/news row or the footer — consistent with the sanctioned design. At 900px it sits in the empty margin beside the 640px column and overlaps nothing.",
     "Could not assess: real browser tap-target/interaction behavior (only static full-page screenshots were reviewed); could not pixel-zoom into individual crest icons to rule out subtle rendering artifacts."
   ]
 }
