@@ -1,12 +1,11 @@
 {
-	"runAt": "2026-08-06T00:00:00Z",
+	"runAt": "2026-08-07T00:00:00Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"visual-qa-log.json (checkedAt 2026-08-05T10:32:06Z, verdict 'issues') carries a single medium finding: the DIREKTE NÅ 'Saint Louis Rapid & Blitz 2026' live-now title wrapping one word per line at 375/393px because the long channel label squeezed the title column.",
-		"That finding was already fixed on main by a prior ui-fix run — commit d21072e7f (2026-08-05T11:27Z), which landed AFTER the visual-qa check ran (10:32Z). The fix gives .live-body flex:1 1 auto and caps .live-meta (flex:0 1 auto, min-width:0, max-width:42%, text-align:right, overflow-wrap:anywhere) in docs/css/cards.css. The finding in the log is therefore stale.",
-		"Re-verified against current main by fresh screenshots at 375/393/900: the DIREKTE NÅ section renders cleanly — at 375px the title wraps to two balanced lines ('Saint Louis Rapid &' / 'Blitz 2026') with the channel 'YouTube (Saint Louis Chess Club) +1' wrapping within a bounded right column; same at 393px; one line at 900px. No one-word-per-line squeeze, no overflow, header/agenda/footer intact.",
-		"No new code-fixable finding remains. Opening a PR would be a duplicate no-op, so exiting cleanly with action 'none' per the ui-fix contract."
+		"visual-qa-log.json (checkedAt 2026-08-07T00:00:00Z) has verdict 'pass' with an empty findings[]. No high/medium findings to fix, so no branch or PR was opened.",
+		"The visual-qa notes confirm previously flagged issues are resolved on current main: the 2026-08-05 medium 'Saint Louis Rapid & Blitz 2026' DIREKTE NÅ title-wrap now renders on one line at 375/393px, and long 'Home – Away' fixtures (Vålerenga–Bodø/Glimt, cycling stage titles, 'National Bank Open presented by Rogers') wrap cleanly across two lines with both sides legible rather than truncating.",
+		"No horizontal overflow at 375/393/900, every event shows a Norwegian where-to-watch line, flags/crests render as icons, must-see dots are sparse, header/agenda/footer intact — nothing code-fixable remains. Exiting cleanly with action 'none' per the ui-fix contract."
 	]
 }
