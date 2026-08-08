@@ -1627,41 +1627,6 @@
     ]
   },
   {
-    "sport": "esports",
-    "tournament": "Esports World Cup 2026: LCQ - Group Stage - Group K",
-    "title": "100T vs Nade",
-    "time": "2026-08-08T09:00:00.000Z",
-    "endTime": null,
-    "venue": "Online",
-    "meta": "Esports World Cup 2026: LCQ - Group Stage - Group K",
-    "norwegian": true,
-    "streaming": [
-      {
-        "platform": "Twitch",
-        "url": "https://twitch.tv",
-        "type": "twitch",
-        "urlKind": "landing"
-      },
-      {
-        "platform": "Kick",
-        "url": "https://kick.com",
-        "type": "kick",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": null,
-    "awayTeam": null,
-    "isFavorite": false,
-    "round": null,
-    "id": "799d011f3d9e"
-  },
-  {
     "sport": "cycling",
     "tournament": "Tour de France Femmes 2026",
     "title": "Etappe 8 (flat): Sisteron – Nice",
@@ -1717,35 +1682,6 @@
       "https://www.cyclingnews.com/pro-cycling/womens-cycling/tour-de-france-femmes-2026-stage-8-preview/",
       "https://www.procyclingstats.com/race/tour-de-france-femmes/2026/stage-8/result/result"
     ]
-  },
-  {
-    "sport": "football",
-    "tournament": "Eliteserien",
-    "title": "Viking – Sarpsborg 08",
-    "time": "2026-08-08T14:00:00.000Z",
-    "endTime": null,
-    "venue": "Viking Stadion",
-    "meta": "Eliteserien",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Viking",
-    "awayTeam": "Sarpsborg 08",
-    "isFavorite": false,
-    "round": null,
-    "id": "77344e250c56",
-    "homeTeamEntityId": "viking-fk"
   },
   {
     "sport": "football",
@@ -1826,6 +1762,41 @@
     "id": "c5bdaf088d5b",
     "homeTeamEntityId": "ik-start",
     "awayTeamEntityId": "fredrikstad"
+  },
+  {
+    "sport": "esports",
+    "tournament": "Esports World Cup 2026: LCQ - Playoffs",
+    "title": "INFINITE vs 100T",
+    "time": "2026-08-09T09:00:00.000Z",
+    "endTime": null,
+    "venue": "Online",
+    "meta": "Esports World Cup 2026: LCQ - Playoffs",
+    "norwegian": true,
+    "streaming": [
+      {
+        "platform": "Twitch",
+        "url": "https://twitch.tv",
+        "type": "twitch",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "Kick",
+        "url": "https://kick.com",
+        "type": "kick",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "2f6acd84be12"
   },
   {
     "sport": "football",
@@ -3334,6 +3305,52 @@
     "id": "93b5b7128b9c"
   },
   {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Storhamar – Gjerpen (kvinner)",
+    "time": "2026-08-26T16:15:00Z",
+    "endTime": "2026-08-26T17:45:00Z",
+    "venue": "Hamar",
+    "norwegian": true,
+    "homeTeam": "Storhamar",
+    "awayTeam": "Gjerpen",
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/oversikt",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-08T17:05:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.handball.no/nyheter/2026/06/elkjop-ligaen-202627-starter-26.-august",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/oversikt"
+    ],
+    "summary": "Åpningskampen i den aller første Elkjøp-ligaen-sesongen (den øverste norske håndball-toppserien, tidl. REMA 1000-ligaen). Storhamar tar imot Gjerpen på kvinnesiden.\n\nAvkast onsdag 26. august kl. 18.15 CEST (16.15 UTC) i Hamar – bekreftet mot handball.no (offisiell seriekilde) og TV 2s egen terminliste.\n\nNorsk visning: TV 2 Play (TV 2 har den norske toppseriens rettigheter for 2026/27; alle kamper på TV 2 Play, utvalgte på lineær-TV).",
+    "participants": [],
+    "id": "fa8d515d0440",
+    "provenance": {
+      "time": {
+        "sourceId": "handballforbundet",
+        "url": "https://www.handball.no/nyheter/2026/06/elkjop-ligaen-202627-starter-26.-august",
+        "basis": "primary",
+        "retrievedAt": "2026-08-08T17:05:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/oversikt",
+        "basis": "official",
+        "retrievedAt": "2026-08-08T17:05:00Z"
+      }
+    },
+    "homeTeamEntityId": "storhamar-handball",
+    "awayTeamEntityId": "gjerpen-handball"
+  },
+  {
     "sport": "football",
     "tournament": "OBOS-ligaen",
     "title": "Åsane – Lyn",
@@ -3566,6 +3583,50 @@
     }
   },
   {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Bergsøy – Kolstad (menn)",
+    "time": "2026-08-29T16:15:00Z",
+    "endTime": "2026-08-29T17:45:00Z",
+    "venue": "Volda Campus Sparebank1 Arena, Volda",
+    "norwegian": true,
+    "homeTeam": "Bergsøy",
+    "awayTeam": "Kolstad",
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/handball",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-08T17:05:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.handball.no/nyheter/2026/06/elkjop-ligaen-202627-starter-26.-august"
+    ],
+    "summary": "Runde 1 på herresiden i den nye Elkjøp-ligaen. Opprykkslaget Bergsøy tar imot Kolstad (sporet katalog-lag, de siste sesongenes sluttspillvinnere) i sin første toppseriekamp.\n\nAvkast lørdag 29. august kl. 18.15 CEST (16.15 UTC) i Volda – bekreftet mot handball.no (offisiell seriekilde). NB: Sander Sagosen spiller IKKE lenger for Kolstad (til Aalborg fra 2025), så ingen norsk stjerne navngitt her ut over laget.\n\nNorsk visning: TV 2 Play (TV 2 har den norske toppseriens rettigheter for 2026/27).",
+    "participants": [],
+    "id": "ccb1f7bdf25b",
+    "provenance": {
+      "time": {
+        "sourceId": "handballforbundet",
+        "url": "https://www.handball.no/nyheter/2026/06/elkjop-ligaen-202627-starter-26.-august",
+        "basis": "primary",
+        "retrievedAt": "2026-08-08T17:05:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/handball",
+        "basis": "official",
+        "retrievedAt": "2026-08-08T17:05:00Z"
+      }
+    },
+    "awayTeamEntityId": "kolstad-handball"
+  },
+  {
     "sport": "football",
     "tournament": "OBOS-ligaen",
     "title": "Kongsvinger – Lyn",
@@ -3689,92 +3750,5 @@
     "isFavorite": false,
     "round": null,
     "id": "73287bff3c5b"
-  },
-  {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen 2026/27",
-    "title": "Storhamar – Gjerpen (kvinner)",
-    "time": "2026-08-26T16:15:00Z",
-    "endTime": "2026-08-26T17:45:00Z",
-    "venue": "Hamar",
-    "norwegian": true,
-    "homeTeam": "Storhamar",
-    "awayTeam": "Gjerpen",
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/oversikt",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-08T17:05:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.handball.no/nyheter/2026/06/elkjop-ligaen-202627-starter-26.-august",
-      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/oversikt"
-    ],
-    "summary": "Åpningskampen i den aller første Elkjøp-ligaen-sesongen (den øverste norske håndball-toppserien, tidl. REMA 1000-ligaen). Storhamar tar imot Gjerpen på kvinnesiden.\n\nAvkast onsdag 26. august kl. 18.15 CEST (16.15 UTC) i Hamar – bekreftet mot handball.no (offisiell seriekilde) og TV 2s egen terminliste.\n\nNorsk visning: TV 2 Play (TV 2 har den norske toppseriens rettigheter for 2026/27; alle kamper på TV 2 Play, utvalgte på lineær-TV).",
-    "participants": [],
-    "id": "fa8d515d0440",
-    "provenance": {
-      "time": {
-        "sourceId": "handballforbundet",
-        "url": "https://www.handball.no/nyheter/2026/06/elkjop-ligaen-202627-starter-26.-august",
-        "basis": "primary",
-        "retrievedAt": "2026-08-08T17:05:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/oversikt",
-        "basis": "official",
-        "retrievedAt": "2026-08-08T17:05:00Z"
-      }
-    }
-  },
-  {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen 2026/27",
-    "title": "Bergsøy – Kolstad (menn)",
-    "time": "2026-08-29T16:15:00Z",
-    "endTime": "2026-08-29T17:45:00Z",
-    "venue": "Volda Campus Sparebank1 Arena, Volda",
-    "norwegian": true,
-    "homeTeam": "Bergsøy",
-    "awayTeam": "Kolstad",
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/handball",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-08T17:05:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.handball.no/nyheter/2026/06/elkjop-ligaen-202627-starter-26.-august"
-    ],
-    "summary": "Runde 1 på herresiden i den nye Elkjøp-ligaen. Opprykkslaget Bergsøy tar imot Kolstad (sporet katalog-lag, de siste sesongenes sluttspillvinnere) i sin første toppseriekamp.\n\nAvkast lørdag 29. august kl. 18.15 CEST (16.15 UTC) i Volda – bekreftet mot handball.no (offisiell seriekilde). NB: Sander Sagosen spiller IKKE lenger for Kolstad (til Aalborg fra 2025), så ingen norsk stjerne navngitt her ut over laget.\n\nNorsk visning: TV 2 Play (TV 2 har den norske toppseriens rettigheter for 2026/27).",
-    "participants": [],
-    "id": "ccb1f7bdf25b",
-    "provenance": {
-      "time": {
-        "sourceId": "handballforbundet",
-        "url": "https://www.handball.no/nyheter/2026/06/elkjop-ligaen-202627-starter-26.-august",
-        "basis": "primary",
-        "retrievedAt": "2026-08-08T17:05:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/handball",
-        "basis": "official",
-        "retrievedAt": "2026-08-08T17:05:00Z"
-      }
-    }
   }
 ]
