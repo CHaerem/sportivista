@@ -1,6 +1,6 @@
 {
 	"$schema": "./authority.schema.json",
-	"updatedAt": "2026-07-29",
+	"updatedAt": "2026-08-08",
 	"notes": "WP-241 · Autoritetskartet: hvem SKAPER faktumet, per konkurranse på tavla. To kilder per event, fordi produktets to kjernefelt har to ulike skapere: TIDEN settes av arrangøren/ligaen/forbundet, KANALEN av kringkasteren selv. Id-ene peker inn i scripts/config/sources.json (WP-240) — registeret er sannheten om hvilket domene som ER arrangøren, og det er lookalike-vernet: da dette kartet ble seedet sto lookalike-domenet franceletour.com som evidens på en Tour de France-etappe, mens letour.fr (A.S.O., som faktisk lager ruta og starttidene) forekom NULL ganger i hele events.json. Research slår opp konkurransen her og går til autoriteten FØRST (scripts/agents/research.md); verify sjekker kanalen mot kringkasterens egen kilde (scripts/agents/verify.md); scripts/lib/provenance.js migrerer flat evidence til per-faktum-proveniens (WP-242) med det samme kartet. SEEDET 29.07.2026 med hver konkurranse som faktisk sto på tavla den dagen; kanal-valgene speiler .claude/skills/norwegian-rights (prioren) og tavlas verifiserte verdier. AI-VEDLIKEHOLDT som catalog.json: research utvider kartet når en ny konkurranse dekkes — alltid med arrangørens VIRKELIGE domene, registrert i sources.json først.",
 	"competitions": [
 		{
@@ -270,6 +270,22 @@
 					{ "sourceId": "eurosport-no", "platform": "Eurosport" }
 				],
 				"note": "WBD tok ordinær PGA Tour for 2026 (Corales-revert-krigen); The Open + US Open er Viaplays."
+			}
+		},
+		{
+			"id": "handball:elkjop-ligaen",
+			"name": "Elkjøp-ligaen (norsk håndball-toppserie)",
+			"sport": "handball",
+			"match": ["elkjøp-ligaen", "elkjop-ligaen", "rema 1000-ligaen"],
+			"time": {
+				"sourceIds": ["handballforbundet"],
+				"note": "Norges Håndballforbund (handball.no) setter og publiserer terminlisten for den øverste norske serien."
+			},
+			"channel": {
+				"options": [
+					{ "sourceId": "tv2", "platform": "TV 2 Play" }
+				],
+				"note": "TV 2 har den norske toppseriens rettigheter for 2026/27 (handball.no: «Alle kamper kan ses på TV 2 Play, utvalgte på lineære kanaler»). IKKE Viaplay/TV3 — det gjaldt tidligere sesonger; det separate Viaplay↔TV 2-samarbeidet dekker mesterskap/CL, ikke den nasjonale serien."
 			}
 		},
 		{
