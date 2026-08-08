@@ -1891,8 +1891,13 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
+        "url": "https://www.tvkampen.com/kamp/valerenga-bodglimt-1834924",
+        "urlKind": "deep"
+      },
+      {
+        "platform": "TV 2 Sport Premium",
+        "url": "https://www.tvkampen.com/kamp/valerenga-bodglimt-1834924",
+        "urlKind": "deep"
       }
     ],
     "participants": [],
@@ -1921,8 +1926,13 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
+        "url": "https://www.tvkampen.com/kamp/viking-sarpsborg-08-1834925",
+        "urlKind": "deep"
+      },
+      {
+        "platform": "TV 2 Sport Premium",
+        "url": "https://www.tvkampen.com/kamp/viking-sarpsborg-08-1834925",
+        "urlKind": "deep"
       }
     ],
     "participants": [],
@@ -1995,8 +2005,13 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
+        "url": "https://www.tvkampen.com/kamp/start-fredrikstad-1834923",
+        "urlKind": "deep"
+      },
+      {
+        "platform": "TV 2 Sport Premium",
+        "url": "https://www.tvkampen.com/kamp/start-fredrikstad-1834923",
+        "urlKind": "deep"
       }
     ],
     "participants": [],
@@ -2788,13 +2803,11 @@
     "sport": "football",
     "tournament": "Eliteserien",
     "title": "Rosenborg – Viking",
-    "time": "2026-08-14T17:00:00Z",
+    "time": "2026-08-14T17:00:00.000Z",
     "endTime": null,
-    "venue": "Lerkendal Stadion, Trondheim",
+    "venue": "Lerkendal Stadion",
+    "meta": "Eliteserien",
     "norwegian": true,
-    "homeTeam": "Rosenborg",
-    "awayTeam": "Viking",
-    "norwegianPlayers": [],
     "streaming": [
       {
         "platform": "TV 2 Play",
@@ -2802,39 +2815,20 @@
         "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-07-30T17:50:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
-      "https://www.fotball.no/turneringer/eliteserien/2026/eliteserien-slik-spilles-runde-13-til-22/"
-    ],
-    "summary": "Eliteserien-kamp på Lerkendal – Rosenborg (sporet klubb) mot Viking i den engelske ukas fredagskamp.\n\nAvspark fredag 14. august kl. 19.00 CEST (17.00 UTC) – TV 2s faste fredagsslot, bekreftet på fotball.no-terminlisten. Eksakt avspark kan justeres 30–60 min hvis TV-valget endres nærmere kampdag.\n\nNorsk visning: TV 2 Play / TV 2 Sport. Lagt til manuelt fordi den statiske fotball-fetcheren ikke produserer Eliteserie-kamper (football.json foreldet).",
     "participants": [],
-    "id": "79ea78be0a9d",
-    "provenance": {
-      "time": {
-        "sourceId": "fotball-no",
-        "url": "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
-        "basis": "primary",
-        "retrievedAt": "2026-07-30T17:50:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-07-30T17:50:00Z"
-      }
-    },
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Rosenborg",
+    "awayTeam": "Viking",
+    "isFavorite": true,
+    "round": null,
+    "id": "220b548bc38e",
     "homeTeamEntityId": "rosenborg",
     "awayTeamEntityId": "viking-fk",
-    "verifiedAt": "2026-08-07T06:45:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.foxsports.com/soccer/norwegian-eliteserien-rosenborg-vs-viking-fk-aug-14-2026-game-boxscore-648993",
-      "https://www.fotmob.com/teams/8422/overview/rosenborg"
-    ]
+    "summary": "Eliteserien-kamp på Lerkendal – Rosenborg (sporet klubb) mot Viking i den engelske ukas fredagskamp.\n\nAvspark fredag 14. august kl. 19.00 CEST (17.00 UTC) – TV 2s faste fredagsslot, bekreftet på fotball.no-terminlisten. Eksakt avspark kan justeres 30–60 min hvis TV-valget endres nærmere kampdag.\n\nNorsk visning: TV 2 Play / TV 2 Sport. Lagt til manuelt fordi den statiske fotball-fetcheren ikke produserer Eliteserie-kamper (football.json foreldet)."
   },
   {
     "sport": "football",
