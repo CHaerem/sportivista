@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T05:45:07.013Z",
+  "generatedAt": "2026-08-09T06:52:04.587Z",
   "windowDays": 14,
   "ports": {
     "coverage": "green",
@@ -25,7 +25,7 @@
       "medium": 0,
       "low": 1
     },
-    "oldestGapAgeDays": 0.1,
+    "oldestGapAgeDays": 0.15,
     "escalatable": 0,
     "catalogMatched": 1,
     "auditedAt": "2026-08-09T03:15:00Z",
@@ -33,7 +33,7 @@
       {
         "interest": "Friidrett — Wanda Diamond League-finalen (Memorial Van Damme, Brussel)",
         "severity": "low",
-        "ageDays": 0.1,
+        "ageDays": 0.15,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -43,11 +43,11 @@
     "nearTermRate": 0,
     "nearTermChecked": 6,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-08-08T06:10:00Z",
+    "verifyRunAt": "2026-08-09T06:15:00Z",
     "windowRate": 0,
-    "windowChecks": 85,
+    "windowChecks": 91,
     "windowAmendments": 0,
-    "windowCorrections": 9,
+    "windowCorrections": 10,
     "byDay": [
       {
         "date": "2026-07-27",
@@ -139,24 +139,32 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-08-09",
+        "checks": 6,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-09T05:45:04.860Z",
+    "buildCheckedAt": "2026-08-09T06:52:00.234Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-09T05:07:19.399Z",
-    "manifestAgeHours": 0.63,
+    "manifestGeneratedAt": "2026-08-09T05:45:10.297Z",
+    "manifestAgeHours": 1.12,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-08-08T06:10:00Z",
-    "verifyAgeHours": 23.59,
-    "corrections": 1,
+    "checkedAt": "2026-08-09T06:15:00Z",
+    "verifyAgeHours": 0.62,
+    "corrections": 2,
     "unresolved": 0,
     "signals": [
-      "Ovrige i-vindu-events (TdF Femmes etappe 9, EM friidrett Birmingham, EWC sjakk, EWC CS2 gruppespill, UEFA Super Cup, Stabaek–Lyn, Danish Golf, FedEx St. Jude…"
+      "Tour de Pologne 2026: avsluttende tempo (etappe 7 ITT Wieliczka) i dag 9. aug — Dversnes (Uno-X) fortsatt i lopet, ingen DNF (WP-95 deltakelse OK). Re-bekref…",
+      "TdF Femmes etappe 9 (Nice–Nice, avsluttende fjelletappe i dag): Aalerud/Haugset/Edseth aktive, ingen norsk DNF; starttid 14.05 UTC matcher A.S.O. Re-bekrefte…"
     ]
   }
 }

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-09T05:45:10.159Z",
+  "generatedAt": "2026-08-09T06:52:05.984Z",
   "windowDays": 180,
   "records": {
-    "used": 193,
+    "used": 199,
     "skipped": 0
   },
   "sources": {
@@ -1071,50 +1071,54 @@
       "reliability": null
     },
     "letourfemmes.fr": {
-      "checks": 9,
-      "agreed": 9,
+      "checks": 10,
+      "agreed": 10,
       "corrections": 1,
       "bySport": {
         "cycling": {
-          "checks": 9,
-          "agreed": 9
+          "checks": 10,
+          "agreed": 10
         }
       },
       "byField": {
         "existence": {
-          "checks": 4,
-          "agreed": 4
+          "checks": 5,
+          "agreed": 5
         },
         "time": {
           "checks": 5,
           "agreed": 5
         }
       },
-      "lastChecked": "2026-08-08T06:10:00Z",
+      "lastChecked": "2026-08-09T06:15:00Z",
       "reliability": 1
     },
     "tv2.no": {
-      "checks": 3,
-      "agreed": 3,
-      "corrections": 0,
+      "checks": 5,
+      "agreed": 5,
+      "corrections": 1,
       "bySport": {
         "cycling": {
           "checks": 1,
           "agreed": 1
         },
         "football": {
-          "checks": 2,
-          "agreed": 2
+          "checks": 4,
+          "agreed": 4
         }
       },
       "byField": {
         "streaming": {
-          "checks": 3,
-          "agreed": 3
+          "checks": 4,
+          "agreed": 4
+        },
+        "time": {
+          "checks": 1,
+          "agreed": 1
         }
       },
-      "lastChecked": "2026-08-06T08:05:00Z",
-      "reliability": null
+      "lastChecked": "2026-08-09T06:15:00Z",
+      "reliability": 1
     },
     "fotball.no": {
       "checks": 2,
@@ -1506,22 +1510,22 @@
       "reliability": null
     },
     "procyclingstats.com": {
-      "checks": 2,
-      "agreed": 2,
+      "checks": 3,
+      "agreed": 3,
       "corrections": 0,
       "bySport": {
         "cycling": {
-          "checks": 2,
-          "agreed": 2
+          "checks": 3,
+          "agreed": 3
         }
       },
       "byField": {
         "existence": {
-          "checks": 2,
-          "agreed": 2
+          "checks": 3,
+          "agreed": 3
         }
       },
-      "lastChecked": "2026-08-06T08:05:00Z",
+      "lastChecked": "2026-08-09T06:15:00Z",
       "reliability": null
     },
     "procyclinguk.com": {
@@ -1640,6 +1644,44 @@
         }
       },
       "lastChecked": "2026-08-08T06:10:00Z",
+      "reliability": null
+    },
+    "eevza.eu": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "beach volleyball": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "existence": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-09T06:15:00Z",
+      "reliability": null
+    },
+    "cev.eu": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "beach volleyball": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "streaming": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-09T06:15:00Z",
       "reliability": null
     }
   }
