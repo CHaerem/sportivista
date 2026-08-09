@@ -3817,5 +3817,49 @@
     "isFavorite": false,
     "round": null,
     "id": "73287bff3c5b"
+  },
+  {
+    "sport": "athletics",
+    "tournament": "Wanda Diamond League",
+    "title": "Diamond League-finalen (Memorial Van Damme, Brussel)",
+    "time": "2026-09-04T18:00:00Z",
+    "endTime": "2026-09-05T20:30:00Z",
+    "venue": "King Baudouin Stadium, Brussel",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-09T13:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://brussels.diamondleague.com/en/this-is-the-2026-wanda-diamond-league-calendar-with-a-two-day-final-in-brussels/",
+      "https://www.diamondleague.com/calendar/",
+      "https://kommunikasjon.ntb.no/pressemelding/18535635/nrk-sikrer-seg-diamond-league-til-2029"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "diamond-league",
+        "url": "https://brussels.diamondleague.com/en/this-is-the-2026-wanda-diamond-league-calendar-with-a-two-day-final-in-brussels/",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-09T13:20:00Z",
+        "note": "Dato 4.–5. sept (King Baudouin Stadium, Brussel) og to-dagers finaleformat bekreftet HIGH mot arrangørens egen side + DL-kalenderen + worldathletics.org (uavhengig write-time fact-check 9. aug, alle enige). Eksakte øktstarter IKKE offisielt publisert ennå (timeplanen slippes typisk ~1–2 uker før, etter Zürich) – 20.00 CEST (18.00 UTC) 4. sept er et foreløpig anslag basert på DL-kveldsstevner; verify setter ekte tid + deep NRK-url når timeplanen kommer."
+      },
+      "streaming": {
+        "sourceId": "nrk",
+        "url": "https://tv.nrk.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-09T13:20:00Z",
+        "note": "NRK har Diamond League-rettighetene i Norge t.o.m. 2029."
+      }
+    },
+    "summary": "Diamond League-finalen 2026 – sesongavslutningen der alle 32 Diamond League-mesterne kåres. To-dagers finale på King Baudouin Stadium i Brussel (Allianz Memorial Van Damme), fredag 4. og lørdag 5. september.\n\nEksakt øktstart er ikke publisert ennå – tiden på tavla (~20.00 CEST / 18.00 UTC 4. sept) er foreløpig og firmes opp når arrangøren slipper timeplanen (typisk ~1–2 uker før, etter Zürich 27. aug). Norsk deltakelse (Jakob Ingebrigtsen, Karsten Warholm, Henriette Jæger, Sondre Guttormsen) er ventet, men finalefeltet avgjøres av sammenlagtpoengene og låses først etter siste kvalifiseringsstevne – ikke offisielt bekreftet ennå.\n\nNorsk visning: NRK (Diamond League-rettighetene i Norge t.o.m. 2029)."
   }
 ]
