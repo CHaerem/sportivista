@@ -1,35 +1,41 @@
 {
-  "auditedAt": "2026-08-08T04:55:00Z",
+  "auditedAt": "2026-08-09T03:15:00Z",
   "horizonDays": 28,
-  "gaps": [],
-  "sourceIssues": [
+  "gaps": [
     {
-      "source": "Statisk golf-fetcher (docs/data/golf.json, ESPN + PGA Tour)",
-      "issue": "RESOLVED 2026-08-08: golf.json er IKKE lenger stale-retained. Filen er fersk (lastUpdated 2026-08-07T22:27:14Z), _retained-stempelet er borte, og coverage-gaps.json (2026-08-07T22:27:57Z) har anomalyCount 0 — ingen golf-anomaly denne kjøringen. Innholdet er ekte ferske data: Wyndham Championship (6.-9. aug) med live tee-tider for Kristoffer Ventura (20:11, teeTimeUTC 2026-08-07T18:11Z), streaming (HBO Max/Eurosport) og 147 spillere. Forrige audit (2026-08-07T02:00Z) rapporterte denne som HIGH i 37 sammenhengende retentions / 4 døgn og som SELF-REPAIR-arbeid; fetcheren har nå gjenopprettet seg (self-repair eller endpoint-recovery). Beholdt som historikk. Med dette har hele retainLastGood-skjuler-død-fetcher-mønsteret selv-gjenopprettet på alle tre observerte fetchere: esports (6. aug), tennis (7. aug), golf (8. aug).",
-      "impact": "Ingen — golf-fetcheren produserer fersk data igjen. FedEx-sluttspillet (St. Jude 13.-16., BMW 20., Tour Championship 27. aug — Hovland) er fortsatt ai-research-dekket og inne.",
-      "severity": "resolved"
+      "interest": "Friidrett — Wanda Diamond League-finalen (Memorial Van Damme, Brussel)",
+      "whatsMissing": "DL-finalen 4.-5. sept 2026 (Brussel) står ikke på tavla, selv om alle de mellomliggende DL-stevnene gjør det (Athletissima Lausanne 21. aug, Silesia 23. aug, Weltklasse Zürich 27. aug). Finalen er sesongavslutningen med sannsynlig norsk deltakelse (Ingebrigtsen/Warholm).",
+      "why": "Horisont-hull nær 28-dagersgrensa (Aug 9 + 28 = 6. sept). DL-kalenderen (olympics.com/diamondleague.com) bekrefter Brussel-finalen 4.-5. sept; tavlas siste friidrettsflate er Weltklasse Zürich 27. aug. Research fyller vanligvis den nære horisonten først, så dette dukker trolig opp av seg selv når det kryper innenfor tettere horisont — derfor lav alvorlighet, ikke eskalert.",
+      "corroboration": ["https://www.olympics.com/en/news/diamond-league-2026-full-schedule-events", "https://www.diamondleague.com/calendar/"],
+      "suggestedSource": "https://www.diamondleague.com/calendar/",
+      "severity": "low",
+      "firstSeen": "2026-08-09T03:15:00Z",
+      "recurrences": 0
     }
   ],
+  "sourceIssues": [],
   "coveredWell": [
-    "IMMINENT (8.-12. aug) web-rekonfirmert mot uavhengige kilder — INGEN HIGH-hull:",
-    "F1 — ESPN-BLINDSONE (source-quirks-mandat, sjekket hver kjøring) web-rekonfirmert mot en.wikipedia.org/2026_Dutch_Grand_Prix + formula1.com: sommerpause etter Ungarns GP (26. juli); neste = Nederlands GP 21.-23. aug (Zandvoort, race søn 23. aug — sesongens 12. runde, sprinthelg, 5. av 6 sprinter og FØRSTE gang Nederlands GP kjører sprint). På tavla som sprintkval 21. aug + sprint 22. aug + kval 22. aug + race 23. aug — riktig sprintstruktur. Tom F1-tavla 8.-12. aug = KORREKT fravær, ikke ESPN-mis-datering. f1.json bekrefter òg (Dutch GP 23. aug + Italiensk GP 6. sep).",
-    "Fotball Eliteserien runde 17 (8.-9. aug) — alle kamper inne MED reschedule web-rekonfirmert mot fotball.no (NFF): Start–Fredrikstad flyttet til lør 8. aug 18:00 (tavla 16:00 UTC ✓) og Lillestrøm–Rosenborg flyttet til søn 9. aug 14:30 (politiet ba om flytting; tavla 12:30 UTC ✓) — begge riktige på tavla. football.json coverageRatio 1 (7/7 ligaer, 0 feilet). OBOS: Stabæk–Lyn 8. aug inne.",
-    "Friidrett — EM Birmingham 10.-16. aug web-rekonfirmert (BBC-dekning; Alexander Stadium) — Warholm/Ingebrigtsen/Rooth. På tavla f.o.m. 10. aug. INGEN friidretts-VM i 2026 (partallsår → kun EM).",
-    "Sykkel — Tour de France Femmes: etappe 8 (Sisteron–Nice) 8. aug + etappe 9 (Nice, avslutning) 9. aug inne. Tour de Pologne (Uno-X) t.o.m. 9. aug inne.",
-    "Golf — Wyndham Championship 6.-9. aug inne (fersk statisk fetcher, se sourceIssue RESOLVED).",
-    "Sjakk — Sinquefield Cup f.o.m. 8. aug + EWC-sjakk (Carlsen) f.o.m. 11. aug inne.",
-    "Tennis — Casper Ruud i National Bank Open (Montreal, fleirdags t.o.m. 14. aug) inne; Cincinnati Open f.o.m. 13. aug inne. tennis.json coverageRatio 1 (gjenopprettet).",
-    "Esports — EWC CS2 gruppespill 12. aug inne.",
-    "HORISONT (8. aug-5. sept) — alle katalog-flater inne: Golf FedEx-sluttspill (St. Jude 13.-16., BMW 20., Tour Championship 27. aug — Hovland); Sykkel Arctic Race of Norway 13.-16. aug + Vuelta a España f.o.m. 22. aug; Tennis Cincinnati 13.-24. aug + US Open f.o.m. 30. aug (Ruud); Friidrett Athletissima Lausanne 21. aug + Silesia 23. aug + Weltklasse Zürich 27. aug; Fotball: PL-sesongåpning for ALLE katalog-lag (Arsenal–Man City 16. aug, Man City–Bournemouth + Newcastle–Liverpool 23. aug), La Liga (Real Madrid + Barcelona f.o.m. 22. aug), UEFA Super Cup PSG–Aston Villa 12. aug, europacup-kvalik Glimt–Union SG + Apollon–Brann 11. aug, Eliteserien runde 18-flater inne."
+    "IMMINENT (9.-13. aug) web-rekonfirmert mot uavhengige kilder — INGEN HIGH-hull:",
+    "F1 — ESPN-BLINDSONE (source-quirks-mandat, sjekket hver kjøring) web-rekonfirmert mot formula1.com + racingnews365.com: sommerpause etter Ungarns GP; neste = Nederlands GP 21.-23. aug (Zandvoort, race søn 23. aug 15:00 CET — sesongens 12. runde av 22, sprinthelg, Zandvoorts FØRSTE F1-sprint). Tom F1-tavla 9.-13. aug = KORREKT fravær, ikke ESPN-mis-datering. Tavla har riktig sprintstruktur (sprintkval 21. + sprint/kval 22. + race 23.); f1.json bekrefter òg (Dutch GP 23. aug + Italiensk GP 6. sep inne).",
+    "Fotball Eliteserien runde 17 (søn 9. aug) — søndagskampene inne: Lillestrøm–Rosenborg 12:30, HamKam–Aalesund 15:00, Kristiansund–Molde 17:15 (fre/lør-kampene spilt og droppet som fortid). en.wikipedia.org/2026_Eliteserien bekrefter runde 17 spilt t.o.m. 8. aug. football.json fersk (lastUpdated 02:44Z, ingen _retained). OBOS: Stabæk–Lyn 8. aug inne.",
+    "Fotball europacup-kvalik (11. aug) inne: Bodø/Glimt–Union Saint-Gilloise + Apollon Limassol–Brann — begge katalog-lag, begge på tavla.",
+    "Friidrett — EM Birmingham 10.-16. aug inne (Warholm/Ingebrigtsen/Rooth). INGEN friidretts-VM i 2026 (partallsår → kun EM). Ingen DL-stevne 9.-13. aug (neste = Lausanne 21. aug, web-bekreftet).",
+    "Sykkel — Tour de France Femmes avslutning (etappe 9, Nice) 9. aug inne; Arctic Race of Norway 13.-16. aug inne. Ingen katalog-tier sykkelløp i mellomrommet 10.-12. aug (Vuelta f.o.m. 22. aug inne).",
+    "Golf — FedEx St. Jude Championship f.o.m. 13. aug inne; golf.json fersk (lastUpdated 02:44Z, ingen _retained — den tidligere stale-retained-tilstanden fra 4.-8. aug forblir RESOLVED).",
+    "Sjakk — Sinquefield Cup f.o.m. 10. aug + EWC-sjakk (Carlsen) f.o.m. 11. aug inne.",
+    "Tennis — Cincinnati Open f.o.m. 13. aug inne (Ruud). US Open f.o.m. 30. aug inne.",
+    "Esports — INFINITE vs 100 Thieves (EWC CS2) 9. aug + EWC CS2 gruppespill 12. aug inne.",
+    "Beach — Sandvolleyball-EM (Mol/Sørum) 12. aug inne (ai-research-bonus, ikke katalogsport).",
+    "HORISONT (9. aug-6. sept) — katalog-flatene inne: Golf FedEx-sluttspill (St. Jude 13.-16., BMW 20., Tour Championship 27. aug — Hovland); Sykkel Arctic Race 13.-16. aug + Vuelta a España f.o.m. 22. aug; Tennis Cincinnati 13.-24. aug + US Open f.o.m. 30. aug (Ruud); Friidrett Lausanne 21. + Silesia 23. + Zürich 27. aug (DL-finalen Brussel 4.-5. sept = eneste lav-hull, se gaps); Fotball PL-åpning for alle katalog-lag (Arsenal–Man City 16. aug, Man City–Bournemouth + Newcastle–Liverpool 23. aug), La Liga (Real Madrid + Barcelona f.o.m. 22. aug), UEFA Super Cup PSG–Aston Villa 12. aug, Eliteserien/OBOS runde 18-flater + Lyn-kamper inne; Handball REMA 1000-ligaen starter (Storhamar–Gjerpen 26., Bergsøy–Kolstad 29. aug inne); F1 Nederlands GP 21.-23. + Italiensk GP 6. sept inne."
   ],
   "escalated": false,
   "notes": [
-    "Kjøring 2026-08-08 ~04:55Z (recall-audit). IMMINENT-PASS (8.-12. aug) kjørt først: INGEN HIGH-hull. Alt som skjer denne helgen er web-rekonfirmert mot uavhengige kilder og står på tavla. Ingen eskalering, ingen escalate.request skrevet.",
-    "F1-BLINDSONEN (source-quirks-mandat): web-rekonfirmert som KORREKT tomrom. Sommerpause t.o.m. Nederlands GP 21.-23. aug; en.wikipedia.org/2026_Dutch_Grand_Prix bekrefter race søn 23. aug, 12. runde, sprinthelg. Tavlas sprintstruktur (sprintkval/sprint/kval/race) er riktig. Ingen mis-datering å kompensere for denne kjøringen.",
-    "GOLF STALE-RETAINED (forrige audits HIGH i 4 døgn) → RESOLVED. golf.json er fersk (lastUpdated 22:27Z, ingen _retained, ekte Wyndham-tee-tider), og coverage-gaps.json har anomalyCount 0. Fetcheren har gjenopprettet seg. Dermed har retainLastGood-mønsteret selv-gjenopprettet på alle tre fetchere (esports 6., tennis 7., golf 8. aug) — mønsteret er ute av live-tilstand. IKKE eskalert (ikke lenger et hull).",
-    "MEKANISKE COVERAGE-GAPS (coverage-gaps.json 2026-08-07T22:27Z: 4 entity-gaps, 0 anomalier) TRIAGERT: alle 4 er ren overgangs-/styringsnyhetsstøy fra guardian-football (Rodri-bud fra City til Barcelona ×3-alias, Romero-rykte til Arsenal) — ingen reelle event-hull. Katalog-lagenes faktiske kamper (PL/La Liga-åpninger) er inne.",
-    "HORISONT-PASS (8. aug-5. sept): alle katalog-flater sjekket mot forventet kalender; ingen nye forsvarlige hull. PL-/La Liga-sesongåpninger for alle katalog-lag verifisert på tavla (Liverpool, Man City, Arsenal, Barcelona, Real Madrid). Forrige to audits (6. + 7. aug) hadde òg gaps=[] → recurrences-sporet tomt, ingen tilbakevendende event-gap å eskalere.",
-    "SJEKKET, KORREKT FRAVÆR (ikke hull): F1 sommerpause (neste Dutch GP 23. aug inne); vinteridretter (av-sesong aug); håndball (av-sesong — REMA 1000-ligaen/EHF CL gruppespill ~sept.); INGEN friidretts-VM i 2026 (kun EM Birmingham, inne).",
-    "OVER HORISONTEN, VAKT: CL/EL/UECL playoff-runde (19.-27. aug) for Glimt/Brann er kontingent på kvalikresultat (Glimt–Union SG + Apollon–Brann 11. aug, begge inne) → kan ikke boardes ennå, ikke et hull. 100 Thieves videre i EWC CS2 (12.-23. aug) kontingent på seeding → gruppespill-entry inne, individuelle 100T-kamper boardes når seeding er kjent."
+    "Kjøring 2026-08-09 ~03:15Z (recall-audit). IMMINENT-PASS (9.-13. aug) kjørt først: INGEN HIGH-hull. Alt som skjer denne helgen er web-rekonfirmert mot uavhengige kilder og står på tavla med riktig struktur. Ingen eskalering, ingen escalate.request skrevet.",
+    "F1-BLINDSONEN (source-quirks-mandat): web-rekonfirmert som KORREKT tomrom mot formula1.com + racingnews365.com. Sommerpause t.o.m. Nederlands GP 21.-23. aug (runde 12/22, Zandvoorts første sprinthelg, race søn 23. aug 15:00 CET). Tavlas sprintstruktur riktig. Ingen mis-datering å kompensere for denne kjøringen.",
+    "MEKANISKE COVERAGE-GAPS (coverage-gaps.json 2026-08-09T02:45Z: 2 entity-gaps, 0 anomalier) TRIAGERT: begge (Barcelona, Liverpool) stammer fra ÉN guardian-football overgangssak (Araújo på lån fra Barcelona til Liverpool) — ren transfer-nyhetsstøy, ikke reelle event-hull. Begge lags faktiske kamper (PL-/La Liga-åpninger) er inne på tavla. anomalyCount 0 → ingen fetcher-uro; football.json og golf.json begge ferske uten _retained.",
+    "GOLF STALE-RETAINED (forrige audits' HIGH-tema fra 4.-8. aug): forblir RESOLVED. golf.json fersk (lastUpdated 02:44Z, ingen _retained). Ingen sourceIssue denne kjøringen.",
+    "HORISONT-PASS (9. aug-6. sept): alle katalog-flater sjekket mot forventet kalender. ETT lav-hull funnet og loggført: Wanda Diamond League-finalen (Brussel, 4.-5. sept) mangler mens de mellomliggende DL-stevnene er inne. Web-bekreftet (diamondleague.com/olympics.com). Lav alvorlighet — nær 28-dagersgrensa, ikke imminent, research fyller trolig når det kryper nærmere; ikke eskalert. recurrences 0 (nytt; forrige tre audits hadde gaps=[]).",
+    "SJEKKET, KORREKT FRAVÆR (ikke hull): F1 sommerpause (neste Dutch GP 23. aug inne); vinteridretter (av-sesong aug); friidretts-VM (finnes ikke i 2026 — kun EM Birmingham, inne); ingen DL-stevne 9.-13. aug; ingen katalog-tier sykkelløp 10.-12. aug (mellom TdF Femmes-slutt og Arctic Race).",
+    "OVER HORISONTEN, VAKT: CL/EL/UECL playoff-runde (~19.-27. aug) for Glimt/Brann kontingent på kvalikresultat (Glimt–Union SG + Apollon–Brann 11. aug, begge inne) → boardes når resultat er kjent, ikke et hull. 100 Thieves videre i EWC CS2 (12.-23. aug) kontingent på seeding → gruppespill-entry inne, individuelle 100T-kamper boardes når seeding er kjent. Tidlig-sept landslagsvindu (~3.-8. sept): ingen forsvarlig katalogkamp bekreftet ennå (WC 2026 ferdig i juli) → ikke flagget."
   ]
 }
