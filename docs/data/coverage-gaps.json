@@ -1,31 +1,8 @@
 {
-  "generatedAt": "2026-08-09T15:28:41.887Z",
-  "gapCount": 2,
+  "generatedAt": "2026-08-09T16:31:22.440Z",
+  "gapCount": 0,
   "anomalyCount": 0,
-  "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Liverpool",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Hevder stopperkjempe er klar for Liverpool",
-      "link": "https://www.tv2.no/a/19112593",
-      "feed": "tv2-sport",
-      "matchCount": 3,
-      "detectedAt": "2026-08-09T15:28:40.715Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Spirit",
-      "type": "missing",
-      "imminent": false,
-      "headline": "'We’re not just here to finish, but we also want to show ourselves' – Lotto-Intermarché fight through crashes and heatstroke at Tour de France Femmes to make it to Nice with three riders",
-      "link": "https://www.cyclingnews.com/pro-cycling/womens-cycling/were-not-just-here-to-finish-but-we-also-want-to-show-ourselves-lotto-intermarche-fight-through-crashes-and-heatstroke-at-tour-de-france-femmes-to-make-it-to-nice-with-three-riders/",
-      "feed": "cyclingnews",
-      "matchCount": 1,
-      "detectedAt": "2026-08-09T15:28:40.715Z"
-    }
-  ],
+  "gaps": [],
   "anomalies": [],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
 }
