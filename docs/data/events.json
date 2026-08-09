@@ -1020,11 +1020,12 @@
     ],
     "summary": "Tour de Pologne 2026 (83. utgave, UCI WorldTour) kjøres over sju etapper 3.–9. august, fra Gdynia til Wieliczka. Åpningsetappen mandag 3. aug går Gdynia–Koszalin (234 km, kupert langs Pommern-kysten); løpet avsluttes med en kort tempoetappe i Wieliczka søndag 9. aug.\n\nNorsk vinkel: Uno-X Mobility kjører, med Fredrik Dversnes på den (foreløpige) startlista — full tropp er ikke låst ennå.\n\nEksakt starttidspunkt for etappe 1 er ikke offisielt publisert — tiden over er et anslag (confidence medium); verify berammer nærmere start. Norsk visning HBO Max (Sport)/Eurosport Norge — WBD flyttet Grand Tour-/Eurosport-sykkelen til HBO Max i Norge fra 2026.",
     "id": "fa5c1f99c301",
-    "verifiedAt": "2026-08-08T06:10:00Z",
+    "verifiedAt": "2026-08-09T06:15:00Z",
     "verificationStatus": "confirmed",
     "verificationSources": [
-      "https://en.wikipedia.org/wiki/2026_Tour_de_Pologne",
-      "https://www.cyclingnews.com/tour-de-pologne/"
+      "https://www.procyclingstats.com/race/tour-de-pologne/2026/stage-7/result/result",
+      "https://en.wikipedia.org/wiki/Fredrik_Dversnes",
+      "https://www.tourdepologne.pl/en/stage-7/"
     ],
     "provenance": {
       "time": {
@@ -1773,10 +1774,11 @@
       }
     },
     "verificationStatus": "amended",
-    "verifiedAt": "2026-08-05T08:05:00Z",
+    "verifiedAt": "2026-08-09T06:15:00Z",
     "verificationSources": [
-      "https://procyclinguk.com/uno-x-mobility-confirms-tour-de-france-femmes-2026-squad/",
-      "https://en.wikipedia.org/wiki/2026_Tour_de_France_Femmes"
+      "https://www.cyclingnews.com/pro-cycling/womens-cycling/tour-de-france-femmes-2026-stage-9-preview/",
+      "https://www.letourfemmes.fr/en/rankings/stage-9",
+      "https://www.letourfemmes.fr/en/stage-9"
     ]
   },
   {
@@ -2205,12 +2207,19 @@
         "sourceId": "cev",
         "url": "https://eurobeachvolley.cev.eu/en/2026/",
         "basis": "official",
-        "retrievedAt": "2026-08-09T02:45:00Z",
-        "note": "CEVs egen EuroVolley.tv-strøm er bekreftet visning; NORSK kringkaster (NRK/VGTV/TV 2) IKKE bekreftet denne kjøringen — ikke gjettet. Verify sjekker norsk kanal."
+        "retrievedAt": "2026-08-09T06:15:00Z",
+        "note": "CEVs egen EuroVolley.tv (+ offisiell CEV-YouTube) er bekreftet visning; Mol/Sørum bekreftet i herrenes pulje C (EEVZA/CEV). NORSK kringkaster (NRK/VGTV/TV 2) fortsatt IKKE bekreftet for 2026-utgaven (tv2.no/direkte-treffene gjelder EM 2025) — ikke gjettet. Verify følger opp naar norsk kanal annonseres."
       }
     },
     "summary": "Sandvolleyball-EM (EuroBeachVolley 2026) i Stare Jabłonki, Polen, 12.–16. august. Anders Mol og Christian Sørum – regjerende olympiske mestere (Tokyo + Paris) og femdobbelte europamestere – jakter sin sjette strake EM-tittel; de er trukket i herrenes pulje C (bekreftet mot CEV/EEVZA puljetrekning).\n\nPuljespill fra 12. august, medaljekamper 16. august. Eksakte kamptider for Mol/Sørum er ennå ikke publisert (økt-timeplanen slippes nærmere start) – starttiden over er et anslag for åpningsdagen, ikke et bekreftet klokkeslett.\n\nGratis/offisiell visning på CEVs EuroVolley.tv; norsk kringkaster er ikke bekreftet ennå (verify følger opp).",
-    "id": "2ff183c5f4a1"
+    "id": "2ff183c5f4a1",
+    "verifiedAt": "2026-08-09T06:15:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://eevza.eu/mouth-watering-fixtures-emerge-from-eurobeachvolley-pool-phase-draw/",
+      "https://beachevents.cev.eu/beach/competition/1838",
+      "https://ebv2026.pl/en/"
+    ]
   },
   {
     "sport": "esports",
@@ -2602,8 +2611,8 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
+        "url": "https://play.tv2.no/sport/fotball/obos-ligaen-28ve6m56/odd-lyn-mqwc9fg4",
+        "urlKind": "deep"
       }
     ],
     "source": "ai-research",
@@ -2623,9 +2632,22 @@
         "url": "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
         "basis": "primary",
         "retrievedAt": "2026-07-17T04:00:00Z",
-        "note": "migrert mekanisk fra evidence (WP-242)"
+        "note": "Avspark 16.00 CEST (14.00 UTC) per fotball.no (tidsautoritet). TV 2 Plays kampflis viser 15.55 CEST — 5-min-avvik ikke amendert (holdt paa federasjonens verdi), verify foelger."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/fotball/obos-ligaen-28ve6m56/odd-lyn-mqwc9fg4",
+        "basis": "official",
+        "retrievedAt": "2026-08-09T06:15:00Z",
+        "note": "TV 2 Play (rettighetshaver OBOS-ligaen) har egen kampside for Lyn–Odd — bekreftet norsk visning, deep-linket. NB: TV 2s kampflis viser avspark 15.55 CEST mot fotball.nos 16.00; 5-min-avvik holdt paa fotball.nos 16.00 (tidsautoritet) inntil neste verify firmer, kan vaere TV-berammet."
       }
-    }
+    },
+    "verifiedAt": "2026-08-09T06:15:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://play.tv2.no/sport/fotball/obos-ligaen-28ve6m56/odd-lyn-mqwc9fg4",
+      "https://www.fotball.no/fotballdata/turnering/hjem/?fiksId=206093"
+    ]
   },
   {
     "sport": "football",
