@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T05:07:18.063Z",
+  "generatedAt": "2026-08-09T05:45:07.013Z",
   "windowDays": 14,
   "ports": {
     "coverage": "green",
@@ -19,17 +19,25 @@
     ]
   },
   "coverage": {
-    "openGaps": 0,
+    "openGaps": 1,
     "bySeverity": {
       "high": 0,
       "medium": 0,
-      "low": 0
+      "low": 1
     },
-    "oldestGapAgeDays": null,
+    "oldestGapAgeDays": 0.1,
     "escalatable": 0,
-    "catalogMatched": 0,
-    "auditedAt": "2026-08-08T04:55:00Z",
-    "gaps": []
+    "catalogMatched": 1,
+    "auditedAt": "2026-08-09T03:15:00Z",
+    "gaps": [
+      {
+        "interest": "Friidrett — Wanda Diamond League-finalen (Memorial Van Damme, Brussel)",
+        "severity": "low",
+        "ageDays": 0.1,
+        "recurrences": 0,
+        "catalogMatched": true
+      }
+    ]
   },
   "amendRate": {
     "nearTermRate": 0,
@@ -136,15 +144,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-09T05:07:13.963Z",
+    "buildCheckedAt": "2026-08-09T05:45:04.860Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-09T02:45:26.737Z",
-    "manifestAgeHours": 2.36,
+    "manifestGeneratedAt": "2026-08-09T05:07:19.399Z",
+    "manifestAgeHours": 0.63,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-08-08T06:10:00Z",
-    "verifyAgeHours": 22.96,
+    "verifyAgeHours": 23.59,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
