@@ -1,8 +1,31 @@
 {
-  "generatedAt": "2026-08-09T21:28:48.428Z",
-  "gapCount": 0,
+  "generatedAt": "2026-08-09T22:22:22.574Z",
+  "gapCount": 2,
   "anomalyCount": 0,
-  "gaps": [],
+  "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Molde",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Tordner mot bildene: – Fotballgleden har forsvunnet",
+      "link": "https://www.nrk.no/sport/eirik-hestad-tordner-mot-bildene_-_-fotballgleden-har-forsvunnet-1.17984038",
+      "feed": "nrk-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-08-09T22:22:21.627Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "1. divisjon",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Haugesund på topp etter kalasseier – superspiss med vilt målsnitt",
+      "link": "https://www.nrk.no/sport/haugesund-pa-topp-etter-kalasseier-_-superspiss-med-vilt-malsnitt-1.17983947",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-09T22:22:21.627Z"
+    }
+  ],
   "anomalies": [],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
 }
