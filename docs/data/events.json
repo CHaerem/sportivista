@@ -1724,13 +1724,8 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/hamkam-aalesund-1834919",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "TV 2 Sport Premium",
-        "url": "https://www.tvkampen.com/kamp/hamkam-aalesund-1834919",
-        "urlKind": "deep"
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -2491,7 +2486,8 @@
       }
     },
     "summary": "Åpningsetappe fra Evenes til Myre i Vesterålen, 181,9 km, kupert profil. UCI 2.Pro, sesongens nordnorske etappeløp 13.–16. august. Uno-X Mobility (fulgt) stiller med hjemmelag og klare sesongmål.\n\nStarttid bekreftet mot arrangørens egen etappeside (arctic-race-of-norway.com) og korroborert av ProCyclingStats. Norsk visning på TV 2 Play (også Eurosport/Max).",
-    "norwegianPlayers": []
+    "norwegianPlayers": [],
+    "id": "1870b86c4874"
   },
   {
     "sport": "cycling",
@@ -2538,7 +2534,39 @@
       }
     },
     "summary": "Andre etappe fra Bø i Vesterålen til Andenes, 180 km langs kysten. UCI 2.Pro, del av det nordnorske etappeløpet 13.–16. august. Uno-X Mobility (fulgt) stiller med hjemmelag og klare sesongmål.\n\nStarttid bekreftet mot arrangørens egen etappeside (arctic-race-of-norway.com) og korroborert av ProCyclingStats. Norsk visning på TV 2 Play (også Eurosport/Max).",
-    "norwegianPlayers": []
+    "norwegianPlayers": [],
+    "id": "f7eee658cf26"
+  },
+  {
+    "sport": "football",
+    "tournament": "Eliteserien",
+    "title": "Rosenborg – Viking",
+    "time": "2026-08-14T17:00:00.000Z",
+    "endTime": null,
+    "venue": "Lerkendal Stadion",
+    "meta": "Eliteserien",
+    "norwegian": true,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Rosenborg",
+    "awayTeam": "Viking",
+    "isFavorite": true,
+    "round": null,
+    "id": "220b548bc38e",
+    "homeTeamEntityId": "rosenborg",
+    "awayTeamEntityId": "viking-fk",
+    "summary": "Eliteserien-kamp på Lerkendal – Rosenborg (sporet klubb) mot Viking i den engelske ukas fredagskamp.\n\nAvspark fredag 14. august kl. 19.00 CEST (17.00 UTC) – TV 2s faste fredagsslot, bekreftet på fotball.no-terminlisten. Eksakt avspark kan justeres 30–60 min hvis TV-valget endres nærmere kampdag.\n\nNorsk visning: TV 2 Play / TV 2 Sport. Lagt til manuelt fordi den statiske fotball-fetcheren ikke produserer Eliteserie-kamper (football.json foreldet)."
   },
   {
     "sport": "cycling",
@@ -2585,85 +2613,8 @@
       }
     },
     "summary": "Kongeetappen: 146,5 km fra Stokmarknes til den harde fjellfinishen på Storheia (HC-stigning ved Melbu) – trolig sammenlagt-avgjørende. UCI 2.Pro, del av det nordnorske etappeløpet 13.–16. august. Uno-X Mobility (fulgt) stiller med hjemmelag og klare sesongmål.\n\nStarttid bekreftet mot arrangørens egen etappeside (arctic-race-of-norway.com) og korroborert av ProCyclingStats. Norsk visning på TV 2 Play (også Eurosport/Max).",
-    "norwegianPlayers": []
-  },
-  {
-    "sport": "cycling",
-    "tournament": "Arctic Race of Norway 2026",
-    "title": "Etappe 4: Sortland – Narvik",
-    "time": "2026-08-16T11:25:00Z",
-    "endTime": "2026-08-16T15:25:00Z",
-    "venue": "Nord-Norge (Sortland – Narvik (Narvikfjellet))",
-    "norwegian": true,
-    "participants": [
-      {
-        "name": "Uno-X Mobility"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/sykkel/arctic-race-of-norway",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-09T17:05:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.arctic-race-of-norway.com/en/stage-4",
-      "https://www.procyclingstats.com/race/arctic-race-of-norway/2026/route/stage-profiles",
-      "https://www.unoxteam.com/news/our-race-calendar-for-2026",
-      "https://play.tv2.no/sport/sykkel/arctic-race-of-norway"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "arctic-race-of-norway",
-        "url": "https://www.arctic-race-of-norway.com/en/stage-4",
-        "basis": "primary",
-        "retrievedAt": "2026-08-09T17:05:00Z",
-        "note": "Départ 11:25 lokal (CEST) fra arrangørens egen etappeside; uavhengig write-time fact-checket mot arrangør + ProCyclingStats (WP-242)"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/sykkel/arctic-race-of-norway",
-        "basis": "official",
-        "retrievedAt": "2026-08-09T17:05:00Z"
-      }
-    },
-    "summary": "Avslutningsetappe fra Sortland til Narvik med opphill-finish i Narvikfjellet, 190,5 km. UCI 2.Pro, del av det nordnorske etappeløpet 13.–16. august. Uno-X Mobility (fulgt) stiller med hjemmelag og klare sesongmål.\n\nStarttid bekreftet mot arrangørens egen etappeside (arctic-race-of-norway.com) og korroborert av ProCyclingStats. Norsk visning på TV 2 Play (også Eurosport/Max).",
-    "norwegianPlayers": []
-  },
-  {
-    "sport": "football",
-    "tournament": "Eliteserien",
-    "title": "Rosenborg – Viking",
-    "time": "2026-08-14T17:00:00.000Z",
-    "endTime": null,
-    "venue": "Lerkendal Stadion",
-    "meta": "Eliteserien",
-    "norwegian": true,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
     "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Rosenborg",
-    "awayTeam": "Viking",
-    "isFavorite": true,
-    "round": null,
-    "id": "220b548bc38e",
-    "homeTeamEntityId": "rosenborg",
-    "awayTeamEntityId": "viking-fk",
-    "summary": "Eliteserien-kamp på Lerkendal – Rosenborg (sporet klubb) mot Viking i den engelske ukas fredagskamp.\n\nAvspark fredag 14. august kl. 19.00 CEST (17.00 UTC) – TV 2s faste fredagsslot, bekreftet på fotball.no-terminlisten. Eksakt avspark kan justeres 30–60 min hvis TV-valget endres nærmere kampdag.\n\nNorsk visning: TV 2 Play / TV 2 Sport. Lagt til manuelt fordi den statiske fotball-fetcheren ikke produserer Eliteserie-kamper (football.json foreldet)."
+    "id": "c3accf0756dd"
   },
   {
     "sport": "football",
@@ -2807,6 +2758,54 @@
     "id": "ab2a02725277",
     "homeTeamEntityId": "sevilla",
     "awayTeamEntityId": "rayo-vallecano"
+  },
+  {
+    "sport": "cycling",
+    "tournament": "Arctic Race of Norway 2026",
+    "title": "Etappe 4: Sortland – Narvik",
+    "time": "2026-08-16T11:25:00Z",
+    "endTime": "2026-08-16T15:25:00Z",
+    "venue": "Nord-Norge (Sortland – Narvik (Narvikfjellet))",
+    "norwegian": true,
+    "participants": [
+      {
+        "name": "Uno-X Mobility"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/sykkel/arctic-race-of-norway",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-09T17:05:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.arctic-race-of-norway.com/en/stage-4",
+      "https://www.procyclingstats.com/race/arctic-race-of-norway/2026/route/stage-profiles",
+      "https://www.unoxteam.com/news/our-race-calendar-for-2026",
+      "https://play.tv2.no/sport/sykkel/arctic-race-of-norway"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "arctic-race-of-norway",
+        "url": "https://www.arctic-race-of-norway.com/en/stage-4",
+        "basis": "primary",
+        "retrievedAt": "2026-08-09T17:05:00Z",
+        "note": "Départ 11:25 lokal (CEST) fra arrangørens egen etappeside; uavhengig write-time fact-checket mot arrangør + ProCyclingStats (WP-242)"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/sykkel/arctic-race-of-norway",
+        "basis": "official",
+        "retrievedAt": "2026-08-09T17:05:00Z"
+      }
+    },
+    "summary": "Avslutningsetappe fra Sortland til Narvik med opphill-finish i Narvikfjellet, 190,5 km. UCI 2.Pro, del av det nordnorske etappeløpet 13.–16. august. Uno-X Mobility (fulgt) stiller med hjemmelag og klare sesongmål.\n\nStarttid bekreftet mot arrangørens egen etappeside (arctic-race-of-norway.com) og korroborert av ProCyclingStats. Norsk visning på TV 2 Play (også Eurosport/Max).",
+    "norwegianPlayers": [],
+    "id": "18cd228d8d30"
   },
   {
     "sport": "football",
