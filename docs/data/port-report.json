@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T06:09:20.806Z",
+  "generatedAt": "2026-08-10T08:25:36.293Z",
   "windowDays": 14,
   "ports": {
     "coverage": "green",
@@ -32,14 +32,14 @@
     "gaps": []
   },
   "amendRate": {
-    "nearTermRate": 0,
+    "nearTermRate": 0.17,
     "nearTermChecked": 6,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-08-09T06:15:00Z",
+    "nearTermAmended": 1,
+    "verifyRunAt": "2026-08-10T06:51:57Z",
     "windowRate": 0,
-    "windowChecks": 91,
+    "windowChecks": 96,
     "windowAmendments": 0,
-    "windowCorrections": 10,
+    "windowCorrections": 11,
     "byDay": [
       {
         "date": "2026-07-27",
@@ -138,25 +138,29 @@
         "amendments": 0,
         "corrections": 1,
         "rate": 0
+      },
+      {
+        "date": "2026-08-10",
+        "checks": 5,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-10T06:09:16.624Z",
+    "buildCheckedAt": "2026-08-10T08:25:33.881Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-10T05:29:46.774Z",
-    "manifestAgeHours": 0.66,
+    "manifestGeneratedAt": "2026-08-10T06:09:21.870Z",
+    "manifestAgeHours": 2.27,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-08-09T06:15:00Z",
-    "verifyAgeHours": 23.91,
-    "corrections": 2,
+    "checkedAt": "2026-08-10T06:51:57Z",
+    "verifyAgeHours": 1.56,
+    "corrections": 0,
     "unresolved": 0,
-    "signals": [
-      "Tour de Pologne 2026: avsluttende tempo (etappe 7 ITT Wieliczka) i dag 9. aug — Dversnes (Uno-X) fortsatt i lopet, ingen DNF (WP-95 deltakelse OK). Re-bekref…",
-      "TdF Femmes etappe 9 (Nice–Nice, avsluttende fjelletappe i dag): Aalerud/Haugset/Edseth aktive, ingen norsk DNF; starttid 14.05 UTC matcher A.S.O. Re-bekrefte…"
-    ]
+    "signals": []
   }
 }
