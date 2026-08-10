@@ -4036,5 +4036,51 @@
     "isFavorite": false,
     "round": null,
     "id": "73287bff3c5b"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Conference League 2026/27 (kvalifisering)",
+    "title": "Tromsø IL – CFR Cluj",
+    "time": "2026-08-13T17:00:00Z",
+    "endTime": "2026-08-13T19:00:00Z",
+    "venue": "Romssa Arena (Alfheim), Tromsø",
+    "norwegian": true,
+    "homeTeam": "Tromsø IL",
+    "awayTeam": "CFR Cluj",
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Direktesport",
+        "url": "https://www.direktesport.no/sport/fotball/kvalifisering-europa-conference-league-2batr5hj/cfr-cluj-tromsoe-54zk1yf4"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-10T05:52:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.uefa.com/uefaconferenceleague/match/2049191--tromso-vs-cfr-cluj/",
+      "https://www.vg.no/sport/i/pB901X/europa-conference-league-kvalifisering-tromsoe-knuste-cfr-cluj",
+      "https://www.espn.com/soccer/match/_/gameId/401903098/cfr-cluj-napoca-tromso",
+      "https://www.direktesport.no/sport/fotball/kvalifisering-europa-conference-league-2batr5hj/cfr-cluj-tromsoe-54zk1yf4"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tromso-il",
+        "url": "https://www.til.no/",
+        "basis": "primary",
+        "retrievedAt": "2026-08-10T05:52:00Z",
+        "note": "TILs egen kampoversikt oppgir 19.00 CEST (17.00 UTC). UEFA.com 503 ved henting, men UEFA-fixture 2049191 + ESPN bekrefter datoen tor. 13. aug; korroborert av TV 2 livesport (19.00) + Direktesport (18.55 sendestart) + rumensk 20.00 EEST = 17.00 UTC."
+      },
+      "streaming": {
+        "sourceId": "direktesport",
+        "url": "https://www.direktesport.no/sport/fotball/kvalifisering-europa-conference-league-2batr5hj/cfr-cluj-tromsoe-54zk1yf4",
+        "basis": "official",
+        "retrievedAt": "2026-08-10T05:52:00Z",
+        "note": "Direktesport lister returkampen (Tor. 18.55 sendestart) — samme holder som bortekampen 6. aug (an.no/Amedia-mønsteret for norske klubbers europakvalik)."
+      }
+    },
+    "summary": "Returkamp i Conference League-kvalifiseringens 3. runde. Tromsø vant 1. kamp borte i Cluj 5–0 (Heine Larsen to mål, Isak Dahlqvist hat trick) og går inn i returkampen med et komfortabelt forsprang.\n\nVinneren av oppgjøret går til playoff-runden mot Brighton. Avspark 19.00 CEST på Romssa Arena (Alfheim); norsk visning på Direktesport.",
+    "id": "a7778a734fc7"
   }
 ]
