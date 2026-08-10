@@ -2689,6 +2689,36 @@
   },
   {
     "sport": "football",
+    "tournament": "Eliteserien",
+    "title": "Aalesund – Vålerenga",
+    "time": "2026-08-16T12:30:00.000Z",
+    "endTime": null,
+    "venue": "Color Line Stadium",
+    "meta": "Eliteserien",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Aalesund",
+    "awayTeam": "Vålerenga",
+    "isFavorite": false,
+    "round": null,
+    "id": "b45135d72904",
+    "homeTeamEntityId": "aalesund",
+    "awayTeamEntityId": "valerenga"
+  },
+  {
+    "sport": "football",
     "tournament": "FA Community Shield 2026",
     "title": "Arsenal – Manchester City",
     "time": "2026-08-16T14:00:00Z",
@@ -2733,14 +2763,12 @@
   {
     "sport": "football",
     "tournament": "Eliteserien",
-    "title": "Brann – HamKam",
-    "time": "2026-08-16T15:00:00Z",
+    "title": "Molde – Tromsø",
+    "time": "2026-08-16T15:00:00.000Z",
     "endTime": null,
-    "venue": "Brann Stadion, Bergen",
-    "norwegian": true,
-    "homeTeam": "Brann",
-    "awayTeam": "HamKam",
-    "norwegianPlayers": [],
+    "venue": "Aker Stadion",
+    "meta": "Eliteserien",
+    "norwegian": false,
     "streaming": [
       {
         "platform": "TV 2 Play",
@@ -2748,32 +2776,197 @@
         "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-07-30T17:50:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
-      "https://www.fotball.no/turneringer/eliteserien/2026/eliteserien-slik-spilles-runde-13-til-22/"
-    ],
-    "summary": "Eliteserien-kamp på Brann Stadion – Brann (sporet klubb) tar imot HamKam.\n\nAvspark søndag 16. august kl. 17.00 CEST (15.00 UTC) – bekreftet på fotball.no (Branns lagside + rundeoppsettet). Eksakt avspark kan justeres 30–60 min hvis TV-valget endres nærmere kampdag.\n\nNorsk visning: TV 2 Play / TV 2 Sport. Lagt til manuelt fordi den statiske fotball-fetcheren ikke produserer Eliteserie-kamper (football.json foreldet).",
     "participants": [],
-    "id": "40e80092cb77",
-    "provenance": {
-      "time": {
-        "sourceId": "fotball-no",
-        "url": "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
-        "basis": "primary",
-        "retrievedAt": "2026-07-30T17:50:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Molde",
+    "awayTeam": "Tromsø",
+    "isFavorite": true,
+    "round": null,
+    "id": "d94c3ec0b33d",
+    "homeTeamEntityId": "molde"
+  },
+  {
+    "sport": "football",
+    "tournament": "Eliteserien",
+    "title": "Sarpsborg 08 – Sandefjord",
+    "time": "2026-08-16T15:00:00.000Z",
+    "endTime": null,
+    "venue": "Sarpsborg Stadion",
+    "meta": "Eliteserien",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
         "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-07-30T17:50:00Z"
+        "urlKind": "landing"
       }
-    },
-    "homeTeamEntityId": "brann-conference-league-qualifying"
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Sarpsborg 08",
+    "awayTeam": "Sandefjord",
+    "isFavorite": false,
+    "round": null,
+    "id": "2b81d15027ad",
+    "awayTeamEntityId": "sandefjord"
+  },
+  {
+    "sport": "football",
+    "tournament": "Eliteserien",
+    "title": "Brann – HamKam",
+    "time": "2026-08-16T15:00:00.000Z",
+    "endTime": null,
+    "venue": "Brann Stadium",
+    "meta": "Eliteserien",
+    "norwegian": true,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Brann",
+    "awayTeam": "HamKam",
+    "isFavorite": true,
+    "round": null,
+    "id": "a7f3578d6928",
+    "homeTeamEntityId": "brann-conference-league-qualifying",
+    "summary": "Eliteserien-kamp på Brann Stadion – Brann (sporet klubb) tar imot HamKam.\n\nAvspark søndag 16. august kl. 17.00 CEST (15.00 UTC) – bekreftet på fotball.no (Branns lagside + rundeoppsettet). Eksakt avspark kan justeres 30–60 min hvis TV-valget endres nærmere kampdag.\n\nNorsk visning: TV 2 Play / TV 2 Sport. Lagt til manuelt fordi den statiske fotball-fetcheren ikke produserer Eliteserie-kamper (football.json foreldet)."
+  },
+  {
+    "sport": "football",
+    "tournament": "La Liga",
+    "title": "Villarreal at Racing Santander",
+    "time": "2026-08-16T15:00:00.000Z",
+    "endTime": null,
+    "venue": "El Sardineros",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Racing Santander",
+    "awayTeam": "Villarreal",
+    "isFavorite": false,
+    "round": null,
+    "id": "2a41a076a179",
+    "homeTeamEntityId": "racing-santander",
+    "awayTeamEntityId": "villarreal"
+  },
+  {
+    "sport": "football",
+    "tournament": "La Liga",
+    "title": "Levante at Espanyol",
+    "time": "2026-08-16T17:00:00.000Z",
+    "endTime": null,
+    "venue": "RCDE Stadium",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Espanyol",
+    "awayTeam": "Levante",
+    "isFavorite": false,
+    "round": null,
+    "id": "c5e3091f8f79",
+    "homeTeamEntityId": "espanyol",
+    "awayTeamEntityId": "levante"
+  },
+  {
+    "sport": "football",
+    "tournament": "Eliteserien",
+    "title": "Fredrikstad – Kristiansund",
+    "time": "2026-08-16T17:15:00.000Z",
+    "endTime": null,
+    "venue": "Fredrikstad Stadion",
+    "meta": "Eliteserien",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Fredrikstad",
+    "awayTeam": "Kristiansund",
+    "isFavorite": false,
+    "round": null,
+    "id": "5e94712e82d8",
+    "homeTeamEntityId": "fredrikstad",
+    "awayTeamEntityId": "kristiansund-bk"
+  },
+  {
+    "sport": "football",
+    "tournament": "La Liga",
+    "title": "Osasuna at Celta Vigo",
+    "time": "2026-08-16T19:30:00.000Z",
+    "endTime": null,
+    "venue": "Balaidos",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Celta Vigo",
+    "awayTeam": "Osasuna",
+    "isFavorite": false,
+    "round": null,
+    "id": "607b6f28d2b5",
+    "homeTeamEntityId": "celta-vigo",
+    "awayTeamEntityId": "osasuna"
   },
   {
     "sport": "golf",
