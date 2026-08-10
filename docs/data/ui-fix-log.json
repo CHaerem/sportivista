@@ -1,12 +1,12 @@
 {
-	"runAt": "2026-08-09T09:43:26.000Z",
+	"runAt": "2026-08-10T09:16:02.000Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"visual-qa-log.json (checkedAt 2026-08-07T00:00:00Z) has verdict 'pass' with an empty findings[]. No high/medium findings to fix, so no branch or PR was opened.",
-		"No open ui-autofix PR exists (gh pr list returned []), so nothing to skip either.",
-		"visual-qa notes confirm previously flagged issues stay resolved on current main: the 2026-08-05 medium 'Saint Louis Rapid & Blitz 2026' DIREKTE NÅ title-wrap renders on one line at 375/393px, and long 'Home – Away' fixtures wrap cleanly across two lines with both sides legible. No horizontal overflow at 375/393/900, every event shows a Norwegian where-to-watch line, flags/crests render as icons, must-see dots are sparse, header/agenda/footer intact.",
+		"visual-qa-log.json (checkedAt 2026-08-10T09:16:02Z) has verdict 'pass' with an empty findings[]. No high/medium findings to fix, so no branch or PR was opened.",
+		"No open ui-autofix PR exists (gh pr list shows only 'wp-242b-strip-lookalikes', a non-ui-autofix branch), so nothing to skip either.",
+		"visual-qa notes confirm the board is clean at 375/393/900: no horizontal scroll or clipped content, match names read in full (Apollon Limassol – Brann shows 'VG+ Sport' fully), every event has a Norwegian where-to-watch line (no FOX/ESPN/Sky), flags/crests render as icons, must-see dots are sparse, header/day headings/footer and the 'Dette dekker vi' / 'Merker og kilder' disclosures intact. The floating Assistent button overlap is DESIGN.md-sanctioned (WP-146 variant D), correctly not flagged.",
 		"Nothing code-fixable remains. Exiting cleanly with action 'none' per the ui-fix contract."
 	]
 }
