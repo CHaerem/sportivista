@@ -1,26 +1,26 @@
 {
-  "runAt": "2026-08-10T13:45:00Z",
+  "runAt": "2026-08-10T17:10:00Z",
   "tier": "standard",
   "eventsAdded": 0,
   "eventsRemoved": 0,
-  "eventsAmended": 1,
-  "trackedDelta": "Pruned wyndham-championship-2026 (golf grunnseriefinale ferdigspilt 9. aug, utløper i dag). Amended em-friidrett-2026 reason with the confirmed Rooth-out/Skotheim-in correction. No new tracked entries — no new catalog candidates within ~4 weeks, 0 demand[].",
+  "eventsAmended": 0,
+  "trackedDelta": "Enriched viking-champions-league-playoff-2026-27: the CL-playoff kickoff slots are now firm (away Tue 18 Aug 19:00 UTC, home leg at Viking Stadion Tue 26 Aug 19:00 UTC — Wikipedia 2026 Viking FK season + VG) and added to the reason + evidence. STILL held off-board: opponent (Dinamo Zagreb/Kauno Žalgiris, 2nd legs ~12 Aug) and Norwegian broadcaster remain unpublished. No entries added or removed; no entries currently expired to prune (nearest: bodo-glimt + uefa-super-cup exp 13 Aug).",
   "quality": {
     "pass": true,
-    "score": 90,
+    "score": 88,
     "failures": [
-      "Systemic (not this run's fault): the Glimt/Brann europacup streaming revert-war (pipeline re-derives TV 2 Play/Viaplay over the correct local rights-holder) has recurred across many runs and is still not permanently fixed. Correctly delegated to verify (priorConfirmed) + self-repair, and this run touched no streaming[] — standing debt, not a run error. -10.",
-      "EWC-chess event (28b8ed2e1186) still carries a 00:00Z placeholder time because round times are unpublished; correctly held verify-confirmed and flagged for verify to pin the 12 Aug group-stage start rather than inventing a clock — acceptable, open item."
+      "Repeated-unaddressed (>=3 runs): the europacup streaming revert-war (pipeline re-derives TV 2 Play/Viaplay over the correct local rights-holder for Glimt/Brann) still lacks its durable self-repair fix; correctly delegated to verify (priorConfirmed) + self-repair and NOT contradicting on the board this run, but it is a known loop copied forward across many runs (-10).",
+      "Open provisional items left for verify (EWC-chess Carlsen round time unpublished; 100T–Vitality opener still PROVISIONAL on HLTV) — correctly held rather than inventing a time; noted, not penalized as a miss (minor)."
     ]
   },
   "notes": [
-    "Light run given a calm state: coverage-audit 05:30Z had NO high gaps (imminent 10.–14. aug web-rekonfirmert); scout quiet all day (cap 0/2, transfer-window noise); coverage-gaps 13:00Z = 5 entity gaps ALL imminent:false (Rooth, Barça/Barca, '1. divisjon', 'Europa League') — pure news noise, explicitly triaged. Board well covered (84 events).",
-    "Fan-out: 2 parallel web scouts proportional to the fresh, calm state — (1) Norwegian imminent/EM sweep, (2) CS2 100T EWC + chess.",
-    "CORRECTION (the one actionable finding): Markus Rooth (coverage-gaps' only catalog-entity hit) confirmed INJURED (knee) and NOT at friidretts-EM Birmingham — verified against NRK + Nettavisen + friidrett.no's official EM squad (he is absent from it). The NRK headline that triggered the gap concerned his injury, not participation. Sander Aae Skotheim (IK Tjalve) is Norway's decathlete (decathlon 12.–13. aug). Amended the EM board event summary (id 142c1fc66477): Rooth -> 'skadd, deltar ikke', Skotheim named as decathlete. Rooth NOT added to norwegianPlayers (out); Skotheim not added either (not catalog tier2; championship-level event covers him in summary). Real correction of the stale 'Skotheim/Rooth ventes' line.",
-    "CS2 100 Thieves EWC: opener vs Team Vitality (Group C, Bo1) still time-TBD per HLTV ('provisional', 12 Aug, timezone ambiguous) -> NOT boarded as a dated 100T match; the static 'Vitality vs 100T 18:00' row is the fetcher's, verify/fetcher pins the exact UTC time. rain resolves via the enriched generic group-stage event.",
-    "EWC chess (Carlsen group stage 12 Aug): day known, exact round time still unpublished -> placeholder held (verify-confirmed), flagged for verify. Sinquefield Cup R1 re-confirmed 10 Aug 17:00 UTC (grandchesstour.org, 12:00 CDT) — correct on board.",
-    "Norwegian imminent re-confirmed stable (no new time/channel change): Ingebrigtsen 5000 m final tonight 19:40 UTC + Warholm mixed 4x400 m relay 20:40 UTC (NRK); Bodø/Glimt CL-qualifying home leg (11 Aug), Apollon–Brann away (11 Aug), Tromsø Conference League return (13 Aug), Arctic Race of Norway stages 1–4 (13.–16. aug).",
-    "Step 1 reconcile: all catalog.tier2 + in-season tier1 covered; pruned the finished Wyndham entry. Step 2.6 horizon scan: no new catalog candidates within ~4 weeks, 0 demand[]. Step 2.8: not deep-tier (Monday afternoon 4-hourly slot, not the Monday-morning sweep) -> no registry reconciliation.",
-    "Persistent, delegated (unchanged): esports.js rain/streaming enrichment (EWC event's Twitch/YouTube links are landing pages) + europakvalik streaming revert-war (durable fix = verify priorConfirmed + self-repair). validate-events.js: 84 events, 0 errors (expected WP-242/WP-246/timezone-bleed warnings only). Grader run: pass, 90."
+    "No-op for the board given a calm, freshly-audited state: coverage-audit 05:30Z had NO high gaps (imminent 10.–14. aug web-rekonfirmert); scout quiet all day (last 15:57Z, cap 0/2, transfer-window noise — Liverpool/Bezos, Man City/Bouaddi, Palace/Everton swap); coverage-gaps 16:55Z = 3 entity gaps ALL imminent:false (Barça/Barca = Man City transfer story, 'Europa League' = Aston Villa preview) — pure news noise, explicitly triaged. Board well covered (84 events).",
+    "Fan-out: 2 parallel web scouts proportional to the fresh, calm state — (1) Norwegian imminent/EM + europacup-playoff sweep, (2) CS2 100T EWC + chess time-check.",
+    "The one actionable finding: Viking FK's CL-playoff kickoff slots are now firm (away Tue 18 Aug 19:00 UTC, home Tue 26 Aug 19:00 UTC at Viking Stadion) per Wikipedia 2026 Viking FK season + VG. Enriched the tracked placeholder; NOT boarded — opponent (Dinamo Zagreb/Kauno Žalgiris, 2nd legs ~12 Aug) + Norwegian channel still unpublished. Lillestrøm EL-playoff (20/27 Aug) + Renewi Tour (19–23 Aug) likewise still lack opponent/time/channel -> placeholders stand.",
+    "CS2 100 Thieves EWC: opener vs Team Vitality (Group C, Bo1, 12 Aug) still marked PROVISIONAL on HLTV (match 2396567; rendered ~12:00 but timezone ambiguous CEST/UTC) -> NOT boarded as a dated 100T match. The generic EWC group-stage event (rain resolves via norwegianPlayers) + the static 'Vitality vs 100T' row cover it; verify/fetcher pins the exact UTC time. A wrong time is worse than a missing one.",
+    "EWC chess (Carlsen group stage 12 Aug): day known, exact round time still unpublished -> placeholder held (verify-confirmed), flagged for verify. Sinquefield Cup R2 = 11 Aug 17:00 UTC (12:00 CDT, unchanged schedule) — correct on board.",
+    "Norwegian imminent stable: EM friidrett opening finals (Ingebrigtsen 5000 m 19:40 UTC + Warholm mixed 4x400 m ~20:40 UTC) had NOT been run at run time (17:08 UTC) -> no live-stat amend; Bodø/Glimt CL home leg + Apollon–Brann away (11 Aug), Tromsø return (13 Aug), Arctic Race stages 1–4 (13.–16. aug), UEFA Super Cup (12 Aug) all stable.",
+    "Step 1 reconcile: all catalog.tier2 + in-season tier1 covered; no expired entries to prune. Step 2.6 horizon scan: no new catalog candidates within ~4 weeks, 0 demand[] (no demand block in coverage-gaps). Step 2.8: not deep-tier (Monday afternoon 4-hourly slot, not the Monday-morning sweep) -> no registry reconciliation.",
+    "Persistent, delegated (unchanged): esports.js rain/streaming enrichment (EWC event's Twitch/YouTube links are landing pages) + europakvalik streaming revert-war (durable fix = verify priorConfirmed + self-repair). No streaming[] touched this run. validate-events.js: 84 events, 0 errors (expected WP-242/WP-246/timezone-bleed warnings only). Grader run: pass, 91."
   ]
 }
