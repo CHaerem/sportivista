@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-11T05:11:37.747Z",
+  "generatedAt": "2026-08-11T05:52:27.851Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "green",
+    "coverage": "yellow",
     "amendRate": "green",
     "silentStops": "yellow",
     "participantStatus": "green"
@@ -19,17 +19,32 @@
     ]
   },
   "coverage": {
-    "openGaps": 0,
+    "openGaps": 2,
     "bySeverity": {
       "high": 0,
-      "medium": 0,
+      "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": null,
+    "oldestGapAgeDays": 0.03,
     "escalatable": 0,
-    "catalogMatched": 0,
-    "auditedAt": "2026-08-10T05:30:00Z",
-    "gaps": []
+    "catalogMatched": 2,
+    "auditedAt": "2026-08-11T05:10:00Z",
+    "gaps": [
+      {
+        "interest": "Serie A — 2026/27 åpningsrunde",
+        "severity": "medium",
+        "ageDays": 0.03,
+        "recurrences": 0,
+        "catalogMatched": true
+      },
+      {
+        "interest": "Bundesliga — 2026/27 åpningsrunde",
+        "severity": "medium",
+        "ageDays": 0.03,
+        "recurrences": 0,
+        "catalogMatched": true
+      }
+    ]
   },
   "amendRate": {
     "nearTermRate": 0.17,
@@ -143,21 +158,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-11T05:11:34.906Z",
+    "buildCheckedAt": "2026-08-11T05:52:22.860Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-11T02:43:49.498Z",
-    "manifestAgeHours": 2.46,
+    "manifestGeneratedAt": "2026-08-11T05:11:39.310Z",
+    "manifestAgeHours": 0.68,
     "staleFiles": [
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-08-09T22:21:34.770Z",
-        "ageHours": 30.83
+        "ageHours": 31.51
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-10T06:51:57Z",
-    "verifyAgeHours": 22.33,
+    "verifyAgeHours": 23.01,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
