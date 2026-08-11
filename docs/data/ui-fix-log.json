@@ -1,12 +1,11 @@
 {
-	"runAt": "2026-08-10T09:16:02.000Z",
+	"runAt": "2026-08-11T09:58:00.000Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"visual-qa-log.json (checkedAt 2026-08-10T09:16:02Z) has verdict 'pass' with an empty findings[]. No high/medium findings to fix, so no branch or PR was opened.",
-		"No open ui-autofix PR exists (gh pr list shows only 'wp-242b-strip-lookalikes', a non-ui-autofix branch), so nothing to skip either.",
-		"visual-qa notes confirm the board is clean at 375/393/900: no horizontal scroll or clipped content, match names read in full (Apollon Limassol – Brann shows 'VG+ Sport' fully), every event has a Norwegian where-to-watch line (no FOX/ESPN/Sky), flags/crests render as icons, must-see dots are sparse, header/day headings/footer and the 'Dette dekker vi' / 'Merker og kilder' disclosures intact. The floating Assistent button overlap is DESIGN.md-sanctioned (WP-146 variant D), correctly not flagged.",
+		"visual-qa-log.json (checkedAt 2026-08-11T08:50:30Z) has verdict 'pass' with an empty findings[]. No high/medium findings to fix, so no branch or PR was opened.",
+		"visual-qa notes confirm the board is clean at 375/393/900: no horizontal scroll or clipped content (375px checked hardest), match names read in full across two lines where needed, every event shows a Norwegian where-to-watch line (NRK, TV 2 Play, VG+ Sport, Viaplay, etc. — no FOX/ESPN/Sky), National Bank Open / Cincinnati Open correctly show an honest faint '–' for unknown channels, flags/crests render as real icons (Lyn – Odd uses a neutral placeholder dot, an honest fallback), must-see accent dots are sparse, header/day headings/footer and the 'Dette dekker vi' / 'Merker og kilder' disclosures intact. The floating Assistent button overlap is DESIGN.md-sanctioned (WP-146 variant D), correctly not flagged.",
 		"Nothing code-fixable remains. Exiting cleanly with action 'none' per the ui-fix contract."
 	]
 }
