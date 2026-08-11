@@ -1,6 +1,6 @@
 {
 	"$schema": "./authority.schema.json",
-	"updatedAt": "2026-08-08",
+	"updatedAt": "2026-08-11",
 	"notes": "WP-241 · Autoritetskartet: hvem SKAPER faktumet, per konkurranse på tavla. To kilder per event, fordi produktets to kjernefelt har to ulike skapere: TIDEN settes av arrangøren/ligaen/forbundet, KANALEN av kringkasteren selv. Id-ene peker inn i scripts/config/sources.json (WP-240) — registeret er sannheten om hvilket domene som ER arrangøren, og det er lookalike-vernet: da dette kartet ble seedet sto lookalike-domenet franceletour.com som evidens på en Tour de France-etappe, mens letour.fr (A.S.O., som faktisk lager ruta og starttidene) forekom NULL ganger i hele events.json. Research slår opp konkurransen her og går til autoriteten FØRST (scripts/agents/research.md); verify sjekker kanalen mot kringkasterens egen kilde (scripts/agents/verify.md); scripts/lib/provenance.js migrerer flat evidence til per-faktum-proveniens (WP-242) med det samme kartet. SEEDET 29.07.2026 med hver konkurranse som faktisk sto på tavla den dagen; kanal-valgene speiler .claude/skills/norwegian-rights (prioren) og tavlas verifiserte verdier. AI-VEDLIKEHOLDT som catalog.json: research utvider kartet når en ny konkurranse dekkes — alltid med arrangørens VIRKELIGE domene, registrert i sources.json først.",
 	"competitions": [
 		{
@@ -26,6 +26,14 @@
 			"match": ["nm friidrett"],
 			"time": { "sourceIds": ["nm-friidrett-2026", "friidrettsforbundet"], "note": "Arrangørens egen mesterskapsside setter tidsskjemaet; Norges Friidrettsforbund sanksjonerer terminlista." },
 			"channel": { "options": [{ "sourceId": "nrk", "platform": "NRK" }] }
+		},
+		{
+			"id": "beach-volleyball:eurobeachvolley",
+			"name": "CEV EuroBeachVolley",
+			"sport": "beach-volleyball",
+			"match": ["eurobeachvolley", "em sandvolleyball"],
+			"time": { "sourceIds": ["cev"], "note": "CEV arrangerer og setter mesterskapskalenderen; enkeltkamptider publiseres av arrangøren." },
+			"channel": { "options": [{ "sourceId": "cev", "platform": "CEV" }], "note": "CEV sender egne mesterskap gratis på egen strøm (EuroVolley.tv/YouTube) — bekreft eksakt plattform per event." }
 		},
 		{
 			"id": "chess:esports-world-cup",
@@ -154,6 +162,14 @@
 			"channel": { "options": [{ "sourceId": "viaplay", "platform": "Viaplay" }], "note": "Viaplay har alle økter (trening/kvalik/sprint/løp)." }
 		},
 		{
+			"id": "football:bundesliga",
+			"name": "Bundesliga",
+			"sport": "football",
+			"match": ["bundesliga"],
+			"time": { "sourceIds": ["bundesliga-dfl"], "note": "DFL/bundesliga.com setter og publiserer de bekreftede avsparkstidene." },
+			"channel": { "options": [{ "sourceId": "viaplay", "platform": "Viaplay" }], "note": "Viaplay har de norske Bundesliga-rettighetene t.o.m. 2029 (Viaplay Groups egen pressemelding); enkeltkamper også via TV 2 Play «Mer fotball»." }
+		},
+		{
 			"id": "football:champions-league",
 			"name": "UEFA Champions League",
 			"sport": "football",
@@ -227,6 +243,14 @@
 			"match": ["premier league"],
 			"time": { "sourceIds": ["premier-league"] },
 			"channel": { "options": [{ "sourceId": "tv2", "platform": "TV 2" }], "note": "TV 2 Play / TV 2 Sport Premium." }
+		},
+		{
+			"id": "football:serie-a",
+			"name": "Serie A",
+			"sport": "football",
+			"match": ["serie a"],
+			"time": { "sourceIds": ["lega-serie-a"], "note": "Lega Serie A setter kampoppsettet; legaseriea.it var bot-blokkert ved seeding, så tidene hentes foreløpig fra Sky/Goal (media) → verify bekrefter mot arrangøren." },
+			"channel": { "options": [{ "sourceId": "vgtv", "platform": "VG+ Sport" }], "note": "VG+ Sport eier de norske Serie A-rettighetene (tvkampen ground truth + VGs egen kunngjøring). IKKE Paramount+ (den amerikanske rettighetshaveren)." }
 		},
 		{
 			"id": "football:super-cup",

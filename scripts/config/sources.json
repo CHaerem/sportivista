@@ -1,6 +1,6 @@
 {
 	"$schema": "./sources.schema.json",
-	"reviewedAt": "2026-07-29",
+	"reviewedAt": "2026-08-11",
 	"notes": "WP-240 · Kilderegister med rettslig grunnlag. Registeret svarer på tre spørsmål per kilde: hvem SKAPER faktumet, hva sier vilkårene om automatisert tilgang, og har rettighetshaveren tatt DSM art. 4-forbehold mot tekst- og datautvinning. Det finnes fordi research-laget i dag siterer det som er PRAKTISK framfor det som er AUTORITATIVT — som er både den svakeste datakvaliteten og den svakeste rettslige posisjonen samtidig.\n\nSEEDET slik (29.07.2026, mekanisk): (1) hver kilde en fetcher faktisk henter — scripts/fetch/*.js, scripts/config/sports-config.js, scripts/fetch-rss.js, scripts/fetch-standings.js, scripts/fetch-results.js, scripts/lib/tvkampen-scraper.js, scripts/lib/pgatour-scraper.js; (2) hvert domene med ≥2 forekomster i docs/data/events.json (evidence + verificationSources) eller docs/data/calibration-ledger.jsonl — 110 distinkte domener totalt, 62 med ≥2 bruk, 48 engangs; (3) primærkildene vi BURDE bruke, som `status: \"candidate\"`.\n\nENGANGSKILDENE (48) er BEVISST ikke oppført enkeltvis: de er nesten utelukkende arrangør- og klubbsider sitert én gang for ett event (rbk.no, wyndhamchampionship.com, tourdepologne.pl). De faller inn under rolledoktrinen — en klubbs eller arrangørs egen side er `primary` for sine egne kamper — og registreres når de gjentar seg. WP-242 (proveniens per faktum) vil tvinge dem fram som sourceId-er.\n\nÆRLIGHETSKONTRAKTEN: `unknown` er en konklusjon, ikke et tomt felt. Robots.txt er sjekket mekanisk for hver kilde her og er derfor godt dekket; VILKÅRSTEKST er lest der den finnes, og der vi ikke fant et svar står `unknown` med `basis: \"not-found\"`. Et gjettet \"permitted\" ville gjort registeret verdiløst nettopp der det trengs.\n\nFIRE FUNN VERDT Å MERKE SEG: (a) VILKÅR ER STRENGERE ENN ROBOTS, systematisk — UEFA publiserer et åpent kamp-sitemap i robots.txt og forbyr samtidig både skraping og KI-trening i vilkårenes § 6.2; ESPN/Disney, PGA TOUR, HLTV, ATP og A.S.O. forbyr alle roboter i vilkårstekst uten at robots.txt sier noe. Robots er ikke avtalen. (b) Å GÅ TIL PRIMÆRKILDEN GJØR IKKE TILGANGEN TILLATT: A.S.O. (Tour de France) forbyr robotuttrekk i sine juridiske merknader, akkurat som NFF og Norsk Toppfotball. Spor E blir derfor presisert, ikke omgjort — primærkilden er fortsatt riktig kilde til FAKTUMET og den med svakest databasevern over sitt eget program, men bruken må hvile på journalistisk volum, attribusjon og eventuelt samtykke, ikke på systematisk uttrekk. (c) Cloudflares `Content-Signal` (eliteserien.no, atptour.com) er det klareste MASKINLESBARE forbeholdet vi møter — det siterer art. 4 i sin egen tekst. Ingen kilde i registeret bruker TDM Reservation Protocol. (d) TO KILDER ER FAKTISK ÅPNE: Wikipedia (CC BY-SA 4.0 — attribusjon og del-på-samme-vilkår PÅKREVD) og Lichess' databaseeksporter (CC0). Liquipedia er CC-BY-SA 3.0 med et uttrykkelig tillatt API og harde, publiserte taktkrav — den ryddigste avtalen i hele registeret.\n\nOPERASJONELT (mater WP-244): hltv.org, atptour.com, uefa.com, procyclingstats.com og pgatour.com avviser klienter som ikke ser ut som nettlesere (403/503), og letour.fr var utilgjengelig fra dette miljøet. Flere kilder KREVER dessuten en identifiserende User-Agent med kontaktadresse (Wikimedia, Liquipedia, Chess.com) — dagens «SportSync/2.0» tilfredsstiller ingen av dem.",
 	"sources": [
 		{
@@ -370,6 +370,73 @@
 			},
 			"calibrationKey": "brujulabike.com",
 			"notes": "Spansk sykkelmagasin, brukt som verifikasjonskilde 3 ganger. Bør erstattes av arrangørens egen side (letour, lavuelta) som grunnlag for tid."
+		},
+		{
+			"id": "bundesliga-dfl",
+			"name": "Bundesliga (DFL)",
+			"publisher": "Deutsche Fußball Liga (DFL)",
+			"url": "https://www.bundesliga.com",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"football:bundesliga"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-08-11"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "ikke gjennomgått denne registreringen",
+				"checkedAt": "2026-08-11"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"note": "ikke gjennomgått ennå; bundesliga.com/en kampdags-feed hentet og sitert som primær tidsautoritet 2026-08-11",
+				"checkedAt": "2026-08-11"
+			},
+			"notes": "Registrert av research 2026-08-11: DFL SKAPER Bundesliga-kampoppsettet og publiserer de bekreftede avsparkstidene (bundesliga.com). Sitert som provenance.time.basis=primary for Bundesliga-åpningsrunden. Vilkår/robots/TDM ikke gjennomgått ennå (unknown, ikke gjettet)."
+		},
+		{
+			"id": "cev",
+			"name": "CEV (Confédération Européenne de Volleyball)",
+			"publisher": "Confédération Européenne de Volleyball",
+			"url": "https://www.cev.eu",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"beach-volleyball:eurobeachvolley"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-08-11"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "ikke gjennomgått denne registreringen",
+				"checkedAt": "2026-08-11"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"note": "ikke gjennomgått ennå; CEV/arrangør (ebv2026.pl) sitert for EuroBeachVolley-vinduet 2026-08-11",
+				"checkedAt": "2026-08-11"
+			},
+			"notes": "Registrert av research 2026-08-11 (WP-116 sandvolleyball-utvidelse): CEV arrangerer EuroBeachVolley og setter mesterskapskalenderen; sender egne mesterskap gratis (EuroVolley.tv/YouTube). Sitert som tidsautoritet for EM-vinduet 12.–16. aug; enkeltkamptider for Mol/Sørum ikke publisert ennå. Vilkår/robots/TDM ikke gjennomgått (unknown)."
 		},
 		{
 			"id": "chess-com",
@@ -1762,6 +1829,40 @@
 			"notes": "KANDIDAT (én bruk i dag). Arrangøren lager ruta og etappetidene. Merk: A.S.O. er medeier, og de juridiske merknadene på A.S.O.s øvrige rittsider forbyr uttrykkelig robotuttrekk (se `letour`). lavuelta.es sin egen vilkårsside er IKKE lest i denne gjennomgangen — den står som `unknown` inntil den er verifisert, ikke som antatt lik."
 		},
 		{
+			"id": "lega-serie-a",
+			"name": "Lega Serie A",
+			"publisher": "Lega Nazionale Professionisti Serie A",
+			"url": "https://www.legaseriea.it",
+			"role": "primary",
+			"status": "candidate",
+			"authorityFor": [
+				"football:serie-a"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-08-11"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "ikke sjekket denne registreringen — legaseriea.it var bot-blokkert (307-redirect-loop) ved henting",
+				"checkedAt": "2026-08-11"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"note": "legaseriea.it/en returnerte 307 redirect-loop ved henting 2026-08-11 → stiene ikke bekreftet; agentene siterer foreløpig Sky Sport Italia/Goal.com (media) for tidene",
+				"checkedAt": "2026-08-11"
+			},
+			"notes": "Registrert av research 2026-08-11 (autoritetskart-utvidelse): ligaen SKAPER Serie A-kampoppsettet. KANDIDAT, ikke in-use, fordi arrangørens egen terminliste ikke lot seg hente (bot-blokkert) — Serie A-events boardes med basis:secondary (Sky/Goal + fact-check mot Wikipedia/acmilan.com) til en fetcher/verify når arrangøren. Vilkår/robots/TDM ikke gjennomgått ennå (unknown, ikke gjettet)."
+		},
+		{
 			"id": "letour",
 			"name": "Tour de France / Tour de France Femmes",
 			"publisher": "Amaury Sport Organisation (A.S.O.)",
@@ -3133,6 +3234,36 @@
 			},
 			"calibrationKey": "vg.no",
 			"notes": "7 bruk som verifikasjonskilde."
+		},
+		{
+			"id": "vgtv",
+			"name": "VG+ Sport (VG TV)",
+			"publisher": "VG / Schibsted",
+			"url": "https://vgtv.no",
+			"role": "official-broadcaster",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"channel"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-08-11"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "ikke gjennomgått denne registreringen",
+				"checkedAt": "2026-08-11"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"note": "ikke gjennomgått ennå",
+				"checkedAt": "2026-08-11"
+			},
+			"calibrationKey": "vgtv.no",
+			"notes": "Registrert av research 2026-08-11: VG+ Sport (VGs strømmeprodukt) er norsk rettighetshaver for bl.a. Serie A (tvkampen ground truth + VGs egen kunngjøring) og norske klubbers europakvalik-hjemmekamper (Amedia/VG-samarbeidet). Skilt fra `vg`-oppføringen (role media, redaksjonell omtale) fordi kringkasteren og avisa er ulike roller i doktrinen. Vilkår/robots/TDM ikke gjennomgått ennå (unknown)."
 		},
 		{
 			"id": "viaplay",
