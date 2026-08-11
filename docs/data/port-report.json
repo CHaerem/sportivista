@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-10T22:29:20.455Z",
+  "generatedAt": "2026-08-11T02:43:47.946Z",
   "windowDays": 14,
   "ports": {
     "coverage": "green",
     "amendRate": "green",
-    "silentStops": "green",
+    "silentStops": "yellow",
     "participantStatus": "green"
   },
   "basis": {
@@ -143,15 +143,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-10T22:29:15.610Z",
+    "buildCheckedAt": "2026-08-11T02:43:45.132Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-10T21:38:33.277Z",
-    "manifestAgeHours": 0.85,
-    "staleFiles": []
+    "manifestGeneratedAt": "2026-08-10T22:29:21.607Z",
+    "manifestAgeHours": 4.24,
+    "staleFiles": [
+      {
+        "file": "golf.json",
+        "sourceLastUpdated": "2026-08-09T22:21:34.770Z",
+        "ageHours": 28.37
+      }
+    ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-10T06:51:57Z",
-    "verifyAgeHours": 15.62,
+    "verifyAgeHours": 19.86,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
