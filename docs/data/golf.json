@@ -1,59 +1,44 @@
 {
-  "lastUpdated": "2026-08-09T22:21:34.770Z",
+  "lastUpdated": "2026-08-11T19:59:16.437Z",
   "source": "ESPN + PGA Tour",
   "tournaments": [
     {
-      "name": "PGA Tour",
+      "name": "DP World Tour",
       "events": [
         {
-          "title": "Wyndham Championship",
-          "meta": "PGA Tour",
-          "tournament": "PGA Tour",
-          "time": "2026-08-06T04:00:00.000Z",
-          "endTime": "2026-08-09T20:00:00.000Z",
+          "title": "Danish Golf Championship",
+          "meta": "DP World Tour",
+          "tournament": "DP World Tour",
+          "time": "2026-08-13T04:00:00.000Z",
+          "endTime": "2026-08-16T20:00:00.000Z",
           "venue": "TBD",
           "sport": "golf",
           "streaming": [
             {
-              "platform": "HBO Max (Sport)",
-              "url": "https://www.hbomax.com/no/no/sports/pga-tour",
-              "type": "streaming"
-            },
-            {
-              "platform": "Eurosport Norge",
-              "url": "https://www.hbomax.com/no/no/sports/pga-tour",
+              "platform": "Viaplay",
+              "url": "https://viaplay.no",
               "type": "streaming"
             }
           ],
           "norwegian": true,
           "norwegianPlayers": [
             {
-              "name": "Kristoffer Ventura",
-              "teeTime": "15:30",
-              "teeTimeUTC": "2026-08-09T13:30:00.000Z",
+              "name": "Andreas Halvorsen",
+              "teeTime": null,
+              "teeTimeUTC": null,
+              "status": null
+            },
+            {
+              "name": "Kristian Krogh Johannessen",
+              "teeTime": null,
+              "teeTimeUTC": null,
               "status": null
             }
           ],
-          "featuredGroups": [
-            {
-              "player": "Kristoffer Ventura",
-              "teeTime": "15:30",
-              "groupmates": [
-                {
-                  "name": "Andrew Putnam",
-                  "teeTime": "15:30"
-                }
-              ]
-            }
-          ],
-          "totalPlayers": 147
+          "featuredGroups": [],
+          "totalPlayers": 144
         }
       ]
     }
-  ],
-  "_retained": {
-    "since": "2026-08-10T02:51:19.767Z",
-    "consecutiveRetains": 29,
-    "lastFreshFetch": "2026-08-09T22:21:34.770Z"
-  }
+  ]
 }
