@@ -1,57 +1,54 @@
 {
-  "auditedAt": "2026-08-11T05:10:00Z",
+  "auditedAt": "2026-08-12T05:37:00Z",
   "horizonDays": 28,
   "gaps": [
     {
-      "interest": "Serie A — 2026/27 åpningsrunde",
-      "whatsMissing": "Serie A 2026/27 sparkes i gang helgen 22.–23. aug (åpningskamp Torino–AC Milan), men INGEN Serie A-kamp står på tavla. Til sammenligning er La Liga-runde 1 lagt inn i sin helhet (også ikke-katalog-lag som Getafe/Alavés/Rayo).",
-      "why": "ESPN-fetcheren (sports-config.js) henter bevisst kun eng.1/esp.1 (+ CL + norske ligaer) — dvs. topp-ligaene som INNEHOLDER katalog-lag; Serie A/Bundesliga har ingen navngitt katalog-lag og fetches ikke, så de er avhengige av research. Katalogen (catalog.json tier2.tournaments) lister likevel Serie A som dekket, og La Liga bordes wholesale som en jevnbyrdig topp-5-liga — så fraværet er en deknings-inkonsistens research bør avklare (fyll åpningsrunden, eller bekreft at intensjonen er entity-gated for ligaer uten katalog-lag).",
+      "interest": "Premier League — 2026/27 åpningsrunde (runde 1)",
+      "whatsMissing": "PL 2026/27 sparkes i gang helgen 21.–24. aug, men bare 3 av 10 rundekamper står på tavla — nettopp de med katalog-lag (Arsenal–Coventry 21., Manchester City–Bournemouth + Newcastle–Liverpool 23.). De 7 øvrige mangler, inkl. storklubbene Manchester United (Hull–Man Utd), Chelsea (Fulham–Chelsea) og Tottenham (Brentford–Spurs), pluss Forest–Leeds, Crystal Palace–Everton, Ipswich–Sunderland, Brighton–Aston Villa.",
+      "why": "Fotball er tier1 wholesale-dekket, og ESPN-fetcheren HAR eng.1 konfigurert (sports-config.js) — men football.json inneholder akkurat nå NULL PL-kamper (kun Eliteserien r18 + La Liga r1). _fetchMetadata melder eng.1 hentet OK (0 failed), dvs. ESPN sitt scoreboard-vindu når ennå ikke 21.–24. aug. La Liga r1 (15.–17. aug) kom nettopp gjennom esp.1 på samme vis fordi de datoene NÅ er innenfor vinduet. Derfor er PL r1 sannsynligvis et vindu-etterslep som fyller seg mekanisk via eng.1 i løpet av dager — de 3 katalog-kampene er ai-research-håndfylt i mellomtiden. MEN: hvis eng.1 fortsatt returnerer tomt når 21. aug er innenfor vinduet (~18. aug), er det en stille fetcher-brist maskert av at katalog-kampene fylles av research (jf. stale-retained-lærdommen). Merk kontrasten til Serie A/Bundesliga (ingen ESPN-liga → MÅTTE fylles wholesale av research, og ER nå fylt komplett).",
       "corroboration": [
-        "https://www.acmilan.com/en/news/articles/serie-a/2026-06-05/serie-a-2026-27-starts-with-torino-v-ac-milan",
-        "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A"
+        "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "https://www.skysports.com/football/news/11661/13555675/premier-league-2026-27-fixtures-dates-schedule-arsenal-face-coventry-and-liverpool-at-newcastle-in-opening-round",
+        "https://www.espn.com/soccer/story/_/id/49114849/premier-league-fixtures-2026-27-arsenal-coventry-city-newcastle-united-liverpool-manchester-united-manchester-city-liverpool-tottenham-hotspur"
       ],
-      "suggestedSource": "https://en.legaseriea.it/serie-a/news/looking-forward-to-the-2026-27-serie-a-fixture-list",
+      "suggestedSource": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
       "severity": "medium",
-      "firstSeen": "2026-08-11T05:10:00Z",
-      "recurrences": 0
-    },
-    {
-      "interest": "Bundesliga — 2026/27 åpningsrunde",
-      "whatsMissing": "Bundesliga 2026/27 starter fredag 28. aug (åpningskamp Bayern München–VfB Stuttgart; sen start pga. VM 2026), men INGEN Bundesliga-kamp står på tavla. Samme dekningsspørsmål som Serie A.",
-      "why": "Samme rot som Serie A: fetcheren dekker kun ligaer med katalog-lag (eng.1/esp.1), Bundesliga har ingen og fetches ikke → research-avhengig. Katalogen lister Bundesliga som dekket. Ligger 17 dager ute (nær horisontkanten), lavere hast enn Serie A.",
-      "corroboration": [
-        "https://www.bundesliga.com/en/bundesliga/news/calendar-for-2026-27-season-world-cup-34676",
-        "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga"
-      ],
-      "suggestedSource": "https://www.bundesliga.com/en/bundesliga/news/confirmed-kick-off-times-dates-2026-27-fixtures-23955",
-      "severity": "medium",
-      "firstSeen": "2026-08-11T05:10:00Z",
+      "firstSeen": "2026-08-12T05:37:00Z",
       "recurrences": 0
     }
   ],
-  "sourceIssues": [],
+  "sourceIssues": [
+    {
+      "source": "ESPN eng.1 (Premier League)",
+      "issue": "football.json har 0 PL-kamper 12. aug selv om eng.1 er konfigurert og _fetchMetadata melder henting OK (0 failed) — scoreboard-vinduet når ennå ikke PL r1 (21.–24. aug). Forventet vindu-etterslep (esp.1/La Liga r1 15.–17. aug kom gjennom da datoene var innenfor vinduet).",
+      "impact": "PL r1 er kun delvis dekket (3/10, ai-research-håndfylt) inntil vinduet når fram; blir en reell brist HVIS eng.1 fortsatt er tomt ~18. aug.",
+      "severity": "low"
+    }
+  ],
   "coveredWell": [
-    "IMMINENT (11.–15. aug) web-rekonfirmert mot uavhengige kilder — INGEN HIGH-hull. Alt som skjer denne uka står på tavla med riktig struktur.",
-    "F1 — ESPN-BLINDSONE (source-quirks-mandat, sjekkes hver kjøring): web-rekonfirmert mot formula1.com + espn.com + motorsport.com at sommerpausen fortsetter t.o.m. Nederlands GP 21.–23. aug (Zandvoort, sesongens siste, FØRSTE F1-sprint der; race søn 23. aug 15.00 CEST). Tom F1-tavla 11.–15. aug = KORREKT fravær, ikke mis-datering. Tavlas sprintstruktur riktig (sprintkval 21. + sprint/kval 22. + race 23.); Italiensk GP 6. sep inne.",
-    "Esports 100 Thieves (fokuslag, rain/Håvard Nygaard): EWC 2026 CS2 gruppespill f.o.m. 12. aug inne, OG gruppespill-åpneren «Vitality vs 100T» (12. aug 18.00) er nå på tavla FRA FETCHEREN (esports.json produserer igjen). Web-rekonfirmert mot HLTV/esports.gg: 100T kvalifisert via LCQ, hovedturnering 12.–23. aug Paris, gruppespill 12.–16. Videre 100T-kamper er GSL-betinget av åpningsresultatet → boardes når bracket avgjøres (cs2-sources: sen kunngjøring normalt). Korrekt at kun åpningskampen er datert.",
-    "Sykkel — Arctic Race of Norway web-rekonfirmert mot cyclingnews.com: nøyaktig 4 etapper 13.–16. aug (Evenes–Myre 13., Bø–Andenes 14., Stokmarknes–Storheia 15., Sortland–Narvik 16.) — matcher tavla etappe-for-etappe. Vuelta a España f.o.m. 22. aug inne.",
-    "Fotball Eliteserien runde 18 inne (Rosenborg–Viking 14., KFUM–Lillestrøm 15., Aalesund–Vålerenga + Molde–Tromsø + Sarpsborg–Sandefjord + Brann–HamKam + Fredrikstad–Kristiansund 16.). 7 kamper = korrekt (Bodø/Glimt + motstander hviler pga. europacup, verifisert i forrige audit).",
-    "Fotball europacup 11. aug inne: Bodø/Glimt–Union Saint-Gilloise + Apollon Limassol–Brann. UEFA Super Cup PSG–Aston Villa 12. aug. PL-runde 1 (Arsenal–Man City 16., Man City–Bournemouth + Newcastle–Liverpool 23.) inne. La Liga runde 1 (15.–17. aug) + katalog-La Liga (Elche–Barcelona 23., Barcelona–Athletic 27.) inne.",
-    "Fotball OBOS: Lyn–Odd 15., Åsane–Lyn 26., Kongsvinger–Lyn 30. aug inne.",
-    "Golf — FedEx-sluttspillet komplett: St. Jude 13.–16., BMW 20., Tour Championship 27. aug (Hovland). Danish Golf Championship (DP World Tour) f.o.m. 13. aug inne.",
-    "Tennis — Cincinnati Open f.o.m. 11. aug (Ruud). US Open f.o.m. 30. aug inne.",
-    "Sjakk — Sinquefield Cup (Grand Chess Tour) + EWC-sjakk (Carlsen) inne.",
-    "Friidrett — EM Birmingham 10.–16. aug inne (Warholm/Ingebrigtsen/Rooth). DL Lausanne 21., Silesia 23., Zürich 27. aug + DL-finalen (Brussel) 4. sep inne.",
-    "Håndball — REMA 1000-ligaen starter (Storhamar–Gjerpen 26., Bergsøy–Kolstad 29. aug inne)."
+    "IMMINENT-PASS (12.–16. aug) web-rekonfirmert mot uavhengige kilder — INGEN HIGH-hull. Alt som skjer denne uka står på tavla med riktig struktur.",
+    "F1 — ESPN-BLINDSONE (source-quirks-mandat, sjekkes hver kjøring): web-rekonfirmert mot formula1.com + racingnews365 at sommerpausen fortsetter t.o.m. Nederlands GP 21.–23. aug (Zandvoort, sesongens FØRSTE sprint der; race søn 23. aug). Tom F1-tavla 12.–16. aug = KORREKT fravær, ingen mis-datering. Tavlas sprintstruktur riktig (sprintkval 21. + sprint/kval 22. + race 23.); Italiensk GP 6. sep inne.",
+    "FA COMMUNITY SHIELD — sjekket særskilt (én uke før PL-start = klassisk feilkilde): Arsenal–Manchester City 16. aug er KORREKT bordet som «FA Community Shield 2026», riktig tid (14.00 UTC / 15.00 BST) OG riktig arena (Principality Stadium, Cardiff — flyttet fra Wembley pga. konserter). Web-bekreftet mot thefa.com/principalitystadium.wales. Ikke feilmerket som PL (i motsetning til hva en rask titt kunne antyde).",
+    "PL r1 katalog-kjernen ER inne: Arsenal–Coventry (21.), Man City–Bournemouth + Newcastle–Liverpool (23.) — riktig helg (21.–24. aug), riktig at PL 2026/27 starter SENT (VM 2026). Gapet over gjelder de 7 ikke-katalog-kampene.",
+    "Serie A + Bundesliga åpningsrundene (forrige audits' 2 MEDIUM-hull) er NÅ LØST: Serie A r1 (22.–24. aug) og Bundesliga r1 (28.–30. aug) bordet WHOLESALE av research (også ikke-katalog-lag: Monza–Inter, Como–Udinese, Lecce–Venezia, Frankfurt–Union Berlin osv.). Droppet fra gaps.",
+    "Europacup — norske lag web-rekonfirmert mot UEFA-trekningene (3. aug): Bodø/Glimt CL-playoff vs NEC Nijmegen (19.+25. aug), Viking CL-playoff vs Dinamo Zagreb (18.+26. aug) — begge inne med riktige leggdatoer. Brann fullførte CL... rettelse: Conference League-playoffen (5.+11. aug) VAR siste kvalik-runde → ligafase-trekning ~29. aug, ligafase okt (utenfor horisont); korrekt at Branns neste er Eliteserien (Brann–HamKam 16.). Tromsø–CFR Cluj (ECL-kvalik) 13. aug inne.",
+    "Fotball Eliteserien runde 18 komplett (Rosenborg–Viking 14.; KFUM–Lillestrøm 15.; Aalesund–Vålerenga + Molde–Tromsø + Sarpsborg–Sandefjord + Brann–HamKam + Fredrikstad–Kristiansund 16.). 7 kamper = korrekt (Bodø/Glimt + motstander hviler pga. europacup). OBOS: Lyn–Odd 15., Åsane–Lyn 26., Kongsvinger–Lyn 30. inne. UEFA Super Cup PSG–Aston Villa 12. aug inne.",
+    "Sykkel — Arctic Race of Norway alle 4 etapper 13.–16. aug inne (Evenes–Myre, Bø–Andenes, Stokmarknes–Storheia, Sortland–Narvik) med TV 2 Play. Vuelta a España web-rekonfirmert mot lavuelta.es/wikipedia: start lør 22. aug Monaco (9,4 km tempo), mål 13. sep Granada — tavla inne fra 22. aug.",
+    "Golf — FedEx-sluttspillet: St. Jude 13.–16., BMW 20., Tour Championship 27. aug (Hovland) inne. Danish Golf Championship (DP World Tour) 13.–16. inne.",
+    "Tennis — Cincinnati Open (Ruud) pågår. US Open f.o.m. 30. aug inne.",
+    "Friidrett — EM Birmingham 10.–16. aug inne (Warholm/Ingebrigtsen/Rooth). DL Lausanne 21., Silesia 23., Zürich 27. + DL-finalen Brussel 4. sep inne.",
+    "Sjakk — Sinquefield Cup + EWC-sjakk (Carlsen) pågår; Global Chess League sesong 4 (Carlsen comeback) 3. sep inne.",
+    "Esports — 100 Thieves (fokuslag, rain): EWC 2026 CS2-gruppespill f.o.m. 12. aug inne, åpneren «Vitality vs 100T» (12. aug 18.00) på tavla fra fetcheren. Videre 100T-kamper GSL-betinget → boardes når bracket avgjøres (cs2-sources: sen kunngjøring normalt).",
+    "Håndball — REMA 1000-ligaen starter (Storhamar–Gjerpen 26., Bergsøy–Kolstad 29. aug inne). Vinteridretter av-sesong (august) = korrekt fravær."
   ],
   "escalated": false,
   "notes": [
-    "Kjøring 2026-08-11 ~05:10Z (recall-audit). IMMINENT-PASS (11.–15. aug) kjørt først: INGEN HIGH-hull. F1/100T/Arctic Race web-rekonfirmert mot uavhengige kilder. Ingen eskalering, ingen escalate.request skrevet.",
-    "NY MEDIUM-GAP (recurrences 0): Serie A (åpning 22.–23. aug) og Bundesliga (åpning 28. aug) — begge katalog-tournaments — er HELT fraværende fra tavla, mens La Liga (jevnbyrdig topp-5) bordes wholesale. Rot: ESPN-fetcheren henter kun ligaer med katalog-lag (eng.1/esp.1), og disse to har ingen navngitt katalog-lag → research-avhengig og ikke fylt. Datoene bekreftet mot offisielle kilder (acmilan.com/legaseriea + bundesliga.com) + Wikipedia. Flagget som MEDIUM, ikke high: ikke imminent (ingen kamp denne helgen), ingen katalog-LAG berørt (så lav eier-impact via personlig lens), og genuint tvetydig om wholesale-intensjon er tiltenkt. Research bør avklare: fyll åpningsrundene, eller bekreft entity-gated intensjon for ligaer uten katalog-lag.",
-    "F1-BLINDSONEN (source-quirks-mandat): web-rekonfirmert som KORREKT tomrom. Sommerpause t.o.m. Nederlands GP 21.–23. aug. Ingen mis-datering å kompensere for denne kjøringen.",
-    "ESPORTS-KILDE FULGT OPP (forrige audits' LAV sourceIssue): esports.json stale-retained (consecutiveRetains=8 pr. 10. aug) er RESOLVED — ._retained=null, fetcheren produserer igjen og har levert EWC-gruppespill-åpneren «Vitality vs 100T» (source=fetcher), akkurat som forrige audit forutså skulle skje når EWC-seedingen kom 12. aug. Ikke lenger et kildeproblem; droppet fra sourceIssues. detect-coverage-gaps rapporterte 0 anomalier.",
-    "MEKANISK COVERAGE-GAP (coverage-gaps.json 2026-08-11T02:43Z: 3 gaps, 0 anomalier) TRIAGERT som STØY: «Barça/Barca missing» stammer fra ÉN Guardian-overgangssak (Man City–Rodri/Bouaddi) — ikke et event-hull. «Premier League imminent» stammer fra en Guardian-sesongforhåndsomtale — PL-runde 1 (21.–23. aug, alle katalog-lag) er inne. Ingen av dem reelle hull.",
-    "SJEKKET, KORREKT FRAVÆR (ikke hull): F1 sommerpause; vinteridretter (av-sesong aug); friidretts-VM (finnes ikke i 2026 — kun EM Birmingham, inne); ingen katalog-tier sykkelløp mellom Arctic Race-slutt og Vuelta.",
-    "OVER HORISONTEN, VAKT: 100 Thieves' videre EWC CS2-kamper (13.–16. aug gruppespill, 19.–23. sluttspill) GSL-betinget → boardes når bracket avgjøres. La Liga/Serie A/Bundesliga videre runder utover åpningen boardes løpende."
+    "Kjøring 2026-08-12 ~05:37Z (recall-audit). IMMINENT-PASS (12.–16. aug) kjørt først: INGEN HIGH-hull. F1-blindsonen, FA Community Shield og Vuelta-start web-rekonfirmert mot uavhengige kilder. Ingen eskalering, ingen escalate.request skrevet (ingen HIGH-hull).",
+    "NY MEDIUM-GAP (recurrences 0): Premier League r1 (21.–24. aug) er kun delvis bordet — 3/10 kamper (katalog-lagene). De 7 øvrige mangler (Man Utd, Chelsea, Spurs m.fl.). Rotårsak: eng.1 ER i ESPN-fetcheren, men football.json har 0 PL-kamper akkurat nå (scoreboard-vinduet når ikke 21. aug ennå — La Liga r1 kom gjennom esp.1 fordi 15.–17. aug NÅ er innenfor). Sannsynlig mekanisk selvfylling via fetcheren om få dager; research bør IKKE håndfylle wholesale nå (duplikat-risiko mot fetcheren), men self-repair/coverage bør bekrefte at eng.1 fyller PL r1 i football.json innen ~18. aug. Er den fortsatt tom da, er eng.1 en stille tom-retur (fetcher-brist maskert av ai-research-katalogkampene).",
+    "VIKTIG LÆRDOM DENNE KJØRINGEN: FA Community Shield (Arsenal–Man City 16. aug) er en klassisk maskering — en «engelsk sesongåpning» én uke før PL kan lure en rask titt til å tro PL-dekningen er komplett. Sjekket eksplisitt: Shield er korrekt merket (ikke PL), OG PL-startdatoen er verifisert til 21. aug (sen start pga. VM 2026). Det avdekket at den EKTE PL-runde-1-dekningen (21.–24.) er ufullstendig — akkurat den typen «covered-looking board» prompten advarer mot.",
+    "F1-BLINDSONEN (source-quirks-mandat): web-rekonfirmert som KORREKT tomrom 12.–16. aug. Sommerpause t.o.m. Nederlands GP 21.–23. aug. Ingen mis-datering å kompensere for denne kjøringen.",
+    "MEKANISK COVERAGE-GAP (coverage-gaps.json 2026-08-12T03:03Z: 1 gap «Arsenal imminent», 0 anomalier) TRIAGERT som STØY: stammer fra ÉN Guardian-overgangssak (Vardy/Zubimendi-rykter) med Arsenal nevnt — ikke et event-hull. Arsenal er godt dekket (Community Shield 16., PL-åpner 21.). detect-coverage-gaps meldte 0 anomalier; football.json._retained=null (fetcheren produserer friskt).",
+    "SJEKKET, KORREKT FRAVÆR (ikke hull): F1 sommerpause; vinteridretter (av-sesong aug); friidretts-VM (finnes ikke i 2026 — kun EM Birmingham, inne); ingen katalog-sykkelløp mellom Arctic Race-slutt (16.) og Vuelta (22.); Branns europacup (ligafase okt, utenfor horisont).",
+    "OVER HORISONTEN, VAKT: 100 Thieves' videre EWC CS2-kamper (GSL-betinget); PL/Serie A/Bundesliga videre runder utover åpningen boardes løpende; UCI Road-VM Montréal 20.–27. sep (>4 uker, tracket ikke promotert)."
   ]
 }
