@@ -1,17 +1,18 @@
 {
-  "checkedAt": "2026-08-11T08:50:30Z",
+  "checkedAt": "2026-08-12T09:08:48Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
     "No horizontal scroll or clipped content at any width (checked 375px hardest per the checklist); single quiet column, generous spacing, calm agenda at all three widths.",
-    "Match names read in full across two lines where needed (e.g. 'National Bank Open presented by Rogers', 'Arsenal – Manchester City') — no mid-word truncation hiding a team or side.",
-    "Every event shows a where-to-watch line and all channels are Norwegian (NRK, TV 2 Play, VG+ Sport, Viaplay, Direktesport/Avisa Nordland, EuroVolley.tv, Chess.com, YouTube (Saint Louis Chess Club), HBO Max (Sport)) — no FOX/ESPN/Sky seen. The National Bank Open and Cincinnati Open rows correctly show an honest faint '–' for an unknown channel instead of guessing.",
-    "Times present and sensibly formatted (e.g. '18:00', '13:40'); competition/round context shown under each fixture (e.g. 'UEFA Champions League 2026/27 (kvalifisering)', 'FA Community Shield 2026').",
-    "National flags and club crests render as real icons, not broken-image placeholders — verified at 3x zoom crops: Norwegian flag (EM friidrett), Brann, Rosenborg, KFUM Oslo, Alavés, Sevilla, Aalesund, Arsenal, Molde, Sarpsborg 08, Racing Santander, Espanyol, Fredrikstad, Celta Vigo, Deportivo. 'Lyn – Odd' shows a neutral placeholder dot (no crest available) rather than a broken image — an honest fallback, not a bug.",
+    "Match names read in full, wrapping to two lines where needed (e.g. 'National Bank Open presented by Rogers', 'Sandvolleyball-EM 2026 – Mol/Sørum') — no mid-word truncation hiding a team or side; Norwegian fixtures (Rosenborg–Viking, KFUM Oslo–Lillestrøm, Aalesund–Vålerenga, Molde–Tromsø, Brann–HamKam, Fredrikstad–Kristiansund) all fully legible.",
+    "Every event shows a where-to-watch line and all channels are Norwegian/legitimate streaming (NRK, TV 2 Play, Viaplay, Direktesport, EuroVolley.tv (CEV), YouTube (Saint Louis Chess Club), HBO Max (Sport)) — no FOX/ESPN/Sky seen. National Bank Open and Cincinnati Open rows correctly show an honest faint '–' instead of guessing.",
+    "Times present and sensibly formatted (e.g. '17:00', '13:40', '21:30'); competition/round context shown under each fixture (e.g. 'UEFA Champions League 2026/27 (playoff)', 'FA Community Shield 2026', 'OBOS-ligaen').",
+    "National flags and club crests render as real icons at all three widths, not broken-image placeholders (Norwegian flag on EM friidrett, Brann, Rosenborg, KFUM Oslo, Aalesund, Arsenal, Molde, Sarpsborg 08, Fredrikstad, plus La Liga crests). 'Lyn – Odd' shows a neutral placeholder icon rather than a broken image — an honest fallback, not a bug.",
     "Must-see accent dots used sparingly (EM friidrett, Sandvolleyball-EM, Rosenborg–Viking, Molde–Tromsø, Brann–HamKam), not on every row.",
     "Header, day headings, footer, and 'Dette dekker vi' / 'Merker og kilder' disclosures all intact and aligned at every width.",
-    "The floating Assistent button rests over a mid-agenda row (the 'Apollon Limassol – Brann' row at 375/393px) — DESIGN.md-sanctioned (WP-146 variant D), not flagged. It does not cover the last agenda row or the footer at any width. At 900px it sits in the empty margin beside the centered 640px column, overlapping nothing.",
-    "Could not assess: real browser tap-target/interaction behavior (only static screenshots reviewed); dark theme not captured this run (only the default light scheme, per the prescribed screenshot commands)."
+    "The floating Assistent button (sparkles icon at 375/393px, expands to a labelled 'Assistent' pill at 900px) rests over a mid-agenda row ('Sandvolleyball-EM 2026 – Mol/Sørum' / 'FedEx St. Jude Championship' depending on width) — DESIGN.md-sanctioned (WP-146 variant D), not flagged. It does not cover the last agenda row or the footer at any width. At 900px it sits in the margin beside the centered 640px column, not over any row text.",
+    "Bonus check beyond the prescribed three light-mode shots: also captured the dashboard in dark mode (--dark) at 393px — true-black background, amber accent, same calm layout and no new issues visible.",
+    "Could not assess: real browser tap-target/interaction behavior (only static screenshots reviewed)."
   ]
 }
