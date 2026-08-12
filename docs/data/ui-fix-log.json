@@ -1,11 +1,11 @@
 {
-	"runAt": "2026-08-11T09:58:00.000Z",
-	"action": "none",
-	"pr": null,
-	"fixed": [],
-	"notes": [
-		"visual-qa-log.json (checkedAt 2026-08-11T08:50:30Z) has verdict 'pass' with an empty findings[]. No high/medium findings to fix, so no branch or PR was opened.",
-		"visual-qa notes confirm the board is clean at 375/393/900: no horizontal scroll or clipped content (375px checked hardest), match names read in full across two lines where needed, every event shows a Norwegian where-to-watch line (NRK, TV 2 Play, VG+ Sport, Viaplay, etc. — no FOX/ESPN/Sky), National Bank Open / Cincinnati Open correctly show an honest faint '–' for unknown channels, flags/crests render as real icons (Lyn – Odd uses a neutral placeholder dot, an honest fallback), must-see accent dots are sparse, header/day headings/footer and the 'Dette dekker vi' / 'Merker og kilder' disclosures intact. The floating Assistent button overlap is DESIGN.md-sanctioned (WP-146 variant D), correctly not flagged.",
-		"Nothing code-fixable remains. Exiting cleanly with action 'none' per the ui-fix contract."
-	]
+  "runAt": "2026-08-12T09:08:48Z",
+  "action": "none",
+  "pr": null,
+  "fixed": [],
+  "notes": [
+    "visual-qa-log.json verdict is 'pass' with an empty findings[] (checked 2026-08-12T09:08:48Z at 375/393/900px) — no high/medium rendering issues to fix.",
+    "Nothing code-fixable reported: names wrap in full, all channels Norwegian/legitimate, flags/crests render, must-see dots sparing, chrome intact, dark mode clean.",
+    "No branch or PR opened; exiting cleanly per ui-fix 'When to act' rule 1."
+  ]
 }
