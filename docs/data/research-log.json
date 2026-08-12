@@ -1,24 +1,25 @@
 {
-  "runAt": "2026-08-11T17:15:00Z",
-  "tier": "standard",
-  "eventsAdded": 0,
-  "eventsRemoved": 0,
-  "eventsAmended": 0,
-  "trackedDelta": "Ingen event- eller katalog-endring. tracked.json kun tidsstempel-oppdatert + ny kjøringsnote. Verifisert no-op: imminent-vinduet (11.–14. aug) web-rekonfirmert korrekt, ingen nye hull.",
-  "quality": {
-    "pass": true,
-    "score": 92,
-    "failures": [
-      "INFO: Pure verified no-op (ingen materiell output-endring siden 13:45Z-kjøringen som ble gradert 93) → ingen ny fresh-context grader spunnet på uendrede outputs; siste graderte tilstand står. Lettvekts-selvvurdering loggført transparent i stedet (proporsjonalt til ~15-min-budsjettet).",
-      "INFO (utenfor research' mandat, uendret): europakvalik streaming-revert-war (Glimt/Brann) + ita.1/ger.1 i ESPN-fetcheren + esports.js rain-berikelse — alle krever verify(priorConfirmed)/self-repair, ikke flere research-pass."
-    ]
-  },
-  "notes": [
-    "STANDARD-TIER 4-timers-kjøring (tir. 2026-08-11 ~19.15 CEST). VERIFISERT NO-OP FOR BRETTET: ingen event lagt til/fjernet/amendert, ingen katalog- eller registry-endring. Scout-fan-out proporsjonalt til fersk, rolig tilstand: 1 fokusert web-scout (imminent norsk/marquee, direkte mot primær-/autoritetskilder).",
-    "TILSTAND VED START: forrige research 13:45Z (~3,5t siden, gradert 93 — GCL boardet + Warholm-finaledato-korreksjon); to tidligere kjøringer i dag (02:45Z amendering, 05:30Z Serie A+Bundesliga åpningsrunder boardet). coverage-audit 05:10Z = INGEN high-hull (imminent 11.–15. aug web-rekonfirmert, F1-sommerpause = korrekt tomrom, 100T EWC-åpner inne via fetcher; Serie A/Bundesliga medium-hull NÅ boardet begge). scout quiet hele dagen t.o.m. 12:56Z (cap 0/2, ren overgangs-/preview-støy). coverage-gaps 17:00Z = 3 entity-gaps: Arsenal (Vardy/Zubimendi-overgangsrykter) + Premier League (Bournemouth-sesongforhåndsomtale) begge preview/overgangsstøy; «Friidretts-EM missing» = falskt treff på en NRK-sak om Ola Stunes Isenes skade etter EM-nedtur (EM Birmingham ER på tavla, em-friidrett-2026) → alle triagert som støy, 0 anomalier. Tavla godt dekket (105 events).",
-    "IMMINENT WEB-REKONFIRMERT (1 fokusert scout, ingen endring nødvendig): (1) Bodø/Glimt–Union CL-kvalik returkamp (Aspmyra, 11. aug 16.00 UTC) + (2) Apollon–Brann UECL-kvalik returkamp (Limassol, 11. aug 17.00 UTC) SPILLES NÅ — begge kickoff som berammet, resultater IKKE endelige ved kjøretid (Glimt 0–0 ved pause, agg. 3–3; Brann under spill, agg. 0–1) → INGEN live-stat-amendering (in-progress-score går stale; verify/neste kjøring fester sluttresultat + hvem som går videre). (3) UEFA Super Cup PSG–Aston Villa (12. aug 19.00 UTC, Salzburg) CONFIRMED dato/tid/bane. (4) EM friidrett Birmingham: Warholm 400 m hekk semifinale ons. 12. aug 13.55 CEST + FINALE fre. 14. aug 21.40 CEST RE-BEKREFTET korrekt (matcher forrige kjørings korreksjon); Skotheim-tikamp 12.–13. aug uendret. (5) EWC CS2 100T (rain) vs Vitality Gruppe C-åpner 12. aug 18.00 UTC CONFIRMED matchup/dato (HLTV fetch-blokkert → eksakt minutt verify-flagget, uendret); ingen 100T-oppfølgingskamp berammet ennå (dobbel-elim, avhenger av Bo1). (6) Casper Ruud BEKREFTET i Cincinnati-single (12.-seed); trekningen var 11. aug 19.00 UTC (etter scout-tid) → motstander/kamptid ikke publisert ennå → ingen datert Ruud-kamp å boarde (turneringseventet dekker next-fixture). (7) Ingenting annet materielt nytt i 4-dagersvinduet.",
-    "RECONCILE (Step 1): alle catalog.tier2-entiteter + tier1-i-sesong dekket; INGEN utløpte tracked-entries å prune ennå (nærmeste: bodo-glimt-cl-qualifying + uefa-super-cup exp 13. aug + brann-conference exp 15. aug — returkampene spilles i kveld/12. aug, prunes når ferdigspilt). Ikke deep-tier (tirsdag, ikke mandags-morgen-sweep) → ingen registry-reconsiliering (Step 2.8).",
-    "HORISONT-SCAN (Step 2.6): ingen nye katalog-kandidater innen ~4 uker utover det allerede sporede (Serie A/Bundesliga/DL-serien/US Open/FedEx-finalen/Vuelta/GCL/Bretagne Classic alle inne eller tracked-plassholdere). 0 demand[] (coverage-gaps hadde ingen demand-blokk). Svakere kandidater fra forrige runde (Solheim Cup, WA Ultimate Championship Budapest 11.–13. sept, GP Québec/Montréal, UCI Road-VM Montréal) fortsatt vaktet, ikke promotert.",
-    "VEDVARENDE (self-repair/verify, uendret behov): (1) ita.1/ger.1 i ESPN-fetcheren for varig Serie A/Bundesliga-wholesale-dekning; (2) esports.js rain/streaming-berikelse på statiske EWC-kamper; (3) europakvalik streaming-revert-war (Glimt/Brann; durabel fiks = verify priorConfirmed + self-repair). Ingen streaming[] rørt denne kjøringen. validate-events.js: 105 events, 0 errors (kun forventede WP-242 weak-basis + WP-246 landing-page + chess timezone-bleed warnings)."
-  ]
+	"runAt": "2026-08-12T03:00:00Z",
+	"tier": "standard",
+	"eventsAdded": 4,
+	"eventsRemoved": 0,
+	"eventsAmended": 0,
+	"trackedDelta": "+1 ny league-entry (bodo-glimt-cl-playoff-2026-27). Viking CL-playoff-plassholderen LØST (motstander Dinamo Zagreb + kanal TV 2 Play bekreftet → boardet, priority low→medium). Brann-kvalik-entry oppdatert (gikk videre 4–3 agg til UECL-playoff, motstander uavgjort → holdt). Lillestrøm EL-playoff-plassholder oppdatert (motstander uavgjort, 2. legg 13. aug). lastUpdated → 2026-08-12T03:00Z.",
+	"quality": {
+		"pass": true,
+		"score": 94,
+		"failures": [
+			"INFO (ærlig avslørt, verify-flagget): to near-term events (Dinamo Zagreb–Viking 18. aug, NEC–Bodø/Glimt 19. aug) bærer provenance.time.basis=secondary fordi UEFA.com var utilgjengelig (503). Datokonflikten (NRK 18. vs 19. aug for Glimt borte) ble aktivt løst via Omroep Gelderland + TV 2 + FOX, men verify må feste tiden mot en UEFA/klubb-primærkilde før avspark."
+		]
+	},
+	"notes": [
+		"STANDARD-TIER 4-timers-kjøring (ons. 2026-08-12 ~05.00 CEST). MATERIELL OUTPUT: 4 ai-research-events lagt til (tavla 104→108) — de to norske Champions League-PLAYOFF-oppgjørene, som tetter «Mesterligaen missing»-recall-signalet (coverage-gaps 22:24Z: NRK «Glimt videre til Mesterliga-omspill etter drama»).",
+		"TILSTAND VED START: forrige research 11. aug 17:15Z (verifisert no-op). coverage-audit 05:10Z = INGEN high-hull (Serie A/Bundesliga medium-hull begge boardet i tidligere kjøring). Over natten (11. aug) spilte fire norske klubber europakvalik-returkamper → genuint nytt: Glimt + Viking klare for CL-playoff, Brann klar for UECL-playoff.",
+		"FAN-OUT (Step 2): 2 parallelle web-scouts + 1 uavhengig write-time fact-checker (Step 3.5). (a) Norsk-europacup-scout: Glimt/Brann/Viking/Lillestrøm playoff-oppsett mot primær-/autoritetskilder (UEFA 503 → klubbenes egne + regionale kringkastere + TV 2 + FOX/ran.joyn). (b) Tennis-scout: Ruud Cincinnati. Fact-checkeren bekreftet alle 4 CL-playoff-events (dato/tid/motstander/kanal), inkl. å LØSE Glimt-borte-datokonflikten (NECs regionale kringkaster Omroep Gelderland «neste onsdag 21.00» → 19. aug korrekt, NRKs 18. aug feil).",
+		"BOARDET (4 events, alle high, TV 2 Play): (1) NEC Nijmegen–Bodø/Glimt 19. aug 19.00 UTC (Goffertstadion); (2) Bodø/Glimt–NEC Nijmegen 25. aug 19.00 UTC (Aspmyra); (3) Dinamo Zagreb–Viking 18. aug 19.00 UTC (Maksimir); (4) Viking–Dinamo Zagreb 26. aug 19.00 UTC (Viking Stadion/SR-Bank Arena). Glimt slo Union 6–5 agg; Viking møter Dinamo (7–1 agg over Kauno Žalgiris) i klubbens første CL-playoff siden 1992. KANAL-NYANSE: CL-playoffen ligger hos TV 2 (eksklusive norske CL-rettigheter t.o.m. 2031), IKKE hos lokal holder som klubbenes tidligere kvalik-hjemmekamper (Glimt Q3 hjemme = Avisa Nordland/Direktesport/VG+ Sport) — bekreftet mot TV 2s eget kampoppsett.",
+		"BEVISST HOLDT AV TAVLA (ærlige hull, motstander/tid ikke bekreftet — en manglende event er bedre enn en oppdiktet): (a) Brann UECL-playoff — Brann GIKK VIDERE (Apollon 2–3 Brann 11. aug, Noah Holm 2 mål, 4–3 agg), men motstander avgjøres først av taperen PAOK–Anderlecht (EL Q3, 2. legg ~13. aug) + avspark ikke UEFA-publisert. (b) Lillestrøm EL-playoff — motstander uavgjort (Shamrock Rovers/Egnatia 2. legg 13. aug) + tid/kanal upublisert. (c) Casper Ruud Cincinnati — 11.-seedet har BYE til 2. runde (spiller 15.–16. aug); order-of-play ikke publisert ennå → turneringseventet dekker next-fixture, ingen datert Ruud-kamp å boarde. Alle re-sjekkes ~etter 13. aug.",
+		"RECONCILE (Step 1): catalog.tier2-entiteter + tier1-i-sesong dekket. Utløpende kvalik-entries (bodo-glimt-cl-qualifying exp 13. aug, brann-conference exp 15. aug) er nå historiske (returkampene ferdigspilt) — erstattes av playoff-entries; prunes neste kjøring. Ikke deep-tier (onsdag) → ingen registry-reconsiliering (Step 2.8).",
+		"HORISONT-SCAN (Step 2.6): ingen NYE katalog-kandidater innen ~4 uker utover det allerede sporede. 0 demand[] (coverage-gaps hadde ingen demand-blokk). Svakere kandidater fra tidligere runder (Solheim Cup, WA Ultimate Championship Budapest, GP Québec/Montréal, UCI Road-VM Montréal, Bretagne Classic) fortsatt vaktet, ikke promotert.",
+		"VEDVARENDE (self-repair/verify, uendret behov): (1) ita.1/ger.1 i ESPN-fetcheren for varig Serie A/Bundesliga-wholesale; (2) esports.js rain/streaming-berikelse på statiske EWC-kamper; (3) europakvalik streaming-revert-war (Glimt/Brann kvalik-hjemmekamper); (4) NYTT: verify bør feste de fire CL-playoff-eventenes tid mot UEFA/klubb-primærkilde (nå secondary basis pga. UEFA 503) + bekrefte/beskytte TV 2 Play. validate-events.js: 108 events, 0 errors (kun forventede WP-242 weak-basis + WP-246 landing-page + chess timezone-warnings)."
+	]
 }
