@@ -1,11 +1,11 @@
 {
-  "runAt": "2026-08-12T09:08:48Z",
+  "runAt": "2026-08-13T10:15:00Z",
   "action": "none",
   "pr": null,
   "fixed": [],
   "notes": [
-    "visual-qa-log.json verdict is 'pass' with an empty findings[] (checked 2026-08-12T09:08:48Z at 375/393/900px) — no high/medium rendering issues to fix.",
-    "Nothing code-fixable reported: names wrap in full, all channels Norwegian/legitimate, flags/crests render, must-see dots sparing, chrome intact, dark mode clean.",
-    "No branch or PR opened; exiting cleanly per ui-fix 'When to act' rule 1."
+    "visual-qa-log.json verdict is 'pass' with an empty findings[] array (checked 2026-08-13T09:07:52Z at 375/393/900px). No high/medium code-fixable findings, so nothing to fix.",
+    "Per ui-fix 'When to act' rule 1, exited cleanly without a branch or PR.",
+    "The only advisory note in the visual-qa log ('HBO Max (Sport)' as the Norwegian rights holder for FedEx St. Jude / Danish Golf Championship) is a data/source-accuracy question, not a code-fixable UI issue — out of scope for ui-fix."
   ]
 }
