@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T06:14:21.334Z",
+  "generatedAt": "2026-08-13T08:18:24.741Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -25,7 +25,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 1.03,
+    "oldestGapAgeDays": 1.11,
     "escalatable": 0,
     "catalogMatched": 2,
     "auditedAt": "2026-08-13T05:00:00Z",
@@ -33,14 +33,14 @@
       {
         "interest": "Eliteserien — runde 19 (29.–30. aug)",
         "severity": "medium",
-        "ageDays": 0.05,
+        "ageDays": 0.14,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Premier League — 2026/27 åpningsrunde (runde 1)",
         "severity": "medium",
-        "ageDays": 1.03,
+        "ageDays": 1.11,
         "recurrences": 1,
         "catalogMatched": true
       }
@@ -50,19 +50,12 @@
     "nearTermRate": 0,
     "nearTermChecked": 6,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-08-12T06:50:15Z",
+    "verifyRunAt": "2026-08-13T07:00:00Z",
     "windowRate": 0,
-    "windowChecks": 85,
+    "windowChecks": 87,
     "windowAmendments": 0,
     "windowCorrections": 11,
     "byDay": [
-      {
-        "date": "2026-07-30",
-        "checks": 4,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-07-31",
         "checks": 5,
@@ -153,30 +146,37 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-08-13",
+        "checks": 6,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-13T06:14:17.882Z",
+    "buildCheckedAt": "2026-08-13T08:18:19.650Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-13T05:44:28.160Z",
-    "manifestAgeHours": 0.5,
+    "manifestGeneratedAt": "2026-08-13T06:14:22.958Z",
+    "manifestAgeHours": 2.07,
     "staleFiles": [
       {
         "file": "tennis.json",
         "sourceLastUpdated": "2026-08-11T07:01:11.092Z",
-        "ageHours": 47.22
+        "ageHours": 49.29
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-08-12T06:50:15Z",
-    "verifyAgeHours": 23.4,
+    "checkedAt": "2026-08-13T07:00:00Z",
+    "verifyAgeHours": 1.31,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
-      "Dinamo Zagreb-Viking (CL-playoff 18 aug, tidligere uverifisert): bekreftet 18 aug 21.00 CEST (19.00 UTC) Stadion Maksimir mot gnkdinamo.hr + ran.joyn + CL-pl…"
+      "In-progress deltakelsessjekk (WP-95), ingen endring – de navngitte nordmennene fortsatt aktive: EM friidrett Birmingham (Warholm vant 4x400m mixed gull, Jako…"
     ]
   }
 }

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-13T06:14:22.820Z",
+  "generatedAt": "2026-08-13T08:18:27.352Z",
   "windowDays": 180,
   "records": {
-    "used": 214,
+    "used": 220,
     "skipped": 0
   },
   "sources": {
@@ -325,13 +325,17 @@
       "reliability": 1
     },
     "nettavisen.no": {
-      "checks": 4,
-      "agreed": 3,
+      "checks": 5,
+      "agreed": 4,
       "corrections": 1,
       "bySport": {
         "football": {
           "checks": 4,
           "agreed": 3
+        },
+        "athletics": {
+          "checks": 1,
+          "agreed": 1
         }
       },
       "byField": {
@@ -340,12 +344,12 @@
           "agreed": 2
         },
         "existence": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 2,
+          "agreed": 2
         }
       },
-      "lastChecked": "2026-07-29T08:06:00Z",
-      "reliability": null
+      "lastChecked": "2026-08-13T07:00:00Z",
+      "reliability": 0.8
     },
     "swissopengstaad.ch": {
       "checks": 1,
@@ -702,11 +706,15 @@
       "reliability": 1
     },
     "olympics.com": {
-      "checks": 1,
-      "agreed": 1,
+      "checks": 2,
+      "agreed": 2,
       "corrections": 0,
       "bySport": {
         "cycling": {
+          "checks": 1,
+          "agreed": 1
+        },
+        "beach volleyball": {
           "checks": 1,
           "agreed": 1
         }
@@ -715,9 +723,13 @@
         "time": {
           "checks": 1,
           "agreed": 1
+        },
+        "existence": {
+          "checks": 1,
+          "agreed": 1
         }
       },
-      "lastChecked": "2026-07-18T07:35:00.000Z",
+      "lastChecked": "2026-08-13T07:00:00Z",
       "reliability": null
     },
     "metlifestadium.com": {
@@ -953,13 +965,13 @@
       "reliability": null
     },
     "uefa.com": {
-      "checks": 8,
-      "agreed": 8,
+      "checks": 9,
+      "agreed": 9,
       "corrections": 0,
       "bySport": {
         "football": {
-          "checks": 8,
-          "agreed": 8
+          "checks": 9,
+          "agreed": 9
         }
       },
       "byField": {
@@ -968,11 +980,11 @@
           "agreed": 3
         },
         "time": {
-          "checks": 5,
-          "agreed": 5
+          "checks": 6,
+          "agreed": 6
         }
       },
-      "lastChecked": "2026-08-11T06:16:20Z",
+      "lastChecked": "2026-08-13T07:00:00Z",
       "reliability": 1
     },
     "postnorddanmarkrundt.dk": {
@@ -1804,6 +1816,63 @@
         }
       },
       "lastChecked": "2026-08-12T06:50:15Z",
+      "reliability": null
+    },
+    "fotmob.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "football": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-13T07:00:00Z",
+      "reliability": null
+    },
+    "golfchannel.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "golf": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "existence": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-13T07:00:00Z",
+      "reliability": null
+    },
+    "dotesports.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "esports": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "existence": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-13T07:00:00Z",
       "reliability": null
     }
   }
