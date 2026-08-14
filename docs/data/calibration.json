@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-14T06:56:22.450Z",
+  "generatedAt": "2026-08-14T08:13:08.963Z",
   "windowDays": 180,
   "records": {
-    "used": 220,
+    "used": 227,
     "skipped": 0
   },
   "sources": {
@@ -965,13 +965,13 @@
       "reliability": null
     },
     "uefa.com": {
-      "checks": 9,
-      "agreed": 9,
+      "checks": 11,
+      "agreed": 11,
       "corrections": 0,
       "bySport": {
         "football": {
-          "checks": 9,
-          "agreed": 9
+          "checks": 11,
+          "agreed": 11
         }
       },
       "byField": {
@@ -980,11 +980,11 @@
           "agreed": 3
         },
         "time": {
-          "checks": 6,
-          "agreed": 6
+          "checks": 8,
+          "agreed": 8
         }
       },
-      "lastChecked": "2026-08-13T07:00:00Z",
+      "lastChecked": "2026-08-14T06:54:47Z",
       "reliability": 1
     },
     "postnorddanmarkrundt.dk": {
@@ -1137,22 +1137,26 @@
       "reliability": 1
     },
     "fotball.no": {
-      "checks": 2,
-      "agreed": 2,
+      "checks": 3,
+      "agreed": 3,
       "corrections": 0,
       "bySport": {
         "football": {
-          "checks": 2,
-          "agreed": 2
+          "checks": 3,
+          "agreed": 3
         }
       },
       "byField": {
         "time": {
           "checks": 2,
           "agreed": 2
+        },
+        "existence": {
+          "checks": 1,
+          "agreed": 1
         }
       },
-      "lastChecked": "2026-08-03T08:53:55Z",
+      "lastChecked": "2026-08-14T06:54:47Z",
       "reliability": null
     },
     "nss-sports.com": {
@@ -1358,11 +1362,15 @@
       "reliability": null
     },
     "sports.yahoo.com": {
-      "checks": 1,
-      "agreed": 1,
+      "checks": 2,
+      "agreed": 2,
       "corrections": 0,
       "bySport": {
         "cycling": {
+          "checks": 1,
+          "agreed": 1
+        },
+        "golf": {
           "checks": 1,
           "agreed": 1
         }
@@ -1371,9 +1379,13 @@
         "streaming": {
           "checks": 1,
           "agreed": 1
+        },
+        "existence": {
+          "checks": 1,
+          "agreed": 1
         }
       },
-      "lastChecked": "2026-08-01T07:42:18Z",
+      "lastChecked": "2026-08-14T06:54:47Z",
       "reliability": null
     },
     "glimt.no": {
@@ -1701,22 +1713,22 @@
       "reliability": null
     },
     "principalitystadium.wales": {
-      "checks": 1,
-      "agreed": 1,
+      "checks": 2,
+      "agreed": 2,
       "corrections": 0,
       "bySport": {
         "football": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 2,
+          "agreed": 2
         }
       },
       "byField": {
         "time": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 2,
+          "agreed": 2
         }
       },
-      "lastChecked": "2026-08-10T06:51:57Z",
+      "lastChecked": "2026-08-14T06:54:47Z",
       "reliability": null
     },
     "commercial.viaplaygroup.com": {
@@ -1873,6 +1885,44 @@
         }
       },
       "lastChecked": "2026-08-13T07:00:00Z",
+      "reliability": null
+    },
+    "tntsports.co.uk": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "football": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "streaming": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-14T06:54:47Z",
+      "reliability": null
+    },
+    "play.tv2.no": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 1,
+      "bySport": {
+        "football": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "streaming": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-14T06:54:47Z",
       "reliability": null
     }
   }
