@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-14T09:57:50.446Z",
-  "gapCount": 4,
+  "generatedAt": "2026-08-14T10:59:04.566Z",
+  "gapCount": 2,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -12,18 +12,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/14/football-transfer-rumours-arsenal-osimhen-exchange-deal-newcastle-baleba-bid",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-14T09:57:47.964Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Bundesliga",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Women’s transfer window summer 2026: all deals from world’s top six leagues",
-      "link": "https://www.theguardian.com/football/ng-interactive/2026/jun/08/womens-transfer-window-summer-2026-all-deals-from-worlds-top-six-leagues",
-      "feed": "guardian-football",
-      "matchCount": 2,
-      "detectedAt": "2026-08-14T09:57:47.964Z"
+      "detectedAt": "2026-08-14T10:59:03.356Z"
     },
     {
       "kind": "entity",
@@ -34,29 +23,18 @@
       "link": "https://www.theguardian.com/football/2026/aug/13/rangers-crash-out-of-europa-league-as-derek-mcinness-winless-start-goes-on",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-14T09:57:47.964Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Europaligaen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "LSKs playoff-motstander er klar – møter albansk lag",
-      "link": "https://www.nrk.no/sport/lsks-playoff-motstander-er-klar-_-moter-albansk-lag-1.17989611",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-14T09:57:47.964Z"
+      "detectedAt": "2026-08-14T10:59:03.356Z"
     }
   ],
   "anomalies": [
     {
       "sport": "tennis",
       "issue": "stale-retained",
-      "detail": "docs/data/tennis.json has been served from retention for 46 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 46,
+      "detail": "docs/data/tennis.json has been served from retention for 47 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 47,
       "staleDays": 3,
       "severity": "high",
-      "detectedAt": "2026-08-14T09:57:48.958Z"
+      "detectedAt": "2026-08-14T10:59:04.353Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
