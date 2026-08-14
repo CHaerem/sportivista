@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-14T21:22:16.470Z",
-  "gapCount": 2,
+  "generatedAt": "2026-08-14T22:15:05.306Z",
+  "gapCount": 1,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -12,29 +12,18 @@
       "link": "https://www.theguardian.com/football/2026/aug/14/football-transfer-rumours-arsenal-osimhen-exchange-deal-newcastle-baleba-bid",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-14T21:22:14.300Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Europa League",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Rangers crash out of Europa League as Derek McInnes’s winless start goes on",
-      "link": "https://www.theguardian.com/football/2026/aug/13/rangers-crash-out-of-europa-league-as-derek-mcinness-winless-start-goes-on",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-08-14T21:22:14.300Z"
+      "detectedAt": "2026-08-14T22:15:04.202Z"
     }
   ],
   "anomalies": [
     {
       "sport": "tennis",
       "issue": "stale-retained",
-      "detail": "docs/data/tennis.json has been served from retention for 57 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 57,
+      "detail": "docs/data/tennis.json has been served from retention for 58 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 58,
       "staleDays": 3,
       "severity": "high",
-      "detectedAt": "2026-08-14T21:22:15.300Z"
+      "detectedAt": "2026-08-14T22:15:05.165Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
