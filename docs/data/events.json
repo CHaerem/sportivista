@@ -2301,8 +2301,8 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/fotball/obos-ligaen-28ve6m56/odd-lyn-mqwc9fg4",
-        "urlKind": "deep"
+        "url": "https://play.tv2.no/sport/fotball/obos-ligaen",
+        "urlKind": "landing"
       }
     ],
     "source": "ai-research",
@@ -2326,16 +2326,18 @@
       },
       "streaming": {
         "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/fotball/obos-ligaen-28ve6m56/odd-lyn-mqwc9fg4",
+        "url": "https://play.tv2.no/sport/fotball/obos-ligaen",
         "basis": "official",
-        "retrievedAt": "2026-08-09T06:15:00Z",
-        "note": "TV 2 Play (rettighetshaver OBOS-ligaen) har egen kampside for Lyn–Odd — bekreftet norsk visning, deep-linket. NB: TV 2s kampflis viser avspark 15.55 CEST mot fotball.nos 16.00; 5-min-avvik holdt paa fotball.nos 16.00 (tidsautoritet) inntil neste verify firmer, kan vaere TV-berammet."
+        "retrievedAt": "2026-08-14T06:54:47Z",
+        "note": "TV 2 Play (rettighetshaver OBOS-ligaen). Deep-link til /odd-lyn-mqwc9fg4 fjernet: den kampsiden er «Fra Skagerak Arena» (Odds hjemmekamp / omvendt oppgjor), mens 15. aug er Lyn hjemme paa Bislett - deep-linket pekte til feil kamp. Falt tilbake til OBOS-ligaen-landingen (rettighet uendret)."
       }
     },
-    "verifiedAt": "2026-08-12T06:50:15Z",
-    "verificationStatus": "confirmed",
+    "verifiedAt": "2026-08-14T06:54:47Z",
+    "verificationStatus": "amended",
     "verificationSources": [
-      "https://norgesfotball.com/obos-ligaen/kamper/odd/"
+      "https://www.fotball.no/fotballdata/turnering/hjem/?fiksId=206093",
+      "https://play.tv2.no/sport/fotball/obos-ligaen-28ve6m56/odd-lyn-mqwc9fg4",
+      "https://lyn1896.ticketco.events/no/sv/m/e/sesongkort_obosligaen_2026"
     ]
   },
   {
@@ -2521,13 +2523,20 @@
         "basis": "primary",
         "retrievedAt": "2026-07-23T04:00:00Z",
         "note": "migrert mekanisk fra evidence (WP-242)"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-14T06:54:47Z",
+        "note": "Community Shield vises paa Viaplay i Norge (autoritetskart football:community-shield + TNT Sports/tvgids per-kamp-oppslag). Avspark 15.00 BST = 14.00 UTC."
       }
     },
-    "verifiedAt": "2026-08-10T06:51:57Z",
+    "verifiedAt": "2026-08-14T06:54:47Z",
     "verificationStatus": "confirmed",
     "verificationSources": [
-      "https://www.principalitystadium.wales/event/2026-fa-community-shield-arsenal-vs-manchester-city/",
-      "https://commercial.viaplaygroup.com/partners/norway/sportsrights"
+      "https://www.principalitystadium.wales/2026/06/04/arsenal-and-manchester-city-set-for-2026-fa-community-shield-at-principality-stadium-as-3pm-kick-off-is-confirmed/",
+      "https://www.tntsports.co.uk/football/arsenal-manchester-city-curtain-raiser-cardiff-how-to-watch-stream-live-kick-off-time-streaming-tnt-sports-hbo-max_sto23324932/story.shtml"
     ]
   },
   {
@@ -2786,12 +2795,11 @@
     "summary": "Viking FKs 1. kamp i Champions League-PLAYOFFEN 2026/27 – borte mot kroatiske Dinamo Zagreb på Stadion Maksimir. Vikings første CL-playoff siden 1992.\n\nAvspark tirsdag 18. august kl. 21.00 CEST (19.00 UTC). Dinamo Zagreb slo Kauno Žalgiris 7–1 sammenlagt i 3. kvalikrunde. Returkampen spilles hjemme på Viking Stadion (SR-Bank Arena) i Stavanger onsdag 26. aug.\n\nNorsk visning: TV 2 Play (eksklusive norske Champions League-rettigheter).",
     "id": "032c47226270",
     "awayTeamEntityId": "viking-champions-league-playoff",
-    "verifiedAt": "2026-08-12T06:50:15Z",
+    "verifiedAt": "2026-08-14T06:54:47Z",
     "verificationStatus": "confirmed",
     "verificationSources": [
-      "https://gnkdinamo.hr/en/news/prode-li-dinamo-u-play-off-suparnik-ce-mu-biti-norveski-viking",
-      "https://ran.joyn.de/sports/ticker/ma12402196-dinamo-zagreb-viking-fk",
-      "https://www.vanguardngr.com/2026/08/full-fixtures-uefa-champions-league-play-off-draw-2/"
+      "https://www.uefa.com/uefachampionsleague/match/2049210--gnk-dinamo-vs-viking/",
+      "https://www.espn.com/soccer/match/_/gameId/401909158"
     ]
   },
   {
@@ -2874,9 +2882,9 @@
     "verificationStatus": "confirmed",
     "verificationSources": [
       "https://www.uefa.com/uefachampionsleague/match/2049214--n-e-c-vs-bodo-glimt/",
-      "https://www.fotmob.com/matches/bodoglimt-vs-nec-nijmegen/2cov5v"
+      "https://www.sofascore.com/football/match/nec-nijmegen-bodoglimt/gnsmjb"
     ],
-    "verifiedAt": "2026-08-13T07:00:00Z"
+    "verifiedAt": "2026-08-14T06:54:47Z"
   },
   {
     "sport": "golf",
@@ -2935,10 +2943,10 @@
     "id": "81cff48e2170",
     "verificationStatus": "confirmed",
     "verificationSources": [
-      "https://sports.yahoo.com/articles/fedex-cup-2026-70-players-232138151.html",
-      "https://www.golfchannel.com/pga-tour/news/2026-fedex-cup-playoff-bubble-tracker-current-standings-wyndham-championship-leaderboard"
+      "https://www.golfpost.com/tournaments/pga-tour-bmw-championship-2026/",
+      "https://sports.yahoo.com/articles/fedex-cup-playoffs-explained-2026-181237146.html"
     ],
-    "verifiedAt": "2026-08-13T07:00:00Z"
+    "verifiedAt": "2026-08-14T06:54:47Z"
   },
   {
     "sport": "football",
