@@ -226,28 +226,6 @@
     }
   },
   {
-    "sport": "tennis",
-    "tournament": "ATP/WTA Tour",
-    "title": "National Bank Open presented by Rogers",
-    "time": "2026-08-01T04:00:00.000Z",
-    "endTime": "2026-08-14T03:59:00.000Z",
-    "venue": "TBD",
-    "meta": "ATP/WTA Tour",
-    "norwegian": true,
-    "streaming": [],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": null,
-    "awayTeam": null,
-    "isFavorite": false,
-    "round": null,
-    "id": "e65d2beff203"
-  },
-  {
     "sport": "esports",
     "tournament": "BLAST Bounty Summer 2026",
     "title": "BLAST Bounty S2 semifinale: FaZe Clan – Team Spirit (Bo3)",
@@ -2075,6 +2053,32 @@
     ]
   },
   {
+    "sport": "chess",
+    "tournament": "Esports World Cup 2026 | Playoffs",
+    "title": "Quarterfinals | Match 1 & 2 – Esports World Cup 2026 | Playoffs",
+    "time": "2026-08-14T11:00:00.000Z",
+    "endTime": null,
+    "venue": "Paris, France",
+    "meta": "Esports World Cup 2026 | Playoffs",
+    "norwegian": true,
+    "streaming": [],
+    "participants": [
+      {
+        "name": "Magnus Carlsen"
+      }
+    ],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "76b16bbab6a4"
+  },
+  {
     "sport": "cycling",
     "tournament": "Arctic Race of Norway 2026",
     "title": "Etappe 2: Bø i Vesterålen – Andenes",
@@ -2174,8 +2178,13 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
+        "url": "https://www.tvkampen.com/kamp/rosenborg-viking-1834932",
+        "urlKind": "deep"
+      },
+      {
+        "platform": "Viaplay",
+        "url": "https://www.tvkampen.com/kamp/rosenborg-viking-1834932",
+        "urlKind": "deep"
       }
     ],
     "participants": [],
@@ -2930,6 +2939,36 @@
       "https://www.golfchannel.com/pga-tour/news/2026-fedex-cup-playoff-bubble-tracker-current-standings-wyndham-championship-leaderboard"
     ],
     "verifiedAt": "2026-08-13T07:00:00Z"
+  },
+  {
+    "sport": "football",
+    "tournament": "La Liga",
+    "title": "Alavés at Rayo Vallecano",
+    "time": "2026-08-20T19:00:00.000Z",
+    "endTime": null,
+    "venue": "Estadio de Vallecas",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Rayo Vallecano",
+    "awayTeam": "Alavés",
+    "isFavorite": false,
+    "round": null,
+    "id": "50969c904e21",
+    "homeTeamEntityId": "rayo-vallecano",
+    "awayTeamEntityId": "alaves"
   },
   {
     "sport": "f1",
