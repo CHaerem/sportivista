@@ -1,30 +1,8 @@
 {
-  "generatedAt": "2026-08-14T08:13:08.881Z",
-  "gapCount": 5,
+  "generatedAt": "2026-08-14T09:57:50.446Z",
+  "gapCount": 4,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Barça",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Chelsea set Friday deadline for Fernández suitors as City reject new £51m Barça bid for Rodri",
-      "link": "https://www.theguardian.com/football/2026/aug/13/manchester-city-barcelona-rodri-chelsea-enzo-fernandez",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-08-14T08:13:07.774Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Barca",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Chelsea set Friday deadline for Fernández suitors as City reject new £51m Barça bid for Rodri",
-      "link": "https://www.theguardian.com/football/2026/aug/13/manchester-city-barcelona-rodri-chelsea-enzo-fernandez",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-08-14T08:13:07.774Z"
-    },
     {
       "kind": "entity",
       "entity": "Complexity",
@@ -34,7 +12,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/14/football-transfer-rumours-arsenal-osimhen-exchange-deal-newcastle-baleba-bid",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-14T08:13:07.774Z"
+      "detectedAt": "2026-08-14T09:57:47.964Z"
     },
     {
       "kind": "entity",
@@ -45,7 +23,7 @@
       "link": "https://www.theguardian.com/football/ng-interactive/2026/jun/08/womens-transfer-window-summer-2026-all-deals-from-worlds-top-six-leagues",
       "feed": "guardian-football",
       "matchCount": 2,
-      "detectedAt": "2026-08-14T08:13:07.774Z"
+      "detectedAt": "2026-08-14T09:57:47.964Z"
     },
     {
       "kind": "entity",
@@ -56,18 +34,29 @@
       "link": "https://www.theguardian.com/football/2026/aug/13/rangers-crash-out-of-europa-league-as-derek-mcinness-winless-start-goes-on",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-14T08:13:07.774Z"
+      "detectedAt": "2026-08-14T09:57:47.964Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Europaligaen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "LSKs playoff-motstander er klar – møter albansk lag",
+      "link": "https://www.nrk.no/sport/lsks-playoff-motstander-er-klar-_-moter-albansk-lag-1.17989611",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-14T09:57:47.964Z"
     }
   ],
   "anomalies": [
     {
       "sport": "tennis",
       "issue": "stale-retained",
-      "detail": "docs/data/tennis.json has been served from retention for 45 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 45,
+      "detail": "docs/data/tennis.json has been served from retention for 46 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 46,
       "staleDays": 3,
       "severity": "high",
-      "detectedAt": "2026-08-14T08:13:08.715Z"
+      "detectedAt": "2026-08-14T09:57:48.958Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
