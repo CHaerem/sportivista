@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T07:28:31.550Z",
+  "generatedAt": "2026-08-15T08:24:21.842Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -25,7 +25,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 3.08,
+    "oldestGapAgeDays": 3.12,
     "escalatable": 0,
     "catalogMatched": 2,
     "auditedAt": "2026-08-13T05:00:00Z",
@@ -33,14 +33,14 @@
       {
         "interest": "Eliteserien — runde 19 (29.–30. aug)",
         "severity": "medium",
-        "ageDays": 2.1,
+        "ageDays": 2.14,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Premier League — 2026/27 åpningsrunde (runde 1)",
         "severity": "medium",
-        "ageDays": 3.08,
+        "ageDays": 3.12,
         "recurrences": 1,
         "catalogMatched": true
       }
@@ -52,17 +52,10 @@
     "nearTermAmended": 1,
     "verifyRunAt": "2026-08-15T05:52:03Z",
     "windowRate": 0,
-    "windowChecks": 96,
+    "windowChecks": 90,
     "windowAmendments": 0,
-    "windowCorrections": 12,
+    "windowCorrections": 11,
     "byDay": [
-      {
-        "date": "2026-08-01",
-        "checks": 6,
-        "amendments": 0,
-        "corrections": 1,
-        "rate": 0
-      },
       {
         "date": "2026-08-02",
         "checks": 4,
@@ -165,21 +158,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-15T07:28:28.648Z",
+    "buildCheckedAt": "2026-08-15T08:24:13.572Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-15T06:33:30.999Z",
-    "manifestAgeHours": 0.92,
+    "manifestGeneratedAt": "2026-08-15T07:28:33.160Z",
+    "manifestAgeHours": 0.93,
     "staleFiles": [
       {
         "file": "tennis.json",
         "sourceLastUpdated": "2026-08-11T07:01:11.092Z",
-        "ageHours": 96.46
+        "ageHours": 97.39
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-15T05:52:03Z",
-    "verifyAgeHours": 1.61,
+    "verifyAgeHours": 2.54,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
