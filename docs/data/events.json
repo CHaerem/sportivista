@@ -2130,8 +2130,13 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
+        "url": "https://www.tvkampen.com/kamp/kfum-oslo-lillestrm-1834930",
+        "urlKind": "deep"
+      },
+      {
+        "platform": "Viaplay",
+        "url": "https://www.tvkampen.com/kamp/kfum-oslo-lillestrm-1834930",
+        "urlKind": "deep"
       }
     ],
     "participants": [],
@@ -2244,9 +2249,9 @@
     "norwegian": false,
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
+        "platform": "Viaplay",
+        "url": "https://www.tvkampen.com/kamp/sevilla-rayo-vallecano-1922568",
+        "urlKind": "deep"
       }
     ],
     "participants": [],
@@ -2922,16 +2927,13 @@
   },
   {
     "sport": "football",
-    "tournament": "Premier League 2026/27",
-    "title": "Arsenal – Coventry City",
-    "time": "2026-08-21T19:00:00Z",
+    "tournament": "Premier League",
+    "title": "Coventry City at Arsenal",
+    "time": "2026-08-21T19:00:00.000Z",
     "endTime": null,
-    "venue": "Emirates Stadium, London",
+    "venue": "Emirates Stadium",
+    "meta": "Premier League",
     "norwegian": false,
-    "homeTeam": "Arsenal",
-    "awayTeam": "Coventry City",
-    "norwegianPlayers": [],
-    "participants": [],
     "streaming": [
       {
         "platform": "TV 2 Play",
@@ -2939,33 +2941,50 @@
         "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-07-31T07:20:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-      "https://www.skysports.com/football/news/11661/13555675/premier-league-2026-27-fixtures-dates-schedule-arsenal-face-coventry-and-liverpool-at-newcastle-in-opening-round"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "premier-league",
-        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-        "basis": "primary",
-        "retrievedAt": "2026-07-31T07:20:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-07-31T07:20:00Z",
-        "note": "TV 2 har PL-rettighetene i Norge (norwegian-rights [solid]). NB: én write-time-fact-check hevdet Viaplay — flagget for verify."
-      }
-    },
-    "summary": "Premier League 2026/27 – sesongåpningskampen. Nyopprykkede Coventry City til bortekamp mot Arsenal.\n\nAvspark fredag 21. august kl. 21.00 CEST (20.00 BST / 19.00 UTC) på Emirates Stadium. Kickoff-tid offisielt bekreftet som TV-valgt kamp (premierleague.com + Sky Sports).\n\nNorsk visning TV 2 / TV 2 Play.",
-    "id": "1a4969871214",
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Arsenal",
+    "awayTeam": "Coventry City",
+    "isFavorite": true,
+    "round": null,
+    "id": "1cdfce92ba74",
     "homeTeamEntityId": "arsenal",
-    "awayTeamEntityId": "coventry-city"
+    "awayTeamEntityId": "coventry-city",
+    "summary": "Premier League 2026/27 – sesongåpningskampen. Nyopprykkede Coventry City til bortekamp mot Arsenal.\n\nAvspark fredag 21. august kl. 21.00 CEST (20.00 BST / 19.00 UTC) på Emirates Stadium. Kickoff-tid offisielt bekreftet som TV-valgt kamp (premierleague.com + Sky Sports).\n\nNorsk visning TV 2 / TV 2 Play."
+  },
+  {
+    "sport": "football",
+    "tournament": "La Liga",
+    "title": "Real Sociedad at Real Betis",
+    "time": "2026-08-21T19:00:00.000Z",
+    "endTime": null,
+    "venue": "Estadio La Cartuja",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Real Betis",
+    "awayTeam": "Real Sociedad",
+    "isFavorite": false,
+    "round": null,
+    "id": "ff936301b687",
+    "homeTeamEntityId": "real-betis",
+    "awayTeamEntityId": "real-sociedad"
   },
   {
     "sport": "f1",
