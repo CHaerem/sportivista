@@ -3433,5 +3433,97 @@
     "isFavorite": false,
     "round": null,
     "id": "66d4de2b2dff"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Conference League 2026/27 (playoff)",
+    "title": "Tromsø – Brighton",
+    "time": "2026-08-20T17:00:00Z",
+    "endTime": null,
+    "venue": "Romssa Arena, Tromsø",
+    "norwegian": true,
+    "homeTeam": "Tromsø",
+    "awayTeam": "Brighton",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/sport/fotball/uefa-conference-league",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-15T16:55:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.espn.com/soccer/match/_/gameId/401910953/brighton-hove-albion-tromso",
+      "https://www.foxsports.com/soccer/europa-conference-league-tromso-vs-brighton-aug-20-2026-game-boxscore-962724",
+      "https://www.livesoccertv.com/channels/viaplay-norway/",
+      "https://www.rsssf.no/2026/Ecup.html"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "espn",
+        "url": "https://www.espn.com/soccer/match/_/gameId/401910953/brighton-hove-albion-tromso",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-15T16:55:00Z",
+        "note": "UEFA.com utilgjengelig (503/403) ved henting; avspark 17.00 UTC/19.00 CEST bekreftet mot ESPN + FOX + beIN + Sky + livesoccertv (5+ uavhengige enige) + uavhengig write-time fact-check - verify fester mot UEFA/klubb primaerkilde"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/sport/fotball/uefa-conference-league",
+        "basis": "official",
+        "retrievedAt": "2026-08-15T16:55:00Z",
+        "note": "Conference League = Viaplays eksklusive norske UECL-rettigheter; hjemmelegg-sublisens (Amedia/Direktesport) sjekket - ingen funnet, Viaplay holder"
+      }
+    },
+    "summary": "Tromsø IL tar imot Brighton & Hove Albion i det første oppgjøret i Conference League-playoffen — siste hinder før ligaspillet.\n\nTromsø slo CFR Cluj 7–1 sammenlagt i 3. kvalikrunde (Isak Dahlqvist hat trick i bortekampen). Brighton er tung motstand fra Premier League.\n\nAvspark torsdag 20. august kl. 19.00 CEST (17.00 UTC) på Romssa Arena (Alfheim). Returkampen spilles borte i England torsdag 27. august."
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Europa League 2026/27 (playoff)",
+    "title": "Egnatia – Lillestrøm",
+    "time": "2026-08-20T17:00:00Z",
+    "endTime": null,
+    "venue": "Albania",
+    "norwegian": true,
+    "homeTeam": "Egnatia",
+    "awayTeam": "Lillestrøm",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/sport/fotball/uefa-europa-league",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-15T16:55:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.rsssf.no/2026/Ecup.html",
+      "https://www.footmercato.net/live/5816963294151968254-egnatia-rrogozhine-vs-lillestrom"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.footmercato.net/live/5816963294151968254-egnatia-rrogozhine-vs-lillestrom",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-15T16:55:00Z",
+        "note": "UEFA.com 403 ved henting; avspark 19.00 CEST (17.00 UTC; Albania = CEST) fra footmercato + 19.00-konsensus, uavhengig fact-check-bekreftet - venue TBC/Elbasan Arena (Egnatia hjemme), verify fester eksakt minutt + venue mot UEFA/klubb primaerkilde"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/sport/fotball/uefa-europa-league",
+        "basis": "official",
+        "retrievedAt": "2026-08-15T16:55:00Z",
+        "note": "Europa League = Viaplays eksklusive norske UEL-rettigheter; bortelegg gaar til hovedrettighetshaver (ingen norsk lokal-sublisens paa bortekamp)"
+      }
+    },
+    "summary": "Lillestrøm SK spiller sitt første oppgjør i Europa League-playoffen — siste hinder før ligaspillet — borte mot albanske mestere Egnatia.\n\nEgnatia slo ut Shamrock Rovers i forrige runde. Returkampen spilles hjemme på Åråsen torsdag 27. august.\n\nAvspark torsdag 20. august kl. 19.00 CEST (17.00 UTC). Norsk visning: Viaplay."
   }
 ]
