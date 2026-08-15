@@ -300,5 +300,13 @@
     "verdict": "quiet",
     "reason": "RSS (45 items, 17:18 UTC): transfer-season noise (Ferran Torres/PSG done, Cristian Romero/Atlético Madrid, Enzo/Man City/Chelsea, Osimhen/Arsenal, Balogun/Tottenham, Jesus/Napoli, La Liga 2026-27 preview, Community Shield, Liverpool/Bezos—no schedule/streaming/broadcaster impact). EM friidrett ongoing (Warholm finals, Ingebrigtsen legacy, Jæger semifinals, Guttormsen finals, stafett—already tracked through 16 Aug, no changes). Past results (Arctic Race Blikra stage, Hovland Memphis golf, Rosenborg/Viking 2-1 overtime, Finlay Tarling death Volta a Portugal stage 8—tragic but not upcoming event). Personal news (Birgit Skarstein pregnancy, athlete injuries/career moves—no event-schedule impact). Coverage gaps (8 entity, 1 imminent): LaLiga (season kicking off this weekend, tier-1 covered sport already tracked, pre-season setup only); Nakamura/Firouzja (Sinquefield Cup ongoing 10-21 Aug, Carlsen esport-VM final already escalated yesterday, no new match announcement); Rosenborg/Giro/Giro d'Italia/Friidretts-EM (all false positives from transfer/past-result headlines, not concrete upcoming event signals). Anomalies (1): Tennis stale-retained (70+ runs, 4 days, HIGH—infrastructure issue for coverage-critic/self-repair domain, not scout research escalation). No schedule/time/venue changes to tracked events, no broadcaster announcements, no 100 Thieves CS2 match hints, no tracked athlete imminent event changes, or concrete new upcoming events requiring escalation detected. Escalation cap: 0/2 today (UTC).",
     "signals": []
+  },
+  {
+    "runAt": "2026-08-15T18:25:00.000Z",
+    "verdict": "escalate",
+    "reason": "RSS (55 items, 18:23 UTC): LaLiga 2026-27 season opener weekend (16–17 Aug) flagged as imminent=true in coverage-gaps.json with 2 RSS matches detected. Tier-1 covered sport (football). Board appears to lack opening-weekend events in events.json. Imminent coverage gap requiring verification and potential event addition. No other schedule/streaming/broadcaster changes, 100 Thieves CS2 hints, or new imminent events detected. Escalation cap: 0/2 today (UTC) before this escalation.",
+    "signals": [
+      "LaLiga 2026-27 season opener imminent (16–17 Aug) — tier-1 sport, gap flagged, board may lack events"
+    ]
   }
 ]
