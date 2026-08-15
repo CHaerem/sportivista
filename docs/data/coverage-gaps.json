@@ -1,17 +1,73 @@
 {
-  "generatedAt": "2026-08-15T12:31:43.807Z",
-  "gapCount": 0,
+  "generatedAt": "2026-08-15T13:28:13.233Z",
+  "gapCount": 5,
   "anomalyCount": 1,
-  "gaps": [],
+  "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Alireza Firouzja",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Magnus Carlsen utspilte motstanderen – klar for finale i esport-VM",
+      "link": "https://www.nrk.no/sport/magnus-carlsen-utspilte-motstanderen-_-klar-for-finale-i-esport-vm-1.17990523",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-15T13:28:10.665Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Firouzja",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Magnus Carlsen utspilte motstanderen – klar for finale i esport-VM",
+      "link": "https://www.nrk.no/sport/magnus-carlsen-utspilte-motstanderen-_-klar-for-finale-i-esport-vm-1.17990523",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-15T13:28:10.665Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Rosenborg",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Brennheit spiss senka Viking på overtid",
+      "link": "https://www.nrk.no/sport/brennheit-spiss-senka-viking-pa-overtid-1.17990628",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-15T13:28:10.665Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Giro d'Italia",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Erlend Blikra fikk revansje – vant Arctic Race of Norway-etappe",
+      "link": "https://www.nrk.no/sport/erlend-blikra-fikk-revansje-_-vant-arctic-race-of-norway-etappe-1.17990522",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-15T13:28:10.665Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Giro",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Erlend Blikra fikk revansje – vant Arctic Race of Norway-etappe",
+      "link": "https://www.nrk.no/sport/erlend-blikra-fikk-revansje-_-vant-arctic-race-of-norway-etappe-1.17990522",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-15T13:28:10.665Z"
+    }
+  ],
   "anomalies": [
     {
       "sport": "tennis",
       "issue": "stale-retained",
-      "detail": "docs/data/tennis.json has been served from retention for 67 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 67,
+      "detail": "docs/data/tennis.json has been served from retention for 68 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 68,
       "staleDays": 4,
       "severity": "high",
-      "detectedAt": "2026-08-15T12:31:43.640Z"
+      "detectedAt": "2026-08-15T13:28:11.666Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
