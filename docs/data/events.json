@@ -1248,8 +1248,8 @@
         "note": "migrert mekanisk fra evidence (WP-242)"
       }
     },
-    "verifiedAt": "2026-08-11T06:15:53Z",
-    "verificationStatus": "amended",
+    "verifiedAt": "2026-08-15T05:52:03.367Z",
+    "verificationStatus": "confirmed",
     "verificationSources": [
       "https://tickets.birmingham26.com/timetable",
       "https://en.wikipedia.org/wiki/2026_European_Athletics_Championships",
@@ -1518,12 +1518,12 @@
     },
     "summary": "Sandvolleyball-EM (EuroBeachVolley 2026) i Stare Jabłonki, Polen, 12.–16. august. Anders Mol og Christian Sørum – regjerende olympiske mestere (Tokyo + Paris) og femdobbelte europamestere – jakter sin sjette strake EM-tittel; de er trukket i herrenes pulje C (bekreftet mot CEV/EEVZA puljetrekning).\n\nPuljespill fra 12. august, medaljekamper 16. august. Eksakte kamptider for Mol/Sørum er ennå ikke publisert (økt-timeplanen slippes nærmere start) – starttiden over er et anslag for åpningsdagen, ikke et bekreftet klokkeslett.\n\nGratis/offisiell visning på CEVs EuroVolley.tv; norsk kringkaster er ikke bekreftet ennå (verify følger opp).",
     "id": "2ff183c5f4a1",
-    "verifiedAt": "2026-08-09T06:15:00Z",
+    "verifiedAt": "2026-08-15T05:52:03.367Z",
     "verificationStatus": "confirmed",
     "verificationSources": [
-      "https://eevza.eu/mouth-watering-fixtures-emerge-from-eurobeachvolley-pool-phase-draw/",
-      "https://beachevents.cev.eu/beach/competition/1838",
-      "https://ebv2026.pl/en/"
+      "https://www.nrk.no/sport/mol-og-sorum-videre-i-em-1.17988765",
+      "https://tvguide.vg.no/sport/sandvolleyball",
+      "https://eevza.eu/mouth-watering-fixtures-emerge-from-eurobeachvolley-pool-phase-draw/"
     ]
   },
   {
@@ -2017,8 +2017,12 @@
     "venue": "Paris Expo Porte de Versailles, Paris",
     "norwegian": true,
     "participants": [
-      { "name": "Magnus Carlsen" },
-      { "name": "Denis Lazavik" }
+      {
+        "name": "Magnus Carlsen"
+      },
+      {
+        "name": "Denis Lazavik"
+      }
     ],
     "norwegianPlayers": [],
     "streaming": [
@@ -2052,8 +2056,8 @@
         "sourceId": "wikipedia",
         "url": "https://en.wikipedia.org/wiki/2026_Esports_World_Cup_%E2%80%93_Chess",
         "basis": "secondary",
-        "retrievedAt": "2026-08-15T06:30:00Z",
-        "note": "Wikipedias tidsplantabell (UTC+2) oppgir grand final 16.30 CEST (14.30 UTC); Gamereactors fixtures-oppsett oppgir 15.30 CEST. Kildekonflikt på ~1 t → confidence medium, holdt på Wikipedias 16.30. Arrangørens egen side (esportsworldcup.com/liquipedia) ga 403 ved henting. Finalen spilles ETTER bronsefinalen (13.00 CEST) på samme scene. chess.com bekrefter kun at finaledagens spill starter 13.00 CEST (= bronsefinalen), ikke finalens eksakte klokkeslett."
+        "retrievedAt": "2026-08-15T05:52:03.367Z",
+        "note": "Verify 15. aug: Wikipedias tidsplantabell bekrefter grand final 16.30 CEST (14.30 UTC). chess.com bekrefter at finaledagens spill starter 13.00 CEST (bronsefinalen Firouzja–Nakamura), finalen følger etter. Gamereactors 15.30 CEST forkastet til fordel for arrangør-nære 16.30."
       },
       "streaming": {
         "sourceId": "chesscom",
@@ -2063,7 +2067,13 @@
         "note": "chess.com er arrangør av sjakkonkurransen på EWC og sender gratis på egne kanaler (Events-side, YouTube, Twitch) + Chess24 Twitch. Ingen norsk TV-rettighet — gratis online i Norge."
       }
     },
-    "summary": "Magnus Carlsen er klar for finalen i sjakk-VM på Esports World Cup 2026 (Paris) og forsvarer fjorårets tittel. Motstander er 19 år gamle hviterussiske Denis Lazavik. Carlsen slo Nihal Sarin 2,5–0,5 og Alireza Firouzja 4–1 på veien til finalen; Lazavik slo Abdusattorov og Nakamura.\n\nFinalen spilles best av tre sett (to sett à fire partier + et eventuelt avgjørende sett på to partier). Førstepremie er $250 000.\n\nEksakt starttid er noe usikker: Wikipedias tidsplan oppgir 16.30 CEST, Gamereactor 15.30 CEST. Finalen følger etter bronsefinalen (Nakamura–Firouzja, 13.00 CEST). Gratis på chess.com (Events/YouTube/Twitch) og Chess24 i Norge."
+    "summary": "Magnus Carlsen er klar for finalen i sjakk-VM på Esports World Cup 2026 (Paris) og forsvarer fjorårets tittel. Motstander er 19 år gamle hviterussiske Denis Lazavik. Carlsen slo Nihal Sarin 2,5–0,5 og Alireza Firouzja 4–1 på veien til finalen; Lazavik slo Abdusattorov og Nakamura.\n\nFinalen spilles best av tre sett (to sett à fire partier + et eventuelt avgjørende sett på to partier). Førstepremie er $250 000.\n\nFinalen spilles 16.30 CEST (14.30 UTC), etter bronsefinalen Firouzja–Nakamura (13.00 CEST) – bekreftet mot Wikipedias tidsplan og chess.coms finaledag-oppsett. Gratis på chess.com (Events/YouTube/Twitch) og Chess24 i Norge.",
+    "verifiedAt": "2026-08-15T05:52:03.367Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://en.wikipedia.org/wiki/2026_Esports_World_Cup_%E2%80%93_Chess",
+      "https://www.chess.com/news/view/2026-esports-world-cup-playoffs-qf-sf"
+    ]
   },
   {
     "sport": "cycling",
@@ -2878,16 +2888,29 @@
         "sourceId": "formula1",
         "url": "https://www.formula1.com/en/latest/article/formula-1-heineken-dutch-grand-prix-2026.VYghWPhEDqYBlWbd1iKe6",
         "basis": "primary",
-        "retrievedAt": "2026-07-28T03:52:00Z",
-        "note": "migrert mekanisk fra evidence (WP-242)"
+        "retrievedAt": "2026-08-15T05:52:03.367Z",
+        "note": "Verify 15. aug: sprintkvalifisering fredag 21. aug 16.30 CEST (14.30 UTC) bekreftet – korroborert av Sky Sports + worldofspeed sprint-tidsplan. Matcher tavla."
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-15T05:52:03.367Z",
+        "note": "Viaplay/V Sport har F1-rettighetene i Norge 2026."
       }
-    }
+    },
+    "verifiedAt": "2026-08-15T05:52:03.367Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.skysports.com/f1/news/12433/13572005/dutch-gp-2026-sprint-weekend-dates-schedule-weather-uk-start-time-and-how-to-watch-or-stream-f1-race-at-zandvoort-live-on-sky-sports",
+      "https://worldofspeed.org/f1/dutch-grand-prix-2026-schedule-sprint-tv-guide/"
+    ]
   },
   {
     "sport": "athletics",
     "tournament": "Wanda Diamond League",
     "title": "Athletissima Lausanne",
-    "time": "2026-08-21T17:45:00Z",
+    "time": "2026-08-21T18:00:00Z",
     "endTime": "2026-08-21T20:00:00Z",
     "venue": "Stade de la Pontaise, Lausanne",
     "norwegian": false,
@@ -2907,7 +2930,7 @@
       "https://athletissima.ch/en/your-evening",
       "https://www.diamondleague.com/calendar/"
     ],
-    "summary": "Athletissima Lausanne – Diamond League-stevne på Stade de la Pontaise, det nest siste før DL-finalen i Brussel (4.–5. sept).\n\nStevnestart kl. 19.45 CEST (17.45 UTC) – bekreftet på arrangørens egen side (athletissima.ch). Det detaljerte øvelsesprogrammet og startlistene publiseres nærmere stevnet.\n\nNorsk visning: NRK (Diamond League-rettighetene i Norge t.o.m. 2029).",
+    "summary": "Athletissima Lausanne – Diamond League-stevne på Stade de la Pontaise, det nest siste før DL-finalen i Brussel (4.–5. sept).\n\nStevnestart kl. 20.00 CEST (18.00 UTC) – bekreftet på arrangørens egen side (athletissima.ch). Det detaljerte øvelsesprogrammet og startlistene publiseres nærmere stevnet.\n\nNorsk visning: NRK (Diamond League-rettighetene i Norge t.o.m. 2029).",
     "participants": [],
     "id": "19e3516672f6",
     "provenance": {
@@ -2915,7 +2938,8 @@
         "sourceId": "diamond-league",
         "url": "https://athletissima.ch/en/your-evening",
         "basis": "primary",
-        "retrievedAt": "2026-07-30T17:50:00Z"
+        "retrievedAt": "2026-08-15T05:52:03.367Z",
+        "note": "Verify 15. aug: arrangørens egen side oppgir det internasjonale stevnet start 20.00 CEST (18.00 UTC) – korrigerte tidligere anslag 19.45 CEST."
       },
       "streaming": {
         "sourceId": "nrk",
@@ -2923,7 +2947,12 @@
         "basis": "official",
         "retrievedAt": "2026-07-30T17:50:00Z"
       }
-    }
+    },
+    "verifiedAt": "2026-08-15T05:52:03.367Z",
+    "verificationStatus": "amended",
+    "verificationSources": [
+      "https://athletissima.ch/en/your-evening"
+    ]
   },
   {
     "sport": "football",
