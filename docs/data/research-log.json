@@ -1,27 +1,32 @@
 {
-  "runAt": "2026-08-15T06:30:00Z",
-  "tier": "deep",
-  "trigger": "scout-escalation (2026-08-14T18:49Z): NRK «Magnus Carlsen utspilte motstanderen – klar for finale i esport-VM»",
-  "eventsAdded": 1,
-  "eventsRemoved": 0,
+  "runAt": "2026-08-15T13:00:00Z",
+  "tier": "standard",
+  "trigger": "scheduled 4-hourly standard run",
+  "eventsAdded": 0,
+  "eventsRemoved": 27,
   "eventsAmended": 1,
-  "trackedDelta": "Oppdaterte magnus-carlsen + esports-world-cup-2026-chess med EWC-sjakkfinale-resultatet (Carlsen vs Lazavik) og fersk evidence; refreshet lastUpdated. Ingen katalogendring (Lazavik ikke katalog-entitet; eventet resolver via Carlsen).",
+  "trackedDelta": "Ingen katalog-/registry-/tracked-entitetsendring (alle tracked-entries innen expires, alle catalog.tier2 + tier1-i-sesong dekket). Oppdaterte magnus-carlsen + esports-world-cup-2026-chess med finaletid-korreksjonen + dublett-fiksen; refreshet lastUpdated.",
   "quality": {
     "pass": true,
-    "score": 94,
+    "score": 91,
     "failures": [
-      "Minor (non-blocking): event-summary nevnte Twitch/Chess24 som chips ikke hadde — nå rettet ved å legge til chess.com Twitch-chip på begge sjakk-eventene."
+      "Første gradering FANT ETT hard-fail (score 62): 'Bergsøy – Kolstad (menn)' (handball, 29. aug) var confidence:high med kun 1 reell evidence-URL (den andre er en catalog.json#-basispeker). RETTET i én bundet revisjonsrunde → nedgradert til medium. Re-gradering: pass, 91.",
+      "Samme runde: fjernet 'Chess24' fra EWC-sjakkfinalens summary (var ikke i streaming[]) → summary matcher nå streaming[] eksakt.",
+      "STÅENDE (−8, self-repair, ikke research-forfatterfeil): esports.js/Liquipedia-sjakk-parseren tilordner fortsatt Magnus Carlsen til den statiske '3rd Place Match'-noden (bronsen er Nakamura–Firouzja) — Carlsen vises to ganger på dagens tavle. Flagget ≥4 kjøringer; research kan ikke fikse en fetcher.",
+      "MINDRE (−1, utenfor 7-dagersvinduet): US Open 2026 (30. aug) har streaming[] 'Discovery+' mens summary sier 'HBO Max (Sport)' — samme WBD-tjeneste post-rebrand (alias), men label bør harmoniseres til 'HBO Max (Sport)'. Ikke rørt (Step 5: én revisjonsrunde, så stopp)."
     ],
-    "gradedBy": "independent grader subagent vs scripts/agents/rubrics/research-rubric.md"
+    "gradedBy": "independent grader subagent vs scripts/agents/rubrics/research-rubric.md (2 passes: 62 → hard-fail fikset → 91)"
   },
   "notes": [
-    "FOKUSERT ESKALERINGSKJØRING (deep-tier), ikke en bred sveip. Scout eskalerte på Carlsens EWC-sjakkfinale i dag (15. aug).",
-    "LAGT TIL: EWC 2026 sjakk-finale Magnus Carlsen – Denis Lazavik, 2026-08-15T14:30:00Z (16.30 CEST), ai-research, confidence=medium. Carlsen slo Sarin (2,5–0,5) + Firouzja (4–1) i sluttspillet. Best av tre sett, $250k til vinner. Gratis i Norge på chess.com (Events/YouTube/Twitch) + Chess24 — ingen norsk TV-rettighet.",
-    "TIDS-KILDEKONFLIKT (derfor medium): Wikipedias tidsplantabell (UTC+2) oppgir finalen 16.30 CEST (14.30 UTC); Gamereactor oppgir 15.30 CEST — ~1 t avvik. Holdt på Wikipedias 16.30 med note i provenance + summary. chess.com bekrefter kun at finaledagens spill starter 13.00 CEST (= bronsefinalen, ikke finalens klokke). Arrangørens egen side (esportsworldcup.com/liquipedia) ga 403 ved henting → provenance.time.basis=secondary (Wikipedia).",
-    "FETCHER-FEIL KORRIGERT: den statiske esports/Liquipedia-sjakk-fetcheren hadde plassert Magnus Carlsen i «3rd Place Match»-eventet (id 64aee02b6f3a, 15. aug 11.00 UTC). Bronsefinalen er i realiteten Nakamura–Firouzja (begge catalog.tier2.athletes) 13.00 CEST/11.00 UTC; finalen er Carlsen–Lazavik. Rettet fetcher-eventet in-place (riktige deltakere + tittel + chess.com/YouTube/Twitch-strøm). NB: build-events re-kjører fetcheren, så rettelsen er en stopgap for denne publiseringen — FLAGGET FOR SELF-REPAIR: esports.js/Liquipedia-sjakk-parseren tilordnet feil spiller til bronsefinale-noden (samme parser-familie som de tidligere flaggede «Lower | Round 1»-tittel- og tomme-streaming-problemene).",
-    "WRITE-TIME FACT-CHECK (Step 3.5): fersk-kontekst subagent verifiserte begge kampene uavhengig mot Wikipedia/chess.com/Gamereactor og KORRIGERTE finalens starttid (11.00 UTC var bronsefinale-sloten, ikke finalen). Rettelsen anvendt før skriving.",
-    "IKKE HÅNDFYLT (bevisst): coverage-audit (13. aug) sine medium-hull — Eliteserien r19 (29.–30. aug) + PL r1 resterende 7 kamper — er tilskrevet ESPN-fetcherens vindu-etterslep som selv-fyller ~18.–26. aug; håndfylling nå gir duplikat-risiko mot fetcheren. Følges av coverage/self-repair.",
-    "TRIAGERT SOM IKKE-RESEARCH: coverage-gaps anomali «tennis stale-retained» (58 kjøringer, HIGH) — tennis.json-fetcheren produserer ikke friskt, men brettet er dekket av andre kilder. Dette er en fetcher-brist for self-repair, ikke et research-hull. Cincinnati Open (Ruud) t.o.m. 24. + US Open f.o.m. 30. aug er allerede dekket. Coverage-gaps entitets-hull «Complexity» = falsk positiv fra en Guardian-overgangsoverskrift.",
-    "IKKE-KJØRT (fokusert eskalering): full tier1/tier2-rekonsiliering, horisont-scan (Step 2.6), og ukentlig registry-sweep (Step 2.8, kun mandag deep) — neste ordinære/ukentlige kjøring dekker disse. Ingen demand[] i coverage-gaps.json denne kjøringen."
+    "STANDARD-TIER 4-TIMERSKJØRING. Tilstand ved start var svært fersk + rolig: forrige research 06:30Z (deep-tier eskalering, gradert 94), coverage-gaps 12:31Z = 0 gaps + 1 anomali (tennis stale-retained, fetcher-brist for self-repair), scout quiet hele dagen (cap 0/2). Ingen scout-eskalering. Proporsjonal, fokusert kjøring med egen web-fact-check framfor bred fan-out.",
+    "VIKTIGSTE FUNN — EWC-SJAKKFINALE-DUBLETT + TIDSFEIL (Carlsens finale er dagens største norske «når», i dag lør. 15. aug): tavla viste finalen TO ganger med sprikende tid. Den statiske Liquipedia-fetcheren boardet grand final-noden på 13.30 UTC (15.30 CEST, maskintittel «Grand Final – Esports World Cup 2026 | Playoffs», tom streaming); morgenkjøringens ai-research-event sto på 14.30 UTC (16.30 CEST, Wikipedia).",
+    "TIDSKORREKSJON 16.30 → 15.30 CEST (14.30 → 13.30 UTC): egen web-fact-check (WebSearch + chess.com-artikkel + forsøkt Liquipedia, som ga 403) viste at TO uavhengige kilder oppgir 15.30 CEST — Liquipedias turneringsbracket (som esports-fetcheren SELV parset) + Gamereactor — mot Wikipedias 16.30 (nå minoritet). chess.com bekrefter kun finaledagens spillstart 13.00 CEST (= bronsefinalen). Confidence beholdt medium (residual ~1 t konflikt). Ai-research-eventen flyttet til 13.30 UTC, summary + provenance.time korrigert (sourceId wikipedia → liquipedia).",
+    "DUBLETT LØST via build-events' venue-match: ai-research-eventen (venue «Paris Expo Porte de Versailles, Paris») og den statiske noden (venue «Paris, France») deler «Paris» + har 0 felles tittelord + overlappende tid → venue-match dropper den statiske plassholderen og beholder den berikede ai-research-eventen (begge spillere + chess.com/YouTube/Twitch-strøm + ryddig tittel). Kjørte build-events lokalt (deterministisk, ingen ny fetch siden 12:31Z-pipelinen) for å bevise kollapsen: 104 → 77 events.",
+    "BOARD-OPPRYDNING: prunet 26 foreldede ai-research-events (endTime < nå): BLAST Bounty S2 (1.–2. aug), Tour de Pologne + Tour de Suisse/Romandie-etapper, ferdigspilte norske europakvalik (Glimt/Brann/Tromsø 4.–13. aug) + OBOS/Lyn-kamper (2.–8. aug), UEFA Super Cup (12. aug), Arctic Race etappe 1–2 (13.–14. aug). De hadde hopet seg opp uprunet — build-events auto-pruner IKKE ai-research-events, og validate-events HARD-FEILET på «Past event found» (BLAST 1. aug) inntil de ble fjernet.",
+    "FETCHER-FEIL RE-FLAGGET FOR SELF-REPAIR (esports.js/Liquipedia-sjakk-parser, samme familie som morgenkjøringen flagget): den statiske «3rd Place Match»-noden (11.00 UTC) tilordner fortsatt Magnus Carlsen — bronsefinalen er i realiteten Nakamura–Firouzja (begge catalog.tier2.athletes). Parseren tilordner feil spiller til bronse-noden + gir maskintitler + tom streaming[]. Kan ikke fikses varig fra research (fetcheren re-skriver noden hver build).",
+    "TRIAGERT SOM IKKE-RESEARCH: coverage-gaps-anomalien «tennis stale-retained» (67 kjøringer, 4 dager, HIGH) — tennis.json-fetcheren produserer ikke friskt, men brettet er dekket av andre kilder (Cincinnati Open/Ruud t.o.m. 24. + US Open f.o.m. 30. aug allerede dekket). Fetcher-brist for self-repair, ikke et research-hull.",
+    "IKKE HÅNDFYLT (bevisst): coverage-auditens (13. aug) to MEDIUM vindu-etterslep-hull — Eliteserien r19 (29.–30. aug) + PL r1 resterende 7 ikke-katalog-kamper — er tilskrevet ESPN eng.1/nor.1s scoreboard-vindu som selv-fyller ~18.–26. aug. Håndfylling nå gir duplikat-risiko mot fetcheren; coverage/self-repair vokter.",
+    "RECONCILE (Step 1): alle catalog.tier2 + tier1-i-sesong dekket; ingen utløpte tracked-entries (alle expires ≥ 15. aug). HORISONT-SCAN (Step 2.6): INGEN nye katalog-kandidater innen ~4 uker; Norge Nations League vs Danmark 24. sep + Portugal 27. sep re-notert horisont-nærmende (>4 uker, ikke promotert/boardet). 0 demand[] i coverage-gaps.json. Ikke deep-tier (lørdag) → ingen ukentlig registry-sweep (Step 2.8).",
+    "WRITE-TIME FACT-CHECK (Step 3.5): den eneste materielt endrede eventen (EWC-sjakkfinalen) ble uavhengig web-verifisert av denne kjøringen selv (WebSearch + chess.com + Liquipedia-forsøk) før skriving — tidskorreksjonen er resultatet av den sjekken. validate-events.js: 77 events, 0 errors (kun forventede WP-242/246/timezone-warnings)."
   ]
 }
