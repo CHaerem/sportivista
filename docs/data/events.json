@@ -1965,17 +1965,36 @@
   },
   {
     "sport": "chess",
-    "tournament": "Esports World Cup 2026 | Playoffs",
-    "title": "3rd Place Match – Esports World Cup 2026 | Playoffs",
+    "tournament": "Esports World Cup 2026 (sjakk)",
+    "title": "EWC 2026 sjakk om 3.-plass: Hikaru Nakamura – Alireza Firouzja",
     "time": "2026-08-15T11:00:00.000Z",
     "endTime": null,
-    "venue": "Paris, France",
-    "meta": "Esports World Cup 2026 | Playoffs",
-    "norwegian": true,
-    "streaming": [],
+    "venue": "Paris Expo Porte de Versailles, Paris",
+    "meta": "Esports World Cup 2026 – bronsefinale",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "chess.com (gratis livestrøm)",
+        "url": "https://www.chess.com/events/2026-esports-world-cup-playoffs",
+        "urlKind": "deep"
+      },
+      {
+        "platform": "YouTube (chess.com)",
+        "url": "https://www.youtube.com/@chess",
+        "urlKind": "deep"
+      },
+      {
+        "platform": "Twitch (chess.com)",
+        "url": "https://www.twitch.tv/chess",
+        "urlKind": "deep"
+      }
+    ],
     "participants": [
       {
-        "name": "Magnus Carlsen"
+        "name": "Hikaru Nakamura"
+      },
+      {
+        "name": "Alireza Firouzja"
       }
     ],
     "norwegianPlayers": [],
@@ -1988,6 +2007,63 @@
     "isFavorite": false,
     "round": null,
     "id": "64aee02b6f3a"
+  },
+  {
+    "sport": "chess",
+    "tournament": "Esports World Cup 2026 (sjakk)",
+    "title": "EWC 2026 sjakk-finale: Magnus Carlsen – Denis Lazavik",
+    "time": "2026-08-15T14:30:00Z",
+    "endTime": "2026-08-15T18:30:00Z",
+    "venue": "Paris Expo Porte de Versailles, Paris",
+    "norwegian": true,
+    "participants": [
+      { "name": "Magnus Carlsen" },
+      { "name": "Denis Lazavik" }
+    ],
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "chess.com (gratis livestrøm)",
+        "url": "https://www.chess.com/events/2026-esports-world-cup-playoffs",
+        "urlKind": "deep"
+      },
+      {
+        "platform": "YouTube (chess.com)",
+        "url": "https://www.youtube.com/@chess",
+        "urlKind": "deep"
+      },
+      {
+        "platform": "Twitch (chess.com)",
+        "url": "https://www.twitch.tv/chess",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-15T06:30:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.athletes",
+      "https://en.wikipedia.org/wiki/2026_Esports_World_Cup_%E2%80%93_Chess",
+      "https://www.chess.com/news/view/2026-esports-world-cup-playoffs-qf-sf",
+      "https://www.gamereactor.eu/esports/1760213/Esports+World+Cup+2026+Here+is+the+eight-player+Chess+Playoffs+fixtures/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/2026_Esports_World_Cup_%E2%80%93_Chess",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-15T06:30:00Z",
+        "note": "Wikipedias tidsplantabell (UTC+2) oppgir grand final 16.30 CEST (14.30 UTC); Gamereactors fixtures-oppsett oppgir 15.30 CEST. Kildekonflikt på ~1 t → confidence medium, holdt på Wikipedias 16.30. Arrangørens egen side (esportsworldcup.com/liquipedia) ga 403 ved henting. Finalen spilles ETTER bronsefinalen (13.00 CEST) på samme scene. chess.com bekrefter kun at finaledagens spill starter 13.00 CEST (= bronsefinalen), ikke finalens eksakte klokkeslett."
+      },
+      "streaming": {
+        "sourceId": "chesscom",
+        "url": "https://www.chess.com/events/2026-esports-world-cup-playoffs",
+        "basis": "official",
+        "retrievedAt": "2026-08-15T06:30:00Z",
+        "note": "chess.com er arrangør av sjakkonkurransen på EWC og sender gratis på egne kanaler (Events-side, YouTube, Twitch) + Chess24 Twitch. Ingen norsk TV-rettighet — gratis online i Norge."
+      }
+    },
+    "summary": "Magnus Carlsen er klar for finalen i sjakk-VM på Esports World Cup 2026 (Paris) og forsvarer fjorårets tittel. Motstander er 19 år gamle hviterussiske Denis Lazavik. Carlsen slo Nihal Sarin 2,5–0,5 og Alireza Firouzja 4–1 på veien til finalen; Lazavik slo Abdusattorov og Nakamura.\n\nFinalen spilles best av tre sett (to sett à fire partier + et eventuelt avgjørende sett på to partier). Førstepremie er $250 000.\n\nEksakt starttid er noe usikker: Wikipedias tidsplan oppgir 16.30 CEST, Gamereactor 15.30 CEST. Finalen følger etter bronsefinalen (Nakamura–Firouzja, 13.00 CEST). Gratis på chess.com (Events/YouTube/Twitch) og Chess24 i Norge."
   },
   {
     "sport": "cycling",
