@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-15T05:54:34.166Z",
+  "generatedAt": "2026-08-15T06:33:30.855Z",
   "windowDays": 180,
   "records": {
-    "used": 227,
+    "used": 234,
     "skipped": 0
   },
   "sources": {
@@ -221,8 +221,8 @@
       "reliability": null
     },
     "nrk.no": {
-      "checks": 9,
-      "agreed": 7,
+      "checks": 10,
+      "agreed": 8,
       "corrections": 0,
       "bySport": {
         "football": {
@@ -232,6 +232,10 @@
         "athletics": {
           "checks": 3,
           "agreed": 3
+        },
+        "beach volleyball": {
+          "checks": 1,
+          "agreed": 1
         }
       },
       "byField": {
@@ -240,16 +244,16 @@
           "agreed": 6
         },
         "existence": {
-          "checks": 1,
-          "agreed": 0
+          "checks": 2,
+          "agreed": 1
         },
         "time": {
           "checks": 1,
           "agreed": 1
         }
       },
-      "lastChecked": "2026-08-11T06:16:20Z",
-      "reliability": 0.78
+      "lastChecked": "2026-08-15T05:52:03Z",
+      "reliability": 0.8
     },
     "sjakknm2026.no": {
       "checks": 1,
@@ -290,8 +294,8 @@
       "reliability": null
     },
     "en.wikipedia.org": {
-      "checks": 11,
-      "agreed": 11,
+      "checks": 12,
+      "agreed": 12,
       "corrections": 1,
       "bySport": {
         "cycling": {
@@ -309,6 +313,10 @@
         "athletics": {
           "checks": 1,
           "agreed": 1
+        },
+        "chess": {
+          "checks": 1,
+          "agreed": 1
         }
       },
       "byField": {
@@ -317,16 +325,16 @@
           "agreed": 8
         },
         "time": {
-          "checks": 3,
-          "agreed": 3
+          "checks": 4,
+          "agreed": 4
         }
       },
-      "lastChecked": "2026-08-08T06:10:00Z",
+      "lastChecked": "2026-08-15T05:52:03Z",
       "reliability": 1
     },
     "nettavisen.no": {
-      "checks": 5,
-      "agreed": 4,
+      "checks": 6,
+      "agreed": 5,
       "corrections": 1,
       "bySport": {
         "football": {
@@ -334,8 +342,8 @@
           "agreed": 3
         },
         "athletics": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 2,
+          "agreed": 2
         }
       },
       "byField": {
@@ -344,12 +352,12 @@
           "agreed": 2
         },
         "existence": {
-          "checks": 2,
-          "agreed": 2
+          "checks": 3,
+          "agreed": 3
         }
       },
-      "lastChecked": "2026-08-13T07:00:00Z",
-      "reliability": 0.8
+      "lastChecked": "2026-08-15T05:52:03Z",
+      "reliability": 0.83
     },
     "swissopengstaad.ch": {
       "checks": 1,
@@ -1026,22 +1034,26 @@
       "reliability": null
     },
     "skysports.com": {
-      "checks": 1,
-      "agreed": 1,
+      "checks": 2,
+      "agreed": 2,
       "corrections": 0,
       "bySport": {
         "football": {
+          "checks": 1,
+          "agreed": 1
+        },
+        "f1": {
           "checks": 1,
           "agreed": 1
         }
       },
       "byField": {
         "time": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 2,
+          "agreed": 2
         }
       },
-      "lastChecked": "2026-07-27T09:00:00Z",
+      "lastChecked": "2026-08-15T05:52:03Z",
       "reliability": null
     },
     "grandchesstour.org": {
@@ -1923,6 +1935,63 @@
         }
       },
       "lastChecked": "2026-08-14T06:54:47Z",
+      "reliability": null
+    },
+    "chess.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "chess": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-15T05:52:03Z",
+      "reliability": null
+    },
+    "worldofspeed.org": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "f1": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-15T05:52:03Z",
+      "reliability": null
+    },
+    "athletissima.ch": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 1,
+      "bySport": {
+        "athletics": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-15T05:52:03Z",
       "reliability": null
     }
   }

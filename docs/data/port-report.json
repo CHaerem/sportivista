@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T05:54:32.709Z",
+  "generatedAt": "2026-08-15T06:33:29.554Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -25,7 +25,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 3.01,
+    "oldestGapAgeDays": 3.04,
     "escalatable": 0,
     "catalogMatched": 2,
     "auditedAt": "2026-08-13T05:00:00Z",
@@ -33,28 +33,28 @@
       {
         "interest": "Eliteserien — runde 19 (29.–30. aug)",
         "severity": "medium",
-        "ageDays": 2.04,
+        "ageDays": 2.06,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Premier League — 2026/27 åpningsrunde (runde 1)",
         "severity": "medium",
-        "ageDays": 3.01,
+        "ageDays": 3.04,
         "recurrences": 1,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.1,
-    "nearTermChecked": 10,
+    "nearTermRate": 0.17,
+    "nearTermChecked": 6,
     "nearTermAmended": 1,
-    "verifyRunAt": "2026-08-14T06:55:01Z",
+    "verifyRunAt": "2026-08-15T05:52:03Z",
     "windowRate": 0,
-    "windowChecks": 89,
+    "windowChecks": 96,
     "windowAmendments": 0,
-    "windowCorrections": 11,
+    "windowCorrections": 12,
     "byDay": [
       {
         "date": "2026-08-01",
@@ -153,28 +153,37 @@
         "amendments": 0,
         "corrections": 1,
         "rate": 0
+      },
+      {
+        "date": "2026-08-15",
+        "checks": 7,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-15T05:54:29.548Z",
+    "buildCheckedAt": "2026-08-15T06:33:24.838Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-15T05:00:40.384Z",
-    "manifestAgeHours": 0.9,
+    "manifestGeneratedAt": "2026-08-15T05:54:34.304Z",
+    "manifestAgeHours": 0.65,
     "staleFiles": [
       {
         "file": "tennis.json",
         "sourceLastUpdated": "2026-08-11T07:01:11.092Z",
-        "ageHours": 94.89
+        "ageHours": 95.54
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-08-14T06:55:01Z",
-    "verifyAgeHours": 22.99,
-    "corrections": 0,
+    "checkedAt": "2026-08-15T05:52:03Z",
+    "verifyAgeHours": 0.69,
+    "corrections": 1,
     "unresolved": 0,
-    "signals": []
+    "signals": [
+      "EM friidrett Birmingham: program/deltakelse re-bekreftet – Warholm vant semifinale 400m hekk (48.01) og er i finalen, Henriette Jæger klar for 400m-finalen. …"
+    ]
   }
 }
