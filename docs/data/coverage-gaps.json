@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-15T08:24:23.355Z",
-  "gapCount": 7,
+  "generatedAt": "2026-08-15T09:22:45.824Z",
+  "gapCount": 6,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -12,7 +12,7 @@
       "link": "https://www.nrk.no/sport/magnus-carlsen-utspilte-motstanderen-_-klar-for-finale-i-esport-vm-1.17990523",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-15T08:24:22.095Z"
+      "detectedAt": "2026-08-15T09:22:42.984Z"
     },
     {
       "kind": "entity",
@@ -23,7 +23,7 @@
       "link": "https://www.nrk.no/sport/magnus-carlsen-utspilte-motstanderen-_-klar-for-finale-i-esport-vm-1.17990523",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-15T08:24:22.095Z"
+      "detectedAt": "2026-08-15T09:22:42.984Z"
     },
     {
       "kind": "entity",
@@ -34,18 +34,7 @@
       "link": "https://www.nrk.no/sport/brennheit-spiss-senka-viking-pa-overtid-1.17990628",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-15T08:24:22.095Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "LaLiga",
-      "type": "missing",
-      "imminent": true,
-      "headline": "«Kan nesten bli ufint»",
-      "link": "https://www.tv2.no/a/19121374",
-      "feed": "tv2-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-15T08:24:22.095Z"
+      "detectedAt": "2026-08-15T09:22:42.984Z"
     },
     {
       "kind": "entity",
@@ -56,7 +45,7 @@
       "link": "https://www.nrk.no/sport/erlend-blikra-fikk-revansje-_-vant-arctic-race-of-norway-etappe-1.17990522",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-15T08:24:22.095Z"
+      "detectedAt": "2026-08-15T09:22:42.984Z"
     },
     {
       "kind": "entity",
@@ -67,7 +56,7 @@
       "link": "https://www.nrk.no/sport/erlend-blikra-fikk-revansje-_-vant-arctic-race-of-norway-etappe-1.17990522",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-15T08:24:22.095Z"
+      "detectedAt": "2026-08-15T09:22:42.984Z"
     },
     {
       "kind": "entity",
@@ -78,18 +67,18 @@
       "link": "https://www.nrk.no/friidrettsem/jose-carlos-pinto-sier-han-foler-seg-mobbet-pa-grunn-av-situasjonen-med-gjert-ingebrigtsen-1.17990229",
       "feed": "nrk-sport",
       "matchCount": 2,
-      "detectedAt": "2026-08-15T08:24:22.095Z"
+      "detectedAt": "2026-08-15T09:22:42.984Z"
     }
   ],
   "anomalies": [
     {
       "sport": "tennis",
       "issue": "stale-retained",
-      "detail": "docs/data/tennis.json has been served from retention for 63 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 63,
+      "detail": "docs/data/tennis.json has been served from retention for 64 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 64,
       "staleDays": 4,
       "severity": "high",
-      "detectedAt": "2026-08-15T08:24:23.230Z"
+      "detectedAt": "2026-08-15T09:22:44.080Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
