@@ -338,5 +338,13 @@
     "verdict": "quiet",
     "reason": "RSS (42 items, 05:59 UTC): transfer-season noise (Ferran Torres/PSG, Romero/Atlético Madrid, Enzo/Man City/Chelsea, Osimhen/Arsenal, Balogun/Tottenham, Jesus/Napoli, Liverpool/Bezos, Scotland coaching, community Shield analysis, La Liga 2026-27 preview—no schedule/streaming/broadcaster impact). Past results: EM friidrett (Jæger/Nordås/Ingebrigtsen/Carlsen esport-VM result—already tracked, no changes), Arctic Race stage, Hovland Memphis golf, Volta a Portugal tributes (Finlay Tarling death—tragic but not upcoming event). Personal news (Skarstein pregnancy, athlete injuries/career moves, retirements—no event-schedule impact). Coverage gaps resolved: LaLiga (imminent: true yesterday, NOW ON BOARD with Aug 16–17 fixtures after yesterday's 18:25 UTC escalation was actioned by research agent). Nakamura (imminent: false—article about esport-VM bronze-final technical issues from Aug 15, Carlsen final already completed/escalated yesterday, not a new scheduled event). Anomalies (1): Tennis stale-retained (78+ runs, HIGH—infrastructure domain, not scout escalation). No schedule/time/venue changes to tracked events, no broadcaster announcements, no 100 Thieves CS2 match hints, no tracked athlete imminent event changes, or NEW concrete upcoming events requiring escalation detected. Escalation cap: 0/2 today (UTC).",
     "signals": []
+  },
+  {
+    "runAt": "2026-08-16T07:20:30.000Z",
+    "verdict": "escalate",
+    "reason": "RSS (8 items, 07:18 UTC): Premier League Community Shield + Championship imminent coverage gap flagged by coverage-gaps.json (imminent: true, 3 matches detected). Concrete upcoming events: Community Shield buildup + Championship/friendly updates (Guardian matchday live, pub 07:00 UTC). Same-day or next-day fixtures (Aug 16–17). Escalation-worthy per coverage-gap detection—concrete upcoming event signal. No other schedule/streaming/broadcaster changes, no 100 Thieves CS2 match hints. Escalation cap: 0/2 today (UTC) before this.",
+    "signals": [
+      "Premier League Community Shield + Championship imminent — fixtures may be missing from board"
+    ]
   }
 ]
