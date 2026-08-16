@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-16T19:53:10.119Z",
-  "gapCount": 4,
+  "generatedAt": "2026-08-16T20:57:03.746Z",
+  "gapCount": 8,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -8,33 +8,78 @@
       "entity": "Molde",
       "type": "missing",
       "imminent": false,
-      "headline": "Molde slo Tromsø – blåser liv i medaljehåpet",
-      "link": "https://www.nrk.no/sport/molde-slo-tromso-_-blaser-liv-i-medaljehapet--1.17991707",
-      "feed": "nrk-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-08-16T19:53:07.770Z"
+      "headline": "Molde opp på Europa-plass",
+      "link": "https://www.aftenposten.no/sport/i/wrVJRd/molde-opp-paa-europa-plass-tromsoe-med-keepertroebbel",
+      "feed": "aftenposten-sport",
+      "matchCount": 3,
+      "detectedAt": "2026-08-16T20:57:02.954Z"
     },
     {
       "kind": "entity",
       "entity": "Brann",
       "type": "missing",
       "imminent": false,
-      "headline": "Praktmål i jubileumskampen – Brann vant igjen",
-      "link": "https://www.nrk.no/sport/praktmal-i-jubileumskampen-_-brann-vant-igjen-1.17991673",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-16T19:53:07.770Z"
+      "headline": "Ny seier: Stoppet skrekk-statistikk",
+      "link": "https://www.tv2.no/a/19134287",
+      "feed": "tv2-sport",
+      "matchCount": 5,
+      "detectedAt": "2026-08-16T20:57:02.954Z"
     },
     {
       "kind": "entity",
-      "entity": "Fotball-VM",
+      "entity": "Man City",
       "type": "missing",
       "imminent": false,
-      "headline": "Tagseths lag knuste Messi og co.",
-      "link": "https://www.nrk.no/sport/tagseths-lag-knuste-messi-og-co.-1.17991374",
+      "headline": "Odegaard's importance, Anderson and Foden struggle - how the players rated",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c8jnnknwnd1o?at_medium=RSS&amp;at_campaign=rss",
+      "feed": "bbc-football",
+      "matchCount": 1,
+      "detectedAt": "2026-08-16T20:57:02.954Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Eliteserien",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Marerittet er over: Sjokkseier for Sandefjord Fotballklubb",
+      "link": "https://www.nrk.no/ostfold/marerittet-er-over_-sjokkseier-for-sandefjord-fotballklubb-1.17991589",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-16T19:53:07.770Z"
+      "detectedAt": "2026-08-16T20:57:02.954Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Tour de France",
+      "type": "missing",
+      "imminent": false,
+      "headline": "‘8 plugs, 3 Co2 - still no luck’ – Rosa Klöser’s Leadville 100 bid ends in a car after tricky acclimatization following Tour de France Femmes",
+      "link": "https://www.cyclingnews.com/pro-cycling/womens-cycling/8-plugs-3-co2-still-no-luck-rosa-klosers-leadville-100-bid-ends-in-a-car-after-tricky-acclimatization-following-tour-de-france-femmes/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-08-16T20:57:02.954Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Road World Championships",
+      "type": "missing",
+      "imminent": false,
+      "headline": "'A once-in-a-career kind of thing' – A year on from a stunning victory, Canada's top women riders look ahead to 'special' home Road World Championships",
+      "link": "https://www.cyclingnews.com/pro-cycling/womens-cycling/a-once-in-a-career-kind-of-thing-a-year-on-from-a-stunning-victory-canadas-top-women-riders-look-ahead-to-special-home-road-world-championships/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-08-16T20:57:02.954Z"
+    },
+    {
+      "kind": "tracked-claim",
+      "entity": "Eliteserien",
+      "group": "leagues",
+      "sport": "football",
+      "type": "missing",
+      "imminent": true,
+      "claimedDate": "2026-08-16T00:00:00.000Z",
+      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
+      "trackedId": "eliteserien-2026",
+      "detectedAt": "2026-08-16T20:57:03.625Z"
     },
     {
       "kind": "tracked-claim",
@@ -46,18 +91,18 @@
       "claimedDate": "2027-05-20T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "esports-world-cup-2026-chess",
-      "detectedAt": "2026-08-16T19:53:08.567Z"
+      "detectedAt": "2026-08-16T20:57:03.625Z"
     }
   ],
   "anomalies": [
     {
       "sport": "tennis",
       "issue": "stale-retained",
-      "detail": "docs/data/tennis.json has been served from retention for 92 consecutive run(s) — no fresh fetch in 5 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 92,
+      "detail": "docs/data/tennis.json has been served from retention for 93 consecutive run(s) — no fresh fetch in 5 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 93,
       "staleDays": 5,
       "severity": "high",
-      "detectedAt": "2026-08-16T19:53:08.650Z"
+      "detectedAt": "2026-08-16T20:57:03.678Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
