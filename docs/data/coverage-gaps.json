@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T09:58:00.264Z",
+  "generatedAt": "2026-08-16T10:57:40.610Z",
   "gapCount": 0,
   "anomalyCount": 1,
   "gaps": [],
@@ -7,11 +7,11 @@
     {
       "sport": "tennis",
       "issue": "stale-retained",
-      "detail": "docs/data/tennis.json has been served from retention for 82 consecutive run(s) — no fresh fetch in 5 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 82,
+      "detail": "docs/data/tennis.json has been served from retention for 83 consecutive run(s) — no fresh fetch in 5 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 83,
       "staleDays": 5,
       "severity": "high",
-      "detectedAt": "2026-08-16T09:58:00.079Z"
+      "detectedAt": "2026-08-16T10:57:40.191Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
