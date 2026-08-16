@@ -1,8 +1,19 @@
 {
-  "generatedAt": "2026-08-16T11:55:48.714Z",
-  "gapCount": 1,
+  "generatedAt": "2026-08-16T13:19:43.981Z",
+  "gapCount": 3,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Rosenborg",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Rosenborg vil utløse Chiakha-opsjon",
+      "link": "https://www.tv2.no/a/19133512",
+      "feed": "tv2-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-16T13:19:43.159Z"
+    },
     {
       "kind": "entity",
       "entity": "Fotball-VM",
@@ -12,18 +23,29 @@
       "link": "https://www.nrk.no/sport/tagseths-lag-knuste-messi-og-co.-1.17991374",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-16T11:55:47.585Z"
+      "detectedAt": "2026-08-16T13:19:43.159Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Road World Championships",
+      "type": "missing",
+      "imminent": false,
+      "headline": "'A once-in-a-career kind of thing' – A year on from a stunning victory, Canada's top women riders look ahead to 'special' home Road World Championships",
+      "link": "https://www.cyclingnews.com/pro-cycling/womens-cycling/a-once-in-a-career-kind-of-thing-a-year-on-from-a-stunning-victory-canadas-top-women-riders-look-ahead-to-special-home-road-world-championships/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-08-16T13:19:43.159Z"
     }
   ],
   "anomalies": [
     {
       "sport": "tennis",
       "issue": "stale-retained",
-      "detail": "docs/data/tennis.json has been served from retention for 84 consecutive run(s) — no fresh fetch in 5 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 84,
+      "detail": "docs/data/tennis.json has been served from retention for 85 consecutive run(s) — no fresh fetch in 5 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 85,
       "staleDays": 5,
       "severity": "high",
-      "detectedAt": "2026-08-16T11:55:48.579Z"
+      "detectedAt": "2026-08-16T13:19:43.905Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
