@@ -199,7 +199,18 @@ export function norwegianRights(ev) {
 		if (/masters|pga championship/.test(hay)) return [CH.discovery];
 		if (/\bthe open\b|open championship|british open|u\.?s\.? open/.test(hay)) return [CH.viaplay];
 		if (/dp world|ryder cup/.test(hay)) return [CH.viaplay];
-		return [CH.hbomax, CH.eurosport]; // ordinary PGA Tour (incl. opposite-field, e.g. Corales)
+		// Only assert PGA Tour rights (HBO Max) when the haystack POSITIVELY says PGA.
+		// The fetcher stamps meta/tournament "PGA Tour" on every PGA event (incl.
+		// opposite-field, e.g. Corales), so this covers the fetcher wholesale. For a
+		// golf event we CANNOT classify — an untagged AI-research event, or a tour we
+		// don't map (LPGA / Ladies European / Solheim) — DECLINE to guess rather than
+		// force the PGA channel: returning [] lets normalizeStreaming keep the event's
+		// own researched Norwegian streaming instead of clobbering a correct value to
+		// HBO Max (same guess-no-more principle as the UEFA-qualifier carve-out above;
+		// visual-qa 2026-08-13 caught a DP World event (Danish Golf Championship)
+		// wrongly shown on HBO Max via this default).
+		if (/\bpga\b/.test(hay)) return [CH.hbomax, CH.eurosport]; // ordinary PGA Tour
+		return [];
 	}
 	if (sport === "f1" || sport === "formula1") return [CH.viaplay];
 	// Tour de France 2026 rights are shared: TV 2 (Play/Direkte) + WBD (Max/Eurosport
