@@ -1,41 +1,8 @@
 {
-  "generatedAt": "2026-08-17T16:23:15.625Z",
-  "gapCount": 10,
+  "generatedAt": "2026-08-17T17:24:27.848Z",
+  "gapCount": 6,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Rosenborg",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Hvor ble Rosenborg-millionene av?",
-      "link": "https://www.tv2.no/a/19129343",
-      "feed": "tv2-fotball",
-      "matchCount": 1,
-      "detectedAt": "2026-08-17T16:23:14.973Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Molde",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Molde slo Tromsø – blåser liv i medaljehåpet",
-      "link": "https://www.nrk.no/sport/molde-slo-tromso-_-blaser-liv-i-medaljehapet--1.17991707",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-17T16:23:14.973Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Brann",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Ny seier: Stoppet skrekk-statistikk",
-      "link": "https://www.tv2.no/a/19134287",
-      "feed": "tv2-fotball",
-      "matchCount": 1,
-      "detectedAt": "2026-08-17T16:23:14.973Z"
-    },
     {
       "kind": "entity",
       "entity": "Manchester City",
@@ -45,7 +12,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/17/football-transfer-rumours-manchester-city-to-move-for-alexis-mac-allister",
       "feed": "guardian-football",
       "matchCount": 5,
-      "detectedAt": "2026-08-17T16:23:14.973Z"
+      "detectedAt": "2026-08-17T17:24:26.657Z"
     },
     {
       "kind": "entity",
@@ -55,8 +22,8 @@
       "headline": "Football transfer rumours: Manchester City to move for Alexis Mac Allister?",
       "link": "https://www.theguardian.com/football/2026/aug/17/football-transfer-rumours-manchester-city-to-move-for-alexis-mac-allister",
       "feed": "guardian-football",
-      "matchCount": 5,
-      "detectedAt": "2026-08-17T16:23:14.973Z"
+      "matchCount": 4,
+      "detectedAt": "2026-08-17T17:24:26.657Z"
     },
     {
       "kind": "entity",
@@ -66,8 +33,8 @@
       "headline": "Premier League to allow audio of conversations between players and referees",
       "link": "https://www.theguardian.com/football/2026/aug/17/premier-league-allow-audio-conversations-players-referees",
       "feed": "guardian-football",
-      "matchCount": 8,
-      "detectedAt": "2026-08-17T16:23:14.973Z"
+      "matchCount": 6,
+      "detectedAt": "2026-08-17T17:24:26.657Z"
     },
     {
       "kind": "entity",
@@ -78,7 +45,7 @@
       "link": "https://www.nrk.no/ostfold/marerittet-er-over_-sjokkseier-for-sandefjord-fotballklubb-1.17991589",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-17T16:23:14.973Z"
+      "detectedAt": "2026-08-17T17:24:26.657Z"
     },
     {
       "kind": "entity",
@@ -89,18 +56,7 @@
       "link": "https://www.nrk.no/sport/lillestroms-styreleder-gir-seg-med-umiddelbar-virkning-1.17992248",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-17T16:23:14.973Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Arctic Race",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Norsk triumf i Arctic Race-finalen: – Skjønte ingenting",
-      "link": "https://www.nrk.no/sport/norsk-triumf-i-arctic-race-finalen_-_-skjonte-ingenting-1.17991680",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-17T16:23:14.973Z"
+      "detectedAt": "2026-08-17T17:24:26.657Z"
     },
     {
       "kind": "tracked-claim",
@@ -112,18 +68,18 @@
       "claimedDate": "2026-08-17T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "eliteserien-2026",
-      "detectedAt": "2026-08-17T16:23:15.524Z"
+      "detectedAt": "2026-08-17T17:24:27.588Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 55 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 55,
+      "detail": "docs/data/esports.json has been served from retention for 56 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 56,
       "staleDays": 3,
       "severity": "high",
-      "detectedAt": "2026-08-17T16:23:15.572Z"
+      "detectedAt": "2026-08-17T17:24:27.649Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
