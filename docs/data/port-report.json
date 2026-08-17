@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T06:03:53.176Z",
+  "generatedAt": "2026-08-17T06:48:09.056Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -25,7 +25,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 5.02,
+    "oldestGapAgeDays": 5.05,
     "escalatable": 0,
     "catalogMatched": 2,
     "auditedAt": "2026-08-13T05:00:00Z",
@@ -33,14 +33,14 @@
       {
         "interest": "Eliteserien — runde 19 (29.–30. aug)",
         "severity": "medium",
-        "ageDays": 4.04,
+        "ageDays": 4.08,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Premier League — 2026/27 åpningsrunde (runde 1)",
         "severity": "medium",
-        "ageDays": 5.02,
+        "ageDays": 5.05,
         "recurrences": 1,
         "catalogMatched": true
       }
@@ -48,11 +48,11 @@
   },
   "amendRate": {
     "nearTermRate": 0,
-    "nearTermChecked": 12,
+    "nearTermChecked": 14,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-08-16T05:55:00Z",
+    "verifyRunAt": "2026-08-17T05:59:00Z",
     "windowRate": 0,
-    "windowChecks": 93,
+    "windowChecks": 99,
     "windowAmendments": 0,
     "windowCorrections": 10,
     "byDay": [
@@ -153,40 +153,40 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-08-17",
+        "checks": 6,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-17T06:03:48.183Z",
+    "buildCheckedAt": "2026-08-17T06:48:06.566Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-16T21:54:49.799Z",
-    "manifestAgeHours": 8.15,
+    "manifestGeneratedAt": "2026-08-17T06:03:54.779Z",
+    "manifestAgeHours": 0.74,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
-        "ageHours": 62.27
-      },
-      {
-        "file": "tennis.json",
-        "sourceLastUpdated": "2026-08-11T07:01:11.092Z",
-        "ageHours": 143.05
+        "ageHours": 63.01
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-08-15T16:55:00Z",
-        "ageHours": 37.15
+        "ageHours": 37.89
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-08-16T05:55:00Z",
-    "verifyAgeHours": 24.15,
-    "corrections": 1,
+    "checkedAt": "2026-08-17T05:59:00Z",
+    "verifyAgeHours": 0.82,
+    "corrections": 0,
     "unresolved": 0,
-    "signals": [
-      "Friidretts-EM Birmingham (avsl. i dag 16.8): Warholm gull 400m hekk, Ingebrigtsen aktiv - navngitte norske utovere aktive, ingen WP-95-statusendring. NRK kor…"
-    ]
+    "signals": []
   }
 }
