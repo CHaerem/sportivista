@@ -1,20 +1,15 @@
 {
-	"runAt": "2026-08-16T05:55:00Z",
-	"checked": 12,
-	"confirmed": 12,
+	"runAt": "2026-08-17T05:59:00Z",
+	"checked": 14,
+	"confirmed": 14,
 	"amended": 0,
 	"removed": 0,
 	"notes": [
-		"21 kandidater i 7-dagersvinduet (ai-research/confidence/tentative); verifiserte de 12 mest tidskritiske/nære mot ferske autoritative kilder. Ingen feil funnet - alle bekreftet fra Aug-14-runden holder fortsatt.",
-		"KRITISK sjekk: Dinamo Zagreb-Viking (18.8) sto lagret 19.00 UTC. Kroatiske billett-aggregatorer (karlobag.eu, beIN, statarea) viste '19.00' som saa ut som lokal tid = 17.00 UTC. Men TV 2s offisielle kampoppsett oppgir eksplisitt 21.00 norsk tid (= 19.00 UTC) for BEGGE norske CL-playoff-kampene. Lagret verdi er RIKTIG; aggregatorene viste UTC. Oppdaterte provenance.time-noten.",
-		"F1 Nederland GP (sprintweekend): sprintkval fre 14.30 UTC, sprint lor 10.00 UTC, kvalifisering lor 14.00 UTC - alle bekreftet mot formula1.com timetable (kval 16.00 lokal = 14.00 UTC). Viaplay korrekt.",
-		"BMW Championship 20.-23.8 Bellerive bekreftet; Viktor Hovland (FedExCup #23) i 50-mannsfeltet (PGA Tour Inside the Field). HBO Max/Eurosport korrekt per norwegian-rights (ordinaer PGA Tour = WBD).",
-		"Vuelta a Espana 2026 starter 22.8 med Monaco-tempo ~9,6 km - bekreftet mot lavuelta.es. HBO Max (WBD/Eurosport) plausibel norsk visning.",
-		"Tromso-Brighton (Conference League playoff) 20.8 17.00 UTC bekreftet; Viaplay korrekt (EL/ECL = Viaplay i Norge).",
-		"Friidretts-EM Birmingham (avsl. i dag 16.8): Warholm gull 400m hekk, Ingebrigtsen aktiv - navngitte norske utovere aktive, ingen WP-95-statusendring. NRK korrekt.",
-		"Sandvolleyball-EM Mol/Sorum: videre til semifinale, fortsatt aktive - ingen statusendring. EuroVolley.tv (CEV) beholdt; TV 2 dekker ogsaa (Sportsdognet-liveblogg), men liveblogg = ikke bekreftet kampstrom, saa lot streaming staa.",
-		"FA Community Shield (Arsenal-Man City, i dag 14.00 UTC): vurderte Viaplay vs TV 2/HBO Max. authority.json registrerer community-shield -> Viaplay, og eventets egen evidence siterer Viaplays offisielle sportsrights-side. Viaplay er aktiv fotballkringkaster i Norge (EL/ECL). TV 2s arkivside er historisk/svakere. Beholdt Viaplay.",
-		"Serie A-runde 1 (22.8, x4) -> VG+ Sport bekreftet (VG kjopte Serie A-rettighetene i Norge). Espanyol-Real Madrid (La Liga) -> TV 2 Play korrekt.",
-		"Ingen X/Twitter-avledede paastander denne runden. Ingen skills endret (alle streaming-verdier stemte med gjeldende norwegian-rights-kart)."
+		"7-dagersvindu 17.-24. aug. Mange nære events var alt verifisert i går (16.8, alle 'confirmed'); denne runden tok de gjenstående uverifiserte kandidatene i vinduet.",
+		"Serie A runde 1 (10 kamper 22.-24. aug, alle confidence medium): ved research var Lega Serie As egen terminliste (legaseriea.it) bot-blokkert, så tidene sto på Sky/Goal (secondary). Nå bekreftet mot Lega Serie As EGEN grid (primaerkilde/tidsautoritet) + Goal-oppsettet: lør 22.8 18.30 CEST (16.30 UTC) Inter-Monza/Udinese-Como, 20.45 (18.45 UTC) Genoa-Napoli/Parma-Cagliari; søn 23.8 18.30 Frosinone-Juventus/Venezia-Lecce, 20.45 Atalanta-Sassuolo/Torino-Milan; man 24.8 18.30 Bologna-Lazio, 20.45 Roma-Fiorentina. ALLE tavle-tider stemte. provenance.time hevet secondary->primary. VG+ Sport-visning uendret (korrekt).",
+		"Egnatia-Lillestrøm (Europa League playoff, 20.8): avspark 19.00 CEST (17.00 UTC; Albania=CEST) bekreftet mot t-online + Sportschau live-tickere + footmercato-konsensus (UEFA.com fortsatt 403). Kampen registrert som Egnatia Rrogozhinë-Lillestrøm; UEFA-kompatibel arena IKKE offisielt bekreftet - holdt venue som 'Albania' framfor å gjette. Viaplay korrekt (UEL).",
+		"Silesia Diamond League / Kamila Skolimowska Memorial (23.8, Stadion Śląski): dato bekreftet HIGH (feltøvelser lør 22., hovedøkt søn 23.). Karsten Warholm bekreftet i 400m hekk mot Alison dos Santos (Diamond League). Eksakt stevnestart (16.00 CEST) fortsatt IKKE offisielt publisert - detaljert øvelsesprogram ikke ute; anslag + confidence medium beholdt. NRK korrekt.",
+		"PL åpningsrunde 23.8: Man City-Bournemouth 14.00 BST (13.00 UTC, mancity.com fixtures) + Newcastle-Liverpool 16.30 BST (15.30 UTC, Sky/premierleague.com) - begge matcher tavla. TV 2 Play korrekt (PL i Norge).",
+		"Ingen amendments/removals denne runden - alle sjekkede verdier stemte. Ingen X/Twitter-avledede påstander. Ingen skills endret (streaming-verdier stemte med gjeldende norwegian-rights). Ingen nye source-quirks bekreftet (UEFA.com 403/503 er alt dokumentert)."
 	]
 }
