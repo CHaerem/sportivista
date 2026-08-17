@@ -111,6 +111,25 @@ describe("golf rights are tiered for 2026 (not a flat Viaplay)", () => {
 		expect(normalizeStreaming({ sport: "golf", title: "The Masters" })[0].platform).toBe("Discovery+");
 		expect(normalizeStreaming({ sport: "golf", title: "PGA Championship" })[0].platform).toBe("Discovery+");
 	});
+	it("an unclassifiable golf event does NOT get force-mapped to PGA/HBO Max — it keeps its own researched Norwegian streaming (visual-qa 2026-08-13: Danish Golf Championship, a DP World event, was wrongly shown on HBO Max)", () => {
+		// A DP World Tour event carrying only its title (as an AI-research event does,
+		// with no "DP World Tour" tour tag in tournament/meta) used to fall through to
+		// the PGA default and get its correct Viaplay clobbered to HBO Max.
+		const s = normalizeStreaming({
+			sport: "golf",
+			title: "Danish Golf Championship",
+			streaming: [{ platform: "Viaplay", url: "https://viaplay.no/no-no/sport" }],
+		});
+		expect(s.map((c) => c.platform)).toEqual(["Viaplay"]);
+		expect(s.some((c) => c.platform === "HBO Max (Sport)")).toBe(false);
+	});
+	it("a non-PGA tour we don't map (LPGA / Ladies European / Solheim) is left empty rather than guessed as PGA/HBO Max", () => {
+		expect(normalizeStreaming({ sport: "golf", title: "Solheim Cup 2026", streaming: [] })).toEqual([]);
+		expect(normalizeStreaming({ sport: "golf", title: "AIG Women's Open", streaming: [] })).toEqual([]);
+	});
+	it("ordinary PGA Tour is still HBO Max when the tour tag is present (the fetcher stamps meta/tournament 'PGA Tour' on every PGA event)", () => {
+		expect(normalizeStreaming({ sport: "golf", meta: "PGA Tour", title: "FedEx St. Jude Championship" })[0].platform).toBe("HBO Max (Sport)");
+	});
 });
 
 describe("cycling: the Tour is shown on TV 2 Play only (owner preference)", () => {
