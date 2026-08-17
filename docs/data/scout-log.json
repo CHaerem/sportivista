@@ -33,7 +33,9 @@
     "runAt": "2026-08-17T08:38:52.000Z",
     "verdict": "escalate",
     "reason": "RSS (26 items, 08:38 UTC): transfer-season noise (Juventus/Lucumi, Manchester City/Mac Allister, Brighton/Joramo, Scotland manager, transfer rumours—no schedule/streaming/broadcaster impact). Past results (Eliteserien matches Aug 14–16 all passed: Rosenborg–Viking, Brann–HamKam, Molde–Tromsø, Sandefjord—already tracked, all in recent RSS headlines; EM athletics finals (Mol/Sørum beach volleyball loss), Arctic Race, football preview—already tracked, no changes). Coverage gaps (4 entity/tracked-claim, 1 imminent): Molde/Brann/Sandefjord (all from Eliteserien past-result headlines Aug 14–16, imminent=false), Eliteserien league-claim (imminent=true, CONCRETE SIGNAL — tracked league with active recent play but ZERO upcoming matches on board; news confirms league is mid-season with multiple matches Aug 14–16). Anomalies: none. ESCALATION: Eliteserien is tracked, in active play (multiple recent match results 14–16 Aug now on RSS), league is imminent, but board has zero upcoming matches. This is coverage-gaps' flagship signal. Escalation cap: 0/2 today before this entry.",
-    "signals": ["Eliteserien imminent coverage gap: tracked league with active recent results but no upcoming matches on board"]
+    "signals": [
+      "Eliteserien imminent coverage gap: tracked league with active recent results but no upcoming matches on board"
+    ]
   },
   {
     "runAt": "2026-08-17T09:37:10Z",
@@ -75,6 +77,12 @@
     "runAt": "2026-08-17T16:22:56.432Z",
     "verdict": "quiet",
     "reason": "RSS (41 items, 16:22 UTC): transfer-season noise (Juventus/Lucumi/Bologna, Manchester City/Mac Allister/Lillestrøm, Brighton/Joramo/Emilie Joramo, Scotland manager appointment, Tottenham/Vicario/Juventus, Rodri/Barcelona signings, various other transfer rumours—no schedule/streaming/broadcaster impact). Past results (Arsenal Community Shield, Burnley/West Ham Championship—already tracked, no changes). Personal news (Ronaldo retirement opinion, athlete injuries, governance—no event-schedule impact). Coverage gaps (10 entity, 1 imminent): Rosenborg/Molde/Brann/Sandefjord/Man City/Premier League/Europaligaen/Arctic Race (all from past-result headlines or governance, imminent=false), Eliteserien league-claim (imminent=true, same structural gap escalated at 08:38 UTC 2026-08-17—research in-flight, no new concrete match-time or broadcast-change signal in RSS). Anomalies (1): esports.json stale-retained (55 consecutive runs, 3 days, HIGH—infrastructure issue, not a new-event scout signal; domain for self-repair/coverage-critic). No schedule/time/venue changes to tracked events, no broadcaster announcements, no 100 Thieves CS2 match hints, no tracked athlete imminent event changes, or concrete new upcoming events requiring escalation detected. Eliteserien escalation remains in-flight; no new signals warrant escalation. Escalation cap: 1/2 today (UTC).",
+    "signals": []
+  },
+  {
+    "runAt": "2026-08-17T18:01:02.180Z",
+    "verdict": "quiet",
+    "reason": "RSS (32 items, 17:24 UTC): transfer-season noise (Tottenham/Vicario/Juventus, Manchester City/Mac Allister, Arsenal analysis, Premier League audio rule, Chelsea ownership, Brighton/Joramo, Scotland manager, Ipswich signings, Mvuka/Glimt, various transfer rumours—no schedule/streaming/broadcaster impact). Past results (Eliteserien matches Aug 14–16 all tracked; Arsenal Community Shield, EM athletics finals, Arctic Race—all already tracked, no changes). Personal news (Ronaldo retirement opinion, athlete injuries, governance—no event-schedule impact). Coverage gaps (6 total, 1 imminent): Molde/Brann/Arsenal/Premier League/Manchester City (all from transfer/analysis headlines, imminent=false), Eliteserien league-claim (imminent=true, same structural gap escalated at 08:38 UTC 2026-08-17—research in-flight, no new concrete match-time or broadcast-change signal in RSS since then). Anomalies (1): esports.json stale-retained (56 consecutive runs, 3 days, HIGH—infrastructure issue, not a new-event scout signal; domain for self-repair/coverage-critic). No schedule/time/venue changes to tracked events, no broadcaster announcements (rule changes excluded), no 100 Thieves CS2 match hints, no tracked athlete imminent event changes, or concrete new upcoming events requiring escalation detected. Eliteserien escalation remains in-flight; no new signals warrant re-escalation. Escalation cap: 1/2 today (UTC).",
     "signals": []
   }
 ]
