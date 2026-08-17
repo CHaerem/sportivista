@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-17T21:22:59.254Z",
-  "gapCount": 9,
+  "generatedAt": "2026-08-17T22:17:21.463Z",
+  "gapCount": 7,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -12,7 +12,7 @@
       "link": "https://www.nrk.no/sport/jakob-ingebrigtsen-framskynder-diamond-league-comebacket-_-deltar-i-schlesien-1.17992329",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-17T21:22:58.339Z"
+      "detectedAt": "2026-08-17T22:17:20.275Z"
     },
     {
       "kind": "entity",
@@ -23,29 +23,7 @@
       "link": "https://www.nrk.no/friidrettsem/ved-em-reisens-slutt-1.17992244",
       "feed": "nrk-sport",
       "matchCount": 3,
-      "detectedAt": "2026-08-17T21:22:58.339Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Magnus Carlsen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Carlsen beats Lazavik, successfully defends Esports World Cup title",
-      "link": "https://en.chessbase.com/post/esports-world-cup-2026-d5",
-      "feed": "chessbase",
-      "matchCount": 1,
-      "detectedAt": "2026-08-17T21:22:58.339Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Carlsen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Carlsen beats Lazavik, successfully defends Esports World Cup title",
-      "link": "https://en.chessbase.com/post/esports-world-cup-2026-d5",
-      "feed": "chessbase",
-      "matchCount": 1,
-      "detectedAt": "2026-08-17T21:22:58.339Z"
+      "detectedAt": "2026-08-17T22:17:20.275Z"
     },
     {
       "kind": "entity",
@@ -56,7 +34,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/17/football-transfer-rumours-manchester-city-to-move-for-alexis-mac-allister",
       "feed": "guardian-football",
       "matchCount": 6,
-      "detectedAt": "2026-08-17T21:22:58.339Z"
+      "detectedAt": "2026-08-17T22:17:20.275Z"
     },
     {
       "kind": "entity",
@@ -67,7 +45,7 @@
       "link": "https://www.nrk.no/sport/lillestroms-styreleder-gir-seg-med-umiddelbar-virkning-1.17992248",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-17T21:22:58.339Z"
+      "detectedAt": "2026-08-17T22:17:20.275Z"
     },
     {
       "kind": "tracked-claim",
@@ -79,7 +57,7 @@
       "claimedDate": "2026-08-17T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "eliteserien-2026",
-      "detectedAt": "2026-08-17T21:22:58.873Z"
+      "detectedAt": "2026-08-17T22:17:21.248Z"
     },
     {
       "kind": "tracked-claim",
@@ -91,7 +69,7 @@
       "claimedDate": "2026-08-23T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-reitan",
-      "detectedAt": "2026-08-17T21:22:58.873Z"
+      "detectedAt": "2026-08-17T22:17:21.248Z"
     },
     {
       "kind": "tracked-claim",
@@ -103,18 +81,18 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-ventura",
-      "detectedAt": "2026-08-17T21:22:58.873Z"
+      "detectedAt": "2026-08-17T22:17:21.248Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 60 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 60,
+      "detail": "docs/data/esports.json has been served from retention for 61 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 61,
       "staleDays": 3,
       "severity": "high",
-      "detectedAt": "2026-08-17T21:22:58.920Z"
+      "detectedAt": "2026-08-17T22:17:21.313Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
