@@ -1,41 +1,8 @@
 {
-  "generatedAt": "2026-08-18T07:35:43.078Z",
-  "gapCount": 6,
+  "generatedAt": "2026-08-18T08:33:16.194Z",
+  "gapCount": 3,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Rosenborg",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Tipsbladet: Chiakha klar for Rosenborg - skriver under for fire og et halvt år",
-      "link": "https://www.tv2.no/a/19138612",
-      "feed": "tv2-fotball",
-      "matchCount": 2,
-      "detectedAt": "2026-08-18T07:35:41.980Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "RBK",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Tipsbladet: Chiakha klar for Rosenborg - skriver under for fire og et halvt år",
-      "link": "https://www.tv2.no/a/19138612",
-      "feed": "tv2-fotball",
-      "matchCount": 1,
-      "detectedAt": "2026-08-18T07:35:41.980Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Manchester City",
-      "type": "imminent",
-      "imminent": true,
-      "headline": "Football transfer rumours: Manchester City to move for Alexis Mac Allister?",
-      "link": "https://www.theguardian.com/football/2026/aug/17/football-transfer-rumours-manchester-city-to-move-for-alexis-mac-allister",
-      "feed": "guardian-football",
-      "matchCount": 5,
-      "detectedAt": "2026-08-18T07:35:41.980Z"
-    },
     {
       "kind": "tracked-claim",
       "entity": "Eliteserien",
@@ -46,7 +13,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "eliteserien-2026",
-      "detectedAt": "2026-08-18T07:35:42.887Z"
+      "detectedAt": "2026-08-18T08:33:15.924Z"
     },
     {
       "kind": "tracked-claim",
@@ -58,7 +25,7 @@
       "claimedDate": "2026-08-23T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-reitan",
-      "detectedAt": "2026-08-18T07:35:42.887Z"
+      "detectedAt": "2026-08-18T08:33:15.924Z"
     },
     {
       "kind": "tracked-claim",
@@ -70,18 +37,18 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-ventura",
-      "detectedAt": "2026-08-18T07:35:42.887Z"
+      "detectedAt": "2026-08-18T08:33:15.924Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 65 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 65,
+      "detail": "docs/data/esports.json has been served from retention for 66 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 66,
       "staleDays": 3,
       "severity": "high",
-      "detectedAt": "2026-08-18T07:35:42.934Z"
+      "detectedAt": "2026-08-18T08:33:15.980Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
