@@ -1,8 +1,52 @@
 {
-  "generatedAt": "2026-08-18T16:28:00.159Z",
-  "gapCount": 5,
+  "generatedAt": "2026-08-18T17:23:34.546Z",
+  "gapCount": 11,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Anders Mol",
+      "type": "missing",
+      "imminent": true,
+      "headline": "Volleyballforbundet snudde: Nå dropper Mol og Sørum NM",
+      "link": "https://www.nrk.no/sport/sandvolleyball-nm-kaos-1.17992431",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-18T17:23:33.412Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Mol",
+      "type": "missing",
+      "imminent": true,
+      "headline": "Volleyballforbundet snudde: Nå dropper Mol og Sørum NM",
+      "link": "https://www.nrk.no/sport/sandvolleyball-nm-kaos-1.17992431",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-18T17:23:33.412Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Christian Sørum",
+      "type": "missing",
+      "imminent": true,
+      "headline": "Volleyballforbundet snudde: Nå dropper Mol og Sørum NM",
+      "link": "https://www.nrk.no/sport/sandvolleyball-nm-kaos-1.17992431",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-18T17:23:33.412Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Sørum",
+      "type": "missing",
+      "imminent": true,
+      "headline": "Volleyballforbundet snudde: Nå dropper Mol og Sørum NM",
+      "link": "https://www.nrk.no/sport/sandvolleyball-nm-kaos-1.17992431",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-18T17:23:33.412Z"
+    },
     {
       "kind": "entity",
       "entity": "Barça",
@@ -12,7 +56,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/18/football-transfer-rumour-mill-atletico-madrid-julian-alvarez-arsenal-barcelona",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-18T16:27:59.071Z"
+      "detectedAt": "2026-08-18T17:23:33.412Z"
     },
     {
       "kind": "entity",
@@ -23,7 +67,29 @@
       "link": "https://www.theguardian.com/football/2026/aug/18/football-transfer-rumour-mill-atletico-madrid-julian-alvarez-arsenal-barcelona",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-18T16:27:59.071Z"
+      "detectedAt": "2026-08-18T17:23:33.412Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Molde",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Molde-spiller solgt til Sverige",
+      "link": "https://www.nrk.no/sport/molde-spiller-solgt-til-sverige-1.17993200",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-18T17:23:33.412Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "La Vuelta",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Uno-X sitt lag til La Vuelta a España er klart",
+      "link": "https://www.nrk.no/sport/uno-x-sitt-lag-til-la-vuelta-a-espana-er-klart-1.17993194",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-18T17:23:33.412Z"
     },
     {
       "kind": "tracked-claim",
@@ -35,7 +101,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "eliteserien-2026",
-      "detectedAt": "2026-08-18T16:27:59.993Z"
+      "detectedAt": "2026-08-18T17:23:34.392Z"
     },
     {
       "kind": "tracked-claim",
@@ -47,7 +113,7 @@
       "claimedDate": "2026-08-23T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-reitan",
-      "detectedAt": "2026-08-18T16:27:59.993Z"
+      "detectedAt": "2026-08-18T17:23:34.392Z"
     },
     {
       "kind": "tracked-claim",
@@ -59,18 +125,18 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-ventura",
-      "detectedAt": "2026-08-18T16:27:59.993Z"
+      "detectedAt": "2026-08-18T17:23:34.392Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 74 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 74,
+      "detail": "docs/data/esports.json has been served from retention for 75 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 75,
       "staleDays": 4,
       "severity": "high",
-      "detectedAt": "2026-08-18T16:28:00.040Z"
+      "detectedAt": "2026-08-18T17:23:34.440Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
