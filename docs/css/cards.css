@@ -494,6 +494,18 @@
 /* Clear the floating assistant button so the last row / footer is never occluded
    (the iOS safeAreaInset equivalent). */
 main.wrap { padding-bottom: 88px; }
+/* On phones the column is edge-to-edge and the glyph-only FAB tucks into the
+   bottom-right corner, where at end-of-scroll it sat ON the wrapped «Abonner i
+   kalender» footer link (visual-qa 2026-08-18: ~16px overlap at 375px, a 1.7px
+   near-miss at 393px). main's padding-bottom clears the AGENDA but the footer
+   follows it and is the true end-of-page element, so the FAB reached it. Reserve
+   space BELOW the footer content so it lifts clear of the fixed FAB — the same
+   safeAreaInset idea, applied to the element that actually ends the page. Only
+   needed at the phone breakpoint; wider screens keep the labelled pill in the
+   empty right margin beside the 640px column, clear of the footer already. */
+@media (max-width: 460px) {
+	.site-footer { padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
+}
 
 /* ── Nyheter board (twin of iOS NewsView) — NYTT + RESULTAT sections ──────────
    Flat, hairline-separated rows in the agenda's language; no cards, one amber
