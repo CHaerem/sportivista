@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T04:39:08.644Z",
+  "generatedAt": "2026-08-18T05:25:51.387Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -19,29 +19,36 @@
     ]
   },
   "coverage": {
-    "openGaps": 2,
+    "openGaps": 3,
     "bySeverity": {
       "high": 0,
       "medium": 2,
-      "low": 0
+      "low": 1
     },
-    "oldestGapAgeDays": 5.96,
+    "oldestGapAgeDays": 5.02,
     "escalatable": 0,
-    "catalogMatched": 2,
-    "auditedAt": "2026-08-13T05:00:00Z",
+    "catalogMatched": 3,
+    "auditedAt": "2026-08-18T09:00:00Z",
     "gaps": [
       {
-        "interest": "Eliteserien — runde 19 (29.–30. aug)",
+        "interest": "CS2 — BLAST Open Porto 2026 (Fall)",
         "severity": "medium",
-        "ageDays": 4.99,
+        "ageDays": -0.15,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
-        "interest": "Premier League — 2026/27 åpningsrunde (runde 1)",
+        "interest": "Eliteserien — runde 19 (29.–30. aug)",
         "severity": "medium",
-        "ageDays": 5.96,
+        "ageDays": 5.02,
         "recurrences": 1,
+        "catalogMatched": true
+      },
+      {
+        "interest": "Golf — BMW Championship: Kristoffer Reitan mangler i feltet",
+        "severity": "low",
+        "ageDays": -0.15,
+        "recurrences": 0,
         "catalogMatched": true
       }
     ]
@@ -158,31 +165,31 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-18T04:39:05.882Z",
+    "buildCheckedAt": "2026-08-18T05:25:46.419Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-17T22:17:21.671Z",
-    "manifestAgeHours": 6.36,
+    "manifestGeneratedAt": "2026-08-18T04:39:10.198Z",
+    "manifestAgeHours": 0.78,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
-        "ageHours": 84.86
+        "ageHours": 85.63
       },
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-08-16T21:53:59.091Z",
-        "ageHours": 30.75
+        "ageHours": 31.53
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-08-15T16:55:00Z",
-        "ageHours": 59.74
+        "ageHours": 60.51
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-17T05:59:00Z",
-    "verifyAgeHours": 22.67,
+    "verifyAgeHours": 23.45,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
