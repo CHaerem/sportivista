@@ -1,11 +1,14 @@
 {
-  "runAt": "2026-08-17T09:45:00Z",
-  "action": "none",
-  "pr": null,
-  "fixed": [],
-  "notes": [
-    "visual-qa-log.json verdict is 'pass' with an empty findings[] array (checked 2026-08-17T08:37:55Z at 375/393/900px). No high/medium code-fixable findings, so nothing to fix.",
-    "Per ui-fix 'When to act' rule 1, exited cleanly without a branch or PR.",
-    "The two 'Could not assess' items in the visual-qa log (whether the floating Assistent button ever overlaps the true last row during live scroll, and whether 'HBO Max (Sport)' is the correct Norwegian rights holder) are not screenshot-confirmed findings and the latter is a data/source question — neither is a code-fixable UI issue in scope for ui-fix."
-  ]
+	"runAt": "2026-08-18T09:42:00Z",
+	"action": "opened-pr",
+	"pr": "https://github.com/CHaerem/sportivista/pull/438",
+	"fixed": [
+		"375px footer overlap: the fixed 'Assistent' FAB sat on the wrapped 'Abonner i kalender' footer link at end-of-scroll (~16px horizontal / ~15.5px vertical overlap), clipping the trailing 'r'"
+	],
+	"notes": [
+		"Root cause: the FAB safe-area clearance lived only on main.wrap (padding-bottom:88px), but the footer FOLLOWS main and is the true end-of-page element, so the fixed FAB reached it at max scroll on phones where the column is edge-to-edge.",
+		"Fix (docs/css/cards.css): added a phone-scoped rule `@media (max-width:460px){ .site-footer{ padding-bottom: calc(76px + env(safe-area-inset-bottom,0px)); } }` — the same safeAreaInset idea, applied to the element that actually ends the page. Wider screens keep the labelled pill in the empty right margin beside the 640px column and need no change.",
+		"Verified with scroll-to-bottom viewport captures + DOM bounding boxes at 375/393/900px. Before: 375px OVERLAP h=16.3 v=15.5 (matches visual-qa), 393px near-miss 1.7px clearance, 900px clear. After: 375px clear (footer link lifts ~60px above the FAB), 393px clear, 900px unchanged/clear. 'Abonner i kalender' now reads in full; layout stays calm, single column, footer/agenda/header intact, no new overflow.",
+		"npm test: 1376 passed."
+	]
 }
