@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T18:33:42.061Z",
+  "generatedAt": "2026-08-18T19:25:24.998Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -25,7 +25,7 @@
       "medium": 2,
       "low": 1
     },
-    "oldestGapAgeDays": 5.57,
+    "oldestGapAgeDays": 5.6,
     "escalatable": 0,
     "catalogMatched": 3,
     "auditedAt": "2026-08-18T09:00:00Z",
@@ -33,21 +33,21 @@
       {
         "interest": "CS2 — BLAST Open Porto 2026 (Fall)",
         "severity": "medium",
-        "ageDays": 0.4,
+        "ageDays": 0.43,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Eliteserien — runde 19 (29.–30. aug)",
         "severity": "medium",
-        "ageDays": 5.57,
+        "ageDays": 5.6,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Golf — BMW Championship: Kristoffer Reitan mangler i feltet",
         "severity": "low",
-        "ageDays": 0.4,
+        "ageDays": 0.43,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -165,31 +165,26 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-18T18:33:35.438Z",
+    "buildCheckedAt": "2026-08-18T19:25:22.534Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-18T17:23:34.746Z",
-    "manifestAgeHours": 1.17,
+    "manifestGeneratedAt": "2026-08-18T18:33:43.654Z",
+    "manifestAgeHours": 0.86,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
-        "ageHours": 98.76
-      },
-      {
-        "file": "golf.json",
-        "sourceLastUpdated": "2026-08-16T21:53:59.091Z",
-        "ageHours": 44.66
+        "ageHours": 99.63
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-08-15T16:55:00Z",
-        "ageHours": 73.65
+        "ageHours": 74.51
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-18T05:54:27Z",
-    "verifyAgeHours": 12.65,
+    "verifyAgeHours": 13.52,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
