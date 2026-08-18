@@ -1,15 +1,17 @@
 {
-	"runAt": "2026-08-17T05:59:00Z",
-	"checked": 14,
-	"confirmed": 14,
+	"runAt": "2026-08-18T05:54:27Z",
+	"checked": 5,
+	"confirmed": 5,
 	"amended": 0,
 	"removed": 0,
 	"notes": [
-		"7-dagersvindu 17.-24. aug. Mange nære events var alt verifisert i går (16.8, alle 'confirmed'); denne runden tok de gjenstående uverifiserte kandidatene i vinduet.",
-		"Serie A runde 1 (10 kamper 22.-24. aug, alle confidence medium): ved research var Lega Serie As egen terminliste (legaseriea.it) bot-blokkert, så tidene sto på Sky/Goal (secondary). Nå bekreftet mot Lega Serie As EGEN grid (primaerkilde/tidsautoritet) + Goal-oppsettet: lør 22.8 18.30 CEST (16.30 UTC) Inter-Monza/Udinese-Como, 20.45 (18.45 UTC) Genoa-Napoli/Parma-Cagliari; søn 23.8 18.30 Frosinone-Juventus/Venezia-Lecce, 20.45 Atalanta-Sassuolo/Torino-Milan; man 24.8 18.30 Bologna-Lazio, 20.45 Roma-Fiorentina. ALLE tavle-tider stemte. provenance.time hevet secondary->primary. VG+ Sport-visning uendret (korrekt).",
-		"Egnatia-Lillestrøm (Europa League playoff, 20.8): avspark 19.00 CEST (17.00 UTC; Albania=CEST) bekreftet mot t-online + Sportschau live-tickere + footmercato-konsensus (UEFA.com fortsatt 403). Kampen registrert som Egnatia Rrogozhinë-Lillestrøm; UEFA-kompatibel arena IKKE offisielt bekreftet - holdt venue som 'Albania' framfor å gjette. Viaplay korrekt (UEL).",
-		"Silesia Diamond League / Kamila Skolimowska Memorial (23.8, Stadion Śląski): dato bekreftet HIGH (feltøvelser lør 22., hovedøkt søn 23.). Karsten Warholm bekreftet i 400m hekk mot Alison dos Santos (Diamond League). Eksakt stevnestart (16.00 CEST) fortsatt IKKE offisielt publisert - detaljert øvelsesprogram ikke ute; anslag + confidence medium beholdt. NRK korrekt.",
-		"PL åpningsrunde 23.8: Man City-Bournemouth 14.00 BST (13.00 UTC, mancity.com fixtures) + Newcastle-Liverpool 16.30 BST (15.30 UTC, Sky/premierleague.com) - begge matcher tavla. TV 2 Play korrekt (PL i Norge).",
-		"Ingen amendments/removals denne runden - alle sjekkede verdier stemte. Ingen X/Twitter-avledede påstander. Ingen skills endret (streaming-verdier stemte med gjeldende norwegian-rights). Ingen nye source-quirks bekreftet (UEFA.com 403/503 er alt dokumentert)."
+		"7-dagersvindu 18.-25. aug. 23 ai-research/confidence-kandidater i vinduet; de fleste var alt verifisert 16.-17.8 og uendret. Denne runden re-verifiserte de mest tidskritiske (nære europacup-kamper + F1-sprintweekend) mot ferske kilder.",
+		"Dinamo Zagreb-Viking (CL-playoff 18.8, I DAG): avspark 19.00 UTC (21.00 CEST) re-bekreftet mot fotmob kampside. Ett tidlig soketreff pastod 20.00 lokal, men fotmob (autoritativ) gir 19.00 UTC = 15.00 EDT konsistent. Tid + TV 2 Play (CL) korrekt. Confirmed.",
+		"NEC Nijmegen-Bodo/Glimt (19.8): VIKTIG kanal-sjekk - rights-map sier Europa/Conference->Viaplay, men UEFA.com bekrefter dette er CHAMPIONS LEAGUE-playoff (vinneren gar til CL-ligafasen, taperen faller til Europa League-ligafasen). CL i Norge = TV 2 Play. Tavla korrekt (TV 2 Play, IKKE Viaplay). Avspark 19.00 UTC bekreftet mot fotmob. Confirmed.",
+		"Nederlands GP Zandvoort (21.-23.8): bekreftet som sprintweekend (5. av 6 sprintlop i 2026) mot formula1.com + racingnews365. Alle tre tavle-okter i vinduet stemmer: sprintkval fre 16.30 CEST (14.30 UTC), sprint lor 12.00 (10.00 UTC), kval lor 16.00 (14.00 UTC). Viaplay (F1 i Norge) korrekt. Confirmed x3.",
+		"Serie A-kanal (VG+ Sport, 12 kamper i vinduet): re-bekreftet at VG kjopte EKSKLUSIVE norske Serie A-rettigheter t.o.m. sesongen 2026/27, alle kamper pa VG+ Sport (vg.no/sport/i/P4pQgb + livesoccertv.com). VG+ Sport-visningen pa kampene er korrekt. Selve kamptidene ble alt bekreftet mot Lega Serie As grid 17.8 og er uendret - ikke re-stampet denne runden.",
+		"SKILL-OPPDATERING BLOKKERT I DENNE OKTEN: forsokte legge til 'Serie A -> VG+ Sport [solid]' i .claude/skills/norwegian-rights/SKILL.md via Edit-verktoyet, men fikk gjentatt tool-feil (literalt): 'Claude requested permissions to write to /home/runner/work/sportivista/sportivista/.claude/skills/norwegian-rights/SKILL.md, but you haven't granted it yet.' Dette er en permission-prompt i denne kjoringen, IKKE en varig gate (jf. verify.md: skills er skrivbare i CI). Serie A-laeringen er logget her + i calibration-ledger; skill-linja bor legges til nar Edit-tilgang finnes.",
+		"Ingen amendments/removals: alle sjekkede verdier stemte. Ingen tentative kanaler i vinduet. Ingen X/Twitter-avledede pastander. Ingen nye source-quirks bekreftet.",
+		"Ikke re-verifisert denne runden (alt confirmed 16.-17.8, uendret): Sinquefield Cup (sjakk, in-progress), EWC CS2 (in-progress), BMW Championship (golf, starter 20.8), Vuelta a Espana (starter 22.8), Athletissima/Silesia friidrett, Egnatia-Lillestrom (UEL->Viaplay), Tromso-Brighton (UECL->Viaplay)."
 	]
 }
