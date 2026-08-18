@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T05:25:51.387Z",
+  "generatedAt": "2026-08-18T06:37:49.405Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -25,7 +25,7 @@
       "medium": 2,
       "low": 1
     },
-    "oldestGapAgeDays": 5.02,
+    "oldestGapAgeDays": 5.07,
     "escalatable": 0,
     "catalogMatched": 3,
     "auditedAt": "2026-08-18T09:00:00Z",
@@ -33,21 +33,21 @@
       {
         "interest": "CS2 — BLAST Open Porto 2026 (Fall)",
         "severity": "medium",
-        "ageDays": -0.15,
+        "ageDays": -0.1,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Eliteserien — runde 19 (29.–30. aug)",
         "severity": "medium",
-        "ageDays": 5.02,
+        "ageDays": 5.07,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Golf — BMW Championship: Kristoffer Reitan mangler i feltet",
         "severity": "low",
-        "ageDays": -0.15,
+        "ageDays": -0.1,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -55,11 +55,11 @@
   },
   "amendRate": {
     "nearTermRate": 0,
-    "nearTermChecked": 14,
+    "nearTermChecked": 5,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-08-17T05:59:00Z",
+    "verifyRunAt": "2026-08-18T05:54:27Z",
     "windowRate": 0,
-    "windowChecks": 88,
+    "windowChecks": 94,
     "windowAmendments": 0,
     "windowCorrections": 8,
     "byDay": [
@@ -160,36 +160,43 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-08-18",
+        "checks": 6,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-18T05:25:46.419Z",
+    "buildCheckedAt": "2026-08-18T06:37:44.744Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-18T04:39:10.198Z",
-    "manifestAgeHours": 0.78,
+    "manifestGeneratedAt": "2026-08-18T05:25:52.941Z",
+    "manifestAgeHours": 1.2,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
-        "ageHours": 85.63
+        "ageHours": 86.83
       },
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-08-16T21:53:59.091Z",
-        "ageHours": 31.53
+        "ageHours": 32.73
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-08-15T16:55:00Z",
-        "ageHours": 60.51
+        "ageHours": 61.71
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-08-17T05:59:00Z",
-    "verifyAgeHours": 23.45,
+    "checkedAt": "2026-08-18T05:54:27Z",
+    "verifyAgeHours": 0.72,
     "corrections": 0,
     "unresolved": 0,
     "signals": []

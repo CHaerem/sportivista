@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T05:25:52.737Z",
+  "generatedAt": "2026-08-18T06:37:50.548Z",
   "gapCount": 7,
   "anomalyCount": 1,
   "gaps": [
@@ -12,7 +12,7 @@
       "link": "https://www.nrk.no/sport/jakob-ingebrigtsen-framskynder-diamond-league-comebacket-_-deltar-i-schlesien-1.17992329",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-18T05:25:51.611Z"
+      "detectedAt": "2026-08-18T06:37:49.629Z"
     },
     {
       "kind": "entity",
@@ -23,7 +23,7 @@
       "link": "https://www.nrk.no/friidrettsem/ved-em-reisens-slutt-1.17992244",
       "feed": "nrk-sport",
       "matchCount": 3,
-      "detectedAt": "2026-08-18T05:25:51.611Z"
+      "detectedAt": "2026-08-18T06:37:49.629Z"
     },
     {
       "kind": "entity",
@@ -34,7 +34,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/17/football-transfer-rumours-manchester-city-to-move-for-alexis-mac-allister",
       "feed": "guardian-football",
       "matchCount": 6,
-      "detectedAt": "2026-08-18T05:25:51.611Z"
+      "detectedAt": "2026-08-18T06:37:49.629Z"
     },
     {
       "kind": "entity",
@@ -45,7 +45,7 @@
       "link": "https://www.nrk.no/sport/lillestroms-styreleder-gir-seg-med-umiddelbar-virkning-1.17992248",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-18T05:25:51.611Z"
+      "detectedAt": "2026-08-18T06:37:49.629Z"
     },
     {
       "kind": "tracked-claim",
@@ -57,7 +57,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "eliteserien-2026",
-      "detectedAt": "2026-08-18T05:25:52.538Z"
+      "detectedAt": "2026-08-18T06:37:50.325Z"
     },
     {
       "kind": "tracked-claim",
@@ -69,7 +69,7 @@
       "claimedDate": "2026-08-23T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-reitan",
-      "detectedAt": "2026-08-18T05:25:52.538Z"
+      "detectedAt": "2026-08-18T06:37:50.325Z"
     },
     {
       "kind": "tracked-claim",
@@ -81,18 +81,18 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-ventura",
-      "detectedAt": "2026-08-18T05:25:52.538Z"
+      "detectedAt": "2026-08-18T06:37:50.325Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 63 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 63,
+      "detail": "docs/data/esports.json has been served from retention for 64 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 64,
       "staleDays": 3,
       "severity": "high",
-      "detectedAt": "2026-08-18T05:25:52.584Z"
+      "detectedAt": "2026-08-18T06:37:50.376Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
