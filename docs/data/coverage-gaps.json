@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-18T20:20:08.408Z",
-  "gapCount": 3,
+  "generatedAt": "2026-08-18T21:20:56.221Z",
+  "gapCount": 7,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -12,7 +12,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/18/football-transfer-rumour-mill-atletico-madrid-julian-alvarez-arsenal-barcelona",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-18T20:20:07.588Z"
+      "detectedAt": "2026-08-18T21:20:54.952Z"
     },
     {
       "kind": "entity",
@@ -23,7 +23,51 @@
       "link": "https://www.theguardian.com/football/2026/aug/18/football-transfer-rumour-mill-atletico-madrid-julian-alvarez-arsenal-barcelona",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-18T20:20:07.588Z"
+      "detectedAt": "2026-08-18T21:20:54.952Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Molde",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Molde-spiller solgt til Sverige",
+      "link": "https://www.nrk.no/sport/molde-spiller-solgt-til-sverige-1.17993200",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-18T21:20:54.952Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Brann",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Utlånt unggutt fikk sjokkbeskjed på golfbanen – blir med Brann i Europa",
+      "link": "https://www.nrk.no/sport/utlant-unggutt-fikk-sjokkbeskjed-pa-golfbanen-_-blir-med-brann-i-europa-1.17993908",
+      "feed": "nrk-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-08-18T21:20:54.952Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "SK Brann",
+      "type": "missing",
+      "imminent": false,
+      "headline": "FKH-spiller returnerer midlertidig til Brann",
+      "link": "https://www.nrk.no/rogaland/fkh-spiller-returnerer-midlertidig-til-brann-1.17993932",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-18T21:20:54.952Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "La Vuelta",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Uno-X sitt lag til La Vuelta a España er klart",
+      "link": "https://www.nrk.no/sport/uno-x-sitt-lag-til-la-vuelta-a-espana-er-klart-1.17993194",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-18T21:20:54.952Z"
     },
     {
       "kind": "tracked-claim",
@@ -35,18 +79,18 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "eliteserien-2026",
-      "detectedAt": "2026-08-18T20:20:08.217Z"
+      "detectedAt": "2026-08-18T21:20:55.935Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 78 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 78,
+      "detail": "docs/data/esports.json has been served from retention for 79 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 79,
       "staleDays": 4,
       "severity": "high",
-      "detectedAt": "2026-08-18T20:20:08.264Z"
+      "detectedAt": "2026-08-18T21:20:55.981Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
