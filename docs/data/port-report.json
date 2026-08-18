@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T22:17:20.034Z",
+  "generatedAt": "2026-08-18T04:39:08.644Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -25,7 +25,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 5.69,
+    "oldestGapAgeDays": 5.96,
     "escalatable": 0,
     "catalogMatched": 2,
     "auditedAt": "2026-08-13T05:00:00Z",
@@ -33,14 +33,14 @@
       {
         "interest": "Eliteserien — runde 19 (29.–30. aug)",
         "severity": "medium",
-        "ageDays": 4.72,
+        "ageDays": 4.99,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Premier League — 2026/27 åpningsrunde (runde 1)",
         "severity": "medium",
-        "ageDays": 5.69,
+        "ageDays": 5.96,
         "recurrences": 1,
         "catalogMatched": true
       }
@@ -158,26 +158,31 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-17T22:17:13.988Z",
+    "buildCheckedAt": "2026-08-18T04:39:05.882Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-17T21:22:59.427Z",
-    "manifestAgeHours": 0.91,
+    "manifestGeneratedAt": "2026-08-17T22:17:21.671Z",
+    "manifestAgeHours": 6.36,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
-        "ageHours": 78.49
+        "ageHours": 84.86
+      },
+      {
+        "file": "golf.json",
+        "sourceLastUpdated": "2026-08-16T21:53:59.091Z",
+        "ageHours": 30.75
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-08-15T16:55:00Z",
-        "ageHours": 53.37
+        "ageHours": 59.74
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-17T05:59:00Z",
-    "verifyAgeHours": 16.31,
+    "verifyAgeHours": 22.67,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
