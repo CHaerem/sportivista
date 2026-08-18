@@ -773,6 +773,74 @@
   },
   {
     "sport": "golf",
+    "tournament": "PGA Tour",
+    "title": "BMW Championship",
+    "time": "2026-08-20T04:00:00.000Z",
+    "endTime": "2026-08-23T20:00:00.000Z",
+    "venue": "TBD",
+    "meta": "PGA Tour",
+    "norwegian": true,
+    "streaming": [
+      {
+        "platform": "HBO Max (Sport)",
+        "url": "https://www.hbomax.com/no/no/sports/pga-tour",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "Eurosport",
+        "url": "https://www.eurosport.no",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [
+      {
+        "name": "Kristoffer Reitan",
+        "teeTime": "17:27",
+        "teeTimeUTC": "2026-08-20T15:27:00.000Z",
+        "entityId": "kristoffer-reitan"
+      },
+      {
+        "name": "Viktor Hovland",
+        "teeTime": "19:42",
+        "teeTimeUTC": "2026-08-20T17:42:00.000Z",
+        "entityId": "viktor-hovland"
+      }
+    ],
+    "totalPlayers": 50,
+    "link": null,
+    "status": null,
+    "featuredGroups": [
+      {
+        "player": "Kristoffer Reitan",
+        "teeTime": "17:27",
+        "groupmates": [
+          {
+            "name": "Alex Fitzpatrick",
+            "teeTime": "17:27"
+          }
+        ]
+      },
+      {
+        "player": "Viktor Hovland",
+        "teeTime": "19:42",
+        "groupmates": [
+          {
+            "name": "J.J. Spaun",
+            "teeTime": "19:42"
+          }
+        ]
+      }
+    ],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "d06f889756bc",
+    "summary": "BMW Championship 20.-23. august, Bellerive Country Club i St. Louis - det andre av tre FedExCup-sluttspill (topp-50 etter FedEx St. Jude gar videre hit; topp-30 videre til Tour Championship).\n\nViktor Hovland lå 23. i FedExCup etter grunnserien (Wyndham) og er blant topp-70 som spiller St. Jude denne uka – dermed så godt som sikret BMW-start. Feltet låses formelt etter St. Jude (13.-16. aug).\n\nNorsk visning: HBO Max (Sport) / Eurosport Norge. Tee-tider ikke publisert enna."
+  },
+  {
+    "sport": "golf",
     "tournament": "DP World Tour",
     "title": "Nexo Championship",
     "time": "2026-08-20T04:00:00.000Z",
@@ -803,69 +871,6 @@
     "isFavorite": false,
     "round": null,
     "id": "5f1ff28d2109"
-  },
-  {
-    "sport": "golf",
-    "tournament": "FedExCup Playoffs",
-    "title": "BMW Championship",
-    "time": "2026-08-20T11:00:00Z",
-    "endTime": "2026-08-23T22:00:00Z",
-    "venue": "Bellerive Country Club, St. Louis, MO",
-    "meta": "PGA Tour",
-    "norwegian": true,
-    "streaming": [
-      {
-        "platform": "HBO Max (Sport)",
-        "url": "https://www.hbomax.com/no/no/sports/pga-tour",
-        "urlKind": "landing"
-      },
-      {
-        "platform": "Eurosport",
-        "url": "https://www.eurosport.no",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [
-      {
-        "name": "Viktor Hovland",
-        "entityId": "viktor-hovland"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-01T10:20:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://bmwchampionship.com/news/bmw-championship-venues-for-2025-2026-announced",
-      "https://www.columbiamissourian.com/sports/pro_sports/dates-set-for-2026-bmw-championship-at-bellerive/",
-      "https://www.hbomax.com/no/no/sports/pga-tour"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "pgatour",
-        "url": "https://bmwchampionship.com/news/bmw-championship-venues-for-2025-2026-announced",
-        "basis": "official",
-        "retrievedAt": "2026-08-01T10:20:00Z",
-        "note": "Bellerive-vertskap + topp-50-felt bekreftet pa turneringens egen side; eksakte konkurransedager (to. 20.-son. 23. aug) korroborert av Columbia Missourian + Fox2now. Verify 13. aug: startlista lases formelt etter FedEx St. Jude (13.-16. aug); tee-tider ikke publisert enna (~11.00 UTC round-1 er plassholder, matcher St. Jude)."
-      },
-      "streaming": {
-        "sourceId": "hbo-max",
-        "url": "https://www.hbomax.com/no/no/sports/pga-tour",
-        "basis": "official",
-        "retrievedAt": "2026-08-01T10:20:00Z",
-        "note": "WBD har PGA Tour-rettighetene i Norge 2026 -> HBO Max (Sport) / Eurosport Norge."
-      }
-    },
-    "summary": "BMW Championship 20.-23. august, Bellerive Country Club i St. Louis - det andre av tre FedExCup-sluttspill (topp-50 etter FedEx St. Jude gar videre hit; topp-30 videre til Tour Championship).\n\nViktor Hovland lå 23. i FedExCup etter grunnserien (Wyndham) og er blant topp-70 som spiller St. Jude denne uka – dermed så godt som sikret BMW-start. Feltet låses formelt etter St. Jude (13.-16. aug).\n\nNorsk visning: HBO Max (Sport) / Eurosport Norge. Tee-tider ikke publisert enna.",
-    "id": "81cff48e2170",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.golfpost.com/tournaments/pga-tour-bmw-championship-2026/",
-      "https://sports.yahoo.com/articles/fedex-cup-playoffs-explained-2026-181237146.html",
-      "https://www.pgatour.com/article/news/inside-the-field/2026/08/14/see-who-qualified-for-bmw-championship-top-50-fedexcup-playoffs-bellerive-country-club"
-    ],
-    "verifiedAt": "2026-08-16T05:55:00Z"
   },
   {
     "sport": "football",
