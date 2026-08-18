@@ -114,5 +114,13 @@
     "verdict": "quiet",
     "reason": "RSS (33 items, 05:25 UTC): transfer-season noise (Rodri/Barcelona, Aubameyang, Chelsea, Juventus signings—no schedule/streaming/broadcaster impact), past results (Euro athletics finals, Eliteserien Aug 14–16 matches already tracked, no changes), governance/personal news (Infantino FIFA, athlete injuries—no event-schedule impact). Coverage gaps (7 entity, 1 tracked-claim): Jakob Ingebrigtsen Diamond League Aug 23 (5 days, imminent but will be found by next 4h research run; not urgent escalation), Reitan/Ventura golf gaps tracked but no concrete RSS signal, Europaligaen/City/other entity gaps not imminent or no specific new-event RSS signal. Anomalies (1): esports stale-retained HIGH (fetcher frozen 3 days, but esports coverage exists via retention—infrastructure issue, not coverage gap requiring escalation). No schedule/time/venue changes to existing events, no broadcaster announcements, no 100 Thieves CS2 match hints. Escalation cap today: 0/2 UTC.",
     "signals": []
+  },
+  {
+    "runAt": "2026-08-18T06:37:50.000Z",
+    "verdict": "escalate",
+    "reason": "RSS (34 items, 06:37 UTC): transfer-season noise (Rodri/Barcelona, Aubameyang/Deportivo, Vicario/Juventus, Mac Allister, Boehly/Chelsea, Brighton/Joramo, Ipswich signings, Mvuka/Glimt, Scotland manager, various transfer rumours—no schedule/streaming/broadcaster impact). Past results (Racing Santander/Villarreal La Liga, Arsenal/Man City Community Shield, Eliteserien matches Aug 14–16, Mol/Sørum beach volleyball EM final loss—all already tracked, no changes). Personal news (Ronaldo retirement, athlete injuries—no event-schedule impact). Coverage gaps (7 entity, 1 anomaly): Jakob Ingebrigtsen Diamond League Schlesien Aug 23 (5 days, imminent, concrete upcoming event—tracked athlete), Reitan/Ventura golf (not imminent/no specific signal), Europaligaen (governance context, imminent=false), Manchester City (transfer context, not concrete event). Anomalies (1): esports.json stale-retained (64 runs, 3 days, HIGH—infrastructure issue, not a coverage gap). ESCALATION: Jakob Ingebrigtsen Diamond League Aug 23 is a concrete, imminent event for a tracked athlete, currently missing from the board. Escalation cap: 0/2 today before this entry.",
+    "signals": [
+      "Jakob Ingebrigtsen Diamond League (Schlesien, Aug 23) — tracked athlete, imminent (5 days), concrete upcoming event currently absent from board"
+    ]
   }
 ]
