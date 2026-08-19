@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-15T16:55:00Z",
+  "lastUpdated": "2026-08-19T02:15:00Z",
   "lastUpdatedBy": "research-agent",
   "version": 2,
   "leagues": [
@@ -352,7 +352,7 @@
       "id": "sondre-guttormsen",
       "name": "Sondre Guttormsen",
       "sport": "athletics",
-      "reason": "catalog.tier2.athletes (stavsprang). LAGT TIL 2026-08-06 for å tette et next-fixture-hull: han er en fulgt katalog-utøver uten en eneste board-event (viste «ikke satt opp ennå»). NÅ BEKREFTET i den norske EM-troppen til friidretts-EM Birmingham (10.–16. aug) — uttaket bekreftet mot VG (EM-troppen, «56 utøvere») + friidrett.no. Navngitt i norwegianPlayers på EM-eventet (id 142c1fc66477) så raden hans resolver. Ingen egen entitet i entities.json ennå (build-entities bygger fra tracked/sports-config, ikke katalogen), så denne entryen grunnfester ham. Vist på NRK (EM-friidrettsrettigheter 2026/2028/2030). OPPDATERT 2026-08-12T13:47Z (research, EM-scout + direkte Wikipedia-øvelsesside): stavsprang-FINALEN bekreftet søndag 16. aug kl. 20.30 CEST (18.30 UTC; kval 14. aug 12.05 CEST) — Guttormsen kvalifisert på inngangskravet (6,06). Surfacet i EM-eventets summary (id 142c1fc66477).",
+      "reason": "catalog.tier2.athletes (stavsprang). EM friidrett Birmingham (10.–16. aug) FERDIG — Guttormsen ble nr. 6 i stavsprang-finalen (søn. 16. aug). Ingen bekreftet neste stevne på tavla nå (DL-finalen Brussel 4.–5. sept avgjøres av sammenlagtpoeng; startliste ikke publisert) → ærlig «ikke satt opp ennå». Entryen grunnfester ham som fulgt katalog-entitet (build-entities bygger fra tracked, ikke katalogen); research boarder neste stevne når startlista slippes. Vist på NRK (DL/friidretts-rettigheter).",
       "addedAt": "2026-08-06T10:55:00Z",
       "addedBy": "research-agent",
       "evidence": [
@@ -361,14 +361,13 @@
         "https://www.friidrett.no/nyheter/2026/alt-du-behover-a-vite-om-em-friidrett-birmingham-2026/",
         "https://en.wikipedia.org/wiki/2026_European_Athletics_Championships_%E2%80%93_Men%27s_pole_vault"
       ],
-      "expires": "2026-08-17T23:59:59Z",
       "priority": "medium"
     },
     {
       "id": "henriette-jaeger",
       "name": "Henriette Jæger",
       "sport": "athletics",
-      "reason": "catalog.tier2.athletes (400 m). LAGT TIL 2026-08-06 for å tette et next-fixture-hull: fulgt katalog-utøver uten board-event. NÅ BEKREFTET i den norske EM-troppen til friidretts-EM Birmingham (10.–16. aug) — kvalifisert på tid på 400 m (VG EM-tropp + friidrett.no; sølv inne-EM / bronse inne-VM 2025, etablert i verdenseliten i 2026). Navngitt i norwegianPlayers på EM-eventet (id 142c1fc66477) så raden hennes resolver. Ingen egen entitet i entities.json ennå; entryen grunnfester henne. Vist på NRK (EM-friidrettsrettigheter 2026/2028/2030). OPPDATERT 2026-08-12T13:47Z (research, EM-scout + direkte Wikipedia-øvelsesside): 400 m-FINALEN bekreftet lørdag 15. aug kl. 21.50 CEST (19.50 UTC; R1 12. aug, semi 13. aug) — europaledende med 49.15. Surfacet i EM-eventets summary (id 142c1fc66477).",
+      "reason": "catalog.tier2.athletes (400 m). EM friidrett Birmingham (10.–16. aug) FERDIG — Jæger løp 400 m-finalen (lør. 15. aug). Ingen bekreftet neste stevne på tavla nå (DL-finalen Brussel 4.–5. sept avgjøres av sammenlagtpoeng; startliste ikke publisert) → ærlig «ikke satt opp ennå». Entryen grunnfester henne som fulgt katalog-entitet; research boarder neste stevne når startlista slippes. Vist på NRK.",
       "addedAt": "2026-08-06T10:55:00Z",
       "addedBy": "research-agent",
       "evidence": [
@@ -377,29 +376,10 @@
         "https://www.friidrett.no/nyheter/2026/alt-du-behover-a-vite-om-em-friidrett-birmingham-2026/",
         "https://en.wikipedia.org/wiki/2026_European_Athletics_Championships_%E2%80%93_Women%27s_400_metres"
       ],
-      "expires": "2026-08-17T23:59:59Z",
       "priority": "medium"
     }
   ],
   "tournaments": [
-    {
-      "id": "arctic-race-of-norway-2026",
-      "name": "Arctic Race of Norway 2026 (Uno-X Mobility)",
-      "sport": "cycling",
-      "reason": "Uno-X Mobility (alwaysTrack.teams) sitt HJEMMELØP og klare sesongmål — dekker «Uno-X og norske ryttere». Norsk etappeløp (UCI 2.Pro, fire etapper i Nord-Norge, 13.–16. august, etappe 1 Evenes–Myre 181,7 km). Uno-X bekreftet på lagets offisielle 2026-kalender + PCS-startlista; datoer/rute/venue bekreftet mot arctic-race-of-norway.com + UCI (uavhengig fact-checket 17. juli). ai-research-event på tavla (medium). Norsk visning TV 2 / TV 2 Play (bekreftet, egen løps-side; også Eurosport Norge/Max). NB: dette er ProSeries, ikke WorldTour. OPPDATERT 2026-08-07T13:10Z (research, sykkel-scout mot arrangørens egen etappe-1-side): ETAPPE 1s STARTTID ER NÅ PUBLISERT — arctic-race-of-norway.com/en/stage-1 oppgir départ 13.40 lokal (11.40 UTC) fra Evenes (Evenes–Myre, 181,7 km). Tavla-eventet flyttet fra 11.00-anslaget → 11.40 UTC, provenance.time.url/retrievedAt oppdatert til stage-1-siden. Verify bør bekrefte eksakt minutt (enkelt scout-lesning av arrangørsiden) og re-time øvrige etapper når horaires slippes. OPPDATERT 2026-08-09T17:05Z (research, sykkel-scout + uavhengig write-time fact-check mot arrangørens etappesider stage-1..4 + ProCyclingStats): ALLE FIRE ETAPPETIDENE ER NÅ PUBLISERT og bekreftet, så det tidligere blanket-eventet er ERSTATTET av fire per-etappe ai-research-events (high, provenance.time.basis=primary): etappe 1 tor. 13. aug Evenes–Myre 13.40 lokal (11.40 UTC), etappe 2 fre. 14. aug Bø i Vesterålen–Andenes 13.45 (11.45 UTC), etappe 3 (kongeetappen) lør. 15. aug Stokmarknes–Storheia fjelltopp 14.25 (12.25 UTC), etappe 4 søn. 16. aug Sortland–Narvik/Narvikfjellet 13.25 (11.25 UTC). Départ-tidene er arrangørens roadbook-tider (ikke TV-vinduer) — begge uavhengige lesninger (sykkel-scout + fact-checker) enige, korroborert av ProCyclingStats. Dette løser forrige kjøringers bevisste blanket-hold (kun etappe 1s tid var kjent da). TV 2 Play for alle etapper.",
-      "addedAt": "2026-07-17T10:15:00Z",
-      "addedBy": "research-agent",
-      "evidence": [
-        "catalog.json#tier2.teams",
-        "interests.json#alwaysTrack.teams",
-        "https://www.arctic-race-of-norway.com/en/stage-1",
-        "https://www.procyclingstats.com/race/arctic-race-of-norway/2026/route/stage-profiles",
-        "https://www.unoxteam.com/news/our-race-calendar-for-2026",
-        "https://play.tv2.no/sport/sykkel/arctic-race-of-norway"
-      ],
-      "expires": "2026-08-17T23:59:59Z",
-      "priority": "medium"
-    },
     {
       "id": "renewi-tour-2026",
       "name": "Renewi Tour 2026 (Uno-X Mobility)",
@@ -451,23 +431,6 @@
       "priority": "high"
     },
     {
-      "id": "esports-world-cup-2026-chess",
-      "name": "Esports World Cup 2026 – sjakk",
-      "sport": "chess",
-      "reason": "Magnus Carlsen forsvarer tittelen 11.–15. august i Paris (22 spillere, $1,5 mill., Team Liquid). Dekker «Sjakk på elite-nivå». Streaming = offisielle Chess.com/Twitch/YouTube-strømmer (ingen norsk TV-rettighet). Dato + sted RE-BEKREFTET 18. juli (uavhengig fact-check): 11.–15. aug i Paris (Paris Expo Porte de Versailles — EWC flyttet fra Riyadh til Paris 20. mai 2026, så «historisk Riyadh»-priori er utdatert); et sekundært «4.–6. aug»-rykte ble sjekket og AVVIST (Liquipedia + chess.com enige om 11.–15. aug). NB: ikke forveksle med Esports Nations Cup i Riyadh (nov. 2026), som også har en sjakk-disiplin. Rundetider ennå ikke publisert. OPPDATERT 2026-08-13T02:55Z (research, CS2/sjakk-scout mot chess.com): CARLSEN ER VIDERE TIL SLUTTSPILLET. Han spilte gruppespillet (Gruppe B, Team Liquid) 12.–13. aug og slo bl.a. Esipenko + Niemann (1,5–0,5) → kvalifisert til PLAYOFF 14.–15. aug (single-elim, 4-partis KF, 6-partis SF, Bo3-sett-finale, rapid 10+0) sammen med Nakamura, Firouzja og Abdusattorov (chess.com «2026 esports world cup group stage day 1»). Carlsens eksakte QF-motstander + starttid festes først etter at 13.-aug-gruppekampene er ferdige → ikke berammbart ennå. COVERAGE-MERKNAD: Carlsens konkrete EWC-sjakkamp dekkes NÅ av den statiske esports/Liquipedia-fetcheren (event 953109bd660e, 13. aug 11.00 UTC, navngir Magnus Carlsen i participants) — den tidligere ai-research-plassholderen er dermed overflødig og deduppet bort. FETCHER-GAP (flagget self-repair): det statiske sjakk-eventet har en maskin-generert tittel («Lower | Round 1 – …») + tom streaming[] (mangler chess.com/Twitch/YouTube-lenke) — esports.js bør rydde sjakk-tittelen + sette offisiell strøm. Gratis på chess.com YouTube/Twitch i Norge (ingen norsk TV-rettighet). OPPDATERT 2026-08-15T06:30Z (research, DEEP-tier — scout eskalerte 14. aug 18:49Z på NRK «Carlsen klar for finale i esport-VM»): CARLSEN ER I FINALEN. Han slo Nihal Sarin 2,5–0,5 og Alireza Firouzja 4–1 i sluttspillet → GRAND FINAL mot 19 år gamle Denis Lazavik LØR. 15. AUG. Finalen er nå BOARDET som ai-research-event (medium): best av tre sett (to sett à fire partier + evt. to-partis avgjørelse), $250 000 til vinneren. TID (medium/kildekonflikt ~1 t): Wikipedias tidsplantabell (UTC+2) oppgir 16.30 CEST (14.30 UTC), Gamereactor 15.30 CEST — holdt på Wikipedias 16.30 (event-tid 2026-08-15T14:30:00Z), confidence medium, note i provenance. chess.com bekrefter kun at finaledagens spill starter 13.00 CEST (= bronsefinalen, ikke finalens klokke); arrangørens egen side (esportsworldcup.com/liquipedia) ga 403. FETCHER-FEIL KORRIGERT: den statiske Liquipedia-fetcheren hadde plassert Carlsen i «3rd Place Match»-eventet (id 64aee02b6f3a, 15. aug 11.00 UTC) — men bronsefinalen er Nakamura–Firouzja (begge catalog.tier2.athletes), IKKE Carlsen (han er i grand final). Fetcher-eventet er rettet in-place (riktige deltakere + chess.com-strøm) og bronsefinalen står nå korrekt; FLAGGET for self-repair: esports/Liquipedia-sjakk-fetcheren tilordnet feil spiller til bronsefinale-noden. Uavhengig write-time fact-check (fersk subagent) bekreftet begge kampene + tidene mot Wikipedia/chess.com/Gamereactor. OPPDATERT 2026-08-15T13:00Z (research, standard-tier — egen web-fact-check): FINALETIDEN KORRIGERT 16.30 → 15.30 CEST (14.30 → 13.30 UTC) OG EN BOARD-DUBLETT LØST. Fersk web-sjekk (WebSearch + chess.com-artikkel + forsøkt Liquipedia) viste at TO uavhengige kilder oppgir 15.30 CEST — Liquipedias turneringsbracket (som den statiske esports-fetcheren SELV parset til 13.30 UTC) + Gamereactor — mot Wikipedias 16.30 (nå minoritet); morgenkjøringen hadde holdt på Wikipedia. Viktigere: den statiske Liquipedia-fetcheren boardet ALLEREDE grand final-noden («Grand Final – Esports World Cup 2026 | Playoffs», 13.30 UTC, tom streaming, maskintittel) — så tavla viste Carlsens finale TO ganger med sprikende tid (15.30 static + 16.30 ai-research). Ai-research-eventen er flyttet til 13.30 UTC og kollapser nå via build-events' venue-match (begge «Paris») så den statiske plassholderen droppes og den berikede eventen (begge spillere + chess.com-strøm + ryddig tittel) står alene. FETCHER-FEIL STÅR (self-repair): den statiske «3rd Place Match»-noden (11.00 UTC) tilordner fortsatt Magnus Carlsen — bronsefinalen er Nakamura–Firouzja; esports.js/Liquipedia-sjakk-parseren tilordner feil spiller til bronse-noden + gir maskintitler/tom streaming.",
-      "addedAt": "2026-07-03T19:45:00Z",
-      "addedBy": "research-agent",
-      "evidence": [
-        "catalog.json#tier2.athletes",
-        "interests.json#alwaysTrack.athletes",
-        "https://en.wikipedia.org/wiki/2026_Esports_World_Cup_%E2%80%93_Chess",
-        "https://www.chess.com/news/view/2026-esports-world-cup-playoffs-qf-sf",
-        "https://www.gamereactor.eu/esports/1760213/Esports+World+Cup+2026+Here+is+the+eight-player+Chess+Playoffs+fixtures/"
-      ],
-      "expires": "2026-08-16T23:59:59Z",
-      "priority": "high"
-    },
-    {
       "id": "esports-world-cup-2026-cs2",
       "name": "Esports World Cup 2026 – CS2 (Paris)",
       "sport": "esports",
@@ -481,85 +444,6 @@
       ],
       "expires": "2026-08-24T23:59:59Z",
       "priority": "medium"
-    },
-    {
-      "id": "em-friidrett-2026",
-      "name": "EM friidrett 2026 (Birmingham)",
-      "sport": "athletics",
-      "reason": "Dekker «Norske utøvere i internasjonal toppidrett» — det 27. friidretts-EM (frittstående mesterskap), Alexander Stadium, Birmingham 10.–16. august. NRK holder EM-friidrettsrettighetene 2026/2028/2030. Karsten Warholm BEKREFTET for Norges mixed 4x400 m stafett på åpningskvelden (10. aug). Jakob Ingebrigtsen NÅ BEKREFTET klar for EM (VG/NRK 27. juli, snudd fra «trolig ute» etter akilles-operasjonen) — distansen er ikke offisielt låst, men VG melder trolig 5000 m (regjerende europamester på både 1500 m og 5000 m); nå navngitt på EM-eventet i norwegianPlayers så raden hans resolver. Mangekjemperne Skotheim/Rooth ventes; øvrige startlister ikke publisert, fylles på når listene slippes. OPPDATERT 2026-08-09T20:55Z (research, norsk imminent-scout + 2-kilders bekreftelse VG-program + NRK-program): Ingebrigtsens distanse er nå ENTYDIG — han stiller på 5000 m, og FINALEN går allerede på åpningskvelden man. 10. aug kl. 21.40 CEST (19.40 UTC) på NRK (VG + NRKs EM-sendeplan enige). EM-eventets summary (id 142c1fc66477) amendert fra «trolig 5000 m» → bekreftet 5000 m-finale m/klokkeslett; VG-programlenken lagt til evidence. Warholms mixed 4x400 m-stafett går samme kveld, men eksakt starttid er FORTSATT ikke entydig (NRK oppgir ~22.00 CEST, VG ~22.40 CEST) → ikke satt. FLAGGET for verify: fest eksakt relay-tid + vurder om åpningskveldens norske finaler (5000 m 21.40 + mixed relay) bør boardes som egne økt-events (championship-nivå beholdt denne kjøringen for å unngå asymmetrisk økt-boarding når relay-tiden spriker). OPPDATERT 2026-08-10T13:45Z (research, norsk imminent-scout + uavhengig web-sjekk): MANGEKAMP-NAVNENE AVKLART. Markus Rooth (katalog-tier2) er SKADD (kneskade) og deltar IKKE i EM — bekreftet mot NRK + Nettavisen + friidrett.nos offisielle EM-tropp (han står ikke på lista). Sander Aae Skotheim (IK Tjalve) er Norges tikjemper; tikampen går ons. 12.–tor. 13. aug (Nettavisen-program + friidrett.no enige; et generisk engelsk 10. aug-treff avvist til fordel for de to norske programkildene). Dette LØSER den tidligere «Skotheim/Rooth ventes»-usikkerheten og coverage-gaps' Rooth-mekaniske treff (NRK-saken gjaldt Rooths skade, ikke deltakelse). EM-eventets summary (id 142c1fc66477) amendert: Rooth korrigert til «skadd, deltar ikke», Skotheim navngitt som tikjemper 12.–13. aug. Rooth IKKE navngitt på eventet (korrekt — han er ute); Skotheim ikke navngitt i norwegianPlayers (ikke katalog-tier2, championship-nivå-event dekker ham i summary). Nettavisen-programlenken allerede i evidence. OPPDATERT 2026-08-11T02:45Z (research, norsk imminent-scout + VGs EM-program): EM-eventets summary (id 142c1fc66477) amendert med den nære, marquee norske aksjonen — (a) Ingebrigtsens 5000 m-gull (10. aug) satt til fortid (VUNNET); (b) Karsten Warholms INDIVIDUELLE 400 m hekk (hovedøvelsen) lagt til med tider: semifinale tir. 11. aug 22.00 CEST (20.00 UTC) + FINALE ons. 12. aug ~21.50 CEST (~19.50 UTC), begge NRK1 (VGs EM-program, high); (c) Skotheim-tikampens morgenøkt ~11.35 CEST + Nordås (1500 m) / Tuv Myhre (10 000 m) norske finaler lør. 15. aug nevnt. BEVISST championship-nivå beholdt (INGEN egne økt-events) — samme disiplin som Ingebrigtsens 5000 m-finale ikke ble boardet separat; å boarde kun Warholms final ville være den asymmetriske økt-boardingen tidligere kjøringer unngikk. VGs EM-programlenke lagt til evidence. Verify kan boarde enkeltøkter om ønskelig. OPPDATERT 2026-08-11T13:45Z (research, uavhengig fact-check mot Wikipedias dedikerte 400 m hekk-side + olympics.com/ESPN + european-athletics-timeplanen): WARHOLMS 400 m HEKK-TIDER I SUMMARY VAR FEIL OG ER RETTET. Den offisielle runde-timeplanen er forsøk tir. 11. aug 12.40 BST (13.40 CEST), semifinale ons. 12. aug 12.55 BST (13.55 CEST) og FINALE FREDAG 14. AUG 20.40 BST (21.40 CEST / 19.40 UTC) — IKKE «semifinale 11. aug 22.00 / finale 12. aug ~21.50» som forrige VG-program-lesning (verify 06:15Z) hevdet (trolig en forveksling av mixed-relay-åpningskvelden med hekke-timeplanen). Tre uavhengige kilder enige om finale 14. aug. EM-eventets summary (id 142c1fc66477) korrigert + Wikipedias 400mH-side lagt til evidence. Skotheim-tikampen (12.–13. aug) RE-BEKREFTET korrekt mot Wikipedias dedikerte tikamp-side (uendret — ikke rørt). FLAGGET FOR VERIFY: re-bekreft + priorConfirmed-beskytt den korrigerte finaledatoen (fre. 14. aug) mot re-drift.",
-      "addedAt": "2026-07-07T18:05:00Z",
-      "addedBy": "research-agent",
-      "evidence": [
-        "interests.json#interests",
-        "https://en.wikipedia.org/wiki/2026_European_Athletics_Championships",
-        "https://www.birmingham26.com/news/karsten-warholm-ready-to-join-norway-push-for-gold-in-4x400m-mixed-relay-at-birmingham-2026",
-        "https://www.vg.no/sport/i/lnJM5M/jakob-ingebrigtsen-kommer-ikke-til-friidretts-nm-i-trondheim",
-        "https://www.vg.no/sport/i/e7kq8R/bekreftet-jakob-ingebrigtsen-stiller-i-em"
-      ],
-      "expires": "2026-08-17T23:59:59Z",
-      "priority": "high"
-    },
-    {
-      "id": "fa-community-shield-2026",
-      "name": "FA Community Shield 2026 (Arsenal–Manchester City)",
-      "sport": "football",
-      "reason": "Arsenal OG Manchester City (begge catalog.tier2.teams) møtes i den engelske sesongåpningen — reell entitets-dekning, ikke bare tier1-wholesale. LAGT TIL 23. juli fra WP-116 horisont-scan (fotball-scout fant en bekreftet marquee-engangshendelse innenfor ~4-ukershorisonten, ikke på tavla). Seriemester Arsenal mot FA-cupvinner Manchester City, søndag 16. august kl. 15.00 BST (14.00 UTC / 16.00 CEST) på Principality Stadium i Cardiff (Wembley opptatt denne helgen; første Cardiff-arrangement siden 2006). Dato/tid/lag/bane + norsk kanal uavhengig write-time fact-checket mot Wikipedia + The FA + Principality Stadium + Viaplays offisielle norske rettighetsside (fire kilder enige) → ai-research-event på tavla (high). Norsk visning VIAPLAY (Viaplay har Community Shield sammen med FA-cupen/Premier League — bekreftet på commercial.viaplaygroup.com/partners/norway/sportsrights). Streaming persisterer korrekt: «Community Shield» treffer ingen rettighetskart-regel, så build-events beholder Viaplay (i motsetning til Bodø/Glimt-revert-waren).",
-      "addedAt": "2026-07-23T04:00:00Z",
-      "addedBy": "research-agent",
-      "evidence": [
-        "catalog.json#tier2.teams",
-        "https://en.wikipedia.org/wiki/2026_FA_Community_Shield",
-        "https://www.thefa.com/news/2026/jun/04/2026-fa-community-shield",
-        "https://www.principalitystadium.wales/2026/06/04/arsenal-and-manchester-city-set-for-2026-fa-community-shield-at-principality-stadium-as-3pm-kick-off-is-confirmed/"
-      ],
-      "expires": "2026-08-17T23:59:59Z",
-      "priority": "medium"
-    },
-    {
-      "id": "trophee-des-champions-2026",
-      "name": "Trophée des Champions 2026 (PSG–RC Lens)",
-      "sport": "football",
-      "reason": "WP-116 horisont-scan-kandidat (fotball-scout). Den franske supercupen: Ligue 1-mester Paris Saint-Germain mot Coupe de France-vinner RC Lens, søndag 16. august kl. 20.45 CEST (18.45 UTC) på Stade Bollaert-Delelis i Lens. Dato/lag/bane/tid uavhengig write-time fact-checket mot Wikipedia + PSG.fr + Eurosport + LFP-trekningen (bane = Lens, IKKE Kuwait/utland — det ryktet ble AVKREFTET). Fotball er tier1 (wholesale) → in-scope, men HOLDT AV TAVLA denne kjøringen (i motsetning til Community Shield): (a) ingen katalog-lag (PSG/Lens ikke i catalog.tier2.teams) + tynn norsk vinkel, (b) NORSK KRINGKASTER UBEKREFTET — fact-checken fant ingen primærkilde (Viaplays rettighetsside lister IKKE Ligue 1; tvtilbud.no/synaps sier Viaplay men motsies av Viaplays egen side), og (c) en tom streaming ville uansett bli feil-fylt til «TV 2 Play» av build-events fordi «Trophée des Champions» inneholder delstrengen «champions» som trigger CL-linja i norwegianRights (/champions/ → TV 2 Play) — en falsk-treff-bug flagget for self-repair (se research-log). Legges til når norsk kanal er bekreftet (eller ordgrense-fiksen er inne). Verify/neste kjøring følger opp.",
-      "addedAt": "2026-07-23T04:00:00Z",
-      "addedBy": "research-agent",
-      "evidence": [
-        "catalog.json#tier1",
-        "https://en.wikipedia.org/wiki/2026_Troph%C3%A9e_des_Champions",
-        "https://www.psg.fr/en/content/trophee-des-champions-date-set-2026-rc-lens-paris-saint-germain",
-        "https://www.eurosport.fr/football/trophee-des-champions/2026/trophee-des-champions-2026-lens-psg-se-deroulera-au-stade-bollaert-le-dimanche-16-aout-selon-le-tirage-de-la-lfp_sto23306060/story.shtml"
-      ],
-      "expires": "2026-08-17T23:59:59Z",
-      "priority": "low"
-    },
-    {
-      "id": "fedex-st-jude-championship-2026",
-      "name": "FedEx St. Jude Championship 2026",
-      "sport": "golf",
-      "reason": "FedExCup Playoffs (catalog.tier2.tournaments) — sluttspillets åpningsturnering, TPC Southwind Memphis, 13.–16. august (topp-70-felt; 50 videre til BMW, 30 til Tour Championship). LAGT TIL 27. juli (coverage-critic medium-gap; også Viktor Hovlands neste svært sannsynlige start). Datoer/bane/Hovland-standing uavhengig write-time fact-checket mot pgatour.com + tpc.com (Hovland ~20. i FedExCup etter Travelers-seieren) — 2+ kilder. Hovland i norwegianPlayers (start tilnærmet sikker; feltet låses etter Wyndham ~9. aug) → løser Hovland-tracked-claim-gapen. Norsk visning HBO Max (Sport)/Eurosport (WBD). ai-research-event (high).",
-      "addedAt": "2026-07-27T15:25:00Z",
-      "addedBy": "research-agent",
-      "evidence": [
-        "catalog.json#tier2.tournaments",
-        "https://www.pgatour.com/tournaments/2026/fedex-st-jude-championship/R2026027/overview",
-        "https://tpc.com/southwind/fedex-st-jude-championship/"
-      ],
-      "expires": "2026-08-17T23:59:59Z",
-      "priority": "high"
-    },
-    {
-      "id": "danish-golf-championship-2026",
-      "name": "Danish Golf Championship 2026 (DP World Tour)",
-      "sport": "golf",
-      "reason": "DP World Tour (catalog.tier2.tournaments) — skandinavisk turnering på Great Northern i Kerteminde på Fyn (ny bane 2026), 13.–16. august. Golf er tier1, og en DP-turnering i Skandinavia er reell dekning på det katalog-brede brettet (per-bruker-linsen filtrerer). Datoer/bane bekreftet mot dpworldtour.com + greatnorthern.dk (2+ kilder). Norsk vinkel: Kristoffer Reitan (dobbel PGA/DP-status) mulig starter, men feltet ikke bekreftet → ikke navngitt på eventet. Norsk visning Viaplay (DP World Tour) — ikke endelig re-bekreftet for 2026, verify følger opp. ai-research-event (medium).",
-      "addedAt": "2026-07-27T15:25:00Z",
-      "addedBy": "research-agent",
-      "evidence": [
-        "catalog.json#tier2.tournaments",
-        "https://www.europeantour.com/dpworld-tour/danish-golf-championship-2026/",
-        "https://greatnorthern.dk/en/event/danish-golf-championship-2026/"
-      ],
-      "expires": "2026-08-17T23:59:59Z",
-      "priority": "low"
     },
     {
       "id": "laver-cup-2026",
@@ -679,23 +563,6 @@
       "priority": "medium"
     },
     {
-      "id": "eurobeachvolley-2026",
-      "name": "Sandvolleyball-EM 2026 (Mol/Sørum)",
-      "sport": "beach volleyball",
-      "reason": "HORISONT-SCAN (WP-116 / Step 2.6): EuroBeachVolley 2026 (sandvolleyball-EM) i Stare Jabłonki, Polen, 12.–16. august. Anders Mol og Christian Sørum — regjerende olympiske mestere (Tokyo + Paris) og femdobbelte europamestere — er bekreftet i herrenes pulje C (CEV/EEVZA puljetrekning) og jakter sin sjette strake EM-tittel; en LA28-kvalifiserende og genuint marquee norsk medaljesjanse. Boardet som ai-research fler-dagers event 2026-08-09 (medium): puljespill fra 12. aug, medaljekamper 16. aug (CEV + ebv2026.pl + EEVZA, 3 kilder). OPPDATERT 2026-08-11T05:30Z (research, horisont-scout + uavhengig fact-check): KATALOG-PROMOTERINGEN ER NÅ GJENNOMFØRT — den 08-09-kjøringen flagget Mol/Sørum som en sterk breddekandidat men UTSATTE den formelle katalog-utvidelsen (krevde en deliberat skjema-enum-endring). Denne kjøringen gjør den deliberate utvidelsen (Step 2.6-mandat): Anders Mol + Christian Sørum lagt til catalog.json#tier2.athletes (sport «beach volleyball», entity-gated — sandvolleyball dekkes ikke wholesale), og «beach volleyball» lagt til catalog.schema.json sin sport-enum (samme mønster som «ski jumping»). Eventet var allerede dekket via build-events isCov, `norwegian:true`-linja; katalog-promoteringen gjør dekningen EKSPLISITT + gjør Mol/Sørum følgbare entiteter. Ekstra dimensjon: paret splittes etter sesongen (Mol går innendørs, italiensk SuperLega, fra 2026/27), så EM-et bærer en avskjeds-vinkel. Registrerte cev i sources.json + beach-volleyball:eurobeachvolley i authority.json. Mol/Sørums eksakte enkeltkamptider ennå ikke publisert (starttid 12. aug er anslag → verify firmer opp); norsk kringkaster ikke bekreftet, streaming = CEVs egen gratis-strøm (EuroVolley.tv/YouTube). IKKE boardet: Beach Pro Tour Elite16 Montreal (19.–23. aug) — deltakelse ubekreftet, følg opp startlista.",
-      "addedAt": "2026-08-09T02:45:00Z",
-      "addedBy": "research-agent",
-      "evidence": [
-        "catalog.json#tier2.athletes",
-        "https://www.cev.eu/articles/beach-volleyball/stare-jablonki-to-host-first-ever-eurobeachvolley-on-polish-soil/",
-        "https://eurobeachvolley.cev.eu/en/2026/",
-        "https://ebv2026.pl/en/",
-        "https://eevza.eu/mouth-watering-fixtures-emerge-from-eurobeachvolley-pool-phase-draw/"
-      ],
-      "expires": "2026-08-17T23:59:59Z",
-      "priority": "medium"
-    },
-    {
       "id": "global-chess-league-2026",
       "name": "Global Chess League 2026 – sesong 4 (Magnus Carlsen)",
       "sport": "chess",
@@ -726,9 +593,57 @@
       ],
       "expires": "2026-08-31T23:59:59Z",
       "priority": "low"
+    },
+    {
+      "id": "blast-open-porto-2026",
+      "name": "BLAST Open Porto 2026 (Fall)",
+      "sport": "esports",
+      "reason": "Coverage-critics MEDIUM horisont-hull (audit 2026-08-18): tier-1 CS2-turnering med minst sju katalog-lag (Team Vitality, NAVI, Team Falcons, Team Spirit, FURIA, G2 Esports, MOUZ) — esports er entity-gated, og et navngitt katalog-lag slipper eventet inn. Gruppespill 26.–31. aug i BLAST Studios, København; sluttspill 4.–6. sept i Super Bock Arena, Porto. LAGT TIL 2026-08-19 (research, CS2-scout + uavhengig write-time fact-check mot HLTV + blast.tv, begge enige) som ai-research-event (medium): datoer/venue/felt bekreftet HIGH, men eksakte kamptider ut over åpningen (Aurora–G2 26. aug 11.00 CEST/09.00 UTC) ikke publisert → medium. INGEN norsk vinkel: 100 Thieves (rain) er IKKE i feltet. Gratis på BLAST Premiers offisielle Twitch. ROTÅRSAK til hullet: den statiske esports.js/Liquipedia-fetcheren er DØD (stale-retained 80 kjøringer / 4 dager) — flagget self-repair; den er dessuten fokuslag-gated (100T), så den ville uansett ikke fanget denne. Verify/fetcher fester per-kamp-tidene når Liquipedia lister braketten.",
+      "addedAt": "2026-08-19T02:15:00Z",
+      "addedBy": "research-agent",
+      "evidence": [
+        "catalog.json#tier2.teams",
+        "https://www.hltv.org/news/45128/blast-open-porto-teams-announced",
+        "https://www.hltv.org/news/45327/blast-open-porto-opening-matchups-set",
+        "https://blast.tv/cs/tournaments/open-2026-season-2"
+      ],
+      "expires": "2026-09-07T23:59:59Z",
+      "priority": "medium"
+    },
+    {
+      "id": "world-athletics-ultimate-championship-2026",
+      "name": "World Athletics Ultimate Championship 2026 (Budapest)",
+      "sport": "athletics",
+      "reason": "HORISONT-SCAN (WP-116 / Step 2.6) 2026-08-19, horisont-scout + uavhengig write-time fact-check: den aller første utgaven av World Athletics’ nye biennale sesongfinale, National Athletics Centre i Budapest 11.–13. sept 2026 (~$10 mill. premiepott, verdenseliten). Friidrett er tier1 (dekkes wholesale); PROMOTERT til catalog.tier2.tournaments (athletics) denne kjøringen som marquee-championship (på linje med friidretts-VM/-EM), registrert i sources.json (world-athletics) + authority.json (athletics:ultimate-championship). NORSK VINKEL: Jakob Ingebrigtsen BEKREFTET kvalifisert (5000 m, per kvalifiseringstabellene); Karsten Warholm VENTET i 400 m hekk men ikke offisielt bekreftet på kvalifiseringslista ennå (fact-check-korreksjon — ikke oppført som bekreftet). Boardet som fler-dagers ai-research-event (medium): datoer/venue/inaugural + NRK-rettighet HIGH-bekreftet, men eksakte øvelses-starttider ikke publisert (øktstart fre. ~19.00 / lør.–søn. ~18.00 lokal) → medium, verify fester tidene. NORSK VISNING = NRK (internasjonale rettigheter via Infront, IKKE EBU — fact-check-korreksjon).",
+      "addedAt": "2026-08-19T02:15:00Z",
+      "addedBy": "research-agent",
+      "evidence": [
+        "catalog.json#tier2.tournaments",
+        "catalog.json#tier2.athletes",
+        "https://worldathletics.org/competitions/world-athletics-ultimate-championship/2026",
+        "https://en.wikipedia.org/wiki/2026_World_Athletics_Ultimate_Championship"
+      ],
+      "expires": "2026-09-14T23:59:59Z",
+      "priority": "medium"
+    },
+    {
+      "id": "davis-cup-2026-norway-china",
+      "name": "Davis Cup 2026 – Norge–Kina (Trondheim)",
+      "sport": "tennis",
+      "reason": "HORISONT-SCAN (WP-116 / Step 2.6) 2026-08-19, horisont-scout: Davis Cup (catalog.tier2.tournaments) — Norge møter Kina i en HJEMME-tie i Trondheim Spektrum 18.–19. sept 2026, med Casper Ruud (catalog.tier2.athletes) + Nicolai Budkov Kjær. Marquee norsk hjemme-tennis. HORISONT-PLASSHOLDER, IKKE boardet: ~30 dager ut (så vidt utenfor ~4-ukersvinduet), og norsk kringkaster ikke bekreftet (Davis Cup i Norge har variert — verifiseres). Tider oppgitt av Norges Tennis- og Padelforbund (fre. 18. sept 18.00, lør. 19. sept 15.30) men holdes til de er bekreftet + kanal er satt. Legges til som datert event når innenfor vinduet + kanal bekreftet. Verify/neste kjøring følger.",
+      "addedAt": "2026-08-19T02:15:00Z",
+      "addedBy": "research-agent",
+      "evidence": [
+        "catalog.json#tier2.tournaments",
+        "catalog.json#tier2.athletes",
+        "https://en.wikipedia.org/wiki/2026_Davis_Cup"
+      ],
+      "expires": "2026-09-20T23:59:59Z",
+      "priority": "low"
     }
   ],
   "notes": [
+    "Kjøring 2026-08-19T02:15Z (ons. ~04.15 CEST, standard-tier Opus) — 2 EVENTER LAGT TIL (1 dekningshull + 1 horisont) + BOARD-OPPRYDNING + KATALOG-UTVIDELSE. eventsAdded: 2 (BLAST Open Porto CS2 + World Athletics Ultimate Championship), eventsRemoved: 9 (foreldede ai-research-events: EM friidrett, sandvolleyball-EM, Arctic Race etappe 3+4, EWC sjakk-finale, Lyn–Odd, Community Shield, Dinamo Zagreb–Viking leg1 + den nå-stale EWC CS2-gruppespill-noden — 100T eliminert). catalog.json: World Athletics Ultimate Championship promotert til tier2.tournaments (athletics); sources.json (world-athletics) + authority.json (athletics:ultimate-championship) registrert. TILSTAND VED START (~4 dager siden forrige research 2026-08-15T13:00Z — lang luke, usage GRØNN 8%/26%): coverage-audit 18. aug 09:00Z = INGEN high-hull; tre gaps: (a) CS2 BLAST Open Porto MEDIUM (7+ katalog-lag, fetcher død) → BOARDET; (b) Eliteserien r19 29.–30. aug MEDIUM (recur 1) → HOLDT, forventet mekanisk ESPN nor.1-fyll ~24.–26. aug (research skal IKKE håndfylle wholesale); (c) BMW Championship Reitan-mangel LOW → AUTO-LØST: den statiske golf-fetcheren har nå BÅDE Reitan (tee 17.27) OG Hovland med tee-tider på BMW-eventet (feltet publisert siden auditen), scout re-bekreftet begge i topp-50; ingen handling. coverage-gaps 18. aug 22:15Z = 3 gaps (Barça/Barca overgangsrykter = støy; Eliteserien tracked-claim imminent:false) + 1 HIGH-anomali (esports.json stale-retained 80 kjøringer/4 dager — DØD fetcher, self-repair). FAN-OUT: 3 parallelle web-scouts (CS2 BLAST Open Porto + golf BMW-felt + norsk imminent/horisont) + 1 uavhengig write-time fact-checker på de 2 kandidatene. FUNN & HANDLING: (1) BLAST Open Porto boardet (medium, ingen norsk vinkel, 100T ikke i feltet). (2) WA Ultimate Championship (Budapest 11.–13. sept, Ingebrigtsen bekreftet + Warholm ventet, NRK via Infront) — sterkeste horisont-funn, boardet + katalog-promotert. (3) KORREKSJONER fra fact-check: WA Ultimate NRK via Infront (IKKE EBU); Warholm ventet men IKKE bekreftet kvalifisert. (4) Guttormsen + Jæger (catalog-athletes) omskrevet til post-EM-plassholdere («ikke satt opp ennå») — EM ferdig, neste stevne uavklart. (5) Davis Cup Norge–Kina (Trondheim 18.–19. sept, Ruud) sporet som horisont (>4 uker, kanal ubekreftet). (6) DISKREGARDET scout-påstand «100T vant EWC» — motsier tracked-historikk (100T slått ut til nedre bracket 12. aug); ingen board-endring. RECONCILE (Step 1): alle catalog.tier2 + tier1-i-sesong dekket; prunet 8 foreldede tournament-editions. HORISONT-SCAN (Step 2.6): WA Ultimate promotert; Bretagne Classic (30. aug, tid/kanal upublisert), Tour of Britain (2.–6. sept), GP Québec/Montréal (11./13. sept) notert men ikke boardet (upublisert tid/kanal/norsk startliste); Norge–Danmark 24. sept + Norge–Portugal 27. sept KORRIGERT til Nations League (IKKE VM-kvalik, per fotball.no fiksId 9049092/9049093) — >4 uker, TV 2, ikke boardet. 0 demand[]. Ikke deep-tier (onsdag ≠ mandag) → ingen registry-reconsiliering (Step 2.8). VEDVARENDE (self-repair/verify, uendret): (1) ita.1/ger.1 i ESPN-fetcheren; (2) esports.js DØD (stale-retained 80) + sjakk-Liquipedia-parser (feil bronse-spiller/maskintitler/tom streaming); (3) tennis.json stale-retained; (4) verify fester UECL/EL/CL-playoff-tidene mot UEFA/klubb-primærkilde; (5) coverage/self-repair bekreft eng.1/nor.1 fyller Eliteserien r19 innen ~26. aug. validate-events.js kjørt (se research-log quality). Grader spunnet på de materielle endringene.",
     "Kjøring 2026-08-15T13:00Z (lør. ~15.00 CEST, standard-tier Opus) — 1 KORREKSJON + BOARD-OPPRYDNING (dublett + 26 foreldede events). eventsAdded: 0, eventsRemoved: 27 (26 foreldede ai-research-events prunet + 1 dublett-node kollapset), eventsAmended: 1 (EWC-sjakkfinale). Ingen katalog-/registry-endring. TILSTAND VED START: forrige research 06:30Z (deep-tier eskalering, gradert 94 — Carlsen EWC-finale boardet); coverage-audit 05:00Z (13. aug, 2 dager) = INGEN high-hull (to MEDIUM vindu-etterslep: Eliteserien r19 29.–30. aug + PL r1 resterende — begge forventet mekanisk ESPN-fyll ~18.–26. aug, research skal IKKE håndfylle wholesale); coverage-gaps 12:31Z = 0 gaps, 1 anomali (tennis stale-retained 67 kjøringer/4 dager HIGH — fetcher-brist for self-repair, brettet dekket av andre kilder); scout quiet hele dagen t.o.m. 11:17Z (cap 0/2, ren overgangs-/preview-støy — Enzo/Romero/Bezos/Community Shield). VIKTIGSTE FUNN — EWC-SJAKKFINALE-DUBLETT + TIDSFEIL (Carlsens finale er ukas største norske «når», i dag lør. 15. aug): (a) tavla viste finalen TO ganger med sprikende tid — den statiske Liquipedia-fetcheren boardet «Grand Final … | Playoffs» 13.30 UTC (15.30 CEST, tom streaming, maskintittel), mens morgenkjøringens ai-research-event sto 14.30 UTC (16.30 CEST, Wikipedia). Egen web-fact-check (WebSearch + chess.com + forsøkt Liquipedia): TO uavhengige kilder (Liquipedias bracket + Gamereactor) = 15.30 CEST mot Wikipedias 16.30 (minoritet). Ai-research-eventen flyttet til 13.30 UTC + summary/provenance korrigert; kollapser nå via build-events' venue-match (begge «Paris») → statisk plassholder droppet, berikede eventen (begge spillere + chess.com-strøm) står alene. (b) FETCHER-FEIL STÅR (self-repair, re-flagget): statisk «3rd Place Match»-node (11.00 UTC) tilordner fortsatt Magnus Carlsen — bronsen er Nakamura–Firouzja; esports.js/Liquipedia-parseren tilordner feil spiller til bronse-noden. OPPRYDNING: prunet 26 foreldede ai-research-events (endTime < nå: BLAST Bounty 1.–2. aug, Tour de Pologne/DL-Suisse-etapper, ferdigspilte norske europakvalik/OBOS-kamper t.o.m. 14. aug, UEFA Super Cup, Arctic Race etappe 1–2) — de hadde hopet seg opp uprunet og validate-events hard-feilet på «Past event found» (BLAST 1. aug). Kjørte build-events lokalt (deterministisk, ingen ny fetch siden 12:31Z-pipelinen) → 104 → 77 events, kollaps + prune bekreftet. RECONCILE (Step 1): alle catalog.tier2 + tier1-i-sesong dekket; INGEN utløpte tracked-entries (alle expires ≥ 15. aug). HORISONT-SCAN (Step 2.6): INGEN nye katalog-kandidater innen ~4 uker; Norge Nations League vs Danmark 24. sep + Portugal 27. sep re-notert horisont-nærmende (>4 uker, ikke promotert). 0 demand[]. Ikke deep-tier (lørdag ≠ mandag) → ingen registry-reconsiliering (Step 2.8). VEDVARENDE (self-repair/verify, uendret): (1) ita.1/ger.1 i ESPN-fetcheren; (2) esports.js sjakk-Liquipedia-parser: feil bronse-spiller + maskintitler + tom streaming[] + rain/streaming-berikelse; (3) tennis.json stale-retained (67 kjøringer) — self-repair; (4) verify fester de 3 UECL/EL-playoff + 4 CL-playoff-tidene mot UEFA/klubb-primærkilde når publisert; (5) coverage/self-repair bekreft eng.1/nor.1 fyller PL r1 + Eliteserien r19 innen ~18.–26. aug. validate-events.js: 77 events, 0 errors (kun forventede WP-242/246/timezone-warnings). Grader spunnet på de materielle endringene.",
     "Kjøring 2026-08-14T05:55Z (fre. ~07.55 CEST, standard-tier Opus) — VERIFISERT BOARD-NO-OP + 3 NORSK-EUROPACUP-MOTSTANDERE AVGJORT (tracked-oppdatering, ingen board-event). eventsAdded: 0, eventsRemoved: 0, eventsAmended: 0. trackedRenamed: tromso-conference-league-qualifying-2026-27 → tromso-conference-league-playoff-2026-27 (Tromsø slo CFR Cluj 7–1 agg 13. aug, videre til UECL-playoff). trackedResolved (motstander bekreftet, alle FORTSATT holdt av tavla — avsparkstider TBA): Brann UECL-playoff → PAOK Thessaloniki (borte 20. + hjemme 27. aug); Lillestrøm EL-playoff → KF Egnatia (SNUDD fra Shamrock Rovers, som tapte 4–6 agg; borte 20. + hjemme Åråsen 27. aug); Tromsø UECL-playoff → Brighton (HJEMME først 20. + borte 27. aug, motsatt leg-rekkefølge). Alle tre bekreftet mot RSSSF Norge (rsssf.no/2026/Ecup.html) + resultatkilder (ESPN/Irish Times/RTÉ). Norsk kanal for alle tre = Viaplay per UECL/EL-pakken (norwegian-rights [solid]), men tidlig-kvalik-sublisens (VG TV/Direktesport/lokal) mulig → verify bekrefter per kamp før streaming stemples. TILSTAND VED START: forrige research 2026-08-13T02:55Z (~27t siden, gradert 96 — verifisert no-op + prune); coverage-audit 05:00Z (13. aug) = INGEN high-hull (to MEDIUM vindu-etterslep-hull: Eliteserien r19 29.–30. aug + PL r1 ikke-katalog-kamper — begge forventet fylt mekanisk av ESPN nor.1/eng.1 ~18.–26. aug → research skal IKKE håndfylle wholesale, duplikat-risiko; self-repair/coverage vokter); coverage-gaps 22:24Z = 4 entity-gaps ALLE imminent:false (Barça/Barca/Bundesliga = overgangs-/kvinnefotball-støy, Europa League = Rangers-utslag) → ren nyhetsstøy, triagert; scout quiet hele kvelden t.o.m. 21:28Z (cap 0/2, ren overgangs-/karriere-støy — Lægreid/Kjartansson/Børkeeiet). Tavla godt dekket (103 events, 83 ai-research). FAN-OUT: 2 parallelle web-scouts (norsk europacup-playoff-motstandere + imminent/horisont-sveip) proporsjonalt til fersk, rolig tilstand. FUNN & HANDLING: (1) DE TRE EUROPACUP-MOTSTANDERNE (over) — eneste materielle tilstandsendring; alle holdt av tavla (avsparkstider TBA = manglende event > oppdiktet tid). Viking (Dinamo Zagreb 18.+26.) + Glimt (NEC Nijmegen 19.+25.) CL-playoff RE-BEKREFTET korrekte, TV 2 Play bekreftet. (2) JÆGER 400 m-FINALE TIDS-DISKREPANS RE-DUKKET OPP, IKKE FULGT: en scout hevdet (VG-program + marathonhandbook) finalen er lør. 15. aug 21.10 CEST (20.10 BST), ~40 min tidligere enn tavlas 21.50 CEST. Men forrige kjøring (13. aug) fact-sjekket nettopp denne tiden DIREKTE mot Wikipedias dedikerte 400 m-øvelsesside (offisiell rundetimeplan, 20.50 BST = 21.50 CEST/19.50 UTC) og AVVISTE eksakt 21.10-VG-lesningen som avvikende — samme adjudisering gjentas her: en fersk 2-kilders scout-lesning veier ikke tyngre enn den utpekte offisielle timeplanen, og å flippe tilbake ville gjeninnføre nettopp feilen forrige kjøring forkastet. HOLDT (21.50 står), FLAGGET FOR VERIFY (priorConfirmed) — verify kjører lør. 05:30 UTC, god margin før finalen lør. kveld. En feil tid er verre enn å holde den alt-fact-sjekkede. Warholm 400 mH-finale (i dag fre. 14. aug 21.40 CEST/19.40 UTC) RE-BEKREFTET korrekt. (3) CS2 100T vs PARIVISION (nedre bracket, i dag 14. aug 16.50 UTC) bekreftet, står via statisk fetcher — ingen dublett. Carlsen EWC-sjakk-QF (14.–15. aug, vs Nihal Sarin) dekket av statisk esports/Liquipedia-fetcher. (4) Arctic Race etappe 4 (16. aug, TV 2 Play), Vuelta (fra 22. aug, HBO Max bekreftet i tracked), FedEx/Hovland, Ruud/Cincinnati alle uendret/korrekte. RECONCILE (Step 1): alle catalog.tier2 + tier1-i-sesong dekket; ingen ferdigspilte tracked-entries å prune utover Tromsø-kvalik-renavningen (bodo-glimt/uefa-super-cup prunet tidligere). HORISONT-SCAN (Step 2.6): INGEN nye katalog-kandidater innen ~4 uker. Norge Nations League vs Danmark 24. sep + Portugal 27. sep (Ullevaal, ~6 uker ut, høy Haaland-interesse) RE-NOTERT som horisont-nærmende — utenfor 4-ukersvinduet, ikke promotert/boardet ennå (vaktes til neste horisont-runde; kanal TV 2 [verify]). 0 demand[]. Ikke deep-tier (fredag) → ingen registry-reconsiliering (Step 2.8). VEDVARENDE (self-repair/verify, uendret): (1) ita.1/ger.1 i ESPN-fetcheren; (2) esports.js rain/streaming-berikelse + sjakk-EWC-maskintittel/tom streaming[]; (3) europakvalik streaming-sublisens-verifisering (de 3 nye playoff-tie-ene); (4) verify fester de 3 UECL/EL-playoff-tidene + de 4 CL-playoff-tidene mot UEFA/klubb-primærkilde når publisert; (5) coverage/self-repair bekreft at eng.1/nor.1 fyller PL r1 + Eliteserien r19 innen ~18.–26. aug. Ingen streaming[] rørt. validate-events.js: 103 events, 0 errors (kun forventede WP-242/246/timezone-warnings). Pure board-no-op → ingen ny grader spunnet på uendrede event-outputs (siste graderte tilstand 96 står, transparent loggført i research-log quality).",
     "Kjøring 2026-08-13T02:55Z (tor. ~04.55 CEST, standard-tier Opus) — VERIFISERT NO-OP FOR BRETTET + 1 PRUNE + SCOUT-KORREKSJON AVVIST MOT AUTORITATIV KILDE. eventsAdded: 0, eventsRemoved: 0, eventsAmended: 0. trackedPruned: uefa-super-cup-2026 (PSG 2–1 Aston Villa 12. aug ferdigspilt, exp 13. aug — eventet er nå fortid; scout-loggen bekreftet sluttresultatet). trackedEnriched: esports-world-cup-2026-chess (Carlsen VIDERE til EWC-sjakk-playoff 14.–15. aug — slo Esipenko+Niemann i Gruppe B; hans konkrete kamp dekkes nå av statisk esports/Liquipedia-fetcher, event 953109bd660e navngir ham) + havard-rain-nygaard (100T TAPTE åpningskampen 0–1 mot Vitality på Nuke 13–4, falt til nedre bracket; nedre-bracket-kamp 13. aug motstander/tid upublisert). VIKTIGSTE VERIFISERING: EM-FINALETIDENE HOLDT MOT SCOUT-KORREKSJON. En scout hevdet (VG-program) at Jægers 400 m-finale er 21.10 CEST og Guttormsens stavsprang-finale 20.55 CEST — men direkte write-time fact-check mot Wikipedias dedikerte øvelsessider (offisiell timeplan, alle tider BST=UTC+1) bekreftet at BRETTET ALLEREDE ER KORREKT: Jæger 400 m-finale lør. 15. aug 20.50 BST = 21.50 CEST (19.50 UTC) og Guttormsen stavsprang-finale søn. 16. aug 19.30 BST = 20.30 CEST (18.30 UTC), stavsprang-kval 14. aug 11.05 BST = 12.05 CEST. Scoutens VG-lesninger (21.10 / 20.55) er de avvikende; ingen amendering gjort (ikke blindt fulgt scouten — en feil tid er verre enn ingen). Warholms 400 mH-finale (14. aug 21.40 CEST) uendret/korrekt. TILSTAND VED START: forrige research 2026-08-12T13:47Z (~13t siden, gradert 96 — EM-finale-surfacing + kvalik→playoff-reconcile); coverage-audit 05:37Z (12. aug) = INGEN high-hull (ett MEDIUM: PL r1 21.–24. aug delvis bordet 3/10 katalog-lag — rotårsak ESPN eng.1 vindu-etterslep → research skal IKKE håndfylle wholesale, fetcher fyller mekanisk ~innen 18. aug; self-repair/coverage vokter); coverage-gaps 22:32Z = 2 entity-gaps (Liverpool + Champions League, begge én Guardian-overgangsrykte-sak = ren støy) + 0 anomalier; scout quiet hele kvelden t.o.m. 21:41Z (cap 0/2, ren overgangs-/resultat-/karriere-støy). Tavla godt dekket (108 events). FAN-OUT: 2 parallelle web-scouts (norsk imminent/europacup + CS2/sjakk/horisont) + 2 direkte Wikipedia-timeplan-fact-checks på EM-finaletidene. FUNN & HANDLING: (1) EM-finaletidene RE-VERIFISERT korrekte (over) — eneste materielle korrekthets-sjekk. (2) Tromsø–CFR Cluj UECL-retur RE-BEKREFTET i kveld 13. aug 17.00 UTC (Alfheim) — korrekt på tavla; Direktesport-kanal rapportert (ikke primærbekreftet, uendret). (3) Brann (UECL-playoff) + Lillestrøm (EL-playoff): motstanderne AVGJØRES FØRST av 2.-leggene i kveld 13. aug (PAOK–Anderlecht / Shamrock–Egnatia) → fortsatt ikke berambare; plassholdere står. (4) CS2 100T tapte Vitality → nedre bracket, ingen berammbar neste kamp (fetcher eier «100T vs PV» 14. aug). (5) Carlsen videre til EWC-sjakk-playoff (dekket av statisk fetcher). (6) Arctic Race (4 etapper), Hovland (FedEx St. Jude, 23. i FedExCup, teet av), Ruud (Cincinnati, 11.-seed m/bye) alle uendret/korrekte. RECONCILE (Step 1): alle catalog.tier2 + tier1-i-sesong dekket; prunet den ene ferdigspilte super-cup-entryen. HORISONT-SCAN (Step 2.6): INGEN nye katalog-kandidater innen ~4 uker (scout fant kun Tour of Britain 2.–6. sept — marginal norsk vinkel, kun hvis norsk rytter starter → vaktet, ikke promotert; GP Québec/Montréal 11./13. sept utenfor vinduet, allerede notert). 0 demand[]. Ikke deep-tier (torsdag) → ingen registry-reconsiliering (Step 2.8). VEDVARENDE (self-repair/verify, uendret): (1) ita.1/ger.1 i ESPN-fetcheren; (2) esports.js rain/streaming-berikelse + NYTT: sjakk-EWC-eventets maskintittel + tom streaming[]; (3) europakvalik streaming-revert-war; (4) verify fester de 4 CL-playoff-eventenes tid mot UEFA/klubb-primærkilde; (5) coverage/self-repair bekreft at eng.1 fyller PL r1 i football.json innen ~18. aug. Ingen streaming[] rørt. validate-events.js: 108 events, 0 errors (kun forventede WP-242/246/timezone-warnings). Pure board-no-op → ingen ny grader spunnet på uendrede event-outputs (siste graderte tilstand 96 står, transparent loggført i research-log quality).",

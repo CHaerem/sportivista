@@ -322,6 +322,17 @@
 				"note": "Touren setter kampprogrammet (atptour.com/wtatennis.com); den enkelte turneringens egen side (f.eks. swissopengstaad.ch) er likeverdig primær for sitt eget program. NB WP-246: ATPs vilkår § 4A forbyr dyplenking til undersider — tennis håndteres særskilt der."
 			},
 			"channel": { "options": [{ "sourceId": "tv2", "platform": "TV 2" }], "note": "TV 2 har ATP-rettighetene i Norge t.o.m. 2026; WTA/Grand Slam-rettigheter avviker (Discovery/Max) — verifiser per turnering." }
+		},
+		{
+			"id": "athletics:ultimate-championship",
+			"name": "World Athletics Ultimate Championship",
+			"sport": "athletics",
+			"match": ["ultimate championship"],
+			"time": {
+				"sourceIds": ["world-athletics"],
+				"note": "World Athletics arrangerer sesongfinalen; tidsskjemaet publiseres på worldathletics.org (National Athletics Centre, Budapest 2026)."
+			},
+			"channel": { "options": [{ "sourceId": "nrk", "platform": "NRK" }], "note": "NRK i Norge; internasjonale rettigheter distribueres via Infront." }
 		}
 	]
 }
