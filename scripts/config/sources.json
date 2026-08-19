@@ -3343,6 +3343,44 @@
 			"rateLimit": "Ingen tallfestet grense i vilkårene eller UA-policyen. Krav: identifiserende User-Agent med kontaktinfo på formen `<klient>/<versjon> (<kontakt>) <bibliotek>/<versjon>` — generiske agenter («curl», «Python-urllib») er ikke tillatt."
 		},
 		{
+			"id": "world-athletics",
+			"name": "World Athletics",
+			"publisher": "World Athletics (IAAF)",
+			"url": "https://worldathletics.org",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"athletics:ultimate-championship",
+				"athletics:world-championships"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-08-19"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "vilkår/robots ennå ikke lest fra dette miljøet",
+				"evidence": [
+					"https://worldathletics.org/robots.txt"
+				],
+				"checkedAt": "2026-08-19"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"note": "ikke verifisert fra dette miljøet",
+				"checkedAt": "2026-08-19"
+			},
+			"notes": "Seedet 2026-08-19 (research): verdens friidrettsforbund — arrangør av World Athletics Ultimate Championship (Budapest 11.–13. sept 2026, boardet) og friidretts-VM; autoritativ på mesterskapenes tidsskjema. Internasjonale kringkastingsrettigheter distribueres via Infront (NRK i Norge). Vilkår ennå ikke lest."
+		},
+		{
 			"id": "world-of-speed",
 			"name": "worldofspeed.org",
 			"url": "https://worldofspeed.org",
@@ -3410,44 +3448,6 @@
 				"checkedAt": "2026-07-29"
 			},
 			"notes": "KANDIDAT. Motstykket til atp-tour på damesiden; dagens tennisdekning går via ESPN."
-		},
-		{
-			"id": "world-athletics",
-			"name": "World Athletics",
-			"publisher": "World Athletics (IAAF)",
-			"url": "https://worldathletics.org",
-			"role": "primary",
-			"status": "in-use",
-			"authorityFor": [
-				"athletics:ultimate-championship",
-				"athletics:world-championships"
-			],
-			"facts": [
-				"schedule",
-				"start-time",
-				"results",
-				"entry-list"
-			],
-			"terms": {
-				"automatedAccess": "unknown",
-				"basis": "not-found",
-				"attributionRequired": null,
-				"reviewedAt": "2026-08-19"
-			},
-			"tdmReservation": {
-				"status": "unknown",
-				"mechanism": "vilkår/robots ennå ikke lest fra dette miljøet",
-				"evidence": [
-					"https://worldathletics.org/robots.txt"
-				],
-				"checkedAt": "2026-08-19"
-			},
-			"robots": {
-				"allowsOurPaths": null,
-				"note": "ikke verifisert fra dette miljøet",
-				"checkedAt": "2026-08-19"
-			},
-			"notes": "Seedet 2026-08-19 (research): verdens friidrettsforbund — arrangør av World Athletics Ultimate Championship (Budapest 11.–13. sept 2026, boardet) og friidretts-VM; autoritativ på mesterskapenes tidsskjema. Internasjonale kringkastingsrettigheter distribueres via Infront (NRK i Norge). Vilkår ennå ikke lest."
 		}
 	]
 }
