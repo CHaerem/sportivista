@@ -2017,6 +2017,70 @@
     "homeTeamEntityId": "bodo-glimt-cl-playoff"
   },
   {
+    "sport": "esports",
+    "tournament": "BLAST Open Porto 2026",
+    "title": "BLAST Open Porto 2026 (Fall) – gruppespill",
+    "time": "2026-08-26T09:00:00Z",
+    "endTime": "2026-08-31T22:00:00Z",
+    "venue": "BLAST Studios, København",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "BLAST Premier (Twitch)",
+        "url": "https://twitch.tv/blastpremier",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-19T02:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "https://www.hltv.org/news/45128/blast-open-porto-teams-announced",
+      "https://www.hltv.org/news/45327/blast-open-porto-opening-matchups-set",
+      "https://blast.tv/cs/tournaments/open-2026-season-2"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "hltv",
+        "url": "https://www.hltv.org/news/45327/blast-open-porto-opening-matchups-set",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-19T02:15:00Z"
+      },
+      "streaming": {
+        "sourceId": "blast",
+        "url": "https://twitch.tv/blastpremier",
+        "basis": "primary",
+        "retrievedAt": "2026-08-19T02:15:00Z"
+      }
+    },
+    "summary": "BLAST Open Porto 2026 (Fall) — tier-1 CS2-turnering. Gruppespill 26.–31. august i BLAST Studios, København (16 lag, dobbel-elim, alle Bo3); sluttspill 4.–6. september i Super Bock Arena, Porto. Premiepott $1,1 mill.\n\nMinst sju katalog-lag i feltet: Team Vitality, NAVI, Team Falcons, Team Spirit, FURIA, G2 Esports og MOUZ. Åpningskampen er Aurora–G2 onsdag 26. aug kl. 11.00 CEST (09.00 UTC).\n\nIngen norsk vinkel (100 Thieves/rain er IKKE i feltet). Gratis på BLAST Premiers offisielle Twitch-strøm i Norge; ingen norsk TV-rettighet. Kamptider ut over åpningen ikke publisert ennå.",
+    "participants": [
+      {
+        "name": "Team Vitality"
+      },
+      {
+        "name": "Natus Vincere"
+      },
+      {
+        "name": "Team Falcons"
+      },
+      {
+        "name": "Team Spirit"
+      },
+      {
+        "name": "FURIA"
+      },
+      {
+        "name": "G2 Esports"
+      },
+      {
+        "name": "MOUZ"
+      }
+    ],
+    "id": "2778ea956a01"
+  },
+  {
     "sport": "handball",
     "tournament": "Elkjøp-ligaen 2026/27",
     "title": "Storhamar – Gjerpen (kvinner)",
@@ -2993,6 +3057,56 @@
     "id": "73287bff3c5b"
   },
   {
+    "sport": "athletics",
+    "tournament": "World Athletics Ultimate Championship",
+    "title": "World Athletics Ultimate Championship 2026 (Budapest)",
+    "time": "2026-09-11T17:00:00Z",
+    "endTime": "2026-09-13T21:00:00Z",
+    "venue": "National Athletics Centre, Budapest",
+    "norwegian": true,
+    "norwegianPlayers": [
+      {
+        "name": "Jakob Ingebrigtsen",
+        "entityId": "jakob-ingebrigtsen"
+      },
+      {
+        "name": "Karsten Warholm",
+        "entityId": "karsten-warholm"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-19T02:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "https://worldathletics.org/competitions/world-athletics-ultimate-championship/2026",
+      "https://en.wikipedia.org/wiki/2026_World_Athletics_Ultimate_Championship"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "world-athletics",
+        "url": "https://worldathletics.org/competitions/world-athletics-ultimate-championship/2026",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-19T02:15:00Z"
+      },
+      "streaming": {
+        "sourceId": "nrk",
+        "url": "https://tv.nrk.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-19T02:15:00Z"
+      }
+    },
+    "summary": "World Athletics Ultimate Championship — den aller første utgaven av World Athletics’ nye biennale sesongfinale, National Athletics Centre i Budapest 11.–13. september 2026. Premiepott ~$10 mill., verdenseliten samlet.\n\nNorsk vinkel: Jakob Ingebrigtsen er bekreftet kvalifisert (5000 m). Karsten Warholm ventes i 400 m hekk (sterk form etter EM-gull i Birmingham), men er ikke offisielt bekreftet på kvalifiseringslista ennå.\n\nNorsk visning: NRK (internasjonale rettigheter distribuert via Infront). Øktene starter fre. ~19.00 / lør.–søn. ~18.00 lokal (Budapest), men eksakte øvelses-starttider er ikke publisert; boardet på turneringsnivå — verify fester øktstider + deep NRK-url når arrangøren slipper timeplanen.",
+    "participants": [],
+    "id": "450ead7c284d"
+  },
+  {
     "sport": "f1",
     "tournament": "Formula 1 2026 - Race Weekend",
     "title": "Tag Heuer Spanish Grand Prix",
@@ -3019,112 +3133,5 @@
     "isFavorite": false,
     "round": null,
     "id": "66d4de2b2dff"
-  },
-  {
-    "sport": "esports",
-    "tournament": "BLAST Open Porto 2026",
-    "title": "BLAST Open Porto 2026 (Fall) – gruppespill",
-    "time": "2026-08-26T09:00:00Z",
-    "endTime": "2026-08-31T22:00:00Z",
-    "venue": "BLAST Studios, København",
-    "norwegian": false,
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "BLAST Premier (Twitch)",
-        "url": "https://twitch.tv/blastpremier"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-19T02:15:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "https://www.hltv.org/news/45128/blast-open-porto-teams-announced",
-      "https://www.hltv.org/news/45327/blast-open-porto-opening-matchups-set",
-      "https://blast.tv/cs/tournaments/open-2026-season-2"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "hltv",
-        "url": "https://www.hltv.org/news/45327/blast-open-porto-opening-matchups-set",
-        "basis": "secondary",
-        "retrievedAt": "2026-08-19T02:15:00Z"
-      },
-      "streaming": {
-        "sourceId": "blast",
-        "url": "https://twitch.tv/blastpremier",
-        "basis": "primary",
-        "retrievedAt": "2026-08-19T02:15:00Z"
-      }
-    },
-    "summary": "BLAST Open Porto 2026 (Fall) — tier-1 CS2-turnering. Gruppespill 26.–31. august i BLAST Studios, København (16 lag, dobbel-elim, alle Bo3); sluttspill 4.–6. september i Super Bock Arena, Porto. Premiepott $1,1 mill.\n\nMinst sju katalog-lag i feltet: Team Vitality, NAVI, Team Falcons, Team Spirit, FURIA, G2 Esports og MOUZ. Åpningskampen er Aurora–G2 onsdag 26. aug kl. 11.00 CEST (09.00 UTC).\n\nIngen norsk vinkel (100 Thieves/rain er IKKE i feltet). Gratis på BLAST Premiers offisielle Twitch-strøm i Norge; ingen norsk TV-rettighet. Kamptider ut over åpningen ikke publisert ennå.",
-    "participants": [
-      {
-        "name": "Team Vitality"
-      },
-      {
-        "name": "Natus Vincere"
-      },
-      {
-        "name": "Team Falcons"
-      },
-      {
-        "name": "Team Spirit"
-      },
-      {
-        "name": "FURIA"
-      },
-      {
-        "name": "G2 Esports"
-      },
-      {
-        "name": "MOUZ"
-      }
-    ]
-  },
-  {
-    "sport": "athletics",
-    "tournament": "World Athletics Ultimate Championship",
-    "title": "World Athletics Ultimate Championship 2026 (Budapest)",
-    "time": "2026-09-11T17:00:00Z",
-    "endTime": "2026-09-13T21:00:00Z",
-    "venue": "National Athletics Centre, Budapest",
-    "norwegian": true,
-    "norwegianPlayers": [
-      {
-        "name": "Jakob Ingebrigtsen"
-      },
-      {
-        "name": "Karsten Warholm"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/sport"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-19T02:15:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "https://worldathletics.org/competitions/world-athletics-ultimate-championship/2026",
-      "https://en.wikipedia.org/wiki/2026_World_Athletics_Ultimate_Championship"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "world-athletics",
-        "url": "https://worldathletics.org/competitions/world-athletics-ultimate-championship/2026",
-        "basis": "secondary",
-        "retrievedAt": "2026-08-19T02:15:00Z"
-      },
-      "streaming": {
-        "sourceId": "nrk",
-        "url": "https://tv.nrk.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-08-19T02:15:00Z"
-      }
-    },
-    "summary": "World Athletics Ultimate Championship — den aller første utgaven av World Athletics’ nye biennale sesongfinale, National Athletics Centre i Budapest 11.–13. september 2026. Premiepott ~$10 mill., verdenseliten samlet.\n\nNorsk vinkel: Jakob Ingebrigtsen er bekreftet kvalifisert (5000 m). Karsten Warholm ventes i 400 m hekk (sterk form etter EM-gull i Birmingham), men er ikke offisielt bekreftet på kvalifiseringslista ennå.\n\nNorsk visning: NRK (internasjonale rettigheter distribuert via Infront). Øktene starter fre. ~19.00 / lør.–søn. ~18.00 lokal (Budapest), men eksakte øvelses-starttider er ikke publisert; boardet på turneringsnivå — verify fester øktstider + deep NRK-url når arrangøren slipper timeplanen."
   }
 ]
