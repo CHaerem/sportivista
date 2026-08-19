@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-19T05:27:02.013Z",
+  "generatedAt": "2026-08-19T06:38:48.447Z",
   "windowDays": 180,
   "records": {
-    "used": 253,
+    "used": 257,
     "skipped": 0
   },
   "sources": {
@@ -1474,27 +1474,27 @@
       "reliability": null
     },
     "foxsports.com": {
-      "checks": 4,
-      "agreed": 4,
+      "checks": 5,
+      "agreed": 5,
       "corrections": 1,
       "bySport": {
         "football": {
-          "checks": 4,
-          "agreed": 4
+          "checks": 5,
+          "agreed": 5
         }
       },
       "byField": {
         "time": {
-          "checks": 3,
-          "agreed": 3
+          "checks": 4,
+          "agreed": 4
         },
         "existence": {
           "checks": 1,
           "agreed": 1
         }
       },
-      "lastChecked": "2026-08-07T06:45:00Z",
-      "reliability": null
+      "lastChecked": "2026-08-19T05:56:00Z",
+      "reliability": 1
     },
     "tickets.birmingham26.com": {
       "checks": 1,
@@ -2007,22 +2007,26 @@
       "reliability": null
     },
     "lavuelta.es": {
-      "checks": 1,
-      "agreed": 1,
-      "corrections": 0,
+      "checks": 3,
+      "agreed": 3,
+      "corrections": 1,
       "bySport": {
         "cycling": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 3,
+          "agreed": 3
         }
       },
       "byField": {
         "existence": {
+          "checks": 2,
+          "agreed": 2
+        },
+        "time": {
           "checks": 1,
           "agreed": 1
         }
       },
-      "lastChecked": "2026-08-16T05:55:00Z",
+      "lastChecked": "2026-08-19T05:56:00Z",
       "reliability": null
     },
     "legaseriea.it": {
@@ -2099,6 +2103,25 @@
         }
       },
       "lastChecked": "2026-08-17T05:59:00Z",
+      "reliability": null
+    },
+    "italiansoccerseriea.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "football": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "existence": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-19T05:56:00Z",
       "reliability": null
     }
   }
