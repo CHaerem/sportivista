@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T04:38:37.159Z",
+  "generatedAt": "2026-08-19T05:26:58.671Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -19,36 +19,22 @@
     ]
   },
   "coverage": {
-    "openGaps": 3,
+    "openGaps": 1,
     "bySeverity": {
       "high": 0,
-      "medium": 2,
-      "low": 1
+      "medium": 1,
+      "low": 0
     },
-    "oldestGapAgeDays": 5.99,
+    "oldestGapAgeDays": 6.02,
     "escalatable": 0,
-    "catalogMatched": 3,
-    "auditedAt": "2026-08-18T09:00:00Z",
+    "catalogMatched": 1,
+    "auditedAt": "2026-08-19T03:00:00Z",
     "gaps": [
-      {
-        "interest": "CS2 — BLAST Open Porto 2026 (Fall)",
-        "severity": "medium",
-        "ageDays": 0.82,
-        "recurrences": 0,
-        "catalogMatched": true
-      },
       {
         "interest": "Eliteserien — runde 19 (29.–30. aug)",
         "severity": "medium",
-        "ageDays": 5.99,
-        "recurrences": 1,
-        "catalogMatched": true
-      },
-      {
-        "interest": "Golf — BMW Championship: Kristoffer Reitan mangler i feltet",
-        "severity": "low",
-        "ageDays": 0.82,
-        "recurrences": 0,
+        "ageDays": 6.02,
+        "recurrences": 2,
         "catalogMatched": true
       }
     ]
@@ -165,26 +151,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-19T04:38:34.303Z",
+    "buildCheckedAt": "2026-08-19T05:26:55.351Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-19T02:10:41.950Z",
-    "manifestAgeHours": 2.47,
+    "manifestGeneratedAt": "2026-08-19T04:38:38.731Z",
+    "manifestAgeHours": 0.81,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
-        "ageHours": 108.85
-      },
-      {
-        "file": "tracked.json",
-        "sourceLastUpdated": "2026-08-15T16:55:00Z",
-        "ageHours": 83.73
+        "ageHours": 109.65
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-18T05:54:27Z",
-    "verifyAgeHours": 22.74,
+    "verifyAgeHours": 23.54,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
