@@ -1,17 +1,16 @@
 {
-	"runAt": "2026-08-18T07:17:13Z",
-	"action": "abandoned",
-	"pr": null,
-	"diagnosed": "SAME ONE real, current, recurring breakage as 2026-08-17 — still unfixed on main (grep -c allowed_bots .github/workflows/research-agent.yml = 0) and now persisting UNACTIONED across ≥2 self-repair runs. ESCALATION BOT-ACTOR: every `workflow_dispatch` research run FAILS while every `schedule` run succeeds. Re-verified live this run via `gh run list --workflow=research-agent.yml`: the last 5 `schedule` runs (08-17..08-18) are conclusion=success; the most recent `workflow_dispatch` (run 32014984391, 08-17T09:23) is conclusion=failure — and the prior dispatch failures 31935302839 (08-16), 31902818550 (08-15), 31833979342 (08-14) match. Each dies in ~1.2s at claude-code-action@v1 with '##[error]Action failed with error: Workflow initiated by non-human actor: github-actions (type: Bot). Add bot to allowed_bots list or use \\'*\\' to allow all bots.' Root cause is definitive and downstream of the WP-91 dispatch fix: scout/coverage-critic escalations run scripts/escalate-research.js → `gh workflow run research-agent.yml -f tier=deep` with the job's real GITHUB_TOKEN (actor = github-actions bot); the three claude-code-action@v1 steps in research-agent.yml carry no `allowed_bots`, so the action aborts BEFORE any research. Confirmed the action's own action.yml@9d7150b input contract: `allowed_bots` = 'Comma-separated list of allowed bot usernames, or \\'*\\'. Empty string (default) allows no bots.' The `gh workflow run` dispatch itself returns 0 (escalate-research.js is healthy); the rejection is INSIDE the dispatched run, so there is NO non-protected fix.",
-	"fixed": [],
-	"autoMergeEligible": false,
+	"runAt": "2026-08-19T07:17:00Z",
+	"action": "opened-pr",
+	"pr": "https://github.com/CHaerem/sportivista/pull/439",
+	"diagnosed": "web-tests CI gate red (run 32207548666) + 2 failing determinism tests: sources-schema and authority-schema both assert their arrays are id-sorted. WP-241/242 appended world-athletics (sources.json) and athletics:ultimate-championship (authority.json) at the end of their arrays instead of in sorted position.",
+	"fixed": [
+		"scripts/config/sources.json — moved world-athletics into id-sorted position (canonical tab-JSON re-serialised via sort)",
+		"scripts/config/authority.json — moved athletics:ultimate-championship into id-sorted position (textual block move to preserve inline-object style)"
+	],
+	"autoMergeEligible": true,
 	"notes": [
-		"NO PR OPENED — the only correct fix is authorable solely by a human. It lands in `.github/workflows/research-agent.yml` (a protected automation path); the protect-automation.js PreToolUse hook BLOCKED the Edit this run too ('BLOCKED by hook: … A human must author changes to these files' — CI-only hook, CI=true/GITHUB_ACTIONS=true confirmed). I did NOT circumvent it (no `gh api` contents PUT, no `git apply`/patch/redirect bypass) — that is exactly the threat the hook defends against. The hook's own comment states it deliberately overrides the self-fixing loops' 'still make the protected fix' guidance: 'a protected-path change must be authored by a human, not any unattended agent.'",
-		"READY-TO-APPLY PATCH (for a human): in .github/workflows/research-agent.yml, add `allowed_bots: \"github-actions\"` to the `with:` block of ALL THREE claude-code-action@v1 steps — Opus 4.8 standard (~line 79), Fable 5 deep (~line 102), and Opus 4.8 deep fallback (~line 130). Scope to `github-actions` (our own bot), NOT `*` — on a PUBLIC repo the action's docs warn `*` lets external Apps invoke it with attacker-controlled prompts. Protected-path change → waits for review, never auto-merges. No test pins `allowed_bots`; `npm test` stays green.",
-		"WHY IT MATTERS: with escalation dead, scout (RSS/coverage-gap triage) and coverage-critic (recall audit) can DECIDE to pull the deep-tier research fast-lane but the pull is silently dropped — the run IS created, then fails inside the action, so escalate-research.js's `escalation-failed` issue is NOT raised (it only fires when the `gh workflow run` DISPATCH fails, which it doesn't). Coverage gaps they spot only get picked up on the next 4-hourly scheduled research run, not on demand. This is a silent regression at exactly the layer below the one WP-91 hardened.",
-		"PERSISTENCE ALERT: this is the SECOND consecutive self-repair run to diagnose+abandon this same break (prior run 2026-08-17). It needs a human to land the one-line-per-step patch above; it will keep recurring on every escalation until then.",
-		"NON-BUGS RULED OUT: the newest failure in `gh run list --status failure` is 'Scout agent' 32043808036 (08-17T15:55) — a TRANSIENT GitHub infra error (429/503 while downloading anthropics/claude-code-action tarball, 'Failed to download archive … after 3 attempts'), not our bug and not reproducible. Older Research/Scout/Editorial/Usage-monitor/iOS-Release failures (08-06 and earlier) are stale.",
-		"HEALTH CHECK GREEN otherwise: `npm test` 1376/1376 (81 files); `node scripts/validate-events.js` 0 errors (79 events; only the expected WP-242/WP-246 content warnings the research/verify agents own + a chess Sinquefield timezone-bleed note). usage-state.json green (session 6%, week 15% — not a quota skip). No open self-repair/ PR (only unrelated wp-242b PR #429 is open).",
-		"This log was written to the main working tree during a user-invoked run; it was NOT committed or pushed (hard constraint: never push to main; branch+PR only). The scheduled self-repair workflow's 'Commit run log' step is what normally persists this file."
+		"Pure block moves: no entries added or removed (94 sources, 34 competitions before and after).",
+		"Proof: previously-failing tests now pass; full npm test 1376/1376 green.",
+		"Neither file is a protected path, so PR #439 auto-merges once tests pass."
 	]
 }
