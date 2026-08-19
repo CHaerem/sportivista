@@ -141,9 +141,9 @@
     "norwegian": false,
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
+        "platform": "Viaplay",
+        "url": "https://www.tvkampen.com/kamp/atletico-madrid-mlaga-1922561",
+        "urlKind": "deep"
       }
     ],
     "participants": [],
@@ -1900,6 +1900,75 @@
     "awayTeamEntityId": "deportivo-la-coruna"
   },
   {
+    "sport": "tennis",
+    "tournament": "ATP/WTA Tour",
+    "title": "US Open",
+    "time": "2026-08-25T04:00:00.000Z",
+    "endTime": "2026-09-14T03:59:00.000Z",
+    "venue": "TBD",
+    "meta": "ATP/WTA Tour",
+    "norwegian": true,
+    "streaming": [
+      {
+        "platform": "Discovery+",
+        "url": "https://www.discoveryplus.no",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "Eurosport",
+        "url": "https://www.eurosport.no",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [
+      {
+        "name": "Casper Ruud",
+        "entityId": "casper-ruud"
+      }
+    ],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "a65424e46987",
+    "summary": "US Open 2026 - aarets siste Grand Slam, USTA Billie Jean King National Tennis Center i Flushing Meadows, New York (utendoers hardcourt).\n\nHovedtrekning soendag 30. august til soendag 13. september (kvalifisering/Fan Week fra 23. aug; herrefinale 13. sept). Casper Ruud ventes i hovedtrekningen etter oppkjoeringen i Montreal (1.-13. aug) og Cincinnati (13.-23. aug) - endelig paamelding/seeding ikke publisert ennaa.\n\nNorsk visning: HBO Max (Sport-tillegget) / Eurosport."
+  },
+  {
+    "sport": "football",
+    "tournament": "La Liga",
+    "title": "Real Betis at Valencia",
+    "time": "2026-08-25T19:00:00.000Z",
+    "endTime": null,
+    "venue": "Mestalla Stadium",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Valencia",
+    "awayTeam": "Real Betis",
+    "isFavorite": false,
+    "round": null,
+    "id": "943fb2786144",
+    "homeTeamEntityId": "valencia",
+    "awayTeamEntityId": "real-betis"
+  },
+  {
     "sport": "football",
     "tournament": "UEFA Champions League 2026/27 (playoff)",
     "title": "Bodø/Glimt – NEC Nijmegen",
@@ -2745,62 +2814,6 @@
         "note": "migrert mekanisk fra evidence (WP-242)"
       }
     }
-  },
-  {
-    "sport": "tennis",
-    "tournament": "US Open",
-    "title": "US Open 2026",
-    "time": "2026-08-30T15:00:00Z",
-    "endTime": "2026-09-13T22:00:00Z",
-    "venue": "USTA Billie Jean King National Tennis Center, Flushing Meadows, New York",
-    "norwegian": true,
-    "norwegianPlayers": [
-      {
-        "name": "Casper Ruud",
-        "entityId": "casper-ruud"
-      }
-    ],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "Discovery+",
-        "url": "https://www.discoveryplus.no",
-        "urlKind": "landing"
-      },
-      {
-        "platform": "Eurosport",
-        "url": "https://www.eurosport.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-03T07:50:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "catalog.json#tier2.athletes",
-      "https://www.flashscore.com/news/us-open-draw-schedule-and-all-you-need-to-know-about-the-final-grand-slam-of-the-season/tW3OzusS/",
-      "https://www.lta.org.uk/fan-zone/grand-slam/us-open/",
-      "https://www.hbomax.com/no/no/sports/tennis"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "atp-tour",
-        "url": "https://www.flashscore.com/news/us-open-draw-schedule-and-all-you-need-to-know-about-the-final-grand-slam-of-the-season/tW3OzusS/",
-        "basis": "secondary",
-        "retrievedAt": "2026-08-03T07:50:00Z",
-        "note": "usopen.org bot-blokkert ved henting; hovedtrekning 30. aug-13. sept (soendagsstart siden 2025) bekreftet mot Flashscore + LTA + HBO Max Norge. Turnerings-nivaa - Ruuds kamptider settes med trekningen. confidence:medium fordi primaerkilden (usopen.org) ikke ble naadd."
-      },
-      "streaming": {
-        "sourceId": "hbo-max",
-        "url": "https://www.hbomax.com/no/no/sports/tennis",
-        "basis": "official",
-        "retrievedAt": "2026-08-04T18:12:00Z",
-        "note": "WBD/Max har tre av fire Grand Slam i Norge (Australian Open, Roland-Garros, US Open); HBO Max Norges tennis-side lister US Open 2026 med direktesendinger fra 30. aug (Sport-tillegget) + Eurosport."
-      }
-    },
-    "summary": "US Open 2026 - aarets siste Grand Slam, USTA Billie Jean King National Tennis Center i Flushing Meadows, New York (utendoers hardcourt).\n\nHovedtrekning soendag 30. august til soendag 13. september (kvalifisering/Fan Week fra 23. aug; herrefinale 13. sept). Casper Ruud ventes i hovedtrekningen etter oppkjoeringen i Montreal (1.-13. aug) og Cincinnati (13.-23. aug) - endelig paamelding/seeding ikke publisert ennaa.\n\nNorsk visning: HBO Max (Sport-tillegget) / Eurosport.",
-    "id": "46c8a2ab56e5"
   },
   {
     "sport": "football",
