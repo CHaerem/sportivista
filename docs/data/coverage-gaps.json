@@ -1,8 +1,74 @@
 {
-  "generatedAt": "2026-08-19T17:23:56.409Z",
-  "gapCount": 4,
+  "generatedAt": "2026-08-19T18:30:15.401Z",
+  "gapCount": 10,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Rosenborg",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Rosenborg valgte ny styreleder",
+      "link": "https://www.nrk.no/sport/rosenborg-valgte-ny-styreleder-1.17995121",
+      "feed": "nrk-sport",
+      "matchCount": 3,
+      "detectedAt": "2026-08-19T18:30:14.222Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "RBK",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Bekreftet: Rosenborg kjøper Amin Chiakha – blir klubbens dyreste noen gang",
+      "link": "https://www.nrk.no/sport/bekreftet_-rosenborg-kjoper-amin-chiakha-_-blir-klubbens-dyreste-noen-gang-1.17994391",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-19T18:30:14.222Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Brann",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Knapp Vålerenga-seier over bunnlag",
+      "link": "https://www.nrk.no/sport/knapp-valerenga-seier-over-bunnlag-1.17995159",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-19T18:30:14.222Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Eliteserien",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Bekreftet: Rosenborg kjøper Amin Chiakha for rekordsum",
+      "link": "https://www.nrk.no/trondelag/rosenborg-kjoper-amin-chiakha-fra-fc-kobenhavn-1.17993142",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-19T18:30:14.222Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "1. divisjon",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Romerike Ravens trekkjer handballaget frå 1. divisjon",
+      "link": "https://www.nrk.no/sport/romerike-ravens-trekkjer-handballaget-fra-1.-divisjon-1.17994350",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-19T18:30:14.222Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Formel 1",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Formel 1-drama: Red Bull-stjerne mister VM-runde med skade",
+      "link": "https://www.nrk.no/sport/formel-1-drama_-red-bull-stjerne-mister-vm-runde-med-skade-1.17994261",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-19T18:30:14.222Z"
+    },
     {
       "kind": "tracked-claim",
       "entity": "Eliteserien",
@@ -13,7 +79,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "eliteserien-2026",
-      "detectedAt": "2026-08-19T17:23:56.218Z"
+      "detectedAt": "2026-08-19T18:30:15.187Z"
     },
     {
       "kind": "tracked-claim",
@@ -25,7 +91,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-19T17:23:56.218Z"
+      "detectedAt": "2026-08-19T18:30:15.187Z"
     },
     {
       "kind": "tracked-claim",
@@ -37,7 +103,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-19T17:23:56.218Z"
+      "detectedAt": "2026-08-19T18:30:15.187Z"
     },
     {
       "kind": "tracked-claim",
@@ -49,18 +115,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-19T17:23:56.218Z"
+      "detectedAt": "2026-08-19T18:30:15.187Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 95 consecutive run(s) — no fresh fetch in 5 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 95,
+      "detail": "docs/data/esports.json has been served from retention for 96 consecutive run(s) — no fresh fetch in 5 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 96,
       "staleDays": 5,
       "severity": "high",
-      "detectedAt": "2026-08-19T17:23:56.288Z"
+      "detectedAt": "2026-08-19T18:30:15.255Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
