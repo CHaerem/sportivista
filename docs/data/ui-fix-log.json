@@ -1,11 +1,12 @@
 {
-	"runAt": "2026-08-19T00:00:00Z",
+	"runAt": "2026-08-20T09:39:19Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"The only finding in visual-qa-log.json (checkedAt 2026-08-18T08:31:57Z) — the 375px 'Assistent' FAB overlapping the wrapped 'Abonner i kalender' footer link, ~16px horizontal / ~15.5px vertical — is ALREADY resolved in main. No new fix is needed.",
-		"Fix is live: docs/css/cards.css lines 506-508 add `@media (max-width:460px){ .site-footer{ padding-bottom: calc(76px + env(safe-area-inset-bottom,0px)); } }`, lifting the footer clear of the fixed FAB at end-of-scroll. Shipped by prior ui-fix run PR #438 (commit 2b9cdf3ab, confirmed an ancestor of HEAD).",
-		"The visual-qa-log is stale input for a loop already closed: it was captured at 08:31Z; the fix merged at 09:42Z the same day. No open ui-autofix PR exists. Opening another PR would stack a duplicate fix for a resolved finding and risk regressing a clean live site — so this run exits with no PR, per the prompt's conservative-abandon guidance."
+		"The only finding in visual-qa-log.json (checkedAt 2026-08-18T08:31:57Z) — the 375px 'Assistent' FAB overlapping the wrapped 'Abonner i kalender' footer link (~16px horizontal / ~15.5px vertical) — is ALREADY resolved in main. No new fix is needed.",
+		"Fix is live: docs/css/cards.css lines 506-508 add `@media (max-width:460px){ .site-footer{ padding-bottom: calc(76px + env(safe-area-inset-bottom,0px)); } }`, lifting the footer clear of the fixed FAB at end-of-scroll. Shipped by prior ui-fix PR (commit 2b9cdf3ab, confirmed an ancestor of HEAD).",
+		"Re-verified this run: screenshot at 375px full-page shows a calm single quiet column, cleanly wrapping match titles, and the footer links (Abonner i kalender / Merker og kilder / Personvern) intact and legible — no truncation, overflow, or FAB occlusion.",
+		"The visual-qa-log is stale input for a loop already closed (captured 08:31Z on 2026-08-18; the fix merged the same day). No open ui-autofix PR exists. Opening another PR would stack a duplicate fix for a resolved finding and risk regressing a clean live site — so this run exits with no PR, per the prompt's conservative-abandon guidance."
 	]
 }
