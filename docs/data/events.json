@@ -356,8 +356,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/sport/fotball/uefa-europa-league",
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no/video/407284/kf-egnatia-lillestrom",
         "urlKind": "deep"
       }
     ],
@@ -367,7 +367,8 @@
     "evidence": [
       "catalog.json#tier1",
       "https://www.rsssf.no/2026/Ecup.html",
-      "https://www.footmercato.net/live/5816963294151968254-egnatia-rrogozhine-vs-lillestrom"
+      "https://www.footmercato.net/live/5816963294151968254-egnatia-rrogozhine-vs-lillestrom",
+      "https://www.tvkampen.com/sport/fotball/egnatia-lillestrom-tv-20august/"
     ],
     "provenance": {
       "time": {
@@ -378,14 +379,14 @@
         "note": "Verify 17. aug: UEFA.com fortsatt 403 ved henting; avspark 19.00 CEST (17.00 UTC; Albania = CEST) bekreftet mot flere uavhengige kilder (t-online + Sportschau live-tickere + footmercato) - alle enige. Arena fortsatt TBC (Egnatia hjemme; kamp registrert som Egnatia Rrogozhinë - Lillestrøm, UEFA-kompatibel bane ikke offisielt bekreftet) - holder venue som «Albania» framfor å gjette."
       },
       "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no/sport/fotball/uefa-europa-league",
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no/video/407284/kf-egnatia-lillestrom",
         "basis": "official",
-        "retrievedAt": "2026-08-15T16:55:00Z",
-        "note": "Europa League = Viaplays eksklusive norske UEL-rettigheter; bortelegg gaar til hovedrettighetshaver (ingen norsk lokal-sublisens paa bortekamp)"
+        "retrievedAt": "2026-08-20T16:55:00Z",
+        "note": "KANAL-KORRIGERT 20. aug (research): IKKE Viaplay. tvkampen.com (norsk ground truth) melder «VG+ Sport sender Europa League-playoffen ... 19:00 norsk tid», og VG+ Sport/VGTV lister BEGGE legg (video 407284 borte + 406806 hjemme). VG holder altså hele Lillestrom-tie-en (fri-sublisens for norsk klubbs tidlig-kvalik) - den tidligere «bortelegg = Viaplay»-antakelsen var samme feil som Brann/Tromso hadde. Verify re-bekrefter."
       }
     },
-    "summary": "Lillestrøm SK spiller sitt første oppgjør i Europa League-playoffen — siste hinder før ligaspillet — borte mot albanske mestere Egnatia.\n\nEgnatia slo ut Shamrock Rovers i forrige runde. Returkampen spilles hjemme på Åråsen torsdag 27. august.\n\nAvspark torsdag 20. august kl. 19.00 CEST (17.00 UTC). Norsk visning: Viaplay.",
+    "summary": "Lillestrøm SK spiller sitt første oppgjør i Europa League-playoffen — siste hinder før ligaspillet — borte mot albanske mestere Egnatia.\n\nEgnatia slo ut Shamrock Rovers i forrige runde. Returkampen spilles hjemme på Åråsen torsdag 27. august.\n\nAvspark torsdag 20. august kl. 19.00 CEST (17.00 UTC). Norsk visning: VG+ Sport.",
     "awayTeamEntityId": "lillestrom-europa-league-playoff",
     "id": "8fe3eef86b03",
     "verifiedAt": "2026-08-17T05:59:00Z",
@@ -2515,9 +2516,9 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no/video/407391/bt-brann-paok-thessaloniki",
+        "urlKind": "deep"
       }
     ],
     "source": "ai-research",
@@ -2541,8 +2542,8 @@
         "sourceId": "vgtv",
         "url": "https://tv.vg.no/video/407391/bt-brann-paok-thessaloniki",
         "basis": "official",
-        "retrievedAt": "2026-08-20T05:05:00Z",
-        "note": "VG+ Sport/VGTV lister hjemmelegget (video 407391, kommentatorer Mads Bøyum + Fredrik Haugen). Fri-sublisens for norsk klubbs tidlig-kvalik — IKKE Viaplay."
+        "retrievedAt": "2026-08-20T16:55:00Z",
+        "note": "VG+ Sport/VGTV lister hjemmelegget (video 407391, kommentatorer Mads Bøyum + Fredrik Haugen). Fri-sublisens for norsk klubbs tidlig-kvalik — IKKE Viaplay. DISPLAY-BUG FIKSET 20. aug 16:55Z: selve streaming-feltet sto fortsatt paa «Viaplay» (landing) enda provenance sa VG+ Sport siden 05:05-kjoringen — feltet er naa synket til VG+ Sport med deep-lenken. Re-bekreftet mot VG-video-side + søk."
       }
     },
     "summary": "Brann tar imot PAOK i returoppgjøret i Conference League-playoffen på Brann Stadion — vinneren over to kamper går til ligaspillet.\n\nDet første oppgjøret ble spilt i Thessaloniki 20. august. Brann jakter en plass i Conference League-gruppespillet.\n\nAvspark torsdag 27. august kl. 19.00 CEST (17.00 UTC) på Brann Stadion, Bergen.",
@@ -2563,9 +2564,9 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no/video/406806/lillestrom-kf-egnatia",
+        "urlKind": "deep"
       }
     ],
     "source": "ai-research",
@@ -2587,13 +2588,13 @@
       },
       "streaming": {
         "sourceId": "vgtv",
-        "url": "https://tv.vg.no/",
+        "url": "https://tv.vg.no/video/406806/lillestrom-kf-egnatia",
         "basis": "official",
-        "retrievedAt": "2026-08-20T13:15:00Z",
-        "note": "VG+ Sport/VGTV: norsk klubbs HJEMME-kvalik har fri-sublisens (samme monster som Brann 407256/407391 + Tromso 406781) - ikke Viaplay (som holder bortelegget i Albania). Egen deep-lenke ikke publisert ennaa; verify bekrefter per kamp."
+        "retrievedAt": "2026-08-20T16:55:00Z",
+        "note": "VG+ Sport/VGTV: norsk klubbs HJEMME-kvalik har fri-sublisens (samme monster som Brann 407256/407391 + Tromso 406781) - ikke Viaplay. DEEP-LENKE NAA FUNNET 20. aug 16:55Z: VG lister hele Lillestrom-tie-en (video 407284 borte + 406806 hjemme), bekreftet mot tvkampen. Display-feltet synket fra «Viaplay» (landing) til VG+ Sport deep. Verify fester eksakt minutt."
       }
     },
-    "summary": "Lillestrøm tar imot albanske KF Egnatia i returoppgjøret i Europa League-playoffen på Åråsen — vinneren over to kamper går til ligaspillet.\n\nDet første oppgjøret ble spilt borte i Albania 20. august.\n\nAvspark torsdag 27. august kl. 19.00 CEST (17.00 UTC) på Åråsen Stadion, Lillestrøm.",
+    "summary": "Lillestrøm tar imot albanske KF Egnatia i returoppgjøret i Europa League-playoffen på Åråsen — vinneren over to kamper går til ligaspillet.\n\nDet første oppgjøret ble spilt borte i Albania 20. august.\n\nAvspark torsdag 27. august kl. 19.00 CEST (17.00 UTC) på Åråsen Stadion, Lillestrøm. Norsk visning: VG+ Sport.",
     "homeTeamEntityId": "lillestrom-europa-league-playoff",
     "id": "1270151c71fb"
   },
@@ -2680,11 +2681,11 @@
         "note": "UEFA.com (primaer TIME-autoritet) 403-blokkert ved henting; returkampen 27. aug kl. 20.30 CEST (18.30 UTC / 19.30 BST) fra tvkampen + britiske previews (19.30 BST) enige, men uvanlig slot -> medium. Verify fester eksakt minutt mot UEFA/klubb-primaerkilde."
       },
       "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://tv.vg.no/video/406781/tromso-brighton",
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
         "basis": "official",
-        "retrievedAt": "2026-08-20T13:15:00Z",
-        "note": "VG+ Sport/VGTV holder hele Tromso-tie-en (1. legg tv.vg.no/video/406781) - fri-sublisens for norsk klubbs tidlig-kvalik, ikke Viaplay. Egen deep-lenke for returkampen ennaa ikke publisert; verify fester den."
+        "retrievedAt": "2026-08-20T16:55:00Z",
+        "note": "KORRIGERT 20. aug 16:55Z: dette er BORTELEGGET (Amex, England). VGs fri-sublisens dekker Tromsos HJEMMEkamp (video 406781), IKKE bortereturen — den tidligere «VG holder hele tie-en»-antakelsen var over-rekkevidde for et bortelegg. Bortelegg gaar til hovedrettighetshaver: Viaplay har eksklusive norske UECL-rettigheter. Ingen VG-video funnet for returkampen. Verify bekrefter per kamp; UK-visning (Channel 5 e.l.) er irrelevant for norsk visning."
       }
     },
     "summary": "Tromsø IL spiller returoppgjøret i Conference League-playoffen borte mot Brighton & Hove Albion — vinneren over to kamper går til ligaspillet.\n\nDet første oppgjøret ble spilt hjemme på Romssa Arena 20. august. Brighton fra Premier League er klar favoritt.\n\nAvspark torsdag 27. august kl. 20.30 CEST (18.30 UTC) på American Express Stadium, Falmer.",
