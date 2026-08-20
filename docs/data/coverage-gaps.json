@@ -1,41 +1,8 @@
 {
-  "generatedAt": "2026-08-20T12:41:22.022Z",
-  "gapCount": 7,
+  "generatedAt": "2026-08-20T13:43:42.785Z",
+  "gapCount": 4,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Eliteserien",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Skadesjokk: Ute resten av sesongen",
-      "link": "https://www.tv2.no/a/19143373",
-      "feed": "tv2-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-20T12:41:21.110Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Mesterligaen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "– De er på stø kurs mot Mesterligaen",
-      "link": "https://www.tv2.no/a/19143985",
-      "feed": "tv2-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-20T12:41:21.110Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Formel 1",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Formel 1: Rykteflommen over – Max Verstappen signerte ny lang kontrakt med Red Bull",
-      "link": "https://www.tv2.no/a/19145545",
-      "feed": "tv2-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-20T12:41:21.110Z"
-    },
     {
       "kind": "tracked-claim",
       "entity": "Eliteserien",
@@ -46,7 +13,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "eliteserien-2026",
-      "detectedAt": "2026-08-20T12:41:21.804Z"
+      "detectedAt": "2026-08-20T13:43:42.595Z"
     },
     {
       "kind": "tracked-claim",
@@ -58,7 +25,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-20T12:41:21.804Z"
+      "detectedAt": "2026-08-20T13:43:42.595Z"
     },
     {
       "kind": "tracked-claim",
@@ -70,7 +37,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-20T12:41:21.804Z"
+      "detectedAt": "2026-08-20T13:43:42.595Z"
     },
     {
       "kind": "tracked-claim",
@@ -82,18 +49,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-20T12:41:21.804Z"
+      "detectedAt": "2026-08-20T13:43:42.595Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 109 consecutive run(s) — no fresh fetch in 5 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 109,
+      "detail": "docs/data/esports.json has been served from retention for 110 consecutive run(s) — no fresh fetch in 5 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 110,
       "staleDays": 5,
       "severity": "high",
-      "detectedAt": "2026-08-20T12:41:21.864Z"
+      "detectedAt": "2026-08-20T13:43:42.657Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
