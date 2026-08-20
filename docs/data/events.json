@@ -398,6 +398,55 @@
   },
   {
     "sport": "football",
+    "tournament": "UEFA Conference League 2026/27 (playoff)",
+    "title": "PAOK – Brann",
+    "time": "2026-08-20T17:45:00Z",
+    "endTime": null,
+    "venue": "Toumba Stadion, Thessaloniki",
+    "norwegian": true,
+    "homeTeam": "PAOK",
+    "awayTeam": "Brann",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-20T05:05:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.espn.com/soccer/match/_/gameId/401910987/sk-brann-paok",
+      "https://forums.phantis.com/topic/17330-ecl-po-l1-paok-sk-brann-200826-2045-eest",
+      "https://tv.vg.no/video/407256/paok-thessaloniki-brann",
+      "https://www.rsssf.no/2026/Ecup.html"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.espn.com/soccer/match/_/gameId/401910987/sk-brann-paok",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-20T05:05:00Z",
+        "note": "UEFA-kampside 2049259 (primær TIME-autoritet) ga 403/503 ved henting; avspark 17.45 UTC = 20.45 EEST = 19.45 CEST bekreftet mot ESPN + Fotmob + Sofascore + phantis-forum (lokal EEST) + uavhengig write-time fact-check (alle enige). Verify fester mot UEFA/klubb-primærkilde."
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no/video/407256/paok-thessaloniki-brann",
+        "basis": "official",
+        "retrievedAt": "2026-08-20T05:05:00Z",
+        "note": "IKKE Viaplay: norsk klubbs tidlig-kvalik har fri-sublisens — VG+ Sport/VGTV lister begge legg (video 407256 borte + 407391 hjemme). norwegian-rights-prioren holdt."
+      }
+    },
+    "summary": "Brann spiller det første oppgjøret i Conference League-playoffen borte mot greske PAOK på Toumba — siste hinder før ligaspillet.\n\nBrann er klar for playoffen etter å ha slått Apollon Limassol i forrige runde. PAOK falt ned fra Europa League-kvalifiseringen (tapte mot Anderlecht) og er tung motstand på et beryktet bortebanehelvete.\n\nAvspark torsdag 20. august kl. 19.45 CEST (17.45 UTC / 20.45 EEST lokal) på Toumba Stadion, Thessaloniki. Returkampen spilles hjemme på Brann Stadion torsdag 27. august.",
+    "id": "8da2e107a3ee",
+    "awayTeamEntityId": "brann-conference-league-playoff"
+  },
+  {
+    "sport": "football",
     "tournament": "La Liga",
     "title": "Alavés at Rayo Vallecano",
     "time": "2026-08-20T19:00:00.000Z",
@@ -2279,6 +2328,54 @@
     "id": "653de2a91f03"
   },
   {
+    "sport": "football",
+    "tournament": "UEFA Conference League 2026/27 (playoff)",
+    "title": "Brann – PAOK",
+    "time": "2026-08-27T17:00:00Z",
+    "endTime": null,
+    "venue": "Brann Stadion, Bergen",
+    "norwegian": true,
+    "homeTeam": "Brann",
+    "awayTeam": "PAOK",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-20T05:05:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.beinsports.com/en-us/soccer/uefa-conference-league/brann-vs-paok-2026-08-27",
+      "https://tv.vg.no/video/407391/bt-brann-paok-thessaloniki",
+      "https://www.rsssf.no/2026/Ecup.html"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.beinsports.com/en-us/soccer/uefa-conference-league/brann-vs-paok-2026-08-27",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-20T05:05:00Z",
+        "note": "UEFA (primær TIME-autoritet) utilgjengelig ved henting; returkampen 27. aug kl. 19.00 CEST (17.00 UTC) bekreftet mot beIN + FOX + billett-lister + uavhengig write-time fact-check. Verify fester eksakt minutt mot UEFA/klubb-primærkilde."
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no/video/407391/bt-brann-paok-thessaloniki",
+        "basis": "official",
+        "retrievedAt": "2026-08-20T05:05:00Z",
+        "note": "VG+ Sport/VGTV lister hjemmelegget (video 407391, kommentatorer Mads Bøyum + Fredrik Haugen). Fri-sublisens for norsk klubbs tidlig-kvalik — IKKE Viaplay."
+      }
+    },
+    "summary": "Brann tar imot PAOK i returoppgjøret i Conference League-playoffen på Brann Stadion — vinneren over to kamper går til ligaspillet.\n\nDet første oppgjøret ble spilt i Thessaloniki 20. august. Brann jakter en plass i Conference League-gruppespillet.\n\nAvspark torsdag 27. august kl. 19.00 CEST (17.00 UTC) på Brann Stadion, Bergen.",
+    "id": "e7958bedd048",
+    "homeTeamEntityId": "brann-conference-league-playoff"
+  },
+  {
     "sport": "athletics",
     "tournament": "Wanda Diamond League",
     "title": "Weltklasse Zürich",
@@ -3091,100 +3188,5 @@
     "isFavorite": false,
     "round": null,
     "id": "66d4de2b2dff"
-  },
-  {
-    "sport": "football",
-    "tournament": "UEFA Conference League 2026/27 (playoff)",
-    "title": "PAOK – Brann",
-    "time": "2026-08-20T17:45:00Z",
-    "endTime": null,
-    "venue": "Toumba Stadion, Thessaloniki",
-    "norwegian": true,
-    "homeTeam": "PAOK",
-    "awayTeam": "Brann",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://tv.vg.no/video/407256/paok-thessaloniki-brann",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-20T05:05:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://www.espn.com/soccer/match/_/gameId/401910987/sk-brann-paok",
-      "https://forums.phantis.com/topic/17330-ecl-po-l1-paok-sk-brann-200826-2045-eest",
-      "https://tv.vg.no/video/407256/paok-thessaloniki-brann",
-      "https://www.rsssf.no/2026/Ecup.html"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.espn.com/soccer/match/_/gameId/401910987/sk-brann-paok",
-        "basis": "secondary",
-        "retrievedAt": "2026-08-20T05:05:00Z",
-        "note": "UEFA-kampside 2049259 (primær TIME-autoritet) ga 403/503 ved henting; avspark 17.45 UTC = 20.45 EEST = 19.45 CEST bekreftet mot ESPN + Fotmob + Sofascore + phantis-forum (lokal EEST) + uavhengig write-time fact-check (alle enige). Verify fester mot UEFA/klubb-primærkilde."
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://tv.vg.no/video/407256/paok-thessaloniki-brann",
-        "basis": "official",
-        "retrievedAt": "2026-08-20T05:05:00Z",
-        "note": "IKKE Viaplay: norsk klubbs tidlig-kvalik har fri-sublisens — VG+ Sport/VGTV lister begge legg (video 407256 borte + 407391 hjemme). norwegian-rights-prioren holdt."
-      }
-    },
-    "summary": "Brann spiller det første oppgjøret i Conference League-playoffen borte mot greske PAOK på Toumba — siste hinder før ligaspillet.\n\nBrann er klar for playoffen etter å ha slått Apollon Limassol i forrige runde. PAOK falt ned fra Europa League-kvalifiseringen (tapte mot Anderlecht) og er tung motstand på et beryktet bortebanehelvete.\n\nAvspark torsdag 20. august kl. 19.45 CEST (17.45 UTC / 20.45 EEST lokal) på Toumba Stadion, Thessaloniki. Returkampen spilles hjemme på Brann Stadion torsdag 27. august.",
-    "id": "8da2e107a3ee"
-  },
-  {
-    "sport": "football",
-    "tournament": "UEFA Conference League 2026/27 (playoff)",
-    "title": "Brann – PAOK",
-    "time": "2026-08-27T17:00:00Z",
-    "endTime": null,
-    "venue": "Brann Stadion, Bergen",
-    "norwegian": true,
-    "homeTeam": "Brann",
-    "awayTeam": "PAOK",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://tv.vg.no/video/407391/bt-brann-paok-thessaloniki",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-20T05:05:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://www.beinsports.com/en-us/soccer/uefa-conference-league/brann-vs-paok-2026-08-27",
-      "https://tv.vg.no/video/407391/bt-brann-paok-thessaloniki",
-      "https://www.rsssf.no/2026/Ecup.html"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.beinsports.com/en-us/soccer/uefa-conference-league/brann-vs-paok-2026-08-27",
-        "basis": "secondary",
-        "retrievedAt": "2026-08-20T05:05:00Z",
-        "note": "UEFA (primær TIME-autoritet) utilgjengelig ved henting; returkampen 27. aug kl. 19.00 CEST (17.00 UTC) bekreftet mot beIN + FOX + billett-lister + uavhengig write-time fact-check. Verify fester eksakt minutt mot UEFA/klubb-primærkilde."
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://tv.vg.no/video/407391/bt-brann-paok-thessaloniki",
-        "basis": "official",
-        "retrievedAt": "2026-08-20T05:05:00Z",
-        "note": "VG+ Sport/VGTV lister hjemmelegget (video 407391, kommentatorer Mads Bøyum + Fredrik Haugen). Fri-sublisens for norsk klubbs tidlig-kvalik — IKKE Viaplay."
-      }
-    },
-    "summary": "Brann tar imot PAOK i returoppgjøret i Conference League-playoffen på Brann Stadion — vinneren over to kamper går til ligaspillet.\n\nDet første oppgjøret ble spilt i Thessaloniki 20. august. Brann jakter en plass i Conference League-gruppespillet.\n\nAvspark torsdag 27. august kl. 19.00 CEST (17.00 UTC) på Brann Stadion, Bergen.",
-    "id": "e7958bedd048"
   }
 ]

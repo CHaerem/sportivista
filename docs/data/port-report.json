@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-20T04:40:26.426Z",
+  "generatedAt": "2026-08-20T05:27:21.989Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "yellow",
+    "coverage": "red",
     "amendRate": "yellow",
     "silentStops": "yellow",
     "participantStatus": "green"
@@ -19,22 +19,29 @@
     ]
   },
   "coverage": {
-    "openGaps": 1,
+    "openGaps": 2,
     "bySeverity": {
-      "high": 0,
+      "high": 1,
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 6.99,
-    "escalatable": 0,
-    "catalogMatched": 1,
-    "auditedAt": "2026-08-19T03:00:00Z",
+    "oldestGapAgeDays": 7.02,
+    "escalatable": 1,
+    "catalogMatched": 2,
+    "auditedAt": "2026-08-20T04:00:00Z",
     "gaps": [
+      {
+        "interest": "Brann — Conference League-playoff mot PAOK Thessaloniki (begge legg)",
+        "severity": "high",
+        "ageDays": 0.06,
+        "recurrences": 0,
+        "catalogMatched": true
+      },
       {
         "interest": "Eliteserien — runde 19 (29.–30. aug)",
         "severity": "medium",
-        "ageDays": 6.99,
-        "recurrences": 2,
+        "ageDays": 7.02,
+        "recurrences": 3,
         "catalogMatched": true
       }
     ]
@@ -151,26 +158,26 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-20T04:40:20.517Z",
+    "buildCheckedAt": "2026-08-20T05:27:16.530Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-19T22:17:20.185Z",
-    "manifestAgeHours": 6.39,
+    "manifestGeneratedAt": "2026-08-20T04:40:28.013Z",
+    "manifestAgeHours": 0.78,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
-        "ageHours": 132.88
+        "ageHours": 133.66
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-08-19T02:15:00Z",
-        "ageHours": 26.42
+        "ageHours": 27.21
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-19T05:56:00Z",
-    "verifyAgeHours": 22.74,
+    "verifyAgeHours": 23.52,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
