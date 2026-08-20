@@ -301,8 +301,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/sport/fotball/uefa-conference-league",
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no/video/406781/tromso-brighton",
         "urlKind": "deep"
       }
     ],
@@ -313,7 +313,7 @@
       "catalog.json#tier1",
       "https://www.espn.com/soccer/match/_/gameId/401910953/brighton-hove-albion-tromso",
       "https://www.foxsports.com/soccer/europa-conference-league-tromso-vs-brighton-aug-20-2026-game-boxscore-962724",
-      "https://www.livesoccertv.com/channels/viaplay-norway/",
+      "https://tv.vg.no/video/406781/tromso-brighton",
       "https://www.rsssf.no/2026/Ecup.html"
     ],
     "provenance": {
@@ -325,11 +325,11 @@
         "note": "UEFA.com utilgjengelig (503/403) ved henting; avspark 17.00 UTC/19.00 CEST bekreftet mot ESPN + FOX + beIN + Sky + livesoccertv (5+ uavhengige enige) + uavhengig write-time fact-check - verify fester mot UEFA/klubb primaerkilde"
       },
       "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no/sport/fotball/uefa-conference-league",
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no/video/406781/tromso-brighton",
         "basis": "official",
-        "retrievedAt": "2026-08-15T16:55:00Z",
-        "note": "Conference League = Viaplays eksklusive norske UECL-rettigheter; hjemmelegg-sublisens (Amedia/Direktesport) sjekket - ingen funnet, Viaplay holder"
+        "retrievedAt": "2026-08-20T13:15:00Z",
+        "note": "KANAL-KORRIGERT 20. aug (research): IKKE Viaplay. VG+ Sport/VGTV lister kampen (tv.vg.no/video/406781) — samme fri-sublisens-mønster for norsk klubbs tidlig-kvalik som Brann-tie-en (video 407256/407391). Den tidligere Viaplay-antakelsen («sublisens ikke funnet») var samme feil Brann hadde. Verify re-bekrefter."
       }
     },
     "summary": "Tromsø IL tar imot Brighton & Hove Albion i det første oppgjøret i Conference League-playoffen — siste hinder før ligaspillet.\n\nTromsø slo CFR Cluj 7–1 sammenlagt i 3. kvalikrunde (Isak Dahlqvist hat trick i bortekampen). Brighton er tung motstand fra Premier League.\n\nAvspark torsdag 20. august kl. 19.00 CEST (17.00 UTC) på Romssa Arena (Alfheim). Returkampen spilles borte i England torsdag 27. august.",
@@ -410,9 +410,9 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no/video/407256/paok-thessaloniki-brann",
+        "urlKind": "deep"
       }
     ],
     "source": "ai-research",
@@ -2365,9 +2365,9 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no/video/407391/bt-brann-paok-thessaloniki",
+        "urlKind": "deep"
       }
     ],
     "source": "ai-research",
@@ -3212,5 +3212,242 @@
     "isFavorite": false,
     "round": null,
     "id": "66d4de2b2dff"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Conference League 2026/27 (playoff)",
+    "title": "Brighton – Tromsø",
+    "time": "2026-08-27T18:30:00Z",
+    "endTime": null,
+    "venue": "American Express Stadium, Falmer",
+    "norwegian": true,
+    "homeTeam": "Brighton",
+    "awayTeam": "Tromsø",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no/",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-20T13:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.tvkampen.com/sport/fotball/tromso-brighton-tv-20august/",
+      "https://www.sussexexpress.co.uk/sport/football/brighton-and-hove-albion/uefa-conference-league-why-tromso-vs-brighton-is-not-on-the-tv-schedule-tnt-sports-channel-5-how-to-watch-8925819",
+      "https://tv.vg.no/video/406781/tromso-brighton",
+      "https://www.rsssf.no/2026/Ecup.html"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.tvkampen.com/sport/fotball/tromso-brighton-tv-20august/",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-20T13:15:00Z",
+        "note": "UEFA.com (primaer TIME-autoritet) 403-blokkert ved henting; returkampen 27. aug kl. 20.30 CEST (18.30 UTC / 19.30 BST) fra tvkampen + britiske previews (19.30 BST) enige, men uvanlig slot -> medium. Verify fester eksakt minutt mot UEFA/klubb-primaerkilde."
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no/video/406781/tromso-brighton",
+        "basis": "official",
+        "retrievedAt": "2026-08-20T13:15:00Z",
+        "note": "VG+ Sport/VGTV holder hele Tromso-tie-en (1. legg tv.vg.no/video/406781) - fri-sublisens for norsk klubbs tidlig-kvalik, ikke Viaplay. Egen deep-lenke for returkampen ennaa ikke publisert; verify fester den."
+      }
+    },
+    "summary": "Tromsø IL spiller returoppgjøret i Conference League-playoffen borte mot Brighton & Hove Albion — vinneren over to kamper går til ligaspillet.\n\nDet første oppgjøret ble spilt hjemme på Romssa Arena 20. august. Brighton fra Premier League er klar favoritt.\n\nAvspark torsdag 27. august kl. 20.30 CEST (18.30 UTC) på American Express Stadium, Falmer."
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Europa League 2026/27 (playoff)",
+    "title": "Lillestrøm – Egnatia",
+    "time": "2026-08-27T17:00:00Z",
+    "endTime": null,
+    "venue": "Åråsen Stadion, Lillestrøm",
+    "norwegian": true,
+    "homeTeam": "Lillestrøm",
+    "awayTeam": "Egnatia",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no/",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-20T13:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.tvkampen.com/sport/fotball/egnatia-lillestrom-tv-20august/",
+      "https://www.foxsports.com/soccer/europa-league-lillestrom-vs-kf-egnatia-rrogozhine-aug-27-2026-game-boxscore-962623",
+      "https://www.rsssf.no/2026/Ecup.html"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.tvkampen.com/sport/fotball/egnatia-lillestrom-tv-20august/",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-20T13:15:00Z",
+        "note": "UEFA.com (primaer TIME-autoritet) 403-blokkert ved henting; returkampen 27. aug kl. 19.00 CEST (17.00 UTC) fra tvkampen + Sky/Flashscore-avledede lister enige (dommer Joao Pinheiro). FOX' 5:00 PM er viewer-lokalisert render, ikke 17.00 CEST. Verify fester mot UEFA/klubb-primaerkilde."
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no/",
+        "basis": "official",
+        "retrievedAt": "2026-08-20T13:15:00Z",
+        "note": "VG+ Sport/VGTV: norsk klubbs HJEMME-kvalik har fri-sublisens (samme monster som Brann 407256/407391 + Tromso 406781) - ikke Viaplay (som holder bortelegget i Albania). Egen deep-lenke ikke publisert ennaa; verify bekrefter per kamp."
+      }
+    },
+    "summary": "Lillestrøm tar imot albanske KF Egnatia i returoppgjøret i Europa League-playoffen på Åråsen — vinneren over to kamper går til ligaspillet.\n\nDet første oppgjøret ble spilt borte i Albania 20. august.\n\nAvspark torsdag 27. august kl. 19.00 CEST (17.00 UTC) på Åråsen Stadion, Lillestrøm."
+  },
+  {
+    "sport": "cross-country",
+    "tournament": "Toppidrettsveka 2026",
+    "title": "Toppidrettsveka: Distanse (Hitra)",
+    "time": "2026-08-21T15:35:00Z",
+    "endTime": "2026-08-21T18:00:00Z",
+    "venue": "Hitra",
+    "norwegian": true,
+    "norwegianPlayers": [
+      {
+        "name": "Johannes Høsflot Klæbo"
+      }
+    ],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no/",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-20T13:15:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.toppidrettsveka.no/program",
+      "https://www.skiforbundet.no/sor-trondelag/nyhetsarkiv/2026/8/toppidrettsveka-folkefest-med-verdensstjerner/",
+      "https://www.proxcskiing.com/traditional-skiing/toppidrettsveka-2026-complete-calendar/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "toppidrettsveka",
+        "url": "https://www.toppidrettsveka.no/program",
+        "basis": "primary",
+        "retrievedAt": "2026-08-20T13:15:00Z",
+        "note": "Arrangorens offisielle program: menn 53 km klassisk fellesstart 17.35 CEST (15.35 UTC), kvinner 32 km klassisk 17.50 CEST. Bekreftet mot uavhengig write-time fact-check (offisielt program + skiforbundet + ProXCskiing)."
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://www.toppidrettsveka.no/aktuelt/se-toppidrettsveka-p-vgtv",
+        "basis": "official",
+        "retrievedAt": "2026-08-20T13:15:00Z",
+        "note": "VG+ Sport (VGTV/tv.vg.no) - KREVER ABONNEMENT (ikke gratis). Bekreftet mot arrangorens egen sending-side."
+      }
+    },
+    "summary": "Toppidrettsveka sparker i gang på Hitra med distanserenn på rulleski: menn 53 km og kvinner 32 km, begge klassisk fellesstart. Johannes Høsflot Klæbo og resten av landslagseliten er på start.\n\nMennenes 53 km starter kl. 17.35 CEST (15.35 UTC), kvinnenes 32 km kl. 17.50 CEST.\n\nVises på VG+ Sport (VGTV) — krever abonnement."
+  },
+  {
+    "sport": "cross-country",
+    "tournament": "Toppidrettsveka 2026",
+    "title": "Toppidrettsveka: Sprint (Aure)",
+    "time": "2026-08-22T15:05:00Z",
+    "endTime": "2026-08-22T19:00:00Z",
+    "venue": "Aure",
+    "norwegian": true,
+    "norwegianPlayers": [
+      {
+        "name": "Johannes Høsflot Klæbo"
+      }
+    ],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no/",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-20T13:15:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.toppidrettsveka.no/program",
+      "https://www.skiforbundet.no/sor-trondelag/nyhetsarkiv/2026/8/toppidrettsveka-folkefest-med-verdensstjerner/",
+      "https://www.proxcskiing.com/traditional-skiing/toppidrettsveka-2026-complete-calendar/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "toppidrettsveka",
+        "url": "https://www.toppidrettsveka.no/program",
+        "basis": "primary",
+        "retrievedAt": "2026-08-20T13:15:00Z",
+        "note": "Arrangorens offisielle program: klassisk sprintprolog 17.05 CEST (15.05 UTC), finaleheat fra 19.20 CEST. Bekreftet mot uavhengig write-time fact-check."
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://www.toppidrettsveka.no/aktuelt/se-toppidrettsveka-p-vgtv",
+        "basis": "official",
+        "retrievedAt": "2026-08-20T13:15:00Z",
+        "note": "VG+ Sport (VGTV/tv.vg.no) - krever abonnement."
+      }
+    },
+    "summary": "Sprintdag i Aure: klassisk sprint med prolog og utslagsheat. Klæbo og landslagseliten jakter sprintseier på rulleski.\n\nPrologen starter kl. 17.05 CEST (15.05 UTC), finaleheatene fra 19.20 CEST. Tidligere på dagen går motbakkeløpet «Brekka Opp» (fri teknikk) kl. 10.30 CEST.\n\nVises på VG+ Sport (VGTV) — krever abonnement."
+  },
+  {
+    "sport": "cross-country",
+    "tournament": "Toppidrettsveka 2026",
+    "title": "Toppidrettsveka: Jaktstart (Trondheim)",
+    "time": "2026-08-23T11:00:00Z",
+    "endTime": "2026-08-23T13:15:00Z",
+    "venue": "Sverresborg, Trondheim",
+    "norwegian": true,
+    "norwegianPlayers": [
+      {
+        "name": "Johannes Høsflot Klæbo"
+      }
+    ],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no/",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-20T13:15:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.toppidrettsveka.no/program",
+      "https://www.skiforbundet.no/sor-trondelag/nyhetsarkiv/2026/8/toppidrettsveka-folkefest-med-verdensstjerner/",
+      "https://www.proxcskiing.com/traditional-skiing/toppidrettsveka-2026-complete-calendar/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "toppidrettsveka",
+        "url": "https://www.toppidrettsveka.no/program",
+        "basis": "primary",
+        "retrievedAt": "2026-08-20T13:15:00Z",
+        "note": "Arrangorens offisielle program: 20 km klassisk jaktstart - kvinner 13.00 CEST (11.00 UTC), menn 14.10 CEST (12.10 UTC). Bekreftet mot uavhengig write-time fact-check."
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://www.toppidrettsveka.no/aktuelt/se-toppidrettsveka-p-vgtv",
+        "basis": "official",
+        "retrievedAt": "2026-08-20T13:15:00Z",
+        "note": "VG+ Sport (VGTV/tv.vg.no) - krever abonnement."
+      }
+    },
+    "summary": "Toppidrettsveka avsluttes med 20 km jaktstart (klassisk) på Sverresborg i Trondheim — sammenlagtoppgjøret etter distanse- og sprintdagene. Klæbo jakter totalseier.\n\nKvinnenes jaktstart går kl. 13.00 CEST (11.00 UTC), mennenes kl. 14.10 CEST.\n\nVises på VG+ Sport (VGTV) — krever abonnement."
   }
 ]
