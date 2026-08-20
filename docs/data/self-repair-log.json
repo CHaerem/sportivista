@@ -1,16 +1,14 @@
 {
-	"runAt": "2026-08-19T07:17:00Z",
-	"action": "opened-pr",
-	"pr": "https://github.com/CHaerem/sportivista/pull/439",
-	"diagnosed": "web-tests CI gate red (run 32207548666) + 2 failing determinism tests: sources-schema and authority-schema both assert their arrays are id-sorted. WP-241/242 appended world-athletics (sources.json) and athletics:ultimate-championship (authority.json) at the end of their arrays instead of in sorted position.",
-	"fixed": [
-		"scripts/config/sources.json — moved world-athletics into id-sorted position (canonical tab-JSON re-serialised via sort)",
-		"scripts/config/authority.json — moved athletics:ultimate-championship into id-sorted position (textual block move to preserve inline-object style)"
-	],
-	"autoMergeEligible": true,
+	"runAt": "2026-08-20T07:20:00Z",
+	"action": "abandoned",
+	"pr": null,
+	"diagnosed": "Deep-tier research escalation is broken: every bot-initiated research-agent run (workflow_dispatch from scout / coverage-critic via `gh workflow run research-agent.yml -f tier=deep`, actor github-actions[bot]) fails because anthropics/claude-code-action@v1 now rejects non-human actors — 'Workflow initiated by non-human actor: github-actions (type: Bot). Add bot to allowed_bots list or use \"*\"'. The log shows `allowed_bots: \"\"` (unset). Both the Fable 5 step (continue-on-error, so it silently no-ops → 'Did Fable 5 do the work?' finds no commit) and the Opus 4.8 fallback (not continue-on-error → fails the job) hit it. Confirmed by the run history: `schedule` research runs succeed, `workflow_dispatch` (bot) runs fail (runs 32332683317 on 2026-08-20, 32111323743 on 2026-08-18). Scheduled research is unaffected; the scout/coverage-critic → deep-research escalation feature is fully dead.",
+	"fixed": [],
+	"autoMergeEligible": false,
 	"notes": [
-		"Pure block moves: no entries added or removed (94 sources, 34 competitions before and after).",
-		"Proof: previously-failing tests now pass; full npm test 1376/1376 green.",
-		"Neither file is a protected path, so PR #439 auto-merges once tests pass."
+		"NOT FIXED — the only correct fix lives entirely in a protected automation path (.github/workflows/research-agent.yml) which the CI-only protect-automation hook blocks this unattended agent from authoring ('A human must author changes to these files'). No non-protected workaround exists: the allowed_bots setting must be an input to the claude-code-action steps; the escalation script (scripts/escalate-research.js) cannot influence the action's actor check.",
+		"READY-TO-APPLY FIX (needs a human): add `allowed_bots: \"*\"` under `with:` on all three `uses: anthropics/claude-code-action@v1` steps in .github/workflows/research-agent.yml (the standard Opus 4.8 step ~line 79, the deep Fable 5 step ~line 102, and the deep Opus 4.8 fallback ~line 130). tier=standard is escalatable too, so all three need it. Safe: the trigger carries a hardcoded prompt file (no untrusted input), so allowing bots is not an injection surface — the actor is our own github-actions[bot] running the fixed research prompt.",
+		"Consider auditing the other agent workflows (verify/editorial/scout/coverage-critic/visual-qa/ui-fix/self-repair/improve) for the same latent break should any of them ever be dispatched by a bot; today they are all schedule-triggered and pass, so no change is required now.",
+		"Non-bugs ruled out this run: full `npm test` 1376/1376 green; `node scripts/validate-events.js` 0 errors (warnings only); docs/data/build-alert.json ok; the 2026-08-19 web-tests CI failure (sources/authority id-sort) was already fixed by commit 218a04899; the 2026-08-17 scout failure was transient GitHub infra (429/503 downloading the action). Quota is green (usage-state.json)."
 	]
 }
