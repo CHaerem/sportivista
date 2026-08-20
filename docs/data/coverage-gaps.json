@@ -1,19 +1,8 @@
 {
-  "generatedAt": "2026-08-20T21:26:56.119Z",
-  "gapCount": 5,
+  "generatedAt": "2026-08-20T22:19:11.881Z",
+  "gapCount": 4,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Ingebrigtsen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Erlend Slokvik: – Det har vært et par ting jeg reagerer på",
-      "link": "https://www.aftenposten.no/sport/i/q6Vzpo/erlend-slokvik-det-har-vaert-et-par-ting-jeg-reagerer-paa",
-      "feed": "aftenposten-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-20T21:26:54.915Z"
-    },
     {
       "kind": "tracked-claim",
       "entity": "Eliteserien",
@@ -24,7 +13,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "eliteserien-2026",
-      "detectedAt": "2026-08-20T21:26:55.840Z"
+      "detectedAt": "2026-08-20T22:19:09.508Z"
     },
     {
       "kind": "tracked-claim",
@@ -36,7 +25,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-20T21:26:55.840Z"
+      "detectedAt": "2026-08-20T22:19:09.508Z"
     },
     {
       "kind": "tracked-claim",
@@ -48,7 +37,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-20T21:26:55.840Z"
+      "detectedAt": "2026-08-20T22:19:09.508Z"
     },
     {
       "kind": "tracked-claim",
@@ -60,18 +49,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-20T21:26:55.840Z"
+      "detectedAt": "2026-08-20T22:19:09.508Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 118 consecutive run(s) — no fresh fetch in 6 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 118,
+      "detail": "docs/data/esports.json has been served from retention for 119 consecutive run(s) — no fresh fetch in 6 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 119,
       "staleDays": 6,
       "severity": "high",
-      "detectedAt": "2026-08-20T21:26:55.901Z"
+      "detectedAt": "2026-08-20T22:19:09.571Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
