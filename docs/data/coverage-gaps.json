@@ -1,8 +1,52 @@
 {
-  "generatedAt": "2026-08-20T06:40:17.652Z",
-  "gapCount": 4,
+  "generatedAt": "2026-08-20T07:39:14.155Z",
+  "gapCount": 8,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Rosenborg",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Bekreftet: Rosenborg punger ut",
+      "link": "https://www.tv2.no/a/19141811",
+      "feed": "tv2-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-20T07:39:13.000Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Eliteserien",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Skadesjokk: Ute resten av sesongen",
+      "link": "https://www.tv2.no/a/19143373",
+      "feed": "tv2-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-20T07:39:13.000Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Mesterligaen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "– De er på stø kurs mot Mesterligaen",
+      "link": "https://www.tv2.no/a/19143985",
+      "feed": "tv2-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-20T07:39:13.000Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Formel 1",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Formel 1: Rykteflommen over – Max Verstappen signerte ny lang kontrakt med Red Bull",
+      "link": "https://www.tv2.no/a/19145545",
+      "feed": "tv2-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-20T07:39:13.000Z"
+    },
     {
       "kind": "tracked-claim",
       "entity": "Eliteserien",
@@ -13,7 +57,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "eliteserien-2026",
-      "detectedAt": "2026-08-20T06:40:17.519Z"
+      "detectedAt": "2026-08-20T07:39:13.903Z"
     },
     {
       "kind": "tracked-claim",
@@ -25,7 +69,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-20T06:40:17.519Z"
+      "detectedAt": "2026-08-20T07:39:13.903Z"
     },
     {
       "kind": "tracked-claim",
@@ -37,7 +81,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-20T06:40:17.519Z"
+      "detectedAt": "2026-08-20T07:39:13.903Z"
     },
     {
       "kind": "tracked-claim",
@@ -49,18 +93,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-20T06:40:17.519Z"
+      "detectedAt": "2026-08-20T07:39:13.903Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 103 consecutive run(s) — no fresh fetch in 5 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 103,
+      "detail": "docs/data/esports.json has been served from retention for 104 consecutive run(s) — no fresh fetch in 5 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 104,
       "staleDays": 5,
       "severity": "high",
-      "detectedAt": "2026-08-20T06:40:17.567Z"
+      "detectedAt": "2026-08-20T07:39:13.964Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
