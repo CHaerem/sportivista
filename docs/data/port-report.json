@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T07:39:12.770Z",
+  "generatedAt": "2026-08-20T08:34:24.618Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -25,7 +25,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 7.11,
+    "oldestGapAgeDays": 7.15,
     "escalatable": 1,
     "catalogMatched": 2,
     "auditedAt": "2026-08-20T04:00:00Z",
@@ -33,14 +33,14 @@
       {
         "interest": "Brann — Conference League-playoff mot PAOK Thessaloniki (begge legg)",
         "severity": "high",
-        "ageDays": 0.15,
+        "ageDays": 0.19,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Eliteserien — runde 19 (29.–30. aug)",
         "severity": "medium",
-        "ageDays": 7.11,
+        "ageDays": 7.15,
         "recurrences": 3,
         "catalogMatched": true
       }
@@ -52,17 +52,10 @@
     "nearTermAmended": 0,
     "verifyRunAt": "2026-08-20T05:54:56Z",
     "windowRate": 0,
-    "windowChecks": 94,
+    "windowChecks": 87,
     "windowAmendments": 0,
-    "windowCorrections": 7,
+    "windowCorrections": 5,
     "byDay": [
-      {
-        "date": "2026-08-06",
-        "checks": 7,
-        "amendments": 0,
-        "corrections": 2,
-        "rate": 0
-      },
       {
         "date": "2026-08-07",
         "checks": 9,
@@ -165,21 +158,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-20T07:39:08.197Z",
+    "buildCheckedAt": "2026-08-20T08:34:17.420Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-20T06:40:17.816Z",
-    "manifestAgeHours": 0.98,
+    "manifestGeneratedAt": "2026-08-20T07:39:14.357Z",
+    "manifestAgeHours": 0.92,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
-        "ageHours": 135.86
+        "ageHours": 136.78
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-20T05:54:56Z",
-    "verifyAgeHours": 1.74,
+    "verifyAgeHours": 2.66,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
