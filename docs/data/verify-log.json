@@ -1,14 +1,15 @@
 {
-	"runAt": "2026-08-19T05:56:00Z",
-	"checked": 3,
-	"confirmed": 1,
-	"amended": 1,
+	"runAt": "2026-08-20T05:54:56Z",
+	"checked": 4,
+	"confirmed": 4,
+	"amended": 0,
 	"removed": 0,
 	"notes": [
-		"7-dagersvindu 19.-26. aug. 21 ai-research/confidence-kandidater i vinduet; de fleste var alt verifisert 16.-18.8 og uendret. Denne runden dekket de to hullene: den ENESTE uverifiserte kampen (Glimts CL-returkamp) + Vueltas provisoriske starttid.",
-		"Bodo/Glimt - NEC Nijmegen (CL-playoff RETURKAMP, 25.8, Aspmyra): var eneste hendelse i vinduet uten verifiedAt. Bekreftet avspark 19.00 UTC (21.00 CEST) - samme slot som 1. kamp (UEFA-standard for begge kamper), arena Aspmyra, kanal TV 2 Play (TV 2s eksklusive norske CL-rettigheter). Kilder: FOX-boxscore + billettside (italiansoccerseriea). UEFA.com direkte fortsatt 503. Confirmed (verifiedAt satt).",
-		"Vuelta a Espana etappe 1 (Monaco tempo, 22.8): AMENDED tid. Board hadde 13.00 UTC eksplisitt merket som anslag (medium, 'starttid ennaa ikke publisert'). Arrangorens egen etappeside (lavuelta.es/en/stage-1) gir naa forste rytter 16.17 CEST = 14.17 UTC, siste ankomst ~19.30 CEST. Rettet time -> 14.17 UTC, oppdatert summary + provenance.time (basis primary, ny url/note). boardWasProvisional:true i ledger (kilden korrigerte et anslag, ikke en bom - jf. cyclingstage.com-laeringen).",
-		"Ingen removals. Ingen tentative kanaler i vinduet (alle NRK/TV2-delte VM-kamper alt resolvet i tidligere runder). Ingen X/Twitter-avledede pastander. Ingen nye source-quirks bekreftet (ESPN F1-misdatering ikke observert denne runden - F1-oktene kom fra ai-research mot formula1.com, ikke ESPN).",
-		"Ikke re-verifisert denne runden (alt confirmed 16.-18.8, uendret): Sinquefield Cup (sjakk, in-progress, ingen fulgte norske spillere aa cut-sjekke), NEC-Glimt 1. kamp (19.8, verifisert 18.8), Tromso-Brighton (UECL->Viaplay), Egnatia-Lillestrom (UEL->Viaplay), F1 Zandvoort sprintweekend x3 (verifisert 18.8), Athletissima/Silesia friidrett, Serie A-kampene (VG+ Sport)."
+		"PAOK-Brann (UECL-playoff, i dag 20.08): tid 17:45 UTC (20:45 EEST) + VGTV-streaming bekreftet mot UEFA-kampside + Fotmob + VG. Satt confirmed.",
+		"Viking-Dinamo Zagreb (CL-playoff retur 26.08): 1.legg 18.08 spilt (Dinamo 2-2 Viking borte) - returkamp hjemme korrekt datert. Confirmed mot ESPN + UEFA.",
+		"Storhamar-Gjerpen (Elkjop-ligaen aapning 26.08): 16:15 UTC + TV 2 Play bekreftet mot handball.no. Confirmed.",
+		"Aasane-Lyn (OBOS 26.08): 17:00 UTC Aasane Arena bekreftet mot fotball.no + BA. Confirmed.",
+		"BLAST Open Porto 2026 (26.08, medium): kamptider ut over aapningen fortsatt ikke publisert - ingen ny info aa feste, latt staa uendret.",
+		"Ovrige ai-research-events i vinduet var allerede verifisert nylig (Serie A-runder, Nederlands GP, Athletissima, Vuelta) - ingen nye motstridende kilder funnet."
 	]
 }
