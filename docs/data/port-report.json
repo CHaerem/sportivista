@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-20T05:27:21.989Z",
+  "generatedAt": "2026-08-20T06:40:16.565Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
-    "amendRate": "yellow",
+    "amendRate": "green",
     "silentStops": "yellow",
     "participantStatus": "green"
   },
@@ -25,7 +25,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 7.02,
+    "oldestGapAgeDays": 7.07,
     "escalatable": 1,
     "catalogMatched": 2,
     "auditedAt": "2026-08-20T04:00:00Z",
@@ -33,26 +33,26 @@
       {
         "interest": "Brann — Conference League-playoff mot PAOK Thessaloniki (begge legg)",
         "severity": "high",
-        "ageDays": 0.06,
+        "ageDays": 0.11,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Eliteserien — runde 19 (29.–30. aug)",
         "severity": "medium",
-        "ageDays": 7.02,
+        "ageDays": 7.07,
         "recurrences": 3,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.33,
-    "nearTermChecked": 3,
-    "nearTermAmended": 1,
-    "verifyRunAt": "2026-08-19T05:56:00Z",
+    "nearTermRate": 0,
+    "nearTermChecked": 4,
+    "nearTermAmended": 0,
+    "verifyRunAt": "2026-08-20T05:54:56Z",
     "windowRate": 0,
-    "windowChecks": 86,
+    "windowChecks": 94,
     "windowAmendments": 0,
     "windowCorrections": 7,
     "byDay": [
@@ -153,35 +153,35 @@
         "amendments": 0,
         "corrections": 1,
         "rate": 0
+      },
+      {
+        "date": "2026-08-20",
+        "checks": 8,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-20T05:27:16.530Z",
+    "buildCheckedAt": "2026-08-20T06:40:13.236Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-20T04:40:28.013Z",
-    "manifestAgeHours": 0.78,
+    "manifestGeneratedAt": "2026-08-20T05:27:25.625Z",
+    "manifestAgeHours": 1.21,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
-        "ageHours": 133.66
-      },
-      {
-        "file": "tracked.json",
-        "sourceLastUpdated": "2026-08-19T02:15:00Z",
-        "ageHours": 27.21
+        "ageHours": 134.87
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-08-19T05:56:00Z",
-    "verifyAgeHours": 23.52,
-    "corrections": 1,
+    "checkedAt": "2026-08-20T05:54:56Z",
+    "verifyAgeHours": 0.76,
+    "corrections": 0,
     "unresolved": 0,
-    "signals": [
-      "Ikke re-verifisert denne runden (alt confirmed 16.-18.8, uendret): Sinquefield Cup (sjakk, in-progress, ingen fulgte norske spillere aa cut-sjekke), NEC-Glim…"
-    ]
+    "signals": []
   }
 }
