@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-21T06:41:02.611Z",
-  "gapCount": 9,
+  "generatedAt": "2026-08-21T07:40:25.729Z",
+  "gapCount": 10,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -11,8 +11,8 @@
       "headline": "Rosenborg slo Lyn i thriller – comeback og overtidsmål",
       "link": "https://www.nrk.no/sport/rosenborg-slo-lyn-i-thriller-_-comeback-og-overtidsmal-1.17996197",
       "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-21T06:40:59.655Z"
+      "matchCount": 2,
+      "detectedAt": "2026-08-21T07:40:24.546Z"
     },
     {
       "kind": "entity",
@@ -23,7 +23,7 @@
       "link": "https://www.nrk.no/sport/haugesund-kjopte-stortalent-_-lan-i-fredrikstad-avbrytes-1.17995605",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-21T06:40:59.655Z"
+      "detectedAt": "2026-08-21T07:40:24.546Z"
     },
     {
       "kind": "entity",
@@ -34,7 +34,7 @@
       "link": "https://www.nrk.no/sport/haugesund-kjopte-stortalent-_-lan-i-fredrikstad-avbrytes-1.17995605",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-21T06:40:59.655Z"
+      "detectedAt": "2026-08-21T07:40:24.546Z"
     },
     {
       "kind": "entity",
@@ -45,7 +45,18 @@
       "link": "https://www.nrk.no/sport/lillestrom-med-godt-utgangspunkt-i-europaligajakten-_-fikk-scoring-annullert-i-0-0-kamp-1.17996449",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-21T06:40:59.655Z"
+      "detectedAt": "2026-08-21T07:40:24.546Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Tour de France",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Medier: Sykkelstjerne legger opp",
+      "link": "https://www.tv2.no/a/19148062",
+      "feed": "tv2-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-21T07:40:24.546Z"
     },
     {
       "kind": "entity",
@@ -56,7 +67,7 @@
       "link": "https://www.nrk.no/sport/her-er-norges-tropp-til-sykkel-vm-_-deltar-i-ny-ovelse-1.17996307",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-21T06:40:59.655Z"
+      "detectedAt": "2026-08-21T07:40:24.546Z"
     },
     {
       "kind": "tracked-claim",
@@ -68,7 +79,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "eliteserien-2026",
-      "detectedAt": "2026-08-21T06:41:00.614Z"
+      "detectedAt": "2026-08-21T07:40:25.513Z"
     },
     {
       "kind": "tracked-claim",
@@ -80,7 +91,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-21T06:41:00.614Z"
+      "detectedAt": "2026-08-21T07:40:25.513Z"
     },
     {
       "kind": "tracked-claim",
@@ -92,7 +103,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-21T06:41:00.614Z"
+      "detectedAt": "2026-08-21T07:40:25.513Z"
     },
     {
       "kind": "tracked-claim",
@@ -104,18 +115,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-21T06:41:00.614Z"
+      "detectedAt": "2026-08-21T07:40:25.513Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 123 consecutive run(s) — no fresh fetch in 6 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 123,
+      "detail": "docs/data/esports.json has been served from retention for 124 consecutive run(s) — no fresh fetch in 6 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 124,
       "staleDays": 6,
       "severity": "high",
-      "detectedAt": "2026-08-21T06:41:00.677Z"
+      "detectedAt": "2026-08-21T07:40:25.575Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T06:40:59.433Z",
+  "generatedAt": "2026-08-21T07:40:24.309Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -25,7 +25,7 @@
       "medium": 1,
       "low": 1
     },
-    "oldestGapAgeDays": 8.07,
+    "oldestGapAgeDays": 8.11,
     "escalatable": 1,
     "catalogMatched": 3,
     "auditedAt": "2026-08-21T04:00:00Z",
@@ -33,21 +33,21 @@
       {
         "interest": "Grand Chess Tour Finals 2026 (St. Louis)",
         "severity": "high",
-        "ageDays": 0.11,
+        "ageDays": 0.15,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Eliteserien — runde 19 (29.–30. aug)",
         "severity": "medium",
-        "ageDays": 8.07,
+        "ageDays": 8.11,
         "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "Davis Cup — Norge–Kina (Trondheim, 18.–19. sep, Ruud)",
         "severity": "low",
-        "ageDays": 0.11,
+        "ageDays": 0.15,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -59,17 +59,10 @@
     "nearTermAmended": 0,
     "verifyRunAt": "2026-08-21T05:57:00Z",
     "windowRate": 0,
-    "windowChecks": 102,
+    "windowChecks": 93,
     "windowAmendments": 0,
     "windowCorrections": 5,
     "byDay": [
-      {
-        "date": "2026-08-07",
-        "checks": 9,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-08-08",
         "checks": 6,
@@ -172,21 +165,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-21T06:40:54.581Z",
+    "buildCheckedAt": "2026-08-21T07:40:18.509Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-21T05:29:23.861Z",
-    "manifestAgeHours": 1.19,
+    "manifestGeneratedAt": "2026-08-21T06:41:02.815Z",
+    "manifestAgeHours": 0.99,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
-        "ageHours": 158.89
+        "ageHours": 159.88
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-21T05:57:00Z",
-    "verifyAgeHours": 0.73,
+    "verifyAgeHours": 1.72,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
