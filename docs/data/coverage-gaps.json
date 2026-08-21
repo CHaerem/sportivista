@@ -1,8 +1,19 @@
 {
-  "generatedAt": "2026-08-21T10:27:09.984Z",
-  "gapCount": 5,
+  "generatedAt": "2026-08-21T11:22:24.043Z",
+  "gapCount": 8,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "rain",
+      "type": "missing",
+      "imminent": false,
+      "headline": "GP Lucien Van Impe: Charlotte Kool sprints to much needed win after a wind and rain soaked race in Belgium",
+      "link": "https://www.cyclingnews.com/pro-cycling/racing/gp-lucien-van-impe-charlotte-kool-sprints-to-much-needed-win-after-a-wind-and-rain-soaked-race-in-belgium/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-08-21T11:22:22.909Z"
+    },
     {
       "kind": "entity",
       "entity": "Nations League",
@@ -12,7 +23,29 @@
       "link": "https://www.theguardian.com/football/2026/aug/21/uefa-concacaf-talks-set-up-combined-nations-league-tournament",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-21T10:27:08.811Z"
+      "detectedAt": "2026-08-21T11:22:22.909Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Tour de France",
+      "type": "missing",
+      "imminent": false,
+      "headline": "'I need to race smart' - Tadej Pogačar looking to complete the Grand Slam of Grand Tours in the Vuelta a España, while still looking ahead",
+      "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/its-going-to-be-a-very-tough-race-tadej-pogacar-looking-to-complete-the-grand-slam-of-grand-tours-in-the-vuelta-a-espana/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-08-21T11:22:22.909Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Paris-Roubaix",
+      "type": "missing",
+      "imminent": false,
+      "headline": "'It could be an opportunity to be close in GC' - Opening time trial in Monaco enticing incentive for Wout van Aert's return to Vuelta a España",
+      "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/it-could-be-an-opportunity-to-be-close-in-gc-opening-time-trial-in-monaco-enticing-incentive-for-wout-van-aerts-return-to-vuelta-a-espana/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-08-21T11:22:22.909Z"
     },
     {
       "kind": "tracked-claim",
@@ -24,7 +57,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "eliteserien-2026",
-      "detectedAt": "2026-08-21T10:27:09.751Z"
+      "detectedAt": "2026-08-21T11:22:23.866Z"
     },
     {
       "kind": "tracked-claim",
@@ -36,7 +69,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-21T10:27:09.751Z"
+      "detectedAt": "2026-08-21T11:22:23.866Z"
     },
     {
       "kind": "tracked-claim",
@@ -48,7 +81,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-21T10:27:09.751Z"
+      "detectedAt": "2026-08-21T11:22:23.866Z"
     },
     {
       "kind": "tracked-claim",
@@ -60,18 +93,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-21T10:27:09.751Z"
+      "detectedAt": "2026-08-21T11:22:23.866Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 127 consecutive run(s) — no fresh fetch in 6 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 127,
+      "detail": "docs/data/esports.json has been served from retention for 128 consecutive run(s) — no fresh fetch in 6 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 128,
       "staleDays": 6,
       "severity": "high",
-      "detectedAt": "2026-08-21T10:27:09.817Z"
+      "detectedAt": "2026-08-21T11:22:23.933Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
