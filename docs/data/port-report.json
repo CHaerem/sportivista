@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T05:29:22.233Z",
+  "generatedAt": "2026-08-21T06:40:59.433Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -25,7 +25,7 @@
       "medium": 1,
       "low": 1
     },
-    "oldestGapAgeDays": 8.02,
+    "oldestGapAgeDays": 8.07,
     "escalatable": 1,
     "catalogMatched": 3,
     "auditedAt": "2026-08-21T04:00:00Z",
@@ -33,21 +33,21 @@
       {
         "interest": "Grand Chess Tour Finals 2026 (St. Louis)",
         "severity": "high",
-        "ageDays": 0.06,
+        "ageDays": 0.11,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Eliteserien — runde 19 (29.–30. aug)",
         "severity": "medium",
-        "ageDays": 8.02,
+        "ageDays": 8.07,
         "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "Davis Cup — Norge–Kina (Trondheim, 18.–19. sep, Ruud)",
         "severity": "low",
-        "ageDays": 0.06,
+        "ageDays": 0.11,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -55,11 +55,11 @@
   },
   "amendRate": {
     "nearTermRate": 0,
-    "nearTermChecked": 4,
+    "nearTermChecked": 15,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-08-20T05:54:56Z",
+    "verifyRunAt": "2026-08-21T05:57:00Z",
     "windowRate": 0,
-    "windowChecks": 87,
+    "windowChecks": 102,
     "windowAmendments": 0,
     "windowCorrections": 5,
     "byDay": [
@@ -160,28 +160,37 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-08-21",
+        "checks": 15,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-21T05:29:19.295Z",
+    "buildCheckedAt": "2026-08-21T06:40:54.581Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-21T04:40:13.265Z",
-    "manifestAgeHours": 0.82,
+    "manifestGeneratedAt": "2026-08-21T05:29:23.861Z",
+    "manifestAgeHours": 1.19,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
-        "ageHours": 157.69
+        "ageHours": 158.89
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-08-20T05:54:56Z",
-    "verifyAgeHours": 23.57,
-    "corrections": 0,
+    "checkedAt": "2026-08-21T05:57:00Z",
+    "verifyAgeHours": 0.73,
+    "corrections": 1,
     "unresolved": 0,
-    "signals": []
+    "signals": [
+      "Weltklasse Zurich (DL-nest-siste, 26.-27. aug): la til Jakob Ingebrigtsen i norwegianPlayers (olympics.com bekrefter comeback)."
+    ]
   }
 }
