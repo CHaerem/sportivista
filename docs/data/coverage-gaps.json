@@ -1,19 +1,8 @@
 {
-  "generatedAt": "2026-08-21T04:40:13.050Z",
-  "gapCount": 5,
+  "generatedAt": "2026-08-21T05:29:23.636Z",
+  "gapCount": 4,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Formula One",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Verstappen extends Red Bull deal to 2030",
-      "link": "https://www.bbc.co.uk/sport/formula1/articles/c20j3j2mnpxo?at_medium=RSS&amp;at_campaign=rss",
-      "feed": "bbc-f1",
-      "matchCount": 1,
-      "detectedAt": "2026-08-21T04:40:12.170Z"
-    },
     {
       "kind": "tracked-claim",
       "entity": "Eliteserien",
@@ -24,7 +13,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "eliteserien-2026",
-      "detectedAt": "2026-08-21T04:40:12.846Z"
+      "detectedAt": "2026-08-21T05:29:23.405Z"
     },
     {
       "kind": "tracked-claim",
@@ -36,7 +25,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-21T04:40:12.846Z"
+      "detectedAt": "2026-08-21T05:29:23.405Z"
     },
     {
       "kind": "tracked-claim",
@@ -48,7 +37,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-21T04:40:12.846Z"
+      "detectedAt": "2026-08-21T05:29:23.405Z"
     },
     {
       "kind": "tracked-claim",
@@ -60,18 +49,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-21T04:40:12.846Z"
+      "detectedAt": "2026-08-21T05:29:23.405Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 121 consecutive run(s) — no fresh fetch in 6 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 121,
+      "detail": "docs/data/esports.json has been served from retention for 122 consecutive run(s) — no fresh fetch in 6 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 122,
       "staleDays": 6,
       "severity": "high",
-      "detectedAt": "2026-08-21T04:40:12.908Z"
+      "detectedAt": "2026-08-21T05:29:23.469Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
