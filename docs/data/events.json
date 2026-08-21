@@ -2486,9 +2486,9 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no/video/407391/bt-brann-paok-thessaloniki",
+        "urlKind": "deep"
       }
     ],
     "source": "ai-research",
@@ -2534,9 +2534,9 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no/video/406806/lillestrom-kf-egnatia",
+        "urlKind": "deep"
       }
     ],
     "source": "ai-research",
@@ -3451,5 +3451,66 @@
     "isFavorite": false,
     "round": null,
     "id": "66d4de2b2dff"
+  },
+  {
+    "sport": "chess",
+    "tournament": "Grand Chess Tour",
+    "title": "Grand Chess Tour Finals 2026 (St. Louis)",
+    "time": "2026-08-22T17:00:00Z",
+    "endTime": "2026-08-27T23:00:00Z",
+    "venue": "Saint Louis Chess Club, St. Louis, USA",
+    "norwegian": false,
+    "participants": [
+      {
+        "name": "Rameshbabu Praggnanandhaa"
+      },
+      {
+        "name": "Vincent Keymer"
+      },
+      {
+        "name": "Wesley So"
+      },
+      {
+        "name": "Fabiano Caruana"
+      }
+    ],
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "YouTube (Saint Louis Chess Club)",
+        "url": "https://www.youtube.com/@STLChessClub",
+        "urlKind": "deep"
+      },
+      {
+        "platform": "Twitch (Saint Louis Chess Club)",
+        "url": "https://www.twitch.tv/STLChessClub",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-21T05:00:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://grandchesstour.org/tours/2026/tournaments/",
+      "https://en.wikipedia.org/wiki/Grand_Chess_Tour_2026",
+      "https://allsportdb.com/Events/2026-Grand-Chess-Tour-Finals-20015"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "grand-chess-tour",
+        "url": "https://grandchesstour.org/tours/2026/tournaments/",
+        "basis": "primary",
+        "retrievedAt": "2026-08-21T05:00:00Z",
+        "note": "Arrangørens egen 2026-turneringsoversikt oppgir finalvinduet 21.–28. aug (åpning 21., spill 22.–27.); Wikipedia + allsportdb bekrefter selve spillet 22.–27. aug. Åpningsdagen (22. aug) starter 12.00 CDT = 17.00 UTC (standard St. Louis GCT-slot). Eksakt rundeoppsett per dag (semifinale/finale/bronse; klassisk vs hurtig vs lyn) er ikke publisert av arrangøren ennå — verify fester per-dags-tidene."
+      },
+      "streaming": {
+        "sourceId": "grand-chess-tour",
+        "url": "https://grandchesstour.org/tours/2026/tournaments/",
+        "basis": "primary",
+        "retrievedAt": "2026-08-21T05:00:00Z",
+        "note": "Selv-strømmet gratis via Saint Louis Chess Clubs offisielle YouTube/Twitch (samme som Sinquefield Cup); arrangørens egen sending."
+      }
+    },
+    "summary": "Grand Chess Tour-finalen 2026 (topp-4-utslagsspill) i St. Louis — den umiddelbare oppfølgeren til Sinquefield Cup. Semifinaler: Praggnanandhaa–Vincent Keymer og Wesley So–Fabiano Caruana. Alle fire er katalog-sjakkspillere.\n\nSpillet går 22.–27. aug (åpning 21.). Hvert oppgjør avgjøres over 2 klassiske + 2 hurtig + 4 lyn partier (poeng 6/3 klassisk, 4/2 hurtig, 2/1 lyn). Åpningsdagen 22. aug starter kl. 12.00 CDT (19.00 CEST / 17.00 UTC).\n\nGratis norsk visning på Saint Louis Chess Clubs offisielle YouTube/Twitch med engelsk kommentar. Eksakte rundetider per dag festes av verify når arrangøren publiserer dem."
   }
 ]
