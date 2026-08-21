@@ -621,9 +621,9 @@
     "norwegian": false,
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/arsenal-coventry-1914718",
-        "urlKind": "deep"
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -652,9 +652,9 @@
     "norwegian": false,
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/real-betis-real-sociedad-1922572",
-        "urlKind": "deep"
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -3594,6 +3594,48 @@
   },
   {
     "sport": "f1",
+    "tournament": "Formula 1 World Championship 2026",
+    "title": "Italiensk Grand Prix – kvalifisering",
+    "time": "2026-09-05T14:00:00Z",
+    "endTime": "2026-09-05T15:00:00Z",
+    "venue": "Autodromo Nazionale Monza",
+    "norwegian": false,
+    "participants": [],
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-21T20:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.formula1.com/en/latest/article/formula-1-pirelli-gran-premio-ditalia-2026.7zaXkRgenHXVVXXGb1RGcf",
+      "https://www.monzanet.it/en/calendario-2026-formula-1-a-monza-dal-4-al-6-settembre/",
+      "https://racingnews365.com/f1/races/italian-gp"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "formula1",
+        "url": "https://www.formula1.com/en/latest/article/formula-1-pirelli-gran-premio-ditalia-2026.7zaXkRgenHXVVXXGb1RGcf",
+        "basis": "primary",
+        "retrievedAt": "2026-08-21T20:45:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-21T20:45:00Z"
+      }
+    },
+    "summary": "Kvalifiseringen (Q1–Q3) avgjør startoppstillingen for søndagens race (søn. 6. sep kl. 15.00 CEST / 13.00 UTC).\n\nVanlig løpshelg (ingen sprint): tre treninger, én kvalifisering lørdag ettermiddag og race søndag. Norsk visning Viaplay/V Sport.\n\nTid bekreftet mot formula1.com sin egen timeplan (arrangøren) — ikke ESPN-feeden, som feildaterer F1-helger (source-quirks).",
+    "id": "da9bb852c35a"
+  },
+  {
+    "sport": "f1",
     "tournament": "Formula 1 2026 - Race Weekend",
     "title": "Pirelli Italian Grand Prix",
     "time": "2026-09-06T13:00:00.000Z",
@@ -3672,6 +3714,48 @@
   },
   {
     "sport": "f1",
+    "tournament": "Formula 1 World Championship 2026",
+    "title": "Spansk Grand Prix – kvalifisering",
+    "time": "2026-09-12T14:00:00Z",
+    "endTime": "2026-09-12T15:00:00Z",
+    "venue": "MADRING, Madrid",
+    "norwegian": false,
+    "participants": [],
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-21T20:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.formula1.com/en/racing/2026/spain",
+      "https://www.madring.com/en/programa",
+      "https://racingnews365.com/f1/races/spanish-gp"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "formula1",
+        "url": "https://www.formula1.com/en/racing/2026/spain",
+        "basis": "primary",
+        "retrievedAt": "2026-08-21T20:45:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-21T20:45:00Z"
+      }
+    },
+    "summary": "Kvalifiseringen (Q1–Q3) avgjør startoppstillingen for søndagens race (søn. 13. sep kl. 15.00 CEST / 13.00 UTC).\n\nVanlig løpshelg (ingen sprint): tre treninger, én kvalifisering lørdag ettermiddag og race søndag. Norsk visning Viaplay/V Sport.\n\nTid bekreftet mot formula1.com sin egen timeplan (arrangøren) — ikke ESPN-feeden, som feildaterer F1-helger (source-quirks).",
+    "id": "0ec223066c9b"
+  },
+  {
+    "sport": "f1",
     "tournament": "Formula 1 2026 - Race Weekend",
     "title": "Tag Heuer Spanish Grand Prix",
     "time": "2026-09-13T13:00:00.000Z",
@@ -3735,89 +3819,5 @@
     ],
     "summary": "Davis Cup verdensgruppe-tie: Norge møter Kina i en hjemme-tie i Trondheim Spektrum, med Casper Ruud i spissen (Nicolai Budkov Kjær nr. 2).\n\nSpilles over to dager: fredag 18. sept fra kl. 18.00 (to single), lørdag 19. sept fra kl. 15.30 (én double + to single). Tider bekreftet mot Trondheim Spektrum + Norges Tennis- og Padelforbund.\n\nNorsk kringkaster er ennå ikke bekreftet — vises som «–» til verify fester kanalen (Davis Cup i Norge har variert mellom Eurosport/Max og TV 2).",
     "id": "d5f0ced174d7"
-  },
-  {
-    "sport": "f1",
-    "tournament": "Formula 1 World Championship 2026",
-    "title": "Italiensk Grand Prix – kvalifisering",
-    "time": "2026-09-05T14:00:00Z",
-    "endTime": "2026-09-05T15:00:00Z",
-    "venue": "Autodromo Nazionale Monza",
-    "norwegian": false,
-    "participants": [],
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-21T20:45:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.formula1.com/en/latest/article/formula-1-pirelli-gran-premio-ditalia-2026.7zaXkRgenHXVVXXGb1RGcf",
-      "https://www.monzanet.it/en/calendario-2026-formula-1-a-monza-dal-4-al-6-settembre/",
-      "https://racingnews365.com/f1/races/italian-gp"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "formula1",
-        "url": "https://www.formula1.com/en/latest/article/formula-1-pirelli-gran-premio-ditalia-2026.7zaXkRgenHXVVXXGb1RGcf",
-        "basis": "primary",
-        "retrievedAt": "2026-08-21T20:45:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-08-21T20:45:00Z"
-      }
-    },
-    "summary": "Kvalifiseringen (Q1–Q3) avgjør startoppstillingen for søndagens race (søn. 6. sep kl. 15.00 CEST / 13.00 UTC).\n\nVanlig løpshelg (ingen sprint): tre treninger, én kvalifisering lørdag ettermiddag og race søndag. Norsk visning Viaplay/V Sport.\n\nTid bekreftet mot formula1.com sin egen timeplan (arrangøren) — ikke ESPN-feeden, som feildaterer F1-helger (source-quirks).",
-    "id": "1932a8ad6632"
-  },
-  {
-    "sport": "f1",
-    "tournament": "Formula 1 World Championship 2026",
-    "title": "Spansk Grand Prix – kvalifisering",
-    "time": "2026-09-12T14:00:00Z",
-    "endTime": "2026-09-12T15:00:00Z",
-    "venue": "MADRING, Madrid",
-    "norwegian": false,
-    "participants": [],
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-21T20:45:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.formula1.com/en/racing/2026/spain",
-      "https://www.madring.com/en/programa",
-      "https://racingnews365.com/f1/races/spanish-gp"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "formula1",
-        "url": "https://www.formula1.com/en/racing/2026/spain",
-        "basis": "primary",
-        "retrievedAt": "2026-08-21T20:45:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-08-21T20:45:00Z"
-      }
-    },
-    "summary": "Kvalifiseringen (Q1–Q3) avgjør startoppstillingen for søndagens race (søn. 13. sep kl. 15.00 CEST / 13.00 UTC).\n\nVanlig løpshelg (ingen sprint): tre treninger, én kvalifisering lørdag ettermiddag og race søndag. Norsk visning Viaplay/V Sport.\n\nTid bekreftet mot formula1.com sin egen timeplan (arrangøren) — ikke ESPN-feeden, som feildaterer F1-helger (source-quirks).",
-    "id": "468d409cbfca"
   }
 ]
