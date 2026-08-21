@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-21T05:00:00Z",
+  "lastUpdated": "2026-08-21T09:00:00Z",
   "lastUpdatedBy": "research-agent",
   "version": 2,
   "leagues": [
@@ -633,16 +633,17 @@
       "id": "davis-cup-2026-norway-china",
       "name": "Davis Cup 2026 – Norge–Kina (Trondheim)",
       "sport": "tennis",
-      "reason": "HORISONT-SCAN (WP-116 / Step 2.6) 2026-08-19, horisont-scout: Davis Cup (catalog.tier2.tournaments) — Norge møter Kina i en HJEMME-tie i Trondheim Spektrum 18.–19. sept 2026, med Casper Ruud (catalog.tier2.athletes) + Nicolai Budkov Kjær. Marquee norsk hjemme-tennis. HORISONT-PLASSHOLDER, IKKE boardet: ~30 dager ut (så vidt utenfor ~4-ukersvinduet), og norsk kringkaster ikke bekreftet (Davis Cup i Norge har variert — verifiseres). Tider oppgitt av Norges Tennis- og Padelforbund (fre. 18. sept 18.00, lør. 19. sept 15.30) men holdes til de er bekreftet + kanal er satt. Legges til som datert event når innenfor vinduet + kanal bekreftet. Verify/neste kjøring følger.",
+      "reason": "HORISONT-SCAN (WP-116 / Step 2.6) 2026-08-19, horisont-scout: Davis Cup (catalog.tier2.tournaments) — Norge møter Kina i en HJEMME-tie i Trondheim Spektrum 18.–19. sept 2026, med Casper Ruud (catalog.tier2.athletes) + Nicolai Budkov Kjær. Marquee norsk hjemme-tennis. HORISONT-PLASSHOLDER, IKKE boardet: ~30 dager ut (så vidt utenfor ~4-ukersvinduet), og norsk kringkaster ikke bekreftet (Davis Cup i Norge har variert — verifiseres). Tider oppgitt av Norges Tennis- og Padelforbund (fre. 18. sept 18.00, lør. 19. sept 15.30). OPPDATERT 2026-08-21T09:00Z (research, standard-tier, coverage-audit LOW-hull): NÅ BOARDET som fler-dagers ai-research-event (medium) — tie-en er innenfor 28-dagersvinduet (18. sept = 28 dager fram) og tidene/rundeoppsettet er bekreftet mot TO uavhengige kilder: Trondheim Spektrums egen arrangementsside (fre. 18. sept dører 16.30 / start 18.00 CEST = 16.00 UTC, to single; lør. 19. sept dører 14.00 / start 15.30 CEST = 13.30 UTC, én double + to single) + forbundets publiserte tider (visitnorway-listingen bekrefter samme). NORSK KANAL FORTSATT UBEKREFTET etter web-sjekk (Davis Cup i Norge har variert mellom Eurosport/Max og TV 2; ingen 2026-spesifikk rettighetskilde funnet) → streaming boardet TOM (ærlig «–», ikke gjettet, per streaming-kontrakten). Verify fester norsk kanal + eksakt minutt mot daviscup.com/forbundet før streaming stemples.",
       "addedAt": "2026-08-19T02:15:00Z",
       "addedBy": "research-agent",
       "evidence": [
         "catalog.json#tier2.tournaments",
         "catalog.json#tier2.athletes",
+        "https://trondheimspektrum.no/arrangement/davis-cup-vm-i-tennis",
         "https://en.wikipedia.org/wiki/2026_Davis_Cup"
       ],
       "expires": "2026-09-20T23:59:59Z",
-      "priority": "low"
+      "priority": "medium"
     },
     {
       "id": "toppidrettsveka-2026",
