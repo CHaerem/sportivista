@@ -1,25 +1,25 @@
 {
-  "auditedAt": "2026-08-20T04:00:00Z",
+  "auditedAt": "2026-08-21T04:00:00Z",
   "horizonDays": 28,
   "gaps": [
     {
-      "interest": "Brann — Conference League-playoff mot PAOK Thessaloniki (begge legg)",
-      "whatsMissing": "Brann (fulgt katalog-tier2-klubb) spiller UECL-playoff mot PAOK, og INGEN av de to kampene står på tavla. 1. legg BORTE PAOK–Brann på Toumba er I DAG tor. 20. aug kl. 19.45 CEST (17.45 UTC / 20.45 EEST) — imminent og fortsatt fraværende. Returkampen HJEMME Brann–PAOK på Brann Stadion tor. 27. aug (tid ikke UEFA-festet ennå) mangler også. Asymmetri: de to andre norske lagene som spiller i DAG — Tromsø–Brighton (17.00) og Egnatia–Lillestrøm (17.00) — ER boardet; kun Brann falt ut.",
-      "why": "Rotårsak: tracked.json holdt Brann-kampen bevisst av tavla i tidligere kjøringer pga. avsparkskonflikt (kilder spriket 19.00 vs 21.00 CEST, audit 15. aug). Tiden er NÅ entydig løst: UEFA-kampside 2049259 + Sofascore + Fotmob + PAOK-forum (phantis) + futbol24 er alle enige om 20.45 EEST = 17.45 UTC. Konflikten som holdt den av tavla er dermed borte, men kampen er aldri blitt boardet — den falt mellom to stoler. NB norsk kanal: IKKE Viaplay som antatt — tv.vg.no lister BEGGE Brann-kampene (video 407256 borte + 407391 hjemme), dvs. VG+ Sport/VGTV har sub-lisensen for akkurat denne tie-en (nettopp lokal-holder-mønsteret tracked.json advarte om for norske klubbers tidlig-kvalik).",
+      "interest": "Grand Chess Tour Finals 2026 (St. Louis)",
+      "whatsMissing": "GCT-finalen (topp-4-utslagsspill i Grand Chess Tour) starter denne helgen i St. Louis og står IKKE på tavla. Alle fire finalistene er katalog-tier2-sjakkspillere: Praggnanandhaa, Wesley So, Fabiano Caruana og Vincent Keymer. Tavla har Sinquefield Cup som slutter i dag 21. aug, men den umiddelbare oppfølgeren — GCT-finalen — mangler helt. Marquee entity-gated sjakk, imminent (starter innen 1–3 dager).",
+      "why": "Sinquefield-eventet på tavla nevner selv i sammendraget «GCT-finalen følger 21.–28. aug», men finalen ble aldri boardet — den falt mellom to stoler da Sinquefield ble lagt inn. Web-bekreftet: Grand Chess Tour-arrangøren + Wikipedia er enige om finalen i Saint Louis Chess Club; matchformat 2 klassiske + 2 hurtig + 4 lyn per oppgjør. Datoer spriker litt mellom kildene (grandchesstour.org-oversikten: 21.–28. aug som helt vindu inkl. åpning; Wikipedia: selve spillet 22.–27. aug; tidligere søketreff antydet 24.–28.) — research/verify må feste eksakt rundeoppsett. Gratis norsk visning som Sinquefield: Saint Louis Chess Clubs offisielle YouTube/Twitch.",
       "corroboration": [
-        "https://www.uefa.com/uefaconferenceleague/match/2049259--paok-vs-brann/",
-        "https://www.sofascore.com/football/match/paok-sk-brann/jysbpb",
-        "https://tv.vg.no/video/407256/paok-thessaloniki-brann"
+        "https://en.wikipedia.org/wiki/Grand_Chess_Tour_2026",
+        "https://grandchesstour.org/tours/2026/tournaments",
+        "https://en.chessbase.com/post/grand-chess-tour-2026-field"
       ],
-      "suggestedSource": "https://www.uefa.com/uefaconferenceleague/match/2049259--paok-vs-brann/",
+      "suggestedSource": "https://grandchesstour.org/tours/2026/tournaments/",
       "severity": "high",
-      "firstSeen": "2026-08-20T04:00:00Z",
+      "firstSeen": "2026-08-21T04:00:00Z",
       "recurrences": 0
     },
     {
       "interest": "Eliteserien — runde 19 (29.–30. aug)",
-      "whatsMissing": "Eliteserien runde 19 (29.–30. aug, bl.a. Bodø/Glimt, Rosenborg, Molde, Brann) står fortsatt IKKE på tavla. Tavla har NULL Eliteserien-serierunder i hele 28-dagers-horisonten — kun OBOS-ligaen (Åsane–Lyn 26., Kongsvinger–Lyn 30.), europacup-playoff (norske lag) og utenlandske ligaer.",
-      "why": "Landslagspause ~17.–28. aug ⇒ det er KORREKT at ingen serierunde finnes før 29. aug (fraværet 20.–28. aug er riktig, ikke et hull). Det eneste som mangler er r19 (29.–30. aug), 9 dager fram — utenfor ESPN nor.1 sitt ~7-dagers scoreboard-vindu, så den statiske fetcheren har ennå ikke nådd datoen. Vindu-etterslep-hypotesen er nå EMPIRISK BEKREFTET: forrige runde (r18, 14.–16. aug) ble faktisk boardet mekanisk av static-fetcheren da vinduet nådde fram (tracked.json 2026-08-10: Molde–Tromsø/Rosenborg–Viking/Brann–HamKam boardet via static på korrekt tid). Fotball-fetcheren er altså frisk (stale-retained gjelder KUN esports, ikke football.json).",
+      "whatsMissing": "Eliteserien runde 19 (29.–30. aug, bl.a. Bodø/Glimt, Rosenborg, Molde, Brann) står fortsatt IKKE på tavla. Tavla har NULL Eliteserien-serierunder i hele 28-dagers-horisonten — kun OBOS-ligaen (Åsane–Lyn 26., Kongsvinger–Lyn 30.), europacup-playoff og utenlandske ligaer.",
+      "why": "Landslagspause ~17.–28. aug ⇒ det er KORREKT at ingen serierunde finnes før 29. aug (fraværet 21.–28. aug er riktig, ikke et hull). Det eneste som mangler er r19 (29.–30. aug), 8 dager fram — utenfor ESPN nor.1 sitt ~7-dagers scoreboard-vindu, så den statiske fetcheren har ennå ikke nådd datoen. Vindu-etterslep-hypotesen er empirisk bekreftet: forrige runde (r18, 14.–16. aug) ble boardet mekanisk av static-fetcheren da vinduet nådde fram. Fotball-fetcheren er frisk (stale-retained gjelder KUN esports, ikke football.json).",
       "corroboration": [
         "https://en.wikipedia.org/wiki/2026_Eliteserien",
         "https://www.nrk.no/sport/fotball_-kampprogram-for-eliteserien_-slik-spilles-eliteserien-2026-1.17700027"
@@ -27,38 +27,52 @@
       "suggestedSource": "https://www.fotball.no/turneringer/eliteserien/2026/",
       "severity": "medium",
       "firstSeen": "2026-08-13T05:00:00Z",
-      "recurrences": 3,
-      "recurrenceNote": "recurrences når 3 = normalt severity-bump-terskel (medium→high). BEVISST IKKE BUMPET denne kjøringen, per prompt-unntaket «hvis et recurrerende hull viser seg å være korrekt fravær, ikke eskaler et ikke-hull»: (a) fraværet før 29. aug er KORREKT (landslagspause), (b) vindu-ettersleget er empirisk bekreftet av at r18 self-fylte via static, og (c) det harde test-punktet (nor.1 fortsatt tom for r19 NÅR vinduet har nådd 29. aug, dvs. ~26. aug) er ikke nådd. HARDT TRIGGER for neste kjøring: hvis r19 fortsatt mangler når ~26. aug er innenfor scoreboard-vinduet, ER dette en reell fetcher-brist → bump til high og eskaler."
+      "recurrences": 4,
+      "recurrenceNote": "recurrences 3→4, over severity-bump-terskelen (3). BEVISST IKKE BUMPET, per prompt-unntaket «hvis et recurrerende hull viser seg å være korrekt fravær, ikke eskaler et ikke-hull»: (a) fraværet før 29. aug er KORREKT (landslagspause), (b) vindu-ettersleget er empirisk bekreftet av at r18 self-fylte via static, og (c) det harde test-punktet (nor.1 fortsatt tom for r19 NÅR vinduet har nådd 29. aug, dvs. ~26. aug) er ikke nådd. HARDT TRIGGER: hvis r19 fortsatt mangler når ~26. aug er innenfor scoreboard-vinduet, ER dette en reell fetcher-brist → bump til high og eskaler."
+    },
+    {
+      "interest": "Davis Cup — Norge–Kina (Trondheim, 18.–19. sep, Ruud)",
+      "whatsMissing": "Davis Cup verdensgruppe-tie Norge–Kina i Trondheim (18.–19. sep) med Casper Ruud (fulgt katalog-tier2-utøver; Davis Cup er katalog-tier2-turnering) er ikke på tavla. Ligger akkurat på 28-dagers-horisontkanten (18. sep = 28 dager fra i dag).",
+      "why": "Hjemme-tie for Ruud i Norge = høy fan-interesse og eksakt det katalogen dekker. Sto som «vakt, utenfor horisont» i forrige audit; nå så vidt innenfor 28-dagers-vinduet. Foreløpig LOW: research kan boarde den når rundeoppsett/norsk kanal (trolig TV 2 / Eurosport) er festet. Ikke web-verifisert eksakt avspark denne kjøringen — flagget som horisont-kandidat, ikke bekreftet hull.",
+      "corroboration": [
+        "https://www.nrk.no/sport/"
+      ],
+      "suggestedSource": "https://www.daviscup.com/",
+      "severity": "low",
+      "firstSeen": "2026-08-21T04:00:00Z",
+      "recurrences": 0
     }
   ],
   "sourceIssues": [
     {
       "source": "esports.js (Liquipedia CS2-matches fetcher)",
-      "issue": "docs/data/esports.json servert fra retention i 100 kjøringer på rad / ingen frisk henting på 5 dager (coverage-gaps.json stale-retained, opp fra 81 i går til rundt tallet 100). Fetcheren produserer ingenting; filen ser bare fersk ut fordi retainLastGood re-skriver siste gode kopi, og tavla skjuler det fordi ai-research dekker CS2 (BLAST Open Porto på tavla).",
-      "impact": "All maskinelt hentet CS2-dekning er falt bort; kun ai-research holder CS2 på tavla. En fetcher-brist, ikke et event-hull. Mekanisk flagget (stale-retained, severity high) → SELF-REPAIR-territorium, IKKE research-eskalering. Tallet stiger jevnt (61→81→~100 over to døgn) — fetcheren er utvetydig død og bør fikses.",
+      "issue": "docs/data/esports.json servert fra retention i 120 kjøringer på rad / ingen frisk henting på 6 dager (coverage-gaps.json stale-retained; consecutiveRetains 120, opp fra ~100 i går og 61→81→100 dagene før). Fetcheren produserer ingenting; filen ser bare fersk ut fordi retainLastGood re-skriver siste gode kopi, og tavla skjuler det fordi ai-research dekker CS2 (BLAST Open Porto på tavla).",
+      "impact": "All maskinelt hentet CS2-dekning er falt bort; kun ai-research holder CS2 på tavla. En fetcher-brist, ikke et event-hull → SELF-REPAIR-territorium, IKKE research-eskalering. Tallet stiger jevnt og monotont (61→81→100→120) — fetcheren er utvetydig død og bør fikses.",
       "severity": "high"
     }
   ],
   "coveredWell": [
-    "IMMINENT-PASS (20.–24. aug) web-rekonfirmert: KUN ETT high-hull (Brann UECL-playoff, se gaps). Alle andre helge-hovedeventer på tavla med riktig tid/kanal.",
-    "F1 — ESPN-BLINDSONE (source-quirks-mandat, sjekkes HVER kjøring): Nederlands GP (Zandvoort) sprintweekend web-rekonfirmert mot formula1.com/RacingNews365/Crash: sprint lør 22. kl. 12.00 lokal (10.00 UTC), kval lør 22. kl. 16.00 lokal (14.00 UTC), RACE søn 23. kl. 15.00 lokal (13.00 UTC) — stemmer EKSAKT med tavlas 4 F1-noder (sprintkval fre 14.30 UTC, sprint 10.00, kval 14.00, race 13.00). Ingen mis-datering. Italiensk GP 6. sep + Spansk GP (Madrid) 13. sep inne.",
-    "Europacup — norske lag ellers inne: Tromsø–Brighton (ECL-playoff 1. legg, i dag 20. 17.00), Egnatia–Lillestrøm (EL-playoff 1. legg, i dag 20. 17.00), Bodø/Glimt–NEC Nijmegen (CL-playoff retur 25.), Viking–Dinamo Zagreb (CL-playoff retur 26.). NEC–Bodø/Glimt (19.) allerede spilt/på tavla.",
-    "Premier League r1 (21.–24. aug) wholesale + La Liga (esp.1, inkl. Barcelona–Elche 23. + Real Madrid–Espanyol 22. + Real Madrid–Real Sociedad 26. + Barcelona–Athletic 27.) + Serie A r1 (22.–24., research) + Bundesliga r1 (28.–30., research) — alle på tavla.",
-    "Golf — FedExCup-sluttspillet: BMW Championship (20.–23., Bellerive) med Hovland + Reitan tee-tider, Tour Championship (27.–30., East Lake) inne.",
-    "Sykkel — Vuelta a España web-bekreftet start 22. aug (Monaco tempo), Uno-X Mobility i feltet. Multi-dags-event med endTime. Ingen katalog-løp mellom Arctic Race (16.) og Vuelta (22.) = korrekt fravær.",
+    "IMMINENT-PASS (21.–25. aug) web-rekonfirmert: KUN ETT nytt high-hull (GCT-finalen, se gaps). Forrige kjørings high-hull (Brann UECL-playoff mot PAOK) er LØST — kampen ble boardet OG spilt tor. 20. aug (1–1 borte mot PAOK per NRK); returkamp Brann–PAOK 27. aug står på tavla.",
+    "F1 — ESPN-BLINDSONE (source-quirks-mandat, sjekkes HVER kjøring): Nederlands GP (Zandvoort) sprintweekend web-rekonfirmert mot RacingNews365/ESPN/Crash/formula1.com: RACE søn 23. aug kl. 15.00 lokal (13.00 UTC) — stemmer EKSAKT med tavlas F1-node. Sprintkval fre 21. (14.30 UTC), sprint lør 22. (10.00 UTC), kval lør 22. (14.00 UTC) alle inne. Ingen mis-datering. Italiensk GP 6. sep + Spansk GP (Madrid) 13. sep inne.",
+    "Europacup — norske lag: alle tre torsdags-tie-er (20. aug) spilt og på tavla — PAOK–Brann (1–1), Tromsø–Brighton (0–0), Egnatia–Lillestrøm (0–0). Returer 27. aug (Brann–PAOK, Lillestrøm–Egnatia, Brighton–Tromsø) inne. Bodø/Glimt–NEC (CL-playoff retur 25.) + Viking–Dinamo Zagreb (26.) inne.",
+    "Premier League r1 (21.–24. aug) wholesale + La Liga (esp.1) + Serie A r1 (22.–24., research) + Bundesliga r1 (28.–30., research) — alle på tavla.",
+    "Golf — FedExCup-sluttspillet: BMW Championship (20.–23., Bellerive) med Hovland + Reitan tee-tider, Tour Championship (27.–30., East Lake) inne. DP World Tour Nexo Championship inne.",
+    "Sykkel — Vuelta a España web-bekreftet start lør 22. aug (Monaco tempo, første rytter 16.17 CEST), Uno-X Mobility i feltet. Multi-dags-event med endTime 13. sep. Ingen katalog-løp mellom Arctic Race (16.) og Vuelta (22.) = korrekt fravær.",
     "Tennis — Cincinnati Open t.o.m. ~24. (Ruud), US Open f.o.m. 25. aug (Ruud) inne.",
-    "Friidrett — Diamond League: Athletissima Lausanne 21., Silesia/Skolimowskiej 23., Weltklasse Zürich 27., DL-finalen Brussel 4. sep inne. World Athletics Ultimate Championship (Budapest 11.–13. sep, Ingebrigtsen/Warholm) inne.",
-    "Sjakk — Sinquefield Cup t.o.m. ~21., Global Chess League sesong 4 (Carlsen comeback) 3. sep inne.",
-    "Håndball — Elkjøp-ligaen (Storhamar–Gjerpen 26., Bergsøy–Kolstad 29. aug) inne. Vinteridretter av-sesong (aug) = korrekt fravær."
+    "Friidrett — Diamond League: Athletissima Lausanne 21., Silesia/Skolimowskiej 23., Weltklasse Zürich 27., DL-finalen Brussel 4.–5. sep inne. World Athletics Ultimate Championship (Budapest 11.–13. sep, Ingebrigtsen/Warholm) inne.",
+    "Sjakk — Sinquefield Cup t.o.m. 21., Global Chess League sesong 4 (Carlsen comeback) 3. sep inne. (GCT-finalen 22.–27. er hullet — se gaps.)",
+    "Ski — Toppidrettsveka (Hitra 21., Aure 22., Trondheim 23., Klæbo) inne. Håndball Elkjøp-ligaen (Storhamar–Gjerpen 26., Bergsøy–Kolstad 29. aug) inne. Vinteridretter av-sesong (aug) = korrekt fravær."
   ],
   "escalated": true,
   "notes": [
-    "Kjøring 2026-08-20 ~04:00Z (recall-audit). IMMINENT-PASS (20.–24. aug) kjørt først. NYTT HIGH-HULL funnet og web-bekreftet: Brann UECL-playoff mot PAOK — 1. legg (borte) I DAG 20. aug 17.45 UTC, returkamp hjemme 27. aug, INGEN av dem på tavla. Brann er en fulgt katalog-tier2-klubb; de to andre norske lagene som spiller i dag (Tromsø, Lillestrøm) ER boardet, kun Brann falt ut. Tiden var tidligere holdt av tavla pga. konflikt (15.-aug-audit) — nå entydig løst (UEFA 2049259 + Sofascore + Fotmob + phantis-forum enige, 20.45 EEST). Norsk kanal = VG+ Sport/VGTV (tv.vg.no lister begge legg), IKKE Viaplay — lokal-sublisens for norsk klubbs tidlig-kvalik. ESKALERT (escalate.request=deep) for research å boarde begge legg.",
-    "F1-blindsonen (Dutch GP sprintweekend) web-rekonfirmert mot formula1.com/RacingNews365/Crash — eksakt match med tavla, ingen mis-datering. Golf/Vuelta/PL-startrunde óg web-sjekket.",
-    "MEDIUM-GAP recurrerer: Eliteserien r19 (29.–30. aug) recurrences 2→3 (firstSeen 13. aug beholdt). recurrences når severity-bump-terskelen (3), men BEVISST IKKE BUMPET: fraværet før 29. aug er korrekt (landslagspause ~17.–28. aug), og vindu-ettersleget er nå empirisk bekreftet av at forrige runde (r18) self-fylte via static-fetcheren. Hardt trigger satt: hvis r19 fortsatt mangler når vinduet når 29. aug (~26. aug), er det en reell fetcher-brist → bump/eskaler neste kjøring. Se recurrenceNote i gap.",
-    "esports.js stale-retained: consecutiveRetains ~100 / 5 dager (61→81→100 over to døgn) — fetcheren er utvetydig død. Coverage-hullet den ville skapt er lukket av ai-research (BLAST Open Porto), men fetcheren må fikses (self-repair). Beholdt som sourceIssue high. Fotball-fetcheren er derimot frisk (r18 boardet mekanisk) — stale-retained gjelder kun esports.",
-    "MEKANISKE coverage-gaps.json-signaler TRIAGERT: entity-gaps «Rosenborg/RBK/Brann/Eliteserien/1.divisjon» = overgangs-/nyhets-treff (Rosenborg kjøper Chiakha, ny styreleder; Vålerenga-seier nevner Brann), IKKE events — MEN «Brann»-treffet skjulte et reelt event (UECL-playoff over), fanget uavhengig i imminent-passet. «Formel 1» = fører-skade-nyhet (Red Bull), ikke schedule; F1 boardet. «Mesterligaen» (Bodø/Glimt) = boardet (begge legg). tracked-claim Eliteserien = r19-vindu-ettersleget over. tracked-claim Håvard «rain» Nygaard = 100 Thieves' neste CS2-kamp; ikke i BLAST Open Porto-feltet, sen kunngjøring normalt (cs2-sources), ingen bekreftet berammet kamp funnet → vakt, ikke hull. tracked-claim Guttormsen/Jæger (friidrett, claimedDate 5. sep) = dekkes trolig av DL-finalen Brussel (4. sep) / Ultimate Championship (11.–13. sep), begge på tavla → vakt, ikke hull.",
+    "Kjøring 2026-08-21 ~04:00Z (recall-audit). IMMINENT-PASS (21.–25. aug) kjørt først. NYTT HIGH-HULL funnet og web-bekreftet: Grand Chess Tour-FINALEN i St. Louis (22.–27. aug), topp-4-utslagsspill der ALLE FIRE finalistene (Praggnanandhaa, Wesley So, Caruana, Keymer) er katalog-tier2-sjakkspillere. Sinquefield-eventet på tavla nevner selv «GCT-finalen følger 21.–28. aug», men finalen ble aldri boardet. Korroborert av grandchesstour.org + Wikipedia + ChessBase. ESKALERT (escalate.request=deep) for research å boarde den (rundeoppsett + gratis YouTube/Twitch-visning).",
+    "FORRIGE HIGH-HULL LØST: Brann UECL-playoff mot PAOK. PAOK–Brann (1. legg borte) sto på tavla og ble spilt tor. 20. aug (1–1, NRK). Returkamp Brann–PAOK 27. aug på Brann Stadion (VG+ Sport) inne. Hullet er borte — droppet fra gaps, ikke recurrert.",
+    "F1-blindsonen (Dutch GP sprintweekend) web-rekonfirmert mot RacingNews365/ESPN/Crash/formula1.com — race søn 15.00 lokal = 13.00 UTC, eksakt match med tavla, ingen mis-datering.",
+    "MEDIUM-GAP recurrerer: Eliteserien r19 (29.–30. aug) recurrences 3→4 (firstSeen 13. aug beholdt). Over bump-terskelen, men BEVISST IKKE BUMPET: fraværet før 29. aug er korrekt (landslagspause ~17.–28. aug), og vindu-ettersleget er empirisk bekreftet av at forrige runde (r18) self-fylte via static. Hardt trigger satt: hvis r19 fortsatt mangler når vinduet når 29. aug (~26. aug), er det en reell fetcher-brist → bump/eskaler neste kjøring. Se recurrenceNote i gap.",
+    "NYTT LOW-HULL (horisontkant): Davis Cup Norge–Kina (Trondheim 18.–19. sep, Ruud) — akkurat innenfor 28-dagers-horisonten nå (var «utenfor horisont, vakt» forrige kjøring). Flagget low for research å boarde når rundeoppsett/kanal er festet. Ikke eksakt web-verifisert denne kjøringen.",
+    "esports.js stale-retained: consecutiveRetains 120 / 6 dager (61→81→100→120) — fetcheren er utvetydig død. Coverage-hullet den ville skapt er lukket av ai-research (BLAST Open Porto 26. aug – 6. sep, 100 Thieves web-bekreftet i feltet via LCQ). Fetcheren må fikses (self-repair). Beholdt som sourceIssue high. Fotball-fetcheren er derimot frisk (r18 boardet mekanisk) — stale-retained gjelder kun esports.",
+    "MEKANISKE coverage-gaps.json-signaler TRIAGERT: entity-gaps «Rosenborg/Eliteserien/1.divisjon/Europaligaen/Sykkel-VM» = alle nyhets-/overgangs-/resultat-treff (Rosenborg-jentene slo Lyn i Toppserien; Haugesund kjøper 1.div-talent; Lillestrøm 0–0 i EL-playoff; Norges VM-tropp kunngjort), IKKE events → ingen hull. tracked-claim Eliteserien = r19-vindu-ettersleget over. tracked-claim Håvard «rain» Nygaard = 100 Thieves' neste CS2 = BLAST Open Porto (26. aug, 100T web-bekreftet i feltet) → dekket, ikke hull. tracked-claim Guttormsen/Jæger (friidrett, claimedDate 5. sep) = dekkes av DL-finalen Brussel (4.–5. sep) / Ultimate Championship (11.–13. sep), begge på tavla → vakt, ikke hull.",
     "SJEKKET, KORREKT FRAVÆR (ikke hull): Eliteserien landslagspause ~17.–28. aug (ingen serierunde før r19 29. aug); F1 ingen race mellom Dutch GP (23.) og Italiensk GP (6. sep); vinteridretter av-sesong (aug); ingen katalog-sykkelløp mellom Arctic Race (16.) og Vuelta (22.).",
-    "OVER/NÆR HORISONTEN, VAKT (ikke flagget som hull): Tromsø–Brighton retur (borte i England 27. aug) + Lillestrøm–Egnatia retur (hjemme Åråsen 27. aug) — begge holdt av tavla i tracked.json til UEFA fester tidene; research kan boarde disse i samme deep-kjøring som Brann. Eliteserien r20 (5.–6. sep, boardes via nor.1 når vinduet når fram); Davis Cup Norge–Kina (Trondheim 18.–19. sep, Ruud) akkurat utenfor 28-dagers-horisonten; UCI Road-VM Montréal 20.–27. sep (tracket, ikke katalog-promotert)."
+    "OVER HORISONTEN, VAKT (ikke flagget): UCI Road-VM Montréal 20.–27. sep (Norges tropp kunngjort i dag per NRK, tracket, ikke katalog-promotert, >28 dager fram); Eliteserien r20 (5.–6. sep, boardes via nor.1 når vinduet når fram)."
   ]
 }
