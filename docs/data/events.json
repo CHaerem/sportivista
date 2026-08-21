@@ -2651,9 +2651,9 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no/video/407391",
+        "urlKind": "deep"
       }
     ],
     "source": "ai-research",
@@ -2674,11 +2674,11 @@
         "note": "Verify 21. aug: Conference League-playoff returkamp Brann-PAOK tor 27. aug (1. kamp PAOK-Brann 20. aug). Bekreftet mot UEFA."
       },
       "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no/no-no/sport",
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no/video/407391",
         "basis": "official",
-        "retrievedAt": "2026-08-21T05:57:00Z",
-        "note": "Europa League + Conference League -> Viaplay i Norge."
+        "retrievedAt": "2026-08-21T13:15:00Z",
+        "note": "VG+ Sport/VGTV har fri-sublisensen for denne norske klubbens HJEMME-kvalik (samme monster som bortelegg + Tromso 406781). Bekreftet ved DIREKTE WebFetch av https://tv.vg.no/video/407391 (sidetittel «Conference League-playoff: Brann - PAOK Thessaloniki - VGTV», live-kampside). IKKE Viaplay: verify satte den generisk til Viaplay via EL+UECL->Viaplay-prior, som ikke fanger norske klubbers fri-sublisens paa hjemmekvalik."
       }
     },
     "summary": "Brann tar imot PAOK i returoppgjøret i Conference League-playoffen på Brann Stadion — vinneren over to kamper går til ligaspillet.\n\nDet første oppgjøret ble spilt i Thessaloniki 20. august. Brann jakter en plass i Conference League-gruppespillet.\n\nAvspark torsdag 27. august kl. 19.00 CEST (17.00 UTC) på Brann Stadion, Bergen.",
@@ -2705,9 +2705,9 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no/video/406806",
+        "urlKind": "deep"
       }
     ],
     "source": "ai-research",
@@ -2729,10 +2729,10 @@
       },
       "streaming": {
         "sourceId": "vgtv",
-        "url": "https://tv.vg.no/video/406806/lillestrom-kf-egnatia",
+        "url": "https://tv.vg.no/video/406806",
         "basis": "official",
-        "retrievedAt": "2026-08-21T02:10:00Z",
-        "note": "VG+ Sport/VGTV: norsk klubbs HJEMME-kvalik har fri-sublisens (samme monster som Brann 407256/407391 + Tromso 406781) - ikke Viaplay. VG lister hele Lillestrom-tie-en (video 407284 borte + 406806 hjemme). DISPLAY-BUG FAKTISK FIKSET 21. aug 02:10Z: fire tidligere kjoringer (16:55/20:50 den 20. aug m.fl.) paastod at feltet var synket, men det sto FREMDELES paa «Viaplay» (landing) da denne kjoringen leste filen. Feltet er NAA faktisk satt til VG+ Sport deep (406806); re-bekreftet ved direkte WebFetch av tv.vg.no/video/406806 (side-tittel «... Lillestrøm - KF Egnatia - VGTV»). Verify fester eksakt minutt."
+        "retrievedAt": "2026-08-21T13:15:00Z",
+        "note": "VG+ Sport/VGTV har fri-sublisensen for denne norske klubbens HJEMME-kvalik (samme monster som bortelegg + Tromso 406781). Bekreftet ved DIREKTE WebFetch av https://tv.vg.no/video/406806 (sidetittel «Conference League-playoff: Lillestrøm - KF Egnatia - VGTV», live-kampside). IKKE Viaplay: verify satte den generisk til Viaplay via EL+UECL->Viaplay-prior, som ikke fanger norske klubbers fri-sublisens paa hjemmekvalik."
       }
     },
     "summary": "Lillestrøm tar imot albanske KF Egnatia i returoppgjøret i Europa League-playoffen på Åråsen — vinneren over to kamper går til ligaspillet.\n\nDet første oppgjøret ble spilt borte i Albania 20. august.\n\nAvspark torsdag 27. august kl. 19.00 CEST (17.00 UTC) på Åråsen Stadion, Lillestrøm. Norsk visning: VG+ Sport.",
@@ -3683,5 +3683,54 @@
     ],
     "summary": "Davis Cup verdensgruppe-tie: Norge møter Kina i en hjemme-tie i Trondheim Spektrum, med Casper Ruud i spissen (Nicolai Budkov Kjær nr. 2).\n\nSpilles over to dager: fredag 18. sept fra kl. 18.00 (to single), lørdag 19. sept fra kl. 15.30 (én double + to single). Tider bekreftet mot Trondheim Spektrum + Norges Tennis- og Padelforbund.\n\nNorsk kringkaster er ennå ikke bekreftet — vises som «–» til verify fester kanalen (Davis Cup i Norge har variert mellom Eurosport/Max og TV 2).",
     "id": "d5f0ced174d7"
+  },
+  {
+    "sport": "beach volleyball",
+    "tournament": "Beach Pro Tour Elite16",
+    "title": "Elite16 Montréal – sluttspill",
+    "time": "2026-08-23T18:00:00Z",
+    "endTime": "2026-08-23T23:30:00Z",
+    "venue": "Montréal, Canada",
+    "norwegian": true,
+    "norwegianPlayers": [
+      {
+        "name": "Anders Mol"
+      },
+      {
+        "name": "Christian Sørum"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "Volleyball World TV",
+        "url": "https://go.volleyball.world",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-21T13:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.athletes",
+      "https://en.volleyballworld.com/beachvolleyball/competitions/beach-pro-tour/2026/elite16/montreal-can/",
+      "https://worldofvolley.com/beach-volley/331259/bv-elite16-m-anders-mol-and-christian-sorum-strike-gold-again-in-montreal.html"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "volleyball-world",
+        "url": "https://en.volleyballworld.com/beachvolleyball/competitions/beach-pro-tour/2026/elite16/montreal-can/",
+        "basis": "primary",
+        "retrievedAt": "2026-08-21T13:15:00Z",
+        "note": "Volleyball World (arrangør) oppgir stevnevinduet 19.–23. aug; sluttspill/medaljedag søndag 23. aug. Eksakt medaljekamp-klokkeslett bracket-avhengig — verify fester når stevnet lister sluttspillsoppsettet."
+      },
+      "streaming": {
+        "sourceId": "volleyball-world",
+        "url": "https://go.volleyball.world",
+        "basis": "official",
+        "retrievedAt": "2026-08-21T13:15:00Z",
+        "note": "Gratis på Volleyball World TV (go.volleyball.world). Norsk TV ikke bekreftet for dette stevnet."
+      }
+    },
+    "summary": "Beach Pro Tour Elite16 Montréal — sesongens siste Elite16 — avgjøres søndag 23. august med semifinaler og medaljekamper. Anders Mol og Christian Sørum er toppseedet og gikk videre fra puljespillet (åpningsseier 2–0 mot Pascariuc/Horst).\n\nMontréal er et av parets siste stevner sammen: Mol går til innendørs SuperLega (Rana Verona) etter sesongen. En reell norsk gullsjanse på deres favorittarena (de vant her i 2025).\n\nMedaljekampene spilles søndag kveld norsk tid (bronse ~22.00, finale ~00.00 natt til mandag) — eksakte tider og norsk visning festes av verify. Gratis global stream på Volleyball World TV."
   }
 ]

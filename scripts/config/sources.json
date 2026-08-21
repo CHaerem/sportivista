@@ -3301,6 +3301,39 @@
 			"notes": "Norsk rettighetshaver (bl.a. F1, golf — se scripts/fetch/golf.js og .claude/skills/norwegian-rights). Den ene kalibreringssjekken mot viaplay.no var UENIG med tavla — kanalfeltet er der produktet er svakest (WP-246). Vilkårene er LEST og er tause om roboter/skraping — de gir bare en ikke-eksklusiv lisens til personlig og privat bruk. Det er verken en tillatelse eller et forbud, og står som `unknown` med vilje."
 		},
 		{
+			"id": "volleyball-world",
+			"name": "Volleyball World (Beach Pro Tour)",
+			"publisher": "Volleyball World (FIVB)",
+			"url": "https://en.volleyballworld.com",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"beach-volleyball:beach-pro-tour"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-08-21"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"mechanism": "ikke gjennomgått denne registreringen",
+				"checkedAt": "2026-08-21"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"note": "ikke gjennomgått ennå; sitert for BPT Elite16 Montréal-vinduet",
+				"checkedAt": "2026-08-21"
+			},
+			"notes": "Registrert av research 2026-08-21: Volleyball World (FIVBs kommersielle arm) arrangerer Beach Pro Tour (Elite16/Challenge/Futures) og setter kampprogrammet; sender gratis på Volleyball World TV (go.volleyball.world). Sitert som tidsautoritet for Elite16 Montréal 19.–23. aug (Mol/Sørum). Vilkår/robots/TDM ikke gjennomgått (unknown)."
+		},
+		{
 			"id": "wikipedia",
 			"name": "Wikipedia",
 			"publisher": "Wikimedia Foundation",

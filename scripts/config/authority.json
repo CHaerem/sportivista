@@ -1,6 +1,6 @@
 {
 	"$schema": "./authority.schema.json",
-	"updatedAt": "2026-08-11",
+	"updatedAt": "2026-08-21",
 	"notes": "WP-241 · Autoritetskartet: hvem SKAPER faktumet, per konkurranse på tavla. To kilder per event, fordi produktets to kjernefelt har to ulike skapere: TIDEN settes av arrangøren/ligaen/forbundet, KANALEN av kringkasteren selv. Id-ene peker inn i scripts/config/sources.json (WP-240) — registeret er sannheten om hvilket domene som ER arrangøren, og det er lookalike-vernet: da dette kartet ble seedet sto lookalike-domenet franceletour.com som evidens på en Tour de France-etappe, mens letour.fr (A.S.O., som faktisk lager ruta og starttidene) forekom NULL ganger i hele events.json. Research slår opp konkurransen her og går til autoriteten FØRST (scripts/agents/research.md); verify sjekker kanalen mot kringkasterens egen kilde (scripts/agents/verify.md); scripts/lib/provenance.js migrerer flat evidence til per-faktum-proveniens (WP-242) med det samme kartet. SEEDET 29.07.2026 med hver konkurranse som faktisk sto på tavla den dagen; kanal-valgene speiler .claude/skills/norwegian-rights (prioren) og tavlas verifiserte verdier. AI-VEDLIKEHOLDT som catalog.json: research utvider kartet når en ny konkurranse dekkes — alltid med arrangørens VIRKELIGE domene, registrert i sources.json først.",
 	"competitions": [
 		{
@@ -37,6 +37,17 @@
 				"note": "World Athletics arrangerer sesongfinalen; tidsskjemaet publiseres på worldathletics.org (National Athletics Centre, Budapest 2026)."
 			},
 			"channel": { "options": [{ "sourceId": "nrk", "platform": "NRK" }], "note": "NRK i Norge; internasjonale rettigheter distribueres via Infront." }
+		},
+		{
+			"id": "beach-volleyball:beach-pro-tour",
+			"name": "Beach Pro Tour (Elite16/Challenge)",
+			"sport": "beach-volleyball",
+			"match": ["beach pro tour", "elite16", "elite 16"],
+			"time": {
+				"sourceIds": ["volleyball-world"],
+				"note": "Volleyball World setter kampprogrammet; stevnene har egne turneringssider (en.volleyballworld.com/.../elite16/<by>-<land>)."
+			},
+			"channel": { "options": [{ "sourceId": "volleyball-world", "platform": "Volleyball World TV" }], "note": "Gratis global stream på Volleyball World TV (go.volleyball.world). Norsk TV (TV 2) dekker enkelte stevner, ikke bekreftet per event." }
 		},
 		{
 			"id": "beach-volleyball:eurobeachvolley",
