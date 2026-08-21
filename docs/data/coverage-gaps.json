@@ -1,19 +1,8 @@
 {
-  "generatedAt": "2026-08-21T16:29:48.942Z",
-  "gapCount": 8,
+  "generatedAt": "2026-08-21T17:25:46.354Z",
+  "gapCount": 7,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Europaligaen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Lillestrøm med godt utgangspunkt i europaligajakten – fikk scoring annullert i 0-0-kamp",
-      "link": "https://www.nrk.no/sport/lillestrom-med-godt-utgangspunkt-i-europaligajakten-_-fikk-scoring-annullert-i-0-0-kamp-1.17996449",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-21T16:29:47.728Z"
-    },
     {
       "kind": "entity",
       "entity": "Nations League",
@@ -23,7 +12,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/21/uefa-concacaf-talks-set-up-combined-nations-league-tournament",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-21T16:29:47.728Z"
+      "detectedAt": "2026-08-21T17:25:45.205Z"
     },
     {
       "kind": "entity",
@@ -34,7 +23,7 @@
       "link": "https://www.nrk.no/sport/medier_-uefa-oker-presset-pa-infantino-_-er-i-samtaler-om-historisk-nasjonsliga-losning-1.17997186",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-21T16:29:47.728Z"
+      "detectedAt": "2026-08-21T17:25:45.205Z"
     },
     {
       "kind": "entity",
@@ -45,7 +34,7 @@
       "link": "https://www.nrk.no/sport/argentina-spiller-leandro-paredes-utestengt-i-ti-kamper-for-kaosscener-etter-vm-finalen-1.17997582",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-21T16:29:47.728Z"
+      "detectedAt": "2026-08-21T17:25:45.205Z"
     },
     {
       "kind": "tracked-claim",
@@ -57,7 +46,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "eliteserien-2026",
-      "detectedAt": "2026-08-21T16:29:48.700Z"
+      "detectedAt": "2026-08-21T17:25:46.153Z"
     },
     {
       "kind": "tracked-claim",
@@ -69,7 +58,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-21T16:29:48.700Z"
+      "detectedAt": "2026-08-21T17:25:46.153Z"
     },
     {
       "kind": "tracked-claim",
@@ -81,7 +70,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-21T16:29:48.700Z"
+      "detectedAt": "2026-08-21T17:25:46.153Z"
     },
     {
       "kind": "tracked-claim",
@@ -93,18 +82,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-21T16:29:48.700Z"
+      "detectedAt": "2026-08-21T17:25:46.153Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 133 consecutive run(s) — no fresh fetch in 7 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 133,
+      "detail": "docs/data/esports.json has been served from retention for 134 consecutive run(s) — no fresh fetch in 7 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 134,
       "staleDays": 7,
       "severity": "high",
-      "detectedAt": "2026-08-21T16:29:48.767Z"
+      "detectedAt": "2026-08-21T17:25:46.218Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
