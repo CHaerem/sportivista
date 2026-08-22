@@ -610,6 +610,63 @@
     ]
   },
   {
+    "sport": "cycling",
+    "tournament": "Renewi Tour",
+    "title": "Renewi Tour 2026",
+    "time": "2026-08-22T09:40:00Z",
+    "endTime": "2026-08-23T13:55:00Z",
+    "venue": "Benelux (etappe 4: Riemst–Bilzen-Hoeselt → etappe 5: Leuven)",
+    "norwegian": false,
+    "participants": [
+      {
+        "name": "Uno-X Mobility"
+      }
+    ],
+    "norwegianPlayers": [
+      {
+        "name": "Søren Wærenskjold",
+        "entityId": "soren-waerenskjold"
+      },
+      {
+        "name": "Jonas Abrahamsen",
+        "entityId": "jonas-abrahamsen"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "HBO Max (Sport)",
+        "url": "https://www.hbomax.com/no/no/sports/cycling",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-22T05:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "https://en.wikipedia.org/wiki/2026_Renewi_Tour",
+      "https://renewitour.com/en/stages/",
+      "https://cyclinguptodate.com/cycling/what-time-do-the-renewi-tour-2026-stages-start-and-finish-where-to-watch-on-tv-and-live-on-usa-and-uk",
+      "https://www.hbomax.com/no/no/sports/cycling"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "cyclinguptodate",
+        "url": "https://cyclinguptodate.com/cycling/what-time-do-the-renewi-tour-2026-stages-start-and-finish-where-to-watch-on-tv-and-live-on-usa-and-uk",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-22T05:20:00Z",
+        "note": "Arrangørens renewitour.com/en/stages leste OK for datoer/ruter, men oppga ingen starttider og tidsskjema-siden ga 403; starttider (~11.40 CEST) hentet sekundært (cyclinguptodate/domestique) og bekreftet av uavhengig write-time fact-check. Derfor medium, ikke high."
+      },
+      "streaming": {
+        "sourceId": "hbo-max",
+        "url": "https://www.hbomax.com/no/no/sports/cycling",
+        "basis": "official",
+        "retrievedAt": "2026-08-22T05:20:00Z"
+      }
+    },
+    "summary": "Sammenlagt etter etappe 3: Jenno Berckmoes (Lotto–Intermarché) leder, 6 sek foran Jasper Philipsen og 12 sek foran Olav Kooij. Beste Uno-X-rytter er Søren Wærenskjold på 7.-plass (+23 sek), også nr. 3 i poengkonkurransen. Etappevinnere så langt: Milan, Philipsen, Berckmoes.\n\nRenewi Tour (tidl. BinckBank/Benelux Tour) er Beneluxs eneste WorldTour-etapperitt – fem etapper 19.–23. august. Etappe 4 (lør. 22.): Riemst–Bilzen-Hoeselt, 187 km, kupert. Avslutningen (søn. 23.): rundløp i og rundt Leuven, 184 km – en teknisk, punchy finale som kan snu sammenlagt. Start begge dager ~11.40 CEST.",
+    "id": "e14517017950"
+  },
+  {
     "sport": "f1",
     "tournament": "Formula 1 World Championship 2026",
     "title": "Nederlands Grand Prix – sprint",
@@ -3847,59 +3904,5 @@
     ],
     "summary": "Davis Cup verdensgruppe-tie: Norge møter Kina i en hjemme-tie i Trondheim Spektrum, med Casper Ruud i spissen (Nicolai Budkov Kjær nr. 2).\n\nSpilles over to dager: fredag 18. sept fra kl. 18.00 (to single), lørdag 19. sept fra kl. 15.30 (én double + to single). Tider bekreftet mot Trondheim Spektrum + Norges Tennis- og Padelforbund.\n\nNorsk kringkaster er ennå ikke bekreftet — vises som «–» til verify fester kanalen (Davis Cup i Norge har variert mellom Eurosport/Max og TV 2).",
     "id": "d5f0ced174d7"
-  },
-  {
-    "sport": "cycling",
-    "tournament": "Renewi Tour",
-    "title": "Renewi Tour 2026",
-    "time": "2026-08-22T09:40:00Z",
-    "endTime": "2026-08-23T13:55:00Z",
-    "venue": "Benelux (etappe 4: Riemst–Bilzen-Hoeselt → etappe 5: Leuven)",
-    "norwegian": false,
-    "participants": [
-      {
-        "name": "Uno-X Mobility"
-      }
-    ],
-    "norwegianPlayers": [
-      {
-        "name": "Søren Wærenskjold"
-      },
-      {
-        "name": "Jonas Abrahamsen"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "HBO Max (Sport)",
-        "url": "https://www.hbomax.com/no/no/sports/cycling",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-22T05:20:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "https://en.wikipedia.org/wiki/2026_Renewi_Tour",
-      "https://renewitour.com/en/stages/",
-      "https://cyclinguptodate.com/cycling/what-time-do-the-renewi-tour-2026-stages-start-and-finish-where-to-watch-on-tv-and-live-on-usa-and-uk",
-      "https://www.hbomax.com/no/no/sports/cycling"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "cyclinguptodate",
-        "url": "https://cyclinguptodate.com/cycling/what-time-do-the-renewi-tour-2026-stages-start-and-finish-where-to-watch-on-tv-and-live-on-usa-and-uk",
-        "basis": "secondary",
-        "retrievedAt": "2026-08-22T05:20:00Z",
-        "note": "Arrangørens renewitour.com/en/stages leste OK for datoer/ruter, men oppga ingen starttider og tidsskjema-siden ga 403; starttider (~11.40 CEST) hentet sekundært (cyclinguptodate/domestique) og bekreftet av uavhengig write-time fact-check. Derfor medium, ikke high."
-      },
-      "streaming": {
-        "sourceId": "hbo-max",
-        "url": "https://www.hbomax.com/no/no/sports/cycling",
-        "basis": "official",
-        "retrievedAt": "2026-08-22T05:20:00Z"
-      }
-    },
-    "summary": "Sammenlagt etter etappe 3: Jenno Berckmoes (Lotto–Intermarché) leder, 6 sek foran Jasper Philipsen og 12 sek foran Olav Kooij. Beste Uno-X-rytter er Søren Wærenskjold på 7.-plass (+23 sek), også nr. 3 i poengkonkurransen. Etappevinnere så langt: Milan, Philipsen, Berckmoes.\n\nRenewi Tour (tidl. BinckBank/Benelux Tour) er Beneluxs eneste WorldTour-etapperitt – fem etapper 19.–23. august. Etappe 4 (lør. 22.): Riemst–Bilzen-Hoeselt, 187 km, kupert. Avslutningen (søn. 23.): rundløp i og rundt Leuven, 184 km – en teknisk, punchy finale som kan snu sammenlagt. Start begge dager ~11.40 CEST."
   }
 ]
