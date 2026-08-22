@@ -613,9 +613,9 @@
     "sport": "cycling",
     "tournament": "Renewi Tour",
     "title": "Renewi Tour 2026",
-    "time": "2026-08-22T09:40:00Z",
+    "time": "2026-08-23T09:40:00Z",
     "endTime": "2026-08-23T13:55:00Z",
-    "venue": "Benelux (etappe 4: Riemst–Bilzen-Hoeselt → etappe 5: Leuven)",
+    "venue": "Leuven (avslutningsetappe, rundløp)",
     "norwegian": false,
     "participants": [
       {
@@ -640,7 +640,7 @@
       }
     ],
     "source": "ai-research",
-    "researchedAt": "2026-08-22T05:20:00Z",
+    "researchedAt": "2026-08-22T16:50:00Z",
     "confidence": "medium",
     "evidence": [
       "https://en.wikipedia.org/wiki/2026_Renewi_Tour",
@@ -663,7 +663,7 @@
         "retrievedAt": "2026-08-22T05:20:00Z"
       }
     },
-    "summary": "Sammenlagt etter etappe 3: Jenno Berckmoes (Lotto–Intermarché) leder, 6 sek foran Jasper Philipsen og 12 sek foran Olav Kooij. Beste Uno-X-rytter er Søren Wærenskjold på 7.-plass (+23 sek), også nr. 3 i poengkonkurransen. Etappevinnere så langt: Milan, Philipsen, Berckmoes.\n\nRenewi Tour (tidl. BinckBank/Benelux Tour) er Beneluxs eneste WorldTour-etapperitt – fem etapper 19.–23. august. Etappe 4 (lør. 22.): Riemst–Bilzen-Hoeselt, 187 km, kupert. Avslutningen (søn. 23.): rundløp i og rundt Leuven, 184 km – en teknisk, punchy finale som kan snu sammenlagt. Start begge dager ~11.40 CEST.",
+    "summary": "Sammenlagt før avslutningsetappen: Jasper Philipsen (Alpecin-Deceuninck) har tatt ledelsen etter å ha vunnet etappe 4 (spurtseier foran Olav Kooij), foran Jenno Berckmoes. Beste Uno-X-rytter er Søren Wærenskjold i toppen av sammendraget (7.-plass +23 sek etter etappe 3, også nr. 3 i poengkonkurransen), Jonas Abrahamsen lenger ned. Eksakte Uno-X-plasseringer etter etappe 4 bekreftes av verify (ProCyclingStats blokkerte henting denne kjøringen).\n\nRenewi Tour (tidl. BinckBank/Benelux Tour) er Beneluxs eneste WorldTour-etapperitt – fem etapper 19.–23. august. Avslutningsetappen (søn. 23.): rundløp i og rundt Leuven, 184 km, 1 821 høydemeter – en teknisk, punchy finale som kan snu sammenlagt. Start ~11.40 CEST (09.40 UTC).",
     "id": "e14517017950",
     "verifiedAt": "2026-08-22T05:52:00Z",
     "verificationStatus": "confirmed",
@@ -3891,5 +3891,89 @@
     ],
     "summary": "Davis Cup verdensgruppe-tie: Norge møter Kina i en hjemme-tie i Trondheim Spektrum, med Casper Ruud i spissen (Nicolai Budkov Kjær nr. 2).\n\nSpilles over to dager: fredag 18. sept fra kl. 18.00 (to single), lørdag 19. sept fra kl. 15.30 (én double + to single). Tider bekreftet mot Trondheim Spektrum + Norges Tennis- og Padelforbund.\n\nNorsk kringkaster er ennå ikke bekreftet — vises som «–» til verify fester kanalen (Davis Cup i Norge har variert mellom Eurosport/Max og TV 2).",
     "id": "d5f0ced174d7"
+  },
+  {
+    "sport": "football",
+    "tournament": "Eliteserien",
+    "norwegian": true,
+    "source": "ai-research",
+    "researchedAt": "2026-08-22T16:55:00Z",
+    "confidence": "high",
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://velkommen.play.tv2.no/eliteserien",
+        "urlKind": "landing"
+      }
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "eliteserien",
+        "url": "https://www.eliteserien.no/",
+        "basis": "primary",
+        "retrievedAt": "2026-08-22T16:55:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://velkommen.play.tv2.no/eliteserien",
+        "basis": "official",
+        "retrievedAt": "2026-08-22T16:55:00Z"
+      }
+    },
+    "title": "Molde at Vålerenga",
+    "homeTeam": "Vålerenga",
+    "awayTeam": "Molde",
+    "time": "2026-08-29T14:00:00Z",
+    "endTime": "2026-08-29T15:50:00Z",
+    "venue": "Intility Arena, Oslo",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.eliteserien.no/",
+      "https://vif-fotball.ticketco.events/no/sk/m/e/vaalerenga__molde26/f7149afc-2748-42be-8ac5-f7096b4c05a0",
+      "https://www.espn.com/soccer/match/_/gameId/401873904/molde-valerenga"
+    ],
+    "summary": "Eliteserien runde 19. Molde (fulgt katalog-klubb) på bortebane mot Vålerenga på Intility Arena.\n\nMoldes første seriekamp etter oppholdet med europacup-playoff-uke; avspark bekreftet 16.00 CEST mot Vålerengas egen billettside + ESPN + eliteserien.no."
+  },
+  {
+    "sport": "football",
+    "tournament": "Eliteserien",
+    "norwegian": true,
+    "source": "ai-research",
+    "researchedAt": "2026-08-22T16:55:00Z",
+    "confidence": "high",
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://velkommen.play.tv2.no/eliteserien",
+        "urlKind": "landing"
+      }
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "eliteserien",
+        "url": "https://www.eliteserien.no/",
+        "basis": "primary",
+        "retrievedAt": "2026-08-22T16:55:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://velkommen.play.tv2.no/eliteserien",
+        "basis": "official",
+        "retrievedAt": "2026-08-22T16:55:00Z"
+      }
+    },
+    "title": "Rosenborg at Bodø/Glimt",
+    "homeTeam": "Bodø/Glimt",
+    "awayTeam": "Rosenborg",
+    "time": "2026-08-30T12:30:00Z",
+    "endTime": "2026-08-30T14:20:00Z",
+    "venue": "Aspmyra stadion, Bodø",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.eliteserien.no/",
+      "https://glimt.ticketco.shop/?tag=herrer",
+      "https://aspmyrastadion.com/terminliste/"
+    ],
+    "summary": "Eliteserien runde 19 – rundens storkamp mellom to fulgte katalog-klubber, Bodø/Glimt hjemme mot Rosenborg på Aspmyra.\n\nGlimts første seriekamp etter Mesterliga-playoffen (retur mot NEC 25. aug); Rosenborgs neste seriekamp. Avspark bekreftet 14.30 CEST mot Glimts egen billettbutikk + Aspmyra-terminlisten + eliteserien.no."
   }
 ]
