@@ -239,6 +239,34 @@
 			}
 		},
 		{
+			"id": "cycling:renewi-tour",
+			"name": "Renewi Tour",
+			"sport": "cycling",
+			"match": [
+				"renewi tour",
+				"benelux tour"
+			],
+			"time": {
+				"sourceIds": [
+					"renewi-tour"
+				],
+				"note": "Flanders Classics (renewitour.com) publiserer etappetidene; hentes sekundært (cyclinguptodate/domestique) når arrangørens tidsskjema-side er utilgjengelig."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "hbo-max",
+						"platform": "HBO Max (Sport)"
+					},
+					{
+						"sourceId": "eurosport-no",
+						"platform": "Eurosport Norge"
+					}
+				],
+				"note": "WBD/Warner holder WorldTour-sykkelen i Norge (HBO Max Sport / Eurosport), samme mønster som Vuelta."
+			}
+		},
+		{
 			"id": "cycling:tour-de-france",
 			"name": "Tour de France",
 			"sport": "cycling",
@@ -838,34 +866,6 @@
 					}
 				],
 				"note": "TV 2 har ATP-rettighetene i Norge t.o.m. 2026; WTA/Grand Slam-rettigheter avviker (Discovery/Max) — verifiser per turnering."
-			}
-		},
-		{
-			"id": "cycling:renewi-tour",
-			"name": "Renewi Tour",
-			"sport": "cycling",
-			"match": [
-				"renewi tour",
-				"benelux tour"
-			],
-			"time": {
-				"sourceIds": [
-					"renewi-tour"
-				],
-				"note": "Flanders Classics (renewitour.com) publiserer etappetidene; hentes sekundært (cyclinguptodate/domestique) når arrangørens tidsskjema-side er utilgjengelig."
-			},
-			"channel": {
-				"options": [
-					{
-						"sourceId": "hbo-max",
-						"platform": "HBO Max (Sport)"
-					},
-					{
-						"sourceId": "eurosport-no",
-						"platform": "Eurosport Norge"
-					}
-				],
-				"note": "WBD/Warner holder WorldTour-sykkelen i Norge (HBO Max Sport / Eurosport), samme mønster som Vuelta."
 			}
 		}
 	]
