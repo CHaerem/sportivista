@@ -1,12 +1,12 @@
 {
-	"runAt": "2026-08-21T10:00:00Z",
+	"runAt": "2026-08-22T09:31:28Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"The only finding in visual-qa-log.json (checkedAt 2026-08-18T08:31:57Z) — the 375px 'Assistent' FAB overlapping the wrapped 'Abonner i kalender' footer link (~16px horizontal / ~15.5px vertical at end-of-scroll) — is ALREADY resolved in main. No new fix is needed.",
-		"Fix is live: docs/css/cards.css lines 506-508 add `@media (max-width:460px){ .site-footer{ padding-bottom: calc(76px + env(safe-area-inset-bottom,0px)); } }`, reserving space below the footer so it lifts clear of the fixed FAB at true end-of-scroll. Shipped by prior ui-fix PR (commit 2b9cdf3ab), verified this run to be an ancestor of HEAD (`git merge-base --is-ancestor` passed).",
-		"Re-verified this run: fresh screenshot at 375px full-page (node scripts/screenshot.js --width=375 --full-page) shows a calm single quiet column, match titles wrapping cleanly to two lines with no truncation, and the footer links (Abonner i kalender / Merker og kilder / Personvern) intact and fully legible — no overflow or FAB occlusion.",
-		"The visual-qa-log is stale input for a loop already closed (captured 08:31Z on 2026-08-18; the fix merged the same day at 09:41Z). No open ui-autofix PR exists (only unrelated wp-242b is open). Opening another PR would stack a duplicate fix for a resolved finding and risk regressing a clean live site — so this run exits with no PR, per the prompt's conservative-abandon guidance."
+		"The only finding in visual-qa-log.json (checkedAt 2026-08-18T08:31:57Z) — the 375px 'Assistent' FAB overlapping the wrapped 'Abonner i kalender' footer link at end-of-scroll (~16px horizontal / ~15.5px vertical) — is ALREADY resolved in main. No new fix is needed.",
+		"Fix is live at HEAD: docs/css/cards.css lines 506-508 add `@media (max-width:460px){ .site-footer{ padding-bottom: calc(76px + env(safe-area-inset-bottom,0px)); } }`, reserving space below the footer so it lifts clear of the fixed FAB at true end-of-scroll. Shipped by prior ui-fix PR (commit 2b9cdf3ab); confirmed this run with `git merge-base --is-ancestor 2b9cdf3ab HEAD` (passed).",
+		"Re-verified this run: fresh full-page screenshot at 375px (node scripts/screenshot.js --width=375 --full-page) shows a calm single quiet column, match titles wrapping cleanly to two lines with no truncation, and the footer links (Om Sportivista / Abonner i kalender / Merker og kilder / Personvern) intact and fully legible with clearance space beneath — no overflow or FAB occlusion.",
+		"The visual-qa-log is stale input for a loop already closed (captured 08:31Z on 2026-08-18; the fix merged the same day at 09:41Z). No open ui-autofix PR exists (only unrelated wp-242b-strip-lookalikes is open). Opening another PR would stack a duplicate fix for a resolved finding and risk regressing a clean live site — so this run exits with no PR, per the prompt's conservative-abandon guidance."
 	]
 }
