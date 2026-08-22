@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T05:24:25.537Z",
+  "generatedAt": "2026-08-22T06:34:41.988Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -25,7 +25,7 @@
       "medium": 1,
       "low": 1
     },
-    "oldestGapAgeDays": 9.02,
+    "oldestGapAgeDays": 9.07,
     "escalatable": 1,
     "catalogMatched": 3,
     "auditedAt": "2026-08-22T04:00:00Z",
@@ -33,21 +33,21 @@
       {
         "interest": "Renewi Tour 2026 (WorldTour-etapperitt, Uno-X Mobility)",
         "severity": "high",
-        "ageDays": 0.06,
+        "ageDays": 0.11,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Eliteserien — runde 19 (29.–30. aug)",
         "severity": "medium",
-        "ageDays": 9.02,
+        "ageDays": 9.07,
         "recurrences": 5,
         "catalogMatched": true
       },
       {
         "interest": "Bretagne Classic – Ouest-France (Plouay, søn. 30. aug, Uno-X)",
         "severity": "low",
-        "ageDays": 0.06,
+        "ageDays": 0.11,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -55,21 +55,14 @@
   },
   "amendRate": {
     "nearTermRate": 0,
-    "nearTermChecked": 15,
+    "nearTermChecked": 5,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-08-21T05:57:00Z",
+    "verifyRunAt": "2026-08-22T05:52:00Z",
     "windowRate": 0,
-    "windowChecks": 93,
+    "windowChecks": 91,
     "windowAmendments": 0,
     "windowCorrections": 5,
     "byDay": [
-      {
-        "date": "2026-08-08",
-        "checks": 6,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-08-09",
         "checks": 6,
@@ -160,30 +153,35 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-08-22",
+        "checks": 4,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-22T05:24:18.550Z",
+    "buildCheckedAt": "2026-08-22T06:34:34.187Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-22T04:36:05.005Z",
-    "manifestAgeHours": 0.81,
+    "manifestGeneratedAt": "2026-08-22T05:24:28.897Z",
+    "manifestAgeHours": 1.17,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
-        "ageHours": 181.61
+        "ageHours": 182.78
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-08-21T05:57:00Z",
-    "verifyAgeHours": 23.46,
-    "corrections": 1,
+    "checkedAt": "2026-08-22T05:52:00Z",
+    "verifyAgeHours": 0.71,
+    "corrections": 0,
     "unresolved": 0,
-    "signals": [
-      "Weltklasse Zurich (DL-nest-siste, 26.-27. aug): la til Jakob Ingebrigtsen i norwegianPlayers (olympics.com bekrefter comeback)."
-    ]
+    "signals": []
   }
 }
