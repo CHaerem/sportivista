@@ -1,29 +1,18 @@
 {
-  "generatedAt": "2026-08-22T19:21:06.008Z",
-  "gapCount": 7,
+  "generatedAt": "2026-08-22T20:19:07.865Z",
+  "gapCount": 5,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "RBK",
-      "type": "missing",
-      "imminent": false,
-      "headline": "TV 2 erfarer: Tidligere RBK-er vender tilbake til Eliteserien",
-      "link": "https://www.tv2.no/a/19151952",
-      "feed": "tv2-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-22T19:21:03.404Z"
-    },
     {
       "kind": "entity",
       "entity": "Arsenal",
       "type": "missing",
       "imminent": false,
-      "headline": "Fotballryktene: Nå har Liverpool tatt kontakt med Real Madrid",
-      "link": "https://www.tv2.no/a/19151477",
-      "feed": "tv2-sport",
-      "matchCount": 5,
-      "detectedAt": "2026-08-22T19:21:03.404Z"
+      "headline": "Women’s Super League 2026-27 preview No 1: Arsenal",
+      "link": "https://www.theguardian.com/football/2026/aug/22/womens-super-league-2026-27-preview-no-1-arsenal",
+      "feed": "guardian-football",
+      "matchCount": 2,
+      "detectedAt": "2026-08-22T20:19:06.762Z"
     },
     {
       "kind": "entity",
@@ -34,18 +23,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/22/us-soccer-wants-excitement-after-the-world-cup-the-open-cup-provides-it",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-22T19:21:03.404Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Formel 1",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Formel 1: Norris sikret beste startspor i Nederland",
-      "link": "https://www.nrk.no/sport/formel-1_-norris-sikret-beste-startspor-i-nederland-1.17998230",
-      "feed": "nrk-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-08-22T19:21:03.404Z"
+      "detectedAt": "2026-08-22T20:19:06.762Z"
     },
     {
       "kind": "tracked-claim",
@@ -57,7 +35,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-22T19:21:04.416Z"
+      "detectedAt": "2026-08-22T20:19:07.687Z"
     },
     {
       "kind": "tracked-claim",
@@ -69,7 +47,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-22T19:21:04.416Z"
+      "detectedAt": "2026-08-22T20:19:07.687Z"
     },
     {
       "kind": "tracked-claim",
@@ -81,18 +59,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-22T19:21:04.416Z"
+      "detectedAt": "2026-08-22T20:19:07.687Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 156 consecutive run(s) — no fresh fetch in 8 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 156,
+      "detail": "docs/data/esports.json has been served from retention for 157 consecutive run(s) — no fresh fetch in 8 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 157,
       "staleDays": 8,
       "severity": "high",
-      "detectedAt": "2026-08-22T19:21:04.474Z"
+      "detectedAt": "2026-08-22T20:19:07.762Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
