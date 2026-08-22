@@ -1,18 +1,40 @@
 {
-  "generatedAt": "2026-08-21T22:16:15.182Z",
-  "gapCount": 7,
+  "generatedAt": "2026-08-22T01:55:16.784Z",
+  "gapCount": 8,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
       "entity": "Arsenal",
       "type": "missing",
+      "imminent": true,
+      "headline": "Football transfer rumours: Endrick to Liverpool? Arsenal to swap Martinelli for Yildiz?",
+      "link": "https://www.theguardian.com/football/2026/aug/21/football-transfer-rumours-endrick-to-liverpool-arsenal-to-swap-martinelli-for-yildiz",
+      "feed": "guardian-football",
+      "matchCount": 7,
+      "detectedAt": "2026-08-22T01:55:15.576Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Nations League",
+      "type": "missing",
       "imminent": false,
-      "headline": "Arsenal start title defence with comfortable win over Coventry",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cgr7e17010go?at_medium=RSS&amp;at_campaign=rss",
-      "feed": "bbc-football",
-      "matchCount": 8,
-      "detectedAt": "2026-08-21T22:16:14.290Z"
+      "headline": "Uefa and Concacaf discuss joint Nations League in latest challenge to Fifa",
+      "link": "https://www.theguardian.com/football/2026/aug/21/uefa-concacaf-talks-set-up-combined-nations-league-tournament",
+      "feed": "guardian-football",
+      "matchCount": 1,
+      "detectedAt": "2026-08-22T01:55:15.576Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Nasjonsligaen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Uefa øker presset på Infantino – er i samtaler om historisk nasjonsliga-løsning",
+      "link": "https://www.tv2.no/a/19149858",
+      "feed": "tv2-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-08-22T01:55:15.576Z"
     },
     {
       "kind": "entity",
@@ -23,18 +45,7 @@
       "link": "https://www.nrk.no/sport/argentina-spiller-leandro-paredes-utestengt-i-ti-kamper-for-kaosscener-etter-vm-finalen-1.17997582",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-21T22:16:14.290Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Tour of Flanders",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Renewi Tour: Jenno Berckmoes pulls off a heist to snatch stage 3 and the leader's jersey on Tour of Flanders-inspired day",
-      "link": "https://www.cyclingnews.com/pro-cycling/racing/renewi-tour-jenno-berckmoes-pulls-off-a-heist-to-snatch-stage-3-and-the-leaders-jersey-on-tour-of-flanders-inspired-day/",
-      "feed": "cyclingnews",
-      "matchCount": 1,
-      "detectedAt": "2026-08-21T22:16:14.290Z"
+      "detectedAt": "2026-08-22T01:55:15.576Z"
     },
     {
       "kind": "tracked-claim",
@@ -46,7 +57,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "eliteserien-2026",
-      "detectedAt": "2026-08-21T22:16:14.658Z"
+      "detectedAt": "2026-08-22T01:55:16.593Z"
     },
     {
       "kind": "tracked-claim",
@@ -58,7 +69,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-21T22:16:14.658Z"
+      "detectedAt": "2026-08-22T01:55:16.593Z"
     },
     {
       "kind": "tracked-claim",
@@ -70,7 +81,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-21T22:16:14.658Z"
+      "detectedAt": "2026-08-22T01:55:16.593Z"
     },
     {
       "kind": "tracked-claim",
@@ -82,18 +93,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-21T22:16:14.658Z"
+      "detectedAt": "2026-08-22T01:55:16.593Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 139 consecutive run(s) — no fresh fetch in 7 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 139,
+      "detail": "docs/data/esports.json has been served from retention for 140 consecutive run(s) — no fresh fetch in 7 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 140,
       "staleDays": 7,
       "severity": "high",
-      "detectedAt": "2026-08-21T22:16:14.688Z"
+      "detectedAt": "2026-08-22T01:55:16.647Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
