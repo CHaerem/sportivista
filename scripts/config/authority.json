@@ -1,80 +1,194 @@
 {
 	"$schema": "./authority.schema.json",
-	"updatedAt": "2026-08-21",
+	"updatedAt": "2026-08-22",
 	"notes": "WP-241 · Autoritetskartet: hvem SKAPER faktumet, per konkurranse på tavla. To kilder per event, fordi produktets to kjernefelt har to ulike skapere: TIDEN settes av arrangøren/ligaen/forbundet, KANALEN av kringkasteren selv. Id-ene peker inn i scripts/config/sources.json (WP-240) — registeret er sannheten om hvilket domene som ER arrangøren, og det er lookalike-vernet: da dette kartet ble seedet sto lookalike-domenet franceletour.com som evidens på en Tour de France-etappe, mens letour.fr (A.S.O., som faktisk lager ruta og starttidene) forekom NULL ganger i hele events.json. Research slår opp konkurransen her og går til autoriteten FØRST (scripts/agents/research.md); verify sjekker kanalen mot kringkasterens egen kilde (scripts/agents/verify.md); scripts/lib/provenance.js migrerer flat evidence til per-faktum-proveniens (WP-242) med det samme kartet. SEEDET 29.07.2026 med hver konkurranse som faktisk sto på tavla den dagen; kanal-valgene speiler .claude/skills/norwegian-rights (prioren) og tavlas verifiserte verdier. AI-VEDLIKEHOLDT som catalog.json: research utvider kartet når en ny konkurranse dekkes — alltid med arrangørens VIRKELIGE domene, registrert i sources.json først.",
 	"competitions": [
 		{
 			"id": "athletics:diamond-league",
 			"name": "Wanda Diamond League",
 			"sport": "athletics",
-			"match": ["diamond league"],
-			"time": { "sourceIds": ["diamond-league"], "note": "Diamond League AG setter stevneprogrammet; stevnene har egne underdomener (london.diamondleague.com)." },
-			"channel": { "options": [{ "sourceId": "nrk", "platform": "NRK" }], "note": "NRK har rettighetene 2025–2029 (inkl. Bislett Games)." }
+			"match": [
+				"diamond league"
+			],
+			"time": {
+				"sourceIds": [
+					"diamond-league"
+				],
+				"note": "Diamond League AG setter stevneprogrammet; stevnene har egne underdomener (london.diamondleague.com)."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "nrk",
+						"platform": "NRK"
+					}
+				],
+				"note": "NRK har rettighetene 2025–2029 (inkl. Bislett Games)."
+			}
 		},
 		{
 			"id": "athletics:em-friidrett",
 			"name": "EM friidrett (European Athletics Championships)",
 			"sport": "athletics",
-			"match": ["em friidrett", "european athletics championships"],
-			"time": { "sourceIds": ["european-athletics"] },
-			"channel": { "options": [{ "sourceId": "nrk", "platform": "NRK" }], "note": "NRK har friidretts-EM 2026." }
+			"match": [
+				"em friidrett",
+				"european athletics championships"
+			],
+			"time": {
+				"sourceIds": [
+					"european-athletics"
+				]
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "nrk",
+						"platform": "NRK"
+					}
+				],
+				"note": "NRK har friidretts-EM 2026."
+			}
 		},
 		{
 			"id": "athletics:nm-friidrett",
 			"name": "NM friidrett",
 			"sport": "athletics",
-			"match": ["nm friidrett"],
-			"time": { "sourceIds": ["nm-friidrett-2026", "friidrettsforbundet"], "note": "Arrangørens egen mesterskapsside setter tidsskjemaet; Norges Friidrettsforbund sanksjonerer terminlista." },
-			"channel": { "options": [{ "sourceId": "nrk", "platform": "NRK" }] }
+			"match": [
+				"nm friidrett"
+			],
+			"time": {
+				"sourceIds": [
+					"nm-friidrett-2026",
+					"friidrettsforbundet"
+				],
+				"note": "Arrangørens egen mesterskapsside setter tidsskjemaet; Norges Friidrettsforbund sanksjonerer terminlista."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "nrk",
+						"platform": "NRK"
+					}
+				]
+			}
 		},
 		{
 			"id": "athletics:ultimate-championship",
 			"name": "World Athletics Ultimate Championship",
 			"sport": "athletics",
-			"match": ["ultimate championship"],
+			"match": [
+				"ultimate championship"
+			],
 			"time": {
-				"sourceIds": ["world-athletics"],
+				"sourceIds": [
+					"world-athletics"
+				],
 				"note": "World Athletics arrangerer sesongfinalen; tidsskjemaet publiseres på worldathletics.org (National Athletics Centre, Budapest 2026)."
 			},
-			"channel": { "options": [{ "sourceId": "nrk", "platform": "NRK" }], "note": "NRK i Norge; internasjonale rettigheter distribueres via Infront." }
+			"channel": {
+				"options": [
+					{
+						"sourceId": "nrk",
+						"platform": "NRK"
+					}
+				],
+				"note": "NRK i Norge; internasjonale rettigheter distribueres via Infront."
+			}
 		},
 		{
 			"id": "beach-volleyball:beach-pro-tour",
 			"name": "Beach Pro Tour (Elite16/Challenge)",
 			"sport": "beach-volleyball",
-			"match": ["beach pro tour", "elite16", "elite 16"],
+			"match": [
+				"beach pro tour",
+				"elite16",
+				"elite 16"
+			],
 			"time": {
-				"sourceIds": ["volleyball-world"],
+				"sourceIds": [
+					"volleyball-world"
+				],
 				"note": "Volleyball World setter kampprogrammet; stevnene har egne turneringssider (en.volleyballworld.com/.../elite16/<by>-<land>)."
 			},
-			"channel": { "options": [{ "sourceId": "volleyball-world", "platform": "Volleyball World TV" }], "note": "Gratis global stream på Volleyball World TV (go.volleyball.world). Norsk TV (TV 2) dekker enkelte stevner, ikke bekreftet per event." }
+			"channel": {
+				"options": [
+					{
+						"sourceId": "volleyball-world",
+						"platform": "Volleyball World TV"
+					}
+				],
+				"note": "Gratis global stream på Volleyball World TV (go.volleyball.world). Norsk TV (TV 2) dekker enkelte stevner, ikke bekreftet per event."
+			}
 		},
 		{
 			"id": "beach-volleyball:eurobeachvolley",
 			"name": "CEV EuroBeachVolley",
 			"sport": "beach-volleyball",
-			"match": ["eurobeachvolley", "em sandvolleyball"],
-			"time": { "sourceIds": ["cev"], "note": "CEV arrangerer og setter mesterskapskalenderen; enkeltkamptider publiseres av arrangøren." },
-			"channel": { "options": [{ "sourceId": "cev", "platform": "CEV" }], "note": "CEV sender egne mesterskap gratis på egen strøm (EuroVolley.tv/YouTube) — bekreft eksakt plattform per event." }
+			"match": [
+				"eurobeachvolley",
+				"em sandvolleyball"
+			],
+			"time": {
+				"sourceIds": [
+					"cev"
+				],
+				"note": "CEV arrangerer og setter mesterskapskalenderen; enkeltkamptider publiseres av arrangøren."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "cev",
+						"platform": "CEV"
+					}
+				],
+				"note": "CEV sender egne mesterskap gratis på egen strøm (EuroVolley.tv/YouTube) — bekreft eksakt plattform per event."
+			}
 		},
 		{
 			"id": "chess:esports-world-cup",
 			"name": "Esports World Cup (sjakk)",
 			"sport": "chess",
-			"match": ["esports world cup"],
-			"time": { "sourceIds": ["esports-world-cup"] },
-			"channel": { "options": [{ "sourceId": "twitch", "platform": "Twitch" }], "note": "Offisiell EWC-strøm; sendes også på Chess.com (registerets chess-com-oppføring er aggregator for terminlister — strømmen deres er likevel offisiell for dette formatet)." }
+			"match": [
+				"esports world cup"
+			],
+			"time": {
+				"sourceIds": [
+					"esports-world-cup"
+				]
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "twitch",
+						"platform": "Twitch"
+					}
+				],
+				"note": "Offisiell EWC-strøm; sendes også på Chess.com (registerets chess-com-oppføring er aggregator for terminlister — strømmen deres er likevel offisiell for dette formatet)."
+			}
 		},
 		{
 			"id": "chess:grand-chess-tour",
 			"name": "Grand Chess Tour",
 			"sport": "chess",
-			"match": ["grand chess tour"],
-			"time": { "sourceIds": ["grand-chess-tour"] },
+			"match": [
+				"grand chess tour"
+			],
+			"time": {
+				"sourceIds": [
+					"grand-chess-tour"
+				]
+			},
 			"channel": {
 				"options": [
-					{ "sourceId": "grand-chess-tour", "platform": "YouTube", "note": "Selv-strømmet via Saint Louis Chess Club — arrangørens egen sending." },
-					{ "sourceId": "twitch", "platform": "Twitch" }
+					{
+						"sourceId": "grand-chess-tour",
+						"platform": "YouTube",
+						"note": "Selv-strømmet via Saint Louis Chess Club — arrangørens egen sending."
+					},
+					{
+						"sourceId": "twitch",
+						"platform": "Twitch"
+					}
 				]
 			}
 		},
@@ -82,47 +196,123 @@
 			"id": "cycling:arctic-race-of-norway",
 			"name": "Arctic Race of Norway",
 			"sport": "cycling",
-			"match": ["arctic race"],
-			"time": { "sourceIds": ["arctic-race-of-norway"], "note": "Arrangert i partnerskap med A.S.O.; egen offisiell side." },
-			"channel": { "options": [{ "sourceId": "tv2", "platform": "TV 2" }], "note": "Alle etapper direkte på TV 2 Direkte + TV 2 Play (TV2 Sykkels egen kunngjøring)." }
+			"match": [
+				"arctic race"
+			],
+			"time": {
+				"sourceIds": [
+					"arctic-race-of-norway"
+				],
+				"note": "Arrangert i partnerskap med A.S.O.; egen offisiell side."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "tv2",
+						"platform": "TV 2"
+					}
+				],
+				"note": "Alle etapper direkte på TV 2 Direkte + TV 2 Play (TV2 Sykkels egen kunngjøring)."
+			}
 		},
 		{
 			"id": "cycling:danmark-rundt",
 			"name": "PostNord Danmark Rundt",
 			"sport": "cycling",
-			"match": ["danmark rundt", "tour of denmark"],
-			"time": { "sourceIds": ["postnord-danmark-rundt"] },
-			"channel": { "options": [{ "sourceId": "hbo-max", "platform": "HBO Max" }], "note": "Verifisert på tavla juli 2026 (historisk Eurosport Norge/Max; DR/DRTV er dansk rettighetshaver)." }
+			"match": [
+				"danmark rundt",
+				"tour of denmark"
+			],
+			"time": {
+				"sourceIds": [
+					"postnord-danmark-rundt"
+				]
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "hbo-max",
+						"platform": "HBO Max"
+					}
+				],
+				"note": "Verifisert på tavla juli 2026 (historisk Eurosport Norge/Max; DR/DRTV er dansk rettighetshaver)."
+			}
 		},
 		{
 			"id": "cycling:tour-de-france",
 			"name": "Tour de France",
 			"sport": "cycling",
-			"match": ["tour de france"],
-			"time": { "sourceIds": ["letour"], "note": "A.S.O. LAGER ruta og starttidene — letour.fr er kilden, ikke aggregatorene som refererer den." },
-			"channel": { "options": [{ "sourceId": "tv2", "platform": "TV 2" }], "note": "TV 2-avtale 2026–2030; eierpreferanse: vis kun TV 2 Play (se norwegian-rights-skillen)." },
-			"lookalikes": ["franceletour.com"],
+			"match": [
+				"tour de france"
+			],
+			"time": {
+				"sourceIds": [
+					"letour"
+				],
+				"note": "A.S.O. LAGER ruta og starttidene — letour.fr er kilden, ikke aggregatorene som refererer den."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "tv2",
+						"platform": "TV 2"
+					}
+				],
+				"note": "TV 2-avtale 2026–2030; eierpreferanse: vis kun TV 2 Play (se norwegian-rights-skillen)."
+			},
+			"lookalikes": [
+				"franceletour.com"
+			],
 			"notes": "Kartets opphavseksempel: franceletour.com (en lookalike) sto som evidens på en etappe mens letour.fr aldri var sitert."
 		},
 		{
 			"id": "cycling:tour-de-france-femmes",
 			"name": "Tour de France Femmes",
 			"sport": "cycling",
-			"match": ["tour de france femmes"],
-			"time": { "sourceIds": ["letour"], "note": "A.S.O.; offisiell side letourfemmes.fr (registrert som endpoint på letour-kilden)." },
-			"channel": { "options": [{ "sourceId": "tv2", "platform": "TV 2" }] },
-			"lookalikes": ["franceletour.com"]
+			"match": [
+				"tour de france femmes"
+			],
+			"time": {
+				"sourceIds": [
+					"letour"
+				],
+				"note": "A.S.O.; offisiell side letourfemmes.fr (registrert som endpoint på letour-kilden)."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "tv2",
+						"platform": "TV 2"
+					}
+				]
+			},
+			"lookalikes": [
+				"franceletour.com"
+			]
 		},
 		{
 			"id": "cycling:tour-de-pologne",
 			"name": "Tour de Pologne",
 			"sport": "cycling",
-			"match": ["tour de pologne"],
-			"time": { "sourceIds": ["tour-de-pologne"], "note": "Lang Team er arrangør; tourdepologne.pl setter etappetidene." },
+			"match": [
+				"tour de pologne"
+			],
+			"time": {
+				"sourceIds": [
+					"tour-de-pologne"
+				],
+				"note": "Lang Team er arrangør; tourdepologne.pl setter etappetidene."
+			},
 			"channel": {
 				"options": [
-					{ "sourceId": "hbo-max", "platform": "HBO Max" },
-					{ "sourceId": "eurosport-no", "platform": "Eurosport" }
+					{
+						"sourceId": "hbo-max",
+						"platform": "HBO Max"
+					},
+					{
+						"sourceId": "eurosport-no",
+						"platform": "Eurosport"
+					}
 				]
 			}
 		},
@@ -130,21 +320,52 @@
 			"id": "cycling:vuelta-a-espana",
 			"name": "Vuelta a España",
 			"sport": "cycling",
-			"match": ["vuelta"],
-			"time": { "sourceIds": ["lavuelta"], "note": "Unipublic/A.S.O.; lavuelta.es er arrangørens side." },
-			"channel": { "options": [{ "sourceId": "hbo-max", "platform": "HBO Max" }], "note": "WBD-porteføljen; verifiser per etappe." }
+			"match": [
+				"vuelta"
+			],
+			"time": {
+				"sourceIds": [
+					"lavuelta"
+				],
+				"note": "Unipublic/A.S.O.; lavuelta.es er arrangørens side."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "hbo-max",
+						"platform": "HBO Max"
+					}
+				],
+				"note": "WBD-porteføljen; verifiser per etappe."
+			}
 		},
 		{
 			"id": "esports:blast",
 			"name": "BLAST (Bounty/Premier)",
 			"sport": "esports",
-			"match": ["blast"],
-			"time": { "sourceIds": ["blast"] },
+			"match": [
+				"blast"
+			],
+			"time": {
+				"sourceIds": [
+					"blast"
+				]
+			},
 			"channel": {
 				"options": [
-					{ "sourceId": "blast", "platform": "BLAST.tv", "note": "Selv-strømmet — arrangørens egen gratissending." },
-					{ "sourceId": "twitch", "platform": "Twitch" },
-					{ "sourceId": "kick", "platform": "Kick" }
+					{
+						"sourceId": "blast",
+						"platform": "BLAST.tv",
+						"note": "Selv-strømmet — arrangørens egen gratissending."
+					},
+					{
+						"sourceId": "twitch",
+						"platform": "Twitch"
+					},
+					{
+						"sourceId": "kick",
+						"platform": "Kick"
+					}
 				]
 			}
 		},
@@ -152,12 +373,25 @@
 			"id": "esports:esports-world-cup",
 			"name": "Esports World Cup (CS2)",
 			"sport": "esports",
-			"match": ["esports world cup"],
-			"time": { "sourceIds": ["esports-world-cup"] },
+			"match": [
+				"esports world cup"
+			],
+			"time": {
+				"sourceIds": [
+					"esports-world-cup"
+				]
+			},
 			"channel": {
 				"options": [
-					{ "sourceId": "twitch", "platform": "Twitch" },
-					{ "sourceId": "esports-world-cup", "platform": "YouTube", "note": "Arrangørens egen offisielle strøm." }
+					{
+						"sourceId": "twitch",
+						"platform": "Twitch"
+					},
+					{
+						"sourceId": "esports-world-cup",
+						"platform": "YouTube",
+						"note": "Arrangørens egen offisielle strøm."
+					}
 				]
 			}
 		},
@@ -165,12 +399,24 @@
 			"id": "esports:starladder",
 			"name": "StarLadder (StarSeries)",
 			"sport": "esports",
-			"match": ["starladder"],
-			"time": { "sourceIds": ["starladder"] },
+			"match": [
+				"starladder"
+			],
+			"time": {
+				"sourceIds": [
+					"starladder"
+				]
+			},
 			"channel": {
 				"options": [
-					{ "sourceId": "kick", "platform": "Kick" },
-					{ "sourceId": "twitch", "platform": "Twitch" }
+					{
+						"sourceId": "kick",
+						"platform": "Kick"
+					},
+					{
+						"sourceId": "twitch",
+						"platform": "Twitch"
+					}
 				],
 				"note": "StarLadder selv-strømmer gratis (Kick/Twitch)."
 			}
@@ -179,119 +425,317 @@
 			"id": "f1:world-championship",
 			"name": "Formula 1 World Championship",
 			"sport": "f1",
-			"match": ["formula 1", "formel 1"],
-			"time": { "sourceIds": ["formula1"], "note": "formula1.com er arrangøren og MØNSTERET (4 av 4 kalibreringssjekker riktige); ESPN feildaterer notorisk løpshelger (source-quirks)." },
-			"channel": { "options": [{ "sourceId": "viaplay", "platform": "Viaplay" }], "note": "Viaplay har alle økter (trening/kvalik/sprint/løp)." }
+			"match": [
+				"formula 1",
+				"formel 1"
+			],
+			"time": {
+				"sourceIds": [
+					"formula1"
+				],
+				"note": "formula1.com er arrangøren og MØNSTERET (4 av 4 kalibreringssjekker riktige); ESPN feildaterer notorisk løpshelger (source-quirks)."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "viaplay",
+						"platform": "Viaplay"
+					}
+				],
+				"note": "Viaplay har alle økter (trening/kvalik/sprint/løp)."
+			}
 		},
 		{
 			"id": "football:bundesliga",
 			"name": "Bundesliga",
 			"sport": "football",
-			"match": ["bundesliga"],
-			"time": { "sourceIds": ["bundesliga-dfl"], "note": "DFL/bundesliga.com setter og publiserer de bekreftede avsparkstidene." },
-			"channel": { "options": [{ "sourceId": "viaplay", "platform": "Viaplay" }], "note": "Viaplay har de norske Bundesliga-rettighetene t.o.m. 2029 (Viaplay Groups egen pressemelding); enkeltkamper også via TV 2 Play «Mer fotball»." }
+			"match": [
+				"bundesliga"
+			],
+			"time": {
+				"sourceIds": [
+					"bundesliga-dfl"
+				],
+				"note": "DFL/bundesliga.com setter og publiserer de bekreftede avsparkstidene."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "viaplay",
+						"platform": "Viaplay"
+					}
+				],
+				"note": "Viaplay har de norske Bundesliga-rettighetene t.o.m. 2029 (Viaplay Groups egen pressemelding); enkeltkamper også via TV 2 Play «Mer fotball»."
+			}
 		},
 		{
 			"id": "football:champions-league",
 			"name": "UEFA Champions League",
 			"sport": "football",
-			"match": ["champions league"],
-			"time": { "sourceIds": ["uefa"] },
-			"channel": { "options": [{ "sourceId": "tv2", "platform": "TV 2" }], "note": "CL er TV 2s i Norge t.o.m. 2030/31." }
+			"match": [
+				"champions league"
+			],
+			"time": {
+				"sourceIds": [
+					"uefa"
+				]
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "tv2",
+						"platform": "TV 2"
+					}
+				],
+				"note": "CL er TV 2s i Norge t.o.m. 2030/31."
+			}
 		},
 		{
 			"id": "football:club-friendlies",
 			"name": "Treningskamper (klubb)",
 			"sport": "football",
-			"match": ["treningskamp", "friendly"],
+			"match": [
+				"treningskamp",
+				"friendly"
+			],
 			"time": {
-				"sourceIds": ["fc-barcelona", "manchester-united", "tromso-il", "birmingham-city"],
+				"sourceIds": [
+					"fc-barcelona",
+					"manchester-united",
+					"tromso-il",
+					"birmingham-city"
+				],
 				"note": "Klubbens EGEN side er primærkilden for egne treningskamper (rolledoktrinen i sources.json) — listen er klubbene vi faktisk følger; utvid registeret når en ny klubbs kamp dekkes."
 			},
-			"channel": { "options": [], "note": "Varierer per kamp (VG TV, TV 2 Play, klubb-TV …) — docs/data/tv-listings.json er norsk fasit; ellers kringkasterens egen kunngjøring per kamp." }
+			"channel": {
+				"options": [],
+				"note": "Varierer per kamp (VG TV, TV 2 Play, klubb-TV …) — docs/data/tv-listings.json er norsk fasit; ellers kringkasterens egen kunngjøring per kamp."
+			}
 		},
 		{
 			"id": "football:community-shield",
 			"name": "FA Community Shield",
 			"sport": "football",
-			"match": ["community shield"],
-			"time": { "sourceIds": ["the-fa"], "note": "The FA arrangerer og setter avspark." },
-			"channel": { "options": [{ "sourceId": "viaplay", "platform": "Viaplay" }] }
+			"match": [
+				"community shield"
+			],
+			"time": {
+				"sourceIds": [
+					"the-fa"
+				],
+				"note": "The FA arrangerer og setter avspark."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "viaplay",
+						"platform": "Viaplay"
+					}
+				]
+			}
 		},
 		{
 			"id": "football:conference-league",
 			"name": "UEFA Conference League",
 			"sport": "football",
-			"match": ["conference league"],
-			"time": { "sourceIds": ["uefa"] },
-			"channel": { "options": [{ "sourceId": "viaplay", "platform": "Viaplay" }], "note": "Viaplay har EL+ECL i Norge t.o.m. 2030/31; norske klubbers tidlige kvalikkamper kan ha fri-sublisens (VG TV)." }
+			"match": [
+				"conference league"
+			],
+			"time": {
+				"sourceIds": [
+					"uefa"
+				]
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "viaplay",
+						"platform": "Viaplay"
+					}
+				],
+				"note": "Viaplay har EL+ECL i Norge t.o.m. 2030/31; norske klubbers tidlige kvalikkamper kan ha fri-sublisens (VG TV)."
+			}
 		},
 		{
 			"id": "football:eliteserien",
 			"name": "Eliteserien",
 			"sport": "football",
-			"match": ["eliteserien"],
-			"time": { "sourceIds": ["eliteserien", "fotball-no"], "note": "Norsk Toppfotball setter kampoppsettet; NFF (fotball.no) er forbundets terminliste-register." },
-			"channel": { "options": [{ "sourceId": "tv2", "platform": "TV 2" }] }
+			"match": [
+				"eliteserien"
+			],
+			"time": {
+				"sourceIds": [
+					"eliteserien",
+					"fotball-no"
+				],
+				"note": "Norsk Toppfotball setter kampoppsettet; NFF (fotball.no) er forbundets terminliste-register."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "tv2",
+						"platform": "TV 2"
+					}
+				]
+			}
 		},
 		{
 			"id": "football:europa-league",
 			"name": "UEFA Europa League",
 			"sport": "football",
-			"match": ["europa league"],
-			"time": { "sourceIds": ["uefa"] },
-			"channel": { "options": [{ "sourceId": "viaplay", "platform": "Viaplay" }], "note": "Se conference-league-noten om fri-sublisenser." }
+			"match": [
+				"europa league"
+			],
+			"time": {
+				"sourceIds": [
+					"uefa"
+				]
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "viaplay",
+						"platform": "Viaplay"
+					}
+				],
+				"note": "Se conference-league-noten om fri-sublisenser."
+			}
 		},
 		{
 			"id": "football:la-liga",
 			"name": "La Liga",
 			"sport": "football",
-			"match": ["la liga"],
-			"time": { "sourceIds": ["laliga"] },
-			"channel": { "options": [{ "sourceId": "tv2", "platform": "TV 2" }], "note": "TV 2 fornyet de norske rettighetene t.o.m. sommeren 2030." }
+			"match": [
+				"la liga"
+			],
+			"time": {
+				"sourceIds": [
+					"laliga"
+				]
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "tv2",
+						"platform": "TV 2"
+					}
+				],
+				"note": "TV 2 fornyet de norske rettighetene t.o.m. sommeren 2030."
+			}
 		},
 		{
 			"id": "football:obos-ligaen",
 			"name": "OBOS-ligaen",
 			"sport": "football",
-			"match": ["obos"],
-			"time": { "sourceIds": ["eliteserien", "fotball-no"], "note": "Norsk Toppfotball (obos-ligaen.no er endpoint på eliteserien-kilden)." },
-			"channel": { "options": [{ "sourceId": "tv2", "platform": "TV 2" }] }
+			"match": [
+				"obos"
+			],
+			"time": {
+				"sourceIds": [
+					"eliteserien",
+					"fotball-no"
+				],
+				"note": "Norsk Toppfotball (obos-ligaen.no er endpoint på eliteserien-kilden)."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "tv2",
+						"platform": "TV 2"
+					}
+				]
+			}
 		},
 		{
 			"id": "football:premier-league",
 			"name": "Premier League",
 			"sport": "football",
-			"match": ["premier league"],
-			"time": { "sourceIds": ["premier-league"] },
-			"channel": { "options": [{ "sourceId": "tv2", "platform": "TV 2" }], "note": "TV 2 Play / TV 2 Sport Premium." }
+			"match": [
+				"premier league"
+			],
+			"time": {
+				"sourceIds": [
+					"premier-league"
+				]
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "tv2",
+						"platform": "TV 2"
+					}
+				],
+				"note": "TV 2 Play / TV 2 Sport Premium."
+			}
 		},
 		{
 			"id": "football:serie-a",
 			"name": "Serie A",
 			"sport": "football",
-			"match": ["serie a"],
-			"time": { "sourceIds": ["lega-serie-a"], "note": "Lega Serie A setter kampoppsettet; legaseriea.it var bot-blokkert ved seeding, så tidene hentes foreløpig fra Sky/Goal (media) → verify bekrefter mot arrangøren." },
-			"channel": { "options": [{ "sourceId": "vgtv", "platform": "VG+ Sport" }], "note": "VG+ Sport eier de norske Serie A-rettighetene (tvkampen ground truth + VGs egen kunngjøring). IKKE Paramount+ (den amerikanske rettighetshaveren)." }
+			"match": [
+				"serie a"
+			],
+			"time": {
+				"sourceIds": [
+					"lega-serie-a"
+				],
+				"note": "Lega Serie A setter kampoppsettet; legaseriea.it var bot-blokkert ved seeding, så tidene hentes foreløpig fra Sky/Goal (media) → verify bekrefter mot arrangøren."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "vgtv",
+						"platform": "VG+ Sport"
+					}
+				],
+				"note": "VG+ Sport eier de norske Serie A-rettighetene (tvkampen ground truth + VGs egen kunngjøring). IKKE Paramount+ (den amerikanske rettighetshaveren)."
+			}
 		},
 		{
 			"id": "football:super-cup",
 			"name": "UEFA Super Cup",
 			"sport": "football",
-			"match": ["super cup"],
-			"time": { "sourceIds": ["uefa"] },
-			"channel": { "options": [{ "sourceId": "tv2", "platform": "TV 2" }] }
+			"match": [
+				"super cup"
+			],
+			"time": {
+				"sourceIds": [
+					"uefa"
+				]
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "tv2",
+						"platform": "TV 2"
+					}
+				]
+			}
 		},
 		{
 			"id": "football:world-cup",
 			"name": "FIFA World Cup",
 			"sport": "football",
-			"match": ["fifa world cup", "world cup", "vm"],
-			"time": { "sourceIds": ["fifa"] },
+			"match": [
+				"fifa world cup",
+				"world cup",
+				"vm"
+			],
+			"time": {
+				"sourceIds": [
+					"fifa"
+				]
+			},
 			"channel": {
 				"options": [
-					{ "sourceId": "nrk", "platform": "NRK" },
-					{ "sourceId": "tv2", "platform": "TV 2" }
+					{
+						"sourceId": "nrk",
+						"platform": "NRK"
+					},
+					{
+						"sourceId": "tv2",
+						"platform": "TV 2"
+					}
 				],
 				"note": "Delte rettigheter, per-kamp-fordeling — verify løser hver kamp til én konkret kanal."
 			}
@@ -300,20 +744,47 @@
 			"id": "golf:dp-world-tour",
 			"name": "DP World Tour",
 			"sport": "golf",
-			"match": ["dp world tour"],
-			"time": { "sourceIds": ["european-tour"] },
-			"channel": { "options": [{ "sourceId": "viaplay", "platform": "Viaplay" }] }
+			"match": [
+				"dp world tour"
+			],
+			"time": {
+				"sourceIds": [
+					"european-tour"
+				]
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "viaplay",
+						"platform": "Viaplay"
+					}
+				]
+			}
 		},
 		{
 			"id": "golf:pga-tour",
 			"name": "PGA Tour (inkl. FedExCup)",
 			"sport": "golf",
-			"match": ["pga tour", "fedexcup", "fedex cup"],
-			"time": { "sourceIds": ["pgatour"] },
+			"match": [
+				"pga tour",
+				"fedexcup",
+				"fedex cup"
+			],
+			"time": {
+				"sourceIds": [
+					"pgatour"
+				]
+			},
 			"channel": {
 				"options": [
-					{ "sourceId": "hbo-max", "platform": "HBO Max" },
-					{ "sourceId": "eurosport-no", "platform": "Eurosport" }
+					{
+						"sourceId": "hbo-max",
+						"platform": "HBO Max"
+					},
+					{
+						"sourceId": "eurosport-no",
+						"platform": "Eurosport"
+					}
 				],
 				"note": "WBD tok ordinær PGA Tour for 2026 (Corales-revert-krigen); The Open + US Open er Viaplays."
 			}
@@ -322,14 +793,23 @@
 			"id": "handball:elkjop-ligaen",
 			"name": "Elkjøp-ligaen (norsk håndball-toppserie)",
 			"sport": "handball",
-			"match": ["elkjøp-ligaen", "elkjop-ligaen", "rema 1000-ligaen"],
+			"match": [
+				"elkjøp-ligaen",
+				"elkjop-ligaen",
+				"rema 1000-ligaen"
+			],
 			"time": {
-				"sourceIds": ["handballforbundet"],
+				"sourceIds": [
+					"handballforbundet"
+				],
 				"note": "Norges Håndballforbund (handball.no) setter og publiserer terminlisten for den øverste norske serien."
 			},
 			"channel": {
 				"options": [
-					{ "sourceId": "tv2", "platform": "TV 2 Play" }
+					{
+						"sourceId": "tv2",
+						"platform": "TV 2 Play"
+					}
 				],
 				"note": "TV 2 har den norske toppseriens rettigheter for 2026/27 (handball.no: «Alle kamper kan ses på TV 2 Play, utvalgte på lineære kanaler»). IKKE Viaplay/TV3 — det gjaldt tidligere sesonger; det separate Viaplay↔TV 2-samarbeidet dekker mesterskap/CL, ikke den nasjonale serien."
 			}
@@ -338,12 +818,55 @@
 			"id": "tennis:tour",
 			"name": "ATP/WTA Tour",
 			"sport": "tennis",
-			"match": ["atp", "wta"],
+			"match": [
+				"atp",
+				"wta"
+			],
 			"time": {
-				"sourceIds": ["atp-tour", "wta", "swiss-open-gstaad"],
+				"sourceIds": [
+					"atp-tour",
+					"wta",
+					"swiss-open-gstaad"
+				],
 				"note": "Touren setter kampprogrammet (atptour.com/wtatennis.com); den enkelte turneringens egen side (f.eks. swissopengstaad.ch) er likeverdig primær for sitt eget program. NB WP-246: ATPs vilkår § 4A forbyr dyplenking til undersider — tennis håndteres særskilt der."
 			},
-			"channel": { "options": [{ "sourceId": "tv2", "platform": "TV 2" }], "note": "TV 2 har ATP-rettighetene i Norge t.o.m. 2026; WTA/Grand Slam-rettigheter avviker (Discovery/Max) — verifiser per turnering." }
+			"channel": {
+				"options": [
+					{
+						"sourceId": "tv2",
+						"platform": "TV 2"
+					}
+				],
+				"note": "TV 2 har ATP-rettighetene i Norge t.o.m. 2026; WTA/Grand Slam-rettigheter avviker (Discovery/Max) — verifiser per turnering."
+			}
+		},
+		{
+			"id": "cycling:renewi-tour",
+			"name": "Renewi Tour",
+			"sport": "cycling",
+			"match": [
+				"renewi tour",
+				"benelux tour"
+			],
+			"time": {
+				"sourceIds": [
+					"renewi-tour"
+				],
+				"note": "Flanders Classics (renewitour.com) publiserer etappetidene; hentes sekundært (cyclinguptodate/domestique) når arrangørens tidsskjema-side er utilgjengelig."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "hbo-max",
+						"platform": "HBO Max (Sport)"
+					},
+					{
+						"sourceId": "eurosport-no",
+						"platform": "Eurosport Norge"
+					}
+				],
+				"note": "WBD/Warner holder WorldTour-sykkelen i Norge (HBO Max Sport / Eurosport), samme mønster som Vuelta."
+			}
 		}
 	]
 }

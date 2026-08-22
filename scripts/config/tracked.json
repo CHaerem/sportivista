@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-22T01:55:00Z",
+  "lastUpdated": "2026-08-22T05:20:00Z",
   "lastUpdatedBy": "research-agent",
   "version": 2,
   "leagues": [
@@ -386,17 +386,18 @@
       "id": "renewi-tour-2026",
       "name": "Renewi Tour 2026 (Uno-X Mobility)",
       "sport": "cycling",
-      "reason": "HORISONT-SCAN (WP-116 / Step 2.6) 2026-08-07T21:15Z, sykkel-scout: sykkel er tier1 (dekkes wholesale) og Uno-X Mobility (catalog.tier2.teams) er Norges WorldTour-lag. Renewi Tour (tidl. BinckBank/Benelux Tour, UCI WorldTour, 5 etapper i Benelux) kjøres 19.–23. august og er et konkret Uno-X-mål — laget stiller trolig med Magnus Cort, Tobias Halland Johannessen, Søren Wærenskjold og Jonas Abrahamsen (scout, ikke offisielt bekreftet startliste). PLASSHOLDER: datoene (19.–23. aug) er bekreftet mot cyclingnews/cyclingstage, MEN eksakte etappe-starttider og norsk visning er ENNÅ IKKE publisert → ingen dated event å boarde ennå (en manglende event er bedre enn en oppdiktet tid). Oppgraderes til konkrete events når arrangøren slipper horaires + norsk kringkaster bekreftes (WorldTour-sykkel i Norge har de siste årene ligget hos Eurosport/HBO Max — verifiseres per løp, ikke gjettet). Verify/neste kjøring firmer opp.",
+      "reason": "Sykkel er tier1 (dekkes wholesale) og Uno-X Mobility (catalog.tier2.teams) er Norges WorldTour-lag. Renewi Tour (tidl. BinckBank/Benelux Tour, UCI WorldTour, 5 etapper i Benelux) kjøres 19.–23. august. OPPDATERT 2026-08-22T05:20Z (research, standard-tier, coverage-critics HIGH-eskalering + egen web-research + uavhengig write-time fact-check): PLASSHOLDEREN ER NÅ KONKRETISERT — hele løpet er BOARDET som ett fler-dagers ai-research-event (cycling, «Renewi Tour 2026», medium; time 22. aug 09.40 UTC → endTime 23. aug 13.55 UTC), som dekker de to gjenstående etappene (etappe 4 lør. 22. Riemst–Bilzen-Hoeselt 187 km + avslutningsetappen søn. 23. rundløp i Leuven 184 km). Løpet var MIDT I SITT LØP og manglet helt fra tavla — forrige audit (21. aug) kalte eksplisitt Arctic Race→Vuelta-vinduet «korrekt fravær» og overså dette WorldTour-etapperittet. Sammenlagt etter etappe 3: Jenno Berckmoes (Lotto–Intermarché) leder (+6 Philipsen, +12 Kooij); beste Uno-X-rytter Søren Wærenskjold 7. (+23 sek, nr. 3 poeng), Abrahamsen også i troppen. Starttider (~11.40 CEST begge dager) hentet sekundært (cyclinguptodate/domestique) fordi arrangørens tidsskjema-side ga 403 → provenance.time.basis=secondary, medium (ikke high). NORSK VISNING = HBO Max (Sport)/Eurosport (WBD holder WorldTour-sykkelen i Norge, samme mønster som Vuelta-noden) — registrert i sources.json (renewi-tour, Flanders Classics) + authority.json (cycling:renewi-tour). Verify fester eksakt minutt + endelig sammenlagt etter etappe 4.",
       "addedAt": "2026-08-07T21:15:00Z",
       "addedBy": "research-agent",
       "evidence": [
         "catalog.json#tier1",
         "catalog.json#tier2.teams",
-        "https://www.cyclingnews.com/renewi-tour/",
-        "https://www.cyclingstage.com/renewi-tour-2026/"
+        "https://en.wikipedia.org/wiki/2026_Renewi_Tour",
+        "https://renewitour.com/en/stages/",
+        "https://cyclinguptodate.com/cycling/what-time-do-the-renewi-tour-2026-stages-start-and-finish-where-to-watch-on-tv-and-live-on-usa-and-uk"
       ],
       "expires": "2026-08-24T23:59:59Z",
-      "priority": "low"
+      "priority": "high"
     },
     {
       "id": "grand-chess-tour-saint-louis-2026",

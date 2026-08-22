@@ -1,27 +1,29 @@
 {
-  "runAt": "2026-08-22T01:55:00Z",
-  "tier": "standard",
-  "trigger": "scheduled (4h)",
-  "eventsAdded": 0,
-  "eventsRemoved": 0,
-  "eventsAmended": 0,
-  "trackedDelta": "0 substansielle endringer: kun lastUpdated -> 01:55Z + én no-op-reconsilierings-note tilføyd. Ingen katalog/registry-endring.",
-  "quality": {
-    "pass": true,
-    "score": 90,
-    "failures": [
-      "Ikke-blokkerende: ren no-op-kjøring (0 events lagt til) — legitim per kvota-governoren (standard-tier feiler ikke på tom kjøring). Brettet var allerede omfattende dekket av de siste kjøringene; ingen fersk scout-eskalering og ingen ekte hull i den ferske coverage-gaps.json.",
-      "Ikke-blokkerende: self-grade (ingen uavhengig grader-subagent) proporsjonalt med en no-op-kjøring der ingen nye fakta ble innført på tavla — kun ÉN imminent event (GCT-finalen) ble re-verifisert mot en primær/encyklopedisk kilde og bekreftet uendret."
-    ],
-    "gradedBy": "self-graded (no-op-reconsilieringskjøring: ingen events endret; GCT-finalens starttid re-bekreftet mot ChessBase = matcher tavla eksakt; ingen feil-tid/wrong-channel-risiko innført)"
-  },
-  "notes": [
-    "KONTEKST: 4h standard-kjøring (01:55Z lør., ikke deep-tier). Forrige research 2026-08-21T20:45Z (~5t siden, gradert 88). Ingen fersk scout-eskalering (scout-log stille hele døgnet, alle nylige verdicts 'quiet', 0 eskaleringer). Brettet var svært omfattende dekket.",
-    "RE-VERIFISERT ENESTE IMMINENTE HIGH-EVENT: Grand Chess Tour-finalen (St. Louis, 22.–27. aug) — coverage-auditens (04:00Z) eneste HIGH-hull, allerede boardet 05:00Z + verify-confirmed. Da den starter I DAG (22. aug) re-sjekket jeg starttiden mot ChessBase (gct-finals-2026-preview, uavhengig authority-korroborasjon): «Play begins at 12.00 local time (19.00 CEST)» = 17.00 UTC. Tavla-eventet (id 2b84873d73b0) står på 2026-08-22T17:00:00Z — MATCHER EKSAKT. Semifinaler Praggnanandhaa–Keymer + Wesley So–Caruana (alle fire katalog-tier2), klassisk 22.–23., hurtig/lyn 24.; finale/bronse 25.–27. Ingen endring nødvendig; gratis STL Chess Club YouTube/Twitch bekreftet.",
-    "RECONCILE (Step 1): alle catalog.tier2 (athletes/teams/tournaments) + tier1-i-sesong har tracked-entry og dekkes. Ingen utløpte tracked-entries å prune (tidligste expire = bodo-glimt-cl-playoff 2026-08-26; europacup-playoff-returer 27.–28. aug fortsatt aktive; GCT-finalen t.o.m. 27.; Vuelta t.o.m. 13. sep; US Open t.o.m. 14. sep). Alle alwaysTrack-turneringer har entry.",
-    "HORISONT-SCAN (Step 2.6): 0 demand[] i coverage-gaps.json. ~4-ukers-vinduet (t.o.m. ~19. sep) sjekket mot forrige kjørings horisont-liste: F1 (Dutch GP 23. aug sprint + Italiensk 6. sep + Spansk 13. sep, alle med kvalik boardet), Vuelta (start 22. aug – 13. sep), US Open (25. aug – 14. sep), Tour Championship (27.–30.), DL-finalen Brussel (4.–5. sep), World Athletics Ultimate Championship (11.–13. sep), Global Chess League (3. sep, Carlsen), Bundesliga/Serie A r1, europacup-returer (27. aug), Davis Cup Norge–Kina (18. sep) — alle på tavla/sporet. UCI Road-VM Montréal (20.–27. sep) sporet, >28 dager fram. Ingen ny katalog-promotering nødvendig.",
-    "MEKANISKE coverage-gaps.json-signaler (21. aug 22:16Z, 7 gaps + 1 anomali) TRIAGERT — ingen ekte hull: entity-gaps Arsenal (BBC 'start title defence' = kamp-resultat/nyhet, ikke kommende event), Fotball-VM (Paredes 10-kampers utestengelse etter VM-finalen = disiplin-nyhet), Tour of Flanders (Renewi Tour-etappe omtalt som 'Flanders-inspired' = ren omtale) = alle RSS-nyhetstreff, IKKE events. tracked-claim Eliteserien = r19-vindu-etterslep (korrekt fravær pga. landslagspause ~17.–28. aug; hardt trigger ~26. aug per coverage-audit hvis static ikke self-fyller r19). tracked-claim Håvard «rain» Nygaard = ærlig 'ikke satt opp ennå' — 100T slått ut av EWC av PARIVISION 2–0 (13. aug) OG bekreftet IKKE i BLAST Open Porto-feltet (verifisert 21. aug 13:15Z, 4 kilder); Porto dekkes på tavla som tier-1-turnering uten norsk vinkel. tracked-claim Guttormsen/Jæger (claimedDate 5. sep) = dekkes av DL-finalen Brussel (4.–5. sep) + Ultimate Championship (11.–13. sep), begge på tavla → vakt, ikke hull.",
-    "ANOMALI esports.js stale-retained (consecutiveRetains 139 / 7 dager, opp fra 137) = self-repair-territorium (fetcheren er utvetydig død — Liquipedia CS2-matches produserer ingenting), IKKE research-eskalering. CS2-coverage-hullet den ville skapt er lukket av ai-research (BLAST Open Porto på tavla).",
-    "validate-events.js: 84 events, 0 errors (kun forventede WP-242/246/timezone-warnings). Fan-out: fokusert no-op-kjøring (ingen fersk scout-signal, brettet allerede omfattende dekket) → 2 WebSearch (GCT-tider + norsk helg-horisont) + 1 direkte WebFetch (ChessBase, authority-korroborasjon for GCT-starttid) framfor full scout-fan-out; riktig omfang for en liten reconsilieringskjøring. Ikke deep-tier (lør, ikke Mon-sweep) → ingen registry-reconsiliering (Step 2.8)."
+ "runAt": "2026-08-22T05:20:00Z",
+ "tier": "standard",
+ "trigger": "coverage-critic HIGH-eskalering (Renewi Tour) + scheduled (4h)",
+ "eventsAdded": 1,
+ "eventsRemoved": 0,
+ "eventsAmended": 0,
+ "trackedDelta": "1 entry konkretisert: renewi-tour-2026 (plassholder low → high, boardet). lastUpdated → 05:20Z. Ingen katalog-endring; registry uendret (ikke deep-tier). sources.json +1 (renewi-tour, Flanders Classics), authority.json +1 (cycling:renewi-tour).",
+ "quality": {
+  "pass": true,
+  "score": 88,
+  "failures": [
+   "Repeated-unaddressed-recommendation (-10): improve-mandatet om en coherence-test som asserter events.json streaming[].platform == provenance.streaming.sourceId har recurrert i ~6 kjøringer (Brann–PAOK returkamp) og er fortsatt ikke implementert; bug-en overlevde fem falske «fikset»-notater. Data-instansen er nå patchet, men det systemiske forslaget står åpent.",
+   "Minor: norwegian-rights-skillen mangler en generell WorldTour-sykkel/Vuelta/Renewi-oppføring, så Renewi-streamingen (HBO Max Sport/Eurosport) lener seg på det uformelle «Vuelta-node-mønsteret» framfor en dokumentert prior. FLAGGET for neste kjøring: legg til en WorldTour-sykkel-rettighetsoppføring under skillens Cycling-seksjon (skriving av skillen ble ikke gjennomført denne kjøringen).",
+   "Minor: Renewi streaming-url er hbomax.com/no-landingssiden, ikke deep per-etappe — ærlig flagget urlKind:landing på medium; verify strammer til deep-lenke."
   ]
+ },
+ "notes": [
+  "PRIMÆRT ARBEID: RENEWI TOUR 2026 (UCI WorldTour-etapperitt, Benelux, 19.–23. aug) BOARDET. coverage-audit.json (04:00Z) eskalerte dette som HIGH — løpet var midt i sitt løp og manglet HELT fra tavla; forrige audit (21. aug) kalte eksplisitt Arctic Race→Vuelta-vinduet «korrekt fravær» og overså WorldTour-rittet. Lagt til som ETT fler-dagers ai-research-event (cycling, medium), time 22. aug 09.40 UTC → endTime 23. aug 13.55 UTC, som dekker de to gjenstående etappene (etappe 4 lør. Riemst–Bilzen-Hoeselt 187 km + avslutningen søn. rundløp i Leuven 184 km).",
+  "FAKTA-GRUNNLAG (web + uavhengig write-time fact-check, alle enige): sammenlagt etter etappe 3 = Jenno Berckmoes (Lotto–Intermarché) leder, +6 Philipsen, +12 Kooij; beste Uno-X-rytter Søren Wærenskjold 7. (+23 sek, nr. 3 poeng), Jonas Abrahamsen i troppen. Etappevinnere: Milan (S1), Philipsen (S2), Berckmoes (S3). Kilder: Wikipedia (2026 Renewi Tour), renewitour.com/en/stages, cyclinguptodate (starttider).",
+  "TID SEKUNDÆR-KILDET: arrangørens renewitour.com/en/stages ga datoer/ruter men INGEN starttider, og tidsskjema-siden ga 403; starttider (~11.40 CEST begge dager) hentet fra cyclinguptodate/domestique. write-time fact-check amenderte 11.50 → ~11.40 CEST (09.40 UTC). Derfor confidence=medium og provenance.time.basis=secondary (ikke high). NB: eksakt minutt (11.40 vs 11.50) har ~10 min usikkerhet — verify fester mot arrangør/PCS.",
+  "NORSK VISNING = HBO Max (Sport)/Eurosport (WBD/Warner holder WorldTour-sykkelen i Norge, samme [solid] prior + mønster som Vuelta-noden). provenance.streaming.basis=official (hbo-max). Landing-URL (hbomax.com/no/no/sports/cycling) — deep per-etappe-side ikke reachable.",
+  "AUTORITETSKART VEDLIKEHOLDT (WP-241/240/242): registrerte arrangøren i sources.json (renewi-tour, Flanders Classics, role=primary, status=candidate; vilkår/robots ikke gjennomgått → unknown, ærlig) og la til authority.json-oppslaget cycling:renewi-tour (tid: renewi-tour; kanal: hbo-max/eurosport-no). Begge schema-validert (validate-schema.js → VALID).",
+  "coverage-audit TRIAGERT: Renewi Tour (HIGH) = løst (boardet, over). Eliteserien r19 (29.–30. aug, MEDIUM, recurrences 5) = bevisst IKKE boardet — landslagspause ~17.–28. aug (korrekt fravær før 29. aug), og r19 ligger så vidt utenfor ESPN nor.1s ~7-dagers vindu; static self-fyller når vinduet når fram (empirisk bekreftet av r18). Bretagne Classic 30. aug (LOW) = beholdt som horisont-plassholder (starttid/kanal ikke publisert ennå). esports.js stale-retained (141 kjøringer) = SELF-REPAIR-territorium (fetcher-brist), ikke research; CS2-dekning holdes av ai-research (BLAST Open Porto).",
+  "coverage-gaps.json (mekaniske signaler) TRIAGERT: entity-gaps Arsenal/Nations League/Nasjonsligaen/Fotball-VM = alle nyhets-/overgangs-/etterspill-treff, ikke events → ingen hull. tracked-claim Eliteserien = r19-vindu-etterslep (over). Håvard «rain» Nygaard = 100 Thieves neste = BLAST Open Porto (på tavla). Guttormsen/Jæger (5. sep) = dekket av DL-finalen Brussel (4.–5. sep) + Ultimate Championship (11.–13. sep), begge på tavla.",
+  "HORISONT-SCAN (Step 2.6): ingen nye katalog-kandidater denne kjøringen — coverage-audit «coveredWell» bekrefter bred dekning (golf FedExCup-sluttspill, tennis US Open, friidrett DL + Ultimate Championship, sjakk GCT-finale + Global Chess League, håndball Elkjøp-ligaen, sandvolleyball Montréal, alle europacup-returer). demand[] fraværende i coverage-gaps.json (ingen coverage-request-signal å prioritere).",
+  "IKKE deep-tier → Step 2.8 (ukentlig registry-reconsiliering) hoppet over per kontrakt."
+ ]
 }
