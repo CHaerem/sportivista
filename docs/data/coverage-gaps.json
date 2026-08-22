@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T08:25:39.012Z",
+  "generatedAt": "2026-08-22T09:24:05.102Z",
   "gapCount": 6,
   "anomalyCount": 1,
   "gaps": [
@@ -11,8 +11,8 @@
       "headline": "Premier League buildup, transfers and Hull v Manchester United early news – matchday live",
       "link": "https://www.theguardian.com/football/live/2026/aug/22/premier-league-buildup-transfers-and-hull-v-manchester-united-early-news-matchday-live",
       "feed": "guardian-football",
-      "matchCount": 6,
-      "detectedAt": "2026-08-22T08:25:37.844Z"
+      "matchCount": 5,
+      "detectedAt": "2026-08-22T09:24:03.965Z"
     },
     {
       "kind": "entity",
@@ -23,7 +23,7 @@
       "link": "https://www.nrk.no/sport/argentina-spiller-leandro-paredes-utestengt-i-ti-kamper-for-kaosscener-etter-vm-finalen-1.17997582",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-22T08:25:37.844Z"
+      "detectedAt": "2026-08-22T09:24:03.965Z"
     },
     {
       "kind": "tracked-claim",
@@ -35,7 +35,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "eliteserien-2026",
-      "detectedAt": "2026-08-22T08:25:38.857Z"
+      "detectedAt": "2026-08-22T09:24:04.917Z"
     },
     {
       "kind": "tracked-claim",
@@ -47,7 +47,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-22T08:25:38.857Z"
+      "detectedAt": "2026-08-22T09:24:04.917Z"
     },
     {
       "kind": "tracked-claim",
@@ -59,7 +59,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-22T08:25:38.857Z"
+      "detectedAt": "2026-08-22T09:24:04.917Z"
     },
     {
       "kind": "tracked-claim",
@@ -71,18 +71,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-22T08:25:38.857Z"
+      "detectedAt": "2026-08-22T09:24:04.917Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 145 consecutive run(s) — no fresh fetch in 7 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 145,
+      "detail": "docs/data/esports.json has been served from retention for 146 consecutive run(s) — no fresh fetch in 7 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 146,
       "staleDays": 7,
       "severity": "high",
-      "detectedAt": "2026-08-22T08:25:38.912Z"
+      "detectedAt": "2026-08-22T09:24:04.973Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
