@@ -1,19 +1,8 @@
 {
-  "generatedAt": "2026-08-22T22:14:20.989Z",
-  "gapCount": 6,
+  "generatedAt": "2026-08-23T02:19:27.458Z",
+  "gapCount": 4,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Arsenal",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Women’s Super League 2026-27 preview No 1: Arsenal",
-      "link": "https://www.theguardian.com/football/2026/aug/22/womens-super-league-2026-27-preview-no-1-arsenal",
-      "feed": "guardian-football",
-      "matchCount": 2,
-      "detectedAt": "2026-08-22T22:14:19.816Z"
-    },
     {
       "kind": "entity",
       "entity": "The Open",
@@ -23,18 +12,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/22/us-soccer-wants-excitement-after-the-world-cup-the-open-cup-provides-it",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-22T22:14:19.816Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Formel 1",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Lewis Hamilton stråler med Kardashian: – Følelsesmessig berg-og-dal-bane",
-      "link": "https://www.nrk.no/sport/kan-kim-kardashian-hjelpe-lewis-hamilton-til-historisk-vm-tittel_-1.17995720",
-      "feed": "nrk-sport",
-      "matchCount": 3,
-      "detectedAt": "2026-08-22T22:14:19.816Z"
+      "detectedAt": "2026-08-23T02:19:26.330Z"
     },
     {
       "kind": "tracked-claim",
@@ -46,7 +24,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-22T22:14:20.772Z"
+      "detectedAt": "2026-08-23T02:19:27.206Z"
     },
     {
       "kind": "tracked-claim",
@@ -58,7 +36,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-22T22:14:20.772Z"
+      "detectedAt": "2026-08-23T02:19:27.206Z"
     },
     {
       "kind": "tracked-claim",
@@ -70,18 +48,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-22T22:14:20.772Z"
+      "detectedAt": "2026-08-23T02:19:27.206Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 159 consecutive run(s) — no fresh fetch in 8 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 159,
+      "detail": "docs/data/esports.json has been served from retention for 160 consecutive run(s) — no fresh fetch in 8 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 160,
       "staleDays": 8,
       "severity": "high",
-      "detectedAt": "2026-08-22T22:14:20.843Z"
+      "detectedAt": "2026-08-23T02:19:27.277Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
