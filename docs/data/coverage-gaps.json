@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T16:21:37.480Z",
+  "generatedAt": "2026-08-23T17:18:17.245Z",
   "gapCount": 6,
   "anomalyCount": 1,
   "gaps": [
@@ -11,8 +11,8 @@
       "headline": "Jæger sjanseløs i Diamond League",
       "link": "https://www.tv2.no/a/19153865",
       "feed": "tv2-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-08-23T16:21:36.714Z"
+      "matchCount": 1,
+      "detectedAt": "2026-08-23T17:18:16.014Z"
     },
     {
       "kind": "entity",
@@ -22,8 +22,8 @@
       "headline": "Jæger sjanseløs i Diamond League",
       "link": "https://www.tv2.no/a/19153865",
       "feed": "tv2-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-08-23T16:21:36.714Z"
+      "matchCount": 1,
+      "detectedAt": "2026-08-23T17:18:16.014Z"
     },
     {
       "kind": "entity",
@@ -33,8 +33,8 @@
       "headline": "Verstappen krasjet stygt i Nederland – Norris tok sterk seier",
       "link": "https://www.nrk.no/sport/verstappen-krasjet-stygt-i-nederland-_-norris-tok-sterk-seier-1.17998750",
       "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-23T16:21:36.714Z"
+      "matchCount": 2,
+      "detectedAt": "2026-08-23T17:18:16.014Z"
     },
     {
       "kind": "tracked-claim",
@@ -46,7 +46,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-23T16:21:37.281Z"
+      "detectedAt": "2026-08-23T17:18:17.034Z"
     },
     {
       "kind": "tracked-claim",
@@ -58,7 +58,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-23T16:21:37.281Z"
+      "detectedAt": "2026-08-23T17:18:17.034Z"
     },
     {
       "kind": "tracked-claim",
@@ -70,18 +70,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-23T16:21:37.281Z"
+      "detectedAt": "2026-08-23T17:18:17.034Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 173 consecutive run(s) — no fresh fetch in 9 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 173,
+      "detail": "docs/data/esports.json has been served from retention for 174 consecutive run(s) — no fresh fetch in 9 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 174,
       "staleDays": 9,
       "severity": "high",
-      "detectedAt": "2026-08-23T16:21:37.327Z"
+      "detectedAt": "2026-08-23T17:18:17.120Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
