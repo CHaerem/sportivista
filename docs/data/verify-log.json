@@ -1,14 +1,13 @@
 {
-  "runAt": "2026-08-22T05:52:00Z",
-  "checked": 5,
-  "confirmed": 3,
-  "amended": 0,
-  "removed": 0,
-  "notes": [
-    "Renewi Tour 2026 etappe 4 (i dag): starttid bekreftet mot arrangørens egen etappe-4-infoside — offisiell start 11:40 CEST = 09:40 UTC (board stemte). Oppgraderte provenance.time fra sekundær (cyclinguptodate) til primær (renewitour.com). Wærenskjold/Abrahamsen står på startlista; individuell etappe-status ikke låst.",
-    "Elite16 Montréal sluttspill (23. aug): bekreftet at medaljedagen er søndag 23. aug (Mol/Sørum toppseedet, gull her i 2023 og 2025). Eksakt semi/bronse/finale-klokkeslett er fortsatt bracket-avhengig og ikke publisert på Volleyball World sin JS-renderte tidsplan — beholder ærlig ~18:00–23:30 UTC-vindu; gratis global stream på Volleyball World TV korrekt.",
-    "Bundesliga Bayern–VfB Stuttgart (28. aug, 1. Spieltag): tid bekreftet mot DFL/bundesliga.com — sesongåpner 20:30 CEST = 18:30 UTC (board stemte). Viaplay har Bundesliga-rettighetene i Norge t.o.m. 2029 (korrekt).",
-    "F1 Dutch GP sprint+kvalifisering (i dag) og de øvrige medium/high ai-research-eventene i vinduet var alt verifisert innen siste 3 dager (Vuelta 19. aug, F1 18. aug, Serie A-runden osv.) — ikke re-verifisert denne runden.",
-    "Ingen eventer fjernet eller nedgradert; ingen kilde-quirk av mekanistisk/gjentakende art funnet denne runden (ingen skill-oppdatering)."
-  ]
+	"runAt": "2026-08-23T05:55:00Z",
+	"checked": 8,
+	"confirmed": 7,
+	"amended": 0,
+	"removed": 0,
+	"notes": [
+		"Bundesliga 1. Spieltag 2026/27 (6 kamper, 29. aug): tider + oppgjor + Viaplay bekreftet mot bundesliga.com kampdags-side. Lordagskampene 15:30 CEST = 13:30 UTC, Dortmund–HSV 18:30 CEST = 16:30 UTC — board-tidene korrekte. Merk: bundesliga.com-siden rendret i UTC, sa smamodellen leste 13:30/16:30/18:30 og merket dem feilaktig 'CEST'; de faktiske slotene er de klassiske 15:30/18:30/20:30 CEST. Alle 6 satt til verificationStatus=confirmed.",
+		"Vuelta a España 2026 (pagaende): etappe 2 (23. aug) Monaco–Manosque, start 12:00 CEST bekreftet mot lavuelta.es/rouleur; overall-race-tid uendret. Streaming HBO Max (Sport)/Eurosport (WBD) konsistent med sykkel-prior og Eurosport/TNT-oppsett — verifiedAt oppfrisket.",
+		"Bergsoy – Kolstad (herrehandball, 29. aug): fant IKKE en autoritativ kilde som bekrefter akkurat dette oppgjoret/tiden i sesong-apningen — handball.no bekrefter Bergsoy er opprykket til Eliteserien 2026/27 og at ligaen starter 26. aug, men ingen kamp-spesifikk kilde. Lot staa urort (TV 2 Play er korrekt rettighetshaver for norsk handball); ingen endring, ingen falsk verifisering.",
+		"norwegian-rights SKILL.md: onsket a legge til en Vuelta-linje under Cycling, men Edit-verktoyet ble nektet i denne lokale okten: 'Claude requested permissions to write to .../norwegian-rights/SKILL.md, but you haven't granted it yet.' Ikke en CI-blokk (WP-91-legenden) — bare manglende lokal tillatelse. Vuelta-streaming er allerede korrekt pa selve eventet, sa laeringen er ikke tapt."
+	]
 }
