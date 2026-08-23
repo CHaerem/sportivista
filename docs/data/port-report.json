@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-23T04:39:21.551Z",
+  "generatedAt": "2026-08-23T05:26:26.496Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "red",
+    "coverage": "green",
     "amendRate": "green",
     "silentStops": "yellow",
     "participantStatus": "green"
@@ -19,35 +19,21 @@
     ]
   },
   "coverage": {
-    "openGaps": 3,
+    "openGaps": 1,
     "bySeverity": {
-      "high": 1,
-      "medium": 1,
+      "high": 0,
+      "medium": 0,
       "low": 1
     },
-    "oldestGapAgeDays": 9.99,
-    "escalatable": 1,
-    "catalogMatched": 3,
-    "auditedAt": "2026-08-22T04:00:00Z",
+    "oldestGapAgeDays": 0.06,
+    "escalatable": 0,
+    "catalogMatched": 1,
+    "auditedAt": "2026-08-23T04:00:00Z",
     "gaps": [
       {
-        "interest": "Renewi Tour 2026 (WorldTour-etapperitt, Uno-X Mobility)",
-        "severity": "high",
-        "ageDays": 1.03,
-        "recurrences": 0,
-        "catalogMatched": true
-      },
-      {
-        "interest": "Eliteserien — runde 19 (29.–30. aug)",
-        "severity": "medium",
-        "ageDays": 9.99,
-        "recurrences": 5,
-        "catalogMatched": true
-      },
-      {
-        "interest": "Bretagne Classic – Ouest-France (Plouay, søn. 30. aug, Uno-X)",
+        "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
         "severity": "low",
-        "ageDays": 1.03,
+        "ageDays": 0.06,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -165,21 +151,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-23T04:39:15.207Z",
+    "buildCheckedAt": "2026-08-23T05:26:23.833Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-23T02:19:27.660Z",
-    "manifestAgeHours": 2.33,
+    "manifestGeneratedAt": "2026-08-23T04:39:23.141Z",
+    "manifestAgeHours": 0.78,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
-        "ageHours": 204.86
+        "ageHours": 205.64
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-22T05:52:00Z",
-    "verifyAgeHours": 22.79,
+    "verifyAgeHours": 23.57,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
