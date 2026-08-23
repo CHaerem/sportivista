@@ -1,81 +1,49 @@
 {
-  "auditedAt": "2026-08-22T04:00:00Z",
+  "auditedAt": "2026-08-23T04:00:00Z",
   "horizonDays": 28,
   "gaps": [
     {
-      "interest": "Renewi Tour 2026 (WorldTour-etapperitt, Uno-X Mobility)",
-      "whatsMissing": "HELE Renewi Tour (UCI WorldTour, 5 etapper i Belgia, 19.–23. aug) står IKKE på tavla — verken som fler-dagers event eller enkelt-etapper. Løpet er MIDT I SITT LØP akkurat nå: etappe 1 (19. aug, Milan vant) og etappe 2 (20. aug, Philipsen i ledertrøya) er allerede kjørt; gjenstår etappe 3 (21. aug, Muur van Geraardsbergen/Bosberg), etappe 4 (22. aug) og avslutningsetappen søn. 23. aug rundt Leuven. Uno-X Mobility (katalog-tier2-lag) stiller med Jonas Abrahamsen som kaptein. Sykkel er tier1 (dekkes wholesale), så et WorldTour-etapperitt med det norske laget er kjernedekning som mangler helt.",
-      "why": "Dette er en REELL recall-brist, ikke et vindu-etterslep: forrige audit (21. aug) slo eksplisitt fast «Ingen katalog-løp mellom Arctic Race (16.) og Vuelta (22.) = korrekt fravær» — men Renewi Tour (19.–23. aug) ligger nettopp i det vinduet og ble oversett. tracked.json har løpet som PLASSHOLDER (renewi-tour-2026, expires 24. aug) med begrunnelse «starttider + norsk kanal ikke publisert», men begge er nå tilgjengelige (se korroborasjon), så plassholderen kan konkretiseres. Web-bekreftet mot Wikipedia + domestiquecycling + renewitour.com + cyclinguptodate + HBO Max' egen etappe-listing (alle enige om datoer, etappevinnere og felt). NORSK VISNING BEKREFTET: HBO Max (Sport) / Eurosport 1 — WBD holder WorldTour-sykkelen i Norge fra 2026 (samme mønster som Vuelta-eventet på tavla), daglig sending fra ~15.30 CEST. Research bør boarde det som ett fler-dagers ai-research-event (endTime 23. aug) med gjenstående etapper, akkurat som Vuelta-noden.",
+      "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
+      "whatsMissing": "UCI Road World Championships i Montréal (20.–27. sep) står ikke på tavla. Åpningsøkta — elite-tempo menn 39,2 km — kjøres søn. 20. sep, akkurat på 28-dagers-horisontkanten; fellesstartene (elite kvinner 180,4 km + elite menn 273,7 km) går siste helg 26.–27. sep, dvs. >28 dager fram. Katalog-turnering (UCI Road World Championships) i tier1-sport (sykkel) med sterk norsk vinkel (typisk NRK).",
+      "why": "Web-bekreftet mot Wikipedia + Tourisme Montréal: mesterskapet 20.–27. sep, ITT 20. sep, fellesstartene 26.–27. sep. LOW nå: kun åpnings-ITT-en (20. sep) er innenfor 28-dagers-vinduet, og eksakte starttider + norsk kanal er ennå ikke festet så tidlig. Sporet i tracked.json som horisont-kandidat, ikke katalog-promotert som eget event ennå. Flagget slik at research kan begynne å boarde det (fler-dagers node, NRK-prior) når tider/kanal publiseres nærmere.",
       "corroboration": [
-        "https://en.wikipedia.org/wiki/2026_Renewi_Tour",
-        "https://www.domestiquecycling.com/en/news/how-to-watch-the-2026-renewi-tour-streaming-and-tv-by-country/",
-        "https://renewitour.com/en/stages/",
-        "https://cyclinguptodate.com/cycling/renewi-tour-2026-gc-and-stage-1-preview-profiles-favourites-predictions-milan-merlier-philipsen-kooij-and-groenewegen-battle-for-opening-sprint"
+        "https://en.wikipedia.org/wiki/2026_UCI_Road_World_Championships",
+        "https://www.mtl.org/en/what-to-do/festivals-and-events/uci-road-world-championships"
       ],
-      "suggestedSource": "https://renewitour.com/en/stages/",
-      "severity": "high",
-      "firstSeen": "2026-08-22T04:00:00Z",
-      "recurrences": 0
-    },
-    {
-      "interest": "Eliteserien — runde 19 (29.–30. aug)",
-      "whatsMissing": "Eliteserien runde 19 (29.–30. aug, bl.a. Bodø/Glimt, Rosenborg, Molde, Brann) står fortsatt IKKE på tavla. Tavla har NULL Eliteserien-serierunder i hele 28-dagers-horisonten — kun OBOS-ligaen (Åsane–Lyn 26., Kongsvinger–Lyn 30.), europacup-playoff og utenlandske ligaer.",
-      "why": "Landslagspause ~17.–28. aug ⇒ det er KORREKT at ingen serierunde finnes før 29. aug (web-rebekreftet denne kjøringen: søket «Eliteserien kamper denne helgen 22.–23. aug» bekrefter landslagspause, ingen ligakamper). Det eneste som mangler er r19 (29.–30. aug), 7 dager fram — så vidt i kanten av ESPN nor.1 sitt ~7-dagers scoreboard-vindu, så den statiske fetcheren har ennå ikke nådd datoen. Vindu-etterslep-hypotesen er empirisk bekreftet: forrige runde (r18, 14.–16. aug) ble boardet mekanisk av static-fetcheren da vinduet nådde fram. Fotball-fetcheren er frisk (stale-retained gjelder KUN esports).",
-      "corroboration": [
-        "https://en.wikipedia.org/wiki/2026_Eliteserien",
-        "https://www.tvkampen.com/fotball/eliteserien"
-      ],
-      "suggestedSource": "https://www.fotball.no/turneringer/eliteserien/2026/",
-      "severity": "medium",
-      "firstSeen": "2026-08-13T05:00:00Z",
-      "recurrences": 5,
-      "recurrenceNote": "recurrences 4→5, over severity-bump-terskelen (3). BEVISST IKKE BUMPET, per prompt-unntaket «hvis et recurrerende hull viser seg å være korrekt fravær, ikke eskaler et ikke-hull»: (a) fraværet før 29. aug er KORREKT (landslagspause, web-rebekreftet), (b) vindu-ettersleget er empirisk bekreftet av at r18 self-fylte via static, og (c) det harde test-punktet (nor.1 fortsatt tom for r19 NÅR vinduet har nådd 29. aug, dvs. ~26. aug) er ikke nådd — 4 dager fram. HARDT TRIGGER: hvis r19 fortsatt mangler når ~26. aug er innenfor scoreboard-vinduet, ER dette en reell fetcher-brist → bump til high og eskaler."
-    },
-    {
-      "interest": "Bretagne Classic – Ouest-France (Plouay, søn. 30. aug, Uno-X)",
-      "whatsMissing": "UCI WorldTour-endagsklassikeren Bretagne Classic (95. utgave, Plouay) søn. 30. aug står ikke på tavla. Uno-X Mobility stiller typisk. Innenfor 28-dagers-horisonten (8 dager fram).",
-      "why": "Sykkel er tier1 (wholesale) og dette er et WorldTour-endagsritt in-scope. tracked.json (bretagne-classic-2026) har det som horisont-plassholder: eksakt starttid + norsk kanal (trolig HBO Max/Eurosport som øvrig WorldTour) ennå ikke publisert (klassiker-horaires slippes ~1–2 uker før). LOW nå: research boarder når starttid/kanal er festet. Ikke web-verifisert eksakt starttid denne kjøringen — horisont-kandidat, ikke bekreftet gap.",
-      "corroboration": [
-        "https://en.wikipedia.org/wiki/2026_Renewi_Tour"
-      ],
-      "suggestedSource": "https://www.procyclingstats.com/race/bretagne-classic/2026",
+      "suggestedSource": "https://www.cyclingnews.com/races/uci-road-world-championships-2026/races/",
       "severity": "low",
-      "firstSeen": "2026-08-22T04:00:00Z",
+      "firstSeen": "2026-08-23T04:00:00Z",
       "recurrences": 0
     }
   ],
   "sourceIssues": [
     {
       "source": "esports.js (Liquipedia CS2-matches fetcher)",
-      "issue": "docs/data/esports.json servert fra retention i 140 kjøringer på rad / ingen frisk henting på 7 dager (coverage-gaps.json stale-retained; consecutiveRetains 140, opp fra 120 i går og 61→81→100→120 dagene før). Fetcheren produserer ingenting; filen ser bare fersk ut fordi retainLastGood re-skriver siste gode kopi, og tavla skjuler det fordi ai-research dekker CS2 (BLAST Open Porto på tavla).",
-      "impact": "All maskinelt hentet CS2-dekning er falt bort; kun ai-research holder CS2 på tavla. En fetcher-brist, ikke et event-hull → SELF-REPAIR-territorium, IKKE research-eskalering. Tallet stiger jevnt og monotont (61→81→100→120→140) — fetcheren er utvetydig død og bør fikses.",
+      "issue": "docs/data/esports.json servert fra retention i 160 kjøringer på rad / ingen frisk henting på 8 dager (coverage-gaps.json stale-retained; consecutiveRetains 160, opp fra 140 i går og 61→81→100→120→140→160 dagene før). Fetcheren produserer ingenting; filen ser bare fersk ut fordi retainLastGood re-skriver siste gode kopi, og tavla skjuler det fordi ai-research dekker CS2 (BLAST Open Porto 26. aug–6. sep, 100 Thieves, på tavla).",
+      "impact": "All maskinelt hentet CS2-dekning er falt bort; kun ai-research holder CS2 på tavla. En fetcher-brist, ikke et event-hull → SELF-REPAIR-territorium, IKKE research-eskalering. Tallet stiger jevnt og monotont (61→81→100→120→140→160) — fetcheren er utvetydig død og bør fikses.",
       "severity": "high"
     }
   ],
   "coveredWell": [
-    "IMMINENT-PASS (22.–26. aug) web-rekonfirmert: ETT nytt high-hull funnet og web-bekreftet — Renewi Tour (WorldTour-etapperitt 19.–23. aug, Uno-X/Abrahamsen), som forrige audit overså ved å kalle Arctic Race→Vuelta-vinduet «korrekt fravær». Se gaps.",
-    "FORRIGE HIGH-HULL LØST: Grand Chess Tour-FINALEN i St. Louis (22.–27. aug, topp-4-utslagsspill: Praggnanandhaa/Wesley So/Caruana/Keymer). Eskalert 21. aug, nå BOARDET som ai-research-event (chess, Grand Chess Tour Finals 2026, 22. aug 17.00 UTC → 27. aug) med YouTube/Twitch-visning. Droppet fra gaps.",
-    "FORRIGE LOW-HULL LØST: Davis Cup Norge–Kina (Trondheim 18.–19. sep, Ruud) nå BOARDET som fler-dagers ai-research-event (18. sep 16.00 UTC → 19. sep).",
-    "F1 — ESPN-BLINDSONE (source-quirks-mandat, sjekkes HVER kjøring): Nederlands GP (Zandvoort) sprintweekend web-rekonfirmert mot formula1.com/ESPN/RacingNews365/Sky: RACE søn 23. aug kl. 15.00 lokal (13.00 UTC) — stemmer EKSAKT med tavlas static F1-race-node. Sprintkval fre 21. (14.30 UTC), sprint lør 22. (10.00 UTC), kval lør 22. (14.00 UTC) alle inne. Ingen mis-datering. Italiensk GP (6. sep, race static + kval) + Spansk GP Madrid (13. sep) inne.",
-    "Sykkel — Vuelta a España web-bekreftet start lør 22. aug (Monaco tempo, første rytter 16.17 CEST/14.17 UTC), Uno-X Mobility i feltet, multi-dags-event endTime 13. sep. (Renewi Tour i samme vindu er hullet — se gaps.)",
-    "Europacup — norske lag: alle fire returer 25.–27. aug inne: Bodø/Glimt–NEC (CL-playoff retur 25.), Brann–PAOK + Lillestrøm–Egnatia + Brighton–Tromsø (27.). Viking–Dinamo Zagreb (CL-playoff retur 26.) inne.",
-    "Premier League r1 (21.–24. aug) wholesale + La Liga (esp.1) + Serie A r1 (22.–24., research) + Bundesliga r1 (28.–30., research) — alle på tavla.",
-    "Golf — FedExCup-sluttspillet: BMW Championship (20.–23., Bellerive) med Hovland + Reitan tee-tider, Tour Championship (27.–30., East Lake) inne. DP World Tour Nexo Championship inne.",
-    "Tennis — Cincinnati Open t.o.m. ~24. (Ruud), US Open f.o.m. 25. aug (Ruud) inne.",
-    "Friidrett — Diamond League: Silesia/Skolimowskiej 23., Weltklasse Zürich 27., DL-finalen Brussel 4.–5. sep inne. World Athletics Ultimate Championship (Budapest 11.–13. sep, Ingebrigtsen/Warholm) inne.",
-    "Sjakk — Sinquefield Cup ferdig 21., GCT-finalen 22.–27. (NYtt), Global Chess League sesong 4 (Carlsen comeback) 3. sep inne.",
-    "Ski/håndball/sandvolleyball — Toppidrettsveka (Hitra 21./Aure 22./Trondheim 23., Klæbo) inne; Elkjøp-ligaen (Storhamar–Gjerpen 26., Bergsøy–Kolstad 29. aug) inne; Beach Pro Tour Elite16 Montréal-sluttspill 23. (Mol/Sørum) inne. Vinteridretter av-sesong (aug) = korrekt fravær."
+    "ALLE TRE FORRIGE HULL LØST denne kjøringen: (1) Renewi Tour 2026 — avslutningsetappen (søn. 23. aug 09.40–13.55 UTC rundt Leuven, Uno-X) nå BOARDET som ai-research-event; det eskalerte high-hullet er lukket. (2) Eliteserien r19 (29.–30. aug) — nå BOARDET (Vålerenga–Molde + Viking–Aalesund 29. aug, Rosenborg–Bodø/Glimt 30. aug) via static-fetcheren akkurat som vindu-ettersleget-hypotesen forutsa; det recurrerende medium-hullet (recurrences 5, firstSeen 13. aug) er dermed løst og droppet. (3) Bretagne Classic – Ouest-France (Plouay, søn. 30. aug 09.45–15.15 UTC, Uno-X) nå BOARDET; det tidligere low-hullet er lukket.",
+    "F1 — ESPN-BLINDSONE (source-quirks-mandat, sjekkes HVER kjøring): Nederlands GP (Zandvoort) RACE søn 23. aug web-rekonfirmert mot formula1.com + RacingNews365 + ESPN: 15.00 lokal CEST = 13.00 UTC, 72 runder — EKSAKT match med tavlas static F1-race-node. Ingen mis-datering. Sprintkval/sprint/kval alle inne. Neste race Italiensk GP 6. sep (kval + race på tavla), Spansk GP Madrid 13. sep inne.",
+    "Sykkel — Vuelta a España multi-dags-event (22. aug–13. sep, Uno-X) på tavla; Renewi Tour-avslutning + Bretagne Classic nå inne (se over).",
+    "Fotball europacup-returer 25.–27. aug alle inne: Bodø/Glimt–NEC (CL-playoff 25.), Viking–Dinamo Zagreb (CL-playoff 26.), Brann–PAOK + Lillestrøm–Egnatia + Brighton–Tromsø (27.). PL r1–r2 + La Liga + Serie A r1 (22.–24.) + Bundesliga r1 (28.–30.) på tavla. OBOS: Åsane–Lyn 26., Kongsvinger–Lyn 30.",
+    "Golf — FedExCup: BMW Championship siste runde søn 23. aug (Hovland + Reitan tee-tider) inne; Tour Championship (27.–30., East Lake) inne. DP World Tour Nexo Championship inne.",
+    "Tennis — Cincinnati Open t.o.m. ~24. (Ruud) inne; US Open f.o.m. 25. aug (Ruud) inne; Davis Cup Norge–Kina (Trondheim 18.–19. sep, Ruud) inne.",
+    "Sjakk — GCT-finalen (22.–27. aug, alle fire katalog-spillere) inne; Global Chess League sesong 4 (Carlsen comeback, 3.–13. sep) inne.",
+    "Friidrett — Diamond League: Silesia 23., Weltklasse Zürich 27., DL-finalen Brussel 4.–5. sep inne; World Athletics Ultimate Championship (Budapest 11.–13. sep, Ingebrigtsen/Warholm) inne.",
+    "Ski/håndball/sandvolleyball — Toppidrettsveka (Hitra 21./Aure 22./Trondheim 23., Klæbo/Northug) inne; Elkjøp-ligaen (Storhamar–Gjerpen 26., Bergsøy–Kolstad 29. aug) inne; Beach Pro Tour Elite16 Montréal-sluttspill 23. (Mol/Sørum) inne. Vinteridretter av-sesong (aug) = korrekt fravær.",
+    "Esports — CS2-dekning holdt av ai-research (BLAST Open Porto 26. aug–6. sep, 100 Thieves) inne; se sourceIssues for den døde fetcheren."
   ],
-  "escalated": true,
+  "escalated": false,
   "notes": [
-    "Kjøring 2026-08-22 ~04:00Z (recall-audit). IMMINENT-PASS (22.–26. aug) kjørt først. NYTT HIGH-HULL funnet og web-bekreftet: RENEWI TOUR 2026 (UCI WorldTour-etapperitt, 5 etapper i Belgia, 19.–23. aug) — midt i sitt løp NÅ, Uno-X Mobility (katalog-tier2) med Jonas Abrahamsen, absolutt ingen node på tavla. Forrige audit (21. aug) kalte eksplisitt Arctic Race→Vuelta-vinduet «korrekt fravær» og overså dette WorldTour-løpet. Korroborert av Wikipedia + domestiquecycling + renewitour.com + cyclinguptodate + HBO Max' egen etappe-listing. Norsk visning HBO Max (Sport)/Eurosport 1, daglig fra ~15.30 CEST (WBD-mønsteret, samme som Vuelta). ESKALERT (escalate.request=deep) for research å boarde det som fler-dagers event (gjenstår etappe 3–5, avslutning søn. 23. aug rundt Leuven).",
-    "FORRIGE HIGH-HULL LØST: GCT-finalen ble eskalert 21. aug og er nå boardet (Grand Chess Tour Finals 2026, 22.–27. aug, alle fire katalog-spillere). Droppet fra gaps, ikke recurrert.",
-    "F1-blindsonen (Dutch GP race) web-rekonfirmert mot formula1.com + ESPN + RacingNews365 + Sky — race søn 15.00 lokal = 13.00 UTC, eksakt match med tavlas static-node, ingen mis-datering. source-quirks-mandatet oppfylt.",
-    "MEDIUM-GAP recurrerer: Eliteserien r19 (29.–30. aug) recurrences 4→5 (firstSeen 13. aug beholdt). Over bump-terskelen, men BEVISST IKKE BUMPET: fraværet før 29. aug er korrekt (landslagspause ~17.–28. aug, web-rebekreftet mot tvkampen + søk), og vindu-ettersleget er empirisk bekreftet av at r18 self-fylte via static. Hardt trigger satt: hvis r19 fortsatt mangler når vinduet når 29. aug (~26. aug, 4 dager fram), er det en reell fetcher-brist → bump/eskaler neste kjøring. Se recurrenceNote.",
-    "NYTT LOW-HULL (horisont): Bretagne Classic – Ouest-France (Plouay, søn. 30. aug, Uno-X) — WorldTour-endagsklassiker in-scope, tracket som horisont-plassholder (starttid/norsk kanal ikke publisert ennå). Flagget low for research å boarde når tid/kanal festes. Ikke eksakt web-verifisert denne kjøringen.",
-    "esports.js stale-retained: consecutiveRetains 140 / 7 dager (61→81→100→120→140) — fetcheren er utvetydig død. Coverage-hullet den ville skapt er lukket av ai-research (BLAST Open Porto 26. aug – 6. sep, 100 Thieves på tavla). Fetcheren må fikses (self-repair). Beholdt som sourceIssue high. Fotball-fetcheren er derimot frisk — stale-retained gjelder kun esports.",
-    "MEKANISKE coverage-gaps.json-signaler TRIAGERT: entity-gaps «Arsenal/Nations League/Nasjonsligaen/Fotball-VM» = alle nyhets-/overgangs-/etterspill-treff (overgangsrykter; UEFA/Concacaf-nasjonsliga-samtaler; Paredes-utestengelse etter VM-finalen), IKKE events → ingen hull. tracked-claim Eliteserien = r19-vindu-ettersleget (medium gap over). tracked-claim Håvard «rain» Nygaard = 100 Thieves' neste CS2 = BLAST Open Porto (26. aug, på tavla) → dekket, ikke hull. tracked-claim Guttormsen/Jæger (friidrett, claimedDate 5. sep) = dekkes av DL-finalen Brussel (4.–5. sep) + Ultimate Championship (11.–13. sep), begge på tavla → vakt, ikke hull.",
-    "SJEKKET, KORREKT FRAVÆR (ikke hull): Eliteserien landslagspause ~17.–28. aug (web-rebekreftet); F1 ingen race mellom Dutch GP (23.) og Italiensk GP (6. sep); vinteridretter av-sesong (aug).",
-    "OVER HORISONTEN, VAKT (ikke flagget): UCI Road-VM Montréal 20.–27. sep (>28 dager fram, tracket ikke katalog-promotert); Eliteserien r20 (5.–6. sep, boardes via nor.1 når vinduet når fram)."
+    "Kjøring 2026-08-23 ~04:00Z (recall-audit). IMMINENT-PASS (23.–27. aug) kjørt først. INGEN nye high-hull: alle tre forrige hull (Renewi Tour high, Eliteserien r19 medium, Bretagne Classic low) er nå løst og på tavla — se coveredWell. Ingen eskalering.",
+    "F1-blindsonen (source-quirks-mandat) oppfylt: Dutch GP race web-rekonfirmert mot formula1.com + RacingNews365 + ESPN — søn 23. aug 15.00 CEST = 13.00 UTC, eksakt match med tavlas static-node, ingen mis-datering.",
+    "Eliteserien-recurrensen AVSLUTTET: r19 (29.–30. aug) er nå boardet av static-fetcheren da scoreboard-vinduet nådde datoen — nøyaktig som vindu-ettersleget-hypotesen (r18 self-fylte 14.–17. aug) forutsa. Det harde triggeren fra forrige recurrenceNote ble aldri utløst fordi hullet fylte seg selv. Fraværet 22.–24. aug er korrekt (landslagspause; den friske fotball-fetcheren viser ingen serierunde i vinduet, web-søk indikerer pause) — droppet fra gaps.",
+    "NYTT LOW-HULL (horisont): UCI Road-VM Montréal (20.–27. sep) — katalog-turnering i tier1 sykkel, sterk norsk vinkel. Kun åpnings-ITT-en (20. sep) innenfor 28-dagers-vinduet; fellesstartene (26.–27. sep) >28 dager fram. Web-bekreftet datoer (Wikipedia + Tourisme Montréal). Flagget low for research å begynne boarding (NRK-prior) når starttider/kanal festes; sporet i tracked.json.",
+    "esports.js stale-retained: consecutiveRetains 160 / 8 dager (61→81→100→120→140→160) — utvetydig død fetcher. Coverage-hullet lukket av ai-research (BLAST Open Porto på tavla). Beholdt som sourceIssue high → self-repair, IKKE research. Fotball-fetcheren er derimot frisk (fylte r19).",
+    "MEKANISKE coverage-gaps.json-signaler TRIAGERT: entity-gap «The Open» = Guardian-artikkel om US Open Cup (amerikansk fotball-cup), ikke golfens The Open → falsk positiv, ikke hull. tracked-claim Håvard «rain» Nygaard = 100 Thieves' BLAST Open Porto (26. aug, på tavla) → dekket. tracked-claim Guttormsen/Jæger (friidrett, claimedDate 5. sep) = DL-finalen Brussel (4.–5. sep) + Ultimate Championship (11.–13. sep), begge på tavla → dekket. stale-retained-anomalien (esports) = sourceIssue over.",
+    "SJEKKET, KORREKT FRAVÆR (ikke hull): Eliteserien 22.–24. aug (landslagspause, frisk static viser ingen); F1 ingen race mellom Dutch GP (23.) og Italiensk GP (6. sep); vinteridretter av-sesong (aug)."
   ]
 }
