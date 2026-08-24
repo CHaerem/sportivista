@@ -1532,9 +1532,9 @@
     "norwegian": false,
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/osasuna-levante-1922577",
-        "urlKind": "deep"
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -2027,17 +2027,42 @@
     "norwegianPlayers": [
       {
         "name": "Viktor Hovland",
+        "teeTime": "17:24",
+        "teeTimeUTC": "2026-08-27T15:24:00.000Z",
         "entityId": "viktor-hovland"
       },
       {
         "name": "Kristoffer Reitan",
+        "teeTime": "18:06",
+        "teeTimeUTC": "2026-08-27T16:06:00.000Z",
         "entityId": "kristoffer-reitan"
       }
     ],
     "totalPlayers": 30,
     "link": null,
     "status": null,
-    "featuredGroups": [],
+    "featuredGroups": [
+      {
+        "player": "Viktor Hovland",
+        "teeTime": "17:24",
+        "groupmates": [
+          {
+            "name": "Robert MacIntyre",
+            "teeTime": "17:24"
+          }
+        ]
+      },
+      {
+        "player": "Kristoffer Reitan",
+        "teeTime": "18:06",
+        "groupmates": [
+          {
+            "name": "Patrick Cantlay",
+            "teeTime": "18:06"
+          }
+        ]
+      }
+    ],
     "homeTeam": null,
     "awayTeam": null,
     "isFavorite": false,
