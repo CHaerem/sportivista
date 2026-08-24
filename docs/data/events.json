@@ -74,28 +74,6 @@
     ]
   },
   {
-    "sport": "tennis",
-    "tournament": "ATP/WTA Tour",
-    "title": "Cincinnati Open",
-    "time": "2026-08-11T04:00:00.000Z",
-    "endTime": "2026-08-24T03:59:00.000Z",
-    "venue": "TBD",
-    "meta": "ATP/WTA Tour",
-    "norwegian": false,
-    "streaming": [],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": null,
-    "awayTeam": null,
-    "isFavorite": false,
-    "round": null,
-    "id": "e93237ad0b77"
-  },
-  {
     "sport": "esports",
     "tournament": "Esports World Cup 2026 - Group C",
     "title": "100T vs PV",
@@ -1525,37 +1503,6 @@
     ]
   },
   {
-    "sport": "football",
-    "tournament": "La Liga",
-    "title": "Barcelona at Elche",
-    "time": "2026-08-23T19:30:00.000Z",
-    "endTime": null,
-    "venue": "Estadio Martínez Valero",
-    "meta": "La Liga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Elche",
-    "awayTeam": "Barcelona",
-    "isFavorite": true,
-    "round": null,
-    "id": "1543708e2d43",
-    "homeTeamEntityId": "elche",
-    "awayTeamEntityId": "fc-barcelona",
-    "summary": "Barcelonas foerste spilte La Liga-kamp 2026/27: borte mot Elche paa Estadio Martinez Valero soendag 23. august kl. 21.30 CEST (19.30 UTC).\n\nDette er ligaens runde 2 - Barcas ordinaere runde-1-kamp (hjemme mot Athletic Club) ble utsatt en uke til 27. aug fordi klubben hadde ti spillere i VM-semifinalene, saa Elche-kampen spilles foerst.\n\nNorsk visning: TV 2 Play (TV 2 har La Liga i Norge t.o.m. 2030)."
-  },
-  {
     "sport": "tennis",
     "tournament": "ATP/WTA Tour",
     "title": "US Open",
@@ -1653,9 +1600,9 @@
     "norwegian": false,
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
+        "platform": "Viaplay",
+        "url": "https://www.tvkampen.com/kamp/osasuna-levante-1922577",
+        "urlKind": "deep"
       }
     ],
     "participants": [],
@@ -1737,9 +1684,9 @@
     "norwegian": false,
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
+        "platform": "Viaplay",
+        "url": "https://www.tvkampen.com/kamp/fulham-chelsea-1914727",
+        "urlKind": "deep"
       }
     ],
     "participants": [],
@@ -1767,9 +1714,9 @@
     "norwegian": false,
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
+        "platform": "Viaplay",
+        "url": "https://www.tvkampen.com/kamp/mlaga-deportivo-la-coruna-1922576",
+        "urlKind": "deep"
       }
     ],
     "participants": [],
@@ -3311,10 +3258,12 @@
   {
     "sport": "football",
     "tournament": "Eliteserien",
+    "title": "Bodø/Glimt – Rosenborg",
+    "time": "2026-08-30T12:30:00.000Z",
+    "endTime": null,
+    "venue": "Aspmyra Stadion",
+    "meta": "Eliteserien",
     "norwegian": true,
-    "source": "ai-research",
-    "researchedAt": "2026-08-22T16:55:00Z",
-    "confidence": "high",
     "streaming": [
       {
         "platform": "TV 2 Play",
@@ -3322,38 +3271,110 @@
         "urlKind": "landing"
       }
     ],
-    "provenance": {
-      "time": {
-        "sourceId": "eliteserien",
-        "url": "https://www.eliteserien.no/",
-        "basis": "primary",
-        "retrievedAt": "2026-08-22T16:55:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://velkommen.play.tv2.no/eliteserien",
-        "basis": "official",
-        "retrievedAt": "2026-08-22T16:55:00Z"
-      }
-    },
-    "title": "Rosenborg at Bodø/Glimt",
-    "homeTeam": "Bodø/Glimt",
-    "awayTeam": "Rosenborg",
-    "time": "2026-08-30T12:30:00Z",
-    "endTime": "2026-08-30T14:20:00Z",
-    "venue": "Aspmyra stadion, Bodø",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.eliteserien.no/",
-      "https://glimt.ticketco.shop/?tag=herrer",
-      "https://aspmyrastadion.com/terminliste/"
-    ],
-    "summary": "Eliteserien runde 19 – rundens storkamp mellom to fulgte katalog-klubber, Bodø/Glimt hjemme mot Rosenborg på Aspmyra.\n\nGlimts første seriekamp etter Mesterliga-playoffen (retur mot NEC 25. aug); Rosenborgs neste seriekamp. Avspark bekreftet 14.30 CEST mot Glimts egen billettbutikk + Aspmyra-terminlisten + eliteserien.no.",
     "participants": [],
     "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Bodø/Glimt",
+    "awayTeam": "Rosenborg",
+    "isFavorite": true,
+    "round": null,
+    "id": "eadcfe1d6149",
     "homeTeamEntityId": "bodo-glimt-cl-playoff",
     "awayTeamEntityId": "rosenborg",
-    "id": "bde2e5c5981c"
+    "summary": "Eliteserien runde 19 – rundens storkamp mellom to fulgte katalog-klubber, Bodø/Glimt hjemme mot Rosenborg på Aspmyra.\n\nGlimts første seriekamp etter Mesterliga-playoffen (retur mot NEC 25. aug); Rosenborgs neste seriekamp. Avspark bekreftet 14.30 CEST mot Glimts egen billettbutikk + Aspmyra-terminlisten + eliteserien.no."
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Brighton & Hove Albion at Chelsea",
+    "time": "2026-08-30T13:00:00.000Z",
+    "endTime": null,
+    "venue": "Stamford Bridge",
+    "meta": "Premier League",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Chelsea",
+    "awayTeam": "Brighton & Hove Albion",
+    "isFavorite": false,
+    "round": null,
+    "id": "7d833e0238d9",
+    "homeTeamEntityId": "chelsea",
+    "awayTeamEntityId": "brighton-hove-albion"
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Brentford at Leeds United",
+    "time": "2026-08-30T13:00:00.000Z",
+    "endTime": null,
+    "venue": "Elland Road",
+    "meta": "Premier League",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Leeds United",
+    "awayTeam": "Brentford",
+    "isFavorite": false,
+    "round": null,
+    "id": "e9324ce7ff3d",
+    "homeTeamEntityId": "leeds-united",
+    "awayTeamEntityId": "brentford"
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Fulham at Sunderland",
+    "time": "2026-08-30T13:00:00.000Z",
+    "endTime": null,
+    "venue": "Stadium of Light",
+    "meta": "Premier League",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Sunderland",
+    "awayTeam": "Fulham",
+    "isFavorite": false,
+    "round": null,
+    "id": "1a1fe8fd630d",
+    "homeTeamEntityId": "sunderland",
+    "awayTeamEntityId": "fulham"
   },
   {
     "sport": "football",
@@ -3405,6 +3426,154 @@
   },
   {
     "sport": "football",
+    "tournament": "Eliteserien",
+    "title": "HamKam – Kristiansund",
+    "time": "2026-08-30T15:00:00.000Z",
+    "endTime": null,
+    "venue": "Briskeby Stadion",
+    "meta": "Eliteserien",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "HamKam",
+    "awayTeam": "Kristiansund",
+    "isFavorite": false,
+    "round": null,
+    "id": "fdff84bfd790",
+    "awayTeamEntityId": "kristiansund-bk"
+  },
+  {
+    "sport": "football",
+    "tournament": "Eliteserien",
+    "title": "Start – KFUM Oslo",
+    "time": "2026-08-30T15:00:00.000Z",
+    "endTime": null,
+    "venue": "Sparebanken Sor Arena",
+    "meta": "Eliteserien",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Start",
+    "awayTeam": "KFUM Oslo",
+    "isFavorite": false,
+    "round": null,
+    "id": "33d1c6d97af0",
+    "homeTeamEntityId": "ik-start",
+    "awayTeamEntityId": "kfum-oslo"
+  },
+  {
+    "sport": "football",
+    "tournament": "Eliteserien",
+    "title": "Sandefjord – Brann",
+    "time": "2026-08-30T15:00:00.000Z",
+    "endTime": null,
+    "venue": "Jotun Arena",
+    "meta": "Eliteserien",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Sandefjord",
+    "awayTeam": "Brann",
+    "isFavorite": true,
+    "round": null,
+    "id": "a7966a6995c6",
+    "homeTeamEntityId": "sandefjord",
+    "awayTeamEntityId": "brann-conference-league-playoff"
+  },
+  {
+    "sport": "football",
+    "tournament": "Eliteserien",
+    "title": "Tromsø – Sarpsborg 08",
+    "time": "2026-08-30T15:00:00.000Z",
+    "endTime": null,
+    "venue": "Romssa Arena",
+    "meta": "Eliteserien",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Tromsø",
+    "awayTeam": "Sarpsborg 08",
+    "isFavorite": false,
+    "round": null,
+    "id": "69a6cadf4688",
+    "homeTeamEntityId": "tromso-conference-league-playoff"
+  },
+  {
+    "sport": "football",
+    "tournament": "La Liga",
+    "title": "Málaga at Real Madrid",
+    "time": "2026-08-30T15:00:00.000Z",
+    "endTime": null,
+    "venue": "Santiago Bernabéu",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Málaga",
+    "isFavorite": true,
+    "round": null,
+    "id": "96f279005eed",
+    "homeTeamEntityId": "real-madrid",
+    "awayTeamEntityId": "malaga"
+  },
+  {
+    "sport": "football",
     "tournament": "OBOS-ligaen",
     "title": "Kongsvinger – Lyn",
     "time": "2026-08-30T15:00:00Z",
@@ -3443,6 +3612,36 @@
         "note": "migrert mekanisk fra evidence (WP-242)"
       }
     }
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Ipswich Town at Manchester United",
+    "time": "2026-08-30T15:30:00.000Z",
+    "endTime": null,
+    "venue": "Old Trafford",
+    "meta": "Premier League",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Manchester United",
+    "awayTeam": "Ipswich Town",
+    "isFavorite": false,
+    "round": null,
+    "id": "9a4bcd5ec0b7",
+    "homeTeamEntityId": "manchester-united",
+    "awayTeamEntityId": "ipswich-town"
   },
   {
     "sport": "football",
@@ -3491,6 +3690,36 @@
     },
     "summary": "Bundesliga 2026/27 starter (sen start pga. VM 2026): 1. Spieltag 28.–30. august. FC Augsburg–Schalke 04. Avspark 15:30 UTC.\n\nNorsk visning: Viaplay (har Bundesliga-rettighetene i Norge t.o.m. 2029; enkeltkamper også via TV 2 Play «Mer fotball»). Tider bekreftet mot DFLs egen kampdags-feed (bundesliga.com).",
     "id": "f6a8d74aed80"
+  },
+  {
+    "sport": "football",
+    "tournament": "Eliteserien",
+    "title": "Lillestrøm – Fredrikstad",
+    "time": "2026-08-30T17:15:00.000Z",
+    "endTime": null,
+    "venue": "Arasen Stadion",
+    "meta": "Eliteserien",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Lillestrøm",
+    "awayTeam": "Fredrikstad",
+    "isFavorite": false,
+    "round": null,
+    "id": "603fbc54e7f5",
+    "homeTeamEntityId": "lillestrom-europa-league-playoff",
+    "awayTeamEntityId": "fredrikstad"
   },
   {
     "sport": "chess",
