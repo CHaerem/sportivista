@@ -165,74 +165,6 @@
     "verifiedAt": "2026-08-18T05:54:27Z"
   },
   {
-    "sport": "golf",
-    "tournament": "PGA Tour",
-    "title": "BMW Championship",
-    "time": "2026-08-20T04:00:00.000Z",
-    "endTime": "2026-08-23T20:00:00.000Z",
-    "venue": "TBD",
-    "meta": "PGA Tour",
-    "norwegian": true,
-    "streaming": [
-      {
-        "platform": "HBO Max (Sport)",
-        "url": "https://www.hbomax.com/no/no/sports/pga-tour",
-        "urlKind": "landing"
-      },
-      {
-        "platform": "Eurosport",
-        "url": "https://www.eurosport.no",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [
-      {
-        "name": "Kristoffer Reitan",
-        "teeTime": "16:39",
-        "teeTimeUTC": "2026-08-23T14:39:00.000Z",
-        "entityId": "kristoffer-reitan"
-      },
-      {
-        "name": "Viktor Hovland",
-        "teeTime": "17:17",
-        "teeTimeUTC": "2026-08-23T15:17:00.000Z",
-        "entityId": "viktor-hovland"
-      }
-    ],
-    "totalPlayers": 50,
-    "link": null,
-    "status": null,
-    "featuredGroups": [
-      {
-        "player": "Kristoffer Reitan",
-        "teeTime": "16:39",
-        "groupmates": [
-          {
-            "name": "Kurt Kitayama",
-            "teeTime": "16:39"
-          }
-        ]
-      },
-      {
-        "player": "Viktor Hovland",
-        "teeTime": "17:17",
-        "groupmates": [
-          {
-            "name": "Alex Smalley",
-            "teeTime": "17:17"
-          }
-        ]
-      }
-    ],
-    "homeTeam": null,
-    "awayTeam": null,
-    "isFavorite": false,
-    "round": null,
-    "id": "d06f889756bc",
-    "summary": "BMW Championship 20.-23. august, Bellerive Country Club i St. Louis - det andre av tre FedExCup-sluttspill (topp-50 etter FedEx St. Jude gar videre hit; topp-30 videre til Tour Championship).\n\nViktor Hovland lå 23. i FedExCup etter grunnserien (Wyndham) og er blant topp-70 som spiller St. Jude denne uka – dermed så godt som sikret BMW-start. Feltet låses formelt etter St. Jude (13.-16. aug).\n\nNorsk visning: HBO Max (Sport) / Eurosport Norge. Tee-tider ikke publisert enna."
-  },
-  {
     "sport": "football",
     "tournament": "UEFA Conference League 2026/27 (playoff)",
     "title": "Tromsø – Brighton",
@@ -2072,20 +2004,13 @@
   },
   {
     "sport": "golf",
-    "tournament": "FedExCup Playoffs",
-    "title": "Tour Championship",
-    "time": "2026-08-27T11:00:00Z",
-    "endTime": "2026-08-30T22:00:00Z",
-    "venue": "East Lake Golf Club, Atlanta, GA",
+    "tournament": "PGA Tour",
+    "title": "TOUR Championship",
+    "time": "2026-08-27T04:00:00.000Z",
+    "endTime": "2026-08-30T20:00:00.000Z",
+    "venue": "TBD",
     "meta": "PGA Tour",
     "norwegian": true,
-    "norwegianPlayers": [
-      {
-        "name": "Viktor Hovland",
-        "entityId": "viktor-hovland"
-      }
-    ],
-    "participants": [],
     "streaming": [
       {
         "platform": "HBO Max (Sport)",
@@ -2098,39 +2023,27 @@
         "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-03T07:50:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.tourchampionship.com/news/2026/04/16/tickets-on-sale-2026-tour-championship-pga-tour-east-lake-atlanta",
-      "https://www.skysports.com/golf/schedule/pga-tour",
-      "https://www.hbomax.com/no/no/sports/pga-tour"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "pgatour",
-        "url": "https://www.pgatour.com/tournaments/2026/tour-championship/R2026060/overview",
-        "basis": "primary",
-        "retrievedAt": "2026-08-21T05:57:00Z",
-        "note": "Verify 21. aug: Tour Championship (FedExCup-finalen, topp 30) tor 27.-son 30. aug ved East Lake. Bekreftet mot PGA Tour."
+    "participants": [],
+    "norwegianPlayers": [
+      {
+        "name": "Viktor Hovland",
+        "entityId": "viktor-hovland"
       },
-      "streaming": {
-        "sourceId": "hbo-max",
-        "url": "https://www.hbomax.com/no/no/sports/pga-tour",
-        "basis": "official",
-        "retrievedAt": "2026-08-21T05:57:00Z",
-        "note": "Vanlig PGA Tour -> HBO Max (Sport)/Eurosport Norge (WBD) i Norge 2026."
+      {
+        "name": "Kristoffer Reitan",
+        "entityId": "kristoffer-reitan"
       }
-    },
-    "summary": "Tour Championship 27.-30. august, East Lake Golf Club i Atlanta - FedExCup-sluttspillets tredje og avgjoerende uke. Topp 30 i FedExCup, 72 hulls slagspill; vinneren blir FedExCup-mester.\n\nViktor Hovland ligger ~22. i FedExCup (etter Travelers-seieren i juni) og er saaledes godt innenfor topp-30 - men feltet laases foerst etter BMW Championship (t.o.m. 23. aug), saa deltakelsen er ventet-men-ubekreftet.\n\nNorsk visning: HBO Max (Sport) / Eurosport Norge. Tee-tider ikke publisert ennaa.",
-    "id": "653de2a91f03",
-    "verifiedAt": "2026-08-24T05:59:38Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.golfdigest.com/story/fexex-cup-2026-here-are-the-top-30-players-who-qualified-for-the-tour-championship-and-notables-who-missed",
-      "https://www.pgatour.com/article/news/inside-the-field/2026/08/21/how-the-field-qualified-for-tour-championship-east-lake-golf-club-top-30-fedexcup-playoffs"
-    ]
+    ],
+    "totalPlayers": 30,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "7c8783d37c60",
+    "summary": "Tour Championship 27.-30. august, East Lake Golf Club i Atlanta - FedExCup-sluttspillets tredje og avgjoerende uke. Topp 30 i FedExCup, 72 hulls slagspill; vinneren blir FedExCup-mester.\n\nViktor Hovland ligger ~22. i FedExCup (etter Travelers-seieren i juni) og er saaledes godt innenfor topp-30 - men feltet laases foerst etter BMW Championship (t.o.m. 23. aug), saa deltakelsen er ventet-men-ubekreftet.\n\nNorsk visning: HBO Max (Sport) / Eurosport Norge. Tee-tider ikke publisert ennaa."
   },
   {
     "sport": "football",
@@ -3779,6 +3692,36 @@
     "id": "cdabb4080789",
     "homeTeamEntityId": "deportivo-la-coruna",
     "awayTeamEntityId": "valencia"
+  },
+  {
+    "sport": "football",
+    "tournament": "La Liga",
+    "title": "Athletic Club at Celta Vigo",
+    "time": "2026-08-30T19:30:00.000Z",
+    "endTime": null,
+    "venue": "Balaidos",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Celta Vigo",
+    "awayTeam": "Athletic Club",
+    "isFavorite": false,
+    "round": null,
+    "id": "2225620fb968",
+    "homeTeamEntityId": "celta-vigo",
+    "awayTeamEntityId": "athletic-club"
   },
   {
     "sport": "chess",
