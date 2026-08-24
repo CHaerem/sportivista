@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T06:05:03.678Z",
+  "generatedAt": "2026-08-24T06:52:00.218Z",
   "gapCount": 5,
   "anomalyCount": 1,
   "gaps": [
@@ -12,7 +12,7 @@
       "link": "https://www.nrk.no/sport/verstappen-krasjet-stygt-i-nederland-_-norris-tok-sterk-seier-1.17998750",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-24T06:05:02.539Z"
+      "detectedAt": "2026-08-24T06:51:57.642Z"
     },
     {
       "kind": "entity",
@@ -23,7 +23,7 @@
       "link": "https://www.nrk.no/sport/benjamin-klar-for-ultimate-championship-_-moter-warholm-og-dos-santos-i-stjerneduell-1.17998906",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-24T06:05:02.539Z"
+      "detectedAt": "2026-08-24T06:51:57.642Z"
     },
     {
       "kind": "tracked-claim",
@@ -35,7 +35,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-24T06:05:03.460Z"
+      "detectedAt": "2026-08-24T06:51:58.573Z"
     },
     {
       "kind": "tracked-claim",
@@ -47,7 +47,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-24T06:05:03.460Z"
+      "detectedAt": "2026-08-24T06:51:58.573Z"
     },
     {
       "kind": "tracked-claim",
@@ -59,18 +59,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-24T06:05:03.460Z"
+      "detectedAt": "2026-08-24T06:51:58.573Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 181 consecutive run(s) — no fresh fetch in 9 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 181,
+      "detail": "docs/data/esports.json has been served from retention for 182 consecutive run(s) — no fresh fetch in 9 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 182,
       "staleDays": 9,
       "severity": "high",
-      "detectedAt": "2026-08-24T06:05:03.536Z"
+      "detectedAt": "2026-08-24T06:51:58.650Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
