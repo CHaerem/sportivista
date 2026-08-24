@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2026-08-24T09:43:53.618Z",
-  "gapCount": 6,
+  "generatedAt": "2026-08-24T10:34:40.819Z",
+  "gapCount": 9,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Henriette Jæger",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Jæger sjanseløs i Diamond League",
+      "link": "https://www.tv2.no/a/19153865",
+      "feed": "tv2-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-24T10:34:39.619Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Jæger",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Jæger sjanseløs i Diamond League",
+      "link": "https://www.tv2.no/a/19153865",
+      "feed": "tv2-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-24T10:34:39.619Z"
+    },
     {
       "kind": "entity",
       "entity": "Arsenal",
@@ -12,7 +34,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/24/football-transfer-rumour-mill-julian-alvarez-arsenal-booed-atletico",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-24T09:43:52.543Z"
+      "detectedAt": "2026-08-24T10:34:39.619Z"
     },
     {
       "kind": "entity",
@@ -23,7 +45,7 @@
       "link": "https://www.nrk.no/sport/verstappen-krasjet-stygt-i-nederland-_-norris-tok-sterk-seier-1.17998750",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-24T09:43:52.543Z"
+      "detectedAt": "2026-08-24T10:34:39.619Z"
     },
     {
       "kind": "entity",
@@ -34,7 +56,18 @@
       "link": "https://www.nrk.no/sport/benjamin-klar-for-ultimate-championship-_-moter-warholm-og-dos-santos-i-stjerneduell-1.17998906",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-08-24T09:43:52.543Z"
+      "detectedAt": "2026-08-24T10:34:39.619Z"
+    },
+    {
+      "kind": "sport",
+      "entity": "Formel 1",
+      "sport": "f1",
+      "type": "imminent",
+      "imminent": true,
+      "headline": "Russell impresses as Norris shines - driver ratings",
+      "link": "https://www.bbc.co.uk/sport/formula1/articles/c1l1l1r5zd4o?at_medium=RSS&amp;at_campaign=rss",
+      "feed": "bbc-f1",
+      "detectedAt": "2026-08-24T10:34:39.619Z"
     },
     {
       "kind": "tracked-claim",
@@ -46,7 +79,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-24T09:43:53.365Z"
+      "detectedAt": "2026-08-24T10:34:40.618Z"
     },
     {
       "kind": "tracked-claim",
@@ -58,7 +91,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-24T09:43:53.365Z"
+      "detectedAt": "2026-08-24T10:34:40.618Z"
     },
     {
       "kind": "tracked-claim",
@@ -70,18 +103,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-24T09:43:53.365Z"
+      "detectedAt": "2026-08-24T10:34:40.618Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 185 consecutive run(s) — no fresh fetch in 9 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 185,
+      "detail": "docs/data/esports.json has been served from retention for 186 consecutive run(s) — no fresh fetch in 9 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 186,
       "staleDays": 9,
       "severity": "high",
-      "detectedAt": "2026-08-24T09:43:53.441Z"
+      "detectedAt": "2026-08-24T10:34:40.692Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
