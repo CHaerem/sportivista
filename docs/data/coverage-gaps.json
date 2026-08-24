@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2026-08-24T11:25:08.191Z",
-  "gapCount": 9,
+  "generatedAt": "2026-08-24T12:42:50.295Z",
+  "gapCount": 10,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Casper Ruud",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Ruuds stjernemakker trakk seg - nå skal han spille med russer",
+      "link": "https://www.nrk.no/sport/ruuds-stjernemakker-trakk-seg---na-skal-han-spille-med-russer-1.17999585",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-24T12:42:49.288Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Ruud",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Ruuds stjernemakker trakk seg - nå skal han spille med russer",
+      "link": "https://www.nrk.no/sport/ruuds-stjernemakker-trakk-seg---na-skal-han-spille-med-russer-1.17999585",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-24T12:42:49.288Z"
+    },
     {
       "kind": "entity",
       "entity": "Henriette Jæger",
@@ -11,8 +33,8 @@
       "headline": "Warholm om Jægers krasjlanding: – Det er drit vanskelig",
       "link": "https://www.aftenposten.no/sport/i/Oke1Ok/warholm-om-jaegers-krasjlanding-det-er-drit-vanskelig",
       "feed": "aftenposten-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-08-24T11:25:05.884Z"
+      "matchCount": 1,
+      "detectedAt": "2026-08-24T12:42:49.288Z"
     },
     {
       "kind": "entity",
@@ -22,19 +44,8 @@
       "headline": "Warholm om Jægers krasjlanding: – Det er drit vanskelig",
       "link": "https://www.aftenposten.no/sport/i/Oke1Ok/warholm-om-jaegers-krasjlanding-det-er-drit-vanskelig",
       "feed": "aftenposten-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-08-24T11:25:05.884Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "rain",
-      "type": "missing",
-      "imminent": false,
-      "headline": "FIA explains safety car formation lap after F1 driver criticism at Dutch GP",
-      "link": "https://www.autosport.com/f1/news/it-made-no-sense-f1-drivers-question-safety-car-formation-lap-after-early-dutch-gp-chaos/10848760/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=uk",
-      "feed": "autosport-f1",
       "matchCount": 1,
-      "detectedAt": "2026-08-24T11:25:05.884Z"
+      "detectedAt": "2026-08-24T12:42:49.288Z"
     },
     {
       "kind": "entity",
@@ -45,7 +56,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/24/football-transfer-rumour-mill-julian-alvarez-arsenal-booed-atletico",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-24T11:25:05.884Z"
+      "detectedAt": "2026-08-24T12:42:49.288Z"
     },
     {
       "kind": "entity",
@@ -56,7 +67,7 @@
       "link": "https://www.aftenposten.no/sport/i/5pOllm/ingebrigtsen-og-kerr-moetes-til-superduell-i-budapest",
       "feed": "aftenposten-sport",
       "matchCount": 2,
-      "detectedAt": "2026-08-24T11:25:05.884Z"
+      "detectedAt": "2026-08-24T12:42:49.288Z"
     },
     {
       "kind": "sport",
@@ -67,7 +78,7 @@
       "headline": "Russell impresses as Norris shines - driver ratings",
       "link": "https://www.bbc.co.uk/sport/formula1/articles/c1l1l1r5zd4o?at_medium=RSS&amp;at_campaign=rss",
       "feed": "bbc-f1",
-      "detectedAt": "2026-08-24T11:25:05.884Z"
+      "detectedAt": "2026-08-24T12:42:49.288Z"
     },
     {
       "kind": "tracked-claim",
@@ -79,7 +90,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-24T11:25:06.681Z"
+      "detectedAt": "2026-08-24T12:42:50.114Z"
     },
     {
       "kind": "tracked-claim",
@@ -91,7 +102,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-24T11:25:06.681Z"
+      "detectedAt": "2026-08-24T12:42:50.114Z"
     },
     {
       "kind": "tracked-claim",
@@ -103,18 +114,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-24T11:25:06.681Z"
+      "detectedAt": "2026-08-24T12:42:50.114Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 187 consecutive run(s) — no fresh fetch in 9 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 187,
+      "detail": "docs/data/esports.json has been served from retention for 188 consecutive run(s) — no fresh fetch in 9 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 188,
       "staleDays": 9,
       "severity": "high",
-      "detectedAt": "2026-08-24T11:25:06.739Z"
+      "detectedAt": "2026-08-24T12:42:50.173Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
