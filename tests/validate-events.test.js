@@ -210,3 +210,82 @@ describe("basis-kontrakten er et telt varsel for høytillits-events (WP-242)", (
 		expect(check([legacy]).errors).toBe(0);
 	});
 });
+
+// ── Summary↔streaming coherence: the grader-mandated mechanical assert ───────
+// The research grader flagged 6+ runs running that no mechanical check owned the
+// class where a summary's designated-viewing clause names a channel the
+// structured streaming[] omits (Toppidrettsveka: streaming[]=NRK, prose said
+// «Vises på VG+ Sport»; the Brann/Lillestrøm returlegg wrong-channel bug).
+
+import { summaryChannelMismatches } from "../scripts/validate-events.js";
+
+describe("summary↔streaming coherence is a counted warning", () => {
+	const schema = loadEventSchema();
+	const soon = new Date(Date.now() + 2 * 86400000).toISOString();
+	const check = (events) => validateEvents(events, schema);
+
+	it("flags the Toppidrettsveka class: viewing clause names VG+ Sport but streaming[] only has NRK", () => {
+		const r = check([
+			{
+				sport: "cross-country", title: "Toppidrettsveka: Distanse", time: soon,
+				streaming: [{ platform: "NRK", url: "https://tv.nrk.no/direkte" }],
+				summary: "Distanse på Hitra. Vises på VG+ Sport (VGTV) — krever abonnement.",
+			},
+		]);
+		expect(r.summaryChannelMismatch).toBe(1);
+		expect(r.errors).toBe(0); // a warning, never a build-breaking error
+		expect(summaryChannelMismatches({
+			sport: "cross-country", title: "x", time: soon,
+			streaming: [{ platform: "NRK" }],
+			summary: "Vises på VG+ Sport (VGTV) — krever abonnement.",
+		})).toEqual(["VG+ Sport"]);
+	});
+
+	it("does NOT flag when the clause names channels that ARE all in streaming[] (the fixed Toppidrettsveka)", () => {
+		const r = check([
+			{
+				sport: "cross-country", title: "Toppidrettsveka: Distanse", time: soon,
+				streaming: [{ platform: "NRK" }, { platform: "VG+ Sport" }],
+				summary: "Distanse på Hitra. Vises gratis på NRK (TV/nett), og på VG+ Sport (VGTV) med abonnement.",
+			},
+		]);
+		expect(r.summaryChannelMismatch).toBe(0);
+	});
+
+	it("does NOT flag a secondary channel mentioned OUTSIDE the viewing clause (primary + secondary line)", () => {
+		const r = check([
+			{
+				sport: "football", title: "Bayern – Stuttgart", time: soon,
+				streaming: [{ platform: "Viaplay" }],
+				summary: "Bundesliga-åpning. Norsk visning: Viaplay. Enkeltkamper også via TV 2 Play «Mer fotball».",
+			},
+		]);
+		expect(r.summaryChannelMismatch).toBe(0);
+	});
+
+	it("does NOT flag when streaming[] is empty — that is the separate streaming-missing gap, not a contradiction", () => {
+		const r = check([
+			{ sport: "football", title: "Ukjent kanal", time: soon, streaming: [], summary: "Vises på TV 2 Play." },
+		]);
+		expect(r.summaryChannelMismatch).toBe(0);
+	});
+
+	it("respects the negation guard: «Vises på NRK, ikke på TV 2» is not a TV 2 designation", () => {
+		const r = check([
+			{
+				sport: "biathlon", title: "Sprint", time: soon,
+				streaming: [{ platform: "NRK" }],
+				summary: "Sprint. Vises på NRK, ikke på TV 2.",
+			},
+		]);
+		expect(r.summaryChannelMismatch).toBe(0);
+	});
+
+	it("catches a co-channel the clause designates but streaming[] omits (HBO Max/Eurosport → Eurosport missing)", () => {
+		expect(summaryChannelMismatches({
+			sport: "cycling", title: "Vuelta", time: soon,
+			streaming: [{ platform: "HBO Max (Sport)" }],
+			summary: "Norsk visning HBO Max (Sport)/Eurosport.",
+		})).toEqual(["Eurosport"]);
+	});
+});
