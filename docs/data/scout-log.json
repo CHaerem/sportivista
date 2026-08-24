@@ -64,5 +64,11 @@
     "verdict": "quiet",
     "reason": "RSS (27 items, 06:05 UTC): transfer-season noise (Barcelona injury, UEFA presidency, Man City transfer deal, Mateta/Watkins contract/transfer news—no schedule/time/venue/streaming/broadcaster impact on tracked Norwegian events). Past results (Mol/Sørum sandvolleyball win, Vuelta stage 2, Diamond League Ingebrigtsen, F1 Dutch GP Verstappen crash/Norris win, Toppidrettsveka results—all already tracked or race-day coverage, no schedule changes). Coverage gaps (5 entity/tracked-claim, 1 anomaly): Formel 1 (crash headline, imminent=false—live race day coverage, not new event); Ultimate Championship (September event, imminent=false—not imminent signal); Håvard «rain» Nygaard/esports (tracked, no imminent event signal in RSS); Sondre Guttormsen/Henriette Jæger/athletics (claimedDate 2026-09-05—12 days out, not imminent). Anomalies (1): esports.json stale-retained (181 runs, 9 days, HIGH—infrastructure issue, not a scout escalation signal). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting tracked events, no 100 Thieves CS2 match hints, no tracked athlete imminent event changes, no concrete new upcoming events requiring escalation. Escalation cap today (UTC): 0/2.",
     "signals": []
+  },
+  {
+    "runAt": "2026-08-24T07:00:00.000Z",
+    "verdict": "escalate",
+    "reason": "RSS (27 items, 06:51 UTC): major new event involving tracked athlete confirmed. Ultimate Championship (Budapest, September): NRK headline 'Benjamin klar for Ultimate Championship – møter Warholm og dos Santos i stjerneduell' explicitly confirms Rai Benjamin's participation and names Warholm (tracked athlete) + dos Santos in a championship duel. The coverage-gap entity was marked imminent=false but this concrete news confirms specific high-stakes matchup. Not a stale entity gap—this is a NEW CONFIRMATION of Warholm's participation and competitive matchup. Research should find full event details (date, time, venue, streaming) for this significant track-athlete championship.",
+    "signals": ["Ultimate Championship: Warholm confirmed participant vs dos Santos"]
   }
 ]
