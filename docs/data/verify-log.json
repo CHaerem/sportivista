@@ -1,13 +1,16 @@
 {
-	"runAt": "2026-08-23T05:55:00Z",
+	"runAt": "2026-08-24T05:59:38Z",
 	"checked": 8,
-	"confirmed": 7,
+	"confirmed": 8,
 	"amended": 0,
 	"removed": 0,
 	"notes": [
-		"Bundesliga 1. Spieltag 2026/27 (6 kamper, 29. aug): tider + oppgjor + Viaplay bekreftet mot bundesliga.com kampdags-side. Lordagskampene 15:30 CEST = 13:30 UTC, Dortmund–HSV 18:30 CEST = 16:30 UTC — board-tidene korrekte. Merk: bundesliga.com-siden rendret i UTC, sa smamodellen leste 13:30/16:30/18:30 og merket dem feilaktig 'CEST'; de faktiske slotene er de klassiske 15:30/18:30/20:30 CEST. Alle 6 satt til verificationStatus=confirmed.",
-		"Vuelta a España 2026 (pagaende): etappe 2 (23. aug) Monaco–Manosque, start 12:00 CEST bekreftet mot lavuelta.es/rouleur; overall-race-tid uendret. Streaming HBO Max (Sport)/Eurosport (WBD) konsistent med sykkel-prior og Eurosport/TNT-oppsett — verifiedAt oppfrisket.",
-		"Bergsoy – Kolstad (herrehandball, 29. aug): fant IKKE en autoritativ kilde som bekrefter akkurat dette oppgjoret/tiden i sesong-apningen — handball.no bekrefter Bergsoy er opprykket til Eliteserien 2026/27 og at ligaen starter 26. aug, men ingen kamp-spesifikk kilde. Lot staa urort (TV 2 Play er korrekt rettighetshaver for norsk handball); ingen endring, ingen falsk verifisering.",
-		"norwegian-rights SKILL.md: onsket a legge til en Vuelta-linje under Cycling, men Edit-verktoyet ble nektet i denne lokale okten: 'Claude requested permissions to write to .../norwegian-rights/SKILL.md, but you haven't granted it yet.' Ikke en CI-blokk (WP-91-legenden) — bare manglende lokal tillatelse. Vuelta-streaming er allerede korrekt pa selve eventet, sa laeringen er ikke tapt."
+		"Bundesliga 2. Spieltag (lør 30.08): to tidligere uverifiserte kamper bekreftet mot bundesliga.com/ran-spielplan — SC Freiburg–Werder Bremen 15:30 CEST = 13:30 UTC, FC Augsburg–Schalke 04 17:30 CEST = 15:30 UTC. Board-tider korrekte; Viaplay er rett rettighetshaver (Bundesliga). Begge satt til confirmed.",
+		"Bretagne Classic (Ouest-France, søn 30.08): start ~11:45 CEST = 09:45 UTC bekreftet mot cyclingnews/procyclingstats — matcher board. Streaming HBO Max (Sport)/Eurosport (WBD) konsistent med sykkel-prior. boardWasProvisional=true (standard-slot-estimat korrigert oppover av kilden). Confirmed.",
+		"Kongsvinger–Lyn (OBOS, søn 30.08): 17:00 CEST = 15:00 UTC på Gjemselund bekreftet mot fotball.no/vglive — board korrekt. TV 2 Play rett rettighetshaver. Confirmed.",
+		"Bergsøy–Kolstad (Elkjøp-ligaen menn, lør 29.08): handball.no (federasjonskilden) bekrefter 18:15 CEST = 16:15 UTC i Volda — board-tid korrekt. En billettportal viste 16:15 (UTC/feilmerket), men federasjonen er autoritativ. Nyopprykkede Bergsøys førstekamp mot Kolstad. Confirmed (tidligere uverifisert; gårsdagens run fant ikke kilden).",
+		"Serie A (24.08, i dag): Bologna–Lazio 18:30 CEST = 16:30 UTC og Roma–Fiorentina 20:45 CEST = 18:45 UTC bekreftet mot legaseriea.it — board-tider korrekte. VG+ Sport bekreftet som norsk rettighetshaver for Serie A 2026/27 (vg.no) — streaming-feltet korrekt. Begge oppfrisket til confirmed.",
+		"Tour Championship (East Lake, 27.-30.08): Viktor Hovland kvalifisert (26. plass i topp-30-feltet gjennom BMW Championship) bekreftet mot golfdigest/pgatour — norwegianPlayers korrekt. Turneringen er ikke i gang ennå (starter 27.08), så WP-95-deltakerstatus gjelder ikke; feltet er satt. verifiedAt oppfrisket.",
+		"norwegian-rights SKILL.md: ønsket å legge til en Serie A-linje (VG+ Sport) under Football — Edit ble avvist i denne LOKALE økten med 'requested permissions to write ... but you haven't granted it yet'. Dette er IKKE en CI-blokk (WP-91-legenden), bare manglende lokal skrivetillatelse; i CI er Edit tillatt. Læringen er ikke tapt: begge Serie A-eventene har allerede korrekt VG+ Sport-streaming, og rettigheten er logget til calibration-ledger."
 	]
 }
