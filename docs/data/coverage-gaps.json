@@ -1,18 +1,51 @@
 {
-  "generatedAt": "2026-08-24T22:18:03.954Z",
-  "gapCount": 4,
+  "generatedAt": "2026-08-25T04:41:53.204Z",
+  "gapCount": 7,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Arsenal",
+      "entity": "Casper Ruud",
       "type": "missing",
+      "imminent": false,
+      "headline": "Ruuds stjernemakker trakk seg - nå skal han spille med russer",
+      "link": "https://www.nrk.no/sport/ruuds-stjernemakker-trakk-seg---na-skal-han-spille-med-russer-1.17999585",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-25T04:41:50.200Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Ruud",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Ruuds stjernemakker trakk seg - nå skal han spille med russer",
+      "link": "https://www.nrk.no/sport/ruuds-stjernemakker-trakk-seg---na-skal-han-spille-med-russer-1.17999585",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-25T04:41:50.200Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Arsenal",
+      "type": "imminent",
       "imminent": true,
       "headline": "Football transfer rumours: Alvarez set for Arsenal after being booed at Atlético?",
       "link": "https://www.theguardian.com/football/2026/aug/24/football-transfer-rumour-mill-julian-alvarez-arsenal-booed-atletico",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-24T22:18:03.024Z"
+      "detectedAt": "2026-08-25T04:41:50.200Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "La Vuelta",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Kraftig haglvær førte til avlysning av Vuelta-etappe",
+      "link": "https://www.nrk.no/sport/kraftig-haglvaer-forte-til-avlysning-av-vuelta-etappe-1.18000037",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-08-25T04:41:50.200Z"
     },
     {
       "kind": "tracked-claim",
@@ -24,7 +57,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-24T22:18:03.754Z"
+      "detectedAt": "2026-08-25T04:41:51.214Z"
     },
     {
       "kind": "tracked-claim",
@@ -36,7 +69,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-24T22:18:03.754Z"
+      "detectedAt": "2026-08-25T04:41:51.214Z"
     },
     {
       "kind": "tracked-claim",
@@ -48,18 +81,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-24T22:18:03.754Z"
+      "detectedAt": "2026-08-25T04:41:51.214Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 198 consecutive run(s) — no fresh fetch in 10 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 198,
+      "detail": "docs/data/esports.json has been served from retention for 199 consecutive run(s) — no fresh fetch in 10 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 199,
       "staleDays": 10,
       "severity": "high",
-      "detectedAt": "2026-08-24T22:18:03.815Z"
+      "detectedAt": "2026-08-25T04:41:51.283Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
