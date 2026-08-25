@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-25T05:28:48.550Z",
+  "generatedAt": "2026-08-25T06:40:40.665Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
-    "amendRate": "green",
+    "amendRate": "red",
     "silentStops": "yellow",
     "participantStatus": "green"
   },
@@ -25,7 +25,7 @@
       "medium": 1,
       "low": 1
     },
-    "oldestGapAgeDays": 2.06,
+    "oldestGapAgeDays": 2.11,
     "escalatable": 0,
     "catalogMatched": 2,
     "auditedAt": "2026-08-25T04:00:00Z",
@@ -33,36 +33,29 @@
       {
         "interest": "Premier League — Aston Villa vs Arsenal (matchweek 3)",
         "severity": "medium",
-        "ageDays": 0.06,
+        "ageDays": 0.11,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
         "severity": "low",
-        "ageDays": 2.06,
+        "ageDays": 2.11,
         "recurrences": 1,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0,
-    "nearTermChecked": 8,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-08-24T05:59:38Z",
+    "nearTermRate": 0.5,
+    "nearTermChecked": 4,
+    "nearTermAmended": 2,
+    "verifyRunAt": "2026-08-25T05:58:00Z",
     "windowRate": 0,
-    "windowChecks": 91,
+    "windowChecks": 89,
     "windowAmendments": 0,
     "windowCorrections": 3,
     "byDay": [
-      {
-        "date": "2026-08-11",
-        "checks": 6,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-08-12",
         "checks": 4,
@@ -153,30 +146,37 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-08-25",
+        "checks": 4,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-25T05:28:43.025Z",
+    "buildCheckedAt": "2026-08-25T06:40:37.577Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-25T04:41:53.408Z",
-    "manifestAgeHours": 0.78,
+    "manifestGeneratedAt": "2026-08-25T05:28:49.997Z",
+    "manifestAgeHours": 1.2,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
-        "ageHours": 253.68
+        "ageHours": 254.88
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-08-24T05:59:38Z",
-    "verifyAgeHours": 23.49,
+    "checkedAt": "2026-08-25T05:58:00Z",
+    "verifyAgeHours": 0.71,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
-      "Tour Championship (East Lake, 27.-30.08): Viktor Hovland kvalifisert (26. plass i topp-30-feltet gjennom BMW Championship) bekreftet mot golfdigest/pgatour —…"
+      "Fokus på de to flerdagsarrangementene som spenner nåtid (WP-95/WP-116). Vuelta a España: fylte norwegianPlayers med lagets 5 nordmenn (Tobias Halland Johanne…"
     ]
   }
 }
