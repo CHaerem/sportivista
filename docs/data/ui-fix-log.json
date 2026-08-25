@@ -1,11 +1,12 @@
 {
-	"runAt": "2026-08-24T09:52:42Z",
+	"runAt": "2026-08-25T09:40:39Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
 		"visual-qa-log.json's only finding (checkedAt 2026-08-18T08:31:57Z) — the 375px 'Assistent' FAB overlapping the wrapped 'Abonner i kalender' footer link at end-of-scroll (~16px horizontal / ~15.5px vertical) — is ALREADY resolved in main. No new fix needed.",
-		"Fix live at HEAD: docs/css/cards.css lines 506-508, `@media (max-width:460px){ .site-footer{ padding-bottom: calc(76px + env(safe-area-inset-bottom,0px)); } }`, reserving space below the footer so it lifts clear of the fixed FAB at true end-of-scroll (the safeAreaInset idea applied to the page's true end element). Shipped by prior ui-autofix PR (commit 2b9cdf3ab, merged 2026-08-18 09:41Z, ~70 min after this visual-qa capture). Confirmed this run with `git merge-base --is-ancestor 2b9cdf3ab HEAD` (passed).",
-		"The visual-qa-log is stale input for a loop already closed; the prior ui-fix run (2026-08-22) reached the same conclusion. No open ui-autofix PR exists (only unrelated wp-242b-strip-lookalikes is open). Opening another PR would stack a duplicate fix for a resolved finding and risk regressing a clean live site — so this run exits with no PR, per the prompt's conservative-abandon guidance."
+		"Fix live at HEAD: docs/css/cards.css lines 506-508, `@media (max-width:460px){ .site-footer{ padding-bottom: calc(76px + env(safe-area-inset-bottom,0px)); } }`, reserving space below the footer so it lifts clear of the fixed FAB at true end-of-scroll (the safeAreaInset idea applied to the page's true end element). Shipped by prior ui-autofix PR (commit 2b9cdf3ab, merged 2026-08-18 09:41Z, ~70 min after this visual-qa capture). Re-confirmed this run with `git merge-base --is-ancestor 2b9cdf3ab HEAD` (passed).",
+		"Sanity-checked the live board this run with a 375px full-page screenshot: calm single column, day groups/header/footer intact, no truncation, and a visibly reserved empty band below the footer content (the padding-bottom fix rendering) — nothing new regressed.",
+		"The visual-qa-log is stale input for a loop already closed; the prior ui-fix runs (2026-08-22, 2026-08-24) reached the same conclusion. No open ui-autofix PR exists (open PRs are unrelated: #442 self-repair, #429 wp-242b). Opening another PR would stack a duplicate fix for a resolved finding and risk regressing a clean live site — so this run exits with no PR, per the prompt's conservative-abandon guidance."
 	]
 }
