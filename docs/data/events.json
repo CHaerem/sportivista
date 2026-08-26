@@ -3755,6 +3755,68 @@
     "awayTeamEntityId": "arsenal"
   },
   {
+    "sport": "cycling",
+    "tournament": "Tour of Britain",
+    "title": "Tour of Britain 2026",
+    "time": "2026-09-02T11:00:00Z",
+    "endTime": "2026-09-06T16:00:00Z",
+    "venue": "Storbritannia",
+    "norwegian": false,
+    "norwegianPlayers": [
+      {
+        "name": "Andreas Leknessund",
+        "entityId": "andreas-leknessund"
+      },
+      {
+        "name": "Rasmus Tiller"
+      }
+    ],
+    "participants": [
+      {
+        "name": "Uno-X Mobility"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "HBO Max (Sport)",
+        "url": "https://hbomax.com/no",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "Eurosport Norge",
+        "url": "https://www.eurosport.no",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-26T17:05:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.britishcycling.org.uk/tourofbritain/men/stagefive",
+      "https://www.scotborders.gov.uk/news/article/4968/final-stage-of-the-2026-lloyds-tour-of-britain-men-comes-to-the-scottish-borders",
+      "https://www.cyclingweekly.com/news/full-stage-routes-for-the-2026-tour-of-britain-men-announced"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "cyclingnews",
+        "url": "https://www.cyclingweekly.com/news/full-stage-routes-for-the-2026-tour-of-britain-men-announced",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-26T17:05:00Z",
+        "note": "5-etappers etapperitt 2.–6. sept (start 2. sept, siste etappe Earlston, Skottland søn. 6. sept — bekreftet mot scotborders.gov.uk + britishcycling.org.uk). Startdato entydig; eksakte daglige starttider ikke boardet på nodenivå."
+      },
+      "streaming": {
+        "sourceId": "hbo-max",
+        "url": "https://hbomax.com/no",
+        "basis": "official",
+        "retrievedAt": "2026-08-26T17:05:00Z",
+        "note": "Warner Bros. Discovery viser rittet i Fastlands-Europa via Eurosport + HBO Max (unntatt Frankrike) — norsk visning HBO Max (Sport)/Eurosport Norge. Kanal utledet av WBD-mønsteret, ikke bekreftet mot norsk kilde → verify."
+      }
+    },
+    "summary": "Tour of Britain (menn) 2026 — femdagers etapperitt gjennom Storbritannia 2.–6. september, med avslutning i Earlston i Scottish Borders søndag 6. sept.\n\nUno-X Mobility stiller til start med bl.a. Andreas Leknessund og Rasmus Tiller (Vuelta-troppen kjører parallelt i Spania).\n\nVises i Norge på HBO Max (Sport)/Eurosport Norge (Warner Bros. Discovery).",
+    "id": "14930507b9db"
+  },
+  {
     "sport": "chess",
     "tournament": "Global Chess League 2026",
     "title": "Global Chess League 2026 – sesong 4",
@@ -3924,6 +3986,54 @@
     "isFavorite": false,
     "round": null,
     "id": "73287bff3c5b"
+  },
+  {
+    "sport": "handball",
+    "tournament": "EHF Champions League 2026/27 (gruppespill)",
+    "title": "SC Magdeburg – Kolstad",
+    "time": "2026-09-09T18:45:00Z",
+    "endTime": null,
+    "venue": "GETEC Arena, Magdeburg",
+    "norwegian": true,
+    "homeTeam": "SC Magdeburg",
+    "awayTeam": "Kolstad",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-26T17:05:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://ehfcl.eurohandball.com/men/2026-27/clubs/",
+      "https://www.handball-world.news/artikel/spielplan-der-champions-league-2026-27-1233171",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_EHF_Champions_League"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "handballforbundet",
+        "url": "https://www.handball-world.news/artikel/spielplan-der-champions-league-2026-27-1233171",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-26T17:05:00Z",
+        "note": "Machineseeker EHF Champions League gruppespill: Kolstad i gruppe F (med Magdeburg, Kielce, Kriens-Luzern). Åpningskamp borte mot SC Magdeburg ons. 9. sept 20.45 CEST (18.45 UTC). Tid/motstander web-bekreftet; EHF-arrangørside bot-blokkert → basis secondary, verify fester eksakt tid."
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/sport",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-26T17:05:00Z",
+        "note": "EHF Champions League (herrer) har historisk ligget hos Viaplay i Norge/Norden; 2026/27-rettigheten ikke re-bekreftet mot Viaplays egen kilde → prior, ikke gjett; verify bekrefter kanalen før den låses."
+      }
+    },
+    "summary": "Kolstad åpner Champions League-sesongen borte mot storlaget SC Magdeburg i gruppe F.\n\nGruppe F: SC Magdeburg (Tyskland), Industria Kielce (Polen), Kolstad (Norge) og HC Kriens-Luzern (Sveits). Det nye 2026/27-formatet har 24 lag i seks grupper.\n\nAvspark onsdag 9. september kl. 20.45 CEST (18.45 UTC) i Magdeburg. Norsk visning ventes på Viaplay (EHF CL-holder i Norden) — bekreftes av verify.",
+    "awayTeamEntityId": "kolstad-handball",
+    "id": "82383c9de552"
   },
   {
     "sport": "athletics",
@@ -4127,7 +4237,9 @@
         "note": "TV 2 er bekreftet rettighetshaver for UEFA Nations League i Norge (linear + TV 2 Play) via aggregatorer/omtale, IKKE mot TV 2s egen kampside — eksakt lineær kanal-slot settes nærmere → basis secondary. Verify bekrefter kanalen (og lenker dypt) før den låses."
       }
     },
-    "summary": "Norge åpner sin aller første Nations League-sesong i den øverste divisjonen (League A) hjemme mot Danmark på Ullevaal.\n\nGruppe 4 består av Norge, Portugal, Danmark og Wales. Ligaspillet spilles over seks kamper (september–november); dette er første av Norges to hjemmekamper i septembervinduet (Portugal søndag 27. sept).\n\nAvspark torsdag 24. september kl. 20.45 CEST (18.45 UTC). Vises på TV 2 Play. Troppen er ikke tatt ut ennå."
+    "summary": "Norge åpner sin aller første Nations League-sesong i den øverste divisjonen (League A) hjemme mot Danmark på Ullevaal.\n\nGruppe 4 består av Norge, Portugal, Danmark og Wales. Ligaspillet spilles over seks kamper (september–november); dette er første av Norges to hjemmekamper i septembervinduet (Portugal søndag 27. sept).\n\nAvspark torsdag 24. september kl. 20.45 CEST (18.45 UTC). Vises på TV 2 Play. Troppen er ikke tatt ut ennå.",
+    "homeTeamEntityId": "nations-league-norway",
+    "id": "c862d553c668"
   },
   {
     "sport": "football",
@@ -4173,112 +4285,9 @@
         "note": "TV 2 er bekreftet rettighetshaver for UEFA Nations League i Norge (linear + TV 2 Play) via aggregatorer/omtale, IKKE mot TV 2s egen kampside — eksakt lineær kanal-slot settes nærmere → basis secondary. Verify bekrefter kanalen (og lenker dypt) før den låses."
       }
     },
-    "summary": "Norge tar imot Portugal (Cristiano Ronaldo) på Ullevaal i sin andre hjemmekamp i Nations League-septembervinduet.\n\nGruppe 4 i League A: Norge, Portugal, Danmark og Wales. Norge spiller Danmark hjemme torsdag 24. sept før dette oppgjøret.\n\nAvspark søndag 27. september kl. 20.45 CEST (18.45 UTC). Vises på TV 2 Play. Troppen er ikke tatt ut ennå."
-  },
-  {
-    "sport": "cycling",
-    "tournament": "Tour of Britain",
-    "title": "Tour of Britain 2026",
-    "time": "2026-09-02T11:00:00Z",
-    "endTime": "2026-09-06T16:00:00Z",
-    "venue": "Storbritannia",
-    "norwegian": false,
-    "norwegianPlayers": [
-      {
-        "name": "Andreas Leknessund"
-      },
-      {
-        "name": "Rasmus Tiller"
-      }
-    ],
-    "participants": [
-      {
-        "name": "Uno-X Mobility"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "HBO Max (Sport)",
-        "url": "https://hbomax.com/no",
-        "urlKind": "landing"
-      },
-      {
-        "platform": "Eurosport Norge",
-        "url": "https://www.eurosport.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-26T17:05:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://www.britishcycling.org.uk/tourofbritain/men/stagefive",
-      "https://www.scotborders.gov.uk/news/article/4968/final-stage-of-the-2026-lloyds-tour-of-britain-men-comes-to-the-scottish-borders",
-      "https://www.cyclingweekly.com/news/full-stage-routes-for-the-2026-tour-of-britain-men-announced"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "cyclingnews",
-        "url": "https://www.cyclingweekly.com/news/full-stage-routes-for-the-2026-tour-of-britain-men-announced",
-        "basis": "secondary",
-        "retrievedAt": "2026-08-26T17:05:00Z",
-        "note": "5-etappers etapperitt 2.–6. sept (start 2. sept, siste etappe Earlston, Skottland søn. 6. sept — bekreftet mot scotborders.gov.uk + britishcycling.org.uk). Startdato entydig; eksakte daglige starttider ikke boardet på nodenivå."
-      },
-      "streaming": {
-        "sourceId": "hbo-max",
-        "url": "https://hbomax.com/no",
-        "basis": "official",
-        "retrievedAt": "2026-08-26T17:05:00Z",
-        "note": "Warner Bros. Discovery viser rittet i Fastlands-Europa via Eurosport + HBO Max (unntatt Frankrike) — norsk visning HBO Max (Sport)/Eurosport Norge. Kanal utledet av WBD-mønsteret, ikke bekreftet mot norsk kilde → verify."
-      }
-    },
-    "summary": "Tour of Britain (menn) 2026 — femdagers etapperitt gjennom Storbritannia 2.–6. september, med avslutning i Earlston i Scottish Borders søndag 6. sept.\n\nUno-X Mobility stiller til start med bl.a. Andreas Leknessund og Rasmus Tiller (Vuelta-troppen kjører parallelt i Spania).\n\nVises i Norge på HBO Max (Sport)/Eurosport Norge (Warner Bros. Discovery)."
-  },
-  {
-    "sport": "handball",
-    "tournament": "EHF Champions League 2026/27 (gruppespill)",
-    "title": "SC Magdeburg – Kolstad",
-    "time": "2026-09-09T18:45:00Z",
-    "endTime": null,
-    "venue": "GETEC Arena, Magdeburg",
-    "norwegian": true,
-    "homeTeam": "SC Magdeburg",
-    "awayTeam": "Kolstad",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-26T17:05:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://ehfcl.eurohandball.com/men/2026-27/clubs/",
-      "https://www.handball-world.news/artikel/spielplan-der-champions-league-2026-27-1233171",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_EHF_Champions_League"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "handballforbundet",
-        "url": "https://www.handball-world.news/artikel/spielplan-der-champions-league-2026-27-1233171",
-        "basis": "secondary",
-        "retrievedAt": "2026-08-26T17:05:00Z",
-        "note": "Machineseeker EHF Champions League gruppespill: Kolstad i gruppe F (med Magdeburg, Kielce, Kriens-Luzern). Åpningskamp borte mot SC Magdeburg ons. 9. sept 20.45 CEST (18.45 UTC). Tid/motstander web-bekreftet; EHF-arrangørside bot-blokkert → basis secondary, verify fester eksakt tid."
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no/sport",
-        "basis": "secondary",
-        "retrievedAt": "2026-08-26T17:05:00Z",
-        "note": "EHF Champions League (herrer) har historisk ligget hos Viaplay i Norge/Norden; 2026/27-rettigheten ikke re-bekreftet mot Viaplays egen kilde → prior, ikke gjett; verify bekrefter kanalen før den låses."
-      }
-    },
-    "summary": "Kolstad åpner Champions League-sesongen borte mot storlaget SC Magdeburg i gruppe F.\n\nGruppe F: SC Magdeburg (Tyskland), Industria Kielce (Polen), Kolstad (Norge) og HC Kriens-Luzern (Sveits). Det nye 2026/27-formatet har 24 lag i seks grupper.\n\nAvspark onsdag 9. september kl. 20.45 CEST (18.45 UTC) i Magdeburg. Norsk visning ventes på Viaplay (EHF CL-holder i Norden) — bekreftes av verify."
+    "summary": "Norge tar imot Portugal (Cristiano Ronaldo) på Ullevaal i sin andre hjemmekamp i Nations League-septembervinduet.\n\nGruppe 4 i League A: Norge, Portugal, Danmark og Wales. Norge spiller Danmark hjemme torsdag 24. sept før dette oppgjøret.\n\nAvspark søndag 27. september kl. 20.45 CEST (18.45 UTC). Vises på TV 2 Play. Troppen er ikke tatt ut ennå.",
+    "homeTeamEntityId": "nations-league-norway",
+    "awayTeamEntityId": "portugal",
+    "id": "c00f77a89225"
   }
 ]
