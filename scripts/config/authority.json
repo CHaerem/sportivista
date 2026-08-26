@@ -1,6 +1,6 @@
 {
 	"$schema": "./authority.schema.json",
-	"updatedAt": "2026-08-22",
+	"updatedAt": "2026-08-26",
 	"notes": "WP-241 · Autoritetskartet: hvem SKAPER faktumet, per konkurranse på tavla. To kilder per event, fordi produktets to kjernefelt har to ulike skapere: TIDEN settes av arrangøren/ligaen/forbundet, KANALEN av kringkasteren selv. Id-ene peker inn i scripts/config/sources.json (WP-240) — registeret er sannheten om hvilket domene som ER arrangøren, og det er lookalike-vernet: da dette kartet ble seedet sto lookalike-domenet franceletour.com som evidens på en Tour de France-etappe, mens letour.fr (A.S.O., som faktisk lager ruta og starttidene) forekom NULL ganger i hele events.json. Research slår opp konkurransen her og går til autoriteten FØRST (scripts/agents/research.md); verify sjekker kanalen mot kringkasterens egen kilde (scripts/agents/verify.md); scripts/lib/provenance.js migrerer flat evidence til per-faktum-proveniens (WP-242) med det samme kartet. SEEDET 29.07.2026 med hver konkurranse som faktisk sto på tavla den dagen; kanal-valgene speiler .claude/skills/norwegian-rights (prioren) og tavlas verifiserte verdier. AI-VEDLIKEHOLDT som catalog.json: research utvider kartet når en ny konkurranse dekkes — alltid med arrangørens VIRKELIGE domene, registrert i sources.json først.",
 	"competitions": [
 		{
@@ -649,6 +649,30 @@
 					}
 				],
 				"note": "TV 2 fornyet de norske rettighetene t.o.m. sommeren 2030."
+			}
+		},
+		{
+			"id": "football:nations-league",
+			"name": "UEFA Nations League",
+			"sport": "football",
+			"match": [
+				"nations league"
+			],
+			"time": {
+				"sourceIds": [
+					"uefa",
+					"fotball-no"
+				],
+				"note": "UEFA sanksjonerer kalenderen; for Norges kamper publiserer NFF/fotball.no de bekreftede avsparkstidene (kampside fiksId)."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "tv2",
+						"platform": "TV 2 / TV 2 Play"
+					}
+				],
+				"note": "TV 2 har de norske UEFA Nations League-rettighetene (linear + TV 2 Play). Eksakt lineær kanal-slot settes nærmere kampene."
 			}
 		},
 		{
