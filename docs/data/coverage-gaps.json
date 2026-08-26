@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-08-26T18:57:17.697Z",
+  "generatedAt": "2026-08-26T21:40:31.385Z",
   "gapCount": 4,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Europa Conference League",
+      "entity": "Heroic",
       "type": "missing",
-      "imminent": true,
-      "headline": "Newcastle v West Brom, Tottenham v Charlton, Preston v Everton: Carabao Cup – live",
-      "link": "https://www.theguardian.com/football/live/2026/aug/26/newcastle-v-west-brom-tottenham-v-charlton-preston-v-everton-carabao-cup-live",
+      "imminent": false,
+      "headline": "Ten-man Hearts stun Rapid Vienna in shootout to reach Conference League",
+      "link": "https://www.theguardian.com/football/2026/aug/26/conference-league-rapid-vienna-hearts-qualifying-playoff-match-report",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-26T18:57:16.515Z"
+      "detectedAt": "2026-08-26T21:40:30.177Z"
     },
     {
       "kind": "tracked-claim",
@@ -24,7 +24,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-26T18:57:17.501Z"
+      "detectedAt": "2026-08-26T21:40:31.114Z"
     },
     {
       "kind": "tracked-claim",
@@ -36,7 +36,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-26T18:57:17.501Z"
+      "detectedAt": "2026-08-26T21:40:31.114Z"
     },
     {
       "kind": "tracked-claim",
@@ -48,18 +48,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-26T18:57:17.501Z"
+      "detectedAt": "2026-08-26T21:40:31.114Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 231 consecutive run(s) — no fresh fetch in 12 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 231,
+      "detail": "docs/data/esports.json has been served from retention for 232 consecutive run(s) — no fresh fetch in 12 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 232,
       "staleDays": 12,
       "severity": "high",
-      "detectedAt": "2026-08-26T18:57:17.568Z"
+      "detectedAt": "2026-08-26T21:40:31.202Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
