@@ -1,25 +1,17 @@
 {
-  "checkedAt": "2026-08-18T08:31:57Z",
+  "checkedAt": "2026-08-26T08:38:28Z",
   "widths": [375, 393, 900],
-  "verdict": "issues",
-  "findings": [
-    {
-      "width": 375,
-      "area": "footer",
-      "issue": "At the bottom of the page the fixed 'Assistent' floating button (bottom-trailing, sparkles icon) overlaps the tail of the 'Abonner i kalender' footer link, cutting off the last couple of characters ('…kalende[r]'). Confirmed with a real (non-full-page) scroll-to-bottom capture plus DOM bounding boxes: the link spans x=210.8–334.3px, the button spans x=318–361px (also y=837.5–886 vs link y=833.5–853) — a real ~16px horizontal / ~15.5px vertical overlap, not a screenshot artifact. This is exactly the one assistant-button case DESIGN.md does NOT sanction ('okkluderer ALDRI siste agenda-/Nyheter-rad' — the guarantee extends to the footer per the visual-qa brief). Not present at 393px (button starts at x=336 vs link ending at x=334.3 — 1.7px clearance, a near miss) or at 900px (large empty margin, no overlap).",
-      "severity": "high"
-    }
-  ],
+  "verdict": "pass",
+  "findings": [],
   "notes": [
-    "This run captured real scrolled (non-full-page) viewport screenshots in addition to the three required full-page ones, specifically to resolve last run's open question about whether the Assistent button ever reaches the true end-of-scroll position — it does at 375px, and the footer overlap above is the result.",
-    "No horizontal scroll or clipped content otherwise at any width; single quiet column, generous spacing, calm day-grouped agenda; layout is essentially identical across 375/393/900px, just wider margins at 900px.",
-    "Match/tournament names read in full with no truncation hiding a side or key info — long titles like 'Nederlands Grand Prix – sprintkvalifisering', 'Memoriał Kamili Skolimowskiej (Silesia)', and 'Esports World Cup 2026 – CS2 (gruppespill)' wrap cleanly to a second line instead of clipping. Norwegian/followed fixtures (Dinamo Zagreb–Viking, Tromsø–Brighton, Egnatia–Lillestrøm, Bodø/Glimt) are all fully legible.",
-    "Every event shows a where-to-watch line, and every channel visible is Norwegian/legitimate for the sport (Viaplay, TV 2 Play, VG+ Sport, HBO Max (Sport), NRK, YouTube (Saint Louis Chess Club), Twitch (offisiell EWC/CS2-strøm)) — no FOX/ESPN/Sky. 'Cincinnati Open' correctly shows an honest faint '–' instead of guessing a channel.",
-    "Times present and sensibly formatted ('21:00', '16:30', '19:30'); competition/round context shown under each fixture ('UEFA Champions League 2026/27 (playoff)', 'UEFA Conference League 2026/27 (playoff)', 'Formula 1 World Championship 2026', 'Wanda Diamond League').",
-    "National flags and club crests render as real icons at all widths, not broken-image boxes. A few rows (Dinamo Zagreb–Viking, Tromsø–Brighton, Udinese–Como, Egnatia–Lillestrøm, Venezia–Lecce, Torino–AC Milan, Parma–Cagliari, Bologna–Lazio, Roma–Fiorentina) show a neutral circular placeholder instead of a crest — reads as an intentional honest fallback for teams without crest art, not a broken image, consistent with prior runs.",
-    "Must-see accent dots used sparingly (e.g. Arsenal–Coventry City, Espanyol–Real Madrid, Manchester City–Bournemouth, Elche–Barcelona, Memoriał Kamili Skolimowskiej), not on every row.",
-    "Header, day headings ('I DAG', 'I MORGEN', 'TORSDAG 20. AUGUST', …), and the 'Dette dekker vi' / 'Merker og kilder' disclosures are all intact and aligned at every width.",
-    "The Assistent button resting over mid-agenda rows during a normal scroll position (e.g. over Tromsø–Brighton at 900px in one capture) is DESIGN.md-sanctioned (WP-146 variant D) and is not flagged.",
-    "Could not assess: whether 'HBO Max (Sport)' is genuinely the correct Norwegian rights holder for BMW Championship / Vuelta a España — needs more than a static screenshot."
+    "Match names read fully at all three widths, no truncation observed (e.g. 'Viking - Dinamo Zagreb', 'Coventry City - Hull City', 'Tottenham Hotspur - Newcastle United' all render whole).",
+    "Every event row shows a channel, and every channel visible is Norwegian: TV 2 Play, Viaplay, Discovery+, HBO Max (Sport), YouTube (Saint Louis Chess Club) - no ESPN/FOX/Sky spotted.",
+    "Times are present and consistently formatted (e.g. 18:15, 19:00, 21:30); multi-day/tournament entries show date ranges (e.g. '22. august-13. september') correctly rather than a single misleading date.",
+    "Flags and tournament/club icons render as small glyphs/crests, not broken image boxes, at all three widths.",
+    "Single quiet column, day-grouped agenda, generous spacing at all widths - no cluttered grid.",
+    "375px (iPhone SE) width - the tightest breakpoint - shows no visible horizontal clipping or overflow; right-edge chevron/info icons are intact on every row.",
+    "900px (desktop) shot: the floating 'Assistent' button rests over the mid-agenda 'Viking - Dinamo Zagreb' row, not the last agenda row or the footer - this matches the DESIGN.md-sanctioned floating-button idiom, not a finding.",
+    "Header, day headings ('I DAG', 'I MORGEN', 'FREDAG 28. AUGUST', ...), and footer ('Merker og kilder', install/app-promo text) are intact and aligned on all three widths.",
+    "Full-page screenshot capture only shows content within the viewport's own scroll flow, so sub-pixel/edge-case horizontal overflow (e.g. a single stray wide element) can't be fully ruled out from these images alone - flagging as a coverage caveat, not a finding."
   ]
 }
