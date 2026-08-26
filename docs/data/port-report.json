@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-26T04:41:36.147Z",
+  "generatedAt": "2026-08-26T05:31:13.876Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "yellow",
+    "coverage": "green",
     "amendRate": "red",
     "silentStops": "yellow",
     "participantStatus": "green"
@@ -22,26 +22,26 @@
     "openGaps": 2,
     "bySeverity": {
       "high": 0,
-      "medium": 1,
-      "low": 1
+      "medium": 0,
+      "low": 2
     },
-    "oldestGapAgeDays": 3.03,
+    "oldestGapAgeDays": 3.06,
     "escalatable": 0,
     "catalogMatched": 2,
-    "auditedAt": "2026-08-25T04:00:00Z",
+    "auditedAt": "2026-08-26T04:00:00Z",
     "gaps": [
       {
-        "interest": "Premier League — Aston Villa vs Arsenal (matchweek 3)",
-        "severity": "medium",
-        "ageDays": 1.03,
+        "interest": "UEFA Champions League 2026/27 — ligaspill runde 1 (MD1)",
+        "severity": "low",
+        "ageDays": 0.06,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
         "severity": "low",
-        "ageDays": 3.03,
-        "recurrences": 1,
+        "ageDays": 3.06,
+        "recurrences": 2,
         "catalogMatched": true
       }
     ]
@@ -158,26 +158,26 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-26T04:41:33.585Z",
+    "buildCheckedAt": "2026-08-26T05:31:07.955Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-25T22:19:06.813Z",
-    "manifestAgeHours": 6.37,
+    "manifestGeneratedAt": "2026-08-26T04:41:37.765Z",
+    "manifestAgeHours": 0.83,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
-        "ageHours": 276.9
+        "ageHours": 277.72
       },
       {
         "file": "tennis.json",
         "sourceLastUpdated": "2026-08-24T07:54:57.159Z",
-        "ageHours": 44.78
+        "ageHours": 45.6
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-25T05:58:00Z",
-    "verifyAgeHours": 22.73,
+    "verifyAgeHours": 23.55,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
