@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-26T05:31:13.876Z",
+  "generatedAt": "2026-08-26T06:42:41.582Z",
   "windowDays": 14,
   "ports": {
     "coverage": "green",
-    "amendRate": "red",
+    "amendRate": "green",
     "silentStops": "yellow",
     "participantStatus": "green"
   },
@@ -25,7 +25,7 @@
       "medium": 0,
       "low": 2
     },
-    "oldestGapAgeDays": 3.06,
+    "oldestGapAgeDays": 3.11,
     "escalatable": 0,
     "catalogMatched": 2,
     "auditedAt": "2026-08-26T04:00:00Z",
@@ -33,28 +33,28 @@
       {
         "interest": "UEFA Champions League 2026/27 — ligaspill runde 1 (MD1)",
         "severity": "low",
-        "ageDays": 0.06,
+        "ageDays": 0.11,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
         "severity": "low",
-        "ageDays": 3.06,
+        "ageDays": 3.11,
         "recurrences": 2,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.5,
-    "nearTermChecked": 4,
-    "nearTermAmended": 2,
-    "verifyRunAt": "2026-08-25T05:58:00Z",
+    "nearTermRate": 0.2,
+    "nearTermChecked": 5,
+    "nearTermAmended": 1,
+    "verifyRunAt": "2026-08-26T05:59:11Z",
     "windowRate": 0,
-    "windowChecks": 89,
+    "windowChecks": 95,
     "windowAmendments": 0,
-    "windowCorrections": 3,
+    "windowCorrections": 5,
     "byDay": [
       {
         "date": "2026-08-12",
@@ -153,35 +153,43 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-08-26",
+        "checks": 6,
+        "amendments": 0,
+        "corrections": 2,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-26T05:31:07.955Z",
+    "buildCheckedAt": "2026-08-26T06:42:35.565Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-26T04:41:37.765Z",
-    "manifestAgeHours": 0.83,
+    "manifestGeneratedAt": "2026-08-26T05:31:15.537Z",
+    "manifestAgeHours": 1.19,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
-        "ageHours": 277.72
+        "ageHours": 278.91
       },
       {
         "file": "tennis.json",
         "sourceLastUpdated": "2026-08-24T07:54:57.159Z",
-        "ageHours": 45.6
+        "ageHours": 46.8
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-08-25T05:58:00Z",
-    "verifyAgeHours": 23.55,
-    "corrections": 1,
+    "checkedAt": "2026-08-26T05:59:11Z",
+    "verifyAgeHours": 0.73,
+    "corrections": 2,
     "unresolved": 0,
     "signals": [
-      "Fokus på de to flerdagsarrangementene som spenner nåtid (WP-95/WP-116). Vuelta a España: fylte norwegianPlayers med lagets 5 nordmenn (Tobias Halland Johanne…"
+      "US Open (tennis, in-progress): fylte inn Casper Ruud i norwegianPlayers (19. seed, aktiv i 1. runde per Wikipedia/usopen.org) og korrigerte venue fra TBD til…",
+      "US Open singles-'2. runde exit'-treff i søk stammer fra 2025 (amNewYork-URL 8-27-25); ikke brukt — Ruud er aktiv i 2026-trekningen."
     ]
   }
 }
