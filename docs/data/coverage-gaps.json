@@ -1,75 +1,8 @@
 {
-  "generatedAt": "2026-08-25T22:19:06.599Z",
-  "gapCount": 9,
+  "generatedAt": "2026-08-26T04:41:37.543Z",
+  "gapCount": 3,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Casper Ruud",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Norsk tennisjubel: Ruud og Kjær med hver sin seier",
-      "link": "https://www.nrk.no/sport/norsk-tennisjubel_-ruud-og-kjaer-med-hver-sin-seier-1.18001626",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-25T22:19:05.675Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Ruud",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Norsk tennisjubel: Ruud og Kjær med hver sin seier",
-      "link": "https://www.nrk.no/sport/norsk-tennisjubel_-ruud-og-kjaer-med-hver-sin-seier-1.18001626",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-25T22:19:05.675Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Mesterligaen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Glimt kan få nesten 100 millioner mer enn Viking i Mesterligaen",
-      "link": "https://www.nrk.no/nordland/sjekk-forskjellen_-sa-mye-mer-tjener-bodo_glimt-enn-viking-pa-europacup-fotball-1.17999483",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-25T22:19:05.675Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Nasjonsligaen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Prisen har økt med 150 prosent: – Et skritt i feil retning",
-      "link": "https://www.nrk.no/sport/150-prosents-prisokning-pa-barnebilletter-til-norges-kamper-1.17997023",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-25T22:19:05.675Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Formel 1",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Formel 1-topper fordømmer hets mot dommere",
-      "link": "https://www.nrk.no/sport/formel-1-topper-fordommer-hets-mot-dommere-1.18001446",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-25T22:19:05.675Z"
-    },
-    {
-      "kind": "tracked-claim",
-      "entity": "Serie A 2026/27",
-      "group": "leagues",
-      "sport": "football",
-      "type": "missing",
-      "imminent": false,
-      "claimedDate": null,
-      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
-      "trackedId": "serie-a-2026-27",
-      "detectedAt": "2026-08-25T22:19:06.354Z"
-    },
     {
       "kind": "tracked-claim",
       "entity": "Håvard «rain» Nygaard",
@@ -80,7 +13,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-25T22:19:06.354Z"
+      "detectedAt": "2026-08-26T04:41:37.294Z"
     },
     {
       "kind": "tracked-claim",
@@ -92,7 +25,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-25T22:19:06.354Z"
+      "detectedAt": "2026-08-26T04:41:37.294Z"
     },
     {
       "kind": "tracked-claim",
@@ -104,18 +37,18 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-25T22:19:06.354Z"
+      "detectedAt": "2026-08-26T04:41:37.294Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 217 consecutive run(s) — no fresh fetch in 11 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 217,
+      "detail": "docs/data/esports.json has been served from retention for 218 consecutive run(s) — no fresh fetch in 11 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 218,
       "staleDays": 11,
       "severity": "high",
-      "detectedAt": "2026-08-25T22:19:06.422Z"
+      "detectedAt": "2026-08-26T04:41:37.359Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog."
