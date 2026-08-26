@@ -238,7 +238,15 @@ enum StarterPacks {
             rules: [
                 // Generalised (WP-132): the marquee tournament, not the owner's
                 // 100 Thieves / rain. Following it shows the whole event.
-                StarterRule("esports-world-cup-cs2", "Esports World Cup – CS2", sport: "esports", type: "tournament"),
+                //
+                // Grounds on the DURABLE catalog id "esports-world-cup" (WP-162),
+                // not the edition-derived "esports-world-cup-cs2". The discipline
+                // form only exists in entities.json while tracked.json books a
+                // dated CS2 edition, and vanishes off-season — a starter pack that
+                // pointed there followed NOTHING between editions. "esports-world-cup"
+                // is the coverage-compass tournament (catalog.json tier2), always
+                // present, exactly like the football pack's "eliteserien"/"norge".
+                StarterRule("esports-world-cup", "Esports World Cup", sport: "esports", type: "tournament"),
             ]
         ),
     ]

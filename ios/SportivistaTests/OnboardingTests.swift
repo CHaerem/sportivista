@@ -145,7 +145,7 @@ final class OnboardingTests: XCTestCase {
         let vm = makeVM()
         vm.toggleStarterPack(pack("cs2"))
         let ids = Set(vm.profile.rules.map(\.entityId))
-        XCTAssertEqual(ids, ["esports-world-cup-cs2"], "CS2 grounds on the marquee tournament")
+        XCTAssertEqual(ids, ["esports-world-cup"], "CS2 grounds on the durable marquee tournament (WP-162: the discipline-scoped id vanishes off-season)")
         XCTAssertFalse(ids.contains("100-thieves"), "the owner's team is no longer a starter pack")
         XCTAssertFalse(ids.contains("havard-rain-nygaard"), "the owner's player is no longer a starter pack")
     }
