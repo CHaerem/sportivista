@@ -197,17 +197,91 @@ final class FollowActionTests: XCTestCase {
         XCTAssertEqual(vm.unfollow(lyn)?.wasLastFollow, true, "that was the last one")
     }
 
-    /// And the receipt says it — the sentence is the promise, so it is pinned.
-    func test_receiptCopy_saysTheBoardWidensOnTheLastUnfollow() {
+    /// WP-254 — the mirror. An EMPTY profile leaves the board on the broad
+    /// nine-sport default (`EffectiveInterests.merge` hands `base` straight
+    /// back); the FIRST rule makes `followBroadly` explicit and the agenda drops
+    /// to what that rule covers. So adding one thing makes the board SMALLER,
+    /// and only the outcome can tell the surface that this tap was that one.
+    func test_follow_reportsWhenItWasTheFirstFollow() {
+        let vm = makeVM(store: AssistantTestSupport.tempProfileStore())
+        let lyn = index.entity(id: "fk-lyn-oslo")!
+        let brann = index.entity(id: "brann")!
+
+        XCTAssertTrue(vm.follow(lyn).wasFirstFollow, "the profile was empty — this tap narrowed the board")
+        XCTAssertFalse(vm.follow(brann).wasFirstFollow, "the board was already profile-shaped")
+    }
+
+    /// Re-following what you already follow is an upsert, not a first rule: the
+    /// profile was never empty, so the board does not change and the receipt must
+    /// not claim it did.
+    func test_follow_reFollowingTheOnlyRule_isNotAFirstFollow() {
+        let vm = makeVM(store: AssistantTestSupport.tempProfileStore())
+        let lyn = index.entity(id: "fk-lyn-oslo")!
+        vm.follow(lyn)
+
+        XCTAssertFalse(vm.follow(lyn).wasFirstFollow)
+    }
+
+    /// Emptying the profile and starting over reports first-follow AGAIN — the
+    /// flag is about the board's state, not a once-in-a-lifetime event.
+    func test_follow_afterEmptyingTheProfile_isAFirstFollowAgain() {
+        let vm = makeVM(store: AssistantTestSupport.tempProfileStore())
+        let lyn = index.entity(id: "fk-lyn-oslo")!
+        vm.follow(lyn)
+        vm.unfollow(lyn)
+
+        XCTAssertTrue(vm.follow(lyn).wasFirstFollow, "the board went broad in between, and narrows again now")
+    }
+
+    /// The `Bool` `follow` used to return is still there, just named — the
+    /// soft-follow path reads it and its callers still get a plain success flag.
+    func test_followOutcome_stillCarriesTheSaveResult() {
+        let vm = makeVM(store: AssistantTestSupport.tempProfileStore())
+        XCTAssertTrue(vm.follow(index.entity(id: "fk-lyn-oslo")!).saved)
+        XCTAssertTrue(vm.softFollow(name: "Ukjent Utøver"), "softFollow still answers with the save result")
+    }
+
+    /// And the receipt says it — the sentences are the promise, so they are
+    /// pinned. The two END lines are deliberate mirrors of each other: name ·
+    /// which end of the list · what the agenda therefore does · the wrong
+    /// reading denied · how to undo it.
+    func test_receiptCopy_saysWhatTheBoardDoesAtBothEndsOfTheList() {
         XCTAssertEqual(
-            EventDetailSheet.receiptText(name: "Lyn", nowFollowed: false, wasLastFollow: false),
+            EventDetailSheet.receiptText(name: "Lyn", nowFollowed: false,
+                                         wasFirstFollow: false, wasLastFollow: false),
             "Lyn forsvinner fra det du følger, og agendaen oppdateres. Trykk Følg for å angre.")
         XCTAssertEqual(
-            EventDetailSheet.receiptText(name: "Lyn", nowFollowed: false, wasLastFollow: true),
+            EventDetailSheet.receiptText(name: "Lyn", nowFollowed: false,
+                                         wasFirstFollow: false, wasLastFollow: true),
             "Lyn var det siste du fulgte, så agendaen viser bredt igjen — ikke ingenting. Trykk Følg for å angre.")
         XCTAssertEqual(
-            EventDetailSheet.receiptText(name: "Lyn", nowFollowed: true, wasLastFollow: false),
+            EventDetailSheet.receiptText(name: "Lyn", nowFollowed: true,
+                                         wasFirstFollow: false, wasLastFollow: false),
             "Du følger Lyn nå, og agendaen oppdateres.")
+        XCTAssertEqual(
+            EventDetailSheet.receiptText(name: "Lyn", nowFollowed: true,
+                                         wasFirstFollow: true, wasLastFollow: false),
+            "Lyn er det første du følger, så agendaen viser det du følger — ikke bredt lenger. Trykk Slutt å følge for å angre.")
+    }
+
+    /// The two end-sentences must stay a MIRROR PAIR, not two unrelated strings:
+    /// both name the end of the list, both say what the agenda does, both deny
+    /// the wrong reading, both point at the tap that undoes it. A future edit to
+    /// one of them that drops a half is what this guards.
+    func test_receiptCopy_theTwoEndSentencesMirrorEachOther() {
+        let first = EventDetailSheet.receiptText(name: "Lyn", nowFollowed: true,
+                                                 wasFirstFollow: true, wasLastFollow: false)
+        let last = EventDetailSheet.receiptText(name: "Lyn", nowFollowed: false,
+                                                wasFirstFollow: false, wasLastFollow: true)
+        XCTAssertTrue(first.contains("det første du følger"))
+        XCTAssertTrue(last.contains("det siste du fulgte"))
+        for line in [first, last] {
+            XCTAssertTrue(line.hasPrefix("Lyn "), "the name leads, both ways")
+            XCTAssertTrue(line.contains("så agendaen viser"), "both say what the board then does")
+            XCTAssertTrue(line.contains(" — ikke "), "both deny the wrong reading")
+            XCTAssertTrue(line.hasSuffix(" for å angre."), "both end at the tap that undoes it")
+            XCTAssertFalse(line.contains("!"), "VOICE § 3 — ingen utropstegn")
+        }
     }
 
     func test_unfollow_isANoOpForSomethingNotFollowed() {

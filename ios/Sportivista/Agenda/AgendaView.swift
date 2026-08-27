@@ -42,7 +42,10 @@ struct AgendaView: View {
     /// WP-16.4 — a "Følg <entitet>" action (the detail sheet's context action
     /// and now the row's left-swipe); ContentView routes it into the assistant's
     /// diff/confirm flow. Defaults to a no-op so `#Preview` / standalone use compile.
-    var onFollow: (Entity) -> Void = { _ in }
+    /// WP-254: it returns a `FollowOutcome` for the DETAIL SHEET's receipt (was
+    /// this the first rule?); the swipe here has no receipt line to tell and
+    /// deliberately drops it — a swipe is a shortcut, not a surface.
+    var onFollow: (Entity) -> FollowOutcome? = { _ in nil }
     /// WP-252 — the mirror action, forwarded to the detail sheet so a subject you
     /// already follow can be dropped from the same place you added it. It is
     /// deliberately NOT wired to a row swipe: the agenda stays an agenda, and an
@@ -176,7 +179,7 @@ struct AgendaView: View {
             if let entity = firstFollowable(item) {
                 Button {
                     if !reduceMotion { followHaptic &+= 1 }
-                    onFollow(entity)
+                    _ = onFollow(entity)
                 } label: {
                     Label("Følg", systemImage: "plus.circle")
                 }

@@ -80,9 +80,20 @@ struct FollowedListView: View {
         List {
             if rules.isEmpty {
                 Section {
-                    Text("Ingenting ennå. Trykk + for å søke opp et lag, en utøver eller en turnering å følge.")
+                    // WP-254 — the middle sentence. The list was honest about
+                    // ITSELF and silent about the board: an empty profile leaves
+                    // `EffectiveInterests` handing the base interests back, so
+                    // the agenda is on its broad default the whole time this
+                    // screen says «ingenting». Same truth the detail sheet's
+                    // receipt tells at both ends of the list, told here as a
+                    // standing state rather than a receipt — this screen has no
+                    // receipt line, and the «Angre»-snackbar is a one-line bar
+                    // that would truncate the sentence rather than carry it.
+                    // VOICE § 4: a tomhet says what happened AND what you can do.
+                    Text("Ingenting ennå. Agendaen viser bredt så lenge lista er tom. Trykk + for å søke opp et lag, en utøver eller en turnering å følge.")
                         .font(.sportivista(.subheadline))
                         .foregroundStyle(SportivistaTokens.secondaryLabel)
+                        .accessibilityIdentifier("followed.empty")
                 }
                 .listRowBackground(SportivistaTokens.cell)
             } else if let snap = snapshot {

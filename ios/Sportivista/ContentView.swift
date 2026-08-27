@@ -492,11 +492,18 @@ struct ContentView: View {
                 // `follow-sheet-tett` is the SAME sheet in its densest honest
                 // state: both teams AND the tournament followed, so HANDLINGER
                 // carries three «Slutt å følge» rows (the subject cap is three).
-                if mode == "follow-sheet" || mode == "follow-sheet-tett" {
+                // `follow-sheet-forste` (WP-254) is the same sheet over an EMPTY
+                // profile: both subjects read «Følg …», so the first tap IS the
+                // profile's first rule — the moment the board stops being broad.
+                if mode == "follow-sheet" || mode == "follow-sheet-tett" || mode == "follow-sheet-forste" {
                     let dense = mode == "follow-sheet-tett"
-                    let row = FollowSymmetryDemoSeed.row(dense: dense)
-                    try? profileStore.save(dense ? FollowSymmetryDemoSeed.denseProfile()
-                                                 : FollowSymmetryDemoSeed.profile())
+                    let first = mode == "follow-sheet-forste"
+                    let row = FollowSymmetryDemoSeed.row(dense: dense, noneFollowed: first)
+                    let seeded: InterestProfile
+                    if first { seeded = FollowSymmetryDemoSeed.emptyProfile() }
+                    else if dense { seeded = FollowSymmetryDemoSeed.denseProfile() }
+                    else { seeded = FollowSymmetryDemoSeed.profile() }
+                    try? profileStore.save(seeded)
                     assistant.reloadProfile()
                     demoSheet = .followSheet(row)
                 }
@@ -707,7 +714,12 @@ struct ContentView: View {
     /// via the WP-105 assistant-free follow path (a tap IS the confirmation; §3b
     /// "snarvei, aldri eneste vei"). It persists + recompiles the agenda via
     /// `onProfileChanged`; no assistant diff sheet.
-    private func follow(_ entity: Entity) {
+    ///
+    /// WP-254 — it hands the outcome back to the sheet, whose receipt has to say
+    /// so when this was the profile's FIRST rule (the tap that narrows a broad
+    /// board). Optional only to match the sheet's closure type; the view model's
+    /// answer is never nil.
+    private func follow(_ entity: Entity) -> FollowOutcome? {
         assistant.follow(entity)
     }
 

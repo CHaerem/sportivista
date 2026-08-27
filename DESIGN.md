@@ -346,11 +346,24 @@ Regelen er: **der du kan gjøre noe, kan du angre det, på samme sted.**
   perspektiv («gjennom norske») som er BRUKERSYNLIGE i Det du følger; en angre
   som bygger en fersk standardregel ville stille utvidet følgingen. Løftet i
   kvitteringen er ufravikelig: angre skal ikke etterlate spor.
-- **Kvitteringen sier det som faktisk skjer.** Var dette det SISTE du fulgte,
-  sier linjen at agendaen viser bredt igjen — ikke ingenting. En tom profil gir
-  `EffectiveInterests` grunn-interessene tilbake og kompilatoren faller til sin
-  brede standard, så tavla blir STØRRE. Én ærlig setning, ingen dialog, ingen
-  advarsel.
+- **Kvitteringen sier det som faktisk skjer — i BEGGE ender av lista.** Var dette
+  det SISTE du fulgte, sier linjen at agendaen viser bredt igjen — ikke ingenting.
+  En tom profil gir `EffectiveInterests` grunn-interessene tilbake og
+  kompilatoren faller til sin brede standard, så tavla blir STØRRE. Speilbildet
+  (WP-254) er like brått: var dette det FØRSTE du følger, sier linjen at agendaen
+  viser det du følger — ikke bredt lenger. Første regel gjør `followBroadly`
+  eksplisitt, så tavla blir MINDRE av at du la til noe.
+  Én ærlig setning hver vei, ingen dialog, ingen advarsel, ingen ny farge — angre
+  er fortsatt raden over.
+- **Angre er ikke en ny første følging.** Å trykke «Følg» tilbake på raden du
+  akkurat avfulgte gjenoppretter tilstanden forrige kvittering allerede forklarte;
+  den sier derfor den vanlige setningen. Å kalle det «det første du følger» ville
+  fortelle om en endring brukeren nettopp tok tilbake.
+- **Det du følger sier det samme når lista er tom.** «Ingenting ennå» var ærlig om
+  LISTA og taus om at tavla samtidig sto bredt. Den tomme tilstanden sier nå begge
+  deler — som stående tilstand, ikke som kvittering. «Angre»-snackbaren er
+  fortsatt bare handling + Angre: den er en kompakt énlinjer, og setningen ville
+  kappes der, ikke bæres.
 - **Unntaket som spør: BRED følging** (en hel sport eller kategori,
   `FollowGroup.isBroadSweep`). Ikke fordi den er uopprettelig — den er ikke det:
   `InterestProfile.applying(.remove)` fjerner ÉN regel, uten kaskade, og lagene

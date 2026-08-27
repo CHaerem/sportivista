@@ -34,11 +34,24 @@ extension AssistantViewModel {
     /// Follow `entity` directly — the tap IS the confirmation, no assistant diff
     /// (3b: "krever aldri assistenten"). Upsert semantics via
     /// `InterestProfile.applying` (re-following just refreshes the rule), then the
-    /// same persist + recompile every confirmed mutation runs. Returns whether the
-    /// save succeeded (false only on a genuine disk failure; the in-memory profile
-    /// is updated regardless, exactly like the diff/confirm path).
+    /// same persist + recompile every confirmed mutation runs.
+    ///
+    /// Returns WHAT it did (`FollowOutcome`, WP-254) rather than just whether the
+    /// save succeeded, because the one thing the calling surface cannot see from
+    /// where it stands is whether this was the profile's FIRST rule — the tap
+    /// that turns a broad board into a narrow one. The old `Bool` lives on as
+    /// `FollowOutcome.saved`.
+    ///
+    /// Non-optional where `unfollow` returns `UnfollowOutcome?`, and the
+    /// asymmetry is real: an unfollow of something you don't follow is a no-op
+    /// with nothing to report, while a follow ALWAYS applies (following what you
+    /// already follow is an upsert, not a no-op).
     @discardableResult
-    func follow(_ entity: Entity, reason: String? = nil, now: Date = Date()) -> Bool {
+    func follow(_ entity: Entity, reason: String? = nil, now: Date = Date()) -> FollowOutcome {
+        // Asked BEFORE the mutation: "was the board broad until this tap?" One
+        // line further down the profile is non-empty and the question can no
+        // longer be answered.
+        let wasFirstFollow = profile.isEmpty
         let mutation = GroundedMutation(
             kind: .add,
             entity: entity,
@@ -50,7 +63,7 @@ extension AssistantViewModel {
         profile = profile.applying(mutation, now: now)
         let saved = (try? profileStore.save(profile)) != nil
         onProfileChanged?()
-        return saved
+        return FollowOutcome(wasFirstFollow: wasFirstFollow, saved: saved)
     }
 
     /// Stop following `entity` — the mirror of `follow`, for the surfaces that
@@ -98,6 +111,28 @@ extension AssistantViewModel {
     }
 }
 
+/// What a follow did, in the terms the surface that asked for it needs in order
+/// to be honest about it (WP-254 — the mirror image of `UnfollowOutcome`).
+struct FollowOutcome: Equatable, Sendable {
+    /// True when this follow was the profile's FIRST rule.
+    ///
+    /// The same asymmetry `UnfollowOutcome.wasLastFollow` reports, read from the
+    /// other end. `EffectiveInterests.merge` hands the base interests straight
+    /// back for an EMPTY profile, so the FeedCompiler falls back to
+    /// `followBroadlyDefault` — nine sports en gros. The first rule makes
+    /// `followBroadly` EXPLICIT, and the board drops to what that one rule
+    /// covers. So the first follow narrows the agenda exactly as abruptly as the
+    /// last unfollow widens it — «du la til én ting, og tavla ble mindre» — and
+    /// nothing else on screen would explain it. (Both ends are pinned in
+    /// ProfileShapesBoardTests: an empty profile reproduces the broad board, a
+    /// one-team profile keeps only its sport.)
+    var wasFirstFollow: Bool
+    /// Whether the profile reached disk. False only on a genuine disk failure;
+    /// the in-memory profile is updated regardless, exactly like the
+    /// diff/confirm path. This is what `follow` returned before WP-254.
+    var saved: Bool
+}
+
 /// What an unfollow did, in the terms the surface that asked for it needs in
 /// order to be honest about it (WP-252).
 struct UnfollowOutcome: Equatable, Sendable {
@@ -139,7 +174,7 @@ extension AssistantViewModel {
             entity,
             reason: "Du valgte å følge «\(trimmed)» selv om vi ikke kjenner navnet ennå. Raden venter til dekningen kommer.",
             now: now
-        )
+        ).saved
     }
 
     /// Soft-follow the phrase behind a grounder REJECTION — the calm action in

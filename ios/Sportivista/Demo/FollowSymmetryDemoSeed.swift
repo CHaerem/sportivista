@@ -47,6 +47,13 @@ enum FollowSymmetryDemoSeed {
         ])
     }
 
+    /// WP-254 — the EMPTY profile behind the first-follow screenshot: nothing
+    /// followed at all, so both subjects render «Følg …» and the first tap is
+    /// literally the profile's first rule (the one the board is broad until).
+    static func emptyProfile() -> InterestProfile {
+        InterestProfile()
+    }
+
     private static func rule(_ entity: Entity, now: Date) -> InterestRule {
         InterestRule(entityId: entity.id, entityName: entity.name, sport: entity.sport,
                      scope: nil, weight: InterestProfile.defaultWeight,
@@ -56,7 +63,7 @@ enum FollowSymmetryDemoSeed {
     /// An ordinary Eliteserien row — nothing special about it except that its
     /// subjects are stamped the way `AgendaViewModel.subjects` would stamp them
     /// against the profile above.
-    static func row(now: Date = Date(), dense: Bool = false) -> AgendaEventRow {
+    static func row(now: Date = Date(), dense: Bool = false, noneFollowed: Bool = false) -> AgendaEventRow {
         let iso = ISO8601DateFormatter()
         iso.formatOptions = [.withInternetDateTime]
         let dict: [String: Any] = [
@@ -70,7 +77,7 @@ enum FollowSymmetryDemoSeed {
             try? SportivistaJSON.decoder.decode(Event.self, from: $0)
         }!
         return AgendaEventRow(
-            id: dense ? "demo-follow-dense" : "demo-follow-symmetry",
+            id: noneFollowed ? "demo-follow-forste" : (dense ? "demo-follow-dense" : "demo-follow-symmetry"),
             timeLabel: AgendaFormat.timeLabel(time: event.time, endTime: nil),
             title: "Strømsgodset – Lyn",
             metaLabel: "Eliteserien",
@@ -78,16 +85,27 @@ enum FollowSymmetryDemoSeed {
             isMustSee: true, mustWatch: true, isAIResearch: false,
             event: event,
             whyShown: "Fordi Lyn spiller.",
-            subjects: dense
-                ? [
-                    AgendaSubject(entity: unfollowedTeam, isFollowed: true),
-                    AgendaSubject(entity: followedTeam, isFollowed: true),
-                    AgendaSubject(entity: tournament, isFollowed: true),
-                ]
-                : [
+            subjects: {
+                if noneFollowed {
+                    // WP-254 — nothing followed yet: both rows read «Følg …»,
+                    // which is the state every new user's first tap starts from.
+                    return [
+                        AgendaSubject(entity: unfollowedTeam, isFollowed: false),
+                        AgendaSubject(entity: followedTeam, isFollowed: false),
+                    ]
+                }
+                if dense {
+                    return [
+                        AgendaSubject(entity: unfollowedTeam, isFollowed: true),
+                        AgendaSubject(entity: followedTeam, isFollowed: true),
+                        AgendaSubject(entity: tournament, isFollowed: true),
+                    ]
+                }
+                return [
                     AgendaSubject(entity: unfollowedTeam, isFollowed: false),
                     AgendaSubject(entity: followedTeam, isFollowed: true),
                 ]
+            }()
         )
     }
 }
