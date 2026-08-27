@@ -96,7 +96,24 @@
 					"description": "KJENTE lookalike-domener som utgir seg for å være arrangøren og ALDRI skal siteres (franceletour.com for Tour de France). Registeret (sources.json) er sannheten om hvilket domene som ER arrangøren; denne listen er varselskiltene vi allerede har snublet i.",
 					"items": { "type": "string" }
 				},
-				"notes": { "type": "string", "description": "Fritt notat: rettighetsvindu, kjente feller, hva som må avklares." }
+				"notes": { "type": "string", "description": "Fritt notat: rettighetsvindu, kjente feller, hva som må avklares." },
+				"contract": {
+					"type": "object",
+					"description": "WP-243: dekningskontrakten — det MÅLBARE løftet for konkurranser vi dekker wholesale. «I sesong (months, UTC-måneder) skal minst minUpcoming events ligge på tavla innen horizonDays dager.» Målt mekanisk hver pipelinekjøring (scripts/lib/coverage-contracts.js → docs/data/coverage-contracts.json); brudd blir høy-alvorlighets gap + rød/gul contracts-port i port-report (G2-føde). Sett KONSERVATIVE tall (landslagspauser, sommerferier) — et falskt brudd koster agent-triage og G2-støy; kun jevn-kadens-konkurranser skal ha kontrakt.",
+					"required": ["horizonDays", "minUpcoming", "months"],
+					"additionalProperties": false,
+					"properties": {
+						"horizonDays": { "type": "integer", "minimum": 1, "description": "Hvor langt frem løftet gjelder (dager)." },
+						"minUpcoming": { "type": "integer", "minimum": 1, "description": "Minste antall events på tavla innen horisonten, i sesong." },
+						"months": {
+							"type": "array",
+							"minItems": 1,
+							"items": { "type": "integer", "minimum": 1, "maximum": 12 },
+							"description": "Kalendermånedene (UTC) konkurransen er i sesong; utenfor er status off-season, aldri brudd."
+						},
+						"note": { "type": "string", "description": "Begrunnelsen for tallene (kadens, kjente pauser)." }
+					}
+				}
 			}
 		}
 	}

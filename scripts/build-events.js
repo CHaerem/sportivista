@@ -6,6 +6,7 @@ import { readJsonIfExists, rootDataPath, configDirPath, MS_PER_DAY, makeCoverage
 import { resolveStreaming, stampUrlKinds } from "./lib/norwegian-rights.js";
 import { deriveProvenance, lookalikeHosts, stripLookalikeEvidence } from "./lib/provenance.js";
 import { soleDistrustedBasis, RELIABILITY_FLOOR } from "./lib/calibration-gate.js";
+import { assessContracts } from "./lib/coverage-contracts.js";
 import { writeManifest } from "./build-manifest.js";
 import { writePortReport } from "./build-port-report.js";
 import { readIosCommit, buildAppVersion, readTestflight } from "./lib/app-version.js";
@@ -792,6 +793,35 @@ const news = buildNews({ digest: rssDigest, entities });
 fs.writeFileSync(path.join(dataDir, "news.json"), JSON.stringify(news, null, 2) + "\n");
 console.log(`Published news.json (${news.items.length} item(s)).`);
 
+// WP-243: publish coverage-contracts.json — the measurable promise per
+// wholesale-covered competition («i sesong: minst N events innen H dager»,
+// contract-blokkene i authority.json). Judged against the events ACTUALLY
+// published this run (kept, or the retained previous good array on a degrade).
+// Fail-soft: no authority map / no contracts ⇒ nothing written, nothing alarms.
+// detect-coverage-gaps (next pipeline step) turns breaches into high-severity
+// gaps for the agents; build-port-report (below) reads the file into the
+// contracts port that feeds G2. Written before writeManifest so it syncs.
+const publishedEvents = hardErrorCount > 0 && hadPreviousGood ? previousEvents : kept;
+const contractReport = assessContracts(authorityMap, publishedEvents);
+if (contractReport.contracts.length > 0) {
+	fs.writeFileSync(
+		path.join(dataDir, "coverage-contracts.json"),
+		JSON.stringify(
+			{
+				generatedAt: new Date().toISOString(),
+				contracts: contractReport.contracts,
+				breached: contractReport.breached,
+				note: "WP-243: dekningskontrakten per konkurranse — mekanisk måling av løftet i authority.json (contract-blokkene) mot tavla. Brudd triageres av coverage-critic/research via coverage-gaps.json; contracts-porten i port-report.json ruller dommen inn i G2-målingen.",
+			},
+			null,
+			2
+		)
+	);
+	console.log(
+		`Published coverage-contracts.json (${contractReport.contracts.length} contract(s), ${contractReport.breached.length} breached).`
+	);
+}
+
 // WP-119: publish port-report.json — mechanical measurement of the four gates
 // that decide external-tester readiness (coverage / amend-rate / silent stops /
 // participant status). Runs here (before writeManifest, so the manifest covers
@@ -801,7 +831,7 @@ console.log(`Published news.json (${news.items.length} item(s)).`);
 // source (the port says "unknown", never a silent green).
 const portReport = writePortReport(dataDir, configDir);
 console.log(
-	`Wrote port-report.json (coverage=${portReport.ports.coverage} amendRate=${portReport.ports.amendRate} silentStops=${portReport.ports.silentStops} participantStatus=${portReport.ports.participantStatus}).`
+	`Wrote port-report.json (coverage=${portReport.ports.coverage} amendRate=${portReport.ports.amendRate} silentStops=${portReport.ports.silentStops} participantStatus=${portReport.ports.participantStatus} contracts=${portReport.ports.contracts}).`
 );
 
 // WP-03: publish manifest.json (bytes + sha256 per published data file) —

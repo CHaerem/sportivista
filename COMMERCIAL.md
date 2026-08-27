@@ -248,7 +248,8 @@ fikserbart.
   hullfylling. For å være primærkilde trengs en garanti: hver konkurranse har en
   navngitt autoritet og en frist («Eliteserien runde N komplett 10 dager ut»), med
   målbar dekningsgrad. Det er dette som lar oss droppe leverandørene helt, og det
-  mater G2-porten.
+  mater G2-porten. **✅ Bygd 27.08** (`contract`-blokker i authority.json +
+  `scripts/lib/coverage-contracts.js` — se statusraden i § 7).
 - **WP-244 · Høflighetslaget.** Betingede forespørsler (ETag / If-Modified-Since),
   caching, takt per vert, ærlig User-Agent med kontaktadresse, robots.txt respektert.
   Billig, og konverterer «skraper» til «veloppdragen leser» både teknisk og optisk.
@@ -439,7 +440,7 @@ Flaskehalsen er D-U-N-S-ledetid og advokat, ikke koding. Realistisk 6–10 uker.
 | WP-240 | Kilderegister med rettslig grunnlag (`sources.json` + schema) | — |
 | WP-241 | Autoritetskart: hvem skaper tidspunktet, hvem skaper kanalen | WP-240 |
 | WP-242 | Proveniens per faktum + validator-kontrakt på kildetype | WP-240, WP-241 |
-| WP-243 | Dekningskontrakt per konkurranse med målbar dekningsgrad | WP-241 |
+| WP-243 | Dekningskontrakt per konkurranse med målbar dekningsgrad — ✅ 27.08: `contract`-blokker i authority.json (navngitt autoritet + «i sesong: minst N events innen H dager», sesongærlig), målt hver kjøring (`scripts/lib/coverage-contracts.js` → coverage-contracts.json); brudd = høy-alvorlighets gap for agentene + femte port `contracts` i port-report (G2-føde). Seedet for Eliteserien, PL, F1, PGA, DP World Tour, tennis-touren | WP-241 |
 | WP-244 | Høflighetslaget: ETag, caching, takt, User-Agent, robots | — |
 | WP-245 | Kalibreringen styrer kildevalget bindende — ✅ 27.08: `scripts/lib/calibration-gate.js`; målt reliabilitet < 0.7 kan aldri stå som eneste grunnlag (build-events demoterer high → medium, validate-events hard-feiler, research/verify-promptene bærer regelen) | WP-242 |
 | WP-246 | Kanalen peker på kampen: dyplenke + kilde, ellers «ikke bekreftet» | WP-242 |
