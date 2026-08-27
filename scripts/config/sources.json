@@ -3516,6 +3516,40 @@
 				"checkedAt": "2026-07-29"
 			},
 			"notes": "KANDIDAT. Motstykket til atp-tour på damesiden; dagens tennisdekning går via ESPN."
+		},
+		{
+			"id": "x-twitter",
+			"name": "X (Twitter)",
+			"publisher": "X Corp.",
+			"url": "https://x.com",
+			"endpoints": [],
+			"role": "media",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": ["schedule", "channel", "entry-list", "news"],
+			"terms": {
+				"automatedAccess": "forbidden",
+				"url": "https://x.com/en/tos",
+				"quote": "crawling or scraping the Services in any form, for any purpose without our prior written consent is expressly prohibited",
+				"basis": "terms-page",
+				"attributionRequired": null,
+				"reviewedAt": "2026-08-27"
+			},
+			"tdmReservation": {
+				"status": "reserved",
+				"mechanism": "robots.txt: `User-agent: * / Disallow: /` på x.com — og publish.twitter.com (embed-tjenesten) har eksplisitt `Disallow: /oembed` for alle agenter. Maskinlesbar totalreservasjon.",
+				"evidence": [
+					"https://x.com/robots.txt",
+					"https://publish.twitter.com/robots.txt"
+				],
+				"checkedAt": "2026-08-27"
+			},
+			"robots": {
+				"allowsOurPaths": false,
+				"note": "Vi henter INGEN stier: x.com Disallow: / for *, og selv oEmbed-endepunktet (publish.twitter.com/oembed) er Disallow for alle agenter (verifisert 2026-08-27 — det dreper den ellers fristende «offisielt embed-endepunkt»-ruta; høflighetslaget (WP-244) ville uansett nektet kallet). All X-informasjon når produktet INDIREKTE: søkemotorindekserte poster, presse som siterer, og speil (HLTV/Liquipedia, klubb-/arrangørsider) — se .claude/skills/x-sources. Eneste lovlige DIREKTE-rute er betal-API-et (pay-per-use fra feb 2026, ~$0.005/lest post, intet gratis lesenivå) — beslutningsnotat i COMMERCIAL.md Spor B (WP-221).",
+				"checkedAt": "2026-08-27"
+			},
+			"notes": "IN-USE i indirekte forstand: agentene siterer X-innhold jevnlig (kunngjøringer om program-endringer, kanalvalg, startlister, CS2-kamper) men leser det alltid via en tredjepartsflate som lovlig kan hentes; evidens-URL-en skal alltid være den flaten som faktisk ble lest, aldri en x.com-lenke (x-sources-skillens regel). ToS-formuleringen «other than through our currently available, published interfaces» gjør betal-API-et til den eneste direkteruta X selv anviser."
 		}
 	]
 }

@@ -8,8 +8,28 @@ description: How to use X/Twitter as an indirect sports source — account list,
 X is often first with schedule changes, broadcaster announcements, withdrawals and
 start lists — but x.com blocks unauthenticated fetching and the API is paid.
 **Never try to fetch x.com or nitter directly** (verified dead/blocked 2026-07-03).
-Reach X content **indirectly via web search**: search engines index posts, and
-Norwegian sports media quote relevant posts within minutes to hours.
+**The oEmbed/embed endpoint is ALSO off-limits**: `publish.twitter.com/robots.txt`
+explicitly disallows `/oembed` for all agents (verified 2026-08-27) — X has
+machine-readably reserved even the embed surface, so the courtesy layer would
+refuse the call and so must you. Reach X content **indirectly via web search**:
+search engines index posts, and Norwegian sports media quote relevant posts
+within minutes to hours. (`sources.json#x-twitter` carries the full legal
+picture; the only sanctioned DIRECT route is the pay-per-use API — an owner
+decision, see COMMERCIAL.md WP-221.)
+
+## Mirror-first: go to the surface that legally mirrors the post
+
+For each information type there is a faster, fetchable surface that mirrors X
+within minutes — search it FIRST, use generic X-search only as fallback:
+
+| Info type | Mirror to read (fetchable, often faster than press) |
+|---|---|
+| CS2 match changes / late announcements | HLTV.org + Liquipedia (editors mirror org/tournament posts in minutes — see `cs2-sources`) |
+| Football transfers / club news | The CLUB's own site is the PRIMARY source — the tweet is just distribution. Then NTB/VG/TV 2. |
+| Golf field/tee-time/format changes | pgatour.com / europeantour.com event pages + officialworldgolfranking; golf press (GolfDigest, bunkered) |
+| Chess schedule/pairing changes | The organiser's site (Norway Chess, FIDE calendar, chess.com/events), chess24/Lichess coverage |
+| Broadcaster/rights announcements | The broadcaster's own press/schedule pages (NRK presse, TV 2, Viaplay) — see `norwegian-rights` |
+| Startlists/withdrawals (winter sports, athletics) | Federation live sites (FIS, IBU, World Athletics) publish entry lists directly |
 
 ## How to search
 - `"<account name>" <topic>` e.g. `"NRK Sport" skiskyting sendeplan`

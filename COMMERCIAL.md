@@ -420,9 +420,26 @@ dataene uansett er offentlige og betalingsflaten er iOS).
 | WP-218 | D-U-N-S + Apple org-konto | MENNESKE | WP-217 | $99/år |
 | WP-219 | App-transfer — **før eksterne testere** | MENNESKE | WP-218 | — |
 | WP-220 | Vilkår, personvern v2, ansvarsfraskrivelse — én advokatrunde | MENNESKE | WP-217 | 15–40 000 kr |
+| WP-221 | X pay-per-use lese-API — den eneste lovlige direkteruta til X | BESLUTNING + KODE | — | ~25–75 kr/mnd (på-forespørsel) / ~300 kr/mnd (daglig sveip) |
 
 Kritisk sti: WP-217 → WP-218 → WP-219 → WP-220, med kode-WPene parallelt.
 Flaskehalsen er D-U-N-S-ledetid og advokat, ikke koding. Realistisk 6–10 uker.
+
+**WP-221-notatet (beslutning, 27.08):** X er ofte først med akkurat det produktet
+lever av (program-endringer, kanalvalg, startlister, CS2-kunngjøringer), men det
+finnes INGEN lovlig gratis direkterute i 2026: API-et gikk pay-per-use uten
+gratis lesenivå i februar (~$0.005/lest post; arkivsøk er Enterprise), Nitter
+fikk cease-and-desist i august, skraping er ToS-forbudt, og selv oEmbed-
+endepunktet er robots-reservert (`publish.twitter.com/robots.txt` → `Disallow:
+/oembed`, verifisert 27.08 — se `sources.json#x-twitter`). Dagens INDIREKTE lag
+(x-sources-skillens speil-først-oppskrifter: HLTV/Liquipedia, klubb- og
+arrangørsider, presse) er gratis, lovlig og typisk minutter–timer bak. Hvis den
+latensen noen gang svir i praksis, er beslutningen et lite betal-budsjett:
+på-forespørsel-lesing kun når scout/coverage flagger et hull (~500–1500 leste
+poster/mnd ≈ 25–75 kr) eller et daglig sveip av ~20 kuraterte kontoer (≈ 300
+kr/mnd) — samme størrelsesorden som de andre Spor B-kildene. Krever
+X-utviklerkonto med forbrukstak. Ikke bygget; bygges først når eieren kjenner
+latens-smerten.
 
 ### Spor C · Vekst
 
