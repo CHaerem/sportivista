@@ -443,6 +443,7 @@ Flaskehalsen er D-U-N-S-ledetid og advokat, ikke koding. Realistisk 6–10 uker.
 | WP-244 | Høflighetslaget: ETag, caching, takt, User-Agent, robots | — |
 | WP-245 | Kalibreringen styrer kildevalget bindende — ✅ 27.08: `scripts/lib/calibration-gate.js`; målt reliabilitet < 0.7 kan aldri stå som eneste grunnlag (build-events demoterer high → medium, validate-events hard-feiler, research/verify-promptene bærer regelen) | WP-242 |
 | WP-246 | Kanalen peker på kampen: dyplenke + kilde, ellers «ikke bekreftet» | WP-242 |
+| WP-248 | Publiserings-ferskhetsvakt — ✅ 27.08: `scripts/check-publish-freshness.js` i den timelige pipelinen dømmer den LIVE kopien mot repoet (lærdom: en fastlåst Pages-deploy holdt køen i fire uker mens alle repo-signaler var grønne); self-repair fikk oppryddingsoppskriften | — |
 
 Rekkefølge: WP-240 → WP-241 → WP-242 er kjernen; WP-244 kan gjøres når som helst og
 bør gjøres tidlig fordi den er billig. WP-242 er den høyeste enkeltgevinsten.
