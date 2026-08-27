@@ -1,0 +1,152 @@
+{
+  "generatedAt": "2026-08-27T10:49:05.367Z",
+  "contracts": [
+    {
+      "id": "f1:world-championship",
+      "name": "Formula 1 World Championship",
+      "sport": "f1",
+      "authority": "formula1",
+      "horizonDays": 35,
+      "minUpcoming": 1,
+      "months": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "note": "GP-helger mars–desember, som regel hver 1.–2. uke; 35 d + min 1 tåler sommerpausen (~4 uker).",
+      "inSeason": true,
+      "upcoming": 4,
+      "status": "met"
+    },
+    {
+      "id": "football:eliteserien",
+      "name": "Eliteserien",
+      "sport": "football",
+      "authority": "eliteserien, fotball-no",
+      "horizonDays": 14,
+      "minUpcoming": 4,
+      "months": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "note": "Ukentlige runder (8 kamper) april–november; 14 d + min 4 tåler landslagspauser (~10 d) og delte runder.",
+      "inSeason": true,
+      "upcoming": 8,
+      "status": "met"
+    },
+    {
+      "id": "football:premier-league",
+      "name": "Premier League",
+      "sport": "football",
+      "authority": "premier-league",
+      "horizonDays": 14,
+      "minUpcoming": 6,
+      "months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "note": "Ukentlige runder (10 kamper) august–mai; 14 d + min 6 tåler landslagspauser og cuphelger.",
+      "inSeason": true,
+      "upcoming": 10,
+      "status": "met"
+    },
+    {
+      "id": "golf:dp-world-tour",
+      "name": "DP World Tour",
+      "sport": "golf",
+      "authority": "european-tour",
+      "horizonDays": 14,
+      "minUpcoming": 1,
+      "months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "note": "Tilnærmet ukentlige turneringer januar–november; min 1 innen 14 d.",
+      "inSeason": true,
+      "upcoming": 1,
+      "status": "met"
+    },
+    {
+      "id": "golf:pga-tour",
+      "name": "PGA Tour (inkl. FedExCup)",
+      "sport": "golf",
+      "authority": "pgatour",
+      "horizonDays": 14,
+      "minUpcoming": 1,
+      "months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "note": "Tilnærmet ukentlige turneringer januar–november (FedExCup + høstserien); min 1 innen 14 d.",
+      "inSeason": true,
+      "upcoming": 1,
+      "status": "met"
+    },
+    {
+      "id": "tennis:tour",
+      "name": "ATP/WTA Tour",
+      "sport": "tennis",
+      "authority": "atp-tour, wta, swiss-open-gstaad",
+      "horizonDays": 14,
+      "minUpcoming": 1,
+      "months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "note": "ATP/WTA-touren går januar–november; min 1 turnering innen 14 d (touren dekkes via majors + navn, tier2).",
+      "inSeason": true,
+      "upcoming": 1,
+      "status": "met"
+    }
+  ],
+  "breached": [],
+  "note": "WP-243: dekningskontrakten per konkurranse — mekanisk måling av løftet i authority.json (contract-blokkene) mot tavla. Brudd triageres av coverage-critic/research via coverage-gaps.json; contracts-porten i port-report.json ruller dommen inn i G2-målingen."
+}

@@ -1,11 +1,12 @@
 {
-  "generatedAt": "2026-08-27T10:09:50.668Z",
+  "generatedAt": "2026-08-27T10:49:05.367Z",
   "windowDays": 14,
   "ports": {
     "coverage": "green",
     "amendRate": "green",
     "silentStops": "yellow",
-    "participantStatus": "green"
+    "participantStatus": "green",
+    "contracts": "green"
   },
   "basis": {
     "coverageAudit": true,
@@ -16,7 +17,8 @@
     "catalog": true,
     "notes": [
       "amendRate.byDay dekker ALLE verify-kildesjekker (ledgeren registrerer ikke event-ledetid, så <72t-filteret kommer fra verify-log sitt neste-7-dager-omfang)."
-    ]
+    ],
+    "coverageContracts": true
   },
   "coverage": {
     "openGaps": 2,
@@ -25,7 +27,7 @@
       "medium": 0,
       "low": 2
     },
-    "oldestGapAgeDays": 4.26,
+    "oldestGapAgeDays": 4.28,
     "escalatable": 0,
     "catalogMatched": 2,
     "auditedAt": "2026-08-26T04:00:00Z",
@@ -33,14 +35,14 @@
       {
         "interest": "UEFA Champions League 2026/27 — ligaspill runde 1 (MD1)",
         "severity": "low",
-        "ageDays": 1.26,
+        "ageDays": 1.28,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
         "severity": "low",
-        "ageDays": 4.26,
+        "ageDays": 4.28,
         "recurrences": 2,
         "catalogMatched": true
       }
@@ -151,31 +153,37 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-27T10:09:44.824Z",
+    "buildCheckedAt": "2026-08-27T10:49:00.778Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-27T09:56:50.838Z",
-    "manifestAgeHours": 0.22,
+    "manifestGeneratedAt": "2026-08-27T10:09:52.030Z",
+    "manifestAgeHours": 0.65,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
-        "ageHours": 306.37
+        "ageHours": 307.02
       },
       {
         "file": "tennis.json",
         "sourceLastUpdated": "2026-08-24T07:54:57.159Z",
-        "ageHours": 74.25
+        "ageHours": 74.9
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-26T05:59:11Z",
-    "verifyAgeHours": 28.18,
+    "verifyAgeHours": 28.83,
     "corrections": 2,
     "unresolved": 0,
     "signals": [
       "US Open (tennis, in-progress): fylte inn Casper Ruud i norwegianPlayers (19. seed, aktiv i 1. runde per Wikipedia/usopen.org) og korrigerte venue fra TBD til…",
       "US Open singles-'2. runde exit'-treff i søk stammer fra 2025 (amNewYork-URL 8-27-25); ikke brukt — Ruud er aktiv i 2026-trekningen."
     ]
+  },
+  "contracts": {
+    "total": 6,
+    "inSeason": 6,
+    "breached": [],
+    "generatedAt": "2026-08-27T10:49:05.367Z"
   }
 }
