@@ -1,9 +1,68 @@
 import { ESPNAdapter } from "../lib/adapters/espn-adapter.js";
 import { sportsConfig } from "../config/sports-config.js";
+import { EventNormalizer } from "../lib/event-normalizer.js";
 
 export class TennisFetcher extends ESPNAdapter {
 	constructor() {
 		super(sportsConfig.tennis);
+	}
+
+	// The owner interest is «Casper Ruud kamper», not just the tournament: ESPN's
+	// scoreboard carries every match in `groupings[].competitions`, so alongside
+	// the tournament umbrella we emit one event per not-yet-finished match that
+	// features a followed Norwegian player — with the actual match time, court
+	// and opponent. Future rounds sit as TBD-vs-TBD upstream and are skipped
+	// until the draw names the player, so a row only appears once it is real.
+	transformToEvents(rawData) {
+		const events = super.transformToEvents(rawData);
+		for (const espnEvent of rawData) {
+			for (const raw of this.extractFocusMatches(espnEvent)) {
+				const normalized = EventNormalizer.normalize(raw, this.config.sport);
+				if (normalized && EventNormalizer.validateEvent(normalized)) {
+					events.push(normalized);
+				}
+			}
+		}
+		return EventNormalizer.deduplicate(events);
+	}
+
+	extractFocusMatches(espnEvent) {
+		const players = this.config.norwegian?.players || [];
+		if (players.length === 0 || !Array.isArray(espnEvent?.groupings)) return [];
+
+		const out = [];
+		for (const grouping of espnEvent.groupings) {
+			for (const comp of grouping.competitions || []) {
+				// Finished matches belong to results, not the agenda. A live match
+				// (state "in", completed false) stays.
+				if (comp.status?.type?.completed === true) continue;
+				if (!comp.date) continue;
+
+				const names = (comp.competitors || [])
+					.map((c) => c.athlete?.displayName || c.team?.displayName || "")
+					.filter(Boolean);
+				const focus = names.find((n) =>
+					players.some((p) => n.toLowerCase() === p.toLowerCase() || n.toLowerCase().includes(p.toLowerCase()))
+				);
+				if (!focus) continue;
+
+				const opponent = names.find((n) => n !== focus) || "TBD";
+				const court = comp.venue?.court;
+				out.push({
+					title: `${focus} – ${opponent}`,
+					time: comp.date,
+					venue: court || comp.venue?.fullName || espnEvent.venue?.fullName || "TBD",
+					tournament: espnEvent.name,
+					meta: grouping.grouping?.displayName
+						? `${espnEvent.name} · ${grouping.grouping.displayName}`
+						: espnEvent.name,
+					streaming: [],
+					status: comp.status?.type?.name,
+					norwegian: true,
+				});
+			}
+		}
+		return out;
 	}
 
 	transformESPNEvent(espnEvent) {

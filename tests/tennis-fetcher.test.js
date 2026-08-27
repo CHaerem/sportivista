@@ -79,3 +79,73 @@ describe("raw-event window (fetchScoreboardWithLeagues)", () => {
 		expect(raw).toHaveLength(0);
 	});
 });
+
+// Per-match owner coverage (27.08): «Casper Ruud kamper» means the MATCH — time,
+// court, opponent — not just the tournament umbrella. Matches live in ESPN's
+// groupings[].competitions.
+function ruudMatch(overrides = {}) {
+	return {
+		id: "184700",
+		date: iso(1),
+		status: { type: { name: "STATUS_SCHEDULED", completed: false } },
+		venue: { fullName: "New York, USA", court: "Arthur Ashe Stadium" },
+		competitors: [
+			{ athlete: { displayName: "Casper Ruud" } },
+			{ athlete: { displayName: "Taylor Fritz" } },
+		],
+		...overrides,
+	};
+}
+
+describe("TennisFetcher.extractFocusMatches", () => {
+	it("emits a per-match event for a scheduled Ruud match with court and opponent", () => {
+		const raw = runningTournament({
+			groupings: [{ grouping: { displayName: "Men's Singles" }, competitions: [ruudMatch()] }],
+		});
+		const [m] = fetcher.extractFocusMatches(raw);
+		expect(m.title).toBe("Casper Ruud – Taylor Fritz");
+		expect(m.venue).toBe("Arthur Ashe Stadium");
+		expect(m.meta).toBe("US Open · Men's Singles");
+		expect(m.norwegian).toBe(true);
+	});
+
+	it("skips finished matches, TBD draws and matches without followed players", () => {
+		const raw = runningTournament({
+			groupings: [
+				{
+					grouping: { displayName: "Men's Singles" },
+					competitions: [
+						ruudMatch({ status: { type: { name: "STATUS_FINAL", completed: true } } }),
+						ruudMatch({ competitors: [{ athlete: { displayName: "TBD" } }, { athlete: { displayName: "TBD" } }] }),
+						ruudMatch({ competitors: [{ athlete: { displayName: "Jannik Sinner" } }, { athlete: { displayName: "Taylor Fritz" } }] }),
+					],
+				},
+			],
+		});
+		expect(fetcher.extractFocusMatches(raw)).toHaveLength(0);
+	});
+
+	it("keeps a LIVE Ruud match (in progress, not completed)", () => {
+		const raw = runningTournament({
+			groupings: [
+				{
+					grouping: { displayName: "Men's Singles" },
+					competitions: [ruudMatch({ date: iso(0), status: { type: { name: "STATUS_IN_PROGRESS", completed: false } } })],
+				},
+			],
+		});
+		expect(fetcher.extractFocusMatches(raw)).toHaveLength(1);
+	});
+});
+
+describe("TennisFetcher.transformToEvents (umbrella + matches)", () => {
+	it("returns both the tournament umbrella and the per-match Ruud event", () => {
+		const raw = runningTournament({
+			groupings: [{ grouping: { displayName: "Men's Singles" }, competitions: [ruudMatch()] }],
+		});
+		const events = fetcher.transformToEvents([raw]);
+		const titles = events.map((e) => e.title);
+		expect(titles).toContain("US Open");
+		expect(titles).toContain("Casper Ruud – Taylor Fritz");
+	});
+});

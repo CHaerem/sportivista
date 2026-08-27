@@ -60,3 +60,37 @@ describe("parseLiquipediaMatches", () => {
 		expect(parseLiquipediaMatches(null)).toEqual([]);
 	});
 });
+
+// Honest-empty vs dead (owner fix 27.08): upstream parse succeeded but the focus
+// team has no scheduled matches → the fetcher must say "fresh empty" (_noRetain)
+// so retainLastGood doesn't re-serve a stale file and detect-coverage-gaps doesn't
+// raise a false stale-retained alarm for days. An empty PARSE (parser regression)
+// must stay retention-eligible.
+describe("EsportsFetcher.formatResponse (_noRetain)", async () => {
+	const { EsportsFetcher } = await import("../scripts/fetch/esports.js");
+
+	it("stamps _noRetain when upstream parsed matches but none had the focus team", () => {
+		const f = new EsportsFetcher();
+		f._fetchMetadata.liquipedia = { parsedMatches: 56, focusMatches: 0 };
+		const res = f.formatResponse([]);
+		expect(res.tournaments).toHaveLength(0);
+		expect(res._noRetain).toBe(true);
+	});
+
+	it("does NOT stamp _noRetain when the parse itself came back empty", () => {
+		const f = new EsportsFetcher();
+		f._fetchMetadata.liquipedia = { parsedMatches: 0, focusMatches: 0 };
+		const res = f.formatResponse([]);
+		expect(res._noRetain).toBeUndefined();
+	});
+
+	it("does NOT stamp _noRetain when there are events", () => {
+		const f = new EsportsFetcher();
+		f._fetchMetadata.liquipedia = { parsedMatches: 56, focusMatches: 1 };
+		const res = f.formatResponse([
+			{ title: "100T vs FaZe", time: new Date(Date.now() + 86400000).toISOString(), sport: "esports", tournament: "BLAST" },
+		]);
+		expect(res.tournaments.length).toBeGreaterThan(0);
+		expect(res._noRetain).toBeUndefined();
+	});
+});

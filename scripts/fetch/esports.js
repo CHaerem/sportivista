@@ -118,6 +118,14 @@ export class EsportsFetcher extends BaseFetcher {
 
 			console.log(`Filtered to ${filtered.length} matches (focus team only: ${focusTeams.join(", ")})`);
 
+			// Attest upstream health so an EMPTY result can be told apart from a
+			// DEAD fetcher: "parsed 56, focus-filtered to 0" is the focus team
+			// simply having no scheduled matches — a legitimate, fresh answer.
+			this._fetchMetadata = {
+				...this._fetchMetadata,
+				liquipedia: { parsedMatches: parsed.length, focusMatches: filtered.length },
+			};
+
 			for (const match of filtered.slice(0, 10)) {
 				matches.push({
 					title: `${match.team1} vs ${match.team2}`,
@@ -169,7 +177,18 @@ export class EsportsFetcher extends BaseFetcher {
 	}
 
 	formatResponse(events) {
-		return super.formatResponse(events);
+		const response = super.formatResponse(events);
+		const upstream = this._fetchMetadata?.liquipedia;
+		// Honest-empty: upstream parse succeeded (matches existed, none with the
+		// focus team) — tell retainLastGood NOT to re-serve the old file. Without
+		// this, "100 Thieves has no scheduled matches" was indistinguishable from
+		// a dead fetcher and kept a stale file + a false stale-retained alarm for
+		// days. parsedMatches === 0 stays retention-eligible: an empty PARSE is
+		// the parser-regression case retention exists for.
+		if ((response.tournaments?.length ?? 0) === 0 && upstream?.parsedMatches > 0) {
+			response._noRetain = true;
+		}
+		return response;
 	}
 }
 
