@@ -112,8 +112,8 @@ final class MainFlowsUITests: SportivistaUITestCase {
 		// Fire five pack toggles back-to-back with no waits between them — each
 		// fires onProfileChanged → an agenda recompile behind the overlay. WP-60
 		// coalesces a burst to ≤2 recompiles; a regression here would jam the main
-		// thread and the taps below would not all land. The five packs sum to 9
-		// rules: norsk-fotball(1) + golf(3) + sjakk(1) + sykkel(2) + friidrett(2).
+		// thread and the taps below would not all land. The five packs sum to 10
+		// rules: norsk-fotball(2) + golf(3) + sjakk(1) + sykkel(2) + friidrett(2).
 		for packId in ["starterpack.norsk-fotball",
 		               "starterpack.norske-golfere",
 		               "starterpack.sjakk-carlsen",
@@ -124,7 +124,7 @@ final class MainFlowsUITests: SportivistaUITestCase {
 			pack.tap()
 		}
 
-		assertExists(app.staticTexts["FØLGER NÅ (9)"], "all five packs should apply (9 rules) within the time budget")
+		assertExists(app.staticTexts["FØLGER NÅ (10)"], "all five packs should apply (10 rules) within the time budget")
 
 		// Responsiveness proof: the UI is still live after the burst. WP-202: the
 		// ritual step now sits between quick-picks and the assistant intro.
