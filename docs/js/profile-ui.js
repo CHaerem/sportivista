@@ -97,18 +97,102 @@ Object.assign(window.Dashboard.prototype, {
 		return out;
 	},
 
-	/** The "Følg X" / "Følger X" buttons for the detail sheet's action row.
-	 *  Empty string when the profile machinery is absent. */
+	/** Every stable entity id this event carries — the exact half of the match
+	 *  below (no name guessing when the server already told us who this is). */
+	eventEntityIds(e) {
+		const out = [];
+		const push = (id) => { if (id) out.push(id); };
+		push(e.entityId); push(e.homeTeamEntityId); push(e.awayTeamEntityId);
+		for (const id of e.entityIds || []) push(id);
+		for (const p of e.norwegianPlayers || []) push(p && p.entityId);
+		for (const p of e.participants || []) push(p && p.entityId);
+		return out;
+	},
+
+	/** WP-253 — everything you ALREADY follow that this row is about, including
+	 *  the tournament, league or wholesale sport that put it on the board.
+	 *
+	 *  This is the asymmetry the sheet had: `followTargets` is the ADD side (the
+	 *  two teams + the Norwegians — the things it makes sense to offer), and the
+	 *  thing you want GONE is usually not one of them. So the REMOVE side reads
+	 *  the profile instead of the row: every live rule this event matches earns a
+	 *  «Slutt å følge» right here, where you noticed you weren't interested.
+	 *
+	 *  Matching is the lens's own matcher (ssMatchInterest — word-boundary,
+	 *  season-proof terms, sport-scoped) so the sheet offers to remove exactly
+	 *  what the lens used to let the row in; plus the event's stamped ids (exact),
+	 *  plus a sport equality check for a wholesale `sport-…` rule, whose name
+	 *  («Skiskyting») never appears in an event title. Rule-shaped so «Angre» can
+	 *  restore the follow as it was, not a fresh default one. */
+	unfollowTargets(e) {
+		if (!e || !this.profileAvailable() || typeof ssLiveRules !== 'function') return [];
+		const hay = typeof ssLensHaystack === 'function'
+			? ssLensHaystack(e)
+			: `${e.title || ''} ${e.tournament || ''} ${e.homeTeam || ''} ${e.awayTeam || ''}`;
+		const ids = new Set(this.eventEntityIds(e));
+		const out = [];
+		for (const r of ssLiveRules(ssProfileLoad())) {
+			const kind = typeof ssRuleKind === 'function' ? ssRuleKind(r) : (r.kind || 'athlete');
+			const wholesale = kind === 'sport';
+			let hit = ids.has(r.entityId);
+			if (!hit && wholesale) hit = !!(r.sport && e.sport && ssNormalize(r.sport) === ssNormalize(e.sport));
+			if (!hit && typeof ssMatchInterest === 'function') {
+				hit = !!ssMatchInterest(hay, [{ name: r.entityName, aliases: [], sport: r.sport || null }], { sport: e.sport });
+			}
+			if (!hit) continue;
+			out.push({
+				entityId: r.entityId, entityName: r.entityName || r.entityId,
+				sport: r.sport || '', kind, wholesale,
+				scope: r.scope, weight: r.weight, reason: r.reason,
+			});
+		}
+		return out;
+	},
+
+	/** One flat action button in the detail sheet's action row. `on` = you follow
+	 *  this, so the button says the ACTION («Slutt å følge X»), never the state
+	 *  («Følger X») — a state label is not an affordance, and removing was the
+	 *  half of the pair nobody could find. A wholesale sport follow says what it
+	 *  costs in the label itself; that honesty replaces a confirmation dialog. */
+	followActionButton(t, on) {
+		const name = escapeHtml(t.entityName);
+		const label = on
+			? `Slutt å følge ${name}${t.wholesale ? ' (hele sporten)' : ''}`
+			: `Følg ${name}`;
+		return `<button type="button" class="ev-act ev-follow${on ? ' is-following' : ''}"`
+			+ ` data-entity-id="${escapeHtml(t.entityId)}" data-entity-name="${name}"`
+			+ ` data-entity-sport="${escapeHtml(t.sport || '')}" data-kind="${escapeHtml(t.kind || '')}"`
+			+ ` data-follow-state="${on ? 'on' : 'off'}" aria-pressed="${on}">${label}</button>`;
+	},
+
+	/** The symmetric follow/unfollow row for the detail sheet: «Følg X» for what
+	 *  this row offers to add, «Slutt å følge Y» for everything you already follow
+	 *  that put it here. Where you can do a thing, you can undo it — in the same
+	 *  place, in the same tap. Empty string when the profile machinery is absent. */
 	followButtonsHtml(e) {
 		if (!this.profileAvailable()) return '';
-		return this.followTargets(e).map((t) => {
-			const on = ssProfileFollows(t.entityId);
-			const label = on ? `Følger ${escapeHtml(t.entityName)}` : `Følg ${escapeHtml(t.entityName)}`;
-			return `<button type="button" class="ev-act ev-follow${on ? ' is-following' : ''}"`
-				+ ` data-entity-id="${escapeHtml(t.entityId)}" data-entity-name="${escapeHtml(t.entityName)}"`
-				+ ` data-entity-sport="${escapeHtml(t.sport)}" data-kind="${escapeHtml(t.kind)}"`
-				+ ` data-follow-state="${on ? 'on' : 'off'}" aria-pressed="${on}">${label}</button>`;
-		}).join('');
+		// The REMOVE side is resolved first, and it wins the name: a rule stored
+		// under another id for the same subject (an iOS-created follow, an older
+		// synthesized id) must not also earn a «Følg X» beside its own «Slutt å
+		// følge X» — that would read as nonsense and write a duplicate rule.
+		const removes = [];
+		const seenIds = new Set();
+		const seenNames = new Set();
+		for (const t of this.unfollowTargets(e)) {
+			if (seenIds.has(t.entityId)) continue;
+			seenIds.add(t.entityId);
+			seenNames.add(ssNormalize(t.entityName));
+			removes.push(this.followActionButton(t, true));
+		}
+		const adds = [];
+		for (const t of this.followTargets(e)) {
+			if (seenIds.has(t.entityId) || seenNames.has(ssNormalize(t.entityName))) continue;
+			if (ssProfileFollows(t.entityId)) continue;
+			seenIds.add(t.entityId);
+			seenNames.add(ssNormalize(t.entityName));
+			adds.push(this.followActionButton(t, false));
+		}
+		return adds.concat(removes).join('');
 	},
 
 	/** Push the local profile change to iCloud right away (fire-and-forget) so the
@@ -125,21 +209,169 @@ Object.assign(window.Dashboard.prototype, {
 	 *  sheet, the search-and-follow box, and the assistant. Returns true on success. */
 	commitFollow(entity) {
 		if (!this.profileAvailable()) return false;
-		ssProfileFollow({ entityId: entity.entityId, entityName: entity.entityName, sport: entity.sport, kind: entity.kind });
+		// scope/weight/reason are passed THROUGH when present (undefined ⇒ the same
+		// defaults ssProfileFollow always applied), so «Angre» restores the rule it
+		// removed rather than a fresh, flattened one.
+		ssProfileFollow({
+			entityId: entity.entityId, entityName: entity.entityName, sport: entity.sport, kind: entity.kind,
+			scope: entity.scope, weight: entity.weight, reason: entity.reason,
+		});
 		this.applyProfile(ssProfileLoad());
 		this.render();
 		this.pushProfileToICloud();
 		return true;
 	},
 
-	/** Commit an unfollow (tombstone the rule), then re-personalise + push. */
+	/** Commit an unfollow (tombstone the rule), then re-personalise + push — and
+	 *  leave the removal standing as one quiet «Angre» (see below). No dialog:
+	 *  the rule is captured BEFORE the tombstone, so the way back is one tap. */
 	commitUnfollow(entityId) {
 		if (!this.profileAvailable()) return false;
+		const rule = this.liveRuleFor(entityId);
 		ssProfileUnfollow(entityId);
 		this.applyProfile(ssProfileLoad());
 		this.render();
 		this.pushProfileToICloud();
+		if (rule) this.rememberUnfollow(rule);
 		return true;
+	},
+
+	// ── Angre, ikke bekreft (WP-253) ─────────────────────────────────────────
+	// Å slutte å følge er trivielt reverserbart — du kan bare følge igjen — så vi
+	// spør ALDRI først. En «Slutt å følge X?»-modal beskytter mot nesten ingenting
+	// og koster et trykk hver gang du luker. Fjerningen skjer med én gang, og blir
+	// liggende som ETT rolig tilbud om å angre.
+	//
+	// Angre-linja er sidenivå og ikke en del av raden, med vilje: en fjerning kan
+	// ta bort nettopp den raden du sto i (linsen filtrerer tavla), og da ville et
+	// angre-tilbud inne i arket forsvinne sammen med den — akkurat når du trenger
+	// det. Den ligger over tavla som assistent-knappen, ikke i innholdet.
+	//
+	// Ingen bekreftelse noe sted: den eneste fjerningen som er stor nok til å
+	// fortjene en (en hel sport) sier hva den koster i selve knappe-etiketten
+	// («… (hele sporten)»), og angres på samme måte som alt annet.
+
+	/** How long the undo offer stands (ms). */
+	UNDO_MS: 12000,
+
+	/** The live profile rule for an entity, in the shape commitFollow takes back —
+	 *  captured before a tombstone so an undo restores weight/scope/reason too. */
+	liveRuleFor(entityId) {
+		if (typeof ssLiveRules !== 'function') return null;
+		const r = ssLiveRules(ssProfileLoad()).find((x) => x.entityId === entityId);
+		if (!r) return null;
+		return {
+			entityId: r.entityId, entityName: r.entityName || r.entityId, sport: r.sport || '',
+			kind: typeof ssRuleKind === 'function' ? ssRuleKind(r) : r.kind,
+			scope: r.scope, weight: r.weight, reason: r.reason,
+		};
+	},
+
+	/** Stack a just-removed rule onto the pending undo and (re)show the line.
+	 *  Removals made while the line stands accumulate, so luking three rows in a
+	 *  row is still ONE «Angre» — the tidy-up you regret is undone in one tap. */
+	rememberUnfollow(rule) {
+		this._undoFollows = (this._undoFollows || []).filter((r) => r.entityId !== rule.entityId);
+		this._undoFollows.push(rule);
+		this.renderUndoBar();
+	},
+
+	/** The undo line's text. Names up to two; beyond that it counts, honestly. */
+	undoText() {
+		const names = (this._undoFollows || []).map((r) => r.entityName);
+		if (!names.length) return '';
+		if (names.length === 1) return `Sluttet å følge ${names[0]}.`;
+		if (names.length === 2) return `Sluttet å følge ${names[0]} og ${names[1]}.`;
+		return `Sluttet å følge ${names[0]}, ${names[1]} og ${names.length - 2} til.`;
+	},
+
+	/** Put back everything the standing undo line covers — one re-render, one
+	 *  iCloud push, whatever the number of removals. */
+	undoUnfollow() {
+		const pending = this._undoFollows || [];
+		this.dismissUndo();
+		if (!pending.length || !this.profileAvailable()) return false;
+		for (const r of pending) {
+			ssProfileFollow({
+				entityId: r.entityId, entityName: r.entityName, sport: r.sport, kind: r.kind,
+				scope: r.scope, weight: r.weight, reason: r.reason,
+			});
+		}
+		this.applyProfile(ssProfileLoad());
+		this.render();
+		this.pushProfileToICloud();
+		return true;
+	},
+
+	/** Let the offer lapse (timeout, or it was just taken). */
+	dismissUndo() {
+		this._undoFollows = [];
+		if (this._undoTimer) { clearTimeout(this._undoTimer); this._undoTimer = null; }
+		const el = this._undoBar;
+		if (el) { el.innerHTML = ''; el.hidden = true; }
+	},
+
+	/** The undo line's element, created once and parked on <body> (it must outlive
+	 *  the agenda re-render that the removal triggers). Returns null in a DOM-less
+	 *  or stripped context — the undo state above still works, it just has no line. */
+	undoBarEl() {
+		if (this._undoBar) return this._undoBar;
+		if (this._undoBarUnavailable) return null;
+		const doc = typeof document !== 'undefined' ? document : null;
+		if (!doc || typeof doc.createElement !== 'function' || !doc.body || typeof doc.body.appendChild !== 'function') {
+			this._undoBarUnavailable = true;
+			return null;
+		}
+		const el = doc.createElement('div');
+		el.id = 'undo-bar';
+		el.className = 'undo-bar';
+		el.hidden = true;
+		if (typeof el.setAttribute === 'function') {
+			el.setAttribute('role', 'status');
+			el.setAttribute('aria-live', 'polite');
+		}
+		if (typeof el.addEventListener === 'function') {
+			el.addEventListener('click', (evt) => {
+				const t = evt && evt.target;
+				if (t && typeof t.closest === 'function' && t.closest('.undo-act')) this.undoUnfollow();
+			});
+		}
+		doc.body.appendChild(el);
+		// A node we can't find again isn't in a real document (test/stripped DOM):
+		// stand down entirely rather than arm a timer nothing will ever show.
+		if (typeof doc.getElementById === 'function' && doc.getElementById('undo-bar') !== el) {
+			this._undoBarUnavailable = true;
+			return null;
+		}
+		this._undoBar = el;
+		return el;
+	},
+
+	renderUndoBar() {
+		const el = this.undoBarEl();
+		if (!el) return;
+		const text = this.undoText();
+		if (!text) { el.innerHTML = ''; el.hidden = true; return; }
+		el.innerHTML = `<span class="undo-text">${escapeHtml(text)}</span>`
+			+ '<button type="button" class="undo-act">Angre</button>';
+		el.hidden = false;
+		if (this._undoTimer) clearTimeout(this._undoTimer);
+		this._undoTimer = setTimeout(() => this.dismissUndo(), this.UNDO_MS);
+	},
+
+	/** Take the reader to the one place they can follow something that ISN'T on
+	 *  the board: the search field inside «Dette dekker vi». Opens the disclosure,
+	 *  scrolls to it and puts the caret in the field — the same move `.nu-more`
+	 *  makes, so there is ONE way in, reachable from more than one place. */
+	openFollowSearch() {
+		if (typeof document === 'undefined' || typeof document.getElementById !== 'function') return;
+		const wrap = document.getElementById('followed');
+		if (wrap) {
+			wrap.open = true;
+			if (typeof wrap.scrollIntoView === 'function') wrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		}
+		const input = document.getElementById('follow-search-input');
+		if (input && typeof input.focus === 'function') input.focus();
 	},
 
 	/** Toggle a follow from a button's data-* attrs (the detail-sheet buttons and

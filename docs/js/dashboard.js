@@ -492,12 +492,23 @@ class Dashboard {
 		return { groups: out, hasMore, empty: false };
 	}
 
+	/** The empty board, explained — and, when it is YOUR list that is empty, the
+	 *  way out of it (WP-253). Following something you can't see is the deepest
+	 *  path in the product, and an empty agenda is the one moment the board itself
+	 *  can hand you the search instead of making you go find it. With no profile
+	 *  the wording is unchanged: nothing to add to, nothing to say. */
+	agendaEmptyHtml() {
+		if (!this.hasProfile) return '<p class="empty">Ingen kommende arrangementer akkurat nå.</p>';
+		return '<p class="empty">Ingenting kommende for det du følger akkurat nå.<br>'
+			+ '<button type="button" class="empty-search">Søk og følg noe mer</button></p>';
+	}
+
 	renderAgenda() {
 		const el = document.getElementById('agenda');
 		if (!el) return;
 		const { groups, hasMore, empty } = this.agendaDayGroups();
 		if (empty) {
-			el.innerHTML = `<p class="empty">Ingen kommende arrangementer akkurat nå.</p>`;
+			el.innerHTML = this.agendaEmptyHtml();
 			return;
 		}
 		let html = '';
@@ -842,6 +853,11 @@ class Dashboard {
 			if (report) { this.reportEvent(this._eventById?.get(report.dataset.eventId)); return; }
 			const follow = evt.target.closest('.ev-follow');
 			if (follow) { this.toggleFollow(follow); return; }
+			// The empty board's way into the search (WP-253).
+			if (evt.target.closest('.empty-search')) {
+				if (typeof this.openFollowSearch === 'function') this.openFollowSearch();
+				return;
+			}
 			if (evt.target.closest('.agenda-more')) { this._fullHorizon = true; this.renderAgenda(); return; }
 			const row = evt.target.closest('.ev.expandable');
 			if (row) toggle(row);
