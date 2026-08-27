@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T02:29:21.819Z",
+  "generatedAt": "2026-08-27T09:56:49.207Z",
   "windowDays": 14,
   "ports": {
     "coverage": "green",
@@ -25,7 +25,7 @@
       "medium": 0,
       "low": 2
     },
-    "oldestGapAgeDays": 3.94,
+    "oldestGapAgeDays": 4.25,
     "escalatable": 0,
     "catalogMatched": 2,
     "auditedAt": "2026-08-26T04:00:00Z",
@@ -33,14 +33,14 @@
       {
         "interest": "UEFA Champions League 2026/27 — ligaspill runde 1 (MD1)",
         "severity": "low",
-        "ageDays": 0.94,
+        "ageDays": 1.25,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
         "severity": "low",
-        "ageDays": 3.94,
+        "ageDays": 4.25,
         "recurrences": 2,
         "catalogMatched": true
       }
@@ -52,17 +52,10 @@
     "nearTermAmended": 1,
     "verifyRunAt": "2026-08-26T05:59:11Z",
     "windowRate": 0,
-    "windowChecks": 91,
+    "windowChecks": 85,
     "windowAmendments": 0,
     "windowCorrections": 5,
     "byDay": [
-      {
-        "date": "2026-08-13",
-        "checks": 6,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-08-14",
         "checks": 7,
@@ -158,26 +151,26 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-27T02:29:17.176Z",
+    "buildCheckedAt": "2026-08-27T09:56:45.177Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-26T21:40:31.578Z",
-    "manifestAgeHours": 4.81,
+    "manifestGeneratedAt": "2026-08-27T02:29:24.212Z",
+    "manifestAgeHours": 7.46,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
-        "ageHours": 298.69
+        "ageHours": 306.15
       },
       {
         "file": "tennis.json",
         "sourceLastUpdated": "2026-08-24T07:54:57.159Z",
-        "ageHours": 66.57
+        "ageHours": 74.03
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-26T05:59:11Z",
-    "verifyAgeHours": 20.5,
+    "verifyAgeHours": 27.96,
     "corrections": 2,
     "unresolved": 0,
     "signals": [
