@@ -180,6 +180,14 @@ struct InterestProfile: Codable, Equatable, Sendable {
     /// receipt's own words. Restoring the VALUE, not the intent, is the only
     /// way an undo can leave no trace.
     ///
+    /// Precisely which `lens` this restores, since WP-249 made a lens two
+    /// different things: the STORED `rule.lens` — the explicit perspective the
+    /// assistant set («gjennom norske»), the only one that is persisted — and
+    /// the DERIVED athlete lens, which `AgendaViewModel.applicableLensMode`
+    /// computes per event from participation and never writes down. Restoring
+    /// the stored value is therefore both necessary and sufficient: the derived
+    /// half re-derives itself on the next render either way.
+    ///
     /// `addedAt` comes along untouched for the same reason — the rule is the one
     /// you already had, not a new one. That is safe for the CRDT sync: the
     /// stamping half (`ProfileSyncState.updatingRules`) compares the rule
