@@ -39,9 +39,16 @@ final class SeasonCalendarTests: XCTestCase {
     // MARK: - offSeasonNote (startpakke-linjen)
 
     func test_winterPack_getsSeasonNoteInAugust_notInJanuary() {
+        // Hele vinterpakken: TIDLIGSTE kommende start vinner — alpint åpner i
+        // oktober (Sölden), så pakkens ærlige løfte er oktober, ikke november.
         let sports = ["biathlon", "cross-country", "alpine", "ski jumping"]
         let note = SeasonCalendar.offSeasonNote(sports: sports, month: 8)
-        XCTAssertEqual(note, "Sesongstart i november — tavla fylles da.")
+        XCTAssertEqual(note, "Sesongstart i oktober — tavla fylles da.")
+        // Uten alpint er den tidligste starten november.
+        XCTAssertEqual(
+            SeasonCalendar.offSeasonNote(sports: ["biathlon", "cross-country"], month: 8),
+            "Sesongstart i november — tavla fylles da."
+        )
         XCTAssertNil(SeasonCalendar.offSeasonNote(sports: sports, month: 1), "i sesong ⇒ ingen linje")
     }
 
