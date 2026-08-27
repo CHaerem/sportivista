@@ -5,7 +5,8 @@
 // club's crest, which is worse than no crest at all. So the matcher is written to
 // abstain, and this file pins that it does.
 import { describe, it, expect } from "vitest";
-import { normalizeName, pickCandidate, logoFileName, isPng, espnLogoUrl, LOGO_WIDTH } from "../scripts/seed-registry/logos.js";
+import { normalizeName, pickCandidate, logoFileName, isPng, espnLogoUrl, isSeedReplaceable, LOGO_WIDTH } from "../scripts/seed-registry/logos.js";
+import { isLogoAllowed } from "../scripts/lib/logo-policy.js";
 
 describe("name normalisation", () => {
 	it("drops club-form noise so 'Liverpool F.C.' and 'Liverpool' are one club", () => {
@@ -88,5 +89,31 @@ describe("the editorial source is enumerated, never guessed", () => {
 		expect(espnLogoUrl("f1", "106842")).toBeNull();
 		expect(espnLogoUrl("handball", "1")).toBeNull();
 		expect(espnLogoUrl("football", undefined)).toBeNull();
+	});
+});
+
+describe("WP-251: a re-seed never destroys a mark it cannot put back", () => {
+	it("clears only the marks this script could produce", () => {
+		expect(isSeedReplaceable({ source: "wikimedia-commons" })).toBe(true);
+		expect(isSeedReplaceable({ source: "espn" })).toBe(true);
+		expect(isSeedReplaceable(undefined)).toBe(true); // nothing there to lose
+	});
+
+	it("a hand-placed club-official mark SURVIVES a re-seed", () => {
+		// The regression this closes: the free pass cleared `logo` for every entity
+		// Commons had no P154 for, and the editorial pass re-filled it from ESPN.
+		// A `club-official` mark has neither — it was fetched by hand precisely
+		// because no automated source had one (FK Lyn Oslo, the owner's club) — so
+		// the record vanished, pruneOrphans deleted the asset, and nothing said so.
+		expect(isSeedReplaceable({ source: "club-official" })).toBe(false);
+	});
+
+	it("does NOT weaken the owner's switch — free-only still drops an editorial mark", () => {
+		// isSeedReplaceable governs only "may the SEED re-derive this"; what SHIPS
+		// stays logo-policy.json's call, and club-official rests on editorial-use.
+		const lyn = { file: "fk-lyn-oslo.png", source: "club-official", basis: "editorial-use", sourceUrl: "https://www.lyn1896.no/logo.png" };
+		expect(isLogoAllowed(lyn, "editorial")).toBe(true);
+		expect(isLogoAllowed(lyn, "free-only")).toBe(false);
+		expect(isLogoAllowed(lyn, "tullball")).toBe(false); // fail-closed on an unknown value
 	});
 });

@@ -2,7 +2,8 @@
 import fs from "fs";
 import path from "path";
 import crypto from "crypto";
-import { readJsonIfExists, rootDataPath, configDirPath, MS_PER_DAY, makeCoverageGate, normalizeParticipants, normalizeNorwegianPlayers, normalizeText, containsName, entityTerms } from "./lib/helpers.js";
+import { readJsonIfExists, rootDataPath, configDirPath, MS_PER_DAY, makeCoverageGate, normalizeParticipants, normalizeNorwegianPlayers } from "./lib/helpers.js";
+import { findEntityId } from "./lib/entity-match.js";
 import { resolveStreaming, stampUrlKinds } from "./lib/norwegian-rights.js";
 import { deriveProvenance, lookalikeHosts, stripLookalikeEvidence } from "./lib/provenance.js";
 import { soleDistrustedBasis, RELIABILITY_FLOOR } from "./lib/calibration-gate.js";
@@ -49,23 +50,15 @@ const teamEntities = [
 ];
 
 /**
- * Word-boundary, sport-scoped entity lookup. Checks every (name+alias) term
- * of each candidate entity against `name` in BOTH directions via containsName
- * — never naive substring (the Brooklyn/Lyn trap: "Brooklyn FC" must not
- * match the tracked club "Lyn"; see tests/fixtures/feed-vectors/DIVERGENCES.md
- * and the negative test in tests/build-entities.test.js). Sport-scoped so a
- * same-named entity in a different sport can't cross-match.
+ * WP-251: the matcher lives in lib/entity-match.js — MOST SPECIFIC MATCH WINS,
+ * never the first in the pool. Because containment is bidirectional, a board
+ * name legitimately overlaps several entities, and pool ORDER used to decide
+ * which one it became: "Inter Milan" matched AC Milan's alias "Milan" and got
+ * AC Milan's crest; "Nord-Irland" matched "Irland" across the hyphen boundary
+ * and flew the Republic's flag. See that file for why order is no reason at all
+ * for the right team to win. Pool order still breaks TIES, which is what keeps
+ * team entities ahead of tracked.json's club-as-league duplicates below.
  */
-function findEntityId(name, pool, sport) {
-	if (!name) return null;
-	for (const e of pool) {
-		if (sport && e.sport && normalizeText(e.sport) !== normalizeText(sport)) continue;
-		for (const term of entityTerms(e)) {
-			if (containsName(name, term) || containsName(term, name)) return e.id;
-		}
-	}
-	return null;
-}
 
 /**
  * Stamp entityId (norwegianPlayers) / homeTeamEntityId / awayTeamEntityId

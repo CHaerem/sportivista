@@ -889,4 +889,46 @@ describe("build-events.js integration (WP-05 entity enrichment)", () => {
 		fs.rmSync(dataDir, { recursive: true, force: true });
 		fs.rmSync(configDir, { recursive: true, force: true });
 	});
+
+	// WP-251 regression: the WHOLE pipeline, not just the matcher. Two entities
+	// overlap the board's string, the WRONG one is registered first, and the row
+	// must still get the right crest. Both cases shipped the wrong mark once —
+	// and a wrong crest is worse than no crest, because a crest is believed
+	// wordlessly (DESIGN.md § Ærlig innhold: «Aldri lat som»).
+	it("regression: an overlapping neighbour registered FIRST does not steal the row's identity", () => {
+		const { dataDir, configDir } = freshDirs();
+		fs.mkdirSync(path.join(configDir, "registry"));
+		fs.writeFileSync(
+			path.join(configDir, "registry", "football.json"),
+			JSON.stringify({
+				entities: [
+					// Adversarial order, exactly as the seeded registry had it: the
+					// entity that merely SHARES A WORD is registered first.
+					{ id: "irland", name: "Irland", aliases: ["Republic of Ireland"], sport: "football", type: "team", country: "IE", national: true },
+					{ id: "nord-irland", name: "Nord-Irland", aliases: ["Northern Ireland"], sport: "football", type: "team", country: "GB-NIR", national: true },
+					{ id: "ac-milan", name: "AC Milan", aliases: ["Milan"], sport: "football", type: "team" },
+					{ id: "internazionale", name: "Internazionale", aliases: ["Inter Milan"], sport: "football", type: "team" },
+				],
+			})
+		);
+		fs.writeFileSync(
+			path.join(dataDir, "football.json"),
+			JSON.stringify({
+				tournaments: [{ name: "Testliga", events: [
+					{ title: "Nord-Irland vs Irland", time: future(2), homeTeam: "Nord-Irland", awayTeam: "Irland" },
+					{ title: "Inter Milan vs AC Milan", time: future(3), homeTeam: "Inter Milan", awayTeam: "AC Milan" },
+				] }],
+			})
+		);
+		const events = runBuild(dataDir, configDir);
+		const derby = events.find((e) => e.title === "Nord-Irland vs Irland");
+		expect(derby.homeTeamEntityId).toBe("nord-irland");
+		expect(derby.awayTeamEntityId).toBe("irland");
+
+		const milano = events.find((e) => e.title === "Inter Milan vs AC Milan");
+		expect(milano.homeTeamEntityId).toBe("internazionale");
+		expect(milano.awayTeamEntityId).toBe("ac-milan");
+		fs.rmSync(dataDir, { recursive: true, force: true });
+		fs.rmSync(configDir, { recursive: true, force: true });
+	});
 });

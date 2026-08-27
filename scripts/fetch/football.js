@@ -3,6 +3,7 @@ import { sportsConfig } from "../config/sports-config.js";
 import { fetchOBOSLigaenFromFotballNo } from "./fotball-no.js";
 import { EventNormalizer } from "../lib/event-normalizer.js";
 import { readJsonIfExists, matchInterest } from "../lib/helpers.js";
+import { norwegianClubName } from "../lib/board-names.js";
 import { fileURLToPath } from "url";
 import path from "path";
 
@@ -14,25 +15,13 @@ const catalog = readJsonIfExists(path.join(__dirname, "..", "config", "catalog.j
 const interests = readJsonIfExists(path.join(__dirname, "..", "config", "interests.json")) || {};
 const FAVORITE_TEAMS = catalog.tier2?.teams || interests.alwaysTrack?.teams || ["Barcelona", "Liverpool", "Lyn"];
 
-// ESPN club names for the Norwegian leagues, mapped to what a Norwegian reader
-// actually calls the club. Only clubs where ESPN differs are listed — anything
-// unmapped passes through untouched, so a promoted club is never mangled, just
-// left as ESPN spells it. Derived from ESPN's own nor.1 `teams` endpoint (its 16
-// `displayName`s), not guessed. NB: ESPN's per-event `name` ("Hamarkameratene at
-// Valerenga") is ASCII-folded even where `team.displayName` has the diacritics
-// right ("Vålerenga") — which is why we rebuild the title from the team names
-// instead of trusting `event.name`.
-const ESPN_CLUB_NB = {
-	"Hamarkameratene": "HamKam",
-	"Bodo/Glimt": "Bodø/Glimt",
-	"Lillestrom": "Lillestrøm",
-	"Tromso": "Tromsø",
-	"SK Brann": "Brann",
-	"IK Start": "Start",
-	"Viking FK": "Viking",
-	"Kristiansund BK": "Kristiansund",
-	"Sarpsborg FK": "Sarpsborg 08",
-};
+// WP-251: the ESPN→board club-name table moved to scripts/lib/board-names.js so
+// the WORLD REGISTRY can be seeded from the SAME table. It used to live only
+// here, which meant the board said "Tromsø" while the registry said "Tromso" and
+// the two never matched — the row lost its entityId, and with it its club mark.
+// NB: ESPN's per-event `name` ("Hamarkameratene at Valerenga") is ASCII-folded
+// even where `team.displayName` has the diacritics right ("Vålerenga") — which is
+// why we rebuild the title from the team names instead of trusting `event.name`.
 
 /**
  * Is this a domestic Norwegian league fixture? Matched on the tournament label rather
@@ -45,10 +34,7 @@ export function isNorwegianLeagueEvent(e) {
 	return /eliteserien|obos/.test(hay) || String(e?.leagueCode || "").startsWith("nor");
 }
 
-export function norwegianClubName(name) {
-	const n = String(name || "").trim();
-	return ESPN_CLUB_NB[n] || n;
-}
+export { norwegianClubName };
 
 /**
  * Rewrite an ESPN match from a Norwegian league into the board's own voice:
