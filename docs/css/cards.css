@@ -245,8 +245,16 @@
 
 /* Detail actions — quiet flat text buttons, no pills. */
 .d-actions { margin-top: 12px; display: flex; gap: 16px; flex-wrap: wrap; }
-.ev-act { font-size: 12.5px; color: var(--fg-2); background: none; border: none; padding: 0; cursor: pointer; border-bottom: 1px solid transparent; }
+/* `text-align: left` fordi en knapp sentrerer teksten sin: «Slutt å følge
+   Premier League» brekker over to linjer på 375px og sto da midtstilt mellom
+   venstrestilte naboer (sett i verifiseringen av WP-253). Handlingene er en
+   liste, ikke et sentrert felt. */
+.ev-act { font-size: 12.5px; color: var(--fg-2); background: none; border: none; padding: 0; cursor: pointer; border-bottom: 1px solid transparent; text-align: left; }
 .ev-act:hover { color: var(--accent); border-bottom-color: var(--accent); }
+/* «Slutt å følge X» (WP-253) deler behandling med de andre detalj-handlingene:
+   fjerning skal være FINNBAR — den dempes ikke til --fg-3 (tertiærlaget faller
+   under WCAG AA for tekst, § HIG-samsvar). Roen kommer av rekkefølgen — «Følg»
+   først, «Slutt å følge» etter — ikke av å gjøre kontrollen svak å lese. */
 
 /* Quiet "show the rest of the fortnight" control — flat text, no pill, no arrow. */
 .agenda-more {
@@ -261,6 +269,12 @@
 .agenda-more:hover { color: var(--accent); }
 
 .empty { color: var(--fg-2); font-size: 15px; padding: 40px 0; text-align: center; }
+/* Den tomme tavlas ene vei videre (WP-253): flat tekst-knapp, samme dempede
+   språk som .ev-act — ingen pille, ingen ramme. */
+.empty-search {
+	font: inherit; font-size: 13.5px; color: var(--accent);
+	background: none; border: none; padding: 14px 12px 2px; cursor: pointer;
+}
 
 /* ── "Fremover" — the quiet 14–42-day forward look (WP-124) ───────────────────
    One calm, collapsed disclosure under the agenda: forvarsler beyond the 14-day
@@ -460,6 +474,34 @@
 @media (prefers-reduced-motion: reduce) {
 	.assistant-sheet .sheet-backdrop, .assistant-sheet .sheet-panel { animation: none; }
 }
+
+/* ── Angre-linja (WP-253) ───────────────────────────────────────────────────
+   Å slutte å følge spør aldri først — den legger igjen ett rolig tilbud om å
+   angre. Den hører til KONTROLL-laget, som assistent-knappen: den flyter over
+   tavla (aldri i den), den maser ikke, og den forsvinner av seg selv. Én amber
+   («Angre») — aldri to i samme rad. */
+.undo-bar {
+	position: fixed; left: 50%; transform: translateX(-50%);
+	bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+	z-index: 65; box-sizing: border-box;
+	width: calc(100% - 40px); max-width: 420px;
+	display: flex; align-items: center; gap: 14px;
+	padding: 4px 6px 4px 14px; min-height: 48px; border-radius: 12px;
+	/* Ugjennomsiktig flate (--surface = cell): en rad skal ALDRI skinne gjennom en
+	   kontroll som ligger oppå tavla. */
+	background: var(--surface); border: 1px solid var(--line);
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+	font-size: 13px; color: var(--fg-2);
+	animation: ss-fade 0.18s ease;
+}
+.undo-bar[hidden] { display: none; }
+.undo-text { min-width: 0; overflow-wrap: break-word; }
+.undo-act {
+	margin-left: auto; flex-shrink: 0;
+	font: inherit; font-size: 13px; color: var(--accent);
+	background: none; border: none; padding: 12px 10px; cursor: pointer;
+}
+@media (prefers-reduced-motion: reduce) { .undo-bar { animation: none; } }
 .sheet-grabber { width: 36px; height: 5px; border-radius: 3px; background: var(--fg-3); opacity: 0.5; margin: 6px auto 12px; }
 .sheet-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
 .sheet-title { font-size: 17px; font-weight: 700; color: var(--fg); }
@@ -485,6 +527,17 @@
 .assistant-results { margin-top: 14px; }
 .assistant-results[hidden] { display: none; }
 .assistant-answer { font-size: 15px; color: var(--fg); margin: 0 0 10px; line-height: 1.5; }
+/* «Angre» i assistent-svaret (WP-253): arket ligger OVER angre-linja, så
+   tilbudet må stå her. Samme flate tekst-knapp og samme ene amber som
+   `.undo-act` — ingen pille, ingen andre aksenter i linja. Padding gir
+   tappflaten, negativ margin tar den ut av linjeflyten igjen, så setningen
+   står nøyaktig der den ville stått uten knappen. */
+.assistant-undo {
+	font: inherit; font-size: 15px; color: var(--accent);
+	background: none; border: none; cursor: pointer;
+	padding: 12px 8px; margin: -12px -6px;
+}
+.assistant-undo:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* ── Root segmented — «Uka | Nyheter» (app-parity, WP-154) ───────────────────
    A quiet native-style segmented control mirroring the iOS ContentView picker.
