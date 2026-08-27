@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T16:40:22.414Z",
+  "generatedAt": "2026-08-27T16:51:40.537Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -27,7 +27,7 @@
       "medium": 3,
       "low": 0
     },
-    "oldestGapAgeDays": 4.53,
+    "oldestGapAgeDays": 4.54,
     "escalatable": 1,
     "catalogMatched": 3,
     "auditedAt": "2026-08-27T14:20:00Z",
@@ -35,21 +35,21 @@
       {
         "interest": "Landslag — Norge Nations League (Norge–Danmark 24. sep + Norge–Portugal 27. sep, Ullevaal)",
         "severity": "medium",
-        "ageDays": 0.1,
+        "ageDays": 0.11,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "UEFA Champions League 2026/27 — ligaspill runde 1 (MD1), Bodø/Glimt + katalog-klubber",
         "severity": "medium",
-        "ageDays": 1.53,
+        "ageDays": 1.54,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
         "severity": "medium",
-        "ageDays": 4.53,
+        "ageDays": 4.54,
         "recurrences": 3,
         "catalogMatched": true
       }
@@ -59,11 +59,11 @@
     "nearTermRate": 0.2,
     "nearTermChecked": 5,
     "nearTermAmended": 1,
-    "verifyRunAt": "2026-08-26T05:59:11Z",
+    "verifyRunAt": "2026-08-27T05:45:00Z",
     "windowRate": 0,
-    "windowChecks": 85,
+    "windowChecks": 89,
     "windowAmendments": 0,
-    "windowCorrections": 5,
+    "windowCorrections": 6,
     "byDay": [
       {
         "date": "2026-08-14",
@@ -155,31 +155,39 @@
         "amendments": 0,
         "corrections": 2,
         "rate": 0
+      },
+      {
+        "date": "2026-08-27",
+        "checks": 4,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-27T16:40:19.455Z",
+    "buildCheckedAt": "2026-08-27T16:51:34.470Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-27T16:22:47.182Z",
-    "manifestAgeHours": 0.29,
+    "manifestGeneratedAt": "2026-08-27T16:40:24.041Z",
+    "manifestAgeHours": 0.19,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-08-26T05:59:11Z",
-    "verifyAgeHours": 34.69,
-    "corrections": 2,
+    "checkedAt": "2026-08-27T05:45:00Z",
+    "verifyAgeHours": 11.11,
+    "corrections": 3,
     "unresolved": 0,
     "signals": [
-      "US Open (tennis, in-progress): fylte inn Casper Ruud i norwegianPlayers (19. seed, aktiv i 1. runde per Wikipedia/usopen.org) og korrigerte venue fra TBD til…",
-      "US Open singles-'2. runde exit'-treff i søk stammer fra 2025 (amNewYork-URL 8-27-25); ikke brukt — Ruud er aktiv i 2026-trekningen."
+      "Vuelta a España 2026 (cycling, in-progress): etappe 6 (27. aug, Castellón/gravel-finale) bekreftet; Uno-X-nordmennene (Tobias Halland Johannessen, Fredrik Dv…",
+      "US Open (tennis, in-progress): Ruud aktiv — nådde mixed doubles-kvartfinale (m/ Shnaider) 26. aug. Herresingle-hovedtrekning starter 30. aug (Fan Week/kval 2…",
+      "US Open-søketreff om '2. runde exit' stammer fra 2025 (amNewYork 8-27-25, tennisworldusa) — ikke brukt, samme feilkilde som forrige runde flagget. Ruud er ak…"
     ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-08-27T16:40:22.414Z"
+    "generatedAt": "2026-08-27T16:51:40.536Z"
   }
 }
