@@ -239,6 +239,8 @@ struct ContentView: View {
         case "onboarding-welcome": return .welcome
         case "onboarding-quickpicks": return .quickPicks
         case "onboarding-converse": return .converse
+        // WP-202: the ritual step (brief + varsel-priming + widget).
+        case "onboarding-ritual": return .ritual
         // WP-132: the assistant-intro step is the calm finish (was «landing»).
         case "onboarding-assistantintro", "onboarding-landing": return .assistantIntro
         default: return nil

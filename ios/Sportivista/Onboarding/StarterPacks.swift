@@ -145,7 +145,10 @@ enum StarterPacks {
         StarterPack(
             id: "vintersport",
             title: "Vintersport",
-            subtitle: "Skiskyting, langrenn, alpint og hopp — fra sesongstart i november",
+            // WP-203: no hardcoded «fra sesongstart i november» here — the pack row
+            // computes the season-honest line from SeasonCalendar against TODAY, so
+            // it appears in July, names the right month, and vanishes in season.
+            subtitle: "Skiskyting, langrenn, alpint og hopp",
             reason: "Lagt til fra startpakken «Vintersport».",
             rules: [
                 // The four sport-level entities (WP-64/116). Off-season in July —

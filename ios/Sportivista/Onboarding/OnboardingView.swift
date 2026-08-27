@@ -78,10 +78,21 @@ struct OnboardingView: View {
     /// DEBUG screenshot harness only: jump straight to a step so each state can
     /// be captured deterministically. Nil in the shipping flow (always `.welcome`).
     var initialStep: OnboardingStep? = nil
+    /// WP-202 — the one system side-effect the ritual step performs, injectable
+    /// so the flow is previewable/testable without UNUserNotificationCenter.
+    /// The default is the real ask (the SAME scheduler the planners use, so the
+    /// authorization state they later read is the one this primed).
+    var requestNotifications: () async -> Bool = {
+        await UNUserNotificationScheduler().requestAuthorizationIfNeeded()
+    }
 
     @State private var step: OnboardingStep = .welcome
     @FocusState private var inputFocused: Bool
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    /// WP-202 — the ritual step's notification decision: nil until the user
+    /// chooses, then the calm status line `RitualPriming.apply` returned.
+    @State private var ritualOutcome: String? = nil
+    @State private var isRequestingNotifications = false
 
     private var trimmed: String {
         assistant.utterance.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -103,6 +114,7 @@ struct OnboardingView: View {
                             case .welcome: welcomeStep(minHeight: proxy.size.height)
                             case .quickPicks: quickPicksStep
                             case .converse: converseStep
+                            case .ritual: ritualStep
                             case .assistantIntro: assistantIntroStep
                             }
                         }
@@ -208,7 +220,7 @@ struct OnboardingView: View {
 
             stepFooter(
                 alternative: ("Tilbake til startpakker", "onboarding.backToPacks", { go(to: .quickPicks) }),
-                primary: ("Fortsett", "onboarding.continue", { go(to: .assistantIntro) })
+                primary: ("Fortsett", "onboarding.continue", { go(to: .ritual) })
             )
         }
     }
@@ -406,8 +418,89 @@ struct OnboardingView: View {
                 // The say-what-you-follow path is a clearly-secondary entry off
                 // this step (Apple-Intelligence-gated), never the primary route.
                 alternative: assistant.availability.isAvailable ? ("… eller fortell med egne ord", "onboarding.converseEntry", { go(to: .converse) }) : nil,
-                primary: ("Fortsett", "onboarding.continue", { go(to: .assistantIntro) })
+                primary: ("Fortsett", "onboarding.continue", { go(to: .ritual) })
             )
+        }
+    }
+
+    // MARK: - Step · Ritual (WP-202 — brief + varsel-priming + widget)
+
+    /// The ritual step — after the profile exists, before the depth finish. A
+    /// follow-list without the ritual is a bookmark, not a habit, so this screen
+    /// sells the three parts of the daily rhythm and makes exactly ONE decision:
+    /// notifications. The copy primes BEFORE the one-shot iOS system prompt is
+    /// spent (must-see reminders + the quiet «briefen er klar» ping — never
+    /// results, never spoilers); the widget is an instruction, not a permission
+    /// (iOS has no add-widget API). Layout follows the baseline: native cells,
+    /// grey section headers, ONE amber primary per screen.
+    private var ritualStep: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            stepHeading("Gjør det til et morgenrituale")
+            Text("Hver morgen ligger dagens oversikt klar — når sporten du følger starter, og hvor du kan se den.")
+                .font(.sportivista(.subheadline))
+                .foregroundStyle(SportivistaTokens.label.opacity(0.85))
+                .fixedSize(horizontal: false, vertical: true)
+
+            VStack(alignment: .leading, spacing: 6) {
+                sectionLabel("VARSLER")
+                Text("Et stille varsel før må-se-øyeblikkene dine, og beskjed når morgenbriefen er klar. Aldri resultater, aldri spoilere.")
+                    .font(.sportivista(.subheadline))
+                    .foregroundStyle(SportivistaTokens.label.opacity(0.85))
+                    .fixedSize(horizontal: false, vertical: true)
+                if let ritualOutcome {
+                    Text(ritualOutcome)
+                        .font(.sportivista(.footnote))
+                        .foregroundStyle(SportivistaTokens.secondaryLabel)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .accessibilityIdentifier("onboarding.ritual.outcome")
+                }
+            }
+            .onboardingCell()
+
+            VStack(alignment: .leading, spacing: 6) {
+                sectionLabel("WIDGET")
+                Text("Neste sending rett på Hjem-skjermen: hold på Hjem-skjermen, trykk ⊕ og velg Sportivista.")
+                    .font(.sportivista(.subheadline))
+                    .foregroundStyle(SportivistaTokens.label.opacity(0.85))
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            .onboardingCell()
+
+            if ritualOutcome == nil {
+                // The undecided state: ONE amber primary (the ask), a quiet skip.
+                VStack(alignment: .leading, spacing: 12) {
+                    Button(isRequestingNotifications ? "Spør …" : "Slå på varsler") { askForNotifications() }
+                        .buttonStyle(SportivistaPrimaryButtonStyle())
+                        .disabled(isRequestingNotifications)
+                        .accessibilityIdentifier("onboarding.ritual.enable")
+                    Button("Ikke nå") { go(to: .assistantIntro) }
+                        .font(.sportivista(.footnote))
+                        .foregroundStyle(SportivistaTokens.secondaryLabel)
+                        .frame(maxWidth: .infinity)
+                        .sportivistaTapTarget()
+                        .accessibilityIdentifier("onboarding.continue")
+                }
+                .padding(.top, 8)
+            } else {
+                // Decided (either way): the primary continues the flow.
+                stepFooter(
+                    alternative: nil,
+                    primary: ("Fortsett", "onboarding.continue", { go(to: .assistantIntro) })
+                )
+            }
+        }
+    }
+
+    /// Ask the system (via the injected shell), let RitualPriming decide what the
+    /// answer MEANS, and render its calm status line. The flow never blocks: the
+    /// user continues whenever they like, decided or not.
+    private func askForNotifications() {
+        guard !isRequestingNotifications else { return }
+        isRequestingNotifications = true
+        Task { @MainActor in
+            let granted = await requestNotifications()
+            ritualOutcome = RitualPriming.apply(granted: granted)
+            isRequestingNotifications = false
         }
     }
 
@@ -421,6 +514,14 @@ struct OnboardingView: View {
 
     private func packRow(_ pack: StarterPack) -> some View {
         let applied = assistant.isApplied(pack)
+        // WP-203: the season-honest line — computed against today, only when
+        // EVERYTHING the pack follows is off-season (SeasonCalendar's rule), so
+        // «Vintersport» tapped in August says when the board will fill instead
+        // of silently promising nothing until November.
+        let seasonNote = SeasonCalendar.offSeasonNote(
+            sports: pack.rules.map(\.sport),
+            month: SeasonCalendar.month(of: Date())
+        )
         return Button { assistant.toggleStarterPack(pack) } label: {
             HStack(alignment: .top, spacing: 12) {
                 // WP-149: a native selection treatment — an amber `checkmark.circle.fill`
@@ -439,6 +540,13 @@ struct OnboardingView: View {
                         .font(.sportivista(.caption))
                         .foregroundStyle(SportivistaTokens.secondaryLabel)
                         .fixedSize(horizontal: false, vertical: true)
+                    if let seasonNote {
+                        // Quiet, never a warning colour: honesty, not alarm (WP-203).
+                        Text(seasonNote)
+                            .font(.sportivista(.caption2))
+                            .foregroundStyle(SportivistaTokens.secondaryLabel.opacity(0.8))
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
                 }
                 Spacer(minLength: 8)
             }
@@ -447,7 +555,7 @@ struct OnboardingView: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
-        .accessibilityLabel("\(pack.title). \(pack.subtitle). \(applied ? "Valgt" : "Legg til")")
+        .accessibilityLabel("\(pack.title). \(pack.subtitle).\(seasonNote.map { " \($0)" } ?? "") \(applied ? "Valgt" : "Legg til")")
         // WP-70: a stable per-pack handle for the quick-picks + rapid-toggle
         // XCUITest flows (the a11y label carries the applied state, so the test
         // needs a state-independent id to tap repeatedly).

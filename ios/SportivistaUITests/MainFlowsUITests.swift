@@ -56,8 +56,13 @@ final class MainFlowsUITests: SportivistaUITestCase {
 		confirm.tap()
 		assertExists(app.staticTexts[UITestFixture.biathlonEntityName], "the confirmed follow should show under «Følger nå»")
 
-		// Continue → the assistant-intro finish (which SHOWS the deep
-		// personalisation) → into the agenda (the bottom button is the tell we left).
+		// Continue → the ritual step (WP-202: brief + varsel-priming + widget —
+		// «Ikke nå» carries the shared continue id, so the flow never blocks on
+		// the notification decision) → the assistant-intro finish (which SHOWS
+		// the deep personalisation) → into the agenda.
+		app.buttons["onboarding.continue"].tap()
+		assertExists(app.staticTexts["Gjør det til et morgenrituale"], "should reach the ritual step")
+		assertExists(app.buttons["onboarding.ritual.enable"], "the ritual step offers the one notification decision")
 		app.buttons["onboarding.continue"].tap()
 		assertExists(app.staticTexts["Gjør Sportivista til din"], "should reach the assistant-intro step")
 		assertExists(app.buttons["onboarding.example.norske-tdf"], "the intro shows tappable deep-personalisation examples")
@@ -121,9 +126,12 @@ final class MainFlowsUITests: SportivistaUITestCase {
 
 		assertExists(app.staticTexts["FØLGER NÅ (9)"], "all five packs should apply (9 rules) within the time budget")
 
-		// Responsiveness proof: the UI is still live after the burst.
+		// Responsiveness proof: the UI is still live after the burst. WP-202: the
+		// ritual step now sits between quick-picks and the assistant intro.
 		app.buttons["onboarding.continue"].tap()
-		assertExists(app.staticTexts["Gjør Sportivista til din"], "the app should stay responsive after the toggle burst")
+		assertExists(app.staticTexts["Gjør det til et morgenrituale"], "the app should stay responsive after the toggle burst")
+		app.buttons["onboarding.continue"].tap()
+		assertExists(app.staticTexts["Gjør Sportivista til din"], "the ritual step continues into the assistant intro")
 	}
 
 	// MARK: - Flow 4 · Event detail + «Hvorfor vises denne?»

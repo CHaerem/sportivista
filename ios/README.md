@@ -630,12 +630,19 @@ Screenshots: i WP-ens PR (bevis-galleriet fjernet 20.07, regel 8; regenerer ved 
 ## Onboarding
 
 `Sportivista/Onboarding/` is the calm first-run experience (dossier P310: "onboarding er
-en samtale, ikke et skjema") — four quiet steps on the Apple-native baseline, no hero
+en samtale, ikke et skjema") — five quiet steps on the Apple-native baseline, no hero
 art, no carousel, no emoji. `OnboardingGate.swift` is the pure, FM-free, I/O-free
 decision layer ("should we show it / where does it start"); `StarterPacks.swift` is
 the quick-picks fallback — Norwegian "startpakker" a first-timer taps to build a
 profile **without** Apple Intelligence (each carrying its own entity data, the path
 that must give full value on a cold start); `OnboardingView.swift` is the flow.
+`SeasonCalendar.swift` (WP-203) is the season-honesty table — the pack row's computed
+«Sesongstart i november»-line and the agenda's season-honest empty state both read it,
+so «Vintersport» tapped in August explains WHEN the board fills instead of promising
+nothing silently. `RitualPriming.swift` (WP-202) is the pure half of the ritual step's
+one notification decision (primed copy BEFORE the one-shot system prompt; a grant is
+the user's opt-in to the daily-brief ping, a denial writes nothing and points at
+Innstillinger).
 Screenshots:
 (fjernet 20.07 — se PR-historikk).
 
