@@ -126,6 +126,91 @@ describe("followButtonsHtml — symmetric: the sheet offers BOTH directions", ()
 		expect(html).not.toContain("Slutt å følge");
 		expect(html).toContain("Følg Liverpool");
 	});
+
+	it("never puts a toggle STATE on an action label (no aria-pressed on a verb)", () => {
+		W.dashboard.render = () => {};
+		W.dashboard.commitFollow({ entityId: "team-liverpool", entityName: "Liverpool", sport: "football", kind: "team" });
+		const html = W.dashboard.followButtonsHtml(matchEvent());
+		// «Slutt å følge Liverpool, veksleknapp, på» describes the opposite of what
+		// the button does. The label is the action, so the button is a plain button.
+		expect(html).toContain("Slutt å følge Liverpool");
+		expect(html).not.toContain("aria-pressed");
+		// The state-labelled twin (search: «Følg» / «Følger») keeps aria-pressed,
+		// where it is true — one choice per control, consistently.
+		W.dashboard.entities = [{ id: "team-liverpool", name: "Liverpool", type: "team", sport: "football" }];
+		const row = W.dashboard.followSearchRow(W.dashboard.entities[0]);
+		expect(row).toContain('aria-pressed="true"');
+		expect(row).toContain("Følger");
+	});
+});
+
+// The action row must not rearrange itself under the finger that is using it:
+// a button flips its LABEL in place, exactly as the iOS sheet's row does
+// (DESIGN.md § Event-detalj — «raden BLIR STÅENDE og vipper til motsatt handling»).
+describe("followButtonsHtml — the row order is stable, whatever you follow", () => {
+	const ids = (html) => (html.match(/data-entity-id="[^"]+"/g) || []).map((s) => s.slice(16, -1));
+	const state = (html, id) => (html.match(new RegExp(`data-entity-id="${id}"[^>]*data-follow-state="(on|off)"`)) || [])[1];
+
+	it("keeps a button in its place and only flips its label", () => {
+		W.dashboard.render = () => {};
+		const before = ids(W.dashboard.followButtonsHtml(matchEvent()));
+		expect(before).toEqual(["team-liverpool", "team-arsenal", "athlete-odegaard"]);
+		W.dashboard.commitFollow({ entityId: "team-liverpool", entityName: "Liverpool", sport: "football", kind: "team" });
+		const after = W.dashboard.followButtonsHtml(matchEvent());
+		expect(ids(after)).toEqual(before); // same buttons, same order — nothing moved
+		expect(state(after, "team-liverpool")).toBe("on");
+		expect(after.indexOf("Slutt å følge Liverpool")).toBeLessThan(after.indexOf("Følg Arsenal"));
+	});
+
+	it("holds that order through a whole round of toggling", () => {
+		W.dashboard.render = () => {};
+		const order = ids(W.dashboard.followButtonsHtml(matchEvent()));
+		for (const t of [
+			{ entityId: "athlete-odegaard", entityName: "Martin Ødegaard", sport: "football", kind: "athlete" },
+			{ entityId: "team-arsenal", entityName: "Arsenal", sport: "football", kind: "team" },
+			{ entityId: "team-liverpool", entityName: "Liverpool", sport: "football", kind: "team" },
+		]) {
+			W.dashboard.commitFollow(t);
+			expect(ids(W.dashboard.followButtonsHtml(matchEvent()))).toEqual(order);
+		}
+		for (const id of ["team-arsenal", "athlete-odegaard", "team-liverpool"]) {
+			W.dashboard.commitUnfollow(id);
+			expect(ids(W.dashboard.followButtonsHtml(matchEvent()))).toEqual(order);
+		}
+	});
+
+	it("keeps a profile-only subject standing as its own way back, then lets it go", () => {
+		W.dashboard.render = () => {};
+		const e = matchEvent();
+		e.tournament = "Premier League";
+		W.dashboard.commitFollow({ entityId: "tournament-pl", entityName: "Premier League", sport: "football", kind: "tournament" });
+		const before = ids(W.dashboard.followButtonsHtml(e));
+		expect(before).toContain("tournament-pl");
+		// Stopping a follow that lives ONLY in the profile would otherwise delete
+		// the button that just did it — the way back would vanish with it.
+		W.dashboard.commitUnfollow("tournament-pl");
+		const after = W.dashboard.followButtonsHtml(e);
+		expect(ids(after)).toEqual(before);
+		expect(after).toContain("Følg Premier League");
+		expect(state(after, "tournament-pl")).toBe("off");
+		// Closing the sheet ends the offer — the undo line is what outlives it.
+		W.dashboard.forgetShownSubjects(e.id);
+		expect(ids(W.dashboard.followButtonsHtml(e))).not.toContain("tournament-pl");
+	});
+
+	it("flipping back IS an undo: the rule returns intact and leaves the undo line", () => {
+		W.dashboard.render = () => {};
+		W.dashboard.commitFollow({ entityId: "team-liverpool", entityName: "Liverpool", sport: "football", kind: "team", reason: "Startpakke: Fotball", weight: 0.8 });
+		W.dashboard.commitUnfollow("team-liverpool");
+		expect(W.dashboard.undoText()).toBe("Sluttet å følge Liverpool.");
+		// The same button, now saying «Følg Liverpool» — pressed via toggleFollow.
+		W.dashboard.toggleFollow({ dataset: { entityId: "team-liverpool", entityName: "Liverpool", entitySport: "football", kind: "team", followState: "off" } });
+		const rule = W.ssLiveRules(W.ssProfileLoad()).find((r) => r.entityId === "team-liverpool");
+		expect(rule.reason).toBe("Startpakke: Fotball");
+		expect(rule.weight).toBe(0.8);
+		// …and the line stops offering to undo something you already put back.
+		expect(W.dashboard.undoText()).toBe("");
+	});
 });
 
 describe("unfollowTargets — reaches what put the row here, not just its two teams", () => {
@@ -213,6 +298,57 @@ describe("angre i stedet for å bekrefte — unfollow is instant and reversible"
 		expect(W.dashboard.undoText()).toBe("");
 		expect(W.dashboard.undoUnfollow()).toBe(false);
 		expect(W.ssProfileFollows("team-liverpool")).toBe(false);
+	});
+});
+
+// A removal typed into the assistant arms the same undo line as every other
+// removal — but the assistant sheet lies OVER that line (z-index 70 vs 65), so
+// the offer stood behind the surface the user was looking at and expired unseen.
+describe("angre der handlingen skjedde — the assistant carries its own «Angre»", () => {
+	beforeEach(() => {
+		W.dashboard.render = () => {};
+		W.dashboard.entities = [
+			{ id: "team-liverpool", name: "Liverpool", type: "team", sport: "football" },
+			{ id: "team-arsenal", name: "Arsenal", type: "team", sport: "football" },
+		];
+	});
+
+	it("offers the undo IN the answer when the assistant removed a follow", () => {
+		W.dashboard.commitFollow({ entityId: "team-liverpool", entityName: "Liverpool", sport: "football", kind: "team" });
+		const res = W.dashboard.handleFollowIntent("Liverpool", true);
+		expect(res).toMatchObject({ ok: true, text: "Sluttet å følge Liverpool.", undo: true });
+		const html = W.dashboard.assistantMutationHtml(res);
+		expect(html).toContain("Sluttet å følge Liverpool.");
+		expect(html).toContain('class="assistant-undo"');
+		expect(html).toContain("Angre");
+	});
+
+	it("says it plainly again once the undo is taken", () => {
+		W.dashboard.commitFollow({ entityId: "team-liverpool", entityName: "Liverpool", sport: "football", kind: "team" });
+		W.dashboard.handleFollowIntent("Liverpool", true);
+		const names = W.dashboard.undoNameList();
+		expect(W.dashboard.undoUnfollow()).toBe(true);
+		expect(W.ssProfileFollows("team-liverpool")).toBe(true);
+		expect(W.dashboard.undoneText(names)).toBe("Følger Liverpool igjen.");
+	});
+
+	it("is ONE offer whichever door the removal came through", () => {
+		W.dashboard.commitFollow({ entityId: "team-liverpool", entityName: "Liverpool", sport: "football", kind: "team" });
+		W.dashboard.commitFollow({ entityId: "team-arsenal", entityName: "Arsenal", sport: "football", kind: "team" });
+		W.dashboard.commitUnfollow("team-liverpool"); // from the sheet
+		const res = W.dashboard.handleFollowIntent("Arsenal", true); // from the assistant
+		expect(res.undo).toBe(true);
+		expect(W.dashboard.undoText()).toBe("Sluttet å følge Liverpool og Arsenal.");
+		expect(W.dashboard.undoneText(W.dashboard.undoNameList())).toBe("Følger Liverpool og Arsenal igjen.");
+		W.dashboard.undoUnfollow();
+		expect(W.ssProfileFollows("team-liverpool")).toBe(true);
+		expect(W.ssProfileFollows("team-arsenal")).toBe(true);
+	});
+
+	it("adds nothing to an answer that removed nothing", () => {
+		const res = W.dashboard.handleFollowIntent("Liverpool", false);
+		expect(res.text).toBe("Følger Liverpool nå.");
+		expect(W.dashboard.assistantMutationHtml(res)).not.toContain("assistant-undo");
 	});
 });
 

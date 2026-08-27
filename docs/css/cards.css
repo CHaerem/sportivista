@@ -245,7 +245,11 @@
 
 /* Detail actions — quiet flat text buttons, no pills. */
 .d-actions { margin-top: 12px; display: flex; gap: 16px; flex-wrap: wrap; }
-.ev-act { font-size: 12.5px; color: var(--fg-2); background: none; border: none; padding: 0; cursor: pointer; border-bottom: 1px solid transparent; }
+/* `text-align: left` fordi en knapp sentrerer teksten sin: «Slutt å følge
+   Premier League» brekker over to linjer på 375px og sto da midtstilt mellom
+   venstrestilte naboer (sett i verifiseringen av WP-253). Handlingene er en
+   liste, ikke et sentrert felt. */
+.ev-act { font-size: 12.5px; color: var(--fg-2); background: none; border: none; padding: 0; cursor: pointer; border-bottom: 1px solid transparent; text-align: left; }
 .ev-act:hover { color: var(--accent); border-bottom-color: var(--accent); }
 /* «Slutt å følge X» (WP-253) deler behandling med de andre detalj-handlingene:
    fjerning skal være FINNBAR — den dempes ikke til --fg-3 (tertiærlaget faller
@@ -523,6 +527,17 @@
 .assistant-results { margin-top: 14px; }
 .assistant-results[hidden] { display: none; }
 .assistant-answer { font-size: 15px; color: var(--fg); margin: 0 0 10px; line-height: 1.5; }
+/* «Angre» i assistent-svaret (WP-253): arket ligger OVER angre-linja, så
+   tilbudet må stå her. Samme flate tekst-knapp og samme ene amber som
+   `.undo-act` — ingen pille, ingen andre aksenter i linja. Padding gir
+   tappflaten, negativ margin tar den ut av linjeflyten igjen, så setningen
+   står nøyaktig der den ville stått uten knappen. */
+.assistant-undo {
+	font: inherit; font-size: 15px; color: var(--accent);
+	background: none; border: none; cursor: pointer;
+	padding: 12px 8px; margin: -12px -6px;
+}
+.assistant-undo:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* ── Root segmented — «Uka | Nyheter» (app-parity, WP-154) ───────────────────
    A quiet native-style segmented control mirroring the iOS ContentView picker.

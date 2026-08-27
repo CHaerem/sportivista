@@ -153,7 +153,15 @@ Object.assign(window.Dashboard.prototype, {
 	 *  this, so the button says the ACTION («Slutt å følge X»), never the state
 	 *  («Følger X») — a state label is not an affordance, and removing was the
 	 *  half of the pair nobody could find. A wholesale sport follow says what it
-	 *  costs in the label itself; that honesty replaces a confirmation dialog. */
+	 *  costs in the label itself; that honesty replaces a confirmation dialog.
+	 *
+	 *  NO `aria-pressed`. The label is a VERB, and a toggle-state on a verb tells
+	 *  a screen-reader user the opposite of the truth: «Slutt å følge Brann,
+	 *  veksleknapp, PÅ» announces the state as *pressed* while the button's own
+	 *  words promise the removal. Action label ⇒ plain button — the same choice
+	 *  the iOS sheet made (a `Button` with the verb, no toggle semantics). The
+	 *  state-labelled twin lives in the search list (`followSearchRow`: «Følg» /
+	 *  «Følger»), and THAT one keeps `aria-pressed`, where it is true. */
 	followActionButton(t, on) {
 		const name = escapeHtml(t.entityName);
 		const label = on
@@ -162,37 +170,112 @@ Object.assign(window.Dashboard.prototype, {
 		return `<button type="button" class="ev-act ev-follow${on ? ' is-following' : ''}"`
 			+ ` data-entity-id="${escapeHtml(t.entityId)}" data-entity-name="${name}"`
 			+ ` data-entity-sport="${escapeHtml(t.sport || '')}" data-kind="${escapeHtml(t.kind || '')}"`
-			+ ` data-follow-state="${on ? 'on' : 'off'}" aria-pressed="${on}">${label}</button>`;
+			+ ` data-follow-state="${on ? 'on' : 'off'}">${label}</button>`;
+	},
+
+	/** The profile's own rule order — sport, then name. `ssLiveRules` sorts by
+	 *  exactly this, so a subject that came from the profile keeps the SAME slot
+	 *  whether it is followed right now or standing there as its own way back. */
+	compareSubjects(a, b) {
+		const sa = a.sport || '';
+		const sb = b.sport || '';
+		if (sa !== sb) return sa < sb ? -1 : 1;
+		return String(a.entityName || '').localeCompare(String(b.entityName || ''), undefined, { sensitivity: 'accent' });
+	},
+
+	/** WP-253 — the sheet's action row as ONE ordered list of SUBJECTS, each with
+	 *  the direction that applies to it right now (`on`). One list, not an add
+	 *  list concatenated with a remove list.
+	 *
+	 *  Why it matters: two lists meant a button MOVED the instant you used it.
+	 *  «Følg Brann» sat first, you tapped it, and it reappeared last as «Slutt å
+	 *  følge Brann» while everything else slid up a place — so the next thing you
+	 *  meant to tap was no longer under your finger. In a package about making
+	 *  removal easy, the act of removing rearranged the controls.
+	 *
+	 *  The order here is a property of the EVENT and the profile, never of what
+	 *  you follow: the subjects the row is about, in the order they appear in it
+	 *  (home, away, the Norwegians), then whatever else in your profile put the
+	 *  row on the board (tournament, league, wholesale sport) in the profile's own
+	 *  (sport, name) order. Toggling changes a LABEL, never a position — the same
+	 *  promise the iOS sheet makes («raden BLIR STÅENDE og vipper til motsatt
+	 *  handling», DESIGN.md § Event-detalj).
+	 *
+	 *  A subject that lives only in the profile — the tournament, the sport —
+	 *  would otherwise VANISH the moment you stopped following it, which is worse
+	 *  than moving: the way back disappears with it. So the sheet remembers what
+	 *  it has shown for as long as it stays open (the web twin of the iOS sheet's
+	 *  `followOverride`) and keeps it standing, flipped to «Følg X». */
+	followRowSubjects(e) {
+		if (!this.profileAvailable()) return [];
+		const removes = this.unfollowTargets(e);
+		const byId = new Map();
+		const byName = new Map();
+		for (const r of removes) {
+			if (!byId.has(r.entityId)) byId.set(r.entityId, r);
+			const n = ssNormalize(r.entityName);
+			if (!byName.has(n)) byName.set(n, r);
+		}
+		// The subjects the ROW is about, in the row's own order. A rule stored
+		// under another id for the same subject (an iOS-created follow, an older
+		// synthesized id) is matched by NAME too, so a followed team never earns
+		// «Følg X» beside its own «Slutt å følge X».
+		const rows = [];
+		const claimed = new Set();
+		for (const t of this.followTargets(e)) {
+			const rule = byId.get(t.entityId) || byName.get(ssNormalize(t.entityName));
+			if (!rule) { rows.push(Object.assign({}, t, { wholesale: false, on: false })); continue; }
+			if (claimed.has(rule.entityId)) continue;
+			claimed.add(rule.entityId);
+			rows.push(Object.assign({}, rule, { on: true }));
+		}
+		const claimedNames = new Set(rows.map((r) => ssNormalize(r.entityName)));
+		// What ELSE in your profile put this row here, plus anything the sheet has
+		// already shown and is holding open as its own undo.
+		const rest = [];
+		const push = (t, on) => {
+			if (claimed.has(t.entityId) || claimedNames.has(ssNormalize(t.entityName))) return;
+			claimed.add(t.entityId);
+			claimedNames.add(ssNormalize(t.entityName));
+			rest.push(Object.assign({}, t, { on }));
+		};
+		for (const r of removes) push(r, true);
+		for (const prev of this.shownSubjects(e)) push(prev, false);
+		rest.sort((a, b) => this.compareSubjects(a, b));
+		const out = rows.concat(rest);
+		this.rememberShownSubjects(e, out);
+		return out;
+	},
+
+	/** What this event's sheet has shown since it was opened. Empty for a sheet
+	 *  that has never rendered, and cleared when the row collapses — a removed
+	 *  tournament stands by for as long as you are looking at it, not forever. */
+	shownSubjects(e) {
+		const key = e && e.id;
+		if (!key || !this._sheetSubjects) return [];
+		return this._sheetSubjects.get(key) || [];
+	},
+
+	rememberShownSubjects(e, subjects) {
+		const key = e && e.id;
+		if (!key) return;
+		this._sheetSubjects = this._sheetSubjects || new Map();
+		this._sheetSubjects.set(key, subjects.map((t) => Object.assign({}, t)));
+	},
+
+	/** The row closed — forget what its sheet was holding open. */
+	forgetShownSubjects(id) {
+		if (this._sheetSubjects) this._sheetSubjects.delete(id);
 	},
 
 	/** The symmetric follow/unfollow row for the detail sheet: «Følg X» for what
 	 *  this row offers to add, «Slutt å følge Y» for everything you already follow
 	 *  that put it here. Where you can do a thing, you can undo it — in the same
-	 *  place, in the same tap. Empty string when the profile machinery is absent. */
+	 *  place, in the same tap, and (see `followRowSubjects`) at the same spot in
+	 *  the row. Empty string when the profile machinery is absent. */
 	followButtonsHtml(e) {
 		if (!this.profileAvailable()) return '';
-		// The REMOVE side is resolved first, and it wins the name: a rule stored
-		// under another id for the same subject (an iOS-created follow, an older
-		// synthesized id) must not also earn a «Følg X» beside its own «Slutt å
-		// følge X» — that would read as nonsense and write a duplicate rule.
-		const removes = [];
-		const seenIds = new Set();
-		const seenNames = new Set();
-		for (const t of this.unfollowTargets(e)) {
-			if (seenIds.has(t.entityId)) continue;
-			seenIds.add(t.entityId);
-			seenNames.add(ssNormalize(t.entityName));
-			removes.push(this.followActionButton(t, true));
-		}
-		const adds = [];
-		for (const t of this.followTargets(e)) {
-			if (seenIds.has(t.entityId) || seenNames.has(ssNormalize(t.entityName))) continue;
-			if (ssProfileFollows(t.entityId)) continue;
-			seenIds.add(t.entityId);
-			seenNames.add(ssNormalize(t.entityName));
-			adds.push(this.followActionButton(t, false));
-		}
-		return adds.concat(removes).join('');
+		return this.followRowSubjects(e).map((t) => this.followActionButton(t, t.on)).join('');
 	},
 
 	/** Push the local profile change to iCloud right away (fire-and-forget) so the
@@ -209,16 +292,24 @@ Object.assign(window.Dashboard.prototype, {
 	 *  sheet, the search-and-follow box, and the assistant. Returns true on success. */
 	commitFollow(entity) {
 		if (!this.profileAvailable()) return false;
+		// A button that flips back to «Følg» IS an undo, so it undoes as well as
+		// the undo line does: when the standing offer still holds this rule, its
+		// weight/scope/reason come back with it instead of a fresh, flattened
+		// default. The caller's own values still win where it passed any.
+		const pending = (this._undoFollows || []).find((r) => r.entityId === entity.entityId);
+		const rule = Object.assign({}, pending || {}, entity);
 		// scope/weight/reason are passed THROUGH when present (undefined ⇒ the same
 		// defaults ssProfileFollow always applied), so «Angre» restores the rule it
 		// removed rather than a fresh, flattened one.
 		ssProfileFollow({
-			entityId: entity.entityId, entityName: entity.entityName, sport: entity.sport, kind: entity.kind,
-			scope: entity.scope, weight: entity.weight, reason: entity.reason,
+			entityId: rule.entityId, entityName: rule.entityName, sport: rule.sport, kind: rule.kind,
+			scope: rule.scope, weight: rule.weight, reason: rule.reason,
 		});
 		this.applyProfile(ssProfileLoad());
 		this.render();
 		this.pushProfileToICloud();
+		// …and the line stops offering to undo something you already put back.
+		if (pending) this.dropPendingUndo(entity.entityId);
 		return true;
 	},
 
@@ -276,13 +367,29 @@ Object.assign(window.Dashboard.prototype, {
 		this.renderUndoBar();
 	},
 
-	/** The undo line's text. Names up to two; beyond that it counts, honestly. */
-	undoText() {
+	/** Names up to two; beyond that it counts, honestly. */
+	undoNameList() {
 		const names = (this._undoFollows || []).map((r) => r.entityName);
 		if (!names.length) return '';
-		if (names.length === 1) return `Sluttet å følge ${names[0]}.`;
-		if (names.length === 2) return `Sluttet å følge ${names[0]} og ${names[1]}.`;
-		return `Sluttet å følge ${names[0]}, ${names[1]} og ${names.length - 2} til.`;
+		if (names.length === 1) return `${names[0]}`;
+		if (names.length === 2) return `${names[0]} og ${names[1]}`;
+		return `${names[0]}, ${names[1]} og ${names.length - 2} til`;
+	},
+
+	/** The undo line's text. */
+	undoText() {
+		const names = this.undoNameList();
+		return names ? `Sluttet å følge ${names}.` : '';
+	},
+
+	/** Take one entity off the standing offer — it has been put back by hand (the
+	 *  button flipped to «Følg» again), so the line must stop claiming it is gone.
+	 *  The offer lapses entirely when nothing is left to undo. */
+	dropPendingUndo(entityId) {
+		const rest = (this._undoFollows || []).filter((r) => r.entityId !== entityId);
+		if (!rest.length) { this.dismissUndo(); return; }
+		this._undoFollows = rest;
+		this.renderUndoBar();
 	},
 
 	/** Put back everything the standing undo line covers — one re-render, one
@@ -397,11 +504,39 @@ Object.assign(window.Dashboard.prototype, {
 		if (unfollow) {
 			if (!isOn) return { ok: false, text: `Du følger ikke ${ent.name}.` };
 			this.commitUnfollow(ent.id);
-			return { ok: true, text: `Sluttet å følge ${ent.name}.` };
+			// `undo: true` is what makes the offer VISIBLE here — see
+			// `assistantMutationHtml`. The page-level line is armed as well, so
+			// closing the sheet within the window still finds it.
+			return { ok: true, text: `Sluttet å følge ${ent.name}.`, undo: true };
 		}
 		if (isOn) return { ok: true, text: `Du følger allerede ${ent.name}.` };
 		this.commitFollow({ entityId: ent.id, entityName: ent.name, sport: ent.sport || '', kind: this.entityFollowKind(ent.type) });
 		return { ok: true, text: `Følger ${ent.name} nå.` };
+	},
+
+	/** The assistant's answer to a follow/unfollow — with «Angre» offered RIGHT
+	 *  HERE when the answer was a removal.
+	 *
+	 *  A removal typed into the assistant («slutt å følge Brann») arms the same
+	 *  undo line every other removal does, but the assistant sheet lies OVER it
+	 *  (z-index 70 vs 65): the offer stood behind the surface the user was
+	 *  looking at and expired unseen. An armed undo nobody can see is worse than
+	 *  no undo — it promises a way back and then quietly withdraws it. So the
+	 *  answer carries the tap itself, into the SAME pending undo (one offer, one
+	 *  timer, either door) — the iOS rule that the undo belongs where the user
+	 *  ends up, not on the surface that happened to raise it. */
+	assistantMutationHtml(res) {
+		const line = escapeHtml(res.text);
+		if (!res.undo) return `<p class="assistant-answer">${line}</p>`;
+		return `<p class="assistant-answer">${line} · <button type="button" class="assistant-undo">Angre</button></p>`;
+	},
+
+	/** The line after the undo was taken: what you follow again, said plainly.
+	 *  One «Angre» covers every removal still standing, so the sentence names
+	 *  them the same way the undo line did. */
+	undoneText(names) {
+		if (!names) return 'Følget er tilbake.';
+		return `Følger ${names} igjen.`;
 	},
 
 	/** Wire the deterministic assistant: a floating bottom-trailing button opens a
@@ -424,7 +559,7 @@ Object.assign(window.Dashboard.prototype, {
 			// then show a calm confirmation instead of the dead "trykk raden" hint.
 			if (r.kind === 'mutation') {
 				const res = this.handleFollowIntent(r.subject, r.unfollow);
-				results.innerHTML = `<p class="assistant-answer">${escapeHtml(res.text)}</p>`;
+				results.innerHTML = this.assistantMutationHtml(res);
 				results.hidden = false;
 				if (examples) examples.hidden = true;
 				return;
@@ -437,6 +572,16 @@ Object.assign(window.Dashboard.prototype, {
 			results.hidden = false;
 			if (examples) examples.hidden = true; // the thread replaces the examples (iOS parity)
 		};
+
+		// «Angre» inside the answer — the undo for a removal made HERE, where the
+		// sheet would otherwise hide the page-level line (see assistantMutationHtml).
+		results.addEventListener('click', (evt) => {
+			const t = evt && evt.target;
+			if (!t || typeof t.closest !== 'function' || !t.closest('.assistant-undo')) return;
+			const names = this.undoNameList();
+			if (!this.undoUnfollow()) return;
+			results.innerHTML = `<p class="assistant-answer">${escapeHtml(this.undoneText(names))}</p>`;
+		});
 
 		// Sheet open/close. Focus the field on open so the keyboard/dictation is ready.
 		const open = () => {

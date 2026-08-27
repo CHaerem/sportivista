@@ -842,7 +842,12 @@ class Dashboard {
 			// innerHTML rebuild) re-opens whatever the reader has expanded — eventRow
 			// reads this set and bakes the open state back into the HTML (WP-128).
 			this._agendaOpen = this._agendaOpen || new Set();
-			if (open) this._agendaOpen.delete(id); else this._agendaOpen.add(id);
+			if (open) {
+				this._agendaOpen.delete(id);
+				// A closed sheet stops holding a removed subject open as its own way
+				// back (WP-253) — the undo line is the offer that outlives the sheet.
+				if (typeof this.forgetShownSubjects === 'function') this.forgetShownSubjects(id);
+			} else { this._agendaOpen.add(id); }
 		};
 		agenda.addEventListener('click', (evt) => {
 			const link = evt.target.closest('a');
