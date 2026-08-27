@@ -1,11 +1,12 @@
 {
-	"runAt": "2026-08-26T09:46:48Z",
+	"runAt": "2026-08-27T19:41:42Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"visual-qa-log.json (checkedAt 2026-08-26T08:38:28Z) has verdict \"pass\" and an empty findings[] — no high/medium/low findings to fix. Per the ui-fix contract (step 1), a passing review means exit cleanly with action \"none\" and no PR.",
-		"The review's notes are all positive confirmations, not problems: match names read fully at 375/393/900px (no truncation), every visible channel is Norwegian (TV 2 Play, Viaplay, Discovery+, HBO Max, YouTube — no ESPN/FOX/Sky), times/date-ranges are well-formatted, flags/crests render as glyphs not broken boxes, single calm day-grouped column, no horizontal clipping at the 375px breakpoint, and the 900px 'Assistent' FAB placement matches the DESIGN.md-sanctioned floating-button idiom.",
-		"No open ui-autofix PR to worry about stacking. Nothing code-fixable is outstanding, so no branch, screenshots, or PR were created this run."
+		"visual-qa-log.json (checkedAt 2026-08-27T18:47:53Z) has verdict \"issues\" but its sole finding is severity \"low\". Per the ui-fix contract (step 1: act only on high/medium findings), a review with no high/medium findings means exit cleanly with action \"none\" and no PR.",
+		"The lone low finding: at 393px the agenda row 'RB Leipzig – Borussia Mönchengladbach' wraps mid-word ('Mönchengladbac' + a lone 'h') with no hyphen. This is an unpolished hard break on a long word at that column width — no hidden or truncated info, and visual-qa itself graded it low. Below the fix threshold; not worth a live-shipping CSS change this run.",
+		"All other visual-qa notes are positive confirmations: long match/tournament names read in full at 375/393/900px (wrap to 2–3 lines, no truncation), every visible channel is Norwegian (Viaplay, TV 2 Play, VG+ Sport, HBO Max, NRK, Discovery+, YouTube, BLAST/Twitch — no ESPN/FOX/Sky), live-now vs agenda channel labels agree, crests/flags render as distinct logos (no broken-image boxes), single calm day-grouped column, no horizontal overflow at 375px, and the 900px 'Assistent' FAB placement is DESIGN.md-sanctioned.",
+		"No open ui-autofix PR to worry about stacking. Nothing high/medium and code-fixable is outstanding, so no branch, screenshots, or PR were created this run."
 	]
 }
