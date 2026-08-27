@@ -660,3 +660,51 @@ describe("build-events", () => {
 		});
 	});
 });
+
+// ── WP-245: kalibreringen binder — demoter high når eneste grunnlag er mistrodd ──
+describe("calibration gate (WP-245)", () => {
+	const seedCalibration = () =>
+		fs.writeFileSync(
+			path.join(dataDir, "calibration.json"),
+			JSON.stringify({
+				sources: {
+					"cyclingstage.com": { checks: 17, agreed: 9, reliability: 0.53 },
+					"wikipedia.org": { checks: 10, agreed: 10, reliability: 1 },
+				},
+			})
+		);
+	const aiEvent = (evidence) => ({
+		sport: "cycling", title: "Etappe 14", time: future(5), source: "ai-research",
+		confidence: "high", evidence,
+	});
+
+	it("demotes a preserved high-confidence event whose entire basis is distrusted", () => {
+		seedCalibration();
+		fs.writeFileSync(
+			path.join(dataDir, "events.json"),
+			JSON.stringify([aiEvent(["https://www.cyclingstage.com/e14/", "https://www.cyclingstage.com/start/"])])
+		);
+		const events = runBuild();
+		const stage = events.find((e) => e.title === "Etappe 14");
+		expect(stage.confidence).toBe("medium");
+	});
+
+	it("leaves a corroborated event alone — one trusted source blocks the demotion", () => {
+		seedCalibration();
+		fs.writeFileSync(
+			path.join(dataDir, "events.json"),
+			JSON.stringify([aiEvent(["https://www.cyclingstage.com/e14/", "https://en.wikipedia.org/wiki/Tour"])])
+		);
+		const events = runBuild();
+		expect(events.find((e) => e.title === "Etappe 14").confidence).toBe("high");
+	});
+
+	it("is inert without calibration.json (fail-soft)", () => {
+		fs.writeFileSync(
+			path.join(dataDir, "events.json"),
+			JSON.stringify([aiEvent(["https://www.cyclingstage.com/e14/", "https://www.cyclingstage.com/start/"])])
+		);
+		const events = runBuild();
+		expect(events.find((e) => e.title === "Etappe 14").confidence).toBe("high");
+	});
+});

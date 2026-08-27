@@ -2,8 +2,9 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath, pathToFileURL } from "url";
-import { rootDataPath } from "./lib/helpers.js";
+import { rootDataPath, configDirPath, readJsonIfExists } from "./lib/helpers.js";
 import { validateAgainstSchema } from "./lib/validate-schema.js";
+import { soleDistrustedBasis, factDistrusted, RELIABILITY_FLOOR } from "./lib/calibration-gate.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const GRACE_WINDOW_MS = 14 * 24 * 60 * 60 * 1000; // 14 days — matches build-events.js day navigator history window
@@ -88,7 +89,9 @@ export function summaryChannelMismatches(ev) {
  * `messages` are the human-readable warn/violation lines, in the same wording
  * this script has always printed.
  */
-export function validateEvents(events, eventSchema, { now = Date.now() } = {}) {
+export function validateEvents(events, eventSchema, { now = Date.now(), calibration = null, sources = null } = {}) {
+	// WP-245: kalibreringen binder — fail-soft: uten calibration.json er porten inert.
+	const calibrationConfig = calibration?.sources ? { calibration, sources: sources || [] } : null;
 	const messages = [];
 	let errors = 0;
 	let streamingMissing = 0;
@@ -154,6 +157,21 @@ export function validateEvents(events, eventSchema, { now = Date.now() } = {}) {
 				messages.push(`AI-research event with high confidence needs 2+ evidence URLs for ${key}`);
 				errors++;
 			}
+			// Calibration contract (hard, WP-245): same form as the 2+-URLs rule
+			// above, sharpened from HOW MANY links to HOW TRUSTED they are — a
+			// high-confidence event whose ENTIRE evidence base resolves to sources
+			// with measured reliability < RELIABILITY_FLOOR cannot stand. One
+			// unknown/trusted entry blocks the rule (that is what corroboration
+			// is); build-events demotes such events to medium before publishing,
+			// so this error binds the agents at write time (via the post-write
+			// hook), not the pipeline.
+			if (ev.confidence === "high" && calibrationConfig) {
+				const distrusted = soleDistrustedBasis(ev, calibrationConfig);
+				if (distrusted) {
+					messages.push(`AI-research event with high confidence rests solely on distrusted source(s) [${distrusted.join(", ")}] (reliability < ${RELIABILITY_FLOOR} in calibration.json) for ${key} — corroborate independently or demote (WP-245)`);
+					errors++;
+				}
+			}
 			// Streaming contract (soft): "hvor kan jeg se det" should be answered for
 			// upcoming near-term events. Warning only — the research grader enforces harder.
 			const ts2 = Date.parse(ev.time);
@@ -173,7 +191,11 @@ export function validateEvents(events, eventSchema, { now = Date.now() } = {}) {
 			// provenance on a high-confidence fact is the exact cyclingstage/
 			// franceletour failure this contract exists to close.
 			if (ev.confidence === "high") {
-				const strong = (fact) => fact && (fact.basis === "primary" || fact.basis === "official");
+				// WP-245: en mistrodd kilde teller aldri som strong basis, uansett rolle.
+				const strong = (fact) =>
+					fact &&
+					(fact.basis === "primary" || fact.basis === "official") &&
+					!(calibrationConfig && factDistrusted(fact, calibrationConfig));
 				if (!strong(ev.provenance?.time)) timeBasisWeak++;
 				if (Array.isArray(ev.streaming) && ev.streaming.length > 0 && !strong(ev.provenance?.streaming)) {
 					channelBasisWeak++;
@@ -244,7 +266,11 @@ function main() {
 		process.exit(1);
 	}
 
-	const { errors, streamingMissing, streamingLandingOnly, timeBasisWeak, channelBasisWeak, summaryChannelMismatch, enrichedCount, messages } = validateEvents(events, eventSchema);
+	// WP-245: last kalibreringen + kilderegisteret (fail-soft — mangler de, er
+	// kalibreringsporten inert) så CLI-en og build-events' in-process-gate dømmer likt.
+	const calibration = readJsonIfExists(path.join(dataDir, "calibration.json"));
+	const sources = readJsonIfExists(path.join(configDirPath(), "sources.json"))?.sources || null;
+	const { errors, streamingMissing, streamingLandingOnly, timeBasisWeak, channelBasisWeak, summaryChannelMismatch, enrichedCount, messages } = validateEvents(events, eventSchema, { calibration, sources });
 	for (const m of messages) console.warn(m);
 	if (streamingMissing > 0) {
 		console.warn(`Streaming info missing on ${streamingMissing} near-term AI-research event(s) — "hvor kan jeg se det" unanswered.`);

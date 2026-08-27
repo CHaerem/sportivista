@@ -42,6 +42,13 @@ matter to a Norwegian sports fan that are NOT in the static data feeds**.
   go find and add those events. This is a smarter signal than coverage-gaps.json.
 - `docs/data/calibration.json` — per-source trust stats from past verifications.
   Prefer sources with high reliability for the sport at hand; distrust repeat offenders.
+  **This is BINDING (WP-245), not advice:** a source with measured `reliability`
+  below 0.7 can never stand as an event's ONLY basis. Corroborate with an
+  independent source, or write the event as `medium`/`low`. The pipeline enforces
+  it mechanically — `validate-events.js` hard-fails a high-confidence event whose
+  entire `evidence` list resolves to sub-0.7 sources (you will see it from the
+  post-write hook), and `build-events.js` demotes any such event to `medium`
+  before publishing.
 - `scripts/config/authority.json` — **the authority map (WP-241): who CREATES each
   fact.** For every covered competition it names the source that sets the START TIME
   (the organizer/league/federation) and the source that carries the NORWEGIAN CHANNEL

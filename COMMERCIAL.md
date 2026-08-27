@@ -254,7 +254,8 @@ fikserbart.
   Billig, og konverterer «skraper» til «veloppdragen leser» både teknisk og optisk.
 - **WP-245 · Kalibreringen styrer kildevalget hardt.** `calibration.json` og
   `source-quirks` finnes og virker allerede, men mater ikke kildevalget bindende. En
-  kilde på 0,53 skal mekanisk aldri kunne stå som eneste grunnlag.
+  kilde på 0,53 skal mekanisk aldri kunne stå som eneste grunnlag. **✅ Bygd 27.08**
+  (`scripts/lib/calibration-gate.js` — se statusraden i § 7).
 - **WP-246 · Kanalen skal peke på kampen, ikke på forsiden.** Det verifiserte funnet fra
   29.07: 46 av 47 strømme-oppføringer er landingssider. Kontrakten blir **dyplenke med
   tidsstempel og kilde, eller «ikke bekreftet» i klartekst** — aldri en forside som
@@ -440,7 +441,7 @@ Flaskehalsen er D-U-N-S-ledetid og advokat, ikke koding. Realistisk 6–10 uker.
 | WP-242 | Proveniens per faktum + validator-kontrakt på kildetype | WP-240, WP-241 |
 | WP-243 | Dekningskontrakt per konkurranse med målbar dekningsgrad | WP-241 |
 | WP-244 | Høflighetslaget: ETag, caching, takt, User-Agent, robots | — |
-| WP-245 | Kalibreringen styrer kildevalget bindende | WP-242 |
+| WP-245 | Kalibreringen styrer kildevalget bindende — ✅ 27.08: `scripts/lib/calibration-gate.js`; målt reliabilitet < 0.7 kan aldri stå som eneste grunnlag (build-events demoterer high → medium, validate-events hard-feiler, research/verify-promptene bærer regelen) | WP-242 |
 | WP-246 | Kanalen peker på kampen: dyplenke + kilde, ellers «ikke bekreftet» | WP-242 |
 
 Rekkefølge: WP-240 → WP-241 → WP-242 er kjernen; WP-244 kan gjøres når som helst og

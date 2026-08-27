@@ -289,3 +289,67 @@ describe("summary↔streaming coherence is a counted warning", () => {
 		})).toEqual(["Eurosport"]);
 	});
 });
+
+// ── WP-245: kalibreringen binder kildevalget ────────────────────────────────
+import { RELIABILITY_FLOOR } from "../scripts/lib/calibration-gate.js";
+
+describe("calibration contract (WP-245)", () => {
+	const schema = loadEventSchema();
+	const soon = new Date(Date.now() + 86400000).toISOString();
+	const calibration = {
+		sources: {
+			"cyclingstage.com": { checks: 17, agreed: 9, reliability: 0.53 },
+			"wikipedia.org": { checks: 10, agreed: 10, reliability: 1 },
+			"letourfemmes.fr": { checks: 6, agreed: 2, reliability: 0.33 },
+		},
+	};
+	const sources = [
+		{
+			id: "letour",
+			url: "https://www.letour.fr",
+			endpoints: ["https://www.letour.fr", "https://www.letourfemmes.fr"],
+			role: "primary",
+			calibrationKey: "letourfemmes.fr",
+		},
+	];
+	const check = (events, opts) => validateEvents(events, schema, opts);
+	const ev = (over = {}) => ({
+		sport: "cycling", title: "Etappe 14", time: soon, source: "ai-research",
+		confidence: "high",
+		evidence: ["https://www.cyclingstage.com/etappe-14/", "https://www.cyclingstage.com/startliste/"],
+		...over,
+	});
+
+	it("hard-errors a high-confidence event resting solely on distrusted sources", () => {
+		const r = check([ev()], { calibration, sources });
+		expect(r.errors).toBe(1);
+		expect(r.messages.some((m) => m.includes("WP-245") && m.includes("cyclingstage.com"))).toBe(true);
+	});
+
+	it("passes when a trusted source corroborates", () => {
+		const r = check(
+			[ev({ evidence: ["https://www.cyclingstage.com/x", "https://en.wikipedia.org/wiki/Tour"] })],
+			{ calibration, sources }
+		);
+		expect(r.errors).toBe(0);
+	});
+
+	it("never judges medium confidence — medium is the honest label for a weak basis", () => {
+		const r = check([ev({ confidence: "medium" })], { calibration, sources });
+		expect(r.errors).toBe(0);
+	});
+
+	it("is inert without calibration data (fail-soft)", () => {
+		expect(check([ev()]).errors).toBe(0);
+		expect(RELIABILITY_FLOOR).toBeGreaterThan(0.53); // porten dekker det kanoniske tilfellet
+	});
+
+	it("a distrusted source never counts as strong basis in the WP-242 weak-basis counters", () => {
+		const withProvenance = ev({
+			evidence: ["https://www.letour.fr/etappe-14", "https://en.wikipedia.org/wiki/Tour"],
+			provenance: { time: { sourceId: "letour", url: "https://www.letour.fr/etappe-14", basis: "primary" } },
+		});
+		expect(check([withProvenance]).timeBasisWeak).toBe(0); // uten kalibrering: primary = strong
+		expect(check([withProvenance], { calibration, sources }).timeBasisWeak).toBe(1); // med: mistrodd ⇒ weak
+	});
+});
