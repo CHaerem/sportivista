@@ -342,10 +342,48 @@ class Dashboard {
 		return escapeHtml(e.title);
 	}
 
-	/** The one muted meta line under a title: tournament · round · where-to-watch
-	 *  (or, when the game is off/over/live, the status/result/score instead of a
-	 *  channel). Parts are joined by a quiet middot. */
-	eventMeta(e, trailing) {
+	/** Golf's real "when" is the individual tee time, not the tournament's Thursday
+	 *  start. A golf row's time column shows the four-day WINDOW ("27.–30. aug"),
+	 *  which answers *which days* and never *when do I turn it on* — and the tee
+	 *  time that does answer it sat only inside the tap-to-expand detail
+	 *  (`detail.js addGolfField`). WP-250 lifts exactly ONE of them into the meta
+	 *  line. `followed.js golfTeeForEntity` has applied the same rule in "Dine
+	 *  neste" since WP-170; this is the agenda's half of it.
+	 *
+	 *  Honest by construction (DESIGN.md § Grunnlov 3): the hint REQUIRES
+	 *  `teeTimeUTC`, because a bare "17:24" carries no day — without the timestamp
+	 *  we cannot prove the tee time belongs to today's round, and a stale one on
+	 *  the board (visible with no tap) would be a lie. No proof ⇒ no hint, and the
+	 *  detail still shows whatever we have. A player with a `status` is out
+	 *  (cut/WD, WP-95) and never gets a tee time.
+	 *
+	 *  Deliberately ONE name, never the whole field: the row must not swell. The
+	 *  full list — every Norwegian, their tee time and who they are out with —
+	 *  stays one tap away in the detail. Returns escaped HTML, or '' . */
+	golfTeeHint(e, now = Date.now()) {
+		if (!e || e.sport !== 'golf') return '';
+		const todayKey = this.osloDayKey(new Date(now));
+		const today = [];
+		for (const p of e.norwegianPlayers || []) {
+			if (!p || p.status || !p.teeTime || !p.teeTimeUTC) continue;
+			const at = Date.parse(p.teeTimeUTC);
+			if (!Number.isFinite(at) || this.osloDayKey(new Date(at)) !== todayKey) continue;
+			today.push({ name: String(p.name || ''), teeTime: p.teeTime, at });
+		}
+		if (!today.length) return '';
+		today.sort((a, b) => a.at - b.at);
+		// The next Norwegian yet to tee off; once they have all started, the LATEST
+		// one out (the round still running) — never a time that means nothing now.
+		const pick = today.find((t) => t.at >= now) || today[today.length - 1];
+		const short = pick.name.trim().split(/\s+/).pop() || pick.name;
+		if (!short) return '';
+		return `<span class="ev-tee">${escapeHtml(short)} ut ${escapeHtml(pick.teeTime)}</span>`;
+	}
+
+	/** The one muted meta line under a title: tournament · round · tee time (golf)
+	 *  · where-to-watch (or, when the game is off/over/live, the status/result/
+	 *  score instead of a channel). Parts are joined by a quiet middot. */
+	eventMeta(e, trailing, tee) {
 		const parts = [];
 		const hasHomeAway = !!(e.homeTeam && e.awayTeam);
 		const participantLed = !hasHomeAway && !!this.participantMatchup(e);
@@ -355,8 +393,16 @@ class Dashboard {
 		// would otherwise carry it, so we never lose it yet never repeat it.
 		const title = (hasHomeAway || participantLed) ? '' : (e.title || '');
 		if (participantLed && e.title && !e.tournament && !e.round) parts.push(escapeHtml(e.title));
-		if (e.tournament && e.tournament !== title) parts.push(escapeHtml(e.tournament));
+		// WP-250: when the tee time is on the line, the TOURNAMENT yields — the same
+		// trade DESIGN.md § Radens anatomi already makes for a live score ("turneringen
+		// viker for roens skyld", WP-172). The row keeps its two facts (når · hvor) and
+		// its old height; the tour is one tap away, and the title usually names it
+		// anyway ("TOUR Championship"). Without the trade the meta line wrapped onto a
+		// third line at 375px — a row that swells to hold a hint is a bad row.
+		if (e.tournament && e.tournament !== title && !tee) parts.push(escapeHtml(e.tournament));
 		if (e.round) parts.push(`<span class="ev-round">${escapeHtml(e.round)}</span>`);
+		// When · then where: the tee time sits directly before the channel.
+		if (tee) parts.push(tee);
 		if (trailing) parts.push(trailing);
 		if (!parts.length) return '';
 		return `<span class="ev-meta">${parts.join('<span class="ev-sep"> · </span>')}</span>`;
@@ -700,6 +746,10 @@ class Dashboard {
 		else if (live && live.state === 'in') trailing = `<span class="ev-where ev-live">${live.home}–${live.away}</span>`;
 		else if (done) trailing = `<span class="ev-done">Ferdig${done.score ? `<span class="ev-done-score">${escapeHtml(done.score)}</span>` : ''}</span>`;
 		else trailing = this.whereToWatch(e);
+		// WP-250 — golf's own "when". Suppressed once the row carries a status or a
+		// finished result: a tee time is a promise about a round that is still to
+		// come, and an avlyst/ferdig row has none.
+		const tee = (!status && !done) ? this.golfTeeHint(e) : '';
 		const expandable = this.hasDetail(e);
 		const open = expandable && this.isRowOpen(e.id);
 		const attrs = expandable
@@ -709,7 +759,7 @@ class Dashboard {
 			${this.dotCell(this.isMustSee(e))}
 			<span class="ev-time">${escapeHtml(this.timeLabel(e))}</span>
 			${this.identityCell(e, e.sport)}
-			<span class="ev-main"><span class="ev-title">${this.eventTitle(e)}</span>${this.eventMeta(e, trailing)}</span>
+			<span class="ev-main"><span class="ev-title">${this.eventTitle(e)}</span>${this.eventMeta(e, trailing, tee)}</span>
 			${this.trailCell(e, expandable, open)}
 		</div><div class="ev-detail"${open ? '' : ' hidden'}>${open ? this.eventDetail(e) : ''}</div></div>`;
 	}

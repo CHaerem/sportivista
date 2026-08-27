@@ -337,6 +337,113 @@ describe("progressive disclosure detail", () => {
 	});
 });
 
+// WP-250 — the tee time is golf's real "when": a golf row's time column shows a
+// four-day WINDOW, so without this the board never says when to turn the TV on.
+// It rides in the meta line, one name only, and ONLY when `teeTimeUTC` proves the
+// tee time belongs to today's round (DESIGN.md § Grunnlov 3 — no proof, no claim).
+describe("golf row: the tee time in the meta line (WP-250)", () => {
+	// A fixed instant so the pick order is deterministic: 16:00 Oslo on 27 Aug,
+	// with both tee times later the same Oslo day.
+	const NOW = Date.parse("2026-08-27T14:00:00.000Z");
+	const tourChampionship = (players) => ({
+		id: "tc", sport: "golf", tournament: "PGA Tour", title: "TOUR Championship",
+		time: "2026-08-27T04:00:00.000Z", endTime: "2026-08-30T20:00:00.000Z",
+		norwegianPlayers: players,
+		featuredGroups: [{ player: "Viktor Hovland", teeTime: "17:24", groupmates: [{ name: "Robert MacIntyre" }] }],
+		streaming: [{ platform: "HBO Max (Sport)" }],
+	});
+	const hovland = { name: "Viktor Hovland", teeTime: "17:24", teeTimeUTC: "2026-08-27T15:24:00.000Z" };
+	const reitan = { name: "Kristoffer Reitan", teeTime: "18:06", teeTimeUTC: "2026-08-27T16:06:00.000Z" };
+
+	/** An ISO stamp guaranteed to sit on TODAY's Oslo day whatever hour the suite
+	 *  runs at (the hint's honesty gate is a same-day check). */
+	const teeTodayUTC = (offsetMs) => {
+		const now = Date.now();
+		const key = dash.osloDayKey(new Date(now));
+		for (const ms of [offsetMs, 60000, -60000]) {
+			const t = now + ms;
+			if (dash.osloDayKey(new Date(t)) === key) return new Date(t).toISOString();
+		}
+		return new Date(now).toISOString();
+	};
+
+	it("shows the next Norwegian out, by surname, in the row itself", () => {
+		const hint = dash.golfTeeHint(tourChampionship([hovland, reitan]), NOW);
+		expect(hint).toContain("ev-tee");
+		expect(hint).toContain("Hovland ut 17:24");
+		expect(hint).not.toContain("Reitan");   // ONE name — the row must not swell
+	});
+
+	it("moves on to the next player once the earlier one has teed off", () => {
+		const afterHovland = Date.parse("2026-08-27T15:40:00.000Z");
+		expect(dash.golfTeeHint(tourChampionship([hovland, reitan]), afterHovland)).toContain("Reitan ut 18:06");
+	});
+
+	it("keeps the latest start once everyone is out on the course", () => {
+		const afterBoth = Date.parse("2026-08-27T17:00:00.000Z");
+		expect(dash.golfTeeHint(tourChampionship([hovland, reitan]), afterBoth)).toContain("Reitan ut 18:06");
+	});
+
+	it("stays silent when the tee time carries no day we can verify", () => {
+		// A bare "17:24" with no teeTimeUTC could be yesterday's round — the board
+		// says nothing rather than something it cannot stand behind.
+		const e = tourChampionship([{ name: "Viktor Hovland", teeTime: "17:24" }]);
+		expect(dash.golfTeeHint(e, NOW)).toBe("");
+	});
+
+	it("stays silent when the tee time belongs to another day", () => {
+		const e = tourChampionship([{ ...hovland, teeTimeUTC: "2026-08-28T15:24:00.000Z" }]);
+		expect(dash.golfTeeHint(e, NOW)).toBe("");
+	});
+
+	it("never gives a cut player a tee time (WP-95)", () => {
+		const e = tourChampionship([{ ...hovland, status: "røk cutten" }, reitan]);
+		const hint = dash.golfTeeHint(e, NOW);
+		expect(hint).toContain("Reitan ut 18:06");
+		expect(hint).not.toContain("Hovland");
+	});
+
+	it("renders the hint into the agenda row, before the channel", () => {
+		const row = dash.eventRow(tourChampionship([{ ...hovland, teeTimeUTC: teeTodayUTC(3600000) }]));
+		expect(row).toContain("ev-tee");
+		expect(row).toContain("Hovland ut 17:24");
+		expect(row.indexOf("ev-tee")).toBeLessThan(row.indexOf("HBO Max (Sport)"));
+	});
+
+	// DESIGN.md § Radens anatomi already trades the tournament away for a live
+	// score ("turneringen viker for roens skyld", WP-172). Same trade here: without
+	// it the meta line wrapped onto a THIRD line at 375px, and a row that swells to
+	// hold a hint is a bad row. The row keeps its two facts — når · hvor.
+	it("lets the tournament yield to the tee time so the row keeps its height", () => {
+		const e = tourChampionship([{ ...hovland, teeTimeUTC: teeTodayUTC(3600000) }]);
+		const row = dash.eventRow(e);
+		expect(row).toContain("Hovland ut 17:24");
+		expect(row).toContain("HBO Max (Sport)");
+		expect(row).not.toContain("PGA Tour");
+		// …and it comes straight back the moment there is no tee time to show.
+		expect(dash.eventRow(tourChampionship([]))).toContain("PGA Tour");
+	});
+
+	it("leaves a golf row with no tee data exactly as it was", () => {
+		const row = dash.eventRow({ id: "g", sport: "golf", tournament: "PGA Tour", title: "The Open", time: soon() });
+		expect(row).not.toContain("ev-tee");
+	});
+
+	it("leaves every non-golf row alone", () => {
+		const row = dash.eventRow({
+			id: "f", sport: "football", tournament: "Premier League",
+			homeTeam: "Liverpool FC", awayTeam: "Arsenal FC", time: soon(),
+			norwegianPlayers: [{ name: "Erling Haaland", teeTime: "17:24", teeTimeUTC: teeTodayUTC(3600000) }],
+		});
+		expect(row).not.toContain("ev-tee");
+	});
+
+	it("drops the tee time on a cancelled row — a tee time is a promise about a round still to come", () => {
+		const e = { ...tourChampionship([{ ...hovland, teeTimeUTC: teeTodayUTC(3600000) }]), status: "cancelled" };
+		expect(dash.eventRow(e)).not.toContain("ev-tee");
+	});
+});
+
 describe("golf detail: who plays, tee times, featured group", () => {
 	it("lists each Norwegian with tee time and their marquee groupmates", () => {
 		const html = dash.eventDetail({
@@ -355,6 +462,18 @@ describe("golf detail: who plays, tee times, featured group", () => {
 		expect(html).toContain("Kristoffer Reitan");
 		expect(html).toContain("156");                    // field size
 	});
+	it("writes the tee time as a tee-OFF, matching the agenda row (WP-250)", () => {
+		const html = dash.eventDetail({
+			sport: "golf", title: "TOUR Championship", time: soon(),
+			norwegianPlayers: [{ name: "Viktor Hovland", teeTime: "17:24" }],
+			featuredGroups: [{ player: "Viktor Hovland", teeTime: "17:24", groupmates: [{ name: "Robert MacIntyre" }] }],
+		});
+		// «ut 17:24 · med Robert MacIntyre» — a bare clock read like a second start
+		// time next to the event's own four-day window in the row above.
+		expect(html).toContain("ut 17:24");
+		expect(html).toContain("med Robert MacIntyre");
+	});
+
 	it("shows a Norwegian without tee data as simply in the field", () => {
 		const html = dash.eventDetail({ sport: "golf", title: "US Open", time: soon(), norwegianPlayers: [{ name: "Kristoffer Ventura" }] });
 		expect(html).toContain("Kristoffer Ventura");

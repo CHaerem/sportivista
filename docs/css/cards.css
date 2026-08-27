@@ -170,6 +170,12 @@
 }
 .ev-sep { color: var(--fg-3); }
 .ev-round { color: var(--fg-2); }
+/* WP-250 — golf's own "when": the Norwegian's tee time, inline in the meta line
+   at exactly the same muted weight as the rest of it. Never an accent, never a
+   second row, and NOT the display font (DESIGN.md § Display-font: three surfaces,
+   and the time COLUMN is the one in the agenda). Tabular so the digits sit
+   straight; nowrap so "Hovland ut 17:24" never breaks mid-time. */
+.ev-tee { color: var(--fg-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
 
 /* ⓘ — dempet, ONLY on AI-research rows; opens provenance in the detail. Sits
    inside .ev-trail (flex) now, so no grid justify-self. */
@@ -224,6 +230,14 @@
 .ev-detail .d-prose .d-k { display: block; min-width: 0; margin-bottom: 4px; }
 .ev-detail .d-prose .d-p { color: var(--fg-2); margin: 0 0 6px; line-height: 1.5; overflow-wrap: break-word; }
 .ev-detail .d-prose .d-p:last-child { margin-bottom: 0; }
+/* WP-250 — a golf field line ("Viktor Hovland" / "ut 17:24 · med Robert
+   MacIntyre"): the "key" is a PERSON, not a field label, so it gets its own line
+   in full strength and the tee line reads underneath at full width. The default
+   key/value pair squeezed «ut 18:06 · med Patrick Cantlay» into a ~90px strip
+   behind a long name. Same shape as the app's GolfFieldRow, and the same trick
+   .d-prose already uses — no new colours, no new type sizes. */
+.ev-detail .d-row.golf { display: block; }
+.ev-detail .d-row.golf .d-k { display: block; min-width: 0; margin-bottom: 2px; color: var(--fg); }
 .ev-detail a { color: var(--accent); border-bottom: 1px solid transparent; }
 .ev-detail a:hover { border-bottom-color: var(--accent); }
 /* Collapsed stage race (e.g. Tour de France): past stages dimmed when expanded */

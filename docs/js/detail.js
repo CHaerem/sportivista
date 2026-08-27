@@ -5,7 +5,21 @@
 Object.assign(window.Dashboard.prototype, {
 
 	/** Golf detail: each Norwegian in the field on its own line — tee time (Oslo)
-	 *  + who they're out with (the marquee/featured group), plus the field size. */
+	 *  + who they're out with (their tee-time group, `featuredGroups`), plus the
+	 *  field size.
+	 *
+	 *  WP-250: the tee time is written «ut 17:24», not a bare «17:24». The row's
+	 *  time column carries a four-day window for a golf event, so a naked clock
+	 *  down here read like a second start time; «ut» is what the sport calls it
+	 *  ("Hovland går ut 17:24") and it is the same wording the agenda row now
+	 *  shows (`dashboard.js golfTeeHint`), so the two flates say one thing.
+	 *
+	 *  Each player's line is a `.d-row.golf`, not the default narrow key/value: the
+	 *  "key" here is a PERSON's name, and a long one ("Kristoffer Reitan") pushed
+	 *  the value into a ~90 px strip that broke «ut 18:06 · med Patrick Cantlay»
+	 *  across four lines at 375 px. Stacked — name over line — it is two lines and
+	 *  reads, and it is the same shape the app's GolfFieldRow uses. Same fix WP-127
+	 *  made for the "Om" prose block. */
 	addGolfField(e, add) {
 		const players = e.norwegianPlayers || [];
 		const groups = e.featuredGroups || [];
@@ -16,7 +30,7 @@ Object.assign(window.Dashboard.prototype, {
 			// WP-95: a player out of the tournament (cut/WD) shows their calm status
 			// verbatim — never a tee time or "i feltet" as if still playing.
 			if (p.status) {
-				add(escapeHtml(name), escapeHtml(p.status));
+				add(escapeHtml(name), escapeHtml(p.status), 'golf');
 				listed = true;
 				continue;
 			}
@@ -24,9 +38,9 @@ Object.assign(window.Dashboard.prototype, {
 			const tee = p.teeTime || g?.teeTime;
 			const mates = (g?.groupmates || []).map((m) => escapeHtml(m.name || m)).join(', ');
 			const parts = [];
-			if (tee) parts.push(`<span class="tbd">${escapeHtml(tee)}</span>`);
+			if (tee) parts.push(`<span class="tbd">ut ${escapeHtml(tee)}</span>`);
 			if (mates) parts.push(`med ${mates}`);
-			add(escapeHtml(name), parts.length ? parts.join(' · ') : 'i feltet');
+			add(escapeHtml(name), parts.length ? parts.join(' · ') : 'i feltet', 'golf');
 			listed = true;
 		}
 		// A featured group whose Norwegian isn't in norwegianPlayers (defensive).
@@ -34,9 +48,9 @@ Object.assign(window.Dashboard.prototype, {
 			if (players.some((p) => String(p.name || p).toLowerCase() === String(g.player || '').toLowerCase())) continue;
 			const mates = (g.groupmates || []).map((m) => escapeHtml(m.name || m)).join(', ');
 			const parts = [];
-			if (g.teeTime) parts.push(`<span class="tbd">${escapeHtml(g.teeTime)}</span>`);
+			if (g.teeTime) parts.push(`<span class="tbd">ut ${escapeHtml(g.teeTime)}</span>`);
 			if (mates) parts.push(`med ${mates}`);
-			if (parts.length) { add(escapeHtml(g.player), parts.join(' · ')); listed = true; }
+			if (parts.length) { add(escapeHtml(g.player), parts.join(' · '), 'golf'); listed = true; }
 		}
 		if (!listed && players.length) add('Norske', escapeHtml(players.map((p) => p.name || p).join(', ')));
 		if (e.totalPlayers) add('Felt', `${e.totalPlayers} i feltet`);
@@ -97,7 +111,9 @@ Object.assign(window.Dashboard.prototype, {
 	eventDetail(e) {
 		if (e.isSeries) return this.seriesDetail(e);
 		const rows = [];
-		const add = (k, v) => { if (v) rows.push(`<div class="d-row"><span class="d-k">${k}</span><span class="d-v">${v}</span></div>`); };
+		// `cls` marks a row that needs a shape other than the narrow key/value pair —
+		// today only `golf`, whose "key" is a PERSON's name (see addGolfField).
+		const add = (k, v, cls) => { if (v) rows.push(`<div class="d-row${cls ? ` ${cls}` : ''}"><span class="d-k">${k}</span><span class="d-v">${v}</span></div>`); };
 
 		add('Hvorfor', this.whyShown(e));
 		const result = this.finishedResult(e);
