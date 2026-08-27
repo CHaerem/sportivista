@@ -56,6 +56,12 @@ struct EventDetailSheet: View {
                 // question a tapped row raises before "where do I watch it".
                 entityPagesSection
 
+                // WP-250 — golf: WHEN the Norwegians tee off and who they are out
+                // with. Directly above HVOR SER JEG DET because for a four-day
+                // tournament the tee time IS the "når", and "når · hvor" belong
+                // side by side.
+                golfFieldSection
+
                 Section {
                     if event.streaming.isEmpty {
                         Text("Kanal ukjent")
@@ -264,6 +270,34 @@ struct EventDetailSheet: View {
                 }
             } header: {
                 header("LAG OG UTØVERE")
+            }
+        }
+    }
+
+    // MARK: - Golf field (WP-250)
+
+    /// The Norwegians in a golf field: one quiet line each — «ut 17:24 · med
+    /// Robert MacIntyre», a cut player's verbatim status, or the honest «i
+    /// feltet» — closed by the field size. The app decoded `featuredGroups` but
+    /// had never rendered them anywhere; this is the missing last metre, and the
+    /// twin of the web detail's `addGolfField`.
+    ///
+    /// Absent entirely for every non-golf event and for a golf event that names
+    /// no Norwegians, so nothing about today's rows changes elsewhere.
+    @ViewBuilder
+    private var golfFieldSection: some View {
+        let lines = GolfField.lines(for: event)
+        let size = GolfField.fieldSize(for: event)
+        if !lines.isEmpty {
+            Section {
+                ForEach(Array(lines.enumerated()), id: \.offset) { _, line in
+                    GolfFieldRow(line: line)
+                }
+                if let size {
+                    DetailRow(label: "Felt", value: size)
+                }
+            } header: {
+                header("NORSKE I FELTET")
             }
         }
     }
