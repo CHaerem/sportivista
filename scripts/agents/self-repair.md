@@ -15,6 +15,22 @@ to research, rendering nits to ui-fix):
 3. **Validation**: run `node scripts/validate-events.js` — fix schema/contract errors.
 4. **Broken fetchers**: a sport file in `docs/data/*.json` that's empty, malformed,
    or errored in the pipeline log — the fetcher likely needs a fix.
+5. **Stale published copy**: read `docs/data/publish-freshness.json` (written every
+   pipeline run, WP-248). `status: "stale"` means the LIVE site serves older data
+   than the repo — the pipeline commits fine but the deploys never land. This class
+   of breakage produces NO failed runs (August 2026: one Pages deploy stuck in
+   "waiting" held the `pages-deploy` concurrency queue for four weeks; every later
+   deploy queued behind it and was superseded/cancelled, while every other health
+   signal stayed green because they all judge the REPO, not the published copy).
+   **Remediation recipe — this is an ops fix, not a code fix; no PR needed:**
+   `gh run list --workflow=preview-deploy.yml --status=waiting` (and
+   `--status=in_progress`) — a run stuck there for hours is holding the queue;
+   `gh run cancel <id>` it (safe: a waiting deploy has deployed nothing); then
+   `gh workflow run preview-deploy.yml` and verify the live `data/meta.json`
+   refreshed. Log what you found and did. If `gh` lacks permission for any of
+   these, log exactly which command failed so the owner can do it in one click.
+   A long streak of `status: "unknown"` (visible in the file's git history) is
+   also suspicious — the probe cannot reach the site at all; investigate.
 
 **Ignore non-bugs**: quota/rate-limit failures (check `docs/data/usage-state.json`
 — if the failures line up with `rejected`/near-exhausted, that's the governor's

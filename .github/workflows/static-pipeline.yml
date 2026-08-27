@@ -48,6 +48,15 @@ jobs:
           node-version: "22"
       - run: npm ci
       - run: mkdir -p docs/data
+      # WP-248: publiserings-ferskhetsvakt — sammenlikner den LIVE sidens
+      # data/meta.json med repoets (checkout-tilstanden = forrige runs stamp;
+      # normalt identisk med live). Skriver docs/data/publish-freshness.json
+      # (committes av datacommiten under) og annoterer ::error:: ved etterslep
+      # over terskelen — men feller ALDRI kjøringen: en deploy-jam må ikke
+      # hindre at data commites og neste deploy forsøkes, for deployen ER
+      # medisinen. self-repair leser signalet og rydder køen (self-repair.md).
+      - run: node scripts/check-publish-freshness.js
+        continue-on-error: true
       - run: node scripts/fetch/index.js
       - run: node scripts/fetch-standings.js
         continue-on-error: true
