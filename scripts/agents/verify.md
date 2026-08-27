@@ -101,7 +101,12 @@ actually reached.
 to `docs/data/calibration-ledger.jsonl` (create if missing):
 `{ "checkedAt": ISO, "sport": "...", "source": "domain.tld", "field": "time"|"streaming"|"existence", "agreed": true|false, "boardWasProvisional": true, "note": "..." }`
 `agreed` = did the source match what we had? These records aggregate mechanically
-into `calibration.json`, which teaches the research agent who to trust.
+into `calibration.json`, which teaches the research agent who to trust — and since
+WP-245 the teaching is binding: a source whose measured reliability sits below 0.7
+can never stand as an event's sole basis (`build-events.js` demotes such
+high-confidence events to `medium`). So when you verify an event whose only
+evidence is a low-reliability source, corroborate it against an independent source
+before confirming — your `verificationSources` are part of the basis the gate judges.
 
 **Distinguish "the source was wrong" from "the source corrected our estimate."** This
 matters enormously and used to be invisible. When `agreed: false`, ask: *what was the

@@ -5,6 +5,7 @@ import crypto from "crypto";
 import { readJsonIfExists, rootDataPath, configDirPath, MS_PER_DAY, makeCoverageGate, normalizeParticipants, normalizeNorwegianPlayers, normalizeText, containsName, entityTerms } from "./lib/helpers.js";
 import { resolveStreaming, stampUrlKinds } from "./lib/norwegian-rights.js";
 import { deriveProvenance, lookalikeHosts, stripLookalikeEvidence } from "./lib/provenance.js";
+import { soleDistrustedBasis, RELIABILITY_FLOOR } from "./lib/calibration-gate.js";
 import { writeManifest } from "./build-manifest.js";
 import { writePortReport } from "./build-port-report.js";
 import { readIosCommit, buildAppVersion, readTestflight } from "./lib/app-version.js";
@@ -589,6 +590,14 @@ let provenanceMigrated = 0;
 // Domener autoritetskartet flagger som lookalikes (franceletour.com ≠ letour.fr).
 const lookalikeSet = lookalikeHosts(authorityMap);
 let lookalikesStripped = 0;
+// WP-245: kalibreringen binder kildevalget — en kilde med målt reliabilitet
+// under RELIABILITY_FLOOR kan aldri stå som eneste grunnlag for et high-
+// confidence-event. Fail-soft: uten calibration.json skjer ingen binding.
+const calibrationStats = readJsonIfExists(path.join(dataDir, "calibration.json"));
+const calibrationConfig = calibrationStats?.sources
+	? { calibration: calibrationStats, sources: sourcesRegister?.sources || [] }
+	: null;
+let calibrationDemoted = 0;
 
 // Keep events from the last 14 days + upcoming, and only those the catalog covers
 const cutoff = Date.now() - 14 * MS_PER_DAY;
@@ -653,12 +662,26 @@ for (const e of kept) {
 			if (removed > 0) { e[field] = urls; lookalikesStripped += removed; }
 		}
 	}
+	// WP-245: etter lookalike-strippingen (dømmer den evidensen som faktisk blir
+	// stående) — hviler et high-confidence-events hele grunnlag på mistrodde
+	// kilder, demoteres det til medium. Én vei: re-promotering er verify-
+	// agentens dom, aldri mekanikk.
+	if (calibrationConfig && e.source === "ai-research" && e.confidence === "high") {
+		const distrusted = soleDistrustedBasis(e, calibrationConfig);
+		if (distrusted) {
+			e.confidence = "medium";
+			calibrationDemoted++;
+		}
+	}
 }
 if (provenanceMigrated > 0) {
 	console.log(`Migrated flat evidence to per-fact provenance on ${provenanceMigrated} AI-research event(s) (WP-242).`);
 }
 if (lookalikesStripped > 0) {
 	console.log(`Stripped ${lookalikesStripped} lookalike-domain evidence URL(s) — a domain posing as the organizer is not a source (WP-242b).`);
+}
+if (calibrationDemoted > 0) {
+	console.log(`Demoted ${calibrationDemoted} high-confidence AI-research event(s) to medium — the entire evidence base resolves to sources with measured reliability < ${RELIABILITY_FLOOR} in calibration.json; a distrusted source never stands as sole basis (WP-245).`);
 }
 // WP-94: validate the array in-process BEFORE writing it, and degrade instead
 // of freezing the hourly pipeline on a violation. static-pipeline.yml runs
@@ -684,7 +707,7 @@ const eventSchema = loadEventSchema();
 // CLI run always saw; validating the pre-serialize object directly would see
 // literal `undefined` properties the schema doesn't expect and false-positive.
 const serialized = JSON.stringify(kept, null, 2);
-const { errors: hardErrorCount, messages: validationMessages } = validateEvents(JSON.parse(serialized), eventSchema);
+const { errors: hardErrorCount, messages: validationMessages } = validateEvents(JSON.parse(serialized), eventSchema, calibrationConfig || {});
 const eventsPath = path.join(dataDir, "events.json");
 const alertPath = path.join(dataDir, "build-alert.json");
 const hadPreviousGood = Array.isArray(previousEvents);
