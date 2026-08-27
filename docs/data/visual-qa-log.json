@@ -1,31 +1,17 @@
 {
-  "checkedAt": "2026-07-29T10:34:33Z",
+  "checkedAt": "2026-08-26T08:38:28Z",
   "widths": [375, 393, 900],
-  "verdict": "issues",
-  "findings": [
-    {
-      "width": 375,
-      "area": "auth gate (#auth-gate, body.gated)",
-      "issue": "Whole dashboard is still hidden behind the mandatory 'Logg på med Apple' wall. Sign-in fails with 'Kunne ikke starte Apple-innlogging (AUTHENTICATION_FAILED)' and there is no fallback/skip — no masthead, agenda, events, or 'Dette dekker vi' section render at all. The product's core promise (a calm scannable agenda) is completely invisible.",
-      "severity": "high"
-    },
-    {
-      "width": 393,
-      "area": "auth gate (#auth-gate, body.gated)",
-      "issue": "Same as 375px: only the Apple sign-in card and AUTHENTICATION_FAILED error are visible; no dashboard content renders.",
-      "severity": "high"
-    },
-    {
-      "width": 900,
-      "area": "auth gate (#auth-gate, body.gated)",
-      "issue": "Same as smaller widths: only the Apple sign-in card and AUTHENTICATION_FAILED error are visible; no dashboard content renders. At all three widths the #apple-sign-in-button area itself renders empty (CloudKit's own Sign-in-with-Apple control never appears) — once auth setup fails there is no visible interactive control to retry, only text instructing to reload the page or open DevTools.",
-      "severity": "medium"
-    }
-  ],
+  "verdict": "pass",
+  "findings": [],
   "notes": [
-    "Unchanged repeat of the 2026-07-27/28 findings: the gate is a deliberate owner decision (documented inline in index.html around the auth-gate markup — 'eier-beslutning 21.07', body.gated hides all content until Sign in with Apple succeeds). `git log --since=2026-07-28 -- docs/index.html docs/js/icloud-sync.js docs/js/icloud-config.js docs/css/base.css` shows only the large self-repair commit (627a130) that restored a batch of previously untracked/missing repo files (workflows, skills, base.css itself as a 'new file' in git, etc.) — a repo-hygiene fix, not a change to the auth-gate markup, logic, or CSS rules. The gate text/behaviour is byte-identical to the prior run.",
-    "Could not assess ANY of the correctness/layout checklist (match name truncation, streaming channel/foreign-broadcaster check, times, flags/crests, must-see accent, header/footer alignment) at any width — everything behind the auth gate is unreachable without a successful Apple sign-in, and this screenshot harness has no network path to Apple's CloudKit web services.",
-    "The gate screen itself (wordmark, tagline, lead copy, error text) remains well laid out at all three widths: text wraps cleanly, no horizontal overflow, no clipping, calm and centered, single amber accent on the colon — same visual quality as the prior two runs.",
-    "Flagging high again (not escalating further) purely because it means visual QA cannot verify the actual product at all, run after run, in this offline harness — this is the same standing gap noted in the last two checks, not a new regression. A human should confirm whether real signed-in users in production see the dashboard fine (this may be purely an artifact of the no-network screenshot environment) and whether the empty sign-in-button-on-failure state (medium finding above) also occurs for real users whose CloudKit auth fails (e.g. Safari private browsing / blocked third-party cookies), since that would be a genuine dead end with no retry control."
+    "Match names read fully at all three widths, no truncation observed (e.g. 'Viking - Dinamo Zagreb', 'Coventry City - Hull City', 'Tottenham Hotspur - Newcastle United' all render whole).",
+    "Every event row shows a channel, and every channel visible is Norwegian: TV 2 Play, Viaplay, Discovery+, HBO Max (Sport), YouTube (Saint Louis Chess Club) - no ESPN/FOX/Sky spotted.",
+    "Times are present and consistently formatted (e.g. 18:15, 19:00, 21:30); multi-day/tournament entries show date ranges (e.g. '22. august-13. september') correctly rather than a single misleading date.",
+    "Flags and tournament/club icons render as small glyphs/crests, not broken image boxes, at all three widths.",
+    "Single quiet column, day-grouped agenda, generous spacing at all widths - no cluttered grid.",
+    "375px (iPhone SE) width - the tightest breakpoint - shows no visible horizontal clipping or overflow; right-edge chevron/info icons are intact on every row.",
+    "900px (desktop) shot: the floating 'Assistent' button rests over the mid-agenda 'Viking - Dinamo Zagreb' row, not the last agenda row or the footer - this matches the DESIGN.md-sanctioned floating-button idiom, not a finding.",
+    "Header, day headings ('I DAG', 'I MORGEN', 'FREDAG 28. AUGUST', ...), and footer ('Merker og kilder', install/app-promo text) are intact and aligned on all three widths.",
+    "Full-page screenshot capture only shows content within the viewport's own scroll flow, so sub-pixel/edge-case horizontal overflow (e.g. a single stray wide element) can't be fully ruled out from these images alone - flagging as a coverage caveat, not a finding."
   ]
 }

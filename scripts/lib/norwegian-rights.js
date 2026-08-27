@@ -99,7 +99,11 @@ const CH = {
 };
 
 // Anything matching this is a Norwegian service we can trust to keep as-is.
-const NORWEGIAN_RE = /viaplay|tv\s?2|nrk|discovery\+?|eurosport|\bmax\b|v sport|vg\+?|amedia|strim/i;
+// `direktesport` (+ `avisa nordland` / `an.no`) are the free local holders that
+// carry Norwegian clubs' early European qualifiers — without them here, a match
+// whose only channel is Direktesport would be filtered out to nothing the moment
+// the rights map declines to guess (see the qualifier carve-out in norwegianRights).
+const NORWEGIAN_RE = /viaplay|tv\s?2|nrk|discovery\+?|eurosport|\bmax\b|v sport|vg\+?|amedia|direktesport|avisa nordland|an\.no|strim/i;
 
 // National sides — ESPN often labels these matches only "International", so we
 // detect nation-vs-nation to route World Cup / landskamper to NRK/TV 2 (never FOX).
@@ -165,9 +169,22 @@ export function norwegianRights(ev) {
 		// UEFA club competitions split in Norway (verified 2026-07-27 vs
 		// presse.viaplaygroup.no + tvkampen.com, rights t.o.m. 2030/31): Champions
 		// League → TV 2, Europa + Conference League → Viaplay. "champions" is tested
-		// first so the Super Cup (CL winner vs EL winner) still maps to TV 2. NB:
-		// Norwegian clubs' EARLY qualifiers are often sub-licensed free to VG TV /
-		// Direktesport / Amedia — the verify agent resolves that per event on top.
+		// first so the Super Cup (CL winner vs EL winner) still maps to TV 2.
+		//
+		// EXCEPT the qualifying rounds when a Norwegian club is involved: those are
+		// routinely sub-licensed FREE to local holders (Direktesport/Amedia/VG TV /
+		// Avisa Nordland), NOT the aggregator that holds the competition proper. A
+		// confident Viaplay/TV 2 here silently clobbers the researched local channel
+		// on every hourly rebuild — the Glimt/Brann/Tromsø revert-war flagged across
+		// research-log + verify-log (verify amends → the map re-derives → repeat). So
+		// for a Norwegian-club qualifier we decline to guess (→ normalizeStreaming
+		// keeps the event's own Norwegian streaming). The generic foreign-vs-foreign
+		// qualifier still falls through to the aggregator mapping below.
+		if (/champions|europa|conference/.test(hay) &&
+			/kvalifisering|kvalik|qualify|qualifier|\bq[123]\b|play-?off round/.test(hay) &&
+			ev.norwegian) {
+			return [];
+		}
 		if (/champions/.test(hay)) return [CH.tv2];
 		if (/europa|conference/.test(hay)) return [CH.viaplay];
 		if (/obos|eliteserie|norwegian|cup|nm\b/.test(hay)) return [CH.tv2];
@@ -182,7 +199,18 @@ export function norwegianRights(ev) {
 		if (/masters|pga championship/.test(hay)) return [CH.discovery];
 		if (/\bthe open\b|open championship|british open|u\.?s\.? open/.test(hay)) return [CH.viaplay];
 		if (/dp world|ryder cup/.test(hay)) return [CH.viaplay];
-		return [CH.hbomax, CH.eurosport]; // ordinary PGA Tour (incl. opposite-field, e.g. Corales)
+		// Only assert PGA Tour rights (HBO Max) when the haystack POSITIVELY says PGA.
+		// The fetcher stamps meta/tournament "PGA Tour" on every PGA event (incl.
+		// opposite-field, e.g. Corales), so this covers the fetcher wholesale. For a
+		// golf event we CANNOT classify — an untagged AI-research event, or a tour we
+		// don't map (LPGA / Ladies European / Solheim) — DECLINE to guess rather than
+		// force the PGA channel: returning [] lets normalizeStreaming keep the event's
+		// own researched Norwegian streaming instead of clobbering a correct value to
+		// HBO Max (same guess-no-more principle as the UEFA-qualifier carve-out above;
+		// visual-qa 2026-08-13 caught a DP World event (Danish Golf Championship)
+		// wrongly shown on HBO Max via this default).
+		if (/\bpga\b/.test(hay)) return [CH.hbomax, CH.eurosport]; // ordinary PGA Tour
+		return [];
 	}
 	if (sport === "f1" || sport === "formula1") return [CH.viaplay];
 	// Tour de France 2026 rights are shared: TV 2 (Play/Direkte) + WBD (Max/Eurosport

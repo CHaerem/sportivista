@@ -1,43 +1,21 @@
 {
-  "lastUpdated": "2026-07-29T17:12:13.063Z",
+  "lastUpdated": "2026-08-24T07:54:57.159Z",
   "source": "ESPN Tennis API",
   "tournaments": [
     {
       "name": "ATP/WTA Tour",
       "events": [
         {
-          "id": "tennis-national-bank-open-presented-by-rogers-1785643200000",
-          "title": "National Bank Open presented by Rogers",
-          "time": "2026-08-02T04:00:00.000Z",
-          "endTime": "2026-08-14T03:59:00.000Z",
+          "id": "tennis-us-open-1787544000000",
+          "title": "US Open",
+          "time": "2026-08-24T04:00:00.000Z",
+          "endTime": "2026-09-14T03:59:00.000Z",
           "venue": "TBD",
           "sport": "tennis",
           "meta": "ATP/WTA Tour",
           "tournament": "ATP/WTA Tour",
           "streaming": [],
-          "norwegian": false,
-          "homeTeam": "",
-          "awayTeam": "",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED",
-            "_isTournament": "true"
-          }
-        },
-        {
-          "id": "tennis-t-mobile-polish-open-1785729600000",
-          "title": "T-Mobile Polish Open",
-          "time": "2026-08-03T04:00:00.000Z",
-          "endTime": "2026-08-09T03:59:00.000Z",
-          "venue": "TBD",
-          "sport": "tennis",
-          "meta": "ATP/WTA Tour",
-          "tournament": "ATP/WTA Tour",
-          "streaming": [],
-          "norwegian": false,
+          "norwegian": true,
           "homeTeam": "",
           "awayTeam": "",
           "participants": [],
@@ -59,5 +37,10 @@
       "failedLeagueNames": [],
       "coverageRatio": 1
     }
+  },
+  "_retained": {
+    "since": "2026-08-24T08:43:34.433Z",
+    "consecutiveRetains": 50,
+    "lastFreshFetch": "2026-08-24T07:54:57.159Z"
   }
 }

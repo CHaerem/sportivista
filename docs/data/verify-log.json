@@ -1,20 +1,15 @@
 {
-  "runAt": "2026-07-29T08:06:00Z",
-  "checked": 18,
-  "confirmed": 18,
-  "amended": 0,
+  "runAt": "2026-08-26T05:59:11Z",
+  "checked": 5,
+  "confirmed": 4,
+  "amended": 1,
   "removed": 0,
   "notes": [
-    "Vindu 29.07-05.08. Re-verifiserte de 18 AI-research-eventene i vinduet mot ferske web-søk på rettighets- og terminliste-laget (kanal + dato/eksistens). Ingen amendments av event-felt, ingen fjernet.",
-    "Danmark Rundt 2026 (bebeb54d92d6): norsk kringkaster NÅ BEKREFTET — HBO Max (Sport)/Eurosport Norge (WBD) sender hele løpet (daglig ~15.45 CEST, søn 13.30) per domestiquecycling.com + cyclismactu.net. Streaming-feltet (HBO Max) var allerede riktig; oppdaterte summary-prosaen som feilaktig sa «norsk kringkaster IKKE bekreftet, streaming holdt tom».",
-    "SKILL-EDIT NEKTET (literal tool-feil, quotet per prompt): «Claude requested permissions to write to /home/runner/work/sportivista/sportivista/.claude/skills/norwegian-rights/SKILL.md, but you haven't granted it yet.» Reell permission-mode-nekt i DENNE lokale økten (samme som forrige verify-runde 28.07 traff), IKKE den avkreftede WP-91-legenden — i CI er skill-writes tillatt. Den durable oppdateringen (Danmark Rundt-linjen fra «NOT confirmed» → «HBO Max/Eurosport [solid]») er fanget i calibration-ledger + denne loggen for godkjent/CI-apply.",
-    "Tour de France Femmes 2026 (fcbc4ab316f0, 0d8e63f93126, 47d77ad705a7, 21d9c04591ec): eksistens + ruter bekreftet mot letourfemmes.fr + cyclingnews.com — 9 etapper 1.–9. aug, Grand Départ Lausanne lør 1. aug (etappe 1 Lausanne–Lausanne, offisiell start 14.15 lokal), etappe 2 Aigle–Genève. TV 2 Play stemmer med rettighetskartet. Etappetider (broadcast) IKKE justert — cyclingstage-kvirket (on-road vs norsk sendetid) gjør presis kringkastingstid usikker; beholdt som ærlig medium.",
-    "Conference League Brann–Universitatea Cluj (1aa73bebe4c4): Viaplay bekreftet som eksklusiv norsk Conference League-kringkaster t.o.m. 2026/27 (nettavisen.no; Viaplay/TV 2-fellesavtalen gjør den også tilgjengelig på TV 2 Play). Kanal Viaplay beholdt.",
-    "Birmingham City–Barcelona (94d50a2dabef): fre 31. juli 19.45 lokal (18.45 UTC) + St Andrew's @ Knighthead Park bekreftet (fcbarcelona.com, tvguide.co.uk). Ingen bekreftet norsk kringkaster — treningskamp vist globalt på Barça Play/YouTube; streaming holdt ærlig tom (validator-advarsel akseptert for treningskamp uten norske rettigheter).",
-    "Eliteserien/OBOS (a70ccabd05f9 Vålerenga–HamKam, a22b679262cc Bodø/Glimt–Lillestrøm, b7e1605ff4d7 Fredrikstad–Sandefjord, 8108b5ce49be Start–Viking, e75db0882adf Lyn–Sogndal, 6f292d36fbda KFUM–Kristiansund, 32abe4e40f61 Molde–Sarpsborg 08, d29db86e9d0a Aalesund–Tromsø, c57e9c0e13a3 Brann–Rosenborg): kanal TV 2 Play bekreftet mot rettighetskartet [solid] + Viaplay/TV 2-fellesavtalen; datoer mot eliteserien.no/fotball.no-terminliste. Verifisert på rettighets-/terminliste-laget, ikke per-kamp fetch. Tvkampen listet dem ikke enda (utenfor i-dag+2-vinduet ved henting).",
-    "Union Saint-Gilloise–Bodø/Glimt (ddccb5e09bfd): CL-kvalik → TV 2 Play bekreftet mot fellesavtalen + NRKs kamptidspunkt-sak.",
-    "Hradec Králové–Tromsø (0533548fa204): eksistens/dato bekreftet mot uefa.com; VG TV beholdt (klubbspesifikk evidens til.no/nordlys.no for norske klubbers tidlige EL-kvalik — merk usikkerhet mot fellesavtalens Viaplay/TV 2-generalpakke).",
-    "Saint Louis Rapid & Blitz 2026 (b8078badf6d7): IKKE re-verifisert denne runden (verifisert 27.07, evidens solid grandchesstour.org); lot stå urørt — utenfor de 18 checked.",
-    "8 kalibreringslinjer lagt til (boardWasProvisional satt på Danmark Rundt-streaming der kilden hevet et provisorisk «ikke bekreftet»-anslag til en bekreftet kanal)."
+    "US Open (tennis, in-progress): fylte inn Casper Ruud i norwegianPlayers (19. seed, aktiv i 1. runde per Wikipedia/usopen.org) og korrigerte venue fra TBD til USTA Billie Jean King National Tennis Center, Flushing Meadows, New York. Markert amended.",
+    "Vuelta a España 2026 (cycling, in-progress): etappe 5 (26. aug, Falset–Roquetes) bekreftet; Uno-X-nordmennene fortsatt i rittet, ingen exits funnet — HBO Max (Sport) bekreftet. Ingen endring (allerede verifisert 25. aug).",
+    "Viking–Dinamo Zagreb (football, 26. aug): avspark 19:00 UTC og TV 2 Play (norsk europacup-rettighet) bekreftet mot foxsports/livesoccertv. Ingen endring.",
+    "Grand Chess Tour Finals (chess): pågår til 27. aug, arrangørkilde bekrefter. Ingen endring.",
+    "US Open singles-'2. runde exit'-treff i søk stammer fra 2025 (amNewYork-URL 8-27-25); ikke brukt — Ruud er aktiv i 2026-trekningen.",
+    "Resterende ai-research-hendelser neste 7 dager var alt verifisert 20.-24. aug med 'confirmed'-status; ingen tentative kanaler, tomme knockout-oppsett eller motstridende provenance funnet denne runden."
   ]
 }

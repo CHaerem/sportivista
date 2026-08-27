@@ -29,6 +29,22 @@ describe("norwegianRights", () => {
 	it("unknown competition → no guess (empty)", () => {
 		expect(norwegianRights({ sport: "football", tournament: "Some Friendly" })).toEqual([]);
 	});
+	it("Norwegian club's European qualifier → decline to guess (don't clobber the local free holder)", () => {
+		// The Glimt/Brann/Tromsø revert-war: early qualifiers are sub-licensed free
+		// to Direktesport/Amedia/VG, so a confident Viaplay/TV 2 here overwrites the
+		// researched channel every rebuild. norwegian:true ⇒ return [] and stand down.
+		expect(norwegianRights({ sport: "football", tournament: "UEFA Champions League 2026/27 (kvalifisering)", norwegian: true })).toEqual([]);
+		expect(norwegianRights({ sport: "football", tournament: "UEFA Conference League 2026/27 (kvalifisering)", norwegian: true })).toEqual([]);
+		expect(norwegianRights({ sport: "football", tournament: "UEFA Europa League 2026/27 (kvalifisering)", norwegian: true })).toEqual([]);
+	});
+	it("foreign-vs-foreign European qualifier (no Norwegian club) → aggregator mapping still applies", () => {
+		// The carve-out is gated on norwegian:true, so a generic qualifier is unchanged.
+		expect(norwegianRights({ sport: "football", tournament: "UEFA Conference League 2026/27 (kvalifisering)" })[0].platform).toBe("Viaplay");
+		expect(norwegianRights({ sport: "football", tournament: "UEFA Champions League 2026/27 (kvalifisering)" })[0].platform).toBe("TV 2 Play");
+	});
+	it("Norwegian club in the Champions League GROUP stage → still TV 2 (only qualifiers are carved out)", () => {
+		expect(norwegianRights({ sport: "football", tournament: "UEFA Champions League 2026/27", norwegian: true })[0].platform).toBe("TV 2 Play");
+	});
 });
 
 describe("normalizeStreaming", () => {
@@ -44,6 +60,27 @@ describe("normalizeStreaming", () => {
 	it("leaves esports free streams untouched", () => {
 		const s = normalizeStreaming({ sport: "esports", streaming: [{ platform: "Twitch" }] });
 		expect(s[0].platform).toBe("Twitch");
+	});
+	it("keeps the researched local free holder on a Norwegian club's qualifier (Tromsø–Cluj revert-war)", () => {
+		// The whole point of the carve-out: Direktesport must survive rather than be
+		// overwritten by a re-derived Viaplay AND rather than be filtered out as
+		// "foreign" — so Direktesport is now a recognised Norwegian holder.
+		const s = normalizeStreaming({
+			sport: "football",
+			tournament: "UEFA Conference League 2026/27 (kvalifisering)",
+			norwegian: true,
+			streaming: [{ platform: "Direktesport", url: "https://www.direktesport.no/tromso-cfr-cluj" }],
+		});
+		expect(s.map((c) => c.platform)).toEqual(["Direktesport"]);
+	});
+	it("keeps VG+ Sport / Avisa Nordland on a Norwegian club's qualifier and drops any foreign leftover", () => {
+		const s = normalizeStreaming({
+			sport: "football",
+			tournament: "UEFA Champions League 2026/27 (kvalifisering)",
+			norwegian: true,
+			streaming: [{ platform: "Direktesport / Avisa Nordland" }, { platform: "VG+ Sport" }, { platform: "ESPN" }],
+		});
+		expect(s.map((c) => c.platform)).toEqual(["Direktesport / Avisa Nordland", "VG+ Sport"]);
 	});
 });
 
@@ -73,6 +110,25 @@ describe("golf rights are tiered for 2026 (not a flat Viaplay)", () => {
 	it("The Masters + PGA Championship → Warner Bros. Discovery", () => {
 		expect(normalizeStreaming({ sport: "golf", title: "The Masters" })[0].platform).toBe("Discovery+");
 		expect(normalizeStreaming({ sport: "golf", title: "PGA Championship" })[0].platform).toBe("Discovery+");
+	});
+	it("an unclassifiable golf event does NOT get force-mapped to PGA/HBO Max — it keeps its own researched Norwegian streaming (visual-qa 2026-08-13: Danish Golf Championship, a DP World event, was wrongly shown on HBO Max)", () => {
+		// A DP World Tour event carrying only its title (as an AI-research event does,
+		// with no "DP World Tour" tour tag in tournament/meta) used to fall through to
+		// the PGA default and get its correct Viaplay clobbered to HBO Max.
+		const s = normalizeStreaming({
+			sport: "golf",
+			title: "Danish Golf Championship",
+			streaming: [{ platform: "Viaplay", url: "https://viaplay.no/no-no/sport" }],
+		});
+		expect(s.map((c) => c.platform)).toEqual(["Viaplay"]);
+		expect(s.some((c) => c.platform === "HBO Max (Sport)")).toBe(false);
+	});
+	it("a non-PGA tour we don't map (LPGA / Ladies European / Solheim) is left empty rather than guessed as PGA/HBO Max", () => {
+		expect(normalizeStreaming({ sport: "golf", title: "Solheim Cup 2026", streaming: [] })).toEqual([]);
+		expect(normalizeStreaming({ sport: "golf", title: "AIG Women's Open", streaming: [] })).toEqual([]);
+	});
+	it("ordinary PGA Tour is still HBO Max when the tour tag is present (the fetcher stamps meta/tournament 'PGA Tour' on every PGA event)", () => {
+		expect(normalizeStreaming({ sport: "golf", meta: "PGA Tour", title: "FedEx St. Jude Championship" })[0].platform).toBe("HBO Max (Sport)");
 	});
 });
 

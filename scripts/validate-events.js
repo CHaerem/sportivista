@@ -16,6 +16,64 @@ export function loadEventSchema() {
 	return _schemaCache;
 }
 
+// ── Summary↔streaming coherence (soft) ──────────────────────────────────────
+// The research grader repeatedly (6+ runs) hit a class of bug a mechanical assert
+// should own instead of an expensive LLM pass: an event's human-facing `summary`
+// DESIGNATES a Norwegian viewing channel ("Vises på VG+ Sport", "Norsk visning:
+// TV 2") that the structured `streaming[]` does NOT carry — a self-contradiction
+// the reader sees directly. Two real cases it would have caught: Toppidrettsveka
+// (streaming[]=NRK, prose said «Vises på VG+ Sport») and the Brann/Lillestrøm
+// returlegg wrong-channel bug that survived six "fixed" notes. We parse ONLY the
+// designated-viewing clause — the fragment after a "hvor kan jeg se det" marker,
+// up to the next sentence break — NOT every channel the prose mentions in passing
+// (that false-fires on every "primary + secondary/contrast" line). Counted as a
+// WARNING (the WP-246/WP-242 pattern), never a build-breaking error.
+const NB_CHANNELS = [
+	["NRK", /\bnrk\b/i],
+	["TV 2", /\btv\s?2\b/i],
+	["Viaplay", /\bviaplay\b|\bv sport\b/i],
+	["VG+ Sport", /\bvg\s?\+|\bvgtv\b/i],
+	["Max", /\bhbo\s?max\b|\bmax\b/i],
+	["Discovery+", /discovery\+/i],
+	["Eurosport", /eurosport/i],
+	["Direktesport", /direktesport/i],
+	["Twitch", /\btwitch\b/i],
+	["YouTube", /\byoutube\b/i],
+	["Kick", /\bkick\b/i],
+];
+const VIEW_MARKER = /(?:norsk visning|vises(?:\s+gratis)?(?:\s+direkte)?(?:\s+på)?|sendes(?:\s+på)?|kan (?:du )?ses? på|vist på)\s*:?\s*/i;
+
+/** The designated-viewing clause of a summary: the fragment after the first
+ * "hvor kan jeg se det" marker, up to the next sentence break (. or newline). */
+function viewingClause(summary) {
+	const m = VIEW_MARKER.exec(summary || "");
+	if (!m) return "";
+	return summary.slice(m.index + m[0].length).split(/[.\n]/)[0] || "";
+}
+
+/**
+ * Norwegian channels the summary's designated-viewing clause names but the
+ * structured `streaming[]` omits — the summary↔streaming self-contradiction.
+ * Returns [] unless the event actually has a non-empty streaming[] (an empty
+ * one is the separate, already-counted "streaming missing" gap, not a lie).
+ */
+export function summaryChannelMismatches(ev) {
+	const streaming = Array.isArray(ev.streaming) ? ev.streaming : [];
+	if (!streaming.length || !ev.summary) return [];
+	const clause = viewingClause(ev.summary);
+	if (!clause) return [];
+	const platformStr = streaming.map((s) => (s && s.platform) || "").join(" | ");
+	const out = [];
+	for (const [name, re] of NB_CHANNELS) {
+		const m = re.exec(clause);
+		if (!m || re.test(platformStr)) continue;
+		// negation guard: "…ikke på TV 2" designates the OPPOSITE, not a viewing home
+		if (/\bikke\b[^.]{0,15}$/i.test(clause.slice(0, m.index))) continue;
+		out.push(name);
+	}
+	return out;
+}
+
 /**
  * Core validation, pure: no filesystem writes, no process.exit. Used by this
  * CLI (validating events.json on disk) AND by build-events.js's in-process
@@ -37,6 +95,7 @@ export function validateEvents(events, eventSchema, { now = Date.now() } = {}) {
 	let streamingLandingOnly = 0;
 	let timeBasisWeak = 0;
 	let channelBasisWeak = 0;
+	let summaryChannelMismatch = 0;
 	const cutoff = now - GRACE_WINDOW_MS; // allow tiny grace window
 	const seenKeys = new Set();
 	for (const ev of events) {
@@ -132,6 +191,16 @@ export function validateEvents(events, eventSchema, { now = Date.now() } = {}) {
 			const kinds = (Array.isArray(ev.streaming) ? ev.streaming : []).map((s) => s && s.urlKind);
 			if (kinds.includes("landing") && !kinds.includes("deep")) streamingLandingOnly++;
 		}
+		// Summary↔streaming coherence (soft): the summary's designated-viewing
+		// clause must not name a Norwegian channel the structured streaming[]
+		// omits (the Toppidrettsveka / Brann-Lillestrøm class). Every source, not
+		// just ai-research — a wrong static-pipeline channel contradicts prose too.
+		const chanMismatch = summaryChannelMismatches(ev);
+		if (chanMismatch.length) {
+			summaryChannelMismatch++;
+			const platforms = (Array.isArray(ev.streaming) ? ev.streaming : []).map((s) => s && s.platform).join(", ");
+			messages.push(`Summary↔streaming mismatch for ${key}: viewing clause names ${chanMismatch.join(", ")} but streaming[] = [${platforms}]`);
+		}
 		// Formal schema check (scripts/config/events.schema.json) — catches shape
 		// drift (wrong types, bad enums) that the ad-hoc checks above don't cover.
 		const schemaErrors = validateAgainstSchema(ev, eventSchema, eventSchema);
@@ -151,7 +220,7 @@ export function validateEvents(events, eventSchema, { now = Date.now() } = {}) {
 		}
 	}
 	const enrichedCount = events.filter((e) => e.importance != null).length;
-	return { errors, streamingMissing, streamingLandingOnly, timeBasisWeak, channelBasisWeak, enrichedCount, messages };
+	return { errors, streamingMissing, streamingLandingOnly, timeBasisWeak, channelBasisWeak, summaryChannelMismatch, enrichedCount, messages };
 }
 
 function main() {
@@ -175,7 +244,7 @@ function main() {
 		process.exit(1);
 	}
 
-	const { errors, streamingMissing, streamingLandingOnly, timeBasisWeak, channelBasisWeak, enrichedCount, messages } = validateEvents(events, eventSchema);
+	const { errors, streamingMissing, streamingLandingOnly, timeBasisWeak, channelBasisWeak, summaryChannelMismatch, enrichedCount, messages } = validateEvents(events, eventSchema);
 	for (const m of messages) console.warn(m);
 	if (streamingMissing > 0) {
 		console.warn(`Streaming info missing on ${streamingMissing} near-term AI-research event(s) — "hvor kan jeg se det" unanswered.`);
@@ -188,6 +257,9 @@ function main() {
 	}
 	if (channelBasisWeak > 0) {
 		console.warn(`Weak channel basis on ${channelBasisWeak} high-confidence AI-research event(s) — the channel is not backed by the broadcaster's own source (WP-242).`);
+	}
+	if (summaryChannelMismatch > 0) {
+		console.warn(`Summary↔streaming mismatch on ${summaryChannelMismatch} event(s) — the summary's viewing clause names a Norwegian channel the structured streaming[] omits (the Toppidrettsveka / Brann-Lillestrøm class). Reconcile prose and streaming[].`);
 	}
 	console.log(`Validated ${events.length} events with ${errors} error(s). ${enrichedCount} enriched.`);
 	if (errors) process.exit(1);

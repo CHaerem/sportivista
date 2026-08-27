@@ -1,342 +1,118 @@
 [
   {
-    "runAt": "2026-07-29T16:18:00.000Z",
+    "runAt": "2026-08-20T12:41:22.000Z",
     "verdict": "quiet",
-    "reason": "RSS: transfer gossip (Barcola Liverpool, Horn Myhre Spanish interest, Chelsea/Arsenal signings—transfer season noise, no event impact), FIFA VM governance disputes (Infantino plans, NFF/UEFA criticism—no schedule/broadcasting changes), past-tense results (British Open final, World Cup final archived—already covered, no changes), injury news (Evjen knee, Falchener injury—no upcoming event changes), golf announcement (Battle of the Vikings Hovland/Reitan vs Denmark captains from 2027, week 29—future event, not imminent). Coverage gaps: entity mentions (Hovland, Reitan, Premier League clubs, La Liga) all in transfer/legacy/future context, no imminent concrete events. Anomaly: esports.json stale-retained for 37 runs (3 days)—redundant given Liquipedia CS2 coverage and research agent handles 100 Thieves focus-matches. No schedule changes, broadcaster announcements, 100 Thieves CS2 match hints, or imminent new events detected.",
+    "reason": "RSS (33 items, 12:41 UTC): transfer-season noise (Noah Holm baby news, football transfers/previews, Verstappen contract renewal—no schedule/time/venue/streaming/broadcaster impact). Past results (Bodø/Glimt results, Viking playoff draw, Celtic Champions League, various results—all already tracked, no changes). Governance/personal news (athlete personal news—no event-schedule impact). Coverage gaps (7 entity/tracked-claim, 1 anomaly, 0 imminent-concrete new signals): Eliteserien/Mesterligaen/Formel 1 (entity gaps from transfer/governance context, imminent=false—not concrete upcoming-event signals); Håvard «rain» Nygaard/esports (tracked athlete, no imminent event signal in RSS); Sondre Guttormsen/Henriette Jæger/athletics (tracked athletes, claimedDate 2026-09-05—16 days out, not imminent). Anomalies (1): esports.json stale-retained (109 consecutive runs, 5 days, HIGH—infrastructure issue for self-repair/coverage-critic domain, not a new-event scout signal). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting tracked events, no 100 Thieves CS2 match hints, no tracked athlete imminent event changes, or concrete new upcoming events requiring escalation. Prior escalations (Ingebrigtsen 2026-08-18 06:37 UTC, Eliteserien 2026-08-17 08:38 UTC) already in-flight; no new signals warrant escalation. Escalation cap today: 0/2 UTC.",
     "signals": []
   },
   {
-    "runAt": "2026-07-27T16:02:06.490Z",
-    "verdict": "quiet",
-    "reason": "RSS: transfer gossip (Rodri Real Madrid interest, Barcola rumours—no schedule/streaming impact), opinion pieces (World Cup mailbag, football daily column), past pre-season coverage (Wigan training). Coverage gaps: all entity mentions in transfer/opinion content, not imminent concrete events. No schedule changes, broadcaster announcements, 100 Thieves CS2 match hints detected.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-20T10:56:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup final wrap-up (Messi/Mbappé final—results done, no upcoming events), past-tense sports results (Pidcock Tour de France penalty—not schedule-impacting, Reitan British Open final result—already tracked), transfer gossip (HamKam signings), injury news (Casper Ruud ATP withdrawal—already covered, no upcoming event change), F1 engine politics (no schedule impact), Bodø/Glimt Champions League draw announcement (upcoming match but not tracked as high-priority team—coverage-critic will evaluate). Coverage gaps: all refer to past results or existing tracked events; no new concrete upcoming events requiring escalation. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints detected.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-20T07:56:28.905Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup final wrap-up (Messi/Mbappé final—results done, no upcoming events), past-tense sports results (Antonelli F1 Belgium win, Tour stage results, British Open final round), transfer gossip (HamKam, Lillestrøm signings), celebrity/sports commentary (Haaland social media, Trump VM coverage). Coverage gaps: all past-tense or existing tracked events (Kristoffer Reitan British Open result, British Open/Formel 1/Fotball-VM all past tournament/race, Viktor Hovland Aug 16 claim is low-severity for coverage-critic), chess file-empty (low-severity, expected). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events detected.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-19T22:15:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: World Cup final wrap-up (Messi/Mbappé final—results done, no upcoming events), Belgium GP race results (Antonelli win—past race, no changes), Tour de France stage 14 results (Vingegaard crash/withdrew—injury news, not schedule-impacting), F1 personnel moves (Red Bull scout/race engineer—staffing changes, no schedule impact), transfer gossip (HamKam/Lillestrøm signings), British Open final round (Reitan—already tracked, no changes). Coverage gaps: British Open (Reitan past result), Kristoffer Reitan (past result), VM 2026 (tournament over, past results), Fotball-VM (past results), Viktor Hovland (tracked-claim gap for Aug 16—low severity, coverage-critic will triage). Chess low-severity file-empty anomaly expected. No schedule changes, broadcaster announcements, 100 Thieves CS2 match hints, or new concrete upcoming events detected.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-19T20:55:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: World Cup final wrap-up (Messi/Mbappé final—results done, no upcoming events), Belgium GP race results (Antonelli win—past race, no changes), Tour de France stage 14 results (Vingegaard crash/withdrew—injury news, not schedule-impacting), F1 personnel moves (Red Bull scout/race engineer—staffing changes, no schedule impact), transfer gossip (HamKam/Lillestrøm signings), British Open final round (Reitan—already tracked, no changes). Coverage gaps: all past-tense or existing tracked events; chess anomaly is recurring/expected. No schedule changes, broadcaster announcements, 100 Thieves CS2 match hints, or new concrete upcoming events detected.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-19T15:55:29.850Z",
-    "verdict": "quiet",
-    "reason": "RSS: World Cup final pre-match (Messi/Mbappé tomorrow tracked—no changes), Belgian GP race results (Antonelli win, Hamilton mechanical drama—past), Tour de France stage 14/15 results (Vingegaard crash/withdrawal—injury news, not schedule change), F1 personnel moves (Red Bull hiring—non-schedule), transfer news (HamKam sales, Lillestrøm signings), British Open round 3 (Reitan tracked—no changes), rally/sports results. Coverage gaps: British Open (ongoing, already tracked), Formel 1 (Belgian GP today tracked—no changes), Fotball-VM (past bronze final—no imminent events), chess (low-severity file-empty). No schedule changes, broadcaster announcements, 100 Thieves CS2 hints, or concrete new upcoming events. Escalation cap: 0/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-20T13:29:51.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (Messi/Mbappé final results archived, no upcoming events), past results (Pidcock Tour penalty—not schedule-impacting, Reitan British Open final—already tracked), transfer gossip (Chelsea/Arsenal), injury news (Casper Ruud ATP withdrawal—already covered), F1 engine/personnel politics (no schedule impact), Bodø/Glimt/Brann/Tromsø Champions League/Europa League draws (upcoming qualifiers but not tracked high-priority teams). Coverage gaps: all non-imminent or already known (Viktor Hovland Aug 16 tracked-claim is low-severity for coverage-critic). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events detected.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-20T15:32:00.563Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (Messi/Mbappé final—results done, no upcoming events), past-tense sports results (Pidcock Tour penalty—not schedule-impacting, Reitan British Open final—already tracked), transfer gossip (Chelsea/Arsenal signings), injury news (Casper Ruud ATP withdrawal—already covered), F1 engine/personnel politics (no schedule impact), Bodø/Glimt/Brann/Tromsø Champions League/Europa League draws (upcoming qualifiers but not tracked high-priority teams—coverage-critic will triage). Coverage gaps: all non-imminent or already known; Viktor Hovland Aug 16 tracked-claim is low-severity. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints detected.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-20T16:30:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (Messi/Mbappé final—results archived), past-tense sports results (Pidcock Tour penalty—not schedule-impacting, Reitan British Open final—already tracked), transfer gossip (Zlatan Ibrahimović retirement—no event impact, Brann/Bodø/Glimt/Tromsø draw confirmations—already tracked or low-priority, Kevin Keegan death—legacy coverage, no upcoming events). Coverage gaps: all non-imminent or already known (Viktor Hovland Aug 16 low-severity). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints detected. Escalation cap: 0/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-20T17:59:08.875Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (Messi/Mbappé final—results archived), past-tense sports results (Pidcock Tour penalty—not schedule-impacting, Reitan British Open final—already tracked), transfer gossip (Zlatan Ibrahimović TV retirement, Kevin Keegan death—legacy coverage, no upcoming events), injury news (Casper Ruud ATP withdrawal—already covered), F1 engine/personnel politics (no schedule impact), Bodø/Glimt/Brann/Tromsø Champions League/Europa League draws (upcoming qualifiers but low-priority teams). Coverage gaps: Bodø/Glimt CL-qualifying imminent gap noted (coverage-critic will triage per CLAUDE.md rules); Viktor Hovland Aug 16 tracked-claim remains low-severity. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or new concrete upcoming events requiring escalation detected.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-20T20:51:39.968Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (Messi/Mbappé final—results archived, no upcoming events), past-tense sports results (Pidcock Tour penalty—not schedule-impacting, Reitan British Open final—already tracked), transfer gossip (Zlatan Ibrahimović TV retirement, Kevin Keegan death—legacy coverage, no upcoming events), injury news (Casper Ruud ATP withdrawal—already covered), F1 engine/personnel politics (no schedule impact), Bodø/Glimt/Brann/Tromsø Champions League/Europa League draws (upcoming qualifiers but coverage-critic will triage per CLAUDE.md rules). Coverage gaps: Bodø/Glimt CL-qualifying imminent gap is assigned to coverage-critic; Viktor Hovland Aug 16 tracked-claim remains low-severity. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or new concrete upcoming events requiring escalation detected.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-20T21:30:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (Messi/Mbappé final—results archived, no upcoming events), past-tense sports results (Pidcock Tour penalty—not schedule-impacting, Reitan British Open final—already tracked), transfer gossip (Zlatan Ibrahimović TV retirement, Kevin Keegan death—legacy coverage), injury news (Casper Ruud ATP withdrawal—already covered), F1 engine/personnel politics (no schedule impact). Coverage gaps: Bodø/Glimt CL-qualifying imminent gap (assigned to coverage-critic per CLAUDE.md rules); Viktor Hovland Aug 16 tracked-claim low-severity. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or new concrete upcoming events requiring escalation detected.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-21T07:35:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (Messi/Mbappé final—results archived, no upcoming events), past-tense sports results (Vingegaard Tour de France crash/withdrawal—injury news, not schedule-impacting, Pidcock penalty—already known), transfer gossip (Zlatan retirement, Kevin Keegan death—legacy coverage, no upcoming events), injury news (Falchener strekkskade—no upcoming event change), F1 engine/personnel politics (no schedule impact). Coverage gaps: Bodø/Glimt CL-qualifying imminent gap (coverage-critic assigned); Viktor Hovland Aug 16 tracked-claim remains low-severity. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or new concrete upcoming events requiring escalation detected.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-21T10:48:03.378Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (results archived, no upcoming events), past-tense results (Pidcock Tour penalty, Reitan British Open—not schedule-impacting), transfer gossip (HamKam Porto, City auction), injury news (Casper Ruud—already covered). Coverage gaps: all entity mentions refer to past results or existing tracked events (Warholm NM—tracked event, Bodø/Glimt/Manchester City—existing events); Viktor Hovland Aug 16 tracked-claim is low-severity. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events detected.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-21T12:22:49.742Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (results archived, no upcoming events), past-tense results (Pidcock Tour penalty, Reitan British Open—not schedule-impacting), transfer gossip (HamKam Porto, City auction), injury news (Falchener strekkskade—no upcoming event change). Coverage gaps: all entity mentions refer to past results or existing tracked events (Warholm NM confirmed to start—already tracked as Friidretts-NM, Bodø/Glimt/Manchester City/Liverpool/Premier League—existing events or legacy coverage); Viktor Hovland Aug 16 tracked-claim is low-severity. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events detected.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-21T15:17:39.892Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (results archived, no upcoming events), past-tense results (Pidcock Tour penalty, Reitan British Open—not schedule-impacting, McNulty/Foss Tour de France incidents—injury/status news, not schedule-impacting), transfer gossip (HamKam comeback, Molde signings, City auction), memorial coverage (Olaf Tufte death, Kevin Keegan death—legacy, no upcoming events). Coverage gaps: all entity mentions refer to past results or existing tracked events (Molde/Manchester City/Premier League/Eliteserien/1. divisjon/Fotball-VM—news mentions but no imminent event signals); Viktor Hovland Aug 16 tracked-claim remains low-severity. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events detected. Escalation cap: 0/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-21T16:58:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (results archived, no upcoming events), past-tense results (McNulty crash, Foss illness—injury/status news, not schedule-impacting, Pidcock Tour penalty, Reitan British Open—already known), transfer gossip (HamKam signings, City auction—no upcoming event impact), memorial coverage (Olaf Tufte death, Kevin Keegan death—legacy, no upcoming events), F1 junior commentary (no schedule impact), TV event promotion (Strømsgodset charity match invitation—local event, not tracked priority). Coverage gaps: all entity mentions refer to past results or existing tracked events (Molde/Manchester City/Premier League/Eliteserien/1. divisjon/Fotball-VM/F2 2026—no imminent event signals); Viktor Hovland Aug 16 tracked-claim remains low-severity. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events detected. Escalation cap: 0/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-21T17:30:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: Tour de France ongoing (stages tracked, no changes), post-World Cup wrap-up (results archived, no upcoming events), past-tense results (Evenepoel stage win, McNulty/Foss incidents—not schedule-impacting), memorial coverage (Olaf Tufte death, Kevin Keegan death—legacy, no upcoming events), transfer gossip (Molde/HamKam/Manchester City—no upcoming event impact), F1 junior F2 commentary (no schedule impact). Coverage gaps: all entity mentions refer to past results, ongoing tracked events, or non-imminent coverage (Molde/Manchester City/Premier League/Eliteserien/1. divisjon/Fotball-VM—no concrete imminent signals); Viktor Hovland Aug 16 tracked-claim remains low-severity. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or new concrete upcoming events detected. Escalation cap: 0/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-21T19:17:03.228Z",
-    "verdict": "quiet",
-    "reason": "RSS: Tour de France stage 16 ongoing (Evenepoel win, Foss illness—injury status update, not schedule-impacting), post-World Cup wrap-up (results archived, no upcoming events), past-tense results (McNulty crash—injury news, Pidcock penalty—not schedule-impacting, Reitan British Open—already tracked), memorial coverage (Olaf Tufte death—legacy, no upcoming events), transfer gossip (HamKam/Molde signings, City auction—no upcoming event impact), sports commentary (Kevin Keegan death, Warholm NM already tracked/confirmed). Coverage gaps: all entity mentions refer to past results or existing tracked events (Molde/Manchester City/Premier League/Eliteserien/Fotball-VM—no imminent event signals); Viktor Hovland Aug 16 tracked-claim remains low-severity. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-21T22:33:11.680Z",
-    "verdict": "quiet",
-    "reason": "RSS: Tour de France stage 16 (results/ongoing, no changes), chess/F2 commentary, transfer gossip, obituaries (Tufte/Keegan—legacy, no events), pregnancy announcements, Brandon McNulty incident (not schedule-changing). Coverage gaps: all non-imminent or already known to coverage-critic. No schedule changes, broadcaster announcements, or 100 Thieves CS2 match hints detected. Escalation cap: 0/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-22T07:32:29.921Z",
-    "verdict": "quiet",
-    "reason": "RSS: Tour de France ongoing (no changes), past-tense results (Reitan British Open final—already tracked), transfer gossip (Chelsea Rogers, HamKam Niang, Danilo—transfer season noise, no event impact), injury/incident news (Foss Tour illness, McNulty car collision—not schedule-impacting), obituaries (Olaf Tufte death—legacy, no events), F1 personnel (Red Bull succession—no schedule impact), chess announcement (Budapest Total Chess WC November 2026—far future, low-priority). Coverage gaps: Molde/Manchester City/Premier League/Eliteserien/Fotball-VM mentions are all transfer/legacy content, no imminent event signals; Viktor Hovland Aug 16 tracked-claim remains low-severity. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-22T13:01:38.509Z",
-    "verdict": "quiet",
-    "reason": "RSS: Tour de France ongoing stage 17 (Abrahamsen breakaway attempt noted—no schedule changes), Glimt CL qualifier times confirmed (already announced, not news-broken), post-World Cup wrap-up (results archived, no upcoming events), past-tense results (Pidcock/Reitan—already tracked, not schedule-impacting), transfer gossip (Chelsea/HamKam/Liverpool signings—transfer season noise, no event impact), injury/incident news (no schedule-impacting), obituaries (legacy, no events), F1 personnel/commentary (no schedule impact), memorial coverage (Olaf Tufte death—legacy). Coverage gaps: Bodø/Glimt/RBK/Molde/Liverpool/Manchester City/Premier League/Eliteserien/Fotball-VM mentions all refer to transfer/legacy content or events already on board; Viktor Hovland Aug 16 tracked-claim remains low-severity. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 1/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-22T15:25:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: Tour de France ongoing (no changes), post-World Cup wrap-up (results archived, no upcoming events), transfer gossip (Chelsea/Liverpool/RBK/Molde/Eliteserien signings—transfer season noise, no event impact), injury news (Foss illness, McNulty incident—not schedule-impacting), obituaries (Olaf Tufte death—legacy, no upcoming events). Coverage gaps: RBK/Liverpool/Premier League/Eliteserien/Mesterligaen/Viktor Hovland mentions all non-imminent or already known (Viktor Hovland Aug 16 tracked-claim remains low-severity). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 1/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-22T17:00:35.907Z",
-    "verdict": "quiet",
-    "reason": "RSS: Tour de France ongoing (no changes), post-World Cup wrap-up archived, transfer gossip (Hjertø-Dahl/Liverpool—transfer season noise), obituaries (Olaf Tufte—legacy, no events), Glimt CL times confirmed yesterday (no breaking news), injury news (Foss—not schedule-impacting), Viktor Hovland Aug 16 tracked-claim remains low-severity. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-22T17:14:33.810Z",
-    "verdict": "quiet",
-    "reason": "RSS: Tour de France ongoing (no changes), post-World Cup wrap-up archived, transfer gossip (Chelsea/Liverpool/RBK signings—transfer season noise, no event impact), injury news (Falchener strekkskade—not schedule-impacting), obituaries (Olaf Tufte, Kevin Keegan—legacy, no events). Coverage gaps: RBK/Real Madrid/Liverpool/Premier League/Mesterligaen/Viktor Hovland mentions all non-imminent or already known (Eliteserien gap entry is transfer-related; Viktor Hovland Aug 16 tracked-claim remains low-severity). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 1/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-22T19:13:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: Tour de France ongoing stage 17 (no schedule changes), post-World Cup wrap-up archived, past-tense results (Glimt 3–0 vs HamKam, Viking 2–0 vs LSK—results, not imminent events), transfer gossip (Chelsea/Liverpool/Molde/RBK signings—transfer season noise, no event impact), sports commentary (Haaland World Cup fan vote—past tournament, no events), Tour incidents (Hushovd/Abrahamsen commentary—not schedule-impacting). Coverage gaps: RBK/Real Madrid/Liverpool/Premier League/Mesterligaen/Eliteserien/Viktor Hovland mentions all non-imminent or already known (Viktor Hovland Aug 16 tracked-claim remains low-severity for coverage-critic). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 1/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-22T22:30:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: Tour de France ongoing (no schedule changes), post-World Cup wrap-up archived, past-tense results (Glimt 3–0 HamKam, Viking 2–0 LSK—results, not upcoming events), transfer gossip (Chelsea/Liverpool/RBK signings—transfer season noise, no event impact), obituaries (Olaf Tufte, Kevin Keegan—legacy coverage, no upcoming events), injury news (Foss illness, McNulty incident, Falchener—not schedule-impacting). Coverage gaps: RBK/Real Madrid/Liverpool/Premier League/Mesterligaen/Eliteserien/Viktor Hovland mentions all non-imminent or already tracked (Viktor Hovland Aug 16 tracked-claim remains low-severity). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-23T08:34:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (Riise to Dubai project—no upcoming events, Klopp Germany job—legacy commentary, no events), transfer gossip (Ødegaard speculation, Casemiro to Inter Miami confirmed—transfer season noise, no event impact), past results (Patrick Berg return to Bodø/Glimt noted—not schedule-impacting), injury/career news (Vilde Humstad comeback hopes, Arokodare Wolves drama—not schedule-impacting), sports results (Wolves training cancellation—not a scheduled event). Coverage gaps: RBK/Real Madrid/Liverpool/Premier League/Mesterligaen/Eliteserien/Viktor Hovland mentions all non-imminent or existing tracked events; all gap entries refer to past results or transfer-related content (no imminent event signals). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 1/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-23T10:30:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: injury news (Rodri/Manchester City back injury, William Saliba/Arsenal back injury—both post-World Cup squad losses, not schedule-impacting), post-World Cup wrap-up (World Cup hosting retrospective—results archived, no upcoming events), transfer gossip (Liverpool/Bezos consortium talks, Barcelona women exodus—transfer season noise, no event impact), opinion pieces (World Cup commercial criticism, amputee World Cup funding—legacy/advocacy coverage, no concrete upcoming events). Coverage gaps: Manchester City/Arsenal/Liverpool/Premier League mentions all refer to injury/transfer news without upcoming schedule changes; Viktor Hovland Aug 16 tracked-claim remains low-severity (4+ weeks out, coverage-critic will triage). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 1/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-23T13:11:44.400Z",
-    "verdict": "quiet",
-    "reason": "RSS: Tour de France stage results (Philipsen win, Hushovd/Jonas banter—results only, no schedule changes), post-World Cup wrap-up (Messi/Mbappé final archived, legacy pieces), transfer gossip (Camavinga/Berge rumors, Ødegaard speculation, Adeyemi Barcelona confirmed, Casemiro MLS confirmed—transfer season noise, no event impact), injuries (Rodri/Man City back, William Saliba/Arsenal back, Maria Thorisdottir endurance illness—squad losses, not schedule-impacting), Eliteserien results (Viking 2–0 Lillestrøm, Bodø/Glimt 3–0 HamKam—past results), Rosenborg vs Manchester United tickets (sales news, no date/time change), Olaf Tufte death (rower legacy, no upcoming events). Coverage gaps: all refer to injuries/transfers/results or non-imminent tracked entities; Viktor Hovland Aug 16 tracked-claim remains low-severity. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 1/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-23T15:06:55.571Z",
-    "verdict": "quiet",
-    "reason": "RSS: injury news (Rodri/Manchester City back injury, William Saliba/Arsenal back injury—squad losses, not schedule-impacting), post-World Cup wrap-up (legacy commentary, no upcoming events), transfer gossip (Arsenal Tzolis, Barcelona Adeyemi, Manchester United Camavinga/Berge, Liverpool Iraola interview—transfer season noise, no event impact), Olaf Tufte funeral (legacy, no events), Tour de France incident (spectator wave—not schedule-impacting), MLS Casemiro inquiry (administrative, no schedule changes). Coverage gaps: all refer to injuries/transfers or non-imminent entities; Viktor Hovland Aug 16 tracked-claim remains low-severity (coverage-critic assigned). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-23T15:30:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (legacy commentary, no upcoming events), injury news (Rodri/Manchester City back injury, William Saliba/Arsenal back injury—squad losses, not schedule-impacting), transfer gossip (Arsenal Tzolis, Barcelona Adeyemi, Manchester United Camavinga/Berge, Liverpool Iraola—transfer season noise, no event impact), Olaf Tufte funeral announcement (legacy, no events), Tour de France incident (spectator wave—not schedule-impacting), MLS Casemiro inquiry (administrative, no schedule changes). Coverage gaps: all refer to injuries/transfers/results or non-imminent tracked entities; Viktor Hovland Aug 16 tracked-claim remains low-severity. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-23T18:49:05.778Z",
-    "verdict": "quiet",
-    "reason": "RSS: World Cup post-final wrap-up (results archived), past-tense sports results (Halland Tour stage, Haaland valuation, Tufte funeral), transfer gossip (Garnacho, Anderson, Tzolis, other signings), F1/cycling stage results. Coverage gaps: all non-imminent entity references (Sagosen narrative, Molde story, team mentions in transfer news) or existing tracked events. Viktor Hovland Aug 16 tracked-claim gap is low-severity. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events detected.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-23T19:15:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: Tour de France ongoing stage 18 (Carapaz solo win—results only, no schedule changes), post-World Cup wrap-up (results archived), past-tense sports results (Pidcock/Reitan/Evenepoel/McNulty incidents—not schedule-impacting), transfer gossip (Chelsea/Arsenal/Manchester City/Liverpool signings—transfer season noise, no event impact), injury news (Foss illness, McNulty car collision—not schedule-impacting), Friidretts-NM results (Fremstad-Waldron/Ingebrigtsen wins, Embla return—results already captured). Coverage gaps: all entity references are transfer-related, past results, or non-imminent (Viktor Hovland Aug 16 tracked-claim remains low-severity for coverage-critic). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-23T21:15:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (results archived, no upcoming events), past-tense sports results (Tour de France ongoing—no schedule changes, Tufte funeral, Haaland valuation, Halland stage result), transfer gossip (Garnacho/Anderson/Tzolis/Rogers/Camavinga/Berge/Iraola—transfer season noise, no event impact), injury news (Rodri/Saliba squad losses—not schedule-impacting). Coverage gaps: all non-imminent entity references (Sagosen narrative, Molde story, Manchester City/Arsenal/Liverpool transfer mentions) or existing tracked events (Viktor Hovland Aug 16 tracked-claim remains low-severity). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-24T07:30:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (results archived, no upcoming events), past-tense sports results (Cristian Volpato cocaine positive—no event impact, Henriette Jæger NM 400m result—past result, not schedule-impacting), transfer gossip (Arsenal Tzolis, Chelsea Rogers, Manchester United transfers—transfer season noise, no event impact), injury news (Filip Ingebrigtsen NM silver—past result, not schedule-impacting), sports commentary (Otamendi Argentina retirement, chess sanction—legacy coverage, no upcoming events), Europa/Champions League draws (Bodø/Glimt/Brann/Tromsø qualifiers announced—upcoming but not tracked high-priority teams, coverage-critic will triage). Coverage gaps: all refer to past results, existing tracked events, or non-imminent entities (Viktor Hovland Aug 16 tracked-claim remains low-severity). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-24T10:15:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (results archived, no upcoming events), past-tense sports results (Cristian Volpato cocaine positive—no event impact, Henriette Jæger NM 400m result—past result, Friidretts-NM results already captured), transfer gossip (Arsenal Tzolis, Chelsea Rogers/Camavinga rumors, Barcelona Adeyemi, Manchester United/Liverpool transfers—transfer season noise, no event impact), injury news (Rodri/Saliba squad losses, Filip Ingebrigtsen NM—not schedule-impacting), sports commentary (Otamendi Argentina retirement, Klopp Germany job—legacy coverage, no upcoming events), Tufte funeral (legacy, no events). Coverage gaps: all refer to past results, existing tracked events, or non-imminent entities (Viktor Hovland Aug 16 tracked-claim remains low-severity). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-24T10:26:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (results archived, no upcoming events), past-tense sports results (Cristian Volpato cocaine positive—no event impact, Henriette Jæger NM 400m result—past result, Friidretts-NM results already captured), transfer gossip (Arsenal Tzolis, Chelsea Rogers/Camavinga rumors, Barcelona Adeyemi, Manchester United/Liverpool transfers—transfer season noise, no event impact), injury news (Rodri/Saliba squad losses, Filip Ingebrigtsen NM—not schedule-impacting), sports commentary (Otamendi Argentina retirement, Klopp Germany job—legacy coverage, no upcoming events), Tufte funeral (legacy, no events). Coverage gaps: all refer to past results, existing tracked events, or non-imminent entities (Viktor Hovland Aug 16 tracked-claim remains low-severity). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-24T12:17:30.000Z",
-    "verdict": "quiet",
-    "reason": "RSS: ongoing Tour de France stages (no changes), post-World Cup wrap-up (results archived, no upcoming events), past-tense sports results (Tour stage results, Henriette Jæger NM 400m—no schedule-impacting), transfer gossip (Arsenal/Chelsea/Barcelona/Manchester United/Liverpool signings—transfer season noise, no event impact), F1 rescheduling (Malaysia feasibility study re: 2026 Bahrain GP—future/speculative, no concrete upcoming event change), chess EU sanction (FIDE administrative, no event impact), sports commentary (Otamendi Argentina retirement, Klopp Germany job—legacy, no upcoming events). Coverage gaps: all refer to past results, non-imminent entities, or existing tracked events (Viktor Hovland Aug 16 tracked-claim remains low-severity). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-07-27T08:30:00.000Z",
+    "runAt": "2026-08-24T07:00:00.000Z",
     "verdict": "escalate",
-    "reason": "Coverage gap: Håvard «rain» Nygaard (esports/CS2 athlete) flagged as imminent (tracked-claim for 2026-07-30, only 3 days away) with no matching event on the board. Per scout rules, tracked athletes with missing imminent events warrant escalation—research should verify if a CS2 event exists for rain on or near July 30. This is a primary focus entity (100 Thieves / rain CS2 matches are explicitly call-outs in the prompt; these are announced late). All other RSS content: post-World Cup wrap-up (transfer gossip, injury/retirement news, leadership announcements), Tour de France stage results (no schedule changes), transfer season noise (no event impact). No schedule changes, broadcaster announcements, or other concrete upcoming events requiring escalation detected. Escalation cap: 0/2 today before this run.",
+    "reason": "RSS (27 items, 06:51 UTC): major new event involving tracked athlete confirmed. Ultimate Championship (Budapest, September): NRK headline 'Benjamin klar for Ultimate Championship – møter Warholm og dos Santos i stjerneduell' explicitly confirms Rai Benjamin's participation and names Warholm (tracked athlete) + dos Santos in a championship duel. The coverage-gap entity was marked imminent=false but this concrete news confirms specific high-stakes matchup. Not a stale entity gap—this is a NEW CONFIRMATION of Warholm's participation and competitive matchup. Research should find full event details (date, time, venue, streaming) for this significant track-athlete championship.",
     "signals": [
-      "imminent-tracked-entity-gap: rain/100-thieves-cs2"
+      "Ultimate Championship: Warholm confirmed participant vs dos Santos"
     ]
   },
   {
-    "runAt": "2026-07-27T12:44:35.971Z",
+    "runAt": "2026-08-25T18:35:17.166Z",
     "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (Infantino response—legacy commentary, no upcoming events), past results (AaFK vs Viking—past match), transfer gossip (Arsenal/Liverpool Bradley Barcola, Real Madrid Diomande, Barcelona/Manchester City signings—transfer season noise, no event impact), World Cup replay/mailbag (legacy, no events). Coverage gaps: entity mentions (Molde/Arsenal/Liverpool/Real Madrid/Eliteserien—all transfer-related, no imminent event signals); tracked-claim Viktor Hovland Aug 16 remains low-severity (20+ days, coverage-critic assigned); tracked-claim rain/100-Thieves escalated at 08:30 this morning—already handled. No new schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 1/2 today (already escalated on rain at 08:30).",
+    "reason": "RSS (10 items, 18:35 UTC): transfer-season/match-day noise (Man Utd Baleba signing, Man City transfer deal, Manchester City transfer rumors, Carragher Chelsea analysis, David Squires cartoon, transfer rumors—no schedule/time/venue/streaming/broadcaster impact on tracked Norwegian events). Past results and match coverage (Premier League opening weekend results, football-focused articles—already tracked, no new events). Coverage gaps (3 entity/tracked-claim, 1 anomaly): Håvard «rain» Nygaard/esports (tracked athlete, no imminent event signal in RSS); Sondre Guttormsen/Henriette Jæger/athletics (claimedDate 2026-09-05—11 days out, not imminent). Anomalies (1): esports.json stale-retained (213 consecutive runs, 11 days, HIGH—infrastructure issue for self-repair domain, not a scout new-event escalation signal). Ultimate Championship (Warholm, Benjamin, dos Santos—already escalated 2026-08-24 07:00 UTC, no new signals). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting tracked events, no 100 Thieves/rain CS2 match hints, no tracked athlete imminent event changes, no new concrete upcoming events requiring escalation. Escalation cap today (UTC): 0/2.",
     "signals": []
   },
   {
-    "runAt": "2026-07-27T17:45:00.000Z",
+    "runAt": "2026-08-25T19:28:48.216Z",
     "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (Infantino flight criticism—legacy commentary, no upcoming events), transfer gossip (Chelsea Welbeck, Manchester City Rodri contract—transfer season noise, no event impact), injury news (Glenn Hysén Parkinson's diagnosis—legacy/medical news, no event impact), Eliteserien results (Viking/AaFK draw—past match), Friidretts-EM participation confirmation (Jakob Ingebrigtsen cleared—participation news, not schedule change, already in tracked events as Athletics EM Birmingham). Coverage gaps: entity mentions (Jakob Ingebrigtsen/Ingebrigtsen/Manchester City/Real Madrid/Arsenal/Liverpool/Eliteserien—all transfer-related or non-imminent, no concrete upcoming event signals); tracked-claim BLAST Bounty 2026 S2 (100 Thieves) marked imminent (2026-07-30) with no matching event on board (LAN finals in Malta 30.07-02.08—event structure already tracked, this is normal coverage-critic triage); tracked-claim rain/100-Thieves escalated at 08:30 this morning—already handled. No new schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 1/2 today.",
+    "reason": "RSS (55 items, 19:28 UTC): live match coverage (Bodø/Glimt vs NEC Champions League playoff, Brann vs Austria Wien Champions League women's qualifier—both already tracked events, match-day reporting only, no schedule/time/venue changes). Transfer-season noise (Man Utd Baleba, Man City deals, withdrawal/trade rumors—no schedule impact on tracked events). Cycling (Vuelta a España stage 4 results, Pogačar domination—race already tracked, stage results only). Athletics commentary (Jakob Ingebrigtsen training, Sondre Guttormsen pole vault equipment feature—no new event announcements, claimedDate 2026-09-05 still 11 days out). Rowing results (Ro-VM quarterfinal—past results, no new upcoming events). Coverage gaps (8 entity/tracked-claim, 1 anomaly): Guttormsen/Mesterligaen/Nasjonsligaen/Formel 1 entity gaps all imminent=false; Series A/rain/Guttormsen/Jæger tracked-claims all non-imminent except Guttormsen/Jæger (2026-09-05, 11 days out—no new concrete event signal in RSS); esports.json stale-retained (214 runs, 11 days, HIGH—infrastructure issue for self-repair, not a scout escalation). No schedule/time/venue changes to existing events, no broadcaster announcements, no 100 Thieves/rain CS2 match hints, no tracked athlete imminent changes. Escalation cap today (UTC): 0/2.",
     "signals": []
   },
   {
-    "runAt": "2026-07-27T19:30:00.000Z",
+    "runAt": "2026-08-25T20:25:30.000Z",
     "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (Infantino critics response, Pirlo Italy job snub—legacy commentary, no upcoming events), past-tense sports results (Rosenborg 4–0 Fredrikstad—past match, not schedule-impacting, Jakob Ingebrigtsen EM participation confirmation—already tracked Athletics EM Birmingham), transfer gossip (Manchester City Rodri/Real Madrid, Chelsea Welbeck, Arsenal/Liverpool Barcola—transfer season noise, no event impact), F1 personnel (Mercedes Lagrue to Red Bull—staffing, no schedule impact), injury/medical news (Glenn Hysén Parkinson's diagnosis—legacy, no events), referee retirement (Vincic—administrative, no events). Coverage gaps: Rosenborg/Arsenal/Liverpool/Manchester City/Real Madrid—all transfer-related, no new imminent event signals; covered gaps (Jakob Ingebrigtsen EM already tracked, Friidretts-EM participation confirmed as expected). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 1/2 today.",
+    "reason": "RSS (40 items, 20:25 UTC): live match coverage (Bodø/Glimt vs NEC, Brann vs Austria Wien, Viking vs Dinamo Zagreb—all tracked playoff matches, match-day reporting only, no schedule/time/venue changes). Transfer-season noise (Man Utd Baleba/Savinho signings, Man City deals, Brighton/Tottenham trade rumors—no impact on tracked events). Cycling (Vuelta stage 4 results—race already tracked). Athletics (Ingebrigtsen commentary, Sondre/Henriette Jæger pole vault—no new event announcements). Rowing results (Ro-VM quarterfinal—past results). Coverage gaps (7 entity/tracked-claim, 1 anomaly): all imminent=false except Sondre Guttormsen/Henriette Jæger (2026-09-05, 11 days out—no new concrete RSS signal). Esports.json stale-retained (215 runs, 11 days—infrastructure issue for self-repair, not a scout escalation). No schedule changes, broadcaster announcements, 100 Thieves/rain CS2 hints, or imminent tracked-athlete events. Ultimate Championship (Warholm, already escalated 2026-08-24) needs no new signals. Escalation cap today (UTC): 0/2.",
     "signals": []
   },
   {
-    "runAt": "2026-07-27T21:30:00.000Z",
-    "verdict": "escalate",
-    "reason": "Coverage gap: Kristoffer Ventura (golf, athlete) marked imminent in coverage-gaps.json—tracked.json claims board coverage but no matching event found on the board. This is a tracked-claim gap with imminent: true (claimedDate: 2026-07-27), suggesting an upcoming tournament/competition is expected. RSS: Jakob Ingebrigtsen confirmed for friidretts-EM (participation news, not schedule change, already tracked EM event); Rosenborg 4–0 Fredrikstad (past result, not upcoming event); transfer gossip and opinion (no event impact). Escalate to research for Kristoffer Ventura golf-event verification.",
-    "signals": [
-      "Kristoffer Ventura imminent gap (tracked golf athlete with no upcoming event on board)"
-    ]
-  },
-  {
-    "runAt": "2026-07-28T08:00:00Z",
+    "runAt": "2026-08-25T21:30:00.000Z",
     "verdict": "quiet",
-    "reason": "RSS (last 24h): transfer gossip (Manchester City/Chelsea interest, John Stones to Inter—no schedule/streaming impact), personnel changes (Freyr Alexandersson Rosenborg, Red Bull Lagrue—staffing, no schedule impact), past results (Rosenborg vs Fredrikstad, World Cup wrap-up—no upcoming event changes). Entity coverage gaps (Arsenal, Liverpool, Manchester City, Rosenborg) are transfer-related noise or already tracked in events.json (Rosenborg matches, Tromsø vs Hradec scheduled 2026-07-23). Casper Ruud US Open mixed doubles with Iga Swiatek: coverage gap detected but not imminent (US Open in August). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected.",
+    "reason": "RSS (55 items, 21:25 UTC): live match coverage and result reporting (Bodø/Glimt vs NEC, Brann vs Austria Wien, Viking vs Dinamo Zagreb Champions League playoffs—all tracked events, match-day coverage only, no schedule/time/venue changes). Transfer-season noise (Man Utd Baleba, Man City Savinho, Chelsea/Brighton deals—no schedule impact on tracked Norwegian events). Cycling (Vuelta a España stage 4: Pogačar 50km solo win, stage results—race already tracked, no time/venue changes). Athletics (Sondre Guttormsen pole vault equipment feature/Henriette Jæger references—no new event announcements; claimed event is 2026-09-05, 11 days out, not imminent). Rowing results (Ro-VM Amsterdam quarterfinals—past results). Coverage gaps (8 entity/tracked-claim, 1 anomaly): Guttormsen/Mesterligaen/Nasjonsligaen/Formel 1 entity gaps all imminent=false and not concrete; Serie A/rain/Guttormsen/Jæger tracked-claims all non-imminent (Guttormsen/Jæger 2026-09-05, no new RSS signal). Esports.json stale-retained (216 runs, 11 days, HIGH—infrastructure anomaly for self-repair, not a scout new-event signal). Ultimate Championship (Warholm, already escalated 2026-08-24, no new signals). No schedule/time/venue changes to existing tracked events, no broadcaster announcements, no 100 Thieves/rain CS2 match hints, no imminent tracked-athlete event changes. Escalation cap today (UTC): 0/2 (Warholm escalation was 2026-08-24).",
     "signals": []
   },
   {
-    "runAt": "2026-07-28T10:31:06.046Z",
+    "runAt": "2026-08-26T05:31:15.317Z",
     "verdict": "quiet",
-    "reason": "RSS (10:31 UTC): Zidane France coach appointment (legacy coaching news, no upcoming events), transfer gossip (Morten Bjørlo, Amin Chiakha, Adrian Pereira—transfer season noise, no event impact), injury/incident news (Stan Dewulf cyclist arm break, Vålerenga assistant coach retirement—not schedule-impacting). Coverage gaps: all refer to non-imminent entities (Casper Ruud US Open late August, Rosenborg/Manchester City/Arsenal/Liverpool/Real Madrid—transfer-related, no concrete imminent event signals). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
+    "reason": "RSS (55 items, 05:30 UTC): match-day coverage of tracked playoffs (Bodø/Glimt vs NEC, Brann vs Austria Wien, Viking vs Dinamo Zagreb Champions League matches—all already tracked events, no schedule/time/venue changes). Transfer-season noise (Man Utd Baleba, Man City transfers—no schedule impact on tracked Norwegian events). Tennis (Casper Ruud at US Open mixed doubles—already covered, match result coverage only). Cycling (Vuelta a España stage results—race already tracked, Pogačar 50km solo, no time changes). Athletics (Sondre Guttormsen pole vault equipment feature article—no new event announcement; claimed event 2026-09-05, 10 days out, not imminent). Rowing (Ro-VM quarterfinals—past results). Governance/personal news (Ingebrigtsen interview, Bruno Fernandes award, etc.—no event-schedule impact). Coverage gaps (9 entity, 1 anomaly): Casper Ruud/Guttormsen/Mesterligaen/Nasjonsligaen/Formel 1 entity gaps all imminent=false; Håvard «rain» Nygaard/Sondre Guttormsen/Henriette Jæger tracked-claims non-imminent (Guttormsen/Jæger 2026-09-05, no new RSS signal). Anomalies (1): esports.json stale-retained (219 consecutive runs, 11 days, HIGH—infrastructure issue for self-repair, not a new-event scout signal). No schedule/time/venue changes to existing events, no broadcaster announcements, no 100 Thieves/rain CS2 match hints, no imminent tracked-athlete event changes. Ultimate Championship (Warholm, escalated 2026-08-24, no new signals). Escalation cap today (UTC): 0/2.",
     "signals": []
   },
   {
-    "runAt": "2026-07-28T12:55:00Z",
+    "runAt": "2026-08-26T06:43:00.000Z",
     "verdict": "quiet",
-    "reason": "RSS: post-World Cup wrap-up (Zidane France coach—legacy, no events), transfer gossip (Rodri/Real Madrid, Welbeck/Chelsea—transfer season noise, no event impact), injury/incident news (Dewulf cyclist break, Evjen Glimt CL qualifier—not schedule-impacting). Coverage gaps: Casper Ruud (Laver Cup not imminent; US Open late August—not escalation-worthy), Manchester City/Arsenal/Real Madrid/Liverpool/Premier League/Mesterligaen/Friidretts-EM—all non-imminent or transfer-related noise. Tracked escalations from 07-27 already handled (rain/100-Thieves, Kristoffer Ventura). No schedule changes, broadcaster announcements, 100 Thieves CS2 match hints, or new concrete upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
+    "reason": "RSS (55 items, 06:42 UTC): transfer-season/personal news (Amalie Sæten achilles surgery—no schedule impact, sidelined; Brann obituary/articles, Patrick Berg/Knutsen Bodø/Glimt, Frida Karlsson/William Poromaa—no concrete new event signals). Match-day coverage (Celtic Champions League, various football—past results, all already tracked, no changes). Coverage gaps (7 entity/tracked-claim, 1 anomaly): Guttormsen/Mesterligaen/Nasjonsligaen/Formel 1 entity gaps all imminent=false; Håvard «rain» Nygaard tracked-claim imminent=false; Sondre Guttormsen/Henriette Jæger tracked-claims claimedDate 2026-09-05 (10 days out, no new RSS signal). Esports.json stale-retained (220 runs, 11 days, HIGH—infrastructure issue for self-repair, not a scout new-event signal). No schedule/time/venue changes to existing tracked events, no broadcaster announcements, no 100 Thieves/rain CS2 match hints, no imminent tracked-athlete event changes. Ultimate Championship (Warholm, escalated 2026-08-24) needs no new signals. Escalation cap today (UTC): 0/2.",
     "signals": []
   },
   {
-    "runAt": "2026-07-28T16:15:00Z",
+    "runAt": "2026-08-26T07:35:00.000Z",
     "verdict": "quiet",
-    "reason": "RSS: transfer gossip (John Stones Inter, Danny Welbeck Chelsea, Francisco Conceição Manchester United—transfer season noise, no event impact), leadership changes (Zinedine Zidane France coach—legacy, no upcoming events), injury news (Rodri operation—squad loss, not schedule-impacting), participation confirmations (Casper Ruud Laver Cup, Jakob Ingebrigtsen EM 5000m—already tracked, no changes), past results (Rosenborg 4–0 Fredrikstad—result, not upcoming), injury updates (Håkon Evjen CL qualifier—status update on already-known event), sports incidents (Stan Dewulf cyclist arm break—not schedule-impacting). Coverage gaps: all 8 gaps (Casper Ruud/Ruud, Manchester City, Real Madrid, Liverpool, Premier League, Mesterligaen, Laver Cup) are either non-imminent or confirm participation in already-tracked events (Laver Cup participation confirmed, not a new event). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
+    "reason": "RSS (31 items, 07:32 UTC): transfer-season noise (Man Utd Baleba signing, Man City deals, Tuva Espås to Nottingham—transfer market, no schedule impact). Past results (Celtic Champions League exit, Casper Ruud mixed doubles loss, Pogačar Vuelta stage 4 domination, Rowing VM quarterfinal—all already tracked or match-day results only, no changes). Personal news (Amalie Sæten achilles surgery—sidelined, no schedule impact; Ingebrigtsen interview—no event-schedule impact). Match-day coverage (Brann vs Austria Wien, various playoff results—tracked events, no venue/time changes). Coverage gaps (6 entity/tracked-claim, 1 anomaly): Guttormsen/Mesterligaen/Nasjonsligaen/Formel 1 entity gaps all imminent=false; Håvard «rain» Nygaard tracked-claim imminent=false; Sondre Guttormsen/Henriette Jæger claimedDate 2026-09-05 (9-10 days out, no new RSS signal). Esports.json stale-retained (221 runs, 11 days, HIGH—infrastructure issue for self-repair, not a scout new-event signal). No schedule/time/venue changes to existing tracked events, no broadcaster announcements, no 100 Thieves/rain CS2 match hints. Ultimate Championship (Warholm, escalated 2026-08-24) no new signals. Escalation cap today (UTC): 0/2.",
     "signals": []
   },
   {
-    "runAt": "2026-07-28T17:45:00Z",
+    "runAt": "2026-08-26T08:39:26.007Z",
     "verdict": "quiet",
-    "reason": "RSS (17:24 UTC snapshot, 55 items): post-World Cup wrap-up (Zidane France appointment—legacy coaching announcement, no upcoming events), transfer gossip (John Stones Inter, Welbeck Chelsea, Conceição Manchester United, Rodri operation, Morten Bjørlo, Amin Chiakha, Adrian Pereira—transfer season noise, no event impact), leadership changes (Mancini Italy coach—legacy, no events), participation confirmations (Casper Ruud Laver Cup late Sep, Jakob Ingebrigtsen EM 5000m—already tracked, no changes), past results (cycling stages, Rosenborg 4–0, Cristian Volpato incident—results, not upcoming), injury updates (Håkon Evjen CL qualifier, Stan Dewulf cyclist—not schedule-impacting), sports incidents/commentary (Henri Kristoffersen birth, Piltz EM test—legacy/personal news, no events). Coverage gaps (10 entity gaps, all imminent: false): Casper Ruud/Laver Cup (Sep), Vuelta a España (Sep), Mesterligaen/Manchester City/Liverpool/Real Madrid/Premier League (transfer-related or already tracked), all non-urgent or confimed participation in known events. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
+    "reason": "RSS (32 items, 08:39 UTC): transfer-season noise (Raheem Sterling legal case—personal/legal news, no schedule impact; Man Utd/Man City transfers—no schedule impact on tracked Norwegian events; football previews/opinion—no new event announcements). Past results (Celtic Champions League, Casper Ruud US Open mixed doubles, various football—all already tracked, match-day coverage only, no changes). Personal news (Amalie Sæten achilles surgery—sidelined, no schedule impact; Bruno Fernandes PFA award—personal achievement, no event-schedule impact). Coverage gaps (6 entity/tracked-claim, 1 anomaly): Guttormsen/Mesterligaen/Nasjonsligaen/Formel 1 entity gaps all imminent=false; Håvard «rain» Nygaard tracked-claim imminent=false; Sondre Guttormsen/Henriette Jæger claimedDate 2026-09-05 (9 days out, no new concrete RSS signal). Esports.json stale-retained (223 runs, 11 days, HIGH—infrastructure issue for self-repair domain, not a new-event scout signal). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting tracked events, no 100 Thieves/rain CS2 match hints, no imminent tracked-athlete event changes. Ultimate Championship (Warholm, escalated 2026-08-24) no new signals. Escalation cap today (UTC): 0/2.",
     "signals": []
   },
   {
-    "runAt": "2026-07-28T19:30:00.000Z",
+    "runAt": "2026-08-26T09:37:03.811Z",
     "verdict": "quiet",
-    "reason": "RSS: transfer gossip—transfer noise; past results; injury news; manager appointments. Coverage gaps: non-imminent or transfer-related. No schedule changes, broadcaster announcements, 100 Thieves CS2, or new upcoming events requiring escalation.",
+    "reason": "RSS (13 items, 09:37 UTC): transfer-season noise (Raheem Sterling legal case—personal/legal news, no schedule impact; Man Utd/Man City transfers—no schedule impact on tracked Norwegian events; football transfer rumors/previews—no new event announcements). Past results (various football coverage—all already tracked, match-day reporting only, no changes). No governance/personal news with event-schedule impact. Coverage gaps (3 entity/tracked-claim, 1 anomaly): Håvard «rain» Nygaard/esports (tracked athlete, no imminent event signal in RSS); Sondre Guttormsen/Henriette Jæger/athletics (claimedDate 2026-09-05, 10 days out, no new concrete RSS signal). Anomalies (1): esports.json stale-retained (224 consecutive runs, 11 days, HIGH—infrastructure issue for self-repair, not a new-event scout signal). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting tracked events, no 100 Thieves/rain CS2 match hints, no imminent tracked-athlete event changes. Ultimate Championship (Warholm, escalated 2026-08-24) no new signals. Escalation cap today (UTC): 0/2.",
     "signals": []
   },
   {
-    "runAt": "2026-07-28T21:30:00.000Z",
+    "runAt": "2026-08-26T10:31:35.000Z",
     "verdict": "quiet",
-    "reason": "RSS (21:04 UTC snapshot): post-World Cup wrap-up (Zidane France, Mancini Italy—legacy coaching news, no upcoming events), transfer gossip (Rodri Real Madrid interest, Barcola rumours, Welbeck Chelsea, Stones Inter—transfer season noise, no event impact), injury/medical news (Rodri/Saliba squad losses, Dewulf cyclist break—not schedule-impacting), past results (Rosenborg past match, World Cup wrap-up—no changes), participation confirmations (Ruud Laver Cup, Ingebrigtsen EM—already tracked, no changes). Coverage gaps: 8 entity gaps all non-imminent (Casper Ruud/Laver Cup September, Manchester City/Real Madrid/Liverpool/Premier League/Mesterligaen—transfer-related or already on board). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
+    "reason": "RSS (32 items, 10:31 UTC): transfer-season noise (Man City Bouaddi signing, Man Utd Baleba, Raheem Sterling legal case, transfer rumors—no schedule/time/venue/streaming/broadcaster impact on tracked Norwegian events). Past results (Celtic Champions League exit, Casper Ruud US Open mixed doubles, various football—all already tracked, match-day coverage only, no changes). Personal news (Amalie Sæten achilles surgery—sidelined, no schedule impact; Bruno Fernandes PFA award—personal achievement, no event-schedule impact). Governance (Formel 1 harassment story—past event context, imminent=false; Toppserien new club news—governance, no concrete event impact). Coverage gaps (5 entity/tracked-claim, 1 anomaly): Nasjonsligaen/Formel 1 entity gaps all imminent=false; Håvard «rain» Nygaard tracked-claim imminent=false; Sondre Guttormsen/Henriette Jæger claimedDate 2026-09-05 (10 days out, no new RSS signal). Esports.json stale-retained (225 runs, 11 days, HIGH—infrastructure issue for self-repair, not a scout new-event signal). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting tracked events, no 100 Thieves/rain CS2 match hints, no imminent tracked-athlete event changes. Ultimate Championship (Warholm, escalated 2026-08-24) no new signals. Escalation cap today (UTC): 0/2.",
     "signals": []
   },
   {
-    "runAt": "2026-07-29T07:45:00Z",
+    "runAt": "2026-08-26T11:26:10.313Z",
     "verdict": "quiet",
-    "reason": "RSS: transfer gossip (Rodri Real Madrid interest, Conceição Manchester United, Welbeck Chelsea, Danny Welbeck moves—transfer season noise, no event impact), legacy coverage (Zidane France head coach appointment—coaching news, no upcoming events), opinion pieces (World Cup commercial criticism—legacy, no events). Coverage gaps (4 entity gaps, all imminent: false): Manchester City, Real Madrid, Liverpool, Premier League—all appear in transfer/legacy coverage, no imminent concrete event signals detected. No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or new upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
+    "reason": "RSS (33 items, 11:26 UTC): transfer-season noise (Man City Bouaddi signing, Man Utd Baleba, Nico González to Newcastle, Marmoush to Spurs, Tuva Espås to Nottingham Forest, other player movements—no schedule/time/venue/streaming/broadcaster impact on tracked Norwegian events). Legal news (Raheem Sterling dangerous driving + nitrous oxide possession—personal/legal, no event-schedule impact). Past results (Celtic Champions League exit, Coventry Carabao Cup, Ipswich vs Leicester Walle Egeli goal, Casper Ruud US Open mixed doubles—all already tracked, match-day coverage only, no changes). Personal news (Amalie Sæten achilles surgery operation—sidelined, no schedule impact; Bruno Fernandes PFA award, Hedda Kronstrand injury story—personal/achievement, no event-schedule impact). Women's football (Bristol City women division news, Charlton Athletic WSL preview—structure/organizational, no concrete event signals). Governance (Formel 1 harassment against officials—past event context, imminent=false; Toppserien new club (Fet takes LSK Kvinners place)—governance, no upcoming event impact; Infantino losing support—governance, no event-schedule impact). Coverage gaps (5 entity/tracked-claim, 1 anomaly): Nasjonsligaen/Formel 1 entity gaps all imminent=false; Håvard «rain» Nygaard tracked-claim imminent=false; Sondre Guttormsen/Henriette Jæger claimedDate 2026-09-05 (10 days out, no new concrete RSS signal). Anomalies (1): esports.json stale-retained (226 consecutive runs, 11 days, HIGH—infrastructure issue for self-repair, not a new-event scout signal). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting tracked events, no 100 Thieves/rain CS2 match hints, no imminent tracked-athlete event changes. Ultimate Championship (Warholm, escalated 2026-08-24) no new signals. Escalation cap today (UTC): 0/2.",
     "signals": []
   },
   {
-    "runAt": "2026-07-29T11:07:37.804Z",
+    "runAt": "2026-08-26T12:44:33.076Z",
     "verdict": "quiet",
-    "reason": "RSS (30 items): transfer gossip (Infantino/Barcola/Rodri/Welbeck—transfer season noise), past results (Pidcock Tour penalty, Reitan British Open), legacy coverage (Zidane France, Mancini Italy coaches—leadership news, no events), Casper Ruud Laver Cup confirmation (already tracked Sep event, non-imminent). Coverage gaps (12 entity gaps, all imminent: false): Ruud/Laver Cup/Casper Ruud (Sep), Manchester City/Real Madrid/Liverpool/Arsenal/Premier League/Mesterligaen (all transfer-related or already tracked, no imminent signals detected). No schedule changes, broadcaster/streaming announcements, 100 Thieves CS2 match hints, or concrete new upcoming events detected. Escalation cap: 1/2 already used (rain/100-Thieves 07-27 08:30).",
+    "reason": "RSS (33 items, 12:44 UTC): transfer-season noise (Man City Bouaddi signing, Man Utd Baleba, Nico González to Newcastle, Marmoush to Spurs, Tuva Espås to Nottingham—no schedule/time/venue/streaming/broadcaster impact on tracked Norwegian events). Legal news (Raheem Sterling dangerous driving + nitrous oxide—personal/legal, no event-schedule impact). Past results (Celtic Champions League exit, Coventry Carabao Cup, Ipswich vs Leicester, Casper Ruud US Open—all already tracked, match-day coverage only, no changes). Personal news (Amalie Sæten achilles surgery—sidelined, no schedule impact; Bruno Fernandes PFA award, Hedda Kronstrand injury—no event-schedule impact). Governance (Formel 1 harassment story—past event, imminent=false; Toppserien new club (Fet replaces LSK Kvinners)—governance, no concrete event impact; Infantino losing support—governance, no event-schedule impact). Coverage gaps (5 entity/tracked-claim, 1 anomaly): Nasjonsligaen/Formel 1 entity gaps all imminent=false; Håvard «rain» Nygaard tracked-claim imminent=false; Sondre Guttormsen/Henriette Jæger claimedDate 2026-09-05 (10 days out, no new concrete RSS signal). Anomalies (1): esports.json stale-retained (227 consecutive runs, 11 days, HIGH—infrastructure issue for self-repair, not a new-event scout signal). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting tracked events, no 100 Thieves/rain CS2 match hints, no imminent tracked-athlete event changes. Ultimate Championship (Warholm, escalated 2026-08-24) no new signals. Escalation cap today (UTC): 0/2.",
     "signals": []
   },
   {
-    "runAt": "2026-07-29T13:21:48.943Z",
+    "runAt": "2026-08-26T14:25:41.749Z",
     "verdict": "quiet",
-    "reason": "RSS: transfer gossip (Grealish injury update, Rodri rumors, Barcelona signings), pre-season tour coverage (Man City Asia tour, Barcelona St George's Park camp, Chelsea Western Sydney match—past result), F1 season logistics (Malaysia Bahrain swap), opinion/transfer analysis. Coverage gaps: all entity mentions in transfer/pre-season context without imminent concrete schedule impact. No schedule changes, broadcaster/streaming announcements, or 100 Thieves CS2 match hints detected.",
+    "reason": "RSS (32 items, 13:52 UTC): transfer-season noise (Man City Bouaddi, Man Utd Baleba, Nico González, Marmoush, Tuva Espås, other players—no schedule/time/venue/streaming/broadcaster impact on tracked Norwegian events). Legal news (Raheem Sterling dangerous driving + nitrous oxide—personal/legal, no event-schedule impact). Past results (Celtic Champions League exit, Coventry Carabao Cup, Ipswich vs Leicester, Casper Ruud US Open—all already tracked, match-day coverage only, no changes). Personal news (Amalie Sæten achilles surgery—sidelined; Bruno Fernandes PFA award, Hedda Kronstrand injury—no event-schedule impact). Governance (Formel 1 harassment story—past event, imminent=false; Toppserien new club (Fet replaces LSK Kvinners)—governance, no concrete event impact). Women's football (Bristol City women, Charlton Athletic WSL preview—organizational, no event signals). Coverage gaps (4 gaps + 1 anomaly): Guttormsen (pole vault equipment feature, imminent=false—context only, no new event), Håvard «rain» Nygaard/esports (tracked-claim imminent=false), Sondre Guttormsen/Henriette Jæger/athletics (claimedDate 2026-09-05, 10 days out, no new RSS signal). Anomalies (1): esports.json stale-retained (228 consecutive runs, 11 days, HIGH—infrastructure issue for self-repair, not a new-event scout signal). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting tracked events, no 100 Thieves/rain CS2 match hints, no imminent tracked-athlete event changes. Ultimate Championship (Warholm, escalated 2026-08-24) no new signals. Escalation cap today (UTC): 0/2.",
     "signals": []
   },
   {
-    "runAt": "2026-07-29T15:10:40.086Z",
+    "runAt": "2026-08-26T16:04:33.890Z",
     "verdict": "quiet",
-    "reason": "RSS (23 items, 15:10 UTC): transfer gossip (Bradley Barcola to Liverpool, Henderson leaving Brentford, transfer rumours—transfer season noise, no event impact), opinion pieces (Manchester City defence concerns, World Cup commercial criticism—legacy/analysis, no upcoming events), golf announcements (Hovland/Reitan 'Battle of the Vikings' Norway vs Denmark concept, launching 2027 week 29—far-future planning, non-imminent). Coverage gaps (10 entity gaps, all imminent: false): Hovland/Reitan/Kristoffer Reitan (Battle of the Vikings news refers to 2027 concept, not urgent), Manchester City/Arsenal/Liverpool/Real Madrid/Premier League/La Liga/Bundesliga—all transfer-related or non-imminent. No schedule changes, broadcaster/streaming announcements, tracked athlete imminent events, 100 Thieves CS2 match hints, or concrete new upcoming events requiring escalation detected. Escalation cap: 0/2 today.",
+    "reason": "RSS (33 items, 14:41 UTC): transfer-season noise (Man City Bouaddi signing, Man Utd Baleba, Chelsea/Forest transfer talks—no schedule/time/venue/streaming/broadcaster impact on tracked Norwegian events). Legal news (Raheem Sterling dangerous driving + nitrous oxide—personal/legal, no event-schedule impact). Past results (Celtic Champions League exit, Coventry Carabao Cup, Ipswich vs Leicester, Casper Ruud US Open—all already tracked, match-day coverage only, no changes). Personal news (Amalie Sæten achilles surgery—sidelined, no schedule impact; Bruno Fernandes PFA award, Hedda Kronstrand injury—no event-schedule impact). Governance (Formel 1 harassment story—past event, imminent=false; Toppserien new club (Fet replaces LSK Kvinners)—governance, no concrete event impact; Infantino losing support—governance, no event-schedule impact). Women's football (Bristol City women division, Charlton Athletic WSL preview—organizational, no event signals). Coverage gaps (4 entity/tracked-claim, 1 anomaly): Formel 1 entity gap imminent=false; Håvard «rain» Nygaard tracked-claim imminent=false; Sondre Guttormsen/Henriette Jæger/athletics claimedDate 2026-09-05 (10 days out, no new concrete RSS signal). Anomalies (1): esports.json stale-retained (229 consecutive runs, 11 days, HIGH—infrastructure issue for self-repair, not a new-event scout signal). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting tracked events, no 100 Thieves/rain CS2 match hints, no imminent tracked-athlete event changes. Ultimate Championship (Warholm, escalated 2026-08-24) no new signals. Escalation cap today (UTC): 0/2.",
+    "signals": []
+  },
+  {
+    "runAt": "2026-08-26T16:28:00.000Z",
+    "verdict": "quiet",
+    "reason": "RSS (12 items, 16:28 UTC): transfer-season noise (Chelsea/Man City negotiations, Ayyoub Bouaddi Manchester City signing, Forest/Celta Vigo right-back talks, Axel Disasi to Palace loan, Marmoush/other players—no schedule/time/venue/streaming/broadcaster impact on tracked Norwegian events). Legal news (Raheem Sterling dangerous driving + nitrous oxide—personal/legal, no event-schedule impact). Personal/organizational news (Bristol City women's independence—organizational, no event signals; Women's Super League 2026-27 preview—no new events). Past results and opinion (PFA awards—personal achievement; football transfer rumors/fluff—no new event announcements). Coverage gaps (3 entity/tracked-claim, 1 anomaly): Håvard «rain» Nygaard/esports (tracked-claim imminent=false); Sondre Guttormsen/Henriette Jæger/athletics (claimedDate 2026-09-05, 10 days out, no new concrete RSS signal). Anomalies (1): esports.json stale-retained (230 consecutive runs, 12 days, HIGH—infrastructure issue for self-repair, not a new-event scout signal). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting tracked events, no 100 Thieves/rain CS2 match hints, no imminent tracked-athlete event changes. Ultimate Championship (Warholm, escalated 2026-08-24) no new signals. Escalation cap today (UTC): 0/2.",
+    "signals": []
+  },
+  {
+    "runAt": "2026-08-26T18:57:17.000Z",
+    "verdict": "quiet",
+    "reason": "RSS (33 items, 18:56 UTC): transfer-season noise (Man City Bouaddi signing, Man Utd Baleba, Chelsea/Forest transfer talks, various players—no schedule/time/venue/streaming/broadcaster impact on tracked Norwegian events). Legal news (Raheem Sterling dangerous driving + nitrous oxide—personal/legal, no event-schedule impact). Past results (Bodø/Glimt results, Viking playoff, Celtic Champions League collapse, Casper Ruud US Open, Vuelta stage results—all already tracked, match-day coverage only, no changes). Personal news (Sverre Nypan hamstring—sidelined, no schedule impact; Amalie Sæten achilles surgery—no schedule impact; Bruno Fernandes PFA award, Hedda Kronstrand injury—no event-schedule impact). Athletics commentary (Ingebrigtsen doubt about superduellen—no new date confirmation; Sondre Guttormsen/Henriette Jæger—no new event announcements). Governance (UEFA Fifa-turneringer boycott dropped—governance, no schedule impact; Jonas Juel ro-VM quarterfinal—past result; Frida Karlsson/Poromaa interview—personal/archive context, no new event signals; women's football organizational news—no event signals). Coverage gaps (4 entity/tracked-claim, 1 anomaly): Europa Conference League entity gap marked imminent, but not a concrete upcoming event signal; Håvard «rain» Nygaard tracked-claim imminent=false; Sondre Guttormsen/Henriette Jæger claimedDate 2026-09-05 (10 days out, no new concrete RSS signal). Anomalies (1): esports.json stale-retained (231 consecutive runs, 12 days, HIGH—infrastructure issue for self-repair, not a new-event scout escalation signal). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting tracked events, no 100 Thieves/rain CS2 match hints, no imminent tracked-athlete event changes. Ultimate Championship (Warholm, escalated 2026-08-24) no new signals. Escalation cap today (UTC): 0/2.",
+    "signals": []
+  },
+  {
+    "runAt": "2026-08-26T21:40:12.000Z",
+    "verdict": "quiet",
+    "reason": "RSS (13 items, 21:40 UTC): transfer-season noise (Spurs Carabao Cup win Savio debut goal, Everton hat-trick beat Preston, Newcastle beat West Brom, Hearts beat Rapid Vienna shootout Conference League playoff, Chelsea women beat Real Sociedad Champions League, Grealish loan rumors, Martinez/Jackson transfer talks, Bouaddi/Manchester City, Bristol City women independence, Raheem Sterling dangerous driving + nitrous oxide charges, transfer rumors, PFA awards—no schedule/time/venue/streaming/broadcaster impact on tracked Norwegian events). Match-day coverage (Carabao Cup results, Women's Champions League first leg—all already tracked or past results only, no changes). Legal news (Sterling dangerous driving + nitrous oxide—personal/legal, no event-schedule impact). Personal/organizational news (Bristol City women's independence—organizational, no event signals; Women's Super League preview—no new events). Coverage gaps (4 entity/tracked-claim, 1 anomaly): Heroic/Hearts (conference league entity gap from match-day news, imminent=false, past result not a new event signal); Håvard «rain» Nygaard/esports (tracked-claim imminent=false); Sondre Guttormsen/Henriette Jæger/athletics (claimedDate 2026-09-05, 10 days out, no new concrete RSS signal). Anomalies (1): esports.json stale-retained (232 consecutive runs, 12 days, HIGH—infrastructure issue for self-repair, not a new-event scout signal). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting tracked events, no 100 Thieves/rain CS2 match hints, no imminent tracked-athlete event changes. Ultimate Championship (Warholm, escalated 2026-08-24) no new signals. Escalation cap today (UTC): 0/2.",
     "signals": []
   }
 ]

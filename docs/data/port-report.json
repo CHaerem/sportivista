@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-29T17:12:53.781Z",
+  "generatedAt": "2026-08-27T02:29:21.819Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "yellow",
+    "coverage": "green",
     "amendRate": "green",
     "silentStops": "yellow",
     "participantStatus": "green"
@@ -19,155 +19,170 @@
     ]
   },
   "coverage": {
-    "openGaps": 3,
+    "openGaps": 2,
     "bySeverity": {
       "high": 0,
-      "medium": 3,
-      "low": 0
+      "medium": 0,
+      "low": 2
     },
-    "oldestGapAgeDays": 0.45,
+    "oldestGapAgeDays": 3.94,
     "escalatable": 0,
-    "catalogMatched": 3,
-    "auditedAt": "2026-07-29T06:32:00Z",
+    "catalogMatched": 2,
+    "auditedAt": "2026-08-26T04:00:00Z",
     "gaps": [
       {
-        "interest": "Friidrett (tier1 wholesale) — Wanda Diamond League gjenopptas i august",
-        "severity": "medium",
-        "ageDays": 0.45,
+        "interest": "UEFA Champions League 2026/27 — ligaspill runde 1 (MD1)",
+        "severity": "low",
+        "ageDays": 0.94,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
-        "interest": "Sykkel (tier1 wholesale) — Tour de Pologne 2026 (Uno-X)",
-        "severity": "medium",
-        "ageDays": 0.45,
-        "recurrences": 0,
-        "catalogMatched": true
-      },
-      {
-        "interest": "Eliteserien (tier1-turnering + sporet liga) — runde 17 (~14.–17. aug)",
-        "severity": "medium",
-        "ageDays": 0.45,
-        "recurrences": 0,
+        "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
+        "severity": "low",
+        "ageDays": 3.94,
+        "recurrences": 2,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0,
-    "nearTermChecked": 18,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-07-29T08:06:00Z",
-    "windowRate": 0.07,
-    "windowChecks": 74,
-    "windowAmendments": 5,
-    "windowCorrections": 3,
+    "nearTermRate": 0.2,
+    "nearTermChecked": 5,
+    "nearTermAmended": 1,
+    "verifyRunAt": "2026-08-26T05:59:11Z",
+    "windowRate": 0,
+    "windowChecks": 91,
+    "windowAmendments": 0,
+    "windowCorrections": 5,
     "byDay": [
       {
-        "date": "2026-07-16",
-        "checks": 5,
-        "amendments": 2,
-        "corrections": 0,
-        "rate": 0.4
-      },
-      {
-        "date": "2026-07-17",
-        "checks": 3,
-        "amendments": 2,
-        "corrections": 0,
-        "rate": 0.67
-      },
-      {
-        "date": "2026-07-18",
-        "checks": 8,
+        "date": "2026-08-13",
+        "checks": 6,
         "amendments": 0,
         "corrections": 0,
         "rate": 0
       },
       {
-        "date": "2026-07-19",
-        "checks": 8,
-        "amendments": 1,
-        "corrections": 0,
-        "rate": 0.13
-      },
-      {
-        "date": "2026-07-20",
-        "checks": 4,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
-      {
-        "date": "2026-07-21",
-        "checks": 5,
-        "amendments": 0,
-        "corrections": 2,
-        "rate": 0
-      },
-      {
-        "date": "2026-07-22",
-        "checks": 5,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
-      {
-        "date": "2026-07-23",
-        "checks": 4,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
-      {
-        "date": "2026-07-24",
-        "checks": 11,
+        "date": "2026-08-14",
+        "checks": 7,
         "amendments": 0,
         "corrections": 1,
         "rate": 0
       },
       {
-        "date": "2026-07-27",
-        "checks": 9,
+        "date": "2026-08-15",
+        "checks": 7,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
+      },
+      {
+        "date": "2026-08-16",
+        "checks": 7,
         "amendments": 0,
         "corrections": 0,
         "rate": 0
       },
       {
-        "date": "2026-07-28",
+        "date": "2026-08-17",
+        "checks": 6,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
+      },
+      {
+        "date": "2026-08-18",
+        "checks": 6,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
+      },
+      {
+        "date": "2026-08-19",
+        "checks": 4,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
+      },
+      {
+        "date": "2026-08-20",
+        "checks": 8,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
+      },
+      {
+        "date": "2026-08-21",
+        "checks": 15,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
+      },
+      {
+        "date": "2026-08-22",
         "checks": 4,
         "amendments": 0,
         "corrections": 0,
         "rate": 0
       },
       {
-        "date": "2026-07-29",
-        "checks": 8,
+        "date": "2026-08-23",
+        "checks": 4,
         "amendments": 0,
         "corrections": 0,
+        "rate": 0
+      },
+      {
+        "date": "2026-08-24",
+        "checks": 7,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
+      },
+      {
+        "date": "2026-08-25",
+        "checks": 4,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
+      },
+      {
+        "date": "2026-08-26",
+        "checks": 6,
+        "amendments": 0,
+        "corrections": 2,
         "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-07-29T17:12:48.084Z",
+    "buildCheckedAt": "2026-08-27T02:29:17.176Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-07-29T16:18:15.482Z",
-    "manifestAgeHours": 0.91,
+    "manifestGeneratedAt": "2026-08-26T21:40:31.578Z",
+    "manifestAgeHours": 4.81,
     "staleFiles": [
       {
         "file": "esports.json",
-        "sourceLastUpdated": "2026-07-26T15:02:01.492Z",
-        "ageHours": 74.18
+        "sourceLastUpdated": "2026-08-14T15:47:48.225Z",
+        "ageHours": 298.69
+      },
+      {
+        "file": "tennis.json",
+        "sourceLastUpdated": "2026-08-24T07:54:57.159Z",
+        "ageHours": 66.57
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-07-29T08:06:00Z",
-    "verifyAgeHours": 9.11,
-    "corrections": 0,
+    "checkedAt": "2026-08-26T05:59:11Z",
+    "verifyAgeHours": 20.5,
+    "corrections": 2,
     "unresolved": 0,
-    "signals": []
+    "signals": [
+      "US Open (tennis, in-progress): fylte inn Casper Ruud i norwegianPlayers (19. seed, aktiv i 1. runde per Wikipedia/usopen.org) og korrigerte venue fra TBD til…",
+      "US Open singles-'2. runde exit'-treff i søk stammer fra 2025 (amNewYork-URL 8-27-25); ikke brukt — Ruud er aktiv i 2026-trekningen."
+    ]
   }
 }

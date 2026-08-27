@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-07-29T17:12:08.179Z",
+  "lastUpdated": "2026-08-27T02:28:29.525Z",
   "source": "ESPN + PGA Tour",
   "tournaments": [
     {
       "name": "PGA Tour",
       "events": [
         {
-          "title": "Rocket Classic",
+          "title": "TOUR Championship",
           "meta": "PGA Tour",
           "tournament": "PGA Tour",
-          "time": "2026-07-30T04:00:00.000Z",
-          "endTime": "2026-08-02T20:00:00.000Z",
+          "time": "2026-08-27T04:00:00.000Z",
+          "endTime": "2026-08-30T20:00:00.000Z",
           "venue": "TBD",
           "sport": "golf",
           "streaming": [
@@ -28,29 +28,73 @@
           "norwegian": true,
           "norwegianPlayers": [
             {
-              "name": "Kristoffer Ventura",
-              "teeTime": "19:49",
-              "teeTimeUTC": "2026-07-30T17:49:00.000Z",
+              "name": "Viktor Hovland",
+              "teeTime": "17:24",
+              "teeTimeUTC": "2026-08-27T15:24:00.000Z",
+              "status": null
+            },
+            {
+              "name": "Kristoffer Reitan",
+              "teeTime": "18:06",
+              "teeTimeUTC": "2026-08-27T16:06:00.000Z",
               "status": null
             }
           ],
           "featuredGroups": [
             {
-              "player": "Kristoffer Ventura",
-              "teeTime": "19:49",
+              "player": "Viktor Hovland",
+              "teeTime": "17:24",
               "groupmates": [
                 {
-                  "name": "Zecheng Dou",
-                  "teeTime": "19:49"
-                },
+                  "name": "Robert MacIntyre",
+                  "teeTime": "17:24"
+                }
+              ]
+            },
+            {
+              "player": "Kristoffer Reitan",
+              "teeTime": "18:06",
+              "groupmates": [
                 {
-                  "name": "A.J. Ewart",
-                  "teeTime": "19:49"
+                  "name": "Patrick Cantlay",
+                  "teeTime": "18:06"
                 }
               ]
             }
           ],
-          "totalPlayers": 147
+          "totalPlayers": 30
+        }
+      ]
+    },
+    {
+      "name": "DP World Tour",
+      "events": [
+        {
+          "title": "Husqvarna British Masters hosted by Sir Nick Faldo",
+          "meta": "DP World Tour",
+          "tournament": "DP World Tour",
+          "time": "2026-08-27T04:00:00.000Z",
+          "endTime": "2026-08-30T20:00:00.000Z",
+          "venue": "TBD",
+          "sport": "golf",
+          "streaming": [
+            {
+              "platform": "Discovery+",
+              "url": "https://www.discoveryplus.no",
+              "type": "streaming"
+            }
+          ],
+          "norwegian": true,
+          "norwegianPlayers": [
+            {
+              "name": "Andreas Halvorsen",
+              "teeTime": null,
+              "teeTimeUTC": null,
+              "status": null
+            }
+          ],
+          "featuredGroups": [],
+          "totalPlayers": 156
         }
       ]
     }
