@@ -8,6 +8,7 @@
  *   2. amendRate          — amend-rate on near-term events ≈ 0
  *   3. silentStops        — null stille kritiske stopp
  *   4. participantStatus  — null feilaktige deltaker-statuser
+ *   5. contracts          — dekningskontraktene holdt (WP-243, G2-føde)
  *
  * Reads the pipeline's own outputs (coverage-audit.json, verify-log.json,
  * calibration-ledger.jsonl, build-alert.json, manifest.json, catalog.json),
@@ -342,13 +343,39 @@ function assessParticipantStatus(verifyLog, now) {
  * Pure aggregator. Takes already-parsed inputs (null / [] for missing sources)
  * and never throws. Returns the full port-report object.
  */
+// ── Port 5 · contracts (WP-243) ─────────────────────────────────────────────
+// The coverage-contract verdicts from coverage-contracts.json (written by
+// build-events from authority.json's contract blocks): green = no in-season
+// contract breached, yellow = one, red = two or more. Off-season contracts
+// never colour the port. Unknown (never silent green) when the artifact is
+// absent — e.g. before the first contracted build.
+function assessContractsPort(contractReport) {
+	if (!contractReport || !Array.isArray(contractReport.contracts) || contractReport.contracts.length === 0) {
+		return { status: "unknown", detail: null, available: false };
+	}
+	const contracts = contractReport.contracts;
+	const breached = contracts.filter((c) => c.status === "breached");
+	const status = breached.length === 0 ? "green" : breached.length === 1 ? "yellow" : "red";
+	return {
+		status,
+		available: true,
+		detail: {
+			total: contracts.length,
+			inSeason: contracts.filter((c) => c.inSeason).length,
+			breached: breached.map((c) => ({ id: c.id, name: c.name, upcoming: c.upcoming, minUpcoming: c.minUpcoming, horizonDays: c.horizonDays })),
+			generatedAt: contractReport.generatedAt || null,
+		},
+	};
+}
+
 export function buildPortReport(inputs = {}, now = Date.now()) {
-	const { coverageAudit = null, verifyLog = null, ledgerLines = [], buildAlert = null, manifest = null, catalog = null } = inputs;
+	const { coverageAudit = null, verifyLog = null, ledgerLines = [], buildAlert = null, manifest = null, catalog = null, coverageContracts = null } = inputs;
 
 	const coverage = assessCoverage(coverageAudit, catalog, now);
 	const amendRate = assessAmendRate(verifyLog, ledgerLines, now);
 	const silentStops = assessSilentStops(buildAlert, manifest, now);
 	const participantStatus = assessParticipantStatus(verifyLog, now);
+	const contracts = assessContractsPort(coverageContracts);
 
 	const basis = {
 		coverageAudit: coverage.available,
@@ -364,6 +391,8 @@ export function buildPortReport(inputs = {}, now = Date.now()) {
 	if (!basis.calibrationLedger) basis.notes.push("calibration-ledger.jsonl unavailable/empty — ingen per-dag amend-trend.");
 	if (!basis.buildAlert && !basis.manifest) basis.notes.push("build-alert.json + manifest.json unavailable — stille-stopp-porten er «ukjent».");
 	if (!basis.catalog) basis.notes.push("catalog.json unavailable — coverage-gaps krysssjekkes ikke mot katalogen (severity/alder brukes fortsatt).");
+	basis.coverageContracts = contracts.available;
+	if (!basis.coverageContracts) basis.notes.push("coverage-contracts.json unavailable — contracts-porten (WP-243) er «ukjent», ikke grønn.");
 	// Honest scope caveat: the ledger doesn't record an event's lead time, so the
 	// <72h near-term filter is applied via verify-log's next-7-day scope, not the ledger.
 	if (basis.calibrationLedger) basis.notes.push("amendRate.byDay dekker ALLE verify-kildesjekker (ledgeren registrerer ikke event-ledetid, så <72t-filteret kommer fra verify-log sitt neste-7-dager-omfang).");
@@ -376,12 +405,14 @@ export function buildPortReport(inputs = {}, now = Date.now()) {
 			amendRate: amendRate.status,
 			silentStops: silentStops.status,
 			participantStatus: participantStatus.status,
+			contracts: contracts.status,
 		},
 		basis,
 		coverage: coverage.detail,
 		amendRate: amendRate.detail,
 		silentStops: silentStops.detail,
 		participantStatus: participantStatus.detail,
+		contracts: contracts.detail,
 	};
 }
 
@@ -408,6 +439,7 @@ export function writePortReport(dataDir = rootDataPath(), configDir = configDirP
 			buildAlert: readJsonIfExists(path.join(dataDir, "build-alert.json")),
 			manifest: readJsonIfExists(path.join(dataDir, "manifest.json")),
 			catalog,
+			coverageContracts: readJsonIfExists(path.join(dataDir, "coverage-contracts.json")),
 		},
 		now
 	);
@@ -419,7 +451,7 @@ function main() {
 	const report = writePortReport();
 	const p = report.ports;
 	console.log(
-		`Port-report: coverage=${p.coverage} amendRate=${p.amendRate} silentStops=${p.silentStops} participantStatus=${p.participantStatus} (window ${report.windowDays}d)`
+		`Port-report: coverage=${p.coverage} amendRate=${p.amendRate} silentStops=${p.silentStops} participantStatus=${p.participantStatus} contracts=${p.contracts} (window ${report.windowDays}d)`
 	);
 }
 

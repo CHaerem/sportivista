@@ -420,3 +420,33 @@ describe("detectTrackedClaims — the Gstaad class (RSS-independent)", () => {
 		expect(detectTrackedClaims({ tracked: {}, events: [], now })).toEqual([]);
 	});
 });
+
+// ── WP-243: kontraktbrudd → høy-alvorlighets gap ────────────────────────────
+import { detectContractBreaches } from "../scripts/detect-coverage-gaps.js";
+
+describe("detectContractBreaches", () => {
+	const report = {
+		contracts: [
+			{ id: "football:eliteserien", name: "Eliteserien", sport: "football", authority: "eliteserien, fotball-no", horizonDays: 14, minUpcoming: 4, upcoming: 1, inSeason: true, status: "breached" },
+			{ id: "f1:world-championship", name: "Formel 1", sport: "f1", authority: "formula1", horizonDays: 35, minUpcoming: 1, upcoming: 2, inSeason: true, status: "met" },
+			{ id: "biathlon:world-cup", name: "Verdenscupen", sport: "biathlon", authority: "ibu", horizonDays: 10, minUpcoming: 1, upcoming: 0, inSeason: false, status: "off-season" },
+		],
+	};
+
+	it("only breached contracts become gaps — always high severity, imminent, with the named authority", () => {
+		const gaps = detectContractBreaches(report, Date.parse("2026-08-27T10:00:00Z"));
+		expect(gaps).toHaveLength(1);
+		const g = gaps[0];
+		expect(g.kind).toBe("contract-breach");
+		expect(g.severity).toBe("high");
+		expect(g.imminent).toBe(true);
+		expect(g.sport).toBe("football");
+		expect(g.detail).toContain("eliteserien, fotball-no");
+		expect(g.detail).toContain("1 av minst 4");
+	});
+
+	it("is empty and silent without a contract report (fail-soft)", () => {
+		expect(detectContractBreaches(null)).toEqual([]);
+		expect(detectContractBreaches({})).toEqual([]);
+	});
+});

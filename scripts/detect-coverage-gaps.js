@@ -14,6 +14,11 @@
  *      would notice, but "Formel 1 … i dag" + zero F1 events soon does.
  *   3. Source anomalies — a fetcher's own data file is missing/empty, or has events
  *      the board dropped. Guards against a single upstream source going unreliable.
+ *   4. Contract breaches (WP-243) — a wholesale-covered competition's coverage
+ *      contract (authority.json contract blocks, measured by build-events into
+ *      coverage-contracts.json) is breached: in season, but fewer upcoming events
+ *      on the board than promised. Always high severity — a broken promise is the
+ *      one gap class we defined in advance.
  *
  * Deliberately noisy and mechanical — the coverage-critic and research agents read
  * this file and decide what is real (they cross-check the web). Detection costs
@@ -426,6 +431,29 @@ function readSources(dataDir) {
 	return sources;
 }
 
+/**
+ * WP-243: turn breached coverage contracts (coverage-contracts.json, written by
+ * build-events the step before) into gap entries the agents already know how to
+ * triage. High severity by construction: the contract IS the pre-agreed
+ * definition of «this absence is a real hole», season-honest (off-season never
+ * breaches) and conservative by seeding policy — so unlike the recall-biased
+ * signals above, a breach needs no imminence heuristics.
+ */
+export function detectContractBreaches(contractReport, now = Date.now()) {
+	return (contractReport?.contracts || [])
+		.filter((c) => c && c.status === "breached")
+		.map((c) => ({
+			kind: "contract-breach",
+			type: "missing",
+			interest: c.name,
+			sport: c.sport,
+			severity: "high",
+			imminent: true,
+			detail: `Dekningskontrakt brutt: ${c.upcoming} av minst ${c.minUpcoming} ventede events innen ${c.horizonDays} dager for ${c.name} (i sesong). Gå til den navngitte autoriteten (${c.authority}) og fyll tavla.`,
+			detectedAt: iso(now),
+		}));
+}
+
 function main() {
 	const dataDir = rootDataPath();
 	const configDir = configDirPath();
@@ -449,7 +477,10 @@ function main() {
 
 	const gaps = detectGaps({ rss, events, interests, tracked });
 	const trackedClaims = detectTrackedClaims({ tracked, events });
-	const allGaps = [...gaps, ...trackedClaims];
+	// WP-243: contract breaches from this build's coverage-contracts.json
+	// (build-events writes it in the pipeline step right before this one).
+	const contractBreaches = detectContractBreaches(readJsonIfExists(path.join(dataDir, "coverage-contracts.json")));
+	const allGaps = [...gaps, ...trackedClaims, ...contractBreaches];
 	const anomalies = detectSourceAnomalies({ sources, events, isCovered });
 	// WP-165: fold the public, anonymous `coverage-request` demand signal in. Fail-soft
 	// — collectDemand returns null when `gh` is unavailable/unauthorised, and we simply
@@ -461,12 +492,12 @@ function main() {
 		anomalyCount: anomalies.length,
 		gaps: allGaps,
 		anomalies,
-		note: "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog.",
+		note: "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority.",
 	};
 	if (demand != null) out.demand = demand;
 	writeJsonPretty(path.join(dataDir, "coverage-gaps.json"), out);
 	console.log(
-		`Coverage gaps: ${allGaps.length} (${allGaps.filter((g) => g.imminent).length} imminent, ${trackedClaims.length} tracked-claim); source anomalies: ${anomalies.length}; demand: ${demand == null ? "n/a" : demand.length}`
+		`Coverage gaps: ${allGaps.length} (${allGaps.filter((g) => g.imminent).length} imminent, ${trackedClaims.length} tracked-claim, ${contractBreaches.length} contract-breach); source anomalies: ${anomalies.length}; demand: ${demand == null ? "n/a" : demand.length}`
 	);
 }
 

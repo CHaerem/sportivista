@@ -26,6 +26,7 @@ describe("buildPortReport — topline + honesty contract", () => {
 			amendRate: "unknown",
 			silentStops: "unknown",
 			participantStatus: "unknown",
+			contracts: "unknown",
 		});
 		expect(r.windowDays).toBe(14);
 		expect(r.generatedAt).toBe(new Date(NOW).toISOString());
@@ -256,7 +257,7 @@ describe("integration · build-events wires it in and the manifest covers it", (
 		const reportPath = path.join(dataDir, PORT_REPORT_NAME);
 		expect(fs.existsSync(reportPath)).toBe(true);
 		const report = JSON.parse(fs.readFileSync(reportPath, "utf-8"));
-		expect(Object.keys(report.ports).sort()).toEqual(["amendRate", "coverage", "participantStatus", "silentStops"]);
+		expect(Object.keys(report.ports).sort()).toEqual(["amendRate", "contracts", "coverage", "participantStatus", "silentStops"]);
 		// build-events wrote a fresh build-alert this run ⇒ silent-stop port is assessable
 		expect(report.ports.silentStops).toBe("green");
 
@@ -265,5 +266,43 @@ describe("integration · build-events wires it in and the manifest covers it", (
 
 		fs.rmSync(dataDir, { recursive: true, force: true });
 		fs.rmSync(configDir, { recursive: true, force: true });
+	});
+});
+
+// ── Port 5 · contracts (WP-243) ─────────────────────────────────────────────
+describe("port 5 · contracts", () => {
+	const contract = (id, status, over = {}) => ({
+		id, name: id, sport: "football", horizonDays: 14, minUpcoming: 4,
+		inSeason: status !== "off-season", upcoming: status === "met" ? 8 : 1, status, ...over,
+	});
+
+	it("green when no in-season contract is breached (off-season never colours)", () => {
+		const r = buildPortReport(
+			{ coverageContracts: { contracts: [contract("a", "met"), contract("b", "off-season")] } },
+			NOW
+		);
+		expect(r.ports.contracts).toBe("green");
+		expect(r.contracts.total).toBe(2);
+		expect(r.contracts.inSeason).toBe(1);
+	});
+
+	it("yellow at one breach, red at two", () => {
+		expect(
+			buildPortReport({ coverageContracts: { contracts: [contract("a", "breached"), contract("b", "met")] } }, NOW)
+				.ports.contracts
+		).toBe("yellow");
+		const r = buildPortReport(
+			{ coverageContracts: { contracts: [contract("a", "breached"), contract("b", "breached")] } },
+			NOW
+		);
+		expect(r.ports.contracts).toBe("red");
+		expect(r.contracts.breached.map((b) => b.id)).toEqual(["a", "b"]);
+	});
+
+	it("unknown (never silent green) without the artifact, with an honest basis note", () => {
+		const r = buildPortReport({}, NOW);
+		expect(r.ports.contracts).toBe("unknown");
+		expect(r.basis.coverageContracts).toBe(false);
+		expect(r.basis.notes.some((n) => n.includes("coverage-contracts"))).toBe(true);
 	});
 });

@@ -59,6 +59,15 @@ what is on this week's / this weekend's schedule and check it is on the board wi
    regardless of what our feed shows — this is the known blind spot above.
 2. **Whatever the mechanical watch flagged** (`gaps` with `imminent: true`, `kind: "sport"`)
    and every `anomaly` — verify each against the web before trusting or dismissing it.
+   A gap with `kind: "contract-breach"` (WP-243) outranks the rest: it means a
+   wholesale-covered competition's PRE-AGREED coverage contract
+   (`docs/data/coverage-contracts.json`, from `authority.json`'s `contract` blocks) is
+   broken — in season, fewer upcoming events than promised. Verify against the
+   competition's NAMED authority (the `authority` field / authority.json `time.sourceIds`),
+   not a search engine; if real, it goes straight into your audit as `severity: "high"`.
+   If a contract itself is miscalibrated (a legitimate seasonal pause the `months` list
+   missed), say so in `sourceIssues` so the contract gets fixed rather than the breach
+   re-firing weekly.
 3. **Cross-check the news:** anything the Norwegian press is treating as happening now
    (rss-digest) that is not on the board is a prime suspect.
 

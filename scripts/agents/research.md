@@ -40,6 +40,14 @@ matter to a Norwegian sports fan that are NOT in the static data feeds**.
   Its `gaps[]` (esp. `severity: "high"`) are events it believes we're MISSING,
   each with a `suggestedSource`. **Treat high-severity gaps as priority work** —
   go find and add those events. This is a smarter signal than coverage-gaps.json.
+- `docs/data/coverage-contracts.json` — the coverage contracts (WP-243): the
+  measurable promise per wholesale-covered competition («in season: at least N
+  events within H days»), judged mechanically every build. **A `breached` contract
+  is your single highest-priority gap** — it is the one absence we defined as a
+  broken promise in advance. Fill it FROM THE NAMED AUTHORITY (the `authority`
+  field points into sources.json via authority.json), not from whatever ranks
+  first in a search. Contract breaches also appear in coverage-gaps.json as
+  `kind: "contract-breach"`.
 - `docs/data/calibration.json` — per-source trust stats from past verifications.
   Prefer sources with high reliability for the sport at hand; distrust repeat offenders.
   **This is BINDING (WP-245), not advice:** a source with measured `reliability`
