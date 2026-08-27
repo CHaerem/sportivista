@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T12:09:51.726Z",
+  "generatedAt": "2026-08-27T12:35:45.551Z",
   "gapCount": 4,
   "anomalyCount": 2,
   "gaps": [
@@ -12,7 +12,7 @@
       "link": "https://www.theguardian.com/football/2026/aug/26/conference-league-rapid-vienna-hearts-qualifying-playoff-match-report",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-27T12:09:50.598Z"
+      "detectedAt": "2026-08-27T12:35:44.661Z"
     },
     {
       "kind": "tracked-claim",
@@ -24,7 +24,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-27T12:09:51.532Z"
+      "detectedAt": "2026-08-27T12:35:45.390Z"
     },
     {
       "kind": "tracked-claim",
@@ -36,7 +36,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-27T12:09:51.532Z"
+      "detectedAt": "2026-08-27T12:35:45.390Z"
     },
     {
       "kind": "tracked-claim",
@@ -48,27 +48,27 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-27T12:09:51.532Z"
+      "detectedAt": "2026-08-27T12:35:45.390Z"
     }
   ],
   "anomalies": [
     {
       "sport": "tennis",
       "issue": "stale-retained",
-      "detail": "docs/data/tennis.json has been served from retention for 54 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 54,
+      "detail": "docs/data/tennis.json has been served from retention for 55 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 55,
       "staleDays": 3,
       "severity": "high",
-      "detectedAt": "2026-08-27T12:09:51.608Z"
+      "detectedAt": "2026-08-27T12:35:45.449Z"
     },
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 237 consecutive run(s) — no fresh fetch in 12 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 237,
+      "detail": "docs/data/esports.json has been served from retention for 238 consecutive run(s) — no fresh fetch in 12 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 238,
       "staleDays": 12,
       "severity": "high",
-      "detectedAt": "2026-08-27T12:09:51.608Z"
+      "detectedAt": "2026-08-27T12:35:45.449Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
