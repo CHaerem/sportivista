@@ -95,6 +95,7 @@ export const NATIONS = {
 	// --- UEFA ---
 	Austria: "Østerrike",
 	Azerbaijan: "Aserbajdsjan",
+	Belarus: "Hviterussland",
 	Belgium: "Belgia",
 	"Bosnia-Herzegovina": "Bosnia-Hercegovina",
 	Croatia: "Kroatia",
