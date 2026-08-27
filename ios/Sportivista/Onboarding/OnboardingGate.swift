@@ -19,13 +19,18 @@ import Foundation
 /// then `quickPicks` — the tap-to-follow path that works for EVERYONE, now the
 /// first build step for all users (the flip WP-129 flagged). `converse` (the
 /// say-what-you-follow conversation) is a clearly-secondary, Apple-Intelligence-
-/// gated entry off the quick-picks step. `assistantIntro` is the calm finish
-/// that SHOWS the deep-personalisation the assistant unlocks (a few tappable
-/// examples + «prøv nå») and drops the user into the already-filled agenda.
+/// gated entry off the quick-picks step. `ritual` (WP-202) sells the daily
+/// ritual once the profile exists — the morning brief, the ONE notification
+/// decision (primed with the why before the system prompt ever shows), and the
+/// widget — because a follow-list without the ritual is a bookmark, not a habit.
+/// `assistantIntro` is the calm finish that SHOWS the deep-personalisation the
+/// assistant unlocks (a few tappable examples + «prøv nå») and drops the user
+/// into the already-filled agenda.
 enum OnboardingStep: Equatable, Sendable {
     case welcome
     case quickPicks
     case converse
+    case ritual
     case assistantIntro
 }
 

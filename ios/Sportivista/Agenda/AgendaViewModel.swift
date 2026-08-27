@@ -38,6 +38,11 @@ final class AgendaViewModel {
     /// profile points back at the command line ("fortell Sportivista hva du følger")
     /// rather than reading as "nothing on".
     private(set) var profileIsEmpty: Bool = true
+    /// WP-203 — the distinct sports the profile's rules follow, in rule order.
+    /// Feeds the season-honest empty state: an empty board where EVERYTHING
+    /// followed is a known off-season sport gets «utenfor sesong — tavla fylles
+    /// fra …» instead of the generic "nothing right now" (SeasonCalendar).
+    private(set) var followedSports: [String] = []
 
     /// WP-67 — the EPHEMERAL presentation filter («vis bare golf denne uka»).
     /// nil ⇒ no filter (the board shows everything). NEVER persisted, never a
@@ -239,6 +244,7 @@ final class AgendaViewModel {
         liveNow = result.liveNow
         lastSync = result.lastSync
         profileIsEmpty = result.profileIsEmpty
+        followedSports = result.followedSports
         cachedEntityIndex = result.index
         liveSnapshot = (result.liveEvents, result.liveInterests)
     }
@@ -265,6 +271,9 @@ final class AgendaViewModel {
         var liveNow: [AgendaLiveRow]
         var lastSync: Date?
         var profileIsEmpty: Bool
+        /// WP-203 — distinct sports the profile follows (rule order), for the
+        /// season-honest empty state.
+        var followedSports: [String] = []
         /// The index the compute used (the cached one, or a freshly built one) —
         /// stored back so the next reload reuses it.
         var index: EntityIndex
@@ -372,12 +381,21 @@ final class AgendaViewModel {
         }
         return Reload(
             sections: sections, liveNow: liveNow, lastSync: dataStore.lastSync,
-            profileIsEmpty: profile.isEmpty, index: index,
+            profileIsEmpty: profile.isEmpty,
+            followedSports: Self.distinctSports(profile),
+            index: index,
             liveEvents: events, liveInterests: interests
         )
     }
 
     // MARK: - Pure core
+
+    /// WP-203 — the distinct sports a profile's rules follow, in rule order.
+    /// Pure; feeds the season-honest empty state via `followedSports`.
+    nonisolated static func distinctSports(_ profile: InterestProfile) -> [String] {
+        var seen = Set<String>()
+        return profile.rules.map(\.sport).filter { seen.insert($0).inserted }
+    }
 
     /// DataStore → FeedEvent-bridge → FeedCompiler.compile() → Europe/Oslo
     /// day sections. A pure function of its three inputs, per the file

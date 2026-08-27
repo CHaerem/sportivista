@@ -230,6 +230,16 @@ struct AgendaView: View {
                 }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
+        } else if let seasonNote = SeasonCalendar.emptyBoardExplanation(
+            followedSports: viewModel.followedSports,
+            month: SeasonCalendar.month(of: Date())
+        ) {
+            // WP-203: season-honest — everything followed is a known off-season
+            // sport, so say WHEN the board fills («skiskyting og langrenn er
+            // utenfor sesong. Sesongstart i november — tavla fylles da.») instead
+            // of the generic line below, which reads as a broken app to someone
+            // who just picked «Vintersport» in August.
+            emptyText(seasonNote)
         } else {
             emptyText("Ingen kommende arrangementer akkurat nå.")
         }

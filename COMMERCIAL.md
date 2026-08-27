@@ -382,10 +382,10 @@ høyeste nummer i bruk i dag.
 
 | WP | Tittel | Fase | Avhenger av | Størrelse | Status |
 |---|---|---|---|---|---|
-| WP-200 | Profilen former tavla (begge flater) + vektor-refrys | 1A | — | STOR, 2–3 uker | planlagt |
-| WP-201 | Ungate web-forsmaken | 1A | — | LITEN, ~1 uke | planlagt |
-| WP-202 | Onboarding selger ritualet: brief + varsel-priming + widget | 1A | WP-200 | MEDIUM, 1–2 uker | planlagt |
-| WP-203 | Sesongærlighet i startpakker og tomtilstand | 1A | WP-200 | LITEN, 2–4 kvelder | planlagt |
+| WP-200 | Profilen former tavla (begge flater) + vektor-refrys | 1A | — | STOR, 2–3 uker | ✅ #423 + #425 (web-agendaen) merget 29.07 (statusrad etter-rettet 27.08) |
+| WP-201 | Ungate web-forsmaken | 1A | — | LITEN, ~1 uke | ✅ #427 merget 29.07 (funksjonsgate i stedet for sidegate; statusrad etter-rettet 27.08) |
+| WP-202 | Onboarding selger ritualet: brief + varsel-priming + widget | 1A | WP-200 | MEDIUM, 1–2 uker | ✅ 27.08 — nytt `ritual`-steg mellom startpakkene og dybde-finishen: morgenbriefen + widget-instruksjonen som ro-celler, og ÉN varsel-beslutning primet FØR system-prompten (RitualPriming: ja = opt-in til brief-pinget, nei = ærlig Innstillinger-peker); UI-flytene oppdatert |
+| WP-203 | Sesongærlighet i startpakker og tomtilstand | 1A | WP-200 | LITEN, 2–4 kvelder | ✅ 27.08 — SeasonCalendar (ren månedtabell for vintersportene): startpakke-raden beregner «Sesongstart i november — tavla fylles da.» mot DAGENS dato (hardkodet prosa fjernet), og agendaens tomtilstand forklarer et tomt brett når alt fulgt er utenfor sesong («skiskyting og langrenn er utenfor sesong …») i stedet for det generiske «ingen kommende» |
 | WP-204 | StoreKit-betalingsmur (Sportivista+) | 1A | WP-200, WP-202 | STOR, 3–4 uker | planlagt |
 | WP-205 | Reklamasjonsvakten: verifiseringskjeden på betalt nivå | 1A | — | MEDIUM, 1–2 uker + 28d måling | planlagt |
 | WP-206 | Web-entitlement + delekort-landing | 1A | WP-201, WP-204 | LITEN–MEDIUM, ~1 uke | planlagt |
