@@ -327,7 +327,25 @@ to the side that owns it (server and client intentionally differ):
 - `LensRenderer.swift` — "rad = event × deltakelse × linse": with a
   `.throughNorwegians` / `.throughAthletes` lens active a golf tournament renders
   as "Reitan teer av 14:32" rather than "The Open" — a pure rendering layer, the
-  predicates and golden vectors untouched.
+  predicates and golden vectors untouched. HVILKEN linse som gjelder avgjøres i
+  `AgendaViewModel.applicableLensMode`: først en EKSPLISITT linse på en fulgt
+  regel, deretter (WP-249) en **avledet utøver-linse** — å følge en UTØVER betyr
+  «vis meg når HAN spiller», så en fulgt utøver som har sin EGEN starttid i
+  eventet gir athlete-linsen uten at regelen har lagret noen. Tre vakter holder
+  avledningen smal: kun utøver-entiteter (indeksen er fasit; kjenner den ikke
+  id-en — usynket indeks, eller en WP-164 soft-follow, hvis `soft-<slug>`-id
+  ikke finnes i noen indeks — gjelder eventets egen `norwegianPlayers`, sjekket
+  både på id OG NAVN, siden en soft-regel bare kan finnes på navn), kun når
+  dataene faktisk kjenner tiden hans (ellers står den vanlige raden — aldri en
+  oppdiktet klokke), og aldri over en eksplisitt linse.
+  **Tidskolonnen og dagen bestemmes ÉTT sted** (`AgendaViewModel.place`, som
+  returnerer `clock` sammen med dag/sortering): en utslagstid som ikke fikk
+  re-hjemle raden til dagen den vises på, får heller ikke skrive klokka —
+  raden viser eventets eget vindu i stedet. Samme regel som web
+  (`dashboard.js golfTeeHint`). `keptLensRows` holder ro-kontrakten: flere
+  KLOKKEDE rader per dag er greit (hver svarer på sitt eget «når»), men
+  vindus-raden vikes når en klokket rad står samme dag, og det står aldri mer
+  enn én vindus-rad per event per dag.
   Screenshots: i WP-ens PR (bevis-galleriet fjernet 20.07, regel 8; regenerer ved behov: `design/screens/generate.sh`).png`.
 
 ## Agenda

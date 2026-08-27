@@ -458,10 +458,11 @@ final class AgendaViewModel {
                 if let lensRows = LensRenderer.render(event: event, mode: mode, followedIds: followedIds) {
                     // Lens rows inherit the event's bell/accent (item 2 of the
                     // brief) and re-home to the athlete's effective day/time.
-                    for lensRow in lensRows {
-                        let (dayKey, sortTime) = place(lensRow, event: feedEvent, compiledDay: day.key, todayKey: todayKey)
-                        let row = makeLensRow(lensRow, event: event, feedEvent: feedEvent, mustWatch: mustWatch, mustSee: mustSee, interests: interests, now: now, index: index, identityIndex: identityIndex, followedIds: followedIds, shield: shield, cache: nameCache)
-                        placed.append(Placed(dayKey: dayKey, sortTime: sortTime, item: .event(row)))
+                    let spots = lensRows.map { place($0, event: feedEvent, compiledDay: day.key, todayKey: todayKey) }
+                    for i in keptLensRows(lensRows, spots: spots) {
+                        let (lensRow, spot) = (lensRows[i], spots[i])
+                        let row = makeLensRow(lensRow, clock: spot.clock, event: event, feedEvent: feedEvent, mustWatch: mustWatch, mustSee: mustSee, interests: interests, now: now, index: index, identityIndex: identityIndex, followedIds: followedIds, shield: shield, cache: nameCache)
+                        placed.append(Placed(dayKey: spot.dayKey, sortTime: spot.sortTime, item: .event(row)))
                     }
                 } else if let item = makeItem(compiled, lookup: lookup, interests: interests, now: now, index: index, identityIndex: identityIndex, followedIds: followedIds, shield: shield, cache: nameCache) {
                     // No lens applies → the ordinary WP-16.4 row, untouched.
@@ -553,40 +554,200 @@ final class AgendaViewModel {
 
     // MARK: - Lens rendering (WP-18 — P320: event × deltakelse × linse)
 
-    /// The day + sort time a lens row lands on. The athlete's effective (tee)
-    /// time OVERRIDES the event's — but a STALE, past tee time must never
-    /// silently drop the whole event, so it only re-homes when the tee day is
-    /// today-or-later; otherwise the row keeps the event's own (already
-    /// multi-day-re-homed) day and sorts on the event start. An untimed lens row
-    /// (no tee time — the honest degradation) always keeps the event's day/time.
-    nonisolated private static func place(_ lensRow: LensRenderer.LensRow, event feedEvent: FeedEvent, compiledDay: String, todayKey: String) -> (dayKey: String, sortTime: Date?) {
+    /// Where one lens row lands — day, sort time, AND the clock its time column
+    /// may show. The athlete's effective (tee) time OVERRIDES the event's — but a
+    /// STALE, past tee time must never silently drop the whole event, so it only
+    /// re-homes when the tee day is today-or-later; otherwise the row keeps the
+    /// event's own (already multi-day-re-homed) day and sorts on the event start.
+    /// An untimed lens row (no tee time — the honest degradation) always keeps
+    /// the event's day/time.
+    ///
+    /// `clock` is the time column's ONLY licence to print a clock, and it is
+    /// non-nil in exactly one case: the row was RE-HOMED to the tee day. That is
+    /// the whole point of returning it here rather than letting the row formatter
+    /// read `lensRow.effectiveTime` again — the two used to decide separately,
+    /// and only this one had the day guard. A tournament frozen mid-week (a
+    /// `retainLastGood` re-serve, or `parseTeeTimeToUTC` anchoring a string tee
+    /// time to the tournament's START date for every round) then put YESTERDAY's
+    /// clock in today's time column: the row correctly refused to move, and then
+    /// announced 17:24 anyway. The product's face is literally the time column
+    /// (DESIGN.md § Display-font), and Grunnlov 3 is «aldri lat som» — no proof
+    /// the clock belongs to the day we are drawing, no clock. The row keeps the
+    /// event's own honest window instead. Same rule the web board already
+    /// applies (`dashboard.js golfTeeHint`: the hint requires a `teeTimeUTC`
+    /// whose Oslo day IS today, «en gammel tee-tid … ville vært en løgn»).
+    nonisolated private static func place(_ lensRow: LensRenderer.LensRow, event feedEvent: FeedEvent, compiledDay: String, todayKey: String) -> (dayKey: String, sortTime: Date?, clock: Date?) {
         if let eff = lensRow.effectiveTime {
             let effDay = FeedCompiler.osloDayKey(eff)
-            if effDay >= todayKey { return (effDay, eff) }
+            if effDay >= todayKey { return (effDay, eff, eff) }
         }
-        return (compiledDay, feedEvent.time)
+        return (compiledDay, feedEvent.time, nil)
     }
 
-    /// The LENS to render an event through: the first followed rule carrying a
-    /// non-default lens whose entity actually participates in the event
-    /// (`.sportAsSuch` — no lens — when there is none, the common case). Maps
-    /// the Assistant `Lens` → the Feed-local `LensMode` the renderer consumes,
-    /// so the renderer stays free of the Assistant module (widget-buildable).
+    /// Which of an event's lens rows survive to the board — the calm contract's
+    /// «ÉN rad per event per dag» applied to the one place that can legitimately
+    /// break it.
+    ///
+    /// A CLOCKED row earns its own row: it answers «når spiller han» with a time
+    /// nothing else on the board carries, and that is exactly why WP-18 renders
+    /// one row per distinct tee time. A WINDOWED row (no clock — either
+    /// `LensRenderer`'s honest untimed degradation, or a stale tee time the guard
+    /// above just stripped) answers «når» with the tournament's own multi-day
+    /// window — the very row the lens set out to improve on. So per DAY:
+    ///
+    ///   • any clocked row present ⇒ the windowed rows on that day are dropped.
+    ///     Following Hovland (teeing off 17:24) and a cut Reitan (`golf.js`
+    ///     `isOutOfTournament` nulls his tee time) used to print BOTH «17:24
+    ///     Hovland teer av» and a bare «27.–30. aug. TOUR Championship» — the
+    ///     same tournament twice in one day, the second row repeating the
+    ///     question instead of answering it.
+    ///   • no clocked row ⇒ exactly ONE windowed row stands, preferring
+    ///     `LensRenderer`'s own untimed row (`effectiveTime == nil`): it is the
+    ///     combined degradation that NAMES every untimed athlete, and its title
+    ///     is the plain event title — no «teer av» verb with no clock behind it.
+    ///
+    /// Rows on DIFFERENT days never suppress each other: a tee time tomorrow
+    /// plus an untimed athlete today are two different answers on two different
+    /// days, and both stand. Nothing is lost that the board owed the reader —
+    /// the full field, every Norwegian with their tee time and playing partners,
+    /// is one tap away in the detail sheet (WP-250 `GolfField`).
+    nonisolated private static func keptLensRows(
+        _ lensRows: [LensRenderer.LensRow],
+        spots: [(dayKey: String, sortTime: Date?, clock: Date?)]
+    ) -> [Int] {
+        // One row can never collide with itself — the overwhelmingly common case
+        // (one followed athlete in the event), kept allocation-free.
+        guard spots.count > 1 else { return Array(spots.indices) }
+        let daysWithClock = Set(spots.filter { $0.clock != nil }.map(\.dayKey))
+        // The windowed row that gets to stand for each clock-less day: the
+        // untimed degradation when there is one, else the first.
+        var windowKeeper: [String: Int] = [:]
+        for i in spots.indices where spots[i].clock == nil && !daysWithClock.contains(spots[i].dayKey) {
+            let day = spots[i].dayKey
+            guard let held = windowKeeper[day] else { windowKeeper[day] = i; continue }
+            if lensRows[held].effectiveTime != nil && lensRows[i].effectiveTime == nil { windowKeeper[day] = i }
+        }
+        return spots.indices.filter { spots[$0].clock != nil || windowKeeper[spots[$0].dayKey] == $0 }
+    }
+
+    /// The LENS to render an event through, resolved in two steps:
+    ///
+    ///  1. An EXPLICIT lens — the first followed rule carrying a non-default
+    ///     `lens` whose entity actually participates in the event. Maps the
+    ///     Assistant `Lens` → the Feed-local `LensMode` the renderer consumes, so
+    ///     the renderer stays free of the Assistant module (widget-buildable).
+    ///  2. Failing that, the DERIVED athlete lens (WP-249, below).
+    ///
+    /// `.sportAsSuch` — no lens, the ordinary row — when neither applies. An
+    /// EMPTY profile returns before either step: no profile, no lens.
     nonisolated static func applicableLensMode(for feedEvent: FeedEvent, event: Event, profile: InterestProfile, index: EntityIndex) -> LensMode {
+        guard !profile.rules.isEmpty else { return .sportAsSuch }
         let lensed = profile.rules.filter { !$0.lens.isDefault }
-        guard !lensed.isEmpty else { return .sportAsSuch }
-        let hay = FeedCompiler.serverHaystack(feedEvent)
-        for rule in lensed where ruleMatches(rule, event: event, hay: hay, index: index) {
-            switch rule.lens {
-            case .sportAsSuch:
-                continue
-            case .throughNorwegians:
-                return .throughNorwegians
-            case let .throughAthletes(athletes):
-                return .throughAthletes(ids: Set(athletes.map(\.entityId)), names: athletes.map(\.name))
+        if !lensed.isEmpty {
+            let hay = FeedCompiler.serverHaystack(feedEvent)
+            for rule in lensed where ruleMatches(rule, event: event, hay: hay, index: index) {
+                switch rule.lens {
+                case .sportAsSuch:
+                    continue
+                case .throughNorwegians:
+                    return .throughNorwegians
+                case let .throughAthletes(athletes):
+                    return .throughAthletes(ids: Set(athletes.map(\.entityId)), names: athletes.map(\.name))
+                }
             }
         }
-        return .sportAsSuch
+        return derivedAthleteLens(event: event, profile: profile, index: index) ?? .sportAsSuch
+    }
+
+    /// WP-249 — the DERIVED athlete lens: following an ATHLETE means «vis meg når
+    /// HAN spiller».
+    ///
+    /// The machinery above it has been complete since WP-18 — `LensRenderer`
+    /// splits a golf tournament into one row per tee time and re-homes each row
+    /// to the athlete's own day and time. But only a rule that had been given a
+    /// non-default `lens` ever reached it, and a lens is set in exactly two
+    /// places (the assistant, and the DEBUG demo seeds). An ordinary «Følg Viktor
+    /// Hovland» tap therefore left the rule on the default lens, the renderer
+    /// declined, and the board showed the tournament's nominal 04:00 window —
+    /// while his 17:24 tee time sat unread in the very same event.
+    ///
+    /// So the lens is DERIVED from PARTICIPATION rather than read off the rule.
+    /// Deriving (instead of stamping a lens at follow-time) also repairs every
+    /// rule already saved on every device, with no migration.
+    ///
+    /// Three guards keep it narrow and honest:
+    ///
+    ///   • **Athletes only.** A rule qualifies only when the entity index types
+    ///     it `athlete` — the index is the authority. When the index doesn't
+    ///     know the id at all — an UNSYNCED index, or a WP-164 SOFT-FOLLOW,
+    ///     whose id is `soft-<slug>` and so matches no entity anywhere — the
+    ///     event's own `norwegianPlayers` list stands in: it is an athlete list
+    ///     by construction, so appearing there IS the proof. It is checked BY ID
+    ///     **and BY NAME**, because a soft rule has no real id to be found under:
+    ///     `norwegianPlayers[].entityId` is stamped from `entities.json` by
+    ///     `build-events.js` and never carries the `soft-` prefix, so an id-only
+    ///     test is structurally false for every soft rule — the fallback would
+    ///     have covered only the unsynced half of what it claimed. Name is the
+    ///     axis WP-164 designed a soft-follow to travel on («FeedQuery /
+    ///     EffectiveInterests are already name-tolerant … a soft rule simply
+    ///     starts matching the moment coverage arrives»), and `ruleMatches` puts
+    ///     the same rule on the board by the same name — so the row you were
+    ///     shown for Hovland now also knows Hovland's tee time. A team /
+    ///     tournament / league / sport follow can never acquire this lens: the
+    ///     index types them, and a team's name is not in a player list.
+    ///   • **Only when the data knows his time.** The lens fires only if one of
+    ///     those followed athletes has a per-athlete start time in THIS event.
+    ///     With no such time there is nothing to answer «når spiller han» with,
+    ///     so the ordinary row stands — no fabricated clock (P320), and no
+    ///     cosmetic rewrite of rows in sports that carry no per-athlete timing.
+    ///   • **Never over an explicit lens.** The caller reaches this only after
+    ///     the explicit-lens pass has declined, so a deliberate
+    ///     `.throughNorwegians` / `.throughAthletes` still wins.
+    ///
+    /// Returns nil when it does not apply, so the caller falls back to
+    /// `.sportAsSuch` and the ordinary row is rendered untouched.
+    nonisolated private static func derivedAthleteLens(event: Event, profile: InterestProfile, index: EntityIndex) -> LensMode? {
+        // Fast path — and guard 2's cheap half: an event that knows NO per-athlete
+        // start time can never answer «når spiller han», so it leaves here without
+        // the profile being walked at all. That is most events, and every sport
+        // that carries no per-athlete timing.
+        guard event.norwegianPlayers.contains(where: { $0.teeTimeUTC != nil }) else { return nil }
+
+        var ids = Set<String>()
+        var names: [String] = []
+        var seenName = Set<String>()
+        for rule in profile.rules where rule.lens.isDefault {
+            let entity = index.entity(id: rule.entityId)
+            // The index is the AUTHORITY on what a followed entity is. Only when
+            // it doesn't know this id (an unsynced index, or a soft-follow, whose
+            // `soft-<slug>` id is in no index by construction) do we fall back to
+            // the event's own `norwegianPlayers` — an athlete list by
+            // construction, so appearing there IS proof. By id OR by name: a soft
+            // rule can only ever be found by name (see the doc comment).
+            let isAthlete = entity.map { $0.type == "athlete" } ?? event.norwegianPlayers.contains {
+                $0.entityId == rule.entityId || TextMatch.normalize($0.name) == TextMatch.normalize(rule.entityName)
+            }
+            guard isAthlete else { continue }
+            ids.insert(rule.entityId)
+            // The rule's cached name plus the index's name/aliases — the same
+            // term set `ruleMatches` builds, so an athlete whose participation
+            // line carries no entity id still matches by name.
+            for term in [rule.entityName] + (entity.map { [$0.name] + $0.aliases } ?? []) {
+                let key = TextMatch.normalize(term)
+                guard !key.isEmpty, seenName.insert(key).inserted else { continue }
+                names.append(term)
+            }
+        }
+        guard !ids.isEmpty else { return nil }
+
+        let wanted = seenName
+        let knowsHisTime = event.norwegianPlayers.contains { player in
+            guard player.teeTimeUTC != nil else { return false }
+            if let id = player.entityId, ids.contains(id) { return true }
+            return wanted.contains(TextMatch.normalize(player.name))
+        }
+        guard knowsHisTime else { return nil }
+        return .throughAthletes(ids: ids, names: names)
     }
 
     /// Whether `rule`'s followed entity participates in `event`: an authoritative
@@ -606,14 +767,18 @@ final class AgendaViewModel {
     }
 
     /// Build the view-ready `AgendaEventRow` for one lens row. The time column
-    /// shows the athlete's effective time when present (else the event's own
-    /// label — a window for a multi-day tournament); the meta line is the lens's
+    /// shows `clock` — the athlete's own time, but ONLY as `place` licensed it
+    /// (the row was re-homed to that day); nil means the event's own label, a
+    /// window for a multi-day tournament. It is passed in rather than re-derived
+    /// from `lensRow.effectiveTime` precisely so the label cannot disagree with
+    /// the day the row is filed under — see `place`. The meta line is the lens's
     /// (status verbatim / names), falling back to the event's tournament only
     /// when the lens carries none. Everything else — channel, bell, accent, AI
     /// provenance, the FULL event for the detail sheet — comes straight from the
     /// event, so the detail sheet still shows the whole event unchanged.
     nonisolated private static func makeLensRow(
         _ lensRow: LensRenderer.LensRow,
+        clock: Date?,
         event: Event,
         feedEvent: FeedEvent,
         mustWatch: Bool,
@@ -626,24 +791,34 @@ final class AgendaViewModel {
         shield: SpoilerShield,
         cache: NameResolveCache? = nil
     ) -> AgendaEventRow {
-        let timeLabel = lensRow.effectiveTime.map { AgendaFormat.timeLabel(time: $0, endTime: nil) }
+        let timeLabel = clock.map { AgendaFormat.timeLabel(time: $0, endTime: nil) }
             ?? AgendaFormat.timeLabel(time: feedEvent.time, endTime: feedEvent.endTime)
+        // A tee time `place` refused to stand behind (stale — see there) leaves
+        // the row with no clock. It must then read as exactly what it now is:
+        // LensRenderer's own untimed degradation — the event's own title and the
+        // athlete NAMES in the meta. Never «Hovland teer av» over a four-day
+        // window (a verb with no clock behind it), and never a status lifted from
+        // the same frozen record that produced the bad time.
+        let stale = clock == nil && lensRow.effectiveTime != nil
+        let title = stale ? event.title : lensRow.title
+        let staleNames: String? = lensRow.athleteNames.isEmpty ? nil : lensRow.athleteNames.joined(separator: " · ")
+        let detail: String? = stale ? staleNames : lensRow.metaDetail
         let spoilerSafe = shield.spoilerSafe(event: event)
         // WP-30: the lens meta detail is the athlete's status VERBATIM (score /
         // placement) — a spoiler for someone avoiding results. When not safe,
         // fall back to the neutral tournament meta so no outcome leaks into the
         // agenda row (the detail sheet handles the fuller masking + reveal).
-        let neutralMeta = AgendaFormat.metaLabel(tournament: event.tournament, title: lensRow.title)
+        let neutralMeta = AgendaFormat.metaLabel(tournament: event.tournament, title: title)
         // WP-147: reshape a golf player-status meta ("R2 · −4 · T8") into calm copy
         // ("Runde 2 · −4") for the row — round written out, leaderboard placement
         // dropped. Non-golf metas and the followed-NAMES degradation pass through
         // unchanged; nil (a bare placement) falls back to the neutral tournament meta.
-        let lensMeta = lensRow.metaDetail.flatMap { AgendaFormat.humanizeGolfMeta($0, sport: event.sport) }
+        let lensMeta = detail.flatMap { AgendaFormat.humanizeGolfMeta($0, sport: event.sport) }
         let meta = spoilerSafe ? (lensMeta ?? neutralMeta) : neutralMeta
         return AgendaEventRow(
             id: EventBridge.stableId(for: event) + "|" + lensRow.idSuffix,
             timeLabel: timeLabel,
-            title: lensRow.title,
+            title: title,
             metaLabel: meta,
             channelLabel: AgendaFormat.channelLabel(event.streaming),
             isMustSee: mustSee,
