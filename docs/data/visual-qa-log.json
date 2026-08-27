@@ -1,17 +1,26 @@
 {
-  "checkedAt": "2026-08-26T08:38:28Z",
+  "checkedAt": "2026-08-27T18:47:53Z",
   "widths": [375, 393, 900],
-  "verdict": "pass",
-  "findings": [],
+  "verdict": "issues",
+  "findings": [
+    {
+      "width": 393,
+      "area": "agenda row (Bundesliga, LØRDAG 29. AUGUST)",
+      "issue": "'RB Leipzig – Borussia Mönchengladbach' wraps mid-word with no hyphen: 'Mönchengladbac' on one line and a lone 'h' on the next. Not truncated/hidden info, just an unpolished hard break on a long word at this column width.",
+      "severity": "low"
+    }
+  ],
   "notes": [
-    "Match names read fully at all three widths, no truncation observed (e.g. 'Viking - Dinamo Zagreb', 'Coventry City - Hull City', 'Tottenham Hotspur - Newcastle United' all render whole).",
-    "Every event row shows a channel, and every channel visible is Norwegian: TV 2 Play, Viaplay, Discovery+, HBO Max (Sport), YouTube (Saint Louis Chess Club) - no ESPN/FOX/Sky spotted.",
-    "Times are present and consistently formatted (e.g. 18:15, 19:00, 21:30); multi-day/tournament entries show date ranges (e.g. '22. august-13. september') correctly rather than a single misleading date.",
-    "Flags and tournament/club icons render as small glyphs/crests, not broken image boxes, at all three widths.",
-    "Single quiet column, day-grouped agenda, generous spacing at all widths - no cluttered grid.",
-    "375px (iPhone SE) width - the tightest breakpoint - shows no visible horizontal clipping or overflow; right-edge chevron/info icons are intact on every row.",
-    "900px (desktop) shot: the floating 'Assistent' button rests over the mid-agenda 'Viking - Dinamo Zagreb' row, not the last agenda row or the footer - this matches the DESIGN.md-sanctioned floating-button idiom, not a finding.",
-    "Header, day headings ('I DAG', 'I MORGEN', 'FREDAG 28. AUGUST', ...), and footer ('Merker og kilder', install/app-promo text) are intact and aligned on all three widths.",
-    "Full-page screenshot capture only shows content within the viewport's own scroll flow, so sub-pixel/edge-case horizontal overflow (e.g. a single stray wide element) can't be fully ruled out from these images alone - flagging as a coverage caveat, not a finding."
+    "Match names read in full at all three widths once zoomed in - long titles wrap onto 2-3 lines rather than truncate (e.g. 'Husqvarna British Masters hosted by Sir Nick Faldo', 'Union Berlin – Eintracht Frankfurt'); no hidden info.",
+    "Every event row shows a channel and every one seen is Norwegian: Viaplay, TV 2 Play, VG+ Sport, HBO Max (Sport), NRK, Discovery+, YouTube (Saint Louis Chess Club), BLAST Premier (Twitch) - no ESPN/FOX/Sky.",
+    "Cross-checked the same fixture in two places on the page (DIREKTE NÅ live-now list vs. the agenda row) for 'Brighton – Tromsø' and 'Brann – PAOK': channel labels matched exactly both places (Viaplay and VG+ Sport respectively) - no contradiction, despite looking that way in a lower-resolution first pass.",
+    "The golf meta line 'Reitan ut 18:06' under TOUR Championship is by-design (dashboard.js golfTeeHint: surname + next Norwegian tee time), not a data glitch - confirmed by reading the code comment and the event's norwegianPlayers data.",
+    "Team crests/flags render as distinct small logos at all three widths, no broken-image icons.",
+    "Single quiet column, day-grouped agenda ('I DAG', 'I MORGEN', 'LØRDAG 29. AUGUST', ...), generous spacing, not cluttered.",
+    "375px width: no horizontal overflow (confirmed via scrollWidth vs clientWidth in-page, not just visually), no clipped right-edge chevrons/info icons.",
+    "Bottom of the page (375px): footer ('Oppdatert for 5 min siden', 'Abonner i kalender', 'AI-budsjett'), 'Dette dekker vi'/'Merker og kilder' disclosures and the floating Assistent button all sit clear of one another - the button does not occlude the last agenda content or the footer.",
+    "900px width: the floating Assistent button sits in the empty margin beside the 640px column - correct, not a finding (DESIGN.md-sanctioned).",
+    "Must-see accent dots appear sparingly (a handful of rows per day), not on every row.",
+    "Header, day headings, and footer intact and aligned at all three widths."
   ]
 }
