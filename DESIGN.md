@@ -339,13 +339,34 @@ Regelen er: **der du kan gjøre noe, kan du angre det, på samme sted.**
 - **Angre, ikke bekreft.** Ingen modal spør først. Raden BLIR STÅENDE og vipper
   til motsatt handling — «Slutt å følge Lyn» blir «Følg Lyn», ett trykk tilbake —
   og én stille kvitteringslinje under radene sier hva som skjedde og at neste
-  trykk angrer. Det ENESTE unntaket er en BRED følging (en hel sport eller
-  kategori): den spør fortsatt, fordi å følge sporten igjen ikke gir deg tilbake
-  lagene og utøverne du hadde under den.
-- **Ikke destruktiv-rødt.** «Slutt å følge» bærer `label`-blekk med en dempet
-  `minus.circle`; `destructive`-tokenet er forbeholdt slett/nullstill. Amber
-  blir stående på «Følg» — den fremadrettede handlingen. Tilgjengelighet er
-  symmetrien; lik tyngde ville gjort arket til et redigeringsverktøy.
+  trykk angrer.
+- **Angre GJENOPPRETTER regelen, den lager ingen ny.** Trykket tilbake kjører
+  `AssistantViewModel.restore` med regelen avfølgingen returnerte, ikke
+  `follow(entity)`. En følging kan bære avgrensning («bare i Grand Slams») og
+  perspektiv («gjennom norske») som er BRUKERSYNLIGE i Det du følger; en angre
+  som bygger en fersk standardregel ville stille utvidet følgingen. Løftet i
+  kvitteringen er ufravikelig: angre skal ikke etterlate spor.
+- **Kvitteringen sier det som faktisk skjer.** Var dette det SISTE du fulgte,
+  sier linjen at agendaen viser bredt igjen — ikke ingenting. En tom profil gir
+  `EffectiveInterests` grunn-interessene tilbake og kompilatoren faller til sin
+  brede standard, så tavla blir STØRRE. Én ærlig setning, ingen dialog, ingen
+  advarsel.
+- **Unntaket som spør: BRED følging** (en hel sport eller kategori,
+  `FollowGroup.isBroadSweep`). Ikke fordi den er uopprettelig — den er ikke det:
+  `InterestProfile.applying(.remove)` fjerner ÉN regel, uten kaskade, og lagene
+  og utøverne du følger enkeltvis blir stående (det er også nøyaktig det
+  dialogteksten sier). Grunnen er OMFANG: en sportsregel er den eneste som
+  slipper inn events en gros, så ett trykk kan tømme mesteparten av tavla — og
+  da er én angre-rad lett å miste av syne i alt som endrer seg under den.
+- **Ikke destruktiv-rødt, og ikke halvfet.** «Slutt å følge» bærer `label`-blekk
+  i VANLIG vekt med en dempet `minus.circle`; `destructive`-tokenet er forbeholdt
+  slett/nullstill. Amber OG halvfet blir stående på «Følg» — den fremadrettede
+  handlingen. Tilgjengelighet er symmetrien; lik tyngde ville gjort arket til et
+  redigeringsverktøy — og gjorde det: et event kan handle om inntil tre subjekter
+  (`AgendaViewModel.subjects` kapper på tre), og følger du alle, ble HANDLINGER
+  tre halvfete «Slutt å følge»-rader rett under ARENA, tyngre enn noe annet i et
+  ark du åpnet for å se hvor kampen går. Vanlig vekt er hva som holder raden
+  tilgjengelig uten at den krever noe.
 - **Aldri fra en gest på tavla.** Venstre-sveip på en agendarad tilbyr fortsatt
   bare «Følg». Det finnes med vilje ingen sveip for å slutte å følge: agendaen
   er en agenda, og en avfølging skal aldri være ett feilstrøk unna.
@@ -484,16 +505,25 @@ Destruktive rader → ett rolig bekreftelses-ark (aldri system-alert var påkrev
 men native `confirmationDialog`/sheet er nå tillatt): eksakt konsekvens i én
 setning + Nullstill/Avbryt.
 
-**Presisering — hva som er destruktivt (WP-252):** «destruktiv» betyr **noe du
-ikke kan gjøre om ved å gjenta handlingen** — Nullstill, «glem alt jeg vet om
-deg», og en BRED følging (hel sport / kategori, `FollowGroup.isBroadSweep`, der
-å følge igjen ikke gir tilbake det som lå under). Å slutte å følge ÉN utøver,
-ETT lag, ÉN turnering eller ÉN liga er det ikke: det angres ved å følge igjen.
-Slike rader spør derfor IKKE først — de utfører og tilbyr **Angre** etterpå (i
-lista: sveip → fjern → «Angre»-snackbar; i eventarket: raden vipper tilbake til
-«Følg»). En modal foran en triviell reversering koster et trykk HVER gang og
-beskytter mot nesten ingenting; dobbelt opp — først spørre og så tilby angre —
-er ren friksjon (det var akkurat det «Det du følger» gjorde før WP-252).
+**Presisering — hva som er destruktivt, og hva som bare er stort (WP-252):**
+«destruktiv» betyr **noe du ikke kan gjøre om ved å gjenta handlingen** —
+Nullstill og «glem alt jeg vet om deg». Å slutte å følge er ALDRI det, uansett
+hvor bredt: `InterestProfile.applying(.remove)` fjerner ÉN regel, uten kaskade,
+og angre GJENOPPRETTER den regelen (`AssistantViewModel.restore`) med
+avgrensning, perspektiv og vekt i behold — ikke en ny standardregel. Slike rader
+spør derfor IKKE først: de utfører og tilbyr **Angre** etterpå (i lista: sveip →
+fjern → «Angre»-snackbar; i eventarket: raden vipper tilbake til «Følg»). En
+modal foran en reversering koster et trykk HVER gang; dobbelt opp — først spørre
+og så tilby angre — er ren friksjon (det var akkurat det «Det du følger» gjorde
+før WP-252).
+
+Ett tilfelle spør likevel, og grunnen er **omfang, ikke uopprettelighet**: en
+BRED følging (hel sport / kategori, `FollowGroup.isBroadSweep`). Sportsregelen
+er den eneste som slipper inn events en gros, så å fjerne den kan tømme
+mesteparten av tavla i ett trykk — en endring så stor at angre-raden lett
+drukner i den. Dialogen sier eksakt hva som skjer OG hva som består («Lag og
+utøvere du følger enkeltvis blir stående»); den påstår aldri at handlingen ikke
+kan angres.
 
 ## Tema
 

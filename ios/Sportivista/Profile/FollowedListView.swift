@@ -19,11 +19,17 @@
 //  WP-252 removed the confirmation dialog that sat in FRONT of that snackbar.
 //  Asking «Slutt å følge X?» and THEN offering «Angre» guards the same tap
 //  twice: the modal cost a tap every single time and protected against almost
-//  nothing, since re-following is one tap away. Undo afterwards is calmer and
-//  more forgiving than asking first. The ONE case that still asks is a BROAD
-//  sweep — a whole sport or an umbrella category (`FollowGroup.isBroadSweep`) —
-//  where «du kan bare følge igjen» is not true in the way it is for a single
-//  team: re-following «fotball» does not bring back the clubs you had under it.
+//  nothing, since undo is one tap away. Undo afterwards is calmer and more
+//  forgiving than asking first. The ONE case that still asks is a BROAD sweep —
+//  a whole sport or an umbrella category (`FollowGroup.isBroadSweep`) — and the
+//  reason is its SIZE, not its permanence: a sport rule is the only kind that
+//  admits events wholesale, so one tap can empty most of the board.
+//
+//  «Angre» RESTORES the removed rule (`AssistantViewModel.restore`) rather than
+//  re-following a resolved entity, so a follow's scope, lens and weight survive
+//  it — a re-follow rebuilds the rule from scratch and drops all three, and two
+//  of them are shown to the user on the follow's own detail («Avgrensning»,
+//  «Perspektiv»). It also needs no snapshot to work (see UndoState).
 //  The next-event / news / grouping is the pure `FollowPresenter` (reusing the
 //  lens's own matching — no new fuzzy); writes still go through the one apply
 //  path (`AssistantViewModel.follow` / `.removeRule`).
@@ -56,11 +62,18 @@ struct FollowedListView: View {
 
     private var rules: [InterestRule] { viewModel.profile.rules }
 
+    /// WP-252 — the removed follow, held for the «Angre» snackbar. It carries the
+    /// RULE and nothing else: undo restores that rule verbatim
+    /// (`AssistantViewModel.restore`) instead of re-following a resolved entity.
+    ///
+    /// The old shape also carried an `Entity?` resolved from the presenter
+    /// snapshot, and «Angre» silently did NOTHING when that was nil — reachable
+    /// from `FollowDetailView`, whose «Slutt å følge» button is live before its
+    /// `.task` has built a snapshot. A rule knows its own name, sport, scope,
+    /// lens and weight, so it needs no lookup to come back.
     private struct UndoState: Identifiable {
         let id = UUID()
         let rule: InterestRule
-        /// The resolved entity to re-follow on «Angre» (nil only if unresolvable).
-        let entity: Entity?
     }
 
     var body: some View {
@@ -78,8 +91,8 @@ struct FollowedListView: View {
                         ForEach(section.rules) { rule in
                             NavigationLink {
                                 FollowDetailView(viewModel: viewModel, rule: rule,
-                                                 onStopped: { stopped, entity in
-                                                     withAnimation { undo = UndoState(rule: stopped, entity: entity) }
+                                                 onStopped: { stopped in
+                                                     withAnimation { undo = UndoState(rule: stopped) }
                                                  })
                             } label: {
                                 followRow(rule)
@@ -106,8 +119,8 @@ struct FollowedListView: View {
                     ForEach(rules) { rule in
                         NavigationLink {
                             FollowDetailView(viewModel: viewModel, rule: rule,
-                                             onStopped: { stopped, entity in
-                                                 withAnimation { undo = UndoState(rule: stopped, entity: entity) }
+                                             onStopped: { stopped in
+                                                 withAnimation { undo = UndoState(rule: stopped) }
                                              })
                         } label: {
                             followRow(rule)
@@ -193,7 +206,7 @@ struct FollowedListView: View {
                     .lineLimit(1)
                 Spacer(minLength: 8)
                 Button("Angre") {
-                    if let entity = u.entity { viewModel.follow(entity, reason: u.rule.reason) }
+                    viewModel.restore(u.rule)
                     undo = nil
                 }
                 .font(.sportivista(.subheadline, weight: .semibold))
@@ -226,10 +239,9 @@ struct FollowedListView: View {
     }
 
     private func stopFollowing(_ rule: InterestRule) {
-        let entity = snapshot?.presenter.entity(for: rule)
         viewModel.removeRule(rule)
         confirmingStop = nil
-        withAnimation { undo = UndoState(rule: rule, entity: entity) }
+        withAnimation { undo = UndoState(rule: rule) }
     }
 
     private func rebuildSnapshot() {
@@ -258,8 +270,9 @@ struct FollowDetailView: View {
     let rule: InterestRule
     /// WP-252 — the follow was stopped here and this screen popped. The list
     /// underneath raises its «Angre» snackbar, so the undo survives the
-    /// navigation instead of disappearing with the screen that offered it.
-    var onStopped: (InterestRule, Entity?) -> Void = { _, _ in }
+    /// navigation instead of disappearing with the screen that offered it. It
+    /// passes the RULE, which is all a restore needs.
+    var onStopped: (InterestRule) -> Void = { _ in }
 
     @State private var snapshot: AssistantViewModel.FollowSnapshot?
     /// The composed entity page (WP-170) — loaded off the main actor.
@@ -442,7 +455,8 @@ struct FollowDetailView: View {
         .sheet(item: $detailRow) { row in
             EventDetailSheet(row: row,
                              onFollow: { viewModel.follow($0) },
-                             onUnfollow: { viewModel.unfollow($0) })
+                             onUnfollow: { viewModel.unfollow($0) },
+                             onRestore: { viewModel.restore($0) })
         }
         // WP-252 — only a BROAD follow (whole sport / category) still asks.
         .confirmationDialog(
@@ -468,10 +482,9 @@ struct FollowDetailView: View {
     }
 
     private func stopFollowing() {
-        let resolved = snapshot?.presenter.entity(for: rule)
         viewModel.removeRule(rule)
         confirmingStop = false
-        onStopped(rule, resolved)
+        onStopped(rule)
         dismiss()
     }
 

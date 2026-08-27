@@ -285,7 +285,7 @@ struct ContentView: View {
                     liveNowLine
                     filterLine
                     AgendaView(viewModel: agenda, liveStore: liveStore, onFollow: follow,
-                               onUnfollow: unfollow,
+                               onUnfollow: unfollow, onRestore: restore,
                                onOpen: { assistant.recordOpened($0) },
                                openEventID: $requestedEventID)
                 case .nyheter:
@@ -489,9 +489,14 @@ struct ContentView: View {
                 // follow (renders «Slutt å følge»), one you don't («Følg»), in
                 // one deterministic sheet, offline. Tapping either flips it in
                 // place: the sheet IS the undo.
-                if mode == "follow-sheet" {
-                    let row = FollowSymmetryDemoSeed.row()
-                    try? profileStore.save(FollowSymmetryDemoSeed.profile())
+                // `follow-sheet-tett` is the SAME sheet in its densest honest
+                // state: both teams AND the tournament followed, so HANDLINGER
+                // carries three «Slutt å følge» rows (the subject cap is three).
+                if mode == "follow-sheet" || mode == "follow-sheet-tett" {
+                    let dense = mode == "follow-sheet-tett"
+                    let row = FollowSymmetryDemoSeed.row(dense: dense)
+                    try? profileStore.save(dense ? FollowSymmetryDemoSeed.denseProfile()
+                                                 : FollowSymmetryDemoSeed.profile())
                     assistant.reloadProfile()
                     demoSheet = .followSheet(row)
                 }
@@ -688,7 +693,7 @@ struct ContentView: View {
             case .memory: WhatIKnowView(viewModel: assistant)
             case .spoiler(let row): EventDetailSheet(row: row)
             case .followSheet(let row):
-                EventDetailSheet(row: row, onFollow: follow, onUnfollow: unfollow)
+                EventDetailSheet(row: row, onFollow: follow, onUnfollow: unfollow, onRestore: restore)
             case .assistantResult: AssistantSheetView(viewModel: assistant, dismiss: closeSheet)
             case .share: ProfileShareSheet(viewModel: assistant)
             }
@@ -709,9 +714,16 @@ struct ContentView: View {
     /// WP-252 — «Slutt å følge <entitet>» tapped in the same detail sheet. The
     /// mirror of `follow` all the way down: `AssistantViewModel.unfollow` resolves
     /// the rule and reuses `removeRule`, so this persists + recompiles the agenda
-    /// through exactly the path Deg › Det du følger uses.
-    private func unfollow(_ entity: Entity) {
+    /// through exactly the path Deg › Det du følger uses. It hands the removed
+    /// rule back to the sheet, which is what makes the undo a restore.
+    private func unfollow(_ entity: Entity) -> UnfollowOutcome? {
         assistant.unfollow(entity)
+    }
+
+    /// WP-252 — the undo: put a rule the sheet just removed back verbatim, with
+    /// its scope, lens and weight intact. Same store, same recompile.
+    private func restore(_ rule: InterestRule) {
+        assistant.restore(rule)
     }
 
     /// WP-66 — the HOST-owned side of an assistant command. Theme, re-onboarding,

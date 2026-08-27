@@ -59,16 +59,64 @@ extension AssistantViewModel {
     /// looks the entity's rule up in the profile and hands it to the SAME
     /// `removeRule` Deg › Det du følger has always used, so the tombstone, the
     /// persist and the `onProfileChanged` recompile are identical whichever door
-    /// the user came through. Returns whether there was a rule to remove — false
-    /// for an entity that wasn't followed (a no-op, never an error).
+    /// the user came through.
+    ///
+    /// Returns WHAT it removed (nil for an entity that wasn't followed — a
+    /// no-op, never an error). The removed rule is the undo: hand it back to
+    /// `restore(_:)` and the follow returns with its scope, lens, weight,
+    /// reason and `addedAt` intact. A surface that only knows the ENTITY cannot
+    /// reconstruct those, so returning the rule is what makes «Trykk Følg for å
+    /// angre» true rather than approximately true.
     @discardableResult
-    func unfollow(_ entity: Entity) -> Bool {
-        guard let rule = profile.rule(for: entity.id) else { return false }
+    func unfollow(_ entity: Entity) -> UnfollowOutcome? {
+        guard let rule = profile.rule(for: entity.id) else { return nil }
         removeRule(rule)
-        return true
+        return UnfollowOutcome(removed: rule, wasLastFollow: profile.isEmpty)
     }
 
-    // MARK: - WP-164 — soft-follow («Følg likevel»)
+    /// Put a removed follow back EXACTLY as it was — the undo behind «Trykk Følg
+    /// for å angre» (the detail sheet's row flipping back) and «Angre» (the
+    /// follow list's snackbar).
+    ///
+    /// Not `follow(entity)`: that builds a FRESH rule with no scope, the default
+    /// weight and the default lens, so undoing a mistap would quietly widen a
+    /// narrow follow. This re-applies the rule VALUE through the pure core
+    /// (`InterestProfile.restoring`) and then runs the identical persist +
+    /// `onProfileChanged` recompile every other mutation runs — same store, same
+    /// single write, no new path.
+    ///
+    /// It also works for a follow whose entity the index cannot resolve (an
+    /// unsynced index, or a WP-164 soft-follow whose `soft-…` id matches no
+    /// entity anywhere): the rule carries its own name and sport, so undo never
+    /// depends on a lookup that may come back empty.
+    @discardableResult
+    func restore(_ rule: InterestRule) -> Bool {
+        profile = profile.restoring(rule)
+        let saved = (try? profileStore.save(profile)) != nil
+        onProfileChanged?()
+        return saved
+    }
+}
+
+/// What an unfollow did, in the terms the surface that asked for it needs in
+/// order to be honest about it (WP-252).
+struct UnfollowOutcome: Equatable, Sendable {
+    /// The rule that was removed. `AssistantViewModel.restore` puts exactly this
+    /// back — the undo is a restore, never a rebuild.
+    var removed: InterestRule
+    /// True when that was the LAST follow in the profile.
+    ///
+    /// This is not bookkeeping trivia, it is the one moment the board does the
+    /// opposite of what the receipt implies: `EffectiveInterests.merge` returns
+    /// the base interests untouched for an EMPTY profile, and the FeedCompiler
+    /// then falls back to `followBroadlyDefault` — so removing the last thing
+    /// you follow makes the agenda BROADER, not empty. The surface says so.
+    var wasLastFollow: Bool
+}
+
+// MARK: - WP-164 — soft-follow («Følg likevel»)
+
+extension AssistantViewModel {
 
     /// Follow a bare NAME the entity index doesn't know — the explicit user
     /// choice behind «Følg likevel» at a search miss / a grounder rejection.

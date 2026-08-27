@@ -47,7 +47,11 @@ struct AgendaView: View {
     /// already follow can be dropped from the same place you added it. It is
     /// deliberately NOT wired to a row swipe: the agenda stays an agenda, and an
     /// unfollow must never be one stray gesture away on the board itself.
-    var onUnfollow: (Entity) -> Void = { _ in }
+    /// Returns what it removed, which is what the sheet's undo puts back.
+    var onUnfollow: (Entity) -> UnfollowOutcome? = { _ in nil }
+    /// WP-252 — the undo half, forwarded alongside it: restore a rule the sheet
+    /// just removed, verbatim (never a rebuilt default).
+    var onRestore: (InterestRule) -> Void = { _ in }
     /// WP-30 — an event's detail was opened; the host records a behaviour "open"
     /// stat for it (personal memory, layer 3). No-op default keeps previews/
     /// standalone use compiling.
@@ -61,7 +65,7 @@ struct AgendaView: View {
 
     /// A single optional target drives both sheets. The event case carries the
     /// whole `AgendaEventRow` (not just the `Event`) so the detail sheet has the
-    /// precomputed WP-16.4 context data (whyShown + followable) too.
+    /// precomputed WP-16.4 context data (whyShown + subjects) too.
     private enum DetailTarget: Identifiable {
         case event(AgendaEventRow)
         case series(AgendaSeriesRow)
@@ -117,7 +121,8 @@ struct AgendaView: View {
         .sheet(item: $detailTarget) { target in
             switch target {
             case .event(let row):
-                EventDetailSheet(row: row, onFollow: onFollow, onUnfollow: onUnfollow, liveStore: liveStore)
+                EventDetailSheet(row: row, onFollow: onFollow, onUnfollow: onUnfollow,
+                                 onRestore: onRestore, liveStore: liveStore)
             case .series(let series):
                 SeriesDetailSheet(series: series)
             }

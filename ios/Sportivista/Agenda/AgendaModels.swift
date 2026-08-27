@@ -29,8 +29,9 @@ struct AgendaSubject: Identifiable, Equatable {
     /// Whether STOPPING this follow is a broad sweep — a whole sport or an
     /// umbrella category, which can empty a large part of the board in one tap.
     /// Those keep a calm confirmation; a single team/athlete/tournament does
-    /// not (WP-252: unfollowing one entity is trivially reversible — the same
-    /// row flips straight back to «Følg»). Keyed off the SAME entity-type
+    /// not (WP-252: the same row flips straight back to «Følg»). The dividing
+    /// line is SIZE, not reversibility — a broad follow is undone by exactly the
+    /// same one-rule restore as a narrow one. Keyed off the SAME entity-type
     /// vocabulary the follow list groups by (`FollowGroup`), so the two
     /// surfaces can never disagree about what counts as broad.
     var isBroadFollow: Bool { FollowGroup(entityType: entity.type).isBroadSweep }

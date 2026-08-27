@@ -28,7 +28,20 @@ struct EventDetailSheet: View {
     /// it through `AssistantViewModel.unfollow`, which resolves the entity's rule
     /// and hands it to the SAME `removeRule` Deg › Det du følger uses — no new
     /// write path, just a second door into the one that exists.
-    var onUnfollow: (Entity) -> Void = { _ in }
+    ///
+    /// It hands BACK what it removed (`UnfollowOutcome`), and the sheet keeps
+    /// that rule until it is dismissed: undo has to RESTORE the rule, not build
+    /// a new one from the entity, or a scoped/lensed follow would come back
+    /// widened. The outcome also says whether that was the LAST follow — the one
+    /// case where the board does the opposite of what you'd expect (it gets
+    /// broader, not empty), which the receipt then says out loud.
+    var onUnfollow: (Entity) -> UnfollowOutcome? = { _ in nil }
+    /// WP-252 — the undo half: put a rule the sheet just removed back verbatim
+    /// (`AssistantViewModel.restore`). Separate from `onFollow` on purpose —
+    /// «Følg X» on a subject you never followed is a NEW follow, while a tap on
+    /// the row you just flipped is an undo, and only one of the two has a rule
+    /// to honour.
+    var onRestore: (InterestRule) -> Void = { _ in }
     /// WP-172 — the live-score overlay, forwarded to each entity page so an ongoing
     /// match in its KOMMENDE section shows its running score. nil ⇒ unchanged.
     var liveStore: LiveScoreStore? = nil
@@ -44,6 +57,14 @@ struct EventDetailSheet: View {
     /// it — so this is the sheet's own honest memory of what it just did, and what
     /// makes the same row flip straight back to «Følg» (the undo).
     @State private var followOverride: [String: Bool] = [:]
+    /// WP-252 — the RULES this sheet removed, keyed by entity id, kept until the
+    /// sheet is dismissed. This is what makes the undo lossless: a follow can
+    /// carry a scope («bare i Grand Slams»), a lens («gjennom norske») and a
+    /// weight that the `Entity` alone knows nothing about, so tapping «Følg» to
+    /// undo has to put THIS rule back rather than build a fresh default one.
+    /// Scoped to the sheet on purpose — the undo is the row, so the memory dies
+    /// with the surface that offered it.
+    @State private var removedRules: [String: InterestRule] = [:]
     /// WP-252 — the last follow change made here, rendered as one quiet receipt
     /// line under HANDLINGER (VOICE § 5: say what happened and that it can be
     /// undone). nil until the user actually changes something.
@@ -63,6 +84,13 @@ struct EventDetailSheet: View {
         let name: String
         /// The state the entity ended up in — drives which sentence is told.
         let nowFollowed: Bool
+        /// WP-252 — the unfollow emptied the profile. The board then does the
+        /// opposite of what «forsvinner fra det du følger» suggests: an empty
+        /// profile makes `EffectiveInterests.merge` hand the base interests
+        /// straight back, and the FeedCompiler falls back to its broad default,
+        /// so the agenda gets WIDER, not empty. The one moment the ordinary
+        /// «agendaen oppdateres» would be true but useless.
+        var wasLastFollow = false
     }
 
     private var titleText: String {
@@ -253,9 +281,16 @@ struct EventDetailSheet: View {
     /// the problem deserves — so the row simply STAYS in place and flips to the
     /// opposite action. Tap «Slutt å følge Lyn», it becomes «Følg Lyn», one tap
     /// back. A quiet receipt line under the section says so in words. No modal
-    /// asks first (VOICE: undo beats confirm for something trivially
-    /// reversible); the ONE exception is a broad follow — a whole sport or
-    /// category — where re-following would NOT restore what you had under it.
+    /// asks first (VOICE: undo beats confirm for something reversible); the ONE
+    /// exception is a broad follow — a whole sport or category — not because it
+    /// is harder to undo (it isn't: one rule, no cascade) but because of how
+    /// much of the board it takes with it in a single tap.
+    ///
+    /// The undo is lossless. «Slutt å følge» hands back the RULE it removed and
+    /// the sheet keeps it, so the tap back restores that rule — scope, lens,
+    /// weight and all — instead of building a fresh default one. Anything less
+    /// would make the receipt's own «Trykk Følg for å angre» a half-truth for
+    /// every follow the assistant ever scoped or lensed.
     ///
     /// Neither direction closes the sheet any more. Both apply through the same
     /// direct WP-105 path ("krever aldri assistenten"); the old dismiss-on-follow
@@ -314,8 +349,16 @@ struct EventDetailSheet: View {
                     .font(.sportivista(.subheadline))
                     .foregroundStyle(followed ? SportivistaTokens.secondaryLabel : SportivistaTokens.accent)
                     .accessibilityHidden(true)
+                // WP-252 gransknings-retting: the FORWARD action keeps amber AND
+                // semibold; stopping keeps `label` ink at REGULAR weight. Colour
+                // alone was not enough — at the density the owner actually has
+                // (both teams and the tournament followed, the subject cap), three
+                // stacked semibold rows became the heaviest thing in a sheet you
+                // opened to see where the match is shown, pushing HVOR SER JEG DET
+                // below the fold. That is the "redigeringsverktøy" this section's
+                // own contract forbids; availability is the symmetry, not weight.
                 Text(followed ? "Slutt å følge \(subject.entity.name)" : "Følg \(subject.entity.name)")
-                    .font(.sportivista(.subheadline, weight: .semibold))
+                    .font(.sportivista(.subheadline, weight: followed ? .regular : .semibold))
                     .foregroundStyle(followed ? SportivistaTokens.label : SportivistaTokens.accent)
                     // Names grow; never truncate them (DESIGN § Forbudsliste).
                     .fixedSize(horizontal: false, vertical: true)
@@ -344,9 +387,15 @@ struct EventDetailSheet: View {
             // The unfollow line is the app's canonical sentence (VOICE § 5, the
             // same one Deg › Det du følger tells), with «Du kan angre» made
             // concrete — here the undo is literally the row above.
-            Text(receipt.nowFollowed
-                 ? "Du følger \(receipt.name) nå, og agendaen oppdateres."
-                 : "\(receipt.name) forsvinner fra det du følger, og agendaen oppdateres. Trykk Følg for å angre.")
+            //
+            // Except when it was the LAST follow: then «agendaen oppdateres» is
+            // true and useless, because the board does the opposite of what the
+            // sentence implies — an empty profile hands `EffectiveInterests` the
+            // base interests back and the compiler falls back to its broad
+            // default, so you get MORE rows, not none. VOICE § 2 (ærlighet foran
+            // selvtillit): say it, in one calm sentence, no dialog and no
+            // warning — the user is still one tap from undoing it.
+            Text(receiptText(receipt))
                 .font(.sportivista(.footnote))
                 .foregroundStyle(SportivistaTokens.secondaryLabel)
                 .fixedSize(horizontal: false, vertical: true)
@@ -354,6 +403,22 @@ struct EventDetailSheet: View {
                 .listRowBackground(SportivistaTokens.cell)
                 .accessibilityIdentifier("detail.follow.receipt")
         }
+    }
+
+    /// The receipt's words. Pure and `static` so the copy is testable without a
+    /// view host — these three sentences are the package's promise in words.
+    static func receiptText(name: String, nowFollowed: Bool, wasLastFollow: Bool) -> String {
+        if nowFollowed {
+            return "Du følger \(name) nå, og agendaen oppdateres."
+        }
+        if wasLastFollow {
+            return "\(name) var det siste du fulgte, så agendaen viser bredt igjen — ikke ingenting. Trykk Følg for å angre."
+        }
+        return "\(name) forsvinner fra det du følger, og agendaen oppdateres. Trykk Følg for å angre."
+    }
+
+    private func receiptText(_ receipt: FollowReceipt) -> String {
+        Self.receiptText(name: receipt.name, nowFollowed: receipt.nowFollowed, wasLastFollow: receipt.wasLastFollow)
     }
 
     // MARK: - Follow state (WP-252)
@@ -365,8 +430,8 @@ struct EventDetailSheet: View {
     }
 
     /// Follow or stop following, applying immediately — except for a broad
-    /// follow (a whole sport/category), which asks first because re-following it
-    /// would not bring back the athletes and teams that lived under it.
+    /// follow (a whole sport / category), which asks first because of how much
+    /// of the board it takes with it in one tap (see `AgendaSubject.isBroadFollow`).
     private func toggleFollow(_ subject: AgendaSubject) {
         guard isFollowed(subject) else { return apply(subject, follow: true) }
         if subject.isBroadFollow {
@@ -376,11 +441,30 @@ struct EventDetailSheet: View {
         }
     }
 
+    /// Apply one direction and narrate it.
+    ///
+    /// The follow direction is TWO different things wearing the same label:
+    /// «Følg X» on a subject you never followed is a new follow, while the same
+    /// row tapped right after «Slutt å følge X» is an UNDO — and an undo has a
+    /// rule to honour. Restoring it (rather than re-following the entity) is
+    /// what keeps a scoped/lensed follow from quietly coming back widened.
     private func apply(_ subject: AgendaSubject, follow: Bool) {
         followOverride[subject.id] = follow
-        receipt = FollowReceipt(name: subject.entity.name, nowFollowed: follow)
         if !reduceMotion { followHaptic &+= 1 }
-        if follow { onFollow(subject.entity) } else { onUnfollow(subject.entity) }
+
+        if follow {
+            if let removed = removedRules.removeValue(forKey: subject.id) {
+                onRestore(removed)
+            } else {
+                onFollow(subject.entity)
+            }
+            receipt = FollowReceipt(name: subject.entity.name, nowFollowed: true)
+        } else {
+            let outcome = onUnfollow(subject.entity)
+            if let outcome { removedRules[subject.id] = outcome.removed }
+            receipt = FollowReceipt(name: subject.entity.name, nowFollowed: false,
+                                    wasLastFollow: outcome?.wasLastFollow ?? false)
+        }
     }
 
     // MARK: - Entity pages (WP-170)

@@ -167,4 +167,35 @@ struct InterestProfile: Codable, Equatable, Sendable {
     func applying(_ mutations: [GroundedMutation], now: Date = Date()) -> InterestProfile {
         mutations.reduce(self) { $0.applying($1, now: now) }
     }
+
+    /// Put `rule` back EXACTLY as it was — the undo half of `.remove` (WP-252).
+    ///
+    /// Why this is not just `applying(.add)`: an `.add` BUILDS a rule from a
+    /// mutation, and every surface that offers «angre» holds an `Entity`, not
+    /// the scope/weight/lens the removed rule carried. Rebuilding from the
+    /// entity therefore silently drops them — you followed Casper Ruud «bare i
+    /// Grand Slams» through «de norske», tapped undo, and were left following
+    /// him wholesale. Both fields are USER-VISIBLE (Det du følger renders
+    /// «Avgrensning» and «Perspektiv»), so a lossy undo is a lie in the
+    /// receipt's own words. Restoring the VALUE, not the intent, is the only
+    /// way an undo can leave no trace.
+    ///
+    /// `addedAt` comes along untouched for the same reason — the rule is the one
+    /// you already had, not a new one. That is safe for the CRDT sync: the
+    /// stamping half (`ProfileSyncState.updatingRules`) compares the rule
+    /// PAYLOAD against the live record and stamps `modifiedAt = now` whenever it
+    /// differs (a tombstone always differs), so a restored rule beats its own
+    /// tombstone on every peer regardless of how old its `addedAt` is.
+    ///
+    /// Upsert on `entityId` and the same sort as `applying`, so the two
+    /// representations stay interchangeable. Pure — no I/O, no clock.
+    func restoring(_ rule: InterestRule) -> InterestProfile {
+        var next = rules.filter { $0.entityId != rule.entityId }
+        next.append(rule)
+        next.sort { lhs, rhs in
+            if lhs.sport != rhs.sport { return lhs.sport < rhs.sport }
+            return lhs.entityName.localizedCaseInsensitiveCompare(rhs.entityName) == .orderedAscending
+        }
+        return InterestProfile(rules: next)
+    }
 }
