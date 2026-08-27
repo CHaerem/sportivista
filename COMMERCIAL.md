@@ -437,13 +437,14 @@ Flaskehalsen er D-U-N-S-ledetid og advokat, ikke koding. Realistisk 6–10 uker.
 
 | WP | Tittel | Avhenger av |
 |---|---|---|
-| WP-240 | Kilderegister med rettslig grunnlag (`sources.json` + schema) | — |
-| WP-241 | Autoritetskart: hvem skaper tidspunktet, hvem skaper kanalen | WP-240 |
-| WP-242 | Proveniens per faktum + validator-kontrakt på kildetype | WP-240, WP-241 |
+| WP-240 | Kilderegister med rettslig grunnlag (`sources.json` + schema) — ✅ #424 merget 29.07: én oppføring per kilde (rolle, autoritet, vilkår, TDM-reservasjon, robots); vilkår verifisert for 27 av 83 kilder, resten står ærlig som `"unknown"` | — |
+| WP-241 | Autoritetskart: hvem skaper tidspunktet, hvem skaper kanalen — ✅ #428 merget 29.07: `authority.json` (+ schema) per sport/konkurranse; research/verify/coverage-critic slår opp i det | WP-240 |
+| WP-242 | Proveniens per faktum + validator-kontrakt på kildetype — ✅ #428 merget 29.07 (`scripts/lib/provenance.js` + urlKind-kontrakten i validatoren) + WP-242b #429 27.08 (lookalike-domener strippet fra evidens, urlKind-kontrakten rettet) | WP-240, WP-241 |
 | WP-243 | Dekningskontrakt per konkurranse med målbar dekningsgrad — ✅ 27.08: `contract`-blokker i authority.json (navngitt autoritet + «i sesong: minst N events innen H dager», sesongærlig), målt hver kjøring (`scripts/lib/coverage-contracts.js` → coverage-contracts.json); brudd = høy-alvorlighets gap for agentene + femte port `contracts` i port-report (G2-føde). Seedet for Eliteserien, PL, F1, PGA, DP World Tour, tennis-touren | WP-241 |
-| WP-244 | Høflighetslaget: ETag, caching, takt, User-Agent, robots | — |
+| WP-244 | Høflighetslaget: ETag, caching, takt, User-Agent, robots — ✅ #421 merget 29.07: betingede forespørsler + takt per vert + ærlig User-Agent + robots.txt-respekt i `api-client` | — |
 | WP-245 | Kalibreringen styrer kildevalget bindende — ✅ 27.08: `scripts/lib/calibration-gate.js`; målt reliabilitet < 0.7 kan aldri stå som eneste grunnlag (build-events demoterer high → medium, validate-events hard-feiler, research/verify-promptene bærer regelen) | WP-242 |
-| WP-246 | Kanalen peker på kampen: dyplenke + kilde, ellers «ikke bekreftet» | WP-242 |
+| WP-246 | Kanalen peker på kampen: dyplenke + kilde, ellers «ikke bekreftet» — ✅ #422 merget 29.07 | WP-242 |
+| WP-247 | iOS speiler urlKind: kun en «deep»-URL rendres som lenke — ✅ #426 merget 29.07 | WP-246 |
 | WP-248 | Publiserings-ferskhetsvakt — ✅ 27.08: `scripts/check-publish-freshness.js` i den timelige pipelinen dømmer den LIVE kopien mot repoet (lærdom: en fastlåst Pages-deploy holdt køen i fire uker mens alle repo-signaler var grønne); self-repair fikk oppryddingsoppskriften | — |
 
 Rekkefølge: WP-240 → WP-241 → WP-242 er kjernen; WP-244 kan gjøres når som helst og
