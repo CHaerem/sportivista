@@ -13,8 +13,17 @@
 //    • Row = canonical sport symbol (SportSymbol, WP-108) + name + the PER-ENTITY
 //      next event as the subtitle («Neste: lør 25. · Strømsgodset – Lyn · TV 2»)
 //      or an honest quiet-state line («Fulgt — …», see FollowPresenter WP-164).
-//    • Safe handling: a `.swipeActions` «Slutt å følge» (same confirmation as the
-//      detail) + a calm undo snackbar after a removal.
+//    • Safe handling: a `.swipeActions` «Slutt å følge» + a calm undo snackbar
+//      after a removal.
+//
+//  WP-252 removed the confirmation dialog that sat in FRONT of that snackbar.
+//  Asking «Slutt å følge X?» and THEN offering «Angre» guards the same tap
+//  twice: the modal cost a tap every single time and protected against almost
+//  nothing, since re-following is one tap away. Undo afterwards is calmer and
+//  more forgiving than asking first. The ONE case that still asks is a BROAD
+//  sweep — a whole sport or an umbrella category (`FollowGroup.isBroadSweep`) —
+//  where «du kan bare følge igjen» is not true in the way it is for a single
+//  team: re-following «fotball» does not bring back the clubs you had under it.
 //  The next-event / news / grouping is the pure `FollowPresenter` (reusing the
 //  lens's own matching — no new fuzzy); writes still go through the one apply
 //  path (`AssistantViewModel.follow` / `.removeRule`).
@@ -35,7 +44,9 @@ struct FollowedListView: View {
     /// Precomputed row subtitles (entityId → «Neste: …» / «Fulgt — …»),
     /// so scrolling never re-runs the per-rule event scan.
     @State private var subtitles: [String: String] = [:]
-    /// The rule a swipe/detail is confirming a stop for (drives the dialog).
+    /// WP-252 — the rule a swipe is confirming a stop for, and the ONLY thing
+    /// that still raises a dialog: a BROAD follow (a whole sport / category).
+    /// Every narrow follow removes on the spot and offers «Angre» instead.
     @State private var confirmingStop: InterestRule?
     /// The just-removed follow, shown as a calm undo snackbar for a few seconds.
     @State private var undo: UndoState?
@@ -66,14 +77,17 @@ struct FollowedListView: View {
                     Section {
                         ForEach(section.rules) { rule in
                             NavigationLink {
-                                FollowDetailView(viewModel: viewModel, rule: rule)
+                                FollowDetailView(viewModel: viewModel, rule: rule,
+                                                 onStopped: { stopped, entity in
+                                                     withAnimation { undo = UndoState(rule: stopped, entity: entity) }
+                                                 })
                             } label: {
                                 followRow(rule)
                             }
                             .accessibilityIdentifier("followed.row.\(rule.entityId)")
                             .swipeActions(edge: .trailing, allowsFullSwipe: true) {
                                 Button(role: .destructive) {
-                                    confirmingStop = rule
+                                    requestStop(rule)
                                 } label: {
                                     Label("Slutt å følge", systemImage: "xmark.circle")
                                 }
@@ -91,7 +105,10 @@ struct FollowedListView: View {
                 Section {
                     ForEach(rules) { rule in
                         NavigationLink {
-                            FollowDetailView(viewModel: viewModel, rule: rule)
+                            FollowDetailView(viewModel: viewModel, rule: rule,
+                                             onStopped: { stopped, entity in
+                                                 withAnimation { undo = UndoState(rule: stopped, entity: entity) }
+                                             })
                         } label: {
                             followRow(rule)
                         }
@@ -133,7 +150,7 @@ struct FollowedListView: View {
                 .accessibilityIdentifier("followed.stop.confirm")
             Button("Avbryt", role: .cancel) { confirmingStop = nil }
         } message: { rule in
-            Text("\(rule.entityName) forsvinner fra det du følger, og agendaen oppdateres. Du kan angre.")
+            Text("Hele \(rule.entityName) forsvinner fra tavla. Lag og utøvere du følger enkeltvis blir stående.")
         }
     }
 
@@ -199,6 +216,15 @@ struct FollowedListView: View {
 
     // MARK: - Actions
 
+    /// A swipe asked to stop this follow. A BROAD one (whole sport / category)
+    /// gets the calm confirmation; everything narrower removes immediately and
+    /// answers with «Angre» — WP-252: undo instead of confirm for something
+    /// that is trivially reversible.
+    private func requestStop(_ rule: InterestRule) {
+        let broad = snapshot?.presenter.group(for: rule).isBroadSweep ?? false
+        if broad { confirmingStop = rule } else { stopFollowing(rule) }
+    }
+
     private func stopFollowing(_ rule: InterestRule) {
         let entity = snapshot?.presenter.entity(for: rule)
         viewModel.removeRule(rule)
@@ -230,6 +256,10 @@ struct FollowedListView: View {
 struct FollowDetailView: View {
     var viewModel: AssistantViewModel
     let rule: InterestRule
+    /// WP-252 — the follow was stopped here and this screen popped. The list
+    /// underneath raises its «Angre» snackbar, so the undo survives the
+    /// navigation instead of disappearing with the screen that offered it.
+    var onStopped: (InterestRule, Entity?) -> Void = { _, _ in }
 
     @State private var snapshot: AssistantViewModel.FollowSnapshot?
     /// The composed entity page (WP-170) — loaded off the main actor.
@@ -384,7 +414,7 @@ struct FollowDetailView: View {
 
             Section {
                 Button(role: .destructive) {
-                    confirmingStop = true
+                    requestStop()
                 } label: {
                     Text("Slutt å følge")
                         .font(.sportivista(.body, weight: .semibold))
@@ -410,22 +440,39 @@ struct FollowDetailView: View {
             page = await EntityPageLoader.page(entity: entity, rule: rule)
         }
         .sheet(item: $detailRow) { row in
-            EventDetailSheet(row: row, onFollow: { viewModel.follow($0) })
+            EventDetailSheet(row: row,
+                             onFollow: { viewModel.follow($0) },
+                             onUnfollow: { viewModel.unfollow($0) })
         }
+        // WP-252 — only a BROAD follow (whole sport / category) still asks.
         .confirmationDialog(
             "Slutt å følge \(rule.entityName)?",
             isPresented: $confirmingStop,
             titleVisibility: .visible
         ) {
-            Button("Slutt å følge", role: .destructive) {
-                viewModel.removeRule(rule)
-                dismiss()
-            }
-            .accessibilityIdentifier("followed.stop.confirm")
+            Button("Slutt å følge", role: .destructive) { stopFollowing() }
+                .accessibilityIdentifier("followed.stop.confirm")
             Button("Avbryt", role: .cancel) {}
         } message: {
-            Text("\(rule.entityName) forsvinner fra det du følger, og agendaen oppdateres. Du kan legge til igjen når som helst.")
+            Text("Hele \(rule.entityName) forsvinner fra tavla. Lag og utøvere du følger enkeltvis blir stående.")
         }
+    }
+
+    // MARK: - Stop following (WP-252 — undo instead of confirm)
+
+    /// A broad follow asks first; a single team/athlete/tournament stops on the
+    /// spot and hands the list its «Angre» snackbar.
+    private func requestStop() {
+        let broad = snapshot?.presenter.group(for: rule).isBroadSweep ?? false
+        if broad { confirmingStop = true } else { stopFollowing() }
+    }
+
+    private func stopFollowing() {
+        let resolved = snapshot?.presenter.entity(for: rule)
+        viewModel.removeRule(rule)
+        confirmingStop = false
+        onStopped(rule, resolved)
+        dismiss()
     }
 
     // MARK: - Detail rows / helpers

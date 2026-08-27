@@ -65,7 +65,6 @@ enum MemoryDemoSeed {
             isMustSee: true, mustWatch: true, isAIResearch: false,
             event: event,
             whyShown: "Du følger Formel 1.",
-            followable: [],
             spoilerSafe: false
         )
     }

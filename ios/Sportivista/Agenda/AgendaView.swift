@@ -43,6 +43,11 @@ struct AgendaView: View {
     /// and now the row's left-swipe); ContentView routes it into the assistant's
     /// diff/confirm flow. Defaults to a no-op so `#Preview` / standalone use compile.
     var onFollow: (Entity) -> Void = { _ in }
+    /// WP-252 — the mirror action, forwarded to the detail sheet so a subject you
+    /// already follow can be dropped from the same place you added it. It is
+    /// deliberately NOT wired to a row swipe: the agenda stays an agenda, and an
+    /// unfollow must never be one stray gesture away on the board itself.
+    var onUnfollow: (Entity) -> Void = { _ in }
     /// WP-30 — an event's detail was opened; the host records a behaviour "open"
     /// stat for it (personal memory, layer 3). No-op default keeps previews/
     /// standalone use compiling.
@@ -112,7 +117,7 @@ struct AgendaView: View {
         .sheet(item: $detailTarget) { target in
             switch target {
             case .event(let row):
-                EventDetailSheet(row: row, onFollow: onFollow, liveStore: liveStore)
+                EventDetailSheet(row: row, onFollow: onFollow, onUnfollow: onUnfollow, liveStore: liveStore)
             case .series(let series):
                 SeriesDetailSheet(series: series)
             }
@@ -178,8 +183,11 @@ struct AgendaView: View {
     /// The first entity this row is ABOUT that the user doesn't already follow —
     /// what the left-swipe «Følg» offers. Series rows aren't followed this way
     /// (they're the athlete-agnostic collapsed view), so only event rows qualify.
+    /// WP-252: there is deliberately NO swipe counterpart for stopping — an
+    /// unfollow must never be one stray gesture from a scroll (owner brief), so
+    /// it lives in the detail sheet where it is named and deliberate.
     private func firstFollowable(_ item: AgendaItem) -> Entity? {
-        if case let .event(row) = item { return row.followable.first }
+        if case let .event(row) = item { return row.subjects.first { !$0.isFollowed }?.entity }
         return nil
     }
 

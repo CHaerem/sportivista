@@ -11,6 +11,31 @@
 
 import Foundation
 
+/// One entity an agenda row is ABOUT, with whether the profile follows it —
+/// the unit behind the detail sheet's LAG OG UTØVERE rows and its symmetric
+/// «Følg» / «Slutt å følge» actions (WP-252).
+///
+/// The status is a snapshot of the profile at compile time. The sheet keeps its
+/// own local override for a subject the user just toggled, because the agenda
+/// recompiles BEHIND an open sheet and the row it was handed is a value copy.
+struct AgendaSubject: Identifiable, Equatable {
+    var entity: Entity
+    /// True when the profile has a rule for `entity.id` — the sheet renders
+    /// «Slutt å følge» instead of «Følg».
+    var isFollowed: Bool
+
+    var id: String { entity.id }
+
+    /// Whether STOPPING this follow is a broad sweep — a whole sport or an
+    /// umbrella category, which can empty a large part of the board in one tap.
+    /// Those keep a calm confirmation; a single team/athlete/tournament does
+    /// not (WP-252: unfollowing one entity is trivially reversible — the same
+    /// row flips straight back to «Følg»). Keyed off the SAME entity-type
+    /// vocabulary the follow list groups by (`FollowGroup`), so the two
+    /// surfaces can never disagree about what counts as broad.
+    var isBroadFollow: Bool { FollowGroup(entityType: entity.type).isBroadSweep }
+}
+
 /// One ordinary event row: when · what · where, plus the two independent
 /// annotations FeedCompiler attaches (the reminder bell and the quiet visual
 /// accent — see FeedCompiler.swift's header on why there are two, not one).
@@ -37,11 +62,6 @@ struct AgendaEventRow: Identifiable, Equatable {
     /// the detail sheet's context action shows it with no model and no work per
     /// render. Empty only when the index/interests weren't available.
     var whyShown: String = ""
-    /// WP-16.4 — the followable entities this event is ABOUT that aren't already
-    /// followed (home/away team, tournament, Norwegian players, resolved
-    /// through the index). The detail sheet offers a "Følg X" context action
-    /// per entry, routed through the assistant's normal diff/confirm flow.
-    var followable: [Entity] = []
     /// WP-30 — the spoiler flag derived from personal memory (`SpoilerShield`):
     /// `false` when the user has a spoiler policy on this event's sport/entity,
     /// so the agenda + detail sheet MASK result/score for it. Defaults to `true`
@@ -53,14 +73,19 @@ struct AgendaEventRow: Identifiable, Equatable {
     /// before. Deliberately a PRESENTATION field computed here, never in
     /// FeedCompiler — the golden feed vectors must stay bit-identical.
     var identity: EntityIdentity = .none
-    /// WP-170 — the entities this event is ABOUT (teams, tournament, Norwegian
-    /// players), followed or not, resolved once per compile from the entity
-    /// index. The detail sheet turns each into ONE tap to that entity's page
-    /// («hva skjer med X?»). Distinct from `followable`, which excludes what you
-    /// already follow because it drives a «Følg X» ACTION; navigating to a page
-    /// must work for the teams you follow most of all. Empty (the default) keeps
-    /// every existing caller/test rendering exactly as before.
-    var subjects: [Entity] = []
+    /// WP-170 / WP-252 — the entities this event is ABOUT (home/away team,
+    /// tournament, Norwegian players), resolved once per compile from the entity
+    /// index, EACH CARRYING whether the profile follows it. One list with a
+    /// status per entity, not two overlapping lists: WP-252 folded the old
+    /// `followable` (the same resolution minus what you already follow) in here,
+    /// because the sheet must offer BOTH directions on the same subject —
+    /// «Følg X» when you don't, «Slutt å følge X» when you do — and two lists
+    /// that were complements of each other could never say that in one place.
+    /// It also ended a quiet inconsistency: both lists capped at three
+    /// INDEPENDENTLY, so LAG OG UTØVERE and HANDLINGER could name different
+    /// entities for the same event. Empty (the default) keeps every existing
+    /// caller/test rendering exactly as before.
+    var subjects: [AgendaSubject] = []
 }
 
 /// A folded stage race — dashboard.js `collapseSeries`'s Swift-side output,

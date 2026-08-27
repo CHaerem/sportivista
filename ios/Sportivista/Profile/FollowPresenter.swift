@@ -48,6 +48,19 @@ enum FollowGroup: Int, CaseIterable {
         }
     }
 
+    /// WP-252 — whether STOPPING a follow in this group is a BROAD SWEEP: a
+    /// whole sport or an umbrella category, which can empty a large part of the
+    /// board in one tap, and which «du kan bare følge igjen» does not really
+    /// describe (re-following a sport does not restore the athletes and teams
+    /// you had under it). Those keep the calm confirmation. Every NARROW follow
+    /// — one athlete, team, tournament or league — drops it in favour of undo:
+    /// a modal that guards a trivially reversible action costs a tap every
+    /// single time and protects against almost nothing.
+    ///
+    /// One definition, read by both surfaces: the follow list (per rule) and
+    /// the agenda's detail sheet (per subject, via `AgendaSubject.isBroadFollow`).
+    var isBroadSweep: Bool { self == .sport || self == .category }
+
     /// The Norwegian section header (DESIGN § Gruppeoverskrift: uppercase).
     var header: String {
         switch self {

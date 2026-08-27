@@ -53,6 +53,21 @@ extension AssistantViewModel {
         return saved
     }
 
+    /// Stop following `entity` — the mirror of `follow`, for the surfaces that
+    /// hold an Entity rather than an InterestRule (the event detail sheet's
+    /// «Slutt å følge <navn>», WP-252). Deliberately NOT a new write path: it
+    /// looks the entity's rule up in the profile and hands it to the SAME
+    /// `removeRule` Deg › Det du følger has always used, so the tombstone, the
+    /// persist and the `onProfileChanged` recompile are identical whichever door
+    /// the user came through. Returns whether there was a rule to remove — false
+    /// for an entity that wasn't followed (a no-op, never an error).
+    @discardableResult
+    func unfollow(_ entity: Entity) -> Bool {
+        guard let rule = profile.rule(for: entity.id) else { return false }
+        removeRule(rule)
+        return true
+    }
+
     // MARK: - WP-164 — soft-follow («Følg likevel»)
 
     /// Follow a bare NAME the entity index doesn't know — the explicit user

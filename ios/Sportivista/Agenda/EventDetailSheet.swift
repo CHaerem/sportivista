@@ -15,15 +15,20 @@ import SwiftUI
 
 struct EventDetailSheet: View {
     /// WP-16.4 — the full agenda row, so the sheet has the precomputed context
-    /// data (whyShown + followable) alongside the event.
+    /// data (whyShown + subjects) alongside the event.
     let row: AgendaEventRow
     /// WP-16.4 / WP-105 — a "Følg <entitet>" tap. The host routes it through the
     /// direct follow apply-vei (`AssistantViewModel.follow`) — the SAME
     /// ProfileStore path Deg › Legg til uses, one source of truth. 3b:
     /// "veien fra «så noe interessant» til «følger» krever aldri assistenten" —
-    /// no diff round-trip, the tap IS the confirmation and the sheet closes.
+    /// no diff round-trip, the tap IS the confirmation.
     /// No-op default keeps standalone/preview use compiling.
     var onFollow: (Entity) -> Void = { _ in }
+    /// WP-252 — the mirror image: a "Slutt å følge <entitet>" tap. The host runs
+    /// it through `AssistantViewModel.unfollow`, which resolves the entity's rule
+    /// and hands it to the SAME `removeRule` Deg › Det du følger uses — no new
+    /// write path, just a second door into the one that exists.
+    var onUnfollow: (Entity) -> Void = { _ in }
     /// WP-172 — the live-score overlay, forwarded to each entity page so an ongoing
     /// match in its KOMMENDE section shows its running score. nil ⇒ unchanged.
     var liveStore: LiveScoreStore? = nil
@@ -33,8 +38,32 @@ struct EventDetailSheet: View {
     /// WP-30 — spoiler protection: a masked result stays hidden until the user
     /// taps to reveal it ("til brukeren har «sett» det").
     @State private var resultRevealed = false
+    /// WP-252 — follow state the user changed WHILE this sheet was open, keyed by
+    /// entity id. The profile write recompiles the agenda BEHIND the sheet, but
+    /// `row` is a value copy handed over at presentation and can never learn about
+    /// it — so this is the sheet's own honest memory of what it just did, and what
+    /// makes the same row flip straight back to «Følg» (the undo).
+    @State private var followOverride: [String: Bool] = [:]
+    /// WP-252 — the last follow change made here, rendered as one quiet receipt
+    /// line under HANDLINGER (VOICE § 5: say what happened and that it can be
+    /// undone). nil until the user actually changes something.
+    @State private var receipt: FollowReceipt?
+    /// WP-252 — a BROAD follow (a whole sport / category) pending confirmation.
+    /// Only those; a single team or athlete is undone by tapping the row again.
+    @State private var confirmingStop: AgendaSubject?
+    /// Bumped on each follow change for the light `.selection` haptic
+    /// (DESIGN § Bevegelse: `.selection` på toggle), never under Reduce Motion.
+    @State private var followHaptic = 0
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     private var event: Event { row.event }
+
+    /// One quiet receipt for the last follow change made in this sheet.
+    private struct FollowReceipt: Equatable {
+        let name: String
+        /// The state the entity ended up in — drives which sentence is told.
+        let nowFollowed: Bool
+    }
 
     private var titleText: String {
         AgendaFormat.title(homeTeam: event.homeTeam, awayTeam: event.awayTeam, participants: event.participants, fallback: event.title)
@@ -142,6 +171,27 @@ struct EventDetailSheet: View {
             }
         }
         .presentationDetents([.medium, .large])
+        // DESIGN § Bevegelse & haptikk: `.selection` på toggle, never under
+        // Reduce Motion (the trigger is only bumped off that path).
+        .sensoryFeedback(.selection, trigger: followHaptic)
+        // WP-252 — the ONE follow that still asks first: a whole sport or an
+        // umbrella category. Everything narrower is undone by tapping the row
+        // again, so a modal would only cost a tap each time.
+        .confirmationDialog(
+            confirmingStop.map { "Slutt å følge \($0.entity.name)?" } ?? "",
+            isPresented: Binding(get: { confirmingStop != nil }, set: { if !$0 { confirmingStop = nil } }),
+            titleVisibility: .visible,
+            presenting: confirmingStop
+        ) { subject in
+            Button("Slutt å følge", role: .destructive) {
+                apply(subject, follow: false)
+                confirmingStop = nil
+            }
+            .accessibilityIdentifier("detail.follow.confirm")
+            Button("Avbryt", role: .cancel) { confirmingStop = nil }
+        } message: { subject in
+            Text("Hele \(subject.entity.name) forsvinner fra tavla. Lag og utøvere du følger enkeltvis blir stående.")
+        }
     }
 
     // WP-147: section headers are DEMPET grey (`secondaryLabel`), never amber.
@@ -183,18 +233,37 @@ struct EventDetailSheet: View {
         }
     }
 
-    // MARK: - Context actions (WP-16.4)
+    // MARK: - Context actions (WP-16.4 → WP-252: symmetric follow)
 
-    /// The two in-context actions: a quiet, deterministic "Hvorfor vises denne?"
-    /// (FeedCompiler.whyShown, no model needed) and a quiet "Følg <entitet>" per
-    /// followable subject. WP-105: the follow tap goes through the direct apply-
-    /// vei (host's `onFollow` → `AssistantViewModel.follow`), applying immediately
-    /// and closing the sheet — no assistant diff to confirm ("krever aldri
-    /// assistenten"). `row.followable` already excludes anything followed, so the
-    /// button only appears for a not-yet-followed subject.
+    /// The in-context actions: a quiet, deterministic "Hvorfor vises denne?"
+    /// (FeedCompiler.whyShown, no model needed) and — per subject this event is
+    /// about — ONE row that goes BOTH ways: «Følg X» when you don't follow it,
+    /// «Slutt å følge X» when you do.
+    ///
+    /// WP-252, the asymmetry this closes: adding from the board took one tap
+    /// here, while REMOVING was impossible from the board at all — you had to
+    /// go to Deg › Det du følger, find the row, swipe, and confirm. Four steps
+    /// away from the moment you noticed you weren't interested. Worse, the old
+    /// `row.followable` excluded by design everything you ALREADY followed, so
+    /// this section was empty for exactly the rows you most wanted to weed out.
+    /// Symmetry rule: where you can do a thing, you can undo it.
+    ///
+    /// The undo is the row itself. iOS has no free undo toast, and building a
+    /// notification system for a two-tap reversal would be more machinery than
+    /// the problem deserves — so the row simply STAYS in place and flips to the
+    /// opposite action. Tap «Slutt å følge Lyn», it becomes «Følg Lyn», one tap
+    /// back. A quiet receipt line under the section says so in words. No modal
+    /// asks first (VOICE: undo beats confirm for something trivially
+    /// reversible); the ONE exception is a broad follow — a whole sport or
+    /// category — where re-following would NOT restore what you had under it.
+    ///
+    /// Neither direction closes the sheet any more. Both apply through the same
+    /// direct WP-105 path ("krever aldri assistenten"); the old dismiss-on-follow
+    /// was left over from when the tap raised the assistant's diff ark and had to
+    /// get out of its way.
     @ViewBuilder
     private var contextActionsSection: some View {
-        if !row.whyShown.isEmpty || !row.followable.isEmpty {
+        if !row.whyShown.isEmpty || !row.subjects.isEmpty {
             Section {
                 if !row.whyShown.isEmpty {
                     DisclosureGroup(isExpanded: $whyExpanded) {
@@ -215,30 +284,103 @@ struct EventDetailSheet: View {
                     .tint(SportivistaTokens.secondaryLabel)
                     .listRowBackground(SportivistaTokens.cell)
                 }
-                ForEach(row.followable, id: \.id) { entity in
-                    Button {
-                        // Hand off to the command-line assistant's diff flow,
-                        // then close the sheet so the diff ark is unobscured.
-                        onFollow(entity)
-                        dismiss()
-                    } label: {
-                        HStack(spacing: 8) {
-                            Text("» Følg \(entity.name)")
-                                .font(.sportivista(.subheadline, weight: .semibold))
-                                .foregroundStyle(SportivistaTokens.accent)
-                            Spacer()
-                        }
-                        // WP-14.3: this IS an action (Følg …) — a comfortable
-                        // real row height, not a glyph-small tap.
-                        .frame(minHeight: 44, alignment: .leading)
-                        .contentShape(Rectangle())
-                    }
-                    .listRowBackground(SportivistaTokens.cell)
+                ForEach(row.subjects) { subject in
+                    followToggleRow(subject)
                 }
+                receiptRow
             } header: {
                 header("HANDLINGER")
             }
         }
+    }
+
+    /// One subject's follow row, in whichever direction applies right now.
+    ///
+    /// Following is the forward action and keeps the amber it has always had.
+    /// Stopping sits in the same place but does NOT take the accent — and is not
+    /// red either: `destructive` is DESIGN's token for slett/nullstill, and a
+    /// sheet you opened to see where a match is shown must not greet you with
+    /// warning-red rows for both teams over something a second tap undoes. It
+    /// gets the plain `label` ink (a control, not a disabled read-out) with a
+    /// dempet `minus.circle`. Availability is the symmetry the owner asked for;
+    /// equal loudness would turn the agenda into an editing tool.
+    private func followToggleRow(_ subject: AgendaSubject) -> some View {
+        let followed = isFollowed(subject)
+        return Button {
+            toggleFollow(subject)
+        } label: {
+            HStack(spacing: 8) {
+                Image(systemName: followed ? "minus.circle" : "plus.circle")
+                    .font(.sportivista(.subheadline))
+                    .foregroundStyle(followed ? SportivistaTokens.secondaryLabel : SportivistaTokens.accent)
+                    .accessibilityHidden(true)
+                Text(followed ? "Slutt å følge \(subject.entity.name)" : "Følg \(subject.entity.name)")
+                    .font(.sportivista(.subheadline, weight: .semibold))
+                    .foregroundStyle(followed ? SportivistaTokens.label : SportivistaTokens.accent)
+                    // Names grow; never truncate them (DESIGN § Forbudsliste).
+                    .fixedSize(horizontal: false, vertical: true)
+                    .multilineTextAlignment(.leading)
+                Spacer(minLength: 0)
+            }
+            // WP-14.3: this IS an action — a comfortable real row height.
+            .frame(minHeight: 44, alignment: .leading)
+            .contentShape(Rectangle())
+        }
+        .accessibilityIdentifier("detail.follow.\(subject.id)")
+        .listRowBackground(SportivistaTokens.cell)
+    }
+
+    /// The quiet receipt under the follow rows — what just happened and how to
+    /// undo it, in one sentence, only after the user actually changed something.
+    ///
+    /// Deliberately a plain ROW rather than a `Section` footer: this sheet hides
+    /// the scroll background and paints its own `cell` ground, and a footer
+    /// renders on the LIST's ground instead — a black band straight across the
+    /// sheet in dark mode (seen in the WP-252 screenshots). A row with the same
+    /// `listRowBackground` as its neighbours is right in both themes.
+    @ViewBuilder
+    private var receiptRow: some View {
+        if let receipt {
+            // The unfollow line is the app's canonical sentence (VOICE § 5, the
+            // same one Deg › Det du følger tells), with «Du kan angre» made
+            // concrete — here the undo is literally the row above.
+            Text(receipt.nowFollowed
+                 ? "Du følger \(receipt.name) nå, og agendaen oppdateres."
+                 : "\(receipt.name) forsvinner fra det du følger, og agendaen oppdateres. Trykk Følg for å angre.")
+                .font(.sportivista(.footnote))
+                .foregroundStyle(SportivistaTokens.secondaryLabel)
+                .fixedSize(horizontal: false, vertical: true)
+                .padding(.vertical, 2)
+                .listRowBackground(SportivistaTokens.cell)
+                .accessibilityIdentifier("detail.follow.receipt")
+        }
+    }
+
+    // MARK: - Follow state (WP-252)
+
+    /// This subject's follow state as the sheet knows it: what the user changed
+    /// here wins over the snapshot the row was compiled with.
+    private func isFollowed(_ subject: AgendaSubject) -> Bool {
+        followOverride[subject.id] ?? subject.isFollowed
+    }
+
+    /// Follow or stop following, applying immediately — except for a broad
+    /// follow (a whole sport/category), which asks first because re-following it
+    /// would not bring back the athletes and teams that lived under it.
+    private func toggleFollow(_ subject: AgendaSubject) {
+        guard isFollowed(subject) else { return apply(subject, follow: true) }
+        if subject.isBroadFollow {
+            confirmingStop = subject
+        } else {
+            apply(subject, follow: false)
+        }
+    }
+
+    private func apply(_ subject: AgendaSubject, follow: Bool) {
+        followOverride[subject.id] = follow
+        receipt = FollowReceipt(name: subject.entity.name, nowFollowed: follow)
+        if !reduceMotion { followHaptic &+= 1 }
+        if follow { onFollow(subject.entity) } else { onUnfollow(subject.entity) }
     }
 
     // MARK: - Entity pages (WP-170)
@@ -251,7 +393,8 @@ struct EventDetailSheet: View {
     private var entityPagesSection: some View {
         if !row.subjects.isEmpty {
             Section {
-                ForEach(row.subjects, id: \.id) { entity in
+                ForEach(row.subjects) { subject in
+                    let entity = subject.entity
                     NavigationLink {
                         EntityPageView(entity: entity, liveStore: liveStore)
                     } label: {
@@ -540,6 +683,6 @@ private struct ProvenanceRows: View {
     return EventDetailSheet(row: AgendaEventRow(
         id: "preview", timeLabel: "18:00", title: "Sjakk-NM 2026", metaLabel: nil,
         channelLabel: "Lichess", isMustSee: false, mustWatch: false, isAIResearch: true,
-        event: event, whyShown: "AI-research fant dette for deg", followable: []
+        event: event, whyShown: "AI-research fant dette for deg"
     ))
 }

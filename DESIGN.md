@@ -322,12 +322,35 @@ personvern-lekkasje.
 
 ### Event-detalj (native sheet, detents `[.medium, .large]`)
 
-Seksjoner: Arena · Om · **Hvor ser jeg det** (lenker) · **Funnet av AI**
-(confidence + kilder, kun AI-events) · **Varsel** (stille status) · **Resultat**
-(spoiler-maskert bak tapp når spoilervern er på) · **Tabell** (WP-171: ligatabell /
-golf-ledertavle / F1-VM-stilling, rang · navn · verdi, maks 5 rader + de involverte;
-result-avledet, så den ligger bak SAMME spoiler-maskering som Resultat).
-Ingen kort-i-kortet.
+Seksjoner: Arena · Om · **Handlinger** · **Lag og utøvere** · **Hvor ser jeg det**
+(lenker) · **Funnet av AI** (confidence + kilder, kun AI-events) · **Varsel**
+(stille status) · **Resultat** (spoiler-maskert bak tapp når spoilervern er på) ·
+**Tabell** (WP-171: ligatabell / golf-ledertavle / F1-VM-stilling, rang · navn ·
+verdi, maks 5 rader + de involverte; result-avledet, så den ligger bak SAMME
+spoiler-maskering som Resultat). Ingen kort-i-kortet.
+
+**Symmetrisk følging (WP-252 — NORMATIV, eier-beslutning 29.08.2026).** Arkets
+HANDLINGER-seksjon har ÉN rad per subjekt eventet handler om, og den går BEGGE
+veier: «Følg X» når du ikke følger, «Slutt å følge X» når du gjør det. Før dette
+kunne tavla bare LEGGE TIL — å fjerne krevde Deg › Det du følger → finn raden →
+sveip → bekreft, fire steg unna øyeblikket du merket at du ikke var interessert.
+Regelen er: **der du kan gjøre noe, kan du angre det, på samme sted.**
+
+- **Angre, ikke bekreft.** Ingen modal spør først. Raden BLIR STÅENDE og vipper
+  til motsatt handling — «Slutt å følge Lyn» blir «Følg Lyn», ett trykk tilbake —
+  og én stille kvitteringslinje under radene sier hva som skjedde og at neste
+  trykk angrer. Det ENESTE unntaket er en BRED følging (en hel sport eller
+  kategori): den spør fortsatt, fordi å følge sporten igjen ikke gir deg tilbake
+  lagene og utøverne du hadde under den.
+- **Ikke destruktiv-rødt.** «Slutt å følge» bærer `label`-blekk med en dempet
+  `minus.circle`; `destructive`-tokenet er forbeholdt slett/nullstill. Amber
+  blir stående på «Følg» — den fremadrettede handlingen. Tilgjengelighet er
+  symmetrien; lik tyngde ville gjort arket til et redigeringsverktøy.
+- **Aldri fra en gest på tavla.** Venstre-sveip på en agendarad tilbyr fortsatt
+  bare «Følg». Det finnes med vilje ingen sveip for å slutte å følge: agendaen
+  er en agenda, og en avfølging skal aldri være ett feilstrøk unna.
+- **Arket lukkes ikke** av noen av retningene (den gamle lukk-ved-følg var en
+  rest fra da trykket reiste assistentens diff-ark).
 
 ## Hjelperen (ambient, kontekstbevisst)
 
@@ -460,6 +483,17 @@ verdi + chevron trailing). Grupper:
 Destruktive rader → ett rolig bekreftelses-ark (aldri system-alert var påkrevd,
 men native `confirmationDialog`/sheet er nå tillatt): eksakt konsekvens i én
 setning + Nullstill/Avbryt.
+
+**Presisering — hva som er destruktivt (WP-252):** «destruktiv» betyr **noe du
+ikke kan gjøre om ved å gjenta handlingen** — Nullstill, «glem alt jeg vet om
+deg», og en BRED følging (hel sport / kategori, `FollowGroup.isBroadSweep`, der
+å følge igjen ikke gir tilbake det som lå under). Å slutte å følge ÉN utøver,
+ETT lag, ÉN turnering eller ÉN liga er det ikke: det angres ved å følge igjen.
+Slike rader spør derfor IKKE først — de utfører og tilbyr **Angre** etterpå (i
+lista: sveip → fjern → «Angre»-snackbar; i eventarket: raden vipper tilbake til
+«Følg»). En modal foran en triviell reversering koster et trykk HVER gang og
+beskytter mot nesten ingenting; dobbelt opp — først spørre og så tilby angre —
+er ren friksjon (det var akkurat det «Det du følger» gjorde før WP-252).
 
 ## Tema
 

@@ -78,6 +78,51 @@ final class FollowActionTests: XCTestCase {
         XCTAssertNil(store.load().rule(for: "fk-lyn-oslo"), "the removal is persisted")
     }
 
+    // MARK: - WP-252 — unfollow BY ENTITY (the detail sheet's «Slutt å følge»)
+
+    /// The detail sheet holds an `Entity`, not an `InterestRule`. `unfollow`
+    /// bridges that WITHOUT becoming a second write path: it resolves the rule
+    /// and reuses `removeRule`, so the persist + recompile are identical.
+    func test_unfollowByEntity_reusesRemoveRule_persistsAndRecompiles() {
+        let store = AssistantTestSupport.tempProfileStore()
+        let vm = makeVM(store: store)
+        let lyn = index.entity(id: "fk-lyn-oslo")!
+        vm.follow(lyn)
+
+        var recompiled = 0
+        vm.onProfileChanged = { recompiled += 1 }
+
+        XCTAssertTrue(vm.unfollow(lyn), "there was a rule to remove")
+
+        XCTAssertFalse(vm.isFollowing("fk-lyn-oslo"), "«Slutt å følge» drops the rule")
+        XCTAssertEqual(recompiled, 1, "unfollowing recompiles the agenda immediately")
+        XCTAssertNil(store.load().rule(for: "fk-lyn-oslo"), "the removal is persisted through the same store")
+    }
+
+    /// Symmetry all the way: unfollow → follow puts it back exactly, so the
+    /// sheet's «tap the row again» IS a complete undo.
+    func test_unfollowThenFollowAgain_restoresTheFollow() {
+        let vm = makeVM(store: AssistantTestSupport.tempProfileStore())
+        let lyn = index.entity(id: "fk-lyn-oslo")!
+
+        vm.follow(lyn)
+        vm.unfollow(lyn)
+        XCTAssertTrue(vm.profile.isEmpty)
+
+        vm.follow(lyn)
+        XCTAssertEqual(vm.profile.rules.map(\.entityId), ["fk-lyn-oslo"],
+                       "re-following after an unfollow restores exactly one rule")
+    }
+
+    func test_unfollow_isANoOpForSomethingNotFollowed() {
+        let vm = makeVM(store: AssistantTestSupport.tempProfileStore())
+        var recompiled = 0
+        vm.onProfileChanged = { recompiled += 1 }
+
+        XCTAssertFalse(vm.unfollow(index.entity(id: "fk-lyn-oslo")!), "nothing to remove")
+        XCTAssertEqual(recompiled, 0, "a no-op never recompiles the board")
+    }
+
     // MARK: - Legg til search (shared EntityIndex grounding)
 
     func test_search_findsFollowableTargets() {
