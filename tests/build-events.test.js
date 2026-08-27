@@ -707,4 +707,36 @@ describe("calibration gate (WP-245)", () => {
 		const events = runBuild();
 		expect(events.find((e) => e.title === "Etappe 14").confidence).toBe("high");
 	});
+
+	// WP-186-oppfølging (27.08): homeTeam/awayTeam names a CLUB, so the canonical
+	// team entity must win over a club-as-league duplicate (tracked.json's misfiled
+	// "FC Barcelona", the season-scoped europacup-playoff entries) — those ids carry
+	// no identity (logo), and stamping them cost the row its club mark.
+	describe("team stamping prefers the canonical team entity over league duplicates", () => {
+		it("stamps the team id even when a matching league entity registers first", () => {
+			const regDir = path.join(configDir, "registry");
+			fs.mkdirSync(regDir);
+			fs.writeFileSync(
+				path.join(regDir, "football.json"),
+				JSON.stringify({
+					entities: [
+						{ id: "fc-barcelona-dup", name: "FC Barcelona", aliases: [], sport: "football", type: "league" },
+						{ id: "barcelona", name: "Barcelona", aliases: ["FC Barcelona"], sport: "football", type: "team" },
+					],
+				})
+			);
+			fs.writeFileSync(
+				path.join(dataDir, "football.json"),
+				JSON.stringify({
+					tournaments: [
+						{ name: "La Liga", events: [{ title: "Getafe at Barcelona", time: future(2), homeTeam: "Barcelona", awayTeam: "Getafe" }] },
+					],
+				})
+			);
+			const events = runBuild();
+			const match = events.find((e) => e.title === "Getafe at Barcelona");
+			expect(match.homeTeamEntityId).toBe("barcelona");
+		});
+	});
+
 });

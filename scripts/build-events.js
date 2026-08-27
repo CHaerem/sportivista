@@ -37,7 +37,16 @@ function computeEventId(sport, title, time) {
 // build-entities.js's NOTE ON TYPE ACCURACY).
 const entities = writeEntities(dataDir, configDir);
 const athleteEntities = entities.filter((e) => e.type === "athlete");
-const teamEntities = entities.filter((e) => e.type === "team" || e.type === "league");
+// TEAM entities first: homeTeam/awayTeam name a club, so the canonical team
+// entity (which carries identity like the club mark) must win over tracked.json's
+// misfiled club-as-league duplicates (fc-barcelona, the season-scoped
+// "<klubb> – <europacup>-playoff" entries) — those stamped rows otherwise lose
+// their logo to an id nothing else references. League entries stay as fallback
+// for names no real team entity claims.
+const teamEntities = [
+	...entities.filter((e) => e.type === "team"),
+	...entities.filter((e) => e.type === "league"),
+];
 
 /**
  * Word-boundary, sport-scoped entity lookup. Checks every (name+alias) term

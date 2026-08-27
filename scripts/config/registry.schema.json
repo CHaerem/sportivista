@@ -79,7 +79,7 @@
 					"additionalProperties": false,
 					"properties": {
 						"file": { "type": "string", "description": "Filnavn under `docs/logos/` (= entitetens stabile id + `.png`)." },
-						"source": { "type": "string", "enum": ["wikimedia-commons", "espn"], "description": "Hvor assetet ble hentet ved seed-tid." },
+						"source": { "type": "string", "enum": ["wikimedia-commons", "espn", "club-official"], "description": "Hvor assetet ble hentet ved seed-tid. `club-official` = klubbens eget publiserte merke, hentet én gang fra klubbens offisielle nettsted (den sterkeste editorial-kilden — brukes når verken Commons har fri lisens eller ESPN har asset, jf. FK Lyn Oslo)." },
 						"basis": { "type": "string", "enum": ["free-license", "editorial-use"], "description": "`free-license` = opphavsretten er BEVIST fri (whitelistet lisens, maskinelt avgjort mot Commons' `imageinfo`). `editorial-use` = merket vises for å IDENTIFISERE klubben (eierbeslutning 22.07); ingen fri lisens er påstått." },
 						"license": { "type": "string", "description": "Lisensnavnet slik Commons oppgir det. PÅKREVD i praksis for `free-license` (uten den avvises merket); utelates for `editorial-use` — vi later ikke som at det finnes en lisens." },
 						"licenseId": { "type": "string", "enum": ["cc0", "pd", "cc-by", "cc-by-sa"], "description": "Kanonisk lisensfamilie fra whitelisten i scripts/lib/logo-license.js." },
