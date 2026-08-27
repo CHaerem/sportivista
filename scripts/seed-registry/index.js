@@ -37,8 +37,8 @@ const fetchHtml = (url) => fetchText(url, { headers: { "User-Agent": "Mozilla/5.
 export const SEEDS = {
 	football: {
 		run: () => seedFootball(fetchJson),
-		source: "espn-teams: eng.1 + esp.1 + nor.1 + nor.2 + uefa.champions + fifa.world (landslag)",
-		what: "fotball — alle klubber i ligaene fetcherne dekker + VM-landslagene",
+		source: "espn-teams: eng.1 + esp.1 + nor.1 + nor.2 + uefa.champions + ita.1 + ger.1 + fifa.world + uefa.nations (landslag)",
+		what: "fotball — alle klubber i ligaene som når tavla (fetcher + research) + VM- og Nations League-landslagene",
 	},
 	f1: {
 		run: () => seedF1(fetchJson),

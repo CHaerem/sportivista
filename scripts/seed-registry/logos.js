@@ -142,6 +142,33 @@ export function logoFileName(entityId) {
 }
 
 /**
+ * The mark sources THIS script can produce. Anything else in the registry was
+ * placed by a human and cannot be re-derived by a seed run.
+ */
+const SEEDABLE_SOURCES = new Set(["wikimedia-commons", "espn"]);
+
+/**
+ * WP-251 — may a re-seed DROP this existing mark because it found no free
+ * candidate for the entity?
+ *
+ * Only if the seed could put it back. The free pass used to clear `e.logo` for
+ * every entity Commons had no P154 for, and the editorial pass then re-filled it
+ * from ESPN — which silently destroyed the one source that has no automated
+ * path back: `club-official`, the club's own published mark, fetched by hand
+ * exactly because neither Commons nor ESPN had one (FK Lyn Oslo — the owner's
+ * club). A re-seed deleted the record AND `pruneOrphans` deleted the asset, so
+ * the mark was gone for good and nothing said so.
+ *
+ * This does NOT weaken the policy switch: a `club-official` mark rests on
+ * `editorial-use`, so the free-only branch below still drops it, and
+ * `isLogoAllowed` still gates it at publish time in build-entities.js. The
+ * owner's switch stays the one thing that decides what ships.
+ */
+export function isSeedReplaceable(logo) {
+	return !logo || SEEDABLE_SOURCES.has(logo.source);
+}
+
+/**
  * WP-186 (eierbeslutning 22.07) — the EDITORIAL source. ESPN is the provider
  * whose fixtures/teams we already consume, and the registry already carries its
  * `espnId` from the WP-161 seeding, so the mark and the data agree by
@@ -402,14 +429,14 @@ export async function seedLogos({ sports = [], logoDir, dryRun = false, log = co
 		for (const e of targets) {
 			const commonsFile = wanted.get(e.id);
 			if (!commonsFile) {
-				if (e.logo) delete e.logo;
+				if (e.logo && isSeedReplaceable(e.logo)) delete e.logo;
 				continue;
 			}
 			const ii = info.get(commonsFile) || null;
 			const verdict = classifyLicense(ii);
 			if (!verdict.ok) {
 				note(verdict.reason);
-				if (e.logo) delete e.logo;
+				if (e.logo && isSeedReplaceable(e.logo)) delete e.logo;
 				continue;
 			}
 			const thumb = ii.thumburl || ii.url;

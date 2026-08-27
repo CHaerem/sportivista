@@ -65,7 +65,12 @@ const TABLE = {
 	grl: "GL", greenland: "GL", gronland: "GL",
 	hun: "HU", hungary: "HU", ungarn: "HU",
 	isl: "IS", iceland: "IS", island: "IS",
-	irl: "IE", ireland: "IE", irland: "IE",
+	// WP-251: ESPN's uefa.nations list spells Ireland "Republic of Ireland" (to
+	// disambiguate it from Northern Ireland, which is GB-NIR above) and adds two
+	// UEFA members with their own flags and their own football sides.
+	irl: "IE", ireland: "IE", irland: "IE", "republic of ireland": "IE", "rep ireland": "IE",
+	fro: "FO", fao: "FO", "faroe islands": "FO", faroyene: "FO",
+	gib: "GI", gibraltar: "GI",
 	isr: "IL", israel: "IL",
 	ita: "IT", italy: "IT", italia: "IT",
 	kos: "XK", kosovo: "XK",

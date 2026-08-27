@@ -61,8 +61,18 @@ const wd = (qid) => `http://www.wikidata.org/entity/${qid}`;
 // --- transforms ---
 
 describe("espn transforms", () => {
-	it("covers exactly the leagues the football fetcher covers (sports-config mirror)", () => {
-		expect(FOOTBALL_LEAGUES.map((l) => l.code)).toEqual(["eng.1", "esp.1", "nor.1", "nor.2", "uefa.champions", "fifa.world"]);
+	it("covers the leagues that reach the BOARD — the fetcher's, plus the ones research fills", () => {
+		// WP-251: the registry is a LOOKUP, not a coverage promise, so it must span
+		// every league whose clubs appear on the board — including ita.1/ger.1,
+		// which no fetcher polls but the research agent fills (football is tier1,
+		// covered wholesale). A club with no entity has no mark and no follow.
+		expect(FOOTBALL_LEAGUES.map((l) => l.code)).toEqual([
+			"eng.1", "esp.1", "nor.1", "nor.2", "uefa.champions", "ita.1", "ger.1", "fifa.world", "uefa.nations",
+		]);
+	});
+
+	it("marks exactly the national-team seeds — the flag gate, and the zero-asset half of the seed", () => {
+		expect(FOOTBALL_LEAGUES.filter((l) => l.national).map((l) => l.code)).toEqual(["fifa.world", "uefa.nations"]);
 	});
 
 	it("teams API → team candidates with espnId; shortDisplayName alias only when real (≥4 chars, different)", () => {
@@ -70,6 +80,29 @@ describe("espn transforms", () => {
 		expect(out).toHaveLength(2);
 		expect(out[0]).toEqual({ name: "Liverpool", aliases: [], sport: "football", type: "team", external: { espnId: "364" } });
 		expect(out[1].aliases).toEqual(["Bournemouth"]); // never the 3-letter abbreviation
+	});
+
+	it("WP-251: the entity's name is the BOARD's, and ESPN's spelling survives as an alias", () => {
+		const json = { sports: [{ leagues: [{ teams: [
+			{ team: { id: "5270", displayName: "Tromso", shortDisplayName: "Tromso" } },
+			{ team: { id: "21380", displayName: "Hamarkameratene", shortDisplayName: "Hamarkameratene" } },
+		] }] }] };
+		const [tromso, hamkam] = footballEntitiesFromTeams(json);
+		// Without this the board's "Tromsø" never matched the registry's "Tromso"
+		// (NFD leaves "ø" intact), and the row lost its entityId — and its mark.
+		expect(tromso.name).toBe("Tromsø");
+		expect(tromso.aliases).toEqual(["Tromso"]);
+		expect(hamkam.name).toBe("HamKam");
+		expect(hamkam.aliases).toEqual(["Hamarkameratene"]);
+	});
+
+	it("national-team leagues stamp the country from ESPN's ENGLISH name, not the board's", () => {
+		const json = { sports: [{ leagues: [{ teams: [{ team: { id: "463", displayName: "Denmark" } }] }] }] };
+		const [dk] = footballEntitiesFromTeams(json, { national: true });
+		expect(dk.name).toBe("Danmark");        // the board speaks Norwegian
+		expect(dk.country).toBe("Denmark");     // lib/country.js's table is keyed on ESPN's dialect
+		expect(mergeRegistry([], [dk])[0].country).toBe("DK");
+		expect(dk.national).toBe(true);
 	});
 
 	it("national-team leagues (fifa.world) stamp the country", () => {
@@ -310,10 +343,11 @@ describe("ESPN seeds carry the identity the avatar needs", () => {
 		expect(arsenal.national).toBeUndefined(); // a club is not a landslag
 	});
 
-	it("only the fifa.world seed marks a team `national` (the flag gate)", () => {
+	it("only a national seed marks a team `national` (the flag gate)", () => {
 		const json = { sports: [{ leagues: [{ teams: [{ team: { id: "464", displayName: "Norway", color: "c8102e" } }] }] }] };
 		const [national] = footballEntitiesFromTeams(json, { national: true });
 		expect(national.national).toBe(true);
+		expect(national.name).toBe("Norge");
 		expect(mergeRegistry([], [national])[0].country).toBe("NO");
 	});
 });
