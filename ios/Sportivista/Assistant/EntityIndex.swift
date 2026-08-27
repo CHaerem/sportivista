@@ -257,7 +257,7 @@ struct EntityIndex: Sendable {
     }
 
     /// WP-61 — the served winner ONLY (`resolve(query).served`), but O(1) on the
-    /// common path via the prebuilt exact-match maps. `followableEntities` calls
+    /// common path via the prebuilt exact-match maps. `AgendaViewModel.subjects` calls
     /// this once per home/away/tournament NAME on every agenda row; the full
     /// `resolve` scans all entities + runs Levenshtein per one, which is O(events
     /// × entities) across a compile. This is proven byte-identical to

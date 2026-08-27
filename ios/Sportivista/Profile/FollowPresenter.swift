@@ -48,6 +48,26 @@ enum FollowGroup: Int, CaseIterable {
         }
     }
 
+    /// WP-252 — whether STOPPING a follow in this group is a BROAD SWEEP: a
+    /// whole sport or an umbrella category. Those keep the calm confirmation.
+    ///
+    /// The reason is OMFANG, not irreversibility. A sport rule is the only kind
+    /// that admits events WHOLESALE (`EffectiveInterests` folds it into
+    /// `followBroadly`), so dropping it can empty most of the board in one tap,
+    /// and an undo affordance is easy to lose sight of when everything under it
+    /// moves at once. It is NOT harder to undo than any other follow:
+    /// `InterestProfile.applying(.remove)` drops exactly one rule — no cascade —
+    /// and the teams and athletes you follow individually stay put, which is
+    /// what the dialog itself tells the user.
+    ///
+    /// Every NARROW follow — one athlete, team, tournament or league — drops the
+    /// modal in favour of undo: a modal that guards a reversible action costs a
+    /// tap every single time and protects against almost nothing.
+    ///
+    /// One definition, read by both surfaces: the follow list (per rule) and
+    /// the agenda's detail sheet (per subject, via `AgendaSubject.isBroadFollow`).
+    var isBroadSweep: Bool { self == .sport || self == .category }
+
     /// The Norwegian section header (DESIGN § Gruppeoverskrift: uppercase).
     var header: String {
         switch self {

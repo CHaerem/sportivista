@@ -110,12 +110,16 @@ struct ContentView: View {
         case assistantResult
         /// WP-83 — the share/import surface (now re-homed to Deg).
         case share
+        /// WP-252 — the detail sheet's symmetric HANDLINGER: one subject already
+        /// followed («Slutt å følge»), one not («Følg»), in the same section.
+        case followSheet(AgendaEventRow)
         var id: String {
             switch self {
             case .memory: return "memory"
             case .spoiler(let row): return "spoiler-\(row.id)"
             case .assistantResult: return "assistantResult"
             case .share: return "share"
+            case .followSheet(let row): return "followSheet-\(row.id)"
             }
         }
     }
@@ -281,6 +285,7 @@ struct ContentView: View {
                     liveNowLine
                     filterLine
                     AgendaView(viewModel: agenda, liveStore: liveStore, onFollow: follow,
+                               onUnfollow: unfollow, onRestore: restore,
                                onOpen: { assistant.recordOpened($0) },
                                openEventID: $requestedEventID)
                 case .nyheter:
@@ -480,6 +485,21 @@ struct ContentView: View {
                 if mode == "spoiler" {
                     demoSheet = .spoiler(MemoryDemoSeed.spoilerRow())
                 }
+                // WP-252: the symmetric HANDLINGER section — one subject you
+                // follow (renders «Slutt å følge»), one you don't («Følg»), in
+                // one deterministic sheet, offline. Tapping either flips it in
+                // place: the sheet IS the undo.
+                // `follow-sheet-tett` is the SAME sheet in its densest honest
+                // state: both teams AND the tournament followed, so HANDLINGER
+                // carries three «Slutt å følge» rows (the subject cap is three).
+                if mode == "follow-sheet" || mode == "follow-sheet-tett" {
+                    let dense = mode == "follow-sheet-tett"
+                    let row = FollowSymmetryDemoSeed.row(dense: dense)
+                    try? profileStore.save(dense ? FollowSymmetryDemoSeed.denseProfile()
+                                                 : FollowSymmetryDemoSeed.profile())
+                    assistant.reloadProfile()
+                    demoSheet = .followSheet(row)
+                }
                 // WP-31 onboarding screenshots — the mock-backed assistant reads
                 // "available", so the conversation step renders. Seed per sub-mode
                 // and raise the overlay (initialStep jumps to the right step).
@@ -672,6 +692,8 @@ struct ContentView: View {
             switch demoSheet {
             case .memory: WhatIKnowView(viewModel: assistant)
             case .spoiler(let row): EventDetailSheet(row: row)
+            case .followSheet(let row):
+                EventDetailSheet(row: row, onFollow: follow, onUnfollow: unfollow, onRestore: restore)
             case .assistantResult: AssistantSheetView(viewModel: assistant, dismiss: closeSheet)
             case .share: ProfileShareSheet(viewModel: assistant)
             }
@@ -687,6 +709,21 @@ struct ContentView: View {
     /// `onProfileChanged`; no assistant diff sheet.
     private func follow(_ entity: Entity) {
         assistant.follow(entity)
+    }
+
+    /// WP-252 — «Slutt å følge <entitet>» tapped in the same detail sheet. The
+    /// mirror of `follow` all the way down: `AssistantViewModel.unfollow` resolves
+    /// the rule and reuses `removeRule`, so this persists + recompiles the agenda
+    /// through exactly the path Deg › Det du følger uses. It hands the removed
+    /// rule back to the sheet, which is what makes the undo a restore.
+    private func unfollow(_ entity: Entity) -> UnfollowOutcome? {
+        assistant.unfollow(entity)
+    }
+
+    /// WP-252 — the undo: put a rule the sheet just removed back verbatim, with
+    /// its scope, lens and weight intact. Same store, same recompile.
+    private func restore(_ rule: InterestRule) {
+        assistant.restore(rule)
     }
 
     /// WP-66 — the HOST-owned side of an assistant command. Theme, re-onboarding,

@@ -322,12 +322,56 @@ personvern-lekkasje.
 
 ### Event-detalj (native sheet, detents `[.medium, .large]`)
 
-Seksjoner: Arena · Om · **Hvor ser jeg det** (lenker) · **Funnet av AI**
-(confidence + kilder, kun AI-events) · **Varsel** (stille status) · **Resultat**
-(spoiler-maskert bak tapp når spoilervern er på) · **Tabell** (WP-171: ligatabell /
-golf-ledertavle / F1-VM-stilling, rang · navn · verdi, maks 5 rader + de involverte;
-result-avledet, så den ligger bak SAMME spoiler-maskering som Resultat).
-Ingen kort-i-kortet.
+Seksjoner: Arena · Om · **Handlinger** · **Lag og utøvere** · **Hvor ser jeg det**
+(lenker) · **Funnet av AI** (confidence + kilder, kun AI-events) · **Varsel**
+(stille status) · **Resultat** (spoiler-maskert bak tapp når spoilervern er på) ·
+**Tabell** (WP-171: ligatabell / golf-ledertavle / F1-VM-stilling, rang · navn ·
+verdi, maks 5 rader + de involverte; result-avledet, så den ligger bak SAMME
+spoiler-maskering som Resultat). Ingen kort-i-kortet.
+
+**Symmetrisk følging (WP-252 — NORMATIV, eier-beslutning 29.08.2026).** Arkets
+HANDLINGER-seksjon har ÉN rad per subjekt eventet handler om, og den går BEGGE
+veier: «Følg X» når du ikke følger, «Slutt å følge X» når du gjør det. Før dette
+kunne tavla bare LEGGE TIL — å fjerne krevde Deg › Det du følger → finn raden →
+sveip → bekreft, fire steg unna øyeblikket du merket at du ikke var interessert.
+Regelen er: **der du kan gjøre noe, kan du angre det, på samme sted.**
+
+- **Angre, ikke bekreft.** Ingen modal spør først. Raden BLIR STÅENDE og vipper
+  til motsatt handling — «Slutt å følge Lyn» blir «Følg Lyn», ett trykk tilbake —
+  og én stille kvitteringslinje under radene sier hva som skjedde og at neste
+  trykk angrer.
+- **Angre GJENOPPRETTER regelen, den lager ingen ny.** Trykket tilbake kjører
+  `AssistantViewModel.restore` med regelen avfølgingen returnerte, ikke
+  `follow(entity)`. En følging kan bære avgrensning («bare i Grand Slams») og
+  perspektiv («gjennom norske») som er BRUKERSYNLIGE i Det du følger; en angre
+  som bygger en fersk standardregel ville stille utvidet følgingen. Løftet i
+  kvitteringen er ufravikelig: angre skal ikke etterlate spor.
+- **Kvitteringen sier det som faktisk skjer.** Var dette det SISTE du fulgte,
+  sier linjen at agendaen viser bredt igjen — ikke ingenting. En tom profil gir
+  `EffectiveInterests` grunn-interessene tilbake og kompilatoren faller til sin
+  brede standard, så tavla blir STØRRE. Én ærlig setning, ingen dialog, ingen
+  advarsel.
+- **Unntaket som spør: BRED følging** (en hel sport eller kategori,
+  `FollowGroup.isBroadSweep`). Ikke fordi den er uopprettelig — den er ikke det:
+  `InterestProfile.applying(.remove)` fjerner ÉN regel, uten kaskade, og lagene
+  og utøverne du følger enkeltvis blir stående (det er også nøyaktig det
+  dialogteksten sier). Grunnen er OMFANG: en sportsregel er den eneste som
+  slipper inn events en gros, så ett trykk kan tømme mesteparten av tavla — og
+  da er én angre-rad lett å miste av syne i alt som endrer seg under den.
+- **Ikke destruktiv-rødt, og ikke halvfet.** «Slutt å følge» bærer `label`-blekk
+  i VANLIG vekt med en dempet `minus.circle`; `destructive`-tokenet er forbeholdt
+  slett/nullstill. Amber OG halvfet blir stående på «Følg» — den fremadrettede
+  handlingen. Tilgjengelighet er symmetrien; lik tyngde ville gjort arket til et
+  redigeringsverktøy — og gjorde det: et event kan handle om inntil tre subjekter
+  (`AgendaViewModel.subjects` kapper på tre), og følger du alle, ble HANDLINGER
+  tre halvfete «Slutt å følge»-rader rett under ARENA, tyngre enn noe annet i et
+  ark du åpnet for å se hvor kampen går. Vanlig vekt er hva som holder raden
+  tilgjengelig uten at den krever noe.
+- **Aldri fra en gest på tavla.** Venstre-sveip på en agendarad tilbyr fortsatt
+  bare «Følg». Det finnes med vilje ingen sveip for å slutte å følge: agendaen
+  er en agenda, og en avfølging skal aldri være ett feilstrøk unna.
+- **Arket lukkes ikke** av noen av retningene (den gamle lukk-ved-følg var en
+  rest fra da trykket reiste assistentens diff-ark).
 
 ## Hjelperen (ambient, kontekstbevisst)
 
@@ -460,6 +504,26 @@ verdi + chevron trailing). Grupper:
 Destruktive rader → ett rolig bekreftelses-ark (aldri system-alert var påkrevd,
 men native `confirmationDialog`/sheet er nå tillatt): eksakt konsekvens i én
 setning + Nullstill/Avbryt.
+
+**Presisering — hva som er destruktivt, og hva som bare er stort (WP-252):**
+«destruktiv» betyr **noe du ikke kan gjøre om ved å gjenta handlingen** —
+Nullstill og «glem alt jeg vet om deg». Å slutte å følge er ALDRI det, uansett
+hvor bredt: `InterestProfile.applying(.remove)` fjerner ÉN regel, uten kaskade,
+og angre GJENOPPRETTER den regelen (`AssistantViewModel.restore`) med
+avgrensning, perspektiv og vekt i behold — ikke en ny standardregel. Slike rader
+spør derfor IKKE først: de utfører og tilbyr **Angre** etterpå (i lista: sveip →
+fjern → «Angre»-snackbar; i eventarket: raden vipper tilbake til «Følg»). En
+modal foran en reversering koster et trykk HVER gang; dobbelt opp — først spørre
+og så tilby angre — er ren friksjon (det var akkurat det «Det du følger» gjorde
+før WP-252).
+
+Ett tilfelle spør likevel, og grunnen er **omfang, ikke uopprettelighet**: en
+BRED følging (hel sport / kategori, `FollowGroup.isBroadSweep`). Sportsregelen
+er den eneste som slipper inn events en gros, så å fjerne den kan tømme
+mesteparten av tavla i ett trykk — en endring så stor at angre-raden lett
+drukner i den. Dialogen sier eksakt hva som skjer OG hva som består («Lag og
+utøvere du følger enkeltvis blir stående»); den påstår aldri at handlingen ikke
+kan angres.
 
 ## Tema
 

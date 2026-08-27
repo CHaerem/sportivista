@@ -428,7 +428,7 @@ final class AgendaViewModel {
         let _tf = CFAbsoluteTimeGetCurrent()
         let feed = FeedCompiler.compile(events: feedEvents, interests: interests, now: now)
         LaunchTrace.mark("compile/feedcompiler", since: _tf)
-        // WP-61: one memo per compile, shared by every row's `followableEntities`
+        // WP-61: one memo per compile, shared by every row's `subjects`
         // so a recurring team/tournament name resolves once, not once per row.
         let nameCache = NameResolveCache()
         let todayKey = FeedCompiler.osloDayKey(now)
@@ -826,31 +826,40 @@ final class AgendaViewModel {
             isAIResearch: event.source == "ai-research",
             event: event,
             whyShown: FeedCompiler.whyShown(feedEvent, interests: interests),
-            followable: followableEntities(for: event, index: index, followedIds: followedIds, cache: cache),
             spoilerSafe: spoilerSafe,
             identity: identityIndex.identity(for: event),
-            // WP-170: the SAME resolution with nothing filtered out — the entity
-            // page must be reachable for a team you already follow too.
-            subjects: followableEntities(for: event, index: index, followedIds: [], cache: cache)
+            // WP-252: ONE resolution, each subject stamped with whether it is
+            // followed — the entity page must be reachable for a team you
+            // already follow, and the sheet must be able to offer «Slutt å
+            // følge» for exactly that team.
+            subjects: subjects(for: event, index: index, followedIds: followedIds, cache: cache)
         )
     }
 
-    // MARK: - Followable entities (WP-16.4 — the detail sheet's «Følg X»)
+    // MARK: - Subjects (WP-16.4 → WP-252 — the detail sheet's «Følg» / «Slutt å følge»)
 
-    /// The entities this event is ABOUT that the user doesn't already follow —
-    /// what a "Følg X" context action can offer. Sources, in order: the event's
-    /// own stable entity ids (home/away team, Norwegian players — authoritative
-    /// when present), then the home/away team & tournament NAMES resolved
-    /// confidently through the index (so "Lyn" offers FK Lyn Oslo even without
-    /// an id). De-duplicated, already-followed dropped, capped at three so the
-    /// sheet stays calm. Empty when the index hasn't synced. Pure — testable
-    /// with a hand-built index.
+    /// The entities this event is ABOUT, each stamped with whether the profile
+    /// already follows it. Sources, in order: the event's own stable entity ids
+    /// (home/away team, Norwegian players — authoritative when present), then
+    /// the home/away team & tournament NAMES resolved confidently through the
+    /// index (so "Lyn" resolves FK Lyn Oslo even without an id). De-duplicated,
+    /// capped at three so the sheet stays calm. Empty when the index hasn't
+    /// synced. Pure — testable with a hand-built index.
+    ///
+    /// WP-252 replaced the old `followableEntities`, which DROPPED whatever you
+    /// already followed. That was right while the sheet could only ADD, and
+    /// exactly wrong once it must also let you stop: the rows you most want to
+    /// weed out are the ones you follow, and they were the only ones the sheet
+    /// had nothing to say about. Nothing is filtered here any more; the caller
+    /// reads `isFollowed` and picks the direction. The cap now applies ONCE, to
+    /// one list, so LAG OG UTØVERE and HANDLINGER always name the same subjects.
+    ///
     /// WP-61: `cache` (default nil) memoizes the name→served resolutions WITHIN
     /// one `buildSections` pass. The same team/tournament names recur across many
     /// rows, so a shared cache collapses them to a single lookup; nil (the unit
     /// tests' path) simply resolves each name directly — identical result, just
     /// no memoization.
-    nonisolated static func followableEntities(for event: Event, index: EntityIndex, followedIds: Set<String>, cache: NameResolveCache? = nil) -> [Entity] {
+    nonisolated static func subjects(for event: Event, index: EntityIndex, followedIds: Set<String>, cache: NameResolveCache? = nil) -> [AgendaSubject] {
         guard !index.isEmpty else { return [] }
         var ids: [String] = []
         func add(_ id: String?) { if let id, !id.isEmpty { ids.append(id) } }
@@ -862,9 +871,11 @@ final class AgendaViewModel {
             if let served { ids.append(served.id) }
         }
         var seen = Set<String>()
-        var out: [Entity] = []
-        for id in ids where !followedIds.contains(id) && seen.insert(id).inserted {
-            if let entity = index.entity(id: id) { out.append(entity) }
+        var out: [AgendaSubject] = []
+        for id in ids where seen.insert(id).inserted {
+            if let entity = index.entity(id: id) {
+                out.append(AgendaSubject(entity: entity, isFollowed: followedIds.contains(id)))
+            }
         }
         return Array(out.prefix(3))
     }
@@ -1005,10 +1016,9 @@ final class AgendaViewModel {
                 isAIResearch: event.source == "ai-research",
                 event: event,
                 whyShown: FeedCompiler.whyShown(feedEvent, interests: interests),
-                followable: followableEntities(for: event, index: index, followedIds: followedIds, cache: cache),
                 spoilerSafe: shield.spoilerSafe(event: event),
                 identity: identityIndex.identity(for: event),
-                subjects: followableEntities(for: event, index: index, followedIds: [], cache: cache)
+                subjects: subjects(for: event, index: index, followedIds: followedIds, cache: cache)
             ))
 
         case .series(let series):
@@ -1112,7 +1122,7 @@ enum MainThreadGuard {
     #endif
 }
 
-/// WP-61 — a per-`buildSections` memo for `followableEntities`' name→served
+/// WP-61 — a per-`buildSections` memo for `subjects`' name→served
 /// resolutions. One compile resolves the same home/away/tournament NAMES over
 /// and over (once per row that carries them); this collapses each distinct name
 /// to a SINGLE `EntityIndex.servedEntity` call. A reference type so one instance
