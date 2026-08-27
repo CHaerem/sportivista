@@ -198,7 +198,7 @@
 				"tentative": { "type": "boolean" },
 				"urlKind": {
 					"enum": ["deep", "landing"],
-					"description": "WP-246 — hva URL-en faktisk peker på: \"deep\" = selve sendingen/kampen/streamen, \"landing\" = tjenestens forside eller en generisk seksjon (sport/direkte/språkkode). Settes deterministisk av classifyStreamingUrl() (scripts/lib/norwegian-rights.js) og stemples sist i build-events.js, så etiketten aldri kan drifte fra URL-en. Feltet er VALGFRITT: en oppføring uten URL (eller en URL vi ikke kan parse) har det ikke, og eldre publiserte events uten feltet forblir gyldige — klientene faller da tilbake til gammel oppførsel. Kontrakten: kun \"deep\" får presenteres som en lenke til sendingen; \"landing\" viser kanalNAVNET (som er sant og nyttig) uten lenke."
+					"description": "WP-246 — hva URL-en faktisk peker på: \"deep\" = selve sendingen/kampen/streamen, \"landing\" = tjenestens forside eller en generisk seksjon (sport/direkte/språkkode). Settes deterministisk av classifyStreamingUrl() (scripts/lib/norwegian-rights.js) og stemples sist i build-events.js, så etiketten aldri kan drifte fra URL-en. Feltet er VALGFRITT: en oppføring uten URL (eller en URL vi ikke kan parse) har det ikke, og eldre publiserte events uten feltet forblir SKJEMAGYLDIGE. Men de to klientene tolker et MANGLENDE felt ULIKT, og det er et bevisst valg (WP-247): web beholder gammel oppførsel for ustemplede oppføringer, mens iOS behandler manglende felt som \"landing\" — appen har varig cache på enheten, så «ingen urlKind» betyr der «cachet før pipelinen stemplet det», ikke «URL-en er grei». Kontrakten: kun \"deep\" får presenteres som en lenke til sendingen; \"landing\" viser kanalNAVNET (som er sant og nyttig) uten lenke."
 				}
 			}
 		},

@@ -4,7 +4,7 @@ import path from "path";
 import crypto from "crypto";
 import { readJsonIfExists, rootDataPath, configDirPath, MS_PER_DAY, makeCoverageGate, normalizeParticipants, normalizeNorwegianPlayers, normalizeText, containsName, entityTerms } from "./lib/helpers.js";
 import { resolveStreaming, stampUrlKinds } from "./lib/norwegian-rights.js";
-import { deriveProvenance } from "./lib/provenance.js";
+import { deriveProvenance, lookalikeHosts, stripLookalikeEvidence } from "./lib/provenance.js";
 import { writeManifest } from "./build-manifest.js";
 import { writePortReport } from "./build-port-report.js";
 import { readIosCommit, buildAppVersion, readTestflight } from "./lib/app-version.js";
@@ -586,6 +586,9 @@ const provenanceConfig =
 		? { sources: sourcesRegister.sources, authority: authorityMap }
 		: null;
 let provenanceMigrated = 0;
+// Domener autoritetskartet flagger som lookalikes (franceletour.com ≠ letour.fr).
+const lookalikeSet = lookalikeHosts(authorityMap);
+let lookalikesStripped = 0;
 
 // Keep events from the last 14 days + upcoming, and only those the catalog covers
 const cutoff = Date.now() - 14 * MS_PER_DAY;
@@ -641,9 +644,21 @@ for (const e of kept) {
 			provenanceMigrated++;
 		}
 	}
+	// WP-242b: en lookalike skal ikke bare nektes SITERT — den skal ikke stå igjen
+	// i den flate evidens-lista heller, for det er den ⓘ-modalen viser brukeren.
+	if (lookalikeSet.size > 0) {
+		for (const field of ["evidence", "verificationSources"]) {
+			if (!Array.isArray(e[field])) continue;
+			const { urls, removed } = stripLookalikeEvidence(e[field], lookalikeSet);
+			if (removed > 0) { e[field] = urls; lookalikesStripped += removed; }
+		}
+	}
 }
 if (provenanceMigrated > 0) {
 	console.log(`Migrated flat evidence to per-fact provenance on ${provenanceMigrated} AI-research event(s) (WP-242).`);
+}
+if (lookalikesStripped > 0) {
+	console.log(`Stripped ${lookalikesStripped} lookalike-domain evidence URL(s) — a domain posing as the organizer is not a source (WP-242b).`);
 }
 // WP-94: validate the array in-process BEFORE writing it, and degrade instead
 // of freezing the hourly pipeline on a violation. static-pipeline.yml runs

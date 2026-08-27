@@ -8,7 +8,7 @@
 import { describe, it, expect } from "vitest";
 import fs from "fs";
 import path from "path";
-import { basisForRole, urlBelongsToSource, findCompetition, deriveProvenance } from "../scripts/lib/provenance.js";
+import { basisForRole, urlBelongsToSource, findCompetition, deriveProvenance, lookalikeHosts, stripLookalikeEvidence } from "../scripts/lib/provenance.js";
 
 // ── Inline-fixturer ─────────────────────────────────────────────────────────
 
@@ -217,5 +217,49 @@ describe("deriveProvenance mot ekte authority.json + sources.json", () => {
 		const ev = tdfEvent({ evidence: ["https://hjelp.tv2.no/hovedkategori/sport/tour-de-france"] });
 		const p = deriveProvenance(ev, realCfg);
 		expect(p.streaming).toMatchObject({ sourceId: "tv2", basis: "official" });
+	});
+});
+
+// --- WP-242b: lookalikes skal ikke stå igjen i den flate evidens-lista ---------
+//
+// `deriveProvenance` nektet allerede å SITERE en lookalike, men `evidence` er det
+// ⓘ-modalen rendrer til brukeren (detail.js). Da dette ble skrevet sto
+// franceletour.com som evidens på en Tour de France-etappe, mens letour.fr —
+// A.S.O., som faktisk lager ruta — ikke forekom én eneste gang i hele filen.
+describe("stripLookalikeEvidence (WP-242b)", () => {
+	const hosts = lookalikeHosts({
+		competitions: [{ id: "tdf", lookalikes: ["franceletour.com"] }],
+	});
+
+	it("plukker lookalike-domenene ut av autoritetskartet", () => {
+		expect([...hosts]).toEqual(["franceletour.com"]);
+	});
+
+	it("fjerner lookaliken og lar den ekte arrangøren stå", () => {
+		const { urls, removed } = stripLookalikeEvidence([
+			"https://franceletour.com/tour-de-france-2026-stage-14/",
+			"https://www.letour.fr/en/stage-14",
+		], hosts);
+		expect(removed).toBe(1);
+		expect(urls).toEqual(["https://www.letour.fr/en/stage-14"]);
+	});
+
+	it("tar subdomener av en lookalike, men aldri et domene som bare ligner", () => {
+		const { urls } = stripLookalikeEvidence([
+			"https://news.franceletour.com/x",
+			"https://franceletour.com.example.org/x", // annet domene — skal IKKE fjernes
+		], hosts);
+		expect(urls).toEqual(["https://franceletour.com.example.org/x"]);
+	});
+
+	it("lar uparsbare oppføringer stå — dette er ikke en URL-validator", () => {
+		const { urls, removed } = stripLookalikeEvidence(["ikke en url"], hosts);
+		expect(removed).toBe(0);
+		expect(urls).toEqual(["ikke en url"]);
+	});
+
+	it("er en no-op uten registrerte lookalikes", () => {
+		const before = ["https://franceletour.com/x"];
+		expect(stripLookalikeEvidence(before, new Set()).urls).toBe(before);
 	});
 });
