@@ -55,9 +55,9 @@ struct EntityIndex: Sendable {
         let variants: [String]
         /// Tokenizations aligned with `variants`.
         let variantTokens: [[String]]
-        /// `TextMatch.boundaryRegex` with THIS TERM as the name — the
+        /// `TextMatch.BoundaryMatcher` with THIS TERM as the name — the
         /// precompiled half of `containsName(q, raw)`.
-        let nameRegex: NSRegularExpression?
+        let nameMatcher: TextMatch.BoundaryMatcher?
     }
     private struct PreppedEntity {
         let entity: Entity
@@ -65,8 +65,9 @@ struct EntityIndex: Sendable {
         let initialsNorm: [String]
         let onFlyInitials: String?
     }
-    /// NSRegularExpression is immutable and documented thread-safe; the class
-    /// just isn't marked Sendable. Confined to this file.
+    /// Everything in here is immutable value data (BoundaryMatcher is a plain
+    /// String wrapper since the 27.08 de-regexing); `@unchecked` only spares us
+    /// marking the nested Entity model chain. Confined to this file.
     private struct Prepped: @unchecked Sendable { let entries: [PreppedEntity] }
     private let prepped: Prepped
     /// WP-61 — the stored-initials lookup, likewise built once: a normalized
@@ -164,7 +165,7 @@ struct EntityIndex: Sendable {
                     norm: tn,
                     variants: variants,
                     variantTokens: variants.map { $0.split(separator: " ").map(String.init) },
-                    nameRegex: TextMatch.boundaryRegex(forNormalizedName: tn)
+                    nameMatcher: TextMatch.BoundaryMatcher(forNormalizedName: tn)
                 ))
             }
             var initialsNorm: [String] = []
@@ -232,11 +233,11 @@ struct EntityIndex: Sendable {
 
         // One boundary regex for the QUERY (containsName(raw, q)'s name-half),
         // compiled once and reused across every entity/term below.
-        let queryRegex = TextMatch.boundaryRegex(forNormalizedName: q)
+        let queryMatcher = TextMatch.BoundaryMatcher(forNormalizedName: q)
 
         var scored: [(entity: Entity, score: Int, auto: Bool)] = []
         for p in prepped.entries {
-            if let m = Self.matchScore(for: p, queryNorm: q, queryTokens: qTokens, queryRegex: queryRegex),
+            if let m = Self.matchScore(for: p, queryNorm: q, queryTokens: qTokens, queryMatcher: queryMatcher),
                m.score >= Self.candidateFloor {
                 scored.append((p.entity, m.score, m.auto))
             }
@@ -347,7 +348,7 @@ struct EntityIndex: Sendable {
     /// suggestion-only.
     private static func matchScore(
         for p: PreppedEntity, queryNorm q: String, queryTokens qTokens: [String],
-        queryRegex: NSRegularExpression?
+        queryMatcher: TextMatch.BoundaryMatcher?
     ) -> (score: Int, auto: Bool)? {
         var best = 0
         var bestAuto = false
@@ -368,14 +369,14 @@ struct EntityIndex: Sendable {
                 }
                 if !ranContains {
                     ranContains = true
-                    // containsName(raw, q): name = q (precompiled queryRegex),
+                    // containsName(raw, q): name = q (prebuilt queryMatcher),
                     // haystack = normalize(raw) = term.norm.
-                    if let re = queryRegex, TextMatch.matches(re, normalizedHaystack: term.norm) {
+                    if let m = queryMatcher, m.matches(inNormalized: term.norm) {
                         consider(82, false)
                     }
                     // containsName(q, raw): name = raw (precompiled at init),
                     // haystack = q (already normalized).
-                    if let re = term.nameRegex, TextMatch.matches(re, normalizedHaystack: q) {
+                    if let m = term.nameMatcher, m.matches(inNormalized: q) {
                         consider(78, false)
                     }
                 }

@@ -64,33 +64,81 @@ enum TextMatch {
 
     /// Port of server `containsName` (helpers.js:81): word-boundary,
     /// accent-insensitive containment. Both sides are `normalize`d first, then
-    /// the name is matched with the boundary regex
+    /// the name must occur with non-letter/non-digit (or string edge) on both
+    /// sides — the semantics of the reference regex
     /// `(?:^|[^\p{L}\p{N}])<name>(?:[^\p{L}\p{N}]|$)`.
     ///
     /// "Lyn" matches "Lyn Oslo" and "Vålerenga – Lyn" but NOT "Brooklyn" —
     /// boundaries kill the substring false-positive class.
     static func containsName(_ haystack: String, _ name: String) -> Bool {
-        guard let re = boundaryRegex(forNormalizedName: normalize(name)) else { return false }
-        return matches(re, normalizedHaystack: normalize(haystack))
+        guard let m = BoundaryMatcher(forNormalizedName: normalize(name)) else { return false }
+        return m.matches(inNormalized: normalize(haystack))
     }
 
-    /// The boundary regex for one (already `normalize`d) name — split out of
-    /// `containsName` so hot paths can compile it ONCE and reuse it across many
-    /// haystacks (EntityIndex precompiles one per stored term at init, and one
-    /// per query in `resolve` — compiling per call dominated matching cost).
-    /// nil ⟺ `containsName` would have returned false for every haystack.
-    static func boundaryRegex(forNormalizedName n0: String) -> NSRegularExpression? {
-        let n = n0.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !n.isEmpty else { return nil }
-        let pattern = "(?:^|[^\\p{L}\\p{N}])\(escapeRegex(n))(?:[^\\p{L}\\p{N}]|$)"
-        // ICU (NSRegularExpression) supports \p{L}/\p{N}; case-insensitive is
-        // redundant after normalize() but matches the JS "iu" flags exactly.
-        return try? NSRegularExpression(pattern: pattern, options: [.caseInsensitive])
+    /// The boundary matcher for one (already `normalize`d) name — split out of
+    /// `containsName` so hot paths can build it ONCE and reuse it across many
+    /// haystacks (EntityIndex keeps one per stored term, and one per query in
+    /// `resolve`). nil ⟺ `containsName` would have returned false for every
+    /// haystack.
+    ///
+    /// Minne-lærdom (27.08.2026): this used to be a precompiled
+    /// `NSRegularExpression` per term. At world-register scale (3 666 entities
+    /// × ~6 terms) those ~20 000 live ICU programs held ≈600 MB resident
+    /// (32 KB `icu::UnicodeSet` state EACH, for a pattern whose only classes
+    /// are \p{L}\p{N}) — the app's dominant footprint, and jetsam-pressure
+    /// hangs on device. The matcher below is a plain substring scan with
+    /// explicit boundary checks: same answers (the parity suite + golden
+    /// vectors judge), no ICU state at all.
+    struct BoundaryMatcher {
+        /// The normalized, trimmed, non-empty name to find — case-FOLDED, not
+        /// just lowercased: the old regex's `.caseInsensitive` performed full
+        /// Unicode case folding, which `normalize`'s `lowercased()` does NOT
+        /// cover for the ß-class ("Weißhaidinger" must keep matching the
+        /// uppercased surface form "WEISSHAIDINGER" → "weisshaidinger"; the
+        /// EntityServedParity suite pins it). `.folding(.caseInsensitive)` is
+        /// that same full folding, applied once per side.
+        let foldedName: String
+
+        init?(forNormalizedName n0: String) {
+            let n = n0.trimmingCharacters(in: .whitespacesAndNewlines)
+            guard !n.isEmpty else { return nil }
+            self.foldedName = n.folding(options: .caseInsensitive, locale: nil)
+        }
+
+        /// True when the name occurs in the (already normalized) haystack with a
+        /// non-\p{L}\p{N} scalar (or the string edge) immediately on each side.
+        /// The haystack gets the same full case folding as the name; `.literal`
+        /// search is then exact scalar-sequence comparison — both sides are
+        /// already NFD + mark-stripped by `normalize`.
+        func matches(inNormalized h0: String) -> Bool {
+            let h = h0.folding(options: .caseInsensitive, locale: nil)
+            guard !h.isEmpty else { return false }
+            var searchFrom = h.startIndex
+            while let r = h.range(of: foldedName, options: .literal, range: searchFrom..<h.endIndex) {
+                let beforeOK = r.lowerBound == h.startIndex
+                    || !TextMatch.isLetterOrNumber(h.unicodeScalars[h.unicodeScalars.index(before: r.lowerBound)])
+                let afterOK = r.upperBound == h.endIndex
+                    || !TextMatch.isLetterOrNumber(h.unicodeScalars[r.upperBound])
+                if beforeOK && afterOK { return true }
+                // Overlap-safe: advance ONE scalar, not past the whole match —
+                // "aa" in "aaa aa" must reach the later, boundary-clean
+                // occurrence even though the first two overlap.
+                searchFrom = h.unicodeScalars.index(after: r.lowerBound)
+            }
+            return false
+        }
     }
 
-    /// The match half of `containsName`, against an already-normalized haystack.
-    static func matches(_ re: NSRegularExpression, normalizedHaystack h: String) -> Bool {
-        let range = NSRange(h.startIndex..., in: h)
-        return re.firstMatch(in: h, options: [], range: range) != nil
+    /// `[\p{L}\p{N}]` — the reference regex's boundary class, by general
+    /// category (letters Lu/Ll/Lt/Lm/Lo, numbers Nd/Nl/No), exactly as ICU
+    /// defines \p{L} and \p{N}.
+    static func isLetterOrNumber(_ u: Unicode.Scalar) -> Bool {
+        switch u.properties.generalCategory {
+        case .uppercaseLetter, .lowercaseLetter, .titlecaseLetter, .modifierLetter, .otherLetter,
+             .decimalNumber, .letterNumber, .otherNumber:
+            return true
+        default:
+            return false
+        }
     }
 }
