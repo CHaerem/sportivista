@@ -22,8 +22,13 @@ struct EventDetailSheet: View {
     /// ProfileStore path Deg › Legg til uses, one source of truth. 3b:
     /// "veien fra «så noe interessant» til «følger» krever aldri assistenten" —
     /// no diff round-trip, the tap IS the confirmation.
+    ///
+    /// It hands BACK what it did (`FollowOutcome`, WP-254), for the same reason
+    /// the unfollow half does: the sheet cannot see from here whether this was
+    /// the profile's FIRST rule — the tap that turns a broad board into a narrow
+    /// one — and the receipt has to say so when it is.
     /// No-op default keeps standalone/preview use compiling.
-    var onFollow: (Entity) -> Void = { _ in }
+    var onFollow: (Entity) -> FollowOutcome? = { _ in nil }
     /// WP-252 — the mirror image: a "Slutt å følge <entitet>" tap. The host runs
     /// it through `AssistantViewModel.unfollow`, which resolves the entity's rule
     /// and hands it to the SAME `removeRule` Deg › Det du følger uses — no new
@@ -84,6 +89,13 @@ struct EventDetailSheet: View {
         let name: String
         /// The state the entity ended up in — drives which sentence is told.
         let nowFollowed: Bool
+        /// WP-254 — the follow was the profile's FIRST rule. The mirror of
+        /// `wasLastFollow` below, and the same surprise from the other end: an
+        /// EMPTY profile leaves the board on its broad default, and the first
+        /// rule makes `followBroadly` explicit — so ADDING one thing makes the
+        /// agenda SMALLER. «agendaen oppdateres» would be true and useless here
+        /// too.
+        var wasFirstFollow = false
         /// WP-252 — the unfollow emptied the profile. The board then does the
         /// opposite of what «forsvinner fra det du følger» suggests: an empty
         /// profile makes `EffectiveInterests.merge` hand the base interests
@@ -388,13 +400,21 @@ struct EventDetailSheet: View {
             // same one Deg › Det du følger tells), with «Du kan angre» made
             // concrete — here the undo is literally the row above.
             //
-            // Except when it was the LAST follow: then «agendaen oppdateres» is
-            // true and useless, because the board does the opposite of what the
-            // sentence implies — an empty profile hands `EffectiveInterests` the
-            // base interests back and the compiler falls back to its broad
-            // default, so you get MORE rows, not none. VOICE § 2 (ærlighet foran
-            // selvtillit): say it, in one calm sentence, no dialog and no
-            // warning — the user is still one tap from undoing it.
+            // Except at the two ENDS of the follow list, where «agendaen
+            // oppdateres» is true and useless because the board does the
+            // opposite of what the sentence implies:
+            //
+            //  • the LAST unfollow (WP-252) — an empty profile hands
+            //    `EffectiveInterests` the base interests back and the compiler
+            //    falls back to its broad default, so you get MORE rows, not none;
+            //  • the FIRST follow (WP-254) — the mirror image. Until it, the
+            //    board WAS that broad default; the first rule makes
+            //    `followBroadly` explicit and the agenda drops to what you
+            //    follow. You added one thing and the week got shorter.
+            //
+            // VOICE § 2 (ærlighet foran selvtillit): say it, in one calm
+            // sentence, no dialog and no warning — the user is still one tap
+            // from undoing it, and the row above is that tap.
             Text(receiptText(receipt))
                 .font(.sportivista(.footnote))
                 .foregroundStyle(SportivistaTokens.secondaryLabel)
@@ -406,9 +426,18 @@ struct EventDetailSheet: View {
     }
 
     /// The receipt's words. Pure and `static` so the copy is testable without a
-    /// view host — these three sentences are the package's promise in words.
-    static func receiptText(name: String, nowFollowed: Bool, wasLastFollow: Bool) -> String {
+    /// view host — these four sentences are the package's promise in words.
+    ///
+    /// The two END sentences are deliberate mirrors of each other, down to the
+    /// clause order: name · which end of the list this was · what the agenda
+    /// therefore does · the wrong reading, denied · how to undo it. The same
+    /// truth told twice, once in each direction.
+    static func receiptText(name: String, nowFollowed: Bool,
+                            wasFirstFollow: Bool, wasLastFollow: Bool) -> String {
         if nowFollowed {
+            if wasFirstFollow {
+                return "\(name) er det første du følger, så agendaen viser det du følger — ikke bredt lenger. Trykk Slutt å følge for å angre."
+            }
             return "Du følger \(name) nå, og agendaen oppdateres."
         }
         if wasLastFollow {
@@ -418,7 +447,8 @@ struct EventDetailSheet: View {
     }
 
     private func receiptText(_ receipt: FollowReceipt) -> String {
-        Self.receiptText(name: receipt.name, nowFollowed: receipt.nowFollowed, wasLastFollow: receipt.wasLastFollow)
+        Self.receiptText(name: receipt.name, nowFollowed: receipt.nowFollowed,
+                         wasFirstFollow: receipt.wasFirstFollow, wasLastFollow: receipt.wasLastFollow)
     }
 
     // MARK: - Follow state (WP-252)
@@ -448,6 +478,13 @@ struct EventDetailSheet: View {
     /// row tapped right after «Slutt å følge X» is an UNDO — and an undo has a
     /// rule to honour. Restoring it (rather than re-following the entity) is
     /// what keeps a scoped/lensed follow from quietly coming back widened.
+    ///
+    /// WP-254: that same split decides the receipt. Only a NEW follow can be the
+    /// profile's first rule in the sense worth narrating — an undo also refills
+    /// an emptied profile, but it puts back the state the user was in one tap
+    /// ago, and whose widening the previous receipt has already explained.
+    /// Announcing «det første du følger» for a tap taken to take something back
+    /// would narrate a change the user just reversed.
     private func apply(_ subject: AgendaSubject, follow: Bool) {
         followOverride[subject.id] = follow
         if !reduceMotion { followHaptic &+= 1 }
@@ -455,10 +492,12 @@ struct EventDetailSheet: View {
         if follow {
             if let removed = removedRules.removeValue(forKey: subject.id) {
                 onRestore(removed)
+                receipt = FollowReceipt(name: subject.entity.name, nowFollowed: true)
             } else {
-                onFollow(subject.entity)
+                let outcome = onFollow(subject.entity)
+                receipt = FollowReceipt(name: subject.entity.name, nowFollowed: true,
+                                        wasFirstFollow: outcome?.wasFirstFollow ?? false)
             }
-            receipt = FollowReceipt(name: subject.entity.name, nowFollowed: true)
         } else {
             let outcome = onUnfollow(subject.entity)
             if let outcome { removedRules[subject.id] = outcome.removed }
