@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-27T14:06:34.143Z",
+  "generatedAt": "2026-08-27T16:05:07.953Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "green",
+    "coverage": "yellow",
     "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
@@ -21,29 +21,36 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 2,
+    "openGaps": 3,
     "bySeverity": {
       "high": 0,
-      "medium": 0,
-      "low": 2
+      "medium": 3,
+      "low": 0
     },
-    "oldestGapAgeDays": 4.42,
-    "escalatable": 0,
-    "catalogMatched": 2,
-    "auditedAt": "2026-08-26T04:00:00Z",
+    "oldestGapAgeDays": 4.5,
+    "escalatable": 1,
+    "catalogMatched": 3,
+    "auditedAt": "2026-08-27T14:20:00Z",
     "gaps": [
       {
-        "interest": "UEFA Champions League 2026/27 — ligaspill runde 1 (MD1)",
-        "severity": "low",
-        "ageDays": 1.42,
+        "interest": "Landslag — Norge Nations League (Norge–Danmark 24. sep + Norge–Portugal 27. sep, Ullevaal)",
+        "severity": "medium",
+        "ageDays": 0.07,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
+        "interest": "UEFA Champions League 2026/27 — ligaspill runde 1 (MD1), Bodø/Glimt + katalog-klubber",
+        "severity": "medium",
+        "ageDays": 1.5,
+        "recurrences": 1,
+        "catalogMatched": true
+      },
+      {
         "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
-        "severity": "low",
-        "ageDays": 4.42,
-        "recurrences": 2,
+        "severity": "medium",
+        "ageDays": 4.5,
+        "recurrences": 3,
         "catalogMatched": true
       }
     ]
@@ -153,15 +160,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-27T14:06:29.240Z",
+    "buildCheckedAt": "2026-08-27T16:05:03.302Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-27T13:26:46.922Z",
-    "manifestAgeHours": 0.66,
+    "manifestGeneratedAt": "2026-08-27T14:06:35.752Z",
+    "manifestAgeHours": 1.98,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-08-26T05:59:11Z",
-    "verifyAgeHours": 32.12,
+    "verifyAgeHours": 34.1,
     "corrections": 2,
     "unresolved": 0,
     "signals": [
@@ -173,6 +180,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-08-27T14:06:34.143Z"
+    "generatedAt": "2026-08-27T16:05:07.953Z"
   }
 }
