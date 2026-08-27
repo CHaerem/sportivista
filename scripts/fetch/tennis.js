@@ -13,8 +13,14 @@ export class TennisFetcher extends ESPNAdapter {
 		// for focused mode — shows tournament schedule even without match data
 		if (!event && espnEvent && this.config.norwegian?.filterMode === "focused") {
 			const statusName = espnEvent.status?.type?.name || "";
-			// Skip completed tournaments
-			if (statusName === "STATUS_FINAL") return null;
+			// Skip completed tournaments. ESPN stamps a RUNNING multi-day tournament
+			// STATUS_FINAL after each finished session (bit us for the whole US Open
+			// 2026), so when endDate exists the calendar decides — status alone only
+			// decides for events without one.
+			const ended = espnEvent.endDate
+				? new Date(espnEvent.endDate) < new Date()
+				: statusName === "STATUS_FINAL";
+			if (ended) return null;
 			if (!espnEvent.name || !espnEvent.date) return null;
 
 			const tournamentEvent = {

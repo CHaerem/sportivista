@@ -41,9 +41,11 @@ export class ESPNAdapter extends BaseFetcher {
 					const data = await this.apiClient.fetchJSON(url);
 
 					if (data?.events && Array.isArray(data.events)) {
-						// Include events from the last 4 hours (captures in-progress matches) and future
+						// Include events from the last 4 hours (captures in-progress matches) and future.
+						// Judge multi-day events (tennis/golf tournaments carry endDate) by their END —
+						// filtering on start date alone silenced the tennis fetcher for the whole US Open.
 						const windowStart = new Date(now.getTime() - 4 * 60 * 60 * 1000);
-						const recentAndFutureEvents = data.events.filter(e => new Date(e.date) > windowStart);
+						const recentAndFutureEvents = data.events.filter(e => new Date(e.endDate || e.date) > windowStart);
 						allEvents.push(...recentAndFutureEvents.map(e => ({ ...e, leagueName: league.name, leagueCode: league.code })));
 						leagueSuccess = true;
 					}
