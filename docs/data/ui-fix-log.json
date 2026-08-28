@@ -1,12 +1,12 @@
 {
-	"runAt": "2026-08-27T19:41:42Z",
+	"runAt": "2026-08-28T00:00:00Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"visual-qa-log.json (checkedAt 2026-08-27T18:47:53Z) has verdict \"issues\" but its sole finding is severity \"low\". Per the ui-fix contract (step 1: act only on high/medium findings), a review with no high/medium findings means exit cleanly with action \"none\" and no PR.",
-		"The lone low finding: at 393px the agenda row 'RB Leipzig – Borussia Mönchengladbach' wraps mid-word ('Mönchengladbac' + a lone 'h') with no hyphen. This is an unpolished hard break on a long word at that column width — no hidden or truncated info, and visual-qa itself graded it low. Below the fix threshold; not worth a live-shipping CSS change this run.",
-		"All other visual-qa notes are positive confirmations: long match/tournament names read in full at 375/393/900px (wrap to 2–3 lines, no truncation), every visible channel is Norwegian (Viaplay, TV 2 Play, VG+ Sport, HBO Max, NRK, Discovery+, YouTube, BLAST/Twitch — no ESPN/FOX/Sky), live-now vs agenda channel labels agree, crests/flags render as distinct logos (no broken-image boxes), single calm day-grouped column, no horizontal overflow at 375px, and the 900px 'Assistent' FAB placement is DESIGN.md-sanctioned.",
-		"No open ui-autofix PR to worry about stacking. Nothing high/medium and code-fixable is outstanding, so no branch, screenshots, or PR were created this run."
+		"visual-qa-log.json (checkedAt 2026-08-28T00:00:00Z) has verdict \"issues\" but its sole finding is severity \"low\". Per the ui-fix contract (step 1: act only on high/medium findings), a review with no high/medium findings means exit cleanly with action \"none\" and no PR.",
+		"The lone low finding: at 393px the agenda row 'RB Leipzig – Borussia Mönchengladbach' hard-wraps mid-word ('Mönchengladbac' + a lone orphan 'h') with no hyphen. All info is still present (nothing hidden or truncated) — visual-qa itself confirmed this by scrolling to the row and re-screenshotting, and graded it low. Below the fix threshold; not worth a live-shipping CSS change this run.",
+		"All other visual-qa notes are positive confirmations: long match/tournament names read in full at 375/393/900px (wrap to 2–4 lines, no truncation, e.g. 'Husqvarna British Masters hosted by Sir Nick Faldo', '1. FC Köln – TSG Hoffenheim'), every visible channel is Norwegian or Norwegian-available (HBO Max, Discovery+, BLAST/Twitch, Viaplay, TV 2 Play — no ESPN/FOX/Sky), crests/flags render as distinct logos (no broken-image boxes), golf events show the flag-in-hole icon plus a Norwegian tee-time hint, single calm day-grouped column, no horizontal overflow at 375px, and the 'Assistent' FAB placement is DESIGN.md-sanctioned.",
+		"No open ui-autofix PR to worry about stacking (only PR #455 fix/teetid-runde-og-identitet is open). Nothing high/medium and code-fixable is outstanding, so no branch, screenshots, or PR were created this run."
 	]
 }
