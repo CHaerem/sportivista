@@ -850,6 +850,9 @@ struct ContentView: View {
         // exactly when the off-main agenda reload wanted to hop back and apply,
         // so "Henter data …" lingered longer than it needed to at every launch.
         let dataStore = self.dataStore
+        // WP-255: bound locally for the same reason `dataStore` is — the reminder
+        // inputs are gathered inside a detached task below.
+        let profileStore = self.profileStore
         let _tp = CFAbsoluteTimeGetCurrent()
         let previousEvents = await Task.detached { dataStore.loadEvents() }.value
         LaunchTrace.mark("pre-sync events decode", since: _tp)
@@ -915,14 +918,21 @@ struct ContentView: View {
         guard changedFiles.contains("events.json") else { return }
         // WP-107: decode the post-sync events off the main actor too (was a second
         // synchronous full-decode on main).
-        let newEvents = await Task.detached { dataStore.loadEvents() }.value
+        // WP-255: the reminder inputs (effective interests + the profile's lens)
+        // ride along in the SAME detached hop — `Inputs.load` decodes the profile
+        // and, here, entities.json, which has no business running on main.
+        let (newEvents, reminders) = await Task.detached {
+            (dataStore.loadEvents(), NotificationPlanner.Inputs.load(dataStore: dataStore, profileStore: profileStore))
+        }.value
         await notificationPlanner.reconcile(
             previousEvents: previousEvents,
             newEvents: newEvents,
-            interests: dataStore.loadInterests() ?? Interests(),
+            interests: reminders.interests,
             lastSync: dataStore.lastSync,
             // WP-66 — honour the assistant-set notification lead-time preference.
-            leadTimeEnabled: NotificationLeadPreference.isLeadTimeEnabled()
+            leadTimeEnabled: NotificationLeadPreference.isLeadTimeEnabled(),
+            profile: reminders.profile,
+            index: reminders.index
         )
     }
 

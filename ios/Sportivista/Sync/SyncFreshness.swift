@@ -155,7 +155,12 @@ struct SyncFreshness: Sendable {
         lastSync: Date?,
         now: Date = Date(),
         leadTimeEnabled: Bool,
-        resultInputs: ResultInputs? = nil
+        resultInputs: ResultInputs? = nil,
+        // WP-255 — the per-profile lens the reminder's time follows, forwarded
+        // untouched to the planner. Defaulted to EMPTY so existing callers/tests
+        // keep the pre-WP-255 behaviour (every reminder on the event's own time).
+        profile: InterestProfile = InterestProfile(),
+        index: EntityIndex = EntityIndex([])
     ) async -> [NotificationOperation] {
         let decision = Self.decide(from: result)
         // WP-176: the result work runs BEFORE the widget reload, so the timeline
@@ -173,7 +178,9 @@ struct SyncFreshness: Sendable {
             interests: interests,
             now: now,
             lastSync: lastSync,
-            leadTimeEnabled: leadTimeEnabled
+            leadTimeEnabled: leadTimeEnabled,
+            profile: profile,
+            index: index
         )
     }
 

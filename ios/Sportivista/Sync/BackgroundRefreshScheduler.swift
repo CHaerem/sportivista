@@ -88,11 +88,16 @@ enum BackgroundRefreshScheduler {
         let previousResults = dataStore.loadRecentResults()
         let result = await syncClient.sync()
         let syncState = profileStore.loadSyncState()
+        // WP-255 — the reminder inputs: the EFFECTIVE interests (the profile
+        // folded in, the same pair the board compiles from) plus the profile's
+        // own lens, so a background sync plans the athlete's tee time exactly
+        // like the foreground paths.
+        let reminders = NotificationPlanner.Inputs.load(dataStore: dataStore, profileStore: profileStore)
         await freshness.run(
             result: result,
             previousEvents: previousEvents,
             newEvents: dataStore.loadEvents(),
-            interests: dataStore.loadInterests() ?? Interests(),
+            interests: reminders.interests,
             lastSync: dataStore.lastSync,
             now: now,
             leadTimeEnabled: NotificationLeadPreference.isLeadTimeEnabled(),
@@ -104,7 +109,9 @@ enum BackgroundRefreshScheduler {
                 shield: SpoilerShield(memory: MemoryState(from: syncState)),
                 optedIn: ResultAlertPreference.optedInEntityIds(),
                 alreadyDelivered: Set(ResultAlertPreference.deliveredIds())
-            )
+            ),
+            profile: reminders.profile,
+            index: reminders.index
         )
     }
 }
