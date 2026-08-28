@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-28T06:54:24.791Z",
+  "generatedAt": "2026-08-28T17:09:01.410Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "yellow",
+    "coverage": "red",
     "amendRate": "green",
     "silentStops": "yellow",
     "participantStatus": "green",
@@ -23,34 +23,34 @@
   "coverage": {
     "openGaps": 3,
     "bySeverity": {
-      "high": 0,
-      "medium": 3,
+      "high": 2,
+      "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 5.12,
+    "oldestGapAgeDays": 5.55,
     "escalatable": 1,
     "catalogMatched": 3,
-    "auditedAt": "2026-08-27T14:20:00Z",
+    "auditedAt": "2026-08-28T07:20:00Z",
     "gaps": [
       {
-        "interest": "Landslag — Norge Nations League (Norge–Danmark 24. sep + Norge–Portugal 27. sep, Ullevaal)",
-        "severity": "medium",
-        "ageDays": 0.69,
+        "interest": "Serie A 2026/27 — giornata 2 (28.–31. aug), hele runden",
+        "severity": "high",
+        "ageDays": 0.41,
         "recurrences": 0,
+        "catalogMatched": true
+      },
+      {
+        "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
+        "severity": "high",
+        "ageDays": 5.55,
+        "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "UEFA Champions League 2026/27 — ligaspill runde 1 (MD1), Bodø/Glimt + katalog-klubber",
         "severity": "medium",
-        "ageDays": 2.12,
-        "recurrences": 1,
-        "catalogMatched": true
-      },
-      {
-        "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
-        "severity": "medium",
-        "ageDays": 5.12,
-        "recurrences": 3,
+        "ageDays": 2.55,
+        "recurrences": 2,
         "catalogMatched": true
       }
     ]
@@ -61,17 +61,10 @@
     "nearTermAmended": 1,
     "verifyRunAt": "2026-08-27T05:45:00Z",
     "windowRate": 0,
-    "windowChecks": 89,
+    "windowChecks": 82,
     "windowAmendments": 0,
-    "windowCorrections": 6,
+    "windowCorrections": 5,
     "byDay": [
-      {
-        "date": "2026-08-14",
-        "checks": 7,
-        "amendments": 0,
-        "corrections": 1,
-        "rate": 0
-      },
       {
         "date": "2026-08-15",
         "checks": 7,
@@ -167,21 +160,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-28T06:54:20.234Z",
+    "buildCheckedAt": "2026-08-28T17:08:58.118Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-28T05:54:18.894Z",
-    "manifestAgeHours": 1,
+    "manifestGeneratedAt": "2026-08-28T06:54:26.416Z",
+    "manifestAgeHours": 10.24,
     "staleFiles": [
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-08-26T17:10:00Z",
-        "ageHours": 37.74
+        "ageHours": 47.98
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-27T05:45:00Z",
-    "verifyAgeHours": 25.16,
+    "verifyAgeHours": 35.4,
     "corrections": 3,
     "unresolved": 0,
     "signals": [
@@ -194,6 +187,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-08-28T06:54:24.791Z"
+    "generatedAt": "2026-08-28T17:09:01.410Z"
   }
 }
