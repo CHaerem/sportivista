@@ -5,6 +5,7 @@ import {
 	fetchPGATourPage,
 	fetchPGATourField,
 	fetchPGATourTeeTimes,
+	pickTeeTimeRound,
 } from "../scripts/lib/pgatour-scraper.js";
 
 // --- Fixture helpers: wrap a __NEXT_DATA__ payload in the page's script tag ---
@@ -215,5 +216,90 @@ describe("fetchPGATourTeeTimes", () => {
 	it("returns null when the page rejects", async () => {
 		const fetcher = vi.fn().mockRejectedValue(new Error("timeout"));
 		expect(await fetchPGATourTeeTimes(fetcher)).toBeNull();
+	});
+
+	// The 2026 TOUR Championship regression: on the Friday, round 1 was OFFICIAL
+	// and round 2's groups were already in the payload, but `currentRound` still
+	// read 1 — so the pipeline re-published Thursday's tee time all day and both
+	// boards stripped it as stale. `defaultRound` is what the site itself opens on.
+	it("prefers the site's defaultRound over a currentRound still on the finished round", async () => {
+		const page = makeNextDataPage({
+			props: { pageProps: {
+				tournament: { tournamentName: "The Test Open", timezone: "America/New_York", currentRound: 1 },
+				dehydratedState: { queries: [
+					{ queryKey: ["teeTimesV3"], state: { data: { teeTimeV3: {
+						defaultRound: 2,
+						rounds: [
+							{ roundInt: 1, roundStatus: "OFFICIAL", groups: [
+								{ time: TEE_EPOCH_MS, startTee: 1,
+								  players: [{ displayName: "Kristoffer Ventura" }, { displayName: "Yesterday Partner" }] },
+							] },
+							{ roundInt: 2, roundStatus: "SCHEDULED", groups: [
+								{ time: TEE_EPOCH_MS + 86400000, startTee: 1,
+								  players: [{ displayName: "Kristoffer Ventura" }, { displayName: "Today Partner" }] },
+							] },
+						],
+					} } } },
+				] },
+			} },
+		});
+		const out = await fetchPGATourTeeTimes(vi.fn().mockResolvedValue(page));
+		expect(out.round).toBe(2);
+		expect(out.playerTeeTimes.get("kristoffer ventura").groupmates).toEqual(["Today Partner"]);
+		expect(out.playerTeeTimes.get("kristoffer ventura").teeTimeUTC)
+			.toBe(new Date(TEE_EPOCH_MS + 86400000).toISOString());
+	});
+});
+
+// --- pickTeeTimeRound ---
+
+describe("pickTeeTimeRound", () => {
+	const r = (roundInt, roundStatus, groups = [{ players: [] }]) => ({ roundInt, roundStatus, groups });
+
+	it("returns null for an empty or non-array rounds list", () => {
+		expect(pickTeeTimeRound([], { defaultRound: 2 })).toBeNull();
+		expect(pickTeeTimeRound(null, {})).toBeNull();
+		expect(pickTeeTimeRound(undefined)).toBeNull();
+	});
+
+	it("matches defaultRound on roundInt, not array position", () => {
+		// A cut event drops earlier rounds, so index 0 is round 3.
+		const rounds = [r(3, "OFFICIAL"), r(4, "SCHEDULED")];
+		expect(pickTeeTimeRound(rounds, { defaultRound: 4, currentRound: 3 }).roundInt).toBe(4);
+	});
+
+	it("falls back to the first unfinished round when defaultRound is absent", () => {
+		const rounds = [r(1, "OFFICIAL"), r(2, "OFFICIAL"), r(3, "IN_PROGRESS")];
+		expect(pickTeeTimeRound(rounds, { currentRound: 1 }).roundInt).toBe(3);
+	});
+
+	it("treats OFFICIAL, COMPLETE, COMPLETED and FINAL as finished", () => {
+		for (const done of ["OFFICIAL", "complete", "Completed", "FINAL"]) {
+			const rounds = [r(1, done), r(2, "SCHEDULED")];
+			expect(pickTeeTimeRound(rounds, {}).roundInt).toBe(2);
+		}
+	});
+
+	it("falls back to currentRound when no round carries a status", () => {
+		const rounds = [r(1, undefined), r(2, undefined)];
+		expect(pickTeeTimeRound(rounds, { currentRound: 2 }).roundInt).toBe(2);
+	});
+
+	it("keeps the old positional behaviour when nothing else identifies a round", () => {
+		const rounds = [{ groups: [{ players: [] }] }, { groups: [{ players: [] }] }];
+		expect(pickTeeTimeRound(rounds, { currentRound: 2 })).toBe(rounds[1]);
+		expect(pickTeeTimeRound(rounds, {})).toBe(rounds[0]);
+	});
+
+	it("skips a better-labelled round that carries no groups", () => {
+		// defaultRound points at a round whose groups are not published yet.
+		const rounds = [r(1, "IN_PROGRESS"), { roundInt: 2, roundStatus: "SCHEDULED", groups: [] }];
+		expect(pickTeeTimeRound(rounds, { defaultRound: 2, currentRound: 1 }).roundInt).toBe(1);
+	});
+
+	it("clamps an out-of-range currentRound instead of returning undefined", () => {
+		const rounds = [{ groups: [{ players: [] }] }];
+		expect(pickTeeTimeRound(rounds, { currentRound: 4 })).toBe(rounds[0]);
+		expect(pickTeeTimeRound(rounds, { currentRound: 0 })).toBe(rounds[0]);
 	});
 });

@@ -561,7 +561,14 @@ class EntityIndexBuilder {
 	}
 
 	/** Register a candidate, or merge it (alias-union only) into a match. */
-	upsert({ id, name, aliases = [], sport, type }) {
+	/// `country` is the ONE piece of WP-185 identity metadata this seeding path
+	/// carries. It used to accept only names/aliases and silently drop everything
+	/// else, so a caller that DOES know the nationality — norwegian-golfers.json,
+	/// sports-config's `norwegian.players` — had no way to say so, and the owner's
+	/// most-followed athletes (Hovland, Reitan) reached the app with no country
+	/// and therefore no flag. Filled like `upsertRegistry` does: never overwrite a
+	/// country an authoritative source already set.
+	upsert({ id, name, aliases = [], sport, type, country }) {
 		if (!name) return null;
 		const candidateTerms = [name, ...aliases].filter(Boolean);
 		const existing = this.entities.find(
@@ -578,11 +585,13 @@ class EntityIndexBuilder {
 				if (existing.aliases.some((a) => normalizeText(a).trim() === norm)) continue;
 				existing.aliases.push(t);
 			}
+			if (country && !existing.country) existing.country = country;
 			return existing;
 		}
 		const slug = id || uniqueSlug(slugify(name), this.usedSlugs);
 		this.usedSlugs.add(slug);
 		const entity = { id: slug, name, aliases: [...aliases], sport: sport || null, type };
+		if (country) entity.country = country;
 		this.entities.push(entity);
 		return entity;
 	}
@@ -677,11 +686,18 @@ export function buildEntityIndex(configDir = configDirPath(), sportsConfigData =
 	}
 
 	// 2. norwegian-golfers.json — curated golfer name + aliases (golf only).
+	// The FILE NAME is the nationality guarantee: every entry is there because the
+	// player is Norwegian. Not stamping `country` left the owner's two headline
+	// golfers (Hovland, Reitan) with no WP-185 flag on the board or their entity
+	// page — the identity ladder falls straight through to the bare sport glyph
+	// for an athlete with no country, and the registry is the only place that
+	// knows. Stamped here rather than added to each entry so the seed file stays
+	// a plain name/alias list.
 	const golfers = readJsonIfExists(path.join(configDir, "norwegian-golfers.json"));
 	if (Array.isArray(golfers)) {
 		for (const g of golfers) {
 			if (!g?.name) continue;
-			builder.upsert({ name: g.name, aliases: g.aliases || [], sport: "golf", type: "athlete" });
+			builder.upsert({ name: g.name, aliases: g.aliases || [], sport: "golf", type: "athlete", country: "NO" });
 		}
 	}
 
@@ -692,8 +708,13 @@ export function buildEntityIndex(configDir = configDirPath(), sportsConfigData =
 		for (const name of nor.teams || []) {
 			builder.upsert({ name, sport, type: "team" });
 		}
+		// Same guarantee as norwegian-golfers.json, one level in: these names sit
+		// under the config's `norwegian` key precisely because they are Norwegian.
+		// Only ATHLETES get the flag — WP-185 deliberately refuses to fly a country
+		// on a club that merely has one (see EntityIdentity's `national` gate), so
+		// `nor.teams` above is left alone.
 		for (const name of nor.players || []) {
-			builder.upsert({ name, sport, type: "athlete" });
+			builder.upsert({ name, sport, type: "athlete", country: "NO" });
 		}
 	}
 

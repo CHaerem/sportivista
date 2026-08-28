@@ -50,6 +50,13 @@ struct FollowedListView: View {
     /// Precomputed row subtitles (entityId → «Neste: …» / «Fulgt — …»),
     /// so scrolling never re-runs the per-rule event scan.
     @State private var subtitles: [String: String] = [:]
+    /// WP-185/186's row anchor, precomputed per rule for the same reason as
+    /// `subtitles`. The agenda has drawn the club's real mark since WP-186 while
+    /// THIS list — the surface literally titled «Det du følger» — still drew the
+    /// bare sport glyph, so a page listing Liverpool, Crystal Palace and Lyn gave
+    /// all three the same ⚽. The identity is the entity's, so it belongs on the
+    /// one screen that is entirely about entities.
+    @State private var identities: [String: EntityIdentity] = [:]
     /// WP-252 — the rule a swipe is confirming a stop for, and the ONLY thing
     /// that still raises a dialog: a BROAD follow (a whole sport / category).
     /// Every narrow follow removes on the spot and offers «Angre» instead.
@@ -182,11 +189,10 @@ struct FollowedListView: View {
 
     private func followRow(_ rule: InterestRule) -> some View {
         HStack(spacing: 12) {
-            Image(systemName: SportSymbol.name(for: rule.sport))
-                .font(.sportivista(.body))
-                .foregroundStyle(SportivistaTokens.tertiaryLabel)
+            // `.none` degrades to the very sport glyph this row used to hardcode,
+            // so an entity we know nothing about is unchanged.
+            EntityAvatarView(identity: identities[rule.entityId] ?? .none, sport: rule.sport)
                 .frame(width: symbolWidth)
-                .accessibilityHidden(true)
             VStack(alignment: .leading, spacing: 2) {
                 Text(rule.entityName)
                     .font(.sportivista(.body, weight: .semibold))
@@ -259,8 +265,14 @@ struct FollowedListView: View {
         let snap = viewModel.followSnapshot()
         snapshot = snap
         var subs: [String: String] = [:]
-        for rule in rules { subs[rule.entityId] = snap.presenter.rowSubtitle(for: rule) }
+        var ids: [String: EntityIdentity] = [:]
+        for rule in rules {
+            subs[rule.entityId] = snap.presenter.rowSubtitle(for: rule)
+            let identity = EntityIdentityResolver.identity(for: snap.presenter.index.entity(id: rule.entityId))
+            if !identity.isNone { ids[rule.entityId] = identity }
+        }
         subtitles = subs
+        identities = ids
     }
 }
 
