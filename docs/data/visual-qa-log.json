@@ -1,26 +1,25 @@
 {
-  "checkedAt": "2026-08-27T18:47:53Z",
+  "checkedAt": "2026-08-28T00:00:00Z",
   "widths": [375, 393, 900],
   "verdict": "issues",
   "findings": [
     {
       "width": 393,
-      "area": "agenda row (Bundesliga, LØRDAG 29. AUGUST)",
-      "issue": "'RB Leipzig – Borussia Mönchengladbach' wraps mid-word with no hyphen: 'Mönchengladbac' on one line and a lone 'h' on the next. Not truncated/hidden info, just an unpolished hard break on a long word at this column width.",
+      "area": "agenda row (Bundesliga, 15:30, FREDAG 28. AUGUST)",
+      "issue": "'RB Leipzig – Borussia Mönchengladbach' hard-wraps mid-word with no hyphen: '...Mönchengladbac' on one line and a lone 'h' alone on the next line. All info is still present (nothing hidden/truncated), just an unpolished orphan-character break on this long compound word at this column width. Confirmed by scrolling directly to the row and re-screenshotting at higher effective resolution.",
       "severity": "low"
     }
   ],
   "notes": [
-    "Match names read in full at all three widths once zoomed in - long titles wrap onto 2-3 lines rather than truncate (e.g. 'Husqvarna British Masters hosted by Sir Nick Faldo', 'Union Berlin – Eintracht Frankfurt'); no hidden info.",
-    "Every event row shows a channel and every one seen is Norwegian: Viaplay, TV 2 Play, VG+ Sport, HBO Max (Sport), NRK, Discovery+, YouTube (Saint Louis Chess Club), BLAST Premier (Twitch) - no ESPN/FOX/Sky.",
-    "Cross-checked the same fixture in two places on the page (DIREKTE NÅ live-now list vs. the agenda row) for 'Brighton – Tromsø' and 'Brann – PAOK': channel labels matched exactly both places (Viaplay and VG+ Sport respectively) - no contradiction, despite looking that way in a lower-resolution first pass.",
-    "The golf meta line 'Reitan ut 18:06' under TOUR Championship is by-design (dashboard.js golfTeeHint: surname + next Norwegian tee time), not a data glitch - confirmed by reading the code comment and the event's norwegianPlayers data.",
-    "Team crests/flags render as distinct small logos at all three widths, no broken-image icons.",
-    "Single quiet column, day-grouped agenda ('I DAG', 'I MORGEN', 'LØRDAG 29. AUGUST', ...), generous spacing, not cluttered.",
-    "375px width: no horizontal overflow (confirmed via scrollWidth vs clientWidth in-page, not just visually), no clipped right-edge chevrons/info icons.",
-    "Bottom of the page (375px): footer ('Oppdatert for 5 min siden', 'Abonner i kalender', 'AI-budsjett'), 'Dette dekker vi'/'Merker og kilder' disclosures and the floating Assistent button all sit clear of one another - the button does not occlude the last agenda content or the footer.",
-    "900px width: the floating Assistent button sits in the empty margin beside the 640px column - correct, not a finding (DESIGN.md-sanctioned).",
-    "Must-see accent dots appear sparingly (a handful of rows per day), not on every row.",
-    "Header, day headings, and footer intact and aligned at all three widths."
+    "Correctness checklist: all match names read in full at every width (long titles wrap onto 2-4 lines rather than truncate, e.g. 'Husqvarna British Masters hosted by Sir Nick Faldo', '1. FC Köln – TSG Hoffenheim', 'Union Berlin – Eintracht Frankfurt') - no hidden info anywhere, including the Bundesliga/Premier League/La Liga blocks.",
+    "Every agenda row and every 'DIREKTE NÅ' live item shows a channel, and every one seen is Norwegian or Norwegian-available: HBO Max (Sport), Discovery+ (+1), BLAST Premier (Twitch), Viaplay, TV 2 Play - no ESPN/FOX/Sky anywhere.",
+    "Team crests and country/tour flags render as distinct small graphics at all three widths - no broken-image icons or empty boxes (checked RB Leipzig, Union Berlin, Mainz 05, Bournemouth, Coventry City, Levante crests specifically).",
+    "Golf/tour events (TOUR Championship, Husqvarna British Masters) correctly show a flag-in-hole icon instead of a country/team crest, plus a Norwegian-player tee-time hint (e.g. 'Hovland ut 20:00') - by design, not a data glitch.",
+    "Times present and sensibly formatted (24h HH:MM); multi-day events show date ranges ('22. august–13. september') instead of a single misleading time.",
+    "375px width (hardest breakpoint): no horizontal overflow, nothing clipped at the screen edge; chevrons and (i) info icons stay fully visible on every row inspected.",
+    "The floating 'Assistent' button (bottom-trailing sparkles) rests over mid-agenda rows at 375/393px (e.g. TOUR Championship, Levante – Real Betis) and in the empty margin beside the column at 900px - both are the DESIGN.md-sanctioned floating-button idiom, not occlusion bugs. It does not cover the last agenda/news row or the footer at any width checked.",
+    "Must-see accent dots (e.g. Vålerenga – Molde) appear sparingly, a handful per day, not on every row.",
+    "Header (wordmark, date, theme toggle), day-group headings ('I DAG', 'I MORGEN', 'LØRDAG 29. AUGUST', ...), and footer all intact and aligned at all three widths.",
+    "Single quiet column, generous spacing, scannable - not a cluttered grid - at all three widths."
   ]
 }
