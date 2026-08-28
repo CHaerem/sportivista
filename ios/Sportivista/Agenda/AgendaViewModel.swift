@@ -115,23 +115,36 @@ final class AgendaViewModel {
         // so the post-sync reload rebuilds it from fresh data.
         invalidateEntityCache()
         reloadFromCache(now: now)
+        // Pull-to-refresh awaits this method — end the spinner only once the
+        // recompiled board is actually applied (not merely scheduled).
+        // WP-255 awaits it BEFORE the freshness step (it used to come after):
+        // the board is painted first, and the finished reload leaves
+        // `cachedEntityIndex` populated, so the reminder inputs below reuse the
+        // index this recompile just built instead of decoding entities.json a
+        // second time.
+        await awaitReloadsQuiescent()
         // WP-121: reload the widget (events/entities changed) + reconcile
         // reminders (events changed), the SAME gates the cold-start path uses.
         // A 304/no-op sync decides to do neither, so a pull that finds nothing
         // new is free of both. Planning/diff semantics are unchanged.
+        // WP-255: the reminder inputs are the EFFECTIVE interests + the profile's
+        // lens — the same pair this view model compiles the board from, so the
+        // bell and the reminder it promises can never disagree.
+        let reminders = NotificationPlanner.Inputs.load(
+            dataStore: dataStore, profileStore: profileStore, reusing: cachedEntityIndex
+        )
         await freshness.run(
             result: result,
             previousEvents: previousEvents,
             newEvents: dataStore.loadEvents(),
-            interests: dataStore.loadInterests() ?? Interests(),
+            interests: reminders.interests,
             lastSync: dataStore.lastSync,
             now: now,
             leadTimeEnabled: NotificationLeadPreference.isLeadTimeEnabled(),
-            resultInputs: resultInputs(previousResults: previousResults)
+            resultInputs: resultInputs(previousResults: previousResults),
+            profile: reminders.profile,
+            index: reminders.index
         )
-        // Pull-to-refresh awaits this method — end the spinner only once the
-        // recompiled board is actually applied (not merely scheduled).
-        await awaitReloadsQuiescent()
     }
 
     /// WP-176 — the result half of the post-sync freshness step: the profile, the
@@ -454,7 +467,7 @@ final class AgendaViewModel {
                     continue
                 }
                 guard let id = feedEvent.id, let event = lookup[id] else { continue }
-                let mode = applicableLensMode(for: feedEvent, event: event, profile: profile, index: index)
+                let mode = EventLens.applicableLensMode(for: feedEvent, event: event, profile: profile, index: index)
                 if let lensRows = LensRenderer.render(event: event, mode: mode, followedIds: followedIds) {
                     // Lens rows inherit the event's bell/accent (item 2 of the
                     // brief) and re-home to the athlete's effective day/time.
@@ -575,11 +588,15 @@ final class AgendaViewModel {
     /// the clock belongs to the day we are drawing, no clock. The row keeps the
     /// event's own honest window instead. Same rule the web board already
     /// applies (`dashboard.js golfTeeHint`: the hint requires a `teeTimeUTC`
-    /// whose Oslo day IS today, «en gammel tee-tid … ville vært en løgn»).
+    /// whose Oslo day IS today, «en gammel tee-tid … ville vært en løgn»), and —
+    /// since WP-255 — the same rule the push reminder applies, from the same
+    /// `EventLens.trustedTime`.
     nonisolated private static func place(_ lensRow: LensRenderer.LensRow, event feedEvent: FeedEvent, compiledDay: String, todayKey: String) -> (dayKey: String, sortTime: Date?, clock: Date?) {
-        if let eff = lensRow.effectiveTime {
-            let effDay = FeedCompiler.osloDayKey(eff)
-            if effDay >= todayKey { return (effDay, eff, eff) }
+        // WP-255: the guard itself now lives in `EventLens.trustedTime` — the
+        // ONE rule the push reminder applies too, so a tee time this row refuses
+        // to stand behind can never be the time a notification announces.
+        if let eff = EventLens.trustedTime(lensRow.effectiveTime, todayKey: todayKey) {
+            return (FeedCompiler.osloDayKey(eff), eff, eff)
         }
         return (compiledDay, feedEvent.time, nil)
     }
@@ -628,142 +645,6 @@ final class AgendaViewModel {
             if lensRows[held].effectiveTime != nil && lensRows[i].effectiveTime == nil { windowKeeper[day] = i }
         }
         return spots.indices.filter { spots[$0].clock != nil || windowKeeper[spots[$0].dayKey] == $0 }
-    }
-
-    /// The LENS to render an event through, resolved in two steps:
-    ///
-    ///  1. An EXPLICIT lens — the first followed rule carrying a non-default
-    ///     `lens` whose entity actually participates in the event. Maps the
-    ///     Assistant `Lens` → the Feed-local `LensMode` the renderer consumes, so
-    ///     the renderer stays free of the Assistant module (widget-buildable).
-    ///  2. Failing that, the DERIVED athlete lens (WP-249, below).
-    ///
-    /// `.sportAsSuch` — no lens, the ordinary row — when neither applies. An
-    /// EMPTY profile returns before either step: no profile, no lens.
-    nonisolated static func applicableLensMode(for feedEvent: FeedEvent, event: Event, profile: InterestProfile, index: EntityIndex) -> LensMode {
-        guard !profile.rules.isEmpty else { return .sportAsSuch }
-        let lensed = profile.rules.filter { !$0.lens.isDefault }
-        if !lensed.isEmpty {
-            let hay = FeedCompiler.serverHaystack(feedEvent)
-            for rule in lensed where ruleMatches(rule, event: event, hay: hay, index: index) {
-                switch rule.lens {
-                case .sportAsSuch:
-                    continue
-                case .throughNorwegians:
-                    return .throughNorwegians
-                case let .throughAthletes(athletes):
-                    return .throughAthletes(ids: Set(athletes.map(\.entityId)), names: athletes.map(\.name))
-                }
-            }
-        }
-        return derivedAthleteLens(event: event, profile: profile, index: index) ?? .sportAsSuch
-    }
-
-    /// WP-249 — the DERIVED athlete lens: following an ATHLETE means «vis meg når
-    /// HAN spiller».
-    ///
-    /// The machinery above it has been complete since WP-18 — `LensRenderer`
-    /// splits a golf tournament into one row per tee time and re-homes each row
-    /// to the athlete's own day and time. But only a rule that had been given a
-    /// non-default `lens` ever reached it, and a lens is set in exactly two
-    /// places (the assistant, and the DEBUG demo seeds). An ordinary «Følg Viktor
-    /// Hovland» tap therefore left the rule on the default lens, the renderer
-    /// declined, and the board showed the tournament's nominal 04:00 window —
-    /// while his 17:24 tee time sat unread in the very same event.
-    ///
-    /// So the lens is DERIVED from PARTICIPATION rather than read off the rule.
-    /// Deriving (instead of stamping a lens at follow-time) also repairs every
-    /// rule already saved on every device, with no migration.
-    ///
-    /// Three guards keep it narrow and honest:
-    ///
-    ///   • **Athletes only.** A rule qualifies only when the entity index types
-    ///     it `athlete` — the index is the authority. When the index doesn't
-    ///     know the id at all — an UNSYNCED index, or a WP-164 SOFT-FOLLOW,
-    ///     whose id is `soft-<slug>` and so matches no entity anywhere — the
-    ///     event's own `norwegianPlayers` list stands in: it is an athlete list
-    ///     by construction, so appearing there IS the proof. It is checked BY ID
-    ///     **and BY NAME**, because a soft rule has no real id to be found under:
-    ///     `norwegianPlayers[].entityId` is stamped from `entities.json` by
-    ///     `build-events.js` and never carries the `soft-` prefix, so an id-only
-    ///     test is structurally false for every soft rule — the fallback would
-    ///     have covered only the unsynced half of what it claimed. Name is the
-    ///     axis WP-164 designed a soft-follow to travel on («FeedQuery /
-    ///     EffectiveInterests are already name-tolerant … a soft rule simply
-    ///     starts matching the moment coverage arrives»), and `ruleMatches` puts
-    ///     the same rule on the board by the same name — so the row you were
-    ///     shown for Hovland now also knows Hovland's tee time. A team /
-    ///     tournament / league / sport follow can never acquire this lens: the
-    ///     index types them, and a team's name is not in a player list.
-    ///   • **Only when the data knows his time.** The lens fires only if one of
-    ///     those followed athletes has a per-athlete start time in THIS event.
-    ///     With no such time there is nothing to answer «når spiller han» with,
-    ///     so the ordinary row stands — no fabricated clock (P320), and no
-    ///     cosmetic rewrite of rows in sports that carry no per-athlete timing.
-    ///   • **Never over an explicit lens.** The caller reaches this only after
-    ///     the explicit-lens pass has declined, so a deliberate
-    ///     `.throughNorwegians` / `.throughAthletes` still wins.
-    ///
-    /// Returns nil when it does not apply, so the caller falls back to
-    /// `.sportAsSuch` and the ordinary row is rendered untouched.
-    nonisolated private static func derivedAthleteLens(event: Event, profile: InterestProfile, index: EntityIndex) -> LensMode? {
-        // Fast path — and guard 2's cheap half: an event that knows NO per-athlete
-        // start time can never answer «når spiller han», so it leaves here without
-        // the profile being walked at all. That is most events, and every sport
-        // that carries no per-athlete timing.
-        guard event.norwegianPlayers.contains(where: { $0.teeTimeUTC != nil }) else { return nil }
-
-        var ids = Set<String>()
-        var names: [String] = []
-        var seenName = Set<String>()
-        for rule in profile.rules where rule.lens.isDefault {
-            let entity = index.entity(id: rule.entityId)
-            // The index is the AUTHORITY on what a followed entity is. Only when
-            // it doesn't know this id (an unsynced index, or a soft-follow, whose
-            // `soft-<slug>` id is in no index by construction) do we fall back to
-            // the event's own `norwegianPlayers` — an athlete list by
-            // construction, so appearing there IS proof. By id OR by name: a soft
-            // rule can only ever be found by name (see the doc comment).
-            let isAthlete = entity.map { $0.type == "athlete" } ?? event.norwegianPlayers.contains {
-                $0.entityId == rule.entityId || TextMatch.normalize($0.name) == TextMatch.normalize(rule.entityName)
-            }
-            guard isAthlete else { continue }
-            ids.insert(rule.entityId)
-            // The rule's cached name plus the index's name/aliases — the same
-            // term set `ruleMatches` builds, so an athlete whose participation
-            // line carries no entity id still matches by name.
-            for term in [rule.entityName] + (entity.map { [$0.name] + $0.aliases } ?? []) {
-                let key = TextMatch.normalize(term)
-                guard !key.isEmpty, seenName.insert(key).inserted else { continue }
-                names.append(term)
-            }
-        }
-        guard !ids.isEmpty else { return nil }
-
-        let wanted = seenName
-        let knowsHisTime = event.norwegianPlayers.contains { player in
-            guard player.teeTimeUTC != nil else { return false }
-            if let id = player.entityId, ids.contains(id) { return true }
-            return wanted.contains(TextMatch.normalize(player.name))
-        }
-        guard knowsHisTime else { return nil }
-        return .throughAthletes(ids: ids, names: names)
-    }
-
-    /// Whether `rule`'s followed entity participates in `event`: an authoritative
-    /// entity-id match on the event's players/teams, else the SAME sport-scoped
-    /// name/alias word-boundary test `whyShown`/`mustWatch` use (so a golf
-    /// tournament rule matches that tournament's events, a football club rule
-    /// its club's matches). Falls back to the rule's cached name/sport when the
-    /// entity isn't in the (maybe unsynced) index.
-    nonisolated private static func ruleMatches(_ rule: InterestRule, event: Event, hay: String, index: EntityIndex) -> Bool {
-        if event.norwegianPlayers.contains(where: { $0.entityId == rule.entityId }) { return true }
-        if event.homeTeamEntityId == rule.entityId || event.awayTeamEntityId == rule.entityId { return true }
-        let entity = index.entity(id: rule.entityId)
-        let sport = entity?.sport ?? rule.sport
-        if !sport.isEmpty, TextMatch.normalize(sport) != TextMatch.normalize(event.sport) { return false }
-        let terms = entity.map { [$0.name] + $0.aliases } ?? [rule.entityName]
-        return terms.contains { !$0.isEmpty && TextMatch.containsName(hay, $0) }
     }
 
     /// Build the view-ready `AgendaEventRow` for one lens row. The time column

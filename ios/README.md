@@ -113,7 +113,7 @@ ios/
 │   ├── Widget/                    the widget's pure timeline logic
 │   ├── Notifications/             local push reminders for must-watch events
 │   ├── Assistant/                 on-device (Foundation Models) assistant
-│   ├── Profile/                   local interest profile: sync, share, reset, effective-merge
+│   ├── Profile/                   local interest profile: sync, share, reset, effective-merge, event lens
 │   ├── Memory/                    personal memory (facts/episodic/behaviour) + spoiler shield
 │   ├── Onboarding/                first-run gate + starter packs + flow
 │   ├── Perf/                      os_signpost helper + local MetricKit log/subscriber
@@ -469,16 +469,34 @@ computed reminder = `.reschedule`; an id that no longer resolves to a plannable
 reminder = `.cancel`; a never-seen plannable id = `.scheduleNew`; **unchanged**
 content = **no operation** (reconciling never re-touches a correct reminder).
 
-- **Who:** only events `FeedCompiler.mustWatch` rings the bell for. Fire date =
-  `event.time` minus `interests.notify.leadMinutes` (default 30 — the **same** lead
-  `scripts/build-ics.js`'s VALARM uses, so calendar + push never disagree), clamped
-  to "now" if already passed.
+- **Who:** only events `FeedCompiler.mustWatch` rings the bell for — judged against
+  the **effective** interests (`NotificationPlanner.Inputs`: the synced base with the
+  local profile folded in, exactly as the board compiles). That fold is load-bearing,
+  not cosmetic: WP-96/WP-106 stopped publishing and syncing `interests.json`, so the
+  raw base is empty on device and planning against it rang the bell for *nothing*
+  while the board kept drawing it (fixed in WP-255).
+- **When (WP-255):** fire date = **the athlete's own time when the profile's lens
+  knows one**, else `event.time`, minus `interests.notify.leadMinutes` (default 30 —
+  the **same** lead `scripts/build-ics.js`'s VALARM uses, so calendar + push never
+  disagree), clamped to "now" if already passed. Following an athlete means «vis meg
+  når HAN spiller» (WP-249), so a golf row reads «17:24 Hovland teer av» while the
+  tournament's `time` is the nominal 04:00 window start — the push must say and fire
+  on 17:24 too. `Profile/EventLens.swift` resolves it for **both** surfaces (same
+  lens, same `LensRenderer`, same staleness guard), so the row and its bell can never
+  disagree. With several followed athletes in one event the **earliest still-upcoming**
+  tee time wins, and the notification takes that row's title («Hovland teer av — …»)
+  so the clock is never anonymous.
 - **Quality gates** (each a hard `nil`): (a) `confidence == "low"` **and**
   `verificationStatus != "confirmed"` is never planned; (b) if `lastSync` is >6h old
   (or `nil`), the body hedges ("Etter planen: …") instead of stating the time as
-  settled fact; (c) `event.time <= now` is never planned.
-- **Text** (Norwegian, calm): body `"Kl. HH:mm · kanal"` (Europe/Oslo), honest
-  `"Kanal ukjent"` when streaming is empty — never invented, no emoji.
+  settled fact; (c) a start `<= now` is never planned — measured on the *effective*
+  time, so a tournament already underway still reminds for today's tee-off; (d) a tee
+  time whose Oslo day is behind us is never trusted (`EventLens.trustedTime`, the same
+  guard `AgendaViewModel.place` applies): a frozen feed's stale clock would otherwise
+  clamp the fire date to "now" and buzz about a tee-off that already happened.
+- **Text** (Norwegian, calm): body `"Kl. HH:mm · kanal"` (Europe/Oslo, the clock it
+  actually fires on), honest `"Kanal ukjent"` when streaming is empty — never
+  invented, no emoji.
 
 **`NotificationScheduling`** wraps `UNUserNotificationCenter` behind a protocol
 (tests substitute `RecordingNotificationScheduler`); permission is requested
