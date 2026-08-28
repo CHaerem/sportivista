@@ -464,3 +464,49 @@ describe("WP-183 display font (DESIGN.md § Display-font)", () => {
 		expect(designTokensSwift).toContain("UIFontMetrics(forTextStyle: uiStyle).scaledFont(for: face)");
 	});
 });
+
+// Every `var(--x)` in docs/css must actually RESOLVE. An undefined custom property
+// makes the whole declaration invalid, so it fails SILENTLY — the element just
+// renders without that background/colour, and nothing in CI notices.
+//
+// This is not hypothetical: cards.css shipped four `var(--cell)` references while
+// base.css names the cell surface `--surface` (DESIGN.md § Tokens calls it "cell" in
+// prose — the mapping table above encodes exactly that split). The floating
+// assistant FAB therefore had NO background at all and the agenda rows showed
+// through it, against its own comment («umiskjennelig som en KNAPP»). The value
+// gates above all passed, because every token they check was defined correctly —
+// the bug was a name that pointed at nothing.
+describe("docs/css — every var(--…) resolves to a defined custom property", () => {
+	const CSS_DIR = path.join(ROOT, "docs", "css");
+	const cssFiles = fs.readdirSync(CSS_DIR).filter((f) => f.endsWith(".css"));
+
+	/** `--x: value` declarations — wherever they are declared (`:root`, a theme block, a rule). */
+	function declaredIn(text) {
+		return new Set((text.match(/(--[a-zA-Z0-9-]+)\s*:/g) || []).map((m) => m.replace(/\s*:$/, "")));
+	}
+
+	// Declared anywhere in docs/css …
+	const declared = new Set();
+	for (const f of cssFiles) {
+		for (const name of declaredIn(fs.readFileSync(path.join(CSS_DIR, f), "utf-8"))) declared.add(name);
+	}
+	// … or set at RUNTIME from JS as an inline style (a legitimate per-element token,
+	// e.g. entity-avatar.js's `--av-a/--av-b/--av-ink` crest colours).
+	const JS_DIR = path.join(ROOT, "docs", "js");
+	for (const f of fs.readdirSync(JS_DIR).filter((n) => n.endsWith(".js"))) {
+		for (const name of declaredIn(fs.readFileSync(path.join(JS_DIR, f), "utf-8"))) declared.add(name);
+	}
+
+	for (const file of cssFiles) {
+		it(`${file} references no undefined token`, () => {
+			const css = fs.readFileSync(path.join(CSS_DIR, file), "utf-8");
+			const undefinedRefs = [];
+			// `var(--x)` and `var(--x, fallback)` — a fallback still means the NAME
+			// must exist, otherwise the author silently relies on the fallback.
+			for (const m of css.matchAll(/var\(\s*(--[a-zA-Z0-9-]+)/g)) {
+				if (!declared.has(m[1])) undefinedRefs.push(m[1]);
+			}
+			expect([...new Set(undefinedRefs)], `undefined custom properties in ${file}`).toEqual([]);
+		});
+	}
+});
