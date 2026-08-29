@@ -4539,5 +4539,460 @@
     "homeTeamEntityId": "norge",
     "awayTeamEntityId": "portugal",
     "id": "c00f77a89225"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Champions League",
+    "title": "Inter at Real Madrid",
+    "time": "2026-09-08T19:00:00Z",
+    "endTime": null,
+    "venue": "Santiago Bernabéu, Madrid",
+    "norwegian": false,
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Inter",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T19:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "catalog.json#tier2.teams",
+      "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/calendarios-del-real-madrid-en-la-primera-fase-de-la-champions-2026-27-29-08-2026",
+      "https://www.si.com/onsi/soccer/real-madrid/champions-league/real-madrid-s-champions-league-opponents-key-dates-and-kickoff-times-announced"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "real-madrid",
+        "url": "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/calendarios-del-real-madrid-en-la-primera-fase-de-la-champions-2026-27-29-08-2026",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "Real Madrids egen offisielle kampoppsett: 8. sep 21:00 CEST, Bernabéu"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031 (norwegian-rights [solid] + authority.json)"
+      }
+    },
+    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Real Madrid–Inter på Santiago Bernabéu.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
+    "id": "d0c36c0ce563"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Champions League",
+    "title": "Manchester City at Porto",
+    "time": "2026-09-08T19:00:00Z",
+    "endTime": null,
+    "venue": "Estádio do Dragão, Porto",
+    "norwegian": false,
+    "homeTeam": "Porto",
+    "awayTeam": "Manchester City",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T19:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "catalog.json#tier2.teams",
+      "https://www.mancity.com/news/mens/champions-league-2026-27-league-phase-fixtures-confirmed-63923595",
+      "https://www.uefa.com/uefachampionsleague/clubs/52919--man-city/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.mancity.com/news/mens/champions-league-2026-27-league-phase-fixtures-confirmed-63923595",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "Man Citys egen kampoppsett: Porto (borte) 8. sep 20:00 UK = 21:00 CEST, Estádio do Dragão"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031 (norwegian-rights [solid] + authority.json)"
+      }
+    },
+    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Porto–Manchester City på Estádio do Dragão.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
+    "id": "4581e3bf8e0a"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Champions League",
+    "title": "Feyenoord at Barcelona",
+    "time": "2026-09-09T16:45:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": false,
+    "homeTeam": "Barcelona",
+    "awayTeam": "Feyenoord",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T19:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "catalog.json#tier2.teams",
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/",
+      "https://www.fcbarcelona.com/en/news/4352151/champions-league-kick-offs-announced"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "UEFA ligaspill-oppsett per lag: Barcelona–Feyenoord 9. sep 18:45 CEST"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031 (norwegian-rights [solid] + authority.json)"
+      }
+    },
+    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Barcelona–Feyenoord.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
+    "id": "a0abcebb0e01"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Champions League",
+    "title": "Atlético Madrid at Liverpool",
+    "time": "2026-09-09T19:00:00Z",
+    "endTime": null,
+    "venue": "Anfield, Liverpool",
+    "norwegian": false,
+    "homeTeam": "Liverpool",
+    "awayTeam": "Atlético Madrid",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T19:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "catalog.json#tier2.teams",
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/",
+      "https://www.thisisanfield.com/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "UEFA ligaspill-oppsett: Liverpool–Atlético Madrid 9. sep 21:00 CEST, Anfield"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031 (norwegian-rights [solid] + authority.json)"
+      }
+    },
+    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Liverpool–Atlético Madrid på Anfield.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
+    "id": "b7380d5cdda1"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Champions League",
+    "title": "Arsenal at Napoli",
+    "time": "2026-09-09T19:00:00Z",
+    "endTime": null,
+    "venue": "Stadio Diego Armando Maradona, Napoli",
+    "norwegian": false,
+    "homeTeam": "Napoli",
+    "awayTeam": "Arsenal",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T19:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "catalog.json#tier2.teams",
+      "https://www.arsenal.com/fixtures",
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "arsenal",
+        "url": "https://www.arsenal.com/fixtures",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "Arsenals egen kampoppsett: Napoli (borte) 9. sep 20:00 UK = 21:00 CEST"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031 (norwegian-rights [solid] + authority.json)"
+      }
+    },
+    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Napoli–Arsenal på Stadio Diego Armando Maradona.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
+    "id": "a6417c6261c7"
+  },
+  {
+    "sport": "cycling",
+    "tournament": "UCI Road World Championships 2026",
+    "title": "Elite kvinner tempo (ITT)",
+    "time": "2026-09-20T13:00:00Z",
+    "endTime": "2026-09-20T15:20:00Z",
+    "venue": "Montréal, Canada",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T19:45:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://en.wikipedia.org/wiki/2026_UCI_Road_World_Championships",
+      "https://www.mtl.org/en/what-to-do/festivals-and-events/uci-road-world-championships"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/2026_UCI_Road_World_Championships",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-29T19:45:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "TV 2s egen kunngjøring: hele Sykkel-VM 2026 på TV 2 Direkte + Play"
+      }
+    },
+    "summary": "UCI Road-VM 2026 i Montréal, Canada (20.–27. sept). Åpningsdagen: elite kvinner tempo, 39,2 km rundt Montréal.\n\nNorsk visning: TV 2 Play (TV 2 Direkte + Play viser hele Sykkel-VM). Start 09:00 lokal tid (EDT). Eksakt starttid festes av verify mot arrangørens tidsskjema.",
+    "id": "543a0f338baf"
+  },
+  {
+    "sport": "cycling",
+    "tournament": "UCI Road World Championships 2026",
+    "title": "Elite menn tempo (ITT)",
+    "time": "2026-09-20T16:45:00Z",
+    "endTime": "2026-09-20T19:15:00Z",
+    "venue": "Montréal, Canada",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T19:45:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://en.wikipedia.org/wiki/2026_UCI_Road_World_Championships",
+      "https://www.mtl.org/en/what-to-do/festivals-and-events/uci-road-world-championships"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/2026_UCI_Road_World_Championships",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-29T19:45:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "TV 2s egen kunngjøring: hele Sykkel-VM 2026 på TV 2 Direkte + Play"
+      }
+    },
+    "summary": "UCI Road-VM 2026 i Montréal, Canada. Elite menn tempo, 39,2 km (samme runde som kvinnene).\n\nNorsk visning: TV 2 Play (TV 2 Direkte + Play). Start 12:45 lokal tid (EDT). Norsk startliste ikke publisert ennå.",
+    "id": "85807c6bb4d6"
+  },
+  {
+    "sport": "cycling",
+    "tournament": "UCI Road World Championships 2026",
+    "title": "Mixed relay (lagtempo)",
+    "time": "2026-09-22T12:30:00Z",
+    "endTime": "2026-09-22T15:15:00Z",
+    "venue": "Montréal, Canada",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T19:45:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://en.wikipedia.org/wiki/2026_UCI_Road_World_Championships",
+      "https://www.mtl.org/en/what-to-do/festivals-and-events/uci-road-world-championships"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/2026_UCI_Road_World_Championships",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-29T19:45:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "TV 2s egen kunngjøring: hele Sykkel-VM 2026 på TV 2 Direkte + Play"
+      }
+    },
+    "summary": "UCI Road-VM 2026 i Montréal. Mixed relay lagtempo, 40,4 km.\n\nNorsk visning: TV 2 Play (TV 2 Direkte + Play). Start 08:30 lokal tid (EDT).",
+    "id": "b6586f51ccf9"
+  },
+  {
+    "sport": "cycling",
+    "tournament": "UCI Road World Championships 2026",
+    "title": "Elite kvinner fellesstart",
+    "time": "2026-09-26T13:00:00Z",
+    "endTime": "2026-09-26T18:10:00Z",
+    "venue": "Montréal, Canada",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T19:45:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://en.wikipedia.org/wiki/2026_UCI_Road_World_Championships",
+      "https://www.mtl.org/en/what-to-do/festivals-and-events/uci-road-world-championships"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/2026_UCI_Road_World_Championships",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-29T19:45:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "TV 2s egen kunngjøring: hele Sykkel-VM 2026 på TV 2 Direkte + Play"
+      }
+    },
+    "summary": "UCI Road-VM 2026 i Montréal. Elite kvinner fellesstart, 180,4 km med start i Brossard.\n\nNorsk visning: TV 2 Play (TV 2 Direkte + Play). Start 09:00 lokal tid (EDT).",
+    "id": "e452c2dfcae1"
+  },
+  {
+    "sport": "cycling",
+    "tournament": "UCI Road World Championships 2026",
+    "title": "Elite menn fellesstart",
+    "time": "2026-09-27T13:00:00Z",
+    "endTime": "2026-09-27T19:40:00Z",
+    "venue": "Montréal, Canada",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T19:45:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://en.wikipedia.org/wiki/2026_UCI_Road_World_Championships",
+      "https://www.mtl.org/en/what-to-do/festivals-and-events/uci-road-world-championships"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/2026_UCI_Road_World_Championships",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-29T19:45:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "TV 2s egen kunngjøring: hele Sykkel-VM 2026 på TV 2 Direkte + Play"
+      }
+    },
+    "summary": "UCI Road-VM 2026 i Montréal — mesterskapets siste dag. Elite menn fellesstart, 273,7 km med start i Brossard.\n\nNorsk visning: TV 2 Play (TV 2 Direkte + Play viser hele Sykkel-VM). Start 09:00 lokal tid (EDT). Norsk startliste (Uno-X-ryttere / landslag) ikke publisert ennå.",
+    "id": "2f29191ac5c6"
   }
 ]

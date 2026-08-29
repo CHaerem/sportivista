@@ -1,23 +1,23 @@
 {
-  "runAt": "2026-08-29T14:00:00Z",
-  "eventsAdded": 6,
+  "runAt": "2026-08-29T19:45:00Z",
+  "eventsAdded": 10,
   "eventsRemoved": 0,
-  "trackedDelta": "Pruned 8 expired/concluded entries (7 europacup-playoff + one-off league entries: fc-barcelona, real-madrid, brann/tromso/viking/bodo-glimt/lillestrom europacup-playoff — ties played; + grand-chess-tour-saint-louis-2026, expired 27. aug). Updated serie-a-2026-27 (giornata 2 boarded) + champions-league-2026-27 (MD1 Bodø/Glimt boarded, catalog-club MD1 dates recorded, times pending). Added brann-conference-league-2026-27 placeholder (UECL league phase, fixtures ~30-31 Aug).",
+  "trackedDelta": "Updated uci-road-world-championships-2026 (5 elite events boarded, priority low→medium, TV 2 channel confirmed) + champions-league-2026-27 (all 5 catalog-club MD1 matches boarded). No entries added/removed.",
   "quality": {
     "pass": true,
     "score": 85,
     "failures": [
-      "research-log.json was not written before the grader ran — FIXED in-run (this file).",
-      "Prune missed grand-chess-tour-saint-louis-2026 (expired 27. aug) — FIXED in-run.",
-      "Minor: Serie A giornata-2 time basis rests on two Italian-media sources (Sky Sport Italia + Quotidiano Sportivo) + tvkampen; acceptable, corroborated by independent write-time fact-check against legaseriea.it/calcionapoli24."
+      "Evidence-domain monoculture in the UCI Road-VM family: all 5 cycling events cite only en.wikipedia.org + mtl.org, and every exact start time rests on Wikipedia (provenance.time.basis=secondary) — honestly labelled MEDIUM and deferred to verify, but a single-source-for-time family (-5).",
+      "Repeated unaddressed recommendation across >=3 runs: add ita.1/ger.1 to the ESPN fetcher (+ authority.json contract-block) for wholesale Serie A/Bundesliga; correctly routed to self-repair and compensated with a stopgap hand-board, but a known tolerated recurrence (-10).",
+      "Minor: the norwegian-rights skill Cycling line still reads 'Other UCI races -> [verify per event]'; the UCI Road-VM -> TV 2/TV 2 Play update was blocked by a local file-write permission and only recorded in tracked.json — the CI research agent should land the skill edit."
     ]
   },
   "notes": [
-    "Triaged coverage-audit.json (3 HIGH gaps). BOARDED 2 of 3: (1) Serie A giornata 2 — the 5 still-ahead matches (søn 30. + man 31. aug) as high ai-research events, VG+ Sport, two-source-confirmed + independent write-time fact-check; recurrent imminent HIGH now closed. (2) Champions League MD1 Bayern–Bodø/Glimt (tor 10. sep 21:00 CEST, TV 2 Play) — marquee Norwegian gap, time confirmed Fotmob+fcbayern.com+NRK.",
-    "HELD (deliberate, wrong-time-worse-than-missing): CL MD1 catalog-club matches — dates KNOWN from Wikipedia league phase (Real Madrid–Inter + Man City–Porto 8. sep; Barcelona–Feyenoord, Liverpool–Atlético, Napoli–Arsenal 9. sep) but exact 18:45-vs-21:00 kickoffs not yet locked per match → verify/next run boards when TV slots fix.",
-    "HELD: UCI Road-VM Montréal (20.–27. sep) — championship dates web-reconfirmed (Wikipedia + Tourisme Montréal; elite road races 26.–27. at 09:00), but the per-event opening-week time-trial schedule (from 20. sep) is not yet published with confirmed times, and it is >3 weeks out → left for next run rather than board a guessed time. Remains tracked (uci-road-world-championships-2026).",
-    "WATCH: Brann (catalog) into UECL league phase — draw 29. aug, per-match fixtures publish ~30.–31. aug, MD1 ~24. sep (horizon edge) → placeholder entry, not boardable with a clock yet.",
-    "Streaming ground truth: Champions League = TV 2 Play (norwegian-rights [solid], not the audit-note VG+); Serie A = VG+ Sport (VGs kunngjøring + tvkampen/tvtilbud). No football-fetcher covers Serie A → self-repair flag stands (add ita.1/ger.1 to ESPN fetcher + an authority.json contract-block so a missing round is caught mechanically).",
-    "F1 correct absence confirmed (no race 29. aug–3. sep; next Monza 4.–6. sep already on board). Winter sports + beach volleyball off-season. 100 Thieves/rain no scheduled CS2 match on Liquipedia (correct absence). validate-events.js: 0 errors."
+    "Closed 2 of the 3 remaining HIGH coverage-audit gaps (03:40Z). Serie A giornata 2 (HIGH #1) was already closed by the 14:00Z run. This run boarded HIGH #3 (CL MD1 catalog clubs) and HIGH #2 (UCI Road-VM Montréal, flagged 5 runs unaddressed).",
+    "CL MD1 (5 events, HIGH): Real Madrid–Inter + Manchester City@Porto Tue 8 Sep 21:00 CEST (19:00 UTC); Barcelona–Feyenoord Wed 9 Sep 18:45 CEST (16:45 UTC); Liverpool–Atlético Madrid + Napoli@Arsenal Wed 9 Sep 21:00 CEST. All TV 2 Play (exclusive Norwegian CL rights through 2031). Independent write-time fact-check CORRECTED event: Manchester City play AWAY at Porto (Estádio do Dragão), not a home game — home/away fixed before writing. Two-source/official basis each (realmadrid.com, mancity.com, arsenal.com, UEFA fixtures-by-team). MD1 now complete for all catalog clubs plus the Norwegian marquee (Bayern–Bodø/Glimt, boarded 14:00Z).",
+    "UCI Road-VM Montréal (5 elite events, MEDIUM): elite women's + men's ITT Sun 20 Sep (13:00 / 16:45 UTC), mixed relay Tue 22 Sep (12:30 UTC), elite women's road race Sat 26 Sep (13:00 UTC), elite men's road race Sun 27 Sep (13:00 UTC, 273.7 km). Dates rock-solid (Wikipedia + Tourisme Montréal + fact-check); exact start times from Wikipedia's render of the official schedule (EDT = UTC-4), basis secondary → verify fastens the organizer's primary timing page. Norwegian channel CONFIRMED = TV 2 / TV 2 Play (TV 2's own announcement + independent fact-check — NOT NRK as the earlier prior assumed). No Norwegian start list published yet, so no riders named.",
+    "norwegian-rights skill Cycling line (add: UCI Road World Championships → TV 2 / TV 2 Play [solid]) is DRAFTED but the Edit was blocked by an ungranted file-write permission in THIS local session; the CI research agent has Edit in allowedTools and can land it. The rights change itself is recorded in tracked.json (uci-road-world-championships-2026 reason) so no information is lost.",
+    "coverage-gaps.json (16:10Z, gapCount 8) triaged — all mechanical: entity-gaps Man City/Liverpool/Europa League/US Open Tennis = match/transfer headlines or already covered (Man City MD1 now boarded); tracked-claim Håvard rain Nygaard = 100 Thieves with no scheduled CS2 match (correct absence, late-announcement per cs2-sources); Guttormsen + Jæger (claimedDate 5 Sep) = DL final Brussels 4.–5. Sep on the board (covered).",
+    "Standing self-repair/verify flags (unchanged): (1) add ita.1/ger.1 to the ESPN fetcher + an authority.json contract-block for Serie A/Bundesliga so a missing round is caught mechanically instead of hand-boarded; (2) esports.js is dead (stale-retained); (3) verify fastens the UCI Road-VM primary start times + Norwegian start lists when published. validate-events.js: 111 events, 0 errors (only the known WP-242/246/timezone warnings; no NEW warnings from this run — the CL events carry official time+channel basis)."
   ]
 }
