@@ -1,25 +1,32 @@
 {
-  "checkedAt": "2026-08-28T00:00:00Z",
+  "checkedAt": "2026-08-29T13:36:47Z",
   "widths": [375, 393, 900],
-  "verdict": "issues",
+  "verdict": "pass",
   "findings": [
     {
+      "width": 375,
+      "area": "'DIREKTE NÅ' ticker row (RB Leipzig – Borussia Mönchengladbach)",
+      "issue": "The right-aligned channel label 'Viaplay' hard-wraps mid-word with no hyphen: 'Viapla' on one line and a lone 'y' alone on the next. Happens because this match's name is long enough to wrap to two lines in the ticker, squeezing the channel column. Nothing is hidden — the full word is still there across the two lines — just an orphan-character break. Reproduced deterministically at both 375px and 393px (not at 900px, where the row fits on one line).",
+      "severity": "low"
+    },
+    {
       "width": 393,
-      "area": "agenda row (Bundesliga, 15:30, FREDAG 28. AUGUST)",
-      "issue": "'RB Leipzig – Borussia Mönchengladbach' hard-wraps mid-word with no hyphen: '...Mönchengladbac' on one line and a lone 'h' alone on the next line. All info is still present (nothing hidden/truncated), just an unpolished orphan-character break on this long compound word at this column width. Confirmed by scrolling directly to the row and re-screenshotting at higher effective resolution.",
+      "area": "agenda row (Bundesliga, 15:30, RB Leipzig – Borussia Mönchengladbach)",
+      "issue": "Same mid-word break pattern on the team name itself: 'Mönchengladbac' on one line, a lone 'h' on the next. All info still present, just unpolished. This matches a finding already on record from the previous visual-qa run (2026-08-28) — still reproduces today, unfixed.",
       "severity": "low"
     }
   ],
   "notes": [
-    "Correctness checklist: all match names read in full at every width (long titles wrap onto 2-4 lines rather than truncate, e.g. 'Husqvarna British Masters hosted by Sir Nick Faldo', '1. FC Köln – TSG Hoffenheim', 'Union Berlin – Eintracht Frankfurt') - no hidden info anywhere, including the Bundesliga/Premier League/La Liga blocks.",
-    "Every agenda row and every 'DIREKTE NÅ' live item shows a channel, and every one seen is Norwegian or Norwegian-available: HBO Max (Sport), Discovery+ (+1), BLAST Premier (Twitch), Viaplay, TV 2 Play - no ESPN/FOX/Sky anywhere.",
-    "Team crests and country/tour flags render as distinct small graphics at all three widths - no broken-image icons or empty boxes (checked RB Leipzig, Union Berlin, Mainz 05, Bournemouth, Coventry City, Levante crests specifically).",
-    "Golf/tour events (TOUR Championship, Husqvarna British Masters) correctly show a flag-in-hole icon instead of a country/team crest, plus a Norwegian-player tee-time hint (e.g. 'Hovland ut 20:00') - by design, not a data glitch.",
-    "Times present and sensibly formatted (24h HH:MM); multi-day events show date ranges ('22. august–13. september') instead of a single misleading time.",
-    "375px width (hardest breakpoint): no horizontal overflow, nothing clipped at the screen edge; chevrons and (i) info icons stay fully visible on every row inspected.",
-    "The floating 'Assistent' button (bottom-trailing sparkles) rests over mid-agenda rows at 375/393px (e.g. TOUR Championship, Levante – Real Betis) and in the empty margin beside the column at 900px - both are the DESIGN.md-sanctioned floating-button idiom, not occlusion bugs. It does not cover the last agenda/news row or the footer at any width checked.",
-    "Must-see accent dots (e.g. Vålerenga – Molde) appear sparingly, a handful per day, not on every row.",
-    "Header (wordmark, date, theme toggle), day-group headings ('I DAG', 'I MORGEN', 'LØRDAG 29. AUGUST', ...), and footer all intact and aligned at all three widths.",
-    "Single quiet column, generous spacing, scannable - not a cluttered grid - at all three widths."
+    "Both findings above share one root cause: a long unhyphenated word (a German compound club name, or 'Viaplay' when squeezed) breaks at an arbitrary character instead of wrapping at a word boundary, in two different layout contexts (the live ticker's right column and the agenda list's team-name column). Cosmetic only — no information is hidden or lost in either case.",
+      "Every other match/tournament name read in full at all three widths — long titles wrap onto 2-4 lines rather than truncate (e.g. 'Husqvarna British Masters hosted by Sir Nick Faldo', '1. FC Köln – TSG Hoffenheim', 'Union Berlin – Eintracht Frankfurt') — no repeat of the historical 'Brazil – Nor…' truncation bug.",
+    "Every agenda row and every 'DIREKTE NÅ' live item shows a channel, and every one seen is Norwegian or Norwegian-available: HBO Max (Sport), Discovery+ (+1), BLAST Premier (Twitch), Viaplay, TV 2 Play — no ESPN/FOX/Sky anywhere.",
+    "Team crests and country/tour flags render as distinct small graphics at all three widths — no broken-image icons or empty boxes (checked Liverpool, SV Elversberg, 1. FC Köln, Union Berlin, Mainz 05, RB Leipzig, Bournemouth, Coventry City, Levante, Tottenham, Borussia Dortmund crests specifically). A fixture with no crest data (handball, 'Bergsøy – Kolstad') shows a calm calendar-glyph placeholder rather than a broken image.",
+    "Times present and sensibly formatted (24h HH:MM); multi-day events show date ranges ('22. august–13. september') instead of a single misleading time; round/competition labels (e.g. 'Elkjøp-ligaen 2026/27', 'Bundesliga', 'La Liga') show under each fixture.",
+    "375px width (the hardest breakpoint): no horizontal overflow, nothing clipped at the screen edge; chevrons and (i) info icons stay fully visible on every row inspected.",
+    "The floating 'Assistent' button (bottom-trailing sparkles) rests over mid-agenda rows at 375/393px and in the empty margin beside the column at 900px — the DESIGN.md-sanctioned floating-button idiom, not an occlusion bug. Confirmed it does NOT cover the last agenda/news row or the footer at any width (scrolled to the true bottom at 375px and checked directly).",
+    "Must-see accent dots appear sparingly (a handful per day), not on every row.",
+    "Header (wordmark, date, theme toggle), day-group headings ('I DAG', 'I MORGEN', weekday headers), and footer ('Oppdatert …', 'Abonner i kalender', AI-budsjett line, esports 'NESTE OPP' block, 'Dette dekker vi' / 'Merker og kilder' disclosures) all intact and aligned at all three widths.",
+    "Single quiet column, generous spacing, scannable — not a cluttered grid — at all three widths.",
+    "Could not fully assess: on the very first cold screenshot of this session (375px and 393px, full-page), the page rendered in true-black dark theme even though the harness requested light colorScheme; both widths rendered light correctly on every later retry with identical flags. Non-reproducible after 3 retries, so most likely a first-launch/cold-start timing artifact of the local screenshot harness rather than a live theme bug — noting it rather than raising a finding, since it never reproduced once."
   ]
 }
