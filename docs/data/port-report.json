@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-29T16:10:27.401Z",
+  "generatedAt": "2026-08-29T19:36:48.287Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
     "amendRate": "green",
-    "silentStops": "yellow",
+    "silentStops": "green",
     "participantStatus": "green",
     "contracts": "green"
   },
@@ -27,7 +27,7 @@
       "medium": 0,
       "low": 0
     },
-    "oldestGapAgeDays": 6.51,
+    "oldestGapAgeDays": 6.65,
     "escalatable": 2,
     "catalogMatched": 3,
     "auditedAt": "2026-08-29T03:40:00Z",
@@ -35,21 +35,21 @@
       {
         "interest": "Serie A 2026/27 — giornata 2 (28.–31. aug), hele runden",
         "severity": "high",
-        "ageDays": 1.37,
+        "ageDays": 1.51,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
         "severity": "high",
-        "ageDays": 6.51,
+        "ageDays": 6.65,
         "recurrences": 5,
         "catalogMatched": true
       },
       {
         "interest": "UEFA Champions League 2026/27 — ligaspill runde 1 (MD1), Bodø/Glimt + katalog-klubber",
         "severity": "high",
-        "ageDays": 3.51,
+        "ageDays": 3.65,
         "recurrences": 3,
         "catalogMatched": true
       }
@@ -167,21 +167,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-29T16:10:24.593Z",
+    "buildCheckedAt": "2026-08-29T19:36:41.870Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-29T11:28:37.111Z",
-    "manifestAgeHours": 4.7,
-    "staleFiles": [
-      {
-        "file": "tracked.json",
-        "sourceLastUpdated": "2026-08-26T17:10:00Z",
-        "ageHours": 71.01
-      }
-    ]
+    "manifestGeneratedAt": "2026-08-29T16:10:28.955Z",
+    "manifestAgeHours": 3.44,
+    "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-08-29T11:50:00Z",
-    "verifyAgeHours": 4.34,
+    "verifyAgeHours": 7.78,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -190,6 +184,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-08-29T16:10:27.401Z"
+    "generatedAt": "2026-08-29T19:36:48.287Z"
   }
 }
