@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-28T17:09:02.501Z",
+  "generatedAt": "2026-08-29T01:26:41.723Z",
   "windowDays": 180,
   "records": {
-    "used": 309,
+    "used": 315,
     "skipped": 0
   },
   "sources": {
@@ -187,22 +187,26 @@
       "reliability": null
     },
     "media.wbdsports.com": {
-      "checks": 2,
-      "agreed": 0,
+      "checks": 3,
+      "agreed": 1,
       "corrections": 0,
       "bySport": {
         "tennis": {
           "checks": 2,
           "agreed": 0
+        },
+        "cycling": {
+          "checks": 1,
+          "agreed": 1
         }
       },
       "byField": {
         "streaming": {
-          "checks": 2,
-          "agreed": 0
+          "checks": 3,
+          "agreed": 1
         }
       },
-      "lastChecked": "2026-07-05T08:27:09.000Z",
+      "lastChecked": "2026-08-28T17:31:00Z",
       "reliability": null
     },
     "kommunikasjon.ntb.no": {
@@ -1292,26 +1296,26 @@
       "reliability": null
     },
     "cyclingnews.com": {
-      "checks": 6,
-      "agreed": 6,
+      "checks": 7,
+      "agreed": 7,
       "corrections": 1,
       "bySport": {
         "cycling": {
-          "checks": 6,
-          "agreed": 6
+          "checks": 7,
+          "agreed": 7
         }
       },
       "byField": {
         "existence": {
-          "checks": 3,
-          "agreed": 3
+          "checks": 4,
+          "agreed": 4
         },
         "time": {
           "checks": 3,
           "agreed": 3
         }
       },
-      "lastChecked": "2026-08-26T05:58:55Z",
+      "lastChecked": "2026-08-28T17:31:00Z",
       "reliability": 1
     },
     "fcbarcelona.com": {
@@ -1609,22 +1613,22 @@
       "reliability": null
     },
     "procyclinguk.com": {
-      "checks": 1,
-      "agreed": 1,
+      "checks": 2,
+      "agreed": 2,
       "corrections": 1,
       "bySport": {
         "cycling": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 2,
+          "agreed": 2
         }
       },
       "byField": {
         "existence": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 2,
+          "agreed": 2
         }
       },
-      "lastChecked": "2026-08-05T08:05:00Z",
+      "lastChecked": "2026-08-28T17:31:00Z",
       "reliability": null
     },
     "tpc.com": {
@@ -2538,6 +2542,63 @@
         }
       },
       "lastChecked": "2026-08-27T05:45:00Z",
+      "reliability": null
+    },
+    "lincoln.gov.uk": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 1,
+      "bySport": {
+        "cycling": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-28T17:31:00Z",
+      "reliability": null
+    },
+    "mychess.events": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "chess": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-28T17:31:00Z",
+      "reliability": null
+    },
+    "en.chessbase.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "chess": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "existence": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-08-28T17:31:00Z",
       "reliability": null
     }
   }

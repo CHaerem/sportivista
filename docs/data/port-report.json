@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-28T17:09:01.410Z",
+  "generatedAt": "2026-08-29T01:26:40.297Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
-    "amendRate": "green",
+    "amendRate": "red",
     "silentStops": "yellow",
     "participantStatus": "green",
     "contracts": "green"
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 5.55,
+    "oldestGapAgeDays": 5.89,
     "escalatable": 1,
     "catalogMatched": 3,
     "auditedAt": "2026-08-28T07:20:00Z",
@@ -35,35 +35,35 @@
       {
         "interest": "Serie A 2026/27 — giornata 2 (28.–31. aug), hele runden",
         "severity": "high",
-        "ageDays": 0.41,
+        "ageDays": 0.75,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
         "severity": "high",
-        "ageDays": 5.55,
+        "ageDays": 5.89,
         "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "UEFA Champions League 2026/27 — ligaspill runde 1 (MD1), Bodø/Glimt + katalog-klubber",
         "severity": "medium",
-        "ageDays": 2.55,
+        "ageDays": 2.89,
         "recurrences": 2,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.2,
-    "nearTermChecked": 5,
-    "nearTermAmended": 1,
-    "verifyRunAt": "2026-08-27T05:45:00Z",
+    "nearTermRate": 0.5,
+    "nearTermChecked": 4,
+    "nearTermAmended": 2,
+    "verifyRunAt": "2026-08-28T17:31:00Z",
     "windowRate": 0,
-    "windowChecks": 82,
+    "windowChecks": 88,
     "windowAmendments": 0,
-    "windowCorrections": 5,
+    "windowCorrections": 6,
     "byDay": [
       {
         "date": "2026-08-15",
@@ -155,38 +155,43 @@
         "amendments": 0,
         "corrections": 1,
         "rate": 0
+      },
+      {
+        "date": "2026-08-28",
+        "checks": 6,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-28T17:08:58.118Z",
+    "buildCheckedAt": "2026-08-29T01:26:37.630Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-28T06:54:26.416Z",
-    "manifestAgeHours": 10.24,
+    "manifestGeneratedAt": "2026-08-28T17:09:02.582Z",
+    "manifestAgeHours": 8.29,
     "staleFiles": [
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-08-26T17:10:00Z",
-        "ageHours": 47.98
+        "ageHours": 56.28
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-08-27T05:45:00Z",
-    "verifyAgeHours": 35.4,
-    "corrections": 3,
+    "checkedAt": "2026-08-28T17:31:00Z",
+    "verifyAgeHours": 7.93,
+    "corrections": 1,
     "unresolved": 0,
     "signals": [
-      "Vuelta a España 2026 (cycling, in-progress): etappe 6 (27. aug, Castellón/gravel-finale) bekreftet; Uno-X-nordmennene (Tobias Halland Johannessen, Fredrik Dv…",
-      "US Open (tennis, in-progress): Ruud aktiv — nådde mixed doubles-kvartfinale (m/ Shnaider) 26. aug. Herresingle-hovedtrekning starter 30. aug (Fan Week/kval 2…",
-      "US Open-søketreff om '2. runde exit' stammer fra 2025 (amNewYork 8-27-25, tennisworldusa) — ikke brukt, samme feilkilde som forrige runde flagget. Ruud er ak…"
+      "Vuelta a España 2026 (in-progress): WP-95 deltakersjekk — bekreftet at alle fem norske Uno-X-ryttere fortsatt er i løpet. Leknessund vant etappe 7 (28. aug) …"
     ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-08-28T17:09:01.410Z"
+    "generatedAt": "2026-08-29T01:26:40.296Z"
   }
 }

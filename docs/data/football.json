@@ -1,62 +1,10 @@
 {
-  "lastUpdated": "2026-08-28T17:08:20.965Z",
+  "lastUpdated": "2026-08-29T01:26:06.890Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
       "name": "Eliteserien",
       "events": [
-        {
-          "id": "football-vålerenga-–-molde-1788012000000",
-          "title": "Vålerenga – Molde",
-          "time": "2026-08-29T14:00:00.000Z",
-          "venue": "Intility Arena",
-          "sport": "football",
-          "meta": "Eliteserien",
-          "tournament": "Eliteserien",
-          "streaming": [
-            {
-              "platform": "TV2 Play",
-              "url": "https://play.tv2.no",
-              "type": "tv2"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Vålerenga",
-          "awayTeam": "Molde",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": true,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
-        {
-          "id": "football-viking-–-aalesund-1788019200000",
-          "title": "Viking – Aalesund",
-          "time": "2026-08-29T16:00:00.000Z",
-          "venue": "Viking Stadion",
-          "sport": "football",
-          "meta": "Eliteserien",
-          "tournament": "Eliteserien",
-          "streaming": [
-            {
-              "platform": "TV2 Play",
-              "url": "https://play.tv2.no",
-              "type": "tv2"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Viking",
-          "awayTeam": "Aalesund",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
         {
           "id": "football-bodø/glimt-–-rosenborg-1788093000000",
           "title": "Bodø/Glimt – Rosenborg",
@@ -188,6 +136,58 @@
           }
         },
         {
+          "id": "football-vålerenga-–-molde-1788102000000",
+          "title": "Vålerenga – Molde",
+          "time": "2026-08-30T15:00:00.000Z",
+          "venue": "Intility Arena",
+          "sport": "football",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
+          "streaming": [
+            {
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Vålerenga",
+          "awayTeam": "Molde",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": true,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-viking-–-aalesund-1788102000000",
+          "title": "Viking – Aalesund",
+          "time": "2026-08-30T15:00:00.000Z",
+          "venue": "Viking Stadion",
+          "sport": "football",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
+          "streaming": [
+            {
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Viking",
+          "awayTeam": "Aalesund",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
           "id": "football-lillestrøm-–-fredrikstad-1788110100000",
           "title": "Lillestrøm – Fredrikstad",
           "time": "2026-08-30T17:15:00.000Z",
@@ -212,30 +212,51 @@
           "additional": {
             "status": "STATUS_SCHEDULED"
           }
-        }
-      ]
-    },
-    {
-      "name": "Premier League",
-      "events": [
+        },
         {
-          "id": "football-manchester-city-at-crystal-palace-1787943600000",
-          "title": "Manchester City at Crystal Palace",
-          "time": "2026-08-28T19:00:00.000Z",
-          "venue": "Selhurst Park",
+          "id": "football-aalesund-–-start-1788541200000",
+          "title": "Aalesund – Start",
+          "time": "2026-09-04T17:00:00.000Z",
+          "venue": "Color Line Stadium",
           "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
           "streaming": [
             {
-              "platform": "USA Net",
-              "url": "",
-              "type": "tv"
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
             }
           ],
           "norwegian": false,
-          "homeTeam": "Crystal Palace",
-          "awayTeam": "Manchester City",
+          "homeTeam": "Aalesund",
+          "awayTeam": "Start",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-fredrikstad-–-bodø/glimt-1788541200000",
+          "title": "Fredrikstad – Bodø/Glimt",
+          "time": "2026-09-04T17:00:00.000Z",
+          "venue": "Fredrikstad Stadion",
+          "sport": "football",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
+          "streaming": [
+            {
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Fredrikstad",
+          "awayTeam": "Bodø/Glimt",
           "participants": [],
           "norwegianPlayers": [],
           "totalPlayers": null,
@@ -244,6 +265,37 @@
             "status": "STATUS_SCHEDULED"
           }
         },
+        {
+          "id": "football-sandefjord-–-viking-1788548400000",
+          "title": "Sandefjord – Viking",
+          "time": "2026-09-04T19:00:00.000Z",
+          "venue": "Jotun Arena",
+          "sport": "football",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
+          "streaming": [
+            {
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Sandefjord",
+          "awayTeam": "Viking",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Premier League",
+      "events": [
         {
           "id": "football-nottingham-forest-at-liverpool-1788003000000",
           "title": "Nottingham Forest at Liverpool",
@@ -477,38 +529,38 @@
           "additional": {
             "status": "STATUS_SCHEDULED"
           }
+        },
+        {
+          "id": "football-liverpool-at-ipswich-town-1788548400000",
+          "title": "Liverpool at Ipswich Town",
+          "time": "2026-09-04T19:00:00.000Z",
+          "venue": "Portman Road",
+          "sport": "football",
+          "meta": "Premier League",
+          "tournament": "Premier League",
+          "streaming": [
+            {
+              "platform": "USA Net",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Ipswich Town",
+          "awayTeam": "Liverpool",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": true,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
         }
       ]
     },
     {
       "name": "La Liga",
       "events": [
-        {
-          "id": "football-villarreal-at-alavés-1787945400000",
-          "title": "Villarreal at Alavés",
-          "time": "2026-08-28T19:30:00.000Z",
-          "venue": "Mendizorrotza",
-          "sport": "football",
-          "meta": "La Liga",
-          "tournament": "La Liga",
-          "streaming": [
-            {
-              "platform": "ESPN Deportes",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Alavés",
-          "awayTeam": "Villarreal",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
         {
           "id": "football-real-betis-at-levante-1788015600000",
           "title": "Real Betis at Levante",
