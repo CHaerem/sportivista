@@ -1,27 +1,23 @@
 {
-  "runAt": "2026-08-26T17:15:00Z",
-  "tier": "standard",
-  "trigger": "scheduled (4h)",
-  "eventsAdded": 4,
+  "runAt": "2026-08-29T14:00:00Z",
+  "eventsAdded": 6,
   "eventsRemoved": 0,
-  "eventsAmended": 0,
-  "trackedDelta": "La til 4 tracked-entries: leagues nations-league-norway-2026-27 (high) + champions-league-2026-27 (plassholder, MD1 boardbar etter trekning 28. aug); tournaments tour-of-britain-2026 (medium) + kolstad-ehf-champions-league-2026-27 (medium). Ingen fjernet (europacup-playoff-entries exp 27.–28. aug, returkampene spilles denne uka — auto-utløper). Registrerte football:nations-league i authority.json (tid: uefa+fotball-no; kanal: tv2).",
+  "trackedDelta": "Pruned 8 expired/concluded entries (7 europacup-playoff + one-off league entries: fc-barcelona, real-madrid, brann/tromso/viking/bodo-glimt/lillestrom europacup-playoff — ties played; + grand-chess-tour-saint-louis-2026, expired 27. aug). Updated serie-a-2026-27 (giornata 2 boarded) + champions-league-2026-27 (MD1 Bodø/Glimt boarded, catalog-club MD1 dates recorded, times pending). Added brann-conference-league-2026-27 placeholder (UECL league phase, fixtures ~30-31 Aug).",
   "quality": {
     "pass": true,
-    "score": 91,
+    "score": 85,
     "failures": [
-      "Grader (uavhengig, 91/100, pass): mindre — de to high-confidence Nations League-eventene manglet et event-nivå provenance.streaming-blokk enda tracked-noten refererte basis=secondary. RETTET i én bundet revisjonspass: la til provenance.streaming (tv2, basis secondary, verify-flagg) på begge Norge-kampene. Ingen re-grading (fail-open, looper ikke)."
+      "research-log.json was not written before the grader ran — FIXED in-run (this file).",
+      "Prune missed grand-chess-tour-saint-louis-2026 (expired 27. aug) — FIXED in-run.",
+      "Minor: Serie A giornata-2 time basis rests on two Italian-media sources (Sky Sport Italia + Quotidiano Sportivo) + tvkampen; acceptable, corroborated by independent write-time fact-check against legaseriea.it/calcionapoli24."
     ]
   },
   "notes": [
-    "Standard-tier 4-timers kjøring. Board var comprehensively dekket ved start (90 events, 54 ai-research) og coverage-audit (04:00Z) rapporterte NULL high-hull — så dette var en PROAKTIV horisont-/next-fixture-runde (WP-116 Step 2.6), ikke hull-tetting.",
-    "FAN-OUT: tre parallelle scout-subagenter — (a) Nations League uavhengig fact-check mot primærkilder, (b) CS2/100 Thieves via cs2-sources-skill, (c) norsk-sveip (sykkel/friidrett/håndball/sjakk/golf/sandvolleyball neste ~14 dager).",
-    "BOARDET 4 nye ai-research-events: (1+2) Norge–Danmark 24. sep + Norge–Portugal 27. sep 20.45 CEST (18.45 UTC), Ullevaal, UEFA Nations League League A gruppe 4 (high). Coverage-critic flagget dette som WATCH akkurat utenfor 28-dagers-horisonten (dag 29) — marquee norsk event (Norges FØRSTE League A-sesong, Haaland). Tider bekreftet av scout mot fotball.no-kampside (fiksId 9049093, lest direkte) + gruppeside + billett.fotball.no + DBU + UEFA + VG. TV 2 Play (rettighetshaver bekreftet, eksakt kanal-slot TBD → verify). Troppen ikke tatt ut ennå, ingen spillere navngitt.",
-    "BOARDET (3) Tour of Britain 2.–6. sept (cycling, multi-dags-node) — Uno-X Mobility (Andreas Leknessund, Rasmus Tiller) i et genuint ESPN-blindsone-etapperitt. Datoer bekreftet mot scotborders.gov.uk + britishcycling.org.uk + cyclingweekly. Medium: norsk kanal HBO Max (Sport)/Eurosport utledet av WBD-mønsteret (WBD viser rittet i Fastlands-Europa via Eurosport+HBO Max unntatt Frankrike) → verify.",
-    "BOARDET (4) SC Magdeburg–Kolstad 9. sept 20.45 CEST (18.45 UTC), EHF Champions League gruppe F (medium). Tid/motstander/gruppe web-bekreftet (eurohandball + handball-world + Wikipedia); EHF-arrangørside bot-blokkert → basis secondary. Kanal Viaplay = historisk EHF CL-holder i Norden (prior + verify-flagg, ikke gjett).",
-    "CS2-scout BEKREFTET at 100 Thieves IKKE er i BLAST Open Porto-feltet (16 lag, verifisert HLTV+Strafe). Board-eventet sier allerede eksplisitt «100 Thieves/rain er IKKE i feltet» og lister kun de 7 katalog-lagene (Vitality/NAVI/Falcons/Spirit/FURIA/G2/MOUZ) — INGEN 100T-påstand å fjerne. rain/Håvard Nygaard har ingen bekreftet neste kamp (EWC ferdig ~23. aug), så coverage-gaps tracked-claim er et ÆRLIG hull, ikke et miss.",
-    "CL-ligaspill (champions-league-2026-27 plassholder): MD1 8.–10. sep er innenfor horisonten men boardbart FØRST etter hovedtrekningen tor. 28. aug 17:00. Research boarder katalog-klubbenes (Man City/Arsenal/Real Madrid/Liverpool/Barcelona + evt. Bodø/Glimt) MD1-kamper umiddelbart etter trekningen. TV 2 Play (CL i Norge t.o.m. 2030/31).",
-    "HORISONT for neste vindusrulling (sporet, ikke boardet): GP Québec (11. sep)/GP Montréal (13. sep) med Uno-X; UCI Road-VM Montréal (20.–27. sep, allerede sporet, coverage-audit low). ÆRLIGE NEGATIVER (scout-bekreftet, ingen event å boarde): golf Hovland/Reitan (neste Open de France 24.–27. sep, utenfor); sjakk (kun GCL i vinduet); sandvolleyball Mol/Sørum (sesong slutt, Mol til innendørs); håndball landslag (ingen kamp i septembervinduet).",
-    "MEKANISKE signaler triagert: esports.js stale-retained (coverage-gaps: 230 kjøringer / 12 dager) = SELF-REPAIR-territorium (fetcher-brist, ikke event-hull; CS2 dekket av ai-research). Bretagne Classic summary↔streaming-mismatch (validate-warning) = improve/eget-event, ikke research. Guttormsen/Jæger/rain tracked-claim-gaps = ærlige hull (DL-finalen 4.–5. sep + Ultimate Championship 11.–13. sep dekker friidretterne; rain uten bekreftet kamp)."
+    "Triaged coverage-audit.json (3 HIGH gaps). BOARDED 2 of 3: (1) Serie A giornata 2 — the 5 still-ahead matches (søn 30. + man 31. aug) as high ai-research events, VG+ Sport, two-source-confirmed + independent write-time fact-check; recurrent imminent HIGH now closed. (2) Champions League MD1 Bayern–Bodø/Glimt (tor 10. sep 21:00 CEST, TV 2 Play) — marquee Norwegian gap, time confirmed Fotmob+fcbayern.com+NRK.",
+    "HELD (deliberate, wrong-time-worse-than-missing): CL MD1 catalog-club matches — dates KNOWN from Wikipedia league phase (Real Madrid–Inter + Man City–Porto 8. sep; Barcelona–Feyenoord, Liverpool–Atlético, Napoli–Arsenal 9. sep) but exact 18:45-vs-21:00 kickoffs not yet locked per match → verify/next run boards when TV slots fix.",
+    "HELD: UCI Road-VM Montréal (20.–27. sep) — championship dates web-reconfirmed (Wikipedia + Tourisme Montréal; elite road races 26.–27. at 09:00), but the per-event opening-week time-trial schedule (from 20. sep) is not yet published with confirmed times, and it is >3 weeks out → left for next run rather than board a guessed time. Remains tracked (uci-road-world-championships-2026).",
+    "WATCH: Brann (catalog) into UECL league phase — draw 29. aug, per-match fixtures publish ~30.–31. aug, MD1 ~24. sep (horizon edge) → placeholder entry, not boardable with a clock yet.",
+    "Streaming ground truth: Champions League = TV 2 Play (norwegian-rights [solid], not the audit-note VG+); Serie A = VG+ Sport (VGs kunngjøring + tvkampen/tvtilbud). No football-fetcher covers Serie A → self-repair flag stands (add ita.1/ger.1 to ESPN fetcher + an authority.json contract-block so a missing round is caught mechanically).",
+    "F1 correct absence confirmed (no race 29. aug–3. sep; next Monza 4.–6. sep already on board). Winter sports + beach volleyball off-season. 100 Thieves/rain no scheduled CS2 match on Liquipedia (correct absence). validate-events.js: 0 errors."
   ]
 }
