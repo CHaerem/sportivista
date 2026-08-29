@@ -2633,36 +2633,6 @@
   {
     "sport": "football",
     "tournament": "La Liga",
-    "title": "Espanyol at Real Sociedad",
-    "time": "2026-08-29T17:00:00.000Z",
-    "endTime": null,
-    "venue": "Reale Arena",
-    "meta": "La Liga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Real Sociedad",
-    "awayTeam": "Espanyol",
-    "isFavorite": false,
-    "round": null,
-    "id": "d4b9d15ddc3e",
-    "homeTeamEntityId": "real-sociedad",
-    "awayTeamEntityId": "espanyol"
-  },
-  {
-    "sport": "football",
-    "tournament": "La Liga",
     "title": "Atlético Madrid at Sevilla",
     "time": "2026-08-29T19:30:00.000Z",
     "endTime": null,
@@ -2671,9 +2641,9 @@
     "norwegian": false,
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/sevilla-atletico-madrid-1922589",
-        "urlKind": "deep"
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -4160,6 +4130,151 @@
     "id": "73287bff3c5b"
   },
   {
+    "sport": "football",
+    "tournament": "UEFA Champions League",
+    "title": "Inter at Real Madrid",
+    "time": "2026-09-08T19:00:00Z",
+    "endTime": null,
+    "venue": "Santiago Bernabéu, Madrid",
+    "norwegian": false,
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Inter",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T19:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "catalog.json#tier2.teams",
+      "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/calendarios-del-real-madrid-en-la-primera-fase-de-la-champions-2026-27-29-08-2026",
+      "https://www.si.com/onsi/soccer/real-madrid/champions-league/real-madrid-s-champions-league-opponents-key-dates-and-kickoff-times-announced"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "real-madrid",
+        "url": "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/calendarios-del-real-madrid-en-la-primera-fase-de-la-champions-2026-27-29-08-2026",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "Real Madrids egen offisielle kampoppsett: 8. sep 21:00 CEST, Bernabéu"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031 (norwegian-rights [solid] + authority.json)"
+      }
+    },
+    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Real Madrid–Inter på Santiago Bernabéu.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
+    "id": "d0c36c0ce563",
+    "homeTeamEntityId": "real-madrid",
+    "awayTeamEntityId": "internazionale"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Champions League",
+    "title": "Manchester City at Porto",
+    "time": "2026-09-08T19:00:00Z",
+    "endTime": null,
+    "venue": "Estádio do Dragão, Porto",
+    "norwegian": false,
+    "homeTeam": "Porto",
+    "awayTeam": "Manchester City",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T19:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "catalog.json#tier2.teams",
+      "https://www.mancity.com/news/mens/champions-league-2026-27-league-phase-fixtures-confirmed-63923595",
+      "https://www.uefa.com/uefachampionsleague/clubs/52919--man-city/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.mancity.com/news/mens/champions-league-2026-27-league-phase-fixtures-confirmed-63923595",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "Man Citys egen kampoppsett: Porto (borte) 8. sep 20:00 UK = 21:00 CEST, Estádio do Dragão"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031 (norwegian-rights [solid] + authority.json)"
+      }
+    },
+    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Porto–Manchester City på Estádio do Dragão.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
+    "id": "4581e3bf8e0a",
+    "awayTeamEntityId": "manchester-city"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Champions League",
+    "title": "Feyenoord at Barcelona",
+    "time": "2026-09-09T16:45:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": false,
+    "homeTeam": "Barcelona",
+    "awayTeam": "Feyenoord",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T19:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "catalog.json#tier2.teams",
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/",
+      "https://www.fcbarcelona.com/en/news/4352151/champions-league-kick-offs-announced"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "UEFA ligaspill-oppsett per lag: Barcelona–Feyenoord 9. sep 18:45 CEST"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031 (norwegian-rights [solid] + authority.json)"
+      }
+    },
+    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Barcelona–Feyenoord.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
+    "id": "a0abcebb0e01",
+    "homeTeamEntityId": "barcelona"
+  },
+  {
     "sport": "handball",
     "tournament": "EHF Champions League 2026/27 (gruppespill)",
     "title": "SC Magdeburg – Kolstad",
@@ -4206,6 +4321,104 @@
     "summary": "Kolstad åpner Champions League-sesongen borte mot storlaget SC Magdeburg i gruppe F.\n\nGruppe F: SC Magdeburg (Tyskland), Industria Kielce (Polen), Kolstad (Norge) og HC Kriens-Luzern (Sveits). Det nye 2026/27-formatet har 24 lag i seks grupper.\n\nAvspark onsdag 9. september kl. 20.45 CEST (18.45 UTC) i Magdeburg. Norsk visning ventes på Viaplay (EHF CL-holder i Norden) — bekreftes av verify.",
     "awayTeamEntityId": "kolstad-handball",
     "id": "82383c9de552"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Champions League",
+    "title": "Atlético Madrid at Liverpool",
+    "time": "2026-09-09T19:00:00Z",
+    "endTime": null,
+    "venue": "Anfield, Liverpool",
+    "norwegian": false,
+    "homeTeam": "Liverpool",
+    "awayTeam": "Atlético Madrid",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T19:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "catalog.json#tier2.teams",
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/",
+      "https://www.thisisanfield.com/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "UEFA ligaspill-oppsett: Liverpool–Atlético Madrid 9. sep 21:00 CEST, Anfield"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031 (norwegian-rights [solid] + authority.json)"
+      }
+    },
+    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Liverpool–Atlético Madrid på Anfield.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
+    "id": "b7380d5cdda1",
+    "homeTeamEntityId": "liverpool",
+    "awayTeamEntityId": "atletico-madrid"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Champions League",
+    "title": "Arsenal at Napoli",
+    "time": "2026-09-09T19:00:00Z",
+    "endTime": null,
+    "venue": "Stadio Diego Armando Maradona, Napoli",
+    "norwegian": false,
+    "homeTeam": "Napoli",
+    "awayTeam": "Arsenal",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T19:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "catalog.json#tier2.teams",
+      "https://www.arsenal.com/fixtures",
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "arsenal",
+        "url": "https://www.arsenal.com/fixtures",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "Arsenals egen kampoppsett: Napoli (borte) 9. sep 20:00 UK = 21:00 CEST"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T19:45:00Z",
+        "note": "TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031 (norwegian-rights [solid] + authority.json)"
+      }
+    },
+    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Napoli–Arsenal på Stadio Diego Armando Maradona.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
+    "id": "a6417c6261c7",
+    "homeTeamEntityId": "napoli",
+    "awayTeamEntityId": "arsenal"
   },
   {
     "sport": "football",
@@ -4415,367 +4628,6 @@
     "id": "d5f0ced174d7"
   },
   {
-    "sport": "football",
-    "tournament": "UEFA Nations League 2026/27 (League A, gruppe 4)",
-    "title": "Norge – Danmark",
-    "time": "2026-09-24T18:45:00Z",
-    "endTime": null,
-    "venue": "Ullevaal Stadion, Oslo",
-    "norwegian": true,
-    "homeTeam": "Norge",
-    "awayTeam": "Danmark",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-26T17:05:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://www.fotball.no/landslag/norge-a-herrer/2026/her-er-norges-nations-league-gruppe/",
-      "https://www.uefa.com/uefanationsleague/",
-      "https://www.dbu.dk/landshold/landsholdsdatabasen/MatchInfo/10126"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "fotball-no",
-        "url": "https://www.fotball.no/landslag/norge-a-herrer/2026/her-er-norges-nations-league-gruppe/",
-        "basis": "primary",
-        "retrievedAt": "2026-08-26T17:05:00Z",
-        "note": "NFF/fotball.no publiserer Norges landskampoppsett; Norge–Danmark tor. 24. sep 20.45 CEST (18.45 UTC) på Ullevaal, League A gruppe 4. Bekreftet mot billett.fotball.no, DBU (dansk forbund), UEFA og VG (uavhengig scout-fact-check)."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "secondary",
-        "retrievedAt": "2026-08-26T17:05:00Z",
-        "note": "TV 2 er bekreftet rettighetshaver for UEFA Nations League i Norge (linear + TV 2 Play) via aggregatorer/omtale, IKKE mot TV 2s egen kampside — eksakt lineær kanal-slot settes nærmere → basis secondary. Verify bekrefter kanalen (og lenker dypt) før den låses."
-      }
-    },
-    "summary": "Norge åpner sin aller første Nations League-sesong i den øverste divisjonen (League A) hjemme mot Danmark på Ullevaal.\n\nGruppe 4 består av Norge, Portugal, Danmark og Wales. Ligaspillet spilles over seks kamper (september–november); dette er første av Norges to hjemmekamper i septembervinduet (Portugal søndag 27. sept).\n\nAvspark torsdag 24. september kl. 20.45 CEST (18.45 UTC). Vises på TV 2 Play. Troppen er ikke tatt ut ennå.",
-    "homeTeamEntityId": "norge",
-    "id": "c862d553c668",
-    "awayTeamEntityId": "danmark"
-  },
-  {
-    "sport": "f1",
-    "tournament": "Formula 1 2026 - Race Weekend",
-    "title": "Qatar Airways Azerbaijan Grand Prix",
-    "time": "2026-09-26T11:00:00.000Z",
-    "endTime": null,
-    "venue": "TBD",
-    "meta": "Formula 1 2026 - Race Weekend",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": null,
-    "awayTeam": null,
-    "isFavorite": false,
-    "round": null,
-    "id": "bd100b64b86f"
-  },
-  {
-    "sport": "football",
-    "tournament": "UEFA Nations League 2026/27 (League A, gruppe 4)",
-    "title": "Norge – Portugal",
-    "time": "2026-09-27T18:45:00Z",
-    "endTime": null,
-    "venue": "Ullevaal Stadion, Oslo",
-    "norwegian": true,
-    "homeTeam": "Norge",
-    "awayTeam": "Portugal",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-26T17:05:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://www.fotball.no/fotballdata/kamp/?fiksId=9049093",
-      "https://www.fotball.no/landslag/norge-a-herrer/2026/her-er-norges-nations-league-gruppe/",
-      "https://www.uefa.com/uefanationsleague/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "fotball-no",
-        "url": "https://www.fotball.no/fotballdata/kamp/?fiksId=9049093",
-        "basis": "primary",
-        "retrievedAt": "2026-08-26T17:05:00Z",
-        "note": "fotball.no-kampside (fiksId 9049093) lest direkte: Norge–Portugal søn. 27. sep 20.45 CEST (18.45 UTC), Ullevaal Stadion. Bekreftet mot fotball.nos gruppeside, UEFA og VG (uavhengig scout-fact-check)."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "secondary",
-        "retrievedAt": "2026-08-26T17:05:00Z",
-        "note": "TV 2 er bekreftet rettighetshaver for UEFA Nations League i Norge (linear + TV 2 Play) via aggregatorer/omtale, IKKE mot TV 2s egen kampside — eksakt lineær kanal-slot settes nærmere → basis secondary. Verify bekrefter kanalen (og lenker dypt) før den låses."
-      }
-    },
-    "summary": "Norge tar imot Portugal (Cristiano Ronaldo) på Ullevaal i sin andre hjemmekamp i Nations League-septembervinduet.\n\nGruppe 4 i League A: Norge, Portugal, Danmark og Wales. Norge spiller Danmark hjemme torsdag 24. sept før dette oppgjøret.\n\nAvspark søndag 27. september kl. 20.45 CEST (18.45 UTC). Vises på TV 2 Play. Troppen er ikke tatt ut ennå.",
-    "homeTeamEntityId": "norge",
-    "awayTeamEntityId": "portugal",
-    "id": "c00f77a89225"
-  },
-  {
-    "sport": "football",
-    "tournament": "UEFA Champions League",
-    "title": "Inter at Real Madrid",
-    "time": "2026-09-08T19:00:00Z",
-    "endTime": null,
-    "venue": "Santiago Bernabéu, Madrid",
-    "norwegian": false,
-    "homeTeam": "Real Madrid",
-    "awayTeam": "Inter",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-29T19:45:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "catalog.json#tier2.teams",
-      "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/calendarios-del-real-madrid-en-la-primera-fase-de-la-champions-2026-27-29-08-2026",
-      "https://www.si.com/onsi/soccer/real-madrid/champions-league/real-madrid-s-champions-league-opponents-key-dates-and-kickoff-times-announced"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "real-madrid",
-        "url": "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/calendarios-del-real-madrid-en-la-primera-fase-de-la-champions-2026-27-29-08-2026",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T19:45:00Z",
-        "note": "Real Madrids egen offisielle kampoppsett: 8. sep 21:00 CEST, Bernabéu"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T19:45:00Z",
-        "note": "TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031 (norwegian-rights [solid] + authority.json)"
-      }
-    },
-    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Real Madrid–Inter på Santiago Bernabéu.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
-    "id": "d0c36c0ce563"
-  },
-  {
-    "sport": "football",
-    "tournament": "UEFA Champions League",
-    "title": "Manchester City at Porto",
-    "time": "2026-09-08T19:00:00Z",
-    "endTime": null,
-    "venue": "Estádio do Dragão, Porto",
-    "norwegian": false,
-    "homeTeam": "Porto",
-    "awayTeam": "Manchester City",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-29T19:45:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "catalog.json#tier2.teams",
-      "https://www.mancity.com/news/mens/champions-league-2026-27-league-phase-fixtures-confirmed-63923595",
-      "https://www.uefa.com/uefachampionsleague/clubs/52919--man-city/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.mancity.com/news/mens/champions-league-2026-27-league-phase-fixtures-confirmed-63923595",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T19:45:00Z",
-        "note": "Man Citys egen kampoppsett: Porto (borte) 8. sep 20:00 UK = 21:00 CEST, Estádio do Dragão"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T19:45:00Z",
-        "note": "TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031 (norwegian-rights [solid] + authority.json)"
-      }
-    },
-    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Porto–Manchester City på Estádio do Dragão.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
-    "id": "4581e3bf8e0a"
-  },
-  {
-    "sport": "football",
-    "tournament": "UEFA Champions League",
-    "title": "Feyenoord at Barcelona",
-    "time": "2026-09-09T16:45:00Z",
-    "endTime": null,
-    "venue": null,
-    "norwegian": false,
-    "homeTeam": "Barcelona",
-    "awayTeam": "Feyenoord",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-29T19:45:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "catalog.json#tier2.teams",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/",
-      "https://www.fcbarcelona.com/en/news/4352151/champions-league-kick-offs-announced"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T19:45:00Z",
-        "note": "UEFA ligaspill-oppsett per lag: Barcelona–Feyenoord 9. sep 18:45 CEST"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T19:45:00Z",
-        "note": "TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031 (norwegian-rights [solid] + authority.json)"
-      }
-    },
-    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Barcelona–Feyenoord.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
-    "id": "a0abcebb0e01"
-  },
-  {
-    "sport": "football",
-    "tournament": "UEFA Champions League",
-    "title": "Atlético Madrid at Liverpool",
-    "time": "2026-09-09T19:00:00Z",
-    "endTime": null,
-    "venue": "Anfield, Liverpool",
-    "norwegian": false,
-    "homeTeam": "Liverpool",
-    "awayTeam": "Atlético Madrid",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-29T19:45:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "catalog.json#tier2.teams",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/",
-      "https://www.thisisanfield.com/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T19:45:00Z",
-        "note": "UEFA ligaspill-oppsett: Liverpool–Atlético Madrid 9. sep 21:00 CEST, Anfield"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T19:45:00Z",
-        "note": "TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031 (norwegian-rights [solid] + authority.json)"
-      }
-    },
-    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Liverpool–Atlético Madrid på Anfield.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
-    "id": "b7380d5cdda1"
-  },
-  {
-    "sport": "football",
-    "tournament": "UEFA Champions League",
-    "title": "Arsenal at Napoli",
-    "time": "2026-09-09T19:00:00Z",
-    "endTime": null,
-    "venue": "Stadio Diego Armando Maradona, Napoli",
-    "norwegian": false,
-    "homeTeam": "Napoli",
-    "awayTeam": "Arsenal",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-29T19:45:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "catalog.json#tier2.teams",
-      "https://www.arsenal.com/fixtures",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "arsenal",
-        "url": "https://www.arsenal.com/fixtures",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T19:45:00Z",
-        "note": "Arsenals egen kampoppsett: Napoli (borte) 9. sep 20:00 UK = 21:00 CEST"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T19:45:00Z",
-        "note": "TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031 (norwegian-rights [solid] + authority.json)"
-      }
-    },
-    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Napoli–Arsenal på Stadio Diego Armando Maradona.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
-    "id": "a6417c6261c7"
-  },
-  {
     "sport": "cycling",
     "tournament": "UCI Road World Championships 2026",
     "title": "Elite kvinner tempo (ITT)",
@@ -4908,6 +4760,83 @@
     "id": "b6586f51ccf9"
   },
   {
+    "sport": "football",
+    "tournament": "UEFA Nations League 2026/27 (League A, gruppe 4)",
+    "title": "Norge – Danmark",
+    "time": "2026-09-24T18:45:00Z",
+    "endTime": null,
+    "venue": "Ullevaal Stadion, Oslo",
+    "norwegian": true,
+    "homeTeam": "Norge",
+    "awayTeam": "Danmark",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-26T17:05:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.fotball.no/landslag/norge-a-herrer/2026/her-er-norges-nations-league-gruppe/",
+      "https://www.uefa.com/uefanationsleague/",
+      "https://www.dbu.dk/landshold/landsholdsdatabasen/MatchInfo/10126"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/landslag/norge-a-herrer/2026/her-er-norges-nations-league-gruppe/",
+        "basis": "primary",
+        "retrievedAt": "2026-08-26T17:05:00Z",
+        "note": "NFF/fotball.no publiserer Norges landskampoppsett; Norge–Danmark tor. 24. sep 20.45 CEST (18.45 UTC) på Ullevaal, League A gruppe 4. Bekreftet mot billett.fotball.no, DBU (dansk forbund), UEFA og VG (uavhengig scout-fact-check)."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-26T17:05:00Z",
+        "note": "TV 2 er bekreftet rettighetshaver for UEFA Nations League i Norge (linear + TV 2 Play) via aggregatorer/omtale, IKKE mot TV 2s egen kampside — eksakt lineær kanal-slot settes nærmere → basis secondary. Verify bekrefter kanalen (og lenker dypt) før den låses."
+      }
+    },
+    "summary": "Norge åpner sin aller første Nations League-sesong i den øverste divisjonen (League A) hjemme mot Danmark på Ullevaal.\n\nGruppe 4 består av Norge, Portugal, Danmark og Wales. Ligaspillet spilles over seks kamper (september–november); dette er første av Norges to hjemmekamper i septembervinduet (Portugal søndag 27. sept).\n\nAvspark torsdag 24. september kl. 20.45 CEST (18.45 UTC). Vises på TV 2 Play. Troppen er ikke tatt ut ennå.",
+    "homeTeamEntityId": "norge",
+    "id": "c862d553c668",
+    "awayTeamEntityId": "danmark"
+  },
+  {
+    "sport": "f1",
+    "tournament": "Formula 1 2026 - Race Weekend",
+    "title": "Qatar Airways Azerbaijan Grand Prix",
+    "time": "2026-09-26T11:00:00.000Z",
+    "endTime": null,
+    "venue": "TBD",
+    "meta": "Formula 1 2026 - Race Weekend",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "bd100b64b86f"
+  },
+  {
     "sport": "cycling",
     "tournament": "UCI Road World Championships 2026",
     "title": "Elite kvinner fellesstart",
@@ -4994,5 +4923,54 @@
     },
     "summary": "UCI Road-VM 2026 i Montréal — mesterskapets siste dag. Elite menn fellesstart, 273,7 km med start i Brossard.\n\nNorsk visning: TV 2 Play (TV 2 Direkte + Play viser hele Sykkel-VM). Start 09:00 lokal tid (EDT). Norsk startliste (Uno-X-ryttere / landslag) ikke publisert ennå.",
     "id": "2f29191ac5c6"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Nations League 2026/27 (League A, gruppe 4)",
+    "title": "Norge – Portugal",
+    "time": "2026-09-27T18:45:00Z",
+    "endTime": null,
+    "venue": "Ullevaal Stadion, Oslo",
+    "norwegian": true,
+    "homeTeam": "Norge",
+    "awayTeam": "Portugal",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-26T17:05:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.fotball.no/fotballdata/kamp/?fiksId=9049093",
+      "https://www.fotball.no/landslag/norge-a-herrer/2026/her-er-norges-nations-league-gruppe/",
+      "https://www.uefa.com/uefanationsleague/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/fotballdata/kamp/?fiksId=9049093",
+        "basis": "primary",
+        "retrievedAt": "2026-08-26T17:05:00Z",
+        "note": "fotball.no-kampside (fiksId 9049093) lest direkte: Norge–Portugal søn. 27. sep 20.45 CEST (18.45 UTC), Ullevaal Stadion. Bekreftet mot fotball.nos gruppeside, UEFA og VG (uavhengig scout-fact-check)."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "secondary",
+        "retrievedAt": "2026-08-26T17:05:00Z",
+        "note": "TV 2 er bekreftet rettighetshaver for UEFA Nations League i Norge (linear + TV 2 Play) via aggregatorer/omtale, IKKE mot TV 2s egen kampside — eksakt lineær kanal-slot settes nærmere → basis secondary. Verify bekrefter kanalen (og lenker dypt) før den låses."
+      }
+    },
+    "summary": "Norge tar imot Portugal (Cristiano Ronaldo) på Ullevaal i sin andre hjemmekamp i Nations League-septembervinduet.\n\nGruppe 4 i League A: Norge, Portugal, Danmark og Wales. Norge spiller Danmark hjemme torsdag 24. sept før dette oppgjøret.\n\nAvspark søndag 27. september kl. 20.45 CEST (18.45 UTC). Vises på TV 2 Play. Troppen er ikke tatt ut ennå.",
+    "homeTeamEntityId": "norge",
+    "awayTeamEntityId": "portugal",
+    "id": "c00f77a89225"
   }
 ]
