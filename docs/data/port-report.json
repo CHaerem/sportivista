@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T03:27:11.937Z",
+  "generatedAt": "2026-08-29T11:28:35.463Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -23,34 +23,34 @@
   "coverage": {
     "openGaps": 3,
     "bySeverity": {
-      "high": 2,
-      "medium": 1,
+      "high": 3,
+      "medium": 0,
       "low": 0
     },
-    "oldestGapAgeDays": 5.98,
-    "escalatable": 1,
+    "oldestGapAgeDays": 6.31,
+    "escalatable": 2,
     "catalogMatched": 3,
-    "auditedAt": "2026-08-28T07:20:00Z",
+    "auditedAt": "2026-08-29T03:40:00Z",
     "gaps": [
       {
         "interest": "Serie A 2026/27 — giornata 2 (28.–31. aug), hele runden",
         "severity": "high",
-        "ageDays": 0.84,
-        "recurrences": 0,
+        "ageDays": 1.17,
+        "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
         "severity": "high",
-        "ageDays": 5.98,
-        "recurrences": 4,
+        "ageDays": 6.31,
+        "recurrences": 5,
         "catalogMatched": true
       },
       {
         "interest": "UEFA Champions League 2026/27 — ligaspill runde 1 (MD1), Bodø/Glimt + katalog-klubber",
-        "severity": "medium",
-        "ageDays": 2.98,
-        "recurrences": 2,
+        "severity": "high",
+        "ageDays": 3.31,
+        "recurrences": 3,
         "catalogMatched": true
       }
     ]
@@ -61,17 +61,10 @@
     "nearTermAmended": 2,
     "verifyRunAt": "2026-08-28T17:31:00Z",
     "windowRate": 0,
-    "windowChecks": 88,
+    "windowChecks": 81,
     "windowAmendments": 0,
-    "windowCorrections": 6,
+    "windowCorrections": 5,
     "byDay": [
-      {
-        "date": "2026-08-15",
-        "checks": 7,
-        "amendments": 0,
-        "corrections": 1,
-        "rate": 0
-      },
       {
         "date": "2026-08-16",
         "checks": 7,
@@ -167,21 +160,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-29T03:27:07.783Z",
+    "buildCheckedAt": "2026-08-29T11:28:30.064Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-29T01:26:41.845Z",
-    "manifestAgeHours": 2.01,
+    "manifestGeneratedAt": "2026-08-29T03:27:13.518Z",
+    "manifestAgeHours": 8.02,
     "staleFiles": [
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-08-26T17:10:00Z",
-        "ageHours": 58.29
+        "ageHours": 66.31
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-28T17:31:00Z",
-    "verifyAgeHours": 9.94,
+    "verifyAgeHours": 17.96,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
@@ -192,6 +185,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-08-29T03:27:11.937Z"
+    "generatedAt": "2026-08-29T11:28:35.462Z"
   }
 }
