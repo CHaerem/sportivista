@@ -1,12 +1,11 @@
 {
-	"runAt": "2026-08-28T00:00:00Z",
-	"action": "none",
-	"pr": null,
-	"fixed": [],
-	"notes": [
-		"visual-qa-log.json (checkedAt 2026-08-28T00:00:00Z) has verdict \"issues\" but its sole finding is severity \"low\". Per the ui-fix contract (step 1: act only on high/medium findings), a review with no high/medium findings means exit cleanly with action \"none\" and no PR.",
-		"The lone low finding: at 393px the agenda row 'RB Leipzig – Borussia Mönchengladbach' hard-wraps mid-word ('Mönchengladbac' + a lone orphan 'h') with no hyphen. All info is still present (nothing hidden or truncated) — visual-qa itself confirmed this by scrolling to the row and re-screenshotting, and graded it low. Below the fix threshold; not worth a live-shipping CSS change this run.",
-		"All other visual-qa notes are positive confirmations: long match/tournament names read in full at 375/393/900px (wrap to 2–4 lines, no truncation, e.g. 'Husqvarna British Masters hosted by Sir Nick Faldo', '1. FC Köln – TSG Hoffenheim'), every visible channel is Norwegian or Norwegian-available (HBO Max, Discovery+, BLAST/Twitch, Viaplay, TV 2 Play — no ESPN/FOX/Sky), crests/flags render as distinct logos (no broken-image boxes), golf events show the flag-in-hole icon plus a Norwegian tee-time hint, single calm day-grouped column, no horizontal overflow at 375px, and the 'Assistent' FAB placement is DESIGN.md-sanctioned.",
-		"No open ui-autofix PR to worry about stacking (only PR #455 fix/teetid-runde-og-identitet is open). Nothing high/medium and code-fixable is outstanding, so no branch, screenshots, or PR were created this run."
-	]
+  "runAt": "2026-08-29T13:45:00Z",
+  "action": "none",
+  "pr": null,
+  "fixed": [],
+  "notes": [
+    "visual-qa-log.json verdict is 'pass' with no high/medium findings — nothing to fix per When-to-act rule 1.",
+    "The two open findings are both severity 'low' (cosmetic mid-word breaks: 'Viaplay' orphan-character wrap in the DIREKTE NÅ ticker, and the German compound club name 'Mönchengladbach' breaking mid-word in an agenda row). No information is hidden or lost in either case.",
+    "Deferred deliberately: the ui-fix loop only acts on high/medium findings, and any change here (e.g. overflow-wrap/word-break tuning on .ev-title / the ticker channel column) risks regressing the calm layout for a purely cosmetic gain. Leaving for a future visual-qa escalation if severity rises."
+  ]
 }
