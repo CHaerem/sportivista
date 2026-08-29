@@ -1,24 +1,24 @@
 {
-  "auditedAt": "2026-08-28T07:20:00Z",
+  "auditedAt": "2026-08-29T03:40:00Z",
   "horizonDays": 28,
   "gaps": [
     {
       "interest": "Serie A 2026/27 — giornata 2 (28.–31. aug), hele runden",
-      "whatsMissing": "Serie As andre serierunde spilles fre. 28. – man. 31. aug (DENNE HELGEN, innenfor imminent-vinduet), men INGEN kamp fra runde 2 står på tavla — tavla har kun runde 1 (22.–24. aug). Manglende oppgjør inkl. Milan–Venezia (fre 20.45), Fiorentina–Frosinone / Monza–Udinese / Sassuolo–Torino (lør 18.30), Cagliari–Inter (søn 20.45), Lecce–Roma og Atalanta–Bologna. Serie A er katalog-turnering (tier2) i tier1-fotball → skal på tavla.",
-      "why": "Web-bekreftet mot to uavhengige italienske kilder: Sky Sport Italia (sport.sky.it — 2. giornata 28.–31. aug, kun 18.30/20.45-avspark) + Corriere dello Sport / it.wikipedia terminliste. Serie A dekkes IKKE av den statiske ESPN-fetcheren (kun La Liga esp.1 er wholesale), så hver runde må håndboardes av research — runde 1 ble boardet 11. aug, men runde 2 falt gjennom. Dette er et akutt imminent-hull: marquee-liga, katalogdekket, hele runden borte samme helg som den spilles. Norsk visning: VG+ Sport (eier Serie A-rettighetene). HIGH: viktig, imminent (i dag–man), to-kilde-bekreftet.",
+      "whatsMissing": "Serie As andre serierunde spilles fre. 28. – man. 31. aug (IMMINENT-vinduet), men INGEN kamp fra runde 2 står på tavla — tavla har kun runde 1 (22.–24. aug: Monza–Inter, Napoli–Genoa, Juventus–Frosinone, Milan–Torino, Fiorentina–Roma). Manglende oppgjør: Milan–Venezia (fre 28. 20.45), Fiorentina–Frosinone / Monza–Udinese / Sassuolo–Torino (lør 29. 18.30), Juventus–Parma (lør 29. 20.45), Napoli–Como (søn 30. 18.30), Cagliari–Inter / Lazio–Genoa (søn 30. 20.45), Lecce–Roma (man 31. 18.30) og Atalanta–Bologna (man 31. 20.45). Søndags- og mandagskampene er FORTSATT framover (boardbare nå). Serie A er katalog-turnering (tier2) i tier1-fotball → skal på tavla.",
+      "why": "Web-bekreftet mot to uavhengige italienske kilder denne kjøringen: Sky Sport Italia (sport.sky.it — 2. giornata 28.–31. aug, kun 18.30/20.45-avspark, DAZN + tre kamper co-eksklusivt Sky/NOW) + it.wikipedia/Corriere dello Sport terminliste. Serie A dekkes IKKE av den statiske ESPN-fetcheren (kun La Liga esp.1 er wholesale), så hver runde må håndboardes av research — runde 1 ble boardet 11. aug, men runde 2 falt gjennom OG er fortsatt uadressert etter forrige audits HIGH-eskalering (28. aug). Rekurrent imminent-hull: marquee-liga, katalogdekket, hele runden borte samme helg som den spilles. Norsk visning: VG+ Sport (Serie A-rettighetene; research verifiserer mot norwegian-rights). HIGH: viktig, imminent (søn–man fortsatt framover), to-kilde-bekreftet, rekurrent.",
       "corroboration": [
         "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
-        "https://it.wikipedia.org/wiki/Serie_A_2026-2027"
+        "https://it.wikipedia.org/wiki/Serie_A_2025-2026"
       ],
-      "suggestedSource": "https://www.legaseriea.it/serie-a/news/date-orari-e-programmazione-tv-delle-prime-cinque-giornate",
+      "suggestedSource": "https://www.legaseriea.it/serie-a/calendario-e-risultati",
       "severity": "high",
       "firstSeen": "2026-08-28T07:20:00Z",
-      "recurrences": 0
+      "recurrences": 1
     },
     {
       "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
-      "whatsMissing": "UCI Road World Championships i Montréal (20.–27. sep) står FORTSATT ikke på tavla. Åpningsdagene er individuelle tempoløp fra søn. 20. sep (dag 23, innenfor 28-dagers-horisonten); elite-fellesstartene er 26.–27. sep (på/utenfor horisontgrensen). Katalog-turnering i tier1-sport med sterk norsk vinkel (Uno-X-ryttere; typisk NRK).",
-      "why": "Web-REKONFIRMERT denne kjøringen (Wikipedia + Tourisme Montréal): mesterskapet 20.–27. sep, 13 øvelser over 8 dager, tempoløp åpner uka (fra 20. sep), elite fellesstart 26.–27. sep. Har vært flagget fire kjøringer på rad uten å bli boardet (firstSeen 23. aug, recurrences 3 → 4). Ble bumpet low→medium forrige kjøring via recall-exhaustion; er FORTSATT reelt og uadressert etter enda en kjøring, så per «må klatre, ikke forkalke»-prinsippet bumpes det videre medium→high. Et ekte marquee tier1-hull som research ikke har boardet på nesten to uker skal ikke ligge og råtne på medium. Research bør begynne å boarde åpnings-tempoet (fler-dagers node, NRK-prior) nå.",
+      "whatsMissing": "UCI Road World Championships i Montréal (20.–27. sep) står FORTSATT ikke på tavla. Åpningsdagene er individuelle tempoløp fra søn. 20. sep (dag 22, innenfor 28-dagers-horisonten); elite-fellesstartene er 26.–27. sep. Katalog-turnering i tier1-sport med sterk norsk vinkel (Uno-X-ryttere; typisk NRK).",
+      "why": "Web-REKONFIRMERT denne kjøringen (Wikipedia + Tourisme Montréal): mesterskapet 20.–27. sep, 13 øvelser over 8 dager, tempoløp åpner uka (fra 20. sep), elite fellesstart 26.–27. sep. Har vært flagget fem kjøringer på rad uten å bli boardet (firstSeen 23. aug, recurrences 4 → 5). Ble bumpet low→medium (26. aug) og medium→high (28. aug) via recall-exhaustion; er FORTSATT reelt og uadressert etter enda en kjøring, så det holdes HIGH. Et ekte marquee tier1-hull som research ikke har boardet på over to uker skal ikke råtne. Research bør begynne å boarde åpnings-tempoet (fler-dagers node, NRK-prior) nå.",
       "corroboration": [
         "https://en.wikipedia.org/wiki/2026_UCI_Road_World_Championships",
         "https://www.mtl.org/en/what-to-do/festivals-and-events/uci-road-world-championships"
@@ -26,47 +26,54 @@
       "suggestedSource": "https://www.cyclingnews.com/races/uci-road-world-championships-2026/races/",
       "severity": "high",
       "firstSeen": "2026-08-23T04:00:00Z",
-      "recurrences": 4,
-      "severityBumpedFor": "recurred 4 runs unaddressed (low→medium forrige kjøring, medium→high denne)"
+      "recurrences": 5,
+      "severityBumpedFor": "recurred 5 runs unaddressed (low→medium 26. aug, medium→high 28. aug, holdt high denne)"
     },
     {
       "interest": "UEFA Champions League 2026/27 — ligaspill runde 1 (MD1), Bodø/Glimt + katalog-klubber",
-      "whatsMissing": "Ligaspillets MD1 spilles tir.–tor. 8.–10. sep (dag 11–13, godt innenfor horisonten), men ingen ligaspill-kamp står på tavla. Trekningen ER NÅ FULLFØRT (tor. 27. aug) — RSS bekrefter «Arsenal face Real Madrid, Man City get Barcelona and PSG». Konkrete oppgjør er dermed kjent og fullt boardbare. Bodø/Glimt er kvalifisert til ligaspillet; en Glimt-kamp i MD1 er et marquee norsk event; katalog-klubbene Man City, Arsenal, Barcelona, Real Madrid og Liverpool spiller alle.",
-      "why": "Web-bekreftet mot UEFA.com + Bleacher Report/Sky Sports: MD1 8.–10. sep 2026, 36-lags ligaspill (8 kamper/lag), avspark mest 20.00/21.00 CET + noen 18.45. Trekningen skjedde 27. aug (RSS-bekreftet), så fixtures finnes nå. Var flagget medium forrige kjøring (recurrences 1, «draw i kveld») → nå recurrences 2. MEDIUM (ikke imminent, ~11 dager fram; men fullt boardbart etter trekningen). Research bør boarde Glimts + katalog-klubbenes MD1-kamper på normal 4-t-kadens; ikke akutt nok til egen eskalering, men fanges av deep-runden som Serie A/UCI utløser.",
+      "whatsMissing": "Ligaspillets MD1 spilles tir.–tor. 8.–10. sep (dag 11–13, godt innenfor horisonten), men ingen ligaspill-kamp står på tavla. Trekningen ER fullført (27. aug) og UEFA har publisert klubbenes kampsider (Bodø/Glimt vs Union SG, Bodø/Glimt vs N.E.C. m.fl.); det fullstendige fixture-kalenderoppsettet (hvilken kamp på hvilken av 8.–10. sep) skulle publiseres senest lør. 29. aug. Bodø/Glimt er i ligaspillet (marquee norsk event); katalog-klubbene Man City, Arsenal, Barcelona, Real Madrid og Liverpool spiller alle.",
+      "why": "Web-bekreftet mot UEFA.com: MD1 8.–10. sep 2026, 36-lags ligaspill; motstandere kjent etter trekningen (Real Madrid–Arsenal/Inter, Barça–Man City/PSG jf. CBS/UEFA), fixture-datoene publiseres 29. aug. Var medium forrige to kjøringer (recurrences 1 → 2). Denne kjøringen recurrences 2 → 3: per recall-exhaustion (recurrences >= 3, fortsatt reelt) bumpes medium→high. Fullt boardbart så snart 29.-aug-kalenderen er ute; Glimts MD1 er et ekte marquee norsk hull som ikke skal forkalke på medium. Research bør boarde Glimts + katalog-klubbenes MD1-kamper.",
       "corroboration": [
-        "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
-        "https://www.skysports.com/football/news/11095/13576602/champions-league-26-27-draw-dates-schedule-format-and-who-has-qualified-from-premier-league-and-around-europe"
+        "https://www.uefa.com/uefachampionsleague/clubs/59333--bodo-glimt/matches/",
+        "https://www.uefa.com/uefachampionsleague/news/02a6-20d57cfcd03e-407c22a7f465-1000--2026-27-champions-league-teams-dates-draws-format-final/"
       ],
-      "suggestedSource": "https://www.uefa.com/uefachampionsleague/",
-      "severity": "medium",
+      "suggestedSource": "https://www.uefa.com/uefachampionsleague/clubs/59333--bodo-glimt/matches/",
+      "severity": "high",
       "firstSeen": "2026-08-26T04:00:00Z",
-      "recurrences": 2
+      "recurrences": 3,
+      "severityBumpedFor": "recurred 3 runs unaddressed (medium→high per recall-exhaustion)"
     }
   ],
   "sourceIssues": [
     {
+      "source": "Kong Harald V død (26.–29. aug) — norsk idrett utsatt 48 t",
+      "issue": "Kong Harald V er død; NFF utsatte alle nasjonale kamper i toppdivisjonene i 48 t, og Idrettsforbundet åpnet for stans i alle nasjonale konkurranser. Eliteserien r19 ble flyttet til søndag 30. aug (Vålerenga–Molde + Viking–Aalesund flyttet lør→søn 17.00 CEST). Tavla ser ut til å ALLEREDE reflektere Eliteserien-omleggingen (alle r19-kamper står nå søndag 30. aug). MEN: håndball Elkjøp-ligaen (Bergsøy–Kolstad lør 29. aug 16.15) og OBOS (Kongsvinger–Lyn, Lillestrøm–Fredrikstad) er nasjonale konkurranser i samme 48-t-vindu — deres tider/status på tavla er trolig utdaterte og må verifiseres/flyttes.",
+      "impact": "Imminente norske nasjonale konkurranser kan stå med feil tid/status på tavla denne helgen. verify må krysssjekke fotball.no + handball.no og flytte/fjerne påvirkede oppgjør (særlig lørdagskampene i 48-t-vinduet). Ikke et recall-hull (Eliteserien er dekket), men en korrekthetsrisiko på when/status.",
+      "severity": "high"
+    },
+    {
       "source": "ESPN-fetcher (statisk pipeline) — Serie A + Bundesliga",
-      "issue": "Ingen wholesale-fetcher for Serie A eller Bundesliga (kun La Liga esp.1 hentes statisk). Begge ligaene må håndboardes runde-for-runde av research-agenten.",
-      "impact": "Serie A giornata 2 (28.–31. aug) falt gjennom — hele runden manglet på tavla samme helg som den spilles, fordi ingen mekanisk fetcher fanger den og research ikke rakk å boarde runde 2. Katalog-notatet har allerede flagget self-repair om å legge ita.1 + ger.1 i ESPN-fetcheren for varig wholesale-dekning; denne hendelsen er nok et konkret bevis for at det bør gjøres.",
+      "issue": "Ingen wholesale-fetcher for Serie A eller Bundesliga (kun La Liga esp.1 hentes statisk). Begge ligaene må håndboardes runde-for-runde av research-agenten, og har ingen contract-blokk i authority.json — så coverage-contracts-mekanikken fanger dem IKKE.",
+      "impact": "Serie A giornata 2 (28.–31. aug) falt gjennom for andre kjøring på rad — hele runden mangler på tavla samme helg som den spilles, fordi ingen mekanisk fetcher fanger den og research ikke rakk å boarde runde 2 tross forrige audits eskalering. Katalog-notatet har allerede flagget self-repair om å legge ita.1 + ger.1 i ESPN-fetcheren for varig wholesale-dekning; dette er nok et konkret bevis.",
       "severity": "medium"
     }
   ],
   "coveredWell": [
-    "IMMINENT-PASS (28. aug–1. sep): REN bortsett fra Serie A giornata 2. Fotball: PL MW3 (28.–31. aug, komplett), Eliteserien r19 (Vålerenga–Molde + Viking–Aalesund 29., Bodø/Glimt–Rosenborg 30. + hele runden), La Liga r3 (28.–31., statisk via ESPN), Bundesliga sesongåpning r1 (28.–30., ai-research), OBOS (Kongsvinger–Lyn 30.). Golf: FedExCup TOUR Championship (27.–30. aug, East Lake, sesongfinale) + DP World Husqvarna British Masters. Tennis: US Open (Ruud–Cerúndolo 31. aug) multi-dags-node. Sykkel: Vuelta a España (22. aug–13. sep, Uno-X) multi-dags + Bretagne Classic (30.) + Tour of Britain (fra 2. sep). Håndball: Elkjøp-ligaen (Bergsøy–Kolstad 29.).",
-    "F1 — ESPN-BLINDSONE (source-quirks-mandat, sjekket denne kjøringen): INGEN F1-race denne helgen (29.–30. aug). Neste er Italiensk GP Monza — web-rekonfirmert mot monzanet.it + formula1.com + RacingNews365 (Monza 4.–6. sep, race søn. 6. sep). Tavla har Italiensk GP kval 5. sep + race 6. sep, Spansk GP (Madrid-debut) 11.–13. sep og Aserbajdsjan 26. sep. Ingen mis-datering; korrekt fravær 28. aug–5. sep.",
-    "HULL FYLT siden forrige audit: Norge landslag Nations League — Norge–Danmark (24. sep) OG Norge–Portugal (27. sep) står NÅ på tavla (ai-research/high, Ullevaal 20.45). Forrige audits medium-hull #1 er lukket.",
-    "Sjakk — Global Chess League sesong 4 (Carlsen comeback, 3.–13. sep) på tavla.",
-    "Friidrett — DL-finalen Brussel (4.–5. sep) + World Athletics Ultimate Championship (Budapest 11.–13. sep, Ingebrigtsen/Warholm) på tavla.",
-    "KORREKT FRAVÆR (ikke hull): F1 ingen race 28. aug–5. sep; Ryder Cup ikke i 2026 (oddetallsår, neste 2027); vinteridretter (biathlon/langrenn/alpint/hopp/nordisk) + sandvolleyball av-sesong i august."
+    "IMMINENT-PASS (29. aug–1. sep): dekket bortsett fra Serie A giornata 2. Fotball: PL MW3 (Nott. Forest–Liverpool, Everton–Bournemouth, Newcastle–Tottenham, Brighton–Chelsea, Ipswich–Man United, Arsenal–Aston Villa m.fl.), Eliteserien r19 (NÅ flyttet til søndag 30. aug pga. kongens død — Bodø/Glimt–Rosenborg + hele runden), La Liga r3 (statisk via ESPN), Bundesliga r1 (ai-research). Golf: FedExCup TOUR Championship (avsluttes 30. aug, East Lake) + DP World Husqvarna British Masters. Tennis: US Open (24. aug–14. sep, Ruud–Cerúndolo 1. sep) multi-dags-node. Sykkel: Vuelta a España (22. aug–13. sep, Uno-X) multi-dags + Bretagne Classic (30.) + Tour of Britain (fra 2. sep). Esport: BLAST Open Porto (Fall) gruppespill (26.–31. aug).",
+    "F1 — ESPN-BLINDSONE (source-quirks-mandat, sjekket denne kjøringen): INGEN F1-race denne helgen (29.–30. aug) — Zandvoort-helgen var 22.–23. aug, neste er Italiensk GP Monza 4.–6. sep. Tavla har Italiensk GP kval 5. sep + race 6. sep, Spansk GP 12.–13. sep og Aserbajdsjan 26. sep. Ingen mis-datering; korrekt fravær 29. aug–3. sep.",
+    "HULL FYLT siden forrige audit: intet nytt lukket, men Nations League (Norge–Danmark 24. sep + Norge–Portugal 27. sep) står fortsatt på tavla.",
+    "Friidrett — DL-finalen Brussel (4.–5. sep, dekker Guttormsen/Jæger/Warholm hvis kvalifisert) + World Athletics Ultimate Championship (Budapest 11.–13. sep, Ingebrigtsen/Warholm) på tavla.",
+    "KORREKT FRAVÆR (ikke hull): F1 ingen race 29. aug–3. sep; Ryder Cup ikke i 2026 (oddetallsår, neste 2027); vinteridretter (biathlon/langrenn/alpint/hopp/nordisk) + sandvolleyball av-sesong i august; 100 Thieves/rain uten planlagt CS2-kamp på Liquipedia akkurat nå (tracked-claim = korrekt fravær, sen-annonsering per cs2-sources)."
   ],
   "escalated": true,
   "notes": [
-    "Kjøring 2026-08-28 ~07:20Z (recall-audit). IMMINENT-PASS kjørt først: ett HIGH-hull funnet → ESKALERT (deep-tier research). To high (Serie A giornata 2 imminent + UCI Road-VM via recall-exhaustion) + ett medium (CL MD1). Én eskalering dekker alle high-hull.",
-    "HIGH #1 — Serie A giornata 2 (28.–31. aug): hele andre serierunde mangler på tavla samme helg som den spilles. To-kilde-bekreftet (Sky Sport Italia + it.wikipedia/Corriere). Rotårsak: ingen wholesale-fetcher for Serie A, research boardet runde 1 men ikke runde 2. Norsk visning VG+ Sport. Registrert som medium sourceIssue (mangler ita.1/ger.1 i ESPN-fetcher).",
-    "HIGH #2 — UCI Road-VM Montréal (20.–27. sep): web-rekonfirmert (Wikipedia + Tourisme Montréal). Flagget fire kjøringer på rad uten boarding (recurrences 4). Bumpet low→medium forrige kjøring; bumpet videre medium→high denne per recall-exhaustion — et ekte marquee tier1-hull skal klatre til det fikses, ikke forkalke på medium.",
-    "MEDIUM — CL ligaspill MD1 (8.–10. sep): DATO-OPPDATERING fra forrige audit: trekningen er nå FULLFØRT (27. aug, RSS-bekreftet «Arsenal–Real Madrid, Man City–Barcelona/PSG»). Fixtures kjent → fullt boardbart. recurrences 1 → 2. Ikke imminent (~11 dager), holdes medium; research tar det på normal kadens (og deep-runden fanger det).",
-    "MEKANISKE coverage-gaps.json-signaler TRIAGERT (gapCount 9, anomalyCount 0): entity-gaps Guttormsen/«Guttormsen» (friidrett) = RSS-treff mot Duplantis-beundring-sak, ikke imminent event — Guttormsen (stav) dekkes av DL-finalen Brussel (4.–5. sep) på tavla hvis han stiller. entity-gaps Barça/Barca + Man City = transfer-/CL-trekning-overskrifter (Guardian), ikke manglende event — begge klubbers imminente kamper (PL MW3 28.–31. aug) er på tavla; deres CL MD1 er MEDIUM-hullet over. entity-gap Wimbledon = FALSK RSS-treff mot fotball-overskrift «Fulham cruise past Wimbledon (Carabao Cup)» (substring), ikke tennis. tracked-claim Håvard «rain» Nygaard = 100 Thieves-dekning (ingen imminent kamp planlagt akkurat nå på Liquipedia; korrekt fravær). tracked-claim Guttormsen + Jæger (claimedDate 5. sep) = DL-finalen Brussel (4.–5. sep) på tavla → dekket.",
-    "RSS TRIAGERT: «Champions League draw: Arsenal–Real Madrid, Man City–Barcelona/PSG» = bekrefter CL-trekning fullført → MD1-hull. «Til Europa League/Brann klare for Europa-spill» = Brann + Lillestrøm avanserte fra ECL/EL-playoff; «Blytung Europa-kveld for Tromsø» = Tromsø slått ut. WATCH (ikke hard hull ennå): ECL/EL-ligaspillets MD1 er ~24. sep (dag 27, kant av horisonten) med Brann/Lillestrøm, men EL/ECL-trekningene skjer 29. aug — fixtures ikke kjent ennå, så ikke boardbart denne kjøringen. Neste audit bør boarde norske klubbers ECL/EL MD1 når trekningen er ferdig. «Warholm mistet verdensrekord» = Weltklasse Zürich (ferdig 27. aug); Warholm dekkes av DL-finalen. US Open- + transfer-saker = dekket / ikke event.",
-    "ALLE dekningskontrakter (coverage-contracts.json) status=met: f1 (up=5/min=1), Eliteserien (8/4), Premier League (10/6), DP World Tour (1/1), PGA Tour (1/1), ATP/WTA (1/1). Ingen contract-breach-gaps. (NB: Serie A/Bundesliga har ingen contract-blokk i authority.json, så deres manglende runde fanges IKKE av kontraktmekanikken — derfor er den mekaniske recall-watchen + denne audit-en eneste nett; nok et argument for wholesale-fetcher.)"
+    "Kjøring 2026-08-29 ~03:40Z (recall-audit). IMMINENT-PASS kjørt først. TRE HIGH-hull: Serie A giornata 2 (imminent, rekurrent), UCI Road-VM Montréal (recall-exhaustion, recurrences 5) og CL MD1 (recall-exhaustion medium→high, recurrences 3). ESKALERT (deep-tier research) — én eskalering dekker alle high-hull.",
+    "STORT KRYSSGÅENDE SIGNAL — Kong Harald V død: RSS full av «NFF bekrefter: De nasjonale kampene utsettes», «Idrettsforbundet åpner for stans i alle nasjonale konkurranser etter kongens død», «hedret kong Harald før etappen». Web-bekreftet (NRK/VG/TV2/fotball.no): alle nasjonale toppkamper utsatt 48 t; Eliteserien r19 flyttet til søndag 30. aug (Vålerenga–Molde + Viking–Aalesund lør→søn 17.00). Tavla reflekterer ALLEREDE Eliteserien-omleggingen (r19 nå søndag). Registrert som HIGH sourceIssue: verify må sjekke håndball Elkjøp-ligaen (Bergsøy–Kolstad lør 29.) + OBOS-kamper i 48-t-vinduet, som trolig også er utsatt men fortsatt kan stå med lørdags-tid på tavla.",
+    "HIGH #1 — Serie A giornata 2 (28.–31. aug): hele andre serierunde mangler på tavla for ANDRE kjøring på rad tross forrige audits eskalering. To-kilde-bekreftet (Sky Sport Italia + it.wikipedia/Corriere). Søndags- (Napoli–Como, Cagliari–Inter, Lazio–Genoa) og mandagskampene (Lecce–Roma, Atalanta–Bologna) er fortsatt framover og boardbare. Rotårsak: ingen wholesale-fetcher for Serie A (medium sourceIssue). recurrences 0 → 1.",
+    "HIGH #2 — UCI Road-VM Montréal (20.–27. sep): web-rekonfirmert (Wikipedia + Tourisme Montréal — 13 øvelser, tempo fra 20. sep, elite fellesstart 26.–27.). Flagget fem kjøringer på rad uten boarding (recurrences 4 → 5). Holdes HIGH etter tidligere bumps.",
+    "HIGH #3 (NY BUMP) — CL ligaspill MD1 (8.–10. sep): trekning fullført 27. aug, UEFA-kampsider publisert, fullt fixture-oppsett senest 29. aug. recurrences 2 → 3 → bumpet medium→high per recall-exhaustion. Bodø/Glimt-marquee + katalog-klubber. Fanges av deep-runden Serie A/UCI utløser.",
+    "MEKANISKE coverage-gaps.json-signaler TRIAGERT (gapCount 6, anomalyCount 0): entity-gap Man City = kamp-rapport/transfer-overskrifter (Guardian) — deres imminente PL-kamp (Palace 28. aug) er spilt, neste er CL MD1 (HIGH #3); ikke eget hull. entity-gap Europa League = transfer-substring, ikke event (ekte EL-signal = Brann-WATCH under). entity-gap US Open Tennis = dekket (US Open multi-dags-node + Ruud–Cerúndolo 1. sep på tavla) → falsk hull. tracked-claim Håvard «rain» Nygaard = 100 Thieves uten planlagt kamp (korrekt fravær). tracked-claim Guttormsen + Jæger (claimedDate 5. sep) = DL-finalen Brussel (4.–5. sep) på tavla → dekket.",
+    "RSS TRIAGERT: «Dette blir Branns motstandere» + «Disse lagene skal Lillestrøm møte» = EL/ECL-ligaspilltrekningene (29. aug). WATCH (ikke hard hull ennå): Brann (katalog-klubb) i Europa League + Lillestrøm i Conference League, MD1 ~24. sep (dag 26, kant av horisonten). Fixture-datoer/-tider settes først ~30.–31. aug, så ikke boardbart med klokkeslett denne kjøringen — neste audit bør boarde norske klubbers EL/ECL MD1 når kalenderen er ute. «Norsk seier i ultraløp / Spania rundt / kong Harald-hyllest» = enten dekket (Vuelta) eller ikke katalog-event.",
+    "ALLE dekningskontrakter (coverage-contracts.json) status=met: f1 (up=5/min=1), Eliteserien (11/4), Premier League (10/6), DP World Tour (1/1), PGA Tour (1/1), ATP/WTA (1/1). Ingen contract-breach-gaps. (NB: Serie A/Bundesliga har ingen contract-blokk i authority.json, så deres manglende runde fanges IKKE av kontraktmekanikken — nok et argument for wholesale-fetcher + en authority.json contract-blokk for Serie A.)"
   ]
 }
