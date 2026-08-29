@@ -1889,14 +1889,14 @@
     "norwegianPlayers": [
       {
         "name": "Viktor Hovland",
-        "teeTime": "20:00",
-        "teeTimeUTC": "2026-08-28T18:00:00.000Z",
+        "teeTime": "20:55",
+        "teeTimeUTC": "2026-08-29T18:55:00.000Z",
         "entityId": "viktor-hovland"
       },
       {
         "name": "Kristoffer Reitan",
-        "teeTime": "17:12",
-        "teeTimeUTC": "2026-08-28T15:12:00.000Z",
+        "teeTime": "18:07",
+        "teeTimeUTC": "2026-08-29T16:07:00.000Z",
         "entityId": "kristoffer-reitan"
       }
     ],
@@ -1906,21 +1906,21 @@
     "featuredGroups": [
       {
         "player": "Viktor Hovland",
-        "teeTime": "20:00",
+        "teeTime": "20:55",
         "groupmates": [
           {
-            "name": "Min Woo Lee",
-            "teeTime": "20:00"
+            "name": "Ryan Gerard",
+            "teeTime": "20:55"
           }
         ]
       },
       {
         "player": "Kristoffer Reitan",
-        "teeTime": "17:12",
+        "teeTime": "18:07",
         "groupmates": [
           {
-            "name": "Russell Henley",
-            "teeTime": "17:12"
+            "name": "Hideki Matsuyama",
+            "teeTime": "18:07"
           }
         ]
       }
@@ -1955,7 +1955,7 @@
         "entityId": "andreas-halvorsen"
       }
     ],
-    "totalPlayers": 77,
+    "totalPlayers": 156,
     "link": null,
     "status": null,
     "featuredGroups": [],
@@ -2249,36 +2249,6 @@
   },
   {
     "sport": "football",
-    "tournament": "Premier League",
-    "title": "Nottingham Forest at Liverpool",
-    "time": "2026-08-29T11:30:00.000Z",
-    "endTime": null,
-    "venue": "Anfield",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/liverpool-nottingham-forest-1914734",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Liverpool",
-    "awayTeam": "Nottingham Forest",
-    "isFavorite": true,
-    "round": null,
-    "id": "b8b83c3c7afe",
-    "homeTeamEntityId": "liverpool",
-    "awayTeamEntityId": "nottingham-forest"
-  },
-  {
-    "sport": "football",
     "tournament": "Bundesliga",
     "title": "Bayer Leverkusen at SV Elversberg",
     "time": "2026-08-29T13:30:00Z",
@@ -2567,9 +2537,9 @@
     "norwegian": false,
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/bournemouth-everton-1914728",
-        "urlKind": "deep"
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -2597,9 +2567,9 @@
     "norwegian": false,
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/coventry-hull-1914731",
-        "urlKind": "deep"
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -3285,7 +3255,7 @@
     "isFavorite": true,
     "round": null,
     "id": "96f279005eed",
-    "homeTeamEntityId": "real-madrid-2",
+    "homeTeamEntityId": "real-madrid",
     "awayTeamEntityId": "malaga"
   },
   {
@@ -3423,6 +3393,55 @@
   },
   {
     "sport": "football",
+    "tournament": "Serie A",
+    "title": "Como at Napoli",
+    "time": "2026-08-30T16:30:00Z",
+    "endTime": null,
+    "venue": "Stadio Diego Armando Maradona, Napoli",
+    "norwegian": false,
+    "homeTeam": "Napoli",
+    "awayTeam": "Como",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T13:55:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
+      "https://sport.quotidiano.net/calcio/seriea/serie-a-seconda-giornata-probabili-formazioni-orari-e-dove-vedere-le-gare-4a0eea38",
+      "https://www.tvkampen.com/sport/fotball/serie-a-2026-27-pa-norsk-tv-inter-forsvarer-tronen-rivalene-star-i-ko/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "lega-serie-a",
+        "url": "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
+        "basis": "primary",
+        "retrievedAt": "2026-08-29T13:55:00Z",
+        "note": "Lega Serie A offisielle kalender for 2. giornata, gjengitt av Sky Sport Italia + Quotidiano Sportivo (to uavhengige kilder enige)"
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T13:55:00Z",
+        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27 (VGs egen kunngjøring; tvkampen.com/tvtilbud.no bekrefter)"
+      }
+    },
+    "summary": "Serie A 2. serierunde: Napoli–Como. Avspark søndag 30. august 18:30 CEST (16:30 UTC) på Stadio Maradona.\n\nNorsk visning: VG+ Sport, som har de norske Serie A-rettighetene 2026/27.",
+    "homeTeamEntityId": "napoli",
+    "awayTeamEntityId": "como",
+    "id": "92ec47c5c82a"
+  },
+  {
+    "sport": "football",
     "tournament": "Eliteserien",
     "title": "Lillestrøm – Fredrikstad",
     "time": "2026-08-30T17:15:00.000Z",
@@ -3483,6 +3502,104 @@
   },
   {
     "sport": "football",
+    "tournament": "Serie A",
+    "title": "Inter at Cagliari",
+    "time": "2026-08-30T18:45:00Z",
+    "endTime": null,
+    "venue": "Unipol Domus, Cagliari",
+    "norwegian": false,
+    "homeTeam": "Cagliari",
+    "awayTeam": "Inter",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T13:55:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
+      "https://sport.quotidiano.net/calcio/seriea/serie-a-seconda-giornata-probabili-formazioni-orari-e-dove-vedere-le-gare-4a0eea38",
+      "https://www.tvkampen.com/sport/fotball/serie-a-2026-27-pa-norsk-tv-inter-forsvarer-tronen-rivalene-star-i-ko/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "lega-serie-a",
+        "url": "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
+        "basis": "primary",
+        "retrievedAt": "2026-08-29T13:55:00Z",
+        "note": "Lega Serie A offisielle kalender for 2. giornata, gjengitt av Sky Sport Italia + Quotidiano Sportivo (to uavhengige kilder enige)"
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T13:55:00Z",
+        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27 (VGs egen kunngjøring; tvkampen.com/tvtilbud.no bekrefter)"
+      }
+    },
+    "summary": "Serie A 2. serierunde: Cagliari–Inter. Avspark søndag 30. august 20:45 CEST (18:45 UTC) på Unipol Domus.\n\nNorsk visning: VG+ Sport.",
+    "homeTeamEntityId": "cagliari",
+    "awayTeamEntityId": "internazionale",
+    "id": "f27176ad5683"
+  },
+  {
+    "sport": "football",
+    "tournament": "Serie A",
+    "title": "Genoa at Lazio",
+    "time": "2026-08-30T18:45:00Z",
+    "endTime": null,
+    "venue": "Stadio Olimpico, Roma",
+    "norwegian": false,
+    "homeTeam": "Lazio",
+    "awayTeam": "Genoa",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T13:55:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
+      "https://sport.quotidiano.net/calcio/seriea/serie-a-seconda-giornata-probabili-formazioni-orari-e-dove-vedere-le-gare-4a0eea38",
+      "https://www.tvkampen.com/sport/fotball/serie-a-2026-27-pa-norsk-tv-inter-forsvarer-tronen-rivalene-star-i-ko/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "lega-serie-a",
+        "url": "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
+        "basis": "primary",
+        "retrievedAt": "2026-08-29T13:55:00Z",
+        "note": "Lega Serie A offisielle kalender for 2. giornata, gjengitt av Sky Sport Italia + Quotidiano Sportivo (to uavhengige kilder enige)"
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T13:55:00Z",
+        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27 (VGs egen kunngjøring; tvkampen.com/tvtilbud.no bekrefter)"
+      }
+    },
+    "summary": "Serie A 2. serierunde: Lazio–Genoa. Avspark søndag 30. august 20:45 CEST (18:45 UTC) på Stadio Olimpico.\n\nNorsk visning: VG+ Sport.",
+    "homeTeamEntityId": "lazio",
+    "awayTeamEntityId": "genoa",
+    "id": "bc0208dd9bc8"
+  },
+  {
+    "sport": "football",
     "tournament": "La Liga",
     "title": "Athletic Club at Celta Vigo",
     "time": "2026-08-30T19:30:00.000Z",
@@ -3513,6 +3630,55 @@
   },
   {
     "sport": "football",
+    "tournament": "Serie A",
+    "title": "Roma at Lecce",
+    "time": "2026-08-31T16:30:00Z",
+    "endTime": null,
+    "venue": "Stadio Via del Mare, Lecce",
+    "norwegian": false,
+    "homeTeam": "Lecce",
+    "awayTeam": "Roma",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T13:55:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
+      "https://sport.quotidiano.net/calcio/seriea/serie-a-seconda-giornata-probabili-formazioni-orari-e-dove-vedere-le-gare-4a0eea38",
+      "https://www.tvkampen.com/sport/fotball/serie-a-2026-27-pa-norsk-tv-inter-forsvarer-tronen-rivalene-star-i-ko/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "lega-serie-a",
+        "url": "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
+        "basis": "primary",
+        "retrievedAt": "2026-08-29T13:55:00Z",
+        "note": "Lega Serie A offisielle kalender for 2. giornata, gjengitt av Sky Sport Italia + Quotidiano Sportivo (to uavhengige kilder enige)"
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T13:55:00Z",
+        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27 (VGs egen kunngjøring; tvkampen.com/tvtilbud.no bekrefter)"
+      }
+    },
+    "summary": "Serie A 2. serierunde: Lecce–Roma. Avspark mandag 31. august 18:30 CEST (16:30 UTC) på Stadio Via del Mare.\n\nNorsk visning: VG+ Sport.",
+    "homeTeamEntityId": "lecce",
+    "awayTeamEntityId": "as-roma",
+    "id": "c91ba4b7c1fa"
+  },
+  {
+    "sport": "football",
     "tournament": "La Liga",
     "title": "Getafe at Osasuna",
     "time": "2026-08-31T17:30:00.000Z",
@@ -3540,6 +3706,55 @@
     "id": "564331e0e42f",
     "homeTeamEntityId": "osasuna",
     "awayTeamEntityId": "getafe"
+  },
+  {
+    "sport": "football",
+    "tournament": "Serie A",
+    "title": "Bologna at Atalanta",
+    "time": "2026-08-31T18:45:00Z",
+    "endTime": null,
+    "venue": "Gewiss Stadium, Bergamo",
+    "norwegian": false,
+    "homeTeam": "Atalanta",
+    "awayTeam": "Bologna",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T13:55:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
+      "https://sport.quotidiano.net/calcio/seriea/serie-a-seconda-giornata-probabili-formazioni-orari-e-dove-vedere-le-gare-4a0eea38",
+      "https://www.tvkampen.com/sport/fotball/serie-a-2026-27-pa-norsk-tv-inter-forsvarer-tronen-rivalene-star-i-ko/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "lega-serie-a",
+        "url": "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
+        "basis": "primary",
+        "retrievedAt": "2026-08-29T13:55:00Z",
+        "note": "Lega Serie A offisielle kalender for 2. giornata, gjengitt av Sky Sport Italia + Quotidiano Sportivo (to uavhengige kilder enige)"
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T13:55:00Z",
+        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27 (VGs egen kunngjøring; tvkampen.com/tvtilbud.no bekrefter)"
+      }
+    },
+    "summary": "Serie A 2. serierunde: Atalanta–Bologna avslutter runden. Avspark mandag 31. august 20:45 CEST (18:45 UTC) på Gewiss Stadium.\n\nNorsk visning: VG+ Sport.",
+    "homeTeamEntityId": "atalanta",
+    "awayTeamEntityId": "bologna",
+    "id": "cbb5f7b7e24c"
   },
   {
     "sport": "football",
@@ -3965,6 +4180,36 @@
     "awayTeamEntityId": "liverpool"
   },
   {
+    "sport": "football",
+    "tournament": "La Liga",
+    "title": "Real Madrid at Real Betis",
+    "time": "2026-09-04T19:00:00.000Z",
+    "endTime": null,
+    "venue": "Estadio La Cartuja",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Real Betis",
+    "awayTeam": "Real Madrid",
+    "isFavorite": true,
+    "round": null,
+    "id": "7042cb68df87",
+    "homeTeamEntityId": "real-betis",
+    "awayTeamEntityId": "real-madrid"
+  },
+  {
     "sport": "f1",
     "tournament": "Formula 1 World Championship 2026",
     "title": "Italiensk Grand Prix – kvalifisering",
@@ -4081,6 +4326,55 @@
     "summary": "Kolstad åpner Champions League-sesongen borte mot storlaget SC Magdeburg i gruppe F.\n\nGruppe F: SC Magdeburg (Tyskland), Industria Kielce (Polen), Kolstad (Norge) og HC Kriens-Luzern (Sveits). Det nye 2026/27-formatet har 24 lag i seks grupper.\n\nAvspark onsdag 9. september kl. 20.45 CEST (18.45 UTC) i Magdeburg. Norsk visning ventes på Viaplay (EHF CL-holder i Norden) — bekreftes av verify.",
     "awayTeamEntityId": "kolstad-handball",
     "id": "82383c9de552"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Champions League 2026/27",
+    "title": "Bodø/Glimt at Bayern München",
+    "time": "2026-09-10T19:00:00Z",
+    "endTime": null,
+    "venue": "Allianz Arena, München",
+    "norwegian": true,
+    "homeTeam": "Bayern München",
+    "awayTeam": "Bodø/Glimt",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-29T13:55:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
+      "https://fcbayern.com/en/news/2026/08/who-fc-bayern-will-face-in-the-league-phase-of-the-champions-league",
+      "https://www.fotmob.com/matches/bodoglimt-vs-bayern-munchen/2qvz54"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.fotmob.com/matches/bodoglimt-vs-bayern-munchen/2qvz54",
+        "basis": "primary",
+        "retrievedAt": "2026-08-29T13:55:00Z",
+        "note": "UEFA-berammet ligaspill-MD1; tid lest via Fotmob-kampside (19:00 UTC) + fcbayern.com ligaspill-oppsett, dato bekreftet mot Wikipedia league phase"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-29T13:55:00Z",
+        "note": "TV 2 har eksklusive norske Champions League-rettigheter t.o.m. 2031 (norwegian-rights [solid])"
+      }
+    },
+    "summary": "Bodø/Glimt åpner Champions League-ligaspillet BORTE mot Bayern München — norsk seriemester mot tysk storklubb på Allianz Arena. Avspark torsdag 10. september 21:00 CEST (19:00 UTC), ligaspillets runde 1 (MD1).\n\nNorsk visning: TV 2 Play, som har de eksklusive norske Champions League-rettighetene.",
+    "homeTeamEntityId": "bayern-munich",
+    "awayTeamEntityId": "bodo-glimt",
+    "id": "2fefa87a831c"
   },
   {
     "sport": "athletics",
@@ -4365,281 +4659,5 @@
     "homeTeamEntityId": "norge",
     "awayTeamEntityId": "portugal",
     "id": "c00f77a89225"
-  },
-  {
-    "sport": "football",
-    "tournament": "Serie A",
-    "title": "Como at Napoli",
-    "time": "2026-08-30T16:30:00Z",
-    "endTime": null,
-    "venue": "Stadio Diego Armando Maradona, Napoli",
-    "norwegian": false,
-    "homeTeam": "Napoli",
-    "awayTeam": "Como",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://tv.vg.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-29T13:55:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
-      "https://sport.quotidiano.net/calcio/seriea/serie-a-seconda-giornata-probabili-formazioni-orari-e-dove-vedere-le-gare-4a0eea38",
-      "https://www.tvkampen.com/sport/fotball/serie-a-2026-27-pa-norsk-tv-inter-forsvarer-tronen-rivalene-star-i-ko/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "lega-serie-a",
-        "url": "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
-        "basis": "primary",
-        "retrievedAt": "2026-08-29T13:55:00Z",
-        "note": "Lega Serie A offisielle kalender for 2. giornata, gjengitt av Sky Sport Italia + Quotidiano Sportivo (to uavhengige kilder enige)"
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://tv.vg.no",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T13:55:00Z",
-        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27 (VGs egen kunngjøring; tvkampen.com/tvtilbud.no bekrefter)"
-      }
-    },
-    "summary": "Serie A 2. serierunde: Napoli–Como. Avspark søndag 30. august 18:30 CEST (16:30 UTC) på Stadio Maradona.\n\nNorsk visning: VG+ Sport, som har de norske Serie A-rettighetene 2026/27."
-  },
-  {
-    "sport": "football",
-    "tournament": "Serie A",
-    "title": "Inter at Cagliari",
-    "time": "2026-08-30T18:45:00Z",
-    "endTime": null,
-    "venue": "Unipol Domus, Cagliari",
-    "norwegian": false,
-    "homeTeam": "Cagliari",
-    "awayTeam": "Inter",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://tv.vg.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-29T13:55:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
-      "https://sport.quotidiano.net/calcio/seriea/serie-a-seconda-giornata-probabili-formazioni-orari-e-dove-vedere-le-gare-4a0eea38",
-      "https://www.tvkampen.com/sport/fotball/serie-a-2026-27-pa-norsk-tv-inter-forsvarer-tronen-rivalene-star-i-ko/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "lega-serie-a",
-        "url": "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
-        "basis": "primary",
-        "retrievedAt": "2026-08-29T13:55:00Z",
-        "note": "Lega Serie A offisielle kalender for 2. giornata, gjengitt av Sky Sport Italia + Quotidiano Sportivo (to uavhengige kilder enige)"
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://tv.vg.no",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T13:55:00Z",
-        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27 (VGs egen kunngjøring; tvkampen.com/tvtilbud.no bekrefter)"
-      }
-    },
-    "summary": "Serie A 2. serierunde: Cagliari–Inter. Avspark søndag 30. august 20:45 CEST (18:45 UTC) på Unipol Domus.\n\nNorsk visning: VG+ Sport."
-  },
-  {
-    "sport": "football",
-    "tournament": "Serie A",
-    "title": "Genoa at Lazio",
-    "time": "2026-08-30T18:45:00Z",
-    "endTime": null,
-    "venue": "Stadio Olimpico, Roma",
-    "norwegian": false,
-    "homeTeam": "Lazio",
-    "awayTeam": "Genoa",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://tv.vg.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-29T13:55:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
-      "https://sport.quotidiano.net/calcio/seriea/serie-a-seconda-giornata-probabili-formazioni-orari-e-dove-vedere-le-gare-4a0eea38",
-      "https://www.tvkampen.com/sport/fotball/serie-a-2026-27-pa-norsk-tv-inter-forsvarer-tronen-rivalene-star-i-ko/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "lega-serie-a",
-        "url": "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
-        "basis": "primary",
-        "retrievedAt": "2026-08-29T13:55:00Z",
-        "note": "Lega Serie A offisielle kalender for 2. giornata, gjengitt av Sky Sport Italia + Quotidiano Sportivo (to uavhengige kilder enige)"
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://tv.vg.no",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T13:55:00Z",
-        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27 (VGs egen kunngjøring; tvkampen.com/tvtilbud.no bekrefter)"
-      }
-    },
-    "summary": "Serie A 2. serierunde: Lazio–Genoa. Avspark søndag 30. august 20:45 CEST (18:45 UTC) på Stadio Olimpico.\n\nNorsk visning: VG+ Sport."
-  },
-  {
-    "sport": "football",
-    "tournament": "Serie A",
-    "title": "Roma at Lecce",
-    "time": "2026-08-31T16:30:00Z",
-    "endTime": null,
-    "venue": "Stadio Via del Mare, Lecce",
-    "norwegian": false,
-    "homeTeam": "Lecce",
-    "awayTeam": "Roma",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://tv.vg.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-29T13:55:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
-      "https://sport.quotidiano.net/calcio/seriea/serie-a-seconda-giornata-probabili-formazioni-orari-e-dove-vedere-le-gare-4a0eea38",
-      "https://www.tvkampen.com/sport/fotball/serie-a-2026-27-pa-norsk-tv-inter-forsvarer-tronen-rivalene-star-i-ko/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "lega-serie-a",
-        "url": "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
-        "basis": "primary",
-        "retrievedAt": "2026-08-29T13:55:00Z",
-        "note": "Lega Serie A offisielle kalender for 2. giornata, gjengitt av Sky Sport Italia + Quotidiano Sportivo (to uavhengige kilder enige)"
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://tv.vg.no",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T13:55:00Z",
-        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27 (VGs egen kunngjøring; tvkampen.com/tvtilbud.no bekrefter)"
-      }
-    },
-    "summary": "Serie A 2. serierunde: Lecce–Roma. Avspark mandag 31. august 18:30 CEST (16:30 UTC) på Stadio Via del Mare.\n\nNorsk visning: VG+ Sport."
-  },
-  {
-    "sport": "football",
-    "tournament": "Serie A",
-    "title": "Bologna at Atalanta",
-    "time": "2026-08-31T18:45:00Z",
-    "endTime": null,
-    "venue": "Gewiss Stadium, Bergamo",
-    "norwegian": false,
-    "homeTeam": "Atalanta",
-    "awayTeam": "Bologna",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://tv.vg.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-29T13:55:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
-      "https://sport.quotidiano.net/calcio/seriea/serie-a-seconda-giornata-probabili-formazioni-orari-e-dove-vedere-le-gare-4a0eea38",
-      "https://www.tvkampen.com/sport/fotball/serie-a-2026-27-pa-norsk-tv-inter-forsvarer-tronen-rivalene-star-i-ko/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "lega-serie-a",
-        "url": "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
-        "basis": "primary",
-        "retrievedAt": "2026-08-29T13:55:00Z",
-        "note": "Lega Serie A offisielle kalender for 2. giornata, gjengitt av Sky Sport Italia + Quotidiano Sportivo (to uavhengige kilder enige)"
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://tv.vg.no",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T13:55:00Z",
-        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27 (VGs egen kunngjøring; tvkampen.com/tvtilbud.no bekrefter)"
-      }
-    },
-    "summary": "Serie A 2. serierunde: Atalanta–Bologna avslutter runden. Avspark mandag 31. august 20:45 CEST (18:45 UTC) på Gewiss Stadium.\n\nNorsk visning: VG+ Sport."
-  },
-  {
-    "sport": "football",
-    "tournament": "UEFA Champions League 2026/27",
-    "title": "Bodø/Glimt at Bayern München",
-    "time": "2026-09-10T19:00:00Z",
-    "endTime": null,
-    "venue": "Allianz Arena, München",
-    "norwegian": true,
-    "homeTeam": "Bayern München",
-    "awayTeam": "Bodø/Glimt",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-29T13:55:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
-      "https://fcbayern.com/en/news/2026/08/who-fc-bayern-will-face-in-the-league-phase-of-the-champions-league",
-      "https://www.fotmob.com/matches/bodoglimt-vs-bayern-munchen/2qvz54"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.fotmob.com/matches/bodoglimt-vs-bayern-munchen/2qvz54",
-        "basis": "primary",
-        "retrievedAt": "2026-08-29T13:55:00Z",
-        "note": "UEFA-berammet ligaspill-MD1; tid lest via Fotmob-kampside (19:00 UTC) + fcbayern.com ligaspill-oppsett, dato bekreftet mot Wikipedia league phase"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T13:55:00Z",
-        "note": "TV 2 har eksklusive norske Champions League-rettigheter t.o.m. 2031 (norwegian-rights [solid])"
-      }
-    },
-    "summary": "Bodø/Glimt åpner Champions League-ligaspillet BORTE mot Bayern München — norsk seriemester mot tysk storklubb på Allianz Arena. Avspark torsdag 10. september 21:00 CEST (19:00 UTC), ligaspillets runde 1 (MD1).\n\nNorsk visning: TV 2 Play, som har de eksklusive norske Champions League-rettighetene."
   }
 ]
