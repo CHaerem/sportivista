@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-30T10:15:59.488Z",
+  "generatedAt": "2026-08-30T15:10:26.425Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
-    "amendRate": "green",
+    "amendRate": "red",
     "silentStops": "green",
     "participantStatus": "green",
     "contracts": "green"
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 7.26,
+    "oldestGapAgeDays": 7.47,
     "escalatable": 2,
     "catalogMatched": 4,
     "auditedAt": "2026-08-30T09:46:40Z",
@@ -35,40 +35,40 @@
       {
         "interest": "Serie A 2026/27 — inneværende runde(r): giornata 2-hale (30.–31. aug) + giornata 3 (søn. 6. sep)",
         "severity": "high",
-        "ageDays": 2.12,
+        "ageDays": 2.33,
         "recurrences": 2,
         "catalogMatched": true
       },
       {
         "interest": "UEFA Champions League 2026/27 — ligaspill MD1 (8.–10. sep), katalog-klubbene + norske Viking",
         "severity": "high",
-        "ageDays": 4.26,
+        "ageDays": 4.47,
         "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
         "severity": "high",
-        "ageDays": 7.26,
+        "ageDays": 7.47,
         "recurrences": 6,
         "catalogMatched": true
       },
       {
         "interest": "Brann + Lillestrøm — europacup-ligaspill (Europa League / Conference League) høsten 2026",
         "severity": "medium",
-        "ageDays": 0.02,
+        "ageDays": 0.22,
         "recurrences": 0,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0,
-    "nearTermChecked": 8,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-08-29T11:50:00Z",
+    "nearTermRate": 0.43,
+    "nearTermChecked": 7,
+    "nearTermAmended": 3,
+    "verifyRunAt": "2026-08-30T10:38:00Z",
     "windowRate": 0,
-    "windowChecks": 80,
+    "windowChecks": 86,
     "windowAmendments": 0,
     "windowCorrections": 5,
     "byDay": [
@@ -162,28 +162,37 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-08-30",
+        "checks": 6,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-30T10:15:54.481Z",
+    "buildCheckedAt": "2026-08-30T15:10:20.696Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-30T08:47:30.927Z",
-    "manifestAgeHours": 1.47,
+    "manifestGeneratedAt": "2026-08-30T10:16:01.036Z",
+    "manifestAgeHours": 4.91,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-08-29T11:50:00Z",
-    "verifyAgeHours": 22.43,
-    "corrections": 0,
+    "checkedAt": "2026-08-30T10:38:00Z",
+    "verifyAgeHours": 4.54,
+    "corrections": 1,
     "unresolved": 0,
-    "signals": []
+    "signals": [
+      "Vuelta a España WP-95 eksistenssjekk: etappe 9 (30. aug) paagaar; alle 5 nordmenn i Uno-X (Johannessen, Leknessund, Tjoetta, Dversnes, Tiller) fortsatt aktiv…"
+    ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-08-30T10:15:59.487Z"
+    "generatedAt": "2026-08-30T15:10:26.424Z"
   }
 }
