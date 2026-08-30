@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T19:01:57.465Z",
+  "generatedAt": "2026-08-30T22:22:49.385Z",
   "contracts": [
     {
       "id": "f1:world-championship",
@@ -93,8 +93,8 @@
       ],
       "note": "Tilnærmet ukentlige turneringer januar–november; min 1 innen 14 d.",
       "inSeason": true,
-      "upcoming": 1,
-      "status": "met"
+      "upcoming": 0,
+      "status": "breached"
     },
     {
       "id": "golf:pga-tour",
@@ -118,8 +118,8 @@
       ],
       "note": "Tilnærmet ukentlige turneringer januar–november (FedExCup + høstserien); min 1 innen 14 d.",
       "inSeason": true,
-      "upcoming": 1,
-      "status": "met"
+      "upcoming": 0,
+      "status": "breached"
     },
     {
       "id": "tennis:tour",
@@ -147,6 +147,9 @@
       "status": "met"
     }
   ],
-  "breached": [],
+  "breached": [
+    "golf:dp-world-tour",
+    "golf:pga-tour"
+  ],
   "note": "WP-243: dekningskontrakten per konkurranse — mekanisk måling av løftet i authority.json (contract-blokkene) mot tavla. Brudd triageres av coverage-critic/research via coverage-gaps.json; contracts-porten i port-report.json ruller dommen inn i G2-målingen."
 }

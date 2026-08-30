@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-30T19:01:58.839Z",
-  "gapCount": 6,
+  "generatedAt": "2026-08-30T22:22:50.478Z",
+  "gapCount": 8,
   "anomalyCount": 0,
   "gaps": [
     {
@@ -11,8 +11,8 @@
       "headline": "Knutsen om kongehyllesten før kamp: – Klump i halsen",
       "link": "https://www.nrk.no/nordland/hedret-kongen-for-kampen_-sa-herjet-helmersen-mot-rosenborg-1.18008085",
       "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-30T19:01:57.723Z"
+      "matchCount": 2,
+      "detectedAt": "2026-08-30T22:22:49.589Z"
     },
     {
       "kind": "entity",
@@ -22,8 +22,8 @@
       "headline": "Drømmescoringer da Molde slo Vålerenga i sjelden målbonanza",
       "link": "https://www.nrk.no/sport/drommescoringer-da-molde-slo-valerenga-i-sjelden-malbonanza-1.18008298",
       "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-08-30T19:01:57.723Z"
+      "matchCount": 2,
+      "detectedAt": "2026-08-30T22:22:49.589Z"
     },
     {
       "kind": "tracked-claim",
@@ -35,7 +35,7 @@
       "claimedDate": "2026-08-31T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-30T19:01:58.643Z"
+      "detectedAt": "2026-08-30T22:22:50.334Z"
     },
     {
       "kind": "tracked-claim",
@@ -47,7 +47,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-30T19:01:58.643Z"
+      "detectedAt": "2026-08-30T22:22:50.334Z"
     },
     {
       "kind": "tracked-claim",
@@ -59,7 +59,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-30T19:01:58.643Z"
+      "detectedAt": "2026-08-30T22:22:50.334Z"
     },
     {
       "kind": "tracked-claim",
@@ -71,7 +71,27 @@
       "claimedDate": "2026-08-30T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "elkjop-ligaen-2026-27",
-      "detectedAt": "2026-08-30T19:01:58.643Z"
+      "detectedAt": "2026-08-30T22:22:50.334Z"
+    },
+    {
+      "kind": "contract-breach",
+      "type": "missing",
+      "interest": "DP World Tour",
+      "sport": "golf",
+      "severity": "high",
+      "imminent": true,
+      "detail": "Dekningskontrakt brutt: 0 av minst 1 ventede events innen 14 dager for DP World Tour (i sesong). Gå til den navngitte autoriteten (european-tour) og fyll tavla.",
+      "detectedAt": "2026-08-30T22:22:50.384Z"
+    },
+    {
+      "kind": "contract-breach",
+      "type": "missing",
+      "interest": "PGA Tour (inkl. FedExCup)",
+      "sport": "golf",
+      "severity": "high",
+      "imminent": true,
+      "detail": "Dekningskontrakt brutt: 0 av minst 1 ventede events innen 14 dager for PGA Tour (inkl. FedExCup) (i sesong). Gå til den navngitte autoriteten (pgatour) og fyll tavla.",
+      "detectedAt": "2026-08-30T22:22:50.384Z"
     }
   ],
   "anomalies": [],

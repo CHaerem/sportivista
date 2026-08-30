@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-30T19:01:57.465Z",
+  "generatedAt": "2026-08-30T22:22:49.386Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
     "amendRate": "red",
     "silentStops": "green",
     "participantStatus": "green",
-    "contracts": "green"
+    "contracts": "red"
   },
   "basis": {
     "coverageAudit": true,
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 7.63,
+    "oldestGapAgeDays": 7.77,
     "escalatable": 2,
     "catalogMatched": 4,
     "auditedAt": "2026-08-30T09:46:40Z",
@@ -35,28 +35,28 @@
       {
         "interest": "Serie A 2026/27 — inneværende runde(r): giornata 2-hale (30.–31. aug) + giornata 3 (søn. 6. sep)",
         "severity": "high",
-        "ageDays": 2.49,
+        "ageDays": 2.63,
         "recurrences": 2,
         "catalogMatched": true
       },
       {
         "interest": "UEFA Champions League 2026/27 — ligaspill MD1 (8.–10. sep), katalog-klubbene + norske Viking",
         "severity": "high",
-        "ageDays": 4.63,
+        "ageDays": 4.77,
         "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
         "severity": "high",
-        "ageDays": 7.63,
+        "ageDays": 7.77,
         "recurrences": 6,
         "catalogMatched": true
       },
       {
         "interest": "Brann + Lillestrøm — europacup-ligaspill (Europa League / Conference League) høsten 2026",
         "severity": "medium",
-        "ageDays": 0.39,
+        "ageDays": 0.53,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -174,15 +174,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-30T19:01:51.866Z",
+    "buildCheckedAt": "2026-08-30T22:22:43.342Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-30T15:10:28.009Z",
-    "manifestAgeHours": 3.86,
+    "manifestGeneratedAt": "2026-08-30T19:01:59.056Z",
+    "manifestAgeHours": 3.35,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-08-30T10:38:00Z",
-    "verifyAgeHours": 8.4,
+    "verifyAgeHours": 11.75,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
@@ -192,7 +192,22 @@
   "contracts": {
     "total": 6,
     "inSeason": 6,
-    "breached": [],
-    "generatedAt": "2026-08-30T19:01:57.465Z"
+    "breached": [
+      {
+        "id": "golf:dp-world-tour",
+        "name": "DP World Tour",
+        "upcoming": 0,
+        "minUpcoming": 1,
+        "horizonDays": 14
+      },
+      {
+        "id": "golf:pga-tour",
+        "name": "PGA Tour (inkl. FedExCup)",
+        "upcoming": 0,
+        "minUpcoming": 1,
+        "horizonDays": 14
+      }
+    ],
+    "generatedAt": "2026-08-30T22:22:49.385Z"
   }
 }
