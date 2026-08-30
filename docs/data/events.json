@@ -143,9 +143,9 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "VG+ Sport",
-        "url": "https://tv.vg.no/video/406781/tromso-brighton",
-        "urlKind": "deep"
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
       }
     ],
     "source": "ai-research",
@@ -5015,6 +5015,97 @@
   },
   {
     "sport": "f1",
+    "tournament": "Formula 1 World Championship 2026",
+    "title": "Aserbajdsjan Grand Prix – kvalifisering",
+    "time": "2026-09-25T12:00:00Z",
+    "endTime": "2026-09-25T13:00:00Z",
+    "venue": "Baku City Circuit, Baku",
+    "norwegian": false,
+    "participants": [],
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-30T03:10:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.formula1.com/en/racing/2026/azerbaijan",
+      "https://www.bakucitycircuit.com/schedule"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "formula1",
+        "url": "https://www.formula1.com/en/racing/2026/azerbaijan",
+        "basis": "primary",
+        "retrievedAt": "2026-08-30T03:10:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-08-30T03:10:00Z"
+      }
+    },
+    "summary": "Kvalifiseringen (Q1–Q3) avgjør startoppstillingen for lørdagens race (lør. 26. sep kl. 15.00 lokal / 11.00 UTC).\n\nUvanlig helg: Aserbajdsjan GP kjøres i år på LØRDAG, ikke søndag, for å unngå en nasjonal sørgedag — kvalifisering fredag 25. sep kl. 16.00 Baku-tid (12.00 UTC / 14.00 CEST), race lørdag.\n\nTid bekreftet mot Baku City Circuits egen timeplan + formula1.com (arrangøren), ikke ESPN-feeden som feildaterer F1-helger (source-quirks). Norsk visning Viaplay/V Sport.",
+    "id": "4960fcd05c49"
+  },
+  {
+    "sport": "tennis",
+    "tournament": "Laver Cup",
+    "title": "Laver Cup 2026 (London)",
+    "time": "2026-09-25T12:00:00Z",
+    "endTime": "2026-09-27T18:00:00Z",
+    "venue": "The O2, London",
+    "norwegian": false,
+    "participants": [
+      {
+        "name": "Team Europe"
+      },
+      {
+        "name": "Team World"
+      }
+    ],
+    "norwegianPlayers": [
+      {
+        "name": "Casper Ruud",
+        "entityId": "casper-ruud"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "Max",
+        "url": "https://www.max.com",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-08-30T03:10:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "catalog.json#tier2.athletes",
+      "https://lavercup.com/news/2026/07/28/casper-ruud-completes-team-europe-lineup-for-laver-cup-london-2026",
+      "https://www.atptour.com/en/news/ruud-laver-cup-2026-announcement"
+    ],
+    "summary": "Laver Cup 2026: Team Europe (kaptein Yannick Noah) mot Team World (kaptein Andre Agassi) på The O2 i London, fre.–søn. 25.–27. september. Casper Ruud er tatt ut som siste mann på Team Europe — hans sjette strake Laver Cup — sammen med bl.a. Carlos Alcaraz og Alexander Zverev.\n\nSpilles over tre dager med fem økter: fredag og lørdag med dag- (13.00 BST) og kveldsøkt (19.00 BST), søndag fra 12.00 BST. Ruuds konkrete kamper settes av kapteinen underveis.\n\nNorsk visning trolig Max (Warner Bros. Discovery har Laver Cup-rettighetene i Europa); verify bekrefter den norske kanalen. Tider fra lavercup.com.",
+    "id": "676b0e70bb78",
+    "provenance": {
+      "time": {
+        "sourceId": "atp-tour",
+        "url": "https://www.atptour.com/en/news/ruud-laver-cup-2026-announcement",
+        "basis": "primary",
+        "retrievedAt": "2026-08-30T03:10:00Z",
+        "note": "migrert mekanisk fra evidence (WP-242)"
+      }
+    }
+  },
+  {
+    "sport": "f1",
     "tournament": "Formula 1 2026 - Race Weekend",
     "title": "Qatar Airways Azerbaijan Grand Prix",
     "time": "2026-09-26T11:00:00.000Z",
@@ -5177,87 +5268,5 @@
     "homeTeamEntityId": "norge",
     "awayTeamEntityId": "portugal",
     "id": "c00f77a89225"
-  },
-  {
-    "sport": "f1",
-    "tournament": "Formula 1 World Championship 2026",
-    "title": "Aserbajdsjan Grand Prix – kvalifisering",
-    "time": "2026-09-25T12:00:00Z",
-    "endTime": "2026-09-25T13:00:00Z",
-    "venue": "Baku City Circuit, Baku",
-    "norwegian": false,
-    "participants": [],
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-30T03:10:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.formula1.com/en/racing/2026/azerbaijan",
-      "https://www.bakucitycircuit.com/schedule"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "formula1",
-        "url": "https://www.formula1.com/en/racing/2026/azerbaijan",
-        "basis": "primary",
-        "retrievedAt": "2026-08-30T03:10:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-08-30T03:10:00Z"
-      }
-    },
-    "summary": "Kvalifiseringen (Q1–Q3) avgjør startoppstillingen for lørdagens race (lør. 26. sep kl. 15.00 lokal / 11.00 UTC).\n\nUvanlig helg: Aserbajdsjan GP kjøres i år på LØRDAG, ikke søndag, for å unngå en nasjonal sørgedag — kvalifisering fredag 25. sep kl. 16.00 Baku-tid (12.00 UTC / 14.00 CEST), race lørdag.\n\nTid bekreftet mot Baku City Circuits egen timeplan + formula1.com (arrangøren), ikke ESPN-feeden som feildaterer F1-helger (source-quirks). Norsk visning Viaplay/V Sport.",
-    "id": "4960fcd05c49"
-  },
-  {
-    "sport": "tennis",
-    "tournament": "Laver Cup",
-    "title": "Laver Cup 2026 (London)",
-    "time": "2026-09-25T12:00:00Z",
-    "endTime": "2026-09-27T18:00:00Z",
-    "venue": "The O2, London",
-    "norwegian": false,
-    "participants": [
-      {
-        "name": "Team Europe"
-      },
-      {
-        "name": "Team World"
-      }
-    ],
-    "norwegianPlayers": [
-      {
-        "name": "Casper Ruud",
-        "entityId": "casper-ruud"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "Max",
-        "url": "https://www.max.com",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-30T03:10:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "catalog.json#tier2.athletes",
-      "https://lavercup.com/news/2026/07/28/casper-ruud-completes-team-europe-lineup-for-laver-cup-london-2026",
-      "https://www.atptour.com/en/news/ruud-laver-cup-2026-announcement"
-    ],
-    "summary": "Laver Cup 2026: Team Europe (kaptein Yannick Noah) mot Team World (kaptein Andre Agassi) på The O2 i London, fre.–søn. 25.–27. september. Casper Ruud er tatt ut som siste mann på Team Europe — hans sjette strake Laver Cup — sammen med bl.a. Carlos Alcaraz og Alexander Zverev.\n\nSpilles over tre dager med fem økter: fredag og lørdag med dag- (13.00 BST) og kveldsøkt (19.00 BST), søndag fra 12.00 BST. Ruuds konkrete kamper settes av kapteinen underveis.\n\nNorsk visning trolig Max (Warner Bros. Discovery har Laver Cup-rettighetene i Europa); verify bekrefter den norske kanalen. Tider fra lavercup.com.",
-    "id": "676b0e70bb78"
   }
 ]
