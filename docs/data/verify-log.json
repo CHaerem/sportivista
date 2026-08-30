@@ -1,17 +1,15 @@
 {
-	"runAt": "2026-08-29T11:50:00Z",
-	"checked": 8,
-	"confirmed": 6,
-	"amended": 0,
-	"removed": 0,
-	"notes": [
-		"Vuelta a España 2026: bekreftet pågående — etappe 8 (29. aug) Puçol→Xeraco, Pogačar i rødt trøye; 22. aug–13. sep-vinduet stemmer (lavuelta.es + Wikipedia). Streaming HBO Max (WBD) korrekt.",
-		"Global Chess League sesong 4: bekreftet 3.–13. sep i Bengaluru, spill starter 3. sep per arrangørens egen side — overstyrer sekundærkilder (revsportz/Telangana) som skrev 5. sep. YouTube-strøm korrekt.",
-		"Diamond League-finalen (Memorial Van Damme): bekreftet to-dagers finale 4.–5. sep, King Baudouin Stadium (brussels.diamondleague.com). NRK-rettigheter [solid] t.o.m. 2029.",
-		"Kongsvinger–Lyn: bekreftet søn 30. aug kl. 17.00 (15.00 UTC), spilles som planlagt — Lyns egen kampinfo. TV 2 Play korrekt for OBOS-ligaen.",
-		"Bundesliga: bundesliga.com (DFL) bekrefter to av kampene på minuttet — Union Berlin–Frankfurt lør 15.30 CEST (13.30 UTC) og Dortmund–HSV lør 18.30 CEST (16.30 UTC). Begge tider stemmer med tavla; Viaplay korrekt rettighetshaver.",
-		"Alle tre 2. Bundesliga-lignende klubbene (SV Elversberg, SC Paderborn, Schalke 04) er BEKREFTET opprykket til Bundesliga 2026/27 (Wikipedia) — kampene er ikke oppdiktede ligamedlemskap.",
-		"IKKE bekreftet enkeltvis (kilden publiserer bare et par tider ennå, neste sett uke fra 7. sep): Leverkusen–Elversberg, Hoffenheim–Köln, Paderborn–Mainz, Gladbach–Leipzig (29. aug) samt Freiburg–Bremen og Augsburg–Schalke (30. aug). Søndagstidene 13.30/15.30 CEST matcher et sekundært søk, men DFL-kilden lister dem ikke ennå. Flagg: én Wikipedia-henting antydet Bayern–Paderborn som åpningskamp 28. aug — motsier Paderborn–Mainz 29. aug — men motstridende kilder gir ikke solid nok grunnlag til å endre/fjerne. Lot dem stå urørt.",
-		"BLAST Open Porto (gruppespill), Bretagne Classic, Tour of Britain, Bergsøy–Kolstad: ikke rukket denne runden (10-min-budsjett brukt på pågående/imminente hovedhendelser)."
-	]
+  "runAt": "2026-08-30T10:38:00Z",
+  "checked": 7,
+  "confirmed": 4,
+  "amended": 3,
+  "removed": 0,
+  "notes": [
+    "Serie A 2. giornata (5 kamper, source: ai-research, manglet verificationStatus): tider bekreftet mot Lega Serie A-kalender (Sky Sport Italia) + Quotidiano Sportivo — Napoli-Como 16.30 UTC, Cagliari-Inter 18.45, Lazio-Genoa 18.45 (30. aug), Lecce-Roma 16.30, Atalanta-Bologna 18.45 (31. aug), alle korrekte.",
+    "AMENDET streaming paa de tre loerdagskampene (Napoli-Como, Cagliari-Inter, Lazio-Genoa): streaming[] listet feilaktig VG TV + Viaplay (tvkampen-aggregator-URLer), mens summary + provenance sier VG+ Sport har de norske Serie A-rettighetene 2026/27. Viaplay holder ikke Serie A. Normalisert til én VG+ Sport-oppfoering (tv.vg.no) — matcher naa prosa, provenance og de to soendagskampene. verificationStatus=amended.",
+    "Italiensk GP kvalifisering (5. sep): 16.00 CEST = 14.00 UTC bekreftet mot formula1.com + racingnews365; confirmed.",
+    "Vuelta a España WP-95 eksistenssjekk: etappe 9 (30. aug) paagaar; alle 5 nordmenn i Uno-X (Johannessen, Leknessund, Tjoetta, Dversnes, Tiller) fortsatt aktive — Leknessund vant etappe 7, Johannessen nr. 2. Pogacar har forlatt loepet, men er ikke paa vaar tavle. Confirmed.",
+    "Oevrig streaming uendret og konsistent: F1-kvalifisering paa Viaplay, Vuelta paa HBO Max, Roma-Lecce/Atalanta-Bologna paa VG+ Sport — alle i tråd med norwegian-rights og eksisterende provenance.",
+    "Ingen removals; ingen nye source-quirks observert (ESPN-F1-quirk ikke relevant her — tid hentet direkte fra formula1.com)."
+  ]
 }
