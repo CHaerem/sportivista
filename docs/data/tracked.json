@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-30T19:19:00Z",
+  "lastUpdated": "2026-08-30T22:45:00Z",
   "lastUpdatedBy": "research-agent",
   "version": 2,
   "leagues": [
@@ -416,6 +416,40 @@
         "https://www.hbomax.com/no/no/sports/pga-tour"
       ],
       "expires": "2026-08-31T23:59:59Z",
+      "priority": "medium"
+    },
+    {
+      "id": "dp-world-tour-2026-autumn",
+      "name": "DP World Tour 2026 – høstsvingen (European Masters / Irish Open / BMW PGA)",
+      "sport": "golf",
+      "reason": "Golf er tier1 (dekkes wholesale) + DP World Tour er en catalog.tier2.tournaments-entitet. LAGT TIL 2026-08-30T22:45Z (research, standard-tier) for å tette en REELL DEKNINGSKONTRAKT-BRUDD (WP-243): coverage-contracts.json meldte golf:dp-world-tour BREACHED (0 av min 1 ventede events innen 14 dager, i sesong) etter at FedExCup-finalen (Tour Championship) ble ferdigspilt 30. aug og tavla stod HELT TOM for golf framover. Tre DP World Tour-turneringer er nå BOARDET som ai-research-events (medium): (1) Omega European Masters 3.–6. sep på Crans-sur-Sierre GC, Crans-Montana, Sveits — den imminente breach-fikseren; (2) Amgen Irish Open 10.–13. sep på Trump International Golf Links, Doonbeg, Irland (irsk vestkyst for første gang); (3) BMW PGA Championship 17.–20. sep på Wentworth, Surrey — DP World Tours prestisjeturnering, en av fem Rolex Series-eventer. Datoer/venue TO-KILDE-bekreftet (europeantour.com egne turneringssider + Sky Sports + Wikipedia 2026 European Tour) OG uavhengig write-time fact-checket (alle fire golf-eventene: confirmed). CONFIDENCE MEDIUM: datoene er bombesikre, men eksakte utslagstider (feltene/tee-tider) er ikke publisert så tidlig → provenance.time.basis=official (turens egen side for datoen), verify/neste kjøring fester utslagstidene. NORSK VISNING = VIAPLAY (V Sport Golf) — bekreftet mot viaplay.no/sport/golf/dp-world-tour + golferen.no + golf.dk (den tiered 2026-rettigheten: WBD tok ordinær PGA Tour, Viaplay beholder DP World Tour + to majors; norwegian-rights Golf-linje bekreftet [solid]). Ingen norsk startliste publisert ennå (Hovland/Reitan/Ventura ikke navngitt — deltakelse ubekreftet). Ids: 3c5fefa1a6c0 (Omega EM), c7a114269ea5 (Irish Open), 98427236457e (BMW PGA).",
+      "addedAt": "2026-08-30T22:45:00Z",
+      "addedBy": "research-agent",
+      "evidence": [
+        "catalog.json#tier1",
+        "catalog.json#tier2.tournaments",
+        "https://www.europeantour.com/dpworld-tour/schedule/2026/",
+        "https://www.skysports.com/golf/news/12230/13428182/dp-world-tour-2026-schedule-tournament-dates-and-venues-for-golf-majors-rolex-series-events-and-more",
+        "https://en.wikipedia.org/wiki/2026_European_Tour",
+        "https://viaplay.no/sport/golf/dp-world-tour"
+      ],
+      "expires": "2026-09-21T23:59:59Z",
+      "priority": "medium"
+    },
+    {
+      "id": "pga-tour-fall-2026",
+      "name": "PGA Tour FedExCup Fall 2026 (Biltmore Championship)",
+      "sport": "golf",
+      "reason": "Golf er tier1 (dekkes wholesale). LAGT TIL 2026-08-30T22:45Z (research, standard-tier). coverage-contracts.json meldte golf:pga-tour BREACHED (0 ventede events innen 14 dager) etter at Tour Championship ble ferdigspilt 30. aug — men her er bruddet et EKTE off-season-opphold, ikke et miss: PGA Tour har en ~2,5-ukers pause mellom FedExCup-finalen (30. aug) og høstseriens åpning, og kontraktmekanikken (14-dagers horisont) kan ikke se sesongstrukturen. NESTE PGA Tour-event er BILTMORE CHAMPIONSHIP 17.–20. sep på The Cliffs at Walnut Cove i Arden, North Carolina — åpningen av den omorganiserte FedExCup Fall-serien (Procore Championship strøket for 2026; Biltmore er områdets første PGA Tour-event på over 80 år, Jack Nicklaus-bane). Boardet som ai-research-event (medium) ~18 dager ut (like utenfor 14-dagers-kontraktvinduet) som next-fixture for golf-tavlas PGA-tilstedeværelse. Datoer/venue bekreftet mot pgatour.coms egen FedExCup Fall-kunngjøring + Explore Asheville + uavhengig write-time fact-check (confirmed). NORSK VISNING = HBO Max (Sport) / Eurosport Norge (WBD) [solid] — Viaplay MISTET PGA Tour for 2026 (WBD Norges egen pressemelding + hbomax.com/no). Høstseriens felt ikke satt ennå → ingen norsk deltakelse bekreftet (Hovland/Reitan/Ventura ikke navngitt). Id: 5ef671930162.",
+      "addedAt": "2026-08-30T22:45:00Z",
+      "addedBy": "research-agent",
+      "evidence": [
+        "catalog.json#tier1",
+        "https://www.pgatour.com/article/news/latest/2025/11/10/biltmore-championship-asheville-north-carolina-new-event-pga-tour-schedule-2026-fedexcup-fall",
+        "https://www.exploreasheville.com/media-center/news-releases/biltmore-championship-asheville-to-debut-2026-during-pga-tours-fedexcup-fall",
+        "https://www.hbomax.com/no/no/sports/pga-tour"
+      ],
+      "expires": "2026-09-21T23:59:59Z",
       "priority": "medium"
     },
     {

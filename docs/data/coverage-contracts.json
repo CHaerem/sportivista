@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T22:22:49.385Z",
+  "generatedAt": "2026-08-31T00:06:09.060Z",
   "contracts": [
     {
       "id": "f1:world-championship",
@@ -44,7 +44,7 @@
       ],
       "note": "Ukentlige runder (8 kamper) april–november; 14 d + min 4 tåler landslagspauser (~10 d) og delte runder.",
       "inSeason": true,
-      "upcoming": 5,
+      "upcoming": 8,
       "status": "met"
     },
     {
@@ -68,7 +68,7 @@
       ],
       "note": "Ukentlige runder (10 kamper) august–mai; 14 d + min 6 tåler landslagspauser og cuphelger.",
       "inSeason": true,
-      "upcoming": 9,
+      "upcoming": 11,
       "status": "met"
     },
     {
@@ -93,8 +93,8 @@
       ],
       "note": "Tilnærmet ukentlige turneringer januar–november; min 1 innen 14 d.",
       "inSeason": true,
-      "upcoming": 0,
-      "status": "breached"
+      "upcoming": 2,
+      "status": "met"
     },
     {
       "id": "golf:pga-tour",
@@ -148,7 +148,6 @@
     }
   ],
   "breached": [
-    "golf:dp-world-tour",
     "golf:pga-tour"
   ],
   "note": "WP-243: dekningskontrakten per konkurranse — mekanisk måling av løftet i authority.json (contract-blokkene) mot tavla. Brudd triageres av coverage-critic/research via coverage-gaps.json; contracts-porten i port-report.json ruller dommen inn i G2-målingen."
