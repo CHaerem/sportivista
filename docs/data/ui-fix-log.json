@@ -1,11 +1,10 @@
 {
-	"runAt": "2026-08-30T13:35:00Z",
-	"action": "none",
-	"pr": null,
-	"fixed": [],
-	"notes": [
-		"visual-qa-log.json verdict is 'pass' with an empty findings[] array (checked 2026-08-30T13:30:43Z) — no high/medium findings to fix, so no PR opened.",
-		"Reviewer notes were all confirmations of clean rendering (no truncation, all channels Norwegian, no overflow at 375/393/900px). The one open question (esports 'NESTE OPP' showing five teams 'pågår nå') is a data sanity check, not a code-fixable UI issue — out of scope for ui-fix.",
-		"No existing ui-autofix PR was open."
-	]
+  "runAt": "2026-08-31T00:00:00Z",
+  "action": "none",
+  "pr": null,
+  "fixed": [],
+  "notes": [
+    "visual-qa-log.json verdict is 'pass' (checkedAt 2026-08-30T13:30:43Z) with an empty findings[] — no high/medium findings to fix, so no branch/PR per the ui-fix 'When to act' rule 1.",
+    "The reviewer's non-blocking observations (esports 'NESTE OPP' listing five 'pågår nå' teams; the 375/393px Assistent-button legibility note) are data/uncertainty items, not code-fixable UI defects — out of scope for ui-fix."
+  ]
 }
