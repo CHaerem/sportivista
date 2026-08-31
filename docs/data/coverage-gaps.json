@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-08-31T18:43:59.575Z",
-  "gapCount": 8,
+  "generatedAt": "2026-08-31T23:06:38.374Z",
+  "gapCount": 10,
   "anomalyCount": 0,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Liverpool",
-      "type": "imminent",
-      "imminent": true,
-      "headline": "Liverpool bekrefter fransk stjernesignering",
-      "link": "https://www.nrk.no/sport/liverpool-bekrefter-fransk-stjernesignering-1.18009223",
-      "feed": "nrk-sport",
-      "matchCount": 4,
-      "detectedAt": "2026-08-31T18:43:58.699Z"
+      "entity": "Barça",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Arsenal trying to lure Julián Álvarez after agreeing deals to sell Martinelli and Jesus",
+      "link": "https://www.theguardian.com/football/2026/aug/31/arsenal-julian-alvarez-gabriel-martinelli-jesus-transfers",
+      "feed": "guardian-football",
+      "matchCount": 1,
+      "detectedAt": "2026-08-31T23:06:37.170Z"
     },
     {
       "kind": "entity",
-      "entity": "1. divisjon",
+      "entity": "Barca",
       "type": "missing",
       "imminent": false,
-      "headline": "Norges Håndballforbund utsetter eliteseriekamper – kolliderte med kong Haralds gravferd",
-      "link": "https://www.nrk.no/sport/norges-handballforbund-utsetter-eliteseriekamper-_-kolliderte-med-kong-haralds-gravferd-1.18009517",
-      "feed": "nrk-sport",
+      "headline": "Arsenal trying to lure Julián Álvarez after agreeing deals to sell Martinelli and Jesus",
+      "link": "https://www.theguardian.com/football/2026/aug/31/arsenal-julian-alvarez-gabriel-martinelli-jesus-transfers",
+      "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-08-31T18:43:58.699Z"
+      "detectedAt": "2026-08-31T23:06:37.170Z"
     },
     {
       "kind": "entity",
@@ -33,8 +33,8 @@
       "headline": "Elversberg and ‘miracle village’ prove that Bundesliga fairytales still exist | Andy Brassell",
       "link": "https://www.theguardian.com/football/2026/aug/31/elversberg-miracle-village-prove-bundesliga-fairytales-still-exist",
       "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-08-31T18:43:58.699Z"
+      "matchCount": 2,
+      "detectedAt": "2026-08-31T23:06:37.170Z"
     },
     {
       "kind": "tracked-claim",
@@ -42,11 +42,47 @@
       "group": "leagues",
       "sport": "football",
       "type": "missing",
+      "imminent": true,
+      "claimedDate": "2026-08-31T00:00:00.000Z",
+      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
+      "trackedId": "bundesliga-2026-27",
+      "detectedAt": "2026-08-31T23:06:38.001Z"
+    },
+    {
+      "kind": "tracked-claim",
+      "entity": "Viktor Hovland",
+      "group": "athletes",
+      "sport": "golf",
+      "type": "missing",
       "imminent": false,
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
-      "trackedId": "bundesliga-2026-27",
-      "detectedAt": "2026-08-31T18:43:59.358Z"
+      "trackedId": "viktor-hovland",
+      "detectedAt": "2026-08-31T23:06:38.001Z"
+    },
+    {
+      "kind": "tracked-claim",
+      "entity": "Kristoffer Reitan",
+      "group": "athletes",
+      "sport": "golf",
+      "type": "missing",
+      "imminent": false,
+      "claimedDate": null,
+      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
+      "trackedId": "kristoffer-reitan",
+      "detectedAt": "2026-08-31T23:06:38.001Z"
+    },
+    {
+      "kind": "tracked-claim",
+      "entity": "Kristoffer Ventura",
+      "group": "athletes",
+      "sport": "golf",
+      "type": "missing",
+      "imminent": false,
+      "claimedDate": null,
+      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
+      "trackedId": "kristoffer-ventura",
+      "detectedAt": "2026-08-31T23:06:38.001Z"
     },
     {
       "kind": "tracked-claim",
@@ -58,7 +94,7 @@
       "claimedDate": "2026-08-31T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-08-31T18:43:59.358Z"
+      "detectedAt": "2026-08-31T23:06:38.001Z"
     },
     {
       "kind": "tracked-claim",
@@ -70,7 +106,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "sondre-guttormsen",
-      "detectedAt": "2026-08-31T18:43:59.358Z"
+      "detectedAt": "2026-08-31T23:06:38.001Z"
     },
     {
       "kind": "tracked-claim",
@@ -82,19 +118,7 @@
       "claimedDate": "2026-09-05T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "henriette-jaeger",
-      "detectedAt": "2026-08-31T18:43:59.358Z"
-    },
-    {
-      "kind": "tracked-claim",
-      "entity": "Elkjøp-ligaen 2026/27 (norsk håndball-toppserie)",
-      "group": "tournaments",
-      "sport": "handball",
-      "type": "missing",
-      "imminent": false,
-      "claimedDate": "2026-09-09T00:00:00.000Z",
-      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
-      "trackedId": "elkjop-ligaen-2026-27",
-      "detectedAt": "2026-08-31T18:43:59.358Z"
+      "detectedAt": "2026-08-31T23:06:38.001Z"
     }
   ],
   "anomalies": [],
