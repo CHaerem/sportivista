@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T09:09:25.792Z",
+  "generatedAt": "2026-08-31T11:20:58.628Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -21,42 +21,35 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 4,
+    "openGaps": 3,
     "bySeverity": {
-      "high": 3,
-      "medium": 1,
+      "high": 1,
+      "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 8.21,
-    "escalatable": 2,
-    "catalogMatched": 4,
-    "auditedAt": "2026-08-30T09:46:40Z",
+    "oldestGapAgeDays": 1.07,
+    "escalatable": 0,
+    "catalogMatched": 3,
+    "auditedAt": "2026-08-31T10:34:00Z",
     "gaps": [
       {
-        "interest": "Serie A 2026/27 — inneværende runde(r): giornata 2-hale (30.–31. aug) + giornata 3 (søn. 6. sep)",
+        "interest": "UEFA Europa League 2026/27 — ligaspill MD1 (16.–17. sep), inkl. norske Lillestrøm",
         "severity": "high",
-        "ageDays": 3.08,
-        "recurrences": 2,
+        "ageDays": 1.07,
+        "recurrences": 1,
         "catalogMatched": true
       },
       {
-        "interest": "UEFA Champions League 2026/27 — ligaspill MD1 (8.–10. sep), katalog-klubbene + norske Viking",
-        "severity": "high",
-        "ageDays": 5.21,
-        "recurrences": 4,
-        "catalogMatched": true
-      },
-      {
-        "interest": "UCI Road-VM Montréal 2026 (sykkel, tier1 + katalog-turnering)",
-        "severity": "high",
-        "ageDays": 8.21,
-        "recurrences": 6,
-        "catalogMatched": true
-      },
-      {
-        "interest": "Brann + Lillestrøm — europacup-ligaspill (Europa League / Conference League) høsten 2026",
+        "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — kommende runder",
         "severity": "medium",
-        "ageDays": 0.97,
+        "ageDays": 0.03,
+        "recurrences": 0,
+        "catalogMatched": true
+      },
+      {
+        "interest": "Presidents Cup 2026 (golf, Medinah, 24.–27. sep)",
+        "severity": "medium",
+        "ageDays": 0.03,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -167,15 +160,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-31T09:09:19.204Z",
+    "buildCheckedAt": "2026-08-31T11:20:53.479Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-31T00:06:10.460Z",
-    "manifestAgeHours": 9.05,
+    "manifestGeneratedAt": "2026-08-31T09:09:27.502Z",
+    "manifestAgeHours": 2.19,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-08-30T10:38:00Z",
-    "verifyAgeHours": 22.52,
+    "verifyAgeHours": 24.72,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
@@ -194,6 +187,6 @@
         "horizonDays": 14
       }
     ],
-    "generatedAt": "2026-08-31T09:09:25.792Z"
+    "generatedAt": "2026-08-31T11:20:58.627Z"
   }
 }
