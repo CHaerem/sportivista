@@ -345,9 +345,13 @@ describe("golf row: the tee time in the meta line (WP-250)", () => {
 	// A fixed instant so the pick order is deterministic: 16:00 Oslo on 27 Aug,
 	// with both tee times later the same Oslo day.
 	const NOW = Date.parse("2026-08-27T14:00:00.000Z");
+	// A four-day window straddling "now", so the row-level tests (which use the real
+	// clock via teeTodayUTC) see a tournament still in progress — never one the
+	// calendar has rolled past, which would render "Ferdig" and drop the tee hint.
+	const DAY = 24 * 3600 * 1000;
 	const tourChampionship = (players) => ({
 		id: "tc", sport: "golf", tournament: "PGA Tour", title: "TOUR Championship",
-		time: "2026-08-27T04:00:00.000Z", endTime: "2026-08-30T20:00:00.000Z",
+		time: new Date(Date.now() - DAY).toISOString(), endTime: new Date(Date.now() + DAY).toISOString(),
 		norwegianPlayers: players,
 		featuredGroups: [{ player: "Viktor Hovland", teeTime: "17:24", groupmates: [{ name: "Robert MacIntyre" }] }],
 		streaming: [{ platform: "HBO Max (Sport)" }],
