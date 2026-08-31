@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-31T11:21:00.155Z",
+  "generatedAt": "2026-08-31T18:43:59.643Z",
   "windowDays": 180,
   "records": {
-    "used": 327,
+    "used": 331,
     "skipped": 0
   },
   "sources": {
@@ -118,19 +118,19 @@
       "reliability": null
     },
     "europeantour.com": {
-      "checks": 3,
-      "agreed": 3,
+      "checks": 4,
+      "agreed": 4,
       "corrections": 0,
       "bySport": {
         "golf": {
-          "checks": 3,
-          "agreed": 3
+          "checks": 4,
+          "agreed": 4
         }
       },
       "byField": {
         "existence": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 2,
+          "agreed": 2
         },
         "time": {
           "checks": 1,
@@ -141,7 +141,7 @@
           "agreed": 1
         }
       },
-      "lastChecked": "2026-08-07T06:45:00Z",
+      "lastChecked": "2026-08-31T11:45:00Z",
       "reliability": null
     },
     "pgatour.com": {
@@ -310,9 +310,9 @@
       "reliability": null
     },
     "en.wikipedia.org": {
-      "checks": 16,
-      "agreed": 16,
-      "corrections": 2,
+      "checks": 17,
+      "agreed": 17,
+      "corrections": 3,
       "bySport": {
         "cycling": {
           "checks": 7,
@@ -337,6 +337,10 @@
         "f1": {
           "checks": 1,
           "agreed": 1
+        },
+        "golf": {
+          "checks": 1,
+          "agreed": 1
         }
       },
       "byField": {
@@ -347,9 +351,13 @@
         "time": {
           "checks": 6,
           "agreed": 6
+        },
+        "streaming": {
+          "checks": 1,
+          "agreed": 1
         }
       },
-      "lastChecked": "2026-08-29T11:50:00Z",
+      "lastChecked": "2026-08-31T11:45:00Z",
       "reliability": 1
     },
     "nettavisen.no": {
@@ -2663,6 +2671,25 @@
       "reliability": null
     },
     "sport.sky.it": {
+      "checks": 2,
+      "agreed": 2,
+      "corrections": 0,
+      "bySport": {
+        "football": {
+          "checks": 2,
+          "agreed": 2
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 2,
+          "agreed": 2
+        }
+      },
+      "lastChecked": "2026-08-31T11:45:00Z",
+      "reliability": null
+    },
+    "sportmediaset.mediaset.it": {
       "checks": 1,
       "agreed": 1,
       "corrections": 0,
@@ -2673,12 +2700,12 @@
         }
       },
       "byField": {
-        "time": {
+        "existence": {
           "checks": 1,
           "agreed": 1
         }
       },
-      "lastChecked": "2026-08-30T10:38:00Z",
+      "lastChecked": "2026-08-31T11:45:00Z",
       "reliability": null
     }
   }

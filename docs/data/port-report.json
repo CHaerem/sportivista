@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-31T11:20:58.628Z",
+  "generatedAt": "2026-08-31T18:43:58.502Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
-    "amendRate": "red",
+    "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
-    "contracts": "yellow"
+    "contracts": "green"
   },
   "basis": {
     "coverageAudit": true,
@@ -27,7 +27,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 1.07,
+    "oldestGapAgeDays": 1.37,
     "escalatable": 0,
     "catalogMatched": 3,
     "auditedAt": "2026-08-31T10:34:00Z",
@@ -35,35 +35,35 @@
       {
         "interest": "UEFA Europa League 2026/27 — ligaspill MD1 (16.–17. sep), inkl. norske Lillestrøm",
         "severity": "high",
-        "ageDays": 1.07,
+        "ageDays": 1.37,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — kommende runder",
         "severity": "medium",
-        "ageDays": 0.03,
+        "ageDays": 0.34,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Presidents Cup 2026 (golf, Medinah, 24.–27. sep)",
         "severity": "medium",
-        "ageDays": 0.03,
+        "ageDays": 0.34,
         "recurrences": 0,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.43,
-    "nearTermChecked": 7,
-    "nearTermAmended": 3,
-    "verifyRunAt": "2026-08-30T10:38:00Z",
+    "nearTermRate": 0.11,
+    "nearTermChecked": 9,
+    "nearTermAmended": 1,
+    "verifyRunAt": "2026-08-31T11:45:00Z",
     "windowRate": 0,
-    "windowChecks": 80,
+    "windowChecks": 84,
     "windowAmendments": 0,
-    "windowCorrections": 5,
+    "windowCorrections": 6,
     "byDay": [
       {
         "date": "2026-08-18",
@@ -155,38 +155,35 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-08-31",
+        "checks": 4,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-08-31T11:20:53.479Z",
+    "buildCheckedAt": "2026-08-31T18:43:52.602Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-31T09:09:27.502Z",
-    "manifestAgeHours": 2.19,
+    "manifestGeneratedAt": "2026-08-31T11:21:00.287Z",
+    "manifestAgeHours": 7.38,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-08-30T10:38:00Z",
-    "verifyAgeHours": 24.72,
-    "corrections": 1,
+    "checkedAt": "2026-08-31T11:45:00Z",
+    "verifyAgeHours": 6.98,
+    "corrections": 0,
     "unresolved": 0,
-    "signals": [
-      "Vuelta a España WP-95 eksistenssjekk: etappe 9 (30. aug) paagaar; alle 5 nordmenn i Uno-X (Johannessen, Leknessund, Tjoetta, Dversnes, Tiller) fortsatt aktiv…"
-    ]
+    "signals": []
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
-    "breached": [
-      {
-        "id": "golf:pga-tour",
-        "name": "PGA Tour (inkl. FedExCup)",
-        "upcoming": 0,
-        "minUpcoming": 1,
-        "horizonDays": 14
-      }
-    ],
-    "generatedAt": "2026-08-31T11:20:58.627Z"
+    "breached": [],
+    "generatedAt": "2026-08-31T18:43:58.501Z"
   }
 }

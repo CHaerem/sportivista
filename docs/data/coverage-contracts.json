@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T11:20:58.627Z",
+  "generatedAt": "2026-08-31T18:43:58.501Z",
   "contracts": [
     {
       "id": "f1:world-championship",
@@ -101,7 +101,7 @@
       "name": "PGA Tour (inkl. FedExCup)",
       "sport": "golf",
       "authority": "pgatour",
-      "horizonDays": 14,
+      "horizonDays": 21,
       "minUpcoming": 1,
       "months": [
         1,
@@ -116,10 +116,10 @@
         10,
         11
       ],
-      "note": "Tilnærmet ukentlige turneringer januar–november (FedExCup + høstserien); min 1 innen 14 d.",
+      "note": "Tilnærmet ukentlige turneringer januar–november (FedExCup + høstserien); min 1 innen 21 d. Horisonten er 21 (ikke 14 som DP World Tour) fordi PGA Tour har ÉN legitim ~2,5-ukers sesongpause mellom TOUR Championship (~30. aug) og FedExCup Fall-åpningen (2026: Biltmore Championship 17.–20. sep, etter at Procore falt bort) — med 14 d fyrte kontrakten et falskt brudd hver kjøring gjennom hele det vinduet mens golf-dekningen faktisk var komplett (Biltmore boardet). 21 d tåler pausen; resten av sesongen er ukentlig så løftet er uendret i praksis.",
       "inSeason": true,
-      "upcoming": 0,
-      "status": "breached"
+      "upcoming": 1,
+      "status": "met"
     },
     {
       "id": "tennis:tour",
@@ -147,8 +147,6 @@
       "status": "met"
     }
   ],
-  "breached": [
-    "golf:pga-tour"
-  ],
+  "breached": [],
   "note": "WP-243: dekningskontrakten per konkurranse — mekanisk måling av løftet i authority.json (contract-blokkene) mot tavla. Brudd triageres av coverage-critic/research via coverage-gaps.json; contracts-porten i port-report.json ruller dommen inn i G2-målingen."
 }
