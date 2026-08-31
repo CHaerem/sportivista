@@ -1,7 +1,7 @@
 {
 	"runAt": "2026-08-31T15:00:00Z",
 	"action": "opened-pr",
-	"pr": null,
+	"pr": "https://github.com/CHaerem/sportivista/pull/457",
 	"proposal": "Recalibrate the golf:pga-tour coverage contract (authority.json) from horizonDays 14 → 21 so its ONE legitimate season pause stops firing a false high-severity contract-breach every static-pipeline run. PGA Tour has a ~2.5-week gap between the TOUR Championship (~30 Aug) and the FedExCup Fall opener (2026: Biltmore Championship 17–20 Sep, after Procore was dropped); with a 14-day horizon the WP-243 contract mechanism reported golf:pga-tour BREACHED (high severity — the one gap class defined as a broken promise) on every run through that ~18-day window, even though golf coverage was actually complete (Biltmore already boarded, plus DP World Tour every week). 21 days spans the pause; the rest of the season is weekly, so the promise (≥1 event in horizon) is unchanged in practice. The note documents why this contract's horizon differs from DP World Tour's 14. Single-value config tune of an existing mechanism; touches no protected path.",
 	"evidence": [
 		"coverage-audit.json (2026-08-31 10:34Z) sourceIssues[0]: coverage-critic web-verified the breach as a FALSE positive — 'FALSK contract-breach … det finnes en LEGITIM sesongpause mellom TOUR Championship (~30 aug) og FedExCup Fall-åpningen (Biltmore 17.–20. sep) … Biltmore 17. sep ER allerede boardet, så golf-dekningen er faktisk komplett.' Its explicit recommendation: 'øk horizonDays for golf:pga-tour til ~21 ELLER legg inn en kjent-pause-unntak.' Also restated in the audit notes.",
