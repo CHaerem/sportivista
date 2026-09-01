@@ -1,15 +1,15 @@
 {
-  "runAt": "2026-08-31T14:15:00.000Z",
-  "action": "opened-pr",
-  "pr": "https://github.com/CHaerem/sportivista/pull/456",
-  "diagnosed": "Two WP-250 golf tee-hint tests in tests/dashboard-cards.test.js failed in CI (run 33340392821) and locally on 2026-08-31: 'renders the hint into the agenda row, before the channel' and 'lets the tournament yield to the tee time so the row keeps its height'. Root cause is a time-bomb fixture: tourChampionship() hardcoded a tournament window (time 2026-08-27 … endTime 2026-08-30). The two failing tests render via dash.eventRow, which uses the real clock; once the calendar passed 2026-08-30, finishedInfo marked the fixture done and dashboard.js:763 suppressed the tee hint for done events, so the row no longer contained ev-tee / 'Hovland ut 17:24'. The golfTeeHint(e, NOW) unit tests passed because golfTeeHint ignores time/endTime.",
-  "fixed": ["tests/dashboard-cards.test.js: made the tourChampionship fixture window straddle now (now-1d … now+1d) so the tournament is in progress whatever day the suite runs; smallest root-cause fix (fixture, not production code)."],
-  "autoMergeEligible": true,
+  "runAt": "2026-09-01T11:55:00.000Z",
+  "action": "abandoned",
+  "pr": null,
+  "diagnosed": "Escalation-triggered (deep-tier) Research agent runs fail. Run 33491173346 (event=workflow_dispatch, actor=github-actions[bot], 2026-09-01T09:14Z) failed on BOTH the Fable-5 and the Opus-4.8 fallback claude-code-action steps with: 'Action failed with error: Workflow initiated by non-human actor: github-actions (type: Bot). Add bot to allowed_bots list or use \\'*\\' to allow all bots.' Root cause: scout / coverage-critic escalate via scripts/escalate-research.js -> `gh workflow run research-agent.yml -f tier=deep`, which dispatches with GITHUB_TOKEN, so the run's actor is github-actions[bot]. claude-code-action@v1 now rejects bot-initiated runs unless the bot is allow-listed, and none of research-agent.yml's three claude-code-action steps set `allowed_bots` (the action defaults it to empty). Scheduled research/verify/editorial/scout/etc. runs succeed because their actor is human — so ONLY the bot-dispatched escalation path is broken. This silently disables the deep-tier escalation mechanism (a core coverage feature: scout/coverage-critic can no longer pull research onto high-severity gaps).",
+  "fixed": [],
+  "autoMergeEligible": false,
   "notes": [
-    "Change touches only tests/ — no protected path, so it is auto-merge eligible once tests re-pass.",
-    "Proof: npx vitest run tests/dashboard-cards.test.js -> 116/116; full npm test -> 1525/1525 green.",
-    "node scripts/validate-events.js passes (0 errors; warnings only).",
-    "publish-freshness.json status was 'fresh' (lag 0h) — the published site is current, no ops fix needed.",
-    "Ignored non-bugs: prior Research-agent failures line up with the quota governor, not code; Visual QA failures are the vision agent's domain, not mechanic breakage."
+    "FIX NEEDED (human must author): add `allowed_bots: \"github-actions[bot]\"` to each of the three `anthropics/claude-code-action@v1` steps in .github/workflows/research-agent.yml (standard, deep-preferred, deep-fallback) — right under `claude_code_oauth_token:`.",
+    "I could NOT author the fix: .github/workflows/** is a protected automation path and scripts/hooks/protect-automation.js (CI-only) blocked the Edit — 'A human must author changes to these files.' Per that harness-level invariant the change must be made by the owner. Abandoned rather than circumvent the safety hook.",
+    "Only the escalation (workflow_dispatch by github-actions[bot]) path is affected; scheduled agent runs are unaffected (verified: recent scheduled research/verify/editorial/scout/coverage-critic/ui-fix/improve runs all succeeded, only the bot-dispatched research run failed).",
+    "Non-bugs ignored: Visual QA run 33410190174 failed with 'Reached maximum number of turns (40)' — an agent-behaviour/turns issue, not mechanic breakage. Usage governor is green (usage-state.json: session 1%, week 10%), so the failures are not quota. publish-freshness.json is 'fresh' (lag 0h) — no ops/deploy fix needed.",
+    "Repo health otherwise green: npm test 1525/1525 pass; node scripts/validate-events.js 0 errors (warnings only). The Aug-30 CI golf tee-time failure was already fixed by commit 27c916fe6 (Aug 31)."
   ]
 }
