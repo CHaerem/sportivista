@@ -1,41 +1,8 @@
 {
-  "generatedAt": "2026-09-01T21:35:15.247Z",
-  "gapCount": 6,
-  "anomalyCount": 0,
+  "generatedAt": "2026-09-01T23:43:27.572Z",
+  "gapCount": 4,
+  "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Barça",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Arsenal trying to lure Julián Álvarez after agreeing deals to sell Martinelli and Jesus",
-      "link": "https://www.theguardian.com/football/2026/aug/31/arsenal-julian-alvarez-gabriel-martinelli-jesus-transfers",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-09-01T21:35:14.011Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Barca",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Arsenal trying to lure Julián Álvarez after agreeing deals to sell Martinelli and Jesus",
-      "link": "https://www.theguardian.com/football/2026/aug/31/arsenal-julian-alvarez-gabriel-martinelli-jesus-transfers",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-09-01T21:35:14.011Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Man City",
-      "type": "missing",
-      "imminent": true,
-      "headline": "Football transfer deadline day: Man City sign Ndiaye and agree Fernández deal, Chelsea close on Camara – live",
-      "link": "https://www.theguardian.com/football/live/2026/sep/01/football-transfer-deadline-day-fernandez-alvarez-mudryk-ndiaye-latest-news-updates",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-09-01T21:35:14.011Z"
-    },
     {
       "kind": "tracked-claim",
       "entity": "Kristoffer Reitan",
@@ -46,7 +13,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-reitan",
-      "detectedAt": "2026-09-01T21:35:14.960Z"
+      "detectedAt": "2026-09-01T23:43:27.210Z"
     },
     {
       "kind": "tracked-claim",
@@ -58,7 +25,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-ventura",
-      "detectedAt": "2026-09-01T21:35:14.960Z"
+      "detectedAt": "2026-09-01T23:43:27.210Z"
     },
     {
       "kind": "tracked-claim",
@@ -70,9 +37,29 @@
       "claimedDate": "2026-09-30T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-09-01T21:35:14.960Z"
+      "detectedAt": "2026-09-01T23:43:27.210Z"
+    },
+    {
+      "kind": "tracked-claim",
+      "entity": "BLAST Open Porto 2026 (Fall)",
+      "group": "tournaments",
+      "sport": "esports",
+      "type": "missing",
+      "imminent": false,
+      "claimedDate": "2026-09-06T00:00:00.000Z",
+      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
+      "trackedId": "blast-open-porto-2026",
+      "detectedAt": "2026-09-01T23:43:27.210Z"
     }
   ],
-  "anomalies": [],
+  "anomalies": [
+    {
+      "sport": "esports",
+      "issue": "file-empty",
+      "detail": "docs/data/esports.json has no events and none on the board — source may be down or changed",
+      "severity": "low",
+      "detectedAt": "2026-09-01T23:43:27.259Z"
+    }
+  ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
 }
