@@ -3152,8 +3152,8 @@
     "norwegian": true,
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/sport/golf/dp-world-tour",
+        "platform": "Discovery+",
+        "url": "https://www.discoveryplus.no",
         "urlKind": "landing"
       }
     ],
@@ -3335,17 +3335,29 @@
     "venue": "King Baudouin Stadium, Brussel",
     "norwegian": true,
     "norwegianPlayers": [
-      { "name": "Jakob Ingebrigtsen" },
-      { "name": "Henriette Jæger" },
-      { "name": "Sondre Guttormsen" },
-      { "name": "Narve Gilje Nordås" }
+      {
+        "name": "Jakob Ingebrigtsen",
+        "entityId": "jakob-ingebrigtsen"
+      },
+      {
+        "name": "Henriette Jæger",
+        "entityId": "henriette-jaeger"
+      },
+      {
+        "name": "Sondre Guttormsen",
+        "entityId": "sondre-guttormsen"
+      },
+      {
+        "name": "Narve Gilje Nordås",
+        "entityId": "narve-gilje-nordas"
+      }
     ],
     "participants": [],
     "streaming": [
       {
         "platform": "NRK",
         "url": "https://tv.nrk.no/serie/friidrett-diamond-league",
-        "urlKind": "landing"
+        "urlKind": "deep"
       }
     ],
     "source": "ai-research",
@@ -6345,14 +6357,17 @@
     "norwegian": true,
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/sport/golf/dp-world-tour",
+        "platform": "Discovery+",
+        "url": "https://www.discoveryplus.no",
         "urlKind": "landing"
       }
     ],
     "participants": [],
     "norwegianPlayers": [
-      { "name": "Viktor Hovland" }
+      {
+        "name": "Viktor Hovland",
+        "entityId": "viktor-hovland"
+      }
     ],
     "source": "ai-research",
     "researchedAt": "2026-08-30T22:45:00Z",
@@ -6440,8 +6455,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "VG+ Sport",
-        "url": "https://tv.vg.no/sport",
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
         "urlKind": "landing"
       }
     ],
