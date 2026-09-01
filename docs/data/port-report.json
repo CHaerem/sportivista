@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T00:56:20.074Z",
+  "generatedAt": "2026-09-01T08:10:16.031Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -27,7 +27,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 1.63,
+    "oldestGapAgeDays": 1.93,
     "escalatable": 0,
     "catalogMatched": 3,
     "auditedAt": "2026-08-31T10:34:00Z",
@@ -35,21 +35,21 @@
       {
         "interest": "UEFA Europa League 2026/27 — ligaspill MD1 (16.–17. sep), inkl. norske Lillestrøm",
         "severity": "high",
-        "ageDays": 1.63,
+        "ageDays": 1.93,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — kommende runder",
         "severity": "medium",
-        "ageDays": 0.6,
+        "ageDays": 0.9,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Presidents Cup 2026 (golf, Medinah, 24.–27. sep)",
         "severity": "medium",
-        "ageDays": 0.6,
+        "ageDays": 0.9,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -61,17 +61,10 @@
     "nearTermAmended": 1,
     "verifyRunAt": "2026-08-31T11:45:00Z",
     "windowRate": 0,
-    "windowChecks": 84,
+    "windowChecks": 78,
     "windowAmendments": 0,
     "windowCorrections": 6,
     "byDay": [
-      {
-        "date": "2026-08-18",
-        "checks": 6,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-08-19",
         "checks": 4,
@@ -167,21 +160,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-01T00:56:13.750Z",
+    "buildCheckedAt": "2026-09-01T08:10:12.842Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-08-31T23:06:38.552Z",
-    "manifestAgeHours": 1.83,
+    "manifestGeneratedAt": "2026-09-01T00:56:21.641Z",
+    "manifestAgeHours": 7.23,
     "staleFiles": [
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-08-30T19:01:10.458Z",
-        "ageHours": 29.92
+        "ageHours": 37.15
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-08-31T11:45:00Z",
-    "verifyAgeHours": 13.19,
+    "verifyAgeHours": 20.42,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -190,6 +183,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-01T00:56:20.074Z"
+    "generatedAt": "2026-09-01T08:10:16.031Z"
   }
 }
