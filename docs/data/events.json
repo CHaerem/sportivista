@@ -3152,8 +3152,8 @@
     "norwegian": true,
     "streaming": [
       {
-        "platform": "Discovery+",
-        "url": "https://www.discoveryplus.no",
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/sport/golf/dp-world-tour",
         "urlKind": "landing"
       }
     ],
@@ -3333,47 +3333,53 @@
     "time": "2026-09-04T18:00:00Z",
     "endTime": "2026-09-05T20:30:00Z",
     "venue": "King Baudouin Stadium, Brussel",
-    "norwegian": false,
-    "norwegianPlayers": [],
+    "norwegian": true,
+    "norwegianPlayers": [
+      { "name": "Jakob Ingebrigtsen" },
+      { "name": "Henriette Jæger" },
+      { "name": "Sondre Guttormsen" },
+      { "name": "Narve Gilje Nordås" }
+    ],
     "participants": [],
     "streaming": [
       {
         "platform": "NRK",
-        "url": "https://tv.nrk.no/sport",
+        "url": "https://tv.nrk.no/serie/friidrett-diamond-league",
         "urlKind": "landing"
       }
     ],
     "source": "ai-research",
     "researchedAt": "2026-08-09T13:20:00Z",
-    "confidence": "medium",
+    "confidence": "high",
     "evidence": [
       "catalog.json#tier2.tournaments",
       "https://brussels.diamondleague.com/en/this-is-the-2026-wanda-diamond-league-calendar-with-a-two-day-final-in-brussels/",
-      "https://www.diamondleague.com/calendar/",
+      "https://www.nrk.no/sport/jakob-ingebrigtsen-bekreftet-til-1500-m-i-diamond-league-avslutningen-1.18010149",
       "https://kommunikasjon.ntb.no/pressemelding/18535635/nrk-sikrer-seg-diamond-league-til-2029"
     ],
     "provenance": {
       "time": {
         "sourceId": "diamond-league",
-        "url": "https://brussels.diamondleague.com/en/this-is-the-2026-wanda-diamond-league-calendar-with-a-two-day-final-in-brussels/",
+        "url": "https://brussels.diamondleague.com/en/",
         "basis": "primary",
-        "retrievedAt": "2026-08-29T11:50:00Z",
-        "note": "To-dagers finale 4.–5. sep, King Baudouin Stadium — arrangørens egen kalender."
+        "retrievedAt": "2026-09-01T18:40:00Z",
+        "note": "To-dagers finale 4.–5. sep, King Baudouin Stadium. Arrangørens timeplan: dører 17.00, hovedprogram 20.00 CEST begge dager. Ingebrigtsen 1500 m fre. 21.29 CEST (VG TV-guide), Jæger 400 m lør. 19.45 CEST."
       },
       "streaming": {
         "sourceId": "nrk",
-        "url": "https://tv.nrk.no/sport",
+        "url": "https://tv.nrk.no/serie/friidrett-diamond-league",
         "basis": "official",
-        "retrievedAt": "2026-08-09T13:20:00Z",
+        "retrievedAt": "2026-09-01T18:40:00Z",
         "note": "NRK har Diamond League-rettighetene i Norge t.o.m. 2029."
       }
     },
-    "summary": "Diamond League-finalen 2026 – sesongavslutningen der alle 32 Diamond League-mesterne kåres. To-dagers finale på King Baudouin Stadium i Brussel (Allianz Memorial Van Damme), fredag 4. og lørdag 5. september.\n\nEksakt øktstart er ikke publisert ennå – tiden på tavla (~20.00 CEST / 18.00 UTC 4. sept) er foreløpig og firmes opp når arrangøren slipper timeplanen (typisk ~1–2 uker før, etter Zürich 27. aug). Norsk deltakelse (Jakob Ingebrigtsen, Karsten Warholm, Henriette Jæger, Sondre Guttormsen) er ventet, men finalefeltet avgjøres av sammenlagtpoengene og låses først etter siste kvalifiseringsstevne – ikke offisielt bekreftet ennå.\n\nNorsk visning: NRK (Diamond League-rettighetene i Norge t.o.m. 2029).",
+    "summary": "Diamond League-finalen 2026 – sesongavslutningen der Diamond League-mesterne kåres. To-dagers finale på King Baudouin Stadium i Brussel (Allianz Memorial Van Damme), fredag 4. og lørdag 5. september. Dørene åpner 17.00, hovedprogrammet starter kl. 20.00 CEST begge dager.\n\nNorsk deltakelse er nå bekreftet: Jakob Ingebrigtsen løper 1500 m fredag kl. 21.29 CEST (med Narve Gilje Nordås), Henriette Jæger løper 400 m lørdag kl. 19.45 CEST mot årets verdensener Marileidy Paulino, og Sondre Guttormsen møter verdensrekordholder Armand Duplantis i stav. Karsten Warholm står over finalen (trakk seg).\n\nNorsk visning: NRK (Diamond League-rettighetene i Norge t.o.m. 2029).",
     "id": "c375a12ad32e",
-    "verifiedAt": "2026-08-29T11:50:00Z",
+    "verifiedAt": "2026-09-01T18:40:00Z",
     "verificationStatus": "confirmed",
     "verificationSources": [
-      "https://brussels.diamondleague.com/en/this-is-the-2026-wanda-diamond-league-calendar-with-a-two-day-final-in-brussels/"
+      "https://brussels.diamondleague.com/en/",
+      "https://www.nrk.no/sport/jakob-ingebrigtsen-bekreftet-til-1500-m-i-diamond-league-avslutningen-1.18010149"
     ]
   },
   {
@@ -6336,21 +6342,24 @@
     "endTime": "2026-09-20T17:00:00Z",
     "venue": "Wentworth Club, Virginia Water, Surrey, England",
     "meta": "DP World Tour",
-    "norwegian": false,
+    "norwegian": true,
     "streaming": [
       {
-        "platform": "Discovery+",
-        "url": "https://www.discoveryplus.no",
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/sport/golf/dp-world-tour",
         "urlKind": "landing"
       }
     ],
     "participants": [],
-    "norwegianPlayers": [],
+    "norwegianPlayers": [
+      { "name": "Viktor Hovland" }
+    ],
     "source": "ai-research",
     "researchedAt": "2026-08-30T22:45:00Z",
     "confidence": "medium",
     "evidence": [
       "https://www.europeantour.com/dpworld-tour/bmw-pga-championship-2026/",
+      "https://www.europeantour.com/dpworld-tour/news/articles/detail/viktor-hovland-sepp-straka-and-hojgaard-twins-to-tee-it-up-at-bmw-pga-championship/",
       "https://en.wikipedia.org/wiki/2026_European_Tour"
     ],
     "provenance": {
@@ -6367,7 +6376,7 @@
         "retrievedAt": "2026-08-30T22:45:00Z"
       }
     },
-    "summary": "BMW PGA Championship 17.–20. september på Wentworth Club i Surrey – DP World Tours prestisjeturnering og en av fem Rolex Series-eventer i 2026.\n\n72 hulls slagspill på West Course. Trekker et sterkt europeisk felt; norsk startliste ikke bekreftet ennå.\n\nNorsk visning: Viaplay (V Sport Golf). Eksakte utslagstider ikke publisert ennå.",
+    "summary": "BMW PGA Championship 17.–20. september på Wentworth Club i Surrey – DP World Tours prestisjeturnering og en av fem Rolex Series-eventer i 2026.\n\n72 hulls slagspill på West Course. Viktor Hovland er bekreftet i feltet (topp-5 i sine tre siste BMW PGA-starter).\n\nNorsk visning: Viaplay (V Sport Golf). Eksakte utslagstider ikke publisert ennå.",
     "id": "589a89ee5d0a"
   },
   {
@@ -6431,8 +6440,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no/sport",
         "urlKind": "landing"
       }
     ],
