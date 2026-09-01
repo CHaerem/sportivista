@@ -7597,5 +7597,50 @@
     "homeTeamEntityId": "norge",
     "awayTeamEntityId": "portugal",
     "id": "c00f77a89225"
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Bergen Håndball – Kolstad",
+    "time": "2026-09-12T16:10:00Z",
+    "endTime": null,
+    "venue": "Haukelandshallen, Bergen",
+    "norwegian": true,
+    "homeTeam": "Bergen Håndball",
+    "awayTeam": "Kolstad",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-01T22:40:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+      "https://www.flashscore.com/team/kolstad/rTWbl2mC/fixtures/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-01T22:40:00Z",
+        "note": "Bergen Handball-Kolstad (Elkjop-ligaen menn) lor. 12. sep 18.10 CEST (16.10 UTC), Haukelandshallen - bekreftet mot TV 2 Play-kampside (runde 2) + Flashscore. handball.nos terminliste var bot-blokkert (JS/403), sa tid tatt fra broadcaster-listing (basis secondary); verify fester eksakt minutt mot handball.no."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+        "basis": "official",
+        "retrievedAt": "2026-09-01T22:40:00Z",
+        "note": "TV 2 har alle Elkjop-ligaen-rettigheter 2026/27; alle kamper pa TV 2 Play (utvalgte lineaert)."
+      }
+    },
+    "summary": "Elkjøp-ligaen 2026/27 (norsk håndball-toppserie). Kolstad (katalog-klubb) borte mot Bergen Håndball i Haukelandshallen.\n\nNorsk visning: TV 2 Play (alle kamper). Avspark lørdag 12. sep kl. 18.10 CEST (16.10 UTC).\n\nSander Sagosen spiller ikke lenger for Kolstad (til Aalborg feb. 2025), så ingen norsk stjerne navngitt her — kampen dekker Kolstad som fulgt katalog-lag."
   }
 ]
