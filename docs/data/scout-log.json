@@ -204,5 +204,13 @@
     "verdict": "quiet",
     "reason": "RSS (50 items, 09:44 UTC): transfer-season noise (deadline day trades—no schedule/time/venue/streaming/broadcaster impact on tracked Norwegian events). Match-day coverage (Arsenal 1–0 Aston Villa, women's football Aalesund 1–0 Hønefoss, various results—all already tracked, no schedule changes). Handball governance (Norges Håndballforbund postponements due to Kong Harald gravferd—existing tournament adjustments, not new event signals). Past decisions (Warholm Diamond League Brussel final withdrawal—already escalated 2026-08-24, past decision, no new impact). Athletics (Sondre Guttormsen/Henriette Jæger pole vault equipment feature—tracked athletes with claimedDate 2026-09-05, 4 days imminent, but NO new concrete RSS event announcement today). Coverage gaps (11): Guttormsen/Jæger tracked-claims imminent but lack event news signal; rain/Håvard Nygaard tracked-claim imminent but no new CS2 match announcement in RSS—gap is known configuration issue. No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting tracked events, no 100 Thieves/rain CS2 match hints, no new concrete upcoming events requiring escalation. Escalation cap today (UTC): 1/2.",
     "signals": []
+  },
+  {
+    "runAt": "2026-09-01T14:32:00.000Z",
+    "verdict": "escalate",
+    "reason": "RSS (38 items, 14:30 UTC): Jakob Ingebrigtsen confirmed for Diamond League final 1500m in Brussels this weekend — NRK headline 'Jakob Ingebrigtsen bekreftet til 1500 m i Diamond League-avslutningen' explicitly confirms his participation at the season finale. This is a significant upcoming event for a tracked athlete, announced today, and warrants research verification of time/venue/streaming for the board. Oslo maraton schedule adjustment also noted (Kong Harald gravferd Sept 9 shifts logistics) but Ingebrigtsen's imminent competitive confirmation is the primary escalation signal. Research should find Diamond League final details (exact time, venue, broadcaster/streaming) and potentially update any existing board entry or add new event. Escalation cap today (UTC): 1/2.",
+    "signals": [
+      "Jakob Ingebrigtsen: Diamond League final 1500m Brussel this weekend (confirmed today via NRK)"
+    ]
   }
 ]
