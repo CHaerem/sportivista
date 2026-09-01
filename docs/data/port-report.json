@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T14:30:30.190Z",
+  "generatedAt": "2026-09-01T18:08:55.178Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 1.16,
+    "oldestGapAgeDays": 1.32,
     "escalatable": 0,
     "catalogMatched": 2,
     "auditedAt": "2026-09-01T10:35:00Z",
@@ -35,14 +35,14 @@
       {
         "interest": "Bundesliga 2026/27 — spillerunder 2, 3 og 4 (4.–20. sep), inkl. Schalke–Bayern (5. sep) og Leipzig–Hamburg (13. sep)",
         "severity": "high",
-        "ageDays": 0.16,
+        "ageDays": 0.32,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — kommende serierunder utover Kolstad–Runar",
         "severity": "medium",
-        "ageDays": 1.16,
+        "ageDays": 1.32,
         "recurrences": 1,
         "catalogMatched": true
       }
@@ -160,21 +160,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-01T14:30:22.505Z",
+    "buildCheckedAt": "2026-09-01T18:08:46.928Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-01T09:44:40.658Z",
-    "manifestAgeHours": 4.76,
+    "manifestGeneratedAt": "2026-09-01T14:30:31.744Z",
+    "manifestAgeHours": 3.64,
     "staleFiles": [
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-08-30T19:01:10.458Z",
-        "ageHours": 43.49
+        "ageHours": 47.13
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-09-01T10:30:00Z",
-    "verifyAgeHours": 4.01,
+    "verifyAgeHours": 7.65,
     "corrections": 2,
     "unresolved": 0,
     "signals": [
@@ -186,6 +186,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-01T14:30:30.190Z"
+    "generatedAt": "2026-09-01T18:08:55.177Z"
   }
 }
