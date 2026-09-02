@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T02:14:44.724Z",
+  "generatedAt": "2026-09-02T07:29:35.624Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 1.65,
+    "oldestGapAgeDays": 1.87,
     "escalatable": 0,
     "catalogMatched": 2,
     "auditedAt": "2026-09-01T10:35:00Z",
@@ -35,14 +35,14 @@
       {
         "interest": "Bundesliga 2026/27 — spillerunder 2, 3 og 4 (4.–20. sep), inkl. Schalke–Bayern (5. sep) og Leipzig–Hamburg (13. sep)",
         "severity": "high",
-        "ageDays": 0.65,
+        "ageDays": 0.87,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — kommende serierunder utover Kolstad–Runar",
         "severity": "medium",
-        "ageDays": 1.65,
+        "ageDays": 1.87,
         "recurrences": 1,
         "catalogMatched": true
       }
@@ -54,17 +54,10 @@
     "nearTermAmended": 0,
     "verifyRunAt": "2026-09-01T10:30:00Z",
     "windowRate": 0,
-    "windowChecks": 84,
+    "windowChecks": 80,
     "windowAmendments": 0,
-    "windowCorrections": 6,
+    "windowCorrections": 5,
     "byDay": [
-      {
-        "date": "2026-08-19",
-        "checks": 4,
-        "amendments": 0,
-        "corrections": 1,
-        "rate": 0
-      },
       {
         "date": "2026-08-20",
         "checks": 8,
@@ -160,15 +153,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-02T02:14:40.070Z",
+    "buildCheckedAt": "2026-09-02T07:29:32.439Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-01T23:43:27.745Z",
-    "manifestAgeHours": 2.52,
+    "manifestGeneratedAt": "2026-09-02T02:14:46.678Z",
+    "manifestAgeHours": 5.25,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-09-01T10:30:00Z",
-    "verifyAgeHours": 15.75,
+    "verifyAgeHours": 20.99,
     "corrections": 2,
     "unresolved": 0,
     "signals": [
@@ -180,6 +173,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-02T02:14:44.723Z"
+    "generatedAt": "2026-09-02T07:29:35.624Z"
   }
 }

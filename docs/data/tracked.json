@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-01T22:40:00Z",
+  "lastUpdated": "2026-09-02T04:40:00Z",
   "lastUpdatedBy": "research-agent",
   "version": 2,
   "leagues": [
@@ -489,13 +489,13 @@
       "id": "blast-open-porto-2026",
       "name": "BLAST Open Porto 2026 (Fall)",
       "sport": "esports",
-      "reason": "Coverage-critics MEDIUM horisont-hull (audit 2026-08-18): tier-1 CS2-turnering med minst sju katalog-lag (Team Vitality, NAVI, Team Falcons, Team Spirit, FURIA, G2 Esports, MOUZ) — esports er entity-gated, og et navngitt katalog-lag slipper eventet inn. Gruppespill 26.–31. aug i BLAST Studios, København; sluttspill 4.–6. sept i Super Bock Arena, Porto. LAGT TIL 2026-08-19 (research, CS2-scout + uavhengig write-time fact-check mot HLTV + blast.tv, begge enige) som ai-research-event (medium): datoer/venue/felt bekreftet HIGH, men eksakte kamptider ut over åpningen (Aurora–G2 26. aug 11.00 CEST/09.00 UTC) ikke publisert → medium. INGEN norsk vinkel: 100 Thieves (rain) er IKKE i feltet. Gratis på BLAST Premiers offisielle Twitch. ROTÅRSAK til hullet: den statiske esports.js/Liquipedia-fetcheren er DØD (stale-retained 80 kjøringer / 4 dager) — flagget self-repair; den er dessuten fokuslag-gated (100T), så den ville uansett ikke fanget denne. Verify/fetcher fester per-kamp-tidene når Liquipedia lister braketten.",
+      "reason": "Coverage-critics MEDIUM horisont-hull (audit 2026-08-18): tier-1 CS2-turnering med minst sju katalog-lag (Team Vitality, NAVI, Team Falcons, Team Spirit, FURIA, G2 Esports, MOUZ) — esports er entity-gated, og et navngitt katalog-lag slipper eventet inn. Gruppespill 26.–31. aug i BLAST Studios, København; sluttspill 4.–6. sept i Super Bock Arena, Porto. LAGT TIL 2026-08-19 (research, CS2-scout + uavhengig write-time fact-check mot HLTV + blast.tv, begge enige) som ai-research-event (medium): datoer/venue/felt bekreftet HIGH, men eksakte kamptider ut over åpningen (Aurora–G2 26. aug 11.00 CEST/09.00 UTC) ikke publisert → medium. INGEN norsk vinkel: 100 Thieves (rain) er IKKE i feltet. Gratis på BLAST Premiers offisielle Twitch. ROTÅRSAK til hullet: den statiske esports.js/Liquipedia-fetcheren er DØD (stale-retained 80 kjøringer / 4 dager) — flagget self-repair; den er dessuten fokuslag-gated (100T), så den ville uansett ikke fanget denne. Verify/fetcher fester per-kamp-tidene når Liquipedia lister braketten. OPPDATERT 2026-09-02T04:40Z (research, standard-tier, CS2-scout + uavhengig write-time fact-check): SLUTTSPILLET ER NÅ BOARDET — coverage-gaps.json flagget dette som imminent tracked-claim (claimedDate 6. sept), og bare det nå ferdigspilte gruppespillet lå på tavla. Gruppespillet ga seks sluttspill-lag, ALLE katalog-lag: Team Falcons, G2 Esports, FURIA, Team Vitality (kvartfinaler) + Team Spirit og MOUZ (fritatt til semifinalen som gruppevinnere). FEM ai-research-events lagt til (high, tider to-kilde-bekreftet HLTV playoff-bracket + esports.gg + fragster, uavhengig fact-check bekreftet alle fem): kvartfinaler tor. 4. sept — Falcons–G2 16.00 CEST (14.00 UTC), FURIA–Vitality 19.30 CEST (17.30 UTC); semifinaler fre. 5. sept — Spirit vs vinner Falcons/G2 16.00 CEST, MOUZ vs vinner FURIA/Vitality 19.30 CEST; Grand Final (Bo5) lør. 6. sept 16.00 CEST (14.00 UTC). Gratis på BLAST Premiers offisielle Twitch (twitch.tv/blastpremier); ingen norsk TV-rettighet. NB tidssone: kildene publiserer i CEST selv om Porto fysisk er WEST (UTC+1) i september — UTC-ankeret 14.00/17.30 er korrekt. ROTÅRSAK-flagget står (self-repair): esports.js/Liquipedia-fetcheren er 100T-fokuslag-gated, så den fanger uansett ikke denne turneringen når 100 Thieves ikke er i feltet.",
       "addedAt": "2026-08-19T02:15:00Z",
       "addedBy": "research-agent",
       "evidence": [
         "catalog.json#tier2.teams",
-        "https://www.hltv.org/news/45128/blast-open-porto-teams-announced",
-        "https://www.hltv.org/news/45327/blast-open-porto-opening-matchups-set",
+        "https://www.hltv.org/news/45431/blast-open-porto-playoff-bracket-set",
+        "https://esports.gg/news/blast-open-porto-2026/",
         "https://blast.tv/cs/tournaments/open-2026-season-2"
       ],
       "expires": "2026-09-07T23:59:59Z",
