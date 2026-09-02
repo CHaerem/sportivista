@@ -1,18 +1,23 @@
 {
-  "runAt": "2026-09-01T22:45:00Z",
+  "runAt": "2026-09-02T04:42:00Z",
   "tier": "standard",
-  "eventsAdded": 1,
+  "eventsAdded": 5,
   "eventsRemoved": 0,
-  "trackedDelta": "Boardet Bergen Håndball–Kolstad (Elkjøp-ligaen 12. sep) → oppdaterte elkjop-ligaen-2026-27-reasonen; droppet to utgåtte event-entryer (tour-championship-2026, bretagne-classic-2026, begge ferdigspilt 30./31. aug). Bumpet lastUpdated 19:00Z→22:40Z. Netto tournaments 18→16.",
-  "quality": { "pass": true, "score": 87, "failures": ["Repeterende uløst (≥5 kjøringer): 'legg ger.1/ita.1/uefa.champions/uefa.europa i ESPN wholesale-fetcheren + authority.json contract-blokker' står fortsatt åpent, tvinger research til å håndboarde Serie A/Bundesliga/CL/EL runde-for-runde; ærlig eskalert til self-repair (path research ikke kan røre) men tolerert over mange kjøringer (−10).", "Mindre repeterende: norwegian-rights-skillen mangler fortsatt Bundesliga/Serie A-linjer (flagget ~3 kjøringer); denne kjøringens Edit ble nektet av harness-permission og rapportert ærlig (−3)."] },
+  "trackedDelta": "Oppdaterte blast-open-porto-2026: sluttspillet boardet (5 events). Ingen entries lagt til/fjernet — Bundesliga r2-4 (27 kamper) og Diamond League-finalen var allerede boardet i forrige kjoring (2026-09-01T13:35Z / scout-eskalering).",
   "notes": [
-    "Standard-tier 4-timers-kjøring. Triagerte coverage-gaps.json (6 gaps, 0 anomalies) + coverage-audit.json (10:35Z).",
-    "COVERAGE-AUDITENS ENESTE HIGH-HULL (Bundesliga runde 2–4, 4.–20. sep) VAR ALLEREDE TETTET av forrige kjøring (13:35Z): alle 27 kampene i runde 2/3/4 står på tavla (verifisert i events.json). Ingen ny handling nødvendig der.",
-    "PRIMÆR: adresserte coverage-auditens stående MEDIUM breddehull (Elkjøp-ligaen — kun Kolstads kamper fulgt, ikke serierundene bredt). Håndball-scout bekreftet Kolstads neste serierunde-kamp: Bergen Håndball–Kolstad lør. 12. sep 18.10 CEST (16.10 UTC), Haukelandshallen, runde 2. Boardet som ai-research-event (medium): tid to-kilde-bekreftet (TV 2 Play-kampside + Flashscore), handball.nos terminliste bot-blokkert → provenance.time.basis=secondary; verify fester eksakt minutt + hall. TV 2 Play. Kampen dekker Kolstad som fulgt katalog-tier2-lag (Sagosen spiller IKKE for Kolstad lenger — til Aalborg feb. 2025 — så ingen norsk stjerne navngitt, matcher eksisterende Kolstad-events).",
-    "MEKANISKE coverage-gaps triagert: entity-gap Barça/Barca + Man City (transferrykter/deadline-day, ikke event → ikke hull). tracked-claim Reitan/Ventura (golf, claimedDate null) = europeere i PGA-Tour-høstpause, ingen bekreftet turnering; DP World Tour-events (Irish Open 10. sep, BMW PGA 17. sep) boardet der nordmenn kan spille. tracked-claim Håvard «rain» Nygaard (30. sep) = 100 Thieves uten planlagt CS2-kamp → korrekt fravær per cs2-sources sen-annonsering.",
-    "HORISONT-SCAN (Step 2.6): ingen nye katalog-kandidater denne kjøringen — brettet er allerede bredt dekket 4 uker fram (Serie A/Bundesliga/CL/EL/La Liga/PL/Eliteserien fotball, F1 Monza/Madrid/Baku, Vuelta+UCI Road-VM sykkel, US Open→Laver Cup tennis, DL-finale+WA Ultimate athletics, Presidents Cup golf, GCL sjakk). Ingen demand[] i coverage-gaps.json denne kjøringen.",
-    "HOUSEKEEPING (uløst): norwegian-rights-skillen mangler fortsatt Bundesliga- + Serie A-linjer (flagget av forrige to kjøringer). Forsøkt lagt til via Edit-verktøyet denne kjøringen OGSÅ — men skriving til .claude/skills/ ble faktisk nektet av harness-permission i dette miljøet (permission-prompt, ikke gitt). Rapporteres ærlig: i DETTE miljøet er skriv til skills gated uansett WP-91-noten; anbefalt tekst: 'Serie A → VG+ Sport [solid]; Bundesliga → Viaplay (utvalgte TV 2 Play), t.o.m. 2028/29 [solid]'. Eier/CI-kjøring med skrivetilgang legger den inn.",
-    "STÅENDE SELF-REPAIR-FLAGG (ikke research-feil): legg ger.1 (Bundesliga) + ita.1 (Serie A) + uefa.champions/uefa.europa i ESPN wholesale-fetcheren (sports-config.js) + authority.json contract-blokker — ellers må hele ligaspillrunder håndboardes runde-for-runde. Står uløst etter ≥5 kjøringer.",
-    "F1 ESPN-blindsone sjekket per source-quirks: ingen mis-datering, Monza (kval 5. sep / race 6. sep) korrekt boardet."
-  ]
+    "PRIMAERT FUNN — BLAST Open Porto 2026 (Fall) SLUTTSPILL (esports, entity-gated via katalog-lag) boardet. coverage-gaps.json (02:14Z) flagget tracked-claim 'BLAST Open Porto 2026' imminent (claimedDate 6. sept) som manglende: bare det na ferdigspilte gruppespillet (26. aug) la pa tavla. Gruppespillet ga seks sluttspill-lag, ALLE katalog-lag. Fem ai-research-events lagt til (high): kvartfinaler 4. sept (Falcons-G2 14.00 UTC, FURIA-Vitality 17.30 UTC), semifinaler 5. sept (Spirit vs vinner Falcons/G2 14.00 UTC; MOUZ vs vinner FURIA/Vitality 17.30 UTC), Grand Final Bo5 6. sept 14.00 UTC. Alle Super Bock Arena, Porto. Tider to-kilde-bekreftet (HLTV playoff-bracket + esports.gg/fragster) + uavhengig fresh-context write-time fact-check bekreftet alle fem + braketten + Spirit/MOUZ semifinale-bye. Gratis pa BLAST Premiers Twitch (twitch.tv/blastpremier); ingen norsk TV-rett. Tidssone-note: kilder publiserer CEST selv om Porto fysisk er WEST (UTC+1) i sept — UTC-ankeret korrekt.",
+    "BUNDESLIGA-ESKALERINGEN (coverage-audit HIGH, 2026-09-01 10:35Z) ER ALLEREDE LOST: r2-4 (4.-20. sept, 27 kamper) ble boardet i forrige kjoring (tracked 2026-09-01T13:35Z), alle pa Viaplay. Verifisert 27 Bundesliga-events pa tavla denne kjoringen. Ikke et hull lenger.",
+    "DIAMOND LEAGUE-FINALEN (scout-eskalering Ingebrigtsen 2026-09-01 14:32Z): allerede boardet 4. sept med Ingebrigtsen + Jaeger + Guttormsen + Nordas navngitt. Warholm korrekt UTE av Brussel-finalen (trakk seg 31. aug), men navngitt pa Ultimate Championship 11.-13. sept — riktig.",
+    "MEKANISKE coverage-gaps triagert: Sinquefield Cup (chess, imminent=false) = STALE — turneringen ble spilt 10. aug (pa tavla som avsluttet); RSS-treffet var 'FIDE ratings September 2026', ikke et kommende event -> ikke hull. Kristoffer Reitan/Ventura (golf, claimedDate null) = PGA/DP-pause, ingen bekreftet nordmanns-turnering -> korrekt fravaer (jf. forrige audit). Havard rain Nygaard/100 Thieves (30. sept) = ingen berammet CS2-kamp (sen-annonsering per cs2-sources); 100T er IKKE i BLAST Porto-feltet. esports.json file-empty (low) = kjent stale-retained infrastruktur for self-repair.",
+    "Global Chess League 2026 (Carlsen, Bengaluru 3.-13. sept) verifisert pa tavla (3. sept). handball: Kolstad dekket (Elkjop-ligaen 2. + 12. sept, EHF CL 9. sept). coverage-audit medium-hull for bredere Elkjop-runder star under oppsyn (domestisk wholesale, ikke web-reverifisert per manglende runde denne kjoringen) — ikke boardet.",
+    "Step 2.6 horisont-scan: ingen nye katalog-kandidater utenfor dekning denne korte kjoringen; katalogen er nylig bredt utvidet (WP-116). coverage-gaps.json hadde ingen demand[]-blokk.",
+    "Ingen registry-reconciliation (kun deep-tier ukentlig sveip; dette er standard-tier)."
+  ],
+  "quality": {
+    "pass": true,
+    "score": 94,
+    "failures": [
+      "Minor (fikset i bounded revisjon): Grand Final-eventet listet Team Spirit + MOUZ som bekreftede finalister; de er kun de to fritatte gruppevinnerne som fortsatt maa vinne semifinalene. participants[] tomt na (finalister TBD); summary-prosa var allerede aerlig ('de to semifinalevinnerne motes')."
+    ]
+  }
 }
