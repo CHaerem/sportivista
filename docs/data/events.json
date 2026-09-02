@@ -3124,9 +3124,9 @@
       "time": {
         "sourceId": "tv2",
         "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "basis": "secondary",
-        "retrievedAt": "2026-08-31T21:35:00Z",
-        "note": "Kolstad-Runar (Elkjop-ligaen runde 2) ons. 2. sep ~18.00 CEST (16.00 UTC) - bekreftet mot TV 2 Play + Flashscore. handball.nos live-kampsystem returnerte STALE 2024/25-kamp, sa tid tatt fra broadcaster-listing (basis secondary); verify fester eksakt minutt + hall mot handball.nos terminliste."
+        "basis": "official",
+        "retrievedAt": "2026-09-02T09:50:00Z",
+        "note": "Bekreftet 18.00 CEST (16.00 UTC) mot TV 2 Plays egen kampliste (\"I dag 18.00\") 2. sep. Verify festet minuttet mot broadcaster-siden."
       },
       "streaming": {
         "sourceId": "tv2",
@@ -3139,7 +3139,13 @@
     "summary": "Elkjøp-ligaen 2026/27 (norsk håndball-toppserie), runde 2. Kolstad tar imot Runar hjemme i Trondheim.\n\nNorsk visning: TV 2 Play (alle kamper). Avspark onsdag 2. sep kl. 18.00 CEST (16.00 UTC).\n\nSander Sagosen spiller ikke lenger for Kolstad (til Aalborg feb. 2025), så ingen norsk stjerne navngitt her.",
     "homeTeamEntityId": "kolstad-handball",
     "awayTeamEntityId": "runar-handball",
-    "id": "327b3c928da3"
+    "id": "327b3c928da3",
+    "verifiedAt": "2026-09-02T09:50:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+      "https://www.handball.no/system/kamper/kamp/?matchid=8191705"
+    ]
   },
   {
     "sport": "golf",
@@ -3313,7 +3319,13 @@
       }
     ],
     "summary": "Kvartfinale i BLAST Open Porto 2026 (Fall) — sluttspillet i Super Bock Arena, Porto (4.–6. sept). Bo3, single-elimination.\n\nTeam Falcons møter G2 Esports; vinneren går til semifinalen mot Team Spirit senere samme uke. Seks katalog-lag i sluttspillet (Falcons, G2, FURIA, Vitality, Spirit, MOUZ).\n\nIngen norsk vinkel (100 Thieves/rain er ikke i feltet). Gratis på BLAST Premiers offisielle Twitch-strøm i Norge; ingen norsk TV-rettighet.",
-    "id": "413186bc11ae"
+    "id": "413186bc11ae",
+    "verifiedAt": "2026-09-02T09:50:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.hltv.org/news/45431/blast-open-porto-playoff-bracket-set",
+      "https://blast.tv/cs/tournaments/open-2026-season-2"
+    ]
   },
   {
     "sport": "football",
@@ -3422,7 +3434,13 @@
       }
     ],
     "summary": "Kvartfinale i BLAST Open Porto 2026 (Fall) — sluttspillet i Super Bock Arena, Porto (4.–6. sept). Bo3, single-elimination.\n\nFURIA møter Team Vitality; vinneren går til semifinalen mot MOUZ. Seks katalog-lag i sluttspillet.\n\nIngen norsk vinkel (100 Thieves/rain er ikke i feltet). Gratis på BLAST Premiers offisielle Twitch-strøm i Norge; ingen norsk TV-rettighet.",
-    "id": "bd0751b253a2"
+    "id": "bd0751b253a2",
+    "verifiedAt": "2026-09-02T09:50:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.hltv.org/news/45431/blast-open-porto-playoff-bracket-set",
+      "https://blast.tv/cs/tournaments/open-2026-season-2"
+    ]
   },
   {
     "sport": "athletics",
@@ -4294,7 +4312,13 @@
       }
     ],
     "summary": "Semifinale i BLAST Open Porto 2026 (Fall), Super Bock Arena, Porto. Bo3, single-elimination.\n\nTeam Spirit (gruppevinner, fritatt fra kvartfinalen) møter vinneren av kvartfinalen Falcons–G2. Motstander avgjøres 4. sept.\n\nIngen norsk vinkel. Gratis på BLAST Premiers offisielle Twitch-strøm i Norge; ingen norsk TV-rettighet.",
-    "id": "5e3337e871d0"
+    "id": "5e3337e871d0",
+    "verifiedAt": "2026-09-02T09:50:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.hltv.org/news/45431/blast-open-porto-playoff-bracket-set",
+      "https://blast.tv/cs/tournaments/open-2026-season-2"
+    ]
   },
   {
     "sport": "football",
@@ -4565,7 +4589,13 @@
       }
     ],
     "summary": "Semifinale i BLAST Open Porto 2026 (Fall), Super Bock Arena, Porto. Bo3, single-elimination.\n\nMOUZ (gruppevinner, fritatt fra kvartfinalen) møter vinneren av kvartfinalen FURIA–Vitality. Motstander avgjøres 4. sept.\n\nIngen norsk vinkel. Gratis på BLAST Premiers offisielle Twitch-strøm i Norge; ingen norsk TV-rettighet.",
-    "id": "1e203cf24fa1"
+    "id": "1e203cf24fa1",
+    "verifiedAt": "2026-09-02T09:50:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.hltv.org/news/45431/blast-open-porto-playoff-bracket-set",
+      "https://blast.tv/cs/tournaments/open-2026-season-2"
+    ]
   },
   {
     "sport": "football",
@@ -4910,7 +4940,13 @@
     },
     "participants": [],
     "summary": "Grand Final i BLAST Open Porto 2026 (Fall), Super Bock Arena, Porto — Bo5 om tittelen og hovedandelen av $1,1 mill.\n\nDe to semifinalevinnerne møtes. Seks katalog-lag var i sluttspillet (Falcons, G2, FURIA, Vitality, Spirit, MOUZ).\n\nIngen norsk vinkel (100 Thieves/rain er ikke i feltet). Gratis på BLAST Premiers offisielle Twitch-strøm i Norge; ingen norsk TV-rettighet.",
-    "id": "de4847c61b77"
+    "id": "de4847c61b77",
+    "verifiedAt": "2026-09-02T09:50:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.hltv.org/news/45431/blast-open-porto-playoff-bracket-set",
+      "https://blast.tv/cs/tournaments/open-2026-season-2"
+    ]
   },
   {
     "sport": "football",
@@ -5557,7 +5593,13 @@
     "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Real Madrid–Inter på Santiago Bernabéu.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
     "id": "d0c36c0ce563",
     "homeTeamEntityId": "real-madrid",
-    "awayTeamEntityId": "internazionale"
+    "awayTeamEntityId": "internazionale",
+    "verifiedAt": "2026-09-02T09:50:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/calendarios-del-real-madrid-en-la-primera-fase-de-la-champions-2026-27-29-08-2026",
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/"
+    ]
   },
   {
     "sport": "football",
@@ -5605,7 +5647,13 @@
     },
     "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Porto–Manchester City på Estádio do Dragão.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
     "id": "4581e3bf8e0a",
-    "awayTeamEntityId": "manchester-city"
+    "awayTeamEntityId": "manchester-city",
+    "verifiedAt": "2026-09-02T09:50:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.mancity.com/news/mens/champions-league-2026-27-league-phase-fixtures-confirmed-63923595",
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/"
+    ]
   },
   {
     "sport": "football",
