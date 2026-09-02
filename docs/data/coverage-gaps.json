@@ -1,8 +1,19 @@
 {
-  "generatedAt": "2026-09-01T23:43:27.572Z",
-  "gapCount": 4,
+  "generatedAt": "2026-09-02T02:14:46.518Z",
+  "gapCount": 5,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Sinquefield Cup",
+      "type": "missing",
+      "imminent": false,
+      "headline": "FIDE ratings - September 2026",
+      "link": "https://en.chessbase.com/post/fide-ratings-september-2026",
+      "feed": "chessbase",
+      "matchCount": 1,
+      "detectedAt": "2026-09-02T02:14:44.927Z"
+    },
     {
       "kind": "tracked-claim",
       "entity": "Kristoffer Reitan",
@@ -13,7 +24,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-reitan",
-      "detectedAt": "2026-09-01T23:43:27.210Z"
+      "detectedAt": "2026-09-02T02:14:45.629Z"
     },
     {
       "kind": "tracked-claim",
@@ -25,7 +36,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-ventura",
-      "detectedAt": "2026-09-01T23:43:27.210Z"
+      "detectedAt": "2026-09-02T02:14:45.629Z"
     },
     {
       "kind": "tracked-claim",
@@ -37,7 +48,7 @@
       "claimedDate": "2026-09-30T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-09-01T23:43:27.210Z"
+      "detectedAt": "2026-09-02T02:14:45.629Z"
     },
     {
       "kind": "tracked-claim",
@@ -45,11 +56,11 @@
       "group": "tournaments",
       "sport": "esports",
       "type": "missing",
-      "imminent": false,
+      "imminent": true,
       "claimedDate": "2026-09-06T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "blast-open-porto-2026",
-      "detectedAt": "2026-09-01T23:43:27.210Z"
+      "detectedAt": "2026-09-02T02:14:45.629Z"
     }
   ],
   "anomalies": [
@@ -58,7 +69,7 @@
       "issue": "file-empty",
       "detail": "docs/data/esports.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-09-01T23:43:27.259Z"
+      "detectedAt": "2026-09-02T02:14:45.674Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
