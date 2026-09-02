@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-02T09:17:29.776Z",
+  "generatedAt": "2026-09-02T14:03:48.789Z",
   "windowDays": 180,
   "records": {
-    "used": 337,
+    "used": 345,
     "skipped": 0
   },
   "sources": {
@@ -609,13 +609,13 @@
       "reliability": null
     },
     "hltv.org": {
-      "checks": 13,
-      "agreed": 13,
+      "checks": 14,
+      "agreed": 14,
       "corrections": 1,
       "bySport": {
         "esports": {
-          "checks": 13,
-          "agreed": 13
+          "checks": 14,
+          "agreed": 14
         }
       },
       "byField": {
@@ -624,11 +624,11 @@
           "agreed": 6
         },
         "time": {
-          "checks": 7,
-          "agreed": 7
+          "checks": 8,
+          "agreed": 8
         }
       },
-      "lastChecked": "2026-08-11T06:16:20Z",
+      "lastChecked": "2026-09-02T09:50:00Z",
       "reliability": 1
     },
     "atptour.com": {
@@ -712,22 +712,26 @@
       "reliability": null
     },
     "blast.tv": {
-      "checks": 1,
-      "agreed": 1,
+      "checks": 3,
+      "agreed": 3,
       "corrections": 0,
       "bySport": {
         "esports": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 3,
+          "agreed": 3
         }
       },
       "byField": {
         "streaming": {
+          "checks": 2,
+          "agreed": 2
+        },
+        "existence": {
           "checks": 1,
           "agreed": 1
         }
       },
-      "lastChecked": "2026-07-18T07:35:00.000Z",
+      "lastChecked": "2026-09-02T09:50:00Z",
       "reliability": null
     },
     "liquipedia.net": {
@@ -1021,13 +1025,13 @@
       "reliability": null
     },
     "uefa.com": {
-      "checks": 15,
-      "agreed": 15,
+      "checks": 16,
+      "agreed": 16,
       "corrections": 0,
       "bySport": {
         "football": {
-          "checks": 15,
-          "agreed": 15
+          "checks": 16,
+          "agreed": 16
         }
       },
       "byField": {
@@ -1036,11 +1040,11 @@
           "agreed": 5
         },
         "time": {
-          "checks": 10,
-          "agreed": 10
+          "checks": 11,
+          "agreed": 11
         }
       },
-      "lastChecked": "2026-08-21T05:57:00Z",
+      "lastChecked": "2026-09-02T09:50:00Z",
       "reliability": 1
     },
     "postnorddanmarkrundt.dk": {
@@ -1971,22 +1975,30 @@
       "reliability": null
     },
     "play.tv2.no": {
-      "checks": 1,
-      "agreed": 1,
+      "checks": 3,
+      "agreed": 3,
       "corrections": 1,
       "bySport": {
         "football": {
           "checks": 1,
           "agreed": 1
+        },
+        "handball": {
+          "checks": 2,
+          "agreed": 2
         }
       },
       "byField": {
         "streaming": {
+          "checks": 2,
+          "agreed": 2
+        },
+        "time": {
           "checks": 1,
           "agreed": 1
         }
       },
-      "lastChecked": "2026-08-14T06:54:47Z",
+      "lastChecked": "2026-09-02T09:50:00Z",
       "reliability": null
     },
     "chess.com": {
@@ -2131,22 +2143,22 @@
       "reliability": null
     },
     "mancity.com": {
-      "checks": 1,
-      "agreed": 1,
+      "checks": 2,
+      "agreed": 2,
       "corrections": 0,
       "bySport": {
         "football": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 2,
+          "agreed": 2
         }
       },
       "byField": {
         "time": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 2,
+          "agreed": 2
         }
       },
-      "lastChecked": "2026-08-17T05:59:00Z",
+      "lastChecked": "2026-09-02T09:50:00Z",
       "reliability": null
     },
     "italiansoccerseriea.com": {
@@ -2729,6 +2741,25 @@
         }
       },
       "lastChecked": "2026-09-01T10:30:00Z",
+      "reliability": null
+    },
+    "realmadrid.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "football": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-09-02T09:50:00Z",
       "reliability": null
     }
   }

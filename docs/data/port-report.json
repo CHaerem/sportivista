@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T09:17:26.579Z",
+  "generatedAt": "2026-09-02T14:03:47.306Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 1.95,
+    "oldestGapAgeDays": 2.15,
     "escalatable": 0,
     "catalogMatched": 1,
     "auditedAt": "2026-09-02T08:15:00Z",
@@ -35,7 +35,7 @@
       {
         "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — de ukentlige serierundene utover Kolstads egne kamper",
         "severity": "medium",
-        "ageDays": 1.95,
+        "ageDays": 2.15,
         "recurrences": 2,
         "catalogMatched": true
       }
@@ -43,11 +43,11 @@
   },
   "amendRate": {
     "nearTermRate": 0,
-    "nearTermChecked": 17,
+    "nearTermChecked": 8,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-09-01T10:30:00Z",
+    "verifyRunAt": "2026-09-02T09:50:00Z",
     "windowRate": 0,
-    "windowChecks": 80,
+    "windowChecks": 88,
     "windowAmendments": 0,
     "windowCorrections": 5,
     "byDay": [
@@ -141,31 +141,35 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-09-02",
+        "checks": 8,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-02T09:17:17.954Z",
+    "buildCheckedAt": "2026-09-02T14:03:41.424Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-02T07:29:36.857Z",
-    "manifestAgeHours": 1.8,
+    "manifestGeneratedAt": "2026-09-02T09:17:29.922Z",
+    "manifestAgeHours": 4.77,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-09-01T10:30:00Z",
-    "verifyAgeHours": 22.79,
-    "corrections": 2,
+    "checkedAt": "2026-09-02T09:50:00Z",
+    "verifyAgeHours": 4.23,
+    "corrections": 0,
     "unresolved": 0,
-    "signals": [
-      "Vuelta a España (pågår): Cyclingnews' abandons-oversikt viser kun Tarling og Beloki ute (etappe 6) — ingen av de fem Uno-X-nordmennene (Johannessen, Leknessu…",
-      "ProCyclingStats (403) og olympics.com (timeout) var utilgjengelige for fersk Vuelta-GC; deltakelse bekreftet via Cyclingnews abandons-side i stedet."
-    ]
+    "signals": []
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-02T09:17:26.578Z"
+    "generatedAt": "2026-09-02T14:03:47.306Z"
   }
 }
