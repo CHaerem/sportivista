@@ -367,6 +367,10 @@ remain accepted for entries that trace to the owner's original brief. Then the
 corroborating URLs. Never track something you can't tie back to the catalog's
 coverage promise. (CI enforces this, so a missing pointer fails the run.)
 Keep the top-level shape: `{ lastUpdated, lastUpdatedBy, version, leagues, athletes, tournaments, notes }`.
+`leagues`/`athletes`/`tournaments`/`notes` are all **arrays** (CI's tracked-schema
+test hard-fails otherwise). `notes` is an array of run-note STRINGS, one per run,
+most-recent-first (cap ~15) — never a single concatenated string with `--- TIDLIGERE:`
+separators; prepend this run's note as a NEW element instead.
 
 **Season-proof id roots (WP-162):** recurring leagues/tournaments live in the
 published entity index under a CANONICAL, season-less id (`premier-league`,
