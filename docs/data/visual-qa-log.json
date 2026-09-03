@@ -1,16 +1,16 @@
 {
-  "checkedAt": "2026-09-02T12:31:38Z",
+  "checkedAt": "2026-09-03T12:31:13Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
     "Every match/tournament name read in full at all three widths — no truncation hiding a side of a fixture or a Norwegian name (e.g. 'Brighton & Hove Albion – Leeds United', 'Nottingham Forest – Tottenham Hotspur', 'Fredrikstad – Bodø/Glimt', 'Borussia Mönchengladbach – SV Elversberg') — no repeat of the historical 'Brazil – Nor…' truncation bug.",
     "Every agenda row and every 'DIREKTE NÅ' live item shows a channel, and every one seen is Norwegian/Scandinavian: TV 2 Play, Viaplay, HBO Max (Sport), Discovery+, VG+ Sport, NRK — no FOX/ESPN/Sky.",
-    "No horizontal scroll or overflow at any width; nothing clipped at the screen edge; chevrons and (i) info icons stay fully visible on every inspected row at 375px, 393px, and 900px, verified by scrolling the full page in viewport-sized slices rather than judging a squashed full-page capture.",
-    "Club crests and national flags render as real images (no broken-image icons or empty boxes) at every width, including small tournament flags (F1, DP World Tour) and the generic calendar icon for entries without a crest (handball's Kolstad – Runar).",
+    "No horizontal scroll or overflow at any width; nothing clipped at the screen edge; chevrons and (i) info icons stay fully visible on every inspected row at 375px, 393px, and 900px. Judged from viewport-sized scroll slices (~1400px tall) rather than one squashed full-page capture, since the full-page PNG (~8600-17200px tall) downscales past legibility when read as a single image.",
+    "Club crests and national flags render as real images (no broken-image icons or empty boxes) at every width, including small tournament flags (F1, DP World Tour) and a generic calendar glyph for the one entry without a crest (SC Magdeburg – Kolstad, EHF Champions League) — a placeholder, not a broken image.",
     "Must-see accent dots appear sparingly (a handful per day, e.g. US Open, Fredrikstad–Bodø/Glimt, Manchester City–Coventry City, Brann–Lillestrøm, Valencia–Barcelona, Arsenal–Chelsea), not on every row.",
-    "Header (wordmark, date, theme toggle), day-group headings ('I DAG', 'I MORGEN', weekday headers), and footer (calendar-subscribe line, AI-budsjett line, esports 'NESTE OPP' block, 'Dette dekker vi'/'Merker og kilder' disclosures) all intact and aligned at all three widths.",
-    "Single quiet column, generous spacing, scannable — not a cluttered grid — at all three widths; at 900px the column sits centered with balanced empty margins on both sides.",
-    "The floating 'Assistent' button never covers the last agenda row or the footer at any width — confirmed by scrolling to the true bottom of the page at 375/393/900px; at 900px it rests entirely in the empty right margin beside the 640px column, per the DESIGN.md-sanctioned floating-button idiom."
+    "Header (wordmark, date, theme toggle), day-group headings ('I DAG', 'I MORGEN', weekday headers), and footer (calendar-subscribe line, freshness/AI-budsjett line, esports 'NESTE OPP' block, 'Dette dekker vi'/'Merker og kilder' disclosures) all intact and aligned at all three widths.",
+    "Single quiet column, generous spacing, scannable — not a cluttered grid — at all three widths; at 900px the agenda column sits centered (max ~640-748px content) with the floating Assistent button resting in the empty right margin.",
+    "The floating 'Assistent' button overlaps mid-agenda rows at various scroll positions at 375/393px (by design, DESIGN.md § Hjelperen) but never covers the true last agenda row or the footer — confirmed by scrolling to the actual bottom of the page at all three widths; at 900px it sits entirely beside the column, overlapping nothing."
   ]
 }
