@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-04T07:37:21.152Z",
+  "generatedAt": "2026-09-04T09:22:54.518Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "red",
+    "coverage": "yellow",
     "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
@@ -21,22 +21,29 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 1,
+    "openGaps": 2,
     "bySeverity": {
-      "high": 1,
-      "medium": 0,
-      "low": 0
+      "high": 0,
+      "medium": 1,
+      "low": 1
     },
-    "oldestGapAgeDays": 3.88,
+    "oldestGapAgeDays": 3.95,
     "escalatable": 1,
-    "catalogMatched": 1,
-    "auditedAt": "2026-09-03T08:15:00Z",
+    "catalogMatched": 2,
+    "auditedAt": "2026-09-04T08:20:00Z",
     "gaps": [
       {
-        "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — de ukentlige serierundene utover Kolstads egne kamper",
-        "severity": "high",
-        "ageDays": 3.88,
-        "recurrences": 3,
+        "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — de kommende ukentlige serierundene utover Kolstad",
+        "severity": "medium",
+        "ageDays": 3.95,
+        "recurrences": 4,
+        "catalogMatched": true
+      },
+      {
+        "interest": "Serie A / La Liga / Premier League / Eliteserien — neste serierunde (12.–14. sep)",
+        "severity": "low",
+        "ageDays": 0.04,
+        "recurrences": 0,
         "catalogMatched": true
       }
     ]
@@ -146,15 +153,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-04T07:37:18.389Z",
+    "buildCheckedAt": "2026-09-04T09:22:51.925Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-04T02:21:42.751Z",
-    "manifestAgeHours": 5.26,
+    "manifestGeneratedAt": "2026-09-04T07:37:22.462Z",
+    "manifestAgeHours": 1.76,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-09-03T09:57:00Z",
-    "verifyAgeHours": 21.67,
+    "verifyAgeHours": 23.43,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -163,6 +170,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-04T07:37:21.152Z"
+    "generatedAt": "2026-09-04T09:22:54.517Z"
   }
 }
