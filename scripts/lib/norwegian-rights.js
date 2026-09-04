@@ -196,9 +196,16 @@ export function norwegianRights(ev) {
 		// .claude/skills/norwegian-rights/SKILL.md). NOT a flat "all golf → Viaplay":
 		// Warner Bros. Discovery took ordinary PGA Tour + the Masters/PGA Championship,
 		// Viaplay keeps The Open + US Open + DP World Tour + Ryder Cup.
+		// DP World Tour FIRST — a DP World event whose TITLE happens to contain
+		// "Masters" (Omega European Masters) or "PGA Championship" (BMW PGA
+		// Championship) must NOT fall into the major-championship (Discovery+)
+		// branch below. The tour tag ("DP World Tour" in tournament/meta) is the
+		// reliable signal; check it before the title-keyword majors. (Without this
+		// the researched Viaplay value was clobbered to Discovery+ on every build,
+		// a recurring summary↔streaming mismatch on those two events.)
+		if (/dp world|ryder cup/.test(hay)) return [CH.viaplay];
 		if (/masters|pga championship/.test(hay)) return [CH.discovery];
 		if (/\bthe open\b|open championship|british open|u\.?s\.? open/.test(hay)) return [CH.viaplay];
-		if (/dp world|ryder cup/.test(hay)) return [CH.viaplay];
 		// Only assert PGA Tour rights (HBO Max) when the haystack POSITIVELY says PGA.
 		// The fetcher stamps meta/tournament "PGA Tour" on every PGA event (incl.
 		// opposite-field, e.g. Corales), so this covers the fetcher wholesale. For a
