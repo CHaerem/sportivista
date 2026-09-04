@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-04T09:22:54.518Z",
+  "generatedAt": "2026-09-04T13:59:45.593Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
-    "amendRate": "green",
+    "amendRate": "yellow",
     "silentStops": "green",
     "participantStatus": "green",
     "contracts": "green"
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 1
     },
-    "oldestGapAgeDays": 3.95,
+    "oldestGapAgeDays": 4.14,
     "escalatable": 1,
     "catalogMatched": 2,
     "auditedAt": "2026-09-04T08:20:00Z",
@@ -35,28 +35,28 @@
       {
         "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — de kommende ukentlige serierundene utover Kolstad",
         "severity": "medium",
-        "ageDays": 3.95,
+        "ageDays": 4.14,
         "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "Serie A / La Liga / Premier League / Eliteserien — neste serierunde (12.–14. sep)",
         "severity": "low",
-        "ageDays": 0.04,
+        "ageDays": 0.24,
         "recurrences": 0,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0,
-    "nearTermChecked": 16,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-09-03T09:57:00Z",
+    "nearTermRate": 0.25,
+    "nearTermChecked": 4,
+    "nearTermAmended": 1,
+    "verifyRunAt": "2026-09-04T09:55:00Z",
     "windowRate": 0,
-    "windowChecks": 69,
+    "windowChecks": 73,
     "windowAmendments": 0,
-    "windowCorrections": 5,
+    "windowCorrections": 6,
     "byDay": [
       {
         "date": "2026-08-22",
@@ -148,28 +148,38 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-09-04",
+        "checks": 4,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-04T09:22:51.925Z",
+    "buildCheckedAt": "2026-09-04T13:59:41.082Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-04T07:37:22.462Z",
-    "manifestAgeHours": 1.76,
+    "manifestGeneratedAt": "2026-09-04T09:22:55.986Z",
+    "manifestAgeHours": 4.61,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-09-03T09:57:00Z",
-    "verifyAgeHours": 23.43,
-    "corrections": 0,
+    "checkedAt": "2026-09-04T09:55:00Z",
+    "verifyAgeHours": 4.08,
+    "corrections": 2,
     "unresolved": 0,
-    "signals": []
+    "signals": [
+      "Vuelta a España 2026 (in-progress, WP-95 participation check): confirmed all 5 Uno-X Norwegians (Johannessen, Leknessund, Tjøtta, Dversnes, Tiller) still act…",
+      "Tour of Britain 2026 AMENDED: norwegianPlayers listed Andreas Leknessund + Rasmus Tiller, but both are confirmed racing the Vuelta a España in parallel (Uno-…"
+    ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-04T09:22:54.517Z"
+    "generatedAt": "2026-09-04T13:59:45.593Z"
   }
 }
