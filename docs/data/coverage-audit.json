@@ -1,49 +1,64 @@
 {
-  "auditedAt": "2026-09-03T08:15:00Z",
+  "auditedAt": "2026-09-04T08:20:00Z",
   "horizonDays": 28,
   "gaps": [
     {
-      "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — de ukentlige serierundene utover Kolstads egne kamper",
-      "whatsMissing": "Denne helgens (4.–6. sep) serierunde mangler helt. Bare Kolstads kamper står på tavla (EHF CL SC Magdeburg–Kolstad 9. sep, Bergen Håndball–Kolstad 12. sep) — ingen domestisk Elkjøp-ligaen-runde. Menn denne helgen bl.a. Drammen–Fjellhammer, Sandefjord–Kristiansand TH, Sandnes–Elverum, Runar Elite–Nærbø; kvinner bl.a. Fana–Sola, Follo HK–Larvik, Utleira–Storhamar Elite, Gjerpen–Byåsen (TV 2 Play). Håndball er katalog-tier1 → dekkes wholesale, hele Elkjøp-ligaen (menn + kvinner) skal på tavla, ikke bare Kolstad/Sagosen.",
-      "why": "Web-bekreftet mot handball.no + TV 2 denne kjøringen: sesongen 26/27 er i gang (menn fra 26.–29. aug, kvinner fra 26.–30. aug) og det spilles serierunde denne helgen (Drammen/Sandefjord serieåpner første helgen i sept per handball.no; kvinnekamper på TV 2 Play). Rotårsak strukturell: ingen statisk håndball-fetcher — alt håndboardes, og research følger i praksis kun Kolstad (tracked athlete Sagosen), ikke de ukentlige rundene bredt. BUMPET medium→high: dette er tredje kjøring på rad hullet står uadressert (recurrences 2→3, firstSeen 31. aug). Den varige kuren er en handball.no-fetcher (self-repair-sak, se sourceIssues), men per recall-exhaustion-regelen eskalerer et hull som gjentar seg ≥3 ganger uadressert — research bes nå boarde denne rundens kamper mens fetcheren argumenteres for.",
+      "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — de kommende ukentlige serierundene utover Kolstad",
+      "whatsMissing": "Neste helgs (12.–13. sep) Elkjøp-ligaen-runde er kun delvis på tavla: bare Bergen Håndball–Kolstad (12. sep 18.10 CEST) står der (en Kolstad-kamp). Resten av rundens kamper (menn + kvinner) mangler. DENNE helgens runde (5.–6. sep) er derimot nå komplett boardet (8 kamper: Bergen Håndball–Elverum, Oppsal–Molde Elite, Viking TIF–Sandnes, Nærbø–Bergsøy, Sandefjord–Kristiansand TH, Follo HK–ØIF Arendal Elite, Fana–Tertnes Elite, Fjellhammer–Drammen) — det tidligere HIGH-hullet er løst denne kjøringen.",
+      "why": "Strukturell rotårsak uendret: håndball er katalog-tier1 (wholesale) men har ingen statisk fetcher — hele Elkjøp-ligaen håndboardes runde-for-runde av research, som fyller ~1 uke fram om gangen. Derfor er hver fremtidig runde en ny potensiell blindsone: denne helgen ble boardet etter forrige kjørings eskalering, men 12.–13. sep-runden er ennå bare Kolstad. IKKE bumpet til high og IKKE eskalert: den akutte (denne helgens) instansen er løst, 12.–13. sep er >7 dager ut, og det demonstrerte mønsteret er at rundene boardes ~en uke i forveien. Den varige kuren er en handball.no-fetcher (se sourceIssues), ikke gjentatt research-eskalering.",
       "corroboration": [
-        "https://www.handball.no/nyheter/2026/08/handballsesongen-2627-er-i-gang/",
         "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/eliteserien/",
         "https://www.tv2.no/livesport/haandball/kamper"
       ],
       "suggestedSource": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/eliteserien/",
-      "severity": "high",
+      "severity": "medium",
       "firstSeen": "2026-08-31T10:34:00Z",
-      "recurrences": 3,
-      "severityBumpedFor": "recurred 3 runs unaddressed"
+      "recurrences": 4,
+      "note": "Videreført fra forrige kjørings HIGH handball-hull, men NEDGRADERT medium→ fordi den akutte denne-helgen-instansen er boardet og løst; det gjenværende er den strukturelle fremtidsrunde-avhengigheten av manuell boarding, som best løses av en fetcher (sourceIssue), ikke research."
+    },
+    {
+      "interest": "Serie A / La Liga / Premier League / Eliteserien — neste serierunde (12.–14. sep)",
+      "whatsMissing": "Domestisk fotball-dekning stopper etter denne rundens kamper (4.–7. sep): ingen PL-, La Liga-, Serie A- eller Eliteserien-kamper på tavla 12.–14. sep, mens Bundesliga er boardet komplett t.o.m. 20. sep. Web-hint (NRK/Eurosport-terminliste) at det spilles Eliteserien-runde ~12.–13. sep (bl.a. Vålerenga-derby).",
+      "why": "IKKE en ekte varig blindsone: fetcherne er rullerende nær-tid — football.json holder akkurat nå kun 4.–7. sep-runden for Eliteserien (fotball.no), PL og La Liga (ESPN), og CL kun 8. sep. Neste runde entrer det rullerende vinduet innen 1–2 dager og fylles automatisk av den statiske pipelinen før kampene. Kontrakten er dessuten møtt (Eliteserien upcoming 8 ≥ min 4; PL 10 ≥ 6). Asymmetrien mot Bundesliga skyldes at Bundesliga håndboardes uker fram mens de rullerende ligaene fylles nær kampdag. Lav severity: selv-løsende cadence, ikke et hull research bør fylle (ville skape dedup-arbeid mot fetcheren).",
+      "corroboration": [
+        "https://www.nrk.no/sport/fotball_-kampprogram-for-eliteserien_-slik-spilles-eliteserien-2026-1.17700027",
+        "https://www.eliteserien.no/terminliste"
+      ],
+      "suggestedSource": "https://www.eliteserien.no/terminliste",
+      "severity": "low",
+      "firstSeen": "2026-09-04T08:20:00Z",
+      "recurrences": 0
     }
   ],
   "sourceIssues": [
     {
       "source": "Statisk pipeline — ingen wholesale håndball-fetcher",
-      "issue": "Håndball er katalog-tier1 (wholesale) men har ingen statisk fetcher — hele Elkjøp-ligaen (menn + kvinner) håndboardes av research, som i praksis kun følger Kolstad (Sagosen). Hver ukentlig runde er en ny potensiell blindsone. Kilde finnes (handball.no terminliste + TV 2 Play-oversikt). Dette hullet har nå gjentatt seg 3 kjøringer på rad og er eskalert til research; den strukturelle løsningen er fortsatt en fetcher.",
-      "impact": "Elkjøp-ligaen dekkes smalt (kun Kolstad), ikke wholesale. Argument for en handball.no-fetcher (Elkjøp-ligaen menn + kvinner) for varig wholesale-dekning, ellers gjentar det smale bildet seg ukentlig og krever gjentatt deep-research-eskalering.",
+      "issue": "Håndball er katalog-tier1 (wholesale) men har ingen statisk fetcher — hele Elkjøp-ligaen (menn + kvinner) håndboardes av research ~én uke fram om gangen. Denne kjøringen ER denne helgens runde komplett boardet (8 kamper etter forrige eskalering), men avhengigheten av manuell runde-for-runde-boarding består, så hver fremtidig runde forblir en potensiell blindsone (12.–13. sep pt. kun Kolstad). Kilde finnes (handball.no terminliste + TV 2 Play-oversikt); calibration.json handball.no 3/3 agreed.",
+      "impact": "Argument for en handball.no-fetcher (Elkjøp-ligaen menn + kvinner) for varig wholesale-dekning — self-repair/improve-sak. Uten den gjentar det smale bildet seg ukentlig og krever gjentatt research-boarding.",
       "severity": "high"
     },
     {
-      "source": "Statisk pipeline — ingen wholesale ESPN-fetcher for Bundesliga (ger.1), Serie A (ita.1), UEFA Champions/Europa League",
-      "issue": "ESPN-fetcheren henter kun ligaer med statisk kanal (eng.1 PL, esp.1 La Liga). Bundesliga, Serie A og UEFA-klubbturneringene har ingen statisk fetcher og håndboardes runde-for-runde av research. Denne kjøringen ER de godt boardet (Bundesliga runde 2–4, Serie A giornata, CL MD1 8.–10. sep inkl. Bodø/Glimt–Bayern, EL MD1 16.–17. sep m/Lillestrøm) — men avhengigheten av manuell boarding består, og ingen har contract-blokk i authority.json så coverage-contracts-mekanikken (WP-243) fanger ikke fremtidige brudd mekanisk.",
-      "impact": "Strukturell (ikke akutt denne kjøringen): godt boardet nå. Men hver ny ligaspillrunde forblir en potensiell blindsone til research manuelt boarder den. Argument for ESPN-fetchere (ger.1, ita.1, uefa.champions, uefa.europa) + authority.json contract-blokker.",
+      "source": "Statisk pipeline — ingen wholesale ESPN-fetcher for Bundesliga (ger.1), Serie A (ita.1), UEFA-klubbturneringene",
+      "issue": "ESPN-fetcheren henter kun ligaer med statisk kanal (eng.1 PL, esp.1 La Liga). Bundesliga, Serie A og UEFA-klubbturneringene håndboardes runde-for-runde. Denne kjøringen: Bundesliga godt boardet t.o.m. 20. sep, men Serie A stopper 7. sep (neste giornata 13.–14. + 20.–21. sep mangler) og har ingen contract-blokk i authority.json, så coverage-contracts-mekanikken (WP-243) fanger ikke fremtidige brudd mekanisk.",
+      "impact": "Strukturell (ikke akutt): argument for ESPN-fetchere (ger.1, ita.1, uefa.champions, uefa.europa) + authority.json contract-blokker for mekanisk bruddeteksjon.",
       "severity": "medium"
     }
   ],
   "coveredWell": [
-    "F1 — ESPN-BLINDSONE (source-quirks-mandat, web-sjekket mot board): INGEN mis-datering. Italiensk GP Monza — kval lør 5. sep + race søn 6. sep 15:00 lokal (13:00 UTC) på tavla, bekreftet mot formula1.com/monzanet.it. Ingen F1-race før Monza denne helgen; korrekt. Spansk/Madrid GP 12.–13. sep + Aserbajdsjan 25.–26. sep også boardet.",
-    "IMMINENT-PASS (3.–7. sep) fotball dekket: Eliteserien runde komplett (Aalesund–Start, Fredrikstad–Glimt, Sandefjord–Viking, Rosenborg–HamKam, Brann–Lillestrøm, Molde–KFUM, Sarpsborg–Vålerenga, Kristiansund–Tromsø 4.–6. sep), PL matchweek, La Liga, Serie A giornata, Bundesliga runde 2 alle 4.–6. sep. Golf: Omega European Masters (3. sep, DP World). Sykkel: Vuelta a España (multi-dags-node t.o.m. ~13. sep) + Tour of Britain (2.–6. sep). Athletics: Diamond League-finalen Brussel (4.–5. sep). Tennis: US Open-node.",
-    "HORISONT (3.–30. sep): CL ligaspill MD1 (8.–10. sep, inkl. Bodø/Glimt–Bayern 10. sep) + EL MD1 (16.–17. sep, Torreense–Lillestrøm norsk anker) boardet. UCI Road-VM Montréal (tempo 20. sep, mixed relay 22. sep, fellesstart 26.–27. sep) på tavla. Golf: Irish Open (10. sep), BMW PGA (17. sep), Biltmore Championship (17. sep, FedExCup Fall). Presidents Cup (24. sep). Athletics: World Athletics Ultimate Championship Budapest (11.–13. sep). Tennis: Davis Cup Norge–Kina (18. sep, Ruud), Laver Cup (25. sep). Chess: Global Chess League sesong 4 (fra 3. sep, Carlsen). Landskamper: Norge–Danmark (24. sep) + Norge–Portugal (27. sep).",
-    "KORREKT FRAVÆR (ikke hull): mekaniske entity-gaps Man City + Mesterligaen er overgangsvindu-støy (Man City–Coventry PL 5. sep + Man City–Porto CL 8. sep PÅ tavla; CL MD1 boardet). tracked-claims Reitan/Ventura (golf, DP World-events boardet, ingen bekreftet individuell påmelding) og Håvard «rain» Nygaard (30. sep, 100T sen-annonsering per cs2-sources, HLTV ingen planlagt kamp) → ikke akutt. PGA Tour i legitim FedExCup Fall-pause (Biltmore åpner 17. sep, kontrakt met). Il Lombardia 11. okt utenfor horisont. GP Québec/Montréal (sykkel) ikke katalog-entiteter. Vinteridretter + sandvolleyball av-sesong."
+    "HÅNDBALL — FORRIGE HIGH-HULL LØST: denne helgens (5.–6. sep) Elkjøp-ligaen-runde er nå komplett på tavla (8 kamper menn + kvinner, alle TV 2 Play/TV 2 Sport). Research boardet rundens kamper etter forrige kjørings deep-tier-eskalering. Recall-loopen virket.",
+    "F1 — ESPN-BLINDSONE (source-quirks-mandat, web-sjekket): INGEN mis-datering. Italiensk GP Monza — kval lør 5. sep 16:00 lokal (14:00 UTC) + race søn 6. sep 15:00 lokal (13:00 UTC) på tavla, bekreftet mot formula1.com + monzanet.it (\"4.–6. settembre\"). Neste helgs race også korrekt datert: Madrid/Spansk GP 13. sep 13:00 UTC (Madring debuterer, F1s Sep-13-race per formula1.com; venue-feltet er \"TBD\" — mindre verify-detalj, ikke recall-hull) + Aserbajdsjan 26. sep. Viaplay-rettigheter korrekt.",
+    "IMMINENT-PASS (4.–8. sep) fotball dekket: Eliteserien-runde komplett (Aalesund–Start, Fredrikstad–Bodø/Glimt, Sandefjord–Viking, Rosenborg–HamKam, Brann–Lillestrøm, Molde–KFUM, Sarpsborg–Vålerenga, Kristiansund–Tromsø), PL matchweek (10), La Liga, Serie A, Bundesliga alle 4.–6. sep. CL MD1 8.–10. sep (Man City–Porto, Inter–Real Madrid, Bodø/Glimt–Bayern 10. sep).",
+    "IMMINENT ellers: Golf Omega European Masters (DP World, 3. sep). Sykkel Vuelta a España (multi-dags-node) + Tour of Britain (2.–6. sep). Athletics Diamond League-finalen Brussel (Memorial Van Damme, 4.–5. sep). Tennis US Open-node (finaler ~6.–7. sep, Ruud dekket). Chess Global Chess League sesong 4 (Carlsen). CS2 BLAST Open Porto (Fall) sluttspill (Falcons/G2/FURIA/Vitality/MOUZ/Spirit).",
+    "HORISONT (9. sep–2. okt): EL MD1 (16.–17. sep, Torreense–Lillestrøm norsk anker). UCI Road-VM Montréal (tempo 20. sep, mixed relay 22. sep, fellesstart 26.–27. sep). Golf: Irish Open (10. sep), BMW PGA (17. sep), Biltmore Championship (17. sep, FedExCup Fall), Presidents Cup (24. sep). Athletics WA Ultimate Championship Budapest (11.–13. sep, Ingebrigtsen/Warholm). Tennis Davis Cup Norge–Kina (18. sep, Ruud) + Laver Cup (25. sep). Håndball SC Magdeburg–Kolstad (9. sep EHF CL) + Bergen–Kolstad (12. sep). Landskamper Norge–Danmark (24. sep) + Norge–Portugal (27. sep, Nations League).",
+    "KORREKT FRAVÆR (ikke hull): tracked-claims Reitan/Ventura (golf, DP World-events boardet, ingen bekreftet individuell påmelding) og Håvard «rain» Nygaard (30. sep, 100T sen-annonsering per cs2-sources, HLTV ingen planlagt kamp) → ikke akutt. Vinteridretter (langrenn/skiskyting/alpint/hopp) + sandvolleyball av-sesong. PGA Tour i legitim FedExCup Fall-pause (Biltmore åpner 17. sep, kontrakt met)."
   ],
-  "escalated": true,
+  "escalated": false,
   "notes": [
-    "Kjøring 2026-09-03 ~08:15Z (recall-audit). ÉTT HIGH-hull: Elkjøp-ligaen ukentlige serierunder (menn + kvinner) utover Kolstad — BUMPET fra medium til high fordi det nå har gjentatt seg 3 kjøringer på rad uadressert (recurrences 2→3, firstSeen 31. aug), per recall-exhaustion-regelen. Web-reverifisert denne kjøringen mot handball.no + TV 2 at det spilles serierunde denne helgen (4.–6. sep) som mangler på tavla. ESKALERT til deep-tier research (escalate.request = 'deep', max 1/kjøring).",
-    "IMMINENT-PASS først (source-quirks-mandat). F1 ESPN-blindsone web-sjekket: Monza (kval 5. sep / race 6. sep 15:00 lokal) korrekt boardet mot formula1.com/monzanet.it, ingen mis-datering. Eliteserien-runden komplett på tavla (8 kamper). Vuelta multi-dags-node aktiv.",
-    "HANDBALL-hullet: web-bekreftet at Elkjøp-ligaen menn (Drammen–Fjellhammer, Sandefjord–Kristiansand TH, Sandnes–Elverum, Runar Elite–Nærbø) OG kvinner (Fana–Sola, Follo HK–Larvik, Utleira–Storhamar Elite på TV 2 Play) spiller denne helgen. Kun Kolstads kamper på tavla (EHF CL 9. sep, Bergen–Kolstad 12. sep) → wholesale-håndball dekkes smalt. Varig kur er handball.no-fetcher (sourceIssue, nå high), men rundens kamper eskaleres til research nå.",
-    "MEKANISKE coverage-gaps.json-signaler TRIAGERT (gapCount 5, anomalyCount 0): entity-gaps Man City + Mesterligaen (overgangsvindu-overskrifter, dekket av PL/CL på tavla → falske match). tracked-claims Reitan/Ventura (golf, DP World boardet) + Håvard «rain» Nygaard (30. sep, 100T sen-annonsering, HLTV ingen kamp) → korrekt fravær. Ingen anomalier.",
-    "Ingen ekte contract-breach denne kjøringen (coverage-contracts.json: alle seks kontrakter met, breached=[]). PGA Tours 'upcoming: 1' er i den legitime FedExCup Fall-pausen (21-dagers horisont tåler den; Biltmore 17. sep boardet)."
+    "Kjøring 2026-09-04 ~08:20Z (recall-audit). INGEN akutt HIGH-hull denne kjøringen. Forrige kjørings ÉNE HIGH-hull (Elkjøp-ligaen denne helgens runde) er LØST — research boardet 8 kamper for 5.–6. sep etter deep-tier-eskaleringen. escalated=false: ingenting er confidently-real + imminent + high denne kjøringen, så ingen escalate.request skrevet.",
+    "IMMINENT-PASS først (source-quirks-mandat). F1 ESPN-blindsone web-sjekket mot formula1.com + monzanet.it: Monza (kval 5. sep / race 6. sep 15:00 lokal) korrekt boardet, ingen mis-datering. Neste helgs Madrid/Spansk GP (13. sep) også korrekt datert på tavla (kun venue \"TBD\" — verify-detalj).",
+    "HANDBALL: denne helgens runde løst (coveredWell). Gjenværende er den strukturelle fremtidsrunde-avhengigheten (12.–13. sep pt. kun Kolstad) — nedgradert til medium gap fordi >7 dager ut og mønsteret er ~1 ukes forhåndsboarding; den varige kuren er en handball.no-fetcher (sourceIssue high, self-repair/improve), ikke gjentatt research-eskalering.",
+    "DOMESTISK FOTBALL-CADENCE: PL/La Liga/Serie A/Eliteserien-dekning stopper etter 4.–7. sep-runden mens Bundesliga er boardet t.o.m. 20. sep. Verifisert i football.json at fetcherne (fotball.no + ESPN) er rullerende nær-tid — holder akkurat nå kun denne runden; neste runde (web-bekreftet Eliteserien ~12.–13. sep, Vålerenga-derby) fylles automatisk innen 1–2 dager. Low severity: selv-løsende, kontrakt met, ikke et research-hull.",
+    "MEKANISKE coverage-gaps.json-signaler TRIAGERT (gapCount 3, anomalyCount 0): tracked-claims Reitan/Ventura (golf, DP World boardet) + Håvard «rain» Nygaard (30. sep, 100T sen-annonsering, HLTV ingen kamp) → korrekt fravær. Ingen anomalier, ingen stale-retained.",
+    "Ingen ekte contract-breach denne kjøringen (coverage-contracts.json: alle 6 kontrakter met, breached=[]). PGA Tours upcoming=1 i den legitime FedExCup Fall-pausen (21-dagers horisont tåler den; Biltmore 17. sep boardet)."
   ]
 }
