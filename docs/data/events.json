@@ -74,110 +74,6 @@
     ]
   },
   {
-    "sport": "cross-country",
-    "tournament": "Toppidrettsveka 2026",
-    "title": "Toppidrettsveka: Distanse (Hitra)",
-    "time": "2026-08-21T15:35:00Z",
-    "endTime": "2026-08-21T18:00:00Z",
-    "venue": "Fillan Arena, Hitra",
-    "norwegian": true,
-    "norwegianPlayers": [
-      {
-        "name": "Johannes Høsflot Klæbo",
-        "entityId": "johannes-hosflot-klaebo"
-      }
-    ],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-20T13:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://www.toppidrettsveka.no/program",
-      "https://www.skiforbundet.no/sor-trondelag/nyhetsarkiv/2026/8/toppidrettsveka-folkefest-med-verdensstjerner/",
-      "https://www.proxcskiing.com/traditional-skiing/toppidrettsveka-2026-complete-calendar/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "skiforbundet",
-        "url": "https://www.toppidrettsveka.no/program",
-        "basis": "primary",
-        "retrievedAt": "2026-08-21T05:57:00Z",
-        "note": "Verify 21. aug: arrangorens program - dag 1 Hitra (Fillan Arena) fre 21. aug, menn 53 km klassisk kl. 17.35 CEST (15.35 UTC), kvinner 32 km 17.50. Matcher tavla."
-      },
-      "streaming": {
-        "sourceId": "nrk",
-        "url": "https://tv.nrk.no/serie/toppidrettsveka",
-        "basis": "official",
-        "retrievedAt": "2026-08-21T05:57:00Z",
-        "note": "Toppidrettsveka direkte pa NRK."
-      }
-    },
-    "summary": "Toppidrettsveka sparker i gang på Hitra med distanserenn på rulleski: menn 53 km og kvinner 32 km, begge klassisk fellesstart. Johannes Høsflot Klæbo og resten av landslagseliten er på start.\n\nMennenes 53 km starter kl. 17.35 CEST (15.35 UTC), kvinnenes 32 km kl. 17.50 CEST.\n\nVises gratis på NRK (TV/nett), og på VG+ Sport (VGTV) med abonnement.",
-    "id": "0e30d12aa98b",
-    "verifiedAt": "2026-08-21T05:57:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.toppidrettsveka.no/program",
-      "https://www.nrk.no/mr/toppidrettsveka-tilbake-til-aure-i-2026-1.17822844"
-    ]
-  },
-  {
-    "sport": "athletics",
-    "tournament": "Wanda Diamond League",
-    "title": "Athletissima Lausanne",
-    "time": "2026-08-21T18:00:00Z",
-    "endTime": "2026-08-21T20:00:00Z",
-    "venue": "Stade de la Pontaise, Lausanne",
-    "norwegian": false,
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-07-30T17:50:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://athletissima.ch/en/your-evening",
-      "https://www.diamondleague.com/calendar/"
-    ],
-    "summary": "Athletissima Lausanne – Diamond League-stevne på Stade de la Pontaise, det nest siste før DL-finalen i Brussel (4.–5. sept).\n\nStevnestart kl. 20.00 CEST (18.00 UTC) – bekreftet på arrangørens egen side (athletissima.ch). Det detaljerte øvelsesprogrammet og startlistene publiseres nærmere stevnet.\n\nNorsk visning: NRK (Diamond League-rettighetene i Norge t.o.m. 2029).",
-    "participants": [],
-    "id": "7f421d64c053",
-    "provenance": {
-      "time": {
-        "sourceId": "diamond-league",
-        "url": "https://athletissima.ch/en/your-evening",
-        "basis": "primary",
-        "retrievedAt": "2026-08-15T05:52:03.367Z",
-        "note": "Verify 15. aug: arrangørens egen side oppgir det internasjonale stevnet start 20.00 CEST (18.00 UTC) – korrigerte tidligere anslag 19.45 CEST."
-      },
-      "streaming": {
-        "sourceId": "nrk",
-        "url": "https://tv.nrk.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-07-30T17:50:00Z"
-      }
-    },
-    "verifiedAt": "2026-08-15T05:52:03.367Z",
-    "verificationStatus": "amended",
-    "verificationSources": [
-      "https://athletissima.ch/en/your-evening"
-    ]
-  },
-  {
     "sport": "f1",
     "tournament": "Formula 1 World Championship 2026",
     "title": "Nederlands Grand Prix – sprint",
@@ -3011,76 +2907,6 @@
     ]
   },
   {
-    "sport": "football",
-    "tournament": "Eliteserien",
-    "title": "Aalesund – Start",
-    "time": "2026-09-04T17:00:00.000Z",
-    "endTime": null,
-    "venue": "Color Line Stadium",
-    "meta": "Eliteserien",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/aalesund-start-1834942",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/aalesund-start-1834942",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Aalesund",
-    "awayTeam": "Start",
-    "isFavorite": false,
-    "round": null,
-    "id": "a21062b1d180",
-    "homeTeamEntityId": "aalesund",
-    "awayTeamEntityId": "ik-start"
-  },
-  {
-    "sport": "football",
-    "tournament": "Eliteserien",
-    "title": "Fredrikstad – Bodø/Glimt",
-    "time": "2026-09-04T17:00:00.000Z",
-    "endTime": null,
-    "venue": "Fredrikstad Stadion",
-    "meta": "Eliteserien",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/fredrikstad-bodglimt-1834944",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/fredrikstad-bodglimt-1834944",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Fredrikstad",
-    "awayTeam": "Bodø/Glimt",
-    "isFavorite": true,
-    "round": null,
-    "id": "edbcb2e3784d",
-    "homeTeamEntityId": "fredrikstad",
-    "awayTeamEntityId": "bodo-glimt"
-  },
-  {
     "sport": "esports",
     "tournament": "BLAST Open Porto 2026",
     "title": "FURIA at Team Vitality",
@@ -4515,6 +4341,56 @@
     "awayTeamEntityId": "deportivo-la-coruna"
   },
   {
+    "sport": "football",
+    "tournament": "NM Cupen",
+    "title": "Aalesund at Brann",
+    "time": "2026-09-06T12:00:00Z",
+    "endTime": null,
+    "venue": "Ullevaal Stadion, Oslo",
+    "norwegian": true,
+    "homeTeam": "Brann",
+    "awayTeam": "Aalesund",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/fotball/fotball-nm-kvinner-1e9zpbgw/brann-aalesund-aeqd6mk9",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-04T19:05:40.590Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "catalog.json#tier2.teams",
+      "https://www.fotball.no/turneringer/cup/kvinner/",
+      "https://www.fotball.no/turneringer/nm-kvinner/2026/brann-klare-for-cupfinale---dette-var-deilig/",
+      "https://www.bergen.kommune.no/hvaskjer/kultur-og-idrett/velkommen-til-felles-visning-av-cupfinalen-brannaalesund"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/turneringer/cup/kvinner/",
+        "basis": "primary",
+        "retrievedAt": "2026-09-04T19:05:40.590Z",
+        "note": "NFF/fotball.no setter cupfinalens dato/avspark. Avspark 14.00 CEST (12.00 UTC) bekreftet mot fotball.no + Bergen kommunes offentlige-visning-side + TV 2s sendeskjema (TV 2 studiosending fra 13.00). Uavhengig write-time fact-check confirmed."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/fotball/fotball-nm-kvinner-1e9zpbgw/brann-aalesund-aeqd6mk9",
+        "basis": "official",
+        "retrievedAt": "2026-09-04T19:05:40.590Z",
+        "note": "TV 2 Direkte (lineær) + TV 2 Play — TV 2 har NM-cupen i Norge; bekreftet mot TV 2s eget sendeskjema."
+      }
+    },
+    "summary": "Cupfinalen for kvinner: Brann mot Aalesund på Ullevaal. Avspark 14.00 CEST (12.00 UTC). Aalesund spiller sin aller første cupfinale i klubbens historie; Brann jakter kongepokalen.\n\nNorsk visning: TV 2 Direkte + TV 2 Play (studiosending fra 13.00, avspark 14.00). Fotballpresident Lise Klaveness deler ut pokalen.",
+    "id": "f4003b4ab202",
+    "homeTeamEntityId": "brann",
+    "awayTeamEntityId": "aalesund"
+  },
+  {
     "sport": "f1",
     "tournament": "Formula 1 2026 - Race Weekend",
     "title": "Pirelli Italian Grand Prix",
@@ -5832,16 +5708,13 @@
   },
   {
     "sport": "football",
-    "tournament": "UEFA Champions League",
-    "title": "Inter at Real Madrid",
-    "time": "2026-09-08T19:00:00Z",
+    "tournament": "Champions League",
+    "title": "Real Betis at Lille",
+    "time": "2026-09-08T19:00:00.000Z",
     "endTime": null,
-    "venue": "Santiago Bernabéu, Madrid",
+    "venue": "Decathlon Arena - Stade Pierre-Mauroy",
+    "meta": "Champions League",
     "norwegian": false,
-    "homeTeam": "Real Madrid",
-    "awayTeam": "Inter",
-    "norwegianPlayers": [],
-    "participants": [],
     "streaming": [
       {
         "platform": "TV 2 Play",
@@ -5849,54 +5722,28 @@
         "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-29T19:45:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "catalog.json#tier2.teams",
-      "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/calendarios-del-real-madrid-en-la-primera-fase-de-la-champions-2026-27-29-08-2026",
-      "https://www.si.com/onsi/soccer/real-madrid/champions-league/real-madrid-s-champions-league-opponents-key-dates-and-kickoff-times-announced"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "real-madrid",
-        "url": "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/calendarios-del-real-madrid-en-la-primera-fase-de-la-champions-2026-27-29-08-2026",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T19:45:00Z",
-        "note": "Real Madrids egen offisielle kampoppsett: 8. sep 21:00 CEST, Bernabéu"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T19:45:00Z",
-        "note": "TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031 (norwegian-rights [solid] + authority.json)"
-      }
-    },
-    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Real Madrid–Inter på Santiago Bernabéu.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
-    "id": "d0c36c0ce563",
-    "homeTeamEntityId": "real-madrid",
-    "awayTeamEntityId": "internazionale",
-    "verifiedAt": "2026-09-02T09:50:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/calendarios-del-real-madrid-en-la-primera-fase-de-la-champions-2026-27-29-08-2026",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/"
-    ]
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Lille",
+    "awayTeam": "Real Betis",
+    "isFavorite": false,
+    "round": null,
+    "id": "71200e5374ae",
+    "awayTeamEntityId": "real-betis"
   },
   {
     "sport": "football",
-    "tournament": "UEFA Champions League",
-    "title": "Feyenoord at Barcelona",
-    "time": "2026-09-09T16:45:00Z",
+    "tournament": "Champions League",
+    "title": "Internazionale at Real Madrid",
+    "time": "2026-09-08T19:00:00.000Z",
     "endTime": null,
-    "venue": null,
+    "venue": "Santiago Bernabéu",
+    "meta": "Champions League",
     "norwegian": false,
-    "homeTeam": "Barcelona",
-    "awayTeam": "Feyenoord",
-    "norwegianPlayers": [],
-    "participants": [],
     "streaming": [
       {
         "platform": "TV 2 Play",
@@ -5904,39 +5751,50 @@
         "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-29T19:45:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "catalog.json#tier2.teams",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/",
-      "https://www.fcbarcelona.com/en/news/4352151/champions-league-kick-offs-announced"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T19:45:00Z",
-        "note": "UEFA ligaspill-oppsett per lag: Barcelona–Feyenoord 9. sep 18:45 CEST"
-      },
-      "streaming": {
-        "sourceId": "tv2",
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Internazionale",
+    "isFavorite": true,
+    "round": null,
+    "id": "814f9234b321",
+    "homeTeamEntityId": "real-madrid",
+    "awayTeamEntityId": "internazionale",
+    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Real Madrid–Inter på Santiago Bernabéu.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett."
+  },
+  {
+    "sport": "football",
+    "tournament": "Champions League",
+    "title": "Feyenoord Rotterdam at Barcelona",
+    "time": "2026-09-09T16:45:00.000Z",
+    "endTime": null,
+    "venue": "Spotify Camp Nou",
+    "meta": "Champions League",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
         "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T19:45:00Z",
-        "note": "TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031 (norwegian-rights [solid] + authority.json)"
+        "urlKind": "landing"
       }
-    },
-    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Barcelona–Feyenoord.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett.",
-    "id": "a0abcebb0e01",
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Barcelona",
+    "awayTeam": "Feyenoord Rotterdam",
+    "isFavorite": true,
+    "round": null,
+    "id": "c12e330c69e8",
     "homeTeamEntityId": "barcelona",
-    "verifiedAt": "2026-09-03T09:57:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/"
-    ]
+    "summary": "UEFA Champions League 2026/27, ligaspill runde 1 (MD1). Barcelona–Feyenoord.\n\nNorsk visning: TV 2 Play (TV 2 har eksklusive norske CL-rettigheter t.o.m. 2031). Tider bekreftet mot offisielle/klubbenes egne oppsett."
   },
   {
     "sport": "football",
@@ -8246,58 +8104,5 @@
     "isFavorite": false,
     "round": null,
     "id": "a574973996cf"
-  },
-  {
-    "sport": "football",
-    "tournament": "NM Cupen",
-    "title": "Aalesund at Brann",
-    "time": "2026-09-06T12:00:00Z",
-    "endTime": null,
-    "venue": "Ullevaal Stadion, Oslo",
-    "norwegian": true,
-    "homeTeam": "Brann",
-    "awayTeam": "Aalesund",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/fotball/fotball-nm-kvinner-1e9zpbgw/brann-aalesund-aeqd6mk9",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "TV 2 Direkte",
-        "url": "https://www.tv2.no/direkte",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-04T19:05:40.590Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "catalog.json#tier2.teams",
-      "https://www.fotball.no/turneringer/cup/kvinner/",
-      "https://www.fotball.no/turneringer/nm-kvinner/2026/brann-klare-for-cupfinale---dette-var-deilig/",
-      "https://www.bergen.kommune.no/hvaskjer/kultur-og-idrett/velkommen-til-felles-visning-av-cupfinalen-brannaalesund"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "fotball-no",
-        "url": "https://www.fotball.no/turneringer/cup/kvinner/",
-        "basis": "primary",
-        "retrievedAt": "2026-09-04T19:05:40.590Z",
-        "note": "NFF/fotball.no setter cupfinalens dato/avspark. Avspark 14.00 CEST (12.00 UTC) bekreftet mot fotball.no + Bergen kommunes offentlige-visning-side + TV 2s sendeskjema (TV 2 studiosending fra 13.00). Uavhengig write-time fact-check confirmed."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/fotball/fotball-nm-kvinner-1e9zpbgw/brann-aalesund-aeqd6mk9",
-        "basis": "official",
-        "retrievedAt": "2026-09-04T19:05:40.590Z",
-        "note": "TV 2 Direkte (lineær) + TV 2 Play — TV 2 har NM-cupen i Norge; bekreftet mot TV 2s eget sendeskjema."
-      }
-    },
-    "summary": "Cupfinalen for kvinner: Brann mot Aalesund på Ullevaal. Avspark 14.00 CEST (12.00 UTC). Aalesund spiller sin aller første cupfinale i klubbens historie; Brann jakter kongepokalen.\n\nNorsk visning: TV 2 Direkte + TV 2 Play (studiosending fra 13.00, avspark 14.00). Fotballpresident Lise Klaveness deler ut pokalen.",
-    "id": "f4003b4ab202"
   }
 ]
