@@ -8246,5 +8246,58 @@
     "isFavorite": false,
     "round": null,
     "id": "a574973996cf"
+  },
+  {
+    "sport": "football",
+    "tournament": "NM Cupen",
+    "title": "Aalesund at Brann",
+    "time": "2026-09-06T12:00:00Z",
+    "endTime": null,
+    "venue": "Ullevaal Stadion, Oslo",
+    "norwegian": true,
+    "homeTeam": "Brann",
+    "awayTeam": "Aalesund",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/fotball/fotball-nm-kvinner-1e9zpbgw/brann-aalesund-aeqd6mk9",
+        "urlKind": "deep"
+      },
+      {
+        "platform": "TV 2 Direkte",
+        "url": "https://www.tv2.no/direkte",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-04T19:05:40.590Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "catalog.json#tier2.teams",
+      "https://www.fotball.no/turneringer/cup/kvinner/",
+      "https://www.fotball.no/turneringer/nm-kvinner/2026/brann-klare-for-cupfinale---dette-var-deilig/",
+      "https://www.bergen.kommune.no/hvaskjer/kultur-og-idrett/velkommen-til-felles-visning-av-cupfinalen-brannaalesund"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/turneringer/cup/kvinner/",
+        "basis": "primary",
+        "retrievedAt": "2026-09-04T19:05:40.590Z",
+        "note": "NFF/fotball.no setter cupfinalens dato/avspark. Avspark 14.00 CEST (12.00 UTC) bekreftet mot fotball.no + Bergen kommunes offentlige-visning-side + TV 2s sendeskjema (TV 2 studiosending fra 13.00). Uavhengig write-time fact-check confirmed."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/fotball/fotball-nm-kvinner-1e9zpbgw/brann-aalesund-aeqd6mk9",
+        "basis": "official",
+        "retrievedAt": "2026-09-04T19:05:40.590Z",
+        "note": "TV 2 Direkte (lineær) + TV 2 Play — TV 2 har NM-cupen i Norge; bekreftet mot TV 2s eget sendeskjema."
+      }
+    },
+    "summary": "Cupfinalen for kvinner: Brann mot Aalesund på Ullevaal. Avspark 14.00 CEST (12.00 UTC). Aalesund spiller sin aller første cupfinale i klubbens historie; Brann jakter kongepokalen.\n\nNorsk visning: TV 2 Direkte + TV 2 Play (studiosending fra 13.00, avspark 14.00). Fotballpresident Lise Klaveness deler ut pokalen.",
+    "id": "f4003b4ab202"
   }
 ]
