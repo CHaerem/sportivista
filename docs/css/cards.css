@@ -21,9 +21,15 @@
 .live-item .live-score { font-weight: 600; font-variant-numeric: tabular-nums; }
 /* The right-hand meta (clock / channel / leader) hugs the right, but a long
    channel label ("YouTube (Saint Louis Chess Club) +1") must not squeeze the
-   title into a one-word-per-line column: cap it and let it wrap within its own
-   column so the title keeps the majority of the row. */
-.live-item .live-meta { color: var(--fg-2); font-size: 13px; margin-left: auto; text-align: right; flex: 0 1 auto; min-width: 0; max-width: 42%; overflow-wrap: anywhere; }
+   title into a one-word-per-line column: cap it at 42% so the title keeps the
+   majority of the row, and let a genuinely long label wrap at word boundaries
+   inside that cap. Do NOT let flexbox shrink the column below its content
+   (`flex-shrink: 0`, no `min-width: 0`): the old `flex: 0 1 auto; min-width: 0`
+   let the meta squeeze narrower than a single word, so even a 3-letter channel
+   like "NRK" (or a clock like "45'") split character-by-character into
+   "N"/"RK". With shrink off, the title's column absorbs the squeeze instead,
+   and only the 42% cap can wrap the meta — which happens at spaces. */
+.live-item .live-meta { color: var(--fg-2); font-size: 13px; margin-left: auto; text-align: right; flex: 0 0 auto; max-width: 42%; overflow-wrap: break-word; }
 
 /* Live golf/F1: a quiet line — leader on the right, your athletes' live position
    under the name — that expands to the top of the leaderboard on tap. */

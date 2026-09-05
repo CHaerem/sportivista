@@ -1,9 +1,15 @@
 {
-  "runAt": "2026-09-04T00:00:00Z",
-  "action": "none",
-  "pr": null,
-  "fixed": [],
-  "notes": [
-    "visual-qa-log.json verdict is 'pass' (checkedAt 2026-09-03T12:31:13Z) with an empty findings[] — no high/medium rendering issues to fix. Exited cleanly without opening a PR per ui-fix.md 'When to act' rule 1."
-  ]
+	"runAt": "2026-09-05T12:34:00Z",
+	"action": "opened-pr",
+	"pr": null,
+	"fixed": [
+		"DIREKTE NÅ live-item channel label wrapping mid-word (375/393px): 'NRK' split into 'N'/'RK' and 'NR'/'K', '45'' clock split into '45'/'''"
+	],
+	"notes": [
+		"Root cause: .live-item .live-meta had 'flex: 0 1 auto; min-width: 0; overflow-wrap: anywhere' — flexbox could shrink the right-hand meta column narrower than a single word, so even a 3-letter channel like NRK broke character-by-character.",
+		"Fix (docs/css/cards.css): 'flex: 0 0 auto' (stop shrinking below content) and dropped 'min-width: 0'; kept 'max-width: 42%' and changed overflow-wrap to 'break-word'. The title column now absorbs the squeeze; the meta wraps only at the 42% cap, at word boundaries.",
+		"Verified in a controlled fixture reproducing live.js's liveEventRow DOM at 375/393px dark: before showed 'N'/'RK' + '45'/''', after shows 'NRK' and '45'' intact while the long 'YouTube (Saint Louis Chess Club) +1' label still wraps at spaces within its column (original intent preserved).",
+		"Real dashboard re-screenshot at 375/393/900 — calm single column, agenda/header/footer intact, no regression (the .live-item .live-meta selector is scoped to the DIREKTE NÅ section only).",
+		"npm test: 1537 passed."
+	]
 }
