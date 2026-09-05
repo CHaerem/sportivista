@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T02:17:45.830Z",
+  "generatedAt": "2026-09-05T07:16:41.603Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 1
     },
-    "oldestGapAgeDays": 4.66,
+    "oldestGapAgeDays": 4.86,
     "escalatable": 1,
     "catalogMatched": 2,
     "auditedAt": "2026-09-04T08:20:00Z",
@@ -35,14 +35,14 @@
       {
         "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — de kommende ukentlige serierundene utover Kolstad",
         "severity": "medium",
-        "ageDays": 4.66,
+        "ageDays": 4.86,
         "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "Serie A / La Liga / Premier League / Eliteserien — neste serierunde (12.–14. sep)",
         "severity": "low",
-        "ageDays": 0.75,
+        "ageDays": 0.96,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -54,17 +54,10 @@
     "nearTermAmended": 1,
     "verifyRunAt": "2026-09-04T09:55:00Z",
     "windowRate": 0,
-    "windowChecks": 73,
+    "windowChecks": 69,
     "windowAmendments": 0,
     "windowCorrections": 6,
     "byDay": [
-      {
-        "date": "2026-08-22",
-        "checks": 4,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-08-23",
         "checks": 4,
@@ -160,15 +153,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-05T02:17:37.789Z",
+    "buildCheckedAt": "2026-09-05T07:16:39.107Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-04T23:36:31.411Z",
-    "manifestAgeHours": 2.69,
+    "manifestGeneratedAt": "2026-09-05T02:17:47.524Z",
+    "manifestAgeHours": 4.98,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-09-04T09:55:00Z",
-    "verifyAgeHours": 16.38,
+    "verifyAgeHours": 21.36,
     "corrections": 2,
     "unresolved": 0,
     "signals": [
@@ -180,6 +173,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-05T02:17:45.830Z"
+    "generatedAt": "2026-09-05T07:16:41.603Z"
   }
 }
