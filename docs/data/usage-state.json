@@ -1,22 +1,22 @@
 {
-  "checkedAt": "2026-09-05T21:19:49.342Z",
+  "checkedAt": "2026-09-05T23:00:55.705Z",
   "parsed": true,
-  "unifiedStatus": "allowed",
+  "unifiedStatus": "allowed_warning",
   "session": {
-    "percentUsed": 63,
-    "utilization": 0.63,
+    "percentUsed": 96,
+    "utilization": 0.96,
     "resetsAt": "2026-09-06T00:20:00.000Z",
-    "status": "allowed"
+    "status": "allowed_warning"
   },
   "week": {
-    "percentUsed": 44,
-    "utilization": 0.44,
+    "percentUsed": 51,
+    "utilization": 0.51,
     "resetsAt": "2026-09-07T06:00:00.000Z",
     "status": "allowed"
   },
-  "status": "green",
-  "skipAll": false,
-  "skipNiceToHave": false,
+  "status": "red",
+  "skipAll": true,
+  "skipNiceToHave": true,
   "thresholds": {
     "amber": 0.75,
     "red": 0.9,
