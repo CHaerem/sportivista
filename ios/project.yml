@@ -468,6 +468,14 @@ targets:
       # physical iPhone — this is the build the owner actually runs the eval on.
       - path: SportivistaTests/Fixtures/eval-corpus.json
         buildPhase: resources
+      # The SHARED lens tunables and assistant vocabulary — the same two files
+      # the app target bundles (see its block above). Missing here since they
+      # were introduced; no visible symptom only because the Swift fallbacks
+      # happen to be value-identical today.
+      - path: ../docs/config/lens-config.json
+        buildPhase: resources
+      - path: ../docs/config/assistant-vocab.json
+        buildPhase: resources
       # WP-183 — the display font, same three subsets as the Simulator app
       # target (this is the build the owner actually runs on device).
       - path: ../design/brand/fonts/SpaceGrotesk-Medium-subset.ttf
@@ -476,6 +484,18 @@ targets:
         buildPhase: resources
       - path: ../design/brand/fonts/SpaceGrotesk-Bold-subset.ttf
         buildPhase: resources
+      # WP-186's club marks — see the app target's block for why `type: folder`.
+      # THIS is the target TestFlight archives (`scripts/testflight-upload.js`
+      # defaults to scheme SportivistaDeviceDev and nothing sets TF_SCHEME), and
+      # it never listed them. The 137 PNGs did reach the device — but inside the
+      # embedded widget's .appex, and the APP process's `Bundle.main` is the .app,
+      # not the .appex. So `EntityIdentity.assetExists` answered false for every
+      # entity and the whole logo rung was dead on every build the owner has ever
+      # installed, while the Simulator `Sportivista` target (and the test bundle,
+      # which is what the Swift suite asserts against) had them all along.
+      - path: ../docs/logos
+        buildPhase: resources
+        type: folder
     dependencies:
       # WP-17: embed the widget on device too (paid team signs both with the
       # same identity; the free-team embed failure is history).

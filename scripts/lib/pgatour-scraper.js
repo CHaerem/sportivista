@@ -227,6 +227,46 @@ export async function fetchPGATourField(fetcher = fetchText) {
 	}
 }
 
+/** Round statuses that mean "this round is done" — its tee times are history. */
+const FINISHED_ROUND_STATUS = new Set(["OFFICIAL", "COMPLETE", "COMPLETED", "FINAL"]);
+
+/**
+ * Which round's tee times answer «naar spiller han» RIGHT NOW.
+ *
+ * pgatour.com's own tee-times page opens on `teeTimeV3.defaultRound`, and that
+ * is the field that advances the moment the next round's groups are published.
+ * `pageProps.tournament.currentRound` does NOT: it tracks the round being
+ * PLAYED, so on the Friday of the 2026 TOUR Championship it still read 1 hours
+ * after round 1 had gone `OFFICIAL` — while round 2's groups sat in the very
+ * same payload. Reading currentRound therefore re-published Thursday's 17:24
+ * all through Friday, and both boards then correctly stripped the clock as
+ * stale (`AgendaViewModel.place`, `dashboard.js` golfTeeHint). The owner saw a
+ * golf row with NO tee time while the right one was one field away — which is
+ * why the round is chosen here rather than fixed downstream.
+ *
+ * Order of preference: the site's own default -> the first round that has not
+ * finished -> the round being played -> the old positional guess. Rounds are
+ * matched on `roundInt`, not array position: the array is only incidentally
+ * 1-indexed, and a cut event drops rounds from it.
+ *
+ * @param {Array} rounds
+ * @param {{defaultRound?: number, currentRound?: number}} [hints]
+ * @returns {object|null}
+ */
+export function pickTeeTimeRound(rounds, hints = {}) {
+	if (!Array.isArray(rounds) || rounds.length === 0) return null;
+	const { defaultRound, currentRound } = hints;
+	const groupsOf = (r) => (r && (r.groups || r.teeTimeGroups)) || [];
+	const byInt = (n) => (typeof n === "number" ? rounds.find(r => r.roundInt === n) : undefined);
+	const unfinished = rounds.filter(r =>
+		r.roundStatus && !FINISHED_ROUND_STATUS.has(String(r.roundStatus).toUpperCase()));
+	const positional = rounds[Math.min(Math.max((currentRound || 1) - 1, 0), rounds.length - 1)];
+
+	const candidates = [byInt(defaultRound), ...unfinished, byInt(currentRound), positional];
+	// A round we can actually read groups out of beats a better-labelled empty one.
+	return candidates.find(r => r && groupsOf(r).length > 0) || candidates.find(Boolean) || null;
+}
+
 /**
  * Fetch tee times from pgatour.com/tee-times page.
  * Returns { tournamentName, timezone, playerTeeTimes: Map<normalizedName, info> } or null.
@@ -264,13 +304,12 @@ export async function fetchPGATourTeeTimes(fetcher = fetchText) {
 			return null;
 		}
 
-		// Use currentRound (1-indexed) to pick the right round
-		const roundIndex = Math.min(currentRound - 1, rounds.length - 1);
-		const round = rounds[roundIndex];
+		const round = pickTeeTimeRound(rounds, { defaultRound: ttData.defaultRound, currentRound });
 		if (!round) {
 			console.warn(`PGA Tour tee-times: Round ${currentRound} not found`);
 			return null;
 		}
+		const roundInt = typeof round.roundInt === "number" ? round.roundInt : currentRound;
 
 		const groups = round.groups || round.teeTimeGroups || [];
 		const playerTeeTimes = new Map();
@@ -322,8 +361,8 @@ export async function fetchPGATourTeeTimes(fetcher = fetchText) {
 			return null;
 		}
 
-		console.log(`PGA Tour tee-times loaded: ${tournamentName} round ${currentRound} (${playerTeeTimes.size} players)`);
-		return { tournamentName, timezone, playerTeeTimes };
+		console.log(`PGA Tour tee-times loaded: ${tournamentName} round ${roundInt} (${playerTeeTimes.size} players)`);
+		return { tournamentName, timezone, round: roundInt, playerTeeTimes };
 	} catch (err) {
 		console.warn(`PGA Tour tee-times scrape failed: ${err.message}`);
 		return null;
