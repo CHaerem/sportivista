@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2026-09-05T15:46:52.607Z",
-  "gapCount": 5,
+  "generatedAt": "2026-09-05T17:54:30.319Z",
+  "gapCount": 10,
   "anomalyCount": 0,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Bodø/Glimt",
+      "type": "missing",
+      "imminent": false,
+      "headline": "VAR-sjef erkjenner mulig tabbe: – Ser ut som onside",
+      "link": "https://www.nrk.no/sport/var-sjef-erkjenner-mulig-tabbe_-_-ser-ut-som-onside-1.18015390",
+      "feed": "nrk-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-09-05T17:54:29.287Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Rosenborg",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Rekord-Ceide i ny Rosenborg-seier",
+      "link": "https://www.aftenposten.no/sport/i/16edPK/rekord-ceide-i-ny-rosenborg-seier",
+      "feed": "aftenposten-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-09-05T17:54:29.287Z"
+    },
     {
       "kind": "entity",
       "entity": "Formel 1",
@@ -12,7 +34,29 @@
       "link": "https://www.nrk.no/sport/pierre-gasly-sjokkerte-i-formel-1-kvalifisering-_-slo-tilbake-etter-kjip-beskjed-1.18015454",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-09-05T15:46:51.452Z"
+      "detectedAt": "2026-09-05T17:54:29.287Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Giro d'Italia",
+      "type": "missing",
+      "imminent": false,
+      "headline": "'We're not ruling out anything' - EF Education-EasyPost confirm Richard Carapaz's ongoing fight for overall  in Vuelta a España",
+      "link": "https://www.cyclingnews.com/pro-cycling/racing/were-not-ruling-out-anything-ef-education-easypost-confirm-richard-carapazs-ongoing-fight-for-overall-in-vuelta-a-espana/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-09-05T17:54:29.287Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Giro",
+      "type": "missing",
+      "imminent": false,
+      "headline": "'We're not ruling out anything' - EF Education-EasyPost confirm Richard Carapaz's ongoing fight for overall  in Vuelta a España",
+      "link": "https://www.cyclingnews.com/pro-cycling/racing/were-not-ruling-out-anything-ef-education-easypost-confirm-richard-carapazs-ongoing-fight-for-overall-in-vuelta-a-espana/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-09-05T17:54:29.287Z"
     },
     {
       "kind": "tracked-claim",
@@ -24,7 +68,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-reitan",
-      "detectedAt": "2026-09-05T15:46:52.385Z"
+      "detectedAt": "2026-09-05T17:54:29.990Z"
     },
     {
       "kind": "tracked-claim",
@@ -36,7 +80,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-ventura",
-      "detectedAt": "2026-09-05T15:46:52.385Z"
+      "detectedAt": "2026-09-05T17:54:29.990Z"
     },
     {
       "kind": "tracked-claim",
@@ -48,7 +92,17 @@
       "claimedDate": "2026-09-30T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-09-05T15:46:52.385Z"
+      "detectedAt": "2026-09-05T17:54:29.990Z"
+    },
+    {
+      "kind": "contract-breach",
+      "type": "missing",
+      "interest": "Eliteserien",
+      "sport": "football",
+      "severity": "high",
+      "imminent": true,
+      "detail": "Dekningskontrakt brutt: 3 av minst 4 ventede events innen 14 dager for Eliteserien (i sesong). Gå til den navngitte autoriteten (eliteserien, fotball-no) og fyll tavla.",
+      "detectedAt": "2026-09-05T17:54:30.048Z"
     },
     {
       "kind": "contract-breach",
@@ -57,8 +111,8 @@
       "sport": "football",
       "severity": "high",
       "imminent": true,
-      "detail": "Dekningskontrakt brutt: 3 av minst 6 ventede events innen 14 dager for Premier League (i sesong). Gå til den navngitte autoriteten (premier-league) og fyll tavla.",
-      "detectedAt": "2026-09-05T15:46:52.468Z"
+      "detail": "Dekningskontrakt brutt: 2 av minst 6 ventede events innen 14 dager for Premier League (i sesong). Gå til den navngitte autoriteten (premier-league) og fyll tavla.",
+      "detectedAt": "2026-09-05T17:54:30.048Z"
     }
   ],
   "anomalies": [],
