@@ -79,62 +79,6 @@
     ]
   },
   {
-    "sport": "cross-country",
-    "tournament": "Toppidrettsveka 2026",
-    "title": "Toppidrettsveka: Sprint (Aure)",
-    "time": "2026-08-22T15:05:00Z",
-    "endTime": "2026-08-22T19:00:00Z",
-    "venue": "Aure",
-    "norwegian": true,
-    "norwegianPlayers": [
-      {
-        "name": "Johannes Høsflot Klæbo",
-        "entityId": "johannes-hosflot-klaebo"
-      }
-    ],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-20T13:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://www.toppidrettsveka.no/program",
-      "https://www.skiforbundet.no/sor-trondelag/nyhetsarkiv/2026/8/toppidrettsveka-folkefest-med-verdensstjerner/",
-      "https://www.proxcskiing.com/traditional-skiing/toppidrettsveka-2026-complete-calendar/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "skiforbundet",
-        "url": "https://www.toppidrettsveka.no/program",
-        "basis": "primary",
-        "retrievedAt": "2026-08-21T05:57:00Z",
-        "note": "Verify 21. aug: dag 2 Aure lor 22. aug - sprint (prolog + heat-finaler pa kvelden). Matcher tavla."
-      },
-      "streaming": {
-        "sourceId": "nrk",
-        "url": "https://tv.nrk.no/serie/toppidrettsveka",
-        "basis": "official",
-        "retrievedAt": "2026-08-21T05:57:00Z",
-        "note": "Direkte pa NRK."
-      }
-    },
-    "summary": "Sprintdag i Aure: klassisk sprint med prolog og utslagsheat. Klæbo og landslagseliten jakter sprintseier på rulleski.\n\nPrologen starter kl. 17.05 CEST (15.05 UTC), finaleheatene fra 19.20 CEST. Tidligere på dagen går motbakkeløpet «Brekka Opp» (fri teknikk) kl. 10.30 CEST.\n\nVises gratis på NRK (TV/nett), og på VG+ Sport (VGTV) med abonnement.",
-    "id": "f71983b5b50c",
-    "verifiedAt": "2026-08-21T05:57:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.toppidrettsveka.no/program",
-      "https://www.nordicmag.info/en/rollerskiing-the-full-programme-for-toppidrettsveka-2026-taking-place-this-weekend-in-norway-between-hitra-aure-and-sverresborg-0820/"
-    ]
-  },
-  {
     "sport": "chess",
     "tournament": "Grand Chess Tour",
     "title": "Grand Chess Tour Finals 2026 (St. Louis)",
@@ -202,118 +146,6 @@
       "https://www.chessbase.in/news/grand-chess-tour-semifinals-2026",
       "https://grandchesstour.org/tours/2026/tournaments/gct-finals-2026/"
     ]
-  },
-  {
-    "sport": "football",
-    "tournament": "Serie A",
-    "title": "Napoli at Genoa",
-    "time": "2026-08-22T18:45:00Z",
-    "endTime": null,
-    "venue": "Stadio Luigi Ferraris, Genova",
-    "norwegian": false,
-    "homeTeam": "Genoa",
-    "awayTeam": "Napoli",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://vgtv.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-11T05:30:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://sport.sky.it/calcio/serie-a/calendario-serie-a-anticipi-posticipi-2026-2027-big-match-su-sky",
-      "https://www.goal.com/it/liste/quando-inizia-la-serie-a-2026-27-date-partite-prima-giornata-e-gli-orari-contro-chi-gioca-inter-juventus-milan-napoli-calendario/blt22d0ca493da20933",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
-      "https://www.tvkampen.com/fotball/serie-a"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "lega-serie-a",
-        "url": "https://www.legaseriea.it/serie-a/news/date-orari-e-programmazione-tv-delle-prime-cinque-giornate",
-        "basis": "primary",
-        "retrievedAt": "2026-08-17T05:59:00Z",
-        "note": "Verify 17. aug: bekreftet mot Lega Serie As egen terminliste (legaseriea.it, tidsautoritet) + Goal.com Italia-grid - runde 1: lør 22. aug 18.30 CEST (16.30 UTC) Inter-Monza/Udinese-Como, 20.45 CEST (18.45 UTC) Genoa-Napoli/Parma-Cagliari; søn 23. aug 18.30 Frosinone-Juventus/Venezia-Lecce, 20.45 Atalanta-Sassuolo/Torino-Milan; man 24. aug 18.30 Bologna-Lazio, 20.45 Roma-Fiorentina. Alle tavle-tider stemmer (tidligere secondary/Sky-anslag bekreftet mot arrangørens grid)."
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://www.tvkampen.com/fotball/serie-a",
-        "basis": "official",
-        "retrievedAt": "2026-08-11T05:30:00Z",
-        "note": "VG+ Sport eier de norske Serie A-rettighetene (tvkampen ground truth + VGs egen kunngjøring)"
-      }
-    },
-    "summary": "Serie A 2026/27 sparker i gang: åpningsrunden (giornata 1) 22.–24. august. Genoa–Napoli. Avspark 18:45 UTC.\n\nNorsk visning: VG+ Sport (eier Serie A-rettighetene i Norge). Tidene er bekreftet av Sky Sport Italia + Goal.com og uavhengig fact-checket, men Lega Serie As egen terminliste var bot-blokkert — verify bekrefter mot arrangøren.",
-    "awayTeamEntityId": "napoli",
-    "id": "df3ad7bda7f8",
-    "verifiedAt": "2026-08-17T05:59:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.legaseriea.it/serie-a/news/date-orari-e-programmazione-tv-delle-prime-cinque-giornate",
-      "https://www.goal.com/it/liste/quando-inizia-la-serie-a-2026-27-date-partite-prima-giornata-e-gli-orari-contro-chi-gioca-inter-juventus-milan-napoli-calendario/blt22d0ca493da20933"
-    ],
-    "homeTeamEntityId": "genoa"
-  },
-  {
-    "sport": "football",
-    "tournament": "Serie A",
-    "title": "Cagliari at Parma",
-    "time": "2026-08-22T18:45:00Z",
-    "endTime": null,
-    "venue": "Stadio Ennio Tardini, Parma",
-    "norwegian": false,
-    "homeTeam": "Parma",
-    "awayTeam": "Cagliari",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://vgtv.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-11T05:30:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://sport.sky.it/calcio/serie-a/calendario-serie-a-anticipi-posticipi-2026-2027-big-match-su-sky",
-      "https://www.goal.com/it/liste/quando-inizia-la-serie-a-2026-27-date-partite-prima-giornata-e-gli-orari-contro-chi-gioca-inter-juventus-milan-napoli-calendario/blt22d0ca493da20933",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
-      "https://www.tvkampen.com/fotball/serie-a"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "lega-serie-a",
-        "url": "https://www.legaseriea.it/serie-a/news/date-orari-e-programmazione-tv-delle-prime-cinque-giornate",
-        "basis": "primary",
-        "retrievedAt": "2026-08-17T05:59:00Z",
-        "note": "Verify 17. aug: bekreftet mot Lega Serie As egen terminliste (legaseriea.it, tidsautoritet) + Goal.com Italia-grid - runde 1: lør 22. aug 18.30 CEST (16.30 UTC) Inter-Monza/Udinese-Como, 20.45 CEST (18.45 UTC) Genoa-Napoli/Parma-Cagliari; søn 23. aug 18.30 Frosinone-Juventus/Venezia-Lecce, 20.45 Atalanta-Sassuolo/Torino-Milan; man 24. aug 18.30 Bologna-Lazio, 20.45 Roma-Fiorentina. Alle tavle-tider stemmer (tidligere secondary/Sky-anslag bekreftet mot arrangørens grid)."
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://www.tvkampen.com/fotball/serie-a",
-        "basis": "official",
-        "retrievedAt": "2026-08-11T05:30:00Z",
-        "note": "VG+ Sport eier de norske Serie A-rettighetene (tvkampen ground truth + VGs egen kunngjøring)"
-      }
-    },
-    "summary": "Serie A 2026/27 sparker i gang: åpningsrunden (giornata 1) 22.–24. august. Parma–Cagliari. Avspark 18:45 UTC.\n\nNorsk visning: VG+ Sport (eier Serie A-rettighetene i Norge). Tidene er bekreftet av Sky Sport Italia + Goal.com og uavhengig fact-checket, men Lega Serie As egen terminliste var bot-blokkert — verify bekrefter mot arrangøren.",
-    "id": "50eaed821656",
-    "verifiedAt": "2026-08-17T05:59:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.legaseriea.it/serie-a/news/date-orari-e-programmazione-tv-delle-prime-cinque-giornate",
-      "https://www.goal.com/it/liste/quando-inizia-la-serie-a-2026-27-date-partite-prima-giornata-e-gli-orari-contro-chi-gioca-inter-juventus-milan-napoli-calendario/blt22d0ca493da20933"
-    ],
-    "homeTeamEntityId": "parma",
-    "awayTeamEntityId": "cagliari"
   },
   {
     "sport": "cycling",
@@ -3408,41 +3240,6 @@
   },
   {
     "sport": "football",
-    "tournament": "Eliteserien",
-    "title": "Brann – Lillestrøm",
-    "time": "2026-09-05T16:00:00.000Z",
-    "endTime": null,
-    "venue": "Brann Stadium",
-    "meta": "Eliteserien",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/brann-lillestrm-1834943",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "TV 2 Sport 1",
-        "url": "https://www.tvkampen.com/kamp/brann-lillestrm-1834943",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Brann",
-    "awayTeam": "Lillestrøm",
-    "isFavorite": true,
-    "round": null,
-    "id": "2f60d4ffb8a7",
-    "homeTeamEntityId": "brann",
-    "awayTeamEntityId": "lillestrom"
-  },
-  {
-    "sport": "football",
     "tournament": "Serie A",
     "title": "Napoli at Inter",
     "time": "2026-09-05T16:00:00Z",
@@ -3495,66 +3292,6 @@
       "https://sport.sky.it/calcio/serie-a/calendario-serie-a-anticipi-posticipi-2026-2027-big-match-su-sky",
       "https://www.sportmediaset.mediaset.it/calcio/seriea/calendario-serie-a-2026-2027-date-criteri-novita_112897973-202602k.shtml"
     ]
-  },
-  {
-    "sport": "football",
-    "tournament": "Premier League",
-    "title": "Aston Villa at Hull City",
-    "time": "2026-09-05T16:30:00.000Z",
-    "endTime": null,
-    "venue": "The MKM Stadium",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/hull-aston-villa-1914743",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Hull City",
-    "awayTeam": "Aston Villa",
-    "isFavorite": false,
-    "round": null,
-    "id": "87eabc26c227",
-    "homeTeamEntityId": "hull-city",
-    "awayTeamEntityId": "aston-villa"
-  },
-  {
-    "sport": "football",
-    "tournament": "La Liga",
-    "title": "Racing Santander at Rayo Vallecano",
-    "time": "2026-09-05T16:30:00.000Z",
-    "endTime": null,
-    "venue": "Estadio Municipal de Butarque",
-    "meta": "La Liga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Rayo Vallecano",
-    "awayTeam": "Racing Santander",
-    "isFavorite": false,
-    "round": null,
-    "id": "15dbc2d3266e",
-    "homeTeamEntityId": "rayo-vallecano",
-    "awayTeamEntityId": "racing-santander"
   },
   {
     "sport": "football",
@@ -5610,6 +5347,35 @@
     "round": null,
     "id": "947e6143e2e5",
     "homeTeamEntityId": "manchester-united"
+  },
+  {
+    "sport": "football",
+    "tournament": "Champions League",
+    "title": "Lens at Slavia Prague",
+    "time": "2026-09-10T19:00:00.000Z",
+    "endTime": null,
+    "venue": "Fortuna Arena",
+    "meta": "Champions League",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Slavia Prague",
+    "awayTeam": "Lens",
+    "isFavorite": false,
+    "round": null,
+    "id": "69e10c863b23",
+    "homeTeamEntityId": "slavia-prague"
   },
   {
     "sport": "athletics",
