@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-05T12:21:09.967Z",
+  "generatedAt": "2026-09-05T15:46:51.180Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
     "amendRate": "red",
     "silentStops": "green",
     "participantStatus": "green",
-    "contracts": "green"
+    "contracts": "yellow"
   },
   "basis": {
     "coverageAudit": true,
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 1
     },
-    "oldestGapAgeDays": 5.07,
+    "oldestGapAgeDays": 5.22,
     "escalatable": 1,
     "catalogMatched": 2,
     "auditedAt": "2026-09-05T07:40:00Z",
@@ -35,14 +35,14 @@
       {
         "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — de kommende ukentlige serierundene utover Kolstad",
         "severity": "medium",
-        "ageDays": 5.07,
+        "ageDays": 5.22,
         "recurrences": 5,
         "catalogMatched": true
       },
       {
         "interest": "Eliteserien / Premier League / La Liga / Serie A — neste serierunde (12.–14. sep)",
         "severity": "low",
-        "ageDays": 1.17,
+        "ageDays": 1.31,
         "recurrences": 1,
         "catalogMatched": true
       }
@@ -160,15 +160,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-05T12:21:03.547Z",
+    "buildCheckedAt": "2026-09-05T15:46:45.986Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-05T10:19:44.521Z",
-    "manifestAgeHours": 2.02,
+    "manifestGeneratedAt": "2026-09-05T12:21:11.644Z",
+    "manifestAgeHours": 3.43,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-09-05T09:14:34Z",
-    "verifyAgeHours": 3.11,
+    "verifyAgeHours": 6.54,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
@@ -178,7 +178,15 @@
   "contracts": {
     "total": 6,
     "inSeason": 6,
-    "breached": [],
-    "generatedAt": "2026-09-05T12:21:09.966Z"
+    "breached": [
+      {
+        "id": "football:premier-league",
+        "name": "Premier League",
+        "upcoming": 3,
+        "minUpcoming": 6,
+        "horizonDays": 14
+      }
+    ],
+    "generatedAt": "2026-09-05T15:46:51.180Z"
   }
 }

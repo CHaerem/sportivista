@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-09-05T12:21:11.403Z",
-  "gapCount": 4,
+  "generatedAt": "2026-09-05T15:46:52.607Z",
+  "gapCount": 5,
   "anomalyCount": 0,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "US Open Tennis",
+      "entity": "Formel 1",
       "type": "missing",
       "imminent": false,
-      "headline": "Premier League, Italian GP, WSL and US Open tennis – follow with us",
-      "link": "https://www.theguardian.com/sport/2026/sep/04/premier-league-italian-gp-wsl-and-us-open-tennis-follow-with-us",
-      "feed": "guardian-football",
+      "headline": "Pierre Gasly sjokkerte i Formel 1-kvalifisering – slo tilbake etter kjip beskjed",
+      "link": "https://www.nrk.no/sport/pierre-gasly-sjokkerte-i-formel-1-kvalifisering-_-slo-tilbake-etter-kjip-beskjed-1.18015454",
+      "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-09-05T12:21:10.251Z"
+      "detectedAt": "2026-09-05T15:46:51.452Z"
     },
     {
       "kind": "tracked-claim",
@@ -24,7 +24,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-reitan",
-      "detectedAt": "2026-09-05T12:21:11.216Z"
+      "detectedAt": "2026-09-05T15:46:52.385Z"
     },
     {
       "kind": "tracked-claim",
@@ -36,7 +36,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-ventura",
-      "detectedAt": "2026-09-05T12:21:11.216Z"
+      "detectedAt": "2026-09-05T15:46:52.385Z"
     },
     {
       "kind": "tracked-claim",
@@ -48,7 +48,17 @@
       "claimedDate": "2026-09-30T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-09-05T12:21:11.216Z"
+      "detectedAt": "2026-09-05T15:46:52.385Z"
+    },
+    {
+      "kind": "contract-breach",
+      "type": "missing",
+      "interest": "Premier League",
+      "sport": "football",
+      "severity": "high",
+      "imminent": true,
+      "detail": "Dekningskontrakt brutt: 3 av minst 6 ventede events innen 14 dager for Premier League (i sesong). Gå til den navngitte autoriteten (premier-league) og fyll tavla.",
+      "detectedAt": "2026-09-05T15:46:52.468Z"
     }
   ],
   "anomalies": [],

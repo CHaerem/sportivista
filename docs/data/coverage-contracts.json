@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T12:21:09.966Z",
+  "generatedAt": "2026-09-05T15:46:51.180Z",
   "contracts": [
     {
       "id": "f1:world-championship",
@@ -22,7 +22,7 @@
       ],
       "note": "GP-helger mars–desember, som regel hver 1.–2. uke; 35 d + min 1 tåler sommerpausen (~4 uker).",
       "inSeason": true,
-      "upcoming": 7,
+      "upcoming": 6,
       "status": "met"
     },
     {
@@ -44,7 +44,7 @@
       ],
       "note": "Ukentlige runder (8 kamper) april–november; 14 d + min 4 tåler landslagspauser (~10 d) og delte runder.",
       "inSeason": true,
-      "upcoming": 5,
+      "upcoming": 4,
       "status": "met"
     },
     {
@@ -68,8 +68,8 @@
       ],
       "note": "Ukentlige runder (10 kamper) august–mai; 14 d + min 6 tåler landslagspauser og cuphelger.",
       "inSeason": true,
-      "upcoming": 8,
-      "status": "met"
+      "upcoming": 3,
+      "status": "breached"
     },
     {
       "id": "golf:dp-world-tour",
@@ -147,6 +147,8 @@
       "status": "met"
     }
   ],
-  "breached": [],
+  "breached": [
+    "football:premier-league"
+  ],
   "note": "WP-243: dekningskontrakten per konkurranse — mekanisk måling av løftet i authority.json (contract-blokkene) mot tavla. Brudd triageres av coverage-critic/research via coverage-gaps.json; contracts-porten i port-report.json ruller dommen inn i G2-målingen."
 }
