@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-05T23:29:02.680Z",
+  "generatedAt": "2026-09-06T02:13:18.441Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
     "amendRate": "red",
     "silentStops": "green",
     "participantStatus": "green",
-    "contracts": "red"
+    "contracts": "green"
   },
   "basis": {
     "coverageAudit": true,
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 1
     },
-    "oldestGapAgeDays": 5.54,
+    "oldestGapAgeDays": 5.65,
     "escalatable": 1,
     "catalogMatched": 2,
     "auditedAt": "2026-09-05T07:40:00Z",
@@ -35,14 +35,14 @@
       {
         "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — de kommende ukentlige serierundene utover Kolstad",
         "severity": "medium",
-        "ageDays": 5.54,
+        "ageDays": 5.65,
         "recurrences": 5,
         "catalogMatched": true
       },
       {
         "interest": "Eliteserien / Premier League / La Liga / Serie A — neste serierunde (12.–14. sep)",
         "severity": "low",
-        "ageDays": 1.63,
+        "ageDays": 1.75,
         "recurrences": 1,
         "catalogMatched": true
       }
@@ -160,15 +160,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-05T23:28:56.693Z",
+    "buildCheckedAt": "2026-09-06T02:13:15.588Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-05T21:54:26.488Z",
-    "manifestAgeHours": 1.58,
+    "manifestGeneratedAt": "2026-09-05T23:29:04.503Z",
+    "manifestAgeHours": 2.74,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-09-05T09:14:34Z",
-    "verifyAgeHours": 14.24,
+    "verifyAgeHours": 16.98,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
@@ -178,22 +178,7 @@
   "contracts": {
     "total": 6,
     "inSeason": 6,
-    "breached": [
-      {
-        "id": "football:eliteserien",
-        "name": "Eliteserien",
-        "upcoming": 3,
-        "minUpcoming": 4,
-        "horizonDays": 14
-      },
-      {
-        "id": "football:premier-league",
-        "name": "Premier League",
-        "upcoming": 2,
-        "minUpcoming": 6,
-        "horizonDays": 14
-      }
-    ],
-    "generatedAt": "2026-09-05T23:29:02.679Z"
+    "breached": [],
+    "generatedAt": "2026-09-06T02:13:18.441Z"
   }
 }
