@@ -211,62 +211,6 @@
     ]
   },
   {
-    "sport": "cross-country",
-    "tournament": "Toppidrettsveka 2026",
-    "title": "Toppidrettsveka: Jaktstart (Trondheim)",
-    "time": "2026-08-23T11:00:00Z",
-    "endTime": "2026-08-23T13:15:00Z",
-    "venue": "Sverresborg, Trondheim",
-    "norwegian": true,
-    "norwegianPlayers": [
-      {
-        "name": "Johannes Høsflot Klæbo",
-        "entityId": "johannes-hosflot-klaebo"
-      }
-    ],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-20T13:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://www.toppidrettsveka.no/program",
-      "https://www.skiforbundet.no/sor-trondelag/nyhetsarkiv/2026/8/toppidrettsveka-folkefest-med-verdensstjerner/",
-      "https://www.proxcskiing.com/traditional-skiing/toppidrettsveka-2026-complete-calendar/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "skiforbundet",
-        "url": "https://www.toppidrettsveka.no/program",
-        "basis": "primary",
-        "retrievedAt": "2026-08-21T05:57:00Z",
-        "note": "Verify 21. aug: dag 3 Trondheim/Sverresborg son 23. aug - 20 km klassisk jaktstart avgjor sammenlagt. Matcher tavla."
-      },
-      "streaming": {
-        "sourceId": "nrk",
-        "url": "https://tv.nrk.no/serie/toppidrettsveka",
-        "basis": "official",
-        "retrievedAt": "2026-08-21T05:57:00Z",
-        "note": "Direkte pa NRK."
-      }
-    },
-    "summary": "Toppidrettsveka avsluttes med 20 km jaktstart (klassisk) på Sverresborg i Trondheim — sammenlagtoppgjøret etter distanse- og sprintdagene. Klæbo jakter totalseier.\n\nKvinnenes jaktstart går kl. 13.00 CEST (11.00 UTC), mennenes kl. 14.10 CEST.\n\nVises gratis på NRK (TV/nett), og på VG+ Sport (VGTV) med abonnement.",
-    "id": "bf205093e6a2",
-    "verifiedAt": "2026-08-21T05:57:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.toppidrettsveka.no/program",
-      "https://www.nordicmag.info/en/rollerskiing-the-full-programme-for-toppidrettsveka-2026-taking-place-this-weekend-in-norway-between-hitra-aure-and-sverresborg-0820/"
-    ]
-  },
-  {
     "sport": "athletics",
     "tournament": "Wanda Diamond League",
     "title": "Memoriał Kamili Skolimowskiej (Silesia)",
@@ -4875,16 +4819,13 @@
   },
   {
     "sport": "football",
-    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
-    "title": "Inter Milan at Real Madrid",
-    "time": "2026-09-08T19:00:00Z",
+    "tournament": "Champions League",
+    "title": "Internazionale at Real Madrid",
+    "time": "2026-09-08T19:00:00.000Z",
     "endTime": null,
-    "venue": "Santiago Bernabéu, Madrid",
+    "venue": "Santiago Bernabéu",
+    "meta": "Champions League",
     "norwegian": false,
-    "homeTeam": "Real Madrid",
-    "awayTeam": "Inter Milan",
-    "norwegianPlayers": [],
-    "participants": [],
     "streaming": [
       {
         "platform": "TV 2 Play",
@@ -4892,34 +4833,20 @@
         "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-06T12:20:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
-      "https://www.vg.no/rampelys/i/9pBV8M/tv-2-landet-ny-fotballavtale-sender-champions-league-fram-til-2031"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-        "basis": "primary",
-        "retrievedAt": "2026-09-06T12:20:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-06T12:20:00Z",
-        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
-      }
-    },
-    "summary": "Real Madrid åpner Mesterliga-ligaspillet hjemme mot Inter i en reprise av tidligere storoppgjør.\n\nAvspark tirsdag 8. september kl. 21.00 CEST (19.00 UTC) på Santiago Bernabéu.",
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Internazionale",
+    "isFavorite": true,
+    "round": null,
+    "id": "814f9234b321",
     "homeTeamEntityId": "real-madrid",
     "awayTeamEntityId": "internazionale",
-    "id": "758a8845ada8"
+    "summary": "Real Madrid åpner Mesterliga-ligaspillet hjemme mot Inter i en reprise av tidligere storoppgjør.\n\nAvspark tirsdag 8. september kl. 21.00 CEST (19.00 UTC) på Santiago Bernabéu."
   },
   {
     "sport": "football",

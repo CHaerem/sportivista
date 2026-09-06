@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-06T09:08:51.009Z",
+  "generatedAt": "2026-09-06T13:24:03.359Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
-    "amendRate": "red",
+    "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
     "contracts": "green"
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 1
     },
-    "oldestGapAgeDays": 5.94,
+    "oldestGapAgeDays": 6.12,
     "escalatable": 1,
     "catalogMatched": 3,
     "auditedAt": "2026-09-06T08:25:00Z",
@@ -35,33 +35,33 @@
       {
         "interest": "UEFA Champions League — MD1 (league phase), onsdag 9. + torsdag 10. sep (+ Real Madrid–Inter tir 8. sep)",
         "severity": "high",
-        "ageDays": 0.03,
+        "ageDays": 0.21,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — kommende serierunder utover Kolstad",
         "severity": "medium",
-        "ageDays": 5.94,
+        "ageDays": 6.12,
         "recurrences": 6,
         "catalogMatched": true
       },
       {
         "interest": "Serie A / Eliteserien / Premier League / La Liga — neste serierunde (12.–14. sep)",
         "severity": "low",
-        "ageDays": 2.03,
+        "ageDays": 2.21,
         "recurrences": 2,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.67,
-    "nearTermChecked": 3,
-    "nearTermAmended": 2,
-    "verifyRunAt": "2026-09-05T09:14:34Z",
+    "nearTermRate": 0,
+    "nearTermChecked": 5,
+    "nearTermAmended": 0,
+    "verifyRunAt": "2026-09-06T09:35:00Z",
     "windowRate": 0,
-    "windowChecks": 68,
+    "windowChecks": 73,
     "windowAmendments": 0,
     "windowCorrections": 6,
     "byDay": [
@@ -155,30 +155,35 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-09-06",
+        "checks": 5,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-06T09:08:48.651Z",
+    "buildCheckedAt": "2026-09-06T13:23:58.326Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-06T07:28:53.082Z",
-    "manifestAgeHours": 1.67,
+    "manifestGeneratedAt": "2026-09-06T09:08:52.257Z",
+    "manifestAgeHours": 4.25,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-09-05T09:14:34Z",
-    "verifyAgeHours": 23.9,
-    "corrections": 1,
+    "checkedAt": "2026-09-06T09:35:00Z",
+    "verifyAgeHours": 3.82,
+    "corrections": 0,
     "unresolved": 0,
-    "signals": [
-      "WP-95: Vuelta a Espana 2026 (in-progress) - verified all 5 Uno-X Norwegian riders (Tobias Halland Johannessen, Andreas Leknessund, Martin Tjotta, Fredrik Dve…"
-    ]
+    "signals": []
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-06T09:08:51.008Z"
+    "generatedAt": "2026-09-06T13:24:03.359Z"
   }
 }
