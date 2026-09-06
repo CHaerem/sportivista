@@ -1,15 +1,12 @@
 {
-	"runAt": "2026-09-05T12:34:00Z",
-	"action": "opened-pr",
-	"pr": "https://github.com/CHaerem/sportivista/pull/459",
-	"fixed": [
-		"DIREKTE NÅ live-item channel label wrapping mid-word (375/393px): 'NRK' split into 'N'/'RK' and 'NR'/'K', '45'' clock split into '45'/'''"
-	],
+	"runAt": "2026-09-06T00:00:00Z",
+	"action": "none",
+	"pr": null,
+	"fixed": [],
 	"notes": [
-		"Root cause: .live-item .live-meta had 'flex: 0 1 auto; min-width: 0; overflow-wrap: anywhere' — flexbox could shrink the right-hand meta column narrower than a single word, so even a 3-letter channel like NRK broke character-by-character.",
-		"Fix (docs/css/cards.css): 'flex: 0 0 auto' (stop shrinking below content) and dropped 'min-width: 0'; kept 'max-width: 42%' and changed overflow-wrap to 'break-word'. The title column now absorbs the squeeze; the meta wraps only at the 42% cap, at word boundaries.",
-		"Verified in a controlled fixture reproducing live.js's liveEventRow DOM at 375/393px dark: before showed 'N'/'RK' + '45'/''', after shows 'NRK' and '45'' intact while the long 'YouTube (Saint Louis Chess Club) +1' label still wraps at spaces within its column (original intent preserved).",
-		"Real dashboard re-screenshot at 375/393/900 — calm single column, agenda/header/footer intact, no regression (the .live-item .live-meta selector is scoped to the DIREKTE NÅ section only).",
-		"npm test: 1537 passed."
+		"visual-qa-log.json (verdict 'issues', captured 2026-09-05T11:36:10Z) reports 2 medium findings: the DIREKTE NÅ live-item channel label 'NRK' breaking mid-word at 375px and 393px.",
+		"These exact findings were already fixed by the prior ui-fix run: PR #459, commit 27b06584c 'ui-autofix: keep DIREKTE NÅ channel labels from breaking mid-word', merged at 2026-09-05T12:34:40Z — ~1h AFTER the visual-qa capture, so the log is stale.",
+		"Verified 27b06584c is in main's history and docs/css/cards.css line 32 now reads '.live-item .live-meta { ... flex: 0 0 auto; max-width: 42%; overflow-wrap: break-word; }' (no min-width:0, flex-shrink off), which stops the meta column from squeezing below a single word — the root cause of the character-by-character break. Nothing left to fix.",
+		"No PR opened: there is no code change to make. Awaiting the next visual-qa run against post-fix live state."
 	]
 }
