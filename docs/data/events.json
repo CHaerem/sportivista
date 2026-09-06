@@ -149,236 +149,6 @@
     ]
   },
   {
-    "sport": "cycling",
-    "tournament": "Renewi Tour",
-    "title": "Renewi Tour 2026",
-    "time": "2026-08-23T09:40:00Z",
-    "endTime": "2026-08-23T13:55:00Z",
-    "venue": "Leuven (avslutningsetappe, rundløp)",
-    "norwegian": false,
-    "participants": [
-      {
-        "name": "Uno-X Mobility"
-      }
-    ],
-    "norwegianPlayers": [
-      {
-        "name": "Søren Wærenskjold",
-        "entityId": "soren-waerenskjold"
-      },
-      {
-        "name": "Jonas Abrahamsen",
-        "entityId": "jonas-abrahamsen"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "HBO Max (Sport)",
-        "url": "https://www.hbomax.com/no/no/sports/cycling",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-22T16:50:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "https://en.wikipedia.org/wiki/2026_Renewi_Tour",
-      "https://renewitour.com/en/stages/",
-      "https://cyclinguptodate.com/cycling/what-time-do-the-renewi-tour-2026-stages-start-and-finish-where-to-watch-on-tv-and-live-on-usa-and-uk",
-      "https://www.hbomax.com/no/no/sports/cycling"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "renewi-tour",
-        "url": "https://renewitour.com/en/information-stage-4/",
-        "basis": "primary",
-        "retrievedAt": "2026-08-22T05:52:00Z",
-        "note": "Arrangørens egen etappe-4-infoside bekrefter offisiell start 11:40 CEST (09:40 UTC), ventet mål 16:05 CEST — bekrefter det tidligere sekundære ~11.40-anslaget."
-      },
-      "streaming": {
-        "sourceId": "hbo-max",
-        "url": "https://www.hbomax.com/no/no/sports/cycling",
-        "basis": "official",
-        "retrievedAt": "2026-08-22T05:20:00Z"
-      }
-    },
-    "summary": "Sammenlagt før avslutningsetappen: Jasper Philipsen (Alpecin-Deceuninck) har tatt ledelsen etter å ha vunnet etappe 4 (spurtseier foran Olav Kooij), foran Jenno Berckmoes. Beste Uno-X-rytter er Søren Wærenskjold i toppen av sammendraget (7.-plass +23 sek etter etappe 3, også nr. 3 i poengkonkurransen), Jonas Abrahamsen lenger ned. Eksakte Uno-X-plasseringer etter etappe 4 bekreftes av verify (ProCyclingStats blokkerte henting denne kjøringen).\n\nRenewi Tour (tidl. BinckBank/Benelux Tour) er Beneluxs eneste WorldTour-etapperitt – fem etapper 19.–23. august. Avslutningsetappen (søn. 23.): rundløp i og rundt Leuven, 184 km, 1 821 høydemeter – en teknisk, punchy finale som kan snu sammenlagt. Start ~11.40 CEST (09.40 UTC).",
-    "id": "93886973ae6d",
-    "verifiedAt": "2026-08-22T05:52:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://renewitour.com/en/information-stage-4/"
-    ]
-  },
-  {
-    "sport": "athletics",
-    "tournament": "Wanda Diamond League",
-    "title": "Memoriał Kamili Skolimowskiej (Silesia)",
-    "time": "2026-08-23T14:00:00Z",
-    "endTime": "2026-08-23T16:30:00Z",
-    "venue": "Stadion Śląski, Chorzów, Polen",
-    "norwegian": true,
-    "norwegianPlayers": [
-      {
-        "name": "Karsten Warholm",
-        "entityId": "karsten-warholm"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-07-31T11:00:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.diamondleague.com/calendar/",
-      "https://www.diamondleague.com/dos-santos-to-challenge-warholm-in-silesia/",
-      "https://silesia.diamondleague.com/programme-results/"
-    ],
-    "summary": "Memoriał Kamili Skolimowskiej i Chorzów – 13. og nest siste ordinære Diamond League-stevne før finalen i Brussel (4.–5. sept). Silesia-etappen holdes på Stadion Śląski.\n\nKarsten Warholm løper 400 m hekk mot Alison dos Santos (fjerde oppgjør i 2026; begge alt klare for finalen) – bekreftet av Diamond League. Stevnestart er oppgitt til ca. kl. 16.00 CEST (14.00 UTC); det eksakte øvelsesprogrammet med starttidene er ennå ikke publisert på arrangørens side, så klokkeslettet er foreløpig og bekreftes nærmere stevnet.\n\nNorsk visning: NRK (Diamond League-rettighetene i Norge t.o.m. 2029).",
-    "participants": [],
-    "id": "27a866a899ad",
-    "provenance": {
-      "time": {
-        "sourceId": "diamond-league",
-        "url": "https://www.diamondleague.com/calendar/",
-        "basis": "secondary",
-        "retrievedAt": "2026-07-31T11:00:00Z",
-        "note": "Verify 17. aug: dato (søn 23. aug, Stadion Śląski) bekreftet HIGH mot Diamond League + etusuora (feltøvelser lør 22. aug, hovedøkt søn 23. aug). Warholm bekreftet i 400 m hekk mot Alison dos Santos (Diamond League: «Warholm and Mahuchikh head to Silesia» + «Dos Santos to challenge Warholm»). Eksakt stevnestart (16.00 CEST anslag) fortsatt IKKE offisielt publisert - detaljert øvelsesprogram med starttider ikke ute enda; holder anslaget + confidence medium til timeplanen slippes."
-      },
-      "streaming": {
-        "sourceId": "nrk",
-        "url": "https://tv.nrk.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-07-31T11:00:00Z"
-      }
-    },
-    "verifiedAt": "2026-08-17T05:59:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.diamondleague.com/dos-santos-to-challenge-warholm-in-silesia/",
-      "https://www.diamondleague.com/warholm-and-mahuchikh-head-to-silesia/",
-      "https://etusuora.com/en/athletics/diamond-league/chorzow"
-    ]
-  },
-  {
-    "sport": "football",
-    "tournament": "Serie A",
-    "title": "Juventus at Frosinone",
-    "time": "2026-08-23T16:30:00Z",
-    "endTime": null,
-    "venue": "Stadio Benito Stirpe, Frosinone",
-    "norwegian": false,
-    "homeTeam": "Frosinone",
-    "awayTeam": "Juventus",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://vgtv.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-11T05:30:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://sport.sky.it/calcio/serie-a/calendario-serie-a-anticipi-posticipi-2026-2027-big-match-su-sky",
-      "https://www.goal.com/it/liste/quando-inizia-la-serie-a-2026-27-date-partite-prima-giornata-e-gli-orari-contro-chi-gioca-inter-juventus-milan-napoli-calendario/blt22d0ca493da20933",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
-      "https://www.tvkampen.com/fotball/serie-a"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "lega-serie-a",
-        "url": "https://www.legaseriea.it/serie-a/news/date-orari-e-programmazione-tv-delle-prime-cinque-giornate",
-        "basis": "primary",
-        "retrievedAt": "2026-08-17T05:59:00Z",
-        "note": "Verify 17. aug: bekreftet mot Lega Serie As egen terminliste (legaseriea.it, tidsautoritet) + Goal.com Italia-grid - runde 1: lør 22. aug 18.30 CEST (16.30 UTC) Inter-Monza/Udinese-Como, 20.45 CEST (18.45 UTC) Genoa-Napoli/Parma-Cagliari; søn 23. aug 18.30 Frosinone-Juventus/Venezia-Lecce, 20.45 Atalanta-Sassuolo/Torino-Milan; man 24. aug 18.30 Bologna-Lazio, 20.45 Roma-Fiorentina. Alle tavle-tider stemmer (tidligere secondary/Sky-anslag bekreftet mot arrangørens grid)."
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://www.tvkampen.com/fotball/serie-a",
-        "basis": "official",
-        "retrievedAt": "2026-08-11T05:30:00Z",
-        "note": "VG+ Sport eier de norske Serie A-rettighetene (tvkampen ground truth + VGs egen kunngjøring)"
-      }
-    },
-    "summary": "Serie A 2026/27 sparker i gang: åpningsrunden (giornata 1) 22.–24. august. Frosinone–Juventus. Avspark 16:30 UTC.\n\nNorsk visning: VG+ Sport (eier Serie A-rettighetene i Norge). Tidene er bekreftet av Sky Sport Italia + Goal.com og uavhengig fact-checket, men Lega Serie As egen terminliste var bot-blokkert — verify bekrefter mot arrangøren.",
-    "awayTeamEntityId": "juventus",
-    "id": "4131e59ac7e2",
-    "verifiedAt": "2026-08-17T05:59:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.legaseriea.it/serie-a/news/date-orari-e-programmazione-tv-delle-prime-cinque-giornate",
-      "https://www.goal.com/it/liste/quando-inizia-la-serie-a-2026-27-date-partite-prima-giornata-e-gli-orari-contro-chi-gioca-inter-juventus-milan-napoli-calendario/blt22d0ca493da20933"
-    ],
-    "homeTeamEntityId": "frosinone"
-  },
-  {
-    "sport": "football",
-    "tournament": "Serie A",
-    "title": "Lecce at Venezia",
-    "time": "2026-08-23T16:30:00Z",
-    "endTime": null,
-    "venue": "Stadio Pier Luigi Penzo, Venezia",
-    "norwegian": false,
-    "homeTeam": "Venezia",
-    "awayTeam": "Lecce",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://vgtv.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-11T05:30:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://sport.sky.it/calcio/serie-a/calendario-serie-a-anticipi-posticipi-2026-2027-big-match-su-sky",
-      "https://www.goal.com/it/liste/quando-inizia-la-serie-a-2026-27-date-partite-prima-giornata-e-gli-orari-contro-chi-gioca-inter-juventus-milan-napoli-calendario/blt22d0ca493da20933",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A",
-      "https://www.tvkampen.com/fotball/serie-a"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "lega-serie-a",
-        "url": "https://www.legaseriea.it/serie-a/news/date-orari-e-programmazione-tv-delle-prime-cinque-giornate",
-        "basis": "primary",
-        "retrievedAt": "2026-08-17T05:59:00Z",
-        "note": "Verify 17. aug: bekreftet mot Lega Serie As egen terminliste (legaseriea.it, tidsautoritet) + Goal.com Italia-grid - runde 1: lør 22. aug 18.30 CEST (16.30 UTC) Inter-Monza/Udinese-Como, 20.45 CEST (18.45 UTC) Genoa-Napoli/Parma-Cagliari; søn 23. aug 18.30 Frosinone-Juventus/Venezia-Lecce, 20.45 Atalanta-Sassuolo/Torino-Milan; man 24. aug 18.30 Bologna-Lazio, 20.45 Roma-Fiorentina. Alle tavle-tider stemmer (tidligere secondary/Sky-anslag bekreftet mot arrangørens grid)."
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://www.tvkampen.com/fotball/serie-a",
-        "basis": "official",
-        "retrievedAt": "2026-08-11T05:30:00Z",
-        "note": "VG+ Sport eier de norske Serie A-rettighetene (tvkampen ground truth + VGs egen kunngjøring)"
-      }
-    },
-    "summary": "Serie A 2026/27 sparker i gang: åpningsrunden (giornata 1) 22.–24. august. Venezia–Lecce. Avspark 16:30 UTC.\n\nNorsk visning: VG+ Sport (eier Serie A-rettighetene i Norge). Tidene er bekreftet av Sky Sport Italia + Goal.com og uavhengig fact-checket, men Lega Serie As egen terminliste var bot-blokkert — verify bekrefter mot arrangøren.",
-    "id": "afdc279274dd",
-    "verifiedAt": "2026-08-17T05:59:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.legaseriea.it/serie-a/news/date-orari-e-programmazione-tv-delle-prime-cinque-giornate",
-      "https://www.goal.com/it/liste/quando-inizia-la-serie-a-2026-27-date-partite-prima-giornata-e-gli-orari-contro-chi-gioca-inter-juventus-milan-napoli-calendario/blt22d0ca493da20933"
-    ],
-    "homeTeamEntityId": "venezia",
-    "awayTeamEntityId": "lecce"
-  },
-  {
     "sport": "beach volleyball",
     "tournament": "Beach Pro Tour Elite16",
     "title": "Elite16 Montréal – sluttspill",
@@ -3458,131 +3228,6 @@
     "awayTeamEntityId": "aalesund"
   },
   {
-    "sport": "f1",
-    "tournament": "Formula 1 2026 - Race Weekend",
-    "title": "Pirelli Italian Grand Prix",
-    "time": "2026-09-06T13:00:00.000Z",
-    "endTime": null,
-    "venue": "TBD",
-    "meta": "Formula 1 2026 - Race Weekend",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [
-      {
-        "name": "Charles Leclerc"
-      },
-      {
-        "name": "Lewis Hamilton"
-      },
-      {
-        "name": "George Russell"
-      },
-      {
-        "name": "Liam Lawson"
-      },
-      {
-        "name": "Kimi Antonelli"
-      },
-      {
-        "name": "Lando Norris"
-      },
-      {
-        "name": "Arvid Lindblad"
-      },
-      {
-        "name": "Gabriel Bortoleto"
-      },
-      {
-        "name": "Franco Colapinto"
-      },
-      {
-        "name": "Paul Aron"
-      },
-      {
-        "name": "Oscar Piastri"
-      },
-      {
-        "name": "Yuki Tsunoda"
-      },
-      {
-        "name": "Nico Hülkenberg"
-      },
-      {
-        "name": "Oliver Bearman"
-      },
-      {
-        "name": "Luke Browning"
-      },
-      {
-        "name": "Carlos Sainz"
-      },
-      {
-        "name": "Ayumu Iwasa"
-      },
-      {
-        "name": "Esteban Ocon"
-      },
-      {
-        "name": "Valtteri Bottas"
-      },
-      {
-        "name": "Lance Stroll"
-      },
-      {
-        "name": "Fernando Alonso"
-      },
-      {
-        "name": "Colton Herta"
-      }
-    ],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": null,
-    "awayTeam": null,
-    "isFavorite": false,
-    "round": null,
-    "id": "73287bff3c5b"
-  },
-  {
-    "sport": "football",
-    "tournament": "Premier League",
-    "title": "Manchester United at Everton",
-    "time": "2026-09-06T13:00:00.000Z",
-    "endTime": null,
-    "venue": "Hill Dickinson Stadium",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/everton-manchester-united-1914741",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Everton",
-    "awayTeam": "Manchester United",
-    "isFavorite": false,
-    "round": null,
-    "id": "e69b9bb05315",
-    "homeTeamEntityId": "everton",
-    "awayTeamEntityId": "manchester-united"
-  },
-  {
     "sport": "football",
     "tournament": "Serie A",
     "title": "Venezia at Frosinone",
@@ -3853,9 +3498,9 @@
     "norwegian": false,
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/valencia-barcelona-1922598",
-        "urlKind": "deep"
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -4850,16 +4495,13 @@
   },
   {
     "sport": "football",
-    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
-    "title": "Feyenoord at Barcelona",
-    "time": "2026-09-09T16:45:00Z",
+    "tournament": "Champions League",
+    "title": "Feyenoord Rotterdam at Barcelona",
+    "time": "2026-09-09T16:45:00.000Z",
     "endTime": null,
-    "venue": "Spotify Camp Nou, Barcelona",
+    "venue": "Spotify Camp Nou",
+    "meta": "Champions League",
     "norwegian": false,
-    "homeTeam": "Barcelona",
-    "awayTeam": "Feyenoord",
-    "norwegianPlayers": [],
-    "participants": [],
     "streaming": [
       {
         "platform": "TV 2 Play",
@@ -4867,46 +4509,29 @@
         "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-06T12:20:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
-      "https://www.vg.no/rampelys/i/9pBV8M/tv-2-landet-ny-fotballavtale-sender-champions-league-fram-til-2031"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-        "basis": "primary",
-        "retrievedAt": "2026-09-06T12:20:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-06T12:20:00Z",
-        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
-      }
-    },
-    "summary": "Barcelonas første kamp i Champions League-ligaspillet 2026/27, hjemme mot Feyenoord.\n\nAvspark onsdag 9. september kl. 18.45 CEST (16.45 UTC).",
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Barcelona",
+    "awayTeam": "Feyenoord Rotterdam",
+    "isFavorite": true,
+    "round": null,
+    "id": "c12e330c69e8",
     "homeTeamEntityId": "barcelona",
-    "id": "a0abcebb0e01"
+    "summary": "Barcelonas første kamp i Champions League-ligaspillet 2026/27, hjemme mot Feyenoord.\n\nAvspark onsdag 9. september kl. 18.45 CEST (16.45 UTC)."
   },
   {
     "sport": "football",
-    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
-    "title": "Viking at Stuttgart",
-    "time": "2026-09-09T16:45:00Z",
+    "tournament": "Champions League",
+    "title": "Viking FK at VfB Stuttgart",
+    "time": "2026-09-09T16:45:00.000Z",
     "endTime": null,
-    "venue": "MHPArena, Stuttgart",
+    "venue": "MHPArena",
+    "meta": "Champions League",
     "norwegian": true,
-    "homeTeam": "Stuttgart",
-    "awayTeam": "Viking",
-    "norwegianPlayers": [],
-    "participants": [],
     "streaming": [
       {
         "platform": "TV 2 Play",
@@ -4914,35 +4539,20 @@
         "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-06T12:20:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "catalog.json#tier1",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
-      "https://www.vg.no/rampelys/i/9pBV8M/tv-2-landet-ny-fotballavtale-sender-champions-league-fram-til-2031"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-        "basis": "primary",
-        "retrievedAt": "2026-09-06T12:20:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-06T12:20:00Z",
-        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
-      }
-    },
-    "summary": "Norske Viking spiller sitt aller første Champions League-ligaspill – borte mot Stuttgart.\n\nAvspark onsdag 9. september kl. 18.45 CEST (16.45 UTC). Viking slo GNK Dinamo Zagreb i playoffen for å nå ligaspillet.",
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "VfB Stuttgart",
+    "awayTeam": "Viking FK",
+    "isFavorite": false,
+    "round": null,
+    "id": "f6547547695a",
     "homeTeamEntityId": "vfb-stuttgart",
     "awayTeamEntityId": "viking-fk",
-    "id": "f927b9b9c71e"
+    "summary": "Norske Viking spiller sitt aller første Champions League-ligaspill – borte mot Stuttgart.\n\nAvspark onsdag 9. september kl. 18.45 CEST (16.45 UTC). Viking slo GNK Dinamo Zagreb i playoffen for å nå ligaspillet."
   },
   {
     "sport": "handball",
@@ -4999,159 +4609,75 @@
   },
   {
     "sport": "football",
-    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
+    "tournament": "Champions League",
     "title": "Atlético Madrid at Liverpool",
-    "time": "2026-09-09T19:00:00Z",
+    "time": "2026-09-09T19:00:00.000Z",
     "endTime": null,
-    "venue": "Anfield, Liverpool",
+    "venue": "Anfield",
+    "meta": "Champions League",
     "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
     "homeTeam": "Liverpool",
     "awayTeam": "Atlético Madrid",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-06T12:20:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
-      "https://www.vg.no/rampelys/i/9pBV8M/tv-2-landet-ny-fotballavtale-sender-champions-league-fram-til-2031"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-        "basis": "primary",
-        "retrievedAt": "2026-09-06T12:20:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-06T12:20:00Z",
-        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
-      }
-    },
-    "summary": "Liverpool åpner ligaspillet hjemme mot Atlético Madrid.\n\nAvspark onsdag 9. september kl. 21.00 CEST (19.00 UTC) på Anfield.",
+    "isFavorite": true,
+    "round": null,
+    "id": "0f3fce5b336a",
     "homeTeamEntityId": "liverpool",
     "awayTeamEntityId": "atletico-madrid",
-    "id": "b7380d5cdda1"
+    "summary": "Liverpool åpner ligaspillet hjemme mot Atlético Madrid.\n\nAvspark onsdag 9. september kl. 21.00 CEST (19.00 UTC) på Anfield."
   },
   {
     "sport": "football",
-    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
-    "title": "Slovan Bratislava at Paris Saint-Germain",
-    "time": "2026-09-09T19:00:00Z",
-    "endTime": null,
-    "venue": "Parc des Princes, Paris",
-    "norwegian": false,
-    "homeTeam": "Paris Saint-Germain",
-    "awayTeam": "Slovan Bratislava",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-06T12:20:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
-      "https://www.vg.no/rampelys/i/9pBV8M/tv-2-landet-ny-fotballavtale-sender-champions-league-fram-til-2031"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-        "basis": "primary",
-        "retrievedAt": "2026-09-06T12:20:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-06T12:20:00Z",
-        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
-      }
-    },
-    "summary": "Regjerende mester PSG åpner tittelforsvaret hjemme mot Slovan Bratislava.\n\nAvspark onsdag 9. september kl. 21.00 CEST (19.00 UTC).",
-    "homeTeamEntityId": "paris-saint-germain",
-    "id": "e34fb914fc8f"
-  },
-  {
-    "sport": "football",
-    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
-    "title": "Galatasaray at Sporting CP",
-    "time": "2026-09-09T19:00:00Z",
-    "endTime": null,
-    "venue": "Estádio José Alvalade, Lisboa",
-    "norwegian": false,
-    "homeTeam": "Sporting CP",
-    "awayTeam": "Galatasaray",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-06T12:20:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
-      "https://www.vg.no/rampelys/i/9pBV8M/tv-2-landet-ny-fotballavtale-sender-champions-league-fram-til-2031"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-        "basis": "primary",
-        "retrievedAt": "2026-09-06T12:20:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-06T12:20:00Z",
-        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
-      }
-    },
-    "summary": "Sporting CP tar imot Galatasaray i ligaspillets første runde.\n\nAvspark onsdag 9. september kl. 21.00 CEST (19.00 UTC).",
-    "homeTeamEntityId": "sporting-cp",
-    "awayTeamEntityId": "galatasaray",
-    "id": "44dc5b26e401"
-  },
-  {
-    "sport": "football",
-    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
+    "tournament": "Champions League",
     "title": "Arsenal at Napoli",
-    "time": "2026-09-09T19:00:00Z",
+    "time": "2026-09-09T19:00:00.000Z",
     "endTime": null,
-    "venue": "Stadio Diego Armando Maradona, Napoli",
+    "venue": "Stadio Diego Armando Maradona",
+    "meta": "Champions League",
     "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
     "homeTeam": "Napoli",
     "awayTeam": "Arsenal",
-    "norwegianPlayers": [],
-    "participants": [],
+    "isFavorite": true,
+    "round": null,
+    "id": "25d04fed42c1",
+    "homeTeamEntityId": "napoli",
+    "awayTeamEntityId": "arsenal",
+    "summary": "Arsenal åpner Champions League borte mot Napoli.\n\nAvspark onsdag 9. september kl. 21.00 CEST (19.00 UTC)."
+  },
+  {
+    "sport": "football",
+    "tournament": "Champions League",
+    "title": "Slovan Bratislava at Paris Saint-Germain",
+    "time": "2026-09-09T19:00:00.000Z",
+    "endTime": null,
+    "venue": "Parc des Princes",
+    "meta": "Champions League",
+    "norwegian": false,
     "streaming": [
       {
         "platform": "TV 2 Play",
@@ -5159,34 +4685,50 @@
         "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-06T12:20:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
-      "https://www.vg.no/rampelys/i/9pBV8M/tv-2-landet-ny-fotballavtale-sender-champions-league-fram-til-2031"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-        "basis": "primary",
-        "retrievedAt": "2026-09-06T12:20:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Paris Saint-Germain",
+    "awayTeam": "Slovan Bratislava",
+    "isFavorite": false,
+    "round": null,
+    "id": "714222d5e176",
+    "homeTeamEntityId": "paris-saint-germain",
+    "summary": "Regjerende mester PSG åpner tittelforsvaret hjemme mot Slovan Bratislava.\n\nAvspark onsdag 9. september kl. 21.00 CEST (19.00 UTC)."
+  },
+  {
+    "sport": "football",
+    "tournament": "Champions League",
+    "title": "Galatasaray at Sporting CP",
+    "time": "2026-09-09T19:00:00.000Z",
+    "endTime": null,
+    "venue": "Estádio José Alvalade",
+    "meta": "Champions League",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
         "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-06T12:20:00Z",
-        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
+        "urlKind": "landing"
       }
-    },
-    "summary": "Arsenal åpner Champions League borte mot Napoli.\n\nAvspark onsdag 9. september kl. 21.00 CEST (19.00 UTC).",
-    "homeTeamEntityId": "napoli",
-    "awayTeamEntityId": "arsenal",
-    "id": "a6417c6261c7"
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Sporting CP",
+    "awayTeam": "Galatasaray",
+    "isFavorite": false,
+    "round": null,
+    "id": "c044110bddec",
+    "homeTeamEntityId": "sporting-cp",
+    "awayTeamEntityId": "galatasaray",
+    "summary": "Sporting CP tar imot Galatasaray i ligaspillets første runde.\n\nAvspark onsdag 9. september kl. 21.00 CEST (19.00 UTC)."
   },
   {
     "sport": "golf",
