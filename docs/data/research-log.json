@@ -1,25 +1,22 @@
 {
-  "runAt": "2026-09-06T12:20:00Z",
-  "tier": "deep",
-  "eventsAdded": 13,
+  "runAt": "2026-09-06T22:20:00Z",
+  "tier": "standard",
+  "eventsAdded": 1,
   "eventsRemoved": 0,
-  "trackedDelta": "champions-league-2026-27: reason oppdatert (MD1 re-boardet + maxEvents:30-rotårsak-korreksjon), evidence +UEFA-fixtures, expires→2026-09-30. Ingen entry lagt til/fjernet.",
+  "trackedDelta": "obos-ligaen-2026: reason oppdatert (Hødd–Lyn 13. sep boardet, next-fixture-hull tettet). karsten-warholm: reason→«sesong ferdig» (trakk seg fra DL-finalen), expires 6. sep→2027-03-31. DROPPET diamond-league-2026-august-meets (alle stevner + Brussel-finalen ferdigspilt, expired). Ingen entry lagt til.",
   "quality": {
     "pass": true,
-    "score": 90,
+    "score": 95,
     "failures": [
-      "Evidence-domenemonokultur (adressert i én bounded revisjon): de 13 CL MD1-eventene siterte kun uefa.com + wikipedia.org — la til vg.no (TV 2s CL-avtale, nådd under write-time fact-check) som tredje uavhengige domene på alle 13.",
-      "research-log.json var ikke skrevet da grader kjørte (forventet — den kjørte før dette steget); nå skrevet."
-    ],
-    "note": "Uavhengig grader-subagent (fresh-context, leste research-rubric.md + outputs): pass, 90/100, ingen hard failures. Skrivetids-fact-check (egen fresh-context subagent) bekreftet 13/13 CL MD1-kamper (dato/tid/hjemme-borte) mot UEFA match-sider + klubbsider + Wikipedia, ingen kildekonflikt. Begge grader-poeng adressert etterpå (bounded revisjon på evidence + denne loggen)."
+      "Minor: Eliteserien contract-breach dismissed as a self-solving fetcher-window false positive (13-14 Sep matches expected to fill within 1-2 days) without independent verification this run — sound reasoning, but the recall assumption is unconfirmed.",
+      "Minor: single-event write-time fact-check used two-source agreement (fotball.no primary + TNT/Eurosport) rather than a dedicated fresh-context subagent — acceptable at single-event scope."
+    ]
   },
   "notes": [
-    "DEEP-tier kjøring (coverage-critic escalated=true, den ene akutte HIGH-hullen). PRIMÆRJOBB: CL 2026/27 Matchday 1 var kun DELVIS på tavla — kun tirsdag 8. sep-delen (5 kamper, levert av en statisk uefa.champions ESPN-fetcher) sto; HELE onsdag 9. + torsdag 10. sep + Real Madrid–Inter (8. sep) manglet. La til ALLE 13 manglende MD1-kamper som ai-research (high): Real Madrid–Inter (8. sep 21.00 CEST); Barcelona–Feyenoord, Stuttgart–Viking (18.45), Liverpool–Atlético, PSG–Slovan, Sporting–Galatasaray, Napoli–Arsenal (9. sep); Fenerbahçe–Roma, PSV–Shakhtar (18.45), Como–Leipzig, Bayern–Bodø/Glimt, Man United–Sabah, Slavia–Lens (10. sep).",
-    "TIDER: UEFAs offisielle ligaspill-fixtureliste (provenance.time.basis=primary) + web-søk-korroborasjon, deretter uavhengig fresh-context write-time fact-check → 13/13 confirmed, ingen kildekonflikt. 21.00 CEST=19.00 UTC, 18.45 CEST=16.45 UTC. STREAMING: TV 2 Play (CL er TV 2s i Norge t.o.m. 2030/31, provenance.streaming.basis=official, norwegian-rights [solid]). Titler i ESPN-stil «{borte} at {hjemme}» for ren dedup mot fetcheren. build-events: alle 13 preservert som ai-research (167 events). validate-events: 0 errors.",
-    "NORSK MARQUEE: Viking–Stuttgart (Vikings aller første CL-ligaspill) + Bayern–Bodø/Glimt (norsk seriemester) begge norwegian:true. Katalog-storklubber Real Madrid/Barcelona/Liverpool/Arsenal dekket (Man City–Porto sto alt via statisk fetcher).",
-    "ROTÅRSAK-KORREKSJON (coverage-auditens modell er FORELDET): auditen antar «CL har ingen fetcher» — FEIL. En statisk uefa.champions-fetcher finnes nå (sports-config.js; football.json har 7 ligaer, coverageRatio 1). Den EKTE årsaken til at 9.–10. sep falt ut er maxEvents:30-kuttet i football-fetcheren: i høysesong (PL+La Liga+CL+Eliteserien+OBOS+Copa+VM samtidig, 7-dagersvindu) overstiger fetchen 30, domestiske norske ligaer prioriteres først, og CL-kamper forbi dag 1 kuttes bort før build-events. FLAGGET self-repair/improve: hev/segmenter maxEvents per liga så en marquee-CL-matchday ikke kuttes, ELLER legg authority.json contract-blokk for CL/EL/ECL så et delvis MD-brudd fanges mekanisk (WP-243).",
-    "ØVRIG (coverage-audit coveredWell, triagert, ikke re-boardet): F1 Monza-race korrekt datert (source-quirks ESPN-blindsone web-sjekket — ingen mis-datering); golf (Omega European Masters/Irish Open), Vuelta a España sluttuke, US Open-tennis (Ruud), Global Chess League sesong 4 (Carlsen), CS2 BLAST Open Porto-finale, håndball denne helgens Elkjøp-liga-runde — alle komplett. EL+ECL MD1 (16.–17. sep) boardet forrige kjøring.",
-    "MEKANISKE coverage-gaps.json triagert (gapCount 4, anomalyCount 0): Man City (Haaland-nyhet — Porto–Man City 8. sep ER boardet); tracked-claims Kristoffer Reitan + Kristoffer Ventura (golf, DP World-events boardet, ingen bekreftet individuell påmelding) + Håvard «rain» Nygaard (esports, 100T sen-annonsering, HLTV ingen planlagt kamp) = KORREKT FRAVÆR. Ingen anomalier, ingen stale-retained.",
-    "DEFERRED (lav-horisont): Serie A giornata 4 (12.–14. sep) — coverage-audit rated LOW (>5 dager unna, dekket av ita.1-fetcher-sourceIssue, ikke bumpet). Bundesliga boardet t.o.m. 20. sep. Ikke håndboardet denne kjøringen; self-repair/improve-flagget (ita.1-fetcher + contract-blokk) er den varige fiksen. Ingen registry-reconciliation (ikke ukentlig Mon deep-sweep)."
+    "Standard 4-timers-kjøring, sen søndag kveld. Scout quiet hele dagen etter at 12:20Z-deep-kjøringen tettet dagens ene HIGH-hull (CL MD1 onsdags-/torsdagsrunde + Real Madrid–Inter); ingen fersk eskalering ved denne kjøringen.",
+    "ÉN NY EVENT: Hødd–Lyn (OBOS-ligaen, borte for Lyn) søn. 13. sep 17.00 CEST / 15.00 UTC, Høddvoll Ulsteinvik — high, id 2a7417ae6489. Fylte et ekte next-fixture-hull: Lyn (fulgt katalog-tier2-klubb, OBOS-ligaen har INGEN statisk fetcher) hadde ingen kommende kamp (siste 30. aug Kongsvinger–Lyn). To-kilde-bekreftet: fotball.no terminliste (fiksId 161785, primær-autoritet, lest direkte) + TNT Sports/Eurosport-oppsett — begge enige på dato/tid/arena. Streaming TV 2 Play (official). awayTeamEntityId=fk-lyn-oslo resolver.",
+    "TRIAGE coverage-gaps.json (21:02Z, gapCount 6, anomalyCount 0): Eliteserien contract-breach (high, imminent, 2 av min 4 innen 14 d) determinert SELV-LØSENDE FETCHER-VINDU-FALSKPOSITIV — Eliteserien dekkes wholesale av rullerende ESPN nor.1 + fotball.no; football.json-vinduet rekker pt. kun runde-12s lør. 12. sep-kamper (Lillestrøm–Vålerenga, Rosenborg–Tromsø, static), mens 13.–14. sep-kampene (web-bekreftet av coverage-audit 08:25Z: Bodø/Glimt–Sandefjord man. 14. sep m.fl.) ligger 7–8 dager ut, akkurat utenfor fetcher-vinduet, og fylles automatisk innen ~1–2 dager. IKKE håndboardet (dedup-krig mot fetcheren + gjettede TV-uferdige avspark). PL met (7 upcoming). FLAGG STÅR (improve/self-repair): kontraktens 14-d-horisont overgår nor.1-fetcherens ~5–6-d-vindu → falskt brudd hver helg der inneværende runde er ferdig før neste entrer vinduet.",
+    "tracked-claims Reitan/Ventura (golf, ingen bekreftet nordmanns-startliste) + Håvard «rain» Nygaard (100T sen-annonsering, ingen berammet kamp) = etablerte korrekte fravær (uendret triage). RECONCILE (Step 1): droppet ferdigspilte diamond-league-2026-august-meets; Warholm→ærlig sesong-ferdig.",
+    "build-events: 152 events, validate-events 0 errors (kun stående strukturelle varsler: WP-246 landing-URL på 52, WP-242 weak-basis 7+4, timezone-bleed på fler-dagers, 1 summary↔streaming-mismatch på forbi-event). Ingen katalog-endring; ingen registry-reconciliation (kun deep-tier ukentlig mandags-sveip)."
   ]
 }

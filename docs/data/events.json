@@ -3780,36 +3780,6 @@
   },
   {
     "sport": "football",
-    "tournament": "La Liga",
-    "title": "Sevilla at Espanyol",
-    "time": "2026-09-06T19:00:00.000Z",
-    "endTime": null,
-    "venue": "RCDE Stadium",
-    "meta": "La Liga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/espanyol-sevilla-1922594",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Espanyol",
-    "awayTeam": "Sevilla",
-    "isFavorite": false,
-    "round": null,
-    "id": "ae8a1b922a48",
-    "homeTeamEntityId": "espanyol",
-    "awayTeamEntityId": "sevilla"
-  },
-  {
-    "sport": "football",
     "tournament": "Serie A",
     "title": "Lecce at Cagliari",
     "time": "2026-09-07T16:30:00Z",
@@ -5736,6 +5706,51 @@
     "homeTeamEntityId": "rb-leipzig",
     "awayTeamEntityId": "hamburger-sv",
     "id": "168a76b6a083"
+  },
+  {
+    "sport": "football",
+    "tournament": "OBOS-ligaen",
+    "title": "Hødd – Lyn",
+    "time": "2026-09-13T15:00:00Z",
+    "endTime": null,
+    "venue": "Høddvoll, Ulsteinvik",
+    "norwegian": true,
+    "homeTeam": "Hødd",
+    "awayTeam": "Lyn",
+    "awayTeamEntityId": "fk-lyn-oslo",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-06T22:20:00Z",
+    "confidence": "high",
+    "evidence": [
+      "interests.json#alwaysTrack.teams",
+      "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+      "https://www.tntsports.co.uk/football/obos-ligaen/2026/lyn-il-hodd_mtc1659773/live.shtml"
+    ],
+    "summary": "Lyns bortekamp mot Hødd søndag 13. september kl. 17.00 på Høddvoll i Ulsteinvik (OBOS-ligaen) — Lyns neste seriekamp etter Kongsvinger-oppgjøret 30. august.\n\nDato/tid/arena bekreftet mot fotball.nos terminliste (fiksId 161785, primær-autoritet) + TNT Sports/Eurosport-oppsettet, to kilder enige. TV-valg kan fortsatt flytte avspark 30–60 min; verify følger. Norsk visning TV 2 Play.",
+    "id": "2a7417ae6489",
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+        "basis": "primary",
+        "retrievedAt": "2026-09-06T22:20:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-09-06T22:20:00Z"
+      }
+    }
   },
   {
     "sport": "football",
