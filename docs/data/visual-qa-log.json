@@ -1,30 +1,20 @@
 {
-  "checkedAt": "2026-09-05T11:36:10Z",
+  "checkedAt": "2026-09-07T00:00:00Z",
   "widths": [375, 393, 900],
-  "verdict": "issues",
-  "findings": [
-    {
-      "width": 375,
-      "area": "DIREKTE NÅ — live item channel label",
-      "issue": "The channel/competition label for 'Diamond League-finalen (Memorial Van Damme, Brussel)' wraps mid-word: 'NRK' breaks across two lines as 'N' then 'RK', right-aligned in the live-item meta column. The abbreviation is unrecognizable at a glance until both fragments are read together — the opposite of the calm, scannable 'where to watch' promise for the one section meant to answer that instantly (what's on right now).",
-      "severity": "medium"
-    },
-    {
-      "width": 393,
-      "area": "DIREKTE NÅ — live item channel label",
-      "issue": "Same event, same bug at this width: 'NRK' breaks as 'NR' then 'K' on two lines in the live-item meta column (right-aligned, under the 'Diamond League-finalen' live row). The break point shifts with width, confirming it's the column's word-wrapping, not a one-off. The same event's entry further down in the full day-grouped agenda ('4.–5. september … Wanda Diamond League · NRK') renders 'NRK' intact on one line — the bug is confined to the DIREKTE NÅ summary list.",
-      "severity": "medium"
-    }
-  ],
+  "verdict": "pass",
+  "findings": [],
   "notes": [
-    "Captured as ~900px-tall viewport scroll slices per width (11 slices at 375px, 10 at 393px, 8 at 900px light) rather than one squashed full-page PNG, since the full-page capture (up to ~19000px tall) downscales past legibility when read as a single image.",
-    "Every match/tournament name read in full at all three widths — no truncation hiding a side of a fixture or a Norwegian name (e.g. 'Brighton & Hove Albion – Leeds United', 'Borussia Mönchengladbach – SV Elversberg', 'Rosenborg – HamKam') — no repeat of the historical 'Brazil – Nor…' truncation bug.",
-    "Every agenda row and every DIREKTE NÅ live item shows a channel, and every one seen is Norwegian/Scandinavian or a legitimate direct tournament stream: TV 2 Play, Viaplay, HBO Max (Sport), Discovery+, VG+ Sport, NRK, YouTube (Global Chess League) — no FOX/ESPN/Sky.",
+    "Captured as ~850px-tall viewport scroll slices per width (10 slices at 375px, 8 at 393px, 7 at 900px) rather than one squashed full-page PNG, since the full-page capture downscales past legibility when read as a single image.",
+    "Every match/tournament name read in full at all three widths — no truncation hiding a side of a fixture or a Norwegian name (e.g. 'Bournemouth – Brentford', 'Coventry City – Brighton & Hove Albion', 'Borussia Dortmund – SC Paderborn', 'Manchester United – Manchester City') — no repeat of the historical 'Brazil – Nor…' truncation bug.",
+    "Every agenda row and every DIREKTE NÅ live item shows a channel, and every one seen is Norwegian/Scandinavian or a legitimate direct tournament stream: TV 2 Play, Viaplay, HBO Max (Sport), Discovery+ +1, VG+ Sport, YouTube (Global Chess League) — no FOX/ESPN/Sky. DIREKTE NÅ channel labels wrap cleanly at word boundaries ('YouTube (Global' / 'Chess League)') at both 375 and 393 — no repeat of the previously-flagged mid-word 'NRK' break (that live event is not currently on the board).",
+    "Times present and sensibly formatted (24h HH:MM); multi-day events show date ranges ('22. august–13. september', '10.–13. september'); round/competition labels ('UEFA Champions League 2026/27 (ligaspill)', 'Formula 1 2026 - Race Weekend') render fully.",
+    "Club crests, national flags, and generic fallback glyphs (circle-dot for unmatched crests, calendar icon for handball, flag icon for golf/F1) all render as real images — no broken-image icons or empty boxes — at every width.",
     "No horizontal scroll or overflow at any width; nothing clipped at the screen edge; chevrons and (i) info icons stay fully visible on every inspected row at 375px, 393px, and 900px.",
-    "Club crests and national flags render as real images (no broken-image icons or empty boxes) at every width; a generic calendar glyph appears for entries without a crest (e.g. handball fixtures, Elkjøp-ligaen) — a placeholder, not a broken image.",
     "Must-see accent dots appear sparingly (a handful per day), not on every row.",
-    "Header, day-group headings ('I DAG', 'I MORGEN', weekday headers), and footer (calendar-subscribe line, freshness/AI-budsjett line, esports 'NESTE OPP' block, 'Dette dekker vi'/'Merker og kilder' disclosures) all intact and aligned at all three widths.",
-    "Single quiet column, generous spacing, scannable — not a cluttered grid — at all three widths; at 900px (light theme) the agenda column sits centered with the floating Assistent button resting in the empty right margin, overlapping nothing.",
-    "The floating 'Assistent' button overlaps mid-agenda rows at various scroll positions at 375/393px (by design, DESIGN.md § Hjelperen) but never covers the true last agenda row or the footer — confirmed by scrolling to the actual bottom of the page at all three widths."
+    "Header, day-group headings ('I DAG', 'I MORGEN', weekday headers), and footer (calendar-subscribe line, freshness/AI-budsjett line, esports/golf 'NESTE OPP' block, 'Dette dekker vi'/'Merker og kilder' disclosures) all intact and aligned at all three widths.",
+    "Single quiet column, generous spacing, scannable — not a cluttered grid — at all three widths; at 900px the agenda column sits centered (max 640px) with the floating 'Assistent' button (icon+label at this width, icon-only on the two mobile widths) resting in the empty right margin.",
+    "The floating 'Assistent' button overlaps mid-agenda rows at various scroll positions at 375/393/900px (by design, DESIGN.md § Hjelperen) but never covers the true last agenda row or the footer — confirmed by scrolling to the actual bottom of the page at all three widths (footer text — 'Oppdatert 7.9.2026', 'AI-budsjett: uke 0% · økt 1%' — fully visible above/beside the button in every case).",
+    "All captures rendered the documented true-black dark theme (#000000) regardless of the browser's emulated color scheme, consistent with CLAUDE.md's 'true-black dark default'.",
+    "Freshness banner 'Dataene er ~4 t gamle — oppdatering kan ha stoppet' is visible in the footer — a data-pipeline signal, not a rendering defect, so not raised as a finding here."
   ]
 }
