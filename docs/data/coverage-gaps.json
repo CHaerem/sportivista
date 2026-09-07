@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T22:29:45.218Z",
+  "generatedAt": "2026-09-07T23:53:20.926Z",
   "gapCount": 6,
   "anomalyCount": 1,
   "gaps": [
@@ -12,7 +12,7 @@
       "link": "https://www.theguardian.com/football/2026/sep/07/premier-league-10-talking-points-from-the-weekends-action",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-09-07T22:29:43.989Z"
+      "detectedAt": "2026-09-07T23:53:20.028Z"
     },
     {
       "kind": "tracked-claim",
@@ -24,7 +24,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-reitan",
-      "detectedAt": "2026-09-07T22:29:44.939Z"
+      "detectedAt": "2026-09-07T23:53:20.719Z"
     },
     {
       "kind": "tracked-claim",
@@ -36,7 +36,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-ventura",
-      "detectedAt": "2026-09-07T22:29:44.939Z"
+      "detectedAt": "2026-09-07T23:53:20.719Z"
     },
     {
       "kind": "tracked-claim",
@@ -45,10 +45,10 @@
       "sport": "esports",
       "type": "missing",
       "imminent": false,
-      "claimedDate": "2026-09-30T00:00:00.000Z",
+      "claimedDate": "2026-09-24T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-09-07T22:29:44.939Z"
+      "detectedAt": "2026-09-07T23:53:20.719Z"
     },
     {
       "kind": "tracked-claim",
@@ -60,7 +60,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "blast-open-porto-2026",
-      "detectedAt": "2026-09-07T22:29:44.939Z"
+      "detectedAt": "2026-09-07T23:53:20.719Z"
     },
     {
       "kind": "tracked-claim",
@@ -72,7 +72,7 @@
       "claimedDate": "2027-05-09T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "nm-cupen-2026",
-      "detectedAt": "2026-09-07T22:29:44.939Z"
+      "detectedAt": "2026-09-07T23:53:20.719Z"
     }
   ],
   "anomalies": [
@@ -81,7 +81,7 @@
       "issue": "file-empty",
       "detail": "docs/data/esports.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-09-07T22:29:44.997Z"
+      "detectedAt": "2026-09-07T23:53:20.762Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
