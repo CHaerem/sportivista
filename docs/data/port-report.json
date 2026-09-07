@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T09:56:27.999Z",
+  "generatedAt": "2026-09-07T15:30:42.488Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -27,7 +27,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 6.97,
+    "oldestGapAgeDays": 7.21,
     "escalatable": 2,
     "catalogMatched": 3,
     "auditedAt": "2026-09-07T08:35:00Z",
@@ -35,21 +35,21 @@
       {
         "interest": "UEFA Champions League — MD1 (league phase): HELE onsdag 9. sep + Porto–Man City / Real Madrid–Inter / Lille–Real Betis (8. sep) + PSV–Shakhtar / Stuttgart–Viking (10. sep)",
         "severity": "high",
-        "ageDays": 1.06,
+        "ageDays": 1.3,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Serie A — neste serierunde (13.–14. sep)",
         "severity": "medium",
-        "ageDays": 3.07,
+        "ageDays": 3.3,
         "recurrences": 3,
         "catalogMatched": true
       },
       {
         "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — neste serierunde (12.–13. sep) utover Kolstad",
         "severity": "medium",
-        "ageDays": 6.97,
+        "ageDays": 7.21,
         "recurrences": 7,
         "catalogMatched": true
       }
@@ -57,11 +57,11 @@
   },
   "amendRate": {
     "nearTermRate": 0,
-    "nearTermChecked": 5,
+    "nearTermChecked": 16,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-09-06T09:35:00Z",
+    "verifyRunAt": "2026-09-07T05:30:00Z",
     "windowRate": 0,
-    "windowChecks": 66,
+    "windowChecks": 76,
     "windowAmendments": 0,
     "windowCorrections": 6,
     "byDay": [
@@ -155,20 +155,27 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-09-07",
+        "checks": 10,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-07T09:56:25.529Z",
+    "buildCheckedAt": "2026-09-07T15:30:36.862Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-07T07:45:14.962Z",
-    "manifestAgeHours": 2.19,
+    "manifestGeneratedAt": "2026-09-07T09:56:30.487Z",
+    "manifestAgeHours": 5.57,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-09-06T09:35:00Z",
-    "verifyAgeHours": 24.36,
+    "checkedAt": "2026-09-07T05:30:00Z",
+    "verifyAgeHours": 10.01,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -177,6 +184,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-07T09:56:27.999Z"
+    "generatedAt": "2026-09-07T15:30:42.488Z"
   }
 }
