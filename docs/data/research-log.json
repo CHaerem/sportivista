@@ -1,22 +1,25 @@
 {
-  "runAt": "2026-09-06T22:20:00Z",
-  "tier": "standard",
-  "eventsAdded": 1,
+  "runAt": "2026-09-07T23:00:00Z",
+  "tier": "deep",
+  "eventsAdded": 18,
   "eventsRemoved": 0,
-  "trackedDelta": "obos-ligaen-2026: reason oppdatert (Hødd–Lyn 13. sep boardet, next-fixture-hull tettet). karsten-warholm: reason→«sesong ferdig» (trakk seg fra DL-finalen), expires 6. sep→2027-03-31. DROPPET diamond-league-2026-august-meets (alle stevner + Brussel-finalen ferdigspilt, expired). Ingen entry lagt til.",
+  "trackedDelta": "Oppdaterte champions-league-2026-27 (re-boardet 8 manglende MD1-kamper, dato-resolusjon Viking–Stuttgart), serie-a-2026-27 (giornata 4 boardet, expires 08.09→30.09), havard-rain-nygaard (next = Stake Pulse Beat II 21.–26. sep, ærlig fravær), viktor-hovland (BMW PGA re-bekreftet + Open de France 24.–27. sep), blast-open-porto-2026 (markert AVSLUTTET, Spirit vant 6. sep, utløper i dag). Ny notes-entry. Ingen katalog-endring; ingen registry-reconciliation (ikke ukentlig mandags-deep-sweep).",
   "quality": {
     "pass": true,
-    "score": 95,
+    "score": 86,
     "failures": [
-      "Minor: Eliteserien contract-breach dismissed as a self-solving fetcher-window false positive (13-14 Sep matches expected to fill within 1-2 days) without independent verification this run — sound reasoning, but the recall assumption is unconfirmed.",
-      "Minor: single-event write-time fact-check used two-source agreement (fotball.no primary + TNT/Eurosport) rather than a dedicated fresh-context subagent — acceptable at single-event scope."
+      "Recurring-but-unfixed root cause: CL MD1 events keep falling off the board (re-boarded 06.09, regressed and re-boarded again 07.09); the durable fix (football-fetcher maxEvents segmentation or an authority.json CL/EL/ECL contract-block per WP-243) has been flagged for many runs and still isn't landed — research re-boards correctly but the loop is spinning on a known issue.",
+      "Evidence-domain concentration per family: all 8 CL events cite an identical evidence set (uefa.com + wikipedia + ntb) and all 10 Serie A g4 events lean on two Italian media domains + wikipedia; corroboration is real (UEFA primary; Serie A kept at medium) but the in-evidence domains per family are <=2 for the fixture fact — consider adding the independently fact-checked club-site URLs to the evidence arrays."
     ]
   },
   "notes": [
-    "Standard 4-timers-kjøring, sen søndag kveld. Scout quiet hele dagen etter at 12:20Z-deep-kjøringen tettet dagens ene HIGH-hull (CL MD1 onsdags-/torsdagsrunde + Real Madrid–Inter); ingen fersk eskalering ved denne kjøringen.",
-    "ÉN NY EVENT: Hødd–Lyn (OBOS-ligaen, borte for Lyn) søn. 13. sep 17.00 CEST / 15.00 UTC, Høddvoll Ulsteinvik — high, id 2a7417ae6489. Fylte et ekte next-fixture-hull: Lyn (fulgt katalog-tier2-klubb, OBOS-ligaen har INGEN statisk fetcher) hadde ingen kommende kamp (siste 30. aug Kongsvinger–Lyn). To-kilde-bekreftet: fotball.no terminliste (fiksId 161785, primær-autoritet, lest direkte) + TNT Sports/Eurosport-oppsett — begge enige på dato/tid/arena. Streaming TV 2 Play (official). awayTeamEntityId=fk-lyn-oslo resolver.",
-    "TRIAGE coverage-gaps.json (21:02Z, gapCount 6, anomalyCount 0): Eliteserien contract-breach (high, imminent, 2 av min 4 innen 14 d) determinert SELV-LØSENDE FETCHER-VINDU-FALSKPOSITIV — Eliteserien dekkes wholesale av rullerende ESPN nor.1 + fotball.no; football.json-vinduet rekker pt. kun runde-12s lør. 12. sep-kamper (Lillestrøm–Vålerenga, Rosenborg–Tromsø, static), mens 13.–14. sep-kampene (web-bekreftet av coverage-audit 08:25Z: Bodø/Glimt–Sandefjord man. 14. sep m.fl.) ligger 7–8 dager ut, akkurat utenfor fetcher-vinduet, og fylles automatisk innen ~1–2 dager. IKKE håndboardet (dedup-krig mot fetcheren + gjettede TV-uferdige avspark). PL met (7 upcoming). FLAGG STÅR (improve/self-repair): kontraktens 14-d-horisont overgår nor.1-fetcherens ~5–6-d-vindu → falskt brudd hver helg der inneværende runde er ferdig før neste entrer vinduet.",
-    "tracked-claims Reitan/Ventura (golf, ingen bekreftet nordmanns-startliste) + Håvard «rain» Nygaard (100T sen-annonsering, ingen berammet kamp) = etablerte korrekte fravær (uendret triage). RECONCILE (Step 1): droppet ferdigspilte diamond-league-2026-august-meets; Warholm→ærlig sesong-ferdig.",
-    "build-events: 152 events, validate-events 0 errors (kun stående strukturelle varsler: WP-246 landing-URL på 52, WP-242 weak-basis 7+4, timezone-bleed på fler-dagers, 1 summary↔streaming-mismatch på forbi-event). Ingen katalog-endring; ingen registry-reconciliation (kun deep-tier ukentlig mandags-sveip)."
+    "DEEP-tier kjøring utløst av coverage-audit HIGH-eskalering (escalated=true, 08:35Z): CL MD1 (8.–10. sep) hadde regrediert til delvis dekning — kun tirsdag 8. sep-delmengden + torsdag 10. sep sto, hele onsdag 9. sep manglet (0 kamper) + Real Madrid–Inter (8. sep) + PSV–Shakhtar (10. sep).",
+    "PRIMÆRJOBB: RE-BOARDET alle 8 manglende MD1-kamper som ai-research (high, TV 2 Play, provenance.time basis=primary fra UEFAs offisielle fixtureliste, provenance.streaming basis=official). 5 subagent-scouts + 1 uavhengig fresh-context write-time fact-check (8/8 confirmed mot UEFA + Wikipedia + klubb/Sofascore). MD1 nå komplett for alle katalog-klubber + begge norske lag (Bodø/Glimt + Viking).",
+    "DATO-RESOLUSJON: coverage-audit antok Stuttgart–Viking 10. sep; CL-scout + fact-check bekrefter ONS. 9. sep 18.45 CEST (16.45 UTC), Viking BORTE på MHP Arena — norsk marquee (Vikings aller første CL-ligaspill).",
+    "SEKUNDÆRJOBB: Serie A giornata 4 (11.–14. sep, recurring medium-hull, recurrences 3) boardet — alle 10 kamper som ai-research (MEDIUM, VG+ Sport, tider via Calcio e Finanza + Sport Mediaset, legaseriea.it bot-blokkert → basis secondary). Runden omberammet for CL-hvile.",
+    "TRIAGE (ikke boardet, bevisst): håndball Elkjøp-runde 12.–13. sep (Kolstad alt dekket; øvrige upresise throw-off-tider + ingen katalog-stjerne — Sagosen→Aalborg, Mørk→Esbjerg — overlatt til ukentlig cadence/verify); CS2 FISSURE Playground #3 (katalog-lag men ingen norsk vinkel + kinesiske nattetimer + usikker stream).",
+    "RECONCILE: 100 Thieves/rain next-turnering funnet (Stake Pulse Beat II Stockholm 21.–26. sep) men ingen datert kamp → ærlig fravær. BLAST Open Porto markert avsluttet (Team Spirit vant 6. sep). Hovland BMW PGA (17. sep) + Open de France (24.–27. sep) bekreftet. Reitan/Ventura ingen bekreftet start = korrekte fravær. Vuelta/UCI Road-VM/WA Ultimate/GCL alle alt boardet.",
+    "ROTÅRSAK-FLAGG (self-repair/improve): (a) football-fetcherens maxEvents:30-kutt + build-events graft-then-drop gjør at CL-kamper forbi dag 1 forsvinner permanent i høysesong → hev/segmenter maxEvents ELLER CL/EL/ECL contract-blokk (WP-243) så et delvis/regresjonerende MD-brudd fanges mekanisk; (b) ingen ita.1/ger.1-fetcher for Serie A/Bundesliga; (c) ingen wholesale håndball-fetcher.",
+    "build-events: 167 events, validate-events: 0 errors (kun stående strukturelle varsler: WP-246 landing-URL, WP-242 weak-basis, timezone-bleed på fler-dagers + 1 forbi-event summary↔streaming). Schema-tester (tracked/events/build-events-schema) grønne."
   ]
 }

@@ -3721,36 +3721,6 @@
   },
   {
     "sport": "football",
-    "tournament": "La Liga",
-    "title": "Real Sociedad at Elche",
-    "time": "2026-09-07T19:30:00.000Z",
-    "endTime": null,
-    "venue": "Estadio Martínez Valero",
-    "meta": "La Liga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Elche",
-    "awayTeam": "Real Sociedad",
-    "isFavorite": false,
-    "round": null,
-    "id": "fb2fba40cdc6",
-    "homeTeamEntityId": "elche",
-    "awayTeamEntityId": "real-sociedad"
-  },
-  {
-    "sport": "football",
     "tournament": "Champions League",
     "title": "LASK Linz at AEK Athens",
     "time": "2026-09-08T16:45:00.000Z",
@@ -3896,6 +3866,152 @@
     "awayTeamEntityId": "real-betis"
   },
   {
+    "sport": "football",
+    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
+    "title": "Inter Milan at Real Madrid",
+    "time": "2026-09-08T19:00:00Z",
+    "endTime": null,
+    "venue": "Santiago Bernabéu, Madrid",
+    "norwegian": false,
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Inter Milan",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-07T23:00:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
+      "https://kommunikasjon.ntb.no/pressemelding/18884555/tv-2-skal-vise-champions-league-de-fem-neste-sesongene"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+        "basis": "primary",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "UEFAs offisielle ligaspill-fixtureliste MD1; uavhengig write-time fact-check bekreftet dato/tid/hjemme-borte (UEFA + Wikipedia + klubbsider)"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
+      }
+    },
+    "summary": "Storoppgjør i Mesterligaens åpningsrunde: Real Madrid mot Inter på Santiago Bernabéu.\n\nAvspark tirsdag 8. september kl. 21.00 CEST (19.00 UTC).",
+    "homeTeamEntityId": "real-madrid",
+    "awayTeamEntityId": "internazionale",
+    "id": "758a8845ada8"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
+    "title": "Feyenoord at Barcelona",
+    "time": "2026-09-09T16:45:00Z",
+    "endTime": null,
+    "venue": "Spotify Camp Nou, Barcelona",
+    "norwegian": false,
+    "homeTeam": "Barcelona",
+    "awayTeam": "Feyenoord",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-07T23:00:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
+      "https://kommunikasjon.ntb.no/pressemelding/18884555/tv-2-skal-vise-champions-league-de-fem-neste-sesongene"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+        "basis": "primary",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "UEFAs offisielle ligaspill-fixtureliste MD1; uavhengig write-time fact-check bekreftet dato/tid/hjemme-borte (UEFA + Wikipedia + klubbsider)"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
+      }
+    },
+    "summary": "Barcelona åpner Mesterligaen hjemme mot Feyenoord — tilbake på Spotify Camp Nou for 2026/27.\n\nAvspark onsdag 9. september kl. 18.45 CEST (16.45 UTC).",
+    "homeTeamEntityId": "barcelona",
+    "id": "a0abcebb0e01"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
+    "title": "Viking at VfB Stuttgart",
+    "time": "2026-09-09T16:45:00Z",
+    "endTime": null,
+    "venue": "MHP Arena, Stuttgart",
+    "norwegian": true,
+    "homeTeam": "VfB Stuttgart",
+    "awayTeam": "Viking",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-07T23:00:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
+      "https://kommunikasjon.ntb.no/pressemelding/18884555/tv-2-skal-vise-champions-league-de-fem-neste-sesongene"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+        "basis": "primary",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "UEFAs offisielle ligaspill-fixtureliste MD1; uavhengig write-time fact-check bekreftet dato/tid/hjemme-borte (UEFA + Wikipedia + klubbsider)"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
+      }
+    },
+    "summary": "Norske Viking spiller sitt aller første Champions League-ligaspill — borte mot VfB Stuttgart på MHP Arena.\n\nAvspark onsdag 9. september kl. 18.45 CEST (16.45 UTC).",
+    "homeTeamEntityId": "vfb-stuttgart",
+    "awayTeamEntityId": "viking-fk",
+    "id": "51a4fbec1a31"
+  },
+  {
     "sport": "handball",
     "tournament": "EHF Champions League 2026/27 (gruppespill)",
     "title": "SC Magdeburg – Kolstad",
@@ -3947,6 +4063,201 @@
     "verificationSources": [
       "https://www.scm-handball.de/en/match-center/schedule/"
     ]
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
+    "title": "Atlético Madrid at Liverpool",
+    "time": "2026-09-09T19:00:00Z",
+    "endTime": null,
+    "venue": "Anfield, Liverpool",
+    "norwegian": false,
+    "homeTeam": "Liverpool",
+    "awayTeam": "Atlético Madrid",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-07T23:00:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
+      "https://kommunikasjon.ntb.no/pressemelding/18884555/tv-2-skal-vise-champions-league-de-fem-neste-sesongene"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+        "basis": "primary",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "UEFAs offisielle ligaspill-fixtureliste MD1; uavhengig write-time fact-check bekreftet dato/tid/hjemme-borte (UEFA + Wikipedia + klubbsider)"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
+      }
+    },
+    "summary": "Liverpool tar imot Diego Simeones Atlético Madrid på Anfield i ligaspillets første runde.\n\nAvspark onsdag 9. september kl. 21.00 CEST (19.00 UTC).",
+    "homeTeamEntityId": "liverpool",
+    "awayTeamEntityId": "atletico-madrid",
+    "id": "b7380d5cdda1"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
+    "title": "Arsenal at Napoli",
+    "time": "2026-09-09T19:00:00Z",
+    "endTime": null,
+    "venue": "Stadio Diego Armando Maradona, Napoli",
+    "norwegian": false,
+    "homeTeam": "Napoli",
+    "awayTeam": "Arsenal",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-07T23:00:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
+      "https://kommunikasjon.ntb.no/pressemelding/18884555/tv-2-skal-vise-champions-league-de-fem-neste-sesongene"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+        "basis": "primary",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "UEFAs offisielle ligaspill-fixtureliste MD1; uavhengig write-time fact-check bekreftet dato/tid/hjemme-borte (UEFA + Wikipedia + klubbsider)"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
+      }
+    },
+    "summary": "Napoli mot Arsenal på Stadio Diego Armando Maradona i MD1.\n\nAvspark onsdag 9. september kl. 21.00 CEST (19.00 UTC).",
+    "homeTeamEntityId": "napoli",
+    "awayTeamEntityId": "arsenal",
+    "id": "a6417c6261c7"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
+    "title": "Slovan Bratislava at Paris Saint-Germain",
+    "time": "2026-09-09T19:00:00Z",
+    "endTime": null,
+    "venue": "Parc des Princes, Paris",
+    "norwegian": false,
+    "homeTeam": "Paris Saint-Germain",
+    "awayTeam": "Slovan Bratislava",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-07T23:00:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
+      "https://kommunikasjon.ntb.no/pressemelding/18884555/tv-2-skal-vise-champions-league-de-fem-neste-sesongene"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+        "basis": "primary",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "UEFAs offisielle ligaspill-fixtureliste MD1; uavhengig write-time fact-check bekreftet dato/tid/hjemme-borte (UEFA + Wikipedia + klubbsider)"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
+      }
+    },
+    "summary": "Paris Saint-Germain mot Slovan Bratislava på Parc des Princes i ligaspillets første runde.\n\nAvspark onsdag 9. september kl. 21.00 CEST (19.00 UTC).",
+    "homeTeamEntityId": "paris-saint-germain",
+    "id": "e34fb914fc8f"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
+    "title": "Galatasaray at Sporting CP",
+    "time": "2026-09-09T19:00:00Z",
+    "endTime": null,
+    "venue": "Estádio José Alvalade, Lisboa",
+    "norwegian": false,
+    "homeTeam": "Sporting CP",
+    "awayTeam": "Galatasaray",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-07T23:00:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
+      "https://kommunikasjon.ntb.no/pressemelding/18884555/tv-2-skal-vise-champions-league-de-fem-neste-sesongene"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+        "basis": "primary",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "UEFAs offisielle ligaspill-fixtureliste MD1; uavhengig write-time fact-check bekreftet dato/tid/hjemme-borte (UEFA + Wikipedia + klubbsider)"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
+      }
+    },
+    "summary": "Sporting CP mot Galatasaray på Estádio José Alvalade i MD1.\n\nAvspark onsdag 9. september kl. 21.00 CEST (19.00 UTC).",
+    "homeTeamEntityId": "sporting-cp",
+    "awayTeamEntityId": "galatasaray",
+    "id": "44dc5b26e401"
   },
   {
     "sport": "golf",
@@ -4047,6 +4358,54 @@
     "verificationSources": [
       "https://www.uefa.com/uefachampionsleague/match/2049568--fenerbahce-vs-roma/"
     ]
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
+    "title": "Shakhtar Donetsk at PSV Eindhoven",
+    "time": "2026-09-10T16:45:00Z",
+    "endTime": null,
+    "venue": "Philips Stadion, Eindhoven",
+    "norwegian": false,
+    "homeTeam": "PSV Eindhoven",
+    "awayTeam": "Shakhtar Donetsk",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-07T23:00:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
+      "https://kommunikasjon.ntb.no/pressemelding/18884555/tv-2-skal-vise-champions-league-de-fem-neste-sesongene"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+        "basis": "primary",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "UEFAs offisielle ligaspill-fixtureliste MD1; uavhengig write-time fact-check bekreftet dato/tid/hjemme-borte (UEFA + Wikipedia + klubbsider)"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
+      }
+    },
+    "summary": "PSV Eindhoven mot Shakhtar Donetsk på Philips Stadion i ligaspillets første runde.\n\nAvspark torsdag 10. september kl. 18.45 CEST (16.45 UTC).",
+    "homeTeamEntityId": "psv-eindhoven",
+    "id": "39dd38b533d9"
   },
   {
     "sport": "football",
@@ -4372,6 +4731,55 @@
   },
   {
     "sport": "football",
+    "tournament": "Serie A",
+    "title": "Fiorentina at Venezia",
+    "time": "2026-09-11T18:45:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": false,
+    "homeTeam": "Venezia",
+    "awayTeam": "Fiorentina",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-07T23:00:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+      "https://www.sportmediaset.mediaset.it/calcio/seriea/serie-a-cambia-il-calendario-della-4-giornata-anticipata-lazio-milan-cambiano-juve-e-roma_116063139-202602k.shtml",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "lega-serie-a",
+        "url": "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "Lega Serie As offisielle giornata-4-oppsett (publisert 31.08), gjengitt av Calcio e Finanza + Sport Mediaset (to uavhengige kilder enige); legaseriea.it bot-blokkert -> basis secondary"
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no",
+        "basis": "official",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27"
+      }
+    },
+    "summary": "Serie A giornata 4 åpner fredag: Venezia mot Fiorentina.\n\nAvspark fredag 11. september kl. 20.45 CEST (18.45 UTC).",
+    "homeTeamEntityId": "venezia",
+    "awayTeamEntityId": "fiorentina",
+    "id": "b18847f7852a"
+  },
+  {
+    "sport": "football",
     "tournament": "La Liga",
     "title": "Valencia at Sevilla",
     "time": "2026-09-11T19:00:00.000Z",
@@ -4429,6 +4837,55 @@
     "id": "bd463308f438",
     "homeTeamEntityId": "racing-santander",
     "awayTeamEntityId": "alaves"
+  },
+  {
+    "sport": "football",
+    "tournament": "Serie A",
+    "title": "Frosinone at Genoa",
+    "time": "2026-09-12T13:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": false,
+    "homeTeam": "Genoa",
+    "awayTeam": "Frosinone",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-07T23:00:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+      "https://www.sportmediaset.mediaset.it/calcio/seriea/serie-a-cambia-il-calendario-della-4-giornata-anticipata-lazio-milan-cambiano-juve-e-roma_116063139-202602k.shtml",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "lega-serie-a",
+        "url": "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "Lega Serie As offisielle giornata-4-oppsett (publisert 31.08), gjengitt av Calcio e Finanza + Sport Mediaset (to uavhengige kilder enige); legaseriea.it bot-blokkert -> basis secondary"
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no",
+        "basis": "official",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27"
+      }
+    },
+    "summary": "Genoa mot Frosinone i Serie A-runde 4.\n\nAvspark lørdag 12. september kl. 15.00 CEST (13.00 UTC).",
+    "homeTeamEntityId": "genoa",
+    "awayTeamEntityId": "frosinone",
+    "id": "80cb92760e5d"
   },
   {
     "sport": "football",
@@ -4980,6 +5437,55 @@
     "awayTeamEntityId": "tromso"
   },
   {
+    "sport": "football",
+    "tournament": "Serie A",
+    "title": "Milan at Lazio",
+    "time": "2026-09-12T16:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": false,
+    "homeTeam": "Lazio",
+    "awayTeam": "Milan",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-07T23:00:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+      "https://www.sportmediaset.mediaset.it/calcio/seriea/serie-a-cambia-il-calendario-della-4-giornata-anticipata-lazio-milan-cambiano-juve-e-roma_116063139-202602k.shtml",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "lega-serie-a",
+        "url": "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "Lega Serie As offisielle giornata-4-oppsett (publisert 31.08), gjengitt av Calcio e Finanza + Sport Mediaset (to uavhengige kilder enige); legaseriea.it bot-blokkert -> basis secondary"
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no",
+        "basis": "official",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27"
+      }
+    },
+    "summary": "Rundens storkamp: Lazio mot AC Milan i Roma.\n\nAvspark lørdag 12. september kl. 18.00 CEST (16.00 UTC).",
+    "homeTeamEntityId": "lazio",
+    "awayTeamEntityId": "ac-milan",
+    "id": "3a3ad8c015c7"
+  },
+  {
     "sport": "handball",
     "tournament": "Elkjøp-ligaen 2026/27",
     "title": "Bergen Håndball – Kolstad",
@@ -5136,6 +5642,55 @@
     "homeTeamEntityId": "1-fc-koln",
     "awayTeamEntityId": "werder-bremen",
     "id": "f339b4348242"
+  },
+  {
+    "sport": "football",
+    "tournament": "Serie A",
+    "title": "Cagliari at Atalanta",
+    "time": "2026-09-12T18:45:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": false,
+    "homeTeam": "Atalanta",
+    "awayTeam": "Cagliari",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-07T23:00:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+      "https://www.sportmediaset.mediaset.it/calcio/seriea/serie-a-cambia-il-calendario-della-4-giornata-anticipata-lazio-milan-cambiano-juve-e-roma_116063139-202602k.shtml",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "lega-serie-a",
+        "url": "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "Lega Serie As offisielle giornata-4-oppsett (publisert 31.08), gjengitt av Calcio e Finanza + Sport Mediaset (to uavhengige kilder enige); legaseriea.it bot-blokkert -> basis secondary"
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no",
+        "basis": "official",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27"
+      }
+    },
+    "summary": "Atalanta mot Cagliari i Serie A-runde 4.\n\nAvspark lørdag 12. september kl. 20.45 CEST (18.45 UTC).",
+    "homeTeamEntityId": "atalanta",
+    "awayTeamEntityId": "cagliari",
+    "id": "70857e398860"
   },
   {
     "sport": "football",
@@ -5314,6 +5869,55 @@
     "id": "7dabf74d0581",
     "homeTeamEntityId": "coventry-city",
     "awayTeamEntityId": "brighton-hove-albion"
+  },
+  {
+    "sport": "football",
+    "tournament": "Serie A",
+    "title": "Monza at Lecce",
+    "time": "2026-09-13T13:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": false,
+    "homeTeam": "Lecce",
+    "awayTeam": "Monza",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-07T23:00:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+      "https://www.sportmediaset.mediaset.it/calcio/seriea/serie-a-cambia-il-calendario-della-4-giornata-anticipata-lazio-milan-cambiano-juve-e-roma_116063139-202602k.shtml",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "lega-serie-a",
+        "url": "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "Lega Serie As offisielle giornata-4-oppsett (publisert 31.08), gjengitt av Calcio e Finanza + Sport Mediaset (to uavhengige kilder enige); legaseriea.it bot-blokkert -> basis secondary"
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no",
+        "basis": "official",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27"
+      }
+    },
+    "summary": "Lecce mot Monza i Serie A-runde 4.\n\nAvspark søndag 13. september kl. 15.00 CEST (13.00 UTC).",
+    "homeTeamEntityId": "lecce",
+    "awayTeamEntityId": "monza",
+    "id": "4f5532b8c8d1"
   },
   {
     "sport": "football",
@@ -5628,6 +6232,55 @@
   },
   {
     "sport": "football",
+    "tournament": "Serie A",
+    "title": "Bologna at Napoli",
+    "time": "2026-09-13T16:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": false,
+    "homeTeam": "Napoli",
+    "awayTeam": "Bologna",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-07T23:00:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+      "https://www.sportmediaset.mediaset.it/calcio/seriea/serie-a-cambia-il-calendario-della-4-giornata-anticipata-lazio-milan-cambiano-juve-e-roma_116063139-202602k.shtml",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "lega-serie-a",
+        "url": "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "Lega Serie As offisielle giornata-4-oppsett (publisert 31.08), gjengitt av Calcio e Finanza + Sport Mediaset (to uavhengige kilder enige); legaseriea.it bot-blokkert -> basis secondary"
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no",
+        "basis": "official",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27"
+      }
+    },
+    "summary": "Napoli mot Bologna på Stadio Maradona.\n\nAvspark søndag 13. september kl. 18.00 CEST (16.00 UTC).",
+    "homeTeamEntityId": "napoli",
+    "awayTeamEntityId": "bologna",
+    "id": "cc28a6b66071"
+  },
+  {
+    "sport": "football",
     "tournament": "La Liga",
     "title": "Deportivo at Getafe",
     "time": "2026-09-13T16:30:00.000Z",
@@ -5688,6 +6341,55 @@
   },
   {
     "sport": "football",
+    "tournament": "Serie A",
+    "title": "Juventus at Sassuolo",
+    "time": "2026-09-13T18:45:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": false,
+    "homeTeam": "Sassuolo",
+    "awayTeam": "Juventus",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-07T23:00:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+      "https://www.sportmediaset.mediaset.it/calcio/seriea/serie-a-cambia-il-calendario-della-4-giornata-anticipata-lazio-milan-cambiano-juve-e-roma_116063139-202602k.shtml",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "lega-serie-a",
+        "url": "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "Lega Serie As offisielle giornata-4-oppsett (publisert 31.08), gjengitt av Calcio e Finanza + Sport Mediaset (to uavhengige kilder enige); legaseriea.it bot-blokkert -> basis secondary"
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no",
+        "basis": "official",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27"
+      }
+    },
+    "summary": "Sassuolo mot Juventus i søndagens sene oppgjør.\n\nAvspark søndag 13. september kl. 20.45 CEST (18.45 UTC).",
+    "homeTeamEntityId": "sassuolo",
+    "awayTeamEntityId": "juventus",
+    "id": "60ccdafb899e"
+  },
+  {
+    "sport": "football",
     "tournament": "La Liga",
     "title": "Atlético Madrid at Real Sociedad",
     "time": "2026-09-13T19:00:00.000Z",
@@ -5715,6 +6417,153 @@
     "id": "a0055c0e4ffc",
     "homeTeamEntityId": "real-sociedad",
     "awayTeamEntityId": "atletico-madrid"
+  },
+  {
+    "sport": "football",
+    "tournament": "Serie A",
+    "title": "Parma at Como",
+    "time": "2026-09-14T16:30:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": false,
+    "homeTeam": "Como",
+    "awayTeam": "Parma",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-07T23:00:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+      "https://www.sportmediaset.mediaset.it/calcio/seriea/serie-a-cambia-il-calendario-della-4-giornata-anticipata-lazio-milan-cambiano-juve-e-roma_116063139-202602k.shtml",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "lega-serie-a",
+        "url": "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "Lega Serie As offisielle giornata-4-oppsett (publisert 31.08), gjengitt av Calcio e Finanza + Sport Mediaset (to uavhengige kilder enige); legaseriea.it bot-blokkert -> basis secondary"
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no",
+        "basis": "official",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27"
+      }
+    },
+    "summary": "Como mot Parma i mandagsavslutningen av runde 4.\n\nAvspark mandag 14. september kl. 18.30 CEST (16.30 UTC).",
+    "homeTeamEntityId": "como",
+    "awayTeamEntityId": "parma",
+    "id": "fb3587198148"
+  },
+  {
+    "sport": "football",
+    "tournament": "Serie A",
+    "title": "Roma at Torino",
+    "time": "2026-09-14T16:30:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": false,
+    "homeTeam": "Torino",
+    "awayTeam": "Roma",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-07T23:00:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+      "https://www.sportmediaset.mediaset.it/calcio/seriea/serie-a-cambia-il-calendario-della-4-giornata-anticipata-lazio-milan-cambiano-juve-e-roma_116063139-202602k.shtml",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "lega-serie-a",
+        "url": "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "Lega Serie As offisielle giornata-4-oppsett (publisert 31.08), gjengitt av Calcio e Finanza + Sport Mediaset (to uavhengige kilder enige); legaseriea.it bot-blokkert -> basis secondary"
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no",
+        "basis": "official",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27"
+      }
+    },
+    "summary": "Torino mot Roma, flyttet til mandag for CL-hvile.\n\nAvspark mandag 14. september kl. 18.30 CEST (16.30 UTC).",
+    "homeTeamEntityId": "torino",
+    "awayTeamEntityId": "as-roma",
+    "id": "358e97216985"
+  },
+  {
+    "sport": "football",
+    "tournament": "Serie A",
+    "title": "Udinese at Inter",
+    "time": "2026-09-14T18:45:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": false,
+    "homeTeam": "Inter",
+    "awayTeam": "Udinese",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "VG+ Sport",
+        "url": "https://tv.vg.no",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-07T23:00:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+      "https://www.sportmediaset.mediaset.it/calcio/seriea/serie-a-cambia-il-calendario-della-4-giornata-anticipata-lazio-milan-cambiano-juve-e-roma_116063139-202602k.shtml",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "lega-serie-a",
+        "url": "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "Lega Serie As offisielle giornata-4-oppsett (publisert 31.08), gjengitt av Calcio e Finanza + Sport Mediaset (to uavhengige kilder enige); legaseriea.it bot-blokkert -> basis secondary"
+      },
+      "streaming": {
+        "sourceId": "vgtv",
+        "url": "https://tv.vg.no",
+        "basis": "official",
+        "retrievedAt": "2026-09-07T23:00:00Z",
+        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27"
+      }
+    },
+    "summary": "Inter avslutter runde 4 hjemme mot Udinese mandag kveld.\n\nAvspark mandag 14. september kl. 20.45 CEST (18.45 UTC).",
+    "homeTeamEntityId": "internazionale",
+    "awayTeamEntityId": "udinese",
+    "id": "6c36c2b47ec3"
   },
   {
     "sport": "football",
