@@ -1,25 +1,40 @@
 {
-  "auditedAt": "2026-09-06T08:25:00Z",
+  "auditedAt": "2026-09-07T08:35:00Z",
   "horizonDays": 28,
   "gaps": [
     {
-      "interest": "UEFA Champions League — MD1 (league phase), onsdag 9. + torsdag 10. sep (+ Real Madrid–Inter tir 8. sep)",
-      "whatsMissing": "Tavla har KUN 8. sep-delen av CL MD1 (5 kamper: Porto–Man City, Dortmund–Villarreal, Lille–Real Betis, Club Brugge–Aston Villa, AEK–LASK). HELE onsdag 9. sep og torsdag 10. sep mangler — ~13 kamper, inkl. flere katalog-entiteter: Real Madrid–Inter (8. sep, mangler), Barcelona–Feyenoord + Liverpool–Atlético Madrid + Napoli–Arsenal + PSG–Slovan Bratislava + Sporting–Galatasaray + Stuttgart–Viking (9. sep), og Bayern München–Bodø/Glimt + Como–Leipzig + Fenerbahçe–Roma + PSV–Shakhtar + Man United–Sabah + Slavia Praha–Lens (10. sep). Bodø/Glimt (katalog-entitet, også flagget i coverage-gaps.json som entity-i-nyhetene) har INGEN kommende kamp på tavla — kun en fortidskamp (25. aug Bodø/Glimt–NEC).",
-      "why": "Champions League er ikke i noen statisk fetcher (ESPN-fetcheren henter kun eng.1 PL + esp.1 La Liga) — hele CL håndboardes runde-for-runde av research. MD1 ble kun delvis boardet: 8. sep-kampene står, men onsdags- og torsdagsrundene ble aldri lagt inn (eller falt ut). Dette fyller seg IKKE selv (ingen rullerende fetcher), og kampene er 2–4 dager unna. UEFA bekrefter MD1 = 8.–10. sep; Bodø/Glimt-UEFA-siden bekrefter Bayern–Bodø/Glimt 10. sep 21:00 CEST.",
+      "interest": "UEFA Champions League — MD1 (league phase): HELE onsdag 9. sep + Porto–Man City / Real Madrid–Inter / Lille–Real Betis (8. sep) + PSV–Shakhtar / Stuttgart–Viking (10. sep)",
+      "whatsMissing": "MD1 spilles 8.–10. sep. Tavla har KUN en delmengde: 8. sep bare 3 av 6 (AEK–LASK, Club Brugge–Aston Villa, Dortmund–Villarreal), og 10. sep 5 av 7 (Bayern–Bodø/Glimt, Man United–Sabah, Fenerbahçe–Roma, Slavia–Lens, Como–Leipzig). HELE onsdag 9. sep mangler (0 kamper på tavla): Liverpool–Atlético Madrid, Napoli–Arsenal, Barcelona–Feyenoord, PSG–Slovan Bratislava, Sporting–Galatasaray. I tillegg mangler Porto–Man City + Real Madrid–Inter + Lille–Real Betis (8. sep) og PSV–Shakhtar + Stuttgart–Viking (10. sep). Flere KATALOG-entiteter er borte fra sin MD1-kamp: Liverpool, Arsenal, Barcelona (alle 9. sep), Manchester City og Real Madrid (8. sep). REGRESJON: Porto–Man City og Lille–Real Betis STOD på tavla forrige kjøring (06.09) og har falt ut siden.",
+      "why": "Champions League er ikke i noen statisk fetcher (ESPN-fetcheren henter kun eng.1 PL + esp.1 La Liga) — hele CL håndboardes runde-for-runde av research. Forrige kjøring (06.09) ble dette eskalert (deep); research fylte torsdagsrunden (10. sep, minus PSV–Shakhtar) men aldri onsdagsrunden (9. sep) eller de resterende tirsdagskampene, og to tirsdagskamper (Porto–Man City, Lille–Real Betis) har til og med falt UT igjen. Fyller seg IKKE selv (ingen rullerende fetcher, ingen contract-blokk i authority.json → verken WP-243 eller nær-tid-fetcher fanger det). Kampene er 1–3 dager unna.",
       "corroboration": [
         "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-        "https://www.uefa.com/uefachampionsleague/clubs/59333--bodo-glimt/matches/"
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-by-team/"
       ],
       "suggestedSource": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
       "severity": "high",
       "firstSeen": "2026-09-06T08:25:00Z",
-      "recurrences": 0,
-      "note": "Ny, akutt HIGH denne kjøringen. Norske TV-rettigheter: CL på TV 2 Play / TV 2 Sport i Norge (verifiser per kamp ved boarding). Research bør fylle onsdags- (9. sep) og torsdagsrunden (10. sep) + Real Madrid–Inter (8. sep) UMIDDELBART; disse er innenfor imminent-vinduet."
+      "recurrences": 1,
+      "note": "Recurrence av 06.09-HIGH-gapet (samme interesse: CL MD1, samme substans: manglende onsdagsrunde + tirsdagskamper). Ikke løst av forrige eskalering — faktisk forverret (regresjon på 8. sep). Norske TV-rettigheter: CL på TV 2 Play / TV 2 Sport i Norge (verifiser per kamp ved boarding). Onsdag 9. sep (Liverpool–Atlético, Napoli–Arsenal, Barcelona–Feyenoord, PSG–Slovan, Sporting–Galatasaray) er innenfor imminent-vinduet og HØYEST prioritet — fyll UMIDDELBART. Kickoff typisk 18:45 / 21:00 CEST."
     },
     {
-      "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — kommende serierunder utover Kolstad",
-      "whatsMissing": "Neste helgs (12.–13. sep) Elkjøp-ligaen-runde er fortsatt kun delvis på tavla: bare Bergen Håndball–Kolstad (12. sep 16:10 CEST). Resten av rundens kamper (menn + kvinner) mangler. DENNE helgens runde (5.–6. sep) er komplett boardet (8 kamper) — den akutte instansen er dekket.",
-      "why": "Strukturell rotårsak uendret: håndball er katalog-tier1 (wholesale) men har ingen statisk fetcher — hele Elkjøp-ligaen håndboardes runde-for-runde av research, som fyller ~1 uke fram om gangen. Hver fremtidig runde er derfor en ny potensiell blindsone. IKKE bumpet til high og IKKE eskalert: gapet løses hver uke av boarding-cadencen (denne helgens runde er komplett), det er >5 dager til neste runde, og det demonstrerte mønsteret er at rundene boardes ~én uke i forveien. Den varige kuren er en handball.no-fetcher (se sourceIssues), ikke gjentatt research-eskalering av et gap som allerede fylles ukentlig.",
+      "interest": "Serie A — neste serierunde (13.–14. sep)",
+      "whatsMissing": "Serie A stopper på tavla etter 7. sep (Lecce–Cagliari, Lazio–Udinese i dag). Neste runde 13.–14. sep (etter landslagspausen) har ingen kamper på tavla. PL, La Liga, Bundesliga og Eliteserien for samme helg er godt dekket; Serie A er det eneste domestiske hullet.",
+      "why": "Serie A håndboardes runde-for-runde (ingen ESPN ita.1-fetcher, ingen contract-blokk i authority.json → WP-243 fanger ikke bruddet mekanisk). I motsetning til det rullerende laget (PL eng.1 / La Liga esp.1 / Eliteserien fotball.no) som fyller seg selv innen 1–2 dager, fyller ikke Serie A seg selv, og neste runde er >5 dager unna men reelt fraværende.",
+      "corroboration": [
+        "https://www.legaseriea.it/en/serie-a/calendar",
+        "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A"
+      ],
+      "suggestedSource": "https://www.legaseriea.it/en/serie-a/calendar",
+      "severity": "medium",
+      "firstSeen": "2026-09-04T08:20:00Z",
+      "recurrences": 3,
+      "severityBumpedFor": "recurred 3 runs unaddressed (low → medium)",
+      "note": "Recall-exhaustion-bump anvendt: recurrences 3 og fortsatt reelt uadressert (Serie A 13.–14. sep ikke på tavla, ingen fetcher, research boarder det ikke på cadence — ulikt håndball der helgens runde faktisk boardes). Bumpet low→medium for synlighet mot research/improve. Ikke high/eskalert: lav-akutt (>5 dager), og den varige kuren er en ESPN ita.1-fetcher (sourceIssue), ikke gjentatt research-eskalering."
+    },
+    {
+      "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — neste serierunde (12.–13. sep) utover Kolstad",
+      "whatsMissing": "Neste helgs (12.–13. sep) Elkjøp-ligaen-runde er kun delvis på tavla: bare Bergen Håndball–Kolstad (12. sep 16:10 CEST). Resten av rundens kamper (menn + kvinner) mangler. DENNE helgens runde (5.–6. sep) var komplett boardet — den akutte instansen er dekket; EHF CL SC Magdeburg–Kolstad (9. sep) står også.",
+      "why": "Håndball er katalog-tier1 (wholesale) men har ingen statisk fetcher — hele Elkjøp-ligaen håndboardes runde-for-runde av research, som fyller ~1 uke fram om gangen. Hver fremtidig runde er derfor en ny potensiell blindsone. Løses hver uke av boarding-cadencen (denne helgens runde komplett), >5 dager til neste runde.",
       "corroboration": [
         "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/eliteserien/",
         "https://www.handball.no/nyheter/2026/08/handballsesongen-2627-er-i-gang/"
@@ -27,60 +42,46 @@
       "suggestedSource": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/eliteserien/",
       "severity": "medium",
       "firstSeen": "2026-08-31T10:34:00Z",
-      "recurrences": 6,
-      "note": "Videreført medium. Recall-exhaustion-bumpen (recurrences>=3 → medium→high) fortsatt bevisst WITHHOLDT: regelen retter seg mot gap som er 'recurred UNADDRESSED'. Dette gapet fikses hver uke (denne helgens runde komplett boardet), så det er addressed på ~1-ukes cadence. Meta-problemet (ingen fetcher) spores som HIGH sourceIssue for self-repair/improve, ikke usynlig calcifying. Å bumpe + eskalere ville ikke gi varig fiks (research boarder allerede på cadence) og skape støy."
-    },
-    {
-      "interest": "Serie A / Eliteserien / Premier League / La Liga — neste serierunde (12.–14. sep)",
-      "whatsMissing": "Domestisk fotball-dekning tynner ut etter denne runden. Bundesliga er boardet komplett t.o.m. 20. sep, men Serie A stopper etter 7. sep (ingen Serie A-kamper 13.–14. sep på tavla). Eliteserien runde 12 (bl.a. Bodø/Glimt–Sandefjord man 14. sep 21:00, Brann–Bodø/Glimt sen. runde) er kun delvis inne; PL/La Liga 12. sep godt dekket via ESPN-fetcheren.",
-      "why": "Delvis selv-løsende: PL (eng.1) + La Liga (esp.1) + Eliteserien (fotball.no) er rullerende nær-tid og fylles automatisk innen 1–2 dager. Serie A er DERIMOT håndboardet (ingen ESPN ita.1-fetcher) og fyller seg IKKE selv — neste Serie A-runde (13.–14. sep) er en reell horisont-blindsone, men >5 dager unna og lav-akutt. Kontrakter met (Eliteserien 5≥4, PL 9≥6). Serie A har ingen contract-blokk, så WP-243-mekanikken fanger den ikke.",
-      "corroboration": [
-        "https://www.fotball.no/turneringer/eliteserien/2026/",
-        "https://en.wikipedia.org/wiki/2026_Eliteserien"
-      ],
-      "suggestedSource": "https://www.legaseriea.it/en/serie-a/calendar",
-      "severity": "low",
-      "firstSeen": "2026-09-04T08:20:00Z",
-      "recurrences": 2,
-      "note": "Videreført low (recurrences 2). Det rullerende laget (PL/La Liga/Eliteserien) fyller seg selv; Serie A er det egentlige structural-hullet, men lav-akutt og dekket av samme sourceIssue som ber om en ita.1-fetcher. Bumpes ikke."
+      "recurrences": 7,
+      "note": "Videreført medium. Recall-exhaustion-bumpen (recurrences>=3 → medium→high) bevisst WITHHOLDT: regelen retter seg mot gap som er 'recurred UNADDRESSED'. Dette gapet fikses hver uke (denne helgens runde komplett boardet), så det er addressed på ~1-ukes cadence. Meta-problemet (ingen fetcher) spores som HIGH sourceIssue for self-repair/improve. Å bumpe + eskalere ville ikke gi varig fiks (research boarder allerede på cadence) og skape støy."
     }
   ],
   "sourceIssues": [
     {
       "source": "Statisk pipeline — ingen wholesale fetcher for UEFA-klubbturneringene (Champions League / Europa League / Conference League)",
-      "issue": "CL/EL/ECL håndboardes runde-for-runde av research (ingen ESPN-fetcher). Denne kjøringen ble CL MD1 kun DELVIS boardet: 8. sep-delen står, men hele onsdags- (9. sep) og torsdagsrunden (10. sep) + Real Madrid–Inter mangler — ~13 kamper av en marquee-runde med flere katalog-entiteter. Uten fetcher (eller contract-blokk i authority.json) fanges slike delvise MD-brudd verken mekanisk (coverage-contracts WP-243) eller selv-løsende (ingen rullerende nær-tid-fetcher).",
-      "impact": "Sterkt argument for en ESPN-fetcher for uefa.champions/uefa.europa/uefa.conference + authority.json contract-blokker for mekanisk bruddeteksjon. Uten det er hver europeisk matchday en manuell blindsone. Self-repair/improve-sak.",
+      "issue": "CL/EL/ECL håndboardes runde-for-runde av research (ingen ESPN-fetcher, ingen authority.json contract-blokk). MD1 (8.–10. sep) ble kun DELVIS boardet i to påfølgende kjøringer: onsdagsrunden (9. sep, 5 kamper inkl. Liverpool/Arsenal/Barcelona) mangler fortsatt helt, og to tirsdagskamper (Porto–Man City, Lille–Real Betis) falt til og med UT igjen mellom 06.09 og 07.09. Uten fetcher (eller contract-blokk) fanges slike delvise/regresjonerende MD-brudd verken mekanisk (WP-243) eller selv-løsende.",
+      "impact": "Sterkt argument for en ESPN-fetcher for uefa.champions/uefa.europa/uefa.conference + authority.json contract-blokker for mekanisk bruddeteksjon. Uten det er hver europeisk matchday en manuell blindsone med regresjonsrisiko. Self-repair/improve-sak.",
       "severity": "high"
     },
     {
       "source": "Statisk pipeline — ingen wholesale håndball-fetcher",
-      "issue": "Håndball er katalog-tier1 (wholesale) men har ingen statisk fetcher — hele Elkjøp-ligaen (menn + kvinner) håndboardes av research ~én uke fram om gangen. Denne kjøringen er denne helgens runde komplett boardet (8 kamper), men avhengigheten av manuell runde-for-runde-boarding består, så hver fremtidig runde forblir en potensiell blindsone (12.–13. sep pt. kun Kolstad). Kilde finnes (handball.no terminliste + TV 2 Play-oversikt); calibration.json: ingen negativ signal på handball.no.",
+      "issue": "Håndball er katalog-tier1 (wholesale) men har ingen statisk fetcher — hele Elkjøp-ligaen (menn + kvinner) håndboardes av research ~én uke fram om gangen. Denne helgens runde komplett boardet, men avhengigheten av manuell runde-for-runde-boarding består (12.–13. sep pt. kun Kolstad). Kilde finnes (handball.no terminliste + TV 2 Play-oversikt); calibration.json: handball.no 3/3 agreed, ingen negativt signal.",
       "impact": "Argument for en handball.no-fetcher (Elkjøp-ligaen menn + kvinner) for varig wholesale-dekning — self-repair/improve-sak.",
       "severity": "high"
     },
     {
-      "source": "Statisk pipeline — ingen wholesale ESPN-fetcher for Bundesliga (ger.1), Serie A (ita.1)",
-      "issue": "ESPN-fetcheren henter kun ligaer med statisk kanal (eng.1 PL, esp.1 La Liga). Bundesliga og Serie A håndboardes runde-for-runde av research. Denne kjøringen: Bundesliga godt boardet t.o.m. 20. sep, men Serie A stopper etter 7. sep, og Serie A har ingen contract-blokk i authority.json, så coverage-contracts-mekanikken (WP-243) fanger ikke fremtidige brudd mekanisk.",
-      "impact": "Strukturell (ikke akutt): argument for ESPN-fetchere (ger.1, ita.1) + authority.json contract-blokker for mekanisk bruddeteksjon.",
+      "source": "Statisk pipeline — ingen wholesale ESPN-fetcher for Serie A (ita.1) og Bundesliga (ger.1)",
+      "issue": "ESPN-fetcheren henter kun ligaer med statisk kanal (eng.1 PL, esp.1 La Liga). Bundesliga og Serie A håndboardes runde-for-runde av research. Denne kjøringen: Bundesliga godt boardet 12.–13. sep, men Serie A stopper etter 7. sep, og Serie A har ingen contract-blokk i authority.json, så coverage-contracts-mekanikken (WP-243) fanger ikke fremtidige brudd mekanisk.",
+      "impact": "Argument for ESPN-fetchere (ger.1, ita.1) + authority.json contract-blokker for mekanisk bruddeteksjon.",
       "severity": "medium"
     }
   ],
   "coveredWell": [
-    "F1 — ESPN-BLINDSONE (source-quirks-mandat, web-sjekket hver kjøring): INGEN mis-datering. Italiensk GP Monza race søn 6. sep 14:00 BST (13:00 UTC / 15:00 CEST) korrekt på tavla, bekreftet mot formula1.com + Wikipedia (weekend 4.–6. sep, kval lør 5. sep). Neste helgs Spansk GP (13. sep) og Aserbajdsjan/Baku (26. sep) også korrekt datert. Viaplay-rettigheter korrekt.",
-    "IMMINENT-PASS (6.–10. sep) domestisk fotball: denne helgens Eliteserien-runde komplett (Molde–KFUM, Sarpsborg–Vålerenga, Kristiansund–Tromsø + Rosenborg/Brann-kamper spilt), PL matchweek (Arsenal–Chelsea, Man City, Fulham/Palace osv. per RSS), La Liga (Valencia–Barcelona, Espanyol–Sevilla), Serie A og Bundesliga alle 6.–7. sep.",
-    "HÅNDBALL — denne helgens (6. sep) Elkjøp-ligaen-runde komplett (6+ kamper menn + kvinner, TV 2 Play/TV 2 Sport). SC Magdeburg–Kolstad (9. sep EHF CL) + Bergen–Kolstad (12. sep) boardet.",
-    "IMMINENT ellers: Golf Omega European Masters (DP World, node) + Irish Open 10. sep. Sykkel Vuelta a España (multi-dags-node, sluttuke) + Tour of Britain (2.–6. sep). Athletics Diamond League-finalen Brussel spilt 4.–5. sep (RSS: Jæger 2. plass). Tennis US Open-node (finaler denne helgen, Ruud dekket). Chess Global Chess League sesong 4 (Carlsen). CS2 BLAST Open Porto (Fall) finale 6. sep.",
-    "HORISONT (10. sep–4. okt): Europa/Conference League MD1 (16.–17. sep, Torreense–Lillestrøm norsk anker, Benfica–Milan, Ferencváros–Celtic osv.) boardet. UCI Road-VM Montréal (tempo 20. sep, mixed relay 22. sep, fellesstart 26.–27. sep). Golf: BMW PGA + Biltmore Championship (17. sep), Presidents Cup (24. sep). Athletics WA Ultimate Championship Budapest (11.–13. sep, Ingebrigtsen/Warholm). Tennis Davis Cup Norge–Kina (18. sep, Ruud) + Laver Cup (25. sep). Landskamper Norge–Danmark (24. sep) + Norge–Portugal (27. sep, Nations League).",
-    "KORREKT FRAVÆR (ikke hull): coverage-gaps.json tracked-claims Reitan/Ventura (golf, DP World-events boardet, ingen bekreftet individuell påmelding) og Håvard «rain» Nygaard (30. sep, 100T sen-annonsering per cs2-sources, HLTV ingen planlagt kamp). Vinteridretter (langrenn/skiskyting/alpint/hopp) + sandvolleyball av-sesong. PGA Tour i legitim FedExCup Fall-pause (Biltmore åpner 17. sep, kontrakt met)."
+    "F1 — ESPN-BLINDSONE (source-quirks-mandat, web-sjekket hver kjøring): INGEN mis-datering. Spansk GP Madrid (Madring): race søn 13. sep 15:00 CEST (13:00 UTC) + kval lør 12. sep 16:00 CEST (14:00 UTC) korrekt på tavla, bekreftet mot RacingNews365 + madring.com. Monza (Italiensk GP) race 6. sep spilt (RSS: Antonelli vant). Viaplay-rettigheter korrekt.",
+    "IMMINENT-PASS (7.–11. sep) domestisk fotball: dagens Serie A (Lecce–Cagliari, Lazio–Udinese) + La Liga (Real Sociedad–Elche, Celta–Getafe) på tavla; PL/La Liga/Bundesliga/Eliteserien 12.–13. sep godt dekket via ESPN-fetcheren + research.",
+    "HÅNDBALL — denne helgens (5.–6. sep) Elkjøp-ligaen-runde komplett boardet; EHF CL SC Magdeburg–Kolstad (9. sep) + Bergen–Kolstad (12. sep) står.",
+    "IMMINENT ellers: Golf Amgen Irish Open (DP World, 10. sep, node). Sykkel Vuelta a España (multi-dags-node t.o.m. 13. sep, sluttuke — RSS: Leknessund 5.-plass). Athletics WA Ultimate Championship Budapest (11.–13. sep, Ingebrigtsen/Warholm) boardet. Tennis US Open-node (finaler denne helgen, Ruud dekket, t.o.m. 14. sep). Chess Global Chess League sesong 4 (Carlsen, t.o.m. 13. sep).",
+    "HORISONT (11. sep–5. okt): Europa/Conference League MD1 (16.–17. sep, Torreense–Lillestrøm norsk anker, Benfica–Milan, NEC–Juventus, Ferencváros–Celtic osv.) boardet. UCI Road-VM Montréal (tempo 20. sep, mixed relay 22. sep, fellesstart 26.–27. sep). Golf BMW PGA + Biltmore Championship (17. sep, FedExCup Fall). Tennis Davis Cup Norge–Kina (18. sep, Ruud) + Laver Cup (25. sep).",
+    "KORREKT FRAVÆR (ikke hull): coverage-gaps.json mekaniske signaler triagert (gapCount 5, anomalyCount 0): 'Spirit' (Team Spirit-match mot PL-omtale-overskrift, falsk match), 'Formel 1' (Monza-recap, F1 dekket), tracked-claims Reitan/Ventura (golf, DP World-events boardet, ingen bekreftet individuell påmelding) + Håvard «rain» Nygaard (30. sep, 100T sen-annonsering per cs2-sources). Vinteridretter (langrenn/skiskyting/alpint/hopp) + sandvolleyball av-sesong. PGA Tour i legitim FedExCup Fall-pause (Biltmore åpner 17. sep, kontrakt met)."
   ],
   "escalated": true,
   "notes": [
-    "Kjøring 2026-09-06 ~08:25Z (recall-audit). ÉN akutt HIGH: CL MD1 onsdags- (9. sep) + torsdagsrunden (10. sep) + Real Madrid–Inter (8. sep) mangler helt fra tavla. Confidently-real + imminent + high → escalate.request='deep' skrevet, escalated=true (max 1/run).",
-    "IMMINENT-PASS først (source-quirks-mandat). F1 ESPN-blindsone web-sjekket mot formula1.com + Wikipedia: Monza (race søn 6. sep 14:00 BST) korrekt boardet, ingen mis-datering.",
-    "CL MD1 web-verifisert: UEFA bekrefter MD1 = 8.–10. sep 2026. Tavla har KUN 8. sep-delen (5 kamper). Onsdag 9. sep (Barcelona–Feyenoord, Liverpool–Atlético, Napoli–Arsenal, PSG–Slovan, Sporting–Galatasaray, Stuttgart–Viking) og torsdag 10. sep (Bayern–Bodø/Glimt, Como–Leipzig, Fenerbahçe–Roma, PSV–Shakhtar, Man United–Sabah, Slavia–Lens) + Real Madrid–Inter (8. sep) mangler. Bodø/Glimt (katalog-entitet + coverage-gaps.json entity-flagg) har ingen kommende kamp på tavla — Bayern–Bodø/Glimt 10. sep bekreftet på UEFAs Bodø/Glimt-side. CL har ingen fetcher → fyller seg IKKE selv → HIGH + eskalert.",
-    "HANDBALL: denne helgens runde komplett (coveredWell). Gjenværende er den strukturelle fremtidsrunde-avhengigheten (12.–13. sep pt. kun Kolstad) — beholdt medium (recurrences 6), bump bevisst withholdt (fikses ukentlig på cadence). Meta-problem (ingen fetcher) spores som HIGH sourceIssue.",
-    "DOMESTISK FOTBALL: PL/La Liga/Eliteserien rullerende nær-tid, fyller seg selv; Serie A (ingen ita.1-fetcher) er det egentlige structural-hullet for 13.–14. sep, men lav-akutt (low, recurrences 2). Web: Eliteserien runde 12 bl.a. Bodø/Glimt–Sandefjord man 14. sep 21:00.",
-    "MEKANISKE coverage-gaps.json-signaler TRIAGERT (gapCount 7, anomalyCount 0): Bodø/Glimt/Glimt (VAR-nyhet, men den REELLE mangelen er kommende kamper — se HIGH-gapet CL + Eliteserien), Man City (Haaland-nyhet — Porto–Man City 8. sep ER boardet), Formel 1 (Gasly-kval-nyhet — Monza boardet korrekt), tracked-claims Reitan/Ventura + Håvard «rain» Nygaard → korrekt fravær. Ingen anomalier, ingen stale-retained.",
-    "Ingen ekte contract-breach denne kjøringen (coverage-contracts.json: alle kontrakter met, breached=[]). MERK: CL/EL/ECL har INGEN contract-blokk, så det store CL-hullet fanges ikke mekanisk — sterkt argument for uefa-contract-blokker (sourceIssue high)."
+    "Kjøring 2026-09-07 ~08:35Z (recall-audit). ÉN akutt HIGH: CL MD1 onsdagsrunden (9. sep) mangler helt + regresjon på 8. sep (Porto–Man City, Lille–Real Betis, Real Madrid–Inter mangler; to av dem falt UT siden 06.09) + PSV–Shakhtar (10. sep). Confidently-real (UEFA-bekreftet) + imminent (1–3 dager) + flere katalog-entiteter → escalate.request='deep' skrevet, escalated=true (max 1/run).",
+    "IMMINENT-PASS først (source-quirks-mandat). F1 ESPN-blindsone web-sjekket mot RacingNews365 + madring.com: Madrid-GP (race søn 13. sep 15:00 CEST) korrekt boardet, ingen mis-datering.",
+    "CL MD1 web-verifisert mot UEFAs 'all league phase fixtures' + 'fixtures by team': MD1 = 8.–10. sep. Onsdag 9. sep = Liverpool–Atlético, Napoli–Arsenal, Barcelona–Feyenoord, PSG–Slovan Bratislava, Sporting–Galatasaray (0 på tavla). Tavla mangler også Porto–Man City + Real Madrid–Inter + Lille–Real Betis (8. sep) og PSV–Shakhtar + Stuttgart–Viking (10. sep). Recurrence av 06.09-gapet, forverret (regresjon) → HIGH + eskalert.",
+    "SERIE A: bumpet low→medium (recurrences 3, recall-exhaustion-regelen) — genuint uadressert (13.–14. sep ikke på tavla, ingen ita.1-fetcher, ikke boardet på cadence). Ikke eskalert (lav-akutt). Den varige kuren er en ESPN ita.1-fetcher (sourceIssue).",
+    "HANDBALL: denne helgens runde komplett (coveredWell). Gjenværende er den strukturelle fremtidsrunde-avhengigheten (12.–13. sep pt. kun Kolstad) — beholdt medium (recurrences 7), bump bevisst withheldt (fikses ukentlig på cadence). Meta-problem (ingen fetcher) spores som HIGH sourceIssue.",
+    "MEKANISKE coverage-gaps.json-signaler TRIAGERT (gapCount 5, anomalyCount 0, ingen stale-retained): Spirit (falsk match), Formel 1 (Monza-recap, dekket), tracked-claims Reitan/Ventura + Håvard «rain» Nygaard → korrekt fravær.",
+    "Ingen ekte contract-breach denne kjøringen (coverage-contracts.json: alle 6 kontrakter met, breached=[]). MERK: CL/EL/ECL har INGEN contract-blokk, så det store CL-hullet fanges ikke mekanisk — fortsatt sterkt argument for uefa-contract-blokker (sourceIssue high)."
   ]
 }
