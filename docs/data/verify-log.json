@@ -1,18 +1,14 @@
 {
-	"runAt": "2026-09-07T05:30:00Z",
-	"checked": 16,
-	"confirmed": 16,
-	"amended": 0,
-	"removed": 0,
-	"notes": [
-		"Champions League ligaspill runde 1 (2026-27): alle fem 10.sep-kampene bekreftet som CL mot uefa.com — Fenerbahçe–Roma (18:45 CEST/16:45 UTC), Bayern–Bodø/Glimt, Man Utd–Sabah, Como–Leipzig, Slavia–Lens (21:00 CEST/19:00 UTC). Sabah FK er debutant. TV 2 Play er riktig norsk kanal (CL er TV 2s eksklusive rettighet t.o.m. 2030/31).",
-		"FALSKT ALARM UNNGÅTT: Union–Schalke, Dortmund–Paderborn og Elversberg–Bayern så ut som oppdiktede par (Schalke/Paderborn/Elversberg er 2. Bundesliga-lag), men alle tre RYKKET OPP til 2026-27 Bundesliga — kampene er ekte runde 3-oppgjør. Bekreftet mot bundesliga.com/fcbayern.com.",
-		"Bundesliga runde 3 tider bekreftet: Union–Schalke fre 11 sep 20:30 CEST, Mainz–Frankfurt + Dortmund–Paderborn lør 12 sep 15:30, Leipzig–Hamburg søn 13 sep 15:30, Elversberg–Bayern søn 13 sep 17:30. Viaplay riktig kanal.",
-		"F1 Spansk GP Madrid (nytt MADRING-anlegg): helg 11–13 sep. Kvalifisering lør 12 sep 16:00 lokal = 14:00 UTC (stemmer med tavla); løp søn 13 sep 15:00 lokal. Viaplay riktig.",
-		"SC Magdeburg–Kolstad EHF Champions League bekreftet mot scm-handball.de: onsdag 9 sep 20:45 CEST (18:45 UTC), GETEC Arena, Magdeburg hjemme. Viaplay riktig.",
-		"Hødd–Lyn OBOS-ligaen søn 13 sep 17:00 lokal (15:00 UTC), Høddvoll. TV 2 Play riktig.",
-		"Serie A norske rettigheter = VG+ Sport bekreftet (vg.no/sport/i/P4pQgb) — kanal på Lecce–Cagliari og Lazio–Udinese er riktig. LÆRING: norwegian-rights-skillen mangler en Serie A-linje (VG+ Sport); forsøkte å legge den til men Edit på .claude/skills/ ble ikke tillatt i denne økten — bør legges til ved neste anledning.",
-		"World Athletics Ultimate Championship (Budapest 11–13 sep, NRK) re-bekreftet mot worldathletics.org (allerede verifisert 06.09).",
-		"Ikke individuelt re-verifisert denne kjøringen (lot stå urørt): Amgen Irish Open (golf/DP World Tour/Viaplay), Bergen Håndball–Kolstad (Elkjøp-ligaen/TV 2 Play), samt Bundesliga-kampene Leverkusen–Augsburg, Gladbach–Freiburg, Stuttgart–Hoffenheim, Werder–Köln (samme bekreftede runde 3, Viaplay-rettighetene er solide)."
-	]
+  "runAt": "2026-09-08T09:55:00Z",
+  "checked": 22,
+  "confirmed": 20,
+  "amended": 0,
+  "removed": 0,
+  "notes": [
+    "Champions League 2026/27 ligaspill runde 1 (8.-10.09): hele kampoppsettet, datoer og avspark verifisert mot uefa.com sitt offisielle fixture-oppslag — alle matchups og tider (sen slot 21:00 CEST=19:00 UTC, tidlig slot 18:45 CEST=16:45 UTC) stemmer. 19 kamper stemplet confirmed.",
+    "UCL-streaming: norwegian-rights-skillet sier Champions League -> TV 2 Play [solid, Viaplay har kun EL/Conference]. tv-listings.json (tvkampen ground truth) lister likevel TV 2 Play + Viaplay (+ BillyBets/Eurosport) for 8.09-kampene — Viaplay/TV 2-fellesavtalen gjør enkeltkamper tilgjengelige begge steder. Beholdt derfor både TV 2 Play + Viaplay der de sto; ingen streaming-endring.",
+    "F1 Spansk GP (Madrid/Madring, ny bane) kvalifisering: bekreftet lør 12.09 kl. 16:00 lokal (CEST) = 14:00 UTC mot formula1.com/racing/2026/spain + ESPN/Sky/RacingNews365. Board hadde 14:00 UTC — riktig. Løpet er søn 13.09. Streaming Viaplay [solid].",
+    "Vuelta a España 2026: fortsatt pågående (etappe 16 tirsdag 8.09, Cortegana->La Rábida/Palos), slutter ~13.-14.09 per cyclingstage.com. Multi-dags event på board (t.o.m. 13.09) står riktig. Streaming HBO Max (WBD) uendret.",
+    "Ingen amend/remove denne kjøringen — de høyverdi-usikre postene (UCL-datoer, F1-dato, Vuelta-status) viste seg alle korrekte mot primærkilder."
+  ]
 }
