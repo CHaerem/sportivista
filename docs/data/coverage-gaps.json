@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2026-09-08T14:07:25.546Z",
-  "gapCount": 5,
+  "generatedAt": "2026-09-08T18:17:41.792Z",
+  "gapCount": 8,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Alireza Firouzja",
+      "type": "missing",
+      "imminent": true,
+      "headline": "Global Chess League, Day 4 - Live!",
+      "link": "https://en.chessbase.com/post/global-chess-league-2026-live",
+      "feed": "chessbase",
+      "matchCount": 1,
+      "detectedAt": "2026-09-08T18:17:40.535Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Firouzja",
+      "type": "missing",
+      "imminent": true,
+      "headline": "Global Chess League, Day 4 - Live!",
+      "link": "https://en.chessbase.com/post/global-chess-league-2026-live",
+      "feed": "chessbase",
+      "matchCount": 1,
+      "detectedAt": "2026-09-08T18:17:40.535Z"
+    },
     {
       "kind": "entity",
       "entity": "Man City",
@@ -12,7 +34,18 @@
       "link": "https://www.theguardian.com/football/2026/sep/08/cavan-sullivan-analyisis-mls-philadelphia-union",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-09-08T14:07:24.614Z"
+      "detectedAt": "2026-09-08T18:17:40.535Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Giro",
+      "type": "missing",
+      "imminent": false,
+      "headline": "American Criterium Cup: Skylar Schneider and Justin Williams secure titles with top 10s at Giro Della Montagna",
+      "link": "https://www.cyclingnews.com/pro-cycling/racing/american-criterium-cup-skylar-schneider-and-justin-williams-secure-titles-with-top-10s-at-giro-della-montagna/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-09-08T18:17:40.535Z"
     },
     {
       "kind": "entity",
@@ -23,7 +56,7 @@
       "link": "https://www.nrk.no/sport/veteranstjerner-tilbake-pa-handballandslaget-1.18017523",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-09-08T14:07:24.614Z"
+      "detectedAt": "2026-09-08T18:17:40.535Z"
     },
     {
       "kind": "tracked-claim",
@@ -35,7 +68,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-reitan",
-      "detectedAt": "2026-09-08T14:07:25.281Z"
+      "detectedAt": "2026-09-08T18:17:41.490Z"
     },
     {
       "kind": "tracked-claim",
@@ -47,7 +80,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-ventura",
-      "detectedAt": "2026-09-08T14:07:25.281Z"
+      "detectedAt": "2026-09-08T18:17:41.490Z"
     },
     {
       "kind": "tracked-claim",
@@ -59,7 +92,7 @@
       "claimedDate": "2026-09-24T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-09-08T14:07:25.281Z"
+      "detectedAt": "2026-09-08T18:17:41.490Z"
     }
   ],
   "anomalies": [
@@ -68,7 +101,7 @@
       "issue": "file-empty",
       "detail": "docs/data/esports.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-09-08T14:07:25.333Z"
+      "detectedAt": "2026-09-08T18:17:41.541Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
