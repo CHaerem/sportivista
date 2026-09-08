@@ -1,18 +1,62 @@
 {
-  "generatedAt": "2026-09-07T23:53:20.926Z",
-  "gapCount": 6,
+  "generatedAt": "2026-09-08T02:22:51.560Z",
+  "gapCount": 8,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Spirit",
+      "entity": "Eliteserien",
+      "type": "imminent",
+      "imminent": true,
+      "headline": "Slår banealarm i Eliteserien: - Driver vi egentlig med toppidrett?",
+      "link": "https://www.aftenposten.no/sport/i/j0x7KA/slaar-banealarm-i-eliteserien-driver-vi-egentlig-med-toppidrett",
+      "feed": "aftenposten-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-09-08T02:22:49.844Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "La Vuelta",
       "type": "missing",
       "imminent": false,
-      "headline": "Premier League: 10 talking points from the weekend’s action",
-      "link": "https://www.theguardian.com/football/2026/sep/07/premier-league-10-talking-points-from-the-weekends-action",
-      "feed": "guardian-football",
+      "headline": "After several years of internal squabbling, suddenly Movistar are getting their tactics right as La Vuelta heats up – Philippa York analysis",
+      "link": "https://www.cyclingnews.com/pro-cycling/after-several-years-of-internal-squabbling-suddenly-movistar-are-getting-their-tactics-right-as-la-vuelta-heats-up-philippa-york-analysis/",
+      "feed": "cyclingnews",
       "matchCount": 1,
-      "detectedAt": "2026-09-07T23:53:20.028Z"
+      "detectedAt": "2026-09-08T02:22:49.844Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Håndball-EM",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Gigant-underskudd i håndball-EM: – Kan ikke fortsette sånn",
+      "link": "https://www.aftenposten.no/sport/i/GxX2vl/gigant-underskudd-i-haandball-em-kan-ikke-fortsette-saann",
+      "feed": "aftenposten-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-09-08T02:22:49.844Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Handball-EM",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Gigant-underskudd i håndball-EM: – Kan ikke fortsette sånn",
+      "link": "https://www.aftenposten.no/sport/i/GxX2vl/gigant-underskudd-i-haandball-em-kan-ikke-fortsette-saann",
+      "feed": "aftenposten-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-09-08T02:22:49.844Z"
+    },
+    {
+      "kind": "sport",
+      "entity": "Formel 1",
+      "sport": "f1",
+      "type": "imminent",
+      "imminent": true,
+      "headline": "Wrist injury to keep Hadjar out of Spanish GP",
+      "link": "https://www.bbc.co.uk/sport/formula1/articles/c62ekd32rk7o?at_medium=RSS&amp;at_campaign=rss",
+      "feed": "bbc-f1",
+      "detectedAt": "2026-09-08T02:22:49.844Z"
     },
     {
       "kind": "tracked-claim",
@@ -24,7 +68,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-reitan",
-      "detectedAt": "2026-09-07T23:53:20.719Z"
+      "detectedAt": "2026-09-08T02:22:50.531Z"
     },
     {
       "kind": "tracked-claim",
@@ -36,7 +80,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-ventura",
-      "detectedAt": "2026-09-07T23:53:20.719Z"
+      "detectedAt": "2026-09-08T02:22:50.531Z"
     },
     {
       "kind": "tracked-claim",
@@ -48,31 +92,7 @@
       "claimedDate": "2026-09-24T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-09-07T23:53:20.719Z"
-    },
-    {
-      "kind": "tracked-claim",
-      "entity": "BLAST Open Porto 2026 (Fall)",
-      "group": "tournaments",
-      "sport": "esports",
-      "type": "missing",
-      "imminent": false,
-      "claimedDate": null,
-      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
-      "trackedId": "blast-open-porto-2026",
-      "detectedAt": "2026-09-07T23:53:20.719Z"
-    },
-    {
-      "kind": "tracked-claim",
-      "entity": "NM Cupen 2026 (fotball)",
-      "group": "tournaments",
-      "sport": "football",
-      "type": "missing",
-      "imminent": false,
-      "claimedDate": "2027-05-09T00:00:00.000Z",
-      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
-      "trackedId": "nm-cupen-2026",
-      "detectedAt": "2026-09-07T23:53:20.719Z"
+      "detectedAt": "2026-09-08T02:22:50.531Z"
     }
   ],
   "anomalies": [
@@ -81,7 +101,7 @@
       "issue": "file-empty",
       "detail": "docs/data/esports.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-09-07T23:53:20.762Z"
+      "detectedAt": "2026-09-08T02:22:50.566Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
