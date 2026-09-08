@@ -193,60 +193,6 @@
     ]
   },
   {
-    "sport": "football",
-    "tournament": "UEFA Champions League 2026/27 (playoff)",
-    "title": "Bodø/Glimt – NEC Nijmegen",
-    "time": "2026-08-25T19:00:00Z",
-    "endTime": null,
-    "venue": "Aspmyra Stadion, Bodø",
-    "norwegian": true,
-    "homeTeam": "Bodø/Glimt",
-    "awayTeam": "NEC Nijmegen",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-12T03:00:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://www.tv2.no/sport/disse-moter-glimt-og-viking-i-cl-playoffen/19120943/",
-      "https://www.foxsports.com/soccer/champions-league-bodoglimt-vs-nec-nijmegen-aug-25-2026-game-boxscore-962549",
-      "https://www.vg.no/shopping/i/j0lG4z/slik-faar-du-sett-bodoe-glimt-i-champions-league-sluttspillet"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "tv2",
-        "url": "https://www.foxsports.com/soccer/champions-league-bodoglimt-vs-nec-nijmegen-aug-25-2026-game-boxscore-962549",
-        "basis": "secondary",
-        "retrievedAt": "2026-08-12T03:00:00Z",
-        "note": "UEFA.com utilgjengelig (503) ved kjoring; kamptid/dato bekreftet mot TV 2s kampoppsett + FOX-boxscore + arrangorklubbens regionale kringkaster (Glimt: Omroep Gelderland/gld.nl «neste onsdag 21.00») + ran.joyn - verify fester mot UEFA/klubb primaerkilde"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/",
-        "basis": "official",
-        "retrievedAt": "2026-08-12T03:00:00Z",
-        "note": "CL-playoff = TV 2s eksklusive norske Champions League-rettigheter (t.o.m. 2031)"
-      }
-    },
-    "summary": "Bodø/Glimts RETURKAMP i Champions League-playoffen 2026/27 – hjemme på Aspmyra mot NEC Nijmegen. Vinneren sammenlagt går til Champions League-ligaspillet; taperen til Europa League-ligaspillet.\n\nAvspark tirsdag 25. august kl. 21.00 CEST (19.00 UTC). 1. kampen spilles borte i Nijmegen onsdag 19. aug. Glimt er tilbake i mesterliga-omspillet etter å ha slått Union Saint-Gilloise 6–5 sammenlagt.\n\nNorsk visning: TV 2 Play. NB: CL-playoffen ligger hos TV 2 (eksklusive norske CL-rettigheter), i motsetning til Glimts tidligere kvalik-hjemmekamper som lå hos Avisa Nordland/Direktesport/VG+ Sport.",
-    "id": "f9e4b866624e",
-    "homeTeamEntityId": "bodo-glimt",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.foxsports.com/soccer/champions-league-bodoglimt-vs-nec-nijmegen-aug-25-2026-game-boxscore-962549",
-      "https://www.italiansoccerseriea.com/uefa-champions-league-tickets/fk-bodo-glimt-nec-nijmegen-tickets-2026-08-25-champions-league-aspmyra-stadion-bodo-norway/"
-    ],
-    "verifiedAt": "2026-08-19T05:55:00Z"
-  },
-  {
     "sport": "esports",
     "tournament": "BLAST Open Porto 2026",
     "title": "BLAST Open Porto 2026 (Fall) – gruppespill",
@@ -3722,84 +3668,6 @@
   {
     "sport": "football",
     "tournament": "Champions League",
-    "title": "LASK Linz at AEK Athens",
-    "time": "2026-09-08T16:45:00.000Z",
-    "endTime": null,
-    "venue": "OPAP Arena",
-    "meta": "Champions League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/aek-athen-lask-linz-1961223",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/aek-athen-lask-linz-1961223",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "AEK Athens",
-    "awayTeam": "LASK Linz",
-    "isFavorite": false,
-    "round": null,
-    "id": "aed88c780ede",
-    "verifiedAt": "2026-09-08T09:55:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/"
-    ]
-  },
-  {
-    "sport": "football",
-    "tournament": "Champions League",
-    "title": "Aston Villa at Club Brugge",
-    "time": "2026-09-08T16:45:00.000Z",
-    "endTime": null,
-    "venue": "Jan Breydel Stadium",
-    "meta": "Champions League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/club-brugge-aston-villa-1961175",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "TV 2 Sport 1",
-        "url": "https://www.tvkampen.com/kamp/club-brugge-aston-villa-1961175",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Club Brugge",
-    "awayTeam": "Aston Villa",
-    "isFavorite": false,
-    "round": null,
-    "id": "cf78139ce6c7",
-    "homeTeamEntityId": "club-brugge",
-    "awayTeamEntityId": "aston-villa",
-    "verifiedAt": "2026-09-08T09:55:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/"
-    ]
-  },
-  {
-    "sport": "football",
-    "tournament": "Champions League",
     "title": "Villarreal at Borussia Dortmund",
     "time": "2026-09-08T19:00:00.000Z",
     "endTime": null,
@@ -3809,13 +3677,8 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/borussia-dortmund-villarreal-1964097",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/borussia-dortmund-villarreal-1964097",
-        "urlKind": "deep"
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -3845,13 +3708,8 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/porto-manchester-city-1964098",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/porto-manchester-city-1964098",
-        "urlKind": "deep"
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -3986,16 +3844,13 @@
   },
   {
     "sport": "football",
-    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
-    "title": "Feyenoord at Barcelona",
-    "time": "2026-09-09T16:45:00Z",
+    "tournament": "Champions League",
+    "title": "Feyenoord Rotterdam at Barcelona",
+    "time": "2026-09-09T16:45:00.000Z",
     "endTime": null,
-    "venue": "Spotify Camp Nou, Barcelona",
+    "venue": "Spotify Camp Nou",
+    "meta": "Champions League",
     "norwegian": false,
-    "homeTeam": "Barcelona",
-    "awayTeam": "Feyenoord",
-    "norwegianPlayers": [],
-    "participants": [],
     "streaming": [
       {
         "platform": "TV 2 Play",
@@ -4003,52 +3858,29 @@
         "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-07T23:00:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
-      "https://kommunikasjon.ntb.no/pressemelding/18884555/tv-2-skal-vise-champions-league-de-fem-neste-sesongene"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-        "basis": "primary",
-        "retrievedAt": "2026-09-07T23:00:00Z",
-        "note": "UEFAs offisielle ligaspill-fixtureliste MD1; uavhengig write-time fact-check bekreftet dato/tid/hjemme-borte (UEFA + Wikipedia + klubbsider)"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-07T23:00:00Z",
-        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
-      }
-    },
-    "summary": "Barcelona åpner Mesterligaen hjemme mot Feyenoord — tilbake på Spotify Camp Nou for 2026/27.\n\nAvspark onsdag 9. september kl. 18.45 CEST (16.45 UTC).",
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Barcelona",
+    "awayTeam": "Feyenoord Rotterdam",
+    "isFavorite": true,
+    "round": null,
+    "id": "c12e330c69e8",
     "homeTeamEntityId": "barcelona",
-    "id": "a0abcebb0e01",
-    "verifiedAt": "2026-09-08T09:55:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/"
-    ]
+    "summary": "Barcelona åpner Mesterligaen hjemme mot Feyenoord — tilbake på Spotify Camp Nou for 2026/27.\n\nAvspark onsdag 9. september kl. 18.45 CEST (16.45 UTC)."
   },
   {
     "sport": "football",
-    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
-    "title": "Viking at VfB Stuttgart",
-    "time": "2026-09-09T16:45:00Z",
+    "tournament": "Champions League",
+    "title": "Viking FK at VfB Stuttgart",
+    "time": "2026-09-09T16:45:00.000Z",
     "endTime": null,
-    "venue": "MHP Arena, Stuttgart",
+    "venue": "MHPArena",
+    "meta": "Champions League",
     "norwegian": true,
-    "homeTeam": "VfB Stuttgart",
-    "awayTeam": "Viking",
-    "norwegianPlayers": [],
-    "participants": [],
     "streaming": [
       {
         "platform": "TV 2 Play",
@@ -4056,40 +3888,20 @@
         "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-07T23:00:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
-      "https://kommunikasjon.ntb.no/pressemelding/18884555/tv-2-skal-vise-champions-league-de-fem-neste-sesongene"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-        "basis": "primary",
-        "retrievedAt": "2026-09-07T23:00:00Z",
-        "note": "UEFAs offisielle ligaspill-fixtureliste MD1; uavhengig write-time fact-check bekreftet dato/tid/hjemme-borte (UEFA + Wikipedia + klubbsider)"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-07T23:00:00Z",
-        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
-      }
-    },
-    "summary": "Norske Viking spiller sitt aller første Champions League-ligaspill — borte mot VfB Stuttgart på MHP Arena.\n\nAvspark onsdag 9. september kl. 18.45 CEST (16.45 UTC).",
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "VfB Stuttgart",
+    "awayTeam": "Viking FK",
+    "isFavorite": false,
+    "round": null,
+    "id": "f6547547695a",
     "homeTeamEntityId": "vfb-stuttgart",
     "awayTeamEntityId": "viking-fk",
-    "id": "51a4fbec1a31",
-    "verifiedAt": "2026-09-08T09:55:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/"
-    ]
+    "summary": "Norske Viking spiller sitt aller første Champions League-ligaspill — borte mot VfB Stuttgart på MHP Arena.\n\nAvspark onsdag 9. september kl. 18.45 CEST (16.45 UTC)."
   },
   {
     "sport": "handball",

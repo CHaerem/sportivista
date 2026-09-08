@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T18:17:41.792Z",
+  "generatedAt": "2026-09-08T21:33:30.204Z",
   "gapCount": 8,
   "anomalyCount": 1,
   "gaps": [
@@ -12,7 +12,7 @@
       "link": "https://en.chessbase.com/post/global-chess-league-2026-live",
       "feed": "chessbase",
       "matchCount": 1,
-      "detectedAt": "2026-09-08T18:17:40.535Z"
+      "detectedAt": "2026-09-08T21:33:28.065Z"
     },
     {
       "kind": "entity",
@@ -23,18 +23,29 @@
       "link": "https://en.chessbase.com/post/global-chess-league-2026-live",
       "feed": "chessbase",
       "matchCount": 1,
-      "detectedAt": "2026-09-08T18:17:40.535Z"
+      "detectedAt": "2026-09-08T21:33:28.065Z"
     },
     {
       "kind": "entity",
-      "entity": "Man City",
+      "entity": "Mesterligaen",
       "type": "missing",
       "imminent": false,
-      "headline": "Man City-bound 16-year-old Cavan Sullivan is MLS’s chaotic revelation",
-      "link": "https://www.theguardian.com/football/2026/sep/08/cavan-sullivan-analyisis-mls-philadelphia-union",
-      "feed": "guardian-football",
+      "headline": "Aston Villa innledet mesterligaen med seier – Vetlesen-mål til ingen nytte",
+      "link": "https://www.nrk.no/sport/aston-villa-innledet-mesterligaen-med-seier-_-vetlesen-mal-til-ingen-nytte-1.18018446",
+      "feed": "nrk-sport",
+      "matchCount": 3,
+      "detectedAt": "2026-09-08T21:33:28.065Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Tour de France",
+      "type": "missing",
+      "imminent": false,
+      "headline": "'This is a big stepping stone' - Matthew Brennan eyes Great Britain start of 2027 Tour de France after racking up fourth Vuelta a España success",
+      "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/this-is-a-big-stepping-stone-matthew-brennan-eyes-great-britain-start-of-2027-tour-de-france-after-racking-up-fourth-vuelta-a-espana-success/",
+      "feed": "cyclingnews",
       "matchCount": 1,
-      "detectedAt": "2026-09-08T18:17:40.535Z"
+      "detectedAt": "2026-09-08T21:33:28.065Z"
     },
     {
       "kind": "entity",
@@ -45,18 +56,7 @@
       "link": "https://www.cyclingnews.com/pro-cycling/racing/american-criterium-cup-skylar-schneider-and-justin-williams-secure-titles-with-top-10s-at-giro-della-montagna/",
       "feed": "cyclingnews",
       "matchCount": 1,
-      "detectedAt": "2026-09-08T18:17:40.535Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "EHF EURO",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Veteranstjerner tilbake på håndballandslaget",
-      "link": "https://www.nrk.no/sport/veteranstjerner-tilbake-pa-handballandslaget-1.18017523",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-09-08T18:17:40.535Z"
+      "detectedAt": "2026-09-08T21:33:28.065Z"
     },
     {
       "kind": "tracked-claim",
@@ -68,7 +68,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-reitan",
-      "detectedAt": "2026-09-08T18:17:41.490Z"
+      "detectedAt": "2026-09-08T21:33:28.562Z"
     },
     {
       "kind": "tracked-claim",
@@ -80,7 +80,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-ventura",
-      "detectedAt": "2026-09-08T18:17:41.490Z"
+      "detectedAt": "2026-09-08T21:33:28.562Z"
     },
     {
       "kind": "tracked-claim",
@@ -92,7 +92,7 @@
       "claimedDate": "2026-09-24T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-09-08T18:17:41.490Z"
+      "detectedAt": "2026-09-08T21:33:28.562Z"
     }
   ],
   "anomalies": [
@@ -101,7 +101,7 @@
       "issue": "file-empty",
       "detail": "docs/data/esports.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-09-08T18:17:41.541Z"
+      "detectedAt": "2026-09-08T21:33:28.596Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
