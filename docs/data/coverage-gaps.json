@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-08T02:22:51.560Z",
-  "gapCount": 8,
+  "generatedAt": "2026-09-08T07:38:56.744Z",
+  "gapCount": 7,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -11,19 +11,8 @@
       "headline": "Slår banealarm i Eliteserien: - Driver vi egentlig med toppidrett?",
       "link": "https://www.aftenposten.no/sport/i/j0x7KA/slaar-banealarm-i-eliteserien-driver-vi-egentlig-med-toppidrett",
       "feed": "aftenposten-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-09-08T02:22:49.844Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "La Vuelta",
-      "type": "missing",
-      "imminent": false,
-      "headline": "After several years of internal squabbling, suddenly Movistar are getting their tactics right as La Vuelta heats up – Philippa York analysis",
-      "link": "https://www.cyclingnews.com/pro-cycling/after-several-years-of-internal-squabbling-suddenly-movistar-are-getting-their-tactics-right-as-la-vuelta-heats-up-philippa-york-analysis/",
-      "feed": "cyclingnews",
-      "matchCount": 1,
-      "detectedAt": "2026-09-08T02:22:49.844Z"
+      "matchCount": 3,
+      "detectedAt": "2026-09-08T07:38:55.588Z"
     },
     {
       "kind": "entity",
@@ -34,7 +23,7 @@
       "link": "https://www.aftenposten.no/sport/i/GxX2vl/gigant-underskudd-i-haandball-em-kan-ikke-fortsette-saann",
       "feed": "aftenposten-sport",
       "matchCount": 1,
-      "detectedAt": "2026-09-08T02:22:49.844Z"
+      "detectedAt": "2026-09-08T07:38:55.588Z"
     },
     {
       "kind": "entity",
@@ -45,7 +34,7 @@
       "link": "https://www.aftenposten.no/sport/i/GxX2vl/gigant-underskudd-i-haandball-em-kan-ikke-fortsette-saann",
       "feed": "aftenposten-sport",
       "matchCount": 1,
-      "detectedAt": "2026-09-08T02:22:49.844Z"
+      "detectedAt": "2026-09-08T07:38:55.588Z"
     },
     {
       "kind": "sport",
@@ -56,7 +45,7 @@
       "headline": "Wrist injury to keep Hadjar out of Spanish GP",
       "link": "https://www.bbc.co.uk/sport/formula1/articles/c62ekd32rk7o?at_medium=RSS&amp;at_campaign=rss",
       "feed": "bbc-f1",
-      "detectedAt": "2026-09-08T02:22:49.844Z"
+      "detectedAt": "2026-09-08T07:38:55.588Z"
     },
     {
       "kind": "tracked-claim",
@@ -68,7 +57,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-reitan",
-      "detectedAt": "2026-09-08T02:22:50.531Z"
+      "detectedAt": "2026-09-08T07:38:56.119Z"
     },
     {
       "kind": "tracked-claim",
@@ -80,7 +69,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-ventura",
-      "detectedAt": "2026-09-08T02:22:50.531Z"
+      "detectedAt": "2026-09-08T07:38:56.119Z"
     },
     {
       "kind": "tracked-claim",
@@ -92,7 +81,7 @@
       "claimedDate": "2026-09-24T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-09-08T02:22:50.531Z"
+      "detectedAt": "2026-09-08T07:38:56.119Z"
     }
   ],
   "anomalies": [
@@ -101,7 +90,7 @@
       "issue": "file-empty",
       "detail": "docs/data/esports.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-09-08T02:22:50.566Z"
+      "detectedAt": "2026-09-08T07:38:56.146Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."

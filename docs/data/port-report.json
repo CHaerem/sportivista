@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T02:22:49.668Z",
+  "generatedAt": "2026-09-08T07:38:55.412Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -27,7 +27,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 7.66,
+    "oldestGapAgeDays": 7.88,
     "escalatable": 2,
     "catalogMatched": 3,
     "auditedAt": "2026-09-07T08:35:00Z",
@@ -35,21 +35,21 @@
       {
         "interest": "UEFA Champions League — MD1 (league phase): HELE onsdag 9. sep + Porto–Man City / Real Madrid–Inter / Lille–Real Betis (8. sep) + PSV–Shakhtar / Stuttgart–Viking (10. sep)",
         "severity": "high",
-        "ageDays": 1.75,
+        "ageDays": 1.97,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Serie A — neste serierunde (13.–14. sep)",
         "severity": "medium",
-        "ageDays": 3.75,
+        "ageDays": 3.97,
         "recurrences": 3,
         "catalogMatched": true
       },
       {
         "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — neste serierunde (12.–13. sep) utover Kolstad",
         "severity": "medium",
-        "ageDays": 7.66,
+        "ageDays": 7.88,
         "recurrences": 7,
         "catalogMatched": true
       }
@@ -61,17 +61,10 @@
     "nearTermAmended": 0,
     "verifyRunAt": "2026-09-07T05:30:00Z",
     "windowRate": 0,
-    "windowChecks": 76,
+    "windowChecks": 72,
     "windowAmendments": 0,
     "windowCorrections": 6,
     "byDay": [
-      {
-        "date": "2026-08-25",
-        "checks": 4,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-08-26",
         "checks": 6,
@@ -167,21 +160,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-08T02:22:45.307Z",
+    "buildCheckedAt": "2026-09-08T07:38:51.774Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-07T23:53:21.097Z",
-    "manifestAgeHours": 2.49,
+    "manifestGeneratedAt": "2026-09-08T02:22:51.718Z",
+    "manifestAgeHours": 5.27,
     "staleFiles": [
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-09-06T16:41:15.881Z",
-        "ageHours": 33.69
+        "ageHours": 38.96
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-09-07T05:30:00Z",
-    "verifyAgeHours": 20.88,
+    "verifyAgeHours": 26.15,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -190,6 +183,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-08T02:22:49.668Z"
+    "generatedAt": "2026-09-08T07:38:55.411Z"
   }
 }
