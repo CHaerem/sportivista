@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-08T23:46:28.232Z",
+  "lastUpdated": "2026-09-09T02:24:31.169Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
@@ -226,7 +226,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "Peacock",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "AFC Bournemouth",
           "awayTeam": "Brentford",
@@ -246,7 +252,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "Peacock",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Aston Villa",
           "awayTeam": "Nottingham Forest",
@@ -266,7 +278,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "USA Net",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Chelsea",
           "awayTeam": "Hull City",
@@ -306,7 +324,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "Peacock",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Liverpool",
           "awayTeam": "Fulham",
@@ -346,7 +370,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "USA Net",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Sunderland",
           "awayTeam": "Arsenal",
@@ -366,7 +396,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "USA Net",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Coventry City",
           "awayTeam": "Brighton & Hove Albion",
@@ -386,7 +422,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "Peacock",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Manchester United",
           "awayTeam": "Manchester City",
@@ -406,7 +448,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "USA Net",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Leeds United",
           "awayTeam": "Newcastle United",
@@ -682,56 +730,51 @@
           "additional": {
             "status": "STATUS_SCHEDULED"
           }
-        }
-      ]
-    },
-    {
-      "name": "Champions League",
-      "events": [
+        },
         {
-          "id": "football-feyenoord-rotterdam-at-barcelona-1788972300000",
-          "title": "Feyenoord Rotterdam at Barcelona",
-          "time": "2026-09-09T16:45:00.000Z",
-          "venue": "Spotify Camp Nou",
+          "id": "football-espanyol-at-rayo-vallecano-1789491600000",
+          "title": "Espanyol at Rayo Vallecano",
+          "time": "2026-09-15T17:00:00.000Z",
+          "venue": "Estadio Municipal de Butarque",
           "sport": "football",
-          "meta": "Champions League",
-          "tournament": "Champions League",
+          "meta": "La Liga",
+          "tournament": "La Liga",
           "streaming": [
             {
-              "platform": "Paramount+",
+              "platform": "ESPN Deportes",
               "url": "",
               "type": "tv"
             }
           ],
           "norwegian": false,
-          "homeTeam": "Barcelona",
-          "awayTeam": "Feyenoord Rotterdam",
+          "homeTeam": "Rayo Vallecano",
+          "awayTeam": "Espanyol",
           "participants": [],
           "norwegianPlayers": [],
           "totalPlayers": null,
-          "isFavorite": true,
+          "isFavorite": false,
           "additional": {
             "status": "STATUS_SCHEDULED"
           }
         },
         {
-          "id": "football-viking-fk-at-vfb-stuttgart-1788972300000",
-          "title": "Viking FK at VfB Stuttgart",
-          "time": "2026-09-09T16:45:00.000Z",
-          "venue": "MHPArena",
+          "id": "football-valencia-at-alavés-1789495200000",
+          "title": "Valencia at Alavés",
+          "time": "2026-09-15T18:00:00.000Z",
+          "venue": "Mendizorrotza",
           "sport": "football",
-          "meta": "Champions League",
-          "tournament": "Champions League",
+          "meta": "La Liga",
+          "tournament": "La Liga",
           "streaming": [
             {
-              "platform": "CBSSN",
+              "platform": "ESPN+",
               "url": "",
               "type": "tv"
             }
           ],
           "norwegian": false,
-          "homeTeam": "VfB Stuttgart",
-          "awayTeam": "Viking FK",
+          "homeTeam": "Alavés",
+          "awayTeam": "Valencia",
           "participants": [],
           "norwegianPlayers": [],
           "totalPlayers": null,
