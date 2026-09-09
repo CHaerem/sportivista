@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T14:09:07.691Z",
+  "generatedAt": "2026-09-09T18:17:59.979Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 9.15,
+    "oldestGapAgeDays": 9.32,
     "escalatable": 1,
     "catalogMatched": 3,
     "auditedAt": "2026-09-09T08:10:00Z",
@@ -35,21 +35,21 @@
       {
         "interest": "UEFA Champions League MD1 — onsdag 9. sep 18:45 CEST-kampene (Barcelona–Feyenoord + norske Viking–VfB Stuttgart) mangler på tavla I DAG",
         "severity": "high",
-        "ageDays": 0.25,
+        "ageDays": 0.42,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "CS2 — FISSURE Playground #3 (Suzhou, 8.–13. sep, $1M): tavla har NULL live esport-events mens fem katalog-orger (FURIA, G2, FaZe, The MongolZ, Astralis) spiller sluttspill",
         "severity": "high",
-        "ageDays": 1.23,
+        "ageDays": 1.4,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — neste serierunde (12.–13. sep) utover Kolstad",
         "severity": "medium",
-        "ageDays": 9.15,
+        "ageDays": 9.32,
         "recurrences": 9,
         "catalogMatched": true
       }
@@ -167,26 +167,26 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-09T14:09:01.798Z",
+    "buildCheckedAt": "2026-09-09T18:17:56.980Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-09T09:23:26.226Z",
-    "manifestAgeHours": 4.76,
+    "manifestGeneratedAt": "2026-09-09T14:09:09.333Z",
+    "manifestAgeHours": 4.15,
     "staleFiles": [
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-09-06T16:41:15.881Z",
-        "ageHours": 69.46
+        "ageHours": 73.61
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-09-08T04:45:00Z",
-        "ageHours": 33.4
+        "ageHours": 37.55
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-09-09T10:01:59Z",
-    "verifyAgeHours": 4.12,
+    "verifyAgeHours": 8.27,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
@@ -197,6 +197,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-09T14:09:07.690Z"
+    "generatedAt": "2026-09-09T18:17:59.978Z"
   }
 }
