@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T07:44:09.584Z",
+  "generatedAt": "2026-09-09T09:23:24.665Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -21,29 +21,36 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 2,
+    "openGaps": 3,
     "bySeverity": {
-      "high": 1,
+      "high": 2,
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 8.88,
+    "oldestGapAgeDays": 8.95,
     "escalatable": 1,
-    "catalogMatched": 2,
-    "auditedAt": "2026-09-08T08:40:00Z",
+    "catalogMatched": 3,
+    "auditedAt": "2026-09-09T08:10:00Z",
     "gaps": [
       {
-        "interest": "CS2 — FISSURE Playground #3 (Suzhou, 8.–13. sep, $1M): tavla har NULL esport-events mens fem katalog-orger (G2, FaZe, Astralis, The MongolZ, FURIA) spiller",
+        "interest": "UEFA Champions League MD1 — onsdag 9. sep 18:45 CEST-kampene (Barcelona–Feyenoord + norske Viking–VfB Stuttgart) mangler på tavla I DAG",
         "severity": "high",
-        "ageDays": 0.96,
+        "ageDays": 0.05,
         "recurrences": 0,
+        "catalogMatched": true
+      },
+      {
+        "interest": "CS2 — FISSURE Playground #3 (Suzhou, 8.–13. sep, $1M): tavla har NULL live esport-events mens fem katalog-orger (FURIA, G2, FaZe, The MongolZ, Astralis) spiller sluttspill",
+        "severity": "high",
+        "ageDays": 1.03,
+        "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — neste serierunde (12.–13. sep) utover Kolstad",
         "severity": "medium",
-        "ageDays": 8.88,
-        "recurrences": 8,
+        "ageDays": 8.95,
+        "recurrences": 9,
         "catalogMatched": true
       }
     ]
@@ -153,26 +160,26 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-09T07:44:05.833Z",
+    "buildCheckedAt": "2026-09-09T09:23:21.636Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-09T02:25:09.957Z",
-    "manifestAgeHours": 5.32,
+    "manifestGeneratedAt": "2026-09-09T07:44:11.110Z",
+    "manifestAgeHours": 1.65,
     "staleFiles": [
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-09-06T16:41:15.881Z",
-        "ageHours": 63.05
+        "ageHours": 64.7
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-09-08T04:45:00Z",
-        "ageHours": 26.99
+        "ageHours": 28.64
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-09-08T09:55:00Z",
-    "verifyAgeHours": 21.82,
+    "verifyAgeHours": 23.47,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -181,6 +188,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-09T07:44:09.584Z"
+    "generatedAt": "2026-09-09T09:23:24.665Z"
   }
 }

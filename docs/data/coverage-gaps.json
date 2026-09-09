@@ -1,41 +1,8 @@
 {
-  "generatedAt": "2026-09-09T07:44:10.885Z",
-  "gapCount": 6,
+  "generatedAt": "2026-09-09T09:23:25.986Z",
+  "gapCount": 3,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Alireza Firouzja",
-      "type": "missing",
-      "imminent": true,
-      "headline": "Global Chess League, Day 4 - Live!",
-      "link": "https://en.chessbase.com/post/global-chess-league-2026-live",
-      "feed": "chessbase",
-      "matchCount": 1,
-      "detectedAt": "2026-09-09T07:44:09.855Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Firouzja",
-      "type": "missing",
-      "imminent": true,
-      "headline": "Global Chess League, Day 4 - Live!",
-      "link": "https://en.chessbase.com/post/global-chess-league-2026-live",
-      "feed": "chessbase",
-      "matchCount": 1,
-      "detectedAt": "2026-09-09T07:44:09.855Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Man City",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Man City-bound 16-year-old Cavan Sullivan is MLS’s chaotic revelation",
-      "link": "https://www.theguardian.com/football/2026/sep/08/cavan-sullivan-analyisis-mls-philadelphia-union",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-09-09T07:44:09.855Z"
-    },
     {
       "kind": "tracked-claim",
       "entity": "Kristoffer Reitan",
@@ -46,7 +13,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-reitan",
-      "detectedAt": "2026-09-09T07:44:10.738Z"
+      "detectedAt": "2026-09-09T09:23:25.780Z"
     },
     {
       "kind": "tracked-claim",
@@ -58,7 +25,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-ventura",
-      "detectedAt": "2026-09-09T07:44:10.738Z"
+      "detectedAt": "2026-09-09T09:23:25.780Z"
     },
     {
       "kind": "tracked-claim",
@@ -70,7 +37,7 @@
       "claimedDate": "2026-09-24T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-09-09T07:44:10.738Z"
+      "detectedAt": "2026-09-09T09:23:25.780Z"
     }
   ],
   "anomalies": [
@@ -79,7 +46,7 @@
       "issue": "file-empty",
       "detail": "docs/data/esports.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-09-09T07:44:10.785Z"
+      "detectedAt": "2026-09-09T09:23:25.827Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
