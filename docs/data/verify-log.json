@@ -1,14 +1,15 @@
 {
-  "runAt": "2026-09-08T09:55:00Z",
-  "checked": 22,
-  "confirmed": 20,
-  "amended": 0,
-  "removed": 0,
-  "notes": [
-    "Champions League 2026/27 ligaspill runde 1 (8.-10.09): hele kampoppsettet, datoer og avspark verifisert mot uefa.com sitt offisielle fixture-oppslag — alle matchups og tider (sen slot 21:00 CEST=19:00 UTC, tidlig slot 18:45 CEST=16:45 UTC) stemmer. 19 kamper stemplet confirmed.",
-    "UCL-streaming: norwegian-rights-skillet sier Champions League -> TV 2 Play [solid, Viaplay har kun EL/Conference]. tv-listings.json (tvkampen ground truth) lister likevel TV 2 Play + Viaplay (+ BillyBets/Eurosport) for 8.09-kampene — Viaplay/TV 2-fellesavtalen gjør enkeltkamper tilgjengelige begge steder. Beholdt derfor både TV 2 Play + Viaplay der de sto; ingen streaming-endring.",
-    "F1 Spansk GP (Madrid/Madring, ny bane) kvalifisering: bekreftet lør 12.09 kl. 16:00 lokal (CEST) = 14:00 UTC mot formula1.com/racing/2026/spain + ESPN/Sky/RacingNews365. Board hadde 14:00 UTC — riktig. Løpet er søn 13.09. Streaming Viaplay [solid].",
-    "Vuelta a España 2026: fortsatt pågående (etappe 16 tirsdag 8.09, Cortegana->La Rábida/Palos), slutter ~13.-14.09 per cyclingstage.com. Multi-dags event på board (t.o.m. 13.09) står riktig. Streaming HBO Max (WBD) uendret.",
-    "Ingen amend/remove denne kjøringen — de høyverdi-usikre postene (UCL-datoer, F1-dato, Vuelta-status) viste seg alle korrekte mot primærkilder."
-  ]
+	"runAt": "2026-09-09T10:01:59Z",
+	"checked": 15,
+	"confirmed": 5,
+	"amended": 10,
+	"removed": 0,
+	"notes": [
+		"Most next-7-day ai-research events (Champions League runde 1, Bundesliga runde 3 fredag, F1 spansk GP kvalik, Vuelta, Amgen Irish Open, World Athletics Ultimate Championship) were already verified/confirmed in the 07-08.09 runs; focused on the still-unverified set.",
+		"Serie A runde 4 (10 kamper, medium): all kickoff times confirmed against Lega Serie A giornata 4 (via calcioefinanza.it) — every stored UTC time matched exactly (CEST-2). Filled the previously null venue on all 10 with the home team's stadium (amended). Streaming confirmed: VG+ Sport har eksklusive Serie A-rettigheter i Norge t.o.m. 2026/27 (VGs egen sak, vg.no/sport/i/P4pQgb). Wanted to add a Serie A line to the norwegian-rights skill but the Edit was not permitted in this session (literal: 'Claude requested permissions to write to .../norwegian-rights/SKILL.md, but you haven't granted it yet'); the rights fact is captured in each event's provenance.streaming and this log instead.",
+		"Bundesliga runde 3 (Augsburg-Leverkusen, Freiburg-Gladbach, Hoffenheim-Stuttgart 13:30; Köln-Werder 16:30) confirmed on bundesliga.com; venues and Viaplay streaming already correct.",
+		"Bergen Håndball - Kolstad 12.09.2026 confirmed via Kolstad's fixture list (flashscore); TV 2 Play holds Elkjøp-ligaen (norsk håndball). Exact kickoff (16:10) not independently re-confirmed but the fixture/date is confirmed.",
+		"Vuelta a España 2026 (in-progress, ends 13.09): checked for Norwegian Uno-X rider abandons around stage 16-17 — Timo Roosen (non-Norwegian) abandoned stage 16; no evidence any of Tobias Halland Johannessen, Leknessund, Tjøtta, Lavik or Tiller has withdrawn, so norwegianPlayers left unchanged.",
+		"Stamped provenance.time + provenance.streaming per WP-241/242 on all 15 amended/confirmed events; appended 25 calibration-ledger lines."
+	]
 }
