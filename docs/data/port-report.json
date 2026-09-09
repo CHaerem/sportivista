@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-09T09:23:24.665Z",
+  "generatedAt": "2026-09-09T14:09:07.691Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
-    "amendRate": "green",
+    "amendRate": "red",
     "silentStops": "yellow",
     "participantStatus": "green",
     "contracts": "green"
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 8.95,
+    "oldestGapAgeDays": 9.15,
     "escalatable": 1,
     "catalogMatched": 3,
     "auditedAt": "2026-09-09T08:10:00Z",
@@ -35,33 +35,33 @@
       {
         "interest": "UEFA Champions League MD1 — onsdag 9. sep 18:45 CEST-kampene (Barcelona–Feyenoord + norske Viking–VfB Stuttgart) mangler på tavla I DAG",
         "severity": "high",
-        "ageDays": 0.05,
+        "ageDays": 0.25,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "CS2 — FISSURE Playground #3 (Suzhou, 8.–13. sep, $1M): tavla har NULL live esport-events mens fem katalog-orger (FURIA, G2, FaZe, The MongolZ, Astralis) spiller sluttspill",
         "severity": "high",
-        "ageDays": 1.03,
+        "ageDays": 1.23,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Elkjøp-ligaen (norsk topphåndball, menn + kvinner) — neste serierunde (12.–13. sep) utover Kolstad",
         "severity": "medium",
-        "ageDays": 8.95,
+        "ageDays": 9.15,
         "recurrences": 9,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0,
-    "nearTermChecked": 22,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-09-08T09:55:00Z",
+    "nearTermRate": 0.67,
+    "nearTermChecked": 15,
+    "nearTermAmended": 10,
+    "verifyRunAt": "2026-09-09T10:01:59Z",
     "windowRate": 0,
-    "windowChecks": 86,
+    "windowChecks": 111,
     "windowAmendments": 0,
     "windowCorrections": 4,
     "byDay": [
@@ -155,39 +155,48 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-09-09",
+        "checks": 25,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-09T09:23:21.636Z",
+    "buildCheckedAt": "2026-09-09T14:09:01.798Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-09T07:44:11.110Z",
-    "manifestAgeHours": 1.65,
+    "manifestGeneratedAt": "2026-09-09T09:23:26.226Z",
+    "manifestAgeHours": 4.76,
     "staleFiles": [
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-09-06T16:41:15.881Z",
-        "ageHours": 64.7
+        "ageHours": 69.46
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-09-08T04:45:00Z",
-        "ageHours": 28.64
+        "ageHours": 33.4
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-09-08T09:55:00Z",
-    "verifyAgeHours": 23.47,
-    "corrections": 0,
+    "checkedAt": "2026-09-09T10:01:59Z",
+    "verifyAgeHours": 4.12,
+    "corrections": 1,
     "unresolved": 0,
-    "signals": []
+    "signals": [
+      "Vuelta a España 2026 (in-progress, ends 13.09): checked for Norwegian Uno-X rider abandons around stage 16-17 — Timo Roosen (non-Norwegian) abandoned stage 1…"
+    ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-09T09:23:24.665Z"
+    "generatedAt": "2026-09-09T14:09:07.690Z"
   }
 }
