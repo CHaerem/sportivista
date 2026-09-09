@@ -218,5 +218,11 @@
     "verdict": "quiet",
     "reason": "RSS (33 items, 14:08 UTC): football match results, transfer gossip, award nominations, future announcements (Bayern comeback news vs Bodø/Glimt—already detected by coverage gaps not marked imminent; Haaland Ballon d'Or nomination—award opinion, not event; Trondheim EM handball 2028—far future; Messi Spain club purchase—transfer gossip). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting tracked events, no 100 Thieves/rain CS2 match hints. Coverage gaps (4 gaps, 1 anomaly): Mesterligaen entity (imminent=false, Bayern/Bodø/Glimt match already detected); Kristoffer Reitan/Ventura golf tracked-claims (no imminent event signal); Håvard rain Nygaard esports (claimedDate 2026-09-24 = 15 days out, no new CS2 match announcement in RSS); esports.json file-empty anomaly (infrastructure issue, not new-event signal). No tracked-athlete imminent event announcements, no new concrete upcoming events requiring escalation. Escalation cap today (UTC): 0/2.",
     "signals": []
+  },
+  {
+    "runAt": "2026-09-09T18:30:00.000Z",
+    "verdict": "quiet",
+    "reason": "RSS (15 items, 18:17 UTC): live Champions League match coverage (Liverpool/Atlético, PSG/Slovan Bratislava, Chelsea/Leeds, Napoli/Arsenal today/tonight—all already tracked, no schedule/time/venue/streaming/broadcaster changes). Transfer gossip (Haaland incident, Ballon d'Or rankings, Carrick Man Utd news—no impact on tracked Norwegian events). Coverage gaps (5 gaps, 2 anomalies): Barça/Barcelona false positives from live-match headline (not concrete imminent event); Kristoffer Reitan/Ventura golf tracked-claims (no imminent event signal); Håvard rain Nygaard esports (claimedDate 2026-09-24 = 15 days out, no new CS2 match announcement in RSS); golf.json stale-retained anomaly HIGH (22 runs, 3 days—infrastructure issue, not new-event escalation); esports.json file-empty LOW (no new event). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting tracked events, no 100 Thieves/rain CS2 match hints, no new concrete upcoming events requiring escalation. Escalation cap today (UTC): 0/2.",
+    "signals": []
   }
 ]
