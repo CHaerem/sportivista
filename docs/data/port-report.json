@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-10T09:22:54.940Z",
+  "generatedAt": "2026-09-10T14:03:27.652Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
-    "amendRate": "red",
+    "amendRate": "green",
     "silentStops": "yellow",
     "participantStatus": "green",
     "contracts": "green"
@@ -27,7 +27,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 9.95,
+    "oldestGapAgeDays": 10.15,
     "escalatable": 1,
     "catalogMatched": 2,
     "auditedAt": "2026-09-10T08:20:00Z",
@@ -35,28 +35,28 @@
       {
         "interest": "Golf — FedEx Open de France (DP World Tour, 24.–27. sep, Le Golf National): Hovlands OG Reitans neste turnering mangler på tavla",
         "severity": "medium",
-        "ageDays": 0.04,
+        "ageDays": 0.24,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — Elkjøp-ligaen (menn + kvinner) neste serierunde (12.–13. sep) utover Kolstad",
         "severity": "medium",
-        "ageDays": 9.95,
+        "ageDays": 10.15,
         "recurrences": 10,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.67,
-    "nearTermChecked": 15,
-    "nearTermAmended": 10,
-    "verifyRunAt": "2026-09-09T10:01:59Z",
+    "nearTermRate": 0.13,
+    "nearTermChecked": 8,
+    "nearTermAmended": 1,
+    "verifyRunAt": "2026-09-10T09:30:00Z",
     "windowRate": 0,
-    "windowChecks": 107,
+    "windowChecks": 110,
     "windowAmendments": 0,
-    "windowCorrections": 3,
+    "windowCorrections": 4,
     "byDay": [
       {
         "date": "2026-08-28",
@@ -148,36 +148,43 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-09-10",
+        "checks": 3,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-10T09:22:51.901Z",
+    "buildCheckedAt": "2026-09-10T14:03:24.633Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-10T07:43:21.158Z",
-    "manifestAgeHours": 1.66,
+    "manifestGeneratedAt": "2026-09-10T09:22:56.144Z",
+    "manifestAgeHours": 4.68,
     "staleFiles": [
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-09-06T16:41:15.881Z",
-        "ageHours": 88.69
+        "ageHours": 93.37
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-09-09T10:01:59Z",
-    "verifyAgeHours": 23.35,
+    "checkedAt": "2026-09-10T09:30:00Z",
+    "verifyAgeHours": 4.56,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
-      "Vuelta a España 2026 (in-progress, ends 13.09): checked for Norwegian Uno-X rider abandons around stage 16-17 — Timo Roosen (non-Norwegian) abandoned stage 1…"
+      "Amgen Irish Open (golf, 10-13 sep, pågår): CONFIRMED. Startider nå publisert (138 spillere), venue Trump International Golf Links Doonbeg bekreftet. Ingen no…"
     ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-10T09:22:54.940Z"
+    "generatedAt": "2026-09-10T14:03:27.652Z"
   }
 }
