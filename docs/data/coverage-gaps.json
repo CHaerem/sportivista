@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T07:43:20.932Z",
+  "generatedAt": "2026-09-10T09:22:55.965Z",
   "gapCount": 3,
   "anomalyCount": 1,
   "gaps": [
@@ -13,7 +13,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-reitan",
-      "detectedAt": "2026-09-10T07:43:20.709Z"
+      "detectedAt": "2026-09-10T09:22:55.820Z"
     },
     {
       "kind": "tracked-claim",
@@ -25,7 +25,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "kristoffer-ventura",
-      "detectedAt": "2026-09-10T07:43:20.709Z"
+      "detectedAt": "2026-09-10T09:22:55.820Z"
     },
     {
       "kind": "tracked-claim",
@@ -37,18 +37,18 @@
       "claimedDate": "2026-09-24T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-09-10T07:43:20.709Z"
+      "detectedAt": "2026-09-10T09:22:55.820Z"
     }
   ],
   "anomalies": [
     {
       "sport": "golf",
       "issue": "stale-retained",
-      "detail": "docs/data/golf.json has been served from retention for 26 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 26,
+      "detail": "docs/data/golf.json has been served from retention for 27 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 27,
       "staleDays": 3,
       "severity": "high",
-      "detectedAt": "2026-09-10T07:43:20.763Z"
+      "detectedAt": "2026-09-10T09:22:55.862Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
