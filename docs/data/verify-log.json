@@ -1,15 +1,14 @@
 {
-	"runAt": "2026-09-09T10:01:59Z",
-	"checked": 15,
-	"confirmed": 5,
-	"amended": 10,
-	"removed": 0,
-	"notes": [
-		"Most next-7-day ai-research events (Champions League runde 1, Bundesliga runde 3 fredag, F1 spansk GP kvalik, Vuelta, Amgen Irish Open, World Athletics Ultimate Championship) were already verified/confirmed in the 07-08.09 runs; focused on the still-unverified set.",
-		"Serie A runde 4 (10 kamper, medium): all kickoff times confirmed against Lega Serie A giornata 4 (via calcioefinanza.it) — every stored UTC time matched exactly (CEST-2). Filled the previously null venue on all 10 with the home team's stadium (amended). Streaming confirmed: VG+ Sport har eksklusive Serie A-rettigheter i Norge t.o.m. 2026/27 (VGs egen sak, vg.no/sport/i/P4pQgb). Wanted to add a Serie A line to the norwegian-rights skill but the Edit was not permitted in this session (literal: 'Claude requested permissions to write to .../norwegian-rights/SKILL.md, but you haven't granted it yet'); the rights fact is captured in each event's provenance.streaming and this log instead.",
-		"Bundesliga runde 3 (Augsburg-Leverkusen, Freiburg-Gladbach, Hoffenheim-Stuttgart 13:30; Köln-Werder 16:30) confirmed on bundesliga.com; venues and Viaplay streaming already correct.",
-		"Bergen Håndball - Kolstad 12.09.2026 confirmed via Kolstad's fixture list (flashscore); TV 2 Play holds Elkjøp-ligaen (norsk håndball). Exact kickoff (16:10) not independently re-confirmed but the fixture/date is confirmed.",
-		"Vuelta a España 2026 (in-progress, ends 13.09): checked for Norwegian Uno-X rider abandons around stage 16-17 — Timo Roosen (non-Norwegian) abandoned stage 16; no evidence any of Tobias Halland Johannessen, Leknessund, Tjøtta, Lavik or Tiller has withdrawn, so norwegianPlayers left unchanged.",
-		"Stamped provenance.time + provenance.streaming per WP-241/242 on all 15 amended/confirmed events; appended 25 calibration-ledger lines."
-	]
+  "runAt": "2026-09-10T09:30:00Z",
+  "checked": 8,
+  "confirmed": 2,
+  "amended": 1,
+  "removed": 0,
+  "notes": [
+    "FISSURE Playground #3 sluttspill (esports, 11-13 sep): AMENDED. participants var utdatert (listet Astralis som fortsatt inne). Gruppespillet 8-10 sep avgjort: FURIA, G2 Esports, MIBR, BetBoom Team og Legacy er klare (5 av 6). Astralis og FaZe Clan er UTE. Sjette sluttspillplass fra gruppe B nedre bracket (PARIVISION/magic/Alliance/TYLOO) fortsatt uavgjort - fylte derfor de fem bekreftede, ikke en gjettet sjetteplass. Kilder: HLTV (FPG3 dag 2 + MIBR/Legacy), Hotspawn.",
+    "Amgen Irish Open (golf, 10-13 sep, pågår): CONFIRMED. Startider nå publisert (138 spillere), venue Trump International Golf Links Doonbeg bekreftet. Ingen norsk spiller i feltet (Reitan/Ventura ikke funnet i startlisten) - norwegian:false og norwegianPlayers:[] uendret. Streaming Viaplay uendret.",
+    "Bodø/Glimt at Bayern München (CL, i kveld 10 sep 19:00 UTC): tid+kanal (TV 2 Play) allerede bekreftet mot UEFA-kampside 08 sep - beholdt confirmed, ingen ny motsigelse.",
+    "Kolstad-kamper (Magdeburg CL 9 sep, Bergen Elkjøp-ligaen 12 sep): allerede confirmed nylig, ingen endring.",
+    "Europeatur/DP World Tour og UEFA-kilder holdt seg konsistente; ingen tvingende channel-korreksjoner denne runden."
+  ]
 }
