@@ -1,21 +1,17 @@
 {
-  "checkedAt": "2026-09-08T12:35:01Z",
+  "checkedAt": "2026-09-10T12:40:33.009Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
-    "Captured as ~900px-tall viewport scroll slices per width (12 slices at 375px dark, 10 at 393px light, 8 at 900px light) rather than one squashed full-page PNG, since the full-page capture downscales past legibility when read as a single image.",
-    "Every match/tournament name read in full at all three widths — no truncation hiding a side of a fixture or a Norwegian name (e.g. 'Bournemouth – Brentford', 'Coventry City – Brighton & Hove Albion', 'SC Freiburg – Borussia Mönchengladbach', 'Bergen Håndball – Kolstad') — no repeat of the historical 'Brazil – Nor…' truncation bug.",
-    "Every agenda row and every DIREKTE NÅ live item shows a channel, and every one seen is Norwegian/Scandinavian or a legitimate direct tournament stream: TV 2 Play, Viaplay, HBO Max (Sport), Discovery+ +1, VG+ Sport, NRK, YouTube (Global Chess League) — no FOX/ESPN/Sky at any width.",
-    "Times present and sensibly formatted (24h HH:MM); multi-day events show date ranges ('22. august–13. september', '10.–13. september'); round/competition labels ('UEFA Champions League 2026/27 (ligaspill)', 'Formula 1 World Championship 2026') render fully.",
-    "Club crests, national flags, and generic fallback glyphs (circle-dot for unmatched crests, calendar icon for handball, pennant icon for smaller Eliteserien clubs, flag icon for golf/F1) all render as real images — no broken-image icons or empty boxes — at every width.",
-    "No horizontal scroll or overflow at any width; nothing clipped at the screen edge; chevrons and (i) info icons stay fully visible on every inspected row at 375px, 393px, and 900px.",
-    "Must-see accent dots appear sparingly (a handful per day), not on every row.",
-    "Header, day-group headings ('I DAG', 'I MORGEN', weekday headers), and footer (calendar-subscribe line, freshness/AI-budsjett line, 'NESTE OPP' block for Magnus Carlsen/Viktor Hovland, 'Dette dekker vi'/'Merker og kilder' disclosures) all intact and aligned at all three widths.",
-    "Single quiet column, generous spacing, scannable — not a cluttered grid — at all three widths; at 900px the agenda column sits centered (max ~640px) with the floating 'Assistent' button (icon+label at this width, icon-only on the two mobile widths) resting in the empty right margin, overlapping nothing.",
-    "The floating 'Assistent' button overlaps mid-agenda rows at various scroll positions at 375/393px (by design, DESIGN.md § Hjelperen) but never covers the true last agenda row or the footer — confirmed by scrolling to the actual bottom of the page at all three widths (footer text — 'Oppdatert 8.9.2026', 'AI-budsjett: uke 30% · økt 37%' — fully visible above/beside the button in every case).",
-    "375px capture used the emulated dark color scheme and 393px/900px used light, but all three rendered the same true-black-dark-default (#000000) / grouped-light (#F2F2F7) themes consistent with CLAUDE.md's 'true-black dark default' — confirms the app's own default takes precedence over OS scheme unless toggled.",
-    "A short blank block (an empty row between two horizontal rules) appears between the 'NESTE OPP' list (Magnus Carlsen / Viktor Hovland) and the 'Dette dekker vi' disclosure at every width — consistent across all three captures, so likely an intentional spacer rather than a rendering bug, but flagged here as a low-confidence observation since its purpose isn't visually obvious.",
-    "Freshness banner 'Dataene er ~3 t gamle — oppdatering kan ha stoppet' is visible in the footer — a data-pipeline signal, not a rendering defect, so not raised as a finding here."
+    "Reviewed the full agenda top-to-bottom at all three widths (375/393/900px, dark theme) by splitting each into 900px scroll-position chunks and reading every chunk.",
+    "Match names render fully, not truncated, at all widths — including longer names like 'Coventry City – Brighton & Hove Albion' and 'Manchester United – Manchester City'.",
+    "Every event shows a channel or an honest reason; all visible channels are Norwegian (TV 2 Play, Viaplay, VG+ Sport, Discovery+, HBO Max Sport, NRK, YouTube) — no foreign broadcasters (FOX/ESPN/Sky) seen.",
+    "Club crests, national flags, and fallback glyphs (flag/pin icons for non-crest sports) all render — no broken image icons or empty boxes.",
+    "No horizontal scroll or clipped content at any width, including the tightest 375px viewport.",
+    "Single quiet column, day-grouped headings, generous spacing — calm design intact; must-see amber dots appear sparingly, not on every row.",
+    "Header, day headings, 'Neste opp', 'Dette dekker vi'/'Merker og kilder' disclosures, and footer (AI-budsjett line, freshness note) all intact and aligned at every width.",
+    "The floating Assistent button overlaps mid-agenda rows at 375/393px (e.g. a 'Rosenborg – Tromsø' row) — this is the sanctioned DESIGN.md floating-button idiom, not a finding. Verified it never occludes the LAST agenda/news row or the footer text at the bottom of the page at any width.",
+    "At 900px the Assistent button sits in the empty right margin beside the ~640px column, overlapping nothing, as DESIGN.md specifies for wide widths."
   ]
 }
