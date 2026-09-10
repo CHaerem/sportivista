@@ -326,62 +326,6 @@
   },
   {
     "sport": "football",
-    "tournament": "UEFA Conference League 2026/27 (playoff)",
-    "title": "Brighton – Tromsø",
-    "time": "2026-08-27T18:30:00Z",
-    "endTime": null,
-    "venue": "American Express Stadium, Falmer",
-    "norwegian": true,
-    "homeTeam": "Brighton",
-    "awayTeam": "Tromsø",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-20T13:15:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://www.tvkampen.com/sport/fotball/tromso-brighton-tv-20august/",
-      "https://www.sussexexpress.co.uk/sport/football/brighton-and-hove-albion/uefa-conference-league-why-tromso-vs-brighton-is-not-on-the-tv-schedule-tnt-sports-channel-5-how-to-watch-8925819",
-      "https://tv.vg.no/video/406781/tromso-brighton",
-      "https://www.rsssf.no/2026/Ecup.html"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.tvkampen.com/sport/fotball/tromso-brighton-tv-20august/",
-        "basis": "secondary",
-        "retrievedAt": "2026-08-20T13:15:00Z",
-        "note": "UEFA.com (primaer TIME-autoritet) 403-blokkert ved henting; returkampen 27. aug kl. 20.30 CEST (18.30 UTC / 19.30 BST) fra tvkampen + britiske previews (19.30 BST) enige, men uvanlig slot -> medium. Verify fester eksakt minutt mot UEFA/klubb-primaerkilde."
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-08-20T16:55:00Z",
-        "note": "KORRIGERT 20. aug 16:55Z: dette er BORTELEGGET (Amex, England). VGs fri-sublisens dekker Tromsos HJEMMEkamp (video 406781), IKKE bortereturen — den tidligere «VG holder hele tie-en»-antakelsen var over-rekkevidde for et bortelegg. Bortelegg gaar til hovedrettighetshaver: Viaplay har eksklusive norske UECL-rettigheter. Ingen VG-video funnet for returkampen. Verify bekrefter per kamp; UK-visning (Channel 5 e.l.) er irrelevant for norsk visning."
-      }
-    },
-    "summary": "Tromsø IL spiller returoppgjøret i Conference League-playoffen borte mot Brighton & Hove Albion — vinneren over to kamper går til ligaspillet.\n\nDet første oppgjøret ble spilt hjemme på Romssa Arena 20. august. Brighton fra Premier League er klar favoritt.\n\nAvspark torsdag 27. august kl. 20.30 CEST (18.30 UTC) på American Express Stadium, Falmer.",
-    "homeTeamEntityId": "brighton-hove-albion",
-    "awayTeamEntityId": "tromso",
-    "id": "85605a0782ce",
-    "verifiedAt": "2026-08-21T05:57:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.rsssf.no/2026/Ecup.html",
-      "https://en.wikipedia.org/wiki/2026_Troms%C3%B8_IL_season"
-    ]
-  },
-  {
-    "sport": "football",
     "tournament": "Bundesliga",
     "title": "VfB Stuttgart at Bayern München",
     "time": "2026-08-28T18:30:00Z",
@@ -7830,5 +7774,281 @@
     "isFavorite": false,
     "round": null,
     "id": "a574973996cf"
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Kristiansand TH – Fjellhammer",
+    "time": "2026-09-12T14:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Kristiansand TH",
+    "awayTeam": "Fjellhammer",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-10T19:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+      "https://www.eurosport.no/handball/elkjop-ligaen/2026-2027/calendar-result.shtml"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-10T19:15:00Z",
+        "note": "Elkjøp-ligaen menn runde 3, lør. 12. sep kl. 16.00 CEST (14.00 UTC). Tid bekreftet mot TV 2 Livesport-terminlisten + uavhengig write-time fact-check mot Eurosport.no kalender (to kilder enige). handball.no-terminlisten (NHF, tid-autoritet) var JS-rendret/uleselig ved henting → basis secondary; verify fester minuttet mot handball.no/TV 2 Play kampside."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-09-10T19:15:00Z",
+        "note": "TV 2 har alle Elkjøp-ligaen-rettigheter 2026/27; alle kamper på TV 2 Play (utvalgte lineært på TV 2 Sport 2)."
+      }
+    },
+    "summary": "Elkjøp-ligaen 2026/27 (norsk håndball-toppserie menn), runde 3. Kristiansand TH tar imot Fjellhammer.\n\nNorsk visning: TV 2 Play (alle kamper). lør. 12. sep kl. 16.00 CEST (14.00 UTC).",
+    "id": "2663b79d6b81"
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Runar Elite – Nærbø",
+    "time": "2026-09-13T15:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Runar Elite",
+    "awayTeam": "Nærbø",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-10T19:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+      "https://www.eurosport.no/handball/elkjop-ligaen/2026-2027/calendar-result.shtml"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-10T19:15:00Z",
+        "note": "Elkjøp-ligaen menn runde 3, søn. 13. sep kl. 17.00 CEST (15.00 UTC). Tid bekreftet mot TV 2 Livesport-terminlisten + uavhengig write-time fact-check mot Eurosport.no kalender (to kilder enige). handball.no-terminlisten (NHF, tid-autoritet) var JS-rendret/uleselig ved henting → basis secondary; verify fester minuttet mot handball.no/TV 2 Play kampside."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-09-10T19:15:00Z",
+        "note": "TV 2 har alle Elkjøp-ligaen-rettigheter 2026/27; alle kamper på TV 2 Play (utvalgte lineært på TV 2 Sport 2)."
+      }
+    },
+    "summary": "Elkjøp-ligaen 2026/27 (norsk håndball-toppserie menn), runde 3. Runar Elite tar imot Nærbø.\n\nNorsk visning: TV 2 Play (alle kamper). søn. 13. sep kl. 17.00 CEST (15.00 UTC).",
+    "id": "c59f13adc850"
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Sandnes – Elverum",
+    "time": "2026-09-13T15:30:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Sandnes",
+    "awayTeam": "Elverum",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-10T19:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+      "https://www.eurosport.no/handball/elkjop-ligaen/2026-2027/calendar-result.shtml"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-10T19:15:00Z",
+        "note": "Elkjøp-ligaen menn runde 3, søn. 13. sep kl. 17.30 CEST (15.30 UTC). Tid bekreftet mot TV 2 Livesport-terminlisten + uavhengig write-time fact-check mot Eurosport.no kalender (to kilder enige). handball.no-terminlisten (NHF, tid-autoritet) var JS-rendret/uleselig ved henting → basis secondary; verify fester minuttet mot handball.no/TV 2 Play kampside."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-09-10T19:15:00Z",
+        "note": "TV 2 har alle Elkjøp-ligaen-rettigheter 2026/27; alle kamper på TV 2 Play (utvalgte lineært på TV 2 Sport 2)."
+      }
+    },
+    "summary": "Elkjøp-ligaen 2026/27 (norsk håndball-toppserie menn), runde 3. Sandnes tar imot Elverum.\n\nNorsk visning: TV 2 Play (alle kamper). søn. 13. sep kl. 17.30 CEST (15.30 UTC).",
+    "id": "a178491cb66e"
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Drammen – Follo HK",
+    "time": "2026-09-13T16:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Drammen",
+    "awayTeam": "Follo HK",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-10T19:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+      "https://www.eurosport.no/handball/elkjop-ligaen/2026-2027/calendar-result.shtml"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-10T19:15:00Z",
+        "note": "Elkjøp-ligaen menn runde 3, søn. 13. sep kl. 18.00 CEST (16.00 UTC). Tid bekreftet mot TV 2 Livesport-terminlisten + uavhengig write-time fact-check mot Eurosport.no kalender (to kilder enige). handball.no-terminlisten (NHF, tid-autoritet) var JS-rendret/uleselig ved henting → basis secondary; verify fester minuttet mot handball.no/TV 2 Play kampside."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-09-10T19:15:00Z",
+        "note": "TV 2 har alle Elkjøp-ligaen-rettigheter 2026/27; alle kamper på TV 2 Play (utvalgte lineært på TV 2 Sport 2)."
+      }
+    },
+    "summary": "Elkjøp-ligaen 2026/27 (norsk håndball-toppserie menn), runde 3. Drammen tar imot Follo HK.\n\nNorsk visning: TV 2 Play (alle kamper). søn. 13. sep kl. 18.00 CEST (16.00 UTC).",
+    "id": "65baa0af9e66"
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Molde Elite – Fana",
+    "time": "2026-09-12T14:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Molde Elite",
+    "awayTeam": "Fana",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-10T19:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
+      "https://www.eurosport.no/handball/elkjop-ligaen/2026-2027/calendar-result.shtml"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-10T19:15:00Z",
+        "note": "Elkjøp-ligaen kvinner runde 3, lør. 12. sep kl. 16.00 CEST (14.00 UTC). Tid bekreftet mot TV 2 Livesport-terminlisten + uavhengig write-time fact-check mot Eurosport.no kalender (to kilder enige). handball.no-terminlisten (NHF, tid-autoritet) var JS-rendret/uleselig ved henting → basis secondary; verify fester minuttet mot handball.no/TV 2 Play kampside."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-09-10T19:15:00Z",
+        "note": "TV 2 har alle Elkjøp-ligaen-rettigheter 2026/27; alle kamper på TV 2 Play (utvalgte lineært på TV 2 Sport 2)."
+      }
+    },
+    "summary": "Elkjøp-ligaen 2026/27 (norsk håndball-toppserie kvinner), runde 3. Molde Elite tar imot Fana.\n\nNorsk visning: TV 2 Play (alle kamper). lør. 12. sep kl. 16.00 CEST (14.00 UTC).",
+    "id": "cc8e1f31e59c"
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Flint Tønsberg – Fjellhammer",
+    "time": "2026-09-13T14:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Flint Tønsberg",
+    "awayTeam": "Fjellhammer",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-10T19:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
+      "https://www.eurosport.no/handball/elkjop-ligaen/2026-2027/calendar-result.shtml"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-10T19:15:00Z",
+        "note": "Elkjøp-ligaen kvinner runde 3, søn. 13. sep kl. 16.00 CEST (14.00 UTC). Tid bekreftet mot TV 2 Livesport-terminlisten + uavhengig write-time fact-check mot Eurosport.no kalender (to kilder enige). handball.no-terminlisten (NHF, tid-autoritet) var JS-rendret/uleselig ved henting → basis secondary; verify fester minuttet mot handball.no/TV 2 Play kampside."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-09-10T19:15:00Z",
+        "note": "TV 2 har alle Elkjøp-ligaen-rettigheter 2026/27; alle kamper på TV 2 Play (utvalgte lineært på TV 2 Sport 2)."
+      }
+    },
+    "summary": "Elkjøp-ligaen 2026/27 (norsk håndball-toppserie kvinner), runde 3. Flint Tønsberg tar imot Fjellhammer.\n\nNorsk visning: TV 2 Play (alle kamper). søn. 13. sep kl. 16.00 CEST (14.00 UTC).",
+    "id": "e28904a58d51"
   }
 ]

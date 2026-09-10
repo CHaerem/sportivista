@@ -1,24 +1,29 @@
 {
-  "runAt": "2026-09-10T13:00:00Z",
+  "runAt": "2026-09-10T19:20:00Z",
   "tier": "standard",
-  "eventsAdded": 1,
-  "eventsRemoved": 0,
-  "trackedDelta": "Oppdaterte 3 entries (viktor-hovland, kristoffer-reitan, dp-world-tour-2026-autumn — sistnevnte expires 21.→28. sep) + ny most-recent-first note. Ingen entries lagt til/fjernet.",
+  "eventsAdded": 6,
+  "eventsRemoved": 1,
+  "trackedDelta": "Elkjøp-ligaen 2026/27-entry oppdatert med runde 3-boarding (12.–13. sep); ny kjøringsnote prepended. Ingen entries lagt til/fjernet (alle katalog-entiteter fortsatt sporet, ingen utløpt før 2026-09-14).",
   "quality": {
     "pass": true,
-    "score": 94,
+    "score": 84,
     "failures": [
-      "Minor: evidensen lener seg på europeantour.com (2 av 3 URLer); kun Wikipedia gir uavhengig korroborasjon — greit for et medium-event, men følg med på domenespredning hvis Open de France vokser til en boardet familie."
+      "Evidence-domain monoculture på Elkjøp-ligaen runde-3-familien: alle 6 siterer kun tv2.no + eurosport.no. handball.no (NHF, tid-autoritet) var JS-rendret/uleselig → provenance.time.basis=secondary uten primær korroborasjon. Godt flagget for verify (medium er passende), men enkilde-tier (−5).",
+      "Gjentatt uadressert anbefaling: 'ingen statisk håndball-fetcher → research håndboarder Elkjøp-ligaen runde-for-runde' (coverage-critic recurrences=10), fortsatt uløst. Korrekt rutet til self-repair/improve (strukturelt, utenfor research-kontrakten), men loopen håndboarder ukentlig en hel wholesale-tier1-liga (−10).",
+      "Watch (ikke hard fail): Torreense–Lillestrøm (EL MD1, 17. sep) summary nevner VG+ Sport som sannsynlig norsk visning for norsk klubb mens streaming-chip sier Viaplay — Viaplay er rettighetshaver, VG+ flagget for verify; verify må løse per-kamp-listingen før 17. sep.",
+      "Watch: CL MD1-regresjon (maxEvents:30-kutt) i ≥3 kjøringer — ærlig triagert, rutet til self-repair/improve, utenfor research denne kjøringen."
     ]
   },
   "notes": [
-    "PRIMÆRJOBB: tettet coverage-audits (08:20Z) eneste medium horisont-hull med norsk marquee — FedEx Open de France (DP World Tour golf, 24.–27. sep, Le Golf National, Saint-Quentin-en-Yvelines) manglet HELT på tavla. Det er Viktor Hovlands neste turnering etter BMW PGA (17.–20. sep) OG Kristoffer Reitans neste bekreftede start; begge navngitt i DP World Tours EGEN feltkunngjøring.",
-    "Boardet som fler-dagers ai-research-golfnode (medium, id 27cba4b1c677) med begge nordmenn i norwegianPlayers (entityIds viktor-hovland + kristoffer-reitan). Viaplay (V Sport Golf) — DP World Tour-rettighet [solid]. provenance.time=european-tour/official, provenance.streaming=viaplay/official. Confidence medium fordi eksakte tee-tider ennå ikke er publisert (datoer/venue/felt bombesikre).",
-    "Step 3.5 write-time fact-check (fresh-context subagent): confirmed dato (24.–27. sep) + venue (Le Golf National) + BÅDE Hovland og Reitan i feltet + Viaplay som norsk DP World Tour-kringkaster, alle mot autoritative kilder (europeantour.com turneringsside + feltartikkel, Viaplay Group sportsrettighets-side).",
-    "Dette LØSER samtidig den mekaniske tracked-claim-gapen for Reitan (coverage-gaps 09:22Z, missing) og gir Hovland en next-fixture etter BMW PGA.",
-    "TRIAGE øvrige mekaniske coverage-gaps (09:22Z, gapCount 3, anomalyCount 1): tracked-claim Ventura (golf — DP World boardet, IKKE i Open de France-feltet, ingen bekreftet KFT-neste-start) = korrekt fravær; tracked-claim Håvard «rain» Nygaard 24. sep (100T Stake Pulse Beat II 21.–26. sep, ingen datert kamp/tid — sen-annonsering per cs2-sources) = korrekt fravær; anomaly golf.json stale-retained HIGH (27 retains / 3 dager) = STÅENDE self-repair-sak (død ESPN golf-fetcher — nettopp derfor lekket Open de France ut, en fungerende DP World-feed hadde fanget den automatisk).",
-    "BEVISST IKKE boardet: Elkjøp-ligaen håndball-runde 12.–13. sep utover Bergen–Kolstad (coverage-audit medium, recurrences 10, bump bevisst withheldt — fikses på ukentlig cadence nær helgen; throw-off-tider krever error-utsatt handball.no/TV 2 Play-oppslag, og en feil tid er verre enn en manglende). Varig kur = handball.no-fetcher (self-repair HIGH sourceIssue).",
-    "Ingen ekte contract-breach (coverage-contracts: alle 6 kontrakter met, breached=[]). Ingen katalog-endring. Ingen registry-reconciliation (ikke ukentlig mandags-sveip). validate-events: 164 events, 0 errors (kun stående strukturelle varsler: WP-246 landing-URL, WP-242 weak-basis på pre-eksisterende high-events, timezone-bleed på fler-dagers + Lillestrøm-Egnatia summary↔streaming). Det nye medium-eventet ga NULL nye errors/varsler.",
-    "ROTÅRSAK-FLAGG STÅR (self-repair/improve): (a) golf-fetcher død (stale-retained 27); (b) ingen håndball-fetcher; (c) esports.js 100T-gated; (d) football maxEvents:30 CL/EL-regresjon."
+    "Hovedleveranse: håndball Elkjøp-ligaen runde 3 (12.–13. sep) boardet — coverage-critics stående medium-hull (recurrences 10, kun Bergen Håndball–Kolstad lå inne). Håndball er katalog-tier1 (wholesale) uten statisk fetcher, så hele ligaen håndboardes runde-for-runde.",
+    "SEKS nye ai-research-events (medium, håndball): MENN — Kristiansand TH–Fjellhammer (12. sep 16.00 CEST), Runar Elite–Nærbø (13. sep 17.00), Sandnes–Elverum (13. sep 17.30), Drammen–Follo HK (13. sep 18.00); KVINNER — Molde Elite–Fana (12. sep 16.00), Flint Tønsberg–Fjellhammer (13. sep 16.00). Alle to-kilde-bekreftet: håndball-scout (TV 2 Livesport-terminliste) + uavhengig write-time fact-check (Eurosport.no kalender) enige på dato+tid. TV 2 Play (official).",
+    "HOLDT AV TAVLA: Bergsøy–Sandefjord (menn, 13. sep) — avsparkskonflikt 16.00 (Eurosport) vs 14.00 (hjemmeklubb Bergsøy IL/Rem Arena), ikke entydig. En feil tid er verre enn en manglende; verify låser mot handball.no.",
+    "DROPPET av fact-check: Fredrikstad–Gjerpen 12. sep (er faktisk Gjerpen–Fredrikstad 30. sep) + ØIF Arendal–Viking TIF (utsatt pga. kong Haralds bisettelse 9. sep, ingen ny dato).",
+    "OPPRYDNING: fjernet én foreldet ai-research-event (Brighton–Tromsø, UECL-playoff 27. aug, ferdigspilt for 2 uker siden) → fikset en stående validate-events 'past event will fail'-feil. Nå 0 errors.",
+    "provenance.time.basis=secondary på håndballkampene: handball.no-terminlisten (NHF, tid-autoritet) var JS-rendret/uleselig ved henting; TV 2 (rettighetshaver) + Eurosport er de faktisk leste kildene. Verify fester minuttene mot handball.no/TV 2 Play kampside.",
+    "Golf FedEx Open de France (Hovland+Reitan, coverage-audit 08:20Z medium-hull) var ALLEREDE boardet forrige kjøring (13:00Z, id 27cba4b1c677) — ingen dobbeltarbeid.",
+    "Mekaniske coverage-gaps triagert som støy (alle ikke-imminente entity-gaps fra nyhetsoverskrifter): RBK (Rekdal-transfer), Mesterligaen (Hauge-lagoppstilling), Tour de France (Pidcock sesongavslutning-opinion) — ingen berambare kommende events.",
+    "Håvard «rain» Nygaard tracked-claim (claimedDate 24. sep = Stake Pulse Beat II Stockholm 21.–24. sep): fortsatt ærlig «ikke satt opp ennå» — 100T bekreftet påmeldt men gruppetrekning/motstander/tid upublisert. Boardes av esports.js/verify når kampene får tidsstempel.",
+    "SOURCE-ISSUES (self-repair/improve, ikke research): golf.json-fetcheren DØD (stale-retained 29 kjøringer/4 dager); ingen wholesale håndball-fetcher (bak det ukentlige Elkjøp-hullet); football-fetcher maxEvents:30-kutt (CL/EL MD-regresjon). Alle strukturelle, utenfor research-kontrakten."
   ]
 }
