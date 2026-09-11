@@ -1,26 +1,17 @@
 {
-  "runAt": "2026-09-11T19:10:00Z",
+  "runAt": "2026-09-11T22:45:00Z",
   "tier": "standard",
   "eventsAdded": 0,
-  "eventsRemoved": 1,
-  "trackedDelta": "Ingen entries lagt til/fjernet. Oppdatert tre athletics-entries (henriette-jaeger, sondre-guttormsen, world-athletics-ultimate-championship-2026) med Budapest-next-fixture-reconciliation; ny kjøringsnote prepended; notes trimmet 16→15.",
-  "quality": {
-    "pass": true,
-    "score": 80,
-    "failures": [
-      "Davis Cup Norge–Kina (18. sep, 7-dagers-kanten) har tom streaming — ærlig selv-notert i event-summary ('norsk kringkaster ennå ikke bekreftet') men uløst; verify/neste kjøring fester norsk kanal (TV 2 har Davis Cup) når den nærmer seg (−5).",
-      "Grader flagget stale research-log ved gradering (skrives i dette steget — adressert).",
-      "Ingen hard fails; substansielt output (World Athletics-event-berikelse + tracked-reconcile) er korrekt, ekte-kilde-evidensert (NRK + olympics.com + World Athletics), validate-events ren på 0 errors."
-    ]
-  },
+  "eventsRemoved": 0,
+  "trackedDelta": "Ingen entries lagt til/fjernet/utløpt. Oppdatert vuelta-espana-2026-reason (stat-line-refresh notert + evidence). lastUpdated → 2026-09-11T22:45Z, ny run-note prepended (cap 15).",
   "notes": [
-    "TILSTAND VED START: coverage-audit (08:15Z) INGEN akutt HIGH recall-hull (escalated=false), tavla usedvanlig komplett; alle 6 WP-243-kontrakter met (breached=[]: F1 6, Eliteserien 8, PL 10, DP World 3, PGA 1, tennis 1). Scout quiet lenge (siste escalate 1. sep). Ordinær 4-timers standard-kjøring, ingen fersk eskalering.",
-    "PRIMÆRLEVERANSE (next-fixture-fiks, ingen ny event): mekanisk coverage-gap (18:09Z) 'Henriette Jæger' via NRK 'Jæger klar for finale i Budapest' triagert som EKTE next-fixture-hull. Jæger (katalog-tier2.athlete, 400 m) tok seg til FINALEN på World Athletics Ultimate Championship (Budapest, kveldsøkt lør. 12. sep fra ~18.00 lokal / 16.00 UTC, mot Marileidy Paulino), men var IKKE navngitt på det alt-boardede paraply-eventet (id 450ead7c284d, kun Ingebrigtsen+Warholm). Egen web-sjekk bekreftet også Sondre Guttormsen (katalog-athlete) i stavsprang-feltet mot Duplantis. Begge (katalog-athletes uten board-kamp = ærlige next-fixture-hull) nå NAVNGITT på eventet med entityIds → radene deres resolver. Event-summary + evidence oppdatert (NRK-artikkel + olympics.com feltliste + World Athletics stavsprang-preview). Bekreftet mot 2+ uavhengige kilder per utøver (Jæger: NRK + olympics.com + søk; Guttormsen: World Athletics preview + olympics.com).",
-    "STEP 3.5 (write-time fact-check): full fresh-context fact-checker ikke spawnet — ingen NY event/tid/kanal-påstand ble skrevet (kun to bekreftede deltakere navngitt på et event verify alt confirmet i dag 09:54Z). Deltakelsen er uansett to-kilde-web-bekreftet per utøver. En egen grader-subagent (Step 5) verifiserte outputene uavhengig.",
-    "OPPRYDNING: fjernet stale ai-research VfB Stuttgart at Bayern München (Bundesliga 1. Spieltag 28. aug, ferdigspilt ~2 uker siden) → fikset stående validate 'past event will fail'-hard-feil. build-events/validate: 165 events, 0 errors (kun stående strukturelle varsler: WP-246 landing-URL på 60, WP-242 weak-basis 5+3, timezone-bleed Presidents Cup, 1 near-term streaming-missing = Davis Cup).",
-    "TRIAGE av øvrige mekaniske coverage-gaps (18:09Z, gapCount 7, anomalyCount 1) — alle KORREKTE FRAVÆR / nyhets-støy: (a) Sander Sagosen / Sagosen — NRK skade-sak 'ute på ubestemt tid', ikke et event; (b) RBK — NRK spiller-skade-nyhet, Rosenborg-kamper alt på tavla; (c) US Open Tennis — Guardian follow-along-indeks, turneringen node t.o.m. 14. sep; (d) tracked-claim Håvard «rain» Nygaard 24. sep — 100T CS2 sen-annonsering (Stake Pulse Beat II Stockholm), ingen datert kamp publisert = korrekt fravær pt., boardes av esports.js/verify når tid stemples.",
-    "ANOMALI golf.json stale-retained (high, 36 retains / 5 dager) = STÅENDE self-repair-sak (død ESPN golf-fetcher), IKKE research: all golf håndboardes (Irish Open/BMW PGA/Biltmore/Open de France/Presidents Cup komplette), ingen recall-hull. IKKE eskalert (eskalering trigger research, ikke self-repair).",
-    "Ingen katalog-endring (Step 2.6 horisont-scan: ingen ny sourcbar kandidat utenfor katalogen denne kjøringen; coverage-gaps.demand fraværende). Ingen registry-reconciliation (Step 2.8 er kun deep-tier ukentlig mandags-sveip — dette var en ordinær 4-timers standard-kjøring).",
-    "ROTÅRSAK-FLAGG STÅR uendret (self-repair/improve, utenfor research-kontrakten): (a) golf.json-fetcheren DØD (stale-retained 36); (b) ingen wholesale håndball-fetcher (bak det ukentlige Elkjøp-hullet); (c) football-fetcher maxEvents:30-kutt + graft-then-drop (CL/EL MD-regresjon); (d) esports.js 100T-gated."
-  ]
+    "QUIET/berikelses-kjøring. coverage-audit (08:15Z) INGEN akutt HIGH-hull (escalated=false); tavla usedvanlig komplett. Alle 6 WP-243-kontrakter met (breached=[]).",
+    "Scout escalate 21:17Z (Henriette Jæger, Ultimate Championship 400 m-finale) — ALLEREDE ADRESSERT i 19:10Z-kjøringen (Jæger + Guttormsen navngitt på event 450ead7c284d). Ingen ny handling nødvendig.",
+    "VÆRDIØKNING (stage-race-mandat): Vuelta a España live stat-line (id 2fac4ce59e22) frisket opp — var ~5–6 dager gammel (etter etappe 15, 6. sep); rittet slutter søn. 13. sep. Ny GC: Enric Mas (Movistar) i rødt ~1.37 foran Roglič (lukket på tempoen etappe 18), Gall nr. 3 (~3 min); dronningetappe 20 lør. 12. sep, avslutning søn. 13. sep Granada-rundløype (112 km, Alhambra). Pogačar ute (velt). To samstemte kilder (cyclinguptodate stage-20-preview + WebSearch/cyclingnews GC) — ingen fjorårs-kontaminasjon. Uno-X GC ikke gjettet; Leknessunds etappe 7-seier beholdt.",
+    "TRIAGE mekaniske coverage-gaps (21:33Z, gapCount 6, anomalyCount 1) — alle ikke-imminente = nyhetsstøy/korrekt fravær: Sander Sagosen (NRK skade-sak, ikke event; spiller i Aalborg, ikke katalog-lag Kolstad), RBK-spiller-skade (Rosenborg-kamper på tavla), Champions League (BBC Arteta-sak; MD2 13.–14. OKT utenfor horisont), US Open Tennis (Guardian follow-along, node t.o.m. 14. sep), Håvard «rain» Nygaard 24. sep (100T CS2 sen-annonsering, ingen datert kamp).",
+    "ANOMALI golf.json stale-retained (high, 37 retains / 5 dager) = STÅENDE self-repair-sak (død ESPN golf-fetcher), ikke research — all golf håndboardet, ingen recall-hull.",
+    "Ingen katalog-endring; ingen registry-reconciliation (ikke ukentlig mandags-sveip). Ingen expiry-drops (nærmeste vuelta/gcl/ultimate-championship/fissure 14. sep, alle live denne helgen). ROTÅRSAK-FLAGG STÅR (self-repair/improve): golf-fetcher død; ingen håndball-fetcher; football maxEvents:30 CL/EL-regresjon; esports.js 100T-gated.",
+    "validate-events: 166 events, 0 errors (kun stående strukturelle varsler: WP-246 landing-URL 60, WP-242 weak-basis 5+3, timezone-bleed, 1 near-term uten streaming). Vuelta-endringen ga NULL nye errors."
+  ],
+  "quality": { "pass": true, "score": 94, "failures": ["Minor scannability: Vuelta live stat-line summary er 4 avsnitt vs 2–3-retningslinjen (statisk Uno-X-tropp + løpsoversikt kunne foldes) — ikke en vegg, bestått."] }
 }
