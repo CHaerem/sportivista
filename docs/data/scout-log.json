@@ -278,5 +278,13 @@
     "verdict": "quiet",
     "reason": "RSS (30 items, 14:01 UTC): football match-day coverage, Champions League reviews, transfer gossip, injury news (Manchester United touting ban, Newcastle signings, Chelsea/Neto contract, Champions League analysis—all past results or opinion, no schedule/time/venue/streaming/broadcaster changes). Injury context (Sander Sagosen handball injury—tracked athlete but no imminent event schedule impact; RBK player out—no schedule change; Hull player accident). Transfer news (Vålerenga signings—no impact on tracked Norwegian events). Coverage gaps (5 gaps, 1 anomaly): Sagosen/RBK (imminent=false, injury context only), Mesterligaen (imminent=false, Hauge lineup news), Håvard rain Nygaard esports (claimedDate 2026-09-24 = 13 days out, no new CS2 match announcement in RSS—known config gap), golf athletes (no imminent event signal). Anomalies: golf.json stale-retained 35 runs/4 days HIGH (infrastructure issue, not event escalation). No schedule/time/venue changes to existing tracked events, no broadcaster announcements, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent events, no new concrete upcoming events requiring escalation. Escalation cap today (UTC): 0/2.",
     "signals": []
+  },
+  {
+    "runAt": "2026-09-11T21:17:01.211Z",
+    "verdict": "escalate",
+    "reason": "RSS (36 items, 18:09 UTC): Henriette Jæger confirmed advancing to 400m final in Ultimate Championship at Budapest. NRK headline published Sep 11 17:50 UTC: \"Jæger klar for finale i Budapest: – Hadde vært drømmen\". This is a concrete upcoming event (final likely this weekend) for a tracked Norwegian athlete warranting research verification of final date/time/streaming and venue.",
+    "signals": [
+      "Henriette Jæger: Ultimate Championship 400m final confirmed (Budapest)"
+    ]
   }
 ]
