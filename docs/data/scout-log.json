@@ -260,5 +260,11 @@
     "verdict": "quiet",
     "reason": "RSS (29 items, 21:22 UTC): all football match-day results and past coverage (Man Utd/Sabah Champions League, Bodø/Glimt/Bayern, Eliteserien results, transfer gossip—all past results or tracked content, no schedule/time/venue/streaming/broadcaster changes). Coverage gaps (3 gaps, 1 anomaly): RBK/Mesterligaen (all imminent=false, just news context), Håvard rain Nygaard esports (claimedDate 2026-09-24 = 14 days out, no new CS2 match announcement in RSS); golf.json stale-retained 30 runs/4 days (infrastructure issue, not escalation signal). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting tracked events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements, no new concrete upcoming events requiring escalation. Escalation cap today (UTC): 0/2.",
     "signals": []
+  },
+  {
+    "runAt": "2026-09-11T10:00:00.147Z",
+    "verdict": "quiet",
+    "reason": "RSS (45 items, 09:20 UTC): transfer-season noise, past match-day coverage (Champions League yesterday: Bayern/Glimt, Como/Leipzig, Man Utd/Sabah, etc.—all already tracked, no schedule/time/venue/streaming/broadcaster changes). Injury news (player out rest of season—no event-schedule impact). Personnel changes (coach resignation—no event-schedule impact). Coverage gaps (3 gaps, 1 anomaly): RBK entity (injury news, not a new event); Mesterligaen entity (coach news, no schedule/venue change); Håvard rain Nygaard esports (tracked athlete, claimedDate 2026-09-24 = 13 days out, no new CS2 match announcement in RSS—known config gap). Anomalies: golf.json stale-retained 34 runs/4 days HIGH (infrastructure issue, not event escalation signal). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting tracked events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements, no new concrete upcoming events requiring escalation. Escalation cap today (UTC): 0/2.",
+    "signals": []
   }
 ]
