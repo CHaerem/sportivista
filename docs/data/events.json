@@ -195,62 +195,6 @@
   {
     "sport": "football",
     "tournament": "Bundesliga",
-    "title": "VfB Stuttgart at Bayern München",
-    "time": "2026-08-28T18:30:00Z",
-    "endTime": null,
-    "venue": "Allianz Arena, München",
-    "norwegian": false,
-    "homeTeam": "Bayern München",
-    "awayTeam": "VfB Stuttgart",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-11T05:30:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/1",
-      "https://www.bundesliga.com/en/bundesliga/news/confirmed-kick-off-times-dates-2026-27-fixtures-23955",
-      "https://www.tvkampen.com/page/tv-rettigheter-norge",
-      "https://presse.viaplaygroup.no/post/nent-group-forlenger-bundesliga-rettigheter-til-2029"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "bundesliga-dfl",
-        "url": "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/1",
-        "basis": "primary",
-        "retrievedAt": "2026-08-11T05:30:00Z",
-        "note": "DFL/bundesliga.com offisielle kampdags-feed; tider låst i uke 29 (13.–17. juli)"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://presse.viaplaygroup.no/post/nent-group-forlenger-bundesliga-rettigheter-til-2029",
-        "basis": "official",
-        "retrievedAt": "2026-08-11T05:30:00Z",
-        "note": "Viaplay Groups egen pressemelding: Bundesliga-rettighetene forlenget t.o.m. 2029"
-      }
-    },
-    "summary": "Bundesliga 2026/27 starter (sen start pga. VM 2026): 1. Spieltag 28.–30. august. Bayern München–VfB Stuttgart. Avspark 18:30 UTC.\n\nNorsk visning: Viaplay (har Bundesliga-rettighetene i Norge t.o.m. 2029; enkeltkamper også via TV 2 Play «Mer fotball»). Tider bekreftet mot DFLs egen kampdags-feed (bundesliga.com).",
-    "homeTeamEntityId": "bayern-munich",
-    "id": "5e487c5becda",
-    "verifiedAt": "2026-08-22T05:52:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/1",
-      "https://www.dfl.de/en/news/season-2026-27-bundesliga-and-bundesliga-2-fixture-schedules-now-available/"
-    ],
-    "awayTeamEntityId": "vfb-stuttgart"
-  },
-  {
-    "sport": "football",
-    "tournament": "Bundesliga",
     "title": "Bayer Leverkusen at SV Elversberg",
     "time": "2026-08-29T13:30:00Z",
     "endTime": null,
@@ -4051,6 +3995,14 @@
       {
         "name": "Karsten Warholm",
         "entityId": "karsten-warholm"
+      },
+      {
+        "name": "Henriette Jæger",
+        "entityId": "henriette-jaeger"
+      },
+      {
+        "name": "Sondre Guttormsen",
+        "entityId": "sondre-guttormsen"
       }
     ],
     "streaming": [
@@ -4065,7 +4017,9 @@
     "confidence": "medium",
     "evidence": [
       "https://worldathletics.org/competitions/world-athletics-ultimate-championship/2026",
-      "https://en.wikipedia.org/wiki/2026_World_Athletics_Ultimate_Championship"
+      "https://en.wikipedia.org/wiki/2026_World_Athletics_Ultimate_Championship",
+      "https://www.olympics.com/en/news/world-athletics-ultimate-championship-2026-full-list-athletes",
+      "https://www.nrk.no/sport/jaeger-klar-for-finale-i-budapest_-_-hadde-vaert-drommen-1.18022403"
     ],
     "provenance": {
       "time": {
@@ -4082,7 +4036,7 @@
         "note": "NRK bekreftet som norsk kringkaster (World Athletics pressemelding, 20+ kringkastere inkl. NRK)"
       }
     },
-    "summary": "World Athletics Ultimate Championship — den aller første utgaven av World Athletics’ nye biennale sesongfinale, National Athletics Centre i Budapest 11.–13. september 2026. Premiepott ~$10 mill., verdenseliten samlet.\n\nNorsk vinkel: Jakob Ingebrigtsen er bekreftet kvalifisert (5000 m). Karsten Warholm ventes i 400 m hekk (sterk form etter EM-gull i Birmingham), men er ikke offisielt bekreftet på kvalifiseringslista ennå.\n\nNorsk visning: NRK (internasjonale rettigheter distribuert via Infront). Øktene starter fre. ~19.00 / lør.–søn. ~18.00 lokal (Budapest), men eksakte øvelses-starttider er ikke publisert; boardet på turneringsnivå — verify fester øktstider + deep NRK-url når arrangøren slipper timeplanen.",
+    "summary": "World Athletics Ultimate Championship — den aller første utgaven av World Athletics’ nye biennale sesongfinale, National Athletics Centre i Budapest 11.–13. september 2026. Premiepott ~$10 mill., verdenseliten samlet.\n\nNorsk vinkel: Fire norske i aksjon. Henriette Jæger tok seg til 400 m-finalen (lør. 12. sep, kveldsøkt fra ~18.00 lokal / 16.00 UTC — møter bl.a. Marileidy Paulino). Sondre Guttormsen er i det åttemannssterke stavsprang-feltet mot Armand Duplantis. Jakob Ingebrigtsen er kvalifisert (5000 m) og Karsten Warholm ventes i 400 m hekk.\n\nNorsk visning: NRK (internasjonale rettigheter distribuert via Infront). Øktene starter fre. ~19.00 / lør.–søn. ~18.00 lokal (Budapest); eksakte øvelses-starttider innen økta er ikke fullt publisert — verify fester tidene + deep NRK-url.",
     "participants": [],
     "id": "450ead7c284d",
     "verifiedAt": "2026-09-11T09:54:00Z",

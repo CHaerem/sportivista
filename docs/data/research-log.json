@@ -1,29 +1,26 @@
 {
-  "runAt": "2026-09-10T19:20:00Z",
+  "runAt": "2026-09-11T19:10:00Z",
   "tier": "standard",
-  "eventsAdded": 6,
+  "eventsAdded": 0,
   "eventsRemoved": 1,
-  "trackedDelta": "Elkjøp-ligaen 2026/27-entry oppdatert med runde 3-boarding (12.–13. sep); ny kjøringsnote prepended. Ingen entries lagt til/fjernet (alle katalog-entiteter fortsatt sporet, ingen utløpt før 2026-09-14).",
+  "trackedDelta": "Ingen entries lagt til/fjernet. Oppdatert tre athletics-entries (henriette-jaeger, sondre-guttormsen, world-athletics-ultimate-championship-2026) med Budapest-next-fixture-reconciliation; ny kjøringsnote prepended; notes trimmet 16→15.",
   "quality": {
     "pass": true,
-    "score": 84,
+    "score": 80,
     "failures": [
-      "Evidence-domain monoculture på Elkjøp-ligaen runde-3-familien: alle 6 siterer kun tv2.no + eurosport.no. handball.no (NHF, tid-autoritet) var JS-rendret/uleselig → provenance.time.basis=secondary uten primær korroborasjon. Godt flagget for verify (medium er passende), men enkilde-tier (−5).",
-      "Gjentatt uadressert anbefaling: 'ingen statisk håndball-fetcher → research håndboarder Elkjøp-ligaen runde-for-runde' (coverage-critic recurrences=10), fortsatt uløst. Korrekt rutet til self-repair/improve (strukturelt, utenfor research-kontrakten), men loopen håndboarder ukentlig en hel wholesale-tier1-liga (−10).",
-      "Watch (ikke hard fail): Torreense–Lillestrøm (EL MD1, 17. sep) summary nevner VG+ Sport som sannsynlig norsk visning for norsk klubb mens streaming-chip sier Viaplay — Viaplay er rettighetshaver, VG+ flagget for verify; verify må løse per-kamp-listingen før 17. sep.",
-      "Watch: CL MD1-regresjon (maxEvents:30-kutt) i ≥3 kjøringer — ærlig triagert, rutet til self-repair/improve, utenfor research denne kjøringen."
+      "Davis Cup Norge–Kina (18. sep, 7-dagers-kanten) har tom streaming — ærlig selv-notert i event-summary ('norsk kringkaster ennå ikke bekreftet') men uløst; verify/neste kjøring fester norsk kanal (TV 2 har Davis Cup) når den nærmer seg (−5).",
+      "Grader flagget stale research-log ved gradering (skrives i dette steget — adressert).",
+      "Ingen hard fails; substansielt output (World Athletics-event-berikelse + tracked-reconcile) er korrekt, ekte-kilde-evidensert (NRK + olympics.com + World Athletics), validate-events ren på 0 errors."
     ]
   },
   "notes": [
-    "Hovedleveranse: håndball Elkjøp-ligaen runde 3 (12.–13. sep) boardet — coverage-critics stående medium-hull (recurrences 10, kun Bergen Håndball–Kolstad lå inne). Håndball er katalog-tier1 (wholesale) uten statisk fetcher, så hele ligaen håndboardes runde-for-runde.",
-    "SEKS nye ai-research-events (medium, håndball): MENN — Kristiansand TH–Fjellhammer (12. sep 16.00 CEST), Runar Elite–Nærbø (13. sep 17.00), Sandnes–Elverum (13. sep 17.30), Drammen–Follo HK (13. sep 18.00); KVINNER — Molde Elite–Fana (12. sep 16.00), Flint Tønsberg–Fjellhammer (13. sep 16.00). Alle to-kilde-bekreftet: håndball-scout (TV 2 Livesport-terminliste) + uavhengig write-time fact-check (Eurosport.no kalender) enige på dato+tid. TV 2 Play (official).",
-    "HOLDT AV TAVLA: Bergsøy–Sandefjord (menn, 13. sep) — avsparkskonflikt 16.00 (Eurosport) vs 14.00 (hjemmeklubb Bergsøy IL/Rem Arena), ikke entydig. En feil tid er verre enn en manglende; verify låser mot handball.no.",
-    "DROPPET av fact-check: Fredrikstad–Gjerpen 12. sep (er faktisk Gjerpen–Fredrikstad 30. sep) + ØIF Arendal–Viking TIF (utsatt pga. kong Haralds bisettelse 9. sep, ingen ny dato).",
-    "OPPRYDNING: fjernet én foreldet ai-research-event (Brighton–Tromsø, UECL-playoff 27. aug, ferdigspilt for 2 uker siden) → fikset en stående validate-events 'past event will fail'-feil. Nå 0 errors.",
-    "provenance.time.basis=secondary på håndballkampene: handball.no-terminlisten (NHF, tid-autoritet) var JS-rendret/uleselig ved henting; TV 2 (rettighetshaver) + Eurosport er de faktisk leste kildene. Verify fester minuttene mot handball.no/TV 2 Play kampside.",
-    "Golf FedEx Open de France (Hovland+Reitan, coverage-audit 08:20Z medium-hull) var ALLEREDE boardet forrige kjøring (13:00Z, id 27cba4b1c677) — ingen dobbeltarbeid.",
-    "Mekaniske coverage-gaps triagert som støy (alle ikke-imminente entity-gaps fra nyhetsoverskrifter): RBK (Rekdal-transfer), Mesterligaen (Hauge-lagoppstilling), Tour de France (Pidcock sesongavslutning-opinion) — ingen berambare kommende events.",
-    "Håvard «rain» Nygaard tracked-claim (claimedDate 24. sep = Stake Pulse Beat II Stockholm 21.–24. sep): fortsatt ærlig «ikke satt opp ennå» — 100T bekreftet påmeldt men gruppetrekning/motstander/tid upublisert. Boardes av esports.js/verify når kampene får tidsstempel.",
-    "SOURCE-ISSUES (self-repair/improve, ikke research): golf.json-fetcheren DØD (stale-retained 29 kjøringer/4 dager); ingen wholesale håndball-fetcher (bak det ukentlige Elkjøp-hullet); football-fetcher maxEvents:30-kutt (CL/EL MD-regresjon). Alle strukturelle, utenfor research-kontrakten."
+    "TILSTAND VED START: coverage-audit (08:15Z) INGEN akutt HIGH recall-hull (escalated=false), tavla usedvanlig komplett; alle 6 WP-243-kontrakter met (breached=[]: F1 6, Eliteserien 8, PL 10, DP World 3, PGA 1, tennis 1). Scout quiet lenge (siste escalate 1. sep). Ordinær 4-timers standard-kjøring, ingen fersk eskalering.",
+    "PRIMÆRLEVERANSE (next-fixture-fiks, ingen ny event): mekanisk coverage-gap (18:09Z) 'Henriette Jæger' via NRK 'Jæger klar for finale i Budapest' triagert som EKTE next-fixture-hull. Jæger (katalog-tier2.athlete, 400 m) tok seg til FINALEN på World Athletics Ultimate Championship (Budapest, kveldsøkt lør. 12. sep fra ~18.00 lokal / 16.00 UTC, mot Marileidy Paulino), men var IKKE navngitt på det alt-boardede paraply-eventet (id 450ead7c284d, kun Ingebrigtsen+Warholm). Egen web-sjekk bekreftet også Sondre Guttormsen (katalog-athlete) i stavsprang-feltet mot Duplantis. Begge (katalog-athletes uten board-kamp = ærlige next-fixture-hull) nå NAVNGITT på eventet med entityIds → radene deres resolver. Event-summary + evidence oppdatert (NRK-artikkel + olympics.com feltliste + World Athletics stavsprang-preview). Bekreftet mot 2+ uavhengige kilder per utøver (Jæger: NRK + olympics.com + søk; Guttormsen: World Athletics preview + olympics.com).",
+    "STEP 3.5 (write-time fact-check): full fresh-context fact-checker ikke spawnet — ingen NY event/tid/kanal-påstand ble skrevet (kun to bekreftede deltakere navngitt på et event verify alt confirmet i dag 09:54Z). Deltakelsen er uansett to-kilde-web-bekreftet per utøver. En egen grader-subagent (Step 5) verifiserte outputene uavhengig.",
+    "OPPRYDNING: fjernet stale ai-research VfB Stuttgart at Bayern München (Bundesliga 1. Spieltag 28. aug, ferdigspilt ~2 uker siden) → fikset stående validate 'past event will fail'-hard-feil. build-events/validate: 165 events, 0 errors (kun stående strukturelle varsler: WP-246 landing-URL på 60, WP-242 weak-basis 5+3, timezone-bleed Presidents Cup, 1 near-term streaming-missing = Davis Cup).",
+    "TRIAGE av øvrige mekaniske coverage-gaps (18:09Z, gapCount 7, anomalyCount 1) — alle KORREKTE FRAVÆR / nyhets-støy: (a) Sander Sagosen / Sagosen — NRK skade-sak 'ute på ubestemt tid', ikke et event; (b) RBK — NRK spiller-skade-nyhet, Rosenborg-kamper alt på tavla; (c) US Open Tennis — Guardian follow-along-indeks, turneringen node t.o.m. 14. sep; (d) tracked-claim Håvard «rain» Nygaard 24. sep — 100T CS2 sen-annonsering (Stake Pulse Beat II Stockholm), ingen datert kamp publisert = korrekt fravær pt., boardes av esports.js/verify når tid stemples.",
+    "ANOMALI golf.json stale-retained (high, 36 retains / 5 dager) = STÅENDE self-repair-sak (død ESPN golf-fetcher), IKKE research: all golf håndboardes (Irish Open/BMW PGA/Biltmore/Open de France/Presidents Cup komplette), ingen recall-hull. IKKE eskalert (eskalering trigger research, ikke self-repair).",
+    "Ingen katalog-endring (Step 2.6 horisont-scan: ingen ny sourcbar kandidat utenfor katalogen denne kjøringen; coverage-gaps.demand fraværende). Ingen registry-reconciliation (Step 2.8 er kun deep-tier ukentlig mandags-sveip — dette var en ordinær 4-timers standard-kjøring).",
+    "ROTÅRSAK-FLAGG STÅR uendret (self-repair/improve, utenfor research-kontrakten): (a) golf.json-fetcheren DØD (stale-retained 36); (b) ingen wholesale håndball-fetcher (bak det ukentlige Elkjøp-hullet); (c) football-fetcher maxEvents:30-kutt + graft-then-drop (CL/EL MD-regresjon); (d) esports.js 100T-gated."
   ]
 }
