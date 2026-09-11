@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2026-09-11T14:02:32.157Z",
-  "gapCount": 5,
+  "generatedAt": "2026-09-11T18:09:53.531Z",
+  "gapCount": 7,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Henriette Jæger",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Jæger klar for finale i Budapest: – Hadde vært drømmen",
+      "link": "https://www.nrk.no/sport/jaeger-klar-for-finale-i-budapest_-_-hadde-vaert-drommen-1.18022403",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-09-11T18:09:50.845Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Jæger",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Jæger klar for finale i Budapest: – Hadde vært drømmen",
+      "link": "https://www.nrk.no/sport/jaeger-klar-for-finale-i-budapest_-_-hadde-vaert-drommen-1.18022403",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-09-11T18:09:50.845Z"
+    },
     {
       "kind": "entity",
       "entity": "Sander Sagosen",
@@ -12,7 +34,7 @@
       "link": "https://www.nrk.no/sport/norges-handballstjerne-sander-sagosen-skadet-_-ute-pa-ubestemt-tid-1.18021735",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-09-11T14:02:31.015Z"
+      "detectedAt": "2026-09-11T18:09:50.845Z"
     },
     {
       "kind": "entity",
@@ -23,7 +45,7 @@
       "link": "https://www.nrk.no/sport/norges-handballstjerne-sander-sagosen-skadet-_-ute-pa-ubestemt-tid-1.18021735",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-09-11T14:02:31.015Z"
+      "detectedAt": "2026-09-11T18:09:50.845Z"
     },
     {
       "kind": "entity",
@@ -34,18 +56,18 @@
       "link": "https://www.nrk.no/sport/rbk-spiller-ute-resten-av-sesongen-1.18021542",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-09-11T14:02:31.015Z"
+      "detectedAt": "2026-09-11T18:09:50.845Z"
     },
     {
       "kind": "entity",
-      "entity": "Mesterligaen",
+      "entity": "US Open Tennis",
       "type": "missing",
       "imminent": false,
-      "headline": "Bekreftet: Ingen Hauge fra start",
-      "link": "https://www.nrk.no/sport/bekreftet_-ingen-hauge-fra-start-1.18021103",
-      "feed": "nrk-sport",
+      "headline": "US Open tennis finals, the Manchester derby and Solheim Cup – follow with us",
+      "link": "https://www.theguardian.com/sport/2026/sep/11/us-open-tennis-finals-the-manchester-derby-and-solheim-cup-follow-with-us",
+      "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-09-11T14:02:31.015Z"
+      "detectedAt": "2026-09-11T18:09:50.845Z"
     },
     {
       "kind": "tracked-claim",
@@ -57,18 +79,18 @@
       "claimedDate": "2026-09-24T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-09-11T14:02:31.960Z"
+      "detectedAt": "2026-09-11T18:09:51.766Z"
     }
   ],
   "anomalies": [
     {
       "sport": "golf",
       "issue": "stale-retained",
-      "detail": "docs/data/golf.json has been served from retention for 35 consecutive run(s) — no fresh fetch in 4 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 35,
-      "staleDays": 4,
+      "detail": "docs/data/golf.json has been served from retention for 36 consecutive run(s) — no fresh fetch in 5 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 36,
+      "staleDays": 5,
       "severity": "high",
-      "detectedAt": "2026-09-11T14:02:32.015Z"
+      "detectedAt": "2026-09-11T18:09:51.813Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."

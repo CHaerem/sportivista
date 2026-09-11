@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T14:02:30.731Z",
+  "generatedAt": "2026-09-11T18:09:50.582Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 11.14,
+    "oldestGapAgeDays": 11.32,
     "escalatable": 1,
     "catalogMatched": 1,
     "auditedAt": "2026-09-11T08:15:00Z",
@@ -35,7 +35,7 @@
       {
         "interest": "Håndball — Elkjøp-ligaen (menn + kvinner) NESTE serierunde (~19.–20. sep) utover denne helgens boardede runde",
         "severity": "medium",
-        "ageDays": 11.14,
+        "ageDays": 11.32,
         "recurrences": 11,
         "catalogMatched": true
       }
@@ -47,17 +47,10 @@
     "nearTermAmended": 1,
     "verifyRunAt": "2026-09-11T09:54:00Z",
     "windowRate": 0,
-    "windowChecks": 110,
+    "windowChecks": 104,
     "windowAmendments": 0,
-    "windowCorrections": 4,
+    "windowCorrections": 3,
     "byDay": [
-      {
-        "date": "2026-08-28",
-        "checks": 6,
-        "amendments": 0,
-        "corrections": 1,
-        "rate": 0
-      },
       {
         "date": "2026-08-29",
         "checks": 6,
@@ -153,21 +146,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-11T14:02:24.603Z",
+    "buildCheckedAt": "2026-09-11T18:09:45.648Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-11T09:21:15.623Z",
-    "manifestAgeHours": 4.69,
+    "manifestGeneratedAt": "2026-09-11T14:02:32.388Z",
+    "manifestAgeHours": 4.12,
     "staleFiles": [
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-09-06T16:41:15.881Z",
-        "ageHours": 117.35
+        "ageHours": 121.48
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-09-11T09:54:00Z",
-    "verifyAgeHours": 4.14,
+    "verifyAgeHours": 8.26,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -176,6 +169,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-11T14:02:30.731Z"
+    "generatedAt": "2026-09-11T18:09:50.582Z"
   }
 }
