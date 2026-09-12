@@ -310,5 +310,13 @@
     "verdict": "quiet",
     "reason": "RSS (55 items, 15:59 UTC): football match-day coverage (Liverpool v Fulham, Chelsea matches, LSK v Vålerenga—all tracked or past results, no schedule/time/venue/streaming/broadcaster changes). Vuelta ongoing (no new dates/times), US Open tennis final tracked (endTime Sep 14). Athletics: Ingebrigtsen withdrawal news—he is NOT competing in Budapest 1500m duel, this is news about NOT running, not a new event announcement. Transfer/injury context (Sørloth, Sagosen—no schedule impact). Coverage gaps (2 gaps, 1 anomaly): 1. divisjon entity (Ada Hegerberg, not imminent event); Håvard rain Nygaard esports (claimedDate 2026-09-24 = 12 days out, no new CS2 match announcement in RSS—known config gap); golf.json stale-retained 43 runs/5 days (infrastructure issue, not event escalation signal). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements, no new concrete upcoming events requiring escalation. Escalation cap today (UTC): 0/2.",
     "signals": []
+  },
+  {
+    "runAt": "2026-09-12T18:25:00Z",
+    "verdict": "escalate",
+    "reason": "Coverage gaps: high-severity contract-breach detected. Premier League (wholesale-covered tier1 sport) coverage contract is BROKEN — board is missing 5+ upcoming events within the next 14 days. This indicates systematic coverage failure in a primary tracked competition. Research should investigate why PL events are missing from the board and replenish from authoritative sources. Escalation cap today (UTC): 1/2.",
+    "signals": [
+      "Premier League contract-breach: missing upcoming events within pre-agreed coverage window"
+    ]
   }
 ]
