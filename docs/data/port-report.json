@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-12T18:16:03.808Z",
+  "generatedAt": "2026-09-12T21:11:11.941Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
     "amendRate": "green",
     "silentStops": "yellow",
     "participantStatus": "green",
-    "contracts": "yellow"
+    "contracts": "green"
   },
   "basis": {
     "coverageAudit": true,
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 1
     },
-    "oldestGapAgeDays": 12.32,
+    "oldestGapAgeDays": 12.44,
     "escalatable": 1,
     "catalogMatched": 1,
     "auditedAt": "2026-09-12T07:45:00Z",
@@ -35,14 +35,14 @@
       {
         "interest": "Håndball — Elkjøp-ligaen (menn + kvinner) NESTE serierunde (~19.–20. sep) utover denne helgens boardede runde",
         "severity": "medium",
-        "ageDays": 12.32,
+        "ageDays": 12.44,
         "recurrences": 12,
         "catalogMatched": true
       },
       {
         "interest": "Sykkel — UCI WorldTour endagsklassikere GP Cycliste de Québec (12. sep) + GP Cycliste de Montréal (13. sep)",
         "severity": "low",
-        "ageDays": 0.44,
+        "ageDays": 0.56,
         "recurrences": 0,
         "catalogMatched": false
       }
@@ -153,21 +153,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-12T18:15:58.763Z",
+    "buildCheckedAt": "2026-09-12T21:11:08.775Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-12T15:59:54.562Z",
-    "manifestAgeHours": 2.27,
+    "manifestGeneratedAt": "2026-09-12T18:16:05.239Z",
+    "manifestAgeHours": 2.92,
     "staleFiles": [
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-09-06T16:41:15.881Z",
-        "ageHours": 145.58
+        "ageHours": 148.5
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-09-12T09:31:03Z",
-    "verifyAgeHours": 8.75,
+    "verifyAgeHours": 11.67,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -175,15 +175,7 @@
   "contracts": {
     "total": 6,
     "inSeason": 6,
-    "breached": [
-      {
-        "id": "football:premier-league",
-        "name": "Premier League",
-        "upcoming": 5,
-        "minUpcoming": 6,
-        "horizonDays": 14
-      }
-    ],
-    "generatedAt": "2026-09-12T18:16:03.808Z"
+    "breached": [],
+    "generatedAt": "2026-09-12T21:11:11.941Z"
   }
 }

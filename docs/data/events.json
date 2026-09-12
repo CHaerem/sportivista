@@ -4258,41 +4258,6 @@
   },
   {
     "sport": "football",
-    "tournament": "Eliteserien",
-    "title": "Rosenborg – Tromsø",
-    "time": "2026-09-12T16:00:00.000Z",
-    "endTime": null,
-    "venue": "Lerkendal Stadion",
-    "meta": "Eliteserien",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/rosenborg-troms-1834955",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/rosenborg-troms-1834955",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Rosenborg",
-    "awayTeam": "Tromsø",
-    "isFavorite": true,
-    "round": null,
-    "id": "0595d518a2a4",
-    "homeTeamEntityId": "rosenborg",
-    "awayTeamEntityId": "tromso"
-  },
-  {
-    "sport": "football",
     "tournament": "Serie A",
     "title": "Milan at Lazio",
     "time": "2026-09-12T16:00:00Z",
@@ -4399,66 +4364,6 @@
       "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
       "https://www.handball.no/nyheter/2026/06/elkjop-ligaen-202627-starter-26.-august"
     ]
-  },
-  {
-    "sport": "football",
-    "tournament": "Premier League",
-    "title": "Everton at Tottenham Hotspur",
-    "time": "2026-09-12T16:30:00.000Z",
-    "endTime": null,
-    "venue": "Tottenham Hotspur Stadium",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/tottenham-everton-1914757",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Tottenham Hotspur",
-    "awayTeam": "Everton",
-    "isFavorite": false,
-    "round": null,
-    "id": "944b40e031d5",
-    "homeTeamEntityId": "tottenham-hotspur",
-    "awayTeamEntityId": "everton"
-  },
-  {
-    "sport": "football",
-    "tournament": "La Liga",
-    "title": "Elche at Athletic Club",
-    "time": "2026-09-12T16:30:00.000Z",
-    "endTime": null,
-    "venue": "San Mamés",
-    "meta": "La Liga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Athletic Club",
-    "awayTeam": "Elche",
-    "isFavorite": false,
-    "round": null,
-    "id": "9e9e2ba216c6",
-    "homeTeamEntityId": "athletic-club",
-    "awayTeamEntityId": "elche"
   },
   {
     "sport": "football",
@@ -6699,6 +6604,58 @@
   },
   {
     "sport": "football",
+    "tournament": "Premier League",
+    "title": "Aston Villa at Tottenham Hotspur",
+    "time": "2026-09-19T11:30:00Z",
+    "endTime": null,
+    "venue": "Tottenham Hotspur Stadium",
+    "meta": "Premier League",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Tottenham Hotspur",
+    "awayTeam": "Aston Villa",
+    "isFavorite": false,
+    "round": "Matchweek 5",
+    "source": "ai-research",
+    "researchedAt": "2026-09-12T18:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-09-12T18:45:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-09-12T18:45:00Z"
+      }
+    },
+    "summary": "Premier League runde 5. Avspark 12.30 (lørdag). Vises på Viaplay i Norge.",
+    "homeTeamEntityId": "tottenham-hotspur",
+    "awayTeamEntityId": "aston-villa",
+    "id": "fff8ca2cb91d"
+  },
+  {
+    "sport": "football",
     "tournament": "Bundesliga",
     "title": "FC Augsburg at Werder Bremen",
     "time": "2026-09-19T13:30:00Z",
@@ -6899,6 +6856,162 @@
   },
   {
     "sport": "football",
+    "tournament": "Premier League",
+    "title": "Arsenal at Brighton & Hove Albion",
+    "time": "2026-09-19T14:00:00Z",
+    "endTime": null,
+    "venue": "American Express Stadium",
+    "meta": "Premier League",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Brighton & Hove Albion",
+    "awayTeam": "Arsenal",
+    "isFavorite": false,
+    "round": "Matchweek 5",
+    "source": "ai-research",
+    "researchedAt": "2026-09-12T18:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-09-12T18:45:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-09-12T18:45:00Z"
+      }
+    },
+    "summary": "Premier League runde 5 med katalog-klubben Arsenal. Avspark 15.00 (lørdag). Vises på Viaplay i Norge.",
+    "homeTeamEntityId": "brighton-hove-albion",
+    "awayTeamEntityId": "arsenal",
+    "id": "f5803e40cf42"
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Ipswich Town at Everton",
+    "time": "2026-09-19T14:00:00Z",
+    "endTime": null,
+    "venue": "Hill Dickinson Stadium",
+    "meta": "Premier League",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Everton",
+    "awayTeam": "Ipswich Town",
+    "isFavorite": false,
+    "round": "Matchweek 5",
+    "source": "ai-research",
+    "researchedAt": "2026-09-12T18:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-09-12T18:45:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-09-12T18:45:00Z"
+      }
+    },
+    "summary": "Premier League runde 5. Avspark 15.00 (lørdag). Vises på Viaplay i Norge.",
+    "homeTeamEntityId": "everton",
+    "awayTeamEntityId": "ipswich-town",
+    "id": "f6f5fc532a3f"
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Hull City at Newcastle United",
+    "time": "2026-09-19T14:00:00Z",
+    "endTime": null,
+    "venue": "St James' Park",
+    "meta": "Premier League",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Newcastle United",
+    "awayTeam": "Hull City",
+    "isFavorite": false,
+    "round": "Matchweek 5",
+    "source": "ai-research",
+    "researchedAt": "2026-09-12T18:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-09-12T18:45:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-09-12T18:45:00Z"
+      }
+    },
+    "summary": "Premier League runde 5. Avspark 15.00 (lørdag). Vises på Viaplay i Norge.",
+    "homeTeamEntityId": "newcastle-united",
+    "awayTeamEntityId": "hull-city",
+    "id": "838df3b635dc"
+  },
+  {
+    "sport": "football",
     "tournament": "Bundesliga",
     "title": "Borussia Dortmund at VfB Stuttgart",
     "time": "2026-09-19T16:30:00Z",
@@ -6948,6 +7061,58 @@
     "id": "6435f639393a"
   },
   {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Coventry City at Nottingham Forest",
+    "time": "2026-09-19T16:30:00Z",
+    "endTime": null,
+    "venue": "The City Ground",
+    "meta": "Premier League",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Nottingham Forest",
+    "awayTeam": "Coventry City",
+    "isFavorite": false,
+    "round": "Matchweek 5",
+    "source": "ai-research",
+    "researchedAt": "2026-09-12T18:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-09-12T18:45:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-09-12T18:45:00Z"
+      }
+    },
+    "summary": "Premier League runde 5. Avspark 17.30 (lørdag). Vises på Viaplay i Norge.",
+    "homeTeamEntityId": "nottingham-forest",
+    "awayTeamEntityId": "coventry-city",
+    "id": "d26f905ede7e"
+  },
+  {
     "sport": "cycling",
     "tournament": "UCI Road World Championships 2026",
     "title": "Elite kvinner tempo (ITT)",
@@ -6990,6 +7155,167 @@
     },
     "summary": "UCI Road-VM 2026 i Montréal, Canada (20.–27. sept). Åpningsdagen: elite kvinner tempo, 39,2 km rundt Montréal.\n\nNorsk visning: TV 2 Play (TV 2 Direkte + Play viser hele Sykkel-VM). Start 09:00 lokal tid (EDT). Eksakt starttid festes av verify mot arrangørens tidsskjema.",
     "id": "543a0f338baf"
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Liverpool at AFC Bournemouth",
+    "time": "2026-09-20T13:00:00Z",
+    "endTime": null,
+    "venue": "Vitality Stadium",
+    "meta": "Premier League",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "AFC Bournemouth",
+    "awayTeam": "Liverpool",
+    "isFavorite": false,
+    "round": "Matchweek 5",
+    "source": "ai-research",
+    "researchedAt": "2026-09-12T18:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-09-12T18:45:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-09-12T18:45:00Z"
+      }
+    },
+    "summary": "Premier League runde 5 med katalog-klubben Liverpool. Avspark 14.00 (søndag). Vises på Viaplay i Norge.",
+    "homeTeamEntityId": "afc-bournemouth",
+    "awayTeamEntityId": "liverpool",
+    "id": "40e448f2d5de"
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Crystal Palace at Leeds United",
+    "time": "2026-09-20T13:00:00Z",
+    "endTime": null,
+    "venue": "Elland Road",
+    "meta": "Premier League",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Leeds United",
+    "awayTeam": "Crystal Palace",
+    "isFavorite": false,
+    "round": "Matchweek 5",
+    "source": "ai-research",
+    "researchedAt": "2026-09-12T18:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-09-12T18:45:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-09-12T18:45:00Z"
+      }
+    },
+    "summary": "Premier League runde 5. Avspark 14.00 (søndag). Vises på Viaplay i Norge.",
+    "homeTeamEntityId": "leeds-united",
+    "awayTeamEntityId": "crystal-palace",
+    "id": "c9b80af5cae7"
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Sunderland at Manchester City",
+    "time": "2026-09-20T13:00:00Z",
+    "endTime": null,
+    "venue": "Etihad Stadium",
+    "meta": "Premier League",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [
+      {
+        "name": "Erling Haaland"
+      }
+    ],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Manchester City",
+    "awayTeam": "Sunderland",
+    "isFavorite": false,
+    "round": "Matchweek 5",
+    "source": "ai-research",
+    "researchedAt": "2026-09-12T18:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released",
+      "https://www.premierleague.com/en/news/4699026/manchester-city-v-sunderland-match-moved-to-a-new-date"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-09-12T18:45:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-09-12T18:45:00Z"
+      }
+    },
+    "summary": "Premier League runde 5 med katalog-klubben Manchester City (Erling Haaland).\n\nKampen ble flyttet fra lørdag 19. sep 15.00 til søndag 20. sep 14.00 fordi City spiller Ligacup-runde 3 torsdag 17. sep (bekreftet mot premierleague.com). Vises på Viaplay i Norge.",
+    "homeTeamEntityId": "manchester-city",
+    "awayTeamEntityId": "sunderland",
+    "id": "7c3aa0618bd8"
   },
   {
     "sport": "football",
@@ -7090,6 +7416,58 @@
     "homeTeamEntityId": "schalke-04",
     "awayTeamEntityId": "sv-elversberg",
     "id": "a858eba52dc9"
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Manchester United at Fulham",
+    "time": "2026-09-20T15:30:00Z",
+    "endTime": null,
+    "venue": "Craven Cottage",
+    "meta": "Premier League",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Fulham",
+    "awayTeam": "Manchester United",
+    "isFavorite": false,
+    "round": "Matchweek 5",
+    "source": "ai-research",
+    "researchedAt": "2026-09-12T18:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-09-12T18:45:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-09-12T18:45:00Z"
+      }
+    },
+    "summary": "Premier League runde 5. Avspark 16.30 (søndag). Vises på Viaplay i Norge.",
+    "homeTeamEntityId": "fulham",
+    "awayTeamEntityId": "manchester-united",
+    "id": "fa56adc17ceb"
   },
   {
     "sport": "cycling",
@@ -7685,451 +8063,5 @@
     "isFavorite": false,
     "round": null,
     "id": "df5379966a54"
-  },
-  {
-    "sport": "football",
-    "tournament": "Premier League",
-    "title": "Aston Villa at Tottenham Hotspur",
-    "time": "2026-09-19T11:30:00Z",
-    "endTime": null,
-    "venue": "Tottenham Hotspur Stadium",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Tottenham Hotspur",
-    "awayTeam": "Aston Villa",
-    "isFavorite": false,
-    "round": "Matchweek 5",
-    "source": "ai-research",
-    "researchedAt": "2026-09-12T18:45:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-      "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "premier-league",
-        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-        "basis": "primary",
-        "retrievedAt": "2026-09-12T18:45:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-12T18:45:00Z"
-      }
-    },
-    "summary": "Premier League runde 5. Avspark 12.30 (lørdag). Vises på Viaplay i Norge."
-  },
-  {
-    "sport": "football",
-    "tournament": "Premier League",
-    "title": "Arsenal at Brighton & Hove Albion",
-    "time": "2026-09-19T14:00:00Z",
-    "endTime": null,
-    "venue": "American Express Stadium",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Brighton & Hove Albion",
-    "awayTeam": "Arsenal",
-    "isFavorite": false,
-    "round": "Matchweek 5",
-    "source": "ai-research",
-    "researchedAt": "2026-09-12T18:45:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-      "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "premier-league",
-        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-        "basis": "primary",
-        "retrievedAt": "2026-09-12T18:45:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-12T18:45:00Z"
-      }
-    },
-    "summary": "Premier League runde 5 med katalog-klubben Arsenal. Avspark 15.00 (lørdag). Vises på Viaplay i Norge."
-  },
-  {
-    "sport": "football",
-    "tournament": "Premier League",
-    "title": "Ipswich Town at Everton",
-    "time": "2026-09-19T14:00:00Z",
-    "endTime": null,
-    "venue": "Hill Dickinson Stadium",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Everton",
-    "awayTeam": "Ipswich Town",
-    "isFavorite": false,
-    "round": "Matchweek 5",
-    "source": "ai-research",
-    "researchedAt": "2026-09-12T18:45:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-      "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "premier-league",
-        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-        "basis": "primary",
-        "retrievedAt": "2026-09-12T18:45:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-12T18:45:00Z"
-      }
-    },
-    "summary": "Premier League runde 5. Avspark 15.00 (lørdag). Vises på Viaplay i Norge."
-  },
-  {
-    "sport": "football",
-    "tournament": "Premier League",
-    "title": "Hull City at Newcastle United",
-    "time": "2026-09-19T14:00:00Z",
-    "endTime": null,
-    "venue": "St James' Park",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Newcastle United",
-    "awayTeam": "Hull City",
-    "isFavorite": false,
-    "round": "Matchweek 5",
-    "source": "ai-research",
-    "researchedAt": "2026-09-12T18:45:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-      "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "premier-league",
-        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-        "basis": "primary",
-        "retrievedAt": "2026-09-12T18:45:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-12T18:45:00Z"
-      }
-    },
-    "summary": "Premier League runde 5. Avspark 15.00 (lørdag). Vises på Viaplay i Norge."
-  },
-  {
-    "sport": "football",
-    "tournament": "Premier League",
-    "title": "Coventry City at Nottingham Forest",
-    "time": "2026-09-19T16:30:00Z",
-    "endTime": null,
-    "venue": "The City Ground",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Nottingham Forest",
-    "awayTeam": "Coventry City",
-    "isFavorite": false,
-    "round": "Matchweek 5",
-    "source": "ai-research",
-    "researchedAt": "2026-09-12T18:45:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-      "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "premier-league",
-        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-        "basis": "primary",
-        "retrievedAt": "2026-09-12T18:45:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-12T18:45:00Z"
-      }
-    },
-    "summary": "Premier League runde 5. Avspark 17.30 (lørdag). Vises på Viaplay i Norge."
-  },
-  {
-    "sport": "football",
-    "tournament": "Premier League",
-    "title": "Liverpool at AFC Bournemouth",
-    "time": "2026-09-20T13:00:00Z",
-    "endTime": null,
-    "venue": "Vitality Stadium",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "AFC Bournemouth",
-    "awayTeam": "Liverpool",
-    "isFavorite": false,
-    "round": "Matchweek 5",
-    "source": "ai-research",
-    "researchedAt": "2026-09-12T18:45:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-      "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "premier-league",
-        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-        "basis": "primary",
-        "retrievedAt": "2026-09-12T18:45:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-12T18:45:00Z"
-      }
-    },
-    "summary": "Premier League runde 5 med katalog-klubben Liverpool. Avspark 14.00 (søndag). Vises på Viaplay i Norge."
-  },
-  {
-    "sport": "football",
-    "tournament": "Premier League",
-    "title": "Crystal Palace at Leeds United",
-    "time": "2026-09-20T13:00:00Z",
-    "endTime": null,
-    "venue": "Elland Road",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Leeds United",
-    "awayTeam": "Crystal Palace",
-    "isFavorite": false,
-    "round": "Matchweek 5",
-    "source": "ai-research",
-    "researchedAt": "2026-09-12T18:45:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-      "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "premier-league",
-        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-        "basis": "primary",
-        "retrievedAt": "2026-09-12T18:45:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-12T18:45:00Z"
-      }
-    },
-    "summary": "Premier League runde 5. Avspark 14.00 (søndag). Vises på Viaplay i Norge."
-  },
-  {
-    "sport": "football",
-    "tournament": "Premier League",
-    "title": "Sunderland at Manchester City",
-    "time": "2026-09-20T13:00:00Z",
-    "endTime": null,
-    "venue": "Etihad Stadium",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [
-      {
-        "name": "Erling Haaland"
-      }
-    ],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Manchester City",
-    "awayTeam": "Sunderland",
-    "isFavorite": false,
-    "round": "Matchweek 5",
-    "source": "ai-research",
-    "researchedAt": "2026-09-12T18:45:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-      "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released",
-      "https://www.premierleague.com/en/news/4699026/manchester-city-v-sunderland-match-moved-to-a-new-date"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "premier-league",
-        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-        "basis": "primary",
-        "retrievedAt": "2026-09-12T18:45:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-12T18:45:00Z"
-      }
-    },
-    "summary": "Premier League runde 5 med katalog-klubben Manchester City (Erling Haaland).\n\nKampen ble flyttet fra lørdag 19. sep 15.00 til søndag 20. sep 14.00 fordi City spiller Ligacup-runde 3 torsdag 17. sep (bekreftet mot premierleague.com). Vises på Viaplay i Norge."
-  },
-  {
-    "sport": "football",
-    "tournament": "Premier League",
-    "title": "Manchester United at Fulham",
-    "time": "2026-09-20T15:30:00Z",
-    "endTime": null,
-    "venue": "Craven Cottage",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Fulham",
-    "awayTeam": "Manchester United",
-    "isFavorite": false,
-    "round": "Matchweek 5",
-    "source": "ai-research",
-    "researchedAt": "2026-09-12T18:45:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-      "https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "premier-league",
-        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-        "basis": "primary",
-        "retrievedAt": "2026-09-12T18:45:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-12T18:45:00Z"
-      }
-    },
-    "summary": "Premier League runde 5. Avspark 16.30 (søndag). Vises på Viaplay i Norge."
   }
 ]

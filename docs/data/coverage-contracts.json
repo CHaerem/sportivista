@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T18:16:03.808Z",
+  "generatedAt": "2026-09-12T21:11:11.941Z",
   "contracts": [
     {
       "id": "f1:world-championship",
@@ -68,8 +68,8 @@
       ],
       "note": "Ukentlige runder (10 kamper) august–mai; 14 d + min 6 tåler landslagspauser og cuphelger.",
       "inSeason": true,
-      "upcoming": 5,
-      "status": "breached"
+      "upcoming": 13,
+      "status": "met"
     },
     {
       "id": "golf:dp-world-tour",
@@ -147,8 +147,6 @@
       "status": "met"
     }
   ],
-  "breached": [
-    "football:premier-league"
-  ],
+  "breached": [],
   "note": "WP-243: dekningskontrakten per konkurranse — mekanisk måling av løftet i authority.json (contract-blokkene) mot tavla. Brudd triageres av coverage-critic/research via coverage-gaps.json; contracts-porten i port-report.json ruller dommen inn i G2-målingen."
 }
