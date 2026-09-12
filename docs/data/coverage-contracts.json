@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T15:59:53.256Z",
+  "generatedAt": "2026-09-12T18:16:03.808Z",
   "contracts": [
     {
       "id": "f1:world-championship",
@@ -44,7 +44,7 @@
       ],
       "note": "Ukentlige runder (8 kamper) april–november. horizonDays 14 spenner landslagspausen (~10 d) så neste runde LIGGER i horisonten når den fylles. minUpcoming SENKET 4→2 (improve, 07.09.2026): ESPN nor.1-fetcheren fyller kun ~5–6 dager fram om gangen, så under en landslagspause er neste rundes fjerne halvdel (7–9 d ut) ennå ikke boardet, og et krav om nesten-hel runde (4) innen horisonten er uoppfyllelig gjennom pausevinduet. Det ga et falskt HIGH-brudd hele landslagspause-helgen (8 brudd på 05.–06.09, upcoming 2–3) som to agenter uavhengig triagerte som falskpositivt — akkurat den agent-triage/G2-støyen schemaet ber oss unngå med KONSERVATIVE tall. 2 beviser fortsatt at ligaen LEVER på tavla og en død fetcher (upcoming 0–1) bryter fremdeles; completeness (hel runde boardet) er coverage-critic/coverage-gaps' jobb, ikke kontraktens.",
       "inSeason": true,
-      "upcoming": 8,
+      "upcoming": 7,
       "status": "met"
     },
     {
@@ -68,8 +68,8 @@
       ],
       "note": "Ukentlige runder (10 kamper) august–mai; 14 d + min 6 tåler landslagspauser og cuphelger.",
       "inSeason": true,
-      "upcoming": 6,
-      "status": "met"
+      "upcoming": 5,
+      "status": "breached"
     },
     {
       "id": "golf:dp-world-tour",
@@ -147,6 +147,8 @@
       "status": "met"
     }
   ],
-  "breached": [],
+  "breached": [
+    "football:premier-league"
+  ],
   "note": "WP-243: dekningskontrakten per konkurranse — mekanisk måling av løftet i authority.json (contract-blokkene) mot tavla. Brudd triageres av coverage-critic/research via coverage-gaps.json; contracts-porten i port-report.json ruller dommen inn i G2-målingen."
 }
