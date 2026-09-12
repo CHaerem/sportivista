@@ -4477,66 +4477,6 @@
   },
   {
     "sport": "football",
-    "tournament": "Premier League",
-    "title": "Arsenal at Sunderland",
-    "time": "2026-09-12T19:00:00.000Z",
-    "endTime": null,
-    "venue": "Stadium of Light",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/sunderland-arsenal-1914756",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Sunderland",
-    "awayTeam": "Arsenal",
-    "isFavorite": true,
-    "round": null,
-    "id": "7d5800a019cd",
-    "homeTeamEntityId": "sunderland",
-    "awayTeamEntityId": "arsenal"
-  },
-  {
-    "sport": "football",
-    "tournament": "La Liga",
-    "title": "Rayo Vallecano at Real Madrid",
-    "time": "2026-09-12T19:00:00.000Z",
-    "endTime": null,
-    "venue": "Santiago Bernabéu",
-    "meta": "La Liga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/real-madrid-rayo-vallecano-1922606",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Real Madrid",
-    "awayTeam": "Rayo Vallecano",
-    "isFavorite": true,
-    "round": null,
-    "id": "fe7c6e39bdf3",
-    "homeTeamEntityId": "real-madrid",
-    "awayTeamEntityId": "rayo-vallecano"
-  },
-  {
-    "sport": "football",
     "tournament": "La Liga",
     "title": "Málaga at Celta Vigo",
     "time": "2026-09-13T12:00:00.000Z",
@@ -5878,6 +5818,55 @@
     "id": "14c6e9047e88",
     "homeTeamEntityId": "deportivo-la-coruna",
     "awayTeamEntityId": "sevilla"
+  },
+  {
+    "sport": "handball",
+    "tournament": "EHF Champions League 2026/27 (gruppespill)",
+    "title": "Kolstad – Industria Kielce",
+    "time": "2026-09-16T18:45:00Z",
+    "endTime": null,
+    "venue": "Trondheim Spektrum",
+    "norwegian": true,
+    "homeTeam": "Kolstad",
+    "awayTeam": "Industria Kielce",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Sport 2 / TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-12T22:25:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "catalog.json#tier2.tournaments",
+      "https://ehfcl.eurohandball.com/men/2026-27/clubs/details/kZVHhs7nxEhEqyCf6iK_Sw/KolstadH%C3%A5ndball/",
+      "https://www.kolstad-handball.no/2025/09/09/kampdatoer-champions-league-2025-2026/",
+      "https://www.handball-world.news/artikel/mit-magdeburg-kielce-und-kolstad-veroeffentlichen-cl-termine-1236177"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "handballforbundet",
+        "url": "https://ehfcl.eurohandball.com/men/2026-27/clubs/details/kZVHhs7nxEhEqyCf6iK_Sw/KolstadH%C3%A5ndball/",
+        "basis": "primary",
+        "retrievedAt": "2026-09-12T22:25:00Z",
+        "note": "EHFs egen Kolstad-klubbside (arrangør) lister MD2 ons. 16. sep 20.45 CEST (18.45 UTC), hjemme mot Industria Kielce i Trondheim Spektrum. Uavhengig write-time fact-check bekreftet dag/dato (ons. 16., IKKE tor. 17.) + tid mot EHF + Kolstad-klubbside + TV 2 sendeskjema (20.30 studio, 20.45 avkast)."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-09-12T22:25:00Z",
+        "note": "TV 2 sendeskjema lister kampen på TV 2 Sport 2 / TV 2 Play. (TV 2 + Viaplay deler EHF CL-rettighetene i Norge, men denne konkrete kampen står på TV 2 Sport 2 — «+Viaplay» ikke bekreftet for kampen, utelatt.)"
+      }
+    },
+    "summary": "Kolstad spiller sin andre Champions League-kamp i gruppe F — hjemme mot polske Industria Kielce i Trondheim Spektrum.\n\nGruppe F: SC Magdeburg, Industria Kielce, Kolstad og HC Kriens-Luzern. Kolstad åpnet borte mot Magdeburg 9. sep.\n\nAvkast onsdag 16. september kl. 20.45 CEST (18.45 UTC). Norsk visning: TV 2 Sport 2 / TV 2 Play.",
+    "homeTeamEntityId": "kolstad-handball",
+    "id": "6a12a7819480"
   },
   {
     "sport": "football",
@@ -7470,6 +7459,53 @@
     "id": "fa56adc17ceb"
   },
   {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Fjellhammer – Kolstad",
+    "time": "2026-09-20T15:50:00Z",
+    "endTime": null,
+    "venue": "Fjellhamar Arena, Lørenskog",
+    "norwegian": true,
+    "homeTeam": "Fjellhammer",
+    "awayTeam": "Kolstad",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-12T22:25:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+      "https://globalsportsarchive.com/team/handball/kolstad-handball/47838/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://info.tv2.no/info/artikkel/sendeskjema",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-12T22:25:00Z",
+        "note": "Kolstads neste Elkjøp-ligaen-kamp (borte mot Fjellhammer) — dato søn. 20. sep bekreftet av tre kampprogram-aggregatorer + TV 2 sendeskjema. Tid 17.50 CEST (15.50 UTC) fra TV 2 sendeskjema + søketreff (to kilder). handball.no-terminlisten renderte ikke → basis secondary; verify fester eksakt avkast mot handball.no."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+        "basis": "official",
+        "retrievedAt": "2026-09-12T22:25:00Z",
+        "note": "TV 2 eier Elkjøp-ligaen; alle kamper på TV 2 Play. Bekreftet mot TV 2 sendeskjema."
+      }
+    },
+    "summary": "Elkjøp-ligaen 2026/27. Kolstad (katalog-klubb) borte mot Fjellhammer i Fjellhamar Arena.\n\nAvkast søndag 20. september kl. 17.50 CEST (15.50 UTC). Norsk visning: TV 2 Play.\n\nKolstads neste seriekamp — dekker klubben som fulgt katalog-lag (Sagosen spiller ikke lenger for Kolstad, så ingen norsk stjerne navngitt).",
+    "awayTeamEntityId": "kolstad-handball",
+    "id": "c6562b6504a9"
+  },
+  {
     "sport": "cycling",
     "tournament": "UCI Road World Championships 2026",
     "title": "Elite menn tempo (ITT)",
@@ -8063,101 +8099,5 @@
     "isFavorite": false,
     "round": null,
     "id": "df5379966a54"
-  },
-  {
-    "sport": "handball",
-    "tournament": "EHF Champions League 2026/27 (gruppespill)",
-    "title": "Kolstad – Industria Kielce",
-    "time": "2026-09-16T18:45:00Z",
-    "endTime": null,
-    "venue": "Trondheim Spektrum",
-    "norwegian": true,
-    "homeTeam": "Kolstad",
-    "awayTeam": "Industria Kielce",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Sport 2 / TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-12T22:25:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "catalog.json#tier2.tournaments",
-      "https://ehfcl.eurohandball.com/men/2026-27/clubs/details/kZVHhs7nxEhEqyCf6iK_Sw/KolstadH%C3%A5ndball/",
-      "https://www.kolstad-handball.no/2025/09/09/kampdatoer-champions-league-2025-2026/",
-      "https://www.handball-world.news/artikel/mit-magdeburg-kielce-und-kolstad-veroeffentlichen-cl-termine-1236177"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "handballforbundet",
-        "url": "https://ehfcl.eurohandball.com/men/2026-27/clubs/details/kZVHhs7nxEhEqyCf6iK_Sw/KolstadH%C3%A5ndball/",
-        "basis": "primary",
-        "retrievedAt": "2026-09-12T22:25:00Z",
-        "note": "EHFs egen Kolstad-klubbside (arrangør) lister MD2 ons. 16. sep 20.45 CEST (18.45 UTC), hjemme mot Industria Kielce i Trondheim Spektrum. Uavhengig write-time fact-check bekreftet dag/dato (ons. 16., IKKE tor. 17.) + tid mot EHF + Kolstad-klubbside + TV 2 sendeskjema (20.30 studio, 20.45 avkast)."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball",
-        "basis": "official",
-        "retrievedAt": "2026-09-12T22:25:00Z",
-        "note": "TV 2 sendeskjema lister kampen på TV 2 Sport 2 / TV 2 Play. (TV 2 + Viaplay deler EHF CL-rettighetene i Norge, men denne konkrete kampen står på TV 2 Sport 2 — «+Viaplay» ikke bekreftet for kampen, utelatt.)"
-      }
-    },
-    "summary": "Kolstad spiller sin andre Champions League-kamp i gruppe F — hjemme mot polske Industria Kielce i Trondheim Spektrum.\n\nGruppe F: SC Magdeburg, Industria Kielce, Kolstad og HC Kriens-Luzern. Kolstad åpnet borte mot Magdeburg 9. sep.\n\nAvkast onsdag 16. september kl. 20.45 CEST (18.45 UTC). Norsk visning: TV 2 Sport 2 / TV 2 Play.",
-    "homeTeamEntityId": "kolstad-handball",
-    "id": "b3d1e07f4a92"
-  },
-  {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen 2026/27",
-    "title": "Fjellhammer – Kolstad",
-    "time": "2026-09-20T15:50:00Z",
-    "endTime": null,
-    "venue": "Fjellhamar Arena, Lørenskog",
-    "norwegian": true,
-    "homeTeam": "Fjellhammer",
-    "awayTeam": "Kolstad",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-12T22:25:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-      "https://globalsportsarchive.com/team/handball/kolstad-handball/47838/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "tv2",
-        "url": "https://info.tv2.no/info/artikkel/sendeskjema",
-        "basis": "secondary",
-        "retrievedAt": "2026-09-12T22:25:00Z",
-        "note": "Kolstads neste Elkjøp-ligaen-kamp (borte mot Fjellhammer) — dato søn. 20. sep bekreftet av tre kampprogram-aggregatorer + TV 2 sendeskjema. Tid 17.50 CEST (15.50 UTC) fra TV 2 sendeskjema + søketreff (to kilder). handball.no-terminlisten renderte ikke → basis secondary; verify fester eksakt avkast mot handball.no."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "basis": "official",
-        "retrievedAt": "2026-09-12T22:25:00Z",
-        "note": "TV 2 eier Elkjøp-ligaen; alle kamper på TV 2 Play. Bekreftet mot TV 2 sendeskjema."
-      }
-    },
-    "summary": "Elkjøp-ligaen 2026/27. Kolstad (katalog-klubb) borte mot Fjellhammer i Fjellhamar Arena.\n\nAvkast søndag 20. september kl. 17.50 CEST (15.50 UTC). Norsk visning: TV 2 Play.\n\nKolstads neste seriekamp — dekker klubben som fulgt katalog-lag (Sagosen spiller ikke lenger for Kolstad, så ingen norsk stjerne navngitt).",
-    "awayTeamEntityId": "kolstad-handball",
-    "id": "c4f2a9016b83"
   }
 ]
