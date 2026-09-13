@@ -194,225 +194,6 @@
     ]
   },
   {
-    "sport": "cycling",
-    "tournament": "Bretagne Classic",
-    "title": "Bretagne Classic",
-    "time": "2026-08-30T09:45:00Z",
-    "endTime": "2026-08-30T15:15:00Z",
-    "venue": "Plouay (Morbihan, Frankrike)",
-    "norwegian": false,
-    "participants": [
-      {
-        "name": "Uno-X Mobility"
-      }
-    ],
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "HBO Max (Sport)",
-        "url": "https://www.hbomax.com/no/no/sports/cycling",
-        "urlKind": "landing"
-      },
-      {
-        "platform": "Eurosport Norge",
-        "url": "https://www.hbomax.com/no/no/sports/cycling",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-23T02:15:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "https://procyclinguk.com/mens-bretagne-classic-2026-route-guide-ty-marrec-returns-for-a-shorter-but-explosive-plouay-finale/",
-      "https://www.hbomax.com/no/no/sports/cycling",
-      "https://www.unoxteam.com/news/our-race-calendar-for-2026",
-      "https://www.procyclingstats.com/race/bretagne-classic/2026"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "procyclingstats",
-        "url": "https://www.procyclingstats.com/race/bretagne-classic/2026",
-        "basis": "secondary",
-        "retrievedAt": "2026-08-23T02:15:00Z",
-        "note": "Start 11.45 CEST (09.45 UTC) bekreftet mot ProCyclingUK (PCS-avledet ruteguide) + cyclingoo, to uavhengige sjekker enige; PCS-siden ga 403 ved direkte henting og arrangørens horaires ikke nådd → basis secondary, medium."
-      },
-      "streaming": {
-        "sourceId": "hbo-max",
-        "url": "https://www.hbomax.com/no/no/sports/cycling",
-        "basis": "official",
-        "retrievedAt": "2026-08-23T02:15:00Z",
-        "note": "HBO Max Norge (Sport) lister løpet 30. aug (sending fra 13.10 CEST, mid-race pick-up); WBD holder norsk WorldTour-sykkel 2026."
-      }
-    },
-    "summary": "Bretagne Classic – Ouest-France (Plouay, Morbihan) er en av høstens UCI WorldTour-endagsklassikere — kupert, teknisk og punchy, med avsluttende runder på Plouay-kretsen.\n\nUno-X Mobility stiller (bekreftet på lagets egen 2026-kalender); norske ryttere i troppen er ikke navngitt ennå (startlista slippes tettere på løpet).\n\nStart søndag 30. august kl. 11.45 CEST (09.45 UTC), ventet mål rundt 17.00 CEST. Norsk visning HBO Max (Sport)/Eurosport (sending fra 13.10 CEST).",
-    "id": "753bea0a4e34",
-    "verifiedAt": "2026-08-27T05:45:00Z",
-    "verificationStatus": "amended",
-    "verificationSources": [
-      "https://www.cyclingnews.com/pro-cycling/races/bretagne-classic-ouest-france-2026/",
-      "https://www.procyclingstats.com/race/bretagne-classic/2026/startlist",
-      ".claude/skills/norwegian-rights (Cycling: WBD/Eurosport Norge = HBO Max)"
-    ]
-  },
-  {
-    "sport": "football",
-    "tournament": "OBOS-ligaen",
-    "title": "Kongsvinger – Lyn",
-    "time": "2026-08-30T15:00:00Z",
-    "endTime": null,
-    "venue": "Gjemselund stadion, Kongsvinger",
-    "norwegian": true,
-    "homeTeam": "Kongsvinger",
-    "awayTeam": "Lyn",
-    "awayTeamEntityId": "fk-lyn-oslo",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-07-17T04:00:00Z",
-    "confidence": "high",
-    "evidence": [
-      "interests.json#alwaysTrack.teams",
-      "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
-      "https://www.fotball.no/fotballdata/turnering/hjem/?fiksId=206093",
-      "https://www.obos-ligaen.no/terminliste"
-    ],
-    "summary": "Lyns bortekamp mot Kongsvinger søndag 30. august kl. 17.00 på Gjemselund (OBOS-ligaen). Avsparkstid nå berammet – dato/tid/arena bekreftet 17. juli mot obos-ligaen.no + fotball.no + FotMob (tre kilder enige). TV-valg kan fortsatt flytte avspark 30–60 min; verify følger. Norsk visning TV 2 Play.",
-    "id": "79642cacdcbf",
-    "provenance": {
-      "time": {
-        "sourceId": "fotball-no",
-        "url": "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
-        "basis": "primary",
-        "retrievedAt": "2026-07-17T04:00:00Z",
-        "note": "migrert mekanisk fra evidence (WP-242)"
-      }
-    },
-    "verifiedAt": "2026-08-29T11:50:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.lyn1896.no/nyheter/kampen-mot-kongsvinger-spilles-som-planlagt-sondag",
-      "https://www.soccerway.com/norway/obos-ligaen/"
-    ]
-  },
-  {
-    "sport": "football",
-    "tournament": "Bundesliga",
-    "title": "Schalke 04 at FC Augsburg",
-    "time": "2026-08-30T15:30:00Z",
-    "endTime": null,
-    "venue": "WWK Arena, Augsburg",
-    "norwegian": false,
-    "homeTeam": "FC Augsburg",
-    "awayTeam": "Schalke 04",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-11T05:30:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/1",
-      "https://www.bundesliga.com/en/bundesliga/news/confirmed-kick-off-times-dates-2026-27-fixtures-23955",
-      "https://www.tvkampen.com/page/tv-rettigheter-norge",
-      "https://presse.viaplaygroup.no/post/nent-group-forlenger-bundesliga-rettigheter-til-2029"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "bundesliga-dfl",
-        "url": "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/1",
-        "basis": "primary",
-        "retrievedAt": "2026-08-11T05:30:00Z",
-        "note": "DFL/bundesliga.com offisielle kampdags-feed; tider låst i uke 29 (13.–17. juli)"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://presse.viaplaygroup.no/post/nent-group-forlenger-bundesliga-rettigheter-til-2029",
-        "basis": "official",
-        "retrievedAt": "2026-08-11T05:30:00Z",
-        "note": "Viaplay Groups egen pressemelding: Bundesliga-rettighetene forlenget t.o.m. 2029"
-      }
-    },
-    "summary": "Bundesliga 2026/27 starter (sen start pga. VM 2026): 1. Spieltag 28.–30. august. FC Augsburg–Schalke 04. Avspark 15:30 UTC.\n\nNorsk visning: Viaplay (har Bundesliga-rettighetene i Norge t.o.m. 2029; enkeltkamper også via TV 2 Play «Mer fotball»). Tider bekreftet mot DFLs egen kampdags-feed (bundesliga.com).",
-    "id": "f6a8d74aed80",
-    "verifiedAt": "2026-08-24T05:59:38Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.bundesliga.com/en/bundesliga/matchday",
-      "https://ran.joyn.de/sports/fussball/bundesliga/spielplan"
-    ],
-    "homeTeamEntityId": "fc-augsburg",
-    "awayTeamEntityId": "schalke-04"
-  },
-  {
-    "sport": "football",
-    "tournament": "Serie A",
-    "title": "Como at Napoli",
-    "time": "2026-08-30T16:30:00Z",
-    "endTime": null,
-    "venue": "Stadio Diego Armando Maradona, Napoli",
-    "norwegian": false,
-    "homeTeam": "Napoli",
-    "awayTeam": "Como",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://tv.vg.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-29T13:55:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
-      "https://sport.quotidiano.net/calcio/seriea/serie-a-seconda-giornata-probabili-formazioni-orari-e-dove-vedere-le-gare-4a0eea38",
-      "https://www.tvkampen.com/sport/fotball/serie-a-2026-27-pa-norsk-tv-inter-forsvarer-tronen-rivalene-star-i-ko/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "lega-serie-a",
-        "url": "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
-        "basis": "primary",
-        "retrievedAt": "2026-08-29T13:55:00Z",
-        "note": "Lega Serie A offisielle kalender for 2. giornata, gjengitt av Sky Sport Italia + Quotidiano Sportivo (to uavhengige kilder enige)"
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://tv.vg.no",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T13:55:00Z",
-        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27 (VGs egen kunngjøring; tvkampen.com/tvtilbud.no bekrefter)"
-      }
-    },
-    "summary": "Serie A 2. serierunde: Napoli–Como. Avspark søndag 30. august 18:30 CEST (16:30 UTC) på Stadio Maradona.\n\nNorsk visning: VG+ Sport, som har de norske Serie A-rettighetene 2026/27.",
-    "homeTeamEntityId": "napoli",
-    "awayTeamEntityId": "como",
-    "id": "92ec47c5c82a",
-    "verifiedAt": "2026-08-30T10:38:00Z",
-    "verificationStatus": "amended",
-    "verificationSources": [
-      "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
-      "https://sport.quotidiano.net/calcio/seriea/serie-a-seconda-giornata-probabili-formazioni-orari-e-dove-vedere-le-gare-4a0eea38"
-    ]
-  },
-  {
     "sport": "football",
     "tournament": "Serie A",
     "title": "Inter at Cagliari",
@@ -4421,196 +4202,6 @@
   },
   {
     "sport": "football",
-    "tournament": "La Liga",
-    "title": "Málaga at Celta Vigo",
-    "time": "2026-09-13T12:00:00.000Z",
-    "endTime": null,
-    "venue": "Balaidos",
-    "meta": "La Liga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Celta Vigo",
-    "awayTeam": "Málaga",
-    "isFavorite": false,
-    "round": null,
-    "id": "73b063857276",
-    "homeTeamEntityId": "celta-vigo",
-    "awayTeamEntityId": "malaga"
-  },
-  {
-    "sport": "football",
-    "tournament": "Eliteserien",
-    "title": "Viking – Kristiansund",
-    "time": "2026-09-13T12:30:00.000Z",
-    "endTime": null,
-    "venue": "Viking Stadion",
-    "meta": "Eliteserien",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/viking-kristiansund-1834957",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/viking-kristiansund-1834957",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Viking",
-    "awayTeam": "Kristiansund",
-    "isFavorite": false,
-    "round": null,
-    "id": "3099ae70a2b0",
-    "homeTeamEntityId": "viking-fk",
-    "awayTeamEntityId": "kristiansund-bk"
-  },
-  {
-    "sport": "f1",
-    "tournament": "Formula 1 2026 - Race Weekend",
-    "title": "Tag Heuer Spanish Grand Prix",
-    "time": "2026-09-13T13:00:00.000Z",
-    "endTime": null,
-    "venue": "TBD",
-    "meta": "Formula 1 2026 - Race Weekend",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [
-      {
-        "name": "George Russell"
-      },
-      {
-        "name": "Kimi Antonelli"
-      },
-      {
-        "name": "Charles Leclerc"
-      },
-      {
-        "name": "Lewis Hamilton"
-      },
-      {
-        "name": "Max Verstappen"
-      },
-      {
-        "name": "Lando Norris"
-      },
-      {
-        "name": "Arvid Lindblad"
-      },
-      {
-        "name": "Oscar Piastri"
-      },
-      {
-        "name": "Nico Hülkenberg"
-      },
-      {
-        "name": "Liam Lawson"
-      },
-      {
-        "name": "Gabriel Bortoleto"
-      },
-      {
-        "name": "Esteban Ocon"
-      },
-      {
-        "name": "Franco Colapinto"
-      },
-      {
-        "name": "Pierre Gasly"
-      },
-      {
-        "name": "Fernando Alonso"
-      },
-      {
-        "name": "Oliver Bearman"
-      },
-      {
-        "name": "Carlos Sainz"
-      },
-      {
-        "name": "Yuki Tsunoda"
-      },
-      {
-        "name": "Lance Stroll"
-      },
-      {
-        "name": "Alexander Albon"
-      },
-      {
-        "name": "Sergio Pérez"
-      },
-      {
-        "name": "Valtteri Bottas"
-      }
-    ],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": null,
-    "awayTeam": null,
-    "isFavorite": false,
-    "round": null,
-    "id": "66d4de2b2dff"
-  },
-  {
-    "sport": "football",
-    "tournament": "Premier League",
-    "title": "Brighton & Hove Albion at Coventry City",
-    "time": "2026-09-13T13:00:00.000Z",
-    "endTime": null,
-    "venue": "Coventry Building Society Arena",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/coventry-brighton-1914751",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Coventry City",
-    "awayTeam": "Brighton & Hove Albion",
-    "isFavorite": false,
-    "round": null,
-    "id": "7dabf74d0581",
-    "homeTeamEntityId": "coventry-city",
-    "awayTeamEntityId": "brighton-hove-albion"
-  },
-  {
-    "sport": "football",
     "tournament": "Serie A",
     "title": "Monza at Lecce",
     "time": "2026-09-13T13:00:00Z",
@@ -4773,36 +4364,6 @@
   },
   {
     "sport": "football",
-    "tournament": "La Liga",
-    "title": "Barcelona at Levante",
-    "time": "2026-09-13T14:15:00.000Z",
-    "endTime": null,
-    "venue": "Estadi Ciutat de València",
-    "meta": "La Liga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/levante-barcelona-1922603",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Levante",
-    "awayTeam": "Barcelona",
-    "isFavorite": true,
-    "round": null,
-    "id": "46c737aade3a",
-    "homeTeamEntityId": "levante",
-    "awayTeamEntityId": "barcelona"
-  },
-  {
-    "sport": "football",
     "tournament": "Eliteserien",
     "title": "HamKam – Molde",
     "time": "2026-09-13T15:00:00.000Z",
@@ -4813,13 +4374,8 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/hamkam-molde-1834952",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/hamkam-molde-1834952",
-        "urlKind": "deep"
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -4848,13 +4404,8 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/start-brann-1834956",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/start-brann-1834956",
-        "urlKind": "deep"
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -4883,13 +4434,8 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/kfum-oslo-aalesund-1834953",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/kfum-oslo-aalesund-1834953",
-        "urlKind": "deep"
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -5020,9 +4566,9 @@
     "norwegian": false,
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/manchester-united-manchester-city-1914755",
-        "urlKind": "deep"
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -6632,6 +6178,36 @@
   },
   {
     "sport": "football",
+    "tournament": "La Liga",
+    "title": "Rayo Vallecano at Osasuna",
+    "time": "2026-09-19T12:00:00.000Z",
+    "endTime": null,
+    "venue": "El Sadar",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Osasuna",
+    "awayTeam": "Rayo Vallecano",
+    "isFavorite": false,
+    "round": null,
+    "id": "7ef03e6e5abf",
+    "homeTeamEntityId": "osasuna",
+    "awayTeamEntityId": "rayo-vallecano"
+  },
+  {
+    "sport": "football",
     "tournament": "Bundesliga",
     "title": "FC Augsburg at Werder Bremen",
     "time": "2026-09-19T13:30:00Z",
@@ -6955,6 +6531,36 @@
   },
   {
     "sport": "football",
+    "tournament": "La Liga",
+    "title": "Alavés at Athletic Club",
+    "time": "2026-09-19T14:15:00.000Z",
+    "endTime": null,
+    "venue": "San Mamés",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Athletic Club",
+    "awayTeam": "Alavés",
+    "isFavorite": false,
+    "round": null,
+    "id": "813140ff4772",
+    "homeTeamEntityId": "athletic-club",
+    "awayTeamEntityId": "alaves"
+  },
+  {
+    "sport": "football",
     "tournament": "Eliteserien",
     "title": "Molde – Aalesund",
     "time": "2026-09-19T16:00:00.000Z",
@@ -7016,6 +6622,36 @@
   },
   {
     "sport": "football",
+    "tournament": "La Liga",
+    "title": "Racing Santander at Celta Vigo",
+    "time": "2026-09-19T16:30:00.000Z",
+    "endTime": null,
+    "venue": "Balaidos",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Celta Vigo",
+    "awayTeam": "Racing Santander",
+    "isFavorite": false,
+    "round": null,
+    "id": "2fe6dbcc0d17",
+    "homeTeamEntityId": "celta-vigo",
+    "awayTeamEntityId": "racing-santander"
+  },
+  {
+    "sport": "football",
     "tournament": "Bundesliga",
     "title": "Borussia Dortmund at VfB Stuttgart",
     "time": "2026-09-19T16:30:00Z",
@@ -7063,6 +6699,36 @@
     "homeTeamEntityId": "vfb-stuttgart",
     "awayTeamEntityId": "borussia-dortmund",
     "id": "6435f639393a"
+  },
+  {
+    "sport": "football",
+    "tournament": "La Liga",
+    "title": "Barcelona at Sevilla",
+    "time": "2026-09-19T19:00:00.000Z",
+    "endTime": null,
+    "venue": "Ramón Sánchez Pizjuán Stadium",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Sevilla",
+    "awayTeam": "Barcelona",
+    "isFavorite": true,
+    "round": null,
+    "id": "93f0faab850b",
+    "homeTeamEntityId": "sevilla",
+    "awayTeamEntityId": "barcelona"
   },
   {
     "sport": "cycling",
