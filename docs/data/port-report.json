@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T09:59:45.000Z",
+  "generatedAt": "2026-09-13T14:07:08.376Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -27,7 +27,7 @@
       "medium": 3,
       "low": 0
     },
-    "oldestGapAgeDays": 12.98,
+    "oldestGapAgeDays": 13.15,
     "escalatable": 1,
     "catalogMatched": 3,
     "auditedAt": "2026-09-13T08:20:00Z",
@@ -35,21 +35,21 @@
       {
         "interest": "F1 — Singapore Grand Prix (løp søn. 11. okt, race Round 17)",
         "severity": "medium",
-        "ageDays": 0.07,
+        "ageDays": 0.24,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Sykkel — Il Lombardia (lør. 10. okt, sesongens 5. og siste Monument)",
         "severity": "medium",
-        "ageDays": 0.07,
+        "ageDays": 0.24,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — Elkjøp-ligaen (menn + kvinner) NESTE serierunde (~19.–20. sep) utover det som er boardet",
         "severity": "medium",
-        "ageDays": 12.98,
+        "ageDays": 13.15,
         "recurrences": 13,
         "catalogMatched": true
       }
@@ -59,19 +59,12 @@
     "nearTermRate": 0,
     "nearTermChecked": 10,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-09-12T09:31:03Z",
+    "verifyRunAt": "2026-09-13T10:27:45Z",
     "windowRate": 0,
-    "windowChecks": 103,
+    "windowChecks": 107,
     "windowAmendments": 0,
-    "windowCorrections": 3,
+    "windowCorrections": 4,
     "byDay": [
-      {
-        "date": "2026-08-30",
-        "checks": 6,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-08-31",
         "checks": 4,
@@ -155,26 +148,33 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-09-13",
+        "checks": 10,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-13T09:59:39.751Z",
+    "buildCheckedAt": "2026-09-13T14:07:06.420Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-13T07:52:43.892Z",
-    "manifestAgeHours": 2.12,
+    "manifestGeneratedAt": "2026-09-13T09:59:46.675Z",
+    "manifestAgeHours": 4.12,
     "staleFiles": [
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-09-06T16:41:15.881Z",
-        "ageHours": 161.31
+        "ageHours": 165.43
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-09-12T09:31:03Z",
-    "verifyAgeHours": 24.48,
+    "checkedAt": "2026-09-13T10:27:45Z",
+    "verifyAgeHours": 3.66,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -183,6 +183,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-13T09:59:45.000Z"
+    "generatedAt": "2026-09-13T14:07:08.375Z"
   }
 }

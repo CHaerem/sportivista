@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-13T09:59:46.535Z",
+  "generatedAt": "2026-09-13T14:07:10.617Z",
   "windowDays": 180,
   "records": {
-    "used": 424,
+    "used": 434,
     "skipped": 9
   },
   "sources": {
@@ -76,9 +76,9 @@
       "reliability": 0.53
     },
     "tvkampen.com": {
-      "checks": 3,
-      "agreed": 2,
-      "corrections": 0,
+      "checks": 4,
+      "agreed": 3,
+      "corrections": 1,
       "bySport": {
         "cycling": {
           "checks": 1,
@@ -87,15 +87,19 @@
         "football": {
           "checks": 2,
           "agreed": 2
+        },
+        "tennis": {
+          "checks": 1,
+          "agreed": 1
         }
       },
       "byField": {
         "streaming": {
-          "checks": 3,
-          "agreed": 2
+          "checks": 4,
+          "agreed": 3
         }
       },
-      "lastChecked": "2026-07-27T09:00:00Z",
+      "lastChecked": "2026-09-13T10:28:07Z",
       "reliability": null
     },
     "m24.no (ntb)": {
@@ -118,19 +122,19 @@
       "reliability": null
     },
     "europeantour.com": {
-      "checks": 6,
-      "agreed": 6,
+      "checks": 7,
+      "agreed": 7,
       "corrections": 0,
       "bySport": {
         "golf": {
-          "checks": 6,
-          "agreed": 6
+          "checks": 7,
+          "agreed": 7
         }
       },
       "byField": {
         "existence": {
-          "checks": 4,
-          "agreed": 4
+          "checks": 5,
+          "agreed": 5
         },
         "time": {
           "checks": 1,
@@ -141,7 +145,7 @@
           "agreed": 1
         }
       },
-      "lastChecked": "2026-09-10T09:30:00Z",
+      "lastChecked": "2026-09-13T10:28:07Z",
       "reliability": 1
     },
     "pgatour.com": {
@@ -758,13 +762,13 @@
       "reliability": 1
     },
     "olympics.com": {
-      "checks": 5,
-      "agreed": 5,
+      "checks": 6,
+      "agreed": 6,
       "corrections": 0,
       "bySport": {
         "cycling": {
-          "checks": 2,
-          "agreed": 2
+          "checks": 3,
+          "agreed": 3
         },
         "beach volleyball": {
           "checks": 1,
@@ -781,11 +785,11 @@
           "agreed": 3
         },
         "existence": {
-          "checks": 2,
-          "agreed": 2
+          "checks": 3,
+          "agreed": 3
         }
       },
-      "lastChecked": "2026-09-04T09:55:00Z",
+      "lastChecked": "2026-09-13T10:28:07Z",
       "reliability": 1
     },
     "metlifestadium.com": {
@@ -1174,8 +1178,8 @@
       "reliability": 1
     },
     "tv2.no": {
-      "checks": 6,
-      "agreed": 6,
+      "checks": 7,
+      "agreed": 7,
       "corrections": 1,
       "bySport": {
         "cycling": {
@@ -1185,19 +1189,23 @@
         "football": {
           "checks": 5,
           "agreed": 5
+        },
+        "handball": {
+          "checks": 1,
+          "agreed": 1
         }
       },
       "byField": {
         "streaming": {
-          "checks": 4,
-          "agreed": 4
+          "checks": 5,
+          "agreed": 5
         },
         "time": {
           "checks": 2,
           "agreed": 2
         }
       },
-      "lastChecked": "2026-08-16T05:55:00Z",
+      "lastChecked": "2026-09-13T10:28:07Z",
       "reliability": 1
     },
     "fotball.no": {
@@ -2200,13 +2208,13 @@
       "reliability": null
     },
     "handball.no": {
-      "checks": 4,
-      "agreed": 4,
+      "checks": 5,
+      "agreed": 5,
       "corrections": 0,
       "bySport": {
         "handball": {
-          "checks": 4,
-          "agreed": 4
+          "checks": 5,
+          "agreed": 5
         }
       },
       "byField": {
@@ -2217,10 +2225,14 @@
         "streaming": {
           "checks": 2,
           "agreed": 2
+        },
+        "existence": {
+          "checks": 1,
+          "agreed": 1
         }
       },
-      "lastChecked": "2026-09-12T09:31:03Z",
-      "reliability": null
+      "lastChecked": "2026-09-13T10:28:07Z",
+      "reliability": 1
     },
     "ba.no": {
       "checks": 1,
@@ -2985,6 +2997,101 @@
         }
       },
       "lastChecked": "2026-09-12T09:31:03Z",
+      "reliability": null
+    },
+    "trondheimspektrum.no": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "tennis": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-09-13T10:28:07Z",
+      "reliability": null
+    },
+    "eurohandball.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "handball": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-09-13T10:28:07Z",
+      "reliability": null
+    },
+    "handball-world.news": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "handball": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-09-13T10:28:07Z",
+      "reliability": null
+    },
+    "eurosport.no": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "handball": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "existence": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-09-13T10:28:07Z",
+      "reliability": null
+    },
+    "tipsbladet.no": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "handball": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-09-13T10:28:07Z",
       "reliability": null
     }
   }
