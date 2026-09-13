@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T22:51:26.358Z",
+  "generatedAt": "2026-09-13T23:50:04.437Z",
   "gapCount": 3,
   "anomalyCount": 1,
   "gaps": [
@@ -12,18 +12,18 @@
       "link": "https://www.nrk.no/sport/ny-brann-smell-_-tapte-mot-tabelljumboen-1.18023495",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-09-13T22:51:25.715Z"
+      "detectedAt": "2026-09-13T23:50:03.492Z"
     },
     {
       "kind": "entity",
-      "entity": "Man City",
+      "entity": "Formel 1",
       "type": "missing",
       "imminent": false,
-      "headline": "Haaland scores controversial winner as Man City win derby despite Foden red",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cpd0j54xlyyo?at_medium=RSS&amp;at_campaign=rss",
-      "feed": "bbc-football",
+      "headline": "VM-leder Antonelli vant i Madrid – bremsetrøbbel for Hamilton",
+      "link": "https://www.nrk.no/sport/vm-leder-antonelli-vant-i-madrid-_-bremsetrobbel-for-hamilton-1.18023333",
+      "feed": "nrk-sport",
       "matchCount": 2,
-      "detectedAt": "2026-09-13T22:51:25.715Z"
+      "detectedAt": "2026-09-13T23:50:03.492Z"
     },
     {
       "kind": "tracked-claim",
@@ -35,18 +35,18 @@
       "claimedDate": "2026-09-24T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-09-13T22:51:26.212Z"
+      "detectedAt": "2026-09-13T23:50:04.156Z"
     }
   ],
   "anomalies": [
     {
       "sport": "golf",
       "issue": "stale-retained",
-      "detail": "docs/data/golf.json has been served from retention for 53 consecutive run(s) — no fresh fetch in 7 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 53,
+      "detail": "docs/data/golf.json has been served from retention for 54 consecutive run(s) — no fresh fetch in 7 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 54,
       "staleDays": 7,
       "severity": "high",
-      "detectedAt": "2026-09-13T22:51:26.244Z"
+      "detectedAt": "2026-09-13T23:50:04.218Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
