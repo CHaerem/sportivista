@@ -239,6 +239,35 @@
 			}
 		},
 		{
+			"id": "cycling:il-lombardia",
+			"name": "Il Lombardia",
+			"sport": "cycling",
+			"match": [
+				"il lombardia",
+				"lombardia",
+				"giro di lombardia"
+			],
+			"time": {
+				"sourceIds": [
+					"il-lombardia"
+				],
+				"note": "RCS Sport lager ruta og starttidene; ilombardia.it publiserer tidsskjemaet. 2026-timeplanen var ikke publisert 13.09 (ruta ikke offentliggjort) — starttiden anslått fra 2025-utgaven (10.50 CEST) til arrangøren publiserer, provenance.time.basis=secondary inntil da."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "hbo-max",
+						"platform": "HBO Max (Sport)"
+					},
+					{
+						"sourceId": "eurosport-no",
+						"platform": "Eurosport Norge"
+					}
+				],
+				"note": "WBD/Warner holder WorldTour-sykkelen i Norge (HBO Max Sport / Eurosport), samme mønster som Vuelta/Renewi/monumentene — [verify] per event."
+			}
+		},
+		{
 			"id": "cycling:renewi-tour",
 			"name": "Renewi Tour",
 			"sport": "cycling",
