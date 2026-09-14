@@ -1,7 +1,7 @@
 {
 	"runAt": "2026-09-14T13:47:00Z",
 	"action": "opened-pr",
-	"pr": null,
+	"pr": "https://github.com/CHaerem/sportivista/pull/461",
 	"proposal": "Fix the durable Premier League Norwegian-channel bug: the deterministic rights map (scripts/lib/norwegian-rights.js line 167) and authority.json (football:premier-league) both mapped PL to TV 2, but Viaplay holds all 380 PL matches EXCLUSIVELY in Norway 2026/27 (through 2027/28) and TV 2 no longer carries the PL at all. Changed the map + authority.json channel + the norwegian-rights test to Viaplay.",
 	"evidence": [
 		"research-log.json (2026-09-14T05:15:00Z): 9 imminent PL round-5 events (19–20 Sep) carried summary 'Vises på Viaplay' but streaming[]=TV 2 Play; research had to hand-amend all 9 as a stopgap and re-verified PL=Viaplay against FIVE independent Norwegian sources (allente.no, bytt.no, vg.no, nettavisen.no, strim.no). It explicitly flagged the durable code fix (norwegian-rights.js ~line 167 TV 2→Viaplay + authority.json PL channel) as out-of-research-scope, for self-repair/improve.",
