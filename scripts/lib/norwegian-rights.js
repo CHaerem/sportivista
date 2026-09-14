@@ -164,7 +164,14 @@ export function norwegianRights(ev) {
 
 	if (sport === "football") {
 		if (/world cup|fifa|\bvm\b/.test(hay)) return [WC_SHARED]; // NRK/TV 2 shared — exact channel TBD
-		if (/premier league/.test(hay)) return [CH.tv2];
+		// Premier League → Viaplay. Viaplay Group holds ALL 380 PL matches
+		// EXCLUSIVELY in Norway from 2026/27 through 2027/28 (verified 2026-09-14 vs
+		// allente.no/bytt.no/vg.no/nettavisen.no + the research-log 5-source check);
+		// TV 2 no longer carries the PL at all. The old TV 2 mapping silently
+		// clobbered the correct Viaplay channel to TV 2 Play on every static rebuild
+		// for any PL event without a tvkampen listing (research had to hand-amend 9
+		// round-5 events on 2026-09-14 — a summary↔streaming mismatch each time).
+		if (/premier league/.test(hay)) return [CH.viaplay];
 		if (/la\s?liga/.test(hay)) return [CH.tv2];
 		// UEFA club competitions split in Norway (verified 2026-07-27 vs
 		// presse.viaplaygroup.no + tvkampen.com, rights t.o.m. 2030/31): Champions
