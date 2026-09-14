@@ -12,8 +12,10 @@ describe("norwegianRights", () => {
 	it("F1 → Viaplay", () => {
 		expect(norwegianRights({ sport: "f1", tournament: "Belgian Grand Prix" })[0].platform).toBe("Viaplay");
 	});
-	it("Premier League → TV 2 Play", () => {
-		expect(norwegianRights({ sport: "football", tournament: "Premier League" })[0].platform).toBe("TV 2 Play");
+	it("Premier League → Viaplay (Viaplay Group holds all PL matches exclusively in Norway 2026/27–2027/28; TV 2 no longer carries the PL)", () => {
+		const r = norwegianRights({ sport: "football", tournament: "Premier League" });
+		expect(r[0].platform).toBe("Viaplay");
+		expect(r.some((c) => /tv 2/i.test(c.platform))).toBe(false);
 	});
 	it("Champions League → TV 2 Play (TV 2 holds UEFA's flagship club comp)", () => {
 		expect(norwegianRights({ sport: "football", tournament: "UEFA Champions League" })[0].platform).toBe("TV 2 Play");
