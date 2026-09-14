@@ -1,98 +1,136 @@
 {
-  "auditedAt": "2026-09-13T08:20:00Z",
+  "auditedAt": "2026-09-14T08:32:00Z",
   "horizonDays": 28,
   "gaps": [
     {
-      "interest": "F1 — Singapore Grand Prix (løp søn. 11. okt, race Round 17)",
-      "whatsMissing": "Singapore GP (kval + løp, natt-race Marina Bay, sprint-helg 9.–11. okt) mangler HELT på tavla. Tavlas F1-horisont stopper på Bahrain 4. okt (statisk). Neste løp etter det, Singapore søn. 11. okt, er ikke boardet i noe format (verken statisk eller ai-research).",
-      "why": "F1 er katalog-tier1 (wholesale). Bekreftet på formula1.com sitt offisielle 2026-kalenderoppsett: Round 15 Aserbajdsjan 24.–26. sep, Round 16 Bahrain 2.–4. okt, Round 17 Singapore 9.–11. okt. Den statiske ESPN-fetcheren når frem til Bahrain (4. okt) men ikke Singapore (11. okt, ytterste kant av 28-dagershorisonten) — samme mønster som at ESPN-vinduet + ai-research fyller F1 rullerende. Ikke imminent (~28 d ut), så holdt medium, ikke eskalert: research fyller F1 på cadence og vil nå Singapore når den kommer nærmere. Signal så research/verify boarder Singapore-helgen (Viaplay-rettigheter).",
+      "interest": "CS2 — StarLadder StarSeries Fall 2026 (17.–20. sep, $500k)",
+      "whatsMissing": "Hele turneringen mangler på tavla. 8-lags $500k-event 17.–20. sep med FIRE katalog-orger i feltet: Natus Vincere (NAVI), Team Vitality, MOUZ og FURIA. Esports-seksjonen på tavla er HELT TOM (0 kommende events). Imminent (starter om 3 dager).",
+      "why": "Esports er entity-gated og alle fire orgene (NAVI/Vitality/MOUZ/FURIA) står i catalog.json tier2.teams → eventet er katalog-kvalifisert og skal boardes. Klassisk esports-fetcher-blindsone: esports.js beholder KUN 100 Thieves' kamper, og 100T er IKKE i dette feltet, så den statiske pipelinen returnerer tomt og hele $500k-turneringen er usynlig. Web-bekreftet mot flere uavhengige kilder (starladder.com, HLTV event 8057, Liquipedia). Norsk visning: Twitch/Kick (jf. cs2-sources).",
       "corroboration": [
-        "https://www.formula1.com/en/racing/2026",
-        "https://f1experiences.com/blog/f1-confirms-2026-season-calendar"
+        "https://starladder.com/en/news/starladder-announces-starseries-20-for-2026-anniversary-season-overview-format-and-prize-pool",
+        "https://www.hltv.org/events/8057/starladder-starseries-fall-2026",
+        "https://liquipedia.net/counterstrike/StarLadder/StarSeries/2026/Fall"
       ],
-      "suggestedSource": "https://www.formula1.com/en/racing/2026/singapore",
-      "severity": "medium",
-      "firstSeen": "2026-09-13T08:20:00Z",
+      "suggestedSource": "https://liquipedia.net/counterstrike/StarLadder/StarSeries/2026/Fall",
+      "severity": "high",
+      "firstSeen": "2026-09-14T08:32:00Z",
       "recurrences": 0,
-      "note": "NY horisont-observasjon. F1 er source-quirks-mandatsporten; ESPN-pipelinen er dokumentert skjør (jf. det korrupte Bahrain-navnet, sourceIssues). Bekreftet ekte via formula1.com. Kant-av-horisont (dag 28), ikke imminent → medium, ingen eskalering."
+      "note": "NY imminent gap. To-kilde-korroborert, imminent (3 d), viktig ($500k tier-1, fire katalog-orger). Eskalert (deep). Manifestasjon av esports.js 100T-only-blindsonen (HIGH sourceIssue)."
     },
     {
-      "interest": "Sykkel — Il Lombardia (lør. 10. okt, sesongens 5. og siste Monument)",
-      "whatsMissing": "Il Lombardia 2026 (120. utgave, 'løvfallets løp', Bergamo–Como-området) mangler på tavla. Ingen sykkel-endagsløp boardet mellom Road-VM-fellesstartene (26.–27. sep) og ut horisonten.",
-      "why": "Sykkel er katalog-tier1 (wholesale) OG Il Lombardia står eksplisitt i catalog.json tier2.tournaments — en av de fem Monumentene, marquee endagsklassiker. Bekreftet dato lør. 10. okt 2026 (domestiquecycling + cyclingstage). Innenfor 28-dagershorisonten (dag 27), men ~4 uker ut = ikke imminent, så medium. Norsk relevans: TV 2 Play / HBO Max (Eurosport) viser Monumentene; Uno-X-ryttere deltar typisk. Signal så research boarder løpet med korrekt kringkastingstid (letour/RCS-tider ≠ norsk sendestart — jf. cyclingstage-quirk).",
+      "interest": "CS2 — Stake Pulse Beat II (21.–26. sep, Stockholm, 100 Thieves / «rain»)",
+      "whatsMissing": "100 Thieves' kamper i Stake Pulse Beat II (Valve Tier 2 LAN, Stockholm, $60k, 21.–26. sep) mangler på tavla. Gruppespill A–D 21.–24. sep (100T i gruppe D 24. sep, kamp 100T vs EAC bekreftet på HLTV), sluttspill 25.–26. sep. Esports-tavla er tom.",
+      "why": "100 Thieves (rain / Håvard Nygaard) er katalog-fokusorgen — nettopp den esports-interessen eieren følger tettest. Bekreftet + datert (HLTV event 9222 + nyhet 45286, Liquipedia, dust2). Dette er PRESIST coverage-gaps.json sitt tracked-claim «Håvard rain Nygaard 24. sep» — nå VERIFISERT EKTE (gruppe D 24. sep). Selv 100T sine EGNE kamper er ikke boardet av fetcheren denne kjøringen, så blindsonen er verre enn bare non-100T-events. Norsk visning: Twitch/Kick.",
       "corroboration": [
-        "https://www.domestiquecycling.com/en/cycling-races/il-lombardia/2026/",
-        "https://www.cyclingstage.com/tour-of-lombardy-2026/"
+        "https://www.hltv.org/events/9222/stake-pulse-beat-ii",
+        "https://www.hltv.org/news/45286/astralis-heroic-100-thieves-among-teams-confirmed-at-stake-pulse-beat-ii",
+        "https://liquipedia.net/counterstrike/Stake_Pulse/Beat_II"
       ],
-      "suggestedSource": "https://www.ilombardia.it/en/",
-      "severity": "medium",
-      "firstSeen": "2026-09-13T08:20:00Z",
+      "suggestedSource": "https://liquipedia.net/counterstrike/Stake_Pulse/Beat_II",
+      "severity": "high",
+      "firstSeen": "2026-09-14T08:32:00Z",
       "recurrences": 0,
-      "note": "NY horisont-observasjon. Et Monument (katalog-tournament) er klart 'important'; bekreftet ekte + datert. Ikke imminent (dag 27), ingen eskalering. Research bør boarde med TV 2 Play-tid, ikke RCS-veitid."
+      "note": "NY imminent gap = coverage-gaps tracked-claim (Håvard rain 24. sep) VERIFISERT EKTE. Fokusorgen (rain/100T), imminent (~7 d til 100Ts første kamp, gruppe D 24. sep), to-kilde-korroborert → high. Eskalert (deep, samme escalate.request som StarSeries)."
     },
     {
-      "interest": "Håndball — Elkjøp-ligaen (menn + kvinner) NESTE serierunde (~19.–20. sep) utover det som er boardet",
-      "whatsMissing": "Denne helgens runde (12.–13. sep) var GODT boardet. NESTE runde ~19.–20. sep er nå DELVIS boardet (Fjellhammer–Kolstad 20. sep ligger på tavla, pluss Kolstad–Industria Kielce 16. sep i EHF CL) — men resten av den domestiske runden (menn + kvinner) er ennå ikke fylt. Hver fremtidig runde forblir en potensiell blindsone.",
-      "why": "Håndball er katalog-tier1 (wholesale) men har INGEN statisk fetcher — hele Elkjøp-ligaen håndboardes runde-for-runde av research, ~1 uke fram om gangen. Ligaen er i sesong (2026/27, handball.no; calibration.json handball.no 4/4 agreed). Web-bekreftet forrige audit at ~19.–20. sep IKKE er landslagspause (herre-EM-2028-kvalik starter 4. nov) — ekte spillehelg. Cadencen fungerer (denne helga fylt, én kamp av neste runde alt på), så gapet er ADDRESSED på ukentlig cadence, ikke calcified.",
+      "interest": "CS2 — ESL Pro League Season 24 (3.–11. okt, Katowice/Spodek, $1M)",
+      "whatsMissing": "ESL Pro League Season 24 mangler på tavla. 16-lags $1M-event, gruppespill 3.–7. okt + sluttspill 9.–11. okt i Spodek Arena, Katowice. VRS-inviterte inkluderer katalog-orgene Team Falcons, Team Spirit, FURIA, Team Vitality, MOUZ, NAVI og G2 Esports.",
+      "why": "ESL Pro League står EKSPLISITT i catalog.json tier2.tournaments (esports) og feltet har 6+ katalog-orger → klart katalog-dekning. Ikke imminent (~19–27 d ut, ytre del av 28-d-horisonten), så medium — research fyller på cadence når det nærmer seg. Web-bekreftet (ESL FACEIT Group / pro.eslgaming.com, insider-gaming, blast.tv). Samme fetcher-blindsone (ingen 100T i feltet → usynlig statisk). Norsk visning: Twitch/Kick.",
       "corroboration": [
-        "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/eliteserien/",
-        "https://en.wikipedia.org/wiki/2028_European_Men%27s_Handball_Championship_qualification"
+        "https://eslfaceitgroup.com/press/katowices-legendary-spodek-arena-sets-the-stage-for-esl-pro-league-season-24/",
+        "https://pro.eslgaming.com/tour/2026/08/epl-katowice-2026-invited-teams/",
+        "https://blast.tv/cs/tournaments/esl-pro-league-season-24-2026"
+      ],
+      "suggestedSource": "https://pro.eslgaming.com/tour/details/esl-pro-league-season-24/",
+      "severity": "medium",
+      "firstSeen": "2026-09-14T08:32:00Z",
+      "recurrences": 0,
+      "note": "NY horisont-gap (~19 d ut). Navngitt katalog-tournament, $1M, 6+ katalog-orger → confidently real, men ikke imminent → medium, ikke selvstendig eskaleringsgrunn (eskaleringen bæres av de to imminente CS2-gapene). Research bør boarde når det entrer fyll-vinduet."
+    },
+    {
+      "interest": "Tennis — Shanghai Masters (ATP Masters 1000, ~7.–18. okt)",
+      "whatsMissing": "Rolex Shanghai Masters 2026 (Asias eneste ATP Masters 1000) mangler på tavla. Hovedtrekning ~7.–18. okt (kval 5.–6. okt). Ingen tennis på tavla etter Laver Cup (25.–27. sep).",
+      "why": "Shanghai Masters er en marquee Masters 1000 — katalog dekker tennis via majors/marquee (Masters 1000-ene er eksplisitt i catalog.json tier2.tournaments) + navn. ~23 d ut (ytre kant av horisonten), ikke imminent → medium. Web-bekreftet (atptour.com entry list: Sinner/Alcaraz/Djokovic/Zverev; Wikipedia 2026 Shanghai Masters). Casper Ruud (katalog-athlete) trakk seg fra US Open med ryggskade — hans deltakelse er usikker, men turneringen er katalog-dekket uansett. Norsk visning: verifiser (TV 2 har ATP-rettighetene t.o.m. 2026 per authority.json).",
+      "corroboration": [
+        "https://en.wikipedia.org/wiki/2026_Shanghai_Masters",
+        "https://www.atptour.com/en/news/shanghai-2026-entry-list"
+      ],
+      "suggestedSource": "https://www.atptour.com/en/tournaments/shanghai/5015/overview",
+      "severity": "medium",
+      "firstSeen": "2026-09-14T08:32:00Z",
+      "recurrences": 0,
+      "note": "NY horisont-gap. Neste EKTE katalog-tennis etter Laver Cup; Masters 1000 = klart 'important', men ~23 d ut → medium, ikke eskalert. Distinkt fra tennis:tour-kontraktbruddet (14-d-vindu) — det er en miscalibration, se sourceIssues."
+    },
+    {
+      "interest": "Håndball — Elkjøp-ligaen (menn + kvinner) neste serierunde (~19.–20. sep) utover det boardede",
+      "whatsMissing": "Neste domestiske runde ~19.–20. sep er DELVIS boardet: Fjellhammer–Kolstad (20. sep) ligger på tavla + Kolstad–Industria Kielce (EHF CL 16. sep), men resten av runden (menn + kvinner) er ennå ikke fylt. Hver fremtidig runde forblir en potensiell blindsone.",
+      "why": "Håndball er katalog-tier1 (wholesale) men har INGEN statisk fetcher — hele Elkjøp-ligaen håndboardes runde-for-runde av research ~1 uke fram om gangen. Ligaen er i sesong (2026/27, handball.no; calibration.json handball.no 5/5 agreed, reliability 1). ~19.–20. sep er ekte spillehelg (ikke landslagspause — herre-EM-2028-kvalik starter 4. nov). Cadencen fungerer (én kamp av runden alt boardet), så gapet er ADDRESSED på ukentlig cadence, ikke calcified.",
+      "corroboration": [
+        "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/eliteserien/"
       ],
       "suggestedSource": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/eliteserien/",
       "severity": "medium",
       "firstSeen": "2026-08-31T10:34:00Z",
-      "recurrences": 13,
-      "note": "Videreført medium (recurrences 12→13). Recall-exhaustion-bumpen (recurrences>=3 → medium→high) bevisst WITHHOLDT: regelen retter seg mot gap som er 'recurred UNADDRESSED'. Dette fylles hver uke på ~1-ukes cadence (denne helgas runde ER fylt, én kamp av neste runde ligger alt på tavla), så det er addressed, ikke calcified. Å bumpe + eskalere ville ikke gi varig fiks. Meta-problemet (ingen håndball-fetcher) spores som HIGH sourceIssue for self-repair/improve."
+      "recurrences": 14,
+      "note": "Videreført medium (recurrences 13→14). Recall-exhaustion-bumpen (>=3 → medium→high) bevisst WITHHOLDT: regelen retter seg mot gap som er recurred UNADDRESSED. Dette fylles hver uke på ~1-ukes cadence (én kamp av neste runde alt boardet), så det er addressed, ikke calcified. Meta-problemet (ingen håndball-fetcher) spores som HIGH sourceIssue for self-repair/improve."
     }
   ],
   "sourceIssues": [
     {
-      "source": "ESPN golf-fetcher (golf.json) — DØD, servert fra retainLastGood 48 kjøringer på rad",
-      "issue": "coverage-gaps.json stale-retained-anomali (high): docs/data/golf.json er servert fra retensjon 48 kjøringer på rad (opp fra 40 forrige audit, 33 før det), ingen fersk fetch på 6 dager. Fetcheren produserer ingenting; filen ser current ut kun fordi retainLastGood re-skriver siste gode kopi, og tavla skjuler det fordi research håndfyller golf. Retain-telleren VOKSER monotont kjøring for kjøring (26→33→40→48) — breakagen er ikke selv-helende.",
-      "impact": "Self-repair-sak (UENDRET fra forrige audit, forverres): ESPN golf-fetcheren har sluttet å produsere og må repareres/erstattes — en død fetcher er ekte breakage uansett om tavla ellers ser golf-dekket ut (nettopp klassen stale-retained er designet for å fange). Frem til den er fikset hviler ALL golf-dekning på manuell research-boarding (Irish Open, BMW PGA, Biltmore, Open de France, Presidents Cup alle håndboardet + komplette denne kjøringen, så INGEN golf-recall-hull nå — men avhengigheten er skjør). IKKE eskalert som recall-gap: eskalering trigger research (fyller events), ikke self-repair (fikser fetchere); golf-events ER dekket.",
+      "source": "Liquipedia CS2-fetcher (esports.js) — 100T-only-filter",
+      "issue": "Fetcheren beholder KUN fokuslaget 100 Thieves' kamper. Denne kjøringen forårsaker den blindsonen at TRE katalog-CS2-turneringer mangler samtidig: StarLadder StarSeries Fall ($500k, 17.–20. sep, imminent, NAVI/Vitality/MOUZ/FURIA), ESL Pro League Season 24 ($1M, 3.–11. okt, 6+ katalog-orger) — begge helt usynlige fordi 100T ikke er i feltet — OG Stake Pulse Beat II (21.–26. sep) der 100T FAKTISK spiller, men fetcheren har likevel ikke boardet 100T-kampene (Liquipedia-Matches-vinduet fanget dem ikke ved siste fetch). Esports-tavla er helt tom.",
+      "impact": "Argument (skjerpet fra medium til HIGH) for at esports-fetcheren utvides til å beholde ALLE katalog-tier2-orgers kamper (ikke bare 100T), ELLER authority.json contract-blokk for CS2 tier-1-turneringer (StarSeries/ESL Pro League/BLAST/IEM) så et brudd fanges mekanisk. Self-repair/improve-sak. Frem til da hviler ALL CS2-dekning på research-håndboarding — og denne kjøringen falt ALL av (tom seksjon).",
+      "severity": "high"
+    },
+    {
+      "source": "ESPN golf-fetcher (golf.json) — DØD, servert fra retainLastGood 56 kjøringer på rad",
+      "issue": "coverage-gaps.json stale-retained-anomali (high): docs/data/golf.json er servert fra retensjon 56 kjøringer på rad (opp fra 48 forrige audit, 40 før det, 33 før det), ingen fersk fetch på 7 dager. Fetcheren produserer ingenting; filen ser current ut kun fordi retainLastGood re-skriver siste gode kopi, og tavla skjuler det fordi research håndfyller golf. Retain-telleren VOKSER monotont (26→33→40→48→56) — breakagen er ikke selv-helende.",
+      "impact": "Self-repair-sak (UENDRET fra forrige audit, forverres): ESPN golf-fetcheren har sluttet å produsere og må repareres/erstattes. Frem til da hviler ALL golf-dekning på manuell research-boarding (BMW PGA, Biltmore, Open de France, Presidents Cup alle håndboardet + komplette denne kjøringen, så INGEN golf-recall-hull nå — men avhengigheten er skjør). IKKE eskalert som recall-gap: eskalering trigger research (fyller events), ikke self-repair (fikser fetchere); golf-events ER dekket.",
       "severity": "high"
     },
     {
       "source": "Statisk pipeline — ingen wholesale håndball-fetcher",
-      "issue": "Håndball er katalog-tier1 (wholesale) men har ingen statisk fetcher — hele Elkjøp-ligaen (menn + kvinner) håndboardes av research ~én uke fram om gangen. Kilde finnes (handball.no terminliste + play.tv2.no); calibration.json: handball.no 4/4 agreed, ingen negativt signal.",
-      "impact": "Argument for en handball.no-fetcher (Elkjøp-ligaen menn + kvinner) for varig wholesale-dekning — self-repair/improve-sak. Ligger bak det ukentlig-tilbakevendende Elkjøp-gapet (recurrences 13).",
+      "issue": "Håndball er katalog-tier1 (wholesale) men har ingen statisk fetcher — hele Elkjøp-ligaen (menn + kvinner) håndboardes av research ~én uke fram om gangen. Kilde finnes (handball.no terminliste + play.tv2.no); calibration.json: handball.no 5/5 agreed, reliability 1.",
+      "impact": "Argument for en handball.no-fetcher (Elkjøp-ligaen menn + kvinner) for varig wholesale-dekning — self-repair/improve-sak. Ligger bak det ukentlig-tilbakevendende Elkjøp-gapet (recurrences 14).",
       "severity": "high"
     },
     {
-      "source": "Statisk F1-fetcher (ESPN) — når ikke Singapore (11. okt) + korrupt Bahrain-navn",
-      "issue": "TO observasjoner samme fetcher: (1) den statiske ESPN-fetcheren har boardet frem til Bahrain 4. okt men IKKE Singapore 9.–11. okt (ytterste kant av horisonten) — ligger bak F1-recall-gapet over. (2) Static F1-event 4. okt bærer FORTSATT det korrupte navnet «Gulf Air Bahrain Grand Prix in Malaysia» — uendret siden ~11. sep (nå 3 kjøringer på rad). KORRIGERING av forrige audits mistanke: DATOEN er faktisk korrekt — formula1.com bekrefter Bahrain er Round 16 den 2.–4. okt 2026 (kalenderen er omstokket; Bahrain flyttet fra mars til oktober), så eventet er EKTE, kun venue-strengen «in Malaysia» er korrupt (ESPN har blandet inn feil sted).",
-      "impact": "Verify bør (a) rydde event-tittelen 4. okt til «Bahrain Grand Prix» mot formula1.com, og (b) sørge for at Singapore-helgen 9.–11. okt boardes. Navne-korrupsjonen nærmer seg terskelen for en source-quirks-oppføring (ESPN venue-forveksling) hvis mønsteret gjentas. Datoen skal IKKE endres — den er riktig.",
+      "source": "Dekningskontrakt tennis:tour (authority.json) — MISCALIBRERT, falskt HIGH-brudd",
+      "issue": "coverage-gaps.json fyrte et high-severity contract-breach for ATP/WTA Tour (0 av min 1 event innen 14 d). Web-verifisert: bruddet er IKKE et ekte katalog-recall-hull. Kontrakten krever ≥1 ATP/WTA-tour-event innen 14 d hele jan–nov, med match-tokens [\"atp\",\"wta\"]. MEN (a) katalog dekker tennis ENTITY-GATED (majors/marquee Masters 1000 + navn), IKKE touren wholesale — de touren-eventene som finnes i vinduet nå (SP Open WTA 250, Chengdu/Hangzhou/Seoul ATP/WTA 250-er) er ikke katalog-dekning; (b) match-tokens «atp»/«wta» forekommer nesten aldri i ekte turneringstitler («Shanghai Masters», «Cincinnati Open»…), så kontrakten kan i praksis kun tilfredsstilles av ATP/WTA Finals → nær-permanent falskt brudd. Katalog-tennis i vinduet (Davis Cup 18. sep + Laver Cup 25. sep) ER på tavla; neste ekte katalog-turnering er Shanghai Masters ~7. okt (utenfor 14-d-vinduet — post-US-Open-lull er sesongærlig, ikke et dekningssvikt).",
+      "impact": "Anbefaling til improve/self-repair: re-scope kontrakten så den speiler hvordan katalog FAKTISK dekker tennis — f.eks. match på de navngitte Masters 1000 + Finals + majors i stedet for [\"atp\",\"wta\"], ELLER senk kravet / smalne months, ELLER fjern kontrakten (tennis er entity-gated, ikke wholesale). Som skrevet fyrer den et falskt HIGH hver uke og trener coverage-critic/G2 til å ignorere contract-porten — nøyaktig støyen WP-243-skjemaet ber oss unngå. Samme klasse som PGA-Tour- og Eliteserien-rekalibreringene.",
+      "severity": "medium"
+    },
+    {
+      "source": "Statisk football-fetcher — maxEvents:30-kutt + build-events graft-then-drop (europacup-MD-regresjon)",
+      "issue": "I høysesong overstiger fetchen maxEvents:30, domestiske norske ligaer prioriteres først, og europacup-kamper forbi første dag kan kuttes; build-events' graft-then-drop kan gjøre at en tidligere-boardet ai-research-europacupkamp forsvinner permanent når fetchervinduet neste gang kutter den. Denne kjøringen bryter INGENTING aktivt: EL/ECL MD1 16.–17. sep ER på tavla; CL MD2 er 13.–14. OKT (utenfor 28-d-horisonten). Den strukturelle svakheten består.",
+      "impact": "Varig kur (self-repair/improve): hev/segmenter maxEvents PER LIGA, ELLER legg authority.json contract-blokk for CL/EL/ECL (WP-243) så et delvis/regresjonerende MD-brudd fanges mekanisk. Holdt medium fordi ingenting brytes aktivt (neste CL-runde utenfor horisont). VOKT når europacup-MD2 (slutten av sep / tidlig okt) entrer fyll-vinduet.",
+      "severity": "medium"
+    },
+    {
+      "source": "F1-event 4. okt — «Gulf Air Bahrain Grand Prix in Malaysia» (venue-korrupsjon)",
+      "issue": "Static F1-event 4. okt bærer FORTSATT «...in Malaysia» i tittelen (uendret ~4 kjøringer). NYTT FUNN denne kjøringen: web-sjekk mot formula1.com sin egen 2026-kalenderside gjengir OGSÅ «FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026» — korrupsjonen ser ut til å stamme fra kilden (F1/ESPN-feed) selv, ikke bare vår adapter. Datoen er KORREKT: Bahrain er Round 16, 2.–4. okt 2026 (kalender omstokket).",
+      "impact": "Verify bør rydde event-tittelen til «Bahrain Grand Prix» (kosmetisk; datoen skal IKKE endres). Nærmer seg terskelen for en source-quirks-oppføring (F1-feed venue-forveksling) hvis mønsteret vedvarer.",
       "severity": "low"
-    },
-    {
-      "source": "Statisk football-fetcher — maxEvents:30-kutt + build-events graft-then-drop (CL/EL-MD-regresjon)",
-      "issue": "I høysesong overstiger fetchen maxEvents:30, domestiske norske ligaer prioriteres først, og europacup-kamper forbi første dag kan kuttes; build-events' graft-then-drop kan gjøre at en tidligere-boardet ai-research-europacupkamp forsvinner permanent når fetchervinduet neste gang kutter den. Denne kjøringen bryter INGENTING aktivt: CL MD1 ferdigspilt (8.–10. sep), CL MD2 er 13.–14. OKT (utenfor 28-dagershorisonten), EL/ECL MD1 16.–17. sep ER på tavla. Den strukturelle svakheten består.",
-      "impact": "Varig kur (self-repair/improve): hev/segmenter maxEvents PER LIGA så en marquee europacup-matchday ikke kuttes, ELLER legg authority.json contract-blokk for CL/EL/ECL (WP-243) så et delvis/regresjonerende MD-brudd fanges mekanisk. Holdt medium fordi ingenting brytes aktivt (neste CL-runde utenfor horisont).",
-      "severity": "medium"
-    },
-    {
-      "source": "Liquipedia CS2-fetcher (esports.js) — 100 Thieves-only-filter",
-      "issue": "Fetcheren beholder kun fokuslaget 100 Thieves' kamper; når 100T ikke spiller returnerer den tomt, og et helt mesterskap med andre katalog-orger blir usynlig fra den statiske pipelinen. Denne kjøringen: research boardet FISSURE Playground #3-sluttspillet (node t.o.m. ~13. sep); den strukturelle blindsonen består.",
-      "impact": "Argument for at esports-fetcheren utvides til å beholde ALLE katalog-tier2-orgers kamper (ikke bare 100T), evt. authority.json contract-blokk for CS2 tier-1-turneringer. Self-repair/improve-sak.",
-      "severity": "medium"
     }
   ],
   "coveredWell": [
-    "F1 — ESPN-BLINDSONE (source-quirks-mandat, WEB-SJEKKET I DAG mot formula1.com): Spansk GP Madrid (Madring) løp søn. 13. sep 13:00 UTC KORREKT på tavla (statisk), ingen mis-datering / for-tidlig-FINAL. Neste helgs Aserbajdsjan GP (kval 25. sep + løp 26. sep) også på tavla og i tråd med formula1.com Round 15 (24.–26. sep). Viaplay-rettigheter.",
-    "FOTBALL IMMINENT (12.–17. sep) komplett: PL-runden inkl. Manchester City–Manchester United (Manchester-derby, spilt 13. sep) + Arsenal, Liverpool, Chelsea; La Liga (Barcelona–Levante, Real Madrid–Elche, Atlético–Real Sociedad, Rayo, Real Betis–Villarreal); Serie A giornata (Bologna–Napoli, Juventus–Sassuolo, Roma–Torino, Udinese–Inter); Bundesliga MD (Bayern–Elversberg, HSV–Leipzig); Eliteserien HEL runde + OBOS Hødd–Lyn (13. sep). EL/ECL MD1 16.–17. sep boardet: Torreense–Lillestrøm (norsk anker), Benfica–Milan, NEC–Juventus, Ferencváros–Celtic, Bournemouth–Real Sociedad (RSS-korroborert: 2000 Bournemouth-fans til San Sebastián), Lyon–Anderlecht.",
-    "HÅNDBALL: denne helgens Elkjøp-runde (12.–13. sep) boardet (Flint–Fjellhammer, Runar–Nærbø, Sandnes–Elverum, Drammen–Follo m.fl.) + Kolstad–Industria Kielce (EHF CL 16. sep). Cadencen fungerer.",
-    "GOLF: Irish Open (10.–13.), BMW PGA Championship (DP World, 17.–20.) + Biltmore Championship (PGA, 17.–20.) + FedEx Open de France (24.–27. — Hovland OG Reitan) + Presidents Cup (24.–27.) alle BOARDET. ALL golf-dekning er manuell research-boarding fordi ESPN golf.json-fetcheren er død (HIGH sourceIssue, 48 retains) — men ingen recall-hull denne kjøringen.",
-    "SYKKEL: UCI Road-VM Montréal (WEB-VERIFISERT 20.–27. sep, elite 26.–27.): elite tempo (kvinner + menn) 20. sep, mixed relay 22. sep, elite fellesstart kvinner 26. + menn 27. — alle marquee elite-øvelser på tavla, i tråd med offisiell terminliste (TT åpner uka, fellesstart 26.–27.). Vuelta a España avsluttet (node t.o.m. 13. sep).",
-    "IMMINENT ellers: Tennis Davis Cup Norge–Kina 18.–19. (Ruud) + Laver Cup London 25.–27. på tavla; US Open avsluttet (Rybakina slo Sabalenka i kvinnefinalen 12. sep, RSS). Chess Global Chess League sesong 4 (Carlsen, node t.o.m. 13. sep). Athletics WA Ultimate Championship Budapest (11.–13. sep — Warholm i 400m hekk-finalen, Jæger 2.-plass 400m, RSS-korroborert, node)."
+    "F1 — ESPN-BLINDSONE (source-quirks-mandat, WEB-SJEKKET I DAG mot formula1.com): hele oktober-horisonten korrekt. Aserbajdsjan GP (kval 25. sep + løp 26. sep) = Round 15 (24.–26. sep) på tavla; Bahrain GP (4. okt) = Round 16 (2.–4. okt) på tavla (kun tittel-korrupsjon, low sourceIssue); Singapore GP (kval + løp 9.–11. okt) = Round 17 på tavla. Viaplay-rettigheter.",
+    "F1 Singapore + Il Lombardia: BEGGE forrige audits horisont-gap er nå FYLT av research. F1 Singapore GP (9.–11. okt) og Il Lombardia (10. okt, 5. Monument) står nå på tavla — cadencen leverte.",
+    "FOTBALL IMMINENT (14.–18. sep) komplett: Serie A giornata (Roma–Torino, Parma–Como, Udinese–Inter), PL (Newcastle–Leeds, Chelsea–Brentford), La Liga (Real Madrid–Elche, Real Betis–Villarreal, Atlético, Rayo, Valencia, Sevilla, Barcelona–Racing Santander), Bundesliga (Union–Bayern), Eliteserien (Bodø/Glimt–Sandefjord, Sarpsborg–KFUM), OBOS. EL/ECL MD1 16.–17. sep boardet: Torreense–Lillestrøm (norsk anker), Benfica–Milan, NEC–Juventus, Ferencváros–Celtic, Bournemouth–Real Sociedad, Lyon–Anderlecht.",
+    "HÅNDBALL: Kolstad–Industria Kielce (EHF CL 16. sep) + Fjellhammer–Kolstad (Elkjøp 20. sep) boardet. Cadencen fungerer (resten av 19.–20.-runden fylles på ukentlig cadence — medium gap over).",
+    "GOLF: BMW PGA Championship (DP World, 17.–20.) + Biltmore Championship (PGA, 17.–20.) + FedEx Open de France (24.–27. — Hovland OG Reitan) + Presidents Cup (24.–27.) alle BOARDET. ALL golf-dekning er manuell research-boarding fordi ESPN golf.json-fetcheren er død (HIGH sourceIssue, 56 retains) — men ingen recall-hull denne kjøringen.",
+    "SYKKEL: UCI Road-VM Montréal (elite tempo 20. sep, mixed relay 22. sep, elite fellesstart 26.–27. sep) på tavla; Il Lombardia (10. okt) nå boardet. Vuelta + Tour of Britain avsluttet.",
+    "TENNIS IMMINENT: Davis Cup Norge–Kina 18.–19. (Ruud — men NB han trakk seg fra US Open med ryggskade, verify bør bekrefte deltakelse) + Laver Cup London 25.–27. på tavla. (Neste katalog-turnering Shanghai Masters ~7. okt = medium horisont-gap over.)"
   ],
-  "escalated": false,
+  "escalated": true,
   "notes": [
-    "Kjøring 2026-09-13 ~08:20Z (recall-audit). INGEN high-severity recall-GAP → INGEN eskalering (escalate.request ikke skrevet). Tavla er usedvanlig komplett (164 events); imminent-vinduet (12.–17. sep) er tett dekket på tvers av alle sesong-sporter.",
-    "IMMINENT-PASS først (source-quirks-mandat). F1 ESPN-blindsone REN denne helgen: Madrid-GP web-verifisert i dag (formula1.com) — løp søn. 13. sep 13:00 UTC korrekt på tavla, ingen mis-datering/for-tidlig-FINAL. Aserbajdsjan (25.–26. sep) også korrekt.",
-    "TO NYE horisont-gap (begge medium, ikke imminent, ikke eskalert, web-bekreftet): (1) F1 Singapore GP løp søn. 11. okt mangler HELT — ESPN-fetcheren når Bahrain 4. okt men ikke Singapore 11. okt (formula1.com Round 17). (2) Il Lombardia lør. 10. okt (5. Monument, katalog-tournament) mangler — ingen sykkel-endagsløp mellom Road-VM og horisontslutt. Begge ~4 uker ut → research fyller på cadence.",
-    "MEKANISKE coverage-gaps.json-signaler TRIAGERT (gapCount 2, anomalyCount 1): entity-gap «1. divisjon» (Ada Hegerberg-hattrick i fransk kvinnefotball, ikke imminent) → korrekt fravær (fransk D1 kvinner er ikke katalog-dekning); tracked-claim Håvard «rain» Nygaard 24. sep → korrekt fravær pt. (CS2 sen-annonsering); anomali golf.json stale-retained (high, 48 retains, opp fra 40) → videreført HIGH sourceIssue (død ESPN golf-fetcher, self-repair — teller vokser monotont).",
-    "RULED OUT som korrekt fravær: (a) Champions League — INGEN CL-kamp på tavla er RIKTIG: CL MD1 ferdigspilt 8.–10. sep (web-verifisert), CL MD2 er 13.–14. OKT (2–3 dager UTENFOR 28-dagershorisonten). (b) F1 4. okt-eventet er IKKE et fantom: Bahrain er ekte Round 16 (2.–4. okt, kalender omstokket) — kun navnet «...in Malaysia» er korrupt (verify-korrekthetssak, low sourceIssue). KORRIGERER forrige audits mistanke om at datoen var suspekt. (c) GP Québec/Montréal (12.–13. sep) — droppet fra gap-lista: løpene er nå over (korrekt fravær), forrige kjørings low-observasjon utløpt.",
-    "Ingen ekte contract-breach (coverage-contracts.json: alle 6 kontrakter met, breached=[]). MERK fortsatt: CL/EL/ECL + esports + håndball har INGEN contract-blokk, så delvise/regresjonerende MD-hull fanges IKKE mekanisk — argument for flere contract-blokker (sourceIssues, football-fetcher-saken).",
-    "Fotball 28. sep–11. okt (domestiske runder + evt. EL/ECL MD2) er ennå ikke boardet, men dette er det FORVENTEDE rullerende fyll-vinduet (statisk fetcher ~5–6 d fram; research boarder europacup-MD-er når de nærmer seg) — IKKE et recall-gap nå. Bør VOKTES når europacup-MD2 (ca. slutten av sep / tidlig okt) entrer fyll-vinduet, gitt graft-then-drop-risikoen (football-fetcher sourceIssue)."
+    "Kjøring 2026-09-14 ~08:32Z (recall-audit). TO high-severity imminente CS2-recall-gap → ESKALERT (escalate.request='deep' skrevet): StarLadder StarSeries Fall (17.–20. sep, $500k, NAVI/Vitality/MOUZ/FURIA) + Stake Pulse Beat II (21.–26. sep, 100 Thieves/rain). Begge web-verifisert mot ≥2 uavhengige kilder. Tavlas esports-seksjon er HELT TOM.",
+    "IMMINENT-PASS først (source-quirks-mandat). F1 ESPN-blindsone REN: web-verifisert mot formula1.com at Aserbajdsjan (24.–26. sep), Bahrain (2.–4. okt) og Singapore (9.–11. okt) alle er korrekt på tavla, ingen mis-datering/for-tidlig-FINAL.",
+    "STØRSTE FUNN: esports.js 100T-only-blindsonen felte HELE CS2-dekningen denne kjøringen — TRE katalog-turneringer mangler samtidig (StarSeries $500k imminent, Stake Pulse Beat II $60k imminent m/ 100T, ESL Pro League S24 $1M horisont). Selv 100T sine EGNE kamper (Stake Pulse Beat II) er ikke boardet. sourceIssue oppgradert medium→HIGH.",
+    "MEKANISKE coverage-gaps.json-signaler TRIAGERT (gapCount 3, anomalyCount 1): (a) contract-breach tennis:tour (high) → MISCALIBRATION, ikke ekte gap: katalog dekker tennis entity-gated, ikke touren wholesale; katalog-tennis i vinduet (Davis Cup + Laver Cup) ER på tavla; match-tokens [atp,wta] fanger nesten ingen ekte titler → nær-permanent falskt HIGH. Flagget som sourceIssue for re-scoping (samme klasse som PGA/Eliteserien-rekalibreringene). (b) tracked-claim Håvard rain 24. sep → VERIFISERT EKTE (Stake Pulse Beat II gruppe D 24. sep) = high gap #2. (c) entity-gap Man City (Haaland-derbymål) → korrekt fravær (nyhet om spilt kamp). (d) anomali golf.json stale-retained (high, 56 retains, opp fra 48) → videreført HIGH sourceIssue (død ESPN golf-fetcher).",
+    "TENNIS-horisont: Shanghai Masters (~7.–18. okt, ATP Masters 1000, katalog-marquee) mangler → NY medium horisont-gap (~23 d ut). Casper Ruud trakk seg fra US Open med ryggskade (atptour.com) — verify bør bekrefte hans Davis Cup-deltakelse (18.–19. sep) og senere program; turneringene er katalog-dekket uansett.",
+    "RESOLVED siden forrige audit: F1 Singapore GP + Il Lombardia (begge forrige kjørings medium horisont-gap) er nå FYLT av research — cadencen leverte. Ikke videreført.",
+    "Ingen ekte NY contract-breach utover tennis-miscalibreringen (coverage-contracts.json: 5 av 6 met; tennis:tour 'breached' = falskt, se sourceIssues). MERK fortsatt: CL/EL/ECL + esports + håndball har INGEN contract-blokk, så delvise/regresjonerende MD-hull + CS2-blindsonen fanges IKKE mekanisk — argument for flere/bedre contract-blokker.",
+    "Athletics: tom etter WA Ultimate Championship (11.–13. sep) + Diamond League-finalen (4. sep) — korrekt sesongslutt (utendørssesong 2026 over; Ingebrigtsen/Warholm ferdig). Chess: tom etter Global Chess League sesong 4 (node t.o.m. ~13. sep) — entity-gated, ingen tracket spiller med bekreftet kommende event innen horisonten funnet."
   ]
 }
