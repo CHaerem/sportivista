@@ -150,61 +150,6 @@
     ]
   },
   {
-    "sport": "football",
-    "tournament": "Serie A",
-    "title": "Bologna at Atalanta",
-    "time": "2026-08-31T18:45:00Z",
-    "endTime": null,
-    "venue": "Gewiss Stadium, Bergamo",
-    "norwegian": false,
-    "homeTeam": "Atalanta",
-    "awayTeam": "Bologna",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://tv.vg.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-29T13:55:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
-      "https://sport.quotidiano.net/calcio/seriea/serie-a-seconda-giornata-probabili-formazioni-orari-e-dove-vedere-le-gare-4a0eea38",
-      "https://www.tvkampen.com/sport/fotball/serie-a-2026-27-pa-norsk-tv-inter-forsvarer-tronen-rivalene-star-i-ko/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "lega-serie-a",
-        "url": "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
-        "basis": "primary",
-        "retrievedAt": "2026-08-29T13:55:00Z",
-        "note": "Lega Serie A offisielle kalender for 2. giornata, gjengitt av Sky Sport Italia + Quotidiano Sportivo (to uavhengige kilder enige)"
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://tv.vg.no",
-        "basis": "official",
-        "retrievedAt": "2026-08-29T13:55:00Z",
-        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27 (VGs egen kunngjøring; tvkampen.com/tvtilbud.no bekrefter)"
-      }
-    },
-    "summary": "Serie A 2. serierunde: Atalanta–Bologna avslutter runden. Avspark mandag 31. august 20:45 CEST (18:45 UTC) på Gewiss Stadium.\n\nNorsk visning: VG+ Sport.",
-    "homeTeamEntityId": "atalanta",
-    "awayTeamEntityId": "bologna",
-    "id": "cbb5f7b7e24c",
-    "verifiedAt": "2026-08-30T10:38:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://sport.sky.it/calcio/serie-a/2026/08/28/calendario-serie-a-2-giornata",
-      "https://sport.quotidiano.net/calcio/seriea/serie-a-seconda-giornata-probabili-formazioni-orari-e-dove-vedere-le-gare-4a0eea38"
-    ]
-  },
-  {
     "sport": "cycling",
     "tournament": "Tour of Britain",
     "title": "Tour of Britain 2026",
@@ -4643,41 +4588,6 @@
   },
   {
     "sport": "football",
-    "tournament": "Eliteserien",
-    "title": "Bodø/Glimt – Sandefjord",
-    "time": "2026-09-14T17:00:00.000Z",
-    "endTime": null,
-    "venue": "Aspmyra Stadion",
-    "meta": "Eliteserien",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/bodglimt-sandefjord-1834950",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "TV 2 Sport 1",
-        "url": "https://www.tvkampen.com/kamp/bodglimt-sandefjord-1834950",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Bodø/Glimt",
-    "awayTeam": "Sandefjord",
-    "isFavorite": true,
-    "round": null,
-    "id": "1cbc92b5904c",
-    "homeTeamEntityId": "bodo-glimt",
-    "awayTeamEntityId": "sandefjord"
-  },
-  {
-    "sport": "football",
     "tournament": "Serie A",
     "title": "Udinese at Inter",
     "time": "2026-09-14T18:45:00Z",
@@ -5702,6 +5612,36 @@
   },
   {
     "sport": "football",
+    "tournament": "La Liga",
+    "title": "Elche at Espanyol",
+    "time": "2026-09-18T19:00:00.000Z",
+    "endTime": null,
+    "venue": "RCDE Stadium",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Espanyol",
+    "awayTeam": "Elche",
+    "isFavorite": false,
+    "round": null,
+    "id": "ffc45e154c51",
+    "homeTeamEntityId": "espanyol",
+    "awayTeamEntityId": "elche"
+  },
+  {
+    "sport": "football",
     "tournament": "Premier League",
     "title": "Aston Villa at Tottenham Hotspur",
     "time": "2026-09-19T11:30:00.000Z",
@@ -5730,6 +5670,36 @@
     "homeTeamEntityId": "tottenham-hotspur",
     "awayTeamEntityId": "aston-villa",
     "summary": "Premier League runde 5. Avspark 12.30 (lørdag). Vises på Viaplay i Norge."
+  },
+  {
+    "sport": "football",
+    "tournament": "La Liga",
+    "title": "Rayo Vallecano at Osasuna",
+    "time": "2026-09-19T12:00:00.000Z",
+    "endTime": null,
+    "venue": "El Sadar",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Osasuna",
+    "awayTeam": "Rayo Vallecano",
+    "isFavorite": false,
+    "round": null,
+    "id": "7ef03e6e5abf",
+    "homeTeamEntityId": "osasuna",
+    "awayTeamEntityId": "rayo-vallecano"
   },
   {
     "sport": "football",
@@ -6053,6 +6023,36 @@
     "homeTeamEntityId": "newcastle-united",
     "awayTeamEntityId": "hull-city",
     "summary": "Premier League runde 5. Avspark 15.00 (lørdag). Vises på Viaplay i Norge."
+  },
+  {
+    "sport": "football",
+    "tournament": "La Liga",
+    "title": "Alavés at Athletic Club",
+    "time": "2026-09-19T14:15:00.000Z",
+    "endTime": null,
+    "venue": "San Mamés",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Athletic Club",
+    "awayTeam": "Alavés",
+    "isFavorite": false,
+    "round": null,
+    "id": "813140ff4772",
+    "homeTeamEntityId": "athletic-club",
+    "awayTeamEntityId": "alaves"
   },
   {
     "sport": "football",
