@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-14T02:42:08.227Z",
+  "generatedAt": "2026-09-14T08:24:46.742Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
     "amendRate": "green",
     "silentStops": "yellow",
     "participantStatus": "green",
-    "contracts": "green"
+    "contracts": "yellow"
   },
   "basis": {
     "coverageAudit": true,
@@ -27,7 +27,7 @@
       "medium": 3,
       "low": 0
     },
-    "oldestGapAgeDays": 13.67,
+    "oldestGapAgeDays": 13.91,
     "escalatable": 1,
     "catalogMatched": 3,
     "auditedAt": "2026-09-13T08:20:00Z",
@@ -35,21 +35,21 @@
       {
         "interest": "F1 — Singapore Grand Prix (løp søn. 11. okt, race Round 17)",
         "severity": "medium",
-        "ageDays": 0.77,
+        "ageDays": 1,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Sykkel — Il Lombardia (lør. 10. okt, sesongens 5. og siste Monument)",
         "severity": "medium",
-        "ageDays": 0.77,
+        "ageDays": 1,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — Elkjøp-ligaen (menn + kvinner) NESTE serierunde (~19.–20. sep) utover det som er boardet",
         "severity": "medium",
-        "ageDays": 13.67,
+        "ageDays": 13.91,
         "recurrences": 13,
         "catalogMatched": true
       }
@@ -160,21 +160,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-14T02:42:03.818Z",
+    "buildCheckedAt": "2026-09-14T08:24:44.272Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-13T23:50:04.661Z",
-    "manifestAgeHours": 2.87,
+    "manifestGeneratedAt": "2026-09-14T02:42:09.629Z",
+    "manifestAgeHours": 5.71,
     "staleFiles": [
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-09-06T16:41:15.881Z",
-        "ageHours": 178.01
+        "ageHours": 183.73
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-09-13T10:27:45Z",
-    "verifyAgeHours": 16.24,
+    "verifyAgeHours": 21.95,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -182,7 +182,15 @@
   "contracts": {
     "total": 6,
     "inSeason": 6,
-    "breached": [],
-    "generatedAt": "2026-09-14T02:42:08.227Z"
+    "breached": [
+      {
+        "id": "tennis:tour",
+        "name": "ATP/WTA Tour",
+        "upcoming": 0,
+        "minUpcoming": 1,
+        "horizonDays": 14
+      }
+    ],
+    "generatedAt": "2026-09-14T08:24:46.742Z"
   }
 }

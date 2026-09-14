@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-09-14T02:42:09.403Z",
-  "gapCount": 2,
+  "generatedAt": "2026-09-14T08:24:48.102Z",
+  "gapCount": 3,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Formel 1",
+      "entity": "Man City",
       "type": "missing",
       "imminent": false,
-      "headline": "VM-leder Antonelli vant i Madrid – bremsetrøbbel for Hamilton",
-      "link": "https://www.nrk.no/sport/vm-leder-antonelli-vant-i-madrid-_-bremsetrobbel-for-hamilton-1.18023333",
-      "feed": "nrk-sport",
+      "headline": "Haaland scores controversial winner as Man City win derby despite Foden red",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cpd0j54xlyyo?at_medium=RSS&amp;at_campaign=rss",
+      "feed": "bbc-football",
       "matchCount": 2,
-      "detectedAt": "2026-09-14T02:42:08.498Z"
+      "detectedAt": "2026-09-14T08:24:46.998Z"
     },
     {
       "kind": "tracked-claim",
@@ -24,18 +24,28 @@
       "claimedDate": "2026-09-24T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-09-14T02:42:09.162Z"
+      "detectedAt": "2026-09-14T08:24:47.833Z"
+    },
+    {
+      "kind": "contract-breach",
+      "type": "missing",
+      "interest": "ATP/WTA Tour",
+      "sport": "tennis",
+      "severity": "high",
+      "imminent": true,
+      "detail": "Dekningskontrakt brutt: 0 av minst 1 ventede events innen 14 dager for ATP/WTA Tour (i sesong). Gå til den navngitte autoriteten (atp-tour, wta, swiss-open-gstaad) og fyll tavla.",
+      "detectedAt": "2026-09-14T08:24:47.892Z"
     }
   ],
   "anomalies": [
     {
       "sport": "golf",
       "issue": "stale-retained",
-      "detail": "docs/data/golf.json has been served from retention for 55 consecutive run(s) — no fresh fetch in 7 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 55,
+      "detail": "docs/data/golf.json has been served from retention for 56 consecutive run(s) — no fresh fetch in 7 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 56,
       "staleDays": 7,
       "severity": "high",
-      "detectedAt": "2026-09-14T02:42:09.224Z"
+      "detectedAt": "2026-09-14T08:24:47.892Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
