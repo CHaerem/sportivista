@@ -1,18 +1,18 @@
 {
-  "checkedAt": "2026-09-14T14:40:29Z",
+  "checkedAt": "2026-09-15T13:06:25Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
-    "Captured and read full-page screenshots at 375px, 393px and 900px for mandag 14. september's agenda.",
-    "Match names render fully at all widths, no truncation that hides a side or a key detail — e.g. 'Kolstad – Industria Kielce', 'Nottingham Forest – Coventry City', 'Manchester City – Sunderland' all readable end to end.",
-    "Every visible event carries a channel line, and all are Norwegian: TV 2 Play, TV 2, TV 2 Sport 2, Viaplay, VG+ Sport, HBO Max (Sport) — no FOX/ESPN/Sky or other foreign broadcaster seen.",
-    "Times are consistent 24h format and sensibly placed in the fixed time column; multi-day items (BMW PGA Championship 17.-20. september, Biltmore Championship 17.-21. september, Norge-Kina Davis Cup 18.-19. september, UCI Road World Championships tempo events) show date ranges correctly instead of a single misleading day.",
-    "Club crests and small sport icons render as intended (no broken-image boxes) across Premier League, La Liga, Bundesliga, Eliteserien and UEFA Europa League rows.",
+    "Captured and read full-page screenshots at 375px, 393px and 900px for tirsdag 15. september's agenda (dark theme), plus targeted close-up crops of the header/hero, the Fredag 18.-Lørdag 19. block, and the scrolled-to-bottom footer at 375px to check detail that the full-page thumbnail compresses too much to judge reliably.",
+    "Match names render fully at all widths, no truncation that hides a side or key detail — 'Rayo Vallecano – Espanyol', 'Kolstad – Industria Kielce', 'Tottenham Hotspur – Aston Villa', 'Brighton & Hove Albion – Arsenal', 'Nottingham Forest – Coventry City' all readable end to end, wrapping to a second line rather than clipping.",
+    "Every visible event carries a channel line, all Norwegian: Viaplay, TV 2 Play, TV 2 Sport 2, Eurosport/HBO Max, HBO Max (Sport) — no FOX/ESPN/Sky or other foreign broadcaster seen. Davis Cup 'Norge – Kina' honestly shows a faint '–' for channel rather than guessing.",
+    "Times consistent 24h format in the fixed time column; multi-day items (BMW PGA Championship 17.-20. september, Biltmore Championship 17.-21. september, Norge-Kina Davis Cup 18.-19. september) show correct date ranges.",
+    "Club crests and small sport icons render cleanly at 2x close-up (Rayo Vallecano, Alavés, Elche, Sarpsborg 08, Bayern München, Brentford, Espanyol, Tottenham) — no broken-image boxes or empty placeholders.",
     "No horizontal scroll or edge clipping at any width, including the tightest 375px column.",
-    "Single quiet column, clear day-grouped headings (I DAG / I MORGEN / weekday dates), generous row spacing; at 900px the agenda stays centered in a ~640px column with empty margin either side rather than stretching full width. Must-see amber accent dots appear on a minority of rows only (e.g. Boda/Glimt–Sandefjord, Elche–Real Madrid, Norge–Kina, several weekend Eliteserien/Premier League rows), not on everything.",
-    "Header (wordmark, date, theme toggle), 'Kveldsbrifen' editorial line, day headings, 'Dette dekker vi' / 'Merker og kilder' disclosures, and footer (oppdatert-dato, kalenderabonnement, AI-budsjett line) are all intact and aligned at every width.",
-    "On the 900px screenshot the floating Assistent button (sparkles, bottom-trailing) sits over a mid-agenda row in the 'I MORGEN' section (Alavés – Valencia) — this is the sanctioned iOS 26 floating-button idiom per DESIGN.md § Hjelperen, not a finding. It does not cover the last agenda row or the footer text in this capture.",
-    "Not independently re-verified against the live web (network-free per the script's self-serve mode); assessment is limited to what the committed docs/ data renders."
+    "Single quiet column, clear day-grouped headings (I DAG / I MORGEN / weekday dates), generous row spacing; at 900px the agenda stays centered in a ~640px column with empty margin either side. Must-see amber accent dots appear on a minority of rows only (Elche–Real Madrid, BMW PGA Championship, Norge–Kina, a handful of weekend Eliteserien rows), not on everything.",
+    "Header (wordmark, date, theme toggle), 'Kveldsbrifen' editorial line, Uke/Nyheter tab, day headings, 'Neste opp' countdown, 'Dette dekker vi' / 'Merker og kilder' disclosures, and footer (oppdatert-dato, kalenderabonnement, data-alder note, AI-budsjett line) all intact and aligned at every width.",
+    "Checked the one guaranteed failure mode for the floating Assistent button by scrolling the 375px view to the true bottom: it sits clear below the AI-budsjett footer line with visible gap, not covering the last agenda row or any footer text — consistent with DESIGN.md § Hjelperen. At 900px it rests in the empty margin beside the 640px column over 'Alavés – Valencia', the sanctioned mid-agenda overlap, not a finding.",
+    "Not independently re-verified against the live web (network-free per the script's self-serve mode); assessment limited to what the committed docs/ data renders."
   ]
 }
