@@ -118,5 +118,13 @@
     "verdict": "quiet",
     "reason": "RSS (31 items, 20:44 UTC): past results (Leeds-Newcastle live/ongoing, Glimt-Sandefjord result, Zverev US Open concluded Sep 13), transfer/retirement/career news (LSK/Fet structural change, Baldauf wrestling retirement, Engebråten speed-skating retirement), venue work (Åråsen Europa League cleanup), refereeing decisions (Haaland VAR review, past matches only), athlete health/discipline (Rooth diet context, Knut Røhme doping suspension). No schedule/time/venue/streaming/broadcaster changes to upcoming tracked events. Coverage gaps (4): Rooth (coeliac disease article, not an event), Arsenal (imminent=true but just podcast mentions of existing tracked matches, not a new event), Håvard rain Nygaard (tracked-claim, claimedDate 2026-09-24 = 10 days, imminent=false, no new CS2 match announcement in RSS), ATP/WTA Tour (imminent=true, already escalated 10:18 UTC). Anomalies (2): golf.json stale-retained 59 runs/8 days (infrastructure issue, not event escalation); esports.json empty (fetcher issue, not event signal). No tracked-athlete imminent event announcements, no 100 Thieves/rain CS2 match hints, no new concrete upcoming events. Already at cap from ATP/WTA (1/2). Escalation cap today (UTC): 1/2.",
     "signals": []
+  },
+  {
+    "runAt": "2026-09-14T23:40:51.685Z",
+    "verdict": "escalate",
+    "reason": "RSS (34 items, 23:40 UTC): Therese Johaug confirmed for Copenhagen Half Marathon next weekend. NRK headline published Sep 14 14:12 UTC: \"Avgjørelsen tatt: Johaug trosser skadetrøbbel – løper halvmaraton i København\". Manager Jørn Ernst confirmed. This is a concrete, imminent upcoming event for a tracked Norwegian athlete warranting research verification of exact date, time, venue, and streaming options. Coverage gaps (2 gaps, 1 anomaly): Håvard rain Nygaard esports (tracked-claim, claimedDate 2026-09-24 = 10 days, imminent=false, no new CS2 match in RSS); ATP/WTA Tour (imminent=true, already escalated 10:18 UTC). Anomalies (2): golf.json stale-retained 60 runs HIGH (infrastructure issue, not event escalation); esports.json empty (fetcher issue, not event signal). Escalation cap today (UTC): 2/2 (ATP/WTA at 10:18 UTC, this Johaug signal).",
+    "signals": [
+      "Therese Johaug: Copenhagen Half Marathon confirmed (next weekend, tracked Norwegian athlete event)"
+    ]
   }
 ]
