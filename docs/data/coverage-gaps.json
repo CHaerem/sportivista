@@ -1,19 +1,8 @@
 {
-  "generatedAt": "2026-09-14T23:41:08.502Z",
-  "gapCount": 6,
+  "generatedAt": "2026-09-15T00:07:39.566Z",
+  "gapCount": 5,
   "anomalyCount": 3,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Rooth",
-      "type": "missing",
-      "imminent": false,
-      "headline": "100.000 nordmenn har samme sykdom: – Blir kvalm av lukten",
-      "link": "https://www.nrk.no/sport/100.000-nordmenn-har-samme-sykdom_-_-blir-kvalm-av-lukten-1.18011747",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-09-14T23:41:07.581Z"
-    },
     {
       "kind": "entity",
       "entity": "Arsenal",
@@ -23,7 +12,7 @@
       "link": "https://www.theguardian.com/football/audio/2026/sep/14/football-weekly-podcast-manchester-derby-var-controversy-city-united-arsenal",
       "feed": "guardian-football",
       "matchCount": 3,
-      "detectedAt": "2026-09-14T23:41:07.581Z"
+      "detectedAt": "2026-09-15T00:07:38.428Z"
     },
     {
       "kind": "tracked-claim",
@@ -35,7 +24,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "karsten-warholm",
-      "detectedAt": "2026-09-14T23:41:08.304Z"
+      "detectedAt": "2026-09-15T00:07:39.287Z"
     },
     {
       "kind": "tracked-claim",
@@ -47,7 +36,7 @@
       "claimedDate": "2027-06-29T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "magnus-carlsen",
-      "detectedAt": "2026-09-14T23:41:08.304Z"
+      "detectedAt": "2026-09-15T00:07:39.287Z"
     },
     {
       "kind": "tracked-claim",
@@ -59,7 +48,7 @@
       "claimedDate": "2026-09-24T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-09-14T23:41:08.304Z"
+      "detectedAt": "2026-09-15T00:07:39.287Z"
     },
     {
       "kind": "contract-breach",
@@ -69,32 +58,32 @@
       "severity": "high",
       "imminent": true,
       "detail": "Dekningskontrakt brutt: 0 av minst 1 ventede events innen 14 dager for ATP/WTA Tour (i sesong). Gå til den navngitte autoriteten (atp-tour, wta, swiss-open-gstaad) og fyll tavla.",
-      "detectedAt": "2026-09-14T23:41:08.343Z"
+      "detectedAt": "2026-09-15T00:07:39.341Z"
     }
   ],
   "anomalies": [
     {
       "sport": "golf",
       "issue": "stale-retained",
-      "detail": "docs/data/golf.json has been served from retention for 60 consecutive run(s) — no fresh fetch in 8 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 60,
+      "detail": "docs/data/golf.json has been served from retention for 61 consecutive run(s) — no fresh fetch in 8 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 61,
       "staleDays": 8,
       "severity": "high",
-      "detectedAt": "2026-09-14T23:41:08.343Z"
+      "detectedAt": "2026-09-15T00:07:39.341Z"
     },
     {
       "sport": "chess",
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-09-14T23:41:08.343Z"
+      "detectedAt": "2026-09-15T00:07:39.341Z"
     },
     {
       "sport": "esports",
       "issue": "file-empty",
       "detail": "docs/data/esports.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-09-14T23:41:08.343Z"
+      "detectedAt": "2026-09-15T00:07:39.341Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
