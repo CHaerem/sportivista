@@ -144,5 +144,13 @@
     "verdict": "quiet",
     "reason": "RSS (55 items, 18:41 UTC): football match-day live (Carabao Cup, Ipswich v Arsenal, Liverpool v Tottenham—all tracked, no schedule/time/venue/streaming/broadcaster changes). Past results and commentary (Leeds-Newcastle, VAR controversy—all concluded, no impact). Squad announcements (Denmark/Norway landslagstroppen for Sep 24+ matches—matches already tracked). Personnel/transfer news (Uno-X signing, Frida Karlsson sprint plan, Torleif Syrstad Ski Classics transfer—no event-schedule impact). Withdrawal news (Karoline Bjerkeli Grøvdal out of VM i gateløp half-marathon—a WITHDRAWAL, not a schedule change to a tracked event). Infrastructure decisions (hockey 40 rounds due to Sparta bankruptcy—already decided, no new event signal). Coverage gaps (7 gaps, 3 anomalies): entity/tracked-claim gaps (all non-imminent or no new signal—Ingebrigtsen, Warholm, Carlsen, Uno-X); ATP/WTA Tour contract breach (imminent=true, but already escalated Sep 14 10:18 UTC, no new development today); anomalies: golf.json stale-retained 64 runs (infrastructure issue, not event escalation); chess.json/esports.json empty (fetcher issues, no signal for rain/100 Thieves CS2). No new schedule/time/venue changes to existing tracked events, no new broadcaster announcements affecting upcoming events, no new rain CS2 match hints, no new tracked-athlete imminent event announcements, no new concrete upcoming events requiring escalation. Escalation cap today (UTC): 0/2.",
     "signals": []
+  },
+  {
+    "runAt": "2026-09-15T22:25:50.205Z",
+    "verdict": "escalate",
+    "reason": "contract-breach (HIGH, imminent): ATP/WTA Tour — coverage contract requires ≥1 event in next 14 days but board has 0. Authority: atp-tour, wta, swiss-open-gstaad.",
+    "signals": [
+      "contract-breach-ATP/WTA-Tour"
+    ]
   }
 ]
