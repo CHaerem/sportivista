@@ -1,18 +1,40 @@
 {
-  "generatedAt": "2026-09-15T14:37:50.994Z",
-  "gapCount": 7,
-  "anomalyCount": 3,
+  "generatedAt": "2026-09-15T18:42:19.408Z",
+  "gapCount": 9,
+  "anomalyCount": 2,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Rooth",
+      "entity": "Jakob Ingebrigtsen",
       "type": "missing",
       "imminent": false,
-      "headline": "100.000 nordmenn har samme sykdom: – Blir kvalm av lukten",
-      "link": "https://www.nrk.no/sport/100.000-nordmenn-har-samme-sykdom_-_-blir-kvalm-av-lukten-1.18011747",
+      "headline": "Bisarre spådommer på direkten – nå kommer forklaringen",
+      "link": "https://www.nrk.no/sport/friidrett_-fikk-jakob-ingebrigtsen-til-a-sperre-opp-oynene-_-na-kommer-forklaringen-1.18023938",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-09-15T14:37:49.813Z"
+      "detectedAt": "2026-09-15T18:42:18.359Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Ingebrigtsen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Bisarre spådommer på direkten – nå kommer forklaringen",
+      "link": "https://www.nrk.no/sport/friidrett_-fikk-jakob-ingebrigtsen-til-a-sperre-opp-oynene-_-na-kommer-forklaringen-1.18023938",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-09-15T18:42:18.359Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Liverpool",
+      "type": "imminent",
+      "imminent": true,
+      "headline": "Ipswich Town v Arsenal: Carabao Cup third round – live",
+      "link": "https://www.theguardian.com/football/live/2026/sep/15/ipswich-town-v-arsenal-carabao-cup-third-round-live",
+      "feed": "guardian-football",
+      "matchCount": 2,
+      "detectedAt": "2026-09-15T18:42:18.359Z"
     },
     {
       "kind": "entity",
@@ -22,8 +44,8 @@
       "headline": "Kristoffs lillebror klar for Uno-X: – Måtte bare slå til",
       "link": "https://www.nrk.no/sport/kristoffs-lillebror-klar-for-uno-x_-_-matte-bare-sla-til-1.18025802",
       "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-09-15T14:37:49.813Z"
+      "matchCount": 2,
+      "detectedAt": "2026-09-15T18:42:18.359Z"
     },
     {
       "kind": "entity",
@@ -34,7 +56,7 @@
       "link": "https://www.nrk.no/sport/uefa-tar-nytt-grep-_-lettere-for-norge-a-beholde-a-status-i-nasjonsligaen-1.18025546",
       "feed": "nrk-sport",
       "matchCount": 2,
-      "detectedAt": "2026-09-15T14:37:49.813Z"
+      "detectedAt": "2026-09-15T18:42:18.359Z"
     },
     {
       "kind": "tracked-claim",
@@ -46,7 +68,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "karsten-warholm",
-      "detectedAt": "2026-09-15T14:37:50.738Z"
+      "detectedAt": "2026-09-15T18:42:19.210Z"
     },
     {
       "kind": "tracked-claim",
@@ -58,7 +80,7 @@
       "claimedDate": "2027-06-29T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "magnus-carlsen",
-      "detectedAt": "2026-09-15T14:37:50.738Z"
+      "detectedAt": "2026-09-15T18:42:19.210Z"
     },
     {
       "kind": "tracked-claim",
@@ -70,7 +92,7 @@
       "claimedDate": "2026-09-24T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-09-15T14:37:50.738Z"
+      "detectedAt": "2026-09-15T18:42:19.210Z"
     },
     {
       "kind": "contract-breach",
@@ -80,32 +102,23 @@
       "severity": "high",
       "imminent": true,
       "detail": "Dekningskontrakt brutt: 0 av minst 1 ventede events innen 14 dager for ATP/WTA Tour (i sesong). Gå til den navngitte autoriteten (atp-tour, wta, swiss-open-gstaad) og fyll tavla.",
-      "detectedAt": "2026-09-15T14:37:50.789Z"
+      "detectedAt": "2026-09-15T18:42:19.256Z"
     }
   ],
   "anomalies": [
-    {
-      "sport": "golf",
-      "issue": "stale-retained",
-      "detail": "docs/data/golf.json has been served from retention for 64 consecutive run(s) — no fresh fetch in 8 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 64,
-      "staleDays": 8,
-      "severity": "high",
-      "detectedAt": "2026-09-15T14:37:50.789Z"
-    },
     {
       "sport": "chess",
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-09-15T14:37:50.789Z"
+      "detectedAt": "2026-09-15T18:42:19.256Z"
     },
     {
       "sport": "esports",
       "issue": "file-empty",
       "detail": "docs/data/esports.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-09-15T14:37:50.789Z"
+      "detectedAt": "2026-09-15T18:42:19.256Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
