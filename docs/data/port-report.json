@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-15T09:46:21.853Z",
+  "generatedAt": "2026-09-15T14:37:49.553Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
-    "amendRate": "green",
+    "amendRate": "red",
     "silentStops": "yellow",
     "participantStatus": "green",
     "contracts": "yellow"
@@ -27,7 +27,7 @@
       "medium": 3,
       "low": 0
     },
-    "oldestGapAgeDays": 14.97,
+    "oldestGapAgeDays": 15.17,
     "escalatable": 1,
     "catalogMatched": 5,
     "auditedAt": "2026-09-15T09:15:00Z",
@@ -35,57 +35,50 @@
       {
         "interest": "CS2 — StarLadder StarSeries Fall 2026 (17.–20. sep, Barcelona, $500k)",
         "severity": "high",
-        "ageDays": 1.05,
+        "ageDays": 1.25,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "CS2 — Stake Pulse Beat II (21.–26. sep, Stockholm, 100 Thieves / «rain»)",
         "severity": "high",
-        "ageDays": 1.05,
+        "ageDays": 1.25,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "CS2 — ESL Pro League Season 24 (3.–11. okt, Katowice/Spodek, $1M)",
         "severity": "medium",
-        "ageDays": 1.05,
+        "ageDays": 1.25,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Shanghai Masters (ATP Masters 1000, ~7.–18. okt)",
         "severity": "medium",
-        "ageDays": 1.05,
+        "ageDays": 1.25,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — Elkjøp-ligaen (menn + kvinner) serierunde ~19.–20. sep utover det boardede",
         "severity": "medium",
-        "ageDays": 14.97,
+        "ageDays": 15.17,
         "recurrences": 15,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0,
-    "nearTermChecked": 7,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-09-14T10:52:29.418Z",
+    "nearTermRate": 0.67,
+    "nearTermChecked": 3,
+    "nearTermAmended": 2,
+    "verifyRunAt": "2026-09-15T10:17:02.212Z",
     "windowRate": 0,
-    "windowChecks": 108,
+    "windowChecks": 106,
     "windowAmendments": 0,
-    "windowCorrections": 3,
+    "windowCorrections": 4,
     "byDay": [
-      {
-        "date": "2026-09-01",
-        "checks": 6,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-09-02",
         "checks": 8,
@@ -169,31 +162,38 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-09-15",
+        "checks": 4,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-15T09:46:13.185Z",
+    "buildCheckedAt": "2026-09-15T14:37:43.883Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-15T08:15:40.681Z",
-    "manifestAgeHours": 1.51,
+    "manifestGeneratedAt": "2026-09-15T09:46:25.141Z",
+    "manifestAgeHours": 4.86,
     "staleFiles": [
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-09-06T16:41:15.881Z",
-        "ageHours": 209.08
+        "ageHours": 213.94
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-09-14T05:10:00Z",
-        "ageHours": 28.61
+        "ageHours": 33.46
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-09-14T10:52:29.418Z",
-    "verifyAgeHours": 22.9,
+    "checkedAt": "2026-09-15T10:17:02.212Z",
+    "verifyAgeHours": 4.35,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -210,6 +210,6 @@
         "horizonDays": 14
       }
     ],
-    "generatedAt": "2026-09-15T09:46:21.852Z"
+    "generatedAt": "2026-09-15T14:37:49.552Z"
   }
 }
