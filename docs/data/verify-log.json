@@ -1,14 +1,17 @@
 {
-  "runAt": "2026-09-15T10:17:02.212Z",
-  "checked": 3,
-  "confirmed": 1,
-  "amended": 2,
+  "runAt": "2026-09-16T10:20:00Z",
+  "checked": 16,
+  "confirmed": 15,
+  "amended": 1,
   "removed": 0,
   "notes": [
-    "Sykkel-VM 2026 (UCI Road World Championships, Montréal): amended streaming on BOTH elite ITT-events (kvinner 20.09 13:00 UTC, menn 20.09 16:45 UTC) from «TV 2 Play» → «Eurosport / HBO Max». WBD-pressemelding (media.wbdsports.com) bekrefter at Warner Bros. Discovery holder Europa-rettighetene til VM (eksklusivt i 35 territorier, ekskl. Danmark; Norge ikke-eksklusivt). TV 2s sykkelavtale gjelder Tour de France, IKKE VM — «TV 2 Play» var feil kanal. Provenance.streaming stamped basis:official mot WBD-kilden. Summary-prosa oppdatert i samme slengen (validate flagget summary↔streaming-mismatch til den var rettet).",
-    "Sykkel-VM ITT-tider bekreftet mot Wikipedia (2026_UCI_Road_World_Championships): kvinner 09:00 EDT = 13:00 UTC, menn 12:45 EDT = 16:45 UTC — stemmer med board. (En web-søk-sammendrag ga feil tider; Wikipedia-tabellen er fasit.)",
-    "Davis Cup Norge–Kina (18.–19. sep, Trondheim Spektrum): eksistens/dato bekreftet mot NTF-pressemelding (kommunikasjon.ntb.no). Norsk kringkaster fortsatt IKKE bekreftet — daviscup.com where-to-watch ga HTTP 403, NTB-pressemeldingen oppgir ingen kanal. Streaming holdt tomt med eksisterende ærlige note («kringkaster ikke bekreftet»); ingen gjetning skrevet.",
-    "Bundesliga/Europa League-kampene (Viaplay) i vinduet ble ikke re-verifisert enkeltvis: kanalen stemmer med norwegian-rights-skillet (EL→Viaplay [solid], Bundesliga→Viaplay), tidene fra bundesliga.com bekreftet fixture-liste. Ingen churn.",
-    "SKILL-EDIT BLOKKERT AV PERMISSION-GATE denne kjøringen: forsøkte å legge til «UCI Road World Championships → Eurosport / HBO Max» i .claude/skills/norwegian-rights/SKILL.md via Edit-verktøyet. Literal feiltekst: «Claude requested permissions to write to /home/runner/work/sportivista/sportivista/.claude/skills/norwegian-rights/SKILL.md, but you haven't granted it yet.» (NB: dette er en session-permission-blokk på selve Edit-kallet, IKKE den avlivede WP-91-legenden — læringen er verdifull og bør skrives inn når gaten tillater det.)"
+    "CS2 StarLadder StarSeries Fall (Barcelona) dag1 17.09: alle fire kamper (MOUZ-NRG, magic-Vitality, NAVI-Aurora, FURIA-MIBR) bekreftet mot Liquipedia/tips.gg — tider 12:00/14:30/17:00/19:30 CEST = 10:00/12:30/15:00/17:30 UTC, matcher tavla; offisiell Twitch/Kick-stream korrekt.",
+    "100 Thieves–EAC (rain) 23.09 Stake Pulse Beat II, Stockholm: 12:00 CEST (10:00 UTC) bekreftet mot HLTV/stakepulse.gg; Kick stake_pulse korrekt.",
+    "Europa League MD1 (idx 86,87,97,98,99,100): datoer+tider bekreftet mot UEFAs offisielle ligaspill-oppsett; alle 21:00 CEST (19:00 UTC), ingen i 18:45-unntakslista. Viaplay korrekt for EL i Norge (norwegian-rights).",
+    "Road-VM Montreal: ITT elite kvinner/menn 20.09 (13:00/16:45 UTC) og mixed relay 22.09 (12:30 UTC) bekreftet mot procyclinguk full schedule. NB kildekonflikt: enkelte guider daterer mixed relay til man 21.09 — tavla + procyclinguk sier 22.09, beholdt.",
+    "Kolstad–Industria Kielce (EHF CL) 16.09 18:45 UTC + Trondheim Spektrum bekreftet; TV 2 Sport 2/TV 2 Play korrekt.",
+    "Davis Cup Norge–Kina (Casper Ruud): tid 16:00 UTC + Trondheim Spektrum bekreftet mot arrangor. Streaming var TOM — la til TV 2 Play (tentative) basert paa daviscup.com where-to-watch (TV 2 viser Norges lag-tier). Per-kamp-kanal ikke publisert enda.",
+    "Bundesliga/2. Bundesliga-kampene (idx 104,109-138) og Elkjop-ligaen Fjellhammer-Kolstad ikke web-verifisert denne kjoringen (tidsbudsjett) — rorte dem ikke framfor aa stemple uverifisert.",
+    "Lærte durabelt: Davis Cup i Norge = TV 2/TV 2 Play når Norges lag spiller, ellers Discovery+/Eurosport (daviscup.com). Ville lagt dette i norwegian-rights-skillen, men Edit-verktøyet ble avvist med permission-prompt (\"requested permissions to write ... but you haven't granted it yet\") i denne økta — ikke persistert."
   ]
 }
