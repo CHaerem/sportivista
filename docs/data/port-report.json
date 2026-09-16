@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-16T08:09:35.528Z",
+  "generatedAt": "2026-09-16T09:40:24.877Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "red",
+    "coverage": "yellow",
     "amendRate": "red",
     "silentStops": "green",
     "participantStatus": "green",
@@ -21,50 +21,43 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 5,
+    "openGaps": 4,
     "bySeverity": {
-      "high": 2,
+      "high": 0,
       "medium": 3,
-      "low": 0
+      "low": 1
     },
-    "oldestGapAgeDays": 15.9,
+    "oldestGapAgeDays": 15.96,
     "escalatable": 1,
-    "catalogMatched": 5,
-    "auditedAt": "2026-09-15T09:15:00Z",
+    "catalogMatched": 4,
+    "auditedAt": "2026-09-16T09:20:00Z",
     "gaps": [
       {
-        "interest": "CS2 — StarLadder StarSeries Fall 2026 (17.–20. sep, Barcelona, $500k)",
-        "severity": "high",
-        "ageDays": 1.98,
-        "recurrences": 1,
-        "catalogMatched": true
-      },
-      {
-        "interest": "CS2 — Stake Pulse Beat II (21.–26. sep, Stockholm, 100 Thieves / «rain»)",
-        "severity": "high",
-        "ageDays": 1.98,
-        "recurrences": 1,
+        "interest": "CS2 — StarLadder StarSeries Fall 2026 (17.–20. sep, Barcelona, $500k) resterende dager",
+        "severity": "low",
+        "ageDays": 2.05,
+        "recurrences": 2,
         "catalogMatched": true
       },
       {
         "interest": "CS2 — ESL Pro League Season 24 (3.–11. okt, Katowice/Spodek, $1M)",
         "severity": "medium",
-        "ageDays": 1.98,
-        "recurrences": 1,
+        "ageDays": 2.05,
+        "recurrences": 2,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Shanghai Masters (ATP Masters 1000, ~7.–18. okt)",
         "severity": "medium",
-        "ageDays": 1.98,
-        "recurrences": 1,
+        "ageDays": 2.05,
+        "recurrences": 2,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — Elkjøp-ligaen (menn + kvinner) serierunde ~19.–20. sep utover det boardede",
         "severity": "medium",
-        "ageDays": 15.9,
-        "recurrences": 15,
+        "ageDays": 15.96,
+        "recurrences": 16,
         "catalogMatched": true
       }
     ]
@@ -174,15 +167,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-16T08:09:32.315Z",
+    "buildCheckedAt": "2026-09-16T09:40:20.717Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-16T02:40:35.909Z",
-    "manifestAgeHours": 5.48,
+    "manifestGeneratedAt": "2026-09-16T08:09:37.141Z",
+    "manifestAgeHours": 1.51,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-09-15T10:17:02.212Z",
-    "verifyAgeHours": 21.88,
+    "verifyAgeHours": 23.39,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -199,6 +192,6 @@
         "horizonDays": 14
       }
     ],
-    "generatedAt": "2026-09-16T08:09:35.528Z"
+    "generatedAt": "2026-09-16T09:40:24.877Z"
   }
 }
