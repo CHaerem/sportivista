@@ -1,24 +1,20 @@
 {
-  "runAt": "2026-09-15T22:10:00Z",
-  "tier": "deep",
-  "eventsAdded": 5,
+  "runAt": "2026-09-16T13:35:00Z",
+  "tier": "standard",
+  "eventsAdded": 0,
   "eventsRemoved": 0,
-  "trackedDelta": "Added esports tournament entries starladder-starseries-fall-2026 (high) + stake-pulse-beat-ii-2026 (high) for the two HIGH imminent CS2 recall-gaps. Added horizon placeholders esl-pro-league-s24-2026 (medium, ~3-11 Oct) + shanghai-masters-2026 (tennis, ~7-18 Oct) from coverage-audit medium gaps. Updated havard-rain-nygaard (Stake Pulse Beat II opening match now boarded → tracked-claim gap closed; expires 2026-09-27). Prepended run note (notes capped 15). No catalog.json change (all candidates already named); no registry reconciliation despite deep tier — prioritised the imminent CS2 recall-gaps within budget.",
+  "trackedDelta": "No tracked entries added/removed/expired. No expiry-drops (nearest expires 2026-09-20). Prepended this run's note (notes kept at cap ~15, dropped the oldest 2026-09-05 entry). Updated lastUpdated. No catalog.json change, no registry reconciliation (not the weekly Monday deep sweep).",
   "quality": {
     "pass": true,
-    "score": 93,
-    "failures": [
-      "Evidence-domain monoculture on StarSeries family (addressed: added bo3.gg as a third corroborating domain).",
-      "StarSeries summary named YouTube not in streaming[] (addressed: summary trimmed to Twitch+Kick to match)."
-    ]
+    "score": 90,
+    "failures": [],
+    "note": "Self-assessed no-op run (no candidate events written → no independent write-time fact-check or grader subagent needed). Justification: fresh coverage-critic audit (09:20Z today, escalated=false) verified the whole board with no high-severity recall gap; the only candidate additions were non-boardable (CS2 StarSeries days 18-20 are TBD-team brackets seeded by tomorrow's 17 Sep quarterfinals) or unsourceable with reliable kickoff times this run (non-catalog men's Elkjøp handball). Held to 'a missing event is better than a wrong one.'"
   },
   "notes": [
-    "PRIORITY: coverage-critic (09:15Z audit) escalated deep — two HIGH imminent CS2 recall-gaps that yesterdays deep escalation failed to fill. Both now boarded.",
-    "StarLadder StarSeries Fall 2026 (Barcelona, $500k, 17-20 Sep): day 1 boarded as 4 ai-research events (high), all naming a catalog tier2 team (MOUZ, Team Vitality, NAVI, FURIA). Later rounds are result-dependent → next research/verify boards as the bracket seeds (esports.js will NOT auto-fill — no 100T in field).",
-    "Stake Pulse Beat II (Stockholm, $60k, 21-26 Sep): 100 Thieves / Havard rain Nygaard opening match vs EAC boarded (high), Group C, 23 Sep 10:00 UTC.",
-    "WRITE-TIME FACT-CHECK caught a timezone error: navi.gg lists StarSeries times in Kyiv time (EEST, UTC+3), not CEST → all 4 day-1 times reduced 1 hour (HLTV day-start 12:00 CEST + GosuGamers MOUZ-NRG 10:00 UTC confirmed). Also confirmed 100T is Group C / 23 Sep, correcting the audits assumed Group D / 24 Sep.",
-    "Root cause STANDS (self-repair/improve flag): esports.js 100T-only filter hides ALL non-100T catalog CS2 matches AND even returned empty for 100Ts own Stake Pulse matches. Recommend widening the fetcher to keep ALL catalog-org matches, OR an authority.json contract-block for CS2 tier-1 tournaments (StarSeries/ESL Pro League/BLAST/IEM). Imminent CS2 events fell off three runs in a row before this fill.",
-    "Rest of board reported complete by the audit (F1 ESPN-blindspot clean, football imminent complete, golf hand-boarded complete despite dead ESPN golf.json fetcher 62 retains, cycling UCI Road Worlds, tennis Davis Cup + Laver Cup, handball on weekly cadence). Noted sourceIssues unchanged: dead golf fetcher (HIGH), no handball fetcher (HIGH), tennis:tour contract miscalibrated (false HIGH — improve/self-repair to re-scope).",
-    "validate-events.js: 0 errors, 157 events (warnings only: weak-time-basis secondary for the 5 new + WP-246 landing-page URLs — acceptable pattern)."
+    "Standard-tier 4-hourly run, 2026-09-16T13:35Z (15:35 CEST). NO new events. Board reported complete by the fresh coverage-audit (09:20Z today): escalated=false, no high-severity recall gap, 156 events, imminent window 16-24 Sep densely covered (58 events across football/F1/cycling/golf/tennis/handball/CS2 + landslag).",
+    "CONSIDERED, DELIBERATELY NOT BOARDED: (1) CS2 StarLadder StarSeries Fall days 2-4 (18-20 Sep) — 8-team double-elimination; the 18-20 Sep matches are TBD-team, seeded only by the 17 Sep quarterfinals (tomorrow), so not boardable yet. Day 1 (17 Sep, 4 catalog-team matches) is already on the board with correct times (navi.gg lists Kyiv time; board's UTC times verified consistent). Research/verify boards the bracket as it seeds. (2) Men's Elkjøp-ligaen handball round ~19-21 Sep beyond Fjellhammer-Kolstad (20 Sep) — the one catalog team (Kolstad) IS covered; the rest are non-catalog wholesale and no source gave clean confirmed kickoff times this run (Sofascore 403, Eurosport geoblocked, handball.no JS-rendered) → left to weekly cadence/verify. (3) Nora Mørk (catalog athlete) plays for Team Esbjerg (Danish league, not wholesale-covered) and is not in Norway's September squad → no board fixture, not a real gap.",
+    "TRIAGE coverage-gaps.json (09:40Z, gapCount 14, anomalyCount 1): entity Ingebrigtsen/Warholm/Rooth = news noise (doping debate + Rooth comeback interview, no event; athletics season ended after WA Ultimate Championship 11-13 Sep + Diamond League final). entity Vuelta/La Vuelta = cyclingnews retrospective, race ended 13 Sep. tracked-claim Serie A 2026/27 = correct absence (international break 24-27 Sep, returns next weekend). tracked-claim Warholm/Carlsen (claimedDate 2027) = >9 months out. tracked-claim Shanghai Masters = real horizon gap ~21 d out (medium, placeholder tracked, boards ~7 Oct). contract-breach tennis:tour (high) = KNOWN MISCALIBRATION (tennis is entity-gated not wholesale; catalog tennis in window Davis Cup+Laver Cup IS on board; [atp,wta] match-tokens catch almost no real titles → false HIGH every run — standing improve/self-repair re-scope). anomaly chess.json file-empty (low) = correct entity-gated season lull (Global Chess League s4 ended ~13 Sep, Grand Chess Tour done).",
+    "STANDING ROOT-CAUSE FLAGS unchanged (self-repair/improve, not research): no wholesale handball fetcher (behind the weekly-recurring Elkjøp gap, recurrences 16); esports.js 100T-only filter hides all non-100T catalog CS2 matches (widen to all catalog orgs OR CS2 tier-1 authority.json contract-block); tennis:tour contract miscalibrated (false HIGH); football maxEvents:30 CL/EL graft-then-drop regression. Also verify housekeeping (not research): static F1 4 Oct event still carries corrupt venue string 'Gulf Air Bahrain Grand Prix in Malaysia' (date correct, cosmetic); PL authority.json channel still TV 2 (looks stale → Viaplay).",
+    "validate-events.js: 0 errors."
   ]
 }
