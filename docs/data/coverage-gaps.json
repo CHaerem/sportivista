@@ -1,8 +1,63 @@
 {
-  "generatedAt": "2026-09-16T18:38:30.096Z",
-  "gapCount": 5,
+  "generatedAt": "2026-09-16T21:52:37.964Z",
+  "gapCount": 10,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Markus Rooth",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Rooth klar for comeback: – Forventer litt opp og litt ned",
+      "link": "https://www.nrk.no/sport/rooth-klar-for-comeback_-_-forventer-litt-opp-og-litt-ned-1.18026473",
+      "feed": "nrk-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-09-16T21:52:37.053Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Rooth",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Rooth klar for comeback: – Forventer litt opp og litt ned",
+      "link": "https://www.nrk.no/sport/rooth-klar-for-comeback_-_-forventer-litt-opp-og-litt-ned-1.18026473",
+      "feed": "nrk-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-09-16T21:52:37.053Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Mesterligaen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Kolstad sjanseløs mot Kielce i mesterligaen",
+      "link": "https://www.nrk.no/sport/kolstad-sjanselos-mot-kielce-i-mesterligaen-1.18027437",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-09-16T21:52:37.053Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Europaligaen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Guddal-dobbel avgjorde for Sparta Praha",
+      "link": "https://www.nrk.no/sport/guddal-dobbel-avgjorde-for-sparta-praha-1.18027452",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-09-16T21:52:37.053Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Formel 1",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Slik blir Formel 1-VM i 2027 – klart for historisk sprintløp i Monaco",
+      "link": "https://www.nrk.no/sport/slik-blir-formel-1-vm-i-2027-_-klart-for-historisk-sprintlop-i-monaco-1.18026703",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-09-16T21:52:37.053Z"
+    },
     {
       "kind": "tracked-claim",
       "entity": "Serie A 2026/27",
@@ -13,7 +68,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "serie-a-2026-27",
-      "detectedAt": "2026-09-16T18:38:29.865Z"
+      "detectedAt": "2026-09-16T21:52:37.768Z"
     },
     {
       "kind": "tracked-claim",
@@ -25,7 +80,7 @@
       "claimedDate": "2027-07-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "karsten-warholm",
-      "detectedAt": "2026-09-16T18:38:29.865Z"
+      "detectedAt": "2026-09-16T21:52:37.768Z"
     },
     {
       "kind": "tracked-claim",
@@ -37,7 +92,7 @@
       "claimedDate": "2027-06-29T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "magnus-carlsen",
-      "detectedAt": "2026-09-16T18:38:29.865Z"
+      "detectedAt": "2026-09-16T21:52:37.768Z"
     },
     {
       "kind": "tracked-claim",
@@ -49,7 +104,7 @@
       "claimedDate": "2026-09-27T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "shanghai-masters-2026",
-      "detectedAt": "2026-09-16T18:38:29.865Z"
+      "detectedAt": "2026-09-16T21:52:37.768Z"
     },
     {
       "kind": "contract-breach",
@@ -59,7 +114,7 @@
       "severity": "high",
       "imminent": true,
       "detail": "Dekningskontrakt brutt: 0 av minst 1 ventede events innen 14 dager for ATP/WTA Tour (i sesong). Gå til den navngitte autoriteten (atp-tour, wta, swiss-open-gstaad) og fyll tavla.",
-      "detectedAt": "2026-09-16T18:38:29.941Z"
+      "detectedAt": "2026-09-16T21:52:37.822Z"
     }
   ],
   "anomalies": [
@@ -68,7 +123,7 @@
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-09-16T18:38:29.942Z"
+      "detectedAt": "2026-09-16T21:52:37.823Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
