@@ -1,18 +1,17 @@
 {
-  "checkedAt": "2026-09-15T13:06:25Z",
+  "checkedAt": "2026-09-16T13:04:42Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
-    "Captured and read full-page screenshots at 375px, 393px and 900px for tirsdag 15. september's agenda (dark theme), plus targeted close-up crops of the header/hero, the Fredag 18.-Lørdag 19. block, and the scrolled-to-bottom footer at 375px to check detail that the full-page thumbnail compresses too much to judge reliably.",
-    "Match names render fully at all widths, no truncation that hides a side or key detail — 'Rayo Vallecano – Espanyol', 'Kolstad – Industria Kielce', 'Tottenham Hotspur – Aston Villa', 'Brighton & Hove Albion – Arsenal', 'Nottingham Forest – Coventry City' all readable end to end, wrapping to a second line rather than clipping.",
-    "Every visible event carries a channel line, all Norwegian: Viaplay, TV 2 Play, TV 2 Sport 2, Eurosport/HBO Max, HBO Max (Sport) — no FOX/ESPN/Sky or other foreign broadcaster seen. Davis Cup 'Norge – Kina' honestly shows a faint '–' for channel rather than guessing.",
-    "Times consistent 24h format in the fixed time column; multi-day items (BMW PGA Championship 17.-20. september, Biltmore Championship 17.-21. september, Norge-Kina Davis Cup 18.-19. september) show correct date ranges.",
-    "Club crests and small sport icons render cleanly at 2x close-up (Rayo Vallecano, Alavés, Elche, Sarpsborg 08, Bayern München, Brentford, Espanyol, Tottenham) — no broken-image boxes or empty placeholders.",
-    "No horizontal scroll or edge clipping at any width, including the tightest 375px column.",
-    "Single quiet column, clear day-grouped headings (I DAG / I MORGEN / weekday dates), generous row spacing; at 900px the agenda stays centered in a ~640px column with empty margin either side. Must-see amber accent dots appear on a minority of rows only (Elche–Real Madrid, BMW PGA Championship, Norge–Kina, a handful of weekend Eliteserien rows), not on everything.",
-    "Header (wordmark, date, theme toggle), 'Kveldsbrifen' editorial line, Uke/Nyheter tab, day headings, 'Neste opp' countdown, 'Dette dekker vi' / 'Merker og kilder' disclosures, and footer (oppdatert-dato, kalenderabonnement, data-alder note, AI-budsjett line) all intact and aligned at every width.",
-    "Checked the one guaranteed failure mode for the floating Assistent button by scrolling the 375px view to the true bottom: it sits clear below the AI-budsjett footer line with visible gap, not covering the last agenda row or any footer text — consistent with DESIGN.md § Hjelperen. At 900px it rests in the empty margin beside the 640px column over 'Alavés – Valencia', the sanctioned mid-agenda overlap, not a finding.",
-    "Not independently re-verified against the live web (network-free per the script's self-serve mode); assessment limited to what the committed docs/ data renders."
+    "Club crests and country flags render correctly (Atlético Madrid, Deportivo, AC Milan, Bayern crests; Norwegian flag on Davis Cup Norge–Kina) — no broken-image icons; rows without a crest (Kolstad, Anderlecht) fall back to an honest neutral calendar/circle glyph, not a blank box.",
+    "Every event row has a time, teams/entity, competition, and a channel line (or the fallback icon) — spot-checked a row that looked channel-less at thumbnail scale (Fjellhammer–Kolstad) by zooming in; it does show 'Elkjøp-ligaen 2026/27 · TV 2 Play', so no missing-channel bug.",
+    "All channels observed are Norwegian (Viaplay, TV 2 Play, TV 2 Sport 2, Eurosport, HBO Max) — no FOX/ESPN/Sky spotted at any width.",
+    "No truncation: long fixture names (e.g. 'Atlético Madrid – Osasuna') wrap to a second line instead of clipping; no horizontal scroll/overflow at 375px, the tightest width.",
+    "True-black OLED dark theme confirmed at 375px/dark colorScheme (#000000 page); header, KVELDSBRIEFEN headline, Uka/Nyheter toggle, day headings and footer all intact and aligned in both light and dark.",
+    "Floating 'Assistent' button: confirmed design-sanctioned mid-agenda overlap (e.g. over the Biltmore Championship row at 900px) per DESIGN.md, and verified — by scrolling both the Uka agenda and the Nyheter tab to their true bottom — that it never covers the last row or the footer (Oppdatert/Abonner/Aktivitet/Personvern/AI-budsjett lines all fully legible) in either tab.",
+    "Nyheter tab (news/results) also checked at 375px dark: result lines (e.g. 'Alavés – Valencia 0–1', Monza GP top 3) and 'Vis alle'/'Fremover' disclosures render cleanly, no overlap or clipping.",
+    "Tentative-channel styling (italic, e.g. 'TV 2 Play' on the Davis Cup row) appears intentional (unconfirmed-label treatment), not a rendering defect — noted, not flagged.",
+    "Did not evaluate whether individual competition/team pairings are factually correct (e.g. competition labels) — that is a data-accuracy question for validate-events/research, out of scope for what's visible in a screenshot."
   ]
 }
