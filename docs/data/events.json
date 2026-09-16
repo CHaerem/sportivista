@@ -140,60 +140,6 @@
     ]
   },
   {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen 2026/27",
-    "title": "Kolstad – Runar",
-    "time": "2026-09-02T16:00:00Z",
-    "endTime": null,
-    "venue": "Kolstad Arena, Trondheim",
-    "norwegian": true,
-    "homeTeam": "Kolstad",
-    "awayTeam": "Runar",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-31T21:35:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-      "https://www.flashscore.com/team/kolstad/rTWbl2mC/fixtures/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "basis": "official",
-        "retrievedAt": "2026-09-02T09:50:00Z",
-        "note": "Bekreftet 18.00 CEST (16.00 UTC) mot TV 2 Plays egen kampliste (\"I dag 18.00\") 2. sep. Verify festet minuttet mot broadcaster-siden."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "basis": "official",
-        "retrievedAt": "2026-08-31T21:35:00Z",
-        "note": "TV 2 har alle Elkjop-ligaen-rettigheter 2026/27; alle kamper pa TV 2 Play (utvalgte lineaert)."
-      }
-    },
-    "summary": "Elkjøp-ligaen 2026/27 (norsk håndball-toppserie), runde 2. Kolstad tar imot Runar hjemme i Trondheim.\n\nNorsk visning: TV 2 Play (alle kamper). Avspark onsdag 2. sep kl. 18.00 CEST (16.00 UTC).\n\nSander Sagosen spiller ikke lenger for Kolstad (til Aalborg feb. 2025), så ingen norsk stjerne navngitt her.",
-    "homeTeamEntityId": "kolstad-handball",
-    "awayTeamEntityId": "runar-handball",
-    "id": "327b3c928da3",
-    "verifiedAt": "2026-09-02T09:50:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-      "https://www.handball.no/system/kamper/kamp/?matchid=8191705"
-    ]
-  },
-  {
     "sport": "chess",
     "tournament": "Global Chess League 2026",
     "title": "Global Chess League 2026 – sesong 4",
@@ -6467,6 +6413,36 @@
   },
   {
     "sport": "football",
+    "tournament": "La Liga",
+    "title": "Real Madrid at Atlético Madrid",
+    "time": "2026-09-20T14:15:00.000Z",
+    "endTime": null,
+    "venue": "Riyadh Air Metropolitano",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Atlético Madrid",
+    "awayTeam": "Real Madrid",
+    "isFavorite": true,
+    "round": null,
+    "id": "e48a31240516",
+    "homeTeamEntityId": "atletico-madrid",
+    "awayTeamEntityId": "real-madrid"
+  },
+  {
+    "sport": "football",
     "tournament": "Eliteserien",
     "title": "Sandefjord – Start",
     "time": "2026-09-20T15:00:00.000Z",
@@ -6682,6 +6658,36 @@
     "summary": "Elkjøp-ligaen 2026/27. Kolstad (katalog-klubb) borte mot Fjellhammer i Fjellhamar Arena.\n\nAvkast søndag 20. september kl. 17.50 CEST (15.50 UTC). Norsk visning: TV 2 Play.\n\nKolstads neste seriekamp — dekker klubben som fulgt katalog-lag (Sagosen spiller ikke lenger for Kolstad, så ingen norsk stjerne navngitt).",
     "awayTeamEntityId": "kolstad-handball",
     "id": "c6562b6504a9"
+  },
+  {
+    "sport": "football",
+    "tournament": "La Liga",
+    "title": "Real Betis at Deportivo",
+    "time": "2026-09-20T16:30:00.000Z",
+    "endTime": null,
+    "venue": "Riazor",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Deportivo",
+    "awayTeam": "Real Betis",
+    "isFavorite": false,
+    "round": null,
+    "id": "3ad640b19b3e",
+    "homeTeamEntityId": "deportivo-la-coruna",
+    "awayTeamEntityId": "real-betis"
   },
   {
     "sport": "cycling",
