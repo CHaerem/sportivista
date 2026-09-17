@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-17T04:10:10.312Z",
+  "generatedAt": "2026-09-17T09:48:57.297Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "yellow",
+    "coverage": "red",
     "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
@@ -21,43 +21,50 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 4,
+    "openGaps": 5,
     "bySeverity": {
-      "high": 0,
+      "high": 1,
       "medium": 3,
       "low": 1
     },
-    "oldestGapAgeDays": 16.73,
-    "escalatable": 1,
-    "catalogMatched": 4,
-    "auditedAt": "2026-09-16T09:20:00Z",
+    "oldestGapAgeDays": 16.97,
+    "escalatable": 4,
+    "catalogMatched": 5,
+    "auditedAt": "2026-09-17T05:00:00Z",
     "gaps": [
       {
-        "interest": "CS2 — StarLadder StarSeries Fall 2026 (17.–20. sep, Barcelona, $500k) resterende dager",
+        "interest": "Sjakk — 46. Chess Olympiad (15.–27. sep, Samarkand, Usbekistan)",
+        "severity": "high",
+        "ageDays": 0.2,
+        "recurrences": 0,
+        "catalogMatched": true
+      },
+      {
+        "interest": "CS2 — StarLadder StarSeries Fall 2026 (17.–20. sep, Barcelona, $500k) resterende spilledager",
         "severity": "low",
-        "ageDays": 2.82,
-        "recurrences": 2,
+        "ageDays": 3.05,
+        "recurrences": 3,
         "catalogMatched": true
       },
       {
         "interest": "CS2 — ESL Pro League Season 24 (3.–11. okt, Katowice/Spodek, $1M)",
         "severity": "medium",
-        "ageDays": 2.82,
-        "recurrences": 2,
+        "ageDays": 3.05,
+        "recurrences": 3,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Shanghai Masters (ATP Masters 1000, ~7.–18. okt)",
         "severity": "medium",
-        "ageDays": 2.82,
-        "recurrences": 2,
+        "ageDays": 3.05,
+        "recurrences": 3,
         "catalogMatched": true
       },
       {
-        "interest": "Håndball — Elkjøp-ligaen (menn + kvinner) serierunde ~19.–20. sep utover det boardede",
+        "interest": "Håndball — Elkjøp-ligaen (menn + kvinner) serierunde ~19.–21. sep utover det boardede",
         "severity": "medium",
-        "ageDays": 16.73,
-        "recurrences": 16,
+        "ageDays": 16.97,
+        "recurrences": 17,
         "catalogMatched": true
       }
     ]
@@ -167,15 +174,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-17T04:10:06.821Z",
+    "buildCheckedAt": "2026-09-17T09:48:50.499Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-17T00:00:20.813Z",
-    "manifestAgeHours": 4.16,
+    "manifestGeneratedAt": "2026-09-17T04:10:11.343Z",
+    "manifestAgeHours": 5.65,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-09-16T10:20:00Z",
-    "verifyAgeHours": 17.84,
+    "verifyAgeHours": 23.48,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -192,6 +199,6 @@
         "horizonDays": 14
       }
     ],
-    "generatedAt": "2026-09-17T04:10:10.311Z"
+    "generatedAt": "2026-09-17T09:48:57.297Z"
   }
 }
