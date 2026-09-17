@@ -5268,10 +5268,9 @@
     ],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing",
-        "tentative": true
+        "platform": "NRK",
+        "url": "https://tv.nrk.no",
+        "urlKind": "landing"
       }
     ],
     "source": "ai-research",
@@ -5283,13 +5282,13 @@
       "https://trondheimspektrum.no/arrangement/davis-cup-vm-i-tennis",
       "https://en.wikipedia.org/wiki/2026_Davis_Cup"
     ],
-    "summary": "Davis Cup verdensgruppe-tie: Norge møter Kina i en hjemme-tie i Trondheim Spektrum, med Casper Ruud i spissen (Nicolai Budkov Kjær nr. 2).\n\nSpilles over to dager: fredag 18. sept fra kl. 18.00 (to single), lørdag 19. sept fra kl. 15.30 (én double + to single). Tider bekreftet mot Trondheim Spektrum + Norges Tennis- og Padelforbund.\n\nNorsk visning: TV 2 Play (tentativ) — daviscup.com angir at TV 2 viser Davis Cup når Norges lag spiller; Discovery+/Eurosport holder ordinære Davis Cup-rettigheter i Norge. Per-kamp-kanal ikke publisert ennå.",
+    "summary": "Davis Cup verdensgruppe-tie: Norge moter Kina i en hjemme-tie i Trondheim Spektrum, med Casper Ruud i spissen (Nicolai Budkov Kjaer nr. 2).\n\nSpilles over to dager: fredag 18. sept fra kl. 18.00 (to single), loerdag 19. sept fra kl. 15.30 (en double + to single). Tider bekreftet mot Trondheim Spektrum + Norges Tennis- og Padelforbund.\n\nNorsk visning: NRK1/NRK2 + gratis stroem paa NRK TV (bekreftet av Norges Tennis- og Padelforbund for denne tien).",
     "id": "d5f0ced174d7",
-    "verifiedAt": "2026-09-16T10:20:00Z",
+    "verifiedAt": "2026-09-17T10:30:00Z",
     "verificationStatus": "amended",
     "verificationSources": [
-      "https://www.daviscup.com/en/about/where-to-watch-TV",
-      "https://trondheimspektrum.no/arrangement/davis-cup-vm-i-tennis"
+      "http://www.tennis-norge.com/2026/09/davis-cup-norge-v-kina-i-trondheim/",
+      "https://kommunikasjon.ntb.no/pressemelding/18950715/casper-ruud-til-trondelag-norge-moter-kina-i-vm-i-tennis-i-trondheim-spektrum"
     ],
     "provenance": {
       "time": {
@@ -5300,11 +5299,11 @@
         "note": "Arrangørens egen side: fre. 18. sep 2 single, kampstart 18:00 CEST (16:00 UTC), dørene 16:30; lør. 19. sep 1 double + 2 single, kampstart 15:30 CEST (13:30 UTC). Casper Ruud i spissen for Norge, Nicolai Budkov Kjær ventet. World Group I mot Kina. Kringkaster i Norge IKKE bekreftet (tvkampen lister tidene men ingen kanal) — streaming holdt tom, ærlig ukjent."
       },
       "streaming": {
-        "sourceId": "daviscup",
-        "url": "https://www.daviscup.com/en/about/where-to-watch-TV",
+        "sourceId": "tennis-norge",
+        "url": "http://www.tennis-norge.com/2026/09/davis-cup-norge-v-kina-i-trondheim/",
         "basis": "official",
-        "retrievedAt": "2026-09-16T10:20:00Z",
-        "note": "daviscup.com where-to-watch: TV 2 / TV 2 Play viser Davis Cup naar Norges lag spiller (hjemme-tie i Trondheim); Discovery+/Eurosport holder ordinaere Davis Cup-rettigheter i Norge. Kanal for DENNE tien ikke publisert per-kamp enda -> tentative."
+        "retrievedAt": "2026-09-17T10:30:00Z",
+        "note": "Norges Tennis- og Padelforbunds egen eventside bekrefter at hjemme-tien Norge-Kina i Trondheim Spektrum sendes paa NRK1/NRK2 og gratis stroem paa NRK TV. Loeser tidligere tentative «TV 2 Play» til bekreftet NRK."
       }
     }
   },
@@ -5386,7 +5385,12 @@
     "summary": "Bundesliga 2026/27, 4. Spieltag (18.–20. september). Bayern München–Union Berlin. Avspark 20:30 CEST (18:30 UTC).\n\nNorsk visning: Viaplay (eksklusive Bundesliga-rettigheter i Norge t.o.m. 2028/29; enkeltkamper også via TV 2 Play «Mer fotball»). Tider bekreftet mot DFLs egen kampdags-feed (bundesliga.com) + uavhengig write-time fact-check.",
     "homeTeamEntityId": "bayern-munich",
     "awayTeamEntityId": "1-fc-union-berlin",
-    "id": "15b0ce16f8ee"
+    "id": "15b0ce16f8ee",
+    "verifiedAt": "2026-09-17T10:30:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/4"
+    ]
   },
   {
     "sport": "football",
@@ -5557,7 +5561,12 @@
     "summary": "Bundesliga 2026/27, 4. Spieltag (18.–20. september). Werder Bremen–FC Augsburg. Avspark 15:30 CEST (13:30 UTC).\n\nNorsk visning: Viaplay (eksklusive Bundesliga-rettigheter i Norge t.o.m. 2028/29; enkeltkamper også via TV 2 Play «Mer fotball»). Tider bekreftet mot DFLs egen kampdags-feed (bundesliga.com) + uavhengig write-time fact-check.",
     "homeTeamEntityId": "werder-bremen",
     "awayTeamEntityId": "fc-augsburg",
-    "id": "c71bbf8be0dc"
+    "id": "c71bbf8be0dc",
+    "verifiedAt": "2026-09-17T10:30:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/4"
+    ]
   },
   {
     "sport": "football",
@@ -5607,7 +5616,12 @@
     "summary": "Bundesliga 2026/27, 4. Spieltag (18.–20. september). Hamburger SV–1. FC Köln. Avspark 15:30 CEST (13:30 UTC).\n\nNorsk visning: Viaplay (eksklusive Bundesliga-rettigheter i Norge t.o.m. 2028/29; enkeltkamper også via TV 2 Play «Mer fotball»). Tider bekreftet mot DFLs egen kampdags-feed (bundesliga.com) + uavhengig write-time fact-check.",
     "homeTeamEntityId": "hamburger-sv",
     "awayTeamEntityId": "1-fc-koln",
-    "id": "00821067a3a9"
+    "id": "00821067a3a9",
+    "verifiedAt": "2026-09-17T10:30:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/4"
+    ]
   },
   {
     "sport": "football",
@@ -5657,7 +5671,12 @@
     "summary": "Bundesliga 2026/27, 4. Spieltag (18.–20. september). Borussia Mönchengladbach–Mainz 05. Avspark 15:30 CEST (13:30 UTC).\n\nNorsk visning: Viaplay (eksklusive Bundesliga-rettigheter i Norge t.o.m. 2028/29; enkeltkamper også via TV 2 Play «Mer fotball»). Tider bekreftet mot DFLs egen kampdags-feed (bundesliga.com) + uavhengig write-time fact-check.",
     "homeTeamEntityId": "borussia-monchengladbach",
     "awayTeamEntityId": "mainz",
-    "id": "284e042420e9"
+    "id": "284e042420e9",
+    "verifiedAt": "2026-09-17T10:30:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/4"
+    ]
   },
   {
     "sport": "football",
@@ -5707,7 +5726,12 @@
     "summary": "Bundesliga 2026/27, 4. Spieltag (18.–20. september). Eintracht Frankfurt–SC Freiburg. Avspark 15:30 CEST (13:30 UTC).\n\nNorsk visning: Viaplay (eksklusive Bundesliga-rettigheter i Norge t.o.m. 2028/29; enkeltkamper også via TV 2 Play «Mer fotball»). Tider bekreftet mot DFLs egen kampdags-feed (bundesliga.com) + uavhengig write-time fact-check.",
     "homeTeamEntityId": "eintracht-frankfurt",
     "awayTeamEntityId": "sc-freiburg",
-    "id": "04bdadf2fbcc"
+    "id": "04bdadf2fbcc",
+    "verifiedAt": "2026-09-17T10:30:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/4"
+    ]
   },
   {
     "sport": "football",
@@ -6001,7 +6025,12 @@
     "summary": "Bundesliga 2026/27, 4. Spieltag (18.–20. september). VfB Stuttgart–Borussia Dortmund. Avspark 18:30 CEST (16:30 UTC).\n\nNorsk visning: Viaplay (eksklusive Bundesliga-rettigheter i Norge t.o.m. 2028/29; enkeltkamper også via TV 2 Play «Mer fotball»). Tider bekreftet mot DFLs egen kampdags-feed (bundesliga.com) + uavhengig write-time fact-check.",
     "homeTeamEntityId": "vfb-stuttgart",
     "awayTeamEntityId": "borussia-dortmund",
-    "id": "6435f639393a"
+    "id": "6435f639393a",
+    "verifiedAt": "2026-09-17T10:30:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/4"
+    ]
   },
   {
     "sport": "football",
@@ -6234,11 +6263,12 @@
     },
     "summary": "UCI Road-VM 2026 i Montréal, Canada (20.–27. sept). Åpningsdagen: elite kvinner tempo, 39,2 km rundt Montréal.\n\nNorsk visning: Eurosport / HBO Max (Warner Bros. Discovery holder VM-rettighetene i Europa; Norge er ikke-eksklusivt marked). Start 09:00 lokal tid (EDT) = 13:00 UTC, bekreftet mot UCI-tidsskjemaet.",
     "id": "543a0f338baf",
-    "verifiedAt": "2026-09-16T10:20:00Z",
+    "verifiedAt": "2026-09-17T10:30:00Z",
     "verificationStatus": "confirmed",
     "verificationSources": [
       "https://procyclinguk.com/2026-uci-road-world-championships-course-guide-montreal-routes-climbs-and-full-schedule/",
-      "https://www.cyclingweekly.com/road-world-championships/2026-uci-road-world-championship-race-schedule-route-information-and-riders-to-watch"
+      "https://www.cyclingweekly.com/road-world-championships/2026-uci-road-world-championship-race-schedule-route-information-and-riders-to-watch",
+      "https://www.eurosport.es/ciclismo/campeonatos-mundiales/2026/montreal-2026-en-directo-al-completo-cobertura-programacion-eurosport-hbo-max-donde-ver-por-tv-online-streaming-pruebas-fechas-recorrido-hoy_sto23337780/story.shtml"
     ]
   },
   {
@@ -6289,7 +6319,12 @@
     "summary": "Bundesliga 2026/27, 4. Spieltag (18.–20. september). Bayer Leverkusen–RB Leipzig. Avspark 15:30 CEST (13:30 UTC).\n\nNorsk visning: Viaplay (eksklusive Bundesliga-rettigheter i Norge t.o.m. 2028/29; enkeltkamper også via TV 2 Play «Mer fotball»). Tider bekreftet mot DFLs egen kampdags-feed (bundesliga.com) + uavhengig write-time fact-check.",
     "homeTeamEntityId": "bayer-leverkusen",
     "awayTeamEntityId": "rb-leipzig",
-    "id": "e839fe7381d3"
+    "id": "e839fe7381d3",
+    "verifiedAt": "2026-09-17T10:30:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/4"
+    ]
   },
   {
     "sport": "football",
@@ -6490,7 +6525,12 @@
     "summary": "Bundesliga 2026/27, 4. Spieltag (18.–20. september). Schalke 04–SV Elversberg. Avspark 17:30 CEST (15:30 UTC).\n\nNorsk visning: Viaplay (eksklusive Bundesliga-rettigheter i Norge t.o.m. 2028/29; enkeltkamper også via TV 2 Play «Mer fotball»). Tider bekreftet mot DFLs egen kampdags-feed (bundesliga.com) + uavhengig write-time fact-check.",
     "homeTeamEntityId": "schalke-04",
     "awayTeamEntityId": "sv-elversberg",
-    "id": "a858eba52dc9"
+    "id": "a858eba52dc9",
+    "verifiedAt": "2026-09-17T10:30:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/4"
+    ]
   },
   {
     "sport": "handball",
@@ -6643,11 +6683,12 @@
     },
     "summary": "UCI Road-VM 2026 i Montréal, Canada. Elite menn tempo, 39,2 km (samme runde som kvinnene).\n\nNorsk visning: Eurosport / HBO Max (WBD holder VM-rettighetene i Europa). Start 12:45 lokal tid (EDT) = 16:45 UTC, bekreftet mot UCI-tidsskjemaet.",
     "id": "85807c6bb4d6",
-    "verifiedAt": "2026-09-16T10:20:00Z",
+    "verifiedAt": "2026-09-17T10:30:00Z",
     "verificationStatus": "confirmed",
     "verificationSources": [
       "https://procyclinguk.com/2026-uci-road-world-championships-course-guide-montreal-routes-climbs-and-full-schedule/",
-      "https://www.cyclingweekly.com/road-world-championships/2026-uci-road-world-championship-race-schedule-route-information-and-riders-to-watch"
+      "https://www.cyclingweekly.com/road-world-championships/2026-uci-road-world-championship-race-schedule-route-information-and-riders-to-watch",
+      "https://www.eurosport.es/ciclismo/campeonatos-mundiales/2026/montreal-2026-en-directo-al-completo-cobertura-programacion-eurosport-hbo-max-donde-ver-por-tv-online-streaming-pruebas-fechas-recorrido-hoy_sto23337780/story.shtml"
     ]
   },
   {
@@ -6728,7 +6769,12 @@
     "summary": "Bundesliga 2026/27, 4. Spieltag (18.–20. september). SC Paderborn–TSG Hoffenheim. Avspark 19:30 CEST (17:30 UTC).\n\nNorsk visning: Viaplay (eksklusive Bundesliga-rettigheter i Norge t.o.m. 2028/29; enkeltkamper også via TV 2 Play «Mer fotball»). Tider bekreftet mot DFLs egen kampdags-feed (bundesliga.com) + uavhengig write-time fact-check.",
     "homeTeamEntityId": "sc-paderborn-07",
     "awayTeamEntityId": "tsg-hoffenheim",
-    "id": "20f5b0b3a6c7"
+    "id": "20f5b0b3a6c7",
+    "verifiedAt": "2026-09-17T10:30:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/4"
+    ]
   },
   {
     "sport": "football",
@@ -6772,8 +6818,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
+        "platform": "Eurosport / HBO Max",
+        "url": "https://www.hbomax.com/no/no/sports/cycling",
         "urlKind": "landing"
       }
     ],
@@ -6794,19 +6840,20 @@
         "retrievedAt": "2026-08-29T19:45:00Z"
       },
       "streaming": {
-        "sourceId": "tv2",
-        "url": "https://www.tv2.no/sport",
+        "sourceId": "hbo-max",
+        "url": "https://www.eurosport.es/ciclismo/campeonatos-mundiales/2026/montreal-2026-en-directo-al-completo-cobertura-programacion-eurosport-hbo-max-donde-ver-por-tv-online-streaming-pruebas-fechas-recorrido-hoy_sto23337780/story.shtml",
         "basis": "official",
-        "retrievedAt": "2026-08-29T19:45:00Z",
-        "note": "TV 2s egen kunngjøring: hele Sykkel-VM 2026 på TV 2 Direkte + Play"
+        "retrievedAt": "2026-09-17T10:30:00Z",
+        "note": "Warner Bros. Discovery (Eurosport / HBO Max) sender hele sykkel-VM 2026 i Montreal komplett. Rettet fra «TV 2 Play» (feil kanal — TV 2s sykkelavtale gjelder Tour de France, ikke VM) for aa vaere konsistent med de to tempo-oevelsene i samme mesterskap."
       }
     },
-    "summary": "UCI Road-VM 2026 i Montréal. Mixed relay lagtempo, 40,4 km.\n\nNorsk visning: TV 2 Play (TV 2 Direkte + Play). Start 08:30 lokal tid (EDT).",
+    "summary": "UCI Road-VM 2026 i Montreal. Mixed relay lagtempo, 40,4 km.\n\nNorsk visning: Eurosport / HBO Max (Warner Bros. Discovery holder VM-rettighetene i Europa). Start 08:30 lokal tid (EDT) = 12:30 UTC.",
     "id": "b6586f51ccf9",
-    "verifiedAt": "2026-09-16T10:20:00Z",
-    "verificationStatus": "confirmed",
+    "verifiedAt": "2026-09-17T10:30:00Z",
+    "verificationStatus": "amended",
     "verificationSources": [
-      "https://procyclinguk.com/2026-uci-road-world-championships-course-guide-montreal-routes-climbs-and-full-schedule/"
+      "https://www.eurosport.es/ciclismo/campeonatos-mundiales/2026/montreal-2026-en-directo-al-completo-cobertura-programacion-eurosport-hbo-max-donde-ver-por-tv-online-streaming-pruebas-fechas-recorrido-hoy_sto23337780/story.shtml",
+      "https://www.hbomax.com/no/no/sports/cycling"
     ]
   },
   {
