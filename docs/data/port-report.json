@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T09:48:57.297Z",
+  "generatedAt": "2026-09-17T14:39:53.705Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -27,7 +27,7 @@
       "medium": 3,
       "low": 1
     },
-    "oldestGapAgeDays": 16.97,
+    "oldestGapAgeDays": 17.17,
     "escalatable": 4,
     "catalogMatched": 5,
     "auditedAt": "2026-09-17T05:00:00Z",
@@ -35,57 +35,50 @@
       {
         "interest": "Sjakk — 46. Chess Olympiad (15.–27. sep, Samarkand, Usbekistan)",
         "severity": "high",
-        "ageDays": 0.2,
+        "ageDays": 0.4,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "CS2 — StarLadder StarSeries Fall 2026 (17.–20. sep, Barcelona, $500k) resterende spilledager",
         "severity": "low",
-        "ageDays": 3.05,
+        "ageDays": 3.26,
         "recurrences": 3,
         "catalogMatched": true
       },
       {
         "interest": "CS2 — ESL Pro League Season 24 (3.–11. okt, Katowice/Spodek, $1M)",
         "severity": "medium",
-        "ageDays": 3.05,
+        "ageDays": 3.26,
         "recurrences": 3,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Shanghai Masters (ATP Masters 1000, ~7.–18. okt)",
         "severity": "medium",
-        "ageDays": 3.05,
+        "ageDays": 3.26,
         "recurrences": 3,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — Elkjøp-ligaen (menn + kvinner) serierunde ~19.–21. sep utover det boardede",
         "severity": "medium",
-        "ageDays": 16.97,
+        "ageDays": 17.17,
         "recurrences": 17,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.06,
-    "nearTermChecked": 16,
-    "nearTermAmended": 1,
-    "verifyRunAt": "2026-09-16T10:20:00Z",
+    "nearTermRate": 0.14,
+    "nearTermChecked": 14,
+    "nearTermAmended": 2,
+    "verifyRunAt": "2026-09-17T10:30:00Z",
     "windowRate": 0,
-    "windowChecks": 107,
+    "windowChecks": 108,
     "windowAmendments": 0,
-    "windowCorrections": 5,
+    "windowCorrections": 7,
     "byDay": [
-      {
-        "date": "2026-09-03",
-        "checks": 4,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-09-04",
         "checks": 4,
@@ -169,20 +162,27 @@
         "amendments": 0,
         "corrections": 1,
         "rate": 0
+      },
+      {
+        "date": "2026-09-17",
+        "checks": 5,
+        "amendments": 0,
+        "corrections": 2,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-17T09:48:50.499Z",
+    "buildCheckedAt": "2026-09-17T14:39:48.170Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-17T04:10:11.343Z",
-    "manifestAgeHours": 5.65,
+    "manifestGeneratedAt": "2026-09-17T09:48:58.910Z",
+    "manifestAgeHours": 4.85,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-09-16T10:20:00Z",
-    "verifyAgeHours": 23.48,
+    "checkedAt": "2026-09-17T10:30:00Z",
+    "verifyAgeHours": 4.16,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -199,6 +199,6 @@
         "horizonDays": 14
       }
     ],
-    "generatedAt": "2026-09-17T09:48:57.297Z"
+    "generatedAt": "2026-09-17T14:39:53.705Z"
   }
 }
