@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-17T00:00:20.604Z",
-  "gapCount": 7,
+  "generatedAt": "2026-09-17T04:10:11.199Z",
+  "gapCount": 13,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -12,7 +12,7 @@
       "link": "https://www.theguardian.com/football/2026/sep/16/raphinha-hat-trick-santander-barcelona-hit-seven-atletico-madrid",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-09-17T00:00:19.771Z"
+      "detectedAt": "2026-09-17T04:10:10.502Z"
     },
     {
       "kind": "entity",
@@ -23,7 +23,73 @@
       "link": "https://www.theguardian.com/football/2026/sep/16/raphinha-hat-trick-santander-barcelona-hit-seven-atletico-madrid",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-09-17T00:00:19.771Z"
+      "detectedAt": "2026-09-17T04:10:10.502Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "RBK",
+      "type": "missing",
+      "imminent": false,
+      "headline": "«Shit, det her var ikke helt bra»",
+      "link": "https://www.tv2.no/a/19212734",
+      "feed": "tv2-fotball",
+      "matchCount": 2,
+      "detectedAt": "2026-09-17T04:10:10.502Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Mesterligaen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Kolstad sjanseløs mot Kielce i mesterligaen",
+      "link": "https://www.nrk.no/sport/kolstad-sjanselos-mot-kielce-i-mesterligaen-1.18027437",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-09-17T04:10:10.502Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Europaligaen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Guddal-dobbel avgjorde for Sparta Praha",
+      "link": "https://www.nrk.no/sport/guddal-dobbel-avgjorde-for-sparta-praha-1.18027452",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-09-17T04:10:10.502Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "The Open",
+      "type": "missing",
+      "imminent": true,
+      "headline": "Chess Olympiad - Live!",
+      "link": "https://en.chessbase.com/post/chess-olympiad-2026-live",
+      "feed": "chessbase",
+      "matchCount": 1,
+      "detectedAt": "2026-09-17T04:10:10.502Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Tour de France",
+      "type": "missing",
+      "imminent": false,
+      "headline": "'This race was a very good final preparation' – Mathieu van der Poel returns to Luxembourg to build rhythm and form ahead of Road World Championships",
+      "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/this-race-was-a-very-good-final-preparation-mathieu-van-der-poel-returns-to-luxembourg-to-build-rhythm-and-form-ahead-of-road-world-championships/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-09-17T04:10:10.502Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Chess Olympiad",
+      "type": "missing",
+      "imminent": true,
+      "headline": "Chess Olympiad - Live!",
+      "link": "https://en.chessbase.com/post/chess-olympiad-2026-live",
+      "feed": "chessbase",
+      "matchCount": 2,
+      "detectedAt": "2026-09-17T04:10:10.502Z"
     },
     {
       "kind": "tracked-claim",
@@ -35,7 +101,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "serie-a-2026-27",
-      "detectedAt": "2026-09-17T00:00:20.395Z"
+      "detectedAt": "2026-09-17T04:10:11.043Z"
     },
     {
       "kind": "tracked-claim",
@@ -47,7 +113,7 @@
       "claimedDate": "2027-07-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "karsten-warholm",
-      "detectedAt": "2026-09-17T00:00:20.395Z"
+      "detectedAt": "2026-09-17T04:10:11.043Z"
     },
     {
       "kind": "tracked-claim",
@@ -59,7 +125,7 @@
       "claimedDate": "2027-06-29T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "magnus-carlsen",
-      "detectedAt": "2026-09-17T00:00:20.395Z"
+      "detectedAt": "2026-09-17T04:10:11.043Z"
     },
     {
       "kind": "tracked-claim",
@@ -71,7 +137,7 @@
       "claimedDate": "2026-09-27T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "shanghai-masters-2026",
-      "detectedAt": "2026-09-17T00:00:20.395Z"
+      "detectedAt": "2026-09-17T04:10:11.043Z"
     },
     {
       "kind": "contract-breach",
@@ -81,7 +147,7 @@
       "severity": "high",
       "imminent": true,
       "detail": "Dekningskontrakt brutt: 0 av minst 1 ventede events innen 14 dager for ATP/WTA Tour (i sesong). Gå til den navngitte autoriteten (atp-tour, wta, swiss-open-gstaad) og fyll tavla.",
-      "detectedAt": "2026-09-17T00:00:20.451Z"
+      "detectedAt": "2026-09-17T04:10:11.073Z"
     }
   ],
   "anomalies": [
@@ -90,7 +156,7 @@
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-09-17T00:00:20.452Z"
+      "detectedAt": "2026-09-17T04:10:11.073Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
