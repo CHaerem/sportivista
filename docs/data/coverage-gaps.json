@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-09-17T14:39:55.157Z",
+  "generatedAt": "2026-09-17T18:48:02.450Z",
   "gapCount": 9,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Barça",
+      "entity": "RBK",
       "type": "missing",
       "imminent": false,
-      "headline": "Raphinha cashes in against Santander with hat-trick as Barça hit seven",
-      "link": "https://www.theguardian.com/football/2026/sep/16/raphinha-hat-trick-santander-barcelona-hit-seven-atletico-madrid",
-      "feed": "guardian-football",
+      "headline": "«Shit, det her var ikke helt bra»",
+      "link": "https://www.tv2.no/a/19212734",
+      "feed": "tv2-sport",
       "matchCount": 1,
-      "detectedAt": "2026-09-17T14:39:53.978Z"
+      "detectedAt": "2026-09-17T18:48:01.257Z"
     },
     {
       "kind": "entity",
-      "entity": "Barca",
+      "entity": "Man City",
       "type": "missing",
-      "imminent": false,
-      "headline": "Raphinha cashes in against Santander with hat-trick as Barça hit seven",
-      "link": "https://www.theguardian.com/football/2026/sep/16/raphinha-hat-trick-santander-barcelona-hit-seven-atletico-madrid",
+      "imminent": true,
+      "headline": "Manchester City v Norwich City: Carabao Cup third round – live",
+      "link": "https://www.theguardian.com/football/live/2026/sep/17/manchester-city-v-norwich-city-carabao-cup-third-round-live",
       "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-09-17T14:39:53.978Z"
+      "matchCount": 2,
+      "detectedAt": "2026-09-17T18:48:01.257Z"
     },
     {
       "kind": "entity",
@@ -34,7 +34,7 @@
       "link": "https://www.nrk.no/sport/kolstad-sjanselos-mot-kielce-i-mesterligaen-1.18027437",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-09-17T14:39:53.978Z"
+      "detectedAt": "2026-09-17T18:48:01.257Z"
     },
     {
       "kind": "entity",
@@ -45,7 +45,7 @@
       "link": "https://www.nrk.no/sport/guddal-dobbel-avgjorde-for-sparta-praha-1.18027452",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-09-17T14:39:53.978Z"
+      "detectedAt": "2026-09-17T18:48:01.257Z"
     },
     {
       "kind": "tracked-claim",
@@ -57,7 +57,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "serie-a-2026-27",
-      "detectedAt": "2026-09-17T14:39:54.904Z"
+      "detectedAt": "2026-09-17T18:48:02.267Z"
     },
     {
       "kind": "tracked-claim",
@@ -69,7 +69,7 @@
       "claimedDate": "2027-07-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "karsten-warholm",
-      "detectedAt": "2026-09-17T14:39:54.904Z"
+      "detectedAt": "2026-09-17T18:48:02.267Z"
     },
     {
       "kind": "tracked-claim",
@@ -81,7 +81,7 @@
       "claimedDate": "2027-06-29T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "magnus-carlsen",
-      "detectedAt": "2026-09-17T14:39:54.904Z"
+      "detectedAt": "2026-09-17T18:48:02.267Z"
     },
     {
       "kind": "tracked-claim",
@@ -93,7 +93,7 @@
       "claimedDate": "2026-09-27T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "shanghai-masters-2026",
-      "detectedAt": "2026-09-17T14:39:54.904Z"
+      "detectedAt": "2026-09-17T18:48:02.267Z"
     },
     {
       "kind": "contract-breach",
@@ -103,7 +103,7 @@
       "severity": "high",
       "imminent": true,
       "detail": "Dekningskontrakt brutt: 0 av minst 1 ventede events innen 14 dager for ATP/WTA Tour (i sesong). Gå til den navngitte autoriteten (atp-tour, wta, swiss-open-gstaad) og fyll tavla.",
-      "detectedAt": "2026-09-17T14:39:54.958Z"
+      "detectedAt": "2026-09-17T18:48:02.316Z"
     }
   ],
   "anomalies": [
@@ -112,7 +112,7 @@
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-09-17T14:39:54.959Z"
+      "detectedAt": "2026-09-17T18:48:02.317Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
