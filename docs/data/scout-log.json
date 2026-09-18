@@ -202,5 +202,13 @@
     "verdict": "quiet",
     "reason": "RSS (55 items, 21:54 UTC): football match-day coverage (all tracked or past results, no schedule/time/venue/streaming/broadcaster changes). Athletics/cycling/hockey/chess ongoing (no new event announcements). Personnel/transfer noise (no event impact). Coverage gaps (9): ATP/WTA contract-breach already escalated Sep 14-15 UTC (no new signal); Shanghai Masters (Sep 27, no new announcement); tracked-claims far-out or non-imminent; Entity gaps mostly non-imminent. No schedule/time/venue changes to existing tracked events, no broadcaster announcements, no 100 Thieves/rain CS2 hints, no new concrete upcoming events requiring escalation (Norway U21 venue change escalated 14:40 UTC today). Escalation cap: 1/2.",
     "signals": []
+  },
+  {
+    "runAt": "2026-09-18T09:22:46.473Z",
+    "verdict": "escalate",
+    "reason": "Coverage gaps: HIGH-severity contract-breach ATP/WTA Tour persists (imminent=true, severity=high). Board missing upcoming ATP/WTA Tour events within 14-day window (0 of ≥1 expected in-season). Previously escalated Sep 14 10:18 UTC and Sep 15 22:25 UTC, still unresolved as of Sep 18 09:22 UTC. Re-escalating for research deep-tier follow-up to fill ATP/WTA Tour schedule from primary authorities (ATP, WTA, Swiss Open Gstaad). This is the highest-severity gap class: a pre-agreed coverage contract broken in season.",
+    "signals": [
+      "ATP/WTA Tour contract-breach: zero upcoming events within 14-day window (HIGH-severity, unresolved from Sep 14-15 escalations)"
+    ]
   }
 ]
