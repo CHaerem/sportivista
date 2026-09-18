@@ -210,5 +210,11 @@
     "signals": [
       "ATP/WTA Tour contract-breach: zero upcoming events within 14-day window (HIGH-severity, unresolved from Sep 14-15 escalations)"
     ]
+  },
+  {
+    "runAt": "2026-09-18T14:35:00.000Z",
+    "verdict": "quiet",
+    "reason": "RSS (36 items, 14:04 UTC): football match-day coverage (Carabao Cup, Europa League, Premier League weekend—all tracked, no schedule/time/venue/streaming/broadcaster changes). Squad announcements (Cristiano Ronaldo Portugal for Nasjonsligaen Sep 24—already tracked generic event; England squad—ongoing competitive prep, no new event). Personnel/transfer news (Mbappé Nike→On sponsorship, Thierry Henry ASC role, Rosenborg captain extension, coach changes—no event-impact). Athlete development news (Floyd Samba debut, Harland award, various team signings—no new event announcements). Coverage gaps (10): ATP/WTA Tour contract-breach (imminent=true, HIGH, already escalated 09:22 UTC today, 1/2 cap reached); Markus Rooth entity (imminent=true but old signal, no NEW date/time in today's RSS—known Sep 11 \"next weekend\" ~Sep 20-21, not a new escalation); Uno-X/Nasjonsligaen/Europaligaen/tracked-claims (all non-imminent or far-out); golf.json infrastructure issue (stale-retained, not event escalation). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no new rain/100 Thieves CS2 match hints, no new concrete upcoming events requiring escalation. Escalation cap today (UTC): 1/2 (ATP/WTA escalated 09:22 UTC).",
+    "signals": []
   }
 ]
