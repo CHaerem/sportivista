@@ -1,17 +1,18 @@
 {
-  "checkedAt": "2026-09-16T13:04:42Z",
+  "checkedAt": "2026-09-18T00:00:00.000Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
-    "Club crests and country flags render correctly (Atlético Madrid, Deportivo, AC Milan, Bayern crests; Norwegian flag on Davis Cup Norge–Kina) — no broken-image icons; rows without a crest (Kolstad, Anderlecht) fall back to an honest neutral calendar/circle glyph, not a blank box.",
-    "Every event row has a time, teams/entity, competition, and a channel line (or the fallback icon) — spot-checked a row that looked channel-less at thumbnail scale (Fjellhammer–Kolstad) by zooming in; it does show 'Elkjøp-ligaen 2026/27 · TV 2 Play', so no missing-channel bug.",
-    "All channels observed are Norwegian (Viaplay, TV 2 Play, TV 2 Sport 2, Eurosport, HBO Max) — no FOX/ESPN/Sky spotted at any width.",
-    "No truncation: long fixture names (e.g. 'Atlético Madrid – Osasuna') wrap to a second line instead of clipping; no horizontal scroll/overflow at 375px, the tightest width.",
-    "True-black OLED dark theme confirmed at 375px/dark colorScheme (#000000 page); header, KVELDSBRIEFEN headline, Uka/Nyheter toggle, day headings and footer all intact and aligned in both light and dark.",
-    "Floating 'Assistent' button: confirmed design-sanctioned mid-agenda overlap (e.g. over the Biltmore Championship row at 900px) per DESIGN.md, and verified — by scrolling both the Uka agenda and the Nyheter tab to their true bottom — that it never covers the last row or the footer (Oppdatert/Abonner/Aktivitet/Personvern/AI-budsjett lines all fully legible) in either tab.",
-    "Nyheter tab (news/results) also checked at 375px dark: result lines (e.g. 'Alavés – Valencia 0–1', Monza GP top 3) and 'Vis alle'/'Fremover' disclosures render cleanly, no overlap or clipping.",
-    "Tentative-channel styling (italic, e.g. 'TV 2 Play' on the Davis Cup row) appears intentional (unconfirmed-label treatment), not a rendering defect — noted, not flagged.",
-    "Did not evaluate whether individual competition/team pairings are factually correct (e.g. competition labels) — that is a data-accuracy question for validate-events/research, out of scope for what's visible in a screenshot."
+    "No horizontal overflow at any width: screenshot pixel widths (750/786/1800) equal exactly 2x the requested CSS width at all three breakpoints, confirming no scroll-inducing overflow.",
+    "All visible streaming channels are Norwegian: Viaplay, TV 2 Play, NRK, HBO Max (Sport), Eurosport / HBO Max. No FOX/ESPN/Sky or other foreign broadcasters seen.",
+    "Team/tournament icons (flags, club crests) render as small logos consistently across every row; no broken-image glyphs observed.",
+    "Long match names (e.g. 'Borussia Mönchengladbach - Mainz 05', 'Nottingham Forest - Coventry City') wrap to a second line rather than truncating -- no hidden fixture info.",
+    "Times, round/competition labels, and day headings (I DAG / I MORGEN / SONDAG 20. SEPTEMBER etc.) are all present and well-formatted.",
+    "Single quiet column layout holds at all widths; spacing is generous and scannable, not a grid.",
+    "Floating 'Assistent' button (desktop 900px shot) rests over empty space above the 'I MORGEN' heading, not over any agenda row or the footer -- consistent with the DESIGN.md-sanctioned floating-button idiom (WP-146 variant D); not flagged per instructions.",
+    "Footer (last row at bottom of desktop shot: 'Oppdatert ...', calendar subscribe link, AI-budsjett line) is intact and not occluded.",
+    "Header (wordmark, date, theme toggle), morning-briefing headline, Uka/Nyheter toggle, and 'Direkte na' live line all render correctly and are not clipped.",
+    "Could not assess: actual on-device scroll behavior of the fixed Assistent button (full-page capture freezes it at one scroll position); dark-mode rendering was not screenshotted this run (default/light-preference environment captured)."
   ]
 }
