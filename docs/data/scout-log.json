@@ -222,5 +222,14 @@
     "verdict": "quiet",
     "reason": "RSS (36 items, 14:04 UTC): football match-day coverage (Carabao Cup, Europa League, Premier League—all tracked, no schedule/time/venue/streaming/broadcaster changes). Squad announcements (Cristiano Ronaldo Portugal Sep 24 Nasjonsligaen—already tracked). Personnel/transfer news (Mbappé sponsorship, Henry role, Rosenborg extension—no event impact). Athlete development (Floyd Samba, various signings—no new event announcements). Coverage gaps (10): ATP/WTA Tour contract-breach (imminent=true, HIGH, already escalated 09:22 UTC, at cap 1/2); Markus Rooth (imminent=true but old signal from Sep 11 \"next weekend\" ~Sep 20-21, no NEW date/time/venue in today's RSS—not a new escalation); Uno-X/Nasjonsligaen/Europaligaen/tracked-claims (all non-imminent or far-out); golf.json stale-retained (infrastructure, not event escalation). No schedule/time/venue changes to existing tracked events, no broadcaster announcements, no rain/100 Thieves CS2 match hints, no new concrete upcoming events requiring escalation. Escalation cap today (UTC): 1/2.",
     "signals": []
+  },
+  {
+    "runAt": "2026-09-18T18:04:00.000Z",
+    "verdict": "escalate",
+    "reason": "RSS (55 items, 18:03 UTC): Markus Rooth imminent tikamp event this weekend — tracked Norwegian athlete with concrete upcoming event (Talence/Frankrike, Decastars, Sep 21–22). Coverage-gaps shows imminent=true. This is a significant event involving a tracked athlete warranting research verification of exact time/venue/streaming. ATP/WTA Tour contract-breach (HIGH severity) also persists in coverage-gaps (imminent=true, 0 of ≥1 expected events within 14-day window), already escalated at 09:22 UTC today (currently at 1/2 daily cap). Escalation cap today (UTC): 2/2.",
+    "signals": [
+      "Markus Rooth: imminent tikamp event (Decastars, Talence, Frankrike) this weekend (Sep 21–22)",
+      "ATP/WTA Tour: HIGH-severity contract-breach persists (0 upcoming events in 14-day window, already escalated 09:22 UTC)"
+    ]
   }
 ]
