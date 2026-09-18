@@ -203,61 +203,6 @@
     ]
   },
   {
-    "sport": "esports",
-    "tournament": "BLAST Open Porto 2026",
-    "title": "FURIA at Team Vitality",
-    "time": "2026-09-04T17:30:00Z",
-    "endTime": "2026-09-04T20:30:00Z",
-    "venue": "Super Bock Arena, Porto",
-    "norwegian": false,
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "BLAST Premier (Twitch)",
-        "url": "https://twitch.tv/blastpremier",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-02T04:40:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.hltv.org/news/45431/blast-open-porto-playoff-bracket-set",
-      "https://esports.gg/news/blast-open-porto-2026/",
-      "https://blast.tv/cs/tournaments/open-2026-season-2"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "hltv",
-        "url": "https://www.hltv.org/news/45431/blast-open-porto-playoff-bracket-set",
-        "basis": "secondary",
-        "retrievedAt": "2026-09-02T04:40:00Z"
-      },
-      "streaming": {
-        "sourceId": "blast",
-        "url": "https://twitch.tv/blastpremier",
-        "basis": "primary",
-        "retrievedAt": "2026-09-02T04:40:00Z"
-      }
-    },
-    "participants": [
-      {
-        "name": "FURIA"
-      },
-      {
-        "name": "Team Vitality"
-      }
-    ],
-    "summary": "Kvartfinale i BLAST Open Porto 2026 (Fall) — sluttspillet i Super Bock Arena, Porto (4.–6. sept). Bo3, single-elimination.\n\nFURIA møter Team Vitality; vinneren går til semifinalen mot MOUZ. Seks katalog-lag i sluttspillet.\n\nIngen norsk vinkel (100 Thieves/rain er ikke i feltet). Gratis på BLAST Premiers offisielle Twitch-strøm i Norge; ingen norsk TV-rettighet.",
-    "id": "bd0751b253a2",
-    "verifiedAt": "2026-09-02T09:50:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.hltv.org/news/45431/blast-open-porto-playoff-bracket-set",
-      "https://blast.tv/cs/tournaments/open-2026-season-2"
-    ]
-  },
-  {
     "sport": "athletics",
     "tournament": "Wanda Diamond League",
     "title": "Diamond League-finalen (Memorial Van Damme, Brussel)",
@@ -323,116 +268,6 @@
     "verificationSources": [
       "https://brussels.diamondleague.com/en/",
       "https://www.nrk.no/sport/jakob-ingebrigtsen-bekreftet-til-1500-m-i-diamond-league-avslutningen-1.18010149"
-    ]
-  },
-  {
-    "sport": "football",
-    "tournament": "Bundesliga",
-    "title": "1. FC Köln at VfB Stuttgart",
-    "time": "2026-09-04T18:30:00Z",
-    "endTime": null,
-    "venue": "MHPArena, Stuttgart",
-    "norwegian": false,
-    "homeTeam": "VfB Stuttgart",
-    "awayTeam": "1. FC Köln",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-01T13:35:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/2",
-      "https://www.bundesliga.com/en/bundesliga/news/confirmed-kick-off-times-dates-2026-27-fixtures-23955",
-      "https://presse.viaplaygroup.no/post/nent-group-forlenger-bundesliga-rettigheter-til-2029",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_Bundesliga"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "bundesliga-dfl",
-        "url": "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/2",
-        "basis": "primary",
-        "retrievedAt": "2026-09-01T13:35:00Z",
-        "note": "DFL/bundesliga.com offisielle kampdags-feed; bekreftede avspark 2026/27"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://presse.viaplaygroup.no/post/nent-group-forlenger-bundesliga-rettigheter-til-2029",
-        "basis": "official",
-        "retrievedAt": "2026-09-01T13:35:00Z",
-        "note": "Viaplay Groups egen pressemelding: Bundesliga-rettighetene t.o.m. 2028/29"
-      }
-    },
-    "summary": "Bundesliga 2026/27, 2. Spieltag (4.–6. september). VfB Stuttgart–1. FC Köln. Avspark 20:30 CEST (18:30 UTC).\n\nNorsk visning: Viaplay (eksklusive Bundesliga-rettigheter i Norge t.o.m. 2028/29; enkeltkamper også via TV 2 Play «Mer fotball»). Tider bekreftet mot DFLs egen kampdags-feed (bundesliga.com) + uavhengig write-time fact-check.",
-    "homeTeamEntityId": "vfb-stuttgart",
-    "awayTeamEntityId": "1-fc-koln",
-    "id": "07ac08c27b17",
-    "verifiedAt": "2026-09-03T09:57:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.bundesliga.com/en/bundesliga/news/confirmed-kick-off-times-dates-2026-27-fixtures-23955"
-    ]
-  },
-  {
-    "sport": "football",
-    "tournament": "Serie A",
-    "title": "Como at Genoa",
-    "time": "2026-09-04T18:45:00Z",
-    "endTime": null,
-    "venue": "Stadio Luigi Ferraris, Genova",
-    "norwegian": false,
-    "homeTeam": "Genoa",
-    "awayTeam": "Como",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://tv.vg.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-30T13:55:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.legaseriea.it/serie-a/news/date-orari-e-programmazione-tv-delle-prime-cinque-giornate",
-      "https://sport.sky.it/calcio/serie-a/calendario-serie-a-anticipi-posticipi-2026-2027-big-match-su-sky",
-      "https://www.sportface.it/calcio/serie-a-2026-2027-anticipi-posticipi-prime-cinque-giornate/2823120"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "lega-serie-a",
-        "url": "https://www.legaseriea.it/serie-a/news/date-orari-e-programmazione-tv-delle-prime-cinque-giornate",
-        "basis": "primary",
-        "retrievedAt": "2026-08-30T13:55:00Z",
-        "note": "Lega Serie As offisielle kalender for 3. giornata (date/orari/programmazione tv), lest direkte + bekreftet av Sky Sport Italia + Sportface (tre kilder enige)"
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://tv.vg.no",
-        "basis": "official",
-        "retrievedAt": "2026-08-30T13:55:00Z",
-        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27 (VGs egen kunngjøring; tvkampen/tvtilbud bekrefter)"
-      }
-    },
-    "summary": "Serie A 3. serierunde: Genoa–Como. Avspark fre. 4. sep 20:45 CEST på Stadio Luigi Ferraris, Genova.\n\nNorsk visning: VG+ Sport.",
-    "homeTeamEntityId": "genoa",
-    "awayTeamEntityId": "como",
-    "id": "8ba2b4e7c0e1",
-    "verifiedAt": "2026-08-31T11:45:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://sport.sky.it/calcio/serie-a/calendario-serie-a-anticipi-posticipi-2026-2027-big-match-su-sky",
-      "https://www.sportmediaset.mediaset.it/calcio/seriea/calendario-serie-a-2026-2027-date-criteri-novita_112897973-202602k.shtml"
     ]
   },
   {
@@ -5290,41 +5125,6 @@
   },
   {
     "sport": "football",
-    "tournament": "Eliteserien",
-    "title": "Sarpsborg 08 – KFUM Oslo",
-    "time": "2026-09-18T17:00:00.000Z",
-    "endTime": null,
-    "venue": "Sarpsborg Stadion",
-    "meta": "Eliteserien",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/sarpsborg-08-kfum-oslo-1834962",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "TV 2 Sport 1",
-        "url": "https://www.tvkampen.com/kamp/sarpsborg-08-kfum-oslo-1834962",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Sarpsborg 08",
-    "awayTeam": "KFUM Oslo",
-    "isFavorite": false,
-    "round": null,
-    "id": "b2ae9a30d50a",
-    "homeTeamEntityId": "sarpsborg-fk",
-    "awayTeamEntityId": "kfum-oslo"
-  },
-  {
-    "sport": "football",
     "tournament": "Bundesliga",
     "title": "Union Berlin at Bayern München",
     "time": "2026-09-18T18:30:00Z",
@@ -5390,8 +5190,8 @@
     "streaming": [
       {
         "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/brentford-chelsea-1914759",
-        "urlKind": "deep"
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -5419,9 +5219,9 @@
     "norwegian": false,
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/espanyol-elche-1922624",
-        "urlKind": "deep"
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
