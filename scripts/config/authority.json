@@ -167,34 +167,6 @@
 			}
 		},
 		{
-			"id": "chess:olympiad",
-			"name": "Chess Olympiad",
-			"sport": "chess",
-			"match": [
-				"chess olympiad",
-				"sjakk-ol",
-				"olympiad"
-			],
-			"time": {
-				"sourceIds": [
-					"fide"
-				]
-			},
-			"channel": {
-				"options": [
-					{
-						"sourceId": "chess-com",
-						"platform": "Chess.com/TV",
-						"note": "Sjakk-OL sendes gratis online (Chess.com/TV, Chess24, YouTube/Twitch); ingen norsk TV-rettighet."
-					},
-					{
-						"sourceId": "chess24",
-						"platform": "Chess24"
-					}
-				]
-			}
-		},
-		{
 			"id": "chess:grand-chess-tour",
 			"name": "Grand Chess Tour",
 			"sport": "chess",
@@ -218,6 +190,34 @@
 						"platform": "Twitch"
 					}
 				]
+			}
+		},
+		{
+			"id": "chess:olympiad",
+			"name": "Chess Olympiad",
+			"sport": "chess",
+			"match": [
+				"chess olympiad",
+				"sjakk-ol",
+				"olympiad"
+			],
+			"time": {
+				"sourceIds": [
+					"fide"
+				]
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "chess24",
+						"platform": "Chess24"
+					},
+					{
+						"sourceId": "twitch",
+						"platform": "Twitch"
+					}
+				],
+				"note": "Sjakk-OL sendes gratis online (Chess24, YouTube/Twitch, Chess.com/TV — registerets chess-com er aggregator for terminlister); ingen norsk TV-rettighet."
 			}
 		},
 		{
