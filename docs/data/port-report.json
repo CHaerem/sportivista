@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-19T09:10:51.147Z",
+  "generatedAt": "2026-09-19T13:41:24.220Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
-    "amendRate": "yellow",
+    "amendRate": "red",
     "silentStops": "yellow",
     "participantStatus": "green",
     "contracts": "yellow"
@@ -27,7 +27,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 18.94,
+    "oldestGapAgeDays": 19.13,
     "escalatable": 4,
     "catalogMatched": 4,
     "auditedAt": "2026-09-18T08:35:00Z",
@@ -35,50 +35,43 @@
       {
         "interest": "Håndball — Elkjøp-ligaen (menn) serierunde 19.–21. sep",
         "severity": "high",
-        "ageDays": 18.94,
+        "ageDays": 19.13,
         "recurrences": 18,
         "catalogMatched": true
       },
       {
         "interest": "CS2 — StarLadder StarSeries Fall 2026 (17.–20. sep, Barcelona, $500k) resterende bracket",
         "severity": "high",
-        "ageDays": 5.03,
+        "ageDays": 5.21,
         "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "CS2 — ESL Pro League Season 24 (3.–11. okt, Katowice/Spodek, $1M)",
         "severity": "medium",
-        "ageDays": 5.03,
+        "ageDays": 5.21,
         "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Shanghai Masters (ATP Masters 1000, ~7.–18. okt)",
         "severity": "medium",
-        "ageDays": 5.03,
+        "ageDays": 5.21,
         "recurrences": 4,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.25,
-    "nearTermChecked": 4,
-    "nearTermAmended": 1,
-    "verifyRunAt": "2026-09-18T09:56:00Z",
+    "nearTermRate": 0.67,
+    "nearTermChecked": 3,
+    "nearTermAmended": 2,
+    "verifyRunAt": "2026-09-19T10:30:00Z",
     "windowRate": 0,
-    "windowChecks": 109,
+    "windowChecks": 111,
     "windowAmendments": 0,
-    "windowCorrections": 7,
+    "windowCorrections": 8,
     "byDay": [
-      {
-        "date": "2026-09-05",
-        "checks": 3,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-09-06",
         "checks": 5,
@@ -162,29 +155,38 @@
         "amendments": 0,
         "corrections": 1,
         "rate": 0
+      },
+      {
+        "date": "2026-09-19",
+        "checks": 5,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-19T09:10:45.611Z",
+    "buildCheckedAt": "2026-09-19T13:41:21.093Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-19T07:42:39.959Z",
-    "manifestAgeHours": 1.47,
+    "manifestGeneratedAt": "2026-09-19T09:10:52.877Z",
+    "manifestAgeHours": 4.51,
     "staleFiles": [
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-09-17T22:55:00Z",
-        "ageHours": 34.26
+        "ageHours": 38.77
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-09-18T09:56:00Z",
-    "verifyAgeHours": 23.25,
-    "corrections": 0,
+    "checkedAt": "2026-09-19T10:30:00Z",
+    "verifyAgeHours": 3.19,
+    "corrections": 1,
     "unresolved": 0,
-    "signals": []
+    "signals": [
+      "Davis Cup Norge–Kina (Trondheim, pågående 18.–19. sep): AMENDED (verifiedAt oppdatert). WP-95 deltakersjekk for pågående tie: Casper Ruud vant åpningssingele…"
+    ]
   },
   "contracts": {
     "total": 6,
@@ -198,6 +200,6 @@
         "horizonDays": 14
       }
     ],
-    "generatedAt": "2026-09-19T09:10:51.147Z"
+    "generatedAt": "2026-09-19T13:41:24.220Z"
   }
 }

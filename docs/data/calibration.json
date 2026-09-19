@@ -1,32 +1,32 @@
 {
-  "generatedAt": "2026-09-19T09:10:52.734Z",
+  "generatedAt": "2026-09-19T13:41:27.522Z",
   "windowDays": 180,
   "records": {
-    "used": 462,
+    "used": 467,
     "skipped": 9
   },
   "sources": {
     "formula1.com": {
-      "checks": 9,
-      "agreed": 9,
+      "checks": 10,
+      "agreed": 10,
       "corrections": 0,
       "bySport": {
         "f1": {
-          "checks": 9,
-          "agreed": 9
+          "checks": 10,
+          "agreed": 10
         }
       },
       "byField": {
         "time": {
-          "checks": 8,
-          "agreed": 8
+          "checks": 9,
+          "agreed": 9
         },
         "existence": {
           "checks": 1,
           "agreed": 1
         }
       },
-      "lastChecked": "2026-09-08T09:55:00Z",
+      "lastChecked": "2026-09-19T10:30:00Z",
       "reliability": 1
     },
     "viaplay.no": {
@@ -245,8 +245,8 @@
       "reliability": 0.8
     },
     "nrk.no": {
-      "checks": 12,
-      "agreed": 10,
+      "checks": 14,
+      "agreed": 12,
       "corrections": 0,
       "bySport": {
         "football": {
@@ -264,24 +264,28 @@
         "cross-country": {
           "checks": 1,
           "agreed": 1
+        },
+        "tennis": {
+          "checks": 2,
+          "agreed": 2
         }
       },
       "byField": {
         "streaming": {
-          "checks": 8,
-          "agreed": 7
+          "checks": 9,
+          "agreed": 8
         },
         "existence": {
-          "checks": 3,
-          "agreed": 2
+          "checks": 4,
+          "agreed": 3
         },
         "time": {
           "checks": 1,
           "agreed": 1
         }
       },
-      "lastChecked": "2026-08-21T05:57:00Z",
-      "reliability": 0.83
+      "lastChecked": "2026-09-19T10:30:00Z",
+      "reliability": 0.86
     },
     "sjakknm2026.no": {
       "checks": 1,
@@ -3230,6 +3234,29 @@
         }
       },
       "lastChecked": "2026-09-18T09:56:00Z",
+      "reliability": null
+    },
+    "lavercup.com": {
+      "checks": 2,
+      "agreed": 2,
+      "corrections": 1,
+      "bySport": {
+        "tennis": {
+          "checks": 2,
+          "agreed": 2
+        }
+      },
+      "byField": {
+        "streaming": {
+          "checks": 1,
+          "agreed": 1
+        },
+        "existence": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-09-19T10:30:00Z",
       "reliability": null
     }
   }
