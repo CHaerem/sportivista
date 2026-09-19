@@ -237,5 +237,14 @@
     "verdict": "quiet",
     "reason": "Escalation cap reached (2/2 daily). New signals detected but deferred: (1) OBOS-ligaen 2026 (Lyn Oslo) Sep 20 — tracked-claim gap, imminent, missing from board despite claimed coverage; (2) StarLadder StarSeries Fall 2026 (Barcelona) Sep 20 — tracked-claim gap, imminent, missing from board despite claimed coverage; (3) ATP/WTA Tour contract-breach — HIGH severity, persists (already escalated 09:22 and 18:04 UTC). These gaps are high-priority for research follow-up but escalation quota exhausted. Markus Rooth imminent event already escalated at 18:04 UTC (no new signal in this RSS).",
     "signals": []
+  },
+  {
+    "runAt": "2026-09-19T09:10:14.231Z",
+    "verdict": "escalate",
+    "reason": "Two imminent tracked-claim gaps NOW TOMORROW (Sep 20): (1) OBOS-ligaen 2026 (Lyn Oslo) — board claims coverage but no upcoming event listed, claimedDate 2026-09-20; (2) StarLadder StarSeries Fall 2026 (Barcelona) — board claims coverage but no upcoming event listed, claimedDate 2026-09-20. Both were deferred Sep 18 at 21:24 UTC due to daily escalation cap (2/2). Today's cap is 0/2, so escalating both for research verification and board fill. RSS (33 items, 09:10 UTC): all football match-day live coverage and past athletic results (no new event announcements, no schedule/time/venue/streaming/broadcaster changes). No new rain/100 Thieves CS2 match hints. Coverage gaps: OBOS-ligaen and StarLadder tracked-claim gaps are priority; ATP/WTA Tour contract-breach (HIGH, already escalated Sep 14, 15, 18 — no NEW development in this RSS). Escalation cap today (UTC): 0/2.",
+    "signals": [
+      "OBOS-ligaen 2026 (Lyn Oslo): imminent tracked-claim gap, Sep 20, missing from board despite claimed coverage",
+      "StarLadder StarSeries Fall 2026 (Barcelona): imminent tracked-claim gap, Sep 20, missing from board despite claimed coverage"
+    ]
   }
 ]
