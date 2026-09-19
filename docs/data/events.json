@@ -331,61 +331,6 @@
   },
   {
     "sport": "football",
-    "tournament": "Serie A",
-    "title": "Atalanta at Roma",
-    "time": "2026-09-05T18:45:00Z",
-    "endTime": null,
-    "venue": "Stadio Olimpico, Roma",
-    "norwegian": false,
-    "homeTeam": "Roma",
-    "awayTeam": "Atalanta",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://tv.vg.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-30T13:55:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.legaseriea.it/serie-a/news/date-orari-e-programmazione-tv-delle-prime-cinque-giornate",
-      "https://sport.sky.it/calcio/serie-a/calendario-serie-a-anticipi-posticipi-2026-2027-big-match-su-sky",
-      "https://www.sportface.it/calcio/serie-a-2026-2027-anticipi-posticipi-prime-cinque-giornate/2823120"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "lega-serie-a",
-        "url": "https://www.legaseriea.it/serie-a/news/date-orari-e-programmazione-tv-delle-prime-cinque-giornate",
-        "basis": "primary",
-        "retrievedAt": "2026-08-30T13:55:00Z",
-        "note": "Lega Serie As offisielle kalender for 3. giornata (date/orari/programmazione tv), lest direkte + bekreftet av Sky Sport Italia + Sportface (tre kilder enige)"
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://tv.vg.no",
-        "basis": "official",
-        "retrievedAt": "2026-08-30T13:55:00Z",
-        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27 (VGs egen kunngjøring; tvkampen/tvtilbud bekrefter)"
-      }
-    },
-    "summary": "Serie A 3. serierunde: Roma–Atalanta. Avspark lør. 5. sep 20:45 CEST på Stadio Olimpico, Roma.\n\nNorsk visning: VG+ Sport.",
-    "homeTeamEntityId": "as-roma",
-    "awayTeamEntityId": "atalanta",
-    "id": "fc627f625b44",
-    "verifiedAt": "2026-08-31T11:45:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://sport.sky.it/calcio/serie-a/calendario-serie-a-anticipi-posticipi-2026-2027-big-match-su-sky",
-      "https://www.sportmediaset.mediaset.it/calcio/seriea/calendario-serie-a-2026-2027-date-criteri-novita_112897973-202602k.shtml"
-    ]
-  },
-  {
-    "sport": "football",
     "tournament": "NM Cupen",
     "title": "Aalesund at Brann",
     "time": "2026-09-06T12:00:00Z",
@@ -4739,71 +4684,6 @@
   },
   {
     "sport": "football",
-    "tournament": "La Liga",
-    "title": "Alavés at Athletic Club",
-    "time": "2026-09-19T14:15:00.000Z",
-    "endTime": null,
-    "venue": "San Mamés",
-    "meta": "La Liga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Athletic Club",
-    "awayTeam": "Alavés",
-    "isFavorite": false,
-    "round": null,
-    "id": "813140ff4772",
-    "homeTeamEntityId": "athletic-club",
-    "awayTeamEntityId": "alaves"
-  },
-  {
-    "sport": "football",
-    "tournament": "Eliteserien",
-    "title": "Molde – Aalesund",
-    "time": "2026-09-19T16:00:00.000Z",
-    "endTime": null,
-    "venue": "Aker Stadion",
-    "meta": "Eliteserien",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/molde-aalesund-1834960",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "TV 2 Sport 1",
-        "url": "https://www.tvkampen.com/kamp/molde-aalesund-1834960",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Molde",
-    "awayTeam": "Aalesund",
-    "isFavorite": true,
-    "round": null,
-    "id": "98ff5f3062c0",
-    "homeTeamEntityId": "molde",
-    "awayTeamEntityId": "aalesund"
-  },
-  {
-    "sport": "football",
     "tournament": "Premier League",
     "title": "Coventry City at Nottingham Forest",
     "time": "2026-09-19T16:30:00.000Z",
@@ -4814,8 +4694,8 @@
     "streaming": [
       {
         "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/nottingham-forest-coventry-1914766",
-        "urlKind": "deep"
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
