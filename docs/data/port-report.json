@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T13:56:52.468Z",
+  "generatedAt": "2026-09-20T17:18:09.718Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -27,7 +27,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 20.14,
+    "oldestGapAgeDays": 20.28,
     "escalatable": 4,
     "catalogMatched": 4,
     "auditedAt": "2026-09-18T08:35:00Z",
@@ -35,28 +35,28 @@
       {
         "interest": "Håndball — Elkjøp-ligaen (menn) serierunde 19.–21. sep",
         "severity": "high",
-        "ageDays": 20.14,
+        "ageDays": 20.28,
         "recurrences": 18,
         "catalogMatched": true
       },
       {
         "interest": "CS2 — StarLadder StarSeries Fall 2026 (17.–20. sep, Barcelona, $500k) resterende bracket",
         "severity": "high",
-        "ageDays": 6.23,
+        "ageDays": 6.37,
         "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "CS2 — ESL Pro League Season 24 (3.–11. okt, Katowice/Spodek, $1M)",
         "severity": "medium",
-        "ageDays": 6.23,
+        "ageDays": 6.37,
         "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Shanghai Masters (ATP Masters 1000, ~7.–18. okt)",
         "severity": "medium",
-        "ageDays": 6.23,
+        "ageDays": 6.37,
         "recurrences": 4,
         "catalogMatched": true
       }
@@ -167,21 +167,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-20T13:56:46.600Z",
+    "buildCheckedAt": "2026-09-20T17:18:04.985Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-20T09:36:07.796Z",
-    "manifestAgeHours": 4.35,
+    "manifestGeneratedAt": "2026-09-20T13:56:54.234Z",
+    "manifestAgeHours": 3.35,
     "staleFiles": [
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-09-17T22:55:00Z",
-        "ageHours": 63.03
+        "ageHours": 66.39
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-09-20T09:56:04Z",
-    "verifyAgeHours": 4.01,
+    "verifyAgeHours": 7.37,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -191,9 +191,16 @@
     "inSeason": 6,
     "breached": [
       {
+        "id": "football:eliteserien",
+        "name": "Eliteserien",
+        "upcoming": 0,
+        "minUpcoming": 2,
+        "horizonDays": 14
+      },
+      {
         "id": "football:premier-league",
         "name": "Premier League",
-        "upcoming": 1,
+        "upcoming": 0,
         "minUpcoming": 6,
         "horizonDays": 14
       },
@@ -205,6 +212,6 @@
         "horizonDays": 14
       }
     ],
-    "generatedAt": "2026-09-20T13:56:52.468Z"
+    "generatedAt": "2026-09-20T17:18:09.718Z"
   }
 }
