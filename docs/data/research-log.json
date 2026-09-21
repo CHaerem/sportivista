@@ -1,22 +1,23 @@
 {
-  "runAt": "2026-09-17T22:55:00Z",
-  "tier": "standard",
-  "eventsAdded": 0,
+  "runAt": "2026-09-21T05:05:00Z",
+  "eventsAdded": 1,
   "eventsRemoved": 0,
-  "trackedDelta": "Ingen event-endring. La til ÉN horisont-plassholder i tracked.leagues: norway-u21-euro-qualifying-2026-27 (Norge U21 – EM-kvalifisering, catalog.json#tier1) — Norge U21 møter Israel i UEFA U21-EM-kvalik tir. 6. okt på Viking stadion Stavanger (uten publikum), web-bekreftet mot VG. IKKE boardet som event: avspark TBC (UEFA/fotball.no) + norsk kanal ubekreftet → verify/neste kjøring boarder når tid+kanal festes. Oppdaterte lastUpdated/lastUpdatedBy, prependet denne kjøringens note (notes holdt på cap 15, droppet eldste 2026-09-06T22:20Z). Ingen katalog-endring; ingen expiry-drops (nærmeste 2026-09-20 Davis Cup).",
+  "trackedDelta": "Droppet 3 ferdigspilte/utløpte tournaments-entries (davis-cup-2026-norway-china, starladder-starseries-fall-2026, pga-tour-fall-2026); oppdaterte elkjop-ligaen-2026-27 (Kolstad–Follo boardet, expires 30.09→31.10). Ingen katalog-/registry-endring.",
   "quality": {
     "pass": true,
-    "score": 90,
-    "failures": [],
-    "note": "Selv-vurdert (rolig standard-tier gap-triage-kjøring, ingen nye events å måle mot research-rubrikken; egen grader-subagent ikke spawnet for et no-op). Recall: den ENE akutte HIGH-hullen (sjakk-OL) var alt tettet av 19:50Z-deep-kjøringen; alle øvrige coverage-gaps/contracts triagert som nyhetsstøy/kjent miscalibrering/horisont-cadence. Scout-eskaleringen (Norge U21) adressert disiplinert: date/venue web-bekreftet, men tid TBD → horisont-plassholder heller enn oppdiktet tid. Virkelighets-kunnskapslekkasje (senior «Norge–Israel VM-kval 11. okt») korrekt identifisert mot appens RSS/tidslinje og ikke boardet."
+    "score": 93,
+    "failures": [
+      "Minor: eksakt avkast 16.00 for Kolstad–Follo er myk-bekreftet (TV 2 sendestart 15.50) → korrekt satt medium; verify må feste minuttet.",
+      "Minor: stående self-repair-flagg (ingen wholesale håndball-fetcher; ita.1/ger.1; esports.js 100T-gated; golf-fetcher død; PL authority.json-kanal TV 2→Viaplay; tennis:tour-kontrakt miscalibrert) — utenfor research remit, eskalert til self-repair/improve."
+    ]
   },
   "notes": [
-    "Rolig standard-tier 4-timers-kjøring ~3 t etter 19:50Z-deep-kjøringen. Sjekket: coverage-audit (05:00Z, escalated=true — sjakk-OL alt boardet), coverage-gaps (21:54Z, gapCount 9, anomalyCount 0), coverage-contracts (6/7 met, tennis:tour breached = kjent miscalibrering), scout-log (siste 22:25Z quiet; escalate 14:40Z Norge U21).",
-    "PRIMÆRHANDLING: scout-eskalering 14:40Z (NRK/VG «Norges U21-kamp mot Israel spilles i Stavanger bak lukkede dører»). Web-bekreftet mot VG: Norge U21 vs Israel, UEFA U21-EM-kvalik, tir. 6. okt, Viking stadion Stavanger, uten publikum. Avspark TBC (UEFA.com + fotball.no) + norsk kanal ubekreftet → IKKE boardet (en manglende event er bedre enn en oppdiktet tid); lagt som horisont-plassholder i tracked (norway-u21-euro-qualifying-2026-27), ~19 d ut / ikke imminent.",
-    "VIRKELIGHETS-LEKKASJE UNNGÅTT: web-søk ga også «Norge–Israel VM-kval 11. okt» (SENIOR) — IKKE i appens rss-digest og motstrider appens tidslinje (Norge er i Nations League League A gr. 4 mot Portugal/Danmark/Wales i septembervinduet). Behandlet som modellens virkelighets-kunnskapslekkasje og IKKE boardet.",
-    "TRIAGE coverage-gaps.json: Man City (BBC Sutton-prediksjon = støy; dekket CL/PL), Europaligaen (NRK LSK-tap = past result; LSK ikke katalog-entitet; EL boardet), «The Open» imminent:true (falskt token-treff fra chessbase «Chess Olympiad - Live!»-headline; golfmajoren ikke i sesong; sjakk-OL alt boardet), Il Lombardia (cyclingnews «Past Winners» = retrospektiv; boardet 10. okt), tracked-claim Serie A (korrekt fravær, landslagspause 24.–27. sep), Warholm/Carlsen (claimedDate 2027, >9 mnd ut), Shanghai Masters (ekte horisont-gap medium ~20 d ut, placeholder sporet, boardes ~7. okt), contract-breach tennis:tour high = kjent miscalibrering (Davis Cup + Laver Cup ER på tavla).",
-    "Step 1 reconcile: alle alwaysTrack-turneringer har tracked-entry; ingen expiry-drops (nærmeste Davis Cup 2026-09-20). Ingen katalog-endring; ingen registry-reconciliation (ikke ukentlig mandags-sveip).",
-    "STÅENDE ROTÅRSAK-FLAGG uendret (self-repair/improve): sjakk-OL/marquee-sjakk authority.json contract-blokk (ville fanget sjakk-OL-glippen mekanisk); esports.js 100T-gated; ingen wholesale håndball-fetcher; tennis:tour-kontrakt miscalibrert; football maxEvents:30 CL/EL-regresjon.",
-    "validate-events: 156 events, 0 errors (kun stående strukturelle varsler: WP-246 landing-URL x48, WP-242 weak time-basis x10 / weak channel-basis x2). Ingen event-endring denne kjøringen."
+    "Første kjøring på ~3,5 døgn (forrige 17.09 22:55Z). Imminent-vinduet 21.–27. sep var usedvanlig komplett (sjakk-OL, UCI Road-VM, CS2 100T–EAC, golf Presidents Cup + Open de France, Nasjonsligaen Norge–Danmark/Portugal, F1 Aserbajdsjan, Laver Cup).",
+    "ÉN NY EVENT: håndball Kolstad–Follo HK (Elkjøp-ligaen) lør. 26. sep 16.00 CEST (14.00 UTC), Kolstad Arena, TV 2 Play, medium. Eneste ekte imminente recall-hull — håndball er tier1 wholesale UTEN statisk fetcher og pauser ikke for fotball-landslagsvinduet, så tavla hadde NULL kommende håndball etter 20. sep. Kolstad (katalog-tier2) neste hjemmekamp. Uavhengig fresh-context write-time fact-check CONFIRMED (hjemme/borte, dato, venue Kolstad Arena; avkast 16.00 myk-bekreftet via sendestart 15.50 → medium).",
+    "HOLDT AV TAVLA: Nærbø–Kolstad 23. sep (kilder uenige NM cup vs liga + single-source tid) og Nærbø–Kolstad 30. sep (single-source 18.15, mistenkelig venue) — en feil tid er verre enn en manglende.",
+    "KONTRAKTBRUDD-TRIAGE (coverage-gaps 02:38Z: PL + Eliteserien contract-breach HIGH, upcoming 0): FORVENTET utvidet-landslagspause-artefakt. PL runde 6 (Liverpool–Man City) OG La Liga runde 8 (Barcelona–Getafe) er begge 10.–11. okt, ~19–20 d ut, UTENFOR 14-d-kontrakthorisonten; de statiske ESPN-fetcherne (eng.1/esp.1) boarder dem når vinduet ruller fram, TV-tider 3 uker ut ikke låst → boarding nå ville risikert feil tid (web-bekreftet mot Liverpool-fixtures + fcbarcelona.com/La Liga). Fulgte klubbers entity-gaps (Barcelona/Liverpool/Man City/Arsenal/Real Madrid) = korrekt pause-fravær + nyhetsstøy, neste kamp ~10. okt. tennis:tour-brudd = kjent miscalibrering (entity-gated; Laver Cup på tavla).",
+    "RECONCILE (Step 1): alle alwaysTrack-turneringer har tracked-entry; droppet 3 ferdigspilte. Ingen registry-reconciliation (standard 4-timers, ikke deep-tier mandags-sveip).",
+    "validate-events: 102 events, 0 errors (håndball-eventet ga NULL nye varsler; pre-eksisterende strukturelle varsler står: WP-246 landing-URL x9, WP-242 weak-basis).",
+    "STÅENDE ROTÅRSAK-FLAGG (self-repair/improve): ingen wholesale håndball-fetcher (handball.no); esports.js 100T-gated; golf-fetcher død (stale-retained); football maxEvents:30 CL/EL-regresjon; PL authority.json-kanal fortsatt TV 2 (skal være Viaplay); tennis:tour-kontrakt miscalibrert."
   ]
 }
