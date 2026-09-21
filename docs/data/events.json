@@ -144,62 +144,6 @@
   },
   {
     "sport": "football",
-    "tournament": "Serie A",
-    "title": "Lazio at Udinese",
-    "time": "2026-09-07T18:45:00Z",
-    "endTime": null,
-    "venue": "Bluenergy Stadium, Udine",
-    "norwegian": false,
-    "homeTeam": "Udinese",
-    "awayTeam": "Lazio",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://tv.vg.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-30T13:55:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.legaseriea.it/serie-a/news/date-orari-e-programmazione-tv-delle-prime-cinque-giornate",
-      "https://sport.sky.it/calcio/serie-a/calendario-serie-a-anticipi-posticipi-2026-2027-big-match-su-sky",
-      "https://www.sportface.it/calcio/serie-a-2026-2027-anticipi-posticipi-prime-cinque-giornate/2823120"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "lega-serie-a",
-        "url": "https://www.legaseriea.it/serie-a/news/date-orari-e-programmazione-tv-delle-prime-cinque-giornate",
-        "basis": "primary",
-        "retrievedAt": "2026-08-30T13:55:00Z",
-        "note": "Lega Serie As offisielle kalender for 3. giornata (date/orari/programmazione tv), lest direkte + bekreftet av Sky Sport Italia + Sportface (tre kilder enige)"
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://tv.vg.no",
-        "basis": "official",
-        "retrievedAt": "2026-08-30T13:55:00Z",
-        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27 (VGs egen kunngjøring; tvkampen/tvtilbud bekrefter)"
-      }
-    },
-    "summary": "Serie A 3. serierunde: Udinese–Lazio. Avspark man. 7. sep 20:45 CEST på Bluenergy Stadium, Udine.\n\nNorsk visning: VG+ Sport.",
-    "homeTeamEntityId": "udinese",
-    "awayTeamEntityId": "lazio",
-    "id": "f67ff47175da",
-    "verifiedAt": "2026-09-07T05:30:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.sportmediaset.mediaset.it/calcio/seriea/calendario-serie-a-2026-2027-date-criteri-novita_112897973-202602k.shtml",
-      "https://www.corrieredellosport.it/live/calendario-serie-a",
-      "https://www.vg.no/sport/i/P4pQgb/vg-sport-har-kjoept-rettigheter-til-serie-a-i-norge"
-    ]
-  },
-  {
-    "sport": "football",
     "tournament": "UEFA Champions League 2026/27 (ligaspill)",
     "title": "Inter Milan at Real Madrid",
     "time": "2026-09-08T19:00:00Z",
@@ -5474,5 +5418,49 @@
     "isFavorite": false,
     "round": null,
     "id": "df5379966a54"
+  },
+  {
+    "sport": "football",
+    "tournament": "OBOS-ligaen",
+    "title": "Bryne – Lyn",
+    "time": "2026-10-04T12:30:00Z",
+    "endTime": null,
+    "venue": "Bryne stadion",
+    "norwegian": true,
+    "homeTeam": "Bryne",
+    "awayTeam": "Lyn",
+    "awayTeamEntityId": "fk-lyn-oslo",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/fotball/obos-ligaen",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-21T20:30:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+      "https://www.obos-ligaen.no/terminliste"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+        "basis": "primary",
+        "retrievedAt": "2026-09-21T20:30:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/fotball/obos-ligaen",
+        "basis": "official",
+        "retrievedAt": "2026-09-21T20:30:00Z"
+      }
+    },
+    "summary": "Lyns bortekamp mot Bryne søndag 4. oktober kl. 14.30 CEST på Bryne stadion (OBOS-ligaen, runde 24) — Lyns neste seriekamp etter Hødd-oppgjøret 13. september (OBOS-ligaen har ingen statisk fetcher, så Lyn-kampene håndboardes).\n\nDato/tid/arena bekreftet mot fotball.nos terminliste (fiksId 161785, primær-autoritet) + obos-ligaen.nos terminliste, to kilder enige, og uavhengig write-time fact-check (fotball.no + obos-ligaen + TV 2 Play) confirmed. TV-valg kan flytte avspark 30–60 min; verify følger. Norsk visning TV 2 Play."
   }
 ]
