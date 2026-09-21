@@ -712,9 +712,15 @@ class Dashboard {
 		if (!e) return null;
 		const { byName, byId } = this.identityIndex();
 		if (!byId.size && !byName.size) return null;
-		const look = (name) => (name ? byName.get(ssNormalize(name).trim()) || null : null);
-		return (e.homeTeamEntityId && byId.get(e.homeTeamEntityId))
-			|| (e.awayTeamEntityId && byId.get(e.awayTeamEntityId))
+		// A stamped id or a name hit is trusted only when the entity genuinely NAMES
+		// that string — a generic-qualifier overlap ("Atlético Calatayud" inheriting
+		// Atlético Madrid's crest) is refused so the row falls back to the honest
+		// sport glyph rather than a mark that misidentifies who is playing.
+		const ok = (ent, name) => (ent && (typeof ssEntityMatchesName !== 'function' || ssEntityMatchesName(ent, name)) ? ent : null);
+		const byStamp = (id, name) => (id ? ok(byId.get(id) || null, name) : null);
+		const look = (name) => (name ? ok(byName.get(ssNormalize(name).trim()) || null, name) : null);
+		return byStamp(e.homeTeamEntityId, e.homeTeam)
+			|| byStamp(e.awayTeamEntityId, e.awayTeam)
 			|| look(e.homeTeam)
 			|| look(e.awayTeam)
 			|| ((e.norwegianPlayers || []).map((p) => p && p.entityId && byId.get(p.entityId)).find(Boolean) || null)
