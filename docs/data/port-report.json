@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-21T10:23:40.227Z",
+  "generatedAt": "2026-09-21T16:47:02.526Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
-    "amendRate": "yellow",
+    "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
     "contracts": "red"
@@ -27,7 +27,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 20.99,
+    "oldestGapAgeDays": 21.26,
     "escalatable": 3,
     "catalogMatched": 3,
     "auditedAt": "2026-09-21T09:05:00Z",
@@ -35,33 +35,33 @@
       {
         "interest": "Håndball — Elkjøp-ligaen (menn) serierunde 26.–27. sep",
         "severity": "high",
-        "ageDays": 20.99,
+        "ageDays": 21.26,
         "recurrences": 19,
         "catalogMatched": true
       },
       {
         "interest": "CS2 — ESL Pro League Season 24 (3.–11. okt, Katowice/Spodek, $1M)",
         "severity": "medium",
-        "ageDays": 7.08,
+        "ageDays": 7.34,
         "recurrences": 5,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Shanghai Masters (ATP Masters 1000, ~7.–18. okt)",
         "severity": "medium",
-        "ageDays": 7.08,
+        "ageDays": 7.34,
         "recurrences": 5,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.4,
-    "nearTermChecked": 5,
-    "nearTermAmended": 2,
-    "verifyRunAt": "2026-09-20T09:56:04Z",
+    "nearTermRate": 0,
+    "nearTermChecked": 12,
+    "nearTermAmended": 0,
+    "verifyRunAt": "2026-09-21T10:55:00Z",
     "windowRate": 0,
-    "windowChecks": 99,
+    "windowChecks": 108,
     "windowAmendments": 0,
     "windowCorrections": 9,
     "byDay": [
@@ -148,23 +148,33 @@
         "amendments": 0,
         "corrections": 1,
         "rate": 0
+      },
+      {
+        "date": "2026-09-21",
+        "checks": 9,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-21T10:23:35.582Z",
+    "buildCheckedAt": "2026-09-21T16:46:59.237Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-21T08:26:10.250Z",
-    "manifestAgeHours": 1.96,
+    "manifestGeneratedAt": "2026-09-21T10:23:41.591Z",
+    "manifestAgeHours": 6.39,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-09-20T09:56:04Z",
-    "verifyAgeHours": 24.46,
-    "corrections": 0,
+    "checkedAt": "2026-09-21T10:55:00Z",
+    "verifyAgeHours": 5.87,
+    "corrections": 2,
     "unresolved": 0,
-    "signals": []
+    "signals": [
+      "Alle 12 kandidater (ai-research / confidence-satt) i 7-dagersvinduet verifisert — ingen krevde endring av tid, kanal eller deltakelse.",
+      "Golf: FedEx Open de France (24.–27.09, Le Golf National) — både Viktor Hovland og Kristoffer Reitan bekreftet i feltet; Viaplay-visning uendret. Ikke i gang …"
+    ]
   },
   "contracts": {
     "total": 6,
@@ -192,6 +202,6 @@
         "horizonDays": 14
       }
     ],
-    "generatedAt": "2026-09-21T10:23:40.226Z"
+    "generatedAt": "2026-09-21T16:47:02.526Z"
   }
 }

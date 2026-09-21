@@ -145,62 +145,6 @@
   {
     "sport": "football",
     "tournament": "Serie A",
-    "title": "Lecce at Cagliari",
-    "time": "2026-09-07T16:30:00Z",
-    "endTime": null,
-    "venue": "Unipol Domus, Cagliari",
-    "norwegian": false,
-    "homeTeam": "Cagliari",
-    "awayTeam": "Lecce",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://tv.vg.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-30T13:55:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.legaseriea.it/serie-a/news/date-orari-e-programmazione-tv-delle-prime-cinque-giornate",
-      "https://sport.sky.it/calcio/serie-a/calendario-serie-a-anticipi-posticipi-2026-2027-big-match-su-sky",
-      "https://www.sportface.it/calcio/serie-a-2026-2027-anticipi-posticipi-prime-cinque-giornate/2823120"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "lega-serie-a",
-        "url": "https://www.legaseriea.it/serie-a/news/date-orari-e-programmazione-tv-delle-prime-cinque-giornate",
-        "basis": "primary",
-        "retrievedAt": "2026-08-30T13:55:00Z",
-        "note": "Lega Serie As offisielle kalender for 3. giornata (date/orari/programmazione tv), lest direkte + bekreftet av Sky Sport Italia + Sportface (tre kilder enige)"
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://tv.vg.no",
-        "basis": "official",
-        "retrievedAt": "2026-08-30T13:55:00Z",
-        "note": "VG+ Sport har norske Serie A-rettigheter 2026/27 (VGs egen kunngjøring; tvkampen/tvtilbud bekrefter)"
-      }
-    },
-    "summary": "Serie A 3. serierunde: Cagliari–Lecce. Avspark man. 7. sep 18:30 CEST på Unipol Domus, Cagliari.\n\nNorsk visning: VG+ Sport.",
-    "homeTeamEntityId": "cagliari",
-    "awayTeamEntityId": "lecce",
-    "id": "5d8cf4ecd013",
-    "verifiedAt": "2026-09-07T05:30:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.sportmediaset.mediaset.it/calcio/seriea/calendario-serie-a-2026-2027-date-criteri-novita_112897973-202602k.shtml",
-      "https://www.corrieredellosport.it/live/calendario-serie-a",
-      "https://www.vg.no/sport/i/P4pQgb/vg-sport-har-kjoept-rettigheter-til-serie-a-i-norge"
-    ]
-  },
-  {
-    "sport": "football",
-    "tournament": "Serie A",
     "title": "Lazio at Udinese",
     "time": "2026-09-07T18:45:00Z",
     "endTime": null,
@@ -4455,6 +4399,54 @@
     ]
   },
   {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Bergsøy – Elverum",
+    "time": "2026-09-25T16:00:00Z",
+    "endTime": null,
+    "venue": "Rem Arena, Fosnavåg",
+    "norwegian": true,
+    "homeTeam": "Bergsøy",
+    "awayTeam": "Elverum",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-21T15:15:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
+      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "handballforbundet",
+        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-21T15:15:00Z",
+        "note": "Norges Handballforbunds «Handball pa TV»-side lister runden 25.-27. sep med avkast 18.00 CEST; kryss-bekreftet mot TV 2 livesport/Play (lagoversikt + kampside). Uavhengig fresh-context write-time fact-check bekreftet dato + hjemme/borte + tid (TV 2-sendestart ~5 min for avkast). handball.no-terminlisten (autoritet) er JS-rendret -> basis secondary til verify fester minuttet."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+        "basis": "official",
+        "retrievedAt": "2026-09-21T15:15:00Z",
+        "note": "TV 2 eier norske Elkjop-liga-rettigheter (alle kamper pa TV 2 Play, utvalgte lineart)."
+      }
+    },
+    "summary": "Bergsøy tar imot Elverum i Elkjøp-ligaen. Elverum er et av seriens mestvinnende lag; hjemmelaget Bergsøy jakter poeng på egen bane.\n\nAvkast fredag 25. september kl. 18.00 (16.00 UTC). Vises på TV 2 Play.",
+    "awayTeamEntityId": "elverum-handball",
+    "id": "a3fa01b33ab8"
+  },
+  {
     "sport": "f1",
     "tournament": "Formula 1 2026 - Race Weekend",
     "title": "Qatar Airways Azerbaijan Grand Prix",
@@ -4586,6 +4578,54 @@
       "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr/kolstad-follo-fx8a82b1",
       "https://www.flashscore.com/team/kolstad/rTWbl2mC/"
     ]
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Kristiansand TH – Sandnes",
+    "time": "2026-09-26T14:00:00Z",
+    "endTime": null,
+    "venue": "Aquarama, Kristiansand",
+    "norwegian": true,
+    "homeTeam": "Kristiansand TH",
+    "awayTeam": "Sandnes",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-21T15:15:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
+      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "handballforbundet",
+        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-21T15:15:00Z",
+        "note": "Norges Handballforbunds «Handball pa TV»-side lister runden 25.-27. sep med avkast 16.00 CEST; kryss-bekreftet mot TV 2 livesport/Play (lagoversikt + kampside). Uavhengig fresh-context write-time fact-check bekreftet dato + hjemme/borte + tid (TV 2-sendestart ~5 min for avkast). handball.no-terminlisten (autoritet) er JS-rendret -> basis secondary til verify fester minuttet."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+        "basis": "official",
+        "retrievedAt": "2026-09-21T15:15:00Z",
+        "note": "TV 2 eier norske Elkjop-liga-rettigheter (alle kamper pa TV 2 Play, utvalgte lineart)."
+      }
+    },
+    "summary": "Kristiansand TH møter Sandnes i Elkjøp-ligaen på hjemmebane i Aquarama.\n\nAvkast lørdag 26. september kl. 16.00 (14.00 UTC). Vises på TV 2 Play.",
+    "awayTeamEntityId": "sandnes-handballklubb",
+    "id": "6c47d1586645"
   },
   {
     "sport": "football",
@@ -4915,6 +4955,100 @@
     "id": "a0a94dfa0e82"
   },
   {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Nærbø – Fjellhammer",
+    "time": "2026-09-27T15:00:00Z",
+    "endTime": null,
+    "venue": "Nærbøhallen",
+    "norwegian": true,
+    "homeTeam": "Nærbø",
+    "awayTeam": "Fjellhammer",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-21T15:15:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
+      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "handballforbundet",
+        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-21T15:15:00Z",
+        "note": "Norges Handballforbunds «Handball pa TV»-side lister runden 25.-27. sep med avkast 17.00 CEST; kryss-bekreftet mot TV 2 livesport/Play (lagoversikt + kampside). Uavhengig fresh-context write-time fact-check bekreftet dato + hjemme/borte + tid (TV 2-sendestart ~5 min for avkast). handball.no-terminlisten (autoritet) er JS-rendret -> basis secondary til verify fester minuttet."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+        "basis": "official",
+        "retrievedAt": "2026-09-21T15:15:00Z",
+        "note": "TV 2 eier norske Elkjop-liga-rettigheter (alle kamper pa TV 2 Play, utvalgte lineart)."
+      }
+    },
+    "summary": "Jærlaget Nærbø tar imot Fjellhammer i Elkjøp-ligaen.\n\nAvkast søndag 27. september kl. 17.00 (15.00 UTC). Vises på TV 2 Play.",
+    "id": "da78180d9b83"
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Runar Elite – Viking TIF",
+    "time": "2026-09-27T15:00:00Z",
+    "endTime": null,
+    "venue": "Runarhallen, Sandefjord",
+    "norwegian": true,
+    "homeTeam": "Runar Elite",
+    "awayTeam": "Viking TIF",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr/runar-viking-tif-xbbx4xqx",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-21T15:15:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
+      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "handballforbundet",
+        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-21T15:15:00Z",
+        "note": "Norges Handballforbunds «Handball pa TV»-side lister runden 25.-27. sep med avkast 17.00 CEST; kryss-bekreftet mot TV 2 livesport/Play (lagoversikt + kampside). Uavhengig fresh-context write-time fact-check bekreftet dato + hjemme/borte + tid (TV 2-sendestart ~5 min for avkast). handball.no-terminlisten (autoritet) er JS-rendret -> basis secondary til verify fester minuttet."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr/runar-viking-tif-xbbx4xqx",
+        "basis": "official",
+        "retrievedAt": "2026-09-21T15:15:00Z",
+        "note": "TV 2 eier norske Elkjop-liga-rettigheter (alle kamper pa TV 2 Play, utvalgte lineart)."
+      }
+    },
+    "summary": "Runar Elite møter Viking TIF i Elkjøp-ligaen i Runarhallen i Sandefjord.\n\nAvkast søndag 27. september kl. 17.00 (15.00 UTC). Vises på TV 2 Play (sendestart 16.50).",
+    "id": "11c8927c8191"
+  },
+  {
     "sport": "football",
     "tournament": "Copa del Rey",
     "title": "Sporting de Alcázar at CP Talayuela",
@@ -4958,6 +5092,104 @@
     "isFavorite": false,
     "round": "1st Leg",
     "id": "8b0b072cb993"
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Drammen – ØIF Arendal",
+    "time": "2026-09-27T16:00:00Z",
+    "endTime": null,
+    "venue": "Drammenshallen",
+    "norwegian": true,
+    "homeTeam": "Drammen",
+    "awayTeam": "ØIF Arendal",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-21T15:15:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
+      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "handballforbundet",
+        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-21T15:15:00Z",
+        "note": "Norges Handballforbunds «Handball pa TV»-side lister runden 25.-27. sep med avkast 18.00 CEST; kryss-bekreftet mot TV 2 livesport/Play (lagoversikt + kampside). Uavhengig fresh-context write-time fact-check bekreftet dato + hjemme/borte + tid (TV 2-sendestart ~5 min for avkast). handball.no-terminlisten (autoritet) er JS-rendret -> basis secondary til verify fester minuttet."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+        "basis": "official",
+        "retrievedAt": "2026-09-21T15:15:00Z",
+        "note": "TV 2 eier norske Elkjop-liga-rettigheter (alle kamper pa TV 2 Play, utvalgte lineart)."
+      }
+    },
+    "summary": "Drammen tar imot ØIF Arendal i Elkjøp-ligaen i Drammenshallen.\n\nAvkast søndag 27. september kl. 18.00 (16.00 UTC). Vises på TV 2 Play.",
+    "homeTeamEntityId": "drammen-handballklubb",
+    "awayTeamEntityId": "oif-arendal",
+    "id": "48847f00551e"
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Bergen Håndball – Sandefjord",
+    "time": "2026-09-27T17:00:00Z",
+    "endTime": null,
+    "venue": "Haukelandshallen, Bergen",
+    "norwegian": true,
+    "homeTeam": "Bergen Håndball",
+    "awayTeam": "Sandefjord",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-21T15:15:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
+      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "handballforbundet",
+        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-21T15:15:00Z",
+        "note": "Norges Handballforbunds «Handball pa TV»-side lister runden 25.-27. sep med avkast 19.00 CEST; kryss-bekreftet mot TV 2 livesport/Play (lagoversikt + kampside). Uavhengig fresh-context write-time fact-check bekreftet dato + hjemme/borte + tid (TV 2-sendestart ~5 min for avkast). handball.no-terminlisten (autoritet) er JS-rendret -> basis secondary til verify fester minuttet."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
+        "basis": "official",
+        "retrievedAt": "2026-09-21T15:15:00Z",
+        "note": "TV 2 eier norske Elkjop-liga-rettigheter (alle kamper pa TV 2 Play, utvalgte lineart)."
+      }
+    },
+    "summary": "Bergen Håndball avslutter serierunden hjemme mot Sandefjord i Elkjøp-ligaen.\n\nAvkast søndag 27. september kl. 19.00 (17.00 UTC). Vises på TV 2 Play (sendestart 18.55).",
+    "homeTeamEntityId": "bergen-handball",
+    "awayTeamEntityId": "sandefjord-handball",
+    "id": "e9fd700f7525"
   },
   {
     "sport": "football",
@@ -5242,275 +5474,5 @@
     "isFavorite": false,
     "round": null,
     "id": "df5379966a54"
-  },
-  {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen 2026/27",
-    "title": "Bergsøy – Elverum",
-    "time": "2026-09-25T16:00:00Z",
-    "endTime": null,
-    "venue": "Rem Arena, Fosnavåg",
-    "norwegian": true,
-    "homeTeam": "Bergsøy",
-    "awayTeam": "Elverum",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-21T15:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "handballforbundet",
-        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-        "basis": "secondary",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "Norges Handballforbunds «Handball pa TV»-side lister runden 25.-27. sep med avkast 18.00 CEST; kryss-bekreftet mot TV 2 livesport/Play (lagoversikt + kampside). Uavhengig fresh-context write-time fact-check bekreftet dato + hjemme/borte + tid (TV 2-sendestart ~5 min for avkast). handball.no-terminlisten (autoritet) er JS-rendret -> basis secondary til verify fester minuttet."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "basis": "official",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "TV 2 eier norske Elkjop-liga-rettigheter (alle kamper pa TV 2 Play, utvalgte lineart)."
-      }
-    },
-    "summary": "Bergsøy tar imot Elverum i Elkjøp-ligaen. Elverum er et av seriens mestvinnende lag; hjemmelaget Bergsøy jakter poeng på egen bane.\n\nAvkast fredag 25. september kl. 18.00 (16.00 UTC). Vises på TV 2 Play."
-  },
-  {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen 2026/27",
-    "title": "Kristiansand TH – Sandnes",
-    "time": "2026-09-26T14:00:00Z",
-    "endTime": null,
-    "venue": "Aquarama, Kristiansand",
-    "norwegian": true,
-    "homeTeam": "Kristiansand TH",
-    "awayTeam": "Sandnes",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-21T15:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "handballforbundet",
-        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-        "basis": "secondary",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "Norges Handballforbunds «Handball pa TV»-side lister runden 25.-27. sep med avkast 16.00 CEST; kryss-bekreftet mot TV 2 livesport/Play (lagoversikt + kampside). Uavhengig fresh-context write-time fact-check bekreftet dato + hjemme/borte + tid (TV 2-sendestart ~5 min for avkast). handball.no-terminlisten (autoritet) er JS-rendret -> basis secondary til verify fester minuttet."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "basis": "official",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "TV 2 eier norske Elkjop-liga-rettigheter (alle kamper pa TV 2 Play, utvalgte lineart)."
-      }
-    },
-    "summary": "Kristiansand TH møter Sandnes i Elkjøp-ligaen på hjemmebane i Aquarama.\n\nAvkast lørdag 26. september kl. 16.00 (14.00 UTC). Vises på TV 2 Play."
-  },
-  {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen 2026/27",
-    "title": "Nærbø – Fjellhammer",
-    "time": "2026-09-27T15:00:00Z",
-    "endTime": null,
-    "venue": "Nærbøhallen",
-    "norwegian": true,
-    "homeTeam": "Nærbø",
-    "awayTeam": "Fjellhammer",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-21T15:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "handballforbundet",
-        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-        "basis": "secondary",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "Norges Handballforbunds «Handball pa TV»-side lister runden 25.-27. sep med avkast 17.00 CEST; kryss-bekreftet mot TV 2 livesport/Play (lagoversikt + kampside). Uavhengig fresh-context write-time fact-check bekreftet dato + hjemme/borte + tid (TV 2-sendestart ~5 min for avkast). handball.no-terminlisten (autoritet) er JS-rendret -> basis secondary til verify fester minuttet."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "basis": "official",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "TV 2 eier norske Elkjop-liga-rettigheter (alle kamper pa TV 2 Play, utvalgte lineart)."
-      }
-    },
-    "summary": "Jærlaget Nærbø tar imot Fjellhammer i Elkjøp-ligaen.\n\nAvkast søndag 27. september kl. 17.00 (15.00 UTC). Vises på TV 2 Play."
-  },
-  {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen 2026/27",
-    "title": "Runar Elite – Viking TIF",
-    "time": "2026-09-27T15:00:00Z",
-    "endTime": null,
-    "venue": "Runarhallen, Sandefjord",
-    "norwegian": true,
-    "homeTeam": "Runar Elite",
-    "awayTeam": "Viking TIF",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr/runar-viking-tif-xbbx4xqx"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-21T15:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "handballforbundet",
-        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-        "basis": "secondary",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "Norges Handballforbunds «Handball pa TV»-side lister runden 25.-27. sep med avkast 17.00 CEST; kryss-bekreftet mot TV 2 livesport/Play (lagoversikt + kampside). Uavhengig fresh-context write-time fact-check bekreftet dato + hjemme/borte + tid (TV 2-sendestart ~5 min for avkast). handball.no-terminlisten (autoritet) er JS-rendret -> basis secondary til verify fester minuttet."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr/runar-viking-tif-xbbx4xqx",
-        "basis": "official",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "TV 2 eier norske Elkjop-liga-rettigheter (alle kamper pa TV 2 Play, utvalgte lineart)."
-      }
-    },
-    "summary": "Runar Elite møter Viking TIF i Elkjøp-ligaen i Runarhallen i Sandefjord.\n\nAvkast søndag 27. september kl. 17.00 (15.00 UTC). Vises på TV 2 Play (sendestart 16.50)."
-  },
-  {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen 2026/27",
-    "title": "Drammen – ØIF Arendal",
-    "time": "2026-09-27T16:00:00Z",
-    "endTime": null,
-    "venue": "Drammenshallen",
-    "norwegian": true,
-    "homeTeam": "Drammen",
-    "awayTeam": "ØIF Arendal",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-21T15:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "handballforbundet",
-        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-        "basis": "secondary",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "Norges Handballforbunds «Handball pa TV»-side lister runden 25.-27. sep med avkast 18.00 CEST; kryss-bekreftet mot TV 2 livesport/Play (lagoversikt + kampside). Uavhengig fresh-context write-time fact-check bekreftet dato + hjemme/borte + tid (TV 2-sendestart ~5 min for avkast). handball.no-terminlisten (autoritet) er JS-rendret -> basis secondary til verify fester minuttet."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "basis": "official",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "TV 2 eier norske Elkjop-liga-rettigheter (alle kamper pa TV 2 Play, utvalgte lineart)."
-      }
-    },
-    "summary": "Drammen tar imot ØIF Arendal i Elkjøp-ligaen i Drammenshallen.\n\nAvkast søndag 27. september kl. 18.00 (16.00 UTC). Vises på TV 2 Play."
-  },
-  {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen 2026/27",
-    "title": "Bergen Håndball – Sandefjord",
-    "time": "2026-09-27T17:00:00Z",
-    "endTime": null,
-    "venue": "Haukelandshallen, Bergen",
-    "norwegian": true,
-    "homeTeam": "Bergen Håndball",
-    "awayTeam": "Sandefjord",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-21T15:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "handballforbundet",
-        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-        "basis": "secondary",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "Norges Handballforbunds «Handball pa TV»-side lister runden 25.-27. sep med avkast 19.00 CEST; kryss-bekreftet mot TV 2 livesport/Play (lagoversikt + kampside). Uavhengig fresh-context write-time fact-check bekreftet dato + hjemme/borte + tid (TV 2-sendestart ~5 min for avkast). handball.no-terminlisten (autoritet) er JS-rendret -> basis secondary til verify fester minuttet."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "basis": "official",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "TV 2 eier norske Elkjop-liga-rettigheter (alle kamper pa TV 2 Play, utvalgte lineart)."
-      }
-    },
-    "summary": "Bergen Håndball avslutter serierunden hjemme mot Sandefjord i Elkjøp-ligaen.\n\nAvkast søndag 27. september kl. 19.00 (17.00 UTC). Vises på TV 2 Play (sendestart 18.55)."
   }
 ]
