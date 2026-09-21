@@ -1,14 +1,18 @@
 {
-	"runAt": "2026-09-20T09:56:04Z",
-	"checked": 5,
-	"confirmed": 1,
-	"amended": 2,
-	"removed": 0,
-	"notes": [
-		"Sykkel-VM 2026 (UCI Road World Championships, Montréal 20.–27. sep): corrected the two elite fellesstart events (kvinner 26.9, menn 27.9) from TV 2 Play → Eurosport / HBO Max. WBD Norges egen presseside: «Alle ritt vises på HBO Max og Eurosport». TV 2 er ikke rettighetshaver for VM (TV 2s sykkelavtale gjelder Tour de France + Arctic Race). Same correction the ITT events already got on 17.09 — the two road-race rows had lagged behind on the wrong channel.",
-		"Sykkel-VM fellesstart times confirmed: kvinner 09:00 EDT lør 26.9 = 13:00 UTC; menn 09:00 EDT søn 27.9 = 13:00 UTC (en.wikipedia.org / Yahoo/Flobikes schedule).",
-		"46. sjakk-OL 2026 sluttrunde (runde 11) confirmed: final round starts 11:00 local (UTC+5) = 06:00 UTC søn 27.9 — earlier than rounds 1-10 (15:00 local = 10:00 UTC). Board 06:00 UTC / 08:00 CEST correct (en.wikipedia.org Open event 46th Chess Olympiad + FIDE schedule).",
-		"Other in-window ai-research events (Bundesliga on Viaplay, Norge–Danmark Nations League on TV 2 Play, Aserbajdsjan GP kvalifisering Sat-race quirk, Laver Cup, F1, esports) were already verified 17.–19.09 and left untouched.",
-		"SKILL UPDATE BLOCKED THIS RUN: intended to add a UCI Road World Championships → Eurosport/HBO Max (NOT TV 2) entry to norwegian-rights/SKILL.md, but the Edit tool returned the literal error: 'Claude requested permissions to write to /home/runner/work/sportivista/sportivista/.claude/skills/norwegian-rights/SKILL.md, but you haven't granted it yet.' This is a session permission gate, not the (non-existent, WP-91) CI skill-write block — do not copy any 'skill write blocked by permission gate' legend forward as a general fact. The rights correction is recorded in this run's event amendments + calibration ledger regardless; the skill add should be re-attempted next run."
-	]
+  "runAt": "2026-09-21T10:55:00Z",
+  "checked": 12,
+  "confirmed": 12,
+  "amended": 0,
+  "removed": 0,
+  "notes": [
+    "Alle 12 kandidater (ai-research / confidence-satt) i 7-dagersvinduet verifisert — ingen krevde endring av tid, kanal eller deltakelse.",
+    "Football: Norge–Danmark (24.09) og Norge–Portugal (27.09) begge UEFA Nations League Liga A, avspark 20.45 (18.45 UTC) på Ullevaal, TV 2 — bekreftet mot fotball.no kampsider (fiksId 9049092/9049093). Norge–Portugal var uverifisert; nå bekreftet. Provenance.time festet til fotball.no primærkilde.",
+    "F1: Aserbajdsjan GP-kvalifisering bekreftet fre. 25.09 kl. 16.00 lokal (UTC+4) = 12.00 UTC. Hele Baku-helgen er skjøvet én dag frem (Day of Remembrance 27.9) — løpet går lør. 26.9. ESPN-F1-mis-datingen (source-quirks) unngått; board-tiden var allerede korrekt. Provenance.time festet til formula1.com.",
+    "Handball: Kolstad–Follo (uverifisert) bekreftet lør. 26.09 kl. 16.00 (14.00 UTC), TV 2 Play — egen kampside finnes. Sendestart 15.50, avkast 16.00.",
+    "Golf: FedEx Open de France (24.–27.09, Le Golf National) — både Viktor Hovland og Kristoffer Reitan bekreftet i feltet; Viaplay-visning uendret. Ikke i gang ennå, ingen cut-status å sjekke.",
+    "Esports: 100 Thieves vs EAC (Esport Academy Copenhagen), Stake Pulse Beat II gruppe C, 23.09 kl. 10.00 UTC (06.00 EDT / 12.00 CEST) bekreftet. Kick-visning uendret.",
+    "Tennis: Laver Cup (25.–27.09, The O2 London) — Casper Ruud bekreftet i Team Europe; Eurosport/HBO Max-visning uendret.",
+    "Cycling: Sykkel-VM Montreal — mixed relay (22.09) start/slutt bekreftet mot Wikipedia + domestiquecycling (12.30–15.15 UTC). Kvinner/menn fellesstart og chess-OL-rundene var allerede verifisert 20.09 og står uendret.",
+    "Ingen amendments, ingen removals. 9 kalibreringslinjer lagt til (football/handball/f1/golf/esports/tennis/cycling)."
+  ]
 }
