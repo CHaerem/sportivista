@@ -36,7 +36,7 @@ A deep `url` you set **survives rebuilds** — build-events keeps the most speci
 known URL per broadcaster and won't clobber it with the generic landing.
 
 ## Football
-- Premier League → **TV 2 Play / TV 2 Sport Premium** [solid]
+- Premier League → **Viaplay** [solid] (Viaplay Group holds ALL 380 PL-kamper eksklusivt i Norge 2026/27, avtale t.o.m. 2027/28; TV 2 sender ikke lenger PL. Verifisert 2026-09-14 mot allente.no/bytt.no/vg.no/nettavisen.no/strim.no. Speiler `scripts/lib/norwegian-rights.js` (~linje 174) + `authority.json` football:premier-league, som ble rettet i #461 — den gamle TV 2-mappingen klobbet den korrekte Viaplay-kanalen på hver statiske rebuild)
 - La Liga → **TV 2 Play** [solid] (TV 2 renewed the Norwegian rights through summer 2030 — NTB press release kommunikasjon.ntb.no/pressemelding/18978442; the Disney+/ESPN shift is DK/SE/FI/IS only, not Norway; verified 2026-07-18)
 - Champions League → **TV 2 Play** [solid]
 - Europa League + Conference League → **Viaplay** [solid] (UEFA-klubbrettighetene i Norge t.o.m. 2030/31: kun CL er TV 2s — presse.viaplaygroup.no + tvkampen.com; verifisert 2026-07-27. Viaplay/TV 2-fellesavtalen gjør enkeltkamper også tilgjengelige på TV 2 Play, og norske klubbers tidlige kvalikkamper kan ha egne fri-sublisenser, f.eks. VG TV. Speiler `scripts/lib/norwegian-rights.js`, som ble rettet i #417)
