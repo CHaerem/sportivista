@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T02:38:50.960Z",
+  "generatedAt": "2026-09-21T08:26:08.666Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -27,7 +27,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 20.67,
+    "oldestGapAgeDays": 20.91,
     "escalatable": 4,
     "catalogMatched": 4,
     "auditedAt": "2026-09-18T08:35:00Z",
@@ -35,28 +35,28 @@
       {
         "interest": "Håndball — Elkjøp-ligaen (menn) serierunde 19.–21. sep",
         "severity": "high",
-        "ageDays": 20.67,
+        "ageDays": 20.91,
         "recurrences": 18,
         "catalogMatched": true
       },
       {
         "interest": "CS2 — StarLadder StarSeries Fall 2026 (17.–20. sep, Barcelona, $500k) resterende bracket",
         "severity": "high",
-        "ageDays": 6.75,
+        "ageDays": 7,
         "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "CS2 — ESL Pro League Season 24 (3.–11. okt, Katowice/Spodek, $1M)",
         "severity": "medium",
-        "ageDays": 6.75,
+        "ageDays": 7,
         "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Shanghai Masters (ATP Masters 1000, ~7.–18. okt)",
         "severity": "medium",
-        "ageDays": 6.75,
+        "ageDays": 7,
         "recurrences": 4,
         "catalogMatched": true
       }
@@ -68,17 +68,10 @@
     "nearTermAmended": 2,
     "verifyRunAt": "2026-09-20T09:56:04Z",
     "windowRate": 0,
-    "windowChecks": 109,
+    "windowChecks": 99,
     "windowAmendments": 0,
     "windowCorrections": 9,
     "byDay": [
-      {
-        "date": "2026-09-07",
-        "checks": 10,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-09-08",
         "checks": 20,
@@ -167,21 +160,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-21T02:38:44.567Z",
+    "buildCheckedAt": "2026-09-21T08:26:05.859Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-20T23:45:49.212Z",
-    "manifestAgeHours": 2.88,
+    "manifestGeneratedAt": "2026-09-21T02:38:52.666Z",
+    "manifestAgeHours": 5.79,
     "staleFiles": [
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-09-17T22:55:00Z",
-        "ageHours": 75.73
+        "ageHours": 81.52
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-09-20T09:56:04Z",
-    "verifyAgeHours": 16.71,
+    "verifyAgeHours": 22.5,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -212,6 +205,6 @@
         "horizonDays": 14
       }
     ],
-    "generatedAt": "2026-09-21T02:38:50.959Z"
+    "generatedAt": "2026-09-21T08:26:08.665Z"
   }
 }

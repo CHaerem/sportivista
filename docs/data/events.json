@@ -4531,6 +4531,55 @@
     ]
   },
   {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Kolstad – Follo HK",
+    "time": "2026-09-26T14:00:00Z",
+    "endTime": null,
+    "venue": "Kolstad Arena, Trondheim",
+    "norwegian": true,
+    "homeTeam": "Kolstad",
+    "awayTeam": "Follo HK",
+    "homeTeamEntityId": "kolstad-handball",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr/kolstad-follo-fx8a82b1",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-21T05:05:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "catalog.json#tier2.tournaments",
+      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
+      "https://www.flashscore.com/team/kolstad/rTWbl2mC/",
+      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr/kolstad-follo-fx8a82b1"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "handballforbundet",
+        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-21T05:05:00Z",
+        "note": "Norges Håndballforbunds egen «handball på TV»-side lister Kolstad–Follo HK kl. 16.00 på TV 2 Play; dato 26. sep (lør.) fra Flashscore + kolstad-handball.no. Uavhengig fresh-context write-time fact-check bekreftet hjemme/borte + dato + Kolstad Arena; eksakt avkast 16.00 er myk-bekreftet (TV 2 Play sendestart 15.50) → basis secondary, verify fester minuttet."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr/kolstad-follo-fx8a82b1",
+        "basis": "official",
+        "retrievedAt": "2026-09-21T05:05:00Z",
+        "note": "TV 2 Play har egen kampside for Kolstad–Follo (Elkjøp-ligaen menn); TV 2 eier norske Elkjøp-liga-rettigheter (alle kamper på TV 2 Play, utvalgte lineært)."
+      }
+    },
+    "summary": "Kolstad tar imot Follo HK i Kolstad Arena i Elkjøp-ligaen — trønderne har ingen norsk landslagsprofil i troppen etter at Sander Sagosen gikk til Aalborg, men er fortsatt et av seriens topplag.\n\nAvkast lørdag 26. september kl. 16.00 (14.00 UTC). Vises på TV 2 Play; sendestart 15.50.",
+    "id": "4f6a6b5cb667"
+  },
+  {
     "sport": "football",
     "tournament": "Copa del Rey",
     "title": "CD Tedeón at Anaitasuna",
@@ -5179,53 +5228,5 @@
     "isFavorite": false,
     "round": null,
     "id": "df5379966a54"
-  },
-  {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen 2026/27",
-    "title": "Kolstad – Follo HK",
-    "time": "2026-09-26T14:00:00Z",
-    "endTime": null,
-    "venue": "Kolstad Arena, Trondheim",
-    "norwegian": true,
-    "homeTeam": "Kolstad",
-    "awayTeam": "Follo HK",
-    "homeTeamEntityId": "kolstad-handball",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr/kolstad-follo-fx8a82b1",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-21T05:05:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "catalog.json#tier2.tournaments",
-      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-      "https://www.flashscore.com/team/kolstad/rTWbl2mC/",
-      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr/kolstad-follo-fx8a82b1"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "handballforbundet",
-        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-        "basis": "secondary",
-        "retrievedAt": "2026-09-21T05:05:00Z",
-        "note": "Norges Håndballforbunds egen «handball på TV»-side lister Kolstad–Follo HK kl. 16.00 på TV 2 Play; dato 26. sep (lør.) fra Flashscore + kolstad-handball.no. Uavhengig fresh-context write-time fact-check bekreftet hjemme/borte + dato + Kolstad Arena; eksakt avkast 16.00 er myk-bekreftet (TV 2 Play sendestart 15.50) → basis secondary, verify fester minuttet."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr/kolstad-follo-fx8a82b1",
-        "basis": "official",
-        "retrievedAt": "2026-09-21T05:05:00Z",
-        "note": "TV 2 Play har egen kampside for Kolstad–Follo (Elkjøp-ligaen menn); TV 2 eier norske Elkjøp-liga-rettigheter (alle kamper på TV 2 Play, utvalgte lineært)."
-      }
-    },
-    "summary": "Kolstad tar imot Follo HK i Kolstad Arena i Elkjøp-ligaen — trønderne har ingen norsk landslagsprofil i troppen etter at Sander Sagosen gikk til Aalborg, men er fortsatt et av seriens topplag.\n\nAvkast lørdag 26. september kl. 16.00 (14.00 UTC). Vises på TV 2 Play; sendestart 15.50."
   }
 ]
