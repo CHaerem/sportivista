@@ -1,7 +1,7 @@
 {
 	"runAt": "2026-09-21T13:48:00Z",
 	"action": "opened-pr",
-	"pr": null,
+	"pr": "https://github.com/CHaerem/sportivista/pull/463",
 	"proposal": "Close the documented #461 follow-up: flip the norwegian-rights skill's Premier League line from 'TV 2 Play / TV 2 Sport Premium' to 'Viaplay', matching the already-shipped load-bearing code (scripts/lib/norwegian-rights.js ~line 174 + authority.json football:premier-league, both Viaplay). The skill is read by the research/verify agents to fill the where-to-watch field, so the stale line was actively mis-guiding them toward the wrong PL channel — the exact summary↔streaming mismatch #461 fixed in code.",
 	"evidence": [
 		"improve-log.json (previous run, 2026-09-14, PR #461) notes[0]: the SKILL.md PL line (line 39: 'Premier League → TV 2 Play') 'should also flip to Viaplay for agent-guidance consistency, but that write was harness-permission-gated in this run … the skill line is a documentation follow-up.' It was never done — the gate persisted.",
