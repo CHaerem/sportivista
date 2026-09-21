@@ -170,6 +170,7 @@ describe("the agenda row picks ONE anchor and degrades gracefully", () => {
 		dash = box.window.dashboard;
 		dash.entities = [
 			{ id: "arsenal", name: "Arsenal", aliases: ["Arsenal FC"], sport: "football", type: "team", colors: { primary: "#e20520", secondary: "#003399" } },
+			{ id: "atletico-madrid", name: "Atlético Madrid", aliases: ["Atlético"], sport: "football", type: "team", colors: { primary: "#ca3624", secondary: "#000000" } },
 			{ id: "norge", name: "Norge", aliases: ["Norway"], sport: "football", type: "team", national: true, country: "NO", colors: { primary: "#c8102e" } },
 			{ id: "magnus-carlsen", name: "Magnus Carlsen", aliases: [], sport: "chess", type: "athlete", country: "NO" },
 			{ id: "elverum", name: "Elverum Håndball", aliases: [], sport: "handball", type: "team", country: "NO" },
@@ -198,9 +199,18 @@ describe("the agenda row picks ONE anchor and degrades gracefully", () => {
 		expect(html).toContain("ev-flag");
 	});
 
-	it("the server's stamped entity id wins over the name", () => {
-		const e = { id: "d", sport: "football", homeTeam: "et ukjent navn", homeTeamEntityId: "arsenal", title: "X", time: soon() };
+	it("the server's stamped entity id wins over the name — when it genuinely names the team", () => {
+		const e = { id: "d", sport: "football", homeTeam: "Arsenal FC", homeTeamEntityId: "arsenal", title: "X", time: soon() };
 		expect(dash.rowEntity(e).id).toBe("arsenal");
+	});
+
+	it("but a stamped id that does NOT name the team is refused — no wrong crest", () => {
+		// The Copa del Rey misidentification (visual-qa 21.09): a tiny club absent
+		// from the registry word-overlaps a famous club's generic qualifier
+		// ("Atlético") and gets stamped its id. The honest sport-glyph fallback
+		// beats a crest that names the wrong team, so rowEntity refuses it.
+		const e = { id: "d2", sport: "football", homeTeam: "Atlético Calatayud", homeTeamEntityId: "atletico-madrid", title: "X", time: soon() };
+		expect(dash.rowEntity(e)).toBeNull();
 	});
 
 	it("falls through to the AWAY side — for a Norwegian fan that is often the point", () => {
@@ -307,5 +317,43 @@ describe("WP-186: the logo rung", () => {
 		expect(body).not.toMatch(/\bfilter:|mix-blend-mode|object-fit: cover|border-radius|clip-path|background/);
 		// And no rule here may reach off-origin for an image.
 		expect(css).not.toMatch(/url\(/);
+	});
+});
+
+// The misidentification guard (visual-qa 21.09): a tiny club whose name merely
+// CONTAINS a famous club's generic qualifier ("Atlético Calatayud") must not
+// inherit that club's crest. A wrong crest lies faster than any text, so the
+// honest sport-glyph fallback is strictly better.
+describe("ssEntityMatchesName: a generic-qualifier overlap is refused", () => {
+	const atletico = { id: "atletico-madrid", name: "Atlético Madrid", aliases: ["Atlético"] };
+	const sporting = { id: "sporting-cp", name: "Sporting CP", aliases: ["Sporting"] };
+	const bayern = { id: "bayern-munich", name: "Bayern Munich", aliases: ["Bayern"] };
+	const mainz = { id: "mainz", name: "Mainz", aliases: [] };
+	const inter = { id: "internazionale", name: "Internazionale", aliases: ["Inter Milan"] };
+
+	it("rejects the Copa del Rey false crests the review caught", () => {
+		expect(S.ssEntityMatchesName(atletico, "Atlético Calatayud")).toBe(false);
+		expect(S.ssEntityMatchesName(atletico, "Atlético Pinatarense")).toBe(false);
+		expect(S.ssEntityMatchesName(atletico, "Atlético Melilla")).toBe(false);
+		expect(S.ssEntityMatchesName(atletico, "Atlético Unión Güímar")).toBe(false);
+		expect(S.ssEntityMatchesName(sporting, "Sporting Hortaleza")).toBe(false);
+		expect(S.ssEntityMatchesName(sporting, "Sporting de Alcázar")).toBe(false);
+	});
+
+	it("keeps the real club and its legitimate short-name aliases", () => {
+		// exact name / alias always wins — the actual Atlético Madrid keeps its crest
+		expect(S.ssEntityMatchesName(atletico, "Atlético Madrid")).toBe(true);
+		expect(S.ssEntityMatchesName(atletico, "Atlético")).toBe(true);
+		expect(S.ssEntityMatchesName(sporting, "Sporting CP")).toBe(true);
+		// distinctive-token overlap keeps spelling/abbreviation variants
+		expect(S.ssEntityMatchesName(bayern, "Bayern München")).toBe(true);
+		expect(S.ssEntityMatchesName(mainz, "Mainz 05")).toBe(true);
+		expect(S.ssEntityMatchesName(inter, "Inter")).toBe(true);
+	});
+
+	it("is null-safe and empty-safe", () => {
+		expect(S.ssEntityMatchesName(null, "Anything")).toBe(false);
+		expect(S.ssEntityMatchesName(atletico, "")).toBe(false);
+		expect(S.ssEntityMatchesName(atletico, null)).toBe(false);
 	});
 });

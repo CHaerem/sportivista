@@ -60,6 +60,71 @@ function ssFlagEmoji(iso) {
 // Dropped only when at least one real word survives.
 const SS_CLUB_NOISE = new Set(['fc', 'afc', 'cf', 'ac', 'sc', 'bk', 'fk', 'if', 'il', 'sk', 'ik', 'hk', 'kfum', 'club', 'klubb']);
 
+// Generic club-type qualifiers (+ Romance stop-words) that do NOT identify a club
+// on their own: dozens of distinct teams are "Atlético X" or "Sporting Y". They
+// matter for the misidentification guard below, not for the monogram — a wrong
+// crest inherited purely because a small club's name happens to contain the word
+// "Atlético" is worse than the honest sport-glyph fallback (visual-qa 21.09).
+const SS_GENERIC_CLUB_WORDS = new Set([
+	'atletico', 'sporting', 'real', 'deportivo', 'union', 'racing', 'athletic',
+	'de', 'del', 'la', 'el', 'los', 'las', 'di', 'do', 'da', 'of', 'the',
+]);
+
+/** NFD-fold to lowercase, accent-stripped — self-contained so this file stays
+ *  usable stand-alone (it does not import shared-constants.js's ssNormalize). */
+function ssAvatarNormalize(s) {
+	return String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+}
+
+/** The DISTINCTIVE tokens of a name — dropping pure numbers, club-form noise
+ *  (fc/afc/…) and generic qualifiers (atlético/sporting/…). "Atlético Madrid"
+ *  → ["madrid"]; "Mainz 05" → ["mainz"]; "Sporting CP" → []. */
+function ssDistinctiveTokens(name) {
+	return ssAvatarNormalize(name)
+		.replace(/[()[\]{}"'’.]/g, ' ')
+		.split(/[\s\-–—/]+/)
+		.map((w) => w.trim())
+		.filter(Boolean)
+		.filter((w) => !/^\d+$/.test(w))
+		.filter((w) => !SS_CLUB_NOISE.has(w))
+		.filter((w) => !SS_GENERIC_CLUB_WORDS.has(w));
+}
+
+/**
+ * Does `entity` genuinely name `teamName`, or did it only word-overlap on a
+ * generic qualifier? The server matcher stamps the most-specific registry entity
+ * that overlaps a board string — but when a tiny club ("Atlético Calatayud") is
+ * absent from the registry, its bare qualifier "Atlético" overlaps the only
+ * candidate (Atlético Madrid) and hands the row that famous crest. A crest is
+ * trusted wordlessly, so a wrong one misidentifies who is playing.
+ *
+ * The rule mirrors this file's fail-closed philosophy — trust nothing you can't
+ * corroborate. An EXACT (accent/case-folded) match on the entity's name or any
+ * alias always wins, so the real "Sporting CP" keeps its crest. A PARTIAL match
+ * is trusted only when the two names share at least one DISTINCTIVE token —
+ * "Bayern München"↔"Bayern", "Mainz 05"↔"Mainz", "Inter"↔"Internazionale" all
+ * agree on a distinctive word and stay; "Atlético Calatayud"↔"Atlético Madrid"
+ * agree on nothing but the generic qualifier and are rejected, so the row falls
+ * back to the honest sport glyph.
+ */
+function ssEntityMatchesName(entity, teamName) {
+	if (!entity) return false;
+	const n = ssAvatarNormalize(teamName).trim();
+	if (!n) return false;
+	const terms = [entity.name, ...(entity.aliases || [])];
+	for (const t of terms) {
+		if (ssAvatarNormalize(t).trim() === n) return true; // exact term match
+	}
+	const want = new Set(ssDistinctiveTokens(teamName));
+	if (!want.size) return false; // nothing distinctive to agree on — don't guess a crest
+	for (const t of terms) {
+		for (const tok of ssDistinctiveTokens(t)) {
+			if (want.has(tok)) return true; // shared distinctive token
+		}
+	}
+	return false;
+}
+
 /** 1–2 uppercase initials for a monogram — the Kontakter rule (first + last word). */
 function ssMonogramInitials(name) {
 	const words = String(name || '')
@@ -191,8 +256,9 @@ if (typeof window !== 'undefined') {
 	window.ssMonogramInitials = ssMonogramInitials;
 	window.ssInkOn = ssInkOn;
 	window.ssEntityIdentity = ssEntityIdentity;
+	window.ssEntityMatchesName = ssEntityMatchesName;
 	window.ssEntityAvatar = ssEntityAvatar;
 }
 if (typeof module !== 'undefined' && module.exports) {
-	module.exports = { ssFlagEmoji, ssMonogramInitials, ssInkOn, ssLuminance, ssEntityLogoSrc, ssEntityIdentity, ssEntityAvatar };
+	module.exports = { ssFlagEmoji, ssMonogramInitials, ssInkOn, ssLuminance, ssEntityLogoSrc, ssEntityIdentity, ssEntityMatchesName, ssEntityAvatar };
 }
