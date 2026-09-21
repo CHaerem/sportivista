@@ -1,17 +1,15 @@
 {
-	"runAt": "2026-09-18T11:36:00Z",
-	"action": "opened-pr",
-	"pr": "https://github.com/CHaerem/sportivista/pull/462",
-	"diagnosed": "npm test on main had 2 failing tests in tests/authority-schema.test.js: (1) competitions not sorted by id — chess:olympiad sat before chess:grand-chess-tour; (2) chess:olympiad's channel used chess-com, an aggregator, which cannot carry a channel under the rolledoktrinen. Root cause: research-agent commit 6cb15b137 (board 46th Chess Olympiad, 2026-09-17 19:50Z) inserted the entry in the wrong sort position with an aggregator channel source. Same failure was red in CI run 35284666366.",
-	"fixed": [
-		"Moved chess:olympiad after chess:grand-chess-tour in scripts/config/authority.json to restore id sort order",
-		"Replaced chess-com channel option with chess24 + twitch (both official-broadcaster), following the chess:esports-world-cup pattern; preserved the Chess.com/TV aggregator caveat and 'ingen norsk TV-rettighet' note at channel level"
-	],
-	"autoMergeEligible": true,
+	"runAt": "2026-09-21T13:12:00Z",
+	"action": "abandoned",
+	"pr": null,
+	"diagnosed": "The Research agent's deep-tier ESCALATION path is 100% broken. Every workflow_dispatch-triggered run fails; every schedule-triggered run succeeds. Scout and coverage-critic escalate via `gh workflow run research-agent.yml -f tier=deep`, so the dispatch actor is github-actions[bot]. claude-code-action@v1 refuses bot-initiated runs unless the bot is allow-listed in its `allowed_bots` input (default \"\" = no bots), failing with: 'Workflow initiated by non-human actor: github-actions (type: Bot). Add bot to allowed_bots list or use \\'*\\' to allow all bots.' Confirmed across runs 35592238892 + 35584767701 (both TODAY), 35464837752, 35435479244, 35406257399, 35395748434, 35332693173, 35326546418, 35239416470 — all workflow_dispatch, all this exact error on both the Fable-5 and Opus-4.8-fallback steps. This is NOT quota/transient (the 2026-09-18 self-repair run misread it as such): usage-state.json is green (session 3%, week 4%), and the split is deterministic by trigger, not intermittent.",
+	"fixed": [],
+	"autoMergeEligible": false,
 	"notes": [
-		"Proof: tests/authority-schema.test.js 13/13 pass (was 2 failing); full npm test 1537/1537 pass; node scripts/validate-events.js 0 errors",
-		"Change confined to scripts/config/authority.json — not a protected path, auto-merge eligible once the gate re-runs tests",
-		"Ignored recurring Research agent + Visual QA agent failures (quota/transient, the governor's domain — not reproducible breakage)",
-		"publish-freshness.json status=fresh (lag 0h) — no stale-publish ops issue"
+		"FIX (human must author — protected path): add `allowed_bots: \"github-actions[bot]\"` as a top-level `with:` input alongside claude_code_oauth_token on each anthropics/claude-code-action@v1 step in .github/workflows/research-agent.yml (the standard, Fable-5 deep, and Opus-4.8 deep-fallback steps). Scope it to the one bot, not \"*\", to avoid the public-repo external-App risk the action warns about. This restores the scout/coverage-critic -> deep-research escalation loop.",
+		"Could not open a PR: .github/workflows/** is a harness-protected automation path. The protect-automation.js PreToolUse hook hard-blocks any CI agent from writing it (exit 2) — by design a human must author workflow changes. Every fix for this root cause lives in a workflow file (the workflow input, or how scout/coverage-critic dispatch), so there is no non-protected-path alternative. Did not attempt to circumvent the hook.",
+		"Proof of diagnosis: `gh run list --workflow=research-agent.yml` shows workflow_dispatch=failure and schedule=success with no exceptions across the last 25 runs; `gh run view <id> --log-failed` on 35406257399 shows the allowed_bots error on both deep steps.",
+		"Other health checks clean: full npm test 1537/1537 pass; node scripts/validate-events.js 0 errors (warnings only); publish-freshness.json status=fresh (lag 0h); usage-state.json green. The 2026-09-17 CI failure (authority-schema.test.js) is already resolved on main.",
+		"Visual QA agent failures are a separate, intermittent max-turns (40) cap, not deterministic breakage — its last 3 scheduled runs passed. Left for the improve agent (threshold tuning), consistent with self-repair scope."
 	]
 }
