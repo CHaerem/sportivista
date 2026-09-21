@@ -5219,6 +5219,51 @@
     "id": "a574973996cf"
   },
   {
+    "sport": "football",
+    "tournament": "OBOS-ligaen",
+    "title": "Bryne – Lyn",
+    "time": "2026-10-04T12:30:00Z",
+    "endTime": null,
+    "venue": "Bryne stadion",
+    "norwegian": true,
+    "homeTeam": "Bryne",
+    "awayTeam": "Lyn",
+    "awayTeamEntityId": "fk-lyn-oslo",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/fotball/obos-ligaen",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-21T20:30:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+      "https://www.obos-ligaen.no/terminliste"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+        "basis": "primary",
+        "retrievedAt": "2026-09-21T20:30:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/fotball/obos-ligaen",
+        "basis": "official",
+        "retrievedAt": "2026-09-21T20:30:00Z"
+      }
+    },
+    "summary": "Lyns bortekamp mot Bryne søndag 4. oktober kl. 14.30 CEST på Bryne stadion (OBOS-ligaen, runde 24) — Lyns neste seriekamp etter Hødd-oppgjøret 13. september (OBOS-ligaen har ingen statisk fetcher, så Lyn-kampene håndboardes).\n\nDato/tid/arena bekreftet mot fotball.nos terminliste (fiksId 161785, primær-autoritet) + obos-ligaen.nos terminliste, to kilder enige, og uavhengig write-time fact-check (fotball.no + obos-ligaen + TV 2 Play) confirmed. TV-valg kan flytte avspark 30–60 min; verify følger. Norsk visning TV 2 Play.",
+    "id": "591b47efd865"
+  },
+  {
     "sport": "f1",
     "tournament": "Formula 1 World Championship 2026",
     "venue": "Marina Bay Street Circuit, Singapore",
@@ -5418,49 +5463,5 @@
     "isFavorite": false,
     "round": null,
     "id": "df5379966a54"
-  },
-  {
-    "sport": "football",
-    "tournament": "OBOS-ligaen",
-    "title": "Bryne – Lyn",
-    "time": "2026-10-04T12:30:00Z",
-    "endTime": null,
-    "venue": "Bryne stadion",
-    "norwegian": true,
-    "homeTeam": "Bryne",
-    "awayTeam": "Lyn",
-    "awayTeamEntityId": "fk-lyn-oslo",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/fotball/obos-ligaen",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-21T20:30:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
-      "https://www.obos-ligaen.no/terminliste"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "fotball-no",
-        "url": "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
-        "basis": "primary",
-        "retrievedAt": "2026-09-21T20:30:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/fotball/obos-ligaen",
-        "basis": "official",
-        "retrievedAt": "2026-09-21T20:30:00Z"
-      }
-    },
-    "summary": "Lyns bortekamp mot Bryne søndag 4. oktober kl. 14.30 CEST på Bryne stadion (OBOS-ligaen, runde 24) — Lyns neste seriekamp etter Hødd-oppgjøret 13. september (OBOS-ligaen har ingen statisk fetcher, så Lyn-kampene håndboardes).\n\nDato/tid/arena bekreftet mot fotball.nos terminliste (fiksId 161785, primær-autoritet) + obos-ligaen.nos terminliste, to kilder enige, og uavhengig write-time fact-check (fotball.no + obos-ligaen + TV 2 Play) confirmed. TV-valg kan flytte avspark 30–60 min; verify følger. Norsk visning TV 2 Play."
   }
 ]
