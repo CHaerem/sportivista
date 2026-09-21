@@ -1,17 +1,17 @@
 {
-	"runAt": "2026-09-14T13:47:00Z",
+	"runAt": "2026-09-21T13:48:00Z",
 	"action": "opened-pr",
-	"pr": "https://github.com/CHaerem/sportivista/pull/461",
-	"proposal": "Fix the durable Premier League Norwegian-channel bug: the deterministic rights map (scripts/lib/norwegian-rights.js line 167) and authority.json (football:premier-league) both mapped PL to TV 2, but Viaplay holds all 380 PL matches EXCLUSIVELY in Norway 2026/27 (through 2027/28) and TV 2 no longer carries the PL at all. Changed the map + authority.json channel + the norwegian-rights test to Viaplay.",
+	"pr": null,
+	"proposal": "Close the documented #461 follow-up: flip the norwegian-rights skill's Premier League line from 'TV 2 Play / TV 2 Sport Premium' to 'Viaplay', matching the already-shipped load-bearing code (scripts/lib/norwegian-rights.js ~line 174 + authority.json football:premier-league, both Viaplay). The skill is read by the research/verify agents to fill the where-to-watch field, so the stale line was actively mis-guiding them toward the wrong PL channel — the exact summary↔streaming mismatch #461 fixed in code.",
 	"evidence": [
-		"research-log.json (2026-09-14T05:15:00Z): 9 imminent PL round-5 events (19–20 Sep) carried summary 'Vises på Viaplay' but streaming[]=TV 2 Play; research had to hand-amend all 9 as a stopgap and re-verified PL=Viaplay against FIVE independent Norwegian sources (allente.no, bytt.no, vg.no, nettavisen.no, strim.no). It explicitly flagged the durable code fix (norwegian-rights.js ~line 167 TV 2→Viaplay + authority.json PL channel) as out-of-research-scope, for self-repair/improve.",
-		"research-log quality.failures: 'Durable root cause of the corrected Premier League channel divergence still re-derives TV 2 Play on each static build — documented as out-of-scope for research, flagged to self-repair/improve.'",
-		"Independent web re-verification 2026-09-14: Viaplay Group has exclusive rights to all 380 PL matches in Norway for 2026/27, deal running through 2027/28; TV 2 does not carry the PL.",
-		"Without the fix, every PL event lacking a today+2 tvkampen listing (all near-future / AI-research PL events) gets its correct Viaplay channel clobbered to TV 2 Play on each hourly static rebuild — a recurring summary↔streaming mismatch (WP-246) and a where-to-watch correctness failure, the product's #1 priority."
+		"improve-log.json (previous run, 2026-09-14, PR #461) notes[0]: the SKILL.md PL line (line 39: 'Premier League → TV 2 Play') 'should also flip to Viaplay for agent-guidance consistency, but that write was harness-permission-gated in this run … the skill line is a documentation follow-up.' It was never done — the gate persisted.",
+		"research-log.json (2026-09-21T05:05:00Z) still lists 'PL authority.json-kanal TV 2→Viaplay' in its standing self-repair/improve flags; on inspection authority.json (line 805) and norwegian-rights.js (line 174) are already Viaplay, so the ONLY remaining stale PL=TV 2 reference in the repo was the skill line (verified: grep -rn 'premier league' across .claude/skills + scripts/agents returned exactly one hit).",
+		"norwegian-rights SKILL.md Maintenance section (lines 89-92): 'When a verified event contradicts this map … update the relevant line in the same commit and date-stamp the change. Never leave a known-wrong entry standing.' The PL line contradicted the shipped code.",
+		"tests/norwegian-rights.test.js line 15 already asserts 'Premier League → Viaplay'; the skill markdown is not pinned by any test, so the fix is safe. npm test: 88 files / 1537 tests pass."
 	],
-	"expectedEffect": "PL events without a live tvkampen listing now resolve to Viaplay by default instead of TV 2 Play; the recurring summary↔streaming mismatch that forced manual per-event amendments stops recurring.",
-	"howWeKnow": "validate-events summary↔streaming mismatches on PL events stay at 0 across static rebuilds without research hand-amending them; verify-log no longer re-correcting PL channels.",
+	"expectedEffect": "research/verify agents now read Viaplay (not TV 2 Play) as the PL prior, consistent with the deterministic map and authority.json. No agent hand-sets a PL streaming[] to TV 2 Play that the build then has to clobber back to Viaplay; the where-to-watch guidance is internally consistent across code + skill.",
+	"howWeKnow": "verify-log stops re-correcting PL channels; research-log's standing 'PL channel' flag clears; no new summary↔streaming mismatch on PL events.",
 	"notes": [
-		"The .claude/skills/norwegian-rights/SKILL.md PL line (line 39: 'Premier League → TV 2 Play') should also flip to Viaplay for agent-guidance consistency, but that write was harness-permission-gated in this run (same gate research hit). The load-bearing build-time fix (lib + authority.json + test) is complete; the skill line is a documentation follow-up."
+		"Pure documentation-consistency fix in a protected-adjacent-but-permitted path (.claude/skills/** is auto-mergeable — only .claude/settings.json is a protected path). No code or schema touched; the load-bearing fix already shipped in #461."
 	]
 }
