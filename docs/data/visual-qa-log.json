@@ -1,30 +1,17 @@
 {
-  "checkedAt": "2026-09-21T00:00:00.000Z",
+  "checkedAt": "2026-09-22T13:02:01Z",
   "widths": [375, 393, 900],
-  "verdict": "issues",
-  "findings": [
-    {
-      "width": 375,
-      "area": "agenda row · entity crest",
-      "issue": "Several Copa del Rey 1st-leg rows for small, unrelated Spanish clubs render the real Atlético Madrid crest (the famous red/white striped shield) or the Sporting CP laurel crest as their row icon, purely because the club's own name contains the word 'Atlético' or 'Sporting'. Seen on: 'CD Baztán at Atlético Calatayud', 'Atlético Melilla at Atlético Pinatarense', 'Atlético Unión Güímar at Sporting Hortaleza', and 'Sporting de Alcázar at CP Talayuela' (torsdag/lørdag/søndag rows). None of these clubs are Atlético Madrid or Sporting CP, so the crest actively misidentifies who is playing -- worse than the honest blank/sport-glyph fallback shown on the other Copa del Rey rows (e.g. 'Anaitasuna - CD Tedeón', 'Ribadesella - SD Noja') that have no crest match.",
-      "severity": "high"
-    },
-    {
-      "width": 900,
-      "area": "agenda row · entity crest",
-      "issue": "Same wrong-crest issue reproduces at the 900px width: 'Atlético Calatayud - CD Baztán' and 'Atlético Pinatarense - Atlético Melilla' both show the Atlético Madrid crest; 'CP Talayuela - Sporting de Alcázar' shows the Sporting CP crest.",
-      "severity": "high"
-    }
-  ],
+  "verdict": "pass",
+  "findings": [],
   "notes": [
-    "No horizontal overflow or clipping at any of the three widths (375/393/900) -- checked both the full-page captures and per-viewport scroll segments; the 375px shot (hardest case) scrolls cleanly with no cut-off text.",
-    "All visible streaming channels are Norwegian: Viaplay, TV 2 Play, Eurosport / HBO Max, HBO Max (Sport), Chess.com/TV. No FOX/ESPN/Sky or other foreign broadcaster seen.",
-    "The floating 'Assistent' button never occludes the last agenda/news row or the footer at any width checked -- at 900px it sits in the empty right margin; at 375px it rests over mid-list rows only, per the DESIGN.md-sanctioned floating-button idiom (WP-146 variant D). Not flagged.",
-    "Norway matches (Norge - Danmark, Norge - Portugal) render correctly with flag, correct Norwegian TV 2 Play channel, and the must-see accent dot -- no truncation of either side of the fixture.",
-    "Footer (Oppdatert-dato, kalender-abonnement, Aktivitet/Personvern links, data-freshness line, AI-budsjett line) is intact and unclipped at both 375px and 900px.",
-    "Header, day headings, and the Uka/Nyheter toggle all render intact and aligned at every width.",
-    "Observed but not flagged as a layout bug (out of this review's scope -- a coverage/content call, not a rendering one): the agenda for 24.-27. september carries roughly a dozen near-identical Copa del Rey 1st-leg rows for very small Spanish clubs, several with no known streaming ('-'). Still a single quiet column with generous spacing, so no calm-design violation, but the sheer repetition is worth a second look from whoever curates Copa del Rey coverage depth.",
-    "Did not interact with the Uka/Nyheter toggle or open any detail sheet/modal -- only the default 'Uka' view was captured and judged, per the prompt's screenshot-only steps.",
-    "Dark mode was not captured this run (default light/system scheme only)."
+    "All three widths: single quiet column, day-grouped agenda, generous spacing — no clutter.",
+    "No horizontal scroll or clipped text at 375px or 393px; longer fixtures (e.g. 'Atlético Calatayud – CD Baztán', 'Bergen Håndball – Sandefjord') wrap/fit cleanly, nothing truncated in a way that hides which side is Norwegian.",
+    "Norwegian teams/athletes (Norge–Danmark, Norge–Portugal, Bergsøy–Elverum, Kolstad–Follo HK, Kristiansand TH–Sandnes, Bergen Håndball–Sandefjord) render with full names and flags/crests intact — no broken image icons.",
+    "Channels shown are Norwegian-available (TV 2 Play, Viaplay, Eurosport/HBO Max) or an honest faint '–' for the Copa del Rey rows with no known Norwegian channel yet; no FOX/ESPN/Sky spotted.",
+    "Round labels present where expected ('1st Leg' on Copa del Rey rows, 'League A, gruppe 4' on Nations League rows).",
+    "Must-see accent dots appear on only a few rows (e.g. Norge–Danmark, Norge–Portugal) — used sparingly, not on everything.",
+    "The floating 'Assistent' sparkles button overlaps a mid-agenda row (Norge–Danmark on 375/393px, Bergsøy–Elverum on 900px) in all three shots — this is the DESIGN.md-sanctioned floating-button idiom, not flagged. It does not cover the last agenda row, 'Neste opp'/'Dette dekker vi' sections, or the footer in any of the three shots.",
+    "Header (wordmark, date, theme toggle), day headings, and footer (updated timestamp, subscribe/calendar link, activity/privacy links, AI-budsjett line) all intact and aligned at every width.",
+    "Chess 'Neste opp' list and 'Dette dekker vi' / 'Merk og kilder' disclosures render collapsed and unbroken at all widths."
   ]
 }
