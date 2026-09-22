@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-22T08:07:44.827Z",
+  "generatedAt": "2026-09-22T09:37:46.775Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "red",
+    "coverage": "yellow",
     "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
@@ -21,36 +21,29 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 3,
+    "openGaps": 2,
     "bySeverity": {
-      "high": 1,
+      "high": 0,
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 21.9,
-    "escalatable": 3,
-    "catalogMatched": 3,
-    "auditedAt": "2026-09-21T09:05:00Z",
+    "oldestGapAgeDays": 8.05,
+    "escalatable": 2,
+    "catalogMatched": 2,
+    "auditedAt": "2026-09-22T09:05:00Z",
     "gaps": [
-      {
-        "interest": "Håndball — Elkjøp-ligaen (menn) serierunde 26.–27. sep",
-        "severity": "high",
-        "ageDays": 21.9,
-        "recurrences": 19,
-        "catalogMatched": true
-      },
       {
         "interest": "CS2 — ESL Pro League Season 24 (3.–11. okt, Katowice/Spodek, $1M)",
         "severity": "medium",
-        "ageDays": 7.98,
-        "recurrences": 5,
+        "ageDays": 8.05,
+        "recurrences": 6,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Shanghai Masters (ATP Masters 1000, ~7.–18. okt)",
         "severity": "medium",
-        "ageDays": 7.98,
-        "recurrences": 5,
+        "ageDays": 8.05,
+        "recurrences": 6,
         "catalogMatched": true
       }
     ]
@@ -160,15 +153,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-22T08:07:40.487Z",
+    "buildCheckedAt": "2026-09-22T09:37:41.655Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-22T00:27:52.220Z",
-    "manifestAgeHours": 7.66,
+    "manifestGeneratedAt": "2026-09-22T08:07:46.341Z",
+    "manifestAgeHours": 1.5,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-09-21T10:55:00Z",
-    "verifyAgeHours": 21.21,
+    "verifyAgeHours": 22.71,
     "corrections": 2,
     "unresolved": 0,
     "signals": [
@@ -202,6 +195,6 @@
         "horizonDays": 14
       }
     ],
-    "generatedAt": "2026-09-22T08:07:44.827Z"
+    "generatedAt": "2026-09-22T09:37:46.775Z"
   }
 }
