@@ -1,15 +1,10 @@
 {
-	"runAt": "2026-09-21T15:58:00.000Z",
-	"action": "opened-pr",
-	"pr": "https://github.com/CHaerem/sportivista/pull/464",
-	"fixed": [
-		"high (375 & 900px): agenda rows for small Spanish clubs whose names merely CONTAIN 'Atlético'/'Sporting' (Atlético Calatayud, Atlético Pinatarense–Atlético Melilla, Sporting Hortaleza, CP Talayuela–Sporting de Alcázar) rendered the real Atlético Madrid / Sporting CP crest, misidentifying who is playing — now fall back to the honest sport glyph"
-	],
-	"notes": [
-		"Root cause is server-side: the tiny clubs are absent from the entity registry, so the matcher's only word-boundary overlap is a famous club's generic single-word alias ('Atlético'/'Sporting'), which then gets stamped as homeTeamEntityId/awayTeamEntityId in events.json. That is a data/matcher problem outside ui-fix's scope (scripts/, data files).",
-		"Frontend fix (fail-closed, in-character with entity-avatar.js's 'mirror the server's rule, don't blindly trust it' philosophy): new ssEntityMatchesName(entity, name) in docs/js/entity-avatar.js; docs/js/dashboard.js rowEntity() now trusts a stamped id or name hit only when the entity genuinely NAMES the team. An exact (accent/case-folded) name/alias match always wins; a partial match is trusted only on a shared DISTINCTIVE token, so legitimate short-name aliases are kept (Bayern München↔Bayern Munich, Mainz 05↔Mainz, Inter↔Internazionale) while a generic-qualifier-only overlap is refused.",
-		"Verified against the live dataset: the guard drops exactly the 6 misidentifying anchors and keeps all 97 correctly-stamped team ids.",
-		"Screenshot-verified at 375 / 393 / 900px: the four flagged rows now show the neutral sport glyph like their honest Copa del Rey peers; no other row changed; header/agenda/footer intact, no truncation/overflow, calm single column preserved.",
-		"npm test: 88 files / 1541 tests green. Added a focused unit block in tests/entity-avatar.test.js for the new guard, and UPDATED one existing case ('the server's stamped entity id wins over the name') that pinned the OLD blind-trust behaviour — it now documents the corrected anti-misidentification contract. Test edit flagged here and in the PR body for reviewer visibility."
-	]
+  "runAt": "2026-09-22T13:10:00Z",
+  "action": "none",
+  "pr": null,
+  "fixed": [],
+  "notes": [
+    "visual-qa-log.json verdict is 'pass' with zero findings (checkedAt 2026-09-22T13:02:01Z, widths 375/393/900).",
+    "No high/medium rendering issues to fix — nothing code-fixable reported. Exited cleanly without opening a PR."
+  ]
 }
