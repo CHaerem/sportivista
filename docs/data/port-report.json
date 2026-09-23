@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T09:43:41.206Z",
+  "generatedAt": "2026-09-23T14:39:22.780Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -27,7 +27,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 9.05,
+    "oldestGapAgeDays": 9.26,
     "escalatable": 2,
     "catalogMatched": 2,
     "auditedAt": "2026-09-22T09:05:00Z",
@@ -35,36 +35,29 @@
       {
         "interest": "CS2 — ESL Pro League Season 24 (3.–11. okt, Katowice/Spodek, $1M)",
         "severity": "medium",
-        "ageDays": 9.05,
+        "ageDays": 9.26,
         "recurrences": 6,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Shanghai Masters (ATP Masters 1000, ~7.–18. okt)",
         "severity": "medium",
-        "ageDays": 9.05,
+        "ageDays": 9.26,
         "recurrences": 6,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0,
-    "nearTermChecked": 13,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-09-22T10:22:00Z",
+    "nearTermRate": 0.13,
+    "nearTermChecked": 8,
+    "nearTermAmended": 1,
+    "verifyRunAt": "2026-09-23T10:12:00Z",
     "windowRate": 0,
-    "windowChecks": 98,
+    "windowChecks": 81,
     "windowAmendments": 0,
     "windowCorrections": 9,
     "byDay": [
-      {
-        "date": "2026-09-09",
-        "checks": 25,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-09-10",
         "checks": 3,
@@ -148,20 +141,27 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-09-23",
+        "checks": 8,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-23T09:43:36.263Z",
+    "buildCheckedAt": "2026-09-23T14:39:18.012Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-23T08:09:48.134Z",
-    "manifestAgeHours": 1.56,
+    "manifestGeneratedAt": "2026-09-23T09:43:42.693Z",
+    "manifestAgeHours": 4.93,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-09-22T10:22:00Z",
-    "verifyAgeHours": 23.36,
+    "checkedAt": "2026-09-23T10:12:00Z",
+    "verifyAgeHours": 4.46,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -192,6 +192,6 @@
         "horizonDays": 14
       }
     ],
-    "generatedAt": "2026-09-23T09:43:41.206Z"
+    "generatedAt": "2026-09-23T14:39:22.779Z"
   }
 }
