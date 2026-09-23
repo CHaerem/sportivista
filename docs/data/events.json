@@ -4057,9 +4057,9 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
+        "platform": "TV 2 Direkte / TV 2 Play",
+        "url": "https://play.tv2.no/sport/fotball/uefa-nations-league-y3yqrwwv/norge-danmark-dd89cf1d",
+        "urlKind": "deep"
       }
     ],
     "source": "ai-research",
@@ -4081,21 +4081,21 @@
       },
       "streaming": {
         "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "secondary",
-        "retrievedAt": "2026-09-18T09:56:00Z",
-        "note": "TV 2 er bekreftet rettighetshaver for UEFA Nations League i Norge (linear + TV 2 Play). Kanal bekreftet av verify mot Nations League-kampprogram; eksakt lineær slot (TV 2 Direkte/hovedkanal) settes nærmere kampdag. Kampstart 20.45 CEST (18.45 UTC) bekreftet."
+        "url": "https://play.tv2.no/sport/fotball/uefa-nations-league-y3yqrwwv/norge-danmark-dd89cf1d",
+        "basis": "official",
+        "retrievedAt": "2026-09-23T10:12:00Z",
+        "note": "TV 2s egen kampside (play.tv2.no) for Norge–Danmark eksisterer og løser: sending fra kl. 19.30, avkast 20.45. Lineær kanal TV 2 Direkte + TV 2 Play bekreftet."
       }
     },
     "summary": "Norge åpner sin aller første Nations League-sesong i den øverste divisjonen (League A) hjemme mot Danmark på Ullevaal.\n\nGruppe 4 består av Norge, Portugal, Danmark og Wales. Ligaspillet spilles over seks kamper (september–november); dette er første av Norges to hjemmekamper i septembervinduet (Portugal søndag 27. sept).\n\nAvspark torsdag 24. september kl. 20.45 CEST (18.45 UTC). Vises på TV 2 Play. Troppen er ikke tatt ut ennå.",
     "homeTeamEntityId": "norge",
     "id": "c862d553c668",
     "awayTeamEntityId": "danmark",
-    "verifiedAt": "2026-09-22T10:22:00Z",
+    "verifiedAt": "2026-09-23T10:12:00Z",
     "verificationStatus": "confirmed",
     "verificationSources": [
-      "https://www.fotball.no/landslag/norge-a-herrer/2026/her-er-norges-nations-league-gruppe/",
-      "https://www.vg.no/sport/i/6q6V3e/"
+      "https://play.tv2.no/sport/fotball/uefa-nations-league-y3yqrwwv/norge-danmark-dd89cf1d",
+      "https://www.fotball.no/landslag/norge-a-herrer/2026/her-er-norges-nations-league-gruppe/"
     ]
   },
   {
@@ -4242,8 +4242,8 @@
         "sourceId": "handballforbundet",
         "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
         "basis": "secondary",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "Norges Handballforbunds «Handball pa TV»-side lister runden 25.-27. sep med avkast 18.00 CEST; kryss-bekreftet mot TV 2 livesport/Play (lagoversikt + kampside). Uavhengig fresh-context write-time fact-check bekreftet dato + hjemme/borte + tid (TV 2-sendestart ~5 min for avkast). handball.no-terminlisten (autoritet) er JS-rendret -> basis secondary til verify fester minuttet."
+        "retrievedAt": "2026-09-23T10:12:00Z",
+        "note": "Verify bekreftet avkast + dato + hjemme/borte mot TV 2 livesport Elkjøp-ligaen-terminliste (runde 5, 25.–27. sep). handball.no-terminlisten er JS-rendret; TV 2 fester minuttet."
       },
       "streaming": {
         "sourceId": "tv2",
@@ -4255,7 +4255,12 @@
     },
     "summary": "Bergsøy tar imot Elverum i Elkjøp-ligaen. Elverum er et av seriens mestvinnende lag; hjemmelaget Bergsøy jakter poeng på egen bane.\n\nAvkast fredag 25. september kl. 18.00 (16.00 UTC). Vises på TV 2 Play.",
     "awayTeamEntityId": "elverum-handball",
-    "id": "a3fa01b33ab8"
+    "id": "a3fa01b33ab8",
+    "verifiedAt": "2026-09-23T10:12:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
+    ]
   },
   {
     "sport": "f1",
@@ -4422,8 +4427,8 @@
         "sourceId": "handballforbundet",
         "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
         "basis": "secondary",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "Norges Handballforbunds «Handball pa TV»-side lister runden 25.-27. sep med avkast 16.00 CEST; kryss-bekreftet mot TV 2 livesport/Play (lagoversikt + kampside). Uavhengig fresh-context write-time fact-check bekreftet dato + hjemme/borte + tid (TV 2-sendestart ~5 min for avkast). handball.no-terminlisten (autoritet) er JS-rendret -> basis secondary til verify fester minuttet."
+        "retrievedAt": "2026-09-23T10:12:00Z",
+        "note": "Verify bekreftet avkast + dato + hjemme/borte mot TV 2 livesport Elkjøp-ligaen-terminliste (runde 5, 25.–27. sep). handball.no-terminlisten er JS-rendret; TV 2 fester minuttet."
       },
       "streaming": {
         "sourceId": "tv2",
@@ -4435,7 +4440,12 @@
     },
     "summary": "Kristiansand TH møter Sandnes i Elkjøp-ligaen på hjemmebane i Aquarama.\n\nAvkast lørdag 26. september kl. 16.00 (14.00 UTC). Vises på TV 2 Play.",
     "awayTeamEntityId": "sandnes-handballklubb",
-    "id": "6c47d1586645"
+    "id": "6c47d1586645",
+    "verifiedAt": "2026-09-23T10:12:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
+    ]
   },
   {
     "sport": "football",
@@ -4796,8 +4806,8 @@
         "sourceId": "handballforbundet",
         "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
         "basis": "secondary",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "Norges Handballforbunds «Handball pa TV»-side lister runden 25.-27. sep med avkast 17.00 CEST; kryss-bekreftet mot TV 2 livesport/Play (lagoversikt + kampside). Uavhengig fresh-context write-time fact-check bekreftet dato + hjemme/borte + tid (TV 2-sendestart ~5 min for avkast). handball.no-terminlisten (autoritet) er JS-rendret -> basis secondary til verify fester minuttet."
+        "retrievedAt": "2026-09-23T10:12:00Z",
+        "note": "Verify bekreftet avkast + dato + hjemme/borte mot TV 2 livesport Elkjøp-ligaen-terminliste (runde 5, 25.–27. sep). handball.no-terminlisten er JS-rendret; TV 2 fester minuttet."
       },
       "streaming": {
         "sourceId": "tv2",
@@ -4808,7 +4818,12 @@
       }
     },
     "summary": "Jærlaget Nærbø tar imot Fjellhammer i Elkjøp-ligaen.\n\nAvkast søndag 27. september kl. 17.00 (15.00 UTC). Vises på TV 2 Play.",
-    "id": "da78180d9b83"
+    "id": "da78180d9b83",
+    "verifiedAt": "2026-09-23T10:12:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
+    ]
   },
   {
     "sport": "handball",
@@ -4843,8 +4858,8 @@
         "sourceId": "handballforbundet",
         "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
         "basis": "secondary",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "Norges Handballforbunds «Handball pa TV»-side lister runden 25.-27. sep med avkast 17.00 CEST; kryss-bekreftet mot TV 2 livesport/Play (lagoversikt + kampside). Uavhengig fresh-context write-time fact-check bekreftet dato + hjemme/borte + tid (TV 2-sendestart ~5 min for avkast). handball.no-terminlisten (autoritet) er JS-rendret -> basis secondary til verify fester minuttet."
+        "retrievedAt": "2026-09-23T10:12:00Z",
+        "note": "Verify bekreftet avkast + dato + hjemme/borte mot TV 2 livesport Elkjøp-ligaen-terminliste (runde 5, 25.–27. sep). handball.no-terminlisten er JS-rendret; TV 2 fester minuttet."
       },
       "streaming": {
         "sourceId": "tv2",
@@ -4855,7 +4870,12 @@
       }
     },
     "summary": "Runar Elite møter Viking TIF i Elkjøp-ligaen i Runarhallen i Sandefjord.\n\nAvkast søndag 27. september kl. 17.00 (15.00 UTC). Vises på TV 2 Play (sendestart 16.50).",
-    "id": "11c8927c8191"
+    "id": "11c8927c8191",
+    "verifiedAt": "2026-09-23T10:12:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
+    ]
   },
   {
     "sport": "football",
@@ -4989,8 +5009,8 @@
         "sourceId": "handballforbundet",
         "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
         "basis": "secondary",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "Norges Handballforbunds «Handball pa TV»-side lister runden 25.-27. sep med avkast 19.00 CEST; kryss-bekreftet mot TV 2 livesport/Play (lagoversikt + kampside). Uavhengig fresh-context write-time fact-check bekreftet dato + hjemme/borte + tid (TV 2-sendestart ~5 min for avkast). handball.no-terminlisten (autoritet) er JS-rendret -> basis secondary til verify fester minuttet."
+        "retrievedAt": "2026-09-23T10:12:00Z",
+        "note": "Verify bekreftet avkast + dato + hjemme/borte mot TV 2 livesport Elkjøp-ligaen-terminliste (runde 5, 25.–27. sep). handball.no-terminlisten er JS-rendret; TV 2 fester minuttet."
       },
       "streaming": {
         "sourceId": "tv2",
@@ -5003,7 +5023,12 @@
     "summary": "Bergen Håndball avslutter serierunden hjemme mot Sandefjord i Elkjøp-ligaen.\n\nAvkast søndag 27. september kl. 19.00 (17.00 UTC). Vises på TV 2 Play (sendestart 18.55).",
     "homeTeamEntityId": "bergen-handball",
     "awayTeamEntityId": "sandefjord-handball",
-    "id": "e9fd700f7525"
+    "id": "e9fd700f7525",
+    "verifiedAt": "2026-09-23T10:12:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
+    ]
   },
   {
     "sport": "football",
