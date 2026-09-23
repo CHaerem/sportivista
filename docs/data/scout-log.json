@@ -1,5 +1,11 @@
 [
   {
+    "runAt": "2026-09-23T14:39:03.534Z",
+    "verdict": "quiet",
+    "reason": "RSS (28 items, 14:39 UTC): transfer gossip (Eriksen contract termination, Schjelderup agent change, Hadjar F1 contract renewal), financial/structural commentary (Manchester United losses, Chelsea American ownership, season-ticket concerns, Disney+ advert break, Arteta Arsenal contract, Infantino FIFA re-election, La Liga president criticism), past match results (women's Champions League, cycling VM), broadcasting rights announcement (FIS-VM winter rights split between NRK/TV2—no schedule changes to upcoming tracked events). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming tracked events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (21, 3 high-severity contract-breaches still showing imminent=true from Sep 21 escalation: Eliteserien, Premier League, ATP/WTA Tour; already flagged, research/coverage-critic in progress). No new concrete upcoming events requiring escalation. Escalation cap today (UTC): 0/2.",
+    "signals": []
+  },
+  {
     "runAt": "2026-09-21T11:05:46.417Z",
     "verdict": "escalate",
     "reason": "High-severity coverage contract breaches detected for three major in-season competitions (Eliteserien, Premier League, ATP/WTA Tour) — each showing 0 expected events in next 14 days despite: RSS digest confirms active recent match coverage from all three (weekend Sep 20-21, Eliteserien/Premier League analysis articles, Laver Cup ongoing). ESPN fetcher output appears incomplete: football.json contains only Copa del Rey (Spanish, non-Norwegian, ESPN coverage unavailable for our interests); metadata claims 7 leagues fetched, 100% coverage, but Eliteserien/Premier League data absent. Imminent tracked-claim gap (Eliteserien 2026-09-24). Concrete data-quality issue requiring research verification of fetcher state and ESPN API response completeness.",
