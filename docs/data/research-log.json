@@ -1,22 +1,23 @@
 {
-  "runAt": "2026-09-22T22:58:00Z",
-  "tier": "standard",
-  "eventsAdded": 0,
-  "eventsRemoved": 0,
-  "trackedDelta": "Ingen entiteter lagt til/fjernet. Oppdaterte esl-pro-league-s24-2026-oppføringen med dagens web-bekreftelse (all-LAN, første kamp 3. okt, ingen online-stage før da, lagtrekning/starttider upublisert → fortsatt on-cadence, ikke boardet) + bumpet lastUpdated + ny run-note. Reconciliation: alle katalog-tier1-sport i sesong og aktive tier2-entiteter har dekkende tracked-oppføringer; ingen expiry-endring nødvendig denne kjøringen.",
-  "quality": {
-    "pass": true,
-    "score": 90,
-    "failures": [],
-    "note": "Ingen ny event å gradere (quiet no-op). Selv-vurdert mot research-rubric: reconciliation komplett, ingen udekket imminent recall-gap, horisont-hull korrekt on-cadence og web-verifisert. Ingen fresh-context grader-subagent spawnet siden det ikke ble produsert nye events å gradere (fail-open)."
-  },
-  "notes": [
-    "QUIET NO-OP-kjøring (standard-tier, 4-timers, ~23:00 UTC tir. 22. sep). Ingen event lagt til eller fjernet: tavla er komplett for hele imminent-vinduet (22.–27. sep) og de to kjente horisont-hullene er korrekt on-cadence.",
-    "WEB-VERIFISERT (2 horisont-hull, ikke boardet): (1) ESL Pro League Season 24 — pro.eslgaming.com (offisiell) + HLTV + GosuGamers bekrefter HELE turneringen på LAN, aller første konkurransekamp LØR. 3. OKT (gruppespill 3.–7. okt Spodek Arena Katowice, sluttspill 9.–11. okt, $1M, 16 lag). INGEN online-stage-kamper før 3. okt; lagtrekning + daglige starttider ennå IKKE publisert. Bevisst IKKE boardet (en gjettet starttid er verre enn en manglende event) — boardes ved fyll-vinduet ~27.–28. sep, matcher coverage-critics on-cadence-plan. (2) Shanghai Masters (ATP Masters 1000) ~7.–18. okt fortsatt ~15 d ut, on-cadence; Casper Ruud (katalog) usikker etter ryggskade, men turneringen er katalog-dekket uansett.",
-    "TRIAGE coverage-audit 09:05Z + coverage-gaps 21:46Z (gapCount 21, anomalyCount 0): INGEN high-severity imminent recall-gap. Contract-breach Premier League (0/6), Eliteserien (0/2) og tennis:tour (0/1) er ALLE FALSKE — 24.–27. sep er et FIFA-landslagsvindu (Norge–Danmark 24. sep + Norge–Portugal 27. sep, begge UEFA Nations League, begge på tavla; domestiske ligaer korrekt pauset, gjenopptas ~3.–4. okt), og tennis:tour-kontrakten er en kjent miscalibration (katalog dekker tennis entity-gated via majors/Masters 1000 + navn, ikke touren wholesale).",
-    "Entity-gaps (Barcelona/Manchester City/Arsenal/Real Madrid/Liverpool/Premier League/Bundesliga/Champions League/Candidates) = Women's Champions League-referater + helgens resultat-/talking-points-nyheter, ikke kommende-event-hull. Tracked-claim La Liga (2027-dato)/Serie A (null)/Bundesliga (30. sep)/Warholm (2027)/Carlsen (2027) = korrekt fjern-fremtid eller sesongslutt.",
-    "IMMINENT TAVLE-DEKNING KOMPLETT (verifisert mot audit + board): F1 Aserbajdsjan GP (kval fre. 25. sep, løp lør. 26. sep — Baku på lørdag pga. nasjonal sørgedag 27.), UCI Road-VM Montréal (mixed relay + elite kvinner fellesstart 26., elite menn fellesstart 27.), håndball Elkjøp-ligaen serierunde 25.–27. sep (7 kamper = hele 14-lags menns-runde), golf Presidents Cup + FedEx Open de France (Hovland + Reitan navngitt), Laver Cup London 25.–27. sep (Ruud, skade-forbehold), 46. sjakk-OL sluttrunde (runde 11) 27. sep, Il Lombardia 10. okt, 100 Thieves CS2 (Stake Pulse Beat II, 100T–EAC 23. sep, rain navngitt).",
-    "Scout quiet hele dagen (4 kjøringer 10:18/15:10/19:07/21:46 UTC, alle verdict=quiet, 0 eskaleringer, cap 0/2). Ingen ny RSS-signal om schedule/tid/venue/kringkaster-endring.",
-    "Ingen registry-reconciliation (ikke mandags-deep-sveip). Ingen katalog-endring. STÅENDE self-repair/improve-saker (uendret, HIGH sourceIssues): (a) ingen wholesale håndball-fetcher — hele Elkjøp-ligaen håndboardes runde-for-runde; (b) CS2 esports.js 100T-only-blindsone — all annen katalog-CS2 hviler på research; (c) manglende authority.json contract-blokker for håndball + CS2 tier-1-turneringer så et delvis/regressert hull fanges mekanisk. Kosmetisk (verify): F1-event 4. okt bærer fortsatt «...in Malaysia» i tittelen (skal være Bahrain Grand Prix; dato korrekt)."
-  ]
+	"runAt": "2026-09-23T04:52:00Z",
+	"tier": "standard",
+	"eventsAdded": 0,
+	"eventsRemoved": 0,
+	"trackedDelta": "Ingen entiteter lagt til/fjernet. Oppdaterte esl-pro-league-s24-2026-oppføringen med dagens web-bekreftelse (gruppe-seeding var 21. sep, men kampoppsett/starttider/sendekanaler fortsatt upublisert per offisiell blast.tv → on-cadence, ikke boardet) + bumpet lastUpdated + prependet ny run-note (og trimmet notes 16→15). Reconciliation: alle katalog-tier1-sport i sesong og aktive tier2-entiteter har dekkende tracked-oppføringer; ingen expiry-endring nødvendig denne kjøringen.",
+	"quality": {
+		"pass": true,
+		"score": 90,
+		"failures": [],
+		"note": "Selv-vurdert (ingen ny event å grade uavhengig — quiet no-op). Kjøringen fulgte no-op-kontrakten: web-verifiserte de to kjente horisont-hullene (ESL Pro League S24, Shanghai Masters) og bekreftet at ingen er boardbare ennå (manglende starttider), triagerte alle mekaniske signaler (3 falske contract-breach i FIFA-landslagsvinduet + entity-nyhetsstøy), og reconcilerte tracked.json. Ingen gjettet tid boardet (missing > wrong). validate-events: 0 errors."
+	},
+	"notes": [
+		"QUIET NO-OP (standard-tier, 4-timers). Tavla er komplett for hele imminent-vinduet 24.–27. sep; ingen ny event boardbar med bekreftet tid. Sjekket web på de to horisont-hullene og fant begge fortsatt on-cadence.",
+		"ESL Pro League S24 (Katowice, 3.–11. okt, $1M): web-RE-BEKREFTET mot pro.eslgaming.com + blast.tv (offisiell) + HLTV/GosuGamers — gruppe-SEEDING var 21. sep, men konkrete kampoppsett (matchups), daglige starttider OG sendekanaler er FORTSATT upublisert (blast.tv: «broadcast channels not announced yet», «map pool not published yet»). Aller første kamp lør. 3. okt, ~10 d ut, ingen katalog-org imminent → BEVISST ikke boardet (gjettet starttid verre enn manglende event). Boardes så snart dag-1-oppsett med UTC-tid publiseres (VOKT: coverage-audit bumper hvis uboardet <7 d ut fra ~26. sep).",
+		"Shanghai Masters (ATP Masters 1000, 7.–18. okt): ~14 d ut, hovedtrekning ikke publisert ennå → on-cadence, boardes når det nærmer seg. Casper Ruud (katalog) trakk seg fra US Open med ryggskade, retur-plan uklar — turneringen er katalog-dekket uansett; verify bekrefter deltakelse + norsk visning.",
+		"TRIAGE coverage-gaps 02:54Z (gapCount 21, anomalyCount 0) + coverage-audit 09:05Z (22.09): INGEN high-severity imminent recall-gap. 3 contract-breach HIGH (PL 0/6, Eliteserien 0/2, tennis:tour 0/1) alle FALSKE — 24.–27. sep er FIFA-landslagsvindu (Norge–Danmark 24. + Norge–Portugal 27. i UEFA Nations League, begge på tavla; domestiske ligaer korrekt pauset, PL gjenopptas ~3.–4. okt) + tennis:tour er kjent miscalibration (tennis entity-gated, ikke wholesale; neste ekte katalog-tennis Shanghai Masters ~7. okt utenfor 14-d-vinduet).",
+		"Entity-gaps (Barcelona/Man City/Arsenal/Real Madrid/Liverpool/PL/La Liga/Serie A/Bundesliga/CL/Candidates) = helgens Women's Champions League-runde (22. sep) + resultat-/talking-points-nyheter, ikke kommende-event-hull. Tracked-claim La Liga(2027)/Serie A(null)/Bundesliga(30. sep)/Warholm(2027)/Carlsen(2027)/Eliteserien(24. sep=FIFA-pause) = korrekt fjern-fremtid/pause-fravær.",
+		"Imminent tavle-dekning bekreftet komplett: F1 Aserbajdsjan (kval fre. 25./løp lør. 26. — Baku på lørdag pga. sørgedag 27.), UCI Road-VM Montréal (elite kvinner 26./elite menn 27.), håndball Elkjøp-runde 25.–27. sep (7 kamper, hele 14-lags runden), golf (Presidents Cup + FedEx Open de France m/Hovland), Laver Cup London 25.–27. (Ruud, skade-vakt), sjakk-OL sluttrunde 27., Bryne–Lyn 4. okt (OBOS), Il Lombardia 10. okt, Singapore GP-øktene 9.–11. okt, 100T CS2 (Stake Pulse Beat II 23. sep).",
+		"Scout quiet hele forrige døgn (4 kjøringer, 0 eskaleringer). Ingen registry-reconciliation (ikke mandags-deep). Ingen katalog-/expiry-endring.",
+		"STÅENDE self-repair/improve-saker (uendret, HIGH sourceIssues): ingen wholesale håndball-fetcher; CS2 esports.js 100T-only-blindsone; manglende authority.json contract-blokker for håndball/CS2; tennis:tour-kontrakt miscalibrert (fyrer falskt HIGH hver kjøring); F1 4. okt-event «Bahrain GP in Malaysia» venue-korrupsjon (verify, kosmetisk); PL authority.json-kanal fortsatt TV 2 (skal være Viaplay)."
+	]
 }
