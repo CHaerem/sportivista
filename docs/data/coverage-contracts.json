@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T18:49:46.638Z",
+  "generatedAt": "2026-09-24T21:56:58.310Z",
   "contracts": [
     {
       "id": "f1:world-championship",
@@ -143,14 +143,13 @@
       ],
       "note": "ATP/WTA-touren går januar–november; min 1 turnering innen 14 d (touren dekkes via majors + navn, tier2).",
       "inSeason": true,
-      "upcoming": 0,
-      "status": "breached"
+      "upcoming": 1,
+      "status": "met"
     }
   ],
   "breached": [
     "football:eliteserien",
-    "football:premier-league",
-    "tennis:tour"
+    "football:premier-league"
   ],
   "note": "WP-243: dekningskontrakten per konkurranse — mekanisk måling av løftet i authority.json (contract-blokkene) mot tavla. Brudd triageres av coverage-critic/research via coverage-gaps.json; contracts-porten i port-report.json ruller dommen inn i G2-målingen."
 }
