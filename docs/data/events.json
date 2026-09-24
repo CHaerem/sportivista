@@ -193,112 +193,6 @@
   {
     "sport": "football",
     "tournament": "UEFA Champions League 2026/27 (ligaspill)",
-    "title": "Roma at Fenerbahçe",
-    "time": "2026-09-10T16:45:00Z",
-    "endTime": null,
-    "venue": "Şükrü Saracoğlu, Istanbul",
-    "norwegian": false,
-    "homeTeam": "Fenerbahçe",
-    "awayTeam": "Roma",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-06T12:20:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
-      "https://www.vg.no/rampelys/i/9pBV8M/tv-2-landet-ny-fotballavtale-sender-champions-league-fram-til-2031"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.uefa.com/uefachampionsleague/match/2049568--fenerbahce-vs-roma/",
-        "basis": "primary",
-        "retrievedAt": "2026-09-07T05:30:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-06T12:20:00Z",
-        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
-      }
-    },
-    "summary": "Fenerbahçe tar imot Roma i ligaspillets første runde.\n\nAvspark torsdag 10. september kl. 18.45 CEST (16.45 UTC).",
-    "awayTeamEntityId": "as-roma",
-    "id": "8cb308046411",
-    "verifiedAt": "2026-09-08T09:55:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.uefa.com/uefachampionsleague/match/2049568--fenerbahce-vs-roma/",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/"
-    ]
-  },
-  {
-    "sport": "football",
-    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
-    "title": "Shakhtar Donetsk at PSV Eindhoven",
-    "time": "2026-09-10T16:45:00Z",
-    "endTime": null,
-    "venue": "Philips Stadion, Eindhoven",
-    "norwegian": false,
-    "homeTeam": "PSV Eindhoven",
-    "awayTeam": "Shakhtar Donetsk",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-07T23:00:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Champions_League_league_phase",
-      "https://kommunikasjon.ntb.no/pressemelding/18884555/tv-2-skal-vise-champions-league-de-fem-neste-sesongene"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
-        "basis": "primary",
-        "retrievedAt": "2026-09-07T23:00:00Z",
-        "note": "UEFAs offisielle ligaspill-fixtureliste MD1; uavhengig write-time fact-check bekreftet dato/tid/hjemme-borte (UEFA + Wikipedia + klubbsider)"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-09-07T23:00:00Z",
-        "note": "CL er TV 2s eksklusive norske rettighet (t.o.m. 2030/31)"
-      }
-    },
-    "summary": "PSV Eindhoven mot Shakhtar Donetsk på Philips Stadion i ligaspillets første runde.\n\nAvspark torsdag 10. september kl. 18.45 CEST (16.45 UTC).",
-    "homeTeamEntityId": "psv-eindhoven",
-    "id": "39dd38b533d9",
-    "verifiedAt": "2026-09-08T09:55:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/"
-    ]
-  },
-  {
-    "sport": "football",
-    "tournament": "UEFA Champions League 2026/27 (ligaspill)",
     "title": "RB Leipzig at Como",
     "time": "2026-09-10T19:00:00Z",
     "endTime": null,
@@ -3751,12 +3645,12 @@
     "participants": [],
     "norwegianPlayers": [
       {
-        "name": "Viktor Hovland",
-        "entityId": "viktor-hovland"
-      },
-      {
         "name": "Kristoffer Reitan",
         "entityId": "kristoffer-reitan"
+      },
+      {
+        "name": "Viktor Hovland",
+        "entityId": "viktor-hovland"
       },
       {
         "name": "Andreas Halvorsen",
