@@ -1,17 +1,18 @@
 {
-  "checkedAt": "2026-09-22T13:02:01Z",
+  "checkedAt": "2026-09-24T13:08:04Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
-    "All three widths: single quiet column, day-grouped agenda, generous spacing — no clutter.",
-    "No horizontal scroll or clipped text at 375px or 393px; longer fixtures (e.g. 'Atlético Calatayud – CD Baztán', 'Bergen Håndball – Sandefjord') wrap/fit cleanly, nothing truncated in a way that hides which side is Norwegian.",
-    "Norwegian teams/athletes (Norge–Danmark, Norge–Portugal, Bergsøy–Elverum, Kolstad–Follo HK, Kristiansand TH–Sandnes, Bergen Håndball–Sandefjord) render with full names and flags/crests intact — no broken image icons.",
-    "Channels shown are Norwegian-available (TV 2 Play, Viaplay, Eurosport/HBO Max) or an honest faint '–' for the Copa del Rey rows with no known Norwegian channel yet; no FOX/ESPN/Sky spotted.",
-    "Round labels present where expected ('1st Leg' on Copa del Rey rows, 'League A, gruppe 4' on Nations League rows).",
-    "Must-see accent dots appear on only a few rows (e.g. Norge–Danmark, Norge–Portugal) — used sparingly, not on everything.",
-    "The floating 'Assistent' sparkles button overlaps a mid-agenda row (Norge–Danmark on 375/393px, Bergsøy–Elverum on 900px) in all three shots — this is the DESIGN.md-sanctioned floating-button idiom, not flagged. It does not cover the last agenda row, 'Neste opp'/'Dette dekker vi' sections, or the footer in any of the three shots.",
-    "Header (wordmark, date, theme toggle), day headings, and footer (updated timestamp, subscribe/calendar link, activity/privacy links, AI-budsjett line) all intact and aligned at every width.",
-    "Chess 'Neste opp' list and 'Dette dekker vi' / 'Merk og kilder' disclosures render collapsed and unbroken at all widths."
+    "All three widths: single quiet column, day-grouped agenda ('I DAG'/'I MORGEN'/weekday headings), generous spacing — not a cluttered grid.",
+    "No horizontal scroll or clipped text at 375px or 393px; long fixtures ('Atlético Calatayud – CD Baztán', 'Atlético Pinatarense – Atlético Melilla', 'Sporting Hortaleza – Atlético Unión Güímar') wrap onto a second line rather than truncating — nothing cut mid-word, nothing hiding which side is Norwegian.",
+    "Norwegian teams/athletes render with full names and flags/crests intact: Norge–Danmark, Norge–Portugal, Bergsøy–Elverum, Kolstad–Follo HK, Kristiansand TH–Sandnes, Bergen Håndball–Sandefjord. No broken-image icons or empty boxes spotted.",
+    "Channels are Norwegian-available (TV 2 Direkte/TV 2 Play, Viaplay, Eurosport/HBO Max) or an honest faint '–' where unknown (all the Copa del Rey 1st-leg rows); no FOX/ESPN/Sky.",
+    "Round/competition labels present where expected: '1st Leg' on Copa del Rey rows, 'League A, gruppe 4' on Nations League rows, 'Race Weekend'/'kvalifisering' on F1 rows.",
+    "Must-see accent dots appear on only a handful of rows (Norge–Danmark, Norge–Portugal, Presidents Cup, FedEx Open de France) — sparing, not on everything.",
+    "The floating 'Assistent' button (visible clearly in the 900px shot) sits over a mid-agenda row ('Kolstad – Follo HK') without covering the last agenda row, 'Neste opp', 'Dette dekker vi', or the footer — the DESIGN.md-sanctioned idiom, not flagged. At 375/393px the full-page capture stitches the fixed button in as a faint circle near the top of the 'I MORGEN' section (a known Playwright full-page artifact for position:fixed elements, not a real in-app placement) — inconclusive for mobile widths from this capture method, but the 900px shot confirms the one required guarantee (never occludes the last row/footer) holds.",
+    "Header (wordmark, date, theme toggle), day headings, and footer (updated timestamp, subscribe/calendar link, activity/privacy links, AI-budsjett line) intact and aligned at every width.",
+    "Chess 'Neste opp' list and the 'Dette dekker vi'/'Merk og kilder' disclosures render collapsed and unbroken at all widths.",
+    "Not a code-fixable UI issue, so not raised as a finding, but worth a human's eye: the board is currently dominated by ~14 Spanish Copa del Rey 1st-round preliminary matches (mostly regional/lower-tier clubs, all showing an honest '–' channel) spanning Sat–Sun, pushing the page to ~9000px tall on mobile and burying 'Neste opp'/'Dette dekker vi' far down. Looks like a coverage/catalog breadth question (why these ~14 fixtures qualify for the board), not a layout defect — each individual row itself renders correctly."
   ]
 }
