@@ -3822,7 +3822,7 @@
     "homeTeamEntityId": "norge",
     "id": "c862d553c668",
     "awayTeamEntityId": "danmark",
-    "verifiedAt": "2026-09-23T10:12:00Z",
+    "verifiedAt": "2026-09-24T10:20:00Z",
     "verificationStatus": "confirmed",
     "verificationSources": [
       "https://play.tv2.no/sport/fotball/uefa-nations-league-y3yqrwwv/norge-danmark-dd89cf1d",
@@ -3870,7 +3870,7 @@
     },
     "summary": "Kvalifiseringen (Q1–Q3) avgjør startoppstillingen for lørdagens race (lør. 26. sep kl. 15.00 lokal / 11.00 UTC).\n\nUvanlig helg: Aserbajdsjan GP kjøres i år på LØRDAG, ikke søndag, for å unngå en nasjonal sørgedag — kvalifisering fredag 25. sep kl. 16.00 Baku-tid (12.00 UTC / 14.00 CEST), race lørdag.\n\nTid bekreftet mot Baku City Circuits egen timeplan + formula1.com (arrangøren), ikke ESPN-feeden som feildaterer F1-helger (source-quirks). Norsk visning Viaplay/V Sport.",
     "id": "4960fcd05c49",
-    "verifiedAt": "2026-09-22T10:22:00Z",
+    "verifiedAt": "2026-09-24T10:20:00Z",
     "verificationStatus": "confirmed",
     "verificationSources": [
       "https://www.formula1.com/en/racing/2026/azerbaijan",
@@ -4447,7 +4447,7 @@
     },
     "summary": "Sluttrunden (runde 11) i 46. sjakk-OL avgjør gull i både den åpne klassen og kvinneklassen søndag 27. september.\n\nMerk det tidligere avsparket: sluttrunden starter kl. 08.00 CEST (06.00 UTC), fire timer før de øvrige rundene. Gratis online via Chess.com/TV, Chess24, Twitch og YouTube.",
     "id": "1ce937cfa669",
-    "verifiedAt": "2026-09-22T10:22:00Z",
+    "verifiedAt": "2026-09-24T10:20:00Z",
     "verificationStatus": "confirmed",
     "verificationSources": [
       "https://chessolympiad2026.fide.com/schedule",
@@ -4842,9 +4842,9 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
+        "platform": "TV 2 Direkte / TV 2 Play",
+        "url": "https://play.tv2.no/sport/fotball/uefa-nations-league-y3yqrwwv",
+        "urlKind": "deep"
       }
     ],
     "source": "ai-research",
@@ -4861,26 +4861,27 @@
         "sourceId": "fotball-no",
         "url": "https://www.fotball.no/fotballdata/kamp/?fiksId=9049093",
         "basis": "primary",
-        "retrievedAt": "2026-09-21T10:55:00Z",
-        "note": "NFF/fotball.no kampside (fiksId 9049093): Norge–Portugal 27.09.2026 kl. 20.45 (18.45 UTC), UEFA Nations League Liga A."
+        "retrievedAt": "2026-09-24T10:20:00Z",
+        "note": "NFF/fotball.no kampside (fiksId 9049093): Norge–Portugal søn. 27.09.2026 kl. 20.45 (18.45 UTC), UEFA Nations League Liga A. Bekreftet mot TV 2 livesport + Telenor sendeskjema."
       },
       "streaming": {
         "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport",
-        "basis": "secondary",
-        "retrievedAt": "2026-08-26T17:05:00Z",
-        "note": "TV 2 er bekreftet rettighetshaver for UEFA Nations League i Norge (linear + TV 2 Play) via aggregatorer/omtale, IKKE mot TV 2s egen kampside — eksakt lineær kanal-slot settes nærmere → basis secondary. Verify bekrefter kanalen (og lenker dypt) før den låses."
+        "url": "https://play.tv2.no/sport/fotball/uefa-nations-league-y3yqrwwv",
+        "basis": "official",
+        "retrievedAt": "2026-09-24T10:20:00Z",
+        "note": "TV 2s egen Nations League-turneringsside på play.tv2.no bekrefter at alle Norges NL-kamper vises på TV 2 Direkte + TV 2 Play. Egen kampside for Norge–Portugal ennå ikke publisert (kampen er søndag) → beholder turneringssiden som dyplenke. Løser tidligere sekundær-basis; kanal låst til TV 2 Direkte."
       }
     },
     "summary": "Norge tar imot Portugal (Cristiano Ronaldo) på Ullevaal i sin andre hjemmekamp i Nations League-septembervinduet.\n\nGruppe 4 i League A: Norge, Portugal, Danmark og Wales. Norge spiller Danmark hjemme torsdag 24. sept før dette oppgjøret.\n\nAvspark søndag 27. september kl. 20.45 CEST (18.45 UTC). Vises på TV 2 Play. Troppen er ikke tatt ut ennå.",
     "homeTeamEntityId": "norge",
     "awayTeamEntityId": "portugal",
     "id": "c00f77a89225",
-    "verifiedAt": "2026-09-22T10:22:00Z",
-    "verificationStatus": "confirmed",
+    "verifiedAt": "2026-09-24T10:20:00Z",
+    "verificationStatus": "amended",
     "verificationSources": [
-      "https://www.fotball.no/fotballdata/kamp/?fiksId=9049093",
-      "https://www.vg.no/sport/i/6q6V3e/"
+      "https://play.tv2.no/sport/fotball/uefa-nations-league-y3yqrwwv",
+      "https://www.telenor.no/privat/artikler/underholdning/aktuelt/sport/nations-league-2026/",
+      "https://www.fotball.no/landslag/norge-a-herrer/2026/her-er-norges-nations-league-gruppe/"
     ]
   },
   {
