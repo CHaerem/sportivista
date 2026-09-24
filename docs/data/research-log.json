@@ -1,26 +1,21 @@
 {
-  "runAt": "2026-09-24T20:15:00Z",
-  "eventsAdded": 20,
-  "eventsRemoved": 4,
-  "trackedDelta": "Oppdaterte 4 katalog-turnering/liga-entries (premier-league-2026-27, eliteserien-2026, shanghai-masters-2026, esl-pro-league-s24-2026) med boardet-status; oppdaterte 2 (havard-rain-nygaard expires 27.sep→31.okt + Stake Pulse-sluttspillstatus, stake-pulse-beat-ii-2026). Ingen entries lagt til/fjernet.",
-  "quality": {
-    "pass": true,
-    "score": 88,
-    "failures": [
-      "Evidence-domain monoculture (scored ~-10): PL-familien siterte kun premierleague.com og Eliteserien-familien kun fotball.no i evidence[] — ADRESSERT i revisjonspass: la til uavhengig domene (Sports Mole / sportsidioten.no) på hver.",
-      "Advisory (board-wide, ikke scoret): validate-events advarer «weak time basis on 11 high-confidence events» (WP-242, pre-eksisterende, ikke mine) + «landing-page-only channel URL on 5 near-term events» (WP-246; Viaplay https://viaplay.no landing er per norwegian-rights-skillen, akseptabelt).",
-      "Stående self-repair/improve-flagg (utenfor research' commit-scope): ingen wholesale håndball-fetcher, esports.js 100T-gated, tennis:tour-kontrakt miscalibrert, F1 «Bahrain GP in Malaysia» venue-korrupsjon (verify, kosmetisk)."
-    ]
-  },
-  "notes": [
-    "Scout-eskalert 14:37Z: tre HIGH contract-breach (Eliteserien/Premier League/tennis) + imminent tracked-claims (Stake Pulse Beat II, Shanghai Masters). ROTÅRSAK-OPPDAGELSE: sept.- og okt.-landslagsvinduene er slått sammen til ETT 16-dagers vindu (21. sep–6. okt) → PL/Eliteserien har INGEN runde 1.–8. okt; de gjenopptas 9.–12. okt, akkurat utenfor 14-d-horisonten ved kjøring. Breachene var derfor forventbart falske MEN nå reelt tettet med de bekreftede resumption-rundene.",
-    "PREMIER LEAGUE runde 6 (10.–12. okt): alle 10 kamper boardet (high) fra premier-league.com (fixture-amendments + all-380, primær) + uavhengig write-time fact-check (bekreftet Arsenal/Man Utd/Liverpool–City/Coventry + at ingen runde finnes 3.–5. okt). Viaplay. Haaland navngitt på Liverpool–Man City. BST=UTC+1 t.o.m. 25. okt.",
-    "ELITESERIEN runde 23 (9.–12. okt): alle 8 kamper boardet (high) fra fotball.no terminliste (fiksId 206092) + rundeoppsett 23–30 (primær) + fact-check (Brann/Bodø-Glimt/Rosenborg/Molde). TV 2 Play. Fire fulgte katalog-klubber dekket.",
-    "SHANGHAI MASTERS (ATP Masters 1000, hovedtrekning 7.–18. okt, Qizhong): fler-dagers turneringsnode (medium; 2-kilde ATP+arrangør + fact-check; order-of-play publiseres etter seeding 28. sep → basis secondary). TV 2 Play. Ruud IKKE navngitt (ryggskade, formavhengig; verify re-bekrefter). Tournament satt «Rolex Shanghai Masters (ATP Masters 1000)» så den matcher tennis:tour-kontrakt-tokenet (ellers kjent miscalibrert falskt brudd).",
-    "ESL PRO LEAGUE S24 (CS2, 3.–11. okt, Spodek Katowice, $1M): fler-dagers turneringsnode (medium; 2-kilde ESL Pro Tour+ESL FACEIT; dag-1-paringer/starttider/kanaler upublisert → basis secondary). 7 katalog-orger i feltet (Falcons, Spirit, FURIA, Vitality, MOUZ, NAVI, G2). Gratis Twitch (esl_csgo). 100T IKKE i feltet.",
-    "100 THIEVES/rain: vant Stake Pulse Beat II gruppe C (2–0), i sluttspillet (single-elim, 25.–26. sep Stockholm) — men bracket-seeding/motstander/UTC-tid upublisert (HLTV/Liquipedia/egamersworld 403) → INGEN datert kamp boardet (ærlig «ikke satt opp ennå»); esports.js/verify boarder når braketten får tidsstempel. rain fortsatt på aktiv roster; entry expires 27. sep → 31. okt.",
-    "CLEANUP: fjernet 4 foreldede ai-research CL MD1-events (10. sep, uten endTime, utenfor validate-events' 14-d-grace-window → feilet valideringen med 4 «past event»-feil; build-events ville droppet dem neste kjøring uansett). Etter fjerning: 114 events, 0 valideringsfeil.",
-    "FAN-OUT: 4 parallelle scout-subagenter (PL / Eliteserien / tennis / CS2) + 1 uavhengig write-time fact-checker (Step 3.5, bekreftet alle fire load-bearing datoer) + 1 grader (Step 5, pass/88). Ingen registry-reconciliation (ikke mandags-deep-tier).",
-    "KONTRAKT-NOTAT (improve/self-repair): PL/Eliteserien-breach forventbart falskt under det UTVIDEDE landslagsvinduet (contract horizonDays 14 ser ikke resumption-runden 16–18 d ut). Vurder å nulle contract-breach når et FIFA-vindu detekteres. tennis:tour er entity-gated miscalibrering (uendret anbefaling: re-scope til navngitte Masters 1000/Finals/majors)."
-  ]
+	"runAt": "2026-09-24T23:15:00Z",
+	"eventsAdded": 0,
+	"eventsRemoved": 0,
+	"trackedDelta": "Oppdaterte 2 tracked-entries (stake-pulse-beat-ii-2026 + havard-rain-nygaard): 100 Thieves' Stake Pulse Beat II-sluttspillmotstander bekreftet til BBL Esports (kvartfinale, Bo3, fre. 25. sep) mot HLTV match 2398069 + Flashscore; la til 2 evidence-URLer. Ingen datert kamp boardet — eksakt QF-slot fortsatt upublisert (web spriker 09.00 vs 10.00 UTC), boardes av esports.js/verify når Liquipedia fester tidsstempel. Ingen entries lagt til/fjernet. lastUpdated 20:15Z→23:15Z.",
+	"quality": {
+		"pass": true,
+		"score": 90,
+		"failures": [
+			"Kroniske stående self-repair/improve-flagg gjentas uløst over mange kjøringer (CS2 esports.js 100T-only-blindsone, ingen wholesale håndball-fetcher, manglende authority.json contract-blokker for håndball/CS2, tennis:tour-kontrakt miscalibrert, PL/Eliteserien falskt HIGH i FIFA-vinduet) — korrekt utenfor research-agentens eget mandat (self-repair/verify) og riktig eskalert, men loopen bærer dem videre uten mekanisk løsning.",
+			"Informativt: flere arvede Bundesliga-events' summaries nevner TV 2 Play som sekundært alternativ ved siden av primær Viaplay-chip — ikke en motsigelse, men hold sekundær-kanal-prosaen fra å drive foran streaming[]-arrayet."
+		]
+	},
+	"notes": [
+		"Nesten no-op standard-tier-kjøring (scout-eskalert 14:37Z + imminent coverage-gap). Eneste ekte imminent-signal: 100 Thieves (rain/Håvard Nygaard) sluttspill i Stake Pulse Beat II (Stockholm, 25.–26. sep). Sluttspillmotstanderen bekreftet til BBL Esports (kvartfinale, Bo3, 25. sep) via to kilder (HLTV match 2398069 + Flashscore), men eksakt avsparkstid ikke entydig publisert på fetchbare kilder (HLTV/Liquipedia/egamersworld/stakepulse.gg alle 403/404; web-treff spriker mellom 09.00 og 10.00 UTC) → INGEN datert kamp boardet (feil tid > manglende, kjernekontrakten). Statisk esports.js (Liquipedia:Matches) mangler også tidsstempel (esports.json tomt) → kampen boardes automatisk av fetcheren/verify straks Liquipedia fester QF-tiden. Intel registrert i tracked så verify vet nøyaktig hva den skal låse.",
+		"Contract-breach HIGH (Premier League 0/6, Eliteserien 0/2) = FORVENTET FALSKT i det utvidede FIFA-landslagsvinduet (21. sep–6. okt): ligaene har ingen runde 1.–8. okt, gjenopptas 9.–12. okt — PL runde 6 + Eliteserien runde 23 ALLEREDE boardet av 20:15Z-kjøringen. tennis:tour = kjent miscalibration (entity-gated). Ingen tavle-handling nødvendig.",
+		"Imminente falske entity-gaps: «Spirit» (James Garner/England-artikkel, ikke Team Spirit esports), «The Open» (chessbase «Chess Olympiad Live»-headline, ikke golfmajoren) — token-feiltreff, ikke event-hull. Øvrige entity-gaps (Barcelona/Arsenal/La Liga/Champions League/Sykkel-VM) = Nations League-/talking-points-/2027-VM-nyhetsstøy.",
+		"Imminent tavle-dekning ellers komplett: F1 Aserbajdsjan (kval fre. 25./løp lør. 26.), UCI Road-VM (elite kvinner 26./elite menn 27.), håndball Elkjøp-runde 25.–27. sep (full runde), Laver Cup 25.–27., sjakk-OL sluttrunde 27., Nations League Norge 24.+27., Bryne–Lyn 4. okt, ESL Pro League S24-node 3.–11. okt. Step 1-reconcile: alle katalog-tier1-sport i sesong + aktive tier2-entiteter har dekkende tracked-oppføringer; ingen expiry-drops (nærmeste 27.–28. sep fortsatt live). Ingen katalog-endring; ingen registry-reconciliation (ikke mandags-deep).",
+		"STÅENDE self-repair/improve-saker (uendret, HIGH sourceIssues): (a) CS2 esports.js 100T-only-blindsone — hadde fanget QF-kampen mekanisk om fetcheren beholdt alle katalog-orger / Liquipedia hadde tidsstempel; (b) ingen wholesale håndball-fetcher; (c) manglende contract-blokker for håndball/CS2; (d) tennis:tour-kontrakt miscalibrert; (e) PL/Eliteserien-kontrakt fyrer falskt HIGH gjennom FIFA-vinduet (vurder FIFA-vindu-nulling); (f) F1 4. okt-event «Bahrain GP in Malaysia» venue-korrupsjon (verify, kosmetisk)."
+	]
 }
