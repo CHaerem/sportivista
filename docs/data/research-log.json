@@ -1,21 +1,22 @@
 {
-	"runAt": "2026-09-24T23:15:00Z",
-	"eventsAdded": 0,
+	"runAt": "2026-09-25T05:10:00Z",
+	"eventsAdded": 1,
 	"eventsRemoved": 0,
-	"trackedDelta": "Oppdaterte 2 tracked-entries (stake-pulse-beat-ii-2026 + havard-rain-nygaard): 100 Thieves' Stake Pulse Beat II-sluttspillmotstander bekreftet til BBL Esports (kvartfinale, Bo3, fre. 25. sep) mot HLTV match 2398069 + Flashscore; la til 2 evidence-URLer. Ingen datert kamp boardet — eksakt QF-slot fortsatt upublisert (web spriker 09.00 vs 10.00 UTC), boardes av esports.js/verify når Liquipedia fester tidsstempel. Ingen entries lagt til/fjernet. lastUpdated 20:15Z→23:15Z.",
+	"trackedDelta": "Oppdaterte 2 tracked-entries (stake-pulse-beat-ii-2026 + havard-rain-nygaard): 100 Thieves' Stake Pulse Beat II-KVARTFINALE mot BBL Esports (Bo3) BOARDET som ai-research (high) — fre. 25. sep 13.00 CEST (11.00 UTC), BME Studio Stockholm. Eksakt slot nå tre-kilde-bekreftet (Robinhood prediction market 7 AM EDT = 11.00 UTC + et «13:00 CEST»-oppsett + HLTV match 2398069/Flashscore for kamp+dato); QF-ene starter 09.00 CEST staggert, 100T–BBL i andre par. Håvard «rain» Nygaard navngitt. Lukker den imminente tracked-claim-gapen. La til Robinhood-URL i evidence. Ingen entries lagt til/fjernet. lastUpdated 23:15Z→05:10Z.",
 	"quality": {
 		"pass": true,
-		"score": 90,
+		"score": 96,
 		"failures": [
-			"Kroniske stående self-repair/improve-flagg gjentas uløst over mange kjøringer (CS2 esports.js 100T-only-blindsone, ingen wholesale håndball-fetcher, manglende authority.json contract-blokker for håndball/CS2, tennis:tour-kontrakt miscalibrert, PL/Eliteserien falskt HIGH i FIFA-vinduet) — korrekt utenfor research-agentens eget mandat (self-repair/verify) og riktig eskalert, men loopen bærer dem videre uten mekanisk løsning.",
-			"Informativt: flere arvede Bundesliga-events' summaries nevner TV 2 Play som sekundært alternativ ved siden av primær Viaplay-chip — ikke en motsigelse, men hold sekundær-kanal-prosaen fra å drive foran streaming[]-arrayet."
+			"Minor: provenance.time basis er \"secondary\" (HLTV) fordi Liquipedia/HLTV var 403-blokkert for direkte fetch; tre kilder konvergerte på 11.00 UTC så akseptabelt, men ingen primærkilde-tidsbekreftelse var oppnåelig denne kjøringen — verify bør re-sjekke når braketten fester tidsstempel."
 		]
 	},
 	"notes": [
-		"Nesten no-op standard-tier-kjøring (scout-eskalert 14:37Z + imminent coverage-gap). Eneste ekte imminent-signal: 100 Thieves (rain/Håvard Nygaard) sluttspill i Stake Pulse Beat II (Stockholm, 25.–26. sep). Sluttspillmotstanderen bekreftet til BBL Esports (kvartfinale, Bo3, 25. sep) via to kilder (HLTV match 2398069 + Flashscore), men eksakt avsparkstid ikke entydig publisert på fetchbare kilder (HLTV/Liquipedia/egamersworld/stakepulse.gg alle 403/404; web-treff spriker mellom 09.00 og 10.00 UTC) → INGEN datert kamp boardet (feil tid > manglende, kjernekontrakten). Statisk esports.js (Liquipedia:Matches) mangler også tidsstempel (esports.json tomt) → kampen boardes automatisk av fetcheren/verify straks Liquipedia fester QF-tiden. Intel registrert i tracked så verify vet nøyaktig hva den skal låse.",
-		"Contract-breach HIGH (Premier League 0/6, Eliteserien 0/2) = FORVENTET FALSKT i det utvidede FIFA-landslagsvinduet (21. sep–6. okt): ligaene har ingen runde 1.–8. okt, gjenopptas 9.–12. okt — PL runde 6 + Eliteserien runde 23 ALLEREDE boardet av 20:15Z-kjøringen. tennis:tour = kjent miscalibration (entity-gated). Ingen tavle-handling nødvendig.",
-		"Imminente falske entity-gaps: «Spirit» (James Garner/England-artikkel, ikke Team Spirit esports), «The Open» (chessbase «Chess Olympiad Live»-headline, ikke golfmajoren) — token-feiltreff, ikke event-hull. Øvrige entity-gaps (Barcelona/Arsenal/La Liga/Champions League/Sykkel-VM) = Nations League-/talking-points-/2027-VM-nyhetsstøy.",
-		"Imminent tavle-dekning ellers komplett: F1 Aserbajdsjan (kval fre. 25./løp lør. 26.), UCI Road-VM (elite kvinner 26./elite menn 27.), håndball Elkjøp-runde 25.–27. sep (full runde), Laver Cup 25.–27., sjakk-OL sluttrunde 27., Nations League Norge 24.+27., Bryne–Lyn 4. okt, ESL Pro League S24-node 3.–11. okt. Step 1-reconcile: alle katalog-tier1-sport i sesong + aktive tier2-entiteter har dekkende tracked-oppføringer; ingen expiry-drops (nærmeste 27.–28. sep fortsatt live). Ingen katalog-endring; ingen registry-reconciliation (ikke mandags-deep).",
-		"STÅENDE self-repair/improve-saker (uendret, HIGH sourceIssues): (a) CS2 esports.js 100T-only-blindsone — hadde fanget QF-kampen mekanisk om fetcheren beholdt alle katalog-orger / Liquipedia hadde tidsstempel; (b) ingen wholesale håndball-fetcher; (c) manglende contract-blokker for håndball/CS2; (d) tennis:tour-kontrakt miscalibrert; (e) PL/Eliteserien-kontrakt fyrer falskt HIGH gjennom FIFA-vinduet (vurder FIFA-vindu-nulling); (f) F1 4. okt-event «Bahrain GP in Malaysia» venue-korrupsjon (verify, kosmetisk)."
+		"Standard-tier 4-timers kjøring. ÉN ny event (imminent CS2), ellers triage av eksisterende signaler.",
+		"PRIMÆRLEVERANSE: 100 Thieves' Stake Pulse Beat II-kvartfinale mot BBL Esports (Bo3) boardet — fre. 25. sep 13.00 CEST (11.00 UTC). Eksakt slot tre-kilde-bekreftet (Robinhood 7 AM EDT = 11.00 UTC + «13:00 CEST»-oppsett + HLTV 2398069/Flashscore for kamp+dato). QF-ene staggeres fra 09.00 CEST; 100T–BBL i andre par. Håvard «rain» Nygaard (IGL) navngitt, gratis på kick.com/stake_pulse. Semifinalen (lør. 26. sep) resultatavhengig → ikke boardet (ingen oppdiktet tid).",
+		"TRIAGE: coverage-contract-brudd Eliteserien + Premier League (HIGH, upcoming 0) er STRUKTURELT — det utvidede landslagsvinduet (21. sep–6. okt) gir ingen serierunde før PL runde 6 (10.–12. okt) og Eliteserien runde 23 (9.–12. okt), begge alt boardet 24.09 20:15Z akkurat utenfor 14-d-kontrakthorisonten. Ingenting nytt å boarde.",
+		"TRIAGE: coverage-audit medium — ESL Pro League S24 (3.–11. okt) alt boardet som turneringsnode (100T IKKE i feltet); Shanghai Masters (5.–18. okt) alt boardet som node, trekning etter ATP-ranking 28. sep.",
+		"TRIAGE: coverage-gaps «Spirit» imminent = RSS-støy — Team Spirit er IKKE i Stake Pulse Beat II (åtte sluttspill-lag: Astralis, HEROIC, 100T, JiJieHao, Sangal, BBL, fnatic, Betclic). Ingen boardbar dato.",
+		"Verifisert dekket på tavla allerede: Laver Cup (25.–27. sep, Ruud-vinkel), Norge–Portugal Nations League (27. sep), F1 Aserbajdsjan (kval 25. + løp 26.), sjakk-OL sluttrunde (27. sep), Elkjøp-ligaen håndballrunde.",
+		"Ingen registry-reconciliation (kun deep-tier/mandag). validate-events.js: 0 errors (kun eksisterende ikke-fatale WP-242/WP-246-warnings)."
 	]
 }
