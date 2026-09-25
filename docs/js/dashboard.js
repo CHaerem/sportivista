@@ -707,7 +707,14 @@ class Dashboard {
 	 *  participant, then a named participant. The AWAY team is tried too: on a
 	 *  board built for a Norwegian fan the away side is often the one they came
 	 *  for ("Universitatea Cluj – Brann"). Returns null when nothing resolves; the
-	 *  caller then falls back to the sport glyph. */
+	 *  caller then falls back to the sport glyph.
+	 *
+	 *  The generic `participants` rung fires ONLY for a solo entry or a head-to-head
+	 *  (one or two named sides): a FIELD of competitors (a 22-driver F1 grid, a
+	 *  golf/CS2 field of four) is a tournament, not a matchup, and must not borrow the
+	 *  first competitor's flag — that flew a GB flag on the Azerbaijan Grand Prix off
+	 *  George Russell, when the honest sport glyph (the same checkered flag its own
+	 *  qualifying row shows) is the truth. */
 	rowEntity(e) {
 		if (!e) return null;
 		const { byName, byId } = this.identityIndex();
@@ -719,13 +726,16 @@ class Dashboard {
 		const ok = (ent, name) => (ent && (typeof ssEntityMatchesName !== 'function' || ssEntityMatchesName(ent, name)) ? ent : null);
 		const byStamp = (id, name) => (id ? ok(byId.get(id) || null, name) : null);
 		const look = (name) => (name ? ok(byName.get(ssNormalize(name).trim()) || null, name) : null);
+		// A field of 3+ competitors is a tournament, not a matchup — its participants
+		// must not lend one competitor's flag to the row.
+		const isField = (Array.isArray(e.participants) ? e.participants.length : 0) > 2;
 		return byStamp(e.homeTeamEntityId, e.homeTeam)
 			|| byStamp(e.awayTeamEntityId, e.awayTeam)
 			|| look(e.homeTeam)
 			|| look(e.awayTeam)
 			|| ((e.norwegianPlayers || []).map((p) => p && p.entityId && byId.get(p.entityId)).find(Boolean) || null)
 			|| ((e.norwegianPlayers || []).map((p) => look(p && (p.name || p))).find(Boolean) || null)
-			|| ((e.participants || []).map((p) => look(p && (p.name || p))).find(Boolean) || null);
+			|| (isField ? null : ((e.participants || []).map((p) => look(p && (p.name || p))).find(Boolean) || null));
 	}
 
 	/** WP-185 — the row's leading identity cell: the entity's flag/monogram when we
