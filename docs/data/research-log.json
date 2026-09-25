@@ -1,22 +1,23 @@
 {
-	"runAt": "2026-09-25T05:10:00Z",
+	"runAt": "2026-09-25T10:20:00Z",
 	"eventsAdded": 1,
 	"eventsRemoved": 0,
-	"trackedDelta": "Oppdaterte 2 tracked-entries (stake-pulse-beat-ii-2026 + havard-rain-nygaard): 100 Thieves' Stake Pulse Beat II-KVARTFINALE mot BBL Esports (Bo3) BOARDET som ai-research (high) — fre. 25. sep 13.00 CEST (11.00 UTC), BME Studio Stockholm. Eksakt slot nå tre-kilde-bekreftet (Robinhood prediction market 7 AM EDT = 11.00 UTC + et «13:00 CEST»-oppsett + HLTV match 2398069/Flashscore for kamp+dato); QF-ene starter 09.00 CEST staggert, 100T–BBL i andre par. Håvard «rain» Nygaard navngitt. Lukker den imminente tracked-claim-gapen. La til Robinhood-URL i evidence. Ingen entries lagt til/fjernet. lastUpdated 23:15Z→05:10Z.",
+	"trackedDelta": "Oppdaterte 1 tracked-entry (dp-world-tour-2026-autumn): høstsvingens FEMTE turnering ALFRED DUNHILL LINKS CHAMPIONSHIP (1.–4. okt, Old Course St Andrews / Carnoustie / Kingsbarns — DP World Tours 25-årsjubileum) lagt til, +2 evidence-URLer (europeantour.com + alfreddunhilllinks.com), expires forlenget 28. sep → 4. okt. Ingen entries lagt til/fjernet. lastUpdated 05:10Z→10:20Z.",
 	"quality": {
 		"pass": true,
-		"score": 96,
-		"failures": [
-			"Minor: provenance.time basis er \"secondary\" (HLTV) fordi Liquipedia/HLTV var 403-blokkert for direkte fetch; tre kilder konvergerte på 11.00 UTC så akseptabelt, men ingen primærkilde-tidsbekreftelse var oppnåelig denne kjøringen — verify bør re-sjekke når braketten fester tidsstempel."
-		]
+		"score": 97,
+		"failures": []
 	},
 	"notes": [
-		"Standard-tier 4-timers kjøring. ÉN ny event (imminent CS2), ellers triage av eksisterende signaler.",
-		"PRIMÆRLEVERANSE: 100 Thieves' Stake Pulse Beat II-kvartfinale mot BBL Esports (Bo3) boardet — fre. 25. sep 13.00 CEST (11.00 UTC). Eksakt slot tre-kilde-bekreftet (Robinhood 7 AM EDT = 11.00 UTC + «13:00 CEST»-oppsett + HLTV 2398069/Flashscore for kamp+dato). QF-ene staggeres fra 09.00 CEST; 100T–BBL i andre par. Håvard «rain» Nygaard (IGL) navngitt, gratis på kick.com/stake_pulse. Semifinalen (lør. 26. sep) resultatavhengig → ikke boardet (ingen oppdiktet tid).",
-		"TRIAGE: coverage-contract-brudd Eliteserien + Premier League (HIGH, upcoming 0) er STRUKTURELT — det utvidede landslagsvinduet (21. sep–6. okt) gir ingen serierunde før PL runde 6 (10.–12. okt) og Eliteserien runde 23 (9.–12. okt), begge alt boardet 24.09 20:15Z akkurat utenfor 14-d-kontrakthorisonten. Ingenting nytt å boarde.",
-		"TRIAGE: coverage-audit medium — ESL Pro League S24 (3.–11. okt) alt boardet som turneringsnode (100T IKKE i feltet); Shanghai Masters (5.–18. okt) alt boardet som node, trekning etter ATP-ranking 28. sep.",
-		"TRIAGE: coverage-gaps «Spirit» imminent = RSS-støy — Team Spirit er IKKE i Stake Pulse Beat II (åtte sluttspill-lag: Astralis, HEROIC, 100T, JiJieHao, Sangal, BBL, fnatic, Betclic). Ingen boardbar dato.",
-		"Verifisert dekket på tavla allerede: Laver Cup (25.–27. sep, Ruud-vinkel), Norge–Portugal Nations League (27. sep), F1 Aserbajdsjan (kval 25. + løp 26.), sjakk-OL sluttrunde (27. sep), Elkjøp-ligaen håndballrunde.",
-		"Ingen registry-reconciliation (kun deep-tier/mandag). validate-events.js: 0 errors (kun eksisterende ikke-fatale WP-242/WP-246-warnings)."
+		"Standard-tier 4-timers kjøring. ÉN ny event boardet, ellers triage av eksisterende signaler.",
+		"PRIMÆRLEVERANSE: Alfred Dunhill Links Championship (golf, DP World Tour, 1.–4. okt, Old Course St Andrews / Carnoustie / Kingsbarns) boardet som fler-dagers ai-research-node (HIGH, id 2757f6786b41). Tetter coverage-audits (09:15Z) ENESTE medium horisont-hull: golf-tavla gikk TOM etter 27. sep (Presidents Cup + FedEx Open de France ferdig) fordi ESPN-golf-fetcheren mangler look-ahead. Datoer/25-årsjubileum/venue TRE-KILDE-bekreftet (europeantour.com + offisiell alfreddunhilllinks.com + Wikipedia 2026 European Tour) + uavhengig fresh-context write-time fact-check (CONFIRMED på dato/jubileum/venue/Viaplay). HIGH: 2+ autoritative kilder, provenance.time.basis=official (european-tour, calibration 10/10 reliability 1.0). Viaplay (V Sport Golf).",
+		"BEVISST IKKE navngitt norsk startliste: DP World Tours entry-list-side for Dunhill Links er tom (feltet ikke publisert), så Hovland/Reitan/Ventura ble IKKE navngitt — en oppdiktet deltakelse er verre enn ingen. Verify navngir dem når feltet slippes.",
+		"TRIAGE: de to HIGH contract-breach-ene (Premier League 0/6 + Eliteserien 0/2, begge imminent) er FALSKE — det UTVIDEDE FIFA-landslagsvinduet (21. sep–6. okt) gir ingen serierunde før PL runde 6 (10.–12. okt, 15 d ut = akkurat utenfor 14-d-kontrakthorisonten) og Eliteserien runde 23 (Viking–Brann 9. okt 17.00 = ~9 t etter 14-d-kuttet). BEGGE resumpsjonsrundene ALLEREDE boardet 24.09 20:15Z — verifisert på tavla i dag: 10 PL MW6-kamper + 8 Eliteserien r23-kamper + OBOS Bryne–Lyn 4. okt. Ingenting nytt å boarde. Samsvarer med coverage-critics egen reasoned audit 09:15Z.",
+		"TRIAGE: entity-gaps (Barcelona/Barça/Arsenal/Premier League/La Liga/Serie A/Bundesliga/Champions League/Nasjonsligaen, alle missing/ikke-imminent) = landslagsvinduets resultat-/talking-points-nyheter (Raphinha-intervju, Infantino-reform, Israel-utvisning), ikke event-hull. «Spirit» imminent = falskt token-treff (Garner/England-artikkel, ikke Team Spirit esports).",
+		"TRIAGE: tracked-claim La Liga(2027)/Serie A(null)/Bundesliga(30. sep)/Warholm(2027)/Carlsen(2027) = korrekt fjern-fremtid / sesongslutt / pause-fravær. ESL Pro League S24 (3.–11. okt) + Shanghai Masters (5.–18. okt) alt boardet som noder.",
+		"Verifisert dekket på tavla allerede (coverage-audit coveredWell): F1 Aserbajdsjan (kval 25./løp lør. 26. — Baku på lørdag pga. sørgedag), UCI Road-VM Montréal (elite kvinner 26./elite menn 27.), Nations League Norge–Portugal 27., håndball Elkjøp-runde 25.–27. (full 14-lags runde), Laver Cup 25.–27. (Ruud), sjakk-OL sluttrunde 27.",
+		"Ingen registry-reconciliation (kun deep-tier/mandag). Ingen katalog-endring. Ingen expiry-drops (ingen utløpte entries).",
+		"STÅENDE self-repair/improve-saker (uendret): golf-fetcheren mangler look-ahead (surfacer kun current uke → tom horisont mellom turneringsuker; sterkt motivert nå av Dunhill-hullet — vurder 2–3 ukers DP World Tour/PGA-kalender ELLER authority.json contract-blokk for golf) + ingen wholesale håndball-fetcher + CS2 esports.js 100T-only-blindsone + manglende contract-blokker for golf/håndball/CS2; + PL/Eliteserien-kontrakt fyrer falskt HIGH gjennom det utvidede FIFA-vinduet (vurder FIFA-vindu-nulling i contract-porten); + F1 4. okt-event «Bahrain GP in Malaysia» venue-korrupsjon (verify, kosmetisk); + spansk lavere-divisjonsfotball lekker inn på tavla 26.–27. sep (build-events isCovered, presisjon).",
+		"validate-events.js: 0 errors, 116 events (kun eksisterende ikke-fatale WP-242/WP-246-warnings). Grader (fresh-context): pass, 97/100, ingen failures."
 	]
 }
