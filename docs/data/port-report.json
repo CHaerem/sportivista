@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T08:25:06.798Z",
+  "generatedAt": "2026-09-25T09:59:30.737Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -21,29 +21,22 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 2,
+    "openGaps": 1,
     "bySeverity": {
       "high": 0,
-      "medium": 2,
+      "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 11,
-    "escalatable": 2,
-    "catalogMatched": 2,
-    "auditedAt": "2026-09-22T09:05:00Z",
+    "oldestGapAgeDays": 0.03,
+    "escalatable": 0,
+    "catalogMatched": 1,
+    "auditedAt": "2026-09-25T09:15:00Z",
     "gaps": [
       {
-        "interest": "CS2 — ESL Pro League Season 24 (3.–11. okt, Katowice/Spodek, $1M)",
+        "interest": "Golf — Alfred Dunhill Links Championship (DP World Tour, 1.–4. okt, St Andrews/Carnoustie/Kingsbarns)",
         "severity": "medium",
-        "ageDays": 11,
-        "recurrences": 6,
-        "catalogMatched": true
-      },
-      {
-        "interest": "Tennis — Shanghai Masters (ATP Masters 1000, ~7.–18. okt)",
-        "severity": "medium",
-        "ageDays": 11,
-        "recurrences": 6,
+        "ageDays": 0.03,
+        "recurrences": 0,
         "catalogMatched": true
       }
     ]
@@ -153,15 +146,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-25T08:25:01.459Z",
+    "buildCheckedAt": "2026-09-25T09:59:24.978Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-25T00:12:15.455Z",
-    "manifestAgeHours": 8.21,
+    "manifestGeneratedAt": "2026-09-25T08:25:08.510Z",
+    "manifestAgeHours": 1.57,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-09-24T10:20:00Z",
-    "verifyAgeHours": 22.09,
+    "verifyAgeHours": 23.66,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -185,6 +178,6 @@
         "horizonDays": 14
       }
     ],
-    "generatedAt": "2026-09-25T08:25:06.798Z"
+    "generatedAt": "2026-09-25T09:59:30.737Z"
   }
 }
