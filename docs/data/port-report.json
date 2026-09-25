@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-25T09:59:30.737Z",
+  "generatedAt": "2026-09-25T15:06:47.226Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
-    "amendRate": "yellow",
+    "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
     "contracts": "red"
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 0.03,
+    "oldestGapAgeDays": 0.24,
     "escalatable": 0,
     "catalogMatched": 1,
     "auditedAt": "2026-09-25T09:15:00Z",
@@ -35,19 +35,19 @@
       {
         "interest": "Golf — Alfred Dunhill Links Championship (DP World Tour, 1.–4. okt, St Andrews/Carnoustie/Kingsbarns)",
         "severity": "medium",
-        "ageDays": 0.03,
+        "ageDays": 0.24,
         "recurrences": 0,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.25,
-    "nearTermChecked": 4,
-    "nearTermAmended": 1,
-    "verifyRunAt": "2026-09-24T10:20:00Z",
+    "nearTermRate": 0,
+    "nearTermChecked": 1,
+    "nearTermAmended": 0,
+    "verifyRunAt": "2026-09-25T10:35:00Z",
     "windowRate": 0,
-    "windowChecks": 83,
+    "windowChecks": 86,
     "windowAmendments": 0,
     "windowCorrections": 8,
     "byDay": [
@@ -141,20 +141,27 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-09-25",
+        "checks": 3,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-25T09:59:24.978Z",
+    "buildCheckedAt": "2026-09-25T15:06:43.126Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-25T08:25:08.510Z",
-    "manifestAgeHours": 1.57,
+    "manifestGeneratedAt": "2026-09-25T09:59:32.508Z",
+    "manifestAgeHours": 5.12,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-09-24T10:20:00Z",
-    "verifyAgeHours": 23.66,
+    "checkedAt": "2026-09-25T10:35:00Z",
+    "verifyAgeHours": 4.53,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -178,6 +185,6 @@
         "horizonDays": 14
       }
     ],
-    "generatedAt": "2026-09-25T09:59:30.737Z"
+    "generatedAt": "2026-09-25T15:06:47.225Z"
   }
 }
