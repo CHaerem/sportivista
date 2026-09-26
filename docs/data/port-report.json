@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-26T09:41:57.344Z",
+  "generatedAt": "2026-09-26T14:04:28.201Z",
   "windowDays": 14,
   "ports": {
     "coverage": "green",
     "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
-    "contracts": "red"
+    "contracts": "yellow"
   },
   "basis": {
     "coverageAudit": true,
@@ -27,7 +27,7 @@
       "medium": 0,
       "low": 1
     },
-    "oldestGapAgeDays": 0.01,
+    "oldestGapAgeDays": 0.19,
     "escalatable": 0,
     "catalogMatched": 1,
     "auditedAt": "2026-09-26T09:30:00Z",
@@ -35,7 +35,7 @@
       {
         "interest": "Fotball — UEFA Champions League ligafase runde 2 (13.–14. okt), inkl. norske Viking–Bayern (13. okt) og Bodø/Glimt–Dortmund (14. okt)",
         "severity": "low",
-        "ageDays": 0.01,
+        "ageDays": 0.19,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -43,11 +43,11 @@
   },
   "amendRate": {
     "nearTermRate": 0,
-    "nearTermChecked": 1,
+    "nearTermChecked": 2,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-09-25T10:35:00Z",
+    "verifyRunAt": "2026-09-26T10:05:00Z",
     "windowRate": 0,
-    "windowChecks": 81,
+    "windowChecks": 85,
     "windowAmendments": 0,
     "windowCorrections": 8,
     "byDay": [
@@ -141,43 +141,46 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-09-26",
+        "checks": 4,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-26T09:41:50.328Z",
+    "buildCheckedAt": "2026-09-26T14:04:24.003Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-26T08:12:17.309Z",
-    "manifestAgeHours": 1.49,
+    "manifestGeneratedAt": "2026-09-26T09:41:59.146Z",
+    "manifestAgeHours": 4.37,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-09-25T10:35:00Z",
-    "verifyAgeHours": 23.12,
-    "corrections": 0,
+    "checkedAt": "2026-09-26T10:05:00Z",
+    "verifyAgeHours": 3.99,
+    "corrections": 2,
     "unresolved": 0,
-    "signals": []
+    "signals": [
+      "Begge golf-eventene er fremtidige (starter 1. okt), ikke in-progress -> ingen norwegianPlayers cut-sjekk nødvendig; participants tomt er ærlig (fullt felt, i…",
+      "Ingen norske spillere navngitt i noe in-progress event (sjakk-OL, sykkel-VM Montréal) -> WP-95 deltakelsessjekk uten kandidater."
+    ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [
       {
-        "id": "football:eliteserien",
-        "name": "Eliteserien",
-        "upcoming": 1,
-        "minUpcoming": 2,
-        "horizonDays": 14
-      },
-      {
         "id": "football:premier-league",
         "name": "Premier League",
-        "upcoming": 0,
+        "upcoming": 5,
         "minUpcoming": 6,
         "horizonDays": 14
       }
     ],
-    "generatedAt": "2026-09-26T09:41:57.344Z"
+    "generatedAt": "2026-09-26T14:04:28.200Z"
   }
 }
