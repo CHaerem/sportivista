@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-26T08:12:13.746Z",
+  "generatedAt": "2026-09-26T09:41:57.344Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "yellow",
+    "coverage": "green",
     "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
@@ -24,18 +24,18 @@
     "openGaps": 1,
     "bySeverity": {
       "high": 0,
-      "medium": 1,
-      "low": 0
+      "medium": 0,
+      "low": 1
     },
-    "oldestGapAgeDays": 0.96,
+    "oldestGapAgeDays": 0.01,
     "escalatable": 0,
     "catalogMatched": 1,
-    "auditedAt": "2026-09-25T09:15:00Z",
+    "auditedAt": "2026-09-26T09:30:00Z",
     "gaps": [
       {
-        "interest": "Golf — Alfred Dunhill Links Championship (DP World Tour, 1.–4. okt, St Andrews/Carnoustie/Kingsbarns)",
-        "severity": "medium",
-        "ageDays": 0.96,
+        "interest": "Fotball — UEFA Champions League ligafase runde 2 (13.–14. okt), inkl. norske Viking–Bayern (13. okt) og Bodø/Glimt–Dortmund (14. okt)",
+        "severity": "low",
+        "ageDays": 0.01,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -47,17 +47,10 @@
     "nearTermAmended": 0,
     "verifyRunAt": "2026-09-25T10:35:00Z",
     "windowRate": 0,
-    "windowChecks": 86,
+    "windowChecks": 81,
     "windowAmendments": 0,
     "windowCorrections": 8,
     "byDay": [
-      {
-        "date": "2026-09-12",
-        "checks": 5,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-09-13",
         "checks": 10,
@@ -153,15 +146,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-26T08:12:06.417Z",
+    "buildCheckedAt": "2026-09-26T09:41:50.328Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-26T00:18:55.500Z",
-    "manifestAgeHours": 7.89,
+    "manifestGeneratedAt": "2026-09-26T08:12:17.309Z",
+    "manifestAgeHours": 1.49,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-09-25T10:35:00Z",
-    "verifyAgeHours": 21.62,
+    "verifyAgeHours": 23.12,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -185,6 +178,6 @@
         "horizonDays": 14
       }
     ],
-    "generatedAt": "2026-09-26T08:12:13.746Z"
+    "generatedAt": "2026-09-26T09:41:57.344Z"
   }
 }
