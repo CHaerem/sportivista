@@ -326,61 +326,6 @@
   {
     "sport": "football",
     "tournament": "Serie A",
-    "title": "Cagliari at Atalanta",
-    "time": "2026-09-12T18:45:00Z",
-    "endTime": null,
-    "venue": "Gewiss Stadium, Bergamo",
-    "norwegian": false,
-    "homeTeam": "Atalanta",
-    "awayTeam": "Cagliari",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://tv.vg.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-07T23:00:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
-      "https://www.sportmediaset.mediaset.it/calcio/seriea/serie-a-cambia-il-calendario-della-4-giornata-anticipata-lazio-milan-cambiano-juve-e-roma_116063139-202602k.shtml",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "lega-serie-a",
-        "url": "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
-        "basis": "secondary",
-        "retrievedAt": "2026-09-09T10:01:59Z",
-        "note": "Serie A runde 4 kickoff bekreftet (calcioefinanza); arrangørens egen terminliste (legaseriea.it) bot-blokkert"
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://www.vg.no/sport/i/P4pQgb/vg-sport-har-kjoept-rettigheter-til-serie-a-i-norge",
-        "basis": "official",
-        "retrievedAt": "2026-09-09T10:01:59Z",
-        "note": "VG+ Sport har eksklusive Serie A-rettigheter i Norge t.o.m. 2026/27 (VGs egen sak)"
-      }
-    },
-    "summary": "Atalanta mot Cagliari i Serie A-runde 4.\n\nAvspark lørdag 12. september kl. 20.45 CEST (18.45 UTC).",
-    "homeTeamEntityId": "atalanta",
-    "awayTeamEntityId": "cagliari",
-    "id": "70857e398860",
-    "verifiedAt": "2026-09-09T10:01:59Z",
-    "verificationStatus": "amended",
-    "verificationSources": [
-      "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
-      "https://www.vg.no/sport/i/P4pQgb/vg-sport-har-kjoept-rettigheter-til-serie-a-i-norge"
-    ]
-  },
-  {
-    "sport": "football",
-    "tournament": "Serie A",
     "title": "Monza at Lecce",
     "time": "2026-09-13T13:00:00Z",
     "endTime": null,
@@ -5238,5 +5183,58 @@
     "isFavorite": false,
     "round": null,
     "id": "69a28a1006d1"
+  },
+  {
+    "sport": "esports",
+    "tournament": "Stake Pulse Beat II",
+    "title": "100 Thieves vs Heroic",
+    "time": "2026-09-26T17:00:00Z",
+    "endTime": "2026-09-26T20:00:00Z",
+    "venue": "BME Studio, Stockholm",
+    "norwegian": false,
+    "norwegianPlayers": [
+      {
+        "name": "Håvard Nygaard"
+      }
+    ],
+    "participants": [
+      {
+        "name": "100 Thieves"
+      },
+      {
+        "name": "Heroic"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "Kick",
+        "url": "https://kick.com/stake_pulse",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-26T19:15:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.hltv.org/matches/2398074/100-thieves-vs-heroic-stake-pulse-beat-ii",
+      "https://www.strafe.com/match/100-thieves-vs-heroic-final-2026-stake-pulse-beat-ii-92ee7d/",
+      "https://esports-news.co.uk/2026/09/24/100-thieves-reach-stake-pulse-beat-ii-playoffs-with-2-0-group-stage",
+      "https://liquipedia.net/counterstrike/Stake_Pulse/Beat_II"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "hltv",
+        "url": "https://www.hltv.org/matches/2398074/100-thieves-vs-heroic-stake-pulse-beat-ii",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-26T19:15:00Z"
+      },
+      "streaming": {
+        "sourceId": "kick",
+        "url": "https://kick.com/stake_pulse",
+        "basis": "official",
+        "retrievedAt": "2026-09-26T19:15:00Z"
+      }
+    },
+    "summary": "Stake Pulse Beat II-FINALEN (best-of-3), BME Studio i Stockholm. 100 Thieves — med Håvard «rain» Nygaard (IGL) — møter Heroic om tittelen lørdag 26. sept kl. 19.00 CEST (17.00 UTC).\n\n100T slo BBL i kvartfinalen og Astralis i semifinalen (begge sluttspillseiere) og er ubeseiret gjennom sluttspillet. Heroic kom seg til finalen via Sangal.\n\nGratis på Stake Pulse sin egen Kick-kanal (stake_pulse) i Norge — ingen norsk TV-rettighet."
   }
 ]
