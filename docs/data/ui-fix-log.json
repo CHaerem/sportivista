@@ -1,14 +1,10 @@
 {
-	"runAt": "2026-09-25T14:34:00Z",
-	"action": "opened-pr",
-	"pr": "https://github.com/CHaerem/sportivista/pull/465",
-	"fixed": [
-		"medium (375/393/900px): 'Qatar Airways Azerbaijan Grand Prix' race-weekend row flew a UK/GB national flag (borrowed off its first participant, George Russell, GB) instead of the neutral motorsport icon its own qualifying row correctly shows"
-	],
+	"runAt": "2026-09-26T00:00:00Z",
+	"action": "none",
+	"pr": null,
+	"fixed": [],
 	"notes": [
-		"Root cause: dashboard.js rowEntity() fell back to any resolvable name in a multi-competitor 'participants' list, so a 22-driver F1 field anchored on the first driver's flag.",
-		"Fix: the participants rung now fires only for a solo entry or a head-to-head (<=2 named sides); a field of 3+ competitors is a tournament and falls through to the honest sport glyph. Mirrors the existing ssParticipantMatchup philosophy (2 = matchup, more = tournament).",
-		"Verified by screenshot at 900px and 375px: the Grand Prix row now shows the checkered-flag sport icon; all other identities (Norwegian flags on Norge–Portugal + FedEx Open de France, Bergen Håndball crest) intact, no new truncation/overflow, layout still calm.",
-		"npm test: 1541 passed (existing entity-avatar single-participant athlete case still resolves through its flag)."
+		"visual-qa-log.json verdict is 'pass' with zero findings — nothing code-fixable to act on.",
+		"No open ui-autofix PR exists; no branch created, no PR opened."
 	]
 }
