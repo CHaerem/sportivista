@@ -1,80 +1,80 @@
 {
-  "auditedAt": "2026-09-25T09:15:00Z",
+  "auditedAt": "2026-09-26T09:30:00Z",
   "horizonDays": 28,
   "gaps": [
     {
-      "interest": "Golf — Alfred Dunhill Links Championship (DP World Tour, 1.–4. okt, St Andrews/Carnoustie/Kingsbarns)",
-      "whatsMissing": "DP World Tours 25-årsjubileums-Dunhill Links (1.–4. okt) mangler på tavla. Golf-tavla er tom etter 27. sep (Presidents Cup + FedEx Open de France slutter da) — ingen golf-event i horisonten før Dunhill, som ikke er boardet.",
-      "why": "Golf er catalog tier1 (wholesale) og DP World Tour står eksplisitt i tier2.tournaments. ESPN-golf-fetcheren (golf.json) surfacer KUN inneværende ukes turnering (nå Presidents Cup + FedEx Open de France) og har INGEN look-ahead — så neste ukes flaggskip-event er usynlig til uka faktisk starter (~28.–29. sep). Nå ~6 d ut, entrer imminent-vinduet om ~2 d. Reitan/Hovland/Andreas Halvorsen spiller FedEx Open de France denne uka → sannsynlig norsk deltakelse (verifiser feltet). Norsk visning: Viaplay (DP World Tour-rettigheter per golf.json).",
+      "interest": "Fotball — UEFA Champions League ligafase runde 2 (13.–14. okt), inkl. norske Viking–Bayern (13. okt) og Bodø/Glimt–Dortmund (14. okt)",
+      "whatsMissing": "Hele CL-ligafase runde 2 (13.–14. okt) mangler på tavla — 0 CL-events boardet. Særlig: Viking–Bayern München (tir. 13. okt) og Bodø/Glimt–Borussia Dortmund (ons. 14. okt) — TO norske klubber i mesterligaen, høy norsk fan-interesse. Også Man City–PSG, Arsenal–Lille, Galatasaray–Barcelona, LASK–Liverpool, Roma–Real Madrid (alle katalog-dekket).",
+      "why": "UEFA Champions League er catalog tier2.tournaments (football). WEB-BEKREFTET mot uefa.com at MW2 er 13.–14. okt 2026 med Viking + Bodø/Glimt i feltet. Nå ~17 d ut → UTENFOR fyll-vinduet (research/verify boarder ~4–5 d fram, så CL MW2 ventes boardet ~8.–10. okt). Derfor LOW: reelt og viktig, men addressed på cadence, ikke en svikt ennå. VOKT: bump til medium/high hvis fortsatt uboardet <5 d ut (fra ~8.–9. okt) — to norske CL-kamper er akkurat det en norsk fan ville vært irritert over å gå glipp av. Norsk visning: TV 2 Play / Max (CL-rettigheter).",
       "corroboration": [
-        "https://www.europeantour.com/dpworld-tour/alfred-dunhill-links-championship-2026/",
-        "https://www.nationalclubgolfer.com/tour/dp-world-tour/dp-world-tour-schedule-2026/"
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+        "https://www.skysports.com/football/news/13578265/champions-league-2026-27-fixtures-dates-schedule-format-and-who-has-qualified-from-premier-league-and-around-europe"
       ],
-      "suggestedSource": "https://www.europeantour.com/dpworld-tour/alfred-dunhill-links-championship-2026/",
-      "severity": "medium",
-      "firstSeen": "2026-09-25T09:15:00Z",
+      "suggestedSource": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+      "severity": "low",
+      "firstSeen": "2026-09-26T09:30:00Z",
       "recurrences": 0,
       "severityBumpedFor": null,
-      "note": "NYTT horisont-gap. IKKE imminent (~6 d ut), addressed på cadence — fetcheren bør surface det når FedEx Open de France/Presidents Cup avsluttes (27. sep) og neste ukes DP-event blir 'current' (~28.–29. sep). Confidently real (europeantour.com), catalog-dekket. VOKT: bump til high hvis fortsatt uboardet <3 d ut (fra ~29.–30. sep) — da svikter fetcheren og research må fylle. Se sourceIssue om golf-fetcherens manglende look-ahead."
+      "note": "Var horisont-vakt i går (25.09, kun i notes), formaliseres nå som LOW gap. Addressed på cadence når fyll-vinduet når 13.–14. okt (~8.–10. okt). Bump ved <5 d uboardet."
     }
   ],
   "sourceIssues": [
     {
-      "source": "ESPN-golf-fetcher (golf.json) — ingen look-ahead (STRUKTURELT, ny observasjon)",
-      "issue": "golf.json inneholder kun INNEVÆRENDE ukes turnering(er) (i dag Presidents Cup + FedEx Open de France, begge slutter 27. sep). Fetcheren har ingen fremtidsdekning, så golf-tavla går TOM mellom turneringsuker og enhver golf-event >~1 uke ut er usynlig til uka starter. I dag gir det Dunhill Links-gapet (1.–4. okt, medium over). Golf er tier1 wholesale men har effektivt null horisont-dekning — recall hviler på at fetcheren treffer riktig uke hver gang.",
-      "impact": "Argument (medium) for at golf-fetcheren henter neste 2–3 ukers DP World Tour + PGA Tour-kalender (ikke bare current), ELLER en authority.json contract-blokk for DP World Tour/PGA Tour så en tom golf-horisont fanges mekanisk. Self-repair/improve-sak. calibration.json europeantour.com 10/10 (reliability 1), pgatour.com 5/5 (reliability 1) — kildene finnes og er pålitelige.",
-      "severity": "medium"
-    },
-    {
-      "source": "Statisk pipeline — ingen wholesale håndball-fetcher (STRUKTURELT, uendret)",
-      "issue": "Håndball er catalog-tier1 (wholesale) men har ingen statisk fetcher — hele Elkjøp-ligaen håndboardes runde-for-runde av research. I dag ER hele runden 25.–27. sep boardet (7 kamper = full 14-lags runde, se coveredWell). Uten en fetcher ELLER en authority.json contract-blokk er dekningen strukturelt sårbar for at én research-runde ikke re-boarder hele runden, og et delvis hull fanges IKKE mekanisk (håndball har ingen egen fil å anomali-flagge i coverage-gaps.json).",
-      "impact": "Argument (HIGH) for en handball.no-fetcher (Elkjøp-ligaen menn + kvinner) for varig wholesale-dekning, ELLER en authority.json contract-blokk for Elkjøp-ligaen så en tom/regressert runde fanges mekanisk. calibration.json handball.no 6/6 (reliability 1), play.tv2.no 8/8 (reliability 1) — kilden finnes og er pålitelig. Self-repair/improve-sak.",
-      "severity": "high"
-    },
-    {
-      "source": "Liquipedia CS2-fetcher (esports.js) — 100T-only-filter (STRUKTURELT, uendret)",
-      "issue": "Fetcheren beholder KUN fokuslaget 100 Thieves' kamper; docs/data/esports.json er tomt for alt annet. ALL øvrig CS2-dekning hviler på manuell research-boarding. I dag ER ESL Pro League Season 24 (3.–11. okt) boardet av research (gårsdagens/forrige recurring medium-gap LØST) — men det bekrefter avhengigheten av research, ikke en varig fix.",
-      "impact": "Argument (HIGH) for at esports-fetcheren beholder ALLE katalog-tier2-orgers kamper (ikke bare 100T), ELLER en authority.json contract-blokk for CS2 tier-1-turneringer (ESL Pro League/BLAST/IEM) så et brudd/hale fanges mekanisk. Self-repair/improve-sak.",
-      "severity": "high"
-    },
-    {
-      "source": "Dekningskontrakter football (PL/Eliteserien) — falskt HIGH-brudd i UTVIDET landslagsvindu (uendret, web-bekreftet årsak)",
-      "issue": "coverage-contracts.json fyrer high-severity contract-breach for Premier League (0/6) OG Eliteserien (0/2) innen 14 d. IKKE ekte recall-hull: sept+okt-landslagsvinduene 2026/27 er SLÅTT SAMMEN til ett 16-dagers vindu (21. sep–6. okt, WEB-BEKREFTET premierleague.com), så PL gjenopptar først matchweek 6 den 10. okt (15 d ut → akkurat UTENFOR 14-d-vinduet). Eliteserien-runden er boardet 9.–12. okt (Viking–Brann 9. okt 17:00 ligger ~9 t etter 14-d-kuttet → teller ikke mekanisk). Begge ligaer KORREKT pauset; resumpsjonsrundene ER på tavla.",
-      "impact": "Ikke gjør noe med tavla (korrekt pause). Notat til improve/self-repair: det UTVIDEDE (16-dagers) landslagsvinduet gjør PL/Eliteserien-kontraktenes falske HIGH lengre enn en normal pause — vurder om contract-porten bør nulle brudd når et FIFA-vindu detekteres. Lav prioritet — sesongærlig, selv-lukker når ligaene gjenopptas ~9.–10. okt.",
+      "source": "Dekningskontrakter football (PL 0/6 + Eliteserien 1/2) — falskt HIGH-brudd i UTVIDET landslagsvindu (2. påfølgende kjøring, web-bekreftet årsak)",
+      "issue": "coverage-contracts.json fyrer high-severity contract-breach for Premier League (0/6) OG Eliteserien (1/2) innen 14 d — IGJEN (samme som 25.09). IKKE ekte recall-hull: sept+okt-landslagsvinduene 2026/27 er slått sammen til ett 16-dagers vindu (21. sep–6. okt, web-bekreftet premierleague.com i går). PL matchweek 6 gjenopptas 10. okt (nå 14 d ut → PL MW6 Leeds–Arsenal 10. okt 11:30 ligger ~3 t etter 14-d-kuttet 10. okt 08:12 → teller ikke mekanisk). Eliteserien: Viking–Brann 9. okt 17:00 ER innenfor 14 d (=1/2), resten av runden (10.–12. okt) ~like etter kuttet. BEGGE ligaers resumpsjonsrunder ER fullstendig boardet (verifisert i events.json: PL MW6 + Eliteserien-runde 9.–12. okt komplett). Ligaene KORREKT pauset.",
+      "impact": "Ikke gjør noe med tavla (korrekt pause, resumpsjon boardet). Notat til improve/self-repair, nå 2. kjøring på rad: det utvidede (16-dagers) landslagsvinduet gjør PL/Eliteserien-kontraktenes falske HIGH lengre enn en normal pause. Vurder om contract-porten bør NULLE brudd når et FIFA-landslagsvindu detekteres (vinduet er kjent på forhånd). Selv-lukker når ligaene gjenopptas 9.–10. okt (~4 d).",
       "severity": "low"
     },
     {
-      "source": "ESPN-football-fetcher — admitterer spansk lavere-divisjonsfotball (PRESISJON, ny observasjon)",
-      "issue": "Tavla har ~10 spanske regional-/lavere-divisjonskamper 26.–27. sep (CD Tedeón–Anaitasuna, CD Baztán–Atlético Calatayud, Ceuta 6 de Junio–UB Lebrijana, AE Prat–CF San Rafael o.l.) uten kanal. catalog.neverCover: 'Lower-division football outside the covered leagues'. Dette er et PRESISJONS-lekkasje (falske positive), ikke et recall-hull — men det forsøpler tavla i landslagsvinduet.",
-      "impact": "Notat til self-repair: build-events.js isCovered / football-fetcheren slipper gjennom spansk Tercera/regional-nivå. Bør filtreres til dekkede ligaer. Presisjon, ikke recall — lav prioritet men synlig på en ellers rolig tavle.",
+      "source": "Statisk pipeline — ingen wholesale håndball-fetcher (STRUKTURELT, uendret)",
+      "issue": "Håndball er catalog-tier1 (wholesale) men har ingen statisk fetcher — hele Elkjøp-ligaen håndboardes runde-for-runde av research. I dag ER runden 26.–27. sep boardet (Kolstad–Follo HK, Kristiansand TH–Sandnes, Nærbø–Fjellhammer, Runar–Viking TIF, Drammen–ØIF Arendal, Bergen–Sandefjord). Uten en fetcher ELLER en authority.json contract-blokk er dekningen strukturelt sårbar for at én research-runde ikke re-boarder hele runden, og et delvis hull fanges IKKE mekanisk (håndball har ingen egen fil å anomali-flagge i coverage-gaps.json).",
+      "impact": "Argument (HIGH) for en handball.no-fetcher (Elkjøp-ligaen menn + kvinner) for varig wholesale-dekning, ELLER en authority.json contract-blokk for Elkjøp-ligaen så en tom/regressert runde fanges mekanisk. calibration.json handball.no + play.tv2.no pålitelige. Self-repair/improve-sak.",
+      "severity": "high"
+    },
+    {
+      "source": "ESPN-golf-fetcher (golf.json) — ingen look-ahead (STRUKTURELT, uendret)",
+      "issue": "golf.json inneholder kun INNEVÆRENDE ukes turnering(er). Fetcheren har ingen fremtidsdekning, så golf-tavla går tom mellom turneringsuker og enhver golf-event >~1 uke ut er usynlig til uka starter. I dag var dette IKKE et problem: Alfred Dunhill Links (DP World Tour, 1.–4. okt) OG Bank of Utah Championship (PGA Tour Fall, 1. okt) er NÅ boardet av research (gårsdagens medium golf-gap LØST) — men det bekrefter avhengigheten av research, ikke en varig fix.",
+      "impact": "Argument (medium) for at golf-fetcheren henter neste 2–3 ukers DP World Tour + PGA Tour-kalender (ikke bare current), ELLER en authority.json contract-blokk. calibration.json europeantour.com + pgatour.com pålitelige (reliability 1). Self-repair/improve-sak.",
+      "severity": "medium"
+    },
+    {
+      "source": "Liquipedia CS2-fetcher (esports.js) — 100T-only-filter (STRUKTURELT, uendret)",
+      "issue": "Fetcheren beholder KUN fokuslaget 100 Thieves' kamper; docs/data/esports.json er tomt for alt annet. ALL øvrig CS2-dekning hviler på manuell research-boarding. I dag ER ESL Pro League Season 24 (3. okt) boardet av research, og Astralis vs 100T (26. sep, fokuslag) på tavla — men det bekrefter avhengigheten av research.",
+      "impact": "Argument (HIGH) for at esports-fetcheren beholder ALLE katalog-tier2-orgers kamper (ikke bare 100T), ELLER en authority.json contract-blokk for CS2 tier-1-turneringer (ESL Pro League/BLAST/IEM). Self-repair/improve-sak.",
+      "severity": "high"
+    },
+    {
+      "source": "ESPN-football-fetcher — admitterer spansk Copa del Rey lavere-runder (PRESISJON, uendret)",
+      "issue": "Tavla har ~10 spanske Copa del Rey-kamper i tidlige runder 26.–27. sep (CD Tedeón–Anaitasuna, CD Baztán–Atlético Calatayud, Ceuta 6 de Junio–UB Lebrijana, AE Prat–CF San Rafael o.l.) uten kanal, med regional-/lavere-divisjonsklubber. Copa del Rey er IKKE i catalog tier2.tournaments (kun NM Cupen for Norge). Dette er en PRESISJONS-lekkasje (falske positive), ikke et recall-hull — men det forsøpler tavla i landslagsvinduet.",
+      "impact": "Notat til self-repair: build-events.js isCovered / football-fetcheren slipper gjennom spansk Copa del Rey preliminære runder med regionale klubber. Bør filtreres (enten hele Copa del Rey ut, eller kun senere runder med La Liga/Segunda-klubber). Presisjon, ikke recall — lav prioritet men synlig på en ellers rolig tavle.",
       "severity": "low"
     },
     {
       "source": "F1-event 4. okt — «Gulf Air Bahrain Grand Prix in Malaysia» (venue-korrupsjon, uendret)",
-      "issue": "Static F1-event 4. okt bærer FORTSATT «...in Malaysia» i tittelen. Løpet ER korrekt datert (Bahrain GP 2.–4. okt, løp søn. 4. okt) og på tavla — dette er IKKE et recall-hull, kun en kosmetisk tittelfeil som stammer fra F1/ESPN-feeden.",
+      "issue": "Static F1-event 4. okt bærer FORTSATT «...in Malaysia» i tittelen. Løpet ER på tavla og datert — dette er IKKE et recall-hull, kun en kosmetisk tittelfeil fra F1/ESPN-feeden.",
       "impact": "Verify bør rydde event-tittelen til «Bahrain Grand Prix» (kosmetisk; datoen skal IKKE endres). Nærmer seg terskelen for en source-quirks-oppføring (F1-feed venue-forveksling).",
       "severity": "low"
     }
   ],
   "coveredWell": [
-    "F1 — ESPN-BLINDSONE (source-quirks-mandat, WEB-SJEKKET I DAG mot RacingNews365/Crash/Mercedes-F1): Aserbajdsjan GP er LØRDAG 26. sep 15:00 lokal (=11:00 UTC), flyttet fra søndag pga. Aserbajdsjans minnedag 27. sep (første Baku-løp på en lørdag). Tavla har korrekt kval 25. sep 12:00 UTC + løp 26. sep 11:00 UTC. NESTE løp (Bahrain 2.–4. okt) + Singapore (9.–11. okt m/sprint) også på tavla. Ingen F1 mistet. Viaplay.",
-    "SYKKEL — UCI Road-VM Montréal (WEB-SJEKKET I DAG mot UCI/domestiquecycling): elite kvinner fellesstart 26. sep + elite menn fellesstart 27. sep begge på tavla (VM 20.–27. sep, TT/mixed relay allerede spilt). Il Lombardia (10. okt) boardet.",
-    "FOTBALL IMMINENT (UTVIDET landslagsvindu 21. sep–6. okt, WEB-/RSS-BEKREFTET): Norge–Portugal 27. sep på tavla; RSS bekrefter landslagskampene (Haaland v Danmark 24., Portugal v Wales, England v Spania). Domestiske ligaer (PL/La Liga/Serie A/Bundesliga/Eliteserien) KORREKT pauset til ~9.–10. okt.",
-    "FOTBALL RESUMPSJON: PL matchweek 6 (10.–12. okt, WEB-BEKREFTET premierleague.com) FULLSTENDIG boardet (Leeds–Arsenal, Man City–Liverpool, Spurs–Man United m.fl.). Eliteserien-runde 9.–12. okt boardet (Viking–Brann, Kristiansund–Bodø/Glimt, Sandefjord–Rosenborg, Molde–Lillestrøm, Vålerenga–KFUM). OBOS-ligaen-runde òg boardet.",
-    "ESPORTS — ESL Pro League Season 24 (3.–11. okt) NÅ BOARDET (forrige recurring medium-gap, recurrences 6, LØST av research). 100 Thieves–BBL (25. sep) boardet (fokuslag).",
-    "TENNIS — Shanghai Masters (7. okt) NÅ BOARDET (forrige recurring medium-gap, recurrences 6, LØST). Laver Cup London 25.–27. sep på tavla.",
-    "SJAKK: 46. sjakk-OL (Samarkand) sluttrunde/runde 11 27. sep boardet. Streaming gratis (chess.com/FIDE YouTube).",
-    "HÅNDBALL: Elkjøp-ligaen serierunde 25.–27. sep fullstendig boardet (7 kamper = hele 14-lags runden). play.tv2.no. Strukturen fortsatt sårbar (ingen fetcher/contract-blokk) → HIGH sourceIssue.",
-    "GOLF IMMINENT: Presidents Cup (24.–27., USA–Internasjonal) + FedEx Open de France (24.–27., DP World Tour, Reitan/Hovland/Halvorsen) på tavla. (MEN golf-horisonten tom etter 27. sep → Dunhill Links-gap, se gaps.)"
+    "F1 — ESPN-BLINDSONE REN (source-quirks-mandat, WEB-SJEKKET I DAG mot Yahoo/RacingNews365/Mercedes-F1): Aserbajdsjan GP er LØRDAG 26. sep (=11:00 UTC / 07:00 ET), flyttet fra søndag pga. Aserbajdsjans minnedag 27. sep, og UTEN sprint (bekreftet: bare tre trening + kval + løp). Tavla har korrekt løp 26. sep 11:00 UTC. NESTE løp (Bahrain 2.–4. okt) + Singapore (9.–11. okt) også på tavla. Ingen F1 mistet. Viaplay.",
+    "SYKKEL — UCI Road-VM Montréal: elite kvinner fellesstart 26. sep + elite menn fellesstart 27. sep begge på tavla (VM 20.–27. sep, TT/mixed relay allerede spilt). Il Lombardia (10. okt) boardet.",
+    "FOTBALL IMMINENT (UTVIDET landslagsvindu 21. sep–6. okt): Norge–Portugal 27. sep på tavla; RSS bekrefter landslagskampene (Ronaldo i Norge, England v Spania). Domestiske ligaer (PL/La Liga/Serie A/Bundesliga/Eliteserien) KORREKT pauset til ~9.–10. okt.",
+    "FOTBALL RESUMPSJON: PL matchweek 6 (10.–12. okt) FULLSTENDIG boardet (Leeds–Arsenal, Man City–Liverpool, Spurs–Man United, Forest–Palace m.fl.). Eliteserien-runde 9.–12. okt komplett boardet (Viking–Brann, Kristiansund–Bodø/Glimt, Sandefjord–Rosenborg, Molde–Lillestrøm, Vålerenga–KFUM, HamKam–Start, Sarpsborg–Aalesund). OBOS-ligaen (Bryne–Lyn 4. okt, Tromsø–Fredrikstad) boardet.",
+    "GOLF — GÅRSDAGENS GAP LØST: Presidents Cup + FedEx Open de France (24.–27. sep, Reitan/Hovland/Halvorsen) på tavla; OG Alfred Dunhill Links (DP World Tour, 1.–4. okt, St Andrews) + Bank of Utah Championship (PGA Tour Fall, 1. okt) NÅ boardet (forrige audits medium golf-gap LØST av research).",
+    "ESPORTS — Astralis vs 100T (26. sep, fokuslag) boardet; ESL Pro League Season 24 (3. okt) boardet.",
+    "TENNIS — Laver Cup London (25.–27. sep) på tavla; Shanghai Masters (7. okt) boardet.",
+    "SJAKK — 46. sjakk-OL (Samarkand) sluttrunde/runde 11 27. sep boardet. Streaming gratis (chess.com/FIDE YouTube).",
+    "HÅNDBALL — Elkjøp-ligaen serierunde 26.–27. sep boardet (6 kamper). play.tv2.no. Strukturen fortsatt sårbar (ingen fetcher/contract-blokk) → HIGH sourceIssue."
   ],
   "escalated": false,
   "notes": [
-    "Kjøring 2026-09-25 ~09:15Z (recall-audit, fredag). INGEN high-severity imminent recall-gap i dag. Ett medium horisont-gap (golf Dunhill Links 1.–4. okt). Ikke eskalert (ingen HIGH-gap).",
-    "IMMINENT-PASS først (source-quirks-mandat). F1 ESPN-blindsone REN: web-verifisert i dag at Aserbajdsjan GP er LØRDAG 26. sep 15:00 lokal + at Bahrain (2.–4. okt) og Singapore (9.–11. okt) alt er på tavla. Ingen F1 mistet. Sykkel-VM Montréal elite-løp (26.–27. sep) web-verifisert og boardet.",
-    "FOTBALL: web-bekreftet (premierleague.com) at sept+okt-landslagsvinduene 2026/27 er SLÅTT SAMMEN til ett 16-dagers vindu (21. sep–6. okt). PL matchweek 6 gjenopptas 10. okt (IKKE 3.–4. okt) → tavlas hopp fra landslagsvindu rett til 10.–12. okt er KORREKT, ikke et hull. PL/Eliteserien contract-breach i coverage-gaps.json er FALSKE (utvidet pause; PL 15 d ut = utenfor 14-d-vinduet, Eliteserien Viking–Brann 9. okt ~9 t etter kuttet). Se sourceIssues.",
-    "GOLF: ESPN-golf-fetcheren surfacer kun inneværende ukes turnering og har ingen look-ahead → golf-tavla tom etter 27. sep. Alfred Dunhill Links (DP World Tour, 1.–4. okt, St Andrews, WEB-BEKREFTET europeantour.com) er et ekte horisont-gap (medium, ~6 d ut, addressed på cadence når fetcheren treffer neste uke ~28.–29. sep). VOKT: bump til high hvis uboardet <3 d ut.",
-    "MEKANISKE coverage-gaps.json-signaler TRIAGERT (gapCount 16, anomalyCount 0): (a) 2 contract-breach (PL 0/6 + Eliteserien 0/2, begge 'high') → BEGGE FALSKE (utvidet landslagspause, web-bekreftet). (b) entity Barcelona/Barça/Arsenal/Premier League/La Liga/Champions League/Nasjonsligaen/'Spirit' (missing, ikke imminent) → resultat-/talking-points-nyheter fra landslagsvinduet, ikke kommende-event-hull ('Spirit' er en falsk entitetstreff mot en England-fotball-overskrift). (c) tracked-claim La Liga (2027-dato), Serie A (null), Bundesliga (30. sep), Warholm (2027), Carlsen (2027) → korrekt fravær (fjern-fremtid / utvidet landslagspause / sesongslutt).",
-    "FORRIGE AUDITS TO HORISONT-GAP LØST: ESL Pro League S24 (nå boardet 3. okt) + Shanghai Masters (nå boardet 7. okt) — begge droppet fra gaps, se coveredWell. Nytt eneste gap er golf Dunhill Links.",
-    "HORISONT-VAKT (utenfor fyll-vindu, ikke gaps ennå): La Liga/Serie A/Bundesliga-resumpsjon ~10.–11. okt (ESPN-fetcher/research fyller ~4.–5. okt), CL matchweek 2 (13.–14. okt, bl.a. Viking–Bayern), PGA Tour FedExCup Fall neste uke (Sanderson Farms utgått etter 2025 — verifiser hvilket event fyller uka 1.–4. okt). Vinteridrett/beachvolley/friidrett off-season eller sesongslutt — korrekt tomt."
+    "Kjøring 2026-09-26 ~09:30Z (recall-audit, lørdag). INGEN high-severity imminent recall-gap i dag. Ett LOW horisont-gap (CL ligafase MW2 13.–14. okt, ~17 d ut, inkl. norske Viking + Bodø/Glimt). Ikke eskalert (ingen HIGH-gap).",
+    "IMMINENT-PASS først (source-quirks-mandat). F1 ESPN-blindsone REN: web-verifisert i dag (Yahoo Sports/RacingNews365/Mercedes) at Aserbajdsjan GP er LØRDAG 26. sep 11:00 UTC + UTEN sprint, og at Bahrain (2.–4. okt) og Singapore (9.–11. okt) alt er på tavla. Ingen F1 mistet. Sykkel-VM Montréal elite-løp (26.–27. sep) boardet.",
+    "FOTBALL: PL matchweek 6 (10.–12. okt) og Eliteserien-runde (9.–12. okt) verifisert komplett i events.json. PL/Eliteserien contract-breach i coverage-gaps.json er FALSKE (utvidet 16-d landslagspause 21. sep–6. okt, web-bekreftet i går; PL MW6 10. okt 11:30 ~3 t etter 14-d-kuttet, Eliteserien Viking–Brann 9. okt innenfor = 1/2). Se sourceIssues — 2. kjøring på rad, forslag om at contract-porten nuller brudd i detektert FIFA-vindu.",
+    "GÅRSDAGENS ENESTE GAP LØST: golf Alfred Dunhill Links (nå boardet 1. okt, high) + Bank of Utah Championship (PGA Fall, 1. okt) — droppet fra gaps, se coveredWell. Golf-fetcherens manglende look-ahead består som strukturell sourceIssue (medium).",
+    "NYTT LOW horisont-gap: CL ligafase runde 2 (13.–14. okt) mangler helt på tavla (0 CL-events). WEB-BEKREFTET mot uefa.com — inkluderer Viking–Bayern + Bodø/Glimt–Dortmund (to norske klubber). ~17 d ut = utenfor fyll-vinduet, boardes på cadence ~8.–10. okt. VOKT: bump til medium/high hvis uboardet <5 d ut.",
+    "MEKANISKE coverage-gaps.json-signaler TRIAGERT (gapCount 14, anomalyCount 0): (a) 2 contract-breach (PL 0/6 + Eliteserien 1/2, 'high') → BEGGE FALSKE (utvidet landslagspause, resumpsjon boardet). (b) entity Barcelona/Man City/Arsenal/Liverpool/Premier League/Nasjonsligaen/Formel 1 (missing) → landslagsvindu-resultater + Man City FFP-dom + Baku-kval talking-points, ikke kommende-event-hull. (c) tracked-claim La Liga (2027-dato), Serie A (null), Bundesliga (30. sep), Warholm (2027), Carlsen (2027) → korrekt fravær (fjern-fremtid / utvidet landslagspause / sesongslutt).",
+    "HORISONT-VAKT (utenfor fyll-vindu, ikke gaps ennå): Europa/Conference League MW2 (~22.–23. okt, ingen bekreftet tracked norsk klubb ennå — sjekk neste kjøringer), La Liga/Serie A/Bundesliga-resumpsjon ~9.–11. okt (ESPN-fetcher fyller ~4.–5. okt). Vinteridrett/beachvolley off-season eller sesongslutt — korrekt tomt."
   ]
 }
