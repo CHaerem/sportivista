@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-26T14:04:28.201Z",
+  "generatedAt": "2026-09-26T18:17:26.506Z",
   "windowDays": 14,
   "ports": {
     "coverage": "green",
     "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
-    "contracts": "yellow"
+    "contracts": "green"
   },
   "basis": {
     "coverageAudit": true,
@@ -27,7 +27,7 @@
       "medium": 0,
       "low": 1
     },
-    "oldestGapAgeDays": 0.19,
+    "oldestGapAgeDays": 0.37,
     "escalatable": 0,
     "catalogMatched": 1,
     "auditedAt": "2026-09-26T09:30:00Z",
@@ -35,7 +35,7 @@
       {
         "interest": "Fotball — UEFA Champions League ligafase runde 2 (13.–14. okt), inkl. norske Viking–Bayern (13. okt) og Bodø/Glimt–Dortmund (14. okt)",
         "severity": "low",
-        "ageDays": 0.19,
+        "ageDays": 0.37,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -153,15 +153,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-26T14:04:24.003Z",
+    "buildCheckedAt": "2026-09-26T18:17:21.975Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-26T09:41:59.146Z",
-    "manifestAgeHours": 4.37,
+    "manifestGeneratedAt": "2026-09-26T14:04:29.556Z",
+    "manifestAgeHours": 4.22,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-09-26T10:05:00Z",
-    "verifyAgeHours": 3.99,
+    "verifyAgeHours": 8.21,
     "corrections": 2,
     "unresolved": 0,
     "signals": [
@@ -172,15 +172,7 @@
   "contracts": {
     "total": 6,
     "inSeason": 6,
-    "breached": [
-      {
-        "id": "football:premier-league",
-        "name": "Premier League",
-        "upcoming": 5,
-        "minUpcoming": 6,
-        "horizonDays": 14
-      }
-    ],
-    "generatedAt": "2026-09-26T14:04:28.200Z"
+    "breached": [],
+    "generatedAt": "2026-09-26T18:17:26.505Z"
   }
 }
