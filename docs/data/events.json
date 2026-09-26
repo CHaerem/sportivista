@@ -325,61 +325,6 @@
   },
   {
     "sport": "football",
-    "tournament": "Serie A",
-    "title": "Frosinone at Genoa",
-    "time": "2026-09-12T13:00:00Z",
-    "endTime": null,
-    "venue": "Stadio Luigi Ferraris, Genova",
-    "norwegian": false,
-    "homeTeam": "Genoa",
-    "awayTeam": "Frosinone",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "VG+ Sport",
-        "url": "https://tv.vg.no",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-07T23:00:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
-      "https://www.sportmediaset.mediaset.it/calcio/seriea/serie-a-cambia-il-calendario-della-4-giornata-anticipata-lazio-milan-cambiano-juve-e-roma_116063139-202602k.shtml",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_Serie_A"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "lega-serie-a",
-        "url": "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
-        "basis": "secondary",
-        "retrievedAt": "2026-09-09T10:01:59Z",
-        "note": "Serie A runde 4 kickoff bekreftet (calcioefinanza); arrangørens egen terminliste (legaseriea.it) bot-blokkert"
-      },
-      "streaming": {
-        "sourceId": "vgtv",
-        "url": "https://www.vg.no/sport/i/P4pQgb/vg-sport-har-kjoept-rettigheter-til-serie-a-i-norge",
-        "basis": "official",
-        "retrievedAt": "2026-09-09T10:01:59Z",
-        "note": "VG+ Sport har eksklusive Serie A-rettigheter i Norge t.o.m. 2026/27 (VGs egen sak)"
-      }
-    },
-    "summary": "Genoa mot Frosinone i Serie A-runde 4.\n\nAvspark lørdag 12. september kl. 15.00 CEST (13.00 UTC).",
-    "homeTeamEntityId": "genoa",
-    "awayTeamEntityId": "frosinone",
-    "id": "80cb92760e5d",
-    "verifiedAt": "2026-09-09T10:01:59Z",
-    "verificationStatus": "amended",
-    "verificationSources": [
-      "https://www.calcioefinanza.it/2026/08/31/serie-a-quarta-giornata-date-orari-2026-2027/",
-      "https://www.vg.no/sport/i/P4pQgb/vg-sport-har-kjoept-rettigheter-til-serie-a-i-norge"
-    ]
-  },
-  {
-    "sport": "football",
     "tournament": "Bundesliga",
     "title": "Eintracht Frankfurt at Mainz 05",
     "time": "2026-09-12T13:30:00Z",
@@ -5915,5 +5860,97 @@
     "isFavorite": false,
     "round": null,
     "id": "69a28a1006d1"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Nations League 2026/27 (League A, gruppe 4)",
+    "title": "Wales – Norge",
+    "time": "2026-10-01T18:45:00Z",
+    "endTime": null,
+    "venue": "Cardiff City Stadium, Cardiff",
+    "norwegian": true,
+    "homeTeam": "Wales",
+    "awayTeam": "Norge",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Direkte / TV 2 Play",
+        "url": "https://play.tv2.no/sport/fotball/uefa-nations-league-y3yqrwwv",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-26T13:15:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.fotball.no/landslag/norge-a-herrer/",
+      "https://www.uefa.com/uefanationsleague/",
+      "https://www.goal.com/en-gb/news/wales-norway-tickets/bltae69bccd5a691cf9"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/landslag/norge-a-herrer/",
+        "basis": "primary",
+        "retrievedAt": "2026-09-26T13:15:00Z",
+        "note": "NFF/fotball.no landslagsside: Wales–Norge tor. 01.10.2026 kl. 20.45 CEST (18.45 UTC). Bekreftet mot Goal.com/beIN (19.45 BST i Cardiff = 18.45 UTC) — uavhengig fresh-context write-time fact-check confirmed."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/fotball/uefa-nations-league-y3yqrwwv",
+        "basis": "official",
+        "retrievedAt": "2026-09-26T13:15:00Z",
+        "note": "TV 2 har de norske UEFA Nations League-rettighetene (TV 2 Direkte + TV 2 Play). Egen kampside ennå ikke publisert (kampen er >5 d ut) → turneringsside som dyplenke."
+      }
+    },
+    "summary": "Norge spiller sin første bortekamp i Nations League-sesongen, mot Wales i Cardiff, i oktobervinduets første oppgjør.\n\nGruppe 4 i League A: Norge, Portugal, Danmark og Wales. Etter to hjemmekamper i september (Danmark, Portugal) møter Norge Wales borte før returoppgjøret mot Portugal i Porto tre dager senere.\n\nAvspark torsdag 1. oktober kl. 20.45 CEST (18.45 UTC), Cardiff City Stadium. Vises på TV 2 Direkte / TV 2 Play."
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Nations League 2026/27 (League A, gruppe 4)",
+    "title": "Portugal – Norge",
+    "time": "2026-10-04T18:45:00Z",
+    "endTime": null,
+    "venue": "Estádio do Dragão, Porto",
+    "norwegian": true,
+    "homeTeam": "Portugal",
+    "awayTeam": "Norge",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Direkte / TV 2 Play",
+        "url": "https://play.tv2.no/sport/fotball/uefa-nations-league-y3yqrwwv",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-26T13:15:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.fotball.no/landslag/norge-a-herrer/",
+      "https://www.uefa.com/uefanationsleague/",
+      "https://www.goal.com/en/news/portugal-norway-tickets/blt292de3ef81974beb"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/landslag/norge-a-herrer/",
+        "basis": "primary",
+        "retrievedAt": "2026-09-26T13:15:00Z",
+        "note": "NFF/fotball.no landslagsside: Portugal–Norge søn. 04.10.2026 kl. 20.45 CEST (18.45 UTC). Bekreftet mot Goal.com (19.45 WEST i Porto = 18.45 UTC) — uavhengig fresh-context write-time fact-check confirmed. Venue Estádio do Dragão (fact-check: én outlier oppga Estádio Nacional, forkastet)."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/fotball/uefa-nations-league-y3yqrwwv",
+        "basis": "official",
+        "retrievedAt": "2026-09-26T13:15:00Z",
+        "note": "TV 2 har de norske UEFA Nations League-rettighetene (TV 2 Direkte + TV 2 Play). Egen kampside ennå ikke publisert → turneringsside som dyplenke."
+      }
+    },
+    "summary": "Norge avslutter oktobervinduet med bortekamp mot Portugal (Cristiano Ronaldo) i Porto — returoppgjøret etter hjemmekampen på Ullevaal 27. september.\n\nGruppe 4 i League A: Norge, Portugal, Danmark og Wales. Kampen spilles tre dager etter Wales–Norge i Cardiff.\n\nAvspark søndag 4. oktober kl. 20.45 CEST (18.45 UTC), Estádio do Dragão. Vises på TV 2 Direkte / TV 2 Play."
   }
 ]
