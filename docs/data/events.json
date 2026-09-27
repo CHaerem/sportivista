@@ -3084,7 +3084,11 @@
     "venue": "Qizhong Forest Sports City Arena, Shanghai",
     "norwegian": false,
     "participants": [],
-    "norwegianPlayers": [],
+    "norwegianPlayers": [
+      {
+        "name": "Casper Ruud"
+      }
+    ],
     "streaming": [
       {
         "platform": "TV 2 / TV 2 Play",
@@ -3116,7 +3120,7 @@
         "retrievedAt": "2026-09-24T20:15:00Z"
       }
     },
-    "summary": "Rolex Shanghai Masters 2026 (ATP Masters 1000) — hovedtrekning 7.–18. oktober på Qizhong Forest Sports City Arena i Shanghai. Neste katalog-dekte tennisturnering etter Laver Cup (25.–27. sep).\n\nKonkret kampoppsett/order-of-play publiseres først etter at seedingen låses mot ATP-rankingen 28. september — datoene her er turneringsvinduet, ikke en enkelt kamp; tiden firmes når trekningen kommer (~1.–7. okt).\n\nCasper Ruud står oppført som seedet (21.), men deltakelsen er formavhengig: han trakk seg fra US Open (30. aug) med en ryggskade og har ikke bekreftet Asia-svingen — derfor ikke navngitt på eventet ennå (verify re-bekrefter). Norsk visning: TV 2 / TV 2 Play (ATP-rettigheter i Norge t.o.m. 2026).",
+    "summary": "Rolex Shanghai Masters 2026 (ATP Masters 1000) — hovedtrekning 7.–18. oktober på Qizhong Forest Sports City Arena i Shanghai. Neste katalog-dekte tennisturnering etter Laver Cup (25.–27. sep).\n\nKonkret kampoppsett/order-of-play publiseres først etter at seedingen låses mot ATP-rankingen 28. september — datoene her er turneringsvinduet, ikke en enkelt kamp; tiden firmes når trekningen kommer (~1.–7. okt).\n\nCasper Ruud er nå navngitt (medium): han står på Shanghai-påmeldingslista (seedet ~18.–21.) OG spilte Laver Cup i London 25.–27. sep, så ryggen som tok ham ut av US Open (30. aug) hindrer ham ikke lenger i å spille. Han er IKKE i China Open-feltet (Beijing 30. sep) — Shanghai er hans neste turnering. Hovedtrekningen er ikke publisert ennå, så deltakelsen er entry-list-basert (formavhengig for en spiller med ryggforbehold); verify re-bekrefter når trekningen kommer (~5.–7. okt) og fester hans dag-1-kamp. Norsk visning: TV 2 / TV 2 Play (ATP-rettigheter i Norge t.o.m. 2026).",
     "id": "e136598cdf6b"
   },
   {
@@ -4293,5 +4297,58 @@
     "isFavorite": false,
     "round": null,
     "id": "69a28a1006d1"
+  },
+  {
+    "sport": "esports",
+    "tournament": "Stake Pulse Beat III",
+    "title": "Stake Pulse Beat III – 100 Thieves / rain",
+    "time": "2026-10-12T10:00:00Z",
+    "endTime": "2026-10-17T22:00:00Z",
+    "venue": "BME Studio, Stockholm",
+    "norwegian": false,
+    "participants": [
+      {
+        "name": "100 Thieves"
+      }
+    ],
+    "norwegianPlayers": [
+      {
+        "name": "Håvard Nygaard"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "Kick (Stake Pulse)",
+        "url": "https://kick.com/stake_pulse",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-09-27T22:55:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "catalog.json#tier2.athletes",
+      "https://liquipedia.net/counterstrike/Stake_Pulse/Beat_III",
+      "https://www.hltv.org/events/9223/stake-pulse-beat-iii"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "liquipedia",
+        "url": "https://liquipedia.net/counterstrike/Stake_Pulse/Beat_III",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-27T22:55:00Z",
+        "note": "Turneringsvindu (12.–17. okt, BME Studio Stockholm) + 100 Thieves-deltakelse bekreftet mot Liquipedia/HLTV event-side; per-kamp bracket/tider ennå ikke trukket ~2 uker ut, så tiden her er vindusstart (12. okt), ikke en enkeltkamp. esports.js/verify boarder 100Ts enkeltkamper når Liquipedia fester dem."
+      },
+      "streaming": {
+        "sourceId": "liquipedia",
+        "url": "https://kick.com/stake_pulse",
+        "basis": "secondary",
+        "retrievedAt": "2026-09-27T22:55:00Z",
+        "note": "Stake-arrangementer er Kick-først (kick.com/stake_pulse), evt. Twitch (twitch.tv/stake); eksakt sendekanal ikke publisert på event-siden ennå — verify fester deep-lenke."
+      }
+    },
+    "summary": "Stake Pulse Beat III (12.–17. okt), BME Studio i Stockholm. $80 000 B-tier-LAN, 16 lag (bl.a. Astralis, Team Liquid, Heroic, B8, 3DMAX).\n\nKatalog-fokuslaget 100 Thieves — med Håvard «rain» Nygaard (IGL) — er bekreftet påmeldt. Dette er 100Ts neste turnering etter Stake Pulse Beat II, der de tapte grand-finalen mot Heroic (26. sep). Bracket/kampoppsett er ikke trukket ennå ~2 uker ut, så tidene her er turneringsvinduet, ikke en enkeltkamp — 100Ts konkrete kamper boardes av esports.js/verify når Liquipedia fester dem.\n\nGratis på Stake Pulse sin egen Kick-kanal (kick.com/stake_pulse) i Norge — ingen norsk TV-rettighet.",
+    "id": "5b3a1c9e77d0"
   }
 ]
