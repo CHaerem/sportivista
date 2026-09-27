@@ -1,19 +1,23 @@
 {
-  "checkedAt": "2026-09-26T00:00:00Z",
+  "checkedAt": "2026-09-27T13:30:41Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
-  "findings": [],
+  "findings": [
+    {
+      "width": 900,
+      "area": "agenda row · Copa del Rey (CD Baztán, CD Tedeón, Ceuta 6 de Junio)",
+      "issue": "Round/meta text is in English (\"2nd Leg - Atlético Calatayud lead 2-0 on aggregate\") while every other UI string on the page is Norwegian. Same on 375/393. Likely comes straight from the football.json fetcher output, not the frontend template, so it may not be fixable in docs/js/ alone.",
+      "severity": "low"
+    }
+  ],
   "notes": [
-    "All three widths: single quiet column, day-grouped agenda ('I DAG'/'I MORGEN'/'TORSDAG 1. OKTOBER'), generous spacing between rows — not a cluttered grid.",
-    "No horizontal scroll or clipped text at 375px or 393px; long fixtures ('Atlético Calatayud – CD Baztán', 'Sporting Hortaleza – Atlético Unión Güímar', 'Auriense Cented Academy – CD San José') wrap cleanly onto a second line rather than truncating — nothing cut mid-word, nothing hiding which side is which.",
-    "Norwegian teams/athletes render with full names and flags/crests intact: Norge–Portugal (with flag + amber must-see dot), FedEx Open de France (with flag), Kolstad–Follo HK, Kristiansand TH–Sandnes, Bergen Håndball–Sandefjord (with shield icon), Nærbø–Fjellhammer, Runar Elite–Viking TIF, Drammen–ØIF Arendal. No broken-image icons or empty boxes.",
-    "The Qatar Airways Azerbaijan Grand Prix row shows a plain checkered/racing-flag glyph, not a national flag — no repeat of a prior run's mismatched-country-flag issue (today's board has no separate qualifying row to compare against, so this is limited confirmation, not a full re-check).",
-    "Channels are Norwegian-available (TV 2 Direkte/TV 2 Play, Viaplay, Eurosport/HBO Max, Chess.com/TV) or an honest faint '–' where unknown (all the Copa del Rey 1st-leg rows) — no FOX/ESPN/Sky.",
-    "Round/competition labels present where expected: '1st Leg' on every Copa del Rey row, 'League A, gruppe 4' on the Nations League row, 'Race Weekend' on the F1 row, date ranges ('24.–27. september', '1.–4. oktober') on multi-day golf events.",
-    "Must-see accent dots (amber) appear sparingly — only Presidents Cup, FedEx Open de France, and Norge–Portugal at all three widths — not on every row.",
-    "The floating 'Assistent' button sits over a mid-agenda row ('Elite kvinner fellesstart' at 375/393px, 'Anaitasuna – CD Tedeón' at 900px) without covering the last agenda row, 'Neste opp', 'Dette dekker vi', or the footer — the DESIGN.md-sanctioned floating-button idiom, not flagged. At 900px the button sits mostly in the margin beside the content column.",
-    "Header (wordmark, date, theme toggle), day headings, and footer (updated timestamp, subscribe/calendar link, AI-budsjett line) intact and aligned at every width.",
-    "Chess 'Neste opp' list (Nakamura, Caruana, Nepomniachtchi, Dommaraju, Firouzja, all 'pågår nå') and the 'Dette dekker vi'/'Merk og kilder' disclosures render collapsed and unbroken at all widths.",
-    "Board is again dominated by a long run of Spanish Copa del Rey 1st-round preliminary matches (Sat–Sun); each row renders correctly (honest '–' channel, no truncation) — a coverage-breadth observation, not a layout defect."
+    "All three widths: single quiet column, generous spacing, no horizontal scroll or clipped text at 375px (the hardest case) — team names wrap onto a second line instead of truncating, so nothing hides which side is playing.",
+    "Norge – Portugal and Wales – Norge both show TV 2 Direkte / TV 2 Play, correctly Norwegian, with an accent dot for the must-see Norway fixtures; no foreign broadcasters (FOX/ESPN/Sky) seen anywhere.",
+    "Rows with no confirmed channel show an honest faint '–' (CF San Rafael – AE Prat, CP Talayuela – Sporting de Alcázar, the Copa del Rey legs, Gulf Air Bahrain GP) rather than a guess or blank space.",
+    "Flags/crests (Norge, Wales, Bergen Håndball badge) and sport glyphs (golf flag, cycling, F1 helmet) all render as real icons, no broken-image boxes.",
+    "Multi-day events (Presidents Cup, FedEx Open de France, Alfred Dunhill Links Championship, Bank of Utah Championship) show a date range instead of a single time — correct handling of the isEventInWindow-style span.",
+    "The floating 'Assistent' button rests over a mid-agenda row (Runar Elite – Viking TIF area) at 375/393, and sits in the empty margin beside the 640px column at 900px with no overlap — matches the DESIGN.md-sanctioned floating-button idiom in both cases, not flagged. It does not cover the last agenda row (Bryne – Lyn) or the footer at any width.",
+    "Header, 'I DAG'/'TORSDAG'/'LØRDAG'/'SØNDAG' day headings, and footer (Oppdatert-stamp, Abonner i kalender, Aktivitet, Personvern, AI-budsjett line) are all intact and aligned at every width.",
+    "Direkte nå chess rows and 'Neste opp' player list render cleanly with right-aligned status text ('pågår nå')."
   ]
 }
