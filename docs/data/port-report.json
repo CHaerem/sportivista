@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T10:21:38.225Z",
+  "generatedAt": "2026-09-27T15:31:17.317Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 1
     },
-    "oldestGapAgeDays": 1.04,
+    "oldestGapAgeDays": 1.25,
     "escalatable": 0,
     "catalogMatched": 2,
     "auditedAt": "2026-09-27T09:20:00Z",
@@ -35,14 +35,14 @@
       {
         "interest": "Håndball — EHF Champions League (menn) 2026/27 gruppespill, Kolstad Håndball (+ Sander Sagosen)",
         "severity": "medium",
-        "ageDays": 0.04,
+        "ageDays": 0.26,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Fotball — UEFA Champions League ligafase runde 2 (13.–14. okt), inkl. norske Viking–Bayern (13. okt) og Bodø/Glimt–Dortmund (14. okt)",
         "severity": "low",
-        "ageDays": 1.04,
+        "ageDays": 1.25,
         "recurrences": 1,
         "catalogMatched": true
       }
@@ -50,21 +50,14 @@
   },
   "amendRate": {
     "nearTermRate": 0,
-    "nearTermChecked": 2,
+    "nearTermChecked": 4,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-09-26T10:05:00Z",
+    "verifyRunAt": "2026-09-27T10:45:00Z",
     "windowRate": 0,
-    "windowChecks": 85,
+    "windowChecks": 81,
     "windowAmendments": 0,
-    "windowCorrections": 8,
+    "windowCorrections": 7,
     "byDay": [
-      {
-        "date": "2026-09-13",
-        "checks": 10,
-        "amendments": 0,
-        "corrections": 1,
-        "rate": 0
-      },
       {
         "date": "2026-09-14",
         "checks": 5,
@@ -155,31 +148,37 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-09-27",
+        "checks": 6,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-27T10:21:35.409Z",
+    "buildCheckedAt": "2026-09-27T15:31:09.230Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-27T08:48:43.538Z",
-    "manifestAgeHours": 1.55,
+    "manifestGeneratedAt": "2026-09-27T10:21:41.329Z",
+    "manifestAgeHours": 5.16,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-09-26T10:05:00Z",
-    "verifyAgeHours": 24.28,
-    "corrections": 2,
+    "checkedAt": "2026-09-27T10:45:00Z",
+    "verifyAgeHours": 4.77,
+    "corrections": 1,
     "unresolved": 0,
     "signals": [
-      "Begge golf-eventene er fremtidige (starter 1. okt), ikke in-progress -> ingen norwegianPlayers cut-sjekk nødvendig; participants tomt er ærlig (fullt felt, i…",
-      "Ingen norske spillere navngitt i noe in-progress event (sjakk-OL, sykkel-VM Montréal) -> WP-95 deltakelsessjekk uten kandidater."
+      "Ingen amend/remove noedvendig. Ingen in-progress fleredags-turneringer med foelgede utoevere krevde deltakelses-sjekk (golf-eventene starter 01.10, ikke i ga…"
     ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-27T10:21:38.224Z"
+    "generatedAt": "2026-09-27T15:31:17.317Z"
   }
 }
