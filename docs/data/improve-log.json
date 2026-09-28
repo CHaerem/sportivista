@@ -1,7 +1,7 @@
 {
 	"runAt": "2026-09-28T15:11:00Z",
 	"action": "opened-pr",
-	"pr": null,
+	"pr": "https://github.com/CHaerem/sportivista/pull/466",
 	"proposal": "Make Serie A (ita.1) + Bundesliga (ger.1) WHOLESALE-fetched by the static ESPN football fetcher, mirroring the already-shipped La Liga (esp.1) pattern. Add both league codes to scripts/config/sports-config.js football leagues and to the client mirror SS_FOOTBALL_LEAGUES in docs/js/shared-constants.js (pinned to config by tests/live-leagues.test.js). Until now these two catalog-covered top-5 leagues had no static fetcher and were hand-boarded round-for-round as source:ai-research, costing a research pass every matchweek and leaving them structurally research-dependent.",
 	"evidence": [
 		"catalog.json notes (self-documented): 'Serie A/Bundesliga åpningsrundene boardet som ai-research (tidligere kun La Liga wholesale via ESPN esp.1) — flagget self-repair å legge ita.1/ger.1 i ESPN-fetcheren for varig wholesale-dekning.' The fix was flagged in the catalog itself and never done.",
