@@ -1,10 +1,32 @@
 {
-  "lastUpdated": "2026-09-28T00:11:28.917Z",
+  "lastUpdated": "2026-09-28T09:11:59.112Z",
   "source": "ESPN Tennis API",
   "tournaments": [
     {
       "name": "ATP/WTA Tour",
       "events": [
+        {
+          "id": "tennis-kinoshita-group-japan-open-tennis-championships-1790481600000",
+          "title": "Kinoshita Group Japan Open Tennis Championships",
+          "time": "2026-09-27T04:00:00.000Z",
+          "endTime": "2026-10-07T03:59:00.000Z",
+          "venue": "TBD",
+          "sport": "tennis",
+          "meta": "ATP/WTA Tour",
+          "tournament": "ATP/WTA Tour",
+          "streaming": [],
+          "norwegian": true,
+          "homeTeam": "",
+          "awayTeam": "",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_FINAL",
+            "_isTournament": "true"
+          }
+        },
         {
           "id": "tennis-chengdu-open-1790049600000",
           "title": "Chengdu Open",
@@ -50,28 +72,6 @@
           }
         },
         {
-          "id": "tennis-kinoshita-group-japan-open-tennis-championships-1790481600000",
-          "title": "Kinoshita Group Japan Open Tennis Championships",
-          "time": "2026-09-27T04:00:00.000Z",
-          "endTime": "2026-10-07T03:59:00.000Z",
-          "venue": "TBD",
-          "sport": "tennis",
-          "meta": "ATP/WTA Tour",
-          "tournament": "ATP/WTA Tour",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "",
-          "awayTeam": "",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED",
-            "_isTournament": "true"
-          }
-        },
-        {
           "id": "tennis-china-open-1790481600000",
           "title": "China Open",
           "time": "2026-09-27T04:00:00.000Z",
@@ -89,7 +89,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED",
+            "status": "STATUS_FINAL",
             "_isTournament": "true"
           }
         },
@@ -157,6 +157,31 @@
           "additional": {
             "status": "STATUS_CANCELED",
             "_isTournament": "true"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Kinoshita Group Japan Open Tennis Championships",
+      "events": [
+        {
+          "id": "tennis-casper-ruud-–-luciano-darderi-1790740800000",
+          "title": "Casper Ruud – Luciano Darderi",
+          "time": "2026-09-30T04:00:00.000Z",
+          "venue": "Tokyo, Japan",
+          "sport": "tennis",
+          "meta": "Kinoshita Group Japan Open Tennis Championships · Men's Singles",
+          "tournament": "Kinoshita Group Japan Open Tennis Championships",
+          "streaming": [],
+          "norwegian": true,
+          "homeTeam": "",
+          "awayTeam": "",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
           }
         }
       ]
