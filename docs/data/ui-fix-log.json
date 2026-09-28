@@ -1,10 +1,11 @@
 {
-  "runAt": "2026-09-27T13:35:00Z",
+  "runAt": "2026-09-28T16:23:14Z",
   "action": "none",
   "pr": null,
   "fixed": [],
   "notes": [
-    "visual-qa verdict is 'pass' with no high/medium findings — nothing to fix per ui-fix.md rule 1.",
-    "The single 'low' finding (English round/meta text on Copa del Rey rows) is a data problem originating in football.json fetcher output, not fixable in docs/js/ alone — out of scope for this loop."
+    "visual-qa verdict is 'pass' (checkedAt 2026-09-28T16:23:14Z) with no high/medium findings — nothing to fix per ui-fix.md rule 1.",
+    "The single 'low' finding (English 2nd Leg / aggregate meta text on the Copa del Rey rows) is raw fetcher/API copy in event data, not a docs/js template string — a data problem out of scope for this frontend loop.",
+    "visual-qa notes confirm no truncation, overflow, broken flags, foreign broadcasters, or calm-design breaks at 375/393/900px; header, agenda, disclosure and footer all intact."
   ]
 }
