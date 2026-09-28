@@ -1,88 +1,73 @@
 {
-  "auditedAt": "2026-09-27T09:20:00Z",
+  "auditedAt": "2026-09-28T09:35:00Z",
   "horizonDays": 28,
   "gaps": [
     {
-      "interest": "Håndball — EHF Champions League (menn) 2026/27 gruppespill, Kolstad Håndball (+ Sander Sagosen)",
-      "whatsMissing": "0 EHF Champions League-events på tavla mens gruppespillet PÅGÅR (9. sep–29. okt 2026). Kolstad Håndball er bekreftet deltaker (gruppe F). Neste Kolstad-kamp usikker på tvers av kilder (~7. okt Kriens-Luzern borte iflg. ett søk, ~14. okt hjemme, eller ~28. okt iflg. EHF-klubbsiden) — men uansett innen 28-dagers horisonten. Hele den europeiske håndball-dimensjonen (i tillegg til Elkjøp-ligaen) er uboardet.",
-      "why": "Håndball er catalog tier1 (wholesale); EHF Champions League er tier2.tournaments; Kolstad + Sagosen er tier2. To kilder (Wikipedia 2026/27 gruppespill + eurohandball.com klubbside) bekrefter Kolstad i gruppespillet 9. sep–29. okt. Men håndball har INGEN statisk fetcher og INGEN authority.json contract-blokk, så hele EHF CL avhenger av at research boarder det manuelt — og research har boardet 0 EHF CL-kamper hittil i gruppespillet (kun Elkjøp-ligaen hjemlig). Ikke imminent (>4 d) og eksakt neste dato ikke entydig bekreftet → medium, ikke high. Norsk visning: EHF CL ligger normalt på Viaplay/TV3 — research verifiserer per kamp.",
+      "interest": "Fotball — UEFA Champions League ligafase runde 2 (13.–14. okt), inkl. norske Viking–Bayern München (13. okt) og Bodø/Glimt–Borussia Dortmund (14. okt)",
+      "whatsMissing": "Hele CL-ligafase runde 2 (13.–14. okt) mangler på tavla — 0 CL-events boardet. Særlig de to NORSKE klubbene i mesterligaen: Viking–Bayern München (tir. 13. okt) og Bodø/Glimt–Borussia Dortmund (ons. 14. okt). Også Man City–PSG, Arsenal–Lille, Galatasaray–Barcelona, Roma–Real Madrid m.fl.",
+      "why": "UEFA Champions League er catalog tier2.tournaments. WEB-BEKREFTET I DAG mot uefa.com at MW2 er 13.–14. okt 2026, Viking–Bayern 13. okt + Bodø/Glimt–Dortmund 14. okt. Nå ~15–16 d ut → UTENFOR fyll-vinduet (research/verify boarder ~4–5 d fram, så CL MW2 ventes boardet ~8.–10. okt). Derfor LOW: reelt og viktig (to norske klubber), men addressed på cadence, ikke en svikt ennå. VOKT: bump til medium/high hvis fortsatt uboardet <5 d ut (fra ~8.–9. okt). Norsk visning: TV 2 Play / Max.",
       "corroboration": [
-        "https://en.wikipedia.org/wiki/2026%E2%80%9327_EHF_Champions_League_group_stage",
-        "https://www.eurohandball.com/en/club/kZVHhs7nxEhEqyCf6iK_Sw/KolstadH%C3%A5ndball/"
-      ],
-      "suggestedSource": "https://www.eurohandball.com/en/club/kZVHhs7nxEhEqyCf6iK_Sw/KolstadH%C3%A5ndball/",
-      "severity": "medium",
-      "firstSeen": "2026-09-27T09:20:00Z",
-      "recurrences": 0,
-      "severityBumpedFor": null,
-      "note": "Ny gap denne kjøringen. Research: board Kolstads EHF CL-gruppespillkamper (bekreft eksakt neste dato ~7.–14. okt + norsk streaming). Forsterker den strukturelle HIGH-sourceIssue om manglende wholesale håndball-fetcher/contract."
-    },
-    {
-      "interest": "Fotball — UEFA Champions League ligafase runde 2 (13.–14. okt), inkl. norske Viking–Bayern (13. okt) og Bodø/Glimt–Dortmund (14. okt)",
-      "whatsMissing": "Hele CL-ligafase runde 2 (13.–14. okt) mangler på tavla — 0 CL-events boardet. Særlig Viking–Bayern München (tir. 13. okt) og Bodø/Glimt–Borussia Dortmund (ons. 14. okt) — to norske klubber i mesterligaen. Også Man City–PSG, Arsenal–Lille, Galatasaray–Barcelona, LASK–Liverpool, Roma–Real Madrid.",
-      "why": "UEFA Champions League er catalog tier2.tournaments. WEB-BEKREFTET i går mot uefa.com at MW2 er 13.–14. okt 2026 med Viking + Bodø/Glimt i feltet. Nå ~16–17 d ut → UTENFOR fyll-vinduet (research/verify boarder ~4–5 d fram, så CL MW2 ventes boardet ~8.–10. okt). Derfor LOW: reelt og viktig, men addressed på cadence, ikke en svikt ennå. VOKT: bump til medium/high hvis fortsatt uboardet <5 d ut (fra ~8.–9. okt). Norsk visning: TV 2 Play / Max.",
-      "corroboration": [
-        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/"
+        "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+        "https://en.wikipedia.org/wiki/2026_FK_Bod%C3%B8/Glimt_season"
       ],
       "suggestedSource": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
       "severity": "low",
       "firstSeen": "2026-09-26T09:30:00Z",
-      "recurrences": 1,
+      "recurrences": 2,
       "severityBumpedFor": null,
-      "note": "Carry-forward fra 26.09 (recurrences 0→1). Fortsatt utenfor fyll-vinduet, boardes på cadence ~8.–10. okt. Bump ved <5 d uboardet."
+      "note": "Carry-forward fra 26.–27.09 (recurrences 1→2). Fortsatt utenfor fyll-vinduet, boardes på cadence ~8.–10. okt. Recurrence-klokka bør reelt starte når gapet KOMMER INN i fyll-vinduet (~8. okt) — dette er 'ikke forfalt ennå', ikke 'uadressert', så bump-ved-3-regelen skal ikke fyre spuriøst mens den er på cadence. Bump ved <5 d uboardet."
     }
   ],
   "sourceIssues": [
     {
-      "source": "Statisk pipeline — ingen wholesale håndball-fetcher (STRUKTURELT, FORSTERKET)",
-      "issue": "Håndball er catalog-tier1 (wholesale) men har ingen statisk fetcher OG ingen authority.json contract-blokk. Elkjøp-ligaen håndboardes runde-for-runde av research (i dag boardet: 4 kamper 27. sep), OG nå avdekket: HELE EHF Champions League (Kolstad + Sagosen, gruppespill 9. sep–29. okt) er uboardet — se medium-gap. Uten fetcher/contract fanges verken en delvis Elkjøp-runde ELLER en uboardet europeisk håndball-dimensjon mekanisk (håndball har ingen egen fil å anomali-flagge i coverage-gaps.json).",
+      "source": "Statisk pipeline — ingen wholesale håndball-fetcher (STRUKTURELT)",
+      "issue": "Håndball er catalog-tier1 (wholesale) men har ingen statisk fetcher OG ingen authority.json contract-blokk. Elkjøp-ligaen OG norske klubbers europacup (EHF Champions League, Kolstad + Sagosen) håndboardes runde-for-runde av research. DENNE KJØRINGEN ER DET DEKKET: EHF CL gruppespill Kolstad boardet (HC Kriens-Luzern–Kolstad 7. okt + Kolstad–HC Kriens-Luzern 14. okt) — forrige kjørings medium-gap er LØST av research. Men uten fetcher/contract fanges verken en delvis Elkjøp-runde ELLER en uboardet europeisk dimensjon mekanisk (håndball har ingen egen fil å anomali-flagge i coverage-gaps.json), så dekningen er fortsatt strukturelt research-avhengig.",
       "impact": "Argument (HIGH) for en handball.no-fetcher (Elkjøp-ligaen menn+kvinner) OG dekning av norske klubbers europacup (EHF CL/European League) — ELLER en authority.json contract-blokk for Elkjøp-ligaen + EHF CL Kolstad. calibration.json handball.no + play.tv2.no pålitelige (reliability 1). Self-repair/improve-sak.",
       "severity": "high"
     },
     {
       "source": "Liquipedia CS2-fetcher (esports.js) — 100T-only-filter (STRUKTURELT, uendret)",
-      "issue": "Fetcheren beholder KUN fokuslaget 100 Thieves' kamper; docs/data/esports.json er tomt for alt annet. ALL øvrig CS2-dekning hviler på manuell research-boarding. I dag ER ESL Pro League Season 24 (3. okt) boardet av research — men det bekrefter avhengigheten av research.",
+      "issue": "Fetcheren beholder KUN fokuslaget 100 Thieves' kamper; docs/data/esports.json er tomt for alt annet. ALL øvrig CS2-dekning hviler på manuell research-boarding. I dag ER ESL Pro League Season 24 (3. okt) + Stake Pulse Beat III (100T/rain, 12. okt) boardet av research — men det bekrefter avhengigheten av research.",
       "impact": "Argument (HIGH) for at esports-fetcheren beholder ALLE katalog-tier2-orgers kamper (ikke bare 100T), ELLER en authority.json contract-blokk for CS2 tier-1-turneringer (ESL Pro League/BLAST/IEM). Self-repair/improve-sak.",
       "severity": "high"
     },
     {
       "source": "ESPN-fotball-fetcher — Serie A + Bundesliga ikke wholesale (ita.1/ger.1 mangler)",
-      "issue": "Tavla hadde Serie A + Bundesliga-kamper 13.–20. sep (boardet som ai-research av research). Men resumpsjonsrunden 10.–11. okt (alle topp-5-ligaene gjenopptar samtidig etter XL-landslagsvinduet, web-bekreftet) er boardet for Premier League (MW6 komplett) men IKKE for Serie A / Bundesliga. La Liga dekkes wholesale via ESPN esp.1 (fetcheren fyller ~5.–6. okt). Serie A/Bundesliga avhenger av research og er nå ~14 d ut = på cadence, men mangelen på ita.1/ger.1 i fetcheren gjør dekningen strukturelt research-avhengig.",
-      "impact": "Notat til self-repair/improve (flagget tidligere i catalog.json-notes): legg ita.1 (Serie A) + ger.1 (Bundesliga) i ESPN-fetcheren for varig wholesale-dekning, slik La Liga (esp.1) allerede har. VOKT: bump til gap hvis Serie A/Bundesliga 10.–11. okt fortsatt uboardet <5 d ut.",
+      "issue": "Alle topp-5-ligaene gjenopptar samtidig 10.–11. okt etter det sammenslåtte landslagsvinduet (21. sep–6. okt, WEB-BEKREFTET). Premier League MW6 (10.–11. okt) er FULLSTENDIG boardet; La Liga dekkes wholesale via ESPN esp.1 (fetcheren fyller ~5.–6. okt, Barcelona/Real Madrid tracked). Serie A / Bundesliga 10.–11. okt er IKKE boardet — begge er catalog tier2.tournaments men avhenger av research (ita.1/ger.1 mangler i ESPN-fetcheren). Nå ~12–13 d ut = på cadence, men strukturelt research-avhengig.",
+      "impact": "Notat til self-repair/improve (flagget tidligere i catalog.json-notes): legg ita.1 (Serie A) + ger.1 (Bundesliga) i ESPN-fetcheren for varig wholesale-dekning, slik La Liga (esp.1) allerede har. VOKT: bump til gap hvis Serie A/Bundesliga 10.–11. okt fortsatt uboardet <5 d ut (~5.–6. okt).",
       "severity": "medium"
     },
     {
       "source": "ESPN-golf-fetcher (golf.json) — ingen look-ahead (STRUKTURELT, uendret)",
-      "issue": "golf.json inneholder kun INNEVÆRENDE ukes turnering(er). Fetcheren har ingen fremtidsdekning, så golf-tavla går tom mellom turneringsuker. I dag IKKE et problem: Alfred Dunhill Links (DP World Tour, 1.–4. okt) + Bank of Utah Championship (PGA Tour Fall, 1. okt) er boardet av research — men bekrefter research-avhengigheten.",
+      "issue": "golf.json inneholder kun INNEVÆRENDE ukes turnering(er). Fetcheren har ingen fremtidsdekning, så golf-tavla går tom mellom turneringsuker. I dag IKKE et problem: Alfred Dunhill Links (DP World Tour, 1.–4. okt, St Andrews) + Bank of Utah Championship (PGA Tour Fall, 1. okt) er boardet av research — men bekrefter research-avhengigheten. DP World Tour + PGA Tour-kontraktene er 'met' denne kjøringen.",
       "impact": "Argument (medium) for at golf-fetcheren henter neste 2–3 ukers DP World Tour + PGA Tour-kalender (ikke bare current), ELLER en authority.json contract-blokk. calibration.json europeantour.com + pgatour.com pålitelige (reliability 1). Self-repair/improve-sak.",
       "severity": "medium"
     },
     {
       "source": "ESPN-football-fetcher — admitterer spansk Copa del Rey lavere-runder (PRESISJON, uendret)",
-      "issue": "Tavla har ~8 spanske Copa del Rey-kamper i tidlige runder 27. sep + 3. okt (CD San José–Auriense, AE Prat–CF San Rafael, Atlético Calatayud–CD Baztán o.l.) uten kanal, med regional-/lavere-divisjonsklubber. Copa del Rey er IKKE i catalog tier2.tournaments (kun NM Cupen for Norge). PRESISJONS-lekkasje (falske positive), ikke et recall-hull — forsøpler en ellers rolig tavle i landslagsvinduet.",
+      "issue": "Tavla har ~10 spanske Copa del Rey-kamper i tidlige runder 3.–4. okt (Atlético Calatayud–CD Baztán, Anaitasuna–CD Tedeón, CF San Rafael–AE Prat, Auriense–CD San José o.l.) uten kanal, med regional-/lavere-divisjonsklubber. Copa del Rey er IKKE i catalog tier2.tournaments (kun NM Cupen for Norge). PRESISJONS-lekkasje (falske positive), ikke et recall-hull — forsøpler en ellers rolig tavle i landslagsvinduet.",
       "impact": "Notat til self-repair: build-events.js isCovered / football-fetcheren slipper gjennom spansk Copa del Rey preliminære runder med regionale klubber. Bør filtreres. Presisjon, ikke recall — lav prioritet.",
       "severity": "low"
     }
   ],
   "coveredWell": [
-    "F1 — ESPN-BLINDSONE REN (source-quirks-mandat, WEB-SJEKKET I DAG mot Sky/Mercedes/GrandePrêmio): Aserbajdsjan GP var LØRDAG 26. sep (i går), UTEN sprint. Ingen F1 denne helgen (27. sep). Neste er «Bahrain Grand Prix in Malaysia» på Sepang, løp SØN 4. okt (på tavla, 4. okt 07:00 UTC), så Singapore 9.–11. okt (på tavla). Tittelen «...in Malaysia» er FAKTISK korrekt i år (Bahrain-navngitt løp kjøres på Sepang) — ikke en feed-bug. Ingen F1 mistet. Viaplay.",
-    "SYKKEL — UCI Road-VM Montréal: elite menn fellesstart SØN 27. sep, WEB-BEKREFTET start 09:00 EDT = 13:00 UTC (273,7 km, 12 runder Mont Royal). Tavla har korrekt 13:00 UTC. Il Lombardia (10. okt) boardet.",
-    "FOTBALL LANDSLAG (XL-vindu 24. sep–6. okt, WEB-BEKREFTET UEFA/FIFA): Norge–Portugal 27. sep, Wales–Norge 1. okt, Portugal–Norge 4. okt alle på tavla (Nations League; Norge–Danmark 24. sep alt spilt). Domestiske ligaer KORREKT pauset (ingen ligakamper helgene 26. sep + 3. okt).",
-    "FOTBALL RESUMPSJON: Alle topp-5-ligaene gjenopptar 10.–11. okt (web-bekreftet). Premier League MW6 (10.–11. okt) FULLSTENDIG boardet (Leeds–Arsenal, Man City–Liverpool, Spurs–Man United, Forest–Palace m.fl.). Eliteserien-runde 9.–12. okt komplett (Viking–Brann, Kristiansund–Bodø/Glimt, Sandefjord–Rosenborg, Molde–Lillestrøm, Vålerenga–KFUM, HamKam–Start, Sarpsborg–Aalesund). OBOS-ligaen (Bryne–Lyn 4. okt, Tromsø–Fredrikstad) boardet. (La Liga/Serie A/Bundesliga 10.–11. okt ennå uboardet, ~14 d ut = på cadence — se sourceIssues.)",
-    "GOLF: Alfred Dunhill Links (DP World Tour, 1.–4. okt, St Andrews, Reitan/Hovland-interesse) + Bank of Utah Championship (PGA Tour Fall, 1. okt) boardet.",
-    "ESPORTS — ESL Pro League Season 24 (3. okt) boardet. (Øvrig CS2 research-avhengig, se HIGH-sourceIssue.)",
-    "TENNIS — Shanghai Masters (7. okt) boardet.",
-    "SJAKK — 46. sjakk-OL (Samarkand) sluttrunde/runde 11 SØN 27. sep boardet. Streaming gratis (chess.com/FIDE YouTube).",
-    "HÅNDBALL — Elkjøp-ligaen serierunde 27. sep boardet (4 kamper). play.tv2.no. (EHF CL uboardet → medium-gap + HIGH-sourceIssue.)",
-    "DEKNINGSKONTRAKTER (WP-243): alle 6 kontrakter «met» denne kjøringen, breached []. Det falske HIGH-contract-bruddet for PL/Eliteserien fra 25.–26.09 (utvidet XL-landslagspause) har SELV-LØST seg nå som resumpsjonsrunden 9.–11. okt ligger innenfor horisonten."
+    "F1 — ESPN-BLINDSONE REN (source-quirks-mandat, WEB-VERIFISERT I DAG mot formula1.com/RacingNews365): Aserbajdsjan GP var runde 15 (24.–26. sep). Neste er «Gulf Air Bahrain Grand Prix in Malaysia» (runde 16) — kjøres FAKTISK på Sepang International Circuit i Kuala Lumpur, løp SØN 4. okt 15:00 MYT (UTC+8) = 07:00 UTC. Tavla har 4. okt 07:00 UTC — KORREKT. Tittelen «...in Malaysia» er faktisk riktig i år (F1/FIA bekreftet Malaysia som vertskap for det Bahrain-betalte løpet) — ikke en feed-bug. Deretter Singapore GP (runde 17, sprinthelg 9.–11. okt, sprintkvali/sprint/kvali/løp alle boardet) og USA GP (25. okt) på tavla. Ingen F1 mistet. Viaplay.",
+    "FOTBALL LANDSLAGSVINDU (sammenslått 21. sep–6. okt, WEB-BEKREFTET premierleague.com): domestiske ligaer KORREKT pauset — ingen PL/La Liga/Serie A/Bundesliga/Eliteserien-kamper helgen 3.–5. okt. Tavlas tomme domestiske helg er RIKTIG, ikke et hull. Nations League Wales–Norge 1. okt + Portugal–Norge 4. okt på tavla.",
+    "FOTBALL RESUMPSJON: Alle topp-5-ligaene gjenopptar 10.–11. okt (web-bekreftet). Premier League MW6 (10.–11. okt) FULLSTENDIG boardet (Leeds–Arsenal, Man City–Liverpool, Spurs–Man United, Forest–Palace m.fl.). Eliteserien-runde 10.–12. okt komplett (Viking–Brann, Kristiansund–Bodø/Glimt, Sandefjord–Rosenborg, Molde–Lillestrøm, Vålerenga–KFUM, HamKam–Start, Sarpsborg–Aalesund). OBOS-ligaen (Bryne–Lyn 4. okt, Tromsø–Fredrikstad 11. okt) boardet. (La Liga fylles av ESPN esp.1 ~5.–6. okt; Serie A/Bundesliga research-avhengig — se sourceIssues.)",
+    "HÅNDBALL — EHF Champions League (menn) gruppespill: Kolstad Håndball (+ Sagosen) NÅ BOARDET (HC Kriens-Luzern–Kolstad 7. okt + Kolstad–HC Kriens-Luzern 14. okt). Forrige kjørings medium-gap er LØST av research. Elkjøp-ligaen dekkes hjemlig. (Fortsatt research-avhengig — se HIGH-sourceIssue.)",
+    "GOLF: Alfred Dunhill Links (DP World Tour, 1.–4. okt, St Andrews) + Bank of Utah Championship (PGA Tour Fall, 1. okt) boardet. DP World Tour + PGA Tour-kontraktene 'met'.",
+    "SYKKEL — Il Lombardia (10. okt) boardet (siste Monument). UCI Road-VM Montréal avsluttet 27. sep.",
+    "TENNIS — Casper Ruud i spill (Japan Open, Ruud–Darderi 30. sep boardet) + Shanghai Masters (7. okt) boardet.",
+    "ESPORTS — ESL Pro League Season 24 (3. okt) + Stake Pulse Beat III 100 Thieves/rain (12. okt) boardet. (Øvrig CS2 research-avhengig, se HIGH-sourceIssue.)",
+    "DEKNINGSKONTRAKTER (WP-243): alle 6 kontrakter «met» denne kjøringen (F1, Eliteserien, Premier League, DP World Tour, PGA Tour, ATP/WTA), breached []."
   ],
   "escalated": false,
   "notes": [
-    "Kjøring 2026-09-27 ~09:20Z (recall-audit, søndag). INGEN high-severity imminent recall-gap i dag. Ett NYTT medium horisont-gap (EHF Champions League håndball, Kolstad — 0 boardet mens gruppespillet pågår) + ett carry-forward LOW (CL ligafase MW2 13.–14. okt). Ikke eskalert (ingen HIGH-gap).",
-    "IMMINENT-PASS først (source-quirks-mandat). F1 ESPN-blindsone REN: web-verifisert i dag (Sky/Mercedes/GrandePrêmio) at Baku var LØR 26. sep (i går), ingen F1 denne helgen, neste Sepang 4. okt + Singapore 9.–11. okt begge på tavla. UCI Road-VM elite menn 27. sep 13:00 UTC (=09:00 EDT) web-verifisert korrekt boardet. Chess-OL sluttrunde + Elkjøp-ligaen 27. sep boardet.",
-    "NYTT MEDIUM GAP: EHF Champions League (menn) håndball. To kilder (Wikipedia 2026/27 gruppespill + eurohandball.com) bekrefter Kolstad Håndball i gruppespill 9. sep–29. okt; 0 EHF CL-events på tavla. Neste Kolstad-dato usikker på tvers av kilder (~7.–14. okt vs 28. okt) → medium (ikke imminent, dato ikke entydig). Håndball har ingen fetcher/contract → hele dimensjonen research-avhengig. Forsterker HIGH-sourceIssue.",
-    "FOTBALL RESUMPSJON web-bekreftet: XL-landslagsvinduet gjør at ingen ligakamper spilles helgene 26. sep + 3. okt, og ALLE topp-5-ligaene (PL/La Liga/Serie A/Bundesliga) gjenopptar samtidig 10.–11. okt. PL MW6 + Eliteserien + OBOS boardet for den helgen; La Liga (ESPN esp.1 wholesale, fyller ~5.–6. okt) på cadence; Serie A/Bundesliga ennå uboardet, ~14 d ut = på cadence men strukturelt research-avhengig (ita.1/ger.1 mangler i fetcher — medium sourceIssue).",
-    "MEKANISKE coverage-gaps.json-signaler TRIAGERT (gapCount 11, anomalyCount 0): (a) entity Manchester City/Real Madrid/Liverpool (missing, ikke-imminent) → RSS talking-points (FFP-dom, Ødegaard-intervju, Ward sportsdirektør), ikke kommende-event-hull; klubbene boardet 10.–11. okt. (b) Nasjonsligaen (imminent, Bruno Fernandes) → Norge–Portugal 27. sep ER boardet. (c) «The Open» (imminent) → FALSK match mot chessbase Chess-OL-overskrift; golf-Open er off-season (juli). (d) Sykkel-VM (missing) → elite menn 27. sep ER boardet (VM avsluttes i dag). (e) tracked-claim La Liga (2027-dato), Serie A (null), Bundesliga (30. sep — feil, gjenopptar 10.–11. okt), Warholm (2027), Carlsen (2027) → korrekt fravær / fjern-fremtid / XL-pause.",
-    "HORISONT-VAKT (utenfor fyll-vindu, ikke gaps ennå): CL ligafase MW2 13.–14. okt (LOW gap, bump ved <5 d), Europa/Conference League MW2 (~22.–23. okt), Serie A/Bundesliga-resumpsjon 10.–11. okt (medium sourceIssue). Vinteridrett/friidrett/sandvolley off-season eller sesongslutt — korrekt tomt (Warholm/Ingebrigtsen sesongslutt)."
+    "Kjøring 2026-09-28 ~09:35Z (recall-audit, mandag). INGEN high-severity recall-gap i dag. IMMINENT-PASS (source-quirks-mandat) REN og WEB-VERIFISERT: (1) F1 — Bahrain GP in Malaysia på Sepang, løp 4. okt 07:00 UTC bekreftet korrekt mot formula1.com/RacingNews365 (tittelen er faktisk riktig, ingen ESPN-mis-dating). (2) Fotball — det sammenslåtte landslagsvinduet 21. sep–6. okt bekreftet mot premierleague.com; tavlas tomme domestiske helg 3.–5. okt er KORREKT fravær, ikke et hull. Ikke eskalert (ingen HIGH-gap).",
+    "FORRIGE MEDIUM-GAP LØST: EHF Champions League (håndball, Kolstad + Sagosen) fra 27.09 er nå boardet av research (2 kamper 7. + 14. okt). Den strukturelle HIGH-sourceIssue om manglende wholesale håndball-fetcher/contract står likevel — dekningen er fortsatt research-avhengig.",
+    "ENESTE GAP: CL ligafase MW2 13.–14. okt (LOW carry-forward, recurrences 1→2). WEB-BEKREFTET mot uefa.com i dag: Viking–Bayern 13. okt + Bodø/Glimt–Dortmund 14. okt (to norske klubber). ~15–16 d ut = utenfor fyll-vinduet, boardes på cadence ~8.–10. okt. Recurrence-klokka skal ikke bumpe spuriøst mens den er på cadence (ikke-forfalt ≠ uadressert). Bump ved <5 d uboardet.",
+    "MEKANISKE coverage-gaps.json-signaler TRIAGERT (gapCount 8, anomalyCount 0): alle 8 er tracked-claim (RSS-uavhengige tracked.json-bokføringspåstander). (a) La Liga (2027-07-15), Hovland (2027-07-17), Reitan (2027-07-19), Warholm (2027-07-18), Ventura (2027-07-26), Carlsen (2027-06-29) → fjern-fremtidige claimedDate = korrekt fravær nå. (b) Serie A (claimedDate null) → gjenopptar 10.–11. okt, research-avhengig (medium sourceIssue). (c) Bundesliga (claimedDate 2026-09-30, imminent:true) → FALSK imminent: Bundesliga spiller IKKE 30. sep (landslagsvindu, web-bekreftet), gjenopptar 10.–11. okt. tracked.json-datoen er utdatert bokføring, ikke et reelt event-hull → korrekt fravær 30. sep. Anbefaling til research: oppdater Bundesliga tracked.json-datoen til resumpsjonsrunden.",
+    "HORISONT-VAKT (utenfor fyll-vindu, ikke gaps ennå): CL MW2 13.–14. okt (LOW gap, bump ved <5 d), Serie A/Bundesliga-resumpsjon 10.–11. okt (medium sourceIssue, bump ved <5 d), Europa/Conference League MW2 (~22.–23. okt), USA GP 25. okt boardet. Vinteridrett/friidrett/sandvolley off-season/sesongslutt — korrekt tomt.",
+    "PRESISJONSLEKKASJE (uendret): ~10 spanske Copa del Rey preliminærrunde-kamper 3.–4. okt med regionale klubber uten kanal (ikke i katalogen) forsøpler tavla i landslagsvinduet — self-repair-notat, presisjon ikke recall (LOW sourceIssue)."
   ]
 }
