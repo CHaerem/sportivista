@@ -1,23 +1,23 @@
 {
-  "checkedAt": "2026-09-27T13:30:41Z",
+  "checkedAt": "2026-09-28T16:23:14Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [
     {
-      "width": 900,
-      "area": "agenda row · Copa del Rey (CD Baztán, CD Tedeón, Ceuta 6 de Junio)",
-      "issue": "Round/meta text is in English (\"2nd Leg - Atlético Calatayud lead 2-0 on aggregate\") while every other UI string on the page is Norwegian. Same on 375/393. Likely comes straight from the football.json fetcher output, not the frontend template, so it may not be fixable in docs/js/ alone.",
+      "width": 375,
+      "area": "agenda row · Copa del Rey legs (CD Baztán, CD Tedeón, Ceuta 6 de Junio, Atlético Melilla, Atlético Unión Güímar, AE Prat, CD San José, SD Noja, Sporting de Alcázar, Tavernes de la Valldigna)",
+      "issue": "Meta line mixes English into an otherwise Norwegian UI: \"2nd Leg - Atlético Calatayud lead 2-0 on aggregate\", \"Tied on aggregate\", etc. Same text at 393 and 900px. Reads as raw fetcher/API copy rather than a template string, so may not be fixable from docs/js/ templates alone — flagging for triage rather than assuming it's frontend-fixable.",
       "severity": "low"
     }
   ],
   "notes": [
-    "All three widths: single quiet column, generous spacing, no horizontal scroll or clipped text at 375px (the hardest case) — team names wrap onto a second line instead of truncating, so nothing hides which side is playing.",
-    "Norge – Portugal and Wales – Norge both show TV 2 Direkte / TV 2 Play, correctly Norwegian, with an accent dot for the must-see Norway fixtures; no foreign broadcasters (FOX/ESPN/Sky) seen anywhere.",
-    "Rows with no confirmed channel show an honest faint '–' (CF San Rafael – AE Prat, CP Talayuela – Sporting de Alcázar, the Copa del Rey legs, Gulf Air Bahrain GP) rather than a guess or blank space.",
-    "Flags/crests (Norge, Wales, Bergen Håndball badge) and sport glyphs (golf flag, cycling, F1 helmet) all render as real icons, no broken-image boxes.",
-    "Multi-day events (Presidents Cup, FedEx Open de France, Alfred Dunhill Links Championship, Bank of Utah Championship) show a date range instead of a single time — correct handling of the isEventInWindow-style span.",
-    "The floating 'Assistent' button rests over a mid-agenda row (Runar Elite – Viking TIF area) at 375/393, and sits in the empty margin beside the 640px column at 900px with no overlap — matches the DESIGN.md-sanctioned floating-button idiom in both cases, not flagged. It does not cover the last agenda row (Bryne – Lyn) or the footer at any width.",
-    "Header, 'I DAG'/'TORSDAG'/'LØRDAG'/'SØNDAG' day headings, and footer (Oppdatert-stamp, Abonner i kalender, Aktivitet, Personvern, AI-budsjett line) are all intact and aligned at every width.",
-    "Direkte nå chess rows and 'Neste opp' player list render cleanly with right-aligned status text ('pågår nå')."
+    "375px (hardest case): no horizontal scroll, no clipped/truncated text anywhere in the agenda — long match names (Kinoshita Group Japan Open Tennis Championships, Atlético Unión Güímar – Sporting Hortaleza) wrap onto a second line instead of being cut off.",
+    "Wales – Norge and Portugal – Norge both show 'TV 2 Direkte / TV 2 Play' — correctly Norwegian, with the must-see accent dot on both; no foreign broadcaster (FOX/ESPN/Sky) seen at any width. 'Bank of Utah Championship' shows 'HBO Max (Sport) +1' — worth a data-side sanity check that this is genuinely available in Norway, but nothing about the rendering itself is wrong.",
+    "Rows with no confirmed channel show an honest faint '–' (the Copa del Rey legs, Gulf Air Bahrain Grand Prix) rather than a guess or a blank cell.",
+    "Flags (Wales, Portugal, Norge) render as real icons next to the two Nations League rows, not broken-image boxes.",
+    "Multi-day events (Kinoshita Group Japan Open, Alfred Dunhill Links Championship, Bank of Utah Championship) correctly show a date range ('1.-4. oktober', '27. september-7. oktober') instead of a single misleading time.",
+    "The floating 'Assistent' button rests over a mid-agenda row (the Wales – Norge / Alfred Dunhill area) at 375 and 393px, and sits mostly in the empty margin beside the 640px column at 900px — matches the DESIGN.md-sanctioned floating-button idiom in both cases, not flagged. It does not cover the last agenda row (Portugal – Norge) or the footer at any width.",
+    "Header, day headings (ONSDAG/TORSDAG/LØRDAG/SØNDAG), 'Neste opp' esports list, 'Dette dekker vi' disclosure, and footer (Oppdatert-stamp, Abonner i kalender, Aktivitet, Personvern, staleness note, AI-budsjett line) are all intact and aligned at every width.",
+    "Must-see accent dots are used sparingly — only on the two Norge fixtures across the whole visible agenda, not on every row."
   ]
 }
