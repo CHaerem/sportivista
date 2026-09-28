@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T11:25:51.157Z",
+  "generatedAt": "2026-09-28T19:12:55.422Z",
   "windowDays": 14,
   "ports": {
     "coverage": "green",
@@ -27,7 +27,7 @@
       "medium": 0,
       "low": 1
     },
-    "oldestGapAgeDays": 2.08,
+    "oldestGapAgeDays": 2.4,
     "escalatable": 0,
     "catalogMatched": 1,
     "auditedAt": "2026-09-28T09:35:00Z",
@@ -35,7 +35,7 @@
       {
         "interest": "Fotball — UEFA Champions League ligafase runde 2 (13.–14. okt), inkl. norske Viking–Bayern München (13. okt) og Bodø/Glimt–Borussia Dortmund (14. okt)",
         "severity": "low",
-        "ageDays": 2.08,
+        "ageDays": 2.4,
         "recurrences": 2,
         "catalogMatched": true
       }
@@ -43,11 +43,11 @@
   },
   "amendRate": {
     "nearTermRate": 0,
-    "nearTermChecked": 4,
+    "nearTermChecked": 6,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-09-27T10:45:00Z",
+    "verifyRunAt": "2026-09-28T11:52:00Z",
     "windowRate": 0,
-    "windowChecks": 76,
+    "windowChecks": 86,
     "windowAmendments": 0,
     "windowCorrections": 7,
     "byDay": [
@@ -141,30 +141,35 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-09-28",
+        "checks": 10,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-28T11:25:48.755Z",
+    "buildCheckedAt": "2026-09-28T19:12:49.576Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-28T09:12:44.685Z",
-    "manifestAgeHours": 2.22,
+    "manifestGeneratedAt": "2026-09-28T11:25:52.332Z",
+    "manifestAgeHours": 7.78,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-09-27T10:45:00Z",
-    "verifyAgeHours": 24.68,
-    "corrections": 1,
+    "checkedAt": "2026-09-28T11:52:00Z",
+    "verifyAgeHours": 7.35,
+    "corrections": 0,
     "unresolved": 0,
-    "signals": [
-      "Ingen amend/remove noedvendig. Ingen in-progress fleredags-turneringer med foelgede utoevere krevde deltakelses-sjekk (golf-eventene starter 01.10, ikke i ga…"
-    ]
+    "signals": []
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-28T11:25:51.157Z"
+    "generatedAt": "2026-09-28T19:12:55.421Z"
   }
 }

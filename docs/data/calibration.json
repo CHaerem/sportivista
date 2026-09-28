@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-28T11:25:52.214Z",
+  "generatedAt": "2026-09-28T19:12:56.920Z",
   "windowDays": 180,
   "records": {
-    "used": 515,
+    "used": 525,
     "skipped": 9
   },
   "sources": {
@@ -122,13 +122,13 @@
       "reliability": null
     },
     "europeantour.com": {
-      "checks": 11,
-      "agreed": 11,
+      "checks": 12,
+      "agreed": 12,
       "corrections": 0,
       "bySport": {
         "golf": {
-          "checks": 11,
-          "agreed": 11
+          "checks": 12,
+          "agreed": 12
         }
       },
       "byField": {
@@ -137,25 +137,25 @@
           "agreed": 8
         },
         "time": {
-          "checks": 2,
-          "agreed": 2
+          "checks": 3,
+          "agreed": 3
         },
         "streaming": {
           "checks": 1,
           "agreed": 1
         }
       },
-      "lastChecked": "2026-09-26T10:05:00Z",
+      "lastChecked": "2026-09-28T11:52:00Z",
       "reliability": 1
     },
     "pgatour.com": {
-      "checks": 5,
-      "agreed": 5,
+      "checks": 6,
+      "agreed": 6,
       "corrections": 0,
       "bySport": {
         "golf": {
-          "checks": 5,
-          "agreed": 5
+          "checks": 6,
+          "agreed": 6
         }
       },
       "byField": {
@@ -164,11 +164,11 @@
           "agreed": 4
         },
         "time": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 2,
+          "agreed": 2
         }
       },
-      "lastChecked": "2026-08-21T05:57:00Z",
+      "lastChecked": "2026-09-28T11:52:00Z",
       "reliability": 1
     },
     "wimbledon.com": {
@@ -518,13 +518,13 @@
       "reliability": null
     },
     "hbomax.com": {
-      "checks": 5,
-      "agreed": 2,
+      "checks": 6,
+      "agreed": 3,
       "corrections": 0,
       "bySport": {
         "golf": {
-          "checks": 4,
-          "agreed": 1
+          "checks": 5,
+          "agreed": 2
         },
         "cycling": {
           "checks": 1,
@@ -533,12 +533,12 @@
       },
       "byField": {
         "streaming": {
-          "checks": 5,
-          "agreed": 2
+          "checks": 6,
+          "agreed": 3
         }
       },
-      "lastChecked": "2026-08-23T05:55:00Z",
-      "reliability": 0.4
+      "lastChecked": "2026-09-28T11:52:00Z",
+      "reliability": 0.5
     },
     "britishathletics.org.uk": {
       "checks": 1,
@@ -1026,22 +1026,26 @@
       "reliability": null
     },
     "obos-ligaen.no": {
-      "checks": 1,
-      "agreed": 1,
+      "checks": 3,
+      "agreed": 3,
       "corrections": 0,
       "bySport": {
         "football": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 3,
+          "agreed": 3
         }
       },
       "byField": {
         "time": {
+          "checks": 2,
+          "agreed": 2
+        },
+        "streaming": {
           "checks": 1,
           "agreed": 1
         }
       },
-      "lastChecked": "2026-07-24T07:45:00Z",
+      "lastChecked": "2026-09-28T11:52:00Z",
       "reliability": null
     },
     "uefa.com": {
@@ -1225,26 +1229,26 @@
       "reliability": 1
     },
     "fotball.no": {
-      "checks": 9,
-      "agreed": 9,
+      "checks": 11,
+      "agreed": 11,
       "corrections": 0,
       "bySport": {
         "football": {
-          "checks": 9,
-          "agreed": 9
+          "checks": 11,
+          "agreed": 11
         }
       },
       "byField": {
         "time": {
-          "checks": 7,
-          "agreed": 7
+          "checks": 9,
+          "agreed": 9
         },
         "existence": {
           "checks": 2,
           "agreed": 2
         }
       },
-      "lastChecked": "2026-09-27T10:45:00Z",
+      "lastChecked": "2026-09-28T11:52:00Z",
       "reliability": 1
     },
     "nss-sports.com": {
@@ -3352,17 +3356,40 @@
       "reliability": null
     },
     "strim.no": {
+      "checks": 3,
+      "agreed": 3,
+      "corrections": 0,
+      "bySport": {
+        "football": {
+          "checks": 3,
+          "agreed": 3
+        }
+      },
+      "byField": {
+        "streaming": {
+          "checks": 2,
+          "agreed": 2
+        },
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-09-28T11:52:00Z",
+      "reliability": null
+    },
+    "eslfaceitgroup.com": {
       "checks": 2,
       "agreed": 2,
       "corrections": 0,
       "bySport": {
-        "football": {
+        "esports": {
           "checks": 2,
           "agreed": 2
         }
       },
       "byField": {
-        "streaming": {
+        "existence": {
           "checks": 1,
           "agreed": 1
         },
@@ -3371,26 +3398,7 @@
           "agreed": 1
         }
       },
-      "lastChecked": "2026-09-27T10:45:00Z",
-      "reliability": null
-    },
-    "eslfaceitgroup.com": {
-      "checks": 1,
-      "agreed": 1,
-      "corrections": 0,
-      "bySport": {
-        "esports": {
-          "checks": 1,
-          "agreed": 1
-        }
-      },
-      "byField": {
-        "existence": {
-          "checks": 1,
-          "agreed": 1
-        }
-      },
-      "lastChecked": "2026-09-27T10:45:00Z",
+      "lastChecked": "2026-09-28T11:52:00Z",
       "reliability": null
     },
     "pro.eslgaming.com": {
@@ -3410,6 +3418,25 @@
         }
       },
       "lastChecked": "2026-09-27T10:45:00Z",
+      "reliability": null
+    },
+    "twitch.tv": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "esports": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "streaming": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-09-28T11:52:00Z",
       "reliability": null
     }
   }
