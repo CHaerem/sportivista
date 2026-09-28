@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-28T09:12:43.387Z",
+  "generatedAt": "2026-09-28T11:25:51.157Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "yellow",
+    "coverage": "green",
     "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
@@ -21,29 +21,22 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 2,
+    "openGaps": 1,
     "bySeverity": {
       "high": 0,
-      "medium": 1,
+      "medium": 0,
       "low": 1
     },
-    "oldestGapAgeDays": 1.99,
+    "oldestGapAgeDays": 2.08,
     "escalatable": 0,
-    "catalogMatched": 2,
-    "auditedAt": "2026-09-27T09:20:00Z",
+    "catalogMatched": 1,
+    "auditedAt": "2026-09-28T09:35:00Z",
     "gaps": [
       {
-        "interest": "Håndball — EHF Champions League (menn) 2026/27 gruppespill, Kolstad Håndball (+ Sander Sagosen)",
-        "severity": "medium",
-        "ageDays": 0.99,
-        "recurrences": 0,
-        "catalogMatched": true
-      },
-      {
-        "interest": "Fotball — UEFA Champions League ligafase runde 2 (13.–14. okt), inkl. norske Viking–Bayern (13. okt) og Bodø/Glimt–Dortmund (14. okt)",
+        "interest": "Fotball — UEFA Champions League ligafase runde 2 (13.–14. okt), inkl. norske Viking–Bayern München (13. okt) og Bodø/Glimt–Borussia Dortmund (14. okt)",
         "severity": "low",
-        "ageDays": 1.99,
-        "recurrences": 1,
+        "ageDays": 2.08,
+        "recurrences": 2,
         "catalogMatched": true
       }
     ]
@@ -54,17 +47,10 @@
     "nearTermAmended": 0,
     "verifyRunAt": "2026-09-27T10:45:00Z",
     "windowRate": 0,
-    "windowChecks": 81,
+    "windowChecks": 76,
     "windowAmendments": 0,
     "windowCorrections": 7,
     "byDay": [
-      {
-        "date": "2026-09-14",
-        "checks": 5,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-09-15",
         "checks": 4,
@@ -160,15 +146,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-28T09:12:40.090Z",
+    "buildCheckedAt": "2026-09-28T11:25:48.755Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-28T00:12:16.385Z",
-    "manifestAgeHours": 9.01,
+    "manifestGeneratedAt": "2026-09-28T09:12:44.685Z",
+    "manifestAgeHours": 2.22,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-09-27T10:45:00Z",
-    "verifyAgeHours": 22.46,
+    "verifyAgeHours": 24.68,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
@@ -179,6 +165,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-28T09:12:43.387Z"
+    "generatedAt": "2026-09-28T11:25:51.157Z"
   }
 }
