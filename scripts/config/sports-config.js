@@ -11,6 +11,8 @@ export const sportsConfig = {
 				leagues: [
 					{ code: "eng.1", name: "Premier League" },
 					{ code: "esp.1", name: "La Liga" },
+					{ code: "ita.1", name: "Serie A" },
+					{ code: "ger.1", name: "Bundesliga" },
 					{ code: "esp.copa_del_rey", name: "Copa del Rey" },
 					{ code: "uefa.champions", name: "Champions League" },
 					{ code: "nor.1", name: "Eliteserien" },

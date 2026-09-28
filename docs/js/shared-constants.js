@@ -251,6 +251,8 @@ function ssLiveState(event, now) {
 const SS_FOOTBALL_LEAGUES = [
 	{ code: 'eng.1', name: 'Premier League' },
 	{ code: 'esp.1', name: 'La Liga' },
+	{ code: 'ita.1', name: 'Serie A' },
+	{ code: 'ger.1', name: 'Bundesliga' },
 	{ code: 'nor.1', name: 'Eliteserien' },
 	{ code: 'nor.2', name: 'OBOS-ligaen' },
 	{ code: 'uefa.champions', name: 'Champions League' },

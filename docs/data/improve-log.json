@@ -1,17 +1,20 @@
 {
-	"runAt": "2026-09-21T13:48:00Z",
+	"runAt": "2026-09-28T15:11:00Z",
 	"action": "opened-pr",
-	"pr": "https://github.com/CHaerem/sportivista/pull/463",
-	"proposal": "Close the documented #461 follow-up: flip the norwegian-rights skill's Premier League line from 'TV 2 Play / TV 2 Sport Premium' to 'Viaplay', matching the already-shipped load-bearing code (scripts/lib/norwegian-rights.js ~line 174 + authority.json football:premier-league, both Viaplay). The skill is read by the research/verify agents to fill the where-to-watch field, so the stale line was actively mis-guiding them toward the wrong PL channel — the exact summary↔streaming mismatch #461 fixed in code.",
+	"pr": "https://github.com/CHaerem/sportivista/pull/466",
+	"proposal": "Make Serie A (ita.1) + Bundesliga (ger.1) WHOLESALE-fetched by the static ESPN football fetcher, mirroring the already-shipped La Liga (esp.1) pattern. Add both league codes to scripts/config/sports-config.js football leagues and to the client mirror SS_FOOTBALL_LEAGUES in docs/js/shared-constants.js (pinned to config by tests/live-leagues.test.js). Until now these two catalog-covered top-5 leagues had no static fetcher and were hand-boarded round-for-round as source:ai-research, costing a research pass every matchweek and leaving them structurally research-dependent.",
 	"evidence": [
-		"improve-log.json (previous run, 2026-09-14, PR #461) notes[0]: the SKILL.md PL line (line 39: 'Premier League → TV 2 Play') 'should also flip to Viaplay for agent-guidance consistency, but that write was harness-permission-gated in this run … the skill line is a documentation follow-up.' It was never done — the gate persisted.",
-		"research-log.json (2026-09-21T05:05:00Z) still lists 'PL authority.json-kanal TV 2→Viaplay' in its standing self-repair/improve flags; on inspection authority.json (line 805) and norwegian-rights.js (line 174) are already Viaplay, so the ONLY remaining stale PL=TV 2 reference in the repo was the skill line (verified: grep -rn 'premier league' across .claude/skills + scripts/agents returned exactly one hit).",
-		"norwegian-rights SKILL.md Maintenance section (lines 89-92): 'When a verified event contradicts this map … update the relevant line in the same commit and date-stamp the change. Never leave a known-wrong entry standing.' The PL line contradicted the shipped code.",
-		"tests/norwegian-rights.test.js line 15 already asserts 'Premier League → Viaplay'; the skill markdown is not pinned by any test, so the fix is safe. npm test: 88 files / 1537 tests pass."
+		"catalog.json notes (self-documented): 'Serie A/Bundesliga åpningsrundene boardet som ai-research (tidligere kun La Liga wholesale via ESPN esp.1) — flagget self-repair å legge ita.1/ger.1 i ESPN-fetcheren for varig wholesale-dekning.' The fix was flagged in the catalog itself and never done.",
+		"coverage-audit.json (2026-09-28T09:35:00Z) sourceIssues[medium]: 'Serie A / Bundesliga 10.–11. okt er IKKE boardet … avhenger av research (ita.1/ger.1 mangler i ESPN-fetcheren). … legg ita.1 (Serie A) + ger.1 (Bundesliga) i ESPN-fetcheren for varig wholesale-dekning, slik La Liga (esp.1) allerede har.'",
+		"research-log.json (2026-09-28T05:30:00Z) carries the same standing flag run-after-run: 'ita.1/ger.1 mangler i ESPN-fetcher (Serie A/Bundesliga research-avhengige)'.",
+		"scout-log.json: a stale/false 'Bundesliga 2026/27 imminent Sep 30' contract-breach signal recurred as pre-existing noise from Sep 24 through Sep 28 (~4 days). Wholesale-fetching Bundesliga lets its resumption round (10–11 Oct) board mechanically instead of via a hand-maintained tracked.json date.",
+		"catalog.json tier2.tournaments already lists Serie A + Bundesliga as covered; scripts/seed-registry/espn.js FOOTBALL_LEAGUES already seeds their clubs ('the leagues the research agent demonstrably fills (ita.1, ger.1 — measured)'). Only the fetcher config lagged.",
+		"npm test: 88 files / 1541 tests pass, incl. tests/live-leagues.test.js which derives its expected league set from sports-config and now validates the ita.1/ger.1 addition + its client mirror."
 	],
-	"expectedEffect": "research/verify agents now read Viaplay (not TV 2 Play) as the PL prior, consistent with the deterministic map and authority.json. No agent hand-sets a PL streaming[] to TV 2 Play that the build then has to clobber back to Viaplay; the where-to-watch guidance is internally consistent across code + skill.",
-	"howWeKnow": "verify-log stops re-correcting PL channels; research-log's standing 'PL channel' flag clears; no new summary↔streaming mismatch on PL events.",
+	"expectedEffect": "Serie A + Bundesliga fixtures land on the board from the static pipeline (free, hourly) the way La Liga already does, instead of being hand-boarded by the research agent each matchweek. Fewer research passes spent re-boarding two whole leagues; the recurring coverage-audit medium sourceIssue and the recurring Bundesliga false-imminent scout noise both resolve at the root. The football fetcher's Norwegian-first ordering + focused mode (unchanged) keeps domestic + marquee clubs ahead of the maxEvents(30) cut, exactly as it does today for esp.1.",
+	"howWeKnow": "coverage-audit.json stops emitting the ita.1/ger.1 medium sourceIssue; football.json contains ita.1/ger.1 fixtures; Serie A/Bundesliga rounds board as source:espn (not ai-research); scout-log stops carrying the Bundesliga imminent contract-breach.",
 	"notes": [
-		"Pure documentation-consistency fix in a protected-adjacent-but-permitted path (.claude/skills/** is auto-mergeable — only .claude/settings.json is a protected path). No code or schema touched; the load-bearing fix already shipped in #461."
+		"Smallest change that delivers the flagged fix: two league codes + the enforced client mirror; no maxEvents change (the existing Norwegian-first + focused ordering already protects domestic/marquee under the cut, same as esp.1 today).",
+		"iOS live-league parity (LiveLeague.forEvent) is left as an owner follow-up — adding ita.1/ger.1 there is optional (live scoring), touches the protected/separate ios track, and does not affect web board coverage."
 	]
 }
