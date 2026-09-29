@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T11:04:16.371Z",
+  "generatedAt": "2026-09-29T17:35:01.613Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -27,7 +27,7 @@
       "medium": 0,
       "low": 2
     },
-    "oldestGapAgeDays": 3.07,
+    "oldestGapAgeDays": 3.34,
     "escalatable": 1,
     "catalogMatched": 2,
     "auditedAt": "2026-09-29T09:45:00Z",
@@ -35,14 +35,14 @@
       {
         "interest": "Fotball — UEFA Champions League ligafase runde 2 (13.–14. okt), inkl. norske Viking–Bayern München (13. okt 21.00 CEST) og Bodø/Glimt–Borussia Dortmund (14. okt 21.00 CEST)",
         "severity": "low",
-        "ageDays": 3.07,
+        "ageDays": 3.34,
         "recurrences": 3,
         "catalogMatched": true
       },
       {
         "interest": "Sjakk — Magnus Carlsen, neste turnering (rapportert «Total Chess 2026 Pilot» ~3.–15. okt)",
         "severity": "low",
-        "ageDays": 0.06,
+        "ageDays": 0.33,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -52,9 +52,9 @@
     "nearTermRate": 0,
     "nearTermChecked": 6,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-09-28T11:52:00Z",
+    "verifyRunAt": "2026-09-29T11:28:42Z",
     "windowRate": 0,
-    "windowChecks": 82,
+    "windowChecks": 94,
     "windowAmendments": 0,
     "windowCorrections": 6,
     "byDay": [
@@ -148,34 +148,43 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-09-29",
+        "checks": 12,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-29T11:04:12.702Z",
+    "buildCheckedAt": "2026-09-29T17:34:57.862Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-29T09:21:03.393Z",
-    "manifestAgeHours": 1.72,
+    "manifestGeneratedAt": "2026-09-29T11:04:19.460Z",
+    "manifestAgeHours": 6.51,
     "staleFiles": [
       {
         "file": "golf.json",
         "sourceLastUpdated": "2026-09-27T19:30:24.963Z",
-        "ageHours": 39.56
+        "ageHours": 46.08
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-09-28T11:52:00Z",
-    "verifyAgeHours": 23.2,
-    "corrections": 0,
+    "checkedAt": "2026-09-29T11:28:42Z",
+    "verifyAgeHours": 6.11,
+    "corrections": 1,
     "unresolved": 0,
-    "signals": []
+    "signals": [
+      "Golf-turneringene (Alfred Dunhill Links, Bank of Utah) starter 1. okt — ikke in-progress, ingen WP-95 deltaker-sjekk nødvendig ennå. Øvrige kandidater ble ve…"
+    ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-29T11:04:16.370Z"
+    "generatedAt": "2026-09-29T17:35:01.612Z"
   }
 }
