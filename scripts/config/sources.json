@@ -1531,6 +1531,44 @@
 			"notes": "Arrangøren av turneringsserien Magnus Carlsen spiller — primærkilde på rundetid."
 		},
 		{
+			"id": "world-chess",
+			"name": "World Chess (Total Chess)",
+			"publisher": "World Chess",
+			"url": "https://worldchess.com",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"chess:total-chess"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-09-29"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt har navngitte AI-agent-direktiver (GPTBot, ClaudeBot, anthropic-ai, Google-Extended m.fl.) men de forbyr KUN /*live-ratings/*-stiene; /news/ (der terminlisten leses) er ikke omfattet av noe TDM-forbehold. On-demand-agenter (Claude-User, ChatGPT-User) har eksplisitt Allow: /.",
+				"evidence": [
+					"https://worldchess.com/robots.txt"
+				],
+				"checkedAt": "2026-09-29"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "robots.txt sperrer /*live-ratings/*, UTM-parametre, /en/-lokaliserte stier og profilsider; /news/ (terminliste/format) er tillatt. Ikke sjekket vilkårstekst denne kjøringen.",
+				"checkedAt": "2026-09-29"
+			},
+			"calibrationKey": "worldchess.com",
+			"notes": "REGISTRERT 2026-09-29 (research). FIDEs kommersielle partner og arrangør av Total Chess World Championship Tour (pilot Budapest 10.–21. nov 2026, tour-lansering 2027). Primærkilde på rundetid for chess:total-chess. Sender også omtale via chess.com/chess24; kringkastingsdetaljer for pilot-en ennå ikke bekreftet (worldchess: «Full broadcast details have yet to be confirmed»)."
+		},
+		{
 			"id": "handballforbundet",
 			"name": "Norges Håndballforbund",
 			"publisher": "Norges Håndballforbund",
