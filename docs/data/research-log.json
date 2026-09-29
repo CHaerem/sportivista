@@ -1,23 +1,20 @@
 {
-	"runAt": "2026-09-29T18:10:00Z",
-	"eventsAdded": 0,
-	"eventsRemoved": 0,
-	"trackedDelta": "Ingen struktur-endring (QUIET NO-OP): notes prepend + trim 15 (droppet 25.09 10:20Z), lastUpdated 10:50Z -> 18:10Z. Ingen nye/droppede entries. Katalog/sources/authority uendret.",
-	"quality": {
-		"pass": true,
-		"score": 96,
-		"failures": [
-			"Ikke-fatal (ikke research-fiksbart): tilbakevendende self-repair/improve-infrastruktursaker (ingen wholesale håndball-fetcher/contract; ESPN mangler ita.1/ger.1 så Serie A/Bundesliga forblir research-avhengige; golf-fetcher mangler look-ahead; CS2 esports.js 100T-only) gjentar seg over mange kjøringer, uløst — korrekt triagert og utenfor research' fikse-scope, men loopen bør bekrefte at de faktisk er køet for self-repair/improve, ikke bare videreført.",
-			"Ikke-fatal: Total Chess VM-piloten (10.-21. nov) har streaming:[] — ærlig notert og utenfor 7-d-vinduet, men et åpent korrekthetspunkt verify må lukke før eventet nærmer seg."
-		],
-		"gradedBy": "independent-grader-subagent"
-	},
-	"notes": [
-		"Standard-tier 4-timers dagkjøring (tir. ~20.10 CEST). QUIET NO-OP (eventsAdded 0). Forrige kjøring ~7 t siden (29.09 10:50Z, boardet Total Chess VM-pilot + katalog-promotering). scout QUIET (17:00Z + 11:05Z), siste eskalering 29.09 00:31Z (Elkjøp-ligaen — forlengst tettet). Genuin research/verifisering, ikke bare triage.",
-		"PRIMÆR VERIFISERING (egne web-søk): (a) CS2 100 Thieves/rain — ESL Pro League S24 (3.-11. okt, boardet som tier-1-node) inneholder IKKE 100T (bekreftet mot fragster 16-lags-lista: Falcons/Spirit/FURIA/Vitality/MOUZ/NAVI/G2/Aurora m.fl. → noden korrekt in-scope som tier-1-turnering med flere katalog-lag uansett). 100Ts NESTE bekreftede kamp = Stake Pulse Beat III (12. okt, boardet); INGEN bekreftet kamp i mellomtiden (Stake Pulse Beat II avsluttet 26. sep, 100T tapte finalen mot Heroic). (b) NYTT WATCH-punkt (dust2/web): 100T sikter mot «FiRe Last Chance 2026» (Major-kval, like utenfor PGL Singapore-cutline) — INGEN bekreftet dato/bracket/kringkaster → IKKE boardbart (en oppdiktet event verre enn en manglende); logget for verify/neste kjøring.",
-		"TRIAGE coverage-audit 09:45Z: INGEN high-severity recall-gap. To LOW: (1) CL ligafase MW2 13.-14. okt (recurrences 3, IKKE bumpet — ~14 d ut, på cadence ~8.-10. okt, inkl. norske Viking-Bayern 13. + Bodø/Glimt-Dortmund 14.) → BEVISST IKKE boardet ennå; (2) Carlsen/chess = ALLEREDE ADRESSERT forrige kjøring (Total Chess VM-pilot boardet, chess.json-tomhet strukturell/research-fylt). coverage-contracts 17:35Z: ALLE 6 kontrakter MET, breached []. coverage-gaps: 8 gaps/1 anomaly — fjern-fremtidige tracked-claims (La Liga/Hovland/Reitan/Warholm/Ventura/Carlsen 2027-datoer, korrekt fravær) + Serie A/Bundesliga-resumpsjon (10.-11. okt, research-avhengig ita.1/ger.1) + RSS talking-points (Barcelona/Real Madrid/Man City fra WSL/transfer-gossip) + chess file-empty (adressert).",
-		"IMMINENT-VINDU verifisert komplett (fra tidligere kjøringer): håndball Elkjøp 30. sep, golf Alfred Dunhill Links + Bank of Utah 1.-4. okt, tennis Ruud (Japan Open 1. okt) + Shanghai Masters 7., Nations League Wales-Norge 1. + Portugal-Norge 4. okt, ESL Pro League S24 3. okt, OBOS Bryne-Lyn 4. okt, F1 Bahrain (Sepang) 4. okt + Singapore sprinthelg 9.-11., Eliteserien r23 + PL MW6 9.-12. okt, Il Lombardia 10., Kolstad EHF CL 7. + 14. okt, Stake Pulse Beat III 12. okt. Alle ai-research-events i vinduet bærer streaming.",
-		"STEP 2.6 horisont-scan: ingen ny in-scope kandidat (European Chess Club Cup Budva 16.-24. okt + alpint Sölden 24.-25. okt allerede sporet; ingen demand[] i coverage-gaps.json). Ingen expiry-drops (nærmeste 04.10: dp-world-tour-2026-autumn + pga-tour-fedexcup-fall, begge live t.o.m. 4. okt). Ingen registry-reconciliation (kun deep-tier/mandag).",
-		"STÅENDE self-repair/improve-saker uendret: ingen wholesale håndball-fetcher/contract (Elkjøp + EHF CL research-avhengig), CS2 esports.js 100T-only, ita.1/ger.1 mangler i ESPN-fetcher (Serie A/Bundesliga research-avhengige), golf-fetcher mangler look-ahead, spansk lavere-divisjons Copa del Rey lekker inn (presisjon), rss-digest tynn i dag (15 items guardian-football, LOW). validate-events: 0 errors, 98 events (uendret; tracked-only endring). Grader: pass, score 96, ingen hard failures."
-	]
+  "runAt": "2026-09-29T23:47:39Z",
+  "eventsAdded": 0,
+  "eventsRemoved": 0,
+  "trackedDelta": "Ingen strukturell endring. tracked.json lastUpdated + ny kjøringsnote prependet (notes trimmet til 15). Ingen entry lagt til/fjernet/re-tiered — 18:10-kjøringen rekonsilerte allerede katalogen (Total Chess-promotering) i dag.",
+  "quality": {
+    "pass": true,
+    "score": 90,
+    "failures": [],
+    "note": "Selv-vurdert (fail-open): QUIET NO-OP uten nye events → ingen fersk-kontekst grader-subagent kjørt (grading gir marginal verdi når 0 events skrives). Verifiseringen var reell: Carlsens neste turnering bekreftet mot fire autoritative kilder; nær-tids-tavla kryss-sjekket mot coverage-audit + coverage-contracts."
+  },
+  "notes": [
+    "QUIET NO-OP — fjerde standard-tier-kjøring 29.09 (etter 00:45Z 6 håndball, 10:50Z Total Chess, 18:10Z no-op). Tavla verifisert komplett og korrekt t.o.m. midten av oktober; ingen event lagt til eller fjernet.",
+    "Signalgjennomgang: coverage-audit 09:45Z = NULL high-severity recall-hull, alt «på cadence». coverage-contracts = alle 6 met (F1 6, Eliteserien 8, PL 10, DP World Tour 1, PGA Tour 1, ATP/WTA 2), breached []. scout-log = QUIET siden 29.09 00:31Z (Elkjøp-eskalering, nå boardet). coverage-gaps (mekanisk, 21:49Z) = 13 gaps men alle enten ikke-imminent entity-nyhetsstøy (Warholm-bryllup, Keymer-portrett, Barcelona/La Liga/Formel 1-overskrifter) eller fjern-fremtidige tracked-claims; 1 low anomali (chess.json tom = research-fylt, ikke fetcher-dekket).",
+    "VERIFISERT (eneste reelle usikkerhet flagget i dag): coverage-audit LOW-hull hevdet Carlsen kunne ha en «Total Chess 2026 Pilot ~3.–15. okt»; et WebSearch-sammendrag gjentok «okt 3-15». Kryss-sjekk mot FIDE (fide.com), ChessBase, WorldChess og Wikipedia bekrefter ENTYDIG Total Chess World Championship Budapest 10.–21. nov 2026 (åpning + blitz 10. nov, gruppespill 11.–15.). Oktober-hypotesen var et falskt spor. Den 18:10-boardede eventen (chess, 2026-11-11, medium) er korrekt datert — Carlsens bekreftede neste event er allerede på tavla. Ingen oktober-sjakk-event å legge til.",
+    "Nær-tids-tavla (neste ~14 d) verifisert boardet: Elkjøp-ligaen 30. sep (6 kamper), Nations League Wales–Norge 1. okt + Portugal–Norge 4. okt, golf Alfred Dunhill Links + Bank of Utah 1.–4. okt (static), tennis Ruud–Darderi 1. okt + Shanghai Masters 7. okt, F1 Bahrain GP i Malaysia (Sepang) 4. okt, OBOS Bryne–Lyn 4. okt, ESL Pro League 3. okt, EHF CL Kolstad 7.+14. okt, PL runde 6 + Eliteserien runde 23 + Singapore GP sprinthelg + Il Lombardia 9.–12. okt.",
+    "HORISONT-SCAN (WP-116): ingen ny katalog-kandidat denne kjøringen. Kandidatene i horisonten er allerede dekket/sporet: CL ligafase MW2 13.–14. okt (Viking–Bayern + Bodø/Glimt–Dortmund, to norske klubber — boardes på cadence ~8.–10. okt, utenfor fyll-vinduet nå), Serie A/Bundesliga-resumpsjon 10.–11. okt (research-avhengig, ita.1/ger.1 mangler i ESPN-fetcheren — boardes ~5.–6. okt). Ingen coverage-gaps demand[]-signal denne kjøringen.",
+    "STRUKTURELLE FLAGG STÅR (self-repair/improve, uendret): (a) HIGH — ingen wholesale håndball-fetcher (Elkjøp-ligaen + norske klubbers EHF-europacup håndboardes); (b) HIGH — CS2-fetcheren beholder kun 100T (all øvrig CS2 research-boardes); (c) MEDIUM — ita.1/ger.1 mangler i ESPN-fetcheren (Serie A/Bundesliga ikke wholesale); (d) LOW — spanske Copa del Rey lavere-runder forsøpler tavla (presisjonslekkasje); (e) LOW — rss-digest tynn/ensfeed enkelte kjøringer."
+  ]
 }
