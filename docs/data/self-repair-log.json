@@ -1,16 +1,17 @@
 {
-	"runAt": "2026-09-28T14:20:00Z",
-	"action": "abandoned",
-	"pr": null,
-	"diagnosed": "REPEAT FINDING (open, human-only fix — tracking issue #430, labelled self-repair, updated 2026-09-26): the Research agent's ESCALATION path remains 100% broken. Every `schedule` research run succeeds and every `workflow_dispatch` (escalation) run fails, with no exceptions across the last 20 runs. The most recent escalation, run 36020768893 (workflow_dispatch, 2026-09-24T15:31Z), failed on both the Fable-5 deep step and the Opus-4.8 deep-fallback step with 'Workflow initiated by non-human actor: github-actions (type: Bot). Add bot to allowed_bots list or use *.' Scout and coverage-critic escalate via `gh workflow run research-agent.yml -f tier=deep` (scripts/escalate-research.js) using the job's GITHUB_TOKEN, so the dispatched actor is github-actions[bot], which anthropics/claude-code-action@v1 rejects unless allow-listed via its `allowed_bots` input. NOT quota/transient: usage-state.json is green (session 4%, week 5%), the failure is deterministic by trigger, and the dispatch call itself reports success so escalations fail SILENTLY — the scout/coverage-critic -> deep-research recall fast-lane is dead. Re-confirmed unchanged since 2026-09-26 (no new dispatch has occurred since run 36020768893).",
-	"fixed": [],
-	"autoMergeEligible": false,
+	"runAt": "2026-09-29T13:14:00Z",
+	"action": "opened-pr",
+	"pr": "https://github.com/CHaerem/sportivista/pull/467",
+	"diagnosed": "tests/sources-schema.test.js failed: sources.json was not sorted by id. The research agent (commit 18a66006f) inserted the new 'world-chess' source entry after 'grand-chess-tour' instead of in alphabetical id order, breaking the determinism check that keeps a re-seed diff clean.",
+	"fixed": [
+		"Moved the world-chess source entry (unchanged content) to its sorted position between world-athletics and world-of-speed in scripts/config/sources.json"
+	],
+	"autoMergeEligible": true,
 	"notes": [
-		"FIX (human must author — protected path): add `allowed_bots: \"github-actions\"` to the `with:` block of each anthropics/claude-code-action@v1 step in .github/workflows/research-agent.yml (the standard Opus-4.8 step, the Fable-5 deep step, and the Opus-4.8 deep-fallback step). Scope to the one bot login `github-actions` (the actor the error reports), NOT `*` — this is a public repo and `*` would let arbitrary external Apps invoke the action. The two deep steps are the ones actually reached by escalation; adding it to all three keeps the invocations uniform. This restores the scout/coverage-critic -> deep-research escalation loop. Full ready-to-apply diff is in issue #430.",
-		"Could NOT open a PR: .github/workflows/** is a harness-protected automation path. Confirmed this run I am running as a CI agent (GITHUB_ACTIONS=true, CI=true). The protect-automation.js PreToolUse hook hard-blocks any CI agent from writing that path (exit 2) — it fired on my Edit to research-agent.yml this run, exactly as designed and as documented on prior runs. By design a human must author workflow changes; the hook applies to EVERY CI agent, self-repair included. Every fix for this root cause lives in a workflow file, so there is no non-protected-path alternative. Did not attempt to circumvent the hook; branch created, edit blocked, branch deleted, working tree left clean.",
-		"Did NOT add another issue comment: tracking issue #430 already carries a re-confirmation from 2026-09-26 with evidence IDENTICAL to today's (same last-failing run 36020768893, same green health sweep, same `grep allowed_bots` = no matches). No new escalation has fired since, so there is no new evidence. A second 'still broken' comment two days later would be pure noise; the owner already has current, actionable evidence and the exact diff.",
-		"Proof of diagnosis: `gh run list --workflow=research-agent.yml --limit 20` shows workflow_dispatch=failure and schedule=success with no exceptions; the last dispatch run 36020768893 carries the allowed_bots 'non-human actor' error on both deep steps; Grep for `allowed_bots` across .github/workflows/ = no matches (still unset).",
-		"Other health checks clean this run: full `npm test` 1541/1541 pass (88 files); `node scripts/validate-events.js` 0 errors (WP-242/246 near-term informational warnings only, non-blocking); build-alert.json ok:true (94 events); publish-freshness.json status=fresh (lag 0h, live==repo at 2026-09-28T09:12:44Z); usage-state.json green (session 4%, week 5%); no open self-repair/ PRs; all fetcher output files (football/golf/tennis/f1/chess/cycling/esports) well-formed and non-empty; no stale-retained coverage anomalies.",
-		"Other recent GH failures are out of scope / stale: the most recent CI failure (33673780090, 2026-09-02) is 26 days old and every CI run since has succeeded (setup/runner-provisioning transient); the older Research/Visual-QA agent failures predate it and are likewise superseded or intermittent, not deterministic breakage."
+		"Pure reordering, no field content changed.",
+		"Proof: sources.json still valid JSON; tests/sources-schema.test.js 19/19 pass (was failing); full npm test 1541/1541 pass.",
+		"Not a protected path — auto-merge eligible once the workflow re-gates tests.",
+		"Other signals healthy: publish-freshness=fresh (0h lag), build-alert ok (98 events), usage green. Recent failed runs are all Pages-deploy failures from March-April 2026, not current breakage.",
+		"validate-events.js reports only warnings (WP-242/246 weak-basis, landing-page URLs), no errors — out of self-repair scope (content, owned by research/verify)."
 	]
 }
