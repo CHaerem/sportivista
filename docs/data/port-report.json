@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T09:11:51.508Z",
+  "generatedAt": "2026-09-30T10:54:02.083Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -21,29 +21,22 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 2,
+    "openGaps": 1,
     "bySeverity": {
       "high": 0,
       "medium": 0,
-      "low": 2
+      "low": 1
     },
-    "oldestGapAgeDays": 3.99,
+    "oldestGapAgeDays": 4.06,
     "escalatable": 1,
-    "catalogMatched": 2,
-    "auditedAt": "2026-09-29T09:45:00Z",
+    "catalogMatched": 1,
+    "auditedAt": "2026-09-30T09:55:00Z",
     "gaps": [
       {
         "interest": "Fotball — UEFA Champions League ligafase runde 2 (13.–14. okt), inkl. norske Viking–Bayern München (13. okt 21.00 CEST) og Bodø/Glimt–Borussia Dortmund (14. okt 21.00 CEST)",
         "severity": "low",
-        "ageDays": 3.99,
-        "recurrences": 3,
-        "catalogMatched": true
-      },
-      {
-        "interest": "Sjakk — Magnus Carlsen, neste turnering (rapportert «Total Chess 2026 Pilot» ~3.–15. okt)",
-        "severity": "low",
-        "ageDays": 0.98,
-        "recurrences": 0,
+        "ageDays": 4.06,
+        "recurrences": 4,
         "catalogMatched": true
       }
     ]
@@ -54,17 +47,10 @@
     "nearTermAmended": 0,
     "verifyRunAt": "2026-09-29T11:28:42Z",
     "windowRate": 0,
-    "windowChecks": 94,
+    "windowChecks": 85,
     "windowAmendments": 0,
-    "windowCorrections": 6,
+    "windowCorrections": 5,
     "byDay": [
-      {
-        "date": "2026-09-16",
-        "checks": 9,
-        "amendments": 0,
-        "corrections": 1,
-        "rate": 0
-      },
       {
         "date": "2026-09-17",
         "checks": 5,
@@ -160,15 +146,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-30T09:11:45.207Z",
+    "buildCheckedAt": "2026-09-30T10:53:56.211Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-30T00:57:03.819Z",
-    "manifestAgeHours": 8.25,
+    "manifestGeneratedAt": "2026-09-30T09:11:53.152Z",
+    "manifestAgeHours": 1.7,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-09-29T11:28:42Z",
-    "verifyAgeHours": 21.72,
+    "verifyAgeHours": 23.42,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
@@ -179,6 +165,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-30T09:11:51.508Z"
+    "generatedAt": "2026-09-30T10:54:02.074Z"
   }
 }
