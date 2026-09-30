@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T10:54:02.083Z",
+  "generatedAt": "2026-09-30T16:39:27.040Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -27,7 +27,7 @@
       "medium": 0,
       "low": 1
     },
-    "oldestGapAgeDays": 4.06,
+    "oldestGapAgeDays": 4.3,
     "escalatable": 1,
     "catalogMatched": 1,
     "auditedAt": "2026-09-30T09:55:00Z",
@@ -35,7 +35,7 @@
       {
         "interest": "Fotball — UEFA Champions League ligafase runde 2 (13.–14. okt), inkl. norske Viking–Bayern München (13. okt 21.00 CEST) og Bodø/Glimt–Borussia Dortmund (14. okt 21.00 CEST)",
         "severity": "low",
-        "ageDays": 4.06,
+        "ageDays": 4.3,
         "recurrences": 4,
         "catalogMatched": true
       }
@@ -43,11 +43,11 @@
   },
   "amendRate": {
     "nearTermRate": 0,
-    "nearTermChecked": 6,
+    "nearTermChecked": 12,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-09-29T11:28:42Z",
+    "verifyRunAt": "2026-09-30T12:05:00Z",
     "windowRate": 0,
-    "windowChecks": 85,
+    "windowChecks": 97,
     "windowAmendments": 0,
     "windowCorrections": 5,
     "byDay": [
@@ -141,30 +141,37 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-09-30",
+        "checks": 12,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-30T10:53:56.211Z",
+    "buildCheckedAt": "2026-09-30T16:39:20.155Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-30T09:11:53.152Z",
-    "manifestAgeHours": 1.7,
+    "manifestGeneratedAt": "2026-09-30T10:54:03.688Z",
+    "manifestAgeHours": 5.76,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-09-29T11:28:42Z",
-    "verifyAgeHours": 23.42,
+    "checkedAt": "2026-09-30T12:05:00Z",
+    "verifyAgeHours": 4.57,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
-      "Golf-turneringene (Alfred Dunhill Links, Bank of Utah) starter 1. okt — ikke in-progress, ingen WP-95 deltaker-sjekk nødvendig ennå. Øvrige kandidater ble ve…"
+      "Rolex Shanghai Masters: hovedtrekningen er nå publisert (Wikipedia) — Casper Ruud bekreftet med, seedet nr. 21. Oppgradert fra medium/entry-list-basert til h…"
     ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-30T10:54:02.074Z"
+    "generatedAt": "2026-09-30T16:39:27.040Z"
   }
 }

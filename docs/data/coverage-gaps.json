@@ -1,62 +1,29 @@
 {
-  "generatedAt": "2026-09-30T10:54:03.487Z",
-  "gapCount": 10,
+  "generatedAt": "2026-09-30T16:39:28.237Z",
+  "gapCount": 7,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Karsten Warholm",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Karsten Warholm og Oda Djupvik giftet seg: – Vi er veldig lykkelige",
-      "link": "https://www.nrk.no/sport/karsten-warholm-giftet-seg-i-hemmelighet_-_-vi-er-veldig-lykkelige-1.18039921",
-      "feed": "nrk-sport",
+      "entity": "Arsenal",
+      "type": "imminent",
+      "imminent": true,
+      "headline": "Paris FC v Arsenal: Women’s Champions League – live",
+      "link": "https://www.theguardian.com/football/live/2026/sep/30/paris-fc-v-arsenal-womens-champions-league-live",
+      "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-09-30T10:54:02.317Z"
+      "detectedAt": "2026-09-30T16:39:27.254Z"
     },
     {
       "kind": "entity",
-      "entity": "Warholm",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Karsten Warholm og Oda Djupvik giftet seg: – Vi er veldig lykkelige",
-      "link": "https://www.nrk.no/sport/karsten-warholm-giftet-seg-i-hemmelighet_-_-vi-er-veldig-lykkelige-1.18039921",
-      "feed": "nrk-sport",
+      "entity": "Champions League",
+      "type": "imminent",
+      "imminent": true,
+      "headline": "Paris FC v Arsenal: Women’s Champions League – live",
+      "link": "https://www.theguardian.com/football/live/2026/sep/30/paris-fc-v-arsenal-womens-champions-league-live",
+      "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-09-30T10:54:02.317Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Barcelona",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Dårlig skadenytt for Barcelona i Brasil-seier – smell for Raphinha",
-      "link": "https://www.nrk.no/sport/darlig-skadenytt-for-barcelona-i-brasil-seier-_-smell-for-raphinha-1.18039948",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-09-30T10:54:02.317Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "La Liga",
-      "type": "missing",
-      "imminent": false,
-      "headline": "La Liga-presidenten: – Manchester City bør få strengeste mulige straff",
-      "link": "https://www.nrk.no/sport/la-liga-presidenten_-_-manchester-city-bor-fa-strengeste-mulige-straff-1.18039760",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-09-30T10:54:02.317Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Formel 1",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Formel 1: Ringreven Alonso har bestemt seg – signerte ny kontrakt",
-      "link": "https://www.nrk.no/sport/formel-1_-ringreven-alonso-har-bestemt-seg-_-signerte-ny-kontrakt-1.18039922",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-09-30T10:54:02.317Z"
+      "detectedAt": "2026-09-30T16:39:27.254Z"
     },
     {
       "kind": "tracked-claim",
@@ -68,7 +35,7 @@
       "claimedDate": "2027-07-15T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "la-liga-2026-27",
-      "detectedAt": "2026-09-30T10:54:03.283Z"
+      "detectedAt": "2026-09-30T16:39:28.021Z"
     },
     {
       "kind": "tracked-claim",
@@ -80,7 +47,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "serie-a-2026-27",
-      "detectedAt": "2026-09-30T10:54:03.283Z"
+      "detectedAt": "2026-09-30T16:39:28.021Z"
     },
     {
       "kind": "tracked-claim",
@@ -92,7 +59,7 @@
       "claimedDate": "2026-10-06T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "bundesliga-2026-27",
-      "detectedAt": "2026-09-30T10:54:03.283Z"
+      "detectedAt": "2026-09-30T16:39:28.021Z"
     },
     {
       "kind": "tracked-claim",
@@ -104,7 +71,7 @@
       "claimedDate": "2027-07-17T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "viktor-hovland",
-      "detectedAt": "2026-09-30T10:54:03.283Z"
+      "detectedAt": "2026-09-30T16:39:28.021Z"
     },
     {
       "kind": "tracked-claim",
@@ -116,7 +83,7 @@
       "claimedDate": "2027-07-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "karsten-warholm",
-      "detectedAt": "2026-09-30T10:54:03.283Z"
+      "detectedAt": "2026-09-30T16:39:28.021Z"
     }
   ],
   "anomalies": [
@@ -125,7 +92,7 @@
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-09-30T10:54:03.324Z"
+      "detectedAt": "2026-09-30T16:39:28.053Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
