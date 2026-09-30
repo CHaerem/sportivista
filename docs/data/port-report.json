@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-29T21:49:52.907Z",
+  "generatedAt": "2026-09-30T00:57:02.159Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
     "amendRate": "green",
-    "silentStops": "yellow",
+    "silentStops": "green",
     "participantStatus": "green",
     "contracts": "green"
   },
@@ -27,7 +27,7 @@
       "medium": 0,
       "low": 2
     },
-    "oldestGapAgeDays": 3.51,
+    "oldestGapAgeDays": 3.64,
     "escalatable": 1,
     "catalogMatched": 2,
     "auditedAt": "2026-09-29T09:45:00Z",
@@ -35,14 +35,14 @@
       {
         "interest": "Fotball — UEFA Champions League ligafase runde 2 (13.–14. okt), inkl. norske Viking–Bayern München (13. okt 21.00 CEST) og Bodø/Glimt–Borussia Dortmund (14. okt 21.00 CEST)",
         "severity": "low",
-        "ageDays": 3.51,
+        "ageDays": 3.64,
         "recurrences": 3,
         "catalogMatched": true
       },
       {
         "interest": "Sjakk — Magnus Carlsen, neste turnering (rapportert «Total Chess 2026 Pilot» ~3.–15. okt)",
         "severity": "low",
-        "ageDays": 0.5,
+        "ageDays": 0.63,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -160,21 +160,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-09-29T21:49:46.137Z",
+    "buildCheckedAt": "2026-09-30T00:56:56.230Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-09-29T17:35:03.247Z",
-    "manifestAgeHours": 4.25,
-    "staleFiles": [
-      {
-        "file": "golf.json",
-        "sourceLastUpdated": "2026-09-27T19:30:24.963Z",
-        "ageHours": 50.32
-      }
-    ]
+    "manifestGeneratedAt": "2026-09-29T21:49:54.405Z",
+    "manifestAgeHours": 3.12,
+    "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-09-29T11:28:42Z",
-    "verifyAgeHours": 10.35,
+    "verifyAgeHours": 13.47,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
@@ -185,6 +179,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-09-29T21:49:52.907Z"
+    "generatedAt": "2026-09-30T00:57:02.159Z"
   }
 }
