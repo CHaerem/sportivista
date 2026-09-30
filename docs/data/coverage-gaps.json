@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T00:57:03.631Z",
+  "generatedAt": "2026-09-30T09:11:52.934Z",
   "gapCount": 10,
   "anomalyCount": 1,
   "gaps": [
@@ -12,7 +12,7 @@
       "link": "https://www.nrk.no/sport/karsten-warholm-giftet-seg-i-hemmelighet_-_-vi-er-veldig-lykkelige-1.18039921",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-09-30T00:57:02.367Z"
+      "detectedAt": "2026-09-30T09:11:51.782Z"
     },
     {
       "kind": "entity",
@@ -23,7 +23,7 @@
       "link": "https://www.nrk.no/sport/karsten-warholm-giftet-seg-i-hemmelighet_-_-vi-er-veldig-lykkelige-1.18039921",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-09-30T00:57:02.367Z"
+      "detectedAt": "2026-09-30T09:11:51.782Z"
     },
     {
       "kind": "entity",
@@ -34,7 +34,7 @@
       "link": "https://www.nrk.no/sport/darlig-skadenytt-for-barcelona-i-brasil-seier-_-smell-for-raphinha-1.18039948",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-09-30T00:57:02.367Z"
+      "detectedAt": "2026-09-30T09:11:51.782Z"
     },
     {
       "kind": "entity",
@@ -45,7 +45,7 @@
       "link": "https://www.nrk.no/sport/la-liga-presidenten_-_-manchester-city-bor-fa-strengeste-mulige-straff-1.18039760",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-09-30T00:57:02.367Z"
+      "detectedAt": "2026-09-30T09:11:51.782Z"
     },
     {
       "kind": "entity",
@@ -56,7 +56,7 @@
       "link": "https://www.nrk.no/sport/formel-1_-ringreven-alonso-har-bestemt-seg-_-signerte-ny-kontrakt-1.18039922",
       "feed": "nrk-sport",
       "matchCount": 2,
-      "detectedAt": "2026-09-30T00:57:02.367Z"
+      "detectedAt": "2026-09-30T09:11:51.782Z"
     },
     {
       "kind": "tracked-claim",
@@ -68,7 +68,7 @@
       "claimedDate": "2027-07-15T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "la-liga-2026-27",
-      "detectedAt": "2026-09-30T00:57:02.892Z"
+      "detectedAt": "2026-09-30T09:11:52.726Z"
     },
     {
       "kind": "tracked-claim",
@@ -80,7 +80,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "serie-a-2026-27",
-      "detectedAt": "2026-09-30T00:57:02.892Z"
+      "detectedAt": "2026-09-30T09:11:52.726Z"
     },
     {
       "kind": "tracked-claim",
@@ -92,7 +92,7 @@
       "claimedDate": "2026-10-06T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "bundesliga-2026-27",
-      "detectedAt": "2026-09-30T00:57:02.892Z"
+      "detectedAt": "2026-09-30T09:11:52.726Z"
     },
     {
       "kind": "tracked-claim",
@@ -104,7 +104,7 @@
       "claimedDate": "2027-07-17T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "viktor-hovland",
-      "detectedAt": "2026-09-30T00:57:02.892Z"
+      "detectedAt": "2026-09-30T09:11:52.726Z"
     },
     {
       "kind": "tracked-claim",
@@ -116,7 +116,7 @@
       "claimedDate": "2027-07-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "karsten-warholm",
-      "detectedAt": "2026-09-30T00:57:02.892Z"
+      "detectedAt": "2026-09-30T09:11:52.726Z"
     }
   ],
   "anomalies": [
@@ -125,7 +125,7 @@
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-09-30T00:57:02.926Z"
+      "detectedAt": "2026-09-30T09:11:52.766Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
