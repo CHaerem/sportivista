@@ -1,17 +1,16 @@
 {
-	"runAt": "2026-09-29T13:14:00Z",
-	"action": "opened-pr",
-	"pr": "https://github.com/CHaerem/sportivista/pull/467",
-	"diagnosed": "tests/sources-schema.test.js failed: sources.json was not sorted by id. The research agent (commit 18a66006f) inserted the new 'world-chess' source entry after 'grand-chess-tour' instead of in alphabetical id order, breaking the determinism check that keeps a re-seed diff clean.",
-	"fixed": [
-		"Moved the world-chess source entry (unchanged content) to its sorted position between world-athletics and world-of-speed in scripts/config/sources.json"
-	],
-	"autoMergeEligible": true,
+	"runAt": "2026-09-30T12:52:00Z",
+	"action": "none",
+	"pr": null,
+	"diagnosed": "No real breakage found. All health signals green.",
+	"fixed": [],
+	"autoMergeEligible": false,
 	"notes": [
-		"Pure reordering, no field content changed.",
-		"Proof: sources.json still valid JSON; tests/sources-schema.test.js 19/19 pass (was failing); full npm test 1541/1541 pass.",
-		"Not a protected path — auto-merge eligible once the workflow re-gates tests.",
-		"Other signals healthy: publish-freshness=fresh (0h lag), build-alert ok (98 events), usage green. Recent failed runs are all Pages-deploy failures from March-April 2026, not current breakage.",
-		"validate-events.js reports only warnings (WP-242/246 weak-basis, landing-page URLs), no errors — out of self-repair scope (content, owned by research/verify)."
+		"npm test: 1541/1541 pass across 88 files.",
+		"node scripts/validate-events.js: 107 events, 0 errors (only WP-242 weak-time-basis and WP-246 landing-page-URL warnings, which are content owned by research/verify — out of self-repair scope).",
+		"publish-freshness=fresh (0h lag, live == repo at 2026-09-30T09:11:53Z); build-alert ok (107 events); usage green (session 0%, week 18%).",
+		"Recent runs all succeeded (static pipeline, scout, verify, editorial, coverage-critic, research, CI, deploys). No open self-repair/ PR.",
+		"The three most recent failed runs (iOS Tests 2026-08-27, Research 2026-08-24, Visual QA 2026-08-20) are all 1+ months stale and superseded by later successful runs — not reproducible.",
+		"Small sport files (cycling/chess/esports) are freshly updated valid JSON with empty tournaments arrays — legitimate (research-filled sports; esports parsed 75 matches / 2 focus). No _retained stale-fetcher stamps."
 	]
 }
