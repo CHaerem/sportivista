@@ -1,16 +1,16 @@
 {
-	"runAt": "2026-09-30T12:52:00Z",
+	"runAt": "2026-10-01T13:42:00Z",
 	"action": "none",
 	"pr": null,
-	"diagnosed": "No real breakage found. All health signals green.",
+	"diagnosed": "No real breakage found. All health signals green; the one validate-events.js error is a benign 14-day-boundary timing artifact that self-heals on the next pipeline run.",
 	"fixed": [],
 	"autoMergeEligible": false,
 	"notes": [
 		"npm test: 1541/1541 pass across 88 files.",
-		"node scripts/validate-events.js: 107 events, 0 errors (only WP-242 weak-time-basis and WP-246 landing-page-URL warnings, which are content owned by research/verify — out of self-repair scope).",
-		"publish-freshness=fresh (0h lag, live == repo at 2026-09-30T09:11:53Z); build-alert ok (107 events); usage green (session 0%, week 18%).",
-		"Recent runs all succeeded (static pipeline, scout, verify, editorial, coverage-critic, research, CI, deploys). No open self-repair/ PR.",
-		"The three most recent failed runs (iOS Tests 2026-08-27, Research 2026-08-24, Visual QA 2026-08-20) are all 1+ months stale and superseded by later successful runs — not reproducible.",
-		"Small sport files (cycling/chess/esports) are freshly updated valid JSON with empty tournaments arrays — legitimate (research-filled sports; esports parsed 75 matches / 2 focus). No _retained stale-fetcher stamps."
+		"node scripts/validate-events.js reports 1 'error': Past event (esports StarLadder StarSeries Fall 2026 MOUZ vs NRG, endTime 2026-09-17T13:00:00Z). NOT real breakage — a timing boundary artifact: build-events.js and validate-events.js both use the SAME now-14d cutoff, so they are consistent within a single pipeline run (they run seconds apart). The last build ran 11:21Z when the event was inside the window (no error); the event crossed its 14-day cutoff at 13:00Z, so a standalone validate at 13:41Z now flags it. The next pipeline run drops it via build-events.js line 606 (relevantTime < cutoff). Verified by re-computing the cutoff at build time vs now. Not reproducible in the pipeline context; ignored per the prompt.",
+		"Board is healthy: 106 events, 60 today-or-future through 2026-11-11 (October Eliteserien/PL/Bundesliga, F1 Singapore/Bahrain, Stake Pulse Beat III for 100T, Il Lombardia). Research is current, not frozen. The 46 past events are all within the 14-day retention window and age out naturally.",
+		"publish-freshness=fresh (0h lag, live == repo at 2026-10-01T09:39:34Z); build-alert ok (106 events, checked 11:20:51Z); no _retained stale-fetcher stamps.",
+		"Recent runs all succeeded (static pipeline 11:19Z, scout, verify, editorial, coverage-critic, research, CI, deploys). No open self-repair/ PR.",
+		"Most recent failed runs (iOS Tests 2026-08-27, Research 2026-08-24, Visual QA 2026-08-20) are all 1+ months stale and superseded by later successful runs — not reproducible."
 	]
 }
