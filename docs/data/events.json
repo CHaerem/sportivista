@@ -3398,6 +3398,56 @@
     ]
   },
   {
+    "sport": "football",
+    "tournament": "UEFA U21-EM-kvalifisering 2026/27",
+    "title": "Norge U21 – Israel U21",
+    "time": "2026-10-06T16:45:00Z",
+    "endTime": null,
+    "venue": "Lyse Arena, Stavanger",
+    "norwegian": true,
+    "homeTeam": "Norge U21",
+    "awayTeam": "Israel U21",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-01T21:15:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.fotball.no/landslag/norge-menn-u-21/",
+      "https://www.espn.com/soccer/match/_/gameId/732497/israel-u21-norway-u21",
+      "https://www.vg.no/sport/i/8p09Rr/norges-u21-kamp-mot-israel-gaar-for-tomme-tribuner-spilles-i-stavanger",
+      "https://tipsbladet.no/norges-u21-kamp-mot-israel-gar-for-tomme-tribuner-spilles-i-stavanger/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/landslag/norge-menn-u-21/",
+        "basis": "primary",
+        "retrievedAt": "2026-10-01T21:15:00Z",
+        "note": "NFFs offisielle U21-landslagsside oppgir nå avspark 18.45 (ikke lenger TBD); kryss-bekreftet ESPN/FotMob"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-01T21:15:00Z",
+        "note": "TV 2 har NFF-landslagsrettighetene (inkl. U21); forrige kjøring så TV 2 Play liste kampen. Eksakt lineær TV 2-kanal ennå ikke publisert per-kamp så langt fram → basis secondary, verify firmer"
+      }
+    },
+    "summary": "UEFA U21-EM-kvalifisering 2026/27. Norge U21 møter Israel U21 på Lyse Arena i Stavanger. Avspark 18.45 CEST (16.45 UTC). Kampen spilles uten publikum av sikkerhetshensyn — hjemme-/bortekampene ble byttet, og Israel var vert på nøytral grunn i Ungarn i november 2025.\n\nNorsk visning: TV 2 Play (TV 2 har NFF-landslagsrettighetene, også U21). Dato, tid og arena er bekreftet mot fotball.no (NFF) + ESPN/FotMob og en uavhengig write-time fact-check. Eksakt lineær TV 2-kanal festes av verify.",
+    "id": "f511dc9c5413",
+    "homeTeamEntityId": "norway-u21-euro-qualifying",
+    "awayTeamEntityId": "israel"
+  },
+  {
     "sport": "tennis",
     "tournament": "ATP/WTA Tour",
     "title": "Rolex Shanghai Masters",
@@ -4713,53 +4763,5 @@
     "summary": "Magnus Carlsens bekreftede neste turnering: pilot-utgaven av den FIDE-godkjente Total Chess World Championship Tour, i Budapest 10.–21. november. 24 spillere fra 10 nasjoner, premiepott minst $2,7 mill. og to plasser til Kandidatturneringen 2028.\n\nÅpningsseremoni + blitz-sveitser går 10. nov (klokkeslett ikke publisert). Gruppespillet (fire grupper à seks, dobbel serie i «fast classic» 45+30) spilles 11.–15. nov med daglig start 15:00 CET. Utslagsrundene 17.–20. nov (blitz 15:00, hurtig 16:15, fast classic 18:45 CET).\n\nCarlsen, Caruana, Erigaisi, Wesley So, Keymer og Aronian er bekreftet; Gukesh, Nakamura og Sindarov er meldt av pga. kollisjon med det klassiske VM. Norsk/offisiell kringkasting er ennå ikke kunngjort av arrangøren – verify fyller streaming når worldchess melder plattform.",
     "norwegianPlayers": [],
     "id": "bd5daeb1237d"
-  },
-  {
-    "sport": "football",
-    "tournament": "UEFA U21-EM-kvalifisering 2026/27",
-    "title": "Norge U21 – Israel U21",
-    "time": "2026-10-06T16:45:00Z",
-    "endTime": null,
-    "venue": "Lyse Arena, Stavanger",
-    "norwegian": true,
-    "homeTeam": "Norge U21",
-    "awayTeam": "Israel U21",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-01T21:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://www.fotball.no/landslag/norge-menn-u-21/",
-      "https://www.espn.com/soccer/match/_/gameId/732497/israel-u21-norway-u21",
-      "https://www.vg.no/sport/i/8p09Rr/norges-u21-kamp-mot-israel-gaar-for-tomme-tribuner-spilles-i-stavanger",
-      "https://tipsbladet.no/norges-u21-kamp-mot-israel-gar-for-tomme-tribuner-spilles-i-stavanger/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "fotball-no",
-        "url": "https://www.fotball.no/landslag/norge-menn-u-21/",
-        "basis": "primary",
-        "retrievedAt": "2026-10-01T21:15:00Z",
-        "note": "NFFs offisielle U21-landslagsside oppgir nå avspark 18.45 (ikke lenger TBD); kryss-bekreftet ESPN/FotMob"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/",
-        "basis": "secondary",
-        "retrievedAt": "2026-10-01T21:15:00Z",
-        "note": "TV 2 har NFF-landslagsrettighetene (inkl. U21); forrige kjøring så TV 2 Play liste kampen. Eksakt lineær TV 2-kanal ennå ikke publisert per-kamp så langt fram → basis secondary, verify firmer"
-      }
-    },
-    "summary": "UEFA U21-EM-kvalifisering 2026/27. Norge U21 møter Israel U21 på Lyse Arena i Stavanger. Avspark 18.45 CEST (16.45 UTC). Kampen spilles uten publikum av sikkerhetshensyn — hjemme-/bortekampene ble byttet, og Israel var vert på nøytral grunn i Ungarn i november 2025.\n\nNorsk visning: TV 2 Play (TV 2 har NFF-landslagsrettighetene, også U21). Dato, tid og arena er bekreftet mot fotball.no (NFF) + ESPN/FotMob og en uavhengig write-time fact-check. Eksakt lineær TV 2-kanal festes av verify.",
-    "id": "f511dc9c5413"
   }
 ]

@@ -1,40 +1,18 @@
 {
-  "generatedAt": "2026-10-01T17:58:32.532Z",
-  "gapCount": 8,
+  "generatedAt": "2026-10-01T22:29:08.509Z",
+  "gapCount": 6,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Barcelona",
-      "type": "missing",
-      "imminent": false,
-      "headline": "‘A lot more to my game’: Gordon rises to a new level after Barcelona rebirth",
-      "link": "https://www.theguardian.com/football/2026/sep/30/anthony-gordon-england-nations-league-world-cup-barcelona",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-10-01T17:58:31.362Z"
-    },
     {
       "kind": "entity",
       "entity": "Real Madrid",
       "type": "missing",
       "imminent": false,
-      "headline": "‘I like him as a No 9’: Bellingham a striking alternative for England, says Tuchel",
-      "link": "https://www.theguardian.com/football/2026/sep/30/thomas-tuchel-harry-kane-jude-bellingham-trent-alexander-arnold-england-nations-league",
+      "headline": "Shaw secures WCL draw against Real Madrid as Manchester City show spirit after week of turmoil",
+      "link": "https://www.theguardian.com/football/2026/oct/01/manchester-city-real-madrid-womens-champions-league-league-stage-match-report",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-10-01T17:58:31.362Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "La Liga",
-      "type": "missing",
-      "imminent": false,
-      "headline": "‘A lot more to my game’: Gordon rises to a new level after Barcelona rebirth",
-      "link": "https://www.theguardian.com/football/2026/sep/30/anthony-gordon-england-nations-league-world-cup-barcelona",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-10-01T17:58:31.362Z"
+      "detectedAt": "2026-10-01T22:29:07.302Z"
     },
     {
       "kind": "tracked-claim",
@@ -46,7 +24,7 @@
       "claimedDate": "2027-07-15T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "la-liga-2026-27",
-      "detectedAt": "2026-10-01T17:58:32.291Z"
+      "detectedAt": "2026-10-01T22:29:08.217Z"
     },
     {
       "kind": "tracked-claim",
@@ -58,7 +36,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "serie-a-2026-27",
-      "detectedAt": "2026-10-01T17:58:32.291Z"
+      "detectedAt": "2026-10-01T22:29:08.217Z"
     },
     {
       "kind": "tracked-claim",
@@ -70,7 +48,7 @@
       "claimedDate": "2026-10-06T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "bundesliga-2026-27",
-      "detectedAt": "2026-10-01T17:58:32.291Z"
+      "detectedAt": "2026-10-01T22:29:08.217Z"
     },
     {
       "kind": "tracked-claim",
@@ -82,7 +60,7 @@
       "claimedDate": "2027-07-17T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "viktor-hovland",
-      "detectedAt": "2026-10-01T17:58:32.291Z"
+      "detectedAt": "2026-10-01T22:29:08.217Z"
     },
     {
       "kind": "tracked-claim",
@@ -94,7 +72,7 @@
       "claimedDate": "2027-07-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "karsten-warholm",
-      "detectedAt": "2026-10-01T17:58:32.291Z"
+      "detectedAt": "2026-10-01T22:29:08.217Z"
     }
   ],
   "anomalies": [
@@ -103,7 +81,7 @@
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-01T17:58:32.328Z"
+      "detectedAt": "2026-10-01T22:29:08.267Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
