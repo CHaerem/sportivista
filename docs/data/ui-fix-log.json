@@ -1,11 +1,12 @@
 {
-	"runAt": "2026-09-30T15:45:38Z",
+	"runAt": "2026-10-01T00:30:00Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"visual-qa-log.json verdict is \"pass\" (checkedAt 2026-09-28T16:23:14Z); no high/medium findings to fix.",
-		"The single finding is low severity and describes English aggregate copy (\"2nd Leg - ... lead 2-0 on aggregate\") in Copa del Rey rows — visual-qa itself flags it as likely raw fetcher/API text, i.e. a data-side issue, not a docs/js template that ui-fix may touch.",
-		"Per ui-fix.md 'When to act' rule 1, exiting cleanly with no PR."
+		"visual-qa-log.json verdict is \"pass\" (checkedAt 2026-10-01T00:00:00Z); no high/medium findings to fix.",
+		"Both findings are low severity and data-side, not code-fixable UI defects: (1) English aggregate copy in Copa del Rey meta lines (\"2nd Leg - ... lead 2-0 on aggregate\", \"Tied on aggregate\") — visual-qa flags it as raw fetcher/API text, a data issue not a docs/js template; (2) garbled opponent name \"Auriense Cented Academy\" renders the same at 900px with room to spare, so it is upstream data, not CSS/overflow truncation.",
+		"Neither is a rendering bug ui-fix may touch (truncation/overflow/broken flags/foreign channel/calm-design break); both belong to the research/verify/fetcher agents.",
+		"Per ui-fix.md 'When to act' rule 1 (verdict pass + no high/medium findings), exiting cleanly with no PR."
 	]
 }
