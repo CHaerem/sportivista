@@ -1,29 +1,22 @@
 {
-  "checkedAt": "2026-10-01T00:00:00Z",
+  "checkedAt": "2026-10-02T14:25:05Z",
   "widths": [375, 393, 900],
-  "verdict": "pass",
+  "verdict": "issues",
   "findings": [
     {
       "width": 375,
-      "area": "agenda row · Copa del Rey legs (CD Baztán, CD Tedeón, Ceuta 6 de Junio, Atlético Melilla, Atlético Unión Güímar, AE Prat, CD San José, SD Noja, Sporting de Alcázar, Tavernes de la Valldigna)",
-      "issue": "Meta line still mixes English into the otherwise Norwegian UI: \"2nd Leg - Atlético Calatayud lead 2-0 on aggregate\", \"Tied on aggregate\", etc. Same text visible at 393 and 900px — a persisting, not new, issue (matches the prior visual-qa-log finding). Reads as raw fetcher/API copy rather than a template string.",
-      "severity": "low"
-    },
-    {
-      "width": 375,
-      "area": "agenda row · CD San José – Auriense Cented Academy (Copa del Rey, all three widths)",
-      "issue": "Opponent name renders as \"Auriense Cented Academy\" at every width including 900px (plenty of room), so it is not a CSS/overflow truncation — the text itself looks garbled/incomplete (likely an upstream data issue, not a rendering bug). Flagging for triage since it's visibly odd to a reader even though it isn't a layout defect.",
-      "severity": "low"
+      "area": "agenda row — Bank of Utah Championship (I DAG)",
+      "issue": "Channel reads \"HBO Max (Sport) +1\" — the \"+1\" time-shift suffix is a UK/international channel-numbering convention, not the Norwegian format used by every other row on the board (Viaplay, TV 2 Play, TV 2 Direkte). Same text appears at 393px and 900px. Worth a data check on whether this is actually the correct Norwegian viewing option for this event rather than an unfiltered international feed.",
+      "severity": "medium"
     }
   ],
   "notes": [
-    "375px (hardest case): no horizontal scroll, nothing clipped at the screen edge; long match/tournament names (Kinoshita Group Japan Open Tennis Championships, Atlético Unión Güímar – Sporting Hortaleza) wrap onto a second line instead of being cut off.",
-    "Wales – Norge and Portugal – Norge both correctly show 'TV 2 Direkte / TV 2 Play' with the must-see accent dot; no foreign broadcaster (FOX/ESPN/Sky) seen at any width. 'Bank of Utah Championship' shows 'HBO Max (Sport) +1' — nothing wrong with the rendering, but worth a data-side sanity check that this channel is genuinely available in Norway.",
-    "Rows with no confirmed channel show an honest faint '–' (the Copa del Rey legs, Gulf Air Bahrain Grand Prix) rather than a guess or a blank cell.",
-    "National flags (Wales, Norge, Portugal) and the Fredrikstad/Fjellhammer women's-league flag icons all render as real icons, not broken-image boxes.",
-    "Multi-day events (Kinoshita Group Japan Open, Alfred Dunhill Links Championship, Bank of Utah Championship) show a correct date range ('27. september–7. oktober', '1.–4. oktober') instead of a single misleading time.",
-    "The floating 'Assistent' button rests over a mid-agenda row near the Wales – Norge / Elverum area at 375 and 393px, and sits in the empty margin beside the 640px column at 900px — matches the DESIGN.md-sanctioned floating-button idiom at every width, not flagged. It does not cover the last agenda row (HC Kriens-Luzern – Kolstad) or the footer at any width.",
-    "Header, day headings (TORSDAG/I MORGEN/LØRDAG/SØNDAG/ONSDAG), 'Neste opp' esports list (100 Thieves, Natus Vincere, Team Vitality, G2 Esports, Team Spirit), 'Dette dekker vi' / 'Merker og kilder' disclosures, and footer (Oppdatert-stamp, Abonner i kalender, staleness note, AI-budsjett line) are all intact and aligned at every width.",
-    "Must-see accent dots are used sparingly — only on the two Norge fixtures (Wales–Norge, Portugal–Norge) across the whole visible agenda, not on every row."
+    "No horizontal overflow or clipped/truncated text at any of the three widths — all match names and channel labels wrap onto additional lines rather than being cut off.",
+    "Flags (Portugal–Norge) and tour/club badges render as real images, no broken-image icons.",
+    "Must-see accent dots are used sparingly (a handful of rows across the whole agenda), consistent with the calm-design guarantee.",
+    "Header, day headings, 'Dette dekker vi'/'Merk og kilder' disclosures, and footer (incl. AI-budsjett status line) are all intact and aligned at every width.",
+    "The floating Assistent button (visible in the 900px capture, resting over the 'Ceuta 6 de Junio – UB Lebrijana' row) does not occlude the last agenda row or the footer — matches the DESIGN.md-sanctioned floating-button pattern, not flagged.",
+    "The Assistent button was not visible at all in the 375px/393px full-page captures — most likely a full-page-screenshot artifact with a fixed-position element rather than a real absence, since it rendered fine at 900px; flagging here as an observation only, not a finding.",
+    "'CD San José – Auriense Cented Academy' (Copa del Rey) looks like an odd/truncated-looking team name, but it renders identically at all three widths including the 900px desktop shot, so it is not a CSS truncation bug — likely the actual scraped fixture name. Noting for a data sanity check, not raising as a layout finding."
   ]
 }
