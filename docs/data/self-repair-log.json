@@ -1,16 +1,16 @@
 {
-	"runAt": "2026-10-01T13:42:00Z",
-	"action": "none",
+	"runAt": "2026-10-02T11:10:00Z",
+	"action": "abandoned",
 	"pr": null,
-	"diagnosed": "No real breakage found. All health signals green; the one validate-events.js error is a benign 14-day-boundary timing artifact that self-heals on the next pipeline run.",
+	"diagnosed": "One real, recurring breakage: every scout/coverage-critic escalation to the research agent fails. Bot-dispatched (workflow_dispatch via scripts/escalate-research.js, actor github-actions[bot]) research runs die at the anthropics/claude-code-action@v1 step with 'Workflow initiated by non-human actor: github-actions (type: Bot). Add bot to allowed_bots list or use *' — while every schedule-triggered run succeeds. The WP-91 dispatch fix works (the dispatch reports success and even closes the escalation-failed alarm), so the failure is silent except as red workflow_dispatch runs. The recall fast-lane has been dead for weeks. Fix = add allowed_bots to the three claude-code-action steps in .github/workflows/research-agent.yml. That is a protected automation path: the protect-automation CI hook BLOCKED today's Edit attempt (exit 2), so an unattended agent cannot author it — a human must. Already tracked by open issue #430 (self-repair label); re-confirmed there today rather than opening a duplicate PR/issue. No other reproducible breakage found.",
 	"fixed": [],
 	"autoMergeEligible": false,
 	"notes": [
-		"npm test: 1541/1541 pass across 88 files.",
-		"node scripts/validate-events.js reports 1 'error': Past event (esports StarLadder StarSeries Fall 2026 MOUZ vs NRG, endTime 2026-09-17T13:00:00Z). NOT real breakage — a timing boundary artifact: build-events.js and validate-events.js both use the SAME now-14d cutoff, so they are consistent within a single pipeline run (they run seconds apart). The last build ran 11:21Z when the event was inside the window (no error); the event crossed its 14-day cutoff at 13:00Z, so a standalone validate at 13:41Z now flags it. The next pipeline run drops it via build-events.js line 606 (relevantTime < cutoff). Verified by re-computing the cutoff at build time vs now. Not reproducible in the pipeline context; ignored per the prompt.",
-		"Board is healthy: 106 events, 60 today-or-future through 2026-11-11 (October Eliteserien/PL/Bundesliga, F1 Singapore/Bahrain, Stake Pulse Beat III for 100T, Il Lombardia). Research is current, not frozen. The 46 past events are all within the 14-day retention window and age out naturally.",
-		"publish-freshness=fresh (0h lag, live == repo at 2026-10-01T09:39:34Z); build-alert ok (106 events, checked 11:20:51Z); no _retained stale-fetcher stamps.",
-		"Recent runs all succeeded (static pipeline 11:19Z, scout, verify, editorial, coverage-critic, research, CI, deploys). No open self-repair/ PR.",
-		"Most recent failed runs (iOS Tests 2026-08-27, Research 2026-08-24, Visual QA 2026-08-20) are all 1+ months stale and superseded by later successful runs — not reproducible."
+		"npm test: 1541/1541 pass across 88 files. node scripts/validate-events.js: 0 errors (warnings only: alpine summary/streaming mismatch, 6 landing-page-only channel URLs, 9 weak-time-basis high-confidence events, 2 summary/streaming mismatches — all agent-content warnings, not pipeline breakage).",
+		"publish-freshness=fresh (0h lag, live==repo at 2026-10-02T09:13:30Z). usage-state green (session 0%, week 41%, not rejected) — so the research failures are hard actor-gate rejections, NOT quota skips.",
+		"Root cause confirmed across failing runs 36503568730 (2026-09-29), 36020768893, 35592238892, 35464837752 — all 'non-human actor' on workflow_dispatch; recent schedule runs 36822025403/36775250506/36673914499 all succeed. grep allowed_bots .github/workflows/*.yml returns no matches (fix still unapplied).",
+		"Fix abandoned (not opened as a PR) because the ONLY correct fix touches .github/workflows/research-agent.yml, a protected path that scripts/hooks/protect-automation.js mechanically blocks any CI agent from editing (the Edit tool returned exit-2 BLOCKED). This supersedes self-repair.md's older 'still make the PR' line. Re-confirmed on issue #430 (comment 5952932838) with the exact human-authored patch: add allowed_bots: \"github-actions\" to each of the three anthropics/claude-code-action@v1 steps.",
+		"Observed but out of scope for self-repair: Visual QA agent runs 36729575538 (2026-09-30) and 36583282818 (2026-09-29) failed with error_max_turns (reached max 40 turns). That is agent prompt/turn-budget tuning (improve agent territory), not reproducible code breakage, and visual-qa is optional-tier. The 2026-09-29 CI red (sources.json not sorted by id in tests/sources-schema.test.js) is already resolved — HEAD is green.",
+		"No open self-repair/ PR existed at run start."
 	]
 }
