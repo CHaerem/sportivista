@@ -2193,8 +2193,8 @@
     "norwegianPlayers": [
       {
         "name": "Kristoffer Ventura",
-        "teeTime": "21:47",
-        "teeTimeUTC": "2026-10-01T19:47:00.000Z",
+        "teeTime": "16:52",
+        "teeTimeUTC": "2026-10-02T14:52:00.000Z",
         "entityId": "kristoffer-ventura"
       }
     ],
@@ -2204,15 +2204,15 @@
     "featuredGroups": [
       {
         "player": "Kristoffer Ventura",
-        "teeTime": "21:47",
+        "teeTime": "16:52",
         "groupmates": [
           {
             "name": "A.J. Ewart",
-            "teeTime": "21:47"
+            "teeTime": "16:52"
           },
           {
             "name": "Rhett Rasmussen",
-            "teeTime": "21:47"
+            "teeTime": "16:52"
           }
         ]
       }
@@ -2695,7 +2695,74 @@
         "urlKind": "landing"
       }
     ],
-    "participants": [],
+    "participants": [
+      {
+        "name": "Max Verstappen"
+      },
+      {
+        "name": "George Russell"
+      },
+      {
+        "name": "Isack Hadjar"
+      },
+      {
+        "name": "Charles Leclerc"
+      },
+      {
+        "name": "Kimi Antonelli"
+      },
+      {
+        "name": "Lewis Hamilton"
+      },
+      {
+        "name": "Pierre Gasly"
+      },
+      {
+        "name": "Liam Lawson"
+      },
+      {
+        "name": "Arvid Lindblad"
+      },
+      {
+        "name": "Nico Hülkenberg"
+      },
+      {
+        "name": "Oscar Piastri"
+      },
+      {
+        "name": "Lando Norris"
+      },
+      {
+        "name": "Gabriel Bortoleto"
+      },
+      {
+        "name": "Fernando Alonso"
+      },
+      {
+        "name": "Esteban Ocon"
+      },
+      {
+        "name": "Oliver Bearman"
+      },
+      {
+        "name": "Alexander Albon"
+      },
+      {
+        "name": "Lance Stroll"
+      },
+      {
+        "name": "Franco Colapinto"
+      },
+      {
+        "name": "Carlos Sainz"
+      },
+      {
+        "name": "Valtteri Bottas"
+      },
+      {
+        "name": "Sergio Pérez"
+      }
+    ],
     "norwegianPlayers": [],
     "totalPlayers": null,
     "link": null,
@@ -4687,6 +4754,96 @@
     "homeTeamEntityId": "kolstad-handball"
   },
   {
+    "sport": "alpine",
+    "tournament": "FIS verdenscup alpint 2026/27",
+    "title": "Sölden – storslalåm kvinner",
+    "time": "2026-10-24T08:00:00Z",
+    "endTime": "2026-10-24T12:00:00Z",
+    "venue": "Rettenbach-breen, Sölden, Østerrike",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-02T05:50:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.soelden.com/en/events-leisure-tips/events/audi-fis-ski-world-cup-opening/program",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+      "https://presse.viaplaygroup.no/post/tv-2-og-viaplay-deler-rettighetene-til-vintersport-fra-osterrike"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fis",
+        "url": "https://www.soelden.com/en/events-leisure-tips/events/audi-fis-ski-world-cup-opening/program",
+        "basis": "primary",
+        "retrievedAt": "2026-10-02T05:50:00Z",
+        "note": "Sölden/Ötztal er FIS-verdenscupens lokale arrangør og setter klokka; offisielt program oppgir 1. omgang 10.00, 2. omgang 13.00 lokal tid. Kryss-bekreftet Wikipedia + uavhengig write-time fact-check"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://presse.viaplaygroup.no/post/tv-2-og-viaplay-deler-rettighetene-til-vintersport-fra-osterrike",
+        "basis": "official",
+        "retrievedAt": "2026-10-02T05:50:00Z",
+        "note": "TV 2 + Viaplay deler FIS-alpint fra Østerrike 2026/27–2030/31; TV 2 sender Sölden-åpningen (rettighetshaverens egen pressemelding). Eksakt TV 2-lineær kanal/Play-slot settes nærmere → verify firmer"
+      }
+    },
+    "summary": "Verdenscupåpningen i alpint — kvinnenes storslalåm på Rettenbach-breen i Sölden sparker i gang 2026/27-sesongen. Tradisjonen tro er sesongstarten i Østerrike en storslalåm for både kvinner (lørdag) og menn (søndag).\n\n1. omgang kl. 10.00, 2. omgang kl. 13.00 lokal tid (08.00 og 11.00 UTC — Østerrike er på sommertid til natt til søndag 25. okt).\n\nNorsk visning: TV 2 Play. TV 2 og Viaplay deler verdenscuprettighetene for alpint fra Østerrike 2026/27–2030/31, og TV 2 sender Sölden-åpningen. Programmet kan justeres ved vær.",
+    "id": "4fbeafb602de"
+  },
+  {
+    "sport": "alpine",
+    "tournament": "FIS verdenscup alpint 2026/27",
+    "title": "Sölden – storslalåm menn",
+    "time": "2026-10-25T09:00:00Z",
+    "endTime": "2026-10-25T13:00:00Z",
+    "venue": "Rettenbach-breen, Sölden, Østerrike",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-02T05:50:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.soelden.com/en/events-leisure-tips/events/audi-fis-ski-world-cup-opening/program",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+      "https://presse.viaplaygroup.no/post/tv-2-og-viaplay-deler-rettighetene-til-vintersport-fra-osterrike"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fis",
+        "url": "https://www.soelden.com/en/events-leisure-tips/events/audi-fis-ski-world-cup-opening/program",
+        "basis": "primary",
+        "retrievedAt": "2026-10-02T05:50:00Z",
+        "note": "Sölden/Ötztal er FIS-verdenscupens lokale arrangør og setter klokka; offisielt program oppgir 1. omgang 10.00, 2. omgang 13.00 lokal tid. Kryss-bekreftet Wikipedia + uavhengig write-time fact-check"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://presse.viaplaygroup.no/post/tv-2-og-viaplay-deler-rettighetene-til-vintersport-fra-osterrike",
+        "basis": "official",
+        "retrievedAt": "2026-10-02T05:50:00Z",
+        "note": "TV 2 + Viaplay deler FIS-alpint fra Østerrike 2026/27–2030/31; TV 2 sender Sölden-åpningen (rettighetshaverens egen pressemelding). Eksakt TV 2-lineær kanal/Play-slot settes nærmere → verify firmer"
+      }
+    },
+    "summary": "Verdenscupåpningen i alpint — mennenes storslalåm på Rettenbach-breen i Sölden avslutter åpningshelgen og 2026/27-sesongens første mannerenn.\n\n1. omgang kl. 10.00, 2. omgang kl. 13.00 lokal tid (09.00 og 12.00 UTC — natt til denne søndagen stilles klokka tilbake til normaltid, så Østerrike er på UTC+1).\n\nNorsk visning: TV 2 Play. TV 2 og Viaplay deler verdenscuprettighetene for alpint fra Østerrike 2026/27–2030/31, og TV 2 sender Sölden-åpningen. Programmet kan justeres ved vær.",
+    "id": "7ce116ce0db8"
+  },
+  {
     "sport": "f1",
     "tournament": "Formula 1 2026 - Race Weekend",
     "title": "MSC Cruises United States Grand Prix",
@@ -4763,95 +4920,5 @@
     "summary": "Magnus Carlsens bekreftede neste turnering: pilot-utgaven av den FIDE-godkjente Total Chess World Championship Tour, i Budapest 10.–21. november. 24 spillere fra 10 nasjoner, premiepott minst $2,7 mill. og to plasser til Kandidatturneringen 2028.\n\nÅpningsseremoni + blitz-sveitser går 10. nov (klokkeslett ikke publisert). Gruppespillet (fire grupper à seks, dobbel serie i «fast classic» 45+30) spilles 11.–15. nov med daglig start 15:00 CET. Utslagsrundene 17.–20. nov (blitz 15:00, hurtig 16:15, fast classic 18:45 CET).\n\nCarlsen, Caruana, Erigaisi, Wesley So, Keymer og Aronian er bekreftet; Gukesh, Nakamura og Sindarov er meldt av pga. kollisjon med det klassiske VM. Norsk/offisiell kringkasting er ennå ikke kunngjort av arrangøren – verify fyller streaming når worldchess melder plattform.",
     "norwegianPlayers": [],
     "id": "bd5daeb1237d"
-  },
-  {
-    "sport": "alpine",
-    "tournament": "FIS verdenscup alpint 2026/27",
-    "title": "Sölden – storslalåm kvinner",
-    "time": "2026-10-24T08:00:00Z",
-    "endTime": "2026-10-24T12:00:00Z",
-    "venue": "Rettenbach-breen, Sölden, Østerrike",
-    "norwegian": false,
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-02T05:50:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://www.soelden.com/en/events-leisure-tips/events/audi-fis-ski-world-cup-opening/program",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
-      "https://presse.viaplaygroup.no/post/tv-2-og-viaplay-deler-rettighetene-til-vintersport-fra-osterrike"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "fis",
-        "url": "https://www.soelden.com/en/events-leisure-tips/events/audi-fis-ski-world-cup-opening/program",
-        "basis": "primary",
-        "retrievedAt": "2026-10-02T05:50:00Z",
-        "note": "Sölden/Ötztal er FIS-verdenscupens lokale arrangør og setter klokka; offisielt program oppgir 1. omgang 10.00, 2. omgang 13.00 lokal tid. Kryss-bekreftet Wikipedia + uavhengig write-time fact-check"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://presse.viaplaygroup.no/post/tv-2-og-viaplay-deler-rettighetene-til-vintersport-fra-osterrike",
-        "basis": "official",
-        "retrievedAt": "2026-10-02T05:50:00Z",
-        "note": "TV 2 + Viaplay deler FIS-alpint fra Østerrike 2026/27–2030/31; TV 2 sender Sölden-åpningen (rettighetshaverens egen pressemelding). Eksakt TV 2-lineær kanal/Play-slot settes nærmere → verify firmer"
-      }
-    },
-    "summary": "Verdenscupåpningen i alpint — kvinnenes storslalåm på Rettenbach-breen i Sölden sparker i gang 2026/27-sesongen. Tradisjonen tro er sesongstarten i Østerrike en storslalåm for både kvinner (lørdag) og menn (søndag).\n\n1. omgang kl. 10.00, 2. omgang kl. 13.00 lokal tid (08.00 og 11.00 UTC — Østerrike er på sommertid til natt til søndag 25. okt).\n\nNorsk visning: TV 2 Play. TV 2 og Viaplay deler verdenscuprettighetene for alpint fra Østerrike 2026/27–2030/31, og TV 2 sender Sölden-åpningen. Programmet kan justeres ved vær.",
-    "id": "4fbeafb602de"
-  },
-  {
-    "sport": "alpine",
-    "tournament": "FIS verdenscup alpint 2026/27",
-    "title": "Sölden – storslalåm menn",
-    "time": "2026-10-25T09:00:00Z",
-    "endTime": "2026-10-25T13:00:00Z",
-    "venue": "Rettenbach-breen, Sölden, Østerrike",
-    "norwegian": false,
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-02T05:50:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://www.soelden.com/en/events-leisure-tips/events/audi-fis-ski-world-cup-opening/program",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
-      "https://presse.viaplaygroup.no/post/tv-2-og-viaplay-deler-rettighetene-til-vintersport-fra-osterrike"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "fis",
-        "url": "https://www.soelden.com/en/events-leisure-tips/events/audi-fis-ski-world-cup-opening/program",
-        "basis": "primary",
-        "retrievedAt": "2026-10-02T05:50:00Z",
-        "note": "Sölden/Ötztal er FIS-verdenscupens lokale arrangør og setter klokka; offisielt program oppgir 1. omgang 10.00, 2. omgang 13.00 lokal tid. Kryss-bekreftet Wikipedia + uavhengig write-time fact-check"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://presse.viaplaygroup.no/post/tv-2-og-viaplay-deler-rettighetene-til-vintersport-fra-osterrike",
-        "basis": "official",
-        "retrievedAt": "2026-10-02T05:50:00Z",
-        "note": "TV 2 + Viaplay deler FIS-alpint fra Østerrike 2026/27–2030/31; TV 2 sender Sölden-åpningen (rettighetshaverens egen pressemelding). Eksakt TV 2-lineær kanal/Play-slot settes nærmere → verify firmer"
-      }
-    },
-    "summary": "Verdenscupåpningen i alpint — mennenes storslalåm på Rettenbach-breen i Sölden avslutter åpningshelgen og 2026/27-sesongens første mannerenn.\n\n1. omgang kl. 10.00, 2. omgang kl. 13.00 lokal tid (09.00 og 12.00 UTC — natt til denne søndagen stilles klokka tilbake til normaltid, så Østerrike er på UTC+1).\n\nNorsk visning: TV 2 Play. TV 2 og Viaplay deler verdenscuprettighetene for alpint fra Østerrike 2026/27–2030/31, og TV 2 sender Sölden-åpningen. Programmet kan justeres ved vær.",
-    "id": "7ce116ce0db8"
   }
 ]
