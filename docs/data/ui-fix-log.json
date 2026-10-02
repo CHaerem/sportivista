@@ -1,12 +1,11 @@
 {
-	"runAt": "2026-10-01T00:30:00Z",
+	"runAt": "2026-10-02T14:40:00Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"visual-qa-log.json verdict is \"pass\" (checkedAt 2026-10-01T00:00:00Z); no high/medium findings to fix.",
-		"Both findings are low severity and data-side, not code-fixable UI defects: (1) English aggregate copy in Copa del Rey meta lines (\"2nd Leg - ... lead 2-0 on aggregate\", \"Tied on aggregate\") — visual-qa flags it as raw fetcher/API text, a data issue not a docs/js template; (2) garbled opponent name \"Auriense Cented Academy\" renders the same at 900px with room to spare, so it is upstream data, not CSS/overflow truncation.",
-		"Neither is a rendering bug ui-fix may touch (truncation/overflow/broken flags/foreign channel/calm-design break); both belong to the research/verify/fetcher agents.",
-		"Per ui-fix.md 'When to act' rule 1 (verdict pass + no high/medium findings), exiting cleanly with no PR."
+		"visual-qa verdict was 'issues' with a single medium finding and no high findings.",
+		"The only finding — channel label 'HBO Max (Sport) +1' on the Bank of Utah Championship row at 375/393/900px — is a data-accuracy issue, not a code-fixable UI bug. The frontend renders the streaming[].platform string verbatim (docs/js/dashboard.js channelLine) with no foreign-channel filter; the '+1' suffix lives in events.json. The finding itself calls for 'a data check', i.e. the research/verify agents' domain, not ui-fix.",
+		"No truncation, overflow, broken flags/logos, or calm-design breaks were reported — the visual-qa notes confirm layout is intact at all three widths. Nothing frontend-fixable, so no branch/PR opened."
 	]
 }
