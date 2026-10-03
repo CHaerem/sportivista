@@ -3582,7 +3582,13 @@
     "time": "2026-10-09T12:30:00Z",
     "endTime": "2026-10-09T13:14:00Z",
     "summary": "Sprintkvalifiseringen avgjør startoppstillingen for lørdagens sprint (lør. 10. okt kl. 17.00 lokal / 09.00 UTC).\n\nSingapore er sesongens SISTE sprint-helg — nattløp på Marina Bay Street Circuit.\n\nTider bekreftet mot formula1.com (arrangøren, 4/4 kalibreringssjekker riktige) + uavhengig write-time fact-check — ikke ESPN-feeden som feildaterer F1-helger (source-quirks). Norsk visning Viaplay.",
-    "id": "fd6351716135"
+    "id": "fd6351716135",
+    "verifiedAt": "2026-10-03T10:32:42.956Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.formula1.com/en/racing/2026/singapore",
+      "https://www.formula1.com/en/latest/article/formula-1-and-fia-announce-2026-sprint-calendar.3PyLPAazrBNe8kQIS3wOfY"
+    ]
   },
   {
     "sport": "football",
@@ -3673,48 +3679,55 @@
     "sport": "cycling",
     "tournament": "Il Lombardia",
     "title": "Il Lombardia 2026",
-    "time": "2026-10-10T08:50:00Z",
+    "time": "2026-10-10T08:45:00Z",
     "endTime": "2026-10-10T15:00:00Z",
-    "venue": "Bergamo (start) – rute ikke publisert",
+    "venue": "Bergamo → Como (239 km)",
     "norwegian": false,
     "participants": [],
     "norwegianPlayers": [],
     "streaming": [
       {
         "platform": "HBO Max (Sport)",
-        "url": "https://www.hbomax.com/no",
-        "urlKind": "landing"
+        "url": "https://www.hbomax.com/no/no/sports",
+        "urlKind": "deep"
       },
       {
         "platform": "Eurosport Norge",
-        "url": "https://www.hbomax.com/no",
-        "urlKind": "landing"
+        "url": "https://www.eurosport.no/sykkel/il-lombardia/2026/kalendar-resultat.shtml",
+        "urlKind": "deep"
       }
     ],
     "source": "ai-research",
     "researchedAt": "2026-09-13T22:30:00Z",
-    "confidence": "low",
+    "confidence": "medium",
     "evidence": [
       "https://www.ilombardia.it/en/",
-      "https://www.procyclingstats.com/race/il-lombardia/2026",
-      "https://www.domestiquecycling.com/en/cycling-races/il-lombardia/2026/"
+      "https://www.giroditalia.it/en/news/il-lombardia-2026-the-route-for-the-120th-edition-has-been-unveiled/",
+      "https://www.granfondoguide.com/RaceDashboard/ProCyclingClassics/1/9376/the-route-for-the-2026-il-lombardia-unveiled-in-milan",
+      "https://www.eurosport.no/sykkel/il-lombardia/2026/kalendar-resultat.shtml"
     ],
     "provenance": {
       "time": {
         "sourceId": "il-lombardia",
         "url": "https://www.ilombardia.it/en/",
-        "basis": "secondary",
-        "retrievedAt": "2026-09-13T22:30:00Z"
+        "basis": "primary",
+        "retrievedAt": "2026-10-03T10:32:42.956Z"
       },
       "streaming": {
         "sourceId": "hbo-max",
-        "url": "https://www.hbomax.com/no",
+        "url": "https://www.hbomax.com/no/no/sports",
         "basis": "official",
-        "retrievedAt": "2026-09-13T22:30:00Z"
+        "retrievedAt": "2026-10-03T10:32:42.956Z"
       }
     },
-    "summary": "Sesongens femte og siste Monument — «løvfallets løp». 2026-utgaven starter i Bergamo lør. 10. okt.\n\nMERK: eksakt starttid er IKKE publisert ennå (ruta ikke offentliggjort per 12. sep). Tidspunktet her (~10.50 CEST) er anslått fra 2025-utgaven og firmes av verify når RCS Sport publiserer timeplanen — derfor low confidence.\n\nDato + Bergamo-start + norsk visning (HBO Max / Eurosport Norge — WBD holder WorldTour-sykkelen) bekreftet av uavhengig fact-check; kun starttiden er foreløpig.",
-    "id": "0bd950593af7"
+    "summary": "Sesongens femte og siste Monument — «løvfallets løp». 120. utgave kjøres lørdag 10. oktober.\n\nRuta er nå offentliggjort: start i Bergamo, mål i Como etter 239 km. Starten går ca. 10.45 CEST (08.45 UTC), med forventet målgang rundt 17.00.\n\nNorsk visning: HBO Max (Sport-tillegget) / Eurosport Norge — WBD holder WorldTour-sykkelen. Dato, rute og norsk kanal bekreftet; starttid fremdeles foreløpig til RCS Sport publiserer eksakt timeplan.",
+    "id": "0bd950593af7",
+    "verifiedAt": "2026-10-03T10:32:42.956Z",
+    "verificationStatus": "amended",
+    "verificationSources": [
+      "https://www.giroditalia.it/en/news/il-lombardia-2026-the-route-for-the-120th-edition-has-been-unveiled/",
+      "https://www.eurosport.no/sykkel/il-lombardia/2026/kalendar-resultat.shtml"
+    ]
   },
   {
     "sport": "f1",
@@ -3756,7 +3769,13 @@
     "time": "2026-10-10T09:00:00Z",
     "endTime": "2026-10-10T10:00:00Z",
     "summary": "Sesongens siste sprint (~21 runder) gir poeng til topp åtte. Nattløp på Marina Bay Street Circuit.\n\nKvalifiseringen til søndagens Grand Prix følger senere samme dag (lør. 10. okt kl. 21.00 lokal / 13.00 UTC).\n\nTider bekreftet mot formula1.com (arrangøren) + uavhengig write-time fact-check — ikke ESPN-feeden (source-quirks). Norsk visning Viaplay.",
-    "id": "23cc8accd059"
+    "id": "23cc8accd059",
+    "verifiedAt": "2026-10-03T10:32:42.956Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.formula1.com/en/racing/2026/singapore",
+      "https://www.formula1.com/en/latest/article/formula-1-and-fia-announce-2026-sprint-calendar.3PyLPAazrBNe8kQIS3wOfY"
+    ]
   },
   {
     "sport": "football",
@@ -3845,7 +3864,13 @@
     "time": "2026-10-10T13:00:00Z",
     "endTime": "2026-10-10T14:00:00Z",
     "summary": "Kvalifiseringen (Q1–Q3) avgjør startoppstillingen for søndagens Grand Prix (søn. 11. okt kl. 20.00 lokal / 12.00 UTC).\n\nNattløp på Marina Bay Street Circuit; sesongens siste sprint-helg.\n\nTider bekreftet mot formula1.com (arrangøren) + uavhengig write-time fact-check — ikke ESPN-feeden (source-quirks). Norsk visning Viaplay.",
-    "id": "516b825a1b9a"
+    "id": "516b825a1b9a",
+    "verifiedAt": "2026-10-03T10:32:42.956Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.formula1.com/en/racing/2026/singapore",
+      "https://www.formula1.com/en/latest/article/formula-1-and-fia-announce-2026-sprint-calendar.3PyLPAazrBNe8kQIS3wOfY"
+    ]
   },
   {
     "sport": "football",
