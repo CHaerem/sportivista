@@ -1,8 +1,52 @@
 {
-  "generatedAt": "2026-10-03T00:52:41.014Z",
-  "gapCount": 3,
+  "generatedAt": "2026-10-03T08:46:27.908Z",
+  "gapCount": 7,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Jakob Ingebrigtsen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Sykdomstrøbbel for Ingebrigtsen – vant likevel i Sandnes",
+      "link": "https://www.nrk.no/sport/sykdomstrobbel-for-ingebrigtsen-_-vant-likevel-i-sandnes-1.18044086",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-10-03T08:46:26.905Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Ingebrigtsen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Sykdomstrøbbel for Ingebrigtsen – vant likevel i Sandnes",
+      "link": "https://www.nrk.no/sport/sykdomstrobbel-for-ingebrigtsen-_-vant-likevel-i-sandnes-1.18044086",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-10-03T08:46:26.905Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Manchester City",
+      "type": "imminent",
+      "imminent": true,
+      "headline": "Croatia v England to be mainly full despite fan ban; Manchester City latest – matchday live",
+      "link": "https://www.theguardian.com/football/live/2026/oct/03/england-scotland-nations-league-action-manchester-city-latest-matchday-live",
+      "feed": "guardian-football",
+      "matchCount": 9,
+      "detectedAt": "2026-10-03T08:46:26.905Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Nasjonsligaen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Olise-magi og utvisning i Zidanes hjemmedebut – uavgjort mot Italia",
+      "link": "https://www.nrk.no/sport/olise-magi-og-utvisning-i-zidanes-hjemmedebut-_-uavgjort-mot-italia-1.18044185",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-10-03T08:46:26.905Z"
+    },
     {
       "kind": "tracked-claim",
       "entity": "Serie A 2026/27",
@@ -13,7 +57,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "serie-a-2026-27",
-      "detectedAt": "2026-10-03T00:52:40.734Z"
+      "detectedAt": "2026-10-03T08:46:27.680Z"
     },
     {
       "kind": "tracked-claim",
@@ -25,7 +69,7 @@
       "claimedDate": "2027-07-17T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "viktor-hovland",
-      "detectedAt": "2026-10-03T00:52:40.734Z"
+      "detectedAt": "2026-10-03T08:46:27.680Z"
     },
     {
       "kind": "tracked-claim",
@@ -37,7 +81,7 @@
       "claimedDate": "2027-07-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "karsten-warholm",
-      "detectedAt": "2026-10-03T00:52:40.734Z"
+      "detectedAt": "2026-10-03T08:46:27.680Z"
     }
   ],
   "anomalies": [
@@ -46,7 +90,7 @@
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-03T00:52:40.798Z"
+      "detectedAt": "2026-10-03T08:46:27.729Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
