@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-03T08:46:27.908Z",
-  "gapCount": 7,
+  "generatedAt": "2026-10-03T10:12:40.167Z",
+  "gapCount": 11,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -12,7 +12,7 @@
       "link": "https://www.nrk.no/sport/sykdomstrobbel-for-ingebrigtsen-_-vant-likevel-i-sandnes-1.18044086",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-03T08:46:26.905Z"
+      "detectedAt": "2026-10-03T10:12:38.930Z"
     },
     {
       "kind": "entity",
@@ -23,7 +23,18 @@
       "link": "https://www.nrk.no/sport/sykdomstrobbel-for-ingebrigtsen-_-vant-likevel-i-sandnes-1.18044086",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-03T08:46:26.905Z"
+      "detectedAt": "2026-10-03T10:12:38.930Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Barcelona",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Chiesa eyes Liverpool exit - Saturday's gossip",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cq70p3w936w9o?at_medium=RSS&amp;at_campaign=rss",
+      "feed": "bbc-football",
+      "matchCount": 1,
+      "detectedAt": "2026-10-03T10:12:38.930Z"
     },
     {
       "kind": "entity",
@@ -34,18 +45,51 @@
       "link": "https://www.theguardian.com/football/live/2026/oct/03/england-scotland-nations-league-action-manchester-city-latest-matchday-live",
       "feed": "guardian-football",
       "matchCount": 9,
-      "detectedAt": "2026-10-03T08:46:26.905Z"
+      "detectedAt": "2026-10-03T10:12:38.930Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Man City",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Chiesa eyes Liverpool exit - Saturday's gossip",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cq70p3w936w9o?at_medium=RSS&amp;at_campaign=rss",
+      "feed": "bbc-football",
+      "matchCount": 1,
+      "detectedAt": "2026-10-03T10:12:38.930Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Serie A",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Chiesa eyes Liverpool exit - Saturday's gossip",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cq70p3w936w9o?at_medium=RSS&amp;at_campaign=rss",
+      "feed": "bbc-football",
+      "matchCount": 1,
+      "detectedAt": "2026-10-03T10:12:38.930Z"
     },
     {
       "kind": "entity",
       "entity": "Nasjonsligaen",
       "type": "missing",
       "imminent": false,
-      "headline": "Olise-magi og utvisning i Zidanes hjemmedebut – uavgjort mot Italia",
-      "link": "https://www.nrk.no/sport/olise-magi-og-utvisning-i-zidanes-hjemmedebut-_-uavgjort-mot-italia-1.18044185",
+      "headline": "Solbakken og Berg møter pressen før Portugal-kampen",
+      "link": "https://www.nrk.no/sport/pressekonferanse-med-stale-solbakken-for-portugal-kampen-1.18044310",
+      "feed": "nrk-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-10-03T10:12:38.930Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Formel 1",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Verstappen raskest i Malaysia",
+      "link": "https://www.nrk.no/sport/verstappen-raskest-i-malaysia-1.18044281",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-03T08:46:26.905Z"
+      "detectedAt": "2026-10-03T10:12:38.930Z"
     },
     {
       "kind": "tracked-claim",
@@ -57,7 +101,7 @@
       "claimedDate": null,
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "serie-a-2026-27",
-      "detectedAt": "2026-10-03T08:46:27.680Z"
+      "detectedAt": "2026-10-03T10:12:39.892Z"
     },
     {
       "kind": "tracked-claim",
@@ -69,7 +113,7 @@
       "claimedDate": "2027-07-17T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "viktor-hovland",
-      "detectedAt": "2026-10-03T08:46:27.680Z"
+      "detectedAt": "2026-10-03T10:12:39.892Z"
     },
     {
       "kind": "tracked-claim",
@@ -81,7 +125,7 @@
       "claimedDate": "2027-07-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "karsten-warholm",
-      "detectedAt": "2026-10-03T08:46:27.680Z"
+      "detectedAt": "2026-10-03T10:12:39.892Z"
     }
   ],
   "anomalies": [
@@ -90,7 +134,7 @@
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-03T08:46:27.729Z"
+      "detectedAt": "2026-10-03T10:12:39.955Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
