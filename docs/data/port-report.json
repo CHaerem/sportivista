@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-03T10:12:38.669Z",
+  "generatedAt": "2026-10-03T15:03:15.356Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
-    "amendRate": "green",
+    "amendRate": "yellow",
     "silentStops": "green",
     "participantStatus": "green",
     "contracts": "green"
@@ -27,7 +27,7 @@
       "medium": 0,
       "low": 2
     },
-    "oldestGapAgeDays": 7.03,
+    "oldestGapAgeDays": 7.23,
     "escalatable": 1,
     "catalogMatched": 2,
     "auditedAt": "2026-10-03T09:00:00Z",
@@ -35,36 +35,29 @@
       {
         "interest": "Fotball — UEFA Champions League ligafase runde 2 (13.–14. okt), inkl. norske Viking–Bayern München (13. okt 21.00 CEST) og Bodø/Glimt–Borussia Dortmund (14. okt 21.00 CEST)",
         "severity": "low",
-        "ageDays": 7.03,
+        "ageDays": 7.23,
         "recurrences": 7,
         "catalogMatched": true
       },
       {
         "interest": "Fotball — UEFA Conference League ligafase runde 1 (15. okt), inkl. norske Brann hjemme mot Lincoln Red Imps (menn)",
         "severity": "low",
-        "ageDays": 2.01,
+        "ageDays": 2.21,
         "recurrences": 2,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0,
-    "nearTermChecked": 3,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-10-02T11:15:00Z",
+    "nearTermRate": 0.25,
+    "nearTermChecked": 4,
+    "nearTermAmended": 1,
+    "verifyRunAt": "2026-10-03T10:32:42.956Z",
     "windowRate": 0,
     "windowChecks": 96,
     "windowAmendments": 0,
     "windowCorrections": 2,
     "byDay": [
-      {
-        "date": "2026-09-19",
-        "checks": 5,
-        "amendments": 0,
-        "corrections": 1,
-        "rate": 0
-      },
       {
         "date": "2026-09-20",
         "checks": 3,
@@ -155,20 +148,27 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-10-03",
+        "checks": 5,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-03T10:12:32.198Z",
+    "buildCheckedAt": "2026-10-03T15:03:12.693Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-03T08:46:28.089Z",
-    "manifestAgeHours": 1.44,
+    "manifestGeneratedAt": "2026-10-03T10:12:40.392Z",
+    "manifestAgeHours": 4.84,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-02T11:15:00Z",
-    "verifyAgeHours": 22.96,
+    "checkedAt": "2026-10-03T10:32:42.956Z",
+    "verifyAgeHours": 4.51,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -177,6 +177,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-03T10:12:38.669Z"
+    "generatedAt": "2026-10-03T15:03:15.356Z"
   }
 }

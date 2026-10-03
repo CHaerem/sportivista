@@ -1,36 +1,36 @@
 {
-  "generatedAt": "2026-10-03T10:12:40.252Z",
+  "generatedAt": "2026-10-03T15:03:16.713Z",
   "windowDays": 180,
   "records": {
-    "used": 558,
+    "used": 563,
     "skipped": 9
   },
   "sources": {
     "formula1.com": {
-      "checks": 15,
-      "agreed": 15,
+      "checks": 17,
+      "agreed": 17,
       "corrections": 0,
       "bySport": {
         "f1": {
-          "checks": 15,
-          "agreed": 15
+          "checks": 17,
+          "agreed": 17
         }
       },
       "byField": {
         "time": {
-          "checks": 13,
-          "agreed": 13
+          "checks": 14,
+          "agreed": 14
         },
         "existence": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 2,
+          "agreed": 2
         },
         "streaming": {
           "checks": 1,
           "agreed": 1
         }
       },
-      "lastChecked": "2026-10-02T11:15:00Z",
+      "lastChecked": "2026-10-03T10:32:42.956Z",
       "reliability": 1
     },
     "viaplay.no": {
@@ -3101,11 +3101,15 @@
       "reliability": null
     },
     "eurosport.no": {
-      "checks": 1,
-      "agreed": 1,
+      "checks": 2,
+      "agreed": 2,
       "corrections": 0,
       "bySport": {
         "handball": {
+          "checks": 1,
+          "agreed": 1
+        },
+        "cycling": {
           "checks": 1,
           "agreed": 1
         }
@@ -3114,9 +3118,13 @@
         "existence": {
           "checks": 1,
           "agreed": 1
+        },
+        "streaming": {
+          "checks": 1,
+          "agreed": 1
         }
       },
-      "lastChecked": "2026-09-13T10:28:07Z",
+      "lastChecked": "2026-10-03T10:32:42.956Z",
       "reliability": null
     },
     "tipsbladet.no": {
@@ -3441,6 +3449,44 @@
         }
       },
       "lastChecked": "2026-09-28T11:52:00Z",
+      "reliability": null
+    },
+    "giroditalia.it": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "cycling": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "existence": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-10-03T10:32:42.956Z",
+      "reliability": null
+    },
+    "ilombardia.it": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 1,
+      "bySport": {
+        "cycling": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-10-03T10:32:42.956Z",
       "reliability": null
     }
   }

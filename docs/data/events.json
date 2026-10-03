@@ -2394,6 +2394,59 @@
     "id": "68bc9bb63c7f"
   },
   {
+    "sport": "esports",
+    "tournament": "ESL Pro League Season 24",
+    "title": "G2 Esports vs Natus Vincere",
+    "time": "2026-10-03T16:30:00Z",
+    "venue": "Spodek Arena, Katowice",
+    "norwegian": false,
+    "homeTeam": "G2 Esports",
+    "awayTeam": "Natus Vincere",
+    "participants": [
+      {
+        "name": "G2 Esports"
+      },
+      {
+        "name": "Natus Vincere"
+      }
+    ],
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Twitch",
+        "url": "https://www.twitch.tv/esl_csgo",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-03T13:35:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://navi.gg/en/tournaments/epl-season-24/match/14037",
+      "https://pro.eslgaming.com/tour/details/esl-pro-league-season-24/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "liquipedia",
+        "url": "https://navi.gg/en/tournaments/epl-season-24/match/14037",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-03T13:35:00Z",
+        "note": "Starttid trekonvergent paa 16.30 UTC: navi.gg (NAVI offisiell, lest direkte) viser 19.30 EEST = 16.30 UTC, Bo3; esports.gg + uavhengig websok 18.30 CEST = 16.30 UTC. ESL/Liquipedia/HLTV direkte 403 -> basis secondary, confidence medium."
+      },
+      "streaming": {
+        "sourceId": "twitch",
+        "url": "https://www.twitch.tv/esl_csgo",
+        "basis": "official",
+        "retrievedAt": "2026-10-03T13:35:00Z"
+      }
+    },
+    "summary": "Gruppespill (sveitsisk runde 1, Bo3) i ESL Pro League Season 24 — CS2 tier-1, $1 mill., 16 lag i Spodek Arena, Katowice.\n\nDagens storoppgjør mellom to katalog-lag: G2 Esports mot Natus Vincere (NAVI). Gratis på ESLs egen Twitch-kanal (esl_csgo).",
+    "id": "b224ba99a679",
+    "homeTeamEntityId": "g2-esports",
+    "awayTeamEntityId": "natus-vincere"
+  },
+  {
     "sport": "football",
     "tournament": "Copa del Rey",
     "title": "Atlético Pinatarense at Atlético Melilla",
@@ -3469,7 +3522,7 @@
       {
         "platform": "HBO Max (Sport)",
         "url": "https://www.hbomax.com/no/no/sports",
-        "urlKind": "deep"
+        "urlKind": "landing"
       },
       {
         "platform": "Eurosport Norge",
@@ -3501,7 +3554,7 @@
       }
     },
     "summary": "Sesongens femte og siste Monument — «løvfallets løp». 120. utgave kjøres lørdag 10. oktober.\n\nRuta er nå offentliggjort: start i Bergamo, mål i Como etter 239 km. Starten går ca. 10.45 CEST (08.45 UTC), med forventet målgang rundt 17.00.\n\nNorsk visning: HBO Max (Sport-tillegget) / Eurosport Norge — WBD holder WorldTour-sykkelen. Dato, rute og norsk kanal bekreftet; starttid fremdeles foreløpig til RCS Sport publiserer eksakt timeplan.",
-    "id": "0bd950593af7",
+    "id": "d42f69238d33",
     "verifiedAt": "2026-10-03T10:32:42.956Z",
     "verificationStatus": "amended",
     "verificationSources": [
@@ -4549,8 +4602,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/vintersport",
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
         "urlKind": "landing"
       }
     ],
@@ -4594,8 +4647,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/vintersport",
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
         "urlKind": "landing"
       }
     ],
@@ -4732,56 +4785,5 @@
     "summary": "Magnus Carlsens bekreftede neste turnering: pilot-utgaven av den FIDE-godkjente Total Chess World Championship Tour, i Budapest 10.–21. november. 24 spillere fra 10 nasjoner, premiepott minst $2,7 mill. og to plasser til Kandidatturneringen 2028.\n\nÅpningsseremoni + blitz-sveitser går 10. nov (klokkeslett ikke publisert). Gruppespillet (fire grupper à seks, dobbel serie i «fast classic» 45+30) spilles 11.–15. nov med daglig start 15:00 CET. Utslagsrundene 17.–20. nov (blitz 15:00, hurtig 16:15, fast classic 18:45 CET).\n\nCarlsen, Caruana, Erigaisi, Wesley So, Keymer og Aronian er bekreftet; Gukesh, Nakamura og Sindarov er meldt av pga. kollisjon med det klassiske VM. Norsk/offisiell kringkasting er ennå ikke kunngjort av arrangøren – verify fyller streaming når worldchess melder plattform.",
     "norwegianPlayers": [],
     "id": "bd5daeb1237d"
-  },
-  {
-    "sport": "esports",
-    "tournament": "ESL Pro League Season 24",
-    "title": "G2 Esports vs Natus Vincere",
-    "time": "2026-10-03T16:30:00Z",
-    "venue": "Spodek Arena, Katowice",
-    "norwegian": false,
-    "homeTeam": "G2 Esports",
-    "awayTeam": "Natus Vincere",
-    "participants": [
-      {
-        "name": "G2 Esports"
-      },
-      {
-        "name": "Natus Vincere"
-      }
-    ],
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "Twitch",
-        "url": "https://www.twitch.tv/esl_csgo",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-03T13:35:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://navi.gg/en/tournaments/epl-season-24/match/14037",
-      "https://pro.eslgaming.com/tour/details/esl-pro-league-season-24/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "liquipedia",
-        "url": "https://navi.gg/en/tournaments/epl-season-24/match/14037",
-        "basis": "secondary",
-        "retrievedAt": "2026-10-03T13:35:00Z",
-        "note": "Starttid trekonvergent paa 16.30 UTC: navi.gg (NAVI offisiell, lest direkte) viser 19.30 EEST = 16.30 UTC, Bo3; esports.gg + uavhengig websok 18.30 CEST = 16.30 UTC. ESL/Liquipedia/HLTV direkte 403 -> basis secondary, confidence medium."
-      },
-      "streaming": {
-        "sourceId": "twitch",
-        "url": "https://www.twitch.tv/esl_csgo",
-        "basis": "official",
-        "retrievedAt": "2026-10-03T13:35:00Z"
-      }
-    },
-    "summary": "Gruppespill (sveitsisk runde 1, Bo3) i ESL Pro League Season 24 — CS2 tier-1, $1 mill., 16 lag i Spodek Arena, Katowice.\n\nDagens storoppgjør mellom to katalog-lag: G2 Esports mot Natus Vincere (NAVI). Gratis på ESLs egen Twitch-kanal (esl_csgo).",
-    "id": "b224ba99a679"
   }
 ]
