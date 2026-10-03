@@ -1,11 +1,12 @@
 {
-	"runAt": "2026-10-02T14:40:00Z",
+	"runAt": "2026-10-03T00:00:00Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"visual-qa verdict was 'issues' with a single medium finding and no high findings.",
-		"The only finding — channel label 'HBO Max (Sport) +1' on the Bank of Utah Championship row at 375/393/900px — is a data-accuracy issue, not a code-fixable UI bug. The frontend renders the streaming[].platform string verbatim (docs/js/dashboard.js channelLine) with no foreign-channel filter; the '+1' suffix lives in events.json. The finding itself calls for 'a data check', i.e. the research/verify agents' domain, not ui-fix.",
-		"No truncation, overflow, broken flags/logos, or calm-design breaks were reported — the visual-qa notes confirm layout is intact at all three widths. Nothing frontend-fixable, so no branch/PR opened."
+		"visual-qa verdict was 'issues' (checkedAt 2026-10-02T14:25:05Z) with a single medium finding and no high findings.",
+		"The only finding — channel label 'HBO Max (Sport) +1' on the Bank of Utah Championship row at 375/393/900px — is a data-accuracy issue, not a code-fixable UI bug. The frontend renders the streaming[].platform string verbatim (docs/js/dashboard.js whereToWatch, escapeHtml) with no foreign-channel filter; the '+1' lived in events.json, not in a '+N more channels' counter (that renders separately as .ev-where-more). The finding itself calls for 'a data check', i.e. the research/verify agents' domain, not ui-fix.",
+		"Data check confirms the point is moot for the frontend: the current events.json Bank of Utah Championship row now reads 'HBO Max (Sport)' with no '+1' suffix, so even the data has since been corrected upstream.",
+		"No truncation, overflow, broken flags/logos, foreign-channel-in-layout, or calm-design breaks were reported — the visual-qa notes confirm header/agenda/disclosures/footer are intact and aligned at all three widths. Nothing frontend-fixable, so no branch/PR opened."
 	]
 }
