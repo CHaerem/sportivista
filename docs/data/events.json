@@ -3528,49 +3528,87 @@
   {
     "sport": "football",
     "tournament": "Eliteserien",
-    "title": "Viking at Brann",
-    "time": "2026-10-09T17:00:00Z",
+    "title": "Brann – Viking",
+    "time": "2026-10-09T17:00:00.000Z",
     "endTime": null,
-    "venue": "Brann stadion",
+    "venue": "Brann Stadium",
+    "meta": "Eliteserien",
     "norwegian": true,
-    "homeTeam": "Brann",
-    "awayTeam": "Viking",
-    "norwegianPlayers": [],
-    "participants": [],
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/fotball/eliteserien",
-        "urlKind": "deep"
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-24T20:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
-      "https://www.fotball.no/turneringer/eliteserien/2026/slik-spilles-eliteserien-runde-23---30",
-      "https://www.sportsidioten.no/resultater/eliteserien-2026/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "fotball-no",
-        "url": "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
-        "basis": "primary",
-        "retrievedAt": "2026-09-24T20:15:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/fotball/eliteserien",
-        "basis": "official",
-        "retrievedAt": "2026-09-24T20:15:00Z"
-      }
-    },
-    "summary": "Eliteserien runde 23 — første serierunde etter det utvidede landslagsvinduet (Norge spilte Nations League 24. + 27. sep). Ingen Eliteserie-runde 1.–8. oktober; ligaen gjenopptas 9.–12. oktober. Viking borte mot Brann, fre. 9. okt 19.00 CEST på Brann stadion.\n\nBrann er blant lagene vi følger.\n\nDato/avspark/arena bekreftet mot fotball.nos terminliste (fiksId 206092, primær-autoritet) + fotball.nos rundeoppsett «Slik spilles runde 23–30», to kilder enige, og uavhengig write-time fact-check. TV-valg kan flytte avspark 30–60 min; verify følger. Norsk visning: TV 2 Play.",
-    "id": "b10d277a2a9c",
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Brann",
+    "awayTeam": "Viking",
+    "isFavorite": true,
+    "round": null,
+    "id": "6761df233db3",
     "homeTeamEntityId": "brann",
-    "awayTeamEntityId": "viking-fk"
+    "awayTeamEntityId": "viking-fk",
+    "summary": "Eliteserien runde 23 — første serierunde etter det utvidede landslagsvinduet (Norge spilte Nations League 24. + 27. sep). Ingen Eliteserie-runde 1.–8. oktober; ligaen gjenopptas 9.–12. oktober. Viking borte mot Brann, fre. 9. okt 19.00 CEST på Brann stadion.\n\nBrann er blant lagene vi følger.\n\nDato/avspark/arena bekreftet mot fotball.nos terminliste (fiksId 206092, primær-autoritet) + fotball.nos rundeoppsett «Slik spilles runde 23–30», to kilder enige, og uavhengig write-time fact-check. TV-valg kan flytte avspark 30–60 min; verify følger. Norsk visning: TV 2 Play."
+  },
+  {
+    "sport": "football",
+    "tournament": "Bundesliga",
+    "title": "Werder Bremen at Borussia Dortmund",
+    "time": "2026-10-09T18:30:00.000Z",
+    "endTime": null,
+    "venue": "Signal Iduna Park",
+    "meta": "Bundesliga",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Borussia Dortmund",
+    "awayTeam": "Werder Bremen",
+    "isFavorite": false,
+    "round": null,
+    "id": "4e18f147707a",
+    "homeTeamEntityId": "borussia-dortmund",
+    "awayTeamEntityId": "werder-bremen"
+  },
+  {
+    "sport": "football",
+    "tournament": "La Liga",
+    "title": "Espanyol at Málaga",
+    "time": "2026-10-09T19:00:00.000Z",
+    "endTime": null,
+    "venue": "La Rosaleda",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Málaga",
+    "awayTeam": "Espanyol",
+    "isFavorite": false,
+    "round": null,
+    "id": "a567a6619f98",
+    "homeTeamEntityId": "malaga",
+    "awayTeamEntityId": "espanyol"
   },
   {
     "sport": "cycling",

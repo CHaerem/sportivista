@@ -1,7 +1,94 @@
 {
-  "lastUpdated": "2026-10-02T21:08:33.163Z",
+  "lastUpdated": "2026-10-03T00:51:46.146Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
+    {
+      "name": "Eliteserien",
+      "events": [
+        {
+          "id": "football-brann-–-viking-1791565200000",
+          "title": "Brann – Viking",
+          "time": "2026-10-09T17:00:00.000Z",
+          "venue": "Brann Stadium",
+          "sport": "football",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
+          "streaming": [
+            {
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Brann",
+          "awayTeam": "Viking",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": true,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        }
+      ]
+    },
+    {
+      "name": "La Liga",
+      "events": [
+        {
+          "id": "football-espanyol-at-málaga-1791572400000",
+          "title": "Espanyol at Málaga",
+          "time": "2026-10-09T19:00:00.000Z",
+          "venue": "La Rosaleda",
+          "sport": "football",
+          "meta": "La Liga",
+          "tournament": "La Liga",
+          "streaming": [
+            {
+              "platform": "ESPN+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Málaga",
+          "awayTeam": "Espanyol",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bundesliga",
+      "events": [
+        {
+          "id": "football-werder-bremen-at-borussia-dortmund-1791570600000",
+          "title": "Werder Bremen at Borussia Dortmund",
+          "time": "2026-10-09T18:30:00.000Z",
+          "venue": "Signal Iduna Park",
+          "sport": "football",
+          "meta": "Bundesliga",
+          "tournament": "Bundesliga",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Borussia Dortmund",
+          "awayTeam": "Werder Bremen",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        }
+      ]
+    },
     {
       "name": "Copa del Rey",
       "events": [
