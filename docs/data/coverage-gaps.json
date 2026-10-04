@@ -1,19 +1,51 @@
 {
-  "generatedAt": "2026-10-03T22:05:19.312Z",
-  "gapCount": 3,
+  "generatedAt": "2026-10-04T00:17:39.936Z",
+  "gapCount": 6,
   "anomalyCount": 1,
   "gaps": [
     {
-      "kind": "tracked-claim",
-      "entity": "Serie A 2026/27",
-      "group": "leagues",
-      "sport": "football",
+      "kind": "entity",
+      "entity": "Jakob Ingebrigtsen",
       "type": "missing",
       "imminent": false,
-      "claimedDate": null,
-      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
-      "trackedId": "serie-a-2026-27",
-      "detectedAt": "2026-10-03T22:05:17.438Z"
+      "headline": "Filip Ingebrigtsen sår tvil om fremtiden: – Jeg må ta en vurdering",
+      "link": "https://www.nrk.no/sport/filip-ingebrigtsen-sar-tvil-om-fremtiden_-_-jeg-ma-ta-en-vurdering-1.18044554",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-10-04T00:17:38.767Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Ingebrigtsen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Filip Ingebrigtsen sår tvil om fremtiden: – Jeg må ta en vurdering",
+      "link": "https://www.nrk.no/sport/filip-ingebrigtsen-sar-tvil-om-fremtiden_-_-jeg-ma-ta-en-vurdering-1.18044554",
+      "feed": "nrk-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-10-04T00:17:38.767Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Nasjonsligaen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Ny spansk seier – satt ut av superstjernas drømmemål",
+      "link": "https://www.nrk.no/sport/ny-spansk-seier-_-satt-ut-av-superstjernas-drommemal-1.18044638",
+      "feed": "nrk-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-10-04T00:17:38.767Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Formel 1",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Verstappen raskest i Malaysia",
+      "link": "https://www.nrk.no/sport/verstappen-raskest-i-malaysia-1.18044281",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-10-04T00:17:38.767Z"
     },
     {
       "kind": "tracked-claim",
@@ -25,7 +57,7 @@
       "claimedDate": "2027-07-17T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "viktor-hovland",
-      "detectedAt": "2026-10-03T22:05:17.438Z"
+      "detectedAt": "2026-10-04T00:17:39.693Z"
     },
     {
       "kind": "tracked-claim",
@@ -37,7 +69,7 @@
       "claimedDate": "2027-07-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "karsten-warholm",
-      "detectedAt": "2026-10-03T22:05:17.438Z"
+      "detectedAt": "2026-10-04T00:17:39.693Z"
     }
   ],
   "anomalies": [
@@ -46,7 +78,7 @@
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-03T22:05:17.502Z"
+      "detectedAt": "2026-10-04T00:17:39.758Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."

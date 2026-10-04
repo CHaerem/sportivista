@@ -2963,6 +2963,59 @@
     ]
   },
   {
+    "sport": "esports",
+    "tournament": "ESL Pro League Season 24",
+    "title": "Natus Vincere vs Team Vitality",
+    "time": "2026-10-04T16:30:00Z",
+    "venue": "Spodek Arena, Katowice",
+    "norwegian": false,
+    "homeTeam": "Natus Vincere",
+    "awayTeam": "Team Vitality",
+    "participants": [
+      {
+        "name": "Natus Vincere"
+      },
+      {
+        "name": "Team Vitality"
+      }
+    ],
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Twitch",
+        "url": "https://www.twitch.tv/esl_csgo",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-03T23:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://navi.gg/en/tournaments/epl-season-24/match/14045",
+      "https://www.hltv.org/news/45626/vitality-to-play-navi-on-epl-s24-day-two"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "liquipedia",
+        "url": "https://navi.gg/en/tournaments/epl-season-24/match/14045",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-03T23:15:00Z",
+        "note": "Starttid tokonvergent paa 16.30 UTC: HLTV-nyhetssak sier eksplisitt 18.30 CEST 04.10 (= 16.30 UTC), Bo3; navi.gg (NAVI offisiell) viser 19.30 EEST = 16.30 UTC. ESL/Liquipedia/HLTV direkte 403 -> basis secondary, confidence medium. Uavhengig fresh-context write-time fact-check: confirmed."
+      },
+      "streaming": {
+        "sourceId": "twitch",
+        "url": "https://www.twitch.tv/esl_csgo",
+        "basis": "official",
+        "retrievedAt": "2026-10-03T23:15:00Z"
+      }
+    },
+    "summary": "Gruppespill (sveitsisk runde 2, Bo3) i ESL Pro League Season 24 — CS2 tier-1, $1 mill., 16 lag i Spodek Arena, Katowice.\n\nDag 2s storoppgjør mellom to katalog-lag: NAVI mot Team Vitality, begge 1–0 etter åpningsrunden (NAVI slått G2 2–0, Vitality vant sin). Vinneren går til 2–0-puljen.\n\nGratis på ESLs egen Twitch-kanal (esl_csgo) i Norge — ingen norsk TV-rettighet.",
+    "id": "e21cc8906e19",
+    "homeTeamEntityId": "natus-vincere",
+    "awayTeamEntityId": "team-vitality"
+  },
+  {
     "sport": "football",
     "tournament": "UEFA Nations League 2026/27 (League A, gruppe 4)",
     "title": "Portugal – Norge",
@@ -3401,14 +3454,11 @@
     "sport": "football",
     "tournament": "Premier League",
     "title": "Leeds United at Arsenal",
-    "time": "2026-10-10T11:30:00Z",
+    "time": "2026-10-10T11:30:00.000Z",
     "endTime": null,
-    "venue": null,
+    "venue": "Emirates Stadium",
+    "meta": "Premier League",
     "norwegian": false,
-    "homeTeam": "Arsenal",
-    "awayTeam": "Leeds United",
-    "norwegianPlayers": [],
-    "participants": [],
     "streaming": [
       {
         "platform": "Viaplay",
@@ -3416,33 +3466,74 @@
         "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-24T20:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november",
-      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-      "https://www.sportsmole.co.uk/football/feature/premier-league-2026-27-fixtures-full-list-tv-schedule-kickoff-times_603015.html"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "premier-league",
-        "url": "https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november",
-        "basis": "primary",
-        "retrievedAt": "2026-09-24T20:15:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no",
-        "basis": "official",
-        "retrievedAt": "2026-09-24T20:15:00Z"
-      }
-    },
-    "summary": "Premier League runde 6 — den første PL-runden etter det utvidede landslagsvinduet. September- og oktoberpausene ble slått sammen til ett 16-dagers vindu (21. sep–6. okt), så det spilles INGEN PL-kamper 3.–5. oktober; ligaen gjenopptas 10.–12. oktober. Leeds United borte mot Arsenal lør. 10. okt 13.30 (12.30 BST).\n\nDato/avspark bekreftet mot premier-league.com (fixture amendments + all-380-terminlisten, primær-autoritet) og en uavhengig write-time fact-check (arsenal.com/newcastleunited.com/premierleague.com match-sider). Storbritannia er på BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27).",
-    "id": "ff41cd78cb58",
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Arsenal",
+    "awayTeam": "Leeds United",
+    "isFavorite": true,
+    "round": null,
+    "id": "a35a0c4de70b",
     "homeTeamEntityId": "arsenal",
-    "awayTeamEntityId": "leeds-united"
+    "awayTeamEntityId": "leeds-united",
+    "summary": "Premier League runde 6 — den første PL-runden etter det utvidede landslagsvinduet. September- og oktoberpausene ble slått sammen til ett 16-dagers vindu (21. sep–6. okt), så det spilles INGEN PL-kamper 3.–5. oktober; ligaen gjenopptas 10.–12. oktober. Leeds United borte mot Arsenal lør. 10. okt 13.30 (12.30 BST).\n\nDato/avspark bekreftet mot premier-league.com (fixture amendments + all-380-terminlisten, primær-autoritet) og en uavhengig write-time fact-check (arsenal.com/newcastleunited.com/premierleague.com match-sider). Storbritannia er på BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
+  },
+  {
+    "sport": "football",
+    "tournament": "La Liga",
+    "title": "Athletic Club at Rayo Vallecano",
+    "time": "2026-10-10T12:00:00.000Z",
+    "endTime": null,
+    "venue": "Estadio de Vallecas",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Rayo Vallecano",
+    "awayTeam": "Athletic Club",
+    "isFavorite": false,
+    "round": null,
+    "id": "79565dff4adc",
+    "homeTeamEntityId": "rayo-vallecano",
+    "awayTeamEntityId": "athletic-club"
+  },
+  {
+    "sport": "football",
+    "tournament": "Serie A",
+    "title": "Fiorentina at Genoa",
+    "time": "2026-10-10T13:00:00.000Z",
+    "endTime": null,
+    "venue": "Stadio Luigi Ferraris",
+    "meta": "Serie A",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Genoa",
+    "awayTeam": "Fiorentina",
+    "isFavorite": false,
+    "round": null,
+    "id": "2f9d1e7ca31b",
+    "homeTeamEntityId": "genoa",
+    "awayTeamEntityId": "fiorentina"
   },
   {
     "sport": "f1",
@@ -3494,16 +3585,164 @@
   },
   {
     "sport": "football",
+    "tournament": "Bundesliga",
+    "title": "SV Elversberg at 1. FC Union Berlin",
+    "time": "2026-10-10T13:30:00.000Z",
+    "endTime": null,
+    "venue": "Stadion An der Alten Försterei",
+    "meta": "Bundesliga",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "1. FC Union Berlin",
+    "awayTeam": "SV Elversberg",
+    "isFavorite": false,
+    "round": null,
+    "id": "3243d6c25d0f",
+    "homeTeamEntityId": "1-fc-union-berlin",
+    "awayTeamEntityId": "sv-elversberg"
+  },
+  {
+    "sport": "football",
+    "tournament": "Bundesliga",
+    "title": "Bayern Munich at FC Augsburg",
+    "time": "2026-10-10T13:30:00.000Z",
+    "endTime": null,
+    "venue": "WWK Arena",
+    "meta": "Bundesliga",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "FC Augsburg",
+    "awayTeam": "Bayern Munich",
+    "isFavorite": false,
+    "round": null,
+    "id": "22b23ead9866",
+    "homeTeamEntityId": "fc-augsburg",
+    "awayTeamEntityId": "bayern-munich"
+  },
+  {
+    "sport": "football",
+    "tournament": "Bundesliga",
+    "title": "Bayer Leverkusen at Mainz",
+    "time": "2026-10-10T13:30:00.000Z",
+    "endTime": null,
+    "venue": "MEWA ARENA",
+    "meta": "Bundesliga",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Mainz",
+    "awayTeam": "Bayer Leverkusen",
+    "isFavorite": false,
+    "round": null,
+    "id": "d85a506ea743",
+    "homeTeamEntityId": "mainz",
+    "awayTeamEntityId": "bayer-leverkusen"
+  },
+  {
+    "sport": "football",
+    "tournament": "Bundesliga",
+    "title": "VfB Stuttgart at SC Paderborn 07",
+    "time": "2026-10-10T13:30:00.000Z",
+    "endTime": null,
+    "venue": "Home Deluxe Arena",
+    "meta": "Bundesliga",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "SC Paderborn 07",
+    "awayTeam": "VfB Stuttgart",
+    "isFavorite": false,
+    "round": null,
+    "id": "0d11cefb0361",
+    "homeTeamEntityId": "sc-paderborn-07",
+    "awayTeamEntityId": "vfb-stuttgart"
+  },
+  {
+    "sport": "football",
+    "tournament": "Bundesliga",
+    "title": "Hamburg SV at TSG Hoffenheim",
+    "time": "2026-10-10T13:30:00.000Z",
+    "endTime": null,
+    "venue": "PreZero Arena",
+    "meta": "Bundesliga",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "TSG Hoffenheim",
+    "awayTeam": "Hamburg SV",
+    "isFavorite": false,
+    "round": null,
+    "id": "53a3a96624b5",
+    "homeTeamEntityId": "tsg-hoffenheim",
+    "awayTeamEntityId": "hamburger-sv"
+  },
+  {
+    "sport": "football",
+    "tournament": "Eliteserien",
+    "title": "Bodø/Glimt – Kristiansund",
+    "time": "2026-10-10T14:00:00.000Z",
+    "endTime": null,
+    "venue": "Aspmyra Stadion",
+    "meta": "Eliteserien",
+    "norwegian": true,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Bodø/Glimt",
+    "awayTeam": "Kristiansund",
+    "isFavorite": true,
+    "round": null,
+    "id": "0d28d0e969ef",
+    "homeTeamEntityId": "bodo-glimt",
+    "awayTeamEntityId": "kristiansund-bk",
+    "summary": "Eliteserien runde 23 — første serierunde etter det utvidede landslagsvinduet (Norge spilte Nations League 24. + 27. sep). Ingen Eliteserie-runde 1.–8. oktober; ligaen gjenopptas 9.–12. oktober. Kristiansund borte mot Bodø/Glimt, lør. 10. okt 16.00 CEST på Aspmyra stadion.\n\nBodø/Glimt er blant lagene vi følger.\n\nDato/avspark/arena bekreftet mot fotball.nos terminliste (fiksId 206092, primær-autoritet) + fotball.nos rundeoppsett «Slik spilles runde 23–30», to kilder enige, og uavhengig write-time fact-check. TV-valg kan flytte avspark 30–60 min; verify følger. Norsk visning: TV 2 Play."
+  },
+  {
+    "sport": "football",
     "tournament": "Premier League",
     "title": "Brentford at Aston Villa",
-    "time": "2026-10-10T14:00:00Z",
+    "time": "2026-10-10T14:00:00.000Z",
     "endTime": null,
-    "venue": null,
+    "venue": "Villa Park",
+    "meta": "Premier League",
     "norwegian": false,
-    "homeTeam": "Aston Villa",
-    "awayTeam": "Brentford",
-    "norwegianPlayers": [],
-    "participants": [],
     "streaming": [
       {
         "platform": "Viaplay",
@@ -3511,46 +3750,30 @@
         "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-24T20:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november",
-      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-      "https://www.sportsmole.co.uk/football/feature/premier-league-2026-27-fixtures-full-list-tv-schedule-kickoff-times_603015.html"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "premier-league",
-        "url": "https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november",
-        "basis": "primary",
-        "retrievedAt": "2026-09-24T20:15:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no",
-        "basis": "official",
-        "retrievedAt": "2026-09-24T20:15:00Z"
-      }
-    },
-    "summary": "Premier League runde 6 — den første PL-runden etter det utvidede landslagsvinduet. September- og oktoberpausene ble slått sammen til ett 16-dagers vindu (21. sep–6. okt), så det spilles INGEN PL-kamper 3.–5. oktober; ligaen gjenopptas 10.–12. oktober. Brentford borte mot Aston Villa lør. 10. okt 16.00 (15.00 BST).\n\nDato/avspark bekreftet mot premier-league.com (fixture amendments + all-380-terminlisten, primær-autoritet) og en uavhengig write-time fact-check (arsenal.com/newcastleunited.com/premierleague.com match-sider). Storbritannia er på BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27).",
-    "id": "78cd03763afe",
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Aston Villa",
+    "awayTeam": "Brentford",
+    "isFavorite": false,
+    "round": null,
+    "id": "83f91fae0c4a",
     "homeTeamEntityId": "aston-villa",
-    "awayTeamEntityId": "brentford"
+    "awayTeamEntityId": "brentford",
+    "summary": "Premier League runde 6 — den første PL-runden etter det utvidede landslagsvinduet. September- og oktoberpausene ble slått sammen til ett 16-dagers vindu (21. sep–6. okt), så det spilles INGEN PL-kamper 3.–5. oktober; ligaen gjenopptas 10.–12. oktober. Brentford borte mot Aston Villa lør. 10. okt 16.00 (15.00 BST).\n\nDato/avspark bekreftet mot premier-league.com (fixture amendments + all-380-terminlisten, primær-autoritet) og en uavhengig write-time fact-check (arsenal.com/newcastleunited.com/premierleague.com match-sider). Storbritannia er på BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
   },
   {
     "sport": "football",
     "tournament": "Premier League",
     "title": "AFC Bournemouth at Chelsea",
-    "time": "2026-10-10T14:00:00Z",
+    "time": "2026-10-10T14:00:00.000Z",
     "endTime": null,
-    "venue": null,
+    "venue": "Stamford Bridge",
+    "meta": "Premier League",
     "norwegian": false,
-    "homeTeam": "Chelsea",
-    "awayTeam": "AFC Bournemouth",
-    "norwegianPlayers": [],
-    "participants": [],
     "streaming": [
       {
         "platform": "Viaplay",
@@ -3558,46 +3781,30 @@
         "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-24T20:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november",
-      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-      "https://www.sportsmole.co.uk/football/feature/premier-league-2026-27-fixtures-full-list-tv-schedule-kickoff-times_603015.html"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "premier-league",
-        "url": "https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november",
-        "basis": "primary",
-        "retrievedAt": "2026-09-24T20:15:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no",
-        "basis": "official",
-        "retrievedAt": "2026-09-24T20:15:00Z"
-      }
-    },
-    "summary": "Premier League runde 6 — den første PL-runden etter det utvidede landslagsvinduet. September- og oktoberpausene ble slått sammen til ett 16-dagers vindu (21. sep–6. okt), så det spilles INGEN PL-kamper 3.–5. oktober; ligaen gjenopptas 10.–12. oktober. AFC Bournemouth borte mot Chelsea lør. 10. okt 16.00 (15.00 BST).\n\nDato/avspark bekreftet mot premier-league.com (fixture amendments + all-380-terminlisten, primær-autoritet) og en uavhengig write-time fact-check (arsenal.com/newcastleunited.com/premierleague.com match-sider). Storbritannia er på BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27).",
-    "id": "df4ec4d41da3",
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Chelsea",
+    "awayTeam": "AFC Bournemouth",
+    "isFavorite": false,
+    "round": null,
+    "id": "d3119a8008f6",
     "homeTeamEntityId": "chelsea",
-    "awayTeamEntityId": "afc-bournemouth"
+    "awayTeamEntityId": "afc-bournemouth",
+    "summary": "Premier League runde 6 — den første PL-runden etter det utvidede landslagsvinduet. September- og oktoberpausene ble slått sammen til ett 16-dagers vindu (21. sep–6. okt), så det spilles INGEN PL-kamper 3.–5. oktober; ligaen gjenopptas 10.–12. oktober. AFC Bournemouth borte mot Chelsea lør. 10. okt 16.00 (15.00 BST).\n\nDato/avspark bekreftet mot premier-league.com (fixture amendments + all-380-terminlisten, primær-autoritet) og en uavhengig write-time fact-check (arsenal.com/newcastleunited.com/premierleague.com match-sider). Storbritannia er på BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
   },
   {
     "sport": "football",
     "tournament": "Premier League",
     "title": "Fulham at Ipswich Town",
-    "time": "2026-10-10T14:00:00Z",
+    "time": "2026-10-10T14:00:00.000Z",
     "endTime": null,
-    "venue": null,
+    "venue": "Portman Road",
+    "meta": "Premier League",
     "norwegian": false,
-    "homeTeam": "Ipswich Town",
-    "awayTeam": "Fulham",
-    "norwegianPlayers": [],
-    "participants": [],
     "streaming": [
       {
         "platform": "Viaplay",
@@ -3605,46 +3812,30 @@
         "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-24T20:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november",
-      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-      "https://www.sportsmole.co.uk/football/feature/premier-league-2026-27-fixtures-full-list-tv-schedule-kickoff-times_603015.html"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "premier-league",
-        "url": "https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november",
-        "basis": "primary",
-        "retrievedAt": "2026-09-24T20:15:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no",
-        "basis": "official",
-        "retrievedAt": "2026-09-24T20:15:00Z"
-      }
-    },
-    "summary": "Premier League runde 6 — den første PL-runden etter det utvidede landslagsvinduet. September- og oktoberpausene ble slått sammen til ett 16-dagers vindu (21. sep–6. okt), så det spilles INGEN PL-kamper 3.–5. oktober; ligaen gjenopptas 10.–12. oktober. Fulham borte mot Ipswich Town lør. 10. okt 16.00 (15.00 BST).\n\nDato/avspark bekreftet mot premier-league.com (fixture amendments + all-380-terminlisten, primær-autoritet) og en uavhengig write-time fact-check (arsenal.com/newcastleunited.com/premierleague.com match-sider). Storbritannia er på BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27).",
-    "id": "149a20f3f525",
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Ipswich Town",
+    "awayTeam": "Fulham",
+    "isFavorite": false,
+    "round": null,
+    "id": "6036f1aec08d",
     "homeTeamEntityId": "ipswich-town",
-    "awayTeamEntityId": "fulham"
+    "awayTeamEntityId": "fulham",
+    "summary": "Premier League runde 6 — den første PL-runden etter det utvidede landslagsvinduet. September- og oktoberpausene ble slått sammen til ett 16-dagers vindu (21. sep–6. okt), så det spilles INGEN PL-kamper 3.–5. oktober; ligaen gjenopptas 10.–12. oktober. Fulham borte mot Ipswich Town lør. 10. okt 16.00 (15.00 BST).\n\nDato/avspark bekreftet mot premier-league.com (fixture amendments + all-380-terminlisten, primær-autoritet) og en uavhengig write-time fact-check (arsenal.com/newcastleunited.com/premierleague.com match-sider). Storbritannia er på BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
   },
   {
     "sport": "football",
     "tournament": "Premier League",
     "title": "Brighton & Hove Albion at Sunderland",
-    "time": "2026-10-10T14:00:00Z",
+    "time": "2026-10-10T14:00:00.000Z",
     "endTime": null,
-    "venue": null,
+    "venue": "Stadium of Light",
+    "meta": "Premier League",
     "norwegian": false,
-    "homeTeam": "Sunderland",
-    "awayTeam": "Brighton & Hove Albion",
-    "norwegianPlayers": [],
-    "participants": [],
     "streaming": [
       {
         "platform": "Viaplay",
@@ -3652,140 +3843,115 @@
         "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-24T20:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november",
-      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-      "https://www.sportsmole.co.uk/football/feature/premier-league-2026-27-fixtures-full-list-tv-schedule-kickoff-times_603015.html"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "premier-league",
-        "url": "https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november",
-        "basis": "primary",
-        "retrievedAt": "2026-09-24T20:15:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no",
-        "basis": "official",
-        "retrievedAt": "2026-09-24T20:15:00Z"
-      }
-    },
-    "summary": "Premier League runde 6 — den første PL-runden etter det utvidede landslagsvinduet. September- og oktoberpausene ble slått sammen til ett 16-dagers vindu (21. sep–6. okt), så det spilles INGEN PL-kamper 3.–5. oktober; ligaen gjenopptas 10.–12. oktober. Brighton & Hove Albion borte mot Sunderland lør. 10. okt 16.00 (15.00 BST).\n\nDato/avspark bekreftet mot premier-league.com (fixture amendments + all-380-terminlisten, primær-autoritet) og en uavhengig write-time fact-check (arsenal.com/newcastleunited.com/premierleague.com match-sider). Storbritannia er på BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27).",
-    "id": "ef8804d3d95b",
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Sunderland",
+    "awayTeam": "Brighton & Hove Albion",
+    "isFavorite": false,
+    "round": null,
+    "id": "5af519e5dc29",
     "homeTeamEntityId": "sunderland",
-    "awayTeamEntityId": "brighton-hove-albion"
+    "awayTeamEntityId": "brighton-hove-albion",
+    "summary": "Premier League runde 6 — den første PL-runden etter det utvidede landslagsvinduet. September- og oktoberpausene ble slått sammen til ett 16-dagers vindu (21. sep–6. okt), så det spilles INGEN PL-kamper 3.–5. oktober; ligaen gjenopptas 10.–12. oktober. Brighton & Hove Albion borte mot Sunderland lør. 10. okt 16.00 (15.00 BST).\n\nDato/avspark bekreftet mot premier-league.com (fixture amendments + all-380-terminlisten, primær-autoritet) og en uavhengig write-time fact-check (arsenal.com/newcastleunited.com/premierleague.com match-sider). Storbritannia er på BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
   },
   {
     "sport": "football",
-    "tournament": "Eliteserien",
-    "title": "Kristiansund at Bodø/Glimt",
-    "time": "2026-10-10T14:00:00Z",
+    "tournament": "La Liga",
+    "title": "Atlético Madrid at Alavés",
+    "time": "2026-10-10T14:15:00.000Z",
     "endTime": null,
-    "venue": "Aspmyra stadion",
-    "norwegian": true,
-    "homeTeam": "Bodø/Glimt",
-    "awayTeam": "Kristiansund",
-    "norwegianPlayers": [],
-    "participants": [],
+    "venue": "Mendizorrotza",
+    "meta": "La Liga",
+    "norwegian": false,
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/fotball/eliteserien",
-        "urlKind": "deep"
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-24T20:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
-      "https://www.fotball.no/turneringer/eliteserien/2026/slik-spilles-eliteserien-runde-23---30",
-      "https://www.sportsidioten.no/resultater/eliteserien-2026/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "fotball-no",
-        "url": "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
-        "basis": "primary",
-        "retrievedAt": "2026-09-24T20:15:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/fotball/eliteserien",
-        "basis": "official",
-        "retrievedAt": "2026-09-24T20:15:00Z"
-      }
-    },
-    "summary": "Eliteserien runde 23 — første serierunde etter det utvidede landslagsvinduet (Norge spilte Nations League 24. + 27. sep). Ingen Eliteserie-runde 1.–8. oktober; ligaen gjenopptas 9.–12. oktober. Kristiansund borte mot Bodø/Glimt, lør. 10. okt 16.00 CEST på Aspmyra stadion.\n\nBodø/Glimt er blant lagene vi følger.\n\nDato/avspark/arena bekreftet mot fotball.nos terminliste (fiksId 206092, primær-autoritet) + fotball.nos rundeoppsett «Slik spilles runde 23–30», to kilder enige, og uavhengig write-time fact-check. TV-valg kan flytte avspark 30–60 min; verify følger. Norsk visning: TV 2 Play.",
-    "id": "78e60dafba9b",
-    "homeTeamEntityId": "bodo-glimt",
-    "awayTeamEntityId": "kristiansund-bk"
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Alavés",
+    "awayTeam": "Atlético Madrid",
+    "isFavorite": false,
+    "round": null,
+    "id": "d7e9d70ca32b",
+    "homeTeamEntityId": "alaves",
+    "awayTeamEntityId": "atletico-madrid"
   },
   {
     "sport": "football",
     "tournament": "Eliteserien",
-    "title": "Sandefjord at Rosenborg",
-    "time": "2026-10-10T16:00:00Z",
+    "title": "Rosenborg – Sandefjord",
+    "time": "2026-10-10T16:00:00.000Z",
     "endTime": null,
-    "venue": "Lerkendal stadion",
+    "venue": "Lerkendal Stadion",
+    "meta": "Eliteserien",
     "norwegian": true,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
     "homeTeam": "Rosenborg",
     "awayTeam": "Sandefjord",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/fotball/eliteserien",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-24T20:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
-      "https://www.fotball.no/turneringer/eliteserien/2026/slik-spilles-eliteserien-runde-23---30",
-      "https://www.sportsidioten.no/resultater/eliteserien-2026/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "fotball-no",
-        "url": "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206092",
-        "basis": "primary",
-        "retrievedAt": "2026-09-24T20:15:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/fotball/eliteserien",
-        "basis": "official",
-        "retrievedAt": "2026-09-24T20:15:00Z"
-      }
-    },
-    "summary": "Eliteserien runde 23 — første serierunde etter det utvidede landslagsvinduet (Norge spilte Nations League 24. + 27. sep). Ingen Eliteserie-runde 1.–8. oktober; ligaen gjenopptas 9.–12. oktober. Sandefjord borte mot Rosenborg, lør. 10. okt 18.00 CEST på Lerkendal stadion.\n\nRosenborg er blant lagene vi følger.\n\nDato/avspark/arena bekreftet mot fotball.nos terminliste (fiksId 206092, primær-autoritet) + fotball.nos rundeoppsett «Slik spilles runde 23–30», to kilder enige, og uavhengig write-time fact-check. TV-valg kan flytte avspark 30–60 min; verify følger. Norsk visning: TV 2 Play.",
-    "id": "a94bdb2d8e8a",
+    "isFavorite": true,
+    "round": null,
+    "id": "6bb690c070b1",
     "homeTeamEntityId": "rosenborg",
-    "awayTeamEntityId": "sandefjord"
+    "awayTeamEntityId": "sandefjord",
+    "summary": "Eliteserien runde 23 — første serierunde etter det utvidede landslagsvinduet (Norge spilte Nations League 24. + 27. sep). Ingen Eliteserie-runde 1.–8. oktober; ligaen gjenopptas 9.–12. oktober. Sandefjord borte mot Rosenborg, lør. 10. okt 18.00 CEST på Lerkendal stadion.\n\nRosenborg er blant lagene vi følger.\n\nDato/avspark/arena bekreftet mot fotball.nos terminliste (fiksId 206092, primær-autoritet) + fotball.nos rundeoppsett «Slik spilles runde 23–30», to kilder enige, og uavhengig write-time fact-check. TV-valg kan flytte avspark 30–60 min; verify følger. Norsk visning: TV 2 Play."
+  },
+  {
+    "sport": "football",
+    "tournament": "Serie A",
+    "title": "Parma at Internazionale",
+    "time": "2026-10-10T16:00:00.000Z",
+    "endTime": null,
+    "venue": "San Siro",
+    "meta": "Serie A",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Internazionale",
+    "awayTeam": "Parma",
+    "isFavorite": false,
+    "round": null,
+    "id": "327014ae68ba",
+    "homeTeamEntityId": "internazionale",
+    "awayTeamEntityId": "parma"
   },
   {
     "sport": "football",
     "tournament": "Premier League",
     "title": "Tottenham Hotspur at Manchester United",
-    "time": "2026-10-10T16:30:00Z",
+    "time": "2026-10-10T16:30:00.000Z",
     "endTime": null,
-    "venue": null,
+    "venue": "Old Trafford",
+    "meta": "Premier League",
     "norwegian": false,
-    "homeTeam": "Manchester United",
-    "awayTeam": "Tottenham Hotspur",
-    "norwegianPlayers": [],
-    "participants": [],
     "streaming": [
       {
         "platform": "Viaplay",
@@ -3793,33 +3959,128 @@
         "urlKind": "landing"
       }
     ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-24T20:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november",
-      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
-      "https://www.sportsmole.co.uk/football/feature/premier-league-2026-27-fixtures-full-list-tv-schedule-kickoff-times_603015.html"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "premier-league",
-        "url": "https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november",
-        "basis": "primary",
-        "retrievedAt": "2026-09-24T20:15:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no",
-        "basis": "official",
-        "retrievedAt": "2026-09-24T20:15:00Z"
-      }
-    },
-    "summary": "Premier League runde 6 — den første PL-runden etter det utvidede landslagsvinduet. September- og oktoberpausene ble slått sammen til ett 16-dagers vindu (21. sep–6. okt), så det spilles INGEN PL-kamper 3.–5. oktober; ligaen gjenopptas 10.–12. oktober. Tottenham Hotspur borte mot Manchester United lør. 10. okt 18.30 (17.30 BST).\n\nDato/avspark bekreftet mot premier-league.com (fixture amendments + all-380-terminlisten, primær-autoritet) og en uavhengig write-time fact-check (arsenal.com/newcastleunited.com/premierleague.com match-sider). Storbritannia er på BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27).",
-    "id": "b05593bd64bd",
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Manchester United",
+    "awayTeam": "Tottenham Hotspur",
+    "isFavorite": false,
+    "round": null,
+    "id": "51b011eb3094",
     "homeTeamEntityId": "manchester-united",
-    "awayTeamEntityId": "tottenham-hotspur"
+    "awayTeamEntityId": "tottenham-hotspur",
+    "summary": "Premier League runde 6 — den første PL-runden etter det utvidede landslagsvinduet. September- og oktoberpausene ble slått sammen til ett 16-dagers vindu (21. sep–6. okt), så det spilles INGEN PL-kamper 3.–5. oktober; ligaen gjenopptas 10.–12. oktober. Tottenham Hotspur borte mot Manchester United lør. 10. okt 18.30 (17.30 BST).\n\nDato/avspark bekreftet mot premier-league.com (fixture amendments + all-380-terminlisten, primær-autoritet) og en uavhengig write-time fact-check (arsenal.com/newcastleunited.com/premierleague.com match-sider). Storbritannia er på BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
+  },
+  {
+    "sport": "football",
+    "tournament": "La Liga",
+    "title": "Getafe at Barcelona",
+    "time": "2026-10-10T16:30:00.000Z",
+    "endTime": null,
+    "venue": "Spotify Camp Nou",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Barcelona",
+    "awayTeam": "Getafe",
+    "isFavorite": true,
+    "round": null,
+    "id": "396dd2b4f9d3",
+    "homeTeamEntityId": "barcelona",
+    "awayTeamEntityId": "getafe"
+  },
+  {
+    "sport": "football",
+    "tournament": "Bundesliga",
+    "title": "Eintracht Frankfurt at RB Leipzig",
+    "time": "2026-10-10T16:30:00.000Z",
+    "endTime": null,
+    "venue": "Red Bull Arena",
+    "meta": "Bundesliga",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "RB Leipzig",
+    "awayTeam": "Eintracht Frankfurt",
+    "isFavorite": false,
+    "round": null,
+    "id": "af5736839b0d",
+    "homeTeamEntityId": "rb-leipzig",
+    "awayTeamEntityId": "eintracht-frankfurt"
+  },
+  {
+    "sport": "football",
+    "tournament": "Serie A",
+    "title": "Frosinone at Napoli",
+    "time": "2026-10-10T18:45:00.000Z",
+    "endTime": null,
+    "venue": "Stadio Diego Armando Maradona",
+    "meta": "Serie A",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Napoli",
+    "awayTeam": "Frosinone",
+    "isFavorite": false,
+    "round": null,
+    "id": "69c505715eec",
+    "homeTeamEntityId": "napoli",
+    "awayTeamEntityId": "frosinone"
+  },
+  {
+    "sport": "football",
+    "tournament": "La Liga",
+    "title": "Villarreal at Real Madrid",
+    "time": "2026-10-10T19:00:00.000Z",
+    "endTime": null,
+    "venue": "Santiago Bernabéu",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Villarreal",
+    "isFavorite": true,
+    "round": null,
+    "id": "b1bc9f6a46bf",
+    "homeTeamEntityId": "real-madrid",
+    "awayTeamEntityId": "villarreal"
   },
   {
     "sport": "f1",
@@ -4389,8 +4650,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no",
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
         "urlKind": "landing"
       }
     ],
@@ -4434,8 +4695,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no",
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
         "urlKind": "landing"
       }
     ],
@@ -4572,58 +4833,5 @@
     "summary": "Magnus Carlsens bekreftede neste turnering: pilot-utgaven av den FIDE-godkjente Total Chess World Championship Tour, i Budapest 10.–21. november. 24 spillere fra 10 nasjoner, premiepott minst $2,7 mill. og to plasser til Kandidatturneringen 2028.\n\nÅpningsseremoni + blitz-sveitser går 10. nov (klokkeslett ikke publisert). Gruppespillet (fire grupper à seks, dobbel serie i «fast classic» 45+30) spilles 11.–15. nov med daglig start 15:00 CET. Utslagsrundene 17.–20. nov (blitz 15:00, hurtig 16:15, fast classic 18:45 CET).\n\nCarlsen, Caruana, Erigaisi, Wesley So, Keymer og Aronian er bekreftet; Gukesh, Nakamura og Sindarov er meldt av pga. kollisjon med det klassiske VM. Norsk/offisiell kringkasting er ennå ikke kunngjort av arrangøren – verify fyller streaming når worldchess melder plattform.",
     "norwegianPlayers": [],
     "id": "bd5daeb1237d"
-  },
-  {
-    "sport": "esports",
-    "tournament": "ESL Pro League Season 24",
-    "title": "Natus Vincere vs Team Vitality",
-    "time": "2026-10-04T16:30:00Z",
-    "venue": "Spodek Arena, Katowice",
-    "norwegian": false,
-    "homeTeam": "Natus Vincere",
-    "awayTeam": "Team Vitality",
-    "participants": [
-      {
-        "name": "Natus Vincere"
-      },
-      {
-        "name": "Team Vitality"
-      }
-    ],
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "Twitch",
-        "url": "https://www.twitch.tv/esl_csgo",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-03T23:15:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://navi.gg/en/tournaments/epl-season-24/match/14045",
-      "https://www.hltv.org/news/45626/vitality-to-play-navi-on-epl-s24-day-two"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "liquipedia",
-        "url": "https://navi.gg/en/tournaments/epl-season-24/match/14045",
-        "basis": "secondary",
-        "retrievedAt": "2026-10-03T23:15:00Z",
-        "note": "Starttid tokonvergent paa 16.30 UTC: HLTV-nyhetssak sier eksplisitt 18.30 CEST 04.10 (= 16.30 UTC), Bo3; navi.gg (NAVI offisiell) viser 19.30 EEST = 16.30 UTC. ESL/Liquipedia/HLTV direkte 403 -> basis secondary, confidence medium. Uavhengig fresh-context write-time fact-check: confirmed."
-      },
-      "streaming": {
-        "sourceId": "twitch",
-        "url": "https://www.twitch.tv/esl_csgo",
-        "basis": "official",
-        "retrievedAt": "2026-10-03T23:15:00Z"
-      }
-    },
-    "summary": "Gruppespill (sveitsisk runde 2, Bo3) i ESL Pro League Season 24 — CS2 tier-1, $1 mill., 16 lag i Spodek Arena, Katowice.\n\nDag 2s storoppgjør mellom to katalog-lag: NAVI mot Team Vitality, begge 1–0 etter åpningsrunden (NAVI slått G2 2–0, Vitality vant sin). Vinneren går til 2–0-puljen.\n\nGratis på ESLs egen Twitch-kanal (esl_csgo) i Norge — ingen norsk TV-rettighet.",
-    "id": "3a923ae0960b",
-    "homeTeamEntityId": "natus-vincere",
-    "awayTeamEntityId": "team-vitality"
   }
 ]
