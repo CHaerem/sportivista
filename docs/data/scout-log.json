@@ -1,5 +1,13 @@
 [
   {
+    "runAt": "2026-10-04T15:45:00.000Z",
+    "verdict": "escalate",
+    "reason": "RSS (27 items, 15:39 UTC): mostly past results (F1 Malaysia, Aalesund-Brann, handball, NHL—no schedule/time/venue/streaming/broadcaster changes to upcoming tracked events). No 100 Thieves/rain CS2 match hints, no schedule announcements. Coverage gaps (11 gaps, 1 anomaly): Casper Ruud (tracked interest) imminent Oct 6 gap newly detected today as imminent=true (2 days away). tracked-claim gap with concrete claimedDate—board claims Oct 6 coverage but event missing. Imminent + newly-imminent + tracked = escalation-worthy signal. Escalation cap today (Oct 4 UTC): 0/2.",
+    "signals": [
+      "Casper Ruud imminent Oct 6 gap (tracked-claim, tennis, newly imminent today)"
+    ]
+  },
+  {
     "runAt": "2026-10-03T22:30:00.000Z",
     "verdict": "quiet",
     "reason": "RSS (12 items, 22:04 UTC): Nations League match results finalized (Spain/Czechia, Scotland/North Macedonia, England/Croatia—all Sep 30–Oct 3, now archived). Manchester City guilty verdict (organizational/legal news, no schedule changes). Transfer gossip (no schedule impact). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 1 anomaly): Non-imminent tracked claims (Serie A, Hovland, Warholm—all far-future July 2027). Chess file empty (low severity, known). Previous contract-breach escalations (Sep 24 14:37 UTC, ~9 days old) are pre-existing; research agent has had ample time. No NEW concrete signal justifying escalation. Escalation cap today (Oct 3 UTC): 0/2.",
