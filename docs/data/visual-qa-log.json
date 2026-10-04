@@ -1,22 +1,28 @@
 {
-  "checkedAt": "2026-10-02T14:25:05Z",
+  "checkedAt": "2026-10-04T00:00:00Z",
   "widths": [375, 393, 900],
   "verdict": "issues",
   "findings": [
     {
       "width": 375,
-      "area": "agenda row — Bank of Utah Championship (I DAG)",
-      "issue": "Channel reads \"HBO Max (Sport) +1\" — the \"+1\" time-shift suffix is a UK/international channel-numbering convention, not the Norwegian format used by every other row on the board (Viaplay, TV 2 Play, TV 2 Direkte). Same text appears at 393px and 900px. Worth a data check on whether this is actually the correct Norwegian viewing option for this event rather than an unfiltered international feed.",
+      "area": "agenda rows — Copa del Rey 2nd-leg matches (I DAG, e.g. \"Atlético Unión Güímar – Sporting Hortaleza\", \"AE Prat – CF San Rafael\", \"CD San José – Auriense Cented Academy\", \"SD Noja – Ribadesella\")",
+      "issue": "The subtitle line reads e.g. \"Copa del Rey · 2nd Leg - Sporting Hortaleza lead 1-0 on aggregate · FERDIG\" — raw English scoring text (\"2nd Leg\", \"lead X-Y on aggregate\") sits directly next to the Norwegian status word \"FERDIG\", inside an otherwise all-Norwegian interface. Confirmed identical at 393px and 900px, and in both dark and light color schemes.",
+      "severity": "medium"
+    },
+    {
+      "width": 375,
+      "area": "agenda rows — Bank of Utah Championship / Baycurrent Classic / Il Lombardia (channel label)",
+      "issue": "Channel reads \"HBO Max (Sport) +1\" — the \"+1\" time-shift suffix is a UK/international channel-numbering convention, not used anywhere else on the board (Viaplay, TV 2 Play all appear without a +1 suffix). Same text at 393px and 900px. Still present from the prior visual-qa run (2026-10-02) — unresolved.",
       "severity": "medium"
     }
   ],
   "notes": [
-    "No horizontal overflow or clipped/truncated text at any of the three widths — all match names and channel labels wrap onto additional lines rather than being cut off.",
-    "Flags (Portugal–Norge) and tour/club badges render as real images, no broken-image icons.",
-    "Must-see accent dots are used sparingly (a handful of rows across the whole agenda), consistent with the calm-design guarantee.",
-    "Header, day headings, 'Dette dekker vi'/'Merk og kilder' disclosures, and footer (incl. AI-budsjett status line) are all intact and aligned at every width.",
-    "The floating Assistent button (visible in the 900px capture, resting over the 'Ceuta 6 de Junio – UB Lebrijana' row) does not occlude the last agenda row or the footer — matches the DESIGN.md-sanctioned floating-button pattern, not flagged.",
-    "The Assistent button was not visible at all in the 375px/393px full-page captures — most likely a full-page-screenshot artifact with a fixed-position element rather than a real absence, since it rendered fine at 900px; flagging here as an observation only, not a finding.",
-    "'CD San José – Auriense Cented Academy' (Copa del Rey) looks like an odd/truncated-looking team name, but it renders identically at all three widths including the 900px desktop shot, so it is not a CSS truncation bug — likely the actual scraped fixture name. Noting for a data sanity check, not raising as a layout finding."
+    "No horizontal overflow or clipped/truncated text at any of the three widths, in either light or dark theme — long match names and round labels (e.g. \"Singapore Grand Prix – sprintkvalifisering\") wrap onto additional lines rather than being cut off.",
+    "Flags (Norway), club/tour crests, and sport glyphs all render as real images/icons, no broken-image boxes.",
+    "Must-see accent dots are used sparingly, not on every row — consistent with the calm-design guarantee.",
+    "Header, day headings (I DAG / FREDAG 9. OKTOBER / LØRDAG 10. OKTOBER / SØNDAG 11. OKTOBER), 'Dette dekker vi' / 'Merker og kilder' disclosures, and footer (incl. AI-budsjett status line) are all intact and aligned at every width checked.",
+    "The floating Assistent button sits mid-agenda at 375/393/900px (DESIGN.md-sanctioned) and never covers the last agenda row or the footer text in any capture — the one hard guarantee holds.",
+    "Live 'DIREKTE NÅ' section (Kinoshita Group Japan Open Tennis, ESL Pro League Season 24, Bryne – Lyn) renders cleanly with correct channels (TV 2 Play) or an honest faint '–' where unknown.",
+    "Light theme (393px) checked in addition to dark: same layout, good contrast, no issues distinct from dark theme."
   ]
 }
