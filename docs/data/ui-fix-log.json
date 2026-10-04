@@ -1,12 +1,12 @@
 {
-	"runAt": "2026-10-03T00:00:00Z",
+	"runAt": "2026-10-04T00:00:00Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"visual-qa verdict was 'issues' (checkedAt 2026-10-02T14:25:05Z) with a single medium finding and no high findings.",
-		"The only finding — channel label 'HBO Max (Sport) +1' on the Bank of Utah Championship row at 375/393/900px — is a data-accuracy issue, not a code-fixable UI bug. The frontend renders the streaming[].platform string verbatim (docs/js/dashboard.js whereToWatch, escapeHtml) with no foreign-channel filter; the '+1' lived in events.json, not in a '+N more channels' counter (that renders separately as .ev-where-more). The finding itself calls for 'a data check', i.e. the research/verify agents' domain, not ui-fix.",
-		"Data check confirms the point is moot for the frontend: the current events.json Bank of Utah Championship row now reads 'HBO Max (Sport)' with no '+1' suffix, so even the data has since been corrected upstream.",
-		"No truncation, overflow, broken flags/logos, foreign-channel-in-layout, or calm-design breaks were reported — the visual-qa notes confirm header/agenda/disclosures/footer are intact and aligned at all three widths. Nothing frontend-fixable, so no branch/PR opened."
+		"visual-qa verdict was 'issues' (checkedAt 2026-10-04T00:00:00Z) with two medium findings and no high findings. Both are data-accuracy issues, not code-fixable UI bugs — the frontend renders the underlying data faithfully — so per ui-fix.md ('ignore anything that's really a data problem — that's the other agents') no branch/PR was opened.",
+		"Finding 1 (medium) — Copa del Rey 2nd-leg rows showing raw English round text, e.g. 'Copa del Rey · 2nd Leg - Sporting Hortaleza lead 1-0 on aggregate · FERDIG'. This string lives in the event's `round` field, which the UI renders verbatim (docs/js/dashboard.js eventMeta → .ev-round, escapeHtml). The English comes from the ESPN football fetcher; a fix belongs in scripts/fetch/football.js or scripts/lib/event-normalizer.js (forbidden scripts/**) or in the data itself. Data check confirms it is still present: 6 events in events.json carry '2nd Leg - … lead X-Y on aggregate'. No UI change can safely translate arbitrary English scoring strings to Norwegian — research/verify domain.",
+		"Finding 2 (medium) — channel label 'HBO Max (Sport) +1' (Bank of Utah Championship / Baycurrent Classic / Il Lombardia). The '+1' lives in streaming[].platform, rendered verbatim by docs/js/dashboard.js whereToWatch (it is NOT the '+N more channels' counter, which renders separately as .ev-where-more). '+1' denotes the one-hour timeshift feed — a genuinely different channel — so a UI regex stripping it would make the where/when-to-watch label WRONG (actively harmful). The '+1' normalization already lives server-side in scripts/lib/norwegian-rights.js (forbidden scripts/**, see its comment 'we show that single channel rather than a +1'). Data check: 0 '+1' channels remain in the current events.json — already corrected upstream.",
+		"No truncation, overflow, broken flags/logos, foreign-channel-in-layout, or calm-design breaks were reported. visual-qa's notes confirm long names/round labels wrap rather than clip, flags/crests render as real images, must-see dots are sparse, and header/day-headings/disclosures/footer are intact and aligned at 375/393/900px in both themes. Nothing frontend-fixable — no branch/PR opened."
 	]
 }
