@@ -1,5 +1,11 @@
 [
   {
+    "runAt": "2026-10-04T19:01:34.000Z",
+    "verdict": "quiet",
+    "reason": "RSS (55 items, 19:01 UTC): mostly past results (F1 Malaysia race, Aalesund-Brann final, Remco Evenepoel EM road race, Rally VM—all finalized). Live Nations League matches tonight (Portugal-Norway 17:59 UTC, ongoing; Wales-Denmark, Ireland-Israel—tracked coverage, no schedule changes). Chess Sahel Festival (Oct 24–Nov 1, not imminent), cycling Tour de Vendée (past result). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (7 gaps, 1 anomaly): Casper Ruud imminent Oct 6 gap is pre-existing from 15:45 UTC escalation (~3+ hours ago); research agent has this signal already. Formel 1 (entity gap, not imminent), Mørk/Mesterligaen (not imminent), Viktor Hovland/Karsten Warholm (July 2027 far-future). Chess file empty (low severity, known). Board state unchanged since last escalation; no NEW concrete signal justifying re-escalation. Escalation cap today (Oct 4 UTC): 1/2 (already escalated at 15:45).",
+    "signals": []
+  },
+  {
     "runAt": "2026-10-04T15:45:00.000Z",
     "verdict": "escalate",
     "reason": "RSS (27 items, 15:39 UTC): mostly past results (F1 Malaysia, Aalesund-Brann, handball, NHL—no schedule/time/venue/streaming/broadcaster changes to upcoming tracked events). No 100 Thieves/rain CS2 match hints, no schedule announcements. Coverage gaps (11 gaps, 1 anomaly): Casper Ruud (tracked interest) imminent Oct 6 gap newly detected today as imminent=true (2 days away). tracked-claim gap with concrete claimedDate—board claims Oct 6 coverage but event missing. Imminent + newly-imminent + tracked = escalation-worthy signal. Escalation cap today (Oct 4 UTC): 0/2.",
