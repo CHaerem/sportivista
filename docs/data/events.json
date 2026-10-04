@@ -98,58 +98,6 @@
   {
     "sport": "cycling",
     "tournament": "UCI Road World Championships 2026",
-    "title": "Elite menn tempo (ITT)",
-    "time": "2026-09-20T16:45:00Z",
-    "endTime": "2026-09-20T19:15:00Z",
-    "venue": "Montréal, Canada",
-    "norwegian": false,
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "Eurosport / HBO Max",
-        "url": "https://www.hbomax.com/no/no/sports/cycling",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-29T19:45:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier1",
-      "catalog.json#tier2.tournaments",
-      "https://en.wikipedia.org/wiki/2026_UCI_Road_World_Championships",
-      "https://www.mtl.org/en/what-to-do/festivals-and-events/uci-road-world-championships"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "wikipedia",
-        "url": "https://en.wikipedia.org/wiki/2026_UCI_Road_World_Championships",
-        "basis": "secondary",
-        "retrievedAt": "2026-09-14T10:52:29.418Z",
-        "note": "Wikipedias tidsskjema: elite menn tempo 20. sep 12:45–15:15 EDT (16:45–19:15 UTC), 39,2 km. Bekreftet av verify."
-      },
-      "streaming": {
-        "sourceId": "hbo-max",
-        "url": "https://media.wbdsports.com/post/warner-bros-discovery-closes-historic-road-cycling-season-with-l",
-        "basis": "official",
-        "retrievedAt": "2026-09-15T10:15:00.000Z",
-        "note": "Warner Bros. Discovery (Eurosport / HBO Max / TNT Sports) holder Europa-rettighetene til sykkel-VM 2026 i Montréal (eksklusivt i 35 territorier, ekskl. Danmark; Norge er ikke-eksklusivt marked). Bekreftet carrier i Norge er Eurosport / HBO Max — IKKE TV 2 Play (TV 2s sykkelavtale gjelder Tour de France 2026–2030, ikke VM). Tidligere «TV 2 Play» var feil kanal."
-      }
-    },
-    "summary": "UCI Road-VM 2026 i Montréal, Canada. Elite menn tempo, 39,2 km (samme runde som kvinnene).\n\nNorsk visning: Eurosport / HBO Max (WBD holder VM-rettighetene i Europa). Start 12:45 lokal tid (EDT) = 16:45 UTC, bekreftet mot UCI-tidsskjemaet.",
-    "id": "85807c6bb4d6",
-    "verifiedAt": "2026-09-17T10:30:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://procyclinguk.com/2026-uci-road-world-championships-course-guide-montreal-routes-climbs-and-full-schedule/",
-      "https://www.cyclingweekly.com/road-world-championships/2026-uci-road-world-championship-race-schedule-route-information-and-riders-to-watch",
-      "https://www.eurosport.es/ciclismo/campeonatos-mundiales/2026/montreal-2026-en-directo-al-completo-cobertura-programacion-eurosport-hbo-max-donde-ver-por-tv-online-streaming-pruebas-fechas-recorrido-hoy_sto23337780/story.shtml"
-    ]
-  },
-  {
-    "sport": "cycling",
-    "tournament": "UCI Road World Championships 2026",
     "title": "Mixed relay (lagtempo)",
     "time": "2026-09-22T12:30:00Z",
     "endTime": "2026-09-22T15:15:00Z",
@@ -2579,12 +2527,13 @@
     "title": "Rolex Shanghai Masters",
     "time": "2026-10-05T04:00:00.000Z",
     "endTime": "2026-10-19T03:59:00.000Z",
-    "venue": "TBD",
+    "venue": "Qizhong Forest Sports City Arena, Shanghai",
     "meta": "ATP/WTA Tour",
-    "norwegian": false,
-    "streaming": [],
+    "norwegian": true,
+    "streaming": [{ "platform": "TV 2 Play", "url": "https://play.tv2.no/sport/tennis" }],
     "participants": [],
-    "norwegianPlayers": [],
+    "norwegianPlayers": [{ "name": "Casper Ruud", "entityId": "casper-ruud" }],
+    "summary": "Casper Ruud (seedet nr. 20, rangert nr. 18 på påmeldingslista) er i feltet i ATP Masters 1000-turneringen i Shanghai.\n\nSom topp-32-seedet har han fri i 1. runde og går rett inn i 2. runde (~8.–9. okt). Hovedtrekningen settes man. 5. okt (10.30 lokal tid); kvalifisering 5.–6. okt, hovedtrekning 7.–17. okt, finaler 18. okt.\n\nNorsk visning TV 2 Play (ATP-rettighet) — verify fester kanal + Ruuds konkrete dag-1-kamp når trekningen publiseres.",
     "totalPlayers": null,
     "link": null,
     "status": null,
@@ -4264,8 +4213,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -4309,8 +4258,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
         "urlKind": "landing"
       }
     ],
