@@ -9,6 +9,9 @@
 // wholesale — so coverage is the catalog's call, never one person's follow list.
 import { describe, it, expect } from "vitest";
 import { FootballFetcher, norwegianClubName, norwegianiseMatch } from "../scripts/fetch/football.js";
+import { sportsConfig } from "../scripts/config/sports-config.js";
+
+const MAX_EVENTS = sportsConfig.football.filters.maxEvents;
 
 const inDays = (d, hour = 17) => {
 	const t = new Date(Date.now() + d * 86400000);
@@ -77,16 +80,18 @@ describe("coverage filtering", () => {
 	});
 
 	it("keeps Eliteserien ahead of foreign leagues when maxEvents has to cut", () => {
-		// From mid-August the PL, La Liga and CL are all in season, and a 7-day window
-		// over seven leagues exceeds maxEvents (30). Whatever falls past the cut is
-		// decided by this ordering — domestic must never lose its slot to a midweek
-		// foreign fixture on a Norwegian board.
-		const foreign = Array.from({ length: 40 }, (_, i) => ({
+		// The cap is sized (maxEvents) to hold a full heavy week so it no longer drops a
+		// whole covered league — measured 42 events on a non-CL week, 66 on a Champions
+		// League week — but if it ever DID bite, domestic must never lose its slot to a
+		// midweek foreign fixture on a Norwegian board. Force a cut with more foreign
+		// fixtures than the cap, derived from config so a cap change can't silently
+		// un-test the ordering guarantee.
+		const foreign = Array.from({ length: MAX_EVENTS + 10 }, (_, i) => ({
 			title: `Foreign ${i}`, time: inDays(1 + (i % 5)), sport: "football",
 			leagueCode: "eng.1", tournament: "Premier League", norwegian: false,
 		}));
 		const kept = new FootballFetcher().applyFilters([...foreign, ...eliteserie()]);
-		expect(kept).toHaveLength(30); // maxEvents
+		expect(kept).toHaveLength(MAX_EVENTS);
 		const titles = kept.map((e) => e.title);
 		for (const t of ["Fredrikstad – Sandefjord", "Molde – Sarpsborg 08", "Brann – Rosenborg"]) {
 			expect(titles).toContain(t);
