@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-05T00:20:48.591Z",
+  "lastUpdated": "2026-10-05T09:52:17.446Z",
   "source": "ESPN Tennis API",
   "tournaments": [
     {
@@ -10,6 +10,28 @@
           "title": "Kinoshita Group Japan Open Tennis Championships",
           "time": "2026-09-27T04:00:00.000Z",
           "endTime": "2026-10-07T03:59:00.000Z",
+          "venue": "TBD",
+          "sport": "tennis",
+          "meta": "ATP/WTA Tour",
+          "tournament": "ATP/WTA Tour",
+          "streaming": [],
+          "norwegian": true,
+          "homeTeam": "",
+          "awayTeam": "",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_FINAL",
+            "_isTournament": "true"
+          }
+        },
+        {
+          "id": "tennis-rolex-shanghai-masters-1791172800000",
+          "title": "Rolex Shanghai Masters",
+          "time": "2026-10-05T04:00:00.000Z",
+          "endTime": "2026-10-19T03:59:00.000Z",
           "venue": "TBD",
           "sport": "tennis",
           "meta": "ATP/WTA Tour",
@@ -46,28 +68,6 @@
           "isFavorite": false,
           "additional": {
             "status": "STATUS_FINAL",
-            "_isTournament": "true"
-          }
-        },
-        {
-          "id": "tennis-rolex-shanghai-masters-1791172800000",
-          "title": "Rolex Shanghai Masters",
-          "time": "2026-10-05T04:00:00.000Z",
-          "endTime": "2026-10-19T03:59:00.000Z",
-          "venue": "TBD",
-          "sport": "tennis",
-          "meta": "ATP/WTA Tour",
-          "tournament": "ATP/WTA Tour",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "",
-          "awayTeam": "",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED",
             "_isTournament": "true"
           }
         },
@@ -113,6 +113,31 @@
           "additional": {
             "status": "STATUS_FINAL",
             "_isTournament": "true"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Rolex Shanghai Masters",
+      "events": [
+        {
+          "id": "tennis-casper-ruud-–-tbd-1791518400000",
+          "title": "Casper Ruud – TBD",
+          "time": "2026-10-09T04:00:00.000Z",
+          "venue": "Shanghai, China PR",
+          "sport": "tennis",
+          "meta": "Rolex Shanghai Masters · Men's Singles",
+          "tournament": "Rolex Shanghai Masters",
+          "streaming": [],
+          "norwegian": true,
+          "homeTeam": "",
+          "awayTeam": "",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
           }
         }
       ]
