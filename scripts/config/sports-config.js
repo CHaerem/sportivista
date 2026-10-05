@@ -30,8 +30,17 @@ export const sportsConfig = {
 			}
 		],
 		filters: {
-			timeRange: 7,
-			maxEvents: 30,
+			// Was 30 — too small once Serie A (ita.1) + Bundesliga (ger.1) joined the
+			// wholesale ESPN leagues (improve PR #466). Every normal matchweek the seven
+			// configured leagues (PL/La Liga/Serie A/Bundesliga/CL/Eliteserien/OBOS) over a
+			// 7-day window exceed 30 — measured 42 on a non-CL week, 66 on a Champions League
+			// week — so a 30-cut silently dropped whole COVERED leagues (Bundesliga vanished
+			// entirely, Serie A truncated), and build-events' graft-then-drop then made
+			// hand-boarded CL fixtures disappear for good on the next window (the recurring
+			// Sep MD1 regression, flagged run-after-run in tracked.json). football is catalog
+			// tier1 (wholesale), so the cap is a swamp guard only — every fixture it produces
+			// is already covered — set to comfortably hold the heaviest realistic week.
+			maxEvents: 90,
 			custom: true
 		},
 		norwegian: {

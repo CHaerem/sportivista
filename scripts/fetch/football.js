@@ -134,14 +134,14 @@ export class FootballFetcher extends ESPNAdapter {
 
 	/**
 	 * No coverage FILTER (see the note below) — but coverage does need an ORDER, because
-	 * `applyFilters` slices to `maxEvents` (30) right after this runs. From mid-August
-	 * the Premier League, La Liga and the Champions League are all in season at once, and
-	 * a 7-day window across seven leagues comfortably exceeds 30. Whatever falls past the
-	 * cut is decided here, so the domestic leagues must be ahead of it: a Norwegian sports
-	 * board that drops Eliteserien to make room for a midweek La Liga fixture has its
-	 * priorities inverted — and it would have failed the same silent way as the bug above,
-	 * with the file merely looking healthy. Norwegian leagues first, then the adapter's own
-	 * `focused` ordering (owner-relevant ahead of the rest) decides the remainder.
+	 * `applyFilters` slices to `maxEvents` right after this runs. The cap is now sized
+	 * (90) to hold the heaviest realistic week so it no longer drops a whole COVERED
+	 * league — but the order still matters: on the off chance the cap ever bites, the
+	 * domestic leagues must be ahead of it. A Norwegian sports board that drops
+	 * Eliteserien to make room for a midweek La Liga fixture has its priorities inverted —
+	 * and it would fail the same silent way as the bug above, with the file merely looking
+	 * healthy. Norwegian leagues first, then the adapter's own `focused` ordering
+	 * (owner-relevant ahead of the rest) decides the remainder.
 	 */
 	applyCustomFilters(events) {
 		const domestic = [], rest = [];
