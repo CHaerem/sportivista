@@ -1,7 +1,7 @@
 {
 	"runAt": "2026-10-05T15:46:00Z",
 	"action": "opened-pr",
-	"pr": null,
+	"pr": "https://github.com/CHaerem/sportivista/pull/468",
 	"proposal": "Raise the football fetcher's maxEvents cap from 30 to 90 so the static pipeline stops silently dropping whole COVERED leagues. Once improve PR #466 added Serie A (ita.1) + Bundesliga (ger.1) as wholesale ESPN leagues, every normal matchweek the seven configured leagues (PL/La Liga/Serie A/Bundesliga/CL/Eliteserien/OBOS) over a 7-day window exceed 30: measured 42 events on a non-CL week and 66 on a Champions League week. The 30-cut drops the tail — today's football.json is Eliteserien(7)+PL(9)+La Liga(9)+Serie A(5)=exactly 30, with Bundesliga(9) and part of Serie A gone even though ESPN ger.1 returns the fixtures. build-events' graft-then-drop then makes hand-boarded ai-research CL/Bundesliga events disappear for good when the window next cuts them — the recurring Sep MD1 regression. Fix is a threshold tune (the research agent's own prescribed cure: 'hev/segmenter maxEvents'); football is catalog tier1 so the cap is a swamp guard only, sized to hold the heaviest realistic week. Also updated the fetcher's explanatory comment and made tests/football-fetcher.test.js derive the cap from config so the domestic-first ordering guarantee can't be silently un-tested by a future cap change.",
 	"evidence": [
 		"Reproduced live: the football fetcher gets 42 pre-filter events {PL:9, La Liga:9, Serie A:8, Bundesliga:9, Eliteserien:7} but the maxEvents:30 cut yields {Eliteserien:7, PL:9, La Liga:9, Serie A:5} — Bundesliga dropped entirely, Serie A truncated 8→5. docs/data/football.json currently holds exactly those 30 and no Bundesliga.",
