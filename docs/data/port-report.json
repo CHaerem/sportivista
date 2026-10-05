@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-05T09:52:57.402Z",
+  "generatedAt": "2026-10-05T12:01:52.775Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "yellow",
+    "coverage": "red",
     "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
@@ -21,29 +21,22 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 2,
+    "openGaps": 1,
     "bySeverity": {
-      "high": 0,
+      "high": 1,
       "medium": 0,
-      "low": 2
+      "low": 0
     },
-    "oldestGapAgeDays": 9.02,
-    "escalatable": 2,
-    "catalogMatched": 2,
-    "auditedAt": "2026-10-04T09:35:00Z",
+    "oldestGapAgeDays": 0.07,
+    "escalatable": 0,
+    "catalogMatched": 1,
+    "auditedAt": "2026-10-05T10:15:00Z",
     "gaps": [
       {
-        "interest": "Fotball — UEFA Champions League ligafase runde 2 (13.–14. okt), inkl. norske Viking–Bayern München (13. okt) og Bodø/Glimt–Borussia Dortmund (14. okt)",
-        "severity": "low",
-        "ageDays": 9.02,
-        "recurrences": 8,
-        "catalogMatched": true
-      },
-      {
-        "interest": "Fotball — UEFA Conference League ligafase runde 1 (15. okt), inkl. norske Brann hjemme mot Lincoln Red Imps (menn)",
-        "severity": "low",
-        "ageDays": 3.99,
-        "recurrences": 3,
+        "interest": "Håndball — EHF Women's Champions League 2026/27 gruppespill (Gruppe A), norske interesser: Sola HK (norsk klubb) + Nora Mørk (Team Esbjerg)",
+        "severity": "high",
+        "ageDays": 0.07,
+        "recurrences": 0,
         "catalogMatched": true
       }
     ]
@@ -54,17 +47,10 @@
     "nearTermAmended": 0,
     "verifyRunAt": "2026-10-04T11:15:00Z",
     "windowRate": 0,
-    "windowChecks": 102,
+    "windowChecks": 93,
     "windowAmendments": 0,
     "windowCorrections": 1,
     "byDay": [
-      {
-        "date": "2026-09-21",
-        "checks": 9,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-09-22",
         "checks": 10,
@@ -160,15 +146,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-05T09:52:52.682Z",
+    "buildCheckedAt": "2026-10-05T12:01:49.840Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-05T00:21:42.862Z",
-    "manifestAgeHours": 9.52,
+    "manifestGeneratedAt": "2026-10-05T09:52:58.813Z",
+    "manifestAgeHours": 2.15,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-10-04T11:15:00Z",
-    "verifyAgeHours": 22.63,
+    "verifyAgeHours": 24.78,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
@@ -179,6 +165,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-05T09:52:57.402Z"
+    "generatedAt": "2026-10-05T12:01:52.775Z"
   }
 }
