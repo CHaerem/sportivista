@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T09:40:11.079Z",
+  "generatedAt": "2026-10-06T11:46:04.865Z",
   "gapCount": 9,
   "anomalyCount": 1,
   "gaps": [
@@ -12,7 +12,7 @@
       "link": "https://www.tv2.no/a/19265282",
       "feed": "tv2-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-06T09:40:09.853Z"
+      "detectedAt": "2026-10-06T11:46:04.146Z"
     },
     {
       "kind": "entity",
@@ -23,18 +23,18 @@
       "link": "https://www.tv2.no/a/19265282",
       "feed": "tv2-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-06T09:40:09.853Z"
+      "detectedAt": "2026-10-06T11:46:04.146Z"
     },
     {
       "kind": "entity",
       "entity": "Uno-X",
       "type": "missing",
       "imminent": false,
-      "headline": "Uno-X-rytter legger opp: – En totalvurdering",
-      "link": "https://www.nrk.no/sport/uno-x-rytter-legger-opp_-_-en-totalvurdering-1.18046027",
+      "headline": "Begge la nylig opp – nå går de rett inn i sportsdirektør-roller",
+      "link": "https://www.nrk.no/sport/begge-la-nylig-opp-_-na-gar-de-rett-inn-i-sportsdirektor-roller-1.18046783",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-06T09:40:09.853Z"
+      "detectedAt": "2026-10-06T11:46:04.146Z"
     },
     {
       "kind": "entity",
@@ -45,7 +45,7 @@
       "link": "https://www.theguardian.com/football/2026/oct/05/nations-league-roundup-olise-leads-late-charge-as-france-bowl-over-belgium",
       "feed": "guardian-football",
       "matchCount": 2,
-      "detectedAt": "2026-10-06T09:40:09.853Z"
+      "detectedAt": "2026-10-06T11:46:04.146Z"
     },
     {
       "kind": "entity",
@@ -56,7 +56,7 @@
       "link": "https://www.nrk.no/sport/gyokeres-helten-mot-romania-_-sverige-vant-knepent-1.18046246",
       "feed": "nrk-sport",
       "matchCount": 2,
-      "detectedAt": "2026-10-06T09:40:09.853Z"
+      "detectedAt": "2026-10-06T11:46:04.146Z"
     },
     {
       "kind": "entity",
@@ -67,7 +67,7 @@
       "link": "https://www.nrk.no/sport/bottas-dropper-flytur-_-sykler-til-formel-1-lopet-i-singapore-1.18046261",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-06T09:40:09.853Z"
+      "detectedAt": "2026-10-06T11:46:04.146Z"
     },
     {
       "kind": "tracked-claim",
@@ -79,7 +79,7 @@
       "claimedDate": "2027-07-17T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "viktor-hovland",
-      "detectedAt": "2026-10-06T09:40:10.865Z"
+      "detectedAt": "2026-10-06T11:46:04.693Z"
     },
     {
       "kind": "tracked-claim",
@@ -91,7 +91,7 @@
       "claimedDate": "2027-07-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "karsten-warholm",
-      "detectedAt": "2026-10-06T09:40:10.865Z"
+      "detectedAt": "2026-10-06T11:46:04.693Z"
     },
     {
       "kind": "tracked-claim",
@@ -103,7 +103,7 @@
       "claimedDate": "2026-10-07T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "elkjop-ligaen-2026-27",
-      "detectedAt": "2026-10-06T09:40:10.865Z"
+      "detectedAt": "2026-10-06T11:46:04.693Z"
     }
   ],
   "anomalies": [
@@ -112,7 +112,7 @@
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-06T09:40:10.915Z"
+      "detectedAt": "2026-10-06T11:46:04.720Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
