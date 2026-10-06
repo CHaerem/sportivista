@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T11:46:03.969Z",
+  "generatedAt": "2026-10-06T17:56:27.099Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 0.07,
+    "oldestGapAgeDays": 0.33,
     "escalatable": 0,
     "catalogMatched": 1,
     "auditedAt": "2026-10-06T10:05:00Z",
@@ -35,7 +35,7 @@
       {
         "interest": "Håndball — Elkjøp-ligaen 2026/27 (norsk toppserie, menn+kvinner) runde 7",
         "severity": "medium",
-        "ageDays": 0.07,
+        "ageDays": 0.33,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -43,11 +43,11 @@
   },
   "amendRate": {
     "nearTermRate": 0,
-    "nearTermChecked": 18,
+    "nearTermChecked": 4,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-10-05T12:00:00Z",
+    "verifyRunAt": "2026-10-06T12:10:00Z",
     "windowRate": 0,
-    "windowChecks": 93,
+    "windowChecks": 97,
     "windowAmendments": 0,
     "windowCorrections": 1,
     "byDay": [
@@ -141,30 +141,35 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-10-06",
+        "checks": 4,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-06T11:45:59.982Z",
+    "buildCheckedAt": "2026-10-06T17:56:21.519Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-06T09:40:11.322Z",
-    "manifestAgeHours": 2.1,
+    "manifestGeneratedAt": "2026-10-06T11:46:05.018Z",
+    "manifestAgeHours": 6.17,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-05T12:00:00Z",
-    "verifyAgeHours": 23.77,
-    "corrections": 1,
+    "checkedAt": "2026-10-06T12:10:00Z",
+    "verifyAgeHours": 5.77,
+    "corrections": 0,
     "unresolved": 0,
-    "signals": [
-      "Golf: Open de Espana (8.-11. okt, Villa de Madrid) og Baycurrent Classic (8.-11. okt, Yokohama CC) bekreftet. Kristoffer Ventura (\"Kris Ventura\") bekreftet i…"
-    ]
+    "signals": []
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-06T11:46:03.968Z"
+    "generatedAt": "2026-10-06T17:56:27.099Z"
   }
 }
