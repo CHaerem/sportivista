@@ -1,28 +1,15 @@
 {
-  "checkedAt": "2026-10-04T00:00:00Z",
+  "checkedAt": "2026-10-06T14:41:46Z",
   "widths": [375, 393, 900],
-  "verdict": "issues",
-  "findings": [
-    {
-      "width": 375,
-      "area": "agenda rows — Copa del Rey 2nd-leg matches (I DAG, e.g. \"Atlético Unión Güímar – Sporting Hortaleza\", \"AE Prat – CF San Rafael\", \"CD San José – Auriense Cented Academy\", \"SD Noja – Ribadesella\")",
-      "issue": "The subtitle line reads e.g. \"Copa del Rey · 2nd Leg - Sporting Hortaleza lead 1-0 on aggregate · FERDIG\" — raw English scoring text (\"2nd Leg\", \"lead X-Y on aggregate\") sits directly next to the Norwegian status word \"FERDIG\", inside an otherwise all-Norwegian interface. Confirmed identical at 393px and 900px, and in both dark and light color schemes.",
-      "severity": "medium"
-    },
-    {
-      "width": 375,
-      "area": "agenda rows — Bank of Utah Championship / Baycurrent Classic / Il Lombardia (channel label)",
-      "issue": "Channel reads \"HBO Max (Sport) +1\" — the \"+1\" time-shift suffix is a UK/international channel-numbering convention, not used anywhere else on the board (Viaplay, TV 2 Play all appear without a +1 suffix). Same text at 393px and 900px. Still present from the prior visual-qa run (2026-10-02) — unresolved.",
-      "severity": "medium"
-    }
-  ],
+  "verdict": "pass",
+  "findings": [],
   "notes": [
-    "No horizontal overflow or clipped/truncated text at any of the three widths, in either light or dark theme — long match names and round labels (e.g. \"Singapore Grand Prix – sprintkvalifisering\") wrap onto additional lines rather than being cut off.",
-    "Flags (Norway), club/tour crests, and sport glyphs all render as real images/icons, no broken-image boxes.",
-    "Must-see accent dots are used sparingly, not on every row — consistent with the calm-design guarantee.",
-    "Header, day headings (I DAG / FREDAG 9. OKTOBER / LØRDAG 10. OKTOBER / SØNDAG 11. OKTOBER), 'Dette dekker vi' / 'Merker og kilder' disclosures, and footer (incl. AI-budsjett status line) are all intact and aligned at every width checked.",
-    "The floating Assistent button sits mid-agenda at 375/393/900px (DESIGN.md-sanctioned) and never covers the last agenda row or the footer text in any capture — the one hard guarantee holds.",
-    "Live 'DIREKTE NÅ' section (Kinoshita Group Japan Open Tennis, ESL Pro League Season 24, Bryne – Lyn) renders cleanly with correct channels (TV 2 Play) or an honest faint '–' where unknown.",
-    "Light theme (393px) checked in addition to dark: same layout, good contrast, no issues distinct from dark theme."
+    "No horizontal overflow or clipped/truncated text at any of the three widths. Fixture names stay fully spelled out even at 375px (e.g. 'Sunderland – Brighton & Hove Albion', 'SC Paderborn 07 – VfB Stuttgart', '1. FC Union Berlin – SV Elversberg', 'Rayo Vallecano – Athletic Club') — no 'Brazil – Nor…'-style truncation.",
+    "Channels shown are all Norwegian (TV 2 Play, Viaplay, HBO Max (Sport), Twitch) — no FOX/ESPN/Sky spotted. Eliteserien/Serie A rows that show no broadcaster (e.g. Brann–Viking, Rosenborg–Sandefjord, Internazionale–Parma, KFUM Oslo–Vålerenga) appear to be the sanctioned honest-'–'-when-unknown state, consistent across all three widths rather than a rendering gap.",
+    "The two issues from the prior run (2026-10-04) are not reproducible today: the 'HBO Max (Sport)' channel label for Baycurrent Classic and Il Lombardia now renders with no stray '+1' suffix; no Copa del Rey fixtures are on today's board to check the English-subtitle-next-to-Norwegian-status issue (different matches in today's window, so this is inconclusive rather than confirmed-fixed).",
+    "Flags, club/tour crests and sport glyphs render as real icons, no broken-image boxes.",
+    "Must-see accent dots (e.g. Boda/Glimt–Kristiansund, Alavés–Atlético Madrid) are used sparingly, not on every row.",
+    "Header, day headings (I DAG / TORSDAG–MANDAG), 'Dette dekker vi'-style disclosures, and footer (incl. 'Meste opp' esports standings and AI-budsjett line) are intact and aligned at every width.",
+    "The floating Assistent button sits mid-agenda (over the Thursday 8. oktober section) at 900px, DESIGN.md-sanctioned, and does not cover the last agenda row or the footer in any capture — the one hard guarantee holds. Too small to positively confirm its position in the 375/393 full-page captures, but no occlusion of the last row/footer was visible there either."
   ]
 }
