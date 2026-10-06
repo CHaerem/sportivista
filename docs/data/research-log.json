@@ -1,22 +1,28 @@
 {
-  "runAt": "2026-10-05T06:00:00Z",
-  "tier": "standard",
-  "eventsAdded": 12,
+  "runAt": "2026-10-06T01:35:00Z",
+  "tier": "deep",
+  "eventsAdded": 6,
   "eventsRemoved": 0,
-  "trackedDelta": "Oppdaterte 3 leagues-entries (champions-league-2026-27, brann-conference-league-2026-27→high, bundesliga-2026-27→high) med boarding-notater + evidence; prepend 1 kjøringsnote (notes cap 15). Ingen nye entries/katalog-endringer.",
+  "trackedDelta": "La til 1 tournament-entry (ehf-champions-league-women-2026-27, high) + 1 athlete-entry (nora-mork, high); prepend 1 kjøringsnote (notes cap 15). Ingen katalog-endringer (women's EHF CL er allerede dekket av catalog tier1 håndball + tier2.tournaments EHF Champions League + tier2.athletes Nora Mørk).",
   "quality": {
     "pass": true,
-    "score": 93,
+    "score": 92,
     "failures": [
-      "Minor (−5): Bundesliga Spieltag 5-familien (9 kamper) siterer samme to fixture-tid-domener (bundesliga.com + openligadb.de) på tvers av alle medlemmer — grensetilfelle for evidence-domene-konsentrasjon, men de to kildene er genuint uavhengige (offisiell DFL-feed + uavhengig OpenLigaDB-kryss-sjekk)."
+      "Minor (−5): evidens-monokultur på tvers av de 6 kvinnenes-EHF-CL-eventene — alle korroborerer via EHFs egne klubbsider (eurohandball.com / ehfcl.eurohandball.com, samme organisasjon) + Wikipedia, så Wikipedia er eneste uavhengige kilde. Imminent-kampene (11. okt) hadde i tillegg sofascore/søke-korroborasjon ved research-tid; en tredje uavhengig kilde (sofascore/flashscore/handball-planet) kan legges inn ved verify.",
+      "Ikke-straffet, stående: ingen wholesale håndball-fetcher / ingen authority.json contract-blokk for EHF CL (menn+kvinner) — korrekt flagget for self-repair/improve, håndboardet som stopgap denne kjøringen."
     ]
   },
   "notes": [
-    "Boardet 12 ai-research-events (high), alle med provenance.time.basis=primary. validate-events: 0 errors (106 events).",
-    "NORSKE EUROPACUP (tettet coverage-auditens to LOW carry-forward-hull idet de kom inn i fyll-vinduet; audit 04.10 ba 05.-06.10 vokte tett): CL ligafase MD2 Viking–Bayern München (13. okt 21.00 CEST/19.00 UTC, Lyse Arena) + Bodø/Glimt–Borussia Dortmund (14. okt, Aspmyra) — TV 2 Play; UECL ligafase MD1 Brann–Lincoln Red Imps (15. okt, Brann Stadion) — Viaplay. Tider bekreftet mot uefa.com ligafase-terminlistene (primær, lest direkte) + FotMob/Fox/Wikipedia + fresh-context write-time fact-check = CONFIRMED, alle 21.00 CEST.",
-    "BUNDESLIGA 5. SPIELTAG (9 kamper 9.-11. okt) boardet — coverage-gaps flagget tracked-claim imminent, 0 board-dekning. Tider fra bundesliga.com (DFL, primær) + uavhengig OpenLigaDB-kryss-sjekk, begge enige bit-for-bit på UTC-render (fre. Dortmund–Werder 20.30 CEST; lør. 15.30-blokk + Leipzig–Frankfurt 18.30; søn. Köln–Gladbach 15.30 + Freiburg–Schalke 17.30). Viaplay.",
-    "SELF-REPAIR-FLAGG: ESPN ger.1 (Bundesliga) er konfigurert i sports-config.js MEN football.json produserer kun Eliteserien/PL/La Liga/Serie A — ita.1 (Serie A) gir static for SAMME helg (10.-11. okt), ger.1 returnerer 0. coverage-audit 04.10 antok feilaktig Bundesliga var static (coveredWell). ESPN ger.1-endepunktet ser tomt/ødelagt ut og bør undersøkes, ellers gjentar håndboardingen seg hver Spieltag.",
-    "MEKANISKE coverage-gaps.json TRIAGERT (7 gaps, 1 anomali): Mørk/Mesterligaen (håndball-CL resultat-nyhet, ikke board-hull), Formel 1 (Malaysia-kaos = live-status/forbi, for verify per audit medium sourceIssue), Bundesliga imminent (ADRESSERT — boardet), Hovland 2027-07-17 + Warholm 2027-07-18 (off-season bokføringsartefakter), chess file-empty (research-fylt, forventet). Casper Ruud imminent dekket av Shanghai Masters-boardingen.",
-    "HORISONT-SCAN: ingen ny katalog-kandidat denne kjøringen. EL MD2 + CoL MD2 (Brann borte Kauno Žalgiris ~22. okt) og USA GP 25. okt / Alpint Sölden 24.-25. okt allerede dekket/vakt. Vinteridrett starter ~sent nov (korrekt tomt). Ikke deep-tier, så ingen registry-reconciliation."
+    "DEEP-tier kjøring utløst av coverage-critics ENE høy-alvorlige recall-gap (coverage-audit 2026-10-05 10:15Z, eskalert via 'deep'): kvinnenes EHF Champions League var HELT fraværende på tavla mens mennenes (Kolstad) var dekket. Fanget fordi NRK-RSS 4. okt nevnte Mørk («Reistad og Mørk herjet for Esbjerg»). Strukturell årsak: håndball har ingen statisk wholesale-fetcher, så hele kvinnenes europacup-dimensjon hadde aldri blitt boardet.",
+    "Boardet 6 ai-research-events (high), alle to-kilde-bekreftet mot EHFs egne klubbsider (arrangør → provenance.time.basis=primary) + Wikipedia-gruppespillsiden, med uavhengig write-time fact-check lest DIREKTE fra EHF (Sola/Esbjerg/Storhamar-klubbsidene) — ikke fra coverage-critics resonnement. GRUPPE A: Budućnost–Sola HK (søn. 11. okt 14.00 CEST, Podgorica), CSM București–Team Esbjerg/Nora Mørk (søn. 11. okt 16.00, Bucuresti), Team Esbjerg/Mørk–Brest Bretagne (lør. 17. okt 16.00, Esbjerg), CSM București–Sola HK (søn. 18. okt 16.00, Bucuresti). GRUPPE B: Storhamar HE–HC Podravka Vegeta (søn. 11. okt 16.00, OBOS Arena Hamar), Gloria Bistrița–Storhamar HE (lør. 17. okt 16.00, Bistrița).",
+    "Tidssone: alle kamper er CEST (før sommertidsslutt 25. okt) → 14.00 CEST = 12.00 UTC, 16.00 CEST = 14.00 UTC. Verifisert per event.",
+    "Streaming: kvinnenes EHF CL i Norge → TV 2 Sport 2 (lineært) + TV 2 Play, bekreftet mot abcnyheter tvguide + VG tvguide/tvkampen (samme deling TV 2/Viaplay som mennenes). provenance.streaming.basis=official; eksakt sub-kanal per kamp → verify firmer.",
+    "Nora Mørk navngitt i norwegianPlayers på begge Esbjerg-kampene så next-fixture-raden hennes resolver; Sola HK + Storhamar HE er norske klubber (norwegian=true). Storhamar lagt til som bonus (samme dimensjon, norsk klubb, håndball wholesale) selv om audit bare navnga Sola + Mørk/Esbjerg.",
+    "Reconciliation (Step 1): la til egen tracked-athlete-entitet nora-mork (sto i katalogen tier2.athletes men manglet tracked-entry). La til tracked-tournament ehf-champions-league-women-2026-27.",
+    "Resten av tavla korrekt dekket per coverage-audit 05.10: F1 Singapore sprint-helg (9.–11. okt) web-bekreftet, fotball-resumpsjon 9.–15. okt komplett (PL runde 6, Eliteserien, La Liga, Serie A, Bundesliga, OBOS, CL MW2 Viking/Bodø-Glimt, CoL MD1 Brann), golf (Open de España + Baycurrent Classic 8. okt), tennis (Shanghai + Ruud 9. okt), sykkel (Il Lombardia 10. okt), alpint (Sölden 24.–25. okt) boardet. Alle 6 WP-243-kontrakter 'met'. Ingen andre gaps å fylle.",
+    "Mekaniske coverage-gaps.json-signaler triagert: 2 tracked-claim gaps (Hovland 2027-07-17 + Warholm 2027-07-18 = fjern-fremtidige bokføringsartefakter / korrekt off-season-fravær, ikke miss) + 1 anomali (chess.json file-empty, LOW = research-fylt, forventet). Ingen handling nødvendig.",
+    "STÅENDE self-repair/improve-sak (samme som Kolstad/menn): ingen wholesale håndball-fetcher / ingen authority.json contract-blokk for EHF CL → hele den europeiske håndball-dimensjonen (menn OG kvinner) er research-avhengig og håndboardes runde-for-runde. En handball.no/eurohandball-fetcher ELLER en authority.json contract-blokk for EHF CL (menn+kvinner) + Elkjøp-ligaen ville fanget en manglende dimensjon mekanisk.",
+    "HOUSEKEEPING-flagg: norwegian-rights-skillen mangler en håndball-/EHF-CL-linje — bør legges til «EHF Champions League (menn+kvinner) → TV 2 Sport 2 / TV 2 Play (deles TV 2/Viaplay) [verify sub-kanal per kamp]». Ikke lagt til denne kjøringen (skill-edits holdes utenfor denne kjøringens commit-scope).",
+    "HORISONT-SCAN (Step 2.6): ingen nye katalog-kandidater denne kjøringen — vinteridrett starter ~sent nov (alpint Sölden 24.–25. okt allerede boardet), friidrett/sandvolley i sesongslutt, sjakk (Carlsen Total Chess 11. nov) boardet. coverage-gaps.json hadde ingen demand[]-signaler. Deep-tier er mandag, men registry-reconciliation (Step 2.8) ikke utført denne kjøringen pga. tidsboks-fokus på den ene høy-alvorlige gapen."
   ]
 }
