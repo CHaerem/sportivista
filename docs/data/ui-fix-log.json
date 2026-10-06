@@ -1,12 +1,10 @@
 {
-	"runAt": "2026-10-05T18:09:52Z",
-	"action": "none",
-	"pr": null,
-	"fixed": [],
-	"notes": [
-		"visual-qa-log.json verdict was 'issues' with two medium findings, but on triage neither is a code-fixable frontend rendering bug, so no PR was opened (per the prompt: ignore data problems and design-as-intended; abandon rather than ship an unverifiable change on an auto-merging loop).",
-		"Finding 1 (Copa del Rey subtitle: raw English '2nd Leg - … lead 1-0 on aggregate' next to Norwegian 'FERDIG'): this is DATA CONTENT in the event's `round` field (sourced from ESPN) rendered correctly by dashboard.js:403. English text in the data is the research/verify/fetcher agents' concern, not the frontend. The rendering code is not at fault. These finished matches have also already rolled off the board as of 2026-10-05, so the strings are no longer present in events.json.",
-		"Finding 2 ('HBO Max (Sport) +1' — claimed UK '+1' time-shift suffix): this is a MISDIAGNOSIS. The '+1' is Sportivista's own intentional 'N more streaming options' affordance — dashboard.js:429 renders <span class=\"ev-where-more\">+${streams.length - 1}</span> when an event has more than one Norwegian channel, and cards.css:201 already styles it fainter + smaller (var(--fg-3), 12px) to separate it from the channel name. It is working as designed and is consistent across the board; changing it would be a DESIGN.md-level decision for the owner, not an auto-merged UI fix.",
-		"No truncation, overflow, broken flags/logos, foreign-channel-in-UI, or calm-design breaks were reported, so there is nothing in scope for ui-fix to repair."
-	]
+  "runAt": "2026-10-06T14:41:46Z",
+  "action": "none",
+  "pr": null,
+  "fixed": [],
+  "notes": [
+    "visual-qa-log.json verdict is 'pass' with an empty findings[] (checkedAt 2026-10-06T14:41:46Z). No high/medium findings to act on, so no branch or PR was opened (ui-fix 'When to act' rule 1).",
+    "The two prior-run issues (2026-10-04: stray '+1' on 'HBO Max (Sport)' labels; English subtitle next to Norwegian status on Copa del Rey) were not reproducible today — the '+1' is gone and no Copa del Rey fixtures were in today's window to re-check."
+  ]
 }
