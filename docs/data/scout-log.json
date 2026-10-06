@@ -334,5 +334,13 @@
     "verdict": "quiet",
     "reason": "RSS (10 items, 12:01 UTC): mostly past football results (Manchester City-Arsenal WSL, Nations League matches Oct 4 finalized). WSL commentary and analysis. No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no new tracked-athlete imminent event announcements. Coverage gaps (2 gaps, 1 anomaly): Viktor Hovland and Karsten Warholm (both July 2027 far-future), chess.json empty (low severity). All pre-existing, non-imminent. Board state stable; no NEW concrete signal justifying escalation. Escalation cap today (Oct 5 UTC): 0/2.",
     "signals": []
+  },
+  {
+    "runAt": "2026-10-06T01:53:01.388Z",
+    "verdict": "escalate",
+    "reason": "RSS (45 items, 01:40 UTC): past results (Nations League Oct 5 matches—France-Belgium, Sweden-Romania finalized, no schedule/channel changes). No 100 Thieves/rain CS2 hints, no broadcaster announcements. Coverage gaps (8 gaps, 1 anomaly): Elkjøp-ligaen 2026/27 (tracked handball, imminent Oct 7 claimedDate, missing from board)—concrete tracked-claim gap now imminent, requires research. Other gaps non-imminent or known (Viktor Hovland/Karsten Warholm July 2027 far-future; chess empty, low severity). Escalation cap today (Oct 6 UTC): 0/2.",
+    "signals": [
+      "Elkjøp-ligaen 2026/27 imminent Oct 7 gap (tracked-claim, handball, newly imminent)"
+    ]
   }
 ]
