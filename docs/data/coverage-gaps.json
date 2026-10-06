@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T01:41:10.805Z",
+  "generatedAt": "2026-10-06T02:00:35.812Z",
   "gapCount": 8,
   "anomalyCount": 1,
   "gaps": [
@@ -12,7 +12,7 @@
       "link": "https://www.nrk.no/sport/uno-x-rytter-legger-opp_-_-en-totalvurdering-1.18046027",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-06T01:41:09.548Z"
+      "detectedAt": "2026-10-06T02:00:34.601Z"
     },
     {
       "kind": "entity",
@@ -22,8 +22,8 @@
       "headline": "Who am I? Guess Premier League star No 77",
       "link": "https://www.bbc.co.uk/sport/football/articles/cr3eqepqqq7po?at_medium=RSS&amp;at_campaign=rss",
       "feed": "bbc-football",
-      "matchCount": 4,
-      "detectedAt": "2026-10-06T01:41:09.548Z"
+      "matchCount": 3,
+      "detectedAt": "2026-10-06T02:00:34.601Z"
     },
     {
       "kind": "entity",
@@ -34,7 +34,7 @@
       "link": "https://www.theguardian.com/football/2026/oct/05/nations-league-roundup-olise-leads-late-charge-as-france-bowl-over-belgium",
       "feed": "guardian-football",
       "matchCount": 2,
-      "detectedAt": "2026-10-06T01:41:09.548Z"
+      "detectedAt": "2026-10-06T02:00:34.601Z"
     },
     {
       "kind": "entity",
@@ -45,7 +45,7 @@
       "link": "https://www.nrk.no/sport/gyokeres-helten-mot-romania-_-sverige-vant-knepent-1.18046246",
       "feed": "nrk-sport",
       "matchCount": 2,
-      "detectedAt": "2026-10-06T01:41:09.548Z"
+      "detectedAt": "2026-10-06T02:00:34.601Z"
     },
     {
       "kind": "entity",
@@ -55,8 +55,8 @@
       "headline": "Bottas dropper flytur – sykler til Formel 1-løpet i Singapore",
       "link": "https://www.nrk.no/sport/bottas-dropper-flytur-_-sykler-til-formel-1-lopet-i-singapore-1.18046261",
       "feed": "nrk-sport",
-      "matchCount": 3,
-      "detectedAt": "2026-10-06T01:41:09.548Z"
+      "matchCount": 2,
+      "detectedAt": "2026-10-06T02:00:34.601Z"
     },
     {
       "kind": "tracked-claim",
@@ -68,7 +68,7 @@
       "claimedDate": "2027-07-17T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "viktor-hovland",
-      "detectedAt": "2026-10-06T01:41:10.553Z"
+      "detectedAt": "2026-10-06T02:00:35.564Z"
     },
     {
       "kind": "tracked-claim",
@@ -80,7 +80,7 @@
       "claimedDate": "2027-07-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "karsten-warholm",
-      "detectedAt": "2026-10-06T01:41:10.553Z"
+      "detectedAt": "2026-10-06T02:00:35.564Z"
     },
     {
       "kind": "tracked-claim",
@@ -92,7 +92,7 @@
       "claimedDate": "2026-10-07T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "elkjop-ligaen-2026-27",
-      "detectedAt": "2026-10-06T01:41:10.553Z"
+      "detectedAt": "2026-10-06T02:00:35.564Z"
     }
   ],
   "anomalies": [
@@ -101,7 +101,7 @@
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-06T01:41:10.604Z"
+      "detectedAt": "2026-10-06T02:00:35.615Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
