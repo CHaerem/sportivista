@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-07T09:36:39.774Z",
+  "generatedAt": "2026-10-07T11:30:46.157Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "yellow",
+    "coverage": "green",
     "amendRate": "green",
-    "silentStops": "yellow",
+    "silentStops": "green",
     "participantStatus": "green",
     "contracts": "green"
   },
@@ -24,18 +24,18 @@
     "openGaps": 1,
     "bySeverity": {
       "high": 0,
-      "medium": 1,
-      "low": 0
+      "medium": 0,
+      "low": 1
     },
-    "oldestGapAgeDays": 0.98,
+    "oldestGapAgeDays": 0.06,
     "escalatable": 0,
     "catalogMatched": 1,
-    "auditedAt": "2026-10-06T10:05:00Z",
+    "auditedAt": "2026-10-07T10:10:00Z",
     "gaps": [
       {
-        "interest": "Håndball — Elkjøp-ligaen 2026/27 (norsk toppserie, menn+kvinner) runde 7",
-        "severity": "medium",
-        "ageDays": 0.98,
+        "interest": "Tennis — Rolex Paris Masters 2026 (ATP Masters 1000, Casper Ruud)",
+        "severity": "low",
+        "ageDays": 0.06,
         "recurrences": 0,
         "catalogMatched": true
       }
@@ -47,17 +47,10 @@
     "nearTermAmended": 0,
     "verifyRunAt": "2026-10-06T12:10:00Z",
     "windowRate": 0,
-    "windowChecks": 97,
+    "windowChecks": 89,
     "windowAmendments": 0,
     "windowCorrections": 1,
     "byDay": [
-      {
-        "date": "2026-09-23",
-        "checks": 8,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-09-24",
         "checks": 5,
@@ -153,21 +146,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-07T09:36:36.391Z",
+    "buildCheckedAt": "2026-10-07T11:30:42.986Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-07T01:10:22.790Z",
-    "manifestAgeHours": 8.44,
-    "staleFiles": [
-      {
-        "file": "tracked.json",
-        "sourceLastUpdated": "2026-10-06T01:35:00Z",
-        "ageHours": 32.03
-      }
-    ]
+    "manifestGeneratedAt": "2026-10-07T09:36:40.791Z",
+    "manifestAgeHours": 1.9,
+    "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-10-06T12:10:00Z",
-    "verifyAgeHours": 21.44,
+    "verifyAgeHours": 23.35,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -176,6 +163,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-07T09:36:39.773Z"
+    "generatedAt": "2026-10-07T11:30:46.157Z"
   }
 }
