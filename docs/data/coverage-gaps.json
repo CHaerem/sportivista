@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2026-10-08T01:28:30.486Z",
-  "gapCount": 6,
+  "generatedAt": "2026-10-08T09:47:27.727Z",
+  "gapCount": 9,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Jakob Ingebrigtsen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Ingebrigtsen med avsløring",
+      "link": "https://www.tv2.no/a/19300108",
+      "feed": "tv2-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-10-08T09:47:25.455Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Ingebrigtsen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Ingebrigtsen med avsløring",
+      "link": "https://www.tv2.no/a/19300108",
+      "feed": "tv2-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-10-08T09:47:25.455Z"
+    },
     {
       "kind": "entity",
       "entity": "Uno-X",
@@ -11,8 +33,19 @@
       "headline": "Uno-X hentet norskamerikaner: – En stjernesignering",
       "link": "https://www.nrk.no/sport/uno-x-hentet-norskamerikaner_-_-en-stjernesignering-1.18048679",
       "feed": "nrk-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-10-08T09:47:25.455Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Astralis",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Sources: cmtry to join Astralis on loan",
+      "link": "https://www.hltv.org/news/45671/sources-cmtry-to-join-astralis-on-loan",
+      "feed": "hltv",
       "matchCount": 1,
-      "detectedAt": "2026-10-08T01:28:29.279Z"
+      "detectedAt": "2026-10-08T09:47:25.455Z"
     },
     {
       "kind": "entity",
@@ -23,7 +56,7 @@
       "link": "https://www.nrk.no/sport/kolstad-yppet-seg-_-gikk-pa-sitt-tredje-strake-mesterliga-tap-1.18048725",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-08T01:28:29.279Z"
+      "detectedAt": "2026-10-08T09:47:25.455Z"
     },
     {
       "kind": "entity",
@@ -34,7 +67,7 @@
       "link": "https://www.theguardian.com/football/2026/oct/07/robertson-system-pocognoli-scotland-start-questions",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-10-08T01:28:29.279Z"
+      "detectedAt": "2026-10-08T09:47:25.455Z"
     },
     {
       "kind": "entity",
@@ -45,7 +78,7 @@
       "link": "https://www.nrk.no/sport/formel-1-stjerna-valtteri-bottas-syklar-fra-malaysia-til-singapore-1.18046583",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-08T01:28:29.279Z"
+      "detectedAt": "2026-10-08T09:47:25.455Z"
     },
     {
       "kind": "tracked-claim",
@@ -57,7 +90,7 @@
       "claimedDate": "2027-07-17T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "viktor-hovland",
-      "detectedAt": "2026-10-08T01:28:30.262Z"
+      "detectedAt": "2026-10-08T09:47:26.229Z"
     },
     {
       "kind": "tracked-claim",
@@ -69,7 +102,7 @@
       "claimedDate": "2027-07-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "karsten-warholm",
-      "detectedAt": "2026-10-08T01:28:30.262Z"
+      "detectedAt": "2026-10-08T09:47:26.229Z"
     }
   ],
   "anomalies": [
@@ -78,7 +111,7 @@
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-08T01:28:30.325Z"
+      "detectedAt": "2026-10-08T09:47:26.276Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
