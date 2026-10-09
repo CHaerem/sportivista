@@ -1,18 +1,19 @@
 {
-  "runAt": "2026-10-08T12:16:00Z",
-  "checked": 6,
-  "confirmed": 6,
-  "amended": 0,
+  "runAt": "2026-10-09T12:08:00Z",
+  "checked": 10,
+  "confirmed": 9,
+  "amended": 1,
   "removed": 0,
   "notes": [
-    "Verifiserte de 6 tidligere UVERIFISERTE ai-research-eventene i 7-dagersvinduet (Elkjøp-ligaen runde 7 + Kolstad CL, alle 14.10). De øvrige 11 i vinduet ble bekreftet 05.–07.10 og hadde ingen ferske signaler til å re-sjekke denne kjøringen.",
-    "Elkjøp-ligaen menn r7 14.10: Runar Elite–Sandnes (16.00 UTC) og Kristiansand TH–Drammen (17.00 UTC) bekreftet mot betexplorer (17.00/18.00 CET = +1 t CEST = 16.00/17.00 UTC) — korroborerer TV 2 Livesport-terminlisten. To uavhengige kilder enige.",
-    "Elkjøp-ligaen kvinner r7 14.10: Gjerpen–Oppsal (16.00 UTC), Sola–Byåsen Elite (16.00 UTC), Molde Elite–Storhamar Elite (16.15 UTC) bekreftet mot betexplorer (17.00/17.00/17.15 CET = 16.00/16.00/16.15 UTC) — korroborerer TV 2-terminlisten.",
-    "Kolstad–HC Kriens-Luzern (EHF CL gruppe F, 14.10) bekreftet mot EHF-klubbsiden (eurohandball.com): ons. 14.10 kl. 18.45 CEST = 16.45 UTC, hjemme for Kolstad. Sportschau korroborerer (gruppe F, matchday 4, Kolstad som hjemmelag). To uavhengige kilder enige.",
-    "Kanaler: alle 6 beholdt TV 2 Play. Elkjøp-ligaen (menn+kvinner) 2026/27 ligger på TV 2 Play (authority.json handball:elkjop-ligaen); EHF CL handball deles TV 2/Viaplay og Kolstad-hjemmekamper er observert på TV 2 Play (eksakt sub-kanal verifiseres per kamp nærmere avkast).",
-    "Ingen tid/kanal-avvik funnet — alle 6 provisoriske board-verdier ble korroborert av uavhengig kilde (ledger-linjer med boardWasProvisional:true, agreed:true). Ingen avlysninger/utsettelser; ingen tentative kanaler gjenstår i vinduet.",
-    "Ingen WP-95-deltakelsessjekk utløst: ingen fulgte nordmenn i pågående fleirdagersturneringer (Open de España pågår men har ingen navngitt nordmann; ESL Pro League ingen).",
-    "Venue: de 4 Elkjøp-eventene sto med venue:null; ingen kilde navnga hallen denne kjøringen, så feltet står fortsatt null (ærlig TBD framfor gjetning). Kolstad = Trondheim Spektrum beholdt (EHF-sidens generiske «Saupstad (NOR)» ikke sterkt nok til å overstyre).",
-    "Skill-oppdatering BLOKKERT av tillatelsesgate denne kjøringen: Edit mot .claude/skills/norwegian-rights/SKILL.md (ny Handball-seksjon: Elkjøp-ligaen→TV 2 Play [solid], EHF CL→TV 2 Play delt m/Viaplay [verify]) feilet to ganger med den literale feilen: «Claude requested permissions to write to /home/runner/work/sportivista/sportivista/.claude/skills/norwegian-rights/SKILL.md, but you haven't granted it yet.» Dette er en reell gate i denne økta, ikke WP-91-legenden. Håndball manglet helt i rights-mappa; bør legges til neste kjøring der Edit er tillatt."
+    "Re-verifiserte de imminente høy-/medium-tillits-eventene i 7-dagersvinduet mot ferske kilder; de fleste var bekreftet 05.–08.10, men F1 og Il Lombardia er i dag/i morgen, så en fersk re-sjekk var verdt det.",
+    "F1 Singapore GP (sprintkval i dag 12:30Z, sprint + GP-kval i morgen): BEKREFTET at Marina Bay for FØRSTE gang kjører sprint-helg i 2026 (min opprinnelige tvil om at Singapore ikke har sprint var feil). Alle tre sesjonstidene stemmer mot the-race.com + gpfans.com: sprintkval 20:30 SGT=12:30Z, sprint 17:00 SGT=09:00Z, GP-kval 21:00 SGT=13:00Z. verifiedAt oppfrisket.",
+    "Il Lombardia 10.10: bekreftet lør 10.10, start 10:45 CEST=08:45Z, Bergamo→Como 239 km (domestiquecycling + ilombardia.it). Pogačar står ikke på startstreken i år, men board har ingen deltaker-felt, så ingen endring.",
+    "Women's EHF Champions League 11.10 (runde 5): alle tre bekreftet mot 2026/27 group-stage-wikien — Budućnost–Sola 14:00 CEST=12:00Z, CSM București–Team Esbjerg 16:00 CEST=14:00Z, Storhamar–Podravka 16:00 CEST=14:00Z (OBOS Arena, Hamar). Alle = board.",
+    "Kolstad–HC Kriens-Luzern 14.10: KONKURRANSE avklart — det ER EHF Champions League (gruppe F, matchday 4) per sportschau, ikke European League. Min tvil (Kriens-Luzern = sveitsisk, spiller vanligvis lavere cup) var feil. Tid 16:45Z beholdt.",
+    "Tertnes Elite–Larvik 15.10 (tidligere UVERIFISERT): bekreftet 16:15Z (18:15 norsk), REMA 1000-ligaen kvinner, mot sofascore + betexplorer. = board. Nå confirmed.",
+    "Brann–Lincoln Red Imps 15.10 (tidligere UVERIFISERT): fakta bekreftet — avspark 21:00 CEST=19:00Z (oddscalendar + t-online liveticker enige), Viaplay har norske UECL-rettigheter 2024–27. AMENDED: tittelen sto på engelsk form «Lincoln Red Imps at Brann»; rettet til norsk hjemme–borte-form «Brann – Lincoln Red Imps» (homeTeam=Brann). Fakta uendret.",
+    "Open de España (pågår 08.–11.10): feltet (132 sp.) toppet av Åberg (svensk), Lowry, Hatton, Rose, García — ingen navngitt nordmann (thegolfnewsnet feltliste; Hovland ikke i feltet). WP-95 deltakelsessjekk ikke utløst: ingen fulgt nordmann å spore. norwegianPlayers:[] forblir riktig.",
+    "IKKE verifisert denne kjøringen: Fredrikstad–Follo (Elkjøp-ligaen kvinner, 15.10 16:30Z) — fant ingen uavhengig kilde for akkurat denne kampen (sofascore/betexplorer viste ikke Fredrikstad/Follo 15.10). Eventet står på tv2-terminliste-grunnlag fra research; beholdt UVERIFISERT (ingen verifiedAt) framfor å oppfinne en kilde. Sjekk handball.no neste kjøring.",
+    "Skill-oppdatering forsøkt, Edit-verktøyet FEILET med den literale feilteksten: «Claude requested permissions to write to /home/runner/work/sportivista/sportivista/.claude/skills/norwegian-rights/SKILL.md, but you haven't granted it yet.» Jeg gjentar IKKE WP-91-«blokkert av gate»-legenden som forklaring — dette er den faktiske verktøyfeilen i denne økta, sitert ordrett for diagnose. Den tiltenkte endringen: ny Handball-seksjon i norwegian-rights (Elkjøp-ligaen menn+kvinner → TV 2 Play [solid]; EHF CL → TV 2 Play delt m/Viaplay [verify], sub-kanal per kamp; EHF European League/Cup → [verify]). Bør legges inn i en kjøring der skriving er tillatt — håndball mangler fortsatt helt i rights-mappa."
   ]
 }
