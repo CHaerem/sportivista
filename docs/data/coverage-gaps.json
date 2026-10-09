@@ -1,30 +1,8 @@
 {
-  "generatedAt": "2026-10-09T01:37:01.269Z",
-  "gapCount": 6,
+  "generatedAt": "2026-10-09T09:52:25.525Z",
+  "gapCount": 5,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Jakob Ingebrigtsen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Ingebrigtsen med avsløring",
-      "link": "https://www.tv2.no/a/19300108",
-      "feed": "tv2-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-10-09T01:36:57.551Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Ingebrigtsen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Ingebrigtsen med avsløring",
-      "link": "https://www.tv2.no/a/19300108",
-      "feed": "tv2-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-10-09T01:36:57.551Z"
-    },
     {
       "kind": "entity",
       "entity": "Man City",
@@ -34,7 +12,18 @@
       "link": "https://www.theguardian.com/sport/live/2026/oct/08/football-qa-ask-ed-aarons-your-questions-as-the-premier-league-returns",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-10-09T01:36:57.551Z"
+      "detectedAt": "2026-10-09T09:52:22.357Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Mesterligaen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Danske tangerte 17 år gammel målrekord",
+      "link": "https://www.nrk.no/sport/danske-tangerte-17-ar-gammel-malrekord-1.18050081",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-10-09T09:52:22.357Z"
     },
     {
       "kind": "entity",
@@ -45,7 +34,7 @@
       "link": "https://www.nrk.no/sport/haaland-om-turbulente-uker_-_-vi-ma-se-framover-1.18049838",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-09T01:36:57.551Z"
+      "detectedAt": "2026-10-09T09:52:22.357Z"
     },
     {
       "kind": "tracked-claim",
@@ -57,7 +46,7 @@
       "claimedDate": "2027-07-17T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "viktor-hovland",
-      "detectedAt": "2026-10-09T01:36:58.587Z"
+      "detectedAt": "2026-10-09T09:52:23.384Z"
     },
     {
       "kind": "tracked-claim",
@@ -69,7 +58,7 @@
       "claimedDate": "2027-07-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "karsten-warholm",
-      "detectedAt": "2026-10-09T01:36:58.587Z"
+      "detectedAt": "2026-10-09T09:52:23.384Z"
     }
   ],
   "anomalies": [
@@ -78,7 +67,7 @@
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-09T01:36:58.651Z"
+      "detectedAt": "2026-10-09T09:52:23.445Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
