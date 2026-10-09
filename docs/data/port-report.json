@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T09:52:22.097Z",
+  "generatedAt": "2026-10-09T11:39:11.431Z",
   "windowDays": 14,
   "ports": {
     "coverage": "green",
@@ -27,16 +27,16 @@
       "medium": 0,
       "low": 1
     },
-    "oldestGapAgeDays": 1.99,
+    "oldestGapAgeDays": 2.06,
     "escalatable": 0,
     "catalogMatched": 1,
-    "auditedAt": "2026-10-08T10:15:00Z",
+    "auditedAt": "2026-10-09T10:15:00Z",
     "gaps": [
       {
         "interest": "Tennis — Rolex Paris Masters 2026 (ATP Masters 1000, Casper Ruud)",
         "severity": "low",
-        "ageDays": 1.99,
-        "recurrences": 1,
+        "ageDays": 2.06,
+        "recurrences": 2,
         "catalogMatched": true
       }
     ]
@@ -47,17 +47,10 @@
     "nearTermAmended": 0,
     "verifyRunAt": "2026-10-08T12:16:00Z",
     "windowRate": 0,
-    "windowChecks": 96,
+    "windowChecks": 93,
     "windowAmendments": 0,
     "windowCorrections": 1,
     "byDay": [
-      {
-        "date": "2026-09-25",
-        "checks": 3,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-09-26",
         "checks": 4,
@@ -153,15 +146,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-09T09:52:15.145Z",
+    "buildCheckedAt": "2026-10-09T11:39:05.870Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-09T01:37:01.491Z",
-    "manifestAgeHours": 8.26,
+    "manifestGeneratedAt": "2026-10-09T09:52:25.763Z",
+    "manifestAgeHours": 1.78,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-10-08T12:16:00Z",
-    "verifyAgeHours": 21.61,
+    "verifyAgeHours": 23.39,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
@@ -172,6 +165,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-09T09:52:22.096Z"
+    "generatedAt": "2026-10-09T11:39:11.430Z"
   }
 }
