@@ -1,19 +1,8 @@
 {
-  "generatedAt": "2026-10-09T11:39:13.051Z",
-  "gapCount": 6,
+  "generatedAt": "2026-10-09T17:56:45.547Z",
+  "gapCount": 5,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Man City",
-      "type": "missing",
-      "imminent": false,
-      "headline": "‘Is the greatness of the Premier League a myth?’: Ed Aarons answered your football questions",
-      "link": "https://www.theguardian.com/sport/live/2026/oct/08/football-qa-ask-ed-aarons-your-questions-as-the-premier-league-returns",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-10-09T11:39:11.726Z"
-    },
     {
       "kind": "entity",
       "entity": "Mesterligaen",
@@ -23,18 +12,7 @@
       "link": "https://www.nrk.no/sport/danske-tangerte-17-ar-gammel-malrekord-1.18050081",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-09T11:39:11.726Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Nations League",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Haaland om turbulente uker: – Vi må se framover",
-      "link": "https://www.nrk.no/sport/haaland-om-turbulente-uker_-_-vi-ma-se-framover-1.18049838",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-10-09T11:39:11.726Z"
+      "detectedAt": "2026-10-09T17:56:44.374Z"
     },
     {
       "kind": "entity",
@@ -45,7 +23,18 @@
       "link": "https://www.nrk.no/sport/fotball-vm_-over-halvparten-av-spillerne-hetset-i-sosiale-medier-1.18050587",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-09T11:39:11.726Z"
+      "detectedAt": "2026-10-09T17:56:44.374Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Formel 1",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Verstappen raskest i Singapore-kvalifisering",
+      "link": "https://www.nrk.no/sport/verstappen-raskest-i-singapore-kvalifisering--1.18051021",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-10-09T17:56:44.374Z"
     },
     {
       "kind": "tracked-claim",
@@ -57,7 +46,7 @@
       "claimedDate": "2027-07-17T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "viktor-hovland",
-      "detectedAt": "2026-10-09T11:39:12.753Z"
+      "detectedAt": "2026-10-09T17:56:45.317Z"
     },
     {
       "kind": "tracked-claim",
@@ -69,7 +58,7 @@
       "claimedDate": "2027-07-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "karsten-warholm",
-      "detectedAt": "2026-10-09T11:39:12.753Z"
+      "detectedAt": "2026-10-09T17:56:45.317Z"
     }
   ],
   "anomalies": [
@@ -78,7 +67,7 @@
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-09T11:39:12.818Z"
+      "detectedAt": "2026-10-09T17:56:45.378Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."

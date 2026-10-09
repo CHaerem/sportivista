@@ -159,59 +159,6 @@
     ]
   },
   {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen 2026/27",
-    "title": "Bergsøy – Elverum",
-    "time": "2026-09-25T16:00:00Z",
-    "endTime": null,
-    "venue": "Rem Arena, Fosnavåg",
-    "norwegian": true,
-    "homeTeam": "Bergsøy",
-    "awayTeam": "Elverum",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-21T15:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "handballforbundet",
-        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-        "basis": "secondary",
-        "retrievedAt": "2026-09-23T10:12:00Z",
-        "note": "Verify bekreftet avkast + dato + hjemme/borte mot TV 2 livesport Elkjøp-ligaen-terminliste (runde 5, 25.–27. sep). handball.no-terminlisten er JS-rendret; TV 2 fester minuttet."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "basis": "official",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "TV 2 eier norske Elkjop-liga-rettigheter (alle kamper pa TV 2 Play, utvalgte lineart)."
-      }
-    },
-    "summary": "Bergsøy tar imot Elverum i Elkjøp-ligaen. Elverum er et av seriens mestvinnende lag; hjemmelaget Bergsøy jakter poeng på egen bane.\n\nAvkast fredag 25. september kl. 18.00 (16.00 UTC). Vises på TV 2 Play.",
-    "awayTeamEntityId": "elverum-handball",
-    "id": "a3fa01b33ab8",
-    "verifiedAt": "2026-09-23T10:12:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-    ]
-  },
-  {
     "sport": "cycling",
     "tournament": "UCI Road World Championships 2026",
     "title": "Elite kvinner fellesstart",
@@ -5472,7 +5419,7 @@
       }
     },
     "summary": "UEFA Conference League, ligafase runde 1 (MD1). Brann tar imot Lincoln Red Imps fra Gibraltar på Brann Stadion i Bergen tor. 15. okt kl. 21.00 CEST (19.00 UTC) — Branns debut i Conference League-ligafasen.\n\nDato/avspark bekreftet mot uefa.com (ligafase-terminlisten, primær-autoritet) + Wikipedia/FotMob og en uavhengig write-time fact-check — alle enige på 21.00 CEST.\n\nNorsk visning: Viaplay (Viaplay har Conference League-rettighetene i Norge).",
-    "id": "8ef0dad6c10b",
+    "id": "1b417fb9b908",
     "homeTeamEntityId": "brann",
     "verifiedAt": "2026-10-09T12:08:00Z",
     "verificationStatus": "amended",
@@ -5928,8 +5875,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/vintersport",
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
         "urlKind": "landing"
       }
     ],
@@ -5973,8 +5920,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/vintersport",
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
         "urlKind": "landing"
       }
     ],
@@ -6061,6 +6008,34 @@
     "isFavorite": false,
     "round": null,
     "id": "72cdda93233d"
+  },
+  {
+    "sport": "f1",
+    "tournament": "Formula 1 2026 - Race Weekend",
+    "title": "MSC Cruises São Paulo Grand Prix",
+    "time": "2026-11-08T17:00:00.000Z",
+    "endTime": null,
+    "venue": "TBD",
+    "meta": "Formula 1 2026 - Race Weekend",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "0e4b88ec3552"
   },
   {
     "sport": "chess",

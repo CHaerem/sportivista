@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T11:39:11.431Z",
+  "generatedAt": "2026-10-09T17:56:44.118Z",
   "windowDays": 14,
   "ports": {
     "coverage": "green",
@@ -27,7 +27,7 @@
       "medium": 0,
       "low": 1
     },
-    "oldestGapAgeDays": 2.06,
+    "oldestGapAgeDays": 2.32,
     "escalatable": 0,
     "catalogMatched": 1,
     "auditedAt": "2026-10-09T10:15:00Z",
@@ -35,19 +35,19 @@
       {
         "interest": "Tennis — Rolex Paris Masters 2026 (ATP Masters 1000, Casper Ruud)",
         "severity": "low",
-        "ageDays": 2.06,
+        "ageDays": 2.32,
         "recurrences": 2,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0,
-    "nearTermChecked": 6,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-10-08T12:16:00Z",
+    "nearTermRate": 0.1,
+    "nearTermChecked": 10,
+    "nearTermAmended": 1,
+    "verifyRunAt": "2026-10-09T12:08:00Z",
     "windowRate": 0,
-    "windowChecks": 93,
+    "windowChecks": 101,
     "windowAmendments": 0,
     "windowCorrections": 1,
     "byDay": [
@@ -141,30 +141,38 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-10-09",
+        "checks": 8,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-09T11:39:05.870Z",
+    "buildCheckedAt": "2026-10-09T17:56:38.762Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-09T09:52:25.763Z",
-    "manifestAgeHours": 1.78,
+    "manifestGeneratedAt": "2026-10-09T11:39:13.303Z",
+    "manifestAgeHours": 6.29,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-08T12:16:00Z",
-    "verifyAgeHours": 23.39,
-    "corrections": 1,
+    "checkedAt": "2026-10-09T12:08:00Z",
+    "verifyAgeHours": 5.81,
+    "corrections": 2,
     "unresolved": 0,
     "signals": [
-      "Ingen WP-95-deltakelsessjekk utløst: ingen fulgte nordmenn i pågående fleirdagersturneringer (Open de España pågår men har ingen navngitt nordmann; ESL Pro L…"
+      "Il Lombardia 10.10: bekreftet lør 10.10, start 10:45 CEST=08:45Z, Bergamo→Como 239 km (domestiquecycling + ilombardia.it). Pogačar står ikke på startstreken …",
+      "Open de España (pågår 08.–11.10): feltet (132 sp.) toppet av Åberg (svensk), Lowry, Hatton, Rose, García — ingen navngitt nordmann (thegolfnewsnet feltliste;…"
     ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-09T11:39:11.430Z"
+    "generatedAt": "2026-10-09T17:56:44.117Z"
   }
 }
