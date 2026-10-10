@@ -1,28 +1,27 @@
 {
-	"runAt": "2026-10-10T14:45:00Z",
-	"tier": "standard",
-	"eventsAdded": 1,
-	"eventsRemoved": 2,
-	"trackedDelta": "La til tournaments-entry us-chess-championship-2026 (chess, entity-gated via katalog-athletene Caruana/Wesley So/Aronian). Prependet ny notes-entry (cap 15, droppet eldste). lastUpdated → 2026-10-10T14:45Z. Katalogen uendret (entity-gated, ikke promotert). Registrerte Saint Louis Chess Club i sources.json (primary/in-use) + authority.json (chess:us-championship).",
-	"quality": {
-		"pass": true,
-		"score": 86,
-		"gradedAt": "2026-10-10T14:50:00Z",
-		"gradedBy": "independent grader subagent (fresh-context)",
-		"revisionPasses": 0,
-		"failures": [
-			"RESOLVED-POST-GRADE: grader flagget at research-log.json ennå ikke var skrevet ved gradingen — den skrives nå med dette resultatet (normal flyt: grade → skriv log).",
-			"NON-HARD (carry-forward, utenfor research-commit-scope): Sölden-alpint NRK→TV 2 Play-churn re-fikses hver kjøring fordi scripts/lib/norwegian-rights.js re-deriverer alpint→NRK på hver static-rebuild; varig fiks (splitt libben) korrekt delegert til self-repair.",
-			"NON-HARD (naturlig aldring): 2 sjakk-OL-events (avsluttet 27. sep, ~13 d forbi) står ennå innenfor validate' 14-d grace → korrekt latt stå, prunes neste runde."
-		]
-	},
-	"notes": [
-		"Standard-tier 4-timerskjøring (lør. ~16.45 CEST, 10. okt). ÉN NY EVENT (chess) + 2 ryddinger. PRIMÆRLEVERANSE: boardet 2026 U.S. Chess Championship (Saint Louis, 9.–21. okt) — coverage-audit 10:30Z' NYE medium-hull. Entity-gated sjakk med TRE katalog-tier2-entiteter i feltet (Fabiano Caruana regjerende mester/toppseed, Wesley So, Levon Aronian + Hans Niemann) falt gjennom fordi chess.json var tom (ingen fetcher). Fler-dagers ai-research-node (medium, time 2026-10-09T17:00Z → endTime 21. okt, vises som pågående). isCovered bekreftet true via athletene.",
-		"KILDER/FACT-CHECK: dato/felt/venue tre-kilde-bekreftet — SLCCs egen event-side (saintlouischessclub.org, primær, lest direkte) + uschess.org preview + chess.com runde 1-rapport. Uavhengig fresh-context write-time fact-check: felt (12 spillere, Caruana/So/Aronian/Niemann), format (12-spillers enkel serieturnering klassisk), sluttrunde 21. okt og gratis SLCC YouTube/Twitch-strøm alle CONFIRMED. AMENDED på rundestart: fact-checken leste pressemeldingens «stream 12:20 p.m. CDT» (=17:20 UTC), mens arrangørens event-side lister rundestart 12:00 CDT (=17:00 UTC) — 20-min stream-vs-rundestart-nyanse → brukte 17:00 UTC (rundestart, arrangørens strukturerte skjema) og holdt confidence MEDIUM (verify fester eksakt rundestart). Ingen norsk vinkel (Carlsen spiller ikke, amerikansk + inviterte felt) → medium, ikke high (jf. coverage-auditens vurdering).",
-		"PROVENANS/REGISTER: registrerte arrangøren Saint Louis Chess Club i sources.json (id saint-louis-chess-club, role primary, status in-use, robots lest 10.10 — åpen, ingen TDM-forbehold) + authority.json (chess:us-championship, tid+kanal fra SLCC). provenance.time basis primary, provenance.streaming basis primary (self-stream). IKKE promotert til catalog.json (sjakk entity-gated — resolver via katalog-athletene).",
-		"TO RYDDINGER på samme tavle-touch (begge match build-events' egen prune / recurring churn): (a) pruna 2 stale forbi-grace Elkjøp-ligaen-håndballkamper (26. sep 14:00Z: Kolstad–Follo HK + Kristiansand TH–Sandnes) som krysset validate' 14-d grace → 2 hard feil borte; (b) rettet IGJEN de 2 Sölden-alpint streaming[] NRK→TV 2 Play (tilbakevendende norwegian-rights.js-churn, self-repair HIGH-flagg står). validate-events: 0 errors (146→144 events etter 1 ny + 2 pruna).",
-		"ØVRIG SIGNALBILDE GRØNT: coverage-audit 10:30Z IKKE eskalert (0 high-gaps; andre medium = Paris Masters/Ruud på cadence, boardes ~26. okt). Alle 6 WP-243-dekningskontrakter met (breached []; F1 5, Eliteserien 7, PL 10, DP World Tour 1, PGA Tour 2, ATP/WTA 1). Scout 10:56Z quiet (RSS 55 items, kun resultater/meningsstoff). coverage-gaps (2 gaps/1 anomali) TRIAGERT: entity-gap Formel 1 (NRK Verstappen Singapore-kval-notis = nettopp-spilt, løpet søn. 11. okt står static) + entity-gap Vuelta (cyclingnews Roglič Il Lombardia-retro = meningsstoff, ikke event); anomali chess file-empty (LOW) = nettopp hvorfor US-mesterskapet falt gjennom, NÅ adressert. Ingen andre reelle event-hull.",
-		"Step 1 reconcile rent (grundig reconcile gjort 06:00Z i dag): alle tier2-entiteter + tier1-i-sesong dekket, ingen entry utløpt siden 06:00Z (il-lombardia exp. 11.10 + esl-pro-league exp. 12.10 = ett-gangs-events, naturlig utløp). Step 2.6 horisont-scan: ingen ny in-scope katalog/demand-kandidat (coverage-gaps uten demand[]; UEFA Women's Europa Cup Brann/Rosenborg Kvinner 28.–29. okt uendret, bevisst ikke auto-promotert). Ingen registry-reconciliation (lørdag, kun deep-tier/mandag).",
-		"STRUKTURELLE FLAGG STÅR (self-repair/improve, carry-forward): HIGH ingen wholesale håndball-fetcher/authority-contract (all håndball håndboardes); HIGH CS2 esports.js 100T-only-filter (~20 andre katalog-orger research-avhengig); MEDIUM golf-fetcher uten look-ahead; Sölden-alpint streaming-churn (norwegian-rights.js re-deriverer NRK)."
-	]
+  "runAt": "2026-10-10T20:10:00Z",
+  "tier": "standard",
+  "eventsAdded": 10,
+  "eventsRemoved": 2,
+  "trackedDelta": "Oppdaterte premier-league-2026-27-entryen med runde-7-note + la til legz round-7 som korroborerende evidence-URL. Prependet ny notes-entry (cap 15, droppet eldste). lastUpdated -> 2026-10-10T20:10Z. Katalogen uendret (ingen nye entiteter denne kjoeringen).",
+  "quality": {
+    "pass": true,
+    "score": 88,
+    "gradedAt": "2026-10-10T20:15:00Z",
+    "gradedBy": "independent-grader-subagent",
+    "revised": true,
+    "failures": [
+      "SCORED (-5, evidence-domain monoculture): de 10 PL runde-7-eventene siterer kun to evidence-domener (premier-league.com primaer + legz.com.au korroborasjon); legz er en ikke-primaer aggregator. Mildnet av uavhengig write-time fact-check (10/10 confirmed mot flere kilder).",
+      "LOEST paa re-grade (hard-fail #6): begge alpine Soelden-events har naa streaming[]=[TV 2 Play] som matcher prosaen + den siterte Viaplay Group-PM; validate-events 0 errors, ingen summary-streaming-mismatch."
+    ]
+  },
+  "notes": [
+    "PRIMAERLEVERANSE: tettet det ENESTE brutte WP-243-dekningskontrakt-loeftet — Premier League (coverage-gaps 16:07Z: 5 av minst 6 ventede innen 14 d). Rotaarsak: runde 6 spilles naa, runde 7 (17.–19. okt) ligger 7–9 d ut = akkurat utenfor eng.1-fetcherens ~5–6-d-vindu, saa 0 r7-kamper var static-boardet.",
+    "Boardet HELE runde 7 (10 kamper) som ai-research (high) fra AUTORITETEN premier-league.com (all-380-terminlisten, provenance.time.basis=primary, sourceId premier-league). Uavhengig fresh-context write-time fact-check bekreftet 10/10 mot premier-league.com + legz (UTC-listing, ren 1-times BST-offset) + NBC/klubbsider. TV-valgte slots: Everton–Chelsea loer. 12.30 BST (TNT), Newcastle–Villa loer. 17.30, soendag Bournemouth/Brighton/Leeds 14.00 + Forest–Arsenal 16.30, mandag Spurs–Coventry 20.00; de tre resterende loer. paa 15.00-default. BST=UTC+1 t.o.m. 25. okt. Haaland navngitt paa Man City–Ipswich.",
+    "Norsk visning Viaplay (eksklusiv PL-rettighet i Norge 2026/27, provenance.streaming.basis=official) — bekreftet av fact-checkeren. Titler i ESPN-stil «{borte} at {hjemme}» saa de dedup-merger rent naar eng.1-fetchervinduet ruller fram ~12.–14. okt.",
+    "RYDDING: fjernet 2 fullfoerte stale ai-research-events (UCI Road-VM Elite kvinner fellesstart 26/9 + Stake Pulse Beat II 100T–Heroic 26/9) som feilet validate-events (past-event) -> validate 0 errors.",
+    "REVISJON (Step 5, 1 bounded pass): graderen fant en hard-fail i to PRE-EKSISTERENDE alpine-events (Soelden storslalaam kvinner 24/10 + menn 25/10) der summary sa «TV 2 Play» mens streaming[]=[NRK] — en summary↔streaming-selvmotsigelse. Rettet streaming[] til TV 2 Play (matcher den velbelagte prosaen + den siterte Viaplay Group-PM om at TV 2 sender Soelden-aapningen); provenance.streaming -> tv2/official. validate-events naa 0 errors, ingen mismatch.",
+    "TRIAGE (ikke boardet denne kjoeringen): U.S. Chess Championship-medium-hullet (coverage-audit 10:30Z, Caruana/Wesley So/Aronian) er ALT dekket av forrige kjoerings multi-dag-event (9.–21. okt, spenner imminent-vinduet). Paris Masters/Ruud medium carry-forward FORTSATT paa cadence (utenfor ~5-d fyll-vindu, boardes ~26. okt). F1 Singapore sprint-helg + oevrig fotball/haandball/golf/tennis/sykkel bekreftet dekket per coverage-audit. INGEN high recall-gap utover PL-kontrakten.",
+    "Mekaniske coverage-gaps triagert: entity-gap «Formel 1» (NRK Verstappen-kvalifisering) = nettopp-spilt kval, Singapore-loepet staar static — ikke et hull. entity-gap «Europa League» (Guardian Man Utd–Spurs PL-sak) = feiltreff/meningsstoff. Ingen reelle event-hull fra mekanikken utover den trimmede PL-kontrakten."
+  ]
 }

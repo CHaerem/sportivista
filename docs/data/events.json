@@ -159,109 +159,6 @@
     ]
   },
   {
-    "sport": "cycling",
-    "tournament": "UCI Road World Championships 2026",
-    "title": "Elite kvinner fellesstart",
-    "time": "2026-09-26T13:00:00Z",
-    "endTime": "2026-09-26T18:10:00Z",
-    "venue": "Montréal, Canada",
-    "norwegian": false,
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "Eurosport / HBO Max",
-        "url": "https://www.hbomax.com/no/no/sports/cycling",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-08-29T19:45:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier1",
-      "catalog.json#tier2.tournaments",
-      "https://en.wikipedia.org/wiki/2026_UCI_Road_World_Championships",
-      "https://www.mtl.org/en/what-to-do/festivals-and-events/uci-road-world-championships"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "wikipedia",
-        "url": "https://en.wikipedia.org/wiki/2026_UCI_Road_World_Championships",
-        "basis": "secondary",
-        "retrievedAt": "2026-08-29T19:45:00Z"
-      },
-      "streaming": {
-        "sourceId": "hbo-max",
-        "url": "https://presse.warnerbrosdiscovery.no/post/folg-sykkel-vm-pa-hbo-max",
-        "basis": "official",
-        "retrievedAt": "2026-09-20T09:56:04Z",
-        "note": "Warner Bros. Discovery Norges egen presseside: «Alle ritt vises på HBO Max og Eurosport» for sykkel-VM 2026 (20.–27. sep, Montréal). TV 2 er IKKE rettighetshaver for VM (TV 2s sykkelavtale gjelder Tour de France 2026–2030). Retter tidligere feil «TV 2 Play» — samme korreksjon som ITT-øvelsene fikk 17.09."
-      }
-    },
-    "summary": "UCI Road-VM 2026 i Montréal. Elite kvinner fellesstart, 180,4 km med start i Brossard.\n\nNorsk visning: Eurosport / HBO Max (Warner Bros. Discovery holder VM-rettighetene i Europa; ikke TV 2, som kun har Tour de France + Arctic Race). Start 09:00 lokal tid (EDT) = 13:00 UTC.",
-    "id": "e452c2dfcae1",
-    "verifiedAt": "2026-09-22T10:22:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://en.wikipedia.org/wiki/2026_UCI_Road_World_Championships"
-    ]
-  },
-  {
-    "sport": "esports",
-    "tournament": "Stake Pulse Beat II",
-    "title": "100 Thieves vs Heroic",
-    "time": "2026-09-26T17:00:00Z",
-    "endTime": "2026-09-26T20:00:00Z",
-    "venue": "BME Studio, Stockholm",
-    "norwegian": false,
-    "norwegianPlayers": [
-      {
-        "name": "Håvard Nygaard"
-      }
-    ],
-    "participants": [
-      {
-        "name": "100 Thieves"
-      },
-      {
-        "name": "Heroic"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "Kick",
-        "url": "https://kick.com/stake_pulse",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-26T19:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.hltv.org/matches/2398074/100-thieves-vs-heroic-stake-pulse-beat-ii",
-      "https://www.strafe.com/match/100-thieves-vs-heroic-final-2026-stake-pulse-beat-ii-92ee7d/",
-      "https://esports-news.co.uk/2026/09/24/100-thieves-reach-stake-pulse-beat-ii-playoffs-with-2-0-group-stage",
-      "https://liquipedia.net/counterstrike/Stake_Pulse/Beat_II"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "hltv",
-        "url": "https://www.hltv.org/matches/2398074/100-thieves-vs-heroic-stake-pulse-beat-ii",
-        "basis": "secondary",
-        "retrievedAt": "2026-09-26T19:15:00Z"
-      },
-      "streaming": {
-        "sourceId": "kick",
-        "url": "https://kick.com/stake_pulse",
-        "basis": "official",
-        "retrievedAt": "2026-09-26T19:15:00Z"
-      }
-    },
-    "summary": "Stake Pulse Beat II-FINALEN (best-of-3), BME Studio i Stockholm. 100 Thieves — med Håvard «rain» Nygaard (IGL) — møter Heroic om tittelen lørdag 26. sept kl. 19.00 CEST (17.00 UTC).\n\n100T slo BBL i kvartfinalen og Astralis i semifinalen (begge sluttspillseiere) og er ubeseiret gjennom sluttspillet. Heroic kom seg til finalen via Sangal.\n\nGratis på Stake Pulse sin egen Kick-kanal (stake_pulse) i Norge — ingen norsk TV-rettighet.",
-    "id": "e6659715f123"
-  },
-  {
     "sport": "chess",
     "tournament": "Chess Olympiad 2026",
     "title": "46. sjakk-OL 2026 – sluttrunde (runde 11)",
@@ -5798,8 +5695,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -5824,8 +5721,7 @@
         "sourceId": "tv2",
         "url": "https://presse.viaplaygroup.no/post/tv-2-og-viaplay-deler-rettighetene-til-vintersport-fra-osterrike",
         "basis": "official",
-        "retrievedAt": "2026-10-02T05:50:00Z",
-        "note": "TV 2 + Viaplay deler FIS-alpint fra Østerrike 2026/27–2030/31; TV 2 sender Sölden-åpningen (rettighetshaverens egen pressemelding). Eksakt TV 2-lineær kanal/Play-slot settes nærmere → verify firmer"
+        "retrievedAt": "2026-10-10T20:10:00Z"
       }
     },
     "summary": "Verdenscupåpningen i alpint — kvinnenes storslalåm på Rettenbach-breen i Sölden sparker i gang 2026/27-sesongen. Tradisjonen tro er sesongstarten i Østerrike en storslalåm for både kvinner (lørdag) og menn (søndag).\n\n1. omgang kl. 10.00, 2. omgang kl. 13.00 lokal tid (08.00 og 11.00 UTC — Østerrike er på sommertid til natt til søndag 25. okt).\n\nNorsk visning: TV 2 Play. TV 2 og Viaplay deler verdenscuprettighetene for alpint fra Østerrike 2026/27–2030/31, og TV 2 sender Sölden-åpningen. Programmet kan justeres ved vær.",
@@ -5843,8 +5739,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -5869,8 +5765,7 @@
         "sourceId": "tv2",
         "url": "https://presse.viaplaygroup.no/post/tv-2-og-viaplay-deler-rettighetene-til-vintersport-fra-osterrike",
         "basis": "official",
-        "retrievedAt": "2026-10-02T05:50:00Z",
-        "note": "TV 2 + Viaplay deler FIS-alpint fra Østerrike 2026/27–2030/31; TV 2 sender Sölden-åpningen (rettighetshaverens egen pressemelding). Eksakt TV 2-lineær kanal/Play-slot settes nærmere → verify firmer"
+        "retrievedAt": "2026-10-10T20:10:00Z"
       }
     },
     "summary": "Verdenscupåpningen i alpint — mennenes storslalåm på Rettenbach-breen i Sölden avslutter åpningshelgen og 2026/27-sesongens første mannerenn.\n\n1. omgang kl. 10.00, 2. omgang kl. 13.00 lokal tid (09.00 og 12.00 UTC — natt til denne søndagen stilles klokka tilbake til normaltid, så Østerrike er på UTC+1).\n\nNorsk visning: TV 2 Play. TV 2 og Viaplay deler verdenscuprettighetene for alpint fra Østerrike 2026/27–2030/31, og TV 2 sender Sölden-åpningen. Programmet kan justeres ved vær.",
@@ -6009,5 +5904,429 @@
     "summary": "Magnus Carlsens bekreftede neste turnering: pilot-utgaven av den FIDE-godkjente Total Chess World Championship Tour, i Budapest 10.–21. november. 24 spillere fra 10 nasjoner, premiepott minst $2,7 mill. og to plasser til Kandidatturneringen 2028.\n\nÅpningsseremoni + blitz-sveitser går 10. nov (klokkeslett ikke publisert). Gruppespillet (fire grupper à seks, dobbel serie i «fast classic» 45+30) spilles 11.–15. nov med daglig start 15:00 CET. Utslagsrundene 17.–20. nov (blitz 15:00, hurtig 16:15, fast classic 18:45 CET).\n\nCarlsen, Caruana, Erigaisi, Wesley So, Keymer og Aronian er bekreftet; Gukesh, Nakamura og Sindarov er meldt av pga. kollisjon med det klassiske VM. Norsk/offisiell kringkasting er ennå ikke kunngjort av arrangøren – verify fyller streaming når worldchess melder plattform.",
     "norwegianPlayers": [],
     "id": "bd5daeb1237d"
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Chelsea at Everton",
+    "time": "2026-10-17T11:30:00Z",
+    "endTime": null,
+    "venue": "Goodison Park",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-10T20:10:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.legz.com.au/epl/fixtures/2026-27/round-7"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      }
+    },
+    "homeTeam": "Everton",
+    "awayTeam": "Chelsea",
+    "summary": "Premier League runde 7 - Everton mot Chelsea, Goodison Park. Rundens tidligkamp lørdag.\n\nDato/avspark bekreftet mot premier-league.com (all-380-terminlisten, primaer-autoritet) + uavhengig write-time fact-check (legz round 7 i UTC, ren 1-times BST-offset). Storbritannia paa BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Liverpool at Brentford",
+    "time": "2026-10-17T14:00:00Z",
+    "endTime": null,
+    "venue": "Gtech Community Stadium",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-10T20:10:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.legz.com.au/epl/fixtures/2026-27/round-7"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      }
+    },
+    "homeTeam": "Brentford",
+    "awayTeam": "Liverpool",
+    "summary": "Premier League runde 7 - Brentford mot Liverpool, Gtech Community Stadium. Liverpool paa bortebane i 15.00-blokken (BST).\n\nDato/avspark bekreftet mot premier-league.com (all-380-terminlisten, primaer-autoritet) + uavhengig write-time fact-check (legz round 7 i UTC, ren 1-times BST-offset). Storbritannia paa BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Hull City at Fulham",
+    "time": "2026-10-17T14:00:00Z",
+    "endTime": null,
+    "venue": "Craven Cottage",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-10T20:10:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.legz.com.au/epl/fixtures/2026-27/round-7"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      }
+    },
+    "homeTeam": "Fulham",
+    "awayTeam": "Hull City",
+    "summary": "Premier League runde 7 - Fulham mot Hull City, Craven Cottage.\n\nDato/avspark bekreftet mot premier-league.com (all-380-terminlisten, primaer-autoritet) + uavhengig write-time fact-check (legz round 7 i UTC, ren 1-times BST-offset). Storbritannia paa BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Ipswich Town at Manchester City",
+    "time": "2026-10-17T14:00:00Z",
+    "endTime": null,
+    "venue": "Etihad Stadium",
+    "norwegian": false,
+    "norwegianPlayers": [
+      {
+        "name": "Erling Haaland"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-10T20:10:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.legz.com.au/epl/fixtures/2026-27/round-7"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      }
+    },
+    "homeTeam": "Manchester City",
+    "awayTeam": "Ipswich Town",
+    "summary": "Premier League runde 7 - Manchester City mot Ipswich Town, Etihad Stadium. Erling Haalands Manchester City hjemme mot Ipswich.\n\nDato/avspark bekreftet mot premier-league.com (all-380-terminlisten, primaer-autoritet) + uavhengig write-time fact-check (legz round 7 i UTC, ren 1-times BST-offset). Storbritannia paa BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Aston Villa at Newcastle United",
+    "time": "2026-10-17T16:30:00Z",
+    "endTime": null,
+    "venue": "St James Park",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-10T20:10:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.legz.com.au/epl/fixtures/2026-27/round-7"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      }
+    },
+    "homeTeam": "Newcastle United",
+    "awayTeam": "Aston Villa",
+    "summary": "Premier League runde 7 - Newcastle United mot Aston Villa, St James Park. Loerdagens kveldskamp (Sky-valgt).\n\nDato/avspark bekreftet mot premier-league.com (all-380-terminlisten, primaer-autoritet) + uavhengig write-time fact-check (legz round 7 i UTC, ren 1-times BST-offset). Storbritannia paa BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Sunderland at AFC Bournemouth",
+    "time": "2026-10-18T13:00:00Z",
+    "endTime": null,
+    "venue": "Vitality Stadium",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-10T20:10:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.legz.com.au/epl/fixtures/2026-27/round-7"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      }
+    },
+    "homeTeam": "AFC Bournemouth",
+    "awayTeam": "Sunderland",
+    "summary": "Premier League runde 7 - AFC Bournemouth mot Sunderland, Vitality Stadium. Flyttet til soendag 14.00 BST etter Bournemouths Europa League-kamp torsdag.\n\nDato/avspark bekreftet mot premier-league.com (all-380-terminlisten, primaer-autoritet) + uavhengig write-time fact-check (legz round 7 i UTC, ren 1-times BST-offset). Storbritannia paa BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Crystal Palace at Brighton & Hove Albion",
+    "time": "2026-10-18T13:00:00Z",
+    "endTime": null,
+    "venue": "Amex Stadium",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-10T20:10:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.legz.com.au/epl/fixtures/2026-27/round-7"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      }
+    },
+    "homeTeam": "Brighton & Hove Albion",
+    "awayTeam": "Crystal Palace",
+    "summary": "Premier League runde 7 - Brighton & Hove Albion mot Crystal Palace, Amex Stadium. Flyttet til soendag 14.00 BST etter europacupspill torsdag.\n\nDato/avspark bekreftet mot premier-league.com (all-380-terminlisten, primaer-autoritet) + uavhengig write-time fact-check (legz round 7 i UTC, ren 1-times BST-offset). Storbritannia paa BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Manchester United at Leeds United",
+    "time": "2026-10-18T13:00:00Z",
+    "endTime": null,
+    "venue": "Elland Road",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-10T20:10:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.legz.com.au/epl/fixtures/2026-27/round-7"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      }
+    },
+    "homeTeam": "Leeds United",
+    "awayTeam": "Manchester United",
+    "summary": "Premier League runde 7 - Leeds United mot Manchester United, Elland Road. Leeds mot Manchester United paa Elland Road.\n\nDato/avspark bekreftet mot premier-league.com (all-380-terminlisten, primaer-autoritet) + uavhengig write-time fact-check (legz round 7 i UTC, ren 1-times BST-offset). Storbritannia paa BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Arsenal at Nottingham Forest",
+    "time": "2026-10-18T15:30:00Z",
+    "endTime": null,
+    "venue": "The City Ground",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-10T20:10:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.legz.com.au/epl/fixtures/2026-27/round-7"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      }
+    },
+    "homeTeam": "Nottingham Forest",
+    "awayTeam": "Arsenal",
+    "summary": "Premier League runde 7 - Nottingham Forest mot Arsenal, The City Ground. Arsenal paa bortebane i soendagens kveldskamp.\n\nDato/avspark bekreftet mot premier-league.com (all-380-terminlisten, primaer-autoritet) + uavhengig write-time fact-check (legz round 7 i UTC, ren 1-times BST-offset). Storbritannia paa BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
+  },
+  {
+    "sport": "football",
+    "tournament": "Premier League",
+    "title": "Coventry City at Tottenham Hotspur",
+    "time": "2026-10-19T19:00:00Z",
+    "endTime": null,
+    "venue": "Tottenham Hotspur Stadium",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-10T20:10:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+      "https://www.legz.com.au/epl/fixtures/2026-27/round-7"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "premier-league",
+        "url": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+        "basis": "primary",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-10-10T20:10:00Z"
+      }
+    },
+    "homeTeam": "Tottenham Hotspur",
+    "awayTeam": "Coventry City",
+    "summary": "Premier League runde 7 - Tottenham Hotspur mot Coventry City, Tottenham Hotspur Stadium. Mandagskampen avslutter runden.\n\nDato/avspark bekreftet mot premier-league.com (all-380-terminlisten, primaer-autoritet) + uavhengig write-time fact-check (legz round 7 i UTC, ren 1-times BST-offset). Storbritannia paa BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
   }
 ]
