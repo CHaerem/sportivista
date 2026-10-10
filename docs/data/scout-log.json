@@ -142,5 +142,13 @@
     "verdict": "quiet",
     "reason": "RSS (55 items, 22:17 UTC Oct 9): football results/analysis (Brann 0-2 Viking final—no schedule/time/venue changes to upcoming tracked events). Court case update (Haaland/Norwegian legal—no match-schedule change). Gossip/opinion (City verdict reactions, Mourinho/Mbappé, transfer news—no schedule impact). Cycling news (Il Lombardia preview—race scheduled, no change to upcoming events). Injury/withdrawal (Sørloth comeback story, no schedule change). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (5 gaps, 1 anomaly): Viktor Hovland/Karsten Warholm (both July 2027 far-future, non-imminent), Fotball-VM/Formel 1/Vuelta (entity gaps, all non-imminent, generic mentions without concrete event scheduling). Chess.json empty (low severity, known). Pre-existing escalations (Oct 7 Norge U21 EM-kvalifisering Oct 11, Oct 6 Elkjøp-ligaen) remain in research queue. No NEW imminent concrete signal. Escalation cap today (Oct 9 UTC): 0/2.",
     "signals": []
+  },
+  {
+    "runAt": "2026-10-10T16:15:00.000Z",
+    "verdict": "escalate",
+    "reason": "RSS (33 items, 16:07 UTC Oct 10): mostly game results (Formel 1 Singapore sprint/pole, football Premier League live matches Oct 10, cycling Il Lombardia result, handball injury—no schedule/time/venue changes to upcoming tracked events). Coverage gaps (3 gaps, 1 anomaly): HIGH-SEVERITY CONTRACT-BREACH — Premier League (football, wholesale tier1 coverage): pre-agreed coverage contract requires ≥6 events in Oct 10-24 window, but board has 0 upcoming PL events. At least 5 of the ≥6 guaranteed matches are missing. Imminent + high-severity + measurable breach of published coverage promise = escalation signal. Escalation cap today (Oct 10 UTC): 0/2 before this.",
+    "signals": [
+      "Premier League contract-breach (football): HIGH severity, ≥5 of ≥6 expected events Oct 10-24 missing from board, imminent coverage promise broken"
+    ]
   }
 ]
