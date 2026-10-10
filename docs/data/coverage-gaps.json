@@ -1,31 +1,29 @@
 {
-  "generatedAt": "2026-10-10T01:26:15.952Z",
+  "generatedAt": "2026-10-10T09:16:27.588Z",
   "gapCount": 2,
   "anomalyCount": 1,
   "gaps": [
     {
-      "kind": "tracked-claim",
-      "entity": "Viktor Hovland",
-      "group": "athletes",
-      "sport": "golf",
+      "kind": "entity",
+      "entity": "Fotball-VM",
       "type": "missing",
       "imminent": false,
-      "claimedDate": "2027-07-17T00:00:00.000Z",
-      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
-      "trackedId": "viktor-hovland",
-      "detectedAt": "2026-10-10T01:26:15.660Z"
+      "headline": "Fotball-VM: Over halvparten av spillerne hetset i sosiale medier",
+      "link": "https://www.nrk.no/sport/fotball-vm_-over-halvparten-av-spillerne-hetset-i-sosiale-medier-1.18050587",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-10-10T09:16:26.501Z"
     },
     {
-      "kind": "tracked-claim",
-      "entity": "Karsten Warholm",
-      "group": "athletes",
-      "sport": "athletics",
+      "kind": "entity",
+      "entity": "Formel 1",
       "type": "missing",
       "imminent": false,
-      "claimedDate": "2027-07-18T00:00:00.000Z",
-      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
-      "trackedId": "karsten-warholm",
-      "detectedAt": "2026-10-10T01:26:15.660Z"
+      "headline": "Verstappen raskest i Singapore-kvalifisering",
+      "link": "https://www.nrk.no/sport/verstappen-raskest-i-singapore-kvalifisering--1.18051021",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-10-10T09:16:26.501Z"
     }
   ],
   "anomalies": [
@@ -34,7 +32,7 @@
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-10T01:26:15.700Z"
+      "detectedAt": "2026-10-10T09:16:27.411Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
