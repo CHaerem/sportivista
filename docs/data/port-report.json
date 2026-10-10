@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-10T16:07:35.857Z",
+  "generatedAt": "2026-10-10T20:28:05.353Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
     "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
-    "contracts": "yellow"
+    "contracts": "green"
   },
   "basis": {
     "coverageAudit": true,
@@ -27,7 +27,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 3.25,
+    "oldestGapAgeDays": 3.43,
     "escalatable": 1,
     "catalogMatched": 2,
     "auditedAt": "2026-10-10T10:30:00Z",
@@ -35,14 +35,14 @@
       {
         "interest": "Sjakk — 2026 U.S. Chess Championship (Saint Louis, katalog-entiteter Caruana/Wesley So/Aronian)",
         "severity": "medium",
-        "ageDays": 0.23,
+        "ageDays": 0.42,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Rolex Paris Masters 2026 (ATP Masters 1000, Casper Ruud)",
         "severity": "medium",
-        "ageDays": 3.25,
+        "ageDays": 3.43,
         "recurrences": 3,
         "catalogMatched": true
       }
@@ -160,15 +160,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-10T16:07:31.421Z",
+    "buildCheckedAt": "2026-10-10T20:27:58.474Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-10T10:57:00.786Z",
-    "manifestAgeHours": 5.18,
+    "manifestGeneratedAt": "2026-10-10T16:07:37.496Z",
+    "manifestAgeHours": 4.34,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-10-10T11:16:00Z",
-    "verifyAgeHours": 4.86,
+    "verifyAgeHours": 9.2,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
@@ -178,15 +178,7 @@
   "contracts": {
     "total": 6,
     "inSeason": 6,
-    "breached": [
-      {
-        "id": "football:premier-league",
-        "name": "Premier League",
-        "upcoming": 5,
-        "minUpcoming": 6,
-        "horizonDays": 14
-      }
-    ],
-    "generatedAt": "2026-10-10T16:07:35.857Z"
+    "breached": [],
+    "generatedAt": "2026-10-10T20:28:05.352Z"
   }
 }
