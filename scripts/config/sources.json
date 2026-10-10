@@ -1,6 +1,6 @@
 {
 	"$schema": "./sources.schema.json",
-	"reviewedAt": "2026-08-11",
+	"reviewedAt": "2026-10-10",
 	"notes": "WP-240 · Kilderegister med rettslig grunnlag. Registeret svarer på tre spørsmål per kilde: hvem SKAPER faktumet, hva sier vilkårene om automatisert tilgang, og har rettighetshaveren tatt DSM art. 4-forbehold mot tekst- og datautvinning. Det finnes fordi research-laget i dag siterer det som er PRAKTISK framfor det som er AUTORITATIVT — som er både den svakeste datakvaliteten og den svakeste rettslige posisjonen samtidig.\n\nSEEDET slik (29.07.2026, mekanisk): (1) hver kilde en fetcher faktisk henter — scripts/fetch/*.js, scripts/config/sports-config.js, scripts/fetch-rss.js, scripts/fetch-standings.js, scripts/fetch-results.js, scripts/lib/tvkampen-scraper.js, scripts/lib/pgatour-scraper.js; (2) hvert domene med ≥2 forekomster i docs/data/events.json (evidence + verificationSources) eller docs/data/calibration-ledger.jsonl — 110 distinkte domener totalt, 62 med ≥2 bruk, 48 engangs; (3) primærkildene vi BURDE bruke, som `status: \"candidate\"`.\n\nENGANGSKILDENE (48) er BEVISST ikke oppført enkeltvis: de er nesten utelukkende arrangør- og klubbsider sitert én gang for ett event (rbk.no, wyndhamchampionship.com, tourdepologne.pl). De faller inn under rolledoktrinen — en klubbs eller arrangørs egen side er `primary` for sine egne kamper — og registreres når de gjentar seg. WP-242 (proveniens per faktum) vil tvinge dem fram som sourceId-er.\n\nÆRLIGHETSKONTRAKTEN: `unknown` er en konklusjon, ikke et tomt felt. Robots.txt er sjekket mekanisk for hver kilde her og er derfor godt dekket; VILKÅRSTEKST er lest der den finnes, og der vi ikke fant et svar står `unknown` med `basis: \"not-found\"`. Et gjettet \"permitted\" ville gjort registeret verdiløst nettopp der det trengs.\n\nFIRE FUNN VERDT Å MERKE SEG: (a) VILKÅR ER STRENGERE ENN ROBOTS, systematisk — UEFA publiserer et åpent kamp-sitemap i robots.txt og forbyr samtidig både skraping og KI-trening i vilkårenes § 6.2; ESPN/Disney, PGA TOUR, HLTV, ATP og A.S.O. forbyr alle roboter i vilkårstekst uten at robots.txt sier noe. Robots er ikke avtalen. (b) Å GÅ TIL PRIMÆRKILDEN GJØR IKKE TILGANGEN TILLATT: A.S.O. (Tour de France) forbyr robotuttrekk i sine juridiske merknader, akkurat som NFF og Norsk Toppfotball. Spor E blir derfor presisert, ikke omgjort — primærkilden er fortsatt riktig kilde til FAKTUMET og den med svakest databasevern over sitt eget program, men bruken må hvile på journalistisk volum, attribusjon og eventuelt samtykke, ikke på systematisk uttrekk. (c) Cloudflares `Content-Signal` (eliteserien.no, atptour.com) er det klareste MASKINLESBARE forbeholdet vi møter — det siterer art. 4 i sin egen tekst. Ingen kilde i registeret bruker TDM Reservation Protocol. (d) TO KILDER ER FAKTISK ÅPNE: Wikipedia (CC BY-SA 4.0 — attribusjon og del-på-samme-vilkår PÅKREVD) og Lichess' databaseeksporter (CC0). Liquipedia er CC-BY-SA 3.0 med et uttrykkelig tillatt API og harde, publiserte taktkrav — den ryddigste avtalen i hele registeret.\n\nOPERASJONELT (mater WP-244): hltv.org, atptour.com, uefa.com, procyclingstats.com og pgatour.com avviser klienter som ikke ser ut som nettlesere (403/503), og letour.fr var utilgjengelig fra dette miljøet. Flere kilder KREVER dessuten en identifiserende User-Agent med kontaktadresse (Wikimedia, Liquipedia, Chess.com) — dagens «SportSync/2.0» tilfredsstiller ingen av dem.",
 	"sources": [
 		{
@@ -2672,6 +2672,45 @@
 			"notes": "Lagt til av research (WP-241 autoritetskart) da Renewi Tour 2026 ble boardet 22.08.2026 – arrangøren Flanders Classics er autoritativ for egne etappetider. renewitour.com/en/stages ga datoer/ruter; eksakte starttider måtte hentes sekundært (cyclinguptodate/domestique) fordi tidsskjema-siden ikke var tilgjengelig. Vilkår/robots ennå ikke gjennomgått (unknown)."
 		},
 		{
+			"id": "saint-louis-chess-club",
+			"name": "Saint Louis Chess Club",
+			"publisher": "Saint Louis Chess Club (SLCC)",
+			"url": "https://saintlouischessclub.org",
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"chess:us-championship"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-10-10"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt (Yoast-generert) nevner ingen AI-agenter eller TDM-forbehold.",
+				"evidence": [
+					"https://saintlouischessclub.org/robots.txt"
+				],
+				"checkedAt": "2026-10-10"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`User-agent: *` med tom `Disallow:` (ingenting blokkert) + `Crawl-delay: 10`; ingen AI-/TDM-regel.",
+				"checkedAt": "2026-10-10"
+			},
+			"rateLimit": "Crawl-delay: 10 (robots.txt)",
+			"calibrationKey": "saintlouischessclub.org",
+			"notes": "Lagt til av research 2026-10-10 da 2026 U.S. Chess Championship ble boardet. SLCC arrangerer det amerikanske nasjonalmesterskapet (katalog-tier2-sjakkentiteter Caruana/Wesley So/Aronian i feltet) OG er self-stream-arrangøren bak Grand Chess Tour — primærkilde på rundetider (saintlouischessclub.org/event-sidene) og self-streamet gratis på klubbens egen YouTube (@STLChessClub) + Twitch (stlchessclub). Ingen norsk TV-rettighet. Vilkårstekst ikke gjennomgått (unknown); robots lest 10.10 (åpen)."
+		},
+		{
 			"id": "sjakkforbundet",
 			"name": "Norges Sjakkforbund",
 			"publisher": "Norges Sjakkforbund",
@@ -3599,7 +3638,12 @@
 			"role": "media",
 			"status": "in-use",
 			"authorityFor": [],
-			"facts": ["schedule", "channel", "entry-list", "news"],
+			"facts": [
+				"schedule",
+				"channel",
+				"entry-list",
+				"news"
+			],
 			"terms": {
 				"automatedAccess": "forbidden",
 				"url": "https://x.com/en/tos",

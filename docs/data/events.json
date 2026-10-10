@@ -208,114 +208,6 @@
     ]
   },
   {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen 2026/27",
-    "title": "Kolstad – Follo HK",
-    "time": "2026-09-26T14:00:00Z",
-    "endTime": null,
-    "venue": "Kolstad Arena, Trondheim",
-    "norwegian": true,
-    "homeTeam": "Kolstad",
-    "awayTeam": "Follo HK",
-    "homeTeamEntityId": "kolstad-handball",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr/kolstad-follo-fx8a82b1",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-21T05:05:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "catalog.json#tier2.tournaments",
-      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-      "https://www.flashscore.com/team/kolstad/rTWbl2mC/",
-      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr/kolstad-follo-fx8a82b1"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "handballforbundet",
-        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-        "basis": "secondary",
-        "retrievedAt": "2026-09-21T05:05:00Z",
-        "note": "Norges Håndballforbunds egen «handball på TV»-side lister Kolstad–Follo HK kl. 16.00 på TV 2 Play; dato 26. sep (lør.) fra Flashscore + kolstad-handball.no. Uavhengig fresh-context write-time fact-check bekreftet hjemme/borte + dato + Kolstad Arena; eksakt avkast 16.00 er myk-bekreftet (TV 2 Play sendestart 15.50) → basis secondary, verify fester minuttet."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr/kolstad-follo-fx8a82b1",
-        "basis": "official",
-        "retrievedAt": "2026-09-21T05:05:00Z",
-        "note": "TV 2 Play har egen kampside for Kolstad–Follo (Elkjøp-ligaen menn); TV 2 eier norske Elkjøp-liga-rettigheter (alle kamper på TV 2 Play, utvalgte lineært)."
-      }
-    },
-    "summary": "Kolstad tar imot Follo HK i Kolstad Arena i Elkjøp-ligaen — trønderne har ingen norsk landslagsprofil i troppen etter at Sander Sagosen gikk til Aalborg, men er fortsatt et av seriens topplag.\n\nAvkast lørdag 26. september kl. 16.00 (14.00 UTC). Vises på TV 2 Play; sendestart 15.50.",
-    "id": "4f6a6b5cb667",
-    "verifiedAt": "2026-09-21T10:55:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr/kolstad-follo-fx8a82b1",
-      "https://www.flashscore.com/team/kolstad/rTWbl2mC/"
-    ]
-  },
-  {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen 2026/27",
-    "title": "Kristiansand TH – Sandnes",
-    "time": "2026-09-26T14:00:00Z",
-    "endTime": null,
-    "venue": "Aquarama, Kristiansand",
-    "norwegian": true,
-    "homeTeam": "Kristiansand TH",
-    "awayTeam": "Sandnes",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-21T15:15:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "handballforbundet",
-        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-        "basis": "secondary",
-        "retrievedAt": "2026-09-23T10:12:00Z",
-        "note": "Verify bekreftet avkast + dato + hjemme/borte mot TV 2 livesport Elkjøp-ligaen-terminliste (runde 5, 25.–27. sep). handball.no-terminlisten er JS-rendret; TV 2 fester minuttet."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "basis": "official",
-        "retrievedAt": "2026-09-21T15:15:00Z",
-        "note": "TV 2 eier norske Elkjop-liga-rettigheter (alle kamper pa TV 2 Play, utvalgte lineart)."
-      }
-    },
-    "summary": "Kristiansand TH møter Sandnes i Elkjøp-ligaen på hjemmebane i Aquarama.\n\nAvkast lørdag 26. september kl. 16.00 (14.00 UTC). Vises på TV 2 Play.",
-    "awayTeamEntityId": "sandnes-handballklubb",
-    "id": "6c47d1586645",
-    "verifiedAt": "2026-09-23T10:12:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-    ]
-  },
-  {
     "sport": "esports",
     "tournament": "Stake Pulse Beat II",
     "title": "100 Thieves vs Heroic",
@@ -5906,9 +5798,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
-        "urlKind": "landing"
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/vintersport"
       }
     ],
     "source": "ai-research",
@@ -5951,9 +5842,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
-        "urlKind": "landing"
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/vintersport"
       }
     ],
     "source": "ai-research",
@@ -6117,5 +6007,62 @@
     "summary": "Magnus Carlsens bekreftede neste turnering: pilot-utgaven av den FIDE-godkjente Total Chess World Championship Tour, i Budapest 10.–21. november. 24 spillere fra 10 nasjoner, premiepott minst $2,7 mill. og to plasser til Kandidatturneringen 2028.\n\nÅpningsseremoni + blitz-sveitser går 10. nov (klokkeslett ikke publisert). Gruppespillet (fire grupper à seks, dobbel serie i «fast classic» 45+30) spilles 11.–15. nov med daglig start 15:00 CET. Utslagsrundene 17.–20. nov (blitz 15:00, hurtig 16:15, fast classic 18:45 CET).\n\nCarlsen, Caruana, Erigaisi, Wesley So, Keymer og Aronian er bekreftet; Gukesh, Nakamura og Sindarov er meldt av pga. kollisjon med det klassiske VM. Norsk/offisiell kringkasting er ennå ikke kunngjort av arrangøren – verify fyller streaming når worldchess melder plattform.",
     "norwegianPlayers": [],
     "id": "bd5daeb1237d"
+  },
+  {
+    "sport": "chess",
+    "tournament": "2026 U.S. Chess Championship",
+    "title": "2026 U.S. Chess Championship – klassisk",
+    "time": "2026-10-09T17:00:00Z",
+    "endTime": "2026-10-21T20:00:00Z",
+    "venue": "Saint Louis Chess Club, St. Louis, Missouri",
+    "norwegian": false,
+    "participants": [
+      {
+        "name": "Fabiano Caruana"
+      },
+      {
+        "name": "Wesley So"
+      },
+      {
+        "name": "Levon Aronian"
+      },
+      {
+        "name": "Hans Niemann"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "Saint Louis Chess Club (YouTube)",
+        "url": "https://www.youtube.com/@STLChessClub/videos"
+      },
+      {
+        "platform": "Twitch",
+        "url": "https://www.twitch.tv/stlchessclub"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-10T14:45:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.athletes",
+      "https://saintlouischessclub.org/event/2026-us-chess-championships/",
+      "https://new.uschess.org/news/2026-us-championships-preview",
+      "https://www.chess.com/news/view/2026-us-chess-championship-round-1"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "saint-louis-chess-club",
+        "url": "https://saintlouischessclub.org/event/2026-us-chess-championships/",
+        "basis": "primary",
+        "retrievedAt": "2026-10-10T14:45:00Z"
+      },
+      "streaming": {
+        "sourceId": "saint-louis-chess-club",
+        "url": "https://www.youtube.com/@STLChessClub/videos",
+        "basis": "primary",
+        "retrievedAt": "2026-10-10T14:45:00Z"
+      }
+    },
+    "summary": "USAs nasjonalmesterskap i sjakk pågår i Saint Louis — en 12-spillers enkel serieturnering (klassisk sjakk) over 11 runder 9.–21. oktober. Fabiano Caruana forsvarer tittelen; Wesley So og Levon Aronian er med i det amerikanske elitefeltet (også Hans Niemann).\n\nEtter runde 1 ledet So, Jeffery Xiong og Awonder Liang med 1 av 1; Caruana og Aronian delte poenget i sitt innbyrdes oppgjør. Runder spilles daglig kl. 12.00 lokal tid (17.00 norsk tid), med hviledager 13. og 18. oktober; siste runde 21. oktober, omspill 22. oktober ved poenglikhet.\n\nGratis verdensstrøm på Saint Louis Chess Clubs egen YouTube (@STLChessClub) og Twitch med kommentatorstudio. Ingen norsk TV-rettighet — sjakk-eliten sendes fritt online."
   }
 ]

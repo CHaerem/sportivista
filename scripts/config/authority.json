@@ -1,6 +1,6 @@
 {
 	"$schema": "./authority.schema.json",
-	"updatedAt": "2026-08-26",
+	"updatedAt": "2026-10-10",
 	"notes": "WP-241 · Autoritetskartet: hvem SKAPER faktumet, per konkurranse på tavla. To kilder per event, fordi produktets to kjernefelt har to ulike skapere: TIDEN settes av arrangøren/ligaen/forbundet, KANALEN av kringkasteren selv. Id-ene peker inn i scripts/config/sources.json (WP-240) — registeret er sannheten om hvilket domene som ER arrangøren, og det er lookalike-vernet: da dette kartet ble seedet sto lookalike-domenet franceletour.com som evidens på en Tour de France-etappe, mens letour.fr (A.S.O., som faktisk lager ruta og starttidene) forekom NULL ganger i hele events.json. Research slår opp konkurransen her og går til autoriteten FØRST (scripts/agents/research.md); verify sjekker kanalen mot kringkasterens egen kilde (scripts/agents/verify.md); scripts/lib/provenance.js migrerer flat evidence til per-faktum-proveniens (WP-242) med det samme kartet. SEEDET 29.07.2026 med hver konkurranse som faktisk sto på tavla den dagen; kanal-valgene speiler .claude/skills/norwegian-rights (prioren) og tavlas verifiserte verdier. AI-VEDLIKEHOLDT som catalog.json: research utvider kartet når en ny konkurranse dekkes — alltid med arrangørens VIRKELIGE domene, registrert i sources.json først.",
 	"competitions": [
 		{
@@ -237,6 +237,31 @@
 			"channel": {
 				"options": [],
 				"note": "Kringkastingsdetaljer ennå ikke bekreftet av World Chess (per 2026-09-29). FIDE-arrangementer sendes typisk gratis online (chess.com/chess24/YouTube); norsk TV-rettighet ikke kjent. Verify fyller når worldchess kunngjør."
+			}
+		},
+		{
+			"id": "chess:us-championship",
+			"name": "U.S. Chess Championship",
+			"sport": "chess",
+			"match": [
+				"u.s. chess championship",
+				"us chess championship",
+				"us championship"
+			],
+			"time": {
+				"sourceIds": [
+					"saint-louis-chess-club"
+				],
+				"note": "Saint Louis Chess Club arrangerer og publiserer rundeskjemaet (saintlouischessclub.org/event-sidene) — primærkilde på rundetid. 2026: 12-spillers enkel-serieturnering (klassisk), runder daglig 12:00 CDT (= 17:00 UTC) 9.–21. okt, hviledager 13. + 18. okt."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "saint-louis-chess-club",
+						"platform": "Saint Louis Chess Club (YouTube/Twitch)"
+					}
+				],
+				"note": "Self-streamet gratis på SLCCs egen YouTube (@STLChessClub) + Twitch (stlchessclub) med kommentatorstudio; ingen norsk TV-rettighet (basis primary — arrangøren streamer selv)."
 			}
 		},
 		{
