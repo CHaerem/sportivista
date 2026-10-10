@@ -5653,9 +5653,9 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
-        "urlKind": "landing"
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/vintersport",
+        "urlKind": "deep"
       }
     ],
     "source": "ai-research",
@@ -5697,9 +5697,9 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
-        "urlKind": "landing"
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/vintersport",
+        "urlKind": "deep"
       }
     ],
     "source": "ai-research",
@@ -5862,5 +5862,95 @@
     "summary": "Magnus Carlsens bekreftede neste turnering: pilot-utgaven av den FIDE-godkjente Total Chess World Championship Tour, i Budapest 10.–21. november. 24 spillere fra 10 nasjoner, premiepott minst $2,7 mill. og to plasser til Kandidatturneringen 2028.\n\nÅpningsseremoni + blitz-sveitser går 10. nov (klokkeslett ikke publisert). Gruppespillet (fire grupper à seks, dobbel serie i «fast classic» 45+30) spilles 11.–15. nov med daglig start 15:00 CET. Utslagsrundene 17.–20. nov (blitz 15:00, hurtig 16:15, fast classic 18:45 CET).\n\nCarlsen, Caruana, Erigaisi, Wesley So, Keymer og Aronian er bekreftet; Gukesh, Nakamura og Sindarov er meldt av pga. kollisjon med det klassiske VM. Norsk/offisiell kringkasting er ennå ikke kunngjort av arrangøren – verify fyller streaming når worldchess melder plattform.",
     "norwegianPlayers": [],
     "id": "bd5daeb1237d"
+  },
+  {
+    "sport": "football",
+    "tournament": "OBOS-ligaen",
+    "title": "Lyn – Strømsgodset",
+    "time": "2026-10-11T15:00:00Z",
+    "endTime": null,
+    "venue": "Bislett stadion, Oslo",
+    "norwegian": true,
+    "homeTeam": "Lyn",
+    "awayTeam": "Strømsgodset",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/fotball/obos-ligaen",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-10T23:40:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+      "https://www.obos-ligaen.no/terminliste",
+      "https://www.thesportsdb.com/team/140041-lyn?y=2026"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+        "basis": "primary",
+        "retrievedAt": "2026-10-10T23:40:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/fotball/obos-ligaen",
+        "basis": "official",
+        "retrievedAt": "2026-10-10T23:40:00Z"
+      }
+    },
+    "summary": "Lyns hjemmekamp mot Strømsgodset søndag 11. oktober kl. 17.00 CEST på Bislett stadion (OBOS-ligaen, runde 25) — Lyns neste seriekamp etter Bryne-oppgjøret 4. oktober. OBOS-ligaen har ingen statisk fetcher, så Lyn-kampene håndboardes.\n\nDato/tid/arena bekreftet mot fotball.nos terminliste (fiksId 161785, primær-autoritet, lest direkte) + TheSportsDB/FotMob (begge UTC-anker 15.00 = 17.00 CEST), to kilder enige, og uavhengig fresh-context write-time fact-check (fotball.no + TheSportsDB + FotMob) = confirmed.\n\nTV-valg kan flytte avspark 30–60 min, og Lyn har flyttet hjemmekamper til Nadderud/KFUM Arena før ved banetrøbbel — verify følger. Norsk visning TV 2 Play.",
+    "id": "0e1df5f8fc58"
+  },
+  {
+    "sport": "football",
+    "tournament": "OBOS-ligaen",
+    "title": "Haugesund – Lyn",
+    "time": "2026-10-14T17:00:00Z",
+    "endTime": null,
+    "venue": "Haugesund Sparebank Arena",
+    "norwegian": true,
+    "homeTeam": "Haugesund",
+    "awayTeam": "Lyn",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/fotball/obos-ligaen",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-10T23:40:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+      "https://www.obos-ligaen.no/terminliste",
+      "https://www.thesportsdb.com/team/140041-lyn?y=2026"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+        "basis": "primary",
+        "retrievedAt": "2026-10-10T23:40:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/fotball/obos-ligaen",
+        "basis": "official",
+        "retrievedAt": "2026-10-10T23:40:00Z"
+      }
+    },
+    "summary": "Lyns bortekamp mot Haugesund onsdag 14. oktober kl. 19.00 CEST på Haugesund Sparebank Arena (OBOS-ligaen, midtukerunde) — Lyns kamp tre dager etter Strømsgodset-oppgjøret.\n\nDato/tid/arena bekreftet mot fotball.nos terminliste (fiksId 161785, primær-autoritet) + Calciomercato/Starting11/FotMob/TheSportsDB (alle enige: 19.00 CEST = 17.00 UTC), og uavhengig fresh-context write-time fact-check = confirmed.\n\nTV-valg kan flytte avspark 30–60 min; verify følger. Norsk visning TV 2 Play.",
+    "id": "ffceee266340"
   }
 ]

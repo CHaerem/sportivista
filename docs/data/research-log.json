@@ -1,27 +1,27 @@
 {
-  "runAt": "2026-10-10T20:10:00Z",
+  "runAt": "2026-10-10T23:40:00Z",
   "tier": "standard",
-  "eventsAdded": 10,
-  "eventsRemoved": 2,
-  "trackedDelta": "Oppdaterte premier-league-2026-27-entryen med runde-7-note + la til legz round-7 som korroborerende evidence-URL. Prependet ny notes-entry (cap 15, droppet eldste). lastUpdated -> 2026-10-10T20:10Z. Katalogen uendret (ingen nye entiteter denne kjoeringen).",
+  "eventsAdded": 2,
+  "eventsRemoved": 0,
+  "trackedDelta": "Oppdaterte obos-ligaen-2026 (Lyn)-entryen med ny OPPDATERT-note for de to boardede kampene + prependet ny notes-entry (cap 15, droppet eldste 2026-10-04T14:10Z). lastUpdated -> 2026-10-10T23:40Z. Katalogen uendret (ingen nye entiteter denne kjoeringen).",
   "quality": {
     "pass": true,
-    "score": 88,
-    "gradedAt": "2026-10-10T20:15:00Z",
+    "score": 90,
+    "gradedAt": "2026-10-10T23:52:00Z",
     "gradedBy": "independent-grader-subagent",
-    "revised": true,
+    "revised": false,
     "failures": [
-      "SCORED (-5, evidence-domain monoculture): de 10 PL runde-7-eventene siterer kun to evidence-domener (premier-league.com primaer + legz.com.au korroborasjon); legz er en ikke-primaer aggregator. Mildnet av uavhengig write-time fact-check (10/10 confirmed mot flere kilder).",
-      "LOEST paa re-grade (hard-fail #6): begge alpine Soelden-events har naa streaming[]=[TV 2 Play] som matcher prosaen + den siterte Viaplay Group-PM; validate-events 0 errors, ingen summary-streaming-mismatch."
+      "SCORED (-5, evidence-domain thinness): begge nye Lyn-eventene (0e1df5f8fc58, ffceee266340) siterer identisk evidence-sett dominert av fotball.no + obos-ligaen.no (samme autoritetssfaere), med kun TheSportsDB som uavhengig aggregator; reell uavhengig korroborasjon for familien er i praksis én kilde. Anbefalt: legg til en genuint uavhengig andrekilde (f.eks. FotMob kampside) — ikke gjort denne kjoeringen fordi jeg ikke hadde en verifisert eksakt FotMob-kamp-URL og aldri siterer en URL jeg ikke har naadd; write-time fact-checkeren naadde FotMob og bekreftet begge.",
+      "NOTED (ikke feil): fact-checkerens restusikkerhet paa Lyn–Stroemsgodset-arena (Bislett per fotball.no, men Lyn har relokert hjemmekamper til Nadderud/KFUM foer ved banetroebbel) dokumentert i summary + tracked.json; verify bekrefter arena naer kampdag. Tid/dato/motstander solid.",
+      "NOTED (ikke feil): strukturelle self-repair/improve-flagg (ingen wholesale haandball-fetcher; CS2 esports.js 100T-only-filter; golf look-ahead) gjentar seg paa tvers av kjoeringer men baeres korrekt videre til self-repair/improve-loopene hver kjoering, ikke research-agentens egen kontrakt-fiks."
     ]
   },
   "notes": [
-    "PRIMAERLEVERANSE: tettet det ENESTE brutte WP-243-dekningskontrakt-loeftet — Premier League (coverage-gaps 16:07Z: 5 av minst 6 ventede innen 14 d). Rotaarsak: runde 6 spilles naa, runde 7 (17.–19. okt) ligger 7–9 d ut = akkurat utenfor eng.1-fetcherens ~5–6-d-vindu, saa 0 r7-kamper var static-boardet.",
-    "Boardet HELE runde 7 (10 kamper) som ai-research (high) fra AUTORITETEN premier-league.com (all-380-terminlisten, provenance.time.basis=primary, sourceId premier-league). Uavhengig fresh-context write-time fact-check bekreftet 10/10 mot premier-league.com + legz (UTC-listing, ren 1-times BST-offset) + NBC/klubbsider. TV-valgte slots: Everton–Chelsea loer. 12.30 BST (TNT), Newcastle–Villa loer. 17.30, soendag Bournemouth/Brighton/Leeds 14.00 + Forest–Arsenal 16.30, mandag Spurs–Coventry 20.00; de tre resterende loer. paa 15.00-default. BST=UTC+1 t.o.m. 25. okt. Haaland navngitt paa Man City–Ipswich.",
-    "Norsk visning Viaplay (eksklusiv PL-rettighet i Norge 2026/27, provenance.streaming.basis=official) — bekreftet av fact-checkeren. Titler i ESPN-stil «{borte} at {hjemme}» saa de dedup-merger rent naar eng.1-fetchervinduet ruller fram ~12.–14. okt.",
-    "RYDDING: fjernet 2 fullfoerte stale ai-research-events (UCI Road-VM Elite kvinner fellesstart 26/9 + Stake Pulse Beat II 100T–Heroic 26/9) som feilet validate-events (past-event) -> validate 0 errors.",
-    "REVISJON (Step 5, 1 bounded pass): graderen fant en hard-fail i to PRE-EKSISTERENDE alpine-events (Soelden storslalaam kvinner 24/10 + menn 25/10) der summary sa «TV 2 Play» mens streaming[]=[NRK] — en summary↔streaming-selvmotsigelse. Rettet streaming[] til TV 2 Play (matcher den velbelagte prosaen + den siterte Viaplay Group-PM om at TV 2 sender Soelden-aapningen); provenance.streaming -> tv2/official. validate-events naa 0 errors, ingen mismatch.",
-    "TRIAGE (ikke boardet denne kjoeringen): U.S. Chess Championship-medium-hullet (coverage-audit 10:30Z, Caruana/Wesley So/Aronian) er ALT dekket av forrige kjoerings multi-dag-event (9.–21. okt, spenner imminent-vinduet). Paris Masters/Ruud medium carry-forward FORTSATT paa cadence (utenfor ~5-d fyll-vindu, boardes ~26. okt). F1 Singapore sprint-helg + oevrig fotball/haandball/golf/tennis/sykkel bekreftet dekket per coverage-audit. INGEN high recall-gap utover PL-kontrakten.",
-    "Mekaniske coverage-gaps triagert: entity-gap «Formel 1» (NRK Verstappen-kvalifisering) = nettopp-spilt kval, Singapore-loepet staar static — ikke et hull. entity-gap «Europa League» (Guardian Man Utd–Spurs PL-sak) = feiltreff/meningsstoff. Ingen reelle event-hull fra mekanikken utover den trimmede PL-kontrakten."
+    "PRIMAERLEVERANSE (next-fixture-mandat): Lyn (fulgt katalog-tier2-lag, OBOS-ligaen = INGEN statisk fetcher) hadde NULL kommende kamp paa tavla etter Bryne 4. okt (naa forbi) -> ekte next-fixture-hull. Boardet Lyns to neste seriekamper som ai-research (high): HJEMME mot Stroemsgodset soen. 11. okt 17.00 CEST (15.00 UTC, Bislett stadion, id 0e1df5f8fc58) + BORTE mot Haugesund ons. 14. okt 19.00 CEST (17.00 UTC, Haugesund Sparebank Arena, id ffceee266340).",
+    "Begge fra AUTORITETEN fotball.no (fiksId 161785 Lyn-terminliste, lest direkte, provenance.time.basis=primary, sourceId fotball-no) + aggregator-korroborasjon (TheSportsDB/FotMob for Stroemsgodset; Calciomercato/Starting11/FotMob/TheSportsDB for Haugesund — alle UTC-anker som konverterer rent til de oppgitte CEST-tidene, Norge paa CEST t.o.m. 25. okt). Uavhengig fresh-context write-time fact-check: begge CONFIRMED paa dato/tid/hjemme-borte/kanal. Streaming TV 2 Play (OBOS-ligaen [solid] per norwegian-rights, provenance.streaming.basis=official). RESTUSIKKERHET fra fact-checkeren: Lyn har flyttet hjemmekamper til Nadderud/KFUM Arena foer ved banetroebbel; fotball.no oppgir Bislett -> verify bekrefter arena naer kampdag. Lyn–Moss soen. 18. okt (8 d ut) FORTSATT paa cadence.",
+    "TRIAGE (ikke boardet): coverage-audit 10:30Z IKKE eskalert (0 high recall-gaps). To medium-gaps: (a) U.S. Chess Championship (Caruana/So/Aronian) er ALT dekket av board-eventet 2026 U.S. Chess Championship (9.–21. okt multi-dag, spenner imminent-vinduet) -> ikke et reelt hull; (b) Paris Masters/Ruud FORTSATT paa cadence (21+ d ut, boardes ~26. okt). Alle 6 WP-243-dekningskontrakter met (breached []; PL upcoming 14 naa at runde 7 er boardet forrige kjoering). scout 10:56Z quiet.",
+    "Mekaniske coverage-gaps (3 entity-gaps, 0 anomalier) triagert — alle just-played resultat-nyheter, IKKE event-hull: Bodoe/Glimt + Rosenborg (Eliteserien r23 spilt i dag; Glimt har CL MD2 14. okt paa tavla, Rosenborg r24 ~17. okt dekkes av nor.1-static-fetcheren paa cadence) + Formel 1 (Verstappen Singapore-kval = nettopp-spilt; Singapore-loepet soen. 11. okt staar static paa tavla).",
+    "Step 2.6 horisont-scan: ingen ny in-scope katalog-/demand-kandidat (coverage-gaps uten demand[]). UEFA Women's Europa Cup (Brann Kvinner + Rosenborg Kvinner 28.–29. okt) staar som uendret katalog-utvidelseskandidat, bevisst ikke auto-promotert. Ingen registry-reconciliation (loerdag, kun deep-tier/mandag).",
+    "STRUKTURELLE FLAGG STAAR (self-repair/improve, carry-forward): HIGH ingen wholesale haandball-fetcher/authority-contract; HIGH CS2 esports.js 100T-only-filter (esports.json tom denne kjoeringen); MEDIUM golf-fetcher uten look-ahead. validate-events: 0 errors (135 -> 137 events, 2 nye)."
   ]
 }
