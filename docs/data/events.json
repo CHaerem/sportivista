@@ -2341,6 +2341,67 @@
     ]
   },
   {
+    "sport": "chess",
+    "tournament": "2026 U.S. Chess Championship",
+    "title": "2026 U.S. Chess Championship – klassisk",
+    "time": "2026-10-09T17:00:00Z",
+    "endTime": "2026-10-21T20:00:00Z",
+    "venue": "Saint Louis Chess Club, St. Louis, Missouri",
+    "norwegian": false,
+    "participants": [
+      {
+        "name": "Fabiano Caruana"
+      },
+      {
+        "name": "Wesley So"
+      },
+      {
+        "name": "Levon Aronian"
+      },
+      {
+        "name": "Hans Niemann"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "Saint Louis Chess Club (YouTube)",
+        "url": "https://www.youtube.com/@STLChessClub/videos",
+        "urlKind": "deep"
+      },
+      {
+        "platform": "Twitch",
+        "url": "https://www.twitch.tv/stlchessclub",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-10T14:45:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.athletes",
+      "https://saintlouischessclub.org/event/2026-us-chess-championships/",
+      "https://new.uschess.org/news/2026-us-championships-preview",
+      "https://www.chess.com/news/view/2026-us-chess-championship-round-1"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "saint-louis-chess-club",
+        "url": "https://saintlouischessclub.org/event/2026-us-chess-championships/",
+        "basis": "primary",
+        "retrievedAt": "2026-10-10T14:45:00Z"
+      },
+      "streaming": {
+        "sourceId": "saint-louis-chess-club",
+        "url": "https://www.youtube.com/@STLChessClub/videos",
+        "basis": "primary",
+        "retrievedAt": "2026-10-10T14:45:00Z"
+      }
+    },
+    "summary": "USAs nasjonalmesterskap i sjakk pågår i Saint Louis — en 12-spillers enkel serieturnering (klassisk sjakk) over 11 runder 9.–21. oktober. Fabiano Caruana forsvarer tittelen; Wesley So og Levon Aronian er med i det amerikanske elitefeltet (også Hans Niemann).\n\nEtter runde 1 ledet So, Jeffery Xiong og Awonder Liang med 1 av 1; Caruana og Aronian delte poenget i sitt innbyrdes oppgjør. Runder spilles daglig kl. 12.00 lokal tid (17.00 norsk tid), med hviledager 13. og 18. oktober; siste runde 21. oktober, omspill 22. oktober ved poenglikhet.\n\nGratis verdensstrøm på Saint Louis Chess Clubs egen YouTube (@STLChessClub) og Twitch med kommentatorstudio. Ingen norsk TV-rettighet — sjakk-eliten sendes fritt online.",
+    "norwegianPlayers": [],
+    "id": "3dc793f85b5e"
+  },
+  {
     "sport": "cycling",
     "tournament": "Il Lombardia",
     "title": "Il Lombardia 2026",
@@ -2441,67 +2502,6 @@
       "https://www.the-race.com/promoted/what-time-is-f1-2026-singapore-grand-prix-full-weekend-schedule/",
       "https://www.gpfans.com/en/f1-news/1091127/f1-singapore-grand-prix-2026-start-time-schedule-sprint-how-to-watch/"
     ]
-  },
-  {
-    "sport": "football",
-    "tournament": "Premier League",
-    "title": "Leeds United at Arsenal",
-    "time": "2026-10-10T11:30:00.000Z",
-    "endTime": null,
-    "venue": "Emirates Stadium",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/arsenal-leeds-1914768",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Arsenal",
-    "awayTeam": "Leeds United",
-    "isFavorite": true,
-    "round": null,
-    "id": "a35a0c4de70b",
-    "homeTeamEntityId": "arsenal",
-    "awayTeamEntityId": "leeds-united",
-    "summary": "Premier League runde 6 — den første PL-runden etter det utvidede landslagsvinduet. September- og oktoberpausene ble slått sammen til ett 16-dagers vindu (21. sep–6. okt), så det spilles INGEN PL-kamper 3.–5. oktober; ligaen gjenopptas 10.–12. oktober. Leeds United borte mot Arsenal lør. 10. okt 13.30 (12.30 BST).\n\nDato/avspark bekreftet mot premier-league.com (fixture amendments + all-380-terminlisten, primær-autoritet) og en uavhengig write-time fact-check (arsenal.com/newcastleunited.com/premierleague.com match-sider). Storbritannia er på BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
-  },
-  {
-    "sport": "football",
-    "tournament": "La Liga",
-    "title": "Athletic Club at Rayo Vallecano",
-    "time": "2026-10-10T12:00:00.000Z",
-    "endTime": null,
-    "venue": "Estadio de Vallecas",
-    "meta": "La Liga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Rayo Vallecano",
-    "awayTeam": "Athletic Club",
-    "isFavorite": false,
-    "round": null,
-    "id": "79565dff4adc",
-    "homeTeamEntityId": "rayo-vallecano",
-    "awayTeamEntityId": "athletic-club"
   },
   {
     "sport": "football",
@@ -3988,7 +3988,7 @@
   {
     "sport": "tennis",
     "tournament": "Rolex Shanghai Masters",
-    "title": "Casper Ruud – TBD",
+    "title": "Casper Ruud – Learner Tien",
     "time": "2026-10-12T04:00:00.000Z",
     "endTime": null,
     "venue": "Shanghai, China PR",
@@ -4005,7 +4005,7 @@
     "awayTeam": null,
     "isFavorite": false,
     "round": null,
-    "id": "ac2cd07a9d73"
+    "id": "10037e8c6bbd"
   },
   {
     "sport": "esports",
@@ -5798,8 +5798,9 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/vintersport"
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
+        "urlKind": "landing"
       }
     ],
     "source": "ai-research",
@@ -5842,8 +5843,9 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/vintersport"
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
+        "urlKind": "landing"
       }
     ],
     "source": "ai-research",
@@ -6007,62 +6009,5 @@
     "summary": "Magnus Carlsens bekreftede neste turnering: pilot-utgaven av den FIDE-godkjente Total Chess World Championship Tour, i Budapest 10.–21. november. 24 spillere fra 10 nasjoner, premiepott minst $2,7 mill. og to plasser til Kandidatturneringen 2028.\n\nÅpningsseremoni + blitz-sveitser går 10. nov (klokkeslett ikke publisert). Gruppespillet (fire grupper à seks, dobbel serie i «fast classic» 45+30) spilles 11.–15. nov med daglig start 15:00 CET. Utslagsrundene 17.–20. nov (blitz 15:00, hurtig 16:15, fast classic 18:45 CET).\n\nCarlsen, Caruana, Erigaisi, Wesley So, Keymer og Aronian er bekreftet; Gukesh, Nakamura og Sindarov er meldt av pga. kollisjon med det klassiske VM. Norsk/offisiell kringkasting er ennå ikke kunngjort av arrangøren – verify fyller streaming når worldchess melder plattform.",
     "norwegianPlayers": [],
     "id": "bd5daeb1237d"
-  },
-  {
-    "sport": "chess",
-    "tournament": "2026 U.S. Chess Championship",
-    "title": "2026 U.S. Chess Championship – klassisk",
-    "time": "2026-10-09T17:00:00Z",
-    "endTime": "2026-10-21T20:00:00Z",
-    "venue": "Saint Louis Chess Club, St. Louis, Missouri",
-    "norwegian": false,
-    "participants": [
-      {
-        "name": "Fabiano Caruana"
-      },
-      {
-        "name": "Wesley So"
-      },
-      {
-        "name": "Levon Aronian"
-      },
-      {
-        "name": "Hans Niemann"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "Saint Louis Chess Club (YouTube)",
-        "url": "https://www.youtube.com/@STLChessClub/videos"
-      },
-      {
-        "platform": "Twitch",
-        "url": "https://www.twitch.tv/stlchessclub"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-10T14:45:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.athletes",
-      "https://saintlouischessclub.org/event/2026-us-chess-championships/",
-      "https://new.uschess.org/news/2026-us-championships-preview",
-      "https://www.chess.com/news/view/2026-us-chess-championship-round-1"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "saint-louis-chess-club",
-        "url": "https://saintlouischessclub.org/event/2026-us-chess-championships/",
-        "basis": "primary",
-        "retrievedAt": "2026-10-10T14:45:00Z"
-      },
-      "streaming": {
-        "sourceId": "saint-louis-chess-club",
-        "url": "https://www.youtube.com/@STLChessClub/videos",
-        "basis": "primary",
-        "retrievedAt": "2026-10-10T14:45:00Z"
-      }
-    },
-    "summary": "USAs nasjonalmesterskap i sjakk pågår i Saint Louis — en 12-spillers enkel serieturnering (klassisk sjakk) over 11 runder 9.–21. oktober. Fabiano Caruana forsvarer tittelen; Wesley So og Levon Aronian er med i det amerikanske elitefeltet (også Hans Niemann).\n\nEtter runde 1 ledet So, Jeffery Xiong og Awonder Liang med 1 av 1; Caruana og Aronian delte poenget i sitt innbyrdes oppgjør. Runder spilles daglig kl. 12.00 lokal tid (17.00 norsk tid), med hviledager 13. og 18. oktober; siste runde 21. oktober, omspill 22. oktober ved poenglikhet.\n\nGratis verdensstrøm på Saint Louis Chess Clubs egen YouTube (@STLChessClub) og Twitch med kommentatorstudio. Ingen norsk TV-rettighet — sjakk-eliten sendes fritt online."
   }
 ]

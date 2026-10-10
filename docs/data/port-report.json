@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-10T10:56:58.438Z",
+  "generatedAt": "2026-10-10T16:07:35.857Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
     "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
-    "contracts": "green"
+    "contracts": "yellow"
   },
   "basis": {
     "coverageAudit": true,
@@ -27,7 +27,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 3.03,
+    "oldestGapAgeDays": 3.25,
     "escalatable": 1,
     "catalogMatched": 2,
     "auditedAt": "2026-10-10T10:30:00Z",
@@ -35,26 +35,26 @@
       {
         "interest": "Sjakk — 2026 U.S. Chess Championship (Saint Louis, katalog-entiteter Caruana/Wesley So/Aronian)",
         "severity": "medium",
-        "ageDays": 0.02,
+        "ageDays": 0.23,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Rolex Paris Masters 2026 (ATP Masters 1000, Casper Ruud)",
         "severity": "medium",
-        "ageDays": 3.03,
+        "ageDays": 3.25,
         "recurrences": 3,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.1,
-    "nearTermChecked": 10,
+    "nearTermRate": 0.06,
+    "nearTermChecked": 18,
     "nearTermAmended": 1,
-    "verifyRunAt": "2026-10-09T12:08:00Z",
+    "verifyRunAt": "2026-10-10T11:16:00Z",
     "windowRate": 0,
-    "windowChecks": 97,
+    "windowChecks": 100,
     "windowAmendments": 0,
     "windowCorrections": 1,
     "byDay": [
@@ -148,31 +148,45 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-10-10",
+        "checks": 3,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-10T10:56:55.061Z",
+    "buildCheckedAt": "2026-10-10T16:07:31.421Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-10T09:16:27.782Z",
-    "manifestAgeHours": 1.68,
+    "manifestGeneratedAt": "2026-10-10T10:57:00.786Z",
+    "manifestAgeHours": 5.18,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-09T12:08:00Z",
-    "verifyAgeHours": 22.82,
-    "corrections": 2,
+    "checkedAt": "2026-10-10T11:16:00Z",
+    "verifyAgeHours": 4.86,
+    "corrections": 1,
     "unresolved": 0,
     "signals": [
-      "Il Lombardia 10.10: bekreftet lør 10.10, start 10:45 CEST=08:45Z, Bergamo→Como 239 km (domestiquecycling + ilombardia.it). Pogačar står ikke på startstreken …",
-      "Open de España (pågår 08.–11.10): feltet (132 sp.) toppet av Åberg (svensk), Lowry, Hatton, Rose, García — ingen navngitt nordmann (thegolfnewsnet feltliste;…"
+      "WP-95 deltakersjekk for Open de España (golf, i gang — 3. runde lør 10.10): arrangørens egen side (opendeespana.com, nyhet datert 10.10) navngir spanjoler + …"
     ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
-    "breached": [],
-    "generatedAt": "2026-10-10T10:56:58.437Z"
+    "breached": [
+      {
+        "id": "football:premier-league",
+        "name": "Premier League",
+        "upcoming": 5,
+        "minUpcoming": 6,
+        "horizonDays": 14
+      }
+    ],
+    "generatedAt": "2026-10-10T16:07:35.857Z"
   }
 }
