@@ -1,15 +1,16 @@
 {
-  "checkedAt": "2026-10-06T14:41:46Z",
+  "checkedAt": "2026-10-11T14:37:39Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
-    "No horizontal overflow or clipped/truncated text at any of the three widths. Fixture names stay fully spelled out even at 375px (e.g. 'Sunderland – Brighton & Hove Albion', 'SC Paderborn 07 – VfB Stuttgart', '1. FC Union Berlin – SV Elversberg', 'Rayo Vallecano – Athletic Club') — no 'Brazil – Nor…'-style truncation.",
-    "Channels shown are all Norwegian (TV 2 Play, Viaplay, HBO Max (Sport), Twitch) — no FOX/ESPN/Sky spotted. Eliteserien/Serie A rows that show no broadcaster (e.g. Brann–Viking, Rosenborg–Sandefjord, Internazionale–Parma, KFUM Oslo–Vålerenga) appear to be the sanctioned honest-'–'-when-unknown state, consistent across all three widths rather than a rendering gap.",
-    "The two issues from the prior run (2026-10-04) are not reproducible today: the 'HBO Max (Sport)' channel label for Baycurrent Classic and Il Lombardia now renders with no stray '+1' suffix; no Copa del Rey fixtures are on today's board to check the English-subtitle-next-to-Norwegian-status issue (different matches in today's window, so this is inconclusive rather than confirmed-fixed).",
-    "Flags, club/tour crests and sport glyphs render as real icons, no broken-image boxes.",
-    "Must-see accent dots (e.g. Boda/Glimt–Kristiansund, Alavés–Atlético Madrid) are used sparingly, not on every row.",
-    "Header, day headings (I DAG / TORSDAG–MANDAG), 'Dette dekker vi'-style disclosures, and footer (incl. 'Meste opp' esports standings and AI-budsjett line) are intact and aligned at every width.",
-    "The floating Assistent button sits mid-agenda (over the Thursday 8. oktober section) at 900px, DESIGN.md-sanctioned, and does not cover the last agenda row or the footer in any capture — the one hard guarantee holds. Too small to positively confirm its position in the 375/393 full-page captures, but no occlusion of the last row/footer was visible there either."
+    "Header, 'Kveldsbriefen' headline, Uka/Nyheter tabs, 'Direkte nå' live section, day-grouped agenda, 'Dette dekker vi' disclosure, and footer all render intact at 375/393/900px in both light and dark (--dark) color schemes.",
+    "Match rows readable with no harmful truncation (checked both short and long team names, e.g. 'Cologne – Borussia Mönchengladbach', 'Shakhtar Donetsk – AEK Athens', 'Atlético Madrid – Manchester United' wrap onto multiple lines cleanly instead of clipping).",
+    "All visible 'where to watch' channels are Norwegian (TV 2 Play, TV 2 Direkte, Viaplay, VG TV, Twitch, Saint Louis Chess Club (YouTube)); no FOX/ESPN/Sky spotted. Unknown channel shown as an honest faint '–' (AE Prat – CF San Rafael).",
+    "Club crests/flags render correctly for Lazio, Lecce, Cologne, Arsenal, Atlético Madrid, Galatasaray, Inter, RB Leipzig, Man City, Real Betis, Slovan Bratislava, etc. AI-research events (Storhamar HE, Fredrikstad–Follo, Tertnes Elite, CSM București) correctly show the ⓘ provenance icon in place of a crest.",
+    "Checked document.documentElement.scrollWidth vs clientWidth at all three widths: no horizontal overflow (375/393/900 exactly, no excess).",
+    "Verified the floating 'Assistent' button (bottom-trailing) rests over mid-agenda/news rows per DESIGN.md's sanctioned iOS 26 floating-button idiom — confirmed by scrolling to the true bottom of the page at 375px that it does NOT occlude the last agenda row or the footer ('Oppdatert', 'Abonner i kalender', AI-budsjett line all fully visible and clear of the button).",
+    "Dark theme (--dark) spot-checked at 375px: true-black background, amber accent, same content renders correctly with no additional issues.",
+    "Did not check every one of the ~130+ agenda rows individually at full resolution — sampled the live-now list, several day groups (today, Thursday, Saturday), the Champions League block, the news tab, and the footer/coverage disclosure."
   ]
 }
