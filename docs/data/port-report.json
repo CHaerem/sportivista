@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-11T17:18:13.295Z",
+  "generatedAt": "2026-10-11T21:27:31.165Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
     "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
-    "contracts": "green"
+    "contracts": "yellow"
   },
   "basis": {
     "coverageAudit": true,
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 4.3,
+    "oldestGapAgeDays": 4.47,
     "escalatable": 1,
     "catalogMatched": 2,
     "auditedAt": "2026-10-11T10:15:00Z",
@@ -35,14 +35,14 @@
       {
         "interest": "Golf — DP World India Championship 2026 (DP World Tour, Viktor Hovland i feltet)",
         "severity": "high",
-        "ageDays": 0.29,
+        "ageDays": 0.47,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Rolex Paris Masters 2026 (ATP Masters 1000, Casper Ruud)",
         "severity": "medium",
-        "ageDays": 4.3,
+        "ageDays": 4.47,
         "recurrences": 4,
         "catalogMatched": true
       }
@@ -160,15 +160,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-11T17:18:08.478Z",
+    "buildCheckedAt": "2026-10-11T21:27:25.156Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-11T11:11:54.762Z",
-    "manifestAgeHours": 6.11,
+    "manifestGeneratedAt": "2026-10-11T17:18:15.729Z",
+    "manifestAgeHours": 4.15,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-10-11T11:32:37Z",
-    "verifyAgeHours": 5.76,
+    "verifyAgeHours": 9.92,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
@@ -178,7 +178,15 @@
   "contracts": {
     "total": 6,
     "inSeason": 6,
-    "breached": [],
-    "generatedAt": "2026-10-11T17:18:13.294Z"
+    "breached": [
+      {
+        "id": "golf:pga-tour",
+        "name": "PGA Tour (inkl. FedExCup)",
+        "upcoming": 0,
+        "minUpcoming": 1,
+        "horizonDays": 21
+      }
+    ],
+    "generatedAt": "2026-10-11T21:27:31.165Z"
   }
 }
