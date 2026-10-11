@@ -1,36 +1,10 @@
 {
-  "lastUpdated": "2026-10-11T11:11:09.568Z",
+  "lastUpdated": "2026-10-11T17:17:32.294Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
       "name": "Eliteserien",
       "events": [
-        {
-          "id": "football-fredrikstad-–-tromsø-1791721800000",
-          "title": "Fredrikstad – Tromsø",
-          "time": "2026-10-11T12:30:00.000Z",
-          "venue": "Fredrikstad Stadion",
-          "sport": "football",
-          "meta": "Eliteserien",
-          "tournament": "Eliteserien",
-          "streaming": [
-            {
-              "platform": "TV2 Play",
-              "url": "https://play.tv2.no",
-              "type": "tv2"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Fredrikstad",
-          "awayTeam": "Tromsø",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
         {
           "id": "football-aalesund-–-sarpsborg-08-1791730800000",
           "title": "Aalesund – Sarpsborg 08",
@@ -54,7 +28,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -80,7 +54,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -219,58 +193,6 @@
       "name": "Premier League",
       "events": [
         {
-          "id": "football-nottingham-forest-at-crystal-palace-1791723600000",
-          "title": "Nottingham Forest at Crystal Palace",
-          "time": "2026-10-11T13:00:00.000Z",
-          "venue": "Selhurst Park",
-          "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
-          "streaming": [
-            {
-              "platform": "USA Net",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Crystal Palace",
-          "awayTeam": "Nottingham Forest",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
-        {
-          "id": "football-everton-at-hull-city-1791723600000",
-          "title": "Everton at Hull City",
-          "time": "2026-10-11T13:00:00.000Z",
-          "venue": "The MKM Stadium",
-          "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
-          "streaming": [
-            {
-              "platform": "Peacock",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Hull City",
-          "awayTeam": "Everton",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
-        {
           "id": "football-manchester-city-at-liverpool-1791732600000",
           "title": "Manchester City at Liverpool",
           "time": "2026-10-11T15:30:00.000Z",
@@ -293,7 +215,7 @@
           "totalPlayers": null,
           "isFavorite": true,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_SECOND_HALF"
           }
         },
         {
@@ -458,32 +380,6 @@
       "name": "La Liga",
       "events": [
         {
-          "id": "football-celta-vigo-at-elche-1791720000000",
-          "title": "Celta Vigo at Elche",
-          "time": "2026-10-11T12:00:00.000Z",
-          "venue": "Estadio Martínez Valero",
-          "sport": "football",
-          "meta": "La Liga",
-          "tournament": "La Liga",
-          "streaming": [
-            {
-              "platform": "ESPN+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Elche",
-          "awayTeam": "Celta Vigo",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
-        {
           "id": "football-deportivo-at-real-sociedad-1791728100000",
           "title": "Deportivo at Real Sociedad",
           "time": "2026-10-11T14:15:00.000Z",
@@ -506,7 +402,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -532,7 +428,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FIRST_HALF"
           }
         },
         {
@@ -723,84 +619,6 @@
       "name": "Serie A",
       "events": [
         {
-          "id": "football-as-roma-at-como-1791714600000",
-          "title": "AS Roma at Como",
-          "time": "2026-10-11T10:30:00.000Z",
-          "venue": "Giuseppe Sinigaglia",
-          "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
-          "streaming": [
-            {
-              "platform": "CBSSN",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Como",
-          "awayTeam": "AS Roma",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FIRST_HALF"
-          }
-        },
-        {
-          "id": "football-monza-at-lazio-1791723600000",
-          "title": "Monza at Lazio",
-          "time": "2026-10-11T13:00:00.000Z",
-          "venue": "Olimpico",
-          "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
-          "streaming": [
-            {
-              "platform": "Paramount+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Lazio",
-          "awayTeam": "Monza",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
-        {
-          "id": "football-bologna-at-lecce-1791723600000",
-          "title": "Bologna at Lecce",
-          "time": "2026-10-11T13:00:00.000Z",
-          "venue": "Via Del Mare",
-          "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
-          "streaming": [
-            {
-              "platform": "CBSSN",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Lecce",
-          "awayTeam": "Bologna",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
-        {
           "id": "football-ac-milan-at-sassuolo-1791734400000",
           "title": "AC Milan at Sassuolo",
           "time": "2026-10-11T16:00:00.000Z",
@@ -823,7 +641,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_SECOND_HALF"
           }
         },
         {
@@ -1036,7 +854,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1062,7 +880,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_SECOND_HALF"
           }
         },
         {
@@ -1211,34 +1029,12 @@
       "name": "Copa del Rey",
       "events": [
         {
-          "id": "football-sporting-hortaleza-at-atlético-unión-güímar-1791716400000",
-          "title": "Sporting Hortaleza at Atlético Unión Güímar",
-          "time": "2026-10-11T11:00:00.000Z",
-          "venue": "TBD",
-          "sport": "football",
-          "meta": "Copa del Rey • 2nd Leg - Sporting Hortaleza lead 1-0 on aggregate",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "Atlético Unión Güímar",
-          "awayTeam": "Sporting Hortaleza",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "round": "2nd Leg - Sporting Hortaleza lead 1-0 on aggregate",
-          "additional": {
-            "status": "STATUS_SCHEDULED",
-            "round": "2nd Leg - Sporting Hortaleza lead 1-0 on aggregate"
-          }
-        },
-        {
           "id": "football-cf-san-rafael-at-ae-prat-1791727200000",
           "title": "CF San Rafael at AE Prat",
           "time": "2026-10-11T14:00:00.000Z",
           "venue": "Municipal Sagnier",
           "sport": "football",
-          "meta": "Copa del Rey • 2nd Leg - AE Prat lead 5-1 on aggregate",
+          "meta": "Copa del Rey • 2nd Leg - AE Prat win 10-1 on aggregate",
           "tournament": "Copa del Rey",
           "streaming": [],
           "norwegian": false,
@@ -1248,10 +1044,10 @@
           "norwegianPlayers": [],
           "totalPlayers": null,
           "isFavorite": false,
-          "round": "2nd Leg - AE Prat lead 5-1 on aggregate",
+          "round": "2nd Leg - AE Prat win 10-1 on aggregate",
           "additional": {
-            "status": "STATUS_SCHEDULED",
-            "round": "2nd Leg - AE Prat lead 5-1 on aggregate"
+            "status": "STATUS_FULL_TIME",
+            "round": "2nd Leg - AE Prat win 10-1 on aggregate"
           }
         }
       ]

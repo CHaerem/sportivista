@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T11:11:53.091Z",
+  "generatedAt": "2026-10-11T17:18:13.295Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 4.04,
+    "oldestGapAgeDays": 4.3,
     "escalatable": 1,
     "catalogMatched": 2,
     "auditedAt": "2026-10-11T10:15:00Z",
@@ -35,26 +35,26 @@
       {
         "interest": "Golf — DP World India Championship 2026 (DP World Tour, Viktor Hovland i feltet)",
         "severity": "high",
-        "ageDays": 0.04,
+        "ageDays": 0.29,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Rolex Paris Masters 2026 (ATP Masters 1000, Casper Ruud)",
         "severity": "medium",
-        "ageDays": 4.04,
+        "ageDays": 4.3,
         "recurrences": 4,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.06,
-    "nearTermChecked": 18,
-    "nearTermAmended": 1,
-    "verifyRunAt": "2026-10-10T11:16:00Z",
+    "nearTermRate": 0,
+    "nearTermChecked": 8,
+    "nearTermAmended": 0,
+    "verifyRunAt": "2026-10-11T11:32:37Z",
     "windowRate": 0,
-    "windowChecks": 94,
+    "windowChecks": 99,
     "windowAmendments": 0,
     "windowCorrections": 1,
     "byDay": [
@@ -148,30 +148,37 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-10-11",
+        "checks": 5,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-11T11:11:49.791Z",
+    "buildCheckedAt": "2026-10-11T17:18:08.478Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-11T09:33:27.748Z",
-    "manifestAgeHours": 1.64,
+    "manifestGeneratedAt": "2026-10-11T11:11:54.762Z",
+    "manifestAgeHours": 6.11,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-10T11:16:00Z",
-    "verifyAgeHours": 23.93,
+    "checkedAt": "2026-10-11T11:32:37Z",
+    "verifyAgeHours": 5.76,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
-      "WP-95 deltakersjekk for Open de España (golf, i gang — 3. runde lør 10.10): arrangørens egen side (opendeespana.com, nyhet datert 10.10) navngir spanjoler + …"
+      "Chess (US Chess Championship, pågående) hadde ingen norske/fulgte deltakere å sjekke deltakelse på (WP-95); ikke prioritert."
     ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-11T11:11:53.091Z"
+    "generatedAt": "2026-10-11T17:18:13.294Z"
   }
 }

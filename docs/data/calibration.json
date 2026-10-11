@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-11T11:11:54.620Z",
+  "generatedAt": "2026-10-11T17:18:15.611Z",
   "windowDays": 180,
   "records": {
-    "used": 609,
+    "used": 614,
     "skipped": 9
   },
   "sources": {
@@ -80,8 +80,8 @@
       "reliability": 0.53
     },
     "tvkampen.com": {
-      "checks": 5,
-      "agreed": 4,
+      "checks": 7,
+      "agreed": 6,
       "corrections": 1,
       "bySport": {
         "cycling": {
@@ -89,8 +89,8 @@
           "agreed": 0
         },
         "football": {
-          "checks": 3,
-          "agreed": 3
+          "checks": 5,
+          "agreed": 5
         },
         "tennis": {
           "checks": 1,
@@ -99,12 +99,16 @@
       },
       "byField": {
         "streaming": {
-          "checks": 5,
-          "agreed": 4
+          "checks": 6,
+          "agreed": 5
+        },
+        "time": {
+          "checks": 1,
+          "agreed": 1
         }
       },
-      "lastChecked": "2026-09-14T10:52:29.418Z",
-      "reliability": 0.8
+      "lastChecked": "2026-10-11T11:32:37Z",
+      "reliability": 0.86
     },
     "m24.no (ntb)": {
       "checks": 1,
@@ -330,8 +334,8 @@
       "reliability": null
     },
     "en.wikipedia.org": {
-      "checks": 30,
-      "agreed": 30,
+      "checks": 31,
+      "agreed": 31,
       "corrections": 3,
       "bySport": {
         "cycling": {
@@ -363,8 +367,8 @@
           "agreed": 1
         },
         "handball": {
-          "checks": 2,
-          "agreed": 2
+          "checks": 3,
+          "agreed": 3
         }
       },
       "byField": {
@@ -373,15 +377,15 @@
           "agreed": 14
         },
         "time": {
-          "checks": 15,
-          "agreed": 15
+          "checks": 16,
+          "agreed": 16
         },
         "streaming": {
           "checks": 1,
           "agreed": 1
         }
       },
-      "lastChecked": "2026-10-09T12:08:00Z",
+      "lastChecked": "2026-10-11T11:32:37Z",
       "reliability": 1
     },
     "nettavisen.no": {
@@ -2180,8 +2184,8 @@
       "reliability": null
     },
     "sportschau.de": {
-      "checks": 3,
-      "agreed": 3,
+      "checks": 4,
+      "agreed": 4,
       "corrections": 0,
       "bySport": {
         "football": {
@@ -2189,21 +2193,21 @@
           "agreed": 1
         },
         "handball": {
-          "checks": 2,
-          "agreed": 2
+          "checks": 3,
+          "agreed": 3
         }
       },
       "byField": {
         "time": {
-          "checks": 2,
-          "agreed": 2
+          "checks": 3,
+          "agreed": 3
         },
         "existence": {
           "checks": 1,
           "agreed": 1
         }
       },
-      "lastChecked": "2026-10-09T12:08:00Z",
+      "lastChecked": "2026-10-11T11:32:37Z",
       "reliability": null
     },
     "mancity.com": {
@@ -3720,6 +3724,25 @@
         }
       },
       "lastChecked": "2026-10-10T11:16:00Z",
+      "reliability": null
+    },
+    "premierleague.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "football": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-10-11T11:32:37Z",
       "reliability": null
     }
   }
