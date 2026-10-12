@@ -275,7 +275,7 @@ export async function fetchGolfESPN() {
 			for (const dateStr of datesToQuery) {
 				try {
 					const data = await fetchJson(`${tour.url}?dates=${dateStr}`);
-					const v = validateESPNScoreboard(data, tour.name);
+					const v = validateESPNScoreboard(data, tour.name, { requireCompetitors: false });
 					for (const w of v.warnings) console.warn(w);
 					mergeEvents(v.events, allEvents, seen);
 				} catch (err) {
@@ -286,7 +286,7 @@ export async function fetchGolfESPN() {
 			// Also query default endpoint for current/in-progress events
 			try {
 				const data = await fetchJson(tour.url);
-				const v = validateESPNScoreboard(data, tour.name);
+				const v = validateESPNScoreboard(data, tour.name, { requireCompetitors: false });
 				for (const w of v.warnings) console.warn(w);
 				mergeEvents(v.events, allEvents, seen);
 			} catch (err) {

@@ -9,7 +9,25 @@ function warn(warnings, code, message) {
 	warnings.push(`[${code}] ${message}`);
 }
 
-export function validateESPNScoreboard(data, sportName = "unknown") {
+/**
+ * Validate an ESPN scoreboard response, dropping malformed events.
+ *
+ * @param {object} data        the parsed ESPN scoreboard response
+ * @param {string} sportName   label for warnings
+ * @param {object} [opts]
+ * @param {boolean} [opts.requireCompetitors=true]  when false, an event whose
+ *   competition has an empty `competitors` array is KEPT. Most ESPN fetchers
+ *   (football, F1, tennis) legitimately need two competitors to describe a
+ *   fixture, so the default drops the competitor-less event. Golf is the
+ *   exception: a tournament's field is not published until tournament week, so
+ *   a scheduled FUTURE tournament arrives with `competitions:[{competitors:[]}]`
+ *   — dropping it here is why golf.json went empty between tournaments and the
+ *   WP-243 golf coverage-contract kept breaching (the research agent then
+ *   hand-boarded the next event every week). golf.js passes false so those
+ *   future tournaments survive to its own "field pending" handling. The default
+ *   is unchanged, so every other caller behaves byte-identically.
+ */
+export function validateESPNScoreboard(data, sportName = "unknown", { requireCompetitors = true } = {}) {
 	const warnings = [];
 
 	if (!data || typeof data !== "object") {
@@ -36,7 +54,7 @@ export function validateESPNScoreboard(data, sportName = "unknown") {
 			return false;
 		}
 		const comp = event.competitions[0];
-		if (!Array.isArray(comp.competitors) || comp.competitors.length === 0) {
+		if (requireCompetitors && (!Array.isArray(comp.competitors) || comp.competitors.length === 0)) {
 			warn(warnings, "missing_competitors", `${sportName}: event '${event.name || "unknown"}' has no competitors`);
 			return false;
 		}
