@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T10:03:38.980Z",
-  "gapCount": 3,
+  "generatedAt": "2026-10-12T12:43:55.743Z",
+  "gapCount": 5,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -12,7 +12,7 @@
       "link": "https://www.nrk.no/sport/tidligere-rbk-profil-med-raskt-hattrick-i-usa-1.18052191",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-12T10:03:37.771Z"
+      "detectedAt": "2026-10-12T12:43:55.162Z"
     },
     {
       "kind": "entity",
@@ -23,18 +23,40 @@
       "link": "https://www.nrk.no/sport/vm-medaljor-til-uno-x-1.18052227",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-12T10:03:37.771Z"
+      "detectedAt": "2026-10-12T12:43:55.162Z"
     },
     {
       "kind": "entity",
-      "entity": "Formel 1",
+      "entity": "Il Lombardia",
       "type": "missing",
       "imminent": false,
-      "headline": "Formel 1: Verstappen med ny triumf – full kontroll i Singapore Grand Prix",
-      "link": "https://www.nrk.no/sport/formel-1_-verstappen-med-ny-triumf-_-full-kontroll-i-singapore-grand-prix-1.18051880",
-      "feed": "nrk-sport",
+      "headline": "'It's become a situation where it might be hard for me to get anything for next year' – James Knox fears for his career after Il Lombardia",
+      "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/its-become-a-situation-where-it-might-be-hard-for-me-to-get-anything-for-next-year-james-knox-fears-for-his-career-after-il-lombardia/",
+      "feed": "cyclingnews",
+      "matchCount": 3,
+      "detectedAt": "2026-10-12T12:43:55.162Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Chess Olympiad",
+      "type": "missing",
+      "imminent": false,
+      "headline": "The Chess Olympiad that wasn't: Munich 1936",
+      "link": "https://en.chessbase.com/post/chess-olympiad-that-was-not-munich-1936",
+      "feed": "chessbase",
       "matchCount": 1,
-      "detectedAt": "2026-10-12T10:03:37.771Z"
+      "detectedAt": "2026-10-12T12:43:55.162Z"
+    },
+    {
+      "kind": "sport",
+      "entity": "Formel 1",
+      "sport": "f1",
+      "type": "imminent",
+      "imminent": true,
+      "headline": "Verstappen perfect and Antonelli hugely mature - driver ratings",
+      "link": "https://www.bbc.co.uk/sport/formula1/articles/c64g10qd44gjo?at_medium=RSS&amp;at_campaign=rss",
+      "feed": "bbc-f1",
+      "detectedAt": "2026-10-12T12:43:55.162Z"
     }
   ],
   "anomalies": [
@@ -43,7 +65,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-12T10:03:38.843Z"
+      "detectedAt": "2026-10-12T12:43:55.590Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
