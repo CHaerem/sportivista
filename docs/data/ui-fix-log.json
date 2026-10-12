@@ -1,11 +1,13 @@
 {
-	"runAt": "2026-10-11T14:40:00Z",
+	"runAt": "2026-10-12T18:00:00Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"visual-qa-log.json verdict is 'pass' with an empty findings[] (checkedAt 2026-10-11T14:37:39Z) — no high/medium rendering issues to fix.",
-		"No open ui-autofix PR exists.",
-		"Nothing to do: exiting cleanly without a branch or PR per ui-fix.md 'When to act' rule 1."
+		"visual-qa-log.json (checkedAt 2026-10-12T17:30:00Z) verdict 'issues' with ONE medium finding: the Juventus crest (logos/juventus.png) is all-black 'JJ' line art on a transparent background, so it disappears against the true-black dark theme (#000000/#1C1C1E) and the slot reads as an empty box.",
+		"Deliberately NOT fixed by this loop — it is a licensing/ownership policy question, not a code-fixable UI bug. Every treatment that would make a black-on-transparent mark visible (background plate, tint/filter, invert, outline, drop-shadow) is explicitly forbidden by DESIGN.md lines 270-278 (WP-186, eierbeslutning 22.07: a club mark is shown 'uendret' — no omfarging/beskjæring/maskering/tint/bakgrunnsplate because a free CC BY-SA mark is share-alike) and by entity-logo.css's 'rule about NOT styling'.",
+		"visual-qa explicitly flagged this 'for human judgment rather than as something the ui-fix loop should silently patch by adding a background plate, which would need to be weighed against that licensing constraint.' Honoring that: a PR here auto-merges + deploys hands-free, so patching it would ship a DESIGN.md/CC-BY-SA-policy violation to the live site with no human in the loop.",
+		"The team-name text ('Juventus – Lazio') still correctly identifies the match, so nothing load-bearing is lost; the fix (if any) is a policy/asset decision — e.g. re-sourcing a coloured Juventus mark into docs/logos/ under compatible licensing, or an owner decision to relax the no-plate rule — neither of which is in this loop's remit (docs/index.html, docs/css/**, docs/js/** only).",
+		"No branch created, no PR opened. All other surfaces verified intact by visual-qa (header, Kveldsbriefen headline, tabs, Direkte nå, day-grouped agenda, 'Dette dekker vi', footer; no truncation/overflow; Norwegian channels only; Assistent button non-occluding)."
 	]
 }
