@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2026-10-12T00:53:22.763Z",
-  "gapCount": 2,
+  "generatedAt": "2026-10-12T10:03:38.980Z",
+  "gapCount": 3,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "RBK",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Tidligere RBK-profil med raskt hattrick i USA",
+      "link": "https://www.nrk.no/sport/tidligere-rbk-profil-med-raskt-hattrick-i-usa-1.18052191",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-10-12T10:03:37.771Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Uno-X",
+      "type": "missing",
+      "imminent": false,
+      "headline": "VM-medaljør til Uno-X",
+      "link": "https://www.nrk.no/sport/vm-medaljor-til-uno-x-1.18052227",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-10-12T10:03:37.771Z"
+    },
     {
       "kind": "entity",
       "entity": "Formel 1",
@@ -12,17 +34,7 @@
       "link": "https://www.nrk.no/sport/formel-1_-verstappen-med-ny-triumf-_-full-kontroll-i-singapore-grand-prix-1.18051880",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-12T00:53:21.574Z"
-    },
-    {
-      "kind": "contract-breach",
-      "type": "missing",
-      "interest": "PGA Tour (inkl. FedExCup)",
-      "sport": "golf",
-      "severity": "high",
-      "imminent": true,
-      "detail": "Dekningskontrakt brutt: 0 av minst 1 ventede events innen 21 dager for PGA Tour (inkl. FedExCup) (i sesong). Gå til den navngitte autoriteten (pgatour) og fyll tavla.",
-      "detectedAt": "2026-10-12T00:53:22.577Z"
+      "detectedAt": "2026-10-12T10:03:37.771Z"
     }
   ],
   "anomalies": [
@@ -31,7 +43,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-12T00:53:22.577Z"
+      "detectedAt": "2026-10-12T10:03:38.843Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
