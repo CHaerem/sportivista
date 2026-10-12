@@ -180,5 +180,13 @@
     "verdict": "quiet",
     "reason": "RSS (33 items, 17:17 UTC Oct 11): mostly football results/live coverage (Liverpool v Manchester City live 4:30pm BST, plus Oct 10 Premier League matches finalized—no schedule/time/venue changes to upcoming tracked events). Cycling result (Hagenes won Paris-Tours—completed race, no schedule change to upcoming events). F1 Singapore result (Verstappen won Grand Prix—past race result, no schedule change to upcoming race events). Handball (women's NM hopp avlyst/cancelled—past event cancellation, not a future event announcement). Chess historical article (historical piece, not current event). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 1 anomaly): Rosenborg (entity gap, imminent=false—from past match result), Formel 1 (entity gap, imminent=false—from live Singapore race result), Chess Olympiad (entity gap, imminent=false—from historical article), cycling.json anomaly (file-empty, low severity, known). All gap signals are past results or historical content, not new imminent upcoming events. Pre-existing escalations (Oct 7 Norge U21 EM-kvalifisering Oct 11, Oct 6 Elkjøp-ligaen, Oct 10 16:15 Premier League contract-breach) remain in research queue. No NEW concrete signal. Escalation cap today (Oct 11 UTC): 0/2.",
     "signals": []
+  },
+  {
+    "runAt": "2026-10-12T05:00:00.000Z",
+    "verdict": "escalate",
+    "reason": "RSS (55 items, 21:26 UTC Oct 11): mostly past match results (Liverpool 3-0 Manchester City finalized, Eliteserien finalized, F1 Singapore finalized, cycling Paris-Tours finalized, women's hopping NM cancelled—no schedule/time/venue changes to upcoming tracked events). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (4 gaps, 1 anomaly): HIGH-SEVERITY CONTRACT-BREACH — PGA Tour (golf, wholesale tier1 coverage): coverage contract requires ≥1 event in next 21 days, but board shows 0 upcoming PL events. Broken coverage promise + imminent = escalation-worthy signal. Escalation cap today (Oct 12 UTC): 0/2 before this.",
+    "signals": [
+      "PGA Tour contract-breach (golf): HIGH severity, 0 of ≥1 expected events in next 21 days, imminent coverage promise broken"
+    ]
   }
 ]
