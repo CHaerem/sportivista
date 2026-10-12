@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-10-11T09:32:20.159Z",
+  "lastUpdated": "2026-10-12T21:32:13.095Z",
   "source": "ESPN + PGA Tour",
   "tournaments": [
     {
       "name": "PGA Tour",
       "events": [
         {
-          "title": "Baycurrent Classic",
+          "title": "Butterfield Bermuda Championship",
           "meta": "PGA Tour",
           "tournament": "PGA Tour",
-          "time": "2026-10-08T04:00:00.000Z",
-          "endTime": "2026-10-11T20:00:00.000Z",
+          "time": "2026-10-22T04:00:00.000Z",
+          "endTime": "2026-10-25T20:00:00.000Z",
           "venue": "TBD",
           "sport": "golf",
           "streaming": [
@@ -25,39 +25,65 @@
               "type": "streaming"
             }
           ],
-          "norwegian": true,
-          "norwegianPlayers": [
+          "norwegian": false,
+          "norwegianPlayers": [],
+          "featuredGroups": [],
+          "totalPlayers": 0,
+          "fieldPending": true
+        }
+      ]
+    },
+    {
+      "name": "DP World Tour",
+      "events": [
+        {
+          "title": "DP World India Championship",
+          "meta": "DP World Tour",
+          "tournament": "DP World Tour",
+          "time": "2026-10-15T04:00:00.000Z",
+          "endTime": "2026-10-18T20:00:00.000Z",
+          "venue": "TBD",
+          "sport": "golf",
+          "streaming": [
             {
-              "name": "Kristoffer Ventura",
-              "teeTime": "01:20",
-              "teeTimeUTC": "2026-10-10T23:20:00.000Z",
-              "status": null
+              "platform": "Viaplay",
+              "url": "https://viaplay.no",
+              "type": "streaming"
             }
           ],
-          "featuredGroups": [
+          "norwegian": false,
+          "norwegianPlayers": [],
+          "featuredGroups": [],
+          "totalPlayers": 0,
+          "fieldPending": true
+        }
+      ]
+    },
+    {
+      "name": "DP World Tour",
+      "events": [
+        {
+          "title": "Genesis Championship",
+          "meta": "DP World Tour",
+          "tournament": "DP World Tour",
+          "time": "2026-10-22T04:00:00.000Z",
+          "endTime": "2026-10-25T20:00:00.000Z",
+          "venue": "TBD",
+          "sport": "golf",
+          "streaming": [
             {
-              "player": "Kristoffer Ventura",
-              "teeTime": "01:20",
-              "groupmates": [
-                {
-                  "name": "Collin Morikawa",
-                  "teeTime": "01:20"
-                },
-                {
-                  "name": "Nico Echavarria",
-                  "teeTime": "01:20"
-                }
-              ]
+              "platform": "Viaplay",
+              "url": "https://viaplay.no",
+              "type": "streaming"
             }
           ],
-          "totalPlayers": 72
+          "norwegian": false,
+          "norwegianPlayers": [],
+          "featuredGroups": [],
+          "totalPlayers": 0,
+          "fieldPending": true
         }
       ]
     }
-  ],
-  "_retained": {
-    "since": "2026-10-11T11:11:09.569Z",
-    "consecutiveRetains": 6,
-    "lastFreshFetch": "2026-10-11T09:32:20.159Z"
-  }
+  ]
 }
