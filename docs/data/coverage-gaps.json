@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-11T21:27:32.595Z",
-  "gapCount": 4,
+  "generatedAt": "2026-10-12T00:53:22.763Z",
+  "gapCount": 2,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -12,29 +12,7 @@
       "link": "https://www.nrk.no/sport/formel-1_-verstappen-med-ny-triumf-_-full-kontroll-i-singapore-grand-prix-1.18051880",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-11T21:27:31.373Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Chess Olympiad",
-      "type": "missing",
-      "imminent": false,
-      "headline": "The Chess Olympiad that wasn't: Munich 1936",
-      "link": "https://en.chessbase.com/post/chess-olympiad-that-was-not-munich-1936",
-      "feed": "chessbase",
-      "matchCount": 1,
-      "detectedAt": "2026-10-11T21:27:31.373Z"
-    },
-    {
-      "kind": "sport",
-      "entity": "Formel 1",
-      "sport": "f1",
-      "type": "imminent",
-      "imminent": true,
-      "headline": "Verstappen perfect and Antonelli hugely mature - driver ratings",
-      "link": "https://www.bbc.co.uk/sport/formula1/articles/c64g10qd44gjo?at_medium=RSS&amp;at_campaign=rss",
-      "feed": "bbc-f1",
-      "detectedAt": "2026-10-11T21:27:31.373Z"
+      "detectedAt": "2026-10-12T00:53:21.574Z"
     },
     {
       "kind": "contract-breach",
@@ -44,7 +22,7 @@
       "severity": "high",
       "imminent": true,
       "detail": "Dekningskontrakt brutt: 0 av minst 1 ventede events innen 21 dager for PGA Tour (inkl. FedExCup) (i sesong). Gå til den navngitte autoriteten (pgatour) og fyll tavla.",
-      "detectedAt": "2026-10-11T21:27:32.212Z"
+      "detectedAt": "2026-10-12T00:53:22.577Z"
     }
   ],
   "anomalies": [
@@ -53,7 +31,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-11T21:27:32.213Z"
+      "detectedAt": "2026-10-12T00:53:22.577Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
