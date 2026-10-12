@@ -1,16 +1,24 @@
 {
-  "checkedAt": "2026-10-11T14:37:39Z",
+  "checkedAt": "2026-10-12T17:30:00Z",
   "widths": [375, 393, 900],
-  "verdict": "pass",
-  "findings": [],
+  "verdict": "issues",
+  "findings": [
+    {
+      "width": 375,
+      "area": "agenda row crest — 'Juventus – Lazio' (20:45, Serie A)",
+      "issue": "The Juventus crest renders as an effectively invisible/blank box: logos/juventus.png is the current all-black 'JJ' mark on a transparent background, and WP-186 (entity-logo.css) deliberately shows marks unmodified — no background plate, no filter/tint — for CC BY-SA licensing reasons. Against the true-black dark theme (#000000/#1C1C1E), the black-on-transparent mark has effectively zero contrast and disappears, unlike every other crest sampled (Torino, AC Milan, Real Madrid, Schalke 04, Newcastle, etc.) which all carry enough colour/outline to stay visible. The team name text still correctly identifies the match, so nothing load-bearing is lost, but the crest slot reads as an empty box exactly like the checklist's 'broken image icon' case.",
+      "severity": "medium"
+    }
+  ],
   "notes": [
-    "Header, 'Kveldsbriefen' headline, Uka/Nyheter tabs, 'Direkte nå' live section, day-grouped agenda, 'Dette dekker vi' disclosure, and footer all render intact at 375/393/900px in both light and dark (--dark) color schemes.",
-    "Match rows readable with no harmful truncation (checked both short and long team names, e.g. 'Cologne – Borussia Mönchengladbach', 'Shakhtar Donetsk – AEK Athens', 'Atlético Madrid – Manchester United' wrap onto multiple lines cleanly instead of clipping).",
-    "All visible 'where to watch' channels are Norwegian (TV 2 Play, TV 2 Direkte, Viaplay, VG TV, Twitch, Saint Louis Chess Club (YouTube)); no FOX/ESPN/Sky spotted. Unknown channel shown as an honest faint '–' (AE Prat – CF San Rafael).",
-    "Club crests/flags render correctly for Lazio, Lecce, Cologne, Arsenal, Atlético Madrid, Galatasaray, Inter, RB Leipzig, Man City, Real Betis, Slovan Bratislava, etc. AI-research events (Storhamar HE, Fredrikstad–Follo, Tertnes Elite, CSM București) correctly show the ⓘ provenance icon in place of a crest.",
-    "Checked document.documentElement.scrollWidth vs clientWidth at all three widths: no horizontal overflow (375/393/900 exactly, no excess).",
-    "Verified the floating 'Assistent' button (bottom-trailing) rests over mid-agenda/news rows per DESIGN.md's sanctioned iOS 26 floating-button idiom — confirmed by scrolling to the true bottom of the page at 375px that it does NOT occlude the last agenda row or the footer ('Oppdatert', 'Abonner i kalender', AI-budsjett line all fully visible and clear of the button).",
-    "Dark theme (--dark) spot-checked at 375px: true-black background, amber accent, same content renders correctly with no additional issues.",
-    "Did not check every one of the ~130+ agenda rows individually at full resolution — sampled the live-now list, several day groups (today, Thursday, Saturday), the Champions League block, the news tab, and the footer/coverage disclosure."
+    "Reproduced the Juventus crest issue at all three widths (375/393/900) and confirmed via DOM inspection it is not a missing/404 file — logos/juventus.png loads fine (96x96 PNG), it is just solid black art on a transparent background rendered over a solid black page background.",
+    "This is a structural consequence of WP-186's deliberate 'unmodified mark, no background plate' policy (licensing: a free mark under CC BY-SA may not be turned into a derivative by adding a backing plate/tint), not an accidental coding bug — flagging for human judgment rather than as something the ui-fix loop should silently patch by adding a background plate, which would need to be weighed against that licensing constraint. Likely affects other clubs whose current crest is similarly all-black/near-black line art on transparent background; only Juventus was observed in this run's fixture list.",
+    "Header, 'Kveldsbriefen' headline, Uka/Nyheter tabs, 'Direkte nå' live section, day-grouped agenda, 'Dette dekker vi' disclosure, and footer all render intact at 375/393/900px.",
+    "Match rows readable with no harmful truncation — sampled many long names (e.g. '1. FC Union Berlin – Borussia Dortmund', 'Manchester City – Paris Saint-Germain', 'Borussia Mönchengladbach – TSG Hoffenheim', 'Bodø/Glimt – Borussia Dortmund'); all wrap onto multiple lines cleanly instead of clipping with an ellipsis.",
+    "All visible 'where to watch' channels are Norwegian (TV 2 Play, Viaplay, VG TV, Saint Louis Chess Club (YouTube), Kick (Stake Pulse)); no FOX/ESPN/Sky spotted. Unknown channel shown consistently as an honest faint '–' (e.g. Bundesliga/Serie A fixtures without a confirmed Norwegian broadcaster) rather than a blank or wrong value.",
+    "Other club crests/flags sampled all render correctly and distinctly: Torino, Coventry City, Levante, Arsenal, Atlético Madrid, Galatasaray, Internazionale, RB Leipzig, Villarreal, Real Madrid, Real Betis, Bayern Munich, Tromsø, Málaga, Newcastle United, Everton, Espanyol, Schalke 04, SV Elversberg, Werder Bremen, Kristiansund. Non-ESPN sports without a crest (Elkjøp-ligaen handball, OBOS-ligaen fixtures) correctly fall back to a calendar/generic icon rather than a broken image.",
+    "Confirmed the floating 'Assistent' button (bottom-trailing, DESIGN.md-sanctioned) rests over a mid-agenda row near the top of the page in the full-page capture and does NOT occlude the final agenda row or the footer at any of the three widths — scrolled to the true bottom at 375/393/900 and verified 'Oppdatert', 'Abonner i kalender', 'AI-budsjett' line all fully visible and clear of the button.",
+    "No horizontal scroll/overflow observed at any width, including the 375px shot. Must-see accent dot used sparingly (a handful of rows, not every row).",
+    "Sampled roughly 100+ of the agenda rows across the full scroll depth at all three widths rather than every single row; did not check dark/light theme toggle behaviour this run (checked dark only, the shipped default)."
   ]
 }
