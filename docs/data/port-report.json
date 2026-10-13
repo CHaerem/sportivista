@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T12:27:36.498Z",
+  "generatedAt": "2026-10-13T19:45:00.724Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -27,7 +27,7 @@
       "medium": 2,
       "low": 0
     },
-    "oldestGapAgeDays": 6.1,
+    "oldestGapAgeDays": 6.4,
     "escalatable": 1,
     "catalogMatched": 2,
     "auditedAt": "2026-10-13T10:20:00Z",
@@ -35,14 +35,14 @@
       {
         "interest": "CS2 — Thunderpick World Championship 2026 (Malta, 14.–18. okt, $1M) med katalog-orgene FURIA, Team Falcons, Virtus.pro",
         "severity": "medium",
-        "ageDays": 0.09,
+        "ageDays": 0.39,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Casper Ruuds høst-innendørssving (Basel ATP 500 24. okt–1. nov BEKREFTET + Rolex Paris Masters 31. okt–8. nov)",
         "severity": "medium",
-        "ageDays": 6.1,
+        "ageDays": 6.4,
         "recurrences": 6,
         "catalogMatched": true
       }
@@ -50,11 +50,11 @@
   },
   "amendRate": {
     "nearTermRate": 0,
-    "nearTermChecked": 11,
+    "nearTermChecked": 7,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-10-12T13:24:06Z",
+    "verifyRunAt": "2026-10-13T12:49:04Z",
     "windowRate": 0,
-    "windowChecks": 85,
+    "windowChecks": 87,
     "windowAmendments": 0,
     "windowCorrections": 1,
     "byDay": [
@@ -148,31 +148,35 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-10-13",
+        "checks": 2,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-13T12:27:30.780Z",
+    "buildCheckedAt": "2026-10-13T19:44:55.075Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-13T09:56:08.727Z",
-    "manifestAgeHours": 2.52,
+    "manifestGeneratedAt": "2026-10-13T12:27:39.484Z",
+    "manifestAgeHours": 7.29,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-12T13:24:06Z",
-    "verifyAgeHours": 23.06,
-    "corrections": 2,
+    "checkedAt": "2026-10-13T12:49:04Z",
+    "verifyAgeHours": 6.93,
+    "corrections": 0,
     "unresolved": 0,
-    "signals": [
-      "2026 U.S. Chess Championship (pågående, confirmed): saintlouischessclub.org bekrefter runder 12.00 lokal = 17.00 UTC, hviledager 13.+18.10, finale 21.10 (oms…",
-      "DP World India Championship 15.–18.10 (golf, UNVERIFIED → confirmed): European Tour (DP World Tour, arrangør) bekrefter dato + Delhi Golf Club + Viktor Hovla…"
-    ]
+    "signals": []
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-13T12:27:36.497Z"
+    "generatedAt": "2026-10-13T19:45:00.724Z"
   }
 }
