@@ -1,25 +1,15 @@
 {
-	"runAt": "2026-10-13T02:15:00Z",
-	"eventsAdded": 6,
+	"runAt": "2026-10-13T11:55:00Z",
+	"eventsAdded": 1,
 	"eventsRemoved": 0,
-	"trackedDelta": "+1 tour-of-guangxi-2026 (cycling WorldTour), -1 esl-pro-league-s24-2026 (concluded 11 Oct), corrected cycling-road-offseason placeholder reasoning",
-	"quality": {
-		"pass": true,
-		"score": 94,
-		"failures": [
-			"Evidence-domain monoculture across the Guangxi stage family (opprinnelig 2 domener: cyclinguptodate + procyclinguk) — lagt til cyclingnews.com som uavhengig tredje domene i revisjonspasset; verify bør supplere med UCI/arrangøren.",
-			"streaming provenance.basis var satt 'official' mens norsk kanal (HBO Max/Eurosport via WBD) er en prior, ikke Norge-bekreftet — RETTET til 'secondary' i revisjonspasset; verify firmer eksakt kanal + broadcast-starttid per etappe."
-		],
-		"note": "Uavhengig grader-subagent (fresh context, leste rubrikken + de 6 Guangxi-eventene + tracked-entryene + research-log): pass true, score 94, ingen hard-failures (alle 7 hard-sjekker bestått: medium m/≥2 evidens; ren ISO-Z-tid; streaming matcher norwegian-rights WBD-WorldTour-prior; tracked m/reason+addedBy+evidence+catalog-pointer; ingen duplikat; summary==streaming; Johannessen navngitt uten out-status). To actionable notes adressert i ÉN bounded revisjon: (1) la til cyclingnews som uavhengig evidens-domene, (2) senket provenance.streaming.basis 'official'→'secondary' for ærlighet. Ikke re-gradert (fail-open, allerede pass)."
-	},
+	"trackedDelta": "+1 tournaments-entry (thunderpick-world-championship-2026, CS2/esports). Ingen drops (ingen utløpt tracked-entry), ingen katalog-endring.",
+	"quality": { "pass": true, "score": 90, "failures": ["Recurring unresolved structural flag (−10): esports.js 100T-only-filter lar ~26 katalog-tier2-orger være research-avhengige, carry-forward HIGH self-repair/improve-flagg over ≥3 kjøringer (10.–13. okt), fortsatt ufikset og den direkte årsaken til dette Thunderpick-hullet — loopen håndboarder rundt en kjent svikt. Research triagerte og kompenserte korrekt, men rotårsaken spinner."] },
 	"notes": [
-		"PRIMÆRLEVERANSE: tettet coverage-critics ENESTE HIGH-hull (audit 11:42Z 12.10) — Gree Tour of Guangxi, sesongens SISTE UCI WorldTour-etappeløp (13.–18. okt, Kina), startet i dag (etappe 1 ti. 13. okt) og tavla var HELT tom for sykkel (Il Lombardia 10. okt var siste). Sykkel er tier1 (wholesale) + tracked-laget Uno-X Mobility (Tobias Johannessen) på startlista → klart i scope. Alle SEKS etappene boardet som ai-research (medium).",
-		"Dato/rute/distanse/startliste tre-kilde-bekreftet (procyclinguk rute-guide + cyclinguptodate preview + cyclinguptodate startliste). Starttidene er lokal kinesisk tid (UTC+8) omregnet til UTC fra forhåndsomtaler, IKKE arrangørens offisielle tidsskjema → provenance.time.basis=secondary, confidence medium. Finish ~06.00–07.00 UTC (tidlig morgen CEST).",
-		"Step 3.5 write-time fact-check (fresh context, uavhengig): CONFIRMED rute/towns/distanser (1043 km totalt), UTC-starttider (til kvarteret), Uno-X/Johannessen-påmelding (cyclinguptodate startliste stamp 08.10). Eneste korreksjon: mine ukedags-ord var én dag for tidlig (løpet er ti. 13.–søn. 18. okt) — ISO-datoene på tavla er korrekte, kun prosaens ukedager justert. Broadcaster PLAUSIBEL men ikke Norge-bekreftet → medium + [verify].",
-		"NORSK VISNING = HBO Max (Sport) / Eurosport Norge (WBD holder WorldTour-sykkelen i Norge; TV 2-unntakene Tour de France + Arctic Race gjelder ikke Guangxi). Flagget verify: firm eksakt kanal/deep-lenke + broadcast-starttid per etappe.",
-		"Korrigerte cycling-road-offseason-2026-27-plassholderen: dens forrige reason avfeide FEILAKTIG Guangxi som «lavprioritert løp utenfor katalogen» — et WorldTour-etappeløp er wholesale-tier1-dekning. Den ekte landeveis-vinterpausen begynner etter 18. okt.",
-		"Droppet esl-pro-league-s24-2026 (gruppespill 3.–7. + sluttspill 9.–11. okt FERDIGSPILT, expired 12.10) — ryddet coverage-gaps tracked-claim.",
-		"ROTÅRSAK-FLAGG (self-repair, gjentatt): cycling.json er TOM — ESPN-fetcheren dekker ikke WorldTour-sesonghalen (Asia/høst-svingen), så research må håndboarde etappeløp som Guangxi. Coverage-first-gaten undertrykte file-empty-anomalien fordi tavla uansett manglet sykkel, som maskerte at et reelt løp pågikk. En fetcher eller en cycling-contract-blokk (WP-243) ville fanget dette mekanisk.",
-		"IKKE boardet (bevisst): Paris Masters (31.10–8.11, Ruud) ~19 d ut, på cadence (utenfor ~5-d fyll-vindu); boardes ~26.10. Shanghai Masters dekker Ruuds tennis t.o.m. 18.10. Golf Reitan/Ventura tracked-claims gjelder 2027-datoer (placeholder, ikke reelle hull). Alle øvrige WP-243-kontrakter met (f1/eliteserien/PL/golf/tennis)."
+		"PRIMÆRLEVERANSE: boardet Thunderpick World Championship 2026 (CS2, 14.–18. okt, BLAST Arena Studios Attard, Malta, $1 mill., 8 lag) som fler-dagers ai-research-vindunode (MEDIUM) — coverage-critics ENESTE actionable hull (audit 10:20Z, medium katalog-bredde). Katalog-orgene FURIA (forsvarende mester) + Team Falcons navngitt → resolver entity-gated esports-dekning (isCovered=true).",
+		"KRITISK fact-check-funn: Virtus.pro (i coverage-auditens antatte felt) TRAKK SEG 9. okt (visa-problem AquaRS + helse F0R3VER) og er erstattet av Ninjas in Pyjamas. Virtus.pro derfor IKKE navngitt på eventet — unngikk et feil felt. Uavhengig fresh-context write-time fact-check CONFIRMED dato/venue/premiepott/felt + VP→NIP-byttet + Twitch-kanal (twitch.tv/thunderpicktv).",
+		"MEDIUM (ikke high): ingen eier/tracked-presisjons-entitet (100 Thieves/rain IKKE i Thunderpick-feltet — dekket av Stake Pulse Beat III-noden 12.–17. okt), gratis stream, Liquipedia 429 ved henting (basis=secondary). Tiden=vindusstart (08.30 UTC = 10.30 CEST første kamp 14. okt); per-kamp bracket/tider festes av esports.js/verify.",
+		"ROTÅRSAK (self-repair/improve, HIGH, carry-forward): esports.js 100T-only-filter + esports.json tom → ~26 katalog-tier2-orger research-avhengige; behold ALLE katalog-orgers kamper ELLER authority.json contract-blokk for CS2 tier-1-turneringer.",
+		"ØVRIG SIGNALBILDE: coverage-audit 10:20Z IKKE eskalert (0 high recall-gaps). Andre medium-gap = Ruuds høst-innendørssving (Basel 24. okt / Paris Masters 31. okt) FORTSATT på cadence (11–18 d ut, utenfor fyll-vindu); hard oppfølging: Basel ~20.–21. okt, Paris ~26. okt, ekte high-miss hvis uboardet etter da. coverage-gaps 09:56Z (8 gaps/0 anomalier) alle triagert som støy/bokføring (entity-gaps Ingebrigtsen/Mesterligaen/Fotball-VM/The Open/Formel 1/Bislett = meningsstoff/nettopp-spilt/falske treff; tracked-claim Reitan/Ventura = foreldede golf-major-reasons ~9 md ut). scout 12.10 quiet.",
+		"Step 1 reconcile: ingen utløpt tracked-entry (alle expires i framtiden). Step 2.6 horisont-scan: ingen ny in-scope katalog/demand-kandidat (coverage-gaps uten demand[]). Ingen registry-reconciliation (tirsdag, kun deep-tier/mandag). validate-events: 0 errors (140 events). Sölden-alpint streaming-mismatch (NRK↔TV 2) = kjent tilbakevendende norwegian-rights.js-churn (warning, ikke error), bevisst ikke re-rettet."
 	]
 }
