@@ -1,22 +1,25 @@
 {
-  "runAt": "2026-10-12T06:00:00Z",
-  "tier": "standard",
-  "eventsAdded": 1,
-  "eventsRemoved": 0,
-  "eventsFixed": 0,
-  "trackedDelta": "Oppdaterte pga-tour-fedexcup-fall-2026 (navn→Butterfield Bermuda Championship, reason/evidence utvidet, priority medium→high); prepended run-note (notes 15, trimmet eldste); lastUpdated→2026-10-12T06:00:00Z. Ingen entry lagt til/droppet.",
-  "quality": {
-    "pass": true,
-    "score": 90,
-    "failures": [],
-    "note": "Uavhengig grader-subagent (fresh context, leste rubrikken + faktiske filer): pass true, score 90, ingen hard-failures. Alle 7 hard-sjekker bestått (high m/3 evidens-URLer; ren ISO-Z-tid utenfor 7-d tidssone-vindu; streaming matcher norwegian-rights WBD-prior; tracked-entry m/reason+addedBy+evidence; ingen duplikat; summary-prosa == streaming[]; ingen navngitt nordmann → ingen deltakelses-motsigelse). −10: den gjentatte uløste strukturelle anbefalingen (golf-fetcher uten look-ahead = samme rotårsak som DP World/Baycurrent/Bermuda hver uke) — korrekt eskalert (utenfor research' remit å fikse en fetcher), derfor kun modest fradrag. Step 3.5 write-time fact-check (fresh context) CONFIRMED dato/venue/premiepott + re-bekreftet WBD→Max-rettigheten + at Viaplays 2026-golfdeal er LIV, ikke PGA Tour."
-  },
-  "notes": [
-    "PRIMÆRLEVERANSE: tettet det ENESTE brutte WP-243-dekningskontrakt-løftet. coverage-contracts 00:53Z meldte golf:pga-tour BREACHED (upcoming 0 / min 1 innen 21 d, i sesong) etter at Baycurrent Classic (8.–11. okt) ble ferdigspilt — golf.json (ingen look-ahead) stod tom framover. Boardet FedExCup Falls neste turnering Butterfield Bermuda Championship (22.–25. okt, Port Royal Golf Course, Southampton, Bermuda, $6 mill., 500 FedExCup-poeng, tittelforsvarer Adam Schenk) som fler-dagers ai-research-node (high).",
-    "Dato/venue/premiepott DIREKTE fra PGA Tours egen turneringsside (pgatour.com R2026528, primær/tid-autoritet → provenance.time.basis=primary) + to korroborerende kilder (golfmonthly schedule + ESPN FedExCup Fall-slate). Uavhengig fresh-context write-time fact-check = CONFIRMED på alle fakta (pgatour.com + gotobermuda.com + ESPN; én stale bbc.bm-2025-dato forkastet). INGEN norsk startliste bekreftet — feltet er ikke publisert (en oppdiktet deltakelse er verre enn ingen) → ingen nordmann navngitt; verify navngir evt. Ventura/Reitan når startlisten slippes.",
-    "STREAMING: HBO Max (Sport)/Eurosport Norge — WBD har ordinær PGA Tour i Norge for 2026 (norwegian-rights [solid]; fact-checken re-bekreftet WBD→Max-skiftet + at Viaplays 2026-Nordic-golfdeal gjelder LIV Golf, IKKE PGA Tour). basis=official. VALIDATE-WARNING (ikke error): Bermuda-eventet utløser WP-242 weak-channel-basis fordi HBO Max' kalibrerings-reliabilitet er 0.5 (kjent WBD-quirk) — men TID-basis er sterk (pgatour primary 1.0) + 3 evidens-URLer, så high er forsvarlig; verify fester en dyp broadcast-URL. Utslagstider upublisert (Bermuda UTC−4) → verify fester dag-1-tiden.",
-    "ØVRIG SIGNALBILDE TRIAGERT: coverage-gaps 00:53Z — høyeste signal var nettopp denne PGA-contract-breach (nå tettet); entity-gap Formel 1 (NRK Verstappen Singapore-triumf = nettopp-spilt løp, ikke-imminent; Singapore-løpet static på tavla + USA GP Austin 25. okt boardet); cycling file-empty anomali (low, WorldTour-sesongslutt etter Il Lombardia — korrekt tomt). coverage-audit 11.10: ingen NYE høy-hull (DP World India/Hovland alt boardet 11.10). Medium carry-forward Paris Masters/Ruud FORTSATT på cadence (20 d ut, boardes ~26. okt; ATP/WTA-kontrakt met via Shanghai) — hard oppfølging: hvis uboardet ETTER 26. okt = ekte high-miss. scout 10.10 quiet.",
-    "Step 2.6 horisont-scan: ingen ny in-scope katalog/demand-kandidat (coverage-gaps uten demand[]). Ingen registry-reconciliation (den er mandags-DEEP-sveipen; dette var standard-tier). Tennis/Ruud Brussels (ATP 250, 17.–25. okt) + Basel (ATP 500, 26. okt–1. nov) trekninger fortsatt upublisert (~15.–16. okt) → cadence uendret.",
-    "STRUKTURELLE FLAGG STÅR (self-repair/improve, carry-forward — grader −10 for gjentakelse): HIGH golf-fetcher uten look-ahead er ROTÅRSAKEN til dette og de to forrige ukers golf-kontraktbrudd (golf-kontraktene måler 'met' på inneværende turnering men fanger ikke at NESTE mangler — coverage-audit sourceIssue oppgradert til high). HIGH ingen wholesale håndball-fetcher/authority-contract; HIGH CS2 esports.js 100T-only-filter; Sölden-alpint norwegian-rights.js streaming-churn. validate-events: 0 errors (135 events)."
-  ]
+	"runAt": "2026-10-13T02:15:00Z",
+	"eventsAdded": 6,
+	"eventsRemoved": 0,
+	"trackedDelta": "+1 tour-of-guangxi-2026 (cycling WorldTour), -1 esl-pro-league-s24-2026 (concluded 11 Oct), corrected cycling-road-offseason placeholder reasoning",
+	"quality": {
+		"pass": true,
+		"score": 94,
+		"failures": [
+			"Evidence-domain monoculture across the Guangxi stage family (opprinnelig 2 domener: cyclinguptodate + procyclinguk) — lagt til cyclingnews.com som uavhengig tredje domene i revisjonspasset; verify bør supplere med UCI/arrangøren.",
+			"streaming provenance.basis var satt 'official' mens norsk kanal (HBO Max/Eurosport via WBD) er en prior, ikke Norge-bekreftet — RETTET til 'secondary' i revisjonspasset; verify firmer eksakt kanal + broadcast-starttid per etappe."
+		],
+		"note": "Uavhengig grader-subagent (fresh context, leste rubrikken + de 6 Guangxi-eventene + tracked-entryene + research-log): pass true, score 94, ingen hard-failures (alle 7 hard-sjekker bestått: medium m/≥2 evidens; ren ISO-Z-tid; streaming matcher norwegian-rights WBD-WorldTour-prior; tracked m/reason+addedBy+evidence+catalog-pointer; ingen duplikat; summary==streaming; Johannessen navngitt uten out-status). To actionable notes adressert i ÉN bounded revisjon: (1) la til cyclingnews som uavhengig evidens-domene, (2) senket provenance.streaming.basis 'official'→'secondary' for ærlighet. Ikke re-gradert (fail-open, allerede pass)."
+	},
+	"notes": [
+		"PRIMÆRLEVERANSE: tettet coverage-critics ENESTE HIGH-hull (audit 11:42Z 12.10) — Gree Tour of Guangxi, sesongens SISTE UCI WorldTour-etappeløp (13.–18. okt, Kina), startet i dag (etappe 1 ti. 13. okt) og tavla var HELT tom for sykkel (Il Lombardia 10. okt var siste). Sykkel er tier1 (wholesale) + tracked-laget Uno-X Mobility (Tobias Johannessen) på startlista → klart i scope. Alle SEKS etappene boardet som ai-research (medium).",
+		"Dato/rute/distanse/startliste tre-kilde-bekreftet (procyclinguk rute-guide + cyclinguptodate preview + cyclinguptodate startliste). Starttidene er lokal kinesisk tid (UTC+8) omregnet til UTC fra forhåndsomtaler, IKKE arrangørens offisielle tidsskjema → provenance.time.basis=secondary, confidence medium. Finish ~06.00–07.00 UTC (tidlig morgen CEST).",
+		"Step 3.5 write-time fact-check (fresh context, uavhengig): CONFIRMED rute/towns/distanser (1043 km totalt), UTC-starttider (til kvarteret), Uno-X/Johannessen-påmelding (cyclinguptodate startliste stamp 08.10). Eneste korreksjon: mine ukedags-ord var én dag for tidlig (løpet er ti. 13.–søn. 18. okt) — ISO-datoene på tavla er korrekte, kun prosaens ukedager justert. Broadcaster PLAUSIBEL men ikke Norge-bekreftet → medium + [verify].",
+		"NORSK VISNING = HBO Max (Sport) / Eurosport Norge (WBD holder WorldTour-sykkelen i Norge; TV 2-unntakene Tour de France + Arctic Race gjelder ikke Guangxi). Flagget verify: firm eksakt kanal/deep-lenke + broadcast-starttid per etappe.",
+		"Korrigerte cycling-road-offseason-2026-27-plassholderen: dens forrige reason avfeide FEILAKTIG Guangxi som «lavprioritert løp utenfor katalogen» — et WorldTour-etappeløp er wholesale-tier1-dekning. Den ekte landeveis-vinterpausen begynner etter 18. okt.",
+		"Droppet esl-pro-league-s24-2026 (gruppespill 3.–7. + sluttspill 9.–11. okt FERDIGSPILT, expired 12.10) — ryddet coverage-gaps tracked-claim.",
+		"ROTÅRSAK-FLAGG (self-repair, gjentatt): cycling.json er TOM — ESPN-fetcheren dekker ikke WorldTour-sesonghalen (Asia/høst-svingen), så research må håndboarde etappeløp som Guangxi. Coverage-first-gaten undertrykte file-empty-anomalien fordi tavla uansett manglet sykkel, som maskerte at et reelt løp pågikk. En fetcher eller en cycling-contract-blokk (WP-243) ville fanget dette mekanisk.",
+		"IKKE boardet (bevisst): Paris Masters (31.10–8.11, Ruud) ~19 d ut, på cadence (utenfor ~5-d fyll-vindu); boardes ~26.10. Shanghai Masters dekker Ruuds tennis t.o.m. 18.10. Golf Reitan/Ventura tracked-claims gjelder 2027-datoer (placeholder, ikke reelle hull). Alle øvrige WP-243-kontrakter met (f1/eliteserien/PL/golf/tennis)."
+	]
 }
