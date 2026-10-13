@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-12T21:32:31.302Z",
+  "lastUpdated": "2026-10-13T02:47:37.190Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
@@ -219,32 +219,6 @@
       "name": "Premier League",
       "events": [
         {
-          "id": "football-newcastle-united-at-coventry-city-1791831600000",
-          "title": "Newcastle United at Coventry City",
-          "time": "2026-10-12T19:00:00.000Z",
-          "venue": "Coventry Building Society Arena",
-          "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
-          "streaming": [
-            {
-              "platform": "USA Net",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Coventry City",
-          "awayTeam": "Newcastle United",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
           "id": "football-chelsea-at-everton-1792236600000",
           "title": "Chelsea at Everton",
           "time": "2026-10-17T11:30:00.000Z",
@@ -453,38 +427,32 @@
           "additional": {
             "status": "STATUS_SCHEDULED"
           }
+        },
+        {
+          "id": "football-coventry-city-at-tottenham-hotspur-1792436400000",
+          "title": "Coventry City at Tottenham Hotspur",
+          "time": "2026-10-19T19:00:00.000Z",
+          "venue": "Tottenham Hotspur Stadium",
+          "sport": "football",
+          "meta": "Premier League",
+          "tournament": "Premier League",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Tottenham Hotspur",
+          "awayTeam": "Coventry City",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
         }
       ]
     },
     {
       "name": "La Liga",
       "events": [
-        {
-          "id": "football-sevilla-at-levante-1791831600000",
-          "title": "Sevilla at Levante",
-          "time": "2026-10-12T19:00:00.000Z",
-          "venue": "Estadi Ciutat de València",
-          "sport": "football",
-          "meta": "La Liga",
-          "tournament": "La Liga",
-          "streaming": [
-            {
-              "platform": "ESPN Deportes",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Levante",
-          "awayTeam": "Sevilla",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
         {
           "id": "football-levante-at-deportivo-1792177200000",
           "title": "Levante at Deportivo",
@@ -718,38 +686,38 @@
           "additional": {
             "status": "STATUS_SCHEDULED"
           }
+        },
+        {
+          "id": "football-rayo-vallecano-at-getafe-1792436400000",
+          "title": "Rayo Vallecano at Getafe",
+          "time": "2026-10-19T19:00:00.000Z",
+          "venue": "Estadio Coliseum",
+          "sport": "football",
+          "meta": "La Liga",
+          "tournament": "La Liga",
+          "streaming": [
+            {
+              "platform": "ESPN Deportes",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Getafe",
+          "awayTeam": "Rayo Vallecano",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
         }
       ]
     },
     {
       "name": "Serie A",
       "events": [
-        {
-          "id": "football-udinese-at-torino-1791830700000",
-          "title": "Udinese at Torino",
-          "time": "2026-10-12T18:45:00.000Z",
-          "venue": "Stadio Olimpico Grande Torino",
-          "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
-          "streaming": [
-            {
-              "platform": "Paramount+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Torino",
-          "awayTeam": "Udinese",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
         {
           "id": "football-sassuolo-at-frosinone-1792176300000",
           "title": "Sassuolo at Frosinone",
@@ -950,6 +918,58 @@
           "norwegian": false,
           "homeTeam": "Juventus",
           "awayTeam": "Lazio",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-cagliari-at-monza-1792427400000",
+          "title": "Cagliari at Monza",
+          "time": "2026-10-19T16:30:00.000Z",
+          "venue": "U-Power Stadium",
+          "sport": "football",
+          "meta": "Serie A",
+          "tournament": "Serie A",
+          "streaming": [
+            {
+              "platform": "Paramount+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Monza",
+          "awayTeam": "Cagliari",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-torino-at-parma-1792435500000",
+          "title": "Torino at Parma",
+          "time": "2026-10-19T18:45:00.000Z",
+          "venue": "Ennio Tardini",
+          "sport": "football",
+          "meta": "Serie A",
+          "tournament": "Serie A",
+          "streaming": [
+            {
+              "platform": "Paramount+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Parma",
+          "awayTeam": "Torino",
           "participants": [],
           "norwegianPlayers": [],
           "totalPlayers": null,
