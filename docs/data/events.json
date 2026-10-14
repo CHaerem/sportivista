@@ -5519,8 +5519,13 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/vintersport",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -5563,8 +5568,13 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/vintersport",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -5728,5 +5738,52 @@
     "summary": "Magnus Carlsens bekreftede neste turnering: pilot-utgaven av den FIDE-godkjente Total Chess World Championship Tour, i Budapest 10.–21. november. 24 spillere fra 10 nasjoner, premiepott minst $2,7 mill. og to plasser til Kandidatturneringen 2028.\n\nÅpningsseremoni + blitz-sveitser går 10. nov (klokkeslett ikke publisert). Gruppespillet (fire grupper à seks, dobbel serie i «fast classic» 45+30) spilles 11.–15. nov med daglig start 15:00 CET. Utslagsrundene 17.–20. nov (blitz 15:00, hurtig 16:15, fast classic 18:45 CET).\n\nCarlsen, Caruana, Erigaisi, Wesley So, Keymer og Aronian er bekreftet; Gukesh, Nakamura og Sindarov er meldt av pga. kollisjon med det klassiske VM. Norsk/offisiell kringkasting er ennå ikke kunngjort av arrangøren – verify fyller streaming når worldchess melder plattform.",
     "norwegianPlayers": [],
     "id": "bd5daeb1237d"
+  },
+  {
+    "sport": "football",
+    "tournament": "OBOS-ligaen",
+    "title": "Lyn – Moss",
+    "time": "2026-10-18T15:00:00Z",
+    "endTime": null,
+    "venue": "Bislett stadion",
+    "norwegian": true,
+    "homeTeam": "Lyn",
+    "awayTeam": "Moss",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/fotball/obos-ligaen",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-14T20:15:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206093",
+      "https://www.fotmob.com/nb/teams/10224/overview/lyn"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+        "basis": "primary",
+        "retrievedAt": "2026-10-14T20:15:00Z",
+        "note": "fotball.no (NFF, primær-autoritet) bekrefter på BÅDE Lyns lagside (fiksId 161785) OG OBOS-ligaens terminliste (fiksId 206093): søn. 18. okt kl. 17.00 CEST (15.00 UTC), Bislett stadion, Lyn hjemme (runde 26). FotMob korroborerer uavhengig (15.00 UTC = 17.00 CEST, Lyn hjemme)."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/fotball/obos-ligaen",
+        "basis": "official",
+        "retrievedAt": "2026-10-14T20:15:00Z"
+      }
+    },
+    "summary": "Lyns hjemmekamp mot Moss søndag 18. oktober kl. 17.00 CEST på Bislett stadion (OBOS-ligaen, runde 26) — Lyns neste seriekamp etter bortekampen mot Haugesund 14. oktober.\n\nDato/tid/arena to-kilde-bekreftet mot fotball.nos primær-autoritet (Lyns lagside fiksId 161785 + OBOS-ligaens terminliste fiksId 206093, begge enige), og uavhengig fresh-context write-time fact-check mot FotMob = confirmed (15.00 UTC = 17.00 CEST, Lyn hjemme).\n\nTV-valg kan flytte avspark 30–60 min; verify følger. Norsk visning TV 2 Play.",
+    "id": "c06d99e0a263",
+    "homeTeamEntityId": "fk-lyn-oslo"
   }
 ]
