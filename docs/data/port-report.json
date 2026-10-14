@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T09:55:23.720Z",
+  "generatedAt": "2026-10-14T14:52:49.775Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 6.99,
+    "oldestGapAgeDays": 7.2,
     "escalatable": 1,
     "catalogMatched": 1,
     "auditedAt": "2026-10-14T10:00:00Z",
@@ -35,7 +35,7 @@
       {
         "interest": "Tennis — Casper Ruuds høst-innendørssving (Swiss Indoors Basel ATP 500 24. okt–1. nov BEKREFTET + Rolex Paris Masters ATP 1000 31. okt–8. nov)",
         "severity": "medium",
-        "ageDays": 6.99,
+        "ageDays": 7.2,
         "recurrences": 7,
         "catalogMatched": true
       }
@@ -43,21 +43,14 @@
   },
   "amendRate": {
     "nearTermRate": 0,
-    "nearTermChecked": 7,
+    "nearTermChecked": 3,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-10-13T12:49:04Z",
+    "verifyRunAt": "2026-10-14T10:05:00Z",
     "windowRate": 0,
-    "windowChecks": 87,
+    "windowChecks": 78,
     "windowAmendments": 0,
     "windowCorrections": 1,
     "byDay": [
-      {
-        "date": "2026-09-30",
-        "checks": 12,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-10-01",
         "checks": 3,
@@ -148,28 +141,37 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-10-14",
+        "checks": 3,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-14T09:55:17.481Z",
+    "buildCheckedAt": "2026-10-14T14:52:44.806Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-14T08:16:28.367Z",
-    "manifestAgeHours": 1.65,
+    "manifestGeneratedAt": "2026-10-14T09:55:25.392Z",
+    "manifestAgeHours": 4.96,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-13T12:49:04Z",
-    "verifyAgeHours": 21.11,
-    "corrections": 0,
+    "checkedAt": "2026-10-14T10:05:00Z",
+    "verifyAgeHours": 4.8,
+    "corrections": 1,
     "unresolved": 0,
-    "signals": []
+    "signals": [
+      "WP-95 deltakelsessjekk — Stake Pulse Beat III (esports, 214838fe551f), 100 Thieves/rain, in-progress 12.–17.10: 100T fortsatt AKTIV per 14.10 — vant 2-0 mot …"
+    ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-14T09:55:23.719Z"
+    "generatedAt": "2026-10-14T14:52:49.775Z"
   }
 }
