@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T09:36:03.797Z",
+  "generatedAt": "2026-10-15T14:39:45.777Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 7.98,
+    "oldestGapAgeDays": 8.19,
     "escalatable": 1,
     "catalogMatched": 1,
     "auditedAt": "2026-10-15T08:30:00Z",
@@ -35,7 +35,7 @@
       {
         "interest": "Tennis — Casper Ruuds høst-innendørssving (Swiss Indoors Basel ATP 500 24. okt–1. nov BEKREFTET + Rolex Paris Masters ATP 1000 31. okt–8. nov)",
         "severity": "medium",
-        "ageDays": 7.98,
+        "ageDays": 8.19,
         "recurrences": 8,
         "catalogMatched": true
       }
@@ -43,11 +43,11 @@
   },
   "amendRate": {
     "nearTermRate": 0,
-    "nearTermChecked": 3,
+    "nearTermChecked": 5,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-10-14T10:05:00Z",
+    "verifyRunAt": "2026-10-15T10:10:00Z",
     "windowRate": 0,
-    "windowChecks": 75,
+    "windowChecks": 80,
     "windowAmendments": 0,
     "windowCorrections": 1,
     "byDay": [
@@ -141,30 +141,38 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-10-15",
+        "checks": 5,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-15T09:36:00.030Z",
+    "buildCheckedAt": "2026-10-15T14:39:42.653Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-15T07:53:28.325Z",
-    "manifestAgeHours": 1.71,
+    "manifestGeneratedAt": "2026-10-15T09:36:05.153Z",
+    "manifestAgeHours": 5.06,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-14T10:05:00Z",
-    "verifyAgeHours": 23.52,
-    "corrections": 1,
+    "checkedAt": "2026-10-15T10:10:00Z",
+    "verifyAgeHours": 4.5,
+    "corrections": 2,
     "unresolved": 0,
     "signals": [
-      "WP-95 deltakelsessjekk — Stake Pulse Beat III (esports, 214838fe551f), 100 Thieves/rain, in-progress 12.–17.10: 100T fortsatt AKTIV per 14.10 — vant 2-0 mot …"
+      "WP-95 deltakelse: Stake Pulse Beat III (in-progress, vindu 12.–17.10): 100 Thieves (rain/Håvard Nygaard) fortsatt aktiv — vant Group B Winners' Match 2-1 mot…",
+      "WP-95 deltakelse: Tour of Guangxi 2026 (in-progress) etappe 4-6: Tobias Johannessen (Uno-X Mobility) bekreftet i final startlist; løpet pågår (etappe 1-3 kjø…"
     ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-15T09:36:03.797Z"
+    "generatedAt": "2026-10-15T14:39:45.777Z"
   }
 }
