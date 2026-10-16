@@ -1,58 +1,5 @@
 [
   {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen 2026/27",
-    "title": "Elverum – Runar Elite",
-    "time": "2026-10-02T16:15:00Z",
-    "endTime": null,
-    "venue": null,
-    "norwegian": true,
-    "homeTeam": "Elverum",
-    "awayTeam": "Runar Elite",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-30T05:50:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "handballforbundet",
-        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-        "basis": "primary",
-        "retrievedAt": "2026-09-30T05:50:00Z",
-        "note": "NHF (handball.no) publiserer terminlisten for Elkjøp-ligaen; avkast fre. 2. okt kl. 18.15 CEST lest via TV 2 Livesport-terminlisten (TV 2 eier/speiler serien). Uavhengig fresh-context write-time fact-check bekreftet dato + avkast + hjemme/borte mot handball.no + TV 2 Livesport lagsider + Flashscore/Sofascore. Løser tidligere dato-konflikt (NHF tor. 1. okt vs NTB fre. 2. okt) → TV 2 Livesport fester fre. 2. okt 18.15."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "basis": "official",
-        "retrievedAt": "2026-09-30T05:50:00Z",
-        "note": "TV 2 eier og sender Elkjøp-ligaen; alle kamper på TV 2 Play, utvalgte også på lineær TV 2 Sport. Bekreftet mot TV 2 Livesport-terminlisten + uavhengig write-time fact-check."
-      }
-    },
-    "summary": "Elkjøp-ligaen 2026/27, runde 6. Elverum hjemme mot Runar Elite.\n\nAvkast fredag 2. oktober kl. 18.15 CEST (16.15 UTC). Norsk visning: TV 2 Play.",
-    "homeTeamEntityId": "elverum-handball",
-    "id": "96d0aed14d75",
-    "verifiedAt": "2026-09-30T12:05:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-    ]
-  },
-  {
     "sport": "f1",
     "tournament": "Formula 1 World Championship 2026",
     "venue": "Sepang International Circuit, Malaysia",
