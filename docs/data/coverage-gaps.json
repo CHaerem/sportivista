@@ -1,42 +1,8 @@
 {
-  "generatedAt": "2026-10-16T18:36:44.530Z",
-  "gapCount": 3,
+  "generatedAt": "2026-10-16T21:54:36.714Z",
+  "gapCount": 0,
   "anomalyCount": 0,
-  "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Vitality",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Evanilson, Rayan and Rodríguez goals seal Bournemouth’s historic home win in Europe",
-      "link": "https://www.theguardian.com/football/2026/oct/15/bournemouth-sturm-graz-europa-league-match-report",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-10-16T18:36:43.369Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Europa League",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Evanilson, Rayan and Rodríguez goals seal Bournemouth’s historic home win in Europe",
-      "link": "https://www.theguardian.com/football/2026/oct/15/bournemouth-sturm-graz-europa-league-match-report",
-      "feed": "guardian-football",
-      "matchCount": 2,
-      "detectedAt": "2026-10-16T18:36:43.369Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Europaligaen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "LSK med Europa-bragd etter norsk kjempetabbe: – Selvfølgelig veldig surt",
-      "link": "https://www.nrk.no/sport/lsk-med-europa-bragd-_-reddet-poeng-mot-storlag-1.18056169",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-10-16T18:36:43.369Z"
-    }
-  ],
+  "gaps": [],
   "anomalies": [],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
 }
