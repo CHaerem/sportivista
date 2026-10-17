@@ -1,18 +1,17 @@
 {
-  "runAt": "2026-10-16T10:00:31Z",
-  "checked": 7,
-  "confirmed": 7,
-  "amended": 0,
+  "runAt": "2026-10-17T09:35:00Z",
+  "checked": 3,
+  "confirmed": 1,
+  "amended": 2,
   "removed": 0,
   "notes": [
-    "15 kandidater i 7-dagersvinduet; de fleste alt verifisert 11.-15.10 mot primaerkilder. Re-verifiserte de mest naerstaaende/hoeyverdikampene.",
-    "Esbjerg-Brest (EHF CL kvinner, 17.10): re-bekreftet mot eurohandball.com (arrangoer) - lor. 17.10 16.00 CEST (14.00 UTC) hjemme i Esbjerg. Confirmed.",
-    "Lyn-Moss (OBOS, 18.10): korroborert via starting11 (soen. 18.10 17.00 Bislett) mot fotball.no-primaer. Confirmed.",
-    "Stake Pulse Beat III (100 Thieves/rain): gruppespill ferdig, 100T videre til sluttspill (strafe/ggscore); turneringsvindu t.o.m 17.10 fortsatt gyldig. Confirmed (WP-95 deltakelse OK).",
-    "Tour of Guangxi etappe 5/6 (17./18.10): ikke kjoert enda. Etappe 4 datert 16.10 (tour-magazin), ingen resultat publisert. Ingen Tobias Johannessen/Uno-X abandon funnet, men PCS 403 hindret fersk GC-sjekk; beholder confirmed fra 15.10 (startliste + datoskjema bekreftet i gaar).",
-    "US Chess Championship: round-robin (ingen cut), deltakere (Caruana/So/Aronian/Niemann) fortsatt i feltet - deltakelse OK. Ingen amend.",
-    "Thunderpick WC (FURIA/Falcons): vindu gyldig, verifisert 14.10 med write-time fact-check. Ingen ny endring.",
-    "Ingen eventer fjernet/avlyst. Streaming-felter (TV 2 Play / NRK-fri esports/sjakk) stemmer med norwegian-rights + cs2-sources.",
-    "4 kalibreringslinjer lagt til (eurohandball/starting11/ggscore/tour-magazin)."
+    "Window had 15 ai-research/tentative events in the next 7 days; 13 were verified within the last ~24h (verifiedAt 2026-10-15/16) and left untouched. Focused budget on the one unverified high-confidence event: Sölden alpint verdenscupåpning (24.–25. okt).",
+    "FUNN (channel): begge Sölden-åpningsrennene (kvinner 24.10 id 4fbeafb602de, menn 25.10 id 7ce116ce0db8) hadde streaming=NRK — motsier BÅDE eget provenance (sourceId tv2) OG summary («Norsk visning: TV 2 Play»). NRK holder ikke Østerrike-alpint.",
+    "VERIFISERT: NRKs offisielle 2026/27-vintersportprogram (nrk.no 1.18033873) bekrefter tidene (1. omg 10.00 / 2. omg 13.00 lokal) MEN oppgir kringkaster «ikke bestemt» for Sölden-åpningen. TV 2s egen melding (tv2.no): TV 2+Viaplay deler Østerrike-pakken 2026/27–2030/31, TV 2 sendte Sölden 2025/26. SportBusiness: VG TV kjøpte åpningens rettigheter sent en tidligere sesong (eget blackout-tilfelle utenfor pakken).",
+    "AMENDED (begge): fjernet feil NRK-kanal, satt tentativ TV 2 Play (beste antagelse — pakkeholder + sendte i fjor), oppdatert provenance.streaming (basis secondary, note om «ikke bestemt» + VG-forbehold), oppdatert summary, lagt til verifiedAt/verificationStatus/verificationSources. Tid uendret (bekreftet). Confidence beholdt high (eksistens+tid solid; kanal-usikkerhet bæres av tentativ-flagget).",
+    "CONFIRMED (time): Sölden-tidene kryss-bekreftet mot NRK-programmet; provenance.time-note oppdatert.",
+    "4 linjer lagt til calibration-ledger (nrk.no time agreed:true; nrk.no/tv2.no/sportbusiness.com streaming agreed:false boardWasProvisional:true — kildene korrigerte en uverifisert NRK-gjetning, så de telles som pålitelighet, ikke straff).",
+    "SKILL-OPPDATERING BLOKKERT I DENNE KJØRINGEN: forsøkte å rette .claude/skills/norwegian-rights/SKILL.md linje 71 (Alpine → Viaplay) til den skarpere Østerrike-pakke-/åpnings-sub-lisens-virkeligheten. Edit-verktøyet returnerte literal: «Claude requested permissions to write to /home/runner/work/sportivista/sportivista/.claude/skills/norwegian-rights/SKILL.md, but you haven't granted it yet.» Dette er et permission-prompt i denne sesjonen (ikke en reell gate — CI-allowedTools inkluderer Edit). Rettighetslæringen er foreløpig bare fanget i de to eventenes provenance-noter + denne loggen; skal inn i skillen neste kjøring der skriving er innvilget.",
+    "De øvrige 13 vindu-eventene (chess US Championship, 100T/rain Stake Pulse, Thunderpick, 6x håndball EHF/Elkjøp-ligaen, Guangxi etappe 6, Lyn–Moss) var alle nylig verifisert (confirmed <24h) og ble ikke re-sjekket for å holde budsjettet på det reelle funnet."
   ]
 }
