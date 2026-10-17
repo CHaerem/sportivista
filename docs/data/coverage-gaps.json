@@ -1,8 +1,20 @@
 {
-  "generatedAt": "2026-10-17T00:05:48.153Z",
-  "gapCount": 0,
+  "generatedAt": "2026-10-17T07:23:44.933Z",
+  "gapCount": 1,
   "anomalyCount": 0,
-  "gaps": [],
+  "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Tour de France",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Which mountains will be on the 2027 Tour de France route? Pyrenees back to the fore, one ferociously difficult stage, and other emerging details",
+      "link": "https://www.cyclingnews.com/pro-cycling/racing/which-mountains-will-be-on-the-2027-tour-de-france-route-pyrenees-back-to-the-fore-one-ferociously-difficult-stage-and-other-emerging-details/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-10-17T07:23:44.229Z"
+    }
+  ],
   "anomalies": [],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
 }
