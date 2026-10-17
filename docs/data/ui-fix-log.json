@@ -1,12 +1,12 @@
 {
-	"runAt": "2026-10-16T00:00:00Z",
+	"runAt": "2026-10-17T12:48:51Z",
 	"action": "abandoned",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"visual-qa-log.json (2026-10-12) verdict=issues, one medium finding (unchanged since the 2026-10-14 run): the Juventus crest (logos/juventus.png — all-black line art on a transparent background) renders as an effectively invisible box against the true-black dark theme (#000000/#1C1C1E). No new high/medium findings.",
-		"No licensing-compliant CSS/JS fix exists within the ui-fix loop's scope. entity-logo.css (WP-186) deliberately shows every club mark UNMODIFIED — explicitly no filter, no tint, no mix-blend-mode, no border-radius clipping, no background plate, no drop-shadow — because a free mark under CC BY-SA may not be turned into a derivative. Every technique that could make black-on-transparent visible against black is exactly what that policy forbids, so any CSS fix would ship a licensing violation (and this PR would auto-merge to the live site).",
-		"The only genuine fixes are (a) swapping the juventus.png asset for a coloured crest — an asset + licensing decision outside this loop and outside my allowed touch-set (docs/index.html, docs/css/**, docs/js/** only; logos live in docs/logos/**), or (b) a human-weighed DESIGN.md/WP-186 policy change. visual-qa itself flagged this finding for human judgment and explicitly warned the ui-fix loop not to silently patch it by adding a background plate.",
+		"visual-qa-log.json (2026-10-12) verdict=issues, one medium finding (unchanged since the 2026-10-14 and 2026-10-16 runs): the Juventus crest (logos/juventus.png — all-black line art on a transparent background) renders as an effectively invisible box against the true-black dark theme (#000000/#1C1C1E). No new high/medium findings.",
+		"No licensing-compliant CSS/JS fix exists within the ui-fix loop's scope. entity-logo.css (WP-186) and DESIGN.md § Entitets-avatar trinn 0 deliberately show every club mark UNMODIFIED — explicitly no filter, no tint, no mix-blend-mode, no border-radius clipping, no background plate (bakgrunnsplate), no drop-shadow — because a free mark under CC BY-SA may not be turned into a derivative. Every technique that could make black-on-transparent visible against black is exactly what that normative contract forbids, so any CSS fix would ship a licensing violation (and this PR would auto-merge to the live site).",
+		"The only genuine fixes are (a) swapping the juventus.png asset for a coloured crest — an asset + licensing decision outside this loop and outside my allowed touch-set (docs/index.html, docs/css/**, docs/js/** only; logos live in docs/logos/**), or (b) a human-weighed DESIGN.md/WP-186 policy change (e.g. a hairline edge for the real mark, as the colour-monogram already uses — but that is explicitly a policy deviation requiring an explicit owner instruction per DESIGN.md). visual-qa itself flagged this finding for human judgment and explicitly warned the ui-fix loop not to silently patch it by adding a background plate.",
 		"Nothing load-bearing is lost (the team-name text still identifies the match). Abandoning rather than shipping a change that would violate the deliberate WP-186 licensing constraint; leaving for human/owner judgment."
 	]
 }
