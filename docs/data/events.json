@@ -2669,80 +2669,6 @@
     ]
   },
   {
-    "sport": "football",
-    "tournament": "Serie A",
-    "title": "Genoa at AS Roma",
-    "time": "2026-10-17T18:45:00.000Z",
-    "endTime": null,
-    "venue": "Olimpico",
-    "meta": "Serie A",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "VG TV",
-        "url": "https://www.tvkampen.com/kamp/roma-genoa-1899082",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/roma-genoa-1899082",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "AS Roma",
-    "awayTeam": "Genoa",
-    "isFavorite": false,
-    "round": null,
-    "id": "15db915cc083",
-    "homeTeamEntityId": "as-roma",
-    "awayTeamEntityId": "genoa",
-    "provenance": {
-      "streaming": {
-        "sourceId": "vg",
-        "url": "https://www.vg.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-10-13T19:20:00Z",
-        "note": "Serie A i Norge eksklusivt på VG+ Sport (alle kamper t.o.m. 2026/27) — tvkampen rettighetsside + LiveSoccerTV + techradar, bekreftet 2026-10-13. Service-landing (ingen per-kamp-URL)."
-      }
-    }
-  },
-  {
-    "sport": "football",
-    "tournament": "La Liga",
-    "title": "Athletic Club at Valencia",
-    "time": "2026-10-17T19:00:00.000Z",
-    "endTime": null,
-    "venue": "Mestalla Stadium",
-    "meta": "La Liga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Valencia",
-    "awayTeam": "Athletic Club",
-    "isFavorite": false,
-    "round": null,
-    "id": "fd0b4079b7a2",
-    "homeTeamEntityId": "valencia",
-    "awayTeamEntityId": "athletic-club"
-  },
-  {
     "sport": "cycling",
     "tournament": "Gree Tour of Guangxi 2026",
     "title": "Etappe 6",
@@ -4629,6 +4555,48 @@
     "id": "4fbeafb602de"
   },
   {
+    "sport": "f1",
+    "tournament": "Formula 1 World Championship 2026",
+    "title": "United States Grand Prix – kvalifisering",
+    "time": "2026-10-24T21:00:00Z",
+    "endTime": "2026-10-24T22:00:00Z",
+    "venue": "Circuit of the Americas, Austin",
+    "norwegian": false,
+    "participants": [],
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-17T22:30:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.formula1.com/en/latest/article/formula-1-msc-cruises-united-states-grand-prix-2026.2u6li2pzNhPzL3TSYaagrm",
+      "https://www.f1-fansite.com/?p=5647",
+      "https://www.mercedesamgf1.com/news/f1-announces-2026-sprint-race-calendar"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "formula1",
+        "url": "https://www.formula1.com/en/latest/article/formula-1-msc-cruises-united-states-grand-prix-2026.2u6li2pzNhPzL3TSYaagrm",
+        "basis": "primary",
+        "retrievedAt": "2026-10-17T22:30:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-10-17T22:30:00Z"
+      }
+    },
+    "summary": "Kvalifiseringen (Q1–Q3) avgjør startoppstillingen for søndagens Grand Prix (søn. 25. okt kl. 15.00 lokal / 20.00 UTC) på Circuit of the Americas.\n\nVanlig helg (ingen sprint) – kvalifisering lør. 24. okt kl. 16.00 Austin-tid (CDT, UTC−5) = 21.00 UTC.\n\nTider bekreftet mot formula1.com (arrangøren) + uavhengig write-time fact-check – ikke ESPN-feeden (source-quirks: ESPN feildaterer F1-helger). Norsk visning Viaplay.",
+    "id": "fc14ac95a445"
+  },
+  {
     "sport": "alpine",
     "tournament": "FIS verdenscup alpint 2026/27",
     "title": "Sölden – storslalåm menn",
@@ -4846,47 +4814,5 @@
     "summary": "Magnus Carlsens bekreftede neste turnering: pilot-utgaven av den FIDE-godkjente Total Chess World Championship Tour, i Budapest 10.–21. november. 24 spillere fra 10 nasjoner, premiepott minst $2,7 mill. og to plasser til Kandidatturneringen 2028.\n\nÅpningsseremoni + blitz-sveitser går 10. nov (klokkeslett ikke publisert). Gruppespillet (fire grupper à seks, dobbel serie i «fast classic» 45+30) spilles 11.–15. nov med daglig start 15:00 CET. Utslagsrundene 17.–20. nov (blitz 15:00, hurtig 16:15, fast classic 18:45 CET).\n\nCarlsen, Caruana, Erigaisi, Wesley So, Keymer og Aronian er bekreftet; Gukesh, Nakamura og Sindarov er meldt av pga. kollisjon med det klassiske VM. Norsk/offisiell kringkasting er ennå ikke kunngjort av arrangøren – verify fyller streaming når worldchess melder plattform.",
     "norwegianPlayers": [],
     "id": "bd5daeb1237d"
-  },
-  {
-    "sport": "f1",
-    "tournament": "Formula 1 World Championship 2026",
-    "title": "United States Grand Prix – kvalifisering",
-    "time": "2026-10-24T21:00:00Z",
-    "endTime": "2026-10-24T22:00:00Z",
-    "venue": "Circuit of the Americas, Austin",
-    "norwegian": false,
-    "participants": [],
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-17T22:30:00Z",
-    "confidence": "high",
-    "evidence": [
-      "https://www.formula1.com/en/latest/article/formula-1-msc-cruises-united-states-grand-prix-2026.2u6li2pzNhPzL3TSYaagrm",
-      "https://www.f1-fansite.com/?p=5647",
-      "https://www.mercedesamgf1.com/news/f1-announces-2026-sprint-race-calendar"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "formula1",
-        "url": "https://www.formula1.com/en/latest/article/formula-1-msc-cruises-united-states-grand-prix-2026.2u6li2pzNhPzL3TSYaagrm",
-        "basis": "primary",
-        "retrievedAt": "2026-10-17T22:30:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-10-17T22:30:00Z"
-      }
-    },
-    "summary": "Kvalifiseringen (Q1–Q3) avgjør startoppstillingen for søndagens Grand Prix (søn. 25. okt kl. 15.00 lokal / 20.00 UTC) på Circuit of the Americas.\n\nVanlig helg (ingen sprint) – kvalifisering lør. 24. okt kl. 16.00 Austin-tid (CDT, UTC−5) = 21.00 UTC.\n\nTider bekreftet mot formula1.com (arrangøren) + uavhengig write-time fact-check – ikke ESPN-feeden (source-quirks: ESPN feildaterer F1-helger). Norsk visning Viaplay.",
-    "id": "690b8fe046bd"
   }
 ]
