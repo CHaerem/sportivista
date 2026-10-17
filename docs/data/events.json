@@ -72,59 +72,6 @@
     ]
   },
   {
-    "sport": "esports",
-    "tournament": "ESL Pro League Season 24",
-    "title": "G2 Esports vs Natus Vincere",
-    "time": "2026-10-03T16:30:00Z",
-    "venue": "Spodek Arena, Katowice",
-    "norwegian": false,
-    "homeTeam": "G2 Esports",
-    "awayTeam": "Natus Vincere",
-    "participants": [
-      {
-        "name": "G2 Esports"
-      },
-      {
-        "name": "Natus Vincere"
-      }
-    ],
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "Twitch",
-        "url": "https://www.twitch.tv/esl_csgo",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-03T13:35:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://navi.gg/en/tournaments/epl-season-24/match/14037",
-      "https://pro.eslgaming.com/tour/details/esl-pro-league-season-24/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "liquipedia",
-        "url": "https://navi.gg/en/tournaments/epl-season-24/match/14037",
-        "basis": "secondary",
-        "retrievedAt": "2026-10-03T13:35:00Z",
-        "note": "Starttid trekonvergent paa 16.30 UTC: navi.gg (NAVI offisiell, lest direkte) viser 19.30 EEST = 16.30 UTC, Bo3; esports.gg + uavhengig websok 18.30 CEST = 16.30 UTC. ESL/Liquipedia/HLTV direkte 403 -> basis secondary, confidence medium."
-      },
-      "streaming": {
-        "sourceId": "twitch",
-        "url": "https://www.twitch.tv/esl_csgo",
-        "basis": "official",
-        "retrievedAt": "2026-10-03T13:35:00Z"
-      }
-    },
-    "summary": "Gruppespill (sveitsisk runde 1, Bo3) i ESL Pro League Season 24 — CS2 tier-1, $1 mill., 16 lag i Spodek Arena, Katowice.\n\nDagens storoppgjør mellom to katalog-lag: G2 Esports mot Natus Vincere (NAVI). Gratis på ESLs egen Twitch-kanal (esl_csgo).",
-    "id": "b224ba99a679",
-    "homeTeamEntityId": "g2-esports",
-    "awayTeamEntityId": "natus-vincere"
-  },
-  {
     "sport": "football",
     "tournament": "OBOS-ligaen",
     "title": "Bryne – Lyn",
@@ -2450,377 +2397,6 @@
     ]
   },
   {
-    "sport": "football",
-    "tournament": "Serie A",
-    "title": "Napoli at Venezia",
-    "time": "2026-10-17T13:00:00.000Z",
-    "endTime": null,
-    "venue": "Stadio Pier Luigi Penzo",
-    "meta": "Serie A",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "VG TV",
-        "url": "https://www.tvkampen.com/kamp/venezia-napoli-1899090",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/venezia-napoli-1899090",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Venezia",
-    "awayTeam": "Napoli",
-    "isFavorite": false,
-    "round": null,
-    "id": "8d895dc18c41",
-    "homeTeamEntityId": "venezia",
-    "awayTeamEntityId": "napoli",
-    "provenance": {
-      "streaming": {
-        "sourceId": "vg",
-        "url": "https://www.vg.no/sport",
-        "basis": "official",
-        "retrievedAt": "2026-10-13T19:20:00Z",
-        "note": "Serie A i Norge eksklusivt på VG+ Sport (alle kamper t.o.m. 2026/27) — tvkampen rettighetsside + LiveSoccerTV + techradar, bekreftet 2026-10-13. Service-landing (ingen per-kamp-URL)."
-      }
-    }
-  },
-  {
-    "sport": "football",
-    "tournament": "Bundesliga",
-    "title": "Borussia Dortmund at 1. FC Union Berlin",
-    "time": "2026-10-17T13:30:00.000Z",
-    "endTime": null,
-    "venue": "Stadion An der Alten Försterei",
-    "meta": "Bundesliga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/1-fc-union-berlin-borussia-dortmund-1919626",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "1. FC Union Berlin",
-    "awayTeam": "Borussia Dortmund",
-    "isFavorite": false,
-    "round": null,
-    "id": "e772f082f107",
-    "homeTeamEntityId": "1-fc-union-berlin",
-    "awayTeamEntityId": "borussia-dortmund",
-    "provenance": {
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no",
-        "basis": "official",
-        "retrievedAt": "2026-10-13T19:20:00Z",
-        "note": "Bundesliga i Norge på Viaplay (t.o.m. 2028/29; enkeltkamper også TV 2 Play) — tvkampen + LiveSoccerTV + bytt.no, bekreftet 2026-10-13. Service-landing."
-      }
-    }
-  },
-  {
-    "sport": "football",
-    "tournament": "Bundesliga",
-    "title": "VfB Stuttgart at Hamburg SV",
-    "time": "2026-10-17T13:30:00.000Z",
-    "endTime": null,
-    "venue": "Volksparkstadion",
-    "meta": "Bundesliga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Hamburg SV",
-    "awayTeam": "VfB Stuttgart",
-    "isFavorite": false,
-    "round": null,
-    "id": "e9e3c0e930ed",
-    "homeTeamEntityId": "hamburger-sv",
-    "awayTeamEntityId": "vfb-stuttgart",
-    "provenance": {
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no",
-        "basis": "official",
-        "retrievedAt": "2026-10-13T19:20:00Z",
-        "note": "Bundesliga i Norge på Viaplay (t.o.m. 2028/29; enkeltkamper også TV 2 Play) — tvkampen + LiveSoccerTV + bytt.no, bekreftet 2026-10-13. Service-landing."
-      }
-    }
-  },
-  {
-    "sport": "football",
-    "tournament": "Bundesliga",
-    "title": "Mainz at Schalke 04",
-    "time": "2026-10-17T13:30:00.000Z",
-    "endTime": null,
-    "venue": "Veltins Arena",
-    "meta": "Bundesliga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/schalke-04-mainz-1919625",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Schalke 04",
-    "awayTeam": "Mainz",
-    "isFavorite": false,
-    "round": null,
-    "id": "398897b047d7",
-    "homeTeamEntityId": "schalke-04",
-    "awayTeamEntityId": "mainz",
-    "provenance": {
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no",
-        "basis": "official",
-        "retrievedAt": "2026-10-13T19:20:00Z",
-        "note": "Bundesliga i Norge på Viaplay (t.o.m. 2028/29; enkeltkamper også TV 2 Play) — tvkampen + LiveSoccerTV + bytt.no, bekreftet 2026-10-13. Service-landing."
-      }
-    }
-  },
-  {
-    "sport": "football",
-    "tournament": "Bundesliga",
-    "title": "FC Augsburg at SV Elversberg",
-    "time": "2026-10-17T13:30:00.000Z",
-    "endTime": null,
-    "venue": "URSAPHARM-Arena an der Kaiserlinde",
-    "meta": "Bundesliga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/sv-elversberg-augsburg-1919623",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "SV Elversberg",
-    "awayTeam": "FC Augsburg",
-    "isFavorite": false,
-    "round": null,
-    "id": "811fa56fda12",
-    "homeTeamEntityId": "sv-elversberg",
-    "awayTeamEntityId": "fc-augsburg",
-    "provenance": {
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no",
-        "basis": "official",
-        "retrievedAt": "2026-10-13T19:20:00Z",
-        "note": "Bundesliga i Norge på Viaplay (t.o.m. 2028/29; enkeltkamper også TV 2 Play) — tvkampen + LiveSoccerTV + bytt.no, bekreftet 2026-10-13. Service-landing."
-      }
-    }
-  },
-  {
-    "sport": "football",
-    "tournament": "Bundesliga",
-    "title": "SC Paderborn 07 at Werder Bremen",
-    "time": "2026-10-17T13:30:00.000Z",
-    "endTime": null,
-    "venue": "Weserstadion",
-    "meta": "Bundesliga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/werder-bremen-paderborn-1919627",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Werder Bremen",
-    "awayTeam": "SC Paderborn 07",
-    "isFavorite": false,
-    "round": null,
-    "id": "047d7d772d65",
-    "homeTeamEntityId": "werder-bremen",
-    "awayTeamEntityId": "sc-paderborn-07",
-    "provenance": {
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no",
-        "basis": "official",
-        "retrievedAt": "2026-10-13T19:20:00Z",
-        "note": "Bundesliga i Norge på Viaplay (t.o.m. 2028/29; enkeltkamper også TV 2 Play) — tvkampen + LiveSoccerTV + bytt.no, bekreftet 2026-10-13. Service-landing."
-      }
-    }
-  },
-  {
-    "sport": "football",
-    "tournament": "Eliteserien",
-    "title": "Kristiansund – Aalesund",
-    "time": "2026-10-17T14:00:00.000Z",
-    "endTime": null,
-    "venue": "Nordmore Stadion",
-    "meta": "Eliteserien",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/kristiansund-aalesund-1834975",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/kristiansund-aalesund-1834975",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Kristiansund",
-    "awayTeam": "Aalesund",
-    "isFavorite": false,
-    "round": null,
-    "id": "9ca94672b5dc",
-    "homeTeamEntityId": "kristiansund-bk",
-    "awayTeamEntityId": "aalesund"
-  },
-  {
-    "sport": "football",
-    "tournament": "Premier League",
-    "title": "Liverpool at Brentford",
-    "time": "2026-10-17T14:00:00.000Z",
-    "endTime": null,
-    "venue": "Gtech Community Stadium",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/brentford-liverpool-1914779",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Brentford",
-    "awayTeam": "Liverpool",
-    "isFavorite": true,
-    "round": null,
-    "id": "dc1f3567d883",
-    "homeTeamEntityId": "brentford",
-    "awayTeamEntityId": "liverpool",
-    "summary": "Premier League runde 7 - Brentford mot Liverpool, Gtech Community Stadium. Liverpool paa bortebane i 15.00-blokken (BST).\n\nDato/avspark bekreftet mot premier-league.com (all-380-terminlisten, primaer-autoritet) + uavhengig write-time fact-check (legz round 7 i UTC, ren 1-times BST-offset). Storbritannia paa BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
-  },
-  {
-    "sport": "football",
-    "tournament": "Premier League",
-    "title": "Hull City at Fulham",
-    "time": "2026-10-17T14:00:00.000Z",
-    "endTime": null,
-    "venue": "Craven Cottage",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/fulham-hull-1914782",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Fulham",
-    "awayTeam": "Hull City",
-    "isFavorite": false,
-    "round": null,
-    "id": "f72c4ce82253",
-    "homeTeamEntityId": "fulham",
-    "awayTeamEntityId": "hull-city",
-    "summary": "Premier League runde 7 - Fulham mot Hull City, Craven Cottage.\n\nDato/avspark bekreftet mot premier-league.com (all-380-terminlisten, primaer-autoritet) + uavhengig write-time fact-check (legz round 7 i UTC, ren 1-times BST-offset). Storbritannia paa BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
-  },
-  {
-    "sport": "football",
-    "tournament": "Premier League",
-    "title": "Ipswich Town at Manchester City",
-    "time": "2026-10-17T14:00:00.000Z",
-    "endTime": null,
-    "venue": "Etihad Stadium",
-    "meta": "Premier League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/manchester-city-ipswich-1914784",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [
-      {
-        "name": "Erling Haaland"
-      }
-    ],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Manchester City",
-    "awayTeam": "Ipswich Town",
-    "isFavorite": true,
-    "round": null,
-    "id": "3a56b21a9203",
-    "homeTeamEntityId": "manchester-city",
-    "awayTeamEntityId": "ipswich-town",
-    "summary": "Premier League runde 7 - Manchester City mot Ipswich Town, Etihad Stadium. Erling Haalands Manchester City hjemme mot Ipswich.\n\nDato/avspark bekreftet mot premier-league.com (all-380-terminlisten, primaer-autoritet) + uavhengig write-time fact-check (legz round 7 i UTC, ren 1-times BST-offset). Storbritannia paa BST (UTC+1) t.o.m. 25. okt.\n\nNorsk visning: Viaplay (eksklusive PL-rettigheter i Norge 2026/27)."
-  },
-  {
     "sport": "handball",
     "tournament": "EHF Champions League kvinner 2026/27 (gruppespill)",
     "title": "Team Esbjerg – Brest Bretagne",
@@ -2930,36 +2506,6 @@
     "verificationSources": [
       "https://en.wikipedia.org/wiki/2026%E2%80%9327_Women%27s_EHF_Champions_League_group_stage"
     ]
-  },
-  {
-    "sport": "football",
-    "tournament": "La Liga",
-    "title": "Elche at Villarreal",
-    "time": "2026-10-17T14:15:00.000Z",
-    "endTime": null,
-    "venue": "Estadio de la Cerámica",
-    "meta": "La Liga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/villarreal-elche-1922649",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Villarreal",
-    "awayTeam": "Elche",
-    "isFavorite": false,
-    "round": null,
-    "id": "ab9f80cc4566",
-    "homeTeamEntityId": "villarreal",
-    "awayTeamEntityId": "elche"
   },
   {
     "sport": "handball",
@@ -3081,13 +2627,8 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/viking-fredrikstad-1834981",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "TV 2 Sport 1",
-        "url": "https://www.tvkampen.com/kamp/viking-fredrikstad-1834981",
-        "urlKind": "deep"
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -3147,36 +2688,6 @@
         "note": "Serie A i Norge eksklusivt på VG+ Sport (alle kamper t.o.m. 2026/27) — tvkampen rettighetsside + LiveSoccerTV + techradar, bekreftet 2026-10-13. Service-landing (ingen per-kamp-URL)."
       }
     }
-  },
-  {
-    "sport": "football",
-    "tournament": "La Liga",
-    "title": "Barcelona at Real Betis",
-    "time": "2026-10-17T16:00:00.000Z",
-    "endTime": null,
-    "venue": "Estadio La Cartuja",
-    "meta": "La Liga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/real-betis-barcelona-1922640",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Real Betis",
-    "awayTeam": "Barcelona",
-    "isFavorite": true,
-    "round": null,
-    "id": "73f74c683fb2",
-    "homeTeamEntityId": "real-betis",
-    "awayTeamEntityId": "barcelona"
   },
   {
     "sport": "handball",
@@ -3243,8 +2754,8 @@
     "streaming": [
       {
         "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/newcastle-aston-villa-1914785",
-        "urlKind": "deep"
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -3273,9 +2784,9 @@
     "norwegian": false,
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/real-betis-barcelona-1922640",
-        "urlKind": "deep"
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
