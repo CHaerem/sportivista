@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-17T09:00:34.723Z",
+  "generatedAt": "2026-10-17T12:54:03.011Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
-    "amendRate": "green",
+    "amendRate": "red",
     "silentStops": "green",
     "participantStatus": "green",
     "contracts": "green"
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 9.95,
+    "oldestGapAgeDays": 10.11,
     "escalatable": 1,
     "catalogMatched": 1,
     "auditedAt": "2026-10-17T08:00:00Z",
@@ -35,29 +35,22 @@
       {
         "interest": "Tennis — Casper Ruuds høst-innendørssving (Swiss Indoors Basel ATP 500 24. okt–1. nov BEKREFTET + Rolex Paris Masters ATP 1000 31. okt–8. nov; deretter Bybit Stockholm Open ATP 250 8.–14. nov, Ruud TITTELFORSVARER)",
         "severity": "medium",
-        "ageDays": 9.95,
+        "ageDays": 10.11,
         "recurrences": 10,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0,
-    "nearTermChecked": 7,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-10-16T10:00:31Z",
+    "nearTermRate": 0.67,
+    "nearTermChecked": 3,
+    "nearTermAmended": 2,
+    "verifyRunAt": "2026-10-17T09:35:00Z",
     "windowRate": 0,
-    "windowChecks": 78,
+    "windowChecks": 77,
     "windowAmendments": 0,
-    "windowCorrections": 1,
+    "windowCorrections": 3,
     "byDay": [
-      {
-        "date": "2026-10-03",
-        "checks": 5,
-        "amendments": 0,
-        "corrections": 1,
-        "rate": 0
-      },
       {
         "date": "2026-10-04",
         "checks": 9,
@@ -148,32 +141,35 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-10-17",
+        "checks": 4,
+        "amendments": 0,
+        "corrections": 3,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-17T09:00:29.036Z",
+    "buildCheckedAt": "2026-10-17T12:54:00.266Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-17T07:23:45.079Z",
-    "manifestAgeHours": 1.61,
+    "manifestGeneratedAt": "2026-10-17T09:00:36.498Z",
+    "manifestAgeHours": 3.89,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-16T10:00:31Z",
-    "verifyAgeHours": 23,
-    "corrections": 3,
+    "checkedAt": "2026-10-17T09:35:00Z",
+    "verifyAgeHours": 3.32,
+    "corrections": 0,
     "unresolved": 0,
-    "signals": [
-      "Stake Pulse Beat III (100 Thieves/rain): gruppespill ferdig, 100T videre til sluttspill (strafe/ggscore); turneringsvindu t.o.m 17.10 fortsatt gyldig. Confir…",
-      "Tour of Guangxi etappe 5/6 (17./18.10): ikke kjoert enda. Etappe 4 datert 16.10 (tour-magazin), ingen resultat publisert. Ingen Tobias Johannessen/Uno-X aban…",
-      "US Chess Championship: round-robin (ingen cut), deltakere (Caruana/So/Aronian/Niemann) fortsatt i feltet - deltakelse OK. Ingen amend."
-    ]
+    "signals": []
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-17T09:00:34.722Z"
+    "generatedAt": "2026-10-17T12:54:03.011Z"
   }
 }

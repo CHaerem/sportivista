@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-17T09:00:36.342Z",
+  "generatedAt": "2026-10-17T12:54:04.523Z",
   "windowDays": 180,
   "records": {
-    "used": 636,
+    "used": 640,
     "skipped": 9
   },
   "sources": {
@@ -253,9 +253,9 @@
       "reliability": 0.8
     },
     "nrk.no": {
-      "checks": 15,
-      "agreed": 13,
-      "corrections": 0,
+      "checks": 17,
+      "agreed": 15,
+      "corrections": 1,
       "bySport": {
         "football": {
           "checks": 7,
@@ -276,24 +276,28 @@
         "tennis": {
           "checks": 2,
           "agreed": 2
+        },
+        "alpine": {
+          "checks": 2,
+          "agreed": 2
         }
       },
       "byField": {
         "streaming": {
-          "checks": 9,
-          "agreed": 8
+          "checks": 10,
+          "agreed": 9
         },
         "existence": {
           "checks": 5,
           "agreed": 4
         },
         "time": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 2,
+          "agreed": 2
         }
       },
-      "lastChecked": "2026-10-05T12:00:00Z",
-      "reliability": 0.87
+      "lastChecked": "2026-10-17T09:35:00Z",
+      "reliability": 0.88
     },
     "sjakknm2026.no": {
       "checks": 1,
@@ -1210,9 +1214,9 @@
       "reliability": 1
     },
     "tv2.no": {
-      "checks": 31,
-      "agreed": 31,
-      "corrections": 1,
+      "checks": 32,
+      "agreed": 32,
+      "corrections": 2,
       "bySport": {
         "cycling": {
           "checks": 1,
@@ -1225,19 +1229,23 @@
         "handball": {
           "checks": 20,
           "agreed": 20
+        },
+        "alpine": {
+          "checks": 1,
+          "agreed": 1
         }
       },
       "byField": {
         "streaming": {
-          "checks": 10,
-          "agreed": 10
+          "checks": 11,
+          "agreed": 11
         },
         "time": {
           "checks": 21,
           "agreed": 21
         }
       },
-      "lastChecked": "2026-10-08T12:16:00Z",
+      "lastChecked": "2026-10-17T09:35:00Z",
       "reliability": 1
     },
     "fotball.no": {
@@ -3903,6 +3911,25 @@
         }
       },
       "lastChecked": "2026-10-16T10:00:31Z",
+      "reliability": null
+    },
+    "sportbusiness.com": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 1,
+      "bySport": {
+        "alpine": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "streaming": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-10-17T09:35:00Z",
       "reliability": null
     }
   }
