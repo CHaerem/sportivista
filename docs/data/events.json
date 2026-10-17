@@ -72,59 +72,6 @@
     ]
   },
   {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen kvinner 2026/27",
-    "title": "Fredrikstad – Oppsal",
-    "time": "2026-10-03T13:30:00Z",
-    "endTime": null,
-    "venue": null,
-    "norwegian": true,
-    "homeTeam": "Fredrikstad",
-    "awayTeam": "Oppsal",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-kvinner-8xx41e7v",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-09-30T05:50:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
-      "https://play.tv2.no/sport/haandball/elkjoep-ligaen-kvinner-8xx41e7v",
-      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "handballforbundet",
-        "url": "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/",
-        "basis": "primary",
-        "retrievedAt": "2026-09-30T05:50:00Z",
-        "note": "NHF (handball.no) publiserer terminlisten for Elkjøp-ligaen; avkast lør. 3. okt kl. 15.30 CEST lest via TV 2 Livesport-terminlisten (TV 2 eier/speiler serien). Uavhengig fresh-context write-time fact-check bekreftet dato + avkast + hjemme/borte mot handball.no + TV 2 Livesport lagsider + Flashscore/Sofascore. Sofascore 13.30 UTC = 15.30 CEST bekreftet."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-kvinner-8xx41e7v",
-        "basis": "official",
-        "retrievedAt": "2026-09-30T05:50:00Z",
-        "note": "TV 2 eier og sender Elkjøp-ligaen; alle kamper på TV 2 Play, utvalgte også på lineær TV 2 Sport. Bekreftet mot TV 2 Livesport-terminlisten + uavhengig write-time fact-check."
-      }
-    },
-    "summary": "Elkjøp-ligaen kvinner 2026/27. Fredrikstad hjemme mot Oppsal.\n\nAvkast lørdag 3. oktober kl. 15.30 CEST (13.30 UTC). Norsk visning: TV 2 Play.",
-    "homeTeamEntityId": "fredrikstad-ballklubb",
-    "id": "c8c804aefc1b",
-    "verifiedAt": "2026-09-30T12:05:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste"
-    ]
-  },
-  {
     "sport": "esports",
     "tournament": "ESL Pro League Season 24",
     "title": "G2 Esports vs Natus Vincere",
@@ -5405,8 +5352,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/vintersport",
         "urlKind": "landing"
       }
     ],
@@ -5457,8 +5404,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/vintersport",
         "urlKind": "landing"
       }
     ],
