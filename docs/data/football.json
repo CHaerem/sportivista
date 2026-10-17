@@ -1,36 +1,10 @@
 {
-  "lastUpdated": "2026-10-17T12:53:28.658Z",
+  "lastUpdated": "2026-10-17T16:07:34.564Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
       "name": "Eliteserien",
       "events": [
-        {
-          "id": "football-hamkam-–-bodø/glimt-1792238400000",
-          "title": "HamKam – Bodø/Glimt",
-          "time": "2026-10-17T12:00:00.000Z",
-          "venue": "Briskeby Stadion",
-          "sport": "football",
-          "meta": "Eliteserien",
-          "tournament": "Eliteserien",
-          "streaming": [
-            {
-              "platform": "TV2 Play",
-              "url": "https://play.tv2.no",
-              "type": "tv2"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "HamKam",
-          "awayTeam": "Bodø/Glimt",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": true,
-          "additional": {
-            "status": "STATUS_HALFTIME"
-          }
-        },
         {
           "id": "football-kristiansund-–-aalesund-1792245600000",
           "title": "Kristiansund – Aalesund",
@@ -54,7 +28,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -80,7 +54,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FIRST_HALF"
           }
         },
         {
@@ -219,32 +193,6 @@
       "name": "Premier League",
       "events": [
         {
-          "id": "football-chelsea-at-everton-1792236600000",
-          "title": "Chelsea at Everton",
-          "time": "2026-10-17T11:30:00.000Z",
-          "venue": "Hill Dickinson Stadium",
-          "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
-          "streaming": [
-            {
-              "platform": "USA Net",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Everton",
-          "awayTeam": "Chelsea",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
           "id": "football-liverpool-at-brentford-1792245600000",
           "title": "Liverpool at Brentford",
           "time": "2026-10-17T14:00:00.000Z",
@@ -267,7 +215,7 @@
           "totalPlayers": null,
           "isFavorite": true,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -293,7 +241,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -319,7 +267,7 @@
           "totalPlayers": null,
           "isFavorite": true,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -504,32 +452,6 @@
       "name": "La Liga",
       "events": [
         {
-          "id": "football-atlético-madrid-at-espanyol-1792238400000",
-          "title": "Atlético Madrid at Espanyol",
-          "time": "2026-10-17T12:00:00.000Z",
-          "venue": "RCDE Stadium",
-          "sport": "football",
-          "meta": "La Liga",
-          "tournament": "La Liga",
-          "streaming": [
-            {
-              "platform": "ESPN Deportes",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Espanyol",
-          "awayTeam": "Atlético Madrid",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_HALFTIME"
-          }
-        },
-        {
           "id": "football-elche-at-villarreal-1792246500000",
           "title": "Elche at Villarreal",
           "time": "2026-10-17T14:15:00.000Z",
@@ -552,13 +474,13 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_SECOND_HALF"
           }
         },
         {
-          "id": "football-barcelona-at-real-betis-1792252800000",
+          "id": "football-barcelona-at-real-betis-1792254600000",
           "title": "Barcelona at Real Betis",
-          "time": "2026-10-17T16:00:00.000Z",
+          "time": "2026-10-17T16:30:00.000Z",
           "venue": "Estadio La Cartuja",
           "sport": "football",
           "meta": "La Liga",
@@ -817,7 +739,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -843,7 +765,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FIRST_HALF"
           }
         },
         {
@@ -1082,7 +1004,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1108,7 +1030,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1134,7 +1056,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1160,7 +1082,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1186,7 +1108,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
