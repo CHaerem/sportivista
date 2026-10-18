@@ -1,88 +1,10 @@
 {
-  "lastUpdated": "2026-10-18T17:03:57.019Z",
+  "lastUpdated": "2026-10-18T20:03:06.289Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
       "name": "Eliteserien",
       "events": [
-        {
-          "id": "football-molde-–-start-1792335600000",
-          "title": "Molde – Start",
-          "time": "2026-10-18T15:00:00.000Z",
-          "venue": "Aker Stadion",
-          "sport": "football",
-          "meta": "Eliteserien",
-          "tournament": "Eliteserien",
-          "streaming": [
-            {
-              "platform": "TV2 Play",
-              "url": "https://play.tv2.no",
-              "type": "tv2"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Molde",
-          "awayTeam": "Start",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": true,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
-          "id": "football-sandefjord-–-lillestrøm-1792335600000",
-          "title": "Sandefjord – Lillestrøm",
-          "time": "2026-10-18T15:00:00.000Z",
-          "venue": "Jotun Arena",
-          "sport": "football",
-          "meta": "Eliteserien",
-          "tournament": "Eliteserien",
-          "streaming": [
-            {
-              "platform": "TV2 Play",
-              "url": "https://play.tv2.no",
-              "type": "tv2"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Sandefjord",
-          "awayTeam": "Lillestrøm",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
-          "id": "football-vålerenga-–-brann-1792335600000",
-          "title": "Vålerenga – Brann",
-          "time": "2026-10-18T15:00:00.000Z",
-          "venue": "Intility Arena",
-          "sport": "football",
-          "meta": "Eliteserien",
-          "tournament": "Eliteserien",
-          "streaming": [
-            {
-              "platform": "TV2 Play",
-              "url": "https://play.tv2.no",
-              "type": "tv2"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Vålerenga",
-          "awayTeam": "Brann",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": true,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
         {
           "id": "football-tromsø-–-kfum-oslo-1792343700000",
           "title": "Tromsø – KFUM Oslo",
@@ -106,7 +28,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -166,32 +88,6 @@
     {
       "name": "Premier League",
       "events": [
-        {
-          "id": "football-arsenal-at-nottingham-forest-1792337400000",
-          "title": "Arsenal at Nottingham Forest",
-          "time": "2026-10-18T15:30:00.000Z",
-          "venue": "The City Ground",
-          "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
-          "streaming": [
-            {
-              "platform": "Peacock",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Nottingham Forest",
-          "awayTeam": "Arsenal",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": true,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
         {
           "id": "football-coventry-city-at-tottenham-hotspur-1792436400000",
           "title": "Coventry City at Tottenham Hotspur",
@@ -324,32 +220,6 @@
       "name": "La Liga",
       "events": [
         {
-          "id": "football-alavés-at-celta-vigo-1792332900000",
-          "title": "Alavés at Celta Vigo",
-          "time": "2026-10-18T14:15:00.000Z",
-          "venue": "Balaidos",
-          "sport": "football",
-          "meta": "La Liga",
-          "tournament": "La Liga",
-          "streaming": [
-            {
-              "platform": "ESPN+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Celta Vigo",
-          "awayTeam": "Alavés",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
           "id": "football-real-sociedad-at-málaga-1792341000000",
           "title": "Real Sociedad at Málaga",
           "time": "2026-10-18T16:30:00.000Z",
@@ -372,7 +242,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_FIRST_HALF"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -398,7 +268,7 @@
           "totalPlayers": null,
           "isFavorite": true,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_HALFTIME"
           }
         },
         {
@@ -589,32 +459,6 @@
       "name": "Serie A",
       "events": [
         {
-          "id": "football-atalanta-at-ac-milan-1792339200000",
-          "title": "Atalanta at AC Milan",
-          "time": "2026-10-18T16:00:00.000Z",
-          "venue": "San Siro",
-          "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
-          "streaming": [
-            {
-              "platform": "Paramount+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "AC Milan",
-          "awayTeam": "Atalanta",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_HALFTIME"
-          }
-        },
-        {
           "id": "football-lazio-at-juventus-1792349100000",
           "title": "Lazio at Juventus",
           "time": "2026-10-18T18:45:00.000Z",
@@ -637,7 +481,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_SECOND_HALF"
           }
         },
         {
@@ -827,58 +671,6 @@
     {
       "name": "Bundesliga",
       "events": [
-        {
-          "id": "football-sc-freiburg-at-bayer-leverkusen-1792330200000",
-          "title": "SC Freiburg at Bayer Leverkusen",
-          "time": "2026-10-18T13:30:00.000Z",
-          "venue": "BayArena",
-          "sport": "football",
-          "meta": "Bundesliga",
-          "tournament": "Bundesliga",
-          "streaming": [
-            {
-              "platform": "Fandango",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Bayer Leverkusen",
-          "awayTeam": "SC Freiburg",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
-          "id": "football-tsg-hoffenheim-at-borussia-mönchengladbach-1792337400000",
-          "title": "TSG Hoffenheim at Borussia Mönchengladbach",
-          "time": "2026-10-18T15:30:00.000Z",
-          "venue": "BORUSSIA-PARK",
-          "sport": "football",
-          "meta": "Bundesliga",
-          "tournament": "Bundesliga",
-          "streaming": [
-            {
-              "platform": "Fandango",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Borussia Mönchengladbach",
-          "awayTeam": "TSG Hoffenheim",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_IN_PROGRESS"
-          }
-        },
         {
           "id": "football-borussia-mönchengladbach-at-vfb-stuttgart-1792780200000",
           "title": "Borussia Mönchengladbach at VfB Stuttgart",
@@ -1354,7 +1146,7 @@
         },
         {
           "id": "football-viking-fk-at-aston-villa-1792609200000",
-          "title": "VIKING FK at Aston Villa",
+          "title": "Viking FK at Aston Villa",
           "time": "2026-10-21T19:00:00.000Z",
           "venue": "Villa Park",
           "sport": "football",
@@ -1369,7 +1161,7 @@
           ],
           "norwegian": false,
           "homeTeam": "Aston Villa",
-          "awayTeam": "VIKING FK",
+          "awayTeam": "Viking FK",
           "participants": [],
           "norwegianPlayers": [],
           "totalPlayers": null,
