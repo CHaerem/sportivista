@@ -1,22 +1,26 @@
 {
-	"runAt": "2026-10-18T12:45:00Z",
-	"eventsAdded": 0,
-	"eventsRemoved": 1,
-	"eventsEnriched": 0,
-	"trackedDelta": "Ingen entity-/katalog-tillegg og ingen tracked-drop (nærmeste expires shanghai-masters-2026 + thunderpick-world-championship-2026 19.10 + us-chess-championship-2026 23.10 alle pågår). lastUpdated-bump (04:45Z→12:45Z) + ny notes-entry prepended (eldste droppet, cap 15 holdt).",
+	"runAt": "2026-10-18T22:40:00Z",
+	"eventsAdded": 3,
+	"eventsRemoved": 0,
+	"trackedDelta": "Ingen tracked-entitets-/katalog-endring. Oppdaterte reason-tekster på f1-world-championship-2026 (Mexico + São Paulo kvalik boardet; korrigerte 17.10-notens feil om at São Paulo var sprinthelg) og casper-ruud (Swiss Indoors Basel boardet som next-fixture). Prependet run-note, trimmet notes til 15, satte lastUpdated 22:40Z.",
 	"quality": {
 		"pass": true,
-		"score": 82,
+		"score": 80,
 		"failures": [
-			"Repeated unaddressed structural recommendations (carry-forward, -15): esports.js 100T-only-filter (all CS2 utover 100T er research-avhengig), golf-fetcher uten look-ahead, ingen wholesale håndball-fetcher/authority-contract. Alle korrekt eskalert som carry-forward HIGH self-repair/improve-saker (lib-/fetcher-rotårsaker utenfor research-mandatet); loopen re-flagger kjente problemer - binder self-repair/improve, ikke research."
+			"research-log.json ikke oppdatert ved grading-tidspunktet (nå skrevet — denne loggen lukker funnet)",
+			"Gjentatte carry-forward strukturflagg fortsatt åpne (esports.js 100T-only-filter, golf-fetcher uten look-ahead, ingen wholesale håndball-fetcher/authority-contract) — korrekt eskalert til self-repair/improve, men tilbakevendende",
+			"Mindre: F1-event-familien lener seg på formula1.com som delt evidens-domene (dempet av ett distinkt tredje domene per event + uavhengig write-time fact-check)"
 		]
 	},
 	"notes": [
-		"NO-OP på nye events + 1 cleanup. Tavla komplett over neste uke på tvers av alle i-sesong-sporter (130 events, validate-events 0 errors). Fotball wholesale-dekket av statiske fetchere (PL r8, Eliteserien r24, OBOS Lyn-Moss 18. okt, La Liga/Serie A/Bundesliga, CL MD3 20.-21. okt m/Bodø/Glimt-Napoli + Barcelona-PSG, Europa League 22.-23. okt m/Viking-Aston Villa), F1 USA GP kvalik (ai-research 24. okt) + race (static 25. okt), golf Genesis/Bermuda 22. okt (static), alpint Sölden 24.-25. okt (ai-research), håndball + CS2 Thunderpick-finale i dag boardet.",
-		"CLEANUP: ryddet 1 ferdigspilt stale ai-research-event som feilet validate-events (past-event): OBOS-ligaen Bryne-Lyn 4. okt (id 591b47efd865) - Lyns bortekamp 2 uker forbi (burde vært ryddet av forrige kjøring). Lyns senere kamper dekket (Haugesund 14/10 spilt, Moss 18/10 boardet). Events 131->130, validate 0 errors.",
-		"REELL RESEARCH på de to høyest-risiko research-avhengige postene: (a) Ruud Swiss Indoors Basel (ATP 500, 26. okt-1. nov) - offisiell trekning FORTSATT upublisert; eneste treff tennistonic Ruud-Wawrinka internt inkonsistent (no.3 vs ATP-historikk) -> forkastet som i tidligere kjøringer. Kan ikke boarde R1 uten offisiell draw. Basel ~9 d ut, utenfor ~5-d fyll-vindu = PÅ CADENCE (coverage-audit medium gap recurrences 11, bevisst holdt medium). HARD regel uendret: ekte high-miss hvis Basel uboardet etter ~23. okt / Paris Masters etter ~27. okt. (b) 100 Thieves CS2 (entity-gated, research-avhengig pga. esports.js 100T-only-filter) - INGEN ny kamp kunngjort etter Stake Pulse Beat III (ferdig 17. okt, 100T slått ut); WebSearch nov 2026 ga kun stale jul-aug-treff (rdy.gg), ingen ny 100T-fixture.",
-		"Step 1 reconcile: ingen utløpte tracked-entries å droppe; alle catalog.tier2-entiteter (athletes/teams/tournaments) + tier1-i-sesong-sporter dekket; next-fixture resolvert for alle fulgte (Lyn-Moss 18. okt, Hovland Genesis/Bermuda 22. okt, Ruud Basel på cadence, Carlsen Total Chess-pilot 11. nov, 100T ingen kommende web-bekreftet tomt).",
-		"Step 2.6 horisont-scan: ingen ny in-scope katalog-/demand-kandidat. coverage-gaps 09:19Z gapCount 3 / anomalyCount 0 - Man City (Haaland-dobbel-referat, imminent=false), Mesterligaen (NRK kampreferat) og BLAST (falskt ord-treff i Guardian Europe is a blast) alle imminent=false nyhets-/falske treff, ingen demand[]. Vinteridrett (biathlon/langrenn/hopp/kombinert) starter ~sent nov (alpint-åpningen Sölden boardet); sykkel WorldTour-sesongen slutt etter Guangxi 18. okt - korrekt tomt. Step 2.8 registry-reconciliation IKKE kjørt (søndag; mandags-deep-sveip).",
-		"SIGNALBILDE: coverage-audit 08:35Z IKKE eskalert (0 high recall-gaps, 1 medium tennis-horisont-gap på cadence recurrences 11). scout 19:00Z + 16:15Z begge quiet. Alle 6 WP-243-kontrakter met forrige build (f1/eliteserien/premier-league/dp-world-tour/pga-tour/tennis), breached []."
+		"PRIMÆRLEVERANSE: 3 ai-research-events boardet på de to høyest-risiko research-avhengige postene på cadence. F1-kvalik-mandat: Mexico City GP kvalik (lør. 31. okt 21.00 UTC, id 1051e200f667, high) + São Paulo GP kvalik (lør. 7. nov 18.00 UTC, id c2dd6b9c5607, high) — kun racene lå på tavla via statisk ESPN. Tider DIREKTE fra formula1.com offisielle timeplan (provenance.time.basis=primary, render i UTC; race-tidene matcher de statiske eksakt). São Paulo bekreftet IKKE sprinthelg i 2026 (Interlagos droppet fra sprintkalenderen) → korrigerte tidligere notes-feil.",
+		"Next-fixture: Swiss Indoors Basel (ATP 500, 24. okt–1. nov, id 0cb3d6dbef48, MEDIUM) boardet med Casper Ruud navngitt — Ruud hadde ingen kommende fixture etter at Shanghai-vinduet lukker 18.–19. okt. I tråd med coverage-audit 08:35Z. Datoer to-kilde-bekreftet + Ruud arrangør-bekreftet (bluewin). MEDIUM pga. upublisert kamptrekning + ryggforbehold → verify firmer dag-1-tid ~24.–25. okt. TV 2 Play (TV 2 holder ATP-tour-pakken 2024–2026).",
+		"Write-time fact-check: én uavhengig fresh-context fact-checker CONFIRMED alle 3 events. Grader-subagent: pass, score 80.",
+		"Brussels (ATP 250, 17.–25. okt) IKKE boardet — coverage-audit behandler Shanghai→Basel direkte, turneringen alt i gang + Ruuds deltakelse ubekreftet.",
+		"Step 1 reconcile: ingen utløpte tracked-entries. Step 2.6 horisont-scan: ingen ny in-scope katalog-/demand-kandidat (ingen demand[]). Step 2.8 registry IKKE kjørt (søndag; mandags-deep-sveip).",
+		"Signalbilde grønt: coverage-audit 08:35Z 0 high recall-gaps, scout 19:00Z/16:15Z quiet, alle 6 WP-243-kontrakter met (breached []), coverage-gaps 20:03Z gapCount 2 begge imminent=false (Molde/Brann referatstøy, dekket i Eliteserien-static).",
+		"STRUKTURELLE HIGH-FLAGG STÅR (self-repair/improve, carry-forward): esports.js 100T-only-filter, golf-fetcher uten look-ahead, ingen wholesale håndball-fetcher/authority-contract, norwegian-rights.js ATP/alpint-churn.",
+		"MERK: forsøkte å legge ATP-tour→TV 2 Play (2024–2026) som varig prior i norwegian-rights-skillen, men Edit på skillen ble nektet tillatelse denne kjøringen — flagget for neste runde.",
+		"validate-events: 107 events, 0 errors (uendrede ikke-blokkerende warnings: 39 WP-246 landing-page-URL + 2 WP-242 weak-channel-basis)."
 	]
 }
