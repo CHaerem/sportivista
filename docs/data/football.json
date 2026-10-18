@@ -1,36 +1,10 @@
 {
-  "lastUpdated": "2026-10-18T13:45:07.222Z",
+  "lastUpdated": "2026-10-18T17:03:57.019Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
       "name": "Eliteserien",
       "events": [
-        {
-          "id": "football-sarpsborg-08-–-rosenborg-1792326600000",
-          "title": "Sarpsborg 08 – Rosenborg",
-          "time": "2026-10-18T12:30:00.000Z",
-          "venue": "Sarpsborg Stadion",
-          "sport": "football",
-          "meta": "Eliteserien",
-          "tournament": "Eliteserien",
-          "streaming": [
-            {
-              "platform": "TV2 Play",
-              "url": "https://play.tv2.no",
-              "type": "tv2"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Sarpsborg 08",
-          "awayTeam": "Rosenborg",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": true,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
         {
           "id": "football-molde-–-start-1792335600000",
           "title": "Molde – Start",
@@ -54,7 +28,7 @@
           "totalPlayers": null,
           "isFavorite": true,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -80,7 +54,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -106,7 +80,7 @@
           "totalPlayers": null,
           "isFavorite": true,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -193,84 +167,6 @@
       "name": "Premier League",
       "events": [
         {
-          "id": "football-sunderland-at-afc-bournemouth-1792328400000",
-          "title": "Sunderland at AFC Bournemouth",
-          "time": "2026-10-18T13:00:00.000Z",
-          "venue": "Vitality Stadium",
-          "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
-          "streaming": [
-            {
-              "platform": "Peacock",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "AFC Bournemouth",
-          "awayTeam": "Sunderland",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FIRST_HALF"
-          }
-        },
-        {
-          "id": "football-crystal-palace-at-brighton-&-hove-albion-1792328400000",
-          "title": "Crystal Palace at Brighton & Hove Albion",
-          "time": "2026-10-18T13:00:00.000Z",
-          "venue": "American Express Stadium",
-          "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
-          "streaming": [
-            {
-              "platform": "Peacock",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Brighton & Hove Albion",
-          "awayTeam": "Crystal Palace",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FIRST_HALF"
-          }
-        },
-        {
-          "id": "football-manchester-united-at-leeds-united-1792328400000",
-          "title": "Manchester United at Leeds United",
-          "time": "2026-10-18T13:00:00.000Z",
-          "venue": "Elland Road",
-          "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
-          "streaming": [
-            {
-              "platform": "USA Net",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Leeds United",
-          "awayTeam": "Manchester United",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FIRST_HALF"
-          }
-        },
-        {
           "id": "football-arsenal-at-nottingham-forest-1792337400000",
           "title": "Arsenal at Nottingham Forest",
           "time": "2026-10-18T15:30:00.000Z",
@@ -293,7 +189,7 @@
           "totalPlayers": null,
           "isFavorite": true,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_SECOND_HALF"
           }
         },
         {
@@ -428,32 +324,6 @@
       "name": "La Liga",
       "events": [
         {
-          "id": "football-racing-santander-at-osasuna-1792324800000",
-          "title": "Racing Santander at Osasuna",
-          "time": "2026-10-18T12:00:00.000Z",
-          "venue": "El Sadar",
-          "sport": "football",
-          "meta": "La Liga",
-          "tournament": "La Liga",
-          "streaming": [
-            {
-              "platform": "ESPN+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Osasuna",
-          "awayTeam": "Racing Santander",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
           "id": "football-alavés-at-celta-vigo-1792332900000",
           "title": "Alavés at Celta Vigo",
           "time": "2026-10-18T14:15:00.000Z",
@@ -476,7 +346,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -502,7 +372,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FIRST_HALF"
           }
         },
         {
@@ -719,58 +589,6 @@
       "name": "Serie A",
       "events": [
         {
-          "id": "football-lecce-at-udinese-1792319400000",
-          "title": "Lecce at Udinese",
-          "time": "2026-10-18T10:30:00.000Z",
-          "venue": "Stadio Friuli",
-          "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
-          "streaming": [
-            {
-              "platform": "Paramount+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Udinese",
-          "awayTeam": "Lecce",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
-          "id": "football-como-at-fiorentina-1792328400000",
-          "title": "Como at Fiorentina",
-          "time": "2026-10-18T13:00:00.000Z",
-          "venue": "Stadio Artemio Franchi",
-          "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
-          "streaming": [
-            {
-              "platform": "Paramount+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Fiorentina",
-          "awayTeam": "Como",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FIRST_HALF"
-          }
-        },
-        {
           "id": "football-atalanta-at-ac-milan-1792339200000",
           "title": "Atalanta at AC Milan",
           "time": "2026-10-18T16:00:00.000Z",
@@ -793,7 +611,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_HALFTIME"
           }
         },
         {
@@ -1032,7 +850,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_IN_PROGRESS"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1058,7 +876,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_IN_PROGRESS"
           }
         },
         {
