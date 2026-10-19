@@ -1,24 +1,42 @@
 {
-  "checkedAt": "2026-10-18T12:26:05Z",
+  "checkedAt": "2026-10-19T15:14:09Z",
   "widths": [375, 393, 900],
   "verdict": "issues",
   "findings": [
     {
+      "width": 900,
+      "area": "agenda row — Champions League, \"Fenerbahce – Slavia Prague\" (18:45, tirsdag, \"I morgen\")",
+      "issue": "The crest slot shows a plain red five-pointed star, not Fenerbahçe's actual club crest (yellow/navy shield). Neighboring Champions League rows in the same block (Napoli, PSG, VfB Stuttgart, etc.) all render a correct, specific club crest, so this looks like a missing/unmapped crest asset for this one club rather than a general icon failure.",
+      "severity": "medium"
+    },
+    {
+      "width": 900,
+      "area": "agenda row — Champions League, \"Sabah – Borussia Dortmund\" (18:45, tirsdag, \"I morgen\")",
+      "issue": "The crest shown is Borussia Dortmund's (black/yellow \"BVB\" badge) — the AWAY team — even though the row is laid out \"Sabah – Borussia Dortmund\" and every other row in the agenda (e.g. \"Monza – Cagliari\", \"Como – Manchester United\", \"Borussia Dortmund – Eintracht Frankfurt\" later in the week) shows the FIRST-listed team's crest. Sabah's own crest is missing/not shown, and the Dortmund badge appearing in that slot reads as if Dortmund were the home side.",
+      "severity": "medium"
+    },
+    {
       "width": 375,
-      "area": "agenda row — Serie A, Juventus – Lazio (20:45, søndag)",
-      "issue": "The Juventus crest fails to render: the icon slot shows a plain outlined box (browser's default broken-image placeholder), not a club crest. Every neighboring row (Real Madrid, Udinese, Celta Vigo, etc.) renders its crest correctly, so this looks like a missing/broken image asset specific to Juventus rather than a general icon failure.",
+      "area": "agenda row — Champions League, \"Lille – Galatasaray\" (18:45, onsdag 21. oktober)",
+      "issue": "The crest shown is a yellow/red lion-style badge that matches Galatasaray's branding, not Lille's actual crest (navy/red \"LOSC\" shield) — the same first-listed-team-crest mismatch pattern as the Sabah/Dortmund row above, recurring across at least two Champions League fixtures this week.",
+      "severity": "medium"
+    },
+    {
+      "width": 900,
+      "area": "agenda row — Eliteserien, \"Viking – Tromsø\" (14:30, søndag 25. oktober)",
+      "issue": "The icon in the crest slot is a small flag-style graphic with horizontal red/yellow/red stripes — it reads as the Spanish national flag, not a Viking FK club crest. Every other Eliteserien row visible in the agenda (Bodø/Glimt – Vålerenga, Arsenal... / HamKam – Rosenborg, Sandefjord – Runar Elite) renders an actual, correct club crest, so this one stands out as a wrong/misplaced icon rather than an intentional \"no crest available\" fallback (handball rows use a plain calendar icon for that case, which looks different from this).",
       "severity": "medium"
     }
   ],
   "notes": [
-    "Checked at 375/393/900px, dark theme, full-page plus scrolled close-up crops to read small text.",
-    "No horizontal scroll or clipped text at 375px; multi-word fixtures (e.g. 'Borussia Mönchengladbach – TSG Hoffenheim') wrap onto extra lines rather than truncating — full names stay readable, nothing hidden.",
-    "Channel column is consistently Norwegian (TV 2 Play, Viaplay, VG TV, NRK-adjacent, Twitch(Thunderpick) for esports) — no foreign broadcaster (FOX/ESPN/Sky) seen anywhere in the agenda.",
-    "Rows with no known channel show an honest faint '–' (e.g. several Bundesliga/Serie A fixtures) instead of guessing — matches the design intent.",
-    "Round-robin/odd sports (chess 'pågår nå', esports FURIA/Team Falcons, alpine Sölden, Formula 1 kvalifisering) all render cleanly with correct flags/icons and round/stage labels.",
-    "The floating 'Assistent' button overlaps mid-agenda rows at all three widths, as sanctioned by DESIGN.md — it never covers the last agenda/news row or the footer in any of the captured scroll positions, so no finding raised for it.",
-    "At 900px the layout stays a single centered column (not a grid), consistent with the calm-design max-640px rule; the Assistent button sits over mid-list content there too without hiding anything critical.",
-    "National flags (Norway on tennis/golf rows) and most club crests render crisply; only the one Juventus instance above was a broken image.",
-    "Footer line ('Dataene er ~3t gamle', AI-budsjett) and day headings are intact and aligned at all widths checked."
+    "Checked at 375/393/900px in the light (grouped-light) theme — full-page captures per the standard three commands, plus additional non-full-page / scrolled viewport captures at the same widths to read small text and crests at full fidelity (the very tall full-page PNGs get downsampled enough on display to blur fine detail like crest artwork).",
+    "No horizontal scroll or clipped/truncated text found at any width, including 375px — multi-word fixtures and headline text wrap onto extra lines cleanly; nothing is cut off at the screen edge.",
+    "Channel column is consistently Norwegian (TV 2 Play, Viaplay, HBO Max (Sport), VG TV) wherever a channel is known; unknown channels show an honest faint '–' (several Bundesliga/Serie A fixtures) rather than guessing. No foreign broadcaster (FOX/ESPN/Sky) seen anywhere.",
+    "Most club crests render correctly and crisply — Monza, Parma, Tottenham, Getafe, Chelsea, Valencia, Borussia Dortmund (as the away/home team elsewhere), Lazio, Atlético Madrid, Internazionale, Athletic Club, Bodø/Glimt, Arsenal, HamKam, Napoli, PSG, Barcelona, Real Madrid, VfB Stuttgart, Como all show a clearly correct, specific crest — the four crest mismatches above are isolated to specific clubs/rows, not a general rendering failure.",
+    "Handball/non-football rows (Kolstad – SC Magdeburg, Viking TIF – Drammen handball, Sandefjord – Runar Elite) show either a real crest or a plain generic calendar icon, which reads as an intentional 'no crest asset for this sport' fallback, distinct from the wrong-crest cases flagged above.",
+    "Must-see accent dots are used sparingly (a handful of rows per day), not on every row — consistent with the calm-design intent.",
+    "The floating 'Assistent' button overlaps mid-agenda rows at all three widths, as sanctioned by DESIGN.md — checked the actual end of the page (last agenda/news row and the full footer: 'Oppdatert 19.10.2026', 'Abonner i kalender', 'last ned', 'Aktivitet', 'Personvern', AI-budsjett line) at 375px and 900px, and the button sits clear of all of it in both cases — no occlusion finding.",
+    "Header, 'Dette dekker vi' / 'Merker og kilder' disclosures, and footer are all intact and aligned at every width checked.",
+    "Round/stage labels (e.g. cup round names) were not observed in the current schedule window — nothing in view required one, so this could not be assessed either way."
   ]
 }
