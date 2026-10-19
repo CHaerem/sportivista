@@ -62,6 +62,30 @@ describe("registry files against registry.schema.json", () => {
 	});
 });
 
+// The registry is the entity follow-universe; the schema's own description says
+// its sport tag uses "samme vokabular som catalog.json". A value catalog.json can
+// stamp on an entity (e.g. "beach volleyball" on Mol/Sørum, catalog tier2) but the
+// registry schema rejects silently blocks the research/improve agents from
+// registering that entity — the drift the research-log flagged as a FUNN for improve.
+describe("sport vocabulary tracks catalog.json entity vocabulary", () => {
+	const catalogSchema = JSON.parse(
+		fs.readFileSync(path.join(configDir, "catalog.schema.json"), "utf-8")
+	);
+	const registrySports = schema.definitions.entity.properties.sport.enum;
+	const catalogEntitySports =
+		catalogSchema.definitions.entity.anyOf.find((s) => s.type === "object")
+			.properties.sport.enum;
+
+	it("the registry sport enum covers every catalog entity sport", () => {
+		const missing = catalogEntitySports.filter((s) => !registrySports.includes(s));
+		expect(missing, `registry sport enum missing: ${missing.join(", ")}`).toEqual([]);
+	});
+
+	it("includes beach volleyball (Mol/Sørum, catalog tier2)", () => {
+		expect(registrySports).toContain("beach volleyball");
+	});
+});
+
 // WP-185: the row avatar is only as honest as this metadata. These pin the
 // invariants the JSON-Schema keywords can't state.
 describe("WP-185 identity metadata (country / national / colors)", () => {
