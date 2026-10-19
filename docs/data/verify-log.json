@@ -1,15 +1,16 @@
 {
-  "runAt": "2026-10-18T09:50:00Z",
-  "checked": 1,
-  "confirmed": 1,
+  "runAt": "2026-10-19T11:05:00Z",
+  "checked": 8,
+  "confirmed": 8,
   "amended": 0,
   "removed": 0,
   "notes": [
-    "10 ai-research/confidence-events i vinduet 18.–25. okt gjennomgått.",
-    "VERIFISERT: f1 'United States Grand Prix – kvalifisering' (fc14ac95a445, 24. okt 21.00 UTC) — var eneste event uten verifiedAt. Bekreftet mot formula1.com (arrangøren) + f1-fansite: lør. 24. okt 16.00 CDT = 21.00 UTC, vanlig helg uten sprint. Viaplay bekreftet mot authority.json (f1:world-championship). verificationStatus=confirmed; kalibreringslinje (formula1.com/time/agreed) lagt til.",
-    "Søndagens løp (69a28a1006d1, 25. okt 20.00 UTC, ESPN) ligger konsistent med kvaliken (15.00 CDT = 20.00 UTC) — ingen ESPN-feildatering denne helgen.",
-    "Ikke re-hentet (fersk + solid proveniens): Lyn–Moss (c06d99e, verifisert 16.10 mot fotball.no primær), CSM București–Sola HK (999ae02, 11.10), tre Elkjøp-ligaen-kamper i dag (a30289/12c0cd/8a097a, 12.10 mot TV2+betexplorer). Håndball-hallnavn ikke funnet i autoritativ kilde — lot venue:null stå framfor å gjette (handball.no JS-rendret).",
-    "Alpint Sölden storslalåm (4fbeafb/7ce116, 24.–25. okt): tid uavhengig bekreftet via web (kvinner lør, menn søn, 10.00/13.00 lokal) — matcher board (verifisert 17.10). Streaming TV 2 Play forblir ÆRLIG tentativ: NRKs programoversikt oppgir fortsatt «ikke bestemt» for selve åpningen; ingen norsk kanal bekreftet enda.",
-    "Chess US Championship (3dc793f, hviledag 18.10) og Thunderpick WC-finale (9f52ef6, slutter 18.10): ingen endring siden siste verifisering (12.10/14.10)."
+    "12 ai-research/confidence-events i vinduet 19.-26. okt gjennomgatt; 8 uverifiserte (resten verifisert 17.-18. okt, ferske) verifisert naa.",
+    "VERIFISERT chess European Chess Club Cup (795b3da20459): chess-results.com (offisielt parings-/resultatsystem, lenket fra eccc26.me) + europechess.org bekrefter Budva, 7 runder 14.00 lokal = 12.00 UTC, runde 3 19. okt. Fester rundetiden research flagget medium. confirmed.",
+    "VERIFISERT football Sandnes Ulf - Lyn (60608c920d56, high): FotMob bekrefter son. 25. okt 13.30 UTC (14.30 CET etter sommertid-slutt), OBOS-ligaen (= 1. divisjon). Korroborerer fotball.nos primaer-lesing. confirmed.",
+    "VERIFISERT handball Kolstad - SC Magdeburg (70745a4a9ce1, high): eurohandball.com (EHF, arrangoren) bekrefter tor. 22. okt 20.45 CEST = 18.45 UTC, venue Saupstad/Kolstad Arena (allerede riktig). confirmed.",
+    "VERIFISERT 5x Elkjop-ligaen handball (Sandefjord-Runar 21.10, Elverum-OIF 24.10, Viking TIF-Drammen 24.10, Sandnes-Bergen 25.10, Fjellhammer-Bergsoy 25.10): betexplorer-tidene matcher board etter tidssonekonvertering. ADVARSEL: betexplorer + flashscore.mobi er samme Livesport-eier (ikke uavhengige kilder); handball.no (forbundet/tid-autoritet) var fremdeles JS-rendret/uleselig ved direkte henting, saa uavhengig autoritets-korroborasjon staar fortsatt ut - confidence beholdt MEDIUM, verificationStatus=confirmed mot naabar reachable kilde.",
+    "Ikke re-hentet (ferske + solid provenie): f1 US GP kvalifisering (verifisert 18.10), alpine Solden GS kvinner/menn (17.10 amended), chess US Championship (3dc793f85b5e, round-robin uten utslag, verifisert 12.10).",
+    "Ingen amendments eller removals denne kjoringen; ingen tentative-kanaler i vinduet; ingen knockout-events med tom-men-avgjort oppsett."
   ]
 }
