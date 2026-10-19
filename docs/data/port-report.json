@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T10:30:28.691Z",
+  "generatedAt": "2026-10-19T17:19:49.909Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 12.01,
+    "oldestGapAgeDays": 12.3,
     "escalatable": 1,
     "catalogMatched": 1,
     "auditedAt": "2026-10-19T09:39:00Z",
@@ -35,7 +35,7 @@
       {
         "interest": "Tennis — Casper Ruuds høst-innendørssving (Rolex Paris Masters ATP 1000 + Bybit Stockholm Open ATP 250, Ruud tittelforsvarer i Stockholm)",
         "severity": "medium",
-        "ageDays": 12.01,
+        "ageDays": 12.3,
         "recurrences": 12,
         "catalogMatched": true
       }
@@ -43,21 +43,14 @@
   },
   "amendRate": {
     "nearTermRate": 0,
-    "nearTermChecked": 1,
+    "nearTermChecked": 8,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-10-18T09:50:00Z",
+    "verifyRunAt": "2026-10-19T11:05:00Z",
     "windowRate": 0,
-    "windowChecks": 69,
+    "windowChecks": 67,
     "windowAmendments": 0,
     "windowCorrections": 3,
     "byDay": [
-      {
-        "date": "2026-10-05",
-        "checks": 10,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-10-06",
         "checks": 4,
@@ -148,20 +141,27 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-10-19",
+        "checks": 8,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-19T10:30:23.848Z",
+    "buildCheckedAt": "2026-10-19T17:19:44.936Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-19T08:20:25.791Z",
-    "manifestAgeHours": 2.17,
+    "manifestGeneratedAt": "2026-10-19T10:30:30.396Z",
+    "manifestAgeHours": 6.82,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-18T09:50:00Z",
-    "verifyAgeHours": 24.67,
+    "checkedAt": "2026-10-19T11:05:00Z",
+    "verifyAgeHours": 6.25,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -170,6 +170,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-19T10:30:28.690Z"
+    "generatedAt": "2026-10-19T17:19:49.908Z"
   }
 }
