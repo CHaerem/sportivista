@@ -1,6 +1,6 @@
 {
 	"$schema": "./authority.schema.json",
-	"updatedAt": "2026-10-10",
+	"updatedAt": "2026-10-19",
 	"notes": "WP-241 · Autoritetskartet: hvem SKAPER faktumet, per konkurranse på tavla. To kilder per event, fordi produktets to kjernefelt har to ulike skapere: TIDEN settes av arrangøren/ligaen/forbundet, KANALEN av kringkasteren selv. Id-ene peker inn i scripts/config/sources.json (WP-240) — registeret er sannheten om hvilket domene som ER arrangøren, og det er lookalike-vernet: da dette kartet ble seedet sto lookalike-domenet franceletour.com som evidens på en Tour de France-etappe, mens letour.fr (A.S.O., som faktisk lager ruta og starttidene) forekom NULL ganger i hele events.json. Research slår opp konkurransen her og går til autoriteten FØRST (scripts/agents/research.md); verify sjekker kanalen mot kringkasterens egen kilde (scripts/agents/verify.md); scripts/lib/provenance.js migrerer flat evidence til per-faktum-proveniens (WP-242) med det samme kartet. SEEDET 29.07.2026 med hver konkurranse som faktisk sto på tavla den dagen; kanal-valgene speiler .claude/skills/norwegian-rights (prioren) og tavlas verifiserte verdier. AI-VEDLIKEHOLDT som catalog.json: research utvider kartet når en ny konkurranse dekkes — alltid med arrangørens VIRKELIGE domene, registrert i sources.json først.",
 	"competitions": [
 		{
@@ -164,6 +164,32 @@
 					}
 				],
 				"note": "Offisiell EWC-strøm; sendes også på Chess.com (registerets chess-com-oppføring er aggregator for terminlister — strømmen deres er likevel offisiell for dette formatet)."
+			}
+		},
+		{
+			"id": "chess:european-club-cup",
+			"name": "European Chess Club Cup",
+			"sport": "chess",
+			"match": [
+				"european chess club cup",
+				"european club cup",
+				"eccc"
+			],
+			"time": {
+				"sourceIds": [
+					"european-chess-union"
+				],
+				"note": "ECU sanksjonerer/arrangerer; rundetidene publiseres på turneringssiden (eccc26.me) og i det offisielle paringssystemet chess-results.com (lenket fra arrangøren). 2026: Budva, runder 17.–23. okt, alle 14:00 lokal."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "european-chess-union",
+						"platform": "ECU YouTube",
+						"note": "Arrangørens egen strøm (youtube.com/@EuropeanChessUnion) — selv-strømmende arrangør."
+					}
+				],
+				"note": "Ingen norsk TV-rettighet; gratis online. Chess.com host-er offisielle live-brett lenket fra arrangørsiden (registerets chess-com er aggregator og kan ikke bære kanalen — brettene er likevel offisielle for dette formatet, jf. chess:esports-world-cup-mønsteret)."
 			}
 		},
 		{
@@ -1025,6 +1051,36 @@
 					11
 				],
 				"note": "Tilnærmet ukentlige turneringer januar–november (FedExCup + høstserien); min 1 innen 21 d. Horisonten er 21 (ikke 14 som DP World Tour) fordi PGA Tour har ÉN legitim ~2,5-ukers sesongpause mellom TOUR Championship (~30. aug) og FedExCup Fall-åpningen (2026: Biltmore Championship 17.–20. sep, etter at Procore falt bort) — med 14 d fyrte kontrakten et falskt brudd hver kjøring gjennom hele det vinduet mens golf-dekningen faktisk var komplett (Biltmore boardet). 21 d tåler pausen; resten av sesongen er ukentlig så løftet er uendret i praksis."
+			}
+		},
+		{
+			"id": "handball:ehf-champions-league",
+			"name": "EHF Champions League (menn + kvinner)",
+			"sport": "handball",
+			"match": [
+				"ehf champions league",
+				"champions league håndball"
+			],
+			"time": {
+				"sourceIds": [
+					"eurohandball"
+				],
+				"note": "EHF (eurohandball.com / ehfcl.eurohandball.com) arrangerer og publiserer kamptidene — klubbsidene viser gruppespillets terminliste. NB: EHF-sidene merker tid-kolonnen «CET» hele året men viser sentraleuropeisk LOKAL tid (CEST om sommeren) — konverter eksplisitt mot dato (sommertid slutter 25. okt)."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "tv2",
+						"platform": "TV 2 Play",
+						"note": "Norske CL-sendinger har gått på TV 2 Sport 2 / TV 2 Play (verify-bekreftet på Kolstad-/Esbjerg-kamper høsten 2026); eksakt sub-kanal per kamp → verify firmer."
+					},
+					{
+						"sourceId": "viaplay",
+						"platform": "Viaplay",
+						"note": "EHFs egen kunngjøring: langtidsavtale med Viaplay Group for europeisk håndball i Skandinavia t.o.m. 2029/30, DELT med TV 2 i Norge — kamper uten norsk klubb kan ligge hos Viaplay; verify firmer per kamp."
+					}
+				],
+				"note": "Delt Viaplay/TV 2-avtale (EHF-kunngjøring, fact-check 2026-10-19) — list begge til kampens kanal er bekreftet."
 			}
 		},
 		{

@@ -948,6 +948,50 @@
 			"calibrationKey": "esportsworldcup.com"
 		},
 		{
+			"id": "eurohandball",
+			"name": "European Handball Federation (EHF)",
+			"publisher": "European Handball Federation",
+			"url": "https://www.eurohandball.com",
+			"endpoints": [
+				"https://www.eurohandball.com",
+				"https://ehfcl.eurohandball.com"
+			],
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"handball:ehf-champions-league"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-10-19"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt har ingen AI-/TDM-regler (ingen GPTBot/CCBot/anthropic/Google-Extended-oppføringer); kun CMS-stier er blokkert for alle + en navngitt SEO-bot-blokkliste.",
+				"evidence": [
+					"https://www.eurohandball.com/robots.txt"
+				],
+				"checkedAt": "2026-10-19"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`User-agent: *` blokkerer kun CMS-/feilsider (/umbraco/, /bin/ m.fl.) — klubb-/kampsidene vi leser er åpne; Crawl-delay: 5.",
+				"checkedAt": "2026-10-19"
+			},
+			"rateLimit": "Crawl-delay: 5 (robots.txt)",
+			"calibrationKey": "eurohandball.com",
+			"notes": "Registrert av research 2026-10-19 (deep-tier): EHF er ARRANGØREN av EHF Champions League (menn + kvinner) og primærkilde på kamptider — tavlas CL-events (Kolstad, Team Esbjerg/Mørk) har hele tiden sitert provenance.time.sourceId=eurohandball, men id-en manglet i registeret (hengende referanse); denne oppføringen lukker det. Kalibrering: eurohandball.com målt 1.0 (8 sjekker). Vilkårstekst ikke gjennomgått (unknown)."
+		},
+		{
 			"id": "european-athletics",
 			"name": "European Athletics",
 			"publisher": "European Athletic Association",
@@ -983,6 +1027,49 @@
 				"checkedAt": "2026-07-29"
 			},
 			"notes": "Seedet av WP-241 (autoritetskartet): det europeiske friidrettsforbundet — arrangør av EM friidrett (på tavla i dag) og autoritativ på mesterskapets tidsskjema. Vilkår ennå ikke lest."
+		},
+		{
+			"id": "european-chess-union",
+			"name": "European Chess Union (ECU)",
+			"publisher": "European Chess Union",
+			"url": "https://www.europechess.org",
+			"endpoints": [
+				"https://www.europechess.org",
+				"https://eccc26.me",
+				"https://chess-results.com"
+			],
+			"role": "primary",
+			"status": "in-use",
+			"authorityFor": [
+				"chess:european-club-cup"
+			],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"entry-list"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-10-19"
+			},
+			"tdmReservation": {
+				"status": "none",
+				"mechanism": "robots.txt (europechess.org) har ingen AI-/TDM-regler — kun /wp-admin/ er blokkert.",
+				"evidence": [
+					"https://www.europechess.org/robots.txt"
+				],
+				"checkedAt": "2026-10-19"
+			},
+			"robots": {
+				"allowsOurPaths": true,
+				"note": "`User-agent: *`, kun /wp-admin/ disallowed; ingen crawl-delay.",
+				"checkedAt": "2026-10-19"
+			},
+			"calibrationKey": "europechess.org",
+			"notes": "Registrert av research 2026-10-19 (deep-tier) da European Chess Club Cup 2026 (Budva) ble boardet. ECU er FORBUNDET som sanksjonerer og arrangerer European Chess Club Cup; turneringens egen side (eccc26.me) og det offisielle parings-/resultatsystemet chess-results.com (Swiss-Manager, lenket fra arrangøren) er publiseringsendepunktene for rundetider/tropper. Robots lest 19.10 (åpen); vilkårstekst ikke gjennomgått (unknown)."
 		},
 		{
 			"id": "european-tour",
@@ -1203,6 +1290,43 @@
 				"checkedAt": "2026-07-29"
 			},
 			"notes": "KANDIDAT og en av de VIKTIGSTE: vintersesongen er produktets nisjelansering (COMMERCIAL.md spor C, uke 48), og langrenn/alpint/hopp har ingen fetcher i dag — de dekkes utelukkende av research-agenten. FIS er terminlistas opphav."
+		},
+		{
+			"id": "flashscore",
+			"name": "Flashscore / BetExplorer (Livesport)",
+			"publisher": "Livesport s.r.o.",
+			"url": "https://www.flashscore.com",
+			"endpoints": [
+				"https://www.flashscore.com",
+				"https://www.flashscore.mobi",
+				"https://www.betexplorer.com"
+			],
+			"role": "aggregator",
+			"status": "in-use",
+			"authorityFor": [],
+			"facts": [
+				"schedule",
+				"start-time",
+				"results",
+				"standings"
+			],
+			"terms": {
+				"automatedAccess": "unknown",
+				"basis": "not-found",
+				"attributionRequired": null,
+				"reviewedAt": "2026-10-19"
+			},
+			"tdmReservation": {
+				"status": "unknown",
+				"checkedAt": "2026-10-19"
+			},
+			"robots": {
+				"allowsOurPaths": null,
+				"note": "Ikke gjennomgått — brukes som sekundær korroborasjon via enkeltsider, aldri systematisk uttrekk.",
+				"checkedAt": "2026-10-19"
+			},
+			"calibrationKey": "flashscore.com",
+			"notes": "Registrert av research 2026-10-19 (deep-tier): Livesport-merkene Flashscore og BetExplorer (samme eier) brukes gjentatte ganger som sekundær tidskorroborasjon for håndball (Elkjøp-ligaen) når handball.no er JS-rendret/uleselig — provenance på slike events siterte tidligere tv2 selv når den faktisk leste siden var betexplorer/flashscore; denne oppføringen gjør den referansen ærlig. AGGREGATOR-doktrinen gjelder fullt ut: aldri eneste grunnlag for high confidence, alltid under forbundets terminliste i autoritet. NB tidssone-fella (kalibreringsnotat): betexplorer viser FAST UTC+1 hele året; flashscore.mobi viste FAST UTC+2 — konverter alltid eksplisitt, aldri les av som lokal tid."
 		},
 		{
 			"id": "flobikes",
