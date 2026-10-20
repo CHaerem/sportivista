@@ -1,23 +1,23 @@
 {
-  "runAt": "2026-10-19T21:05:00Z",
-  "tier": "standard",
-  "eventsAdded": 0,
-  "eventsRemoved": 0,
-  "trackedDelta": "ingen endring — tracked.json ble fullstendig omskrevet av DEEP-tier mandagssveipet 05:50Z i dag (alle alwaysTrack.tournaments har entry, inkl. off-season-plassholdere); ingen drift siden, og ingen av dagens signaler krevde en ny/endret oppføring.",
-  "quality": {
-    "pass": true,
-    "score": null,
-    "failures": [
-      "No-op-kjøring: ingen nye outputs å gradere mot rubrikken (ingen events lagt til/fjernet, tracked.json uendret). Grader-subagent bevisst ikke spawnet — ville bare gradert det uendrede 05:50Z-resultatet som allerede fikk PASS i dagens tidligere logg."
-    ]
-  },
-  "notes": [
-    "LEGITIM QUIET NO-OP (standard-tier, 4-timers, ~21:05Z). Tredje no-op etter dagens DEEP-tier mandagssveip (05:50Z boardet 13 events + skrev tracked.json fra bunnen). coverage-critics reasoned audit (09:39Z) OG den mekaniske coverage-gaps (sist 17:19Z) bekrefter fortsatt: 0 high-severity recall-gap, INGEN eskalering, hele imminent-vinduet dekket. Prioriterte diligent verifisering over duplisert research (prompt: 'A quiet no-op run is legitimate', kvalitet > kvantitet).",
-    "STEP 1 (reconcile mot katalogen): INGEN TREKK NØDVENDIG. tracked.json omskrevet 05:50Z — alle catalog.tier1-sporter + tier2-entiteter har forsvarbare entries, alle alwaysTrack.tournaments navngitt (inkl. off-season-plassholdere). Ingen utløpte entries siden i morges.",
-    "STEP 2 (find what static APIs miss): INGEN AKTUELL MANGEL. validate-events.js: 137 events, 0 errors (kun kjente ikke-blokkerende warnings: 51 WP-246 landing-page-URL + 3 WP-242 weak-channel-basis, uendret fra 05:50Z). Imminent-vindu (19.–24. okt) verifisert dekket: CL MD3 20.–21. okt (Man City–AEK, Bodø/Glimt–Napoli, Barcelona–PSG, Viking–Aston Villa m.fl.), PL/Serie A/Bundesliga/La Liga flyter fra statiske fetchere, golf Genesis + Butterfield Bermuda (22. okt), håndball Kolstad–Magdeburg EHF CL (22. okt) + Elkjøp-runder, alpint Sölden (24. okt), F1 USA GP kval (Austin 24. okt 21:00Z), OBOS Sandnes Ulf–Lyn (25. okt).",
-    "NYTT SIGNAL SIDEN 15:40Z-KJØRINGEN: coverage-gaps 17:19Z la til ÉN entity-gap 'Man City' (type missing, imminent:false, 'Haaland a doubt'-forhåndsomtale fra BBC) — TRIAGERT FALSKT: Man Citys to neste fixtures står på tavla (AEK at Manchester City 20. okt 19:00Z CL MD3 + Manchester City at Aston Villa 24. okt 11:30Z PL runde 8). Forhåndsartikkelen er ikke et manglende event. Ingen handling.",
-    "ØVRIGE MEKANISKE SIGNALER (coverage-gaps 17:19Z: gapCount 2, anomalyCount 1) — begge resterende IKKE-aktuelle: (a) tracked-claim 'Håvard «rain» Nygaard' (esports, claimedDate 31. okt) = ÆRLIG FRAVÆR (100 Thieves uten bekreftet neste turnering etter Stake Pulse Beat III nr. 4; triagert 05:50Z, en manglende event er bedre enn en oppdiktet; vaktpunkt PGL Major VRS-cutoff 2. nov — esports.js boarder automatisk når Liquipedia fester en kamp). (b) cycling.json file-empty (low) = WorldTour off-season (korrekt, sesong slutt etter Tour of Guangxi 18. okt).",
-    "HORISONT (Step 2.6, på cadence ikke gap): coverage-audits eneste medium-gap — Ruuds Rolex Paris Masters (~31. okt) + Bybit Stockholm Open (8.–14. nov, tittelforsvarer) — er UTENFOR dagens ~5-d fyll-vindu (Paris 12 d ut); boardes på cadence ~26. okt / ~3. nov. Basel (ATP 500, 26. okt, Ruud navngitt) alt boardet 05:50Z — Ruuds next-fixture-rad resolver. Ingen demand[] i coverage-gaps. Ingen ny katalog-kandidat utløst siden sveipet.",
-    "STRUKTURELLE HIGH-FLAGG STÅR (self-repair/improve, carry-forward fra 05:50Z — ikke re-adressert her): esports.js 100T-only-filter, golf-fetcher uten look-ahead, ingen wholesale håndball-fetcher/contract-blokk. ger.1 flyter nå (Bundesliga static-boardet denne helgen — tidligere tomt-endepunkt-flagg ser løst ut)."
-  ]
+	"runAt": "2026-10-20T05:05:00Z",
+	"tier": "standard",
+	"eventsAdded": 0,
+	"eventsRemoved": 0,
+	"trackedDelta": "Ingen entry lagt til/fjernet/endret utover lastUpdated + ny notes-element (quiet-kjøring). Håvard «rain» Nygaard-oppføringen står uendret (ærlig fravær, web-re-bekreftet).",
+	"quality": {
+		"pass": true,
+		"score": null,
+		"failures": [],
+		"note": "No-op vedlikeholdskjøring — ingen kandidat-events produsert, så ingen uavhengig grader spawnet (ingenting å gradere mot research-rubric.md). Selv-vurdert pass: alle signaler triagert, board komplett innenfor fyll-vinduet, ingen oppdiktede events. Fail-open, standard-tier feiler ikke på tom kjøring."
+	},
+	"notes": [
+		"STILLE KJØRING: 0 events lagt til/fjernet. Standard-tier 4-timers (dagen etter gårsdagens DEEP-sveip som boardet 13 events).",
+		"coverage-contracts.json (00:51Z): alle 6 kontrakter met (f1 6 / eliteserien 8 / premier-league 10 / dp-world-tour 1 / pga-tour 2 / tennis 1), breached: [] — ingen kontraktbrudd å fylle.",
+		"coverage-gaps.json (3 gaps / 2 anomalier) triagert, alle ikke-akutte: (a) Barça entity-gap = forbi La Liga-referat (Guardian, Lamine Yamal mot Betis) — IKKE et kommende-event-hull; Barça dekket på tavla (CL Barcelona–PSG 20/10 + El Clásico Real Madrid–Barcelona 25/10). (b) Håvard «rain» Nygaard tracked-claim = ÆRLIG fravær: web-re-bekreftet mot rdy.gg + HLTV-søk at 100 Thieves IKKE har noen påmeldt turnering late okt/nov etter Stake Pulse Beat III (4.plass, ferdig 18.–19/10). VAKTPUNKT: PGL Major Singapore VRS-cutoff 2. nov (100T trolig utenfor). En manglende event er bedre enn en oppdiktet. (c) anomalier cycling.json + esports.json file-empty (begge low) = korrekt: WorldTour-sesongen slutt etter Tour of Guangxi 18/10, og 100T mellom turneringer.",
+		"scout-log: 3 quiet-verdicts (10:30Z/17:19Z/21:58Z 19/10), ingen eskalering — kun forbi-kampreferat + personell/skade-nyheter (Haaland tvilsom AEK, Kilde akilles, Ronaldo-suspensjon), ingen tidsplan-/kanal-endring på kommende tracked events.",
+		"IMMINENT-PASS (20.–26. okt) board-komplett: fotball CL MD3 (Villarreal–Liverpool, Bodø/Glimt–Napoli, Barcelona–PSG, AEK–Man City, Arsenal–Bayern, RB Leipzig–Real Madrid, Viking–Aston Villa) + topp-5-liga-weekend + Eliteserien r25 (HamKam–Rosenborg, Bodø/Glimt–Vålerenga, Lillestrøm–Brann, Molde–Fredrikstad) + OBOS Sandnes Ulf–Lyn 25/10; golf Genesis Championship + Butterfield Bermuda 22/10 (+ Mexico Open 29/10); håndball EHF CL Kolstad–SC Magdeburg 22/10 + Elkjøp-runder; alpint Sölden-åpning (storslalåm K 24/10 + M 25/10); F1 USA GP (kval lør. 24/10 21:00Z + race søn. 25/10 20:00Z, ingen sprint — web-re-bekreftet, COTA Austin); tennis Swiss Indoors Basel (Ruud, boardet).",
+		"HORISONT-SCAN (Step 2.6, ~4 uker): ingen ny katalog-kandidat utløst. Ruud Paris Masters (ATP 1000, ~31/10) + Bybit Stockholm Open (ATP 250, 8.–14/11, Ruud tittelforsvarer) på cadence — begge utenfor dagens ~5-d fyll-vindu, boardes ~26/10 hhv. ~3/11. Vinteridrett (biathlon/langrenn/hopp) + friidrett korrekt tomt (sesong ikke startet / avsluttet). Carlsens neste fixture (Total Chess-pilot Budapest fra 11/11) alt boardet.",
+		"Step 2.8 registry-reconciliation IKKE kjørt (kun DEEP-tier mandagssveip; i dag er tirsdag standard-tier).",
+		"validate-events.js kjørt etter skriving — ingen feil."
+	]
 }
