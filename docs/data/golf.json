@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-20T14:38:42.900Z",
+  "lastUpdated": "2026-10-20T18:53:10.569Z",
   "source": "ESPN + PGA Tour",
   "tournaments": [
     {
@@ -25,11 +25,32 @@
               "type": "streaming"
             }
           ],
-          "norwegian": false,
-          "norwegianPlayers": [],
-          "featuredGroups": [],
-          "totalPlayers": 0,
-          "fieldPending": true
+          "norwegian": true,
+          "norwegianPlayers": [
+            {
+              "name": "Kristoffer Ventura",
+              "teeTime": "18:00",
+              "teeTimeUTC": "2026-10-22T16:00:00.000Z",
+              "status": null
+            }
+          ],
+          "featuredGroups": [
+            {
+              "player": "Kristoffer Ventura",
+              "teeTime": "18:00",
+              "groupmates": [
+                {
+                  "name": "Nick Hardy",
+                  "teeTime": "18:00"
+                },
+                {
+                  "name": "Denny McCarthy",
+                  "teeTime": "18:00"
+                }
+              ]
+            }
+          ],
+          "totalPlayers": 120
         }
       ]
     },
@@ -82,11 +103,17 @@
               "type": "streaming"
             }
           ],
-          "norwegian": false,
-          "norwegianPlayers": [],
+          "norwegian": true,
+          "norwegianPlayers": [
+            {
+              "name": "Andreas Halvorsen",
+              "teeTime": null,
+              "teeTimeUTC": null,
+              "status": null
+            }
+          ],
           "featuredGroups": [],
-          "totalPlayers": 0,
-          "fieldPending": true
+          "totalPlayers": 126
         }
       ]
     }
