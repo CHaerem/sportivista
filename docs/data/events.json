@@ -5270,5 +5270,49 @@
     "id": "1ef2166b04cb",
     "homeTeamEntityId": "danmark",
     "awayTeamEntityId": "norge"
+  },
+  {
+    "sport": "tennis",
+    "tournament": "ATP/WTA Tour",
+    "title": "Rolex Paris Masters",
+    "time": "2026-11-02T11:00:00.000Z",
+    "endTime": "2026-11-08T22:00:00.000Z",
+    "venue": "Paris La Défense Arena (La Plenitude Arena), Nanterre",
+    "meta": "ATP Masters 1000",
+    "norwegian": false,
+    "norwegianPlayers": [
+      {
+        "name": "Casper Ruud"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/tennis",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-20T23:15:17.301Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.parisladefense.com/en/news/events/rolex-paris-masters-back-october-31-november-8-2026"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "atp-tour",
+        "url": "https://www.parisladefense.com/en/news/events/rolex-paris-masters-back-october-31-november-8-2026",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-20T23:15:17.301Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/tennis",
+        "basis": "official",
+        "retrievedAt": "2026-10-20T23:15:17.301Z"
+      }
+    },
+    "summary": "Casper Ruuds neste turnering etter Swiss Indoors Basel: Rolex Paris Masters, sesongens siste ATP Masters 1000 før ATP-finalen. Ruud står på den foreløpige deltakerlisten (seedet, ATP-rangering ~12).\n\nTurneringen går 31. okt–8. nov; hovedtablået starter man. 2. nov, finale søn. 8. nov. Ruud er seedet og venter dermed i hovedtablået fra ~3. nov — eksakt kamptid settes når trekningen er klar.\n\nMedium: turneringsdatoene er bekreftet mot Paris La Défense Arena (offisiell) + uavhengig write-time fact-check, og norsk visning (TV 2 Play, TV 2 har alle ni ATP Masters 1000 t.o.m. 2026) er bekreftet — men draw/eksakt kamptid og endelig seeding er ikke publisert ennå (verify firmer når trekningen er klar). CET = UTC+1 (fransk vintertid)."
   }
 ]
