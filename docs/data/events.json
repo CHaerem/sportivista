@@ -2423,12 +2423,12 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/lille-u19-galatasaray-u19-1963250",
+        "url": "https://www.tvkampen.com/kamp/lille-galatasaray-1961187",
         "urlKind": "deep"
       },
       {
         "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/lille-u19-galatasaray-u19-1963250",
+        "url": "https://www.tvkampen.com/kamp/lille-galatasaray-1961187",
         "urlKind": "deep"
       }
     ],
@@ -2981,6 +2981,76 @@
     "awayTeamEntityId": "malaga"
   },
   {
+    "sport": "esports",
+    "tournament": "PGL Masters Bucharest 2026",
+    "title": "PGL Masters Bucharest – gruppespill (Swiss)",
+    "time": "2026-10-24T07:00:00Z",
+    "endTime": "2026-10-31T21:00:00Z",
+    "venue": "PGL Studios, Bucuresti",
+    "norwegian": false,
+    "participants": [
+      {
+        "name": "Team Spirit"
+      },
+      {
+        "name": "Team Vitality"
+      },
+      {
+        "name": "MOUZ"
+      },
+      {
+        "name": "FURIA"
+      },
+      {
+        "name": "G2 Esports"
+      },
+      {
+        "name": "Natus Vincere"
+      },
+      {
+        "name": "The MongolZ"
+      },
+      {
+        "name": "Team Liquid"
+      }
+    ],
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Twitch (PGL)",
+        "url": "https://www.twitch.tv/pgl",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-21T14:05:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://timesaver.gg/news/pgl-masters-bucharest-2026-schedule-teams-opening-matches",
+      "https://www.strafe.com/news/read/pgl-masters-bucharest-2026-teams-schedule-format-prize-pool-and-more/",
+      "https://www.pglesports.com/cs2/pgl-bucharest-2026/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "liquipedia",
+        "url": "https://timesaver.gg/news/pgl-masters-bucharest-2026-schedule-teams-opening-matches",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-21T14:05:00Z",
+        "note": "Turneringsvindu 24.–31. okt (gruppespill sveitsisk Bo3 24.–28., sluttspill single-elim 29.–31., Bo5-finale 31.) + dag-1-åpning lør. 24. okt 10:00 EEST = 07:00 UTC TO-KILDE-bekreftet (timesaver.gg + dotesports; EU-sommertid slutter 25. okt, så 24. okt er EEST/UTC+3). Sveitsisk runde 1 fast; senere paringer + daglige starttider TBD. PGLs egen side + Liquipedia/dotesports bot-blokkert (403) → aggregator-basert, basis secondary; verify fester per-kamp-tider."
+      },
+      "streaming": {
+        "sourceId": "twitch",
+        "url": "https://www.twitch.tv/pgl",
+        "basis": "official",
+        "retrievedAt": "2026-10-21T14:05:00Z",
+        "note": "twitch.tv/pgl er PGLs offisielle kanal (PGL-footer + strafe). Event-spesifikk kringkasting ikke offisielt kunngjort ennå, men PGLs standardkanal; Kick ubekreftet for dette eventet."
+      }
+    },
+    "summary": "PGL Masters Bucharest 2026 (CS2, tier-1, $1,25 mill.) — 16 lag i sveitsisk gruppespill 24.–28. oktober, sluttspill 29.–31. oktober og Bo5-finale 31. oktober i PGL Studios, Bucuresti.\n\nÅtte katalog-orger i feltet: Team Spirit, Team Vitality, MOUZ, FURIA, G2 Esports, NAVI, The MongolZ og Team Liquid. Sveitsisk runde 1 åpner lør. 24. okt 10:00 EEST (07:00 UTC); daglige starttider og senere paringer slippes nærmere start — enkeltkamper boardes når braketten får tidsstempel.\n\n100 Thieves (Håvard «rain» Nygaard) er IKKE i dette feltet. Gratis strøm på PGLs egen Twitch (pgl).",
+    "id": "5ac8afb840eb"
+  },
+  {
     "sport": "alpine",
     "tournament": "FIS verdenscup alpint 2026/27",
     "title": "Sölden – storslalåm kvinner",
@@ -2992,8 +3062,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
         "urlKind": "landing"
       }
     ],
@@ -3732,8 +3802,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
         "urlKind": "landing"
       }
     ],
@@ -5219,73 +5289,5 @@
     "id": "1ef2166b04cb",
     "homeTeamEntityId": "danmark",
     "awayTeamEntityId": "norge"
-  },
-  {
-    "sport": "esports",
-    "tournament": "PGL Masters Bucharest 2026",
-    "title": "PGL Masters Bucharest – gruppespill (Swiss)",
-    "time": "2026-10-24T07:00:00Z",
-    "endTime": "2026-10-31T21:00:00Z",
-    "venue": "PGL Studios, Bucuresti",
-    "norwegian": false,
-    "participants": [
-      {
-        "name": "Team Spirit"
-      },
-      {
-        "name": "Team Vitality"
-      },
-      {
-        "name": "MOUZ"
-      },
-      {
-        "name": "FURIA"
-      },
-      {
-        "name": "G2 Esports"
-      },
-      {
-        "name": "Natus Vincere"
-      },
-      {
-        "name": "The MongolZ"
-      },
-      {
-        "name": "Team Liquid"
-      }
-    ],
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "Twitch (PGL)",
-        "url": "https://www.twitch.tv/pgl"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-21T14:05:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://timesaver.gg/news/pgl-masters-bucharest-2026-schedule-teams-opening-matches",
-      "https://www.strafe.com/news/read/pgl-masters-bucharest-2026-teams-schedule-format-prize-pool-and-more/",
-      "https://www.pglesports.com/cs2/pgl-bucharest-2026/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "liquipedia",
-        "url": "https://timesaver.gg/news/pgl-masters-bucharest-2026-schedule-teams-opening-matches",
-        "basis": "secondary",
-        "retrievedAt": "2026-10-21T14:05:00Z",
-        "note": "Turneringsvindu 24.–31. okt (gruppespill sveitsisk Bo3 24.–28., sluttspill single-elim 29.–31., Bo5-finale 31.) + dag-1-åpning lør. 24. okt 10:00 EEST = 07:00 UTC TO-KILDE-bekreftet (timesaver.gg + dotesports; EU-sommertid slutter 25. okt, så 24. okt er EEST/UTC+3). Sveitsisk runde 1 fast; senere paringer + daglige starttider TBD. PGLs egen side + Liquipedia/dotesports bot-blokkert (403) → aggregator-basert, basis secondary; verify fester per-kamp-tider."
-      },
-      "streaming": {
-        "sourceId": "twitch",
-        "url": "https://www.twitch.tv/pgl",
-        "basis": "official",
-        "retrievedAt": "2026-10-21T14:05:00Z",
-        "note": "twitch.tv/pgl er PGLs offisielle kanal (PGL-footer + strafe). Event-spesifikk kringkasting ikke offisielt kunngjort ennå, men PGLs standardkanal; Kick ubekreftet for dette eventet."
-      }
-    },
-    "summary": "PGL Masters Bucharest 2026 (CS2, tier-1, $1,25 mill.) — 16 lag i sveitsisk gruppespill 24.–28. oktober, sluttspill 29.–31. oktober og Bo5-finale 31. oktober i PGL Studios, Bucuresti.\n\nÅtte katalog-orger i feltet: Team Spirit, Team Vitality, MOUZ, FURIA, G2 Esports, NAVI, The MongolZ og Team Liquid. Sveitsisk runde 1 åpner lør. 24. okt 10:00 EEST (07:00 UTC); daglige starttider og senere paringer slippes nærmere start — enkeltkamper boardes når braketten får tidsstempel.\n\n100 Thieves (Håvard «rain» Nygaard) er IKKE i dette feltet. Gratis strøm på PGLs egen Twitch (pgl)."
   }
 ]

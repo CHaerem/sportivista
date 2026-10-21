@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-21T09:49:20.699Z",
+  "generatedAt": "2026-10-21T14:51:16.820Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
-    "amendRate": "green",
+    "amendRate": "yellow",
     "silentStops": "green",
     "participantStatus": "green",
     "contracts": "green"
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 13.99,
+    "oldestGapAgeDays": 14.2,
     "escalatable": 1,
     "catalogMatched": 1,
     "auditedAt": "2026-10-21T09:15:00Z",
@@ -35,29 +35,22 @@
       {
         "interest": "Tennis — Casper Ruuds høst-innendørssving (Bybit Stockholm Open, ATP 250, Ruud tittelforsvarer)",
         "severity": "medium",
-        "ageDays": 13.99,
+        "ageDays": 14.2,
         "recurrences": 14,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.17,
-    "nearTermChecked": 12,
+    "nearTermRate": 0.4,
+    "nearTermChecked": 5,
     "nearTermAmended": 2,
-    "verifyRunAt": "2026-10-20T10:12:47Z",
+    "verifyRunAt": "2026-10-21T10:25:54Z",
     "windowRate": 0,
     "windowChecks": 65,
     "windowAmendments": 0,
-    "windowCorrections": 4,
+    "windowCorrections": 5,
     "byDay": [
-      {
-        "date": "2026-10-07",
-        "checks": 3,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-10-08",
         "checks": 9,
@@ -148,28 +141,37 @@
         "amendments": 0,
         "corrections": 1,
         "rate": 0
+      },
+      {
+        "date": "2026-10-21",
+        "checks": 3,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-21T09:49:16.375Z",
+    "buildCheckedAt": "2026-10-21T14:51:11.523Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-21T08:10:22.280Z",
-    "manifestAgeHours": 1.65,
+    "manifestGeneratedAt": "2026-10-21T09:49:22.160Z",
+    "manifestAgeHours": 5.03,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-20T10:12:47Z",
-    "verifyAgeHours": 23.61,
-    "corrections": 0,
+    "checkedAt": "2026-10-21T10:25:54Z",
+    "verifyAgeHours": 4.42,
+    "corrections": 1,
     "unresolved": 0,
-    "signals": []
+    "signals": [
+      "US Chess Championship (ender 21.10, siste runde i dag) + European Chess Club Cup (Budva, ender 23.10): begge reelle og pågår; deltakere ikke-norske, så ingen…"
+    ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-21T09:49:20.699Z"
+    "generatedAt": "2026-10-21T14:51:16.820Z"
   }
 }
