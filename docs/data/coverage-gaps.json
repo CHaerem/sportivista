@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-21T14:51:18.040Z",
-  "gapCount": 8,
+  "generatedAt": "2026-10-21T19:06:49.241Z",
+  "gapCount": 3,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -12,7 +12,7 @@
       "link": "https://www.theguardian.com/football/video/2026/oct/21/psg-beat-barca-rios-grand-for-liverpool-and-ronaldos-cv-football-weekly-video",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-10-21T14:51:17.019Z"
+      "detectedAt": "2026-10-21T19:06:48.002Z"
     },
     {
       "kind": "entity",
@@ -23,62 +23,7 @@
       "link": "https://www.theguardian.com/football/video/2026/oct/21/psg-beat-barca-rios-grand-for-liverpool-and-ronaldos-cv-football-weekly-video",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-10-21T14:51:17.019Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "RBK",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Dårlig skadenytt for RBK – Simen Bolkan Nordli har fått påvist lårskade",
-      "link": "https://www.nrk.no/sport/darlig-skadenytt-for-rbk-_-simen-bolkan-nordli-har-fatt-pavist-larskade-1.18060647",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-10-21T14:51:17.019Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Man City",
-      "type": "missing",
-      "imminent": false,
-      "headline": "No Haaland, no problem - can Foden be Man City's alternative goalscorer?",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqx2vjdnwkyyo?at_medium=RSS&amp;at_campaign=rss",
-      "feed": "bbc-football",
-      "matchCount": 1,
-      "detectedAt": "2026-10-21T14:51:17.019Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Europaligaen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Roser sønnens tidligere klubb før storkamp på Åråsen: – Veldig imponerende",
-      "link": "https://www.nrk.no/sport/roser-sonnens-tidligere-klubb-for-storkamp-pa-arasen_-_-veldig-imponerende-1.18060832",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-10-21T14:51:17.019Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Tour de France",
-      "type": "missing",
-      "imminent": true,
-      "headline": "How to watch 2027 Tour de France route presentation – Live streams, TV coverage",
-      "link": "https://www.cyclingnews.com/cycling-culture/streaming/how-to-watch-2027-tour-de-france-route-presentation-live-streams-tv-coverage/",
-      "feed": "cyclingnews",
-      "matchCount": 2,
-      "detectedAt": "2026-10-21T14:51:17.019Z"
-    },
-    {
-      "kind": "sport",
-      "entity": "Sykkel",
-      "sport": "cycling",
-      "type": "imminent",
-      "imminent": true,
-      "headline": "How to watch 2027 Tour de France route presentation – Live streams, TV coverage",
-      "link": "https://www.cyclingnews.com/cycling-culture/streaming/how-to-watch-2027-tour-de-france-route-presentation-live-streams-tv-coverage/",
-      "feed": "cyclingnews",
-      "detectedAt": "2026-10-21T14:51:17.019Z"
+      "detectedAt": "2026-10-21T19:06:48.002Z"
     },
     {
       "kind": "tracked-claim",
@@ -90,7 +35,7 @@
       "claimedDate": "2026-10-31T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-10-21T14:51:17.854Z"
+      "detectedAt": "2026-10-21T19:06:48.979Z"
     }
   ],
   "anomalies": [
@@ -99,7 +44,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-21T14:51:17.884Z"
+      "detectedAt": "2026-10-21T19:06:49.018Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
