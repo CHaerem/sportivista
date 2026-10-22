@@ -1,25 +1,18 @@
 {
-  "checkedAt": "2026-10-21T13:24:35Z",
+  "checkedAt": "2026-10-22T00:00:00Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
-  "findings": [
-    {
-      "width": 375,
-      "area": "agenda row (Fredag 23. oktober, VfB Stuttgart – Borussia Mönchengladbach)",
-      "issue": "Team name wraps to three lines with only the single letter \"h\" (end of \"Mönchengladbach\") stranded alone on the third line. Nothing is hidden or truncated, just an awkward wrap — cosmetic only.",
-      "severity": "low"
-    }
-  ],
+  "findings": [],
   "notes": [
-    "Reviewed full-page screenshots at 375/393/900px plus closer scrolled crops of the 375/393 agenda at viewport resolution, and the very bottom of the page at 375/393.",
-    "No truncation that hides key info anywhere scanned — fixture names (incl. Norwegian clubs: Sandefjord, Bodø/Glimt–Vålerenga, Viking TIF, Aston Villa–Viking) read in full.",
-    "Channel column is honest and consistently Norwegian: TV 2 Play, Viaplay, TV 2, HBO Max (Sport); unknowns show a plain '–' rather than guessing. No ESPN/FOX/Sky spotted.",
-    "Crests/flags render correctly; non-team events (Sölden alpine skiing, Elverum–ØIF Arendal handball) correctly fall back to a generic calendar/snowflake glyph instead of a broken image box.",
-    "Must-see accent dots are sparing (roughly 1 in 4-5 rows) and track Norwegian teams/importance, not applied everywhere.",
-    "No horizontal scroll or clipped edges at any of the three widths, including the hardest 375px case.",
-    "Floating Assistent button overlaps a mid-agenda row (e.g. 'Club Brugge – Lens' at 900px) at a given scroll position — this is the DESIGN.md-sanctioned floating-button idiom, not flagged.",
-    "Checked the one real Assistent-button guarantee directly: at the very bottom of the page (375px and 393px) the footer ('Oppdatert …', 'Abonner i kalender', AI-budsjett line) is fully visible and NOT occluded by the button — holds.",
-    "Header, day headings ('I dag', 'I morgen', weekday+date headers), 'Dette dekker vi' / 'Merker og kilder' disclosures, and footer all intact and aligned at every width.",
-    "Live-now section ('DIREKTE NÅ') and the quiet single editorial headline line under the date both render as intended, one quiet line each."
+    "Reviewed full-page screenshots at 375/393/900px for Torsdag 22. oktober onward.",
+    "Fixture names read in full with no truncation hiding key info, including long names like 'SC Paderborn 07 - Hamburg SV', 'TSG Hoffenheim - Bayer Leverkusen', 'VfB Stuttgart - Borussia Mönchengladbach', and Norwegian entries (Bodø/Glimt - Vålerenga, Viking TIF - Drammen, Sandnes Ulf - Lyn, Kristiansund - KFUM Oslo, Fjellhammer - Bergsøy, Molde - Fredrikstad).",
+    "Channel column is consistently Norwegian/Nordic and honest: TV 2 Play, Viaplay, TV 2, HBO Max (Sport+); no ESPN/FOX/Sky spotted at any width.",
+    "National flags and club crests render as proper icons next to each fixture; no broken-image boxes observed.",
+    "Must-see accent dots are used sparingly, not on every row.",
+    "No horizontal scroll or clipped content at any width, including the hardest 375px case.",
+    "Live-now banner ('DIREKTE NÅ', European Chess Club Cup) and the single quiet editorial headline line both render as one unobtrusive line each.",
+    "Floating Assistent button (900px shot) rests over a mid-list row ('TSG Hoffenheim - Bayer Leverkusen' area) — this is the DESIGN.md-sanctioned floating-button idiom, not flagged. It does not occlude the last agenda row or footer at any width checked.",
+    "Header, day/weekday headings, 'Neste opp' and footer (AI-budsjett line, 'Rediger'/'Merk og kilder' links) all intact and aligned at every width.",
+    "Day groupings and date headers (Lørdag 24. oktober, Søndag 25. oktober, etc.) are clear and consistently formatted."
   ]
 }
