@@ -5046,5 +5046,95 @@
     "id": "1ef2166b04cb",
     "homeTeamEntityId": "danmark",
     "awayTeamEntityId": "norge"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Conference League",
+    "title": "Kauno Žalgiris – Brann",
+    "time": "2026-10-22T16:45:00Z",
+    "endTime": null,
+    "venue": "Darius and Girėnas Stadium, Kaunas",
+    "norwegian": true,
+    "homeTeam": "Kauno Žalgiris",
+    "awayTeam": "Brann",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-22T13:52:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/",
+      "https://starting11.com/fixtures/kauno-zalgiris-vs-brann",
+      "https://www.t-online.de/sport/live-ticker/fussball/uefa-conference-league/sdc_fm-62590/kauno-zalgiris-brann-uefa-conference-league-im-liveticker.html"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-22T13:52:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no",
+        "basis": "official",
+        "retrievedAt": "2026-10-22T13:52:00Z"
+      }
+    },
+    "summary": "UEFA Conference League, ligafase runde 3 (MD3). Brann spiller borte mot litauiske Kauno Žalgiris på Darius og Girėnas-stadion i Kaunas tor. 22. okt kl. 18.45 CEST (16.45 UTC / 19.45 lokal tid).\n\nDato/avspark kryss-sjekket mot uefa.com (ligafase-fixtures) + starting11 + t-online liveticker og en uavhengig write-time fact-check — alle enige på 18.45 CEST.\n\nNorsk visning: Viaplay (Viaplay har Conference League-rettighetene i Norge t.o.m. 2030/31).",
+    "id": "6a402937c313"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Europa League",
+    "title": "Lillestrøm – Real Sociedad",
+    "time": "2026-10-22T19:00:00Z",
+    "endTime": null,
+    "venue": "Åråsen stadion, Lillestrøm",
+    "norwegian": true,
+    "homeTeam": "Lillestrøm",
+    "awayTeam": "Real Sociedad",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-22T13:52:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.uefa.com/uefaeuropaleague/match/2050109--lillestrom-vs-real-sociedad/",
+      "https://en.wikipedia.org/wiki/2026_Lillestr%C3%B8m_SK_season",
+      "https://www.t-online.de/sport/live-ticker/fussball/europa-league/sdc_fm-62466/lillestrom-real-sociedad-europa-league-im-liveticker.html"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.uefa.com/uefaeuropaleague/match/2050109--lillestrom-vs-real-sociedad/",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-22T13:52:00Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no",
+        "basis": "official",
+        "retrievedAt": "2026-10-22T13:52:00Z"
+      }
+    },
+    "summary": "UEFA Europa League, ligafase runde 3 (MD3). Lillestrøm tar imot spanske Real Sociedad på Åråsen tor. 22. okt kl. 21.00 CEST (19.00 UTC).\n\nAvsparket var omstridt i aggregatorene (18.45 vs 21.00) → låst mot UEFA (match 2050109) + Wikipedias LSK-sesongside + t-online liveticker, alle enige på 21.00 norsk tid. En uavhengig write-time fact-check bekreftet også 21.00 CEST.\n\nNorsk visning: Viaplay (Viaplay har Europa League-rettighetene i Norge).",
+    "id": "406b4a60e97d"
   }
 ]
