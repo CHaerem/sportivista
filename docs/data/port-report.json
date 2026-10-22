@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T09:50:02.920Z",
+  "generatedAt": "2026-10-22T14:51:39.085Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 0
     },
-    "oldestGapAgeDays": 14.99,
+    "oldestGapAgeDays": 15.2,
     "escalatable": 1,
     "catalogMatched": 2,
     "auditedAt": "2026-10-22T08:40:00Z",
@@ -35,36 +35,29 @@
       {
         "interest": "Fotball — UEFA Europa League & Conference League, torsdagens ligafase-runde (22. okt) med norske katalog-klubber",
         "severity": "high",
-        "ageDays": 0.05,
+        "ageDays": 0.26,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Casper Ruuds høst-innendørssving (Bybit Stockholm Open, ATP 250, Ruud tittelforsvarer)",
         "severity": "medium",
-        "ageDays": 14.99,
+        "ageDays": 15.2,
         "recurrences": 15,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.4,
-    "nearTermChecked": 5,
-    "nearTermAmended": 2,
-    "verifyRunAt": "2026-10-21T10:25:54Z",
+    "nearTermRate": 0.25,
+    "nearTermChecked": 4,
+    "nearTermAmended": 1,
+    "verifyRunAt": "2026-10-22T10:23:36Z",
     "windowRate": 0,
-    "windowChecks": 65,
+    "windowChecks": 60,
     "windowAmendments": 0,
     "windowCorrections": 5,
     "byDay": [
-      {
-        "date": "2026-10-08",
-        "checks": 9,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-10-09",
         "checks": 8,
@@ -155,30 +148,35 @@
         "amendments": 0,
         "corrections": 1,
         "rate": 0
+      },
+      {
+        "date": "2026-10-22",
+        "checks": 4,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-22T09:50:00.400Z",
+    "buildCheckedAt": "2026-10-22T14:51:35.004Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-22T08:10:56.464Z",
-    "manifestAgeHours": 1.65,
+    "manifestGeneratedAt": "2026-10-22T09:50:04.642Z",
+    "manifestAgeHours": 5.03,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-21T10:25:54Z",
-    "verifyAgeHours": 23.4,
-    "corrections": 1,
+    "checkedAt": "2026-10-22T10:23:36Z",
+    "verifyAgeHours": 4.47,
+    "corrections": 0,
     "unresolved": 0,
-    "signals": [
-      "US Chess Championship (ender 21.10, siste runde i dag) + European Chess Club Cup (Budva, ender 23.10): begge reelle og pågår; deltakere ikke-norske, så ingen…"
-    ]
+    "signals": []
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-22T09:50:02.919Z"
+    "generatedAt": "2026-10-22T14:51:39.084Z"
   }
 }
