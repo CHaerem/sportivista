@@ -1,30 +1,8 @@
 {
-  "generatedAt": "2026-10-22T14:51:40.059Z",
-  "gapCount": 9,
+  "generatedAt": "2026-10-22T19:02:58.217Z",
+  "gapCount": 3,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Magnus Carlsen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Barcelona to host the MOVE Cup",
-      "link": "https://en.chessbase.com/post/barcelona-to-host-the-move-cup",
-      "feed": "chessbase",
-      "matchCount": 1,
-      "detectedAt": "2026-10-22T14:51:39.278Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Carlsen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Barcelona to host the MOVE Cup",
-      "link": "https://en.chessbase.com/post/barcelona-to-host-the-move-cup",
-      "feed": "chessbase",
-      "matchCount": 1,
-      "detectedAt": "2026-10-22T14:51:39.278Z"
-    },
     {
       "kind": "entity",
       "entity": "Man City",
@@ -34,62 +12,18 @@
       "link": "https://www.theguardian.com/football/2026/oct/22/champions-league-review-psg-take-a-hit-man-citys-empty-seats-and-teenage-hope-for-liverpool",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-10-22T14:51:39.278Z"
+      "detectedAt": "2026-10-22T19:02:57.008Z"
     },
     {
       "kind": "entity",
-      "entity": "Mesterligaen",
+      "entity": "Nations League",
       "type": "missing",
       "imminent": false,
-      "headline": "Real Madrid ubeseiret i Mesterligaen – Nusa plaget stjernene",
-      "link": "https://www.nrk.no/sport/real-madrid-ubeseiret-i-mesterligaen-_-nusa-plaget-stjernene-1.18061292",
-      "feed": "nrk-sport",
+      "headline": "Haiti move Nations League home clash with USA to Miami amid gang violence crisis",
+      "link": "https://www.theguardian.com/football/2026/oct/22/haiti-usa-concacaf-nations-league-miami-home-game-gang-violence",
+      "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-10-22T14:51:39.278Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Tour de France",
-      "type": "missing",
-      "imminent": true,
-      "headline": "As it happened: 2027 Tour de France and Tour de France Femmes routes revealed",
-      "link": "https://www.cyclingnews.com/pro-cycling/live/tour-de-france-route-presentation-live-the-2027-mens-and-womens-routes-are-unveiled/",
-      "feed": "cyclingnews",
-      "matchCount": 10,
-      "detectedAt": "2026-10-22T14:51:39.278Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Friidretts-EM",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Helsingfors fikk EM i friidrett i 2030",
-      "link": "https://www.nrk.no/sport/helsingfors-fikk-em-i-friidrett-i-2030-1.18061626",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-10-22T14:51:39.278Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Sjakk-VM",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Sjakkprofilen takker for seg: – Skal avslutte med et smell",
-      "link": "https://www.aftenposten.no/sport/i/1oplaB/sjakkprofilen-takker-for-seg-skal-avslutte-med-et-smell?utm_medium=rss",
-      "feed": "aftenposten-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-10-22T14:51:39.278Z"
-    },
-    {
-      "kind": "sport",
-      "entity": "Sykkel",
-      "sport": "cycling",
-      "type": "imminent",
-      "imminent": true,
-      "headline": "As it happened: 2027 Tour de France and Tour de France Femmes routes revealed",
-      "link": "https://www.cyclingnews.com/pro-cycling/live/tour-de-france-route-presentation-live-the-2027-mens-and-womens-routes-are-unveiled/",
-      "feed": "cyclingnews",
-      "detectedAt": "2026-10-22T14:51:39.278Z"
+      "detectedAt": "2026-10-22T19:02:57.008Z"
     },
     {
       "kind": "tracked-claim",
@@ -101,7 +35,7 @@
       "claimedDate": "2026-10-31T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-10-22T14:51:39.899Z"
+      "detectedAt": "2026-10-22T19:02:57.970Z"
     }
   ],
   "anomalies": [
@@ -110,7 +44,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-22T14:51:39.925Z"
+      "detectedAt": "2026-10-22T19:02:58.012Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
