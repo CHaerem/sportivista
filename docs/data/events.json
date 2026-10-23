@@ -6069,5 +6069,54 @@
     "isFavorite": false,
     "round": null,
     "id": "508904d8322a"
+  },
+  {
+    "sport": "tennis",
+    "tournament": "ATP/WTA Tour",
+    "title": "Swiss Indoors Basel",
+    "time": "2026-10-27T11:00:00.000Z",
+    "endTime": "2026-11-01T16:00:00.000Z",
+    "venue": "St. Jakobshalle, Basel",
+    "meta": "ATP 500",
+    "norwegian": false,
+    "norwegianPlayers": [
+      {
+        "name": "Casper Ruud",
+        "entityId": "casper-ruud"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/tennis",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-23T23:14:15.746Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.athletes",
+      "https://www.swissindoorsbasel.ch/en/",
+      "https://www.bluewin.ch/en/sport/rune-and-ruud-will-also-compete-in-basel-li.3608860",
+      "https://tennis-db.com/tournaments/324/swiss-indoors"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "atp-tour",
+        "url": "https://www.swissindoorsbasel.ch/en/",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-23T23:14:15.746Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/tennis",
+        "basis": "official",
+        "retrievedAt": "2026-10-23T23:14:15.746Z"
+      }
+    },
+    "summary": "Casper Ruuds neste turnering: Swiss Indoors Basel (ATP 500), en av sesongens siste innendørsturneringer før Rolex Paris Masters. Ruud står på deltakerlisten som seedet (ATP-rangering ~12).\n\nTurneringen går 24. okt–1. nov i St. Jakobshalle; hovedtablået starter tir. 27. okt (man. 26. er kvalifisering), finale søn. 1. nov. Ruud er seedet og venter dermed i hovedtablået fra tir./ons. — eksakt kamptid settes når trekningen og oppsettet er klart.\n\nMedium: turneringsdatoene er bekreftet mot swissindoorsbasel.ch (offisiell) + tennis-db + Switzerland Tourism, Ruuds deltakelse mot arrangørens kunngjøring (bluewin, 22. sep) + deltakerlister (ingen trekning funnet), og norsk visning (TV 2 Play — TV 2 har ATP Tour-rettighetene i Norge t.o.m. 2026, inkl. alle 13 ATP 500) — men draw/eksakt kamptid er ikke publisert ennå (verify firmer når trekningen er klar). CET = UTC+1 (vintertid fra 26. okt).",
+    "participants": [],
+    "id": "206baa99c51f"
   }
 ]
