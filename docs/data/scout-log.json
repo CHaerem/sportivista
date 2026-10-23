@@ -238,5 +238,13 @@
     "verdict": "quiet",
     "reason": "RSS (39 items, 09:44 UTC Oct 23): mostly completed match coverage (Europa League Oct 22: Bournemouth-Milan, Brann-Lincoln, Benfica-Omonia, LSK-Elfsborg, Juventus-Rennes, etc.—finalized, no schedule/time/venue changes to upcoming tracked events). Personnel/injury news (Kilde Achilles tendon—no schedule impact; Trump/LeBron comment—no schedule impact; Macron Olympics/biathlon talk—no schedule impact). Organizational news (Atlanta Falcons logo controversy—organizational, no schedule impact; Haiti Nations League venue move Nov 14—already discussed Oct 22 at 19:30 UTC, not imminent for 4h cycle). Match analysis/opinion (no new event announcements). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (5 gaps, 1 anomaly): Man City (past match entity, imminent=false), Falcons (logo story, imminent=false, not a sports event), Europaligaen (past match result, imminent=false), Nations League (venue relocation already evaluated, imminent=false), Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 8 days away, pre-existing, no NEW RSS announcement), cycling.json empty (low severity). No NEW concrete signal. Escalation cap today (Oct 23 UTC): 0/2.",
     "signals": []
+  },
+  {
+    "runAt": "2026-10-23T14:45:00.000Z",
+    "verdict": "escalate",
+    "reason": "RSS (38 items, 14:39 UTC Oct 23): SCHEDULE CHANGE SIGNAL — PSG v Lyon (Ligue 1, tracked wholesale) postponed from Sunday Oct 25 to Monday Oct 26 due to police order (organisé par la Préfecture). This is a concrete schedule/time change to an existing tracked event. Other signals: Saka (Arsenal) injury assessment ongoing (no reschedule announced yet), Dennis Hauger IndyCar Europe 2027 (far-future), Bruno Fernandes captain/discipline (personnel, no schedule impact), Scottish Cup postponement (not PSG/rain-related). No 100 Thieves/rain CS2 match hints, no broadcaster announcements, no other imminent tracked-athlete events. Coverage gaps (4 gaps, 1 anomaly): rain entity gap from Scottish Cup article (imminent=false, not rain-specific), Falcons logo (organizational, not a sports event), Europaligaen (past result, imminent=false), rain tracked-claim Oct 31 (imminent=false, 8 days away, pre-existing)—no NEW signal beyond the PSG reschedule. Escalation cap today (Oct 23 UTC): 0/2 before this.",
+    "signals": [
+      "PSG v Lyon (Ligue 1): schedule postponement from Oct 25 (Sunday) to Oct 26 (Monday) due to police order"
+    ]
   }
 ]
