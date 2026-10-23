@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-23T18:53:12.091Z",
+  "generatedAt": "2026-10-23T21:51:10.792Z",
   "gapCount": 2,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Conference League",
+      "entity": "rain",
       "type": "missing",
       "imminent": false,
-      "headline": "Øyner Brann-eventyr",
-      "link": "https://www.tv2.no/a/19353128",
-      "feed": "tv2-sport",
+      "headline": "Enciso rescues point in storm for Ipswich to deny Nottingham Forest",
+      "link": "https://www.theguardian.com/football/2026/oct/23/ipswich-nottingham-forest-premier-league-match-report",
+      "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-10-23T18:53:10.835Z"
+      "detectedAt": "2026-10-23T21:51:07.698Z"
     },
     {
       "kind": "tracked-claim",
@@ -24,7 +24,7 @@
       "claimedDate": "2026-10-31T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-10-23T18:53:11.830Z"
+      "detectedAt": "2026-10-23T21:51:08.632Z"
     }
   ],
   "anomalies": [
@@ -33,7 +33,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-23T18:53:11.872Z"
+      "detectedAt": "2026-10-23T21:51:08.687Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
