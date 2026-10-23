@@ -2585,7 +2585,13 @@
     "venue": "MHPArena",
     "meta": "Bundesliga",
     "norwegian": false,
-    "streaming": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://www.tvkampen.com/kamp/stuttgart-borussia-monchengladbach-1919636",
+        "urlKind": "deep"
+      }
+    ],
     "participants": [],
     "norwegianPlayers": [],
     "totalPlayers": null,
@@ -2609,7 +2615,18 @@
     "venue": "Stadio Olimpico Grande Torino",
     "meta": "Serie A",
     "norwegian": false,
-    "streaming": [],
+    "streaming": [
+      {
+        "platform": "VG TV",
+        "url": "https://www.tvkampen.com/kamp/torino-monza-1899099",
+        "urlKind": "deep"
+      },
+      {
+        "platform": "Viaplay",
+        "url": "https://www.tvkampen.com/kamp/torino-monza-1899099",
+        "urlKind": "deep"
+      }
+    ],
     "participants": [],
     "norwegianPlayers": [],
     "totalPlayers": null,
@@ -2636,8 +2653,8 @@
     "streaming": [
       {
         "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
+        "url": "https://www.tvkampen.com/kamp/ipswich-nottingham-forest-1914794",
+        "urlKind": "deep"
       }
     ],
     "participants": [],
@@ -5360,50 +5377,6 @@
   },
   {
     "sport": "football",
-    "tournament": "Copa del Rey",
-    "title": "Leganés at Trival Valderas",
-    "time": "2026-10-28T19:00:00.000Z",
-    "endTime": null,
-    "venue": "Estadio Municipal de Butarque",
-    "meta": "Copa del Rey",
-    "norwegian": false,
-    "streaming": [],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Trival Valderas",
-    "awayTeam": "Leganés",
-    "isFavorite": false,
-    "round": null,
-    "id": "61c6401fbb8d"
-  },
-  {
-    "sport": "football",
-    "tournament": "Copa del Rey",
-    "title": "FC Cartagena at CD Minera",
-    "time": "2026-10-28T19:30:00.000Z",
-    "endTime": null,
-    "venue": "Estadio Municipal Ángel Celdrán",
-    "meta": "Copa del Rey",
-    "norwegian": false,
-    "streaming": [],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "CD Minera",
-    "awayTeam": "FC Cartagena",
-    "isFavorite": false,
-    "round": null,
-    "id": "0824053a54f7"
-  },
-  {
-    "sport": "football",
     "tournament": "Serie A",
     "title": "Juventus at Genoa",
     "time": "2026-10-28T19:45:00.000Z",
@@ -5540,6 +5513,54 @@
     "id": "6724278a8b09"
   },
   {
+    "sport": "football",
+    "tournament": "Serie A",
+    "title": "Lecce at Frosinone",
+    "time": "2026-10-29T17:30:00.000Z",
+    "endTime": null,
+    "venue": "Stadio Benito Stirpe",
+    "meta": "Serie A",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Frosinone",
+    "awayTeam": "Lecce",
+    "isFavorite": false,
+    "round": null,
+    "id": "d9caa16bdb0d",
+    "homeTeamEntityId": "frosinone",
+    "awayTeamEntityId": "lecce"
+  },
+  {
+    "sport": "football",
+    "tournament": "Serie A",
+    "title": "Atalanta at Fiorentina",
+    "time": "2026-10-29T19:45:00.000Z",
+    "endTime": null,
+    "venue": "Stadio Artemio Franchi",
+    "meta": "Serie A",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Fiorentina",
+    "awayTeam": "Atalanta",
+    "isFavorite": false,
+    "round": null,
+    "id": "6fa5ed98b92b",
+    "homeTeamEntityId": "fiorentina",
+    "awayTeamEntityId": "atalanta"
+  },
+  {
     "sport": "f1",
     "tournament": "Formula 1 World Championship 2026",
     "title": "Mexico City Grand Prix – kvalifisering",
@@ -5655,6 +5676,67 @@
     "summary": "Casper Ruuds neste turnering etter Swiss Indoors Basel: Rolex Paris Masters, sesongens siste ATP Masters 1000 før ATP-finalen. Ruud står på den foreløpige deltakerlisten (seedet, ATP-rangering ~12).\n\nTurneringen går 31. okt–8. nov; hovedtablået starter man. 2. nov, finale søn. 8. nov. Ruud er seedet og venter dermed i hovedtablået fra ~3. nov — eksakt kamptid settes når trekningen er klar.\n\nMedium: turneringsdatoene er bekreftet mot Paris La Défense Arena (offisiell) + uavhengig write-time fact-check, og norsk visning (TV 2 Play, TV 2 har alle ni ATP Masters 1000 t.o.m. 2026) er bekreftet — men draw/eksakt kamptid og endelig seeding er ikke publisert ennå (verify firmer når trekningen er klar). CET = UTC+1 (fransk vintertid).",
     "participants": [],
     "id": "4f4e0fdb7beb"
+  },
+  {
+    "sport": "golf",
+    "tournament": "PGA Tour",
+    "title": "World Wide Technology Championship",
+    "time": "2026-11-05T05:00:00.000Z",
+    "endTime": "2026-11-08T20:00:00.000Z",
+    "venue": "TBD",
+    "meta": "PGA Tour",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "HBO Max (Sport)",
+        "url": "https://www.hbomax.com/no/no/sports/pga-tour",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "Eurosport",
+        "url": "https://www.eurosport.no",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "d04e98bf4dd7"
+  },
+  {
+    "sport": "golf",
+    "tournament": "DP World Tour",
+    "title": "Abu Dhabi Aldar Championship",
+    "time": "2026-11-05T05:00:00.000Z",
+    "endTime": "2026-11-08T20:00:00.000Z",
+    "venue": "TBD",
+    "meta": "DP World Tour",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "af617c72e702"
   },
   {
     "sport": "f1",
