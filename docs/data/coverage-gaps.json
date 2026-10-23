@@ -1,40 +1,18 @@
 {
-  "generatedAt": "2026-10-23T14:39:46.641Z",
-  "gapCount": 4,
+  "generatedAt": "2026-10-23T18:53:12.091Z",
+  "gapCount": 2,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "rain",
+      "entity": "Conference League",
       "type": "missing",
       "imminent": false,
-      "headline": "Penicuik v Clyde in Scottish Cup postponed",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwzd6g3g3lemo?at_medium=RSS&amp;at_campaign=rss",
-      "feed": "bbc-football",
-      "matchCount": 2,
-      "detectedAt": "2026-10-23T14:39:43.885Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Falcons",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Denne logoen har skapt storm: – Jeg skjønner det",
-      "link": "https://www.nrk.no/sport/nfl-laget-atlanta-falcons-far-gjennomga-for-retrologo-_-trekker-nazi-paralleller-1.18062494",
-      "feed": "nrk-sport",
+      "headline": "Øyner Brann-eventyr",
+      "link": "https://www.tv2.no/a/19353128",
+      "feed": "tv2-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-23T14:39:43.885Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Europaligaen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Aursnes-scoring i Benfica-seier",
-      "link": "https://www.nrk.no/sport/aursnes-scoring-i-benfica-seier--1.18062299",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-10-23T14:39:43.885Z"
+      "detectedAt": "2026-10-23T18:53:10.835Z"
     },
     {
       "kind": "tracked-claim",
@@ -46,7 +24,7 @@
       "claimedDate": "2026-10-31T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-10-23T14:39:44.905Z"
+      "detectedAt": "2026-10-23T18:53:11.830Z"
     }
   ],
   "anomalies": [
@@ -55,7 +33,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-23T14:39:44.947Z"
+      "detectedAt": "2026-10-23T18:53:11.872Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
