@@ -1,18 +1,19 @@
 {
-  "checkedAt": "2026-10-22T00:00:00Z",
+  "checkedAt": "2026-10-23T13:06:43Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
-    "Reviewed full-page screenshots at 375/393/900px for Torsdag 22. oktober onward.",
-    "Fixture names read in full with no truncation hiding key info, including long names like 'SC Paderborn 07 - Hamburg SV', 'TSG Hoffenheim - Bayer Leverkusen', 'VfB Stuttgart - Borussia Mönchengladbach', and Norwegian entries (Bodø/Glimt - Vålerenga, Viking TIF - Drammen, Sandnes Ulf - Lyn, Kristiansund - KFUM Oslo, Fjellhammer - Bergsøy, Molde - Fredrikstad).",
-    "Channel column is consistently Norwegian/Nordic and honest: TV 2 Play, Viaplay, TV 2, HBO Max (Sport+); no ESPN/FOX/Sky spotted at any width.",
+    "Reviewed full-page screenshots at 375/393/900px for Fredag 23. oktober onward, plus close-up 900px-tall segment captures at 375px and 900px to check text/truncation detail that the long full-page shots compress too much to read.",
+    "Fixture names read in full with no truncation hiding key info, including long names like 'VfB Stuttgart - Borussia Mönchengladbach', 'SC Paderborn 07 - Hamburg SV', 'TSG Hoffenheim - Bayer Leverkusen', and Norwegian entries (Bodø/Glimt - Vålerenga, Viking TIF - Drammen, Sandnes Ulf - Lyn, Kristiansund - KFUM Oslo, HamKam - Rosenborg, Lillestrøm - Brann, Sarpsborg 08 - Aalesund).",
+    "Channel column is consistently Norwegian/Nordic and honest: TV 2 Play, Viaplay, VG TV, HBO Max (Sport); honest faint '-' shown where streaming is unknown (several Serie A/Bundesliga rows). No ESPN/FOX/Sky spotted at any width.",
     "National flags and club crests render as proper icons next to each fixture; no broken-image boxes observed.",
-    "Must-see accent dots are used sparingly, not on every row.",
+    "Must-see accent dots used sparingly (e.g. HamKam-Rosenborg, Lillestrøm-Brann, Bodø/Glimt-Vålerenga, Arsenal-Everton), not on every row.",
     "No horizontal scroll or clipped content at any width, including the hardest 375px case.",
-    "Live-now banner ('DIREKTE NÅ', European Chess Club Cup) and the single quiet editorial headline line both render as one unobtrusive line each.",
-    "Floating Assistent button (900px shot) rests over a mid-list row ('TSG Hoffenheim - Bayer Leverkusen' area) — this is the DESIGN.md-sanctioned floating-button idiom, not flagged. It does not occlude the last agenda row or footer at any width checked.",
-    "Header, day/weekday headings, 'Neste opp' and footer (AI-budsjett line, 'Rediger'/'Merk og kilder' links) all intact and aligned at every width.",
-    "Day groupings and date headers (Lørdag 24. oktober, Søndag 25. oktober, etc.) are clear and consistently formatted."
+    "Live-now banner ('DIREKTE NÅ', European Chess Club Cup - Erigaisi & Wei Yi) and the single quiet 'Kveldsbriefen' editorial headline line both render as one unobtrusive block each.",
+    "Floating Assistent button rests over mid-list rows at different scroll positions (by design, DESIGN.md-sanctioned) and, checked specifically at the footer, never covers the last agenda/news row or footer text ('AI-budsjett: uke 7% - okt 0%' fully visible beside/above it at 375px; footer fully clear at 900px).",
+    "Header, day/weekday headings, 'Neste opp', 'Dette dekker vi' / 'Merker og kilder' disclosures, and footer (Oppdatert date, Abonner i kalender, AI-budsjett line) all intact and aligned at every width.",
+    "Single centered column confirmed at 900px too (max-width ~640px), per DESIGN.md - no dashboard-grid regression.",
+    "Day groupings and date headers (Lørdag 24. oktober, Søndag 25. oktober) are clear and consistently formatted."
   ]
 }
