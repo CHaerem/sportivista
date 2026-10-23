@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-23T09:44:35.097Z",
-  "gapCount": 5,
+  "generatedAt": "2026-10-23T14:39:46.641Z",
+  "gapCount": 4,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Man City",
+      "entity": "rain",
       "type": "missing",
       "imminent": false,
-      "headline": "Champions League review: PSG take a hit, Man City’s empty seats and teenage hope for Liverpool",
-      "link": "https://www.theguardian.com/football/2026/oct/22/champions-league-review-psg-take-a-hit-man-citys-empty-seats-and-teenage-hope-for-liverpool",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-10-23T09:44:33.834Z"
+      "headline": "Penicuik v Clyde in Scottish Cup postponed",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwzd6g3g3lemo?at_medium=RSS&amp;at_campaign=rss",
+      "feed": "bbc-football",
+      "matchCount": 2,
+      "detectedAt": "2026-10-23T14:39:43.885Z"
     },
     {
       "kind": "entity",
@@ -23,7 +23,7 @@
       "link": "https://www.nrk.no/sport/nfl-laget-atlanta-falcons-far-gjennomga-for-retrologo-_-trekker-nazi-paralleller-1.18062494",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-23T09:44:33.834Z"
+      "detectedAt": "2026-10-23T14:39:43.885Z"
     },
     {
       "kind": "entity",
@@ -34,18 +34,7 @@
       "link": "https://www.nrk.no/sport/aursnes-scoring-i-benfica-seier--1.18062299",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-23T09:44:33.834Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Nations League",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Haiti move Nations League home clash with USA to Miami amid gang violence crisis",
-      "link": "https://www.theguardian.com/football/2026/oct/22/haiti-usa-concacaf-nations-league-miami-home-game-gang-violence",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-10-23T09:44:33.834Z"
+      "detectedAt": "2026-10-23T14:39:43.885Z"
     },
     {
       "kind": "tracked-claim",
@@ -57,7 +46,7 @@
       "claimedDate": "2026-10-31T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-10-23T09:44:34.850Z"
+      "detectedAt": "2026-10-23T14:39:44.905Z"
     }
   ],
   "anomalies": [
@@ -66,7 +55,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-23T09:44:34.891Z"
+      "detectedAt": "2026-10-23T14:39:44.947Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
