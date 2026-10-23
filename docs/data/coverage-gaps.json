@@ -1,30 +1,8 @@
 {
-  "generatedAt": "2026-10-23T00:18:24.217Z",
-  "gapCount": 7,
+  "generatedAt": "2026-10-23T08:09:11.701Z",
+  "gapCount": 3,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Magnus Carlsen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Brutal fotball-dom: – Burde ikke være med",
-      "link": "https://www.tv2.no/a/19347211",
-      "feed": "tv2-sport",
-      "matchCount": 3,
-      "detectedAt": "2026-10-23T00:18:22.139Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Carlsen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Brutal fotball-dom: – Burde ikke være med",
-      "link": "https://www.tv2.no/a/19347211",
-      "feed": "tv2-sport",
-      "matchCount": 3,
-      "detectedAt": "2026-10-23T00:18:22.139Z"
-    },
     {
       "kind": "entity",
       "entity": "Man City",
@@ -34,18 +12,7 @@
       "link": "https://www.theguardian.com/football/2026/oct/22/champions-league-review-psg-take-a-hit-man-citys-empty-seats-and-teenage-hope-for-liverpool",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-10-23T00:18:22.139Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Europaligaen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Aursnes-scoring i Benfica-seier",
-      "link": "https://www.nrk.no/sport/aursnes-scoring-i-benfica-seier--1.18062299",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-10-23T00:18:22.139Z"
+      "detectedAt": "2026-10-23T08:09:10.525Z"
     },
     {
       "kind": "entity",
@@ -56,18 +23,7 @@
       "link": "https://www.theguardian.com/football/2026/oct/22/haiti-usa-concacaf-nations-league-miami-home-game-gang-violence",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-10-23T00:18:22.139Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Tour de France",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Tour de France 2027 route - The complete stage-by-stage guide",
-      "link": "https://www.cyclingnews.com/pro-cycling/racing/tour-de-france-2027-route-the-complete-stage-by-stage-guide/",
-      "feed": "cyclingnews",
-      "matchCount": 8,
-      "detectedAt": "2026-10-23T00:18:22.139Z"
+      "detectedAt": "2026-10-23T08:09:10.525Z"
     },
     {
       "kind": "tracked-claim",
@@ -79,7 +35,7 @@
       "claimedDate": "2026-10-31T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-10-23T00:18:22.772Z"
+      "detectedAt": "2026-10-23T08:09:11.484Z"
     }
   ],
   "anomalies": [
@@ -88,7 +44,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-23T00:18:22.799Z"
+      "detectedAt": "2026-10-23T08:09:11.525Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
