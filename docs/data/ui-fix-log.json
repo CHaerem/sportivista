@@ -1,11 +1,12 @@
 {
-	"runAt": "2026-10-22T14:25:37Z",
+	"runAt": "2026-10-23T13:30:00Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"visual-qa-log.json (checkedAt 2026-10-22T00:00:00Z) verdict is 'pass' with an empty findings[] — nothing code-fixable to act on.",
-		"Review notes confirm no truncation, no overflow/horizontal scroll at 375/393/900px, honest Norwegian/Nordic channels (no foreign broadcasters), intact flags/crests, and sparing must-see dots — calm design held.",
+		"visual-qa-log.json (checkedAt 2026-10-23T13:06:43Z) verdict is 'pass' with an empty findings[] — nothing code-fixable to act on.",
+		"Review notes confirm no truncation (long fixture names like 'VfB Stuttgart - Borussia Mönchengladbach' read in full), no horizontal scroll/overflow at 375/393/900px, honest Norwegian/Nordic channels (no ESPN/FOX/Sky), intact flags/crests, sparing must-see dots, and single centered column at 900px — calm design held.",
+		"Floating Assistent button verified not to cover the last row or footer at any width.",
 		"Per ui-fix rule 1 (pass verdict / no high|medium findings), exited cleanly without a branch or PR."
 	]
 }
