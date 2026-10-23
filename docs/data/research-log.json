@@ -1,21 +1,23 @@
 {
-  "runAt": "2026-10-23T04:56:23.064Z",
-  "tier": "standard",
-  "eventsAdded": 1,
-  "eventsRemoved": 0,
-  "trackedDelta": "Droppet utløpt us-chess-championship-2026 (VM-runden ferdigspilt). Oppdaterte champions-league-2026-27 med MD4 Glimt-Lille-boarding. 24 tournaments (var 25).",
-  "quality": {
-    "pass": true,
-    "score": 89,
-    "failures": [],
-    "note": "Uavhengig grader (fresh-context): pass, 89/100. Ingen harde feil — tillagt event schema-komplett + ærlig medium (provenance.time.basis=secondary siden eksakt tid ikke UEFA-publisert). Grader fant ÉN reconciliation-inkonsistens: champions-league-2026-27 expires sto 2026-10-31 men boarder nå et 3. nov-event → RETTET i én bounded revision (expires forlenget til 2027-02-28, dekker ligafasen). Stående strukturelt flagg (ingen uefa.*-fetcher) korrekt delegert til self-repair/improve."
-  },
-  "notes": [
-    "Standard 4-timers. Nær-horisont (23.-31. okt) komplett dekket per gårsdagens coverage-audit (F1 USA GP, alle domestiske toppligaer + Copa del Rey, Eliteserien/OBOS/NM-cup, håndball Elkjøp+EHF CL, alpint Sölden, golf Mexico Open, tennis Basel, CS2 PGL Bucharest).",
-    "ADD (1): Bodø/Glimt–Lille UEFA Champions League MD4, tir. 3. nov 20:00 UTC (21:00 norsk), Aspmyra. Tracked norsk katalog-klubbs neste europacup-fixture; boardet proaktivt fordi UEFA-rundene mangler statisk ESPN-fetcher og systematisk faller gjennom (torsdagens EL/ECL-runde 22. okt ble kun fanget av same-day coverage-critic-eskalering). DATO+arena UEFA.com primær (lest direkte); eksakt tid ikke UEFA-publisert ennå → kanonisk CL-kveldsslot kryss-bekreftet mot starting11/mykhel/foresportia (alle 20:00 UTC) + Glimts tidligere CL-slot → MEDIUM, provenance.time.basis=secondary. TV 2 Play (official). Verify låser tid mot UEFA.",
-    "TRIAGE uten funn: 100T/rain ingen bekreftet kommende CS2-kamp (web-bekreftet ærlig fravær — tracked-claim-hull er ikke et miss). coverage-gaps entitetshull alle ikke-imminente/past (Carlsen=fotball-dom-artikkel, Man City/Mesterligaen/Europaligaen=CL/EL-referat spilt, Tour de France=2027-rute). cycling.json file-empty = WorldTour off-season (korrekt, ikke død fetcher).",
-    "HORISONT-VAKT på cadence (ikke boardet ennå): tennis Stockholm Open 7.-14. nov (Ruud tittelforsvarer, boardes ~3.-5. nov); CL/EL/ECL MD4-MD5 for øvrige norske klubber (Lillestrøm EL, Brann/Viking ECL ~5.-6. nov); klassisk sjakk-VM Gukesh-Sindarov fra ~24. nov; vinteridrett (skiskyting/langrenn/hopp) starter ~sent nov.",
-    "STÅENDE self-repair/improve-flagg (strukturelt): ingen ESPN-fetcher for uefa.champions/uefa.europa/uefa.conference (alle europacuprunder håndboardes); ingen wholesale håndball-fetcher; golf-fetcher mangler look-ahead; esports-fetcher 100T-only-filter.",
-    "Horisont-scan (Step 2.6): ingen nye katalog-kandidater denne kjøringen — ingen ny norsk gjennombrudds-utøver/marquee-event utenfor katalogen i ~4-ukers-vinduet utover det allerede dekkede. demand[] ikke til stede i coverage-gaps.json."
-  ]
+	"runAt": "2026-10-23T13:30:00.000Z",
+	"tier": "standard",
+	"eventsAdded": 0,
+	"eventsRemoved": 1,
+	"trackedDelta": "Ingen katalog-/entitets-endring. Oppdaterte reason på havard-rain-nygaard (RE-bekreftet honest absence — 100T ikke i PGL Bucharest/IEM Beijing-feltene) + iem-beijing-2026 (gruppene + 2. nov-oppgjør kunngjort, eksakte per-kamp UTC-tider fortsatt omtrentlige → på cadence). 24 tournaments, 13 athletes, 10 leagues (uendret antall).",
+	"quality": {
+		"pass": true,
+		"score": null,
+		"failures": [],
+		"note": "Ingen uavhengig grader spawnet: 0 nye events produsert → ingenting å gradere. Kvalitet selv-vurdert som ren vedlikeholds-/no-op-kjøring (fail-open; standard-tier feiler ikke på stille kjøring per quota governor). Eneste tavle-endring var en mekanisk nødvendig rydding (validate-events hard-feil på aldret event)."
+	},
+	"notes": [
+		"STILLE STANDARD-TIER-KJØRING (fre. 23. okt ~15.30 CEST). eventsAdded 0, eventsRemoved 1. Nær-horisonten (23.–31. okt) var ALT bredt dekket per fersk coverage-audit (08:45Z, 0 high recall-gaps): F1 USA GP Austin (kval 24/10 21:00Z ai-research + race 25/10 20:00Z static, ESPN-blindsonen biter ikke), alle domestiske topp-5-ligaer static (inkl. El Clásico Real Madrid–Barcelona 25/10; Serie A + Bundesliga NÅ static-dekket), Eliteserien r25 + OBOS Sandnes Ulf–Lyn 25/10 + NM-cup Tromsdalen–Lyn 28/10, håndball Elkjøp + EHF CL (Kolstad/Kielce 28/10, Esbjerg kvinner 8/11), alpint Sölden 24.–25/10, golf Genesis/Bermuda/Mexico, tennis Basel (Ruud) 26/10 + Paris Masters 2/11, CS2 PGL Bucharest 24/10.",
+		"ENESTE TAVLE-ENDRING (eventsRemoved 1): ryddet 1 ai-research-event som akkurat passerte validate-events' 14-dagers grace-vindu og dermed HARD-feilet — F1 Singapore GP sprintkvalifisering (9/10, endTime 2026-10-09T13:14Z < cutoff now-14d). validate-events etter rydding: 163 events, 0 errors (gjenstående er kun ikke-blokkerende WP-246 landing-page-URL + WP-242 weak-basis-warnings på eldre/eksisterende events — verify firmer).",
+		"CS2-SCOUT (fokusert subagent, cs2-sources-skill): (a) 100 Thieves / rain (Håvard Nygaard) RE-BEKREFTET INGEN bekreftet kommende kamp — eksplisitt IKKE i PGL Masters Bucharest-feltet NI i IEM Beijing 16-lagsfeltet (ginx/esportnow), honest absence; tracked-claim-hull «Håvard rain» = ikke et miss (esports.js/verify boarder i det øyeblikk en kamp med UTC-tid publiseres). (b) PGL Bucharest per-kamp-tider FORTSATT ikke publisert → Oct-24-07:00Z-gruppespill-noden beholdes uendret; strøm bekreftet twitch.tv/pgl (alt på eventet). (c) IEM Beijing (2.–8. nov): gruppene + 2. nov-oppgjørene NÅ kunngjort (gruppe A NAVI–Falcons/FURIA–FaZe m.fl.; gruppe B MOUZ–TYLOO/Aurora–Liquid/PARIVISION–G2 m.fl.) MEN eksakte per-kamp UTC-starttider fortsatt omtrentlige (ESL-dag-skjema ~02:00 UTC 1. kamp, ikke knyttet til oppgjør) → IKKE boardet (gjettet tid verre enn manglende; 2/11 utenfor ~5-d fyll-vindu), på cadence. havard-rain-nygaard + iem-beijing-2026 tracked-reasons oppdatert.",
+		"Step 1 reconcile: ingen expires passert siden morgenkjøringen (european-chess-club-cup-2026 utløper 25/10 men fortsatt gyldig, event ferdigspilt); alle catalog.tier2-entiteter + tier1-sporter i sesong har tracked-dekning; next-fixture resolvert for alle fulgte (Lyn Sandnes Ulf 25/10, Ruud Basel+Paris Masters, Carlsen Total Chess 11/11, Hovland DP World Tour-sesongfinale midt-nov på cadence).",
+		"Step 2.6 horisont-scan: ingen ny in-scope katalog- eller demand-kandidat (coverage-gaps.json har ingen demand[]). Step 2.8 registry-reconciliation IKKE kjørt (fredag standard-tier; kun DEEP mandagssveip).",
+		"Signalbilde grønt: alle 6 WP-243-kontrakter met (09:44Z-build, breached []): f1 7/eliteserien 8/premier-league 10/dp-world-tour 2/pga-tour 3/tennis 2. scout quiet hele dagen (0/2-cap). coverage-gaps 09:44Z (5 gaps/1 anomali) alle ikke-imminente: Man City/Falcons/Europaligaen (forbi kampreferat/logo-sak), Nations League (CONCACAF Haiti–USA venue-flytt Miami 14/11, utenfor norsk board-scope), Håvard rain (honest absence); cycling.json file-empty (low) = WorldTour off-season etter Guangxi 18/10. Ingen eskalering.",
+		"Horisont på cadence (utenfor fyll-vindu): tennis Bybit Stockholm Open 7.–14. nov (Ruud TITTELFORSVARER — hard frist ~6. nov, boardes ~3.–5. nov); CL MD4 ~3.–5. nov (Lille–Bodø/Glimt alt boardet; øvrige norske klubbers MD4 + EL/ECL MD4-torsdag ~6. nov — ingen uefa.*-fetcher, håndboardes); klassisk sjakk-VM Gukesh–Sindarov fra ~24. nov; vinteridrett (skiskyting/langrenn/hopp) sent nov.",
+		"STRUKTURELLE HIGH-FLAGG STÅR (self-repair/improve, carry-forward, ikke dekningshull nå): ingen uefa.champions/uefa.europa/uefa.conference-fetcher (alle europacup-runder håndboardes), esports.js 100T-only-filter (all CS2 utover 100T er ai-research), golf-fetcher uten look-ahead, ingen wholesale håndball-fetcher/authority-contract."
+	]
 }
