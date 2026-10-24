@@ -1,19 +1,19 @@
 {
-  "checkedAt": "2026-10-23T13:06:43Z",
+  "checkedAt": "2026-10-24T12:27:00Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
-    "Reviewed full-page screenshots at 375/393/900px for Fredag 23. oktober onward, plus close-up 900px-tall segment captures at 375px and 900px to check text/truncation detail that the long full-page shots compress too much to read.",
-    "Fixture names read in full with no truncation hiding key info, including long names like 'VfB Stuttgart - Borussia Mönchengladbach', 'SC Paderborn 07 - Hamburg SV', 'TSG Hoffenheim - Bayer Leverkusen', and Norwegian entries (Bodø/Glimt - Vålerenga, Viking TIF - Drammen, Sandnes Ulf - Lyn, Kristiansund - KFUM Oslo, HamKam - Rosenborg, Lillestrøm - Brann, Sarpsborg 08 - Aalesund).",
-    "Channel column is consistently Norwegian/Nordic and honest: TV 2 Play, Viaplay, VG TV, HBO Max (Sport); honest faint '-' shown where streaming is unknown (several Serie A/Bundesliga rows). No ESPN/FOX/Sky spotted at any width.",
-    "National flags and club crests render as proper icons next to each fixture; no broken-image boxes observed.",
-    "Must-see accent dots used sparingly (e.g. HamKam-Rosenborg, Lillestrøm-Brann, Bodø/Glimt-Vålerenga, Arsenal-Everton), not on every row.",
+    "Reviewed full-page screenshots at 375/393/900px for Lørdag 24. oktober onward, plus close-up ~900px-tall segment captures at each width (13/12/10 segments respectively) to check text/truncation detail the long full-page shots compress too much to read.",
+    "Fixture names read in full with no truncation hiding key info, including long names like 'Liverpool – Brighton & Hove Albion', 'Manchester United – Bournemouth', 'TSG Hoffenheim – Bayer Leverkusen', 'SC Paderborn 07 – Hamburg SV', and Norwegian entries (Bodø/Glimt – Viking, HamKam – Rosenborg, Viking TIF – Drammen, Elverum – ØIF Arendal, Butterfield Bermuda Championship/Genesis Championship golf flags).",
+    "Channel column is consistently Norwegian/Nordic and honest: TV 2 Play, Viaplay, VG TV, HBO Max (Sport), Twitch (PGL); an honest faint '–' shows wherever streaming is unknown (many Copa del Rey/Serie A/Bundesliga rows at lower tiers). No ESPN/FOX/Sky spotted at any width.",
+    "National flags and club crests render as proper icons next to each fixture, including obscure Copa del Rey minnows (generic placeholder circle icon used consistently where no crest exists) — no broken-image boxes observed.",
+    "Must-see accent dots used sparingly (e.g. Arsenal–Everton, HamKam–Rosenborg, Barcelona–Real Madrid, Bodø/Glimt–Viking), not on every row.",
     "No horizontal scroll or clipped content at any width, including the hardest 375px case.",
-    "Live-now banner ('DIREKTE NÅ', European Chess Club Cup - Erigaisi & Wei Yi) and the single quiet 'Kveldsbriefen' editorial headline line both render as one unobtrusive block each.",
-    "Floating Assistent button rests over mid-list rows at different scroll positions (by design, DESIGN.md-sanctioned) and, checked specifically at the footer, never covers the last agenda/news row or footer text ('AI-budsjett: uke 7% - okt 0%' fully visible beside/above it at 375px; footer fully clear at 900px).",
-    "Header, day/weekday headings, 'Neste opp', 'Dette dekker vi' / 'Merker og kilder' disclosures, and footer (Oppdatert date, Abonner i kalender, AI-budsjett line) all intact and aligned at every width.",
-    "Single centered column confirmed at 900px too (max-width ~640px), per DESIGN.md - no dashboard-grid regression.",
-    "Day groupings and date headers (Lørdag 24. oktober, Søndag 25. oktober) are clear and consistently formatted."
+    "'DIREKTE NÅ' live section and the single quiet 'Morgenbriefen' editorial headline line both render as one unobtrusive block each; the Uka/Nyheter toggle pill is intact.",
+    "Floating Assistent button: at 375/393px it rests over mid-list rows at different scroll positions (DESIGN.md-sanctioned) and never covers the last agenda/news row or footer — 'AI-budsjett: uke 11% · økt 0%' is fully visible above/beside it at the bottom of the page. At 900px it shows an expanded '✨ Assistent' label near the top of the page (slightly overlapping a mid-agenda row, e.g. Cagliari – Bologna) but collapses to an icon-only FAB further down, sitting clear of the 640px column and never touching the footer or last row.",
+    "Header, day/weekday headings ('Mandag 26. oktober', 'Tirsdag 27. oktober', …), 'Neste opp', 'Dette dekker vi' / 'Merker og kilder' disclosures, and footer (Oppdatert date, Abonner i kalender, AI-budsjett line) all intact and aligned at every width.",
+    "Single centered column confirmed at 900px too (content column visibly inset from both viewport edges, not a full-width grid), per DESIGN.md.",
+    "The MSC Cruises United States Grand Prix row's subtitle ('Formula 1 2026 - Race Weekend') reads slightly oddly but is intact, unclipped, and legible — a content/copy question, not a rendering defect."
   ]
 }
