@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-24T13:49:13.649Z",
+  "lastUpdated": "2026-10-24T17:10:27.423Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
@@ -28,7 +28,7 @@
           "totalPlayers": null,
           "isFavorite": true,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -54,7 +54,7 @@
           "totalPlayers": null,
           "isFavorite": true,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_SECOND_HALF"
           }
         },
         {
@@ -245,32 +245,6 @@
       "name": "Premier League",
       "events": [
         {
-          "id": "football-manchester-city-at-aston-villa-1792841400000",
-          "title": "Manchester City at Aston Villa",
-          "time": "2026-10-24T11:30:00.000Z",
-          "venue": "Villa Park",
-          "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
-          "streaming": [
-            {
-              "platform": "USA Net",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Aston Villa",
-          "awayTeam": "Manchester City",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": true,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
           "id": "football-everton-at-arsenal-1792850400000",
           "title": "Everton at Arsenal",
           "time": "2026-10-24T14:00:00.000Z",
@@ -293,7 +267,7 @@
           "totalPlayers": null,
           "isFavorite": true,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -319,7 +293,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -345,7 +319,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FIRST_HALF"
           }
         },
         {
@@ -484,32 +458,6 @@
       "name": "La Liga",
       "events": [
         {
-          "id": "football-elche-at-rayo-vallecano-1792843200000",
-          "title": "Elche at Rayo Vallecano",
-          "time": "2026-10-24T12:00:00.000Z",
-          "venue": "Estadio de Vallecas",
-          "sport": "football",
-          "meta": "La Liga",
-          "tournament": "La Liga",
-          "streaming": [
-            {
-              "platform": "ESPN Deportes",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Rayo Vallecano",
-          "awayTeam": "Elche",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
           "id": "football-espanyol-at-racing-santander-1792851300000",
           "title": "Espanyol at Racing Santander",
           "time": "2026-10-24T14:15:00.000Z",
@@ -532,7 +480,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -558,7 +506,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FIRST_HALF"
           }
         },
         {
@@ -749,58 +697,6 @@
       "name": "Serie A",
       "events": [
         {
-          "id": "football-bologna-at-cagliari-1792846800000",
-          "title": "Bologna at Cagliari",
-          "time": "2026-10-24T13:00:00.000Z",
-          "venue": "Unipol Domus",
-          "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
-          "streaming": [
-            {
-              "platform": "Paramount+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Cagliari",
-          "awayTeam": "Bologna",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_HALFTIME"
-          }
-        },
-        {
-          "id": "football-sassuolo-at-como-1792846800000",
-          "title": "Sassuolo at Como",
-          "time": "2026-10-24T13:00:00.000Z",
-          "venue": "Giuseppe Sinigaglia",
-          "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
-          "streaming": [
-            {
-              "platform": "Paramount+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Como",
-          "awayTeam": "Sassuolo",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_HALFTIME"
-          }
-        },
-        {
           "id": "football-as-roma-at-napoli-1792857600000",
           "title": "AS Roma at Napoli",
           "time": "2026-10-24T16:00:00.000Z",
@@ -823,7 +719,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_SECOND_HALF"
           }
         },
         {
@@ -1270,7 +1166,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_FIRST_HALF"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1296,7 +1192,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_FIRST_HALF"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1322,7 +1218,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_FIRST_HALF"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1348,7 +1244,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_IN_PROGRESS"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1374,7 +1270,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_FIRST_HALF"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1400,7 +1296,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FIRST_HALF"
           }
         },
         {
@@ -2194,6 +2090,86 @@
           "norwegian": false,
           "homeTeam": "Trival Valderas",
           "awayTeam": "Leganés",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-fc-cartagena-at-cd-minera-1793215800000",
+          "title": "FC Cartagena at CD Minera",
+          "time": "2026-10-28T19:30:00.000Z",
+          "venue": "Estadio Municipal Ángel Celdrán",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "CD Minera",
+          "awayTeam": "FC Cartagena",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-granada-at-cieza-1793215800000",
+          "title": "Granada at Cieza",
+          "time": "2026-10-28T19:30:00.000Z",
+          "venue": "Estadio Municipal La Arboleja",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Cieza",
+          "awayTeam": "Granada",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-ud-ourense-at-gimnástica-torrelavega-1793215800000",
+          "title": "UD Ourense at Gimnástica Torrelavega",
+          "time": "2026-10-28T19:30:00.000Z",
+          "venue": "El Malecon",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Gimnástica Torrelavega",
+          "awayTeam": "UD Ourense",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-barakaldo-at-reus-fc-reddis-1793215800000",
+          "title": "Barakaldo at Reus FC Reddis",
+          "time": "2026-10-28T19:30:00.000Z",
+          "venue": "Camp Nou Municipal",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Reus FC Reddis",
+          "awayTeam": "Barakaldo",
           "participants": [],
           "norwegianPlayers": [],
           "totalPlayers": null,

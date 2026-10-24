@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-24T13:50:06.323Z",
+  "generatedAt": "2026-10-24T17:11:09.784Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
     "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
-    "contracts": "green"
+    "contracts": "yellow"
   },
   "basis": {
     "coverageAudit": true,
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 1
     },
-    "oldestGapAgeDays": 17.15,
+    "oldestGapAgeDays": 17.29,
     "escalatable": 1,
     "catalogMatched": 1,
     "auditedAt": "2026-10-24T08:45:00Z",
@@ -35,14 +35,14 @@
       {
         "interest": "Tennis — Casper Ruuds høst-innendørssving (Bybit Stockholm Open, ATP 250, Ruud tittelforsvarer)",
         "severity": "medium",
-        "ageDays": 17.15,
+        "ageDays": 17.29,
         "recurrences": 17,
         "catalogMatched": true
       },
       {
         "interest": "Vinteridrett — hopp-verdenscupåpningen Lillehammer (20.–22. nov, tier1 wholesale)",
         "severity": "low",
-        "ageDays": 0.21,
+        "ageDays": 0.35,
         "recurrences": 0,
         "catalogMatched": false
       }
@@ -160,15 +160,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-24T13:50:03.012Z",
+    "buildCheckedAt": "2026-10-24T17:11:04.483Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-24T09:18:00.396Z",
-    "manifestAgeHours": 4.53,
+    "manifestGeneratedAt": "2026-10-24T13:50:09.205Z",
+    "manifestAgeHours": 3.35,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-10-24T09:42:00Z",
-    "verifyAgeHours": 4.14,
+    "verifyAgeHours": 7.49,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -176,7 +176,15 @@
   "contracts": {
     "total": 6,
     "inSeason": 6,
-    "breached": [],
-    "generatedAt": "2026-10-24T13:50:06.322Z"
+    "breached": [
+      {
+        "id": "football:premier-league",
+        "name": "Premier League",
+        "upcoming": 5,
+        "minUpcoming": 6,
+        "horizonDays": 14
+      }
+    ],
+    "generatedAt": "2026-10-24T17:11:09.783Z"
   }
 }
