@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T09:17:58.731Z",
+  "generatedAt": "2026-10-24T13:50:06.323Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 1
     },
-    "oldestGapAgeDays": 16.96,
+    "oldestGapAgeDays": 17.15,
     "escalatable": 1,
     "catalogMatched": 1,
     "auditedAt": "2026-10-24T08:45:00Z",
@@ -35,36 +35,29 @@
       {
         "interest": "Tennis — Casper Ruuds høst-innendørssving (Bybit Stockholm Open, ATP 250, Ruud tittelforsvarer)",
         "severity": "medium",
-        "ageDays": 16.96,
+        "ageDays": 17.15,
         "recurrences": 17,
         "catalogMatched": true
       },
       {
         "interest": "Vinteridrett — hopp-verdenscupåpningen Lillehammer (20.–22. nov, tier1 wholesale)",
         "severity": "low",
-        "ageDays": 0.02,
+        "ageDays": 0.21,
         "recurrences": 0,
         "catalogMatched": false
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0,
-    "nearTermChecked": 4,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-10-23T10:17:15Z",
+    "nearTermRate": 0.18,
+    "nearTermChecked": 11,
+    "nearTermAmended": 2,
+    "verifyRunAt": "2026-10-24T09:42:00Z",
     "windowRate": 0,
-    "windowChecks": 56,
+    "windowChecks": 57,
     "windowAmendments": 0,
-    "windowCorrections": 5,
+    "windowCorrections": 7,
     "byDay": [
-      {
-        "date": "2026-10-10",
-        "checks": 3,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-10-11",
         "checks": 5,
@@ -155,20 +148,27 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-10-24",
+        "checks": 4,
+        "amendments": 0,
+        "corrections": 2,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-24T09:17:55.285Z",
+    "buildCheckedAt": "2026-10-24T13:50:03.012Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-24T07:48:11.331Z",
-    "manifestAgeHours": 1.5,
+    "manifestGeneratedAt": "2026-10-24T09:18:00.396Z",
+    "manifestAgeHours": 4.53,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-23T10:17:15Z",
-    "verifyAgeHours": 23.01,
+    "checkedAt": "2026-10-24T09:42:00Z",
+    "verifyAgeHours": 4.14,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -177,6 +177,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-24T09:17:58.730Z"
+    "generatedAt": "2026-10-24T13:50:06.322Z"
   }
 }
