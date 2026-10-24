@@ -2642,16 +2642,16 @@
     "sport": "alpine",
     "tournament": "FIS verdenscup alpint 2026/27",
     "title": "Sölden – storslalåm kvinner",
-    "time": "2026-10-24T08:00:00Z",
-    "endTime": "2026-10-24T12:00:00Z",
+    "time": "2026-10-24T08:30:00Z",
+    "endTime": "2026-10-24T12:30:00Z",
     "venue": "Rettenbach-breen, Sölden, Østerrike",
     "norwegian": false,
     "norwegianPlayers": [],
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
         "urlKind": "landing"
       }
     ],
@@ -2667,25 +2667,23 @@
     "provenance": {
       "time": {
         "sourceId": "fis",
-        "url": "https://www.soelden.com/en/events-leisure-tips/events/audi-fis-ski-world-cup-opening/program",
+        "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
         "basis": "primary",
-        "retrievedAt": "2026-10-02T05:50:00Z",
-        "note": "Sölden/Ötztal er FIS-verdenscupens lokale arrangør og setter klokka; offisielt program oppgir 1. omgang 10.00, 2. omgang 13.00 lokal tid. Kryss-bekreftet mot NRKs offisielle 2026/27-vintersportprogram (samme tider: 10.00/13.00 lokal) + Wikipedia 2026-10-17"
+        "retrievedAt": "2026-10-24T09:42:00Z",
+        "note": "Vaerutsatt: NRKs live-programside (oppdatering 24. okt kl. 08.49) melder at rennledelsen utsatt begge omgangene; ny starttid 1. omgang 10.30 / 2. omgang 13.30 lokal (CEST, UTC+2) = 08:30 / 11:30 UTC. Opprinnelig 10.00/13.00. Live vaersituasjon - programmet kan justeres ytterligere."
       },
       "streaming": {
         "sourceId": "nrk",
         "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
         "basis": "secondary",
-        "retrievedAt": "2026-10-24T04:42:00Z",
-        "note": "NRKs offisielle 2026/27-vintersportprogram (lest direkte) tilordner ALLE fire Sölden-omgangene (kvinner 24. okt + menn 25. okt) til Viaplay. TV 2/Viaplay deler Østerrike-pakken 2026/27–2030/31; disse rennene tilordnet Viaplay. streaming[]-feltet STOD FEILAKTIG PÅ NRK tross at summary/provenance/norwegian-rights alle sa Viaplay — en motsigelse som overlevde minst tre tidligere forsøk (verify 20.10, research 21.10 19:45Z + 23:25Z-noten påsto feilaktig at den var rettet). NÅ FAKTISK RETTET til Viaplay 2026-10-24T04:42Z; summary↔streaming-mismatch-advarselen skal være borte."
+        "retrievedAt": "2026-10-24T09:42:00Z",
+        "note": "NRKs offisielle 2026/27-vintersportprogram (lest direkte 24. okt) tilordner alle fire Soelden-omgangene til Viaplay (TV2/Viaplay deler Oesterrike-pakken 2026/27-2030/31). streaming[]-feltet sto FEILAKTIG paa NRK tross provenance/summary/norwegian-rights/forrige kalibreringslinje alle sa Viaplay; naa FAKTISK rettet i selve arrayet."
       }
     },
-    "summary": "Verdenscupåpningen i alpint — kvinnenes storslalåm på Rettenbach-breen i Sölden sparker i gang 2026/27-sesongen. Tradisjonen tro er sesongstarten i Østerrike en storslalåm for både kvinner (lørdag) og menn (søndag).\n\n1. omgang kl. 10.00, 2. omgang kl. 13.00 lokal tid (08.00 og 11.00 UTC — Østerrike er på sommertid til natt til søndag 25. okt). Tidene er bekreftet mot NRKs offisielle vintersportprogram.\n\nNorsk visning: Viaplay. NRKs offisielle 2026/27-vintersportprogram oppgir nå Viaplay for alle fire omgangene i Sölden (tidligere «ikke bestemt»). TV 2 og Viaplay deler Østerrike-pakken 2026/27–2030/31; disse rennene er tilordnet Viaplay. Programmet kan justeres ved vær.",
-    "verifiedAt": "2026-10-23T10:17:15Z",
-    "verificationStatus": "confirmed",
+    "summary": "Verdenscupaapningen i alpint - kvinnenes storslalaam paa Rettenbach-breen i Soelden sparker i gang 2026/27-sesongen.\n\nVAERUTSATT: rennledelsen utsatt begge omgangene om morgenen 24. okt (NRKs programside, kl. 08.49). Ny starttid 1. omgang kl. 10.30, 2. omgang kl. 13.30 lokal tid (08.30 og 11.30 UTC - Oesterrike er paa sommertid til natt til soendag 25. okt). Programmet kan justeres ytterligere ved vaer.\n\nNorsk visning: Viaplay. NRKs offisielle 2026/27-vintersportprogram oppgir Viaplay for alle fire omgangene i Soelden. TV 2 og Viaplay deler Oesterrike-pakken 2026/27-2030/31.",
+    "verifiedAt": "2026-10-24T09:42:00Z",
+    "verificationStatus": "amended",
     "verificationSources": [
-      "https://www.soelden.com/en/events-leisure-tips/events/audi-fis-ski-world-cup-opening/program",
-      "https://en.wikipedia.org/wiki/2026_Alpine_Skiing_World_Cup_%E2%80%93_Women%27s_giant_slalom",
       "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873"
     ],
     "id": "4fbeafb602de"
@@ -3471,8 +3469,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
         "urlKind": "landing"
       }
     ],
@@ -3497,17 +3495,16 @@
         "sourceId": "nrk",
         "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
         "basis": "secondary",
-        "retrievedAt": "2026-10-24T04:42:00Z",
-        "note": "NRKs offisielle 2026/27-vintersportprogram (lest direkte) tilordner ALLE fire Sölden-omgangene (kvinner 24. okt + menn 25. okt) til Viaplay. TV 2/Viaplay deler Østerrike-pakken 2026/27–2030/31; disse rennene tilordnet Viaplay. streaming[]-feltet STOD FEILAKTIG PÅ NRK tross at summary/provenance/norwegian-rights alle sa Viaplay — en motsigelse som overlevde minst tre tidligere forsøk (verify 20.10, research 21.10 19:45Z + 23:25Z-noten påsto feilaktig at den var rettet). NÅ FAKTISK RETTET til Viaplay 2026-10-24T04:42Z; summary↔streaming-mismatch-advarselen skal være borte."
+        "retrievedAt": "2026-10-24T09:42:00Z",
+        "note": "NRKs offisielle 2026/27-vintersportprogram (lest direkte 24. okt) tilordner alle fire Soelden-omgangene til Viaplay. streaming[]-feltet sto FEILAKTIG paa NRK tross alt annet sa Viaplay; naa rettet i arrayet. Tider uendret: 10.00/13.00 lokal (CET etter sommertid-slutt natt til 25.) = 09:00/12:00 UTC."
       }
     },
     "summary": "Verdenscupåpningen i alpint — mennenes storslalåm på Rettenbach-breen i Sölden avslutter åpningshelgen og 2026/27-sesongens første mannerenn.\n\n1. omgang kl. 10.00, 2. omgang kl. 13.00 lokal tid (09.00 og 12.00 UTC — natt til denne søndagen stilles klokka tilbake til normaltid, så Østerrike er på UTC+1).\n\nNorsk visning: Viaplay. NRKs offisielle 2026/27-vintersportprogram oppgir nå Viaplay for alle fire omgangene i Sölden (tidligere «ikke bestemt»). TV 2 og Viaplay deler Østerrike-pakken 2026/27–2030/31; disse rennene er tilordnet Viaplay. Programmet kan justeres ved vær.",
-    "verifiedAt": "2026-10-23T10:17:15Z",
-    "verificationStatus": "confirmed",
+    "verifiedAt": "2026-10-24T09:42:00Z",
+    "verificationStatus": "amended",
     "verificationSources": [
-      "https://www.soelden.com/en/events-leisure-tips/events/audi-fis-ski-world-cup-opening/program",
-      "https://en.wikipedia.org/wiki/2026_Alpine_Skiing_World_Cup_%E2%80%93_Men%27s_giant_slalom",
-      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873"
+      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
+      "https://en.wikipedia.org/wiki/2026_Alpine_Skiing_World_Cup_%E2%80%93_Men%27s_giant_slalom"
     ],
     "id": "7ce116ce0db8"
   },

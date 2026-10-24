@@ -1,15 +1,16 @@
 {
-  "runAt": "2026-10-23T10:17:15Z",
-  "checked": 4,
-  "confirmed": 4,
-  "amended": 0,
+  "runAt": "2026-10-24T09:42:00Z",
+  "checked": 11,
+  "confirmed": 9,
+  "amended": 2,
   "removed": 0,
   "notes": [
-    "Re-verifiserte de fire mest imminente AI-research-eventene (neste 1-2 dager) mot ferske autoritative kilder; alt samsvarer med board.",
-    "Soelden verdenscupaapning (24.-25. okt): kvinner GS loer, menn GS soen, 10.00/13.00 lokal bekreftet mot Soelden/Oetztal-programmet + Wikipedia + SnowBrains. UTC-tider korrekte paa begge sider av sommertid-slutt natt til 25. okt. Streaming Viaplay bekreftet mot NRKs vintersportprogram.",
-    "US GP kvalifisering (24. okt 21:00 UTC = 16:00 CDT Austin): bekreftet mot RacingNews365/GPblog + formula1.com. Viaplay korrekt.",
-    "Sandnes Ulf-Lyn OBOS (25. okt 13:30 UTC = 14.30 lokal etter sommertid-slutt): Visit Norway korroborerer fotball.no-primaer. TV-slot kan fortsatt flytte avspark 30-60 min.",
-    "Ovrige near-term kandidater (handball Elverum/Viking/Sandnes/Fjellhammer/Kielce-Kolstad, PGL Masters Bucharest, Kolstad-Magdeburg, Tromsdalen-Lyn NM-cup) ble verifisert 22. okt og staar uendret; ingen nye motsigelser funnet.",
-    "Ingen events fjernet eller endret denne kjoeringen; 4 calibration-ledger-linjer lagt til (alle agreed:true)."
+    "11 events i de neste 7 dagene (ai-research/confidence) gjennomgaatt.",
+    "AMENDED Soelden storslalaam kvinner (24. okt): streaming[]-arrayet rettet fra NRK til Viaplay - en motsigelse der provenance/summary/norwegian-rights/kalibreringslinjer alle sa Viaplay, men selve arrayet sto paa NRK gjennom minst fire tidligere kjoeringer (senest 23. okt logget 'agreed:true' mot Viaplay uten aa faktisk endre arrayet). I tillegg VAERUTSATT: NRKs live-programside (oppd. 24. okt 08.49) melder ny starttid 10.30/13.30 lokal; tid flyttet 08:00Z -> 08:30Z, endTime -> 12:30Z. Live vaersituasjon - kan justeres ytterligere.",
+    "AMENDED Soelden storslalaam menn (25. okt): samme streaming-fix NRK -> Viaplay i arrayet; tider uendret (10.00/13.00 lokal = 09:00/12:00 UTC etter sommertid-slutt).",
+    "CONFIRMED handball Elkjoep-ligaen menn x4 (Elverum-OeIF Arendal, Viking TIF-Drammen 24. okt; Sandnes-Bergen, Fjellhammer-Bergsoey 25. okt): flashscore.com-terminliste bekrefter at kampene eksisterer paa oppgitte datoer. MEN flashscore er Livesport-eid (samme konsern som betexplorer/flashscore.mobi i evidence), saa ingen uavhengig TIDskorroborasjon - handball.no fortsatt uleselig. Tider uendret, confidence forblir medium.",
+    "CONFIRMED F1 US GP kvalifisering (24. okt 21:00 UTC): primaerkilde formula1.com bekreftet 23. okt, ingen endring. Viaplay norsk visning.",
+    "CONFIRMED (uendret, ferskt verifisert 22.-23. okt, lett gjennomgang): PGL Masters Bucharest esports (gruppespill, Twitch/pgl), Sandnes Ulf-Lyn OBOS (fotball.no primaer, 25. okt 13:30Z), Tromsdalen-Lyn NM-cup (28. okt, TV 2 Play), Industria Kielce-Kolstad EHF CL (28. okt 19:45Z, EHF primaer).",
+    "Streaming-kart (norwegian-rights) allerede korrekt for alpint (Viaplay) - ingen skill-endring noedvendig; feilen laa i eventets array, ikke i kartet."
   ]
 }
