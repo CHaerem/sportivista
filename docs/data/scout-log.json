@@ -270,5 +270,13 @@
     "verdict": "quiet",
     "reason": "RSS (55 items, 13:49 UTC Oct 24): live/past match coverage (Aston Villa v Man City tracked, alpine Sölden, CS2 PGL Masters Bucharest, Basel tennis, football Premier League/Eliteserien finalized—no schedule/time/venue changes). Personnel/injury news (Vincent Kompany collapsed at Bayern training—no reschedule announced, health incident only; Saka 6-week absence—no reschedule announced, lineup impact only; transfer gossip—no schedule impact). No broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (9 gaps, 1 anomaly): rain, Uno-X, Europa League, Tour de France, Giro (all from past match articles, imminent=false); Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 7 days away, pre-existing, no NEW RSS announcement); cycling.json empty (low severity). Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 24 UTC): 0/2.",
     "signals": []
+  },
+  {
+    "runAt": "2026-10-24T17:15:00.000Z",
+    "verdict": "escalate",
+    "reason": "RSS (54 items, 17:10 UTC Oct 24): mostly completed match coverage—no schedule/time/venue changes announced. HOWEVER: coverage-gaps.json (17:11 UTC) now shows HIGH-SEVERITY contract-breach gap — Premier League (wholesale-covered, imminent=true) reports '5 av minst 6 ventede events innen 14 dager' missing on board. This is exactly the gap class defined as a broken promise (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken in-season. Coverage-critic and research must fill this from the premier-league authority. Oct 24 UTC escalation cap before this: 0/2.",
+    "signals": [
+      "Premier League contract-breach (high severity, imminent): 5+ expected upcoming events missing from board, wholesale-covered competition with pre-agreed contract"
+    ]
   }
 ]
