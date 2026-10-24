@@ -1,12 +1,13 @@
 {
-	"runAt": "2026-10-23T13:30:00Z",
+	"runAt": "2026-10-24T12:40:00Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"visual-qa-log.json (checkedAt 2026-10-23T13:06:43Z) verdict is 'pass' with an empty findings[] — nothing code-fixable to act on.",
-		"Review notes confirm no truncation (long fixture names like 'VfB Stuttgart - Borussia Mönchengladbach' read in full), no horizontal scroll/overflow at 375/393/900px, honest Norwegian/Nordic channels (no ESPN/FOX/Sky), intact flags/crests, sparing must-see dots, and single centered column at 900px — calm design held.",
-		"Floating Assistent button verified not to cover the last row or footer at any width.",
+		"visual-qa-log.json (checkedAt 2026-10-24T12:27:00Z) verdict is 'pass' with an empty findings[] — no high/medium (or any) findings to act on.",
+		"Review notes confirm no truncation (long names like 'Liverpool – Brighton & Hove Albion', 'SC Paderborn 07 – Hamburg SV' read in full), no horizontal scroll/overflow at 375/393/900px, honest Norwegian/Nordic channels (no ESPN/FOX/Sky), intact flags/crests, sparing must-see dots, and single centered column at 900px — calm design held.",
+		"Floating Assistent button verified not to cover the last agenda/news row or footer at any width.",
+		"The one 'odd' note (the US GP subtitle copy) is a content/copy question, not a rendering defect, and is explicitly not code-fixable UI per ui-fix rule 3.",
 		"Per ui-fix rule 1 (pass verdict / no high|medium findings), exited cleanly without a branch or PR."
 	]
 }
