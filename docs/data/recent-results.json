@@ -1,6 +1,35 @@
 {
-  "lastUpdated": "2026-10-25T21:24:15.997Z",
+  "lastUpdated": "2026-10-25T23:42:16.620Z",
   "football": [
+    {
+      "homeTeam": "Barcelona",
+      "awayTeam": "Real Madrid",
+      "homeScore": 1,
+      "awayScore": 2,
+      "date": "2026-10-25T20:00Z",
+      "league": "La Liga",
+      "leagueCode": "esp.1",
+      "venue": "Spotify Camp Nou",
+      "goalScorers": [
+        {
+          "player": "Kylian Mbappé",
+          "team": "Real Madrid",
+          "minute": "41'"
+        },
+        {
+          "player": "Raphinha",
+          "team": "Barcelona",
+          "minute": "61'"
+        },
+        {
+          "player": "Kylian Mbappé",
+          "team": "Real Madrid",
+          "minute": "87'"
+        }
+      ],
+      "recapHeadline": "Mbappé double secures Real Madrid late victory at Barcelona after Raphinha leveller",
+      "isFavorite": true
+    },
     {
       "homeTeam": "Molde",
       "awayTeam": "Fredrikstad",
@@ -469,6 +498,30 @@
       "isFavorite": true
     },
     {
+      "homeTeam": "Udinese",
+      "awayTeam": "AC Milan",
+      "homeScore": 0,
+      "awayScore": 2,
+      "date": "2026-10-25T19:45Z",
+      "league": "Serie A",
+      "leagueCode": "ita.1",
+      "venue": "Stadio Friuli",
+      "goalScorers": [
+        {
+          "player": "Christian Pulisic",
+          "team": "AC Milan",
+          "minute": "6'"
+        },
+        {
+          "player": "Omari Hutchinson",
+          "team": "AC Milan",
+          "minute": "65'"
+        }
+      ],
+      "recapHeadline": null,
+      "isFavorite": false
+    },
+    {
       "homeTeam": "Real Sociedad",
       "awayTeam": "Levante",
       "homeScore": 2,
@@ -713,7 +766,7 @@
           "minute": "58'"
         }
       ],
-      "recapHeadline": "Osula and Barnes strike as Newcastle pile pressure on lacklustre Palace",
+      "recapHeadline": "Manchester United board hold crisis talks over Carrick’s future and Howe approach",
       "isFavorite": false
     },
     {
@@ -873,7 +926,7 @@
           "minute": "90'+3'"
         }
       ],
-      "recapHeadline": "Viking-profil beklaget etter kynisk takling: Sendte motspiller til sykehus",
+      "recapHeadline": "Viking fikk luke før toppkamp – slo Tromsø 3-1 etter gavepakke og fæl skade",
       "isFavorite": false
     },
     {
@@ -2109,6 +2162,75 @@
   "tennis": [],
   "f1": [
     {
+      "raceName": "MSC Cruises United States Grand Prix",
+      "type": "Race",
+      "date": "2026-10-23T17:30Z",
+      "circuit": "Circuit of the Americas",
+      "topDrivers": [
+        {
+          "position": 1,
+          "driver": "Kimi Antonelli",
+          "team": null,
+          "status": null
+        },
+        {
+          "position": 2,
+          "driver": "Charles Leclerc",
+          "team": null,
+          "status": null
+        },
+        {
+          "position": 3,
+          "driver": "Max Verstappen",
+          "team": null,
+          "status": null
+        },
+        {
+          "position": 4,
+          "driver": "Lewis Hamilton",
+          "team": null,
+          "status": null
+        },
+        {
+          "position": 5,
+          "driver": "Lando Norris",
+          "team": null,
+          "status": null
+        },
+        {
+          "position": 6,
+          "driver": "Isack Hadjar",
+          "team": null,
+          "status": null
+        },
+        {
+          "position": 7,
+          "driver": "Oscar Piastri",
+          "team": null,
+          "status": null
+        },
+        {
+          "position": 8,
+          "driver": "George Russell",
+          "team": null,
+          "status": null
+        },
+        {
+          "position": 9,
+          "driver": "Liam Lawson",
+          "team": null,
+          "status": null
+        },
+        {
+          "position": 10,
+          "driver": "Pierre Gasly",
+          "team": null,
+          "status": null
+        }
+      ],
+      "totalDrivers": 22
+    },
+    {
       "raceName": "Singapore Airlines Singapore Grand Prix",
       "type": "Race",
       "date": "2026-10-09T08:30Z",
@@ -2248,8 +2370,8 @@
     }
   ],
   "validationMetrics": {
-    "totalResults": 71,
-    "validResults": 71,
+    "totalResults": 74,
+    "validResults": 74,
     "issueCount": 0
   }
 }

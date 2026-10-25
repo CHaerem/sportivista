@@ -1,8 +1,19 @@
 {
-  "generatedAt": "2026-10-25T21:24:39.669Z",
-  "gapCount": 2,
+  "generatedAt": "2026-10-25T23:42:35.546Z",
+  "gapCount": 8,
   "anomalyCount": 2,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Molde",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Lonebu feiret som Haaland i vilt målshow: – En syk opplevelse",
+      "link": "https://www.nrk.no/sport/lonebu-feiret-som-haaland-i-vilt-malshow_-_-en-syk-opplevelse-1.18064550",
+      "feed": "nrk-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-10-25T23:42:34.838Z"
+    },
     {
       "kind": "entity",
       "entity": "Brann",
@@ -11,8 +22,63 @@
       "headline": "Lillestrøm reiste seg etter ydmykelsen – Va-dobbel i 3-2-seier over Brann",
       "link": "https://www.nrk.no/sport/lillestrom-reiste-seg-etter-ydmykelsen-_-va-dobbel-i-3-2-seier-over-brann-1.18064356",
       "feed": "nrk-sport",
+      "matchCount": 4,
+      "detectedAt": "2026-10-25T23:42:34.838Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Formula 1",
+      "type": "imminent",
+      "imminent": true,
+      "headline": "Verstappen responds to COTA boss and proposes drastic measures to tackle bumps",
+      "link": "https://www.autosport.com/f1/news/max-verstappen-responds-to-cota-boss-he-can-drive-my-car-after-five-laps-he-wont-be-able-to-walk/10868204/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=uk",
+      "feed": "autosport-f1",
+      "matchCount": 1,
+      "detectedAt": "2026-10-25T23:42:34.838Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Formel 1",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Suveren Antonelli-seier i USA",
+      "link": "https://www.nrk.no/sport/suveren-antonelli-seier-i-usa-1.18064436",
+      "feed": "nrk-sport",
       "matchCount": 2,
-      "detectedAt": "2026-10-25T21:24:36.982Z"
+      "detectedAt": "2026-10-25T23:42:34.838Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Tour de France",
+      "type": "missing",
+      "imminent": false,
+      "headline": "'I get the feeling they are waiting to see where Paul Seixas really pushes Tadej Pogačar' - Philippa York analyses a 'non-traditional' 2027 Tour de France route",
+      "link": "https://www.cyclingnews.com/pro-cycling/i-get-the-feeling-they-are-waiting-to-see-where-paul-seixas-really-pushes-tadej-pogacar-philippa-york-analyses-a-non-traditional-2027-tour-de-france-route/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-10-25T23:42:34.838Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Chess Olympiad",
+      "type": "missing",
+      "imminent": false,
+      "headline": "A farewell triumph: Capablanca wins gold in Buenos Aires 1939",
+      "link": "https://en.chessbase.com/post/capablanca-wins-gold-buenos-aires-1939",
+      "feed": "chessbase",
+      "matchCount": 1,
+      "detectedAt": "2026-10-25T23:42:34.838Z"
+    },
+    {
+      "kind": "sport",
+      "entity": "Formel 1",
+      "sport": "f1",
+      "type": "imminent",
+      "imminent": true,
+      "headline": "Verstappen responds to COTA boss and proposes drastic measures to tackle bumps",
+      "link": "https://www.autosport.com/f1/news/max-verstappen-responds-to-cota-boss-he-can-drive-my-car-after-five-laps-he-wont-be-able-to-walk/10868204/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=uk",
+      "feed": "autosport-f1",
+      "detectedAt": "2026-10-25T23:42:34.838Z"
     },
     {
       "kind": "tracked-claim",
@@ -24,7 +90,7 @@
       "claimedDate": "2026-10-31T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-10-25T21:24:37.953Z"
+      "detectedAt": "2026-10-25T23:42:35.401Z"
     }
   ],
   "anomalies": [
@@ -33,14 +99,14 @@
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-25T21:24:38.005Z"
+      "detectedAt": "2026-10-25T23:42:35.429Z"
     },
     {
       "sport": "cycling",
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-25T21:24:38.005Z"
+      "detectedAt": "2026-10-25T23:42:35.429Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
