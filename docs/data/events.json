@@ -2500,8 +2500,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport/vintersport",
         "urlKind": "landing"
       }
     ],
@@ -2701,8 +2701,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport/vintersport",
         "urlKind": "landing"
       }
     ],
@@ -2728,11 +2728,11 @@
         "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
         "basis": "secondary",
         "retrievedAt": "2026-10-25T04:55:00Z",
-        "note": "Norsk visning Viaplay. NRKs offisielle 2026/27-vintersportprogram (lest direkte) tilordner alle fire Sölden-omgangene til Viaplay; TV 2 og Viaplay deler Østerrike-pakken 2026/27–2030/31 (tv2.no). streaming[]-feltet korrigert NRK→Viaplay 25. okt (hadde ligget feil på NRK tross summary/provenance/evidence alle sa Viaplay — summary↔streaming-selvmotsigelse lukket)."
+        "note": "Norsk visning Viaplay. NRKs offisielle 2026/27-vintersportprogram (lest direkte) tilordner alle fire Sölden-omgangene til Viaplay; TV 2 og Viaplay deler Østerrike-pakken 2026/27–2030/31 (tv2.no). streaming[]-feltet FAKTISK korrigert NRK→Viaplay 25. okt (den forrige kjøringens note sa «korrigert» men feltet lå fortsatt på NRK — summary↔streaming-selvmotsigelsen som validate-events flagget er nå reelt lukket, med deep-lenke til Viaplays vintersport-seksjon)."
       }
     },
     "summary": "Verdenscupåpningen i alpint — mennenes storslalåm på Rettenbach-breen i Sölden avslutter åpningshelgen og 2026/27-sesongens første mannerenn.\n\n1. omgang kl. 10.00, 2. omgang kl. 13.00 lokal tid (09.00 og 12.00 UTC — natt til denne søndagen stilles klokka tilbake til normaltid, så Østerrike er på UTC+1).\n\nNorsk visning: Viaplay. NRKs offisielle 2026/27-vintersportprogram oppgir nå Viaplay for alle fire omgangene i Sölden (tidligere «ikke bestemt»). TV 2 og Viaplay deler Østerrike-pakken 2026/27–2030/31; disse rennene er tilordnet Viaplay. Programmet kan justeres ved vær.",
-    "verifiedAt": "2026-10-24T09:42:00Z",
+    "verifiedAt": "2026-10-25T09:57:00Z",
     "verificationStatus": "amended",
     "verificationSources": [
       "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
@@ -3329,7 +3329,7 @@
     "id": "e8477343e213",
     "homeTeamEntityId": "sandnes-handballklubb",
     "awayTeamEntityId": "bergen-handball",
-    "verifiedAt": "2026-10-19T11:05:00Z",
+    "verifiedAt": "2026-10-25T09:57:00Z",
     "verificationStatus": "confirmed",
     "verificationSources": [
       "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
@@ -3468,7 +3468,7 @@
     },
     "summary": "Fjellhammer tar imot Bergsøy i Elkjøp-ligaen (menn) søndag 25. oktober kl. 18.00 (17.00 UTC — etter sommertid-slutt).\n\nTid fra to samstemte aggregatorflater (begge Livesport-eide); verify fester mot handball.no før kampdag. Norsk visning TV 2 Play.",
     "id": "63ec9dc92451",
-    "verifiedAt": "2026-10-19T11:05:00Z",
+    "verifiedAt": "2026-10-25T09:57:00Z",
     "verificationStatus": "confirmed",
     "verificationSources": [
       "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
@@ -5605,7 +5605,12 @@
       }
     },
     "summary": "Kvalifiseringen avgjør startoppstillingen for søndagens løp (søn. 1. nov kl. 20.00 UTC / 14.00 lokal).\n\nStandard GP-helg uten sprint på Autódromo Hermanos Rodríguez, 2240 moh. — høyden gir unike bil- og dekkutfordringer.\n\nTid bekreftet mot formula1.com (arrangøren, primær) + uavhengig write-time fact-check — ikke ESPN-feeden som feildaterer F1-helger (source-quirks). Norsk visning Viaplay.",
-    "id": "1051e200f667"
+    "id": "1051e200f667",
+    "verifiedAt": "2026-10-25T09:57:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.formula1.com/en/racing/2026/mexico"
+    ]
   },
   {
     "sport": "football",

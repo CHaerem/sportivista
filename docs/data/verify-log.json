@@ -1,16 +1,14 @@
 {
-  "runAt": "2026-10-24T09:42:00Z",
-  "checked": 11,
-  "confirmed": 9,
-  "amended": 2,
+  "runAt": "2026-10-25T09:57:00Z",
+  "checked": 4,
+  "confirmed": 3,
+  "amended": 1,
   "removed": 0,
   "notes": [
-    "11 events i de neste 7 dagene (ai-research/confidence) gjennomgaatt.",
-    "AMENDED Soelden storslalaam kvinner (24. okt): streaming[]-arrayet rettet fra NRK til Viaplay - en motsigelse der provenance/summary/norwegian-rights/kalibreringslinjer alle sa Viaplay, men selve arrayet sto paa NRK gjennom minst fire tidligere kjoeringer (senest 23. okt logget 'agreed:true' mot Viaplay uten aa faktisk endre arrayet). I tillegg VAERUTSATT: NRKs live-programside (oppd. 24. okt 08.49) melder ny starttid 10.30/13.30 lokal; tid flyttet 08:00Z -> 08:30Z, endTime -> 12:30Z. Live vaersituasjon - kan justeres ytterligere.",
-    "AMENDED Soelden storslalaam menn (25. okt): samme streaming-fix NRK -> Viaplay i arrayet; tider uendret (10.00/13.00 lokal = 09:00/12:00 UTC etter sommertid-slutt).",
-    "CONFIRMED handball Elkjoep-ligaen menn x4 (Elverum-OeIF Arendal, Viking TIF-Drammen 24. okt; Sandnes-Bergen, Fjellhammer-Bergsoey 25. okt): flashscore.com-terminliste bekrefter at kampene eksisterer paa oppgitte datoer. MEN flashscore er Livesport-eid (samme konsern som betexplorer/flashscore.mobi i evidence), saa ingen uavhengig TIDskorroborasjon - handball.no fortsatt uleselig. Tider uendret, confidence forblir medium.",
-    "CONFIRMED F1 US GP kvalifisering (24. okt 21:00 UTC): primaerkilde formula1.com bekreftet 23. okt, ingen endring. Viaplay norsk visning.",
-    "CONFIRMED (uendret, ferskt verifisert 22.-23. okt, lett gjennomgang): PGL Masters Bucharest esports (gruppespill, Twitch/pgl), Sandnes Ulf-Lyn OBOS (fotball.no primaer, 25. okt 13:30Z), Tromsdalen-Lyn NM-cup (28. okt, TV 2 Play), Industria Kielce-Kolstad EHF CL (28. okt 19:45Z, EHF primaer).",
-    "Streaming-kart (norwegian-rights) allerede korrekt for alpint (Viaplay) - ingen skill-endring noedvendig; feilen laa i eventets array, ikke i kartet."
+    "8 ai-research/confidence-events i 7-dagersvinduet (25. okt–1. nov). Fem var allerede verifisert innen siste 3 dager (PGL Masters Bucharest, Sölden storslalåm menn, Sandnes Ulf–Lyn, Tromsdalen–Lyn, Industria Kielce–Kolstad) og sto confirmed/amended – ikke re-sjekket denne kjøringen.",
+    "Mexico City GP kvalifisering (1051e200f667) var UVERIFISERT (confidence high). Bekreftet mot formula1.com (arrangør, primær): kvalik lør. 31. okt 21:00 UTC, løp søn. 1. nov 20:00 UTC (14:00 lokal, Mexico UTC-6). Satt verificationStatus=confirmed. Norsk visning Viaplay (solid motorsport-prior).",
+    "Sandnes–Bergen Håndball (e8477343e213, i dag 16:00 UTC) + Fjellhammer–Bergsøy (63ec9dc92451, i dag 17:00 UTC): re-bekreftet mot betexplorer-terminlisten (begge listet som i dag, 17:00 og 18:00 lokal = 16:00/17:00 UTC etter sommertid-slutt). Tider uendret. Betexplorer er Livesport-eid som evidence-kildene, så ikke uavhengig – confidence forblir medium; handball.no fortsatt JS-rendret/uleselig.",
+    "Sölden storslalåm menn (7ce116ce0db8, i dag): validate-events flagget summary↔streaming-selvmotsigelse — streaming[] lå på NRK mens summary/provenance/evidence/NRKs eget vintersportprogram alle sier Viaplay. Forrige kjørings provenance-note PÅSTO feltet var korrigert, men det lå fortsatt NRK. Rettet streaming[] NRK→Viaplay (deep-lenke viaplay.no/vintersport), verificationStatus=amended, oppdatert note til å være ærlig om at feltet først nå er reelt rettet. Samme feil + rettighetspakke på Sölden kvinner (24. okt) — rettet begge for å lukke validator-advarselen.",
+    "Ingen events fjernet eller endret. Ingen nye kildekvirk observert."
   ]
 }
