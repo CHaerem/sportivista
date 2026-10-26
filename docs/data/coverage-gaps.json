@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-26T02:34:00.798Z",
-  "gapCount": 2,
+  "generatedAt": "2026-10-26T08:20:55.092Z",
+  "gapCount": 1,
   "anomalyCount": 2,
   "gaps": [
     {
@@ -11,20 +11,8 @@
       "headline": "Suveren Antonelli-seier i USA",
       "link": "https://www.nrk.no/sport/suveren-antonelli-seier-i-usa-1.18064436",
       "feed": "nrk-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-10-26T02:33:59.741Z"
-    },
-    {
-      "kind": "tracked-claim",
-      "entity": "Håvard «rain» Nygaard",
-      "group": "athletes",
-      "sport": "esports",
-      "type": "missing",
-      "imminent": false,
-      "claimedDate": "2026-10-31T00:00:00.000Z",
-      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
-      "trackedId": "havard-rain-nygaard",
-      "detectedAt": "2026-10-26T02:34:00.468Z"
+      "matchCount": 1,
+      "detectedAt": "2026-10-26T08:20:53.863Z"
     }
   ],
   "anomalies": [
@@ -33,14 +21,14 @@
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-26T02:34:00.508Z"
+      "detectedAt": "2026-10-26T08:20:54.864Z"
     },
     {
       "sport": "cycling",
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-26T02:34:00.508Z"
+      "detectedAt": "2026-10-26T08:20:54.864Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
