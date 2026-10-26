@@ -63,7 +63,8 @@ two majors; Viaplay keeps the other two majors + DP World Tour. Verified 2026-07
 - Roland-Garros → **Discovery+/Eurosport** [solid]
 - Australian Open → **Discovery+/Eurosport** [solid]
 - Wimbledon → **Max (WBD/Eurosport)** [verify] (changed from Viaplay 2026-07-03: tvkampen.com rights page lists Discovery Networks, tvtilbud.no says Max Sport carries all Grand Slams incl. Wimbledon 2026; no 2026-specific press release found)
-- ATP/WTA tour events → [verify per event]
+- **ATP Tour** (incl. ALL nine ATP Masters 1000 — e.g. Rolex Paris Masters) → **TV 2 Play** [solid] (TV 2 Norge holds the ATP Tour rights in Norway 2024–2026; verified 2026-10-26 against sportcal.com during the Rolex Paris Masters check, logged in `calibration-ledger.jsonl`. WBD's pan-European ATP deal and the French Paris package (Max/Eurosport) do NOT apply to Norway, where TV 2 holds the sub-licence — do NOT map an ATP event to Max/Eurosport.)
+- WTA tour events → [verify per event] (the ATP 2024–2026 TV 2 deal above does NOT cover WTA — confirm the channel per event)
 
 ## Winter sports
 - Biathlon (IBU World Cup/WCH) → **NRK** [solid]
