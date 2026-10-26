@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-26T08:20:53.609Z",
+  "generatedAt": "2026-10-26T10:45:12.949Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "yellow",
+    "coverage": "red",
     "amendRate": "yellow",
     "silentStops": "green",
     "participantStatus": "green",
@@ -21,29 +21,36 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 2,
+    "openGaps": 3,
     "bySeverity": {
-      "high": 0,
+      "high": 1,
       "medium": 1,
       "low": 1
     },
-    "oldestGapAgeDays": 18.92,
+    "oldestGapAgeDays": 19.02,
     "escalatable": 1,
-    "catalogMatched": 1,
-    "auditedAt": "2026-10-25T08:58:00Z",
+    "catalogMatched": 2,
+    "auditedAt": "2026-10-26T09:00:00Z",
     "gaps": [
+      {
+        "interest": "Håndball — Elkjøp-ligaen (menn runde 9 + kvinner runde 8), hele helgen 30. okt–1. nov",
+        "severity": "high",
+        "ageDays": 0.07,
+        "recurrences": 0,
+        "catalogMatched": true
+      },
       {
         "interest": "Tennis — Casper Ruuds høst-innendørssving (Bybit Stockholm Open, ATP 250, Ruud tittelforsvarer)",
         "severity": "medium",
-        "ageDays": 18.92,
-        "recurrences": 18,
+        "ageDays": 19.02,
+        "recurrences": 19,
         "catalogMatched": true
       },
       {
         "interest": "Vinteridrett — hopp-verdenscupåpningen Lillehammer (20.–22. nov, tier1 wholesale)",
         "severity": "low",
-        "ageDays": 1.98,
-        "recurrences": 1,
+        "ageDays": 2.08,
+        "recurrences": 2,
         "catalogMatched": false
       }
     ]
@@ -160,15 +167,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-26T08:20:49.565Z",
+    "buildCheckedAt": "2026-10-26T10:45:09.246Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-26T02:34:01.000Z",
-    "manifestAgeHours": 5.78,
+    "manifestGeneratedAt": "2026-10-26T08:20:55.333Z",
+    "manifestAgeHours": 2.4,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-10-25T09:57:00Z",
-    "verifyAgeHours": 22.4,
+    "verifyAgeHours": 24.8,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -177,6 +184,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-26T08:20:53.609Z"
+    "generatedAt": "2026-10-26T10:45:12.948Z"
   }
 }
