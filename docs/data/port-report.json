@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-26T10:45:12.949Z",
+  "generatedAt": "2026-10-26T17:07:23.378Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
-    "amendRate": "yellow",
+    "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
     "contracts": "green"
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 1
     },
-    "oldestGapAgeDays": 19.02,
+    "oldestGapAgeDays": 19.29,
     "escalatable": 1,
     "catalogMatched": 2,
     "auditedAt": "2026-10-26T09:00:00Z",
@@ -35,43 +35,36 @@
       {
         "interest": "Håndball — Elkjøp-ligaen (menn runde 9 + kvinner runde 8), hele helgen 30. okt–1. nov",
         "severity": "high",
-        "ageDays": 0.07,
+        "ageDays": 0.34,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Casper Ruuds høst-innendørssving (Bybit Stockholm Open, ATP 250, Ruud tittelforsvarer)",
         "severity": "medium",
-        "ageDays": 19.02,
+        "ageDays": 19.29,
         "recurrences": 19,
         "catalogMatched": true
       },
       {
         "interest": "Vinteridrett — hopp-verdenscupåpningen Lillehammer (20.–22. nov, tier1 wholesale)",
         "severity": "low",
-        "ageDays": 2.08,
+        "ageDays": 2.35,
         "recurrences": 2,
         "catalogMatched": false
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.25,
-    "nearTermChecked": 4,
-    "nearTermAmended": 1,
-    "verifyRunAt": "2026-10-25T09:57:00Z",
+    "nearTermRate": 0,
+    "nearTermChecked": 5,
+    "nearTermAmended": 0,
+    "verifyRunAt": "2026-10-26T11:23:00Z",
     "windowRate": 0,
-    "windowChecks": 55,
+    "windowChecks": 52,
     "windowAmendments": 0,
     "windowCorrections": 8,
     "byDay": [
-      {
-        "date": "2026-10-12",
-        "checks": 8,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-10-13",
         "checks": 2,
@@ -162,28 +155,38 @@
         "amendments": 0,
         "corrections": 1,
         "rate": 0
+      },
+      {
+        "date": "2026-10-26",
+        "checks": 5,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-26T10:45:09.246Z",
+    "buildCheckedAt": "2026-10-26T17:07:16.429Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-26T08:20:55.333Z",
-    "manifestAgeHours": 2.4,
+    "manifestGeneratedAt": "2026-10-26T10:45:14.514Z",
+    "manifestAgeHours": 6.37,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-25T09:57:00Z",
-    "verifyAgeHours": 24.8,
-    "corrections": 0,
+    "checkedAt": "2026-10-26T11:23:00Z",
+    "verifyAgeHours": 5.74,
+    "corrections": 2,
     "unresolved": 0,
-    "signals": []
+    "signals": [
+      "Tennis Rolex Paris Masters (id 4f4e0fdb7beb) — FIRST verification. Streaming channel firmed: TV 2 Play er korrekt. TV 2 Norge holder ATP Tour-rettighetene 20…",
+      "Esports PGL Masters Bucharest (id 5ac8afb840eb) — turneringen pågår etter skjema (gruppespill 24.–28. okt) per dotesports/esports.gg; resultater/brakett ikke…"
+    ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-26T10:45:12.948Z"
+    "generatedAt": "2026-10-26T17:07:23.378Z"
   }
 }
