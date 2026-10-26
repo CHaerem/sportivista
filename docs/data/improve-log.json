@@ -1,7 +1,7 @@
 {
 	"runAt": "2026-10-26T14:10:00Z",
 	"action": "opened-pr",
-	"pr": null,
+	"pr": "https://github.com/CHaerem/sportivista/pull/471",
 	"proposal": "Encode the ATP Tour → TV 2 Play (Norway, 2024–2026) rights fact in the norwegian-rights SKILL.md Tennis section, replacing the catch-all 'ATP/WTA tour events → [verify per event]' with a [solid] ATP Tour line (incl. all nine ATP Masters 1000, e.g. Rolex Paris Masters) sourced to sportcal, plus an explicit warning not to map ATP events to the French Max/Eurosport package. WTA stays [verify per event] (the ATP deal does not cover WTA).",
 	"evidence": [
 		"verify-log.json 2026-10-26T11:23:00Z, final note 'DURABLE LÆRING IKKE LAGRET I SKILL': the verify agent (the correctness gate) firmed TV 2 Play as the Norwegian holder for the Rolex Paris Masters, established that 'TV 2 Norge holder ATP Tour-rettighetene (alle ni Masters 1000) 2024–2026' belongs in norwegian-rights SKILL.md's Tennis section, and recorded that its own write attempt was blocked by a session permission gate — so the learning kept being re-derived per event instead of captured once.",
