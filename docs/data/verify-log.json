@@ -1,14 +1,16 @@
 {
-  "runAt": "2026-10-25T09:57:00Z",
-  "checked": 4,
-  "confirmed": 3,
-  "amended": 1,
+  "runAt": "2026-10-26T11:23:00Z",
+  "checked": 5,
+  "confirmed": 5,
+  "amended": 0,
   "removed": 0,
   "notes": [
-    "8 ai-research/confidence-events i 7-dagersvinduet (25. okt–1. nov). Fem var allerede verifisert innen siste 3 dager (PGL Masters Bucharest, Sölden storslalåm menn, Sandnes Ulf–Lyn, Tromsdalen–Lyn, Industria Kielce–Kolstad) og sto confirmed/amended – ikke re-sjekket denne kjøringen.",
-    "Mexico City GP kvalifisering (1051e200f667) var UVERIFISERT (confidence high). Bekreftet mot formula1.com (arrangør, primær): kvalik lør. 31. okt 21:00 UTC, løp søn. 1. nov 20:00 UTC (14:00 lokal, Mexico UTC-6). Satt verificationStatus=confirmed. Norsk visning Viaplay (solid motorsport-prior).",
-    "Sandnes–Bergen Håndball (e8477343e213, i dag 16:00 UTC) + Fjellhammer–Bergsøy (63ec9dc92451, i dag 17:00 UTC): re-bekreftet mot betexplorer-terminlisten (begge listet som i dag, 17:00 og 18:00 lokal = 16:00/17:00 UTC etter sommertid-slutt). Tider uendret. Betexplorer er Livesport-eid som evidence-kildene, så ikke uavhengig – confidence forblir medium; handball.no fortsatt JS-rendret/uleselig.",
-    "Sölden storslalåm menn (7ce116ce0db8, i dag): validate-events flagget summary↔streaming-selvmotsigelse — streaming[] lå på NRK mens summary/provenance/evidence/NRKs eget vintersportprogram alle sier Viaplay. Forrige kjørings provenance-note PÅSTO feltet var korrigert, men det lå fortsatt NRK. Rettet streaming[] NRK→Viaplay (deep-lenke viaplay.no/vintersport), verificationStatus=amended, oppdatert note til å være ærlig om at feltet først nå er reelt rettet. Samme feil + rettighetspakke på Sölden kvinner (24. okt) — rettet begge for å lukke validator-advarselen.",
-    "Ingen events fjernet eller endret. Ingen nye kildekvirk observert."
+    "5 AI-research events in next-7d window checked; all confirmed, none removed.",
+    "Tennis Rolex Paris Masters (id 4f4e0fdb7beb) — FIRST verification. Streaming channel firmed: TV 2 Play er korrekt. TV 2 Norge holder ATP Tour-rettighetene 2024–2026 inkl. ALLE ni ATP Masters 1000 (sportcal). WBDs pan-europeiske ATP-avtale og den franske Paris-pakken (Eurosport/HBO Max) gjelder IKKE Norge. Ruud bekreftet tilbake etter ryggskade (Shanghai-semi okt, bekreftet i Basel 26.okt–1.nov per bluewin/keystone) og står på Paris-deltakerlisten. Turneringsdatoer 31.okt–8.nov + hovedtablå-start 2. nov bekreftet (parisladefense/universtennis/LTA). Forblir medium: draw/eksakt kamptid/seeding ikke publisert ennå. Summary oppdatert med skade-retur-kontekst.",
+    "Football Tromsdalen–Lyn (id a8ddd1e0edf5) — re-bekreftet mot FotMob (2xonce, lest direkte): ons. 28. okt 2026 16:00 UTC, Cup Round 3, TUIL Arena Tromsø, planlagt (ingen avlysning). Stemmer eksakt. amended→confirmed.",
+    "Handball Industria Kielce–Kolstad (id f02bbef0e329) — re-bekreftet mot eurohandball.com (arrangør, Kolstad-klubbside): ons. 28. okt 20:45 CET (=19:45 UTC etter sommertid-slutt 25.okt), Group Phase F. Stemmer. EHF navngir kun by (Kielce POL); ingen sterk uavhengig arena-kilde (kun svak affiliate-aggregator Hala Legionów) → forblir medium, venue uendret.",
+    "Esports PGL Masters Bucharest (id 5ac8afb840eb) — turneringen pågår etter skjema (gruppespill 24.–28. okt) per dotesports/esports.gg; resultater/brakett ikke publisert. Forblir confirmed, deltakerfelt uendret. verificationSource byttet fra tech4gamers til esports.gg (live schedule-tracker).",
+    "F1 Mexico City GP kvalifisering (id 1051e200f667) — allerede verifisert 2026-10-25 mot formula1.com (primær), high confidence, i vinduet. Ingen ny motstridende info; latt stå urørt (ikke re-fetchet for å unngå churn).",
+    "DURABLE LÆRING IKKE LAGRET I SKILL: TV 2 Norge holder ATP Tour (alle ni Masters 1000) 2024–2026 burde inn i norwegian-rights SKILL.md (Tennis-seksjonen, 'ATP/WTA tour events → [verify per event]'). Edit-forsøket ble blokkert i DENNE økten med den bokstavelige feilen: \"Claude requested permissions to write to /home/runner/work/sportivista/sportivista/.claude/skills/norwegian-rights/SKILL.md, but you haven't granted it yet.\" Dette er en økt-tillatelsessperre, IKKE CI-allowlisten (jf. verify.md: ingen permission-gate på skills i CI). Faktumet er fanget i calibration-ledger-noten; skill-oppdateringen gjenstår til en kjøring med skrivetilgang."
   ]
 }
