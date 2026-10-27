@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-27T08:32:40.147Z",
+  "generatedAt": "2026-10-27T10:11:55.157Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "red",
+    "coverage": "yellow",
     "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
@@ -21,36 +21,50 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 3,
+    "openGaps": 5,
     "bySeverity": {
-      "high": 1,
-      "medium": 1,
-      "low": 1
+      "high": 0,
+      "medium": 3,
+      "low": 2
     },
-    "oldestGapAgeDays": 19.93,
-    "escalatable": 1,
-    "catalogMatched": 2,
-    "auditedAt": "2026-10-26T09:00:00Z",
+    "oldestGapAgeDays": 20,
+    "escalatable": 2,
+    "catalogMatched": 4,
+    "auditedAt": "2026-10-27T09:30:00Z",
     "gaps": [
       {
-        "interest": "Håndball — Elkjøp-ligaen (menn runde 9 + kvinner runde 8), hele helgen 30. okt–1. nov",
-        "severity": "high",
-        "ageDays": 0.98,
+        "interest": "Tennis — Nitto ATP Finals 2026 (Turin, 15.–22. nov, sesongfinalen topp 8)",
+        "severity": "medium",
+        "ageDays": 0.03,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Casper Ruuds høst-innendørssving (Bybit Stockholm Open, ATP 250, Ruud tittelforsvarer)",
         "severity": "medium",
-        "ageDays": 19.93,
-        "recurrences": 19,
+        "ageDays": 20,
+        "recurrences": 20,
+        "catalogMatched": true
+      },
+      {
+        "interest": "Alpint — Verdenscupen fortsetter Levi (14.–15. nov) + Gurgl (21.–22. nov) etter Sölden",
+        "severity": "low",
+        "ageDays": 0.03,
+        "recurrences": 0,
+        "catalogMatched": true
+      },
+      {
+        "interest": "Tennis — WTA Finals 2026 (FLYTTET Riyadh → Indian Wells, 8.–15. nov)",
+        "severity": "low",
+        "ageDays": 0.03,
+        "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Vinteridrett — hopp-verdenscupåpningen Lillehammer (20.–22. nov, tier1 wholesale)",
-        "severity": "low",
-        "ageDays": 2.99,
-        "recurrences": 2,
+        "severity": "medium",
+        "ageDays": 3.06,
+        "recurrences": 3,
         "catalogMatched": false
       }
     ]
@@ -167,15 +181,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-27T08:32:37.685Z",
+    "buildCheckedAt": "2026-10-27T10:11:51.759Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-27T01:02:23.514Z",
-    "manifestAgeHours": 7.5,
+    "manifestGeneratedAt": "2026-10-27T08:32:41.887Z",
+    "manifestAgeHours": 1.65,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-10-26T11:23:00Z",
-    "verifyAgeHours": 21.16,
+    "verifyAgeHours": 22.82,
     "corrections": 2,
     "unresolved": 0,
     "signals": [
@@ -187,6 +201,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-27T08:32:40.146Z"
+    "generatedAt": "2026-10-27T10:11:55.153Z"
   }
 }
