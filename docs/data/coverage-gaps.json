@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T10:11:56.071Z",
-  "gapCount": 3,
+  "generatedAt": "2026-10-27T16:11:36.050Z",
+  "gapCount": 2,
   "anomalyCount": 2,
   "gaps": [
     {
@@ -12,30 +12,19 @@
       "link": "https://www.nrk.no/sport/rbk-profil-padro-seg-korsbandskade-_-ute-i-lang-tid-1.18065831",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-10-27T10:11:55.330Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Tour de France",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Can anyone stop Demi Vollering? Analysing the favourites to win the 2027 Tour de France Femmes yellow jersey",
-      "link": "https://www.cyclingnews.com/pro-cycling/womens-cycling/can-anyone-stop-demi-vollering-analysing-the-favourites-to-win-the-2027-tour-de-france-femmes-yellow-jersey/",
-      "feed": "cyclingnews",
-      "matchCount": 1,
-      "detectedAt": "2026-10-27T10:11:55.330Z"
+      "detectedAt": "2026-10-27T16:11:35.346Z"
     },
     {
       "kind": "tracked-claim",
-      "entity": "FIS Alpine Ski World Cup 2026/27 (sesongåpning Sölden)",
+      "entity": "FIS Alpine Ski World Cup 2026/27 (neste stopp: Levi/Gurgl, nov)",
       "group": "tournaments",
       "sport": "alpine",
       "type": "missing",
       "imminent": false,
-      "claimedDate": "2026-11-14T00:00:00.000Z",
+      "claimedDate": "2026-11-11T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "alpine-world-cup-2026-27",
-      "detectedAt": "2026-10-27T10:11:55.887Z"
+      "detectedAt": "2026-10-27T16:11:35.914Z"
     }
   ],
   "anomalies": [
@@ -44,14 +33,14 @@
       "issue": "file-empty",
       "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-27T10:11:55.915Z"
+      "detectedAt": "2026-10-27T16:11:35.939Z"
     },
     {
       "sport": "cycling",
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-27T10:11:55.915Z"
+      "detectedAt": "2026-10-27T16:11:35.939Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."

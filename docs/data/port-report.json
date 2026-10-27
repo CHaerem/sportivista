@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T10:11:55.157Z",
+  "generatedAt": "2026-10-27T16:11:35.174Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -27,7 +27,7 @@
       "medium": 3,
       "low": 2
     },
-    "oldestGapAgeDays": 20,
+    "oldestGapAgeDays": 20.25,
     "escalatable": 2,
     "catalogMatched": 4,
     "auditedAt": "2026-10-27T09:30:00Z",
@@ -35,35 +35,35 @@
       {
         "interest": "Tennis — Nitto ATP Finals 2026 (Turin, 15.–22. nov, sesongfinalen topp 8)",
         "severity": "medium",
-        "ageDays": 0.03,
+        "ageDays": 0.28,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Casper Ruuds høst-innendørssving (Bybit Stockholm Open, ATP 250, Ruud tittelforsvarer)",
         "severity": "medium",
-        "ageDays": 20,
+        "ageDays": 20.25,
         "recurrences": 20,
         "catalogMatched": true
       },
       {
         "interest": "Alpint — Verdenscupen fortsetter Levi (14.–15. nov) + Gurgl (21.–22. nov) etter Sölden",
         "severity": "low",
-        "ageDays": 0.03,
+        "ageDays": 0.28,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — WTA Finals 2026 (FLYTTET Riyadh → Indian Wells, 8.–15. nov)",
         "severity": "low",
-        "ageDays": 0.03,
+        "ageDays": 0.28,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Vinteridrett — hopp-verdenscupåpningen Lillehammer (20.–22. nov, tier1 wholesale)",
         "severity": "medium",
-        "ageDays": 3.06,
+        "ageDays": 3.31,
         "recurrences": 3,
         "catalogMatched": false
       }
@@ -71,21 +71,14 @@
   },
   "amendRate": {
     "nearTermRate": 0,
-    "nearTermChecked": 5,
+    "nearTermChecked": 17,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-10-26T11:23:00Z",
+    "verifyRunAt": "2026-10-27T10:43:28Z",
     "windowRate": 0,
-    "windowChecks": 52,
+    "windowChecks": 55,
     "windowAmendments": 0,
     "windowCorrections": 8,
     "byDay": [
-      {
-        "date": "2026-10-13",
-        "checks": 2,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-10-14",
         "checks": 3,
@@ -176,31 +169,37 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-10-27",
+        "checks": 5,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-27T10:11:51.759Z",
+    "buildCheckedAt": "2026-10-27T16:11:31.854Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-27T08:32:41.887Z",
-    "manifestAgeHours": 1.65,
+    "manifestGeneratedAt": "2026-10-27T10:11:56.232Z",
+    "manifestAgeHours": 5.99,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-26T11:23:00Z",
-    "verifyAgeHours": 22.82,
-    "corrections": 2,
+    "checkedAt": "2026-10-27T10:43:28Z",
+    "verifyAgeHours": 5.47,
+    "corrections": 1,
     "unresolved": 0,
     "signals": [
-      "Tennis Rolex Paris Masters (id 4f4e0fdb7beb) — FIRST verification. Streaming channel firmed: TV 2 Play er korrekt. TV 2 Norge holder ATP Tour-rettighetene 20…",
-      "Esports PGL Masters Bucharest (id 5ac8afb840eb) — turneringen pågår etter skjema (gruppespill 24.–28. okt) per dotesports/esports.gg; resultater/brakett ikke…"
+      "Ingen cancelled/postponed/removed. Ingen knockout-TBD å fylle. Ingen in-progress fler-dagers turneringer med norske deltakere som trengte eksistens-sjekk."
     ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-27T10:11:55.153Z"
+    "generatedAt": "2026-10-27T16:11:35.174Z"
   }
 }
