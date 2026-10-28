@@ -1800,8 +1800,8 @@
   {
     "sport": "esports",
     "tournament": "PGL Masters Bucharest 2026",
-    "title": "PGL Masters Bucharest – gruppespill (Swiss)",
-    "time": "2026-10-24T07:00:00Z",
+    "title": "PGL Masters Bucharest – sluttspill + finale",
+    "time": "2026-10-29T12:00:00Z",
     "endTime": "2026-10-31T21:00:00Z",
     "venue": "PGL Studios, Bucuresti",
     "norwegian": false,
@@ -1840,38 +1840,32 @@
       }
     ],
     "source": "ai-research",
-    "researchedAt": "2026-10-21T14:05:00Z",
+    "researchedAt": "2026-10-28T13:30:00Z",
     "confidence": "medium",
     "evidence": [
       "catalog.json#tier2.teams",
-      "https://timesaver.gg/news/pgl-masters-bucharest-2026-schedule-teams-opening-matches",
+      "https://dotesports.com/counter-strike/news/pgl-masters-bucharest-2026-schedule-results",
       "https://www.strafe.com/news/read/pgl-masters-bucharest-2026-teams-schedule-format-prize-pool-and-more/",
-      "https://www.pglesports.com/cs2/pgl-bucharest-2026/"
+      "https://esport.vision/cs2/news/pgl-masters-bucharest-2026-format-rosters-schedule-and-match-results"
     ],
     "provenance": {
       "time": {
         "sourceId": "liquipedia",
-        "url": "https://timesaver.gg/news/pgl-masters-bucharest-2026-schedule-teams-opening-matches",
+        "url": "https://dotesports.com/counter-strike/news/pgl-masters-bucharest-2026-schedule-results",
         "basis": "secondary",
-        "retrievedAt": "2026-10-21T14:05:00Z",
-        "note": "Turneringsvindu 24.–31. okt (gruppespill sveitsisk Bo3 24.–28., sluttspill single-elim 29.–31., Bo5-finale 31.) + dag-1-åpning lør. 24. okt 10:00 EEST = 07:00 UTC TO-KILDE-bekreftet (timesaver.gg + dotesports; EU-sommertid slutter 25. okt, så 24. okt er EEST/UTC+3). Sveitsisk runde 1 fast; senere paringer + daglige starttider TBD. PGLs egen side + Liquipedia/dotesports bot-blokkert (403) → aggregator-basert, basis secondary; verify fester per-kamp-tider."
+        "retrievedAt": "2026-10-28T13:30:00Z",
+        "note": "Sluttspills-VINDU: single-elim sluttspill 29.–31. okt (kvartfinaler 29., semifinaler 30., 3.-plass + Bo5-finale 31.) TO-KILDE-bekreftet (dotesports + strafe + esport.vision, alle enige). time=29. okt 12:00 UTC er VINDUSSTART for sluttspillet (kvartfinale-dag, EET/UTC+2 etter sommertid-slutt 25. okt), IKKE et per-kamp-krav — braketten settes først når sveitsisk gruppespill avsluttes 28. okt, og PGL/Liquipedia har ikke publisert kvartfinale-paringer eller eksakte starttider ennå (Liquipedia/dotesports bot-blokkert 403/429, aggregator-basert → basis secondary). Verify fester per-kamp-tider + finaletid nær kampdag."
       },
       "streaming": {
         "sourceId": "twitch",
         "url": "https://www.twitch.tv/pgl",
         "basis": "official",
-        "retrievedAt": "2026-10-21T14:05:00Z",
+        "retrievedAt": "2026-10-28T13:30:00Z",
         "note": "twitch.tv/pgl er PGLs offisielle kanal (PGL-footer + strafe). Event-spesifikk kringkasting ikke offisielt kunngjort ennå, men PGLs standardkanal; Kick ubekreftet for dette eventet."
       }
     },
-    "summary": "PGL Masters Bucharest 2026 (CS2, tier-1, $1,25 mill.) — 16 lag i sveitsisk gruppespill 24.–28. oktober, sluttspill 29.–31. oktober og Bo5-finale 31. oktober i PGL Studios, Bucuresti.\n\nÅtte katalog-orger i feltet: Team Spirit, Team Vitality, MOUZ, FURIA, G2 Esports, NAVI, The MongolZ og Team Liquid. Sveitsisk runde 1 åpner lør. 24. okt 10:00 EEST (07:00 UTC); daglige starttider og senere paringer slippes nærmere start — enkeltkamper boardes når braketten får tidsstempel.\n\n100 Thieves (Håvard «rain» Nygaard) er IKKE i dette feltet. Gratis strøm på PGLs egen Twitch (pgl).",
-    "id": "5ac8afb840eb",
-    "verifiedAt": "2026-10-26T11:23:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://dotesports.com/counter-strike/news/pgl-masters-bucharest-2026-schedule-results",
-      "https://esports.gg/news/counter-strike-2/pgl-bucharest-2026-details-results/"
-    ]
+    "summary": "PGL Masters Bucharest 2026 (CS2, tier-1, $1,25 mill.) går nå inn i SLUTTSPILLET: åtte lag i single-elim 29.–31. oktober (kvartfinaler 29., semifinaler 30., 3.-plasskamp + Bo5-finale 31. okt) i PGL Studios, Bucuresti. VRS-tellende mot CS2-majoren.\n\nSveitsisk gruppespill avsluttes 28. okt. Av katalog-orgene har MOUZ og Team Vitality sikret sluttspillplass; Team Spirit, NAVI, The MongolZ, Team Liquid, FURIA og G2 Esports avgjøres etter hvert som Swiss-stigen fullføres. Braketten (kvartfinale-paringer) og eksakte daglige starttider slippes først etter gruppespillet — enkeltkamper + finaletid boardes når tidsstemplene festes.\n\n100 Thieves (Håvard «rain» Nygaard) er IKKE i dette feltet. Gratis strøm på PGLs egen Twitch (pgl).",
+    "id": "5ac8afb840eb"
   },
   {
     "sport": "alpine",
