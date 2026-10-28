@@ -11,15 +11,19 @@ hid Norway was playing — invisible to code tests, obvious to an eye.)
 
 ## Steps
 
-1. **Capture** the dashboard at three widths (the script self-serves `docs/` with
-   the committed data and needs no network):
+1. **Capture** the dashboard at three widths in a SINGLE command — chain the three
+   so it is one tool call, not three (the script self-serves `docs/` with the
+   committed data and needs no network):
    ```
-   node scripts/screenshot.js /tmp/qa-iphone-se.png  --width=375 --full-page
-   node scripts/screenshot.js /tmp/qa-iphone.png     --width=393 --full-page
-   node scripts/screenshot.js /tmp/qa-desktop.png    --width=900 --full-page
+   node scripts/screenshot.js /tmp/qa-iphone-se.png --width=375 --full-page && \
+   node scripts/screenshot.js /tmp/qa-iphone.png    --width=393 --full-page && \
+   node scripts/screenshot.js /tmp/qa-desktop.png   --width=900 --full-page
    ```
    Write screenshots to `/tmp` — never commit binaries.
-2. **Read each screenshot** with the Read tool so you actually see it.
+2. **Read all three screenshots** with the Read tool — issue the three Reads together
+   in one step — so you actually see them. This run has a bounded turn budget: batch
+   tool calls where you can and don't re-screenshot, so you reach the commit step with
+   turns to spare.
 3. **Judge** against the checklist below, per width.
 4. **Write** `docs/data/visual-qa-log.json` (schema below). Report only what you can
    see; do not invent issues. You do NOT fix code — a human reviews your findings.
