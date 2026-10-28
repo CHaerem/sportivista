@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-28T10:58:03.346Z",
+  "generatedAt": "2026-10-28T17:02:30.277Z",
   "gapCount": 3,
-  "anomalyCount": 2,
+  "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
@@ -12,18 +12,18 @@
       "link": "https://www.theguardian.com/football/2026/oct/28/lise-klaveness-certainly-there-are-people-that-can-challenge-infantino",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-10-28T10:58:02.033Z"
+      "detectedAt": "2026-10-28T17:02:29.438Z"
     },
     {
       "kind": "entity",
-      "entity": "Arsenal",
-      "type": "imminent",
-      "imminent": true,
-      "headline": "‘What you live for’: Fleetwood revel in seismic Arsenal shock after Dowman sees red",
-      "link": "https://www.theguardian.com/football/2026/oct/27/that-was-what-you-live-for-fleetwood-revel-in-unbelievably-special-arsenal-win",
-      "feed": "guardian-football",
-      "matchCount": 3,
-      "detectedAt": "2026-10-28T10:58:02.033Z"
+      "entity": "Tour de France",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Why Paul Seixas might not immediately return to the Tour de France in 2027",
+      "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/why-paul-seixas-might-not-immediately-return-to-the-tour-de-france-in-2027/",
+      "feed": "cyclingnews",
+      "matchCount": 2,
+      "detectedAt": "2026-10-28T17:02:29.438Z"
     },
     {
       "kind": "tracked-claim",
@@ -35,23 +35,16 @@
       "claimedDate": "2026-11-11T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "alpine-world-cup-2026-27",
-      "detectedAt": "2026-10-28T10:58:03.047Z"
+      "detectedAt": "2026-10-28T17:02:30.050Z"
     }
   ],
   "anomalies": [
-    {
-      "sport": "chess",
-      "issue": "file-empty",
-      "detail": "docs/data/chess.json has no events and none on the board — source may be down or changed",
-      "severity": "low",
-      "detectedAt": "2026-10-28T10:58:03.101Z"
-    },
     {
       "sport": "cycling",
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-28T10:58:03.101Z"
+      "detectedAt": "2026-10-28T17:02:30.082Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."

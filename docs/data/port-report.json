@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-28T10:58:01.754Z",
+  "generatedAt": "2026-10-28T17:02:29.248Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
-    "amendRate": "green",
+    "amendRate": "yellow",
     "silentStops": "green",
     "participantStatus": "green",
     "contracts": "green"
@@ -27,7 +27,7 @@
       "medium": 2,
       "low": 2
     },
-    "oldestGapAgeDays": 4.09,
+    "oldestGapAgeDays": 4.35,
     "escalatable": 1,
     "catalogMatched": 2,
     "auditedAt": "2026-10-28T09:45:00Z",
@@ -35,40 +35,40 @@
       {
         "interest": "CS2 — PGL Masters Bucharest 2026 sluttspill + grand final (31. okt), katalog-orger (Spirit/Vitality/FURIA/MOUZ/G2/NAVI/MongolZ/Liquid)",
         "severity": "medium",
-        "ageDays": 0.05,
+        "ageDays": 0.3,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Hopp — FIS hopp-verdenscupåpningen Lillehammer (20.–22. nov, tier1 wholesale)",
         "severity": "medium",
-        "ageDays": 4.09,
+        "ageDays": 4.35,
         "recurrences": 4,
         "catalogMatched": false
       },
       {
         "interest": "Alpint — Verdenscupen fortsetter Levi (14.–15. nov) + Gurgl (21.–22. nov) etter Sölden",
         "severity": "low",
-        "ageDays": 1.06,
+        "ageDays": 1.31,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Langrenn — norsk sesongåpning Beitostølen (~20.–22. nov, NRK, tier1 wholesale)",
         "severity": "low",
-        "ageDays": 0.05,
+        "ageDays": 0.3,
         "recurrences": 0,
         "catalogMatched": false
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0,
-    "nearTermChecked": 17,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-10-27T10:43:28Z",
+    "nearTermRate": 0.33,
+    "nearTermChecked": 3,
+    "nearTermAmended": 1,
+    "verifyRunAt": "2026-10-28T12:00:00Z",
     "windowRate": 0,
-    "windowChecks": 52,
+    "windowChecks": 55,
     "windowAmendments": 0,
     "windowCorrections": 8,
     "byDay": [
@@ -162,30 +162,35 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-10-28",
+        "checks": 3,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-28T10:57:56.026Z",
+    "buildCheckedAt": "2026-10-28T17:02:26.165Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-28T09:12:17.616Z",
-    "manifestAgeHours": 1.76,
+    "manifestGeneratedAt": "2026-10-28T10:58:03.592Z",
+    "manifestAgeHours": 6.07,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-27T10:43:28Z",
-    "verifyAgeHours": 24.24,
-    "corrections": 1,
+    "checkedAt": "2026-10-28T12:00:00Z",
+    "verifyAgeHours": 5.04,
+    "corrections": 0,
     "unresolved": 0,
-    "signals": [
-      "Ingen cancelled/postponed/removed. Ingen knockout-TBD å fylle. Ingen in-progress fler-dagers turneringer med norske deltakere som trengte eksistens-sjekk."
-    ]
+    "signals": []
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-28T10:58:01.754Z"
+    "generatedAt": "2026-10-28T17:02:29.247Z"
   }
 }
