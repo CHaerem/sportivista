@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-27T21:06:53.138Z",
+  "lastUpdated": "2026-10-28T00:51:25.425Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
@@ -226,7 +226,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "USA Net",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Chelsea",
           "awayTeam": "Manchester United",
@@ -246,7 +252,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "Peacock",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "AFC Bournemouth",
           "awayTeam": "Leeds United",
@@ -266,7 +278,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "USA Net",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Brentford",
           "awayTeam": "Nottingham Forest",
@@ -286,7 +304,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "Peacock",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Coventry City",
           "awayTeam": "Sunderland",
@@ -306,7 +330,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "Peacock",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Hull City",
           "awayTeam": "Ipswich Town",
@@ -326,7 +356,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "Peacock",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Manchester City",
           "awayTeam": "Brighton & Hove Albion",
@@ -346,7 +382,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "NBC",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Tottenham Hotspur",
           "awayTeam": "Crystal Palace",
@@ -366,7 +408,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "Peacock",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Aston Villa",
           "awayTeam": "Fulham",
@@ -386,7 +434,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "Peacock",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Liverpool",
           "awayTeam": "Arsenal",
@@ -406,7 +460,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "USA Net",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Newcastle United",
           "awayTeam": "Everton",
@@ -688,84 +748,6 @@
     {
       "name": "Serie A",
       "events": [
-        {
-          "id": "football-lazio-at-sassuolo-1793122200000",
-          "title": "Lazio at Sassuolo",
-          "time": "2026-10-27T17:30:00.000Z",
-          "venue": "Mapei Stadium",
-          "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
-          "streaming": [
-            {
-              "platform": "Paramount+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Sassuolo",
-          "awayTeam": "Lazio",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
-          "id": "football-cagliari-at-as-roma-1793130300000",
-          "title": "Cagliari at AS Roma",
-          "time": "2026-10-27T19:45:00.000Z",
-          "venue": "Olimpico",
-          "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
-          "streaming": [
-            {
-              "platform": "Paramount+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "AS Roma",
-          "awayTeam": "Cagliari",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
-          "id": "football-como-at-torino-1793130300000",
-          "title": "Como at Torino",
-          "time": "2026-10-27T19:45:00.000Z",
-          "venue": "Stadio Olimpico Grande Torino",
-          "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
-          "streaming": [
-            {
-              "platform": "Paramount+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Torino",
-          "awayTeam": "Como",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
         {
           "id": "football-bologna-at-ac-milan-1793208600000",
           "title": "Bologna at AC Milan",
@@ -1399,396 +1381,6 @@
       "name": "Copa del Rey",
       "events": [
         {
-          "id": "football-girona-at-cd-cuarte-1793122200000",
-          "title": "Girona at CD Cuarte",
-          "time": "2026-10-27T17:30:00.000Z",
-          "venue": "Estadio Municipal Juan Guerrero El Lobo",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "CD Cuarte",
-          "awayTeam": "Girona",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
-          "id": "football-elche-at-atlético-pinatarense-1793124000000",
-          "title": "Elche at Atlético Pinatarense",
-          "time": "2026-10-27T18:00:00.000Z",
-          "venue": "Estadio José Antonio Pérez",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [
-            {
-              "platform": "ESPN+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Atlético Pinatarense",
-          "awayTeam": "Elche",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
-          "id": "football-ce-europa-at-cf-calamocha-1793124000000",
-          "title": "CE Europa at CF Calamocha",
-          "time": "2026-10-27T18:00:00.000Z",
-          "venue": "Campo De Fútbol Jumaya Calamocha",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "CF Calamocha",
-          "awayTeam": "CE Europa",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
-          "id": "football-espanyol-at-sestao-1793124000000",
-          "title": "Espanyol at Sestao",
-          "time": "2026-10-27T18:00:00.000Z",
-          "venue": "Las Llanas",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [
-            {
-              "platform": "ESPN+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Sestao",
-          "awayTeam": "Espanyol",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FINAL_AET"
-          }
-        },
-        {
-          "id": "football-almería-at-ud-castellonense-1793126700000",
-          "title": "Almería at UD Castellonense",
-          "time": "2026-10-27T18:45:00.000Z",
-          "venue": "Campe de Fútbol Eliseo Pla Ramírez",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "UD Castellonense",
-          "awayTeam": "Almería",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_OVERTIME"
-          }
-        },
-        {
-          "id": "football-las-palmas-at-alcalá-1793127600000",
-          "title": "Las Palmas at Alcalá",
-          "time": "2026-10-27T19:00:00.000Z",
-          "venue": "Virgen del Val",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "Alcalá",
-          "awayTeam": "Las Palmas",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_OVERTIME"
-          }
-        },
-        {
-          "id": "football-mirandés-at-atlético-tordesillas-1793127600000",
-          "title": "Mirandés at Atlético Tordesillas",
-          "time": "2026-10-27T19:00:00.000Z",
-          "venue": "Las Salinas",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "Atlético Tordesillas",
-          "awayTeam": "Mirandés",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_END_OF_REGULATION"
-          }
-        },
-        {
-          "id": "football-rayo-majadahonda-at-ciudad-de-lucena-1793127600000",
-          "title": "Rayo Majadahonda at Ciudad De Lucena",
-          "time": "2026-10-27T19:00:00.000Z",
-          "venue": "Nuevo Estadio Municipal de Lucena",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "Ciudad De Lucena",
-          "awayTeam": "Rayo Majadahonda",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
-          "id": "football-cultural-leonesa-at-gimnastica-segoviana-1793127600000",
-          "title": "Cultural Leonesa at Gimnastica Segoviana",
-          "time": "2026-10-27T19:00:00.000Z",
-          "venue": "La Albuera",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "Gimnastica Segoviana",
-          "awayTeam": "Cultural Leonesa",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
-          "id": "football-ponferradina-at-llanera-1793127600000",
-          "title": "Ponferradina at Llanera",
-          "time": "2026-10-27T19:00:00.000Z",
-          "venue": "Hermanos Antuña",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "Llanera",
-          "awayTeam": "Ponferradina",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_OVERTIME"
-          }
-        },
-        {
-          "id": "football-cd-extremadura-at-don-benito-1793129400000",
-          "title": "CD Extremadura at Don Benito",
-          "time": "2026-10-27T19:30:00.000Z",
-          "venue": "Estadio Vicente Sanz",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "Don Benito",
-          "awayTeam": "CD Extremadura",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
-          "id": "football-sant-andreu-at-manresa-1793129400000",
-          "title": "Sant Andreu at Manresa",
-          "time": "2026-10-27T19:30:00.000Z",
-          "venue": "Estadi Municipal el Congost",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "Manresa",
-          "awayTeam": "Sant Andreu",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
-          "id": "football-pontevedra-at-arosa-1793131200000",
-          "title": "Pontevedra at Arosa",
-          "time": "2026-10-27T20:00:00.000Z",
-          "venue": "Estadio de A Lomba",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "Arosa",
-          "awayTeam": "Pontevedra",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
-          "id": "football-córdoba-at-atlético-paso-1793131200000",
-          "title": "Córdoba at Atlético Paso",
-          "time": "2026-10-27T20:00:00.000Z",
-          "venue": "Campo Municipal de El Paso",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "Atlético Paso",
-          "awayTeam": "Córdoba",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
-          "id": "football-real-zaragoza-at-cd-tudelano-1793131200000",
-          "title": "Real Zaragoza at CD Tudelano",
-          "time": "2026-10-27T20:00:00.000Z",
-          "venue": "Estadio Municipal Ciudad de Tudela",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "CD Tudelano",
-          "awayTeam": "Real Zaragoza",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
-          "id": "football-villarreal-at-manacor-1793131200000",
-          "title": "Villarreal at Manacor",
-          "time": "2026-10-27T20:00:00.000Z",
-          "venue": "Poliesportiu Municipal Na Capellera",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [
-            {
-              "platform": "ESPN+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Manacor",
-          "awayTeam": "Villarreal",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
-          "id": "football-rayo-vallecano-at-recreativo-huelva-1793131200000",
-          "title": "Rayo Vallecano at Recreativo Huelva",
-          "time": "2026-10-27T20:00:00.000Z",
-          "venue": "Estadio Nuevo Colombino",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [
-            {
-              "platform": "ESPN+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Recreativo Huelva",
-          "awayTeam": "Rayo Vallecano",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
-          "id": "football-málaga-at-sporting-de-alcázar-1793131200000",
-          "title": "Málaga at Sporting de Alcázar",
-          "time": "2026-10-27T20:00:00.000Z",
-          "venue": "Manuel Delgado Meco",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [
-            {
-              "platform": "ESPN+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Sporting de Alcázar",
-          "awayTeam": "Málaga",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
           "id": "football-alavés-at-anaitasuna-1793210400000",
           "title": "Alavés at Anaitasuna",
           "time": "2026-10-28T18:00:00.000Z",
@@ -2092,6 +1684,468 @@
           "norwegian": false,
           "homeTeam": "Numancia",
           "awayTeam": "Real Oviedo",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-leganés-at-trival-valderas-1793214000000",
+          "title": "Leganés at Trival Valderas",
+          "time": "2026-10-28T19:00:00.000Z",
+          "venue": "Estadio Municipal de Butarque",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Trival Valderas",
+          "awayTeam": "Leganés",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-fc-cartagena-at-cd-minera-1793215800000",
+          "title": "FC Cartagena at CD Minera",
+          "time": "2026-10-28T19:30:00.000Z",
+          "venue": "Estadio Municipal Ángel Celdrán",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "CD Minera",
+          "awayTeam": "FC Cartagena",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-granada-at-cieza-1793215800000",
+          "title": "Granada at Cieza",
+          "time": "2026-10-28T19:30:00.000Z",
+          "venue": "Estadio Municipal La Arboleja",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Cieza",
+          "awayTeam": "Granada",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-ud-ourense-at-gimnástica-torrelavega-1793215800000",
+          "title": "UD Ourense at Gimnástica Torrelavega",
+          "time": "2026-10-28T19:30:00.000Z",
+          "venue": "El Malecon",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Gimnástica Torrelavega",
+          "awayTeam": "UD Ourense",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-barakaldo-at-reus-fc-reddis-1793215800000",
+          "title": "Barakaldo at Reus FC Reddis",
+          "time": "2026-10-28T19:30:00.000Z",
+          "venue": "Camp Nou Municipal",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Reus FC Reddis",
+          "awayTeam": "Barakaldo",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-real-betis-at-cd-artistico-navalcarnero-1793217600000",
+          "title": "Real Betis at CD Artistico Navalcarnero",
+          "time": "2026-10-28T20:00:00.000Z",
+          "venue": "Municipal de Santo Domingo",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [
+            {
+              "platform": "ESPN+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "CD Artistico Navalcarnero",
+          "awayTeam": "Real Betis",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-celta-vigo-at-salamanca-uds-1793217600000",
+          "title": "Celta Vigo at Salamanca UDS",
+          "time": "2026-10-28T20:00:00.000Z",
+          "venue": "Estadio Helmántico",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [
+            {
+              "platform": "ESPN+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Salamanca UDS",
+          "awayTeam": "Celta Vigo",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-valencia-at-tavernes-de-la-valldigna-1793217600000",
+          "title": "Valencia at Tavernes de la Valldigna",
+          "time": "2026-10-28T20:00:00.000Z",
+          "venue": "Mestalla Stadium",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [
+            {
+              "platform": "ESPN+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Tavernes de la Valldigna",
+          "awayTeam": "Valencia",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-cádiz-at-xerez-1793217600000",
+          "title": "Cádiz at Xerez",
+          "time": "2026-10-28T20:00:00.000Z",
+          "venue": "Estadio Municipal de Chapín",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Xerez",
+          "awayTeam": "Cádiz",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-eldense-at-atlético-baleares-1793296800000",
+          "title": "Eldense at Atlético Baleares",
+          "time": "2026-10-29T18:00:00.000Z",
+          "venue": "Estadio Balear",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Atlético Baleares",
+          "awayTeam": "Eldense",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-osasuna-at-atlético-calatayud-1793296800000",
+          "title": "Osasuna at Atlético Calatayud",
+          "time": "2026-10-29T18:00:00.000Z",
+          "venue": "San Íñigo Stadium",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [
+            {
+              "platform": "ESPN+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Atlético Calatayud",
+          "awayTeam": "Osasuna",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-coria-at-san-sebastián-de-los-reyes-1793296800000",
+          "title": "Coria at San Sebastián de los Reyes",
+          "time": "2026-10-29T18:00:00.000Z",
+          "venue": "Estadio Municipal Nuevo Matapiñonera",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "San Sebastián de los Reyes",
+          "awayTeam": "Coria",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-getafe-at-ub-lebrijana-1793296800000",
+          "title": "Getafe at UB Lebrijana",
+          "time": "2026-10-29T18:00:00.000Z",
+          "venue": "Estadio Municipal de Lebrija",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [
+            {
+              "platform": "ESPN+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "UB Lebrijana",
+          "awayTeam": "Getafe",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-aguilas-at-antequera-cf-1793300400000",
+          "title": "Aguilas at Antequera CF",
+          "time": "2026-10-29T19:00:00.000Z",
+          "venue": "Estadio El Maulí",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Antequera CF",
+          "awayTeam": "Aguilas",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-burgos-at-cd-laredo-1793300400000",
+          "title": "Burgos at CD Laredo",
+          "time": "2026-10-29T19:00:00.000Z",
+          "venue": "Estadio El Paloma",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "CD Laredo",
+          "awayTeam": "Burgos",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-fc-andorra-at-cd-varea-1793300400000",
+          "title": "FC Andorra at CD Varea",
+          "time": "2026-10-29T19:00:00.000Z",
+          "venue": "Las Gaunas",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "CD Varea",
+          "awayTeam": "FC Andorra",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-castellón-at-conquense-1793300400000",
+          "title": "Castellón at Conquense",
+          "time": "2026-10-29T19:00:00.000Z",
+          "venue": "Estadio La Fuensanta",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Conquense",
+          "awayTeam": "Castellón",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-sporting-gijón-at-guijuelo-1793300400000",
+          "title": "Sporting Gijón at Guijuelo",
+          "time": "2026-10-29T19:00:00.000Z",
+          "venue": "Estadio Municipal Luis Ramos",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Guijuelo",
+          "awayTeam": "Sporting Gijón",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-unionistas-de-salamanca-at-real-ávila-1793300400000",
+          "title": "Unionistas de Salamanca at Real Ávila",
+          "time": "2026-10-29T19:00:00.000Z",
+          "venue": "Municipal Adolfo Suárez",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Real Ávila",
+          "awayTeam": "Unionistas de Salamanca",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-athletic-club-at-ae-prat-1793304000000",
+          "title": "Athletic Club at AE Prat",
+          "time": "2026-10-29T20:00:00.000Z",
+          "venue": "Estadi Municipal de Futbol de L'Hospitalet",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [
+            {
+              "platform": "ESPN+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "AE Prat",
+          "awayTeam": "Athletic Club",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-deportivo-at-auriense-cented-academy-1793304000000",
+          "title": "Deportivo at Auriense Cented Academy",
+          "time": "2026-10-29T20:00:00.000Z",
+          "venue": "Estadio de O Couto",
+          "sport": "football",
+          "meta": "Copa del Rey",
+          "tournament": "Copa del Rey",
+          "streaming": [
+            {
+              "platform": "ESPN+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Auriense Cented Academy",
+          "awayTeam": "Deportivo",
           "participants": [],
           "norwegianPlayers": [],
           "totalPlayers": null,
