@@ -5655,7 +5655,7 @@
   {
     "sport": "football",
     "tournament": "UEFA Champions League",
-    "title": "Lille at Bodø/Glimt",
+    "title": "Bodø/Glimt – Lille",
     "time": "2026-11-03T20:00:00Z",
     "venue": "Aspmyra Stadion, Bodø",
     "norwegian": true,
@@ -5682,16 +5682,24 @@
         "sourceId": "uefa",
         "url": "https://www.uefa.com/uefachampionsleague/clubs/59333--bodo-glimt/matches/",
         "basis": "secondary",
-        "retrievedAt": "2026-10-23T04:55:12.456Z"
+        "retrievedAt": "2026-10-28T12:00:00Z",
+        "note": "UEFA (arrangøren) bekrefter dato 3. nov. 2026 og hjemmelag Bodø/Glimt, men publiserer ikke klokkeslett på klubbsiden (JS-rendret). Avspark 21.00 norsk tid (20.00 UTC) korroborert uavhengig mot t-online.de. Nov = CET (UTC+1), så 21.00 CET = 20.00 UTC. basis secondary til UEFA viser tiden selv."
       },
       "streaming": {
         "sourceId": "tv2",
-        "url": "https://play.tv2.no/",
+        "url": "https://play.tv2.no/sport",
         "basis": "official",
-        "retrievedAt": "2026-10-23T04:55:12.456Z"
+        "retrievedAt": "2026-10-28T12:00:00Z",
+        "note": "Champions League i Norge: TV 2 Play (TV 2 holder CL-rettighetene 2024–2027). norwegian-rights-skill [solid]. Eksakt sub-kanal publiseres nærmere kampdag."
       }
     },
-    "summary": "Bodø/Glimt tar imot Lille på Aspmyra i Champions Leagues ligafase (runde 4).\n\nDato og arena bekreftet mot UEFA (primærkilde); avsparket 21.00 norsk tid (20.00 UTC) er det kanoniske CL-kveldsslotet og samsvarer med flere uavhengige terminlister. Verify bør låse eksakt tid mot UEFA når klokkeslettet publiseres.",
+    "verifiedAt": "2026-10-28T12:00:00Z",
+    "verificationStatus": "amended",
+    "verificationSources": [
+      "https://www.uefa.com/uefachampionsleague/clubs/59333--bodo-glimt/matches/",
+      "https://www.t-online.de/sport/live-ticker/fussball/champions-league-m/sdc_fm-62331/bodo-glimt-lille-champions-league-m-im-liveticker.html"
+    ],
+    "summary": "Bodø/Glimt tar imot Lille på Aspmyra i Champions Leagues ligafase (runde 4).\n\nDato, hjemmelag og arena bekreftet mot UEFA (arrangør). Avspark 21.00 norsk tid (20.00 UTC) — det kanoniske CL-kveldsslotet — korroborert mot uavhengig terminliste. Norsk visning: TV 2 Play (TV 2 har Champions League-rettighetene i Norge).",
     "participants": [],
     "homeTeamEntityId": "bodo-glimt",
     "id": "e4391c8697c7"
