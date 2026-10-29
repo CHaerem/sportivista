@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-29T17:59:37.632Z",
+  "lastUpdated": "2026-10-29T22:40:20.589Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
@@ -749,32 +749,6 @@
       "name": "Serie A",
       "events": [
         {
-          "id": "football-lecce-at-frosinone-1793295000000",
-          "title": "Lecce at Frosinone",
-          "time": "2026-10-29T17:30:00.000Z",
-          "venue": "Stadio Benito Stirpe",
-          "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
-          "streaming": [
-            {
-              "platform": "Paramount+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Frosinone",
-          "awayTeam": "Lecce",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FIRST_HALF"
-          }
-        },
-        {
           "id": "football-atalanta-at-fiorentina-1793303100000",
           "title": "Atalanta at Fiorentina",
           "time": "2026-10-29T19:45:00.000Z",
@@ -797,7 +771,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -810,7 +784,7 @@
           "tournament": "Serie A",
           "streaming": [
             {
-              "platform": "Paramount+",
+              "platform": "CBSSN",
               "url": "",
               "type": "tv"
             }
@@ -1231,7 +1205,7 @@
           "tournament": "Bundesliga",
           "streaming": [
             {
-              "platform": "USA Net",
+              "platform": "CNBC",
               "url": "",
               "type": "tv"
             }
@@ -1305,198 +1279,6 @@
       "name": "Copa del Rey",
       "events": [
         {
-          "id": "football-real-oviedo-at-numancia-1793293200000",
-          "title": "Real Oviedo at Numancia",
-          "time": "2026-10-29T17:00:00.000Z",
-          "venue": "Los Pajaritos",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "Numancia",
-          "awayTeam": "Real Oviedo",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_HALFTIME"
-          }
-        },
-        {
-          "id": "football-huesca-at-peña-sport-1793293200000",
-          "title": "Huesca at Peña Sport",
-          "time": "2026-10-29T17:00:00.000Z",
-          "venue": "Estadio de San Francisco",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "Peña Sport",
-          "awayTeam": "Huesca",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
-        {
-          "id": "football-eldense-at-atlético-baleares-1793296800000",
-          "title": "Eldense at Atlético Baleares",
-          "time": "2026-10-29T18:00:00.000Z",
-          "venue": "Estadio Balear",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "Atlético Baleares",
-          "awayTeam": "Eldense",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
-        {
-          "id": "football-osasuna-at-atlético-calatayud-1793296800000",
-          "title": "Osasuna at Atlético Calatayud",
-          "time": "2026-10-29T18:00:00.000Z",
-          "venue": "San Íñigo Stadium",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [
-            {
-              "platform": "ESPN+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Atlético Calatayud",
-          "awayTeam": "Osasuna",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
-        {
-          "id": "football-zamora-cf-at-coruxo-1793296800000",
-          "title": "Zamora CF at Coruxo",
-          "time": "2026-10-29T18:00:00.000Z",
-          "venue": "Campo do Vao",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "Coruxo",
-          "awayTeam": "Zamora CF",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
-        {
-          "id": "football-ceuta-at-poblense-1793296800000",
-          "title": "Ceuta at Poblense",
-          "time": "2026-10-29T18:00:00.000Z",
-          "venue": "Camp Nou de Sa Pobla",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "Poblense",
-          "awayTeam": "Ceuta",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
-        {
-          "id": "football-coria-at-san-sebastián-de-los-reyes-1793296800000",
-          "title": "Coria at San Sebastián de los Reyes",
-          "time": "2026-10-29T18:00:00.000Z",
-          "venue": "Estadio Municipal Nuevo Matapiñonera",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "San Sebastián de los Reyes",
-          "awayTeam": "Coria",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
-        {
-          "id": "football-getafe-at-ub-lebrijana-1793296800000",
-          "title": "Getafe at UB Lebrijana",
-          "time": "2026-10-29T18:00:00.000Z",
-          "venue": "Estadio Municipal de Lebrija",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [
-            {
-              "platform": "ESPN+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "UB Lebrijana",
-          "awayTeam": "Getafe",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
-        {
-          "id": "football-granada-at-cieza-1793298600000",
-          "title": "Granada at Cieza",
-          "time": "2026-10-29T18:30:00.000Z",
-          "venue": "Estadio Municipal La Arboleja",
-          "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
-          "streaming": [],
-          "norwegian": false,
-          "homeTeam": "Cieza",
-          "awayTeam": "Granada",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
-        {
           "id": "football-aguilas-at-antequera-cf-1793300400000",
           "title": "Aguilas at Antequera CF",
           "time": "2026-10-29T19:00:00.000Z",
@@ -1513,7 +1295,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1533,7 +1315,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1553,7 +1335,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1573,7 +1355,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1593,7 +1375,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1613,7 +1395,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1653,7 +1435,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FINAL_AET"
           }
         },
         {
@@ -1673,7 +1455,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FINAL_AET"
           }
         },
         {
@@ -1699,7 +1481,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1725,7 +1507,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1751,7 +1533,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1777,7 +1559,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1797,7 +1579,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -2217,6 +1999,240 @@
           "norwegian": false,
           "homeTeam": "Villarreal",
           "awayTeam": "Paris Saint-Germain",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-real-madrid-at-aek-athens-1793814300000",
+          "title": "Real Madrid at AEK Athens",
+          "time": "2026-11-04T17:45:00.000Z",
+          "venue": "OPAP Arena",
+          "sport": "football",
+          "meta": "Champions League",
+          "tournament": "Champions League",
+          "streaming": [
+            {
+              "platform": "Paramount+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "AEK Athens",
+          "awayTeam": "Real Madrid",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": true,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-liverpool-at-fenerbahce-1793814300000",
+          "title": "Liverpool at Fenerbahce",
+          "time": "2026-11-04T17:45:00.000Z",
+          "venue": "Şükrü Saracoğlu Stadium",
+          "sport": "football",
+          "meta": "Champions League",
+          "tournament": "Champions League",
+          "streaming": [
+            {
+              "platform": "Paramount+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Fenerbahce",
+          "awayTeam": "Liverpool",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": true,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-real-betis-at-borussia-dortmund-1793822400000",
+          "title": "Real Betis at Borussia Dortmund",
+          "time": "2026-11-04T20:00:00.000Z",
+          "venue": "Signal Iduna Park",
+          "sport": "football",
+          "meta": "Champions League",
+          "tournament": "Champions League",
+          "streaming": [
+            {
+              "platform": "Paramount+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Borussia Dortmund",
+          "awayTeam": "Real Betis",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-napoli-at-fc-porto-1793822400000",
+          "title": "Napoli at FC Porto",
+          "time": "2026-11-04T20:00:00.000Z",
+          "venue": "Estádio do Dragão",
+          "sport": "football",
+          "meta": "Champions League",
+          "tournament": "Champions League",
+          "streaming": [
+            {
+              "platform": "Paramount+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "FC Porto",
+          "awayTeam": "Napoli",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-como-at-lens-1793822400000",
+          "title": "Como at Lens",
+          "time": "2026-11-04T20:00:00.000Z",
+          "venue": "Stade Bollaert-Delelis",
+          "sport": "football",
+          "meta": "Champions League",
+          "tournament": "Champions League",
+          "streaming": [
+            {
+              "platform": "Paramount+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Lens",
+          "awayTeam": "Como",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-club-brugge-at-psv-eindhoven-1793822400000",
+          "title": "Club Brugge at PSV Eindhoven",
+          "time": "2026-11-04T20:00:00.000Z",
+          "venue": "Philips Stadion",
+          "sport": "football",
+          "meta": "Champions League",
+          "tournament": "Champions League",
+          "streaming": [
+            {
+              "platform": "Paramount+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "PSV Eindhoven",
+          "awayTeam": "Club Brugge",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-manchester-city-at-rb-leipzig-1793822400000",
+          "title": "Manchester City at RB Leipzig",
+          "time": "2026-11-04T20:00:00.000Z",
+          "venue": "Red Bull Arena",
+          "sport": "football",
+          "meta": "Champions League",
+          "tournament": "Champions League",
+          "streaming": [
+            {
+              "platform": "Paramount+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "RB Leipzig",
+          "awayTeam": "Manchester City",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": true,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-arsenal-at-slavia-prague-1793822400000",
+          "title": "Arsenal at Slavia Prague",
+          "time": "2026-11-04T20:00:00.000Z",
+          "venue": "Fortuna Arena",
+          "sport": "football",
+          "meta": "Champions League",
+          "tournament": "Champions League",
+          "streaming": [
+            {
+              "platform": "Paramount+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Slavia Prague",
+          "awayTeam": "Arsenal",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": true,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-sabah-fk-at-viking-fk-1793822400000",
+          "title": "Sabah FK at Viking FK",
+          "time": "2026-11-04T20:00:00.000Z",
+          "venue": "Viking Stadion",
+          "sport": "football",
+          "meta": "Champions League",
+          "tournament": "Champions League",
+          "streaming": [
+            {
+              "platform": "Paramount+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Viking FK",
+          "awayTeam": "Sabah FK",
           "participants": [],
           "norwegianPlayers": [],
           "totalPlayers": null,
