@@ -1,16 +1,14 @@
 {
-  "runAt": "2026-10-28T13:23:00Z",
-  "action": "opened-pr",
-  "pr": "https://github.com/CHaerem/sportivista/pull/472",
-  "diagnosed": "Visual QA agent fails nearly every day (not quota — usage green, 8% weekly). Always a turn-budget overrun: most runs 'reported a successful result after 41/42 turns, exceeding the configured maximum of 40' (work done + committed, but run marked failure), some hit the hard 'Reached maximum number of turns (40)' before committing (e.g. 2026-10-27, no visual-qa commit). Root cause: the task (3 screenshots + 3 image reads + DESIGN.md + write + git push-with-rebase) legitimately lands at 41-42 turns, just over the 40 budget; the prompt had the agent run the three screenshots and read the three images as separate steps, spending ~4 easily-batched turns.",
-  "fixed": [
-    "scripts/agents/visual-qa.md: chain the three screenshot.js calls into one Bash call and read all three screenshots in one step; added a note to keep tool calls lean under the bounded turn budget (~4 turns reclaimed, moving a normal run back under 40)."
-  ],
-  "autoMergeEligible": true,
-  "notes": [
-    "npm test green: 1546 passed / 88 files (incl. workflows + agent-prompts coherence tests).",
-    "Turn reduction is reasoned, not run-verified — the full Sonnet agent run can't be executed here.",
-    "The robust fix is a one-line bump of --max-turns 40 -> 60 in .github/workflows/visual-qa-agent.yml (peers editorial/coverage-critic already at 60), but that is a protected automation path the protect-automation CI hook forbids an unattended agent from authoring — a human must make that edit. Called out in the PR body as a request to the owner.",
-    "No other real breakage found: validate-events.js clean (warnings only), publish-freshness fresh (lag 0h), no open self-repair PRs. Research-agent failures in the window line up with the quota governor's domain, not self-repair's."
-  ]
+	"runAt": "2026-10-29T13:33:17.000Z",
+	"action": "abandoned",
+	"pr": null,
+	"diagnosed": "Two real, recurring workflow failures — both rooted in .github/workflows/** (a protected automation path). (1) Research agent: every bot-dispatched escalation fails with 'Action failed with error: Workflow initiated by non-human actor: github-actions (type: Bot). Add bot to allowed_bots list or use \\'*\\' to allow all bots.' Scout/coverage-critic escalate research via `gh workflow run` using GITHUB_TOKEN, so the dispatched actor is github-actions[bot], which claude-code-action@v1 now rejects because allowed_bots is empty. The entire deep-tier escalation path is dead (confirmed on runs 40867673370, 40093716136→? , 40302197172 workflow_dispatch, 40116792792, 39978404914 — all 'non-human actor'). Scheduled cron research runs are unaffected. (2) Visual QA agent: fails nearly daily with 'Execution failed: Reached maximum number of turns (40)' (run 40515757193, num_turns 41) — the --max-turns 40 budget in visual-qa-agent.yml is at the margin for screenshot-at-3-widths + look + write + commit(+rebase); the log commits most days but the action still exits 1 and on some days (e.g. Oct 27) the log is not committed at all.",
+	"fixed": [],
+	"autoMergeEligible": false,
+	"notes": [
+		"Could not author either fix: both live in .github/workflows/** and protect-automation.js (PreToolUse hook, CI-only) BLOCKS unattended CI agents from editing protected automation paths — 'A human must author changes to these files.' Confirmed by an actual blocked Edit this run. These paths also never auto-merge (merge-gate.js). OWNER ACTION REQUIRED. (The improve agent already noted both as 'owner-only, blocked for CI agents by protect-automation.js'.)",
+		"Ruled out as cause: tests (npm test — 1546 pass), validation (validate-events.js — 0 errors), publish freshness (publish-freshness.json status 'fresh', lag 0h), and quota (usage-state.json green: session 1% / week 9%, skipAll=false). So these are not quota/transient noise.",
+		"OWNER FIX 1 (.github/workflows/research-agent.yml): add `allowed_bots: github-actions` under `with:` to all THREE `anthropics/claude-code-action@v1` steps (standard Opus, deep Fable, deep Opus fallback). The only bot that dispatches this workflow is github-actions, so allowlist exactly that one rather than '*'. This revives the scout/coverage-critic -> research deep-tier escalation path.",
+		"OWNER FIX 2 (.github/workflows/visual-qa-agent.yml): raise `--max-turns 40` to `--max-turns 60` in the single claude-code-action step. timeout-minutes is 15 and the action runs ~4 min, so turn budget (not wall-clock) is the binding constraint; 60 gives safe headroom without materially more cost (optional agent, once daily, usage-gated)."
+	]
 }
