@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-29T11:17:43.953Z",
+  "generatedAt": "2026-10-29T18:00:11.339Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
-    "amendRate": "yellow",
+    "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
     "contracts": "green"
@@ -27,7 +27,7 @@
       "medium": 3,
       "low": 2
     },
-    "oldestGapAgeDays": 5.11,
+    "oldestGapAgeDays": 5.39,
     "escalatable": 1,
     "catalogMatched": 3,
     "auditedAt": "2026-10-29T10:00:00Z",
@@ -35,47 +35,47 @@
       {
         "interest": "Fotball — Brann i Conference League (ligafase MD3 borte tor. 5. nov + MD4 hjemme mot Aarhus tor. 26. nov)",
         "severity": "medium",
-        "ageDays": 0.05,
+        "ageDays": 0.33,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Sjakk — klassisk VM 2026 Gukesh–Sindarov (Genève, ~22. nov–13. des, parti 1 ~24. nov)",
         "severity": "medium",
-        "ageDays": 0.05,
+        "ageDays": 0.33,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Hopp — FIS hopp-verdenscupåpningen Lillehammer (20.–22. nov, tier1 wholesale)",
         "severity": "medium",
-        "ageDays": 5.11,
+        "ageDays": 5.39,
         "recurrences": 5,
         "catalogMatched": false
       },
       {
         "interest": "Alpint — Verdenscupen fortsetter Levi (14.–15. nov) + Gurgl (21.–22. nov) etter Sölden",
         "severity": "low",
-        "ageDays": 2.07,
+        "ageDays": 2.35,
         "recurrences": 2,
         "catalogMatched": true
       },
       {
         "interest": "Langrenn — norsk sesongåpning Beitostølen (~20.–22. nov, NRK, tier1 wholesale)",
         "severity": "low",
-        "ageDays": 1.06,
+        "ageDays": 1.34,
         "recurrences": 1,
         "catalogMatched": false
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.33,
+    "nearTermRate": 0,
     "nearTermChecked": 3,
-    "nearTermAmended": 1,
-    "verifyRunAt": "2026-10-28T12:00:00Z",
+    "nearTermAmended": 0,
+    "verifyRunAt": "2026-10-29T11:40:00Z",
     "windowRate": 0,
-    "windowChecks": 50,
+    "windowChecks": 53,
     "windowAmendments": 0,
     "windowCorrections": 8,
     "byDay": [
@@ -169,20 +169,27 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-10-29",
+        "checks": 3,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-29T11:17:39.220Z",
+    "buildCheckedAt": "2026-10-29T18:00:06.629Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-29T09:11:07.089Z",
-    "manifestAgeHours": 2.11,
+    "manifestGeneratedAt": "2026-10-29T11:17:45.637Z",
+    "manifestAgeHours": 6.71,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-28T12:00:00Z",
-    "verifyAgeHours": 23.3,
+    "checkedAt": "2026-10-29T11:40:00Z",
+    "verifyAgeHours": 6.34,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -191,6 +198,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-29T11:17:43.953Z"
+    "generatedAt": "2026-10-29T18:00:11.339Z"
   }
 }
