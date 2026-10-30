@@ -5395,5 +5395,99 @@
     "isFavorite": false,
     "round": null,
     "id": "508904d8322a"
+  },
+  {
+    "sport": "football",
+    "tournament": "OBOS-ligaen 2026",
+    "title": "Lyn – Raufoss",
+    "time": "2026-11-01T16:00:00Z",
+    "endTime": null,
+    "venue": "Bislett stadion, Oslo",
+    "norwegian": true,
+    "homeTeam": "Lyn",
+    "awayTeam": "Raufoss",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-30T05:55:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206093",
+      "https://www.fotmob.com/teams/10224/fixtures"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+        "basis": "primary",
+        "retrievedAt": "2026-10-30T05:55:00Z",
+        "note": "fotball.no (NFF, primær) + OBOS-ligaens terminliste (fiksId 206093), begge enige på OBOS-ligaen runde 29 (søn. 1. nov kl. 17.00 CET / 16.00 UTC). CET=UTC+1 (sommertid slutt 25. okt). Uavhengig fresh-context write-time fact-check mot FotMob = confirmed (samme UTC-anker)."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-10-30T05:55:00Z",
+        "note": "TV 2 Play holder OBOS-ligaens norske rettigheter 2026. TV-valg kan flytte avspark 30–60 min; verify følger."
+      }
+    },
+    "id": "31a78d3bb708",
+    "summary": "Lyn tar imot Raufoss på Bislett stadion i OBOS-ligaen runde 29, søndag 1. november kl. 17.00 (16.00 UTC).\n\nDato/tid/arena to-kilde-bekreftet mot fotball.nos primær-autoritet (Lyns lagside + OBOS-ligaens terminliste, begge enige) og uavhengig mot FotMob.\n\nNorsk visning: TV 2 Play (OBOS-ligaens rettighetshaver). TV-valg kan flytte avsparket 30–60 min; verify følger."
+  },
+  {
+    "sport": "football",
+    "tournament": "OBOS-ligaen 2026",
+    "title": "Strømmen – Lyn",
+    "time": "2026-11-08T12:00:00Z",
+    "endTime": null,
+    "venue": "Strømmen stadion",
+    "norwegian": true,
+    "homeTeam": "Strømmen",
+    "awayTeam": "Lyn",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-30T05:55:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206093",
+      "https://www.fotmob.com/teams/10224/fixtures"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+        "basis": "primary",
+        "retrievedAt": "2026-10-30T05:55:00Z",
+        "note": "fotball.no (NFF, primær) + OBOS-ligaens terminliste (fiksId 206093), begge enige på OBOS-ligaen runde 30 — sesongavslutningen (søn. 8. nov kl. 13.00 CET / 12.00 UTC). CET=UTC+1 (sommertid slutt 25. okt). Uavhengig fresh-context write-time fact-check mot FotMob = confirmed (samme UTC-anker)."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-10-30T05:55:00Z",
+        "note": "TV 2 Play holder OBOS-ligaens norske rettigheter 2026. TV-valg kan flytte avspark 30–60 min; verify følger."
+      }
+    },
+    "id": "eb53e7dfe3bb",
+    "summary": "Lyn avslutter OBOS-ligaen 2026-sesongen borte mot Strømmen på Strømmen stadion, søndag 8. november kl. 13.00 (12.00 UTC) — siste serierunde (runde 30).\n\nDato/tid/arena to-kilde-bekreftet mot fotball.nos primær-autoritet (Lyns lagside + OBOS-ligaens terminliste, begge enige) og uavhengig mot FotMob.\n\nNorsk visning: TV 2 Play (OBOS-ligaens rettighetshaver). TV-valg kan flytte avsparket 30–60 min; verify følger."
   }
 ]
