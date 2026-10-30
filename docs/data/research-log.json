@@ -1,21 +1,20 @@
 {
-  "runAt": "2026-10-30T15:05:00Z",
-  "tier": "standard",
+  "runAt": "2026-10-30T17:50:00Z",
   "eventsAdded": 0,
   "eventsRemoved": 0,
-  "eventsAmended": 0,
-  "trackedDelta": "Ingen katalog-/entitets-struktur-endring (10 leagues / 13 athletes / 25 tournaments uendret). Prepended 3 kjørings-noter (quiet no-op + coverage-gaps-triage + cadence-fyll-status), trimmet til notes 15. Bumpet lastUpdated 05.55Z → 15.05Z.",
+  "trackedDelta": "Ingen struktur-endring (10 leagues / 13 athletes / 25 tournaments uendret). Kun ny run-note + lastUpdated.",
   "quality": {
     "pass": true,
     "score": null,
     "failures": [],
-    "note": "No-op-kjøring: 0 events lagt til/endret/fjernet → ingen nye events for en uavhengig grader å verifisere. Grader-porten finnes for å stoppe feil events som når tavla; med null nye events er det ingenting å gradere. Kjøringen er transparent dokumentert i notes + research-log."
+    "note": "No-op-kjøring: 0 events lagt til/endret/fjernet → ingen nye events for en uavhengig grader å verifisere. Grader-porten finnes for å stoppe feil events som når tavla; med null nye events er det ingenting å gradere. Kjøringen er transparent dokumentert i tracked.json notes + research-log."
   },
   "notes": [
-    "QUIET NO-OP (standard-tier, 4-timers, fre. 30. okt ~15.05Z / 16.05 CET). eventsAdded 0, eventsRemoved 0, eventsAmended 0. Begrunnelse: tavla var komplett ved kjøring — intet forfalt å boarde. Imminent-vinduet (30. okt–3. nov, 76 events) komplett: fotball alle ligaer + CL MD4 static, F1 Mexico kval 31/10 21:00Z + race 1/11 20:00Z, håndball Elkjøp-helg, tennis Paris Masters. Alle fulgte entiteters next-fixture på tavla (Hovland 5/11, Carlsen 11/11, Brann ECL 5/11, Lyn 1/11+8/11 sesongavslutning, Nora Mørk EHF CL 8/11).",
-    "KONTEKST: siste research-kjøring var 05.55Z (boardet Lyns to gjenstående 2026-kamper); scout quiet siden; coverage-audit 10:05Z escalated:false, ingen HIGH imminent recall-gap; coverage-contracts 11:10Z alle 6 met (breached []). Git pull --rebase: already up to date.",
-    "TRIAGERT coverage-gaps 11:10Z (4 gaps / 1 anomali): ‘Mesterligaen’ (CL-resultat-nyhet, MD4 static-boardet), ‘Håndball-EM’ imminent=true (= EHF EURO 2026 kvinner tropputtak-nyhet; EM-en 3.–20. des ~34 d ut, utenfor horisont + allerede sporet som plassholder ehf-euro-2026 → cadence ~medio nov; falskt-positivt imminent-flagg), alpint Levi/Gurgl tracked-claim (kjent cadence-fyll), cycling.json file-empty (WorldTour off-season, korrekt).",
-    "CADENCE-VAKT (utenfor ~5-d fyll-vindu, boardes senere): alpint Levi 14.–15. nov (~9.–10. nov) / Gurgl 21.–22. nov, hopp Lillehammer 20.–22. nov (~15.–17. nov), langrenn Beitostølen ~20.–22. nov (dato TBC), Sjakk-VM 2026 + CS2 Major Singapore ~24./25. nov (~18.–20. nov), Brann ECL MD4 26. nov (~22.–24. nov), kvinnenes EHF EURO (krysser horisont ~5. nov). Biathlon Kontiolahti-åpning 24.–29. nov + langrenn Ruka 28.–29. nov = akkurat utenfor horisonten, korrekt tomt.",
-    "STÅENDE STRUKTUR-FLAGG (self-repair/improve, uendret): ingen wholesale håndball-fetcher (all håndball håndboardes), ESPN-fetcher mangler EL/ECL-endepunkt (Branns ECL håndboardes; CL-halvdelen løst), golf-fetcher uten look-ahead, CS2-fetcher 100T-only-filter (CS2 Major fanges ikke mekanisk). Alle dokumentert i coverage-audit sourceIssues."
+    "Standard-tier 4-timers no-op, fre. 30. okt ~17.50Z. Sjekket: coverage-gaps.json (17:41Z), coverage-audit.json (10:05Z), coverage-contracts.json (alle 6 met, breached=[]), scout-log (siste verdict quiet 28.10), events.json (144 events), tracked.json.",
+    "IMMINENT-VINDU (30. okt–4. nov) VERIFISERT KOMPLETT mot events.json (78 events innen 5 d): F1 Mexico kval 31. okt 21:00Z (ai-research) + race 1. nov 20:00Z (static); fotball PL r9 (Man Utd–Chelsea 31. okt + Liverpool–Arsenal 1. nov), Bundesliga r10 (static — Dortmund–Bayern), Serie A (Inter–Milan, Napoli–Juventus), La Liga, Eliteserien full runde (Brann–Molde, Vålerenga–Tromsø, Start–Lillestrøm m.fl.), Lyn–Raufoss 1. nov (ai-research, boardet 05:55Z i dag); CL MD4 3.–4. nov static; Elkjøp-håndball ~15 kamper; tennis Paris Masters 2. nov static. INGEN imminent miss.",
+    "MEKANISKE coverage-gaps (1 gap/1 anomali) TRIAGERT: (a) tracked-claim alpine-world-cup-2026-27 (claimedDate 11. nov, imminent=false) = ekte next-fixture-cadence — Sölden kjørt, neste stopp Levi slalåm 14.–15. nov, FIS har ikke publisert omgangstider → boardes på cadence ~9.–11. nov (en gjettet starttid er verre enn ingen). Ikke et miss. (b) anomali cycling.json file-empty (low) = WorldTour-sesongen slutt etter Tour of Guangxi 18. okt → korrekt tomt til vår 2027, ikke en død fetcher.",
+    "COVERAGE-AUDIT 10:05Z (reasoned recall): escalated=false, ingen HIGH imminent gap. Horisont-gap (alle cadence-fyll, utenfor ~5-d fyll-vindu i dag): CS2 Major Singapore Stage 1 ~24.–27. nov (medium), Sjakk-VM Gukesh–Sindarov Genève ~24./25. nov (medium), hopp Lillehammer 20.–22. nov (medium, hard frist ~17. nov), alpint Levi/Gurgl 14.–22. nov (medium, hard frist ~12. nov), langrenn Beitostølen ~20.–22. nov (low, dato TBC), Brann ECL MD4 26. nov (low). Kvinnenes EHF EURO 3.–20. des krysser horisonten ~5. nov → boardes da. Ingenting forfalt i dag.",
+    "STÅENDE STRUKTUR-FLAGG (self-repair/improve, uendret): ingen wholesale-fetcher for håndball (HIGH), CS2-fetcher 100T-only-filter (HIGH), golf-fetcher ingen look-ahead (HIGH), ESPN mangler EL/ECL-endepunkt (medium, CL-halvdelen løst). Alle håndboardes av research runde-for-runde.",
+    "BESLUTNING: ingen events boardet, ingen scout-fan-out. Imminent-vinduet er komplett og web-verifisert av både 10:05Z-auditen og 15:05Z-kjøringen i dag; cadence-items er alle 9+ d ut og skal fylles ~9.–24. nov når FIS/arrangørene fester tider (premature boarding = risiko for feil tid). En rolig no-op er korrekt og kostnadsbevisst — ingen budsjettbruk på å re-verifisere det som alt er bekreftet i dag."
   ]
 }
