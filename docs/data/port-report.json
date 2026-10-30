@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T09:22:21.411Z",
+  "generatedAt": "2026-10-30T11:10:29.177Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -21,51 +21,58 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 5,
+    "openGaps": 6,
     "bySeverity": {
       "high": 0,
-      "medium": 3,
+      "medium": 4,
       "low": 2
     },
-    "oldestGapAgeDays": 6.03,
-    "escalatable": 1,
-    "catalogMatched": 3,
-    "auditedAt": "2026-10-29T10:00:00Z",
+    "oldestGapAgeDays": 6.1,
+    "escalatable": 2,
+    "catalogMatched": 4,
+    "auditedAt": "2026-10-30T10:05:00Z",
     "gaps": [
       {
-        "interest": "Fotball — Brann i Conference League (ligafase MD3 borte tor. 5. nov + MD4 hjemme mot Aarhus tor. 26. nov)",
+        "interest": "Esport/CS2 — CS2 Major Singapore 2026 (PGL Major, 25. nov–13. des, Stage 1 ~24.–27. nov)",
         "severity": "medium",
-        "ageDays": 0.97,
+        "ageDays": 0.05,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
-        "interest": "Sjakk — klassisk VM 2026 Gukesh–Sindarov (Genève, ~22. nov–13. des, parti 1 ~24. nov)",
+        "interest": "Sjakk — klassisk VM 2026 Gukesh–Sindarov (Genève, ~24./25. nov–13./15. des, parti 1 ~24. nov)",
         "severity": "medium",
-        "ageDays": 0.97,
-        "recurrences": 0,
+        "ageDays": 1.05,
+        "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Hopp — FIS hopp-verdenscupåpningen Lillehammer (20.–22. nov, tier1 wholesale)",
         "severity": "medium",
-        "ageDays": 6.03,
-        "recurrences": 5,
+        "ageDays": 6.1,
+        "recurrences": 6,
         "catalogMatched": false
       },
       {
         "interest": "Alpint — Verdenscupen fortsetter Levi (14.–15. nov) + Gurgl (21.–22. nov) etter Sölden",
-        "severity": "low",
-        "ageDays": 2.99,
-        "recurrences": 2,
+        "severity": "medium",
+        "ageDays": 3.07,
+        "recurrences": 3,
         "catalogMatched": true
       },
       {
         "interest": "Langrenn — norsk sesongåpning Beitostølen (~20.–22. nov, NRK, tier1 wholesale)",
         "severity": "low",
-        "ageDays": 1.98,
-        "recurrences": 1,
+        "ageDays": 2.06,
+        "recurrences": 2,
         "catalogMatched": false
+      },
+      {
+        "interest": "Fotball — Brann i Conference League MD4 hjemme mot Aarhus (tor. 26. nov)",
+        "severity": "low",
+        "ageDays": 1.05,
+        "recurrences": 1,
+        "catalogMatched": true
       }
     ]
   },
@@ -75,17 +82,10 @@
     "nearTermAmended": 0,
     "verifyRunAt": "2026-10-29T11:40:00Z",
     "windowRate": 0,
-    "windowChecks": 53,
+    "windowChecks": 49,
     "windowAmendments": 0,
     "windowCorrections": 8,
     "byDay": [
-      {
-        "date": "2026-10-16",
-        "checks": 4,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-10-17",
         "checks": 4,
@@ -181,15 +181,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-30T09:22:16.351Z",
+    "buildCheckedAt": "2026-10-30T11:10:23.264Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-30T01:29:52.964Z",
-    "manifestAgeHours": 7.87,
+    "manifestGeneratedAt": "2026-10-30T09:22:23.133Z",
+    "manifestAgeHours": 1.8,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-10-29T11:40:00Z",
-    "verifyAgeHours": 21.71,
+    "verifyAgeHours": 23.51,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -198,6 +198,6 @@
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-10-30T09:22:21.410Z"
+    "generatedAt": "2026-10-30T11:10:29.177Z"
   }
 }
