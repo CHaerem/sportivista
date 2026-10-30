@@ -1,8 +1,63 @@
 {
-  "generatedAt": "2026-10-30T17:41:45.915Z",
-  "gapCount": 1,
+  "generatedAt": "2026-10-30T21:55:27.950Z",
+  "gapCount": 6,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Mesterligaen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Tidligere Vipers-profil er gravid – ferdig i Ikast",
+      "link": "https://www.nrk.no/sport/tidligere-vipers-profil-er-gravid-_-ferdig-i-ikast-1.18069354",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-10-30T21:55:27.242Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Giro",
+      "type": "missing",
+      "imminent": false,
+      "headline": "'Unfinished business' – Vuelta return more likely for Tadej Pogačar in 2027 than Giro, says agent Carera",
+      "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/unfinished-business-vuelta-return-more-likely-for-tadej-pogacar-in-2027-than-giro-says-agent-carera/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-10-30T21:55:27.242Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Vuelta",
+      "type": "missing",
+      "imminent": false,
+      "headline": "'Unfinished business' – Vuelta return more likely for Tadej Pogačar in 2027 than Giro, says agent Carera",
+      "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/unfinished-business-vuelta-return-more-likely-for-tadej-pogacar-in-2027-than-giro-says-agent-carera/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-10-30T21:55:27.242Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Håndball-EM",
+      "type": "missing",
+      "imminent": true,
+      "headline": "Fem debutanter er tatt ut til håndball-EM – Herrem er ikke tatt ut",
+      "link": "https://www.nrk.no/sport/fem-debutanter-er-tatt-ut-til-handball-em-_-herrem-er-ikke-tatt-ut-1.18069099",
+      "feed": "nrk-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-10-30T21:55:27.242Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Handball-EM",
+      "type": "missing",
+      "imminent": true,
+      "headline": "Fem debutanter er tatt ut til håndball-EM – Herrem er ikke tatt ut",
+      "link": "https://www.nrk.no/sport/fem-debutanter-er-tatt-ut-til-handball-em-_-herrem-er-ikke-tatt-ut-1.18069099",
+      "feed": "nrk-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-10-30T21:55:27.242Z"
+    },
     {
       "kind": "tracked-claim",
       "entity": "FIS Alpine Ski World Cup 2026/27 (neste stopp: Levi/Gurgl, nov)",
@@ -13,7 +68,7 @@
       "claimedDate": "2026-11-11T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "alpine-world-cup-2026-27",
-      "detectedAt": "2026-10-30T17:41:45.686Z"
+      "detectedAt": "2026-10-30T21:55:27.795Z"
     }
   ],
   "anomalies": [
@@ -22,7 +77,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-30T17:41:45.724Z"
+      "detectedAt": "2026-10-30T21:55:27.822Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
