@@ -1,17 +1,15 @@
 {
-  "checkedAt": "2026-10-29T00:00:00.000Z",
+  "checkedAt": "2026-10-30T14:46:35.000Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
-    "Single quiet, day-grouped agenda column maintained at all three widths — no dashboard grid, no competing panels.",
-    "No horizontal scroll or clipped content at the screen edge at 375px or 393px, scanned across the full agenda (today through 5.-8. november), the widths most prone to overflow.",
-    "Match names readable, not truncated in a way that hides key info — Premier League, La Liga, Bundesliga, Serie A, Champions League, Copa del Rey, Eliteserien (incl. Norwegian clubs like Bodø/Glimt, Brann, Viking, Molde, Start) and Elkjøp-ligaen handball all render fully, two sides always legible.",
-    "Channel/where-to-watch text present under each row; every channel seen is Norwegian/Nordic (TV 2 Play, Viaplay, VG TV, HBO Max (Sport)) — no foreign broadcaster (FOX/ESPN/Sky) spotted. Minor Copa del Rey ties correctly show an honest faint '–' rather than guessing a channel.",
-    "National flags and club crests render correctly (Norway, Andorra, club badges); rows without a known crest fall back to a neutral dot placeholder, not a broken image icon.",
-    "Header (wordmark, date, theme toggle), 'Kveldsbriefen' headline, 'Direkte nå' live section, day headings, 'Dette dekker vi'/'Merker og kilder' disclosures, and footer (usage budget, last-updated, calendar subscribe) all intact and aligned across widths.",
-    "Desktop (900px): floating 'Assistent' button sits over a mid-agenda Copa del Rey row at one scroll position and in the empty right margin at others — never the last agenda row or the footer. Matches the DESIGN.md-sanctioned floating-button idiom (WP-146 variant D); not a finding.",
-    "375px bottom of page: last agenda entry ('Nora Mørk — om 10 dager') and the footer are both fully visible and unobstructed by the Assistent button.",
-    "Full-page captures are very long (many days of fixtures across several competitions), so in addition to the three required full-page shots, several intermediate scroll positions per width were captured and read directly to check row-level detail (truncation, channel honesty) at full resolution rather than relying on the heavily downscaled full-page image alone."
+    "Single quiet, day-grouped agenda column maintained at all three widths — one scannable list, no dashboard grid, no competing panels; column width visibly caps around 640px at 900px, with empty margin either side.",
+    "No horizontal overflow or edge-clipped content at 375px or 393px across the full captured agenda (today through 8. november) — the narrowest width, most prone to breaking, held up.",
+    "Match names render complete at all widths — Premier League, La Liga, Bundesliga, Serie A, Championship, Champions League, Eliteserien (Bodø/Glimt – Viking, Sandefjord – Fredrikstad, Kristiansund – Vålerenga, Lyn, Bryne, etc.), handball, chess and snooker events all show full two-sided fixtures ('Chelsea – Manchester United', 'Bayern München – Borussia Dortmund', 'Tottenham Hotspur – Crystal Palace') with no truncation/ellipsis spotted.",
+    "Header (wordmark + theme toggle), day headings ('I MORGEN', dated sections through 8. november), and footer block all present and aligned at every width.",
+    "Must-see accent dots appear on a minority of rows only (e.g. Norwegian/followed fixtures), not on every row — consistent with the 'gentlest possible emphasis' rule.",
+    "Desktop (900px): the floating 'Assistent' button sits over a mid-agenda row, not the last agenda row or the footer — matches the DESIGN.md-sanctioned floating-button idiom (WP-146 variant D); correctly not flagged.",
+    "Limitation: full-page captures at 375/393 are very tall (~22-23k px) and were read as a single downscaled image, so fine per-character legibility (e.g. confirming every individual channel label is Norwegian, or spotting a single mis-rendered crest) could not be verified with full confidence at those two widths beyond the layout-level checks above; nothing wrong was observed within what was legible, and no channel resembling a foreign broadcaster (FOX/ESPN/Sky) was spotted in the portions that were legible at any width."
   ]
 }
