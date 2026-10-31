@@ -1,15 +1,16 @@
 {
-  "checkedAt": "2026-10-30T14:46:35.000Z",
+  "checkedAt": "2026-10-31T00:00:00.000Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
-    "Single quiet, day-grouped agenda column maintained at all three widths — one scannable list, no dashboard grid, no competing panels; column width visibly caps around 640px at 900px, with empty margin either side.",
-    "No horizontal overflow or edge-clipped content at 375px or 393px across the full captured agenda (today through 8. november) — the narrowest width, most prone to breaking, held up.",
-    "Match names render complete at all widths — Premier League, La Liga, Bundesliga, Serie A, Championship, Champions League, Eliteserien (Bodø/Glimt – Viking, Sandefjord – Fredrikstad, Kristiansund – Vålerenga, Lyn, Bryne, etc.), handball, chess and snooker events all show full two-sided fixtures ('Chelsea – Manchester United', 'Bayern München – Borussia Dortmund', 'Tottenham Hotspur – Crystal Palace') with no truncation/ellipsis spotted.",
-    "Header (wordmark + theme toggle), day headings ('I MORGEN', dated sections through 8. november), and footer block all present and aligned at every width.",
-    "Must-see accent dots appear on a minority of rows only (e.g. Norwegian/followed fixtures), not on every row — consistent with the 'gentlest possible emphasis' rule.",
-    "Desktop (900px): the floating 'Assistent' button sits over a mid-agenda row, not the last agenda row or the footer — matches the DESIGN.md-sanctioned floating-button idiom (WP-146 variant D); correctly not flagged.",
-    "Limitation: full-page captures at 375/393 are very tall (~22-23k px) and were read as a single downscaled image, so fine per-character legibility (e.g. confirming every individual channel label is Norwegian, or spotting a single mis-rendered crest) could not be verified with full confidence at those two widths beyond the layout-level checks above; nothing wrong was observed within what was legible, and no channel resembling a foreign broadcaster (FOX/ESPN/Sky) was spotted in the portions that were legible at any width."
+    "Single quiet, day-grouped agenda column maintained at all three widths — one scannable list, no dashboard grid, no competing panels; at 900px the column visibly caps near 640px with empty margin on either side, matching DESIGN.md.",
+    "No horizontal overflow or edge-clipped rows spotted at 375px or 393px across the captured agenda (today through 8. november) — the narrowest width, most prone to breaking, held up.",
+    "Match names render as complete two-sided fixtures with no visible truncation/ellipsis — e.g. 'Chelsea – Manchester United', 'Bayern München – Borussia Dortmund', 'Tottenham Hotspur – Crystal Palace', Eliteserien fixtures, and Norwegian club names throughout.",
+    "Header (wordmark + search/filter controls + theme toggle), bold day headings ('I MORGEN', dated ranges through 8. november), and footer/'Dette dekker vi' disclosure block are all present and aligned at every width.",
+    "Team crests/flags render as small filled icons, not broken-image placeholders, in every row checked.",
+    "Must-see accent dots (orange/red) appear on a minority of rows only, not on every row — consistent with the 'gentlest possible emphasis' rule.",
+    "Desktop (900px): the floating 'Assistent' button sits over a mid-agenda row (around the 25. oktober / Barcelona – Atletico section), not the last agenda row or the footer — matches the DESIGN.md-sanctioned floating-button idiom (WP-146 variant D); correctly not flagged as a bug.",
+    "Limitation: the 375px and 393px full-page captures are very tall (~22-24k px) and were viewed as single downscaled images, so fine per-character legibility (confirming every individual channel label, or spotting one mis-rendered crest) could not be verified with full confidence beyond the layout-level checks above. Within what was legible, no channel resembling a foreign broadcaster (FOX/ESPN/Sky) was spotted at any width, and no row appeared to be missing a channel/'–' slot."
   ]
 }
