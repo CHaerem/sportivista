@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-31T10:43:25.587Z",
+  "generatedAt": "2026-10-31T15:57:23.550Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
-    "amendRate": "green",
+    "amendRate": "red",
     "silentStops": "green",
     "participantStatus": "green",
-    "contracts": "green"
+    "contracts": "yellow"
   },
   "basis": {
     "coverageAudit": true,
@@ -27,7 +27,7 @@
       "medium": 6,
       "low": 1
     },
-    "oldestGapAgeDays": 7.08,
+    "oldestGapAgeDays": 7.3,
     "escalatable": 3,
     "catalogMatched": 4,
     "auditedAt": "2026-10-31T10:10:00Z",
@@ -35,61 +35,61 @@
       {
         "interest": "Alpint — Verdenscupen fortsetter Levi (14.–15. nov) + Gurgl (21.–22. nov)",
         "severity": "medium",
-        "ageDays": 4.05,
+        "ageDays": 4.27,
         "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "Hopp — FIS hopp-verdenscupåpningen Lillehammer (20.–22. nov) + Ruka (28.–29. nov)",
         "severity": "medium",
-        "ageDays": 7.08,
+        "ageDays": 7.3,
         "recurrences": 7,
         "catalogMatched": false
       },
       {
         "interest": "Langrenn — sesongåpning: VC-premieren Ruka (27.–29. nov) + norsk åpning Beitostølen (~20.–22. nov)",
         "severity": "medium",
-        "ageDays": 3.04,
+        "ageDays": 3.26,
         "recurrences": 3,
         "catalogMatched": false
       },
       {
         "interest": "Skiskyting — VC-premieren Kontiolahti (~26.–29. nov, NRK, tier1 wholesale)",
         "severity": "medium",
-        "ageDays": 0.02,
+        "ageDays": 0.24,
         "recurrences": 0,
         "catalogMatched": false
       },
       {
         "interest": "Esport/CS2 — CS2 Major Singapore 2026 (PGL Major, 25. nov–13. des, Stage 1 ~24.–27. nov)",
         "severity": "medium",
-        "ageDays": 1.03,
+        "ageDays": 1.24,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Sjakk — klassisk VM 2026 Gukesh–Sindarov (Genève, ~24./25. nov–13./15. des, parti 1 ~24. nov)",
         "severity": "medium",
-        "ageDays": 2.03,
+        "ageDays": 2.25,
         "recurrences": 2,
         "catalogMatched": true
       },
       {
         "interest": "Fotball — Brann i Conference League MD4 hjemme mot Aarhus (tor. 26. nov)",
         "severity": "low",
-        "ageDays": 2.03,
+        "ageDays": 2.25,
         "recurrences": 2,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0,
-    "nearTermChecked": 4,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-10-30T12:00:00Z",
+    "nearTermRate": 1,
+    "nearTermChecked": 1,
+    "nearTermAmended": 1,
+    "verifyRunAt": "2026-10-31T11:05:00Z",
     "windowRate": 0,
-    "windowChecks": 51,
+    "windowChecks": 53,
     "windowAmendments": 0,
     "windowCorrections": 5,
     "byDay": [
@@ -183,28 +183,45 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-10-31",
+        "checks": 2,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-10-31T10:43:20.717Z",
+    "buildCheckedAt": "2026-10-31T15:57:19.309Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-10-31T09:09:02.398Z",
-    "manifestAgeHours": 1.57,
+    "manifestGeneratedAt": "2026-10-31T10:43:26.822Z",
+    "manifestAgeHours": 5.23,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-30T12:00:00Z",
-    "verifyAgeHours": 22.72,
-    "corrections": 0,
+    "checkedAt": "2026-10-31T11:05:00Z",
+    "verifyAgeHours": 4.87,
+    "corrections": 1,
     "unresolved": 0,
-    "signals": []
+    "signals": [
+      "Bybit Stockholm Open / BNP Paribas Nordic Open (683b8acc3136, tennis, medium): var UVERIFISERT. Turneringsvindu 7.-14. nov bekreftet mot visitstockholm.com (…"
+    ]
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
-    "breached": [],
-    "generatedAt": "2026-10-31T10:43:25.586Z"
+    "breached": [
+      {
+        "id": "football:premier-league",
+        "name": "Premier League",
+        "upcoming": 5,
+        "minUpcoming": 6,
+        "horizonDays": 14
+      }
+    ],
+    "generatedAt": "2026-10-31T15:57:23.550Z"
   }
 }

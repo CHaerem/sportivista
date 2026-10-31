@@ -186,59 +186,6 @@
   {
     "sport": "handball",
     "tournament": "Elkjøp-ligaen 2026/27",
-    "title": "Sandefjord – Follo HK",
-    "time": "2026-10-17T15:00:00Z",
-    "endTime": null,
-    "venue": null,
-    "norwegian": true,
-    "homeTeam": "Sandefjord",
-    "awayTeam": "Follo HK",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-07T06:00:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier1",
-      "catalog.json#tier2.tournaments",
-      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-      "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "tv2",
-        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-        "basis": "secondary",
-        "retrievedAt": "2026-10-12T13:24:06Z",
-        "note": "TV 2 Livesport-terminlisten oppgir 17.00 CEST; betexplorer korroborerer (viste CET, +1 t = CEST). handball.no-terminlisten (NHF, tid-autoritet) var JS-rendret/uleselig for direkte henting → basis secondary, verify fester mot handballforbundets egen terminliste. verify (12.10): betexplorer-fixturen bekrefter avkast (vist CET, +1 t = CEST) — matcher board."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball/elkjoep-ligaen-menn-jedp5cdr",
-        "basis": "official",
-        "retrievedAt": "2026-10-12T13:24:06Z",
-        "note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
-      }
-    },
-    "summary": "Runde 7 i Elkjøp-ligaen menn. Sandefjord møter Follo HK lørdag 17. oktober.\n\nAvkast kl. 17.00 CEST (15.00 UTC). Norsk visning: TV 2 Play.",
-    "id": "cc66728a64e3",
-    "homeTeamEntityId": "sandefjord-handball",
-    "verifiedAt": "2026-10-12T13:24:06Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
-    ]
-  },
-  {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen 2026/27",
     "title": "Bergen Håndball – Fjellhammer",
     "time": "2026-10-17T16:00:00Z",
     "endTime": null,
@@ -1653,8 +1600,8 @@
     "streaming": [
       {
         "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/chelsea-manchester-united-1914801",
-        "urlKind": "deep"
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -1683,9 +1630,9 @@
     "norwegian": false,
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/levante-atletico-madrid-1922666",
-        "urlKind": "deep"
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
