@@ -1,22 +1,23 @@
 {
-  "runAt": "2026-10-31T14:35:00Z",
-  "tier": "standard",
-  "eventsAdded": 0,
-  "eventsRemoved": 3,
-  "trackedDelta": "lastUpdated bumped to 14:35Z; run note prepended (notes capped 15, oldest dropped). No new tracked entries — all horizon candidates already tracked; cs2-major-singapore-2026 placeholder unchanged.",
-  "quality": {
-    "pass": true,
-    "score": 90,
-    "failures": [],
-    "note": "Self-assessed (cleanup + near-no-op run, no NEW candidate events written -> fresh-context grader subagent not spawned per fail-open/budget, matching the 05:45Z run). Checked against research-rubric intent: imminent window complete + validated (0 errors after cleanup), no invented events, stale past events removed, horizon candidates recorded transparently with catalog basis + evidence."
-  },
-  "notes": [
-    "Standard-tier 4-timers-kjøring lør. 31. okt ~14.35Z / 15.35 CET. Startet 146 events; validate-events fanget 3 FEIL = fullførte ai-research-events som krysset 14-dagers grace-vinduet mellom morgenkjøringen (05.45Z, 0 errors) og nå (14.32Z): EHF CL kvinner Team Esbjerg–Brest Bretagne (id 35fb3af0ac5e) + CS Gloria Bistrița–Storhamar HE (id 10ec75de07af), begge 17. okt 14.00Z, + Elkjøp-ligaen Kolstad–Elverum (id 9899d667a82c) 17. okt 14.30Z. FJERNET alle tre (spilt). Etter fjerning: 142 events, validate-events 0 errors.",
-    "GJENSTÅENDE ADVARSLER (ikke-blokkerende, uendret klasse fra morgenkjøringen, ingen action): 2 Sölden-alpint summary↔streaming-mismatch (24.–25. okt, forbigåtte events, aldres ut snart); 40 landing-page-URL (WP-246); 4 weak-time-basis + 2 weak-channel-basis high-confidence ai-research (WP-242).",
-    "IMMINENT-VINDU (31. okt–3. nov) KOMPLETT og uendret siden 05.45Z + coverage-audit 10:10Z (escalated false) + scout 11:12Z (quiet) — alle tre enige. F1 Mexico City GP (kval 31. okt 21:00Z ai-research + race 1. nov 20:00Z static, ESPN-blindsone overvåket); fotball alle ligaer full runde (PL r9/Bundesliga r10 static/La Liga/Serie A/Eliteserien + Lyn–Raufoss 1. nov + CL MD4 3.–4. nov static); håndball Elkjøp full helg menn+kvinner; golf WWT/Abu Dhabi 5. nov; tennis Paris Masters (Ruud) 2. nov. Ingen imminent miss.",
-    "WEB-VERIFISERT (trust-no-single-source, 4 t etter morgenaudit): 100 Thieves/rain FORTSATT ingen bekreftet novemberkamp (rdy.gg/egamersworld siste felt var august-EWC, alt stale) -> ærlig fravær, ikke boardet. Neste store CS2 = PGL Major Singapore (placeholder cs2-major-singapore-2026, exp 14. des, Stage 1 ~24. nov krysser 28-d-horisonten -> boardes cadence ~18.–20. nov etter bekreftet Stage 1-dato + 100T-deltakelse).",
-    "CADENCE-VAKT (alle utenfor ~5-d fyll-vindu, sporet som plassholdere, boardes på kommende kjøringer): alpint Levi 14.–15. nov (~9.–10. nov, hard frist ~12. nov) + Gurgl 21.–22. nov; hopp Lillehammer 20.–22. nov (~15.–17. nov, hard frist ~17. nov) + Ruka 28.–29. nov; langrenn Ruka-VC 27.–29. nov + Beitostølen ~20.–22. nov (bekreft dato skiforbundet.no); skiskyting Kontiolahti ~26.–29. nov (bekreft IBU); Sjakk-VM Gukesh–Sindarov Genève ~24./25. nov (~18.–20. nov); CS2 Major Singapore Stage 1 ~24. nov (~18.–20. nov); Brann ECL MD4 Brann–Aarhus 26. nov (~22.–24. nov); kvinnenes EHF EURO 3. des (krysser horisonten ~5. nov).",
-    "INGEN eskalering nødvendig — ingen HIGH imminent recall-gap (coverage-audit 10:10Z escalated false; alle 6 WP-243-kontrakter met: F1 6, Eliteserien 7, PL 11, DP World Tour 2, PGA Tour 3, ATP/WTA 4; coverage-contracts breached []). Mekaniske coverage-gaps triagert: Bodø/Glimt + Mesterligaen entity-gaps = ikke-imminente nyhetsomtaler (ikke manglende event); alpint tracked-claim = kjent cadence-fyll; cycling.json file-empty = korrekt off-season.",
-    "STÅENDE STRUKTURELLE self-repair/improve-saker uendret (ikke research-fiks): ingen wholesale vintersport-fetcher/contract-blokk (HIGH, stigende mot des–mars); esports.js 100T-only-filter (HIGH); ingen wholesale håndball-fetcher (HIGH); golf-fetcher ingen look-ahead (HIGH); ESPN mangler EL/ECL-endepunkt (MEDIUM); sykkel off-season (DORMANT)."
-  ]
+	"runAt": "2026-10-31T20:05:00Z",
+	"eventsAdded": 9,
+	"eventsRemoved": 0,
+	"trackedDelta": "Ingen katalog-/entitets-struktur-endring (10 leagues / 13 athletes / 26 tournaments uendret). Oppdaterte premier-league-2026-27-entryen (dated reason-note for runde 10 + 3 nye evidence-URLer) og prepended en run-note (trimmet notes til 15).",
+	"quality": {
+		"pass": true,
+		"score": 90,
+		"failures": [
+			"Recurring unaddressed structural recommendation: the static eng.1 fetcher's ~5-6-day window breaks the WP-243 Premier League coverage contract every international/cup weekend, forcing a hand-board. Flagged for self-repair/improve across >=5 consecutive runs (2026-09-12 through 2026-10-31) and still unresolved; the loop is mitigating a known issue each run rather than fixing it (-10).",
+			"Minor (not a hard fail): a PL summary named a UK broadcaster absent from streaming[]; tightened post-grade (TNT-referansen fjernet fra Leeds-sammendraget)."
+		]
+	},
+	"notes": [
+		"PL RUNDE 10 BOARDET — scout-eskalert 16:18Z for WP-243 contract-breach HIGH imminent (coverage-gaps 19:45Z: Premier League upcoming 4 < min 6 innen 14 d, ENESTE brutte kontrakt). Rotårsak (strukturell, uendret): runde 9 (31. okt–2. nov) spilles nå; RUNDE 10 (6.–8. nov) ligger 6–8 d ut, utenfor den statiske eng.1-fetcherens ~5–6-d-vindu — kun fre.-åpneren Everton–Coventry var static-boardet.",
+		"De NI gjenstående r10-kampene boardet som ai-research (high) fra AUTORITETEN premier-league.com (all-380-terminlisten, lest via fetch) + korroborasjon sportsmole/fifplay/legz: lør. 7. nov Tottenham at Leeds (12.30 UTC), Hull City at Arsenal + Newcastle at Fulham (15.00), Man City at Nottingham Forest (17.30, Haaland); søn. 8. nov Brentford at Brighton + Liverpool at Crystal Palace + Bournemouth at Ipswich + Chelsea at Sunderland (14.00), Aston Villa at Man Utd (16.30). GMT = UTC (britisk sommertid slutt 25. okt). Viaplay. provenance.time.basis=primary (premier-league), streaming.basis=official (viaplay). Titler ESPN-stil «{borte} at {hjemme}» → dedup-merger når eng.1-vinduet ruller fram.",
+		"Uavhengig fresh-context write-time fact-check spawnet for de 9 r10-kampene = 9/9 CONFIRMED (fifplay MW10 + legz runde 10). Fact-check-korreksjon: premier-league.com-fetchen feil-grupperte Arsenal/Fulham under 12.30 → korrigert til kanonisk 15.00 default-slot mot to uavhengige terminlister (ingen TV-flytting).",
+		"ØVRIGE coverage-gaps triagert: entity 'Spirit' (WSL-kampreferat, imminent=false) = falsk match på Team Spirit esports-navnet, ikke et miss; alpint tracked-claim (claimedDate 11. nov, imminent=false) = kjent cadence-fyll (Levi 14.–15. nov, boardes ~9.–10. nov, hard frist ~12. nov); cycling.json file-empty (low) = WorldTour off-season, korrekt tomt.",
+		"CADENCE-VAKT uendret (alle utenfor ~5-d fyll-vindu, sporet som plassholdere): alpint Levi 14.–15./Gurgl 21.–22. nov; hopp Lillehammer 20.–22. nov + Ruka 28.–29. nov; langrenn Ruka-VC 27. nov + Beitostølen ~20.–22. nov; skiskyting Kontiolahti ~26. nov; Sjakk-VM Gukesh–Sindarov ~24./25. nov; CS2 Major Singapore Stage 1 ~24. nov; Brann ECL MD4 26. nov; kvinnenes EHF EURO 3. des.",
+		"Step 2.6 horisont-scan: ingen ny in-scope katalog-/demand-kandidat (ingen demand[]). Step 2.8 registry-sveip IKKE kjørt (lørdag standard; kun DEEP mandagssveip). validate-events kjørt rent (134 events, 0 errors; kun ikke-blokkerende advarsler: Sölden-alpint summary↔streaming-mismatch, landing-page-URL WP-246, weak-basis WP-242 — uendret klasse, ikke fra de nye r10-eventene).",
+		"STRUKTURELLE HIGH-FLAGG STÅR (carry-forward, self-repair/improve): snevert eng.1-fetchervindu (konkret symptom igjen — PL-kontrakten brytes hver landslags-/cuphelg); ingen wholesale vintersport-fetcher/contract-blokk (stigende mot des–mars); esports.js 100T-only-filter; ingen wholesale håndball-fetcher; golf-fetcher ingen look-ahead; ESPN mangler EL/ECL-endepunkt."
+	]
 }
