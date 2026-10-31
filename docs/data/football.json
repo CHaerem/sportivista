@@ -1,36 +1,10 @@
 {
-  "lastUpdated": "2026-10-30T21:54:57.975Z",
+  "lastUpdated": "2026-10-31T01:18:24.032Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
       "name": "Eliteserien",
       "events": [
-        {
-          "id": "football-bodø/glimt-–-viking-1793383200000",
-          "title": "Bodø/Glimt – Viking",
-          "time": "2026-10-30T18:00:00.000Z",
-          "venue": "Aspmyra Stadion",
-          "sport": "football",
-          "meta": "Eliteserien",
-          "tournament": "Eliteserien",
-          "streaming": [
-            {
-              "platform": "TV2 Play",
-              "url": "https://play.tv2.no",
-              "type": "tv2"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Bodø/Glimt",
-          "awayTeam": "Viking",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": true,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
         {
           "id": "football-fredrikstad-–-rosenborg-1793458800000",
           "title": "Fredrikstad – Rosenborg",
@@ -477,38 +451,32 @@
           "additional": {
             "status": "STATUS_SCHEDULED"
           }
+        },
+        {
+          "id": "football-coventry-city-at-everton-1793995200000",
+          "title": "Coventry City at Everton",
+          "time": "2026-11-06T20:00:00.000Z",
+          "venue": "Hill Dickinson Stadium",
+          "sport": "football",
+          "meta": "Premier League",
+          "tournament": "Premier League",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Everton",
+          "awayTeam": "Coventry City",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
         }
       ]
     },
     {
       "name": "La Liga",
       "events": [
-        {
-          "id": "football-espanyol-at-villarreal-1793390400000",
-          "title": "Espanyol at Villarreal",
-          "time": "2026-10-30T20:00:00.000Z",
-          "venue": "Estadio de la Cerámica",
-          "sport": "football",
-          "meta": "La Liga",
-          "tournament": "La Liga",
-          "streaming": [
-            {
-              "platform": "ESPN Deportes",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Villarreal",
-          "awayTeam": "Espanyol",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
         {
           "id": "football-atlético-madrid-at-levante-1793451600000",
           "title": "Atlético Madrid at Levante",
@@ -735,6 +703,32 @@
           "norwegian": false,
           "homeTeam": "Deportivo",
           "awayTeam": "Osasuna",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-alavés-at-sevilla-1793995200000",
+          "title": "Alavés at Sevilla",
+          "time": "2026-11-06T20:00:00.000Z",
+          "venue": "Ramón Sánchez Pizjuán Stadium",
+          "sport": "football",
+          "meta": "La Liga",
+          "tournament": "La Liga",
+          "streaming": [
+            {
+              "platform": "ESPN Deportes",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Sevilla",
+          "awayTeam": "Alavés",
           "participants": [],
           "norwegianPlayers": [],
           "totalPlayers": null,
@@ -1007,38 +1001,38 @@
           "additional": {
             "status": "STATUS_SCHEDULED"
           }
+        },
+        {
+          "id": "football-udinese-at-venezia-1793994300000",
+          "title": "Udinese at Venezia",
+          "time": "2026-11-06T19:45:00.000Z",
+          "venue": "Stadio Pier Luigi Penzo",
+          "sport": "football",
+          "meta": "Serie A",
+          "tournament": "Serie A",
+          "streaming": [
+            {
+              "platform": "Paramount+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Venezia",
+          "awayTeam": "Udinese",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
         }
       ]
     },
     {
       "name": "Bundesliga",
       "events": [
-        {
-          "id": "football-mainz-at-sv-elversberg-1793388600000",
-          "title": "Mainz at SV Elversberg",
-          "time": "2026-10-30T19:30:00.000Z",
-          "venue": "URSAPHARM-Arena an der Kaiserlinde",
-          "sport": "football",
-          "meta": "Bundesliga",
-          "tournament": "Bundesliga",
-          "streaming": [
-            {
-              "platform": "Fandango",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "SV Elversberg",
-          "awayTeam": "Mainz",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
         {
           "id": "football-vfb-stuttgart-at-bayer-leverkusen-1793457000000",
           "title": "VfB Stuttgart at Bayer Leverkusen",
@@ -1239,6 +1233,26 @@
           "norwegian": false,
           "homeTeam": "Eintracht Frankfurt",
           "awayTeam": "Hamburg SV",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-borussia-mönchengladbach-at-hamburg-sv-1793993400000",
+          "title": "Borussia Mönchengladbach at Hamburg SV",
+          "time": "2026-11-06T19:30:00.000Z",
+          "venue": "Volksparkstadion",
+          "sport": "football",
+          "meta": "Bundesliga",
+          "tournament": "Bundesliga",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Hamburg SV",
+          "awayTeam": "Borussia Mönchengladbach",
           "participants": [],
           "norwegianPlayers": [],
           "totalPlayers": null,
