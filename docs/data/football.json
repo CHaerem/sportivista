@@ -1,36 +1,10 @@
 {
-  "lastUpdated": "2026-10-31T15:56:44.582Z",
+  "lastUpdated": "2026-10-31T19:44:40.247Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
       "name": "Eliteserien",
       "events": [
-        {
-          "id": "football-fredrikstad-–-rosenborg-1793458800000",
-          "title": "Fredrikstad – Rosenborg",
-          "time": "2026-10-31T15:00:00.000Z",
-          "venue": "Fredrikstad Stadion",
-          "sport": "football",
-          "meta": "Eliteserien",
-          "tournament": "Eliteserien",
-          "streaming": [
-            {
-              "platform": "TV2 Play",
-              "url": "https://play.tv2.no",
-              "type": "tv2"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Fredrikstad",
-          "awayTeam": "Rosenborg",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": true,
-          "additional": {
-            "status": "STATUS_HALFTIME"
-          }
-        },
         {
           "id": "football-aalesund-–-sandefjord-1793466000000",
           "title": "Aalesund – Sandefjord",
@@ -54,7 +28,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -193,162 +167,6 @@
       "name": "Premier League",
       "events": [
         {
-          "id": "football-manchester-united-at-chelsea-1793449800000",
-          "title": "Manchester United at Chelsea",
-          "time": "2026-10-31T12:30:00.000Z",
-          "venue": "Stamford Bridge",
-          "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
-          "streaming": [
-            {
-              "platform": "USA Net",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Chelsea",
-          "awayTeam": "Manchester United",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
-          "id": "football-leeds-united-at-afc-bournemouth-1793458800000",
-          "title": "Leeds United at AFC Bournemouth",
-          "time": "2026-10-31T15:00:00.000Z",
-          "venue": "Vitality Stadium",
-          "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
-          "streaming": [
-            {
-              "platform": "Peacock",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "AFC Bournemouth",
-          "awayTeam": "Leeds United",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_HALFTIME"
-          }
-        },
-        {
-          "id": "football-nottingham-forest-at-brentford-1793458800000",
-          "title": "Nottingham Forest at Brentford",
-          "time": "2026-10-31T15:00:00.000Z",
-          "venue": "Gtech Community Stadium",
-          "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
-          "streaming": [
-            {
-              "platform": "USA Net",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Brentford",
-          "awayTeam": "Nottingham Forest",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_HALFTIME"
-          }
-        },
-        {
-          "id": "football-sunderland-at-coventry-city-1793458800000",
-          "title": "Sunderland at Coventry City",
-          "time": "2026-10-31T15:00:00.000Z",
-          "venue": "Coventry Building Society Arena",
-          "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
-          "streaming": [
-            {
-              "platform": "Peacock",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Coventry City",
-          "awayTeam": "Sunderland",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_HALFTIME"
-          }
-        },
-        {
-          "id": "football-ipswich-town-at-hull-city-1793458800000",
-          "title": "Ipswich Town at Hull City",
-          "time": "2026-10-31T15:00:00.000Z",
-          "venue": "The MKM Stadium",
-          "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
-          "streaming": [
-            {
-              "platform": "Peacock",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Hull City",
-          "awayTeam": "Ipswich Town",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_HALFTIME"
-          }
-        },
-        {
-          "id": "football-brighton-&-hove-albion-at-manchester-city-1793458800000",
-          "title": "Brighton & Hove Albion at Manchester City",
-          "time": "2026-10-31T15:00:00.000Z",
-          "venue": "Etihad Stadium",
-          "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
-          "streaming": [
-            {
-              "platform": "Peacock",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Manchester City",
-          "awayTeam": "Brighton & Hove Albion",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": true,
-          "additional": {
-            "status": "STATUS_HALFTIME"
-          }
-        },
-        {
           "id": "football-crystal-palace-at-tottenham-hotspur-1793467800000",
           "title": "Crystal Palace at Tottenham Hotspur",
           "time": "2026-10-31T17:30:00.000Z",
@@ -371,7 +189,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -478,58 +296,6 @@
       "name": "La Liga",
       "events": [
         {
-          "id": "football-atlético-madrid-at-levante-1793451600000",
-          "title": "Atlético Madrid at Levante",
-          "time": "2026-10-31T13:00:00.000Z",
-          "venue": "Estadi Ciutat de València",
-          "sport": "football",
-          "meta": "La Liga",
-          "tournament": "La Liga",
-          "streaming": [
-            {
-              "platform": "ESPN Deportes",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Levante",
-          "awayTeam": "Atlético Madrid",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
-          "id": "football-celta-vigo-at-rayo-vallecano-1793459700000",
-          "title": "Celta Vigo at Rayo Vallecano",
-          "time": "2026-10-31T15:15:00.000Z",
-          "venue": "Estadio de Vallecas",
-          "sport": "football",
-          "meta": "La Liga",
-          "tournament": "La Liga",
-          "streaming": [
-            {
-              "platform": "ESPN Deportes",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Rayo Vallecano",
-          "awayTeam": "Celta Vigo",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FIRST_HALF"
-          }
-        },
-        {
           "id": "football-málaga-at-real-betis-1793467800000",
           "title": "Málaga at Real Betis",
           "time": "2026-10-31T17:30:00.000Z",
@@ -552,7 +318,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -743,32 +509,6 @@
       "name": "Serie A",
       "events": [
         {
-          "id": "football-monza-at-bologna-1793455200000",
-          "title": "Monza at Bologna",
-          "time": "2026-10-31T14:00:00.000Z",
-          "venue": "Renato Dall'Ara",
-          "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
-          "streaming": [
-            {
-              "platform": "CBSSN",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Bologna",
-          "awayTeam": "Monza",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
           "id": "football-as-roma-at-udinese-1793466000000",
           "title": "AS Roma at Udinese",
           "time": "2026-10-31T17:00:00.000Z",
@@ -791,7 +531,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1034,136 +774,6 @@
       "name": "Bundesliga",
       "events": [
         {
-          "id": "football-vfb-stuttgart-at-bayer-leverkusen-1793457000000",
-          "title": "VfB Stuttgart at Bayer Leverkusen",
-          "time": "2026-10-31T14:30:00.000Z",
-          "venue": "BayArena",
-          "sport": "football",
-          "meta": "Bundesliga",
-          "tournament": "Bundesliga",
-          "streaming": [
-            {
-              "platform": "Fandango",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Bayer Leverkusen",
-          "awayTeam": "VfB Stuttgart",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
-          "id": "football-sc-paderborn-07-at-borussia-mönchengladbach-1793457000000",
-          "title": "SC Paderborn 07 at Borussia Mönchengladbach",
-          "time": "2026-10-31T14:30:00.000Z",
-          "venue": "BORUSSIA-PARK",
-          "sport": "football",
-          "meta": "Bundesliga",
-          "tournament": "Bundesliga",
-          "streaming": [
-            {
-              "platform": "Fandango",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Borussia Mönchengladbach",
-          "awayTeam": "SC Paderborn 07",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
-          "id": "football-sc-freiburg-at-fc-augsburg-1793457000000",
-          "title": "SC Freiburg at FC Augsburg",
-          "time": "2026-10-31T14:30:00.000Z",
-          "venue": "WWK Arena",
-          "sport": "football",
-          "meta": "Bundesliga",
-          "tournament": "Bundesliga",
-          "streaming": [
-            {
-              "platform": "Fandango",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "FC Augsburg",
-          "awayTeam": "SC Freiburg",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
-          "id": "football-rb-leipzig-at-schalke-04-1793457000000",
-          "title": "RB Leipzig at Schalke 04",
-          "time": "2026-10-31T14:30:00.000Z",
-          "venue": "Veltins Arena",
-          "sport": "football",
-          "meta": "Bundesliga",
-          "tournament": "Bundesliga",
-          "streaming": [
-            {
-              "platform": "Fandango",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Schalke 04",
-          "awayTeam": "RB Leipzig",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
-          "id": "football-tsg-hoffenheim-at-werder-bremen-1793457000000",
-          "title": "TSG Hoffenheim at Werder Bremen",
-          "time": "2026-10-31T14:30:00.000Z",
-          "venue": "Weserstadion",
-          "sport": "football",
-          "meta": "Bundesliga",
-          "tournament": "Bundesliga",
-          "streaming": [
-            {
-              "platform": "Fandango",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Werder Bremen",
-          "awayTeam": "TSG Hoffenheim",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
           "id": "football-borussia-dortmund-at-bayern-munich-1793467800000",
           "title": "Borussia Dortmund at Bayern Munich",
           "time": "2026-10-31T17:30:00.000Z",
@@ -1186,7 +796,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
