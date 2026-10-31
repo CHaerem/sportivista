@@ -1,18 +1,95 @@
 {
-  "generatedAt": "2026-10-31T19:45:10.012Z",
-  "gapCount": 3,
+  "generatedAt": "2026-10-31T23:02:41.731Z",
+  "gapCount": 9,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Bodø/Glimt",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Sviende nederlag for Bodø/Glimt-styret: Omstridt navneforslag ble nedstemt",
+      "link": "https://www.nrk.no/nordland/sviende-nederlag-for-bodo_glimt-styret_-omstridt-navneforslag-ble-nedstemt-1.18070000",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-10-31T23:02:40.959Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Rosenborg",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Chiakha herjet i RBK-seier",
+      "link": "https://www.nrk.no/sport/chiakha-herjet-i-rbk-seier-1.18070232",
+      "feed": "nrk-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-10-31T23:02:40.959Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "RBK",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Chiakha herjet i RBK-seier",
+      "link": "https://www.nrk.no/sport/chiakha-herjet-i-rbk-seier-1.18070232",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-10-31T23:02:40.959Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Uno-X",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Amerikaneren drømmer om å sykle for Norge",
+      "link": "https://www.tv2.no/a/19338347",
+      "feed": "tv2-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-10-31T23:02:40.959Z"
+    },
     {
       "kind": "entity",
       "entity": "Spirit",
       "type": "missing",
       "imminent": false,
-      "headline": "Manchester United miss chance to close on WSL top three in drab draw at Everton",
+      "headline": "‘We need to be better’: Manchester United’s Olid demands progress after Everton draw",
       "link": "https://www.theguardian.com/football/2026/oct/31/everton-manchester-united-wsl-match-report",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-10-31T19:45:08.848Z"
+      "detectedAt": "2026-10-31T23:02:40.959Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Tour de France",
+      "type": "missing",
+      "imminent": false,
+      "headline": "'I still need some time to analyse what I really want' - Tadej Pogačar to return to the UAE Tour, but 2027 race calendar still undecided with Tour de France the main target",
+      "link": "https://www.cyclingnews.com/pro-cycling/racing/i-still-need-some-time-to-analyse-what-i-really-want-tadej-pogacar-to-return-to-the-uae-tour-but-2027-race-calendar-still-undecided-with-tour-de-france-the-main-target/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-10-31T23:02:40.959Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Giro",
+      "type": "missing",
+      "imminent": false,
+      "headline": "'They’ve destroyed cycling' - Bardiani-CSF-7 Saber boss gives scathing assessment of the UCI after Italian team unable to race Giro d’Italia in 2027",
+      "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/theyve-destroyed-cycling-bardiani-csf-7-saber-boss-gives-scathing-assessment-of-the-uci-after-italian-team-unable-to-race-giro-ditalia-in-2027/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-10-31T23:02:40.959Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Vuelta",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Tadej  Pogačar reveals three fractured vertebrae after Vuelta crash: “I’m just happy to be alive”",
+      "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/tadej-pogacar-reveals-three-fractured-vertebrae-after-vuelta-crash-im-just-happy-to-be-alive/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-10-31T23:02:40.959Z"
     },
     {
       "kind": "tracked-claim",
@@ -24,17 +101,7 @@
       "claimedDate": "2026-11-11T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "alpine-world-cup-2026-27",
-      "detectedAt": "2026-10-31T19:45:09.758Z"
-    },
-    {
-      "kind": "contract-breach",
-      "type": "missing",
-      "interest": "Premier League",
-      "sport": "football",
-      "severity": "high",
-      "imminent": true,
-      "detail": "Dekningskontrakt brutt: 4 av minst 6 ventede events innen 14 dager for Premier League (i sesong). Gå til den navngitte autoriteten (premier-league) og fyll tavla.",
-      "detectedAt": "2026-10-31T19:45:09.804Z"
+      "detectedAt": "2026-10-31T23:02:41.597Z"
     }
   ],
   "anomalies": [
@@ -43,7 +110,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-10-31T19:45:09.805Z"
+      "detectedAt": "2026-10-31T23:02:41.620Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
