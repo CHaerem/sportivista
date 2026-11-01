@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-31T23:02:08.464Z",
+  "lastUpdated": "2026-11-01T00:35:03.319Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
@@ -134,38 +134,64 @@
           "additional": {
             "status": "STATUS_SCHEDULED"
           }
+        },
+        {
+          "id": "football-kristiansund-–-vålerenga-1794063600000",
+          "title": "Kristiansund – Vålerenga",
+          "time": "2026-11-07T15:00:00.000Z",
+          "venue": "Nordmore Stadion",
+          "sport": "football",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
+          "streaming": [
+            {
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Kristiansund",
+          "awayTeam": "Vålerenga",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-rosenborg-–-start-1794070800000",
+          "title": "Rosenborg – Start",
+          "time": "2026-11-07T17:00:00.000Z",
+          "venue": "Lerkendal Stadion",
+          "sport": "football",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
+          "streaming": [
+            {
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Rosenborg",
+          "awayTeam": "Start",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": true,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
         }
       ]
     },
     {
       "name": "Premier League",
       "events": [
-        {
-          "id": "football-fulham-at-aston-villa-1793476800000",
-          "title": "Fulham at Aston Villa",
-          "time": "2026-10-31T20:00:00.000Z",
-          "venue": "Villa Park",
-          "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
-          "streaming": [
-            {
-              "platform": "NBCSN",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Aston Villa",
-          "awayTeam": "Fulham",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
         {
           "id": "football-arsenal-at-liverpool-1793550600000",
           "title": "Arsenal at Liverpool",
@@ -237,38 +263,92 @@
           "additional": {
             "status": "STATUS_SCHEDULED"
           }
+        },
+        {
+          "id": "football-tottenham-hotspur-at-leeds-united-1794054600000",
+          "title": "Tottenham Hotspur at Leeds United",
+          "time": "2026-11-07T12:30:00.000Z",
+          "venue": "Elland Road",
+          "sport": "football",
+          "meta": "Premier League",
+          "tournament": "Premier League",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Leeds United",
+          "awayTeam": "Tottenham Hotspur",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-hull-city-at-arsenal-1794063600000",
+          "title": "Hull City at Arsenal",
+          "time": "2026-11-07T15:00:00.000Z",
+          "venue": "Emirates Stadium",
+          "sport": "football",
+          "meta": "Premier League",
+          "tournament": "Premier League",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Arsenal",
+          "awayTeam": "Hull City",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": true,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-newcastle-united-at-fulham-1794063600000",
+          "title": "Newcastle United at Fulham",
+          "time": "2026-11-07T15:00:00.000Z",
+          "venue": "Craven Cottage",
+          "sport": "football",
+          "meta": "Premier League",
+          "tournament": "Premier League",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Fulham",
+          "awayTeam": "Newcastle United",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-manchester-city-at-nottingham-forest-1794072600000",
+          "title": "Manchester City at Nottingham Forest",
+          "time": "2026-11-07T17:30:00.000Z",
+          "venue": "The City Ground",
+          "sport": "football",
+          "meta": "Premier League",
+          "tournament": "Premier League",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Nottingham Forest",
+          "awayTeam": "Manchester City",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": true,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
         }
       ]
     },
     {
       "name": "La Liga",
       "events": [
-        {
-          "id": "football-alavés-at-barcelona-1793476800000",
-          "title": "Alavés at Barcelona",
-          "time": "2026-10-31T20:00:00.000Z",
-          "venue": "Spotify Camp Nou",
-          "sport": "football",
-          "meta": "La Liga",
-          "tournament": "La Liga",
-          "streaming": [
-            {
-              "platform": "ESPN Deportes",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Barcelona",
-          "awayTeam": "Alavés",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": true,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
         {
           "id": "football-sevilla-at-getafe-1793538000000",
           "title": "Sevilla at Getafe",
@@ -424,38 +504,116 @@
           "additional": {
             "status": "STATUS_SCHEDULED"
           }
+        },
+        {
+          "id": "football-racing-santander-at-málaga-1794056400000",
+          "title": "Racing Santander at Málaga",
+          "time": "2026-11-07T13:00:00.000Z",
+          "venue": "La Rosaleda",
+          "sport": "football",
+          "meta": "La Liga",
+          "tournament": "La Liga",
+          "streaming": [
+            {
+              "platform": "ESPN Deportes",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Málaga",
+          "awayTeam": "Racing Santander",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-deportivo-at-espanyol-1794064500000",
+          "title": "Deportivo at Espanyol",
+          "time": "2026-11-07T15:15:00.000Z",
+          "venue": "RCDE Stadium",
+          "sport": "football",
+          "meta": "La Liga",
+          "tournament": "La Liga",
+          "streaming": [
+            {
+              "platform": "ESPN Deportes",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Espanyol",
+          "awayTeam": "Deportivo",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-athletic-club-at-osasuna-1794072600000",
+          "title": "Athletic Club at Osasuna",
+          "time": "2026-11-07T17:30:00.000Z",
+          "venue": "El Sadar",
+          "sport": "football",
+          "meta": "La Liga",
+          "tournament": "La Liga",
+          "streaming": [
+            {
+              "platform": "ESPN Deportes",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Osasuna",
+          "awayTeam": "Athletic Club",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-real-madrid-at-valencia-1794081600000",
+          "title": "Real Madrid at Valencia",
+          "time": "2026-11-07T20:00:00.000Z",
+          "venue": "Mestalla Stadium",
+          "sport": "football",
+          "meta": "La Liga",
+          "tournament": "La Liga",
+          "streaming": [
+            {
+              "platform": "ESPN Deportes",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Valencia",
+          "awayTeam": "Real Madrid",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": true,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
         }
       ]
     },
     {
       "name": "Serie A",
       "events": [
-        {
-          "id": "football-internazionale-at-ac-milan-1793475900000",
-          "title": "Internazionale at AC Milan",
-          "time": "2026-10-31T19:45:00.000Z",
-          "venue": "San Siro",
-          "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
-          "streaming": [
-            {
-              "platform": "Paramount+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "AC Milan",
-          "awayTeam": "Internazionale",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
         {
           "id": "football-venezia-at-como-1793532600000",
           "title": "Venezia at Como",
@@ -663,6 +821,110 @@
           "additional": {
             "status": "STATUS_SCHEDULED"
           }
+        },
+        {
+          "id": "football-frosinone-at-cagliari-1794060000000",
+          "title": "Frosinone at Cagliari",
+          "time": "2026-11-07T14:00:00.000Z",
+          "venue": "Unipol Domus",
+          "sport": "football",
+          "meta": "Serie A",
+          "tournament": "Serie A",
+          "streaming": [
+            {
+              "platform": "Paramount+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Cagliari",
+          "awayTeam": "Frosinone",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-lecce-at-torino-1794060000000",
+          "title": "Lecce at Torino",
+          "time": "2026-11-07T14:00:00.000Z",
+          "venue": "Stadio Olimpico Grande Torino",
+          "sport": "football",
+          "meta": "Serie A",
+          "tournament": "Serie A",
+          "streaming": [
+            {
+              "platform": "Paramount+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Torino",
+          "awayTeam": "Lecce",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-bologna-at-parma-1794070800000",
+          "title": "Bologna at Parma",
+          "time": "2026-11-07T17:00:00.000Z",
+          "venue": "Ennio Tardini",
+          "sport": "football",
+          "meta": "Serie A",
+          "tournament": "Serie A",
+          "streaming": [
+            {
+              "platform": "Paramount+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Parma",
+          "awayTeam": "Bologna",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-sassuolo-at-as-roma-1794080700000",
+          "title": "Sassuolo at AS Roma",
+          "time": "2026-11-07T19:45:00.000Z",
+          "venue": "Olimpico",
+          "sport": "football",
+          "meta": "Serie A",
+          "tournament": "Serie A",
+          "streaming": [
+            {
+              "platform": "Paramount+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "AS Roma",
+          "awayTeam": "Sassuolo",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
         }
       ]
     },
@@ -733,6 +995,112 @@
           "norwegian": false,
           "homeTeam": "Hamburg SV",
           "awayTeam": "Borussia Mönchengladbach",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-sv-elversberg-at-borussia-dortmund-1794061800000",
+          "title": "SV Elversberg at Borussia Dortmund",
+          "time": "2026-11-07T14:30:00.000Z",
+          "venue": "Signal Iduna Park",
+          "sport": "football",
+          "meta": "Bundesliga",
+          "tournament": "Bundesliga",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Borussia Dortmund",
+          "awayTeam": "SV Elversberg",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-bayern-munich-at-mainz-1794061800000",
+          "title": "Bayern Munich at Mainz",
+          "time": "2026-11-07T14:30:00.000Z",
+          "venue": "MEWA ARENA",
+          "sport": "football",
+          "meta": "Bundesliga",
+          "tournament": "Bundesliga",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Mainz",
+          "awayTeam": "Bayern Munich",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-fc-augsburg-at-rb-leipzig-1794061800000",
+          "title": "FC Augsburg at RB Leipzig",
+          "time": "2026-11-07T14:30:00.000Z",
+          "venue": "Red Bull Arena",
+          "sport": "football",
+          "meta": "Bundesliga",
+          "tournament": "Bundesliga",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "RB Leipzig",
+          "awayTeam": "FC Augsburg",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-eintracht-frankfurt-at-sc-paderborn-07-1794061800000",
+          "title": "Eintracht Frankfurt at SC Paderborn 07",
+          "time": "2026-11-07T14:30:00.000Z",
+          "venue": "Home Deluxe Arena",
+          "sport": "football",
+          "meta": "Bundesliga",
+          "tournament": "Bundesliga",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "SC Paderborn 07",
+          "awayTeam": "Eintracht Frankfurt",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-werder-bremen-at-vfb-stuttgart-1794072600000",
+          "title": "Werder Bremen at VfB Stuttgart",
+          "time": "2026-11-07T17:30:00.000Z",
+          "venue": "MHPArena",
+          "sport": "football",
+          "meta": "Bundesliga",
+          "tournament": "Bundesliga",
+          "streaming": [
+            {
+              "platform": "USA Net",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "VfB Stuttgart",
+          "awayTeam": "Werder Bremen",
           "participants": [],
           "norwegianPlayers": [],
           "totalPlayers": null,
