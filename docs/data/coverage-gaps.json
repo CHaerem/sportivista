@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-01T17:37:00.216Z",
+  "generatedAt": "2026-11-01T21:40:20.953Z",
   "gapCount": 5,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Formel 1",
+      "entity": "RBK",
       "type": "missing",
       "imminent": false,
-      "headline": "Antonelli kan bli tidenes yngste Formel 1-verdensmester søndag",
-      "link": "https://www.nrk.no/sport/antonelli-kan-bli-tidenes-yngste-formel-1-verdensmester-sondag-1.18070412",
-      "feed": "nrk-sport",
+      "headline": "RBK melder rasismesak til NFF",
+      "link": "https://www.tv2.no/a/19382744",
+      "feed": "tv2-sport",
       "matchCount": 1,
-      "detectedAt": "2026-11-01T17:36:59.473Z"
+      "detectedAt": "2026-11-01T21:40:20.231Z"
     },
     {
       "kind": "entity",
@@ -23,7 +23,7 @@
       "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/anything-is-possible-paul-seixas-open-to-racing-giro-ditalia-in-2027/",
       "feed": "cyclingnews",
       "matchCount": 1,
-      "detectedAt": "2026-11-01T17:36:59.473Z"
+      "detectedAt": "2026-11-01T21:40:20.231Z"
     },
     {
       "kind": "entity",
@@ -34,7 +34,7 @@
       "link": "https://www.cyclingnews.com/pro-cycling/womens-cycling/it-is-a-big-goal-femke-de-vries-targets-grand-tour-podium-after-breakthrough-season/",
       "feed": "cyclingnews",
       "matchCount": 1,
-      "detectedAt": "2026-11-01T17:36:59.473Z"
+      "detectedAt": "2026-11-01T21:40:20.231Z"
     },
     {
       "kind": "entity",
@@ -45,7 +45,7 @@
       "link": "https://www.cyclingnews.com/pro-cycling/womens-cycling/it-is-a-big-goal-femke-de-vries-targets-grand-tour-podium-after-breakthrough-season/",
       "feed": "cyclingnews",
       "matchCount": 3,
-      "detectedAt": "2026-11-01T17:36:59.473Z"
+      "detectedAt": "2026-11-01T21:40:20.231Z"
     },
     {
       "kind": "tracked-claim",
@@ -57,7 +57,7 @@
       "claimedDate": "2026-11-11T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "alpine-world-cup-2026-27",
-      "detectedAt": "2026-11-01T17:37:00.070Z"
+      "detectedAt": "2026-11-01T21:40:20.814Z"
     }
   ],
   "anomalies": [
@@ -66,7 +66,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-01T17:37:00.092Z"
+      "detectedAt": "2026-11-01T21:40:20.843Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."

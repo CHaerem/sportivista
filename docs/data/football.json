@@ -1,88 +1,10 @@
 {
-  "lastUpdated": "2026-11-01T17:36:15.022Z",
+  "lastUpdated": "2026-11-01T21:39:49.752Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
       "name": "Eliteserien",
       "events": [
-        {
-          "id": "football-start-–-lillestrøm-1793548800000",
-          "title": "Start – Lillestrøm",
-          "time": "2026-11-01T16:00:00.000Z",
-          "venue": "Sparebanken Sor Arena",
-          "sport": "football",
-          "meta": "Eliteserien",
-          "tournament": "Eliteserien",
-          "streaming": [
-            {
-              "platform": "TV2 Play",
-              "url": "https://play.tv2.no",
-              "type": "tv2"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Start",
-          "awayTeam": "Lillestrøm",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
-          "id": "football-kfum-oslo-–-hamkam-1793548800000",
-          "title": "KFUM Oslo – HamKam",
-          "time": "2026-11-01T16:00:00.000Z",
-          "venue": "KFUM Arena",
-          "sport": "football",
-          "meta": "Eliteserien",
-          "tournament": "Eliteserien",
-          "streaming": [
-            {
-              "platform": "TV2 Play",
-              "url": "https://play.tv2.no",
-              "type": "tv2"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "KFUM Oslo",
-          "awayTeam": "HamKam",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
-        {
-          "id": "football-sarpsborg-08-–-kristiansund-1793548800000",
-          "title": "Sarpsborg 08 – Kristiansund",
-          "time": "2026-11-01T16:00:00.000Z",
-          "venue": "Sarpsborg Stadion",
-          "sport": "football",
-          "meta": "Eliteserien",
-          "tournament": "Eliteserien",
-          "streaming": [
-            {
-              "platform": "TV2 Play",
-              "url": "https://play.tv2.no",
-              "type": "tv2"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Sarpsborg 08",
-          "awayTeam": "Kristiansund",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
         {
           "id": "football-vålerenga-–-tromsø-1793556900000",
           "title": "Vålerenga – Tromsø",
@@ -106,7 +28,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -166,32 +88,6 @@
     {
       "name": "Premier League",
       "events": [
-        {
-          "id": "football-arsenal-at-liverpool-1793550600000",
-          "title": "Arsenal at Liverpool",
-          "time": "2026-11-01T16:30:00.000Z",
-          "venue": "Anfield",
-          "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
-          "streaming": [
-            {
-              "platform": "NBCSN",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Liverpool",
-          "awayTeam": "Arsenal",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": true,
-          "additional": {
-            "status": "STATUS_SECOND_HALF"
-          }
-        },
         {
           "id": "football-everton-at-newcastle-united-1793649600000",
           "title": "Everton at Newcastle United",
@@ -324,58 +220,6 @@
       "name": "La Liga",
       "events": [
         {
-          "id": "football-real-madrid-at-racing-santander-1793546100000",
-          "title": "Real Madrid at Racing Santander",
-          "time": "2026-11-01T15:15:00.000Z",
-          "venue": "El Sardineros",
-          "sport": "football",
-          "meta": "La Liga",
-          "tournament": "La Liga",
-          "streaming": [
-            {
-              "platform": "ESPN Deportes",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Racing Santander",
-          "awayTeam": "Real Madrid",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": true,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
-          "id": "football-valencia-at-elche-1793554200000",
-          "title": "Valencia at Elche",
-          "time": "2026-11-01T17:30:00.000Z",
-          "venue": "Estadio Martínez Valero",
-          "sport": "football",
-          "meta": "La Liga",
-          "tournament": "La Liga",
-          "streaming": [
-            {
-              "platform": "ESPN Deportes",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Elche",
-          "awayTeam": "Valencia",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FIRST_HALF"
-          }
-        },
-        {
           "id": "football-real-sociedad-at-athletic-club-1793563200000",
           "title": "Real Sociedad at Athletic Club",
           "time": "2026-11-01T20:00:00.000Z",
@@ -398,7 +242,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_SECOND_HALF"
           }
         },
         {
@@ -563,84 +407,6 @@
       "name": "Serie A",
       "events": [
         {
-          "id": "football-torino-at-frosinone-1793541600000",
-          "title": "Torino at Frosinone",
-          "time": "2026-11-01T14:00:00.000Z",
-          "venue": "Stadio Benito Stirpe",
-          "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
-          "streaming": [
-            {
-              "platform": "Paramount+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Frosinone",
-          "awayTeam": "Torino",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
-          "id": "football-cagliari-at-lazio-1793541600000",
-          "title": "Cagliari at Lazio",
-          "time": "2026-11-01T14:00:00.000Z",
-          "venue": "Olimpico",
-          "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
-          "streaming": [
-            {
-              "platform": "Paramount+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Lazio",
-          "awayTeam": "Cagliari",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
-          "id": "football-genoa-at-lecce-1793552400000",
-          "title": "Genoa at Lecce",
-          "time": "2026-11-01T17:00:00.000Z",
-          "venue": "Via Del Mare",
-          "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
-          "streaming": [
-            {
-              "platform": "Paramount+",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Lecce",
-          "awayTeam": "Genoa",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FIRST_HALF"
-          }
-        },
-        {
           "id": "football-napoli-at-juventus-1793562300000",
           "title": "Napoli at Juventus",
           "time": "2026-11-01T19:45:00.000Z",
@@ -663,7 +429,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -853,58 +619,6 @@
     {
       "name": "Bundesliga",
       "events": [
-        {
-          "id": "football-fc-cologne-at-1.-fc-union-berlin-1793543400000",
-          "title": "FC Cologne at 1. FC Union Berlin",
-          "time": "2026-11-01T14:30:00.000Z",
-          "venue": "Stadion An der Alten Försterei",
-          "sport": "football",
-          "meta": "Bundesliga",
-          "tournament": "Bundesliga",
-          "streaming": [
-            {
-              "platform": "Fandango",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "1. FC Union Berlin",
-          "awayTeam": "FC Cologne",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_FULL_TIME"
-          }
-        },
-        {
-          "id": "football-hamburg-sv-at-eintracht-frankfurt-1793550600000",
-          "title": "Hamburg SV at Eintracht Frankfurt",
-          "time": "2026-11-01T16:30:00.000Z",
-          "venue": "Deutsche Bank Park",
-          "sport": "football",
-          "meta": "Bundesliga",
-          "tournament": "Bundesliga",
-          "streaming": [
-            {
-              "platform": "USA Net",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Eintracht Frankfurt",
-          "awayTeam": "Hamburg SV",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_HALFTIME"
-          }
-        },
         {
           "id": "football-borussia-mönchengladbach-at-hamburg-sv-1793993400000",
           "title": "Borussia Mönchengladbach at Hamburg SV",
