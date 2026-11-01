@@ -1,41 +1,8 @@
 {
-  "generatedAt": "2026-11-01T11:39:46.175Z",
+  "generatedAt": "2026-11-01T17:37:00.216Z",
   "gapCount": 5,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Bodø/Glimt",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Sviende nederlag for Bodø/Glimt-styret: Omstridt navneforslag ble nedstemt",
-      "link": "https://www.nrk.no/nordland/sviende-nederlag-for-bodo_glimt-styret_-omstridt-navneforslag-ble-nedstemt-1.18070000",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-01T11:39:45.223Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "RBK",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Chiakha herjet i RBK-seier",
-      "link": "https://www.nrk.no/sport/chiakha-herjet-i-rbk-seier-1.18070232",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-01T11:39:45.223Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Spirit",
-      "type": "missing",
-      "imminent": false,
-      "headline": "‘We need to be better’: Manchester United’s Olid demands progress after Everton draw",
-      "link": "https://www.theguardian.com/football/2026/oct/31/everton-manchester-united-wsl-match-report",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-11-01T11:39:45.223Z"
-    },
     {
       "kind": "entity",
       "entity": "Formel 1",
@@ -45,7 +12,40 @@
       "link": "https://www.nrk.no/sport/antonelli-kan-bli-tidenes-yngste-formel-1-verdensmester-sondag-1.18070412",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-11-01T11:39:45.223Z"
+      "detectedAt": "2026-11-01T17:36:59.473Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Tour de France",
+      "type": "missing",
+      "imminent": false,
+      "headline": "'Anything is possible' - Paul Seixas open to racing Giro d’Italia in 2027",
+      "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/anything-is-possible-paul-seixas-open-to-racing-giro-ditalia-in-2027/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-11-01T17:36:59.473Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Giro d'Italia",
+      "type": "missing",
+      "imminent": false,
+      "headline": "'It is a big goal' - Femke de Vries targets Grand Tour podium after breakthrough season",
+      "link": "https://www.cyclingnews.com/pro-cycling/womens-cycling/it-is-a-big-goal-femke-de-vries-targets-grand-tour-podium-after-breakthrough-season/",
+      "feed": "cyclingnews",
+      "matchCount": 1,
+      "detectedAt": "2026-11-01T17:36:59.473Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Giro",
+      "type": "missing",
+      "imminent": false,
+      "headline": "'It is a big goal' - Femke de Vries targets Grand Tour podium after breakthrough season",
+      "link": "https://www.cyclingnews.com/pro-cycling/womens-cycling/it-is-a-big-goal-femke-de-vries-targets-grand-tour-podium-after-breakthrough-season/",
+      "feed": "cyclingnews",
+      "matchCount": 3,
+      "detectedAt": "2026-11-01T17:36:59.473Z"
     },
     {
       "kind": "tracked-claim",
@@ -57,7 +57,7 @@
       "claimedDate": "2026-11-11T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "alpine-world-cup-2026-27",
-      "detectedAt": "2026-11-01T11:39:46.005Z"
+      "detectedAt": "2026-11-01T17:37:00.070Z"
     }
   ],
   "anomalies": [
@@ -66,7 +66,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-01T11:39:46.036Z"
+      "detectedAt": "2026-11-01T17:37:00.092Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."

@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-01T11:39:45.011Z",
+  "generatedAt": "2026-11-01T17:36:59.298Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
-    "amendRate": "red",
+    "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
     "contracts": "green"
@@ -27,7 +27,7 @@
       "medium": 7,
       "low": 0
     },
-    "oldestGapAgeDays": 8.12,
+    "oldestGapAgeDays": 8.37,
     "escalatable": 5,
     "catalogMatched": 4,
     "auditedAt": "2026-11-01T10:15:00Z",
@@ -35,61 +35,61 @@
       {
         "interest": "Alpint — Verdenscupen fortsetter Levi (14.–15. nov) + Gurgl (21.–22. nov)",
         "severity": "medium",
-        "ageDays": 5.09,
+        "ageDays": 5.34,
         "recurrences": 5,
         "catalogMatched": true
       },
       {
         "interest": "Hopp — FIS hopp-verdenscupåpningen Lillehammer (20.–22. nov) + Ruka (28.–29. nov)",
         "severity": "medium",
-        "ageDays": 8.12,
+        "ageDays": 8.37,
         "recurrences": 8,
         "catalogMatched": false
       },
       {
         "interest": "Langrenn — sesongåpning: VC-premieren Ruka (27.–29. nov) + norsk åpning Beitostølen (~20.–22. nov)",
         "severity": "medium",
-        "ageDays": 4.08,
+        "ageDays": 4.33,
         "recurrences": 4,
         "catalogMatched": false
       },
       {
         "interest": "Skiskyting — VC-premieren Kontiolahti (~26.–29. nov, NRK, tier1 wholesale)",
         "severity": "medium",
-        "ageDays": 1.06,
+        "ageDays": 1.31,
         "recurrences": 1,
         "catalogMatched": false
       },
       {
         "interest": "Esport/CS2 — CS2 Major Singapore 2026 (PGL Major, 25. nov–13. des, Stage 1 ~24.–27. nov)",
         "severity": "medium",
-        "ageDays": 2.07,
+        "ageDays": 2.31,
         "recurrences": 2,
         "catalogMatched": true
       },
       {
         "interest": "Sjakk — klassisk VM 2026 Gukesh–Sindarov (Genève, ~24./25. nov–13./15. des, parti 1 ~24. nov)",
         "severity": "medium",
-        "ageDays": 3.07,
+        "ageDays": 3.32,
         "recurrences": 3,
         "catalogMatched": true
       },
       {
         "interest": "Fotball — Brann i Conference League MD4 hjemme mot Aarhus (tor. 26. nov)",
         "severity": "medium",
-        "ageDays": 3.07,
+        "ageDays": 3.32,
         "recurrences": 3,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 1,
-    "nearTermChecked": 1,
-    "nearTermAmended": 1,
-    "verifyRunAt": "2026-10-31T11:05:00Z",
+    "nearTermRate": 0,
+    "nearTermChecked": 9,
+    "nearTermAmended": 0,
+    "verifyRunAt": "2026-11-01T11:57:49Z",
     "windowRate": 0,
-    "windowChecks": 52,
+    "windowChecks": 59,
     "windowAmendments": 0,
     "windowCorrections": 5,
     "byDay": [
@@ -183,30 +183,35 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-11-01",
+        "checks": 7,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-01T11:39:40.480Z",
+    "buildCheckedAt": "2026-11-01T17:36:55.986Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-01T09:57:02.088Z",
-    "manifestAgeHours": 1.71,
+    "manifestGeneratedAt": "2026-11-01T11:39:46.349Z",
+    "manifestAgeHours": 5.95,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-10-31T11:05:00Z",
-    "verifyAgeHours": 24.58,
-    "corrections": 1,
+    "checkedAt": "2026-11-01T11:57:49Z",
+    "verifyAgeHours": 5.65,
+    "corrections": 0,
     "unresolved": 0,
-    "signals": [
-      "Bybit Stockholm Open / BNP Paribas Nordic Open (683b8acc3136, tennis, medium): var UVERIFISERT. Turneringsvindu 7.-14. nov bekreftet mot visitstockholm.com (…"
-    ]
+    "signals": []
   },
   "contracts": {
     "total": 6,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-11-01T11:39:45.011Z"
+    "generatedAt": "2026-11-01T17:36:59.298Z"
   }
 }
