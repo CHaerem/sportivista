@@ -1,11 +1,5 @@
 [
   {
-    "runAt": "2026-10-28T11:36:39.247Z",
-    "verdict": "quiet",
-    "reason": "RSS (45 items, 10:57 UTC Oct 28): mostly football gossip (Mbappé China controversy, Carrick Manchester United continuation, Haaland TV interview rejection, Real Madrid governance dispute—no schedule/time/venue changes). Match coverage (Arsenal v Fleetwood Carabao Cup shock loss to fourth-tier team yesterday, Champions League analysis, Premier League finalized Oct 25-26, WSL results—no upcoming schedule/time/venue changes). Personnel/injury news (Martin Johnsen HV71 season-out, Øystein Pettersen visa issue—no match reschedules announced, no upcoming tracked-event schedule impact). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 2 anomalies): rain entity (Lise Klaveness interview—not imminent, not a concrete upcoming event), Arsenal (Fleetwood match already on board from past coverage, not a future schedule change), Alpine World Cup tracked-claim (claimedDate Nov 14—imminent=false, 17 days away, not urgent for 4h cycle). chess.json + cycling.json empty (low severity, known). No NEW concrete signal. Escalation cap today (Oct 28 UTC): 0/2.",
-    "signals": []
-  },
-  {
     "runAt": "2026-10-17T19:00:42.000Z",
     "verdict": "quiet",
     "reason": "RSS (55 items, 19:00 UTC Oct 17): live/past match coverage (football Premier League/Championship/WSL—Man City, Newcastle, Chelsea, Arsenal, Everton finalized; Bayern Munich, Liverpool, Brann, Bodø/Glimt, cycling Eneco Tour, handball, rollerskiing—all completed matches, no schedule/time/venue changes). Transfer gossip/personnel news (Ofkir Mohamed, Guardiola Barcelona basketball, FIS/FRB sponsorship, rugby tragedy, Manchester United valuation—no schedule impact). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 0 anomalies): Bodø/Glimt (imminent=false), Spirit (imminent=false), Mesterligaen (imminent=false)—all entity gaps from past match coverage, none refer to concrete upcoming events. Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 17 UTC): 0/2.",
@@ -46,16 +40,8 @@
   {
     "runAt": "2026-10-06T17:56:28.000Z",
     "verdict": "quiet",
-    "reason": "RSS (33 items, 17:56 UTC Oct 6): Nations League matches today (England v Czechia, Scotland v Slovenia, Croatia v Spain—already tracked live coverage, no NEW schedule/time/venue changes). Injury news (Caroline Graham Hansen forfall, no match-time impact). Organizational/personnel news (ski federation Red Bull sponsorship, Tromsø sports director, cycling/NHL transfers—no event-schedule changes). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no rain/100 Thieves CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (7 gaps, 1 anomaly): Elkjøp-ligaen 2026/27 (imminent Oct 7) already escalated 01:53 and 11:49 UTC (2/2 cap reached for today). Nations League matches already tracked as live. Viktor Hovland/Karsten Warholm (2027 far-future), chess.json empty (low severity). No NEW concrete signal justifying escalation. Escalation cap today (Oct 6 UTC): 2/2 (cap reached).",
+    "reason": "RSS (33 items, 17:56 UTC Oct 6): Nations League matches today (England v Czechia, Scotland v Slovenia, Croatia v Spain—already tracked, no NEW schedule/time/venue changes). Injury news (Caroline Graham Hansen forfall, no match-time impact). Organizational/personnel news (ski federation Red Bull sponsorship, Tromsø sports director, cycling/NHL transfers—no event-schedule changes). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no rain/100 Thieves CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (7 gaps, 1 anomaly): Elkjøp-ligaen 2026/27 (imminent Oct 7) already escalated 01:53 and 11:49 UTC (2/2 cap reached for today). Nations League matches already tracked as live. Viktor Hovland/Karsten Warholm (2027 far-future), chess.json empty (low severity). No NEW concrete signal justifying escalation. Escalation cap today (Oct 6 UTC): 2/2 (cap reached).",
     "signals": []
-  },
-  {
-    "runAt": "2026-10-06T11:49:00.000Z",
-    "verdict": "escalate",
-    "reason": "RSS (55 items, 11:45 UTC): past results (F1 Malaysia, cycling, Nations League Oct 5 finalized—no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements, no 100 Thieves/rain CS2 hints). Coverage gaps (9 gaps, 1 anomaly): NEW imminent signal — Elkjøp-ligaen 2026/27 (Norwegian handball, tracked.json lists it) shows imminent=true, Oct 7 tomorrow, but ZERO board events for season start. Tracked interest claiming coverage + concrete imminent event missing = escalation. Escalation cap today (Oct 6 UTC): 1/2 before this (already escalated 01:53).",
-    "signals": [
-      "Elkjøp-ligaen 2026/27 (Norwegian handball): tracked-claim gap, imminent Oct 7 (tomorrow), no board event for season start"
-    ]
   },
   {
     "runAt": "2026-10-04T23:35:01.000Z",
@@ -84,301 +70,15 @@
     "signals": []
   },
   {
-    "runAt": "2026-10-15T21:57:00.000Z",
+    "runAt": "2026-10-29T22:40:31.566Z",
     "verdict": "quiet",
-    "reason": "RSS (35 items, 21:55 UTC Oct 15): live/completed Europa League coverage (Bournemouth vs Sturm Graz, FCK vs Braga, Brann vs Lincoln Red Imps, LSK—all Oct 14-15 tracked, no schedule/time/venue changes). Past match results (Champions League/Bundesliga/Eliteserien finalized Oct 13-14, no schedule changes). Transfer/organizational news (Arsenal layoffs, board changes—no schedule impact). Injury news (Kilde Achilles—no schedule-affected event). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (4 gaps, 0 anomalies): all marked imminent=false (Vitality/Mesterligaen/Europa League/Europaligaen from match articles/team-of-week mention, not concrete upcoming events). Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 15 UTC): 0/2.",
+    "reason": "RSS (33 items, 22:15 UTC Oct 29): mostly past match results & gossip (Everton beat Newcastle Carabao Cup, Barcelona beat HB Køge Champions League women, Manchester City women draw PSG, Ronaldo hat-trick Saudi Arabia, Zverev ATP world #1—no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements). Handball/ice hockey/football results (no schedule/time/venue changes). Injury/personnel news (ice hockey player injury, Grealish disciplinary, no match reschedules announced). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (2 gaps, 1 anomaly): Mesterligaen (imminent=false, entity gap from past coverage), Alpine World Cup tracked-claim (Nov 11, imminent=false, 13 days away—Alpine venue change already escalated 11:25 UTC, pre-existing signal); cycling.json empty (low severity, known). Pre-existing escalations remain in research queue. No NEW concrete schedule/time/venue/broadcaster signal. Escalation cap today (Oct 29 UTC): 1/2 (Alpine venue change escalated at 11:25).",
     "signals": []
   },
   {
-    "runAt": "2026-10-16T18:30:00.000Z",
+    "runAt": "2026-10-29T18:05:00.000Z",
     "verdict": "quiet",
-    "reason": "RSS (27 items, 18:36 UTC Oct 16): past match results and personnel decisions (Barcelona Frenkie de Jong clearance—personnel, no schedule change; Ruud ATP Shanghai loss—past result; Premier League analysis—no schedule/time/venue changes). Real Madrid/La Liga governance dispute (organizational, no schedule impact). Manchester City rest discussion (personnel decision, no schedule/time/venue change). Football weekend preview (upcoming tracked events, no NEW schedule/time/venue changes or broadcaster announcements). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 0 anomalies): Vitality, Europa League, Europaligaen—all entity gaps marked imminent=false, all from past match reports (Bourmemouth vs Sturm Graz historic win, LSK Europa achievement). No concrete upcoming events. Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 16 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-16T21:54:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (12 items, 21:54 UTC Oct 16): past match results (Casper Ruud ATP Shanghai loss—past result). Premier League analysis and weekend preview (no schedule/time/venue changes). Real Madrid/La Liga governance dispute (organizational, no schedule impact). Manchester City rest discussion (personnel decision, no schedule/time/venue change). Football analysis/opinion (no new event announcements). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (0 gaps, 0 anomalies): clean detection. Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 16 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-17T09:00:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (38 items, 09:00 UTC Oct 17): past match results (Casper Ruud ATP Shanghai loss—past result, Borgar Haug bordtennis EM win—match result). Personnel/injury news (Hyron Andrews rugby tragedy—no schedule impact, Barcelona Frenkie de Jong clearance—personnel, no schedule change, Haaland rest discussion—personnel decision, no schedule change). Transfer gossip/organizational news (Ofkir Mohamed, Manchester United valuation, Real Madrid/La Liga dispute, Arsenal layoffs, Bjarte Myrhol TV role—all no schedule impact). Football analysis and weekend preview (Premier League, WSL, Eliteserien—no NEW schedule/time/venue changes). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (0 gaps, 0 anomalies): clean detection. Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 17 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-17T13:00:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (12 items, 12:53 UTC Oct 17): live match coverage (Everton v Chelsea Premier League—ongoing, no schedule/time/venue changes). Past match results (Pep Guardiola returning to Barcelona for basketball—personnel move, no schedule impact). Football opinion/analysis/quizzes (no new event announcements). Transfer gossip and organizational news (no schedule impact). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (0 gaps, 0 anomalies): clean detection. Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 17 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-17T16:08:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (12 items, 16:07 UTC Oct 17): live/current match coverage (Man City v Ipswich, Newcastle v Aston Villa Premier League—no schedule/time/venue changes). Past match results (Chelsea v Everton, Arsenal 1-1 Birmingham WSL, Atletico 1-0 Espanyol—finalized, no schedule changes). Football analysis and opinion (no new event announcements). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (1 gap, 0 anomalies): Spirit (entity mentioned in past match result, imminent=false, not a concrete upcoming event). Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 17 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-18T09:25:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (31 items, 09:19 UTC Oct 18): match results & analysis (Chelsea keeper surgery, Messi goals, Barcelona 5–2 Betis, Johaug 2028 Olympics, Napoli pre-Glimt form—no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements, no 100 Thieves/rain CS2 hints, no tracked-athlete imminent event announcements). Coverage gaps (3 gaps, 0 anomalies): Man City (past Haaland goal), Mesterligaen (past result), BLAST (opinion piece—false positive)—all imminent=false, none refer to concrete upcoming events. Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 18 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-18T13:45:17.806Z",
-    "verdict": "quiet",
-    "reason": "RSS (34 items, 13:45 UTC Oct 18): match results & analysis (Chelsea keeper surgery—personnel, no schedule impact; Messi goals, Barcelona 5–2 Betis, Liverpool 2–1 Brentford, Napoli form pre-Glimt—completed matches, no schedule/time/venue changes to upcoming tracked events; Johaug 2028 Olympics commentary, Haftorsen obituary, Silje Opseth surgery—no schedule impact). No broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (2 gaps, 0 anomalies): Mesterligaen (past result), BLAST (opinion piece)—both imminent=false, not concrete upcoming events. Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 18 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-18T17:04:22.366Z",
-    "verdict": "quiet",
-    "reason": "RSS (31 items, 17:04 UTC Oct 18): live/completed match coverage (Nottingham Forest v Arsenal live, Premier League finalized—Brighton 5-0 Palace (Gómez halfway-line), Bournemouth beat Sunderland, Man United 1-1 Leeds, Arsenal v Birmingham WSL 1-1, Chelsea 6-0 Tottenham WSL, Barcelona 5-2 Betis, Liverpool results; handball Sola 30-22 CSM Bucuresti Champions League—all completed matches, no schedule/time/venue changes). Personnel/injury news (Chelsea keeper Martinez surgery—no schedule impact, Silje Opseth appendix operation—no schedule impact, Haftorsen obituary—no schedule impact). Sports results & commentary (Norwegian biathlon One Loop, Rosenborg 3-0 Sarpsborg, ice hockey, Therese Johaug Olympics 2028, Sebastian Sponevik gymnastics VM final—no schedule changes to upcoming tracked events). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (1 gap, 0 anomalies): BLAST (opinion piece—false positive, imminent=false, not a concrete upcoming event). Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 18 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-18T19:39:35.471Z",
-    "verdict": "quiet",
-    "reason": "RSS (31 items, 17:04 UTC Oct 18): live/past match coverage (Premier League/WSL: Nottingham Forest v Arsenal, Brighton v Crystal Palace, Leeds v Manchester United, Chelsea v Tottenham; Eliteserien: Rosenborg v Sarpsborg, Brann v Vålerenga; biathlon One Loop München, hockey Frisk v Stavanger, handball CL Sola v CSM Bucuresti). Player news: Silje Opseth appendix surgery, Emiliano Martinez jaw surgery, Szoboszlai injury for Liverpool—none with schedule impact. No schedule/time/venue changes to existing tracked events, no broadcaster announcements, no 100 Thieves/rain CS2 hints. Coverage gaps (1 gap, 0 anomalies): BLAST from opinion piece, not concrete upcoming event. No NEW signal. Escalation cap today (Oct 18 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-18T20:03:45.827Z",
-    "verdict": "quiet",
-    "reason": "RSS (47 items, 20:03 UTC Oct 18): completed match results (Premier League/Eliteserien/handball Champions League/biathlon—no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements, no 100 Thieves/rain CS2 hints, no tracked-athlete imminent event announcements). Personnel/injury news (Silje Opseth appendix, Emiliano Martinez jaw surgery—no schedule impact). Transfer gossip/organizational news—no schedule changes. Coverage gaps (2 gaps, 0 anomalies): Molde/Brann both marked imminent=false, from completed match articles (Rosenborg beat Sarpsborg, Vålerenga beat Brann), not concrete upcoming events. Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 18 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-19T10:30:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (36 items, 10:29 UTC Oct 19): completed match results and analysis (Sarina Wiegman England contract extension—personnel, no schedule impact; Elina Svitolina/Gael Monfils split—personal news, no schedule impact; Alpine VM i Narvik cancelled—future 2027, not imminent; Premier League/Eliteserien/football results—no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements, no 100 Thieves/rain CS2 hints, no tracked-athlete imminent event announcements). Coverage gaps (1 gap, 1 anomaly): Håvard «rain» Nygaard tracked-claim gap with claimedDate Oct 31 (imminent=false, 11 days away, not urgent for 4h research cycle); cycling.json empty (low severity). Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 19 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-19T17:19:24.707Z",
-    "verdict": "quiet",
-    "reason": "RSS (36 items, 17:19 UTC Oct 19): live/completed football match coverage (Man City v AEK Athens Tue—Haaland doubtful from injury, Semenyo out 8 weeks; Bodø/Glimt v Napoli Tue; Arsenal upcoming; Bayern league match recap; no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements). Match results & analysis (Arsenal 1-0 Nottingham Forest, Brighton 5-0 Crystal Palace, Liverpool, Barcelona—no schedule changes). Personnel/injury news (Kilde Achilles tendon injury—no schedule impact; Svitolina/Monfils split—no schedule impact; Wiegman England extension—personnel, no schedule change). Transfer gossip/opinion pieces (no schedule impact). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (2 gaps, 1 anomaly): Man City entity gap (Haaland injury—no reschedule), Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 12 days away), cycling.json empty (low severity)—none refer to concrete upcoming event schedule changes. Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 19 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-19T21:58:47.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (12 items, 21:58 UTC Oct 19): past match results and analysis (Tottenham Coventry, Crystal Palace scrutiny, Brighton analysis, Charlie Cresswell Juventus preview—finalized matches, no schedule/time/venue changes). Personnel/discipline news (Ronaldo 30-day suspension—no schedule impact, no upcoming match reschedule). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 1 anomaly): Barça entity gap (past match result, imminent=false, not concrete upcoming event); Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 12 days away—pre-existing, no NEW RSS announcement); cycling.json empty (low severity). No NEW concrete signal. Escalation cap today (Oct 19 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-20T09:50:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (28 items, 09:48 UTC Oct 20): past/current match results & analysis (Røa permitteringer—organizational, no schedule impact; Ronaldo suspension—no match reschedule; Napoli v Bodø/Glimt Champions League Tue—already tracked, no schedule/time/venue changes; Liverpool v Villarreal Champions League—already tracked, no schedule changes; Tottenham/Brighton/Palace/Arsenal/Barcelona—finalized matches, no upcoming schedule changes). Personnel/injury news (Kilde Achilles—no schedule impact; Aksel Lund Svindal alpine trainer appointment—organizational, no schedule impact; Mikaela Shiffrin/Kilde bonding—personal, no schedule impact). Organizational/management news (Football Australia/FIFA, Ghana manager search—no schedule impact). Coverage gaps (3 gaps, 2 anomalies): Barça/Barca entity gaps (past match result—imminent=false, not concrete upcoming events), Håvard «rain» Nygaard tracked-claim (Oct 31—imminent=false, 11 days away, not urgent for 4h research cycle); esports.json + cycling.json empty (low severity anomalies). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. No NEW concrete signal. Escalation cap today (Oct 20 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-20T14:50:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (11 items, 14:39 UTC Oct 20): past/completed match results and analysis (Brazil election impact on women's football—opinion piece, no schedule change; Crystal Palace eagle mascot—organizational, no schedule impact; Ronaldo/ten Hag—personality news, no schedule impact; Manchester City analysis—no schedule change; Villarreal/Liverpool—already tracked Champions League, no schedule changes; Eliteserien/WSL finalized—no upcoming schedule changes; Tottenham bonding trip—personnel, no schedule impact; Barcelona/Yamal goal—match result from Oct 19, no schedule changes; Napoli/Allegri—analysis, no schedule impact; Brighton analysis—no schedule change; Dwight Yorke interview—personnel news, no schedule impact; Football Australia/FIFA—organizational). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 2 anomalies): Barça/Barca entity gaps (past match result, imminent=false, not concrete upcoming events); Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 11 days away); esports.json + cycling.json empty (low severity). Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 20 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-20T18:55:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (54 items, 18:53 UTC Oct 20): live/past match coverage (Champions League matches happening today/tonight: Napoli-Bodø/Glimt, Liverpool-Villarreal, PSG-Barcelona, Manchester City-AEK Athens, Bayern Munich-Arsenal, Braga-Rangers, Milan-Leverkusen, etc.—tracked live coverage, no schedule/time/venue changes). Personnel/opinion news (Glimt player lineup, women's national team initiative, arena construction, Bayern coach illness—no schedule impact). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (2 gaps, 2 anomalies): World Cup entity gap (imminent=false, from archival news coverage); Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 11 days away, not urgent); esports.json + cycling.json empty (low severity). All gaps marked non-imminent or not referring to concrete upcoming event schedule changes. No NEW concrete signal. Escalation cap today (Oct 20 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-20T22:04:25.729Z",
-    "verdict": "quiet",
-    "reason": "RSS (34 items, 22:04 UTC Oct 20): live/past Champions League match coverage (Napoli-Bodø/Glimt, Liverpool-Villarreal, PSG-Barcelona, Man City-AEK, Bayern-Arsenal, etc.—tracked coverage, no schedule/time/venue changes). Personnel/opinion news (Ten Hag/Carrick, Arteta Arsenal, Nusa gossip—no schedule impact). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 hints, no tracked-athlete imminent event announcements. Coverage gaps (1 gap, 2 anomalies): Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 11 days away, not urgent for 4h cycle); esports.json + cycling.json empty (low severity). No NEW concrete signal. Escalation cap today (Oct 20 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-21T09:49:32.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (33 items, 09:48 UTC Oct 21): completed match results (Champions League Oct 20: Napoli-Bodø/Glimt, Liverpool-Villarreal, PSG-Barcelona, Man City-AEK, Bayern-Arsenal—finalized, no schedule/time/venue changes). Personnel/injury news (PSG stars Kvaratskhelia ACL, Dembélé, Marquinhos—no schedule changes, no reschedules). Transfer gossip/organizational news (Manchester City regulator, coach suspensions, FIFA sanctions—no schedule impact). Opinion/analysis pieces (no new event announcements). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 2 anomalies): Liverpool entity gap from past match result (imminent=false, not concrete upcoming event); Fotball-VM gap (imminent=false, archival); Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 10 days away, no NEW RSS announcement); esports.json + cycling.json empty (known low severity). No NEW concrete signal. Escalation cap today (Oct 21 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-21T14:50:44.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (53 items, 14:50 UTC Oct 21): completed match results (Champions League Oct 20: Napoli-Bodø/Glimt, Liverpool-Villarreal, PSG-Barcelona, Man City-AEK, Bayern-Arsenal—finalized, no schedule/time/venue changes). Personnel/injury news (PSG stars Kvaratskhelia ACL, Dembélé, Marquinhos—no schedule changes, no reschedules). Football preview (Viking-Aston Villa, Lillestrøm-Real Sociedad Europa League—already tracked, no NEW schedule/time/venue changes). Transfer/cycling news (Valgren, Vollering, 2027 Tour route presentation—far-future, no schedule impact). Opinion/analysis pieces. No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (8 gaps, 1 anomaly): Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 10 days away, no NEW RSS announcement); cycling.json empty (low severity); other gaps from past results/far-future, not concrete upcoming events. Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 21 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-26T17:07:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (45 items, 17:07 UTC Oct 26): weekend match results finalized (Barcelona 1-2 Real Madrid El Clásico Mbappé goals, Premier League Oct 25-26 finalized, Eliteserien Oct 26 completed, WSL matches, Champions League, F1 Antonelli win USA—no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements affecting upcoming events). Personnel/injury news (Braathen outfit logistics, skiing injury reports—no schedule impact). Transfer/organizational news—no schedule changes. No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (2 gaps, 2 anomalies): Formel 1 entity gap (Antonelli past result, imminent=false, not concrete upcoming event), FIS Alpine Ski World Cup sesongåpning Sölden (Nov 14 tracked-claim, imminent=false, 20 days away, not urgent for 4h cycle); chess.json + cycling.json empty (low severity, known). No NEW concrete signal. Escalation cap today (Oct 26 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-21T19:35:10.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (15 items, ~19:06 UTC Oct 21): live Champions League match coverage (Como v Man Utd, Bayern v Arsenal, Real Madrid v RB Leipzig, Aston Villa v Viking—all today, no schedule/time/venue changes). Football analysis/retrospective pieces (no new event announcements). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 1 anomaly): Barça (past match article, imminent=false), rain/Håvard Nygaard (Oct 31, imminent=false—not within imminent threshold), cycling.json empty (known). No NEW concrete signal. Escalation cap today (Oct 21 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-21T19:50:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (15 items, 19:06 UTC Oct 21): live Champions League match coverage (Como-Manchester United, Bayern-Arsenal, Real Madrid-RB Leipzig, Aston Villa-Viking—all match-day, no schedule/time/venue changes). Match results & analysis (finalized Oct 20–21 Champions League, no schedule changes). Opinion/commentary pieces (no new event announcements). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 1 anomaly): Barça entity gap (past match, imminent=false), rain/Håvard Nygaard tracked-claim (Oct 31, imminent=false, 10 days away, no NEW RSS signal), cycling.json empty (low severity, known). Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 21 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-22T10:37:15.555Z",
-    "verdict": "quiet",
-    "reason": "RSS (14 items, 09:49 UTC Oct 22): completed match results (Champions League Oct 21: Como-Manchester United, Bayern-Arsenal, Real Madrid-RB Leipzig, Aston Villa-Viking—all finalized, no schedule/time/venue changes). Personnel/injury news (Saka injury from yesterday, Kvaratskhelia ACL, Dembélé—no match reschedules). Transfer gossip and opinion pieces (Harry Kane Ballon d'Or stress, Carrick/Manchester United analysis, Manchester City review, Jonas Eidevall interview—no schedule impact). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 1 anomaly): Barça/Barca entity gaps (past match result, imminent=false, not concrete upcoming events), Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 9 days away, not urgent for 4h cycle), cycling.json empty (low severity, known). No NEW concrete signal. Escalation cap today (Oct 22 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-22T14:51:40.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (55 items, 14:51 UTC Oct 22): mostly past match results (Champions League Oct 21: Como-Manchester United, Bayern-Arsenal, Real Madrid-RB Leipzig, Aston Villa-Viking—all finalized, no schedule/time/venue changes). Personnel/injury news (Saka injury, Kvaratskhelia ACL, Dembélé—no match reschedules). Transfer gossip/opinion pieces (Carrick, Manchester City review, Kane Ballon d'Or, Manchester United analysis—no schedule impact). Magazine pieces (2027 Tour de France/Femmes route presentation—far-future, no imminent schedule impact). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (9 gaps, 1 anomaly): Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 9 days away, not urgent for 4h cycle), Tour de France entity gaps (imminent=true but 2027 route commentary, not concrete upcoming events), Magnus Carlsen MOVE Cup (no imminent date), cycling.json empty (low severity)—no NEW concrete signal. Escalation cap today (Oct 22 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-22T19:30:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (21 items, 19:02 UTC Oct 22): live Europa League match coverage (Lech Poznan-Sunderland, Juventus-Rennes, Bournemouth-Milan, Crystal Palace-Celtic—today, no schedule/time/venue changes). Personnel/management opinion (Michael Carrick Manchester United future—no schedule impact). FIFA Women's World Cup 2027 preparation funds (far-future, no imminent impact). Haiti vs USA Nations League venue move to Miami (Nov 14, ~24 days away—not imminent for 4h cycle, not on board). Manchester United culture/personnel analysis (Bruno Fernandes, dressing-room unrest—no schedule changes, no reschedules). Transfer gossip/opinion pieces. No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 1 anomaly): Man City (past match review, imminent=false), Nations League (Haiti venue change Nov 14, not on board, not imminent), Håvard «rain» Nygaard (Oct 31, imminent=false, 9 days away), cycling.json empty (low severity)—no NEW concrete signal. Escalation cap today (Oct 22 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-22T20:30:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (21 items, 19:02 UTC Oct 22): same feed snapshot as 19:30 UTC run — live Europa League coverage, personnel opinions, Haiti Nations League venue change Nov 14 (not imminent for 4h cycle, 23 days out), no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent announcements. Coverage gaps (3 gaps, 1 anomaly): Man City (past match, imminent=false), Nations League (Haiti signal already evaluated at 19:30 UTC, not imminent), Håvard «rain» Nygaard (Oct 31, imminent=false), cycling.json empty (low severity). No NEW concrete signal since 19:30 UTC run. Escalation cap today (Oct 22 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-23T09:44:35.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (39 items, 09:44 UTC Oct 23): mostly completed match coverage (Europa League Oct 22: Bournemouth-Milan, Brann-Lincoln, Benfica-Omonia, LSK-Elfsborg, Juventus-Rennes, etc.—finalized, no schedule/time/venue changes to upcoming tracked events). Personnel/injury news (Kilde Achilles tendon—no schedule impact; Trump/LeBron comment—no schedule impact; Macron Olympics/biathlon talk—no schedule impact). Organizational news (Atlanta Falcons logo controversy—organizational, no schedule impact; Haiti Nations League venue move Nov 14—already discussed Oct 22 at 19:30 UTC, not imminent for 4h cycle). Match analysis/opinion (no new event announcements). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (5 gaps, 1 anomaly): Man City (past match entity, imminent=false), Falcons (logo story, imminent=false, not a sports event), Europaligaen (past match result, imminent=false), Nations League (venue relocation already evaluated, imminent=false), Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 8 days away, pre-existing, no NEW RSS announcement), cycling.json empty (low severity). No NEW concrete signal. Escalation cap today (Oct 23 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-23T14:45:00.000Z",
-    "verdict": "escalate",
-    "reason": "RSS (38 items, 14:39 UTC Oct 23): SCHEDULE CHANGE SIGNAL — PSG v Lyon (Ligue 1, tracked wholesale) postponed from Sunday Oct 25 to Monday Oct 26 due to police order (organisé par la Préfecture). This is a concrete schedule/time change to an existing tracked event. Other signals: Saka (Arsenal) injury assessment ongoing (no reschedule announced yet), Dennis Hauger IndyCar Europe 2027 (far-future), Bruno Fernandes captain/discipline (personnel, no schedule impact), Scottish Cup postponement (not PSG/rain-related). No 100 Thieves/rain CS2 match hints, no broadcaster announcements, no other imminent tracked-athlete events. Coverage gaps (4 gaps, 1 anomaly): rain entity gap from Scottish Cup article (imminent=false, not rain-specific), Falcons logo (organizational, not a sports event), Europaligaen (past result, imminent=false), rain tracked-claim Oct 31 (imminent=false, 8 days away, pre-existing)—no NEW signal beyond the PSG reschedule. Escalation cap today (Oct 23 UTC): 0/2 before this.",
-    "signals": [
-      "PSG v Lyon (Ligue 1): schedule postponement from Oct 25 (Sunday) to Oct 26 (Monday) due to police order"
-    ]
-  },
-  {
-    "runAt": "2026-10-23T18:52:52.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (41 items, 18:52 UTC Oct 23): live/past match coverage (Ipswich v Nottingham Forest live 20:00 BST, football Premier League/Championship/WSL finalized—no schedule/time/venue changes). Personnel/injury news (Kompany collapsed at Bayern training—no schedule impact, no reschedule announced). Transfer gossip/analysis (Bodø/Glimt relegated, Aalesund-Brann season race, Carrick Manchester United, Veddet på seg tatovering—no schedule impact, no broadcaster announcements). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (2 gaps, 1 anomaly): Conference League entity gap (imminent=false, from Brann-eventyr news—not a concrete upcoming event), Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 8 days away—pre-existing, no NEW RSS announcement), cycling.json empty (low severity). PSG v Lyon rescheduled (already escalated 14:45 UTC). No NEW concrete signal. Escalation cap today (Oct 23 UTC): 1/2 (already escalated at 14:45).",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-23T21:50:50.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (14 items, 21:50 UTC Oct 23): football Premier League preview & match results (Arsenal v Everton Sat, Barcelona v Real Madrid clásico Sun, Manchester United v Bournemouth Sun, Palace v Newcastle Sun, WSL Arsenal v Spurs Sat—weekend preview, no schedule/time/venue changes announced). Personnel/injury news (Saka 6-week absence for Arsenal—no match reschedule announced, just lineup impact; Kompany hospitalization—no reschedule announced). Match result (Ipswich 1-1 Forest completed, no schedule changes). Opinion/analysis pieces (el clásico legacy analysis, Brazil politics, A-League Melbourne derby—no new event announcements). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (2 gaps, 1 anomaly): rain entity gap (Ipswich article, imminent=false, from completed match, not concrete upcoming event), Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 8 days away—pre-existing, no NEW announcement), cycling.json empty (low severity). PSG v Lyon reschedule already escalated Oct 23 14:45 UTC. No NEW concrete signal. Escalation cap today (Oct 23 UTC): 1/2 (one used).",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-24T09:46:59.252Z",
-    "verdict": "quiet",
-    "reason": "RSS (34 items, 09:17 UTC Oct 24): live match coverage (Aston Villa v Man City 11:30 UTC, Basel tennis 04:00 UTC, Sölden alpine 08:30 UTC, PGL Masters Bucharest CS2 07:00 UTC—all tracked, no schedule/time/venue changes). Transfer gossip (Vingegaard cycling, no schedule impact). Past results finalized (Bodø/Glimt women's relegation, Ipswich-Nottingham Forest, Vincent Kompany health incident—no match-time changes). No broadcaster announcements affecting upcoming events, no CS2 match hints (rain appears in entity gaps but no concrete upcoming match announced), no tracked-athlete imminent event announcements. Coverage gaps (4 gaps, 1 anomaly): rain entity gap (not imminent), Uno-X (not imminent), Europa League (not imminent), rain Oct 31 tracked-claim (imminent=false). Cycling.json empty (low severity, known). Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 24 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-24T13:49:21.338Z",
-    "verdict": "quiet",
-    "reason": "RSS (55 items, 13:49 UTC Oct 24): live/past match coverage (Aston Villa v Man City tracked, alpine Sölden, CS2 PGL Masters Bucharest, Basel tennis, football Premier League/Eliteserien finalized—no schedule/time/venue changes). Personnel/injury news (Vincent Kompany collapsed at Bayern training—no reschedule announced, health incident only; Saka 6-week absence—no reschedule announced, lineup impact only; transfer gossip—no schedule impact). No broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (9 gaps, 1 anomaly): rain, Uno-X, Europa League, Tour de France, Giro (all from past match articles, imminent=false); Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 7 days away, pre-existing, no NEW RSS announcement); cycling.json empty (low severity). Pre-existing escalations remain in research queue. No NEW concrete signal. Escalation cap today (Oct 24 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-24T17:15:00.000Z",
-    "verdict": "escalate",
-    "reason": "RSS (54 items, 17:10 UTC Oct 24): mostly completed match coverage—no schedule/time/venue changes announced. HOWEVER: coverage-gaps.json (17:11 UTC) now shows HIGH-SEVERITY contract-breach gap — Premier League (wholesale-covered, imminent=true) reports '5 av minst 6 ventede events innen 14 dager' missing on board. This is exactly the gap class defined as a broken promise (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken in-season. Coverage-critic and research must fill this from the premier-league authority. Oct 24 UTC escalation cap before this: 0/2.",
-    "signals": [
-      "Premier League contract-breach (high severity, imminent): 5+ expected upcoming events missing from board, wholesale-covered competition with pre-agreed contract"
-    ]
-  },
-  {
-    "runAt": "2026-10-24T17:30:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (54 items, 17:10 UTC Oct 24): completed match coverage (Premier League/Eliteserien finalized—no schedule/time/venue changes announced). No broadcaster announcements affecting upcoming events, no schedule/time/venue changes to existing tracked events. Coverage gaps (10 gaps, 1 anomaly): Premier League contract-breach already escalated at 17:15 UTC (15 minutes ago, within same hour—no NEW schedule signal to re-escalate). Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 7 days away—pre-existing secondary signal for research queue). Cycling.json empty (low severity, known). No NEW concrete schedule/time/venue/streaming/broadcaster signals. Escalation cap today (Oct 24 UTC): 1/2 (contract-breach escalated at 17:15).",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-24T22:43:07.360Z",
-    "verdict": "quiet",
-    "reason": "RSS (36 items, 20:10 UTC Oct 24): match results (football Premier League/Serie A/Championship/WSL, Bundesliga, hockey, ski, handball prep—no schedule/time/venue/streaming changes to existing tracked events, no broadcaster announcements). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (5 gaps, 0 anomalies with imminent=true): all entity/tracked-claim gaps show imminent=false (rain, Rosenborg, Håndball-EM, Handball-EM, rain CS2)—none refer to concrete upcoming events. chess.json + cycling.json empty (low severity, known). No NEW concrete signal. Escalation cap today (Oct 24 UTC): 1/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-25T09:50:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (12 items, 09:34 UTC Oct 25): completed Premier League/Championship matches (Carrick Man United analysis, Arsenal/Everton finalized, Aston Villa/Man City, Chelsea/Spurs, Rangers/Dundee—no schedule/time/venue changes to upcoming tracked events). Ballon d'Or ceremony Monday London Palladium (media event, not tracking). Bayern Munich Vincent Kompany hospitalization with virus, Aaron Danks interim coach (no reschedule announced—personnel incident only, no match rescheduled). Ayrshire Racecourse race meeting cancelled due to high winds (horse racing, not tracked for Norway). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (1 gap, 2 anomalies): Håvard «rain» Nygaard tracked-claim (Oct 31, claimedDate imminent=false, 6 days away, not urgent for 4h cycle). chess.json + cycling.json empty (low severity, known). No NEW concrete signal. Escalation cap today (Oct 25 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-25T14:05:30.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (28 items, 14:05 UTC Oct 25): live/completed Premier League match coverage (Man United v Bournemouth, Liverpool v Brighton, Arsenal v Everton, Tottenham v Chelsea—tracked, no schedule/time/venue changes). Personnel/injury news (Real Madrid Thibaut Courtois forfall sick illness, no reschedule announced; Lucas Braathen slalom win Sölden—past result; Lilleberg Lightning loss—past result). Transfer gossip and personality news (no schedule impact). Sports opinion pieces (no new event announcements). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (1 gap, 2 anomalies): Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 6 days away, not urgent for 4h cycle). chess.json + cycling.json empty (low severity, known). No NEW concrete signal. Escalation cap today (Oct 25 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-25T18:05:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (28 items, 14:05 UTC Oct 25 snapshot): live/completed Premier League match coverage (Man United v Bournemouth, Liverpool v Brighton, Arsenal v Everton, Tottenham v Chelsea—tracked, no schedule/time/venue changes). Personnel/injury news (Real Madrid Thibaut Courtois illness no reschedule announced—lineup impact only, not a schedule change; Lucas Braathen slalom win Sölden—past result; Lilleberg Lightning loss—past result). Transfer gossip/personality news (no schedule impact). Opinion pieces (no new event announcements). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (1 gap, 2 anomalies): Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 6 days away, not urgent for 4h cycle). chess.json + cycling.json empty (low severity, known). No NEW concrete signal. Escalation cap today (Oct 25 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-25T21:13:30.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (21 items, 18:05 UTC Oct 25): live/past match coverage (football Premier League: Sunderland v Leeds, Hull v Brentford 1-1, Newcastle v Crystal Palace, Liverpool v Brighton, Manchester United v Bournemouth—completed matches, no schedule/time/venue changes). Injury news (Henny Reistad handball, no match-time impact). Ski/cycling results (Braathen Sölden win—past event). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no rain/100 Thieves CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (1 gap, 2 anomalies): Håvard Nygaard (tracked-claim, claimedDate Oct 31, imminent=false—6 days, not near-term). Chess/cycling empty (low severity, known). No NEW concrete signal. Escalation cap today (Oct 25 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-25T21:24:15.883Z",
-    "verdict": "quiet",
-    "reason": "RSS (39 items, 21:24 UTC Oct 25): live/completed football match coverage (Barcelona v Real Madrid El Clásico live, Premier League finalized Sun Oct 25—Manchester United v Bournemouth, Liverpool v Brighton, Arsenal v Everton, Tottenham v Chelsea, Newcastle v Palace, Sunderland v Leeds, Hull v Brentford, WSL Arsenal v Spurs—no schedule/time/venue changes to upcoming tracked events, no new broadcaster announcements). Personnel/injury news (Real Madrid Thibaut Courtois illness/forfall for El Clásico—lineup impact only, no reschedule announced or impact on tracked events; Henny Reistad handball injury—no schedule impact). Match analysis/opinion pieces, sports commentary. No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (2 gaps, 2 anomalies): Brann entity gap (imminent=false, from completed match articles—not a concrete upcoming event); Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 6 days away, not imminent for 4h cycle, pre-existing signal). Chess.json + cycling.json empty (low severity, known). Pre-existing escalations remain in research queue. No NEW concrete schedule/broadcaster/venue/time signal. Escalation cap today (Oct 25 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-26T10:45:14.267Z",
-    "verdict": "quiet",
-    "reason": "RSS (25 items, 10:44 UTC Oct 26): past match results finalized (Barcelona 2-1 Real Madrid El Clásico Oct 25, Liverpool 2-0 Brighton, Arsenal 2-1 Everton, Manchester United 3-0 Bournemouth, Premier League Oct 25 finalized—no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements). Haaland Gullballen award ceremony (media ceremony Monday Oct 28, not a match schedule). Injury news (Martin Johnsen HV71 surgery/season-out—no match reschedule announced, no impact on tracked events). Opinion/analysis pieces (no new event announcements). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (1 gap, 2 anomalies): Formel 1 entity gap (refers to past race result Antonelli win Oct 25, imminent=false, not a concrete upcoming event); Håvard «rain» Nygaard tracked-claim (Oct 31, imminent=false, 5 days away, not urgent for 4h cycle, pre-existing); chess.json + cycling.json empty (low severity, known). No NEW concrete signal. Escalation cap today (Oct 26 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-26T17:10:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (45 items, 17:07 UTC Oct 26): weekend match results finalized (Barcelona 1-2 Real Madrid El Clásico Mbappé, Premier League Oct 25-26 finalized—Man United, Liverpool, Arsenal, Tottenham, Newcastle, Palace, Sunderland, Leeds, Hull, Brighton, Manchester City, Everton, Chelsea, Spurs WSL; Eliteserien Oct 26 completed; Champions League Oct 24 analysis; F1 Antonelli USA win Oct 25—no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements affecting upcoming events). Personnel/injury news (Braathen outfit logistics interview, skier injury reports—no schedule impact). Transfer/organizational news (Sparta bankruptcy, transfer gossip—no schedule changes). Gullballen/Ballon d'Or ceremony discussion (award event, not a match). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (2 gaps, 2 anomalies): Formel 1 entity gap (Antonelli past race result, imminent=false, not a concrete upcoming event); FIS Alpine Ski World Cup sesongåpning Sölden (Nov 14 tracked-claim, imminent=false, 20 days away, not urgent for 4h cycle); chess.json + cycling.json empty (low severity, known). No NEW concrete signal. Escalation cap today (Oct 26 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-27T10:11:24.868Z",
-    "verdict": "quiet",
-    "reason": "RSS (55 items, 10:11 UTC Oct 27): Ballon d'Or ceremony concluded Oct 26 (Kane/Putellas won, Haaland skipped—no schedule/time/venue changes to upcoming tracked events). Match results finalized (Premier League/Championship/WSL/Serie A Oct 25-26—no schedule changes). F1 analysis (Verstappen/Red Bull—no schedule change). Injuries without schedule impact (RBK Agnes Nyberg—past decision, no upcoming match affected; Zuccarello—lineup only, no reschedule). Transfer gossip/organizational news (Mbappé/China, Sæteren to Denmark, Gjerpen bankruptcy—no schedule impact). Cycling/chess/hockey results (Gravelista, TDF 2027 analysis—no imminent event changes). England U15 racism incident (not a scheduled event). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints. Coverage gaps (3 gaps, 2 anomalies): RBK entity (imminent=false, past injury), Tour de France (imminent=false, 2027 planning), Alpine World Cup (imminent=false, Nov 14 = 18d away); chess/cycling empty (low severity, known). No NEW concrete signal. Escalation cap today (Oct 27 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-27T16:11:36.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (55 items, 16:11 UTC Oct 27): Ballon d'Or ceremony wrapped (Kane win—no schedule impact). Mbappé China controversy (no schedule/time/venue/streaming changes). Manchester United Carrick continuation (personnel decision, no schedule change). Haaland mini-vacation (personnel decision, no reschedule). Molde post-summer form (opinion piece). RBK ACL injury (Nyberg—injury noise, no upcoming match affected). Injury reports (Zuccarello—lineup only, no reschedule). Transfer gossip/organizational news (Ofkir Mohamed, Gjerpen bankruptcy, cycling athletes—no schedule impact). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (2 gaps, 2 anomalies): RBK entity (imminent=false, injury news—explicit noise category), Alpine World Cup tracked-claim (claimedDate Nov 11, imminent=false, 15 days away—pre-existing, no NEW RSS announcement, not urgent for 4h cycle); chess.json + cycling.json empty (low severity, known). No NEW concrete signal. Escalation cap today (Oct 27 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-27T21:07:32.704Z",
-    "verdict": "quiet",
-    "reason": "RSS (30 items, 21:07 UTC Oct 27): live match coverage (Arsenal v Fleetwood Carabao Cup fourth round—currently playing 20:54 GMT Oct 27, already tracked, no schedule/time/venue changes to upcoming events; drone delay mentioned but match continuing). Transfer/award news (Harry Kane Ballon d'Or win, knighthood hints—personnel, no schedule impact; Arsenal contract analysis—no schedule change). Match results finalized (Kristian Thorstvedt red card, Nusa Leipzig comeback—past matches, no schedule changes). Personnel/injury news (RBK injury—injury noise, no upcoming match affected; Øystein Pettersen visa issue—no schedule impact; Tromsø player season-out—injury only, no reschedule). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 2 anomalies): RBK (imminent=false, injury noise—explicit non-escalation category), Arsenal (imminent=true but match already live/tracked, not a future schedule change), Alpine World Cup (imminent=false, Nov 11 far future, tracked-claim missing but not urgent for 4h cycle); chess.json + cycling.json empty (low severity, known). Pre-existing escalations remain in research queue. No NEW concrete schedule/broadcaster/venue/time signal. Escalation cap today (Oct 27 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-28T00:00:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (30 items, 21:07 UTC Oct 27 latest): Arsenal v Fleetwood live match (already on board, no schedule/time/venue changes to upcoming tracked events). Harry Kane Ballon d'Or award ceremony (no schedule impact). Match results finalized (Kristian Thorstvedt, Nusa, Brandsegg-Nygård hockey—past matches, no schedule changes). Injury noise (RBK Agnes Nyberg, Zuccarello, Tromsø player season-out—no upcoming matches affected, no reschedules). Transfer gossip/awards (Mbappé China, Carrick Manchester United, Pettersen visa—no schedule impact, no broadcaster announcements). Coverage gaps (3 gaps, 2 anomalies): RBK (imminent=false, injury—noise category), Arsenal (imminent=true but current live match, not a future schedule change), Alpine World Cup (imminent=false, Nov 11, 14 days away). chess.json + cycling.json empty (low severity, known). No schedule/time/venue changes to existing tracked events, no broadcaster announcements, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. No NEW concrete signal. Escalation cap today (Oct 28 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-28T17:02:30.277Z",
-    "verdict": "quiet",
-    "reason": "RSS (55 items, 17:01 UTC Oct 28): mostly organizational/personnel news (Vålerenga CEO appointment—personnel, no schedule impact; FIFA Japan controversy—organizational, no schedule change; Ineos AI tech—future, no schedule impact; Glimt sickness before Viking Friday match—injury/lineup impact only, no reschedule announced; Arsenal v Fleetwood Carabao Cup live—tracked, no schedule changes; Casper Ruud Basel loss—past result; Netcompany/cycling tech/Chess Olympiad recap—no schedule impact). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 1 anomaly): rain entity (Lise Klaveness FIFA interview, imminent=false, not a sports event), Tour de France (imminent=false, 2027 planning), Alpine World Cup tracked-claim (claimedDate Nov 11, imminent=false, 14d away, not urgent for 4h cycle); cycling.json empty (low severity, known). No NEW concrete schedule/broadcaster/venue/time signal. Escalation cap today (Oct 28 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-28T19:01:00.000Z",
-    "verdict": "quiet",
-    "reason": "RSS (45 items, ~17:57 UTC Oct 28): football gossip (Mbappé China controversy, Carrick/Fernandes, Haaland TV interview rejection, Real Madrid governance—no schedule/time/venue changes). Match coverage (Arsenal v Fleetwood Carabao Cup shock loss, Champions League analysis, Premier League finalized—no upcoming schedule changes). Personnel/injury (Martin Johnsen HV71 season-out, Øystein Pettersen visa issue—no match reschedules, no tracked-event schedule impact). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 1 anomaly): rain entity (Lise Klaveness interview—not imminent, not a concrete upcoming event), Tour de France (far-future 2027), Alpine World Cup (Nov 11, 14 days away, imminent=false); cycling.json empty (low severity, known). No NEW concrete signal. Escalation cap today (Oct 28 UTC): 0/2.",
+    "reason": "RSS (37 items, 17:59 UTC Oct 29): mostly past match results & gossip (football Premier League/Championship/WSL finalized; MLS Kristoffer Velde goals—completed matches, no schedule/time/venue changes to upcoming tracked events). Personnel/transfer news (Mia Svele handball transfer, Ståle Solbakken future plans—no schedule impact). Swedish cross-country skiing training logistics (no schedule change announced). Chess World Championship blitz/bullet confirmed for Istanbul in romjula/December (announced Oct 29)—significant NEW event, but far-future (months away), not imminent for 4h scout cycle. Gullballen award ceremony (past). Football analysis/opinion (no new event announcements). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (2 gaps, 1 anomaly): Mesterligaen (imminent=false, entity gap from past coverage), FIS Alpine World Cup tracked-claim (imminent=false, Nov 11, 13 days away—Alpine venue change already escalated 11:25 UTC, pre-existing signal); cycling.json empty (low severity, known). Pre-existing escalations remain in research queue. No NEW concrete schedule/time/venue/broadcaster signal justifying escalation. Escalation cap today (Oct 29 UTC): 1/2 (Alpine venue change escalated at 11:25).",
     "signals": []
   },
   {
@@ -390,33 +90,27 @@
     ]
   },
   {
-    "runAt": "2026-10-29T18:05:00.000Z",
+    "runAt": "2026-10-28T19:01:00.000Z",
     "verdict": "quiet",
-    "reason": "RSS (37 items, 17:59 UTC Oct 29): mostly past match results & gossip (football Premier League/Championship/WSL finalized; MLS Kristoffer Velde goals—completed matches, no schedule/time/venue changes to upcoming tracked events). Personnel/transfer news (Mia Svele handball transfer, Ståle Solbakken future plans—no schedule impact). Swedish cross-country skiing training logistics (no schedule change announced). Chess World Championship blitz/bullet confirmed for Istanbul in romjula/December (announced Oct 29)—significant NEW event, but far-future (months away), not imminent for 4h scout cycle. Gullballen award ceremony (past). Football analysis/opinion (no new event announcements). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (2 gaps, 1 anomaly): Mesterligaen (imminent=false, entity gap from past coverage), FIS Alpine World Cup tracked-claim (imminent=false, Nov 11, 13 days away—Alpine venue change already escalated 11:25 UTC, pre-existing signal); cycling.json empty (low severity, known). Pre-existing escalations remain in research queue. No NEW concrete schedule/time/venue/broadcaster signal justifying escalation. Escalation cap today (Oct 29 UTC): 1/2 (Alpine venue change escalated at 11:25).",
+    "reason": "RSS (45 items, ~17:57 UTC Oct 28): football gossip (Mbappé China controversy, Carrick/Fernandes, Haaland TV interview rejection, Real Madrid governance—no schedule/time/venue changes). Match coverage (Arsenal v Fleetwood Carabao Cup shock loss, Champions League analysis, Premier League finalized—no upcoming schedule changes). Personnel/injury (Martin Johnsen HV71 season-out, Øystein Pettersen visa issue—no match reschedules, no tracked-event schedule impact). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 1 anomaly): rain entity (Lise Klaveness interview—not imminent, not a concrete upcoming event), Tour de France (far-future 2027), Alpine World Cup (Nov 11, 14 days away, imminent=false); cycling.json empty (low severity, known). No NEW concrete signal. Escalation cap today (Oct 28 UTC): 0/2.",
     "signals": []
   },
   {
-    "runAt": "2026-10-29T22:40:31.566Z",
+    "runAt": "2026-10-28T17:02:30.277Z",
     "verdict": "quiet",
-    "reason": "RSS (33 items, 22:15 UTC Oct 29): mostly past match results & gossip (Everton beat Newcastle Carabao Cup, Barcelona beat HB Køge Champions League women, Manchester City women draw PSG, Ronaldo hat-trick Saudi Arabia, Zverev ATP world #1—no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements). Handball/ice hockey/football results (no schedule/time/venue changes). Injury/personnel news (ice hockey player injury, Grealish disciplinary, no match reschedules announced). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (2 gaps, 1 anomaly): Mesterligaen (imminent=false, entity gap from past coverage), Alpine World Cup tracked-claim (Nov 11, imminent=false, 13 days away—Alpine venue change already escalated 11:25 UTC, pre-existing signal); cycling.json empty (low severity, known). Pre-existing escalations remain in research queue. No NEW concrete schedule/time/venue/broadcaster signal. Escalation cap today (Oct 29 UTC): 1/2 (Alpine venue change escalated at 11:25).",
+    "reason": "RSS (55 items, 17:01 UTC Oct 28): mostly organizational/personnel news (Vålerenga CEO appointment—personnel, no schedule impact; FIFA Japan controversy—organizational, no schedule change; Ineos AI tech—future, no schedule impact; Glimt sickness before Viking Friday match—injury/lineup impact only, no reschedule announced; Arsenal v Fleetwood Carabao Cup live—tracked, no schedule changes; Casper Ruud Basel loss—past result; Netcompany/cycling tech/Chess Olympiad recap—no schedule impact). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 1 anomaly): rain entity (Lise Klaveness FIFA interview, imminent=false, not a sports event), Tour de France (imminent=false, 2027 planning), Alpine World Cup tracked-claim (claimedDate Nov 11, imminent=false, 14d away, not urgent for 4h cycle); cycling.json empty (low severity, known). No NEW concrete schedule/broadcaster/venue/time signal. Escalation cap today (Oct 28 UTC): 0/2.",
     "signals": []
   },
   {
-    "runAt": "2026-10-30T11:10:00.000Z",
+    "runAt": "2026-10-31T23:02:41.731Z",
     "verdict": "quiet",
-    "reason": "RSS (34 items, 11:10 UTC Oct 30): mostly football gossip & completed match coverage (Afcon scheduling, Mbappé China, Carrick Manchester United, South Korea team drama—no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements). Match analysis (Arsenal v Fleetwood Carabao Cup shock, Premier League finalized Oct 25-26, Champions League analysis—no upcoming schedule/time/venue changes). Personnel/injury news (Martin Johnsen HV71 season-out, Øystein Pettersen visa issue, Aalesund player korsbåndskade—no match reschedules announced, no tracked-event schedule impact). Chelsea player play-time analysis, Kolstad economic news, pyrotechnics discipline (no schedule impact). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (4 gaps, 1 anomaly): Mesterligaen entity gap (imminent=false, from past match), Håndball-EM / Handball-EM entity gaps (imminent=true but squad announcement only, not a concrete upcoming match date/venue/time announced), FIS Alpine Ski World Cup tracked-claim (imminent=false, Nov 11, 12 days away, pre-existing signal from Alpine venue-change escalation Oct 29); cycling.json empty (low severity, known). Håndball-EM imminent gap is a gap detection the research agent will see on next 4h run; squad announcement does not meet threshold for schedule/time/venue change or broadcaster announcement escalation. No NEW concrete schedule/time/venue/broadcaster signal. Escalation cap today (Oct 30 UTC): 0/2.",
+    "reason": "RSS (55 items, 23:02 UTC Oct 31): match results & live coverage (Bayern 2-2 Dortmund, Aston Villa 1-1 Fulham, Tottenham 2-0 Crystal Palace, AC Milan beat Inter, handball Herrem/Sola loss, football/hockey/handball finalized—no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements affecting upcoming events). No 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (9 gaps, 1 anomaly): all entity gaps non-imminent (Bodø/Glimt, Rosenborg, RBK, Uno-X, Spirit, Tour de France, Giro, Vuelta—all from past match/result coverage, imminent=false), Alpine World Cup tracked-claim (Nov 11, imminent=false, 11 days away—pre-existing, no NEW announcement), cycling.json empty (low severity, known). No NEW schedule/time/venue/streaming/broadcaster signal. Contract-breach (PL) already escalated 16:18 UTC today; no NEW contract-breach signals. No NEW concrete signal. Escalation cap today (Oct 31 UTC): 1/2 (contract-breach already escalated 16:18).",
     "signals": []
   },
   {
-    "runAt": "2026-10-30T17:41:31.586Z",
+    "runAt": "2026-10-31T19:45:10.012Z",
     "verdict": "quiet",
-    "reason": "RSS (14 items, 17:41 UTC Oct 30): mostly football gossip & weekend previews (Guardian feeds—Chelsea-Manchester United Sat 12:30pm TNT Sports, Liverpool-Arsenal Sun—already tracked, no schedule/time/venue changes; Iraola Liverpool analysis, Maresca Chelsea—team analysis, no schedule impact; Putellas London City vs Manchester City—no schedule/time/venue changes; Max Dowman red card—personnel, no reschedule; Newcastle/Grealish—gossip, no schedule changes; Inter-Milan San Siro stadium plans—organizational, no schedule impact; Sunderland-Coventry—match result, no schedule changes). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (1 gap, 1 anomaly): FIS Alpine Ski World Cup 2026/27 tracked-claim (claimedDate Nov 11, imminent=false, 12 days away, not urgent for 4h cycle, pre-existing from Oct 29 venue-change escalation); cycling.json empty (low severity, known). Pre-existing escalations remain in research queue. No NEW concrete schedule/time/venue/broadcaster signal. Escalation cap today (Oct 30 UTC): 0/2.",
-    "signals": []
-  },
-  {
-    "runAt": "2026-10-31T11:12:04.017Z",
-    "verdict": "quiet",
-    "reason": "RSS (34 items, 10:43 UTC Oct 31): mostly completed match coverage (Bodø/Glimt v Viking Oct 30 final—imminent tensions from opinion pieces, not future schedule changes; Premier League weekend preview—no schedule/time/venue changes announced; Gullballen award ceremony completed). Personnel/organizational news (Solskjær Manchester United interview—personnel, no schedule impact; Jamie Carragher Aston Villa lawsuit—discipline, no schedule impact; Norwegian ski federation budget issues—organizational, no schedule change; Maresca Donnarumma trust statement—personnel, no schedule change; Tromsø keeper retirement—personnel, no impact). Handball transfer (Jamina Roberts pregnancy, season finished). Iceland hockey CAS decision (Russia/Ukraine—no imminent upcoming match reschedule announced). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 1 anomaly): Bodø/Glimt entity (match opinion/drama, imminent=false, not future schedule change), Mesterligaen (personnel transfer, imminent=false), Alpine World Cup tracked-claim (Nov 11, imminent=false, 11 days away, not urgent for 4h cycle); cycling.json empty (low severity, known). No NEW concrete schedule/time/venue/streaming/broadcaster signal. Escalation cap today (Oct 31 UTC): 0/2.",
+    "reason": "RSS (13 items, 19:44 UTC Oct 31): mostly match results & live coverage (Tottenham v Crystal Palace live 19:38, Man United Chelsea completed, Bournemouth Leeds, Brentford Forest, Brighton Man City, Arsenal Liverpool upcoming; Jamie Carragher apology—no schedule/time/venue/streaming changes to upcoming tracked events, no broadcaster announcements affecting upcoming events). No 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 1 anomaly): Premier League contract-breach (imminent=true) is pre-existing and was already escalated at 16:18 UTC today (3.5h ago); research agent handling. Spirit entity gap (imminent=false), Alpine World Cup (Nov 11, imminent=false); cycling.json empty (low severity, known). No NEW schedule/time/venue/streaming/broadcaster signal since 16:18 escalation. No NEW concrete signal. Escalation cap today (Oct 31 UTC): 1/2 (contract-breach already escalated 16:18).",
     "signals": []
   },
   {
@@ -428,15 +122,17 @@
     ]
   },
   {
-    "runAt": "2026-10-31T19:45:10.012Z",
+    "runAt": "2026-10-31T11:12:04.017Z",
     "verdict": "quiet",
-    "reason": "RSS (13 items, 19:44 UTC Oct 31): mostly match results & live coverage (Tottenham v Crystal Palace live 19:38, Man United Chelsea completed, Bournemouth Leeds, Brentford Forest, Brighton Man City, Arsenal Liverpool upcoming; Jamie Carragher apology—no schedule/time/venue/streaming changes to upcoming tracked events, no broadcaster announcements affecting upcoming events). No 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 1 anomaly): Premier League contract-breach (imminent=true) is pre-existing and was already escalated at 16:18 UTC today (3.5h ago); research agent handling. Spirit entity gap (imminent=false), Alpine World Cup (Nov 11, imminent=false); cycling.json empty (low severity, known). No NEW schedule/time/venue/streaming/broadcaster signal since 16:18 escalation. No NEW concrete signal. Escalation cap today (Oct 31 UTC): 1/2 (contract-breach already escalated 16:18).",
+    "reason": "RSS (34 items, 10:43 UTC Oct 31): mostly completed match coverage (Bodø/Glimt v Viking Oct 30 final—imminent tensions from opinion pieces, not future schedule changes; Premier League weekend preview—no schedule/time/venue changes announced; Gullballen award ceremony completed). Personnel/organizational news (Solskjær Manchester United interview—personnel, no schedule impact; Jamie Carragher Aston Villa lawsuit—discipline, no schedule impact; Norwegian ski federation budget issues—organizational, no schedule change; Maresca Donnarumma trust statement—personnel, no schedule change; Tromsø keeper retirement—personnel, no impact). Handball transfer (Jamina Roberts pregnancy, season finished). Iceland hockey CAS decision (Russia/Ukraine—no imminent upcoming match reschedule announced). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (3 gaps, 1 anomaly): Bodø/Glimt entity (match opinion/drama, imminent=false, not future schedule change), Mesterligaen (personnel transfer, imminent=false), Alpine World Cup tracked-claim (Nov 11, imminent=false, 11 days away, not urgent for 4h cycle); cycling.json empty (low severity, known). No NEW concrete schedule/time/venue/streaming/broadcaster signal. Escalation cap today (Oct 31 UTC): 0/2.",
     "signals": []
   },
   {
-    "runAt": "2026-10-31T23:02:41.731Z",
-    "verdict": "quiet",
-    "reason": "RSS (55 items, 23:02 UTC Oct 31): match results & live coverage (Bayern 2-2 Dortmund, Aston Villa 1-1 Fulham, Tottenham 2-0 Crystal Palace, AC Milan beat Inter, handball Herrem/Sola loss, football/hockey/handball finalized—no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements affecting upcoming events). No 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (9 gaps, 1 anomaly): all entity gaps non-imminent (Bodø/Glimt, Rosenborg, RBK, Uno-X, Spirit, Tour de France, Giro, Vuelta—all from past match/result coverage, imminent=false), Alpine World Cup tracked-claim (Nov 11, imminent=false, 11 days away—pre-existing, no NEW announcement), cycling.json empty (low severity, known). No NEW schedule/time/venue/streaming/broadcaster signal. Contract-breach (PL) already escalated 16:18 UTC today; no NEW contract-breach signals. No NEW concrete signal. Escalation cap today (Oct 31 UTC): 1/2 (contract-breach already escalated 16:18).",
-    "signals": []
+    "runAt": "2026-11-01T11:39:46.175Z",
+    "verdict": "escalate",
+    "reason": "RSS (32 items, 11:39 UTC Nov 1): IMMINENT TRACKED-SPORT SIGNAL — \"Antonelli kan bli tidenes yngste Formel 1-verdensmester SØNDAG\" (NRK Sport Oct 1 07:31 UTC headline): Kimi Antonelli (20 years old, Mercedes driver) starts from position 4 at Mexico City Grand Prix on Sunday Nov 2. He needs 9th place or better to become the youngest-ever Formula 1 world champion — a significant, concrete championship scenario announced in the news for an imminent event (tomorrow from Nov 1 UTC). Coverage gap detector marks \"Formel 1\" as entity missing/imminent=false, but the race IS happening Sunday Nov 2 (tomorrow), making it highly imminent. This is a tracked sport (Formel 1 wholesale tier1 coverage), a concrete upcoming event (Mexico Grand Prix Sunday), detected as missing from the board, with a major news headline announcing a historic championship moment. Tracked + imminent + missing + significant news story = escalation-worthy. Other signals: Bodø/Glimt name vote (imminent=false, not a schedule change), RBK match result (past), Spirit match result (past), Alpine World Cup tracked-claim (Nov 11, imminent=false, 10 days away, pre-existing). Escalation cap today (Nov 1 UTC): 0/2.",
+    "signals": [
+      "Formel 1 Mexico Grand Prix (Nov 2 Sunday): significant championship scenario (Antonelli youngest-ever world champion moment, needs 9th place), imminent tracked-sport event detected as missing from board"
+    ]
   }
 ]
