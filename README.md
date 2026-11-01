@@ -180,7 +180,11 @@ to fit iPhone widths, installable on iOS/Android.
 
 ## Development
 
+`nix develop` gives the toolchain (Node 22, python3, and XcodeGen on macOS;
+Xcode itself comes from `xcode-select`). Without Nix, install those yourself.
+
 ```bash
+nix develop        # optional: the pinned toolchain from flake.nix
 npm ci
 npm run build      # fetch data + build events + calendar
 npm run dev        # localhost:8000
