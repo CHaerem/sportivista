@@ -703,8 +703,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -730,7 +730,7 @@
         "url": "https://viaplay.no/sport",
         "basis": "secondary",
         "retrievedAt": "2026-10-25T04:55:00Z",
-        "note": "Norsk visning Viaplay (alpint FIS-VC → Viaplay per norwegian-rights-skillen; TV 2 + Viaplay deler Østerrike-/vinterpakken 2026/27–2030/31). streaming[]-feltet FAKTISK korrigert NRK→Viaplay 2026-11-01 — to tidligere kjøringer skrev «korrigert» i noten uten å endre selve arrayet, så summary↔streaming-selvmotsigelsen validate-events/grader flagget sto fortsatt åpen; nå reelt lukket (platform Viaplay). Kilde: NRKs offisielle 2026/27-vintersportprogram tilordner alle fire Sölden-omgangene til Viaplay."
+        "note": "Norsk visning Viaplay (alpint FIS-VC → Viaplay per norwegian-rights-skillen; TV 2 + Viaplay deler Østerrike-/vinterpakken 2026/27–2030/31). streaming[]-feltet reelt satt til Viaplay av verify 2026-11-01 (tidligere kjøringer skrev «korrigert» i noten uten å endre arrayet; nå faktisk lukket). Kilde: NRKs offisielle 2026/27-vintersportprogram + norwegian-rights (alpint FIS-VC → Viaplay)."
       }
     },
     "summary": "Verdenscupaapningen i alpint - kvinnenes storslalaam paa Rettenbach-breen i Soelden sparker i gang 2026/27-sesongen.\n\nVAERUTSATT: rennledelsen utsatt begge omgangene om morgenen 24. okt (NRKs programside, kl. 08.49). Ny starttid 1. omgang kl. 10.30, 2. omgang kl. 13.30 lokal tid (08.30 og 11.30 UTC - Oesterrike er paa sommertid til natt til soendag 25. okt). Programmet kan justeres ytterligere ved vaer.\n\nNorsk visning: Viaplay. NRKs offisielle 2026/27-vintersportprogram oppgir Viaplay for alle fire omgangene i Soelden. TV 2 og Viaplay deler Oesterrike-pakken 2026/27-2030/31.",
@@ -904,8 +904,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -931,7 +931,7 @@
         "url": "https://viaplay.no/sport",
         "basis": "secondary",
         "retrievedAt": "2026-10-25T04:55:00Z",
-        "note": "Norsk visning Viaplay (alpint FIS-VC → Viaplay per norwegian-rights-skillen; TV 2 + Viaplay deler Østerrike-/vinterpakken 2026/27–2030/31). streaming[]-feltet FAKTISK korrigert NRK→Viaplay 2026-11-01 — to tidligere kjøringer skrev «korrigert» i noten uten å endre selve arrayet, så summary↔streaming-selvmotsigelsen validate-events/grader flagget sto fortsatt åpen; nå reelt lukket (platform Viaplay). Kilde: NRKs offisielle 2026/27-vintersportprogram tilordner alle fire Sölden-omgangene til Viaplay."
+        "note": "Norsk visning Viaplay (alpint FIS-VC → Viaplay per norwegian-rights-skillen; TV 2 + Viaplay deler Østerrike-/vinterpakken 2026/27–2030/31). streaming[]-feltet reelt satt til Viaplay av verify 2026-11-01 (tidligere kjøringer skrev «korrigert» i noten uten å endre arrayet; nå faktisk lukket). Kilde: NRKs offisielle 2026/27-vintersportprogram + norwegian-rights (alpint FIS-VC → Viaplay)."
       }
     },
     "summary": "Verdenscupåpningen i alpint — mennenes storslalåm på Rettenbach-breen i Sölden avslutter åpningshelgen og 2026/27-sesongens første mannerenn.\n\n1. omgang kl. 10.00, 2. omgang kl. 13.00 lokal tid (09.00 og 12.00 UTC — natt til denne søndagen stilles klokka tilbake til normaltid, så Østerrike er på UTC+1).\n\nNorsk visning: Viaplay. NRKs offisielle 2026/27-vintersportprogram oppgir nå Viaplay for alle fire omgangene i Sölden (tidligere «ikke bestemt»). TV 2 og Viaplay deler Østerrike-pakken 2026/27–2030/31; disse rennene er tilordnet Viaplay. Programmet kan justeres ved vær.",
@@ -2917,7 +2917,13 @@
     },
     "norwegianPlayers": [],
     "summary": "IEM Beijing 2026 (2.–8. nov), Bloomage ECM Arena i Beijing — ESLs første store Beijing-CS-event siden 2019. $1,25 mill. tier-1-LAN (ESL Pro Tour/Grand Slam-tellende) med 16 lag: to swiss-/GSL-grupper (2.–4. nov) mater et single-elimination-sluttspill 6.–8. nov, grand final søn. 8. nov.\n\nNi katalog-orger er i feltet: Natus Vincere, Team Falcons, FaZe Clan, MOUZ, G2 Esports, FURIA, The MongolZ, Team Liquid og Heroic (øvrige: Legacy, Aurora, 9z, B8, BetBoom, PARIVISION, TYLOO). Dag 1 (man. 2. nov, fra 10.00 CST / 02.00 UTC): bl.a. NAVI–Falcons og FURIA–FaZe i gruppe A, G2–PARIVISION og MOUZ–TYLOO i gruppe B. 100 Thieves / rain er IKKE med i dette feltet.\n\nGratis på ESLs offisielle Twitch (twitch.tv/eslcs) i Norge — ingen norsk TV-rettighet. Per-kamp tider for katalog-lagene festes nærmere; verify firmer enkeltkampene.",
-    "id": "eee77d69b2a6"
+    "id": "eee77d69b2a6",
+    "verifiedAt": "2026-11-01T11:57:49Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://esports.gg/news/counter-strike-2/iem-beijing-2026/",
+      "https://liquipedia.net/counterstrike/Intel_Extreme_Masters/2026/Beijing"
+    ]
   },
   {
     "sport": "tennis",
@@ -4613,7 +4619,13 @@
       }
     },
     "summary": "Kvalifiseringen avgjør startoppstillingen for søndagens løp (søn. 8. nov kl. 17.00 UTC / 14.00 lokal).\n\nStandard GP-helg UTEN sprint denne gangen (Interlagos droppet fra 2026-sprintkalenderen) — tredje siste løp i mesterskapet på det klassiske Autódromo José Carlos Pace.\n\nTid bekreftet mot formula1.com (arrangøren, primær) + uavhengig write-time fact-check. Norsk visning Viaplay.",
-    "id": "c2dd6b9c5607"
+    "id": "c2dd6b9c5607",
+    "verifiedAt": "2026-11-01T11:57:49Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.sport-flash.com/sports/f1/uk/events/formula-1-saison-2026/brazilian-grand-prix",
+      "https://www.riotimesonline.com/sao-paulo-grand-prix-2026-f1-interlagos-guide/"
+    ]
   },
   {
     "sport": "football",
@@ -4715,7 +4727,12 @@
     },
     "id": "eb53e7dfe3bb",
     "summary": "Lyn avslutter OBOS-ligaen 2026-sesongen borte mot Strømmen på Strømmen stadion, søndag 8. november kl. 13.00 (12.00 UTC) — siste serierunde (runde 30).\n\nDato/tid/arena to-kilde-bekreftet mot fotball.nos primær-autoritet (Lyns lagside + OBOS-ligaens terminliste, begge enige) og uavhengig mot FotMob.\n\nNorsk visning: TV 2 Play (OBOS-ligaens rettighetshaver). TV-valg kan flytte avsparket 30–60 min; verify følger.",
-    "awayTeamEntityId": "fk-lyn-oslo"
+    "awayTeamEntityId": "fk-lyn-oslo",
+    "verifiedAt": "2026-11-01T11:57:49Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206093"
+    ]
   },
   {
     "sport": "handball",
@@ -4817,7 +4834,13 @@
     "norwegianPlayers": [],
     "homeTeamEntityId": "brighton-hove-albion",
     "awayTeamEntityId": "brentford",
-    "id": "018f14d5c35c"
+    "id": "018f14d5c35c",
+    "verifiedAt": "2026-11-01T11:57:49Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.fifplay.com/premier-league-2026-2027-matchday-10/",
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season"
+    ]
   },
   {
     "sport": "football",
@@ -4863,7 +4886,13 @@
     "norwegianPlayers": [],
     "homeTeamEntityId": "crystal-palace",
     "awayTeamEntityId": "liverpool",
-    "id": "2df3b4d00f98"
+    "id": "2df3b4d00f98",
+    "verifiedAt": "2026-11-01T11:57:49Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.fifplay.com/premier-league-2026-2027-matchday-10/",
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season"
+    ]
   },
   {
     "sport": "football",
@@ -4909,7 +4938,13 @@
     "norwegianPlayers": [],
     "homeTeamEntityId": "ipswich-town",
     "awayTeamEntityId": "afc-bournemouth",
-    "id": "dab0a0ef5bf5"
+    "id": "dab0a0ef5bf5",
+    "verifiedAt": "2026-11-01T11:57:49Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.fifplay.com/premier-league-2026-2027-matchday-10/",
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season"
+    ]
   },
   {
     "sport": "football",
@@ -4955,7 +4990,13 @@
     "norwegianPlayers": [],
     "homeTeamEntityId": "sunderland",
     "awayTeamEntityId": "chelsea",
-    "id": "8800386ebfc0"
+    "id": "8800386ebfc0",
+    "verifiedAt": "2026-11-01T11:57:49Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.fifplay.com/premier-league-2026-2027-matchday-10/",
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season"
+    ]
   },
   {
     "sport": "football",
@@ -5001,7 +5042,13 @@
     "norwegianPlayers": [],
     "homeTeamEntityId": "manchester-united",
     "awayTeamEntityId": "aston-villa",
-    "id": "57af048ee81a"
+    "id": "57af048ee81a",
+    "verifiedAt": "2026-11-01T11:57:49Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.fifplay.com/premier-league-2026-2027-matchday-10/",
+      "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season"
+    ]
   },
   {
     "sport": "f1",
@@ -5060,7 +5107,13 @@
       }
     },
     "summary": "WTA-sesongens avsluttende mesterskap: de åtte beste kvinnene i verden møtes i round-robin før semifinaler og finale. Turneringen går 8.–15. november.\n\nVIKTIG: arrangementet er flyttet fra Riyadh til Indian Wells Tennis Garden i California for 2026 (WTAs saudiske treårsavtale ble avsluttet tidlig; ettårig Indian Wells-løsning). En utdatert kilde viser fortsatt Riyadh — WTAs egen kunngjøring er fasiten.\n\nMedium: dato/arena er bekreftet mot WTAs egen kunngjøring (wtatennis.com) + Wikipedia. Norsk kringkaster er IKKE bekreftet — TV 2s ATP-avtale dekker ikke WTA; Viaplay er historisk nordisk WTA-rettighetshaver men ikke bekreftet for 2026-finalen. streaming står tom til verify bekrefter kanalen.",
-    "id": "c5959ca304ad"
+    "id": "c5959ca304ad",
+    "verifiedAt": "2026-11-01T11:57:49Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.wtatennis.com/news/4528823/wta-announces-indian-wells-as-host-of-the-2026-wta-finals",
+      "https://en.wikipedia.org/wiki/2026_WTA_Finals"
+    ]
   },
   {
     "sport": "chess",
