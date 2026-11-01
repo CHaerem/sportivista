@@ -124,66 +124,6 @@
     ]
   },
   {
-    "sport": "cycling",
-    "tournament": "Gree Tour of Guangxi 2026",
-    "title": "Etappe 6",
-    "time": "2026-10-18T02:00:00Z",
-    "endTime": "2026-10-18T06:00:00Z",
-    "venue": "Yizhou → Nongla (165,8 km)",
-    "norwegian": false,
-    "norwegianPlayers": [
-      {
-        "name": "Tobias Halland Johannessen",
-        "entityId": "tobias-halland-johannessen"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "HBO Max (Sport)",
-        "url": "https://www.hbomax.com/no/no/sports",
-        "urlKind": "landing"
-      },
-      {
-        "platform": "Eurosport Norge",
-        "url": "https://www.eurosport.no/sykkel/",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-13T02:10:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "https://cyclinguptodate.com/cycling/tour-of-guangxi-2026-previews-profiles-favourites-predictions-can-tom-pidcock-take-his-first-ever-world-tour-stage-race-win",
-      "https://procyclinguk.com/tour-of-guangxi-2026-route-guide/",
-      "https://cyclinguptodate.com/cycling/startlist-tour-of-guangxi-2026-riders-pidcock-ayuso-narvaez-kooij-magnier-jakobsen-and-more",
-      "https://www.cyclingnews.com/pro-cycling/racing/tour-of-guangxi-2026/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "cyclinguptodate",
-        "url": "https://cyclinguptodate.com/cycling/tour-of-guangxi-2026-previews-profiles-favourites-predictions-can-tom-pidcock-take-his-first-ever-world-tour-stage-race-win",
-        "basis": "secondary",
-        "retrievedAt": "2026-10-13T12:49:04Z",
-        "note": "Starttid bekreftet mot Tour of Guangxi 2026 etappeskjema (lokal UTC+8 → UTC): etappe 2 11:10, etappe 3-4 11:00, etappe 5 10:30, etappe 6 10:00; alle stemmer med board-tiden. verify confirmed."
-      },
-      "streaming": {
-        "sourceId": "hbo-max",
-        "url": "https://www.hbomax.com/no/no/sports",
-        "basis": "secondary",
-        "retrievedAt": "2026-10-13T02:10:00Z"
-      }
-    },
-    "summary": "Etappe 6 av 6 — søndag 18. okt, Yizhou → Nongla, 165,8 km (fjell (dronningetappe, målgang på topp)).\n\nSesongens SISTE UCI WorldTour-etappeløp (13.–18. okt, Kina). Uno-X Mobility stiller med Tobias Halland Johannessen som kaptein (startliste oppdatert 8. okt).\n\nNorsk visning: HBO Max (Sport) / Eurosport Norge — WBD holder WorldTour-sykkelen i Norge (samme som Il Lombardia/Vuelta); eksakt kanal/lenke + broadcast-tid bør verify bekrefte.\n\nStarttid er omtrentlig (lokal kinesisk tid UTC+8, omregnet); etappefakta fra forhåndsomtaler, ikke arrangørens offisielle tidsskjema — derfor medium.",
-    "id": "5e4d5e27cc0c",
-    "participants": [],
-    "verifiedAt": "2026-10-15T10:10:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://procyclinguk.com/tour-of-guangxi-2026-route-guide/",
-      "https://cyclinguptodate.com/cycling/final-startlist-tour-of-guangxi-2026-riders-pidcock-ayuso-narvaez-kooij-magnier-jakobsen-and-more"
-    ]
-  },
-  {
     "sport": "handball",
     "tournament": "EHF Champions League kvinner 2026/27 (gruppespill)",
     "title": "CSM București – Sola HK",
@@ -763,8 +703,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -787,10 +727,10 @@
       },
       "streaming": {
         "sourceId": "viaplay",
-        "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
+        "url": "https://viaplay.no/sport",
         "basis": "secondary",
         "retrievedAt": "2026-10-25T04:55:00Z",
-        "note": "Norsk visning Viaplay. NRKs offisielle 2026/27-vintersportprogram (lest direkte) tilordner alle fire Sölden-omgangene til Viaplay; TV 2 og Viaplay deler Østerrike-pakken 2026/27–2030/31 (tv2.no). streaming[]-feltet korrigert NRK→Viaplay 25. okt (hadde ligget feil på NRK tross summary/provenance/evidence alle sa Viaplay — summary↔streaming-selvmotsigelse lukket)."
+        "note": "Norsk visning Viaplay (alpint FIS-VC → Viaplay per norwegian-rights-skillen; TV 2 + Viaplay deler Østerrike-/vinterpakken 2026/27–2030/31). streaming[]-feltet FAKTISK korrigert NRK→Viaplay 2026-11-01 — to tidligere kjøringer skrev «korrigert» i noten uten å endre selve arrayet, så summary↔streaming-selvmotsigelsen validate-events/grader flagget sto fortsatt åpen; nå reelt lukket (platform Viaplay). Kilde: NRKs offisielle 2026/27-vintersportprogram tilordner alle fire Sölden-omgangene til Viaplay."
       }
     },
     "summary": "Verdenscupaapningen i alpint - kvinnenes storslalaam paa Rettenbach-breen i Soelden sparker i gang 2026/27-sesongen.\n\nVAERUTSATT: rennledelsen utsatt begge omgangene om morgenen 24. okt (NRKs programside, kl. 08.49). Ny starttid 1. omgang kl. 10.30, 2. omgang kl. 13.30 lokal tid (08.30 og 11.30 UTC - Oesterrike er paa sommertid til natt til soendag 25. okt). Programmet kan justeres ytterligere ved vaer.\n\nNorsk visning: Viaplay. NRKs offisielle 2026/27-vintersportprogram oppgir Viaplay for alle fire omgangene i Soelden. TV 2 og Viaplay deler Oesterrike-pakken 2026/27-2030/31.",
@@ -964,8 +904,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -988,10 +928,10 @@
       },
       "streaming": {
         "sourceId": "viaplay",
-        "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
+        "url": "https://viaplay.no/sport",
         "basis": "secondary",
         "retrievedAt": "2026-10-25T04:55:00Z",
-        "note": "Norsk visning Viaplay. NRKs offisielle 2026/27-vintersportprogram (lest direkte) tilordner alle fire Sölden-omgangene til Viaplay; TV 2 og Viaplay deler Østerrike-pakken 2026/27–2030/31 (tv2.no). streaming[]-feltet FAKTISK korrigert NRK→Viaplay 25. okt (den forrige kjøringens note sa «korrigert» men feltet lå fortsatt på NRK — summary↔streaming-selvmotsigelsen som validate-events flagget er nå reelt lukket, med deep-lenke til Viaplays vintersport-seksjon)."
+        "note": "Norsk visning Viaplay (alpint FIS-VC → Viaplay per norwegian-rights-skillen; TV 2 + Viaplay deler Østerrike-/vinterpakken 2026/27–2030/31). streaming[]-feltet FAKTISK korrigert NRK→Viaplay 2026-11-01 — to tidligere kjøringer skrev «korrigert» i noten uten å endre selve arrayet, så summary↔streaming-selvmotsigelsen validate-events/grader flagget sto fortsatt åpen; nå reelt lukket (platform Viaplay). Kilde: NRKs offisielle 2026/27-vintersportprogram tilordner alle fire Sölden-omgangene til Viaplay."
       }
     },
     "summary": "Verdenscupåpningen i alpint — mennenes storslalåm på Rettenbach-breen i Sölden avslutter åpningshelgen og 2026/27-sesongens første mannerenn.\n\n1. omgang kl. 10.00, 2. omgang kl. 13.00 lokal tid (09.00 og 12.00 UTC — natt til denne søndagen stilles klokka tilbake til normaltid, så Østerrike er på UTC+1).\n\nNorsk visning: Viaplay. NRKs offisielle 2026/27-vintersportprogram oppgir nå Viaplay for alle fire omgangene i Sölden (tidligere «ikke bestemt»). TV 2 og Viaplay deler Østerrike-pakken 2026/27–2030/31; disse rennene er tilordnet Viaplay. Programmet kan justeres ved vær.",
@@ -2905,6 +2845,79 @@
     "id": "8b701f638c2f",
     "homeTeamEntityId": "athletic-club",
     "awayTeamEntityId": "real-sociedad"
+  },
+  {
+    "sport": "esports",
+    "tournament": "IEM Beijing 2026",
+    "title": "IEM Beijing 2026 – NAVI, Falcons, FaZe, MOUZ, G2 m.fl.",
+    "time": "2026-11-02T02:00:00Z",
+    "endTime": "2026-11-08T16:00:00Z",
+    "venue": "Bloomage Biotech·Biohyalux ECM Arena, Beijing",
+    "norwegian": false,
+    "participants": [
+      {
+        "name": "Natus Vincere"
+      },
+      {
+        "name": "Team Falcons"
+      },
+      {
+        "name": "FaZe Clan"
+      },
+      {
+        "name": "MOUZ"
+      },
+      {
+        "name": "G2 Esports"
+      },
+      {
+        "name": "FURIA"
+      },
+      {
+        "name": "The MongolZ"
+      },
+      {
+        "name": "Team Liquid"
+      },
+      {
+        "name": "Heroic"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "Twitch (ESLCS)",
+        "url": "https://www.twitch.tv/eslcs",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-01T06:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://liquipedia.net/counterstrike/Intel_Extreme_Masters/2026/Beijing",
+      "https://pro.eslgaming.com/tour/cs/beijing/eventguide/",
+      "https://esports.gg/news/counter-strike-2/iem-beijing-2026/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "liquipedia",
+        "url": "https://liquipedia.net/counterstrike/Intel_Extreme_Masters/2026/Beijing",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-01T06:15:00Z",
+        "note": "Turneringsvindu 2.–8. nov (gruppespill 2.–4., sluttspill 6.–8., grand final 8.), Bloomage ECM Arena Beijing, $1,25 mill., 16 lag. Dato/venue/premiepott/16-lagsfelt fler-kilde-bekreftet (ESL-kunngjøring + Liquipedia + esports.gg + blast.tv) + uavhengig fresh-context write-time fact-check CONFIRMED. Tiden her er vindusstart = dag 1 (man. 2. nov) første kamp 10.00 CST (Beijing UTC+8) = 02.00 UTC (Liquipedia-slott Legacy–MongolZ; ESLs egen eventguide bekrefter dører 08.00 + 10.00/12.30/15.00/17.30 CST-slottene). ESLs egen schedule-side ga 403 ved henting → basis=secondary (Liquipedia lest via API). Per-kamp bracket/tider for katalog-lagene festes nærmere; esports.js/verify boarder NAVI/Falcons/FaZe/G2/MOUZ enkeltkamper når Liquipedia/HLTV fester dem. NB 100 Thieves / rain er IKKE i feltet."
+      },
+      "streaming": {
+        "sourceId": "twitch",
+        "url": "https://www.twitch.tv/eslcs",
+        "basis": "official",
+        "retrievedAt": "2026-11-01T06:15:00Z",
+        "note": "Gratis på ESLs offisielle engelske CS-kanal ESLCS (Twitch twitch.tv/eslcs, også YouTube + Kick) per Liquipedia + write-time fact-check; verdensfeed live.intelextrememasters.com; kinesiske feeds Douyu/Bilibili/Huya. Ingen norsk TV-rettighet (se cs2-sources-skillen). Verify fester eksakt deep-lenke nær kampdag."
+      }
+    },
+    "norwegianPlayers": [],
+    "summary": "IEM Beijing 2026 (2.–8. nov), Bloomage ECM Arena i Beijing — ESLs første store Beijing-CS-event siden 2019. $1,25 mill. tier-1-LAN (ESL Pro Tour/Grand Slam-tellende) med 16 lag: to swiss-/GSL-grupper (2.–4. nov) mater et single-elimination-sluttspill 6.–8. nov, grand final søn. 8. nov.\n\nNi katalog-orger er i feltet: Natus Vincere, Team Falcons, FaZe Clan, MOUZ, G2 Esports, FURIA, The MongolZ, Team Liquid og Heroic (øvrige: Legacy, Aurora, 9z, B8, BetBoom, PARIVISION, TYLOO). Dag 1 (man. 2. nov, fra 10.00 CST / 02.00 UTC): bl.a. NAVI–Falcons og FURIA–FaZe i gruppe A, G2–PARIVISION og MOUZ–TYLOO i gruppe B. 100 Thieves / rain er IKKE med i dette feltet.\n\nGratis på ESLs offisielle Twitch (twitch.tv/eslcs) i Norge — ingen norsk TV-rettighet. Per-kamp tider for katalog-lagene festes nærmere; verify firmer enkeltkampene.",
+    "id": "eee77d69b2a6"
   },
   {
     "sport": "tennis",
