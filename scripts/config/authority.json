@@ -1,8 +1,44 @@
 {
 	"$schema": "./authority.schema.json",
-	"updatedAt": "2026-10-19",
+	"updatedAt": "2026-11-02",
 	"notes": "WP-241 · Autoritetskartet: hvem SKAPER faktumet, per konkurranse på tavla. To kilder per event, fordi produktets to kjernefelt har to ulike skapere: TIDEN settes av arrangøren/ligaen/forbundet, KANALEN av kringkasteren selv. Id-ene peker inn i scripts/config/sources.json (WP-240) — registeret er sannheten om hvilket domene som ER arrangøren, og det er lookalike-vernet: da dette kartet ble seedet sto lookalike-domenet franceletour.com som evidens på en Tour de France-etappe, mens letour.fr (A.S.O., som faktisk lager ruta og starttidene) forekom NULL ganger i hele events.json. Research slår opp konkurransen her og går til autoriteten FØRST (scripts/agents/research.md); verify sjekker kanalen mot kringkasterens egen kilde (scripts/agents/verify.md); scripts/lib/provenance.js migrerer flat evidence til per-faktum-proveniens (WP-242) med det samme kartet. SEEDET 29.07.2026 med hver konkurranse som faktisk sto på tavla den dagen; kanal-valgene speiler .claude/skills/norwegian-rights (prioren) og tavlas verifiserte verdier. AI-VEDLIKEHOLDT som catalog.json: research utvider kartet når en ny konkurranse dekkes — alltid med arrangørens VIRKELIGE domene, registrert i sources.json først.",
 	"competitions": [
+		{
+			"id": "alpine:world-cup",
+			"name": "FIS verdenscup alpint",
+			"sport": "alpine",
+			"match": [
+				"alpint",
+				"alpine ski world cup",
+				"alpine world cup"
+			],
+			"time": {
+				"sourceIds": [
+					"fis",
+					"skiforbundet"
+				],
+				"note": "FIS sanksjonerer verdenscupkalenderen; den lokale arrangøren setter klokka. Norske stopp (Kvitfjell m.fl.) settes av skiforbundet. Ingen statisk fetcher — alpint håndboardes renn-for-renn av research/verify; ESPN dekker ikke vintersport."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "nrk",
+						"platform": "NRK"
+					}
+				],
+				"note": "NRK holder norsk verdenscup-rettighet i alpint (NRK + nrk.no/TV)."
+			},
+			"contract": {
+				"horizonDays": 28,
+				"minUpcoming": 1,
+				"months": [
+					12,
+					1,
+					2
+				],
+				"note": "Dekningskontrakt KUN for den tette kjernesesongen des–feb, der verdenscupen reelt kjører (nær) hver helg i alle grener (teknisk + fart). horizonDays 28 + min 1 tåler jule-/nyttårspausen (~1–2 uker) og måler bare at tavla IKKE er stille i hele 4 uker midt på vinteren — en reell, taus svikt (ingen statisk fetcher fanger alpint, så floor-garantien er kontraktens jobb). Sesongåpningen (Sölden okt / Levi nov) og mars-finalen er BEVISST utenfor months: de ragged sesongkantene har flere ukers hull og fylles på kadens av research + coverage-gaps/coverage-critic (harde frister), ikke av kontrakten — konservativt per skjemaets advarsel om at et falskt brudd koster agent-triage og G2-støy."
+			}
+		},
 		{
 			"id": "athletics:diamond-league",
 			"name": "Wanda Diamond League",
@@ -142,6 +178,41 @@
 					}
 				],
 				"note": "CEV sender egne mesterskap gratis på egen strøm (EuroVolley.tv/YouTube) — bekreft eksakt plattform per event."
+			}
+		},
+		{
+			"id": "biathlon:world-cup",
+			"name": "IBU verdenscup skiskyting",
+			"sport": "biathlon",
+			"match": [
+				"skiskyting",
+				"biathlon"
+			],
+			"time": {
+				"sourceIds": [
+					"ibu",
+					"skiskytterforbundet"
+				],
+				"note": "IBU sanksjonerer verdenscupkalenderen; den lokale arrangøren setter klokka. Norske stopp settes av skiskytterforbundet. Ingen statisk fetcher — skiskyting håndboardes renn-for-renn av research/verify."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "nrk",
+						"platform": "NRK"
+					}
+				],
+				"note": "NRK holder norsk verdenscup-rettighet i skiskyting."
+			},
+			"contract": {
+				"horizonDays": 28,
+				"minUpcoming": 1,
+				"months": [
+					12,
+					1,
+					2
+				],
+				"note": "Samme konservative kjernesesong-floor som alpint: des–feb kjører IBU-verdenscupen (nær) hver helg. horizonDays 28 tåler skiskytingens lengste in-season-hull (julepausen ~3 uker mellom siste des-stopp og Oberhof i tidlig januar) og måler bare at tavla ikke er stille i 4 uker midtvinters. Åpningen (Kontiolahti ~26. nov) og mars-halen er utenfor months — ragged kanter, fylles på kadens av research/coverage-gaps, ikke kontrakten."
 			}
 		},
 		{
@@ -288,6 +359,42 @@
 					}
 				],
 				"note": "Self-streamet gratis på SLCCs egen YouTube (@STLChessClub) + Twitch (stlchessclub) med kommentatorstudio; ingen norsk TV-rettighet (basis primary — arrangøren streamer selv)."
+			}
+		},
+		{
+			"id": "cross-country:world-cup",
+			"name": "FIS verdenscup langrenn",
+			"sport": "cross-country",
+			"match": [
+				"langrenn",
+				"cross-country",
+				"cross country"
+			],
+			"time": {
+				"sourceIds": [
+					"fis",
+					"skiforbundet"
+				],
+				"note": "FIS sanksjonerer verdenscupkalenderen; den lokale arrangøren setter klokka. Norske stopp (Beitostølen-åpningen, Holmenkollen m.fl.) settes av skiforbundet. Ingen statisk fetcher — langrenn håndboardes renn-for-renn av research/verify."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "nrk",
+						"platform": "NRK"
+					}
+				],
+				"note": "NRK holder norsk verdenscup-rettighet i langrenn."
+			},
+			"contract": {
+				"horizonDays": 28,
+				"minUpcoming": 1,
+				"months": [
+					12,
+					1,
+					2
+				],
+				"note": "Samme konservative kjernesesong-floor som alpint/skiskyting: des–feb kjører langrennsverdenscupen (nær) hver helg, Tour de Ski bygger bro over jul/nyttår. horizonDays 28 tåler enhver in-season-pause og måler bare at tavla ikke er stille i 4 uker midtvinters. Ruka-åpningen (~27. nov) + Beitostølen (~20.–22. nov) og mars-halen er utenfor months — ragged kanter, fylles på kadens av research/coverage-gaps, ikke kontrakten."
 			}
 		},
 		{
