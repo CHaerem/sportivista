@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-02T01:10:03.249Z",
-  "gapCount": 6,
+  "generatedAt": "2026-11-02T10:23:25.714Z",
+  "gapCount": 5,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "RBK",
+      "entity": "Ventura",
       "type": "missing",
       "imminent": false,
-      "headline": "RBK melder rasismesak til NFF",
-      "link": "https://www.tv2.no/a/19382744",
-      "feed": "tv2-sport",
+      "headline": "Stor Ventura-opptur i Mexico – inne på viktig liste",
+      "link": "https://www.nrk.no/sport/stor-ventura-opptur-i-mexico-_-inne-pa-viktig-liste-1.18070887",
+      "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-11-02T01:10:00.687Z"
+      "detectedAt": "2026-11-02T10:23:24.524Z"
     },
     {
       "kind": "entity",
@@ -23,40 +23,29 @@
       "link": "https://www.nrk.no/sport/andrea-kimi-antonelli-blir-verdensmester-i-formel-1-1.18070787",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-11-02T01:10:00.687Z"
+      "detectedAt": "2026-11-02T10:23:24.524Z"
     },
     {
       "kind": "entity",
-      "entity": "Tour de France",
+      "entity": "Vuelta a España",
       "type": "missing",
-      "imminent": false,
-      "headline": "'Anything is possible' - Paul Seixas open to racing Giro d’Italia in 2027",
-      "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/anything-is-possible-paul-seixas-open-to-racing-giro-ditalia-in-2027/",
-      "feed": "cyclingnews",
+      "imminent": true,
+      "headline": "Superstjerne med guffen oppdagelse: – Glad for å være i live",
+      "link": "https://www.nrk.no/sport/superstjerne-med-guffen-oppdagelse_-_-glad-for-a-vaere-i-live-1.18070896",
+      "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-11-02T01:10:00.687Z"
+      "detectedAt": "2026-11-02T10:23:24.524Z"
     },
     {
       "kind": "entity",
-      "entity": "Giro d'Italia",
+      "entity": "Vuelta",
       "type": "missing",
-      "imminent": false,
-      "headline": "'It is a big goal' - Femke de Vries targets Grand Tour podium after breakthrough season",
-      "link": "https://www.cyclingnews.com/pro-cycling/womens-cycling/it-is-a-big-goal-femke-de-vries-targets-grand-tour-podium-after-breakthrough-season/",
-      "feed": "cyclingnews",
+      "imminent": true,
+      "headline": "Superstjerne med guffen oppdagelse: – Glad for å være i live",
+      "link": "https://www.nrk.no/sport/superstjerne-med-guffen-oppdagelse_-_-glad-for-a-vaere-i-live-1.18070896",
+      "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-11-02T01:10:00.687Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Giro",
-      "type": "missing",
-      "imminent": false,
-      "headline": "'It is a big goal' - Femke de Vries targets Grand Tour podium after breakthrough season",
-      "link": "https://www.cyclingnews.com/pro-cycling/womens-cycling/it-is-a-big-goal-femke-de-vries-targets-grand-tour-podium-after-breakthrough-season/",
-      "feed": "cyclingnews",
-      "matchCount": 3,
-      "detectedAt": "2026-11-02T01:10:00.687Z"
+      "detectedAt": "2026-11-02T10:23:24.524Z"
     },
     {
       "kind": "tracked-claim",
@@ -68,7 +57,7 @@
       "claimedDate": "2026-11-11T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "alpine-world-cup-2026-27",
-      "detectedAt": "2026-11-02T01:10:01.304Z"
+      "detectedAt": "2026-11-02T10:23:25.509Z"
     }
   ],
   "anomalies": [
@@ -77,7 +66,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-02T01:10:01.330Z"
+      "detectedAt": "2026-11-02T10:23:25.559Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."

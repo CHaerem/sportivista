@@ -337,40 +337,6 @@
     "awayTeamEntityId": "real-sociedad"
   },
   {
-    "sport": "tennis",
-    "tournament": "ATP/WTA Tour",
-    "title": "Swiss Indoors Basel",
-    "time": "2026-10-24T04:00:00.000Z",
-    "endTime": "2026-11-02T04:59:00.000Z",
-    "venue": "TBD",
-    "meta": "ATP/WTA Tour",
-    "norwegian": true,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/tennis",
-        "urlKind": "landing"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [
-      {
-        "name": "Casper Ruud",
-        "entityId": "casper-ruud"
-      }
-    ],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": null,
-    "awayTeam": null,
-    "isFavorite": false,
-    "round": null,
-    "id": "9974e0fb4f74",
-    "summary": "Casper Ruuds neste turnering: Swiss Indoors Basel (ATP 500), en av sesongens siste innendørsturneringer før Rolex Paris Masters. Ruud står på deltakerlisten som seedet (ATP-rangering ~12).\n\nTurneringen går 24. okt–1. nov i St. Jakobshalle; hovedtablået starter tir. 27. okt (man. 26. er kvalifisering), finale søn. 1. nov. Ruud er seedet og venter dermed i hovedtablået fra tir./ons. — eksakt kamptid settes når trekningen og oppsettet er klart.\n\nMedium: turneringsdatoene er bekreftet mot swissindoorsbasel.ch (offisiell) + tennis-db + Switzerland Tourism, Ruuds deltakelse mot arrangørens kunngjøring (bluewin, 22. sep) + deltakerlister (ingen trekning funnet), og norsk visning (TV 2 Play — TV 2 har ATP Tour-rettighetene i Norge t.o.m. 2026, inkl. alle 13 ATP 500) — men draw/eksakt kamptid er ikke publisert ennå (verify firmer når trekningen er klar). CET = UTC+1 (vintertid fra 26. okt)."
-  },
-  {
     "sport": "alpine",
     "tournament": "FIS verdenscup alpint 2026/27",
     "title": "Sölden – storslalåm kvinner",
@@ -4549,6 +4515,54 @@
     "id": "bd5daeb1237d"
   },
   {
+    "sport": "handball",
+    "tournament": "NM-sluttspillet (menn)",
+    "title": "Semifinale: Kolstad – Bergen",
+    "time": "2026-11-11T17:00:00Z",
+    "endTime": "2026-11-11T18:45:00Z",
+    "venue": "Kolstad Arena, Trondheim",
+    "norwegian": true,
+    "homeTeam": "Kolstad Håndball",
+    "awayTeam": "Bergen Håndball",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-02T06:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.handball.no/nyheter/2026/10/nm-finalene-returnerer-til-oslo-spektrum/",
+      "https://www.betexplorer.com/handball/team/kolstad/rTWbl2mC/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "handballforbundet",
+        "url": "https://www.handball.no/nyheter/2026/10/nm-finalene-returnerer-til-oslo-spektrum/",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-02T06:15:00Z",
+        "note": "NHF (autoriteten) bekrefter at NM-semifinalene menn spilles 11.–12. nov og at Kolstad, Bergen, Sandefjord og Elverum er klare, men gir IKKE eksakt kampdag/avspark. Den konkrete paringen Kolstad–Bergen + slot 11. nov kl. 18.00 CET (17:00 UTC) kommer fra flashscore/betexplorer (aggregator). Derav secondary + medium. Verify fester kampdag/tid/arena mot forbundets kampprogram."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-11-02T06:15:00Z",
+        "note": "TV 2 har norsk håndballrettighet (NM-finalene 28. des bekreftet på TV 2 Direkte av NHF; hele NM-sluttspillet er TV 2-pakke). Verify bør bekrefte semifinale-spesifikk kanal."
+      }
+    },
+    "summary": "Kolstad møter Bergen i semifinalen i NM-sluttspillet for menn — Final 4-helgen 11.–12. november. Vinneren går til cupfinalen i Oslo Spektrum 28. desember.\n\nNHF bekrefter at Kolstad, Bergen, Sandefjord og Elverum er klare til semifinalene 11.–12. nov; eksakt kampdag/avspark (11. nov kl. 18.00) og paringen Kolstad–Bergen er foreløpig fra én aggregator → medium, verify fester mot forbundets kampprogram. Norsk visning TV 2 Play.",
+    "id": "9124816807dd",
+    "homeTeamEntityId": "kolstad-handball",
+    "awayTeamEntityId": "bergen-handball"
+  },
+  {
     "sport": "golf",
     "tournament": "PGA Tour",
     "title": "Austin Championship",
@@ -4813,51 +4827,5 @@
     "isFavorite": false,
     "round": null,
     "id": "b79447e949b3"
-  },
-  {
-    "sport": "handball",
-    "tournament": "NM-sluttspillet (menn)",
-    "title": "Semifinale: Kolstad – Bergen",
-    "time": "2026-11-11T17:00:00Z",
-    "endTime": "2026-11-11T18:45:00Z",
-    "venue": "Kolstad Arena, Trondheim",
-    "norwegian": true,
-    "homeTeam": "Kolstad Håndball",
-    "awayTeam": "Bergen Håndball",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-11-02T06:15:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://www.handball.no/nyheter/2026/10/nm-finalene-returnerer-til-oslo-spektrum/",
-      "https://www.betexplorer.com/handball/team/kolstad/rTWbl2mC/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "handballforbundet",
-        "url": "https://www.handball.no/nyheter/2026/10/nm-finalene-returnerer-til-oslo-spektrum/",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-02T06:15:00Z",
-        "note": "NHF (autoriteten) bekrefter at NM-semifinalene menn spilles 11.–12. nov og at Kolstad, Bergen, Sandefjord og Elverum er klare, men gir IKKE eksakt kampdag/avspark. Den konkrete paringen Kolstad–Bergen + slot 11. nov kl. 18.00 CET (17:00 UTC) kommer fra flashscore/betexplorer (aggregator). Derav secondary + medium. Verify fester kampdag/tid/arena mot forbundets kampprogram."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball",
-        "basis": "official",
-        "retrievedAt": "2026-11-02T06:15:00Z",
-        "note": "TV 2 har norsk håndballrettighet (NM-finalene 28. des bekreftet på TV 2 Direkte av NHF; hele NM-sluttspillet er TV 2-pakke). Verify bør bekrefte semifinale-spesifikk kanal."
-      }
-    },
-    "summary": "Kolstad møter Bergen i semifinalen i NM-sluttspillet for menn — Final 4-helgen 11.–12. november. Vinneren går til cupfinalen i Oslo Spektrum 28. desember.\n\nNHF bekrefter at Kolstad, Bergen, Sandefjord og Elverum er klare til semifinalene 11.–12. nov; eksakt kampdag/avspark (11. nov kl. 18.00) og paringen Kolstad–Bergen er foreløpig fra én aggregator → medium, verify fester mot forbundets kampprogram. Norsk visning TV 2 Play.",
-    "id": "25688e6fc8d5"
   }
 ]
