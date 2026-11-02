@@ -1,6 +1,57 @@
 {
-  "generatedAt": "2026-11-02T13:04:16.454Z",
+  "generatedAt": "2026-11-02T22:35:24.905Z",
   "contracts": [
+    {
+      "id": "alpine:world-cup",
+      "name": "FIS verdenscup alpint",
+      "sport": "alpine",
+      "authority": "fis, skiforbundet",
+      "horizonDays": 28,
+      "minUpcoming": 1,
+      "months": [
+        12,
+        1,
+        2
+      ],
+      "note": "Dekningskontrakt KUN for den tette kjernesesongen des–feb, der verdenscupen reelt kjører (nær) hver helg i alle grener (teknisk + fart). horizonDays 28 + min 1 tåler jule-/nyttårspausen (~1–2 uker) og måler bare at tavla IKKE er stille i hele 4 uker midt på vinteren — en reell, taus svikt (ingen statisk fetcher fanger alpint, så floor-garantien er kontraktens jobb). Sesongåpningen (Sölden okt / Levi nov) og mars-finalen er BEVISST utenfor months: de ragged sesongkantene har flere ukers hull og fylles på kadens av research + coverage-gaps/coverage-critic (harde frister), ikke av kontrakten — konservativt per skjemaets advarsel om at et falskt brudd koster agent-triage og G2-støy.",
+      "inSeason": false,
+      "upcoming": 0,
+      "status": "off-season"
+    },
+    {
+      "id": "biathlon:world-cup",
+      "name": "IBU verdenscup skiskyting",
+      "sport": "biathlon",
+      "authority": "ibu, skiskytterforbundet",
+      "horizonDays": 28,
+      "minUpcoming": 1,
+      "months": [
+        12,
+        1,
+        2
+      ],
+      "note": "Samme konservative kjernesesong-floor som alpint: des–feb kjører IBU-verdenscupen (nær) hver helg. horizonDays 28 tåler skiskytingens lengste in-season-hull (julepausen ~3 uker mellom siste des-stopp og Oberhof i tidlig januar) og måler bare at tavla ikke er stille i 4 uker midtvinters. Åpningen (Kontiolahti ~26. nov) og mars-halen er utenfor months — ragged kanter, fylles på kadens av research/coverage-gaps, ikke kontrakten.",
+      "inSeason": false,
+      "upcoming": 0,
+      "status": "off-season"
+    },
+    {
+      "id": "cross-country:world-cup",
+      "name": "FIS verdenscup langrenn",
+      "sport": "cross-country",
+      "authority": "fis, skiforbundet",
+      "horizonDays": 28,
+      "minUpcoming": 1,
+      "months": [
+        12,
+        1,
+        2
+      ],
+      "note": "Samme konservative kjernesesong-floor som alpint/skiskyting: des–feb kjører langrennsverdenscupen (nær) hver helg, Tour de Ski bygger bro over jul/nyttår. horizonDays 28 tåler enhver in-season-pause og måler bare at tavla ikke er stille i 4 uker midtvinters. Ruka-åpningen (~27. nov) + Beitostølen (~20.–22. nov) og mars-halen er utenfor months — ragged kanter, fylles på kadens av research/coverage-gaps, ikke kontrakten.",
+      "inSeason": false,
+      "upcoming": 0,
+      "status": "off-season"
+    },
     {
       "id": "f1:world-championship",
       "name": "Formula 1 World Championship",
@@ -68,7 +119,7 @@
       ],
       "note": "Ukentlige runder (10 kamper) august–mai; 14 d + min 6 tåler landslagspauser og cuphelger.",
       "inSeason": true,
-      "upcoming": 11,
+      "upcoming": 10,
       "status": "met"
     },
     {
