@@ -1,30 +1,95 @@
 {
-  "generatedAt": "2026-11-03T12:36:48.266Z",
-  "gapCount": 2,
+  "generatedAt": "2026-11-03T19:58:11.218Z",
+  "gapCount": 8,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Eliteserien",
-      "type": "imminent",
-      "imminent": true,
-      "headline": "Stabæk-blå mandag i Kongsvinger – sendte Haugesund og Strømsgodset til Eliteserien",
-      "link": "https://www.nrk.no/sport/stabaek-bla-mandag-i-kongsvinger-_-sendte-haugesund-og-stromsgodset-til-eliteserien-1.18071711",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-03T12:36:47.087Z"
-    },
-    {
-      "kind": "tracked-claim",
-      "entity": "FIS Alpine Ski World Cup 2026/27 (neste stopp: Levi/Gurgl, nov)",
-      "group": "tournaments",
-      "sport": "alpine",
+      "entity": "Ingebrigtsen",
       "type": "missing",
       "imminent": false,
-      "claimedDate": "2026-11-11T00:00:00.000Z",
-      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
-      "trackedId": "alpine-world-cup-2026-27",
-      "detectedAt": "2026-11-03T12:36:48.067Z"
+      "headline": "Sa han skulle gi seg som trener: Nå har han fått nok en ny utøver",
+      "link": "https://www.aftenposten.no/sport/i/GrpJpm/sa-han-skulle-gi-seg-som-trener-naa-har-han-faatt-nok-en-ny-utoever?utm_medium=rss",
+      "feed": "aftenposten-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-11-03T19:58:08.562Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Sander Sagosen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Sagosen nærmer seg comeback: – Føler at jeg er klar",
+      "link": "https://www.tv2.no/a/19389624",
+      "feed": "tv2-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-11-03T19:58:08.562Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Sagosen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Sagosen nærmer seg comeback: – Føler at jeg er klar",
+      "link": "https://www.tv2.no/a/19389624",
+      "feed": "tv2-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-11-03T19:58:08.562Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Bodø/Glimt",
+      "type": "imminent",
+      "imminent": true,
+      "headline": "Direkte: Champions League",
+      "link": "https://www.aftenposten.no/sport/i/4OM8Rg/direkte-champions-league?utm_medium=rss",
+      "feed": "aftenposten-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-11-03T19:58:08.562Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Nasjonsligaen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Tøff trekning for Norges fotballkvinner – møter VM-vinneren i nasjonsligaen",
+      "link": "https://www.nrk.no/sport/toff-trekning-for-norges-fotballkvinner-_-moter-vm-vinneren-i-nasjonsligaen-1.18072180",
+      "feed": "nrk-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-11-03T19:58:08.562Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Tour de France",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Giro d'Italia boss says motor-racing circuit sprints will improve safety, but recent Tour de France evidence suggests otherwise",
+      "link": "https://www.cyclingnews.com/pro-cycling/safety/giro-d-italia-boss-says-motor-racing-circuit-sprints-will-improve-safety-but-recent-tour-de-france-evidence-suggests-otherwise/",
+      "feed": "cyclingnews",
+      "matchCount": 2,
+      "detectedAt": "2026-11-03T19:58:08.562Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Giro d'Italia",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Giro d'Italia boss says motor-racing circuit sprints will improve safety, but recent Tour de France evidence suggests otherwise",
+      "link": "https://www.cyclingnews.com/pro-cycling/safety/giro-d-italia-boss-says-motor-racing-circuit-sprints-will-improve-safety-but-recent-tour-de-france-evidence-suggests-otherwise/",
+      "feed": "cyclingnews",
+      "matchCount": 5,
+      "detectedAt": "2026-11-03T19:58:08.562Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Giro",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Giro d'Italia boss says motor-racing circuit sprints will improve safety, but recent Tour de France evidence suggests otherwise",
+      "link": "https://www.cyclingnews.com/pro-cycling/safety/giro-d-italia-boss-says-motor-racing-circuit-sprints-will-improve-safety-but-recent-tour-de-france-evidence-suggests-otherwise/",
+      "feed": "cyclingnews",
+      "matchCount": 5,
+      "detectedAt": "2026-11-03T19:58:08.562Z"
     }
   ],
   "anomalies": [
@@ -33,7 +98,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-03T12:36:48.107Z"
+      "detectedAt": "2026-11-03T19:58:09.394Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."

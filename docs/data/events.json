@@ -1883,13 +1883,8 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/galatasaray-stuttgart-1959912",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/galatasaray-stuttgart-1959912",
-        "urlKind": "deep"
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -1918,13 +1913,8 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/shakhtar-donetsk-sporting-cp-1961207",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/shakhtar-donetsk-sporting-cp-1961207",
-        "urlKind": "deep"
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -2181,12 +2171,12 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/manchester-united-u19-as-roma-u19-1970850",
+        "url": "https://www.tvkampen.com/kamp/manchester-united-roma-1961172",
         "urlKind": "deep"
       },
       {
         "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/manchester-united-u19-as-roma-u19-1970850",
+        "url": "https://www.tvkampen.com/kamp/manchester-united-roma-1961172",
         "urlKind": "deep"
       }
     ],
@@ -2238,6 +2228,28 @@
     "id": "9176f0961570",
     "homeTeamEntityId": "villarreal",
     "awayTeamEntityId": "paris-saint-germain"
+  },
+  {
+    "sport": "tennis",
+    "tournament": "Rolex Paris Masters",
+    "title": "Casper Ruud – Rafael Jodar",
+    "time": "2026-11-03T20:00:00.000Z",
+    "endTime": null,
+    "venue": "Court Central",
+    "meta": "Rolex Paris Masters · Men's Singles",
+    "norwegian": true,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "3f45b4c8872b"
   },
   {
     "sport": "football",
@@ -2644,7 +2656,7 @@
     "endTime": "2026-11-08T20:00:00.000Z",
     "venue": "TBD",
     "meta": "PGA Tour",
-    "norwegian": false,
+    "norwegian": true,
     "streaming": [
       {
         "platform": "HBO Max (Sport)",
@@ -2658,11 +2670,33 @@
       }
     ],
     "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
+    "norwegianPlayers": [
+      {
+        "name": "Kristoffer Ventura",
+        "teeTime": "15:58",
+        "teeTimeUTC": "2026-11-05T14:58:00.000Z",
+        "entityId": "kristoffer-ventura"
+      }
+    ],
+    "totalPlayers": 120,
     "link": null,
     "status": null,
-    "featuredGroups": [],
+    "featuredGroups": [
+      {
+        "player": "Kristoffer Ventura",
+        "teeTime": "15:58",
+        "groupmates": [
+          {
+            "name": "Nicholas Lindheim",
+            "teeTime": "15:58"
+          },
+          {
+            "name": "Jeffrey Kang",
+            "teeTime": "15:58"
+          }
+        ]
+      }
+    ],
     "homeTeam": null,
     "awayTeam": null,
     "isFavorite": false,
@@ -2677,7 +2711,7 @@
     "endTime": "2026-11-08T20:00:00.000Z",
     "venue": "TBD",
     "meta": "DP World Tour",
-    "norwegian": false,
+    "norwegian": true,
     "streaming": [
       {
         "platform": "Viaplay",
@@ -2686,8 +2720,13 @@
       }
     ],
     "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
+    "norwegianPlayers": [
+      {
+        "name": "Kristoffer Reitan",
+        "entityId": "kristoffer-reitan"
+      }
+    ],
+    "totalPlayers": 70,
     "link": null,
     "status": null,
     "featuredGroups": [],
@@ -4353,28 +4392,6 @@
     "awayTeamEntityId": "barcelona"
   },
   {
-    "sport": "football",
-    "tournament": "Copa del Rey",
-    "title": "Tenerife at Badajoz",
-    "time": "2026-11-10T19:00:00.000Z",
-    "endTime": null,
-    "venue": "Estadio Municipal Nuevo Vivero",
-    "meta": "Copa del Rey",
-    "norwegian": false,
-    "streaming": [],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Badajoz",
-    "awayTeam": "Tenerife",
-    "isFavorite": false,
-    "round": null,
-    "id": "d3f10c69d65a"
-  },
-  {
     "sport": "chess",
     "tournament": "Total Chess World Championship 2026",
     "title": "Total Chess VM-pilot – gruppespill (Budapest)",
@@ -4534,6 +4551,48 @@
     "id": "6ef64315f23f"
   },
   {
+    "sport": "alpine",
+    "tournament": "FIS verdenscup alpint 2026/27",
+    "title": "Levi: Slalåm kvinner",
+    "time": "2026-11-14T09:00:00Z",
+    "venue": "Levi, Finland",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-03T19:40:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+      "https://www.telenor.no/streamix/artikler/verdenscup-alpint-streamix/",
+      "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-03T19:40:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing",
+        "basis": "official",
+        "retrievedAt": "2026-11-03T19:40:00Z"
+      }
+    },
+    "summary": "Alpinsesongens slalåmåpning for kvinner i Levi, Finland — det tradisjonelle verdenscupstoppet nord for polarsirkelen som alltid deler ut et reinsdyr til vinneren. Første renn etter storslalåmåpningen i Sölden.\n\nNorsk visning: TV 2 Play — TV 2 sender verdenscupslalåmene fra Levi (uke 46) denne sesongen. Nøyaktig starttid er ikke endelig låst av FIS ennå; verify bør bekrefte mot den offisielle startlista nærmere rennhelgen.",
+    "id": "0241465fd12a",
+    "participants": []
+  },
+  {
     "sport": "football",
     "tournament": "UEFA Nations League",
     "title": "Norge – Wales",
@@ -4580,6 +4639,48 @@
     "id": "0dc1955f2a7c",
     "homeTeamEntityId": "norge",
     "awayTeamEntityId": "wales"
+  },
+  {
+    "sport": "alpine",
+    "tournament": "FIS verdenscup alpint 2026/27",
+    "title": "Levi: Slalåm menn",
+    "time": "2026-11-15T09:00:00Z",
+    "venue": "Levi, Finland",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-03T19:40:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+      "https://www.telenor.no/streamix/artikler/verdenscup-alpint-streamix/",
+      "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-03T19:40:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing",
+        "basis": "official",
+        "retrievedAt": "2026-11-03T19:40:00Z"
+      }
+    },
+    "summary": "Alpinsesongens slalåmåpning for menn i Levi, Finland — det tradisjonelle verdenscupstoppet nord for polarsirkelen, dagen etter kvinnenes renn. Norske slalåmkjørere som Atle Lie McGrath, Timon Haugan og Alexander Steen Olsen hører til favorittsjiktet.\n\nNorsk visning: TV 2 Play — TV 2 sender verdenscupslalåmene fra Levi (uke 46) denne sesongen. Nøyaktig starttid er ikke endelig låst av FIS ennå; verify bør bekrefte mot den offisielle startlista nærmere rennhelgen.",
+    "id": "5b50fa023c74",
+    "participants": []
   },
   {
     "sport": "tennis",
@@ -4737,87 +4838,5 @@
     "isFavorite": false,
     "round": null,
     "id": "b79447e949b3"
-  },
-  {
-    "sport": "alpine",
-    "tournament": "FIS verdenscup alpint 2026/27",
-    "title": "Levi: Slalåm kvinner",
-    "time": "2026-11-14T09:00:00Z",
-    "venue": "Levi, Finland",
-    "norwegian": false,
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-11-03T19:40:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
-      "https://www.telenor.no/streamix/artikler/verdenscup-alpint-streamix/",
-      "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "wikipedia",
-        "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-03T19:40:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing",
-        "basis": "official",
-        "retrievedAt": "2026-11-03T19:40:00Z"
-      }
-    },
-    "summary": "Alpinsesongens slalåmåpning for kvinner i Levi, Finland — det tradisjonelle verdenscupstoppet nord for polarsirkelen som alltid deler ut et reinsdyr til vinneren. Første renn etter storslalåmåpningen i Sölden.\n\nNorsk visning: TV 2 Play — TV 2 sender verdenscupslalåmene fra Levi (uke 46) denne sesongen. Nøyaktig starttid er ikke endelig låst av FIS ennå; verify bør bekrefte mot den offisielle startlista nærmere rennhelgen.",
-    "id": "0241465fd12a"
-  },
-  {
-    "sport": "alpine",
-    "tournament": "FIS verdenscup alpint 2026/27",
-    "title": "Levi: Slalåm menn",
-    "time": "2026-11-15T09:00:00Z",
-    "venue": "Levi, Finland",
-    "norwegian": false,
-    "norwegianPlayers": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-11-03T19:40:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
-      "https://www.telenor.no/streamix/artikler/verdenscup-alpint-streamix/",
-      "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "wikipedia",
-        "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-03T19:40:00Z"
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing",
-        "basis": "official",
-        "retrievedAt": "2026-11-03T19:40:00Z"
-      }
-    },
-    "summary": "Alpinsesongens slalåmåpning for menn i Levi, Finland — det tradisjonelle verdenscupstoppet nord for polarsirkelen, dagen etter kvinnenes renn. Norske slalåmkjørere som Atle Lie McGrath, Timon Haugan og Alexander Steen Olsen hører til favorittsjiktet.\n\nNorsk visning: TV 2 Play — TV 2 sender verdenscupslalåmene fra Levi (uke 46) denne sesongen. Nøyaktig starttid er ikke endelig låst av FIS ennå; verify bør bekrefte mot den offisielle startlista nærmere rennhelgen.",
-    "id": "5b50fa023c74"
   }
 ]
