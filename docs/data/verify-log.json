@@ -1,15 +1,17 @@
 {
-  "runAt": "2026-11-02T13:45:03Z",
+  "runAt": "2026-11-03T12:56:24Z",
   "checked": 5,
   "confirmed": 5,
   "amended": 0,
   "removed": 0,
   "notes": [
-    "5 kandidater i 7-dagers vinduet (alle source=ai-research). Alle bekreftet mot primær-/autoritative kilder; ingen tid/kanal/arena endret.",
-    "Handball Team Esbjerg–Ferencváros (8.11 13:00Z): bekreftet mot EHF (arrangør) — Esbjerg hjemme søn 8 nov 14:00 CET = 13:00 UTC. Manglet verify-felt; satt confirmed. En WebSearch-treff (Sportschau 14.11) var returkampen i Ungarn (MD8), ikke denne — ikke en reell uenighet.",
-    "F1 São Paulo kvalik (7.11 18:00Z): re-bekreftet mot formula1.com + oversteer48 — lør 7 nov 15:00 lokal (BRT UTC-3) = 18:00 UTC, standard-helg uten sprint (ESPN-F1-quirken ikke utslagsgivende her, men dato/tid verifisert direkte mot arrangøren per source-quirks).",
-    "Sint-Truidense–Brann CL MD3 (5.11 20:00Z): re-bekreftet 21:00 CET = 20:00 UTC mot t-online/foresportia/uefa. Viaplay-kanal korrekt (autority.json: ECL Norge Viaplay).",
-    "Strømmen–Lyn OBOS sluttrunde (8.11 12:00Z): re-bekreftet mot FotMob (Strømmen hjemme, 8 nov, 12:00 UTC-forankret = 13:00 CET). TV 2 Play korrekt. Eksakt sluttrunde-avspark kan TV-justeres 30–60 min nær kampdag.",
-    "Ingen nye source-quirks å loggføre; ingen fjerninger."
+    "Verifiserte 5 events i vinduet 3.–10. nov (alle ai-research/confidence-satt). Alle sto allerede verifisert fra 1.–2. nov; near-term-kampene fikk fersk re-sjekk i dag.",
+    "Sint-Truidense–Brann (513e8cb5396d, CL MD3): BEKREFTET mot UEFAs Brann-kampside + t-online + sportscafe + futboltotal — tor. 5. nov 21:00 CET = 20:00 UTC, Daio Wasabi Stayen. Viaplay (CL-rettigheter Norge). Board korrekt, verifiedAt oppdatert.",
+    "São Paulo GP kvalifisering (c2dd6b9c5607): BEKREFTET mot formula1.com (arrangør) — kvalik lør. 7. nov 18:00 UTC (15:00 BRT), løp søn. 8. nov 17:00 UTC, INGEN sprint denne helgen. Board korrekt. (source-quirks: brukte f1.com, ikke ESPN-feeden.)",
+    "Team Esbjerg–Ferencváros kvinnenes EHF CL (5d56c46d2e5f): BEKREFTET mot EHF (arrangør) — søn. 8. nov 14:00 CET = 13:00 UTC, hjemme i Esbjerg, gruppe A. Board korrekt. Nora Mørk står som norwegianPlayer; kampen er ikke i gang ennå så WP-95-eksistenssjekk ikke utløst.",
+    "IEM Beijing 2026 (eee77d69b2a6, in-progress 2.–8. nov): felt BEKREFTET mot esports.gg + Liquipedia — Vitality/Spirit står korrekt UTE av board-deltagerlisten; NAVI/Falcons/FaZe/MOUZ/G2/FURIA/MongolZ/Liquid/Heroic i feltet. 100 Thieves/rain ikke med. Ingen per-kamp board-events å amendere; verify fester enkeltkamper nærmere.",
+    "Strømmen–Lyn (eb53e7dfe3bb, OBOS r30, søn. 8. nov 12:00 UTC): fant INGEN fersk uavhengig kilde via søk i dag (terminlistene for nov er ikke indeksert bredt), men fotball.no (NFF primær) + FotMob holdt ved verifiseringen 2. nov og ingenting motsier den. Beholdt confirmed, verifiedAt uendret (2. nov).",
+    "Golf/tennis i vinduet (World Wide Technology Championship, Abu Dhabi, Rolex Paris Masters, WTA Finals, Bybit Stockholm Open, Casper Ruud–Jodar) er espn-kilde uten confidence → utenfor verify-scope. Paris Masters er in-progress men har ingen navngitte norwegianPlayers på board-eventet, så WP-95-eksistenssjekk ikke utløst.",
+    "Ingen skills oppdatert — ingen nye strukturelle kilde-quirks oppdaget denne kjøringen."
   ]
 }
