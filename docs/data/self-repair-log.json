@@ -1,16 +1,14 @@
 {
-  "runAt": "2026-11-03T14:34:00Z",
-  "action": "opened-pr",
-  "pr": "https://github.com/CHaerem/sportivista/pull/475",
-  "diagnosed": "visual-qa and ui-fix agents fail on every run: GitHub's ubuntu-latest runner moved to Ubuntu 26.04, and the pinned Playwright 1.58.2 (from ^1.50.0) does not support ubuntu26.04-x64, so `npx playwright install --with-deps chromium` aborts (exit 1). Reproduced locally on Ubuntu 26.04.1 LTS. Not quota-related (usage green, week 2%).",
-  "fixed": [
-    "Bumped playwright ^1.50.0 -> ^1.64.1 in package.json + package-lock.json (latest stable, supports Ubuntu 26.04)"
-  ],
-  "autoMergeEligible": true,
+  "runAt": "2026-11-04T13:10:00Z",
+  "action": "abandoned",
+  "pr": null,
+  "diagnosed": "Two real breakages remain, both fixable ONLY in .github/workflows/** (a protected, human-authored path the CI protect-automation hook blocks an unattended agent from editing — no non-protected fix exists). (1) Research escalation path is dead: every workflow_dispatch research run (scout/coverage-critic escalation via gh workflow run, actor=github-actions[bot]) fails with 'Workflow initiated by non-human actor: github-actions (type: Bot). Add bot to allowed_bots list or use *' — scheduled runs are unaffected and green. (2) visual-qa run 41666730682 (2026-11-03) failed with 'Reached maximum number of turns (40)'. The earlier ubuntu-26.04 Playwright breakage was ALREADY fixed by the prior run (PR #475, merged 2026-11-03: playwright -> ^1.64.1); the install step now succeeds on Ubuntu 26.04 and ui-fix is green again (11-03T16:53 success).",
+  "fixed": [],
+  "autoMergeEligible": false,
   "notes": [
-    "Proof: after the bump, `npx playwright install --with-deps chromium` installs cleanly, `node scripts/screenshot.js` renders the dashboard, and full npm test suite is green (1546 tests).",
-    "Fix confined to package.json + package-lock.json — not a protected path, so auto-merge eligible once the test gate passes.",
-    "Out of scope / left for review: the research agent has a separate unrelated failure (allowed_bots / 'Workflow initiated by non-human actor' rejection in claude-code-action) which lives in a protected .github/workflows/** path.",
-    "publish-freshness.json status=fresh (lag 0h); no stale-published-copy issue this run."
+    "Local health is clean: npm test green (1546 tests, 88 files); node scripts/validate-events.js = 0 errors (only content warnings owned by research/verify). publish-freshness.json status=fresh (lag 0h). usage-state.json green (week 4%) — failures are NOT quota-related. build-alert.json ok (127 events).",
+    "OWNER FIX #1 (research escalation, protected .github/workflows/research-agent.yml): add an allowed_bots input to each 'anthropics/claude-code-action@v1' step's with: block so bot-initiated escalations are accepted, e.g. 'allowed_bots: \"*\"' (or the specific github-actions bot). Without it the Watchtower->research escalation (scout/coverage-critic -f tier=deep) can never run; only the 4-hourly scheduled runs work. Last failed dispatch: run 41304555945 (2026-11-01T12:02Z). All schedule-triggered research runs since then are green, so this is latent until the next escalation fires.",
+    "OWNER FIX #2 (visual-qa max_turns, protected .github/workflows/visual-qa-agent.yml): single post-Playwright-fix occurrence (run 41666730682, 2026-11-03) hit the 40-turn cap. Not yet a confirmed recurring pattern — watch the next 2-3 daily runs. If it recurs, raise max_turns in the claude-code-action step; if it is a one-off (agent over-explored once), no change needed.",
+    "No PR opened: every remaining fix is a protected-path (.github/workflows/**) change that must be authored by a human — the protect-automation.js PreToolUse hook blocks an unattended CI agent from writing these files, and there is no equivalent fix in a non-protected path (Playwright 1.64.1 is already the latest stable; the bot-actor attribution and allowed_bots input both live in the workflow). Branch created and deleted unused; working tree clean."
   ]
 }
