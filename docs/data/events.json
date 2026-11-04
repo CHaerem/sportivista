@@ -135,57 +135,6 @@
     ]
   },
   {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen",
-    "title": "Sandefjord – Runar Elite",
-    "time": "2026-10-21T16:15:00Z",
-    "endTime": null,
-    "venue": null,
-    "norwegian": true,
-    "homeTeam": "Sandefjord",
-    "awayTeam": "Runar Elite",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-19T05:50:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/",
-      "https://www.flashscore.mobi/handball/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "flashscore",
-        "url": "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/",
-        "basis": "secondary",
-        "retrievedAt": "2026-10-19T05:50:00Z",
-        "note": "To Livesport-eide flater (betexplorer, fast UTC+1-visning + flashscore.mobi, fast UTC+2-visning — SAMME eier, så dette er korroborasjon på visningsnivå, ikke uavhengige kilder) enige om samme instant: ons. 21. okt 18:15 CEST = 16:15 UTC. handball.no (tid-autoriteten) var JS-rendret/uleselig → medium; verify fester mot forbundets terminliste. Lokalt Sandefjord-derby: Sandefjord TIF hjemme mot Runar."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball",
-        "basis": "official",
-        "retrievedAt": "2026-10-19T05:50:00Z"
-      }
-    },
-    "summary": "Sandefjord-derbyet Sandefjord – Runar Elite åpner Elkjøp-ligaens runde onsdag 21. oktober kl. 18.15 (menn).\n\nTid fra to uavhengige aggregatorer (enige); handball.no-terminlisten var uleselig for direkte henting, så verify fester mot forbundet. Norsk visning TV 2 Play (alle Elkjøp-liga-kamper).",
-    "id": "89a10ce2f1c9",
-    "homeTeamEntityId": "sandefjord-handball",
-    "verifiedAt": "2026-10-19T11:05:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
-    ]
-  },
-  {
     "sport": "football",
     "tournament": "UEFA Conference League",
     "title": "Kauno Žalgiris – Brann",
@@ -348,8 +297,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -549,8 +498,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -4327,8 +4276,8 @@
     "norwegianPlayers": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -4417,8 +4366,8 @@
     "norwegianPlayers": [],
     "streaming": [
       {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
         "urlKind": "landing"
       }
     ],
