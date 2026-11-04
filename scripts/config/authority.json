@@ -1,6 +1,6 @@
 {
 	"$schema": "./authority.schema.json",
-	"updatedAt": "2026-11-02",
+	"updatedAt": "2026-11-04",
 	"notes": "WP-241 · Autoritetskartet: hvem SKAPER faktumet, per konkurranse på tavla. To kilder per event, fordi produktets to kjernefelt har to ulike skapere: TIDEN settes av arrangøren/ligaen/forbundet, KANALEN av kringkasteren selv. Id-ene peker inn i scripts/config/sources.json (WP-240) — registeret er sannheten om hvilket domene som ER arrangøren, og det er lookalike-vernet: da dette kartet ble seedet sto lookalike-domenet franceletour.com som evidens på en Tour de France-etappe, mens letour.fr (A.S.O., som faktisk lager ruta og starttidene) forekom NULL ganger i hele events.json. Research slår opp konkurransen her og går til autoriteten FØRST (scripts/agents/research.md); verify sjekker kanalen mot kringkasterens egen kilde (scripts/agents/verify.md); scripts/lib/provenance.js migrerer flat evidence til per-faktum-proveniens (WP-242) med det samme kartet. SEEDET 29.07.2026 med hver konkurranse som faktisk sto på tavla den dagen; kanal-valgene speiler .claude/skills/norwegian-rights (prioren) og tavlas verifiserte verdier. AI-VEDLIKEHOLDT som catalog.json: research utvider kartet når en ny konkurranse dekkes — alltid med arrangørens VIRKELIGE domene, registrert i sources.json først.",
 	"competitions": [
 		{
@@ -1188,6 +1188,38 @@
 					}
 				],
 				"note": "Delt Viaplay/TV 2-avtale (EHF-kunngjøring, fact-check 2026-10-19) — list begge til kampens kanal er bekreftet."
+			}
+		},
+		{
+			"id": "handball:ehf-euro",
+			"name": "EHF EURO (håndball-EM, menn + kvinner)",
+			"sport": "handball",
+			"match": [
+				"ehf euro",
+				"håndball-em",
+				"handball-em",
+				"european handball championship"
+			],
+			"time": {
+				"sourceIds": [
+					"eurohandball"
+				],
+				"note": "EHF (eurohandball.com / ehfeuro.eurohandball.com) arrangerer EM-sluttrunden og publiserer kamptidene. NB: EHF-sidene merker tid-kolonnen «CET» hele året og oppgir avspark i LOKAL tid — EM 2026 spilles i Polen/Romania/Tsjekkia/Slovakia/Tyrkia; romanske/tyrkiske spillesteder er CET+1 lokalt (f.eks. gruppe B i Cluj-Napoca: 18:30/21:00 lokal = 17:30/20:00 CET). Konverter eksplisitt mot verts-tidssonen."
+			},
+			"channel": {
+				"options": [
+					{
+						"sourceId": "viaplay",
+						"platform": "Viaplay",
+						"note": "handball.no + Allente: fra desember 2026 er EM/VM (kvinner + menn) DELT mellom TV3/Viaplay og TV 2/TV 2 Play i Norge. Norges egne kamper har historisk ligget på V Sport/Viaplay — verify fester per kamp når sendeplanen publiseres."
+					},
+					{
+						"sourceId": "tv2",
+						"platform": "TV 2 Play",
+						"note": "Delt-avtalen (handball.no/Allente): deler av EM/VM 2026 ligger hos TV 2/TV 2 Play — eksakt kamp-for-kamp-split ikke publisert ennå; verify firmer."
+					}
+				],
+				"note": "Delt TV3/Viaplay ↔ TV 2/TV 2 Play fra des. 2026 (handball.no + allente.no, fact-check 2026-11-04) — list begge til kampens kanal er bekreftet."
 			}
 		},
 		{
