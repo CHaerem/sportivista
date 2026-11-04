@@ -1,16 +1,16 @@
 {
-  "checkedAt": "2026-11-01T14:42:20.000Z",
+  "checkedAt": "2026-11-04T15:55:33Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
-    "Single quiet, day-grouped agenda column maintained at all three widths — no dashboard grid, no competing panels; at 900px the agenda column visibly caps well short of the viewport with empty margin either side, matching DESIGN.md's max-640px rule.",
-    "No horizontal overflow or edge-clipped rows spotted at 375px or 393px across the captured agenda (today through roughly 8. november) — the narrowest width, most prone to breaking, held up.",
-    "Match names render as complete two-sided fixtures with no visible truncation/ellipsis in the rows that were legible — e.g. 'Brann – Molde', '1. FC Union Berlin – Cologne', 'Liverpool – Arsenal', 'Eintracht Frankfurt – Hamburg SV', 'Bayern München – Borussia Dortmund' — including Norwegian club names.",
-    "Header (wordmark, date line, search/filter + theme controls), day headings ('I DAG', 'I MORGEN', dated ranges), and the footer/'Dette dekker vi' + install-hint block are all present and aligned at every width.",
-    "Team crests/flags render as small filled icons in the rows that were legible, not broken-image placeholders or empty boxes.",
-    "Must-see accent dots appear on a minority of rows only, not on every row — consistent with the 'gentlest possible emphasis' rule.",
-    "At 393px and 900px the floating 'Assistent' (sparkles) button sits over a mid-agenda row, not the last agenda row or the footer — matches the DESIGN.md-sanctioned floating-button idiom (WP-146 variant D); correctly not flagged as a bug. At 900px it also sits clear of the capped-width column's empty margin in places, which is likewise sanctioned.",
-    "Limitation: the 375px and 393px full-page captures are very tall (~22-24k px at deviceScaleFactor 2) and were viewed as single downscaled images, so fine per-character legibility (confirming every individual channel label, or scrutinizing every crest) could not be verified with full confidence beyond the layout-level checks above. Within what was legible, no channel resembling a foreign broadcaster (FOX/ESPN/Sky) was spotted, and no row appeared to be missing a channel/'–' slot or a round label where one would be expected."
+    "Single quiet column, day-grouped agenda (I DAG / I MORGEN / FREDAG / LØRDAG / SØNDAG / TIRSDAG) renders consistently at all three widths with no horizontal scroll or clipped edges.",
+    "Team/fixture names read fully, not truncated — e.g. 'Borussia Dortmund - Real Betis', 'PSV Eindhoven - Club Brugge', 'SC Paderborn 07 - Eintracht Frankfurt' all fit on one line including Norwegian-relevant entries like 'Viking - Sabah', 'Rosenborg - Start', 'Sandefjord - Molde', 'Fredrikstad - Brann'.",
+    "Channel column consistently shows Norwegian rights (TV 2 Play, Viaplay) — no foreign broadcaster (ESPN/Sky/FOX) observed on any row.",
+    "Header, 'Uke/Nyheter' toggle, day headings, and footer (Neste opp list, AI-budsjett/last-updated line) are intact and aligned at all widths.",
+    "At 900px the floating 'Assistent' button rests over a mid-agenda row (around 'Ubeda - CD Sabadell') — this is the sanctioned floating-button pattern per DESIGN.md § Hjelperen, not a finding; it does not cover the last agenda row or the footer.",
+    "Multi-day bracket events (Rolex Paris Masters, World Wide Technology Championship, Abu Dhabi Aldar Championship) show their date range header correctly instead of a single day.",
+    "Flags/crests next to team names appear to render as small icons at all widths with no visible broken-image placeholders, though fine detail is hard to confirm at the screenshot's compressed resolution.",
+    "Could not fully verify sub-pixel truncation or icon rendering fidelity beyond what is visible in the full-page screenshots at this resolution."
   ]
 }
