@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2026-11-05T01:17:17.745Z",
-  "gapCount": 2,
+  "generatedAt": "2026-11-05T01:56:10.500Z",
+  "gapCount": 4,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Man City",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Haaland scores winner as Man City beat Leipzig",
+      "link": "https://www.bbc.co.uk/sport/football/videos/ckz65ey5q29zo?at_medium=RSS&amp;at_campaign=rss",
+      "feed": "bbc-football",
+      "matchCount": 1,
+      "detectedAt": "2026-11-05T01:56:09.548Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "UEFA Champions League",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Haaland scores winner as Man City beat Leipzig",
+      "link": "https://www.bbc.co.uk/sport/football/videos/ckz65ey5q29zo?at_medium=RSS&amp;at_campaign=rss",
+      "feed": "bbc-football",
+      "matchCount": 1,
+      "detectedAt": "2026-11-05T01:56:09.548Z"
+    },
     {
       "kind": "entity",
       "entity": "Mesterligaen",
@@ -12,7 +34,7 @@
       "link": "https://www.nrk.no/sport/como-jubler-videre_-vant-9-1-1.18074081",
       "feed": "nrk-sport",
       "matchCount": 2,
-      "detectedAt": "2026-11-05T01:17:16.806Z"
+      "detectedAt": "2026-11-05T01:56:09.548Z"
     },
     {
       "kind": "entity",
@@ -23,7 +45,7 @@
       "link": "https://www.nrk.no/sport/stjerneforfall-for-danmark-for-skjebnemote-med-norge-_-tidligere-glimt-helt-vraket-1.18073525",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-11-05T01:17:16.806Z"
+      "detectedAt": "2026-11-05T01:56:09.548Z"
     }
   ],
   "anomalies": [
@@ -32,7 +54,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-05T01:17:17.560Z"
+      "detectedAt": "2026-11-05T01:56:10.308Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
