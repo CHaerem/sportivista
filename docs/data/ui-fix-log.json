@@ -1,11 +1,11 @@
 {
-	"runAt": "2026-11-04T16:00:00Z",
+	"runAt": "2026-11-05T00:30:00Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"visual-qa-log.json verdict is 'pass' with zero findings (checkedAt 2026-11-04T15:55:33Z) — no high/medium rendering issues to fix.",
-		"Latest review confirmed: single quiet column, day-grouped agenda renders cleanly at 375/393/900px; team/fixture names read fully with no truncation; channel column shows only Norwegian rights; header/toggle/day headings/footer intact; multi-day bracket events show date ranges correctly.",
+		"visual-qa-log.json verdict is 'pass' with zero findings (checkedAt 2026-11-05T00:00:00Z) — no high/medium rendering issues to fix.",
+		"Latest review confirmed at 375/393/900px: single quiet column, no horizontal overflow, nothing clipped; team/fixture names read fully (no truncation); channel column shows only Norwegian rights (no FOX/ESPN/Sky); flags/crests render as icons with no broken-image boxes; day headers, header and footer intact; must-see accent dots used sparingly.",
 		"No open ui-autofix PR; nothing stacked. Exiting cleanly without a branch or PR."
 	]
 }
