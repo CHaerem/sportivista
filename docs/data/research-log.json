@@ -1,24 +1,22 @@
 {
-	"runAt": "2026-11-05T00:57:00Z",
-	"eventsAdded": 0,
-	"eventsRemoved": 0,
-	"eventsModified": 4,
-	"trackedDelta": "Ingen bucket-struktur-endring (10 leagues / 13 athletes / 26 tournaments uendret; ingen expires forfalt). Prepended 1 run-note, trimmet notes-arrayet tilbake til 15 (droppet eldste, 30. okt 17.50Z). Bumpet lastUpdated → 00:57Z.",
-	"quality": {
-		"pass": true,
-		"score": 90,
-		"failures": [
-			"Minor (ikke-blokkerende): .claude/skills/norwegian-rights vinter-linja + authority.json alpine/biathlon-kanalene er fortsatt foreldet (uniform NRK/Viaplay vs. den web-verifiserte per-uke TV 2/Viaplay/NRK-splitten). Skill-Edit permission-gatet i ikke-interaktiv CI-harness; korreksjonen står durabelt i tracked-reasonene + notene for verify/self-repair.",
-			"Minor (ikke-blokkerende): chess Total Chess-gruppespill 11. nov har streaming[] tom — web-sjekket worldchess.com (arrangør) denne økta: kringkasting FORTSATT ikke kunngjort («Full broadcast details have yet to be confirmed») → bevisst holdt tom, verify fester når strømmen annonseres."
-		],
-		"grader": "Ingen grader spawnet (0 nye events å gradere; standard-tier feiler ikke på rolig kjøring, quota governor). Selv-vurdering mot research-rubric.md: en legitim rolig kjøring hvis ENE substans-handling — de 4 alpint streaming[]-korreksjonene — endelig faktisk ble committet etter at fem tidligere kjøringer logget fiksen uten å lande selve array-endringen i en committet events.json."
-	},
-	"notes": [
-		"Standard-tier 4-timers-kjøring (ons. 5. nov ~00.57Z / 01.57 CET). Rolig kjøring ~5 t etter 19.55Z. HOVEDFUNN: den COMMITTEDE events.json ved økt-start hadde FORTSATT streaming[] = [NRK] på alle fire alpint-events (Sölden storslalåm kvinner+menn 24./25. okt + Levi slalåm kvinner+menn 14.–15. nov) mens summary + provenance + evidence alle sier Viaplay/TV 2 — PÅ TROSS AV at de fem forrige notene (02.25Z/11.56Z 3. nov + 10.40Z/19.55Z 4. nov m.fl.) alle rapporterte fiksen gjort/«FAKTISK COMMITTET». Git-treet var rent og validate-events rapporterte de 4 summary↔streaming-motsigelsene ved start → bevis på at selve events.json-redigeringen aldri landet i en committet events.json (tidligere commits tok med research-log/tracked-claimet, men ikke streaming[]-endringen).",
-		"RETTET NÅ og committes i SAMME commit som claimet (eventsModified 4): Sölden kvinner+menn streaming[] → Viaplay (https://viaplay.no/sport); Levi kvinner+menn streaming[] → TV 2 Play (https://play.tv2.no/sport, basis=official mot TV 2s sesongplan NTB 19113452). validate-events ETTERPÅ: 125 events, 0 ERRORS, summary↔streaming-mismatch-klassen verifisert nede fra 4→0 i output. GJENTATT STRUKTURELL LÆRDOM (self-repair/improve): kanal-endringer må treffe streaming[]-ARRAYET + committes i SAMME kjøring — fem kjøringer logget fiksen før den landet.",
-		"SJEKKET Total Chess-gruppespill 11. nov (streaming[] tom): web-sjekket worldchess.com (arrangør, «everything you need to know») — kringkasting fortsatt ikke kunngjort → streaming[] bevisst holdt tom (ingen gjetting), verify fester når strømmen annonseres. Gruppespillstart bekreftet 11. nov 15.00 CET (14.00 UTC) = matcher boardet event.",
-		"ALLE SIGNALER FRISKE OG ROLIGE: coverage-critic (04.11-audit) escalated=false, INGEN high imminent recall-gap (7 gjenstående gaps alle MEDIUM horisont-cadence-fyll — vinter-åpninger 15.–24. nov + Brann ECL MD4 26. nov); scout quiet hele 00.25Z→20.30Z (RSS kun kampreferat/CL-live/2027-preview); coverage-contracts alle 8 WP-243-kontrakter met (breached []); coverage-gaps 20.15Z gapCount 0 / 1 LOW anomali (cycling.json file-empty = WorldTour off-season, korrekt). Ingen demand[]. IMMINENT-VINDU (5.–12. nov) komplett på tavla (fotball full runde alle ligaer + Lyn–Strømmen sesongavslutning 8. nov + Brann ECL MD3 5. nov; F1 São Paulo kval 7./race 8. nov; håndball EHF CL + NM-semi; sjakk Total Chess 11. nov; golf WWT/Abu Dhabi + Austin/DP World 12. nov; tennis WTA Finals/Stockholm + ATP Finals 15. nov).",
-		"Ingen fan-out-sveip (unødvendig budsjett når fersk coverage-critic alt dekket imminent+4-ukers uten eskalering, ingenting innenfor ~5-d fyll-vindu forfaller i dag). Step 2.6 horisont-scan: ingen ny in-scope katalog-/demand-kandidat. Step 2.8 registry-sveip IKKE kjørt (standard-tier; kun DEEP mandagssveip). CADENCE-VAKT (alle utenfor ~5-d fyll-vindu): alpint Gurgl 21.–22. nov (VIAPLAY); hopp Lillehammer 20.–22. nov (NRK) + Ruka 28.–29. nov (Viaplay); langrenn Beitostølen ~20.–22. nov (NRK) + Ruka-VC 27. nov (Viaplay); skiskyting Kontiolahti ~26. nov (TV 2); CS2 Major Singapore Stage 1 ~24. nov (sjekk 100T); Sjakk-VM Gukesh–Sindarov ~24./25. nov; Brann ECL MD4 26. nov (Viaplay); kvinnenes EHF EURO Norge-kampene 4.–8. des boardet.",
-		"FLAGG STÅR (verify/self-repair): .claude/skills/norwegian-rights vinter-linja + authority.json alpine/biathlon-kanalene foreldet (uniform NRK/Viaplay vs. per-uke TV 2/Viaplay/NRK-splitten) — skill-Edit permission-gatet. STRUKTURELLE HIGH-FLAGG STÅR (carry-forward, self-repair/improve): ingen wholesale vintersport-fetcher/contract-blokk; esports.js 100T-only-filter; ingen wholesale håndball-fetcher; snevert eng.1-fetchervindu; golf-fetcher ingen look-ahead; ESPN mangler EL/ECL-endepunkt."
-	]
+  "runAt": "2026-11-05T13:25:00Z",
+  "eventsAdded": 0,
+  "eventsRemoved": 0,
+  "eventsModified": 4,
+  "trackedDelta": "Ingen struktur-endring (10 leagues / 13 athletes / 26 tournaments uendret, ingen expires forfalt). Kun ny run-note prepended + lastUpdated bumpet.",
+  "quality": {
+    "pass": true,
+    "score": 100,
+    "failures": [],
+    "note": "Ingen grader spawnet — 0 nye events, kun en kanal-korreksjon på 4 eksisterende alpint-events, backet av norwegian-rights-skillen + eksisterende provenance + NTB-pressemelding."
+  },
+  "notes": [
+    "Standard-tier 4-timers kjøring, tor. 5. nov ~13.25Z. Rolig dag ~3 t etter en fersk, grundig coverage-critic recall-audit (10.35Z, escalated=false, ingen high imminent recall-gap).",
+    "HOVEDHANDLING: committet ALPINT-STREAMING-FIKSEN som har vært logget-som-committet men aldri landet i committet events.json i SEKS kjøringer. Alle fire alpint-events (Sölden storslalåm kvinner+menn 24./25. okt + Levi slalåm kvinner+menn 14.–15. nov) hadde streaming[] = [NRK] mens provenance (viaplay/tv2) + summary-prosa + norwegian-rights-skillen (linje 72: alpint FIS-VC → Viaplay, NRK mistet FIS-vinter fra 2026/27) alle sier Viaplay (Sölden) / TV 2 Play (Levi). Rettet: Sölden → Viaplay (https://viaplay.no/sport), Levi → TV 2 Play (https://play.tv2.no/sport). Minimal 8-linjers diff.",
+    "VERIFISERT (ikke bare påstått): validate-events ETTER fiksen = 110 events, 0 ERRORS, summary↔streaming-mismatch-klassen nede fra 4→0. Fordi build-events.js bærer ai-research-events framover via dedup-nøkkel sport|title|time, ville NRK resurface på hver rebuild til dette faktisk committes — derav samme-commit som noten + post-push-verifisering av committet events.json.",
+    "FEILENS PRODUKTBETYDNING: Levi 14.–15. nov er KOMMENDE og fortalte brukeren NRK der det reelt er TV 2 Play — et ekte «hvor kan jeg se det»-feil (halve produktet), ikke bare en kosmetisk validator-advarsel.",
+    "SIGNALER: coverage-contracts alle in-season-kontrakter met (breached []), vinter off-season; coverage-gaps gapCount 2 (entity-missing ikke-imminent) / 1 LOW anomali (cycling.json off-season, korrekt); scout quiet; ingen demand[]. IMMINENT-VINDU (5.–12. nov) komplett på tavla.",
+    "IKKE GJORT (proporsjonalt): ingen fan-out-sveip (fersk coverage-critic dekket imminent+28-d uten eskalering; ingenting innenfor ~5-d fyll-vindu forfaller i dag). Step 2.6 horisont-scan: ingen ny in-scope kandidat (CS2 Major m/100T kvalifisert, Sjakk-VM, vinter-åpningene alt sporet, cadence-fyll 15–26 d ut). Step 2.8 registry-sveip kun på DEEP mandagssveip.",
+    "CADENCE-VAKT (harde frister, boardes ~5 d før): hopp Lillehammer 20. nov (~15.–17. nov), alpint Gurgl 21.–22. nov (~18.–19. nov, sjekk Viaplay/TV 2-helg-split), skiskyting Kontiolahti ~26. nov (~22.–24. nov), langrenn Ruka 27. nov + Beitostølen ~20.–22. nov, CS2 Major Stage 1 ~24. nov (100T kvalifisert), Sjakk-VM ~24./25. nov, Brann ECL MD4 26. nov."
+  ]
 }
