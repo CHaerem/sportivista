@@ -1,16 +1,14 @@
 {
-  "runAt": "2026-11-04T13:11:10Z",
-  "checked": 5,
-  "confirmed": 5,
+  "runAt": "2026-11-05T13:23:27Z",
+  "checked": 7,
+  "confirmed": 6,
   "amended": 0,
   "removed": 0,
   "notes": [
-    "Re-verified all 5 near-term AI-research events in the next 7 days; all confirmed, no amendments.",
-    "Sint-Truiden–Brann (UCL, 5. nov 20:00 UTC): 21:00 CET belgisk avspark = 20:00 UTC bekreftet (uefa.com + t-online.de). Viaplay korrekt (Conference League → Viaplay [solid], norwegian-rights).",
-    "São Paulo GP kvalifisering (7. nov 18:00 UTC): formula1.com-siden rendret i UTC — race 17:00 UTC = 14:00 Brasília (UTC-3) bekrefter tolkningen, kvalik 18:00 UTC stemmer. Sprint-helg: kvalik lør. Viaplay (F1 alle økter) korrekt.",
-    "Strømmen–Lyn (OBOS, 8. nov 12:00 UTC): fotmob + starting11 begge 12:00 UTC (=13:00 CET). voetbalwedden ga 16:00 men feilmerket turneringen (\"Norway 2\") = utligger, forkastet. TV 2 Play korrekt.",
-    "Team Esbjerg–Ferencváros (EHF CL kvinner, 8. nov 13:00 UTC): 14:00 CET MD7 gruppe A bekreftet (eurohandball.com + sportschau.de). NB: Sportschau viste Ferencváros-HJEMME-returen til 14.11 — det er en ANNEN kamp (motsatt leg), ikke en datokonflikt. TV 2 Play + Viaplay delt (sportcal.com: nordisk EHF-avtale t.o.m. 2029/30, delt Viaplay/TV 2 i Norge).",
-    "IEM Beijing 2026 (esports, pågår 2.–8. nov): turneringsvindu bekreftet pågående (gruppespill→sluttspill 6.–8.), ESLCS Twitch korrekt.",
-    "Ville lagt til Handball-seksjon i norwegian-rights-skillen (EHF CL kvinner/herrer → delt Viaplay + TV 2, t.o.m. 2029/30), men Edit-verktøyet ble nektet med den bokstavelige feilen: \"Claude requested permissions to write to .../.claude/skills/norwegian-rights/SKILL.md, but you haven't granted it yet.\" Funnet er i stedet logget i calibration-ledger.jsonl (sportcal.com, handball, streaming, agreed)."
+    "F1 São Paulo GP kvalifisering (7. nov 18:00 UTC): RE-BEKREFTET mot formula1.com (primær) + racingnews365 + oversteer48 — kvali lør. 15:00 BRT = 18:00 UTC, Interlagos er UTEN sprint i 2026 (droppet fra sprintkalenderen), så ett enkelt kvali-slot. Tavlas «UTEN sprint»-påstand korrekt.",
+    "Chess Total Chess VM-pilot (Budapest, gruppespill fra 11. nov 14:00 UTC): BEKREFTET eksistens + dato mot worldchess.com (arrangør) + fide.com + chessbase — gruppespill fra 11. nov daglig 15:00 CET. Norsk/offisiell kringkasting er fortsatt IKKE kunngjort av arrangøren, så streaming forblir tomt (ærlig); confidence beholdt medium. Fylles når worldchess melder plattform.",
+    "IEM Beijing 2026 (esports, pågår 2.–8. nov): RE-BEKREFTET turneringsvindu mot strafe.com + esports.gg — sluttspill 6.–8. nov, grand final søn. 8. nov. Per-kamp bracket for katalog-lagene ikke publisert i tide; vinduseventet står.",
+    "Sint-Truidense–Brann (i dag 5. nov), Strømmen–Lyn (8. nov) og Team Esbjerg–Ferencváros (8. nov): allerede bekreftet 2. nov med provenance intakt og i vindu; ikke re-hentet denne kjøringen (nær-tids, uendret).",
+    "Handball NM-semifinale Kolstad–Bergen (11. nov): KUNNE IKKE verifiseres. handball.no (NHF) bekrefter at semifinalene spilles 11.–12. nov og at Kolstad/Bergen/Sandefjord/Elverum er klare, men gir IKKE paringen eller eksakt kampdag/avspark/kanal. Paringen Kolstad–Bergen + slot 11. nov 18:00 CET står fortsatt kun på én aggregator (betexplorer; siden ga 429 ved re-henting). Ingen oppfunnet verifisering — forblir medium/uverifisert til forbundets kampprogram fester det."
   ]
 }
