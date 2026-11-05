@@ -69,157 +69,6 @@
     ]
   },
   {
-    "sport": "football",
-    "tournament": "UEFA Conference League",
-    "title": "Kauno Žalgiris – Brann",
-    "time": "2026-10-22T16:45:00Z",
-    "endTime": null,
-    "venue": "Darius and Girėnas Stadium, Kaunas",
-    "norwegian": true,
-    "homeTeam": "Kauno Žalgiris",
-    "awayTeam": "Brann",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-22T13:52:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/",
-      "https://starting11.com/fixtures/kauno-zalgiris-vs-brann",
-      "https://www.t-online.de/sport/live-ticker/fussball/uefa-conference-league/sdc_fm-62590/kauno-zalgiris-brann-uefa-conference-league-im-liveticker.html"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/",
-        "basis": "secondary",
-        "retrievedAt": "2026-10-22T13:52:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no",
-        "basis": "official",
-        "retrievedAt": "2026-10-22T13:52:00Z"
-      }
-    },
-    "summary": "UEFA Conference League, ligafase runde 3 (MD3). Brann spiller borte mot litauiske Kauno Žalgiris på Darius og Girėnas-stadion i Kaunas tor. 22. okt kl. 18.45 CEST (16.45 UTC / 19.45 lokal tid).\n\nDato/avspark kryss-sjekket mot uefa.com (ligafase-fixtures) + starting11 + t-online liveticker og en uavhengig write-time fact-check — alle enige på 18.45 CEST.\n\nNorsk visning: Viaplay (Viaplay har Conference League-rettighetene i Norge t.o.m. 2030/31).",
-    "id": "61890bad3ba2",
-    "awayTeamEntityId": "brann"
-  },
-  {
-    "sport": "handball",
-    "tournament": "EHF Champions League",
-    "title": "Kolstad – SC Magdeburg",
-    "time": "2026-10-22T18:45:00Z",
-    "endTime": null,
-    "venue": "Kolstad Arena, Trondheim",
-    "norwegian": true,
-    "homeTeam": "Kolstad",
-    "awayTeam": "SC Magdeburg",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-19T05:50:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://www.eurohandball.com/en/club/kZVHhs7nxEhEqyCf6iK_Sw/KolstadH%C3%A5ndball/",
-      "https://www.scm-handball.de/en/match-center/schedule/",
-      "https://www.sportschau.de/live-und-ergebnisse/handball/ehf-champions-league/ma12367675/kolstad-handball_sc-magdeburg/blitztabelle"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "eurohandball",
-        "url": "https://www.eurohandball.com/en/club/kZVHhs7nxEhEqyCf6iK_Sw/KolstadH%C3%A5ndball/",
-        "basis": "primary",
-        "retrievedAt": "2026-10-19T05:50:00Z",
-        "note": "EHF (arrangøren, lest direkte): tor. 22. okt 20:45 — EHF-siden merker kolonnen «CET» men viser sentraleuropeisk LOKAL tid, dvs. 20:45 CEST = 18:45 UTC (22. okt er før sommertid-slutt). SC Magdeburgs offisielle kampsenter + sportschau + uavhengig fact-check (billettside) enige om samme instant. VENUE AMENDERT av fact-checken: Kolstad Arena (Saupstad) — Trondheim Spektrums egen kalender har IKKE håndball 22. okt (basketball 23.–24. + konsert), og EHF/billettside peker på Kolstad Arena."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball",
-        "basis": "official",
-        "retrievedAt": "2026-10-19T05:50:00Z",
-        "note": "EHF CL i Norge: DELT Viaplay/TV 2-avtale t.o.m. 2029/30 (EHFs egen kunngjøring, påpekt av fact-checken); Kolstads tidligere CL-kamper i høst gikk på TV 2 Sport 2 / TV 2 Play. Begge plattformer listet; verify firmer eksakt kanal per kamp."
-      }
-    },
-    "summary": "Kolstad tar imot tyske storlaget SC Magdeburg i Champions League gruppe F torsdag 22. oktober kl. 20.45 i Kolstad Arena (gruppespillrunde 5).\n\nTidspunkt bekreftet av EHF (arrangøren), SC Magdeburgs offisielle kampsenter og sportschau — alle enige. Arena er Kolstad Arena på Saupstad (fact-check: Trondheim Spektrum har annet program denne kvelden).\n\nNorsk visning TV 2 Play eller Viaplay (delt EHF CL-rettighetsavtale) — tidligere Kolstad-kamper i høst har gått på TV 2 Sport 2 / TV 2 Play.",
-    "id": "70745a4a9ce1",
-    "homeTeamEntityId": "kolstad-handball",
-    "verifiedAt": "2026-10-21T10:25:21Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.eurohandball.com/en/club/kZVHhs7nxEhEqyCf6iK_Sw/KolstadH%C3%A5ndball/"
-    ]
-  },
-  {
-    "sport": "football",
-    "tournament": "UEFA Europa League",
-    "title": "Lillestrøm – Real Sociedad",
-    "time": "2026-10-22T19:00:00Z",
-    "endTime": null,
-    "venue": "Åråsen stadion, Lillestrøm",
-    "norwegian": true,
-    "homeTeam": "Lillestrøm",
-    "awayTeam": "Real Sociedad",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-22T13:52:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.uefa.com/uefaeuropaleague/match/2050109--lillestrom-vs-real-sociedad/",
-      "https://en.wikipedia.org/wiki/2026_Lillestr%C3%B8m_SK_season",
-      "https://www.t-online.de/sport/live-ticker/fussball/europa-league/sdc_fm-62466/lillestrom-real-sociedad-europa-league-im-liveticker.html"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "uefa",
-        "url": "https://www.uefa.com/uefaeuropaleague/match/2050109--lillestrom-vs-real-sociedad/",
-        "basis": "secondary",
-        "retrievedAt": "2026-10-22T13:52:00Z"
-      },
-      "streaming": {
-        "sourceId": "viaplay",
-        "url": "https://viaplay.no",
-        "basis": "official",
-        "retrievedAt": "2026-10-22T13:52:00Z"
-      }
-    },
-    "summary": "UEFA Europa League, ligafase runde 3 (MD3). Lillestrøm tar imot spanske Real Sociedad på Åråsen tor. 22. okt kl. 21.00 CEST (19.00 UTC).\n\nAvsparket var omstridt i aggregatorene (18.45 vs 21.00) → låst mot UEFA (match 2050109) + Wikipedias LSK-sesongside + t-online liveticker, alle enige på 21.00 norsk tid. En uavhengig write-time fact-check bekreftet også 21.00 CEST.\n\nNorsk visning: Viaplay (Viaplay har Europa League-rettighetene i Norge).",
-    "id": "990a7ced7eba",
-    "homeTeamEntityId": "lillestrom",
-    "awayTeamEntityId": "real-sociedad"
-  },
-  {
     "sport": "alpine",
     "tournament": "FIS verdenscup alpint 2026/27",
     "title": "Sölden – storslalåm kvinner",
@@ -3522,10 +3371,10 @@
   {
     "sport": "football",
     "tournament": "Copa del Rey",
-    "title": "Tenerife at Badajoz",
-    "time": "2026-11-10T19:00:00.000Z",
+    "title": "Alavés at Anaitasuna",
+    "time": "2026-11-10T18:00:00.000Z",
     "endTime": null,
-    "venue": "Estadio Municipal Nuevo Vivero",
+    "venue": "Txerloia",
     "meta": "Copa del Rey",
     "norwegian": false,
     "streaming": [],
@@ -3535,11 +3384,56 @@
     "link": null,
     "status": null,
     "featuredGroups": [],
-    "homeTeam": "Badajoz",
-    "awayTeam": "Tenerife",
+    "homeTeam": "Anaitasuna",
+    "awayTeam": "Alavés",
     "isFavorite": false,
     "round": null,
-    "id": "d3f10c69d65a"
+    "id": "75249b676f2a",
+    "awayTeamEntityId": "alaves"
+  },
+  {
+    "sport": "football",
+    "tournament": "Copa del Rey",
+    "title": "Eibar at CD Pamplona",
+    "time": "2026-11-10T18:00:00.000Z",
+    "endTime": null,
+    "venue": "Polideportivo Valle Aranguren",
+    "meta": "Copa del Rey",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "CD Pamplona",
+    "awayTeam": "Eibar",
+    "isFavorite": false,
+    "round": null,
+    "id": "fc676c3f8175"
+  },
+  {
+    "sport": "football",
+    "tournament": "Copa del Rey",
+    "title": "UD Logroñés at Amorebieta",
+    "time": "2026-11-10T19:00:00.000Z",
+    "endTime": null,
+    "venue": "Urritxe",
+    "meta": "Copa del Rey",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Amorebieta",
+    "awayTeam": "UD Logroñés",
+    "isFavorite": false,
+    "round": null,
+    "id": "c0c7375d032c"
   },
   {
     "sport": "football",
