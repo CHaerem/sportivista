@@ -1,14 +1,14 @@
 {
-  "runAt": "2026-11-05T13:23:27Z",
-  "checked": 7,
-  "confirmed": 6,
+  "runAt": "2026-11-06T13:06:00Z",
+  "checked": 4,
+  "confirmed": 3,
   "amended": 0,
   "removed": 0,
   "notes": [
-    "F1 São Paulo GP kvalifisering (7. nov 18:00 UTC): RE-BEKREFTET mot formula1.com (primær) + racingnews365 + oversteer48 — kvali lør. 15:00 BRT = 18:00 UTC, Interlagos er UTEN sprint i 2026 (droppet fra sprintkalenderen), så ett enkelt kvali-slot. Tavlas «UTEN sprint»-påstand korrekt.",
-    "Chess Total Chess VM-pilot (Budapest, gruppespill fra 11. nov 14:00 UTC): BEKREFTET eksistens + dato mot worldchess.com (arrangør) + fide.com + chessbase — gruppespill fra 11. nov daglig 15:00 CET. Norsk/offisiell kringkasting er fortsatt IKKE kunngjort av arrangøren, så streaming forblir tomt (ærlig); confidence beholdt medium. Fylles når worldchess melder plattform.",
-    "IEM Beijing 2026 (esports, pågår 2.–8. nov): RE-BEKREFTET turneringsvindu mot strafe.com + esports.gg — sluttspill 6.–8. nov, grand final søn. 8. nov. Per-kamp bracket for katalog-lagene ikke publisert i tide; vinduseventet står.",
-    "Sint-Truidense–Brann (i dag 5. nov), Strømmen–Lyn (8. nov) og Team Esbjerg–Ferencváros (8. nov): allerede bekreftet 2. nov med provenance intakt og i vindu; ikke re-hentet denne kjøringen (nær-tids, uendret).",
-    "Handball NM-semifinale Kolstad–Bergen (11. nov): KUNNE IKKE verifiseres. handball.no (NHF) bekrefter at semifinalene spilles 11.–12. nov og at Kolstad/Bergen/Sandefjord/Elverum er klare, men gir IKKE paringen eller eksakt kampdag/avspark/kanal. Paringen Kolstad–Bergen + slot 11. nov 18:00 CET står fortsatt kun på én aggregator (betexplorer; siden ga 429 ved re-henting). Ingen oppfunnet verifisering — forblir medium/uverifisert til forbundets kampprogram fester det."
+    "7 events fell in the next-7-day window (ai-research / confidence / tentative). Re-verified the near-term ones; IEM Beijing + Total Chess were already confirmed 2026-11-05 and left untouched; Sint-Truidense–Brann is already past (played 5. nov).",
+    "São Paulo GP kvalifisering (c2dd6b9c5607): CONFIRMED. the-race.com + formula1.com give qualifying Sat 7 Nov 15:00 Brasília (UTC-3) = 18:00 UTC — board 18:00 UTC correct. No sprint in 2026, race Sun 8 Nov. Applied the ESPN-F1-mis-dating compensation (source-quirks): verified the race-weekend session against formula1.com directly, not an aggregator. Viaplay correct (F1 all sessions). verifiedAt refreshed.",
+    "Strømmen–Lyn (eb53e7dfe3bb): CONFIRMED. FotMob independently agrees with the fotball.no primary: Sun 8 Nov, 1. divisjon (OBOS-ligaen) round 30, Strømmen home, 12:00 UTC (13:00 CET). One outlier (voetbalwedden, 16:00 local) noted but two sources cluster on 12:00 UTC. TV 2 Play correct (OBOS-ligaen rights). verifiedAt stamped.",
+    "Team Esbjerg–Ferencváros (5d56c46d2e5f): CONFIRMED against EHF (the organizer, read directly): Sun 8 Nov 14:00 CET = 13:00 UTC, Group Phase A, home in Esbjerg (opponent listed as FTC-Toyota Kovács = Ferencváros); return leg 15 Nov. Board 13:00 UTC correct. Streaming kept as TV 2 Play + Viaplay (shared EHF CL women rights; exact channel still per-match TBD). verifiedAt stamped.",
+    "Kolstad–Bergen NM-cup semifinal (9124816807dd, medium): NOT verified — honest TBD kept. Sofascore corroborates the Kolstad–Bergen pairing as the next NM Cup match but gives no date/round/channel; combined with the 5 Nov handball.no finding (men's semifinals 11.–12. Nov, Kolstad/Bergen qualified) the board slot (11 Nov 17:00 UTC) is plausible, but the exact match day/throw-off/channel still sit only on an aggregator. Left unchanged, logged to the calibration ledger (boardWasProvisional)."
   ]
 }
