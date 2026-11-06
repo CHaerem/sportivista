@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-05T20:28:24.368Z",
-  "gapCount": 8,
+  "generatedAt": "2026-11-06T01:21:17.993Z",
+  "gapCount": 5,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -12,18 +12,18 @@
       "link": "https://www.nrk.no/sport/botheim-pa-ukens-mesterliga-lag_-_-en-sterk-spydspiss-1.18074966",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-11-05T20:28:23.655Z"
+      "detectedAt": "2026-11-06T01:21:17.440Z"
     },
     {
       "kind": "entity",
       "entity": "Europa League",
       "type": "missing",
-      "imminent": true,
-      "headline": "Sunderland v Dinamo Zagreb, Celtic v Besiktas: Europa League – live",
-      "link": "https://www.theguardian.com/football/live/2026/nov/05/crystal-palace-hoffenheim-sparta-prague-bournemouth-sunderland-celtic-europa-league-live",
+      "imminent": false,
+      "headline": "Europa League: Sunderland lose at home to Zagreb while Celtic enjoy first win",
+      "link": "https://www.theguardian.com/football/2026/nov/05/europa-league-roundup-sparta-prague-bournemouth-ferencvaros-milanstay-perfect-while-milan-sunderland-dinamo-zagreb",
       "feed": "guardian-football",
       "matchCount": 3,
-      "detectedAt": "2026-11-05T20:28:23.655Z"
+      "detectedAt": "2026-11-06T01:21:17.440Z"
     },
     {
       "kind": "entity",
@@ -34,18 +34,7 @@
       "link": "https://www.nrk.no/sport/lillestrom-tapte-i-europaligaen-1.18075125",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-11-05T20:28:23.655Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Tour de France",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Who will actually ride the Giro d’Italia in 2027? Analysing the choices facing Pogačar, Vingegaard, Seixas, Evenepoel, Del Toro and more",
-      "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/who-will-actually-ride-the-giro-ditalia-in-2027-analysing-the-choices-facing-pogacar-vingegaard-seixas-evenepoel-del-toro-and-more/",
-      "feed": "cyclingnews",
-      "matchCount": 1,
-      "detectedAt": "2026-11-05T20:28:23.655Z"
+      "detectedAt": "2026-11-06T01:21:17.440Z"
     },
     {
       "kind": "entity",
@@ -55,8 +44,8 @@
       "headline": "UAE Team Emirates-XRG manager reveals 'ambitious dream' to emulate Visma in 2027 Grand Tours, but Pogačar and Del Toro's schedules still under wraps",
       "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/uae-team-emirates-xrg-manager-reveals-ambitious-dream-to-emulate-visma-in-2027-grand-tours-but-pogacar-and-del-toros-schedules-still-under-wraps/",
       "feed": "cyclingnews",
-      "matchCount": 2,
-      "detectedAt": "2026-11-05T20:28:23.655Z"
+      "matchCount": 1,
+      "detectedAt": "2026-11-06T01:21:17.440Z"
     },
     {
       "kind": "entity",
@@ -67,29 +56,7 @@
       "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/uae-team-emirates-xrg-manager-reveals-ambitious-dream-to-emulate-visma-in-2027-grand-tours-but-pogacar-and-del-toros-schedules-still-under-wraps/",
       "feed": "cyclingnews",
       "matchCount": 1,
-      "detectedAt": "2026-11-05T20:28:23.655Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Tour of Flanders",
-      "type": "missing",
-      "imminent": false,
-      "headline": "'The Tour of Flanders is becoming increasingly difficult, especially with the presence of Pogačar and Evenepoel' – Wout van Aert realistic about chances of finally landing his home Monument",
-      "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/the-tour-of-flanders-is-becoming-increasingly-difficult-especially-with-the-presence-of-pogacar-and-evenepoel-wout-van-aert-realistic-about-chances-of-finally-landing-his-home-monument/",
-      "feed": "cyclingnews",
-      "matchCount": 1,
-      "detectedAt": "2026-11-05T20:28:23.655Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Paris-Roubaix",
-      "type": "missing",
-      "imminent": false,
-      "headline": "'The Tour of Flanders is becoming increasingly difficult, especially with the presence of Pogačar and Evenepoel' – Wout van Aert realistic about chances of finally landing his home Monument",
-      "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/the-tour-of-flanders-is-becoming-increasingly-difficult-especially-with-the-presence-of-pogacar-and-evenepoel-wout-van-aert-realistic-about-chances-of-finally-landing-his-home-monument/",
-      "feed": "cyclingnews",
-      "matchCount": 1,
-      "detectedAt": "2026-11-05T20:28:23.655Z"
+      "detectedAt": "2026-11-06T01:21:17.440Z"
     }
   ],
   "anomalies": [
@@ -98,7 +65,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-05T20:28:24.264Z"
+      "detectedAt": "2026-11-06T01:21:17.878Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."

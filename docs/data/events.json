@@ -80,8 +80,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/sport",
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
         "urlKind": "landing"
       }
     ],
@@ -281,8 +281,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/sport",
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
         "urlKind": "landing"
       }
     ],
@@ -1694,73 +1694,6 @@
   },
   {
     "sport": "football",
-    "tournament": "Copa del Rey",
-    "title": "Levante at CD Tarancon",
-    "time": "2026-11-05T18:00:00.000Z",
-    "endTime": null,
-    "venue": "Polideportivo Estadio Municipal Tarancón",
-    "meta": "Copa del Rey",
-    "norwegian": false,
-    "streaming": [],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "CD Tarancon",
-    "awayTeam": "Levante",
-    "isFavorite": false,
-    "round": null,
-    "id": "1b9fa7e54aeb",
-    "awayTeamEntityId": "levante"
-  },
-  {
-    "sport": "tennis",
-    "tournament": "Rolex Paris Masters",
-    "title": "Casper Ruud – Jan-Lennard Struff",
-    "time": "2026-11-05T19:30:00.000Z",
-    "endTime": null,
-    "venue": "Court Central",
-    "meta": "Rolex Paris Masters · Men's Singles",
-    "norwegian": true,
-    "streaming": [],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": null,
-    "awayTeam": null,
-    "isFavorite": false,
-    "round": null,
-    "id": "d1654344108e"
-  },
-  {
-    "sport": "football",
-    "tournament": "Copa del Rey",
-    "title": "Mallorca at Alcoyano",
-    "time": "2026-11-05T20:00:00.000Z",
-    "endTime": null,
-    "venue": "El Collao",
-    "meta": "Copa del Rey",
-    "norwegian": false,
-    "streaming": [],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Alcoyano",
-    "awayTeam": "Mallorca",
-    "isFavorite": false,
-    "round": null,
-    "id": "0a3a023b5cf3"
-  },
-  {
-    "sport": "football",
     "tournament": "UEFA Conference League",
     "title": "Sint-Truidense – Brann",
     "time": "2026-11-05T20:00:00Z",
@@ -1836,6 +1769,28 @@
     "awayTeamEntityId": "borussia-monchengladbach"
   },
   {
+    "sport": "tennis",
+    "tournament": "Rolex Paris Masters",
+    "title": "Casper Ruud – Nuno Borges",
+    "time": "2026-11-06T19:30:00.000Z",
+    "endTime": null,
+    "venue": "Court Central",
+    "meta": "Rolex Paris Masters · Men's Singles",
+    "norwegian": true,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "4dbd368ccc02"
+  },
+  {
     "sport": "football",
     "tournament": "Serie A",
     "title": "Udinese at Venezia",
@@ -1844,7 +1799,18 @@
     "venue": "Stadio Pier Luigi Penzo",
     "meta": "Serie A",
     "norwegian": false,
-    "streaming": [],
+    "streaming": [
+      {
+        "platform": "VG TV",
+        "url": "https://www.tvkampen.com/kamp/venezia-udinese-1899130",
+        "urlKind": "deep"
+      },
+      {
+        "platform": "Viaplay",
+        "url": "https://www.tvkampen.com/kamp/venezia-udinese-1899130",
+        "urlKind": "deep"
+      }
+    ],
     "participants": [],
     "norwegianPlayers": [],
     "totalPlayers": null,
@@ -1871,8 +1837,8 @@
     "streaming": [
       {
         "platform": "Viaplay",
-        "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
+        "url": "https://www.tvkampen.com/kamp/everton-coventry-1914811",
+        "urlKind": "deep"
       }
     ],
     "participants": [],
@@ -3669,6 +3635,74 @@
     "id": "6ef64315f23f"
   },
   {
+    "sport": "football",
+    "tournament": "Copa del Rey",
+    "title": "Albacete at Calvo Sotelo",
+    "time": "2026-11-12T17:30:00.000Z",
+    "endTime": null,
+    "venue": "Estadio Ciudad de Puertollano",
+    "meta": "Copa del Rey",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Calvo Sotelo",
+    "awayTeam": "Albacete",
+    "isFavorite": false,
+    "round": null,
+    "id": "188b3f851cd4"
+  },
+  {
+    "sport": "football",
+    "tournament": "Copa del Rey",
+    "title": "Real Betis at CD Artistico Navalcarnero",
+    "time": "2026-11-12T18:00:00.000Z",
+    "endTime": null,
+    "venue": "Municipal de Santo Domingo",
+    "meta": "Copa del Rey",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "CD Artistico Navalcarnero",
+    "awayTeam": "Real Betis",
+    "isFavorite": false,
+    "round": null,
+    "id": "8d03d1d2bfe3",
+    "awayTeamEntityId": "real-betis"
+  },
+  {
+    "sport": "football",
+    "tournament": "Copa del Rey",
+    "title": "Levante at CD Tarancon",
+    "time": "2026-11-12T18:00:00.000Z",
+    "endTime": null,
+    "venue": "Polideportivo Estadio Municipal Tarancón",
+    "meta": "Copa del Rey",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "CD Tarancon",
+    "awayTeam": "Levante",
+    "isFavorite": false,
+    "round": null,
+    "id": "ac9c75303f3e",
+    "awayTeamEntityId": "levante"
+  },
+  {
     "sport": "alpine",
     "tournament": "FIS verdenscup alpint 2026/27",
     "title": "Levi: Slalåm kvinner",
@@ -3678,8 +3712,8 @@
     "norwegianPlayers": [],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
         "urlKind": "landing"
       }
     ],
@@ -3768,8 +3802,8 @@
     "norwegianPlayers": [],
     "streaming": [
       {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
         "urlKind": "landing"
       }
     ],
@@ -3900,6 +3934,39 @@
     "id": "1ef2166b04cb",
     "homeTeamEntityId": "danmark",
     "awayTeamEntityId": "norge"
+  },
+  {
+    "sport": "golf",
+    "tournament": "PGA Tour",
+    "title": "The RSM Classic",
+    "time": "2026-11-19T05:00:00.000Z",
+    "endTime": "2026-11-22T20:00:00.000Z",
+    "venue": "TBD",
+    "meta": "PGA Tour",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "HBO Max (Sport)",
+        "url": "https://www.hbomax.com/no/no/sports/pga-tour",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "Eurosport",
+        "url": "https://www.eurosport.no",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "e84e79367d27"
   },
   {
     "sport": "f1",
