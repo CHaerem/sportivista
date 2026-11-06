@@ -1,11 +1,11 @@
 {
-	"runAt": "2026-11-05T00:30:00Z",
+	"runAt": "2026-11-06T00:30:00Z",
 	"action": "none",
 	"pr": null,
 	"fixed": [],
 	"notes": [
-		"visual-qa-log.json verdict is 'pass' with zero findings (checkedAt 2026-11-05T00:00:00Z) — no high/medium rendering issues to fix.",
-		"Latest review confirmed at 375/393/900px: single quiet column, no horizontal overflow, nothing clipped; team/fixture names read fully (no truncation); channel column shows only Norwegian rights (no FOX/ESPN/Sky); flags/crests render as icons with no broken-image boxes; day headers, header and footer intact; must-see accent dots used sparingly.",
-		"No open ui-autofix PR; nothing stacked. Exiting cleanly without a branch or PR."
+		"visual-qa-log.json verdict is 'pass' with zero findings (checkedAt 2026-11-06T00:00:00Z) — no high/medium rendering issues to fix, so no branch/PR per the agent's 'When to act' rule 1.",
+		"Latest review confirmed at 375/393/900px: single quiet column, no horizontal overflow, nothing clipped (375px checked hardest); team/fixture names read fully (no truncation); channel column shows only Norwegian rights (no FOX/ESPN/Sky), honest '–' where unknown; flags/crests render as icons with no broken-image boxes; day headers, header and footer intact; must-see accent dots used sparingly; floating 'Assistent' button clears the footer at 375px.",
+		"No open ui-autofix PR (only open PR is claude/nix-devshell #473, unrelated); nothing stacked. Exiting cleanly without a branch or PR."
 	]
 }
