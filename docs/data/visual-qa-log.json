@@ -1,16 +1,16 @@
 {
-  "checkedAt": "2026-11-05T00:00:00.000Z",
+  "checkedAt": "2026-11-06T00:00:00.000Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
-    "All three widths: single quiet column, no horizontal scroll/overflow, nothing clipped at the screen edge.",
-    "Team/match names read fully at 375px and 393px (e.g. 'Leeds United – Tottenham Hotspur', 'Borussia Dortmund – SV Elversberg') — no truncation hiding which side is playing.",
-    "Channels shown are Norwegian (Viaplay, TV 2 Play, Eliteserien TV 2, HBO Max Sport) — no foreign broadcaster (FOX/ESPN/Sky) observed.",
-    "Flags and club crests render as icons; no broken-image boxes seen.",
-    "Day headers (I DAG / I MORGEN / LØRDAG 7. NOVEMBER / ...), header and footer intact and aligned at all three widths.",
-    "Must-see accent dots used sparingly, not on every row.",
-    "At 900px the floating 'Assistent' button rests over a mid-agenda row (Sint-Truidense – Brann, UEFA Conference League) — this is the DESIGN.md-sanctioned floating-button idiom, not flagged. It does not occlude the last agenda row or the footer, which is the one guarantee that matters.",
-    "Live in-progress matches show an inline '0-0' score, consistent across widths."
+    "All three widths: single quiet column, no horizontal scroll/overflow, nothing clipped at the screen edge (checked 375px hardest).",
+    "Match/tournament names read fully, not truncated (e.g. 'Leeds United – Tottenham Hotspur', 'Borussia Dortmund – SV Elversberg', 'World Wide Technology Championship') — verified with a targeted close-up screenshot at 900px since the full-page composite was too compressed to read reliably.",
+    "Channels shown are Norwegian (Viaplay, TV 2 Play, VG TV, HBO Max (Sport), Twitch (ESLCS) for esports) — no foreign broadcaster (FOX/ESPN/Sky) observed. Events without a confirmed channel honestly show '–' (e.g. Cagliari–Frosinone, Torino–Lecce, Bundesliga fixtures, Rolex Paris Masters incl. the Casper Ruud match) rather than a guess.",
+    "National flags / club crests render as icons at all three widths; no broken-image boxes seen.",
+    "Day headers (I DAG / I MORGEN / LØRDAG 7. NOVEMBER / ...), header, and footer intact and aligned at all three widths.",
+    "Must-see accent dots used sparingly (golf events with a Norwegian player, e.g. World Wide Technology Championship / Abu Dhabi Aldar Championship), not on every row.",
+    "Live-now section renders two in-progress events (Rolex Paris Masters, IEM Beijing 2026) correctly above the day list.",
+    "Checked the floating 'Assistent' button specifically at the bottom of the 375px page (scrolled to end): it sits clear below the footer ('AI-budsjett' line) and does not occlude the last agenda/news row or the footer — the one guarantee that matters per DESIGN.md. At 900px it rests over a mid-agenda row, which is the sanctioned floating-button idiom and not flagged."
   ]
 }
