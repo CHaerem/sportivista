@@ -218,5 +218,13 @@
     "verdict": "quiet",
     "reason": "RSS (55 items, 12:42 UTC Nov 6): past match results & gossip (Botheim TMOTW Champions League, Europa League roundup finalized, Lillestrøm Europe loss, Brann Europe draw—all completed, no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements). Transfer news (Palmer England snub, Bellingham call, Foden excluded—personnel roster changes, no schedule/time/venue impact to upcoming tracked events). VAR 2.0 tech (NFF announcement—organizational, no schedule change). Vålerenga-Kristiansund sickness (Vålerenga seeks match postponement—potential reschedule signal but not yet announced as granted, imminent=false pending FFB decision). No schedule/time/venue changes to existing tracked events confirmed, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (5 gaps, 1 anomaly): RBK/Mesterligaen/Europa League/Europaligaen/Candidates (all imminent=false, entity gaps from past coverage/analysis); cycling.json empty (low severity, known). Pending Vålerenga reschedule decision does not qualify as a confirmed schedule change until FFB announces. No NEW concrete schedule/time/venue/streaming/broadcaster signal. Escalation cap today (Nov 6 UTC): 0/2.",
     "signals": []
+  },
+  {
+    "runAt": "2026-11-06T20:04:42.510Z",
+    "verdict": "escalate",
+    "reason": "RSS (32 items, 19:50 UTC Nov 6): SCHEDULE CHANGE SIGNAL — Kristiansund v Vålerenga Eliteserien match (currently on board for Nov 9 18:00 UTC) is being POSTPONED due to illness. Schedule change for upcoming tracked event = escalation-worthy. Research agent should verify new date. No other schedule/time/venue/streaming changes, no CS2 hints. Coverage gaps (2 non-imminent entity gaps), cycling.json empty (low). Escalation cap today (Nov 6 UTC): 0/2.",
+    "signals": [
+      "Kristiansund – Vålerenga (Eliteserien, Nov 9): schedule postponement confirmed (illness)"
+    ]
   }
 ]
