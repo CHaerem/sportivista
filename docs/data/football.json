@@ -1,36 +1,10 @@
 {
-  "lastUpdated": "2026-11-06T12:42:14.369Z",
+  "lastUpdated": "2026-11-06T19:50:01.552Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
       "name": "Eliteserien",
       "events": [
-        {
-          "id": "football-kristiansund-–-vålerenga-1794063600000",
-          "title": "Kristiansund – Vålerenga",
-          "time": "2026-11-07T15:00:00.000Z",
-          "venue": "Nordmore Stadion",
-          "sport": "football",
-          "meta": "Eliteserien",
-          "tournament": "Eliteserien",
-          "streaming": [
-            {
-              "platform": "TV2 Play",
-              "url": "https://play.tv2.no",
-              "type": "tv2"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Kristiansund",
-          "awayTeam": "Vålerenga",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
         {
           "id": "football-rosenborg-–-start-1794070800000",
           "title": "Rosenborg – Start",
@@ -209,6 +183,32 @@
           "norwegianPlayers": [],
           "totalPlayers": null,
           "isFavorite": true,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-kristiansund-–-vålerenga-1794247200000",
+          "title": "Kristiansund – Vålerenga",
+          "time": "2026-11-09T18:00:00.000Z",
+          "venue": "Nordmore Stadion",
+          "sport": "football",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
+          "streaming": [
+            {
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Kristiansund",
+          "awayTeam": "Vålerenga",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
           "additional": {
             "status": "STATUS_SCHEDULED"
           }
@@ -758,7 +758,7 @@
           "tournament": "Serie A",
           "streaming": [
             {
-              "platform": "Paramount+",
+              "platform": "CBSSN",
               "url": "",
               "type": "tv"
             }
@@ -771,7 +771,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FIRST_HALF"
           }
         },
         {
@@ -940,7 +940,7 @@
           "tournament": "Serie A",
           "streaming": [
             {
-              "platform": "Paramount+",
+              "platform": "CBSSN",
               "url": "",
               "type": "tv"
             }
@@ -1036,7 +1036,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FIRST_HALF"
           }
         },
         {
