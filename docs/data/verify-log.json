@@ -1,14 +1,17 @@
 {
-  "runAt": "2026-11-06T13:06:00Z",
-  "checked": 4,
+  "runAt": "2026-11-07T11:54:08.793Z",
+  "checked": 8,
   "confirmed": 3,
-  "amended": 0,
+  "amended": 2,
   "removed": 0,
   "notes": [
-    "7 events fell in the next-7-day window (ai-research / confidence / tentative). Re-verified the near-term ones; IEM Beijing + Total Chess were already confirmed 2026-11-05 and left untouched; Sint-Truidense–Brann is already past (played 5. nov).",
-    "São Paulo GP kvalifisering (c2dd6b9c5607): CONFIRMED. the-race.com + formula1.com give qualifying Sat 7 Nov 15:00 Brasília (UTC-3) = 18:00 UTC — board 18:00 UTC correct. No sprint in 2026, race Sun 8 Nov. Applied the ESPN-F1-mis-dating compensation (source-quirks): verified the race-weekend session against formula1.com directly, not an aggregator. Viaplay correct (F1 all sessions). verifiedAt refreshed.",
-    "Strømmen–Lyn (eb53e7dfe3bb): CONFIRMED. FotMob independently agrees with the fotball.no primary: Sun 8 Nov, 1. divisjon (OBOS-ligaen) round 30, Strømmen home, 12:00 UTC (13:00 CET). One outlier (voetbalwedden, 16:00 local) noted but two sources cluster on 12:00 UTC. TV 2 Play correct (OBOS-ligaen rights). verifiedAt stamped.",
-    "Team Esbjerg–Ferencváros (5d56c46d2e5f): CONFIRMED against EHF (the organizer, read directly): Sun 8 Nov 14:00 CET = 13:00 UTC, Group Phase A, home in Esbjerg (opponent listed as FTC-Toyota Kovács = Ferencváros); return leg 15 Nov. Board 13:00 UTC correct. Streaming kept as TV 2 Play + Viaplay (shared EHF CL women rights; exact channel still per-match TBD). verifiedAt stamped.",
-    "Kolstad–Bergen NM-cup semifinal (9124816807dd, medium): NOT verified — honest TBD kept. Sofascore corroborates the Kolstad–Bergen pairing as the next NM Cup match but gives no date/round/channel; combined with the 5 Nov handball.no finding (men's semifinals 11.–12. Nov, Kolstad/Bergen qualified) the board slot (11 Nov 17:00 UTC) is plausible, but the exact match day/throw-off/channel still sit only on an aggregator. Left unchanged, logged to the calibration ledger (boardWasProvisional)."
+    "In-window candidates (next 7d): 7. Fem var allerede ferskt verifisert (6.-7. nov) og ble ikke churnet: Sao Paulo GP kvalik (i dag), Strommen-Lyn, Team Esbjerg-Ferencvaros, Total Chess Budapest, IEM Beijing.",
+    "AMENDED — Levi: Slalaam kvinner (0241465fd12a): streaming NRK -> TV 2 Play. TV 2s egen sesongpresse (kommunikasjon.ntb.no/19113452) sier «Alpint fra Levi (TV 2)»; fra 2026/27 deler TV 2 Play + Viaplay FIS verdenscup alpint i utlandet, renn i Norge paa NRK. Eventets eget summary sa allerede TV 2 Play — NRK-feltet motsa det. provenance.streaming oppdatert til tv2/official.",
+    "CONFIRMED — Kolstad-Bergen NM-semifinale (9124816807dd): handball.no bekrefter herre-semifinaler 11.-12. nov + de fire lagene; betexplorer fester Kolstad-Bergen 11.11 18:00 CET (17:00 UTC). Tid/arena/kanal (TV 2 Play) staar. Holder confidence=medium: eksakt slott hviler paa aggregator, NHF gir ikke eksakt dag/avspark.",
+    "AMENDED — Levi: Slalaam menn (5b50fa023c74, 15.11): samme NRK -> TV 2 Play-retting som dameslalaamen. Validatoren flagget mismatchen (summary=TV 2, streaming=NRK) da dameslalaamen ble rettet. Ligger ~21t utenfor 7-dagersvinduet, men identisk dokumentert faktum (TV 2-pressen dekker hele Levi-helgen uke 46) og naa flagget — rettet for konsistens.",
+    "CONFIRMED (re-sjekk, ingen endring) — IEM Beijing (eee77d69b2a6): grand final son. 8. nov staar fast; 100 Thieves/rain ikke i feltet.",
+    "STALE CONFIG (for research): authority.json alpine:world-cup lister channel=NRK og norwegian-rights-skillen linje 72 sier «Alpine -> Viaplay». Begge er feil for 2026/27 utlandsrenn (Levi): TV 2 Play + Viaplay deler, renn i Norge NRK. authority.json boer rettes av research (ikke i verify sitt commit-sett).",
+    "SKILL-EDIT: forsokte aa rette norwegian-rights linje 72 (Alpine) i samme commit, men Edit-verktoyet returnerte literal feil: «Claude requested permissions to write to .../.claude/skills/norwegian-rights/SKILL.md, but you haven't granted it yet.» Dette er en harness-tillatelsesledetekst i denne okten, IKKE en kjent blokk — jeg restater ingen «skill blocked by permission gate»-legende (WP-91). Rettelsen er uansett fanget i selve eventet (streaming + provenance.streaming + verificationSources) og i denne loggen; skill-linja boer oppdateres nar skrivetilgang er gitt.",
+    "Ingen events fjernet; ingen avlyst/utsatt funnet."
   ]
 }
