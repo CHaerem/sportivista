@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-07T11:29:37.934Z",
+  "generatedAt": "2026-11-07T17:24:18.145Z",
   "windowDays": 180,
   "records": {
-    "used": 721,
+    "used": 728,
     "skipped": 18
   },
   "sources": {
@@ -222,9 +222,9 @@
       "reliability": null
     },
     "kommunikasjon.ntb.no": {
-      "checks": 5,
-      "agreed": 4,
-      "corrections": 0,
+      "checks": 8,
+      "agreed": 7,
+      "corrections": 2,
       "bySport": {
         "football": {
           "checks": 3,
@@ -233,24 +233,28 @@
         "tennis": {
           "checks": 2,
           "agreed": 2
+        },
+        "alpine": {
+          "checks": 3,
+          "agreed": 3
         }
       },
       "byField": {
         "streaming": {
-          "checks": 2,
-          "agreed": 1
+          "checks": 4,
+          "agreed": 3
         },
         "time": {
-          "checks": 2,
-          "agreed": 2
+          "checks": 3,
+          "agreed": 3
         },
         "existence": {
           "checks": 1,
           "agreed": 1
         }
       },
-      "lastChecked": "2026-09-15T10:15:58.215Z",
-      "reliability": 0.8
+      "lastChecked": "2026-11-07T11:55:19.607Z",
+      "reliability": 0.88
     },
     "nrk.no": {
       "checks": 24,
@@ -1463,26 +1467,26 @@
       "reliability": null
     },
     "strafe.com": {
-      "checks": 3,
-      "agreed": 3,
+      "checks": 4,
+      "agreed": 4,
       "corrections": 0,
       "bySport": {
         "esports": {
-          "checks": 3,
-          "agreed": 3
+          "checks": 4,
+          "agreed": 4
         }
       },
       "byField": {
         "time": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 2,
+          "agreed": 2
         },
         "existence": {
           "checks": 2,
           "agreed": 2
         }
       },
-      "lastChecked": "2026-11-05T13:23:27Z",
+      "lastChecked": "2026-11-07T11:54:08.793Z",
       "reliability": null
     },
     "sports.yahoo.com": {
@@ -2288,13 +2292,13 @@
       "reliability": null
     },
     "handball.no": {
-      "checks": 19,
-      "agreed": 19,
+      "checks": 20,
+      "agreed": 20,
       "corrections": 0,
       "bySport": {
         "handball": {
-          "checks": 19,
-          "agreed": 19
+          "checks": 20,
+          "agreed": 20
         }
       },
       "byField": {
@@ -2307,11 +2311,11 @@
           "agreed": 9
         },
         "existence": {
-          "checks": 2,
-          "agreed": 2
+          "checks": 3,
+          "agreed": 3
         }
       },
-      "lastChecked": "2026-11-05T13:23:27Z",
+      "lastChecked": "2026-11-07T11:54:08.793Z",
       "reliability": 1
     },
     "ba.no": {
@@ -3618,22 +3622,22 @@
       "reliability": null
     },
     "betexplorer.com": {
-      "checks": 15,
-      "agreed": 15,
+      "checks": 16,
+      "agreed": 16,
       "corrections": 0,
       "bySport": {
         "handball": {
-          "checks": 15,
-          "agreed": 15
+          "checks": 16,
+          "agreed": 16
         }
       },
       "byField": {
         "time": {
-          "checks": 15,
-          "agreed": 15
+          "checks": 16,
+          "agreed": 16
         }
       },
-      "lastChecked": "2026-10-25T09:57:00Z",
+      "lastChecked": "2026-11-07T11:54:08.793Z",
       "reliability": 1
     },
     "the-race.com": {
@@ -4269,6 +4273,25 @@
         }
       },
       "lastChecked": "2026-11-02T13:44:49Z",
+      "reliability": null
+    },
+    "telenor.no": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "alpine": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "streaming": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-11-07T11:54:08.793Z",
       "reliability": null
     }
   }
