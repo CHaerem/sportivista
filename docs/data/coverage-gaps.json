@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T23:56:59.141Z",
+  "generatedAt": "2026-11-07T01:29:48.228Z",
   "gapCount": 3,
   "anomalyCount": 1,
   "gaps": [
@@ -12,7 +12,7 @@
       "link": "https://www.nrk.no/sport/nff-henlegger-rasismesaken-mot-fredrikstad-spiller-etter-opphetet-rbk-kamp-1.18075636",
       "feed": "nrk-sport",
       "matchCount": 2,
-      "detectedAt": "2026-11-06T23:56:56.286Z"
+      "detectedAt": "2026-11-07T01:29:47.538Z"
     },
     {
       "kind": "entity",
@@ -23,7 +23,7 @@
       "link": "https://www.cyclingnews.com/pro-cycling/womens-cycling/i-think-she-has-grown-a-lot-mentally-lars-boom-highlights-reason-for-demi-vollerings-stunning-season-outlines-2027-goals/",
       "feed": "cyclingnews",
       "matchCount": 1,
-      "detectedAt": "2026-11-06T23:56:56.286Z"
+      "detectedAt": "2026-11-07T01:29:47.538Z"
     },
     {
       "kind": "entity",
@@ -34,7 +34,7 @@
       "link": "https://www.theguardian.com/football/2026/nov/06/nwsl-playoff-predictions-picks",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-11-06T23:56:56.286Z"
+      "detectedAt": "2026-11-07T01:29:47.538Z"
     }
   ],
   "anomalies": [
@@ -43,7 +43,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-06T23:56:57.107Z"
+      "detectedAt": "2026-11-07T01:29:48.098Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
