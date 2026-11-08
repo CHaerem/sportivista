@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2026-11-07T21:25:21.989Z",
-  "gapCount": 2,
+  "generatedAt": "2026-11-08T00:59:59.664Z",
+  "gapCount": 5,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "rain",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Qualifying conditions borderline - but Norris and Russell hoping for more rain",
+      "link": "https://www.bbc.co.uk/sport/formula1/articles/cmde81d9nkxko?at_medium=RSS&amp;at_campaign=rss",
+      "feed": "bbc-f1",
+      "matchCount": 2,
+      "detectedAt": "2026-11-08T00:59:59.045Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Manchester City",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Enzo Maresca rues Manchester City’s lack of desire after defeat at Nottingham Forest",
+      "link": "https://www.theguardian.com/football/2026/nov/07/enzo-maresca-nottingham-forest-manchester-city-premier-league",
+      "feed": "guardian-football",
+      "matchCount": 2,
+      "detectedAt": "2026-11-08T00:59:59.045Z"
+    },
     {
       "kind": "entity",
       "entity": "Arsenal",
@@ -12,7 +34,18 @@
       "link": "https://www.theguardian.com/football/2026/nov/07/arsenal-hull-premier-league-match-report",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-11-07T21:25:20.860Z"
+      "detectedAt": "2026-11-08T00:59:59.045Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Real Madrid",
+      "type": "missing",
+      "imminent": false,
+      "headline": "European football: Mbappé eases Real Madrid past Valencia to move joint top",
+      "link": "https://www.theguardian.com/football/2026/nov/07/european-football-bayern-beat-mainz-but-neuers-record-breaking-day-turns-sour",
+      "feed": "guardian-football",
+      "matchCount": 1,
+      "detectedAt": "2026-11-08T00:59:59.045Z"
     },
     {
       "kind": "contract-breach",
@@ -22,7 +55,7 @@
       "severity": "high",
       "imminent": true,
       "detail": "Dekningskontrakt brutt: 5 av minst 6 ventede events innen 14 dager for Premier League (i sesong). Gå til den navngitte autoriteten (premier-league) og fyll tavla.",
-      "detectedAt": "2026-11-07T21:25:21.807Z"
+      "detectedAt": "2026-11-08T00:59:59.546Z"
     }
   ],
   "anomalies": [
@@ -31,7 +64,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-07T21:25:21.807Z"
+      "detectedAt": "2026-11-08T00:59:59.546Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
