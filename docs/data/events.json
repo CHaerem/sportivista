@@ -1,161 +1,6 @@
 [
   {
     "sport": "football",
-    "tournament": "OBOS-ligaen",
-    "title": "Sandnes Ulf – Lyn",
-    "time": "2026-10-25T13:30:00Z",
-    "endTime": null,
-    "venue": "Øster Hus Arena, Sandnes",
-    "norwegian": true,
-    "homeTeam": "Sandnes Ulf",
-    "awayTeam": "Lyn",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/fotball/obos-ligaen",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-19T05:50:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
-      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206093",
-      "https://www.fotmob.com/teams/8133/overview/sandnes-ulf"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "fotball-no",
-        "url": "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
-        "basis": "primary",
-        "retrievedAt": "2026-10-19T05:50:00Z",
-        "note": "fotball.no (NFF, primær) på både Lyns lagside (fiksId 161785) og OBOS-terminlisten (fiksId 206093): søn. 25. okt kl. 14.30 LOKAL = 13.30 UTC — 25. okt er ETTER sommertid-slutt (CET=UTC+1). FotMob korroborerer uavhengig med UTC-anker 13:30."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/fotball/obos-ligaen",
-        "basis": "official",
-        "retrievedAt": "2026-10-19T05:50:00Z"
-      }
-    },
-    "summary": "Lyns bortekamp mot Sandnes Ulf søndag 25. oktober kl. 14.30 på Øster Hus Arena (OBOS-ligaen, runde 28) — Lyns neste seriekamp etter hjemmekampen mot Moss 18. oktober.\n\nNB: sommertiden slutter natt til søndag 25. oktober, så 14.30 lokal tid er 13.30 UTC. Dato/tid/arena bekreftet mot fotball.nos primær-autoritet (Lyns lagside + OBOS-terminlisten) og uavhengig mot FotMobs UTC-anker.\n\nTV-valg kan flytte avspark 30–60 min; verify følger. Norsk visning TV 2 Play.",
-    "id": "60608c920d56",
-    "awayTeamEntityId": "fk-lyn-oslo",
-    "verifiedAt": "2026-10-23T10:17:15Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
-      "https://www.visitnorway.no/events//sandnes-ulf-lyn-1896-fotballklubb/515257/"
-    ]
-  },
-  {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen",
-    "title": "Sandnes – Bergen Håndball",
-    "time": "2026-10-25T16:00:00Z",
-    "endTime": null,
-    "venue": null,
-    "norwegian": true,
-    "homeTeam": "Sandnes",
-    "awayTeam": "Bergen Håndball",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-19T05:50:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/",
-      "https://www.flashscore.mobi/handball/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "flashscore",
-        "url": "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/",
-        "basis": "secondary",
-        "retrievedAt": "2026-10-19T05:50:00Z",
-        "note": "betexplorer + flashscore.mobi (begge Livesport-eide — korroborasjon på visningsnivå, ikke uavhengige kilder) enige om samme instant: søn. 25. okt 17:00 LOKAL = 16:00 UTC — 25. okt er ETTER sommertid-slutt (CET=UTC+1). handball.no uleselig → medium; verify fester mot forbundets terminliste."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball",
-        "basis": "official",
-        "retrievedAt": "2026-10-19T05:50:00Z"
-      }
-    },
-    "summary": "Sandnes møter Bergen Håndball i Elkjøp-ligaen (menn) søndag 25. oktober kl. 17.00 (16.00 UTC — sommertiden slutter samme natt).\n\nTid fra to samstemte aggregatorflater (begge Livesport-eide); verify fester mot handball.no før kampdag. Norsk visning TV 2 Play.",
-    "id": "e8477343e213",
-    "homeTeamEntityId": "sandnes-handballklubb",
-    "awayTeamEntityId": "bergen-handball",
-    "verifiedAt": "2026-10-25T09:57:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
-    ]
-  },
-  {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen",
-    "title": "Fjellhammer – Bergsøy",
-    "time": "2026-10-25T17:00:00Z",
-    "endTime": null,
-    "venue": null,
-    "norwegian": true,
-    "homeTeam": "Fjellhammer",
-    "awayTeam": "Bergsøy",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-19T05:50:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/",
-      "https://www.flashscore.mobi/handball/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "flashscore",
-        "url": "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/",
-        "basis": "secondary",
-        "retrievedAt": "2026-10-19T05:50:00Z",
-        "note": "betexplorer + flashscore.mobi (begge Livesport-eide — korroborasjon på visningsnivå, ikke uavhengige kilder) enige om samme instant: søn. 25. okt 18:00 LOKAL = 17:00 UTC (CET etter sommertid-slutt). handball.no uleselig → medium; verify fester mot forbundets terminliste."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball",
-        "basis": "official",
-        "retrievedAt": "2026-10-19T05:50:00Z"
-      }
-    },
-    "summary": "Fjellhammer tar imot Bergsøy i Elkjøp-ligaen (menn) søndag 25. oktober kl. 18.00 (17.00 UTC — etter sommertid-slutt).\n\nTid fra to samstemte aggregatorflater (begge Livesport-eide); verify fester mot handball.no før kampdag. Norsk visning TV 2 Play.",
-    "id": "63ec9dc92451",
-    "verifiedAt": "2026-10-25T09:57:00Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
-    ]
-  },
-  {
-    "sport": "football",
     "tournament": "NM-cupen",
     "title": "Tromsdalen – Lyn",
     "time": "2026-10-28T16:00:00Z",
@@ -1519,41 +1364,6 @@
   },
   {
     "sport": "football",
-    "tournament": "Serie A",
-    "title": "Lazio at Napoli",
-    "time": "2026-11-08T11:30:00.000Z",
-    "endTime": null,
-    "venue": "Stadio Diego Armando Maradona",
-    "meta": "Serie A",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "VG TV",
-        "url": "https://www.tvkampen.com/kamp/napoli-lazio-1899127",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/napoli-lazio-1899127",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Napoli",
-    "awayTeam": "Lazio",
-    "isFavorite": false,
-    "round": null,
-    "id": "f0eb537e73b7",
-    "homeTeamEntityId": "napoli",
-    "awayTeamEntityId": "lazio"
-  },
-  {
-    "sport": "football",
     "tournament": "OBOS-ligaen 2026",
     "title": "Strømmen – Lyn",
     "time": "2026-11-08T12:00:00Z",
@@ -1607,36 +1417,6 @@
       "https://www.fotmob.com/teams/4249/fixtures/strommen"
     ],
     "verifiedAt": "2026-11-06T13:06:00Z"
-  },
-  {
-    "sport": "football",
-    "tournament": "La Liga",
-    "title": "Real Betis at Elche",
-    "time": "2026-11-08T13:00:00.000Z",
-    "endTime": null,
-    "venue": "Estadio Martínez Valero",
-    "meta": "La Liga",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/elche-real-betis-1922672",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Elche",
-    "awayTeam": "Real Betis",
-    "isFavorite": false,
-    "round": null,
-    "id": "6c51295cca6b",
-    "homeTeamEntityId": "elche",
-    "awayTeamEntityId": "real-betis"
   },
   {
     "sport": "handball",
@@ -1702,41 +1482,6 @@
   },
   {
     "sport": "football",
-    "tournament": "Eliteserien",
-    "title": "Tromsø – Bodø/Glimt",
-    "time": "2026-11-08T13:30:00.000Z",
-    "endTime": null,
-    "venue": "Romssa Arena",
-    "meta": "Eliteserien",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Direkte",
-        "url": "https://www.tvkampen.com/kamp/troms-bodglimt-1963987",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/troms-bodglimt-1963987",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Tromsø",
-    "awayTeam": "Bodø/Glimt",
-    "isFavorite": true,
-    "round": null,
-    "id": "5ef74ea01a4b",
-    "homeTeamEntityId": "tromso",
-    "awayTeamEntityId": "bodo-glimt"
-  },
-  {
-    "sport": "football",
     "tournament": "Premier League",
     "title": "Brentford at Brighton & Hove Albion",
     "time": "2026-11-08T14:00:00.000Z",
@@ -1747,8 +1492,8 @@
     "streaming": [
       {
         "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/brighton-brentford-1914809",
-        "urlKind": "deep"
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -1778,8 +1523,8 @@
     "streaming": [
       {
         "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/crystal-palace-liverpool-1914810",
-        "urlKind": "deep"
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -1809,8 +1554,8 @@
     "streaming": [
       {
         "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/ipswich-bournemouth-1914813",
-        "urlKind": "deep"
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -1840,8 +1585,8 @@
     "streaming": [
       {
         "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/sunderland-chelsea-1914817",
-        "urlKind": "deep"
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -1964,9 +1709,9 @@
     "norwegian": false,
     "streaming": [
       {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/real-sociedad-rayo-vallecano-1922676",
-        "urlKind": "deep"
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -2185,6 +1930,41 @@
     "awayTeamEntityId": "1-fc-union-berlin"
   },
   {
+    "sport": "football",
+    "tournament": "Serie A",
+    "title": "Como at Internazionale",
+    "time": "2026-11-08T17:00:00.000Z",
+    "endTime": null,
+    "venue": "San Siro",
+    "meta": "Serie A",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "VG TV",
+        "url": "https://www.tvkampen.com/kamp/inter-como-1899125",
+        "urlKind": "deep"
+      },
+      {
+        "platform": "Viaplay",
+        "url": "https://www.tvkampen.com/kamp/inter-como-1899125",
+        "urlKind": "deep"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Internazionale",
+    "awayTeam": "Como",
+    "isFavorite": false,
+    "round": null,
+    "id": "e3028a14a3b1",
+    "homeTeamEntityId": "internazionale",
+    "awayTeamEntityId": "como"
+  },
+  {
     "sport": "f1",
     "tournament": "Formula 1 2026 - Race Weekend",
     "title": "MSC Cruises São Paulo Grand Prix",
@@ -2278,41 +2058,6 @@
     "isFavorite": false,
     "round": null,
     "id": "0e4b88ec3552"
-  },
-  {
-    "sport": "football",
-    "tournament": "Serie A",
-    "title": "Como at Internazionale",
-    "time": "2026-11-08T17:00:00.000Z",
-    "endTime": null,
-    "venue": "San Siro",
-    "meta": "Serie A",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "VG TV",
-        "url": "https://www.tvkampen.com/kamp/inter-como-1899125",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/inter-como-1899125",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Internazionale",
-    "awayTeam": "Como",
-    "isFavorite": false,
-    "round": null,
-    "id": "e3028a14a3b1",
-    "homeTeamEntityId": "internazionale",
-    "awayTeamEntityId": "como"
   },
   {
     "sport": "football",

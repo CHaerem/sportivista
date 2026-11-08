@@ -1,8 +1,19 @@
 {
-  "generatedAt": "2026-11-08T11:41:12.980Z",
+  "generatedAt": "2026-11-08T17:35:32.815Z",
   "gapCount": 7,
   "anomalyCount": 1,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Glimt",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Glimt-stjerne fraktet til sykehuset – erstatteren senket Tromsø",
+      "link": "https://www.tv2.no/a/19407171",
+      "feed": "tv2-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-11-08T17:35:31.783Z"
+    },
     {
       "kind": "entity",
       "entity": "Rosenborg",
@@ -11,8 +22,8 @@
       "headline": "Svensson-show senket Start: sørlendingene skimter stupet",
       "link": "https://www.nrk.no/sport/svensson-show-senket-start_-sorlendingene-skimter-stupet--1.18076591",
       "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-08T11:41:11.830Z"
+      "matchCount": 2,
+      "detectedAt": "2026-11-08T17:35:31.783Z"
     },
     {
       "kind": "entity",
@@ -23,18 +34,18 @@
       "link": "https://www.theguardian.com/football/2026/nov/07/enzo-maresca-nottingham-forest-manchester-city-premier-league",
       "feed": "guardian-football",
       "matchCount": 2,
-      "detectedAt": "2026-11-08T11:41:11.830Z"
+      "detectedAt": "2026-11-08T17:35:31.783Z"
     },
     {
       "kind": "entity",
       "entity": "Arsenal",
       "type": "missing",
-      "imminent": true,
-      "headline": "Liverpool v Arsenal: Women’s Super League – live",
-      "link": "https://www.theguardian.com/football/live/2026/nov/08/liverpool-v-arsenal-womens-super-league-live",
+      "imminent": false,
+      "headline": "Wirtz provides quality to seal Liverpool win over lacklustre Crystal Palace",
+      "link": "https://www.theguardian.com/football/2026/nov/08/crystal-palace-liverpool-premier-league-match-report",
       "feed": "guardian-football",
-      "matchCount": 6,
-      "detectedAt": "2026-11-08T11:41:11.830Z"
+      "matchCount": 3,
+      "detectedAt": "2026-11-08T17:35:31.783Z"
     },
     {
       "kind": "entity",
@@ -45,18 +56,7 @@
       "link": "https://www.nrk.no/sport/rodt-kort-og-hoy-temperatur-da-real-madrid-sikret-komfortabel-borteseier-1.18076620",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-11-08T11:41:11.830Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "1. divisjon",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Bjarg med første stikk i opprykkskampen",
-      "link": "https://www.nrk.no/sport/bjarg-med-forste-stikk-i-opprykkskampen-1.18076504",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-08T11:41:11.830Z"
+      "detectedAt": "2026-11-08T17:35:31.783Z"
     },
     {
       "kind": "entity",
@@ -67,7 +67,7 @@
       "link": "https://www.nrk.no/sport/norris-starter-forst-i-brasil-_-massivt-regnvaer-preget-formel-1-kvalifiseringen-1.18076600",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-11-08T11:41:11.830Z"
+      "detectedAt": "2026-11-08T17:35:31.783Z"
     },
     {
       "kind": "contract-breach",
@@ -76,8 +76,8 @@
       "sport": "football",
       "severity": "high",
       "imminent": true,
-      "detail": "Dekningskontrakt brutt: 5 av minst 6 ventede events innen 14 dager for Premier League (i sesong). Gå til den navngitte autoriteten (premier-league) og fyll tavla.",
-      "detectedAt": "2026-11-08T11:41:12.838Z"
+      "detail": "Dekningskontrakt brutt: 0 av minst 6 ventede events innen 14 dager for Premier League (i sesong). Gå til den navngitte autoriteten (premier-league) og fyll tavla.",
+      "detectedAt": "2026-11-08T17:35:32.674Z"
     }
   ],
   "anomalies": [
@@ -86,7 +86,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-08T11:41:12.838Z"
+      "detectedAt": "2026-11-08T17:35:32.674Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
