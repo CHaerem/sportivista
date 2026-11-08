@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-08T17:35:31.575Z",
+  "generatedAt": "2026-11-08T21:39:56.239Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
     "amendRate": "yellow",
     "silentStops": "yellow",
     "participantStatus": "green",
-    "contracts": "yellow"
+    "contracts": "red"
   },
   "basis": {
     "coverageAudit": true,
@@ -27,7 +27,7 @@
       "medium": 7,
       "low": 0
     },
-    "oldestGapAgeDays": 15.37,
+    "oldestGapAgeDays": 15.54,
     "escalatable": 7,
     "catalogMatched": 3,
     "auditedAt": "2026-11-07T10:30:00Z",
@@ -35,49 +35,49 @@
       {
         "interest": "Esport/CS2 — CS2 Major Singapore 2026 (PGL Major, 25. nov–13. des, Stage 1 ~24.–27. nov) — 100 Thieves kvalifisert",
         "severity": "medium",
-        "ageDays": 9.31,
+        "ageDays": 9.48,
         "recurrences": 8,
         "catalogMatched": true
       },
       {
         "interest": "Hopp — FIS hopp-verdenscupåpningen Lillehammer (20.–22. nov) + Ruka (28.–29. nov)",
         "severity": "medium",
-        "ageDays": 15.37,
+        "ageDays": 15.54,
         "recurrences": 14,
         "catalogMatched": false
       },
       {
         "interest": "Langrenn — sesongåpning: VC-premieren Ruka (27.–29. nov) + norsk åpning Beitostølen (~20.–22. nov)",
         "severity": "medium",
-        "ageDays": 11.33,
+        "ageDays": 11.5,
         "recurrences": 10,
         "catalogMatched": false
       },
       {
         "interest": "Alpint — Verdenscupen fortsetter Gurgl (21.–22. nov) + Copper Mountain/Killington (28.–29. nov)",
         "severity": "medium",
-        "ageDays": 12.34,
+        "ageDays": 12.51,
         "recurrences": 11,
         "catalogMatched": false
       },
       {
         "interest": "Skiskyting — VC-premieren Kontiolahti (~26.–29. nov, NRK, tier1 wholesale)",
         "severity": "medium",
-        "ageDays": 8.31,
+        "ageDays": 8.48,
         "recurrences": 7,
         "catalogMatched": false
       },
       {
         "interest": "Sjakk — klassisk VM 2026 Gukesh–Sindarov (Genève, ~24./25. nov–13./15. des, parti 1 ~24. nov)",
         "severity": "medium",
-        "ageDays": 10.32,
+        "ageDays": 10.49,
         "recurrences": 9,
         "catalogMatched": true
       },
       {
         "interest": "Fotball — Brann i Conference League MD4 hjemme mot Aarhus (tor. 26. nov)",
         "severity": "medium",
-        "ageDays": 10.32,
+        "ageDays": 10.49,
         "recurrences": 9,
         "catalogMatched": true
       }
@@ -181,21 +181,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-08T17:35:27.126Z",
+    "buildCheckedAt": "2026-11-08T21:39:54.253Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-08T11:41:13.197Z",
-    "manifestAgeHours": 5.91,
+    "manifestGeneratedAt": "2026-11-08T17:35:32.993Z",
+    "manifestAgeHours": 4.07,
     "staleFiles": [
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-11-07T14:55:00Z",
-        "ageHours": 26.68
+        "ageHours": 30.75
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-11-07T11:54:08.793Z",
-    "verifyAgeHours": 29.69,
+    "verifyAgeHours": 33.76,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -205,6 +205,13 @@
     "inSeason": 6,
     "breached": [
       {
+        "id": "football:eliteserien",
+        "name": "Eliteserien",
+        "upcoming": 1,
+        "minUpcoming": 2,
+        "horizonDays": 14
+      },
+      {
         "id": "football:premier-league",
         "name": "Premier League",
         "upcoming": 0,
@@ -212,6 +219,6 @@
         "horizonDays": 14
       }
     ],
-    "generatedAt": "2026-11-08T17:35:31.575Z"
+    "generatedAt": "2026-11-08T21:39:56.238Z"
   }
 }

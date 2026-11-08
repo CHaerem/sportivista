@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T17:35:31.575Z",
+  "generatedAt": "2026-11-08T21:39:56.238Z",
   "contracts": [
     {
       "id": "alpine:world-cup",
@@ -95,8 +95,8 @@
       ],
       "note": "Ukentlige runder (8 kamper) april–november. horizonDays 14 spenner landslagspausen (~10 d) så neste runde LIGGER i horisonten når den fylles. minUpcoming SENKET 4→2 (improve, 07.09.2026): ESPN nor.1-fetcheren fyller kun ~5–6 dager fram om gangen, så under en landslagspause er neste rundes fjerne halvdel (7–9 d ut) ennå ikke boardet, og et krav om nesten-hel runde (4) innen horisonten er uoppfyllelig gjennom pausevinduet. Det ga et falskt HIGH-brudd hele landslagspause-helgen (8 brudd på 05.–06.09, upcoming 2–3) som to agenter uavhengig triagerte som falskpositivt — akkurat den agent-triage/G2-støyen schemaet ber oss unngå med KONSERVATIVE tall. 2 beviser fortsatt at ligaen LEVER på tavla og en død fetcher (upcoming 0–1) bryter fremdeles; completeness (hel runde boardet) er coverage-critic/coverage-gaps' jobb, ikke kontraktens.",
       "inSeason": true,
-      "upcoming": 2,
-      "status": "met"
+      "upcoming": 1,
+      "status": "breached"
     },
     {
       "id": "football:premier-league",
@@ -144,7 +144,7 @@
       ],
       "note": "Tilnærmet ukentlige turneringer januar–november; min 1 innen 14 d.",
       "inSeason": true,
-      "upcoming": 2,
+      "upcoming": 1,
       "status": "met"
     },
     {
@@ -169,7 +169,7 @@
       ],
       "note": "Tilnærmet ukentlige turneringer januar–november (FedExCup + høstserien); min 1 innen 21 d. Horisonten er 21 (ikke 14 som DP World Tour) fordi PGA Tour har ÉN legitim ~2,5-ukers sesongpause mellom TOUR Championship (~30. aug) og FedExCup Fall-åpningen (2026: Biltmore Championship 17.–20. sep, etter at Procore falt bort) — med 14 d fyrte kontrakten et falskt brudd hver kjøring gjennom hele det vinduet mens golf-dekningen faktisk var komplett (Biltmore boardet). 21 d tåler pausen; resten av sesongen er ukentlig så løftet er uendret i praksis.",
       "inSeason": true,
-      "upcoming": 3,
+      "upcoming": 2,
       "status": "met"
     },
     {
@@ -199,6 +199,7 @@
     }
   ],
   "breached": [
+    "football:eliteserien",
     "football:premier-league"
   ],
   "note": "WP-243: dekningskontrakten per konkurranse — mekanisk måling av løftet i authority.json (contract-blokkene) mot tavla. Brudd triageres av coverage-critic/research via coverage-gaps.json; contracts-porten i port-report.json ruller dommen inn i G2-målingen."
