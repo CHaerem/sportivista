@@ -1,62 +1,76 @@
 {
-  "generatedAt": "2026-11-08T21:39:59.398Z",
-  "gapCount": 7,
+  "generatedAt": "2026-11-09T01:20:55.204Z",
+  "gapCount": 8,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Bodø/Glimt",
+      "entity": "Barcelona",
       "type": "missing",
       "imminent": false,
-      "headline": "Glimt vant skandalekamp - la press på Viking i gullkampen",
-      "link": "https://www.aftenposten.no/sport/i/0vEA9J/glimt-vant-skandalekamp-la-press-paa-viking-i-gullkampen?utm_medium=rss",
-      "feed": "aftenposten-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-11-08T21:39:56.449Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Glimt",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Glimt vant skandalekamp - la press på Viking i gullkampen",
-      "link": "https://www.aftenposten.no/sport/i/0vEA9J/glimt-vant-skandalekamp-la-press-paa-viking-i-gullkampen?utm_medium=rss",
-      "feed": "aftenposten-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-11-08T21:39:56.449Z"
+      "headline": "Barcelona move clear at the top after Fermín López’s double stuns Atlético Madrid",
+      "link": "https://www.theguardian.com/football/2026/nov/08/atletico-madrid-barcelona-la-liga-match-report",
+      "feed": "guardian-football",
+      "matchCount": 1,
+      "detectedAt": "2026-11-09T01:20:54.235Z"
     },
     {
       "kind": "entity",
       "entity": "Arsenal",
       "type": "missing",
       "imminent": false,
-      "headline": "Wirtz provides quality as Liverpool leave Crystal Palace propping up table",
-      "link": "https://www.theguardian.com/football/2026/nov/08/crystal-palace-liverpool-premier-league-match-report",
+      "headline": "Russo on target again as double fires under-pressure Arsenal to vital WSL win at Liverpool",
+      "link": "https://www.theguardian.com/football/2026/nov/08/liverpool-arsenal-wsl-match-report",
       "feed": "guardian-football",
-      "matchCount": 2,
-      "detectedAt": "2026-11-08T21:39:56.449Z"
+      "matchCount": 1,
+      "detectedAt": "2026-11-09T01:20:54.235Z"
     },
     {
       "kind": "entity",
       "entity": "Liverpool",
       "type": "missing",
       "imminent": false,
-      "headline": "Wirtz provides quality as Liverpool leave Crystal Palace propping up table",
-      "link": "https://www.theguardian.com/football/2026/nov/08/crystal-palace-liverpool-premier-league-match-report",
+      "headline": "Crystal Palace poised to sack Pierre Sage and target Frank after Liverpool defeat",
+      "link": "https://www.theguardian.com/football/2026/nov/08/crystal-palace-pierre-sage-thomas-frank-main-candidate-manager-selhurst-park",
       "feed": "guardian-football",
       "matchCount": 2,
-      "detectedAt": "2026-11-08T21:39:56.449Z"
+      "detectedAt": "2026-11-09T01:20:54.235Z"
     },
     {
-      "kind": "entity",
-      "entity": "Premier League",
+      "kind": "tracked-claim",
+      "entity": "La Liga 2026/27 (Barcelona)",
+      "group": "leagues",
+      "sport": "football",
       "type": "missing",
       "imminent": false,
-      "headline": "Ellevill målfest da United reddet poeng seks minutter på overtid",
-      "link": "https://www.aftenposten.no/sport/i/kMaj1k/ellevill-maalfest-da-united-reddet-poeng-seks-minutter-paa-overtid?utm_medium=rss",
-      "feed": "aftenposten-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-11-08T21:39:56.449Z"
+      "claimedDate": "2027-07-15T00:00:00.000Z",
+      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
+      "trackedId": "la-liga-2026-27",
+      "detectedAt": "2026-11-09T01:20:54.980Z"
+    },
+    {
+      "kind": "tracked-claim",
+      "entity": "Serie A 2026/27",
+      "group": "leagues",
+      "sport": "football",
+      "type": "missing",
+      "imminent": false,
+      "claimedDate": "2027-08-22T00:00:00.000Z",
+      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
+      "trackedId": "serie-a-2026-27",
+      "detectedAt": "2026-11-09T01:20:54.980Z"
+    },
+    {
+      "kind": "tracked-claim",
+      "entity": "Bundesliga 2026/27",
+      "group": "leagues",
+      "sport": "football",
+      "type": "missing",
+      "imminent": false,
+      "claimedDate": "2027-08-28T00:00:00.000Z",
+      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
+      "trackedId": "bundesliga-2026-27",
+      "detectedAt": "2026-11-09T01:20:54.980Z"
     },
     {
       "kind": "contract-breach",
@@ -66,7 +80,7 @@
       "severity": "high",
       "imminent": true,
       "detail": "Dekningskontrakt brutt: 1 av minst 2 ventede events innen 14 dager for Eliteserien (i sesong). Gå til den navngitte autoriteten (eliteserien, fotball-no) og fyll tavla.",
-      "detectedAt": "2026-11-08T21:39:57.217Z"
+      "detectedAt": "2026-11-09T01:20:55.039Z"
     },
     {
       "kind": "contract-breach",
@@ -76,7 +90,7 @@
       "severity": "high",
       "imminent": true,
       "detail": "Dekningskontrakt brutt: 0 av minst 6 ventede events innen 14 dager for Premier League (i sesong). Gå til den navngitte autoriteten (premier-league) og fyll tavla.",
-      "detectedAt": "2026-11-08T21:39:57.217Z"
+      "detectedAt": "2026-11-09T01:20:55.039Z"
     }
   ],
   "anomalies": [
@@ -85,7 +99,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-08T21:39:57.218Z"
+      "detectedAt": "2026-11-09T01:20:55.039Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
