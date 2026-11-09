@@ -111,6 +111,19 @@
 							"items": { "type": "integer", "minimum": 1, "maximum": 12 },
 							"description": "Kalendermånedene (UTC) konkurransen er i sesong; utenfor er status off-season, aldri brudd."
 						},
+						"breaks": {
+							"type": "array",
+							"description": "Valgfritt: kjente midt-i-sesongen-pauser der konkurransen IKKE spiller (FIFA-landslagsvinduer o.l.). I disse vinduene er status «break», aldri brudd. Modellerer den midt-i-måneden-pausen months (hele kalendermåneder) ikke kan fange — under novembervinduet 9.–17. nov spilte verken PL eller Eliteserien, så upcoming falt under minUpcoming selv om ligaene lever. Datoene er UTC date-only (YYYY-MM-DD), inklusive begge ender.",
+							"items": {
+								"type": "object",
+								"additionalProperties": false,
+								"required": ["from", "to"],
+								"properties": {
+									"from": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "description": "Pausens første dag (UTC, YYYY-MM-DD)." },
+									"to": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "description": "Pausens siste dag (UTC, YYYY-MM-DD), inklusive." }
+								}
+							}
+						},
 						"note": { "type": "string", "description": "Begrunnelsen for tallene (kadens, kjente pauser)." }
 					}
 				}

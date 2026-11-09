@@ -94,6 +94,69 @@ describe("assessContracts", () => {
 		expect(contracts.some((c) => c.id === "cycling:tour-de-france")).toBe(false);
 	});
 
+	// A known mid-month FIFA break window: during it the competition does not play,
+	// so upcoming legitimately drops below minUpcoming. `breaks` must suppress the
+	// breach (status "break"), because `months` (whole months) cannot model a pause
+	// inside a month.
+	const BREAK_AUTH = {
+		competitions: [
+			{
+				id: "football:eliteserien",
+				sport: "football",
+				name: "Eliteserien",
+				match: ["eliteserien"],
+				time: { sourceIds: ["eliteserien"] },
+				contract: {
+					horizonDays: 14,
+					minUpcoming: 2,
+					months: [4, 5, 6, 7, 8, 9, 10, 11],
+					breaks: [{ from: "2026-11-09", to: "2026-11-17" }],
+				},
+			},
+		],
+	};
+
+	it("break: during a known pause window, too-few upcoming is 'break', never 'breached'", () => {
+		const now = Date.parse("2026-11-12T10:00:00Z"); // inside 09–17 Nov window
+		const only = { sport: "football", tournament: "Eliteserien", title: "Straggler", time: new Date(now + 2 * 86400000).toISOString() };
+		const { contracts, breached } = assessContracts(BREAK_AUTH, [only], now); // upcoming 1 < min 2
+		const c = contracts.find((x) => x.id === "football:eliteserien");
+		expect(c.status).toBe("break");
+		expect(c.inBreak).toBe(true);
+		expect(c.upcoming).toBe(1);
+		expect(breached).not.toContain("football:eliteserien");
+	});
+
+	it("break: still breaches with too-few upcoming when now is OUTSIDE the window (same in-season month)", () => {
+		const now = Date.parse("2026-11-20T10:00:00Z"); // month 11, but after the window
+		const only = { sport: "football", tournament: "Eliteserien", title: "Lone", time: new Date(now + 2 * 86400000).toISOString() };
+		const { contracts, breached } = assessContracts(BREAK_AUTH, [only], now);
+		const c = contracts.find((x) => x.id === "football:eliteserien");
+		expect(c.status).toBe("breached");
+		expect(c.inBreak).toBeUndefined();
+		expect(breached).toEqual(["football:eliteserien"]);
+	});
+
+	it("break: window never upgrades a healthy board or masks off-season", () => {
+		const now = Date.parse("2026-11-12T10:00:00Z"); // inside window
+		const full = [1, 3].map((d) => ({ sport: "football", tournament: "Eliteserien", title: `Kamp ${d}`, time: new Date(now + d * 86400000).toISOString() }));
+		const { contracts } = assessContracts(BREAK_AUTH, full, now); // upcoming 2 >= min 2, but in break
+		// Transparent: during a pause the honest state is "break", not "met" — upcoming is still reported.
+		expect(contracts[0].status).toBe("break");
+		expect(contracts[0].upcoming).toBe(2);
+		// Off-season (July) wins over any window: a break only applies in season.
+		const july = Date.parse("2026-07-01T10:00:00Z");
+		const offAuth = { competitions: [{ ...BREAK_AUTH.competitions[0], contract: { ...BREAK_AUTH.competitions[0].contract, months: [4], breaks: [{ from: "2026-07-01", to: "2026-07-31" }] } }] };
+		expect(assessContracts(offAuth, [], july).contracts[0].status).toBe("off-season");
+	});
+
+	it("break: a malformed window is ignored (fail-soft)", () => {
+		const now = Date.parse("2026-11-12T10:00:00Z");
+		const bad = { competitions: [{ ...BREAK_AUTH.competitions[0], contract: { ...BREAK_AUTH.competitions[0].contract, breaks: [{ from: "oops" }, null, { to: "2026-11-17" }] } }] };
+		const { contracts } = assessContracts(bad, [], now); // upcoming 0, no valid window
+		expect(contracts[0].status).toBe("breached");
+	});
+
 	it("is empty and silent without contracts or without an authority map (fail-soft)", () => {
 		expect(assessContracts(null, [el("x", days(1))], NOW)).toEqual({ contracts: [], breached: [] });
 		expect(

@@ -1,6 +1,6 @@
 {
 	"$schema": "./authority.schema.json",
-	"updatedAt": "2026-11-04",
+	"updatedAt": "2026-11-09",
 	"notes": "WP-241 · Autoritetskartet: hvem SKAPER faktumet, per konkurranse på tavla. To kilder per event, fordi produktets to kjernefelt har to ulike skapere: TIDEN settes av arrangøren/ligaen/forbundet, KANALEN av kringkasteren selv. Id-ene peker inn i scripts/config/sources.json (WP-240) — registeret er sannheten om hvilket domene som ER arrangøren, og det er lookalike-vernet: da dette kartet ble seedet sto lookalike-domenet franceletour.com som evidens på en Tour de France-etappe, mens letour.fr (A.S.O., som faktisk lager ruta og starttidene) forekom NULL ganger i hele events.json. Research slår opp konkurransen her og går til autoriteten FØRST (scripts/agents/research.md); verify sjekker kanalen mot kringkasterens egen kilde (scripts/agents/verify.md); scripts/lib/provenance.js migrerer flat evidence til per-faktum-proveniens (WP-242) med det samme kartet. SEEDET 29.07.2026 med hver konkurranse som faktisk sto på tavla den dagen; kanal-valgene speiler .claude/skills/norwegian-rights (prioren) og tavlas verifiserte verdier. AI-VEDLIKEHOLDT som catalog.json: research utvider kartet når en ny konkurranse dekkes — alltid med arrangørens VIRKELIGE domene, registrert i sources.json først.",
 	"competitions": [
 		{
@@ -870,7 +870,12 @@
 					10,
 					11
 				],
-				"note": "Ukentlige runder (8 kamper) april–november. horizonDays 14 spenner landslagspausen (~10 d) så neste runde LIGGER i horisonten når den fylles. minUpcoming SENKET 4→2 (improve, 07.09.2026): ESPN nor.1-fetcheren fyller kun ~5–6 dager fram om gangen, så under en landslagspause er neste rundes fjerne halvdel (7–9 d ut) ennå ikke boardet, og et krav om nesten-hel runde (4) innen horisonten er uoppfyllelig gjennom pausevinduet. Det ga et falskt HIGH-brudd hele landslagspause-helgen (8 brudd på 05.–06.09, upcoming 2–3) som to agenter uavhengig triagerte som falskpositivt — akkurat den agent-triage/G2-støyen schemaet ber oss unngå med KONSERVATIVE tall. 2 beviser fortsatt at ligaen LEVER på tavla og en død fetcher (upcoming 0–1) bryter fremdeles; completeness (hel runde boardet) er coverage-critic/coverage-gaps' jobb, ikke kontraktens."
+				"breaks": [
+					{ "from": "2026-09-21", "to": "2026-10-06" },
+					{ "from": "2026-11-09", "to": "2026-11-17" },
+					{ "from": "2027-06-07", "to": "2027-06-15" }
+				],
+				"note": "Ukentlige runder (8 kamper) april–november. horizonDays 14 spenner landslagspausen (~10 d) så neste runde LIGGER i horisonten når den fylles. minUpcoming SENKET 4→2 (improve, 07.09.2026): ESPN nor.1-fetcheren fyller kun ~5–6 dager fram om gangen, så under en landslagspause er neste rundes fjerne halvdel (7–9 d ut) ennå ikke boardet, og et krav om nesten-hel runde (4) innen horisonten er uoppfyllelig gjennom pausevinduet. Det ga et falskt HIGH-brudd hele landslagspause-helgen (8 brudd på 05.–06.09, upcoming 2–3) som to agenter uavhengig triagerte som falskpositivt — akkurat den agent-triage/G2-støyen schemaet ber oss unngå med KONSERVATIVE tall. 2 beviser fortsatt at ligaen LEVER på tavla og en død fetcher (upcoming 0–1) bryter fremdeles; completeness (hel runde boardet) er coverage-critic/coverage-gaps' jobb, ikke kontraktens. breaks TILFØYD (improve, 09.11.2026): en MIDT-I-MÅNEDEN FIFA-landslagspause presset upcoming helt ned til 1 (kun dagens straggler-kamp før pausen), under 2, så kontrakten meldte falskt HIGH-brudd hver kjøring gjennom novembervinduet 2026 — months (hele måneder) kan ikke fange en pause inni november, og å slakke minUpcoming videre hjelper ikke når upcoming treffer 0. breaks modellerer den dokumenterte årsaken (FIFAs landslagskalender 2026/27: 21.09–06.10, 09.–17.11 2026, 07.–15.06 2027) → status «break», aldri brudd, i disse vinduene. Mars-vinduet utelatt (Eliteserien off-season i mars)."
 			}
 		},
 		{
@@ -1000,7 +1005,12 @@
 					11,
 					12
 				],
-				"note": "Ukentlige runder (10 kamper) august–mai; 14 d + min 6 tåler landslagspauser og cuphelger."
+				"breaks": [
+					{ "from": "2026-09-21", "to": "2026-10-06" },
+					{ "from": "2026-11-09", "to": "2026-11-17" },
+					{ "from": "2027-03-22", "to": "2027-03-30" }
+				],
+				"note": "Ukentlige runder (10 kamper) august–mai; 14 d + min 6 tåler cuphelger. breaks TILFØYD (improve, 09.11.2026): en FIFA-landslagspause tåles IKKE av min 6 — under en pause spiller PL ikke, upcoming faller til 0, og ingen minUpcoming > 0 kan oppfylles. months (hele måneder) kan ikke fange en midt-i-måneden-pause (novembervinduet 09.–17.11 ligger inni måned 11). breaks modellerer den dokumenterte årsaken (FIFAs landslagskalender 2026/27: 21.09–06.10, 09.–17.11 2026, 22.–30.03 2027) → status «break», aldri brudd, i disse vinduene. Juni-vinduet utelatt (PL off-season)."
 			}
 		},
 		{
