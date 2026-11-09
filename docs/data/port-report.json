@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-09T13:36:01.970Z",
+  "generatedAt": "2026-11-09T23:16:44.746Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
     "amendRate": "yellow",
     "silentStops": "yellow",
-    "participantStatus": "yellow",
-    "contracts": "red"
+    "participantStatus": "green",
+    "contracts": "green"
   },
   "basis": {
     "coverageAudit": true,
@@ -27,7 +27,7 @@
       "medium": 9,
       "low": 0
     },
-    "oldestGapAgeDays": 16.2,
+    "oldestGapAgeDays": 16.61,
     "escalatable": 7,
     "catalogMatched": 5,
     "auditedAt": "2026-11-09T11:05:00Z",
@@ -35,75 +35,75 @@
       {
         "interest": "Fotball — Premier League (contract-breach TRIAGERT FALSK: landslagspause)",
         "severity": "medium",
-        "ageDays": 0.1,
+        "ageDays": 0.51,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Fotball — Eliteserien (contract-breach TRIAGERT FALSK: landslagspause)",
         "severity": "medium",
-        "ageDays": 0.1,
+        "ageDays": 0.51,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Hopp — FIS hopp-verdenscupåpningen Lillehammer (20.–22. nov) + Ruka (28.–29. nov)",
         "severity": "medium",
-        "ageDays": 16.2,
+        "ageDays": 16.61,
         "recurrences": 15,
         "catalogMatched": false
       },
       {
         "interest": "Langrenn — sesongåpning: VC-premieren Ruka (27.–29. nov) + norsk åpning Beitostølen (~20.–22. nov)",
         "severity": "medium",
-        "ageDays": 12.16,
+        "ageDays": 12.56,
         "recurrences": 11,
         "catalogMatched": false
       },
       {
         "interest": "Alpint — Verdenscupen fortsetter Gurgl (21.–22. nov) + Copper Mountain/Killington (28.–29. nov)",
         "severity": "medium",
-        "ageDays": 13.17,
+        "ageDays": 13.57,
         "recurrences": 12,
         "catalogMatched": false
       },
       {
         "interest": "Skiskyting — VC-premieren Kontiolahti (~26.–29. nov, NRK, tier1 wholesale)",
         "severity": "medium",
-        "ageDays": 9.14,
+        "ageDays": 9.55,
         "recurrences": 8,
         "catalogMatched": false
       },
       {
         "interest": "Esport/CS2 — CS2 Major Singapore 2026 (PGL Major, Stage 1 ~24.–27. nov) — 100 Thieves kvalifisert",
         "severity": "medium",
-        "ageDays": 10.15,
+        "ageDays": 10.55,
         "recurrences": 9,
         "catalogMatched": true
       },
       {
         "interest": "Sjakk — klassisk VM 2026 Gukesh–Sindarov (Genève, ~24./25. nov–13./15. des, parti 1 ~24. nov)",
         "severity": "medium",
-        "ageDays": 11.15,
+        "ageDays": 11.55,
         "recurrences": 10,
         "catalogMatched": true
       },
       {
         "interest": "Fotball — Brann i Conference League MD4 hjemme mot Aarhus (tor. 26. nov)",
         "severity": "medium",
-        "ageDays": 11.15,
+        "ageDays": 11.55,
         "recurrences": 10,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.25,
-    "nearTermChecked": 8,
+    "nearTermRate": 0.4,
+    "nearTermChecked": 5,
     "nearTermAmended": 2,
-    "verifyRunAt": "2026-11-07T11:54:08.793Z",
+    "verifyRunAt": "2026-11-09T14:08:06Z",
     "windowRate": 0,
-    "windowChecks": 54,
+    "windowChecks": 57,
     "windowAmendments": 0,
     "windowCorrections": 3,
     "byDay": [
@@ -183,49 +183,43 @@
         "amendments": 0,
         "corrections": 2,
         "rate": 0
+      },
+      {
+        "date": "2026-11-09",
+        "checks": 3,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-09T13:35:57.501Z",
+    "buildCheckedAt": "2026-11-09T23:16:40.631Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-09T10:43:48.709Z",
-    "manifestAgeHours": 2.87,
+    "manifestGeneratedAt": "2026-11-09T13:36:03.322Z",
+    "manifestAgeHours": 9.68,
     "staleFiles": [
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-11-07T14:55:00Z",
-        "ageHours": 46.68
+        "ageHours": 56.36
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-11-07T11:54:08.793Z",
-    "verifyAgeHours": 49.7,
-    "corrections": 0,
+    "checkedAt": "2026-11-09T14:08:06Z",
+    "verifyAgeHours": 9.14,
+    "corrections": 1,
     "unresolved": 0,
-    "signals": []
+    "signals": [
+      "Casper Ruud – TBD (9544b2d17d6e, Stockholm Open 11.11) + Nitto ATP Finals: statiske ESPN-tennisevents (ikke ai-research). WP-95-deltakersjekk: fant ingen ind…"
+    ]
   },
   "contracts": {
     "total": 9,
     "inSeason": 6,
-    "breached": [
-      {
-        "id": "football:eliteserien",
-        "name": "Eliteserien",
-        "upcoming": 1,
-        "minUpcoming": 2,
-        "horizonDays": 14
-      },
-      {
-        "id": "football:premier-league",
-        "name": "Premier League",
-        "upcoming": 0,
-        "minUpcoming": 6,
-        "horizonDays": 14
-      }
-    ],
-    "generatedAt": "2026-11-09T13:36:01.970Z"
+    "breached": [],
+    "generatedAt": "2026-11-09T23:16:44.746Z"
   }
 }
