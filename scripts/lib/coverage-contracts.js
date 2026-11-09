@@ -17,6 +17,16 @@
 // status «off-season», aldri brudd (sesongærlighet — en taus vinterserie i
 // juli er ikke et dekningshull).
 //
+// `breaks` (valgfritt) er kjente midt-i-sesongen-pauser der konkurransen IKKE
+// spiller (FIFA-landslagsvinduer o.l.) — i disse vinduene er status «break»,
+// aldri brudd. `months` dekker hele kalendermåneder og kan derfor ikke fange en
+// midt-i-måneden-pause: under novembervinduet (9.–17. nov 2026) spilte verken
+// Premier League eller Eliteserien, så `upcoming` falt under minUpcoming selv om
+// ligaene lever og neste runde er bekreftet — et falskt HIGH-brudd hver kjøring
+// gjennom hele pausen. `break` modellerer den dokumenterte årsaken (FIFAs
+// landslagskalender) i stedet for å slakke minUpcoming (som ikke hjelper når
+// upcoming = 0). Datoene er UTC date-only (YYYY-MM-DD), inklusive begge ender.
+//
 // Event→konkurranse-tilordningen GJENBRUKER provenance.findCompetition (samme
 // lengste-treff-semantikk som proveniens-migreringen, WP-242), og vindus-
 // tellingen bruker isEventInWindow (konvensjonen — flerdagers events teller).
@@ -51,7 +61,14 @@ export function assessContracts(authority, events, now = Date.now()) {
 	const contracts = contracted.map((c) => {
 		const inSeason = (c.contract.months || []).includes(month);
 		const upcoming = counts.get(c.id);
-		const status = !inSeason ? "off-season" : upcoming >= c.contract.minUpcoming ? "met" : "breached";
+		const inBreak = inSeason && isWithinBreak(c.contract.breaks, now);
+		const status = !inSeason
+			? "off-season"
+			: inBreak
+			? "break"
+			: upcoming >= c.contract.minUpcoming
+			? "met"
+			: "breached";
 		return {
 			id: c.id,
 			name: c.name,
@@ -62,9 +79,26 @@ export function assessContracts(authority, events, now = Date.now()) {
 			months: c.contract.months || [],
 			...(c.contract.note ? { note: c.contract.note } : {}),
 			inSeason,
+			...(inBreak ? { inBreak: true } : {}),
 			upcoming,
 			status,
 		};
 	});
 	return { contracts, breached: contracts.filter((c) => c.status === "breached").map((c) => c.id) };
+}
+
+/**
+ * Er `now` innenfor et kjent pausevindu? `breaks` er [{ from, to }] med UTC
+ * date-only-strenger (YYYY-MM-DD), inklusive begge ender. Ugyldige/manglende
+ * vinduer ignoreres (fail-soft — en skrivefeil skal aldri krasje målingen).
+ */
+function isWithinBreak(breaks, now) {
+	if (!Array.isArray(breaks)) return false;
+	for (const b of breaks) {
+		if (!b || typeof b.from !== "string" || typeof b.to !== "string") continue;
+		const start = Date.parse(b.from.length <= 10 ? `${b.from}T00:00:00Z` : b.from);
+		const end = Date.parse(b.to.length <= 10 ? `${b.to}T23:59:59.999Z` : b.to);
+		if (Number.isFinite(start) && Number.isFinite(end) && now >= start && now <= end) return true;
+	}
+	return false;
 }
