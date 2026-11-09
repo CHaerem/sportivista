@@ -1,5 +1,14 @@
 [
   {
+    "runAt": "2026-11-09T13:36:03Z",
+    "verdict": "escalate",
+    "reason": "Coverage gaps (Nov 9 13:36 UTC): TWO HIGH-SEVERITY contract-breaches detected, both imminent=true. (1) Eliteserien: 1 of ≥2 expected events within 14 days (in season, wholesale coverage promised) — board is missing ≥1 Eliteserien event. (2) Premier League: 0 of ≥6 expected events within 14 days (in season, wholesale coverage promised) — board is SEVERELY SHORT on PL events. Both marked imminent=true + high severity + in-season = broken coverage contracts. Research agent must fill these gaps urgently. RSS (32 items, 13:35 UTC Nov 9): all past results, personnel news, tribune safety (no schedule changes); no broadcaster announcements, no CS2 hints, no concrete imminent event updates beyond the contract breaches already detected. Escalation cap today (Nov 9 UTC): 0/2 before this run.",
+    "signals": [
+      "contract-breach-eliteserien-imminent: 1 of ≥2 expected events within 14 days",
+      "contract-breach-premier-league-imminent: 0 of ≥6 expected events within 14 days"
+    ]
+  },
+  {
     "runAt": "2026-11-07T17:51:01Z",
     "verdict": "quiet",
     "reason": "RSS (47 items, 17:23 UTC Nov 7): all completed match results & analysis (Arsenal/Hull, Fulham/Newcastle, Nottingham/City, Leeds/Tottenham, WSL—no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements). Personnel/gossip (no schedule impact). No schedule/time/venue changes to existing tracked events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (0 entity gaps, 1 low-severity anomaly): cycling.json empty (known, pre-existing). Vålerenga reschedule already escalated 00:18 UTC today (Nov 11 19:00 confirmed). No NEW concrete schedule/time/venue/streaming/broadcaster signal. Escalation cap today (Nov 7 UTC): 1/2 (one escalation at 00:18).",
