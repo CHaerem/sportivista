@@ -1,7 +1,7 @@
 {
 	"runAt": "2026-11-09T17:25:00Z",
 	"action": "opened-pr",
-	"pr": null,
+	"pr": "https://github.com/CHaerem/sportivista/pull/476",
 	"proposal": "Fix the WP-243 coverage-contract false HIGH breach that fires every pipeline run through a mid-month FIFA international break. Add an optional `breaks` array (UTC date windows) to the authority.json contract block: during a known league-pause window the status is a new `break` verdict instead of `breached`, so the always-HIGH contract-breach signal is not raised while the competition legitimately is not playing. `months` covers whole calendar months and therefore cannot model a pause INSIDE a month; lowering minUpcoming does not help because during the break upcoming falls to 0 (PL) / 1 (Eliteserien). Code: scripts/lib/coverage-contracts.js (new `break` status via a fail-soft isWithinBreak helper) + authority.schema.json (`breaks` property, date-pattern-validated) + the 2026/27 FIFA windows seeded onto the football:premier-league and football:eliteserien contracts. Downstream is safe by construction: detect-coverage-gaps.js and build-port-report.js both filter strictly on status===\"breached\", so a `break` contract produces no gap and does not colour the G2 contracts port.",
 	"evidence": [
 		"coverage-audit.json 2026-11-09 TOP sourceIssue (severity HIGH, NEW this run): 'WP-243 dekningskontrakt — PL + Eliteserien: 14-d-horisonten overgår fetcherens ~5–6-d look-ahead under midt-i-måneden FIFA-pause (STRUKTURELL MISCALIBRATION)'. Both football:premier-league (minUpcoming 6) and football:eliteserien (minUpcoming 2) fired HIGH contract-breach; coverage-critic TRIAGED BOTH AS FALSE (FIFA window 14.–17. nov, next rounds 21.–23. nov web-confirmed) and routed it explicitly to improve/self-repair.",
