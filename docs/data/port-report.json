@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-10T13:14:13.696Z",
+  "generatedAt": "2026-11-10T20:42:20.657Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
-    "amendRate": "yellow",
+    "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
     "contracts": "green"
@@ -27,7 +27,7 @@
       "medium": 7,
       "low": 0
     },
-    "oldestGapAgeDays": 17.19,
+    "oldestGapAgeDays": 17.5,
     "escalatable": 7,
     "catalogMatched": 3,
     "auditedAt": "2026-11-10T11:30:00Z",
@@ -35,63 +35,63 @@
       {
         "interest": "Hopp — FIS hopp-verdenscupåpningen Lillehammer (20.–22. nov) + Ruka (28. nov)",
         "severity": "medium",
-        "ageDays": 17.19,
+        "ageDays": 17.5,
         "recurrences": 16,
         "catalogMatched": false
       },
       {
         "interest": "Langrenn — VC-premieren Ruka (27.–29. nov) + norsk NRK-sesongåpning Beitostølen (~20.–22. nov, dato UBEKREFTET)",
         "severity": "medium",
-        "ageDays": 13.15,
+        "ageDays": 13.46,
         "recurrences": 12,
         "catalogMatched": false
       },
       {
         "interest": "Alpint — Verdenscupen fortsetter Gurgl (21.–22. nov) + Copper Mountain (28.–29. nov)",
         "severity": "medium",
-        "ageDays": 14.16,
+        "ageDays": 14.47,
         "recurrences": 13,
         "catalogMatched": false
       },
       {
         "interest": "Skiskyting — IBU VC-premieren Kontiolahti (26.–29. nov, NRK, tier1 wholesale)",
         "severity": "medium",
-        "ageDays": 10.13,
+        "ageDays": 10.44,
         "recurrences": 9,
         "catalogMatched": false
       },
       {
         "interest": "Esport/CS2 — PGL Major Singapore 2026 (Stage 1 ~24.–27. nov) — 100 Thieves kvalifisert",
         "severity": "medium",
-        "ageDays": 11.13,
+        "ageDays": 11.44,
         "recurrences": 10,
         "catalogMatched": true
       },
       {
         "interest": "Sjakk — klassisk VM 2026 Gukesh–Sindarov (Genève, åpning 22. nov, parti 1 24. nov)",
         "severity": "medium",
-        "ageDays": 12.13,
+        "ageDays": 12.45,
         "recurrences": 11,
         "catalogMatched": true
       },
       {
         "interest": "Fotball — Brann i Conference League ligafase MD4 hjemme mot Aarhus (tor. 26. nov)",
         "severity": "medium",
-        "ageDays": 12.13,
+        "ageDays": 12.45,
         "recurrences": 11,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.4,
+    "nearTermRate": 0.2,
     "nearTermChecked": 5,
-    "nearTermAmended": 2,
-    "verifyRunAt": "2026-11-09T14:08:06Z",
+    "nearTermAmended": 1,
+    "verifyRunAt": "2026-11-10T13:42:21.841Z",
     "windowRate": 0,
-    "windowChecks": 52,
+    "windowChecks": 58,
     "windowAmendments": 0,
-    "windowCorrections": 3,
+    "windowCorrections": 4,
     "byDay": [
       {
         "date": "2026-10-28",
@@ -169,30 +169,37 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-11-10",
+        "checks": 6,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-10T13:14:09.423Z",
+    "buildCheckedAt": "2026-11-10T20:42:17.942Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-10T03:55:04.306Z",
-    "manifestAgeHours": 9.32,
+    "manifestGeneratedAt": "2026-11-10T13:14:15.052Z",
+    "manifestAgeHours": 7.47,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-11-09T14:08:06Z",
-    "verifyAgeHours": 23.1,
+    "checkedAt": "2026-11-10T13:42:21.841Z",
+    "verifyAgeHours": 7,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
-      "Casper Ruud – TBD (9544b2d17d6e, Stockholm Open 11.11) + Nitto ATP Finals: statiske ESPN-tennisevents (ikke ai-research). WP-95-deltakersjekk: fant ingen ind…"
+      "Alpine Levi slalåm kvinner (14. nov) + menn (15. nov): CONFIRMED — datoer bekreftet (kvinner lør 14., menn søn 15. nov; FIS arrival/departure-dok bekrefter m…"
     ]
   },
   "contracts": {
     "total": 9,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-11-10T13:14:13.695Z"
+    "generatedAt": "2026-11-10T20:42:20.648Z"
   }
 }

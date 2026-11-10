@@ -1505,28 +1505,6 @@
     "awayTeamEntityId": "valencia"
   },
   {
-    "sport": "tennis",
-    "tournament": "Bybit Stockholm Open",
-    "title": "Casper Ruud – TBD",
-    "time": "2026-11-11T05:00:00.000Z",
-    "endTime": null,
-    "venue": "Stockholm, Sweden",
-    "meta": "Bybit Stockholm Open · Men's Singles",
-    "norwegian": true,
-    "streaming": [],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": null,
-    "awayTeam": null,
-    "isFavorite": false,
-    "round": null,
-    "id": "9544b2d17d6e"
-  },
-  {
     "sport": "chess",
     "tournament": "Total Chess World Championship 2026",
     "title": "Total Chess VM-pilot – gruppespill (Budapest)",
@@ -1598,6 +1576,28 @@
     ]
   },
   {
+    "sport": "tennis",
+    "tournament": "Bybit Stockholm Open",
+    "title": "Casper Ruud – Aleksandr Shevchenko",
+    "time": "2026-11-11T17:00:00.000Z",
+    "endTime": null,
+    "venue": "Center Court",
+    "meta": "Bybit Stockholm Open · Men's Singles",
+    "norwegian": true,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "87154d56eb03"
+  },
+  {
     "sport": "handball",
     "tournament": "NM-sluttspillet (menn)",
     "title": "Semifinale: Kolstad – Bergen",
@@ -1658,7 +1658,7 @@
     "endTime": "2026-11-15T20:00:00.000Z",
     "venue": "TBD",
     "meta": "PGA Tour",
-    "norwegian": false,
+    "norwegian": true,
     "streaming": [
       {
         "platform": "HBO Max (Sport)",
@@ -1672,11 +1672,33 @@
       }
     ],
     "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
+    "norwegianPlayers": [
+      {
+        "name": "Kristoffer Ventura",
+        "teeTime": "19:46",
+        "teeTimeUTC": "2026-11-12T18:46:00.000Z",
+        "entityId": "kristoffer-ventura"
+      }
+    ],
+    "totalPlayers": 120,
     "link": null,
     "status": null,
-    "featuredGroups": [],
+    "featuredGroups": [
+      {
+        "player": "Kristoffer Ventura",
+        "teeTime": "19:46",
+        "groupmates": [
+          {
+            "name": "Johnny Keefer",
+            "teeTime": "19:46"
+          },
+          {
+            "name": "Rasmus Neergaard-Petersen",
+            "teeTime": "19:46"
+          }
+        ]
+      }
+    ],
     "homeTeam": null,
     "awayTeam": null,
     "isFavorite": false,
@@ -1691,7 +1713,7 @@
     "endTime": "2026-11-15T20:00:00.000Z",
     "venue": "TBD",
     "meta": "DP World Tour",
-    "norwegian": false,
+    "norwegian": true,
     "streaming": [
       {
         "platform": "Viaplay",
@@ -1700,8 +1722,13 @@
       }
     ],
     "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
+    "norwegianPlayers": [
+      {
+        "name": "Kristoffer Reitan",
+        "entityId": "kristoffer-reitan"
+      }
+    ],
+    "totalPlayers": 50,
     "link": null,
     "status": null,
     "featuredGroups": [],
