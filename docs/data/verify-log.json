@@ -1,17 +1,14 @@
 {
-  "runAt": "2026-11-09T14:08:06Z",
+  "runAt": "2026-11-10T13:42:21.841Z",
   "checked": 5,
-  "confirmed": 1,
-  "amended": 2,
+  "confirmed": 4,
+  "amended": 1,
   "removed": 0,
   "notes": [
-    "I-vindu (7d, 9.-16. nov) ai-research/confidence-events: Total Chess (11.-21.), Kolstad-Bergen NM-semi (11.), Norge-Wales (14.), Levi dame/herreslalaam (14./15.), + Danmark-Norge (17., utenfor vinduet). De statiske ESPN-eventene (Eliteserien Kristiansund-VIF i dag, Copa del Rey, golf, Nitto ATP Finals, Stockholm/WTA tennis) er naer-term og ikke ai-research -> ikke verifisert per kontrakt.",
-    "CONFIRMED — Norge-Wales Nations League (0dc1955f2a7c, 14.11 17:00 UTC/18:00 CET Ullevaal): var UVERIFISERT. TNT Sports bekrefter avspark 17:00 UTC, enig med fotball.no (primaer) og UEFAs terminliste. Streaming TV 2 / TV 2 Play staar (TV 2 har norske Nations League-rettigheter). verifiedAt + verificationSources satt.",
-    "RE-CONFIRMED (tid) — Levi dameslalaam (0241465fd12a, 14.11) og herreslalaam (5b50fa023c74, 15.11): oasport.its oktober-2026-program fester begge: 1. omgang 10:00 CET = 09:00 UTC (board-tid), 2. omgang 13:00 CET. Matcher board. Status holdes 'amended' (NRK->TV 2-kanalrettingen fra 7. nov staar); verifiedAt oppdatert, oasport lagt til verificationSources. Open item fra forrige logg (bekreft FIS-tid naer rennhelgen) naa lukket paa tid.",
-    "RE-SJEKK (ingen endring) — Kolstad-Bergen NM-semifinale (9124816807dd, 11.11): allerede ferskt confirmed 7. nov (handball.no + betexplorer, 18:00 CET/17:00 UTC). Ikke churnet. Sok etter NHFs eksakte Final-4-kampprogram ga fortsatt ingen offisiell dag/avspark-bekreftelse utover aggregator -> confidence=medium staar korrekt.",
-    "RE-SJEKK (ingen endring) — Total Chess Budapest (bd5daeb1237d, 11.-21.): allerede confirmed 5. nov. Gruppespill 11.-15. nov daglig 15:00 CET; Carlsen m.fl. bekreftet. Broadcast-team annonsert (Rudolf/Steil-Antoni/Howell/Houska + GothamChess-highlights, FIDE), men ingen offisiell strommeplattform/-lenke kunngjort enda (totalchess.com = offisiell side). streaming holdes aerlig tom; verify firmer naar plattform meldes.",
-    "Casper Ruud – TBD (9544b2d17d6e, Stockholm Open 11.11) + Nitto ATP Finals: statiske ESPN-tennisevents (ikke ai-research). WP-95-deltakersjekk: fant ingen indeksert 2026-resultat for Stockholm Open (soket returnerte kun 2025-utgaven i oktober). Ingen amendment uten kilde; notert.",
-    "Ingen events fjernet; ingen avlyst/utsatt funnet.",
-    "SKILL: ingen durabel ny quirk aa skrive denne runden (Levi-kanal allerede dokumentert i forrige commit; authority.json alpine:world-cup-rettingen er fortsatt research sitt bord, ikke verify sitt commit-sett)."
+    "Chess (Total Chess VM-pilot, Budapest): AMENDED — fylte tomt streaming-felt. Arrangørens egen side totalchess.com oppgir DAZN som global sendepartner (200+ land, tilgjengelig i Norge); gratis høydepunktsshow (GothamChess) på YouTube. Hovedsending med Rudolf/Steil-Antoni/Howell/Houska bekreftet av FIDE. Ingen separat norsk lineær kanal kunngjort. Tid (15:00 CET gruppespill) uendret, primærkilde worldchess.",
+    "Handball (Kolstad-Bergen NM-semifinale 11. nov): CONFIRMED — NHF (handball.no) bekrefter NM-semifinaler menn 11./12. nov med Kolstad, Bergen, Sandefjord og Elverum. Forbundet gir fortsatt IKKE eksakt paring/kampdag/avkast; paringen Kolstad-Bergen + 18:00 CET står på aggregator (betexplorer; betexplorer-direktesjekk ga HTTP 429). Beholdt som confirmed da kampen er bekreftet i vinduet og ingen kilde motsier den. TV 2 Play uendret.",
+    "Alpine Levi slalåm kvinner (14. nov) + menn (15. nov): CONFIRMED — datoer bekreftet (kvinner lør 14., menn søn 15. nov; FIS arrival/departure-dok bekrefter menn-renn 15.). Starttid 1. omgang 10:00 CET = 09:00 UTC stemmer med board (2. omgang 13:00 CET). FIS offisiell startliste med nøyaktig minutt ennå ikke publisert → medium beholdt. Streaming TV 2 Play (TV 2 deler utenlands-alpint med Viaplay fra 2026/27; Levi på TV 2s halvdel) uendret.",
+    "Football Norge-Wales (14. nov, Nations League A): CONFIRMED — avspark lør 14.11 kl 18:00 CET (17:00 UTC), Ullevaal, bekreftet av fotball.no (NFF primær) og UEFA. Høy tillit, uendret. TV 2 / TV 2 Play.",
+    "Ingen fjernede events. Ingen nye source-quirks bekreftet denne kjøringen."
   ]
 }
