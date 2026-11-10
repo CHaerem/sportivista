@@ -1,16 +1,17 @@
 {
-  "checkedAt": "2026-11-06T00:00:00.000Z",
+  "checkedAt": "2026-11-10T00:00:00.000Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
     "All three widths: single quiet column, no horizontal scroll/overflow, nothing clipped at the screen edge (checked 375px hardest).",
-    "Match/tournament names read fully, not truncated (e.g. 'Leeds United – Tottenham Hotspur', 'Borussia Dortmund – SV Elversberg', 'World Wide Technology Championship') — verified with a targeted close-up screenshot at 900px since the full-page composite was too compressed to read reliably.",
-    "Channels shown are Norwegian (Viaplay, TV 2 Play, VG TV, HBO Max (Sport), Twitch (ESLCS) for esports) — no foreign broadcaster (FOX/ESPN/Sky) observed. Events without a confirmed channel honestly show '–' (e.g. Cagliari–Frosinone, Torino–Lecce, Bundesliga fixtures, Rolex Paris Masters incl. the Casper Ruud match) rather than a guess.",
-    "National flags / club crests render as icons at all three widths; no broken-image boxes seen.",
-    "Day headers (I DAG / I MORGEN / LØRDAG 7. NOVEMBER / ...), header, and footer intact and aligned at all three widths.",
-    "Must-see accent dots used sparingly (golf events with a Norwegian player, e.g. World Wide Technology Championship / Abu Dhabi Aldar Championship), not on every row.",
-    "Live-now section renders two in-progress events (Rolex Paris Masters, IEM Beijing 2026) correctly above the day list.",
-    "Checked the floating 'Assistent' button specifically at the bottom of the 375px page (scrolled to end): it sits clear below the footer ('AI-budsjett' line) and does not occlude the last agenda/news row or the footer — the one guarantee that matters per DESIGN.md. At 900px it rests over a mid-agenda row, which is the sanctioned floating-button idiom and not flagged."
+    "Match/tournament names read fully, not truncated, even multi-word ones that wrap to two lines (e.g. 'Mijas Las Lagunas – Real Jaen', 'Austin Championship pres. by Compliance Solutions', 'Kolstad Håndball – Bergen Håndball').",
+    "Channels shown are Norwegian where known (TV 2 Play, Viaplay, HBO Max (Sport) +1, TV 2 / TV 2 Play) — no foreign broadcaster (FOX/ESPN/Sky) observed. Events without a confirmed channel honestly show a faint '–' (most Copa del Rey fixtures, Casper Ruud – TBD) rather than a guess.",
+    "Club crests/sport icons render as small icons at all three widths; no broken-image boxes seen. The Norge – Wales row shows a correct Norwegian flag icon.",
+    "Day headers (I DAG / I MORGEN / TORSDAG 12. NOVEMBER / ...), header (wordmark, date, theme toggle), and footer (Oppdatert/Abonner/Aktivitet/Personvern/AI-budsjett) intact and aligned at all three widths.",
+    "Must-see accent dot used sparingly — only on the Norge – Wales UEFA Nations League row — not on every row.",
+    "Live-now section renders two in-progress events (Bybit Stockholm Open, FAGE WTA Finals Indian Wells) correctly above the day list.",
+    "FERDIG 0-0 status labels on finished Copa del Rey fixtures are legible and consistently styled.",
+    "Checked the floating 'Assistent' button at all three widths: at 375/393 it rests over a mid-agenda row (Trival Valderas – Leganés on this build), the sanctioned floating-button idiom per DESIGN.md; at 900px it sits beside the column without covering the last agenda row (Levi: Slalåm menn, Sun 15 Nov) or the footer. The one guarantee that matters — never occluding the last row or footer — holds at all widths."
   ]
 }
