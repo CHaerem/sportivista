@@ -1,2358 +1,2358 @@
 [
-	{
-		"sport": "football",
-		"tournament": "NM-cupen",
-		"title": "Tromsdalen – Lyn",
-		"time": "2026-10-28T16:00:00Z",
-		"endTime": null,
-		"venue": "TUIL Arena, Tromsø",
-		"norwegian": true,
-		"homeTeam": "Tromsdalen",
-		"awayTeam": "Lyn",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport",
-				"urlKind": "landing"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-19T05:50:00Z",
-		"confidence": "high",
-		"evidence": [
-			"catalog.json#tier2.teams",
-			"https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
-			"https://www.fotmob.com/matches/tromsdalen-vs-lyn/2xonce"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "fotball-no",
-				"url": "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
-				"basis": "primary",
-				"retrievedAt": "2026-10-27T10:45:44.164Z",
-				"note": "fotball.no (NFF, primær): ons. 28. okt kl. 17.00 CET (16.00 UTC), TUIL Arena, konkurranse «NM menn 2027» (2027-cupens tidlige runde spilt høsten 2026). FotMob uavhengig enig (16:00 UTC, merker den «Cup Round 3»). Re-bekreftet 22. okt mot FotMob (samme UTC-anker)."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport",
-				"basis": "official",
-				"retrievedAt": "2026-10-22T10:23:36Z",
-				"note": "TV 2 holder NM-cupens (herre + dame) norske rettigheter t.o.m. 2029 (deretter Schibsted) — bekreftet mot sportbusiness.com/sportcal. NM-cupkampene strømmes på TV 2 Play; om DENNE tidligrunde-kampen (Tromsdalen–Lyn) også sendes på en lineær TV 2 Sport-kanal er ikke annonsert — verify fester sub-kanalen nærmere kampdag."
-			}
-		},
-		"summary": "Lyn skal ut i NM-cupen (NM menn 2027, tidlig runde spilt høsten 2026): borte mot Tromsdalen onsdag 28. oktober kl. 17.00 på TUIL Arena i Tromsø.\n\nDato/tid/arena bekreftet mot fotball.no (primær) og uavhengig mot FotMob.\n\nNorsk visning: TV 2 Play — TV 2 holder NM-cupens norske rettigheter t.o.m. 2029. Eksakt sub-kanal (evt. lineær TV 2 Sport) for denne tidligrunde-kampen er ikke annonsert ennå; verify følger.",
-		"id": "a8ddd1e0edf5",
-		"awayTeamEntityId": "fk-lyn-oslo",
-		"verifiedAt": "2026-10-27T10:45:44.164Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.fotmob.com/matches/tromsdalen-vs-lyn/2xonce"
-		]
-	},
-	{
-		"sport": "handball",
-		"tournament": "EHF Champions League",
-		"title": "Industria Kielce – Kolstad",
-		"time": "2026-10-28T19:45:00Z",
-		"endTime": null,
-		"venue": "Kielce, Polen",
-		"norwegian": true,
-		"homeTeam": "Industria Kielce",
-		"awayTeam": "Kolstad",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport/haandball",
-				"urlKind": "deep"
-			},
-			{
-				"platform": "Viaplay",
-				"url": "https://viaplay.no/no/sport",
-				"urlKind": "landing"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-19T05:50:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier2.teams",
-			"https://www.eurohandball.com/en/club/kZVHhs7nxEhEqyCf6iK_Sw/KolstadH%C3%A5ndball/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "eurohandball",
-				"url": "https://www.eurohandball.com/en/club/kZVHhs7nxEhEqyCf6iK_Sw/KolstadH%C3%A5ndball/",
-				"basis": "primary",
-				"retrievedAt": "2026-10-27T10:45:44.164Z",
-				"note": "EHF (arrangøren): ons. 28. okt 20:45 CET = 19:45 UTC. Uavhengig korroborert 27.10 mot karlobag.eu (billett-aggregator), som lister samme 20:45 CET / Hala Legionów — tid holder."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/haandball",
-				"basis": "official",
-				"retrievedAt": "2026-10-19T05:50:00Z",
-				"note": "EHF CL i Norge: DELT Viaplay/TV 2-avtale t.o.m. 2029/30; begge plattformer listet, verify firmer eksakt kanal per kamp."
-			}
-		},
-		"summary": "Kolstad avslutter oktober-dobbelen i Champions League borte mot polske Industria Kielce onsdag 28. oktober kl. 20.45 (gruppespillrunde 6, gruppe F).\n\nTidspunkt re-bekreftet mot EHFs egen klubbside (arrangøren, tid-autoritet) 22. okt — ons. 28. okt 20.45 lokal. NB: sommertiden slutter 25. oktober, så 20.45 CET er 19.45 UTC.\n\nNorsk visning TV 2 Play eller Viaplay (delt EHF CL-rettighetsavtale).",
-		"id": "f02bbef0e329",
-		"awayTeamEntityId": "kolstad-handball",
-		"verifiedAt": "2026-10-27T10:45:44.164Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.eurohandball.com/en/club/kZVHhs7nxEhEqyCf6iK_Sw/KolstadH%C3%A5ndball/",
-			"https://karlobag.eu/en/sports/handball/europe/ehf-champions-league/industria-kielce-vs-kolstad-handball-wytmm/"
-		]
-	},
-	{
-		"sport": "esports",
-		"tournament": "PGL Masters Bucharest 2026",
-		"title": "PGL Masters Bucharest – sluttspill + finale",
-		"time": "2026-10-29T08:00:00Z",
-		"endTime": "2026-10-31T16:00:00Z",
-		"venue": "PGL Studios, Bucuresti",
-		"norwegian": false,
-		"participants": [
-			{
-				"name": "Team Vitality"
-			},
-			{
-				"name": "Natus Vincere"
-			},
-			{
-				"name": "MOUZ"
-			},
-			{
-				"name": "FURIA"
-			},
-			{
-				"name": "BetBoom Team"
-			},
-			{
-				"name": "FUT Esports"
-			},
-			{
-				"name": "Aurora Gaming"
-			},
-			{
-				"name": "Nemiga Gaming"
-			}
-		],
-		"norwegianPlayers": [],
-		"streaming": [
-			{
-				"platform": "Twitch (PGL)",
-				"url": "https://www.twitch.tv/pgl",
-				"urlKind": "deep"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-29T06:00:00Z",
-		"confidence": "high",
-		"evidence": [
-			"catalog.json#tier2.teams",
-			"https://www.hltv.org/news/45844/pgl-masters-bucharest-bracket-set",
-			"https://liquipedia.net/counterstrike/PGL/2026/Masters",
-			"https://navi.gg/en/tournaments/pgl-masters-bucharest-2026/match/14120",
-			"https://insider-gaming.com/pgl-masters-bucharest-2026-playoff-preview/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "liquipedia",
-				"url": "https://liquipedia.net/counterstrike/PGL/2026/Masters",
-				"basis": "secondary",
-				"retrievedAt": "2026-10-29T06:00:00Z",
-				"note": "Sveitsisk gruppespill avsluttet 28. okt; braketten er nå SATT og MULTI-KILDE-bekreftet (HLTV reliability 1.0 + Liquipedia reliability 1.0 + NAVIs egen kampside + insider-gaming, alle enige). Single-elim sluttspill tor.–lør. 29.–31. okt: fire Bo3-kvartfinaler 29. okt (CET, = UTC+1 etter sommertid-slutt 25. okt): Nemiga–FUT 09.00 (08:00 UTC), Vitality–NAVI 12.00 (11:00 UTC — NAVIs side oppgir 13.00 +02:00 EET = samme UTC-øyeblikk), Aurora–MOUZ 15.00 (14:00 UTC), BetBoom–FURIA 18.00 (17:00 UTC); semifinaler 30. okt; Bo5 grand final lør. 31. okt 12.00 CET = 13.00 EET = 11:00 UTC (HLTV + Liquipedia enige). time=29. okt 08:00 UTC = første kvartfinale (vindusstart). basis=secondary fordi PGLs egen terminliste-side er JS-rendret/bot-blokkert — tidene hviler på to reliability-1.0-kilder + en deltaker-offisiell side, ikke arrangørens egen URL."
-			},
-			"streaming": {
-				"sourceId": "twitch",
-				"url": "https://www.twitch.tv/pgl",
-				"basis": "official",
-				"retrievedAt": "2026-10-29T06:00:00Z",
-				"note": "twitch.tv/pgl er PGLs offisielle kanal (PGL-footer + strafe). Event-spesifikk kringkasting ikke separat kunngjort, men PGLs standardkanal for alle deres CS2-sendinger; Kick ubekreftet for dette eventet."
-			}
-		},
-		"summary": "PGL Masters Bucharest 2026 (CS2, tier-1, $1,25 mill.) er i SLUTTSPILLET: åtte lag i single-elim 29.–31. oktober i PGL Studios, Bucuresti. VRS-tellende mot CS2-majoren. Bo5 grand final spilles lør. 31. okt kl. 12.00 CET (11:00 UTC).\n\nKvartfinaler (Bo3) tor. 29. okt, alle CET: Nemiga–FUT Esports 09.00, Team Vitality–NAVI 12.00 (reprise fra gruppespillet), Aurora–MOUZ 15.00, BetBoom–FURIA 18.00. Semifinaler fre. 30. okt. Fire katalog-orger er med i sluttspillet: Vitality, NAVI, MOUZ og FURIA (Team Spirit, G2, The MongolZ og Team Liquid kom IKKE videre fra gruppespillet).\n\n100 Thieves (Håvard «rain» Nygaard) er IKKE i dette feltet. Gratis strøm på PGLs egen Twitch (pgl).",
-		"id": "efac3793fd6b",
-		"verifiedAt": "2026-10-29T11:40:00Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://fieldlevelmedia.com/esports/natus-vincere-nemiga-furia-qualify-for-pgl-masters-bucharest-playoffs/",
-			"https://www.hltv.org/news/45847/live-updates-from-pgl-masters-bucharest-quarter-finals"
-		]
-	},
-	{
-		"sport": "handball",
-		"tournament": "Elkjøp-ligaen 2026/27",
-		"title": "Drammen – Elverum",
-		"time": "2026-10-30T17:15:00Z",
-		"endTime": null,
-		"venue": null,
-		"norwegian": true,
-		"homeTeam": "Drammen",
-		"awayTeam": "Elverum",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport/haandball",
-				"urlKind": "deep"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-26T15:20:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"catalog.json#tier2.tournaments",
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-			"https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "tv2",
-				"url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-				"basis": "secondary",
-				"retrievedAt": "2026-10-27T10:45:44.164Z",
-				"note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/haandball",
-				"basis": "official",
-				"retrievedAt": "2026-10-26T15:20:00Z",
-				"note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
-			}
-		},
-		"summary": "Runde 9 i Elkjøp-ligaen menn åpner fredag 30. oktober. Drammen tar imot Elverum.\n\nAvkast kl. 18.15 (17.15 UTC). Norsk visning: TV 2 Play (utvalgte kamper på lineære TV 2 Sport-kanaler).",
-		"id": "65c7ef80c2b8",
-		"homeTeamEntityId": "drammen-handballklubb",
-		"awayTeamEntityId": "elverum-handball",
-		"verifiedAt": "2026-10-27T10:45:44.164Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-		]
-	},
-	{
-		"sport": "handball",
-		"tournament": "Elkjøp-ligaen 2026/27",
-		"title": "ØIF Arendal – Sandnes",
-		"time": "2026-10-31T15:00:00Z",
-		"endTime": null,
-		"venue": null,
-		"norwegian": true,
-		"homeTeam": "ØIF Arendal",
-		"awayTeam": "Sandnes",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport/haandball",
-				"urlKind": "deep"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-26T15:20:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"catalog.json#tier2.tournaments",
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-			"https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "tv2",
-				"url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-				"basis": "secondary",
-				"retrievedAt": "2026-10-27T10:45:44.164Z",
-				"note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/haandball",
-				"basis": "official",
-				"retrievedAt": "2026-10-26T15:20:00Z",
-				"note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
-			}
-		},
-		"summary": "Runde 9 i Elkjøp-ligaen menn, lørdag 31. oktober. ØIF Arendal mot Sandnes.\n\nAvkast kl. 16.00 (15.00 UTC). Norsk visning: TV 2 Play.",
-		"id": "8d3a96c3f6f7",
-		"homeTeamEntityId": "oif-arendal",
-		"awayTeamEntityId": "sandnes-handballklubb",
-		"verifiedAt": "2026-10-27T10:45:44.164Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-		]
-	},
-	{
-		"sport": "handball",
-		"tournament": "Elkjøp-ligaen kvinner 2026/27",
-		"title": "Storhamar Elite – Sola HK",
-		"time": "2026-10-31T15:15:00Z",
-		"endTime": null,
-		"venue": null,
-		"norwegian": true,
-		"homeTeam": "Storhamar Elite",
-		"awayTeam": "Sola HK",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport/haandball",
-				"urlKind": "deep"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-26T15:20:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"catalog.json#tier2.tournaments",
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
-			"https://www.betexplorer.com/handball/norway/elkjop-ligaen-women/fixtures/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "tv2",
-				"url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
-				"basis": "secondary",
-				"retrievedAt": "2026-10-27T10:45:44.164Z",
-				"note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/haandball",
-				"basis": "official",
-				"retrievedAt": "2026-10-26T15:20:00Z",
-				"note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
-			}
-		},
-		"summary": "Runde 8 i Elkjøp-ligaen kvinner, lørdag 31. oktober. Storhamar Elite tar imot Sola HK i en tidlig toppkamp.\n\nAvkast kl. 16.15 (15.15 UTC). Norsk visning: TV 2 Play.",
-		"id": "6c05a03b6834",
-		"verifiedAt": "2026-10-27T10:45:44.164Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste"
-		]
-	},
-	{
-		"sport": "handball",
-		"tournament": "Elkjøp-ligaen 2026/27",
-		"title": "Bergen Håndball – Nærbø",
-		"time": "2026-10-31T16:00:00Z",
-		"endTime": null,
-		"venue": null,
-		"norwegian": true,
-		"homeTeam": "Bergen Håndball",
-		"awayTeam": "Nærbø",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport/haandball",
-				"urlKind": "deep"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-26T15:20:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"catalog.json#tier2.tournaments",
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-			"https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "tv2",
-				"url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-				"basis": "secondary",
-				"retrievedAt": "2026-10-27T10:45:44.164Z",
-				"note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/haandball",
-				"basis": "official",
-				"retrievedAt": "2026-10-26T15:20:00Z",
-				"note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
-			}
-		},
-		"summary": "Runde 9 i Elkjøp-ligaen menn, lørdag 31. oktober. Bergen Håndball mot Nærbø.\n\nAvkast kl. 17.00 (16.00 UTC). Norsk visning: TV 2 Play.",
-		"id": "a2b9851a25ef",
-		"homeTeamEntityId": "bergen-handball",
-		"verifiedAt": "2026-10-27T10:45:44.164Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-		]
-	},
-	{
-		"sport": "f1",
-		"tournament": "Formula 1 World Championship 2026",
-		"title": "Mexico City Grand Prix – kvalifisering",
-		"time": "2026-10-31T21:00:00Z",
-		"endTime": "2026-10-31T22:00:00Z",
-		"venue": "Autódromo Hermanos Rodríguez, Mexico City",
-		"norwegian": false,
-		"participants": [],
-		"norwegianPlayers": [],
-		"streaming": [
-			{
-				"platform": "Viaplay",
-				"url": "https://viaplay.no/no-no/sport",
-				"urlKind": "landing"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-18T22:40:00Z",
-		"confidence": "high",
-		"evidence": [
-			"https://www.formula1.com/en/racing/2026/mexico",
-			"https://www.formula1.com/en/latest/article/formula-1-gran-premio-de-la-ciudad-de-mexico-2026.14b3wTWzNNLJ5Wd8cG7HCQ",
-			"https://www.gpfans.com/us/f1-race-calendar/gran-premio-de-la-ciudad-de-mexico-2026"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "formula1",
-				"url": "https://www.formula1.com/en/racing/2026/mexico",
-				"basis": "primary",
-				"retrievedAt": "2026-10-27T10:45:44.164Z"
-			},
-			"streaming": {
-				"sourceId": "viaplay",
-				"url": "https://viaplay.no/no-no/sport",
-				"basis": "official",
-				"retrievedAt": "2026-10-18T22:40:00Z"
-			}
-		},
-		"summary": "Kvalifiseringen avgjør startoppstillingen for søndagens løp (søn. 1. nov kl. 20.00 UTC / 14.00 lokal).\n\nStandard GP-helg uten sprint på Autódromo Hermanos Rodríguez, 2240 moh. — høyden gir unike bil- og dekkutfordringer.\n\nTid bekreftet mot formula1.com (arrangøren, primær) + uavhengig write-time fact-check — ikke ESPN-feeden som feildaterer F1-helger (source-quirks). Norsk visning Viaplay.",
-		"id": "1051e200f667",
-		"verifiedAt": "2026-10-30T12:00:00Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.formula1.com/en/latest/article/formula-1-gran-premio-de-la-ciudad-de-mexico-2026.14b3wTWzNNLJ5Wd8cG7HCQ",
-			"https://racingnews365.com/2026-f1-mexican-grand-prix-mexico-city-time-schedule"
-		]
-	},
-	{
-		"sport": "handball",
-		"tournament": "Elkjøp-ligaen kvinner 2026/27",
-		"title": "Fana – Oppsal",
-		"time": "2026-11-01T15:00:00Z",
-		"endTime": null,
-		"venue": null,
-		"norwegian": true,
-		"homeTeam": "Fana",
-		"awayTeam": "Oppsal",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport/haandball",
-				"urlKind": "deep"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-26T15:20:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"catalog.json#tier2.tournaments",
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
-			"https://www.betexplorer.com/handball/norway/elkjop-ligaen-women/fixtures/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "tv2",
-				"url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
-				"basis": "secondary",
-				"retrievedAt": "2026-10-27T10:45:44.164Z",
-				"note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/haandball",
-				"basis": "official",
-				"retrievedAt": "2026-10-26T15:20:00Z",
-				"note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
-			}
-		},
-		"summary": "Runde 8 i Elkjøp-ligaen kvinner, søndag 1. november. Fana mot Oppsal.\n\nAvkast kl. 16.00 (15.00 UTC). Norsk visning: TV 2 Play.",
-		"id": "642048cf4301",
-		"verifiedAt": "2026-10-27T10:45:44.164Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste"
-		]
-	},
-	{
-		"sport": "handball",
-		"tournament": "Elkjøp-ligaen 2026/27",
-		"title": "Bergsøy – Follo HK",
-		"time": "2026-11-01T15:30:00Z",
-		"endTime": null,
-		"venue": null,
-		"norwegian": true,
-		"homeTeam": "Bergsøy",
-		"awayTeam": "Follo HK",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport/haandball",
-				"urlKind": "deep"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-26T15:20:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"catalog.json#tier2.tournaments",
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-			"https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "tv2",
-				"url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-				"basis": "secondary",
-				"retrievedAt": "2026-10-27T10:45:44.164Z",
-				"note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/haandball",
-				"basis": "official",
-				"retrievedAt": "2026-10-26T15:20:00Z",
-				"note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
-			}
-		},
-		"summary": "Runde 9 i Elkjøp-ligaen menn, søndag 1. november. Bergsøy mot Follo HK.\n\nAvkast kl. 16.30 (15.30 UTC). Norsk visning: TV 2 Play.",
-		"id": "324ecfce2957",
-		"verifiedAt": "2026-10-27T10:45:44.164Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-		]
-	},
-	{
-		"sport": "handball",
-		"tournament": "Elkjøp-ligaen 2026/27",
-		"title": "Kristiansand TH – Viking TIF",
-		"time": "2026-11-01T16:00:00Z",
-		"endTime": null,
-		"venue": null,
-		"norwegian": true,
-		"homeTeam": "Kristiansand TH",
-		"awayTeam": "Viking TIF",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport/haandball",
-				"urlKind": "deep"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-26T15:20:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"catalog.json#tier2.tournaments",
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-			"https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "tv2",
-				"url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-				"basis": "secondary",
-				"retrievedAt": "2026-10-27T10:45:44.164Z",
-				"note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/haandball",
-				"basis": "official",
-				"retrievedAt": "2026-10-26T15:20:00Z",
-				"note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
-			}
-		},
-		"summary": "Runde 9 i Elkjøp-ligaen menn, søndag 1. november. Kristiansand TH mot Viking TIF.\n\nAvkast kl. 17.00 (16.00 UTC). Norsk visning: TV 2 Play.",
-		"id": "42f761037f3f",
-		"verifiedAt": "2026-10-27T10:45:44.164Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-		]
-	},
-	{
-		"sport": "handball",
-		"tournament": "Elkjøp-ligaen 2026/27",
-		"title": "Runar Elite – Fjellhammer",
-		"time": "2026-11-01T16:00:00Z",
-		"endTime": null,
-		"venue": null,
-		"norwegian": true,
-		"homeTeam": "Runar Elite",
-		"awayTeam": "Fjellhammer",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport/haandball",
-				"urlKind": "deep"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-26T15:20:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"catalog.json#tier2.tournaments",
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-			"https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "tv2",
-				"url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-				"basis": "secondary",
-				"retrievedAt": "2026-10-27T10:45:44.164Z",
-				"note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/haandball",
-				"basis": "official",
-				"retrievedAt": "2026-10-26T15:20:00Z",
-				"note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
-			}
-		},
-		"summary": "Runde 9 i Elkjøp-ligaen menn, søndag 1. november. Runar Elite mot Fjellhammer.\n\nAvkast kl. 17.00 (16.00 UTC). Norsk visning: TV 2 Play.",
-		"id": "32d995b9f2fd",
-		"verifiedAt": "2026-10-27T10:45:44.164Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-		]
-	},
-	{
-		"sport": "handball",
-		"tournament": "Elkjøp-ligaen kvinner 2026/27",
-		"title": "Utleira – Fredrikstad",
-		"time": "2026-11-01T16:00:00Z",
-		"endTime": null,
-		"venue": null,
-		"norwegian": true,
-		"homeTeam": "Utleira",
-		"awayTeam": "Fredrikstad",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport/haandball",
-				"urlKind": "deep"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-26T15:20:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"catalog.json#tier2.tournaments",
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
-			"https://www.betexplorer.com/handball/norway/elkjop-ligaen-women/fixtures/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "tv2",
-				"url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
-				"basis": "secondary",
-				"retrievedAt": "2026-10-27T10:45:44.164Z",
-				"note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/haandball",
-				"basis": "official",
-				"retrievedAt": "2026-10-26T15:20:00Z",
-				"note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
-			}
-		},
-		"summary": "Runde 8 i Elkjøp-ligaen kvinner, søndag 1. november. Utleira mot Fredrikstad.\n\nAvkast kl. 17.00 (16.00 UTC). Norsk visning: TV 2 Play.",
-		"id": "00392c3c76f8",
-		"awayTeamEntityId": "fredrikstad-ballklubb",
-		"verifiedAt": "2026-10-27T10:45:44.164Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste"
-		]
-	},
-	{
-		"sport": "football",
-		"tournament": "OBOS-ligaen 2026",
-		"title": "Lyn – Raufoss",
-		"time": "2026-11-01T16:00:00Z",
-		"endTime": null,
-		"venue": "Bislett stadion, Oslo",
-		"norwegian": true,
-		"homeTeam": "Lyn",
-		"awayTeam": "Raufoss",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport",
-				"urlKind": "landing"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-30T05:55:00Z",
-		"confidence": "high",
-		"evidence": [
-			"catalog.json#tier2.teams",
-			"https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
-			"https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206093",
-			"https://www.fotmob.com/teams/10224/fixtures"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "fotball-no",
-				"url": "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
-				"basis": "primary",
-				"retrievedAt": "2026-10-30T05:55:00Z",
-				"note": "fotball.no (NFF, primær) + OBOS-ligaens terminliste (fiksId 206093), begge enige på OBOS-ligaen runde 29 (søn. 1. nov kl. 17.00 CET / 16.00 UTC). CET=UTC+1 (sommertid slutt 25. okt). Uavhengig fresh-context write-time fact-check mot FotMob = confirmed (samme UTC-anker)."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport",
-				"basis": "official",
-				"retrievedAt": "2026-10-30T05:55:00Z",
-				"note": "TV 2 Play holder OBOS-ligaens norske rettigheter 2026. TV-valg kan flytte avspark 30–60 min; verify følger."
-			}
-		},
-		"id": "31a78d3bb708",
-		"summary": "Lyn tar imot Raufoss på Bislett stadion i OBOS-ligaen runde 29, søndag 1. november kl. 17.00 (16.00 UTC).\n\nDato/tid/arena to-kilde-bekreftet mot fotball.nos primær-autoritet (Lyns lagside + OBOS-ligaens terminliste, begge enige) og uavhengig mot FotMob.\n\nNorsk visning: TV 2 Play (OBOS-ligaens rettighetshaver). TV-valg kan flytte avsparket 30–60 min; verify følger.",
-		"homeTeamEntityId": "fk-lyn-oslo",
-		"verifiedAt": "2026-10-30T12:00:00Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://en.wikipedia.org/wiki/2026_Norwegian_First_Division",
-			"https://www.calciomercato.com/squadra/raufoss/partite/p5IwRE5I3tQbqXtJp2Top"
-		]
-	},
-	{
-		"sport": "handball",
-		"tournament": "Elkjøp-ligaen 2026/27",
-		"title": "Kolstad – Sandefjord",
-		"time": "2026-11-01T17:00:00Z",
-		"endTime": null,
-		"venue": null,
-		"norwegian": true,
-		"homeTeam": "Kolstad",
-		"awayTeam": "Sandefjord",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport/haandball",
-				"urlKind": "deep"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-26T15:20:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"catalog.json#tier2.tournaments",
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-			"https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "tv2",
-				"url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-				"basis": "secondary",
-				"retrievedAt": "2026-10-27T10:45:44.164Z",
-				"note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/haandball",
-				"basis": "official",
-				"retrievedAt": "2026-10-26T15:20:00Z",
-				"note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
-			}
-		},
-		"summary": "Runde 9 i Elkjøp-ligaen menn, søndag 1. november. Serietopp-kandidaten Kolstad tar imot Sandefjord på hjemmebane i Trondheim.\n\nAvkast kl. 18.00 (17.00 UTC). Norsk visning: TV 2 Play (utvalgte kamper på lineære TV 2 Sport-kanaler).",
-		"id": "76e181a7ea3d",
-		"homeTeamEntityId": "kolstad-handball",
-		"awayTeamEntityId": "sandefjord-handball",
-		"verifiedAt": "2026-10-27T10:45:44.164Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-		]
-	},
-	{
-		"sport": "handball",
-		"tournament": "Elkjøp-ligaen kvinner 2026/27",
-		"title": "Tertnes Elite – Gjerpen",
-		"time": "2026-11-01T17:00:00Z",
-		"endTime": null,
-		"venue": null,
-		"norwegian": true,
-		"homeTeam": "Tertnes Elite",
-		"awayTeam": "Gjerpen",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport/haandball",
-				"urlKind": "deep"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-26T15:20:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"catalog.json#tier2.tournaments",
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
-			"https://www.betexplorer.com/handball/norway/elkjop-ligaen-women/fixtures/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "tv2",
-				"url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
-				"basis": "secondary",
-				"retrievedAt": "2026-10-27T10:45:44.164Z",
-				"note": "TV 2 Livesport-terminlisten oppgir søn. 1. nov kl. 18.00 (17.00 UTC). Betexplorer + Flashscore bekrefter dato/oppsett, men publiserer ikke eksakt tid → tiden hviler på TV 2 alene (fixture-autoritet) = medium. handball.no (NHF) 404/JS → basis secondary. Verify fester eksakt tid."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/haandball",
-				"basis": "official",
-				"retrievedAt": "2026-10-26T15:20:00Z",
-				"note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
-			}
-		},
-		"summary": "Runde 8 i Elkjøp-ligaen kvinner, søndag 1. november. Tertnes Elite mot Gjerpen.\n\nAvkast kl. 18.00 (17.00 UTC) ifølge TV 2-terminlisten. Norsk visning: TV 2 Play.",
-		"id": "27eb10b951ab",
-		"awayTeamEntityId": "gjerpen-handball",
-		"verifiedAt": "2026-10-27T10:45:44.164Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste"
-		]
-	},
-	{
-		"sport": "handball",
-		"tournament": "Elkjøp-ligaen kvinner 2026/27",
-		"title": "Follo – Fjellhammer",
-		"time": "2026-11-01T17:00:00Z",
-		"endTime": null,
-		"venue": null,
-		"norwegian": true,
-		"homeTeam": "Follo",
-		"awayTeam": "Fjellhammer",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport/haandball",
-				"urlKind": "deep"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-26T15:20:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"catalog.json#tier2.tournaments",
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
-			"https://www.betexplorer.com/handball/norway/elkjop-ligaen-women/fixtures/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "tv2",
-				"url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
-				"basis": "secondary",
-				"retrievedAt": "2026-10-27T10:45:44.164Z",
-				"note": "TV 2 Livesport-terminlisten oppgir søn. 1. nov kl. 18.00 (17.00 UTC). Betexplorer + Flashscore bekrefter dato/oppsett, men publiserer ikke eksakt tid → tiden hviler på TV 2 alene (fixture-autoritet) = medium. handball.no (NHF) 404/JS → basis secondary. Verify fester eksakt tid."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/haandball",
-				"basis": "official",
-				"retrievedAt": "2026-10-26T15:20:00Z",
-				"note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
-			}
-		},
-		"summary": "Runde 8 i Elkjøp-ligaen kvinner, søndag 1. november. Follo mot Fjellhammer.\n\nAvkast kl. 18.00 (17.00 UTC) ifølge TV 2-terminlisten. Norsk visning: TV 2 Play.",
-		"id": "e48f25dbbccc",
-		"homeTeamEntityId": "follo-handballklubb",
-		"verifiedAt": "2026-10-27T10:45:44.164Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste"
-		]
-	},
-	{
-		"sport": "handball",
-		"tournament": "Elkjøp-ligaen kvinner 2026/27",
-		"title": "Byåsen Elite – Flint Tønsberg",
-		"time": "2026-11-01T17:00:00Z",
-		"endTime": null,
-		"venue": null,
-		"norwegian": true,
-		"homeTeam": "Byåsen Elite",
-		"awayTeam": "Flint Tønsberg",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport/haandball",
-				"urlKind": "deep"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-26T15:20:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"catalog.json#tier2.tournaments",
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
-			"https://www.betexplorer.com/handball/norway/elkjop-ligaen-women/fixtures/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "tv2",
-				"url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
-				"basis": "secondary",
-				"retrievedAt": "2026-10-27T10:45:44.164Z",
-				"note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/haandball",
-				"basis": "official",
-				"retrievedAt": "2026-10-26T15:20:00Z",
-				"note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
-			}
-		},
-		"summary": "Runde 8 i Elkjøp-ligaen kvinner, søndag 1. november. Byåsen Elite mot Flint Tønsberg.\n\nAvkast kl. 18.00 (17.00 UTC). Norsk visning: TV 2 Play.",
-		"id": "09ee44fff28c",
-		"verifiedAt": "2026-10-27T10:45:44.164Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste"
-		]
-	},
-	{
-		"sport": "handball",
-		"tournament": "Elkjøp-ligaen kvinner 2026/27",
-		"title": "Larvik – Molde Elite",
-		"time": "2026-11-01T18:15:00Z",
-		"endTime": null,
-		"venue": null,
-		"norwegian": true,
-		"homeTeam": "Larvik",
-		"awayTeam": "Molde Elite",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport/haandball",
-				"urlKind": "deep"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-26T15:20:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"catalog.json#tier2.tournaments",
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
-			"https://www.betexplorer.com/handball/norway/elkjop-ligaen-women/fixtures/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "tv2",
-				"url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
-				"basis": "secondary",
-				"retrievedAt": "2026-10-27T10:45:44.164Z",
-				"note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/haandball",
-				"basis": "official",
-				"retrievedAt": "2026-10-26T15:20:00Z",
-				"note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
-			}
-		},
-		"summary": "Runde 8 i Elkjøp-ligaen kvinner, søndag 1. november. Larvik tar imot Molde Elite i rundens siste kamp.\n\nAvkast kl. 19.15 (18.15 UTC). Norsk visning: TV 2 Play.",
-		"id": "5e0a8d1f38a9",
-		"homeTeamEntityId": "larvik-handballklubb",
-		"verifiedAt": "2026-10-27T10:45:44.164Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste"
-		]
-	},
-	{
-		"sport": "esports",
-		"tournament": "IEM Beijing 2026",
-		"title": "IEM Beijing 2026 – NAVI, Falcons, FaZe, MOUZ, G2 m.fl.",
-		"time": "2026-11-02T02:00:00Z",
-		"endTime": "2026-11-08T16:00:00Z",
-		"venue": "Bloomage Biotech·Biohyalux ECM Arena, Beijing",
-		"norwegian": false,
-		"participants": [
-			{
-				"name": "Natus Vincere"
-			},
-			{
-				"name": "Team Falcons"
-			},
-			{
-				"name": "FaZe Clan"
-			},
-			{
-				"name": "MOUZ"
-			},
-			{
-				"name": "G2 Esports"
-			},
-			{
-				"name": "FURIA"
-			},
-			{
-				"name": "The MongolZ"
-			},
-			{
-				"name": "Team Liquid"
-			},
-			{
-				"name": "Heroic"
-			}
-		],
-		"streaming": [
-			{
-				"platform": "Twitch (ESLCS)",
-				"url": "https://www.twitch.tv/eslcs",
-				"urlKind": "deep"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-11-01T06:15:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier2.tournaments",
-			"https://liquipedia.net/counterstrike/Intel_Extreme_Masters/2026/Beijing",
-			"https://pro.eslgaming.com/tour/cs/beijing/eventguide/",
-			"https://esports.gg/news/counter-strike-2/iem-beijing-2026/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "liquipedia",
-				"url": "https://liquipedia.net/counterstrike/Intel_Extreme_Masters/2026/Beijing",
-				"basis": "secondary",
-				"retrievedAt": "2026-11-01T06:15:00Z",
-				"note": "Turneringsvindu 2.–8. nov (gruppespill 2.–4., sluttspill 6.–8., grand final 8.), Bloomage ECM Arena Beijing, $1,25 mill., 16 lag. Dato/venue/premiepott/16-lagsfelt fler-kilde-bekreftet (ESL-kunngjøring + Liquipedia + esports.gg + blast.tv) + uavhengig fresh-context write-time fact-check CONFIRMED. Tiden her er vindusstart = dag 1 (man. 2. nov) første kamp 10.00 CST (Beijing UTC+8) = 02.00 UTC (Liquipedia-slott Legacy–MongolZ; ESLs egen eventguide bekrefter dører 08.00 + 10.00/12.30/15.00/17.30 CST-slottene). ESLs egen schedule-side ga 403 ved henting → basis=secondary (Liquipedia lest via API). Per-kamp bracket/tider for katalog-lagene festes nærmere; esports.js/verify boarder NAVI/Falcons/FaZe/G2/MOUZ enkeltkamper når Liquipedia/HLTV fester dem. NB 100 Thieves / rain er IKKE i feltet."
-			},
-			"streaming": {
-				"sourceId": "twitch",
-				"url": "https://www.twitch.tv/eslcs",
-				"basis": "official",
-				"retrievedAt": "2026-11-01T06:15:00Z",
-				"note": "Gratis på ESLs offisielle engelske CS-kanal ESLCS (Twitch twitch.tv/eslcs, også YouTube + Kick) per Liquipedia + write-time fact-check; verdensfeed live.intelextrememasters.com; kinesiske feeds Douyu/Bilibili/Huya. Ingen norsk TV-rettighet (se cs2-sources-skillen). Verify fester eksakt deep-lenke nær kampdag."
-			}
-		},
-		"norwegianPlayers": [],
-		"summary": "IEM Beijing 2026 (2.–8. nov), Bloomage ECM Arena i Beijing — ESLs første store Beijing-CS-event siden 2019. $1,25 mill. tier-1-LAN (ESL Pro Tour/Grand Slam-tellende) med 16 lag: to swiss-/GSL-grupper (2.–4. nov) mater et single-elimination-sluttspill 6.–8. nov, grand final søn. 8. nov.\n\nNi katalog-orger er i feltet: Natus Vincere, Team Falcons, FaZe Clan, MOUZ, G2 Esports, FURIA, The MongolZ, Team Liquid og Heroic (øvrige: Legacy, Aurora, 9z, B8, BetBoom, PARIVISION, TYLOO). Dag 1 (man. 2. nov, fra 10.00 CST / 02.00 UTC): bl.a. NAVI–Falcons og FURIA–FaZe i gruppe A, G2–PARIVISION og MOUZ–TYLOO i gruppe B. 100 Thieves / rain er IKKE med i dette feltet.\n\nGratis på ESLs offisielle Twitch (twitch.tv/eslcs) i Norge — ingen norsk TV-rettighet. Per-kamp tider for katalog-lagene festes nærmere; verify firmer enkeltkampene.",
-		"id": "eee77d69b2a6",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://esports.gg/news/counter-strike-2/iem-beijing-2026/",
-			"https://liquipedia.net/counterstrike/Intel_Extreme_Masters/2026/Beijing",
-			"https://www.strafe.com/news/read/iem-beijing-2026-teams-schedule-format-and-more/"
-		],
-		"verifiedAt": "2026-11-05T13:23:27Z"
-	},
-	{
-		"sport": "football",
-		"tournament": "UEFA Conference League",
-		"title": "Sint-Truidense – Brann",
-		"time": "2026-11-05T20:00:00Z",
-		"endTime": "2026-11-05T22:00:00Z",
-		"venue": "Daio Wasabi Stayen, Sint-Truiden",
-		"norwegian": true,
-		"homeTeam": "Sint-Truidense",
-		"awayTeam": "Brann",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "Viaplay",
-				"url": "https://viaplay.no/no-no/sport",
-				"urlKind": "landing"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-29T15:20:00Z",
-		"confidence": "high",
-		"evidence": [
-			"catalog.json#tier2.teams",
-			"https://www.uefa.com/uefaconferenceleague/clubs/52770--brann/matches/",
-			"https://www.t-online.de/sport/live-ticker/fussball/uefa-conference-league/sdc_fm-62612/sint-truiden-brann-uefa-conference-league-im-liveticker.html",
-			"https://www.foresportia.com/en/prediction/conference-league/st-truiden-brann-2026-11-05/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "uefa",
-				"url": "https://www.uefa.com/uefaconferenceleague/clubs/52770--brann/matches/",
-				"basis": "secondary",
-				"retrievedAt": "2026-11-02T13:44:36Z"
-			},
-			"streaming": {
-				"sourceId": "viaplay",
-				"url": "https://www.viaplaygroup.com/en/newsroom/press-releases/viaplay-and-tv-2-norway-collaborate-make-selected-football-rights-more",
-				"basis": "official",
-				"retrievedAt": "2026-10-30T12:00:00Z",
-				"note": "Viaplay har eksklusive UEFA Conference League-rettigheter i Norge for syklusen 2024-25 t.o.m. 2026-27 (Viaplay/TV 2-delingsavtalen juli 2025). Kampspesifikk sending ikke separat bekreftet; Viaplay er rettighetshaver."
-			}
-		},
-		"summary": "UEFA Conference League, ligafase runde 3 (MD3). Brann spiller borte mot belgiske Sint-Truidense (STVV) på Daio Wasabi Stayen i Sint-Truiden tor. 5. nov kl. 21.00 CET (20.00 UTC).\n\nDato/avspark kryss-sjekket mot uefa.com (Branns kampside) + t-online liveticker + foresportia og en uavhengig write-time fact-check — alle enige på 21.00 CET. (En tidlig lesning av UEFAs ligafase-oppsett antydet 18.45, men den tilhørte Branns neste kamper mot Aarhus/Braga; 5+ kilder inkl. Branns egen terminliste bekrefter 21.00.)\n\nNorsk visning: Viaplay (Viaplay har Europa League + Conference League i Norge t.o.m. 2030/31; enkeltkamper kan også dukke opp på TV 2 Play via fellesavtalen).",
-		"awayTeamEntityId": "brann",
-		"id": "513e8cb5396d",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.uefa.com/uefaconferenceleague/clubs/52770--brann/matches/",
-			"https://www.t-online.de/sport/live-ticker/fussball/uefa-conference-league/sdc_fm-62612/sint-truiden-brann-uefa-conference-league-im-liveticker.html"
-		]
-	},
-	{
-		"sport": "tennis",
-		"tournament": "ATP/WTA Tour",
-		"title": "Bybit Stockholm Open",
-		"time": "2026-11-07T05:00:00.000Z",
-		"endTime": "2026-11-15T04:59:00.000Z",
-		"venue": "TBD",
-		"meta": "ATP/WTA Tour",
-		"norwegian": true,
-		"streaming": [],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": null,
-		"awayTeam": null,
-		"isFavorite": false,
-		"round": null,
-		"id": "f08325fc2437"
-	},
-	{
-		"sport": "f1",
-		"tournament": "Formula 1 World Championship 2026",
-		"title": "São Paulo Grand Prix – kvalifisering",
-		"time": "2026-11-07T18:00:00Z",
-		"endTime": "2026-11-07T19:00:00Z",
-		"venue": "Autódromo José Carlos Pace (Interlagos), São Paulo",
-		"norwegian": false,
-		"participants": [],
-		"norwegianPlayers": [],
-		"streaming": [
-			{
-				"platform": "Viaplay",
-				"url": "https://viaplay.no/no-no/sport",
-				"urlKind": "landing"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-18T22:40:00Z",
-		"confidence": "high",
-		"evidence": [
-			"https://www.formula1.com/en/racing/2026/brazil",
-			"https://www.formula1.com/en/latest/article/formula-1-msc-cruises-grande-premio-de-sao-paulo-2026.3nFWRAkowAY3uUyvw6O0eJ",
-			"https://www.f1-fansite.com/f1-calendar/sao-paulo-grand-prix/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "formula1",
-				"url": "https://www.formula1.com/en/racing/2026/brazil",
-				"basis": "primary",
-				"retrievedAt": "2026-11-02T13:44:36Z"
-			},
-			"streaming": {
-				"sourceId": "viaplay",
-				"url": "https://viaplay.no/no-no/sport",
-				"basis": "official",
-				"retrievedAt": "2026-10-18T22:40:00Z"
-			}
-		},
-		"summary": "Kvalifiseringen avgjør startoppstillingen for søndagens løp (søn. 8. nov kl. 17.00 UTC / 14.00 lokal).\n\nStandard GP-helg UTEN sprint denne gangen (Interlagos droppet fra 2026-sprintkalenderen) — tredje siste løp i mesterskapet på det klassiske Autódromo José Carlos Pace.\n\nTid bekreftet mot formula1.com (arrangøren, primær) + uavhengig write-time fact-check. Norsk visning Viaplay.",
-		"id": "c2dd6b9c5607",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.formula1.com/en/racing/2026/brazil",
-			"https://oversteer48.com/brazil-grand-prix-schedule/",
-			"https://racingnews365.com/2026-f1-sao-paulo-grand-prix---brazil-time-schedule",
-			"https://the-race.com/formula-1/what-time-is-f1s-2026-brazilian-grand-prix-full-weekend-schedule"
-		],
-		"verifiedAt": "2026-11-06T13:06:00Z"
-	},
-	{
-		"sport": "tennis",
-		"tournament": "ATP/WTA Tour",
-		"title": "FAGE WTA Finals Indian Wells",
-		"time": "2026-11-08T05:00:00.000Z",
-		"endTime": "2026-11-16T04:59:00.000Z",
-		"venue": "TBD",
-		"meta": "ATP/WTA Tour",
-		"norwegian": false,
-		"streaming": [],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": null,
-		"awayTeam": null,
-		"isFavorite": false,
-		"round": null,
-		"id": "6998f65c3ed4"
-	},
-	{
-		"sport": "football",
-		"tournament": "OBOS-ligaen 2026",
-		"title": "Strømmen – Lyn",
-		"time": "2026-11-08T12:00:00Z",
-		"endTime": null,
-		"venue": "Strømmen stadion",
-		"norwegian": true,
-		"homeTeam": "Strømmen",
-		"awayTeam": "Lyn",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport",
-				"urlKind": "landing"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-30T05:55:00Z",
-		"confidence": "high",
-		"evidence": [
-			"catalog.json#tier2.teams",
-			"https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
-			"https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206093",
-			"https://www.fotmob.com/teams/10224/fixtures"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "fotball-no",
-				"url": "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
-				"basis": "primary",
-				"retrievedAt": "2026-10-30T05:55:00Z",
-				"note": "fotball.no (NFF, primær) + OBOS-ligaens terminliste (fiksId 206093), begge enige på OBOS-ligaen runde 30 — sesongavslutningen (søn. 8. nov kl. 13.00 CET / 12.00 UTC). CET=UTC+1 (sommertid slutt 25. okt). Uavhengig fresh-context write-time fact-check mot FotMob = confirmed (samme UTC-anker)."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport",
-				"basis": "official",
-				"retrievedAt": "2026-10-30T05:55:00Z",
-				"note": "TV 2 Play holder OBOS-ligaens norske rettigheter 2026. TV-valg kan flytte avspark 30–60 min; verify følger."
-			}
-		},
-		"id": "eb53e7dfe3bb",
-		"summary": "Lyn avslutter OBOS-ligaen 2026-sesongen borte mot Strømmen på Strømmen stadion, søndag 8. november kl. 13.00 (12.00 UTC) — siste serierunde (runde 30).\n\nDato/tid/arena to-kilde-bekreftet mot fotball.nos primær-autoritet (Lyns lagside + OBOS-ligaens terminliste, begge enige) og uavhengig mot FotMob.\n\nNorsk visning: TV 2 Play (OBOS-ligaens rettighetshaver). TV-valg kan flytte avsparket 30–60 min; verify følger.",
-		"awayTeamEntityId": "fk-lyn-oslo",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206093",
-			"https://www.fotmob.com/teams/10224/fixtures",
-			"https://starting11.com/fixtures/strommen-vs-lyn",
-			"https://www.fotmob.com/teams/4249/fixtures/strommen"
-		],
-		"verifiedAt": "2026-11-06T13:06:00Z"
-	},
-	{
-		"sport": "handball",
-		"tournament": "EHF Champions League (kvinner)",
-		"title": "Team Esbjerg – Ferencváros",
-		"time": "2026-11-08T13:00:00Z",
-		"endTime": null,
-		"venue": "Esbjerg, Danmark",
-		"norwegian": true,
-		"homeTeam": "Team Esbjerg",
-		"awayTeam": "Ferencváros",
-		"norwegianPlayers": [
-			{
-				"name": "Nora Mørk",
-				"entityId": "nora-mork"
-			}
-		],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport/haandball",
-				"urlKind": "deep"
-			},
-			{
-				"platform": "Viaplay",
-				"url": "https://viaplay.no/no/sport",
-				"urlKind": "landing"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-19T05:50:00Z",
-		"confidence": "high",
-		"evidence": [
-			"catalog.json#tier2.athletes",
-			"https://ehfcl.eurohandball.com/women/2026-27/clubs/details/pDFr6Zez5TuW42vtj9_w0Q/TeamEsbjerg/",
-			"https://www.sportschau.de/live-und-ergebnisse/handball/ehf-champions-league-frauen/ma12367879/team-esbjerg_ferencvaros-budapest/blitztabelle"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "eurohandball",
-				"url": "https://ehfcl.eurohandball.com/women/2026-27/clubs/details/pDFr6Zez5TuW42vtj9_w0Q/TeamEsbjerg/",
-				"basis": "primary",
-				"note": "EHF (arrangøren, lest direkte): søn. 8. nov 14:00 CET hjemme i Esbjerg (FTC-Toyota Kovács = Ferencváros) = 13:00 UTC. sportschau uavhengig enig (14:00, MD7).",
-				"retrievedAt": "2026-11-02T13:44:36Z"
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/haandball",
-				"basis": "official",
-				"retrievedAt": "2026-10-19T05:50:00Z",
-				"note": "Kvinnenes EHF CL i Norge: DELT Viaplay/TV 2-avtale t.o.m. 2029/30 (fact-check-funn); Esbjerg-kamper i høst har gått på TV 2 Sport 2 / TV 2 Play. Begge plattformer listet; verify firmer eksakt kanal per kamp (ingen norsk klubb i kampen)."
-			}
-		},
-		"summary": "Nora Mørks Team Esbjerg tar imot ungarske Ferencváros søndag 8. november kl. 14.00 (Champions League kvinner, gruppespillrunde 7) — Esbjergs neste CL-kamp etter seieren over Brest 17. oktober; CL-kvinnene har pause til 7.–8. november.\n\nTidspunkt bekreftet av EHF (arrangøren) og uavhengig av sportschau. Norsk visning TV 2 Play eller Viaplay (delt EHF CL-rettighetsavtale) — verify firmer kanal nær kampdag.",
-		"id": "5d56c46d2e5f",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://ehfcl.eurohandball.com/women/2026-27/clubs/details/pDFr6Zez5TuW42vtj9_w0Q/TeamEsbjerg/",
-			"https://www.sportschau.de/live-und-ergebnisse/handball/ehf-champions-league-frauen/ma12367879/team-esbjerg_ferencvaros-budapest/blitztabelle"
-		],
-		"verifiedAt": "2026-11-06T13:06:00Z"
-	},
-	{
-		"sport": "football",
-		"tournament": "Copa del Rey",
-		"title": "Alavés at Anaitasuna",
-		"time": "2026-11-10T18:00:00.000Z",
-		"endTime": null,
-		"venue": "Txerloia",
-		"meta": "Copa del Rey",
-		"norwegian": false,
-		"streaming": [],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": "Anaitasuna",
-		"awayTeam": "Alavés",
-		"isFavorite": false,
-		"round": null,
-		"id": "75249b676f2a",
-		"awayTeamEntityId": "alaves"
-	},
-	{
-		"sport": "football",
-		"tournament": "Copa del Rey",
-		"title": "Eibar at CD Pamplona",
-		"time": "2026-11-10T18:00:00.000Z",
-		"endTime": null,
-		"venue": "Polideportivo Valle Aranguren",
-		"meta": "Copa del Rey",
-		"norwegian": false,
-		"streaming": [],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": "CD Pamplona",
-		"awayTeam": "Eibar",
-		"isFavorite": false,
-		"round": null,
-		"id": "fc676c3f8175"
-	},
-	{
-		"sport": "football",
-		"tournament": "Copa del Rey",
-		"title": "UD Logroñés at Amorebieta",
-		"time": "2026-11-10T19:00:00.000Z",
-		"endTime": null,
-		"venue": "Urritxe",
-		"meta": "Copa del Rey",
-		"norwegian": false,
-		"streaming": [],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": "Amorebieta",
-		"awayTeam": "UD Logroñés",
-		"isFavorite": false,
-		"round": null,
-		"id": "c0c7375d032c"
-	},
-	{
-		"sport": "football",
-		"tournament": "Copa del Rey",
-		"title": "Real Jaen CF at Mijas Las Lagunas",
-		"time": "2026-11-10T19:00:00.000Z",
-		"endTime": null,
-		"venue": "Francisco Muñoz Pérez",
-		"meta": "Copa del Rey",
-		"norwegian": false,
-		"streaming": [],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": "Mijas Las Lagunas",
-		"awayTeam": "Real Jaen CF",
-		"isFavorite": false,
-		"round": null,
-		"id": "a10f77d24e59"
-	},
-	{
-		"sport": "football",
-		"tournament": "Copa del Rey",
-		"title": "Leganés at Trival Valderas",
-		"time": "2026-11-10T19:00:00.000Z",
-		"endTime": null,
-		"venue": "Estadio Municipal de Butarque",
-		"meta": "Copa del Rey",
-		"norwegian": false,
-		"streaming": [],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": "Trival Valderas",
-		"awayTeam": "Leganés",
-		"isFavorite": false,
-		"round": null,
-		"id": "aa1a618f9768"
-	},
-	{
-		"sport": "football",
-		"tournament": "Copa del Rey",
-		"title": "Valencia at Tavernes de la Valldigna",
-		"time": "2026-11-10T20:00:00.000Z",
-		"endTime": null,
-		"venue": "Mestalla Stadium",
-		"meta": "Copa del Rey",
-		"norwegian": false,
-		"streaming": [],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": "Tavernes de la Valldigna",
-		"awayTeam": "Valencia",
-		"isFavorite": false,
-		"round": null,
-		"id": "b23092e800c9",
-		"awayTeamEntityId": "valencia"
-	},
-	{
-		"sport": "tennis",
-		"tournament": "Bybit Stockholm Open",
-		"title": "Casper Ruud – TBD",
-		"time": "2026-11-11T05:00:00.000Z",
-		"endTime": null,
-		"venue": "Stockholm, Sweden",
-		"meta": "Bybit Stockholm Open · Men's Singles",
-		"norwegian": true,
-		"streaming": [],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": null,
-		"awayTeam": null,
-		"isFavorite": false,
-		"round": null,
-		"id": "9544b2d17d6e"
-	},
-	{
-		"sport": "chess",
-		"tournament": "Total Chess World Championship 2026",
-		"title": "Total Chess VM-pilot – gruppespill (Budapest)",
-		"time": "2026-11-11T14:00:00Z",
-		"endTime": "2026-11-21T22:00:00Z",
-		"venue": "Anantara New York Palace Budapest Hotel, Budapest",
-		"norwegian": false,
-		"participants": [
-			{
-				"name": "Magnus Carlsen"
-			},
-			{
-				"name": "Fabiano Caruana"
-			},
-			{
-				"name": "Arjun Erigaisi"
-			},
-			{
-				"name": "Wesley So"
-			},
-			{
-				"name": "Vincent Keymer"
-			},
-			{
-				"name": "Levon Aronian"
-			}
-		],
-		"streaming": [],
-		"source": "ai-research",
-		"researchedAt": "2026-09-29T10:45:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier2.tournaments",
-			"https://worldchess.com/news/total-chess-2026-everything-you-need-to-know",
-			"https://en.wikipedia.org/wiki/Total_Chess_World_Championship_2026",
-			"https://www.chess.com/news/view/carlsen-caruana-total-chess-pilot-budapest-2026"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "world-chess",
-				"url": "https://worldchess.com/news/total-chess-2026-everything-you-need-to-know",
-				"basis": "primary",
-				"retrievedAt": "2026-09-29T10:45:00Z"
-			}
-		},
-		"summary": "Magnus Carlsens bekreftede neste turnering: pilot-utgaven av den FIDE-godkjente Total Chess World Championship Tour, i Budapest 10.–21. november. 24 spillere fra 10 nasjoner, premiepott minst $2,7 mill. og to plasser til Kandidatturneringen 2028.\n\nÅpningsseremoni + blitz-sveitser går 10. nov (klokkeslett ikke publisert). Gruppespillet (fire grupper à seks, dobbel serie i «fast classic» 45+30) spilles 11.–15. nov med daglig start 15:00 CET. Utslagsrundene 17.–20. nov (blitz 15:00, hurtig 16:15, fast classic 18:45 CET).\n\nCarlsen, Caruana, Erigaisi, Wesley So, Keymer og Aronian er bekreftet; Gukesh, Nakamura og Sindarov er meldt av pga. kollisjon med det klassiske VM. Norsk/offisiell kringkasting er ennå ikke kunngjort av arrangøren – verify fyller streaming når worldchess melder plattform.",
-		"norwegianPlayers": [],
-		"id": "bd5daeb1237d",
-		"verifiedAt": "2026-11-05T13:23:27Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://worldchess.com/news/total-chess-2026-everything-you-need-to-know",
-			"https://www.fide.com/chess-superstars-set-for-total-chess-world-championship-tour-pilot-in-budapest/",
-			"https://en.chessbase.com/post/total-chess-world-ch-2026-lineup"
-		]
-	},
-	{
-		"sport": "handball",
-		"tournament": "NM-sluttspillet (menn)",
-		"title": "Semifinale: Kolstad – Bergen",
-		"time": "2026-11-11T17:00:00Z",
-		"endTime": "2026-11-11T18:45:00Z",
-		"venue": "Kolstad Arena, Trondheim",
-		"norwegian": true,
-		"homeTeam": "Kolstad Håndball",
-		"awayTeam": "Bergen Håndball",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport/haandball",
-				"urlKind": "deep"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-11-02T06:15:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier2.teams",
-			"https://www.handball.no/nyheter/2026/10/nm-finalene-returnerer-til-oslo-spektrum/",
-			"https://www.betexplorer.com/handball/team/kolstad/rTWbl2mC/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "handballforbundet",
-				"url": "https://www.handball.no/nyheter/2026/10/nm-finalene-returnerer-til-oslo-spektrum/",
-				"basis": "secondary",
-				"retrievedAt": "2026-11-02T06:15:00Z",
-				"note": "NHF (autoriteten) bekrefter at NM-semifinalene menn spilles 11.–12. nov og at Kolstad, Bergen, Sandefjord og Elverum er klare, men gir IKKE eksakt kampdag/avspark. Den konkrete paringen Kolstad–Bergen + slot 11. nov kl. 18.00 CET (17:00 UTC) kommer fra flashscore/betexplorer (aggregator). Derav secondary + medium. Verify fester kampdag/tid/arena mot forbundets kampprogram."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/haandball",
-				"basis": "official",
-				"retrievedAt": "2026-11-02T06:15:00Z",
-				"note": "TV 2 har norsk håndballrettighet (NM-finalene 28. des bekreftet på TV 2 Direkte av NHF; hele NM-sluttspillet er TV 2-pakke). Verify bør bekrefte semifinale-spesifikk kanal."
-			}
-		},
-		"summary": "Kolstad møter Bergen i semifinalen i NM-sluttspillet for menn — Final 4-helgen 11.–12. november. Vinneren går til cupfinalen i Oslo Spektrum 28. desember.\n\nNHF bekrefter at Kolstad, Bergen, Sandefjord og Elverum er klare til semifinalene 11.–12. nov; eksakt kampdag/avspark (11. nov kl. 18.00) og paringen Kolstad–Bergen er foreløpig fra én aggregator → medium, verify fester mot forbundets kampprogram. Norsk visning TV 2 Play.",
-		"id": "9124816807dd",
-		"homeTeamEntityId": "kolstad-handball",
-		"awayTeamEntityId": "bergen-handball",
-		"verifiedAt": "2026-11-07T11:53:38.627Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.handball.no/nyheter/2026/10/nm-finalene-returnerer-til-oslo-spektrum/",
-			"https://www.betexplorer.com/handball/team/kolstad/rTWbl2mC/"
-		]
-	},
-	{
-		"sport": "golf",
-		"tournament": "PGA Tour",
-		"title": "Austin Championship pres. by Compliance Solutions",
-		"time": "2026-11-12T05:00:00.000Z",
-		"endTime": "2026-11-15T20:00:00.000Z",
-		"venue": "TBD",
-		"meta": "PGA Tour",
-		"norwegian": false,
-		"streaming": [
-			{
-				"platform": "HBO Max (Sport)",
-				"url": "https://www.hbomax.com/no/no/sports/pga-tour",
-				"urlKind": "landing"
-			},
-			{
-				"platform": "Eurosport",
-				"url": "https://www.eurosport.no",
-				"urlKind": "landing"
-			}
-		],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": null,
-		"awayTeam": null,
-		"isFavorite": false,
-		"round": null,
-		"id": "c23b037b2283"
-	},
-	{
-		"sport": "golf",
-		"tournament": "DP World Tour",
-		"title": "DP World Tour Championship",
-		"time": "2026-11-12T05:00:00.000Z",
-		"endTime": "2026-11-15T20:00:00.000Z",
-		"venue": "TBD",
-		"meta": "DP World Tour",
-		"norwegian": false,
-		"streaming": [
-			{
-				"platform": "Viaplay",
-				"url": "https://viaplay.no/no-no/sport",
-				"urlKind": "landing"
-			}
-		],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": null,
-		"awayTeam": null,
-		"isFavorite": false,
-		"round": null,
-		"id": "6ef64315f23f"
-	},
-	{
-		"sport": "football",
-		"tournament": "Copa del Rey",
-		"title": "Albacete at Calvo Sotelo",
-		"time": "2026-11-12T17:30:00.000Z",
-		"endTime": null,
-		"venue": "Estadio Ciudad de Puertollano",
-		"meta": "Copa del Rey",
-		"norwegian": false,
-		"streaming": [],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": "Calvo Sotelo",
-		"awayTeam": "Albacete",
-		"isFavorite": false,
-		"round": null,
-		"id": "188b3f851cd4"
-	},
-	{
-		"sport": "football",
-		"tournament": "Copa del Rey",
-		"title": "Real Betis at CD Artistico Navalcarnero",
-		"time": "2026-11-12T18:00:00.000Z",
-		"endTime": null,
-		"venue": "Municipal de Santo Domingo",
-		"meta": "Copa del Rey",
-		"norwegian": false,
-		"streaming": [],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": "CD Artistico Navalcarnero",
-		"awayTeam": "Real Betis",
-		"isFavorite": false,
-		"round": null,
-		"id": "8d03d1d2bfe3",
-		"awayTeamEntityId": "real-betis"
-	},
-	{
-		"sport": "football",
-		"tournament": "Copa del Rey",
-		"title": "Levante at CD Tarancon",
-		"time": "2026-11-12T18:00:00.000Z",
-		"endTime": null,
-		"venue": "Polideportivo Estadio Municipal Tarancón",
-		"meta": "Copa del Rey",
-		"norwegian": false,
-		"streaming": [],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": "CD Tarancon",
-		"awayTeam": "Levante",
-		"isFavorite": false,
-		"round": null,
-		"id": "ac9c75303f3e",
-		"awayTeamEntityId": "levante"
-	},
-	{
-		"sport": "football",
-		"tournament": "Copa del Rey",
-		"title": "Celta Vigo at Salamanca UDS",
-		"time": "2026-11-13T20:00:00.000Z",
-		"endTime": null,
-		"venue": "Estadio Helmántico",
-		"meta": "Copa del Rey",
-		"norwegian": false,
-		"streaming": [],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": "Salamanca UDS",
-		"awayTeam": "Celta Vigo",
-		"isFavorite": false,
-		"round": null,
-		"id": "b45d5278f56d",
-		"awayTeamEntityId": "celta-vigo"
-	},
-	{
-		"sport": "tennis",
-		"tournament": "ATP/WTA Tour",
-		"title": "Nitto ATP Finals",
-		"time": "2026-11-14T05:00:00.000Z",
-		"endTime": "2026-11-23T04:59:00.000Z",
-		"venue": "TBD",
-		"meta": "ATP/WTA Tour",
-		"norwegian": false,
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport/tennis",
-				"urlKind": "landing"
-			}
-		],
-		"participants": [
-			{
-				"name": "Carlos Alcaraz"
-			},
-			{
-				"name": "Alexander Zverev"
-			},
-			{
-				"name": "Ben Shelton"
-			}
-		],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": null,
-		"awayTeam": null,
-		"isFavorite": false,
-		"round": null,
-		"id": "e94b13c2d30f",
-		"summary": "ATP-sesongens avsluttende mesterskap: de åtte beste spillerne i verden møtes i round-robin (to grupper à fire) før semifinaler og finale. Turneringen går 15.–22. november i Inalpi Arena i Torino (Torino arrangerer t.o.m. 2027).\n\nCarlos Alcaraz, Alexander Zverev og Ben Shelton er bekreftet kvalifisert. Jannik Sinner kvalifiserte seg først, men avsluttet sesongen med en kneskade og står over Torino. De resterende plassene og reservene er ikke endelig kåret. Ingen norsk spiller er kvalifisert (Casper Ruud er utenfor topp 8).\n\nMedium: dato/arena er flerkilde-bekreftet (Wikipedia + atptour.com), men startoppsett og eksakte kamptider publiseres nærmere. Norsk visning TV 2 Play (TV 2s ATP-avtale inkluderer ATP-finalen). CET = UTC+1."
-	},
-	{
-		"sport": "alpine",
-		"tournament": "FIS verdenscup alpint 2026/27",
-		"title": "Levi: Slalåm kvinner",
-		"time": "2026-11-14T09:00:00Z",
-		"venue": "Levi, Finland",
-		"norwegian": false,
-		"norwegianPlayers": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport",
-				"urlKind": "landing"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-11-03T19:40:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
-			"https://www.telenor.no/streamix/artikler/verdenscup-alpint-streamix/",
-			"https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "wikipedia",
-				"url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
-				"basis": "secondary",
-				"retrievedAt": "2026-11-03T19:40:00Z"
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing",
-				"basis": "official",
-				"retrievedAt": "2026-11-07T11:53:38.627Z",
-				"note": "TV 2s egen sesongpresse (uke 46): «Alpint fra Levi (TV 2)». Fra 2026/27 deler TV 2 Play og Viaplay FIS-verdenscupen i alpint i utlandet; renn i Norge går til NRK. Levi (Finland) ligger på TV 2s halvdel — IKKE NRK. Korrigerer eventets tidligere NRK-felt, som motsa eventets eget summary."
-			}
-		},
-		"summary": "Alpinsesongens slalåmåpning for kvinner i Levi, Finland — det tradisjonelle verdenscupstoppet nord for polarsirkelen som alltid deler ut et reinsdyr til vinneren. Første renn etter storslalåmåpningen i Sölden.\n\nNorsk visning: TV 2 Play. Fra sesongen 2026/27 deler TV 2 og Viaplay FIS-verdenscupen i utlandet (renn i Norge går til NRK) — Levi-uka (uke 46) ligger på TV 2s halvdel per TV 2s egen sesongplan, ikke NRK. Endelig starttid er ikke FIS-låst ennå; verify bør bekrefte mot sendeplanen og FIS-startlista nærmere rennhelgen.",
-		"id": "0241465fd12a",
-		"participants": [],
-		"verifiedAt": "2026-11-09T14:08:06Z",
-		"verificationStatus": "amended",
-		"verificationSources": [
-			"https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing",
-			"https://www.telenor.no/streamix/artikler/verdenscup-alpint-streamix/",
-			"https://www.oasport.it/2026/10/quando-le-prossime-gare-di-sci-alpino-appuntamento-a-levi-programma-orari-tv/"
-		]
-	},
-	{
-		"sport": "football",
-		"tournament": "UEFA Nations League",
-		"title": "Norge – Wales",
-		"time": "2026-11-14T17:00:00Z",
-		"endTime": null,
-		"venue": "Ullevaal Stadion, Oslo",
-		"norwegian": true,
-		"homeTeam": "Norge",
-		"awayTeam": "Wales",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 / TV 2 Play",
-				"url": "https://play.tv2.no/sport/fotball",
-				"urlKind": "landing"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-19T05:50:00Z",
-		"confidence": "high",
-		"evidence": [
-			"catalog.json#tier1",
-			"https://www.fotball.no/landslag/norge-a-herrer/",
-			"https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures-a/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "fotball-no",
-				"url": "https://www.fotball.no/landslag/norge-a-herrer/",
-				"basis": "primary",
-				"retrievedAt": "2026-10-19T05:50:00Z",
-				"note": "fotball.no (NFF, primær, lest direkte): «lørdag 14.11.26», 18:00, Ullevaal Stadion = 17:00 UTC (CET). UEFAs terminliste-artikkel eksplisitt enig (18:00, «All times CET»)."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/fotball",
-				"basis": "official",
-				"retrievedAt": "2026-10-19T05:50:00Z",
-				"note": "TV 2 har de norske Nations League-rettighetene (authority.json football:nations-league); eksakt lineær kanal-slot settes nærmere kampen — verify firmer."
-			}
-		},
-		"summary": "Norge møter Wales hjemme på Ullevaal lørdag 14. november kl. 18.00 — nest siste kamp i Nations League A, gruppe 4 (Portugal, Danmark, Norge, Wales). Wales vant møtet i Cardiff 2–1 i oktober.\n\nAvspark bekreftet av både fotball.no (primær) og UEFAs terminliste (18:00 CET). Troppen tas ut i november.\n\nNorsk visning TV 2 / TV 2 Play.",
-		"id": "0dc1955f2a7c",
-		"homeTeamEntityId": "norge",
-		"awayTeamEntityId": "wales",
-		"verifiedAt": "2026-11-09T14:08:06Z",
-		"verificationStatus": "confirmed",
-		"verificationSources": [
-			"https://www.fotball.no/landslag/norge-a-herrer/",
-			"https://www.tntsports.co.uk/football/uefa-nations-league/2026-2027/norway-wales_mtc20005926/live.shtml"
-		]
-	},
-	{
-		"sport": "alpine",
-		"tournament": "FIS verdenscup alpint 2026/27",
-		"title": "Levi: Slalåm menn",
-		"time": "2026-11-15T09:00:00Z",
-		"venue": "Levi, Finland",
-		"norwegian": false,
-		"norwegianPlayers": [],
-		"streaming": [
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport",
-				"urlKind": "landing"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-11-03T19:40:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
-			"https://www.telenor.no/streamix/artikler/verdenscup-alpint-streamix/",
-			"https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "wikipedia",
-				"url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
-				"basis": "secondary",
-				"retrievedAt": "2026-11-03T19:40:00Z"
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing",
-				"basis": "official",
-				"retrievedAt": "2026-11-07T11:55:19.607Z",
-				"note": "TV 2s egen sesongpresse (uke 46): Levi-helgen («Alpint fra Levi (TV 2)») — både dame- og herreslalåm. Fra 2026/27 deler TV 2 Play og Viaplay FIS-verdenscupen i alpint i utlandet; renn i Norge går til NRK. Korrigerer eventets tidligere NRK-felt som motsa summary."
-			}
-		},
-		"summary": "Alpinsesongens slalåmåpning for menn i Levi, Finland — det tradisjonelle verdenscupstoppet nord for polarsirkelen, dagen etter kvinnenes renn. Norske slalåmkjørere som Atle Lie McGrath, Timon Haugan og Alexander Steen Olsen hører til favorittsjiktet.\n\nNorsk visning: TV 2 Play. Fra sesongen 2026/27 deler TV 2 og Viaplay FIS-verdenscupen i utlandet (renn i Norge går til NRK) — Levi-uka (uke 46) ligger på TV 2s halvdel per TV 2s egen sesongplan, ikke NRK. Endelig starttid er ikke FIS-låst ennå; verify bør bekrefte mot sendeplanen og FIS-startlista nærmere rennhelgen.",
-		"id": "5b50fa023c74",
-		"participants": [],
-		"verifiedAt": "2026-11-09T14:08:06Z",
-		"verificationStatus": "amended",
-		"verificationSources": [
-			"https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing",
-			"https://www.telenor.no/streamix/artikler/verdenscup-alpint-streamix/",
-			"https://www.oasport.it/2026/10/quando-le-prossime-gare-di-sci-alpino-appuntamento-a-levi-programma-orari-tv/"
-		]
-	},
-	{
-		"sport": "football",
-		"tournament": "UEFA Nations League",
-		"title": "Danmark – Norge",
-		"time": "2026-11-17T19:45:00Z",
-		"endTime": null,
-		"venue": "Parken, København",
-		"norwegian": true,
-		"homeTeam": "Danmark",
-		"awayTeam": "Norge",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "TV 2 / TV 2 Play",
-				"url": "https://play.tv2.no/sport/fotball",
-				"urlKind": "landing"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-10-19T05:50:00Z",
-		"confidence": "high",
-		"evidence": [
-			"catalog.json#tier1",
-			"https://www.fotball.no/landslag/norge-a-herrer/",
-			"https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures-a/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "fotball-no",
-				"url": "https://www.fotball.no/landslag/norge-a-herrer/",
-				"basis": "primary",
-				"retrievedAt": "2026-10-19T05:50:00Z",
-				"note": "fotball.no (NFF, primær, lest direkte): «tirsdag 17.11.26», 20:45, Parken, København = 19:45 UTC (CET). UEFAs terminliste bruker samme 20:45-CET-standardslot for kampen; verify re-bekrefter nær kampdag."
-			},
-			"streaming": {
-				"sourceId": "tv2",
-				"url": "https://play.tv2.no/sport/fotball",
-				"basis": "official",
-				"retrievedAt": "2026-10-19T05:50:00Z",
-				"note": "TV 2 har de norske Nations League-rettighetene; eksakt lineær kanal-slot settes nærmere — verify firmer."
-			}
-		},
-		"summary": "Norge avslutter Nations League-gruppespillet borte mot Danmark i Parken tirsdag 17. november kl. 20.45 (gruppe A4-finalerunden, MD6).\n\nAvspark per fotball.no (primær, 20:45) i UEFAs standardslot; verify re-bekrefter nær kampdag. Troppen tas ut i november.\n\nNorsk visning TV 2 / TV 2 Play.",
-		"id": "1ef2166b04cb",
-		"homeTeamEntityId": "danmark",
-		"awayTeamEntityId": "norge"
-	},
-	{
-		"sport": "golf",
-		"tournament": "PGA Tour",
-		"title": "The RSM Classic",
-		"time": "2026-11-19T05:00:00.000Z",
-		"endTime": "2026-11-22T20:00:00.000Z",
-		"venue": "TBD",
-		"meta": "PGA Tour",
-		"norwegian": false,
-		"streaming": [
-			{
-				"platform": "HBO Max (Sport)",
-				"url": "https://www.hbomax.com/no/no/sports/pga-tour",
-				"urlKind": "landing"
-			},
-			{
-				"platform": "Eurosport",
-				"url": "https://www.eurosport.no",
-				"urlKind": "landing"
-			}
-		],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": null,
-		"awayTeam": null,
-		"isFavorite": false,
-		"round": null,
-		"id": "e84e79367d27"
-	},
-	{
-		"sport": "f1",
-		"tournament": "Formula 1 2026 - Race Weekend",
-		"title": "Heineken Las Vegas Grand Prix",
-		"time": "2026-11-22T04:00:00.000Z",
-		"endTime": null,
-		"venue": "TBD",
-		"meta": "Formula 1 2026 - Race Weekend",
-		"norwegian": false,
-		"streaming": [
-			{
-				"platform": "Viaplay",
-				"url": "https://viaplay.no/no-no/sport",
-				"urlKind": "landing"
-			}
-		],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": null,
-		"awayTeam": null,
-		"isFavorite": false,
-		"round": null,
-		"id": "508904d8322a"
-	},
-	{
-		"sport": "f1",
-		"tournament": "Formula 1 2026 - Race Weekend",
-		"title": "Qatar Airways Qatar Grand Prix",
-		"time": "2026-11-29T16:00:00.000Z",
-		"endTime": null,
-		"venue": "TBD",
-		"meta": "Formula 1 2026 - Race Weekend",
-		"norwegian": false,
-		"streaming": [
-			{
-				"platform": "Viaplay",
-				"url": "https://viaplay.no/no-no/sport",
-				"urlKind": "landing"
-			}
-		],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": null,
-		"awayTeam": null,
-		"isFavorite": false,
-		"round": null,
-		"id": "b79447e949b3"
-	},
-	{
-		"sport": "handball",
-		"tournament": "EHF EURO 2026 (kvinner)",
-		"title": "Gruppespill: Norge – Romania",
-		"time": "2026-12-04T19:00:00Z",
-		"endTime": null,
-		"venue": "BTarena, Cluj-Napoca",
-		"norwegian": true,
-		"homeTeam": "Norge",
-		"awayTeam": "Romania",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "Viaplay",
-				"url": "https://viaplay.no/no-no/sport",
-				"urlKind": "landing"
-			},
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport",
-				"urlKind": "landing"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-11-04T00:55:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"catalog.json#tier2.tournaments",
-			"https://ehfeuro.eurohandball.com/news/en/ehf-confirms-throw-off-times-for-women-s-ehf-euro-2026/",
-			"https://en.wikipedia.org/wiki/2026_European_Women%27s_Handball_Championship",
-			"https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "eurohandball",
-				"url": "https://ehfeuro.eurohandball.com/news/en/ehf-confirms-throw-off-times-for-women-s-ehf-euro-2026/",
-				"basis": "secondary",
-				"retrievedAt": "2026-11-04T00:55:00Z",
-				"note": "EHF (eurohandball.com) arrangerer EM og bekrefter avsparkstidene: gruppe B i Cluj-Napoca spiller 18:30/21:00 lokal (EET, UTC+2 i des.) = 17:30/20:00 CET. Norge ligger i 21:00-EET/20:00-CET-slotten hver kampdag (EHF + Wikipedia enige, uavhengig write-time fact-check CONFIRMED). 20:00 CET = 19:00 UTC."
-			},
-			"streaming": {
-				"sourceId": "viaplay",
-				"url": "https://viaplay.no",
-				"basis": "secondary",
-				"retrievedAt": "2026-11-04T00:55:00Z",
-				"note": "handball.no + allente.no: EM/VM deles fra des. 2026 mellom TV3/Viaplay og TV 2/TV 2 Play i Norge; eksakt kamp-for-kamp-split ikke publisert ennå → list begge, verify firmer per kamp."
-			}
-		},
-		"summary": "Norge er regjerende europamester (gull i 2024) og toppseedet i gruppe B, som spilles i BTarena i Cluj-Napoca, Romania.\n\nGruppespillåpningen mot vertsnasjonen Romania fredag 4. desember kl. 20.00 (norsk tid). EM 2026 (kvinner) spilles 3.–20. desember i Polen, Romania, Tsjekkia, Slovakia og Tyrkia.\n\nNorsk visning er delt mellom TV3/Viaplay og TV 2/TV 2 Play fra desember 2026 (handball.no) — eksakt kanal per kamp bekreftes av verify når sendeplanen publiseres.",
-		"id": "55486346f984"
-	},
-	{
-		"sport": "f1",
-		"tournament": "Formula 1 2026 - Race Weekend",
-		"title": "Etihad Airways Abu Dhabi Grand Prix",
-		"time": "2026-12-06T13:00:00.000Z",
-		"endTime": null,
-		"venue": "TBD",
-		"meta": "Formula 1 2026 - Race Weekend",
-		"norwegian": false,
-		"streaming": [
-			{
-				"platform": "Viaplay",
-				"url": "https://viaplay.no/no-no/sport",
-				"urlKind": "landing"
-			}
-		],
-		"participants": [],
-		"norwegianPlayers": [],
-		"totalPlayers": null,
-		"link": null,
-		"status": null,
-		"featuredGroups": [],
-		"homeTeam": null,
-		"awayTeam": null,
-		"isFavorite": false,
-		"round": null,
-		"id": "c1e8061ea012"
-	},
-	{
-		"sport": "handball",
-		"tournament": "EHF EURO 2026 (kvinner)",
-		"title": "Gruppespill: Norge – Sveits",
-		"time": "2026-12-06T19:00:00Z",
-		"endTime": null,
-		"venue": "BTarena, Cluj-Napoca",
-		"norwegian": true,
-		"homeTeam": "Norge",
-		"awayTeam": "Sveits",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "Viaplay",
-				"url": "https://viaplay.no/no-no/sport",
-				"urlKind": "landing"
-			},
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport",
-				"urlKind": "landing"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-11-04T00:55:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"catalog.json#tier2.tournaments",
-			"https://ehfeuro.eurohandball.com/news/en/ehf-confirms-throw-off-times-for-women-s-ehf-euro-2026/",
-			"https://en.wikipedia.org/wiki/2026_European_Women%27s_Handball_Championship",
-			"https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "eurohandball",
-				"url": "https://ehfeuro.eurohandball.com/news/en/ehf-confirms-throw-off-times-for-women-s-ehf-euro-2026/",
-				"basis": "secondary",
-				"retrievedAt": "2026-11-04T00:55:00Z",
-				"note": "EHF (eurohandball.com) arrangerer EM og bekrefter avsparkstidene: gruppe B i Cluj-Napoca spiller 18:30/21:00 lokal (EET, UTC+2 i des.) = 17:30/20:00 CET. Norge ligger i 21:00-EET/20:00-CET-slotten hver kampdag (EHF + Wikipedia enige, uavhengig write-time fact-check CONFIRMED). 20:00 CET = 19:00 UTC."
-			},
-			"streaming": {
-				"sourceId": "viaplay",
-				"url": "https://viaplay.no",
-				"basis": "secondary",
-				"retrievedAt": "2026-11-04T00:55:00Z",
-				"note": "handball.no + allente.no: EM/VM deles fra des. 2026 mellom TV3/Viaplay og TV 2/TV 2 Play i Norge; eksakt kamp-for-kamp-split ikke publisert ennå → list begge, verify firmer per kamp."
-			}
-		},
-		"summary": "Norge er regjerende europamester (gull i 2024) og toppseedet i gruppe B, som spilles i BTarena i Cluj-Napoca, Romania.\n\nAndre gruppespillkamp mot Sveits søndag 6. desember kl. 20.00 (norsk tid), BTarena Cluj-Napoca.\n\nNorsk visning delt TV3/Viaplay + TV 2/TV 2 Play (handball.no) — kanal per kamp bekreftes av verify.",
-		"id": "e6a214228898",
-		"awayTeamEntityId": "sveits-herrelandslag-i-handball"
-	},
-	{
-		"sport": "handball",
-		"tournament": "EHF EURO 2026 (kvinner)",
-		"title": "Gruppespill: Nord-Makedonia – Norge",
-		"time": "2026-12-08T19:00:00Z",
-		"endTime": null,
-		"venue": "BTarena, Cluj-Napoca",
-		"norwegian": true,
-		"homeTeam": "Nord-Makedonia",
-		"awayTeam": "Norge",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "Viaplay",
-				"url": "https://viaplay.no/no-no/sport",
-				"urlKind": "landing"
-			},
-			{
-				"platform": "TV 2 Play",
-				"url": "https://play.tv2.no/sport",
-				"urlKind": "landing"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-11-04T00:55:00Z",
-		"confidence": "medium",
-		"evidence": [
-			"catalog.json#tier1",
-			"catalog.json#tier2.tournaments",
-			"https://ehfeuro.eurohandball.com/news/en/ehf-confirms-throw-off-times-for-women-s-ehf-euro-2026/",
-			"https://en.wikipedia.org/wiki/2026_European_Women%27s_Handball_Championship",
-			"https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "eurohandball",
-				"url": "https://ehfeuro.eurohandball.com/news/en/ehf-confirms-throw-off-times-for-women-s-ehf-euro-2026/",
-				"basis": "secondary",
-				"retrievedAt": "2026-11-04T00:55:00Z",
-				"note": "EHF (eurohandball.com) arrangerer EM og bekrefter avsparkstidene: gruppe B i Cluj-Napoca spiller 18:30/21:00 lokal (EET, UTC+2 i des.) = 17:30/20:00 CET. Norge ligger i 21:00-EET/20:00-CET-slotten hver kampdag (EHF + Wikipedia enige, uavhengig write-time fact-check CONFIRMED). 20:00 CET = 19:00 UTC."
-			},
-			"streaming": {
-				"sourceId": "viaplay",
-				"url": "https://viaplay.no",
-				"basis": "secondary",
-				"retrievedAt": "2026-11-04T00:55:00Z",
-				"note": "handball.no + allente.no: EM/VM deles fra des. 2026 mellom TV3/Viaplay og TV 2/TV 2 Play i Norge; eksakt kamp-for-kamp-split ikke publisert ennå → list begge, verify firmer per kamp."
-			}
-		},
-		"summary": "Norge er regjerende europamester (gull i 2024) og toppseedet i gruppe B, som spilles i BTarena i Cluj-Napoca, Romania.\n\nSiste gruppespillkamp mot Nord-Makedonia tirsdag 8. desember kl. 20.00 (norsk tid), BTarena Cluj-Napoca. De tre beste i hver gruppe går videre til mellomrunden.\n\nNorsk visning delt TV3/Viaplay + TV 2/TV 2 Play (handball.no) — kanal per kamp bekreftes av verify.",
-		"id": "cd512c3720a9"
-	},
-	{
-		"sport": "football",
-		"tournament": "UEFA Conference League",
-		"title": "Brann – Aarhus",
-		"time": "2026-11-26T17:45:00Z",
-		"endTime": "2026-11-26T19:45:00Z",
-		"venue": "Brann Stadion, Bergen",
-		"norwegian": true,
-		"homeTeam": "Brann",
-		"awayTeam": "Aarhus",
-		"norwegianPlayers": [],
-		"participants": [],
-		"streaming": [
-			{
-				"platform": "Viaplay",
-				"url": "https://viaplay.no/no-no/sport",
-				"urlKind": "landing"
-			}
-		],
-		"source": "ai-research",
-		"researchedAt": "2026-11-10T12:45:00Z",
-		"confidence": "high",
-		"evidence": [
-			"catalog.json#tier2.teams",
-			"https://www.uefa.com/uefaconferenceleague/clubs/52770--brann/matches/",
-			"https://www.foresportia.com/en/prediction/conference-league/brann-aarhus-2026-11-26/",
-			"https://www.oddscalendar.com/football/europe/conference-league/brann-vs-aarhus/1636393"
-		],
-		"provenance": {
-			"time": {
-				"sourceId": "uefa",
-				"url": "https://www.uefa.com/uefaconferenceleague/clubs/52770--brann/matches/",
-				"basis": "secondary",
-				"retrievedAt": "2026-11-10T12:45:00Z",
-				"note": "uefa.com bekrefter dato/hjemmebane/Brann Stadion men renderer ikke avspark per kamp; 18.45 CET (17.45 UTC) korroborert av foresportia + oddscalendar + nederlandsk kringkasterplan, alle enige (MD4)."
-			},
-			"streaming": {
-				"sourceId": "viaplay",
-				"url": "https://www.viaplaygroup.com/en/newsroom/press-releases/viaplay-and-tv-2-norway-collaborate-make-selected-football-rights-more",
-				"basis": "official",
-				"retrievedAt": "2026-11-10T12:45:00Z",
-				"note": "Viaplay har eksklusive UEFA Conference League-rettigheter i Norge for syklusen t.o.m. 2030/31."
-			}
-		},
-		"summary": "UEFA Conference League, ligafase runde 4 (MD4). Brann spiller HJEMME mot danske Aarhus (AGF) på Brann Stadion i Bergen tor. 26. nov kl. 18.45 CET (17.45 UTC).\n\nDato, hjemmebane og arena bekreftet mot uefa.com (Branns kampside, primær); avspark 18.45 CET kryss-sjekket mot foresportia + oddscalendar + en nederlandsk kringkasterplan, alle enige.\n\nNorsk visning: Viaplay (Viaplay har Europa League + Conference League i Norge).",
-		"homeTeamEntityId": "brann",
-		"id": "9286d3cb8e55"
-	}
+  {
+    "sport": "football",
+    "tournament": "NM-cupen",
+    "title": "Tromsdalen – Lyn",
+    "time": "2026-10-28T16:00:00Z",
+    "endTime": null,
+    "venue": "TUIL Arena, Tromsø",
+    "norwegian": true,
+    "homeTeam": "Tromsdalen",
+    "awayTeam": "Lyn",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-19T05:50:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+      "https://www.fotmob.com/matches/tromsdalen-vs-lyn/2xonce"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+        "basis": "primary",
+        "retrievedAt": "2026-10-27T10:45:44.164Z",
+        "note": "fotball.no (NFF, primær): ons. 28. okt kl. 17.00 CET (16.00 UTC), TUIL Arena, konkurranse «NM menn 2027» (2027-cupens tidlige runde spilt høsten 2026). FotMob uavhengig enig (16:00 UTC, merker den «Cup Round 3»). Re-bekreftet 22. okt mot FotMob (samme UTC-anker)."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-10-22T10:23:36Z",
+        "note": "TV 2 holder NM-cupens (herre + dame) norske rettigheter t.o.m. 2029 (deretter Schibsted) — bekreftet mot sportbusiness.com/sportcal. NM-cupkampene strømmes på TV 2 Play; om DENNE tidligrunde-kampen (Tromsdalen–Lyn) også sendes på en lineær TV 2 Sport-kanal er ikke annonsert — verify fester sub-kanalen nærmere kampdag."
+      }
+    },
+    "summary": "Lyn skal ut i NM-cupen (NM menn 2027, tidlig runde spilt høsten 2026): borte mot Tromsdalen onsdag 28. oktober kl. 17.00 på TUIL Arena i Tromsø.\n\nDato/tid/arena bekreftet mot fotball.no (primær) og uavhengig mot FotMob.\n\nNorsk visning: TV 2 Play — TV 2 holder NM-cupens norske rettigheter t.o.m. 2029. Eksakt sub-kanal (evt. lineær TV 2 Sport) for denne tidligrunde-kampen er ikke annonsert ennå; verify følger.",
+    "id": "a8ddd1e0edf5",
+    "awayTeamEntityId": "fk-lyn-oslo",
+    "verifiedAt": "2026-10-27T10:45:44.164Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.fotmob.com/matches/tromsdalen-vs-lyn/2xonce"
+    ]
+  },
+  {
+    "sport": "handball",
+    "tournament": "EHF Champions League",
+    "title": "Industria Kielce – Kolstad",
+    "time": "2026-10-28T19:45:00Z",
+    "endTime": null,
+    "venue": "Kielce, Polen",
+    "norwegian": true,
+    "homeTeam": "Industria Kielce",
+    "awayTeam": "Kolstad",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      },
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-19T05:50:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.eurohandball.com/en/club/kZVHhs7nxEhEqyCf6iK_Sw/KolstadH%C3%A5ndball/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "eurohandball",
+        "url": "https://www.eurohandball.com/en/club/kZVHhs7nxEhEqyCf6iK_Sw/KolstadH%C3%A5ndball/",
+        "basis": "primary",
+        "retrievedAt": "2026-10-27T10:45:44.164Z",
+        "note": "EHF (arrangøren): ons. 28. okt 20:45 CET = 19:45 UTC. Uavhengig korroborert 27.10 mot karlobag.eu (billett-aggregator), som lister samme 20:45 CET / Hala Legionów — tid holder."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-10-19T05:50:00Z",
+        "note": "EHF CL i Norge: DELT Viaplay/TV 2-avtale t.o.m. 2029/30; begge plattformer listet, verify firmer eksakt kanal per kamp."
+      }
+    },
+    "summary": "Kolstad avslutter oktober-dobbelen i Champions League borte mot polske Industria Kielce onsdag 28. oktober kl. 20.45 (gruppespillrunde 6, gruppe F).\n\nTidspunkt re-bekreftet mot EHFs egen klubbside (arrangøren, tid-autoritet) 22. okt — ons. 28. okt 20.45 lokal. NB: sommertiden slutter 25. oktober, så 20.45 CET er 19.45 UTC.\n\nNorsk visning TV 2 Play eller Viaplay (delt EHF CL-rettighetsavtale).",
+    "id": "f02bbef0e329",
+    "awayTeamEntityId": "kolstad-handball",
+    "verifiedAt": "2026-10-27T10:45:44.164Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.eurohandball.com/en/club/kZVHhs7nxEhEqyCf6iK_Sw/KolstadH%C3%A5ndball/",
+      "https://karlobag.eu/en/sports/handball/europe/ehf-champions-league/industria-kielce-vs-kolstad-handball-wytmm/"
+    ]
+  },
+  {
+    "sport": "esports",
+    "tournament": "PGL Masters Bucharest 2026",
+    "title": "PGL Masters Bucharest – sluttspill + finale",
+    "time": "2026-10-29T08:00:00Z",
+    "endTime": "2026-10-31T16:00:00Z",
+    "venue": "PGL Studios, Bucuresti",
+    "norwegian": false,
+    "participants": [
+      {
+        "name": "Team Vitality"
+      },
+      {
+        "name": "Natus Vincere"
+      },
+      {
+        "name": "MOUZ"
+      },
+      {
+        "name": "FURIA"
+      },
+      {
+        "name": "BetBoom Team"
+      },
+      {
+        "name": "FUT Esports"
+      },
+      {
+        "name": "Aurora Gaming"
+      },
+      {
+        "name": "Nemiga Gaming"
+      }
+    ],
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Twitch (PGL)",
+        "url": "https://www.twitch.tv/pgl",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-29T06:00:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.hltv.org/news/45844/pgl-masters-bucharest-bracket-set",
+      "https://liquipedia.net/counterstrike/PGL/2026/Masters",
+      "https://navi.gg/en/tournaments/pgl-masters-bucharest-2026/match/14120",
+      "https://insider-gaming.com/pgl-masters-bucharest-2026-playoff-preview/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "liquipedia",
+        "url": "https://liquipedia.net/counterstrike/PGL/2026/Masters",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-29T06:00:00Z",
+        "note": "Sveitsisk gruppespill avsluttet 28. okt; braketten er nå SATT og MULTI-KILDE-bekreftet (HLTV reliability 1.0 + Liquipedia reliability 1.0 + NAVIs egen kampside + insider-gaming, alle enige). Single-elim sluttspill tor.–lør. 29.–31. okt: fire Bo3-kvartfinaler 29. okt (CET, = UTC+1 etter sommertid-slutt 25. okt): Nemiga–FUT 09.00 (08:00 UTC), Vitality–NAVI 12.00 (11:00 UTC — NAVIs side oppgir 13.00 +02:00 EET = samme UTC-øyeblikk), Aurora–MOUZ 15.00 (14:00 UTC), BetBoom–FURIA 18.00 (17:00 UTC); semifinaler 30. okt; Bo5 grand final lør. 31. okt 12.00 CET = 13.00 EET = 11:00 UTC (HLTV + Liquipedia enige). time=29. okt 08:00 UTC = første kvartfinale (vindusstart). basis=secondary fordi PGLs egen terminliste-side er JS-rendret/bot-blokkert — tidene hviler på to reliability-1.0-kilder + en deltaker-offisiell side, ikke arrangørens egen URL."
+      },
+      "streaming": {
+        "sourceId": "twitch",
+        "url": "https://www.twitch.tv/pgl",
+        "basis": "official",
+        "retrievedAt": "2026-10-29T06:00:00Z",
+        "note": "twitch.tv/pgl er PGLs offisielle kanal (PGL-footer + strafe). Event-spesifikk kringkasting ikke separat kunngjort, men PGLs standardkanal for alle deres CS2-sendinger; Kick ubekreftet for dette eventet."
+      }
+    },
+    "summary": "PGL Masters Bucharest 2026 (CS2, tier-1, $1,25 mill.) er i SLUTTSPILLET: åtte lag i single-elim 29.–31. oktober i PGL Studios, Bucuresti. VRS-tellende mot CS2-majoren. Bo5 grand final spilles lør. 31. okt kl. 12.00 CET (11:00 UTC).\n\nKvartfinaler (Bo3) tor. 29. okt, alle CET: Nemiga–FUT Esports 09.00, Team Vitality–NAVI 12.00 (reprise fra gruppespillet), Aurora–MOUZ 15.00, BetBoom–FURIA 18.00. Semifinaler fre. 30. okt. Fire katalog-orger er med i sluttspillet: Vitality, NAVI, MOUZ og FURIA (Team Spirit, G2, The MongolZ og Team Liquid kom IKKE videre fra gruppespillet).\n\n100 Thieves (Håvard «rain» Nygaard) er IKKE i dette feltet. Gratis strøm på PGLs egen Twitch (pgl).",
+    "id": "efac3793fd6b",
+    "verifiedAt": "2026-10-29T11:40:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://fieldlevelmedia.com/esports/natus-vincere-nemiga-furia-qualify-for-pgl-masters-bucharest-playoffs/",
+      "https://www.hltv.org/news/45847/live-updates-from-pgl-masters-bucharest-quarter-finals"
+    ]
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Drammen – Elverum",
+    "time": "2026-10-30T17:15:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Drammen",
+    "awayTeam": "Elverum",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-26T15:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+      "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-27T10:45:44.164Z",
+        "note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-10-26T15:20:00Z",
+        "note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
+      }
+    },
+    "summary": "Runde 9 i Elkjøp-ligaen menn åpner fredag 30. oktober. Drammen tar imot Elverum.\n\nAvkast kl. 18.15 (17.15 UTC). Norsk visning: TV 2 Play (utvalgte kamper på lineære TV 2 Sport-kanaler).",
+    "id": "65c7ef80c2b8",
+    "homeTeamEntityId": "drammen-handballklubb",
+    "awayTeamEntityId": "elverum-handball",
+    "verifiedAt": "2026-10-27T10:45:44.164Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
+    ]
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "ØIF Arendal – Sandnes",
+    "time": "2026-10-31T15:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "ØIF Arendal",
+    "awayTeam": "Sandnes",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-26T15:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+      "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-27T10:45:44.164Z",
+        "note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-10-26T15:20:00Z",
+        "note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
+      }
+    },
+    "summary": "Runde 9 i Elkjøp-ligaen menn, lørdag 31. oktober. ØIF Arendal mot Sandnes.\n\nAvkast kl. 16.00 (15.00 UTC). Norsk visning: TV 2 Play.",
+    "id": "8d3a96c3f6f7",
+    "homeTeamEntityId": "oif-arendal",
+    "awayTeamEntityId": "sandnes-handballklubb",
+    "verifiedAt": "2026-10-27T10:45:44.164Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
+    ]
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen kvinner 2026/27",
+    "title": "Storhamar Elite – Sola HK",
+    "time": "2026-10-31T15:15:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Storhamar Elite",
+    "awayTeam": "Sola HK",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-26T15:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
+      "https://www.betexplorer.com/handball/norway/elkjop-ligaen-women/fixtures/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-27T10:45:44.164Z",
+        "note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-10-26T15:20:00Z",
+        "note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
+      }
+    },
+    "summary": "Runde 8 i Elkjøp-ligaen kvinner, lørdag 31. oktober. Storhamar Elite tar imot Sola HK i en tidlig toppkamp.\n\nAvkast kl. 16.15 (15.15 UTC). Norsk visning: TV 2 Play.",
+    "id": "6c05a03b6834",
+    "verifiedAt": "2026-10-27T10:45:44.164Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste"
+    ]
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Bergen Håndball – Nærbø",
+    "time": "2026-10-31T16:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Bergen Håndball",
+    "awayTeam": "Nærbø",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-26T15:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+      "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-27T10:45:44.164Z",
+        "note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-10-26T15:20:00Z",
+        "note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
+      }
+    },
+    "summary": "Runde 9 i Elkjøp-ligaen menn, lørdag 31. oktober. Bergen Håndball mot Nærbø.\n\nAvkast kl. 17.00 (16.00 UTC). Norsk visning: TV 2 Play.",
+    "id": "a2b9851a25ef",
+    "homeTeamEntityId": "bergen-handball",
+    "verifiedAt": "2026-10-27T10:45:44.164Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
+    ]
+  },
+  {
+    "sport": "f1",
+    "tournament": "Formula 1 World Championship 2026",
+    "title": "Mexico City Grand Prix – kvalifisering",
+    "time": "2026-10-31T21:00:00Z",
+    "endTime": "2026-10-31T22:00:00Z",
+    "venue": "Autódromo Hermanos Rodríguez, Mexico City",
+    "norwegian": false,
+    "participants": [],
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-18T22:40:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.formula1.com/en/racing/2026/mexico",
+      "https://www.formula1.com/en/latest/article/formula-1-gran-premio-de-la-ciudad-de-mexico-2026.14b3wTWzNNLJ5Wd8cG7HCQ",
+      "https://www.gpfans.com/us/f1-race-calendar/gran-premio-de-la-ciudad-de-mexico-2026"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "formula1",
+        "url": "https://www.formula1.com/en/racing/2026/mexico",
+        "basis": "primary",
+        "retrievedAt": "2026-10-27T10:45:44.164Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-10-18T22:40:00Z"
+      }
+    },
+    "summary": "Kvalifiseringen avgjør startoppstillingen for søndagens løp (søn. 1. nov kl. 20.00 UTC / 14.00 lokal).\n\nStandard GP-helg uten sprint på Autódromo Hermanos Rodríguez, 2240 moh. — høyden gir unike bil- og dekkutfordringer.\n\nTid bekreftet mot formula1.com (arrangøren, primær) + uavhengig write-time fact-check — ikke ESPN-feeden som feildaterer F1-helger (source-quirks). Norsk visning Viaplay.",
+    "id": "1051e200f667",
+    "verifiedAt": "2026-10-30T12:00:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.formula1.com/en/latest/article/formula-1-gran-premio-de-la-ciudad-de-mexico-2026.14b3wTWzNNLJ5Wd8cG7HCQ",
+      "https://racingnews365.com/2026-f1-mexican-grand-prix-mexico-city-time-schedule"
+    ]
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen kvinner 2026/27",
+    "title": "Fana – Oppsal",
+    "time": "2026-11-01T15:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Fana",
+    "awayTeam": "Oppsal",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-26T15:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
+      "https://www.betexplorer.com/handball/norway/elkjop-ligaen-women/fixtures/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-27T10:45:44.164Z",
+        "note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-10-26T15:20:00Z",
+        "note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
+      }
+    },
+    "summary": "Runde 8 i Elkjøp-ligaen kvinner, søndag 1. november. Fana mot Oppsal.\n\nAvkast kl. 16.00 (15.00 UTC). Norsk visning: TV 2 Play.",
+    "id": "642048cf4301",
+    "verifiedAt": "2026-10-27T10:45:44.164Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste"
+    ]
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Bergsøy – Follo HK",
+    "time": "2026-11-01T15:30:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Bergsøy",
+    "awayTeam": "Follo HK",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-26T15:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+      "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-27T10:45:44.164Z",
+        "note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-10-26T15:20:00Z",
+        "note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
+      }
+    },
+    "summary": "Runde 9 i Elkjøp-ligaen menn, søndag 1. november. Bergsøy mot Follo HK.\n\nAvkast kl. 16.30 (15.30 UTC). Norsk visning: TV 2 Play.",
+    "id": "324ecfce2957",
+    "verifiedAt": "2026-10-27T10:45:44.164Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
+    ]
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Kristiansand TH – Viking TIF",
+    "time": "2026-11-01T16:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Kristiansand TH",
+    "awayTeam": "Viking TIF",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-26T15:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+      "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-27T10:45:44.164Z",
+        "note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-10-26T15:20:00Z",
+        "note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
+      }
+    },
+    "summary": "Runde 9 i Elkjøp-ligaen menn, søndag 1. november. Kristiansand TH mot Viking TIF.\n\nAvkast kl. 17.00 (16.00 UTC). Norsk visning: TV 2 Play.",
+    "id": "42f761037f3f",
+    "verifiedAt": "2026-10-27T10:45:44.164Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
+    ]
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Runar Elite – Fjellhammer",
+    "time": "2026-11-01T16:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Runar Elite",
+    "awayTeam": "Fjellhammer",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-26T15:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+      "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-27T10:45:44.164Z",
+        "note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-10-26T15:20:00Z",
+        "note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
+      }
+    },
+    "summary": "Runde 9 i Elkjøp-ligaen menn, søndag 1. november. Runar Elite mot Fjellhammer.\n\nAvkast kl. 17.00 (16.00 UTC). Norsk visning: TV 2 Play.",
+    "id": "32d995b9f2fd",
+    "verifiedAt": "2026-10-27T10:45:44.164Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
+    ]
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen kvinner 2026/27",
+    "title": "Utleira – Fredrikstad",
+    "time": "2026-11-01T16:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Utleira",
+    "awayTeam": "Fredrikstad",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-26T15:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
+      "https://www.betexplorer.com/handball/norway/elkjop-ligaen-women/fixtures/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-27T10:45:44.164Z",
+        "note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-10-26T15:20:00Z",
+        "note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
+      }
+    },
+    "summary": "Runde 8 i Elkjøp-ligaen kvinner, søndag 1. november. Utleira mot Fredrikstad.\n\nAvkast kl. 17.00 (16.00 UTC). Norsk visning: TV 2 Play.",
+    "id": "00392c3c76f8",
+    "awayTeamEntityId": "fredrikstad-ballklubb",
+    "verifiedAt": "2026-10-27T10:45:44.164Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste"
+    ]
+  },
+  {
+    "sport": "football",
+    "tournament": "OBOS-ligaen 2026",
+    "title": "Lyn – Raufoss",
+    "time": "2026-11-01T16:00:00Z",
+    "endTime": null,
+    "venue": "Bislett stadion, Oslo",
+    "norwegian": true,
+    "homeTeam": "Lyn",
+    "awayTeam": "Raufoss",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-30T05:55:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206093",
+      "https://www.fotmob.com/teams/10224/fixtures"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+        "basis": "primary",
+        "retrievedAt": "2026-10-30T05:55:00Z",
+        "note": "fotball.no (NFF, primær) + OBOS-ligaens terminliste (fiksId 206093), begge enige på OBOS-ligaen runde 29 (søn. 1. nov kl. 17.00 CET / 16.00 UTC). CET=UTC+1 (sommertid slutt 25. okt). Uavhengig fresh-context write-time fact-check mot FotMob = confirmed (samme UTC-anker)."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-10-30T05:55:00Z",
+        "note": "TV 2 Play holder OBOS-ligaens norske rettigheter 2026. TV-valg kan flytte avspark 30–60 min; verify følger."
+      }
+    },
+    "id": "31a78d3bb708",
+    "summary": "Lyn tar imot Raufoss på Bislett stadion i OBOS-ligaen runde 29, søndag 1. november kl. 17.00 (16.00 UTC).\n\nDato/tid/arena to-kilde-bekreftet mot fotball.nos primær-autoritet (Lyns lagside + OBOS-ligaens terminliste, begge enige) og uavhengig mot FotMob.\n\nNorsk visning: TV 2 Play (OBOS-ligaens rettighetshaver). TV-valg kan flytte avsparket 30–60 min; verify følger.",
+    "homeTeamEntityId": "fk-lyn-oslo",
+    "verifiedAt": "2026-10-30T12:00:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://en.wikipedia.org/wiki/2026_Norwegian_First_Division",
+      "https://www.calciomercato.com/squadra/raufoss/partite/p5IwRE5I3tQbqXtJp2Top"
+    ]
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen 2026/27",
+    "title": "Kolstad – Sandefjord",
+    "time": "2026-11-01T17:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Kolstad",
+    "awayTeam": "Sandefjord",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-26T15:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+      "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-27T10:45:44.164Z",
+        "note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-10-26T15:20:00Z",
+        "note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
+      }
+    },
+    "summary": "Runde 9 i Elkjøp-ligaen menn, søndag 1. november. Serietopp-kandidaten Kolstad tar imot Sandefjord på hjemmebane i Trondheim.\n\nAvkast kl. 18.00 (17.00 UTC). Norsk visning: TV 2 Play (utvalgte kamper på lineære TV 2 Sport-kanaler).",
+    "id": "76e181a7ea3d",
+    "homeTeamEntityId": "kolstad-handball",
+    "awayTeamEntityId": "sandefjord-handball",
+    "verifiedAt": "2026-10-27T10:45:44.164Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
+    ]
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen kvinner 2026/27",
+    "title": "Tertnes Elite – Gjerpen",
+    "time": "2026-11-01T17:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Tertnes Elite",
+    "awayTeam": "Gjerpen",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-26T15:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
+      "https://www.betexplorer.com/handball/norway/elkjop-ligaen-women/fixtures/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-27T10:45:44.164Z",
+        "note": "TV 2 Livesport-terminlisten oppgir søn. 1. nov kl. 18.00 (17.00 UTC). Betexplorer + Flashscore bekrefter dato/oppsett, men publiserer ikke eksakt tid → tiden hviler på TV 2 alene (fixture-autoritet) = medium. handball.no (NHF) 404/JS → basis secondary. Verify fester eksakt tid."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-10-26T15:20:00Z",
+        "note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
+      }
+    },
+    "summary": "Runde 8 i Elkjøp-ligaen kvinner, søndag 1. november. Tertnes Elite mot Gjerpen.\n\nAvkast kl. 18.00 (17.00 UTC) ifølge TV 2-terminlisten. Norsk visning: TV 2 Play.",
+    "id": "27eb10b951ab",
+    "awayTeamEntityId": "gjerpen-handball",
+    "verifiedAt": "2026-10-27T10:45:44.164Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste"
+    ]
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen kvinner 2026/27",
+    "title": "Follo – Fjellhammer",
+    "time": "2026-11-01T17:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Follo",
+    "awayTeam": "Fjellhammer",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-26T15:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
+      "https://www.betexplorer.com/handball/norway/elkjop-ligaen-women/fixtures/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-27T10:45:44.164Z",
+        "note": "TV 2 Livesport-terminlisten oppgir søn. 1. nov kl. 18.00 (17.00 UTC). Betexplorer + Flashscore bekrefter dato/oppsett, men publiserer ikke eksakt tid → tiden hviler på TV 2 alene (fixture-autoritet) = medium. handball.no (NHF) 404/JS → basis secondary. Verify fester eksakt tid."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-10-26T15:20:00Z",
+        "note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
+      }
+    },
+    "summary": "Runde 8 i Elkjøp-ligaen kvinner, søndag 1. november. Follo mot Fjellhammer.\n\nAvkast kl. 18.00 (17.00 UTC) ifølge TV 2-terminlisten. Norsk visning: TV 2 Play.",
+    "id": "e48f25dbbccc",
+    "homeTeamEntityId": "follo-handballklubb",
+    "verifiedAt": "2026-10-27T10:45:44.164Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste"
+    ]
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen kvinner 2026/27",
+    "title": "Byåsen Elite – Flint Tønsberg",
+    "time": "2026-11-01T17:00:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Byåsen Elite",
+    "awayTeam": "Flint Tønsberg",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-26T15:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
+      "https://www.betexplorer.com/handball/norway/elkjop-ligaen-women/fixtures/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-27T10:45:44.164Z",
+        "note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-10-26T15:20:00Z",
+        "note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
+      }
+    },
+    "summary": "Runde 8 i Elkjøp-ligaen kvinner, søndag 1. november. Byåsen Elite mot Flint Tønsberg.\n\nAvkast kl. 18.00 (17.00 UTC). Norsk visning: TV 2 Play.",
+    "id": "09ee44fff28c",
+    "verifiedAt": "2026-10-27T10:45:44.164Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste"
+    ]
+  },
+  {
+    "sport": "handball",
+    "tournament": "Elkjøp-ligaen kvinner 2026/27",
+    "title": "Larvik – Molde Elite",
+    "time": "2026-11-01T18:15:00Z",
+    "endTime": null,
+    "venue": null,
+    "norwegian": true,
+    "homeTeam": "Larvik",
+    "awayTeam": "Molde Elite",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-26T15:20:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
+      "https://www.betexplorer.com/handball/norway/elkjop-ligaen-women/fixtures/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "tv2",
+        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste",
+        "basis": "secondary",
+        "retrievedAt": "2026-10-27T10:45:44.164Z",
+        "note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-10-26T15:20:00Z",
+        "note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
+      }
+    },
+    "summary": "Runde 8 i Elkjøp-ligaen kvinner, søndag 1. november. Larvik tar imot Molde Elite i rundens siste kamp.\n\nAvkast kl. 19.15 (18.15 UTC). Norsk visning: TV 2 Play.",
+    "id": "5e0a8d1f38a9",
+    "homeTeamEntityId": "larvik-handballklubb",
+    "verifiedAt": "2026-10-27T10:45:44.164Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-kvinner/27a17a21-4b44-5144-a39a-5824a5207319/terminliste"
+    ]
+  },
+  {
+    "sport": "esports",
+    "tournament": "IEM Beijing 2026",
+    "title": "IEM Beijing 2026 – NAVI, Falcons, FaZe, MOUZ, G2 m.fl.",
+    "time": "2026-11-02T02:00:00Z",
+    "endTime": "2026-11-08T16:00:00Z",
+    "venue": "Bloomage Biotech·Biohyalux ECM Arena, Beijing",
+    "norwegian": false,
+    "participants": [
+      {
+        "name": "Natus Vincere"
+      },
+      {
+        "name": "Team Falcons"
+      },
+      {
+        "name": "FaZe Clan"
+      },
+      {
+        "name": "MOUZ"
+      },
+      {
+        "name": "G2 Esports"
+      },
+      {
+        "name": "FURIA"
+      },
+      {
+        "name": "The MongolZ"
+      },
+      {
+        "name": "Team Liquid"
+      },
+      {
+        "name": "Heroic"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "Twitch (ESLCS)",
+        "url": "https://www.twitch.tv/eslcs",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-01T06:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://liquipedia.net/counterstrike/Intel_Extreme_Masters/2026/Beijing",
+      "https://pro.eslgaming.com/tour/cs/beijing/eventguide/",
+      "https://esports.gg/news/counter-strike-2/iem-beijing-2026/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "liquipedia",
+        "url": "https://liquipedia.net/counterstrike/Intel_Extreme_Masters/2026/Beijing",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-01T06:15:00Z",
+        "note": "Turneringsvindu 2.–8. nov (gruppespill 2.–4., sluttspill 6.–8., grand final 8.), Bloomage ECM Arena Beijing, $1,25 mill., 16 lag. Dato/venue/premiepott/16-lagsfelt fler-kilde-bekreftet (ESL-kunngjøring + Liquipedia + esports.gg + blast.tv) + uavhengig fresh-context write-time fact-check CONFIRMED. Tiden her er vindusstart = dag 1 (man. 2. nov) første kamp 10.00 CST (Beijing UTC+8) = 02.00 UTC (Liquipedia-slott Legacy–MongolZ; ESLs egen eventguide bekrefter dører 08.00 + 10.00/12.30/15.00/17.30 CST-slottene). ESLs egen schedule-side ga 403 ved henting → basis=secondary (Liquipedia lest via API). Per-kamp bracket/tider for katalog-lagene festes nærmere; esports.js/verify boarder NAVI/Falcons/FaZe/G2/MOUZ enkeltkamper når Liquipedia/HLTV fester dem. NB 100 Thieves / rain er IKKE i feltet."
+      },
+      "streaming": {
+        "sourceId": "twitch",
+        "url": "https://www.twitch.tv/eslcs",
+        "basis": "official",
+        "retrievedAt": "2026-11-01T06:15:00Z",
+        "note": "Gratis på ESLs offisielle engelske CS-kanal ESLCS (Twitch twitch.tv/eslcs, også YouTube + Kick) per Liquipedia + write-time fact-check; verdensfeed live.intelextrememasters.com; kinesiske feeds Douyu/Bilibili/Huya. Ingen norsk TV-rettighet (se cs2-sources-skillen). Verify fester eksakt deep-lenke nær kampdag."
+      }
+    },
+    "norwegianPlayers": [],
+    "summary": "IEM Beijing 2026 (2.–8. nov), Bloomage ECM Arena i Beijing — ESLs første store Beijing-CS-event siden 2019. $1,25 mill. tier-1-LAN (ESL Pro Tour/Grand Slam-tellende) med 16 lag: to swiss-/GSL-grupper (2.–4. nov) mater et single-elimination-sluttspill 6.–8. nov, grand final søn. 8. nov.\n\nNi katalog-orger er i feltet: Natus Vincere, Team Falcons, FaZe Clan, MOUZ, G2 Esports, FURIA, The MongolZ, Team Liquid og Heroic (øvrige: Legacy, Aurora, 9z, B8, BetBoom, PARIVISION, TYLOO). Dag 1 (man. 2. nov, fra 10.00 CST / 02.00 UTC): bl.a. NAVI–Falcons og FURIA–FaZe i gruppe A, G2–PARIVISION og MOUZ–TYLOO i gruppe B. 100 Thieves / rain er IKKE med i dette feltet.\n\nGratis på ESLs offisielle Twitch (twitch.tv/eslcs) i Norge — ingen norsk TV-rettighet. Per-kamp tider for katalog-lagene festes nærmere; verify firmer enkeltkampene.",
+    "id": "eee77d69b2a6",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://esports.gg/news/counter-strike-2/iem-beijing-2026/",
+      "https://liquipedia.net/counterstrike/Intel_Extreme_Masters/2026/Beijing",
+      "https://www.strafe.com/news/read/iem-beijing-2026-teams-schedule-format-and-more/"
+    ],
+    "verifiedAt": "2026-11-05T13:23:27Z"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Conference League",
+    "title": "Sint-Truidense – Brann",
+    "time": "2026-11-05T20:00:00Z",
+    "endTime": "2026-11-05T22:00:00Z",
+    "venue": "Daio Wasabi Stayen, Sint-Truiden",
+    "norwegian": true,
+    "homeTeam": "Sint-Truidense",
+    "awayTeam": "Brann",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-29T15:20:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.uefa.com/uefaconferenceleague/clubs/52770--brann/matches/",
+      "https://www.t-online.de/sport/live-ticker/fussball/uefa-conference-league/sdc_fm-62612/sint-truiden-brann-uefa-conference-league-im-liveticker.html",
+      "https://www.foresportia.com/en/prediction/conference-league/st-truiden-brann-2026-11-05/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.uefa.com/uefaconferenceleague/clubs/52770--brann/matches/",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-02T13:44:36Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://www.viaplaygroup.com/en/newsroom/press-releases/viaplay-and-tv-2-norway-collaborate-make-selected-football-rights-more",
+        "basis": "official",
+        "retrievedAt": "2026-10-30T12:00:00Z",
+        "note": "Viaplay har eksklusive UEFA Conference League-rettigheter i Norge for syklusen 2024-25 t.o.m. 2026-27 (Viaplay/TV 2-delingsavtalen juli 2025). Kampspesifikk sending ikke separat bekreftet; Viaplay er rettighetshaver."
+      }
+    },
+    "summary": "UEFA Conference League, ligafase runde 3 (MD3). Brann spiller borte mot belgiske Sint-Truidense (STVV) på Daio Wasabi Stayen i Sint-Truiden tor. 5. nov kl. 21.00 CET (20.00 UTC).\n\nDato/avspark kryss-sjekket mot uefa.com (Branns kampside) + t-online liveticker + foresportia og en uavhengig write-time fact-check — alle enige på 21.00 CET. (En tidlig lesning av UEFAs ligafase-oppsett antydet 18.45, men den tilhørte Branns neste kamper mot Aarhus/Braga; 5+ kilder inkl. Branns egen terminliste bekrefter 21.00.)\n\nNorsk visning: Viaplay (Viaplay har Europa League + Conference League i Norge t.o.m. 2030/31; enkeltkamper kan også dukke opp på TV 2 Play via fellesavtalen).",
+    "awayTeamEntityId": "brann",
+    "id": "513e8cb5396d",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.uefa.com/uefaconferenceleague/clubs/52770--brann/matches/",
+      "https://www.t-online.de/sport/live-ticker/fussball/uefa-conference-league/sdc_fm-62612/sint-truiden-brann-uefa-conference-league-im-liveticker.html"
+    ]
+  },
+  {
+    "sport": "tennis",
+    "tournament": "ATP/WTA Tour",
+    "title": "Bybit Stockholm Open",
+    "time": "2026-11-07T05:00:00.000Z",
+    "endTime": "2026-11-15T04:59:00.000Z",
+    "venue": "TBD",
+    "meta": "ATP/WTA Tour",
+    "norwegian": true,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "f08325fc2437"
+  },
+  {
+    "sport": "f1",
+    "tournament": "Formula 1 World Championship 2026",
+    "title": "São Paulo Grand Prix – kvalifisering",
+    "time": "2026-11-07T18:00:00Z",
+    "endTime": "2026-11-07T19:00:00Z",
+    "venue": "Autódromo José Carlos Pace (Interlagos), São Paulo",
+    "norwegian": false,
+    "participants": [],
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-18T22:40:00Z",
+    "confidence": "high",
+    "evidence": [
+      "https://www.formula1.com/en/racing/2026/brazil",
+      "https://www.formula1.com/en/latest/article/formula-1-msc-cruises-grande-premio-de-sao-paulo-2026.3nFWRAkowAY3uUyvw6O0eJ",
+      "https://www.f1-fansite.com/f1-calendar/sao-paulo-grand-prix/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "formula1",
+        "url": "https://www.formula1.com/en/racing/2026/brazil",
+        "basis": "primary",
+        "retrievedAt": "2026-11-02T13:44:36Z"
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-10-18T22:40:00Z"
+      }
+    },
+    "summary": "Kvalifiseringen avgjør startoppstillingen for søndagens løp (søn. 8. nov kl. 17.00 UTC / 14.00 lokal).\n\nStandard GP-helg UTEN sprint denne gangen (Interlagos droppet fra 2026-sprintkalenderen) — tredje siste løp i mesterskapet på det klassiske Autódromo José Carlos Pace.\n\nTid bekreftet mot formula1.com (arrangøren, primær) + uavhengig write-time fact-check. Norsk visning Viaplay.",
+    "id": "c2dd6b9c5607",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.formula1.com/en/racing/2026/brazil",
+      "https://oversteer48.com/brazil-grand-prix-schedule/",
+      "https://racingnews365.com/2026-f1-sao-paulo-grand-prix---brazil-time-schedule",
+      "https://the-race.com/formula-1/what-time-is-f1s-2026-brazilian-grand-prix-full-weekend-schedule"
+    ],
+    "verifiedAt": "2026-11-06T13:06:00Z"
+  },
+  {
+    "sport": "tennis",
+    "tournament": "ATP/WTA Tour",
+    "title": "FAGE WTA Finals Indian Wells",
+    "time": "2026-11-08T05:00:00.000Z",
+    "endTime": "2026-11-16T04:59:00.000Z",
+    "venue": "TBD",
+    "meta": "ATP/WTA Tour",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "6998f65c3ed4"
+  },
+  {
+    "sport": "football",
+    "tournament": "OBOS-ligaen 2026",
+    "title": "Strømmen – Lyn",
+    "time": "2026-11-08T12:00:00Z",
+    "endTime": null,
+    "venue": "Strømmen stadion",
+    "norwegian": true,
+    "homeTeam": "Strømmen",
+    "awayTeam": "Lyn",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-30T05:55:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206093",
+      "https://www.fotmob.com/teams/10224/fixtures"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/fotballdata/lag/hjem/?fiksId=161785",
+        "basis": "primary",
+        "retrievedAt": "2026-10-30T05:55:00Z",
+        "note": "fotball.no (NFF, primær) + OBOS-ligaens terminliste (fiksId 206093), begge enige på OBOS-ligaen runde 30 — sesongavslutningen (søn. 8. nov kl. 13.00 CET / 12.00 UTC). CET=UTC+1 (sommertid slutt 25. okt). Uavhengig fresh-context write-time fact-check mot FotMob = confirmed (samme UTC-anker)."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport",
+        "basis": "official",
+        "retrievedAt": "2026-10-30T05:55:00Z",
+        "note": "TV 2 Play holder OBOS-ligaens norske rettigheter 2026. TV-valg kan flytte avspark 30–60 min; verify følger."
+      }
+    },
+    "id": "eb53e7dfe3bb",
+    "summary": "Lyn avslutter OBOS-ligaen 2026-sesongen borte mot Strømmen på Strømmen stadion, søndag 8. november kl. 13.00 (12.00 UTC) — siste serierunde (runde 30).\n\nDato/tid/arena to-kilde-bekreftet mot fotball.nos primær-autoritet (Lyns lagside + OBOS-ligaens terminliste, begge enige) og uavhengig mot FotMob.\n\nNorsk visning: TV 2 Play (OBOS-ligaens rettighetshaver). TV-valg kan flytte avsparket 30–60 min; verify følger.",
+    "awayTeamEntityId": "fk-lyn-oslo",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.fotball.no/fotballdata/turnering/terminliste/?fiksId=206093",
+      "https://www.fotmob.com/teams/10224/fixtures",
+      "https://starting11.com/fixtures/strommen-vs-lyn",
+      "https://www.fotmob.com/teams/4249/fixtures/strommen"
+    ],
+    "verifiedAt": "2026-11-06T13:06:00Z"
+  },
+  {
+    "sport": "handball",
+    "tournament": "EHF Champions League (kvinner)",
+    "title": "Team Esbjerg – Ferencváros",
+    "time": "2026-11-08T13:00:00Z",
+    "endTime": null,
+    "venue": "Esbjerg, Danmark",
+    "norwegian": true,
+    "homeTeam": "Team Esbjerg",
+    "awayTeam": "Ferencváros",
+    "norwegianPlayers": [
+      {
+        "name": "Nora Mørk",
+        "entityId": "nora-mork"
+      }
+    ],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      },
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-19T05:50:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.athletes",
+      "https://ehfcl.eurohandball.com/women/2026-27/clubs/details/pDFr6Zez5TuW42vtj9_w0Q/TeamEsbjerg/",
+      "https://www.sportschau.de/live-und-ergebnisse/handball/ehf-champions-league-frauen/ma12367879/team-esbjerg_ferencvaros-budapest/blitztabelle"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "eurohandball",
+        "url": "https://ehfcl.eurohandball.com/women/2026-27/clubs/details/pDFr6Zez5TuW42vtj9_w0Q/TeamEsbjerg/",
+        "basis": "primary",
+        "note": "EHF (arrangøren, lest direkte): søn. 8. nov 14:00 CET hjemme i Esbjerg (FTC-Toyota Kovács = Ferencváros) = 13:00 UTC. sportschau uavhengig enig (14:00, MD7).",
+        "retrievedAt": "2026-11-02T13:44:36Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-10-19T05:50:00Z",
+        "note": "Kvinnenes EHF CL i Norge: DELT Viaplay/TV 2-avtale t.o.m. 2029/30 (fact-check-funn); Esbjerg-kamper i høst har gått på TV 2 Sport 2 / TV 2 Play. Begge plattformer listet; verify firmer eksakt kanal per kamp (ingen norsk klubb i kampen)."
+      }
+    },
+    "summary": "Nora Mørks Team Esbjerg tar imot ungarske Ferencváros søndag 8. november kl. 14.00 (Champions League kvinner, gruppespillrunde 7) — Esbjergs neste CL-kamp etter seieren over Brest 17. oktober; CL-kvinnene har pause til 7.–8. november.\n\nTidspunkt bekreftet av EHF (arrangøren) og uavhengig av sportschau. Norsk visning TV 2 Play eller Viaplay (delt EHF CL-rettighetsavtale) — verify firmer kanal nær kampdag.",
+    "id": "5d56c46d2e5f",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://ehfcl.eurohandball.com/women/2026-27/clubs/details/pDFr6Zez5TuW42vtj9_w0Q/TeamEsbjerg/",
+      "https://www.sportschau.de/live-und-ergebnisse/handball/ehf-champions-league-frauen/ma12367879/team-esbjerg_ferencvaros-budapest/blitztabelle"
+    ],
+    "verifiedAt": "2026-11-06T13:06:00Z"
+  },
+  {
+    "sport": "football",
+    "tournament": "Copa del Rey",
+    "title": "Alavés at Anaitasuna",
+    "time": "2026-11-10T18:00:00.000Z",
+    "endTime": null,
+    "venue": "Txerloia",
+    "meta": "Copa del Rey",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Anaitasuna",
+    "awayTeam": "Alavés",
+    "isFavorite": false,
+    "round": null,
+    "id": "75249b676f2a",
+    "awayTeamEntityId": "alaves"
+  },
+  {
+    "sport": "football",
+    "tournament": "Copa del Rey",
+    "title": "Eibar at CD Pamplona",
+    "time": "2026-11-10T18:00:00.000Z",
+    "endTime": null,
+    "venue": "Polideportivo Valle Aranguren",
+    "meta": "Copa del Rey",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "CD Pamplona",
+    "awayTeam": "Eibar",
+    "isFavorite": false,
+    "round": null,
+    "id": "fc676c3f8175"
+  },
+  {
+    "sport": "football",
+    "tournament": "Copa del Rey",
+    "title": "UD Logroñés at Amorebieta",
+    "time": "2026-11-10T19:00:00.000Z",
+    "endTime": null,
+    "venue": "Urritxe",
+    "meta": "Copa del Rey",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Amorebieta",
+    "awayTeam": "UD Logroñés",
+    "isFavorite": false,
+    "round": null,
+    "id": "c0c7375d032c"
+  },
+  {
+    "sport": "football",
+    "tournament": "Copa del Rey",
+    "title": "Real Jaen CF at Mijas Las Lagunas",
+    "time": "2026-11-10T19:00:00.000Z",
+    "endTime": null,
+    "venue": "Francisco Muñoz Pérez",
+    "meta": "Copa del Rey",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Mijas Las Lagunas",
+    "awayTeam": "Real Jaen CF",
+    "isFavorite": false,
+    "round": null,
+    "id": "a10f77d24e59"
+  },
+  {
+    "sport": "football",
+    "tournament": "Copa del Rey",
+    "title": "Leganés at Trival Valderas",
+    "time": "2026-11-10T19:00:00.000Z",
+    "endTime": null,
+    "venue": "Estadio Municipal de Butarque",
+    "meta": "Copa del Rey",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Trival Valderas",
+    "awayTeam": "Leganés",
+    "isFavorite": false,
+    "round": null,
+    "id": "aa1a618f9768"
+  },
+  {
+    "sport": "football",
+    "tournament": "Copa del Rey",
+    "title": "Valencia at Tavernes de la Valldigna",
+    "time": "2026-11-10T20:00:00.000Z",
+    "endTime": null,
+    "venue": "Mestalla Stadium",
+    "meta": "Copa del Rey",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Tavernes de la Valldigna",
+    "awayTeam": "Valencia",
+    "isFavorite": false,
+    "round": null,
+    "id": "b23092e800c9",
+    "awayTeamEntityId": "valencia"
+  },
+  {
+    "sport": "tennis",
+    "tournament": "Bybit Stockholm Open",
+    "title": "Casper Ruud – TBD",
+    "time": "2026-11-11T05:00:00.000Z",
+    "endTime": null,
+    "venue": "Stockholm, Sweden",
+    "meta": "Bybit Stockholm Open · Men's Singles",
+    "norwegian": true,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "9544b2d17d6e"
+  },
+  {
+    "sport": "chess",
+    "tournament": "Total Chess World Championship 2026",
+    "title": "Total Chess VM-pilot – gruppespill (Budapest)",
+    "time": "2026-11-11T14:00:00Z",
+    "endTime": "2026-11-21T22:00:00Z",
+    "venue": "Anantara New York Palace Budapest Hotel, Budapest",
+    "norwegian": false,
+    "participants": [
+      {
+        "name": "Magnus Carlsen"
+      },
+      {
+        "name": "Fabiano Caruana"
+      },
+      {
+        "name": "Arjun Erigaisi"
+      },
+      {
+        "name": "Wesley So"
+      },
+      {
+        "name": "Vincent Keymer"
+      },
+      {
+        "name": "Levon Aronian"
+      }
+    ],
+    "streaming": [],
+    "source": "ai-research",
+    "researchedAt": "2026-09-29T10:45:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://worldchess.com/news/total-chess-2026-everything-you-need-to-know",
+      "https://en.wikipedia.org/wiki/Total_Chess_World_Championship_2026",
+      "https://www.chess.com/news/view/carlsen-caruana-total-chess-pilot-budapest-2026"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "world-chess",
+        "url": "https://worldchess.com/news/total-chess-2026-everything-you-need-to-know",
+        "basis": "primary",
+        "retrievedAt": "2026-09-29T10:45:00Z"
+      }
+    },
+    "summary": "Magnus Carlsens bekreftede neste turnering: pilot-utgaven av den FIDE-godkjente Total Chess World Championship Tour, i Budapest 10.–21. november. 24 spillere fra 10 nasjoner, premiepott minst $2,7 mill. og to plasser til Kandidatturneringen 2028.\n\nÅpningsseremoni + blitz-sveitser går 10. nov (klokkeslett ikke publisert). Gruppespillet (fire grupper à seks, dobbel serie i «fast classic» 45+30) spilles 11.–15. nov med daglig start 15:00 CET. Utslagsrundene 17.–20. nov (blitz 15:00, hurtig 16:15, fast classic 18:45 CET).\n\nCarlsen, Caruana, Erigaisi, Wesley So, Keymer og Aronian er bekreftet; Gukesh, Nakamura og Sindarov er meldt av pga. kollisjon med det klassiske VM. Norsk/offisiell kringkasting er ennå ikke kunngjort av arrangøren – verify fyller streaming når worldchess melder plattform.",
+    "norwegianPlayers": [],
+    "id": "bd5daeb1237d",
+    "verifiedAt": "2026-11-05T13:23:27Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://worldchess.com/news/total-chess-2026-everything-you-need-to-know",
+      "https://www.fide.com/chess-superstars-set-for-total-chess-world-championship-tour-pilot-in-budapest/",
+      "https://en.chessbase.com/post/total-chess-world-ch-2026-lineup"
+    ]
+  },
+  {
+    "sport": "handball",
+    "tournament": "NM-sluttspillet (menn)",
+    "title": "Semifinale: Kolstad – Bergen",
+    "time": "2026-11-11T17:00:00Z",
+    "endTime": "2026-11-11T18:45:00Z",
+    "venue": "Kolstad Arena, Trondheim",
+    "norwegian": true,
+    "homeTeam": "Kolstad Håndball",
+    "awayTeam": "Bergen Håndball",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/haandball",
+        "urlKind": "deep"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-02T06:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.handball.no/nyheter/2026/10/nm-finalene-returnerer-til-oslo-spektrum/",
+      "https://www.betexplorer.com/handball/team/kolstad/rTWbl2mC/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "handballforbundet",
+        "url": "https://www.handball.no/nyheter/2026/10/nm-finalene-returnerer-til-oslo-spektrum/",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-02T06:15:00Z",
+        "note": "NHF (autoriteten) bekrefter at NM-semifinalene menn spilles 11.–12. nov og at Kolstad, Bergen, Sandefjord og Elverum er klare, men gir IKKE eksakt kampdag/avspark. Den konkrete paringen Kolstad–Bergen + slot 11. nov kl. 18.00 CET (17:00 UTC) kommer fra flashscore/betexplorer (aggregator). Derav secondary + medium. Verify fester kampdag/tid/arena mot forbundets kampprogram."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/haandball",
+        "basis": "official",
+        "retrievedAt": "2026-11-02T06:15:00Z",
+        "note": "TV 2 har norsk håndballrettighet (NM-finalene 28. des bekreftet på TV 2 Direkte av NHF; hele NM-sluttspillet er TV 2-pakke). Verify bør bekrefte semifinale-spesifikk kanal."
+      }
+    },
+    "summary": "Kolstad møter Bergen i semifinalen i NM-sluttspillet for menn — Final 4-helgen 11.–12. november. Vinneren går til cupfinalen i Oslo Spektrum 28. desember.\n\nNHF bekrefter at Kolstad, Bergen, Sandefjord og Elverum er klare til semifinalene 11.–12. nov; eksakt kampdag/avspark (11. nov kl. 18.00) og paringen Kolstad–Bergen er foreløpig fra én aggregator → medium, verify fester mot forbundets kampprogram. Norsk visning TV 2 Play.",
+    "id": "9124816807dd",
+    "homeTeamEntityId": "kolstad-handball",
+    "awayTeamEntityId": "bergen-handball",
+    "verifiedAt": "2026-11-07T11:53:38.627Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.handball.no/nyheter/2026/10/nm-finalene-returnerer-til-oslo-spektrum/",
+      "https://www.betexplorer.com/handball/team/kolstad/rTWbl2mC/"
+    ]
+  },
+  {
+    "sport": "golf",
+    "tournament": "PGA Tour",
+    "title": "Austin Championship pres. by Compliance Solutions",
+    "time": "2026-11-12T05:00:00.000Z",
+    "endTime": "2026-11-15T20:00:00.000Z",
+    "venue": "TBD",
+    "meta": "PGA Tour",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "HBO Max (Sport)",
+        "url": "https://www.hbomax.com/no/no/sports/pga-tour",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "Eurosport",
+        "url": "https://www.eurosport.no",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "c23b037b2283"
+  },
+  {
+    "sport": "golf",
+    "tournament": "DP World Tour",
+    "title": "DP World Tour Championship",
+    "time": "2026-11-12T05:00:00.000Z",
+    "endTime": "2026-11-15T20:00:00.000Z",
+    "venue": "TBD",
+    "meta": "DP World Tour",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "6ef64315f23f"
+  },
+  {
+    "sport": "football",
+    "tournament": "Copa del Rey",
+    "title": "Albacete at Calvo Sotelo",
+    "time": "2026-11-12T17:30:00.000Z",
+    "endTime": null,
+    "venue": "Estadio Ciudad de Puertollano",
+    "meta": "Copa del Rey",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Calvo Sotelo",
+    "awayTeam": "Albacete",
+    "isFavorite": false,
+    "round": null,
+    "id": "188b3f851cd4"
+  },
+  {
+    "sport": "football",
+    "tournament": "Copa del Rey",
+    "title": "Real Betis at CD Artistico Navalcarnero",
+    "time": "2026-11-12T18:00:00.000Z",
+    "endTime": null,
+    "venue": "Municipal de Santo Domingo",
+    "meta": "Copa del Rey",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "CD Artistico Navalcarnero",
+    "awayTeam": "Real Betis",
+    "isFavorite": false,
+    "round": null,
+    "id": "8d03d1d2bfe3",
+    "awayTeamEntityId": "real-betis"
+  },
+  {
+    "sport": "football",
+    "tournament": "Copa del Rey",
+    "title": "Levante at CD Tarancon",
+    "time": "2026-11-12T18:00:00.000Z",
+    "endTime": null,
+    "venue": "Polideportivo Estadio Municipal Tarancón",
+    "meta": "Copa del Rey",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "CD Tarancon",
+    "awayTeam": "Levante",
+    "isFavorite": false,
+    "round": null,
+    "id": "ac9c75303f3e",
+    "awayTeamEntityId": "levante"
+  },
+  {
+    "sport": "football",
+    "tournament": "Copa del Rey",
+    "title": "Celta Vigo at Salamanca UDS",
+    "time": "2026-11-13T20:00:00.000Z",
+    "endTime": null,
+    "venue": "Estadio Helmántico",
+    "meta": "Copa del Rey",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Salamanca UDS",
+    "awayTeam": "Celta Vigo",
+    "isFavorite": false,
+    "round": null,
+    "id": "b45d5278f56d",
+    "awayTeamEntityId": "celta-vigo"
+  },
+  {
+    "sport": "tennis",
+    "tournament": "ATP/WTA Tour",
+    "title": "Nitto ATP Finals",
+    "time": "2026-11-14T05:00:00.000Z",
+    "endTime": "2026-11-23T04:59:00.000Z",
+    "venue": "TBD",
+    "meta": "ATP/WTA Tour",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport/tennis",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [
+      {
+        "name": "Carlos Alcaraz"
+      },
+      {
+        "name": "Alexander Zverev"
+      },
+      {
+        "name": "Ben Shelton"
+      }
+    ],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "e94b13c2d30f",
+    "summary": "ATP-sesongens avsluttende mesterskap: de åtte beste spillerne i verden møtes i round-robin (to grupper à fire) før semifinaler og finale. Turneringen går 15.–22. november i Inalpi Arena i Torino (Torino arrangerer t.o.m. 2027).\n\nCarlos Alcaraz, Alexander Zverev og Ben Shelton er bekreftet kvalifisert. Jannik Sinner kvalifiserte seg først, men avsluttet sesongen med en kneskade og står over Torino. De resterende plassene og reservene er ikke endelig kåret. Ingen norsk spiller er kvalifisert (Casper Ruud er utenfor topp 8).\n\nMedium: dato/arena er flerkilde-bekreftet (Wikipedia + atptour.com), men startoppsett og eksakte kamptider publiseres nærmere. Norsk visning TV 2 Play (TV 2s ATP-avtale inkluderer ATP-finalen). CET = UTC+1."
+  },
+  {
+    "sport": "alpine",
+    "tournament": "FIS verdenscup alpint 2026/27",
+    "title": "Levi: Slalåm kvinner",
+    "time": "2026-11-14T09:00:00Z",
+    "venue": "Levi, Finland",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-03T19:40:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+      "https://www.telenor.no/streamix/artikler/verdenscup-alpint-streamix/",
+      "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-03T19:40:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing",
+        "basis": "official",
+        "retrievedAt": "2026-11-07T11:53:38.627Z",
+        "note": "TV 2s egen sesongpresse (uke 46): «Alpint fra Levi (TV 2)». Fra 2026/27 deler TV 2 Play og Viaplay FIS-verdenscupen i alpint i utlandet; renn i Norge går til NRK. Levi (Finland) ligger på TV 2s halvdel — IKKE NRK. Korrigerer eventets tidligere NRK-felt, som motsa eventets eget summary."
+      }
+    },
+    "summary": "Alpinsesongens slalåmåpning for kvinner i Levi, Finland — det tradisjonelle verdenscupstoppet nord for polarsirkelen som alltid deler ut et reinsdyr til vinneren. Første renn etter storslalåmåpningen i Sölden.\n\nNorsk visning: TV 2 Play. Fra sesongen 2026/27 deler TV 2 og Viaplay FIS-verdenscupen i utlandet (renn i Norge går til NRK) — Levi-uka (uke 46) ligger på TV 2s halvdel per TV 2s egen sesongplan, ikke NRK. Endelig starttid er ikke FIS-låst ennå; verify bør bekrefte mot sendeplanen og FIS-startlista nærmere rennhelgen.",
+    "id": "0241465fd12a",
+    "participants": [],
+    "verifiedAt": "2026-11-09T14:08:06Z",
+    "verificationStatus": "amended",
+    "verificationSources": [
+      "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing",
+      "https://www.telenor.no/streamix/artikler/verdenscup-alpint-streamix/",
+      "https://www.oasport.it/2026/10/quando-le-prossime-gare-di-sci-alpino-appuntamento-a-levi-programma-orari-tv/"
+    ]
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Nations League",
+    "title": "Norge – Wales",
+    "time": "2026-11-14T17:00:00Z",
+    "endTime": null,
+    "venue": "Ullevaal Stadion, Oslo",
+    "norwegian": true,
+    "homeTeam": "Norge",
+    "awayTeam": "Wales",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 / TV 2 Play",
+        "url": "https://play.tv2.no/sport/fotball",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-19T05:50:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.fotball.no/landslag/norge-a-herrer/",
+      "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures-a/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/landslag/norge-a-herrer/",
+        "basis": "primary",
+        "retrievedAt": "2026-10-19T05:50:00Z",
+        "note": "fotball.no (NFF, primær, lest direkte): «lørdag 14.11.26», 18:00, Ullevaal Stadion = 17:00 UTC (CET). UEFAs terminliste-artikkel eksplisitt enig (18:00, «All times CET»)."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/fotball",
+        "basis": "official",
+        "retrievedAt": "2026-10-19T05:50:00Z",
+        "note": "TV 2 har de norske Nations League-rettighetene (authority.json football:nations-league); eksakt lineær kanal-slot settes nærmere kampen — verify firmer."
+      }
+    },
+    "summary": "Norge møter Wales hjemme på Ullevaal lørdag 14. november kl. 18.00 — nest siste kamp i Nations League A, gruppe 4 (Portugal, Danmark, Norge, Wales). Wales vant møtet i Cardiff 2–1 i oktober.\n\nAvspark bekreftet av både fotball.no (primær) og UEFAs terminliste (18:00 CET). Troppen tas ut i november.\n\nNorsk visning TV 2 / TV 2 Play.",
+    "id": "0dc1955f2a7c",
+    "homeTeamEntityId": "norge",
+    "awayTeamEntityId": "wales",
+    "verifiedAt": "2026-11-09T14:08:06Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.fotball.no/landslag/norge-a-herrer/",
+      "https://www.tntsports.co.uk/football/uefa-nations-league/2026-2027/norway-wales_mtc20005926/live.shtml"
+    ]
+  },
+  {
+    "sport": "alpine",
+    "tournament": "FIS verdenscup alpint 2026/27",
+    "title": "Levi: Slalåm menn",
+    "time": "2026-11-15T09:00:00Z",
+    "venue": "Levi, Finland",
+    "norwegian": false,
+    "norwegianPlayers": [],
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-03T19:40:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+      "https://www.telenor.no/streamix/artikler/verdenscup-alpint-streamix/",
+      "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-03T19:40:00Z"
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing",
+        "basis": "official",
+        "retrievedAt": "2026-11-07T11:55:19.607Z",
+        "note": "TV 2s egen sesongpresse (uke 46): Levi-helgen («Alpint fra Levi (TV 2)») — både dame- og herreslalåm. Fra 2026/27 deler TV 2 Play og Viaplay FIS-verdenscupen i alpint i utlandet; renn i Norge går til NRK. Korrigerer eventets tidligere NRK-felt som motsa summary."
+      }
+    },
+    "summary": "Alpinsesongens slalåmåpning for menn i Levi, Finland — det tradisjonelle verdenscupstoppet nord for polarsirkelen, dagen etter kvinnenes renn. Norske slalåmkjørere som Atle Lie McGrath, Timon Haugan og Alexander Steen Olsen hører til favorittsjiktet.\n\nNorsk visning: TV 2 Play. Fra sesongen 2026/27 deler TV 2 og Viaplay FIS-verdenscupen i utlandet (renn i Norge går til NRK) — Levi-uka (uke 46) ligger på TV 2s halvdel per TV 2s egen sesongplan, ikke NRK. Endelig starttid er ikke FIS-låst ennå; verify bør bekrefte mot sendeplanen og FIS-startlista nærmere rennhelgen.",
+    "id": "5b50fa023c74",
+    "participants": [],
+    "verifiedAt": "2026-11-09T14:08:06Z",
+    "verificationStatus": "amended",
+    "verificationSources": [
+      "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing",
+      "https://www.telenor.no/streamix/artikler/verdenscup-alpint-streamix/",
+      "https://www.oasport.it/2026/10/quando-le-prossime-gare-di-sci-alpino-appuntamento-a-levi-programma-orari-tv/"
+    ]
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Nations League",
+    "title": "Danmark – Norge",
+    "time": "2026-11-17T19:45:00Z",
+    "endTime": null,
+    "venue": "Parken, København",
+    "norwegian": true,
+    "homeTeam": "Danmark",
+    "awayTeam": "Norge",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "TV 2 / TV 2 Play",
+        "url": "https://play.tv2.no/sport/fotball",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-10-19T05:50:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://www.fotball.no/landslag/norge-a-herrer/",
+      "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures-a/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fotball-no",
+        "url": "https://www.fotball.no/landslag/norge-a-herrer/",
+        "basis": "primary",
+        "retrievedAt": "2026-10-19T05:50:00Z",
+        "note": "fotball.no (NFF, primær, lest direkte): «tirsdag 17.11.26», 20:45, Parken, København = 19:45 UTC (CET). UEFAs terminliste bruker samme 20:45-CET-standardslot for kampen; verify re-bekrefter nær kampdag."
+      },
+      "streaming": {
+        "sourceId": "tv2",
+        "url": "https://play.tv2.no/sport/fotball",
+        "basis": "official",
+        "retrievedAt": "2026-10-19T05:50:00Z",
+        "note": "TV 2 har de norske Nations League-rettighetene; eksakt lineær kanal-slot settes nærmere — verify firmer."
+      }
+    },
+    "summary": "Norge avslutter Nations League-gruppespillet borte mot Danmark i Parken tirsdag 17. november kl. 20.45 (gruppe A4-finalerunden, MD6).\n\nAvspark per fotball.no (primær, 20:45) i UEFAs standardslot; verify re-bekrefter nær kampdag. Troppen tas ut i november.\n\nNorsk visning TV 2 / TV 2 Play.",
+    "id": "1ef2166b04cb",
+    "homeTeamEntityId": "danmark",
+    "awayTeamEntityId": "norge"
+  },
+  {
+    "sport": "golf",
+    "tournament": "PGA Tour",
+    "title": "The RSM Classic",
+    "time": "2026-11-19T05:00:00.000Z",
+    "endTime": "2026-11-22T20:00:00.000Z",
+    "venue": "TBD",
+    "meta": "PGA Tour",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "HBO Max (Sport)",
+        "url": "https://www.hbomax.com/no/no/sports/pga-tour",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "Eurosport",
+        "url": "https://www.eurosport.no",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "e84e79367d27"
+  },
+  {
+    "sport": "f1",
+    "tournament": "Formula 1 2026 - Race Weekend",
+    "title": "Heineken Las Vegas Grand Prix",
+    "time": "2026-11-22T04:00:00.000Z",
+    "endTime": null,
+    "venue": "TBD",
+    "meta": "Formula 1 2026 - Race Weekend",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "508904d8322a"
+  },
+  {
+    "sport": "football",
+    "tournament": "UEFA Conference League",
+    "title": "Brann – Aarhus",
+    "time": "2026-11-26T17:45:00Z",
+    "endTime": "2026-11-26T19:45:00Z",
+    "venue": "Brann Stadion, Bergen",
+    "norwegian": true,
+    "homeTeam": "Brann",
+    "awayTeam": "Aarhus",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-10T12:45:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.teams",
+      "https://www.uefa.com/uefaconferenceleague/clubs/52770--brann/matches/",
+      "https://www.foresportia.com/en/prediction/conference-league/brann-aarhus-2026-11-26/",
+      "https://www.oddscalendar.com/football/europe/conference-league/brann-vs-aarhus/1636393"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "uefa",
+        "url": "https://www.uefa.com/uefaconferenceleague/clubs/52770--brann/matches/",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-10T12:45:00Z",
+        "note": "uefa.com bekrefter dato/hjemmebane/Brann Stadion men renderer ikke avspark per kamp; 18.45 CET (17.45 UTC) korroborert av foresportia + oddscalendar + nederlandsk kringkasterplan, alle enige (MD4)."
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://www.viaplaygroup.com/en/newsroom/press-releases/viaplay-and-tv-2-norway-collaborate-make-selected-football-rights-more",
+        "basis": "official",
+        "retrievedAt": "2026-11-10T12:45:00Z",
+        "note": "Viaplay har eksklusive UEFA Conference League-rettigheter i Norge for syklusen t.o.m. 2030/31."
+      }
+    },
+    "summary": "UEFA Conference League, ligafase runde 4 (MD4). Brann spiller HJEMME mot danske Aarhus (AGF) på Brann Stadion i Bergen tor. 26. nov kl. 18.45 CET (17.45 UTC).\n\nDato, hjemmebane og arena bekreftet mot uefa.com (Branns kampside, primær); avspark 18.45 CET kryss-sjekket mot foresportia + oddscalendar + en nederlandsk kringkasterplan, alle enige.\n\nNorsk visning: Viaplay (Viaplay har Europa League + Conference League i Norge).",
+    "homeTeamEntityId": "brann",
+    "id": "ed0170b54b96"
+  },
+  {
+    "sport": "f1",
+    "tournament": "Formula 1 2026 - Race Weekend",
+    "title": "Qatar Airways Qatar Grand Prix",
+    "time": "2026-11-29T16:00:00.000Z",
+    "endTime": null,
+    "venue": "TBD",
+    "meta": "Formula 1 2026 - Race Weekend",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "b79447e949b3"
+  },
+  {
+    "sport": "handball",
+    "tournament": "EHF EURO 2026 (kvinner)",
+    "title": "Gruppespill: Norge – Romania",
+    "time": "2026-12-04T19:00:00Z",
+    "endTime": null,
+    "venue": "BTarena, Cluj-Napoca",
+    "norwegian": true,
+    "homeTeam": "Norge",
+    "awayTeam": "Romania",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-04T00:55:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://ehfeuro.eurohandball.com/news/en/ehf-confirms-throw-off-times-for-women-s-ehf-euro-2026/",
+      "https://en.wikipedia.org/wiki/2026_European_Women%27s_Handball_Championship",
+      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "eurohandball",
+        "url": "https://ehfeuro.eurohandball.com/news/en/ehf-confirms-throw-off-times-for-women-s-ehf-euro-2026/",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-04T00:55:00Z",
+        "note": "EHF (eurohandball.com) arrangerer EM og bekrefter avsparkstidene: gruppe B i Cluj-Napoca spiller 18:30/21:00 lokal (EET, UTC+2 i des.) = 17:30/20:00 CET. Norge ligger i 21:00-EET/20:00-CET-slotten hver kampdag (EHF + Wikipedia enige, uavhengig write-time fact-check CONFIRMED). 20:00 CET = 19:00 UTC."
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-04T00:55:00Z",
+        "note": "handball.no + allente.no: EM/VM deles fra des. 2026 mellom TV3/Viaplay og TV 2/TV 2 Play i Norge; eksakt kamp-for-kamp-split ikke publisert ennå → list begge, verify firmer per kamp."
+      }
+    },
+    "summary": "Norge er regjerende europamester (gull i 2024) og toppseedet i gruppe B, som spilles i BTarena i Cluj-Napoca, Romania.\n\nGruppespillåpningen mot vertsnasjonen Romania fredag 4. desember kl. 20.00 (norsk tid). EM 2026 (kvinner) spilles 3.–20. desember i Polen, Romania, Tsjekkia, Slovakia og Tyrkia.\n\nNorsk visning er delt mellom TV3/Viaplay og TV 2/TV 2 Play fra desember 2026 (handball.no) — eksakt kanal per kamp bekreftes av verify når sendeplanen publiseres.",
+    "id": "55486346f984"
+  },
+  {
+    "sport": "f1",
+    "tournament": "Formula 1 2026 - Race Weekend",
+    "title": "Etihad Airways Abu Dhabi Grand Prix",
+    "time": "2026-12-06T13:00:00.000Z",
+    "endTime": null,
+    "venue": "TBD",
+    "meta": "Formula 1 2026 - Race Weekend",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": null,
+    "awayTeam": null,
+    "isFavorite": false,
+    "round": null,
+    "id": "c1e8061ea012"
+  },
+  {
+    "sport": "handball",
+    "tournament": "EHF EURO 2026 (kvinner)",
+    "title": "Gruppespill: Norge – Sveits",
+    "time": "2026-12-06T19:00:00Z",
+    "endTime": null,
+    "venue": "BTarena, Cluj-Napoca",
+    "norwegian": true,
+    "homeTeam": "Norge",
+    "awayTeam": "Sveits",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-04T00:55:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://ehfeuro.eurohandball.com/news/en/ehf-confirms-throw-off-times-for-women-s-ehf-euro-2026/",
+      "https://en.wikipedia.org/wiki/2026_European_Women%27s_Handball_Championship",
+      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "eurohandball",
+        "url": "https://ehfeuro.eurohandball.com/news/en/ehf-confirms-throw-off-times-for-women-s-ehf-euro-2026/",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-04T00:55:00Z",
+        "note": "EHF (eurohandball.com) arrangerer EM og bekrefter avsparkstidene: gruppe B i Cluj-Napoca spiller 18:30/21:00 lokal (EET, UTC+2 i des.) = 17:30/20:00 CET. Norge ligger i 21:00-EET/20:00-CET-slotten hver kampdag (EHF + Wikipedia enige, uavhengig write-time fact-check CONFIRMED). 20:00 CET = 19:00 UTC."
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-04T00:55:00Z",
+        "note": "handball.no + allente.no: EM/VM deles fra des. 2026 mellom TV3/Viaplay og TV 2/TV 2 Play i Norge; eksakt kamp-for-kamp-split ikke publisert ennå → list begge, verify firmer per kamp."
+      }
+    },
+    "summary": "Norge er regjerende europamester (gull i 2024) og toppseedet i gruppe B, som spilles i BTarena i Cluj-Napoca, Romania.\n\nAndre gruppespillkamp mot Sveits søndag 6. desember kl. 20.00 (norsk tid), BTarena Cluj-Napoca.\n\nNorsk visning delt TV3/Viaplay + TV 2/TV 2 Play (handball.no) — kanal per kamp bekreftes av verify.",
+    "id": "e6a214228898",
+    "awayTeamEntityId": "sveits-herrelandslag-i-handball"
+  },
+  {
+    "sport": "handball",
+    "tournament": "EHF EURO 2026 (kvinner)",
+    "title": "Gruppespill: Nord-Makedonia – Norge",
+    "time": "2026-12-08T19:00:00Z",
+    "endTime": null,
+    "venue": "BTarena, Cluj-Napoca",
+    "norwegian": true,
+    "homeTeam": "Nord-Makedonia",
+    "awayTeam": "Norge",
+    "norwegianPlayers": [],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "Viaplay",
+        "url": "https://viaplay.no/no-no/sport",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-04T00:55:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "catalog.json#tier2.tournaments",
+      "https://ehfeuro.eurohandball.com/news/en/ehf-confirms-throw-off-times-for-women-s-ehf-euro-2026/",
+      "https://en.wikipedia.org/wiki/2026_European_Women%27s_Handball_Championship",
+      "https://www.handball.no/regioner/nhf-sentralt/kampaktivitet/topphandball/handball-pa-tv/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "eurohandball",
+        "url": "https://ehfeuro.eurohandball.com/news/en/ehf-confirms-throw-off-times-for-women-s-ehf-euro-2026/",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-04T00:55:00Z",
+        "note": "EHF (eurohandball.com) arrangerer EM og bekrefter avsparkstidene: gruppe B i Cluj-Napoca spiller 18:30/21:00 lokal (EET, UTC+2 i des.) = 17:30/20:00 CET. Norge ligger i 21:00-EET/20:00-CET-slotten hver kampdag (EHF + Wikipedia enige, uavhengig write-time fact-check CONFIRMED). 20:00 CET = 19:00 UTC."
+      },
+      "streaming": {
+        "sourceId": "viaplay",
+        "url": "https://viaplay.no",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-04T00:55:00Z",
+        "note": "handball.no + allente.no: EM/VM deles fra des. 2026 mellom TV3/Viaplay og TV 2/TV 2 Play i Norge; eksakt kamp-for-kamp-split ikke publisert ennå → list begge, verify firmer per kamp."
+      }
+    },
+    "summary": "Norge er regjerende europamester (gull i 2024) og toppseedet i gruppe B, som spilles i BTarena i Cluj-Napoca, Romania.\n\nSiste gruppespillkamp mot Nord-Makedonia tirsdag 8. desember kl. 20.00 (norsk tid), BTarena Cluj-Napoca. De tre beste i hver gruppe går videre til mellomrunden.\n\nNorsk visning delt TV3/Viaplay + TV 2/TV 2 Play (handball.no) — kanal per kamp bekreftes av verify.",
+    "id": "cd512c3720a9"
+  }
 ]
