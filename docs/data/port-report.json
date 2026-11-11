@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T10:07:35.087Z",
+  "generatedAt": "2026-11-11T12:25:16.345Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -21,64 +21,57 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 7,
+    "openGaps": 6,
     "bySeverity": {
       "high": 0,
-      "medium": 7,
+      "medium": 6,
       "low": 0
     },
-    "oldestGapAgeDays": 18.06,
-    "escalatable": 7,
-    "catalogMatched": 3,
-    "auditedAt": "2026-11-10T11:30:00Z",
+    "oldestGapAgeDays": 18.15,
+    "escalatable": 6,
+    "catalogMatched": 2,
+    "auditedAt": "2026-11-11T11:45:00Z",
     "gaps": [
       {
         "interest": "Hopp — FIS hopp-verdenscupåpningen Lillehammer (20.–22. nov) + Ruka (28. nov)",
         "severity": "medium",
-        "ageDays": 18.06,
-        "recurrences": 16,
+        "ageDays": 18.15,
+        "recurrences": 17,
         "catalogMatched": false
       },
       {
-        "interest": "Langrenn — VC-premieren Ruka (27.–29. nov) + norsk NRK-sesongåpning Beitostølen (~20.–22. nov, dato UBEKREFTET)",
+        "interest": "Langrenn — VC-premieren Ruka (27.–29. nov) + norsk NRK-sesongåpning Beitostølen (dato UBEKREFTET)",
         "severity": "medium",
-        "ageDays": 14.02,
-        "recurrences": 12,
-        "catalogMatched": false
-      },
-      {
-        "interest": "Alpint — Verdenscupen fortsetter Gurgl (21.–22. nov) + Copper Mountain (28.–29. nov)",
-        "severity": "medium",
-        "ageDays": 15.03,
+        "ageDays": 14.11,
         "recurrences": 13,
+        "catalogMatched": false
+      },
+      {
+        "interest": "Alpint — Verdenscupen fortsetter Copper Mountain (28.–29. nov)",
+        "severity": "medium",
+        "ageDays": 15.12,
+        "recurrences": 14,
         "catalogMatched": false
       },
       {
         "interest": "Skiskyting — IBU VC-premieren Kontiolahti (26.–29. nov, NRK, tier1 wholesale)",
         "severity": "medium",
-        "ageDays": 11,
-        "recurrences": 9,
+        "ageDays": 11.09,
+        "recurrences": 10,
         "catalogMatched": false
       },
       {
         "interest": "Esport/CS2 — PGL Major Singapore 2026 (Stage 1 ~24.–27. nov) — 100 Thieves kvalifisert",
         "severity": "medium",
-        "ageDays": 12,
-        "recurrences": 10,
+        "ageDays": 12.1,
+        "recurrences": 11,
         "catalogMatched": true
       },
       {
         "interest": "Sjakk — klassisk VM 2026 Gukesh–Sindarov (Genève, åpning 22. nov, parti 1 24. nov)",
         "severity": "medium",
-        "ageDays": 13.01,
-        "recurrences": 11,
-        "catalogMatched": true
-      },
-      {
-        "interest": "Fotball — Brann i Conference League ligafase MD4 hjemme mot Aarhus (tor. 26. nov)",
-        "severity": "medium",
-        "ageDays": 13.01,
-        "recurrences": 11,
+        "ageDays": 13.1,
+        "recurrences": 12,
         "catalogMatched": true
       }
     ]
@@ -89,17 +82,10 @@
     "nearTermAmended": 1,
     "verifyRunAt": "2026-11-10T13:42:21.841Z",
     "windowRate": 0,
-    "windowChecks": 58,
+    "windowChecks": 55,
     "windowAmendments": 0,
     "windowCorrections": 4,
     "byDay": [
-      {
-        "date": "2026-10-28",
-        "checks": 3,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-10-29",
         "checks": 3,
@@ -181,15 +167,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-11T10:07:30.752Z",
+    "buildCheckedAt": "2026-11-11T12:25:11.526Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-11T01:38:16.928Z",
-    "manifestAgeHours": 8.49,
+    "manifestGeneratedAt": "2026-11-11T10:07:36.386Z",
+    "manifestAgeHours": 2.29,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-11-10T13:42:21.841Z",
-    "verifyAgeHours": 20.42,
+    "verifyAgeHours": 22.72,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
@@ -200,6 +186,6 @@
     "total": 9,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-11-11T10:07:35.087Z"
+    "generatedAt": "2026-11-11T12:25:16.344Z"
   }
 }
