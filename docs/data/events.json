@@ -1,62 +1,5 @@
 [
   {
-    "sport": "handball",
-    "tournament": "EHF Champions League",
-    "title": "Industria Kielce – Kolstad",
-    "time": "2026-10-28T19:45:00Z",
-    "endTime": null,
-    "venue": "Kielce, Polen",
-    "norwegian": true,
-    "homeTeam": "Industria Kielce",
-    "awayTeam": "Kolstad",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://viaplay.no/no/sport",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-19T05:50:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://www.eurohandball.com/en/club/kZVHhs7nxEhEqyCf6iK_Sw/KolstadH%C3%A5ndball/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "eurohandball",
-        "url": "https://www.eurohandball.com/en/club/kZVHhs7nxEhEqyCf6iK_Sw/KolstadH%C3%A5ndball/",
-        "basis": "primary",
-        "retrievedAt": "2026-10-27T10:45:44.164Z",
-        "note": "EHF (arrangøren): ons. 28. okt 20:45 CET = 19:45 UTC. Uavhengig korroborert 27.10 mot karlobag.eu (billett-aggregator), som lister samme 20:45 CET / Hala Legionów — tid holder."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball",
-        "basis": "official",
-        "retrievedAt": "2026-10-19T05:50:00Z",
-        "note": "EHF CL i Norge: DELT Viaplay/TV 2-avtale t.o.m. 2029/30; begge plattformer listet, verify firmer eksakt kanal per kamp."
-      }
-    },
-    "summary": "Kolstad avslutter oktober-dobbelen i Champions League borte mot polske Industria Kielce onsdag 28. oktober kl. 20.45 (gruppespillrunde 6, gruppe F).\n\nTidspunkt re-bekreftet mot EHFs egen klubbside (arrangøren, tid-autoritet) 22. okt — ons. 28. okt 20.45 lokal. NB: sommertiden slutter 25. oktober, så 20.45 CET er 19.45 UTC.\n\nNorsk visning TV 2 Play eller Viaplay (delt EHF CL-rettighetsavtale).",
-    "id": "f02bbef0e329",
-    "awayTeamEntityId": "kolstad-handball",
-    "verifiedAt": "2026-10-27T10:45:44.164Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.eurohandball.com/en/club/kZVHhs7nxEhEqyCf6iK_Sw/KolstadH%C3%A5ndball/",
-      "https://karlobag.eu/en/sports/handball/europe/ehf-champions-league/industria-kielce-vs-kolstad-handball-wytmm/"
-    ]
-  },
-  {
     "sport": "esports",
     "tournament": "PGL Masters Bucharest 2026",
     "title": "PGL Masters Bucharest – sluttspill + finale",
@@ -1390,28 +1333,6 @@
     ]
   },
   {
-    "sport": "tennis",
-    "tournament": "Bybit Stockholm Open",
-    "title": "Casper Ruud – Aleksandr Shevchenko",
-    "time": "2026-11-11T17:00:00.000Z",
-    "endTime": null,
-    "venue": "Center Court",
-    "meta": "Bybit Stockholm Open · Men's Singles",
-    "norwegian": true,
-    "streaming": [],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": null,
-    "awayTeam": null,
-    "isFavorite": false,
-    "round": null,
-    "id": "87154d56eb03"
-  },
-  {
     "sport": "handball",
     "tournament": "NM-sluttspillet (menn)",
     "title": "Semifinale: Kolstad – Bergen",
@@ -1555,7 +1476,7 @@
   {
     "sport": "football",
     "tournament": "Copa del Rey",
-    "title": "Albacete at Calvo Sotelo",
+    "title": "Albacete at CS Puertollano",
     "time": "2026-11-12T17:30:00.000Z",
     "endTime": null,
     "venue": "Estadio Ciudad de Puertollano",
@@ -1568,11 +1489,11 @@
     "link": null,
     "status": null,
     "featuredGroups": [],
-    "homeTeam": "Calvo Sotelo",
+    "homeTeam": "CS Puertollano",
     "awayTeam": "Albacete",
     "isFavorite": false,
     "round": null,
-    "id": "188b3f851cd4"
+    "id": "52d5d74113b8"
   },
   {
     "sport": "football",
@@ -1928,6 +1849,64 @@
     "id": "e84e79367d27"
   },
   {
+    "sport": "ski jumping",
+    "tournament": "FIS verdenscup hopp 2026/27",
+    "title": "Lillehammer: Lagkonkurranse HS140",
+    "time": "2026-11-20T15:00:00Z",
+    "endTime": "2026-11-20T16:45:00Z",
+    "venue": "Lysgårdsbakken, Lillehammer",
+    "norwegian": true,
+    "norwegianPlayers": [
+      {
+        "name": "Marius Lindvik"
+      },
+      {
+        "name": "Johann André Forfang"
+      },
+      {
+        "name": "Eirin Maria Kvandal"
+      },
+      {
+        "name": "Anna Odine Strøm"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-11T16:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Ski_Jumping_World_Cup",
+      "https://www.fis-ski.com/DB/general/event-details.html?sectorcode=JP&eventid=63024&seasoncode=2027",
+      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "nrk",
+        "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-11T16:15:00Z",
+        "note": "FIS har ikke publisert offisielle starttider ennå (TD-møte 19. nov). Tid fra NRKs provisoriske vintersportplan (lagkonk. 16.00 CET = 15.00 UTC). Verify låser mot FIS-programmet nærmere rennet."
+      },
+      "streaming": {
+        "sourceId": "nrk",
+        "url": "https://tv.nrk.no/direkte",
+        "basis": "official",
+        "retrievedAt": "2026-11-11T16:15:00Z",
+        "note": "Hopp på norsk jord (Lillehammer) går til NRK. FIS-verdenscupen i utlandet deles TV 2/Viaplay fra 2026/27, men norske renn er unntatt fra den avtalen og vises på NRK (bekreftet mot NRKs egen vintersportplan + regelen 'NRK sender alpint, langrenn, hopp og kombinert på norsk jord')."
+      }
+    },
+    "summary": "Hoppsesongens verdenscupåpning i Lillehammer sparkes i gang med lagkonkurranse i den store bakken (HS140) i Lysgårdsbakken.\n\nNorsk visning: NRK. Renn på norsk jord er unntatt fra den nye TV 2/Viaplay-avtalen og går til NRK.\n\nStarttid er foreløpig (FIS ikke offisielt låst) — verify bekrefter mot FIS-programmet og startlista nærmere rennhelgen.",
+    "id": "bfed31a3422e",
+    "participants": []
+  },
+  {
     "sport": "alpine",
     "tournament": "FIS verdenscup alpint 2026/27",
     "norwegian": false,
@@ -1971,6 +1950,119 @@
     },
     "summary": "Slalåm for kvinner i Gurgl (Hochgurgl, Kirchenkar), Østerrike — verdenscupens andre slalåmhelg etter åpningen i Levi. To omganger: førsteomgang 10.30 CET, finaleomgang 13.30 CET.\n\nNorsk visning er ennå ikke kunngjort (TV 2 Play / Viaplay deler verdenscupen i utlandet fra 2026/27; Gurgl ikke allokert ennå). Starttiden er arrangørens kanoniske slot — verify låser eksakt tid mot FIS-startlista nærmere rennhelgen.",
     "id": "eef547b3e407"
+  },
+  {
+    "sport": "ski jumping",
+    "tournament": "FIS verdenscup hopp 2026/27",
+    "title": "Lillehammer: Individuelt HS140 kvinner",
+    "time": "2026-11-21T13:35:00Z",
+    "endTime": "2026-11-21T15:00:00Z",
+    "venue": "Lysgårdsbakken, Lillehammer",
+    "norwegian": true,
+    "norwegianPlayers": [
+      {
+        "name": "Eirin Maria Kvandal"
+      },
+      {
+        "name": "Anna Odine Strøm"
+      },
+      {
+        "name": "Thea Minyan Bjørseth"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-11T16:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Ski_Jumping_World_Cup",
+      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "nrk",
+        "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-11T16:15:00Z",
+        "note": "FIS har ikke publisert offisielle starttider ennå. Tid fra provisorisk norsk programliste (kvinner ~14.35 CET = 13.35 UTC, innenfor NRKs oppgitte 14.00–16.50-blokk lørdag). PROVISORISK — verify låser mot FIS-programmet."
+      },
+      "streaming": {
+        "sourceId": "nrk",
+        "url": "https://tv.nrk.no/direkte",
+        "basis": "official",
+        "retrievedAt": "2026-11-11T16:15:00Z",
+        "note": "Hopp på norsk jord (Lillehammer) går til NRK. FIS-verdenscupen i utlandet deles TV 2/Viaplay fra 2026/27, men norske renn er unntatt fra den avtalen og vises på NRK (bekreftet mot NRKs egen vintersportplan + regelen 'NRK sender alpint, langrenn, hopp og kombinert på norsk jord')."
+      }
+    },
+    "summary": "Første individuelle verdenscuprenn for kvinner denne sesongen, i stor bakke (HS140) i Lillehammer.\n\nNorsk visning: NRK (renn på norsk jord).\n\nLørdagens starttider er foreløpige anslag innenfor NRKs oppgitte 14.00–16.50-vindu; FIS har ikke låst offisielt program ennå. Verify bekrefter eksakt tid.",
+    "id": "7c82aa05c603",
+    "participants": []
+  },
+  {
+    "sport": "ski jumping",
+    "tournament": "FIS verdenscup hopp 2026/27",
+    "title": "Lillehammer: Individuelt HS140 menn",
+    "time": "2026-11-21T15:50:00Z",
+    "endTime": "2026-11-21T17:15:00Z",
+    "venue": "Lysgårdsbakken, Lillehammer",
+    "norwegian": true,
+    "norwegianPlayers": [
+      {
+        "name": "Marius Lindvik"
+      },
+      {
+        "name": "Johann André Forfang"
+      },
+      {
+        "name": "Halvor Egner Granerud",
+        "entityId": "halvor-egner-granerud"
+      },
+      {
+        "name": "Kristoffer Eriksen Sundal",
+        "entityId": "kristoffer-eriksen-sundal"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-11T16:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Ski_Jumping_World_Cup",
+      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "nrk",
+        "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-11T16:15:00Z",
+        "note": "FIS har ikke publisert offisielle starttider ennå. Tid fra provisorisk norsk programliste (menn ~16.50 CET = 15.50 UTC, sist i NRKs 14.00–16.50-blokk lørdag). PROVISORISK — verify låser mot FIS-programmet."
+      },
+      "streaming": {
+        "sourceId": "nrk",
+        "url": "https://tv.nrk.no/direkte",
+        "basis": "official",
+        "retrievedAt": "2026-11-11T16:15:00Z",
+        "note": "Hopp på norsk jord (Lillehammer) går til NRK. FIS-verdenscupen i utlandet deles TV 2/Viaplay fra 2026/27, men norske renn er unntatt fra den avtalen og vises på NRK (bekreftet mot NRKs egen vintersportplan + regelen 'NRK sender alpint, langrenn, hopp og kombinert på norsk jord')."
+      }
+    },
+    "summary": "Første individuelle verdenscuprenn for menn denne sesongen, i stor bakke (HS140) i Lillehammer. Norske hoppere med Lindvik, Forfang og Granerud i spissen på hjemmebakke.\n\nNorsk visning: NRK (renn på norsk jord).\n\nLørdagens starttid er et foreløpig anslag innenfor NRKs oppgitte 14.00–16.50-vindu; FIS ikke offisielt låst. Verify bekrefter eksakt tid.",
+    "id": "50dcb15b51a1",
+    "participants": []
   },
   {
     "sport": "f1",
@@ -2057,6 +2149,119 @@
     },
     "summary": "Slalåm for menn i Gurgl (Hochgurgl, Kirchenkar), Østerrike — dagen etter kvinnenes renn. Norske slalåmkjørere som Atle Lie McGrath, Timon Haugan og Alexander Steen Olsen hører til favorittsjiktet. To omganger: førsteomgang 10.30 CET, finaleomgang 13.30 CET.\n\nNorsk visning er ennå ikke kunngjort (TV 2 Play / Viaplay deler verdenscupen i utlandet fra 2026/27; Gurgl ikke allokert ennå). Verify låser eksakt tid + kanal nærmere rennhelgen.",
     "id": "d3dedae69081"
+  },
+  {
+    "sport": "ski jumping",
+    "tournament": "FIS verdenscup hopp 2026/27",
+    "title": "Lillehammer: Individuelt HS140 kvinner (søndag)",
+    "time": "2026-11-22T11:00:00Z",
+    "endTime": "2026-11-22T12:30:00Z",
+    "venue": "Lysgårdsbakken, Lillehammer",
+    "norwegian": true,
+    "norwegianPlayers": [
+      {
+        "name": "Eirin Maria Kvandal"
+      },
+      {
+        "name": "Anna Odine Strøm"
+      },
+      {
+        "name": "Thea Minyan Bjørseth"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-11T16:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Ski_Jumping_World_Cup",
+      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "nrk",
+        "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-11T16:15:00Z",
+        "note": "FIS har ikke publisert offisielle starttider ennå. Tid fra NRKs provisoriske vintersportplan (kvinner 12.00 CET = 11.00 UTC søndag). Verify låser mot FIS-programmet."
+      },
+      "streaming": {
+        "sourceId": "nrk",
+        "url": "https://tv.nrk.no/direkte",
+        "basis": "official",
+        "retrievedAt": "2026-11-11T16:15:00Z",
+        "note": "Hopp på norsk jord (Lillehammer) går til NRK. FIS-verdenscupen i utlandet deles TV 2/Viaplay fra 2026/27, men norske renn er unntatt fra den avtalen og vises på NRK (bekreftet mot NRKs egen vintersportplan + regelen 'NRK sender alpint, langrenn, hopp og kombinert på norsk jord')."
+      }
+    },
+    "summary": "Andre individuelle verdenscuprenn for kvinner i åpningshelgen, stor bakke (HS140) i Lillehammer.\n\nNorsk visning: NRK (renn på norsk jord).\n\nStarttid foreløpig (FIS ikke offisielt låst) — verify bekrefter nærmere rennet.",
+    "id": "4d67c4c36ca3",
+    "participants": []
+  },
+  {
+    "sport": "ski jumping",
+    "tournament": "FIS verdenscup hopp 2026/27",
+    "title": "Lillehammer: Individuelt HS140 menn (søndag)",
+    "time": "2026-11-22T15:00:00Z",
+    "endTime": "2026-11-22T16:30:00Z",
+    "venue": "Lysgårdsbakken, Lillehammer",
+    "norwegian": true,
+    "norwegianPlayers": [
+      {
+        "name": "Marius Lindvik"
+      },
+      {
+        "name": "Johann André Forfang"
+      },
+      {
+        "name": "Halvor Egner Granerud",
+        "entityId": "halvor-egner-granerud"
+      },
+      {
+        "name": "Kristoffer Eriksen Sundal",
+        "entityId": "kristoffer-eriksen-sundal"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "NRK",
+        "url": "https://tv.nrk.no/direkte",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-11T16:15:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier1",
+      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Ski_Jumping_World_Cup",
+      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "nrk",
+        "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-11T16:15:00Z",
+        "note": "FIS har ikke publisert offisielle starttider ennå. Tid fra NRKs provisoriske vintersportplan (menn 16.00 CET = 15.00 UTC søndag). Verify låser mot FIS-programmet."
+      },
+      "streaming": {
+        "sourceId": "nrk",
+        "url": "https://tv.nrk.no/direkte",
+        "basis": "official",
+        "retrievedAt": "2026-11-11T16:15:00Z",
+        "note": "Hopp på norsk jord (Lillehammer) går til NRK. FIS-verdenscupen i utlandet deles TV 2/Viaplay fra 2026/27, men norske renn er unntatt fra den avtalen og vises på NRK (bekreftet mot NRKs egen vintersportplan + regelen 'NRK sender alpint, langrenn, hopp og kombinert på norsk jord')."
+      }
+    },
+    "summary": "Åpningshelgens siste verdenscuprenn for menn i stor bakke (HS140) i Lillehammer. Norsk hjemmehelg med full tropp.\n\nNorsk visning: NRK (renn på norsk jord).\n\nStarttid foreløpig (FIS ikke offisielt låst) — verify bekrefter nærmere rennet.",
+    "id": "9e2562dddd96",
+    "participants": []
   },
   {
     "sport": "esports",
@@ -2356,280 +2561,5 @@
     },
     "summary": "Norge er regjerende europamester (gull i 2024) og toppseedet i gruppe B, som spilles i BTarena i Cluj-Napoca, Romania.\n\nSiste gruppespillkamp mot Nord-Makedonia tirsdag 8. desember kl. 20.00 (norsk tid), BTarena Cluj-Napoca. De tre beste i hver gruppe går videre til mellomrunden.\n\nNorsk visning delt TV3/Viaplay + TV 2/TV 2 Play (handball.no) — kanal per kamp bekreftes av verify.",
     "id": "cd512c3720a9"
-  },
-  {
-    "sport": "ski jumping",
-    "tournament": "FIS verdenscup hopp 2026/27",
-    "title": "Lillehammer: Lagkonkurranse HS140",
-    "time": "2026-11-20T15:00:00Z",
-    "endTime": "2026-11-20T16:45:00Z",
-    "venue": "Lysgårdsbakken, Lillehammer",
-    "norwegian": true,
-    "norwegianPlayers": [
-      {
-        "name": "Marius Lindvik"
-      },
-      {
-        "name": "Johann André Forfang"
-      },
-      {
-        "name": "Eirin Maria Kvandal"
-      },
-      {
-        "name": "Anna Odine Strøm"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-11-11T16:15:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Ski_Jumping_World_Cup",
-      "https://www.fis-ski.com/DB/general/event-details.html?sectorcode=JP&eventid=63024&seasoncode=2027",
-      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "nrk",
-        "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-11T16:15:00Z",
-        "note": "FIS har ikke publisert offisielle starttider ennå (TD-møte 19. nov). Tid fra NRKs provisoriske vintersportplan (lagkonk. 16.00 CET = 15.00 UTC). Verify låser mot FIS-programmet nærmere rennet."
-      },
-      "streaming": {
-        "sourceId": "nrk",
-        "url": "https://tv.nrk.no/direkte",
-        "basis": "official",
-        "retrievedAt": "2026-11-11T16:15:00Z",
-        "note": "Hopp på norsk jord (Lillehammer) går til NRK. FIS-verdenscupen i utlandet deles TV 2/Viaplay fra 2026/27, men norske renn er unntatt fra den avtalen og vises på NRK (bekreftet mot NRKs egen vintersportplan + regelen 'NRK sender alpint, langrenn, hopp og kombinert på norsk jord')."
-      }
-    },
-    "summary": "Hoppsesongens verdenscupåpning i Lillehammer sparkes i gang med lagkonkurranse i den store bakken (HS140) i Lysgårdsbakken.\n\nNorsk visning: NRK. Renn på norsk jord er unntatt fra den nye TV 2/Viaplay-avtalen og går til NRK.\n\nStarttid er foreløpig (FIS ikke offisielt låst) — verify bekrefter mot FIS-programmet og startlista nærmere rennhelgen.",
-    "id": "bfed31a3422e"
-  },
-  {
-    "sport": "ski jumping",
-    "tournament": "FIS verdenscup hopp 2026/27",
-    "title": "Lillehammer: Individuelt HS140 kvinner",
-    "time": "2026-11-21T13:35:00Z",
-    "endTime": "2026-11-21T15:00:00Z",
-    "venue": "Lysgårdsbakken, Lillehammer",
-    "norwegian": true,
-    "norwegianPlayers": [
-      {
-        "name": "Eirin Maria Kvandal"
-      },
-      {
-        "name": "Anna Odine Strøm"
-      },
-      {
-        "name": "Thea Minyan Bjørseth"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-11-11T16:15:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Ski_Jumping_World_Cup",
-      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "nrk",
-        "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-11T16:15:00Z",
-        "note": "FIS har ikke publisert offisielle starttider ennå. Tid fra provisorisk norsk programliste (kvinner ~14.35 CET = 13.35 UTC, innenfor NRKs oppgitte 14.00–16.50-blokk lørdag). PROVISORISK — verify låser mot FIS-programmet."
-      },
-      "streaming": {
-        "sourceId": "nrk",
-        "url": "https://tv.nrk.no/direkte",
-        "basis": "official",
-        "retrievedAt": "2026-11-11T16:15:00Z",
-        "note": "Hopp på norsk jord (Lillehammer) går til NRK. FIS-verdenscupen i utlandet deles TV 2/Viaplay fra 2026/27, men norske renn er unntatt fra den avtalen og vises på NRK (bekreftet mot NRKs egen vintersportplan + regelen 'NRK sender alpint, langrenn, hopp og kombinert på norsk jord')."
-      }
-    },
-    "summary": "Første individuelle verdenscuprenn for kvinner denne sesongen, i stor bakke (HS140) i Lillehammer.\n\nNorsk visning: NRK (renn på norsk jord).\n\nLørdagens starttider er foreløpige anslag innenfor NRKs oppgitte 14.00–16.50-vindu; FIS har ikke låst offisielt program ennå. Verify bekrefter eksakt tid.",
-    "id": "7c82aa05c603"
-  },
-  {
-    "sport": "ski jumping",
-    "tournament": "FIS verdenscup hopp 2026/27",
-    "title": "Lillehammer: Individuelt HS140 menn",
-    "time": "2026-11-21T15:50:00Z",
-    "endTime": "2026-11-21T17:15:00Z",
-    "venue": "Lysgårdsbakken, Lillehammer",
-    "norwegian": true,
-    "norwegianPlayers": [
-      {
-        "name": "Marius Lindvik"
-      },
-      {
-        "name": "Johann André Forfang"
-      },
-      {
-        "name": "Halvor Egner Granerud"
-      },
-      {
-        "name": "Kristoffer Eriksen Sundal"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-11-11T16:15:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Ski_Jumping_World_Cup",
-      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "nrk",
-        "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-11T16:15:00Z",
-        "note": "FIS har ikke publisert offisielle starttider ennå. Tid fra provisorisk norsk programliste (menn ~16.50 CET = 15.50 UTC, sist i NRKs 14.00–16.50-blokk lørdag). PROVISORISK — verify låser mot FIS-programmet."
-      },
-      "streaming": {
-        "sourceId": "nrk",
-        "url": "https://tv.nrk.no/direkte",
-        "basis": "official",
-        "retrievedAt": "2026-11-11T16:15:00Z",
-        "note": "Hopp på norsk jord (Lillehammer) går til NRK. FIS-verdenscupen i utlandet deles TV 2/Viaplay fra 2026/27, men norske renn er unntatt fra den avtalen og vises på NRK (bekreftet mot NRKs egen vintersportplan + regelen 'NRK sender alpint, langrenn, hopp og kombinert på norsk jord')."
-      }
-    },
-    "summary": "Første individuelle verdenscuprenn for menn denne sesongen, i stor bakke (HS140) i Lillehammer. Norske hoppere med Lindvik, Forfang og Granerud i spissen på hjemmebakke.\n\nNorsk visning: NRK (renn på norsk jord).\n\nLørdagens starttid er et foreløpig anslag innenfor NRKs oppgitte 14.00–16.50-vindu; FIS ikke offisielt låst. Verify bekrefter eksakt tid.",
-    "id": "50dcb15b51a1"
-  },
-  {
-    "sport": "ski jumping",
-    "tournament": "FIS verdenscup hopp 2026/27",
-    "title": "Lillehammer: Individuelt HS140 kvinner (søndag)",
-    "time": "2026-11-22T11:00:00Z",
-    "endTime": "2026-11-22T12:30:00Z",
-    "venue": "Lysgårdsbakken, Lillehammer",
-    "norwegian": true,
-    "norwegianPlayers": [
-      {
-        "name": "Eirin Maria Kvandal"
-      },
-      {
-        "name": "Anna Odine Strøm"
-      },
-      {
-        "name": "Thea Minyan Bjørseth"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-11-11T16:15:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Ski_Jumping_World_Cup",
-      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "nrk",
-        "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-11T16:15:00Z",
-        "note": "FIS har ikke publisert offisielle starttider ennå. Tid fra NRKs provisoriske vintersportplan (kvinner 12.00 CET = 11.00 UTC søndag). Verify låser mot FIS-programmet."
-      },
-      "streaming": {
-        "sourceId": "nrk",
-        "url": "https://tv.nrk.no/direkte",
-        "basis": "official",
-        "retrievedAt": "2026-11-11T16:15:00Z",
-        "note": "Hopp på norsk jord (Lillehammer) går til NRK. FIS-verdenscupen i utlandet deles TV 2/Viaplay fra 2026/27, men norske renn er unntatt fra den avtalen og vises på NRK (bekreftet mot NRKs egen vintersportplan + regelen 'NRK sender alpint, langrenn, hopp og kombinert på norsk jord')."
-      }
-    },
-    "summary": "Andre individuelle verdenscuprenn for kvinner i åpningshelgen, stor bakke (HS140) i Lillehammer.\n\nNorsk visning: NRK (renn på norsk jord).\n\nStarttid foreløpig (FIS ikke offisielt låst) — verify bekrefter nærmere rennet.",
-    "id": "4d67c4c36ca3"
-  },
-  {
-    "sport": "ski jumping",
-    "tournament": "FIS verdenscup hopp 2026/27",
-    "title": "Lillehammer: Individuelt HS140 menn (søndag)",
-    "time": "2026-11-22T15:00:00Z",
-    "endTime": "2026-11-22T16:30:00Z",
-    "venue": "Lysgårdsbakken, Lillehammer",
-    "norwegian": true,
-    "norwegianPlayers": [
-      {
-        "name": "Marius Lindvik"
-      },
-      {
-        "name": "Johann André Forfang"
-      },
-      {
-        "name": "Halvor Egner Granerud"
-      },
-      {
-        "name": "Kristoffer Eriksen Sundal"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "NRK",
-        "url": "https://tv.nrk.no/direkte",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-11-11T16:15:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier1",
-      "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Ski_Jumping_World_Cup",
-      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "nrk",
-        "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-11T16:15:00Z",
-        "note": "FIS har ikke publisert offisielle starttider ennå. Tid fra NRKs provisoriske vintersportplan (menn 16.00 CET = 15.00 UTC søndag). Verify låser mot FIS-programmet."
-      },
-      "streaming": {
-        "sourceId": "nrk",
-        "url": "https://tv.nrk.no/direkte",
-        "basis": "official",
-        "retrievedAt": "2026-11-11T16:15:00Z",
-        "note": "Hopp på norsk jord (Lillehammer) går til NRK. FIS-verdenscupen i utlandet deles TV 2/Viaplay fra 2026/27, men norske renn er unntatt fra den avtalen og vises på NRK (bekreftet mot NRKs egen vintersportplan + regelen 'NRK sender alpint, langrenn, hopp og kombinert på norsk jord')."
-      }
-    },
-    "summary": "Åpningshelgens siste verdenscuprenn for menn i stor bakke (HS140) i Lillehammer. Norsk hjemmehelg med full tropp.\n\nNorsk visning: NRK (renn på norsk jord).\n\nStarttid foreløpig (FIS ikke offisielt låst) — verify bekrefter nærmere rennet.",
-    "id": "9e2562dddd96"
   }
 ]
