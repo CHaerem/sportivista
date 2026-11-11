@@ -1,20 +1,24 @@
 {
-  "runAt": "2026-11-11T06:25:00Z",
-  "eventsAdded": 0,
-  "eventsRemoved": 0,
-  "eventsModified": 0,
-  "trackedDelta": "Ingen tracked-endring (10 leagues / 13 athletes / 26 tournaments uendret, ingen expires forfalt). Kun prependet ny kjøringsnote som dokumenterer den rolige kjøringen + Gurgl-kanal-klobben.",
-  "quality": {
-    "pass": true,
-    "score": 88,
-    "failures": [],
-    "note": "Ingen grader-/fact-check-subagent spawnet: 0 nye events → ingen kandidater å verifisere (per Step 3.5/Step 5, fact-check og grader kjøres kun når events skrives). Selvvurdering mot research-rubric: rolig kjøring er legitim (quota-governor: standard-tier feiler ikke på tom kjøring). Imminent-vinduet dekket, winter-åpninger på cadence, transparent log skrevet."
-  },
-  "notes": [
-    "ROLIG KJØRING (standard-tier, ons. 11. nov ~06.25Z). eventsAdded 0. Grunnlag: coverage-critic-audit 10.11 11:30Z escalated=false, INGEN ekte HIGH imminent recall-gap; alle 7 gjenstående gap er medium cadence-fyll ~10–19 d ut (vinter-åpninger + CS2 Major + Sjakk-VM + Brann ECL) med harde frister ~17.–24. nov som ennå ikke er nådd. Egen board-inspeksjon (50 events, 24 upcoming) bekreftet imminent-vinduet (11.–14. nov) komplett: Total Chess (Carlsen) 11. nov, NM-cup-semi Kolstad–Bergen 11. nov, Ruud (Stockholm 11./ATP Finals 14. nov), golf Austin+DP World Tour Championship 12. nov, Copa del Rey 12.–13. nov, Norge–Wales 14. nov, alpint Levi 14. nov. Ingen imminent miss.",
-    "WEB-SJEKKET hopp FIS VC Lillehammer 20.–22. nov (den nærmeste vinter-åpningen, hard frist ~17. nov): program bekreftet mot Wikipedia 2026/27-sesongsiden + FIS-kalender (mixed team 20. nov + individuelt menn+kvinner 21.+22. nov, HS140, Lysgårdsbakken) MEN 2026/27 starttider IKKE publisert av FIS (kun fjorårets 16.00 CET-mal funnet). Boardes IKKE i dag — en gjettet starttid er verre enn et manglende event; boardes på cadence ~15.–17. nov når FIS fester starttidene. Kanal NRK (norsk hjemmebane, per TV 2/Viaplay/NRK-sesongsplitt).",
-    "GURGL-KANAL-KLOBB (flagg verify + self-repair): de 2 KOMMENDE Gurgl-alpint-events (21.–22. nov) viser NÅ streaming[]=[NRK] — forrige kjørings bevisste streaming[] TOM ble klobbet til NRK av build-events normalizeStreaming (norwegian-rights.js L242, venue-blind vinter→NRK). KORREKT KANAL = VIAPLAY (TV 2s sesongpressemelding NTB 19113452: Viaplay har Gurgl/Sölden/Madonna/Courchevel/Wengen/Cortina/Åre). IKKE re-redigert (en bar research-streaming[]-redigering klobbes tilbake innen timen; kun en verify amended/confirmed-stamp overlever — jf. Levi 14.–15. nov NÅ korrekt TV 2 Play + confirmed). Gurgl ~10–11 d ut = utenfor verifys 7-d-vindu → verify amender ~14. nov; DURABEL fiks hos self-repair/improve (norwegian-rights.js L242 → per-venue vinter-splitt).",
-    "HOLDT på cadence (ingen HIGH-eskalering, ~13–19 d ut): langrenn Ruka-VC 27.–29. nov (Viaplay), skiskyting Kontiolahti 26.–29. nov (TV 2), alpint Copper/Killington 28.–29. nov, Sjakk-VM Gukesh–Sindarov parti 1 24. nov (~18.–20. nov), CS2 Major Singapore Stage 1 ~24.–27. nov (100T kval., ~18.–20. nov) — alle tracked med entries, starttider/bracket ennå ikke låst. Brann ECL MD4 26. nov + Gurgl 21.–22. nov alt på tavla.",
-    "Step 2.6 horisont-scan: ingen ny in-scope katalog-/demand-kandidat (ingen demand[] i coverage-gaps; horisont ~8. des alt sporet eller boardet). Step 2.8 registry-sveip IKKE kjørt (standard-tier onsdag; kun DEEP mandagssveip). Ingen fan-out-sveip (uproporsjonalt ~19 t etter grundig critic-audit). STRUKTURELLE HIGH-FLAGG STÅR: norwegian-rights.js L242 venue-blind vinter-klobb; ingen wholesale vintersport-/håndball-fetcher + nov-contract-blokk; esports.js 100T-only-filter; snevert eng.1-fetchervindu; golf-fetcher ingen look-ahead; ESPN mangler EL/ECL-endepunkt."
-  ]
+	"runAt": "2026-11-11T16:25:00Z",
+	"tier": "standard",
+	"eventsAdded": 5,
+	"eventsRemoved": 1,
+	"eventsModified": 0,
+	"trackedDelta": "Oppdaterte ski-jumping-world-cup-2026-27-oppføringen (PLASSHOLDER → BOARDET: Lillehammer-åpningen 20.–22. nov lagt til som 5 ai-research-events, NRK bekreftet, FIS-tider ennå ikke offisielt publisert → medium). Prepend én run-note (cap 15). Ingen katalog-/registry-endring.",
+	"quality": {
+		"pass": true,
+		"score": 88,
+		"failures": [
+			"Tidsbasis for alle fem hopp-events hviler på én NRK-provisorisk kilde (provenance.time.basis=secondary), korroborert kun av Wikipedia — nær-monokultur for det bærende starttids-faktumet. Mitigert: ærlig merket medium + verify-flagget; FIS har ikke publisert offisielle tider ennå (TD-møte 19. nov), så secondary er korrekt label (−5).",
+			"Kjøringen oppdaterte IKKE norwegian-rights-skillen til å registrere norsk-jord-NRK-unntaket for FIS verdenscup hopp 2026/27 — Edit på .claude/skills/ var tillatelses-blokkert i denne kjøringen (ikke WP-91-skillgaten; en harness-tillatelse). Anbefalt neste kjøring/verify: oppdater skill-linjen (split BY VENUE: norsk jord = NRK, utland = TV 2/Viaplay) så en framtidig leser ikke ser NRK som bar motsigelse til kartets TV 2/Viaplay-default."
+		]
+	},
+	"notes": [
+		"BOARDET HOPP LILLEHAMMER-ÅPNINGEN (den nærmeste uboardede vintersport-åpningen). Fem ai-research-events (medium) for FIS verdenscup hopp 2026/27-åpningen i Lillehammer (Lysgårdsbakken HS140): fre. 20. nov lagkonkurranse HS140 (15:00 UTC); lør. 21. nov individuelt kvinner (13:35 UTC) + menn (15:50 UTC); søn. 22. nov individuelt kvinner (11:00 UTC) + menn (15:00 UTC). Trigget av coverage-critic carry-forward-hull (recurrences 17, hard frist ~17. nov); cadence-fyll ~9 d ut, samme mønster som alpint Levi/Gurgl.",
+		"KILDEKJEDE: struktur (lagkonk. fre. + 4 individuelle lør/søn) bekreftet mot FIS-eventsiden (eventid 63024) + Wikipedia 2026/27 + uavhengig fresh-context write-time fact-check. FIS har IKKE publisert offisielle starttider (TD-møte 19. nov) → tider fra NRKs provisoriske vintersportplan; lørdagstidene (13:35/15:50 UTC) er anslag innenfor NRKs oppgitte 14.00–16.50-blokk, amendert av fact-checkeren. provenance.time.basis=secondary, confidence=medium. Verify låser eksakte tider mot FIS-programmet nærmere rennet.",
+		"KANAL NRK bekreftet (viktig korreksjon mot rights-kartets 2026/27-default): renn på norsk jord er UNNTATT fra TV 2/Viaplay-FIS-avtalen og beholdes av NRK t.o.m. 2030. Bekreftet mot NRKs egen vintersportplan (lister Lillehammer-hopp 20.–22. nov på NRK + regelen «NRK sender hopp på norsk jord») + fact-check (sportsbasen.no/norskekalendere.no). Ruka (28.–29. nov, Finland) boardes separat → VIAPLAY/TV 2.",
+		"RYDDET 1 stale past ai-research-event (NM-cup Tromsdalen–Lyn 28. okt, forbi) som feilet validate-events. node scripts/validate-events.js = 0 errors etter opprydning + append.",
+		"GJENSTÅENDE medium horisont-hull (coverage-critic 11.11, ~15–18 d ut, boardes på cadence ~22.–25. nov): langrenn Ruka 27.–29. nov, skiskyting Kontiolahti 26.–29. nov, alpint Copper Mountain 28.–29. nov. CS2 Major Singapore (100 Thieves) er fetcher-boardet (events.json har 100T-kamp 24. nov). Sjakk-VM Gukesh–Sindarov (parti 1 24. nov) er tracked, boardes ~18.–20. nov. Imminent-board (11.–15. nov) var allerede komplett per auditen — ingen imminent miss.",
+		"STEP 2.6 HORISONT-SCAN: ingen nye katalog-kandidater denne kjøringen — de seks medium carry-forward-hullene dekker allerede horisonten, og Step 2.8 registry-reconciliation er kun deep-tier mandagssveip (ikke denne standard-kjøringen). Pre-eksisterende validate-warning observert (ikke fikset her, verify-sak): alpint Gurgl-eventene har NRK i streaming[] men Viaplay i summary (Gurgl = Østerrike/utland → bør være Viaplay/TV 2) — summary↔streaming-mismatch carry-forward fra forrige kjøring."
+	]
 }
