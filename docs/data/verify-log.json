@@ -1,14 +1,16 @@
 {
-  "runAt": "2026-11-10T13:42:21.841Z",
-  "checked": 5,
-  "confirmed": 4,
-  "amended": 1,
+  "runAt": "2026-11-11T12:54:38Z",
+  "checked": 6,
+  "confirmed": 6,
+  "amended": 0,
   "removed": 0,
   "notes": [
-    "Chess (Total Chess VM-pilot, Budapest): AMENDED — fylte tomt streaming-felt. Arrangørens egen side totalchess.com oppgir DAZN som global sendepartner (200+ land, tilgjengelig i Norge); gratis høydepunktsshow (GothamChess) på YouTube. Hovedsending med Rudolf/Steil-Antoni/Howell/Houska bekreftet av FIDE. Ingen separat norsk lineær kanal kunngjort. Tid (15:00 CET gruppespill) uendret, primærkilde worldchess.",
-    "Handball (Kolstad-Bergen NM-semifinale 11. nov): CONFIRMED — NHF (handball.no) bekrefter NM-semifinaler menn 11./12. nov med Kolstad, Bergen, Sandefjord og Elverum. Forbundet gir fortsatt IKKE eksakt paring/kampdag/avkast; paringen Kolstad-Bergen + 18:00 CET står på aggregator (betexplorer; betexplorer-direktesjekk ga HTTP 429). Beholdt som confirmed da kampen er bekreftet i vinduet og ingen kilde motsier den. TV 2 Play uendret.",
-    "Alpine Levi slalåm kvinner (14. nov) + menn (15. nov): CONFIRMED — datoer bekreftet (kvinner lør 14., menn søn 15. nov; FIS arrival/departure-dok bekrefter menn-renn 15.). Starttid 1. omgang 10:00 CET = 09:00 UTC stemmer med board (2. omgang 13:00 CET). FIS offisiell startliste med nøyaktig minutt ennå ikke publisert → medium beholdt. Streaming TV 2 Play (TV 2 deler utenlands-alpint med Viaplay fra 2026/27; Levi på TV 2s halvdel) uendret.",
-    "Football Norge-Wales (14. nov, Nations League A): CONFIRMED — avspark lør 14.11 kl 18:00 CET (17:00 UTC), Ullevaal, bekreftet av fotball.no (NFF primær) og UEFA. Høy tillit, uendret. TV 2 / TV 2 Play.",
-    "Ingen fjernede events. Ingen nye source-quirks bekreftet denne kjøringen."
+    "Total Chess VM-pilot (Budapest), gruppespill 11.11 14:00 UTC — CONFIRMED mot worldchess.com: gruppespill runde 1 starter 15:00 CET (=14:00 UTC). Venue Anantara New York Palace Budapest bekreftet. Kringkasting (DAZN) er fortsatt kun fra arrangørens egen side; worldchess sier offisiell sende-/kommentatorinfo ikke endelig kunngjort — beholder DAZN med ærlig note.",
+    "Håndball NM-semifinale Kolstad–Bergen 11.11 — CONFIRMED mot handball.no (NHF): forbundet bekrefter at NM-semifinalene menn spilles 11.–12. nov og at Kolstad, Bergen, Sandefjord og Elverum er de fire klare lagene. (Tidligere mistanke om at dette var en feildatert gjenbruk av vår-2026-sluttspillet avkreftet — det er en reell NM-cup Final 4.) MERK: NHF gir IKKE eksakt paring eller kampdag; paringen Kolstad–Bergen + slot 18:00 CET er fortsatt aggregator-basert (ærlig note står i eventet). Medium beholdt.",
+    "Levi slalåm kvinner 14.11 09:00 UTC — CONFIRMED. Tid: 1. omgang 10:00 CET (=09:00 UTC) per oasport.it. Streaming TV 2 Play CONFIRMED mot telenor.no/streamix: «Sölden og Levi sendes på henholdsvis Viaplay og TV 2 Play».",
+    "Levi slalåm menn 15.11 09:00 UTC — CONFIRMED (samme som kvinnerennet): TV 2 Play, første omgang 10:00 CET = 09:00 UTC.",
+    "Norge–Wales 14.11 17:00 UTC (Ullevaal) — CONFIRMED mot UEFA/livesoccertv: Nations League A4, lør 14.11 18:00 CET (=17:00 UTC). Norsk kanal TV 2 / TV 2 Play bekreftet (TV 2 holder norske NL-rettigheter t.o.m. 2027/28).",
+    "Danmark–Norge 17.11 19:45 UTC (Parken) — CONFIRMED mot UEFA/livesoccertv: Nations League A4 siste runde, tir 17.11 20:45 CET (=19:45 UTC), Parken København. TV 2 Play. (Var tidligere uverifisert — nå stemplet.)",
+    "SKILL-OPPDATERING BLOKKERT I DENNE ØKTA: Edit mot .claude/skills/norwegian-rights/SKILL.md for å oppdatere alpin-linjen (gammel «Alpine → Viaplay [verify]» er UTDATERT for 2026/27: TV 2 Play + Viaplay deler utenlandsrennene, NRK tar Norge-rennene; Levi uke 46 ligger på TV 2 Play) returnerte den bokstavelige feilen: «Claude requested permissions to write to /home/runner/work/sportivista/sportivista/.claude/skills/norwegian-rights/SKILL.md, but you haven't granted it yet.» Dette er en interaktiv tillatelses-forespørsel i denne økta, ikke en reell CI-blokk — eventenes streaming-felt er allerede korrekt (TV 2 Play), så brukerdataene er riktige uansett. Skill-linjen bør oppdateres ved neste anledning."
   ]
 }
