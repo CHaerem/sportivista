@@ -1,26 +1,27 @@
 {
-  "auditedAt": "2026-11-10T11:30:00Z",
+  "auditedAt": "2026-11-11T11:45:00Z",
   "horizonDays": 28,
   "gaps": [
     {
       "interest": "Hopp — FIS hopp-verdenscupåpningen Lillehammer (20.–22. nov) + Ruka (28. nov)",
-      "whatsMissing": "FIS hopp-verdenscup 2026/27 åpner i Lillehammer (Lysgårdsbakken HS140): mixed team fre. 20. nov + individuelt 21.–22. nov. Fortsatt null hopp-events på tavla. Ruka 28. nov også i horisonten. ~10–12 d ut.",
-      "why": "Pass B / sesongoppvåkning. Hopp er catalog-tier1 (wholesale) uten statisk fetcher og uten authority.json contract-blokk som dekker nov-åpningen (contract-blokkene finnes kun for des–feb-kjernen) → research-avhengig. Web-bekreftet denne kjøringen: FIS-kalenderen + Wikipedia 2026/27 + allsportdb gir mixed team 20. nov, individuelt 21.–22. nov, Ruka 28. nov. Cadence-fyllet virker (Levi alpint boardet ~10 d før renn), men dette er nå den NÆRMESTE vintersport-åpningen.",
+      "whatsMissing": "FIS hopp-verdenscup 2026/27 åpner i Lillehammer (Lysgårdsbakken HS140): mixed team fre. 20. nov + individuelt 21.–22. nov. Fortsatt null hopp-events på tavla. Ruka 28. nov også i horisonten. ~9 d ut — den NÆRMESTE vintersport-åpningen og den første harde fristen.",
+      "why": "Pass B / sesongoppvåkning. Hopp er catalog-tier1 (wholesale) uten statisk fetcher og uten authority.json contract-blokk som dekker nov-åpningen (contract-blokkene finnes kun for des–feb-kjernen) → research-avhengig. RE-VERIFISERT denne kjøringen: FIS (menn-utkastkalender + sesongåpning-nyhet) + Wikipedia 2026/27 + allsportdb + SnowTrex gir mixed team fre. 20. nov, individuelt 21.–22. nov, Ruka 28.–29. nov. Cadence-fyllet virker (Levi alpint + Gurgl alpint boardet ~7–10 d før renn), men dette er nå den nærmeste uboardede åpningen.",
       "corroboration": [
         "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Ski_Jumping_World_Cup",
+        "https://www.fis-ski.com/ski-jumping/news/2025-26/first-womens-four-hills-tournament-confirmed-at-fis-spring-meetings",
         "https://allsportdb.com/Events/2027-Ski-Jumping-World-Cup-20506"
       ],
       "suggestedSource": "https://www.fis-ski.com/",
       "severity": "medium",
       "firstSeen": "2026-10-24T08:45:00Z",
-      "recurrences": 16,
-      "severityBumpedFor": "recall-exhaustion-regelen passert (recurrences 16) — men BEVISST HOLDT på medium: cadence-fyll ~10–12 d ut, research boarder Lillehammer-åpningen ~15.–17. nov (samme mønster som Levi). HARD FRIST nærmer seg: hvis hopp FORTSATT uboardet etter ~17. nov (~3 d før renn), behandle som ekte high-miss (fetcher-/cadence-svikt). Kanal: NRK.",
-      "note": "Carry-forward fra 24.10–09.11 (recurrences 15→16). Den nærmeste vintersport-åpningen i horisonten — overvåk tett de neste 5–7 dagene."
+      "recurrences": 17,
+      "severityBumpedFor": "recall-exhaustion-regelen passert (recurrences 17) — men BEVISST HOLDT på medium: cadence-fyll ~9 d ut, research boarder Lillehammer-åpningen ~15.–17. nov (samme mønster som Levi/Gurgl). HARD FRIST nærmer seg: hvis hopp FORTSATT uboardet etter ~17. nov (~3 d før renn), behandle som ekte high-miss (fetcher-/cadence-svikt). Kanal: NRK.",
+      "note": "Carry-forward fra 24.10–10.11 (recurrences 16→17). Den nærmeste vintersport-åpningen i horisonten — overvåk tett de neste 3–5 dagene. Dato re-forankret til FIS denne kjøringen."
     },
     {
-      "interest": "Langrenn — VC-premieren Ruka (27.–29. nov) + norsk NRK-sesongåpning Beitostølen (~20.–22. nov, dato UBEKREFTET)",
-      "whatsMissing": "Langrenn-sesongen åpner uten noe på tavla: (a) FIS verdenscup-premieren Ruka/Kuusamo, Finland 27.–29. nov (10km klassisk + sprint klassisk + 20km fristil, ~17–19 d ut). (b) Den norske sesongåpningen Beitostølen (hele nasjonaltoppen inkl. Klæbo, NRK) — 2025/26 var Beitostølen en uttaksrenn-helg før Ruka; 2026/27-datoen er IKKE verdenscup og IKKE web-bekreftet denne kjøringen. Fortsatt null langrenn på tavla.",
-      "why": "Pass B / sesongoppvåkning. Langrenn er catalog-tier1 (wholesale) uten statisk fetcher og uten nov-contract-blokk → research-avhengig. Web-bekreftet denne kjøringen: Ruka er den offisielle VC-åpningen 27.–29. nov (proxcskiing + fasterskier + allsportdb). Beitostølen-åpningen (norsk, NRK) fant JEG IKKE en bekreftet 2026/27-dato for — research bør FØRST bekrefte den mot skiforbundet.no/NRK før boarding (ikke anta 2025-datoen).",
+      "interest": "Langrenn — VC-premieren Ruka (27.–29. nov) + norsk NRK-sesongåpning Beitostølen (dato UBEKREFTET)",
+      "whatsMissing": "Langrenn-sesongen åpner uten noe på tavla: (a) FIS verdenscup-premieren Ruka/Kuusamo, Finland 27.–29. nov (10km klassisk + sprint klassisk + 20km fristil, ~16–18 d ut). (b) Den norske sesongåpningen Beitostølen (hele nasjonaltoppen inkl. Klæbo, NRK) — 2026/27-datoen er IKKE verdenscup og IKKE web-bekreftet; research bør bekrefte mot skiforbundet.no/NRK før boarding. Fortsatt null langrenn på tavla.",
+      "why": "Pass B / sesongoppvåkning. Langrenn er catalog-tier1 (wholesale) uten statisk fetcher og uten nov-contract-blokk → research-avhengig. Ruka er den offisielle VC-åpningen 27.–29. nov (proxcskiing + fasterskier + allsportdb, uendret fra forrige kjøring). Beitostølen-åpningen (norsk, NRK) mangler bekreftet 2026/27-dato — research bør FØRST bekrefte den mot skiforbundet.no/NRK før boarding (ikke anta 2025-datoen).",
       "corroboration": [
         "https://www.proxcskiing.com/traditional-skiing/fis-unveils-2026-2027-cross-country-skiing-world-cup-calendar/",
         "https://allsportdb.com/Events/2027-FIS-Cross-Country-World-Cup-20528"
@@ -28,29 +29,28 @@
       "suggestedSource": "https://www.fis-ski.com/",
       "severity": "medium",
       "firstSeen": "2026-10-28T09:45:00Z",
-      "recurrences": 12,
-      "severityBumpedFor": "recall-exhaustion-regelen passert (recurrences 12) — BEVISST HOLDT på medium: Ruka-VC-premieren er cadence-fyll ~17–19 d ut (research boarder ~22.–24. nov). HARD FRIST: hvis langrenn uboardet etter ~22. nov, ekte miss. Kanal: NRK.",
-      "note": "Carry-forward fra 28.10–09.11 (recurrences 11→12). ENDRING denne kjøringen: Beitostølen-komponenten MYKNET — søk fant ingen bekreftet 2026/27 Beitostølen-VC-dato (2025 var uttaksrenn før Ruka, knyttet til OL-sesongen). Ruka 27.–29. nov står fjellstøtt som den konkrete åpningen å boarde."
+      "recurrences": 13,
+      "severityBumpedFor": "recall-exhaustion-regelen passert (recurrences 13) — BEVISST HOLDT på medium: Ruka-VC-premieren er cadence-fyll ~16–18 d ut (research boarder ~22.–24. nov). HARD FRIST: hvis langrenn uboardet etter ~22. nov, ekte miss. Kanal: NRK.",
+      "note": "Carry-forward fra 28.10–10.11 (recurrences 12→13). Beitostølen-komponenten fortsatt myknet (ingen bekreftet 2026/27-dato); Ruka 27.–29. nov står som den konkrete åpningen å boarde."
     },
     {
-      "interest": "Alpint — Verdenscupen fortsetter Gurgl (21.–22. nov) + Copper Mountain (28.–29. nov)",
-      "whatsMissing": "Levi-slalåmene (kvinner 14. nov, menn 15. nov) STÅR BOARDET (ai-research, se coveredWell). GJENSTÅR i horisonten: Gurgl, Østerrike (slalåm kvinner 21. nov / menn 22. nov, ~11–12 d ut) og Copper Mountain, USA (super-G/storslalåm 28.–29. nov). Fortsatt null alpint-VC utover Levi på tavla.",
-      "why": "Pass B / sesong-fortsettelse. Alpint er catalog-tier1 (wholesale) UTEN statisk fetcher og UTEN nov-contract-blokk → research-avhengig, men cadence-fyllet VIRKER (Levi boardet ~10 d før renn). Web-bekreftet denne kjøringen: Gurgls offisielle event-side + PlanetSKI provisorisk kalender gir kvinner 21. nov / menn 22. nov; Copper Mountain 28.–29. nov. Kanal: NRK.",
+      "interest": "Alpint — Verdenscupen fortsetter Copper Mountain (28.–29. nov)",
+      "whatsMissing": "Levi-slalåmene (14.–15. nov) OG Gurgl (slalåm kvinner 21. / menn 22. nov) STÅR NÅ BOARDET (ai-research, se coveredWell). GJENSTÅR i horisonten: Copper Mountain, USA (super-G/storslalåm 28.–29. nov, ~17–18 d ut). Substansen i dette gapet er dermed REDUSERT til Copper alene.",
+      "why": "Pass B / sesong-fortsettelse. Alpint er catalog-tier1 (wholesale) UTEN statisk fetcher og UTEN nov-contract-blokk → research-avhengig, men cadence-fyllet VIRKER dokumentert (Levi + Gurgl begge boardet ~7–10 d før renn). Copper Mountain 28.–29. nov står i PlanetSKIs provisoriske kalender. Kanal: NRK.",
       "corroboration": [
-        "https://www.gurgl.com/winter/events/ski-opening.html",
         "https://planetski.eu/2026/05/11/provisional-calendar-for-2026-27-alpine-ski-racing-unveiled/"
       ],
       "suggestedSource": "https://www.fis-ski.com/",
       "severity": "medium",
       "firstSeen": "2026-10-27T09:30:00Z",
-      "recurrences": 13,
-      "severityBumpedFor": "recall-exhaustion-regelen passert (recurrences 13) — HOLDES på medium: substansen redusert (Levi boardet, den harde fristen innfridd), gjenstår kun Gurgl/Copper cadence-fyll. Gurgl cadence ~18.–19. nov. Hvis Gurgl FORTSATT uboardet etter ~19. nov, ekte miss.",
-      "note": "Carry-forward fra 27.10–09.11 (recurrences 12→13). Levi 14.–15. nov fortsatt boardet (ai-research). Kanal: NRK."
+      "recurrences": 14,
+      "severityBumpedFor": "recall-exhaustion-regelen passert (recurrences 14) — HOLDES på medium: substansen ytterligere redusert denne kjøringen (Gurgl nå boardet, kun Copper gjenstår), de harde fristene for Levi+Gurgl innfridd. Copper cadence ~21.–25. nov. Hvis Copper FORTSATT uboardet etter ~26. nov, ekte miss.",
+      "note": "Carry-forward fra 27.10–10.11 (recurrences 13→14). ENDRING: Gurgl 21.–22. nov nå BOARDET (ai-research) — cadence-fyllet traff igjen. Kun Copper gjenstår. Kanal: NRK."
     },
     {
       "interest": "Skiskyting — IBU VC-premieren Kontiolahti (26.–29. nov, NRK, tier1 wholesale)",
-      "whatsMissing": "IBU skiskyting-verdenscup 2026/27 åpner i Kontiolahti, Finland 26.–29. nov (menn 20km 26., kvinner 15km 27., stafetter 28., sprinter 29.) — innenfor horisonten (~16–19 d ut), fortsatt null skiskyting på tavla. Åpningen er Kontiolahti, IKKE Östersund (Östersund er mars 2027).",
-      "why": "Pass B / sesongoppvåkning. Skiskyting er catalog-tier1 (wholesale) uten statisk fetcher og uten nov-contract-blokk → research-avhengig. Web-bekreftet denne kjøringen mot Kontiolahtis egen program-side + Snow-Online (oppdatert mai 2026) + allsportdb: 26.–29. nov (noen medie-sider gir 23.–/24.–29., men arrangøren + nyeste kalender gir 26.–29.). Hochfilzen 4.–6. des utenfor horisonten.",
+      "whatsMissing": "IBU skiskyting-verdenscup 2026/27 åpner i Kontiolahti, Finland 26.–29. nov (menn 20km 26., kvinner 15km 27., stafetter 28., sprinter 29.) — innenfor horisonten (~15–18 d ut), fortsatt null skiskyting på tavla. Åpningen er Kontiolahti, IKKE Östersund (Östersund er mars 2027). Hochfilzen 4.–6. des er neste stopp (nå så vidt innenfor horisonten) — følger av åpningen.",
+      "why": "Pass B / sesongoppvåkning. Skiskyting er catalog-tier1 (wholesale) uten statisk fetcher og uten nov-contract-blokk → research-avhengig. Uendret fra forrige kjøring (web-forankret til arrangørens program-side + Snow-Online + allsportdb): 26.–29. nov. Hochfilzen 4.–6. des.",
       "corroboration": [
         "https://kontiolahtibiathlon.com/en/kontiolahti-biathlon-world-cup/program-and-tickets",
         "https://en.wikipedia.org/wiki/2026%E2%80%9327_Biathlon_World_Cup"
@@ -58,14 +58,14 @@
       "suggestedSource": "https://www.biathlonworld.com/",
       "severity": "medium",
       "firstSeen": "2026-10-31T10:10:00Z",
-      "recurrences": 9,
-      "severityBumpedFor": "recall-exhaustion-regelen passert (recurrences 9) — BEVISST HOLDT på medium: cadence-fyll ~16–19 d ut (research boarder Kontiolahti ~22.–24. nov). En high-bump ville trigget en falsk deep-eskalering for et event ~2,5 uker ut. Kanal: NRK.",
-      "note": "Carry-forward fra 31.10–09.11 (recurrences 8→9). Eksakt åpningsdato nå web-forankret til 26. nov (arrangørens program-side). Knyttet til den stående vintersport-fetcher-sourceIssue."
+      "recurrences": 10,
+      "severityBumpedFor": "recall-exhaustion-regelen passert (recurrences 10) — BEVISST HOLDT på medium: cadence-fyll ~15–18 d ut (research boarder Kontiolahti ~22.–24. nov). En high-bump ville trigget en falsk deep-eskalering for et event ~2,5 uker ut. Kanal: NRK.",
+      "note": "Carry-forward fra 31.10–10.11 (recurrences 9→10). Hochfilzen 4.–6. des krysset så vidt inn i 28-d-horisonten denne kjøringen, men er downstream av åpningen — boardes som del av sesong-cadence når Kontiolahti er inne. Knyttet til den stående vintersport-fetcher-sourceIssue."
     },
     {
       "interest": "Esport/CS2 — PGL Major Singapore 2026 (Stage 1 ~24.–27. nov) — 100 Thieves kvalifisert",
-      "whatsMissing": "PGL Major Singapore (Singapore Indoor Stadium) — Stage 1 (16 lag, sveitsersystem) ~24.–27. nov, i horisonten (~14–17 d ut). 100 Thieves (rain / Håvard Nygaard — fokuslaget) kvalifiserte seg via FiRe Last Chance 1. nov (bekreftet tidligere kjøringer mot strafe.com). Fortsatt ikke på tavla. 'CS2 Major' er en navngitt katalog-tier2-turnering (esports).",
-      "why": "Pass B / sesongoppvåkning + strukturelt CS2-fetcher-hull. Liquipedia-fetcheren (esports.js) beholder KUN fokuslaget 100 Thieves' kamper → siden 100T er kvalifisert BØR fetcheren fange 100T's Stage 1-kamper mekanisk når Liquipedia legger ut programmet; øvrige majorkamper forblir ai-research. Web-bekreftet denne kjøringen: Stage 1 ~24.–27. nov (kildene spriker 23.–/24.–/25.-start; sluttspill Singapore Indoor Stadium, finale 13. des). 100T's eksakte stage/motstander ikke bekreftet i dagens søk — bekreft mot Liquipedia/HLTV.",
+      "whatsMissing": "PGL Major Singapore (Singapore Indoor Stadium) — Stage 1 (16 lag, sveitsersystem) ~24.–27. nov, i horisonten (~13–16 d ut). 100 Thieves (rain / Håvard Nygaard — fokuslaget) kvalifiserte seg via FiRe Last Chance 1. nov. Fortsatt ikke på tavla. 'CS2 Major' er en navngitt katalog-tier2-turnering (esports). esports.json tom denne kjøringen (file-empty, low — IEM Beijing avsluttet, intet 100T-program lagt ut ennå).",
+      "why": "Pass B / sesongoppvåkning + strukturelt CS2-fetcher-hull. Liquipedia-fetcheren (esports.js) beholder KUN fokuslaget 100 Thieves' kamper → siden 100T er kvalifisert BØR fetcheren fange 100T's Stage 1-kamper mekanisk når Liquipedia legger ut programmet; øvrige majorkamper forblir ai-research. Uendret fra forrige kjøring: Stage 1 ~24.–27. nov (kildene spriker 23.–/24.–/25.-start; finale 13. des). 100T's eksakte stage/motstander ikke bekreftet — bekreft mot Liquipedia/HLTV.",
       "corroboration": [
         "https://www.globalgameguide.com/article/pgl-cs2-major-singapore-2026-guide",
         "https://www.esports.net/news/counter-strike/pgl-announces-cs2-major-singapore-2026-first-major-in-southeast-asia"
@@ -73,14 +73,14 @@
       "suggestedSource": "https://liquipedia.net/counterstrike/PGL/Major/2026/Singapore",
       "severity": "medium",
       "firstSeen": "2026-10-30T10:05:00Z",
-      "recurrences": 10,
-      "severityBumpedFor": "recall-exhaustion-regelen passert (recurrences 10) — BEVISST HOLDT på medium: cadence-fyll ~14–17 d ut. HARD FRIST: hvis uboardet etter ~20. nov (Stage 1 ~4 d ut), ekte high-miss. BEKREFT eksakt Stage 1-dato + 100T's første kamp mot Liquipedia/HLTV. Streaming: Twitch/YouTube (PGL offisiell); ingen norsk TV-rettighet ventet.",
-      "note": "Carry-forward fra 30.10–09.11 (recurrences 9→10). Knyttet til CS2-fetcher-sourceIssue. Verifiser at fetcheren FAKTISK fanger 100T's majorkamper når Liquipedia-programmet er ute (ellers er 100T-only-filteret skjørere enn antatt)."
+      "recurrences": 11,
+      "severityBumpedFor": "recall-exhaustion-regelen passert (recurrences 11) — BEVISST HOLDT på medium: cadence-fyll ~13–16 d ut. HARD FRIST: hvis uboardet etter ~20. nov (Stage 1 ~4 d ut), ekte high-miss. BEKREFT eksakt Stage 1-dato + 100T's første kamp mot Liquipedia/HLTV. Streaming: Twitch/YouTube (PGL offisiell); ingen norsk TV-rettighet ventet.",
+      "note": "Carry-forward fra 30.10–10.11 (recurrences 10→11). Knyttet til CS2-fetcher-sourceIssue. Verifiser at fetcheren FAKTISK fanger 100T's majorkamper når Liquipedia-programmet er ute (ellers er 100T-only-filteret skjørere enn antatt)."
     },
     {
       "interest": "Sjakk — klassisk VM 2026 Gukesh–Sindarov (Genève, åpning 22. nov, parti 1 24. nov)",
-      "whatsMissing": "Sjakk-VM 2026 (klassisk VM-kamp) mellom regjerende mester Gukesh D (India) og utfordrer Javokhir Sindarov (Usbekistan) i Genève (Fondation Martin Bodmer, Cologny) står IKKE på tavla. Åpningsseremoni 22. nov, parti 1 24. nov, t.o.m. parti 14 ~11. des — kampstarten i horisonten (~14 d ut). 'World Chess Championship' er en katalog-tier2-turnering.",
-      "why": "Pass B / sesongoppvåkning + tracked-claim (world-chess-championship-2026). Verdens største sjakk-event og en navngitt katalog-turnering → admitteres selv om Carlsen IKKE spiller. Lavere personlig krok for en norsk fan (ingen nordmann), derav medium. Web-bekreftet denne kjøringen mot worldchess.com + Khel Now (oppdatert 9. okt) + 365chess: parti 1 = 24. nov, Genève, opp til 14 klassiske partier. NB: Carlsens EGEN neste fixture (Total Chess VM-pilot gruppespill, fra 11. nov) STÅR boardet (coveredWell).",
+      "whatsMissing": "Sjakk-VM 2026 (klassisk VM-kamp) mellom regjerende mester Gukesh D (India) og utfordrer Javokhir Sindarov (Usbekistan) i Genève (Fondation Martin Bodmer, Cologny) står IKKE på tavla. Åpningsseremoni 22. nov, parti 1 24. nov, t.o.m. parti 14 ~11. des — kampstarten i horisonten (~13 d ut). 'World Chess Championship' er en katalog-tier2-turnering.",
+      "why": "Pass B / sesongoppvåkning + tracked-claim (world-chess-championship-2026). Verdens største sjakk-event og en navngitt katalog-turnering → admitteres selv om Carlsen IKKE spiller. Lavere personlig krok for en norsk fan (ingen nordmann), derav medium. Uendret fra forrige kjøring (worldchess.com + Khel Now + 365chess): parti 1 = 24. nov, Genève, opp til 14 klassiske partier. NB: Carlsens EGEN neste fixture (Total Chess VM-pilot gruppespill, fra 11. nov) STÅR boardet (coveredWell).",
       "corroboration": [
         "https://worldchess.com/news/gukesh-vs-sindarov-everything-you-need-to-know-about-the-2026-world-chess-championship",
         "https://khelnow.com/chess/dates-announced-fide-world-championship-match-202610"
@@ -88,30 +88,16 @@
       "suggestedSource": "https://worldchess.com/",
       "severity": "medium",
       "firstSeen": "2026-10-29T10:00:00Z",
-      "recurrences": 11,
-      "severityBumpedFor": "recall-exhaustion-regelen passert (recurrences 11) — BEVISST HOLDT på medium: cadence-fyll ~14 d ut (research boarder ~18.–20. nov), allerede tracked + planlagt. En bump ville trigget en falsk deep-eskalering. HARD FRIST: hvis uboardet etter ~22. nov (parti 1 ~2 d ut), ekte high-miss. Streaming: gratis worldchess.com + chess.com/FIDE YouTube — ingen norsk TV-rettighet.",
-      "note": "Carry-forward fra 29.10–09.11 (recurrences 10→11)."
-    },
-    {
-      "interest": "Fotball — Brann i Conference League ligafase MD4 hjemme mot Aarhus (tor. 26. nov)",
-      "whatsMissing": "Branns (norsk katalog-lag) Conference League-ligafase MD4 HJEMME mot Aarhus (AGF) tor. 26. nov kl. 18.45 CET på Brann Stadion står IKKE på tavla — ~16 d ut, innenfor horisonten. MD3 (Sint-Truidense–Brann 5. nov borte) ER boardet (ai-research, spilt).",
-      "why": "Pass B / sesong-fortsettelse + strukturelt EL/ECL-hull. ESPN-fetcheren leverer NÅ Champions League wholesale som static, MEN Europa League + Conference League hentes fortsatt ikke → Branns ECL-kamper håndboardes av research. Norsk katalog-lag i Europa = høy fan-krok, men MD4 ~16 d ut = cadence-fyll.",
-      "corroboration": [
-        "https://www.uefa.com/uefaconferenceleague/clubs/52770--brann/matches/"
-      ],
-      "suggestedSource": "https://www.uefa.com/uefaconferenceleague/clubs/52770--brann/matches/",
-      "severity": "medium",
-      "firstSeen": "2026-10-29T10:00:00Z",
-      "recurrences": 11,
-      "severityBumpedFor": "recurred (low→medium per recall-exhaustion-regelen ved recurrences 3 den 01.11) — ingen eskalering (ikke high); cadence-fyll. Research bør boarde Brann–Aarhus 26. nov på kadens ~22.–24. nov, BEKREFT tid/venue mot uefa.com (primær-autoritet, calibration 1.0). Kanal: Viaplay.",
-      "note": "Carry-forward fra 29.10–09.11 (recurrences 10→11). Substans uendret (MD3 spilt 5. nov, bare MD4 gjenstår)."
+      "recurrences": 12,
+      "severityBumpedFor": "recall-exhaustion-regelen passert (recurrences 12) — BEVISST HOLDT på medium: cadence-fyll ~13 d ut (research boarder ~18.–20. nov), allerede tracked + planlagt. En bump ville trigget en falsk deep-eskalering. HARD FRIST: hvis uboardet etter ~22. nov (parti 1 ~2 d ut), ekte high-miss. Streaming: gratis worldchess.com + chess.com/FIDE YouTube — ingen norsk TV-rettighet.",
+      "note": "Carry-forward fra 29.10–10.11 (recurrences 11→12)."
     }
   ],
   "sourceIssues": [
     {
-      "source": "Statisk pipeline — INGEN wholesale vintersport-fetcher (STRUKTURELT, ROT-ÅRSAK for fire horisont-hull)",
-      "issue": "Alpint, hopp, langrenn OG skiskyting er alle catalog-tier1 (wholesale) men har INGEN statisk fetcher OG ingen authority.json contract-blokk som dekker nov-åpningene (contract-blokkene finnes KUN for des–feb-kjernen, nov bevisst utenfor months) → HELE vintersesongen håndboardes renn-for-renn av research. Vintersesongen våkner NÅ: alpint Levi BOARDET (14.–15. nov) — cadence-fyllet virker — men hopp Lillehammer 20. nov, langrenn Ruka-VC 27. nov, alpint Gurgl 21. nov og skiskyting Kontiolahti 26. nov ligger uboardet i horisonten. De harde fristene (~17.–22. nov) nærmer seg; hopp (~17. nov) er den nærmeste.",
-      "impact": "Argument (HIGH, stigende mot des–mars) for en FIS/IBU-fetcher ELLER utvidede authority.json contract-blokker som dekker ÅPNINGENE (nov), ikke bare des–feb-kjernen. Uten mekanisk fangst er recall helt avhengig av at research treffer cadence-vinduet hvert renn (Levi beviser at det kan fungere, ingen garanti). Self-repair/improve-sak.",
+      "source": "Statisk pipeline — INGEN wholesale vintersport-fetcher (STRUKTURELT, ROT-ÅRSAK for de fire vintersport-horisont-hullene)",
+      "issue": "Alpint, hopp, langrenn OG skiskyting er alle catalog-tier1 (wholesale) men har INGEN statisk fetcher OG ingen authority.json contract-blokk som dekker nov-åpningene (contract-blokkene finnes KUN for des–feb-kjernen, nov bevisst utenfor months) → HELE vintersesongen håndboardes renn-for-renn av research. Vintersesongen våkner NÅ: alpint Levi (14.–15. nov) OG Gurgl (21.–22. nov) BEGGE BOARDET — cadence-fyllet treffer gjentatte ganger — men hopp Lillehammer 20. nov, langrenn Ruka-VC 27. nov, alpint Copper 28. nov og skiskyting Kontiolahti 26. nov ligger uboardet i horisonten. De harde fristene (~17.–26. nov) nærmer seg; hopp (~17. nov) er den nærmeste.",
+      "impact": "Argument (HIGH, stigende mot des–mars) for en FIS/IBU-fetcher ELLER utvidede authority.json contract-blokker som dekker ÅPNINGENE (nov), ikke bare des–feb-kjernen. Uten mekanisk fangst er recall helt avhengig av at research treffer cadence-vinduet hvert renn (Levi+Gurgl beviser at det kan fungere gjentatte ganger, men ingen garanti). Self-repair/improve-sak.",
       "severity": "high"
     },
     {
@@ -122,26 +108,26 @@
     },
     {
       "source": "Statisk pipeline — ingen wholesale håndball-fetcher (STRUKTURELT, carry-forward)",
-      "issue": "Håndball er catalog-tier1 (wholesale) men har INGEN statisk fetcher OG ingen authority.json contract-blokk → ALL håndball håndboardes runde-for-runde av research. DENNE kjøringen er dekningen god: NM-cupen semifinale Kolstad–Bergen 11. nov boardet + kvinnenes EHF EURO 2026 Norge-gruppekamper (4.+6.+8. des) boardet. handball-count 20.",
+      "issue": "Håndball er catalog-tier1 (wholesale) men har INGEN statisk fetcher OG ingen authority.json contract-blokk → ALL håndball håndboardes runde-for-runde av research. DENNE kjøringen er dekningen god: NM-cupen semifinale Kolstad–Bergen 11. nov boardet + kvinnenes EHF EURO 2026 Norge-gruppekamper (4.+6.+8. des) boardet.",
       "impact": "Argument (HIGH) for en handball.no/eurohandball-fetcher ELLER authority.json contract-blokker for Elkjøp-ligaen menn+kvinner + EHF CL + mesterskap. Self-repair/improve-sak.",
       "severity": "high"
     },
     {
       "source": "ESPN-golf-fetcher (golf.json) — INGEN look-ahead (STRUKTURELT, carry-forward)",
-      "issue": "golf.json inneholder kun INNEVÆRENDE ukes turnering(er), ingen fremtidsdekning. Hver DP World/PGA-turnering med en tracked golfer (Hovland/Ventura/Reitan) risikerer å mangle til research manuelt boarder den. Dekning god nå: Austin Championship + DP World Tour Championship 12. nov + The RSM Classic 19. nov boardet (static).",
+      "issue": "golf.json inneholder kun INNEVÆRENDE ukes turnering(er), ingen fremtidsdekning. Hver DP World/PGA-turnering med en tracked golfer (Hovland/Ventura/Reitan) risikerer å mangle til research manuelt boarder den. Dekning god nå: Austin Championship + DP World Tour Championship 12. nov (sesongfinale Dubai) + The RSM Classic 19. nov boardet (static).",
       "impact": "Argument (HIGH) for at golf-fetcheren henter neste 2–3 ukers DP World Tour + PGA Tour-kalender, ELLER en authority.json contract-blokk som måler NESTE turnering. Self-repair/improve-sak.",
       "severity": "high"
     },
     {
       "source": "ESPN-fetcheren — INGEN Europa League / Conference League-endepunkt (STRUKTURELT, carry-forward — CL-halvdelen LØST)",
-      "issue": "ESPN-fetcheren leverer NÅ Champions League wholesale som static, men uefa.europa + uefa.conference hentes fortsatt IKKE. Derfor håndboardes alle EL/ECL-runder av research. Konkret: Branns Conference League MD3 (5. nov, boardet) + MD4 (26. nov, gap).",
+      "issue": "ESPN-fetcheren leverer NÅ Champions League wholesale som static, men uefa.europa + uefa.conference hentes fortsatt IKKE. Derfor håndboardes alle EL/ECL-runder av research. Konkret: Branns Conference League MD3 (5. nov, boardet) + MD4 (Brann–Aarhus 26. nov) — MD4 NÅ BOARDET denne kjøringen (ai-research), så det konkrete hullet er fylt, men mekanismen består.",
       "impact": "Argument (MEDIUM, nedgradert fra HIGH — CL-halvdelen er løst) for at ESPN-fetcheren får uefa.europa + uefa.conference-endepunktene, ELLER authority.json contract-blokker for EL/ECL. Self-repair/improve-sak.",
       "severity": "medium"
     },
     {
-      "source": "WP-243 dekningskontrakt PL + Eliteserien — FIFA-landslagspause-miscalibration: FIKSET (RESOLVED 10.11)",
-      "issue": "09.11 fyrte football:premier-league + football:eliteserien HIGH contract-breach fordi 14-d-horisonten overgikk ESPN-fetcherens ~5–6-d look-ahead under FIFA-pausen (begge triagert som FALSKE brudd i forrige audit). DENNE kjøringen viser coverage-contracts.json begge som status='break' (inSeason=true, upcoming=0) — IKKE 'breached' — og coverage-gaps.json har INGEN contract-breach-gap. Dvs. kontraktmodellen gjenkjenner nå landslagspausen og fyrer ikke falskt brudd. Den strukturelle miscalibration-sourceIssue fra 09.11 ser dermed ADRESSERT ut.",
-      "impact": "RESOLVED/verifiser: ingen handling kreves denne kjøringen. Bekreft at 'break'-statusen holder gjennom resten av pausen og at ekte brudd fortsatt fanges når ligaene gjenopptas (PL matchweek 11 = 21.–23. nov, Eliteserien neste runde 21. nov — begge web-bekreftet forrige audit, boardes på kadens ~16.–18. nov).",
+      "source": "WP-243 dekningskontrakt PL + Eliteserien — FIFA-landslagspause-miscalibration: FIKSET (RESOLVED 10.11, re-bekreftet 11.11)",
+      "issue": "coverage-contracts.json viser PL + Eliteserien status='break' (inSeason-pause korrekt gjenkjent) og coverage-gaps.json har INGEN contract-breach-gap denne kjøringen — kontraktmodellen fyrer ikke falskt brudd under FIFA-pausen. Den strukturelle miscalibration fra 09.11 forblir adressert.",
+      "impact": "RESOLVED/verifiser: ingen handling. Bekreft at ekte brudd fortsatt fanges når ligaene gjenopptas: PL matchweek 11 = 21.–23. nov, Eliteserien neste runde ~21. nov — begge boardes på kadens ~16.–18. nov; kontraktene bør da gå fra 'break' tilbake til 'met'.",
       "severity": "low"
     },
     {
@@ -152,25 +138,25 @@
     }
   ],
   "coveredWell": [
-    "F1 — ESPN-BLINDSONE OVERVÅKET (source-quirks-mandat): INGEN F1-renn denne helgen (São Paulo spilt 8. nov). Neste renn Las Vegas 20.–22. nov boardet (static) + Qatar 29. nov + Abu Dhabi 6. des. Korrekt tomt denne helgen — ESPN-blindsonen biter ikke. Kontrakten f1:world-championship status=met (upcoming 3).",
-    "FOTBALL — IMMINENT KOMPLETT (10.–14. nov): Copa del Rey-runder 10.–13. nov boardet wholesale (static). FIFA-landslagsvindu boardet: Norge–Wales 14. nov + Danmark–Norge 17. nov (ai-research). PL + Eliteserien i landslagspause (neste runder 21. nov, boardes på kadens) — kontraktene status='break', ingen falskt brudd.",
-    "FOTBALL/UEFA — CHAMPIONS LEAGUE STATIC fungerer (ESPN uefa.champions produserer wholesale).",
-    "ALPINT — LEVI BOARDET (cadence-fyllet virker): slalåm kvinner 14. nov + menn 15. nov (ai-research). Gjenstår Gurgl 21.–22. nov + Copper 28.–29. nov som horisont-medium (se gap).",
-    "HÅNDBALL — NM-CUPEN semifinale Kolstad–Bergen ons. 11. nov boardet (ai-research). KVINNENES EHF EURO 2026 Norge-gruppekamper boardet (Norge–Romania 4. des, Norge–Sveits 6. des, Nord-Makedonia–Norge 8. des). handball-count 20.",
-    "GOLF — Austin Championship + DP World Tour Championship 12. nov + The RSM Classic 19. nov boardet (static). Golf-fetcherens look-ahead-mangel består som HIGH sourceIssue, men de konkrete hullene er fylt. Kontraktene golf:dp-world-tour + golf:pga-tour status=met.",
-    "TENNIS — Casper Ruud (Nitto ATP Finals, Torino) boardet (11. + 14. nov) — Ruuds neste konkurranse på tavla. Kontrakten tennis:tour status=met (upcoming 3).",
+    "F1 — ESPN-BLINDSONE OVERVÅKET (source-quirks-mandat, RE-VERIFISERT denne kjøringen mot racingnews365/formula1/gpfans): INGEN F1-renn denne helgen (14.–16. nov — São Paulo spilt 8. nov, Las Vegas-helgen starter torsdag 19. nov). Neste renn Las Vegas 20.–22. nov boardet (static) + Qatar 29. nov + Abu Dhabi 6. des. Korrekt tomt denne helgen — ESPN-blindsonen biter ikke. Kontrakten f1:world-championship status=met (upcoming 3).",
+    "FOTBALL — IMMINENT KOMPLETT (11.–15. nov): Copa del Rey-runder 12.–13. nov boardet wholesale (static). FIFA-landslagsvindu boardet: Norge–Wales (VM-kval) 14. nov + Danmark–Norge 17. nov (ai-research). PL + Eliteserien i landslagspause (neste runder ~21.–23. nov, boardes på kadens) — kontraktene status='break', ingen falskt brudd.",
+    "FOTBALL/UEFA — CHAMPIONS LEAGUE STATIC fungerer (ESPN uefa.champions produserer wholesale). CONFERENCE LEAGUE: Brann–Aarhus MD4 (26. nov) NÅ BOARDET (ai-research) — forrige kjørings medium-gap fylt.",
+    "ALPINT — LEVI + GURGL BEGGE BOARDET (cadence-fyllet treffer gjentatte ganger): Levi slalåm kvinner 14. nov + menn 15. nov; Gurgl slalåm kvinner 21. nov + menn 22. nov (alle ai-research). Gjenstår kun Copper Mountain 28.–29. nov som horisont-medium (se gap).",
+    "HÅNDBALL — NM-CUPEN semifinale Kolstad–Bergen ons. 11. nov boardet (ai-research). KVINNENES EHF EURO 2026 Norge-gruppekamper boardet (Norge–Romania 4. des, Norge–Sveits 6. des, Nord-Makedonia–Norge 8. des).",
+    "GOLF — Austin Championship + DP World Tour Championship 12.–15. nov (sesongfinale Dubai) + The RSM Classic 19. nov boardet (static). Golf-fetcherens look-ahead-mangel består som HIGH sourceIssue, men de konkrete hullene er fylt. Kontraktene golf:dp-world-tour + golf:pga-tour status=met.",
+    "TENNIS — Casper Ruud (Nitto ATP Finals, Torino) boardet (11. + 14. nov) — Ruuds neste konkurranse på tavla. Kontrakten tennis:tour status=met.",
     "SJAKK — Carlsens neste bekreftede fixture (Total Chess VM-pilot, Budapest gruppespill fra 11. nov) på tavla som ai-research (next-fixture-mandat). Klassisk Sjakk-VM 2026 (Gukesh–Sindarov, parti 1 24. nov) mangler (se medium-gap).",
     "ESPORT/CS2 — IEM Beijing avsluttet. 100 Thieves/rain KVALIFISERT til PGL Major Singapore → neste store 100T-event = Major Stage 1 ~24.–27. nov (se medium-gap).",
     "SYKKEL — WorldTour-sesongen slutt etter Tour of Guangxi 18. okt — korrekt tomt (cycling.json file-empty = off-season, ikke død fetcher).",
-    "DEKNINGSKONTRAKTER (WP-243): F1/DP World Tour/PGA Tour/ATP-WTA status=met. PL + Eliteserien status='break' (landslagspause korrekt gjenkjent — INGEN falskt brudd denne kjøringen, forrige kjørings miscalibration adressert). Vinter-kontraktene off-season (nov-åpningene bevisst utenfor months)."
+    "DEKNINGSKONTRAKTER (WP-243): F1/DP World Tour/PGA Tour/ATP-WTA status=met. PL + Eliteserien status='break' (landslagspause korrekt gjenkjent — INGEN falskt brudd). Vinter-kontraktene off-season (nov-åpningene bevisst utenfor months)."
   ],
   "escalated": false,
   "notes": [
-    "Kjøring 2026-11-10 (recall-audit, tirsdag). INGEN ekte HIGH imminent recall-gap → INGEN eskalering (escalate.request ikke skrevet). Alle syv gap er medium cadence-fyll-horisont-hull (vintersport-åpninger + CS2 Major + Sjakk-VM + Brann ECL), alle ~10–19 d ut med harde frister ~17.–24. nov som ennå ikke er nådd. En high-bump på noen av dem nå ville trigget en falsk deep-eskalering for events ~2–2,5 uker ut.",
-    "IMMINENT-PASS (neste ~4 d, 10.–14. nov — trust-no-single-source): (1) F1: INGEN renn denne helgen (São Paulo spilt 8. nov, Las Vegas 20. nov boardet) — ESPN-blindsonen biter ikke. (2) FOTBALL: Copa del Rey 10.–13. nov boardet; landslagsvindu Norge–Wales 14. nov boardet; PL/Eliteserien i pause. (3) HÅNDBALL: NM-cupen semi Kolstad–Bergen 11. nov boardet. (4) GOLF DP World/PGA 12. nov. (5) TENNIS Ruud ATP Finals 11./14. nov. (6) SJAKK Carlsen Total Chess 11. nov. (7) ALPINT Levi 14. nov. INGEN imminent miss.",
-    "WEB-VERIFISERT denne kjøringen (alle syv horisont-gap): hopp Lillehammer mixed team 20. nov + individuelt 21.–22. nov (FIS/Wikipedia/allsportdb); langrenn Ruka-VC 27.–29. nov (proxcskiing/fasterskier); alpint Gurgl kvinner 21./menn 22. nov + Copper 28.–29. nov (gurgl.com/PlanetSKI); skiskyting Kontiolahti 26.–29. nov (arrangørens program-side/Snow-Online); CS2 Major Stage 1 ~24.–27. nov (globalgameguide/esports.net); Sjakk-VM Gukesh–Sindarov parti 1 24. nov Genève (worldchess.com/Khel Now/365chess). Brann ECL MD4 26. nov via uefa.com (primær, calibration 1.0).",
-    "ENDRINGER SIDEN 09.11: (1) De to mekaniske HIGH contract-breach (PL + Eliteserien) er BORTE — contracts viser nå status='break', coverage-gaps har ingen contract-breach. Forrige kjørings HIGH miscalibration-sourceIssue ser ADRESSERT ut → nedgradert til low 'RESOLVED/verifiser'. (2) Langrenn-gapets Beitostølen-komponent MYKNET: dagens søk fant ingen bekreftet 2026/27 Beitostølen-VC-dato (2025 var uttaksrenn før Ruka) — Ruka 27.–29. nov står som den konkrete åpningen. (3) Alle carry-forward horisont-hull recurrences +1; ingen nye katalog-event krysset inn i 28-d-horisonten (nådde ~8. des: alt relevant alt boardet eller sporet).",
-    "VINTERSPORT ROT-ÅRSAK (uendret HIGH): alpint, hopp, langrenn og skiskyting er alle tier1 wholesale UTEN statisk fetcher og UTEN nov-contract-blokk → research-avhengige åpningshull. Levi beviser at cadence-fyllet treffer; hopp/langrenn/alpint-Gurgl/skiskyting gjenstår. Harde frister: hopp ~17. nov (nærmest), langrenn ~22. nov, alpint Gurgl ~19. nov, skiskyting ~22. nov. Neste ~5–10 dager avgjør om disse holder på medium eller må eskaleres.",
-    "KORREKTE FRAVÆR (ikke gap): coverage-gaps entity-gap 'Spirit' = Washington Spirit (NWSL), IKKE Team Spirit (esports) — falsk navnematch. Entity-gap Man City/Arsenal/Premier League/La Liga/Serie A = RSS-omtale under landslagspausen, ligaene gjenopptas 21.–22. nov (korrekt ikke imminent). tracked-claim-gap La Liga/OBOS/Eliteserien/Serie A/Bundesliga (claimedDate 2027) = sesong-wrapper tracked-entries med fjern utløp, ikke manglende events. Sykkel + esports file-empty = off-season / mellom-turnering (low), ikke døde fetchere."
+    "Kjøring 2026-11-11 (recall-audit, onsdag). INGEN ekte HIGH imminent recall-gap → INGEN eskalering (escalate.request ikke skrevet). Seks medium cadence-fyll-horisont-hull gjenstår (vintersport-åpninger + CS2 Major + Sjakk-VM), alle ~9–18 d ut med harde frister ~17.–26. nov som ennå ikke er nådd. En high-bump på noen av dem nå ville trigget en falsk deep-eskalering for events ~1,5–2,5 uker ut. Hopp (~9 d, hard frist ~17. nov) er den nærmeste å følge.",
+    "IMMINENT-PASS (neste ~4 d, 11.–15. nov — trust-no-single-source): (1) F1: INGEN renn denne helgen (São Paulo spilt 8. nov; Las Vegas-helgen starter 19. nov — re-verifisert mot web) — ESPN-blindsonen biter ikke. (2) FOTBALL: Copa del Rey 12.–13. nov boardet; VM-kval Norge–Wales 14. nov boardet; PL/Eliteserien i pause. (3) HÅNDBALL: NM-cupen semi Kolstad–Bergen 11. nov boardet. (4) GOLF DP World Tour Championship + Austin 12. nov. (5) TENNIS Ruud ATP Finals 11./14. nov. (6) SJAKK Carlsen Total Chess 11. nov. (7) ALPINT Levi 14.–15. nov. INGEN imminent miss.",
+    "ENDRINGER SIDEN 10.11 (to gap FYLT): (1) Alpint GURGL 21.–22. nov NÅ BOARDET (ai-research) — alpint-gapet redusert til kun Copper Mountain 28.–29. nov. (2) Fotball BRANN–AARHUS ECL MD4 26. nov NÅ BOARDET (ai-research) — Brann ECL-gapet DROPPET (fylt). Begge var medium cadence-fyll-hull forrige kjøring; cadence-fyllet traff som ventet. De seks gjenværende carry-forward-hullene +1 recurrence.",
+    "WEB-VERIFISERT denne kjøringen: (a) F1 — ingen renn 14.–16. nov, Las Vegas starter 19. nov (racingnews365/formula1/gpfans). (b) Hopp — Lillehammer mixed team 20. nov + individuelt 21.–22. nov, Ruka 28.–29. nov (FIS/Wikipedia/allsportdb/SnowTrex). Øvrige fem horisont-gap uendret siden forrige kjørings web-forankring (langrenn Ruka 27.–29. nov; alpint Copper 28.–29. nov; skiskyting Kontiolahti 26.–29. nov; CS2 Major Stage 1 ~24.–27. nov; Sjakk-VM parti 1 24. nov) — ingen datoendring, re-søk utsatt til nærmere hard frist for å holde budsjettet.",
+    "VINTERSPORT ROT-ÅRSAK (uendret HIGH): alpint, hopp, langrenn og skiskyting er alle tier1 wholesale UTEN statisk fetcher og UTEN nov-contract-blokk → research-avhengige åpningshull. Levi OG Gurgl beviser nå at cadence-fyllet treffer gjentatte ganger; hopp/langrenn/Copper/skiskyting gjenstår. Harde frister: hopp ~17. nov (nærmest), CS2 ~20. nov, langrenn ~22. nov, Sjakk-VM ~22. nov, skiskyting ~24. nov, Copper ~26. nov. Neste ~3–7 dager avgjør om hopp holder på medium eller må eskaleres.",
+    "KORREKTE FRAVÆR (ikke gap): coverage-gaps entity-gap 'rain' = autosport F1-regn-artikkel (Brazilian GP værforhold), IKKE Håvard 'rain' Nygaard (esports) — falsk navnematch. Entity-gap Bodø/Glimt/Glimt = NRK advokat-sak (nyhet, ikke kommende event; Eliteserien i pause). Entity-gap Manchester City (imminent) + Premier League = Guardian RSS under landslagspausen, PL gjenopptas 21.–23. nov (korrekt ikke en reell miss). tracked-claim-gap La Liga/OBOS/Eliteserien/Serie A/Bundesliga (claimedDate 2027) = sesong-wrapper tracked-entries med fjern utløp, ikke manglende events. Sykkel + esports file-empty = off-season / mellom-turnering (low), ikke døde fetchere."
   ]
 }
