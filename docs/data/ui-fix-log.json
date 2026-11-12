@@ -1,10 +1,10 @@
 {
-	"runAt": "2026-11-11T00:00:00.000Z",
-	"action": "none",
-	"pr": null,
-	"fixed": [],
-	"notes": [
-		"visual-qa-log.json verdict is 'pass' (checkedAt 2026-11-10) with zero findings across 375/393/900px — no high/medium code-fixable UI issues to resolve.",
-		"Only open PR is 'claude/nix-devshell' (unrelated); no existing ui-autofix branch. Nothing to do; exiting cleanly without a branch or PR."
-	]
+  "runAt": "2026-11-12T00:00:00.000Z",
+  "action": "none",
+  "pr": null,
+  "fixed": [],
+  "notes": [
+    "visual-qa-log.json verdict is \"pass\" with zero findings — nothing to fix.",
+    "The three visual-qa notes were explicitly NOT raised as findings: the floating 'Assistent' button matches DESIGN.md's sanctioned floating-button idiom (WP-146 variant D); the generic Copa del Rey club crests and faint diagonal hatch below the footer were flagged as likely headless-browser/emoji-font artifacts of the screenshot environment, not confirmed rendering bugs. None are code-fixable UI issues, so no PR opened."
+  ]
 }
