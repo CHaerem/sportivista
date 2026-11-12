@@ -1,17 +1,16 @@
 {
-  "checkedAt": "2026-11-10T00:00:00.000Z",
+  "checkedAt": "2026-11-12T00:00:00.000Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
-    "All three widths: single quiet column, no horizontal scroll/overflow, nothing clipped at the screen edge (checked 375px hardest).",
-    "Match/tournament names read fully, not truncated, even multi-word ones that wrap to two lines (e.g. 'Mijas Las Lagunas – Real Jaen', 'Austin Championship pres. by Compliance Solutions', 'Kolstad Håndball – Bergen Håndball').",
-    "Channels shown are Norwegian where known (TV 2 Play, Viaplay, HBO Max (Sport) +1, TV 2 / TV 2 Play) — no foreign broadcaster (FOX/ESPN/Sky) observed. Events without a confirmed channel honestly show a faint '–' (most Copa del Rey fixtures, Casper Ruud – TBD) rather than a guess.",
-    "Club crests/sport icons render as small icons at all three widths; no broken-image boxes seen. The Norge – Wales row shows a correct Norwegian flag icon.",
-    "Day headers (I DAG / I MORGEN / TORSDAG 12. NOVEMBER / ...), header (wordmark, date, theme toggle), and footer (Oppdatert/Abonner/Aktivitet/Personvern/AI-budsjett) intact and aligned at all three widths.",
-    "Must-see accent dot used sparingly — only on the Norge – Wales UEFA Nations League row — not on every row.",
-    "Live-now section renders two in-progress events (Bybit Stockholm Open, FAGE WTA Finals Indian Wells) correctly above the day list.",
-    "FERDIG 0-0 status labels on finished Copa del Rey fixtures are legible and consistently styled.",
-    "Checked the floating 'Assistent' button at all three widths: at 375/393 it rests over a mid-agenda row (Trival Valderas – Leganés on this build), the sanctioned floating-button idiom per DESIGN.md; at 900px it sits beside the column without covering the last agenda row (Levi: Slalåm menn, Sun 15 Nov) or the footer. The one guarantee that matters — never occluding the last row or footer — holds at all widths."
+    "Match names fully readable at all three widths, no truncation that hides key info; Norwegian/foreign team names and both sides of fixtures legible.",
+    "Channel column honest: '–' where unknown, otherwise Norwegian-relevant (TV 2, TV 2 Play, Viaplay, HBO Max (Sport)); no FOX/ESPN/Sky seen.",
+    "National flag emoji (UK, Norway, Denmark) render correctly as flags, not broken-image icons or empty boxes.",
+    "No horizontal scroll or clipped content at 375px, 393px, or 900px; header, day-group headings, and footer all intact and aligned.",
+    "Single quiet column maintained at all widths; must-see accent dots used sparingly, not on every row.",
+    "Floating 'Assistent' button overlaps a mid-agenda row (CS Puertollano – Albacete) at 375/393px and sits in the empty right margin beside the 640px column at 900px — matches DESIGN.md's sanctioned floating-button idiom (WP-146 variant D); does not occlude the last agenda row or the footer, so not flagged as an issue.",
+    "A few lower-division Copa del Rey matches show generic/stylised icons instead of recognizable club crests (e.g. clover-like, shield-like glyphs) — could not confirm whether this is a real rendering issue or a headless-browser emoji-font fallback specific to the screenshot environment; worth a human glance but not raised as a finding given the uncertainty.",
+    "A faint diagonal hatch pattern is visible in empty space below the footer in all three screenshots — unclear if decorative background or an unstyled leftover area; flagging in notes only since it sits below all real content and didn't clearly affect legibility or layout of the dashboard itself."
   ]
 }
