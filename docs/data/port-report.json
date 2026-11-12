@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-12T13:31:25.148Z",
+  "generatedAt": "2026-11-12T21:18:19.536Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
-    "amendRate": "green",
+    "amendRate": "yellow",
     "silentStops": "green",
     "participantStatus": "green",
     "contracts": "green"
@@ -27,7 +27,7 @@
       "medium": 4,
       "low": 1
     },
-    "oldestGapAgeDays": 16.17,
+    "oldestGapAgeDays": 16.49,
     "escalatable": 4,
     "catalogMatched": 3,
     "auditedAt": "2026-11-12T11:05:00Z",
@@ -35,49 +35,49 @@
       {
         "interest": "Skiskyting — IBU VC-premieren Kontiolahti (26.–29. nov, NRK, tier1 wholesale)",
         "severity": "medium",
-        "ageDays": 12.14,
+        "ageDays": 12.46,
         "recurrences": 11,
         "catalogMatched": false
       },
       {
         "interest": "Langrenn — VC-premieren Ruka/Kuusamo (27.–29. nov, Nordic Opening, NRK)",
         "severity": "medium",
-        "ageDays": 15.16,
+        "ageDays": 15.48,
         "recurrences": 14,
         "catalogMatched": true
       },
       {
         "interest": "Sjakk — klassisk VM 2026 Gukesh–Sindarov (Genève, åpning 22. nov, parti 1 24. nov)",
         "severity": "medium",
-        "ageDays": 14.15,
+        "ageDays": 14.47,
         "recurrences": 13,
         "catalogMatched": true
       },
       {
         "interest": "Alpint — Verdenscupen fortsetter Copper Mountain (28.–29. nov)",
         "severity": "medium",
-        "ageDays": 16.17,
+        "ageDays": 16.49,
         "recurrences": 15,
         "catalogMatched": false
       },
       {
         "interest": "Håndball — NM-cupen menn FINALE (Bergen kvalifisert, dato UBEKREFTET)",
         "severity": "low",
-        "ageDays": 0.1,
+        "ageDays": 0.43,
         "recurrences": 0,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0,
+    "nearTermRate": 0.33,
     "nearTermChecked": 6,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-11-11T12:54:38Z",
+    "nearTermAmended": 2,
+    "verifyRunAt": "2026-11-12T13:55:32Z",
     "windowRate": 0,
-    "windowChecks": 58,
+    "windowChecks": 65,
     "windowAmendments": 0,
-    "windowCorrections": 4,
+    "windowCorrections": 6,
     "byDay": [
       {
         "date": "2026-10-30",
@@ -155,20 +155,27 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-11-12",
+        "checks": 7,
+        "amendments": 0,
+        "corrections": 2,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-12T13:31:21.136Z",
+    "buildCheckedAt": "2026-11-12T21:18:15.467Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-12T10:31:41.310Z",
-    "manifestAgeHours": 3,
+    "manifestGeneratedAt": "2026-11-12T13:31:26.663Z",
+    "manifestAgeHours": 7.78,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-11-11T12:54:38Z",
-    "verifyAgeHours": 24.61,
+    "checkedAt": "2026-11-12T13:55:32Z",
+    "verifyAgeHours": 7.38,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -177,6 +184,6 @@
     "total": 9,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-11-12T13:31:25.147Z"
+    "generatedAt": "2026-11-12T21:18:19.536Z"
   }
 }
