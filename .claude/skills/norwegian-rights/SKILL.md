@@ -69,7 +69,11 @@ two majors; Viaplay keeps the other two majors + DP World Tour. Verified 2026-07
 ## Winter sports
 - Biathlon (IBU World Cup/WCH) → **NRK** [solid]
 - Cross-country, ski jumping, nordic combined (FIS World Cup) → **NRK** [solid] through 2025/26; from season 2026/27 **TV 2 + Viaplay** share FIS World Cup rights [verify] (NTB press release Dec 2025, kommunikasjon.ntb.no/pressemelding/18377092; noted 2026-07-03)
-- Alpine (FIS World Cup) → **Viaplay** [verify]
+- Alpine (FIS World Cup) → **split per race from 2026/27** [verify per race] — the old "Alpine → Viaplay" is now too coarse. From season 2026/27 **TV 2 Play and Viaplay share the overseas World Cup races (per-race split), and races held IN NORWAY go to NRK**. Confirmed against TV 2's own season press release (kommunikasjon.ntb.no/pressemelding/19113452, "Slik blir vinteren på TV 2") and telenor.no/streamix's per-race table (updated 2026-10-22):
+  - **TV 2 Play**: Levi, St. Moritz, Val Gardena, Alta Badia, Chamonix, Kranjska Gora, Saalbach, Garmisch, Soldeu (verified 2026-11-13: Levi women 14.11 + men 15.11 both on TV 2 Play)
+  - **Viaplay**: Sölden, Gurgl, Madonna di Campiglio, Courchevel, Bormio, Gosau, Sun Valley (verified 2026-11-12: Gurgl slalom 21–22.11 on Viaplay — board was wrongly on NRK and was corrected)
+  - **NRK**: races in Norway (Kvitfjell Mar 2027) + the Alpine World Championships (Crans-Montana, 1–14 Feb 2027)
+  - Always `[verify per race]`: the split is per-race, so check the specific stop against the two broadcaster schedules before trusting a race's channel.
 
 ## Athletics (friidrett)
 - Wanda Diamond League (incl. Bislett Games) → **NRK** [solid] — NRK holds the rights 2025–2029 (14 meets/season + Bislett), acquired from Infront; NTB press release kommunikasjon.ntb.no/pressemelding/18535635 (announced 2025-05-22, verified 2026-07-18). NRK also has friidretts-EM 2026, VM t.o.m. 2029, and OL t.o.m. 2032.

@@ -1,16 +1,15 @@
 {
-  "runAt": "2026-11-12T13:55:32Z",
-  "checked": 6,
+  "runAt": "2026-11-13T13:16:24Z",
+  "checked": 4,
   "confirmed": 4,
-  "amended": 2,
+  "amended": 0,
   "removed": 0,
   "notes": [
-    "Fire kommende AI-research-events (neste 7 dager) re-verifisert mot ferske kilder — alle CONFIRMED, ingen endringer nødvendig. (De to andre kandidatene i vinduet, Total Chess 11.11 og Kolstad–Bergen 11.11, ligger nå i fortid og ble bekreftet forrige kjøring; ikke re-sjekket.)",
-    "AMENDED ×2 — Gurgl slalåm kvinner (21.11) + menn (22.11): streaming[] rettet NRK → Viaplay. Disse lå akkurat utenfor 7-dagersvinduet, men var det ene provenance-noten eksplisitt ba verify låse («verify låser når allokeringen publiseres»): telenor.no/streamix per-renn-tabell (oppdatert 22.10.26) lister Gurgl (dame + herre) på Viaplay for 2026/27 — NRK var feil (NRK har kun renn i Norge). streaming[], provenance.streaming og summary-klausulen synket til Viaplay; fjernet validatorens summary↔streaming-mismatch-advarsel. Starttid (09:30 UTC) ikke endret — utenfor vindu, låses nærmere rennhelgen.",
-    "Levi slalåm kvinner 14.11 09:00 UTC + menn 15.11 09:00 UTC — CONFIRMED. Tid: 1. omgang 10:00 CET (=09:00 UTC), 2. omgang 13:00 CET, begge dager (oasport.it). Streaming TV 2 Play CONFIRMED mot telenor.no/streamix per-renn-tabell (oppdatert 22.10.26): Levi (dame + herre) ligger på TV 2 Play; Sölden/Gurgl på Viaplay; renn i Norge på NRK. Eventets felt var allerede korrekt.",
-    "Norge–Wales 14.11 17:00 UTC (Ullevaal) — CONFIRMED mot eurosport.no + fotball.no: UEFA Nations League Liga A (gruppe A4), lør 14.11 kl 18:00 lokal (=17:00 UTC). IKKE VM-kval (VM 2026 ble spilt i sommer) — Nations League-gruppespillet går sept–nov 2026. Norsk kanal TV 2 / TV 2 Play bekreftet.",
-    "Danmark–Norge 17.11 19:45 UTC (Parken) — CONFIRMED mot sofascore.com + fotball.no: Nations League gruppe A4 MD6 (siste runde), tir 17.11 kl 20:45 lokal CET (=19:45 UTC), Parken København. Danmark er i samme gruppe A4 som Norge/Wales/Portugal. TV 2 / TV 2 Play.",
-    "RETTIGHETSFUNN (durabel læring): alpin FIS-verdenscup 2026/27 er flyttet — fra sesongen 2026/27 deler TV 2 Play + Viaplay utenlandsrennene (per-renn-split; Levi/Val d'Isère → TV 2 Play, Sölden/Gurgl → Viaplay), renn i Norge → NRK. norwegian-rights-skillens linje «Alpine → Viaplay [verify]» er dermed utdatert.",
-    "SKILL-OPPDATERING IKKE MULIG I DENNE ØKTA (ikke en legende — bokstavelig verktøyfeil): Edit mot .claude/skills/norwegian-rights/SKILL.md for å oppdatere alpin-linjen returnerte to ganger: «Claude requested permissions to write to /home/runner/work/sportivista/sportivista/.claude/skills/norwegian-rights/SKILL.md, but you haven't granted it yet.» Dette er en interaktiv tillatelses-forespørsel som ikke ble innvilget i denne økta, ikke en reell CI-blokk. Brukerdataene er korrekte uansett (eventenes streaming = TV 2 Play, med riktig per-renn-proveniens); kun skill-prioren mangler oppdateringen. Bør oppdateres ved neste anledning."
+    "Fire kommende AI-research-events i 7-dagersvinduet re-verifisert mot ferske kilder — alle CONFIRMED, ingen felt-endringer nødvendig (tid/sted/streaming/proveniens var allerede korrekte fra forrige kjøring). verifiedAt bumpet til i dag; dagens korroborerende kilder lagt til verificationSources.",
+    "Levi slalåm kvinner 14.11 09:00 UTC + menn 15.11 09:00 UTC — CONFIRMED. Tid: 1. omgang 10:00 CET (=09:00 UTC), 2. omgang 13:00 CET, begge dager (oasport.it, direkte hentet). De CET-baserte sendeguidene (italiensk + tysk) lister 10:00, som konsistent gir 09:00 UTC — lokal finsk (EET) starttid er 11:00. Streaming TV 2 Play CONFIRMED mot TV 2s sesongpresse (kommunikasjon.ntb.no/19113452): Levi ligger på TV 2 for 2026/27.",
+    "Norge–Wales 14.11 17:00 UTC (Ullevaal) — CONFIRMED mot UEFA-terminliste + fourfourtwo: Nations League Liga A gruppe A4, lør 14.11 kl 18:00 CET (=17:00 UTC). TV 2 / TV 2 Play bekreftet (TV 2 sendte returkampen i Cardiff 1.10 — norske landslaget på TV 2).",
+    "Danmark–Norge 17.11 19:45 UTC (Parken) — CONFIRMED mot sofascore + fotball.no: Nations League A4 siste runde, tir 17.11 kl 20:45 CET (=19:45 UTC), Parken København. (Én kilde, Weekend Goals, oppga feilaktig Odense — flertallet og board har Parken, som er rett.) TV 2 / TV 2 Play.",
+    "SKILL OPPDATERT (durabel læring, utført denne kjøringen): norwegian-rights-skillens alpin-linje «Alpine → Viaplay [verify]» var utdatert og er erstattet med 2026/27-splitten per renn: TV 2 Play (Levi, St. Moritz, Val Gardena, Alta Badia, Chamonix, Kranjska Gora, Saalbach, Garmisch, Soldeu), Viaplay (Sölden, Gurgl, Madonna, Courchevel, Bormio, Gosau, Sun Valley), NRK (renn i Norge + alpin-VM Crans-Montana). Forrige verify-log noterte at skill-Edit var «blokkert av en tillatelses-forespørsel» — det var WP-91-feildiagnosen prompten eksplisitt advarer mot: Edit mot .claude/skills/**/SKILL.md fungerte uten problem i denne økta.",
+    "Ingen deltaker-/cut-sjekk relevant: de fire eventene er enkeltkamper/enkeltrenn (ikke flerdagsturneringer med pågående vindu), og knockout-feltene er ikke aktuelle."
   ]
 }
