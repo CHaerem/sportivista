@@ -2324,6 +2324,54 @@
     "id": "6350fb6bc04d"
   },
   {
+    "sport": "chess",
+    "tournament": "World Chess Championship 2026",
+    "title": "VM-kamp Gukesh – Sindarov: parti 1",
+    "time": "2026-11-24T14:00:00Z",
+    "venue": "Fondation Martin Bodmer, Cologny, Genève",
+    "norwegian": false,
+    "participants": [
+      {
+        "name": "Gukesh Dommaraju"
+      },
+      {
+        "name": "Javokhir Sindarov"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "chess.com",
+        "url": "https://www.chess.com/tv",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "FIDE / World Chess (YouTube)",
+        "url": "https://worldchess.com",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-13T12:25:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://www.fide.com/salesforce-fide-world-championship-match-2026-schedule-format-and-prize-fund-confirmed/",
+      "https://en.wikipedia.org/wiki/World_Chess_Championship_2026",
+      "https://worldchess.com/news/gukesh-vs-sindarov-everything-you-need-to-know-about-the-2026-world-chess-championship"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "fide",
+        "url": "https://www.fide.com/salesforce-fide-world-championship-match-2026-schedule-format-and-prize-fund-confirmed/",
+        "basis": "primary",
+        "retrievedAt": "2026-11-13T12:25:00Z"
+      }
+    },
+    "summary": "Sjakk-VM 2026: regjerende verdensmester Gukesh Dommaraju (India) møter utfordrer Javokhir Sindarov (Usbekistan) over inntil 14 klassiske partier i Genève — første VM-kamp i Sveits siden Kramnik–Leko 2004.\n\nParti 1 spilles tirsdag 24. november kl. 15.00 (norsk tid), Fondation Martin Bodmer i Cologny. Kampen varer til ~12. desember; står det 7–7 avgjøres tittelen med hurtig-/lynsjakk 12. desember.\n\nIngen norsk TV-rettighet – følg gratis direkte på FIDE/World Chess sin YouTube-sending (kommentatorer Péter Lékó og Peter Svidler) og chess.com. Offisielle sendedetaljer kunngjøres nærmere kampstart.",
+    "id": "67d0500864f1",
+    "norwegianPlayers": []
+  },
+  {
     "sport": "golf",
     "tournament": "DP World Tour",
     "title": "BMW Australian PGA Championship",
@@ -2614,50 +2662,5 @@
     },
     "summary": "Norge er regjerende europamester (gull i 2024) og toppseedet i gruppe B, som spilles i BTarena i Cluj-Napoca, Romania.\n\nSiste gruppespillkamp mot Nord-Makedonia tirsdag 8. desember kl. 20.00 (norsk tid), BTarena Cluj-Napoca. De tre beste i hver gruppe går videre til mellomrunden.\n\nNorsk visning delt TV3/Viaplay + TV 2/TV 2 Play (handball.no) — kanal per kamp bekreftes av verify.",
     "id": "cd512c3720a9"
-  },
-  {
-    "sport": "chess",
-    "tournament": "World Chess Championship 2026",
-    "title": "VM-kamp Gukesh – Sindarov: parti 1",
-    "time": "2026-11-24T14:00:00Z",
-    "venue": "Fondation Martin Bodmer, Cologny, Genève",
-    "norwegian": false,
-    "participants": [
-      {
-        "name": "Gukesh Dommaraju"
-      },
-      {
-        "name": "Javokhir Sindarov"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "chess.com",
-        "url": "https://www.chess.com/tv"
-      },
-      {
-        "platform": "FIDE / World Chess (YouTube)",
-        "url": "https://worldchess.com"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-11-13T12:25:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://www.fide.com/salesforce-fide-world-championship-match-2026-schedule-format-and-prize-fund-confirmed/",
-      "https://en.wikipedia.org/wiki/World_Chess_Championship_2026",
-      "https://worldchess.com/news/gukesh-vs-sindarov-everything-you-need-to-know-about-the-2026-world-chess-championship"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "fide",
-        "url": "https://www.fide.com/salesforce-fide-world-championship-match-2026-schedule-format-and-prize-fund-confirmed/",
-        "basis": "primary",
-        "retrievedAt": "2026-11-13T12:25:00Z"
-      }
-    },
-    "summary": "Sjakk-VM 2026: regjerende verdensmester Gukesh Dommaraju (India) møter utfordrer Javokhir Sindarov (Usbekistan) over inntil 14 klassiske partier i Genève — første VM-kamp i Sveits siden Kramnik–Leko 2004.\n\nParti 1 spilles tirsdag 24. november kl. 15.00 (norsk tid), Fondation Martin Bodmer i Cologny. Kampen varer til ~12. desember; står det 7–7 avgjøres tittelen med hurtig-/lynsjakk 12. desember.\n\nIngen norsk TV-rettighet – følg gratis direkte på FIDE/World Chess sin YouTube-sending (kommentatorer Péter Lékó og Peter Svidler) og chess.com. Offisielle sendedetaljer kunngjøres nærmere kampstart.",
-    "id": "95394889e1f8"
   }
 ]
