@@ -315,5 +315,13 @@
     "verdict": "quiet",
     "reason": "RSS (46 items, 12:47-12:51 UTC Nov 13): transfer/personnel news (Pochettino to Manchester United, Bruno Fernandes contract rejection—no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements). Training weather (Ullevaal snow for Wales prep—weather, no reschedule announced). Past results/gossip (Valnes comeback sprint win, Wiklund speed skating result, Eitrem speed skating result—completed events, no schedule changes). No schedule/time/venue changes to existing tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (14 gaps, 1 anomaly): Casper Ruud imminent=true (Nov 14) is pre-existing tracked-claim with no NEW RSS signal naming Ruud today; Barcelona/Arsenal/Bodø/Glimt entity gaps imminent=false (from past match coverage), tracked-claims mostly July/August 2027 (far-future). Cycling.json empty (low severity, pre-existing). Contract-breaches (Eliteserien & PL, imminent=true) already escalated Nov 9 13:36 UTC—research agent active. No NEW concrete schedule/time/venue/streaming/broadcaster signal. Escalation cap today (Nov 13 UTC): 0/2.",
     "signals": []
+  },
+  {
+    "runAt": "2026-11-13T20:39:16.811Z",
+    "verdict": "escalate",
+    "reason": "Total Chess pilot tournament (Budapest) is happening NOW with Magnus Carlsen actively playing group stage (draw + loss, 2026-11-13 19:30 UTC). Coverage gap shows this tracked athlete with imminent event (2026-11-15, imminent=true) but no events on board. Concrete, imminent signal warranting research fill.",
+    "signals": [
+      "magnus-carlsen-total-chess-tournament-imminent: Group stage ongoing, Nov 13-15"
+    ]
   }
 ]
