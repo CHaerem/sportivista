@@ -79,60 +79,6 @@
   {
     "sport": "handball",
     "tournament": "Elkjøp-ligaen 2026/27",
-    "title": "Drammen – Elverum",
-    "time": "2026-10-30T17:15:00Z",
-    "endTime": null,
-    "venue": null,
-    "norwegian": true,
-    "homeTeam": "Drammen",
-    "awayTeam": "Elverum",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-10-26T15:20:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier1",
-      "catalog.json#tier2.tournaments",
-      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-      "https://www.betexplorer.com/handball/norway/elkjop-ligaen/fixtures/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "tv2",
-        "url": "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste",
-        "basis": "secondary",
-        "retrievedAt": "2026-10-27T10:45:44.164Z",
-        "note": "TV 2 Livesport-terminlisten (lest direkte, fixture-autoritet + rettighetshaver, calibration 1.0). Betexplorer + Flashscore korroborerer uavhengig dato/tid. handball.no (NHF, tid-autoritet) 404/JS-rendret → basis secondary."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball",
-        "basis": "official",
-        "retrievedAt": "2026-10-26T15:20:00Z",
-        "note": "TV 2 har norsk toppseries rettigheter 2026/27 (alle kamper på TV 2 Play, utvalgte på lineære TV 2 Sport-kanaler). authority.json handball:elkjop-ligaen. Eksakt sub-kanal → verify."
-      }
-    },
-    "summary": "Runde 9 i Elkjøp-ligaen menn åpner fredag 30. oktober. Drammen tar imot Elverum.\n\nAvkast kl. 18.15 (17.15 UTC). Norsk visning: TV 2 Play (utvalgte kamper på lineære TV 2 Sport-kanaler).",
-    "id": "65c7ef80c2b8",
-    "homeTeamEntityId": "drammen-handballklubb",
-    "awayTeamEntityId": "elverum-handball",
-    "verifiedAt": "2026-10-27T10:45:44.164Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.tv2.no/livesport/haandball/turneringer/elkjop-ligaen-menn/1a2661b4-fceb-5b35-bf47-e1354ed5ea58/terminliste"
-    ]
-  },
-  {
-    "sport": "handball",
-    "tournament": "Elkjøp-ligaen 2026/27",
     "title": "ØIF Arendal – Sandnes",
     "time": "2026-10-31T15:00:00Z",
     "endTime": null,
