@@ -1,23 +1,25 @@
 {
-  "runAt": "2026-11-13T19:50:00Z",
+  "runAt": "2026-11-14T01:10:00Z",
   "tier": "standard",
-  "eventsAdded": 0,
-  "eventsRemoved": 1,
+  "trigger": "scout-escalation (2026-11-13T20:39Z): Carlsen aktivt i gang i Total Chess-piloten, men ingen Carlsen-/Total-Chess-event på tavla",
+  "eventsAdded": 2,
+  "eventsRemoved": 0,
   "eventsModified": 0,
-  "trackedDelta": "Ingen katalog-/entitets-/registry-endring (10 leagues / 13 athletes / 25 tournaments uendret). FORLENGET expires på fire pågående in-season-oppføringer som ellers lapset 15. nov: bundesliga-2026-27 + elkjop-ligaen-2026-27 + ehf-champions-league-women-2026-27 → 2026-12-15, pga-tour-fedexcup-fall-2026 → 2026-11-23 (The RSM Classic sesongfinale 19.–22. nov). Prepended én HOUSEKEEPING-run-note; notes 16 → trimmet til 15. lastUpdated 13.11 12.25Z → 13.11 19.50Z.",
+  "trackedDelta": "Ingen katalog-/entitets-/registry-endring (10 leagues / 13 athletes / 25 tournaments uendret). Oppdaterte to oppføringer: total-chess-2026-pilot (priority medium→high, reason + evidence oppdatert med bekreftet gruppespill-plan) + magnus-carlsen (reason: neste fixture nå boardet). Prepended én run-note; notes holdt på 15. lastUpdated 13.11 19.50Z → 14.11 01.05Z.",
   "quality": {
     "pass": true,
-    "score": 85,
+    "score": 94,
     "failures": [
-      "Evidence-domain monoculture (−5): Elkjøp-ligaen håndball-familien (ai-research-kamper 31. okt/1. nov) siterer kun tv2.no + betexplorer.com på tvers av alle medlemmer — ingen uavhengig korroborasjon. Legg til en tredje uavhengig kilde (handball.no primær / EHF) i framtidige runder.",
-      "Repeated unaddressed recommendation (−10): det strukturelle self-repair/improve-flagget (ingen wholesale statisk fetcher for Serie A/Bundesliga + vintersport/håndball, golf-fetcher uten look-ahead) er båret videre mange kjøringer og tvinger gjentatt håndboarding runde-for-runde. Korrekt rutet til self-repair/improve, men fortsatt uløst."
+      "Minor (ikke scoret, ADRESSERT denne kjøringen): de to sjakk-eventene satte opprinnelig provenance.streaming.basis=primary mens sendingen ikke er bekreftet av World Chess — korrigert til basis=secondary med ærlig note (urlKind=landing signaliserte det alt). validate-events melder nå korrekt 'weak channel basis on 2' (soft warning, sann)."
     ]
   },
   "notes": [
-    "HOUSEKEEPING-kjøring. Coverage-critic 11:05Z fant INGEN ekte HIGH imminent recall-gap; tavla imminent-komplett 13.–17. nov. Sjakk-VM parti 1 (Gukesh–Sindarov 24. nov) boardet av dagens 12.25Z-kjøring — står på tavla.",
-    "RYDDET 1 foreldet ai-research-event som trippet validate-events past-event-feil (14-d-cutoff): håndball Drammen–Elverum (Elkjøp runde 9, 30. okt, id 65c7ef80c2b8). validate-events nå 0 errors (57 events).",
-    "De gjenstående vintersport-cadence-fyllene (langrenn Ruka ~27., skiskyting Kontiolahti ~26., alpint Copper Mountain ~28. nov; alle 13–16 d ut) boardes på kadens ~20.–24. nov per coverage-critics harde frister — bevisst IKKE boardet nå (datoer ikke fullt låst, budsjettbevisst). Håndball NM-finale (Bergen–Elverum) dato fortsatt ubekreftet, trolig utenfor 28-d-horisont.",
-    "FORLENGET expires på fire in-season-oppføringer (Bundesliga/Elkjøp-ligaen/EHF CL kvinner → 15. des; PGA Tour FedEx Fall → 23. nov) for å unngå stille coverage-tap 15. nov.",
-    "Ingen nye events lagt til → Step 3.5 write-time fact-check er no-op. STÅENDE STRUKTURFLAGG (self-repair/improve, uendret): ingen wholesale statisk fetcher for vintersport/håndball + golf-fetcher uten look-ahead."
+    "Scout-eskalert kjøring (13.11 20:39Z): Magnus Carlsen (katalog tier2-sjakk) spiller NÅ Total Chess World Championship Tour 2026-piloten i Budapest (10.–21. nov), men ingen Carlsen-/Total-Chess-event lå på tavla (forrige fler-dagers event ryddet som past-event). Reelt next-fixture-hull for en fulgt katalog-athlete → fylt.",
+    "BOARDET 2 ai-research-events (high): Total Chess gruppespill runde 4 (tir. 14. nov 14:00 UTC / 15.00 CET + parti 2 17:30 UTC) + runde 5 (ons. 15. nov, samme tider), Anantara New York Palace Budapest, Carlsen navngitt. Dato/tid/venue + Carlsens deltakelse TRE-KILDE-bekreftet: arrangøren worldchess.com (primær, provenance.time.basis=primary/world-chess) + Wikipedia (eksplisitt dagsplan: 14. nov runde 4, 15. nov runde 5, 15.00 CET start) + FIDE ('Martirosyan defeats Carlsen on Day 3' bekrefter at Carlsen spiller gruppespillet). Uavhengig korroborasjon fra DAZN/chessbase i samme sveip. Step 3.5 write-time-sjekk dekket av tre uavhengige kilder enige på plan.",
+    "UTSLAGSSPILL (semifinaler 17.–18. nov, finale 19.–20. nov) BEVISST IKKE boardet: Carlsen vant blitz-sveitseren (7/9) men slet i gruppespillet (tap for Martirosyan dag 3, lå nede i gruppe C) → avansement usikkert. De to øverste pr. gruppe går videre. Boardes av senere kjøring hvis han avanserer. En oppdiktet knockout-kamp er verre enn et ærlig fravær.",
+    "STREAMING: World Chess har IKKE bekreftet kringkasting (authority.json chess:total-chess channel-blokk + summary + tracked note sier dette ærlig). Satt worldchess.com + chess.com med urlKind=landing og provenance.streaming.basis=secondary. Ingen kjent norsk TV-rettighet; FIDE-arrangementer sendes typisk gratis online. Verify fyller når World Chess kunngjør plattform/kommentatorer.",
+    "BEVISST IKKE boardet denne kjøringen (på kadens, harde frister ikke nådd): vintersport-åpningene langrenn Ruka (~27. nov), skiskyting Kontiolahti (~26. nov), alpint Copper Mountain (~28. nov) — alle 12–14 d ut, coverage-critics cadence-fyll ~20.–24. nov, harde frister ~23.–26. nov. Håndball NM-finale (Bergen vs Elverum) dato fortsatt ubekreftet, trolig utenfor 28-d-horisont. Sjakk-VM (Gukesh–Sindarov parti 1, 24. nov) allerede boardet (separat katalog-turnering, Carlsen deltar ikke).",
+    "STÅENDE STRUKTURFLAGG (self-repair/improve, uendret, carry-forward): ingen wholesale statisk fetcher for vintersport (alpint/hopp/langrenn/skiskyting) eller håndball; golf-fetcher uten look-ahead; esports-fetcher 100T-only; ESPN mangler EL/ECL-endepunkt. Tvinger gjentatt håndboarding. Korrekt rutet, fortsatt uløst.",
+    "validate-events: 0 errors (58 events). Soft warnings (WP-242/246): 8 landing-only channel-URLer, 3 weak time basis (pre-eksisterende PGL/Brann secondary-events, IKKE mine), 2 weak channel basis (mine sjakk-events, ærlig/korrekt)."
   ]
 }
