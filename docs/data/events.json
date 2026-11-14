@@ -1349,29 +1349,6 @@
     "id": "6ef64315f23f"
   },
   {
-    "sport": "football",
-    "tournament": "Copa del Rey",
-    "title": "Celta Vigo at Salamanca UDS",
-    "time": "2026-11-13T20:00:00.000Z",
-    "endTime": null,
-    "venue": "Estadio Helmántico",
-    "meta": "Copa del Rey",
-    "norwegian": false,
-    "streaming": [],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Salamanca UDS",
-    "awayTeam": "Celta Vigo",
-    "isFavorite": false,
-    "round": null,
-    "id": "b45d5278f56d",
-    "awayTeamEntityId": "celta-vigo"
-  },
-  {
     "sport": "alpine",
     "tournament": "FIS verdenscup alpint 2026/27",
     "title": "Levi: Slalåm kvinner",
@@ -1421,6 +1398,60 @@
       "https://www.oasport.it/2026/11/coppa-del-mondo-sci-alpino-levi-2026-orari-tv-streaming-programma-slalom/",
       "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing"
     ]
+  },
+  {
+    "sport": "chess",
+    "tournament": "Total Chess World Championship Tour 2026",
+    "venue": "Anantara New York Palace, Budapest",
+    "norwegian": false,
+    "norwegianPlayers": [
+      {
+        "name": "Magnus Carlsen",
+        "entityId": "magnus-carlsen"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "worldchess.com",
+        "url": "https://worldchess.com/",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "Chess.com",
+        "url": "https://www.chess.com/tv",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-14T01:00:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://en.wikipedia.org/wiki/Total_Chess_World_Championship_2026",
+      "https://worldchess.com/news/total-chess-2026-everything-you-need-to-know",
+      "https://www.fide.com/martirosyan-defeats-carlsen-on-day-3-in-budapest/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "world-chess",
+        "url": "https://worldchess.com/news/total-chess-2026-everything-you-need-to-know",
+        "basis": "primary",
+        "retrievedAt": "2026-11-14T01:00:00Z"
+      },
+      "streaming": {
+        "sourceId": "world-chess",
+        "url": "https://worldchess.com/",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-14T01:00:00Z",
+        "note": "Kringkasting ennå ikke bekreftet av World Chess; worldchess.com + chess.com er sannsynlig gratis online-visning (arrangørplattform), ikke en bekreftet sending."
+      }
+    },
+    "title": "Gruppespill runde 4 (Carlsen)",
+    "time": "2026-11-14T14:00:00Z",
+    "endTime": "2026-11-14T19:30:00Z",
+    "id": "06a750ba8eaf",
+    "summary": "Magnus Carlsen spiller gruppespillets runde 4 i Total Chess-pilotens hovedturnering i Budapest – to partier hurtig-klassisk (45 min + 30 s) mot gruppe C-motstander, parti 1 kl. 15.00 og parti 2 kl. 18.30 norsk tid.\n\nCarlsen vant den innledende lyn-sveiseren (7/9) men har slitt i gruppespillet (bl.a. tap for Haik Martirosyan på dag 3) og lå nede på tabellen før runde 4–5. De to øverste i hver gruppe går videre til utslagsspillet (semifinaler 17.–18. nov).\n\nIngen norsk TV-rettighet – følg gratis direkte hos arrangøren World Chess (worldchess.com) og chess.com. Sendedetaljer er ennå ikke endelig bekreftet.",
+    "participants": []
   },
   {
     "sport": "football",
@@ -1553,6 +1584,60 @@
       "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing",
       "https://www.oasport.it/2026/11/coppa-del-mondo-sci-alpino-levi-2026-orari-tv-streaming-programma-slalom/"
     ]
+  },
+  {
+    "sport": "chess",
+    "tournament": "Total Chess World Championship Tour 2026",
+    "venue": "Anantara New York Palace, Budapest",
+    "norwegian": false,
+    "norwegianPlayers": [
+      {
+        "name": "Magnus Carlsen",
+        "entityId": "magnus-carlsen"
+      }
+    ],
+    "streaming": [
+      {
+        "platform": "worldchess.com",
+        "url": "https://worldchess.com/",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "Chess.com",
+        "url": "https://www.chess.com/tv",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-14T01:00:00Z",
+    "confidence": "high",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://en.wikipedia.org/wiki/Total_Chess_World_Championship_2026",
+      "https://worldchess.com/news/total-chess-2026-everything-you-need-to-know",
+      "https://www.fide.com/martirosyan-defeats-carlsen-on-day-3-in-budapest/"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "world-chess",
+        "url": "https://worldchess.com/news/total-chess-2026-everything-you-need-to-know",
+        "basis": "primary",
+        "retrievedAt": "2026-11-14T01:00:00Z"
+      },
+      "streaming": {
+        "sourceId": "world-chess",
+        "url": "https://worldchess.com/",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-14T01:00:00Z",
+        "note": "Kringkasting ennå ikke bekreftet av World Chess; worldchess.com + chess.com er sannsynlig gratis online-visning (arrangørplattform), ikke en bekreftet sending."
+      }
+    },
+    "title": "Gruppespill runde 5 (Carlsen)",
+    "time": "2026-11-15T14:00:00Z",
+    "endTime": "2026-11-15T19:30:00Z",
+    "id": "5e596b6228f8",
+    "summary": "Magnus Carlsen spiller gruppespillets siste runde (runde 5) i Total Chess-pilotens hovedturnering i Budapest – to hurtig-klassiske partier, parti 1 kl. 15.00 og parti 2 kl. 18.30 norsk tid. Avgjør om han når utslagsspillet.\n\nFormat: fire grupper à seks spillere, dobbel serie, seier 3 / remis 1 poeng. De to beste i hver gruppe går videre til semifinalene (17.–18. nov), finalen spilles 19.–20. nov.\n\nIngen norsk TV-rettighet – følg gratis direkte hos arrangøren World Chess (worldchess.com) og chess.com.",
+    "participants": []
   },
   {
     "sport": "football",
@@ -1832,6 +1917,90 @@
     "summary": "Hoppsesongens verdenscupåpning i Lillehammer sparkes i gang med lagkonkurranse i den store bakken (HS140) i Lysgårdsbakken.\n\nNorsk visning: NRK. Renn på norsk jord er unntatt fra den nye TV 2/Viaplay-avtalen og går til NRK.\n\nStarttid er foreløpig (FIS ikke offisielt låst) — verify bekrefter mot FIS-programmet og startlista nærmere rennhelgen.",
     "id": "bfed31a3422e",
     "participants": []
+  },
+  {
+    "sport": "football",
+    "tournament": "Eliteserien",
+    "title": "Molde – Bodø/Glimt",
+    "time": "2026-11-20T18:00:00.000Z",
+    "endTime": null,
+    "venue": "Aker Stadion",
+    "meta": "Eliteserien",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Molde",
+    "awayTeam": "Bodø/Glimt",
+    "isFavorite": true,
+    "round": null,
+    "id": "bda0df3f0ca7",
+    "homeTeamEntityId": "molde",
+    "awayTeamEntityId": "bodo-glimt"
+  },
+  {
+    "sport": "football",
+    "tournament": "Bundesliga",
+    "title": "FC Cologne at Bayern Munich",
+    "time": "2026-11-20T19:30:00.000Z",
+    "endTime": null,
+    "venue": "Allianz Arena",
+    "meta": "Bundesliga",
+    "norwegian": false,
+    "streaming": [],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Bayern Munich",
+    "awayTeam": "FC Cologne",
+    "isFavorite": false,
+    "round": null,
+    "id": "f0b236702fd6",
+    "homeTeamEntityId": "bayern-munich",
+    "awayTeamEntityId": "1-fc-koln"
+  },
+  {
+    "sport": "football",
+    "tournament": "La Liga",
+    "title": "Espanyol at Athletic Club",
+    "time": "2026-11-20T20:00:00.000Z",
+    "endTime": null,
+    "venue": "San Mamés",
+    "meta": "La Liga",
+    "norwegian": false,
+    "streaming": [
+      {
+        "platform": "TV 2 Play",
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
+      }
+    ],
+    "participants": [],
+    "norwegianPlayers": [],
+    "totalPlayers": null,
+    "link": null,
+    "status": null,
+    "featuredGroups": [],
+    "homeTeam": "Athletic Club",
+    "awayTeam": "Espanyol",
+    "isFavorite": false,
+    "round": null,
+    "id": "5b0e05edc18d",
+    "homeTeamEntityId": "athletic-club",
+    "awayTeamEntityId": "espanyol"
   },
   {
     "sport": "alpine",
@@ -2576,109 +2745,5 @@
     },
     "summary": "Norge er regjerende europamester (gull i 2024) og toppseedet i gruppe B, som spilles i BTarena i Cluj-Napoca, Romania.\n\nSiste gruppespillkamp mot Nord-Makedonia tirsdag 8. desember kl. 20.00 (norsk tid), BTarena Cluj-Napoca. De tre beste i hver gruppe går videre til mellomrunden.\n\nNorsk visning delt TV3/Viaplay + TV 2/TV 2 Play (handball.no) — kanal per kamp bekreftes av verify.",
     "id": "cd512c3720a9"
-  },
-  {
-    "sport": "chess",
-    "tournament": "Total Chess World Championship Tour 2026",
-    "venue": "Anantara New York Palace, Budapest",
-    "norwegian": false,
-    "norwegianPlayers": [
-      {
-        "name": "Magnus Carlsen"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "worldchess.com",
-        "url": "https://worldchess.com/",
-        "urlKind": "landing"
-      },
-      {
-        "platform": "Chess.com",
-        "url": "https://www.chess.com/tv",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-11-14T01:00:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://en.wikipedia.org/wiki/Total_Chess_World_Championship_2026",
-      "https://worldchess.com/news/total-chess-2026-everything-you-need-to-know",
-      "https://www.fide.com/martirosyan-defeats-carlsen-on-day-3-in-budapest/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "world-chess",
-        "url": "https://worldchess.com/news/total-chess-2026-everything-you-need-to-know",
-        "basis": "primary",
-        "retrievedAt": "2026-11-14T01:00:00Z"
-      },
-      "streaming": {
-        "sourceId": "world-chess",
-        "url": "https://worldchess.com/",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-14T01:00:00Z",
-        "note": "Kringkasting ennå ikke bekreftet av World Chess; worldchess.com + chess.com er sannsynlig gratis online-visning (arrangørplattform), ikke en bekreftet sending."
-      }
-    },
-    "title": "Gruppespill runde 4 (Carlsen)",
-    "time": "2026-11-14T14:00:00Z",
-    "endTime": "2026-11-14T19:30:00Z",
-    "id": "tc26carlr4a1",
-    "summary": "Magnus Carlsen spiller gruppespillets runde 4 i Total Chess-pilotens hovedturnering i Budapest – to partier hurtig-klassisk (45 min + 30 s) mot gruppe C-motstander, parti 1 kl. 15.00 og parti 2 kl. 18.30 norsk tid.\n\nCarlsen vant den innledende lyn-sveiseren (7/9) men har slitt i gruppespillet (bl.a. tap for Haik Martirosyan på dag 3) og lå nede på tabellen før runde 4–5. De to øverste i hver gruppe går videre til utslagsspillet (semifinaler 17.–18. nov).\n\nIngen norsk TV-rettighet – følg gratis direkte hos arrangøren World Chess (worldchess.com) og chess.com. Sendedetaljer er ennå ikke endelig bekreftet."
-  },
-  {
-    "sport": "chess",
-    "tournament": "Total Chess World Championship Tour 2026",
-    "venue": "Anantara New York Palace, Budapest",
-    "norwegian": false,
-    "norwegianPlayers": [
-      {
-        "name": "Magnus Carlsen"
-      }
-    ],
-    "streaming": [
-      {
-        "platform": "worldchess.com",
-        "url": "https://worldchess.com/",
-        "urlKind": "landing"
-      },
-      {
-        "platform": "Chess.com",
-        "url": "https://www.chess.com/tv",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-11-14T01:00:00Z",
-    "confidence": "high",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://en.wikipedia.org/wiki/Total_Chess_World_Championship_2026",
-      "https://worldchess.com/news/total-chess-2026-everything-you-need-to-know",
-      "https://www.fide.com/martirosyan-defeats-carlsen-on-day-3-in-budapest/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "world-chess",
-        "url": "https://worldchess.com/news/total-chess-2026-everything-you-need-to-know",
-        "basis": "primary",
-        "retrievedAt": "2026-11-14T01:00:00Z"
-      },
-      "streaming": {
-        "sourceId": "world-chess",
-        "url": "https://worldchess.com/",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-14T01:00:00Z",
-        "note": "Kringkasting ennå ikke bekreftet av World Chess; worldchess.com + chess.com er sannsynlig gratis online-visning (arrangørplattform), ikke en bekreftet sending."
-      }
-    },
-    "title": "Gruppespill runde 5 (Carlsen)",
-    "time": "2026-11-15T14:00:00Z",
-    "endTime": "2026-11-15T19:30:00Z",
-    "id": "tc26carlr5a1",
-    "summary": "Magnus Carlsen spiller gruppespillets siste runde (runde 5) i Total Chess-pilotens hovedturnering i Budapest – to hurtig-klassiske partier, parti 1 kl. 15.00 og parti 2 kl. 18.30 norsk tid. Avgjør om han når utslagsspillet.\n\nFormat: fire grupper à seks spillere, dobbel serie, seier 3 / remis 1 poeng. De to beste i hver gruppe går videre til semifinalene (17.–18. nov), finalen spilles 19.–20. nov.\n\nIngen norsk TV-rettighet – følg gratis direkte hos arrangøren World Chess (worldchess.com) og chess.com."
   }
 ]

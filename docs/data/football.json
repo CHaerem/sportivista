@@ -1,36 +1,97 @@
 {
-  "lastUpdated": "2026-11-13T20:17:58.895Z",
+  "lastUpdated": "2026-11-14T01:15:10.326Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
-      "name": "Copa del Rey",
+      "name": "Eliteserien",
       "events": [
         {
-          "id": "football-celta-vigo-at-salamanca-uds-1794600000000",
-          "title": "Celta Vigo at Salamanca UDS",
-          "time": "2026-11-13T20:00:00.000Z",
-          "venue": "Estadio Helmántico",
+          "id": "football-molde-–-bodø/glimt-1795197600000",
+          "title": "Molde – Bodø/Glimt",
+          "time": "2026-11-20T18:00:00.000Z",
+          "venue": "Aker Stadion",
           "sport": "football",
-          "meta": "Copa del Rey",
-          "tournament": "Copa del Rey",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
           "streaming": [
             {
-              "platform": "ESPN+",
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Molde",
+          "awayTeam": "Bodø/Glimt",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": true,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        }
+      ]
+    },
+    {
+      "name": "La Liga",
+      "events": [
+        {
+          "id": "football-espanyol-at-athletic-club-1795204800000",
+          "title": "Espanyol at Athletic Club",
+          "time": "2026-11-20T20:00:00.000Z",
+          "venue": "San Mamés",
+          "sport": "football",
+          "meta": "La Liga",
+          "tournament": "La Liga",
+          "streaming": [
+            {
+              "platform": "ESPN Deportes",
               "url": "",
               "type": "tv"
             }
           ],
           "norwegian": false,
-          "homeTeam": "Salamanca UDS",
-          "awayTeam": "Celta Vigo",
+          "homeTeam": "Athletic Club",
+          "awayTeam": "Espanyol",
           "participants": [],
           "norwegianPlayers": [],
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_FIRST_HALF"
+            "status": "STATUS_SCHEDULED"
           }
-        },
+        }
+      ]
+    },
+    {
+      "name": "Bundesliga",
+      "events": [
+        {
+          "id": "football-fc-cologne-at-bayern-munich-1795203000000",
+          "title": "FC Cologne at Bayern Munich",
+          "time": "2026-11-20T19:30:00.000Z",
+          "venue": "Allianz Arena",
+          "sport": "football",
+          "meta": "Bundesliga",
+          "tournament": "Bundesliga",
+          "streaming": [],
+          "norwegian": false,
+          "homeTeam": "Bayern Munich",
+          "awayTeam": "FC Cologne",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Copa del Rey",
+      "events": [
         {
           "id": "football-real-unión-irun-at-portugalete-1795024800000",
           "title": "Real Unión Irun at Portugalete",
