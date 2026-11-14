@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-14T11:56:15.084Z",
+  "generatedAt": "2026-11-14T17:39:08.394Z",
   "windowDays": 180,
   "records": {
-    "used": 755,
+    "used": 760,
     "skipped": 18
   },
   "sources": {
@@ -1777,13 +1777,17 @@
       "reliability": null
     },
     "espn.com": {
-      "checks": 3,
-      "agreed": 3,
+      "checks": 5,
+      "agreed": 5,
       "corrections": 0,
       "bySport": {
         "football": {
           "checks": 3,
           "agreed": 3
+        },
+        "golf": {
+          "checks": 2,
+          "agreed": 2
         }
       },
       "byField": {
@@ -1792,12 +1796,12 @@
           "agreed": 2
         },
         "existence": {
-          "checks": 1,
-          "agreed": 1
+          "checks": 3,
+          "agreed": 3
         }
       },
-      "lastChecked": "2026-08-20T05:54:56Z",
-      "reliability": null
+      "lastChecked": "2026-11-14T12:30:00Z",
+      "reliability": 1
     },
     "sofascore.com": {
       "checks": 5,
@@ -3299,13 +3303,13 @@
       "reliability": null
     },
     "worldchess.com": {
-      "checks": 4,
-      "agreed": 4,
+      "checks": 5,
+      "agreed": 5,
       "corrections": 0,
       "bySport": {
         "chess": {
-          "checks": 4,
-          "agreed": 4
+          "checks": 5,
+          "agreed": 5
         }
       },
       "byField": {
@@ -3314,12 +3318,12 @@
           "agreed": 2
         },
         "time": {
-          "checks": 2,
-          "agreed": 2
+          "checks": 3,
+          "agreed": 3
         }
       },
-      "lastChecked": "2026-11-11T12:54:38Z",
-      "reliability": null
+      "lastChecked": "2026-11-14T12:30:00Z",
+      "reliability": 1
     },
     "tv2.dk": {
       "checks": 1,
@@ -3383,13 +3387,13 @@
       "reliability": null
     },
     "fide.com": {
-      "checks": 3,
-      "agreed": 3,
+      "checks": 4,
+      "agreed": 4,
       "corrections": 0,
       "bySport": {
         "chess": {
-          "checks": 3,
-          "agreed": 3
+          "checks": 4,
+          "agreed": 4
         }
       },
       "byField": {
@@ -3400,9 +3404,13 @@
         "existence": {
           "checks": 2,
           "agreed": 2
+        },
+        "streaming": {
+          "checks": 1,
+          "agreed": 1
         }
       },
-      "lastChecked": "2026-11-10T13:42:06.001Z",
+      "lastChecked": "2026-11-14T12:30:00Z",
       "reliability": null
     },
     "robinhood.com": {
@@ -4407,6 +4415,25 @@
         }
       },
       "lastChecked": "2026-11-13T13:16:24Z",
+      "reliability": null
+    },
+    "snowtrex.co.uk": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "ski jumping": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-11-14T12:30:00Z",
       "reliability": null
     }
   }
