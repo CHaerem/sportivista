@@ -1,5 +1,11 @@
 [
   {
+    "runAt": "2026-11-14T21:57:22.394Z",
+    "verdict": "quiet",
+    "reason": "RSS (55 items, 21:56 UTC Nov 14): match results & live coverage (Norway v Wales Nations League finalized, Denmark v Portugal Nations League, NWSL final—Washington Spirit beat Utah, chess Magnus Carlsen at London Chess Classic, skiing/cycling/speed skating results, transfer gossip and analysis). No schedule/time/venue changes to upcoming tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints, no tracked-athlete imminent event announcements. Coverage gaps (8 gaps, 1 anomaly): Casper Ruud (tennis, tracked, imminent=today) already escalated 18:40 UTC today—research agent notified. All other gaps imminent=false (entity gaps from live match coverage or far-future July/August 2027 tracked-claims). cycling.json empty (low severity, pre-existing). Escalation cap today (Nov 14 UTC): 2/2 (Carlsen at 01:02, Casper Ruud at 18:40)—cap reached. No NEW concrete schedule/time/venue/streaming/broadcaster signal beyond what's already been escalated.",
+    "signals": []
+  },
+  {
     "runAt": "2026-11-14T18:40:00.000Z",
     "verdict": "escalate",
     "reason": "Coverage gaps (Nov 14 18:40 UTC): IMMINENT TRACKED-CLAIM SIGNAL — Casper Ruud (tracked athlete, tennis): claimedDate 2026-11-14 (TODAY), imminent=true, tracked interest claiming board coverage but ZERO matching event on board. Tracked + imminent + missing = escalation-worthy. RSS (28 items, 17:38 UTC Nov 14): all match results & gossip (Norway v Wales Nations League ongoing, ski results, speed skating results, transfer chatter—no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements, no 100 Thieves/rain CS2 match hints). Escalation cap today (Nov 14 UTC) before this run: 1/2 (Carlsen at 01:02).",
