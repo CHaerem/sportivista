@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T17:39:08.318Z",
+  "generatedAt": "2026-11-14T21:57:22.394Z",
   "gapCount": 8,
   "anomalyCount": 1,
   "gaps": [
@@ -8,33 +8,33 @@
       "entity": "Manchester City",
       "type": "missing",
       "imminent": false,
-      "headline": "Chelsea go top of WSL as Sandy Baltimore bullet sees off Manchester City",
-      "link": "https://www.theguardian.com/football/2026/nov/14/chelsea-manchester-city-womens-super-league-match-report",
-      "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-11-14T17:39:07.116Z"
+      "headline": "Haaland om City-dommen: – Jeg sliter litt med å svare på det",
+      "link": "https://www.aftenposten.no/sport/i/1vn50W/haaland-om-city-dommen-jeg-sliter-litt-med-aa-svare-paa-det?utm_medium=rss",
+      "feed": "aftenposten-sport",
+      "matchCount": 4,
+      "detectedAt": "2026-11-14T21:57:21.478Z"
     },
     {
       "kind": "entity",
       "entity": "Real Madrid",
       "type": "missing",
       "imminent": false,
-      "headline": "Herja med Real Madrid-kapteinen: – Ville ikkje snakke med meg",
-      "link": "https://www.nrk.no/sport/nusa-herja-med-real-madrid-kapteinen_-_-ville-ikkje-snakke-med-meg-1.18080529",
-      "feed": "nrk-sport",
+      "headline": "Uro før nøkkelkamp: – Det påvirker meg",
+      "link": "https://www.tv2.no/a/19427825",
+      "feed": "tv2-sport",
       "matchCount": 1,
-      "detectedAt": "2026-11-14T17:39:07.116Z"
+      "detectedAt": "2026-11-14T21:57:21.478Z"
     },
     {
       "kind": "entity",
-      "entity": "Nasjonsligaen",
+      "entity": "Spirit",
       "type": "missing",
       "imminent": false,
-      "headline": "Nederland med knockout i Nasjonsligaen",
-      "link": "https://www.nrk.no/sport/nederland-med-knockout-i-nasjonsligaen-1.18081680",
-      "feed": "nrk-sport",
+      "headline": "Clara Luvanga strikes as Washington Spirit beat Utah to reach third straight NWSL final",
+      "link": "https://www.theguardian.com/football/2026/nov/14/washington-spirit-utah-royals-nwsl-semi-final-clara-luvanga",
+      "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-11-14T17:39:07.116Z"
+      "detectedAt": "2026-11-14T21:57:21.478Z"
     },
     {
       "kind": "tracked-claim",
@@ -46,7 +46,7 @@
       "claimedDate": "2027-07-17T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "obos-ligaen-2026",
-      "detectedAt": "2026-11-14T17:39:08.124Z"
+      "detectedAt": "2026-11-14T21:57:22.204Z"
     },
     {
       "kind": "tracked-claim",
@@ -58,7 +58,7 @@
       "claimedDate": "2027-08-22T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "serie-a-2026-27",
-      "detectedAt": "2026-11-14T17:39:08.124Z"
+      "detectedAt": "2026-11-14T21:57:22.204Z"
     },
     {
       "kind": "tracked-claim",
@@ -70,7 +70,7 @@
       "claimedDate": "2026-11-14T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "casper-ruud",
-      "detectedAt": "2026-11-14T17:39:08.124Z"
+      "detectedAt": "2026-11-14T21:57:22.204Z"
     },
     {
       "kind": "tracked-claim",
@@ -82,7 +82,7 @@
       "claimedDate": "2026-12-20T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "elkjop-ligaen-2026-27",
-      "detectedAt": "2026-11-14T17:39:08.124Z"
+      "detectedAt": "2026-11-14T21:57:22.204Z"
     },
     {
       "kind": "tracked-claim",
@@ -94,7 +94,7 @@
       "claimedDate": "2026-12-28T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "nm-sluttspillet-menn-2026-27",
-      "detectedAt": "2026-11-14T17:39:08.124Z"
+      "detectedAt": "2026-11-14T21:57:22.204Z"
     }
   ],
   "anomalies": [
@@ -103,7 +103,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-14T17:39:08.173Z"
+      "detectedAt": "2026-11-14T21:57:22.241Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
