@@ -1640,6 +1640,60 @@
     "participants": []
   },
   {
+    "sport": "chess",
+    "tournament": "Total Chess World Championship Tour 2026",
+    "title": "Utslagsspill dag 1 (Carlsen)",
+    "time": "2026-11-17T14:00:00Z",
+    "endTime": "2026-11-17T19:30:00Z",
+    "venue": "Anantara New York Palace, Budapest",
+    "norwegian": false,
+    "norwegianPlayers": [
+      {
+        "name": "Magnus Carlsen",
+        "entityId": "magnus-carlsen"
+      }
+    ],
+    "participants": [],
+    "streaming": [
+      {
+        "platform": "DAZN (gratis)",
+        "url": "https://www.dazn.com/",
+        "urlKind": "landing"
+      },
+      {
+        "platform": "worldchess.com",
+        "url": "https://worldchess.com/",
+        "urlKind": "landing"
+      }
+    ],
+    "source": "ai-research",
+    "researchedAt": "2026-11-14T11:30:00Z",
+    "confidence": "medium",
+    "evidence": [
+      "catalog.json#tier2.tournaments",
+      "https://worldchess.com/news/total-chess-2026-everything-you-need-to-know",
+      "https://en.wikipedia.org/wiki/Total_Chess_World_Championship_2026",
+      "https://www.fide.com/?p=51252"
+    ],
+    "provenance": {
+      "time": {
+        "sourceId": "world-chess",
+        "url": "https://worldchess.com/news/total-chess-2026-everything-you-need-to-know",
+        "basis": "primary",
+        "retrievedAt": "2026-11-14T11:30:00Z"
+      },
+      "streaming": {
+        "sourceId": "world-chess",
+        "url": "https://www.fide.com/?p=51252",
+        "basis": "secondary",
+        "retrievedAt": "2026-11-14T11:30:00Z",
+        "note": "Kringkasting ikke endelig bekreftet av World Chess (worldchess.com: broadcast details yet to be confirmed; FIDE: sendeteam annonsert, plattform kommer). DAZN har en dokumentert gratis-visningsguide; worldchess.com/chess.com sannsynlig gratis online. Ingen norsk TV-rettighet funnet. Verify fyller når plattform kunngjøres."
+      }
+    },
+    "id": "1fe6f865e3dc",
+    "summary": "Magnus Carlsen starter utslagsspillet i Total Chess-pilotens hovedturnering i Budapest med dag 1 av en to-dagers utslagskamp (17.–18. nov), parti fra kl. 15.00 norsk tid.\n\nFormatet gjør oppmøtet sikkert selv om Carlsen har slitt i gruppespillet: etter Fast Classic-gruppespillet (runde 1–5, 11.–15. nov) ryker INGEN ut – alle 24 spillerne går videre til et utslagsspill-bracket etter gruppeplassering (gruppevinner → bracket 1, nr. 2 → bracket 2, osv.). Hvilket bracket og hvilken motstander Carlsen møter avgjøres når gruppespillet er ferdig 15. nov; semifinaledagene er 17.–18. nov, finalen 19.–20. nov.\n\nIngen norsk TV-rettighet funnet – følg gratis online (DAZN har en dokumentert gratis-visning; arrangøren World Chess/chess.com sannsynlig gratis). Sendedetaljer er ennå ikke endelig bekreftet av arrangøren."
+  },
+  {
     "sport": "football",
     "tournament": "UEFA Nations League",
     "title": "Danmark – Norge",
@@ -2745,59 +2799,5 @@
     },
     "summary": "Norge er regjerende europamester (gull i 2024) og toppseedet i gruppe B, som spilles i BTarena i Cluj-Napoca, Romania.\n\nSiste gruppespillkamp mot Nord-Makedonia tirsdag 8. desember kl. 20.00 (norsk tid), BTarena Cluj-Napoca. De tre beste i hver gruppe går videre til mellomrunden.\n\nNorsk visning delt TV3/Viaplay + TV 2/TV 2 Play (handball.no) — kanal per kamp bekreftes av verify.",
     "id": "cd512c3720a9"
-  },
-  {
-    "sport": "chess",
-    "tournament": "Total Chess World Championship Tour 2026",
-    "title": "Utslagsspill dag 1 (Carlsen)",
-    "time": "2026-11-17T14:00:00Z",
-    "endTime": "2026-11-17T19:30:00Z",
-    "venue": "Anantara New York Palace, Budapest",
-    "norwegian": false,
-    "norwegianPlayers": [
-      {
-        "name": "Magnus Carlsen",
-        "entityId": "magnus-carlsen"
-      }
-    ],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "DAZN (gratis)",
-        "url": "https://www.dazn.com/",
-        "urlKind": "landing"
-      },
-      {
-        "platform": "worldchess.com",
-        "url": "https://worldchess.com/",
-        "urlKind": "landing"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-11-14T11:30:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.tournaments",
-      "https://worldchess.com/news/total-chess-2026-everything-you-need-to-know",
-      "https://en.wikipedia.org/wiki/Total_Chess_World_Championship_2026",
-      "https://www.fide.com/?p=51252"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "world-chess",
-        "url": "https://worldchess.com/news/total-chess-2026-everything-you-need-to-know",
-        "basis": "primary",
-        "retrievedAt": "2026-11-14T11:30:00Z"
-      },
-      "streaming": {
-        "sourceId": "world-chess",
-        "url": "https://www.fide.com/?p=51252",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-14T11:30:00Z",
-        "note": "Kringkasting ikke endelig bekreftet av World Chess (worldchess.com: broadcast details yet to be confirmed; FIDE: sendeteam annonsert, plattform kommer). DAZN har en dokumentert gratis-visningsguide; worldchess.com/chess.com sannsynlig gratis online. Ingen norsk TV-rettighet funnet. Verify fyller når plattform kunngjøres."
-      }
-    },
-    "id": "1fe6f865e3dc",
-    "summary": "Magnus Carlsen starter utslagsspillet i Total Chess-pilotens hovedturnering i Budapest med dag 1 av en to-dagers utslagskamp (17.–18. nov), parti fra kl. 15.00 norsk tid.\n\nFormatet gjør oppmøtet sikkert selv om Carlsen har slitt i gruppespillet: etter Fast Classic-gruppespillet (runde 1–5, 11.–15. nov) ryker INGEN ut – alle 24 spillerne går videre til et utslagsspill-bracket etter gruppeplassering (gruppevinner → bracket 1, nr. 2 → bracket 2, osv.). Hvilket bracket og hvilken motstander Carlsen møter avgjøres når gruppespillet er ferdig 15. nov; semifinaledagene er 17.–18. nov, finalen 19.–20. nov.\n\nIngen norsk TV-rettighet funnet – følg gratis online (DAZN har en dokumentert gratis-visning; arrangøren World Chess/chess.com sannsynlig gratis). Sendedetaljer er ennå ikke endelig bekreftet av arrangøren."
   }
 ]
