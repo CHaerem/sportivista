@@ -1,15 +1,14 @@
 {
-  "runAt": "2026-11-13T13:16:24Z",
-  "checked": 4,
-  "confirmed": 4,
+  "runAt": "2026-11-14T12:30:00Z",
+  "checked": 5,
+  "confirmed": 3,
   "amended": 0,
   "removed": 0,
   "notes": [
-    "Fire kommende AI-research-events i 7-dagersvinduet re-verifisert mot ferske kilder — alle CONFIRMED, ingen felt-endringer nødvendig (tid/sted/streaming/proveniens var allerede korrekte fra forrige kjøring). verifiedAt bumpet til i dag; dagens korroborerende kilder lagt til verificationSources.",
-    "Levi slalåm kvinner 14.11 09:00 UTC + menn 15.11 09:00 UTC — CONFIRMED. Tid: 1. omgang 10:00 CET (=09:00 UTC), 2. omgang 13:00 CET, begge dager (oasport.it, direkte hentet). De CET-baserte sendeguidene (italiensk + tysk) lister 10:00, som konsistent gir 09:00 UTC — lokal finsk (EET) starttid er 11:00. Streaming TV 2 Play CONFIRMED mot TV 2s sesongpresse (kommunikasjon.ntb.no/19113452): Levi ligger på TV 2 for 2026/27.",
-    "Norge–Wales 14.11 17:00 UTC (Ullevaal) — CONFIRMED mot UEFA-terminliste + fourfourtwo: Nations League Liga A gruppe A4, lør 14.11 kl 18:00 CET (=17:00 UTC). TV 2 / TV 2 Play bekreftet (TV 2 sendte returkampen i Cardiff 1.10 — norske landslaget på TV 2).",
-    "Danmark–Norge 17.11 19:45 UTC (Parken) — CONFIRMED mot sofascore + fotball.no: Nations League A4 siste runde, tir 17.11 kl 20:45 CET (=19:45 UTC), Parken København. (Én kilde, Weekend Goals, oppga feilaktig Odense — flertallet og board har Parken, som er rett.) TV 2 / TV 2 Play.",
-    "SKILL OPPDATERT (durabel læring, utført denne kjøringen): norwegian-rights-skillens alpin-linje «Alpine → Viaplay [verify]» var utdatert og er erstattet med 2026/27-splitten per renn: TV 2 Play (Levi, St. Moritz, Val Gardena, Alta Badia, Chamonix, Kranjska Gora, Saalbach, Garmisch, Soldeu), Viaplay (Sölden, Gurgl, Madonna, Courchevel, Bormio, Gosau, Sun Valley), NRK (renn i Norge + alpin-VM Crans-Montana). Forrige verify-log noterte at skill-Edit var «blokkert av en tillatelses-forespørsel» — det var WP-91-feildiagnosen prompten eksplisitt advarer mot: Edit mot .claude/skills/**/SKILL.md fungerte uten problem i denne økta.",
-    "Ingen deltaker-/cut-sjekk relevant: de fire eventene er enkeltkamper/enkeltrenn (ikke flerdagsturneringer med pågående vindu), og knockout-feltene er ikke aktuelle."
+    "Fokus: AI-research-/in-progress-events i 7-dagersvinduet (14.–21. nov) som ikke alt var ferskverifisert. Levi-alpint (14./15.11) + Norge–Wales (14.11) + Danmark–Norge (17.11) ble verifisert i går (13.11) og ble derfor ikke re-sjekket.",
+    "CHESS — Total Chess Budapest, tre Carlsen-events CONFIRMED mot worldchess.com (arrangør, primær) + fide.com: gruppespill runde 4 (14.11 14:00 UTC) + runde 5 (15.11 14:00 UTC) + utslagsspill dag 1 (17.11 14:00 UTC). Arrangørens publiserte program: gruppespill slutter 15.11 (R5), hviledag 16.11, utslagsspill-semifinaler 17.–18.11, finaler 19.–20.11 — board-datoene/-tidene (partier 15.00/18.30 norsk = 14.00/17.30 UTC) stemmer. Streaming forblir ÆRLIG UBEKREFTET: FIDE sier «broadcast information will be announced in the coming weeks»; board lister worldchess.com/chess.com (+ DAZN for 17.11) som sannsynlig gratis online med eksplisitt ubekreftet-note, ingen norsk TV-rettighet. Ingen feltendring nødvendig.",
+    "GOLF WP-95 deltaker-sjekk (to pågående flerdagsturneringer med fulgte norske spillere, lest direkte mot ESPN golf-scoreboard-API): Kristoffer Ventura i Austin Championship (PGA) — runde 2 suspended, -11 (order 4), langt klar av cut → AKTIV, ingen status-endring. Kristoffer Reitan i DP World Tour Championship (50-spillers no-cut sesongfinale) — runde 2 play-complete, -4 (order 3) → AKTIV. Begge norwegianPlayers-oppføringer korrekt uten status-felt (de er i spill).",
+    "SKI JUMPING — Lillehammer hopp-VC-åpning 20.–22.11 (lagkonk. HS140 fre. 20.11 + individuelt HS140 dame/herre lør. 21. + søn. 22.): dato/sted/struktur bekreftet (snowtrex/allsportdb), men FIS har fortsatt IKKE publisert offisielle starttider (TD-møte 19. nov). Boardets NRK-provisoriske tider (medium, provenance-note sier «verify låser mot FIS») står uendret — kan ikke forbedres før FIS-programmet publiseres. NRK-streaming (renn på norsk jord) uendret korrekt.",
+    "Ingen events fjernet; ingen avlyst/utsatt funnet. Fem calibration-ledger-linjer lagt til (2 golf existence, 1 chess time, 1 chess streaming, 1 ski jumping time) — golf/ski/chess-streaming merket boardWasProvisional der board-verdien var et provisorisk/ærlig-ubekreftet estimat kilden bekreftet."
   ]
 }
