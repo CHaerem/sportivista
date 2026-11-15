@@ -1669,20 +1669,26 @@
         "sourceId": "nrk",
         "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
         "basis": "secondary",
-        "retrievedAt": "2026-11-11T16:15:00Z",
-        "note": "FIS har ikke publisert offisielle starttider ennå (TD-møte 19. nov). Tid fra NRKs provisoriske vintersportplan (lagkonk. 16.00 CET = 15.00 UTC). Verify låser mot FIS-programmet nærmere rennet."
+        "retrievedAt": "2026-11-15T13:40:00Z",
+        "note": "Tid bekreftet (verify 15.11): NRKs vintersportplan lister mixed lagkonk. fre. 20. nov kl. 16.00 CET (= 15.00 UTC) på NRK; etusuora-kalenderen (aggregator) enig på 16.00 CET. FIS har ikke publisert offisiell starttids-PDF ennå (TD-møte 19. nov), så basis secondary — men to uavhengige kilder enige på slotten."
       },
       "streaming": {
         "sourceId": "nrk",
         "url": "https://tv.nrk.no/direkte",
         "basis": "official",
-        "retrievedAt": "2026-11-11T16:15:00Z",
-        "note": "Hopp på norsk jord (Lillehammer) går til NRK. FIS-verdenscupen i utlandet deles TV 2/Viaplay fra 2026/27, men norske renn er unntatt fra den avtalen og vises på NRK (bekreftet mot NRKs egen vintersportplan + regelen 'NRK sender alpint, langrenn, hopp og kombinert på norsk jord')."
+        "retrievedAt": "2026-11-15T13:40:00Z",
+        "note": "Hopp på norsk jord (Lillehammer) går til NRK — bekreftet mot NRKs egen vintersportplan (lister 'Hopp, mixed team, 16.00, NRK' 20.11). FIS-verdenscupen i utlandet deles TV 2/Viaplay fra 2026/27, men norske renn er unntatt og vises på NRK."
       }
     },
-    "summary": "Hoppsesongens verdenscupåpning i Lillehammer sparkes i gang med lagkonkurranse i den store bakken (HS140) i Lysgårdsbakken.\n\nNorsk visning: NRK. Renn på norsk jord er unntatt fra den nye TV 2/Viaplay-avtalen og går til NRK.\n\nStarttid er foreløpig (FIS ikke offisielt låst) — verify bekrefter mot FIS-programmet og startlista nærmere rennhelgen.",
+    "summary": "Hoppsesongens verdenscupåpning i Lillehammer sparkes i gang med lagkonkurranse i den store bakken (HS140) i Lysgårdsbakken.\n\nNorsk visning: NRK. Renn på norsk jord er unntatt fra den nye TV 2/Viaplay-avtalen og går til NRK.\n\nStarttid 16.00 (15.00 UTC) bekreftet mot NRKs sendeplan og etusuora-kalenderen; FIS' offisielle starttids-PDF kommer etter TD-møtet 19. nov.",
     "id": "bfed31a3422e",
-    "participants": []
+    "participants": [],
+    "verifiedAt": "2026-11-15T13:40:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
+      "https://etusuora.com/en/ski-jumping/world-cup/lillehammer"
+    ]
   },
   {
     "sport": "football",
@@ -1798,17 +1804,24 @@
         "sourceId": "formula1",
         "url": "https://www.formula1.com/en/racing/2026/las_vegas.html",
         "basis": "primary",
-        "retrievedAt": "2026-11-14T18:10:00Z"
+        "retrievedAt": "2026-11-15T13:40:00Z",
+        "note": "formula1.com (arrangøren, primær, lest direkte 15.11): kvalik 21. nov 04.00–05.00 UTC = fre. 20. nov kl. 20.00 lokal (Las Vegas UTC−8); løp 22. nov 04.00 UTC = lør. kveld lokal. Las Vegas kjører kvalik fredag kveld / løp lørdag kveld lokalt (ikke lør/søn), så UTC-datoene faller dagen etter. RacingNews365 enig på dag."
       },
       "streaming": {
         "sourceId": "viaplay",
         "url": "https://viaplay.no/no-no/sport",
         "basis": "official",
-        "retrievedAt": "2026-11-14T18:10:00Z"
+        "retrievedAt": "2026-11-15T13:40:00Z"
       }
     },
-    "summary": "Kvalifiseringen avgjør startoppstillingen for løpet lør. kveld lokal tid (søn. 22. nov kl. 04.00 UTC).\n\nStandard GP-helg uten sprint. Tid bekreftet mot formula1.com (arrangøren, primær) + uavhengig write-time fact-check — ikke ESPN-feeden som feildaterer F1-helger (source-quirks).\n\nNorsk visning Viaplay (alle F1-økter).",
-    "id": "b58e110c4ec5"
+    "summary": "Kvalifiseringen avgjør startoppstillingen for løpet lør. kveld lokal tid (søn. 22. nov kl. 04.00 UTC).\n\nStandard GP-helg uten sprint. Tid bekreftet mot formula1.com (arrangøren, primær): kvalik fre. 20. nov kl. 20.00 lokal (Las Vegas, UTC−8) = 21. nov kl. 04.00 UTC — ikke ESPN-feeden som feildaterer F1-helger (source-quirks).\n\nNorsk visning Viaplay (alle F1-økter).",
+    "id": "b58e110c4ec5",
+    "verifiedAt": "2026-11-15T13:40:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.formula1.com/en/racing/2026/las_vegas.html",
+      "https://racingnews365.com/f1/races/gp-las-vegas"
+    ]
   },
   {
     "sport": "alpine",
@@ -1990,20 +2003,26 @@
         "sourceId": "nrk",
         "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
         "basis": "secondary",
-        "retrievedAt": "2026-11-11T16:15:00Z",
-        "note": "FIS har ikke publisert offisielle starttider ennå. Tid fra provisorisk norsk programliste (kvinner ~14.35 CET = 13.35 UTC, innenfor NRKs oppgitte 14.00–16.50-blokk lørdag). PROVISORISK — verify låser mot FIS-programmet."
+        "retrievedAt": "2026-11-15T13:40:00Z",
+        "note": "Tid bekreftet (verify 15.11): NRKs vintersportplan lister kvinnenes HS140-renn lør. 21. nov kl. 14.35 CET (= 13.35 UTC) på NRK; etusuora-kalenderen enig på 14.35. FIS' offisielle starttids-PDF ennå ikke publisert (TD-møte 19. nov), så basis secondary — men to uavhengige kilder enige."
       },
       "streaming": {
         "sourceId": "nrk",
         "url": "https://tv.nrk.no/direkte",
         "basis": "official",
-        "retrievedAt": "2026-11-11T16:15:00Z",
-        "note": "Hopp på norsk jord (Lillehammer) går til NRK. FIS-verdenscupen i utlandet deles TV 2/Viaplay fra 2026/27, men norske renn er unntatt fra den avtalen og vises på NRK (bekreftet mot NRKs egen vintersportplan + regelen 'NRK sender alpint, langrenn, hopp og kombinert på norsk jord')."
+        "retrievedAt": "2026-11-15T13:40:00Z",
+        "note": "Hopp på norsk jord (Lillehammer) går til NRK — bekreftet mot NRKs egen vintersportplan (lister 'Hopp, stor bakke, kvinner, 14.35, NRK' 21.11). FIS-verdenscupen i utlandet deles TV 2/Viaplay fra 2026/27, men norske renn er unntatt og vises på NRK."
       }
     },
-    "summary": "Første individuelle verdenscuprenn for kvinner denne sesongen, i stor bakke (HS140) i Lillehammer.\n\nNorsk visning: NRK (renn på norsk jord).\n\nLørdagens starttider er foreløpige anslag innenfor NRKs oppgitte 14.00–16.50-vindu; FIS har ikke låst offisielt program ennå. Verify bekrefter eksakt tid.",
+    "summary": "Første individuelle verdenscuprenn for kvinner denne sesongen, i stor bakke (HS140) i Lillehammer.\n\nNorsk visning: NRK (renn på norsk jord).\n\nStarttid 14.35 (13.35 UTC) bekreftet mot NRKs sendeplan og etusuora-kalenderen; FIS' offisielle starttids-PDF kommer etter TD-møtet 19. nov.",
     "id": "7c82aa05c603",
-    "participants": []
+    "participants": [],
+    "verifiedAt": "2026-11-15T13:40:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
+      "https://etusuora.com/en/ski-jumping/world-cup/lillehammer"
+    ]
   },
   {
     "sport": "football",
@@ -2427,20 +2446,26 @@
         "sourceId": "nrk",
         "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
         "basis": "secondary",
-        "retrievedAt": "2026-11-11T16:15:00Z",
-        "note": "FIS har ikke publisert offisielle starttider ennå. Tid fra provisorisk norsk programliste (menn ~16.50 CET = 15.50 UTC, sist i NRKs 14.00–16.50-blokk lørdag). PROVISORISK — verify låser mot FIS-programmet."
+        "retrievedAt": "2026-11-15T13:40:00Z",
+        "note": "Tid bekreftet (verify 15.11): NRKs vintersportplan lister mennenes HS140-renn lør. 21. nov kl. 16.50 CET (= 15.50 UTC) på NRK; etusuora-kalenderen enig på 16.50. FIS' offisielle starttids-PDF ennå ikke publisert (TD-møte 19. nov), så basis secondary — men to uavhengige kilder enige."
       },
       "streaming": {
         "sourceId": "nrk",
         "url": "https://tv.nrk.no/direkte",
         "basis": "official",
-        "retrievedAt": "2026-11-11T16:15:00Z",
-        "note": "Hopp på norsk jord (Lillehammer) går til NRK. FIS-verdenscupen i utlandet deles TV 2/Viaplay fra 2026/27, men norske renn er unntatt fra den avtalen og vises på NRK (bekreftet mot NRKs egen vintersportplan + regelen 'NRK sender alpint, langrenn, hopp og kombinert på norsk jord')."
+        "retrievedAt": "2026-11-15T13:40:00Z",
+        "note": "Hopp på norsk jord (Lillehammer) går til NRK — bekreftet mot NRKs egen vintersportplan (lister 'Hopp, stor bakke, menn, 16.50, NRK' 21.11). FIS-verdenscupen i utlandet deles TV 2/Viaplay fra 2026/27, men norske renn er unntatt og vises på NRK."
       }
     },
-    "summary": "Første individuelle verdenscuprenn for menn denne sesongen, i stor bakke (HS140) i Lillehammer. Norske hoppere med Lindvik, Forfang og Granerud i spissen på hjemmebakke.\n\nNorsk visning: NRK (renn på norsk jord).\n\nLørdagens starttid er et foreløpig anslag innenfor NRKs oppgitte 14.00–16.50-vindu; FIS ikke offisielt låst. Verify bekrefter eksakt tid.",
+    "summary": "Første individuelle verdenscuprenn for menn denne sesongen, i stor bakke (HS140) i Lillehammer. Norske hoppere med Lindvik, Forfang og Granerud i spissen på hjemmebakke.\n\nNorsk visning: NRK (renn på norsk jord).\n\nStarttid 16.50 (15.50 UTC) bekreftet mot NRKs sendeplan og etusuora-kalenderen; FIS' offisielle starttids-PDF kommer etter TD-møtet 19. nov.",
     "id": "50dcb15b51a1",
-    "participants": []
+    "participants": [],
+    "verifiedAt": "2026-11-15T13:40:00Z",
+    "verificationStatus": "confirmed",
+    "verificationSources": [
+      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
+      "https://etusuora.com/en/ski-jumping/world-cup/lillehammer"
+    ]
   },
   {
     "sport": "football",
