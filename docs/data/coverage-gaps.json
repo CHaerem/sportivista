@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T12:28:37.124Z",
+  "generatedAt": "2026-11-15T19:14:40.280Z",
   "gapCount": 6,
   "anomalyCount": 1,
   "gaps": [
@@ -12,7 +12,7 @@
       "link": "https://www.theguardian.com/football/2026/nov/14/washington-spirit-utah-royals-nwsl-semi-final-clara-luvanga",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-11-15T12:28:36.024Z"
+      "detectedAt": "2026-11-15T19:14:39.115Z"
     },
     {
       "kind": "entity",
@@ -23,7 +23,7 @@
       "link": "https://www.theguardian.com/football/2026/nov/15/afc-wimbledon-a-failed-87m-investment-bid-and-the-challenge-for-fan-ownership",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-11-15T12:28:36.024Z"
+      "detectedAt": "2026-11-15T19:14:39.115Z"
     },
     {
       "kind": "tracked-claim",
@@ -35,7 +35,7 @@
       "claimedDate": "2027-07-17T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "obos-ligaen-2026",
-      "detectedAt": "2026-11-15T12:28:36.894Z"
+      "detectedAt": "2026-11-15T19:14:40.054Z"
     },
     {
       "kind": "tracked-claim",
@@ -47,7 +47,7 @@
       "claimedDate": "2026-11-15T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "casper-ruud",
-      "detectedAt": "2026-11-15T12:28:36.894Z"
+      "detectedAt": "2026-11-15T19:14:40.054Z"
     },
     {
       "kind": "tracked-claim",
@@ -59,7 +59,7 @@
       "claimedDate": "2026-12-20T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "elkjop-ligaen-2026-27",
-      "detectedAt": "2026-11-15T12:28:36.894Z"
+      "detectedAt": "2026-11-15T19:14:40.054Z"
     },
     {
       "kind": "tracked-claim",
@@ -71,7 +71,7 @@
       "claimedDate": "2026-12-28T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "nm-sluttspillet-menn-2026-27",
-      "detectedAt": "2026-11-15T12:28:36.894Z"
+      "detectedAt": "2026-11-15T19:14:40.054Z"
     }
   ],
   "anomalies": [
@@ -80,7 +80,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-15T12:28:36.941Z"
+      "detectedAt": "2026-11-15T19:14:40.101Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."

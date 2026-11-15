@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T12:28:35.767Z",
+  "generatedAt": "2026-11-15T19:14:38.866Z",
   "windowDays": 14,
   "ports": {
     "coverage": "yellow",
@@ -27,7 +27,7 @@
       "medium": 3,
       "low": 1
     },
-    "oldestGapAgeDays": 19.12,
+    "oldestGapAgeDays": 19.41,
     "escalatable": 2,
     "catalogMatched": 3,
     "auditedAt": "2026-11-15T11:40:00Z",
@@ -35,28 +35,28 @@
       {
         "interest": "Langrenn — VC-premieren Ruka/Kuusamo (Nordic Opening, 27.–29. nov, NRK)",
         "severity": "medium",
-        "ageDays": 18.11,
+        "ageDays": 18.4,
         "recurrences": 16,
         "catalogMatched": true
       },
       {
         "interest": "Alpint — Verdenscupen fortsetter Copper Mountain (menn) + Killington (kvinner) ~28.–29. nov",
         "severity": "medium",
-        "ageDays": 19.12,
+        "ageDays": 19.41,
         "recurrences": 17,
         "catalogMatched": false
       },
       {
         "interest": "Håndball — Elkjøp-ligaen (menn + kvinner) domestiske runder IKKE på tavla",
         "severity": "medium",
-        "ageDays": 0.03,
+        "ageDays": 0.32,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — NM-cupen menn FINALE (Bergen vs Elverum, Oslo Spektrum ~28. des)",
         "severity": "low",
-        "ageDays": 3.06,
+        "ageDays": 3.34,
         "recurrences": 2,
         "catalogMatched": true
       }
@@ -64,11 +64,11 @@
   },
   "amendRate": {
     "nearTermRate": 0,
-    "nearTermChecked": 5,
+    "nearTermChecked": 4,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-11-14T12:30:00Z",
+    "verifyRunAt": "2026-11-15T13:40:00Z",
     "windowRate": 0,
-    "windowChecks": 60,
+    "windowChecks": 65,
     "windowAmendments": 0,
     "windowCorrections": 6,
     "byDay": [
@@ -148,30 +148,35 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-11-15",
+        "checks": 5,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-15T12:28:33.873Z",
+    "buildCheckedAt": "2026-11-15T19:14:37.139Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-15T10:15:04.715Z",
-    "manifestAgeHours": 2.23,
+    "manifestGeneratedAt": "2026-11-15T12:28:37.346Z",
+    "manifestAgeHours": 6.77,
     "staleFiles": []
   },
   "participantStatus": {
-    "checkedAt": "2026-11-14T12:30:00Z",
-    "verifyAgeHours": 23.98,
-    "corrections": 1,
+    "checkedAt": "2026-11-15T13:40:00Z",
+    "verifyAgeHours": 5.58,
+    "corrections": 0,
     "unresolved": 0,
-    "signals": [
-      "GOLF WP-95 deltaker-sjekk (to pågående flerdagsturneringer med fulgte norske spillere, lest direkte mot ESPN golf-scoreboard-API): Kristoffer Ventura i Austi…"
-    ]
+    "signals": []
   },
   "contracts": {
     "total": 9,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-11-15T12:28:35.767Z"
+    "generatedAt": "2026-11-15T19:14:38.866Z"
   }
 }
