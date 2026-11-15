@@ -1,22 +1,15 @@
 {
-  "checkedAt": "2026-11-13T00:00:00.000Z",
+  "checkedAt": "2026-11-15T15:13:55Z",
   "widths": [375, 393, 900],
-  "verdict": "issues",
-  "findings": [
-    {
-      "width": 900,
-      "area": "Direkte nå · live chess row",
-      "issue": "\"Round 5 – Total Chess World Championship Tour Pilot 2026 | Group Stage | Combined\" lists its channel as \"DAZN\" (visible at all three widths). Every other channel on the board is a Norwegian option (TV 2, TV 2 Play, Viaplay, HBO Max (Sport), NRK); DAZN does not match any of those and stands out as a likely foreign/non-Norwegian broadcaster. Worth a human check of whether DAZN is a genuine Norwegian viewing option for this event.",
-      "severity": "medium"
-    }
-  ],
+  "verdict": "pass",
+  "findings": [],
   "notes": [
-    "Match names fully readable at all three widths, no truncation that hides key info; both sides of every fixture (Norge – Wales, Danmark – Norge, Salamanca UDS – Celta Vigo, the Copa del Rey pairings) are legible.",
-    "Channel column otherwise honest and Norwegian: '–' shown for genuinely unknown channels (Bybit Stockholm Open, FAGE WTA Finals Indian Wells, lower-tier Copa del Rey matches), Norwegian options elsewhere (TV 2 / TV 2 Play, Viaplay, HBO Max (Sport) +1, NRK) — no FOX/ESPN/Sky seen.",
-    "National flags render correctly (🇳🇴 on Austin Championship, DP World Tour Championship, Norge–Wales, Danmark–Norge, Lillehammer; a proper Celta Vigo shield crest) — no broken-image icons or empty boxes.",
-    "No horizontal scroll or clipped content at 375, 393, or 900px; header, day-group headings ('I DAG', 'I MORGEN', weekday headers), 'Neste opp', and footer all intact and aligned.",
-    "Single quiet column maintained at all widths; must-see accent dots used sparingly (not on every row).",
-    "Floating 'Assistent' button overlaps the mid-agenda 'Salamanca UDS – Celta Vigo' row at 375/393px (covering only the '–' separator between the two team names, both names stay fully readable) and sits over the 'Norge – Wales' row at 900px — matches DESIGN.md's sanctioned floating-button idiom (WP-146 variant D); it does not occlude the last agenda row or the footer, so not flagged as an issue.",
-    "Footer 'AI-budsjett: uke 52% · økt ?%' shows a literal '?' for the session figure — checked docs/data/usage-state.json, which has session: null, and docs/js/chrome.js intentionally falls back to '?' for a missing value (same honest-placeholder pattern as the '–' channel dash); working as designed, not a rendering bug."
+    "Single quiet column, generous spacing, scannable at all three widths — no horizontal scroll or clipped text, including at 375px.",
+    "No truncation found that hides key match info (checked long names like 'Borussia Mönchengladbach – Borussia Dortmund' and '1. FC Union Berlin – RB Leipzig' — both wrap cleanly to a second line instead of being cut off).",
+    "Every channel shown is Norwegian (NRK, TV 2, TV 2 Play, Viaplay) or HBO Max (Sport) for the US golf events — no FOX/ESPN/Sky. Some Bundesliga/Serie A rows show an honest '–' for channel, consistent with the design's honest-unknown pattern rather than a bug.",
+    "Flags and club crests render as small icons next to fixtures/tournaments; no broken-image placeholders observed.",
+    "Header (wordmark, date, theme toggle), day headings, and footer ('Dette dekker vi' / 'Merker og kilder') are all intact and aligned across widths.",
+    "The floating 'Assistent' button appeared only in the 900px screenshot, sitting mid-agenda over a Copa del Rey row — this matches the DESIGN.md-sanctioned floating-button idiom (not flagged) and did not occlude the last agenda row or the footer. It wasn't visible in the 375/393 full-page captures, which looks like a screenshot-stitching quirk for fixed-position elements rather than an app bug — noting it, not flagging it.",
+    "NESTE OPP widget (Magnus Carlsen, 100 Thieves, Gukesh Dommaraju, Brann) renders correctly with consistent 'om N dager' labels across widths."
   ]
 }
