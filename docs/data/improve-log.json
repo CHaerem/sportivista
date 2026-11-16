@@ -1,7 +1,7 @@
 {
 	"runAt": "2026-11-16T17:00:00Z",
 	"action": "opened-pr",
-	"pr": null,
+	"pr": "https://github.com/CHaerem/sportivista/pull/477",
 	"proposal": "Fix the recurring 'venue-blind vinter→NRK-klobb' in scripts/lib/norwegian-rights.js (the old single line 242: all winter sports → [CH.nrk]). Norwegian winter rights splintered for 2026/27 and are no longer resolvable by sport alone: biathlon (IBU World Cup) is NRK + TV 2 shared, split WEEKEND-BY-WEEKEND (Kontiolahti → TV 2 Play; Hochfilzen/Antholz → NRK), and alpine (FIS World Cup) is split PER RACE across TV 2 Play / Viaplay / NRK (Levi → TV 2 Play, Gurgl → Viaplay, Norwegian venues → NRK). The flat NRK default silently clobbered the researched channel on every static rebuild. The fix makes biathlon + alpine DECLINE to guess (return []) so the research/verify-supplied Norwegian channel survives — the exact guess-no-more pattern already used for the UEFA-qualifier and tiered-golf carve-outs in the same file. Cross-country, ski jumping and nordic combined keep the confident NRK default: the Norwegian-venue season openers (Beitostølen, Lillehammer hopp, Ruka langrenn) were all web-verified NRK this cycle.",
 	"evidence": [
 		"research-log.json 2026-11-15 WARNING-OBSERVASJON: 'validate-events melder 6 summary↔streaming-mismatch på Kontiolahti-skiskyting (summary navner TV 2, streaming[]=[NRK]) — den dokumenterte norwegian-rights.js L242 venue-blinde vinter→NRK-klobben; en bar research-streaming[]-redigering klobbes tilbake av pipelinen ... Korrekt kanal = TV 2 Play. STRUKTURELT self-repair/improve-flagg står.' Repeated as a carry-forward STRUKTURELT flag at the end of the same log.",
