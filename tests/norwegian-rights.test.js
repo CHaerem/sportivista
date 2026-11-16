@@ -47,6 +47,28 @@ describe("norwegianRights", () => {
 	it("Norwegian club in the Champions League GROUP stage → still TV 2 (only qualifiers are carved out)", () => {
 		expect(norwegianRights({ sport: "football", tournament: "UEFA Champions League 2026/27", norwegian: true })[0].platform).toBe("TV 2 Play");
 	});
+	it("biathlon → decline to guess (NRK + TV 2 weekend-split; Kontiolahti is TV 2 Play, not NRK)", () => {
+		// The old flat winter→NRK default clobbered the researched TV 2 Play channel on
+		// every rebuild (6 recurring Kontiolahti summary↔streaming mismatches). The
+		// weekend-by-weekend split isn't knowable from the sport alone → stand down.
+		expect(norwegianRights({ sport: "biathlon", title: "IBU VC Kontiolahti — 20 km menn" })).toEqual([]);
+		expect(norwegianRights({ sport: "biathlon", tournament: "IBU verdenscup skiskyting" })).toEqual([]);
+	});
+	it("alpine → decline to guess (TV 2 Play / Viaplay / NRK split per race)", () => {
+		// Levi → TV 2 Play, Gurgl → Viaplay, Norwegian venues → NRK: not resolvable by sport.
+		expect(norwegianRights({ sport: "alpine", title: "FIS verdenscup alpint — Gurgl slalåm" })).toEqual([]);
+		expect(norwegianRights({ sport: "alpine", tournament: "Levi slalom" })).toEqual([]);
+	});
+	it("cross-country / ski jumping / nordic combined → still NRK (Norwegian-venue openers web-verified 2026-11)", () => {
+		expect(norwegianRights({ sport: "cross-country", title: "Beitostølen 10 km klassisk" })[0].platform).toBe("NRK");
+		expect(norwegianRights({ sport: "ski jump", title: "Lillehammer HS140" })[0].platform).toBe("NRK");
+		expect(norwegianRights({ sport: "nordic combined", title: "Ruka" })[0].platform).toBe("NRK");
+	});
+	it("biathlon keeps its researched TV 2 Play channel through normalizeStreaming (no NRK clobber)", () => {
+		// The end-to-end fix: a researched TV 2 Play survives instead of being forced to NRK.
+		const s = normalizeStreaming({ sport: "biathlon", title: "IBU VC Kontiolahti", streaming: [{ platform: "TV 2 Play" }] });
+		expect(s.map((c) => c.platform)).toEqual(["TV 2 Play"]);
+	});
 });
 
 describe("normalizeStreaming", () => {
