@@ -1,15 +1,15 @@
 {
-  "checkedAt": "2026-11-15T15:13:55Z",
+  "checkedAt": "2026-11-16T17:49:21Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
     "Single quiet column, generous spacing, scannable at all three widths — no horizontal scroll or clipped text, including at 375px.",
-    "No truncation found that hides key match info (checked long names like 'Borussia Mönchengladbach – Borussia Dortmund' and '1. FC Union Berlin – RB Leipzig' — both wrap cleanly to a second line instead of being cut off).",
-    "Every channel shown is Norwegian (NRK, TV 2, TV 2 Play, Viaplay) or HBO Max (Sport) for the US golf events — no FOX/ESPN/Sky. Some Bundesliga/Serie A rows show an honest '–' for channel, consistent with the design's honest-unknown pattern rather than a bug.",
-    "Flags and club crests render as small icons next to fixtures/tournaments; no broken-image placeholders observed.",
-    "Header (wordmark, date, theme toggle), day headings, and footer ('Dette dekker vi' / 'Merker og kilder') are all intact and aligned across widths.",
-    "The floating 'Assistent' button appeared only in the 900px screenshot, sitting mid-agenda over a Copa del Rey row — this matches the DESIGN.md-sanctioned floating-button idiom (not flagged) and did not occlude the last agenda row or the footer. It wasn't visible in the 375/393 full-page captures, which looks like a screenshot-stitching quirk for fixed-position elements rather than an app bug — noting it, not flagging it.",
-    "NESTE OPP widget (Magnus Carlsen, 100 Thieves, Gukesh Dommaraju, Brann) renders correctly with consistent 'om N dager' labels across widths."
+    "No truncation found that hides key match info — long names like 'Borussia Mönchengladbach – Borussia Dortmund', '1. FC Union Berlin – RB Leipzig' and 'Lillehammer: Individuelt HS140 kvinner (søndag)' render in full.",
+    "Every channel shown is Norwegian (NRK, TV 2, TV 2 Play, Viaplay) or HBO Max (Sport) for the US PGA Tour event — no FOX/ESPN/Sky observed. Bundesliga/Serie A rows (e.g. 'Como – Cagliari', 'Napoli – Torino') show the honest faint '–' for unknown channel rather than omitting the line, consistent with the design's honest-unknown pattern — not a bug.",
+    "National flags and club crests render as small icons next to fixtures/tournaments; no broken-image placeholders observed.",
+    "Header (wordmark, date, theme toggle), day headings, and footer ('Dette dekker vi' / 'Merker og kilder') are intact and aligned across widths. Must-see accent dots appear sparingly (Lillehammer HS140, Vålerenga–Start, HamKam–Fredrikstad, F1/skiing weekend events) rather than on every row.",
+    "The floating 'Assistent' button only rendered in the 900px capture, sitting mid-agenda over a Copa del Rey row at Onsdag 18. november — matches the DESIGN.md-sanctioned floating-button idiom and did not occlude the last agenda row or footer. Not visible in the 375/393 full-page stitches.",
+    "'Neste opp' widget (Magnus Carlsen, 100 Thieves, Gukesh Dommaraju) renders correctly with consistent 'om N dager' labels across widths."
   ]
 }
