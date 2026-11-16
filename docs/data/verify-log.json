@@ -1,13 +1,14 @@
 {
-  "runAt": "2026-11-15T13:40:00Z",
-  "checked": 4,
-  "confirmed": 4,
+  "runAt": "2026-11-16T13:55:00Z",
+  "checked": 5,
+  "confirmed": 5,
   "amended": 0,
   "removed": 0,
   "notes": [
-    "Fokus: AI-research-events i 7-dagersvinduet (15.–22. nov) som IKKE allerede var ferskverifisert. Levi-alpint menn (15.11), Carlsen-sjakk (15.+17.11), Danmark–Norge (17.11) og Gurgl slalåm kvinner (21.11) ble verifisert 12.–14.11 og re-sjekkes ikke. De fire ennå uverifiserte near-term-eventene ble låst denne kjøringen.",
-    "F1 — Las Vegas GP kvalifisering (b58e110c4ec5) CONFIRMED mot formula1.com (arrangøren, primær, lest direkte): kvalik fre. 20. nov kl. 20.00 lokal (Las Vegas UTC−8) = 21. nov 04.00 UTC — matcher boardets lagrede tid eksakt. Las Vegas kjører kvalik fredag kveld / løp lørdag kveld lokalt, så UTC-datoen faller dagen etter; dette er IKKE ESPN-feildateringen (source-quirks). RacingNews365 enig på dag. Streaming Viaplay (authority.json f1:world-championship). provenance.time note + verifiedAt satt.",
-    "SKI JUMPING — Lillehammer hopp-VC-åpning: de tre near-term-rennene CONFIRMED mot NRKs egen vintersportplan (publisert sendeplan, ikke bare katalog): mixed lagkonk. HS140 fre. 20.11 kl. 16.00 CET = 15.00 UTC (bfed31a3422e); individuelt HS140 kvinner lør. 21.11 kl. 14.35 CET = 13.35 UTC (7c82aa05c603); individuelt HS140 menn lør. 21.11 kl. 16.50 CET = 15.50 UTC (50dcb15b51a1). Alle tre boardtidene stemmer eksakt med NRK-planen, og etusuora-kalenderen (aggregator) korroborerer uavhengig. Streaming NRK bekreftet (planen lister hvert renn på NRK; hopp på norsk jord). Tidene var provisoriske (medium, «verify låser mot FIS») → nå to-kilde-bekreftet. NB FIS' offisielle starttids-PDF er fortsatt ikke publisert (TD-møte 19. nov); hvis FIS justerer minuttet låser neste verify mot FIS-programmet.",
-    "Ingen events fjernet; ingen avlyst/utsatt funnet. Fem calibration-ledger-linjer lagt til (formula1.com time, racingnews365 time, nrk.no time + streaming, etusuora time); ski/f1-sekundærlinjer merket boardWasProvisional der board-verdien var provisorisk og kilden bekreftet den. Chess-/golf-/Levi-events uendret (ferskverifisert tidligere i uka)."
+    "Danmark-Norge (NL, 17.11): CONFIRMED — 20.45 CET/19.45 UTC, Parken Koebenhavn, TV 2/TV 2 Play (Oddscalendar+Sofascore+TechRadar). Solid tid re-bekreftet.",
+    "Total Chess Budapest, utslagsspill dag 1 (Carlsen, 17.11): CONFIRMED — worldchess.com: utslagsspill start 17. nov, blitz 15.00 CET = 14.00 UTC matcher boardet. Gratis via World Chess YouTube; ingen norsk TV-rettighet.",
+    "Lillehammer hopp soendag 22.11 (kvinner+menn HS140): CONFIRMED mot NRKs vintersportplan — 12.00 + 16.00 CET (11.00/15.00 UTC), NRK. Foerste verifisering av de to soendagsrennene.",
+    "Uendret (nylig verifisert, matcher): F1 Las Vegas kvalik (15.11, Viaplay), Gurgl slalaam dame/herre (12.11, Viaplay), Lillehammer loerdag 21.11 (15.11, NRK). FIS offisielle starttider kommer etter TD-moete 19.11; NRK-planen er ground truth til da.",
+    "Ingen fjernet; ingen avlyst/utsatt funnet."
   ]
 }
