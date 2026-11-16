@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-16T10:26:38.748Z",
+  "generatedAt": "2026-11-16T13:20:56.290Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "yellow",
+    "coverage": "red",
     "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
@@ -21,43 +21,50 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 4,
+    "openGaps": 5,
     "bySeverity": {
-      "high": 0,
+      "high": 1,
       "medium": 3,
       "low": 1
     },
-    "oldestGapAgeDays": 20.04,
-    "escalatable": 2,
+    "oldestGapAgeDays": 20.16,
+    "escalatable": 3,
     "catalogMatched": 3,
-    "auditedAt": "2026-11-15T11:40:00Z",
+    "auditedAt": "2026-11-16T12:30:00Z",
     "gaps": [
       {
-        "interest": "Langrenn — VC-premieren Ruka/Kuusamo (Nordic Opening, 27.–29. nov, NRK)",
-        "severity": "medium",
-        "ageDays": 19.03,
-        "recurrences": 16,
-        "catalogMatched": true
-      },
-      {
-        "interest": "Alpint — Verdenscupen fortsetter Copper Mountain (menn) + Killington (kvinner) ~28.–29. nov",
-        "severity": "medium",
-        "ageDays": 20.04,
-        "recurrences": 17,
+        "interest": "Langrenn — Beitostølen SESONGÅPNING 20.–22. nov (norsk VC-opptakt, NRK direkte)",
+        "severity": "high",
+        "ageDays": 0.04,
+        "recurrences": 0,
         "catalogMatched": false
       },
       {
-        "interest": "Håndball — Elkjøp-ligaen (menn + kvinner) domestiske runder IKKE på tavla",
+        "interest": "Langrenn — Ruka/Nordic Opening VC-premieren 27.–29. nov (NRK)",
         "severity": "medium",
-        "ageDays": 0.95,
-        "recurrences": 0,
+        "ageDays": 19.15,
+        "recurrences": 17,
+        "catalogMatched": true
+      },
+      {
+        "interest": "Alpint — Verdenscupen fortsetter Copper Mountain (menn) + Killington (kvinner) 28.–29. nov",
+        "severity": "medium",
+        "ageDays": 20.16,
+        "recurrences": 18,
+        "catalogMatched": false
+      },
+      {
+        "interest": "Håndball — REMA 1000-ligaen (tidl. Elkjøp-ligaen) menn + kvinner: domestiske runder IKKE på tavla",
+        "severity": "medium",
+        "ageDays": 1.07,
+        "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — NM-cupen menn FINALE (Bergen vs Elverum, Oslo Spektrum ~28. des)",
         "severity": "low",
-        "ageDays": 3.97,
-        "recurrences": 2,
+        "ageDays": 4.09,
+        "recurrences": 3,
         "catalogMatched": true
       }
     ]
@@ -160,15 +167,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-16T10:26:35.394Z",
+    "buildCheckedAt": "2026-11-16T13:20:52.021Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-16T01:30:32.744Z",
-    "manifestAgeHours": 8.94,
+    "manifestGeneratedAt": "2026-11-16T10:26:39.609Z",
+    "manifestAgeHours": 2.9,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-11-15T13:40:00Z",
-    "verifyAgeHours": 20.78,
+    "verifyAgeHours": 23.68,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -177,6 +184,6 @@
     "total": 9,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-11-16T10:26:38.747Z"
+    "generatedAt": "2026-11-16T13:20:56.290Z"
   }
 }
