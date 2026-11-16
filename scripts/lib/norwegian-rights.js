@@ -239,7 +239,26 @@ export function norwegianRights(ev) {
 		if (/roland|french open|australian open|us open/.test(hay)) return [CH.discovery, CH.eurosport];
 		return [];
 	}
-	if (/biathlon|skiskyting|cross-country|langrenn|nordic|ski jump|hopp|alpine|alpint/.test(`${sport} ${hay}`)) return [CH.nrk];
+	// Winter sports — Norwegian rights splintered for 2026/27 (see the "Winter sports"
+	// section of .claude/skills/norwegian-rights/SKILL.md, updated 2026-11-14):
+	//   • Biathlon (IBU World Cup) is NRK + TV 2 shared, split WEEKEND-BY-WEEKEND
+	//     (Kontiolahti → TV 2 Play; Hochfilzen/Antholz/Pokljuka → NRK; …). Viaplay
+	//     is NOT in biathlon. Which of NRK/TV 2 carries a weekend is not knowable
+	//     from the sport alone.
+	//   • Alpine (FIS World Cup) is split PER RACE across TV 2 Play / Viaplay / NRK
+	//     (Levi → TV 2 Play, Gurgl → Viaplay, races in Norway → NRK). Also not
+	//     knowable from the sport alone.
+	// The old flat `return [CH.nrk]` silently clobbered the researched channel on
+	// every static rebuild — the 6 recurring Kontiolahti (biathlon) summary↔streaming
+	// mismatches flagged across research-log/verify-log (correct channel TV 2 Play).
+	// So for biathlon + alpine we DECLINE to guess (return []) and let the
+	// research/verify value survive, the same guess-no-more principle as the
+	// UEFA-qualifier and golf carve-outs above.
+	if (/biathlon|skiskyting|alpine|alpint/.test(`${sport} ${hay}`)) return [];
+	// Cross-country, ski jumping and nordic combined at the Norwegian-venue season
+	// openers remain NRK (web-verified 2026-11: Beitostølen 20.–22. + Ruka langrenn,
+	// Lillehammer hopp 20.–22., all NRK). Keep the confident NRK default for these.
+	if (/cross-country|langrenn|nordic|ski jump|hopp/.test(`${sport} ${hay}`)) return [CH.nrk];
 	// chess has no Norwegian TV rights — Sjakk-NM streams on Direktesport/Lichess,
 	// international chess (EWC etc.) on Chess.com/Twitch/YouTube. Keep the event's
 	// own free streams (handled in normalizeStreaming) rather than guessing a channel.
