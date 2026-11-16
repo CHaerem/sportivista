@@ -1,51 +1,18 @@
 {
-  "generatedAt": "2026-11-16T13:21:00.250Z",
-  "gapCount": 10,
+  "generatedAt": "2026-11-16T23:11:44.988Z",
+  "gapCount": 5,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Rooth",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Forholdet ble avslørt etter norsk festkveld: – Felix, se der!",
-      "link": "https://www.tv2.no/a/19425702",
-      "feed": "tv2-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-11-16T13:20:56.465Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "rain",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Rain pushes Austin Championship to Monday finish with Crowe ahead by 1",
-      "link": "https://www.espn.com/golf/story/_/id/50495831/rain-pushes-austin-championship-monday-finish",
-      "feed": "espn-golf",
-      "matchCount": 1,
-      "detectedAt": "2026-11-16T13:20:56.465Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Kolstad",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Kolstad slapp med skrekken mot tabelljumboen",
-      "link": "https://www.nrk.no/sport/kolstad-slapp-med-skrekken-mot-tabelljumboen-1.18082411",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-16T13:20:56.465Z"
-    },
     {
       "kind": "entity",
       "entity": "Spirit",
       "type": "missing",
       "imminent": false,
-      "headline": "Hopkins’ late stunner sends Kansas City past Gotham and into NWSL final",
-      "link": "https://www.theguardian.com/football/2026/nov/15/kansas-city-current-gotham-fc-nwsl-semi-final-haley-hopkins",
+      "headline": "‘Inexcusable’ stadium sagas provide NWSL with unwelcome reality check",
+      "link": "https://www.theguardian.com/football/2026/nov/16/nwsl-playoffs-gotham-icahn-stadium-controversy",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-11-16T13:20:56.465Z"
+      "detectedAt": "2026-11-16T23:11:43.876Z"
     },
     {
       "kind": "entity",
@@ -56,29 +23,7 @@
       "link": "https://www.theguardian.com/football/2026/nov/15/england-superb-heroic-spain-nations-league",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-11-16T13:20:56.465Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Nasjonsligaen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Belgia knuste Italia i skjebnekampen – Frankrike vant gruppen",
-      "link": "https://www.nrk.no/sport/belgia-knuste-italia-i-skjebnekampen-_-frankrike-vant-gruppen-1.18082447",
-      "feed": "nrk-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-11-16T13:20:56.465Z"
-    },
-    {
-      "kind": "sport",
-      "entity": "Vinteridrett",
-      "sport": "winter",
-      "type": "imminent",
-      "imminent": true,
-      "headline": "Uttaket i skiskyting er klart - Hedegart til IBU-cup",
-      "link": "https://www.nrk.no/sport/uttaket-i-skiskyting-er-klart---hedegart-til-ibu-cup-1.18082709",
-      "feed": "nrk-sport",
-      "detectedAt": "2026-11-16T13:20:56.465Z"
+      "detectedAt": "2026-11-16T23:11:43.876Z"
     },
     {
       "kind": "tracked-claim",
@@ -90,7 +35,7 @@
       "claimedDate": "2027-01-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "casper-ruud",
-      "detectedAt": "2026-11-16T13:20:57.262Z"
+      "detectedAt": "2026-11-16T23:11:44.791Z"
     },
     {
       "kind": "tracked-claim",
@@ -102,7 +47,7 @@
       "claimedDate": "2026-12-20T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "elkjop-ligaen-2026-27",
-      "detectedAt": "2026-11-16T13:20:57.262Z"
+      "detectedAt": "2026-11-16T23:11:44.791Z"
     },
     {
       "kind": "tracked-claim",
@@ -114,7 +59,7 @@
       "claimedDate": "2026-12-28T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "nm-sluttspillet-menn-2026-27",
-      "detectedAt": "2026-11-16T13:20:57.262Z"
+      "detectedAt": "2026-11-16T23:11:44.791Z"
     }
   ],
   "anomalies": [
@@ -123,7 +68,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-16T13:20:57.300Z"
+      "detectedAt": "2026-11-16T23:11:44.837Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
