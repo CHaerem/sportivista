@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-17T04:16:42.646Z",
+  "generatedAt": "2026-11-17T14:06:05.375Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "red",
+    "coverage": "yellow",
     "amendRate": "green",
-    "silentStops": "yellow",
+    "silentStops": "green",
     "participantStatus": "green",
     "contracts": "green"
   },
@@ -21,50 +21,43 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 5,
+    "openGaps": 4,
     "bySeverity": {
-      "high": 1,
+      "high": 0,
       "medium": 3,
       "low": 1
     },
-    "oldestGapAgeDays": 20.78,
+    "oldestGapAgeDays": 21.19,
     "escalatable": 3,
     "catalogMatched": 3,
-    "auditedAt": "2026-11-16T12:30:00Z",
+    "auditedAt": "2026-11-17T13:00:00Z",
     "gaps": [
       {
-        "interest": "Langrenn — Beitostølen SESONGÅPNING 20.–22. nov (norsk VC-opptakt, NRK direkte)",
-        "severity": "high",
-        "ageDays": 0.66,
-        "recurrences": 0,
-        "catalogMatched": false
-      },
-      {
-        "interest": "Langrenn — Ruka/Nordic Opening VC-premieren 27.–29. nov (NRK)",
+        "interest": "Langrenn — Ruka/Nordic Opening VC-premieren 27.–29. nov",
         "severity": "medium",
-        "ageDays": 19.77,
-        "recurrences": 17,
+        "ageDays": 20.18,
+        "recurrences": 18,
         "catalogMatched": true
       },
       {
         "interest": "Alpint — Verdenscupen fortsetter Copper Mountain (menn) + Killington (kvinner) 28.–29. nov",
         "severity": "medium",
-        "ageDays": 20.78,
-        "recurrences": 18,
+        "ageDays": 21.19,
+        "recurrences": 19,
         "catalogMatched": false
       },
       {
         "interest": "Håndball — REMA 1000-ligaen (tidl. Elkjøp-ligaen) menn + kvinner: domestiske runder IKKE på tavla",
         "severity": "medium",
-        "ageDays": 1.69,
-        "recurrences": 1,
+        "ageDays": 2.1,
+        "recurrences": 2,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — NM-cupen menn FINALE (Bergen vs Elverum, Oslo Spektrum ~28. des)",
         "severity": "low",
-        "ageDays": 4.72,
-        "recurrences": 3,
+        "ageDays": 5.13,
+        "recurrences": 4,
         "catalogMatched": true
       }
     ]
@@ -75,17 +68,10 @@
     "nearTermAmended": 0,
     "verifyRunAt": "2026-11-16T13:55:00Z",
     "windowRate": 0,
-    "windowChecks": 66,
+    "windowChecks": 62,
     "windowAmendments": 0,
     "windowCorrections": 5,
     "byDay": [
-      {
-        "date": "2026-11-03",
-        "checks": 4,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-11-05",
         "checks": 6,
@@ -167,21 +153,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-17T04:16:38.233Z",
+    "buildCheckedAt": "2026-11-17T14:05:59.801Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-16T23:11:45.203Z",
-    "manifestAgeHours": 5.08,
-    "staleFiles": [
-      {
-        "file": "tracked.json",
-        "sourceLastUpdated": "2026-11-15T15:50:00Z",
-        "ageHours": 36.45
-      }
-    ]
+    "manifestGeneratedAt": "2026-11-17T04:16:44.367Z",
+    "manifestAgeHours": 9.82,
+    "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-11-16T13:55:00Z",
-    "verifyAgeHours": 14.36,
+    "verifyAgeHours": 24.18,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -190,6 +170,6 @@
     "total": 9,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-11-17T04:16:42.646Z"
+    "generatedAt": "2026-11-17T14:06:05.374Z"
   }
 }
