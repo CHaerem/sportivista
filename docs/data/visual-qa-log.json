@@ -1,16 +1,16 @@
 {
-  "checkedAt": "2026-11-17T00:00:00Z",
+  "checkedAt": "2026-11-18T00:00:00Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
-    "No horizontal scroll or clipped text at any width, including 375px — long fixtures like 'Borussia Mönchengladbach – Borussia Dortmund', 'Bayer Leverkusen – SC Paderborn 07' and 'Lillehammer: Individuelt HS140 kvinner (søndag)' wrap cleanly to 2-3 lines instead of truncating.",
-    "Every channel shown is Norwegian/available-in-Norway (TV 2, TV 2 Play, NRK, Viaplay, DAZN gratis for the ATP Finals live-now row) — no FOX/ESPN/Sky. Rows with unknown channel (e.g. several Bundesliga/Serie A/Copa del Rey fixtures, 'Nitto ATP Finals' in DIREKTE NÅ) show the honest faint '–' rather than a guess, consistent with the sanctioned pattern.",
-    "National flags (Danmark–Norge, Lillehammer HS140 entries) and club crests (Liverpool, Werder Bremen, AC Milan, Real Madrid, Aalesund, KFUM Oslo, etc.) render as real icons, no broken-image boxes.",
-    "Header (wordmark · date · theme toggle), the single-line KVELDSBRIEFEN headline, day headings (I DAG / I MORGEN / weekday dates), and the footer (Oppdatert-stamp, kalenderabonnement, 'Dette dekker vi' / 'Merker og kilder' disclosures) are all intact and aligned at every width.",
-    "Must-see accent dots appear sparingly (e.g. Danmark–Norge, a handful of Eliteserien/weekend rows) rather than on every row — calm, not cluttered.",
-    "The floating 'Assistent' button is visible mid-agenda in all three full-page stitches (over a Copa del Rey row at ~900px, over weekend Eliteserien/Premier League rows at 375/393px) but never covers the final agenda row or the footer in any capture — matches the DESIGN.md-sanctioned floating-button idiom, not a finding.",
-    "Footer at 375/393 shows 'AI-budsjett: uke 31% · økt ?%' — the session ('økt') figure renders as a literal '?' placeholder. Looks like missing/unknown usage data rendering its documented fallback rather than a layout bug, but flagging as a note since it reads oddly next to a real percentage.",
-    "'NESTE OPP' widget (Magnus Carlsen, 100 Thieves, Gukesh Dommaraju) renders consistently across widths with correct 'om 7 dager' / 'pågår nå' labels."
+    "No horizontal scroll or clipped text at any width, including 375px — long fixtures like '1. FC Union Berlin – RB Leipzig', 'Bayer Leverkusen – SC Paderborn 07', 'Borussia Mönchengladbach – Borussia Dortmund' and 'Lillehammer: Individuelt HS140 kvinner (søndag)' wrap cleanly to 2 lines instead of truncating or hiding either side of a fixture.",
+    "Every channel shown is Norwegian/available-in-Norway (TV 2, TV 2 Play, Viaplay, Eliteserien · TV 2 Play) — no FOX/ESPN/Sky seen anywhere. Rows with unknown channel (several Copa del Rey/Bundesliga/La Liga fixtures, 'Nitto ATP Finals' and the chess semifinal in DIREKTE NÅ) show the honest faint '–' rather than a guess.",
+    "Club crests (Real Madrid, Real Betis, Liverpool, Werder Bremen, AC Milan, etc.) render as real icons, no broken-image boxes, at any width.",
+    "Header (wordmark · date · theme toggle), the single-line KVELDSBRIEFEN headline ('Carlsen i lynsjakk-semifinale i dag — i morgen åpner RSM Classic på PGA-touren med Ventura'), the Uka/Nyheter toggle, day headings (I DAG / I MORGEN / weekday dates), and the footer (Oppdatert-stamp, kalenderabonnement, 'Dette dekker vi' / 'Merker og kilder' disclosures) are all intact and aligned at every width.",
+    "Confirmed with extra non-full-page viewport screenshots at the very top and very bottom of the page at all three widths: the floating 'Assistent' button lands over a mid-agenda row ('Reus FC Reddis – Barakaldo' at 900px top-of-scroll; mid Copa del Rey/Champions League rows at 375/393) but never covers the last agenda row or the footer text in any capture — matches the DESIGN.md-sanctioned floating-button idiom, not a finding.",
+    "Footer at 375/393/900 shows 'AI-budsjett: uke 33% · økt ?%' — the session ('økt') figure renders as a literal '?' placeholder, same as previously observed. Reads as the documented fallback for missing/unknown usage data rather than a layout bug.",
+    "'NESTE OPP' widget (Magnus Carlsen 'pågår nå', 100 Thieves 'om 6 dager', Gukesh Dommaraju 'om 6 dager') renders consistently across all three widths.",
+    "Must-see accent dots (e.g. the Real Madrid – PSV Eindhoven row) appear sparingly rather than on every row — calm, not cluttered."
   ]
 }
