@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-18T03:16:25.397Z",
+  "generatedAt": "2026-11-18T13:39:54.388Z",
   "windowDays": 14,
   "ports": {
-    "coverage": "yellow",
+    "coverage": "red",
     "amendRate": "green",
     "silentStops": "green",
     "participantStatus": "green",
@@ -21,43 +21,50 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 4,
+    "openGaps": 5,
     "bySeverity": {
-      "high": 0,
-      "medium": 3,
-      "low": 1
+      "high": 1,
+      "medium": 2,
+      "low": 2
     },
-    "oldestGapAgeDays": 21.74,
-    "escalatable": 3,
-    "catalogMatched": 3,
-    "auditedAt": "2026-11-17T13:00:00Z",
+    "oldestGapAgeDays": 22.17,
+    "escalatable": 4,
+    "catalogMatched": 4,
+    "auditedAt": "2026-11-18T13:30:00Z",
     "gaps": [
+      {
+        "interest": "Håndball — REMA 1000-ligaen (menn) domestiske runder HELT fraværende fra tavla",
+        "severity": "high",
+        "ageDays": 3.08,
+        "recurrences": 3,
+        "catalogMatched": true
+      },
       {
         "interest": "Langrenn — Ruka/Nordic Opening VC-premieren 27.–29. nov",
         "severity": "medium",
-        "ageDays": 20.73,
-        "recurrences": 18,
+        "ageDays": 21.16,
+        "recurrences": 19,
         "catalogMatched": true
       },
       {
         "interest": "Alpint — Verdenscupen fortsetter Copper Mountain (menn) + Killington (kvinner) 28.–29. nov",
         "severity": "medium",
-        "ageDays": 21.74,
-        "recurrences": 19,
+        "ageDays": 22.17,
+        "recurrences": 20,
         "catalogMatched": false
       },
       {
-        "interest": "Håndball — REMA 1000-ligaen (tidl. Elkjøp-ligaen) menn + kvinner: domestiske runder IKKE på tavla",
-        "severity": "medium",
-        "ageDays": 2.65,
-        "recurrences": 2,
+        "interest": "Håndball — EHF EURO 2026 kvinner: mellomrunden (Norge) 9.–16. des mangler bak tavlas horisont-kant",
+        "severity": "low",
+        "ageDays": 0.01,
+        "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — NM-cupen menn FINALE (Bergen vs Elverum, Oslo Spektrum ~28. des)",
         "severity": "low",
-        "ageDays": 5.67,
-        "recurrences": 4,
+        "ageDays": 6.11,
+        "recurrences": 5,
         "catalogMatched": true
       }
     ]
@@ -160,15 +167,15 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-18T03:16:22.506Z",
+    "buildCheckedAt": "2026-11-18T13:39:50.509Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-17T22:46:39.271Z",
-    "manifestAgeHours": 4.5,
+    "manifestGeneratedAt": "2026-11-18T03:16:26.678Z",
+    "manifestAgeHours": 10.39,
     "staleFiles": []
   },
   "participantStatus": {
     "checkedAt": "2026-11-17T14:45:00Z",
-    "verifyAgeHours": 12.52,
+    "verifyAgeHours": 22.92,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -177,6 +184,6 @@
     "total": 9,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-11-18T03:16:25.396Z"
+    "generatedAt": "2026-11-18T13:39:54.388Z"
   }
 }
