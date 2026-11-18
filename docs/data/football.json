@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-18T13:39:20.992Z",
+  "lastUpdated": "2026-11-18T21:42:00.866Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
@@ -226,7 +226,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "USA Net",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Manchester City",
           "awayTeam": "Fulham",
@@ -246,7 +252,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "Peacock",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "AFC Bournemouth",
           "awayTeam": "Nottingham Forest",
@@ -266,7 +278,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "Peacock",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Aston Villa",
           "awayTeam": "Sunderland",
@@ -286,7 +304,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "Peacock",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Chelsea",
           "awayTeam": "Leeds United",
@@ -306,7 +330,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "Peacock",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Coventry City",
           "awayTeam": "Crystal Palace",
@@ -326,7 +356,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "USA Net",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Tottenham Hotspur",
           "awayTeam": "Ipswich Town",
@@ -346,7 +382,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "USA Net",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Newcastle United",
           "awayTeam": "Arsenal",
@@ -366,7 +408,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "USA Net",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Hull City",
           "awayTeam": "Brighton & Hove Albion",
@@ -386,7 +434,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "USA Net",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Liverpool",
           "awayTeam": "Manchester United",
@@ -406,7 +460,13 @@
           "sport": "football",
           "meta": "Premier League",
           "tournament": "Premier League",
-          "streaming": [],
+          "streaming": [
+            {
+              "platform": "USA Net",
+              "url": "",
+              "type": "tv"
+            }
+          ],
           "norwegian": false,
           "homeTeam": "Brentford",
           "awayTeam": "Everton",
@@ -1198,7 +1258,7 @@
           "time": "2026-11-18T18:00:00.000Z",
           "venue": "La Florida",
           "sport": "football",
-          "meta": "Copa del Rey",
+          "meta": "Copa del Rey • Portugalete win 4-1 on penalties",
           "tournament": "Copa del Rey",
           "streaming": [],
           "norwegian": false,
@@ -1208,8 +1268,10 @@
           "norwegianPlayers": [],
           "totalPlayers": null,
           "isFavorite": false,
+          "round": "Portugalete win 4-1 on penalties",
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FINAL_PEN",
+            "round": "Portugalete win 4-1 on penalties"
           }
         },
         {
@@ -1229,7 +1291,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1249,7 +1311,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FINAL_AET"
           }
         },
         {
@@ -1269,7 +1331,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_FULL_TIME"
           }
         },
         {
@@ -1289,7 +1351,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_OVERTIME"
           }
         },
         {
@@ -1309,7 +1371,7 @@
           "totalPlayers": null,
           "isFavorite": false,
           "additional": {
-            "status": "STATUS_SCHEDULED"
+            "status": "STATUS_OVERTIME"
           }
         }
       ]
