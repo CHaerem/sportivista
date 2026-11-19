@@ -1,16 +1,17 @@
 {
-  "runAt": "2026-11-18T14:30:00Z",
-  "checked": 12,
+  "runAt": "2026-11-19T14:35:00Z",
+  "checked": 18,
   "confirmed": 12,
-  "amended": 0,
+  "amended": 6,
   "removed": 0,
   "notes": [
-    "F1 Las Vegas GP kvalifisering (høy): tid lør 21.11 04:00 UTC bekreftet på nytt mot formula1.com (primær) — uendret.",
-    "Sjakk-VM parti 1 Gukesh–Sindarov (medium): 24.11 14:00 UTC bekreftet mot FIDE (primær); enkelte sekundærkilder oppga 25.11, men FIDEs egen side står ved 24.11 — board matcher primærkilden.",
-    "Gurgl slalåm dame (lør 21.11) + herre (søn 22.11): 1.omg 09:30 UTC begge dager bekreftet mot arrangøren oetztal.com/gurgl.com (primær); Viaplay-visning uendret (telenor streamix-prior).",
-    "Lillehammer hopp (5 renn, 20.-22.11): datoer/struktur bekreftet mot FIS event-details (Team + Individual Large Hill menn/kvinner). FIS offisielle starttids-PDF ennå ikke publisert (TCM var 19.11), så tidene står på NRK-planens slot — basis fortsatt secondary, NRK-visning bekreftet.",
-    "Beitostølen langrenn (3 renn, 20.-22.11): sesongåpningen bekreftet mot Skiforbundets pressemelding; eksakte løpstider fortsatt preliminære (innbydelsen) → basis secondary, NRK-visning bekreftet.",
-    "Ingen avlysninger, utsettelser eller fjerninger. Ingen amendments — alle board-verdier stemte med kildene.",
-    "Ingen skill-oppdatering: ingenting nytt mekanistisk lært (ESPN F1-feildateringen var ikke i spill her; tidene ble tatt fra formula1.com direkte)."
+    "AMENDMENT (6 renn): Kontiolahti skiskyting-verdenscup 26.-29.11 hadde streaming[] feilaktig på NRK — i strid med sin EGEN provenance.streaming (TV 2, official, 14.11), summary-teksten («Norsk visning TV 2 Play») OG rettighetskartet. NRKs egen 2026/27-programoversikt lister skiskytingstarten 26.-29.11 som «(TV 2 og NRK radio)» → TV 2 er TV-kanalen, NRK kun radio. Rettet alle 6 streaming[] til TV 2 Play (validator-flagget summary↔streaming-mismatch er dermed lukket). Boardtiden for 20 km menn 26.11 15:10 UTC bekreftet mot tysk TV-listing (16:10 lokal CET).",
+    "Re-verifisert de 8 nærmeste vinterrennene (Beitostølen langrenn + Lillehammer hopp, 20.-22.11); F1 Las Vegas kvalik, sjakk-VM parti 1 og de to Gurgl-slalåmene ble bekreftet mot primærkilde i går (18.11) uten nye signaler i dag, så de står urørt (ingen falsk ny kilde-stempling).",
+    "Lillehammer hopp (5 renn): FIS event-details re-bekrefter struktur/datoer (Team Large Hill fre + Individual Large Hill menn/kvinner lør+søn). Offisiell starttids-PDF fortsatt IKKE publisert — TCM-møtet er i kveld 19.11 kl. 18:00 lokal — så tidene står fortsatt på NRK-vintersportplanens slot (basis secondary). I morgen bør FIS-tidene foreligge.",
+    "Beitostølen langrenn (3 renn): 2026-formatet bekreftet mot to uavhengige 2026-kilder (Sportsbasen + Norskekalendere): 10 km klassisk fre 20.11, klassisk sprint lør 21.11, 15 km fri søn 22.11, Beitostølen stadion, NRK. Starttider fortsatt preliminære (kan endres) → basis secondary.",
+    "FELLE UNNGÅTT: generiske nettsøk på Beitostølen-programmet returnerer 2025-sesongens oppsett (sprint fre / 10 km klassisk lør / 10 km fri søn — ANNEN rekkefølge og distanser). Jeg forankret kun mot eksplisitte 2026-kilder; 2025-data ble ikke blandet inn.",
+    "Svakt deltakersignal (ikke handlet på): NTB antyder at Alexander Steen Olsen utsatte konkurranseretur — han står i norwegianPlayers for Gurgl herre-slalåm 22.11. Men dette er et FREMTIDIG renn (ikke in-progress), norwegianPlayers er indikative (ikke bekreftet startliste), og WP-95-deltakersjekken gjelder kun pågående turneringer. Signalet var dessuten tvetydig. Ingen endring.",
+    "Ingen avlysninger, utsettelser eller fjerninger.",
+    "Ingen skill-oppdatering: rettighetskartet hadde Kontiolahti=TV 2 allerede riktig (bekreftet 14.11); feilen lå kun i event-dataens streaming[], ikke i skillen. Sesong-forvekslingen i søk er en generisk LLM-felle, ikke en kildespesifikk kvirk for source-quirks."
   ]
 }
