@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-19T14:06:40.062Z",
+  "generatedAt": "2026-11-19T22:34:07.895Z",
   "windowDays": 180,
   "records": {
-    "used": 786,
+    "used": 790,
     "skipped": 18
   },
   "sources": {
@@ -257,9 +257,9 @@
       "reliability": 0.89
     },
     "nrk.no": {
-      "checks": 30,
-      "agreed": 28,
-      "corrections": 6,
+      "checks": 31,
+      "agreed": 29,
+      "corrections": 7,
       "bySport": {
         "football": {
           "checks": 7,
@@ -288,12 +288,16 @@
         "ski jumping": {
           "checks": 5,
           "agreed": 5
+        },
+        "biathlon": {
+          "checks": 1,
+          "agreed": 1
         }
       },
       "byField": {
         "streaming": {
-          "checks": 19,
-          "agreed": 18
+          "checks": 20,
+          "agreed": 19
         },
         "existence": {
           "checks": 5,
@@ -304,8 +308,8 @@
           "agreed": 6
         }
       },
-      "lastChecked": "2026-11-17T14:45:00Z",
-      "reliability": 0.93
+      "lastChecked": "2026-11-19T14:35:00Z",
+      "reliability": 0.94
     },
     "sjakknm2026.no": {
       "checks": 1,
@@ -4377,8 +4381,8 @@
       "reliability": null
     },
     "fis-ski.com": {
-      "checks": 2,
-      "agreed": 2,
+      "checks": 3,
+      "agreed": 3,
       "corrections": 0,
       "bySport": {
         "alpine": {
@@ -4386,17 +4390,17 @@
           "agreed": 1
         },
         "ski jumping": {
-          "checks": 1,
-          "agreed": 1
-        }
-      },
-      "byField": {
-        "existence": {
           "checks": 2,
           "agreed": 2
         }
       },
-      "lastChecked": "2026-11-18T14:30:00Z",
+      "byField": {
+        "existence": {
+          "checks": 3,
+          "agreed": 3
+        }
+      },
+      "lastChecked": "2026-11-19T14:35:00Z",
       "reliability": null
     },
     "livesoccertv.com": {
@@ -4530,6 +4534,44 @@
         }
       },
       "lastChecked": "2026-11-18T14:30:00Z",
+      "reliability": null
+    },
+    "sportsbasen.no": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "cross-country": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "time": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-11-19T14:35:00Z",
+      "reliability": null
+    },
+    "norskekalendere.no": {
+      "checks": 1,
+      "agreed": 1,
+      "corrections": 0,
+      "bySport": {
+        "cross-country": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "byField": {
+        "existence": {
+          "checks": 1,
+          "agreed": 1
+        }
+      },
+      "lastChecked": "2026-11-19T14:35:00Z",
       "reliability": null
     }
   }

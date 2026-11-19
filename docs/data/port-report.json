@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-19T14:06:38.936Z",
+  "generatedAt": "2026-11-19T22:34:06.301Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
-    "amendRate": "green",
+    "amendRate": "yellow",
     "silentStops": "yellow",
-    "participantStatus": "green",
+    "participantStatus": "red",
     "contracts": "green"
   },
   "basis": {
@@ -27,7 +27,7 @@
       "medium": 2,
       "low": 2
     },
-    "oldestGapAgeDays": 23.19,
+    "oldestGapAgeDays": 23.54,
     "escalatable": 4,
     "catalogMatched": 4,
     "auditedAt": "2026-11-19T11:35:00Z",
@@ -35,49 +35,49 @@
       {
         "interest": "Håndball — domestisk herretoppserie (Elkjøp-/REMA 1000-ligaen) HELT fraværende fra tavla mens ligaen spiller",
         "severity": "high",
-        "ageDays": 4.1,
+        "ageDays": 4.45,
         "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "Langrenn — Ruka/Nordic Opening VC-premieren 27.–29. nov",
         "severity": "medium",
-        "ageDays": 22.18,
+        "ageDays": 22.53,
         "recurrences": 20,
         "catalogMatched": true
       },
       {
         "interest": "Alpint — Verdenscupen fortsetter Copper Mountain (menn) + Killington (kvinner) 28.–29. nov",
         "severity": "medium",
-        "ageDays": 23.19,
+        "ageDays": 23.54,
         "recurrences": 21,
         "catalogMatched": false
       },
       {
         "interest": "Håndball — EHF EURO 2026 kvinner: mellomrunden (Norge) ~10.–16. des mangler bak tavlas horisont-kant",
         "severity": "low",
-        "ageDays": 1.03,
+        "ageDays": 1.38,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — NM-cupen menn FINALE (Bergen vs Elverum, Oslo Spektrum ~28. des)",
         "severity": "low",
-        "ageDays": 7.13,
+        "ageDays": 7.48,
         "recurrences": 6,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0,
-    "nearTermChecked": 12,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-11-18T14:30:00Z",
+    "nearTermRate": 0.33,
+    "nearTermChecked": 18,
+    "nearTermAmended": 6,
+    "verifyRunAt": "2026-11-19T14:35:00Z",
     "windowRate": 0,
-    "windowChecks": 70,
+    "windowChecks": 74,
     "windowAmendments": 0,
-    "windowCorrections": 5,
+    "windowCorrections": 6,
     "byDay": [
       {
         "date": "2026-11-06",
@@ -162,34 +162,43 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-11-19",
+        "checks": 4,
+        "amendments": 0,
+        "corrections": 1,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-19T14:06:35.371Z",
+    "buildCheckedAt": "2026-11-19T22:34:01.253Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-19T10:59:44.349Z",
-    "manifestAgeHours": 3.12,
+    "manifestGeneratedAt": "2026-11-19T14:06:40.189Z",
+    "manifestAgeHours": 8.46,
     "staleFiles": [
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-11-17T23:40:00Z",
-        "ageHours": 38.44
+        "ageHours": 46.9
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-11-18T14:30:00Z",
-    "verifyAgeHours": 23.61,
+    "checkedAt": "2026-11-19T14:35:00Z",
+    "verifyAgeHours": 7.99,
     "corrections": 0,
-    "unresolved": 0,
-    "signals": []
+    "unresolved": 1,
+    "signals": [
+      "Svakt deltakersignal (ikke handlet på): NTB antyder at Alexander Steen Olsen utsatte konkurranseretur — han står i norwegianPlayers for Gurgl herre-slalåm 22…"
+    ]
   },
   "contracts": {
     "total": 9,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-11-19T14:06:38.935Z"
+    "generatedAt": "2026-11-19T22:34:06.300Z"
   }
 }

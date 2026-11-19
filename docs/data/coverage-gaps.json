@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-19T14:06:39.977Z",
-  "gapCount": 8,
+  "generatedAt": "2026-11-19T22:34:07.821Z",
+  "gapCount": 7,
   "anomalyCount": 1,
   "gaps": [
     {
@@ -12,29 +12,18 @@
       "link": "https://www.theguardian.com/football/2026/nov/19/nwsl-championship-washington-spirit-kc-current-moving-the-goalposts",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-11-19T14:06:39.195Z"
+      "detectedAt": "2026-11-19T22:34:06.541Z"
     },
     {
       "kind": "entity",
-      "entity": "Nasjonsligaen",
+      "entity": "Mesterligaen",
       "type": "missing",
       "imminent": false,
-      "headline": "Den fordømte Nasjonsligaen",
-      "link": "https://www.nrk.no/sport/den-fordomte-nasjonsligaen-1.18084323",
+      "headline": "Ada Hegerberg på benken da Lyon slo Frida Maanums Arsenal",
+      "link": "https://www.nrk.no/sport/ada-hegerberg-pa-benken-da-lyon-slo-frida-maanums-arsenal-1.18085476",
       "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-19T14:06:39.195Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Formel 1",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Bekrefter etter rykteflom: Formel 1-profil fortsetter",
-      "link": "https://www.nrk.no/sport/bekrefter-etter-rykteflom_-formel-1-profil-fortsetter-1.18084605",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-19T14:06:39.195Z"
+      "matchCount": 2,
+      "detectedAt": "2026-11-19T22:34:06.541Z"
     },
     {
       "kind": "entity",
@@ -45,7 +34,7 @@
       "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/passion-has-no-age-class-is-timeless-solution-tech-nippo-rali-confirm-domenico-pozzovivo-will-continue-racing-at-the-age-of-44/",
       "feed": "cyclingnews",
       "matchCount": 2,
-      "detectedAt": "2026-11-19T14:06:39.195Z"
+      "detectedAt": "2026-11-19T22:34:06.541Z"
     },
     {
       "kind": "entity",
@@ -56,7 +45,7 @@
       "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/passion-has-no-age-class-is-timeless-solution-tech-nippo-rali-confirm-domenico-pozzovivo-will-continue-racing-at-the-age-of-44/",
       "feed": "cyclingnews",
       "matchCount": 2,
-      "detectedAt": "2026-11-19T14:06:39.195Z"
+      "detectedAt": "2026-11-19T22:34:06.541Z"
     },
     {
       "kind": "tracked-claim",
@@ -68,7 +57,7 @@
       "claimedDate": "2027-01-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "casper-ruud",
-      "detectedAt": "2026-11-19T14:06:39.642Z"
+      "detectedAt": "2026-11-19T22:34:07.581Z"
     },
     {
       "kind": "tracked-claim",
@@ -80,7 +69,7 @@
       "claimedDate": "2026-12-20T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "elkjop-ligaen-2026-27",
-      "detectedAt": "2026-11-19T14:06:39.642Z"
+      "detectedAt": "2026-11-19T22:34:07.581Z"
     },
     {
       "kind": "tracked-claim",
@@ -92,7 +81,7 @@
       "claimedDate": "2026-12-28T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "nm-sluttspillet-menn-2026-27",
-      "detectedAt": "2026-11-19T14:06:39.642Z"
+      "detectedAt": "2026-11-19T22:34:07.581Z"
     }
   ],
   "anomalies": [
@@ -101,7 +90,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-19T14:06:39.694Z"
+      "detectedAt": "2026-11-19T22:34:07.650Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
