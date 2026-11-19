@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-19T10:59:44.167Z",
-  "gapCount": 6,
+  "generatedAt": "2026-11-19T14:06:39.977Z",
+  "gapCount": 8,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Wesley So",
+      "entity": "Spirit",
       "type": "missing",
       "imminent": false,
-      "headline": "Sjakkprofil beklager oppsiktsvekkende utbrudd etter reaksjoner: – Må slutte å sutre",
-      "link": "https://www.aftenposten.no/sport/sjakk/i/Jno3v7/sjakkprofil-beklager-oppsiktsvekkende-utbrudd-etter-reaksjoner-maa-slutte-aa-sutre?utm_medium=rss",
-      "feed": "aftenposten-sport",
-      "matchCount": 3,
-      "detectedAt": "2026-11-19T10:59:43.252Z"
+      "headline": "Washington Spirit v Kansas City Current: where the NWSL Championship will be won and lost",
+      "link": "https://www.theguardian.com/football/2026/nov/19/nwsl-championship-washington-spirit-kc-current-moving-the-goalposts",
+      "feed": "guardian-football",
+      "matchCount": 1,
+      "detectedAt": "2026-11-19T14:06:39.195Z"
     },
     {
       "kind": "entity",
@@ -22,8 +22,8 @@
       "headline": "Den fordømte Nasjonsligaen",
       "link": "https://www.nrk.no/sport/den-fordomte-nasjonsligaen-1.18084323",
       "feed": "nrk-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-11-19T10:59:43.252Z"
+      "matchCount": 1,
+      "detectedAt": "2026-11-19T14:06:39.195Z"
     },
     {
       "kind": "entity",
@@ -34,7 +34,29 @@
       "link": "https://www.nrk.no/sport/bekrefter-etter-rykteflom_-formel-1-profil-fortsetter-1.18084605",
       "feed": "nrk-sport",
       "matchCount": 1,
-      "detectedAt": "2026-11-19T10:59:43.252Z"
+      "detectedAt": "2026-11-19T14:06:39.195Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Giro d'Italia",
+      "type": "missing",
+      "imminent": false,
+      "headline": "'Passion has no age. Class is timeless' – Solution Tech-Nippo-Rali confirm Domenico Pozzovivo will continue racing at the age of 44",
+      "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/passion-has-no-age-class-is-timeless-solution-tech-nippo-rali-confirm-domenico-pozzovivo-will-continue-racing-at-the-age-of-44/",
+      "feed": "cyclingnews",
+      "matchCount": 2,
+      "detectedAt": "2026-11-19T14:06:39.195Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Giro",
+      "type": "missing",
+      "imminent": false,
+      "headline": "'Passion has no age. Class is timeless' – Solution Tech-Nippo-Rali confirm Domenico Pozzovivo will continue racing at the age of 44",
+      "link": "https://www.cyclingnews.com/pro-cycling/teams-riders/passion-has-no-age-class-is-timeless-solution-tech-nippo-rali-confirm-domenico-pozzovivo-will-continue-racing-at-the-age-of-44/",
+      "feed": "cyclingnews",
+      "matchCount": 2,
+      "detectedAt": "2026-11-19T14:06:39.195Z"
     },
     {
       "kind": "tracked-claim",
@@ -46,7 +68,7 @@
       "claimedDate": "2027-01-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "casper-ruud",
-      "detectedAt": "2026-11-19T10:59:43.809Z"
+      "detectedAt": "2026-11-19T14:06:39.642Z"
     },
     {
       "kind": "tracked-claim",
@@ -58,7 +80,7 @@
       "claimedDate": "2026-12-20T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "elkjop-ligaen-2026-27",
-      "detectedAt": "2026-11-19T10:59:43.809Z"
+      "detectedAt": "2026-11-19T14:06:39.642Z"
     },
     {
       "kind": "tracked-claim",
@@ -70,7 +92,7 @@
       "claimedDate": "2026-12-28T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "nm-sluttspillet-menn-2026-27",
-      "detectedAt": "2026-11-19T10:59:43.809Z"
+      "detectedAt": "2026-11-19T14:06:39.642Z"
     }
   ],
   "anomalies": [
@@ -79,7 +101,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-19T10:59:43.866Z"
+      "detectedAt": "2026-11-19T14:06:39.694Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."

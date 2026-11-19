@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T10:59:43.036Z",
+  "generatedAt": "2026-11-19T14:06:38.936Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -27,44 +27,44 @@
       "medium": 2,
       "low": 2
     },
-    "oldestGapAgeDays": 23.06,
+    "oldestGapAgeDays": 23.19,
     "escalatable": 4,
     "catalogMatched": 4,
-    "auditedAt": "2026-11-18T13:30:00Z",
+    "auditedAt": "2026-11-19T11:35:00Z",
     "gaps": [
       {
-        "interest": "Håndball — REMA 1000-ligaen (menn) domestiske runder HELT fraværende fra tavla",
+        "interest": "Håndball — domestisk herretoppserie (Elkjøp-/REMA 1000-ligaen) HELT fraværende fra tavla mens ligaen spiller",
         "severity": "high",
-        "ageDays": 3.97,
-        "recurrences": 3,
+        "ageDays": 4.1,
+        "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "Langrenn — Ruka/Nordic Opening VC-premieren 27.–29. nov",
         "severity": "medium",
-        "ageDays": 22.05,
-        "recurrences": 19,
+        "ageDays": 22.18,
+        "recurrences": 20,
         "catalogMatched": true
       },
       {
         "interest": "Alpint — Verdenscupen fortsetter Copper Mountain (menn) + Killington (kvinner) 28.–29. nov",
         "severity": "medium",
-        "ageDays": 23.06,
-        "recurrences": 20,
+        "ageDays": 23.19,
+        "recurrences": 21,
         "catalogMatched": false
       },
       {
-        "interest": "Håndball — EHF EURO 2026 kvinner: mellomrunden (Norge) 9.–16. des mangler bak tavlas horisont-kant",
+        "interest": "Håndball — EHF EURO 2026 kvinner: mellomrunden (Norge) ~10.–16. des mangler bak tavlas horisont-kant",
         "severity": "low",
-        "ageDays": 0.9,
-        "recurrences": 0,
+        "ageDays": 1.03,
+        "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — NM-cupen menn FINALE (Bergen vs Elverum, Oslo Spektrum ~28. des)",
         "severity": "low",
-        "ageDays": 7,
-        "recurrences": 5,
+        "ageDays": 7.13,
+        "recurrences": 6,
         "catalogMatched": true
       }
     ]
@@ -75,17 +75,10 @@
     "nearTermAmended": 0,
     "verifyRunAt": "2026-11-18T14:30:00Z",
     "windowRate": 0,
-    "windowChecks": 76,
+    "windowChecks": 70,
     "windowAmendments": 0,
     "windowCorrections": 5,
     "byDay": [
-      {
-        "date": "2026-11-05",
-        "checks": 6,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-11-06",
         "checks": 5,
@@ -174,21 +167,21 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-19T10:59:37.727Z",
+    "buildCheckedAt": "2026-11-19T14:06:35.371Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-19T02:54:59.590Z",
-    "manifestAgeHours": 8.08,
+    "manifestGeneratedAt": "2026-11-19T10:59:44.349Z",
+    "manifestAgeHours": 3.12,
     "staleFiles": [
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-11-17T23:40:00Z",
-        "ageHours": 35.33
+        "ageHours": 38.44
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-11-18T14:30:00Z",
-    "verifyAgeHours": 20.5,
+    "verifyAgeHours": 23.61,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -197,6 +190,6 @@
     "total": 9,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-11-19T10:59:43.036Z"
+    "generatedAt": "2026-11-19T14:06:38.935Z"
   }
 }
