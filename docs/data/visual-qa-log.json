@@ -1,17 +1,16 @@
 {
-  "checkedAt": "2026-11-19T17:01:05Z",
+  "checkedAt": "2026-11-20T00:00:00Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
-    "Agenda reads as a single quiet column at all three widths (375/393/900) — day headings (I DAG, I MORGEN, LØRDAG 21. NOVEMBER, …) are clear, each row has a consistent time · fixture · competition/channel layout, generous spacing, no sign of a cluttered grid.",
-    "Every row I could read a channel label for showed a Norwegian broadcaster (Viaplay, TV 2 Play, NRK) — no FOX/ESPN/Sky or other foreign broadcaster spotted anywhere in the three captures.",
-    "No truncated team/athlete names noticed (no mid-word ellipsis cutting a fixture like the known 'Brazil – Nor…' failure mode); fixtures like 'Manchester City – Fulham', 'Borussia Mönchengladbach – Borussia Dortmund', 'Tottenham Hotspur – Ipswich Town' render in full even at 375px.",
-    "Team/competition crest icons render as small filled squares/badges consistently down the list at all widths — no broken-image icons or empty boxes spotted.",
-    "Times are present and consistently formatted (HH:mm, 24h) on every row across all three widths; round/stage labels (e.g. chess 'Spill 1 (Blitz)', ski-jump 'Individuelt HS140') show where relevant.",
-    "The floating 'Assistent' button sits over a mid-agenda row (near the Molde – Bodø/Glimt / Bayern Munich – Cologne block) at all three widths — per DESIGN.md § Hjelperen this is the sanctioned iOS 26 floating-button idiom, not a finding. It does not reach or cover the last agenda/news row or the footer in any of the three captures, so the one real guarantee (never occlude the last row/footer) holds.",
-    "Header (wordmark · date · theme toggle), 'Dette dekker vi' disclosure, and footer are present and intact at the bottom of all three captures; no overlap or clipping observed there.",
+    "Agenda reads as a single quiet column at all three widths (375/393/900) — day headings (I DAG, I MORGEN, LØRDAG 21. NOVEMBER … FREDAG 27. NOVEMBER) are clear, each row keeps the consistent time · fixture · competition/channel layout with generous spacing, not a cluttered grid.",
+    "Every channel label I could read showed a Norwegian broadcaster (NRK, TV 2 Play, Viaplay, Eurosport) — no FOX/ESPN/Sky or other foreign broadcaster spotted in any of the three captures.",
+    "No truncated team/athlete names noticed (no mid-word ellipsis hiding a side of a fixture); long names like 'Borussia Mönchengladbach – Borussia Dortmund', 'Tottenham Hotspur – Ipswich Town', 'Shakhtar Donetsk – Fenerbahce' render in full even at 375px.",
+    "Times are present and consistently formatted (HH:mm, 24h); round/discipline labels show where relevant (e.g. chess 'Game 8 | Bitz', ski jumping 'Lagkonkurranse HS140' / 'Individuelt HS140 menn').",
+    "The floating 'Assistent' button sits over a mid-agenda row (near the 'I MORGEN' block, e.g. the Las Vegas Grand Prix row at 900px) in all three captures — per DESIGN.md § Hjelperen this is the sanctioned iOS 26 floating-button idiom, not a finding. It is nowhere near the last agenda/news row or the footer in any capture, so the one real guarantee (never occlude the last row/footer) holds.",
+    "Header (wordmark · date · theme toggle), editorial headline line, the Uke/Nyheter toggle, 'NESTE OPP' tracked-entity block (Magnus Carlsen, 100 Thieves, Gukesh Dommaraju), and footer are all present and intact at the bottom of all three captures; no overlap or clipping observed there.",
     "No horizontal overflow or edge-clipping observed in the 375px capture (checked hardest per the checklist) — all row content stays within the column width.",
-    "Caveat: screenshots are full-page and scaled down significantly for review (especially the 375/393 captures, which are very tall), so very subtle single-pixel overflow or a rare one-off truncated name deep in the list could be missed at this resolution; nothing of that kind stood out on inspection."
+    "Caveat: screenshots are full-page and scaled down significantly for review (especially the very tall 375/393 captures), so a rare single-pixel overflow or one-off truncated name deep in the list could be missed at this resolution; nothing of that kind stood out on inspection."
   ]
 }
