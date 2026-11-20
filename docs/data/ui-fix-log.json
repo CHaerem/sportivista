@@ -1,11 +1,10 @@
 {
-	"runAt": "2026-11-19T17:30:00Z",
-	"action": "none",
-	"pr": null,
-	"fixed": [],
-	"notes": [
-		"visual-qa-log.json (checkedAt 2026-11-19T17:01:05Z) verdict is 'pass' with an empty findings[] — nothing code-fixable to act on. No high/medium issues at 375/393/900px.",
-		"All notes describe healthy or sanctioned behaviour: single quiet column with clear day headings, Norwegian-only broadcaster labels (Viaplay/TV 2 Play/NRK, no FOX/ESPN/Sky), no truncated fixtures (full 'Borussia Mönchengladbach – Borussia Dortmund' etc. at 375px), real crest badges, consistent 24h times, and the floating Assistent button correctly not occluding the last row/footer (DESIGN.md § Hjelperen).",
-		"No branch opened, no PR created — clean exit per When-to-act rule 1."
-	]
+  "runAt": "2026-11-20T00:00:00Z",
+  "action": "none",
+  "pr": null,
+  "fixed": [],
+  "notes": [
+    "visual-qa-log.json verdict is \"pass\" with an empty findings[] array — no high/medium rendering problems to fix.",
+    "Exited cleanly without opening a PR, per ui-fix.md 'When to act' step 1."
+  ]
 }
