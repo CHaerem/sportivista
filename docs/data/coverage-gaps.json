@@ -1,51 +1,18 @@
 {
-  "generatedAt": "2026-11-20T13:49:21.670Z",
-  "gapCount": 7,
+  "generatedAt": "2026-11-20T21:40:51.488Z",
+  "gapCount": 5,
   "anomalyCount": 1,
   "gaps": [
     {
       "kind": "entity",
-      "entity": "Uno-X",
+      "entity": "Spirit",
       "type": "missing",
       "imminent": false,
-      "headline": "Foss bekrefter: Skrev ny kontrakt med storlag",
-      "link": "https://www.nrk.no/sport/foss-bekrefter_-skrev-ny-kontrakt-med-storlag-1.18085541",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-20T13:49:20.691Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Mesterligaen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Ada Hegerberg på benken da Lyon slo Frida Maanums Arsenal",
-      "link": "https://www.nrk.no/sport/ada-hegerberg-pa-benken-da-lyon-slo-frida-maanums-arsenal-1.18085476",
-      "feed": "nrk-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-11-20T13:49:20.691Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Nations League",
-      "type": "missing",
-      "imminent": true,
-      "headline": "Pochettino session leaked on drone footage; Arteta takes fantasy football action; Nations League draw – live",
-      "link": "https://www.theguardian.com/football/live/2026/nov/20/weekend-football-countdown-live-news-updates",
+      "headline": "Washington Spirit provide hope and joy in a city that badly needs it",
+      "link": "https://www.theguardian.com/football/2026/nov/20/washington-spirit-provide-hope-and-joy-in-a-city-that-badly-needs-it",
       "feed": "guardian-football",
-      "matchCount": 1,
-      "detectedAt": "2026-11-20T13:49:20.691Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Bislett",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Johaug med innrømmelse før maraton: Mer tent nå enn før ski-VM i Trondheim",
-      "link": "https://www.nrk.no/sport/therese-johaug-med-innrommelse-for-maraton_-mer-tent-na-enn-for-ski-vm-i-trondheim-1.18081797",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-20T13:49:20.691Z"
+      "matchCount": 2,
+      "detectedAt": "2026-11-20T21:40:50.329Z"
     },
     {
       "kind": "tracked-claim",
@@ -57,7 +24,19 @@
       "claimedDate": "2027-01-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "casper-ruud",
-      "detectedAt": "2026-11-20T13:49:21.485Z"
+      "detectedAt": "2026-11-20T21:40:51.282Z"
+    },
+    {
+      "kind": "tracked-claim",
+      "entity": "Magnus Carlsen",
+      "group": "athletes",
+      "sport": "chess",
+      "type": "missing",
+      "imminent": true,
+      "claimedDate": "2026-11-21T00:00:00.000Z",
+      "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
+      "trackedId": "magnus-carlsen",
+      "detectedAt": "2026-11-20T21:40:51.282Z"
     },
     {
       "kind": "tracked-claim",
@@ -69,7 +48,7 @@
       "claimedDate": "2026-12-20T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "elkjop-ligaen-2026-27",
-      "detectedAt": "2026-11-20T13:49:21.485Z"
+      "detectedAt": "2026-11-20T21:40:51.282Z"
     },
     {
       "kind": "tracked-claim",
@@ -81,7 +60,7 @@
       "claimedDate": "2026-12-28T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "nm-sluttspillet-menn-2026-27",
-      "detectedAt": "2026-11-20T13:49:21.485Z"
+      "detectedAt": "2026-11-20T21:40:51.282Z"
     }
   ],
   "anomalies": [
@@ -90,7 +69,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-20T13:49:21.536Z"
+      "detectedAt": "2026-11-20T21:40:51.351Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."

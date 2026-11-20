@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-20T13:49:20.477Z",
+  "generatedAt": "2026-11-20T21:40:50.032Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
-    "amendRate": "yellow",
+    "amendRate": "green",
     "silentStops": "yellow",
-    "participantStatus": "red",
+    "participantStatus": "green",
     "contracts": "green"
   },
   "basis": {
@@ -27,7 +27,7 @@
       "medium": 2,
       "low": 2
     },
-    "oldestGapAgeDays": 24.18,
+    "oldestGapAgeDays": 24.51,
     "escalatable": 4,
     "catalogMatched": 4,
     "auditedAt": "2026-11-20T11:40:00Z",
@@ -35,47 +35,47 @@
       {
         "interest": "Håndball — domestisk toppserie (Elkjøp-/REMA 1000-ligaen) HELT fraværende fra tavla mens ligaen spiller en full runde denne helgen",
         "severity": "high",
-        "ageDays": 5.09,
+        "ageDays": 5.42,
         "recurrences": 5,
         "catalogMatched": true
       },
       {
         "interest": "Langrenn — Ruka/Nordic Opening VC-premieren 27.–29. nov",
         "severity": "medium",
-        "ageDays": 23.17,
+        "ageDays": 23.5,
         "recurrences": 21,
         "catalogMatched": true
       },
       {
         "interest": "Alpint — Verdenscupen fortsetter Copper Mountain (menn) + Killington (kvinner) 28.–29. nov",
         "severity": "medium",
-        "ageDays": 24.18,
+        "ageDays": 24.51,
         "recurrences": 22,
         "catalogMatched": false
       },
       {
         "interest": "Håndball — EHF EURO 2026 kvinner: mellomrunden (Norge) ~10.–16. des mangler bak tavlas horisont-kant",
         "severity": "low",
-        "ageDays": 2.01,
+        "ageDays": 2.34,
         "recurrences": 2,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — NM-cupen menn FINALE (Bergen vs Elverum, Oslo Spektrum ~28. des)",
         "severity": "low",
-        "ageDays": 8.11,
+        "ageDays": 8.44,
         "recurrences": 7,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.33,
-    "nearTermChecked": 18,
-    "nearTermAmended": 6,
-    "verifyRunAt": "2026-11-19T14:35:00Z",
+    "nearTermRate": 0,
+    "nearTermChecked": 11,
+    "nearTermAmended": 0,
+    "verifyRunAt": "2026-11-20T14:15:00Z",
     "windowRate": 0,
-    "windowChecks": 69,
+    "windowChecks": 75,
     "windowAmendments": 0,
     "windowCorrections": 6,
     "byDay": [
@@ -162,41 +162,48 @@
         "amendments": 0,
         "corrections": 1,
         "rate": 0
+      },
+      {
+        "date": "2026-11-20",
+        "checks": 6,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-20T13:49:15.930Z",
+    "buildCheckedAt": "2026-11-20T21:40:47.557Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-20T10:47:23.061Z",
-    "manifestAgeHours": 3.03,
+    "manifestGeneratedAt": "2026-11-20T13:49:21.848Z",
+    "manifestAgeHours": 7.86,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-11-19T10:58:12.239Z",
-        "ageHours": 26.85
+        "ageHours": 34.71
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-11-17T23:40:00Z",
-        "ageHours": 62.16
+        "ageHours": 70.01
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-11-19T14:35:00Z",
-    "verifyAgeHours": 23.24,
-    "corrections": 0,
-    "unresolved": 1,
+    "checkedAt": "2026-11-20T14:15:00Z",
+    "verifyAgeHours": 7.43,
+    "corrections": 1,
+    "unresolved": 0,
     "signals": [
-      "Svakt deltakersignal (ikke handlet på): NTB antyder at Alexander Steen Olsen utsatte konkurranseretur — han står i norwegianPlayers for Gurgl herre-slalåm 22…"
+      "Ingen avlysninger, utsettelser, fjerninger eller deltakerendringer. Ingen in-progress flerdagsturnering med norske utøvere å WP-95-sjekke i dag."
     ]
   },
   "contracts": {
     "total": 9,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-11-20T13:49:20.476Z"
+    "generatedAt": "2026-11-20T21:40:50.031Z"
   }
 }
