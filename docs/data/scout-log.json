@@ -133,5 +133,13 @@
     "verdict": "quiet",
     "reason": "RSS (37 items, 13:48 UTC Nov 20): all match results & analysis (Nations League finalized Nov 15–17; Arsenal-Lyon past, Barcelona-Servette past; Beitostølen ski season opener results happening today; speed skating Obihiro result; chess Carlsen drama; transfer/contract news—all past results, personnel changes, organizational news; no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints). Coverage gaps (7 gaps, 1 anomaly): Nations League imminent=true likely refers to weekend matches already tracked; entity gaps imminent=false (Uno-X, Mesterligaen, Bislett old); tracked-claims all imminent=false far-future (Casper Ruud 2027-01-18, Elkjøp/NM handball Dec 2026). cycling.json empty (low severity, pre-existing). No NEW concrete schedule/time/venue/streaming/broadcaster signal. Escalation cap today (Nov 20 UTC): 0/2 before this run.",
     "signals": []
+  },
+  {
+    "runAt": "2026-11-20T21:40:32Z",
+    "verdict": "escalate",
+    "reason": "Coverage gaps (Nov 20 21:40 UTC): IMMINENT TRACKED-CLAIM SIGNAL — Magnus Carlsen (tracked athlete, chess): claimedDate 2026-11-21 (TOMORROW), imminent=true, tracked interest claiming board coverage but ZERO matching event on board. Tracked + imminent + missing = escalation-worthy. RSS (13 items, 21:40 UTC Nov 20): Premier League previews, NWSL final ticket pricing, Dele Alli training news, football lineups—all past results/opinion/personnel, no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints. Escalation cap today (Nov 20 UTC) before this run: 0/2.",
+    "signals": [
+      "Magnus Carlsen (chess): tracked-claim gap, imminent 2026-11-21 (tomorrow), no board event"
+    ]
   }
 ]
