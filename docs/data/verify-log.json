@@ -1,17 +1,17 @@
 {
-  "runAt": "2026-11-19T14:35:00Z",
-  "checked": 18,
-  "confirmed": 12,
-  "amended": 6,
+  "runAt": "2026-11-20T14:15:00Z",
+  "checked": 11,
+  "confirmed": 11,
+  "amended": 0,
   "removed": 0,
   "notes": [
-    "AMENDMENT (6 renn): Kontiolahti skiskyting-verdenscup 26.-29.11 hadde streaming[] feilaktig på NRK — i strid med sin EGEN provenance.streaming (TV 2, official, 14.11), summary-teksten («Norsk visning TV 2 Play») OG rettighetskartet. NRKs egen 2026/27-programoversikt lister skiskytingstarten 26.-29.11 som «(TV 2 og NRK radio)» → TV 2 er TV-kanalen, NRK kun radio. Rettet alle 6 streaming[] til TV 2 Play (validator-flagget summary↔streaming-mismatch er dermed lukket). Boardtiden for 20 km menn 26.11 15:10 UTC bekreftet mot tysk TV-listing (16:10 lokal CET).",
-    "Re-verifisert de 8 nærmeste vinterrennene (Beitostølen langrenn + Lillehammer hopp, 20.-22.11); F1 Las Vegas kvalik, sjakk-VM parti 1 og de to Gurgl-slalåmene ble bekreftet mot primærkilde i går (18.11) uten nye signaler i dag, så de står urørt (ingen falsk ny kilde-stempling).",
-    "Lillehammer hopp (5 renn): FIS event-details re-bekrefter struktur/datoer (Team Large Hill fre + Individual Large Hill menn/kvinner lør+søn). Offisiell starttids-PDF fortsatt IKKE publisert — TCM-møtet er i kveld 19.11 kl. 18:00 lokal — så tidene står fortsatt på NRK-vintersportplanens slot (basis secondary). I morgen bør FIS-tidene foreligge.",
-    "Beitostølen langrenn (3 renn): 2026-formatet bekreftet mot to uavhengige 2026-kilder (Sportsbasen + Norskekalendere): 10 km klassisk fre 20.11, klassisk sprint lør 21.11, 15 km fri søn 22.11, Beitostølen stadion, NRK. Starttider fortsatt preliminære (kan endres) → basis secondary.",
-    "FELLE UNNGÅTT: generiske nettsøk på Beitostølen-programmet returnerer 2025-sesongens oppsett (sprint fre / 10 km klassisk lør / 10 km fri søn — ANNEN rekkefølge og distanser). Jeg forankret kun mot eksplisitte 2026-kilder; 2025-data ble ikke blandet inn.",
-    "Svakt deltakersignal (ikke handlet på): NTB antyder at Alexander Steen Olsen utsatte konkurranseretur — han står i norwegianPlayers for Gurgl herre-slalåm 22.11. Men dette er et FREMTIDIG renn (ikke in-progress), norwegianPlayers er indikative (ikke bekreftet startliste), og WP-95-deltakersjekken gjelder kun pågående turneringer. Signalet var dessuten tvetydig. Ingen endring.",
-    "Ingen avlysninger, utsettelser eller fjerninger.",
-    "Ingen skill-oppdatering: rettighetskartet hadde Kontiolahti=TV 2 allerede riktig (bekreftet 14.11); feilen lå kun i event-dataens streaming[], ikke i skillen. Sesong-forvekslingen i søk er en generisk LLM-felle, ikke en kildespesifikk kvirk for source-quirks."
+    "FIS-tidene foreligger nå (ventet fra i går): FIS event-details publiserte offisielle starttider for Lillehammer-hoppet etter TCM 19.11 — Team Large Hill 16.00 CET (20.11), kvinner individuelt 14.35 og menn individuelt 16.50 (21.11). Alle tre lik boardtiden. Oppgraderte provenance.time for de tre rennene secondary→primary (sourceId fis), som noten eksplisitt ventet på.",
+    "Lillehammer hopp søndag (2 renn, 22.11): FIS lister rennene (Individual Large Hill menn/kvinner) men UTEN publisert starttid ennå — tidene står fortsatt på NRK-vintersportplanens slot (kvinner 11.00 UTC / menn 15.00 UTC), basis secondary. Uavhengig tysk listing (ran.de) enig (12.00 / 16.00 CET). Re-bekreftet.",
+    "F1 Las Vegas kvalik (b58e110c4ec5): bekreftet uendret mot formula1.com + the-race.com — fre 20.11 20.00 lokal (UTC−8) = lør 21.11 04.00 UTC. Viaplay. UK-kilder lister «lør 04.00 GMT» = samme økt (ingen dag-forvirring).",
+    "Gurgl slalåm (2 renn): oetztal.com/gurgl.com (arrangør) re-bekrefter dame lør 21.11 + herre søn 22.11, 1. omg. 10.30 CET (09.30 UTC). Viaplay (alpint-VC utland). Board matcher.",
+    "Beitostølen langrenn (2 renn, sprint + 15 km fri): Skiforbundets NTB-pressemelding re-bekrefter formatet 20.-22.11, Beitostølen stadion, NRK; eksakte starttider fortsatt preliminære (innbydelsen) → basis secondary, confidence medium. FELLE UNNGÅTT: generiske søk returnerer 2025-programmet (annen rekkefølge) — forankret kun mot eksplisitte 2026-kilder.",
+    "Brann – Aarhus (ed0170b54b96) — FØRSTE verify (sto uten verifiedAt): avspark tor 26.11 18.45 CET = 17.45 UTC bekreftet mot uefa.com + foresportia + oddscalendar (alle enige). Conference League MD4, Brann Stadion. Viaplay (eksklusiv i Norge t.o.m. 2030/31). Bekreftet, confidence high står.",
+    "Ingen avlysninger, utsettelser, fjerninger eller deltakerendringer. Ingen in-progress flerdagsturnering med norske utøvere å WP-95-sjekke i dag.",
+    "Ingen skill-oppdatering nødvendig: rettighetene (NRK norske renn / Viaplay alpint+Conference / TV 2 skiskyting / Viaplay F1) stemte med kartet; ingen ny mekanistisk kilde-kvirk å loggføre."
   ]
 }
