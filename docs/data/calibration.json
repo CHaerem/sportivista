@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-21T13:16:32.203Z",
+  "generatedAt": "2026-11-21T20:22:13.531Z",
   "windowDays": 180,
   "records": {
-    "used": 796,
+    "used": 800,
     "skipped": 18
   },
   "sources": {
@@ -222,8 +222,8 @@
       "reliability": null
     },
     "kommunikasjon.ntb.no": {
-      "checks": 9,
-      "agreed": 8,
+      "checks": 12,
+      "agreed": 11,
       "corrections": 2,
       "bySport": {
         "football": {
@@ -237,12 +237,24 @@
         "alpine": {
           "checks": 4,
           "agreed": 4
+        },
+        "ski jumping": {
+          "checks": 1,
+          "agreed": 1
+        },
+        "cross-country": {
+          "checks": 1,
+          "agreed": 1
+        },
+        "biathlon": {
+          "checks": 1,
+          "agreed": 1
         }
       },
       "byField": {
         "streaming": {
-          "checks": 5,
-          "agreed": 4
+          "checks": 8,
+          "agreed": 7
         },
         "time": {
           "checks": 3,
@@ -253,8 +265,8 @@
           "agreed": 1
         }
       },
-      "lastChecked": "2026-11-13T13:16:24Z",
-      "reliability": 0.89
+      "lastChecked": "2026-11-21T13:39:04.605Z",
+      "reliability": 0.92
     },
     "nrk.no": {
       "checks": 31,
@@ -3407,13 +3419,13 @@
       "reliability": null
     },
     "fide.com": {
-      "checks": 6,
-      "agreed": 6,
+      "checks": 7,
+      "agreed": 7,
       "corrections": 0,
       "bySport": {
         "chess": {
-          "checks": 6,
-          "agreed": 6
+          "checks": 7,
+          "agreed": 7
         }
       },
       "byField": {
@@ -3422,15 +3434,15 @@
           "agreed": 2
         },
         "existence": {
-          "checks": 3,
-          "agreed": 3
+          "checks": 4,
+          "agreed": 4
         },
         "streaming": {
           "checks": 1,
           "agreed": 1
         }
       },
-      "lastChecked": "2026-11-18T14:30:00Z",
+      "lastChecked": "2026-11-21T13:39:04.605Z",
       "reliability": 1
     },
     "robinhood.com": {
