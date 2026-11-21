@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T10:36:24.249Z",
+  "generatedAt": "2026-11-21T13:16:29.042Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -21,50 +21,57 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 5,
+    "openGaps": 6,
     "bySeverity": {
       "high": 1,
-      "medium": 2,
+      "medium": 3,
       "low": 2
     },
-    "oldestGapAgeDays": 25.05,
-    "escalatable": 4,
-    "catalogMatched": 4,
-    "auditedAt": "2026-11-20T11:40:00Z",
+    "oldestGapAgeDays": 25.16,
+    "escalatable": 5,
+    "catalogMatched": 5,
+    "auditedAt": "2026-11-21T11:05:00Z",
     "gaps": [
       {
         "interest": "Håndball — domestisk toppserie (Elkjøp-/REMA 1000-ligaen) HELT fraværende fra tavla mens ligaen spiller en full runde denne helgen",
         "severity": "high",
-        "ageDays": 5.96,
-        "recurrences": 5,
+        "ageDays": 6.07,
+        "recurrences": 6,
+        "catalogMatched": true
+      },
+      {
+        "interest": "Sjakk — Magnus Carlsen (tracked athlete) uten kommende event på tavla etter Total Chess-pilotens slutt; neste fixture London Chess Classic (24. nov–7. des) mangler",
+        "severity": "medium",
+        "ageDays": 0.09,
+        "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Langrenn — Ruka/Nordic Opening VC-premieren 27.–29. nov",
         "severity": "medium",
-        "ageDays": 24.04,
-        "recurrences": 21,
+        "ageDays": 24.15,
+        "recurrences": 22,
         "catalogMatched": true
       },
       {
         "interest": "Alpint — Verdenscupen fortsetter Copper Mountain (menn) + Killington (kvinner) 28.–29. nov",
         "severity": "medium",
-        "ageDays": 25.05,
-        "recurrences": 22,
+        "ageDays": 25.16,
+        "recurrences": 23,
         "catalogMatched": false
       },
       {
         "interest": "Håndball — EHF EURO 2026 kvinner: mellomrunden (Norge) ~10.–16. des mangler bak tavlas horisont-kant",
         "severity": "low",
-        "ageDays": 2.88,
-        "recurrences": 2,
+        "ageDays": 2.99,
+        "recurrences": 3,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — NM-cupen menn FINALE (Bergen vs Elverum, Oslo Spektrum ~28. des)",
         "severity": "low",
-        "ageDays": 8.98,
-        "recurrences": 7,
+        "ageDays": 9.09,
+        "recurrences": 8,
         "catalogMatched": true
       }
     ]
@@ -75,17 +82,10 @@
     "nearTermAmended": 0,
     "verifyRunAt": "2026-11-20T14:15:00Z",
     "windowRate": 0,
-    "windowChecks": 75,
+    "windowChecks": 68,
     "windowAmendments": 0,
-    "windowCorrections": 6,
+    "windowCorrections": 4,
     "byDay": [
-      {
-        "date": "2026-11-07",
-        "checks": 7,
-        "amendments": 0,
-        "corrections": 2,
-        "rate": 0
-      },
       {
         "date": "2026-11-09",
         "checks": 3,
@@ -174,26 +174,26 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-21T10:36:22.062Z",
+    "buildCheckedAt": "2026-11-21T13:16:25.466Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-21T02:58:12.158Z",
-    "manifestAgeHours": 7.64,
+    "manifestGeneratedAt": "2026-11-21T10:36:25.934Z",
+    "manifestAgeHours": 2.67,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-11-19T10:58:12.239Z",
-        "ageHours": 47.64
+        "ageHours": 50.3
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-11-17T23:40:00Z",
-        "ageHours": 82.94
+        "ageHours": 85.61
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-11-20T14:15:00Z",
-    "verifyAgeHours": 20.36,
+    "verifyAgeHours": 23.02,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
@@ -204,6 +204,6 @@
     "total": 9,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-11-21T10:36:24.249Z"
+    "generatedAt": "2026-11-21T13:16:29.041Z"
   }
 }
