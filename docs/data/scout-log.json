@@ -147,5 +147,13 @@
     "verdict": "quiet",
     "reason": "RSS (55 items, 13:13 UTC Nov 21): all match results & analysis (Manchester City v Fulham live, Nations League finalized Nov 15–17, F1 Las Vegas qualifying results, Beitostølen skiing opener results, speed skating Obihiro results, chess Carlsen drama, transfer/contract news, various opinion pieces—all past results, personnel changes, organizational news; no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints). Coverage gaps (13 gaps, 1 anomaly): Magnus Carlsen tracked-claim (claimedDate 2026-11-21 today, imminent=true) ALREADY ESCALATED Nov 20 21:40 UTC—research agent notified. Other tracked-claims far-future (Casper Ruud 2027-01-18, Elkjøp-ligaen 2026-12-20, NM-sluttspillet 2026-12-28). Entity gaps all imminent=false (old coverage, future tournaments). cycling.json empty (low severity, pre-existing). No NEW concrete schedule/time/venue/streaming/broadcaster signal since yesterday's escalation. Escalation cap today (Nov 21 UTC): 0/2 before this run.",
     "signals": []
+  },
+  {
+    "runAt": "2026-11-21T20:21:28Z",
+    "verdict": "escalate",
+    "reason": "Coverage gaps (Nov 21 20:21 UTC): HIGH-SEVERITY CONTRACT-BREACH — Premier League (football, wholesale-covered competition in season): 4 of ≥6 expected events within 14 days missing from board. This is a coverage-contract breach (WP-243 high severity, imminent=true). Board is significantly SHORT on Premier League events. Research agent must fill these gaps urgently. RSS (24 items, 20:21 UTC Nov 21): all match results & analysis (Arsenal/Newcastle, City/Fulham, Chelsea/Leeds, Bournemouth/Forest, Aston Villa/Sunderland, Coventry/Crystal Palace, Tottenham/Ipswich, Liverpool/Chelsea WSL finalized Nov 21; Harry Kane injury out months; transfer/personnel news—all past results, personnel changes, opinion pieces; no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements, no 100 Thieves/rain CS2 match hints). No OTHER escalation-worthy signals detected. Escalation cap today (Nov 21 UTC): 0/2 before this run.",
+    "signals": [
+      "contract-breach-premier-league-imminent: 4 of ≥6 expected events within 14 days (in season, wholesale coverage promised)"
+    ]
   }
 ]
