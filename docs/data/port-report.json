@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-22T13:06:18.384Z",
+  "generatedAt": "2026-11-22T20:34:52.417Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
-    "amendRate": "green",
+    "amendRate": "yellow",
     "silentStops": "yellow",
     "participantStatus": "green",
-    "contracts": "green"
+    "contracts": "yellow"
   },
   "basis": {
     "coverageAudit": true,
@@ -27,7 +27,7 @@
       "medium": 4,
       "low": 2
     },
-    "oldestGapAgeDays": 26.15,
+    "oldestGapAgeDays": 26.46,
     "escalatable": 5,
     "catalogMatched": 6,
     "auditedAt": "2026-11-22T11:10:00Z",
@@ -35,63 +35,63 @@
       {
         "interest": "Håndball — domestisk toppserie (Elkjøp-/REMA 1000-ligaen) HELT fraværende fra tavla mens ligaen spiller en runde I DAG + ny runde 27.–28. nov",
         "severity": "high",
-        "ageDays": 7.06,
+        "ageDays": 7.37,
         "recurrences": 7,
         "catalogMatched": true
       },
       {
         "interest": "Hopp — FIS verdenscup Ruka/Kuusamo (Nordic Opening) 28.–29. nov mangler fra tavla",
         "severity": "medium",
-        "ageDays": 0.08,
+        "ageDays": 0.39,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Langrenn — Ruka/Nordic Opening VC-premieren 27.–29. nov",
         "severity": "medium",
-        "ageDays": 25.14,
+        "ageDays": 25.45,
         "recurrences": 23,
         "catalogMatched": true
       },
       {
         "interest": "Alpint — Verdenscupen fortsetter Copper Mountain (menn) + Killington (kvinner) 28.–29. nov",
         "severity": "medium",
-        "ageDays": 26.15,
+        "ageDays": 26.46,
         "recurrences": 24,
         "catalogMatched": false
       },
       {
         "interest": "Sjakk — Magnus Carlsen (tracked athlete) uten kommende event på tavla; neste bekreftede fixture London Chess Classic SUPER RAPID 5.–6. des",
         "severity": "medium",
-        "ageDays": 1.08,
+        "ageDays": 1.4,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — EHF EURO 2026 kvinner: mellomrunden (Norge) ~10.–16. des mangler bak tavlas horisont-kant",
         "severity": "low",
-        "ageDays": 3.98,
+        "ageDays": 4.3,
         "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — NM-cupen menn FINALE (Bergen vs Elverum, Oslo Spektrum ~28. des)",
         "severity": "low",
-        "ageDays": 10.08,
+        "ageDays": 10.4,
         "recurrences": 9,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0,
-    "nearTermChecked": 11,
-    "nearTermAmended": 0,
-    "verifyRunAt": "2026-11-21T13:45:00Z",
+    "nearTermRate": 0.33,
+    "nearTermChecked": 6,
+    "nearTermAmended": 2,
+    "verifyRunAt": "2026-11-22T13:30:41.000Z",
     "windowRate": 0,
-    "windowChecks": 72,
+    "windowChecks": 79,
     "windowAmendments": 0,
-    "windowCorrections": 4,
+    "windowCorrections": 6,
     "byDay": [
       {
         "date": "2026-11-09",
@@ -183,31 +183,38 @@
         "amendments": 0,
         "corrections": 0,
         "rate": 0
+      },
+      {
+        "date": "2026-11-22",
+        "checks": 7,
+        "amendments": 0,
+        "corrections": 2,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-22T13:06:13.649Z",
+    "buildCheckedAt": "2026-11-22T20:34:48.008Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-22T10:36:17.751Z",
-    "manifestAgeHours": 2.5,
+    "manifestGeneratedAt": "2026-11-22T13:06:22.569Z",
+    "manifestAgeHours": 7.47,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-11-19T10:58:12.239Z",
-        "ageHours": 74.14
+        "ageHours": 81.61
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-11-17T23:40:00Z",
-        "ageHours": 109.44
+        "ageHours": 116.91
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-11-21T13:45:00Z",
-    "verifyAgeHours": 23.36,
+    "checkedAt": "2026-11-22T13:30:41.000Z",
+    "verifyAgeHours": 7.07,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -215,7 +222,15 @@
   "contracts": {
     "total": 9,
     "inSeason": 6,
-    "breached": [],
-    "generatedAt": "2026-11-22T13:06:18.384Z"
+    "breached": [
+      {
+        "id": "football:premier-league",
+        "name": "Premier League",
+        "upcoming": 5,
+        "minUpcoming": 6,
+        "horizonDays": 14
+      }
+    ],
+    "generatedAt": "2026-11-22T20:34:52.417Z"
   }
 }
