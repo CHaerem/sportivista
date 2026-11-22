@@ -1430,11 +1430,11 @@
     ],
     "provenance": {
       "time": {
-        "sourceId": "nrk",
-        "url": "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-20T14:15:00Z",
-        "note": "Bekreftet (verify 16.11): NRKs vintersportplan lister mennenes HS140 soen. 22. nov kl. 16.00 CET (= 15.00 UTC) paa NRK; samsvarer med boardtiden. FIS’ offisielle starttids-PDF kommer etter TD-moete 19. nov, saa basis fortsatt secondary — men NRK-planen bekrefter slotten. [verify 18.11: FIS event-details bekrefter konkurransen på datoen (Team/Individual Large Hill); FIS offisielle starttids-PDF ennå ikke publisert (TCM 19.11), så tiden står på NRK-planens slot — basis fortsatt secondary.] [verify 19.11: FIS event-details re-bekrefter struktur/datoer (Team Large Hill fre + Individual Large Hill menn/kvinner lør+søn); offisiell starttids-PDF fortsatt ikke publisert — TCM 19.11 18:00 lokal i kveld — tider står på NRK-planens slot, basis fortsatt secondary.] [verify 20.11: FIS event-details lister søndagens to renn (Individual Large Hill menn/kvinner) men UTEN publisert starttid ennå — tiden står fortsatt på NRK-vintersportplanens slot (basis secondary). Uavhengig tysk listing (ran.de) enig: kvinner 12.00 / menn 16.00 CET.]"
+        "sourceId": "fis",
+        "url": "https://www.fis-ski.com/DB/general/event-details.html?sectorcode=JP&eventid=63024&seasoncode=2027",
+        "basis": "primary",
+        "retrievedAt": "2026-11-22T13:30:41.000Z",
+        "note": "FIS event-details (offisiell) 22.11 under kvalifisering: søndagens Individual Large Hill menn starter 16.00 CET (= 15.00 UTC) — kvalik 14.30 \"In progress\" live nå. Låst mot FIS primær (starttid nå publisert etter TCM); samsvarer med boardtid og NRK-planen. Oppgradert fra secondary."
       },
       "streaming": {
         "sourceId": "nrk",
@@ -1447,12 +1447,11 @@
     "summary": "Åpningshelgens siste verdenscuprenn for menn i stor bakke (HS140) i Lillehammer. Norsk hjemmehelg med full tropp.\n\nNorsk visning: NRK (renn på norsk jord).\n\nStarttid foreløpig (FIS ikke offisielt låst) — verify bekrefter nærmere rennet.",
     "id": "9e2562dddd96",
     "participants": [],
-    "verifiedAt": "2026-11-21T13:38:50.629Z",
+    "verifiedAt": "2026-11-22T13:30:41.000Z",
     "verificationStatus": "confirmed",
     "verificationSources": [
-      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
       "https://www.fis-ski.com/DB/general/event-details.html?sectorcode=JP&eventid=63024&seasoncode=2027",
-      "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing?publisherId=13318709"
+      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873"
     ]
   },
   {
@@ -2555,8 +2554,8 @@
     "sport": "biathlon",
     "tournament": "IBU verdenscup skiskyting 2026/27",
     "title": "Kontiolahti: 20 km normalprogram menn",
-    "time": "2026-11-26T15:10:00Z",
-    "endTime": "2026-11-26T16:05:00.000Z",
+    "time": "2026-11-26T15:15:00Z",
+    "endTime": "2026-11-26T16:10:00.000Z",
     "venue": "Kontiolahti, Finland",
     "norwegian": true,
     "participants": [],
@@ -2593,9 +2592,9 @@
       "time": {
         "sourceId": "ibu",
         "url": "https://kontiolahtibiathlon.com/en/kontiolahti-biathlon-world-cup/program-and-tickets",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-14T18:10:00Z",
-        "note": "Starttid fra arrangørens offisielle program (kontiolahtibiathlon.com, lokal EET=UTC+2), kryss-bekreftet i UTC mot snow-online + eurovisionsport + uavhengig write-time fact-check. Provisorisk så langt ut (IBU TD-møte kan justere) → medium; verify låser mot biathlonworld.com nærmere rennet."
+        "basis": "primary",
+        "retrievedAt": "2026-11-22T13:30:41.000Z",
+        "note": "Låst mot arrangørens offisielle program (kontiolahtibiathlon.com, den som setter klokka): menn 20 km normalprogram starter 17.15 lokal (EET=UTC+2) = 15.15 UTC. Samme sides stafett-/sprinttider (single mixed 14.10, mixed 16.15, sprint 14.00) matcher boardets EET-konvertering nøyaktig → siden er i EET. Board hadde 15.10 (snow-online ~17.10) → flyttet +5 min til arrangørtid."
       },
       "streaming": {
         "sourceId": "tv2",
@@ -2608,10 +2607,10 @@
     "summary": "Sesongåpningen i skiskyting-verdenscupen 2026/27 — 20 km normalprogram (individuelt) for menn i Kontiolahti, Finland.\n\nNorge er storfavoritt i begge klasser; Johannes Thingnes Bø, Sturla Holm Lægreid og Ingrid Landmark Tandrevold blant de fremste.\n\nNorsk visning TV 2 Play. Starttid provisorisk (arrangørens program) — verify bekrefter mot biathlonworld.com nær rennet.",
     "id": "2e7315ab1d49",
     "verificationStatus": "amended",
-    "verifiedAt": "2026-11-21T13:38:50.629Z",
+    "verifiedAt": "2026-11-22T13:30:41.000Z",
     "verificationSources": [
-      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
-      "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing?publisherId=13318709"
+      "https://kontiolahtibiathlon.com/en/kontiolahti-biathlon-world-cup/program-and-tickets",
+      "https://www.snow-online.com/skimag/ibu-world-cup-biathlon-schedule-dates-and-venues.htm"
     ]
   },
   {
@@ -2672,8 +2671,8 @@
     "sport": "biathlon",
     "tournament": "IBU verdenscup skiskyting 2026/27",
     "title": "Kontiolahti: 15 km normalprogram kvinner",
-    "time": "2026-11-27T15:10:00Z",
-    "endTime": "2026-11-27T16:00:00.000Z",
+    "time": "2026-11-27T15:15:00Z",
+    "endTime": "2026-11-27T16:05:00.000Z",
     "venue": "Kontiolahti, Finland",
     "norwegian": true,
     "participants": [],
@@ -2706,9 +2705,9 @@
       "time": {
         "sourceId": "ibu",
         "url": "https://kontiolahtibiathlon.com/en/kontiolahti-biathlon-world-cup/program-and-tickets",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-14T18:10:00Z",
-        "note": "Starttid fra arrangørens offisielle program (kontiolahtibiathlon.com, lokal EET=UTC+2), kryss-bekreftet i UTC mot snow-online + eurovisionsport + uavhengig write-time fact-check. Provisorisk så langt ut (IBU TD-møte kan justere) → medium; verify låser mot biathlonworld.com nærmere rennet."
+        "basis": "primary",
+        "retrievedAt": "2026-11-22T13:30:41.000Z",
+        "note": "Låst mot arrangørens offisielle program (kontiolahtibiathlon.com, den som setter klokka): kvinner 15 km normalprogram starter 17.15 lokal (EET=UTC+2) = 15.15 UTC. Samme sides stafett-/sprinttider (single mixed 14.10, mixed 16.15, sprint 14.00) matcher boardets EET-konvertering nøyaktig → siden er i EET. Board hadde 15.10 (snow-online ~17.10) → flyttet +5 min til arrangørtid."
       },
       "streaming": {
         "sourceId": "tv2",
@@ -2721,10 +2720,10 @@
     "summary": "Sesongåpningen i skiskyting-verdenscupen 2026/27 — 15 km normalprogram (individuelt) for kvinner i Kontiolahti, Finland.\n\nNorge er blant storfavorittene; Ingrid Landmark Tandrevold og Juni Arnekleiv blant de fremste norske.\n\nNorsk visning TV 2 Play. Starttid provisorisk (arrangørens program) — verify bekrefter mot biathlonworld.com nær rennet.",
     "id": "b6a824f3dcc5",
     "verificationStatus": "amended",
-    "verifiedAt": "2026-11-21T13:38:50.629Z",
+    "verifiedAt": "2026-11-22T13:30:41.000Z",
     "verificationSources": [
-      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
-      "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing?publisherId=13318709"
+      "https://kontiolahtibiathlon.com/en/kontiolahti-biathlon-world-cup/program-and-tickets",
+      "https://www.snow-online.com/skimag/ibu-world-cup-biathlon-schedule-dates-and-venues.htm"
     ]
   },
   {
@@ -2873,9 +2872,9 @@
       "time": {
         "sourceId": "ibu",
         "url": "https://kontiolahtibiathlon.com/en/kontiolahti-biathlon-world-cup/program-and-tickets",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-14T18:10:00Z",
-        "note": "Starttid fra arrangørens offisielle program (kontiolahtibiathlon.com, lokal EET=UTC+2), kryss-bekreftet i UTC mot snow-online + eurovisionsport + uavhengig write-time fact-check. Provisorisk så langt ut (IBU TD-møte kan justere) → medium; verify låser mot biathlonworld.com nærmere rennet."
+        "basis": "primary",
+        "retrievedAt": "2026-11-22T13:30:41.000Z",
+        "note": "Bekreftet mot arrangørens offisielle program (kontiolahtibiathlon.com): enkel mixstafett 14.10 lokal (EET=UTC+2) = boardtid. Samsvarer med boardet; oppgradert til primær."
       },
       "streaming": {
         "sourceId": "tv2",
@@ -2887,11 +2886,11 @@
     },
     "summary": "Sesongåpningen i skiskyting-verdenscupen 2026/27 — enkel mixstafett (single mixed relay) i Kontiolahti, Finland.\n\nNorge er storfavoritt i begge klasser; Johannes Thingnes Bø, Sturla Holm Lægreid og Ingrid Landmark Tandrevold blant de fremste.\n\nNorsk visning TV 2 Play. Starttid provisorisk (arrangørens program) — verify bekrefter mot biathlonworld.com nær rennet.",
     "id": "974161dbfb40",
-    "verificationStatus": "amended",
-    "verifiedAt": "2026-11-21T13:38:50.629Z",
+    "verificationStatus": "confirmed",
+    "verifiedAt": "2026-11-22T13:30:41.000Z",
     "verificationSources": [
-      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
-      "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing?publisherId=13318709"
+      "https://kontiolahtibiathlon.com/en/kontiolahti-biathlon-world-cup/program-and-tickets",
+      "https://www.snow-online.com/skimag/ibu-world-cup-biathlon-schedule-dates-and-venues.htm"
     ]
   },
   {
@@ -2986,9 +2985,9 @@
       "time": {
         "sourceId": "ibu",
         "url": "https://kontiolahtibiathlon.com/en/kontiolahti-biathlon-world-cup/program-and-tickets",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-14T18:10:00Z",
-        "note": "Starttid fra arrangørens offisielle program (kontiolahtibiathlon.com, lokal EET=UTC+2), kryss-bekreftet i UTC mot snow-online + eurovisionsport + uavhengig write-time fact-check. Provisorisk så langt ut (IBU TD-møte kan justere) → medium; verify låser mot biathlonworld.com nærmere rennet."
+        "basis": "primary",
+        "retrievedAt": "2026-11-22T13:30:41.000Z",
+        "note": "Bekreftet mot arrangørens offisielle program (kontiolahtibiathlon.com): mixstafett 16.15 lokal (EET=UTC+2) = boardtid. Samsvarer med boardet; oppgradert til primær."
       },
       "streaming": {
         "sourceId": "tv2",
@@ -3000,11 +2999,11 @@
     },
     "summary": "Sesongåpningen i skiskyting-verdenscupen 2026/27 — mixstafett (4 x etappe) i Kontiolahti, Finland.\n\nNorge er storfavoritt i begge klasser; Johannes Thingnes Bø, Sturla Holm Lægreid og Ingrid Landmark Tandrevold blant de fremste.\n\nNorsk visning TV 2 Play. Starttid provisorisk (arrangørens program) — verify bekrefter mot biathlonworld.com nær rennet.",
     "id": "216588ec9ac2",
-    "verificationStatus": "amended",
-    "verifiedAt": "2026-11-21T13:38:50.629Z",
+    "verificationStatus": "confirmed",
+    "verifiedAt": "2026-11-22T13:30:41.000Z",
     "verificationSources": [
-      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
-      "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing?publisherId=13318709"
+      "https://kontiolahtibiathlon.com/en/kontiolahti-biathlon-world-cup/program-and-tickets",
+      "https://www.snow-online.com/skimag/ibu-world-cup-biathlon-schedule-dates-and-venues.htm"
     ]
   },
   {
@@ -3499,9 +3498,9 @@
       "time": {
         "sourceId": "ibu",
         "url": "https://kontiolahtibiathlon.com/en/kontiolahti-biathlon-world-cup/program-and-tickets",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-14T18:10:00Z",
-        "note": "Starttid fra arrangørens offisielle program (kontiolahtibiathlon.com, lokal EET=UTC+2), kryss-bekreftet i UTC mot snow-online + eurovisionsport + uavhengig write-time fact-check. Provisorisk så langt ut (IBU TD-møte kan justere) → medium; verify låser mot biathlonworld.com nærmere rennet."
+        "basis": "primary",
+        "retrievedAt": "2026-11-22T13:30:41.000Z",
+        "note": "Bekreftet mot arrangørens offisielle program (kontiolahtibiathlon.com): sprint 10 km menn 14.00 lokal (EET=UTC+2) = boardtid. Samsvarer med boardet; oppgradert til primær."
       },
       "streaming": {
         "sourceId": "tv2",
@@ -3513,11 +3512,11 @@
     },
     "summary": "Sesongåpningen i skiskyting-verdenscupen 2026/27 — sprint 10 km for menn i Kontiolahti, Finland.\n\nNorge er storfavoritt i begge klasser; Johannes Thingnes Bø, Sturla Holm Lægreid og Ingrid Landmark Tandrevold blant de fremste.\n\nNorsk visning TV 2 Play. Starttid provisorisk (arrangørens program) — verify bekrefter mot biathlonworld.com nær rennet.",
     "id": "4dfa4dfbbb02",
-    "verificationStatus": "amended",
-    "verifiedAt": "2026-11-21T13:38:50.629Z",
+    "verificationStatus": "confirmed",
+    "verifiedAt": "2026-11-22T13:30:41.000Z",
     "verificationSources": [
-      "https://www.nrk.no/sport/program-for-vintersport-i-2026_2027_-full-oversikt-over-langrenn_-skiskyting_-alpint_-skoyter_-hopp-1.18033873",
-      "https://kommunikasjon.ntb.no/pressemelding/19113452/slik-blir-vinteren-pa-tv-2-tidenes-satsing?publisherId=13318709"
+      "https://kontiolahtibiathlon.com/en/kontiolahti-biathlon-world-cup/program-and-tickets",
+      "https://www.snow-online.com/skimag/ibu-world-cup-biathlon-schedule-dates-and-venues.htm"
     ]
   },
   {
