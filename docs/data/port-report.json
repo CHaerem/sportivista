@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T10:36:14.944Z",
+  "generatedAt": "2026-11-22T13:06:18.384Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -21,57 +21,64 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 6,
+    "openGaps": 7,
     "bySeverity": {
       "high": 1,
-      "medium": 3,
+      "medium": 4,
       "low": 2
     },
-    "oldestGapAgeDays": 26.05,
+    "oldestGapAgeDays": 26.15,
     "escalatable": 5,
-    "catalogMatched": 5,
-    "auditedAt": "2026-11-21T11:05:00Z",
+    "catalogMatched": 6,
+    "auditedAt": "2026-11-22T11:10:00Z",
     "gaps": [
       {
-        "interest": "Håndball — domestisk toppserie (Elkjøp-/REMA 1000-ligaen) HELT fraværende fra tavla mens ligaen spiller en full runde denne helgen",
+        "interest": "Håndball — domestisk toppserie (Elkjøp-/REMA 1000-ligaen) HELT fraværende fra tavla mens ligaen spiller en runde I DAG + ny runde 27.–28. nov",
         "severity": "high",
-        "ageDays": 6.96,
-        "recurrences": 6,
+        "ageDays": 7.06,
+        "recurrences": 7,
         "catalogMatched": true
       },
       {
-        "interest": "Sjakk — Magnus Carlsen (tracked athlete) uten kommende event på tavla etter Total Chess-pilotens slutt; neste fixture London Chess Classic (24. nov–7. des) mangler",
+        "interest": "Hopp — FIS verdenscup Ruka/Kuusamo (Nordic Opening) 28.–29. nov mangler fra tavla",
         "severity": "medium",
-        "ageDays": 0.98,
+        "ageDays": 0.08,
         "recurrences": 0,
         "catalogMatched": true
       },
       {
         "interest": "Langrenn — Ruka/Nordic Opening VC-premieren 27.–29. nov",
         "severity": "medium",
-        "ageDays": 25.04,
-        "recurrences": 22,
+        "ageDays": 25.14,
+        "recurrences": 23,
         "catalogMatched": true
       },
       {
         "interest": "Alpint — Verdenscupen fortsetter Copper Mountain (menn) + Killington (kvinner) 28.–29. nov",
         "severity": "medium",
-        "ageDays": 26.05,
-        "recurrences": 23,
+        "ageDays": 26.15,
+        "recurrences": 24,
         "catalogMatched": false
+      },
+      {
+        "interest": "Sjakk — Magnus Carlsen (tracked athlete) uten kommende event på tavla; neste bekreftede fixture London Chess Classic SUPER RAPID 5.–6. des",
+        "severity": "medium",
+        "ageDays": 1.08,
+        "recurrences": 1,
+        "catalogMatched": true
       },
       {
         "interest": "Håndball — EHF EURO 2026 kvinner: mellomrunden (Norge) ~10.–16. des mangler bak tavlas horisont-kant",
         "severity": "low",
-        "ageDays": 3.88,
-        "recurrences": 3,
+        "ageDays": 3.98,
+        "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — NM-cupen menn FINALE (Bergen vs Elverum, Oslo Spektrum ~28. des)",
         "severity": "low",
-        "ageDays": 9.98,
-        "recurrences": 8,
+        "ageDays": 10.08,
+        "recurrences": 9,
         "catalogMatched": true
       }
     ]
@@ -181,26 +188,26 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-22T10:36:10.486Z",
+    "buildCheckedAt": "2026-11-22T13:06:13.649Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-22T01:52:08.472Z",
-    "manifestAgeHours": 8.74,
+    "manifestGeneratedAt": "2026-11-22T10:36:17.751Z",
+    "manifestAgeHours": 2.5,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-11-19T10:58:12.239Z",
-        "ageHours": 71.63
+        "ageHours": 74.14
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-11-17T23:40:00Z",
-        "ageHours": 106.94
+        "ageHours": 109.44
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-11-21T13:45:00Z",
-    "verifyAgeHours": 20.85,
+    "verifyAgeHours": 23.36,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -209,6 +216,6 @@
     "total": 9,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-11-22T10:36:14.944Z"
+    "generatedAt": "2026-11-22T13:06:18.384Z"
   }
 }

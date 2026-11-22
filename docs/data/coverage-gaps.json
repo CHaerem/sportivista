@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-22T10:36:17.595Z",
-  "gapCount": 10,
-  "anomalyCount": 1,
+  "generatedAt": "2026-11-22T13:06:22.416Z",
+  "gapCount": 9,
+  "anomalyCount": 2,
   "gaps": [
     {
       "kind": "entity",
@@ -11,8 +11,8 @@
       "headline": "Mer bråk etter Carlsen-dramaet: Nå krever dommerne unnskyldning",
       "link": "https://www.tv2.no/a/19457321",
       "feed": "tv2-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-22T10:36:15.124Z"
+      "matchCount": 2,
+      "detectedAt": "2026-11-22T13:06:18.566Z"
     },
     {
       "kind": "entity",
@@ -22,8 +22,8 @@
       "headline": "Mer bråk etter Carlsen-dramaet: Nå krever dommerne unnskyldning",
       "link": "https://www.tv2.no/a/19457321",
       "feed": "tv2-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-22T10:36:15.124Z"
+      "matchCount": 2,
+      "detectedAt": "2026-11-22T13:06:18.566Z"
     },
     {
       "kind": "entity",
@@ -34,7 +34,7 @@
       "link": "https://www.espn.com/golf/story/_/id/50552432/rain-sea-island-washes-3rd-round-rsm-classic",
       "feed": "espn-golf",
       "matchCount": 1,
-      "detectedAt": "2026-11-22T10:36:15.124Z"
+      "detectedAt": "2026-11-22T13:06:18.566Z"
     },
     {
       "kind": "entity",
@@ -45,7 +45,7 @@
       "link": "https://www.theguardian.com/football/2026/nov/21/nwsl-championship-washington-spirit-kansas-city-current",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-11-22T10:36:15.124Z"
+      "detectedAt": "2026-11-22T13:06:18.566Z"
     },
     {
       "kind": "entity",
@@ -55,19 +55,8 @@
       "headline": "Mer bråk etter Carlsen-dramaet: Nå krever dommerne unnskyldning",
       "link": "https://www.tv2.no/a/19457321",
       "feed": "tv2-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-22T10:36:15.124Z"
-    },
-    {
-      "kind": "sport",
-      "entity": "Formel 1",
-      "sport": "f1",
-      "type": "imminent",
-      "imminent": true,
-      "headline": "Verstappen's superb racecraft & Russell's costly mistake - driver ratings",
-      "link": "https://www.bbc.co.uk/sport/formula1/articles/c83vg92x21vzo?at_medium=RSS&amp;at_campaign=rss",
-      "feed": "bbc-f1",
-      "detectedAt": "2026-11-22T10:36:15.124Z"
+      "matchCount": 2,
+      "detectedAt": "2026-11-22T13:06:18.566Z"
     },
     {
       "kind": "tracked-claim",
@@ -79,7 +68,7 @@
       "claimedDate": "2027-01-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "casper-ruud",
-      "detectedAt": "2026-11-22T10:36:15.905Z"
+      "detectedAt": "2026-11-22T13:06:19.361Z"
     },
     {
       "kind": "tracked-claim",
@@ -91,7 +80,7 @@
       "claimedDate": "2026-11-24T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "magnus-carlsen",
-      "detectedAt": "2026-11-22T10:36:15.905Z"
+      "detectedAt": "2026-11-22T13:06:19.361Z"
     },
     {
       "kind": "tracked-claim",
@@ -103,7 +92,7 @@
       "claimedDate": "2026-12-20T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "elkjop-ligaen-2026-27",
-      "detectedAt": "2026-11-22T10:36:15.905Z"
+      "detectedAt": "2026-11-22T13:06:19.361Z"
     },
     {
       "kind": "tracked-claim",
@@ -115,16 +104,25 @@
       "claimedDate": "2026-12-28T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "nm-sluttspillet-menn-2026-27",
-      "detectedAt": "2026-11-22T10:36:15.905Z"
+      "detectedAt": "2026-11-22T13:06:19.361Z"
     }
   ],
   "anomalies": [
+    {
+      "sport": "esports",
+      "issue": "stale-retained",
+      "detail": "docs/data/esports.json has been served from retention for 14 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 14,
+      "staleDays": 3,
+      "severity": "high",
+      "detectedAt": "2026-11-22T13:06:19.404Z"
+    },
     {
       "sport": "cycling",
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-22T10:36:15.948Z"
+      "detectedAt": "2026-11-22T13:06:19.404Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
