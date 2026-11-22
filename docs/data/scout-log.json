@@ -161,5 +161,13 @@
     "verdict": "quiet",
     "reason": "RSS (24 items, Nov 21 20:21 UTC—using yesterday's data): all match results & analysis (Arsenal/Newcastle, City/Fulham, Chelsea/Leeds, Bournemouth/Forest, Aston Villa/Sunderland, Coventry/Crystal Palace, Tottenham/Ipswich, Liverpool/Chelsea WSL finalized Nov 21; Harry Kane ankle injury—out months; personnel/transfer news—all past results, personnel changes, opinion pieces; no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints). Coverage gaps (from Nov 21 20:22 UTC, stale): Premier League contract breach (HIGH, imminent) ALREADY ESCALATED Nov 21 20:21 UTC—1 hour before gap detection, research agent active. Magnus Carlsen gap stale (claimedDate Nov 21 past, generated yesterday). Other entity gaps imminent=false. cycling.json empty (low severity, pre-existing). No NEW concrete schedule/time/venue/streaming/broadcaster signal detected. Escalation cap today (Nov 22 UTC): 0/2 before this run.",
     "signals": []
+  },
+  {
+    "runAt": "2026-11-22T13:03:35Z",
+    "verdict": "escalate",
+    "reason": "Coverage gaps (Nov 22 13:03 UTC): IMMINENT TRACKED-CLAIM SIGNAL — Magnus Carlsen (tracked athlete, chess): claimedDate 2026-11-24 (Sunday, 2 days from now), imminent=true, tracked interest claiming board coverage but ZERO matching event on board. Tracked + imminent + missing = escalation-worthy. RSS (55 items, 13:03 UTC Nov 22): all past match results & analysis (Chelsea v Tottenham/Birmingham v Manchester United WSL live, ski racing results, speed skating Obihiro results, golf (rain delay RSM Classic), chess Carlsen drama (ongoing, not new event), handball, cycling, football news/analysis, transfer speculation—all past results, personnel changes, opinion pieces; no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints). No OTHER escalation-worthy signals detected. Escalation cap today (Nov 22 UTC) before this run: 0/2.",
+    "signals": [
+      "Magnus Carlsen (chess): tracked-claim gap, imminent 2026-11-24 (Sunday, 2 days), no board event"
+    ]
   }
 ]
