@@ -1,41 +1,8 @@
 {
-  "generatedAt": "2026-11-22T00:56:31.301Z",
-  "gapCount": 11,
+  "generatedAt": "2026-11-22T01:52:08.266Z",
+  "gapCount": 6,
   "anomalyCount": 1,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Magnus Carlsen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Sjakktopper i strupen på Magnus Carlsen: – Mangler sidestykke",
-      "link": "https://www.tv2.no/a/19455914",
-      "feed": "tv2-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-11-22T00:56:28.887Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Carlsen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Sjakktopper i strupen på Magnus Carlsen: – Mangler sidestykke",
-      "link": "https://www.tv2.no/a/19455914",
-      "feed": "tv2-sport",
-      "matchCount": 2,
-      "detectedAt": "2026-11-22T00:56:28.887Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "rain",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Rain at Sea Island washes out 3rd round of RSM Classic",
-      "link": "https://www.espn.com/golf/story/_/id/50552432/rain-sea-island-washes-3rd-round-rsm-classic",
-      "feed": "espn-golf",
-      "matchCount": 1,
-      "detectedAt": "2026-11-22T00:56:28.887Z"
-    },
     {
       "kind": "entity",
       "entity": "Man City",
@@ -45,40 +12,18 @@
       "link": "https://www.bbc.co.uk/sport/football/articles/cqwy06p44g3no?at_medium=RSS&amp;at_campaign=rss",
       "feed": "bbc-football",
       "matchCount": 1,
-      "detectedAt": "2026-11-22T00:56:28.887Z"
+      "detectedAt": "2026-11-22T01:52:07.080Z"
     },
     {
       "kind": "entity",
       "entity": "Spirit",
       "type": "missing",
       "imminent": true,
-      "headline": "Washington Spirit v Kansas City Current: NWSL Championship – live buildup",
+      "headline": "Washington Spirit v Kansas City Current: NWSL Championship – live updates",
       "link": "https://www.theguardian.com/football/live/2026/nov/21/washington-spirit-kansas-city-current-nwsl-championship-live-updates",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-11-22T00:56:28.887Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Nasjonsligaen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Ny nedtur for Haaland og City – fire kamper uten seier i ligaen",
-      "link": "https://www.nrk.no/sport/ny-nedtur-for-haaland-og-city-_-fire-kamper-uten-seier-i-ligaen-1.18086368",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-22T00:56:28.887Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Total Chess",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Sjakktopper i strupen på Magnus Carlsen: – Mangler sidestykke",
-      "link": "https://www.tv2.no/a/19455914",
-      "feed": "tv2-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-22T00:56:28.887Z"
+      "detectedAt": "2026-11-22T01:52:07.080Z"
     },
     {
       "kind": "tracked-claim",
@@ -90,7 +35,7 @@
       "claimedDate": "2027-01-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "casper-ruud",
-      "detectedAt": "2026-11-22T00:56:29.663Z"
+      "detectedAt": "2026-11-22T01:52:08.074Z"
     },
     {
       "kind": "tracked-claim",
@@ -102,7 +47,7 @@
       "claimedDate": "2026-11-24T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "magnus-carlsen",
-      "detectedAt": "2026-11-22T00:56:29.663Z"
+      "detectedAt": "2026-11-22T01:52:08.074Z"
     },
     {
       "kind": "tracked-claim",
@@ -114,7 +59,7 @@
       "claimedDate": "2026-12-20T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "elkjop-ligaen-2026-27",
-      "detectedAt": "2026-11-22T00:56:29.663Z"
+      "detectedAt": "2026-11-22T01:52:08.074Z"
     },
     {
       "kind": "tracked-claim",
@@ -126,7 +71,7 @@
       "claimedDate": "2026-12-28T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "nm-sluttspillet-menn-2026-27",
-      "detectedAt": "2026-11-22T00:56:29.663Z"
+      "detectedAt": "2026-11-22T01:52:08.074Z"
     }
   ],
   "anomalies": [
@@ -135,7 +80,7 @@
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-22T00:56:29.706Z"
+      "detectedAt": "2026-11-22T01:52:08.134Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
