@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2026-11-22T20:34:53.685Z",
-  "gapCount": 9,
+  "generatedAt": "2026-11-23T01:23:41.424Z",
+  "gapCount": 11,
   "anomalyCount": 2,
   "gaps": [
+    {
+      "kind": "entity",
+      "entity": "Magnus Carlsen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Mer bråk etter Carlsen-dramaet: Nå krever dommerne unnskyldning",
+      "link": "https://www.tv2.no/a/19457321",
+      "feed": "tv2-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-11-23T01:23:40.453Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Carlsen",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Mer bråk etter Carlsen-dramaet: Nå krever dommerne unnskyldning",
+      "link": "https://www.tv2.no/a/19457321",
+      "feed": "tv2-sport",
+      "matchCount": 1,
+      "detectedAt": "2026-11-23T01:23:40.453Z"
+    },
     {
       "kind": "entity",
       "entity": "Barça",
@@ -12,7 +34,7 @@
       "link": "https://www.theguardian.com/football/2026/nov/22/european-football-barcelona-villarreal-juventus-milan-inter",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-11-22T20:34:52.652Z"
+      "detectedAt": "2026-11-23T01:23:40.453Z"
     },
     {
       "kind": "entity",
@@ -23,18 +45,29 @@
       "link": "https://www.theguardian.com/football/2026/nov/22/european-football-barcelona-villarreal-juventus-milan-inter",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-11-22T20:34:52.652Z"
+      "detectedAt": "2026-11-23T01:23:40.453Z"
     },
     {
       "kind": "entity",
-      "entity": "Spirit",
+      "entity": "RBK",
       "type": "missing",
       "imminent": false,
-      "headline": "Champion’s corner: KC Current win first NWSL Championship with 2-1 stunner over Spirit",
-      "link": "https://www.theguardian.com/football/2026/nov/21/nwsl-championship-washington-spirit-kansas-city-current",
-      "feed": "guardian-football",
+      "headline": "«Alle»er borte: – Må jo væreen grunn for atdet har skjedd",
+      "link": "https://www.tv2.no/a/19451090",
+      "feed": "tv2-sport",
+      "matchCount": 2,
+      "detectedAt": "2026-11-23T01:23:40.453Z"
+    },
+    {
+      "kind": "entity",
+      "entity": "Total Chess",
+      "type": "missing",
+      "imminent": false,
+      "headline": "Mer bråk etter Carlsen-dramaet: Nå krever dommerne unnskyldning",
+      "link": "https://www.tv2.no/a/19457321",
+      "feed": "tv2-sport",
       "matchCount": 1,
-      "detectedAt": "2026-11-22T20:34:52.652Z"
+      "detectedAt": "2026-11-23T01:23:40.453Z"
     },
     {
       "kind": "entity",
@@ -45,7 +78,7 @@
       "link": "https://www.theguardian.com/football/2026/nov/22/liverpool-manchester-united-premier-league-match-report",
       "feed": "guardian-football",
       "matchCount": 1,
-      "detectedAt": "2026-11-22T20:34:52.652Z"
+      "detectedAt": "2026-11-23T01:23:40.453Z"
     },
     {
       "kind": "tracked-claim",
@@ -57,7 +90,7 @@
       "claimedDate": "2027-01-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "casper-ruud",
-      "detectedAt": "2026-11-22T20:34:53.485Z"
+      "detectedAt": "2026-11-23T01:23:41.266Z"
     },
     {
       "kind": "tracked-claim",
@@ -69,7 +102,7 @@
       "claimedDate": "2026-11-24T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "magnus-carlsen",
-      "detectedAt": "2026-11-22T20:34:53.485Z"
+      "detectedAt": "2026-11-23T01:23:41.266Z"
     },
     {
       "kind": "tracked-claim",
@@ -81,7 +114,7 @@
       "claimedDate": "2026-12-20T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "elkjop-ligaen-2026-27",
-      "detectedAt": "2026-11-22T20:34:53.485Z"
+      "detectedAt": "2026-11-23T01:23:41.266Z"
     },
     {
       "kind": "tracked-claim",
@@ -93,35 +126,25 @@
       "claimedDate": "2026-12-28T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "nm-sluttspillet-menn-2026-27",
-      "detectedAt": "2026-11-22T20:34:53.485Z"
-    },
-    {
-      "kind": "contract-breach",
-      "type": "missing",
-      "interest": "Premier League",
-      "sport": "football",
-      "severity": "high",
-      "imminent": true,
-      "detail": "Dekningskontrakt brutt: 5 av minst 6 ventede events innen 14 dager for Premier League (i sesong). Gå til den navngitte autoriteten (premier-league) og fyll tavla.",
-      "detectedAt": "2026-11-22T20:34:53.548Z"
+      "detectedAt": "2026-11-23T01:23:41.266Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 15 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 15,
+      "detail": "docs/data/esports.json has been served from retention for 16 consecutive run(s) — no fresh fetch in 3 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 16,
       "staleDays": 3,
       "severity": "high",
-      "detectedAt": "2026-11-22T20:34:53.548Z"
+      "detectedAt": "2026-11-23T01:23:41.305Z"
     },
     {
       "sport": "cycling",
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-22T20:34:53.548Z"
+      "detectedAt": "2026-11-23T01:23:41.305Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
