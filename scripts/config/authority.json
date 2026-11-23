@@ -1298,7 +1298,11 @@
 					10,
 					11
 				],
-				"note": "ATP/WTA-touren går januar–november; min 1 turnering innen 14 d (touren dekkes via majors + navn, tier2)."
+				"breaks": [
+					{ "from": "2026-11-23", "to": "2026-11-30" },
+					{ "from": "2027-11-22", "to": "2027-11-30" }
+				],
+				"note": "ATP/WTA-touren går januar–november; min 1 turnering innen 14 d (touren dekkes via majors + navn, tier2). breaks TILFØYD (improve, 23.11.2026): den regulære touren TAR SLUTT med sesongfinalene midt i november, men months (hele kalendermåneder) holder hele november in-season → den døde novemberhalen etter finalene fyrte et falskt HIGH-brudd (upcoming 0) hver kjøring, selv om dekningen er korrekt og komplett (ingenting å boarde). Akkurat som PGA-pausen (21 d horisont) og FIFA-breakene (Eliteserien/PL): en dokumentert legitim pause months ikke kan fange. 2026: WTA Finals (Riyadh) avsluttet 14.11, ATP Finals (Torino) 22.11 (Alcaraz vant, bekreftet i RSS) → neste reelle tour-event ~sent des (United Cup/Brisbane/AO-opptakt); desember er allerede off-season (utenfor months). Davis Cup Finals (lagtennis, 24.–29.11) er tier2, ikke den regulære touren, og hadde uansett ingen norsk deltakelse. breaks modellerer finale-halen → status «break», aldri brudd. 2027-vinduet er en forward-projeksjon (ATP Finals Torino ~medio nov 2027); juster når 2027-kalenderen festes."
 			}
 		}
 	]
