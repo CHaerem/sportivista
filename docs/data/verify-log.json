@@ -1,14 +1,13 @@
 {
-  "runAt": "2026-11-23T16:17:02.083Z",
-  "checked": 8,
-  "confirmed": 7,
-  "amended": 1,
+  "runAt": "2026-11-24T16:03:46.000Z",
+  "checked": 1,
+  "confirmed": 1,
+  "amended": 0,
   "removed": 0,
   "notes": [
-    "F1 Qatar GP kvalifisering (28.11 18.00 UTC): bekreftet mot formula1.com (primaer) + racingnews365 — standard helg uten sprint, tid matcher. Forste verifisering (var uverifisert, high). Viaplay = norsk F1-rettighetshaver.",
-    "Sjakk-VM parti 1 Gukesh-Sindarov (24.11 14.00 UTC): bekreftet mot worldchess.com + fide.com. FIDE-radet flyttet kampvinduet til 22.11-13.12, men parti 1 star 24.11 15.00 Genève = 14.00 UTC. Board matcher.",
-    "AMENDED: Kontiolahti sprint kvinner 7,5 km (29.11) var 15.15 UTC (17.15 lokal, snow-online-sekundaer) — arrangorens offisielle program gir 17.55 lokal = 15.55 UTC. Rettet +40 min, last til primaer. Soesken-tider paa samme side bekrefter EET.",
-    "5 ovrige Kontiolahti-renn (menn/kvinner individuelt, enkel+ordinaer mixstafett, sprint menn) re-bekreftet mot arrangorens program i dag — alle tider matcher.",
-    "Ingen nye source-quirks: kvinnesprint-avviket er ett datapunkt (snow-online 40 min feil for ett renn), ikke en repeterbar mekanisme — logget i kalibreringsledger, ikke lagt til skill."
+    "Lett kjøring: alle AI-research-events i 7-dagersvinduet (24.11–01.12) ble verifisert i går 23.11 (sjakk-VM parti 1, F1 Qatar kvalik, 7 Kontiolahti-renn, Brann–Aarhus) — ingen tentative kanaler igjen, ingen tomme utslagsspill-oppstillinger, ingen pågående turneringer med norske utøvere å cut-sjekke (biathlon åpner 26.11, golf BMW Australian PGA åpner 26.11).",
+    "Re-bekreftet dagens mest nærstående event — Sjakk-VM parti 1 Gukesh–Sindarov (24.11 14.00 UTC, startet ~2t før kjøringen): FIDE + chessbase bekrefter parti 1 tir. 24.11 15.00 Genève (CET) = 14.00 UTC, Fondation Martin Bodmer. Board matcher. Oppdatert verifiedAt + lagt til chessbase som uavhengig kilde.",
+    "Kontiolahti sesongåpning (26.–29.11) kryss-sjekket mot proxcskiing: datoer + løpsrekkefølge bekreftet. Starttider spriker fortsatt på aggregatorer (snow-online/proxcskiing 16.10 vs 17.10 CET) — arrangørens program (kontiolahtibiathlon.com, primær) ble låst i går og er boardets autoritet; ingen endring.",
+    "Statisk-pipeline-events (Champions League, Bundesliga, Serie A, Eliteserien i vinduet) ikke verifisert — API-nære (< 14 dager), per kontrakt. Ingen source-quirks lagt til."
   ]
 }
