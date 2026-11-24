@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-23T15:39:42.523Z",
+  "lastUpdated": "2026-11-24T02:44:08.751Z",
   "source": "ESPN API + fotball.no",
   "tournaments": [
     {
@@ -186,30 +186,25 @@
           "additional": {
             "status": "STATUS_SCHEDULED"
           }
-        }
-      ]
-    },
-    {
-      "name": "Premier League",
-      "events": [
+        },
         {
-          "id": "football-everton-at-brentford-1795464000000",
-          "title": "Everton at Brentford",
-          "time": "2026-11-23T20:00:00.000Z",
-          "venue": "Gtech Community Stadium",
+          "id": "football-lillestrøm-–-hamkam-1796061600000",
+          "title": "Lillestrøm – HamKam",
+          "time": "2026-11-30T18:00:00.000Z",
+          "venue": "Arasen Stadion",
           "sport": "football",
-          "meta": "Premier League",
-          "tournament": "Premier League",
+          "meta": "Eliteserien",
+          "tournament": "Eliteserien",
           "streaming": [
             {
-              "platform": "USA Net",
-              "url": "",
-              "type": "tv"
+              "platform": "TV2 Play",
+              "url": "https://play.tv2.no",
+              "type": "tv2"
             }
           ],
           "norwegian": false,
-          "homeTeam": "Brentford",
-          "awayTeam": "Everton",
+          "homeTeam": "Lillestrøm",
+          "awayTeam": "HamKam",
           "participants": [],
           "norwegianPlayers": [],
           "totalPlayers": null,
@@ -217,7 +212,12 @@
           "additional": {
             "status": "STATUS_SCHEDULED"
           }
-        },
+        }
+      ]
+    },
+    {
+      "name": "Premier League",
+      "events": [
         {
           "id": "football-chelsea-at-nottingham-forest-1795809600000",
           "title": "Chelsea at Nottingham Forest",
@@ -423,32 +423,6 @@
     {
       "name": "La Liga",
       "events": [
-        {
-          "id": "football-elche-at-levante-1795464000000",
-          "title": "Elche at Levante",
-          "time": "2026-11-23T20:00:00.000Z",
-          "venue": "Estadi Ciutat de València",
-          "sport": "football",
-          "meta": "La Liga",
-          "tournament": "La Liga",
-          "streaming": [
-            {
-              "platform": "ESPN Deportes",
-              "url": "",
-              "type": "tv"
-            }
-          ],
-          "norwegian": false,
-          "homeTeam": "Levante",
-          "awayTeam": "Elche",
-          "participants": [],
-          "norwegianPlayers": [],
-          "totalPlayers": null,
-          "isFavorite": false,
-          "additional": {
-            "status": "STATUS_SCHEDULED"
-          }
-        },
         {
           "id": "football-racing-santander-at-levante-1795809600000",
           "title": "Racing Santander at Levante",
@@ -682,30 +656,25 @@
           "additional": {
             "status": "STATUS_SCHEDULED"
           }
-        }
-      ]
-    },
-    {
-      "name": "Serie A",
-      "events": [
+        },
         {
-          "id": "football-fiorentina-at-monza-1795463100000",
-          "title": "Fiorentina at Monza",
-          "time": "2026-11-23T19:45:00.000Z",
-          "venue": "U-Power Stadium",
+          "id": "football-getafe-at-espanyol-1796068800000",
+          "title": "Getafe at Espanyol",
+          "time": "2026-11-30T20:00:00.000Z",
+          "venue": "RCDE Stadium",
           "sport": "football",
-          "meta": "Serie A",
-          "tournament": "Serie A",
+          "meta": "La Liga",
+          "tournament": "La Liga",
           "streaming": [
             {
-              "platform": "Paramount+",
+              "platform": "ESPN Deportes",
               "url": "",
               "type": "tv"
             }
           ],
           "norwegian": false,
-          "homeTeam": "Monza",
-          "awayTeam": "Fiorentina",
+          "homeTeam": "Espanyol",
+          "awayTeam": "Getafe",
           "participants": [],
           "norwegianPlayers": [],
           "totalPlayers": null,
@@ -713,7 +682,12 @@
           "additional": {
             "status": "STATUS_SCHEDULED"
           }
-        },
+        }
+      ]
+    },
+    {
+      "name": "Serie A",
+      "events": [
         {
           "id": "football-bologna-at-venezia-1795808700000",
           "title": "Bologna at Venezia",
@@ -914,6 +888,58 @@
           "norwegian": false,
           "homeTeam": "Como",
           "awayTeam": "Juventus",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-atalanta-at-lecce-1796059800000",
+          "title": "Atalanta at Lecce",
+          "time": "2026-11-30T17:30:00.000Z",
+          "venue": "Via Del Mare",
+          "sport": "football",
+          "meta": "Serie A",
+          "tournament": "Serie A",
+          "streaming": [
+            {
+              "platform": "Paramount+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Lecce",
+          "awayTeam": "Atalanta",
+          "participants": [],
+          "norwegianPlayers": [],
+          "totalPlayers": null,
+          "isFavorite": false,
+          "additional": {
+            "status": "STATUS_SCHEDULED"
+          }
+        },
+        {
+          "id": "football-ac-milan-at-cagliari-1796067900000",
+          "title": "AC Milan at Cagliari",
+          "time": "2026-11-30T19:45:00.000Z",
+          "venue": "Unipol Domus",
+          "sport": "football",
+          "meta": "Serie A",
+          "tournament": "Serie A",
+          "streaming": [
+            {
+              "platform": "Paramount+",
+              "url": "",
+              "type": "tv"
+            }
+          ],
+          "norwegian": false,
+          "homeTeam": "Cagliari",
+          "awayTeam": "AC Milan",
           "participants": [],
           "norwegianPlayers": [],
           "totalPlayers": null,
