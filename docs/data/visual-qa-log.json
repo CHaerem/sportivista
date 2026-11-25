@@ -1,16 +1,17 @@
 {
-  "checkedAt": "2026-11-24T00:00:00Z",
+  "checkedAt": "2026-11-25T18:24:52Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
     "Single quiet column, day-grouped agenda, generous spacing at all three widths — scannable, not a cluttered grid.",
-    "Channels shown are all Norwegian (TV 2 Play, Viaplay) across every row checked at all three widths — no foreign broadcasters (FOX/ESPN/Sky) observed.",
-    "Match names render in full (e.g. 'Bodø/Glimt - LASK Linz', 'Shakhtar Donetsk - Fenerbahce', 'Brighton & Hove Albion - Newcastle United') — no truncation hiding a side or key info, including at 375px, the hardest width.",
-    "Floating Assistent button overlaps a mid-agenda row in the 900px capture (around the 24.-25. November Champions League block), not the last agenda/news row or the footer — matches the DESIGN.md-sanctioned floating-button idiom; not flagged.",
-    "Footer and 'Dette dekker vi' disclosure intact and aligned at the bottom of the page at all widths; no horizontal scroll/overflow or edge-clipped content observed at 375px.",
-    "Day headings (e.g. 'TORSDAG 26. NOVEMBER', 'LØRDAG 28. NOVEMBER') and header (wordmark, date, theme toggle) render intact at all widths.",
-    "Biathlon/cross-country rows use the event title 'Kontinentalt: <distance/format>' with 'IBU verdenscup skiskyting 2026/27' as the competition line below — readable and not truncated, though the title alone doesn't name a venue; noting as an observation, not a layout defect.",
-    "Could not fully verify flag/crest artwork fidelity (vs. a generic broken-image icon) at the screenshot resolution available for this full-page capture — small circular markers render consistently at every row with no visibly broken-icon boxes, but fine crest detail wasn't legible enough to confirm pixel-perfect rendering."
+    "Cross-checked rendered channel strings against docs/data/events.json: only Norwegian/legitimate platforms appear (TV 2 Play, TV 2 Sport Premium, Viaplay, NRK, Eurosport, DAZN, HBO Max Sport, Chess.com, FIDE/World Chess, Twitch, Kick) — no FOX/ESPN/Sky observed in any screenshot.",
+    "Match names wrap in full at every width checked, including 375px (e.g. 'Werder Bremen – Borussia Mönchengladbach', 'Borussia Dortmund – Bayer Leverkusen', 'Shakhtar Donetsk – Fenerbahce') — no ellipsis truncation hiding a side.",
+    "Honest faint '–' shown for events with no known channel (many Serie A / Bundesliga rows) rather than a guessed or blank value.",
+    "Flags (Norway) and club crests render as real icons at every row sampled — no broken-image boxes.",
+    "Floating Assistent button: at 375/393px it sits pinned over one mid-agenda row (Internazionale – VfB Stuttgart), partially covering that row's chevron and '+1' — this matches the DESIGN.md-sanctioned floating-button idiom (lands on a different row depending on scroll/viewport) and is not flagged. Confirmed it does NOT touch the last agenda row, 'Dette dekker vi'/footer area, or the Copa del Rey rows at the very end of the list at either mobile width. At 900px it sits in the empty right margin beside the 640px column, overlapping nothing.",
+    "Footer intact at both mobile widths: 'Oppdatert 25.11.2026 · Abonner i kalender', usage lines ('Dataene er ~3 t gamle — oppdatering kan ha stoppet', 'AI-budsjett: uke 14% · økt ?%'), 'Dette dekker vi' and 'Merker og kilder' disclosures all present and unclipped.",
+    "No horizontal scroll/overflow at 375px (image width matches expected 2x device width exactly — no extra canvas from clipped content).",
+    "Round/competition labels present under each title (e.g. 'IBU verdenscup skiskyting 2026/27', 'Champions League', 'Copa del Rey') and times formatted consistently (HH:MM, 24h)."
   ]
 }
