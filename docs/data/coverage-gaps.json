@@ -1,52 +1,8 @@
 {
-  "generatedAt": "2026-11-25T00:19:56.755Z",
-  "gapCount": 11,
+  "generatedAt": "2026-11-25T04:45:05.583Z",
+  "gapCount": 7,
   "anomalyCount": 2,
   "gaps": [
-    {
-      "kind": "entity",
-      "entity": "Jakob Ingebrigtsen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Jakob Ingebrigtsen ikkje til start i terreng-EM",
-      "link": "https://www.nrk.no/sport/jakob-ingebrigtsen-ikkje-til-start-i-terreng-em-1.18087999",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-25T00:19:53.946Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Ingebrigtsen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Jakob Ingebrigtsen ikkje til start i terreng-EM",
-      "link": "https://www.nrk.no/sport/jakob-ingebrigtsen-ikkje-til-start-i-terreng-em-1.18087999",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-25T00:19:53.946Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Carlsen",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Usbekisk 20-åring kan gå forbi Carlsen",
-      "link": "https://www.nrk.no/sport/usbekisk-20-aring-kan-ga-forbi-carlsen-1.18087486",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-25T00:19:53.946Z"
-    },
-    {
-      "kind": "entity",
-      "entity": "Total Chess",
-      "type": "missing",
-      "imminent": false,
-      "headline": "Usbekisk 20-åring kan gå forbi Carlsen",
-      "link": "https://www.nrk.no/sport/usbekisk-20-aring-kan-ga-forbi-carlsen-1.18087486",
-      "feed": "nrk-sport",
-      "matchCount": 1,
-      "detectedAt": "2026-11-25T00:19:53.946Z"
-    },
     {
       "kind": "tracked-claim",
       "entity": "Casper Ruud",
@@ -57,7 +13,7 @@
       "claimedDate": "2027-01-18T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "casper-ruud",
-      "detectedAt": "2026-11-25T00:19:54.801Z"
+      "detectedAt": "2026-11-25T04:45:04.521Z"
     },
     {
       "kind": "tracked-claim",
@@ -69,7 +25,7 @@
       "claimedDate": "2027-06-29T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "magnus-carlsen",
-      "detectedAt": "2026-11-25T00:19:54.801Z"
+      "detectedAt": "2026-11-25T04:45:04.521Z"
     },
     {
       "kind": "tracked-claim",
@@ -81,7 +37,7 @@
       "claimedDate": "2026-12-20T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "elkjop-ligaen-2026-27",
-      "detectedAt": "2026-11-25T00:19:54.801Z"
+      "detectedAt": "2026-11-25T04:45:04.521Z"
     },
     {
       "kind": "tracked-claim",
@@ -93,7 +49,7 @@
       "claimedDate": "2026-11-26T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "alpine-world-cup-2026-27",
-      "detectedAt": "2026-11-25T00:19:54.801Z"
+      "detectedAt": "2026-11-25T04:45:04.521Z"
     },
     {
       "kind": "tracked-claim",
@@ -105,7 +61,7 @@
       "claimedDate": "2026-11-29T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "cross-country-world-cup-2026-27",
-      "detectedAt": "2026-11-25T00:19:54.801Z"
+      "detectedAt": "2026-11-25T04:45:04.521Z"
     },
     {
       "kind": "tracked-claim",
@@ -117,7 +73,7 @@
       "claimedDate": "2026-11-29T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "ski-jumping-world-cup-2026-27",
-      "detectedAt": "2026-11-25T00:19:54.801Z"
+      "detectedAt": "2026-11-25T04:45:04.521Z"
     },
     {
       "kind": "tracked-claim",
@@ -129,25 +85,25 @@
       "claimedDate": "2026-12-28T00:00:00.000Z",
       "reason": "tracked.json asserts board coverage for this interest, but no matching event is on the board",
       "trackedId": "nm-sluttspillet-menn-2026-27",
-      "detectedAt": "2026-11-25T00:19:54.801Z"
+      "detectedAt": "2026-11-25T04:45:04.521Z"
     }
   ],
   "anomalies": [
     {
       "sport": "esports",
       "issue": "stale-retained",
-      "detail": "docs/data/esports.json has been served from retention for 23 consecutive run(s) — no fresh fetch in 5 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
-      "consecutiveRetains": 23,
+      "detail": "docs/data/esports.json has been served from retention for 24 consecutive run(s) — no fresh fetch in 5 day(s). The fetcher is producing nothing; the file only looks current because retainLastGood re-writes the last good copy, and the board hides it because another source covers this sport.",
+      "consecutiveRetains": 24,
       "staleDays": 5,
       "severity": "high",
-      "detectedAt": "2026-11-25T00:19:54.837Z"
+      "detectedAt": "2026-11-25T04:45:04.553Z"
     },
     {
       "sport": "cycling",
       "issue": "file-empty",
       "detail": "docs/data/cycling.json has no events and none on the board — source may be down or changed",
       "severity": "low",
-      "detectedAt": "2026-11-25T00:19:54.837Z"
+      "detectedAt": "2026-11-25T04:45:04.553Z"
     }
   ],
   "note": "Recall-biased mechanical detection — the coverage-critic and research agents triage these and cross-check the web. gaps: entity/sport in the news but missing or not imminent on the board (kind entity/sport), or a tracked.json reason that claims an upcoming event the board lacks (kind tracked-claim, RSS-independent). anomalies: a fetcher's own data looks unreliable — including `stale-retained`, a fetcher frozen on retainLastGood retention, which is reported even when the board looks covered. demand: distinct entities users publicly asked us to cover (open coverage-request issues), anonymous name+sport only — the research agent prioritises these when widening the catalog. kind contract-breach (WP-243): a wholesale-covered competition's pre-agreed coverage contract is broken (in season, fewer upcoming events than promised) — always high severity, treat as top priority and fill from the named authority."
