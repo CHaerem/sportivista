@@ -1,58 +1,5 @@
 [
   {
-    "sport": "handball",
-    "tournament": "NM-sluttspillet (menn)",
-    "title": "Semifinale: Kolstad – Bergen",
-    "time": "2026-11-11T17:00:00Z",
-    "endTime": "2026-11-11T18:45:00Z",
-    "venue": "Kolstad Arena, Trondheim",
-    "norwegian": true,
-    "homeTeam": "Kolstad Håndball",
-    "awayTeam": "Bergen Håndball",
-    "norwegianPlayers": [],
-    "participants": [],
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport/haandball",
-        "urlKind": "deep"
-      }
-    ],
-    "source": "ai-research",
-    "researchedAt": "2026-11-02T06:15:00Z",
-    "confidence": "medium",
-    "evidence": [
-      "catalog.json#tier2.teams",
-      "https://www.handball.no/nyheter/2026/10/nm-finalene-returnerer-til-oslo-spektrum/",
-      "https://www.betexplorer.com/handball/team/kolstad/rTWbl2mC/"
-    ],
-    "provenance": {
-      "time": {
-        "sourceId": "handballforbundet",
-        "url": "https://www.handball.no/nyheter/2026/10/nm-finalene-returnerer-til-oslo-spektrum/",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-02T06:15:00Z",
-        "note": "NHF (autoriteten) bekrefter at NM-semifinalene menn spilles 11.–12. nov og at Kolstad, Bergen, Sandefjord og Elverum er klare, men gir IKKE eksakt kampdag/avspark. Den konkrete paringen Kolstad–Bergen + slot 11. nov kl. 18.00 CET (17:00 UTC) kommer fra flashscore/betexplorer (aggregator). Derav secondary + medium. Verify fester kampdag/tid/arena mot forbundets kampprogram."
-      },
-      "streaming": {
-        "sourceId": "tv2",
-        "url": "https://play.tv2.no/sport/haandball",
-        "basis": "official",
-        "retrievedAt": "2026-11-02T06:15:00Z",
-        "note": "TV 2 har norsk håndballrettighet (NM-finalene 28. des bekreftet på TV 2 Direkte av NHF; hele NM-sluttspillet er TV 2-pakke). Verify bør bekrefte semifinale-spesifikk kanal."
-      }
-    },
-    "summary": "Kolstad møter Bergen i semifinalen i NM-sluttspillet for menn — Final 4-helgen 11.–12. november. Vinneren går til cupfinalen i Oslo Spektrum 28. desember.\n\nNHF bekrefter at Kolstad, Bergen, Sandefjord og Elverum er klare til semifinalene 11.–12. nov; eksakt kampdag/avspark (11. nov kl. 18.00) og paringen Kolstad–Bergen er foreløpig fra én aggregator → medium, verify fester mot forbundets kampprogram. Norsk visning TV 2 Play.",
-    "id": "9124816807dd",
-    "homeTeamEntityId": "kolstad-handball",
-    "awayTeamEntityId": "bergen-handball",
-    "verifiedAt": "2026-11-11T12:54:38Z",
-    "verificationStatus": "confirmed",
-    "verificationSources": [
-      "https://www.handball.no/nyheter/2026/10/nm-finalene-returnerer-til-oslo-spektrum/"
-    ]
-  },
-  {
     "sport": "alpine",
     "tournament": "FIS verdenscup alpint 2026/27",
     "title": "Levi: Slalåm kvinner",
@@ -1181,75 +1128,6 @@
   {
     "sport": "football",
     "tournament": "Champions League",
-    "title": "Barcelona at Sabah FK",
-    "time": "2026-11-25T17:45:00.000Z",
-    "endTime": null,
-    "venue": "Baku Olympic Stadium",
-    "meta": "Champions League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/sabah-barcelona-1961237",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "TV 2 Sport Premium",
-        "url": "https://www.tvkampen.com/kamp/sabah-barcelona-1961237",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Sabah FK",
-    "awayTeam": "Barcelona",
-    "isFavorite": true,
-    "round": null,
-    "id": "e14482eedcc8",
-    "awayTeamEntityId": "barcelona"
-  },
-  {
-    "sport": "football",
-    "tournament": "Champions League",
-    "title": "Villarreal at Slavia Prague",
-    "time": "2026-11-25T17:45:00.000Z",
-    "endTime": null,
-    "venue": "Fortuna Arena",
-    "meta": "Champions League",
-    "norwegian": false,
-    "streaming": [
-      {
-        "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/slavia-prague-villarreal-1961213",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/slavia-prague-villarreal-1961213",
-        "urlKind": "deep"
-      }
-    ],
-    "participants": [],
-    "norwegianPlayers": [],
-    "totalPlayers": null,
-    "link": null,
-    "status": null,
-    "featuredGroups": [],
-    "homeTeam": "Slavia Prague",
-    "awayTeam": "Villarreal",
-    "isFavorite": false,
-    "round": null,
-    "id": "769f8871ab49",
-    "homeTeamEntityId": "slavia-prague",
-    "awayTeamEntityId": "villarreal"
-  },
-  {
-    "sport": "football",
-    "tournament": "Champions League",
     "title": "Viking FK at Atlético Madrid",
     "time": "2026-11-25T20:00:00.000Z",
     "endTime": null,
@@ -1289,13 +1167,8 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/club-brugge-liverpool-1961174",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/club-brugge-liverpool-1961174",
-        "urlKind": "deep"
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -1324,13 +1197,8 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/inter-stuttgart-1961143",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/inter-stuttgart-1961143",
-        "urlKind": "deep"
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -1388,13 +1256,8 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/paris-saint-germain-u19-as-roma-u19-1970867",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/paris-saint-germain-u19-as-roma-u19-1970867",
-        "urlKind": "deep"
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -1423,13 +1286,8 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/shakhtar-donetsk-fenerbahce-1961208",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/shakhtar-donetsk-fenerbahce-1961208",
-        "urlKind": "deep"
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
@@ -1456,13 +1314,8 @@
     "streaming": [
       {
         "platform": "TV 2 Play",
-        "url": "https://www.tvkampen.com/kamp/sporting-cp-manchester-united-1961163",
-        "urlKind": "deep"
-      },
-      {
-        "platform": "Viaplay",
-        "url": "https://www.tvkampen.com/kamp/sporting-cp-manchester-united-1961163",
-        "urlKind": "deep"
+        "url": "https://play.tv2.no/sport",
+        "urlKind": "landing"
       }
     ],
     "participants": [],
