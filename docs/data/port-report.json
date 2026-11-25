@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T04:45:03.639Z",
+  "generatedAt": "2026-11-25T15:17:31.069Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -21,78 +21,71 @@
     "coverageContracts": true
   },
   "coverage": {
-    "openGaps": 9,
+    "openGaps": 8,
     "bySeverity": {
       "high": 5,
       "medium": 1,
-      "low": 3
+      "low": 2
     },
-    "oldestGapAgeDays": 28.8,
-    "escalatable": 6,
-    "catalogMatched": 8,
-    "auditedAt": "2026-11-24T06:05:00Z",
+    "oldestGapAgeDays": 29.24,
+    "escalatable": 7,
+    "catalogMatched": 7,
+    "auditedAt": "2026-11-25T06:10:00Z",
     "gaps": [
       {
         "interest": "Langrenn — FIS verdenscup Ruka/Nordic Opening 27.–29. nov mangler HELT fra tavla",
         "severity": "high",
-        "ageDays": 27.79,
-        "recurrences": 25,
+        "ageDays": 28.23,
+        "recurrences": 26,
         "catalogMatched": true
       },
       {
         "interest": "Alpint — Verdenscup Copper Mountain (menn) + Killington (kvinner) 28.–29. nov mangler HELT fra tavla",
         "severity": "high",
-        "ageDays": 28.8,
-        "recurrences": 26,
+        "ageDays": 29.24,
+        "recurrences": 27,
         "catalogMatched": false
       },
       {
         "interest": "Håndball — domestisk toppserie (Elkjøp-ligaen menn + kvinner) HELT fraværende fra tavla mens ligaen spiller siste runde før EM-pausen 27.–28. nov",
         "severity": "high",
-        "ageDays": 9.71,
-        "recurrences": 9,
+        "ageDays": 10.15,
+        "recurrences": 10,
         "catalogMatched": true
       },
       {
         "interest": "Hopp — FIS verdenscup Ruka/Rukatunturi 28.–29. nov mangler HELT fra tavla",
         "severity": "high",
-        "ageDays": 2.73,
-        "recurrences": 2,
+        "ageDays": 3.17,
+        "recurrences": 3,
         "catalogMatched": true
       },
       {
-        "interest": "CS2 — 100 Thieves (rain / tracked focus team) i PGL Major Singapore 2026: kun åpningskampen boardet mens Majoren pågår OG fetcheren er død",
+        "interest": "CS2 — 100 Thieves (rain / tracked focus team) i PGL Major Singapore 2026: ingen kommende kamp på tavla mens Majoren pågår OG fetcheren er død",
         "severity": "high",
-        "ageDays": 1.69,
-        "recurrences": 1,
+        "ageDays": 2.13,
+        "recurrences": 2,
         "catalogMatched": true
       },
       {
         "interest": "Sjakk — Magnus Carlsen (tracked athlete) uten kommende event på tavla; neste bekreftede fixture London Chess Classic SUPER RAPID 5.–6. des",
         "severity": "medium",
-        "ageDays": 3.74,
-        "recurrences": 3,
+        "ageDays": 4.18,
+        "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — EHF EURO 2026 kvinner: mellomrunden (Norge) ~10.–16. des mangler bak tavlas horisont-kant",
         "severity": "low",
-        "ageDays": 6.64,
-        "recurrences": 6,
+        "ageDays": 7.07,
+        "recurrences": 7,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — NM-cupen menn FINALE (Bergen vs Elverum, Oslo Spektrum ~28. des)",
         "severity": "low",
-        "ageDays": 12.74,
-        "recurrences": 11,
-        "catalogMatched": true
-      },
-      {
-        "interest": "Tennis — Davis Cup Finals Bologna 24.–29. nov (ingen norsk deltakelse)",
-        "severity": "low",
-        "ageDays": 1.69,
-        "recurrences": 1,
+        "ageDays": 13.18,
+        "recurrences": 12,
         "catalogMatched": true
       }
     ]
@@ -103,17 +96,10 @@
     "nearTermAmended": 0,
     "verifyRunAt": "2026-11-24T16:03:46.000Z",
     "windowRate": 0,
-    "windowChecks": 83,
+    "windowChecks": 77,
     "windowAmendments": 0,
     "windowCorrections": 6,
     "byDay": [
-      {
-        "date": "2026-11-11",
-        "checks": 6,
-        "amendments": 0,
-        "corrections": 0,
-        "rate": 0
-      },
       {
         "date": "2026-11-12",
         "checks": 7,
@@ -209,26 +195,26 @@
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-25T04:45:01.644Z",
+    "buildCheckedAt": "2026-11-25T15:17:25.321Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-25T00:19:56.916Z",
-    "manifestAgeHours": 4.42,
+    "manifestGeneratedAt": "2026-11-25T04:45:05.732Z",
+    "manifestAgeHours": 10.54,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-11-19T10:58:12.239Z",
-        "ageHours": 137.78
+        "ageHours": 148.32
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-11-17T23:40:00Z",
-        "ageHours": 173.08
+        "ageHours": 183.63
       }
     ]
   },
   "participantStatus": {
     "checkedAt": "2026-11-24T16:03:46.000Z",
-    "verifyAgeHours": 12.69,
+    "verifyAgeHours": 23.23,
     "corrections": 1,
     "unresolved": 0,
     "signals": [
@@ -239,6 +225,6 @@
     "total": 9,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-11-25T04:45:03.639Z"
+    "generatedAt": "2026-11-25T15:17:31.068Z"
   }
 }
