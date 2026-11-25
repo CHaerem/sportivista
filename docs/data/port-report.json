@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T15:31:14.992Z",
+  "generatedAt": "2026-11-25T00:19:53.763Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 3
     },
-    "oldestGapAgeDays": 28.25,
+    "oldestGapAgeDays": 28.62,
     "escalatable": 6,
     "catalogMatched": 8,
     "auditedAt": "2026-11-24T06:05:00Z",
@@ -35,75 +35,75 @@
       {
         "interest": "Langrenn — FIS verdenscup Ruka/Nordic Opening 27.–29. nov mangler HELT fra tavla",
         "severity": "high",
-        "ageDays": 27.24,
+        "ageDays": 27.61,
         "recurrences": 25,
         "catalogMatched": true
       },
       {
         "interest": "Alpint — Verdenscup Copper Mountain (menn) + Killington (kvinner) 28.–29. nov mangler HELT fra tavla",
         "severity": "high",
-        "ageDays": 28.25,
+        "ageDays": 28.62,
         "recurrences": 26,
         "catalogMatched": false
       },
       {
         "interest": "Håndball — domestisk toppserie (Elkjøp-ligaen menn + kvinner) HELT fraværende fra tavla mens ligaen spiller siste runde før EM-pausen 27.–28. nov",
         "severity": "high",
-        "ageDays": 9.16,
+        "ageDays": 9.53,
         "recurrences": 9,
         "catalogMatched": true
       },
       {
         "interest": "Hopp — FIS verdenscup Ruka/Rukatunturi 28.–29. nov mangler HELT fra tavla",
         "severity": "high",
-        "ageDays": 2.18,
+        "ageDays": 2.55,
         "recurrences": 2,
         "catalogMatched": true
       },
       {
         "interest": "CS2 — 100 Thieves (rain / tracked focus team) i PGL Major Singapore 2026: kun åpningskampen boardet mens Majoren pågår OG fetcheren er død",
         "severity": "high",
-        "ageDays": 1.14,
+        "ageDays": 1.5,
         "recurrences": 1,
         "catalogMatched": true
       },
       {
         "interest": "Sjakk — Magnus Carlsen (tracked athlete) uten kommende event på tavla; neste bekreftede fixture London Chess Classic SUPER RAPID 5.–6. des",
         "severity": "medium",
-        "ageDays": 3.18,
+        "ageDays": 3.55,
         "recurrences": 3,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — EHF EURO 2026 kvinner: mellomrunden (Norge) ~10.–16. des mangler bak tavlas horisont-kant",
         "severity": "low",
-        "ageDays": 6.08,
+        "ageDays": 6.45,
         "recurrences": 6,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — NM-cupen menn FINALE (Bergen vs Elverum, Oslo Spektrum ~28. des)",
         "severity": "low",
-        "ageDays": 12.18,
+        "ageDays": 12.55,
         "recurrences": 11,
         "catalogMatched": true
       },
       {
         "interest": "Tennis — Davis Cup Finals Bologna 24.–29. nov (ingen norsk deltakelse)",
         "severity": "low",
-        "ageDays": 1.14,
+        "ageDays": 1.5,
         "recurrences": 1,
         "catalogMatched": true
       }
     ]
   },
   "amendRate": {
-    "nearTermRate": 0.13,
-    "nearTermChecked": 8,
-    "nearTermAmended": 1,
-    "verifyRunAt": "2026-11-23T16:17:02.083Z",
+    "nearTermRate": 0,
+    "nearTermChecked": 1,
+    "nearTermAmended": 0,
+    "verifyRunAt": "2026-11-24T16:03:46.000Z",
     "windowRate": 0,
-    "windowChecks": 80,
+    "windowChecks": 83,
     "windowAmendments": 0,
     "windowCorrections": 6,
     "byDay": [
@@ -197,39 +197,48 @@
         "amendments": 0,
         "corrections": 1,
         "rate": 0
+      },
+      {
+        "date": "2026-11-24",
+        "checks": 3,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-24T15:31:10.744Z",
+    "buildCheckedAt": "2026-11-25T00:19:50.178Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-24T05:43:23.097Z",
-    "manifestAgeHours": 9.8,
+    "manifestGeneratedAt": "2026-11-24T15:31:16.719Z",
+    "manifestAgeHours": 8.81,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-11-19T10:58:12.239Z",
-        "ageHours": 124.55
+        "ageHours": 133.36
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-11-17T23:40:00Z",
-        "ageHours": 159.85
+        "ageHours": 168.66
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-11-23T16:17:02.083Z",
-    "verifyAgeHours": 23.24,
-    "corrections": 0,
+    "checkedAt": "2026-11-24T16:03:46.000Z",
+    "verifyAgeHours": 8.27,
+    "corrections": 1,
     "unresolved": 0,
-    "signals": []
+    "signals": [
+      "Lett kjøring: alle AI-research-events i 7-dagersvinduet (24.11–01.12) ble verifisert i går 23.11 (sjakk-VM parti 1, F1 Qatar kvalik, 7 Kontiolahti-renn, Bran…"
+    ]
   },
   "contracts": {
     "total": 9,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-11-24T15:31:14.991Z"
+    "generatedAt": "2026-11-25T00:19:53.763Z"
   }
 }
