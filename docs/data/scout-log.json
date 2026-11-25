@@ -201,5 +201,15 @@
     "verdict": "quiet",
     "reason": "RSS (34 items, 15:30 UTC Nov 24): all past match results & analysis (Senegal AFCON appeal resolved past, Freddie Potts Brugge interview (personnel/opinion), Bodø/Glimt ice removal (operational news, no reschedule announced), Kvandal race withdrawal (organizational), Ventura PGA 2027 (future, no imminent impact), Carlsen vs Uzbek player article (chess coverage, no concrete imminent event announcement)—all past results, personnel changes, opinion pieces; no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints). Coverage gaps (11 gaps, 2 anomalies): Magnus Carlsen imminent=true claimedDate 2026-11-24 (REPEAT from Nov 20 21:40/Nov 22 13:03 escalations, already notified research agent, no NEW RSS announcement to re-escalate), Alpine/Langrenn/Cross-country imminent=true gaps are pre-existing tracked-claims without NEW concrete event announcements in RSS. esports stale-retained 22 runs/5 days (pre-existing anomaly, coverage-critic runs weekly, no NEW discovery). cycling.json empty (low severity, pre-existing). No NEW concrete schedule/time/venue/streaming/broadcaster signal. Escalation cap today (Nov 24 UTC): 0/2 before this run.",
     "signals": []
+  },
+  {
+    "runAt": "2026-11-25T00:35:00Z",
+    "verdict": "escalate",
+    "reason": "Coverage gaps (Nov 25 00:35 UTC): THREE IMMINENT TRACKED-CLAIM SIGNALS — multiple winter sports season openers/key events missing from board. (1) FIS Alpine Ski World Cup 2026/27: tracked wholesale sport, claimedDate 2026-11-26 (TOMORROW), imminent=true, board lacks next scheduled Alpine event (Gurgl Nov 21-22 past; next venue unknown to board). (2) FIS verdenscup langrenn 2026/27: tracked wholesale sport, claimedDate 2026-11-29 (Sunday, 4 days), imminent=true, Ruka opening event missing (Finnish ski federation confirmed Russians cleared for Ruka opening this weekend per RSS item at 18:40 UTC Nov 24). (3) FIS verdenscup hopp 2026/27: tracked wholesale sport, claimedDate 2026-11-29 (Sunday, 4 days), imminent=true, board lacks next ski jumping event after Lillehammer Nov 20-22. All three are IMMINENT (claimedDate ≤ 4 days) + TRACKED (covered sports) + MISSING (no matching board events) = high-priority escalation. RSS (30 items, 00:19 UTC Nov 25): confirms Ruka opening is happening (Finnish ski federation clearance; crew/organizational). No broadcaster announcements or other signals, no 100 Thieves/rain CS2 hints. Escalation cap today (Nov 25 UTC): 0/2 before this run.",
+    "signals": [
+      "FIS Alpine Ski World Cup (claimedDate 2026-11-26 tomorrow): imminent, tracked, missing board event",
+      "FIS verdenscup langrenn / Ruka opening (claimedDate 2026-11-29): imminent, tracked, missing board event, confirmed in news",
+      "FIS verdenscup hopp (claimedDate 2026-11-29): imminent, tracked, missing board event"
+    ]
   }
 ]
