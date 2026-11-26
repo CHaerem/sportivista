@@ -1,17 +1,16 @@
 {
-  "checkedAt": "2026-11-25T18:24:52Z",
+  "checkedAt": "2026-11-26T18:05:09Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
-    "Single quiet column, day-grouped agenda, generous spacing at all three widths — scannable, not a cluttered grid.",
-    "Cross-checked rendered channel strings against docs/data/events.json: only Norwegian/legitimate platforms appear (TV 2 Play, TV 2 Sport Premium, Viaplay, NRK, Eurosport, DAZN, HBO Max Sport, Chess.com, FIDE/World Chess, Twitch, Kick) — no FOX/ESPN/Sky observed in any screenshot.",
-    "Match names wrap in full at every width checked, including 375px (e.g. 'Werder Bremen – Borussia Mönchengladbach', 'Borussia Dortmund – Bayer Leverkusen', 'Shakhtar Donetsk – Fenerbahce') — no ellipsis truncation hiding a side.",
-    "Honest faint '–' shown for events with no known channel (many Serie A / Bundesliga rows) rather than a guessed or blank value.",
-    "Flags (Norway) and club crests render as real icons at every row sampled — no broken-image boxes.",
-    "Floating Assistent button: at 375/393px it sits pinned over one mid-agenda row (Internazionale – VfB Stuttgart), partially covering that row's chevron and '+1' — this matches the DESIGN.md-sanctioned floating-button idiom (lands on a different row depending on scroll/viewport) and is not flagged. Confirmed it does NOT touch the last agenda row, 'Dette dekker vi'/footer area, or the Copa del Rey rows at the very end of the list at either mobile width. At 900px it sits in the empty right margin beside the 640px column, overlapping nothing.",
-    "Footer intact at both mobile widths: 'Oppdatert 25.11.2026 · Abonner i kalender', usage lines ('Dataene er ~3 t gamle — oppdatering kan ha stoppet', 'AI-budsjett: uke 14% · økt ?%'), 'Dette dekker vi' and 'Merker og kilder' disclosures all present and unclipped.",
-    "No horizontal scroll/overflow at 375px (image width matches expected 2x device width exactly — no extra canvas from clipped content).",
-    "Round/competition labels present under each title (e.g. 'IBU verdenscup skiskyting 2026/27', 'Champions League', 'Copa del Rey') and times formatted consistently (HH:MM, 24h)."
+    "Single quiet column, day-grouped agenda (I DAG / I MORGEN / LØRDAG 28. NOVEMBER / SØNDAG 29. NOVEMBER / ...), generous spacing at all three widths — scannable, not a cluttered grid; at 900px the column stays centered at its fixed max-width with empty margin on both sides rather than stretching into a grid.",
+    "Match names render in full at every width checked, including 375px (e.g. 'Werder Bremen – Borussia Mönchengladbach', 'Brighton & Hove Albion – Newcastle United', 'TSG Hoffenheim – Augsburg') — no ellipsis truncation hiding a side.",
+    "Channel strings observed are all legitimate Norwegian/rights-holder platforms (TV 2 Play, Viaplay, Eurosport) — no FOX/ESPN/Sky seen on any row. Rows without a known channel (several Bundesliga and Copa del Rey fixtures) show the honest faint '–' rather than a blank or guessed value, consistent with yesterday's check.",
+    "Flags/club crests render as real small icons next to entries (e.g. biathlon/cross-country World Cup rows) — no broken-image boxes observed.",
+    "Floating Assistent button sits pinned over one mid-agenda row near the top of the list (around the Friday 'Levante – Racing Santander' row) at all three widths — matches the DESIGN.md-sanctioned floating-button idiom (lands on a different row day to day) and is not flagged. Confirmed it does not touch the last agenda row or the footer at any width; at 900px it rests in the empty margin beside the column.",
+    "Footer and trailing multi-day items (Hero World Challenge, Capital.com Australian Open, Nedbank Golf Challenge, 3.–6. desember) render intact and unclipped at the bottom of the page at all three widths.",
+    "No horizontal scroll/overflow apparent at 375px — the hardest width — nothing clipped at the screen edge.",
+    "Caveat: these are single full-page screenshots of a long, multi-day agenda (~11k–21k px tall); far-down rows render small relative to the whole image, so fine per-row text (exact channel string on every single row, every round label) was legible with high confidence near the top of the list and progressively less so toward the bottom. No issues were seen at any zoom level, but a targeted re-check of the tail of the list would need viewport-scoped (non-full-page) screenshots rather than full-page ones to get full confidence."
   ]
 }
