@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T14:43:53.532Z",
+  "generatedAt": "2026-11-26T23:29:01.792Z",
   "windowDays": 14,
   "ports": {
     "coverage": "red",
@@ -27,7 +27,7 @@
       "medium": 1,
       "low": 2
     },
-    "oldestGapAgeDays": 30.22,
+    "oldestGapAgeDays": 30.58,
     "escalatable": 8,
     "catalogMatched": 7,
     "auditedAt": "2026-11-26T06:10:00Z",
@@ -35,56 +35,56 @@
       {
         "interest": "Langrenn — FIS verdenscup Ruka/Nordic Opening 27.–29. nov mangler HELT fra tavla (ÅPNER I MORGEN)",
         "severity": "high",
-        "ageDays": 29.21,
+        "ageDays": 29.57,
         "recurrences": 27,
         "catalogMatched": true
       },
       {
         "interest": "Alpint — Verdenscup Copper Mountain (menn) + Killington (kvinner) 28.–29. nov mangler HELT fra tavla",
         "severity": "high",
-        "ageDays": 30.22,
+        "ageDays": 30.58,
         "recurrences": 28,
         "catalogMatched": false
       },
       {
         "interest": "Håndball — domestisk toppserie (Elkjøp-ligaen menn + kvinner) HELT fraværende fra tavla mens ligaen spiller en ny runde 27.–28. nov",
         "severity": "high",
-        "ageDays": 11.13,
+        "ageDays": 11.49,
         "recurrences": 11,
         "catalogMatched": true
       },
       {
         "interest": "Hopp — FIS verdenscup Ruka/Rukatunturi 28.–29. nov mangler HELT fra tavla",
         "severity": "high",
-        "ageDays": 4.15,
+        "ageDays": 4.51,
         "recurrences": 4,
         "catalogMatched": true
       },
       {
         "interest": "CS2 — 100 Thieves (rain / tracked focus team) i PGL Major Singapore 2026: ingen kommende kamp på tavla mens Majoren pågår OG fetcheren er død (FORVERRET til 27 retains)",
         "severity": "high",
-        "ageDays": 3.1,
+        "ageDays": 3.47,
         "recurrences": 3,
         "catalogMatched": true
       },
       {
         "interest": "Sjakk — Magnus Carlsen (tracked athlete) uten kommende event på tavla; neste bekreftede fixture London Chess Classic SUPER RAPID 5.–6. des",
         "severity": "medium",
-        "ageDays": 5.15,
+        "ageDays": 5.52,
         "recurrences": 5,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — EHF EURO 2026 kvinner: mellomrunden (Norge) ~10.–16. des mangler bak tavlas horisont-kant",
         "severity": "low",
-        "ageDays": 8.05,
+        "ageDays": 8.42,
         "recurrences": 8,
         "catalogMatched": true
       },
       {
         "interest": "Håndball — NM-cupen menn FINALE (Bergen vs Elverum, Oslo Spektrum ~28. des)",
         "severity": "low",
-        "ageDays": 14.15,
+        "ageDays": 14.52,
         "recurrences": 13,
         "catalogMatched": true
       }
@@ -94,9 +94,9 @@
     "nearTermRate": 0,
     "nearTermChecked": 8,
     "nearTermAmended": 0,
-    "verifyRunAt": "2026-11-25T15:53:08.623Z",
+    "verifyRunAt": "2026-11-26T15:32:48.550Z",
     "windowRate": 0,
-    "windowChecks": 77,
+    "windowChecks": 81,
     "windowAmendments": 0,
     "windowCorrections": 5,
     "byDay": [
@@ -190,31 +190,38 @@
         "amendments": 0,
         "corrections": 1,
         "rate": 0
+      },
+      {
+        "date": "2026-11-26",
+        "checks": 4,
+        "amendments": 0,
+        "corrections": 0,
+        "rate": 0
       }
     ]
   },
   "silentStops": {
     "buildOk": true,
-    "buildCheckedAt": "2026-11-26T14:43:48.687Z",
+    "buildCheckedAt": "2026-11-26T23:28:59.822Z",
     "buildAgeHours": 0,
-    "manifestGeneratedAt": "2026-11-26T03:53:14.878Z",
-    "manifestAgeHours": 10.84,
+    "manifestGeneratedAt": "2026-11-26T14:43:55.181Z",
+    "manifestAgeHours": 8.75,
     "staleFiles": [
       {
         "file": "esports.json",
         "sourceLastUpdated": "2026-11-19T10:58:12.239Z",
-        "ageHours": 171.76
+        "ageHours": 180.51
       },
       {
         "file": "tracked.json",
         "sourceLastUpdated": "2026-11-17T23:40:00Z",
-        "ageHours": 207.06
+        "ageHours": 215.82
       }
     ]
   },
   "participantStatus": {
-    "checkedAt": "2026-11-25T15:53:08.623Z",
-    "verifyAgeHours": 22.85,
+    "checkedAt": "2026-11-26T15:32:48.550Z",
+    "verifyAgeHours": 7.94,
     "corrections": 0,
     "unresolved": 0,
     "signals": []
@@ -223,6 +230,6 @@
     "total": 9,
     "inSeason": 6,
     "breached": [],
-    "generatedAt": "2026-11-26T14:43:53.531Z"
+    "generatedAt": "2026-11-26T23:29:01.792Z"
   }
 }
