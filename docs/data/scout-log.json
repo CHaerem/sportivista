@@ -241,5 +241,13 @@
     "verdict": "quiet",
     "reason": "RSS (55 items, 14:40 UTC Nov 27): all past match results & analysis (Ruka cross-country race results Klæbo/Lowstrom Nov 27, Haaland Man City coverage, Manchester United contract extensions, Marseille-Levski violence aftermath, Ronny Deila job news, cycling gear reviews—all past results, personnel/transfer news, opinion pieces; no schedule/time/venue changes to upcoming tracked events, no broadcaster announcements affecting upcoming events, no 100 Thieves/rain CS2 match hints). Coverage gaps (15 gaps, 3 anomalies): winter sports imminent gaps (Alpine Gurgl Nov 21-22 [now past], Cross-country Ruka Nov 27-29 [race happening now], Ski jumping Nov 29) already escalated Nov 25 00:35 UTC—research agent notified. Ruka race results confirm event is live but board already has events queued from Nov 25 escalation. Esports anomaly (HIGH stale-retained 31 runs, 8 days) pre-existing fetcher health issue, coverage-critic territory. No NEW concrete schedule/time/venue/streaming/broadcaster signal. Escalation cap today (Nov 27 UTC): 0/2 before this run.",
     "signals": []
+  },
+  {
+    "runAt": "2026-11-27T23:15:00Z",
+    "verdict": "escalate",
+    "reason": "Coverage anomalies (Nov 27 23:15 UTC): HIGH-SEVERITY FETCHER BREAKDOWN — esports.json stale-retained for 32 consecutive runs (8 days). The fetcher is producing nothing; retainLastGood is re-serving the last good copy from Nov 19. This is a critical issue because esports.js covers 100 Thieves / rain CS2 matches (tracked entity, low-volume late-announced events easily missed). The fetcher health issue must be investigated — either fix the data source or document why it stopped producing. RSS (55 items, 14:40 UTC Nov 27): no NEW 100 Thieves/rain mentions, all past results & personnel news; no OTHER escalation-worthy signals detected beyond the fetcher breakdown. Escalation cap today (Nov 27 UTC) before this run: 0/2.",
+    "signals": [
+      "esports.json fetcher stale-retained 32 runs (8 days), HIGH severity: 100 Thieves/rain CS2 coverage at risk"
+    ]
   }
 ]
