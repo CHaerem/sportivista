@@ -1,16 +1,15 @@
 {
-  "checkedAt": "2026-11-26T18:05:09Z",
+  "checkedAt": "2026-11-27T17:50:43Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
-    "Single quiet column, day-grouped agenda (I DAG / I MORGEN / LØRDAG 28. NOVEMBER / SØNDAG 29. NOVEMBER / ...), generous spacing at all three widths — scannable, not a cluttered grid; at 900px the column stays centered at its fixed max-width with empty margin on both sides rather than stretching into a grid.",
-    "Match names render in full at every width checked, including 375px (e.g. 'Werder Bremen – Borussia Mönchengladbach', 'Brighton & Hove Albion – Newcastle United', 'TSG Hoffenheim – Augsburg') — no ellipsis truncation hiding a side.",
-    "Channel strings observed are all legitimate Norwegian/rights-holder platforms (TV 2 Play, Viaplay, Eurosport) — no FOX/ESPN/Sky seen on any row. Rows without a known channel (several Bundesliga and Copa del Rey fixtures) show the honest faint '–' rather than a blank or guessed value, consistent with yesterday's check.",
-    "Flags/club crests render as real small icons next to entries (e.g. biathlon/cross-country World Cup rows) — no broken-image boxes observed.",
-    "Floating Assistent button sits pinned over one mid-agenda row near the top of the list (around the Friday 'Levante – Racing Santander' row) at all three widths — matches the DESIGN.md-sanctioned floating-button idiom (lands on a different row day to day) and is not flagged. Confirmed it does not touch the last agenda row or the footer at any width; at 900px it rests in the empty margin beside the column.",
-    "Footer and trailing multi-day items (Hero World Challenge, Capital.com Australian Open, Nedbank Golf Challenge, 3.–6. desember) render intact and unclipped at the bottom of the page at all three widths.",
-    "No horizontal scroll/overflow apparent at 375px — the hardest width — nothing clipped at the screen edge.",
-    "Caveat: these are single full-page screenshots of a long, multi-day agenda (~11k–21k px tall); far-down rows render small relative to the whole image, so fine per-row text (exact channel string on every single row, every round label) was legible with high confidence near the top of the list and progressively less so toward the bottom. No issues were seen at any zoom level, but a targeted re-check of the tail of the list would need viewport-scoped (non-full-page) screenshots rather than full-page ones to get full confidence."
+    "Header, 'Kveldsbriefen' editorial line, Uka/Nyheter toggle, day groupings and footer all intact and correctly aligned at all three widths.",
+    "Channels shown are all Norwegian (TV 2, TV 2 Play, Viaplay, incl. '+1' simulcast tags) or an honest faint '–' when unknown (e.g. several Bundesliga/Serie A/Copa del Rey rows) — no foreign broadcasters (FOX/ESPN/Sky) seen.",
+    "No truncated match names: long fixtures (e.g. 'Werder Bremen – Borussia Mönchengladbach') wrap across multiple lines at 375/393px instead of being cut off with an ellipsis, so nothing is hidden.",
+    "Team crests/flags render correctly; two Copa del Rey rows (Huesca–Girona, Albacete–Las Palmas) show a neutral circular placeholder icon instead of a crest — consistent, deliberate-looking fallback, not a broken-image glyph.",
+    "Day heading at desktop width read 'SØNDAG 29. NOVEMBER', correctly matching the calendar weekday for that date (double-checked after an initial misread of the downscaled thumbnail as 'LØRDAG' — confirmed correct via a zoomed crop).",
+    "Floating 'Assistent' button rests over a mid-agenda row at all three widths (sanctioned per DESIGN.md, not flagged); verified it does NOT cover the last agenda row or the footer at 375px or 900px — footer ('Oppdatert …', 'Abonner i kalender', ops links, AI-budsjett line) is fully visible and unobstructed in both.",
+    "Could not assess horizontal scroll/overflow directly — full-page screenshots are captured at the fixed viewport width, so any content wider than the viewport would be clipped rather than visible in the image; no clipped/cut-off content was observed at the right edge in any row."
   ]
 }
