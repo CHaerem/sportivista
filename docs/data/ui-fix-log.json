@@ -1,11 +1,12 @@
 {
-  "runAt": "2026-11-27T18:05:00Z",
+  "runAt": "2026-11-28T16:45:00Z",
   "action": "none",
   "pr": null,
   "fixed": [],
   "notes": [
-    "visual-qa-log.json verdict is \"pass\" with an empty findings[] array (checked 2026-11-27T17:50:43Z) — no high/medium rendering issues to fix.",
-    "Reviewer confirmed: header/editorial line/toggle/day groups/footer intact at 375/393/900; long fixtures wrap instead of truncating; only Norwegian channels (TV 2, TV 2 Play, Viaplay) or honest faint '–'; crests render with a consistent neutral placeholder fallback; floating 'Assistent' button does not cover the last row or footer.",
+    "visual-qa-log.json verdict is \"pass\" with an empty findings[] array (checked 2026-11-28T16:36:22Z) — no high/medium rendering issues to fix.",
+    "Reviewer confirmed at 375/393/900: header (wordmark + 'LØRDAG 28. NOVEMBER'), 'Kveldsbriefen' editorial line, Uka/Nyheter toggle, 'Direkte nå', day groups and footer all intact; long fixtures (e.g. 'VfB Stuttgart – Eintracht Frankfurt') wrap to two lines instead of truncating; only Norwegian channels (TV 2 Play, Viaplay, TV3, '+1' tags) or an honest faint '–'; crests/flags/F1 icon render as real images; no horizontal overflow at 375px; must-see dots sparing; floating 'Assistent' button does not cover the last row or footer.",
+    "The footer 'AI-budsjett: uke 43% · økt ?%' note was flagged by visual-qa as a data-availability issue (unresolved figure), not a layout defect — not code-fixable UI, belongs to the quota/usage pipeline, so no action here.",
     "Exiting cleanly per ui-fix 'When to act' step 1; no branch or PR opened."
   ]
 }
