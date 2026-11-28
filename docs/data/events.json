@@ -4055,13 +4055,8 @@
     "participants": [],
     "streaming": [
       {
-        "platform": "Viaplay",
+        "platform": "Viaplay / TV3",
         "url": "https://viaplay.no/no-no/sport",
-        "urlKind": "landing"
-      },
-      {
-        "platform": "TV 2 Play",
-        "url": "https://play.tv2.no/sport",
         "urlKind": "landing"
       }
     ],
@@ -4080,19 +4075,26 @@
         "sourceId": "eurohandball",
         "url": "https://ehfeuro.eurohandball.com/news/en/ehf-confirms-throw-off-times-for-women-s-ehf-euro-2026/",
         "basis": "secondary",
-        "retrievedAt": "2026-11-04T00:55:00Z",
-        "note": "EHF (eurohandball.com) arrangerer EM og bekrefter avsparkstidene: gruppe B i Cluj-Napoca spiller 18:30/21:00 lokal (EET, UTC+2 i des.) = 17:30/20:00 CET. Norge ligger i 21:00-EET/20:00-CET-slotten hver kampdag (EHF + Wikipedia enige, uavhengig write-time fact-check CONFIRMED). 20:00 CET = 19:00 UTC."
+        "retrievedAt": "2026-11-28T14:25:00.000Z",
+        "note": "EHF (eurohandball.com) bekrefter avsparkstidene for Women's EHF EURO 2026: gruppe B i Cluj-Napoca spiller 18:30/21:00 lokal (EET, UTC+2 des.). Norge-Romania 21:00 EET = 20:00 CET = 19:00 UTC. Re-bekreftet (verify 28.11) mot VG sendeskjema + tvkampen (begge 20:00 norsk tid). EHF forbeholder seg TV-justeringer naer kampdag."
       },
       "streaming": {
         "sourceId": "viaplay",
-        "url": "https://viaplay.no",
-        "basis": "secondary",
-        "retrievedAt": "2026-11-04T00:55:00Z",
-        "note": "handball.no + allente.no: EM/VM deles fra des. 2026 mellom TV3/Viaplay og TV 2/TV 2 Play i Norge; eksakt kamp-for-kamp-split ikke publisert ennå → list begge, verify firmer per kamp."
+        "url": "https://www.tvkampen.com/kamp/norge-romania-1982966",
+        "basis": "official",
+        "retrievedAt": "2026-11-28T14:25:00.000Z",
+        "note": "Bekreftet (verify 28.11): Norge-Romania-aapningskampen 4.12 sendes paa Viaplay (lineaer TV3), IKKE TV 2 - VG sendeskjema + tvkampen enige. TV2/Viaplay-delingen av EM/VM er per kamp; denne kampen ligger paa Viaplay-halvdelen (Norge-Sveits 6.12 gaar derimot paa TV 2). Innsnevret fra den tentative 'begge kanaler'-lista."
       }
     },
-    "summary": "Norge er regjerende europamester (gull i 2024) og toppseedet i gruppe B, som spilles i BTarena i Cluj-Napoca, Romania.\n\nGruppespillåpningen mot vertsnasjonen Romania fredag 4. desember kl. 20.00 (norsk tid). EM 2026 (kvinner) spilles 3.–20. desember i Polen, Romania, Tsjekkia, Slovakia og Tyrkia.\n\nNorsk visning er delt mellom TV3/Viaplay og TV 2/TV 2 Play fra desember 2026 (handball.no) — eksakt kanal per kamp bekreftes av verify når sendeplanen publiseres.",
-    "id": "55486346f984"
+    "summary": "Norge er regjerende europamester (gull i 2024) og toppseedet i gruppe B, som spilles i BTarena i Cluj-Napoca, Romania.\n\nGruppespillaapningen mot vertsnasjonen Romania fredag 4. desember kl. 20.00 (norsk tid). EM 2026 (kvinner) spilles 3.-20. desember i Polen, Romania, Tsjekkia, Slovakia og Tyrkia.\n\nNorsk visning: Viaplay (lineaer TV3) - bekreftet mot VG sendeskjema og tvkampen. EM/VM deles per kamp mellom TV 2/TV 2 Play og Viaplay/TV3 fra desember 2026; denne aapningskampen ligger paa Viaplay (Norge-Sveits 6.12 gaar paa TV 2).",
+    "id": "55486346f984",
+    "verifiedAt": "2026-11-28T14:25:00.000Z",
+    "verificationStatus": "amended",
+    "verificationSources": [
+      "https://www.vg.no/sport/i/jvR5wL/haandball-em-2026-kvinner-program-og-sendeskjema",
+      "https://www.tvkampen.com/kamp/norge-romania-1982966",
+      "https://ehfeuro.eurohandball.com/news/en/ehf-confirms-throw-off-times-for-women-s-ehf-euro-2026/"
+    ]
   },
   {
     "sport": "football",

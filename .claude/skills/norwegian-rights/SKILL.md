@@ -84,6 +84,9 @@ two majors; Viaplay keeps the other two majors + DP World Tour. Verified 2026-07
 - PostNord Tour of Denmark (Danmark Rundt) → **Norwegian broadcaster NOT confirmed for 2026** [verify] (historically Eurosport Norge/Max; DR/DRTV is the Danish holder). Leave `streaming` empty with an honest note until confirmed.
 - Other UCI races → [verify per event]
 
+## Handball
+- EHF EURO (EM) + IHF World Championship (VM), women & men → **TV 2 / TV 2 Play and Viaplay / TV3 share, split per match** [verify per match] (from December 2026 TV 2 and Viaplay jointly hold the Norwegian EM/VM handball rights, dividing the championship day-by-day / match-by-match; NRK carries it on radio only. Confirmed 2026-11-28 against VG's official sendeskjema + tvkampen.com + allente.no for Women's EHF EURO 2026. Known split for Norway's women's group B opener: **Norge–Romania 4 Dec → Viaplay (linear TV3)**, **Norge–Sveits 6 Dec → TV 2**, **Nord-Makedonia–Norge 8 Dec → Viaplay/TV3**; the final → TV 2. Always `[verify per match]` — the TV2/Viaplay allocation is per fixture, so check VG's schedule or tvkampen per match before trusting a channel.)
+
 ## Chess
 - Norway Chess, Carlsen events → often **NRK** or **TV 2**, plus free official streams (chess24/chess.com/YouTube) [verify per event]
 
