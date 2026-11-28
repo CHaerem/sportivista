@@ -1,15 +1,16 @@
 {
-  "checkedAt": "2026-11-27T17:50:43Z",
+  "checkedAt": "2026-11-28T16:36:22Z",
   "widths": [375, 393, 900],
   "verdict": "pass",
   "findings": [],
   "notes": [
-    "Header, 'Kveldsbriefen' editorial line, Uka/Nyheter toggle, day groupings and footer all intact and correctly aligned at all three widths.",
-    "Channels shown are all Norwegian (TV 2, TV 2 Play, Viaplay, incl. '+1' simulcast tags) or an honest faint '–' when unknown (e.g. several Bundesliga/Serie A/Copa del Rey rows) — no foreign broadcasters (FOX/ESPN/Sky) seen.",
-    "No truncated match names: long fixtures (e.g. 'Werder Bremen – Borussia Mönchengladbach') wrap across multiple lines at 375/393px instead of being cut off with an ellipsis, so nothing is hidden.",
-    "Team crests/flags render correctly; two Copa del Rey rows (Huesca–Girona, Albacete–Las Palmas) show a neutral circular placeholder icon instead of a crest — consistent, deliberate-looking fallback, not a broken-image glyph.",
-    "Day heading at desktop width read 'SØNDAG 29. NOVEMBER', correctly matching the calendar weekday for that date (double-checked after an initial misread of the downscaled thumbnail as 'LØRDAG' — confirmed correct via a zoomed crop).",
-    "Floating 'Assistent' button rests over a mid-agenda row at all three widths (sanctioned per DESIGN.md, not flagged); verified it does NOT cover the last agenda row or the footer at 375px or 900px — footer ('Oppdatert …', 'Abonner i kalender', ops links, AI-budsjett line) is fully visible and unobstructed in both.",
-    "Could not assess horizontal scroll/overflow directly — full-page screenshots are captured at the fixed viewport width, so any content wider than the viewport would be clipped rather than visible in the image; no clipped/cut-off content was observed at the right edge in any row."
+    "Header (wordmark, date 'LØRDAG 28. NOVEMBER'), the 'Kveldsbriefen' editorial line, Uka/Nyheter toggle, 'Direkte nå' section, day groupings and footer all intact and correctly aligned at all three widths (375/393/900).",
+    "Channels shown are all Norwegian (TV 2 Play, Viaplay, TV3, incl. '+1' simulcast tags) or an honest faint '–' when unknown (e.g. several same-time Bundesliga kickoffs) — no foreign broadcasters (FOX/ESPN/Sky) seen anywhere in the agenda.",
+    "No truncated match names: long fixtures (e.g. 'VfB Stuttgart – Eintracht Frankfurt', 'Ipswich Town – Aston Villa') wrap across two lines at 375/393px instead of being cut with an ellipsis, so neither side of a fixture is hidden.",
+    "Club crests, national flags (Norway) and the F1 chequered-flag icon all render as real images, not broken-image glyphs or empty boxes.",
+    "No horizontal overflow or clipped content at the 375px width (checked hardest per the checklist) — single quiet column, generous spacing, nothing touching the screen edge.",
+    "Must-see accent dots appear sparingly (a handful of rows: Kontiolahti biathlon, Arsenal–Man City, Viking–Vålerenga, Molde–Viking, Norge–Romania), not on every row.",
+    "Floating 'Assistent' button rests over a mid-agenda row at some scroll positions at 375/900px — sanctioned per DESIGN.md, not flagged. Confirmed it does NOT cover the last agenda row or the footer: at the true bottom of the page at both 375px and 900px, the footer ('Oppdatert 28.11.2026', 'Abonner i kalender', ops links, AI-budsjett line) is fully visible and unobstructed.",
+    "Footer AI-budsjett line reads 'AI-budsjett: uke 43% · økt ?%' — the literal '?%' looks like a missing/unavailable data value rather than a layout defect (text renders fine, just an unresolved figure); flagging as a note rather than a finding since it reads as a data-availability issue, not something visual-qa can confirm is wrong without checking the usage data."
   ]
 }
